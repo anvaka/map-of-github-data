@@ -1,0 +1,385 @@
+digraph G {
+"kubedb/cli" -> "kubedb/operator"
+"kubedb/cli" -> "kubedb/apimachinery"
+"kubedb/cli" -> "kubedb/project"
+"kubedb/cli" -> "kubedb/postgres"
+"kubedb/cli" -> "kubevault/operator"
+"kubedb/cli" -> "kubedb/installer"
+"kubedb/cli" -> "kubedb/mongodb"
+"kubedb/cli" -> "pharmer/pharmer"
+"kubedb/cli" -> "kubedb/redis"
+"kubedb/cli" -> "appscode/guard"
+"kubedb/cli" -> "appscode/kubed"
+"kubedb/cli" -> "stashed/docs"
+"kubedb/cli" -> "stashed/stash"
+"kubedb/cli" -> "kubedb/mysql"
+"kubedb/cli" -> "kubedb/elasticsearch"
+"appscode/stash" -> "appscode/searchlight"
+"appscode/stash" -> "appscode/kubed"
+"appscode/stash" -> "appscode/voyager" ["e"=1]
+"appscode/stash" -> "appscode/guard"
+"appscode/stash" -> "pharmer/pharmer"
+"appscode/stash" -> "k8sdb/cli"
+"appscode/stash" -> "appscode/swift"
+"appscode/stash" -> "kubevault/operator"
+"appscode/stash" -> "appscode/g2"
+"appscode/stash" -> "appscode/pharmer"
+"appscode/stash" -> "kube-ci/git-apiserver"
+"appscode/stash" -> "kubedb/service-broker"
+"appscode/stash" -> "kubedb/redis"
+"appscode/stash" -> "appscode/chartify"
+"appscode/stash" -> "heptio/ark" ["e"=1]
+"stashed/stash" -> "kubedb/operator"
+"stashed/stash" -> "kubedb/cli"
+"stashed/stash" -> "stashed/docs"
+"stashed/stash" -> "kubeform/kubeform"
+"stashed/stash" -> "kubevault/operator"
+"stashed/stash" -> "kubedb/installer"
+"stashed/stash" -> "kubedb/docs"
+"stashed/stash" -> "stashed/installer"
+"stashed/stash" -> "corneliusweig/rakkess" ["e"=1]
+"stashed/stash" -> "k8up-io/k8up"
+"stashed/stash" -> "k8gb-io/k8gb" ["e"=1]
+"stashed/stash" -> "appscode/charts"
+"stashed/stash" -> "vmware-tanzu/velero" ["e"=1]
+"stashed/stash" -> "kubedb/apimachinery"
+"stashed/stash" -> "vshn/k8up"
+"gearman/gearmand" -> "wcgallego/pecl-gearman"
+"gearman/gearmand" -> "mikespook/gearman-go"
+"gearman/gearmand" -> "brianlmoon/GearmanManager"
+"gearman/gearmand" -> "yugene/Gearman-Monitor"
+"gearman/gearmand" -> "appscode/g2"
+"gearman/gearmand" -> "gearman/java-service"
+"gearman/gearmand" -> "hjr3/pecl-gearman"
+"sajibcse68/MyDailyLearn" -> "appscode/pharmer"
+"sajibcse68/MyDailyLearn" -> "kubevault/operator"
+"sajibcse68/MyDailyLearn" -> "k8sdb/cli"
+"sajibcse68/MyDailyLearn" -> "kubedb/user-manager"
+"sajibcse68/MyDailyLearn" -> "kube-ci/git-apiserver"
+"sajibcse68/MyDailyLearn" -> "kubedb/service-broker"
+"sajibcse68/MyDailyLearn" -> "kubevault/vault_exporter"
+"mikespook/gearman-go" -> "appscode/g2"
+"mikespook/gearman-go" -> "gearman/gearmand"
+"brianlmoon/GearmanManager" -> "yugene/Gearman-Monitor"
+"brianlmoon/GearmanManager" -> "gaspaio/gearmanui"
+"brianlmoon/GearmanManager" -> "brianlmoon/net_gearman"
+"brianlmoon/GearmanManager" -> "chrisboulton/php-resque" ["e"=1]
+"brianlmoon/GearmanManager" -> "cboden/Ratchet" ["e"=1]
+"brianlmoon/GearmanManager" -> "shaneharter/PHP-Daemon" ["e"=1]
+"brianlmoon/GearmanManager" -> "kakserpom/phpdaemon" ["e"=1]
+"brianlmoon/GearmanManager" -> "videlalvaro/php-amqplib" ["e"=1]
+"brianlmoon/GearmanManager" -> "nicolasff/phpredis" ["e"=1]
+"brianlmoon/GearmanManager" -> "CoderKungfu/php-queue" ["e"=1]
+"brianlmoon/GearmanManager" -> "kriswallsmith/spork" ["e"=1]
+"brianlmoon/GearmanManager" -> "andreiz/php-zookeeper" ["e"=1]
+"brianlmoon/GearmanManager" -> "gearman/gearmand"
+"brianlmoon/GearmanManager" -> "preinheimer/xhprof" ["e"=1]
+"brianlmoon/GearmanManager" -> "krakjoe/phpdbg" ["e"=1]
+"greenlion/swanhart-tools" -> "yugene/Gearman-Monitor"
+"kubeform/kubeform" -> "kubeform/installer"
+"kubeform/kubeform" -> "kubeform/provider-aws-api"
+"kubeform/kubeform" -> "kubeform/provider-azurerm-api"
+"kubeform/kubeform" -> "kubeform/provider-google-api"
+"kubeform/kubeform" -> "stashed/installer"
+"kubeform/kubeform" -> "kubeform/CHANGELOG"
+"kubeform/kubeform" -> "stashed/docs"
+"kubeform/kubeform" -> "kubevault/cli"
+"kubeform/kubeform" -> "stashed/CHANGELOG"
+"kubeform/kubeform" -> "stashed/catalog"
+"kubeform/kubeform" -> "kubeform/website"
+"kubeform/kubeform" -> "kubevault/installer"
+"kubeform/kubeform" -> "kubevault/operator"
+"kubeform/kubeform" -> "kubedb/docs"
+"kubeform/kubeform" -> "kubevault/csi-driver"
+"yugene/Gearman-Monitor" -> "brianlmoon/GearmanManager"
+"yugene/Gearman-Monitor" -> "gaspaio/gearmanui"
+"yugene/Gearman-Monitor" -> "wcgallego/pecl-gearman"
+"yugene/Gearman-Monitor" -> "brianlmoon/net_gearman"
+"gearman/java-service" -> "johnewart/gearman-java"
+"appscode/kubed" -> "appscode/searchlight"
+"appscode/kubed" -> "appscode/stash"
+"appscode/kubed" -> "appscode/guard"
+"appscode/kubed" -> "kubevault/operator"
+"appscode/kubed" -> "appscode/voyager" ["e"=1]
+"appscode/kubed" -> "pharmer/pharmer"
+"appscode/kubed" -> "kubedb/operator"
+"appscode/kubed" -> "kubedb/apimachinery"
+"appscode/kubed" -> "kubevault/csi-driver"
+"appscode/kubed" -> "appscode/g2"
+"appscode/kubed" -> "appscode/pharmer"
+"appscode/kubed" -> "kubedb/service-broker"
+"appscode/kubed" -> "heptio/ark" ["e"=1]
+"appscode/kubed" -> "kubedb/cli"
+"appscode/kubed" -> "kube-ci/git-apiserver"
+"appscode/go-notify" -> "k8sdb/apimachinery"
+"appscode/go-notify" -> "appscode/scanner"
+"appscode/go-notify" -> "k8sdb/elasticsearch"
+"appscode/go-notify" -> "k8sdb/operator"
+"appscode/go-notify" -> "k8sdb/postgres"
+"wcgallego/pecl-gearman" -> "gearman/gearmand"
+"wcgallego/pecl-gearman" -> "hjr3/pecl-gearman"
+"wcgallego/pecl-gearman" -> "php/pecl-networking-gearman"
+"appscode/searchlight" -> "kube-ci/git-apiserver"
+"appscode/searchlight" -> "k8sdb/apimachinery"
+"appscode/searchlight" -> "kube-ci/project"
+"appscode/searchlight" -> "appscode/pharmer"
+"appscode/searchlight" -> "k8sdb/postgres"
+"appscode/searchlight" -> "kubedb/service-broker"
+"appscode/searchlight" -> "appscode/g2"
+"appscode/searchlight" -> "k8sdb/elasticsearch"
+"appscode/searchlight" -> "k8sdb/operator"
+"appscode/searchlight" -> "kubedb/user-manager"
+"appscode/searchlight" -> "appscode/kubed"
+"appscode/searchlight" -> "appscode/stash"
+"appscode/searchlight" -> "pharmer/pharmer"
+"appscode/searchlight" -> "appscode/chartify"
+"appscode/searchlight" -> "kubevault/unsealer"
+"k8sdb/cli" -> "k8sdb/operator"
+"k8sdb/cli" -> "appscode/pharmer"
+"k8sdb/cli" -> "k8sdb/apimachinery"
+"k8sdb/cli" -> "k8sdb/elasticsearch"
+"k8sdb/cli" -> "k8sdb/postgres"
+"kubedb/operator" -> "kubedb/cli"
+"kubedb/operator" -> "kubedb/apimachinery"
+"kubedb/operator" -> "kubedb/mysql"
+"kubedb/operator" -> "kubedb/redis"
+"kubedb/operator" -> "kubedb/postgres"
+"kubedb/operator" -> "kubevault/operator"
+"kubedb/operator" -> "kubedb/mongodb"
+"kubedb/operator" -> "kubedb/project"
+"kubedb/operator" -> "kubedb/elasticsearch"
+"kubedb/operator" -> "stashed/docs"
+"kubedb/operator" -> "appscode/guard"
+"kubedb/operator" -> "pharmer/pharmer"
+"kubedb/operator" -> "appscode/kubed"
+"kubedb/operator" -> "stashed/stash"
+"kubedb/operator" -> "kubevault/csi-driver"
+"pharmer/pharmer" -> "kubevault/csi-driver"
+"pharmer/pharmer" -> "kubevault/unsealer"
+"pharmer/pharmer" -> "kubedb/apimachinery"
+"pharmer/pharmer" -> "kube-ci/project"
+"pharmer/pharmer" -> "kube-ci/git-apiserver"
+"pharmer/pharmer" -> "kubevault/operator"
+"pharmer/pharmer" -> "pharmer/csi-packet"
+"pharmer/pharmer" -> "pharmer/pre-k"
+"pharmer/pharmer" -> "kubevault/vault_exporter"
+"pharmer/pharmer" -> "pharmer/swanc"
+"pharmer/pharmer" -> "appscode/searchlight"
+"kubedb/project" -> "kubedb/apimachinery"
+"kubedb/project" -> "kube-ci/project"
+"kubedb/project" -> "kube-ci/git-apiserver"
+"kubedb/project" -> "kubevault/unsealer"
+"kubedb/project" -> "kubedb/mongodb"
+"kubedb/project" -> "kubedb/service-broker"
+"kubedb/project" -> "kubevault/vault_exporter"
+"appscode/swift" -> "pharmer/csi-packet"
+"appscode/swift" -> "kube-ci/project"
+"appscode/swift" -> "kube-ci/git-apiserver"
+"appscode/swift" -> "kubevault/vault_exporter"
+"appscode/guard" -> "appscode/kubed"
+"appscode/guard" -> "appscode/stash"
+"appscode/guard" -> "kubevault/operator"
+"appscode/guard" -> "appscode/voyager" ["e"=1]
+"appscode/guard" -> "pharmer/pharmer"
+"appscode/guard" -> "kubedb/operator"
+"appscode/guard" -> "appscode/searchlight"
+"appscode/guard" -> "ibuildthecloud/klum"
+"appscode/guard" -> "kubevault/csi-driver"
+"appscode/guard" -> "kubedb/apimachinery"
+"appscode/guard" -> "kubevault/unsealer"
+"appscode/guard" -> "kubedb/cli"
+"appscode/guard" -> "pharmer/cloud-controller-manager"
+"appscode/guard" -> "kube-ci/project"
+"appscode/guard" -> "pharmer/pre-k"
+"kubevault/operator" -> "kubevault/csi-driver"
+"kubevault/operator" -> "kube-ci/git-apiserver"
+"kubevault/operator" -> "kubevault/unsealer"
+"kubevault/operator" -> "kubedb/apimachinery"
+"kubevault/operator" -> "kubedb/service-broker"
+"kubevault/operator" -> "kube-ci/project"
+"kubevault/operator" -> "kubevault/vault_exporter"
+"kubevault/operator" -> "pharmer/csi-packet"
+"kubevault/operator" -> "pharmer/pharmer"
+"kubevault/operator" -> "pharmer/pre-k"
+"kubevault/operator" -> "appscode/charts"
+"kubevault/operator" -> "kubedb/redis"
+"ibuildthecloud/klum" -> "appscode/guard"
+"ibuildthecloud/klum" -> "ibuildthecloud/k3c"
+"kubedb/elasticsearch" -> "kubedb/redis"
+"kubedb/installer" -> "kubedb/apimachinery"
+"kubedb/mongodb" -> "kubedb/redis"
+"kubedb/mongodb" -> "kubedb/apimachinery"
+"kubedb/mongodb" -> "kubedb/elasticsearch"
+"kubedb/mongodb" -> "kubedb/mysql"
+"kubedb/mongodb" -> "kubedb/project"
+"kubedb/mongodb" -> "kube-ci/project"
+"kubedb/mysql" -> "kubedb/mongodb"
+"kubedb/mysql" -> "kubedb/redis"
+"kubedb/mysql" -> "kubedb/apimachinery"
+"kubedb/mysql" -> "kubedb/mariadb"
+"kubedb/mysql" -> "kubedb/project"
+"kubedb/mysql" -> "kubedb/elasticsearch"
+"kubedb/redis" -> "kubedb/elasticsearch"
+"kubedb/redis" -> "kubedb/apimachinery"
+"kubedb/redis" -> "kubevault/unsealer"
+"kubedb/redis" -> "kubedb/mongodb"
+"kubedb/redis" -> "pharmer/csi-packet"
+"kubedb/redis" -> "kube-ci/project"
+"kubedb/redis" -> "kubedb/mariadb"
+"kubedb/redis" -> "kubedb/installer"
+"kubedb/redis" -> "kube-ci/git-apiserver"
+"kubedb/redis" -> "kubedb/service-broker"
+"kubedb/redis" -> "kubevault/vault_exporter"
+"gaspaio/gearmanui" -> "yugene/Gearman-Monitor"
+"gaspaio/gearmanui" -> "brianlmoon/GearmanManager"
+"kubedb/postgres" -> "kubedb/elasticsearch"
+"kubedb/postgres" -> "kubedb/redis"
+"kubedb/postgres" -> "kubedb/mongodb"
+"kubedb/postgres" -> "kubedb/apimachinery"
+"kubedb/postgres" -> "kubedb/project"
+"kubedb/postgres" -> "kubedb/memcached"
+"kubedb/postgres" -> "kube-ci/project"
+"kubedb/postgres" -> "kube-ci/git-apiserver"
+"stashed/installer" -> "stashed/CHANGELOG"
+"stashed/installer" -> "stashed/catalog"
+"k8sdb/postgres" -> "k8sdb/apimachinery"
+"k8sdb/postgres" -> "appscode/api"
+"k8sdb/postgres" -> "k8sdb/elasticsearch"
+"kubevault/csi-driver" -> "kubevault/unsealer"
+"kubevault/csi-driver" -> "kubevault/vault_exporter"
+"kubevault/csi-driver" -> "kube-ci/git-apiserver"
+"kubevault/csi-driver" -> "kubedb/service-broker"
+"kubevault/csi-driver" -> "pharmer/csi-packet"
+"kubevault/csi-driver" -> "kube-ci/project"
+"pharmer/pre-k" -> "pharmer/cloud-controller-manager"
+"pharmer/swanc" -> "pharmer/cloud-controller-manager"
+"pharmer/swanc" -> "pharmer/pre-k"
+"pharmer/swanc" -> "pharmer/csi-packet"
+"johnewart/gearman-java" -> "gearman/java-service"
+"vshn/k8up" -> "projectsyn/commodore"
+"vshn/k8up" -> "vshn/wrestic"
+"appscode/chartify" -> "k8sdb/apimachinery"
+"appscode/chartify" -> "k8sdb/postgres"
+"appscode/chartify" -> "k8sdb/elasticsearch"
+"appscode/chartify" -> "appscode/api"
+"appscode/chartify" -> "k8sdb/operator"
+"projectsyn/commodore" -> "projectsyn/lieutenant-api"
+"ibuildthecloud/k3c" -> "alexellis/faasd"
+"ibuildthecloud/k3c" -> "alexellis/faas-containerd"
+"appscode/g2" -> "k8sdb/apimachinery"
+"appscode/g2" -> "k8sdb/postgres"
+"appscode/g2" -> "k8sdb/elasticsearch"
+"appscode/g2" -> "k8sdb/operator"
+"appscode/g2" -> "appscode/api"
+"appscode/g2" -> "appscode/pharmer"
+"appscode/g2" -> "appscode/log"
+"appscode/g2" -> "appscode/searchlight"
+"appscode/g2" -> "the-redback/min-ducker"
+"appscode/g2" -> "appscode/scanner"
+"kubevault/unsealer" -> "kubevault/vault_exporter"
+"k8sdb/elasticsearch" -> "k8sdb/apimachinery"
+"k8sdb/elasticsearch" -> "appscode/api"
+"the-redback/min-ducker" -> "appscode/scanner"
+"appscode/scanner" -> "the-redback/min-ducker"
+"kubedb/user-manager" -> "kube-ci/kubeci"
+"kube-ci/git-apiserver" -> "kube-ci/project"
+"kube-ci/kubeci" -> "kubedb/user-manager"
+"kubedb/cli" ["l"="-11.109,-2.877"]
+"kubedb/operator" ["l"="-11.12,-2.89"]
+"kubedb/apimachinery" ["l"="-11.124,-2.875"]
+"kubedb/project" ["l"="-11.139,-2.862"]
+"kubedb/postgres" ["l"="-11.13,-2.902"]
+"kubevault/operator" ["l"="-11.14,-2.886"]
+"kubedb/installer" ["l"="-11.088,-2.867"]
+"kubedb/mongodb" ["l"="-11.123,-2.859"]
+"pharmer/pharmer" ["l"="-11.155,-2.885"]
+"kubedb/redis" ["l"="-11.135,-2.87"]
+"appscode/guard" ["l"="-11.155,-2.858"]
+"appscode/kubed" ["l"="-11.166,-2.902"]
+"stashed/docs" ["l"="-11.095,-2.909"]
+"stashed/stash" ["l"="-11.077,-2.897"]
+"kubedb/mysql" ["l"="-11.114,-2.846"]
+"kubedb/elasticsearch" ["l"="-11.107,-2.861"]
+"appscode/stash" ["l"="-11.187,-2.885"]
+"appscode/searchlight" ["l"="-11.194,-2.899"]
+"appscode/voyager" ["l"="-11.059,0.399"]
+"k8sdb/cli" ["l"="-11.223,-2.891"]
+"appscode/swift" ["l"="-11.18,-2.857"]
+"appscode/g2" ["l"="-11.241,-2.909"]
+"appscode/pharmer" ["l"="-11.208,-2.891"]
+"kube-ci/git-apiserver" ["l"="-11.167,-2.885"]
+"kubedb/service-broker" ["l"="-11.171,-2.878"]
+"appscode/chartify" ["l"="-11.204,-2.926"]
+"heptio/ark" ["l"="-11.007,0.384"]
+"kubeform/kubeform" ["l"="-11.088,-2.941"]
+"kubedb/docs" ["l"="-11.053,-2.923"]
+"stashed/installer" ["l"="-11.069,-2.927"]
+"corneliusweig/rakkess" ["l"="-10.628,0.475"]
+"k8up-io/k8up" ["l"="-11.032,-2.871"]
+"k8gb-io/k8gb" ["l"="-10.636,0.49"]
+"appscode/charts" ["l"="-11.107,-2.918"]
+"vmware-tanzu/velero" ["l"="-10.676,0.163"]
+"vshn/k8up" ["l"="-11.012,-2.909"]
+"gearman/gearmand" ["l"="-11.342,-2.933"]
+"wcgallego/pecl-gearman" ["l"="-11.372,-2.911"]
+"mikespook/gearman-go" ["l"="-11.303,-2.922"]
+"brianlmoon/GearmanManager" ["l"="-11.382,-2.954"]
+"yugene/Gearman-Monitor" ["l"="-11.402,-2.934"]
+"gearman/java-service" ["l"="-11.338,-2.981"]
+"hjr3/pecl-gearman" ["l"="-11.35,-2.902"]
+"sajibcse68/MyDailyLearn" ["l"="-11.198,-2.867"]
+"kubedb/user-manager" ["l"="-11.221,-2.869"]
+"kubevault/vault_exporter" ["l"="-11.166,-2.867"]
+"gaspaio/gearmanui" ["l"="-11.416,-2.954"]
+"brianlmoon/net_gearman" ["l"="-11.405,-2.974"]
+"chrisboulton/php-resque" ["l"="-24.29,-42.936"]
+"cboden/Ratchet" ["l"="-24.236,-42.784"]
+"shaneharter/PHP-Daemon" ["l"="-24.323,-42.776"]
+"kakserpom/phpdaemon" ["l"="-24.323,-42.838"]
+"videlalvaro/php-amqplib" ["l"="-24.29,-42.805"]
+"nicolasff/phpredis" ["l"="-26.781,-43.17"]
+"CoderKungfu/php-queue" ["l"="-22.334,-41.901"]
+"kriswallsmith/spork" ["l"="-28.176,-40.551"]
+"andreiz/php-zookeeper" ["l"="-26.884,-43.177"]
+"preinheimer/xhprof" ["l"="-26.741,-43.035"]
+"krakjoe/phpdbg" ["l"="-24.471,-42.777"]
+"greenlion/swanhart-tools" ["l"="-11.453,-2.918"]
+"kubeform/installer" ["l"="-11.079,-2.977"]
+"kubeform/provider-aws-api" ["l"="-11.108,-2.964"]
+"kubeform/provider-azurerm-api" ["l"="-11.085,-2.966"]
+"kubeform/provider-google-api" ["l"="-11.095,-2.974"]
+"kubeform/CHANGELOG" ["l"="-11.097,-2.962"]
+"kubevault/cli" ["l"="-11.067,-2.968"]
+"stashed/CHANGELOG" ["l"="-11.069,-2.946"]
+"stashed/catalog" ["l"="-11.06,-2.942"]
+"kubeform/website" ["l"="-11.075,-2.96"]
+"kubevault/installer" ["l"="-11.057,-2.958"]
+"kubevault/csi-driver" ["l"="-11.147,-2.899"]
+"johnewart/gearman-java" ["l"="-11.34,-3.005"]
+"appscode/go-notify" ["l"="-11.239,-2.937"]
+"k8sdb/apimachinery" ["l"="-11.223,-2.909"]
+"appscode/scanner" ["l"="-11.257,-2.927"]
+"k8sdb/elasticsearch" ["l"="-11.227,-2.918"]
+"k8sdb/operator" ["l"="-11.218,-2.914"]
+"k8sdb/postgres" ["l"="-11.221,-2.923"]
+"php/pecl-networking-gearman" ["l"="-11.386,-2.886"]
+"kube-ci/project" ["l"="-11.151,-2.875"]
+"kubevault/unsealer" ["l"="-11.163,-2.875"]
+"pharmer/csi-packet" ["l"="-11.156,-2.869"]
+"pharmer/pre-k" ["l"="-11.148,-2.845"]
+"pharmer/swanc" ["l"="-11.167,-2.845"]
+"ibuildthecloud/klum" ["l"="-11.159,-2.797"]
+"pharmer/cloud-controller-manager" ["l"="-11.159,-2.829"]
+"ibuildthecloud/k3c" ["l"="-11.16,-2.735"]
+"kubedb/mariadb" ["l"="-11.127,-2.834"]
+"kubedb/memcached" ["l"="-11.134,-2.934"]
+"appscode/api" ["l"="-11.226,-2.933"]
+"projectsyn/commodore" ["l"="-10.982,-2.921"]
+"vshn/wrestic" ["l"="-10.989,-2.899"]
+"projectsyn/lieutenant-api" ["l"="-10.962,-2.927"]
+"alexellis/faasd" ["l"="-11.147,-2.7"]
+"alexellis/faas-containerd" ["l"="-11.18,-2.71"]
+"appscode/log" ["l"="-11.262,-2.897"]
+"the-redback/min-ducker" ["l"="-11.265,-2.914"]
+"kube-ci/kubeci" ["l"="-11.235,-2.855"]
+}

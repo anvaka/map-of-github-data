@@ -1,0 +1,900 @@
+digraph G {
+"istio/api" -> "istio/proxy"
+"istio/api" -> "istio/client-go"
+"istio/api" -> "envoyproxy/data-plane-api"
+"istio/api" -> "istio/tools"
+"istio/api" -> "istio/istio.github.io" ["e"=1]
+"istio/api" -> "aeraki-framework/aeraki"
+"istio/api" -> "istio/operator"
+"istio/api" -> "cncf/udpa"
+"istio/api" -> "istio/installer"
+"istio/api" -> "envoyproxy/go-control-plane"
+"istio/api" -> "istio/istio.io"
+"istio/api" -> "slime-io/slime"
+"istio/api" -> "proxy-wasm/spec"
+"istio/api" -> "tetratelabs/proxy-wasm-go-sdk"
+"istio/api" -> "envoyproxy/envoy-wasm"
+"DaoCloud/public-image-mirror" -> "klts-io/kubernetes-lts"
+"DaoCloud/public-image-mirror" -> "kubean-io/kubean"
+"DaoCloud/public-image-mirror" -> "hwameistor/local-storage"
+"DaoCloud/public-image-mirror" -> "merbridge/merbridge"
+"DaoCloud/public-image-mirror" -> "clusterpedia-io/clusterpedia"
+"DaoCloud/public-image-mirror" -> "hwameistor/hwameistor"
+"DaoCloud/public-image-mirror" -> "spidernet-io/spiderpool"
+"DaoCloud/public-image-mirror" -> "cloudtty/cloudtty"
+"DaoCloud/public-image-mirror" -> "ferryproxy/ferry"
+"DaoCloud/public-image-mirror" -> "DaoCloud/public-binary-files-mirror"
+"DaoCloud/public-image-mirror" -> "kubernetes-sigs/kwok"
+"DaoCloud/public-image-mirror" -> "wzshiming/fake-kubelet"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "proxy-wasm/spec"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "envoyproxy/envoy-wasm"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "tetratelabs/envoy-wasm-rust-sdk"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "tetratelabs/proxy-wasm-go-sdk"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "proxy-wasm/proxy-wasm-cpp-host"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "otomato-gh/proxy-wasm-rust"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "solo-io/proxy-runtime"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "proxy-wasm/test-framework"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "istio-ecosystem/wasm-extensions"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "istio/ztunnel"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "corazawaf/coraza-proxy-wasm" ["e"=1]
+"proxy-wasm/proxy-wasm-rust-sdk" -> "solo-io/wasm"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "cncf/udpa"
+"proxy-wasm/proxy-wasm-rust-sdk" -> "layer5io/wasm-filters" ["e"=1]
+"kubernetes-sigs/kwok" -> "kubean-io/kubean"
+"kubernetes-sigs/kwok" -> "clusterpedia-io/clusterpedia"
+"kubernetes-sigs/kwok" -> "cloudtty/cloudtty"
+"kubernetes-sigs/kwok" -> "merbridge/merbridge"
+"kubernetes-sigs/kwok" -> "hwameistor/hwameistor"
+"kubernetes-sigs/kwok" -> "spidernet-io/spiderpool"
+"kubernetes-sigs/kwok" -> "ferryproxy/ferry"
+"kubernetes-sigs/kwok" -> "klts-io/kubernetes-lts"
+"kubernetes-sigs/kwok" -> "hwameistor/local-storage"
+"kubernetes-sigs/kwok" -> "kubernetes-sigs/kueue" ["e"=1]
+"kubernetes-sigs/kwok" -> "kubernetes-sigs/kube-scheduler-simulator" ["e"=1]
+"kubernetes-sigs/kwok" -> "DaoCloud/public-image-mirror"
+"kubernetes-sigs/kwok" -> "kubernetes-sigs/descheduler" ["e"=1]
+"kubernetes-sigs/kwok" -> "kcp-dev/kcp" ["e"=1]
+"kubernetes-sigs/kwok" -> "loft-sh/vcluster" ["e"=1]
+"envoyproxy/data-plane-api" -> "envoyproxy/go-control-plane"
+"envoyproxy/data-plane-api" -> "istio/api"
+"envoyproxy/data-plane-api" -> "envoyproxy/java-control-plane"
+"envoyproxy/data-plane-api" -> "cncf/udpa"
+"envoyproxy/data-plane-api" -> "envoyproxy/envoy-filter-example"
+"envoyproxy/data-plane-api" -> "istio/proxy"
+"envoyproxy/data-plane-api" -> "envoyproxy/envoy-wasm"
+"envoyproxy/data-plane-api" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"envoyproxy/data-plane-api" -> "envoyproxy/envoy-perf"
+"envoyproxy/data-plane-api" -> "envoyproxy/nighthawk"
+"envoyproxy/data-plane-api" -> "cncf/xds"
+"envoyproxy/data-plane-api" -> "lyft/ratelimit"
+"envoyproxy/data-plane-api" -> "deislabs/smi-spec" ["e"=1]
+"envoyproxy/data-plane-api" -> "aeraki-framework/aeraki"
+"envoyproxy/data-plane-api" -> "slime-io/slime"
+"envoyproxy/go-control-plane" -> "envoyproxy/data-plane-api"
+"envoyproxy/go-control-plane" -> "tetratelabs/proxy-wasm-go-sdk"
+"envoyproxy/go-control-plane" -> "envoyproxy/gateway"
+"envoyproxy/go-control-plane" -> "istio/proxy"
+"envoyproxy/go-control-plane" -> "envoyproxy/envoy-filter-example"
+"envoyproxy/go-control-plane" -> "aeraki-framework/aeraki"
+"envoyproxy/go-control-plane" -> "envoyproxy/ratelimit"
+"envoyproxy/go-control-plane" -> "solo-io/gloo" ["e"=1]
+"envoyproxy/go-control-plane" -> "istio/api"
+"envoyproxy/go-control-plane" -> "slime-io/slime"
+"envoyproxy/go-control-plane" -> "lyft/ratelimit"
+"envoyproxy/go-control-plane" -> "turbinelabs/rotor"
+"envoyproxy/go-control-plane" -> "envoyproxy/nighthawk"
+"envoyproxy/go-control-plane" -> "envoyproxy/java-control-plane"
+"envoyproxy/go-control-plane" -> "projectcontour/contour" ["e"=1]
+"envoyproxy/ratelimit" -> "envoyproxy/go-control-plane"
+"envoyproxy/ratelimit" -> "envoyproxy/gateway"
+"envoyproxy/ratelimit" -> "slime-io/slime"
+"envoyproxy/ratelimit" -> "aeraki-framework/aeraki"
+"envoyproxy/ratelimit" -> "istio/proxy"
+"envoyproxy/ratelimit" -> "kubernetes-sigs/gateway-api" ["e"=1]
+"envoyproxy/ratelimit" -> "istio/client-go"
+"envoyproxy/ratelimit" -> "tetratelabs/proxy-wasm-go-sdk"
+"envoyproxy/ratelimit" -> "envoyproxy/data-plane-api"
+"envoyproxy/ratelimit" -> "istio-ecosystem/admiral"
+"envoyproxy/ratelimit" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"envoyproxy/ratelimit" -> "servicemeshinterface/smi-spec" ["e"=1]
+"envoyproxy/ratelimit" -> "kubernetes-sigs/controller-runtime" ["e"=1]
+"envoyproxy/ratelimit" -> "envoyproxy/envoy-filter-example"
+"envoyproxy/ratelimit" -> "grpc-ecosystem/go-grpc-prometheus" ["e"=1]
+"istio/istio.io" -> "istio/api"
+"istio/istio.io" -> "istio/proxy"
+"istio/istio.io" -> "aeraki-framework/aeraki"
+"istio/istio.io" -> "servicemesher/istio-official-translation" ["e"=1]
+"istio/istio.io" -> "istio/tools"
+"istio/istio.io" -> "istio/operator"
+"istio/istio.io" -> "istio/client-go"
+"istio/istio.io" -> "istio/community" ["e"=1]
+"istio/istio.io" -> "banzaicloud/istio-operator" ["e"=1]
+"istio/istio.io" -> "kiali/kiali" ["e"=1]
+"istio/istio.io" -> "servicemesher/istio-handbook" ["e"=1]
+"istio/istio.io" -> "servicemesher/istio-knowledge-map" ["e"=1]
+"istio/istio.io" -> "envoyproxy/go-control-plane"
+"istio/istio.io" -> "istio-ecosystem/admiral"
+"istio/istio.io" -> "istio/pkg"
+"hango-io/hango-gateway" -> "slime-io/slime"
+"hango-io/hango-gateway" -> "kubecube-io/KubeCube"
+"hango-io/hango-gateway" -> "hango-io/rider"
+"hango-io/hango-gateway" -> "caoyingjunz/pixiu-autoscaler"
+"hango-io/hango-gateway" -> "aeraki-framework/aeraki"
+"hango-io/hango-gateway" -> "caoyingjunz/podset-operator"
+"hango-io/hango-gateway" -> "tetratelabs/proxy-wasm-go-sdk"
+"hango-io/hango-gateway" -> "caoyingjunz/pixiulib"
+"hango-io/hango-gateway" -> "caoyingjunz/gopixiu-eventer"
+"hango-io/hango-gateway" -> "kubediag/kubediag"
+"hango-io/hango-gateway" -> "envoyproxy/gateway"
+"hango-io/hango-gateway" -> "loggie-io/loggie"
+"hango-io/hango-gateway" -> "tetratelabs/istio-weekly"
+"hango-io/hango-gateway" -> "caoyingjunz/client-helm"
+"hango-io/hango-gateway" -> "aeraki-mesh/aeraki"
+"kubecube-io/KubeCube" -> "hango-io/hango-gateway"
+"kubecube-io/KubeCube" -> "loggie-io/loggie"
+"kubecube-io/KubeCube" -> "kubediag/kubediag"
+"kubecube-io/KubeCube" -> "slime-io/slime"
+"kubecube-io/KubeCube" -> "weilaaa/grief-porter"
+"kubecube-io/KubeCube" -> "horizoncd/horizon"
+"loggie-io/loggie" -> "kubecube-io/KubeCube"
+"loggie-io/loggie" -> "alibaba/ilogtail" ["e"=1]
+"loggie-io/loggie" -> "slime-io/slime"
+"loggie-io/loggie" -> "gocrane/crane" ["e"=1]
+"loggie-io/loggie" -> "childe/gohangout" ["e"=1]
+"loggie-io/loggie" -> "hango-io/hango-gateway"
+"loggie-io/loggie" -> "NetEase-Media/ngo"
+"loggie-io/loggie" -> "tkestack/kstone" ["e"=1]
+"loggie-io/loggie" -> "koderover/zadig" ["e"=1]
+"loggie-io/loggie" -> "opencurve/curve" ["e"=1]
+"loggie-io/loggie" -> "AliyunContainerService/kube-eventer" ["e"=1]
+"loggie-io/loggie" -> "deepflowys/deepflow"
+"loggie-io/loggie" -> "clickvisual/clickvisual" ["e"=1]
+"loggie-io/loggie" -> "kubegems/kubegems"
+"loggie-io/loggie" -> "shimohq/mogo" ["e"=1]
+"hwameistor/hwameistor" -> "kubean-io/kubean"
+"hwameistor/hwameistor" -> "spidernet-io/spiderpool"
+"hwameistor/hwameistor" -> "cloudtty/cloudtty"
+"hwameistor/hwameistor" -> "clusterpedia-io/clusterpedia"
+"hwameistor/hwameistor" -> "hwameistor/local-storage"
+"hwameistor/hwameistor" -> "klts-io/kubernetes-lts"
+"hwameistor/hwameistor" -> "merbridge/merbridge"
+"hwameistor/hwameistor" -> "ferryproxy/ferry"
+"envoyproxy/nighthawk" -> "envoyproxy/envoy-perf"
+"envoyproxy/nighthawk" -> "cncf/udpa"
+"envoyproxy/nighthawk" -> "istio/tools"
+"envoyproxy/nighthawk" -> "envoyproxy/xds-relay"
+"envoyproxy/nighthawk" -> "layer5io/getnighthawk" ["e"=1]
+"elastic-ai/elastic-gpu-scheduler" -> "elastic-ai/elastic-gpu-agent"
+"solo-io/wasme" -> "envoyproxy/envoy-wasm"
+"cloudtty/cloudtty" -> "kubean-io/kubean"
+"cloudtty/cloudtty" -> "hwameistor/hwameistor"
+"cloudtty/cloudtty" -> "spidernet-io/spiderpool"
+"cloudtty/cloudtty" -> "clusterpedia-io/clusterpedia"
+"cloudtty/cloudtty" -> "ferryproxy/ferry"
+"cloudtty/cloudtty" -> "klts-io/kubernetes-lts"
+"cloudtty/cloudtty" -> "hwameistor/local-storage"
+"cloudtty/cloudtty" -> "merbridge/merbridge"
+"cloudtty/cloudtty" -> "zettastor/dbs"
+"cloudtty/cloudtty" -> "cncf/sandbox"
+"cloudtty/cloudtty" -> "kubernetes-sigs/kwok"
+"cloudtty/cloudtty" -> "DaoCloud/DaoCloud-docs"
+"istio/proxy" -> "istio/api"
+"istio/proxy" -> "envoyproxy/go-control-plane"
+"istio/proxy" -> "envoyproxy/data-plane-api"
+"istio/proxy" -> "aeraki-framework/aeraki"
+"istio/proxy" -> "envoyproxy/envoy-filter-example"
+"istio/proxy" -> "istio/tools"
+"istio/proxy" -> "envoyproxy/envoy-wasm"
+"istio/proxy" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"istio/proxy" -> "istio/istio.io"
+"istio/proxy" -> "istio/client-go"
+"istio/proxy" -> "istio/operator"
+"istio/proxy" -> "proxy-wasm/spec"
+"istio/proxy" -> "slime-io/slime"
+"istio/proxy" -> "istio/community" ["e"=1]
+"istio/proxy" -> "istio-ecosystem/admiral"
+"shuveb/io_uring-by-example" -> "frevib/io_uring-echo-server"
+"shuveb/io_uring-by-example" -> "shuveb/loti-examples"
+"shuveb/io_uring-by-example" -> "axboe/liburing" ["e"=1]
+"shuveb/io_uring-by-example" -> "Iceber/iouring-go"
+"keikoproj/kube-forensics" -> "keikoproj/addon-manager"
+"keikoproj/kube-forensics" -> "keikoproj/active-monitor"
+"keikoproj/kube-forensics" -> "keikoproj/upgrade-manager"
+"keikoproj/kube-forensics" -> "keikoproj/minion-manager"
+"keikoproj/kube-forensics" -> "keikoproj/instance-manager"
+"keikoproj/kube-forensics" -> "keikoproj/governor"
+"keikoproj/kube-forensics" -> "keikoproj/aws-auth"
+"keikoproj/kube-forensics" -> "keikoproj/lifecycle-manager"
+"keikoproj/kube-forensics" -> "keikoproj/keiko"
+"deepflowio/deepflow" -> "KindlingProject/kindling"
+"caoyingjunz/go-learning" -> "caoyingjunz/pixiu-autoscaler"
+"caoyingjunz/go-learning" -> "caoyingjunz/gopixiu"
+"caoyingjunz/go-learning" -> "caoyingjunz/pixiu"
+"caoyingjunz/go-learning" -> "caoyingjunz/pixiu-dashboard"
+"caoyingjunz/go-learning" -> "caoyingjunz/kubez-ansible"
+"caoyingjunz/go-learning" -> "caoyingjunz/client-helm"
+"caoyingjunz/go-learning" -> "caoyingjunz/podset-operator"
+"caoyingjunz/go-learning" -> "caoyingjunz/gopixiu-eventer"
+"caoyingjunz/go-learning" -> "caoyingjunz/pixiulib"
+"caoyingjunz/go-learning" -> "caoyingjunz/grpc-pixiu"
+"caoyingjunz/gopixiu" -> "caoyingjunz/kubez-ansible"
+"caoyingjunz/gopixiu" -> "caoyingjunz/pixiu"
+"caoyingjunz/gopixiu" -> "caoyingjunz/go-learning"
+"caoyingjunz/gopixiu" -> "caoyingjunz/pixiu-autoscaler"
+"caoyingjunz/gopixiu" -> "caoyingjunz/client-helm"
+"caoyingjunz/gopixiu" -> "caoyingjunz/pixiu-dashboard"
+"caoyingjunz/gopixiu" -> "caoyingjunz/podset-operator"
+"caoyingjunz/gopixiu" -> "caoyingjunz/gopixiu-eventer"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/pixiu"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/gopixiu"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/go-learning"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/pixiu-autoscaler"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/kubez-autoscaler"
+"caoyingjunz/kubez-ansible" -> "duancaz/kubez-autoscaler"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/kubezspaces"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/podset-operator"
+"caoyingjunz/kubez-ansible" -> "caoyingjunz/client-helm"
+"caoyingjunz/pixiu" -> "caoyingjunz/kubez-ansible"
+"caoyingjunz/pixiu" -> "caoyingjunz/gopixiu"
+"caoyingjunz/pixiu" -> "caoyingjunz/kubez-autoscaler"
+"caoyingjunz/pixiu" -> "caoyingjunz/go-learning"
+"caoyingjunz/pixiu" -> "caoyingjunz/pixiu-autoscaler"
+"caoyingjunz/pixiu" -> "caoyingjunz/client-helm"
+"caoyingjunz/pixiu" -> "duancaz/kubez-autoscaler"
+"caoyingjunz/pixiu" -> "duancaz/kubez-ansible"
+"caoyingjunz/pixiu-autoscaler" -> "caoyingjunz/pixiu-dashboard"
+"caoyingjunz/pixiu-autoscaler" -> "caoyingjunz/go-learning"
+"caoyingjunz/pixiu-autoscaler" -> "caoyingjunz/client-helm"
+"caoyingjunz/pixiu-autoscaler" -> "caoyingjunz/podset-operator"
+"envoyproxy/java-control-plane" -> "envoyproxy/data-plane-api"
+"istio-ecosystem/admiral" -> "keikoproj/keiko"
+"istio-ecosystem/admiral" -> "orkaproj/instance-manager"
+"istio-ecosystem/admiral" -> "orkaproj/governor"
+"istio-ecosystem/admiral" -> "orkaproj/upgrade-manager"
+"istio-ecosystem/admiral" -> "orkaproj/active-monitor"
+"istio-ecosystem/admiral" -> "argoproj/argo-rollouts" ["e"=1]
+"istio-ecosystem/admiral" -> "numaproj/numalogic"
+"istio-ecosystem/admiral" -> "orkaproj/addon-manager"
+"istio-ecosystem/admiral" -> "orkaproj/kube-forensics"
+"istio-ecosystem/admiral" -> "orkaproj/minion-manager"
+"istio-ecosystem/admiral" -> "rsocket/rsocket-swift"
+"istio-ecosystem/admiral" -> "numaproj/numaflow"
+"istio-ecosystem/admiral" -> "keikoproj/lifecycle-manager"
+"istio-ecosystem/admiral" -> "numaproj/numaproj"
+"istio-ecosystem/admiral" -> "istio/client-go"
+"clusterpedia-io/clusterpedia" -> "kubean-io/kubean"
+"clusterpedia-io/clusterpedia" -> "spidernet-io/spiderpool"
+"clusterpedia-io/clusterpedia" -> "hwameistor/hwameistor"
+"clusterpedia-io/clusterpedia" -> "klts-io/kubernetes-lts"
+"clusterpedia-io/clusterpedia" -> "cloudtty/cloudtty"
+"clusterpedia-io/clusterpedia" -> "merbridge/merbridge"
+"clusterpedia-io/clusterpedia" -> "hwameistor/local-storage"
+"clusterpedia-io/clusterpedia" -> "ferryproxy/ferry"
+"clusterpedia-io/clusterpedia" -> "kubernetes-sigs/kwok"
+"clusterpedia-io/clusterpedia" -> "zettastor/dbs"
+"clusterpedia-io/clusterpedia" -> "DaoCloud/public-image-mirror"
+"spidernet-io/spiderpool" -> "hwameistor/hwameistor"
+"spidernet-io/spiderpool" -> "kubean-io/kubean"
+"spidernet-io/spiderpool" -> "cloudtty/cloudtty"
+"spidernet-io/spiderpool" -> "clusterpedia-io/clusterpedia"
+"spidernet-io/spiderpool" -> "klts-io/kubernetes-lts"
+"spidernet-io/spiderpool" -> "merbridge/merbridge"
+"spidernet-io/spiderpool" -> "hwameistor/local-storage"
+"spidernet-io/spiderpool" -> "ferryproxy/ferry"
+"CloudDectective-Harmonycloud/kindling" -> "deepflowys/deepflow"
+"deepflowys/deepflow" -> "CloudDectective-Harmonycloud/kindling"
+"deepflowys/deepflow" -> "kubegems/kubegems"
+"deepflowys/deepflow" -> "KindlingProject/kindling"
+"deepflowys/deepflow" -> "apache/skywalking-rover" ["e"=1]
+"deepflowys/deepflow" -> "GuanceCloud/datakit"
+"deepflowys/deepflow" -> "nevermosby/linux-bpf-learning" ["e"=1]
+"deepflowys/deepflow" -> "alibaba/ilogtail" ["e"=1]
+"deepflowys/deepflow" -> "linuxkerneltravel/lmp" ["e"=1]
+"deepflowys/deepflow" -> "merbridge/merbridge"
+"deepflowys/deepflow" -> "loggie-io/loggie"
+"togettoyou/hub-mirror" -> "DaoCloud/public-image-mirror"
+"kubegems/kubegems" -> "CloudmindsRobot/dagger"
+"kubegems/kubegems" -> "deepflowys/deepflow"
+"kubegems/kubegems" -> "kubegems/dashboard"
+"kubegems/kubegems" -> "metaflowys/metaflow"
+"kubegems/kubegems" -> "dnsjia/luban" ["e"=1]
+"kubegems/kubegems" -> "horizoncd/horizon"
+"kubegems/kubegems" -> "koderover/zadig" ["e"=1]
+"envoyproxy/gateway" -> "kubernetes-sigs/gateway-api" ["e"=1]
+"envoyproxy/gateway" -> "envoyproxy/go-control-plane"
+"envoyproxy/gateway" -> "tetratelabs/proxy-wasm-go-sdk"
+"envoyproxy/gateway" -> "projectcontour/contour" ["e"=1]
+"envoyproxy/gateway" -> "alibaba/higress" ["e"=1]
+"envoyproxy/gateway" -> "slime-io/slime"
+"envoyproxy/gateway" -> "cilium/tetragon" ["e"=1]
+"envoyproxy/gateway" -> "aeraki-mesh/aeraki"
+"envoyproxy/gateway" -> "merbridge/merbridge"
+"envoyproxy/gateway" -> "envoyproxy/ratelimit"
+"envoyproxy/gateway" -> "istio/ztunnel"
+"envoyproxy/gateway" -> "emissary-ingress/emissary" ["e"=1]
+"envoyproxy/gateway" -> "hango-io/hango-gateway"
+"envoyproxy/gateway" -> "cncf/xds"
+"envoyproxy/gateway" -> "kumahq/kuma" ["e"=1]
+"tetratelabs/proxy-wasm-go-sdk" -> "proxy-wasm/spec"
+"tetratelabs/proxy-wasm-go-sdk" -> "solo-io/wasm"
+"tetratelabs/proxy-wasm-go-sdk" -> "proxy-wasm/proxy-wasm-rust-sdk"
+"tetratelabs/proxy-wasm-go-sdk" -> "slime-io/slime"
+"tetratelabs/proxy-wasm-go-sdk" -> "aeraki-framework/aeraki"
+"tetratelabs/proxy-wasm-go-sdk" -> "istio-ecosystem/wasm-extensions"
+"tetratelabs/proxy-wasm-go-sdk" -> "corazawaf/coraza-proxy-wasm" ["e"=1]
+"tetratelabs/proxy-wasm-go-sdk" -> "envoyproxy/go-control-plane"
+"tetratelabs/proxy-wasm-go-sdk" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"tetratelabs/proxy-wasm-go-sdk" -> "istio/client-go"
+"tetratelabs/proxy-wasm-go-sdk" -> "tetratelabs/func-e"
+"tetratelabs/proxy-wasm-go-sdk" -> "envoyproxy/gateway"
+"tetratelabs/proxy-wasm-go-sdk" -> "proxy-wasm/proxy-wasm-cpp-host"
+"tetratelabs/proxy-wasm-go-sdk" -> "tetratelabs/getenvoy"
+"tetratelabs/proxy-wasm-go-sdk" -> "envoyproxy/envoy-filter-example"
+"istio/tools" -> "istio/operator"
+"istio/tools" -> "istio/client-go"
+"istio/tools" -> "istio/api"
+"istio/tools" -> "envoyproxy/envoy-wasm"
+"istio/tools" -> "istio/proxy"
+"istio/tools" -> "envoyproxy/nighthawk"
+"istio/tools" -> "istio/cni"
+"istio/tools" -> "envoyproxy/envoy-perf"
+"caoyingjunz/kubez-autoscaler" -> "duancaz/kubez-autoscaler"
+"caoyingjunz/kubez-autoscaler" -> "duancaz/kubez-ansible"
+"caoyingjunz/kubez-autoscaler" -> "caoyingjunz/pixiu"
+"caoyingjunz/kubez-autoscaler" -> "yingjuncao/kubez-ansible"
+"caoyingjunz/kubez-autoscaler" -> "caoyingjunz/kubezspaces"
+"caoyingjunz/kubez-autoscaler" -> "caoyingjunz/client-helm"
+"frevib/io_uring-echo-server" -> "shuveb/io_uring-by-example"
+"frevib/io_uring-echo-server" -> "frevib/epoll-echo-server"
+"frevib/io_uring-echo-server" -> "MarkReedZ/mrloop"
+"frevib/io_uring-echo-server" -> "CarterLi/liburing4cpp"
+"frevib/io_uring-echo-server" -> "axboe/liburing" ["e"=1]
+"frevib/io_uring-echo-server" -> "xuanyi-fu/xynet"
+"frevib/io_uring-echo-server" -> "yunwei37/co-uring-WebServer"
+"frevib/io_uring-echo-server" -> "CarterLi/io_uring-echo-server"
+"frevib/io_uring-echo-server" -> "shuveb/loti-examples"
+"proxy-wasm/spec" -> "tetratelabs/proxy-wasm-go-sdk"
+"proxy-wasm/spec" -> "proxy-wasm/proxy-wasm-rust-sdk"
+"proxy-wasm/spec" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"proxy-wasm/spec" -> "proxy-wasm/proxy-wasm-cpp-host"
+"proxy-wasm/spec" -> "envoyproxy/envoy-wasm"
+"proxy-wasm/spec" -> "solo-io/proxy-runtime"
+"proxy-wasm/spec" -> "api7/wasm-nginx-module"
+"proxy-wasm/spec" -> "solo-io/wasme"
+"proxy-wasm/spec" -> "cncf/udpa"
+"proxy-wasm/spec" -> "istio-ecosystem/wasm-extensions"
+"proxy-wasm/spec" -> "mosn/proxy-wasm-go-host"
+"proxy-wasm/spec" -> "aeraki-framework/aeraki"
+"proxy-wasm/spec" -> "envoyproxy/envoy-filter-example"
+"flomesh-io/pipy" -> "flomesh-io/osm-edge"
+"flomesh-io/pipy" -> "flomesh-io/fsm"
+"flomesh-io/pipy" -> "flomesh-io/ErieCanal"
+"flomesh-io/pipy" -> "aeraki-framework/aeraki"
+"flomesh-io/pipy" -> "proxy-wasm/spec"
+"flomesh-io/pipy" -> "slime-io/slime"
+"flomesh-io/pipy" -> "cncf/udpa"
+"flomesh-io/pipy" -> "flomesh-io/flomesh-bookinfo-demo"
+"flomesh-io/pipy" -> "hango-io/hango-gateway"
+"flomesh-io/pipy" -> "mosn/layotto" ["e"=1]
+"flomesh-io/pipy" -> "kubeovn/kube-ovn" ["e"=1]
+"CloudmindsRobot/dagger" -> "kubegems/kubegems"
+"CloudmindsRobot/dagger" -> "CloudXiaobai/loki-cluster-deploy"
+"CloudmindsRobot/dagger" -> "CloudmindsRobot/loki-operator"
+"istio/client-go" -> "istio/api"
+"istio/client-go" -> "istio/operator"
+"istio/client-go" -> "aspenmesh/istio-client-go"
+"istio/client-go" -> "istio/pkg"
+"istio/client-go" -> "istio/tools"
+"istio/client-go" -> "tetratelabs/proxy-wasm-go-sdk"
+"istio/client-go" -> "aeraki-framework/aeraki"
+"istio/client-go" -> "istio-ecosystem/istio-coredns-plugin"
+"istio/client-go" -> "istio-ecosystem/dns-discovery"
+"istio/client-go" -> "slime-io/slime"
+"istio/client-go" -> "istio/installer"
+"merbridge/merbridge" -> "klts-io/kubernetes-lts"
+"merbridge/merbridge" -> "clusterpedia-io/clusterpedia"
+"merbridge/merbridge" -> "kubean-io/kubean"
+"merbridge/merbridge" -> "spidernet-io/spiderpool"
+"merbridge/merbridge" -> "hwameistor/hwameistor"
+"merbridge/merbridge" -> "cloudtty/cloudtty"
+"merbridge/merbridge" -> "hwameistor/local-storage"
+"merbridge/merbridge" -> "ferryproxy/ferry"
+"merbridge/merbridge" -> "kubernetes-sigs/kwok"
+"merbridge/merbridge" -> "DaoCloud/public-image-mirror"
+"merbridge/merbridge" -> "zettastor/dbs"
+"merbridge/merbridge" -> "DaoCloud/DaoCloud-docs"
+"merbridge/merbridge" -> "slime-io/slime"
+"merbridge/merbridge" -> "aeraki-framework/aeraki"
+"NetEase-Media/ngo" -> "NetEase-Media/easy-ngo"
+"GuanceCloud/datakit" -> "GuanceCloud/dataflux-func"
+"slime-io/slime" -> "aeraki-framework/aeraki"
+"slime-io/slime" -> "hango-io/hango-gateway"
+"slime-io/slime" -> "aeraki-mesh/aeraki"
+"slime-io/slime" -> "tetratelabs/proxy-wasm-go-sdk"
+"slime-io/slime" -> "istio-ecosystem/consul-mcp"
+"slime-io/slime" -> "aeraki-framework/meta-protocol-proxy"
+"slime-io/slime" -> "merbridge/merbridge"
+"slime-io/slime" -> "istio/client-go"
+"slime-io/slime" -> "slime-io/i9s"
+"slime-io/slime" -> "kubecube-io/KubeCube"
+"slime-io/slime" -> "istio/ztunnel"
+"slime-io/slime" -> "zhranklin/easy_kubectl"
+"slime-io/slime" -> "istio/api"
+"slime-io/slime" -> "tetratelabs/istio-weekly"
+"slime-io/slime" -> "loggie-io/loggie"
+"turbinelabs/rotor" -> "anubhavmishra/envoy-consul-sds"
+"caoyingjunz/client-helm" -> "caoyingjunz/podset-operator"
+"caoyingjunz/client-helm" -> "caoyingjunz/pixiu-autoscaler"
+"aeraki-mesh/aeraki" -> "slime-io/slime"
+"aeraki-mesh/aeraki" -> "tetratelabs/proxy-wasm-go-sdk"
+"aeraki-mesh/aeraki" -> "aeraki-mesh/meta-protocol-proxy"
+"aeraki-mesh/aeraki" -> "envoyproxy/gateway"
+"aeraki-mesh/aeraki" -> "elastic-ai/elastic-gpu"
+"aeraki-mesh/aeraki" -> "aeraki-mesh/dubbo2istio"
+"aeraki-framework/aeraki" -> "slime-io/slime"
+"aeraki-framework/aeraki" -> "aeraki-framework/meta-protocol-proxy"
+"aeraki-framework/aeraki" -> "tetratelabs/proxy-wasm-go-sdk"
+"aeraki-framework/aeraki" -> "cncf/udpa"
+"aeraki-framework/aeraki" -> "istio/client-go"
+"aeraki-framework/aeraki" -> "istio/api"
+"aeraki-framework/aeraki" -> "istio/proxy"
+"aeraki-framework/aeraki" -> "istio-ecosystem/consul-mcp"
+"aeraki-framework/aeraki" -> "proxy-wasm/spec"
+"aeraki-framework/aeraki" -> "tetratelabs/istio-weekly"
+"aeraki-framework/aeraki" -> "merbridge/merbridge"
+"aeraki-framework/aeraki" -> "envoyproxy/go-control-plane"
+"aeraki-framework/aeraki" -> "querycap/istio"
+"aeraki-framework/aeraki" -> "istio/istio.io"
+"aeraki-framework/aeraki" -> "cncf/xds"
+"elastic-ai/elastic-gpu" -> "elastic-ai/elastic-gpu-scheduler"
+"klts-io/kubernetes-lts" -> "clusterpedia-io/clusterpedia"
+"klts-io/kubernetes-lts" -> "kubean-io/kubean"
+"klts-io/kubernetes-lts" -> "merbridge/merbridge"
+"klts-io/kubernetes-lts" -> "hwameistor/local-storage"
+"klts-io/kubernetes-lts" -> "hwameistor/hwameistor"
+"klts-io/kubernetes-lts" -> "spidernet-io/spiderpool"
+"klts-io/kubernetes-lts" -> "cloudtty/cloudtty"
+"klts-io/kubernetes-lts" -> "ferryproxy/ferry"
+"klts-io/kubernetes-lts" -> "zettastor/dbs"
+"kubean-io/kubean" -> "hwameistor/hwameistor"
+"kubean-io/kubean" -> "cloudtty/cloudtty"
+"kubean-io/kubean" -> "spidernet-io/spiderpool"
+"kubean-io/kubean" -> "ferryproxy/ferry"
+"kubean-io/kubean" -> "clusterpedia-io/clusterpedia"
+"kubean-io/kubean" -> "klts-io/kubernetes-lts"
+"kubean-io/kubean" -> "hwameistor/local-storage"
+"kubean-io/kubean" -> "merbridge/merbridge"
+"kubean-io/kubean" -> "zettastor/dbs"
+"kubean-io/kubean" -> "DaoCloud/DaoCloud-docs"
+"kubean-io/kubean" -> "kubernetes-sigs/kwok"
+"keikoproj/addon-manager" -> "orkaproj/governor"
+"keikoproj/addon-manager" -> "orkaproj/instance-manager"
+"keikoproj/addon-manager" -> "keikoproj/active-monitor"
+"keikoproj/addon-manager" -> "keikoproj/governor"
+"envoyproxy/envoy-wasm" -> "solo-io/wasme"
+"envoyproxy/envoy-wasm" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"envoyproxy/envoy-wasm" -> "proxy-wasm/proxy-wasm-rust-sdk"
+"envoyproxy/envoy-wasm" -> "proxy-wasm/proxy-wasm-cpp-host"
+"envoyproxy/envoy-wasm" -> "istio/operator"
+"envoyproxy/envoy-wasm" -> "proxy-wasm/spec"
+"envoyproxy/envoy-wasm" -> "istio/cni"
+"lyft/ratelimit" -> "envoyproxy/go-control-plane"
+"lyft/ratelimit" -> "lyft/discovery"
+"lyft/ratelimit" -> "turbinelabs/rotor"
+"lyft/ratelimit" -> "envoyproxy/data-plane-api"
+"lyft/ratelimit" -> "lyft/protoc-gen-star" ["e"=1]
+"lyft/ratelimit" -> "lyft/protoc-gen-validate" ["e"=1]
+"lyft/ratelimit" -> "bsm/grpclb" ["e"=1]
+"lyft/ratelimit" -> "gojektech/consul-envoy-xds"
+"lyft/ratelimit" -> "myntra/golimit" ["e"=1]
+"querycap/istio" -> "querycap/istio-envoy-arm64"
+"cncf/xds" -> "cncf/udpa"
+"cncf/udpa" -> "cncf/xds"
+"cncf/udpa" -> "envoyproxy/data-plane-api"
+"cncf/udpa" -> "envoyproxy/nighthawk"
+"cncf/udpa" -> "proxy-wasm/spec"
+"cncf/udpa" -> "aeraki-framework/aeraki"
+"cncf/udpa" -> "envoyproxy/envoy-wasm"
+"cncf/udpa" -> "istio/api"
+"numaproj/numaflow" -> "numaproj/numalogic"
+"numaproj/numaflow" -> "numaproj/numaproj"
+"numaproj/numaflow" -> "numaproj/numaflow-python"
+"numaproj/numaflow" -> "keikoproj/keiko"
+"numaproj/numaflow" -> "numaproj/numaflow-go"
+"numaproj/numaflow" -> "argoproj-labs/argo-dataflow" ["e"=1]
+"istio/installer" -> "istio/operator"
+"duancaz/kubez-autoscaler" -> "duancaz/kubez-ansible"
+"duancaz/kubez-autoscaler" -> "caoyingjunz/kubez-autoscaler"
+"envoyproxy/envoy-filter-example" -> "envoyproxy/envoy-perf"
+"envoyproxy/envoy-filter-example" -> "envoyproxy/data-plane-api"
+"envoyproxy/envoy-filter-example" -> "istio/proxy"
+"envoyproxy/envoy-filter-example" -> "proxy-wasm/proxy-wasm-cpp-host"
+"envoyproxy/envoy-filter-example" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"envoyproxy/envoy-filter-example" -> "aeraki-framework/meta-protocol-proxy"
+"envoyproxy/envoy-filter-example" -> "envoyproxy/go-control-plane"
+"envoyproxy/envoy-filter-example" -> "proxy-wasm/spec"
+"envoyproxy/envoy-filter-example" -> "tetratelabs/proxy-wasm-go-sdk"
+"hwameistor/local-storage" -> "kubean-io/kubean"
+"hwameistor/local-storage" -> "hwameistor/hwameistor"
+"hwameistor/local-storage" -> "klts-io/kubernetes-lts"
+"hwameistor/local-storage" -> "clusterpedia-io/clusterpedia"
+"hwameistor/local-storage" -> "spidernet-io/spiderpool"
+"hwameistor/local-storage" -> "cloudtty/cloudtty"
+"hwameistor/local-storage" -> "ferryproxy/ferry"
+"hwameistor/local-storage" -> "merbridge/merbridge"
+"hwameistor/local-storage" -> "hwameistor/helm-charts"
+"hwameistor/local-storage" -> "zettastor/dbs"
+"Iceber/iouring-go" -> "hodgesds/iouring-go"
+"Iceber/iouring-go" -> "ii64/gouring"
+"Iceber/iouring-go" -> "godzie44/go-uring"
+"Iceber/iouring-go" -> "shuveb/io_uring-by-example"
+"Iceber/iouring-go" -> "kubedoctor/kubedoctor"
+"Iceber/iouring-go" -> "kubean-io/kubean"
+"proxy-wasm/proxy-wasm-cpp-sdk" -> "proxy-wasm/proxy-wasm-cpp-host"
+"proxy-wasm/proxy-wasm-cpp-sdk" -> "proxy-wasm/spec"
+"proxy-wasm/proxy-wasm-cpp-sdk" -> "proxy-wasm/proxy-wasm-rust-sdk"
+"proxy-wasm/proxy-wasm-cpp-sdk" -> "envoyproxy/envoy-wasm"
+"proxy-wasm/proxy-wasm-cpp-sdk" -> "istio-ecosystem/wasm-extensions"
+"keikoproj/aws-auth" -> "keikoproj/addon-manager"
+"keikoproj/aws-auth" -> "keikoproj/lifecycle-manager"
+"keikoproj/aws-auth" -> "keikoproj/active-monitor"
+"keikoproj/aws-auth" -> "orkaproj/governor"
+"keikoproj/aws-auth" -> "orkaproj/instance-manager"
+"keikoproj/aws-auth" -> "keikoproj/upgrade-manager"
+"keikoproj/aws-auth" -> "keikoproj/instance-manager"
+"keikoproj/aws-auth" -> "keikoproj/minion-manager"
+"keikoproj/aws-auth" -> "keikoproj/keiko"
+"keikoproj/aws-auth" -> "orkaproj/upgrade-manager"
+"keikoproj/aws-auth" -> "keikoproj/kube-forensics"
+"keikoproj/aws-auth" -> "keikoproj/governor"
+"hodgesds/iouring-go" -> "dshulyak/uring"
+"hodgesds/iouring-go" -> "godzie44/go-uring"
+"keikoproj/keiko" -> "istio-ecosystem/admiral"
+"keikoproj/keiko" -> "orkaproj/instance-manager"
+"keikoproj/keiko" -> "orkaproj/upgrade-manager"
+"keikoproj/keiko" -> "orkaproj/governor"
+"keikoproj/keiko" -> "keikoproj/lifecycle-manager"
+"keikoproj/keiko" -> "orkaproj/minion-manager"
+"keikoproj/keiko" -> "keikoproj/instance-manager"
+"keikoproj/keiko" -> "keikoproj/addon-manager"
+"keikoproj/keiko" -> "keikoproj/governor"
+"keikoproj/keiko" -> "keikoproj/aws-auth"
+"keikoproj/keiko" -> "keikoproj/active-monitor"
+"keikoproj/keiko" -> "orkaproj/addon-manager"
+"keikoproj/keiko" -> "orkaproj/active-monitor"
+"keikoproj/keiko" -> "keikoproj/upgrade-manager"
+"keikoproj/keiko" -> "numaproj/numaflow"
+"numaproj/numalogic" -> "numaproj/numaproj"
+"numaproj/numalogic" -> "numaproj/numaflow"
+"numaproj/numalogic" -> "numaproj/numaflow-python"
+"numaproj/numalogic" -> "numaproj/numaflow-go"
+"aspenmesh/istio-vet" -> "aspenmesh/istio-client-go"
+"DaoCloud/DaoCloud-docs" -> "ferryproxy/ferry"
+"ferryproxy/ferry" -> "kubean-io/kubean"
+"ferryproxy/ferry" -> "cloudtty/cloudtty"
+"ferryproxy/ferry" -> "hwameistor/hwameistor"
+"ferryproxy/ferry" -> "spidernet-io/spiderpool"
+"ferryproxy/ferry" -> "hwameistor/local-storage"
+"istio/operator" -> "banzaicloud/istio-operator" ["e"=1]
+"istio/operator" -> "aspenmesh/istio-client-go"
+"istio/operator" -> "istio/installer"
+"istio/operator" -> "istio/client-go"
+"istio/operator" -> "envoyproxy/envoy-wasm"
+"istio/operator" -> "istio/tools"
+"istio/operator" -> "istio-ecosystem/istio-installer"
+"tetratelabs/getenvoy" -> "tetratelabs/getistio"
+"proxy-wasm/proxy-wasm-cpp-host" -> "proxy-wasm/proxy-wasm-cpp-sdk"
+"solo-io/wasm" -> "tetratelabs/proxy-wasm-go-sdk"
+"keikoproj/active-monitor" -> "keikoproj/addon-manager"
+"keikoproj/active-monitor" -> "keikoproj/upgrade-manager"
+"keikoproj/active-monitor" -> "keikoproj/governor"
+"keikoproj/active-monitor" -> "keikoproj/kube-forensics"
+"keikoproj/active-monitor" -> "keikoproj/instance-manager"
+"keikoproj/active-monitor" -> "keikoproj/minion-manager"
+"keikoproj/active-monitor" -> "keikoproj/aws-auth"
+"shuveb/loti-examples" -> "shuveb/io_uring-by-example"
+"MarkReedZ/mrloop" -> "MarkReedZ/mrcache"
+"yingjuncao/kubez-ansible" -> "caoyingjunz/kubez-autoscaler"
+"keikoproj/governor" -> "keikoproj/instance-manager"
+"keikoproj/governor" -> "keikoproj/addon-manager"
+"keikoproj/governor" -> "keikoproj/minion-manager"
+"keikoproj/governor" -> "keikoproj/active-monitor"
+"keikoproj/governor" -> "keikoproj/upgrade-manager"
+"duancaz/kubez-ansible" -> "duancaz/kubez-autoscaler"
+"keikoproj/minion-manager" -> "keikoproj/governor"
+"keikoproj/minion-manager" -> "keikoproj/upgrade-manager"
+"keikoproj/minion-manager" -> "keikoproj/instance-manager"
+"xuanyi-fu/xynet" -> "CarterLi/liburing4cpp"
+"keikoproj/upgrade-manager" -> "keikoproj/instance-manager"
+"keikoproj/upgrade-manager" -> "keikoproj/addon-manager"
+"keikoproj/upgrade-manager" -> "keikoproj/active-monitor"
+"keikoproj/upgrade-manager" -> "keikoproj/minion-manager"
+"keikoproj/upgrade-manager" -> "keikoproj/governor"
+"keikoproj/upgrade-manager" -> "keikoproj/lifecycle-manager"
+"keikoproj/upgrade-manager" -> "keikoproj/aws-auth"
+"keikoproj/upgrade-manager" -> "keikoproj/kube-forensics"
+"zettastor/dbs" -> "ferryproxy/ferry"
+"zettastor/dbs" -> "klts-io/kubernetes-lts"
+"zettastor/dbs" -> "kubean-io/kubean"
+"zettastor/dbs" -> "hwameistor/local-storage"
+"CarterLi/liburing4cpp" -> "xuanyi-fu/xynet"
+"CarterLi/liburing4cpp" -> "frevib/io_uring-echo-server"
+"CarterLi/liburing4cpp" -> "yunwei37/co-uring-WebServer"
+"CarterLi/liburing4cpp" -> "RobertLeahy/AsioUring"
+"CarterLi/liburing4cpp" -> "shuveb/loti-examples"
+"wzshiming/fake-kubelet" -> "wzshiming/fake-k8s"
+"istio-ecosystem/wasm-extensions" -> "corazawaf/coraza-proxy-wasm" ["e"=1]
+"aeraki-framework/meta-protocol-proxy" -> "aeraki-framework/dubbo2istio"
+"argoproj-labs/argo-cloudops" -> "numaproj/numaproj"
+"argoproj-labs/argo-cloudops" -> "numaproj/numalogic"
+"argoproj-labs/argo-cloudops" -> "keikoproj/keiko"
+"keikoproj/lifecycle-manager" -> "orkaproj/upgrade-manager"
+"keikoproj/lifecycle-manager" -> "orkaproj/governor"
+"keikoproj/lifecycle-manager" -> "orkaproj/instance-manager"
+"keikoproj/lifecycle-manager" -> "orkaproj/minion-manager"
+"keikoproj/lifecycle-manager" -> "orkaproj/community"
+"keikoproj/lifecycle-manager" -> "keikoproj/addon-manager"
+"keikoproj/lifecycle-manager" -> "keikoproj/aws-auth"
+"keikoproj/lifecycle-manager" -> "keikoproj/upgrade-manager"
+"keikoproj/lifecycle-manager" -> "orkaproj/active-monitor"
+"numaproj/numaproj" -> "numaproj/numalogic"
+"numaproj/numaproj" -> "numaproj/numaflow"
+"numaproj/numaproj" -> "numaproj/numaflow-python"
+"numaproj/numaproj" -> "numaproj/numaflow-go"
+"keikoproj/instance-manager" -> "keikoproj/upgrade-manager"
+"keikoproj/instance-manager" -> "keikoproj/governor"
+"keikoproj/instance-manager" -> "keikoproj/minion-manager"
+"keikoproj/instance-manager" -> "keikoproj/addon-manager"
+"keikoproj/instance-manager" -> "keikoproj/active-monitor"
+"flomesh-io/fsm" -> "flomesh-io/osm-edge"
+"caoyingjunz/gopixiu-eventer" -> "caoyingjunz/pixiulib"
+"numaproj/numaflow-go" -> "numaproj/numaflow-python"
+"numaproj/numaflow-python" -> "numaproj/numaflow-go"
+"orkaproj/active-monitor" -> "orkaproj/kube-forensics"
+"orkaproj/addon-manager" -> "orkaproj/kube-forensics"
+"orkaproj/governor" -> "orkaproj/instance-manager"
+"orkaproj/governor" -> "orkaproj/upgrade-manager"
+"orkaproj/governor" -> "orkaproj/minion-manager"
+"orkaproj/governor" -> "orkaproj/addon-manager"
+"orkaproj/governor" -> "orkaproj/active-monitor"
+"orkaproj/governor" -> "orkaproj/kube-forensics"
+"orkaproj/instance-manager" -> "orkaproj/governor"
+"orkaproj/instance-manager" -> "orkaproj/upgrade-manager"
+"orkaproj/instance-manager" -> "orkaproj/minion-manager"
+"orkaproj/instance-manager" -> "orkaproj/addon-manager"
+"orkaproj/instance-manager" -> "orkaproj/active-monitor"
+"orkaproj/instance-manager" -> "orkaproj/kube-forensics"
+"orkaproj/minion-manager" -> "orkaproj/addon-manager"
+"orkaproj/minion-manager" -> "orkaproj/kube-forensics"
+"orkaproj/minion-manager" -> "orkaproj/upgrade-manager"
+"orkaproj/minion-manager" -> "orkaproj/active-monitor"
+"orkaproj/minion-manager" -> "orkaproj/instance-manager"
+"orkaproj/minion-manager" -> "orkaproj/governor"
+"orkaproj/upgrade-manager" -> "orkaproj/instance-manager"
+"orkaproj/upgrade-manager" -> "orkaproj/minion-manager"
+"orkaproj/upgrade-manager" -> "orkaproj/governor"
+"orkaproj/upgrade-manager" -> "orkaproj/addon-manager"
+"orkaproj/upgrade-manager" -> "orkaproj/active-monitor"
+"orkaproj/upgrade-manager" -> "orkaproj/kube-forensics"
+"flomesh-io/osm-edge" -> "flomesh-io/ErieCanal"
+"flomesh-io/osm-edge" -> "flomesh-io/fsm"
+"flomesh-io/ErieCanal" -> "flomesh-io/osm-edge"
+"istio/api" ["l"="-9.64,3.628"]
+"istio/proxy" ["l"="-9.656,3.636"]
+"istio/client-go" ["l"="-9.636,3.665"]
+"envoyproxy/data-plane-api" ["l"="-9.652,3.591"]
+"istio/tools" ["l"="-9.62,3.612"]
+"istio/istio.github.io" ["l"="-9.025,2.605"]
+"aeraki-framework/aeraki" ["l"="-9.675,3.636"]
+"istio/operator" ["l"="-9.61,3.651"]
+"cncf/udpa" ["l"="-9.634,3.601"]
+"istio/installer" ["l"="-9.609,3.67"]
+"envoyproxy/go-control-plane" ["l"="-9.669,3.605"]
+"istio/istio.io" ["l"="-9.653,3.67"]
+"slime-io/slime" ["l"="-9.699,3.643"]
+"proxy-wasm/spec" ["l"="-9.608,3.625"]
+"tetratelabs/proxy-wasm-go-sdk" ["l"="-9.642,3.647"]
+"envoyproxy/envoy-wasm" ["l"="-9.601,3.608"]
+"DaoCloud/public-image-mirror" ["l"="-9.881,3.611"]
+"klts-io/kubernetes-lts" ["l"="-9.846,3.641"]
+"kubean-io/kubean" ["l"="-9.877,3.645"]
+"hwameistor/local-storage" ["l"="-9.855,3.631"]
+"merbridge/merbridge" ["l"="-9.819,3.633"]
+"clusterpedia-io/clusterpedia" ["l"="-9.87,3.627"]
+"hwameistor/hwameistor" ["l"="-9.843,3.623"]
+"spidernet-io/spiderpool" ["l"="-9.858,3.615"]
+"cloudtty/cloudtty" ["l"="-9.863,3.653"]
+"ferryproxy/ferry" ["l"="-9.861,3.64"]
+"DaoCloud/public-binary-files-mirror" ["l"="-9.903,3.588"]
+"kubernetes-sigs/kwok" ["l"="-9.891,3.635"]
+"wzshiming/fake-kubelet" ["l"="-9.93,3.607"]
+"proxy-wasm/proxy-wasm-rust-sdk" ["l"="-9.586,3.628"]
+"proxy-wasm/proxy-wasm-cpp-sdk" ["l"="-9.621,3.632"]
+"tetratelabs/envoy-wasm-rust-sdk" ["l"="-9.541,3.597"]
+"proxy-wasm/proxy-wasm-cpp-host" ["l"="-9.605,3.639"]
+"otomato-gh/proxy-wasm-rust" ["l"="-9.539,3.64"]
+"solo-io/proxy-runtime" ["l"="-9.564,3.611"]
+"proxy-wasm/test-framework" ["l"="-9.551,3.621"]
+"istio-ecosystem/wasm-extensions" ["l"="-9.586,3.647"]
+"istio/ztunnel" ["l"="-9.672,3.676"]
+"corazawaf/coraza-proxy-wasm" ["l"="-10.232,-6.032"]
+"solo-io/wasm" ["l"="-9.589,3.664"]
+"layer5io/wasm-filters" ["l"="31.896,-22.113"]
+"kubernetes-sigs/kueue" ["l"="-9.496,2.71"]
+"kubernetes-sigs/kube-scheduler-simulator" ["l"="-9.483,2.694"]
+"kubernetes-sigs/descheduler" ["l"="-10.674,0.283"]
+"kcp-dev/kcp" ["l"="-10.696,0.277"]
+"loft-sh/vcluster" ["l"="-10.577,0.319"]
+"envoyproxy/java-control-plane" ["l"="-9.669,3.561"]
+"envoyproxy/envoy-filter-example" ["l"="-9.646,3.613"]
+"envoyproxy/envoy-perf" ["l"="-9.613,3.581"]
+"envoyproxy/nighthawk" ["l"="-9.624,3.568"]
+"cncf/xds" ["l"="-9.685,3.595"]
+"lyft/ratelimit" ["l"="-9.654,3.533"]
+"deislabs/smi-spec" ["l"="-10.925,0.321"]
+"envoyproxy/gateway" ["l"="-9.711,3.655"]
+"envoyproxy/ratelimit" ["l"="-9.676,3.656"]
+"solo-io/gloo" ["l"="-10.765,0.093"]
+"turbinelabs/rotor" ["l"="-9.626,3.516"]
+"projectcontour/contour" ["l"="-10.71,0.182"]
+"kubernetes-sigs/gateway-api" ["l"="-10.631,0.113"]
+"istio-ecosystem/admiral" ["l"="-9.692,3.78"]
+"servicemeshinterface/smi-spec" ["l"="-10.537,0.214"]
+"kubernetes-sigs/controller-runtime" ["l"="-10.865,0.168"]
+"grpc-ecosystem/go-grpc-prometheus" ["l"="-13.068,1.176"]
+"servicemesher/istio-official-translation" ["l"="-9.165,2.529"]
+"istio/community" ["l"="-10.795,-0.128"]
+"banzaicloud/istio-operator" ["l"="-13.182,-4.622"]
+"kiali/kiali" ["l"="-10.785,0.075"]
+"servicemesher/istio-handbook" ["l"="-9.201,2.462"]
+"servicemesher/istio-knowledge-map" ["l"="-9.208,2.503"]
+"istio/pkg" ["l"="-9.658,3.703"]
+"hango-io/hango-gateway" ["l"="-9.692,3.694"]
+"kubecube-io/KubeCube" ["l"="-9.741,3.657"]
+"hango-io/rider" ["l"="-9.705,3.73"]
+"caoyingjunz/pixiu-autoscaler" ["l"="-9.634,3.77"]
+"caoyingjunz/podset-operator" ["l"="-9.638,3.759"]
+"caoyingjunz/pixiulib" ["l"="-9.657,3.739"]
+"caoyingjunz/gopixiu-eventer" ["l"="-9.65,3.751"]
+"kubediag/kubediag" ["l"="-9.733,3.708"]
+"loggie-io/loggie" ["l"="-9.756,3.627"]
+"tetratelabs/istio-weekly" ["l"="-9.7,3.674"]
+"caoyingjunz/client-helm" ["l"="-9.62,3.763"]
+"aeraki-mesh/aeraki" ["l"="-9.724,3.684"]
+"weilaaa/grief-porter" ["l"="-9.764,3.668"]
+"horizoncd/horizon" ["l"="-9.779,3.591"]
+"alibaba/ilogtail" ["l"="-9.403,2.407"]
+"gocrane/crane" ["l"="-9.427,2.514"]
+"childe/gohangout" ["l"="-13.508,-4.146"]
+"NetEase-Media/ngo" ["l"="-9.795,3.676"]
+"tkestack/kstone" ["l"="-9.443,2.563"]
+"koderover/zadig" ["l"="-9.383,2.363"]
+"opencurve/curve" ["l"="-12.099,-0.809"]
+"AliyunContainerService/kube-eventer" ["l"="-9.399,2.38"]
+"deepflowys/deepflow" ["l"="-9.795,3.565"]
+"clickvisual/clickvisual" ["l"="-13.521,-4.119"]
+"kubegems/kubegems" ["l"="-9.81,3.54"]
+"shimohq/mogo" ["l"="-12.464,1.041"]
+"envoyproxy/xds-relay" ["l"="-9.581,3.525"]
+"layer5io/getnighthawk" ["l"="31.846,-22.067"]
+"elastic-ai/elastic-gpu-scheduler" ["l"="-9.803,3.76"]
+"elastic-ai/elastic-gpu-agent" ["l"="-9.822,3.778"]
+"solo-io/wasme" ["l"="-9.574,3.593"]
+"zettastor/dbs" ["l"="-9.848,3.656"]
+"cncf/sandbox" ["l"="-9.898,3.686"]
+"DaoCloud/DaoCloud-docs" ["l"="-9.852,3.67"]
+"shuveb/io_uring-by-example" ["l"="-10.089,3.674"]
+"frevib/io_uring-echo-server" ["l"="-10.137,3.682"]
+"shuveb/loti-examples" ["l"="-10.117,3.663"]
+"axboe/liburing" ["l"="-11.823,22.035"]
+"Iceber/iouring-go" ["l"="-10.025,3.674"]
+"keikoproj/kube-forensics" ["l"="-9.677,3.882"]
+"keikoproj/addon-manager" ["l"="-9.701,3.864"]
+"keikoproj/active-monitor" ["l"="-9.691,3.89"]
+"keikoproj/upgrade-manager" ["l"="-9.693,3.876"]
+"keikoproj/minion-manager" ["l"="-9.695,3.902"]
+"keikoproj/instance-manager" ["l"="-9.708,3.892"]
+"keikoproj/governor" ["l"="-9.708,3.88"]
+"keikoproj/aws-auth" ["l"="-9.685,3.864"]
+"keikoproj/lifecycle-manager" ["l"="-9.681,3.846"]
+"keikoproj/keiko" ["l"="-9.704,3.846"]
+"deepflowio/deepflow" ["l"="-9.788,3.447"]
+"KindlingProject/kindling" ["l"="-9.787,3.495"]
+"caoyingjunz/go-learning" ["l"="-9.616,3.774"]
+"caoyingjunz/gopixiu" ["l"="-9.624,3.788"]
+"caoyingjunz/pixiu" ["l"="-9.593,3.788"]
+"caoyingjunz/pixiu-dashboard" ["l"="-9.64,3.791"]
+"caoyingjunz/kubez-ansible" ["l"="-9.608,3.802"]
+"caoyingjunz/grpc-pixiu" ["l"="-9.589,3.766"]
+"caoyingjunz/kubez-autoscaler" ["l"="-9.576,3.8"]
+"duancaz/kubez-autoscaler" ["l"="-9.578,3.818"]
+"caoyingjunz/kubezspaces" ["l"="-9.589,3.827"]
+"duancaz/kubez-ansible" ["l"="-9.562,3.816"]
+"orkaproj/instance-manager" ["l"="-9.697,3.83"]
+"orkaproj/governor" ["l"="-9.689,3.832"]
+"orkaproj/upgrade-manager" ["l"="-9.681,3.827"]
+"orkaproj/active-monitor" ["l"="-9.696,3.82"]
+"argoproj/argo-rollouts" ["l"="-10.444,0.258"]
+"numaproj/numalogic" ["l"="-9.749,3.814"]
+"orkaproj/addon-manager" ["l"="-9.701,3.814"]
+"orkaproj/kube-forensics" ["l"="-9.691,3.807"]
+"orkaproj/minion-manager" ["l"="-9.687,3.818"]
+"rsocket/rsocket-swift" ["l"="-9.668,3.8"]
+"numaproj/numaflow" ["l"="-9.732,3.83"]
+"numaproj/numaproj" ["l"="-9.735,3.811"]
+"CloudDectective-Harmonycloud/kindling" ["l"="-9.782,3.537"]
+"apache/skywalking-rover" ["l"="-16.6,3.063"]
+"GuanceCloud/datakit" ["l"="-9.846,3.539"]
+"nevermosby/linux-bpf-learning" ["l"="-11.638,1.7"]
+"linuxkerneltravel/lmp" ["l"="-11.654,1.755"]
+"togettoyou/hub-mirror" ["l"="-9.931,3.569"]
+"CloudmindsRobot/dagger" ["l"="-9.843,3.499"]
+"kubegems/dashboard" ["l"="-9.822,3.517"]
+"metaflowys/metaflow" ["l"="-9.814,3.493"]
+"dnsjia/luban" ["l"="-9.319,2.196"]
+"alibaba/higress" ["l"="-9.5,2.438"]
+"cilium/tetragon" ["l"="-11.641,1.746"]
+"emissary-ingress/emissary" ["l"="-10.6,0.234"]
+"kumahq/kuma" ["l"="-10.686,0.182"]
+"tetratelabs/func-e" ["l"="-9.574,3.692"]
+"tetratelabs/getenvoy" ["l"="-9.7,3.555"]
+"istio/cni" ["l"="-9.578,3.572"]
+"yingjuncao/kubez-ansible" ["l"="-9.55,3.803"]
+"frevib/epoll-echo-server" ["l"="-10.136,3.711"]
+"MarkReedZ/mrloop" ["l"="-10.168,3.707"]
+"CarterLi/liburing4cpp" ["l"="-10.152,3.656"]
+"xuanyi-fu/xynet" ["l"="-10.172,3.664"]
+"yunwei37/co-uring-WebServer" ["l"="-10.163,3.682"]
+"CarterLi/io_uring-echo-server" ["l"="-10.151,3.7"]
+"api7/wasm-nginx-module" ["l"="-9.53,3.616"]
+"mosn/proxy-wasm-go-host" ["l"="-9.558,3.633"]
+"flomesh-io/pipy" ["l"="-9.642,3.692"]
+"flomesh-io/osm-edge" ["l"="-9.63,3.724"]
+"flomesh-io/fsm" ["l"="-9.616,3.724"]
+"flomesh-io/ErieCanal" ["l"="-9.642,3.722"]
+"flomesh-io/flomesh-bookinfo-demo" ["l"="-9.656,3.72"]
+"mosn/layotto" ["l"="-12.843,0.984"]
+"kubeovn/kube-ovn" ["l"="-9.584,2.598"]
+"CloudXiaobai/loki-cluster-deploy" ["l"="-9.861,3.465"]
+"CloudmindsRobot/loki-operator" ["l"="-9.865,3.485"]
+"aspenmesh/istio-client-go" ["l"="-9.566,3.674"]
+"istio-ecosystem/istio-coredns-plugin" ["l"="-9.598,3.691"]
+"istio-ecosystem/dns-discovery" ["l"="-9.594,3.706"]
+"NetEase-Media/easy-ngo" ["l"="-9.812,3.703"]
+"GuanceCloud/dataflux-func" ["l"="-9.873,3.524"]
+"istio-ecosystem/consul-mcp" ["l"="-9.707,3.62"]
+"aeraki-framework/meta-protocol-proxy" ["l"="-9.695,3.612"]
+"slime-io/i9s" ["l"="-9.724,3.616"]
+"zhranklin/easy_kubectl" ["l"="-9.724,3.631"]
+"anubhavmishra/envoy-consul-sds" ["l"="-9.604,3.481"]
+"aeraki-mesh/meta-protocol-proxy" ["l"="-9.755,3.711"]
+"elastic-ai/elastic-gpu" ["l"="-9.774,3.734"]
+"aeraki-mesh/dubbo2istio" ["l"="-9.753,3.694"]
+"querycap/istio" ["l"="-9.618,3.702"]
+"lyft/discovery" ["l"="-9.645,3.473"]
+"lyft/protoc-gen-star" ["l"="-15.613,0.669"]
+"lyft/protoc-gen-validate" ["l"="-15.553,0.653"]
+"bsm/grpclb" ["l"="-15.395,0.582"]
+"gojektech/consul-envoy-xds" ["l"="-9.667,3.492"]
+"myntra/golimit" ["l"="22.195,-36.809"]
+"querycap/istio-envoy-arm64" ["l"="-9.596,3.723"]
+"numaproj/numaflow-python" ["l"="-9.763,3.823"]
+"numaproj/numaflow-go" ["l"="-9.753,3.831"]
+"argoproj-labs/argo-dataflow" ["l"="-10.294,0.271"]
+"hwameistor/helm-charts" ["l"="-9.865,3.591"]
+"hodgesds/iouring-go" ["l"="-10.046,3.719"]
+"ii64/gouring" ["l"="-10.045,3.648"]
+"godzie44/go-uring" ["l"="-10.044,3.695"]
+"kubedoctor/kubedoctor" ["l"="-10.018,3.652"]
+"dshulyak/uring" ["l"="-10.063,3.75"]
+"aspenmesh/istio-vet" ["l"="-9.514,3.69"]
+"istio-ecosystem/istio-installer" ["l"="-9.566,3.656"]
+"tetratelabs/getistio" ["l"="-9.713,3.513"]
+"MarkReedZ/mrcache" ["l"="-10.188,3.719"]
+"RobertLeahy/AsioUring" ["l"="-10.174,3.632"]
+"wzshiming/fake-k8s" ["l"="-9.957,3.605"]
+"aeraki-framework/dubbo2istio" ["l"="-9.717,3.591"]
+"argoproj-labs/argo-cloudops" ["l"="-9.748,3.85"]
+"orkaproj/community" ["l"="-9.657,3.858"]
+}

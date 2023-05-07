@@ -1,0 +1,576 @@
+digraph G {
+"naparuba/shinken" -> "sni/Thruk"
+"naparuba/shinken" -> "shinken-monitoring/mod-webui"
+"naparuba/shinken" -> "Alignak-monitoring/alignak"
+"naparuba/shinken" -> "sensu/sensu" ["e"=1]
+"naparuba/shinken" -> "monitoringsucks/tool-repos" ["e"=1]
+"naparuba/shinken" -> "capensis/canopsis"
+"naparuba/shinken" -> "graphite-project/carbon" ["e"=1]
+"naparuba/shinken" -> "monitoring-plugins/monitoring-plugins"
+"naparuba/shinken" -> "BrightcoveOS/Diamond" ["e"=1]
+"naparuba/shinken" -> "etsy/logster" ["e"=1]
+"naparuba/shinken" -> "lingej/pnp4nagios"
+"naparuba/shinken" -> "Icinga/icinga2"
+"naparuba/shinken" -> "aphyr/riemann" ["e"=1]
+"naparuba/shinken" -> "pynag/pynag"
+"naparuba/shinken" -> "flapjack/flapjack" ["e"=1]
+"sni/Thruk" -> "naemon/naemon"
+"sni/Thruk" -> "naemon/naemon-core"
+"sni/Thruk" -> "ConSol/omd"
+"sni/Thruk" -> "monitoring-plugins/monitoring-plugins"
+"sni/Thruk" -> "naparuba/shinken"
+"sni/Thruk" -> "nagios-plugins/nagios-plugins"
+"sni/Thruk" -> "lingej/pnp4nagios"
+"sni/Thruk" -> "sni/mod_gearman"
+"sni/Thruk" -> "Griesbacher/nagflux"
+"sni/Thruk" -> "mickem/nscp"
+"sni/Thruk" -> "lausser/check_nwc_health"
+"sni/Thruk" -> "sni/lmd"
+"sni/Thruk" -> "opinkerfi/adagios"
+"sni/Thruk" -> "pynag/pynag"
+"sni/Thruk" -> "Griesbacher/histou"
+"Icinga/icinga2" -> "Icinga/icingaweb2"
+"Icinga/icinga2" -> "Icinga/icingaweb2-module-director"
+"Icinga/icinga2" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icinga2" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icinga2" -> "monitoring-plugins/monitoring-plugins"
+"Icinga/icinga2" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icinga2" -> "Icinga/dashing-icinga2"
+"Icinga/icinga2" -> "Icinga/icingaweb2-module-graphite"
+"Icinga/icinga2" -> "Icinga/icingaweb2-module-vspheredb"
+"Icinga/icinga2" -> "Icinga/icinga-vagrant"
+"Icinga/icinga2" -> "nbuchwitz/icingaweb2-module-map"
+"Icinga/icinga2" -> "Icinga/docker-icinga2"
+"Icinga/icinga2" -> "Icinga/icingadb"
+"Icinga/icinga2" -> "librenms/librenms" ["e"=1]
+"Icinga/icinga2" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2" -> "Icinga/icinga2"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-director"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icingaweb2" -> "Icinga/dashing-icinga2"
+"Icinga/icingaweb2" -> "monitoring-plugins/monitoring-plugins"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-graphite"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-vspheredb"
+"Icinga/icingaweb2" -> "Icinga/icinga2-ansible"
+"Icinga/icingaweb2" -> "nbuchwitz/icingaweb2-module-map"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2" -> "Icinga/icingadb"
+"Icinga/icingaweb2" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2" -> "lausser/check_nwc_health"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2-module-director" -> "Icinga/icinga2"
+"Icinga/icingaweb2-module-director" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-vspheredb"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-graphite"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icingaweb2-module-director" -> "Icinga/dashing-icinga2"
+"Icinga/icingaweb2-module-director" -> "nbuchwitz/icingaweb2-module-map"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-nagvis"
+"Icinga/icingaweb2-module-director" -> "monitoring-plugins/monitoring-plugins"
+"Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-incubator"
+"Icinga/icingaweb2-module-director" -> "lausser/check_nwc_health"
+"BaldMansMojo/check_vmware_esx" -> "lausser/check_nwc_health"
+"BaldMansMojo/check_vmware_esx" -> "op5/check_vmware_api"
+"BaldMansMojo/check_vmware_esx" -> "lausser/check_mssql_health"
+"BaldMansMojo/check_vmware_esx" -> "findmypast/icingaweb2-module-graphite"
+"BaldMansMojo/check_vmware_esx" -> "Icinga/icingaweb2-module-vspheredb"
+"BaldMansMojo/check_vmware_esx" -> "patrickpr/trapdirector"
+"BaldMansMojo/check_vmware_esx" -> "riskersen/Monitoring"
+"BaldMansMojo/check_vmware_esx" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-vspheredb"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-idoreports"
+"Icinga/icingaweb2-module-x509" -> "nbuchwitz/icingaweb2-module-map"
+"Icinga/icingaweb2-module-x509" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-pdfexport"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icingaweb2-module-incubator"
+"Icinga/icingaweb2-module-x509" -> "Icinga/icinga2-powershell-module"
+"Linuxfabrik/monitoring-plugins" -> "Linuxfabrik/lib"
+"Linuxfabrik/monitoring-plugins" -> "Icinga/icingadb"
+"Linuxfabrik/monitoring-plugins" -> "patrickpr/trapdirector"
+"Linuxfabrik/monitoring-plugins" -> "Linuxfabrik/lfops"
+"Linuxfabrik/monitoring-plugins" -> "nbuchwitz/icingaweb2-module-map"
+"Linuxfabrik/monitoring-plugins" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Linuxfabrik/monitoring-plugins" -> "lippserd/docker-compose-icinga"
+"Linuxfabrik/monitoring-plugins" -> "Icinga/icingaweb2-module-x509"
+"Linuxfabrik/monitoring-plugins" -> "Icinga/icingadb-web"
+"Linuxfabrik/monitoring-plugins" -> "mmarodin/icinga2-plugins"
+"Linuxfabrik/monitoring-plugins" -> "Icinga/icingaweb2-module-businessprocess"
+"centreon/centreon-plugins" -> "centreon/centreon"
+"centreon/centreon-plugins" -> "centreon/centreon-broker"
+"centreon/centreon-plugins" -> "centreon/centreon-vmware"
+"centreon/centreon-plugins" -> "centreon/centreon-engine"
+"centreon/centreon-plugins" -> "centreon/centreon-clapi"
+"centreon/centreon-plugins" -> "monitoring-plugins/monitoring-plugins"
+"centreon/centreon-plugins" -> "mickem/nscp"
+"centreon/centreon-plugins" -> "centreon/centreon-documentation"
+"centreon/centreon-plugins" -> "riskersen/Monitoring"
+"centreon/centreon-plugins" -> "Icinga/icingaweb2-module-director"
+"lausser/check_nwc_health" -> "lausser/check_mssql_health"
+"lausser/check_nwc_health" -> "BaldMansMojo/check_vmware_esx"
+"lausser/check_nwc_health" -> "Icinga/icingaweb2-module-businessprocess"
+"lausser/check_nwc_health" -> "lausser/check_oracle_health"
+"lausser/check_nwc_health" -> "patrickpr/trapdirector"
+"lausser/check_nwc_health" -> "hgrimm/check_cisco_ucs"
+"lausser/check_nwc_health" -> "lausser/check_logfiles"
+"lausser/check_nwc_health" -> "Icinga/icingaweb2-module-x509"
+"tribe29/checkmk" -> "HeinleinSupport/check_mk_extensions"
+"tribe29/checkmk" -> "tribe29/ansible-checkmk"
+"tribe29/checkmk" -> "HeinleinSupport/check_mk"
+"tribe29/checkmk" -> "chrisss404/check-mk-arm"
+"tribe29/checkmk" -> "tribe29/grafana-checkmk-datasource"
+"tribe29/checkmk" -> "Yogibaer75/Check_MK-Things"
+"tribe29/checkmk" -> "tribe29/ansible-collection-tribe29.checkmk"
+"tribe29/checkmk" -> "ConSol/omd"
+"tribe29/checkmk" -> "tribe29/checkmk-docs"
+"tribe29/checkmk" -> "simonmeggle/robotmk"
+"tribe29/checkmk" -> "brennerm/check-mk-web-api"
+"tribe29/checkmk" -> "HenriWahl/checkmk-agent-plugin-yum"
+"tribe29/checkmk" -> "RileyMichael/checkmk-notify-teams"
+"tribe29/checkmk" -> "Bastian-Kuhn/Check_MK-Treasures"
+"tribe29/checkmk" -> "wh1te909/tacticalrmm" ["e"=1]
+"centreon/centreon" -> "centreon/centreon-plugins"
+"centreon/centreon" -> "centreon/centreon-engine"
+"centreon/centreon" -> "centreon/centreon-broker"
+"centreon/centreon" -> "centreon/centreon-clapi"
+"centreon/centreon" -> "centreon/centreon-vmware"
+"centreon/centreon" -> "mickem/nscp"
+"centreon/centreon" -> "centreon/centreon-documentation"
+"centreon/centreon" -> "centreon/centreon-open-tickets"
+"centreon/centreon" -> "YPSI-SAS/centctl"
+"NagiosEnterprises/nagioscore" -> "nagios-plugins/nagios-plugins"
+"NagiosEnterprises/nagioscore" -> "NagiosEnterprises/nrpe"
+"NagiosEnterprises/nagioscore" -> "zabbix/zabbix" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "cloud66-oss/habitus" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "NagiosEnterprises/ndoutils"
+"NagiosEnterprises/nagioscore" -> "opencodeiiita/ToDo-List-App" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "NagiosEnterprises/ncpa"
+"NagiosEnterprises/nagioscore" -> "opendiffy/diffy" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "monitoring-plugins/monitoring-plugins"
+"NagiosEnterprises/nagioscore" -> "Cacti/cacti" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "Icinga/icinga2"
+"NagiosEnterprises/nagioscore" -> "chef/chef" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "marthoc/docker-deconz" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "zorkian/nagios-api"
+"NagiosEnterprises/nagioscore" -> "sni/Thruk"
+"Icinga/docker-icinga2" -> "lippserd/docker-compose-icinga"
+"Icinga/docker-icinga2" -> "Icinga/docker-icingaweb2"
+"Icinga/icinga-vagrant" -> "Icinga/dashing-icinga2"
+"Icinga/icinga-vagrant" -> "Icinga/icinga2-ansible"
+"Icinga/icinga-vagrant" -> "Icinga/docker-icinga2"
+"Icinga/icinga-vagrant" -> "Icinga/puppet-icinga2"
+"Icinga/icinga-vagrant" -> "monitoring-plugins/monitoring-plugins"
+"Icinga/icinga-vagrant" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icinga-vagrant" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icinga-vagrant" -> "Icinga/icingaweb2-module-director"
+"Icinga/icinga-vagrant" -> "Icinga/icingaweb2"
+"jjethwa/icinga2" -> "Icinga/docker-icinga2"
+"HariSekhon/nagios-plugins" -> "Mikesch-mp/icingaweb2-module-grafana"
+"HariSekhon/nagios-plugins" -> "zorkian/nagios-api"
+"HariSekhon/nagios-plugins" -> "timdaman/check_docker"
+"HariSekhon/nagios-plugins" -> "shawn-sterling/graphios" ["e"=1]
+"HariSekhon/nagios-plugins" -> "monitoring-plugins/monitoring-plugins"
+"HariSekhon/nagios-plugins" -> "BaldMansMojo/check_vmware_esx"
+"HariSekhon/nagios-plugins" -> "appfirst/nagios-plugins"
+"HariSekhon/nagios-plugins" -> "matteocorti/check_ssl_cert"
+"HariSekhon/nagios-plugins" -> "lausser/check_nwc_health"
+"HariSekhon/nagios-plugins" -> "fboender/ansible-cmdb" ["e"=1]
+"HariSekhon/nagios-plugins" -> "madrisan/nagios-plugins-linux"
+"HariSekhon/nagios-plugins" -> "HariSekhon/pytools"
+"HariSekhon/nagios-plugins" -> "andreisavu/zookeeper-monitoring" ["e"=1]
+"HariSekhon/nagios-plugins" -> "Oxalide/vsphere-influxdb-go" ["e"=1]
+"HariSekhon/nagios-plugins" -> "jonschipp/nagios-plugins"
+"mickem/nscp" -> "NagiosEnterprises/nrpe"
+"mickem/nscp" -> "lausser/check_nwc_health"
+"mickem/nscp" -> "monitoring-plugins/monitoring-plugins"
+"mickem/nscp" -> "sni/Thruk"
+"mickem/nscp" -> "centreon/centreon-plugins"
+"mickem/nscp" -> "Icinga/icingaweb2-module-businessprocess"
+"mickem/nscp" -> "nagios-plugins/nagios-plugins"
+"naemon/naemon" -> "naemon/naemon-core"
+"naemon/naemon" -> "naemon/naemon-livestatus"
+"naemon/naemon" -> "op5/merlin"
+"naemon/naemon" -> "Griesbacher/histou"
+"naemon/naemon" -> "sni/Thruk"
+"naemon/naemon" -> "sni/mod_gearman"
+"HeinleinSupport/check_mk" -> "lgbff/lgb_check_mk_plugins"
+"HeinleinSupport/check_mk" -> "Yogibaer75/Check_MK-Things"
+"HeinleinSupport/check_mk" -> "christianbur/check_mk"
+"HeinleinSupport/check_mk" -> "HenriWahl/checkmk-agent-plugin-yum"
+"HeinleinSupport/check_mk" -> "rmblake/check_mk-slack"
+"zorkian/nagios-api" -> "lozzd/Nagdash" ["e"=1]
+"zorkian/nagios-api" -> "pynag/pynag"
+"zorkian/nagios-api" -> "dmytro/nagira"
+"zorkian/nagios-api" -> "opinkerfi/adagios"
+"zorkian/nagios-api" -> "nedap/puppetboard" ["e"=1]
+"chrisss404/check-mk-arm" -> "tribe29/grafana-checkmk-datasource"
+"chrisss404/check-mk-arm" -> "Yogibaer75/Check_MK-Things"
+"Icinga/puppet-icinga2" -> "Icinga/puppet-icingaweb2"
+"NagiosEnterprises/nrpe" -> "nagios-plugins/nagios-plugins"
+"NagiosEnterprises/nrpe" -> "NagiosEnterprises/ndoutils"
+"NagiosEnterprises/nrpe" -> "NagiosEnterprises/nagioscore"
+"NagiosEnterprises/nrpe" -> "NagiosEnterprises/nsca"
+"NagiosEnterprises/nrpe" -> "mickem/nscp"
+"NagiosEnterprises/nrpe" -> "NagiosEnterprises/ncpa"
+"NagiosEnterprises/nrpe" -> "NagiosEnterprises/nrdp"
+"NagiosEnterprises/nrpe" -> "justintime/nagios-plugins" ["e"=1]
+"HeinleinSupport/check_mk_extensions" -> "Yogibaer75/Check_MK-Things"
+"nagios-plugins/nagios-plugins" -> "NagiosEnterprises/nagioscore"
+"nagios-plugins/nagios-plugins" -> "NagiosEnterprises/nrpe"
+"nagios-plugins/nagios-plugins" -> "monitoring-plugins/monitoring-plugins"
+"nagios-plugins/nagios-plugins" -> "nagios-plugins/nagios-plugin-perl"
+"nagios-plugins/nagios-plugins" -> "sni/Thruk"
+"nagios-plugins/nagios-plugins" -> "lingej/pnp4nagios"
+"nagios-plugins/nagios-plugins" -> "mickem/nscp"
+"nagios-plugins/nagios-plugins" -> "NagVis/nagvis"
+"nagios-plugins/nagios-plugins" -> "NagiosEnterprises/nsca"
+"nagios-plugins/nagios-plugins" -> "Icinga/icingaweb2-module-businessprocess"
+"nagios-plugins/nagios-plugins" -> "matteocorti/check_ssl_cert"
+"nagios-plugins/nagios-plugins" -> "naemon/naemon"
+"nagios-plugins/nagios-plugins" -> "nagios-plugins/nagios-mib"
+"nagios-plugins/nagios-plugins" -> "lausser/check_nwc_health"
+"nagios-plugins/nagios-plugins" -> "zorkian/nagios-api"
+"tribe29/grafana-checkmk-datasource" -> "tribe29/checkmk-docs"
+"tribe29/grafana-checkmk-datasource" -> "tribe29/checkMK"
+"tribe29/grafana-checkmk-datasource" -> "tribe29/ansible-checkmk"
+"opinkerfi/adagios" -> "pynag/pynag"
+"opinkerfi/adagios" -> "opinkerfi/okconfig"
+"opinkerfi/adagios" -> "opinkerfi/nagios-plugins"
+"opinkerfi/adagios" -> "zorkian/nagios-api"
+"opinkerfi/adagios" -> "shawn-sterling/graphios" ["e"=1]
+"opinkerfi/adagios" -> "sni/Thruk"
+"opinkerfi/adagios" -> "smlacombe/sageo"
+"opinkerfi/adagios" -> "lingej/pnp4nagios"
+"pynag/pynag" -> "opinkerfi/okconfig"
+"pynag/pynag" -> "opinkerfi/adagios"
+"pynag/pynag" -> "Crapworks/RESTlos"
+"pynag/pynag" -> "zorkian/nagios-api"
+"pynag/pynag" -> "sni/lmd"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-businessprocess"
+"Mikesch-mp/icingaweb2-module-grafana" -> "nbuchwitz/icingaweb2-module-map"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-director"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-x509"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-graphite"
+"Mikesch-mp/icingaweb2-module-grafana" -> "mmarodin/icinga2-plugins"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/dashing-icinga2"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-reporting"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-vspheredb"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-theme-company"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingaweb2-module-cube"
+"Mikesch-mp/icingaweb2-module-grafana" -> "patrickpr/trapdirector"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Icinga/icingadb-web"
+"Mikesch-mp/icingaweb2-module-grafana" -> "Linuxfabrik/monitoring-plugins"
+"findmypast/icingaweb2-module-graphite" -> "Icinga/dashing-icinga2"
+"findmypast/icingaweb2-module-graphite" -> "Icinga/icingaweb2-module-graphite"
+"lingej/pnp4nagios" -> "sni/mod_gearman"
+"Alignak-monitoring/alignak" -> "Alignak-monitoring-contrib/alignak-backend"
+"Alignak-monitoring/alignak" -> "smlacombe/sageo"
+"ConSol/omd" -> "sni/Thruk"
+"ConSol/omd" -> "Griesbacher/nagflux"
+"ConSol/omd" -> "Griesbacher/histou"
+"ConSol/omd" -> "HeinleinSupport/check_mk"
+"ConSol/omd" -> "ConSol/sakuli" ["e"=1]
+"ConSol/omd" -> "lausser/coshsh"
+"Griesbacher/nagflux" -> "Griesbacher/histou"
+"Griesbacher/nagflux" -> "m-lab/prometheus-nagios-exporter"
+"Icinga/icinga2-ansible" -> "Icinga/dashing-icinga2"
+"Icinga/icinga2-ansible" -> "Icinga/icinga-vagrant"
+"simonmeggle/robotmk" -> "Bastian-Kuhn/cmdb-syncer"
+"simonmeggle/robotmk" -> "tribe29/checkMK"
+"Icinga/dashing-icinga2" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/dashing-icinga2" -> "findmypast/icingaweb2-module-graphite"
+"Icinga/dashing-icinga2" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/dashing-icinga2" -> "Icinga/icingaweb2-module-cube"
+"Icinga/dashing-icinga2" -> "saurabh-hirani/icinga2-api-examples"
+"Icinga/dashing-icinga2" -> "Icinga/icinga2-api-examples"
+"Icinga/dashing-icinga2" -> "Icinga/icingaweb2-module-pnp"
+"Icinga/dashing-icinga2" -> "nbuchwitz/icingaweb2-module-map"
+"Icinga/dashing-icinga2" -> "Icinga/icinga-vagrant"
+"Icinga/dashing-icinga2" -> "Icinga/icingaweb2-module-graphite"
+"Icinga/dashing-icinga2" -> "Icinga/icingaweb2-module-generictts"
+"Icinga/dashing-icinga2" -> "Icinga/icingaweb2-module-director"
+"HenriWahl/Nagstamon" -> "monitoring-plugins/monitoring-plugins"
+"HenriWahl/Nagstamon" -> "BaldMansMojo/check_vmware_esx"
+"HenriWahl/Nagstamon" -> "sni/Thruk"
+"HenriWahl/Nagstamon" -> "mickem/nscp"
+"HenriWahl/Nagstamon" -> "centreon/centreon-plugins"
+"HenriWahl/Nagstamon" -> "Icinga/icingaweb2"
+"HenriWahl/Nagstamon" -> "lausser/check_nwc_health"
+"HenriWahl/Nagstamon" -> "riskersen/Monitoring"
+"HenriWahl/Nagstamon" -> "shawn-sterling/graphios" ["e"=1]
+"HenriWahl/Nagstamon" -> "matteocorti/check_ssl_cert"
+"HenriWahl/Nagstamon" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icingaweb2-module-graphite" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2-module-graphite" -> "Icinga/icingaweb2-module-nagvis"
+"Icinga/icingaweb2-module-graphite" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2-module-graphite" -> "findmypast/icingaweb2-module-graphite"
+"Icinga/icingaweb2-module-graphite" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2-module-nagvis" -> "Icinga/icingaweb2-module-fileshipper"
+"matteocorti/check_ssl_cert" -> "monitoring-plugins/monitoring-plugins"
+"matteocorti/check_ssl_cert" -> "Mikesch-mp/icingaweb2-module-grafana"
+"matteocorti/check_ssl_cert" -> "Linuxfabrik/monitoring-plugins"
+"matteocorti/check_ssl_cert" -> "nbuchwitz/icingaweb2-module-map"
+"matteocorti/check_ssl_cert" -> "lausser/check_nwc_health"
+"matteocorti/check_ssl_cert" -> "Icinga/icingaweb2-module-director"
+"matteocorti/check_ssl_cert" -> "Icinga/icingaweb2-module-businessprocess"
+"matteocorti/check_ssl_cert" -> "Icinga/icingaweb2-module-reporting"
+"matteocorti/check_ssl_cert" -> "timdaman/check_docker"
+"matteocorti/check_ssl_cert" -> "Icinga/icingaweb2"
+"matteocorti/check_ssl_cert" -> "nagios-plugins/nagios-plugins"
+"matteocorti/check_ssl_cert" -> "mcktr/check_tr64_fritz"
+"matteocorti/check_ssl_cert" -> "matteocorti/check_rbl"
+"matteocorti/check_ssl_cert" -> "mickem/nscp"
+"matteocorti/check_ssl_cert" -> "jonschipp/nagios-plugins"
+"monitoring-plugins/monitoring-plugins" -> "nagios-plugins/nagios-plugins"
+"monitoring-plugins/monitoring-plugins" -> "monitoring-plugins/monitoring-plugin-perl"
+"monitoring-plugins/monitoring-plugins" -> "sni/Thruk"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/icingaweb2"
+"monitoring-plugins/monitoring-plugins" -> "Mikesch-mp/icingaweb2-module-grafana"
+"monitoring-plugins/monitoring-plugins" -> "matteocorti/check_ssl_cert"
+"monitoring-plugins/monitoring-plugins" -> "naemon/naemon"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/icingaweb2-module-businessprocess"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/icingaweb2-module-director"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/icinga2"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/icinga-vagrant"
+"monitoring-plugins/monitoring-plugins" -> "naemon/naemon-core"
+"monitoring-plugins/monitoring-plugins" -> "mickem/nscp"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/puppet-icinga2"
+"monitoring-plugins/monitoring-plugins" -> "Icinga/dashing-icinga2"
+"naemon/naemon-core" -> "naemon/naemon-livestatus"
+"naemon/naemon-core" -> "naemon/naemon"
+"naemon/naemon-core" -> "sni/Thruk"
+"naemon/naemon-livestatus" -> "naemon/naemon-core"
+"lippserd/docker-compose-icinga" -> "Icinga/docker-icinga2"
+"centreon/centreon-broker" -> "centreon/centreon-engine"
+"centreon/centreon-broker" -> "centreon/centreon-clapi"
+"tribe29/ansible-collection-tribe29.checkmk" -> "tribe29/ansible-checkmk"
+"tribe29/ansible-collection-tribe29.checkmk" -> "RileyMichael/checkmk-notify-teams"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-graphite"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-fileshipper"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-nagvis"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-director"
+"Icinga/icingaweb2-module-businessprocess" -> "Mikesch-mp/icingaweb2-module-grafana"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-vspheredb"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-pdfexport"
+"Icinga/icingaweb2-module-businessprocess" -> "nbuchwitz/icingaweb2-module-map"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-vsphere"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/dashing-icinga2"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icingaweb2-module-idoreports"
+"Icinga/icingaweb2-module-businessprocess" -> "Icinga/icinga2-powershell-module"
+"NagiosEnterprises/ncpa" -> "NagiosEnterprises/nrpe"
+"NagiosEnterprises/ncpa" -> "NagiosEnterprises/nsca"
+"Icinga/icingaweb2-module-cube" -> "Icinga/icingaweb2-module-fileshipper"
+"Icinga/icingaweb2-module-cube" -> "Icinga/icingaweb2-module-pdfexport"
+"Icinga/icingaweb2-module-cube" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2-module-cube" -> "Icinga/icingaweb2-module-generictts"
+"Icinga/icingaweb2-module-reporting" -> "Icinga/icingaweb2-module-idoreports"
+"Icinga/icingaweb2-module-reporting" -> "Icinga/icingaweb2-module-pdfexport"
+"Icinga/icingaweb2-module-reporting" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icingaweb2-module-reporting" -> "Icinga/icingaweb2-module-vspheredb"
+"Icinga/icingaweb2-module-reporting" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2-module-reporting" -> "nbuchwitz/icingaweb2-module-map"
+"nbuchwitz/icingaweb2-module-map" -> "Icinga/icingaweb2-module-reporting"
+"nbuchwitz/icingaweb2-module-map" -> "Icinga/icingaweb2-theme-company"
+"nbuchwitz/icingaweb2-module-map" -> "Icinga/icingaweb2-module-businessprocess"
+"nbuchwitz/icingaweb2-module-map" -> "Icinga/icingaweb2-module-x509"
+"nbuchwitz/icingaweb2-module-map" -> "Mikesch-mp/icingaweb2-module-grafana"
+"nbuchwitz/icingaweb2-module-map" -> "Icinga/icinga2-diagnostics"
+"nbuchwitz/icingaweb2-module-map" -> "nunofernandes/icingaweb2-module-ca"
+"nbuchwitz/icingaweb2-module-map" -> "Thomas-Gelf/icingaweb2-module-vspheredb"
+"Griesbacher/histou" -> "Griesbacher/nagflux"
+"Icinga/icingadb" -> "Icinga/icingadb-web"
+"Icinga/icingadb-web" -> "Icinga/icingadb"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingaweb2-module-x509"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingaweb2-module-businessprocess"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingaweb2-module-vsphere"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingaweb2-module-pdfexport"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingadb"
+"Icinga/icingaweb2-module-vspheredb" -> "Icinga/icingadb-web"
+"nagios-plugins/nagios-plugin-perl" -> "nagios-plugins/nagios-mib"
+"mcktr/check_tr64_fritz" -> "mcktr/check_fritz"
+"Icinga/icingaweb2-module-idoreports" -> "Icinga/icingaweb2-module-reporting"
+"Icinga/icingaweb2-module-idoreports" -> "Icinga/icingaweb2-module-pdfexport"
+"NagVis/nagvis" -> "Icinga/icingaweb2-module-businessprocess"
+"NagVis/nagvis" -> "Icinga/icingaweb2-module-nagvis"
+"centreon/centreon-vmware" -> "centreon/centreon-open-tickets"
+"mcktr/check_fritz" -> "mcktr/check_tr64_fritz"
+"Icinga/puppet-icingaweb2" -> "Icinga/puppet-icinga2"
+"centreon/centreon-engine" -> "centreon/centreon-broker"
+"centreon/centreon-engine" -> "centreon/centreon-clapi"
+"Icinga/icingaweb2-module-fileshipper" -> "Icinga/icingaweb2-module-cube"
+"Icinga/icingaweb2-module-ipl" -> "Icinga/icingaweb2-module-reactbundle"
+"Icinga/icingaweb2-module-ipl" -> "Icinga/icingaweb2-module-incubator"
+"Icinga/icingaweb2-module-vsphere" -> "Icinga/icingaweb2-module-fileshipper"
+"Icinga/icingaweb2-module-incubator" -> "Icinga/icingaweb2-module-ipl"
+"Icinga/icingaweb2-module-incubator" -> "Icinga/icingaweb2-module-reactbundle"
+"Icinga/icingaweb2-module-reactbundle" -> "Icinga/icingaweb2-module-ipl"
+"Icinga/icingaweb2-module-reactbundle" -> "Icinga/icingaweb2-module-incubator"
+"naparuba/shinken" ["l"="-16.351,-6.633"]
+"sni/Thruk" ["l"="-16.303,-6.657"]
+"shinken-monitoring/mod-webui" ["l"="-16.375,-6.59"]
+"Alignak-monitoring/alignak" ["l"="-16.342,-6.577"]
+"sensu/sensu" ["l"="-15.724,-4.812"]
+"monitoringsucks/tool-repos" ["l"="-15.664,-4.708"]
+"capensis/canopsis" ["l"="-16.398,-6.603"]
+"graphite-project/carbon" ["l"="-10.759,-0.967"]
+"monitoring-plugins/monitoring-plugins" ["l"="-16.339,-6.722"]
+"BrightcoveOS/Diamond" ["l"="-15.622,-4.793"]
+"etsy/logster" ["l"="-15.629,-4.766"]
+"lingej/pnp4nagios" ["l"="-16.306,-6.635"]
+"Icinga/icinga2" ["l"="-16.355,-6.754"]
+"aphyr/riemann" ["l"="-7.563,14.938"]
+"pynag/pynag" ["l"="-16.285,-6.621"]
+"flapjack/flapjack" ["l"="-15.656,-4.853"]
+"naemon/naemon" ["l"="-16.324,-6.649"]
+"naemon/naemon-core" ["l"="-16.33,-6.666"]
+"ConSol/omd" ["l"="-16.263,-6.569"]
+"nagios-plugins/nagios-plugins" ["l"="-16.31,-6.692"]
+"sni/mod_gearman" ["l"="-16.32,-6.619"]
+"Griesbacher/nagflux" ["l"="-16.281,-6.591"]
+"mickem/nscp" ["l"="-16.299,-6.724"]
+"lausser/check_nwc_health" ["l"="-16.334,-6.746"]
+"sni/lmd" ["l"="-16.304,-6.615"]
+"opinkerfi/adagios" ["l"="-16.265,-6.625"]
+"Griesbacher/histou" ["l"="-16.292,-6.606"]
+"Icinga/icingaweb2" ["l"="-16.378,-6.75"]
+"Icinga/icingaweb2-module-director" ["l"="-16.37,-6.735"]
+"Mikesch-mp/icingaweb2-module-grafana" ["l"="-16.376,-6.766"]
+"Icinga/icingaweb2-module-businessprocess" ["l"="-16.384,-6.734"]
+"Icinga/icingaweb2-module-x509" ["l"="-16.395,-6.743"]
+"Icinga/dashing-icinga2" ["l"="-16.394,-6.771"]
+"Icinga/icingaweb2-module-graphite" ["l"="-16.391,-6.759"]
+"Icinga/icingaweb2-module-vspheredb" ["l"="-16.399,-6.755"]
+"Icinga/icinga-vagrant" ["l"="-16.366,-6.781"]
+"nbuchwitz/icingaweb2-module-map" ["l"="-16.409,-6.751"]
+"Icinga/docker-icinga2" ["l"="-16.37,-6.837"]
+"Icinga/icingadb" ["l"="-16.409,-6.774"]
+"librenms/librenms" ["l"="-16.847,-7.558"]
+"Icinga/icingaweb2-module-reporting" ["l"="-16.397,-6.732"]
+"Icinga/icinga2-ansible" ["l"="-16.393,-6.805"]
+"Icinga/icingaweb2-module-cube" ["l"="-16.406,-6.74"]
+"Icinga/icingaweb2-module-nagvis" ["l"="-16.395,-6.714"]
+"Icinga/icingaweb2-module-incubator" ["l"="-16.433,-6.718"]
+"BaldMansMojo/check_vmware_esx" ["l"="-16.335,-6.774"]
+"op5/check_vmware_api" ["l"="-16.311,-6.819"]
+"lausser/check_mssql_health" ["l"="-16.311,-6.77"]
+"findmypast/icingaweb2-module-graphite" ["l"="-16.378,-6.791"]
+"patrickpr/trapdirector" ["l"="-16.351,-6.791"]
+"riskersen/Monitoring" ["l"="-16.296,-6.779"]
+"Icinga/icingaweb2-module-idoreports" ["l"="-16.409,-6.719"]
+"Icinga/icingaweb2-module-pdfexport" ["l"="-16.417,-6.734"]
+"Icinga/icinga2-powershell-module" ["l"="-16.413,-6.707"]
+"Linuxfabrik/monitoring-plugins" ["l"="-16.395,-6.787"]
+"Linuxfabrik/lib" ["l"="-16.414,-6.809"]
+"Linuxfabrik/lfops" ["l"="-16.415,-6.824"]
+"lippserd/docker-compose-icinga" ["l"="-16.393,-6.84"]
+"Icinga/icingadb-web" ["l"="-16.415,-6.788"]
+"mmarodin/icinga2-plugins" ["l"="-16.378,-6.815"]
+"centreon/centreon-plugins" ["l"="-16.277,-6.764"]
+"centreon/centreon" ["l"="-16.241,-6.781"]
+"centreon/centreon-broker" ["l"="-16.247,-6.801"]
+"centreon/centreon-vmware" ["l"="-16.229,-6.766"]
+"centreon/centreon-engine" ["l"="-16.261,-6.803"]
+"centreon/centreon-clapi" ["l"="-16.26,-6.788"]
+"centreon/centreon-documentation" ["l"="-16.251,-6.763"]
+"lausser/check_oracle_health" ["l"="-16.319,-6.792"]
+"hgrimm/check_cisco_ucs" ["l"="-16.318,-6.779"]
+"lausser/check_logfiles" ["l"="-16.302,-6.796"]
+"tribe29/checkmk" ["l"="-16.212,-6.463"]
+"HeinleinSupport/check_mk_extensions" ["l"="-16.176,-6.481"]
+"tribe29/ansible-checkmk" ["l"="-16.212,-6.42"]
+"HeinleinSupport/check_mk" ["l"="-16.227,-6.506"]
+"chrisss404/check-mk-arm" ["l"="-16.176,-6.455"]
+"tribe29/grafana-checkmk-datasource" ["l"="-16.191,-6.428"]
+"Yogibaer75/Check_MK-Things" ["l"="-16.196,-6.482"]
+"tribe29/ansible-collection-tribe29.checkmk" ["l"="-16.231,-6.425"]
+"tribe29/checkmk-docs" ["l"="-16.207,-6.436"]
+"simonmeggle/robotmk" ["l"="-16.172,-6.427"]
+"brennerm/check-mk-web-api" ["l"="-16.248,-6.449"]
+"HenriWahl/checkmk-agent-plugin-yum" ["l"="-16.225,-6.485"]
+"RileyMichael/checkmk-notify-teams" ["l"="-16.231,-6.441"]
+"Bastian-Kuhn/Check_MK-Treasures" ["l"="-16.193,-6.447"]
+"wh1te909/tacticalrmm" ["l"="-32.068,-21.292"]
+"centreon/centreon-open-tickets" ["l"="-16.213,-6.78"]
+"YPSI-SAS/centctl" ["l"="-16.216,-6.8"]
+"NagiosEnterprises/nagioscore" ["l"="-16.276,-6.698"]
+"NagiosEnterprises/nrpe" ["l"="-16.256,-6.712"]
+"zabbix/zabbix" ["l"="-8.978,3.71"]
+"cloud66-oss/habitus" ["l"="-10.77,-0.837"]
+"NagiosEnterprises/ndoutils" ["l"="-16.235,-6.718"]
+"opencodeiiita/ToDo-List-App" ["l"="49.379,-4.624"]
+"NagiosEnterprises/ncpa" ["l"="-16.228,-6.698"]
+"opendiffy/diffy" ["l"="-10.797,-0.868"]
+"Cacti/cacti" ["l"="-16.841,-7.626"]
+"chef/chef" ["l"="-10.731,-0.814"]
+"marthoc/docker-deconz" ["l"="49.368,-4.588"]
+"zorkian/nagios-api" ["l"="-16.264,-6.654"]
+"Icinga/docker-icingaweb2" ["l"="-16.364,-6.865"]
+"Icinga/puppet-icinga2" ["l"="-16.335,-6.811"]
+"jjethwa/icinga2" ["l"="-16.376,-6.894"]
+"HariSekhon/nagios-plugins" ["l"="-16.314,-6.714"]
+"timdaman/check_docker" ["l"="-16.338,-6.687"]
+"shawn-sterling/graphios" ["l"="-15.574,-4.832"]
+"appfirst/nagios-plugins" ["l"="-16.283,-6.735"]
+"matteocorti/check_ssl_cert" ["l"="-16.359,-6.715"]
+"fboender/ansible-cmdb" ["l"="-15.704,-8.054"]
+"madrisan/nagios-plugins-linux" ["l"="-16.265,-6.738"]
+"HariSekhon/pytools" ["l"="-16.244,-6.678"]
+"andreisavu/zookeeper-monitoring" ["l"="11.197,22.686"]
+"Oxalide/vsphere-influxdb-go" ["l"="-11.7,3.371"]
+"jonschipp/nagios-plugins" ["l"="-16.355,-6.683"]
+"naemon/naemon-livestatus" ["l"="-16.347,-6.655"]
+"op5/merlin" ["l"="-16.336,-6.609"]
+"lgbff/lgb_check_mk_plugins" ["l"="-16.251,-6.492"]
+"christianbur/check_mk" ["l"="-16.247,-6.51"]
+"rmblake/check_mk-slack" ["l"="-16.203,-6.517"]
+"lozzd/Nagdash" ["l"="-15.579,-4.785"]
+"dmytro/nagira" ["l"="-16.215,-6.641"]
+"nedap/puppetboard" ["l"="21.126,1.268"]
+"Icinga/puppet-icingaweb2" ["l"="-16.327,-6.839"]
+"NagiosEnterprises/nsca" ["l"="-16.252,-6.692"]
+"NagiosEnterprises/nrdp" ["l"="-16.208,-6.719"]
+"justintime/nagios-plugins" ["l"="-13.719,3.509"]
+"nagios-plugins/nagios-plugin-perl" ["l"="-16.281,-6.671"]
+"NagVis/nagvis" ["l"="-16.376,-6.692"]
+"nagios-plugins/nagios-mib" ["l"="-16.295,-6.677"]
+"tribe29/checkMK" ["l"="-16.176,-6.405"]
+"opinkerfi/okconfig" ["l"="-16.255,-6.602"]
+"opinkerfi/nagios-plugins" ["l"="-16.227,-6.603"]
+"smlacombe/sageo" ["l"="-16.307,-6.589"]
+"Crapworks/RESTlos" ["l"="-16.295,-6.578"]
+"Icinga/icingaweb2-theme-company" ["l"="-16.426,-6.774"]
+"Alignak-monitoring-contrib/alignak-backend" ["l"="-16.351,-6.552"]
+"ConSol/sakuli" ["l"="-33.782,-24.626"]
+"lausser/coshsh" ["l"="-16.243,-6.549"]
+"m-lab/prometheus-nagios-exporter" ["l"="-16.287,-6.557"]
+"Bastian-Kuhn/cmdb-syncer" ["l"="-16.152,-6.413"]
+"saurabh-hirani/icinga2-api-examples" ["l"="-16.437,-6.812"]
+"Icinga/icinga2-api-examples" ["l"="-16.449,-6.787"]
+"Icinga/icingaweb2-module-pnp" ["l"="-16.431,-6.796"]
+"Icinga/icingaweb2-module-generictts" ["l"="-16.429,-6.759"]
+"HenriWahl/Nagstamon" ["l"="-16.316,-6.746"]
+"Icinga/icingaweb2-module-fileshipper" ["l"="-16.421,-6.723"]
+"mcktr/check_tr64_fritz" ["l"="-16.414,-6.677"]
+"matteocorti/check_rbl" ["l"="-16.394,-6.678"]
+"monitoring-plugins/monitoring-plugin-perl" ["l"="-16.371,-6.675"]
+"Icinga/icingaweb2-module-vsphere" ["l"="-16.43,-6.738"]
+"Icinga/icinga2-diagnostics" ["l"="-16.458,-6.755"]
+"nunofernandes/icingaweb2-module-ca" ["l"="-16.446,-6.744"]
+"Thomas-Gelf/icingaweb2-module-vspheredb" ["l"="-16.443,-6.762"]
+"mcktr/check_fritz" ["l"="-16.435,-6.662"]
+"Icinga/icingaweb2-module-ipl" ["l"="-16.451,-6.703"]
+"Icinga/icingaweb2-module-reactbundle" ["l"="-16.457,-6.715"]
+}

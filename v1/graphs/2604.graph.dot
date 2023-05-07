@@ -1,0 +1,1808 @@
+digraph G {
+"actions/stale" -> "actions/labeler"
+"actions/stale" -> "actions/first-interaction"
+"actions/stale" -> "actions/add-to-project"
+"actions/stale" -> "actions/download-artifact"
+"actions/stale" -> "probot/stale" ["e"=1]
+"actions/stale" -> "actions/github-script"
+"actions/stale" -> "actions/javascript-action"
+"actions/stale" -> "actions/upload-artifact"
+"actions/stale" -> "peter-evans/create-or-update-comment"
+"actions/stale" -> "actions/cache"
+"actions/stale" -> "actions/toolkit"
+"actions/stale" -> "actions/dependency-review-action"
+"actions/stale" -> "actions/checkout"
+"actions/stale" -> "actions/setup-dotnet"
+"actions/stale" -> "peter-evans/create-pull-request"
+"docker/build-push-action" -> "docker/login-action"
+"docker/build-push-action" -> "docker/setup-buildx-action"
+"docker/build-push-action" -> "docker/metadata-action"
+"docker/build-push-action" -> "actions/checkout"
+"docker/build-push-action" -> "actions/cache"
+"docker/build-push-action" -> "docker/buildx"
+"docker/build-push-action" -> "actions/upload-artifact"
+"docker/build-push-action" -> "docker/setup-qemu-action"
+"docker/build-push-action" -> "actions/setup-node"
+"docker/build-push-action" -> "aws-actions/configure-aws-credentials"
+"docker/build-push-action" -> "elgohr/Publish-Docker-Github-Action"
+"docker/build-push-action" -> "appleboy/ssh-action"
+"docker/build-push-action" -> "actions/github-script"
+"docker/build-push-action" -> "softprops/action-gh-release"
+"docker/build-push-action" -> "aws-actions/amazon-ecr-login"
+"peaceiris/actions-gh-pages" -> "peaceiris/actions-hugo" ["e"=1]
+"peaceiris/actions-gh-pages" -> "JamesIves/github-pages-deploy-action"
+"peaceiris/actions-gh-pages" -> "actions/checkout"
+"peaceiris/actions-gh-pages" -> "actions/setup-node"
+"peaceiris/actions-gh-pages" -> "actions/cache"
+"peaceiris/actions-gh-pages" -> "actions/upload-artifact"
+"peaceiris/actions-gh-pages" -> "softprops/action-gh-release"
+"peaceiris/actions-gh-pages" -> "actions/github-script"
+"peaceiris/actions-gh-pages" -> "release-drafter/release-drafter"
+"peaceiris/actions-gh-pages" -> "utterance/utterances" ["e"=1]
+"peaceiris/actions-gh-pages" -> "alex-shpak/hugo-book" ["e"=1]
+"peaceiris/actions-gh-pages" -> "giscus/giscus" ["e"=1]
+"peaceiris/actions-gh-pages" -> "docker/build-push-action"
+"peaceiris/actions-gh-pages" -> "nektos/act" ["e"=1]
+"peaceiris/actions-gh-pages" -> "codecov/codecov-action"
+"JamesIves/github-pages-deploy-action" -> "peaceiris/actions-gh-pages"
+"JamesIves/github-pages-deploy-action" -> "actions/checkout"
+"JamesIves/github-pages-deploy-action" -> "actions/setup-node"
+"JamesIves/github-pages-deploy-action" -> "softprops/action-gh-release"
+"JamesIves/github-pages-deploy-action" -> "sdras/awesome-actions" ["e"=1]
+"JamesIves/github-pages-deploy-action" -> "actions/cache"
+"JamesIves/github-pages-deploy-action" -> "johnsoncodehk/volar" ["e"=1]
+"JamesIves/github-pages-deploy-action" -> "actions/toolkit"
+"JamesIves/github-pages-deploy-action" -> "utterance/utterances" ["e"=1]
+"JamesIves/github-pages-deploy-action" -> "giscus/giscus" ["e"=1]
+"JamesIves/github-pages-deploy-action" -> "lowlighter/metrics" ["e"=1]
+"JamesIves/github-pages-deploy-action" -> "actions/upload-artifact"
+"JamesIves/github-pages-deploy-action" -> "codecov/codecov-action"
+"JamesIves/github-pages-deploy-action" -> "nektos/act" ["e"=1]
+"JamesIves/github-pages-deploy-action" -> "docker/build-push-action"
+"softprops/action-gh-release" -> "actions/create-release"
+"softprops/action-gh-release" -> "ncipollo/release-action"
+"softprops/action-gh-release" -> "actions/upload-artifact"
+"softprops/action-gh-release" -> "marvinpinto/action-automatic-releases"
+"softprops/action-gh-release" -> "actions/upload-release-asset"
+"softprops/action-gh-release" -> "actions/cache"
+"softprops/action-gh-release" -> "actions/checkout"
+"softprops/action-gh-release" -> "release-drafter/release-drafter"
+"softprops/action-gh-release" -> "actions/github-script"
+"softprops/action-gh-release" -> "docker/build-push-action"
+"softprops/action-gh-release" -> "actions/setup-python"
+"softprops/action-gh-release" -> "peter-evans/create-pull-request"
+"softprops/action-gh-release" -> "mikepenz/release-changelog-builder-action"
+"softprops/action-gh-release" -> "peaceiris/actions-gh-pages"
+"softprops/action-gh-release" -> "stefanzweifel/git-auto-commit-action"
+"actions-runner-controller/actions-runner-controller" -> "evryfs/github-actions-runner-operator"
+"actions-runner-controller/actions-runner-controller" -> "philips-labs/terraform-aws-github-runner"
+"actions-runner-controller/actions-runner-controller" -> "aws/karpenter" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "argoproj/argo-helm" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "external-secrets/external-secrets" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "kubernetes-sigs/external-dns" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "stakater/Reloader" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "myoung34/docker-github-actions-runner"
+"actions-runner-controller/actions-runner-controller" -> "actions/runner"
+"actions-runner-controller/actions-runner-controller" -> "kyverno/kyverno" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "jonico/awesome-runners"
+"actions-runner-controller/actions-runner-controller" -> "rikatz/kubepug" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "crossplane/crossplane" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "yannh/kubeconform" ["e"=1]
+"actions-runner-controller/actions-runner-controller" -> "bitnami-labs/sealed-secrets" ["e"=1]
+"evryfs/github-actions-runner-operator" -> "summerwind/actions-runner-controller"
+"evryfs/github-actions-runner-operator" -> "evryfs/github-actions-runner"
+"evryfs/github-actions-runner-operator" -> "SanderKnape/github-runner"
+"evryfs/github-actions-runner-operator" -> "jonico/awesome-runners"
+"evryfs/github-actions-runner-operator" -> "actions-runner-controller/actions-runner-controller"
+"myoung34/docker-github-actions-runner" -> "tcardonne/docker-github-runner"
+"myoung34/docker-github-actions-runner" -> "jonico/awesome-runners"
+"myoung34/docker-github-actions-runner" -> "actions-runner-controller/actions-runner-controller"
+"myoung34/docker-github-actions-runner" -> "philips-labs/terraform-aws-github-runner"
+"myoung34/docker-github-actions-runner" -> "summerwind/actions-runner-controller"
+"myoung34/docker-github-actions-runner" -> "evryfs/github-actions-runner-operator"
+"myoung34/docker-github-actions-runner" -> "actions/runner"
+"myoung34/docker-github-actions-runner" -> "SanderKnape/github-runner"
+"myoung34/docker-github-actions-runner" -> "machulav/ec2-github-runner"
+"myoung34/docker-github-actions-runner" -> "Spendesk/github-actions-exporter"
+"myoung34/docker-github-actions-runner" -> "actions/actions-runner-controller"
+"myoung34/docker-github-actions-runner" -> "actions/github-script"
+"myoung34/docker-github-actions-runner" -> "MonolithProjects/ansible-github_actions_runner"
+"myoung34/docker-github-actions-runner" -> "peter-evans/repository-dispatch"
+"myoung34/docker-github-actions-runner" -> "cloudskiff/driftctl" ["e"=1]
+"release-drafter/release-drafter" -> "TimonVS/pr-labeler-action"
+"release-drafter/release-drafter" -> "actions/github-script"
+"release-drafter/release-drafter" -> "actions/labeler"
+"release-drafter/release-drafter" -> "softprops/action-gh-release"
+"release-drafter/release-drafter" -> "peter-evans/create-pull-request"
+"release-drafter/release-drafter" -> "google-github-actions/release-please-action"
+"release-drafter/release-drafter" -> "actions/create-release"
+"release-drafter/release-drafter" -> "actions/upload-artifact"
+"release-drafter/release-drafter" -> "micnncim/action-label-syncer"
+"release-drafter/release-drafter" -> "mikepenz/release-changelog-builder-action"
+"release-drafter/release-drafter" -> "probot/probot" ["e"=1]
+"release-drafter/release-drafter" -> "github-tools/github-release-notes"
+"release-drafter/release-drafter" -> "actions/checkout"
+"release-drafter/release-drafter" -> "actions/toolkit"
+"release-drafter/release-drafter" -> "googleapis/release-please"
+"zeke/semantic-pull-requests" -> "amannn/action-semantic-pull-request"
+"zeke/semantic-pull-requests" -> "commitizen/conventional-commit-types"
+"zeke/semantic-pull-requests" -> "semantic-release/commit-analyzer"
+"zeke/semantic-pull-requests" -> "semantic-release/github"
+"zeke/semantic-pull-requests" -> "googleapis/release-please"
+"zeke/semantic-pull-requests" -> "cycjimmy/semantic-release-action"
+"zeke/semantic-pull-requests" -> "peter-evans/create-pull-request"
+"zeke/semantic-pull-requests" -> "actions/upload-artifact"
+"zeke/semantic-pull-requests" -> "actions/labeler"
+"zeke/semantic-pull-requests" -> "release-drafter/release-drafter"
+"zeke/semantic-pull-requests" -> "octokit/webhooks.js" ["e"=1]
+"zeke/semantic-pull-requests" -> "semantic-release/semantic-release" ["e"=1]
+"zeke/semantic-pull-requests" -> "wip/app" ["e"=1]
+"zeke/semantic-pull-requests" -> "peter-evans/slash-command-dispatch"
+"zeke/semantic-pull-requests" -> "Ezard/semantic-prs"
+"actions/starter-workflows" -> "actions/toolkit"
+"actions/starter-workflows" -> "actions/virtual-environments"
+"actions/starter-workflows" -> "sdras/awesome-actions" ["e"=1]
+"actions/starter-workflows" -> "actions/checkout"
+"actions/starter-workflows" -> "actions/runner"
+"actions/starter-workflows" -> "actions/cache"
+"actions/starter-workflows" -> "actions/setup-node"
+"actions/starter-workflows" -> "nektos/act" ["e"=1]
+"actions/starter-workflows" -> "cli/cli" ["e"=1]
+"actions/starter-workflows" -> "github/super-linter" ["e"=1]
+"actions/starter-workflows" -> "github/docs" ["e"=1]
+"actions/starter-workflows" -> "github/opensource.guide" ["e"=1]
+"actions/starter-workflows" -> "github/roadmap" ["e"=1]
+"actions/starter-workflows" -> "actions/upload-artifact"
+"actions/starter-workflows" -> "actions/javascript-action"
+"actions/virtual-environments" -> "actions/runner"
+"actions/virtual-environments" -> "actions/starter-workflows"
+"actions/virtual-environments" -> "actions/cache"
+"actions/virtual-environments" -> "actions/toolkit"
+"actions/virtual-environments" -> "actions/checkout"
+"actions/virtual-environments" -> "nektos/act" ["e"=1]
+"actions/virtual-environments" -> "actions/upload-artifact"
+"actions/virtual-environments" -> "microsoft/azure-pipelines-tasks" ["e"=1]
+"actions/virtual-environments" -> "github/roadmap" ["e"=1]
+"actions/virtual-environments" -> "Azure/bicep" ["e"=1]
+"actions/virtual-environments" -> "github/super-linter" ["e"=1]
+"actions/virtual-environments" -> "cli/cli" ["e"=1]
+"actions/virtual-environments" -> "actions/github-script"
+"actions/virtual-environments" -> "github/docs" ["e"=1]
+"actions/virtual-environments" -> "microsoft/azure-pipelines-agent" ["e"=1]
+"peter-evans/slash-command-dispatch" -> "peter-evans/create-or-update-comment"
+"peter-evans/slash-command-dispatch" -> "tibdex/github-app-token"
+"peter-evans/slash-command-dispatch" -> "peter-evans/repository-dispatch"
+"peter-evans/slash-command-dispatch" -> "peter-evans/commit-comment"
+"peter-evans/slash-command-dispatch" -> "peter-evans/find-comment"
+"peter-evans/slash-command-dispatch" -> "peter-evans/create-pull-request"
+"peter-evans/slash-command-dispatch" -> "chrnorm/deployment-action"
+"peter-evans/slash-command-dispatch" -> "benc-uk/workflow-dispatch"
+"actions/runner" -> "actions/toolkit"
+"actions/runner" -> "actions/virtual-environments"
+"actions/runner" -> "actions/checkout"
+"actions/runner" -> "actions/starter-workflows"
+"actions/runner" -> "actions/cache"
+"actions/runner" -> "actions/github-script"
+"actions/runner" -> "actions-runner-controller/actions-runner-controller"
+"actions/runner" -> "philips-labs/terraform-aws-github-runner"
+"actions/runner" -> "actions/upload-artifact"
+"actions/runner" -> "myoung34/docker-github-actions-runner"
+"actions/runner" -> "actions/setup-node"
+"actions/runner" -> "actions/runner-images"
+"actions/runner" -> "github/roadmap" ["e"=1]
+"actions/runner" -> "nektos/act" ["e"=1]
+"actions/runner" -> "actions/typescript-action"
+"github-tools/github-release-notes" -> "release-drafter/release-drafter"
+"github-tools/github-release-notes" -> "github-changelog-generator/github-changelog-generator" ["e"=1]
+"github-tools/github-release-notes" -> "mikepenz/release-changelog-builder-action"
+"github-tools/github-release-notes" -> "nytimes/Chronicler" ["e"=1]
+"appleboy/ssh-action" -> "appleboy/scp-action"
+"appleboy/ssh-action" -> "easingthemes/ssh-deploy"
+"appleboy/ssh-action" -> "docker/build-push-action"
+"appleboy/ssh-action" -> "actions/checkout"
+"appleboy/ssh-action" -> "SamKirkland/FTP-Deploy-Action"
+"appleboy/ssh-action" -> "shimataro/ssh-key-action"
+"appleboy/ssh-action" -> "actions/cache"
+"appleboy/ssh-action" -> "shivammathur/setup-php" ["e"=1]
+"appleboy/ssh-action" -> "sdras/awesome-actions" ["e"=1]
+"appleboy/ssh-action" -> "appleboy/telegram-action"
+"appleboy/ssh-action" -> "Burnett01/rsync-deployments"
+"appleboy/ssh-action" -> "actions/upload-artifact"
+"appleboy/ssh-action" -> "remarkjs/react-markdown" ["e"=1]
+"appleboy/ssh-action" -> "garygrossgarten/github-action-ssh"
+"appleboy/ssh-action" -> "elgohr/Publish-Docker-Github-Action"
+"actions/runner-images" -> "actions/runner"
+"actions/runner-images" -> "actions/setup-python"
+"actions/runner-images" -> "actions/checkout"
+"actions/runner-images" -> "actions/upload-artifact"
+"actions/runner-images" -> "actions/cache"
+"actions/runner-images" -> "actions/github-script"
+"actions/runner-images" -> "YannickRe/azuredevops-buildagents"
+"actions/runner-images" -> "actions/toolkit"
+"actions/runner-images" -> "vmware-tanzu/kubeapps" ["e"=1]
+"actions/runner-images" -> "actions/actions-runner-controller"
+"actions/runner-images" -> "philips-labs/terraform-aws-github-runner"
+"actions/runner-images" -> "aws-actions/configure-aws-credentials"
+"actions/runner-images" -> "apache/incubator-streampark" ["e"=1]
+"actions/runner-images" -> "actions/setup-node"
+"actions/runner-images" -> "devcontainers/features" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "git-ftp/git-ftp" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "appleboy/ssh-action"
+"SamKirkland/FTP-Deploy-Action" -> "sebastianpopp/ftp-action"
+"SamKirkland/FTP-Deploy-Action" -> "SamKirkland/web-deploy"
+"SamKirkland/FTP-Deploy-Action" -> "wlixcc/SFTP-Deploy-Action"
+"SamKirkland/FTP-Deploy-Action" -> "easingthemes/ssh-deploy"
+"SamKirkland/FTP-Deploy-Action" -> "SamKirkland/ftp-deploy"
+"SamKirkland/FTP-Deploy-Action" -> "shivammathur/setup-php" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "peaceiris/actions-gh-pages"
+"SamKirkland/FTP-Deploy-Action" -> "postlight/headless-wp-starter" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "wp-graphql/wp-graphql" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "actions/checkout"
+"SamKirkland/FTP-Deploy-Action" -> "locomotivemtl/locomotive-scroll" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "YahnisElsts/plugin-update-checker" ["e"=1]
+"SamKirkland/FTP-Deploy-Action" -> "appleboy/scp-action"
+"actions/toolkit" -> "actions/javascript-action"
+"actions/toolkit" -> "actions/typescript-action"
+"actions/toolkit" -> "actions/github-script"
+"actions/toolkit" -> "actions/starter-workflows"
+"actions/toolkit" -> "actions/runner"
+"actions/toolkit" -> "actions/checkout"
+"actions/toolkit" -> "actions/setup-node"
+"actions/toolkit" -> "actions/cache"
+"actions/toolkit" -> "actions/upload-artifact"
+"actions/toolkit" -> "actions/download-artifact"
+"actions/toolkit" -> "sdras/awesome-actions" ["e"=1]
+"actions/toolkit" -> "actions/labeler"
+"actions/toolkit" -> "actions/create-release"
+"actions/toolkit" -> "actions/virtual-environments"
+"actions/toolkit" -> "vercel/ncc" ["e"=1]
+"dependabot/dependabot-core" -> "dependabot/dependabot-script"
+"dependabot/dependabot-core" -> "renovatebot/renovate" ["e"=1]
+"dependabot/dependabot-core" -> "actions/cache"
+"dependabot/dependabot-core" -> "actions/checkout"
+"dependabot/dependabot-core" -> "dependabot/feedback"
+"dependabot/dependabot-core" -> "actions/toolkit"
+"dependabot/dependabot-core" -> "github/super-linter" ["e"=1]
+"dependabot/dependabot-core" -> "github/roadmap" ["e"=1]
+"dependabot/dependabot-core" -> "sorbet/sorbet" ["e"=1]
+"dependabot/dependabot-core" -> "npm/cli" ["e"=1]
+"dependabot/dependabot-core" -> "actions/setup-node"
+"dependabot/dependabot-core" -> "github/codeql" ["e"=1]
+"dependabot/dependabot-core" -> "actions/starter-workflows"
+"dependabot/dependabot-core" -> "actions/upload-artifact"
+"dependabot/dependabot-core" -> "jeremylong/DependencyCheck" ["e"=1]
+"actions/actions-runner-controller" -> "Spendesk/github-actions-exporter"
+"actions/actions-runner-controller" -> "philips-labs/terraform-aws-github-runner"
+"actions/actions-runner-controller" -> "actions/runner"
+"actions/actions-runner-controller" -> "weaveworks/tf-controller" ["e"=1]
+"actions/actions-runner-controller" -> "aws-samples/hardeneks" ["e"=1]
+"actions/actions-runner-controller" -> "opencost/opencost" ["e"=1]
+"actions/actions-runner-controller" -> "external-secrets/external-secrets" ["e"=1]
+"actions/actions-runner-controller" -> "github/safe-settings" ["e"=1]
+"actions/download-artifact" -> "actions/upload-artifact"
+"actions/download-artifact" -> "actions/cache"
+"actions/download-artifact" -> "actions/checkout"
+"actions/download-artifact" -> "actions/setup-node"
+"actions/download-artifact" -> "actions/setup-python"
+"actions/download-artifact" -> "actions/setup-java"
+"actions/download-artifact" -> "actions/toolkit"
+"actions/download-artifact" -> "actions/create-release"
+"actions/download-artifact" -> "dawidd6/action-download-artifact"
+"actions/download-artifact" -> "actions/setup-dotnet"
+"actions/download-artifact" -> "actions/upload-release-asset"
+"actions/download-artifact" -> "actions/github-script"
+"actions/download-artifact" -> "actions/setup-go"
+"actions/download-artifact" -> "actions/labeler"
+"actions/download-artifact" -> "actions/stale"
+"peter-evans/repository-dispatch" -> "benc-uk/workflow-dispatch"
+"peter-evans/repository-dispatch" -> "peter-evans/create-pull-request"
+"peter-evans/repository-dispatch" -> "peter-evans/slash-command-dispatch"
+"peter-evans/repository-dispatch" -> "peter-evans/create-or-update-comment"
+"peter-evans/repository-dispatch" -> "peter-evans/find-comment"
+"peter-evans/repository-dispatch" -> "convictional/trigger-workflow-and-wait"
+"peter-evans/repository-dispatch" -> "actions-ecosystem/action-regex-match"
+"peter-evans/repository-dispatch" -> "actions/typescript-action"
+"peter-evans/repository-dispatch" -> "actions/github-script"
+"peter-evans/repository-dispatch" -> "google/secrets-sync-action"
+"peter-evans/repository-dispatch" -> "dorny/paths-filter"
+"peter-evans/repository-dispatch" -> "summerwind/actions-runner-controller"
+"peter-evans/repository-dispatch" -> "evryfs/github-actions-runner-operator"
+"peter-evans/repository-dispatch" -> "octokit/request-action"
+"peter-evans/repository-dispatch" -> "dawidd6/action-download-artifact"
+"actions/upload-artifact" -> "actions/download-artifact"
+"actions/upload-artifact" -> "actions/checkout"
+"actions/upload-artifact" -> "actions/cache"
+"actions/upload-artifact" -> "actions/setup-node"
+"actions/upload-artifact" -> "actions/create-release"
+"actions/upload-artifact" -> "actions/setup-java"
+"actions/upload-artifact" -> "actions/setup-python"
+"actions/upload-artifact" -> "softprops/action-gh-release"
+"actions/upload-artifact" -> "actions/upload-release-asset"
+"actions/upload-artifact" -> "actions/github-script"
+"actions/upload-artifact" -> "actions/toolkit"
+"actions/upload-artifact" -> "actions/setup-dotnet"
+"actions/upload-artifact" -> "docker/build-push-action"
+"actions/upload-artifact" -> "actions/runner"
+"actions/upload-artifact" -> "ncipollo/release-action"
+"rtCamp/action-slack-notify" -> "8398a7/action-slack"
+"rtCamp/action-slack-notify" -> "slackapi/slack-github-action"
+"rtCamp/action-slack-notify" -> "rtCamp/github-actions-library"
+"rtCamp/action-slack-notify" -> "voxmedia/github-action-slack-notify-build"
+"rtCamp/action-slack-notify" -> "Ilshidur/action-slack"
+"rtCamp/action-slack-notify" -> "act10ns/slack"
+"rtCamp/action-slack-notify" -> "actions/github-script"
+"rtCamp/action-slack-notify" -> "rtCamp/action-phpcs-code-review"
+"rtCamp/action-slack-notify" -> "abinoda/slack-action"
+"rtCamp/action-slack-notify" -> "aws-actions/amazon-ecs-deploy-task-definition"
+"rtCamp/action-slack-notify" -> "technote-space/workflow-conclusion-action"
+"rtCamp/action-slack-notify" -> "actions/labeler"
+"rtCamp/action-slack-notify" -> "hashicorp/setup-terraform" ["e"=1]
+"rtCamp/action-slack-notify" -> "benc-uk/workflow-dispatch"
+"rtCamp/action-slack-notify" -> "actions/cache"
+"actions/setup-python" -> "actions/checkout"
+"actions/setup-python" -> "pypa/gh-action-pypi-publish" ["e"=1]
+"actions/setup-python" -> "actions/upload-artifact"
+"actions/setup-python" -> "actions/cache"
+"actions/setup-python" -> "codecov/codecov-action"
+"actions/setup-python" -> "actions/download-artifact"
+"actions/setup-python" -> "actions/setup-node"
+"actions/setup-python" -> "pytest-dev/pytest-cov" ["e"=1]
+"actions/setup-python" -> "snok/install-poetry"
+"actions/setup-python" -> "PyCQA/flake8" ["e"=1]
+"actions/setup-python" -> "PyCQA/isort" ["e"=1]
+"actions/setup-python" -> "actions/python-versions"
+"actions/setup-python" -> "pre-commit/action" ["e"=1]
+"actions/setup-python" -> "abatilo/actions-poetry"
+"actions/setup-python" -> "softprops/action-gh-release"
+"aws-actions/amazon-ecr-login" -> "aws-actions/configure-aws-credentials"
+"aws-actions/amazon-ecr-login" -> "aws-actions/amazon-ecs-render-task-definition"
+"aws-actions/amazon-ecr-login" -> "aws-actions/amazon-ecs-deploy-task-definition"
+"aws-actions/amazon-ecr-login" -> "aws-actions/aws-cloudformation-github-deploy"
+"aws-actions/amazon-ecr-login" -> "hashicorp/setup-terraform" ["e"=1]
+"aws-actions/amazon-ecr-login" -> "docker/setup-buildx-action"
+"aws-actions/amazon-ecr-login" -> "docker/build-push-action"
+"aws-actions/amazon-ecr-login" -> "kciter/aws-ecr-action"
+"aws-actions/amazon-ecr-login" -> "aws-actions/aws-codebuild-run-build"
+"aws-actions/amazon-ecr-login" -> "aws-actions/amazon-eks-fargate"
+"aws-actions/amazon-ecr-login" -> "kubernetes-sigs/aws-load-balancer-controller" ["e"=1]
+"actions/setup-node" -> "actions/checkout"
+"actions/setup-node" -> "actions/cache"
+"actions/setup-node" -> "actions/upload-artifact"
+"actions/setup-node" -> "actions/toolkit"
+"actions/setup-node" -> "actions/download-artifact"
+"actions/setup-node" -> "actions/setup-python"
+"actions/setup-node" -> "actions/starter-workflows"
+"actions/setup-node" -> "docker/login-action"
+"actions/setup-node" -> "docker/build-push-action"
+"actions/setup-node" -> "actions/github-script"
+"actions/setup-node" -> "actions/javascript-action"
+"actions/setup-node" -> "actions/setup-go"
+"actions/setup-node" -> "actions/runner"
+"actions/setup-node" -> "actions/typescript-action"
+"actions/setup-node" -> "peaceiris/actions-gh-pages"
+"actions/checkout" -> "actions/setup-node"
+"actions/checkout" -> "actions/cache"
+"actions/checkout" -> "actions/upload-artifact"
+"actions/checkout" -> "actions/setup-python"
+"actions/checkout" -> "actions/toolkit"
+"actions/checkout" -> "actions/download-artifact"
+"actions/checkout" -> "actions/github-script"
+"actions/checkout" -> "docker/build-push-action"
+"actions/checkout" -> "actions/runner"
+"actions/checkout" -> "actions/starter-workflows"
+"actions/checkout" -> "actions/setup-java"
+"actions/checkout" -> "docker/login-action"
+"actions/checkout" -> "actions/create-release"
+"actions/checkout" -> "peaceiris/actions-gh-pages"
+"actions/checkout" -> "actions/labeler"
+"wei/git-sync" -> "repo-sync/github-sync"
+"wei/git-sync" -> "wei/github-sync"
+"wei/git-sync" -> "repo-sync/repo-sync"
+"google/secrets-sync-action" -> "probot/settings" ["e"=1]
+"google/secrets-sync-action" -> "octokit/action.js" ["e"=1]
+"google/secrets-sync-action" -> "actions-ecosystem/action-add-labels"
+"google/secrets-sync-action" -> "actions-ecosystem/action-regex-match"
+"NickLiffen/ghas-enablement" -> "jhutchings1/Create-ActionsPRs"
+"NickLiffen/ghas-enablement" -> "GeekMasher/advanced-security-compliance"
+"NickLiffen/ghas-enablement" -> "NickLiffen/CodeScanningToSlack"
+"NickLiffen/ghas-enablement" -> "github/ghas-jira-integration"
+"NickLiffen/ghas-enablement" -> "peter-murray/github-security-report-action"
+"NickLiffen/ghas-enablement" -> "advanced-security/filter-sarif"
+"NickLiffen/ghas-enablement" -> "some-natalie/ghas-to-csv"
+"NickLiffen/ghas-enablement" -> "NickLiffen/GSSAR"
+"NickLiffen/ghas-enablement" -> "advanced-security/advanced-security-material"
+"NickLiffen/ghas-enablement" -> "kllund/sample-pipeline-files"
+"actions/create-release" -> "actions/upload-release-asset"
+"actions/create-release" -> "softprops/action-gh-release"
+"actions/create-release" -> "actions/upload-artifact"
+"actions/create-release" -> "actions/cache"
+"actions/create-release" -> "actions/download-artifact"
+"actions/create-release" -> "actions/checkout"
+"actions/create-release" -> "ncipollo/release-action"
+"actions/create-release" -> "actions/toolkit"
+"actions/create-release" -> "ad-m/github-push-action"
+"actions/create-release" -> "actions/github-script"
+"actions/create-release" -> "release-drafter/release-drafter"
+"actions/create-release" -> "actions/setup-node"
+"actions/create-release" -> "actions/setup-python"
+"actions/create-release" -> "docker/build-push-action"
+"actions/create-release" -> "marvinpinto/action-automatic-releases"
+"actions/cache" -> "actions/checkout"
+"actions/cache" -> "actions/upload-artifact"
+"actions/cache" -> "actions/setup-node"
+"actions/cache" -> "actions/download-artifact"
+"actions/cache" -> "actions/toolkit"
+"actions/cache" -> "actions/setup-python"
+"actions/cache" -> "actions/github-script"
+"actions/cache" -> "docker/build-push-action"
+"actions/cache" -> "actions/runner"
+"actions/cache" -> "actions/create-release"
+"actions/cache" -> "actions/starter-workflows"
+"actions/cache" -> "actions/setup-java"
+"actions/cache" -> "codecov/codecov-action"
+"actions/cache" -> "softprops/action-gh-release"
+"actions/cache" -> "actions/setup-go"
+"cycjimmy/semantic-release-action" -> "codfish/semantic-release-action"
+"cycjimmy/semantic-release-action" -> "amannn/action-semantic-pull-request"
+"cycjimmy/semantic-release-action" -> "semantic-release/release-notes-generator"
+"chdsbd/kodiak" -> "palantir/bulldozer"
+"chdsbd/kodiak" -> "pascalgn/automerge-action"
+"chdsbd/kodiak" -> "hashicorp/nextjs-bundle-analysis" ["e"=1]
+"mxschmitt/action-tmate" -> "csexton/debugger-action"
+"mxschmitt/action-tmate" -> "actions/github-script"
+"mxschmitt/action-tmate" -> "lhotari/action-upterm"
+"mxschmitt/action-tmate" -> "tmate-io/tmate" ["e"=1]
+"mxschmitt/action-tmate" -> "rhysd/actionlint"
+"mxschmitt/action-tmate" -> "nektos/act" ["e"=1]
+"mxschmitt/action-tmate" -> "philips-labs/terraform-aws-github-runner"
+"mxschmitt/action-tmate" -> "actions/cache"
+"mxschmitt/action-tmate" -> "dorny/paths-filter"
+"mxschmitt/action-tmate" -> "peter-evans/create-pull-request"
+"mxschmitt/action-tmate" -> "codecov/codecov-action"
+"mxschmitt/action-tmate" -> "jonico/awesome-runners"
+"mxschmitt/action-tmate" -> "styfle/cancel-workflow-action"
+"mxschmitt/action-tmate" -> "actions/create-release"
+"mxschmitt/action-tmate" -> "actions/runner"
+"integrations/slack" -> "probot/probot" ["e"=1]
+"integrations/slack" -> "actions/cache"
+"integrations/slack" -> "actions/github-script"
+"integrations/slack" -> "slackapi/node-slack-sdk" ["e"=1]
+"integrations/slack" -> "danger/danger" ["e"=1]
+"integrations/slack" -> "actions/checkout"
+"integrations/slack" -> "rhysd/actionlint"
+"integrations/slack" -> "actions/labeler"
+"integrations/slack" -> "actions/toolkit"
+"integrations/slack" -> "rtCamp/action-slack-notify"
+"integrations/slack" -> "hashicorp/setup-terraform" ["e"=1]
+"integrations/slack" -> "actions/runner"
+"integrations/slack" -> "awslabs/git-secrets" ["e"=1]
+"integrations/slack" -> "mercari/production-readiness-checklist" ["e"=1]
+"integrations/slack" -> "integrations/jira"
+"actions/setup-go" -> "golangci/golangci-lint-action" ["e"=1]
+"actions/setup-go" -> "goreleaser/goreleaser-action" ["e"=1]
+"actions/setup-go" -> "actions/setup-node"
+"actions/setup-go" -> "actions/setup-java"
+"actions/setup-go" -> "actions/cache"
+"actions/setup-go" -> "mvdan/github-actions-golang" ["e"=1]
+"actions/setup-go" -> "actions/download-artifact"
+"actions/setup-go" -> "actions/upload-artifact"
+"actions/setup-go" -> "actions/checkout"
+"actions/setup-go" -> "actions/go-versions"
+"actions/setup-go" -> "docker/setup-buildx-action"
+"actions/setup-go" -> "codecov/codecov-action"
+"actions/setup-go" -> "actions/upload-release-asset"
+"actions/setup-go" -> "actions/setup-python"
+"actions/setup-go" -> "actions/setup-dotnet"
+"googleapis/release-please" -> "google-github-actions/release-please-action"
+"googleapis/release-please" -> "conventional-changelog/standard-version" ["e"=1]
+"googleapis/release-please" -> "googleapis/repo-automation-bots"
+"googleapis/release-please" -> "changesets/changesets" ["e"=1]
+"googleapis/release-please" -> "conventional-changelog/conventional-changelog" ["e"=1]
+"googleapis/release-please" -> "semantic-release/semantic-release" ["e"=1]
+"googleapis/release-please" -> "absolute-version/commit-and-tag-version"
+"googleapis/release-please" -> "egoist/tsup" ["e"=1]
+"googleapis/release-please" -> "conventional-changelog/commitlint" ["e"=1]
+"googleapis/release-please" -> "release-it/release-it" ["e"=1]
+"googleapis/release-please" -> "renovatebot/renovate" ["e"=1]
+"googleapis/release-please" -> "conventional-commits/conventionalcommits.org" ["e"=1]
+"googleapis/release-please" -> "release-drafter/release-drafter"
+"googleapis/release-please" -> "amannn/action-semantic-pull-request"
+"googleapis/release-please" -> "unjs/unbuild" ["e"=1]
+"aws-actions/configure-aws-credentials" -> "aws-actions/amazon-ecr-login"
+"aws-actions/configure-aws-credentials" -> "aws-actions/amazon-ecs-deploy-task-definition"
+"aws-actions/configure-aws-credentials" -> "aws-actions/amazon-ecs-render-task-definition"
+"aws-actions/configure-aws-credentials" -> "hashicorp/setup-terraform" ["e"=1]
+"aws-actions/configure-aws-credentials" -> "aws-actions/aws-cloudformation-github-deploy"
+"aws-actions/configure-aws-credentials" -> "aws-actions/aws-codebuild-run-build"
+"aws-actions/configure-aws-credentials" -> "philips-labs/terraform-aws-github-runner"
+"aws-actions/configure-aws-credentials" -> "docker/build-push-action"
+"aws-actions/configure-aws-credentials" -> "actions/cache"
+"aws-actions/configure-aws-credentials" -> "terraform-linters/tflint" ["e"=1]
+"aws-actions/configure-aws-credentials" -> "actions/checkout"
+"aws-actions/configure-aws-credentials" -> "jakejarvis/s3-sync-action"
+"aws-actions/configure-aws-credentials" -> "actions/setup-node"
+"aws-actions/configure-aws-credentials" -> "actions/upload-artifact"
+"aws-actions/configure-aws-credentials" -> "projen/projen" ["e"=1]
+"actions/labeler" -> "actions/stale"
+"actions/labeler" -> "release-drafter/release-drafter"
+"actions/labeler" -> "actions/checkout"
+"actions/labeler" -> "actions/toolkit"
+"actions/labeler" -> "actions/typescript-action"
+"actions/labeler" -> "actions/github-script"
+"actions/labeler" -> "pascalgn/automerge-action"
+"actions/labeler" -> "actions/download-artifact"
+"actions/labeler" -> "peter-evans/create-pull-request"
+"actions/labeler" -> "actions/javascript-action"
+"actions/labeler" -> "cirrus-actions/rebase"
+"actions/labeler" -> "actions/setup-node"
+"actions/labeler" -> "actions/cache"
+"actions/labeler" -> "actions/upload-artifact"
+"actions/labeler" -> "actions/add-to-project"
+"fkirc/skip-duplicate-actions" -> "dorny/paths-filter"
+"peter-evans/create-pull-request" -> "peter-evans/repository-dispatch"
+"peter-evans/create-pull-request" -> "pascalgn/automerge-action"
+"peter-evans/create-pull-request" -> "stefanzweifel/git-auto-commit-action"
+"peter-evans/create-pull-request" -> "repo-sync/pull-request"
+"peter-evans/create-pull-request" -> "actions/github-script"
+"peter-evans/create-pull-request" -> "release-drafter/release-drafter"
+"peter-evans/create-pull-request" -> "peter-evans/slash-command-dispatch"
+"peter-evans/create-pull-request" -> "actions/labeler"
+"peter-evans/create-pull-request" -> "actions/checkout"
+"peter-evans/create-pull-request" -> "EndBug/add-and-commit"
+"peter-evans/create-pull-request" -> "softprops/action-gh-release"
+"peter-evans/create-pull-request" -> "actions/upload-artifact"
+"peter-evans/create-pull-request" -> "rhysd/actionlint"
+"peter-evans/create-pull-request" -> "peter-evans/enable-pull-request-automerge"
+"peter-evans/create-pull-request" -> "ad-m/github-push-action"
+"codecov/codecov-action" -> "actions/setup-python"
+"codecov/codecov-action" -> "coverallsapp/github-action"
+"codecov/codecov-action" -> "actions/cache"
+"codecov/codecov-action" -> "actions/upload-artifact"
+"codecov/codecov-action" -> "actions/checkout"
+"codecov/codecov-action" -> "pytest-dev/pytest-cov" ["e"=1]
+"codecov/codecov-action" -> "actions/setup-node"
+"codecov/codecov-action" -> "actions/download-artifact"
+"codecov/codecov-action" -> "codecov/example-python"
+"codecov/codecov-action" -> "docker/build-push-action"
+"codecov/codecov-action" -> "subosito/flutter-action" ["e"=1]
+"codecov/codecov-action" -> "pypa/gh-action-pypi-publish" ["e"=1]
+"codecov/codecov-action" -> "actions/setup-go"
+"codecov/codecov-action" -> "snok/install-poetry"
+"codecov/codecov-action" -> "stefanzweifel/git-auto-commit-action"
+"snok/install-poetry" -> "abatilo/actions-poetry"
+"snok/install-poetry" -> "python-poetry/poetry-core" ["e"=1]
+"snok/install-poetry" -> "actions/setup-python"
+"snok/install-poetry" -> "pre-commit/action" ["e"=1]
+"snok/install-poetry" -> "Gr1N/setup-poetry"
+"elgohr/Publish-Docker-Github-Action" -> "HurricanKai/Publish-Docker-Github-Action"
+"elgohr/Publish-Docker-Github-Action" -> "docker/build-push-action"
+"elgohr/Publish-Docker-Github-Action" -> "peter-evans/dockerhub-description"
+"elgohr/Publish-Docker-Github-Action" -> "steebchen/kubectl"
+"elgohr/Publish-Docker-Github-Action" -> "pangzineng/Github-Action-One-Click-Docker"
+"elgohr/Publish-Docker-Github-Action" -> "actions/create-release"
+"elgohr/Publish-Docker-Github-Action" -> "anothrNick/github-tag-action"
+"actions/upload-release-asset" -> "actions/create-release"
+"actions/upload-release-asset" -> "actions/upload-artifact"
+"actions/upload-release-asset" -> "softprops/action-gh-release"
+"actions/upload-release-asset" -> "actions/download-artifact"
+"actions/upload-release-asset" -> "ncipollo/release-action"
+"actions/upload-release-asset" -> "svenstaro/upload-release-action"
+"actions/upload-release-asset" -> "JasonEtco/upload-to-release"
+"actions/upload-release-asset" -> "gradle/wrapper-validation-action" ["e"=1]
+"actions/upload-release-asset" -> "actions/checkout"
+"csexton/debugger-action" -> "P3TERX/debugger-action"
+"csexton/debugger-action" -> "orange2008/debugger-action"
+"garygrossgarten/github-action-ssh" -> "garygrossgarten/github-action-scp"
+"webfactory/ssh-agent" -> "shimataro/ssh-key-action"
+"webfactory/ssh-agent" -> "styfle/cancel-workflow-action"
+"webfactory/ssh-agent" -> "webfactory/slimdump"
+"webfactory/ssh-agent" -> "peter-evans/repository-dispatch"
+"ad-m/github-push-action" -> "actions/create-release"
+"ad-m/github-push-action" -> "actions/checkout"
+"ad-m/github-push-action" -> "stefanzweifel/git-auto-commit-action"
+"ad-m/github-push-action" -> "peter-evans/create-pull-request"
+"ad-m/github-push-action" -> "EndBug/add-and-commit"
+"ad-m/github-push-action" -> "actions/upload-release-asset"
+"ad-m/github-push-action" -> "actions/github-script"
+"ad-m/github-push-action" -> "actions/cache"
+"ad-m/github-push-action" -> "peter-evans/dockerhub-description"
+"ad-m/github-push-action" -> "peaceiris/actions-hugo" ["e"=1]
+"ad-m/github-push-action" -> "docker/build-push-action"
+"ad-m/github-push-action" -> "xu-cheng/latex-action" ["e"=1]
+"ad-m/github-push-action" -> "actions/toolkit"
+"ad-m/github-push-action" -> "docker/login-action"
+"ad-m/github-push-action" -> "docker/setup-buildx-action"
+"styfle/cancel-workflow-action" -> "bobheadxi/deployments"
+"styfle/cancel-workflow-action" -> "pascalgn/automerge-action"
+"styfle/cancel-workflow-action" -> "rokroskar/workflow-run-cleanup-action"
+"styfle/cancel-workflow-action" -> "fkirc/skip-duplicate-actions"
+"styfle/cancel-workflow-action" -> "8398a7/action-slack"
+"styfle/cancel-workflow-action" -> "vercel/nft"
+"styfle/cancel-workflow-action" -> "actions/cache"
+"styfle/cancel-workflow-action" -> "actions/github-script"
+"styfle/cancel-workflow-action" -> "actions/typescript-action"
+"tj-actions/changed-files" -> "tj-actions/verify-changed-files"
+"tj-actions/changed-files" -> "dorny/paths-filter"
+"tj-actions/changed-files" -> "rhysd/actionlint"
+"tj-actions/changed-files" -> "slackapi/slack-github-action"
+"tj-actions/changed-files" -> "philips-labs/terraform-aws-github-runner"
+"tj-actions/changed-files" -> "peter-evans/create-pull-request"
+"tj-actions/changed-files" -> "google-github-actions/release-please-action"
+"tj-actions/changed-files" -> "actions/github-script"
+"tj-actions/changed-files" -> "marocchino/sticky-pull-request-comment"
+"tj-actions/changed-files" -> "terraform-google-modules/terraform-google-github-actions-runners" ["e"=1]
+"tj-actions/changed-files" -> "repo-sync/pull-request"
+"tj-actions/changed-files" -> "docker/build-push-action"
+"tj-actions/changed-files" -> "jitterbit/get-changed-files"
+"tj-actions/changed-files" -> "peter-evans/create-or-update-comment"
+"tj-actions/changed-files" -> "actions-runner-controller/actions-runner-controller"
+"jakejarvis/s3-sync-action" -> "chetan/invalidate-cloudfront-action"
+"jakejarvis/s3-sync-action" -> "aws-actions/configure-aws-credentials"
+"jakejarvis/s3-sync-action" -> "Reggionick/s3-deploy"
+"jakejarvis/s3-sync-action" -> "shallwefootball/upload-s3-action"
+"jakejarvis/s3-sync-action" -> "aws-actions/amazon-ecr-login"
+"jakejarvis/s3-sync-action" -> "einaregilsson/beanstalk-deploy" ["e"=1]
+"jakejarvis/s3-sync-action" -> "appleboy/lambda-action"
+"jakejarvis/s3-sync-action" -> "hashicorp/setup-terraform" ["e"=1]
+"jakejarvis/s3-sync-action" -> "actions/setup-node"
+"jakejarvis/s3-sync-action" -> "serverless/github-action" ["e"=1]
+"jakejarvis/s3-sync-action" -> "aws-actions/amazon-ecs-deploy-task-definition"
+"jakejarvis/s3-sync-action" -> "actions/cache"
+"jakejarvis/s3-sync-action" -> "appleboy/ssh-action"
+"jakejarvis/s3-sync-action" -> "rtCamp/action-slack-notify"
+"jakejarvis/s3-sync-action" -> "hashicorp/terraform-github-actions" ["e"=1]
+"EnricoMi/publish-unit-test-result-action" -> "dorny/test-reporter"
+"EnricoMi/publish-unit-test-result-action" -> "mikepenz/action-junit-report"
+"actions/setup-java" -> "actions/upload-artifact"
+"actions/setup-java" -> "actions/checkout"
+"actions/setup-java" -> "actions/download-artifact"
+"actions/setup-java" -> "actions/cache"
+"actions/setup-java" -> "gradle/wrapper-validation-action" ["e"=1]
+"actions/setup-java" -> "actions/setup-go"
+"actions/setup-java" -> "gradle/gradle-build-action" ["e"=1]
+"actions/setup-java" -> "actions/setup-node"
+"actions/setup-java" -> "actions/setup-dotnet"
+"actions/setup-java" -> "actions/setup-python"
+"actions/setup-java" -> "diffplug/spotless" ["e"=1]
+"actions/setup-java" -> "junit-pioneer/junit-pioneer" ["e"=1]
+"actions/setup-java" -> "eskatos/gradle-command-action" ["e"=1]
+"actions/setup-java" -> "actions/upload-release-asset"
+"actions/setup-java" -> "actions/starter-workflows"
+"dorny/test-reporter" -> "EnricoMi/publish-unit-test-result-action"
+"dorny/test-reporter" -> "mikepenz/action-junit-report"
+"dorny/test-reporter" -> "phoenix-actions/test-reporting"
+"dorny/test-reporter" -> "dorny/paths-filter"
+"dorny/test-reporter" -> "zyborg/dotnet-tests-report"
+"dorny/test-reporter" -> "test-summary/action"
+"dorny/test-reporter" -> "Tyrrrz/GitHubActionsTestLogger" ["e"=1]
+"dorny/test-reporter" -> "ArtiomTr/jest-coverage-report-action"
+"stefanzweifel/git-auto-commit-action" -> "EndBug/add-and-commit"
+"stefanzweifel/git-auto-commit-action" -> "peter-evans/create-pull-request"
+"stefanzweifel/git-auto-commit-action" -> "actions/checkout"
+"stefanzweifel/git-auto-commit-action" -> "ad-m/github-push-action"
+"stefanzweifel/git-auto-commit-action" -> "actions/github-script"
+"stefanzweifel/git-auto-commit-action" -> "softprops/action-gh-release"
+"stefanzweifel/git-auto-commit-action" -> "actions/setup-python"
+"stefanzweifel/git-auto-commit-action" -> "actions/upload-artifact"
+"stefanzweifel/git-auto-commit-action" -> "creyD/prettier_action"
+"stefanzweifel/git-auto-commit-action" -> "codecov/codecov-action"
+"stefanzweifel/git-auto-commit-action" -> "actions/cache"
+"stefanzweifel/git-auto-commit-action" -> "muesli/readme-scribe"
+"stefanzweifel/git-auto-commit-action" -> "peter-evans/repository-dispatch"
+"stefanzweifel/git-auto-commit-action" -> "actions/typescript-action"
+"stefanzweifel/git-auto-commit-action" -> "actions/create-release"
+"jitterbit/get-changed-files" -> "lots0logs/gh-action-get-changed-files"
+"coverallsapp/github-action" -> "nickmerwin/node-coveralls"
+"coverallsapp/github-action" -> "codecov/codecov-action"
+"ncipollo/release-action" -> "softprops/action-gh-release"
+"ncipollo/release-action" -> "mathieudutour/github-tag-action"
+"ncipollo/release-action" -> "marvinpinto/action-automatic-releases"
+"ncipollo/release-action" -> "TheDoctor0/zip-release"
+"ncipollo/release-action" -> "actions/create-release"
+"ncipollo/release-action" -> "actions/upload-artifact"
+"ncipollo/release-action" -> "actions/upload-release-asset"
+"ncipollo/release-action" -> "actions/download-artifact"
+"ncipollo/release-action" -> "subosito/flutter-action" ["e"=1]
+"ncipollo/release-action" -> "r0adkll/upload-google-play" ["e"=1]
+"ncipollo/release-action" -> "actions/setup-python"
+"ncipollo/release-action" -> "google-github-actions/release-please-action"
+"ncipollo/release-action" -> "peter-evans/create-pull-request"
+"ncipollo/release-action" -> "mikepenz/release-changelog-builder-action"
+"ncipollo/release-action" -> "release-drafter/release-drafter"
+"pascalgn/automerge-action" -> "hmarr/auto-approve-action"
+"pascalgn/automerge-action" -> "bobvanderlinden/probot-auto-merge"
+"pascalgn/automerge-action" -> "peter-evans/create-pull-request"
+"pascalgn/automerge-action" -> "palantir/bulldozer"
+"pascalgn/automerge-action" -> "TreTuna/sync-branches"
+"pascalgn/automerge-action" -> "repo-sync/pull-request"
+"pascalgn/automerge-action" -> "actions/labeler"
+"pascalgn/automerge-action" -> "ridedott/merge-me-action"
+"pascalgn/automerge-action" -> "chinthakagodawita/autoupdate"
+"pascalgn/automerge-action" -> "crazy-max/ghaction-github-labeler"
+"pascalgn/automerge-action" -> "TimonVS/pr-labeler-action"
+"pascalgn/automerge-action" -> "devmasx/merge-branch"
+"pascalgn/automerge-action" -> "chdsbd/kodiak"
+"pascalgn/automerge-action" -> "styfle/cancel-workflow-action"
+"amannn/action-semantic-pull-request" -> "zeke/semantic-pull-requests"
+"amannn/action-semantic-pull-request" -> "google-github-actions/release-please-action"
+"amannn/action-semantic-pull-request" -> "cycjimmy/semantic-release-action"
+"amannn/action-semantic-pull-request" -> "wagoid/commitlint-github-action"
+"amannn/action-semantic-pull-request" -> "mikepenz/release-changelog-builder-action"
+"amannn/action-semantic-pull-request" -> "aslafy-z/conventional-pr-title-action"
+"amannn/action-semantic-pull-request" -> "commitizen/conventional-commit-types"
+"amannn/action-semantic-pull-request" -> "lewagon/wait-on-check-action"
+"amannn/action-semantic-pull-request" -> "googleapis/release-please"
+"amannn/action-semantic-pull-request" -> "release-drafter/release-drafter"
+"amannn/action-semantic-pull-request" -> "MorrisonCole/pr-lint-action"
+"amannn/action-semantic-pull-request" -> "Ezard/semantic-prs"
+"dorny/paths-filter" -> "fkirc/skip-duplicate-actions"
+"dorny/paths-filter" -> "MarceloPrado/has-changed-path"
+"dorny/paths-filter" -> "tj-actions/changed-files"
+"dorny/paths-filter" -> "dorny/test-reporter"
+"dorny/paths-filter" -> "rhysd/actionlint"
+"dorny/paths-filter" -> "actions/github-script"
+"dorny/paths-filter" -> "actions-runner-controller/actions-runner-controller"
+"dorny/paths-filter" -> "peter-evans/slash-command-dispatch"
+"dorny/paths-filter" -> "peter-evans/create-pull-request"
+"dorny/paths-filter" -> "peter-evans/repository-dispatch"
+"dorny/paths-filter" -> "philips-labs/terraform-aws-github-runner"
+"dorny/paths-filter" -> "softprops/action-gh-release"
+"dorny/paths-filter" -> "aws-actions/aws-codebuild-run-build"
+"dorny/paths-filter" -> "hashicorp/setup-terraform" ["e"=1]
+"dorny/paths-filter" -> "actions/typescript-action"
+"webfactory/slimdump" -> "webfactory/zauberlehrling"
+"palantir/policy-bot" -> "palantir/bulldozer"
+"palantir/policy-bot" -> "github/safe-settings" ["e"=1]
+"palantir/policy-bot" -> "palantir/go-githubapp"
+"peter-evans/create-or-update-comment" -> "peter-evans/find-comment"
+"peter-evans/create-or-update-comment" -> "peter-evans/slash-command-dispatch"
+"peter-evans/create-or-update-comment" -> "thollander/actions-comment-pull-request"
+"peter-evans/create-or-update-comment" -> "marocchino/sticky-pull-request-comment"
+"peter-evans/create-or-update-comment" -> "peter-evans/repository-dispatch"
+"peter-evans/create-or-update-comment" -> "peter-evans/create-issue-from-file" ["e"=1]
+"docker/metadata-action" -> "docker/login-action"
+"docker/metadata-action" -> "docker/setup-buildx-action"
+"docker/metadata-action" -> "docker/build-push-action"
+"docker/metadata-action" -> "docker/setup-qemu-action"
+"docker/metadata-action" -> "docker/bake-action"
+"rhysd/actionlint" -> "google/yamlfmt" ["e"=1]
+"rhysd/actionlint" -> "secretlint/secretlint" ["e"=1]
+"rhysd/actionlint" -> "minamijoyo/tfmigrate" ["e"=1]
+"rhysd/actionlint" -> "aquaproj/aqua" ["e"=1]
+"rhysd/actionlint" -> "textlint/textlint" ["e"=1]
+"rhysd/actionlint" -> "kayac/ecspresso" ["e"=1]
+"rhysd/actionlint" -> "dorny/paths-filter"
+"rhysd/actionlint" -> "actions/github-script"
+"rhysd/actionlint" -> "suzuki-shunsuke/tfcmt" ["e"=1]
+"rhysd/actionlint" -> "slackapi/slack-github-action"
+"rhysd/actionlint" -> "suzuki-shunsuke/tfaction" ["e"=1]
+"rhysd/actionlint" -> "aws-actions/configure-aws-credentials"
+"rhysd/actionlint" -> "k0kubun/sqldef" ["e"=1]
+"rhysd/actionlint" -> "tj-actions/changed-files"
+"rhysd/actionlint" -> "ymmt2005/grpc-tutorial" ["e"=1]
+"docker/buildx" -> "moby/buildkit" ["e"=1]
+"docker/buildx" -> "docker/setup-buildx-action"
+"docker/buildx" -> "docker/build-push-action"
+"docker/buildx" -> "docker/login-action"
+"docker/buildx" -> "multiarch/qemu-user-static" ["e"=1]
+"docker/buildx" -> "containerd/nerdctl" ["e"=1]
+"docker/buildx" -> "tonistiigi/binfmt" ["e"=1]
+"docker/buildx" -> "docker/cli" ["e"=1]
+"docker/buildx" -> "crazy-max/ghaction-docker-buildx"
+"docker/buildx" -> "falcosecurity/falco" ["e"=1]
+"docker/buildx" -> "opencontainers/image-spec" ["e"=1]
+"docker/buildx" -> "kubernetes-sigs/descheduler" ["e"=1]
+"docker/buildx" -> "GoogleContainerTools/kaniko" ["e"=1]
+"docker/buildx" -> "containers/buildah" ["e"=1]
+"docker/buildx" -> "containers/skopeo" ["e"=1]
+"mikepenz/release-changelog-builder-action" -> "mikepenz/action-junit-report"
+"mikepenz/release-changelog-builder-action" -> "amannn/action-semantic-pull-request"
+"mikepenz/release-changelog-builder-action" -> "softprops/action-gh-release"
+"mikepenz/release-changelog-builder-action" -> "marvinpinto/action-automatic-releases"
+"mikepenz/release-changelog-builder-action" -> "release-drafter/release-drafter"
+"easingthemes/ssh-deploy" -> "appleboy/ssh-action"
+"easingthemes/ssh-deploy" -> "appleboy/scp-action"
+"easingthemes/ssh-deploy" -> "garygrossgarten/github-action-ssh"
+"easingthemes/ssh-deploy" -> "cross-the-world/ssh-scp-ssh-pipelines"
+"easingthemes/ssh-deploy" -> "Burnett01/rsync-deployments"
+"easingthemes/ssh-deploy" -> "actions/checkout"
+"easingthemes/ssh-deploy" -> "wlixcc/SFTP-Deploy-Action"
+"easingthemes/ssh-deploy" -> "shimataro/ssh-key-action"
+"easingthemes/ssh-deploy" -> "SamKirkland/FTP-Deploy-Action"
+"easingthemes/ssh-deploy" -> "contention/rsync-deployments"
+"techniq/odata-query" -> "techniq/react-odata"
+"philips-labs/terraform-aws-github-runner" -> "actions-runner-controller/actions-runner-controller"
+"philips-labs/terraform-aws-github-runner" -> "jonico/awesome-runners"
+"philips-labs/terraform-aws-github-runner" -> "machulav/ec2-github-runner"
+"philips-labs/terraform-aws-github-runner" -> "summerwind/actions-runner-controller"
+"philips-labs/terraform-aws-github-runner" -> "hashicorp/setup-terraform" ["e"=1]
+"philips-labs/terraform-aws-github-runner" -> "myoung34/docker-github-actions-runner"
+"philips-labs/terraform-aws-github-runner" -> "actions/runner"
+"philips-labs/terraform-aws-github-runner" -> "evryfs/github-actions-runner-operator"
+"philips-labs/terraform-aws-github-runner" -> "aws-actions/configure-aws-credentials"
+"philips-labs/terraform-aws-github-runner" -> "antonbabenko/pre-commit-terraform" ["e"=1]
+"philips-labs/terraform-aws-github-runner" -> "aws-ia/terraform-aws-eks-blueprints" ["e"=1]
+"philips-labs/terraform-aws-github-runner" -> "runatlantis/atlantis" ["e"=1]
+"philips-labs/terraform-aws-github-runner" -> "terraform-aws-modules/terraform-aws-atlantis" ["e"=1]
+"philips-labs/terraform-aws-github-runner" -> "terraform-aws-modules/terraform-aws-eks" ["e"=1]
+"philips-labs/terraform-aws-github-runner" -> "minamijoyo/tfmigrate" ["e"=1]
+"actions/first-interaction" -> "actions/stale"
+"actions/first-interaction" -> "actions/download-artifact"
+"actions/first-interaction" -> "actions/setup-dotnet"
+"actions/first-interaction" -> "actions/labeler"
+"actions/first-interaction" -> "actions/setup-java"
+"actions/first-interaction" -> "actions/upload-artifact"
+"actions/first-interaction" -> "actions/cache"
+"actions/first-interaction" -> "getsentry/action-git-diff-suggestions"
+"actions/first-interaction" -> "actions/container-toolkit-action"
+"actions/first-interaction" -> "actions/checkout"
+"OData/WebApi" -> "OData/odata.net"
+"OData/WebApi" -> "OData/RESTier"
+"OData/WebApi" -> "OData/ODataSamples"
+"OData/WebApi" -> "OData/AspNetCoreOData"
+"OData/WebApi" -> "aspnet/Razor" ["e"=1]
+"OData/WebApi" -> "rbeauchamp/Swashbuckle.OData"
+"OData/WebApi" -> "aspnet/EntityFramework6" ["e"=1]
+"OData/WebApi" -> "aspnet/Identity" ["e"=1]
+"OData/WebApi" -> "domaindrivendev/Swashbuckle" ["e"=1]
+"OData/WebApi" -> "Microsoft/aspnet-api-versioning" ["e"=1]
+"OData/WebApi" -> "object/Simple.OData.Client"
+"OData/WebApi" -> "aspnet/DependencyInjection" ["e"=1]
+"OData/WebApi" -> "aspnet/EntityFramework" ["e"=1]
+"OData/WebApi" -> "dotnet/wcf" ["e"=1]
+"OData/WebApi" -> "microsoft/aspnet-api-versioning" ["e"=1]
+"actions/typescript-action" -> "actions/javascript-action"
+"actions/typescript-action" -> "actions/toolkit"
+"actions/typescript-action" -> "actions/github-script"
+"actions/typescript-action" -> "actions/hello-world-javascript-action"
+"actions/typescript-action" -> "actions/labeler"
+"actions/typescript-action" -> "actions/setup-node"
+"actions/typescript-action" -> "actions/cache"
+"actions/typescript-action" -> "actions/upload-artifact"
+"actions/typescript-action" -> "actions/runner"
+"actions/typescript-action" -> "rhysd/actionlint"
+"actions/typescript-action" -> "actions/checkout"
+"actions/typescript-action" -> "peter-evans/repository-dispatch"
+"actions/typescript-action" -> "actions/download-artifact"
+"actions/typescript-action" -> "vercel/ncc" ["e"=1]
+"actions/typescript-action" -> "bobheadxi/deployments"
+"appleboy/telegram-action" -> "xinthink/action-telegram"
+"appleboy/telegram-action" -> "yanzay/notify-telegram"
+"appleboy/telegram-action" -> "r0adkll/upload-google-play" ["e"=1]
+"appleboy/telegram-action" -> "Ilshidur/action-discord"
+"appleboy/telegram-action" -> "appleboy/drone-telegram"
+"appleboy/telegram-action" -> "appleboy/discord-action"
+"actions/setup-dotnet" -> "actions/upload-artifact"
+"actions/setup-dotnet" -> "actions/download-artifact"
+"actions/setup-dotnet" -> "coverlet-coverage/coverlet" ["e"=1]
+"actions/setup-dotnet" -> "actions/setup-node"
+"actions/setup-dotnet" -> "dotnet/format" ["e"=1]
+"actions/setup-dotnet" -> "actions/setup-java"
+"actions/setup-dotnet" -> "actions/checkout"
+"actions/setup-dotnet" -> "brandedoutcast/publish-nuget"
+"actions/setup-dotnet" -> "actions/first-interaction"
+"actions/setup-dotnet" -> "dotnet/command-line-api" ["e"=1]
+"actions/setup-dotnet" -> "microsoft/vs-threading" ["e"=1]
+"actions/setup-dotnet" -> "dotnet-outdated/dotnet-outdated" ["e"=1]
+"actions/setup-dotnet" -> "tonerdo/coverlet" ["e"=1]
+"actions/setup-dotnet" -> "microsoft/setup-msbuild"
+"actions/setup-dotnet" -> "actions/setup-go"
+"actions/github-script" -> "actions/toolkit"
+"actions/github-script" -> "actions/checkout"
+"actions/github-script" -> "actions/upload-artifact"
+"actions/github-script" -> "actions/cache"
+"actions/github-script" -> "actions/runner"
+"actions/github-script" -> "release-drafter/release-drafter"
+"actions/github-script" -> "actions/typescript-action"
+"actions/github-script" -> "actions/setup-node"
+"actions/github-script" -> "actions/download-artifact"
+"actions/github-script" -> "peter-evans/create-pull-request"
+"actions/github-script" -> "actions/labeler"
+"actions/github-script" -> "rhysd/actionlint"
+"actions/github-script" -> "octokit/request-action"
+"actions/github-script" -> "softprops/action-gh-release"
+"actions/github-script" -> "docker/build-push-action"
+"toolmantim/release-drafter" -> "TimonVS/pr-labeler-action"
+"WyriHaximus/github-action-get-previous-tag" -> "WyriHaximus/github-action-next-semvers"
+"anothrNick/github-tag-action" -> "mathieudutour/github-tag-action"
+"anothrNick/github-tag-action" -> "WyriHaximus/github-action-get-previous-tag"
+"anothrNick/github-tag-action" -> "PaulHatch/semantic-version"
+"anothrNick/github-tag-action" -> "actions/create-release"
+"microsoft/OpenAPI.NET.OData" -> "microsoft/Vipr"
+"commitizen/conventional-commit-types" -> "zeke/semantic-pull-requests"
+"OData/ODataSamples" -> "OData/odata.net"
+"OData/ODataSamples" -> "OData/WebApi"
+"OData/ODataSamples" -> "OData/RESTier"
+"OData/ODataSamples" -> "rbeauchamp/Swashbuckle.OData"
+"OData/RESTier" -> "OData/odata.net"
+"OData/RESTier" -> "OData/WebApi"
+"OData/RESTier" -> "OData/ODataSamples"
+"OData/RESTier" -> "OData/lab"
+"OData/RESTier" -> "devnixs/ODataAngularResources"
+"OData/RESTier" -> "rbeauchamp/Swashbuckle.OData"
+"OData/RESTier" -> "OData/odata.github.io"
+"OData/RESTier" -> "TossShinHwa/node-odata"
+"OData/RESTier" -> "OData/model-first"
+"OData/RESTier" -> "object/Simple.OData.Client"
+"OData/odata.net" -> "OData/WebApi"
+"OData/odata.net" -> "OData/RESTier"
+"OData/odata.net" -> "OData/ODataSamples"
+"OData/odata.net" -> "OData/AspNetCoreOData"
+"OData/odata.net" -> "OData/lab"
+"OData/odata.net" -> "object/Simple.OData.Client"
+"OData/odata.net" -> "Microsoft/CodeContracts" ["e"=1]
+"nickmerwin/node-coveralls" -> "coverallsapp/github-action"
+"nickmerwin/node-coveralls" -> "istanbuljs/nyc" ["e"=1]
+"nickmerwin/node-coveralls" -> "StevenLooman/mocha-lcov-reporter"
+"nickmerwin/node-coveralls" -> "gotwarlost/istanbul" ["e"=1]
+"docker/setup-buildx-action" -> "docker/setup-qemu-action"
+"docker/setup-buildx-action" -> "docker/login-action"
+"docker/setup-buildx-action" -> "docker/build-push-action"
+"docker/setup-buildx-action" -> "docker/metadata-action"
+"docker/setup-buildx-action" -> "docker/bake-action"
+"docker/setup-buildx-action" -> "crazy-max/ghaction-docker-buildx"
+"docker/setup-buildx-action" -> "docker/buildx"
+"docker/setup-buildx-action" -> "aws-actions/amazon-ecr-login"
+"actions/hello-world-javascript-action" -> "actions/javascript-action"
+"actions/javascript-action" -> "actions/typescript-action"
+"actions/javascript-action" -> "actions/toolkit"
+"actions/javascript-action" -> "actions/hello-world-javascript-action"
+"actions/javascript-action" -> "actions/setup-node"
+"actions/javascript-action" -> "actions/node-versions"
+"actions/javascript-action" -> "actions/github-script"
+"actions/javascript-action" -> "actions/labeler"
+"actions/javascript-action" -> "actions/download-artifact"
+"actions/javascript-action" -> "actions/reusable-workflows"
+"actions/javascript-action" -> "8BitJonny/gh-get-current-pr"
+"actions/javascript-action" -> "actions/starter-workflows"
+"actions/javascript-action" -> "actions/stale"
+"actions/javascript-action" -> "actions/upload-artifact"
+"actions/javascript-action" -> "actions/runner"
+"benc-uk/workflow-dispatch" -> "peter-evans/repository-dispatch"
+"vercel/nft" -> "vercel/async-sema"
+"cross-the-world/ssh-scp-ssh-pipelines" -> "cross-the-world/scp-pipeline"
+"repo-sync/repo-sync" -> "repo-sync/github-sync"
+"jincod/dotnetcore-buildpack" -> "jincod/AspNetCoreDemoApp"
+"jincod/dotnetcore-buildpack" -> "heroku/dotnet-buildpack"
+"jincod/dotnetcore-buildpack" -> "noliar/dotnet-buildpack"
+"jincod/dotnetcore-buildpack" -> "jamesmh/coravel" ["e"=1]
+"jincod/dotnetcore-buildpack" -> "AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection"
+"jincod/dotnetcore-buildpack" -> "npgsql/npgsql" ["e"=1]
+"jincod/dotnetcore-buildpack" -> "BcryptNet/bcrypt.net" ["e"=1]
+"jincod/dotnetcore-buildpack" -> "actions/setup-dotnet"
+"jincod/dotnetcore-buildpack" -> "spectreconsole/spectre.console" ["e"=1]
+"actions-ecosystem/action-add-labels" -> "actions-ecosystem/action-remove-labels"
+"devmasx/merge-branch" -> "TreTuna/sync-branches"
+"aws-actions/amazon-ecs-deploy-task-definition" -> "aws-actions/amazon-ecs-render-task-definition"
+"aws-actions/amazon-ecs-deploy-task-definition" -> "aws-actions/amazon-ecr-login"
+"aws-actions/amazon-ecs-deploy-task-definition" -> "aws-actions/configure-aws-credentials"
+"aws-actions/amazon-ecs-deploy-task-definition" -> "aws-actions/aws-cloudformation-github-deploy"
+"aws-actions/amazon-ecs-deploy-task-definition" -> "aws-samples/amazon-ecs-firelens-examples" ["e"=1]
+"semantic-release/commit-analyzer" -> "semantic-release/release-notes-generator"
+"semantic-release/commit-analyzer" -> "semantic-release/git"
+"semantic-release/commit-analyzer" -> "semantic-release/changelog"
+"semantic-release/commit-analyzer" -> "semantic-release/exec"
+"semantic-release/commit-analyzer" -> "semantic-release/npm"
+"semantic-release/commit-analyzer" -> "semantic-release/github"
+"semantic-release/npm" -> "semantic-release/git"
+"semantic-release/npm" -> "semantic-release/github"
+"semantic-release/npm" -> "semantic-release/commit-analyzer"
+"semantic-release/npm" -> "semantic-release/exec"
+"semantic-release/npm" -> "semantic-release/changelog"
+"semantic-release/release-notes-generator" -> "semantic-release/changelog"
+"semantic-release/release-notes-generator" -> "semantic-release/commit-analyzer"
+"semantic-release/release-notes-generator" -> "semantic-release/git"
+"semantic-release/release-notes-generator" -> "semantic-release/exec"
+"semantic-release/release-notes-generator" -> "semantic-release/github"
+"aws-actions/aws-cloudformation-github-deploy" -> "aws-actions/amazon-ecs-render-task-definition"
+"actions/dependency-review-action" -> "NickLiffen/ghas-enablement"
+"actions/dependency-review-action" -> "GeekMasher/advanced-security-compliance"
+"actions/dependency-review-action" -> "peter-murray/workflow-application-token-action"
+"actions/dependency-review-action" -> "actions/add-to-project"
+"muesli/readme-scribe" -> "muesli/markscribe"
+"marvinpinto/action-automatic-releases" -> "marvinpinto/actions"
+"marvinpinto/action-automatic-releases" -> "softprops/action-gh-release"
+"marvinpinto/action-automatic-releases" -> "ncipollo/release-action"
+"marvinpinto/action-automatic-releases" -> "elgohr/Github-Release-Action"
+"marvinpinto/action-automatic-releases" -> "mikepenz/release-changelog-builder-action"
+"marvinpinto/action-automatic-releases" -> "actions/create-release"
+"npalm/terraform-aws-gitlab-runner" -> "ng-fullcalendar/ng-fullcalendar"
+"npalm/terraform-aws-gitlab-runner" -> "philips-labs/terraform-aws-github-runner"
+"npalm/terraform-aws-gitlab-runner" -> "cloudposse/terraform-null-label" ["e"=1]
+"palantir/bulldozer" -> "palantir/policy-bot"
+"palantir/bulldozer" -> "bobvanderlinden/probot-auto-merge"
+"palantir/bulldozer" -> "pascalgn/automerge-action"
+"palantir/bulldozer" -> "bors-ng/bors-ng" ["e"=1]
+"palantir/bulldozer" -> "palantir/go-githubapp"
+"palantir/bulldozer" -> "chdsbd/kodiak"
+"peter-evans/find-comment" -> "peter-evans/create-or-update-comment"
+"janhommes/o.js" -> "TossShinHwa/node-odata"
+"janhommes/o.js" -> "techniq/odata-query"
+"janhommes/o.js" -> "odata2ts/odata2ts"
+"EndBug/add-and-commit" -> "stefanzweifel/git-auto-commit-action"
+"EndBug/add-and-commit" -> "peter-evans/create-pull-request"
+"EndBug/add-and-commit" -> "DoozyX/clang-format-lint-action"
+"EndBug/add-and-commit" -> "ad-m/github-push-action"
+"EndBug/add-and-commit" -> "pascalgn/automerge-action"
+"EndBug/add-and-commit" -> "actions/github-script"
+"EndBug/add-and-commit" -> "mikepenz/release-changelog-builder-action"
+"EndBug/add-and-commit" -> "antfu/changelogithub" ["e"=1]
+"EndBug/add-and-commit" -> "peter-evans/create-or-update-comment"
+"EndBug/add-and-commit" -> "rhysd/actionlint"
+"EndBug/add-and-commit" -> "actions/checkout"
+"EndBug/add-and-commit" -> "actions/upload-artifact"
+"EndBug/add-and-commit" -> "actions/labeler"
+"EndBug/add-and-commit" -> "bobheadxi/deployments"
+"EndBug/add-and-commit" -> "unjs/changelogen" ["e"=1]
+"cirrus-actions/rebase" -> "tibdex/autorebase"
+"cirrus-actions/rebase" -> "srt32/revert"
+"cirrus-actions/rebase" -> "hmarr/auto-approve-action"
+"cirrus-actions/rebase" -> "actions/labeler"
+"cirrus-actions/rebase" -> "jessfraz/branch-cleanup-action"
+"cirrus-actions/rebase" -> "JasonEtco/actions-toolkit" ["e"=1]
+"cirrus-actions/rebase" -> "maxheld83/ghpages"
+"aws-actions/amazon-ecs-render-task-definition" -> "aws-actions/amazon-ecs-deploy-task-definition"
+"aws-actions/amazon-ecs-render-task-definition" -> "aws-actions/amazon-ecr-login"
+"aws-actions/amazon-ecs-render-task-definition" -> "aws-actions/amazon-eks-fargate"
+"aws-actions/amazon-ecs-render-task-definition" -> "aws-actions/aws-cloudformation-github-deploy"
+"aws-actions/amazon-ecs-render-task-definition" -> "aws-actions/configure-aws-credentials"
+"docker/login-action" -> "docker/setup-buildx-action"
+"docker/login-action" -> "docker/metadata-action"
+"docker/login-action" -> "docker/build-push-action"
+"docker/login-action" -> "docker/setup-qemu-action"
+"docker/login-action" -> "actions/checkout"
+"docker/login-action" -> "actions/setup-node"
+"docker/login-action" -> "actions/upload-artifact"
+"docker/login-action" -> "docker/buildx"
+"docker/login-action" -> "actions/setup-python"
+"docker/login-action" -> "actions/cache"
+"docker/login-action" -> "google-github-actions/auth" ["e"=1]
+"docker/login-action" -> "actions/download-artifact"
+"docker/login-action" -> "Azure/k8s-deploy"
+"microsoft/setup-msbuild" -> "NuGet/setup-nuget"
+"repo-sync/pull-request" -> "peter-evans/create-pull-request"
+"repo-sync/pull-request" -> "repo-sync/repo-sync"
+"repo-sync/github-sync" -> "wei/git-sync"
+"repo-sync/github-sync" -> "repo-sync/repo-sync"
+"googleapis/repo-automation-bots" -> "googleapis/release-please"
+"googleapis/repo-automation-bots" -> "googleapis/synthtool" ["e"=1]
+"googleapis/repo-automation-bots" -> "googleapis/github-repo-automation"
+"googleapis/repo-automation-bots" -> "google-github-actions/release-please-action"
+"googleapis/repo-automation-bots" -> "googleapis/gapic-generator" ["e"=1]
+"slackapi/slack-github-action" -> "rtCamp/action-slack-notify"
+"slackapi/slack-github-action" -> "8398a7/action-slack"
+"slackapi/slack-github-action" -> "rhysd/actionlint"
+"slackapi/slack-github-action" -> "act10ns/slack"
+"slackapi/slack-github-action" -> "aquaproj/aqua" ["e"=1]
+"slackapi/slack-github-action" -> "suzuki-shunsuke/tfcmt" ["e"=1]
+"slackapi/slack-github-action" -> "voxmedia/github-action-slack-notify-build"
+"slackapi/slack-github-action" -> "google/yamlfmt" ["e"=1]
+"slackapi/slack-github-action" -> "aws-actions/configure-aws-credentials"
+"slackapi/slack-github-action" -> "mercari/tfnotify" ["e"=1]
+"slackapi/slack-github-action" -> "secretlint/secretlint" ["e"=1]
+"machulav/ec2-github-runner" -> "philips-labs/terraform-aws-github-runner"
+"machulav/ec2-github-runner" -> "jonico/awesome-runners"
+"TossShinHwa/node-odata" -> "pofider/node-simple-odata-server"
+"TossShinHwa/node-odata" -> "auth0/node-odata-parser"
+"TossShinHwa/node-odata" -> "janhommes/o.js"
+"TossShinHwa/node-odata" -> "TossShinHwa/CMS"
+"TossShinHwa/node-odata" -> "OData/RESTier"
+"jbogard/MediatR.Extensions.Microsoft.DependencyInjection" -> "AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection"
+"jonico/awesome-runners" -> "SvanBoxel/organization-workflows"
+"jonico/awesome-runners" -> "GeekMasher/advanced-security-compliance"
+"jonico/awesome-runners" -> "peter-murray/inactive-users-action"
+"jonico/awesome-runners" -> "dduzgun-security/github-self-hosted-runners"
+"jonico/awesome-runners" -> "summerwind/actions-runner-controller"
+"jonico/awesome-runners" -> "myoung34/docker-github-actions-runner"
+"jonico/awesome-runners" -> "peter-murray/github-security-report-action"
+"jonico/awesome-runners" -> "evryfs/github-actions-runner-operator"
+"jonico/awesome-runners" -> "peter-murray/workflow-application-token-action"
+"jonico/awesome-runners" -> "philips-labs/terraform-aws-github-runner"
+"jonico/awesome-runners" -> "larsxschneider/scotty" ["e"=1]
+"jonico/awesome-runners" -> "NickLiffen/ghas-enablement"
+"jonico/awesome-runners" -> "actions/actions-sync"
+"jonico/awesome-runners" -> "SvanBoxel/org-audit-action"
+"jonico/awesome-runners" -> "actions-runner-controller/actions-runner-controller"
+"appleboy/scp-action" -> "appleboy/ssh-action"
+"appleboy/scp-action" -> "easingthemes/ssh-deploy"
+"appleboy/scp-action" -> "garygrossgarten/github-action-scp"
+"appleboy/scp-action" -> "Burnett01/rsync-deployments"
+"appleboy/scp-action" -> "garygrossgarten/github-action-ssh"
+"appleboy/scp-action" -> "wlixcc/SFTP-Deploy-Action"
+"appleboy/scp-action" -> "animir/node-rate-limiter-flexible" ["e"=1]
+"appleboy/scp-action" -> "actions/checkout"
+"appleboy/scp-action" -> "actions/upload-artifact"
+"appleboy/scp-action" -> "shimataro/ssh-key-action"
+"appleboy/scp-action" -> "bitnami/bitnami-docker-postgresql" ["e"=1]
+"appleboy/scp-action" -> "actions/setup-node"
+"appleboy/scp-action" -> "cross-the-world/ssh-scp-ssh-pipelines"
+"GeekMasher/advanced-security-compliance" -> "peter-murray/github-security-report-action"
+"GeekMasher/advanced-security-compliance" -> "NickLiffen/ghas-enablement"
+"GeekMasher/advanced-security-compliance" -> "NickLiffen/CodeScanningToSlack"
+"GeekMasher/advanced-security-compliance" -> "NickLiffen/GSSAR"
+"GeekMasher/advanced-security-compliance" -> "peter-murray/inactive-users-action"
+"GeekMasher/advanced-security-compliance" -> "SvanBoxel/org-audit-action"
+"GeekMasher/advanced-security-compliance" -> "peter-murray/workflow-application-token-action"
+"abatilo/actions-poetry" -> "snok/install-poetry"
+"abatilo/actions-poetry" -> "dschep/install-poetry-action"
+"codecov/codecov-python" -> "codecov/example-python"
+"codecov/codecov-python" -> "codecov/codecov-bash"
+"tcardonne/docker-github-runner" -> "myoung34/docker-github-actions-runner"
+"google-github-actions/release-please-action" -> "googleapis/release-please"
+"google-github-actions/release-please-action" -> "amannn/action-semantic-pull-request"
+"google-github-actions/release-please-action" -> "googleapis/repo-automation-bots"
+"google-github-actions/release-please-action" -> "TriPSs/conventional-changelog-action"
+"google-github-actions/release-please-action" -> "release-drafter/release-drafter"
+"google-github-actions/release-please-action" -> "actions/labeler"
+"google-github-actions/release-please-action" -> "codecov/codecov-action"
+"google-github-actions/release-please-action" -> "bcoe/conventional-release-labels"
+"google-github-actions/release-please-action" -> "bridgecrewio/checkov-action" ["e"=1]
+"google-github-actions/release-please-action" -> "ncipollo/release-action"
+"google-github-actions/release-please-action" -> "google/secrets-sync-action"
+"google-github-actions/release-please-action" -> "hashicorp/setup-terraform" ["e"=1]
+"google-github-actions/release-please-action" -> "wagoid/commitlint-github-action"
+"google-github-actions/release-please-action" -> "softprops/action-gh-release"
+"google-github-actions/release-please-action" -> "google-github-actions/setup-gcloud" ["e"=1]
+"dawidd6/action-download-artifact" -> "actions/download-artifact"
+"dawidd6/action-download-artifact" -> "peter-evans/create-or-update-comment"
+"dawidd6/action-download-artifact" -> "actions/upload-artifact"
+"dawidd6/action-download-artifact" -> "peter-evans/find-comment"
+"dependabot/dependabot-script" -> "dependabot/dependabot-core"
+"dependabot/dependabot-script" -> "dependabot/demo"
+"dependabot/dependabot-script" -> "tinglesoftware/dependabot-azure-devops"
+"dependabot/dependabot-script" -> "wemake-services/kira-dependencies"
+"dependabot/dependabot-script" -> "acraven/azure-dependabot"
+"brandedoutcast/publish-nuget" -> "alirezanet/publish-nuget"
+"AutoMapper/AutoMapper.Collection" -> "AutoMapper/AutoMapper.Collection.EFCore"
+"AutoMapper/AutoMapper.Collection" -> "AutoMapper/AutoMapper.EF6"
+"AutoMapper/AutoMapper.Collection" -> "AutoMapper/AutoMapper.Extensions.ExpressionMapping"
+"AutoMapper/AutoMapper.Collection" -> "AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection"
+"AutoMapper/AutoMapper.Collection" -> "AutoMapper/AutoMapper.Extensions.OData"
+"AutoMapper/AutoMapper.Collection" -> "AutoMapper/AutoMapper.Data"
+"8398a7/action-slack" -> "rtCamp/action-slack-notify"
+"8398a7/action-slack" -> "slackapi/slack-github-action"
+"8398a7/action-slack" -> "voxmedia/github-action-slack-notify-build"
+"8398a7/action-slack" -> "mercari/tfnotify" ["e"=1]
+"8398a7/action-slack" -> "act10ns/slack"
+"8398a7/action-slack" -> "homoluctus/slatify"
+"8398a7/action-slack" -> "styfle/cancel-workflow-action"
+"8398a7/action-slack" -> "technote-space/workflow-conclusion-action"
+"8398a7/action-slack" -> "Ilshidur/action-slack"
+"8398a7/action-slack" -> "abinoda/slack-action"
+"8398a7/action-slack" -> "actions/cache"
+"8398a7/action-slack" -> "kayac/ecspresso" ["e"=1]
+"8398a7/action-slack" -> "fujiwara/lambroll" ["e"=1]
+"8398a7/action-slack" -> "suzuki-shunsuke/tfcmt" ["e"=1]
+"8398a7/action-slack" -> "octokit/request-action"
+"semantic-release/gitlab" -> "semantic-release/git"
+"semantic-release/gitlab" -> "semantic-release/changelog"
+"semantic-release/gitlab" -> "semantic-release/gitlab-config"
+"semantic-release/gitlab" -> "semantic-release/exec"
+"ArtiomTr/jest-coverage-report-action" -> "mattallty/jest-github-action"
+"ArtiomTr/jest-coverage-report-action" -> "dorny/test-reporter"
+"AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection" -> "AutoMapper/AutoMapper.Collection"
+"AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection" -> "jbogard/MediatR.Extensions.Microsoft.DependencyInjection"
+"AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection" -> "serilog/serilog-extensions-logging" ["e"=1]
+"summerwind/actions-runner-controller" -> "evryfs/github-actions-runner-operator"
+"summerwind/actions-runner-controller" -> "jonico/awesome-runners"
+"summerwind/actions-runner-controller" -> "philips-labs/terraform-aws-github-runner"
+"summerwind/actions-runner-controller" -> "minamijoyo/tfmigrate" ["e"=1]
+"summerwind/actions-runner-controller" -> "urcomputeringpal/actions-runner-kubernetes"
+"summerwind/actions-runner-controller" -> "myoung34/docker-github-actions-runner"
+"summerwind/actions-runner-controller" -> "argoproj/gitops-engine" ["e"=1]
+"summerwind/actions-runner-controller" -> "SanderKnape/github-runner"
+"summerwind/actions-runner-controller" -> "godaddy/kubernetes-external-secrets" ["e"=1]
+"summerwind/actions-runner-controller" -> "helm/chart-releaser" ["e"=1]
+"summerwind/actions-runner-controller" -> "weaveworks/kured" ["e"=1]
+"summerwind/actions-runner-controller" -> "helaili/enterprise-showcase"
+"summerwind/actions-runner-controller" -> "aws/aws-node-termination-handler" ["e"=1]
+"summerwind/actions-runner-controller" -> "SvanBoxel/organization-workflows"
+"summerwind/actions-runner-controller" -> "GeekMasher/advanced-security-compliance"
+"integrations/microsoft-teams" -> "integrations/jira"
+"codecov/example-python" -> "codecov/codecov-python"
+"Ilshidur/action-discord" -> "appleboy/discord-action"
+"Ilshidur/action-discord" -> "sarisia/actions-status-discord"
+"bobheadxi/deployments" -> "chrnorm/deployment-action"
+"hmarr/auto-approve-action" -> "pascalgn/automerge-action"
+"actions/add-to-project" -> "actions/dependency-review-action"
+"actions/add-to-project" -> "actions/stale"
+"peter-murray/inactive-users-action" -> "peter-murray/github-security-report-action"
+"OData/AspNetCoreOData" -> "OData/odata.net"
+"OData/AspNetCoreOData" -> "OData/OData.Neo"
+"OData/AspNetCoreOData" -> "AutoMapper/AutoMapper.Extensions.OData"
+"OData/AspNetCoreOData" -> "microsoft/OpenAPI.NET.OData"
+"OData/AspNetCoreOData" -> "OData/WebApi"
+"OData/AspNetCoreOData" -> "OData/ODataConnectedService"
+"OData/AspNetCoreOData" -> "OData/ODataSamples"
+"OData/AspNetCoreOData" -> "hassanhabib/OData.NxT"
+"AutoMapper/AutoMapper.Extensions.ExpressionMapping" -> "AutoMapper/AutoMapper.Extensions.OData"
+"rtCamp/action-phpcs-code-review" -> "chekalsky/phpcs-action"
+"Azure/k8s-deploy" -> "Azure/k8s-set-context"
+"Azure/k8s-deploy" -> "Azure/k8s-create-secret"
+"Azure/k8s-deploy" -> "Azure/aks-set-context"
+"mathieudutour/github-tag-action" -> "anothrNick/github-tag-action"
+"mathieudutour/github-tag-action" -> "ncipollo/release-action"
+"mathieudutour/github-tag-action" -> "PaulHatch/semantic-version"
+"mathieudutour/github-tag-action" -> "whoan/docker-build-with-cache-action"
+"octokit/request-action" -> "octokit/action.js" ["e"=1]
+"octokit/request-action" -> "octokit/graphql-action"
+"octokit/request-action" -> "octokit/auth-action.js" ["e"=1]
+"octokit/request-action" -> "actions-ecosystem/action-get-merged-pull-request"
+"semantic-release/git" -> "semantic-release/changelog"
+"semantic-release/git" -> "semantic-release/commit-analyzer"
+"semantic-release/git" -> "semantic-release/npm"
+"semantic-release/git" -> "semantic-release/exec"
+"semantic-release/git" -> "semantic-release/release-notes-generator"
+"semantic-release/git" -> "semantic-release/github"
+"semantic-release/git" -> "semantic-release/gitlab"
+"semantic-release/git" -> "google/semantic-release-replace-plugin"
+"chetan/invalidate-cloudfront-action" -> "jakejarvis/s3-sync-action"
+"OData/lab" -> "OData/model-first"
+"devnixs/ODataAngularResources" -> "gallayl/angular2-odata"
+"SvanBoxel/organization-workflows" -> "peter-murray/inactive-users-action"
+"SvanBoxel/organization-workflows" -> "peter-murray/github-security-report-action"
+"SvanBoxel/organization-workflows" -> "SvanBoxel/org-audit-action"
+"SvanBoxel/organization-workflows" -> "NickLiffen/CodeScanningToSlack"
+"docker/setup-qemu-action" -> "docker/setup-buildx-action"
+"docker/setup-qemu-action" -> "docker/login-action"
+"docker/setup-qemu-action" -> "docker/bake-action"
+"codecov/codecov-bash" -> "codecov/codecov-python"
+"crazy-max/ghaction-docker-buildx" -> "docker/setup-buildx-action"
+"AutoMapper/AutoMapper.Extensions.OData" -> "AutoMapper/AutoMapper.Extensions.ExpressionMapping"
+"marvinpinto/actions" -> "marvinpinto/action-automatic-releases"
+"micnncim/action-label-syncer" -> "lannonbr/issue-label-manager-action"
+"peter-murray/workflow-application-token-action" -> "SvanBoxel/org-audit-action"
+"garygrossgarten/github-action-scp" -> "garygrossgarten/github-action-ssh"
+"AutoMapper/AutoMapper.EF6" -> "AutoMapper/AutoMapper.Extensions.ExpressionMapping"
+"AutoMapper/AutoMapper.EF6" -> "AutoMapper/AutoMapper.Collection"
+"AutoMapper/AutoMapper.EF6" -> "AutoMapper/AutoMapper.Data"
+"AutoMapper/AutoMapper.EF6" -> "AutoMapper/AutoMapper.Collection.EFCore"
+"AutoMapper/AutoMapper.Collection.EFCore" -> "AutoMapper/AutoMapper.Collection"
+"AutoMapper/AutoMapper.Collection.EFCore" -> "AutoMapper/AutoMapper.Extensions.ExpressionMapping"
+"mikepenz/action-junit-report" -> "dorny/test-reporter"
+"steebchen/kubectl" -> "actions-hub/kubectl"
+"whoan/docker-build-with-cache-action" -> "satackey/action-docker-layer-caching"
+"chekalsky/phpcs-action" -> "rtCamp/action-phpcs-code-review"
+"muesli/markscribe" -> "muesli/readme-scribe"
+"semantic-release/changelog" -> "semantic-release/git"
+"semantic-release/changelog" -> "semantic-release/release-notes-generator"
+"semantic-release/changelog" -> "semantic-release/commit-analyzer"
+"semantic-release/changelog" -> "semantic-release/exec"
+"semantic-release/changelog" -> "semantic-release/gitlab"
+"semantic-release/changelog" -> "semantic-release/npm"
+"semantic-release/changelog" -> "semantic-release/github"
+"satackey/action-docker-layer-caching" -> "whoan/docker-build-with-cache-action"
+"satackey/action-docker-layer-caching" -> "jpribyl/action-docker-layer-caching"
+"codfish/semantic-release-action" -> "aj-may/dotdocker"
+"tibdex/github-app-token" -> "peter-murray/workflow-application-token-action"
+"tibdex/github-app-token" -> "getsentry/action-github-app-token"
+"tibdex/github-app-token" -> "peter-evans/slash-command-dispatch"
+"tibdex/github-app-token" -> "seachicken/gh-poi" ["e"=1]
+"heroku/dotnet-buildpack" -> "noliar/dotnet-buildpack"
+"palantir/go-githubapp" -> "palantir/go-baseapp"
+"palantir/go-githubapp" -> "bradleyfalzon/ghinstallation" ["e"=1]
+"semantic-release/github" -> "semantic-release/npm"
+"semantic-release/github" -> "semantic-release/git"
+"semantic-release/github" -> "semantic-release/commit-analyzer"
+"semantic-release/github" -> "semantic-release/exec"
+"semantic-release/github" -> "semantic-release/changelog"
+"semantic-release/github" -> "semantic-release/release-notes-generator"
+"semantic-release/exec" -> "semantic-release/git"
+"semantic-release/exec" -> "semantic-release/changelog"
+"semantic-release/exec" -> "google/semantic-release-replace-plugin"
+"semantic-release/exec" -> "semantic-release/commit-analyzer"
+"semantic-release/exec" -> "semantic-release/release-notes-generator"
+"lannonbr/issue-label-manager-action" -> "micnncim/action-label-syncer"
+"helaili/enterprise-showcase" -> "helaili/ea-repo-list"
+"gallayl/angular2-odata" -> "StefH/angular-odata-es5"
+"gallayl/angular2-odata" -> "FuryTechs/FuryTech.OdataTypescriptServiceGenerator"
+"StefH/angular-odata-es5" -> "gallayl/angular2-odata"
+"peter-murray/github-security-report-action" -> "peter-murray/inactive-users-action"
+"peter-murray/github-security-report-action" -> "GeekMasher/advanced-security-compliance"
+"peter-murray/github-security-report-action" -> "NickLiffen/CodeScanningToSlack"
+"chrnorm/deployment-action" -> "chrnorm/deployment-status"
+"google/semantic-release-replace-plugin" -> "semantic-release/exec"
+"chrnorm/deployment-status" -> "chrnorm/deployment-action"
+"actions/stale" ["l"="-6.773,-1.612"]
+"actions/labeler" ["l"="-6.751,-1.597"]
+"actions/first-interaction" ["l"="-6.813,-1.609"]
+"actions/add-to-project" ["l"="-6.716,-1.684"]
+"actions/download-artifact" ["l"="-6.803,-1.551"]
+"probot/stale" ["l"="26.07,-28.492"]
+"actions/github-script" ["l"="-6.745,-1.554"]
+"actions/javascript-action" ["l"="-6.769,-1.581"]
+"actions/upload-artifact" ["l"="-6.798,-1.533"]
+"peter-evans/create-or-update-comment" ["l"="-6.745,-1.662"]
+"actions/cache" ["l"="-6.755,-1.509"]
+"actions/toolkit" ["l"="-6.738,-1.529"]
+"actions/dependency-review-action" ["l"="-6.667,-1.729"]
+"actions/checkout" ["l"="-6.782,-1.547"]
+"actions/setup-dotnet" ["l"="-6.862,-1.574"]
+"peter-evans/create-pull-request" ["l"="-6.746,-1.578"]
+"docker/build-push-action" ["l"="-6.791,-1.47"]
+"docker/login-action" ["l"="-6.806,-1.455"]
+"docker/setup-buildx-action" ["l"="-6.79,-1.408"]
+"docker/metadata-action" ["l"="-6.815,-1.42"]
+"docker/buildx" ["l"="-6.797,-1.372"]
+"docker/setup-qemu-action" ["l"="-6.817,-1.402"]
+"actions/setup-node" ["l"="-6.774,-1.522"]
+"aws-actions/configure-aws-credentials" ["l"="-6.694,-1.463"]
+"elgohr/Publish-Docker-Github-Action" ["l"="-6.865,-1.423"]
+"appleboy/ssh-action" ["l"="-6.878,-1.596"]
+"softprops/action-gh-release" ["l"="-6.84,-1.531"]
+"aws-actions/amazon-ecr-login" ["l"="-6.71,-1.407"]
+"peaceiris/actions-gh-pages" ["l"="-6.836,-1.569"]
+"peaceiris/actions-hugo" ["l"="-37.77,-14.911"]
+"JamesIves/github-pages-deploy-action" ["l"="-6.807,-1.581"]
+"release-drafter/release-drafter" ["l"="-6.864,-1.549"]
+"utterance/utterances" ["l"="29.547,-26.998"]
+"alex-shpak/hugo-book" ["l"="-37.795,-14.858"]
+"giscus/giscus" ["l"="29.551,-27.056"]
+"nektos/act" ["l"="-10.177,-0.156"]
+"codecov/codecov-action" ["l"="-6.837,-1.467"]
+"sdras/awesome-actions" ["l"="28.123,-19.742"]
+"johnsoncodehk/volar" ["l"="14.76,-12.186"]
+"lowlighter/metrics" ["l"="24.333,-21.964"]
+"actions/create-release" ["l"="-6.817,-1.506"]
+"ncipollo/release-action" ["l"="-6.881,-1.511"]
+"marvinpinto/action-automatic-releases" ["l"="-6.905,-1.506"]
+"actions/upload-release-asset" ["l"="-6.858,-1.499"]
+"actions/setup-python" ["l"="-6.822,-1.485"]
+"mikepenz/release-changelog-builder-action" ["l"="-6.893,-1.565"]
+"stefanzweifel/git-auto-commit-action" ["l"="-6.789,-1.507"]
+"actions-runner-controller/actions-runner-controller" ["l"="-6.642,-1.661"]
+"evryfs/github-actions-runner-operator" ["l"="-6.627,-1.69"]
+"philips-labs/terraform-aws-github-runner" ["l"="-6.629,-1.625"]
+"aws/karpenter" ["l"="-10.613,0.384"]
+"argoproj/argo-helm" ["l"="-10.426,0.277"]
+"external-secrets/external-secrets" ["l"="-10.51,0.341"]
+"kubernetes-sigs/external-dns" ["l"="-10.605,0.254"]
+"stakater/Reloader" ["l"="-10.571,0.293"]
+"myoung34/docker-github-actions-runner" ["l"="-6.615,-1.657"]
+"actions/runner" ["l"="-6.7,-1.559"]
+"kyverno/kyverno" ["l"="-10.551,0.329"]
+"jonico/awesome-runners" ["l"="-6.597,-1.698"]
+"rikatz/kubepug" ["l"="-10.553,0.49"]
+"crossplane/crossplane" ["l"="-10.56,0.209"]
+"yannh/kubeconform" ["l"="-10.509,0.435"]
+"bitnami-labs/sealed-secrets" ["l"="-10.577,0.232"]
+"summerwind/actions-runner-controller" ["l"="-6.616,-1.709"]
+"evryfs/github-actions-runner" ["l"="-6.616,-1.733"]
+"SanderKnape/github-runner" ["l"="-6.587,-1.713"]
+"tcardonne/docker-github-runner" ["l"="-6.559,-1.694"]
+"machulav/ec2-github-runner" ["l"="-6.584,-1.669"]
+"Spendesk/github-actions-exporter" ["l"="-6.572,-1.633"]
+"actions/actions-runner-controller" ["l"="-6.605,-1.601"]
+"MonolithProjects/ansible-github_actions_runner" ["l"="-6.537,-1.68"]
+"peter-evans/repository-dispatch" ["l"="-6.719,-1.654"]
+"cloudskiff/driftctl" ["l"="-8.683,-1.151"]
+"TimonVS/pr-labeler-action" ["l"="-6.639,-1.459"]
+"google-github-actions/release-please-action" ["l"="-6.916,-1.567"]
+"micnncim/action-label-syncer" ["l"="-6.997,-1.497"]
+"probot/probot" ["l"="26.301,-26.366"]
+"github-tools/github-release-notes" ["l"="-6.941,-1.531"]
+"googleapis/release-please" ["l"="-6.967,-1.573"]
+"zeke/semantic-pull-requests" ["l"="-6.926,-1.632"]
+"amannn/action-semantic-pull-request" ["l"="-6.967,-1.608"]
+"commitizen/conventional-commit-types" ["l"="-6.984,-1.645"]
+"semantic-release/commit-analyzer" ["l"="-7.046,-1.744"]
+"semantic-release/github" ["l"="-7.034,-1.756"]
+"cycjimmy/semantic-release-action" ["l"="-7.019,-1.668"]
+"octokit/webhooks.js" ["l"="-6.011,-2.562"]
+"semantic-release/semantic-release" ["l"="26.459,-26.452"]
+"wip/app" ["l"="-5.97,-2.678"]
+"peter-evans/slash-command-dispatch" ["l"="-6.739,-1.685"]
+"Ezard/semantic-prs" ["l"="-6.964,-1.634"]
+"actions/starter-workflows" ["l"="-6.735,-1.472"]
+"actions/virtual-environments" ["l"="-6.69,-1.494"]
+"cli/cli" ["l"="-11.468,-18.237"]
+"github/super-linter" ["l"="-10.18,-0.006"]
+"github/docs" ["l"="-5.781,-2.857"]
+"github/opensource.guide" ["l"="-5.807,-2.814"]
+"github/roadmap" ["l"="-5.811,-2.771"]
+"microsoft/azure-pipelines-tasks" ["l"="-12.834,-44.701"]
+"Azure/bicep" ["l"="-12.744,-44.652"]
+"microsoft/azure-pipelines-agent" ["l"="-12.867,-44.684"]
+"tibdex/github-app-token" ["l"="-6.702,-1.769"]
+"peter-evans/commit-comment" ["l"="-6.745,-1.755"]
+"peter-evans/find-comment" ["l"="-6.761,-1.68"]
+"chrnorm/deployment-action" ["l"="-6.67,-1.702"]
+"benc-uk/workflow-dispatch" ["l"="-6.68,-1.636"]
+"actions/runner-images" ["l"="-6.703,-1.527"]
+"actions/typescript-action" ["l"="-6.724,-1.587"]
+"github-changelog-generator/github-changelog-generator" ["l"="26.014,-28.5"]
+"nytimes/Chronicler" ["l"="15.382,-30.576"]
+"appleboy/scp-action" ["l"="-6.869,-1.637"]
+"easingthemes/ssh-deploy" ["l"="-6.881,-1.662"]
+"SamKirkland/FTP-Deploy-Action" ["l"="-6.908,-1.672"]
+"shimataro/ssh-key-action" ["l"="-6.85,-1.692"]
+"shivammathur/setup-php" ["l"="-24.744,-42.954"]
+"appleboy/telegram-action" ["l"="-7.112,-1.641"]
+"Burnett01/rsync-deployments" ["l"="-6.901,-1.633"]
+"remarkjs/react-markdown" ["l"="21.024,-33.219"]
+"garygrossgarten/github-action-ssh" ["l"="-6.928,-1.657"]
+"YannickRe/azuredevops-buildagents" ["l"="-6.651,-1.494"]
+"vmware-tanzu/kubeapps" ["l"="-10.449,0.208"]
+"apache/incubator-streampark" ["l"="11.537,23.649"]
+"devcontainers/features" ["l"="21.737,-31.807"]
+"git-ftp/git-ftp" ["l"="10.035,-36.871"]
+"sebastianpopp/ftp-action" ["l"="-6.953,-1.739"]
+"SamKirkland/web-deploy" ["l"="-6.937,-1.724"]
+"wlixcc/SFTP-Deploy-Action" ["l"="-6.91,-1.7"]
+"SamKirkland/ftp-deploy" ["l"="-6.948,-1.707"]
+"postlight/headless-wp-starter" ["l"="9.936,-36.624"]
+"wp-graphql/wp-graphql" ["l"="9.972,-36.59"]
+"locomotivemtl/locomotive-scroll" ["l"="13.11,-34.053"]
+"YahnisElsts/plugin-update-checker" ["l"="9.787,-36.722"]
+"vercel/ncc" ["l"="26.455,-26.106"]
+"dependabot/dependabot-core" ["l"="-6.751,-1.4"]
+"dependabot/dependabot-script" ["l"="-6.749,-1.28"]
+"renovatebot/renovate" ["l"="-10.318,-0.001"]
+"dependabot/feedback" ["l"="-6.757,-1.332"]
+"sorbet/sorbet" ["l"="8.38,-30.894"]
+"npm/cli" ["l"="26.578,-26.605"]
+"github/codeql" ["l"="-10.847,-45.752"]
+"jeremylong/DependencyCheck" ["l"="-10.95,-45.696"]
+"weaveworks/tf-controller" ["l"="-10.444,0.434"]
+"aws-samples/hardeneks" ["l"="-10.667,0.594"]
+"opencost/opencost" ["l"="-10.488,0.403"]
+"github/safe-settings" ["l"="26.135,-28.369"]
+"actions/setup-java" ["l"="-6.819,-1.529"]
+"dawidd6/action-download-artifact" ["l"="-6.781,-1.636"]
+"actions/setup-go" ["l"="-6.837,-1.502"]
+"convictional/trigger-workflow-and-wait" ["l"="-6.716,-1.743"]
+"actions-ecosystem/action-regex-match" ["l"="-6.779,-1.711"]
+"google/secrets-sync-action" ["l"="-6.822,-1.711"]
+"dorny/paths-filter" ["l"="-6.703,-1.637"]
+"octokit/request-action" ["l"="-6.628,-1.593"]
+"rtCamp/action-slack-notify" ["l"="-6.625,-1.486"]
+"8398a7/action-slack" ["l"="-6.599,-1.503"]
+"slackapi/slack-github-action" ["l"="-6.62,-1.519"]
+"rtCamp/github-actions-library" ["l"="-6.591,-1.427"]
+"voxmedia/github-action-slack-notify-build" ["l"="-6.568,-1.495"]
+"Ilshidur/action-slack" ["l"="-6.567,-1.45"]
+"act10ns/slack" ["l"="-6.589,-1.476"]
+"rtCamp/action-phpcs-code-review" ["l"="-6.548,-1.419"]
+"abinoda/slack-action" ["l"="-6.564,-1.471"]
+"aws-actions/amazon-ecs-deploy-task-definition" ["l"="-6.66,-1.415"]
+"technote-space/workflow-conclusion-action" ["l"="-6.591,-1.454"]
+"hashicorp/setup-terraform" ["l"="-8.591,-0.945"]
+"pypa/gh-action-pypi-publish" ["l"="23.284,3.588"]
+"pytest-dev/pytest-cov" ["l"="23.025,3.753"]
+"snok/install-poetry" ["l"="-6.889,-1.422"]
+"PyCQA/flake8" ["l"="23.105,3.786"]
+"PyCQA/isort" ["l"="23.149,3.798"]
+"actions/python-versions" ["l"="-6.892,-1.448"]
+"pre-commit/action" ["l"="23.344,3.498"]
+"abatilo/actions-poetry" ["l"="-6.908,-1.399"]
+"aws-actions/amazon-ecs-render-task-definition" ["l"="-6.683,-1.399"]
+"aws-actions/aws-cloudformation-github-deploy" ["l"="-6.67,-1.383"]
+"kciter/aws-ecr-action" ["l"="-6.686,-1.335"]
+"aws-actions/aws-codebuild-run-build" ["l"="-6.662,-1.471"]
+"aws-actions/amazon-eks-fargate" ["l"="-6.694,-1.367"]
+"kubernetes-sigs/aws-load-balancer-controller" ["l"="-10.794,0.513"]
+"wei/git-sync" ["l"="-6.379,-1.487"]
+"repo-sync/github-sync" ["l"="-6.403,-1.497"]
+"wei/github-sync" ["l"="-6.355,-1.479"]
+"repo-sync/repo-sync" ["l"="-6.444,-1.51"]
+"probot/settings" ["l"="26.09,-28.501"]
+"octokit/action.js" ["l"="-6.009,-2.598"]
+"actions-ecosystem/action-add-labels" ["l"="-6.857,-1.785"]
+"NickLiffen/ghas-enablement" ["l"="-6.573,-1.783"]
+"jhutchings1/Create-ActionsPRs" ["l"="-6.533,-1.805"]
+"GeekMasher/advanced-security-compliance" ["l"="-6.595,-1.756"]
+"NickLiffen/CodeScanningToSlack" ["l"="-6.567,-1.767"]
+"github/ghas-jira-integration" ["l"="-6.541,-1.822"]
+"peter-murray/github-security-report-action" ["l"="-6.573,-1.756"]
+"advanced-security/filter-sarif" ["l"="-6.556,-1.804"]
+"some-natalie/ghas-to-csv" ["l"="-6.567,-1.812"]
+"NickLiffen/GSSAR" ["l"="-6.584,-1.795"]
+"advanced-security/advanced-security-material" ["l"="-6.56,-1.83"]
+"kllund/sample-pipeline-files" ["l"="-6.544,-1.795"]
+"ad-m/github-push-action" ["l"="-6.773,-1.486"]
+"codfish/semantic-release-action" ["l"="-7.074,-1.688"]
+"semantic-release/release-notes-generator" ["l"="-7.066,-1.744"]
+"chdsbd/kodiak" ["l"="-6.481,-1.594"]
+"palantir/bulldozer" ["l"="-6.449,-1.583"]
+"pascalgn/automerge-action" ["l"="-6.577,-1.577"]
+"hashicorp/nextjs-bundle-analysis" ["l"="-10.651,-23.835"]
+"mxschmitt/action-tmate" ["l"="-6.659,-1.562"]
+"csexton/debugger-action" ["l"="-6.539,-1.515"]
+"lhotari/action-upterm" ["l"="-6.572,-1.534"]
+"tmate-io/tmate" ["l"="-11.417,-17.987"]
+"rhysd/actionlint" ["l"="-6.676,-1.582"]
+"styfle/cancel-workflow-action" ["l"="-6.629,-1.567"]
+"integrations/slack" ["l"="-6.652,-1.533"]
+"slackapi/node-slack-sdk" ["l"="23.647,1.885"]
+"danger/danger" ["l"="-49.201,2.227"]
+"awslabs/git-secrets" ["l"="-9.268,-46.333"]
+"mercari/production-readiness-checklist" ["l"="-10.794,-23.618"]
+"integrations/jira" ["l"="-6.505,-1.617"]
+"golangci/golangci-lint-action" ["l"="-13.445,1.504"]
+"goreleaser/goreleaser-action" ["l"="-13.572,1.574"]
+"mvdan/github-actions-golang" ["l"="-13.501,1.591"]
+"actions/go-versions" ["l"="-6.886,-1.471"]
+"conventional-changelog/standard-version" ["l"="26.427,-26.513"]
+"googleapis/repo-automation-bots" ["l"="-6.993,-1.55"]
+"changesets/changesets" ["l"="29.243,-27.075"]
+"conventional-changelog/conventional-changelog" ["l"="26.461,-26.519"]
+"absolute-version/commit-and-tag-version" ["l"="-7.042,-1.567"]
+"egoist/tsup" ["l"="29.224,-27.125"]
+"conventional-changelog/commitlint" ["l"="26.44,-26.376"]
+"release-it/release-it" ["l"="26.394,-26.294"]
+"conventional-commits/conventionalcommits.org" ["l"="26.503,-26.479"]
+"unjs/unbuild" ["l"="14.626,-12.008"]
+"terraform-linters/tflint" ["l"="-8.613,-1.085"]
+"jakejarvis/s3-sync-action" ["l"="-6.687,-1.427"]
+"projen/projen" ["l"="-9.038,-2.807"]
+"cirrus-actions/rebase" ["l"="-6.659,-1.76"]
+"fkirc/skip-duplicate-actions" ["l"="-6.67,-1.66"]
+"repo-sync/pull-request" ["l"="-6.605,-1.558"]
+"EndBug/add-and-commit" ["l"="-6.727,-1.566"]
+"peter-evans/enable-pull-request-automerge" ["l"="-6.68,-1.539"]
+"coverallsapp/github-action" ["l"="-6.88,-1.344"]
+"codecov/example-python" ["l"="-6.939,-1.324"]
+"subosito/flutter-action" ["l"="-33.604,22.809"]
+"python-poetry/poetry-core" ["l"="23.17,3.507"]
+"Gr1N/setup-poetry" ["l"="-6.918,-1.368"]
+"HurricanKai/Publish-Docker-Github-Action" ["l"="-6.874,-1.376"]
+"peter-evans/dockerhub-description" ["l"="-6.848,-1.396"]
+"steebchen/kubectl" ["l"="-6.87,-1.309"]
+"pangzineng/Github-Action-One-Click-Docker" ["l"="-6.892,-1.379"]
+"anothrNick/github-tag-action" ["l"="-6.953,-1.399"]
+"svenstaro/upload-release-action" ["l"="-6.953,-1.443"]
+"JasonEtco/upload-to-release" ["l"="-6.924,-1.452"]
+"gradle/wrapper-validation-action" ["l"="48.461,-3.293"]
+"P3TERX/debugger-action" ["l"="-6.49,-1.499"]
+"orange2008/debugger-action" ["l"="-6.513,-1.502"]
+"garygrossgarten/github-action-scp" ["l"="-6.939,-1.681"]
+"webfactory/ssh-agent" ["l"="-6.751,-1.721"]
+"webfactory/slimdump" ["l"="-6.799,-1.795"]
+"xu-cheng/latex-action" ["l"="7.535,9.359"]
+"bobheadxi/deployments" ["l"="-6.663,-1.624"]
+"rokroskar/workflow-run-cleanup-action" ["l"="-6.559,-1.555"]
+"vercel/nft" ["l"="-6.481,-1.463"]
+"tj-actions/changed-files" ["l"="-6.684,-1.606"]
+"tj-actions/verify-changed-files" ["l"="-6.6,-1.626"]
+"marocchino/sticky-pull-request-comment" ["l"="-6.692,-1.686"]
+"terraform-google-modules/terraform-google-github-actions-runners" ["l"="-7.679,-0.942"]
+"jitterbit/get-changed-files" ["l"="-6.543,-1.638"]
+"chetan/invalidate-cloudfront-action" ["l"="-6.646,-1.391"]
+"Reggionick/s3-deploy" ["l"="-6.654,-1.348"]
+"shallwefootball/upload-s3-action" ["l"="-6.628,-1.369"]
+"einaregilsson/beanstalk-deploy" ["l"="-9.374,-1.273"]
+"appleboy/lambda-action" ["l"="-6.624,-1.332"]
+"serverless/github-action" ["l"="-9.348,-3.129"]
+"hashicorp/terraform-github-actions" ["l"="-8.666,-0.949"]
+"EnricoMi/publish-unit-test-result-action" ["l"="-6.797,-1.824"]
+"dorny/test-reporter" ["l"="-6.765,-1.797"]
+"mikepenz/action-junit-report" ["l"="-6.815,-1.756"]
+"gradle/gradle-build-action" ["l"="48.371,-3.33"]
+"diffplug/spotless" ["l"="48.007,-3.324"]
+"junit-pioneer/junit-pioneer" ["l"="8.978,21.157"]
+"eskatos/gradle-command-action" ["l"="48.565,-3.269"]
+"phoenix-actions/test-reporting" ["l"="-6.766,-1.835"]
+"zyborg/dotnet-tests-report" ["l"="-6.747,-1.846"]
+"test-summary/action" ["l"="-6.749,-1.882"]
+"Tyrrrz/GitHubActionsTestLogger" ["l"="27.02,15.13"]
+"ArtiomTr/jest-coverage-report-action" ["l"="-6.785,-1.868"]
+"creyD/prettier_action" ["l"="-6.84,-1.62"]
+"muesli/readme-scribe" ["l"="-6.727,-1.332"]
+"lots0logs/gh-action-get-changed-files" ["l"="-6.489,-1.658"]
+"nickmerwin/node-coveralls" ["l"="-6.906,-1.269"]
+"mathieudutour/github-tag-action" ["l"="-6.98,-1.423"]
+"TheDoctor0/zip-release" ["l"="-6.957,-1.494"]
+"r0adkll/upload-google-play" ["l"="48.359,-3.36"]
+"hmarr/auto-approve-action" ["l"="-6.563,-1.656"]
+"bobvanderlinden/probot-auto-merge" ["l"="-6.478,-1.562"]
+"TreTuna/sync-branches" ["l"="-6.532,-1.574"]
+"ridedott/merge-me-action" ["l"="-6.497,-1.538"]
+"chinthakagodawita/autoupdate" ["l"="-6.525,-1.597"]
+"crazy-max/ghaction-github-labeler" ["l"="-6.525,-1.547"]
+"devmasx/merge-branch" ["l"="-6.513,-1.571"]
+"wagoid/commitlint-github-action" ["l"="-7,-1.6"]
+"aslafy-z/conventional-pr-title-action" ["l"="-7.017,-1.632"]
+"lewagon/wait-on-check-action" ["l"="-7.054,-1.618"]
+"MorrisonCole/pr-lint-action" ["l"="-7.023,-1.613"]
+"MarceloPrado/has-changed-path" ["l"="-6.699,-1.721"]
+"webfactory/zauberlehrling" ["l"="-6.825,-1.828"]
+"palantir/policy-bot" ["l"="-6.394,-1.586"]
+"palantir/go-githubapp" ["l"="-6.365,-1.596"]
+"thollander/actions-comment-pull-request" ["l"="-6.775,-1.744"]
+"peter-evans/create-issue-from-file" ["l"="-9.166,-46.785"]
+"docker/bake-action" ["l"="-6.827,-1.374"]
+"google/yamlfmt" ["l"="-10.747,-23.68"]
+"secretlint/secretlint" ["l"="-10.783,-23.716"]
+"minamijoyo/tfmigrate" ["l"="-8.689,-0.97"]
+"aquaproj/aqua" ["l"="-8.753,-0.841"]
+"textlint/textlint" ["l"="-10.905,-23.803"]
+"kayac/ecspresso" ["l"="-8.793,-0.876"]
+"suzuki-shunsuke/tfcmt" ["l"="-8.75,-0.885"]
+"suzuki-shunsuke/tfaction" ["l"="-8.74,-0.867"]
+"k0kubun/sqldef" ["l"="-10.816,-23.628"]
+"ymmt2005/grpc-tutorial" ["l"="-10.799,-23.688"]
+"moby/buildkit" ["l"="-10.793,-0.032"]
+"multiarch/qemu-user-static" ["l"="-32.332,39.795"]
+"containerd/nerdctl" ["l"="-10.67,0"]
+"tonistiigi/binfmt" ["l"="-32.372,39.774"]
+"docker/cli" ["l"="-10.854,-0.282"]
+"crazy-max/ghaction-docker-buildx" ["l"="-6.798,-1.34"]
+"falcosecurity/falco" ["l"="-10.683,0.308"]
+"opencontainers/image-spec" ["l"="-10.932,-0.029"]
+"kubernetes-sigs/descheduler" ["l"="-10.674,0.283"]
+"GoogleContainerTools/kaniko" ["l"="-10.618,0.026"]
+"containers/buildah" ["l"="-10.783,-0.063"]
+"containers/skopeo" ["l"="-10.761,0.008"]
+"cross-the-world/ssh-scp-ssh-pipelines" ["l"="-6.878,-1.692"]
+"contention/rsync-deployments" ["l"="-6.913,-1.74"]
+"techniq/odata-query" ["l"="-7.935,-1.356"]
+"techniq/react-odata" ["l"="-7.955,-1.34"]
+"antonbabenko/pre-commit-terraform" ["l"="-8.619,-1.102"]
+"aws-ia/terraform-aws-eks-blueprints" ["l"="-10.746,0.574"]
+"runatlantis/atlantis" ["l"="-8.645,-1.135"]
+"terraform-aws-modules/terraform-aws-atlantis" ["l"="-8.555,-1.006"]
+"terraform-aws-modules/terraform-aws-eks" ["l"="-10.805,0.538"]
+"getsentry/action-git-diff-suggestions" ["l"="-6.811,-1.685"]
+"actions/container-toolkit-action" ["l"="-6.822,-1.662"]
+"OData/WebApi" ["l"="-7.757,-1.435"]
+"OData/odata.net" ["l"="-7.764,-1.463"]
+"OData/RESTier" ["l"="-7.809,-1.443"]
+"OData/ODataSamples" ["l"="-7.779,-1.444"]
+"OData/AspNetCoreOData" ["l"="-7.716,-1.456"]
+"aspnet/Razor" ["l"="25.761,18.267"]
+"rbeauchamp/Swashbuckle.OData" ["l"="-7.792,-1.463"]
+"aspnet/EntityFramework6" ["l"="25.716,18.143"]
+"aspnet/Identity" ["l"="25.776,18.171"]
+"domaindrivendev/Swashbuckle" ["l"="25.753,18.009"]
+"Microsoft/aspnet-api-versioning" ["l"="25.697,17.914"]
+"object/Simple.OData.Client" ["l"="-7.785,-1.418"]
+"aspnet/DependencyInjection" ["l"="25.761,18.241"]
+"aspnet/EntityFramework" ["l"="25.688,18.22"]
+"dotnet/wcf" ["l"="25.585,18.17"]
+"microsoft/aspnet-api-versioning" ["l"="25.436,17.86"]
+"actions/hello-world-javascript-action" ["l"="-6.753,-1.63"]
+"xinthink/action-telegram" ["l"="-7.143,-1.646"]
+"yanzay/notify-telegram" ["l"="-7.147,-1.622"]
+"Ilshidur/action-discord" ["l"="-7.193,-1.661"]
+"appleboy/drone-telegram" ["l"="-7.145,-1.672"]
+"appleboy/discord-action" ["l"="-7.166,-1.649"]
+"coverlet-coverage/coverlet" ["l"="25.363,17.819"]
+"dotnet/format" ["l"="25.334,17.922"]
+"brandedoutcast/publish-nuget" ["l"="-6.892,-1.708"]
+"dotnet/command-line-api" ["l"="25.359,17.885"]
+"microsoft/vs-threading" ["l"="25.227,17.926"]
+"dotnet-outdated/dotnet-outdated" ["l"="25.3,17.824"]
+"tonerdo/coverlet" ["l"="25.419,17.959"]
+"microsoft/setup-msbuild" ["l"="-6.967,-1.67"]
+"toolmantim/release-drafter" ["l"="-6.557,-1.36"]
+"WyriHaximus/github-action-get-previous-tag" ["l"="-7.008,-1.343"]
+"WyriHaximus/github-action-next-semvers" ["l"="-7.034,-1.315"]
+"PaulHatch/semantic-version" ["l"="-7.004,-1.386"]
+"microsoft/OpenAPI.NET.OData" ["l"="-7.712,-1.498"]
+"microsoft/Vipr" ["l"="-7.71,-1.523"]
+"OData/lab" ["l"="-7.804,-1.475"]
+"devnixs/ODataAngularResources" ["l"="-7.856,-1.481"]
+"OData/odata.github.io" ["l"="-7.834,-1.434"]
+"TossShinHwa/node-odata" ["l"="-7.867,-1.412"]
+"OData/model-first" ["l"="-7.824,-1.468"]
+"Microsoft/CodeContracts" ["l"="25.561,18.17"]
+"istanbuljs/nyc" ["l"="25.047,-34.435"]
+"StevenLooman/mocha-lcov-reporter" ["l"="-6.917,-1.226"]
+"gotwarlost/istanbul" ["l"="25.127,-34.417"]
+"actions/node-versions" ["l"="-6.782,-1.66"]
+"actions/reusable-workflows" ["l"="-6.798,-1.628"]
+"8BitJonny/gh-get-current-pr" ["l"="-6.801,-1.649"]
+"vercel/async-sema" ["l"="-6.429,-1.423"]
+"cross-the-world/scp-pipeline" ["l"="-6.885,-1.724"]
+"jincod/dotnetcore-buildpack" ["l"="-7.173,-1.525"]
+"jincod/AspNetCoreDemoApp" ["l"="-7.198,-1.497"]
+"heroku/dotnet-buildpack" ["l"="-7.219,-1.518"]
+"noliar/dotnet-buildpack" ["l"="-7.207,-1.535"]
+"jamesmh/coravel" ["l"="25.562,17.754"]
+"AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection" ["l"="-7.377,-1.499"]
+"npgsql/npgsql" ["l"="25.573,17.965"]
+"BcryptNet/bcrypt.net" ["l"="25.547,17.825"]
+"spectreconsole/spectre.console" ["l"="25.367,17.768"]
+"actions-ecosystem/action-remove-labels" ["l"="-6.873,-1.824"]
+"aws-samples/amazon-ecs-firelens-examples" ["l"="-16.409,2.693"]
+"semantic-release/git" ["l"="-7.07,-1.78"]
+"semantic-release/changelog" ["l"="-7.059,-1.768"]
+"semantic-release/exec" ["l"="-7.078,-1.764"]
+"semantic-release/npm" ["l"="-7.046,-1.781"]
+"peter-murray/workflow-application-token-action" ["l"="-6.629,-1.753"]
+"muesli/markscribe" ["l"="-6.706,-1.287"]
+"marvinpinto/actions" ["l"="-6.939,-1.483"]
+"elgohr/Github-Release-Action" ["l"="-6.979,-1.471"]
+"npalm/terraform-aws-gitlab-runner" ["l"="-6.501,-1.697"]
+"ng-fullcalendar/ng-fullcalendar" ["l"="-6.466,-1.719"]
+"cloudposse/terraform-null-label" ["l"="-19.884,-22.209"]
+"bors-ng/bors-ng" ["l"="-9.131,5.227"]
+"janhommes/o.js" ["l"="-7.902,-1.384"]
+"odata2ts/odata2ts" ["l"="-7.93,-1.386"]
+"DoozyX/clang-format-lint-action" ["l"="-6.727,-1.626"]
+"antfu/changelogithub" ["l"="14.65,-11.924"]
+"unjs/changelogen" ["l"="14.634,-11.923"]
+"tibdex/autorebase" ["l"="-6.66,-1.831"]
+"srt32/revert" ["l"="-6.647,-1.807"]
+"jessfraz/branch-cleanup-action" ["l"="-6.632,-1.864"]
+"JasonEtco/actions-toolkit" ["l"="22.812,-33.955"]
+"maxheld83/ghpages" ["l"="-6.623,-1.827"]
+"google-github-actions/auth" ["l"="-7.704,-0.928"]
+"Azure/k8s-deploy" ["l"="-6.846,-1.665"]
+"NuGet/setup-nuget" ["l"="-6.999,-1.705"]
+"googleapis/synthtool" ["l"="-15.671,0.471"]
+"googleapis/github-repo-automation" ["l"="-7.064,-1.534"]
+"googleapis/gapic-generator" ["l"="-15.638,0.486"]
+"mercari/tfnotify" ["l"="-8.729,-0.915"]
+"pofider/node-simple-odata-server" ["l"="-7.864,-1.379"]
+"auth0/node-odata-parser" ["l"="-7.902,-1.415"]
+"TossShinHwa/CMS" ["l"="-7.892,-1.439"]
+"jbogard/MediatR.Extensions.Microsoft.DependencyInjection" ["l"="-7.405,-1.501"]
+"SvanBoxel/organization-workflows" ["l"="-6.579,-1.737"]
+"peter-murray/inactive-users-action" ["l"="-6.564,-1.744"]
+"dduzgun-security/github-self-hosted-runners" ["l"="-6.553,-1.723"]
+"larsxschneider/scotty" ["l"="-13.788,-0.314"]
+"actions/actions-sync" ["l"="-6.536,-1.74"]
+"SvanBoxel/org-audit-action" ["l"="-6.599,-1.74"]
+"animir/node-rate-limiter-flexible" ["l"="25.495,-34.697"]
+"bitnami/bitnami-docker-postgresql" ["l"="-12.192,-7.015"]
+"dschep/install-poetry-action" ["l"="-6.94,-1.365"]
+"codecov/codecov-python" ["l"="-6.972,-1.275"]
+"codecov/codecov-bash" ["l"="-6.992,-1.241"]
+"TriPSs/conventional-changelog-action" ["l"="-7.009,-1.529"]
+"bcoe/conventional-release-labels" ["l"="-7.009,-1.571"]
+"bridgecrewio/checkov-action" ["l"="-8.732,-0.84"]
+"google-github-actions/setup-gcloud" ["l"="-7.721,-0.908"]
+"dependabot/demo" ["l"="-6.742,-1.246"]
+"tinglesoftware/dependabot-azure-devops" ["l"="-6.753,-1.218"]
+"wemake-services/kira-dependencies" ["l"="-6.724,-1.229"]
+"acraven/azure-dependabot" ["l"="-6.767,-1.241"]
+"alirezanet/publish-nuget" ["l"="-6.9,-1.753"]
+"AutoMapper/AutoMapper.Collection" ["l"="-7.476,-1.486"]
+"AutoMapper/AutoMapper.Collection.EFCore" ["l"="-7.503,-1.495"]
+"AutoMapper/AutoMapper.EF6" ["l"="-7.503,-1.474"]
+"AutoMapper/AutoMapper.Extensions.ExpressionMapping" ["l"="-7.533,-1.482"]
+"AutoMapper/AutoMapper.Extensions.OData" ["l"="-7.574,-1.475"]
+"AutoMapper/AutoMapper.Data" ["l"="-7.483,-1.456"]
+"homoluctus/slatify" ["l"="-6.533,-1.467"]
+"fujiwara/lambroll" ["l"="-8.77,-0.864"]
+"semantic-release/gitlab" ["l"="-7.087,-1.8"]
+"semantic-release/gitlab-config" ["l"="-7.11,-1.828"]
+"mattallty/jest-github-action" ["l"="-6.794,-1.919"]
+"serilog/serilog-extensions-logging" ["l"="23.649,13.179"]
+"urcomputeringpal/actions-runner-kubernetes" ["l"="-6.612,-1.761"]
+"argoproj/gitops-engine" ["l"="-10.508,0.313"]
+"godaddy/kubernetes-external-secrets" ["l"="-10.825,0.47"]
+"helm/chart-releaser" ["l"="-10.505,0.396"]
+"weaveworks/kured" ["l"="-10.761,0.4"]
+"helaili/enterprise-showcase" ["l"="-6.604,-1.773"]
+"aws/aws-node-termination-handler" ["l"="-10.824,0.519"]
+"integrations/microsoft-teams" ["l"="-6.427,-1.654"]
+"sarisia/actions-status-discord" ["l"="-7.233,-1.672"]
+"OData/OData.Neo" ["l"="-7.686,-1.472"]
+"OData/ODataConnectedService" ["l"="-7.686,-1.442"]
+"hassanhabib/OData.NxT" ["l"="-7.706,-1.428"]
+"chekalsky/phpcs-action" ["l"="-6.522,-1.399"]
+"Azure/k8s-set-context" ["l"="-6.866,-1.735"]
+"Azure/k8s-create-secret" ["l"="-6.866,-1.713"]
+"Azure/aks-set-context" ["l"="-6.85,-1.72"]
+"whoan/docker-build-with-cache-action" ["l"="-7.08,-1.359"]
+"octokit/graphql-action" ["l"="-6.557,-1.602"]
+"octokit/auth-action.js" ["l"="-6.037,-2.57"]
+"actions-ecosystem/action-get-merged-pull-request" ["l"="-6.577,-1.608"]
+"google/semantic-release-replace-plugin" ["l"="-7.103,-1.777"]
+"gallayl/angular2-odata" ["l"="-7.886,-1.505"]
+"lannonbr/issue-label-manager-action" ["l"="-7.04,-1.479"]
+"actions-hub/kubectl" ["l"="-6.866,-1.258"]
+"satackey/action-docker-layer-caching" ["l"="-7.118,-1.332"]
+"jpribyl/action-docker-layer-caching" ["l"="-7.145,-1.313"]
+"aj-may/dotdocker" ["l"="-7.106,-1.701"]
+"getsentry/action-github-app-token" ["l"="-6.699,-1.832"]
+"seachicken/gh-poi" ["l"="26.153,-28.211"]
+"palantir/go-baseapp" ["l"="-6.326,-1.601"]
+"bradleyfalzon/ghinstallation" ["l"="31.14,-33.173"]
+"helaili/ea-repo-list" ["l"="-6.599,-1.8"]
+"StefH/angular-odata-es5" ["l"="-7.896,-1.522"]
+"FuryTechs/FuryTech.OdataTypescriptServiceGenerator" ["l"="-7.91,-1.506"]
+"chrnorm/deployment-status" ["l"="-6.647,-1.729"]
+}

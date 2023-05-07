@@ -1,0 +1,1051 @@
+digraph G {
+"tektoncd/dashboard" -> "tektoncd/triggers"
+"tektoncd/dashboard" -> "tektoncd/cli"
+"tektoncd/dashboard" -> "tektoncd/catalog"
+"tektoncd/dashboard" -> "tektoncd/operator"
+"tektoncd/dashboard" -> "tektoncd/pipeline" ["e"=1]
+"tektoncd/dashboard" -> "tektoncd/experimental"
+"tektoncd/dashboard" -> "tektoncd/community"
+"tektoncd/dashboard" -> "tektoncd/hub"
+"tektoncd/dashboard" -> "openshift/tektoncd-pipeline-operator"
+"tektoncd/dashboard" -> "tektoncd/results"
+"tektoncd/dashboard" -> "jenkins-x/lighthouse"
+"tektoncd/dashboard" -> "knative/build" ["e"=1]
+"flatcar-linux/Flatcar" -> "kinvolk/lokomotive"
+"flatcar-linux/Flatcar" -> "kinvolk/lokomotive-kubernetes"
+"flatcar-linux/Flatcar" -> "kinvolk/nebraska"
+"tektoncd/catalog" -> "tektoncd/dashboard"
+"tektoncd/catalog" -> "tektoncd/triggers"
+"tektoncd/catalog" -> "tektoncd/cli"
+"tektoncd/catalog" -> "tektoncd/operator"
+"tektoncd/catalog" -> "openshift/pipelines-catalog"
+"tektoncd/catalog" -> "tektoncd/experimental"
+"tektoncd/catalog" -> "openshift/pipelines-tutorial"
+"tektoncd/catalog" -> "tektoncd/hub"
+"tektoncd/catalog" -> "tektoncd/pipeline" ["e"=1]
+"tektoncd/catalog" -> "tektoncd/community"
+"tektoncd/catalog" -> "argoproj-labs/argocd-operator" ["e"=1]
+"tektoncd/catalog" -> "openshift/tektoncd-pipeline-operator"
+"tektoncd/catalog" -> "shipwright-io/build"
+"tektoncd/catalog" -> "tektoncd/results"
+"tektoncd/catalog" -> "jenkins-x/lighthouse"
+"tektoncd/cli" -> "tektoncd/dashboard"
+"tektoncd/cli" -> "tektoncd/triggers"
+"tektoncd/cli" -> "tektoncd/operator"
+"tektoncd/cli" -> "tektoncd/catalog"
+"tektoncd/cli" -> "tektoncd/community"
+"tektoncd/cli" -> "tektoncd/hub"
+"tektoncd/cli" -> "tektoncd/experimental"
+"tektoncd/cli" -> "tektoncd/chains" ["e"=1]
+"tektoncd/cli" -> "redhat-developer/vscode-tekton"
+"tektoncd/cli" -> "openshift/pipelines-tutorial"
+"tektoncd/operator" -> "tektoncd/triggers"
+"tektoncd/operator" -> "tektoncd/cli"
+"tektoncd/operator" -> "tektoncd/dashboard"
+"tektoncd/operator" -> "tektoncd/hub"
+"tektoncd/operator" -> "tektoncd/catalog"
+"tektoncd/operator" -> "openshift/tektoncd-pipeline-operator"
+"tektoncd/operator" -> "tektoncd/community"
+"tektoncd/operator" -> "tektoncd/chains" ["e"=1]
+"openshift/installer" -> "openshift/openshift-ansible"
+"openshift/installer" -> "openshift/okd"
+"openshift/installer" -> "openshift/openshift-docs"
+"openshift/installer" -> "openshift/machine-config-operator"
+"openshift/installer" -> "code-ready/crc"
+"openshift/installer" -> "RedHatOfficial/ocp4-helpernode"
+"openshift/installer" -> "openshift/hive"
+"openshift/installer" -> "redhat-cop/containers-quickstarts"
+"openshift/installer" -> "syndesisio/syndesis" ["e"=1]
+"openshift/installer" -> "redhat-cop/openshift-toolkit"
+"openshift/installer" -> "openshift/origin"
+"openshift/installer" -> "coreos/ignition"
+"openshift/installer" -> "openshift-kni/baremetal-deploy"
+"openshift/installer" -> "openshift/source-to-image"
+"openshift/installer" -> "kxr/o-must-gather"
+"code-ready/crc" -> "minishift/minishift"
+"code-ready/crc" -> "openshift/okd"
+"code-ready/crc" -> "openshift/odo"
+"code-ready/crc" -> "openshift/installer"
+"code-ready/crc" -> "openshift/hive"
+"code-ready/crc" -> "redhat-cop/agnosticd"
+"code-ready/crc" -> "redhat-et/microshift"
+"code-ready/crc" -> "redhat-cop/containers-quickstarts"
+"code-ready/crc" -> "openshift/training"
+"code-ready/crc" -> "operator-framework/community-operators" ["e"=1]
+"code-ready/crc" -> "kcp-dev/kcp" ["e"=1]
+"code-ready/crc" -> "openshift/origin"
+"code-ready/crc" -> "openshift/source-to-image"
+"code-ready/crc" -> "openshift/openshift-docs"
+"code-ready/crc" -> "quay/quay" ["e"=1]
+"gshipley/installcentos" -> "debianmaster/openshift-examples"
+"gshipley/installcentos" -> "openshift/openshift-ansible"
+"gshipley/installcentos" -> "openshift/training"
+"gshipley/installcentos" -> "tnozicka/openshift-acme"
+"gshipley/installcentos" -> "OpenShiftDemos/openshift-cd-demo"
+"gshipley/installcentos" -> "siamaksade/openshift-cd-demo"
+"gshipley/installcentos" -> "SubhakarKotta/okd-installation-centos"
+"gshipley/installcentos" -> "RedHatWorkshops/openshiftv3-ops-workshop"
+"gshipley/installcentos" -> "code-ready/crc"
+"gshipley/installcentos" -> "redhat-cop/containers-quickstarts"
+"gshipley/installcentos" -> "minishift/minishift"
+"gshipley/installcentos" -> "openshift/openshift-ansible-contrib"
+"gshipley/installcentos" -> "redhat-cop/openshift-toolkit"
+"gshipley/installcentos" -> "redhat-cop/openshift-playbooks"
+"gshipley/installcentos" -> "openshift-evangelists/oc-cluster-wrapper"
+"sosreport/sos" -> "ryran/xsos"
+"sosreport/sos" -> "RedHatInsights/insights-core"
+"jboss-openshift/application-templates" -> "jboss-openshift/openshift-quickstarts"
+"jboss-openshift/application-templates" -> "jboss-openshift/cct_module"
+"jboss-openshift/application-templates" -> "RedHatWorkshops/fusev7-workshop"
+"jboss-openshift/application-templates" -> "redhat-cop/openshift-playbooks"
+"jboss-openshift/application-templates" -> "redhat-cop/container-pipelines"
+"jboss-openshift/application-templates" -> "jboss-fuse/application-templates"
+"jboss-openshift/application-templates" -> "redhat-developer-tooling/openshift-vagrant"
+"jboss-openshift/application-templates" -> "jboss-container-images/jboss-eap-7-openshift-image"
+"jboss-openshift/openshift-quickstarts" -> "jboss-openshift/application-templates"
+"openshift/origin" -> "openshift/openshift-ansible"
+"openshift/origin" -> "minishift/minishift"
+"openshift/origin" -> "openshift/source-to-image"
+"openshift/origin" -> "openstack/openstack" ["e"=1]
+"openshift/origin" -> "operator-framework/operator-sdk" ["e"=1]
+"openshift/origin" -> "openshift/okd"
+"openshift/origin" -> "kubernetes/helm" ["e"=1]
+"openshift/origin" -> "rook/rook" ["e"=1]
+"openshift/origin" -> "kubernetes/kops" ["e"=1]
+"openshift/origin" -> "chef/chef" ["e"=1]
+"openshift/origin" -> "tektoncd/pipeline" ["e"=1]
+"openshift/origin" -> "rancher/rancher" ["e"=1]
+"openshift/origin" -> "kubernetes/community" ["e"=1]
+"openshift/origin" -> "kubernetes/minikube" ["e"=1]
+"openshift/origin" -> "puppetlabs/puppet" ["e"=1]
+"redhat-cop/namespace-configuration-operator" -> "redhat-cop/cert-utils-operator"
+"redhat-cop/namespace-configuration-operator" -> "redhat-cop/group-sync-operator"
+"openshift/machine-config-operator" -> "openshift/cluster-version-operator"
+"openshift/machine-config-operator" -> "openshift/machine-api-operator"
+"openshift/machine-config-operator" -> "openshift/os"
+"openshift/machine-config-operator" -> "openshift/api"
+"openshift/machine-config-operator" -> "openshift/release"
+"openshift/machine-config-operator" -> "openshift/must-gather"
+"openshift/machine-config-operator" -> "coreos/coreos-assembler"
+"openshift/machine-config-operator" -> "openshift/enhancements"
+"openshift/machine-config-operator" -> "coreos/ignition"
+"openshift/machine-config-operator" -> "openshift/hive"
+"coreos/fedora-coreos-config" -> "coreos/coreos-assembler"
+"coreos/fedora-coreos-config" -> "coreos/coreos-installer"
+"coreos/fedora-coreos-config" -> "coreos/fcct"
+"coreos/fedora-coreos-config" -> "coreos/afterburn"
+"coreos/fedora-coreos-config" -> "coreos/fedora-coreos-pipeline"
+"coreos/fedora-coreos-config" -> "coreos/zincati"
+"minishift/minishift" -> "code-ready/crc"
+"minishift/minishift" -> "openshift/origin"
+"minishift/minishift" -> "openshift/openshift-ansible"
+"minishift/minishift" -> "openshift/source-to-image"
+"minishift/minishift" -> "openshift/okd"
+"minishift/minishift" -> "openshift/openshift-ansible-contrib"
+"minishift/minishift" -> "projectatomic/buildah" ["e"=1]
+"minishift/minishift" -> "openshift/installer"
+"minishift/minishift" -> "openshift/openshift-docs"
+"minishift/minishift" -> "OpenShiftDemos/openshift-cd-demo"
+"minishift/minishift" -> "ansible/awx" ["e"=1]
+"minishift/minishift" -> "gshipley/installcentos"
+"minishift/minishift" -> "containers/libpod" ["e"=1]
+"minishift/minishift" -> "kubernetes/helm" ["e"=1]
+"minishift/minishift" -> "openshift/jenkins"
+"ryran/xsos" -> "sosreport/sos"
+"ryran/xsos" -> "kxr/o-must-gather"
+"ryran/xsos" -> "ryran/Rebooty-inspector"
+"coreos/fedora-coreos-tracker" -> "coreos/zincati"
+"coreos/fedora-coreos-tracker" -> "coreos/fedora-coreos-config"
+"coreos/fedora-coreos-tracker" -> "coreos/coreos-assembler"
+"coreos/fedora-coreos-tracker" -> "coreos/airlock"
+"coreos/fedora-coreos-tracker" -> "openshift/cincinnati"
+"coreos/fedora-coreos-tracker" -> "coreos/coreos-installer"
+"coreos/fedora-coreos-tracker" -> "coreos/ignition"
+"coreos/fedora-coreos-tracker" -> "coreos/fcct"
+"coreos/fedora-coreos-tracker" -> "openshift/machine-config-operator"
+"coreos/fedora-coreos-tracker" -> "containers/udica" ["e"=1]
+"coreos/ignition" -> "coreos/coreos-assembler"
+"coreos/ignition" -> "openshift/machine-config-operator"
+"coreos/ignition" -> "coreos/butane"
+"coreos/ignition" -> "coreos/afterburn"
+"coreos/ignition" -> "coreos/container-linux-config-transpiler"
+"coreos/ignition" -> "coreos/fedora-coreos-tracker"
+"coreos/ignition" -> "coreos/coreos-installer"
+"coreos/ignition" -> "coreos/container-linux-update-operator" ["e"=1]
+"coreos/ignition" -> "poseidon/matchbox"
+"coreos/ignition" -> "coreos/locksmith"
+"coreos/ignition" -> "openshift/os"
+"coreos/ignition" -> "coreos/coreos-baremetal" ["e"=1]
+"coreos/ignition" -> "coreos/rpm-ostree" ["e"=1]
+"coreos/ignition" -> "coreos/toolbox" ["e"=1]
+"coreos/ignition" -> "coreos/matchbox" ["e"=1]
+"RedHatOfficial/GoCourse" -> "openshift/hive"
+"kinvolk/lokomotive" -> "kinvolk/nebraska"
+"kinvolk/lokomotive" -> "kinvolk/Flatcar"
+"kinvolk/lokomotive" -> "kinvolk/lokomotive-kubernetes"
+"kinvolk/lokomotive" -> "flatcar-linux/Flatcar"
+"kinvolk/lokomotive" -> "kinvolk/flatcar-linux-update-operator"
+"openshift/okd" -> "code-ready/crc"
+"openshift/okd" -> "openshift/installer"
+"openshift/okd" -> "openshift/origin"
+"openshift/okd" -> "openshift/openshift-docs"
+"openshift/okd" -> "RedHatOfficial/ocp4-helpernode"
+"openshift/okd" -> "minishift/minishift"
+"openshift/okd" -> "openshift/community"
+"openshift/okd" -> "openshift/openshift-ansible"
+"openshift/okd" -> "openshift/source-to-image"
+"openshift/okd" -> "redhat-et/microshift"
+"openshift/okd" -> "openshift/hive"
+"openshift/okd" -> "containers/skopeo" ["e"=1]
+"openshift/okd" -> "stackrox/kube-linter" ["e"=1]
+"openshift/okd" -> "containers/buildah" ["e"=1]
+"openshift/okd" -> "cri-o/cri-o" ["e"=1]
+"redhat-et/microshift" -> "openshift/cincinnati-graph-data"
+"redhat-et/microshift" -> "redhat-cop/openshift-migration-best-practices"
+"redhat-et/microshift" -> "openshift/hypershift"
+"redhat-et/microshift" -> "RedHat-EMEA-SSA-Team/hetzner-ocp4"
+"redhat-et/microshift" -> "redhat-cop/openshift-toolkit"
+"redhat-et/microshift" -> "openshift/hive"
+"redhat-et/microshift" -> "chuckersjp/coreos-iso-maker"
+"redhat-et/microshift" -> "openshift-examples/web"
+"redhat-et/microshift" -> "redhat-cop/namespace-configuration-operator"
+"redhat-et/microshift" -> "code-ready/snc"
+"redhat-et/microshift" -> "openshift-kni/baremetal-deploy"
+"redhat-et/microshift" -> "ksingh7/odf-nano"
+"redhat-et/microshift" -> "redhat-cop/openshift-lab-origin"
+"redhat-et/microshift" -> "open-cluster-management/policy-collection"
+"redhat-et/microshift" -> "openshift/assisted-service"
+"openshift/source-to-image" -> "openshift/origin"
+"openshift/source-to-image" -> "openshift/openshift-ansible"
+"openshift/source-to-image" -> "minishift/minishift"
+"openshift/source-to-image" -> "openshift/openshift-docs"
+"openshift/source-to-image" -> "code-ready/crc"
+"openshift/source-to-image" -> "openshift/installer"
+"openshift/source-to-image" -> "SeldonIO/seldon-core" ["e"=1]
+"openshift/source-to-image" -> "openshift/okd"
+"openshift/source-to-image" -> "tektoncd/pipeline" ["e"=1]
+"openshift/source-to-image" -> "openshift/openshift-ansible-contrib"
+"openshift/source-to-image" -> "openshift/jenkins"
+"openshift/source-to-image" -> "openshift/training"
+"openshift/source-to-image" -> "heketi/heketi" ["e"=1]
+"openshift/source-to-image" -> "containers/skopeo" ["e"=1]
+"openshift/source-to-image" -> "openshift/library"
+"tektoncd/triggers" -> "tektoncd/dashboard"
+"tektoncd/triggers" -> "tektoncd/cli"
+"tektoncd/triggers" -> "tektoncd/operator"
+"tektoncd/triggers" -> "tektoncd/catalog"
+"tektoncd/triggers" -> "tektoncd/hub"
+"tektoncd/triggers" -> "tektoncd/experimental"
+"tektoncd/triggers" -> "tektoncd/pipeline" ["e"=1]
+"tektoncd/triggers" -> "tektoncd/community"
+"tektoncd/triggers" -> "openshift/pipelines-tutorial"
+"tektoncd/triggers" -> "tektoncd/chains" ["e"=1]
+"tektoncd/triggers" -> "shipwright-io/build"
+"openshift/openshift-ansible" -> "openshift/origin"
+"openshift/openshift-ansible" -> "openshift/openshift-ansible-contrib"
+"openshift/openshift-ansible" -> "openshift/installer"
+"openshift/openshift-ansible" -> "minishift/minishift"
+"openshift/openshift-ansible" -> "openshift/openshift-docs"
+"openshift/openshift-ansible" -> "openshift/source-to-image"
+"openshift/openshift-ansible" -> "redhat-cop/openshift-toolkit"
+"openshift/openshift-ansible" -> "gshipley/installcentos"
+"openshift/openshift-ansible" -> "ceph/ceph-ansible" ["e"=1]
+"openshift/openshift-ansible" -> "OpenShiftDemos/openshift-cd-demo"
+"openshift/openshift-ansible" -> "openshift/training"
+"openshift/openshift-ansible" -> "redhat-cop/containers-quickstarts"
+"openshift/openshift-ansible" -> "openstack/openstack-ansible" ["e"=1]
+"openshift/openshift-ansible" -> "code-ready/crc"
+"openshift/openshift-ansible" -> "kubernetes-incubator/kubespray" ["e"=1]
+"debianmaster/openshift-examples" -> "gshipley/installcentos"
+"debianmaster/openshift-examples" -> "RedHatWorkshops/openshiftv3-ops-workshop"
+"debianmaster/openshift-examples" -> "jboss-openshift/application-templates"
+"debianmaster/openshift-examples" -> "OpenShiftDemos/gogs-openshift-docker"
+"debianmaster/openshift-examples" -> "debianmaster/microservices-on-openshift"
+"debianmaster/openshift-examples" -> "redhat-cop/openshift-toolkit"
+"debianmaster/openshift-examples" -> "jbossdemocentral/coolstore-microservice"
+"debianmaster/openshift-examples" -> "debianmaster/Notes"
+"debianmaster/openshift-examples" -> "openshift/pipelines-tutorial"
+"debianmaster/openshift-examples" -> "redhat-cop/containers-quickstarts"
+"debianmaster/openshift-examples" -> "rht-labs/labs-ci-cd"
+"openshift/ocs-operator" -> "red-hat-storage/ocs-training"
+"openshift/machine-api-operator" -> "openshift/cluster-version-operator"
+"openshift/machine-api-operator" -> "openshift/cluster-machine-approver"
+"openshift/machine-api-operator" -> "openshift/machine-config-operator"
+"RedHatGov/redhatgov.github.io" -> "RedHatGov/redhatgov.workshops"
+"RedHatGov/redhatgov.github.io" -> "aws-quickstart/quickstart-redhat-openshift"
+"openshift/openshift-docs" -> "openshift/installer"
+"openshift/openshift-docs" -> "openshift/openshift-ansible"
+"openshift/openshift-docs" -> "openshift/hypershift"
+"openshift/openshift-docs" -> "openshift/openshift-ansible-contrib"
+"openshift/openshift-docs" -> "openshift/okd"
+"openshift/openshift-docs" -> "openshift/training"
+"openshift/openshift-docs" -> "openshift/source-to-image"
+"openshift/openshift-docs" -> "openshift/hive"
+"openshift/openshift-docs" -> "redhat-cop/openshift-toolkit"
+"openshift/openshift-docs" -> "RedHatOfficial/ocp4-helpernode"
+"openshift/openshift-docs" -> "code-ready/crc"
+"openshift/openshift-docs" -> "openshift/origin"
+"openshift/openshift-docs" -> "openshift/enhancements"
+"openshift/openshift-docs" -> "kxr/o-must-gather"
+"openshift/openshift-docs" -> "redhat-cop/containers-quickstarts"
+"open-cluster-management/deploy" -> "open-cluster-management/policy-collection"
+"open-cluster-management/deploy" -> "open-cluster-management/labs"
+"openshift/hive" -> "openshift/cloud-credential-operator"
+"openshift/hive" -> "openshift/hypershift"
+"openshift/hive" -> "open-cluster-management/deploy"
+"openshift/hive" -> "openshift/cluster-monitoring-operator"
+"openshift/hive" -> "openshift/cluster-version-operator"
+"openshift/hive" -> "openshift-kni/baremetal-deploy"
+"openshift/hive" -> "openshift/release"
+"cgruver/okd4-single-node-cluster" -> "cgruver/okd4-upi-lab-setup"
+"openshift/jenkins" -> "openshift/jenkins-client-plugin"
+"openshift/jenkins" -> "openshift/jenkins-plugin"
+"openshift/jenkins" -> "redhat-cop/containers-quickstarts"
+"openshift/jenkins" -> "OpenShiftDemos/openshift-cd-demo"
+"openshift/jenkins" -> "rht-labs/labs-ci-cd"
+"openshift/jenkins" -> "sclorg/s2i-base-container"
+"openshift/jenkins" -> "redhat-cop/container-pipelines"
+"KohlsTechnology/eunomia" -> "redhat-cop/operationalizing-openshift-lab"
+"coreos/coreos-installer" -> "coreos/fedora-coreos-config"
+"coreos/coreos-installer" -> "openshift/os"
+"coreos/coreos-installer" -> "coreos/fedora-coreos-docs"
+"coreos/coreos-installer" -> "coreos/zincati"
+"coreos/coreos-installer" -> "coreos/afterburn"
+"RedHat-EMEA-SSA-Team/hetzner-ocp4" -> "RedHat-EMEA-SSA-Team/hetzner-ocp"
+"RedHat-EMEA-SSA-Team/hetzner-ocp4" -> "openshift-examples/web"
+"RedHatOfficial/ocp4-helpernode" -> "chuckersjp/coreos-iso-maker"
+"RedHatOfficial/ocp4-helpernode" -> "RedHatOfficial/ocp4-vsphere-upi-automation"
+"RedHatOfficial/ocp4-helpernode" -> "noseka1/openshift-auto-upi"
+"RedHatOfficial/ocp4-helpernode" -> "christianh814/ocp4-upi-helpernode"
+"RedHatOfficial/ocp4-helpernode" -> "redhat-cop/agnosticd"
+"RedHatOfficial/ocp4-helpernode" -> "openshift-kni/baremetal-deploy"
+"RedHatOfficial/ocp4-helpernode" -> "rdoxenham/openshift-virt-labs"
+"RedHatOfficial/ocp4-helpernode" -> "red-hat-storage/ocs-training"
+"RedHatOfficial/ocp4-helpernode" -> "RedHat-EMEA-SSA-Team/hetzner-ocp4"
+"RedHatOfficial/ocp4-helpernode" -> "open-cluster-management/policy-collection"
+"RedHatOfficial/ocp4-helpernode" -> "redhat-cop/openshift-toolkit"
+"RedHatOfficial/ocp4-helpernode" -> "openshift-telco/openshift4x-poc"
+"RedHatOfficial/ocp4-helpernode" -> "sa-ne/openshift4-vmware-upi"
+"RedHatOfficial/ocp4-helpernode" -> "redhat-cop/containers-quickstarts"
+"RedHatOfficial/ocp4-helpernode" -> "open-cluster-management/deploy"
+"redhat-cop/openshift-management" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/openshift-management" -> "redhat-cop/openshift-applier"
+"redhat-cop/openshift-management" -> "redhat-cop/openshift-playbooks"
+"redhat-cop/openshift-management" -> "noseka1/openshift-auto-upi"
+"openshift/cluster-logging-operator" -> "openshift/elasticsearch-operator"
+"gmeghnag/omc" -> "kxr/o-must-gather"
+"gmeghnag/omc" -> "peterducai/openshift-etcd-suite"
+"gmeghnag/omc" -> "openshift/cluster-debug-tools"
+"gmeghnag/omc" -> "openshift/must-gather"
+"poseidon/matchbox" -> "poseidon/terraform-provider-matchbox"
+"poseidon/matchbox" -> "poseidon/typhoon" ["e"=1]
+"poseidon/matchbox" -> "coreos/coreos-installer"
+"poseidon/matchbox" -> "coreos/ignition"
+"poseidon/matchbox" -> "kinvolk/lokomotive"
+"poseidon/matchbox" -> "coreos/coreos-assembler"
+"poseidon/matchbox" -> "kinvolk/nebraska"
+"poseidon/matchbox" -> "coreos/fcct"
+"poseidon/matchbox" -> "digitalrebar/provision" ["e"=1]
+"poseidon/matchbox" -> "coreos/fedora-coreos-config"
+"red-hat-storage/ocs-training" -> "openshift/ocs-operator"
+"red-hat-storage/ocs-training" -> "openshift-telco/openshift4x-poc"
+"red-hat-storage/ocs-training" -> "noseka1/openshift-auto-upi"
+"red-hat-storage/ocs-training" -> "chuckersjp/coreos-iso-maker"
+"ryanhay/ocp4-metal-install" -> "rdoxenham/openshift-virt-labs"
+"ryanhay/ocp4-metal-install" -> "redhat-cop/ocp4-helpernode"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/containers-quickstarts"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/container-pipelines"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/openshift-management"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/openshift-playbooks"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/casl-ansible"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/agnosticd"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/openshift-applier"
+"redhat-cop/openshift-toolkit" -> "redhat-cop/openshift-migration-best-practices"
+"redhat-cop/openshift-toolkit" -> "openshift/compliance-operator" ["e"=1]
+"redhat-cop/openshift-toolkit" -> "openshift/openshift-ansible-contrib"
+"redhat-cop/openshift-toolkit" -> "openshift-labs/starter-guides"
+"redhat-cop/openshift-toolkit" -> "noseka1/openshift-auto-upi"
+"redhat-cop/openshift-toolkit" -> "sabre1041/managing-ocp-install-beyond"
+"redhat-cop/openshift-toolkit" -> "red-hat-storage/ocs-training"
+"redhat-cop/openshift-toolkit" -> "openshift-telco/openshift4x-poc"
+"rht-labs/labs-ci-cd" -> "rht-labs/enablement-docs"
+"openshift/openshift-ansible-contrib" -> "redhat-cop/openshift-playbooks"
+"openshift/openshift-ansible-contrib" -> "redhat-cop/openshift-toolkit"
+"openshift/openshift-ansible-contrib" -> "redhat-cop/openshift-management"
+"openshift/openshift-ansible-contrib" -> "openshift/training"
+"openshift/openshift-ansible-contrib" -> "OpenShiftDemos/openshift-cd-demo"
+"openshift/openshift-ansible-contrib" -> "openshift/openshift-ansible"
+"openshift/openshift-ansible-contrib" -> "aws-quickstart/quickstart-redhat-openshift"
+"openshift/openshift-ansible-contrib" -> "raffaelespazzoli/openshift-enablement-exam"
+"openshift/openshift-ansible-contrib" -> "redhat-cop/containers-quickstarts"
+"openshift/openshift-ansible-contrib" -> "redhat-cop/openshift-applier"
+"openshift/openshift-ansible-contrib" -> "jboss-openshift/application-templates"
+"openshift/openshift-ansible-contrib" -> "sborenst/ansible_agnostic_deployer"
+"openshift/openshift-ansible-contrib" -> "Microsoft/openshift-container-platform"
+"openshift/openshift-ansible-contrib" -> "openshift/openshift-tools"
+"openshift/openshift-ansible-contrib" -> "redhat-cop/openshift-migration-best-practices"
+"openshift/odo" -> "eclipse/codewind" ["e"=1]
+"openshift/odo" -> "redhat-developer/vscode-openshift-tools"
+"openshift/odo" -> "code-ready/crc"
+"sclorg/s2i-python-container" -> "sclorg/s2i-base-container"
+"sclorg/s2i-python-container" -> "sclorg/s2i-ruby-container"
+"openshift/cluster-monitoring-operator" -> "openshift/cluster-version-operator"
+"openshift/cluster-monitoring-operator" -> "openshift/cluster-logging-operator"
+"openshift/cluster-monitoring-operator" -> "openshift/cluster-operator"
+"openshift/cluster-monitoring-operator" -> "openshift/hive"
+"openshift/cluster-monitoring-operator" -> "openshift/cluster-config-operator"
+"openshift/cluster-monitoring-operator" -> "openshift/origin-aggregated-logging"
+"tektoncd/community" -> "tektoncd/cli"
+"tektoncd/community" -> "tektoncd/operator"
+"tektoncd/community" -> "tektoncd/triggers"
+"tektoncd/community" -> "tektoncd/dashboard"
+"tektoncd/community" -> "tektoncd/hub"
+"tektoncd/community" -> "tektoncd/website"
+"tektoncd/community" -> "tektoncd/catalog"
+"kinvolk/Flatcar" -> "kinvolk/lokomotive"
+"redhat-cop/gitops-catalog" -> "redhat-cop/cert-utils-operator"
+"redhat-cop/gitops-catalog" -> "redhat-developer/gitops-operator"
+"redhat-cop/gitops-catalog" -> "gnunn-gitops/cluster-config"
+"redhat-cop/gitops-catalog" -> "redhat-cop/helm-charts"
+"redhat-cop/gitops-catalog" -> "stolostron/policy-collection"
+"redhat-cop/gitops-catalog" -> "redhat-cop/openshift-migration-best-practices"
+"redhat-cop/gitops-catalog" -> "open-cluster-management/policy-collection"
+"redhat-cop/gitops-catalog" -> "christianh814/openshift-cluster-config"
+"redhat-cop/infra-ansible" -> "redhat-cop/casl-ansible"
+"redhat-cop/infra-ansible" -> "redhat-cop/containers-quickstarts"
+"redhat-cop/infra-ansible" -> "redhat-cop/tower_configuration" ["e"=1]
+"redhat-cop/infra-ansible" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/infra-ansible" -> "redhat-cop/agnosticd"
+"redhat-cop/infra-ansible" -> "rht-labs/labs-ci-cd"
+"redhat-cop/infra-ansible" -> "redhat-cop/openshift-applier"
+"redhat-cop/infra-ansible" -> "sabre1041/managing-ocp-install-beyond"
+"redhat-cop/infra-ansible" -> "sborenst/ansible_agnostic_deployer"
+"redhat-cop/infra-ansible" -> "rht-labs/enablement-docs"
+"redhat-cop/infra-ansible" -> "redhat-cop/openshift-image-signing-scanning"
+"openshift-evangelists/oc-cluster-wrapper" -> "OpenShiftDemos/openshift-cd-demo"
+"openshift/pipelines-tutorial" -> "openshift/pipelines-catalog"
+"openshift/pipelines-tutorial" -> "siamaksade/openshift-cd-demo"
+"openshift/pipelines-tutorial" -> "redhat-cop/containers-quickstarts"
+"openshift/pipelines-tutorial" -> "openshift/tektoncd-pipeline-operator"
+"openshift/pipelines-tutorial" -> "openshift/federation-dev"
+"openshift/pipelines-tutorial" -> "tektoncd/catalog"
+"openshift/pipelines-tutorial" -> "redhat-cop/agnosticd"
+"openshift/pipelines-tutorial" -> "rht-labs/ubiquitous-journey"
+"openshift/pipelines-tutorial" -> "redhat-cop/group-sync-operator"
+"openshift/pipelines-tutorial" -> "redhat-cop/openshift-toolkit"
+"openshift/pipelines-tutorial" -> "openshift/jenkins-client-plugin"
+"openshift/pipelines-tutorial" -> "IBM/tekton-tutorial"
+"openshift/pipelines-tutorial" -> "tektoncd/triggers"
+"openshift/pipelines-tutorial" -> "rht-labs/labs-ci-cd"
+"openshift/pipelines-tutorial" -> "redhat-developer-demos/knative-tutorial" ["e"=1]
+"RedHatDemos/SecurityDemos" -> "redhat-cop/agnosticd"
+"RedHatDemos/SecurityDemos" -> "rcarrata/devsecops-demo"
+"RedHatDemos/SecurityDemos" -> "redhat-cop/container-pipelines"
+"RedHatDemos/SecurityDemos" -> "redhat-cop/containers-quickstarts"
+"RedHatDemos/SecurityDemos" -> "redhat-cop/infra-ansible"
+"openshift/oc" -> "openshift/cluster-version-operator"
+"openshift/oc" -> "openshift/enhancements"
+"OpenShiftDemos/openshift-cd-demo" -> "openshift-evangelists/oc-cluster-wrapper"
+"OpenShiftDemos/openshift-cd-demo" -> "jbossdemocentral/coolstore-microservice"
+"OpenShiftDemos/openshift-cd-demo" -> "openshift/openshift-ansible-contrib"
+"OpenShiftDemos/openshift-cd-demo" -> "redhat-cop/openshift-playbooks"
+"OpenShiftDemos/openshift-cd-demo" -> "redhat-cop/openshift-management"
+"OpenShiftDemos/openshift-cd-demo" -> "RedHatWorkshops/openshiftv3-workshop"
+"OpenShiftDemos/openshift-cd-demo" -> "openshift/training"
+"OpenShiftDemos/openshift-cd-demo" -> "jboss-openshift/application-templates"
+"OpenShiftDemos/openshift-cd-demo" -> "openshift/library"
+"OpenShiftDemos/openshift-cd-demo" -> "raffaelespazzoli/openshift-enablement-exam"
+"OpenShiftDemos/openshift-cd-demo" -> "sborenst/ansible_agnostic_deployer"
+"OpenShiftDemos/openshift-cd-demo" -> "redhat-cop/openshift-toolkit"
+"OpenShiftDemos/openshift-cd-demo" -> "openshift/jenkins"
+"OpenShiftDemos/openshift-cd-demo" -> "redhat-helloworld-msa/helloworld-msa"
+"OpenShiftDemos/openshift-cd-demo" -> "redhat-cop/containers-quickstarts"
+"Microsoft/openshift-container-platform" -> "Microsoft/openshift-origin"
+"Microsoft/openshift-container-platform" -> "hornjason/ansible-ocp-azure"
+"sa-ne/openshift4-vmware-upi" -> "noseka1/openshift-auto-upi"
+"sa-ne/openshift4-vmware-upi" -> "openshift-telco/openshift4x-poc"
+"raffaelespazzoli/openshift-enablement-exam" -> "arvin-a/openshift-disconnected-operators"
+"aws-quickstart/quickstart-redhat-openshift" -> "RedHatGov/redhatgov.github.io"
+"aws-quickstart/quickstart-redhat-openshift" -> "redhat-cop/openshift-playbooks"
+"aws-quickstart/quickstart-redhat-openshift" -> "openshift/openshift-ansible-contrib"
+"aws-quickstart/quickstart-redhat-openshift" -> "redhat-cop/container-pipelines"
+"openshift-labs/starter-guides" -> "redhat-cop/openshift-toolkit"
+"siamaksade/tekton-cd-demo" -> "siamaksade/pipelines-examples"
+"siamaksade/openshift-cd-demo" -> "redhat-cop/container-pipelines"
+"siamaksade/openshift-cd-demo" -> "openshift/pipelines-tutorial"
+"siamaksade/openshift-cd-demo" -> "redhat-cop/openshift-toolkit"
+"siamaksade/openshift-cd-demo" -> "OpenShiftDemos/openshift-tasks"
+"siamaksade/openshift-cd-demo" -> "openshift/jenkins-client-plugin"
+"siamaksade/openshift-cd-demo" -> "redhat-cop/containers-quickstarts"
+"siamaksade/openshift-cd-demo" -> "christianh814/ocp4-upi-helpernode"
+"siamaksade/openshift-cd-demo" -> "openshift/pipelines-catalog"
+"siamaksade/openshift-cd-demo" -> "siamaksade/tekton-cd-demo"
+"siamaksade/openshift-cd-demo" -> "redhat-cop/agnosticd"
+"siamaksade/openshift-cd-demo" -> "RedHatWorkshops/openshiftv3-workshop"
+"siamaksade/openshift-cd-demo" -> "jbossdemocentral/coolstore-microservice"
+"siamaksade/openshift-cd-demo" -> "openshift-labs/devops-guides"
+"RedHatWorkshops/openshiftv3-ops-workshop" -> "RedHatWorkshops/openshiftv3-workshop"
+"RedHatWorkshops/openshiftv3-workshop" -> "RedHatWorkshops/openshiftv3-ops-workshop"
+"RedHatWorkshops/openshiftv3-workshop" -> "OpenShiftDemos/openshift-cd-demo"
+"RedHatWorkshops/openshiftv3-workshop" -> "redhat-cop/containers-quickstarts"
+"RedHatWorkshops/openshiftv3-workshop" -> "redhat-cop/casl-ansible"
+"RedHatWorkshops/openshiftv3-workshop" -> "gshipley/openshift3mlbparks"
+"RedHatWorkshops/openshiftv3-workshop" -> "redhat-cop/openshift-playbooks"
+"RedHatWorkshops/openshiftv3-workshop" -> "openshift/training"
+"openshift/training" -> "redhat-cop/openshift-toolkit"
+"openshift/training" -> "openshift/openshift-ansible-contrib"
+"openshift/training" -> "OpenShiftDemos/openshift-cd-demo"
+"openshift/training" -> "redhat-cop/openshift-management"
+"openshift/training" -> "jboss-openshift/application-templates"
+"openshift/training" -> "redhat-cop/container-pipelines"
+"openshift/training" -> "redhat-cop/containers-quickstarts"
+"openshift/training" -> "RedHatWorkshops/openshiftv3-workshop"
+"openshift/training" -> "openshift-evangelists/oc-cluster-wrapper"
+"openshift/training" -> "aws-quickstart/quickstart-redhat-openshift"
+"openshift/training" -> "RedHatEMEA/demobuilder"
+"openshift/training" -> "redhat-cop/openshift-migration-best-practices"
+"openshift/training" -> "rhtconsulting/openshift-playbooks"
+"openshift/training" -> "jbossdemocentral/coolstore-microservice"
+"openshift/training" -> "rhtconsulting/rhc-ose"
+"openpracticelibrary/openpracticelibrary" -> "rht-labs/enablement-docs"
+"openshift-kni/cnf-features-deploy" -> "openshift-kni/performance-addon-operators"
+"redhat-cop/agnosticd" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/agnosticd" -> "RedHatDemos/SecurityDemos"
+"redhat-cop/agnosticd" -> "noseka1/openshift-auto-upi"
+"redhat-cop/agnosticd" -> "RedHatOfficial/ocp4-vsphere-upi-automation"
+"redhat-cop/agnosticd" -> "open-cluster-management/policy-collection"
+"redhat-cop/agnosticd" -> "redhat-cop/infra-ansible"
+"redhat-cop/agnosticd" -> "RedHatOfficial/ocp4-helpernode"
+"redhat-cop/agnosticd" -> "rcarrata/devsecops-demo"
+"redhat-cop/agnosticd" -> "redhat-cop/tower_configuration" ["e"=1]
+"redhat-cop/agnosticd" -> "openshift-labs/starter-guides"
+"redhat-cop/agnosticd" -> "redhat-cop/containers-quickstarts"
+"redhat-cop/agnosticd" -> "red-hat-storage/ocs-training"
+"redhat-cop/agnosticd" -> "redhat-cop/container-pipelines"
+"redhat-cop/agnosticd" -> "redhat-cop/openshift-migration-best-practices"
+"redhat-cop/agnosticd" -> "rdoxenham/openshift-virt-labs"
+"redhat-cop/pipeline-library" -> "redhat-cop/container-pipelines"
+"jparrill/ztp-the-hard-way" -> "openshift-telco/telco-gitops"
+"kxr/o-must-gather" -> "gmeghnag/omc"
+"kxr/o-must-gather" -> "openshift/cluster-debug-tools"
+"kxr/o-must-gather" -> "alvaroaleman/static-kas"
+"kxr/o-must-gather" -> "openshift/must-gather"
+"kxr/o-must-gather" -> "pamoedom/ocp4upc"
+"kxr/o-must-gather" -> "redhat-cop/openshift-migration-best-practices"
+"kxr/o-must-gather" -> "openshift-examples/web"
+"shipwright-io/build" -> "openshift-pipelines/pipelines-as-code"
+"shipwright-io/build" -> "redhat-cop/namespace-configuration-operator"
+"shipwright-io/build" -> "redhat-developer/kam"
+"shipwright-io/build" -> "openshift/odo"
+"shipwright-io/build" -> "vmware-tanzu/buildkit-cli-for-kubectl"
+"shipwright-io/build" -> "openshift/hypershift"
+"jbossdemocentral/coolstore-microservice" -> "OpenShiftDemos/openshift-cd-demo"
+"jbossdemocentral/coolstore-microservice" -> "redhat-cop/openshift-playbooks"
+"jbossdemocentral/coolstore-microservice" -> "redhat-helloworld-msa/helloworld-msa"
+"jbossdemocentral/coolstore-microservice" -> "debianmaster/microservices-on-openshift"
+"jbossdemocentral/coolstore-microservice" -> "RedHatWorkshops/fusev7-workshop"
+"jbossdemocentral/coolstore-microservice" -> "jboss-openshift/application-templates"
+"jbossdemocentral/coolstore-microservice" -> "redhat-italy/hacep"
+"jbossdemocentral/coolstore-microservice" -> "jboss-developer/jboss-jdg-quickstarts" ["e"=1]
+"jbossdemocentral/coolstore-microservice" -> "RedHatWorkshops/dayinthelife-integration"
+"jbossdemocentral/coolstore-microservice" -> "openshift/openshift-ansible-contrib"
+"jbossdemocentral/coolstore-microservice" -> "siamaksade/openshift-cd-demo"
+"jbossdemocentral/coolstore-microservice" -> "openshift/training"
+"jbossdemocentral/coolstore-microservice" -> "debianmaster/openshift-examples"
+"vmware-tanzu/buildkit-cli-for-kubectl" -> "shipwright-io/build"
+"vmware-tanzu/buildkit-cli-for-kubectl" -> "loft-sh/loft" ["e"=1]
+"RedHatInsights/insights-core" -> "RedHatInsights/insights-client"
+"RedHatInsights/insights-core" -> "RedHatInsights/insights-core-messaging"
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-config"
+"coreos/coreos-assembler" -> "openshift/os"
+"coreos/coreos-assembler" -> "coreos/afterburn"
+"coreos/coreos-assembler" -> "coreos/rpm-ostree" ["e"=1]
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-pipeline"
+"coreos/coreos-assembler" -> "coreos/ignition"
+"coreos/coreos-assembler" -> "coreos/coreos-installer"
+"coreos/coreos-assembler" -> "openshift/machine-config-operator"
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-tracker"
+"RedHatOfficial/ocp4-vsphere-upi-automation" -> "chuckersjp/coreos-iso-maker"
+"RedHatOfficial/ocp4-vsphere-upi-automation" -> "noseka1/openshift-auto-upi"
+"RedHatOfficial/ocp4-vsphere-upi-automation" -> "open-cluster-management/policy-collection"
+"RedHatOfficial/ocp4-vsphere-upi-automation" -> "RedHatOfficial/ocp4-helpernode"
+"redhat-helloworld-msa/helloworld-msa" -> "jbossdemocentral/coolstore-microservice"
+"redhat-helloworld-msa/helloworld-msa" -> "OpenShiftDemos/openshift-cd-demo"
+"redhat-helloworld-msa/helloworld-msa" -> "jboss-openshift/application-templates"
+"redhat-helloworld-msa/helloworld-msa" -> "sborenst/ansible_agnostic_deployer"
+"redhat-helloworld-msa/helloworld-msa" -> "redhat-developer-tooling/openshift-vagrant"
+"openshift/microshift" -> "openshift/hypershift"
+"redhat-developer/kam" -> "gnunn-gitops/standards"
+"redhat-developer/kam" -> "redhat-developer/gitops-operator"
+"tnozicka/openshift-acme" -> "redhat-cop/openshift-toolkit"
+"tnozicka/openshift-acme" -> "redhat-cop/openshift-management"
+"tnozicka/openshift-acme" -> "ibotty/openshift-letsencrypt"
+"tnozicka/openshift-acme" -> "redhat-cop/agnosticd"
+"tnozicka/openshift-acme" -> "redhat-cop/openshift-playbooks"
+"tnozicka/openshift-acme" -> "christianh814/ocp4-upi-helpernode"
+"tnozicka/openshift-acme" -> "redhat-cop/containers-quickstarts"
+"tnozicka/openshift-acme" -> "openshift/hive"
+"tnozicka/openshift-acme" -> "noseka1/openshift-auto-upi"
+"tnozicka/openshift-acme" -> "red-hat-storage/ocs-training"
+"tnozicka/openshift-acme" -> "openshift/training"
+"tnozicka/openshift-acme" -> "cgruver/okd4-upi-lab-setup"
+"tnozicka/openshift-acme" -> "redhat-developer/gitops-operator"
+"tnozicka/openshift-acme" -> "openshift/openshift-ansible-contrib"
+"tnozicka/openshift-acme" -> "ashcrow/filetranspiler"
+"openshift/hypershift" -> "openshift/hive"
+"openshift/hypershift" -> "open-cluster-management/policy-collection"
+"openshift/hypershift" -> "openshift/microshift"
+"openshift/hypershift" -> "openshift-kni/baremetal-deploy"
+"openshift/hypershift" -> "redhat-et/microshift"
+"openshift/hypershift" -> "openshift-online/ocm-cli"
+"openshift/hypershift" -> "openshift/assisted-service"
+"openshift/hypershift" -> "rcarrata/devsecops-demo"
+"openshift/hypershift" -> "openshift/openshift-docs"
+"openshift/hypershift" -> "openshift-kni/performance-addon-operators"
+"openshift/hypershift" -> "openshift/must-gather"
+"openshift/hypershift" -> "cloud-bulldozer/e2e-benchmarking"
+"openshift/hypershift" -> "kcp-dev/kcp" ["e"=1]
+"openshift/hypershift" -> "kxr/o-must-gather"
+"openshift/hypershift" -> "redhat-developer/gitops-operator"
+"openshift/enhancements" -> "openshift-online/ocm-cli"
+"openshift/enhancements" -> "redhat-cop/openshift-migration-best-practices"
+"openshift/enhancements" -> "openshift/ocp-build-data"
+"openshift/enhancements" -> "openshift/cluster-version-operator"
+"openshift/enhancements" -> "openshift/oc"
+"openshift/enhancements" -> "openshift/federation-dev"
+"cloud-bulldozer/kube-burner" -> "cloud-bulldozer/benchmark-operator"
+"cloud-bulldozer/kube-burner" -> "cloud-bulldozer/e2e-benchmarking"
+"cloud-bulldozer/kube-burner" -> "cloud-bulldozer/ripsaw"
+"redhat-cop/container-pipelines" -> "redhat-cop/pipeline-library"
+"redhat-cop/container-pipelines" -> "redhat-cop/containers-quickstarts"
+"redhat-cop/container-pipelines" -> "redhat-cop/openshift-applier"
+"redhat-cop/container-pipelines" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/container-pipelines" -> "redhat-cop/casl-ansible"
+"redhat-cop/container-pipelines" -> "redhat-cop/openshift-migration-best-practices"
+"redhat-cop/container-pipelines" -> "rht-labs/labs-ci-cd"
+"redhat-cop/container-pipelines" -> "openshift/pipelines-catalog"
+"openshift/assisted-service" -> "openshift/assisted-test-infra"
+"openshift/assisted-service" -> "openshift/assisted-installer"
+"karmab/kcli" -> "psss/did"
+"karmab/kcli" -> "karmab/kcli-openshift4-baremetal"
+"karmab/kcli" -> "karmab/kcli-plans"
+"karmab/kcli" -> "openshift-kni/baremetal-deploy"
+"karmab/kcli" -> "wrichter/hailstorm"
+"karmab/kcli" -> "redhat-et/microshift"
+"karmab/kcli" -> "karmab/tasty"
+"karmab/kcli" -> "iranzo/stampython"
+"karmab/kcli" -> "openshift/assisted-service"
+"karmab/kcli" -> "rdoxenham/openshift-virt-labs"
+"karmab/kcli" -> "jparrill/ztp-the-hard-way"
+"karmab/kcli" -> "RHsyseng/openshift-checks"
+"karmab/kcli" -> "giovtorres/kvm-install-vm" ["e"=1]
+"karmab/kcli" -> "rh-ecosystem-edge/ztp-pipeline-relocatable"
+"karmab/kcli" -> "morenod/punsBot"
+"cloud-bulldozer/benchmark-operator" -> "cloud-bulldozer/kube-burner"
+"cloud-bulldozer/benchmark-operator" -> "cloud-bulldozer/e2e-benchmarking"
+"cloud-bulldozer/benchmark-operator" -> "redhat-performance/jetlag"
+"cloud-bulldozer/benchmark-operator" -> "cloud-bulldozer/benchmark-wrapper"
+"psss/did" -> "psss/edd"
+"psss/did" -> "karmab/kcli"
+"openshift-kni/baremetal-deploy" -> "openshift-telco/openshift4x-poc"
+"openshift-kni/baremetal-deploy" -> "openshift-metal3/dev-scripts"
+"openshift-kni/baremetal-deploy" -> "noseka1/openshift-auto-upi"
+"openshift/release" -> "openshift/machine-config-operator"
+"openshift/release" -> "openshift/hive"
+"openshift/release" -> "eparis/ssh-bastion"
+"openshift/release" -> "openshift/kubernetes"
+"openshift/release" -> "openshift/library-go"
+"redhat-cop/helm-charts" -> "rht-labs/ubiquitous-journey"
+"openshift/jenkins-client-plugin" -> "openshift/jenkins-plugin"
+"openshift/jenkins-client-plugin" -> "openshift/jenkins"
+"openshift/jenkins-client-plugin" -> "jenkinsci/openshift-client-plugin"
+"openshift/jenkins-client-plugin" -> "fabric8io-images/s2i"
+"openshift/jenkins-client-plugin" -> "siamaksade/openshift-cd-demo"
+"openshift/jenkins-client-plugin" -> "rht-labs/enablement-docs"
+"openshift/jenkins-client-plugin" -> "openshift/jenkins-sync-plugin"
+"openshift/jenkins-client-plugin" -> "redhat-cop/containers-quickstarts"
+"openshift/jenkins-client-plugin" -> "redhat-cop/container-pipelines"
+"openshift/jenkins-client-plugin" -> "OpenShiftDemos/sonarqube-openshift-docker"
+"redhat-developer/gitops-operator" -> "gnunn-gitops/cluster-config"
+"rht-labs/enablement-docs" -> "rht-labs/labs-ci-cd"
+"jenkins-x/lighthouse" -> "jenkins-x/go-scm"
+"jenkins-x/lighthouse" -> "jenkins-x/jx-pipelines-visualizer"
+"jenkins-x/lighthouse" -> "jenkins-x/bucketrepo"
+"redhat-cop/openshift-applier" -> "redhat-cop/container-pipelines"
+"redhat-cop/openshift-applier" -> "redhat-cop/containers-quickstarts"
+"rhtconsulting/openshift-playbooks" -> "rhtconsulting/rhc-ose"
+"rhtconsulting/rhc-ose" -> "rhtconsulting/openshift-playbooks"
+"kinvolk/lokomotive-kubernetes" -> "kinvolk/flatcar-linux-update-operator"
+"openshift/openshift-cns-testdrive" -> "openshift-homeroom/workshop-dashboard"
+"openshift/openshift-cns-testdrive" -> "red-hat-storage/ocs-training"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/container-pipelines"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/openshift-applier"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/casl-ansible"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/infra-ansible"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/pipeline-library"
+"redhat-cop/containers-quickstarts" -> "noseka1/openshift-auto-upi"
+"redhat-cop/containers-quickstarts" -> "rht-labs/labs-ci-cd"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/openshift-playbooks"
+"redhat-cop/containers-quickstarts" -> "openshift/federation-dev"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/openshift-management"
+"redhat-cop/containers-quickstarts" -> "red-hat-storage/ocs-training"
+"redhat-cop/containers-quickstarts" -> "redhat-cop/operationalizing-openshift-lab"
+"redhat-cop/containers-quickstarts" -> "openshift-telco/openshift4x-poc"
+"redhat-cop/containers-quickstarts" -> "openshift/jenkins"
+"coreos/zincati" -> "openshift/cincinnati"
+"coreos/zincati" -> "coreos/airlock"
+"redhat-cop/openshift-migration-best-practices" -> "sushilsuresh/ocp4-ansible-roles"
+"redhat-cop/openshift-playbooks" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/openshift-playbooks" -> "redhat-cop/casl-ansible"
+"redhat-cop/openshift-playbooks" -> "openshift/openshift-ansible-contrib"
+"redhat-cop/openshift-playbooks" -> "redhat-cop/openshift-management"
+"redhat-cop/openshift-playbooks" -> "redhat-cop/containers-quickstarts"
+"redhat-cop/openshift-playbooks" -> "sborenst/ansible_agnostic_deployer"
+"redhat-cop/openshift-playbooks" -> "jboss-openshift/application-templates"
+"redhat-cop/openshift-playbooks" -> "redhat-cop/container-pipelines"
+"openshift/assisted-test-infra" -> "openshift/assisted-service"
+"openshift-labs/devops-guides" -> "openshift-labs/devops-labs"
+"OpenShiftDemos/gogs-openshift-docker" -> "VeerMuchandi/ocp4-extras"
+"christianh814/ocp4-upi-helpernode" -> "noseka1/openshift-auto-upi"
+"christianh814/ocp4-upi-helpernode" -> "redhat-cop/operationalizing-openshift-lab"
+"christianh814/ocp4-upi-helpernode" -> "sa-ne/openshift4-rhv-upi"
+"christianh814/ocp4-upi-helpernode" -> "sushilsuresh/ocp4-disconnected"
+"cgruver/okd4-upi-lab-setup" -> "disposab1e/okd-lab"
+"cgruver/okd4-upi-lab-setup" -> "cgruver/okd4-single-node-cluster"
+"gnunn-gitops/cluster-config" -> "christianh814/openshift-cluster-config"
+"openshift/cincinnati" -> "coreos/zincati"
+"RedHatWorkshops/dayinthelife-integration" -> "RedHatWorkshops/dayinthelife-streaming"
+"openshift/library" -> "openshift/cluster-samples-operator"
+"rcarrata/devsecops-demo" -> "stackrox/contributions"
+"openshift/jenkins-plugin" -> "openshift/jenkins-client-plugin"
+"openshift/jenkins-plugin" -> "jenkinsci/openshift-pipeline-plugin"
+"openshift/library-go" -> "openshift/cluster-version-operator"
+"redhat-cop/casl-ansible" -> "redhat-cop/infra-ansible"
+"redhat-cop/casl-ansible" -> "redhat-cop/containers-quickstarts"
+"redhat-cop/casl-ansible" -> "redhat-cop/openshift-playbooks"
+"redhat-cop/casl-ansible" -> "redhat-cop/container-pipelines"
+"redhat-cop/casl-ansible" -> "redhat-cop/openshift-toolkit"
+"redhat-cop/casl-ansible" -> "redhat-cop/openshift-applier"
+"redhat-cop/casl-ansible" -> "rhtconsulting/rhc-ose"
+"redhat-cop/casl-ansible" -> "rht-labs/labs-ci-cd"
+"rht-labs/ubiquitous-journey" -> "redhat-cop/helm-charts"
+"kinvolk/nebraska" -> "kinvolk/flatcar-linux-update-operator"
+"Microsoft/openshift-origin" -> "Microsoft/openshift-container-platform"
+"openshift/origin-aggregated-logging" -> "openshift/origin-metrics"
+"openshift/origin-aggregated-logging" -> "openshift/cluster-logging-operator"
+"RedHatEMEA/demobuilder" -> "RedHatEMEA/aws-ose3"
+"gnunn-gitops/standards" -> "gnunn-gitops/product-catalog"
+"gnunn-gitops/standards" -> "redhat-developer/kam"
+"gnunn-gitops/standards" -> "redhat-canada-gitops/catalog"
+"gnunn-gitops/standards" -> "gnunn-gitops/cluster-config"
+"noseka1/openshift-auto-upi" -> "sa-ne/openshift4-vmware-upi"
+"noseka1/openshift-auto-upi" -> "openshift-telco/openshift4x-poc"
+"noseka1/openshift-auto-upi" -> "red-hat-storage/ocs-training"
+"noseka1/openshift-auto-upi" -> "christianh814/ocp4-upi-helpernode"
+"openshift-online/ocm-cli" -> "openshift-online/ocm-sdk-go"
+"christianh814/openshift-cluster-config" -> "christianh814/openshift-cluster-config-expand"
+"code-ready/snc" -> "luisarizmendi/ocp-libvirt-ipi-role"
+"redhat-cop/openshift-lab-origin" -> "redhat-cop/ocp4-vsphere-workshop"
+"openshift/must-gather" -> "openshift/cluster-debug-tools"
+"tektoncd/dashboard" ["l"="-12.875,-3.738"]
+"tektoncd/triggers" ["l"="-12.924,-3.737"]
+"tektoncd/cli" ["l"="-12.897,-3.741"]
+"tektoncd/catalog" ["l"="-12.908,-3.718"]
+"tektoncd/operator" ["l"="-12.911,-3.754"]
+"tektoncd/pipeline" ["l"="-10.761,0.055"]
+"tektoncd/experimental" ["l"="-12.876,-3.757"]
+"tektoncd/community" ["l"="-12.892,-3.762"]
+"tektoncd/hub" ["l"="-12.887,-3.725"]
+"openshift/tektoncd-pipeline-operator" ["l"="-12.925,-3.713"]
+"tektoncd/results" ["l"="-12.862,-3.71"]
+"jenkins-x/lighthouse" ["l"="-12.83,-3.741"]
+"knative/build" ["l"="-11.082,0.066"]
+"flatcar-linux/Flatcar" ["l"="-13.541,-3.598"]
+"kinvolk/lokomotive" ["l"="-13.515,-3.593"]
+"kinvolk/lokomotive-kubernetes" ["l"="-13.549,-3.621"]
+"kinvolk/nebraska" ["l"="-13.497,-3.61"]
+"openshift/pipelines-catalog" ["l"="-12.961,-3.662"]
+"openshift/pipelines-tutorial" ["l"="-12.975,-3.674"]
+"argoproj-labs/argocd-operator" ["l"="-10.369,0.281"]
+"shipwright-io/build" ["l"="-13.012,-3.722"]
+"tektoncd/chains" ["l"="-9.36,0.503"]
+"redhat-developer/vscode-tekton" ["l"="-12.858,-3.778"]
+"openshift/installer" ["l"="-13.172,-3.609"]
+"openshift/openshift-ansible" ["l"="-13.115,-3.633"]
+"openshift/okd" ["l"="-13.178,-3.634"]
+"openshift/openshift-docs" ["l"="-13.141,-3.605"]
+"openshift/machine-config-operator" ["l"="-13.292,-3.594"]
+"code-ready/crc" ["l"="-13.139,-3.629"]
+"RedHatOfficial/ocp4-helpernode" ["l"="-13.113,-3.582"]
+"openshift/hive" ["l"="-13.205,-3.571"]
+"redhat-cop/containers-quickstarts" ["l"="-13.054,-3.623"]
+"syndesisio/syndesis" ["l"="9.978,23.156"]
+"redhat-cop/openshift-toolkit" ["l"="-13.064,-3.611"]
+"openshift/origin" ["l"="-13.189,-3.685"]
+"coreos/ignition" ["l"="-13.351,-3.629"]
+"openshift-kni/baremetal-deploy" ["l"="-13.158,-3.547"]
+"openshift/source-to-image" ["l"="-13.151,-3.651"]
+"kxr/o-must-gather" ["l"="-13.15,-3.522"]
+"minishift/minishift" ["l"="-13.125,-3.665"]
+"openshift/odo" ["l"="-13.115,-3.709"]
+"redhat-cop/agnosticd" ["l"="-13.074,-3.595"]
+"redhat-et/microshift" ["l"="-13.143,-3.554"]
+"openshift/training" ["l"="-13.063,-3.587"]
+"operator-framework/community-operators" ["l"="27.101,18.367"]
+"kcp-dev/kcp" ["l"="-10.696,0.277"]
+"quay/quay" ["l"="-10.805,0.003"]
+"gshipley/installcentos" ["l"="-13.067,-3.634"]
+"debianmaster/openshift-examples" ["l"="-12.994,-3.606"]
+"tnozicka/openshift-acme" ["l"="-13.09,-3.643"]
+"OpenShiftDemos/openshift-cd-demo" ["l"="-13.051,-3.594"]
+"siamaksade/openshift-cd-demo" ["l"="-12.995,-3.626"]
+"SubhakarKotta/okd-installation-centos" ["l"="-13.063,-3.671"]
+"RedHatWorkshops/openshiftv3-ops-workshop" ["l"="-13.01,-3.61"]
+"openshift/openshift-ansible-contrib" ["l"="-13.082,-3.61"]
+"redhat-cop/openshift-playbooks" ["l"="-13.042,-3.601"]
+"openshift-evangelists/oc-cluster-wrapper" ["l"="-13.066,-3.565"]
+"sosreport/sos" ["l"="-13.056,-3.35"]
+"ryran/xsos" ["l"="-13.083,-3.398"]
+"RedHatInsights/insights-core" ["l"="-13.036,-3.304"]
+"jboss-openshift/application-templates" ["l"="-13.004,-3.563"]
+"jboss-openshift/openshift-quickstarts" ["l"="-12.976,-3.534"]
+"jboss-openshift/cct_module" ["l"="-12.964,-3.518"]
+"RedHatWorkshops/fusev7-workshop" ["l"="-12.98,-3.554"]
+"redhat-cop/container-pipelines" ["l"="-13.031,-3.614"]
+"jboss-fuse/application-templates" ["l"="-12.983,-3.514"]
+"redhat-developer-tooling/openshift-vagrant" ["l"="-12.998,-3.526"]
+"jboss-container-images/jboss-eap-7-openshift-image" ["l"="-12.957,-3.538"]
+"openstack/openstack" ["l"="-10.706,-0.784"]
+"operator-framework/operator-sdk" ["l"="-10.81,0.111"]
+"kubernetes/helm" ["l"="-10.992,0.157"]
+"rook/rook" ["l"="-10.761,-0.04"]
+"kubernetes/kops" ["l"="-10.731,-0.024"]
+"chef/chef" ["l"="-10.731,-0.814"]
+"rancher/rancher" ["l"="-10.663,-0.246"]
+"kubernetes/community" ["l"="-10.717,0.107"]
+"kubernetes/minikube" ["l"="-10.655,-0.291"]
+"puppetlabs/puppet" ["l"="-10.687,-0.824"]
+"redhat-cop/namespace-configuration-operator" ["l"="-13.047,-3.682"]
+"redhat-cop/cert-utils-operator" ["l"="-13.055,-3.721"]
+"redhat-cop/group-sync-operator" ["l"="-12.999,-3.697"]
+"openshift/cluster-version-operator" ["l"="-13.26,-3.581"]
+"openshift/machine-api-operator" ["l"="-13.293,-3.618"]
+"openshift/os" ["l"="-13.345,-3.605"]
+"openshift/api" ["l"="-13.325,-3.582"]
+"openshift/release" ["l"="-13.275,-3.565"]
+"openshift/must-gather" ["l"="-13.197,-3.535"]
+"coreos/coreos-assembler" ["l"="-13.367,-3.601"]
+"openshift/enhancements" ["l"="-13.2,-3.593"]
+"coreos/fedora-coreos-config" ["l"="-13.4,-3.602"]
+"coreos/coreos-installer" ["l"="-13.398,-3.623"]
+"coreos/fcct" ["l"="-13.416,-3.585"]
+"coreos/afterburn" ["l"="-13.382,-3.637"]
+"coreos/fedora-coreos-pipeline" ["l"="-13.39,-3.577"]
+"coreos/zincati" ["l"="-13.419,-3.629"]
+"projectatomic/buildah" ["l"="-11.15,0.229"]
+"ansible/awx" ["l"="-15.7,-7.96"]
+"containers/libpod" ["l"="-10.82,-0.075"]
+"openshift/jenkins" ["l"="-13.036,-3.657"]
+"ryran/Rebooty-inspector" ["l"="-13.073,-3.379"]
+"coreos/fedora-coreos-tracker" ["l"="-13.383,-3.614"]
+"coreos/airlock" ["l"="-13.408,-3.646"]
+"openshift/cincinnati" ["l"="-13.435,-3.637"]
+"containers/udica" ["l"="-37.238,3.263"]
+"coreos/butane" ["l"="-13.349,-3.667"]
+"coreos/container-linux-config-transpiler" ["l"="-13.388,-3.673"]
+"coreos/container-linux-update-operator" ["l"="-11.23,0.511"]
+"poseidon/matchbox" ["l"="-13.431,-3.605"]
+"coreos/locksmith" ["l"="-13.369,-3.697"]
+"coreos/coreos-baremetal" ["l"="-14.386,-6.601"]
+"coreos/rpm-ostree" ["l"="-36.466,3.243"]
+"coreos/toolbox" ["l"="-14.231,-6.648"]
+"coreos/matchbox" ["l"="-11.158,0.485"]
+"RedHatOfficial/GoCourse" ["l"="-13.25,-3.523"]
+"kinvolk/Flatcar" ["l"="-13.534,-3.567"]
+"kinvolk/flatcar-linux-update-operator" ["l"="-13.523,-3.619"]
+"openshift/community" ["l"="-13.23,-3.654"]
+"containers/skopeo" ["l"="-10.761,0.008"]
+"stackrox/kube-linter" ["l"="-10.548,0.412"]
+"containers/buildah" ["l"="-10.783,-0.063"]
+"cri-o/cri-o" ["l"="-10.864,-0.033"]
+"openshift/cincinnati-graph-data" ["l"="-13.172,-3.529"]
+"redhat-cop/openshift-migration-best-practices" ["l"="-13.106,-3.599"]
+"openshift/hypershift" ["l"="-13.13,-3.547"]
+"RedHat-EMEA-SSA-Team/hetzner-ocp4" ["l"="-13.107,-3.522"]
+"chuckersjp/coreos-iso-maker" ["l"="-13.117,-3.565"]
+"openshift-examples/web" ["l"="-13.129,-3.519"]
+"code-ready/snc" ["l"="-13.201,-3.496"]
+"ksingh7/odf-nano" ["l"="-13.134,-3.504"]
+"redhat-cop/openshift-lab-origin" ["l"="-13.192,-3.516"]
+"open-cluster-management/policy-collection" ["l"="-13.126,-3.586"]
+"openshift/assisted-service" ["l"="-13.147,-3.478"]
+"SeldonIO/seldon-core" ["l"="25.392,34.143"]
+"heketi/heketi" ["l"="-11.04,0.141"]
+"openshift/library" ["l"="-13.147,-3.582"]
+"ceph/ceph-ansible" ["l"="-12.225,-0.747"]
+"openstack/openstack-ansible" ["l"="-13.01,-1.505"]
+"kubernetes-incubator/kubespray" ["l"="-11,0.221"]
+"OpenShiftDemos/gogs-openshift-docker" ["l"="-12.931,-3.575"]
+"debianmaster/microservices-on-openshift" ["l"="-12.968,-3.587"]
+"jbossdemocentral/coolstore-microservice" ["l"="-13.003,-3.581"]
+"debianmaster/Notes" ["l"="-12.952,-3.594"]
+"rht-labs/labs-ci-cd" ["l"="-13.006,-3.645"]
+"openshift/ocs-operator" ["l"="-13.087,-3.663"]
+"red-hat-storage/ocs-training" ["l"="-13.091,-3.625"]
+"openshift/cluster-machine-approver" ["l"="-13.305,-3.645"]
+"RedHatGov/redhatgov.github.io" ["l"="-13.018,-3.503"]
+"RedHatGov/redhatgov.workshops" ["l"="-12.994,-3.464"]
+"aws-quickstart/quickstart-redhat-openshift" ["l"="-13.044,-3.557"]
+"open-cluster-management/deploy" ["l"="-13.169,-3.566"]
+"open-cluster-management/labs" ["l"="-13.205,-3.551"]
+"openshift/cloud-credential-operator" ["l"="-13.238,-3.558"]
+"openshift/cluster-monitoring-operator" ["l"="-13.28,-3.523"]
+"cgruver/okd4-single-node-cluster" ["l"="-13.174,-3.771"]
+"cgruver/okd4-upi-lab-setup" ["l"="-13.161,-3.741"]
+"openshift/jenkins-client-plugin" ["l"="-12.979,-3.645"]
+"openshift/jenkins-plugin" ["l"="-12.957,-3.641"]
+"sclorg/s2i-base-container" ["l"="-13.059,-3.775"]
+"KohlsTechnology/eunomia" ["l"="-13.046,-3.743"]
+"redhat-cop/operationalizing-openshift-lab" ["l"="-13.058,-3.69"]
+"coreos/fedora-coreos-docs" ["l"="-13.426,-3.658"]
+"RedHat-EMEA-SSA-Team/hetzner-ocp" ["l"="-13.087,-3.487"]
+"RedHatOfficial/ocp4-vsphere-upi-automation" ["l"="-13.102,-3.563"]
+"noseka1/openshift-auto-upi" ["l"="-13.093,-3.602"]
+"christianh814/ocp4-upi-helpernode" ["l"="-13.063,-3.653"]
+"rdoxenham/openshift-virt-labs" ["l"="-13.149,-3.506"]
+"openshift-telco/openshift4x-poc" ["l"="-13.094,-3.585"]
+"sa-ne/openshift4-vmware-upi" ["l"="-13.089,-3.569"]
+"redhat-cop/openshift-management" ["l"="-13.071,-3.621"]
+"redhat-cop/openshift-applier" ["l"="-13.04,-3.63"]
+"openshift/cluster-logging-operator" ["l"="-13.333,-3.49"]
+"openshift/elasticsearch-operator" ["l"="-13.367,-3.475"]
+"gmeghnag/omc" ["l"="-13.178,-3.499"]
+"peterducai/openshift-etcd-suite" ["l"="-13.192,-3.472"]
+"openshift/cluster-debug-tools" ["l"="-13.178,-3.514"]
+"poseidon/terraform-provider-matchbox" ["l"="-13.46,-3.585"]
+"poseidon/typhoon" ["l"="-11.011,0.43"]
+"digitalrebar/provision" ["l"="30.068,-21.96"]
+"ryanhay/ocp4-metal-install" ["l"="-13.213,-3.455"]
+"redhat-cop/ocp4-helpernode" ["l"="-13.244,-3.431"]
+"redhat-cop/casl-ansible" ["l"="-13.027,-3.603"]
+"openshift/compliance-operator" ["l"="-15.986,-8.245"]
+"openshift-labs/starter-guides" ["l"="-13.05,-3.643"]
+"sabre1041/managing-ocp-install-beyond" ["l"="-13.023,-3.645"]
+"rht-labs/enablement-docs" ["l"="-12.99,-3.666"]
+"raffaelespazzoli/openshift-enablement-exam" ["l"="-13.059,-3.545"]
+"sborenst/ansible_agnostic_deployer" ["l"="-13.03,-3.577"]
+"Microsoft/openshift-container-platform" ["l"="-13.133,-3.725"]
+"openshift/openshift-tools" ["l"="-13.202,-3.619"]
+"eclipse/codewind" ["l"="6.632,21.586"]
+"redhat-developer/vscode-openshift-tools" ["l"="-13.13,-3.771"]
+"sclorg/s2i-python-container" ["l"="-13.071,-3.852"]
+"sclorg/s2i-ruby-container" ["l"="-13.074,-3.885"]
+"openshift/cluster-operator" ["l"="-13.309,-3.506"]
+"openshift/cluster-config-operator" ["l"="-13.291,-3.494"]
+"openshift/origin-aggregated-logging" ["l"="-13.323,-3.468"]
+"tektoncd/website" ["l"="-12.875,-3.805"]
+"redhat-cop/gitops-catalog" ["l"="-13.078,-3.707"]
+"redhat-developer/gitops-operator" ["l"="-13.079,-3.686"]
+"gnunn-gitops/cluster-config" ["l"="-13.07,-3.745"]
+"redhat-cop/helm-charts" ["l"="-13.018,-3.742"]
+"stolostron/policy-collection" ["l"="-13.094,-3.751"]
+"christianh814/openshift-cluster-config" ["l"="-13.079,-3.762"]
+"redhat-cop/infra-ansible" ["l"="-13.027,-3.626"]
+"redhat-cop/tower_configuration" ["l"="-15.586,-7.93"]
+"redhat-cop/openshift-image-signing-scanning" ["l"="-13.008,-3.665"]
+"openshift/federation-dev" ["l"="-13.054,-3.614"]
+"rht-labs/ubiquitous-journey" ["l"="-12.986,-3.733"]
+"IBM/tekton-tutorial" ["l"="-12.936,-3.683"]
+"redhat-developer-demos/knative-tutorial" ["l"="-14.002,-2.619"]
+"RedHatDemos/SecurityDemos" ["l"="-13.047,-3.575"]
+"rcarrata/devsecops-demo" ["l"="-13.078,-3.534"]
+"openshift/oc" ["l"="-13.238,-3.593"]
+"RedHatWorkshops/openshiftv3-workshop" ["l"="-13.019,-3.59"]
+"redhat-helloworld-msa/helloworld-msa" ["l"="-13.012,-3.547"]
+"Microsoft/openshift-origin" ["l"="-13.139,-3.751"]
+"hornjason/ansible-ocp-azure" ["l"="-13.151,-3.762"]
+"arvin-a/openshift-disconnected-operators" ["l"="-13.052,-3.504"]
+"siamaksade/tekton-cd-demo" ["l"="-12.923,-3.598"]
+"siamaksade/pipelines-examples" ["l"="-12.892,-3.587"]
+"OpenShiftDemos/openshift-tasks" ["l"="-12.952,-3.615"]
+"openshift-labs/devops-guides" ["l"="-12.928,-3.617"]
+"gshipley/openshift3mlbparks" ["l"="-12.975,-3.57"]
+"RedHatEMEA/demobuilder" ["l"="-13.046,-3.522"]
+"rhtconsulting/openshift-playbooks" ["l"="-13.038,-3.539"]
+"rhtconsulting/rhc-ose" ["l"="-13.028,-3.558"]
+"openpracticelibrary/openpracticelibrary" ["l"="-12.959,-3.706"]
+"openshift-kni/cnf-features-deploy" ["l"="-13.09,-3.443"]
+"openshift-kni/performance-addon-operators" ["l"="-13.105,-3.476"]
+"redhat-cop/pipeline-library" ["l"="-13.012,-3.63"]
+"jparrill/ztp-the-hard-way" ["l"="-13.22,-3.4"]
+"openshift-telco/telco-gitops" ["l"="-13.237,-3.378"]
+"alvaroaleman/static-kas" ["l"="-13.131,-3.482"]
+"pamoedom/ocp4upc" ["l"="-13.165,-3.484"]
+"openshift-pipelines/pipelines-as-code" ["l"="-13.01,-3.773"]
+"redhat-developer/kam" ["l"="-13.042,-3.763"]
+"vmware-tanzu/buildkit-cli-for-kubectl" ["l"="-12.984,-3.774"]
+"redhat-italy/hacep" ["l"="-12.959,-3.563"]
+"jboss-developer/jboss-jdg-quickstarts" ["l"="7.994,21.118"]
+"RedHatWorkshops/dayinthelife-integration" ["l"="-12.937,-3.543"]
+"loft-sh/loft" ["l"="-10.567,0.474"]
+"RedHatInsights/insights-client" ["l"="-13.034,-3.279"]
+"RedHatInsights/insights-core-messaging" ["l"="-13.02,-3.291"]
+"openshift/microshift" ["l"="-13.113,-3.499"]
+"gnunn-gitops/standards" ["l"="-13.044,-3.798"]
+"ibotty/openshift-letsencrypt" ["l"="-13.097,-3.699"]
+"ashcrow/filetranspiler" ["l"="-13.098,-3.683"]
+"openshift-online/ocm-cli" ["l"="-13.188,-3.553"]
+"cloud-bulldozer/e2e-benchmarking" ["l"="-13.13,-3.407"]
+"openshift/ocp-build-data" ["l"="-13.234,-3.613"]
+"cloud-bulldozer/kube-burner" ["l"="-13.145,-3.335"]
+"cloud-bulldozer/benchmark-operator" ["l"="-13.122,-3.343"]
+"cloud-bulldozer/ripsaw" ["l"="-13.154,-3.297"]
+"openshift/assisted-test-infra" ["l"="-13.145,-3.454"]
+"openshift/assisted-installer" ["l"="-13.131,-3.439"]
+"karmab/kcli" ["l"="-13.177,-3.443"]
+"psss/did" ["l"="-13.181,-3.39"]
+"karmab/kcli-openshift4-baremetal" ["l"="-13.192,-3.423"]
+"karmab/kcli-plans" ["l"="-13.172,-3.419"]
+"wrichter/hailstorm" ["l"="-13.202,-3.4"]
+"karmab/tasty" ["l"="-13.201,-3.434"]
+"iranzo/stampython" ["l"="-13.161,-3.406"]
+"RHsyseng/openshift-checks" ["l"="-13.212,-3.42"]
+"giovtorres/kvm-install-vm" ["l"="-18.769,-21.669"]
+"rh-ecosystem-edge/ztp-pipeline-relocatable" ["l"="-13.158,-3.423"]
+"morenod/punsBot" ["l"="-13.184,-3.412"]
+"redhat-performance/jetlag" ["l"="-13.121,-3.315"]
+"cloud-bulldozer/benchmark-wrapper" ["l"="-13.106,-3.32"]
+"psss/edd" ["l"="-13.189,-3.363"]
+"openshift-metal3/dev-scripts" ["l"="-13.209,-3.519"]
+"eparis/ssh-bastion" ["l"="-13.317,-3.554"]
+"openshift/kubernetes" ["l"="-13.308,-3.538"]
+"openshift/library-go" ["l"="-13.295,-3.567"]
+"jenkinsci/openshift-client-plugin" ["l"="-12.943,-3.649"]
+"fabric8io-images/s2i" ["l"="-12.916,-3.651"]
+"openshift/jenkins-sync-plugin" ["l"="-12.936,-3.635"]
+"OpenShiftDemos/sonarqube-openshift-docker" ["l"="-12.935,-3.661"]
+"jenkins-x/go-scm" ["l"="-12.806,-3.766"]
+"jenkins-x/jx-pipelines-visualizer" ["l"="-12.801,-3.73"]
+"jenkins-x/bucketrepo" ["l"="-12.793,-3.75"]
+"openshift/openshift-cns-testdrive" ["l"="-13.101,-3.726"]
+"openshift-homeroom/workshop-dashboard" ["l"="-13.107,-3.77"]
+"sushilsuresh/ocp4-ansible-roles" ["l"="-13.122,-3.598"]
+"openshift-labs/devops-labs" ["l"="-12.896,-3.611"]
+"VeerMuchandi/ocp4-extras" ["l"="-12.901,-3.561"]
+"sa-ne/openshift4-rhv-upi" ["l"="-13.042,-3.701"]
+"sushilsuresh/ocp4-disconnected" ["l"="-13.028,-3.685"]
+"disposab1e/okd-lab" ["l"="-13.192,-3.765"]
+"RedHatWorkshops/dayinthelife-streaming" ["l"="-12.911,-3.526"]
+"openshift/cluster-samples-operator" ["l"="-13.184,-3.573"]
+"stackrox/contributions" ["l"="-13.064,-3.488"]
+"jenkinsci/openshift-pipeline-plugin" ["l"="-12.915,-3.633"]
+"openshift/origin-metrics" ["l"="-13.347,-3.438"]
+"RedHatEMEA/aws-ose3" ["l"="-13.036,-3.49"]
+"gnunn-gitops/product-catalog" ["l"="-13.044,-3.833"]
+"redhat-canada-gitops/catalog" ["l"="-13.024,-3.83"]
+"openshift-online/ocm-sdk-go" ["l"="-13.22,-3.541"]
+"christianh814/openshift-cluster-config-expand" ["l"="-13.086,-3.793"]
+"luisarizmendi/ocp-libvirt-ipi-role" ["l"="-13.232,-3.475"]
+"redhat-cop/ocp4-vsphere-workshop" ["l"="-13.221,-3.495"]
+}

@@ -1,0 +1,532 @@
+digraph G {
+"memkind/memkind" -> "memKeyDB/memKeyDB"
+"memkind/memkind" -> "geopm/geopm"
+"memkind/memkind" -> "intel/ipmctl"
+"memkind/memkind" -> "pmem/pmdk"
+"memkind/memkind" -> "pmem/ndctl"
+"memkind/memkind" -> "open-mpi/hwloc" ["e"=1]
+"memkind/memkind" -> "memkind/jemalloc"
+"memkind/memkind" -> "Qthreads/qthreads"
+"memkind/memkind" -> "LLNL/GOTCHA"
+"memkind/memkind" -> "daos-stack/daos"
+"pmem/pmdk" -> "pmem/pmemkv"
+"pmem/pmdk" -> "utsaslab/RECIPE"
+"pmem/pmdk" -> "daos-stack/daos"
+"pmem/pmdk" -> "NVSL/OptaneStudy"
+"pmem/pmdk" -> "spdk/spdk" ["e"=1]
+"pmem/pmdk" -> "HewlettPackard/quartz"
+"pmem/pmdk" -> "NVSL/linux-nova"
+"pmem/pmdk" -> "pmem/libpmemobj-cpp"
+"pmem/pmdk" -> "pmem/ndctl"
+"pmem/pmdk" -> "baotonglu/dash"
+"pmem/pmdk" -> "DICL/FAST_FAIR"
+"pmem/pmdk" -> "pmem/pmem-redis"
+"pmem/pmdk" -> "DICL/CCEH"
+"pmem/pmdk" -> "Apress/programming-persistent-memory"
+"pmem/pmdk" -> "BLepers/KVell"
+"trailofbits/krf" -> "trailofbits/on-edge"
+"filebench/filebench" -> "NVSL/linux-nova"
+"filebench/filebench" -> "sslab-gatech/fxmark"
+"filebench/filebench" -> "utsaslab/SplitFS"
+"filebench/filebench" -> "utsaslab/RECIPE"
+"filebench/filebench" -> "pjd/pjdfstest"
+"filebench/filebench" -> "HewlettPackard/quartz"
+"filebench/filebench" -> "hpc/ior"
+"filebench/filebench" -> "NVSL/OptaneStudy"
+"filebench/filebench" -> "OpenChannelSSD/qemu-nvme" ["e"=1]
+"filebench/filebench" -> "pmem/pmdk"
+"filebench/filebench" -> "ucare-uchicago/femu" ["e"=1]
+"filebench/filebench" -> "linux-pmfs/pmfs"
+"filebench/filebench" -> "NVSL/NOVA"
+"filebench/filebench" -> "thustorage/octopus" ["e"=1]
+"filebench/filebench" -> "pmem/pmemkv"
+"pjd/pjdfstest" -> "kdave/xfstests"
+"pjd/pjdfstest" -> "extfuse/extfuse"
+"pjd/pjdfstest" -> "zfsonlinux/fstest"
+"pjd/pjdfstest" -> "hpc/ior"
+"pjd/pjdfstest" -> "filebench/filebench"
+"pmem/pmemkv" -> "pmem/pmdk"
+"pmem/pmemkv" -> "pmem/libpmemobj-cpp"
+"pmem/pmemkv" -> "utsaslab/RECIPE"
+"pmem/pmemkv" -> "DICL/FAST_FAIR"
+"pmem/pmemkv" -> "tikv/titan" ["e"=1]
+"pmem/pmemkv" -> "baotonglu/dash"
+"pmem/pmemkv" -> "pmem/pmem-rocksdb" ["e"=1]
+"pmem/pmemkv" -> "pmem/pmem-redis"
+"pmem/pmemkv" -> "HewlettPackard/quartz"
+"pmem/pmemkv" -> "memKeyDB/memKeyDB"
+"pmem/pmemkv" -> "DICL/CCEH"
+"pmem/pmemkv" -> "utsaslab/SplitFS"
+"pmem/pmemkv" -> "BLepers/KVell"
+"pmem/pmemkv" -> "SpanDB/SpanDB" ["e"=1]
+"pmem/pmemkv" -> "swapnilh/whisper"
+"osandov/blktests" -> "kdave/xfstests"
+"LLNL/libmsr" -> "LLNL/msr-safe"
+"LLNL/msr-safe" -> "pwrapi/pwrapi-ref"
+"LLNL/msr-safe" -> "geopm/geopm"
+"LLNL/msr-safe" -> "LLNL/libmsr"
+"daos-stack/daos" -> "mercury-hpc/mercury"
+"daos-stack/daos" -> "pmem/pmdk"
+"daos-stack/daos" -> "daos-stack/cart"
+"daos-stack/daos" -> "pmodels/argobots"
+"daos-stack/daos" -> "spdk/spdk" ["e"=1]
+"daos-stack/daos" -> "pmem/pmemkv"
+"daos-stack/daos" -> "ofiwg/libfabric" ["e"=1]
+"daos-stack/daos" -> "NVSL/linux-nova"
+"daos-stack/daos" -> "hpc/ior"
+"daos-stack/daos" -> "efficient/rdma_bench" ["e"=1]
+"daos-stack/daos" -> "linux-rdma/rdma-core" ["e"=1]
+"daos-stack/daos" -> "filebench/filebench"
+"daos-stack/daos" -> "pjd/pjdfstest"
+"daos-stack/daos" -> "thustorage/octopus" ["e"=1]
+"daos-stack/daos" -> "journeymidnight/yig"
+"pmem/syscall_intercept" -> "pmem/nvml"
+"pmem/syscall_intercept" -> "hpc/ior"
+"pmem/syscall_intercept" -> "utsaslab/RECIPE"
+"pmem/syscall_intercept" -> "filebench/filebench"
+"pmem/syscall_intercept" -> "NGIOproject/GekkoFS"
+"pmem/syscall_intercept" -> "thustorage/octopus" ["e"=1]
+"pmem/syscall_intercept" -> "NVSL/linux-nova"
+"pmem/syscall_intercept" -> "mercury-hpc/mercury"
+"pmem/syscall_intercept" -> "daos-stack/daos"
+"pmem/syscall_intercept" -> "efficient/rdma_bench" ["e"=1]
+"pmem/syscall_intercept" -> "pmem/pmemfile"
+"pmem/syscall_intercept" -> "trailofbits/krf"
+"pmem/syscall_intercept" -> "pmem/vltrace"
+"pmem/syscall_intercept" -> "iovisor/ubpf" ["e"=1]
+"pmem/syscall_intercept" -> "LLNL/GOTCHA"
+"tytso/e2fsprogs" -> "tytso/ext4"
+"tytso/e2fsprogs" -> "tytso/ext4-patch-queue"
+"tytso/e2fsprogs" -> "utsaslab/crashmonkey"
+"tytso/e2fsprogs" -> "kdave/xfstests"
+"tytso/e2fsprogs" -> "jaegeuk/f2fs-tools"
+"NVSL/linux-nova" -> "linux-pmfs/pmfs"
+"NVSL/linux-nova" -> "NVSL/NOVA"
+"NVSL/linux-nova" -> "NVSL/OptaneStudy"
+"NVSL/linux-nova" -> "ut-osa/strata"
+"NVSL/linux-nova" -> "utsaslab/SplitFS"
+"NVSL/linux-nova" -> "utsaslab/RECIPE"
+"NVSL/linux-nova" -> "thustorage/octopus" ["e"=1]
+"NVSL/linux-nova" -> "HewlettPackard/quartz"
+"NVSL/linux-nova" -> "filebench/filebench"
+"NVSL/linux-nova" -> "pmem/pmdk"
+"NVSL/linux-nova" -> "pmem/pmemkv"
+"NVSL/linux-nova" -> "utsaslab/crashmonkey"
+"NVSL/linux-nova" -> "efficient/rdma_bench" ["e"=1]
+"NVSL/linux-nova" -> "daos-stack/daos"
+"NVSL/linux-nova" -> "ut-osa/assise"
+"BLepers/KVell" -> "NVSL/OptaneStudy"
+"BLepers/KVell" -> "utsaslab/RECIPE"
+"BLepers/KVell" -> "baotonglu/dash"
+"BLepers/KVell" -> "SpanDB/SpanDB" ["e"=1]
+"BLepers/KVell" -> "utsaslab/pebblesdb" ["e"=1]
+"BLepers/KVell" -> "pmem/pmemkv"
+"BLepers/KVell" -> "utsaslab/SplitFS"
+"BLepers/KVell" -> "tikv/titan" ["e"=1]
+"BLepers/KVell" -> "basicthinker/YCSB-C" ["e"=1]
+"BLepers/KVell" -> "DICL/CCEH"
+"BLepers/KVell" -> "pmem/pmdk"
+"BLepers/KVell" -> "schencoding/lbtree"
+"BLepers/KVell" -> "DICL/FAST_FAIR"
+"BLepers/KVell" -> "theoanab/SILK-USENIXATC2019" ["e"=1]
+"BLepers/KVell" -> "HewlettPackard/quartz"
+"thustorage/Sherman" -> "thustorage/osdi21ae"
+"thustorage/Sherman" -> "thustorage/pacman"
+"thustorage/Sherman" -> "thustorage/PetPS"
+"thustorage/Sherman" -> "thustorage/lambda-io"
+"thustorage/Sherman" -> "thustorage/AlNiCo"
+"thustorage/Sherman" -> "thustorage/nvm-datastructure"
+"thustorage/lambda-io" -> "thustorage/PetPS"
+"HewlettPackard/quartz" -> "DICL/FAST_FAIR"
+"HewlettPackard/quartz" -> "Pfzuo/Level-Hashing"
+"HewlettPackard/quartz" -> "HewlettPackard/Atlas"
+"HewlettPackard/quartz" -> "NVSL/OptaneStudy"
+"HewlettPackard/quartz" -> "utsaslab/RECIPE"
+"HewlettPackard/quartz" -> "DICL/CCEH"
+"HewlettPackard/quartz" -> "swapnilh/whisper"
+"HewlettPackard/quartz" -> "CGCL-codes/HME"
+"HewlettPackard/quartz" -> "NVSL/NOVA"
+"HewlettPackard/quartz" -> "baotonglu/dash"
+"HewlettPackard/quartz" -> "pmem/pmem-redis"
+"HewlettPackard/quartz" -> "NVSL/linux-nova"
+"Pfzuo/Level-Hashing" -> "DICL/CCEH"
+"Pfzuo/Level-Hashing" -> "HewlettPackard/quartz"
+"Pfzuo/Level-Hashing" -> "Pfzuo/Path-Hashing"
+"Pfzuo/Level-Hashing" -> "DICL/FAST_FAIR"
+"Pfzuo/Level-Hashing" -> "baotonglu/dash"
+"Pfzuo/Level-Hashing" -> "chenzhangyu/Clevel-Hashing"
+"Pfzuo/Level-Hashing" -> "utsaslab/RECIPE"
+"Pfzuo/Level-Hashing" -> "NVSL/OptaneStudy"
+"Pfzuo/Level-Hashing" -> "swapnilh/whisper"
+"Pfzuo/Level-Hashing" -> "utsaslab/SplitFS"
+"Pfzuo/Level-Hashing" -> "thustorage/octopus" ["e"=1]
+"Pfzuo/Level-Hashing" -> "BenTsai7/SCM-DRAM-FPTree"
+"Pfzuo/Level-Hashing" -> "pmem/pmem-redis"
+"Open-CAS/ocf" -> "Open-CAS/open-cas-linux"
+"Open-CAS/open-cas-linux" -> "Open-CAS/ocf"
+"Open-CAS/open-cas-linux" -> "ember-learn/ember-blog"
+"utsaslab/RECIPE" -> "DICL/FAST_FAIR"
+"utsaslab/RECIPE" -> "utsaslab/SplitFS"
+"utsaslab/RECIPE" -> "hpides/viper"
+"utsaslab/RECIPE" -> "baotonglu/dash"
+"utsaslab/RECIPE" -> "NVSL/OptaneStudy"
+"utsaslab/RECIPE" -> "DICL/CCEH"
+"utsaslab/RECIPE" -> "thustorage/nvm-datastructure"
+"utsaslab/RECIPE" -> "pmem/pmemkv"
+"utsaslab/RECIPE" -> "Pfzuo/Level-Hashing"
+"utsaslab/RECIPE" -> "microsoft/pmwcas"
+"utsaslab/RECIPE" -> "wangziqi2016/index-microbench" ["e"=1]
+"utsaslab/RECIPE" -> "LPD-EPFL/CLHT" ["e"=1]
+"utsaslab/RECIPE" -> "swapnilh/whisper"
+"utsaslab/RECIPE" -> "speedskater/hot" ["e"=1]
+"utsaslab/RECIPE" -> "HewlettPackard/quartz"
+"DICL/CCEH" -> "baotonglu/dash"
+"DICL/CCEH" -> "DICL/FAST_FAIR"
+"DICL/CCEH" -> "Pfzuo/Level-Hashing"
+"DICL/CCEH" -> "hpides/viper"
+"DICL/CCEH" -> "microsoft/pmwcas"
+"DICL/CCEH" -> "chenzhangyu/Clevel-Hashing"
+"DICL/CCEH" -> "utsaslab/RECIPE"
+"DICL/CCEH" -> "SeKwonLee/WORT"
+"hpc/ior" -> "uiuc-hpc/Recorder"
+"hpc/ior" -> "hpc/mpifileutils" ["e"=1]
+"hpc/ior" -> "VI4IO/io-500-dev"
+"hpc/ior" -> "LLNL/ior"
+"hpc/ior" -> "mercury-hpc/mercury"
+"hpc/ior" -> "pjd/pjdfstest"
+"hpc/ior" -> "filebench/filebench"
+"hpc/ior" -> "daos-stack/daos"
+"hpc/ior" -> "LLNL/burstfs"
+"hpc/ior" -> "cea-hpc/robinhood" ["e"=1]
+"hpc/ior" -> "pdlfs/deltafs"
+"hpc/ior" -> "IO500/io500"
+"hpc/ior" -> "nvfuse/nvfuse" ["e"=1]
+"Seagate/cortx" -> "Seagate/cortx-motr"
+"Seagate/cortx" -> "Seagate/cortx-s3server"
+"Seagate/cortx" -> "daos-stack/daos"
+"Seagate/cortx" -> "EvotecIT/GPOZaurr" ["e"=1]
+"Seagate/cortx" -> "Seagate/cortx-prvsnr"
+"Seagate/cortx" -> "JonnyBurger/remotion-trailer" ["e"=1]
+"Seagate/cortx" -> "felixge/go-profiler-notes" ["e"=1]
+"Seagate/cortx" -> "pmem/pmemkv"
+"Seagate/cortx" -> "mercury-hpc/mercury"
+"Seagate/cortx" -> "Seagate/openSeaChest"
+"Seagate/cortx" -> "Open-CAS/open-cas-linux"
+"Seagate/ToolBin" -> "Seagate/openSeaChest"
+"Seagate/ToolBin" -> "Seagate/opensea-common"
+"Seagate/ToolBin" -> "Seagate/opensea-transport"
+"journeymidnight/yig" -> "daos-stack/daos"
+"journeymidnight/yig" -> "UMIACS/rgwadmin" ["e"=1]
+"journeymidnight/yig" -> "intel/CeTune"
+"journeymidnight/yig" -> "opensds/multi-cloud" ["e"=1]
+"pmodels/argobots" -> "mercury-hpc/mercury"
+"pmodels/argobots" -> "pmodels/bolt"
+"DICL/FAST_FAIR" -> "utsaslab/RECIPE"
+"DICL/FAST_FAIR" -> "thustorage/nvm-datastructure"
+"DICL/FAST_FAIR" -> "DICL/CCEH"
+"DICL/FAST_FAIR" -> "schencoding/lbtree"
+"DICL/FAST_FAIR" -> "HewlettPackard/quartz"
+"DICL/FAST_FAIR" -> "SeKwonLee/WORT"
+"DICL/FAST_FAIR" -> "sfu-dis/pibench"
+"DICL/FAST_FAIR" -> "baotonglu/dash"
+"DICL/FAST_FAIR" -> "Pfzuo/Level-Hashing"
+"DICL/FAST_FAIR" -> "NVSL/OptaneStudy"
+"DICL/FAST_FAIR" -> "BenTsai7/SCM-DRAM-FPTree"
+"pmem/nvml" -> "linux-pmfs/pmfs"
+"pmem/nvml" -> "pmem/linux-examples"
+"pmem/nvml" -> "NVSL/NOVA"
+"pmem/nvml" -> "Andiry/nova"
+"pmem/nvml" -> "pmem/ndctl"
+"pmem/nvml" -> "HewlettPackard/Atlas"
+"pmem/nvml" -> "efficient/rdma_bench" ["e"=1]
+"pmem/nvml" -> "pmem/pmemkv"
+"pmem/nvml" -> "01org/prd"
+"pmem/nvml" -> "pmem/syscall_intercept"
+"pmem/nvml" -> "mercury-hpc/mercury"
+"pmem/nvml" -> "oracle/NVM-Direct"
+"pmem/nvml" -> "pmem/issues"
+"pmem/nvml" -> "pmem/pmemfile"
+"pmem/nvml" -> "daos-stack/daos"
+"Seagate/openSeaChest" -> "Seagate/ToolBin"
+"Seagate/openSeaChest" -> "Seagate/opensea-transport"
+"Seagate/openSeaChest" -> "Seagate/TCGstorageAPI"
+"mercury-hpc/mercury" -> "pmodels/argobots"
+"mercury-hpc/mercury" -> "daos-stack/cart"
+"mercury-hpc/mercury" -> "mochi-hpc/mochi-margo"
+"mercury-hpc/mercury" -> "pdlfs/deltafs"
+"mercury-hpc/mercury" -> "daos-stack/daos"
+"intel/ipmctl" -> "pmem/ndctl"
+"intel/ipmctl" -> "NVSL/OptaneStudy"
+"intel/ipmctl" -> "pmem/pmem-redis"
+"intel/ipmctl" -> "pmem/pmdk"
+"pmem/ndctl" -> "intel/ipmctl"
+"pmem/ndctl" -> "pmem/pmdk"
+"pmem/ndctl" -> "pmem/pmemkv"
+"pmem/ndctl" -> "NVSL/OptaneStudy"
+"pmem/ndctl" -> "memkind/memkind"
+"pmem/ndctl" -> "pmem/nvml"
+"NVSL/NOVA" -> "linux-pmfs/pmfs"
+"NVSL/NOVA" -> "sslab-gatech/fxmark"
+"NVSL/NOVA" -> "basicthinker/ThyNVM"
+"NVSL/NOVA" -> "NVSL/linux-nova"
+"NVSL/NOVA" -> "HewlettPackard/Atlas"
+"NVSL/OptaneStudy" -> "schencoding/lbtree"
+"NVSL/OptaneStudy" -> "hpides/viper"
+"NVSL/OptaneStudy" -> "baotonglu/dash"
+"NVSL/OptaneStudy" -> "padsys/PMIdioBench"
+"NVSL/OptaneStudy" -> "DICL/FAST_FAIR"
+"NVSL/OptaneStudy" -> "utsaslab/RECIPE"
+"NVSL/OptaneStudy" -> "thustorage/nvm-datastructure"
+"NVSL/OptaneStudy" -> "TheNetAdmin/LENS-VANS"
+"NVSL/OptaneStudy" -> "HewlettPackard/quartz"
+"NVSL/OptaneStudy" -> "DICL/CCEH"
+"baotonglu/dash" -> "DICL/CCEH"
+"baotonglu/dash" -> "schencoding/lbtree"
+"baotonglu/dash" -> "utsaslab/RECIPE"
+"baotonglu/dash" -> "NVSL/OptaneStudy"
+"baotonglu/dash" -> "DICL/FAST_FAIR"
+"baotonglu/dash" -> "thustorage/nvm-datastructure"
+"baotonglu/dash" -> "Pfzuo/Level-Hashing"
+"baotonglu/dash" -> "baotonglu/apex" ["e"=1]
+"baotonglu/dash" -> "sfu-dis/pibench"
+"baotonglu/dash" -> "chenzhangyu/Clevel-Hashing"
+"baotonglu/dash" -> "hpides/viper"
+"baotonglu/dash" -> "microsoft/pmwcas"
+"linux-pmfs/pmfs" -> "NVSL/NOVA"
+"linux-pmfs/pmfs" -> "NVSL/linux-nova"
+"linux-pmfs/pmfs" -> "01org/prd"
+"linux-pmfs/pmfs" -> "NVSL/PMFS-new"
+"linux-pmfs/pmfs" -> "pmem/nvml"
+"linux-pmfs/pmfs" -> "utsaslab/SplitFS"
+"linux-pmfs/pmfs" -> "pmem/linux-examples"
+"linux-pmfs/pmfs" -> "ut-osa/strata"
+"linux-pmfs/pmfs" -> "linux-pmbd/pmbd"
+"linux-pmfs/pmfs" -> "NVSL/OptaneStudy"
+"linux-pmfs/pmfs" -> "thustorage/octopus" ["e"=1]
+"linux-pmfs/pmfs" -> "HewlettPackard/Atlas"
+"linux-pmfs/pmfs" -> "HewlettPackard/quartz"
+"utsaslab/SplitFS" -> "utsaslab/RECIPE"
+"utsaslab/SplitFS" -> "ut-osa/strata"
+"utsaslab/SplitFS" -> "utsaslab/crashmonkey"
+"utsaslab/SplitFS" -> "NVSL/OptaneStudy"
+"utsaslab/SplitFS" -> "linux-pmfs/pmfs"
+"utsaslab/SplitFS" -> "DICL/FAST_FAIR"
+"utsaslab/SplitFS" -> "NVSL/NOVA"
+"utsaslab/SplitFS" -> "sslab-gatech/fxmark"
+"utsaslab/SplitFS" -> "baotonglu/dash"
+"utsaslab/SplitFS" -> "NVSL/linux-nova"
+"utsaslab/SplitFS" -> "NVSL/PMFS-new"
+"utsaslab/SplitFS" -> "resource-disaggregation/blk-switch"
+"utsaslab/SplitFS" -> "Pfzuo/Level-Hashing"
+"HewlettPackard/Atlas" -> "HewlettPackard/quartz"
+"HewlettPackard/Atlas" -> "HewlettPackard/sparkle"
+"memKeyDB/memKeyDB" -> "pmem/pmem-redis"
+"memKeyDB/memKeyDB" -> "pmem/redis"
+"pmem/pmem-redis" -> "memKeyDB/memKeyDB"
+"pmem/pmem-redis" -> "pmem/redis"
+"pmem/pmem-redis" -> "swapnilh/whisper"
+"pmem/pmem-redis" -> "WukLab/pDPM" ["e"=1]
+"pmem/pmem-redis" -> "DICL/FAST_FAIR"
+"pmem/pmem-redis" -> "pmem/rpma" ["e"=1]
+"pmem/libpmemobj-cpp" -> "pmem/pmemkv"
+"pmem/libpmemobj-cpp" -> "chenzhangyu/Clevel-Hashing"
+"pmem/libpmemobj-cpp" -> "DICL/CCEH"
+"FabricAttachedMemory/Emulation" -> "hkimura/foedus"
+"FabricAttachedMemory/Emulation" -> "HewlettPackard/Atlas"
+"ut-osa/strata" -> "ut-osa/assise"
+"ut-osa/strata" -> "snalli/aerie"
+"hse-project/hse" -> "hse-project/mpool"
+"hse-project/hse" -> "pmem/pmemkv"
+"hse-project/hse" -> "pmem/pmdk"
+"hse-project/hse" -> "daos-stack/daos"
+"hse-project/hse" -> "tikv/titan" ["e"=1]
+"sfu-dis/pibench" -> "sfu-dis/pibench-ep2"
+"sfu-dis/pibench" -> "schencoding/lbtree"
+"sfu-dis/pibench" -> "thustorage/nvm-datastructure"
+"Seagate/cortx-s3server" -> "Seagate/cortx-prvsnr"
+"Apress/programming-persistent-memory" -> "NVSL/OptaneStudy"
+"Apress/programming-persistent-memory" -> "sfu-dis/pibench"
+"Apress/programming-persistent-memory" -> "pmem/libpmemobj-cpp"
+"Apress/programming-persistent-memory" -> "pmem/rpma" ["e"=1]
+"Apress/programming-persistent-memory" -> "SJTU-IPADS/librdpma"
+"TheNetAdmin/LENS-VANS" -> "TheNetAdmin/VANS"
+"thustorage/nvm-datastructure" -> "schencoding/lbtree"
+"thustorage/nvm-datastructure" -> "madsys-dev/ROART"
+"hpides/viper" -> "schencoding/lbtree"
+"zfsonlinux/fstest" -> "zfsonlinux/arcstat" ["e"=1]
+"thustorage/PetPS" -> "Transpeptidase/tinyWorld"
+"thustorage/osdi21ae" -> "thustorage/pacman"
+"thustorage/osdi21ae" -> "lingfenghsiang/Persistent-Memory-Study"
+"utsaslab/crashmonkey" -> "utsaslab/SplitFS"
+"utsaslab/crashmonkey" -> "osandov/blktests"
+"utsaslab/crashmonkey" -> "utsaslab/RECIPE"
+"Seagate/cortx-motr" -> "Seagate/cortx-hare"
+"Seagate/cortx-motr" -> "Seagate/cortx-prvsnr"
+"Seagate/cortx-motr" -> "Seagate/cortx-s3server"
+"sfu-dis/bztree" -> "schencoding/lbtree"
+"VI4IO/io-500-dev" -> "VI4IO/io500-app"
+"schencoding/lbtree" -> "thustorage/nvm-datastructure"
+"microsoft/pmwcas" -> "schencoding/lbtree"
+"microsoft/pmwcas" -> "sfu-dis/bztree"
+"microsoft/pmwcas" -> "BenTsai7/SCM-DRAM-FPTree"
+"kdave/xfstests" -> "osandov/blktests"
+"01org/prd" -> "linux-pmbd/pmbd"
+"geopm/geopm" -> "LLNL/msr-safe"
+"geopm/geopm" -> "pwrapi/pwrapi-ref"
+"Seagate/cortx-hare" -> "Seagate/cortx-motr"
+"Seagate/opensea-transport" -> "Seagate/opensea-common"
+"Seagate/opensea-transport" -> "Seagate/opensea-operations"
+"Seagate/opensea-operations" -> "Seagate/opensea-common"
+"memkind/memkind" ["l"="-11.015,3.562"]
+"memKeyDB/memKeyDB" ["l"="-11.048,3.583"]
+"geopm/geopm" ["l"="-10.967,3.615"]
+"intel/ipmctl" ["l"="-11.045,3.566"]
+"pmem/pmdk" ["l"="-11.072,3.548"]
+"pmem/ndctl" ["l"="-11.048,3.54"]
+"open-mpi/hwloc" ["l"="28.014,35.255"]
+"memkind/jemalloc" ["l"="-10.997,3.582"]
+"Qthreads/qthreads" ["l"="-10.97,3.579"]
+"LLNL/GOTCHA" ["l"="-11.006,3.531"]
+"daos-stack/daos" ["l"="-11.058,3.483"]
+"pmem/pmemkv" ["l"="-11.084,3.536"]
+"utsaslab/RECIPE" ["l"="-11.116,3.552"]
+"NVSL/OptaneStudy" ["l"="-11.098,3.568"]
+"spdk/spdk" ["l"="-17.366,-9.052"]
+"HewlettPackard/quartz" ["l"="-11.109,3.539"]
+"NVSL/linux-nova" ["l"="-11.105,3.519"]
+"pmem/libpmemobj-cpp" ["l"="-11.088,3.583"]
+"baotonglu/dash" ["l"="-11.121,3.575"]
+"DICL/FAST_FAIR" ["l"="-11.112,3.568"]
+"pmem/pmem-redis" ["l"="-11.072,3.575"]
+"DICL/CCEH" ["l"="-11.109,3.579"]
+"Apress/programming-persistent-memory" ["l"="-11.084,3.606"]
+"BLepers/KVell" ["l"="-11.1,3.555"]
+"trailofbits/krf" ["l"="-10.971,3.436"]
+"trailofbits/on-edge" ["l"="-10.949,3.403"]
+"filebench/filebench" ["l"="-11.096,3.501"]
+"sslab-gatech/fxmark" ["l"="-11.14,3.507"]
+"utsaslab/SplitFS" ["l"="-11.132,3.536"]
+"pjd/pjdfstest" ["l"="-11.114,3.447"]
+"hpc/ior" ["l"="-11.062,3.443"]
+"OpenChannelSSD/qemu-nvme" ["l"="-17.247,-9.382"]
+"ucare-uchicago/femu" ["l"="-17.241,-9.414"]
+"linux-pmfs/pmfs" ["l"="-11.124,3.512"]
+"NVSL/NOVA" ["l"="-11.12,3.497"]
+"thustorage/octopus" ["l"="28.154,35.202"]
+"kdave/xfstests" ["l"="-11.195,3.475"]
+"extfuse/extfuse" ["l"="-11.137,3.395"]
+"zfsonlinux/fstest" ["l"="-11.14,3.421"]
+"tikv/titan" ["l"="-11.001,5.072"]
+"pmem/pmem-rocksdb" ["l"="-10.991,5.055"]
+"SpanDB/SpanDB" ["l"="-11.005,5.044"]
+"swapnilh/whisper" ["l"="-11.088,3.563"]
+"osandov/blktests" ["l"="-11.203,3.497"]
+"LLNL/libmsr" ["l"="-10.935,3.658"]
+"LLNL/msr-safe" ["l"="-10.95,3.64"]
+"pwrapi/pwrapi-ref" ["l"="-10.945,3.623"]
+"mercury-hpc/mercury" ["l"="-11.025,3.467"]
+"daos-stack/cart" ["l"="-11.038,3.453"]
+"pmodels/argobots" ["l"="-11.014,3.448"]
+"ofiwg/libfabric" ["l"="28.054,35.247"]
+"efficient/rdma_bench" ["l"="28.145,35.214"]
+"linux-rdma/rdma-core" ["l"="28.088,35.248"]
+"journeymidnight/yig" ["l"="-11.076,3.419"]
+"pmem/syscall_intercept" ["l"="-11.04,3.497"]
+"pmem/nvml" ["l"="-11.078,3.493"]
+"NGIOproject/GekkoFS" ["l"="-11.01,3.509"]
+"pmem/pmemfile" ["l"="-11.04,3.477"]
+"pmem/vltrace" ["l"="-10.998,3.495"]
+"iovisor/ubpf" ["l"="-11.579,1.675"]
+"tytso/e2fsprogs" ["l"="-11.235,3.5"]
+"tytso/ext4" ["l"="-11.255,3.483"]
+"tytso/ext4-patch-queue" ["l"="-11.262,3.496"]
+"utsaslab/crashmonkey" ["l"="-11.172,3.527"]
+"jaegeuk/f2fs-tools" ["l"="-11.263,3.513"]
+"ut-osa/strata" ["l"="-11.152,3.519"]
+"ut-osa/assise" ["l"="-11.159,3.503"]
+"utsaslab/pebblesdb" ["l"="-11.045,4.999"]
+"basicthinker/YCSB-C" ["l"="-11.018,4.984"]
+"schencoding/lbtree" ["l"="-11.117,3.595"]
+"theoanab/SILK-USENIXATC2019" ["l"="-11.081,4.986"]
+"thustorage/Sherman" ["l"="-11.134,3.686"]
+"thustorage/osdi21ae" ["l"="-11.13,3.723"]
+"thustorage/pacman" ["l"="-11.122,3.707"]
+"thustorage/PetPS" ["l"="-11.147,3.711"]
+"thustorage/lambda-io" ["l"="-11.16,3.703"]
+"thustorage/AlNiCo" ["l"="-11.153,3.687"]
+"thustorage/nvm-datastructure" ["l"="-11.112,3.607"]
+"Pfzuo/Level-Hashing" ["l"="-11.132,3.563"]
+"HewlettPackard/Atlas" ["l"="-11.137,3.491"]
+"CGCL-codes/HME" ["l"="-11.068,3.52"]
+"Pfzuo/Path-Hashing" ["l"="-11.172,3.582"]
+"chenzhangyu/Clevel-Hashing" ["l"="-11.136,3.584"]
+"BenTsai7/SCM-DRAM-FPTree" ["l"="-11.151,3.578"]
+"Open-CAS/ocf" ["l"="-10.883,3.425"]
+"Open-CAS/open-cas-linux" ["l"="-10.903,3.449"]
+"ember-learn/ember-blog" ["l"="-10.871,3.449"]
+"hpides/viper" ["l"="-11.126,3.591"]
+"microsoft/pmwcas" ["l"="-11.143,3.596"]
+"wangziqi2016/index-microbench" ["l"="-10.906,4.904"]
+"LPD-EPFL/CLHT" ["l"="-10.759,4.731"]
+"speedskater/hot" ["l"="-10.879,4.888"]
+"SeKwonLee/WORT" ["l"="-11.128,3.604"]
+"uiuc-hpc/Recorder" ["l"="-11.053,3.407"]
+"hpc/mpifileutils" ["l"="21.644,33.708"]
+"VI4IO/io-500-dev" ["l"="-11.048,3.385"]
+"LLNL/ior" ["l"="-11.069,3.393"]
+"LLNL/burstfs" ["l"="-11.046,3.42"]
+"cea-hpc/robinhood" ["l"="21.702,33.703"]
+"pdlfs/deltafs" ["l"="-11.025,3.428"]
+"IO500/io500" ["l"="-11.033,3.403"]
+"nvfuse/nvfuse" ["l"="-17.197,-9.254"]
+"Seagate/cortx" ["l"="-10.967,3.491"]
+"Seagate/cortx-motr" ["l"="-10.927,3.489"]
+"Seagate/cortx-s3server" ["l"="-10.939,3.503"]
+"EvotecIT/GPOZaurr" ["l"="-19.294,-22.69"]
+"Seagate/cortx-prvsnr" ["l"="-10.942,3.485"]
+"JonnyBurger/remotion-trailer" ["l"="26.131,-25.626"]
+"felixge/go-profiler-notes" ["l"="-13.627,1.612"]
+"Seagate/openSeaChest" ["l"="-10.883,3.513"]
+"Seagate/ToolBin" ["l"="-10.855,3.517"]
+"Seagate/opensea-common" ["l"="-10.839,3.529"]
+"Seagate/opensea-transport" ["l"="-10.855,3.535"]
+"UMIACS/rgwadmin" ["l"="-12.179,-0.769"]
+"intel/CeTune" ["l"="-11.089,3.381"]
+"opensds/multi-cloud" ["l"="22.531,27.475"]
+"pmodels/bolt" ["l"="-10.998,3.42"]
+"sfu-dis/pibench" ["l"="-11.117,3.616"]
+"pmem/linux-examples" ["l"="-11.113,3.479"]
+"Andiry/nova" ["l"="-11.086,3.449"]
+"01org/prd" ["l"="-11.125,3.48"]
+"oracle/NVM-Direct" ["l"="-11.065,3.464"]
+"pmem/issues" ["l"="-11.104,3.465"]
+"Seagate/TCGstorageAPI" ["l"="-10.863,3.497"]
+"mochi-hpc/mochi-margo" ["l"="-10.997,3.459"]
+"basicthinker/ThyNVM" ["l"="-11.144,3.464"]
+"padsys/PMIdioBench" ["l"="-11.096,3.616"]
+"TheNetAdmin/LENS-VANS" ["l"="-11.072,3.622"]
+"baotonglu/apex" ["l"="-10.795,4.823"]
+"NVSL/PMFS-new" ["l"="-11.152,3.533"]
+"linux-pmbd/pmbd" ["l"="-11.151,3.481"]
+"resource-disaggregation/blk-switch" ["l"="-11.177,3.554"]
+"HewlettPackard/sparkle" ["l"="-11.168,3.467"]
+"pmem/redis" ["l"="-11.042,3.608"]
+"WukLab/pDPM" ["l"="28.175,35.142"]
+"pmem/rpma" ["l"="28.09,35.194"]
+"FabricAttachedMemory/Emulation" ["l"="-11.184,3.443"]
+"hkimura/foedus" ["l"="-11.207,3.421"]
+"snalli/aerie" ["l"="-11.18,3.511"]
+"hse-project/hse" ["l"="-11.086,3.469"]
+"hse-project/mpool" ["l"="-11.102,3.428"]
+"sfu-dis/pibench-ep2" ["l"="-11.129,3.646"]
+"SJTU-IPADS/librdpma" ["l"="-11.078,3.64"]
+"TheNetAdmin/VANS" ["l"="-11.058,3.648"]
+"madsys-dev/ROART" ["l"="-11.112,3.639"]
+"zfsonlinux/arcstat" ["l"="-13.532,18.505"]
+"Transpeptidase/tinyWorld" ["l"="-11.157,3.728"]
+"lingfenghsiang/Persistent-Memory-Study" ["l"="-11.13,3.747"]
+"Seagate/cortx-hare" ["l"="-10.908,3.487"]
+"sfu-dis/bztree" ["l"="-11.151,3.622"]
+"VI4IO/io500-app" ["l"="-11.044,3.359"]
+"Seagate/opensea-operations" ["l"="-10.836,3.546"]
+}
