@@ -6,10 +6,12 @@ digraph G {
 "w3c/webcomponents" -> "WebReflection/document-register-element"
 "w3c/webcomponents" -> "Polymer/lit-element"
 "w3c/webcomponents" -> "material-components/material-components-web-components"
+"w3c/webcomponents" -> "w3c/csswg-drafts" ["e"=1]
 "w3c/webcomponents" -> "Polymer/lit-html"
 "w3c/webcomponents" -> "matthewp/haunted"
 "w3c/webcomponents" -> "Matt-Esch/virtual-dom" ["e"=1]
 "w3c/webcomponents" -> "tc39/ecma262" ["e"=1]
+"w3c/webcomponents" -> "whatwg/dom" ["e"=1]
 "w3c/webcomponents" -> "mdn/web-components-examples"
 "w3c/webcomponents" -> "mateusortiz/webcomponents-the-right-way"
 "webcomponents/webcomponentsjs" -> "w3c/webcomponents"
@@ -143,7 +145,10 @@ digraph G {
 "google/santa-tracker-web" -> "PolymerLabs/polymer-patterns"
 "google/santa-tracker-web" -> "PolymerLabs/app-layout"
 "google/santa-tracker-web" -> "yeoman/generator-polymer"
+"google/santa-tracker-web" -> "GoogleChrome/guitar-tuner" ["e"=1]
+"google/santa-tracker-web" -> "GoogleChrome/voice-memos" ["e"=1]
 "google/santa-tracker-web" -> "Polymer/topeka"
+"google/santa-tracker-web" -> "GoogleChrome/devsummit" ["e"=1]
 "google/santa-tracker-web" -> "Polymer/shop"
 "google/santa-tracker-web" -> "ebidel/geo-location"
 "google/santa-tracker-web" -> "GoogleChrome/ioweb2016"
@@ -325,6 +330,7 @@ digraph G {
 "loeffel-io/ls-lint" -> "sindresorhus/slugify" ["e"=1]
 "loeffel-io/ls-lint" -> "kripod/glaze" ["e"=1]
 "WICG/open-ui" -> "thepassle/generic-components"
+"WICG/open-ui" -> "MicrosoftEdge/MSEdgeExplainers" ["e"=1]
 "WICG/open-ui" -> "ing-bank/lion"
 "WICG/open-ui" -> "fymmot/inclusive-dates" ["e"=1]
 "WICG/open-ui" -> "webcomponents/custom-elements-everywhere"
@@ -428,6 +434,8 @@ digraph G {
 "mdn/web-components-examples" -> "Polymer/lit-html"
 "mdn/web-components-examples" -> "modernweb-dev/web"
 "mdn/web-components-examples" -> "webpack/tapable" ["e"=1]
+"mdn/web-components-examples" -> "mdn/dom-examples" ["e"=1]
+"mdn/web-components-examples" -> "mdn/js-examples" ["e"=1]
 "mdn/web-components-examples" -> "github/github-elements"
 "mdn/web-components-examples" -> "module-federation/module-federation-examples" ["e"=1]
 "mvysny/karibu-dsl" -> "mvysny/vaadin-on-kotlin"
@@ -531,6 +539,7 @@ digraph G {
 "erikringsmuth/app-router" -> "ebidel/polymer-gmail"
 "erikringsmuth/app-router" -> "addyosmani/polymer-filters"
 "erikringsmuth/app-router" -> "PolymerLabs/flatiron-director"
+"erikringsmuth/app-router" -> "robdodson/contacts-app" ["e"=1]
 "erikringsmuth/app-router" -> "PolymerElements/polymer-starter-kit"
 "erikringsmuth/app-router" -> "vaadin/vaadin-router"
 "erikringsmuth/app-router" -> "tur-nr/polymer-redux"
@@ -548,6 +557,7 @@ digraph G {
 "pwa-builder/pwa-starter" -> "pwa-builder/pwa-update"
 "pwa-builder/pwa-starter" -> "web-padawan/aybolit" ["e"=1]
 "pwa-builder/pwa-starter" -> "webcomponents/custom-elements-json"
+"pwa-builder/pwa-starter" -> "mdn/pwa-examples" ["e"=1]
 "webcomponents/polyfills" -> "webcomponents/webcomponentsjs"
 "webcomponents/polyfills" -> "open-wc/open-wc"
 "webcomponents/polyfills" -> "mdn/web-components-examples"
@@ -680,6 +690,7 @@ digraph G {
 "GoogleChromeLabs/pwacompat" -> "kefranabg/bento-starter" ["e"=1]
 "GoogleChromeLabs/pwacompat" -> "w3c/manifest"
 "GoogleChromeLabs/pwacompat" -> "PWA-POLICE/pwa-bugs"
+"GoogleChromeLabs/pwacompat" -> "mozilla/serviceworker-cookbook" ["e"=1]
 "GoogleChromeLabs/pwacompat" -> "GoogleChromeLabs/idlize"
 "GoogleChromeLabs/pwacompat" -> "GoogleChrome/workbox" ["e"=1]
 "GoogleChromeLabs/pwacompat" -> "lukeed/pwa" ["e"=1]
@@ -696,6 +707,7 @@ digraph G {
 "pwa-builder/PWABuilder" -> "nuxt-community/pwa-module" ["e"=1]
 "pwa-builder/PWABuilder" -> "GoogleChromeLabs/pwa-wp"
 "pwa-builder/PWABuilder" -> "pwa-builder/pwabuilder-blog"
+"pwa-builder/PWABuilder" -> "hemanth/awesome-pwa" ["e"=1]
 "pwa-builder/PWABuilder" -> "shadowwalker/next-pwa" ["e"=1]
 "pwa-builder/PWABuilder" -> "w3c/manifest"
 "pwa-builder/PWABuilder" -> "open-wc/open-wc"
@@ -1010,6 +1022,7 @@ digraph G {
 "n6ai/minze" -> "uicrooks/flowrift-space" ["e"=1]
 "gokulkrishh/awesome-meta-and-manifest" -> "GoogleChromeLabs/pwacompat"
 "gokulkrishh/awesome-meta-and-manifest" -> "shadowwalker/next-pwa" ["e"=1]
+"gokulkrishh/awesome-meta-and-manifest" -> "gokulkrishh/demo-progressive-web-app" ["e"=1]
 "web-padawan/awesome-web-components" -> "web-padawan/webcomponents.today"
 "vaadin/hilla" -> "vaadin/flow"
 "vaadin/hilla" -> "vaadin/web-components"
@@ -1243,6 +1256,11 @@ digraph G {
 "bendavis78/paper-time-picker" -> "bendavis78/paper-chip"
 "helidon-io/helidon" -> "tomas-langer/helidon-nima-example"
 "w3c/manifest" -> "WICG/manifest-incubations"
+"w3c/manifest" -> "heycam/webidl" ["e"=1]
+"w3c/manifest" -> "w3c/ServiceWorker" ["e"=1]
+"w3c/manifest" -> "mozilla/standards-positions" ["e"=1]
+"w3c/manifest" -> "w3c/browser-specs" ["e"=1]
+"w3c/manifest" -> "MicrosoftEdge/MSEdgeExplainers" ["e"=1]
 "w3c/manifest" -> "GoogleChrome/android-browser-helper"
 "w3c/manifest" -> "w3c/webappsec" ["e"=1]
 "w3c/manifest" -> "w3c/WebPlatformWG"
@@ -1473,6 +1491,7 @@ digraph G {
 "GoogleChrome/howto-components" -> "Polymer/prpl-server-node"
 "GoogleChrome/howto-components" -> "google/uniflow-polymer"
 "GoogleChrome/howto-components" -> "PolymerLabs/lit-html"
+"GoogleChrome/howto-components" -> "GoogleChrome/sample-media-pwa" ["e"=1]
 "GoogleChrome/howto-components" -> "notwaldorf/lazy-image"
 "GoogleChrome/howto-components" -> "tur-nr/polymer-redux"
 "GoogleChrome/howto-components" -> "Polymer/polymer-build"
@@ -1489,9 +1508,11 @@ digraph G {
 "GoogleChrome/ioweb2015" -> "yeoman/generator-polymer"
 "GoogleChrome/ioweb2015" -> "PolymerLabs/app-layout"
 "GoogleChrome/ioweb2015" -> "Polymer/polymer-element-catalog"
+"GoogleChrome/ioweb2015" -> "GoogleChrome/guitar-tuner" ["e"=1]
 "GoogleChrome/ioweb2015" -> "kevinpschaaf/chat-view-paper"
 "GoogleChrome/ioweb2015" -> "robdodson/Atom-PolymerSnippets"
 "GoogleChrome/ioweb2015" -> "David-Mulder/paper-date-picker"
+"GoogleChrome/ioweb2015" -> "GoogleChrome/voice-memos" ["e"=1]
 "Polymer/polymer-dev" -> "Polymer/platform-dev"
 "vaadin/vaadin-date-picker" -> "vaadin/vaadin-icons"
 "vaadin/vaadin-date-picker" -> "vaadin/vaadin-combo-box"
@@ -1623,6 +1644,7 @@ digraph G {
 "PolymerLabs/app-layout" -> "PolymerLabs/polydev"
 "PolymerLabs/app-layout" -> "PolymerElements/app-layout-templates"
 "PolymerLabs/app-layout" -> "Polymer/project"
+"PolymerLabs/app-layout" -> "PolymerLabs/zuperkulblog-progressive" ["e"=1]
 "PolymerLabs/app-layout" -> "PolymerElements/carbon-route"
 "PolymerLabs/app-layout" -> "PolymerLabs/polyserve"
 "PolymerLabs/app-layout" -> "kevinpschaaf/chat-view-paper"
@@ -1962,10 +1984,12 @@ digraph G {
 "WebReflection/document-register-element" ["l"="28.906,-35.331"]
 "Polymer/lit-element" ["l"="29.024,-35.271"]
 "material-components/material-components-web-components" ["l"="29.062,-35.272"]
+"w3c/csswg-drafts" ["l"="29.393,-33.915"]
 "Polymer/lit-html" ["l"="28.993,-35.287"]
 "matthewp/haunted" ["l"="28.99,-35.254"]
 "Matt-Esch/virtual-dom" ["l"="26.071,-26.982"]
 "tc39/ecma262" ["l"="26.42,-26.866"]
+"whatwg/dom" ["l"="29.317,-33.889"]
 "mdn/web-components-examples" ["l"="29.045,-35.295"]
 "mateusortiz/webcomponents-the-right-way" ["l"="29.089,-35.265"]
 "webcomponents/polyfills" ["l"="29.074,-35.3"]
@@ -2051,7 +2075,10 @@ digraph G {
 "runem/web-component-analyzer" ["l"="29.052,-35.2"]
 "google/santa-tracker-web" ["l"="29.176,-35.53"]
 "google/santa-tracker-android" ["l"="29.196,-35.617"]
+"GoogleChrome/guitar-tuner" ["l"="29.686,-33.864"]
+"GoogleChrome/voice-memos" ["l"="29.647,-33.813"]
 "Polymer/topeka" ["l"="29.195,-35.522"]
+"GoogleChrome/devsummit" ["l"="29.683,-33.769"]
 "Polymer/shop" ["l"="29.153,-35.402"]
 "ebidel/geo-location" ["l"="29.136,-35.563"]
 "GoogleChrome/ioweb2016" ["l"="29.192,-35.45"]
@@ -2142,6 +2169,7 @@ digraph G {
 "kripod/glaze" ["l"="25.84,-25.688"]
 "WICG/open-ui" ["l"="29.025,-35.217"]
 "thepassle/generic-components" ["l"="29.064,-35.188"]
+"MicrosoftEdge/MSEdgeExplainers" ["l"="29.17,-33.997"]
 "fymmot/inclusive-dates" ["l"="12.889,-34.12"]
 "patternfly/patternfly-elements" ["l"="29.113,-35.188"]
 "WICG/aom" ["l"="28.831,-28.941"]
@@ -2188,6 +2216,8 @@ digraph G {
 "th0r/webpack-bundle-analyzer" ["l"="25.523,-26.646"]
 "WICG/webcomponents" ["l"="29.59,-35.435"]
 "webpack/tapable" ["l"="23.093,-33.865"]
+"mdn/dom-examples" ["l"="29.485,-33.992"]
+"mdn/js-examples" ["l"="29.526,-33.999"]
 "module-federation/module-federation-examples" ["l"="13.954,-8.346"]
 "mvysny/karibu-dsl" ["l"="29.335,-35.088"]
 "mvysny/vaadin-on-kotlin" ["l"="29.365,-35.068"]
@@ -2242,10 +2272,12 @@ digraph G {
 "erikringsmuth/pushstate-anchor" ["l"="29.1,-35.524"]
 "addyosmani/polymer-filters" ["l"="29.129,-35.528"]
 "PolymerLabs/flatiron-director" ["l"="29.099,-35.539"]
+"robdodson/contacts-app" ["l"="29.757,-33.775"]
 "pwa-builder/pwa-starter" ["l"="29.152,-35.09"]
 "pwa-builder/pwa-auth" ["l"="29.198,-35.04"]
 "carbon-design-system/carbon-web-components" ["l"="29.119,-35.119"]
 "pwa-builder/pwa-update" ["l"="29.175,-35.05"]
+"mdn/pwa-examples" ["l"="29.586,-33.959"]
 "webcomponents/webcomponents.org" ["l"="29.141,-35.327"]
 "PolymerLabs/lit-element-starter-ts" ["l"="29.127,-35.304"]
 "PolymerLabs/lit-ssr" ["l"="29.258,-35.34"]
@@ -2295,12 +2327,14 @@ digraph G {
 "GoogleChromeLabs/AutoWebPerf" ["l"="28.405,-30.742"]
 "kefranabg/bento-starter" ["l"="16.204,-10.848"]
 "PWA-POLICE/pwa-bugs" ["l"="29.289,-34.815"]
+"mozilla/serviceworker-cookbook" ["l"="29.592,-33.733"]
 "lukeed/pwa" ["l"="25.721,-26.084"]
 "WICG/kv-storage" ["l"="8.791,-36.382"]
 "pwa-builder/PWABuilder-CLI" ["l"="29.298,-35.01"]
 "nuxt-community/pwa-module" ["l"="15.978,-10.859"]
 "GoogleChromeLabs/pwa-wp" ["l"="29.318,-34.98"]
 "pwa-builder/pwabuilder-blog" ["l"="29.258,-35.017"]
+"hemanth/awesome-pwa" ["l"="29.738,-33.821"]
 "elegantapp/pwa-asset-generator" ["l"="29.27,-34.995"]
 "vaadin/platform" ["l"="29.244,-35.155"]
 "vaadin/flow" ["l"="29.268,-35.146"]
@@ -2435,6 +2469,7 @@ digraph G {
 "aFarkas/requestIdleCallback" ["l"="29.208,-34.665"]
 "n6ai/minze" ["l"="28.889,-35.209"]
 "uicrooks/flowrift-space" ["l"="-9.595,-18.659"]
+"gokulkrishh/demo-progressive-web-app" ["l"="29.728,-33.914"]
 "web-padawan/awesome-web-components" ["l"="29.119,-35.046"]
 "microstream-one/microstream" ["l"="8.956,21.086"]
 "helidon-io/helidon" ["l"="29.262,-35.081"]
@@ -2514,6 +2549,10 @@ digraph G {
 "David-Mulder/paper-date-picker" ["l"="29.18,-35.508"]
 "tomas-langer/helidon-nima-example" ["l"="29.287,-35.064"]
 "WICG/manifest-incubations" ["l"="29.306,-34.878"]
+"heycam/webidl" ["l"="29.112,-34.055"]
+"w3c/ServiceWorker" ["l"="29.523,-33.777"]
+"mozilla/standards-positions" ["l"="29.243,-34.017"]
+"w3c/browser-specs" ["l"="29.333,-34.016"]
 "w3c/webappsec" ["l"="-22.247,-42.595"]
 "w3c/WebPlatformWG" ["l"="29.294,-34.864"]
 "PolymerLabs/start-polymer3" ["l"="29.143,-35.357"]
@@ -2568,6 +2607,7 @@ digraph G {
 "Polymer/TemplateBinding" ["l"="29.064,-35.544"]
 "koddsson/micropub-media-endpoint" ["l"="29.377,-35.271"]
 "gorork/paper-audio-player" ["l"="28.978,-35.46"]
+"GoogleChrome/sample-media-pwa" ["l"="29.706,-33.72"]
 "notwaldorf/lazy-image" ["l"="28.977,-35.426"]
 "googlesamples/io2015-codelabs" ["l"="29.319,-35.571"]
 "kevinpschaaf/chat-view-paper" ["l"="29.234,-35.501"]
@@ -2604,6 +2644,7 @@ digraph G {
 "WICG/time-to-interactive" ["l"="29.259,-34.559"]
 "josh/jquery-selector-set" ["l"="28.819,-35.509"]
 "spacedock-io/searchnod.es-site" ["l"="29.204,-35.17"]
+"PolymerLabs/zuperkulblog-progressive" ["l"="29.627,-33.837"]
 "StartPolymer/polymer-starter-kit-plus" ["l"="30.44,-21.68"]
 "googlesamples/calendar-sync" ["l"="29.396,-35.627"]
 "RedHat-UX/red-hat-design-system" ["l"="29.153,-35.159"]
