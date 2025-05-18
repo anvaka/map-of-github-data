@@ -1,0 +1,1057 @@
+digraph G {
+"coreos/rpm-ostree" -> "ostreedev/ostree"
+"coreos/rpm-ostree" -> "fedora-silverblue/issue-tracker"
+"coreos/rpm-ostree" -> "coreos/coreos-assembler"
+"coreos/rpm-ostree" -> "containers/toolbox"
+"coreos/rpm-ostree" -> "bootc-dev/bootc"
+"coreos/rpm-ostree" -> "projectatomic/atomic" ["e"=1]
+"coreos/rpm-ostree" -> "coreos/fedora-coreos-tracker"
+"coreos/rpm-ostree" -> "ublue-os/main"
+"coreos/rpm-ostree" -> "rpm-software-management/libdnf" ["e"=1]
+"coreos/rpm-ostree" -> "travier/fedora-sysexts"
+"coreos/rpm-ostree" -> "coreos/ignition"
+"coreos/rpm-ostree" -> "coreos/fedora-coreos-config"
+"coreos/rpm-ostree" -> "coreos/coreos-installer"
+"coreos/rpm-ostree" -> "ublue-os/hwe"
+"coreos/rpm-ostree" -> "coreos/layering-examples"
+"containers/toolbox" -> "coreos/rpm-ostree"
+"containers/toolbox" -> "89luca89/distrobox" ["e"=1]
+"containers/toolbox" -> "toolbx-images/images"
+"containers/toolbox" -> "ostreedev/ostree"
+"containers/toolbox" -> "flatpak/flatpak" ["e"=1]
+"containers/toolbox" -> "owtaylor/toolbox-vscode"
+"containers/toolbox" -> "containers/podman-compose" ["e"=1]
+"containers/toolbox" -> "marhkb/pods" ["e"=1]
+"containers/toolbox" -> "Malix-Labs/Awesome-Atomic"
+"containers/toolbox" -> "bootc-dev/bootc"
+"containers/toolbox" -> "tchx84/Flatseal" ["e"=1]
+"containers/toolbox" -> "ublue-os/main"
+"containers/toolbox" -> "fedora-silverblue/issue-tracker"
+"containers/toolbox" -> "containers/buildah" ["e"=1]
+"containers/toolbox" -> "systemd/mkosi"
+"coreos/fedora-coreos-tracker" -> "coreos/zincati"
+"coreos/fedora-coreos-tracker" -> "coreos/fedora-coreos-config"
+"coreos/fedora-coreos-tracker" -> "coreos/butane"
+"coreos/fedora-coreos-tracker" -> "coreos/coreos-assembler"
+"coreos/fedora-coreos-tracker" -> "coreos/coreos-installer"
+"coreos/fedora-coreos-tracker" -> "coreos/airlock"
+"coreos/fedora-coreos-tracker" -> "openshift/cincinnati"
+"coreos/fedora-coreos-tracker" -> "coreos/ignition"
+"coreos/fedora-coreos-tracker" -> "coreos/rpm-ostree"
+"coreos/fedora-coreos-tracker" -> "coreos/fedora-coreos-pipeline"
+"coreos/fedora-coreos-tracker" -> "coreos/bootupd"
+"coreos/fedora-coreos-tracker" -> "openshift/machine-config-operator"
+"coreos/fedora-coreos-tracker" -> "coreos/layering-examples"
+"coreos/fedora-coreos-tracker" -> "openshift/os"
+"openshift/os" -> "coreos/fedora-coreos-config"
+"openshift/os" -> "coreos/coreos-assembler"
+"openshift/os" -> "coreos/coreos-installer"
+"openshift/os" -> "coreos/fedora-coreos-pipeline"
+"tianon/docker-brew-ubuntu-core" -> "debuerreotype/docker-debian-artifacts"
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-config"
+"coreos/coreos-assembler" -> "coreos/coreos-installer"
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-pipeline"
+"coreos/coreos-assembler" -> "openshift/os"
+"coreos/coreos-assembler" -> "coreos/ignition"
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-tracker"
+"coreos/coreos-assembler" -> "coreos/afterburn"
+"coreos/coreos-assembler" -> "coreos/bootupd"
+"coreos/coreos-assembler" -> "openshift/machine-config-operator"
+"coreos/coreos-assembler" -> "coreos/rpm-ostree"
+"coreos/coreos-assembler" -> "coreos/zincati"
+"coreos/coreos-assembler" -> "fedora-iot/greenboot"
+"coreos/coreos-assembler" -> "coreos/butane"
+"coreos/coreos-assembler" -> "coreos/fedora-coreos-docs"
+"folbricht/desync" -> "systemd/casync"
+"folbricht/desync" -> "oll3/bita"
+"openshift/machine-config-operator" -> "openshift/cluster-version-operator" ["e"=1]
+"openshift/machine-config-operator" -> "openshift/machine-api-operator" ["e"=1]
+"openshift/machine-config-operator" -> "coreos/coreos-assembler"
+"openshift/machine-config-operator" -> "openshift/must-gather" ["e"=1]
+"openshift/machine-config-operator" -> "stolostron/deploy" ["e"=1]
+"openshift/machine-config-operator" -> "openshift/release" ["e"=1]
+"openshift/machine-config-operator" -> "coreos/ignition"
+"openshift/machine-config-operator" -> "openshift/hive" ["e"=1]
+"openshift/machine-config-operator" -> "openshift/enhancements" ["e"=1]
+"openshift/machine-config-operator" -> "openshift/api" ["e"=1]
+"openshift/machine-config-operator" -> "openshift/cluster-operator" ["e"=1]
+"openshift/machine-config-operator" -> "openshift/os"
+"openshift/cincinnati" -> "coreos/zincati"
+"openshift/cincinnati" -> "openshift/cincinnati-graph-data" ["e"=1]
+"coreos/fedora-coreos-config" -> "coreos/coreos-assembler"
+"coreos/fedora-coreos-config" -> "coreos/coreos-installer"
+"coreos/fedora-coreos-config" -> "coreos/fedora-coreos-pipeline"
+"coreos/fedora-coreos-config" -> "openshift/os"
+"coreos/fedora-coreos-config" -> "coreos/zincati"
+"coreos/fedora-coreos-config" -> "coreos/afterburn"
+"coreos/fedora-coreos-config" -> "coreos/fedora-coreos-tracker"
+"coreos/fedora-coreos-config" -> "coreos/fedora-coreos-docs"
+"coreos/fedora-coreos-config" -> "coreos/butane"
+"coreos/fedora-coreos-config" -> "coreos/bootupd"
+"nspawn/nspawn" -> "nspawn/mkosi-definitions"
+"coreos/fedora-coreos-pipeline" -> "coreos/enhancements"
+"coreos/coreos-installer" -> "coreos/zincati"
+"coreos/coreos-installer" -> "coreos/fedora-coreos-config"
+"coreos/coreos-installer" -> "coreos/afterburn"
+"coreos/coreos-installer" -> "coreos/fedora-coreos-docs"
+"coreos/coreos-installer" -> "coreos/butane"
+"coreos/coreos-installer" -> "coreos/fedora-coreos-pipeline"
+"coreos/coreos-installer" -> "coreos/coreos-assembler"
+"coreos/coreos-installer" -> "coreos/fedora-coreos-tracker"
+"coreos/coreos-installer" -> "openshift/os"
+"fedora-iot/greenboot" -> "coreos/bootupd"
+"fedora-iot/greenboot" -> "fdo-rs/fido-device-onboard-rs"
+"coreos/zincati" -> "coreos/airlock"
+"coreos/zincati" -> "openshift/cincinnati"
+"coreos/zincati" -> "coreos/fedora-coreos-docs"
+"coreos/zincati" -> "coreos/coreos-installer"
+"coreos/zincati" -> "coreos/afterburn"
+"coreos/butane" -> "coreos/ignition"
+"coreos/butane" -> "coreos/coreos-installer"
+"coreos/butane" -> "coreos/fedora-coreos-config"
+"coreos/butane" -> "coreos/fedora-coreos-tracker"
+"coreos/butane" -> "coreos/afterburn"
+"coreos/butane" -> "coreos/fedora-coreos-docs"
+"coreos/butane" -> "coreos/zincati"
+"coreos/butane" -> "coreos/ignition-dracut"
+"coreos/butane" -> "coreos/coreos-assembler"
+"coreos/butane" -> "coreos/layering-examples"
+"stb-tester/apt2ostree" -> "dbnicholson/deb-ostree-builder"
+"fedora-silverblue/issue-tracker" -> "fedora-silverblue/silverblue-docs"
+"fedora-silverblue/issue-tracker" -> "fedora-silverblue/silverblue-site"
+"fedora-silverblue/issue-tracker" -> "ublue-os/hwe"
+"fedora-silverblue/issue-tracker" -> "toolbx-images/images"
+"fedora-silverblue/issue-tracker" -> "coreos/rpm-ostree"
+"fedora-silverblue/silverblue-docs" -> "fedora-silverblue/silverblue-site"
+"fedora-silverblue/silverblue-docs" -> "fedora-silverblue/issue-tracker"
+"fedora-silverblue/silverblue-site" -> "fedora-silverblue/silverblue-docs"
+"Foxboron/sbctl" -> "andreyv/sbupdate"
+"Foxboron/sbctl" -> "anatol/booster"
+"Foxboron/sbctl" -> "Foxboron/go-uefi"
+"Foxboron/sbctl" -> "nix-community/lanzaboote" ["e"=1]
+"Foxboron/sbctl" -> "Foxboron/ssh-tpm-agent" ["e"=1]
+"Foxboron/sbctl" -> "systemd/mkosi"
+"Foxboron/sbctl" -> "zbm-dev/zfsbootmenu" ["e"=1]
+"Foxboron/sbctl" -> "ilya-zlobintsev/LACT" ["e"=1]
+"Foxboron/sbctl" -> "fwupd/fwupd" ["e"=1]
+"Foxboron/sbctl" -> "Morganamilo/paru" ["e"=1]
+"Foxboron/sbctl" -> "roddhjav/apparmor.d" ["e"=1]
+"Foxboron/sbctl" -> "ErikReider/SwayNotificationCenter" ["e"=1]
+"Foxboron/sbctl" -> "apognu/tuigreet" ["e"=1]
+"Foxboron/sbctl" -> "ValveSoftware/gamescope" ["e"=1]
+"Foxboron/sbctl" -> "tchx84/Flatseal" ["e"=1]
+"containers/libkrun" -> "containers/krunvm"
+"containers/libkrun" -> "containers/libkrunfw"
+"containers/libkrun" -> "containers/krunkit"
+"containers/libkrun" -> "AsahiLinux/muvm"
+"containers/libkrun" -> "QuarkContainer/Quark" ["e"=1]
+"containers/libkrun" -> "cloud-hypervisor/cloud-hypervisor" ["e"=1]
+"containers/libkrun" -> "coconut-svsm/svsm" ["e"=1]
+"containers/libkrun" -> "rust-vmm/vm-memory" ["e"=1]
+"containers/libkrun" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"containers/libkrun" -> "containers/netavark" ["e"=1]
+"containers/libkrun" -> "rust-vmm/kvm" ["e"=1]
+"containers/libkrun" -> "bootc-dev/bootc"
+"containers/libkrun" -> "rust-vmm/community" ["e"=1]
+"containers/libkrun" -> "composefs/composefs"
+"containers/libkrun" -> "crc-org/vfkit" ["e"=1]
+"divestedcg/Brace" -> "TommyTran732/Microsoft-Edge-Policies"
+"divestedcg/Brace" -> "TommyTran732/Windows-Setup"
+"coreos/bootupd" -> "ostreedev/ostree-rs-ext"
+"coreos/bootupd" -> "fedora-iot/greenboot"
+"coreos/bootupd" -> "coreos/layering-examples"
+"TenderOwl/Norka" -> "ellie-commons/communique"
+"coreos/container-linux-config-transpiler" -> "coreos/afterburn"
+"coreos/container-linux-config-transpiler" -> "coreos/container-linux-update-operator" ["e"=1]
+"coreos/container-linux-config-transpiler" -> "coreos/ignition"
+"ostreedev/ostree-rs-ext" -> "coreos/bootupd"
+"coreos/ignition" -> "coreos/butane"
+"coreos/ignition" -> "coreos/coreos-assembler"
+"coreos/ignition" -> "coreos/afterburn"
+"coreos/ignition" -> "poseidon/matchbox" ["e"=1]
+"coreos/ignition" -> "coreos/container-linux-config-transpiler"
+"coreos/ignition" -> "coreos/coreos-installer"
+"coreos/ignition" -> "openshift/machine-config-operator"
+"coreos/ignition" -> "coreos/fedora-coreos-tracker"
+"coreos/ignition" -> "coreos/container-linux-update-operator" ["e"=1]
+"coreos/ignition" -> "coreos/rpm-ostree"
+"coreos/ignition" -> "coreos/zincati"
+"coreos/ignition" -> "coreos/fedora-coreos-config"
+"coreos/ignition" -> "openshift/os"
+"coreos/ignition" -> "coreos/toolbox" ["e"=1]
+"coreos/ignition" -> "coreos/mantle" ["e"=1]
+"owtaylor/toolbox-vscode" -> "toolbx-images/images"
+"owtaylor/toolbox-vscode" -> "1player/host-spawn"
+"owtaylor/toolbox-vscode" -> "13hannes11/toolbox-tuner"
+"owtaylor/toolbox-vscode" -> "ublue-os/base"
+"owtaylor/toolbox-vscode" -> "fedora-silverblue/issue-tracker"
+"owtaylor/toolbox-vscode" -> "Malix-Labs/Awesome-Atomic"
+"owtaylor/toolbox-vscode" -> "ublue-os/awesome-custom-images"
+"owtaylor/toolbox-vscode" -> "iaacornus/silverblue-postinstall_upgrade"
+"owtaylor/toolbox-vscode" -> "j1mc/ansible-silverblue"
+"owtaylor/toolbox-vscode" -> "flatpak/flatpak-github-actions" ["e"=1]
+"owtaylor/toolbox-vscode" -> "sodaliterocks/sodalite"
+"owtaylor/toolbox-vscode" -> "containers/toolbox"
+"owtaylor/toolbox-vscode" -> "coreos/layering-examples"
+"owtaylor/toolbox-vscode" -> "castrojo/ublue"
+"owtaylor/toolbox-vscode" -> "bilelmoussaoui/flatpak-vscode" ["e"=1]
+"dracutdevs/dracut" -> "dracut-ng/dracut-ng"
+"dracutdevs/dracut" -> "anatol/booster"
+"dracutdevs/dracut" -> "rpm-software-management/mock" ["e"=1]
+"dracutdevs/dracut" -> "systemd/mkosi"
+"dracutdevs/dracut" -> "rpm-software-management/rpm" ["e"=1]
+"dracutdevs/dracut" -> "rhinstaller/anaconda" ["e"=1]
+"dracutdevs/dracut" -> "fedora-selinux/selinux-policy" ["e"=1]
+"dracutdevs/dracut" -> "shadow-maint/shadow" ["e"=1]
+"dracutdevs/dracut" -> "fedora-modularity/libmodulemd"
+"coreos/afterburn" -> "coreos/coreos-installer"
+"coreos/afterburn" -> "coreos/zincati"
+"ellie-commons/communique" -> "brain-child/moobo" ["e"=1]
+"ellie-commons/communique" -> "ellie-commons/Jorts"
+"containers/krunvm" -> "containers/libkrun"
+"containers/krunvm" -> "bootc-dev/bootc"
+"containers/krunvm" -> "containers/crun-vm"
+"containers/krunvm" -> "containers/libkrunfw"
+"containers/krunvm" -> "composefs/composefs"
+"containers/krunvm" -> "weaveworks/ignite" ["e"=1]
+"containers/krunvm" -> "AsahiLinux/muvm"
+"containers/krunvm" -> "firecracker-microvm/firecracker-go-sdk" ["e"=1]
+"containers/krunvm" -> "project-zot/zot" ["e"=1]
+"containers/krunvm" -> "firecracker-microvm/firecracker-containerd" ["e"=1]
+"containers/krunvm" -> "containers/udica" ["e"=1]
+"containers/krunvm" -> "ottomatica/slim" ["e"=1]
+"containers/krunvm" -> "openshift/microshift" ["e"=1]
+"containers/krunvm" -> "sigstore/gitsign" ["e"=1]
+"containers/krunvm" -> "blockjoy/firec" ["e"=1]
+"anatol/booster" -> "dracutdevs/dracut"
+"anatol/booster" -> "anatol/vmtest"
+"anatol/booster" -> "Foxboron/sbctl"
+"anatol/booster" -> "anatol/luks.go"
+"anatol/booster" -> "Foxboron/go-uefi"
+"anatol/booster" -> "dracut-ng/dracut-ng"
+"anatol/booster" -> "distr1/distri" ["e"=1]
+"castrojo/ublue" -> "ublue-os/base"
+"castrojo/ublue" -> "j1mc/ansible-silverblue"
+"castrojo/ublue" -> "ublue-os/ubuntu"
+"castrojo/ublue" -> "castrojo/ublue-image"
+"project-machine/puzzlefs" -> "composefs/composefs"
+"TommyTran732/Linux-Setup-Scripts" -> "TommyTran732/Windows-Setup"
+"TommyTran732/Linux-Setup-Scripts" -> "TommyTran732/Microsoft-Edge-Policies"
+"ostreedev/ostree" -> "coreos/rpm-ostree"
+"ostreedev/ostree" -> "bootc-dev/bootc"
+"ostreedev/ostree" -> "containers/toolbox"
+"ostreedev/ostree" -> "coreos/coreos-assembler"
+"ostreedev/ostree" -> "advancedtelematic/meta-updater" ["e"=1]
+"ostreedev/ostree" -> "composefs/composefs"
+"ostreedev/ostree" -> "flatpak/flatpak" ["e"=1]
+"ostreedev/ostree" -> "coreos/fedora-coreos-tracker"
+"ostreedev/ostree" -> "advancedtelematic/aktualizr" ["e"=1]
+"ostreedev/ostree" -> "fedora-silverblue/issue-tracker"
+"ostreedev/ostree" -> "coreos/layering-examples"
+"ostreedev/ostree" -> "coreos/ignition"
+"ostreedev/ostree" -> "osbuild/osbuild" ["e"=1]
+"ostreedev/ostree" -> "Vanilla-OS/ABRoot" ["e"=1]
+"ostreedev/ostree" -> "systemd/mkosi"
+"composefs/composefs" -> "coreos/bootupd"
+"composefs/composefs" -> "project-machine/puzzlefs"
+"composefs/composefs" -> "containers/initoverlayfs"
+"composefs/composefs" -> "bootc-dev/bootc"
+"composefs/composefs" -> "ostreedev/ostree-rs-ext"
+"composefs/composefs" -> "osbuild/bootc-image-builder"
+"composefs/composefs" -> "containers/crun-vm"
+"composefs/composefs" -> "osbuild/osbuild" ["e"=1]
+"composefs/composefs" -> "ostreedev/ostreefs"
+"composefs/composefs" -> "containers/composefs-rs"
+"composefs/composefs" -> "stb-tester/apt2ostree"
+"composefs/composefs" -> "travier/fedora-sysexts"
+"composefs/composefs" -> "fedora-iot/greenboot"
+"composefs/composefs" -> "containerd/nydus-snapshotter" ["e"=1]
+"lambdanil/astOS" -> "ashos/ashos"
+"lambdanil/astOS" -> "M1cha/archlinux-ostree"
+"Malix-Labs/Awesome-Atomic" -> "ublue-os/main"
+"Malix-Labs/Awesome-Atomic" -> "toolbx-images/images"
+"Malix-Labs/Awesome-Atomic" -> "owtaylor/toolbox-vscode"
+"Malix-Labs/Awesome-Atomic" -> "castrojo/ublue"
+"Malix-Labs/Awesome-Atomic" -> "ashos/ashos"
+"Malix-Labs/Awesome-Atomic" -> "coreos/rpm-ostree"
+"Malix-Labs/Awesome-Atomic" -> "ublue-os/bluefin"
+"Malix-Labs/Awesome-Atomic" -> "bootc-dev/bootc"
+"Malix-Labs/Awesome-Atomic" -> "containers/toolbox"
+"Malix-Labs/Awesome-Atomic" -> "ublue-os/awesome-custom-images"
+"Malix-Labs/Awesome-Atomic" -> "lambdanil/astOS"
+"Malix-Labs/Awesome-Atomic" -> "wayblueorg/wayblue"
+"Malix-Labs/Awesome-Atomic" -> "sodaliterocks/sodalite"
+"Malix-Labs/Awesome-Atomic" -> "Vanilla-OS/ABRoot" ["e"=1]
+"Malix-Labs/Awesome-Atomic" -> "j1mc/ansible-silverblue"
+"navidys/tvxwidgets" -> "epiclabs-io/winman"
+"containers/podman-tui" -> "marhkb/pods" ["e"=1]
+"containers/podman-tui" -> "containers/prometheus-podman-exporter"
+"containers/podman-tui" -> "containers/fetchit" ["e"=1]
+"containers/podman-tui" -> "containers/podlet"
+"containers/podman-tui" -> "cockpit-project/cockpit-podman" ["e"=1]
+"containers/podman-tui" -> "navidys/tvxwidgets"
+"sodaliterocks/sodalite" -> "ublue-os/beyond"
+"sodaliterocks/sodalite" -> "vala-lang/valdo" ["e"=1]
+"sodaliterocks/sodalite" -> "ellie-commons/eOSdock-themeswitcher"
+"containers/quadlet" -> "ostreedev/ostreefs"
+"coreos/layering-examples" -> "coreos/bootupd"
+"coreos/layering-examples" -> "osbuild/bootc-image-builder"
+"coreos/layering-examples" -> "CheariX/silverblue-akmods-keys"
+"coreos/layering-examples" -> "ublue-os/awesome-custom-images"
+"ashos/ashos" -> "lambdanil/astOS"
+"j1mc/ansible-silverblue" -> "j1mc/ansible-silverblue-oci"
+"j1mc/ansible-silverblue" -> "mrckndt/silverblue-playbook"
+"j1mc/ansible-silverblue" -> "ublue-os/base"
+"j1mc/ansible-silverblue" -> "ublue-os/ubuntu"
+"containers/bubblewrap" -> "netblue30/firejail" ["e"=1]
+"containers/bubblewrap" -> "flatpak/flatpak" ["e"=1]
+"containers/bubblewrap" -> "google/nsjail" ["e"=1]
+"containers/bubblewrap" -> "igo95862/bubblejail" ["e"=1]
+"containers/bubblewrap" -> "ostreedev/ostree"
+"containers/bubblewrap" -> "coreos/rpm-ostree"
+"containers/bubblewrap" -> "rootless-containers/slirp4netns" ["e"=1]
+"containers/bubblewrap" -> "containers/crun" ["e"=1]
+"containers/bubblewrap" -> "containers/toolbox"
+"containers/bubblewrap" -> "ValveSoftware/gamescope" ["e"=1]
+"containers/bubblewrap" -> "systemd/mkosi"
+"containers/bubblewrap" -> "containers/buildah" ["e"=1]
+"containers/bubblewrap" -> "genuinetools/binctr" ["e"=1]
+"containers/bubblewrap" -> "Smithay/smithay" ["e"=1]
+"containers/bubblewrap" -> "systemd/casync"
+"pobthebuilder/resolve-flatpak" -> "zelikos/davincibox"
+"uapi-group/specifications" -> "uapi-group/kernel-features"
+"toolbx-images/images" -> "ublue-os/boxkit"
+"toolbx-images/images" -> "owtaylor/toolbox-vscode"
+"toolbx-images/images" -> "akdev1l/toolbox-images"
+"toolbx-images/images" -> "ublue-os/awesome-custom-images"
+"toolbx-images/images" -> "fedora-silverblue/issue-tracker"
+"toolbx-images/images" -> "coreos/layering-examples"
+"toolbx-images/images" -> "ublue-os/toolboxes"
+"toolbx-images/images" -> "ublue-os/base"
+"toolbx-images/images" -> "blue-build/legacy-template"
+"toolbx-images/images" -> "Malix-Labs/Awesome-Atomic"
+"toolbx-images/images" -> "ublue-os/main"
+"toolbx-images/images" -> "containers/toolbox"
+"toolbx-images/images" -> "13hannes11/toolbox-tuner"
+"toolbx-images/images" -> "ublue-os/hwe"
+"toolbx-images/images" -> "sodaliterocks/sodalite"
+"CheariX/silverblue-akmods-keys" -> "coreos/layering-examples"
+"CheariX/silverblue-akmods-keys" -> "nelsonaloysio/build-kmod-nvidia-signed-rpm"
+"bootc-dev/bootc" -> "osbuild/bootc-image-builder"
+"bootc-dev/bootc" -> "coreos/rpm-ostree"
+"bootc-dev/bootc" -> "coreos/bootupd"
+"bootc-dev/bootc" -> "composefs/composefs"
+"bootc-dev/bootc" -> "ostreedev/ostree"
+"bootc-dev/bootc" -> "ublue-os/main"
+"bootc-dev/bootc" -> "podman-desktop/extension-bootc"
+"bootc-dev/bootc" -> "CentOS/centos-bootc"
+"bootc-dev/bootc" -> "coreos/layering-examples"
+"bootc-dev/bootc" -> "containers/podlet"
+"bootc-dev/bootc" -> "containers/crun-vm"
+"bootc-dev/bootc" -> "ublue-os/cosmic"
+"bootc-dev/bootc" -> "Malix-Labs/Awesome-Atomic"
+"bootc-dev/bootc" -> "containers/toolbox"
+"bootc-dev/bootc" -> "containers/krunvm"
+"ublue-os/base" -> "ublue-os/awesome-custom-images"
+"ublue-os/base" -> "ublue-os/ubuntu"
+"ublue-os/base" -> "castrojo/ublue"
+"ublue-os/base" -> "j1mc/ansible-silverblue"
+"ublue-os/boxkit" -> "ublue-os/toolboxes"
+"ublue-os/boxkit" -> "toolbx-images/images"
+"ublue-os/boxkit" -> "blue-build/template"
+"ublue-os/boxkit" -> "ublue-os/arch-distrobox"
+"ublue-os/boxkit" -> "ublue-os/image-template"
+"ublue-os/boxkit" -> "akdev1l/zerolayer"
+"ublue-os/boxkit" -> "blue-build/legacy-template"
+"ublue-os/boxkit" -> "JasonN3/build-container-installer"
+"ublue-os/boxkit" -> "ublue-os/forge"
+"ublue-os/boxkit" -> "ublue-os/config"
+"ublue-os/boxkit" -> "ublue-os/bazzite-arch"
+"ublue-os/boxkit" -> "ublue-os/main"
+"ublue-os/boxkit" -> "ublue-os/awesome-custom-images"
+"ublue-os/hwe" -> "ublue-os/main"
+"ublue-os/hwe" -> "ublue-os/config"
+"ublue-os/hwe" -> "ublue-os/akmods"
+"ublue-os/hwe" -> "fedora-silverblue/issue-tracker"
+"ublue-os/hwe" -> "blue-build/template"
+"ublue-os/hwe" -> "ublue-os/toolboxes"
+"ublue-os/hwe" -> "ublue-os/ucore"
+"ublue-os/hwe" -> "wayblueorg/wayblue"
+"ublue-os/hwe" -> "blue-build/legacy-template"
+"ublue-os/hwe" -> "akdev1l/zerolayer"
+"ublue-os/hwe" -> "travier/fedora-sysexts"
+"ublue-os/hwe" -> "ublue-os/base"
+"ublue-os/awesome-custom-images" -> "ublue-os/base"
+"terrapkg/packages" -> "FyraLabs/anda"
+"terrapkg/packages" -> "FyraLabs/readymade"
+"terrapkg/packages" -> "Ultramarine-Linux/packages"
+"aguslr/bluevanilla" -> "aguslr/bluefusion"
+"systemd/mkosi" -> "systemd/casync"
+"systemd/mkosi" -> "systemd/particleos"
+"systemd/mkosi" -> "dracutdevs/dracut"
+"systemd/mkosi" -> "ostreedev/ostree"
+"systemd/mkosi" -> "bootc-dev/bootc"
+"systemd/mkosi" -> "containers/toolbox"
+"systemd/mkosi" -> "anatol/booster"
+"systemd/mkosi" -> "weldr/lorax" ["e"=1]
+"systemd/mkosi" -> "Foxboron/sbctl"
+"systemd/mkosi" -> "go-debos/debos"
+"systemd/mkosi" -> "nspawn/nspawn"
+"systemd/mkosi" -> "uapi-group/specifications"
+"systemd/mkosi" -> "arighi/virtme-ng" ["e"=1]
+"systemd/mkosi" -> "containers/bubblewrap"
+"systemd/mkosi" -> "composefs/composefs"
+"ublue-os/fleek" -> "akdev1l/zerolayer"
+"ublue-os/fleek" -> "ublue-os/boxkit"
+"ublue-os/fleek" -> "ublue-os/main"
+"ublue-os/fleek" -> "ublue-os/base"
+"ublue-os/fleek" -> "ublue-os/toolboxes"
+"ublue-os/fleek" -> "dnkmmr69420/nix-installer-scripts"
+"ublue-os/fleek" -> "ublue-os/ucore"
+"ublue-os/fleek" -> "blue-build/legacy-template"
+"ublue-os/fleek" -> "ublue-os/awesome-custom-images"
+"ublue-os/bluefin" -> "ublue-os/main"
+"ublue-os/bluefin" -> "ublue-os/bazzite" ["e"=1]
+"ublue-os/bluefin" -> "ublue-os/aurora"
+"ublue-os/bluefin" -> "ublue-os/ucore"
+"ublue-os/bluefin" -> "ublue-os/image-template"
+"ublue-os/bluefin" -> "ublue-os/cosmic"
+"ublue-os/bluefin" -> "NiHaiden/aurora"
+"ublue-os/bluefin" -> "wayblueorg/wayblue"
+"ublue-os/bluefin" -> "Malix-Labs/Awesome-Atomic"
+"ublue-os/bluefin" -> "blue-build/template"
+"ublue-os/bluefin" -> "secureblue/secureblue"
+"ublue-os/bluefin" -> "Dvlv/BoxBuddyRS"
+"ublue-os/bluefin" -> "89luca89/distrobox" ["e"=1]
+"ublue-os/bluefin" -> "ublue-os/boxkit"
+"ublue-os/bluefin" -> "ublue-os/toolboxes"
+"containers/podlet" -> "bootc-dev/bootc"
+"containers/podlet" -> "dwedia/podmanQuadlets"
+"containers/podlet" -> "fpatrick/podman-quadlet"
+"containers/podlet" -> "containers/podman-tui"
+"containers/podlet" -> "travier/fedora-sysexts"
+"containers/podlet" -> "eriksjolund/podman-networking-docs"
+"containers/podlet" -> "marhkb/pods" ["e"=1]
+"containers/podlet" -> "containers/udica" ["e"=1]
+"containers/podlet" -> "containers/appstore"
+"containers/podlet" -> "containers/crun-vm"
+"containers/podlet" -> "k9withabone/autocast"
+"containers/podlet" -> "containers/quadlet"
+"containers/podlet" -> "podman-desktop/extension-bootc"
+"containers/podlet" -> "coreos/layering-examples"
+"containers/podlet" -> "cockpit-project/cockpit-podman" ["e"=1]
+"xmikos/cryptboot" -> "kmille/cryptboot"
+"xmikos/cryptboot" -> "andreyv/sbupdate"
+"systemd/particleos" -> "systemd/mkosi"
+"systemd/particleos" -> "lxc/incus-os" ["e"=1]
+"systemd/particleos" -> "travier/fedora-sysexts"
+"zelikos/davincibox" -> "pobthebuilder/resolve-flatpak"
+"zelikos/davincibox" -> "fat-tire/resolve" ["e"=1]
+"zelikos/davincibox" -> "H3rz3n/davinci-helper"
+"zelikos/davincibox" -> "ublue-os/bazzite-arch"
+"zelikos/davincibox" -> "ublue-os/image-template"
+"zelikos/davincibox" -> "Twig6943/AffinityOnLinux"
+"zelikos/davincibox" -> "ublue-os/boxkit"
+"zelikos/davincibox" -> "ublue-os/main"
+"zelikos/davincibox" -> "GloriousEggroll/flatpost"
+"zelikos/davincibox" -> "ublue-os/ucore"
+"zelikos/davincibox" -> "H3rz3n/Davinci-Resolve-Fedora-38-39-40-Fix"
+"secureblue/secureblue" -> "secureblue/Trivalent"
+"secureblue/secureblue" -> "wayblueorg/wayblue"
+"secureblue/secureblue" -> "blue-build/template"
+"secureblue/secureblue" -> "divestedcg/Brace"
+"secureblue/secureblue" -> "PrivSec-dev/privsec.dev" ["e"=1]
+"secureblue/secureblue" -> "ublue-os/main"
+"secureblue/secureblue" -> "Kicksecure/security-misc" ["e"=1]
+"secureblue/secureblue" -> "ublue-os/hwe"
+"secureblue/secureblue" -> "JasonN3/build-container-installer"
+"secureblue/secureblue" -> "ublue-os/cosmic"
+"secureblue/secureblue" -> "igo95862/bubblejail" ["e"=1]
+"secureblue/secureblue" -> "blue-build/cli"
+"secureblue/secureblue" -> "ublue-os/bluefin"
+"secureblue/secureblue" -> "Dvlv/BoxBuddyRS"
+"secureblue/secureblue" -> "NiHaiden/aurora"
+"ublue-os/ucore" -> "ublue-os/main"
+"ublue-os/ucore" -> "ublue-os/aurora"
+"ublue-os/ucore" -> "ublue-os/akmods"
+"ublue-os/ucore" -> "NiHaiden/aurora"
+"ublue-os/ucore" -> "JasonN3/build-container-installer"
+"ublue-os/ucore" -> "ublue-os/image-template"
+"ublue-os/ucore" -> "ublue-os/hwe"
+"ublue-os/ucore" -> "blue-build/legacy-template"
+"ublue-os/ucore" -> "ublue-os/bluefin-lts"
+"ublue-os/ucore" -> "ublue-os/packages"
+"ublue-os/ucore" -> "ublue-os/bluefin"
+"ublue-os/ucore" -> "ublue-os/awesome-custom-images"
+"ublue-os/ucore" -> "ublue-os/sysext"
+"ublue-os/ucore" -> "travier/fedora-sysexts"
+"ublue-os/ucore" -> "coreos/layering-examples"
+"ublue-os/main" -> "ublue-os/hwe"
+"ublue-os/main" -> "blue-build/legacy-template"
+"ublue-os/main" -> "ublue-os/bluefin"
+"ublue-os/main" -> "ublue-os/ucore"
+"ublue-os/main" -> "blue-build/template"
+"ublue-os/main" -> "ublue-os/image-template"
+"ublue-os/main" -> "ublue-os/base"
+"ublue-os/main" -> "Malix-Labs/Awesome-Atomic"
+"ublue-os/main" -> "ublue-os/aurora"
+"ublue-os/main" -> "ublue-os/toolboxes"
+"ublue-os/main" -> "ublue-os/boxkit"
+"ublue-os/main" -> "wayblueorg/wayblue"
+"ublue-os/main" -> "travier/fedora-sysexts"
+"ublue-os/main" -> "ublue-os/config"
+"ublue-os/main" -> "NiHaiden/aurora"
+"blue-build/legacy-template" -> "blue-build/cli"
+"blue-build/legacy-template" -> "ublue-os/main"
+"blue-build/legacy-template" -> "ublue-os/website"
+"blue-build/legacy-template" -> "blue-build/template"
+"blue-build/legacy-template" -> "ublue-os/awesome-custom-images"
+"blue-build/legacy-template" -> "wayblueorg/wayblue"
+"blue-build/legacy-template" -> "ublue-os/config"
+"blue-build/legacy-template" -> "ublue-os/isogenerator-old"
+"blue-build/legacy-template" -> "ublue-os/beyond"
+"blue-build/legacy-template" -> "akdev1l/zerolayer"
+"blue-build/legacy-template" -> "xynydev/create-ublue-image"
+"blue-build/legacy-template" -> "ublue-os/boxkit"
+"ublue-os/akmods" -> "ublue-os/config"
+"ublue-os/akmods" -> "ublue-os/sysext"
+"M1cha/archlinux-ostree" -> "GrabbenD/ostree-utility"
+"FyraLabs/readymade" -> "ublue-os/titanoboa"
+"FyraLabs/readymade" -> "ublue-os/universal-blue-org"
+"FyraLabs/readymade" -> "ublue-os/isogenerator"
+"DEM0NAssissan7/mosaic" -> "ublue-os/beyond"
+"andreyv/sbupdate" -> "xmikos/cryptboot"
+"andreyv/sbupdate" -> "Foxboron/sbctl"
+"ublue-os/bazzite-arch" -> "ublue-os/boxkit"
+"ublue-os/bazzite-arch" -> "travier/fedora-sysexts"
+"ublue-os/bazzite-arch" -> "ublue-os/image-template"
+"ublue-os/bazzite-arch" -> "wayblueorg/wayblue"
+"GrabbenD/ostree-utility" -> "M1cha/archlinux-ostree"
+"ublue-os/config" -> "akdev1l/zerolayer"
+"ublue-os/config" -> "ublue-os/website"
+"ublue-os/config" -> "ublue-os/akmods"
+"ublue-os/config" -> "ublue-os/isogenerator-old"
+"dnkmmr69420/nix-installer-scripts" -> "dnkmmr69420/nix-with-selinux"
+"ublue-os/yafti" -> "ublue-os/forge"
+"dbnicholson/deb-ostree-builder" -> "stb-tester/apt2ostree"
+"TommyTran732/Microsoft-Edge-Policies" -> "TommyTran732/Windows-Setup"
+"containers/appstore" -> "ublue-os/packages"
+"ublue-os/forge" -> "ublue-os/yafti"
+"astrovm/amyos" -> "BillyAddlers/stellarite"
+"aguslr/bluefusion" -> "aguslr/bluevanilla"
+"ublue-os/image-template" -> "ublue-os/boxkit"
+"ublue-os/image-template" -> "blue-build/template"
+"ublue-os/image-template" -> "ublue-os/aurora"
+"ublue-os/image-template" -> "ublue-os/main"
+"ublue-os/image-template" -> "ublue-os/ucore"
+"ublue-os/image-template" -> "JasonN3/build-container-installer"
+"ublue-os/image-template" -> "wayblueorg/wayblue"
+"ublue-os/image-template" -> "ublue-os/bazzite-arch"
+"ublue-os/image-template" -> "ublue-os/bluefin"
+"ublue-os/image-template" -> "ublue-os/bluefin-lts"
+"ublue-os/image-template" -> "ublue-os/akmods"
+"ublue-os/image-template" -> "osbuild/bootc-image-builder"
+"ublue-os/image-template" -> "ublue-os/cosmic"
+"ublue-os/image-template" -> "ublue-os/toolboxes"
+"ublue-os/image-template" -> "noelmiller/isengard"
+"Dvlv/BoxBuddyRS" -> "ublue-os/toolboxes"
+"Dvlv/BoxBuddyRS" -> "marhkb/pods" ["e"=1]
+"Dvlv/BoxBuddyRS" -> "ublue-os/akmods"
+"Dvlv/BoxBuddyRS" -> "ranfdev/DistroShelf"
+"Dvlv/BoxBuddyRS" -> "ublue-os/cosmic"
+"Dvlv/BoxBuddyRS" -> "travier/fedora-sysexts"
+"Dvlv/BoxBuddyRS" -> "ublue-os/titanoboa"
+"Dvlv/BoxBuddyRS" -> "flattool/warehouse" ["e"=1]
+"Dvlv/BoxBuddyRS" -> "ublue-os/beyond"
+"Dvlv/BoxBuddyRS" -> "FyraLabs/readymade"
+"Dvlv/BoxBuddyRS" -> "Containerpak/cpak"
+"Dvlv/BoxBuddyRS" -> "ublue-os/boxkit"
+"Dvlv/BoxBuddyRS" -> "ublue-os/main"
+"Dvlv/BoxBuddyRS" -> "kra-mo/cartridges" ["e"=1]
+"Dvlv/BoxBuddyRS" -> "AtomsDevs/Atoms" ["e"=1]
+"ublue-os/cosmic" -> "wayblueorg/wayblue"
+"ublue-os/cosmic" -> "ublue-os/titanoboa"
+"ublue-os/cosmic" -> "blue-build/cli"
+"ublue-os/cosmic" -> "blue-build/legacy-template"
+"ublue-os/cosmic" -> "travier/fedora-sysexts"
+"ublue-os/cosmic" -> "FyraLabs/readymade"
+"ublue-os/cosmic" -> "JasonN3/build-container-installer"
+"ublue-os/cosmic" -> "cosmic-utils/web-apps" ["e"=1]
+"ublue-os/cosmic" -> "ublue-os/main"
+"ublue-os/cosmic" -> "pop-os/cosmic-files" ["e"=1]
+"ublue-os/cosmic" -> "pop-os/cosmic-player" ["e"=1]
+"ublue-os/cosmic" -> "blue-build/template"
+"ublue-os/cosmic" -> "ublue-os/image-template"
+"ublue-os/cosmic" -> "D-Brox/cosmic-ext-applet-privacy-indicator" ["e"=1]
+"systemd/casync" -> "folbricht/desync"
+"systemd/casync" -> "systemd/mkosi"
+"systemd/casync" -> "zchunk/zchunk"
+"systemd/casync" -> "rauc/rauc" ["e"=1]
+"systemd/casync" -> "composefs/composefs"
+"systemd/casync" -> "bus1/dbus-broker" ["e"=1]
+"systemd/casync" -> "oll3/bita"
+"systemd/casync" -> "rauc/meta-rauc" ["e"=1]
+"systemd/casync" -> "ostreedev/ostree"
+"systemd/casync" -> "containers/bubblewrap"
+"systemd/casync" -> "tazjin/nixery" ["e"=1]
+"systemd/casync" -> "dpc/rdedup" ["e"=1]
+"systemd/casync" -> "containers/libkrun"
+"AsahiLinux/muvm" -> "containers/libkrun"
+"osbuild/bootc-image-builder" -> "bootc-dev/bootc"
+"osbuild/bootc-image-builder" -> "coreos/layering-examples"
+"osbuild/bootc-image-builder" -> "coreos/bootupd"
+"osbuild/bootc-image-builder" -> "containers/podman-bootc"
+"osbuild/bootc-image-builder" -> "podman-desktop/extension-bootc"
+"osbuild/bootc-image-builder" -> "CentOS/centos-bootc"
+"osbuild/bootc-image-builder" -> "travier/fedora-sysexts"
+"osbuild/bootc-image-builder" -> "vrothberg/fedora-bootc-workstation"
+"osbuild/bootc-image-builder" -> "JasonN3/build-container-installer"
+"osbuild/bootc-image-builder" -> "ublue-os/titanoboa"
+"podman-desktop/extension-bootc" -> "osbuild/bootc-image-builder"
+"podman-desktop/extension-bootc" -> "JasonN3/build-container-installer"
+"podman-desktop/extension-bootc" -> "containers/crun-vm"
+"podman-desktop/extension-bootc" -> "coreos/layering-examples"
+"podman-desktop/extension-bootc" -> "vrothberg/fedora-bootc-workstation"
+"podman-desktop/extension-bootc" -> "ublue-os/yai"
+"bkircher/python-rpm-spec" -> "ostreedev/ostreefs"
+"containers/crun-vm" -> "CentOS/centos-bootc"
+"containers/crun-vm" -> "travier/fedora-sysexts"
+"blue-build/template" -> "blue-build/cli"
+"blue-build/template" -> "wayblueorg/wayblue"
+"blue-build/template" -> "blue-build/legacy-template"
+"blue-build/template" -> "blue-build/modules"
+"blue-build/template" -> "ublue-os/boxkit"
+"blue-build/template" -> "JasonN3/build-container-installer"
+"blue-build/template" -> "ublue-os/main"
+"blue-build/template" -> "ublue-os/image-template"
+"blue-build/template" -> "travier/fedora-sysexts"
+"blue-build/template" -> "blue-build/github-action"
+"blue-build/template" -> "ublue-os/hwe"
+"blue-build/template" -> "aguslr/bluefusion"
+"blue-build/template" -> "ublue-os/toolboxes"
+"ublue-os/toolboxes" -> "ublue-os/boxkit"
+"ublue-os/toolboxes" -> "ublue-os/sysext"
+"ublue-os/toolboxes" -> "ublue-os/config"
+"ublue-os/toolboxes" -> "ublue-os/akmods"
+"ublue-os/toolboxes" -> "akdev1l/zerolayer"
+"ublue-os/toolboxes" -> "ublue-os/packages"
+"ublue-os/toolboxes" -> "travier/fedora-sysexts"
+"ublue-os/toolboxes" -> "FyraLabs/readymade"
+"ublue-os/toolboxes" -> "ublue-os/universal-blue-org"
+"blue-build/cli" -> "blue-build/modules"
+"blue-build/cli" -> "blue-build/github-action"
+"blue-build/cli" -> "blue-build/template"
+"blue-build/cli" -> "akdev1l/zerolayer"
+"blue-build/cli" -> "JasonN3/build-container-installer"
+"blue-build/cli" -> "ublue-os/titanoboa"
+"blue-build/cli" -> "blue-build/legacy-template"
+"blue-build/cli" -> "FyraLabs/readymade"
+"JasonN3/build-container-installer" -> "ublue-os/isogenerator"
+"JasonN3/build-container-installer" -> "ublue-os/titanoboa"
+"JasonN3/build-container-installer" -> "FyraLabs/readymade"
+"JasonN3/build-container-installer" -> "blue-build/cli"
+"JasonN3/build-container-installer" -> "ublue-os/forge"
+"JasonN3/build-container-installer" -> "travier/fedora-sysexts"
+"JasonN3/build-container-installer" -> "ublue-os/universal-blue-org"
+"JasonN3/build-container-installer" -> "ublue-os/packages"
+"wayblueorg/wayblue" -> "blue-build/template"
+"wayblueorg/wayblue" -> "blue-build/cli"
+"wayblueorg/wayblue" -> "blue-build/legacy-template"
+"wayblueorg/wayblue" -> "blue-build/modules"
+"wayblueorg/wayblue" -> "JasonN3/build-container-installer"
+"wayblueorg/wayblue" -> "ublue-os/cosmic"
+"wayblueorg/wayblue" -> "secureblue/secureblue"
+"wayblueorg/wayblue" -> "ublue-os/hwe"
+"wayblueorg/wayblue" -> "ublue-os/toolboxes"
+"wayblueorg/wayblue" -> "ublue-os/main"
+"wayblueorg/wayblue" -> "ublue-os/image-template"
+"wayblueorg/wayblue" -> "ublue-os/bazzite-arch"
+"ublue-os/sysext" -> "centos-workstation/main"
+"containers/bootable" -> "ublue-os/yai"
+"ublue-os/isogenerator" -> "fedora-asahi-remix-atomic-desktops/images"
+"TommyTran732/Windows-Setup" -> "TommyTran732/Microsoft-Edge-Policies"
+"ublue-os/universal-blue-org" -> "centos-workstation/main"
+"Twig6943/AffinityOnLinux" -> "ryzendew/AffinityOnLinux"
+"Twig6943/AffinityOnLinux" -> "daegalus/wine-tkg-affinity"
+"Twig6943/AffinityOnLinux" -> "zelikos/davincibox"
+"ryzendew/AffinityOnLinux" -> "Twig6943/AffinityOnLinux"
+"ryzendew/AffinityOnLinux" -> "daniel080400/AffinityLinuxTut"
+"H3rz3n/davinci-helper" -> "H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux"
+"H3rz3n/davinci-helper" -> "H3rz3n/Davinci-Resolve-Fedora-38-39-40-Fix"
+"H3rz3n/davinci-helper" -> "yioannides/fedora-resolve"
+"fpatrick/podman-quadlet" -> "redbeardymcgee/podbox"
+"fpatrick/podman-quadlet" -> "fpatrick/compose"
+"travier/fedora-sysexts" -> "ublue-os/titanoboa"
+"travier/fedora-sysexts" -> "FyraLabs/readymade"
+"travier/fedora-sysexts" -> "ublue-os/packages"
+"travier/fedora-sysexts" -> "ublue-os/universal-blue-org"
+"travier/fedora-sysexts" -> "ublue-os/yai"
+"travier/fedora-sysexts" -> "ublue-os/toolboxes"
+"secureblue/Trivalent" -> "secureblue/secureblue"
+"secureblue/Trivalent" -> "divestedcg/Brace"
+"ublue-os/bluefin-lts" -> "ublue-os/aurora-lts"
+"m2Giles/m2os" -> "centos-workstation/main"
+"H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux" -> "H3rz3n/davinci-helper"
+"ellie-commons/eOSdock-themeswitcher" -> "ellie-commons/Jorts"
+"go-debos/debos" -> "go-debos/fakemachine"
+"go-debos/debos" -> "go-debos/debos-recipes"
+"go-debos/debos" -> "ilbers/isar" ["e"=1]
+"go-debos/debos" -> "stb-tester/apt2ostree"
+"go-debos/debos" -> "Linutronix/elbe" ["e"=1]
+"go-debos/debos" -> "composefs/composefs"
+"go-debos/debos" -> "systemd/mkosi"
+"go-debos/debos" -> "debuerreotype/debuerreotype"
+"go-debos/debos" -> "ostreedev/ostree"
+"go-debos/debos" -> "dbnicholson/deb-ostree-builder"
+"ublue-os/titanoboa" -> "ublue-os/yai"
+"ublue-os/yai" -> "ublue-os/titanoboa"
+"felixrieseberg/clippy" -> "nathan-barry/gpt2-webgl"
+"felixrieseberg/clippy" -> "winblues/blue95"
+"felixrieseberg/clippy" -> "aperoc/toolkami"
+"winblues/blue95" -> "travier/fedora-sysexts"
+"winblues/blue95" -> "oerg866/win98-quickinstall" ["e"=1]
+"winblues/blue95" -> "JasonN3/build-container-installer"
+"winblues/blue95" -> "ublue-os/titanoboa"
+"winblues/blue95" -> "ublue-os/cosmic"
+"winblues/blue95" -> "ublue-os/bluefin-lts"
+"winblues/blue95" -> "FyraLabs/readymade"
+"winblues/blue95" -> "TzuHuanTai/RaspberryPi-WebRTC" ["e"=1]
+"winblues/blue95" -> "winblues/bluexp"
+"winblues/blue95" -> "UnmappedStack/TacOS" ["e"=1]
+"winblues/blue95" -> "felixrieseberg/clippy"
+"winblues/blue95" -> "grassmunk/Chicago95" ["e"=1]
+"winblues/blue95" -> "ublue-os/aurora"
+"winblues/blue95" -> "christian-fei/my-yt" ["e"=1]
+"winblues/blue95" -> "joexbayer/RetrOS-32" ["e"=1]
+"ublue-os/aurora" -> "ublue-os/packages"
+"ublue-os/aurora" -> "travier/fedora-sysexts"
+"ublue-os/aurora" -> "ublue-os/ucore"
+"ublue-os/aurora" -> "ublue-os/image-template"
+"ublue-os/aurora" -> "ublue-os/bluefin-lts"
+"ublue-os/aurora" -> "ublue-os/toolboxes"
+"ublue-os/aurora" -> "ublue-os/bluefin"
+"ublue-os/aurora" -> "ublue-os/main"
+"ublue-os/aurora" -> "ublue-os/yai"
+"ublue-os/aurora" -> "ublue-os/aurora-lts"
+"ublue-os/aurora" -> "ublue-os/titanoboa"
+"ublue-os/aurora" -> "ublue-os/bazzite-dx"
+"ublue-os/aurora" -> "NiHaiden/aurora"
+"ublue-os/aurora" -> "ublue-os/akmods"
+"ublue-os/aurora" -> "bsherman/bos"
+"debuerreotype/docker-debian-artifacts" -> "debuerreotype/debuerreotype"
+"debuerreotype/debuerreotype" -> "debuerreotype/docker-debian-artifacts"
+"ublue-os/bazzite-gdx" -> "ublue-os/bazzite-dx"
+"ellie-commons/Jorts" -> "ellie-commons/app-generator"
+"GloriousEggroll/flatpost" -> "winblues/vauxite"
+"GloriousEggroll/flatpost" -> "ublue-os/sysext"
+"GloriousEggroll/flatpost" -> "ublue-os/titanoboa"
+"ublue-os/aurora-lts" -> "centos-workstation/main"
+"ublue-os/aurora-lts" -> "ublue-os/universal-blue-org"
+"ublue-os/bazzite-dx" -> "ublue-os/bazzite-gdx"
+"ublue-os/bazzite-dx" -> "astrovm/amyos"
+"ublue-os/bazzite-dx" -> "BillyAddlers/stellarite"
+"fedora-asahi-remix-atomic-desktops/images" -> "ublue-os/isogenerator"
+"winblues/bluexp" -> "centos-workstation/main"
+"winblues/blue9" -> "winblues/vauxite"
+"coreos/rpm-ostree" ["l"="-16.944,-2.821"]
+"ostreedev/ostree" ["l"="-16.93,-2.766"]
+"fedora-silverblue/issue-tracker" ["l"="-16.989,-2.833"]
+"coreos/coreos-assembler" ["l"="-16.884,-2.855"]
+"containers/toolbox" ["l"="-16.99,-2.773"]
+"bootc-dev/bootc" ["l"="-16.978,-2.8"]
+"projectatomic/atomic" ["l"="-17.64,-2.986"]
+"coreos/fedora-coreos-tracker" ["l"="-16.881,-2.837"]
+"ublue-os/main" ["l"="-17.053,-2.872"]
+"rpm-software-management/libdnf" ["l"="-17.499,-2.71"]
+"travier/fedora-sysexts" ["l"="-17.047,-2.858"]
+"coreos/ignition" ["l"="-16.859,-2.833"]
+"coreos/fedora-coreos-config" ["l"="-16.867,-2.853"]
+"coreos/coreos-installer" ["l"="-16.853,-2.855"]
+"ublue-os/hwe" ["l"="-17.036,-2.872"]
+"coreos/layering-examples" ["l"="-16.962,-2.846"]
+"89luca89/distrobox" ["l"="-14.291,-0.957"]
+"toolbx-images/images" ["l"="-17.036,-2.838"]
+"flatpak/flatpak" ["l"="-14.204,-0.819"]
+"owtaylor/toolbox-vscode" ["l"="-17.034,-2.804"]
+"containers/podman-compose" ["l"="8.294,-8.709"]
+"marhkb/pods" ["l"="-16.317,-1.794"]
+"Malix-Labs/Awesome-Atomic" ["l"="-17.017,-2.836"]
+"tchx84/Flatseal" ["l"="-16.323,-1.831"]
+"containers/buildah" ["l"="8.171,-8.818"]
+"systemd/mkosi" ["l"="-16.935,-2.674"]
+"coreos/zincati" ["l"="-16.836,-2.846"]
+"coreos/butane" ["l"="-16.871,-2.87"]
+"coreos/airlock" ["l"="-16.823,-2.836"]
+"openshift/cincinnati" ["l"="-16.829,-2.819"]
+"coreos/fedora-coreos-pipeline" ["l"="-16.837,-2.872"]
+"coreos/bootupd" ["l"="-16.924,-2.831"]
+"openshift/machine-config-operator" ["l"="-16.864,-2.889"]
+"openshift/os" ["l"="-16.854,-2.871"]
+"tianon/docker-brew-ubuntu-core" ["l"="-16.672,-2.578"]
+"debuerreotype/docker-debian-artifacts" ["l"="-16.723,-2.608"]
+"coreos/afterburn" ["l"="-16.825,-2.863"]
+"fedora-iot/greenboot" ["l"="-16.911,-2.855"]
+"coreos/fedora-coreos-docs" ["l"="-16.844,-2.884"]
+"folbricht/desync" ["l"="-17.007,-2.63"]
+"systemd/casync" ["l"="-16.981,-2.667"]
+"oll3/bita" ["l"="-17.033,-2.612"]
+"openshift/cluster-version-operator" ["l"="10.363,-11.308"]
+"openshift/machine-api-operator" ["l"="10.351,-11.299"]
+"openshift/must-gather" ["l"="10.48,-11.303"]
+"stolostron/deploy" ["l"="10.452,-11.478"]
+"openshift/release" ["l"="10.432,-11.343"]
+"openshift/hive" ["l"="10.428,-11.414"]
+"openshift/enhancements" ["l"="10.449,-11.318"]
+"openshift/api" ["l"="10.299,-11.31"]
+"openshift/cluster-operator" ["l"="10.324,-11.346"]
+"openshift/cincinnati-graph-data" ["l"="10.384,-11.328"]
+"nspawn/nspawn" ["l"="-16.874,-2.647"]
+"nspawn/mkosi-definitions" ["l"="-16.843,-2.633"]
+"coreos/enhancements" ["l"="-16.808,-2.896"]
+"fdo-rs/fido-device-onboard-rs" ["l"="-16.881,-2.921"]
+"coreos/ignition-dracut" ["l"="-16.847,-2.909"]
+"stb-tester/apt2ostree" ["l"="-16.88,-2.729"]
+"dbnicholson/deb-ostree-builder" ["l"="-16.854,-2.717"]
+"fedora-silverblue/silverblue-docs" ["l"="-16.971,-2.87"]
+"fedora-silverblue/silverblue-site" ["l"="-16.965,-2.887"]
+"Foxboron/sbctl" ["l"="-16.955,-2.559"]
+"andreyv/sbupdate" ["l"="-16.971,-2.501"]
+"anatol/booster" ["l"="-16.915,-2.557"]
+"Foxboron/go-uefi" ["l"="-16.937,-2.521"]
+"nix-community/lanzaboote" ["l"="-19.168,-20.189"]
+"Foxboron/ssh-tpm-agent" ["l"="-19.267,-19.969"]
+"zbm-dev/zfsbootmenu" ["l"="-25.741,-23.612"]
+"ilya-zlobintsev/LACT" ["l"="-14.498,-0.838"]
+"fwupd/fwupd" ["l"="-14.273,-0.887"]
+"Morganamilo/paru" ["l"="-14.502,-3.386"]
+"roddhjav/apparmor.d" ["l"="-45.431,-35.016"]
+"ErikReider/SwayNotificationCenter" ["l"="-16.101,-3.655"]
+"apognu/tuigreet" ["l"="-16.133,-3.695"]
+"ValveSoftware/gamescope" ["l"="-14.474,-0.805"]
+"containers/libkrun" ["l"="-17.033,-2.698"]
+"containers/krunvm" ["l"="-17.03,-2.738"]
+"containers/libkrunfw" ["l"="-17.067,-2.712"]
+"containers/krunkit" ["l"="-17.067,-2.652"]
+"AsahiLinux/muvm" ["l"="-17.073,-2.681"]
+"QuarkContainer/Quark" ["l"="8.263,-9.525"]
+"cloud-hypervisor/cloud-hypervisor" ["l"="8.341,-9.152"]
+"coconut-svsm/svsm" ["l"="-16.809,-42.124"]
+"rust-vmm/vm-memory" ["l"="-25.176,-22.301"]
+"cloud-hypervisor/rust-hypervisor-firmware" ["l"="-25.179,-22.328"]
+"containers/netavark" ["l"="8.478,-9.052"]
+"rust-vmm/kvm" ["l"="-25.217,-22.29"]
+"rust-vmm/community" ["l"="-25.174,-22.282"]
+"composefs/composefs" ["l"="-16.952,-2.778"]
+"crc-org/vfkit" ["l"="42.898,-26.77"]
+"divestedcg/Brace" ["l"="-17.176,-2.82"]
+"TommyTran732/Microsoft-Edge-Policies" ["l"="-17.213,-2.813"]
+"TommyTran732/Windows-Setup" ["l"="-17.206,-2.8"]
+"ostreedev/ostree-rs-ext" ["l"="-16.922,-2.799"]
+"TenderOwl/Norka" ["l"="-16.829,-2.558"]
+"ellie-commons/communique" ["l"="-16.864,-2.588"]
+"coreos/container-linux-config-transpiler" ["l"="-16.801,-2.846"]
+"coreos/container-linux-update-operator" ["l"="10.308,-10.074"]
+"poseidon/matchbox" ["l"="10.266,-10.108"]
+"coreos/toolbox" ["l"="10.15,-10.017"]
+"coreos/mantle" ["l"="-22.749,9.272"]
+"1player/host-spawn" ["l"="-17.097,-2.751"]
+"13hannes11/toolbox-tuner" ["l"="-17.056,-2.807"]
+"ublue-os/base" ["l"="-17.057,-2.837"]
+"ublue-os/awesome-custom-images" ["l"="-17.026,-2.864"]
+"iaacornus/silverblue-postinstall_upgrade" ["l"="-17.076,-2.763"]
+"j1mc/ansible-silverblue" ["l"="-17.076,-2.813"]
+"flatpak/flatpak-github-actions" ["l"="-13.947,-0.58"]
+"sodaliterocks/sodalite" ["l"="-17.05,-2.78"]
+"castrojo/ublue" ["l"="-17.073,-2.797"]
+"bilelmoussaoui/flatpak-vscode" ["l"="-13.937,-0.559"]
+"dracutdevs/dracut" ["l"="-16.91,-2.596"]
+"dracut-ng/dracut-ng" ["l"="-16.884,-2.551"]
+"rpm-software-management/mock" ["l"="-17.514,-2.763"]
+"rpm-software-management/rpm" ["l"="-17.511,-2.734"]
+"rhinstaller/anaconda" ["l"="-17.555,-2.709"]
+"fedora-selinux/selinux-policy" ["l"="-17.549,-2.594"]
+"shadow-maint/shadow" ["l"="9.268,-8.263"]
+"fedora-modularity/libmodulemd" ["l"="-16.883,-2.575"]
+"brain-child/moobo" ["l"="-18.878,-1.236"]
+"ellie-commons/Jorts" ["l"="-16.932,-2.633"]
+"containers/crun-vm" ["l"="-16.999,-2.803"]
+"weaveworks/ignite" ["l"="8.078,-9.038"]
+"firecracker-microvm/firecracker-go-sdk" ["l"="-25.382,-22.249"]
+"project-zot/zot" ["l"="7.835,-9.099"]
+"firecracker-microvm/firecracker-containerd" ["l"="8.256,-9.104"]
+"containers/udica" ["l"="-17.563,-2.513"]
+"ottomatica/slim" ["l"="-4.071,-28.261"]
+"openshift/microshift" ["l"="7.39,-9.552"]
+"sigstore/gitsign" ["l"="7.987,-11.486"]
+"blockjoy/firec" ["l"="5.621,-21.605"]
+"anatol/vmtest" ["l"="-16.881,-2.514"]
+"anatol/luks.go" ["l"="-16.907,-2.506"]
+"distr1/distri" ["l"="-14.573,-11.442"]
+"ublue-os/ubuntu" ["l"="-17.093,-2.806"]
+"castrojo/ublue-image" ["l"="-17.11,-2.772"]
+"project-machine/puzzlefs" ["l"="-16.935,-2.847"]
+"TommyTran732/Linux-Setup-Scripts" ["l"="-17.231,-2.797"]
+"advancedtelematic/meta-updater" ["l"="-16.684,-44.692"]
+"advancedtelematic/aktualizr" ["l"="-16.658,-44.71"]
+"osbuild/osbuild" ["l"="-17.505,-2.669"]
+"Vanilla-OS/ABRoot" ["l"="-16.186,-1.618"]
+"containers/initoverlayfs" ["l"="-16.907,-2.751"]
+"osbuild/bootc-image-builder" ["l"="-17.003,-2.855"]
+"ostreedev/ostreefs" ["l"="-16.922,-2.871"]
+"containers/composefs-rs" ["l"="-16.955,-2.748"]
+"containerd/nydus-snapshotter" ["l"="8.22,-9.321"]
+"lambdanil/astOS" ["l"="-16.964,-2.947"]
+"ashos/ashos" ["l"="-16.972,-2.923"]
+"M1cha/archlinux-ostree" ["l"="-16.938,-2.998"]
+"ublue-os/bluefin" ["l"="-17.046,-2.892"]
+"wayblueorg/wayblue" ["l"="-17.074,-2.874"]
+"navidys/tvxwidgets" ["l"="-16.72,-2.776"]
+"epiclabs-io/winman" ["l"="-16.676,-2.778"]
+"containers/podman-tui" ["l"="-16.799,-2.775"]
+"containers/prometheus-podman-exporter" ["l"="-16.752,-2.752"]
+"containers/fetchit" ["l"="3.234,-6.774"]
+"containers/podlet" ["l"="-16.904,-2.812"]
+"cockpit-project/cockpit-podman" ["l"="8.803,-8.884"]
+"ublue-os/beyond" ["l"="-17.108,-2.821"]
+"vala-lang/valdo" ["l"="-19,-1.322"]
+"ellie-commons/eOSdock-themeswitcher" ["l"="-16.996,-2.698"]
+"containers/quadlet" ["l"="-16.9,-2.895"]
+"CheariX/silverblue-akmods-keys" ["l"="-16.941,-2.892"]
+"j1mc/ansible-silverblue-oci" ["l"="-17.104,-2.79"]
+"mrckndt/silverblue-playbook" ["l"="-17.117,-2.796"]
+"containers/bubblewrap" ["l"="-16.939,-2.711"]
+"netblue30/firejail" ["l"="-53.276,9.821"]
+"google/nsjail" ["l"="-45.284,-34.67"]
+"igo95862/bubblejail" ["l"="-45.457,-35.066"]
+"rootless-containers/slirp4netns" ["l"="8.38,-9.085"]
+"containers/crun" ["l"="8.328,-8.936"]
+"genuinetools/binctr" ["l"="7.718,-8.603"]
+"Smithay/smithay" ["l"="-16.265,-3.729"]
+"pobthebuilder/resolve-flatpak" ["l"="-17.085,-3.017"]
+"zelikos/davincibox" ["l"="-17.076,-2.983"]
+"uapi-group/specifications" ["l"="-16.895,-2.633"]
+"uapi-group/kernel-features" ["l"="-16.864,-2.615"]
+"ublue-os/boxkit" ["l"="-17.064,-2.906"]
+"akdev1l/toolbox-images" ["l"="-17.007,-2.879"]
+"ublue-os/toolboxes" ["l"="-17.07,-2.894"]
+"blue-build/legacy-template" ["l"="-17.064,-2.885"]
+"nelsonaloysio/build-kmod-nvidia-signed-rpm" ["l"="-16.93,-2.926"]
+"podman-desktop/extension-bootc" ["l"="-16.986,-2.851"]
+"CentOS/centos-bootc" ["l"="-16.996,-2.821"]
+"ublue-os/cosmic" ["l"="-17.084,-2.864"]
+"blue-build/template" ["l"="-17.083,-2.888"]
+"ublue-os/arch-distrobox" ["l"="-17.056,-2.959"]
+"ublue-os/image-template" ["l"="-17.078,-2.905"]
+"akdev1l/zerolayer" ["l"="-17.054,-2.904"]
+"JasonN3/build-container-installer" ["l"="-17.087,-2.879"]
+"ublue-os/forge" ["l"="-17.122,-2.928"]
+"ublue-os/config" ["l"="-17.054,-2.922"]
+"ublue-os/bazzite-arch" ["l"="-17.074,-2.933"]
+"ublue-os/akmods" ["l"="-17.078,-2.922"]
+"ublue-os/ucore" ["l"="-17.047,-2.912"]
+"terrapkg/packages" ["l"="-17.214,-2.878"]
+"FyraLabs/anda" ["l"="-17.253,-2.865"]
+"FyraLabs/readymade" ["l"="-17.122,-2.885"]
+"Ultramarine-Linux/packages" ["l"="-17.246,-2.885"]
+"aguslr/bluevanilla" ["l"="-17.161,-2.85"]
+"aguslr/bluefusion" ["l"="-17.139,-2.86"]
+"systemd/particleos" ["l"="-16.985,-2.721"]
+"weldr/lorax" ["l"="-17.536,-2.699"]
+"go-debos/debos" ["l"="-16.874,-2.695"]
+"arighi/virtme-ng" ["l"="7.083,-6.208"]
+"ublue-os/fleek" ["l"="-17.023,-2.926"]
+"dnkmmr69420/nix-installer-scripts" ["l"="-17.002,-2.996"]
+"ublue-os/bazzite" ["l"="-14.359,-0.72"]
+"ublue-os/aurora" ["l"="-17.09,-2.913"]
+"NiHaiden/aurora" ["l"="-17.067,-2.921"]
+"secureblue/secureblue" ["l"="-17.102,-2.855"]
+"Dvlv/BoxBuddyRS" ["l"="-17.112,-2.872"]
+"dwedia/podmanQuadlets" ["l"="-16.873,-2.787"]
+"fpatrick/podman-quadlet" ["l"="-16.798,-2.812"]
+"eriksjolund/podman-networking-docs" ["l"="-16.867,-2.768"]
+"containers/appstore" ["l"="-16.954,-2.867"]
+"k9withabone/autocast" ["l"="-16.849,-2.783"]
+"xmikos/cryptboot" ["l"="-16.979,-2.462"]
+"kmille/cryptboot" ["l"="-16.985,-2.433"]
+"lxc/incus-os" ["l"="8.681,-9.157"]
+"fat-tire/resolve" ["l"="-31.322,-27.067"]
+"H3rz3n/davinci-helper" ["l"="-17.056,-3.056"]
+"Twig6943/AffinityOnLinux" ["l"="-17.101,-3.049"]
+"GloriousEggroll/flatpost" ["l"="-17.111,-2.964"]
+"H3rz3n/Davinci-Resolve-Fedora-38-39-40-Fix" ["l"="-17.059,-3.03"]
+"secureblue/Trivalent" ["l"="-17.149,-2.83"]
+"PrivSec-dev/privsec.dev" ["l"="-52.741,9.747"]
+"Kicksecure/security-misc" ["l"="-45.473,-35.01"]
+"blue-build/cli" ["l"="-17.101,-2.887"]
+"ublue-os/bluefin-lts" ["l"="-17.105,-2.926"]
+"ublue-os/packages" ["l"="-17.03,-2.891"]
+"ublue-os/sysext" ["l"="-17.093,-2.939"]
+"ublue-os/website" ["l"="-17.057,-2.94"]
+"ublue-os/isogenerator-old" ["l"="-17.044,-2.945"]
+"xynydev/create-ublue-image" ["l"="-17.078,-2.844"]
+"GrabbenD/ostree-utility" ["l"="-16.925,-3.022"]
+"ublue-os/titanoboa" ["l"="-17.091,-2.892"]
+"ublue-os/universal-blue-org" ["l"="-17.102,-2.904"]
+"ublue-os/isogenerator" ["l"="-17.139,-2.875"]
+"DEM0NAssissan7/mosaic" ["l"="-17.153,-2.789"]
+"dnkmmr69420/nix-with-selinux" ["l"="-16.989,-3.03"]
+"ublue-os/yafti" ["l"="-17.144,-2.956"]
+"astrovm/amyos" ["l"="-17.168,-3.017"]
+"BillyAddlers/stellarite" ["l"="-17.161,-3.03"]
+"noelmiller/isengard" ["l"="-17.088,-2.955"]
+"ranfdev/DistroShelf" ["l"="-17.169,-2.882"]
+"flattool/warehouse" ["l"="-16.265,-1.89"]
+"Containerpak/cpak" ["l"="-17.175,-2.86"]
+"kra-mo/cartridges" ["l"="-16.305,-1.822"]
+"AtomsDevs/Atoms" ["l"="-16.264,-1.766"]
+"cosmic-utils/web-apps" ["l"="-9.203,-3.967"]
+"pop-os/cosmic-files" ["l"="-9.307,-3.96"]
+"pop-os/cosmic-player" ["l"="-9.256,-3.939"]
+"D-Brox/cosmic-ext-applet-privacy-indicator" ["l"="-9.178,-3.998"]
+"zchunk/zchunk" ["l"="-16.999,-2.596"]
+"rauc/rauc" ["l"="-16.593,-44.652"]
+"bus1/dbus-broker" ["l"="-14.671,-0.766"]
+"rauc/meta-rauc" ["l"="-16.624,-44.632"]
+"tazjin/nixery" ["l"="-19.043,-20.079"]
+"dpc/rdedup" ["l"="14.504,-11.241"]
+"containers/podman-bootc" ["l"="-16.986,-2.898"]
+"vrothberg/fedora-bootc-workstation" ["l"="-16.988,-2.877"]
+"ublue-os/yai" ["l"="-17.067,-2.863"]
+"bkircher/python-rpm-spec" ["l"="-16.908,-2.922"]
+"blue-build/modules" ["l"="-17.112,-2.896"]
+"blue-build/github-action" ["l"="-17.122,-2.901"]
+"centos-workstation/main" ["l"="-17.132,-2.94"]
+"containers/bootable" ["l"="-17.095,-2.831"]
+"fedora-asahi-remix-atomic-desktops/images" ["l"="-17.161,-2.871"]
+"ryzendew/AffinityOnLinux" ["l"="-17.118,-3.088"]
+"daegalus/wine-tkg-affinity" ["l"="-17.098,-3.078"]
+"daniel080400/AffinityLinuxTut" ["l"="-17.131,-3.122"]
+"H3rz3n/How-install-DaVinci-Resolve-in-Fedora-Linux" ["l"="-17.042,-3.082"]
+"yioannides/fedora-resolve" ["l"="-17.061,-3.088"]
+"redbeardymcgee/podbox" ["l"="-16.767,-2.826"]
+"fpatrick/compose" ["l"="-16.765,-2.81"]
+"ublue-os/aurora-lts" ["l"="-17.114,-2.938"]
+"m2Giles/m2os" ["l"="-17.162,-2.96"]
+"go-debos/fakemachine" ["l"="-16.843,-2.67"]
+"go-debos/debos-recipes" ["l"="-16.83,-2.687"]
+"ilbers/isar" ["l"="-16.552,-44.572"]
+"Linutronix/elbe" ["l"="-16.522,-44.577"]
+"debuerreotype/debuerreotype" ["l"="-16.768,-2.633"]
+"felixrieseberg/clippy" ["l"="-17.226,-2.946"]
+"nathan-barry/gpt2-webgl" ["l"="-17.264,-2.986"]
+"winblues/blue95" ["l"="-17.148,-2.911"]
+"aperoc/toolkami" ["l"="-17.288,-2.952"]
+"oerg866/win98-quickinstall" ["l"="-20.082,-46.808"]
+"TzuHuanTai/RaspberryPi-WebRTC" ["l"="40.428,5.77"]
+"winblues/bluexp" ["l"="-17.165,-2.938"]
+"UnmappedStack/TacOS" ["l"="-23.898,-23.378"]
+"grassmunk/Chicago95" ["l"="-19.959,-46.754"]
+"christian-fei/my-yt" ["l"="40.486,5.857"]
+"joexbayer/RetrOS-32" ["l"="-23.845,-23.301"]
+"ublue-os/bazzite-dx" ["l"="-17.141,-3"]
+"bsherman/bos" ["l"="-17.11,-2.949"]
+"ublue-os/bazzite-gdx" ["l"="-17.146,-3.022"]
+"ellie-commons/app-generator" ["l"="-16.941,-2.613"]
+"winblues/vauxite" ["l"="-17.151,-2.986"]
+"winblues/blue9" ["l"="-17.178,-3"]
+}

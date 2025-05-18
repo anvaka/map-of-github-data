@@ -1,0 +1,662 @@
+digraph G {
+"dev-sec/chef-os-hardening" -> "dev-sec/chef-ssh-hardening"
+"dev-sec/chef-os-hardening" -> "dev-sec/linux-baseline"
+"dev-sec/chef-os-hardening" -> "dev-sec/puppet-os-hardening"
+"dev-sec/chef-os-hardening" -> "dev-sec/chef-nginx-hardening"
+"dev-sec/chef-os-hardening" -> "dev-sec/ssh-baseline"
+"dev-sec/chef-os-hardening" -> "chefspec/chefspec" ["e"=1]
+"dev-sec/chef-os-hardening" -> "dev-sec/chef-windows-hardening"
+"dev-sec/chef-os-hardening" -> "dev-sec/cis-docker-benchmark"
+"dev-sec/chef-os-hardening" -> "sethvargo/chef-sugar" ["e"=1]
+"dev-sec/chef-os-hardening" -> "dev-sec/hardening"
+"dev-sec/chef-os-hardening" -> "dev-sec/chef-postgres-hardening"
+"dev-sec/chef-os-hardening" -> "chef-boneyard/audit-cis"
+"dev-sec/chef-os-hardening" -> "dev-sec/windows-baseline"
+"dev-sec/chef-os-hardening" -> "test-kitchen/kitchen-dokken" ["e"=1]
+"dev-sec/chef-ssh-hardening" -> "dev-sec/chef-os-hardening"
+"dev-sec/chef-ssh-hardening" -> "dev-sec/chef-nginx-hardening"
+"dev-sec/chef-ssh-hardening" -> "dev-sec/chef-mysql-hardening"
+"dev-sec/chef-ssh-hardening" -> "dev-sec/chef-postgres-hardening"
+"dev-sec/chef-ssh-hardening" -> "dev-sec/chef-apache-hardening"
+"RedHatOfficial/ansible-role-rhel7-stig" -> "ansible-lockdown/RHEL7-STIG"
+"RedHatOfficial/ansible-role-rhel7-stig" -> "RedHatOfficial/ansible-role-rhel8-stig"
+"ComplianceAsCode/content" -> "OpenSCAP/openscap"
+"ComplianceAsCode/content" -> "OpenSCAP/scap-workbench"
+"ComplianceAsCode/content" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"ComplianceAsCode/content" -> "CISecurity/OVALRepo"
+"ComplianceAsCode/content" -> "ansible-lockdown/RHEL7-STIG"
+"ComplianceAsCode/content" -> "nsacyber/Windows-Secure-Host-Baseline" ["e"=1]
+"ComplianceAsCode/content" -> "RedHatGov/ssg-el7-kickstart"
+"ComplianceAsCode/content" -> "inspec/inspec" ["e"=1]
+"ComplianceAsCode/content" -> "usnistgov/OSCAL" ["e"=1]
+"ComplianceAsCode/content" -> "ansible/ansible-lockdown" ["e"=1]
+"ComplianceAsCode/content" -> "dev-sec/linux-baseline"
+"ComplianceAsCode/content" -> "redhat-cop/agnosticd" ["e"=1]
+"ComplianceAsCode/content" -> "openstack/ansible-hardening"
+"ComplianceAsCode/content" -> "ComplianceAsCode/redhat"
+"ComplianceAsCode/content" -> "ansible/workshops" ["e"=1]
+"OpenSCAP/scap-workbench" -> "OpenSCAP/openscap"
+"OpenSCAP/scap-workbench" -> "OpenSCAP/oval-graph"
+"dev-sec/cis-kubernetes-benchmark" -> "dev-sec/cis-docker-benchmark"
+"dev-sec/cis-kubernetes-benchmark" -> "dev-sec/linux-baseline"
+"dev-sec/cis-kubernetes-benchmark" -> "dev-sec/linux-patch-baseline"
+"dev-sec/cis-kubernetes-benchmark" -> "dev-sec/windows-baseline"
+"dev-sec/cis-kubernetes-benchmark" -> "dev-sec/ssl-baseline"
+"dev-sec/cis-kubernetes-benchmark" -> "neuvector/kubernetes-cis-benchmark"
+"dev-sec/hardening" -> "dev-sec/example-puppet-hardening"
+"dev-sec/hardening" -> "dev-sec/linux-baseline"
+"dev-sec/hardening" -> "dev-sec/ssh-baseline"
+"dev-sec/hardening" -> "dev-sec/ansible-ssh-hardening"
+"dev-sec/hardening" -> "dev-sec/chef-ssh-hardening"
+"dev-sec/hardening" -> "dev-sec/ansible-apache-hardening"
+"dev-sec/hardening" -> "dev-sec/puppet-os-hardening"
+"dev-sec/hardening" -> "dev-sec/chef-os-hardening"
+"dev-sec/puppet-os-hardening" -> "dev-sec/puppet-ssh-hardening"
+"dev-sec/puppet-os-hardening" -> "dev-sec/linux-baseline"
+"dev-sec/puppet-os-hardening" -> "dev-sec/chef-os-hardening"
+"dev-sec/puppet-os-hardening" -> "dev-sec/puppet-mysql-hardening"
+"dev-sec/puppet-os-hardening" -> "ripienaar/puppet-reportprint" ["e"=1]
+"dev-sec/puppet-os-hardening" -> "example42/psick" ["e"=1]
+"dev-sec/puppet-os-hardening" -> "dev-sec/puppet-apache-hardening"
+"OpenSCAP/openscap" -> "ComplianceAsCode/content"
+"OpenSCAP/openscap" -> "OpenSCAP/scap-workbench"
+"OpenSCAP/openscap" -> "CISecurity/OVALRepo"
+"OpenSCAP/openscap" -> "OpenSCAP/openscap-daemon"
+"OpenSCAP/openscap" -> "OVALProject/Language"
+"OpenSCAP/openscap" -> "greenbone/openvas-scanner" ["e"=1]
+"OpenSCAP/openscap" -> "cve-search/cve-search" ["e"=1]
+"OpenSCAP/openscap" -> "usnistgov/OSCAL" ["e"=1]
+"OpenSCAP/openscap" -> "ossec/ossec-hids" ["e"=1]
+"OpenSCAP/openscap" -> "Arachni/arachni" ["e"=1]
+"OpenSCAP/openscap" -> "CISOfy/lynis" ["e"=1]
+"OpenSCAP/openscap" -> "NationalSecurityAgency/SIMP" ["e"=1]
+"OpenSCAP/openscap" -> "TheHive-Project/TheHive" ["e"=1]
+"OpenSCAP/openscap" -> "infobyte/faraday" ["e"=1]
+"OpenSCAP/openscap" -> "inspec/inspec" ["e"=1]
+"major/cis-rhel-ansible" -> "major/ansible-role-cis"
+"major/cis-rhel-ansible" -> "ansible-lockdown/RHEL7-CIS"
+"major/cis-rhel-ansible" -> "ansible-lockdown/RHEL6-STIG"
+"major/cis-rhel-ansible" -> "awailly/cis-ubuntu-ansible"
+"major/cis-rhel-ansible" -> "major/securekickstarts"
+"major/cis-rhel-ansible" -> "oguya/cis-ubuntu-14-ansible"
+"major/cis-rhel-ansible" -> "ansible-lockdown/RHEL7-STIG"
+"major/cis-rhel-ansible" -> "ansible/ansible-lockdown" ["e"=1]
+"major/cis-rhel-ansible" -> "dev-sec/ansible-ssh-hardening"
+"major/cis-rhel-ansible" -> "ansible-provisioning/ansible-provisioning" ["e"=1]
+"major/cis-rhel-ansible" -> "sanderv32/cis-rhel-ansible"
+"dev-sec/linux-baseline" -> "dev-sec/ssh-baseline"
+"dev-sec/linux-baseline" -> "dev-sec/chef-os-hardening"
+"dev-sec/linux-baseline" -> "dev-sec/windows-baseline"
+"dev-sec/linux-baseline" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"dev-sec/linux-baseline" -> "dev-sec/cis-docker-benchmark"
+"dev-sec/linux-baseline" -> "dev-sec/puppet-os-hardening"
+"dev-sec/linux-baseline" -> "dev-sec/cis-kubernetes-benchmark"
+"dev-sec/linux-baseline" -> "inspec/inspec" ["e"=1]
+"dev-sec/linux-baseline" -> "dev-sec/linux-patch-baseline"
+"dev-sec/linux-baseline" -> "dev-sec/hardening"
+"dev-sec/linux-baseline" -> "dev-sec/nginx-baseline"
+"dev-sec/linux-baseline" -> "dev-sec/ssl-baseline"
+"dev-sec/linux-baseline" -> "dev-sec/cis-dil-benchmark"
+"dev-sec/linux-baseline" -> "dev-sec/ansible-ssh-hardening"
+"dev-sec/linux-baseline" -> "dev-sec/apache-baseline"
+"radsec/CentOS7-CIS" -> "radsec/RHEL7-CIS"
+"fcaviggia/hardening-script-el6" -> "fcaviggia/hardening-script-el6-kickstart"
+"fcaviggia/hardening-script-el6" -> "RedHatGov/ssg-el7-kickstart"
+"fcaviggia/hardening-script-el6" -> "ansible-lockdown/RHEL6-STIG"
+"fcaviggia/hardening-script-el6" -> "BuddhaLabs/Aqueduct"
+"fcaviggia/hardening-script-el6" -> "RedHatGov/ssg-el6-kickstart"
+"florianutz/Ubuntu1804-CIS" -> "florianutz/ubuntu2004_cis"
+"florianutz/Ubuntu1804-CIS" -> "florianutz/Ubuntu1604-CIS"
+"florianutz/Ubuntu1804-CIS" -> "alivx/CIS-Ubuntu-20.04-Ansible"
+"florianutz/Ubuntu1804-CIS" -> "ansible-lockdown/UBUNTU18-CIS"
+"florianutz/Ubuntu1804-CIS" -> "HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks"
+"dev-sec/cis-dil-benchmark" -> "dev-sec/linux-patch-baseline"
+"dev-sec/cis-dil-benchmark" -> "dev-sec/windows-baseline"
+"dev-sec/cis-dil-benchmark" -> "dev-sec/linux-baseline"
+"dev-sec/cis-dil-benchmark" -> "dev-sec/windows-patch-baseline"
+"dev-sec/cis-dil-benchmark" -> "dev-sec/ssh-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/linux-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/linux-patch-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/ssl-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/nginx-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/php-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/apache-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/mysql-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/windows-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/ansible-ssh-hardening"
+"dev-sec/ssh-baseline" -> "dev-sec/postgres-baseline"
+"dev-sec/ssh-baseline" -> "dev-sec/chef-ssh-hardening"
+"dev-sec/ssh-baseline" -> "dev-sec/chef-os-hardening"
+"massyn/centos-cis-benchmark" -> "haxorof/centos-bench-security"
+"dev-sec/chef-mysql-hardening" -> "dev-sec/chef-apache-hardening"
+"dev-sec/chef-mysql-hardening" -> "dev-sec/chef-jenkins-hardening"
+"dev-sec/mysql-baseline" -> "dev-sec/php-baseline"
+"dev-sec/mysql-baseline" -> "dev-sec/nginx-baseline"
+"OVALProject/Test-Content" -> "OVALProject/ovalproject.github.io"
+"OVALProject/Test-Content" -> "OVALProject/Language"
+"openstack/ansible-role-openstack-operations" -> "openstack/openstack-ansible-openstack_openrc"
+"dev-sec/puppet-ssh-hardening" -> "dev-sec/puppet-mysql-hardening"
+"dev-sec/puppet-ssh-hardening" -> "dev-sec/puppet-apache-hardening"
+"dev-sec/puppet-ssh-hardening" -> "dev-sec/puppet-postgres-hardening"
+"dev-sec/puppet-ssh-hardening" -> "dev-sec/puppet-nginx-hardening"
+"haxorof/centos-bench-security" -> "massyn/centos-cis-benchmark"
+"dev-sec/puppet-mysql-hardening" -> "dev-sec/puppet-apache-hardening"
+"dev-sec/puppet-mysql-hardening" -> "dev-sec/puppet-postgres-hardening"
+"dev-sec/puppet-mysql-hardening" -> "dev-sec/puppet-nginx-hardening"
+"RedHatOfficial/ansible-role-rhel8-stig" -> "RedHatOfficial/ansible-role-rhel9-stig"
+"RedHatOfficial/ansible-role-rhel8-stig" -> "RedHatOfficial/ansible-role-rhel7-stig"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/RHEL7-STIG"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/RHEL7-STIG-Audit"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/RHEL8-STIG-Audit"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/UBUNTU20-CIS"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/RHEL8-STIG" -> "ansible-lockdown/RHEL8-CIS-Audit"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/RHEL8-STIG"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/RHEL9-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/Windows-2019-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/RHEL7-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/RHEL8-CIS-Audit"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/UBUNTU20-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/UBUNTU18-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/RHEL7-STIG"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/UBUNTU22-CIS"
+"ansible-lockdown/RHEL8-CIS" -> "RedHatOfficial/ansible-role-rhel8-cis"
+"ansible-lockdown/RHEL8-CIS" -> "ansible-lockdown/Windows-2019-STIG"
+"dev-sec/chef-nginx-hardening" -> "dev-sec/chef-mysql-hardening"
+"dev-sec/chef-nginx-hardening" -> "dev-sec/chef-postgres-hardening"
+"dev-sec/chef-nginx-hardening" -> "dev-sec/chef-jenkins-hardening"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/Windows-2019-STIG"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/Windows-2022-CIS"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/UBUNTU20-CIS"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/UBUNTU18-CIS"
+"ansible-lockdown/Windows-2019-CIS" -> "ansible-lockdown/RHEL8-STIG"
+"dev-sec/postgres-baseline" -> "dev-sec/chef-postgres-hardening"
+"dev-sec/postgres-baseline" -> "dev-sec/php-baseline"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/Windows-2019-CIS"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/UBUNTU18-CIS"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/UBUNTU20-CIS" -> "alivx/CIS-Ubuntu-20.04-Ansible"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/UBUNTU22-CIS"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/RHEL8-STIG"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/UBUNTU20-CIS-Audit"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/RHEL7-CIS"
+"ansible-lockdown/UBUNTU20-CIS" -> "florianutz/ubuntu2004_cis"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/UBUNTU20-CIS" -> "ansible-lockdown/RHEL8-CIS-Audit"
+"ansible-lockdown/UBUNTU20-CIS" -> "darkwizard242/cis_ubuntu_2004"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "ansible-lockdown/UBUNTU20-CIS"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "florianutz/ubuntu2004_cis"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "ansible-lockdown/Windows-2019-CIS"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "florianutz/Ubuntu1804-CIS"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "dsglaser/cis-security"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "ansible-lockdown/RHEL8-CIS"
+"alivx/CIS-Ubuntu-20.04-Ansible" -> "darkwizard242/cis_ubuntu_2004"
+"ansible-lockdown/UBUNTU18-CIS" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/UBUNTU18-CIS" -> "ansible-lockdown/RHEL7-STIG-Audit"
+"dev-sec/chef-apache-hardening" -> "dev-sec/chef-mysql-hardening"
+"OVALProject/ovalproject.github.io" -> "OVALProject/Test-Content"
+"dev-sec/apache-baseline" -> "dev-sec/php-baseline"
+"dev-sec/puppet-apache-hardening" -> "dev-sec/puppet-mysql-hardening"
+"dev-sec/puppet-apache-hardening" -> "dev-sec/puppet-postgres-hardening"
+"dev-sec/puppet-apache-hardening" -> "dev-sec/puppet-nginx-hardening"
+"florianutz/ubuntu2004_cis" -> "darkwizard242/cis_ubuntu_2004"
+"florianutz/ubuntu2004_cis" -> "florianutz/Ubuntu1804-CIS"
+"florianutz/ubuntu2004_cis" -> "alivx/CIS-Ubuntu-20.04-Ansible"
+"ansible-lockdown/Windows-2016-CIS" -> "ansible-lockdown/UBUNTU18-CIS"
+"dev-sec/nginx-baseline" -> "dev-sec/mysql-baseline"
+"dev-sec/nginx-baseline" -> "dev-sec/php-baseline"
+"dev-sec/nginx-baseline" -> "dev-sec/ssl-baseline"
+"ansible-lockdown/Windows-2019-STIG" -> "ansible-lockdown/Windows-2019-CIS"
+"OpenSCAP/oval-graph" -> "OpenSCAP/openscap-report"
+"dev-sec/chef-postgres-hardening" -> "dev-sec/chef-jenkins-hardening"
+"dev-sec/puppet-nginx-hardening" -> "dev-sec/puppet-postgres-hardening"
+"dev-sec/puppet-nginx-hardening" -> "dev-sec/puppet-mysql-hardening"
+"dev-sec/puppet-nginx-hardening" -> "dev-sec/puppet-apache-hardening"
+"dev-sec/puppet-postgres-hardening" -> "dev-sec/puppet-mysql-hardening"
+"dev-sec/puppet-postgres-hardening" -> "dev-sec/puppet-nginx-hardening"
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ansible-nginx-hardening"
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ansible-mysql-hardening"
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ssh-baseline"
+"dev-sec/ansible-ssh-hardening" -> "geerlingguy/ansible-role-firewall" ["e"=1]
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ansible-apache-hardening"
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/hardening"
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/linux-baseline"
+"dev-sec/ansible-ssh-hardening" -> "geerlingguy/ansible-role-nginx" ["e"=1]
+"dev-sec/ansible-ssh-hardening" -> "openstack/ansible-hardening"
+"dev-sec/ansible-ssh-hardening" -> "major/cis-rhel-ansible"
+"dev-sec/ansible-ssh-hardening" -> "geerlingguy/ansible-role-security" ["e"=1]
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ansible-windows-hardening"
+"dev-sec/ansible-ssh-hardening" -> "nginx/ansible-role-nginx" ["e"=1]
+"dev-sec/ansible-ssh-hardening" -> "Icinga/ansible-playbooks" ["e"=1]
+"konstruktoid/hardening" -> "konstruktoid/ansible-role-hardening"
+"konstruktoid/hardening" -> "Jsitech/JShielder"
+"konstruktoid/hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"konstruktoid/hardening" -> "GTekSD/SUASS" ["e"=1]
+"konstruktoid/hardening" -> "trimstray/linux-hardening-checklist" ["e"=1]
+"konstruktoid/hardening" -> "dev-sec/linux-baseline"
+"konstruktoid/hardening" -> "ovh/debian-cis"
+"konstruktoid/hardening" -> "florianutz/Ubuntu1804-CIS"
+"konstruktoid/hardening" -> "ComplianceAsCode/content"
+"konstruktoid/hardening" -> "CISOfy/lynis" ["e"=1]
+"konstruktoid/hardening" -> "PaulSec/awesome-windows-domain-hardening" ["e"=1]
+"konstruktoid/hardening" -> "alivx/CIS-Ubuntu-20.04-Ansible"
+"konstruktoid/hardening" -> "hardentools/hardentools" ["e"=1]
+"konstruktoid/hardening" -> "pyllyukko/user.js" ["e"=1]
+"konstruktoid/hardening" -> "konstruktoid/hardened-images"
+"rcbops/rpc-openstack" -> "cloudnull/osa-multi-node-aio"
+"rcbops/rpc-openstack" -> "openstack/openstack-ansible-ops"
+"rcbops/rpc-openstack" -> "rcbops/rpc-maas"
+"rcbops/rpc-openstack" -> "openstack/openstack-ansible-specs"
+"rcbops/rpc-openstack" -> "rcbops/rpc-gating"
+"rcbops/rpc-openstack" -> "rcbops/openstack-ops"
+"William-Yeh/docker-ansible" -> "philm/ansible_playbook"
+"William-Yeh/docker-ansible" -> "ansible/ansible-docker-base" ["e"=1]
+"William-Yeh/docker-ansible" -> "chrismeyersfsu/provision_docker"
+"William-Yeh/docker-ansible" -> "dev-sec/ansible-ssh-hardening"
+"CISecurity/OVALRepo" -> "OVALProject/Language"
+"CISecurity/OVALRepo" -> "OpenSCAP/openscap"
+"CISecurity/OVALRepo" -> "OVAL-Community/OVAL"
+"CISecurity/OVALRepo" -> "joval/jOVAL"
+"CISecurity/OVALRepo" -> "OpenSCAP/scap-workbench"
+"CISecurity/OVALRepo" -> "OVALProject/Test-Content"
+"CISecurity/OVALRepo" -> "ComplianceAsCode/content"
+"CISecurity/OVALRepo" -> "Sep0lkit/oval-for-el" ["e"=1]
+"OpenSCAP/container-compliance" -> "dockersecuritytools/batten"
+"OpenSCAP/container-compliance" -> "GovReady/ubuntu-scap"
+"OpenSCAP/container-compliance" -> "OpenSCAP/openscap-daemon"
+"dev-sec/ansible-mysql-hardening" -> "dev-sec/ansible-nginx-hardening"
+"dev-sec/ansible-mysql-hardening" -> "dev-sec/ansible-apache-hardening"
+"dev-sec/ansible-mysql-hardening" -> "dev-sec/ansible-ssh-hardening"
+"ansible-lockdown/RHEL8-CIS-Audit" -> "ansible-lockdown/RHEL7-CIS-Audit"
+"ansible-lockdown/RHEL6-STIG" -> "ansible-lockdown/RHEL7-STIG"
+"ansible-lockdown/RHEL6-STIG" -> "juliedavila/STIGMA"
+"ansible-lockdown/RHEL6-STIG" -> "samdoran/ansible-role-rhel6stig"
+"ansible-lockdown/Kubernetes1.6.1-CIS" -> "ansible-lockdown/POSTGRES-12-CIS"
+"ansible-lockdown/Kubernetes1.6.1-CIS" -> "ansible-lockdown/UBUNTU20-CIS-Audit"
+"awailly/cis-ubuntu-ansible" -> "grupoversia/cis-ubuntu-ansible"
+"awailly/cis-ubuntu-ansible" -> "oguya/cis-ubuntu-14-ansible"
+"awailly/cis-ubuntu-ansible" -> "major/cis-rhel-ansible"
+"RedHatOfficial/ansible-role-rhel8-cis" -> "RedHatOfficial/ansible-role-rhel7-cis"
+"dev-sec/php-baseline" -> "dev-sec/ssl-baseline"
+"dev-sec/php-baseline" -> "arothian/inspec-aws"
+"dev-sec/php-baseline" -> "dev-sec/mysql-baseline"
+"RedHatGov/ssg-el7-kickstart" -> "RedHatGov/ssg-el6-kickstart"
+"RedHatGov/ssg-el7-kickstart" -> "fcaviggia/hardened-centos7-kickstart"
+"RedHatGov/ssg-el7-kickstart" -> "fcaviggia/hardening-script-el6"
+"RedHatGov/ssg-el7-kickstart" -> "ansible-lockdown/RHEL7-STIG"
+"RedHatGov/ssg-el7-kickstart" -> "BuddhaLabs/Aqueduct"
+"RedHatGov/ssg-el7-kickstart" -> "fcaviggia/classification-banner"
+"ansible-lockdown/RHEL7-CIS-Audit" -> "ansible-lockdown/RHEL8-STIG-Audit"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/RHEL7-STIG"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/RHEL7-CIS" -> "ansible/ansible-lockdown" ["e"=1]
+"ansible-lockdown/RHEL7-CIS" -> "major/cis-rhel-ansible"
+"ansible-lockdown/RHEL7-CIS" -> "HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks"
+"ansible-lockdown/RHEL7-CIS" -> "openstack/ansible-hardening"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/UBUNTU20-CIS"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/Windows-2019-CIS"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/RHEL9-CIS"
+"ansible-lockdown/RHEL7-CIS" -> "anthcourtney/ansible-role-cis-amazon-linux"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/RHEL8-STIG"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/RHEL6-STIG"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/RHEL7-CIS" -> "MindPointGroup/ansible-vmware-provisioning"
+"ansible-lockdown/RHEL7-CIS" -> "ansible-lockdown/RHEL7-CIS-Audit"
+"NextronSystems/ransomware-simulator" -> "lawndoc/RanSim"
+"NextronSystems/ransomware-simulator" -> "JoelGMSec/PSRansom"
+"NextronSystems/ransomware-simulator" -> "Neo23x0/sysmon-config" ["e"=1]
+"Jsitech/JShielder" -> "konstruktoid/hardening"
+"Jsitech/JShielder" -> "essandess/isp-data-pollution" ["e"=1]
+"Jsitech/JShielder" -> "cmars/onionpipe" ["e"=1]
+"Jsitech/JShielder" -> "Bashfuscator/Bashfuscator" ["e"=1]
+"Jsitech/JShielder" -> "gildasio/h2t" ["e"=1]
+"Jsitech/JShielder" -> "finalduty/cis-benchmarks-audit"
+"Jsitech/JShielder" -> "thesourcerer8/hddsuperclone" ["e"=1]
+"Jsitech/JShielder" -> "d4rk007/RedGhost" ["e"=1]
+"Jsitech/JShielder" -> "error-try-again/UbuntuHardeningFramework" ["e"=1]
+"JoelGMSec/PSRansom" -> "lawndoc/RanSim"
+"JoelGMSec/PSRansom" -> "NextronSystems/ransomware-simulator"
+"ansible-lockdown/RHEL9-CIS" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/RHEL9-CIS" -> "ansible-lockdown/RHEL9-CIS-Audit"
+"ansible-lockdown/RHEL9-CIS" -> "ansible-lockdown/RHEL7-CIS-Audit"
+"ansible-lockdown/RHEL9-CIS" -> "ansible-lockdown/Windows-2022-CIS"
+"ansible-lockdown/RHEL9-CIS" -> "ansible-lockdown/RHEL8-CIS-Audit"
+"ansible-lockdown/RHEL9-CIS" -> "ansible-lockdown/Windows-2019-CIS"
+"ansible-lockdown/RHEL9-CIS-Audit" -> "ansible-lockdown/RHEL8-CIS-Audit"
+"ansible-lockdown/Windows-2022-CIS" -> "ansible-lockdown/Windows-2016-CIS"
+"ansible-lockdown/Windows-2022-CIS" -> "ansible-lockdown/Windows-2019-CIS"
+"ansible-lockdown/UBUNTU20-CIS-Audit" -> "ansible-lockdown/POSTGRES-12-CIS"
+"ansible-lockdown/UBUNTU20-CIS-Audit" -> "ansible-lockdown/Windows-2016-CIS-Audit"
+"ansible-lockdown/Windows-10-STIG" -> "ansible-lockdown/POSTGRES-12-CIS"
+"openstack/openstack-ansible-galera_server" -> "openstack/openstack-ansible-os_nova"
+"ovh/debian-cis" -> "hardenedlinux/harbian-audit" ["e"=1]
+"ovh/debian-cis" -> "ovh/the-bastion" ["e"=1]
+"ovh/debian-cis" -> "konstruktoid/hardening"
+"ovh/debian-cis" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"ovh/debian-cis" -> "konstruktoid/ansible-role-hardening"
+"ovh/debian-cis" -> "finalduty/cis-benchmarks-audit"
+"ovh/debian-cis" -> "ovh/terraform-provider-ovh" ["e"=1]
+"ovh/debian-cis" -> "NextronSystems/ransomware-simulator"
+"ovh/debian-cis" -> "ComplianceAsCode/content"
+"ovh/debian-cis" -> "ansible-lockdown/DEBIAN12-CIS"
+"ovh/debian-cis" -> "dbernaci/CIS-Debian10-Ansible"
+"ovh/debian-cis" -> "ovh/ip-reputation-monitoring"
+"ovh/debian-cis" -> "ANSSI-FR/DFIR-O365RC" ["e"=1]
+"philm/ansible_playbook" -> "philm/ansible_target"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/cis-kubernetes-benchmark"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/linux-baseline"
+"dev-sec/cis-docker-benchmark" -> "Mirantis/compliance"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/ssl-baseline"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/ssh-baseline"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/chef-os-hardening"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/linux-patch-baseline"
+"dev-sec/cis-docker-benchmark" -> "dev-sec/windows-baseline"
+"dev-sec/cis-docker-benchmark" -> "inspec/inspec" ["e"=1]
+"dev-sec/cis-docker-benchmark" -> "aquasecurity/docker-bench" ["e"=1]
+"ansible-lockdown/UBUNTU22-CIS" -> "ansible-lockdown/UBUNTU22-CIS-Audit"
+"ansible-lockdown/UBUNTU22-CIS" -> "ansible-lockdown/UBUNTU20-CIS"
+"ansible-lockdown/UBUNTU22-CIS" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/UBUNTU22-CIS" -> "ansible-lockdown/UBUNTU18-CIS"
+"fcaviggia/hardened-centos7-kickstart" -> "RedHatGov/ssg-el7-kickstart"
+"fcaviggia/hardened-centos7-kickstart" -> "fcaviggia/classification-banner"
+"fcaviggia/hardened-centos7-kickstart" -> "CentOS/sig-core-livemedia"
+"ansible-lockdown/UBUNTU22-CIS-Audit" -> "ansible-lockdown/RHEL8-CIS-Audit"
+"ansible-lockdown/UBUNTU22-CIS-Audit" -> "ansible-lockdown/RHEL9-CIS-Audit"
+"RedHatOfficial/ansible-role-rhel9-stig" -> "RedHatOfficial/ansible-role-rhel8-stig"
+"openstack/openstack-ansible-ops" -> "cloudnull/osa-multi-node-aio"
+"openstack/openstack-ansible-ops" -> "openstack/openstack-ansible-lxc_hosts"
+"openstack/openstack-ansible-ops" -> "openstack/openstack-ansible-os_keystone"
+"openstack/openstack-ansible-ops" -> "openstack/openstack-ansible-openstack_openrc"
+"openstack/openstack-ansible-ops" -> "openstack/openstack-ansible-os_designate"
+"openstack/openstack-ansible-ops" -> "openstack/openstack-ansible-openstack_hosts"
+"openstack/openstack-ansible-ops" -> "openstack/openstack-ansible-os_nova"
+"ansible-lockdown/RHEL7-STIG" -> "ansible-lockdown/RHEL8-STIG"
+"ansible-lockdown/RHEL7-STIG" -> "ansible-lockdown/RHEL7-CIS"
+"ansible-lockdown/RHEL7-STIG" -> "ansible-lockdown/RHEL6-STIG"
+"ansible-lockdown/RHEL7-STIG" -> "RedHatOfficial/ansible-role-rhel7-stig"
+"ansible-lockdown/RHEL7-STIG" -> "ansible/ansible-lockdown" ["e"=1]
+"ansible-lockdown/RHEL7-STIG" -> "RedHatGov/ssg-el7-kickstart"
+"ansible-lockdown/RHEL7-STIG" -> "ansible-lockdown/RHEL8-CIS"
+"ansible-lockdown/RHEL7-STIG" -> "ansible-lockdown/RHEL7-STIG-Audit"
+"ansible-lockdown/RHEL7-STIG" -> "openstack/ansible-hardening"
+"ansible-lockdown/RHEL7-STIG" -> "MindPointGroup/stig-cli"
+"juju4/ansible-harden-windows" -> "dev-sec/ansible-windows-hardening"
+"anthcourtney/ansible-role-cis-amazon-linux" -> "HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks"
+"dev-sec/linux-patch-baseline" -> "dev-sec/ssl-baseline"
+"dev-sec/linux-patch-baseline" -> "dev-sec/php-baseline"
+"dev-sec/linux-patch-baseline" -> "dev-sec/mysql-baseline"
+"dev-sec/chef-windows-hardening" -> "dev-sec/windows-baseline"
+"dev-sec/chef-windows-hardening" -> "dev-sec/windows-patch-baseline"
+"dev-sec/chef-windows-hardening" -> "grdnrio/windows-security-policy"
+"dev-sec/ansible-nginx-hardening" -> "dev-sec/ansible-mysql-hardening"
+"dev-sec/ansible-nginx-hardening" -> "dev-sec/ansible-apache-hardening"
+"dev-sec/ansible-nginx-hardening" -> "dev-sec/ansible-ssh-hardening"
+"dev-sec/ansible-nginx-hardening" -> "dev-sec/ansible-windows-hardening"
+"dev-sec/ssl-baseline" -> "dev-sec/php-baseline"
+"dev-sec/ssl-baseline" -> "dev-sec/linux-patch-baseline"
+"dev-sec/ssl-baseline" -> "dev-sec/apache-baseline"
+"dev-sec/ssl-baseline" -> "dev-sec/nginx-baseline"
+"dev-sec/ssl-baseline" -> "dev-sec/mysql-baseline"
+"dev-sec/ansible-apache-hardening" -> "dev-sec/ansible-mysql-hardening"
+"konstruktoid/ansible-role-hardening" -> "konstruktoid/hardening"
+"konstruktoid/ansible-role-hardening" -> "konstruktoid/hardened-images"
+"konstruktoid/ansible-role-hardening" -> "openstack/ansible-hardening"
+"konstruktoid/ansible-role-hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"konstruktoid/ansible-role-hardening" -> "githubixx/ansible-role-harden-linux" ["e"=1]
+"konstruktoid/ansible-role-hardening" -> "ansible-lockdown/RHEL7-CIS"
+"konstruktoid/ansible-role-hardening" -> "ansible-lockdown/RHEL8-CIS"
+"konstruktoid/ansible-role-hardening" -> "geerlingguy/ansible-role-security" ["e"=1]
+"konstruktoid/ansible-role-hardening" -> "ansible-lockdown/UBUNTU22-CIS"
+"konstruktoid/ansible-role-hardening" -> "ansible-lockdown/UBUNTU20-CIS"
+"konstruktoid/ansible-role-hardening" -> "dev-sec/linux-baseline"
+"konstruktoid/ansible-role-hardening" -> "alivx/CIS-Ubuntu-20.04-Ansible"
+"konstruktoid/ansible-role-hardening" -> "juju4/ansible-harden"
+"OVALProject/Language" -> "OVALProject/Test-Content"
+"OVALProject/Language" -> "OVALProject/ovalproject.github.io"
+"OVALProject/Language" -> "OVALProject/Sandbox"
+"OVALProject/Language" -> "CISecurity/OVALRepo"
+"OVALProject/Language" -> "OVAL-Community/OVAL"
+"dev-sec/windows-baseline" -> "dev-sec/chef-windows-hardening"
+"dev-sec/windows-baseline" -> "dev-sec/ansible-windows-hardening"
+"dev-sec/windows-baseline" -> "dev-sec/linux-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/windows-patch-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/php-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/ssh-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/mysql-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/ssl-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/linux-patch-baseline"
+"dev-sec/windows-baseline" -> "dev-sec/nginx-baseline"
+"HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks" -> "anthcourtney/ansible-role-cis-amazon-linux"
+"HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks" -> "radsec/RHEL7-CIS"
+"HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks" -> "ansible-lockdown/RHEL7-CIS"
+"dev-sec/ansible-windows-hardening" -> "dev-sec/windows-baseline"
+"dev-sec/ansible-windows-hardening" -> "juju4/ansible-harden-windows"
+"dev-sec/ansible-windows-hardening" -> "dev-sec/ansible-nginx-hardening"
+"openstack/ansible-hardening" -> "ansible-lockdown/RHEL7-CIS"
+"openstack/ansible-hardening" -> "ansible/ansible-lockdown" ["e"=1]
+"openstack/ansible-hardening" -> "ansible-lockdown/RHEL7-STIG"
+"openstack/ansible-hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"openstack/ansible-hardening" -> "openstack-archive/openstack-ansible-security"
+"openstack/ansible-hardening" -> "konstruktoid/ansible-role-hardening"
+"openstack/ansible-hardening" -> "dev-sec/ansible-ssh-hardening"
+"openstack/ansible-hardening" -> "ansible-lockdown/RHEL8-CIS"
+"openstack/ansible-hardening" -> "major/cis-rhel-ansible"
+"openstack/ansible-hardening" -> "ansible-lockdown/RHEL6-STIG"
+"openstack/ansible-hardening" -> "debops/debops-playbooks" ["e"=1]
+"openstack/ansible-hardening" -> "openstack/openstack-ansible-ops"
+"openstack/ansible-hardening" -> "centos-opstools/opstools-ansible"
+"openstack/ansible-hardening" -> "nickjj/ansigenome" ["e"=1]
+"openstack/ansible-hardening" -> "ComplianceAsCode/content"
+"finalduty/cis-benchmarks-audit" -> "mrC2C/cis-benchmark-centOS-8"
+"finalduty/cis-benchmarks-audit" -> "massyn/centos-cis-benchmark"
+"finalduty/cis-benchmarks-audit" -> "radsec/CentOS7-CIS"
+"finalduty/cis-benchmarks-audit" -> "HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks"
+"dev-sec/chef-os-hardening" ["l"="8.456,-12.737"]
+"dev-sec/chef-ssh-hardening" ["l"="8.435,-12.722"]
+"dev-sec/linux-baseline" ["l"="8.5,-12.779"]
+"dev-sec/puppet-os-hardening" ["l"="8.429,-12.755"]
+"dev-sec/chef-nginx-hardening" ["l"="8.429,-12.697"]
+"dev-sec/ssh-baseline" ["l"="8.479,-12.759"]
+"chefspec/chefspec" ["l"="9.135,-12.881"]
+"dev-sec/chef-windows-hardening" ["l"="8.482,-12.701"]
+"dev-sec/cis-docker-benchmark" ["l"="8.5,-12.717"]
+"sethvargo/chef-sugar" ["l"="9.147,-12.842"]
+"dev-sec/hardening" ["l"="8.452,-12.779"]
+"dev-sec/chef-postgres-hardening" ["l"="8.445,-12.7"]
+"chef-boneyard/audit-cis" ["l"="8.414,-12.719"]
+"dev-sec/windows-baseline" ["l"="8.493,-12.746"]
+"test-kitchen/kitchen-dokken" ["l"="9.131,-12.848"]
+"dev-sec/chef-mysql-hardening" ["l"="8.415,-12.688"]
+"dev-sec/chef-apache-hardening" ["l"="8.402,-12.696"]
+"RedHatOfficial/ansible-role-rhel7-stig" ["l"="8.639,-13.007"]
+"ansible-lockdown/RHEL7-STIG" ["l"="8.598,-12.963"]
+"RedHatOfficial/ansible-role-rhel8-stig" ["l"="8.669,-13.033"]
+"ComplianceAsCode/content" ["l"="8.527,-12.967"]
+"OpenSCAP/openscap" ["l"="8.48,-13.03"]
+"OpenSCAP/scap-workbench" ["l"="8.493,-13.052"]
+"dev-sec/ansible-collection-hardening" ["l"="8.651,-12.339"]
+"CISecurity/OVALRepo" ["l"="8.516,-13.037"]
+"nsacyber/Windows-Secure-Host-Baseline" ["l"="-42.529,-33.042"]
+"RedHatGov/ssg-el7-kickstart" ["l"="8.587,-13.023"]
+"inspec/inspec" ["l"="8.492,-12.311"]
+"usnistgov/OSCAL" ["l"="9.139,-9.617"]
+"ansible/ansible-lockdown" ["l"="8.584,-12.404"]
+"redhat-cop/agnosticd" ["l"="10.584,-11.449"]
+"openstack/ansible-hardening" ["l"="8.553,-12.923"]
+"ComplianceAsCode/redhat" ["l"="8.486,-12.982"]
+"ansible/workshops" ["l"="8.636,-12.256"]
+"OpenSCAP/oval-graph" ["l"="8.476,-13.094"]
+"dev-sec/cis-kubernetes-benchmark" ["l"="8.533,-12.724"]
+"dev-sec/linux-patch-baseline" ["l"="8.52,-12.739"]
+"dev-sec/ssl-baseline" ["l"="8.506,-12.736"]
+"neuvector/kubernetes-cis-benchmark" ["l"="8.567,-12.671"]
+"dev-sec/example-puppet-hardening" ["l"="8.414,-12.786"]
+"dev-sec/ansible-ssh-hardening" ["l"="8.479,-12.834"]
+"dev-sec/ansible-apache-hardening" ["l"="8.438,-12.816"]
+"dev-sec/puppet-ssh-hardening" ["l"="8.383,-12.753"]
+"dev-sec/puppet-mysql-hardening" ["l"="8.388,-12.735"]
+"ripienaar/puppet-reportprint" ["l"="1.537,-31.54"]
+"example42/psick" ["l"="1.462,-31.504"]
+"dev-sec/puppet-apache-hardening" ["l"="8.394,-12.744"]
+"OpenSCAP/openscap-daemon" ["l"="8.436,-13.099"]
+"OVALProject/Language" ["l"="8.514,-13.068"]
+"greenbone/openvas-scanner" ["l"="-48.134,-30.557"]
+"cve-search/cve-search" ["l"="8.348,-11.517"]
+"ossec/ossec-hids" ["l"="-42.746,-33.394"]
+"Arachni/arachni" ["l"="-47.915,-30.437"]
+"CISOfy/lynis" ["l"="-48.068,-30.608"]
+"NationalSecurityAgency/SIMP" ["l"="-42.62,-32.971"]
+"TheHive-Project/TheHive" ["l"="-42.535,-33.325"]
+"infobyte/faraday" ["l"="-47.95,-30.502"]
+"major/cis-rhel-ansible" ["l"="8.527,-12.914"]
+"major/ansible-role-cis" ["l"="8.5,-12.913"]
+"ansible-lockdown/RHEL7-CIS" ["l"="8.612,-12.927"]
+"ansible-lockdown/RHEL6-STIG" ["l"="8.575,-12.967"]
+"awailly/cis-ubuntu-ansible" ["l"="8.485,-12.935"]
+"major/securekickstarts" ["l"="8.489,-12.896"]
+"oguya/cis-ubuntu-14-ansible" ["l"="8.482,-12.916"]
+"ansible-provisioning/ansible-provisioning" ["l"="8.6,-12.502"]
+"sanderv32/cis-rhel-ansible" ["l"="8.507,-12.932"]
+"dev-sec/nginx-baseline" ["l"="8.507,-12.759"]
+"dev-sec/cis-dil-benchmark" ["l"="8.529,-12.757"]
+"dev-sec/apache-baseline" ["l"="8.478,-12.741"]
+"radsec/CentOS7-CIS" ["l"="8.699,-12.811"]
+"radsec/RHEL7-CIS" ["l"="8.696,-12.841"]
+"fcaviggia/hardening-script-el6" ["l"="8.609,-13.026"]
+"fcaviggia/hardening-script-el6-kickstart" ["l"="8.633,-13.05"]
+"BuddhaLabs/Aqueduct" ["l"="8.591,-13.043"]
+"RedHatGov/ssg-el6-kickstart" ["l"="8.605,-13.045"]
+"florianutz/Ubuntu1804-CIS" ["l"="8.67,-12.858"]
+"florianutz/ubuntu2004_cis" ["l"="8.652,-12.863"]
+"florianutz/Ubuntu1604-CIS" ["l"="8.724,-12.841"]
+"alivx/CIS-Ubuntu-20.04-Ansible" ["l"="8.65,-12.884"]
+"ansible-lockdown/UBUNTU18-CIS" ["l"="8.659,-12.911"]
+"HarryHarcourt/Ansible-RHEL7-CIS-Benchmarks" ["l"="8.667,-12.878"]
+"dev-sec/windows-patch-baseline" ["l"="8.519,-12.708"]
+"dev-sec/php-baseline" ["l"="8.49,-12.729"]
+"dev-sec/mysql-baseline" ["l"="8.51,-12.747"]
+"dev-sec/postgres-baseline" ["l"="8.465,-12.712"]
+"massyn/centos-cis-benchmark" ["l"="8.701,-12.772"]
+"haxorof/centos-bench-security" ["l"="8.719,-12.755"]
+"dev-sec/chef-jenkins-hardening" ["l"="8.429,-12.675"]
+"OVALProject/Test-Content" ["l"="8.529,-13.076"]
+"OVALProject/ovalproject.github.io" ["l"="8.527,-13.092"]
+"openstack/ansible-role-openstack-operations" ["l"="8.354,-13.008"]
+"openstack/openstack-ansible-openstack_openrc" ["l"="8.378,-13.004"]
+"dev-sec/puppet-postgres-hardening" ["l"="8.37,-12.741"]
+"dev-sec/puppet-nginx-hardening" ["l"="8.374,-12.73"]
+"RedHatOfficial/ansible-role-rhel9-stig" ["l"="8.687,-13.052"]
+"ansible-lockdown/RHEL8-STIG" ["l"="8.636,-12.949"]
+"ansible-lockdown/RHEL8-CIS" ["l"="8.636,-12.931"]
+"ansible-lockdown/RHEL7-STIG-Audit" ["l"="8.622,-12.947"]
+"ansible-lockdown/RHEL8-STIG-Audit" ["l"="8.652,-12.976"]
+"ansible-lockdown/UBUNTU20-CIS" ["l"="8.648,-12.911"]
+"ansible-lockdown/Windows-2016-CIS" ["l"="8.652,-12.935"]
+"ansible-lockdown/RHEL8-CIS-Audit" ["l"="8.667,-12.942"]
+"ansible-lockdown/RHEL9-CIS" ["l"="8.662,-12.954"]
+"ansible-lockdown/Windows-2019-CIS" ["l"="8.663,-12.928"]
+"ansible-lockdown/UBUNTU22-CIS" ["l"="8.632,-12.903"]
+"RedHatOfficial/ansible-role-rhel8-cis" ["l"="8.683,-12.976"]
+"ansible-lockdown/Windows-2019-STIG" ["l"="8.682,-12.934"]
+"ansible-lockdown/Windows-2022-CIS" ["l"="8.684,-12.952"]
+"ansible-lockdown/UBUNTU20-CIS-Audit" ["l"="8.724,-12.921"]
+"darkwizard242/cis_ubuntu_2004" ["l"="8.635,-12.877"]
+"dsglaser/cis-security" ["l"="8.709,-12.876"]
+"OpenSCAP/openscap-report" ["l"="8.472,-13.12"]
+"dev-sec/ansible-nginx-hardening" ["l"="8.456,-12.819"]
+"dev-sec/ansible-mysql-hardening" ["l"="8.442,-12.837"]
+"geerlingguy/ansible-role-firewall" ["l"="7.86,-12.94"]
+"geerlingguy/ansible-role-nginx" ["l"="7.87,-12.985"]
+"geerlingguy/ansible-role-security" ["l"="7.867,-12.919"]
+"dev-sec/ansible-windows-hardening" ["l"="8.479,-12.798"]
+"nginx/ansible-role-nginx" ["l"="7.923,-12.985"]
+"Icinga/ansible-playbooks" ["l"="9.148,-11.27"]
+"konstruktoid/hardening" ["l"="8.59,-12.844"]
+"konstruktoid/ansible-role-hardening" ["l"="8.594,-12.881"]
+"Jsitech/JShielder" ["l"="8.622,-12.794"]
+"GTekSD/SUASS" ["l"="-48.031,-29.316"]
+"trimstray/linux-hardening-checklist" ["l"="-14.217,-6.416"]
+"ovh/debian-cis" ["l"="8.551,-12.865"]
+"PaulSec/awesome-windows-domain-hardening" ["l"="-42.532,-33.084"]
+"hardentools/hardentools" ["l"="-42.474,-33.089"]
+"pyllyukko/user.js" ["l"="-52.476,12.418"]
+"konstruktoid/hardened-images" ["l"="8.618,-12.841"]
+"rcbops/rpc-openstack" ["l"="8.366,-13.034"]
+"cloudnull/osa-multi-node-aio" ["l"="8.387,-13.021"]
+"openstack/openstack-ansible-ops" ["l"="8.412,-12.993"]
+"rcbops/rpc-maas" ["l"="8.332,-13.037"]
+"openstack/openstack-ansible-specs" ["l"="8.346,-13.062"]
+"rcbops/rpc-gating" ["l"="8.364,-13.058"]
+"rcbops/openstack-ops" ["l"="8.346,-13.045"]
+"William-Yeh/docker-ansible" ["l"="8.358,-12.823"]
+"philm/ansible_playbook" ["l"="8.309,-12.835"]
+"ansible/ansible-docker-base" ["l"="8.629,-12.533"]
+"chrismeyersfsu/provision_docker" ["l"="8.312,-12.8"]
+"OVAL-Community/OVAL" ["l"="8.537,-13.062"]
+"joval/jOVAL" ["l"="8.499,-13.08"]
+"Sep0lkit/oval-for-el" ["l"="8.405,-11.353"]
+"OpenSCAP/container-compliance" ["l"="8.409,-13.153"]
+"dockersecuritytools/batten" ["l"="8.383,-13.175"]
+"GovReady/ubuntu-scap" ["l"="8.412,-13.184"]
+"ansible-lockdown/RHEL7-CIS-Audit" ["l"="8.645,-12.96"]
+"juliedavila/STIGMA" ["l"="8.563,-13.001"]
+"samdoran/ansible-role-rhel6stig" ["l"="8.58,-12.993"]
+"ansible-lockdown/Kubernetes1.6.1-CIS" ["l"="8.755,-12.921"]
+"ansible-lockdown/POSTGRES-12-CIS" ["l"="8.757,-12.936"]
+"grupoversia/cis-ubuntu-ansible" ["l"="8.452,-12.947"]
+"RedHatOfficial/ansible-role-rhel7-cis" ["l"="8.706,-12.992"]
+"arothian/inspec-aws" ["l"="8.497,-12.69"]
+"fcaviggia/hardened-centos7-kickstart" ["l"="8.591,-13.07"]
+"fcaviggia/classification-banner" ["l"="8.612,-13.068"]
+"anthcourtney/ansible-role-cis-amazon-linux" ["l"="8.684,-12.898"]
+"MindPointGroup/ansible-vmware-provisioning" ["l"="8.626,-12.975"]
+"NextronSystems/ransomware-simulator" ["l"="8.424,-12.894"]
+"lawndoc/RanSim" ["l"="8.375,-12.918"]
+"JoelGMSec/PSRansom" ["l"="8.383,-12.891"]
+"Neo23x0/sysmon-config" ["l"="-42.321,-33.139"]
+"essandess/isp-data-pollution" ["l"="-51.417,9.947"]
+"cmars/onionpipe" ["l"="44.592,0.65"]
+"Bashfuscator/Bashfuscator" ["l"="-45.222,-31.989"]
+"gildasio/h2t" ["l"="-51.524,9.854"]
+"finalduty/cis-benchmarks-audit" ["l"="8.658,-12.813"]
+"thesourcerer8/hddsuperclone" ["l"="-51.653,9.888"]
+"d4rk007/RedGhost" ["l"="-46.438,-32.776"]
+"error-try-again/UbuntuHardeningFramework" ["l"="-51.633,10.548"]
+"ansible-lockdown/RHEL9-CIS-Audit" ["l"="8.697,-12.945"]
+"ansible-lockdown/Windows-2016-CIS-Audit" ["l"="8.745,-12.91"]
+"ansible-lockdown/Windows-10-STIG" ["l"="8.781,-12.942"]
+"openstack/openstack-ansible-galera_server" ["l"="8.336,-12.987"]
+"openstack/openstack-ansible-os_nova" ["l"="8.367,-12.987"]
+"hardenedlinux/harbian-audit" ["l"="-45.28,-35.01"]
+"ovh/the-bastion" ["l"="3.567,-9.755"]
+"ovh/terraform-provider-ovh" ["l"="3.543,-9.896"]
+"ansible-lockdown/DEBIAN12-CIS" ["l"="8.555,-12.83"]
+"dbernaci/CIS-Debian10-Ansible" ["l"="8.538,-12.837"]
+"ovh/ip-reputation-monitoring" ["l"="8.519,-12.858"]
+"ANSSI-FR/DFIR-O365RC" ["l"="-40.998,-32.458"]
+"philm/ansible_target" ["l"="8.282,-12.838"]
+"Mirantis/compliance" ["l"="8.509,-12.665"]
+"aquasecurity/docker-bench" ["l"="7.346,-8.513"]
+"ansible-lockdown/UBUNTU22-CIS-Audit" ["l"="8.686,-12.921"]
+"CentOS/sig-core-livemedia" ["l"="8.602,-13.109"]
+"openstack/openstack-ansible-lxc_hosts" ["l"="8.414,-13.018"]
+"openstack/openstack-ansible-os_keystone" ["l"="8.388,-12.987"]
+"openstack/openstack-ansible-os_designate" ["l"="8.398,-12.974"]
+"openstack/openstack-ansible-openstack_hosts" ["l"="8.398,-13.008"]
+"MindPointGroup/stig-cli" ["l"="8.607,-12.993"]
+"juju4/ansible-harden-windows" ["l"="8.507,-12.811"]
+"grdnrio/windows-security-policy" ["l"="8.475,-12.671"]
+"githubixx/ansible-role-harden-linux" ["l"="11.522,-9.325"]
+"juju4/ansible-harden" ["l"="8.618,-12.863"]
+"OVALProject/Sandbox" ["l"="8.512,-13.103"]
+"openstack-archive/openstack-ansible-security" ["l"="8.519,-12.891"]
+"debops/debops-playbooks" ["l"="8.653,-12.466"]
+"centos-opstools/opstools-ansible" ["l"="8.561,-12.949"]
+"nickjj/ansigenome" ["l"="8.588,-12.428"]
+"mrC2C/cis-benchmark-centOS-8" ["l"="8.675,-12.782"]
+}

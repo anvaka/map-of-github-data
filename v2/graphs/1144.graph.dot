@@ -1,0 +1,1282 @@
+digraph G {
+"Altinity/clickhouse-operator" -> "Altinity/clickhouse-backup"
+"Altinity/clickhouse-operator" -> "ContentSquare/chproxy"
+"Altinity/clickhouse-operator" -> "ClickHouse/clickhouse-go"
+"Altinity/clickhouse-operator" -> "Altinity/clickhouse-grafana"
+"Altinity/clickhouse-operator" -> "ClickHouse/clickhouse-presentations"
+"Altinity/clickhouse-operator" -> "metrico/gigapipe"
+"Altinity/clickhouse-operator" -> "ClickHouse/clickhouse_exporter"
+"Altinity/clickhouse-operator" -> "ClickHouse/clickhouse-java"
+"Altinity/clickhouse-operator" -> "strimzi/strimzi-kafka-operator" ["e"=1]
+"Altinity/clickhouse-operator" -> "housepower/clickhouse_sinker"
+"Altinity/clickhouse-operator" -> "zalando/postgres-operator" ["e"=1]
+"Altinity/clickhouse-operator" -> "nikepan/clickhouse-bulk"
+"Altinity/clickhouse-operator" -> "jaegertracing/jaeger-clickhouse" ["e"=1]
+"Altinity/clickhouse-operator" -> "chdb-io/chdb" ["e"=1]
+"Altinity/clickhouse-operator" -> "spotahome/redis-operator" ["e"=1]
+"Altinity/clickhouse-backup" -> "Altinity/clickhouse-operator"
+"Altinity/clickhouse-backup" -> "ContentSquare/chproxy"
+"Altinity/clickhouse-backup" -> "housepower/clickhouse_sinker"
+"Altinity/clickhouse-backup" -> "nikepan/clickhouse-bulk"
+"Altinity/clickhouse-backup" -> "Altinity/clickhouse-grafana"
+"Altinity/clickhouse-backup" -> "ClickHouse/clickhouse-go"
+"Altinity/clickhouse-backup" -> "ClickHouse/clickhouse_exporter"
+"Altinity/clickhouse-backup" -> "ClickHouse/clickhouse-presentations"
+"Altinity/clickhouse-backup" -> "tabixio/tabix"
+"Altinity/clickhouse-backup" -> "housepower/ckman"
+"Altinity/clickhouse-backup" -> "ClickHouse/clickhouse-java"
+"Altinity/clickhouse-backup" -> "mymarilyn/clickhouse-driver"
+"Altinity/clickhouse-backup" -> "Altinity/clickhouse-sink-connector"
+"Altinity/clickhouse-backup" -> "metrico/gigapipe"
+"Altinity/clickhouse-backup" -> "PostHog/HouseWatch"
+"metrico/gigapipe" -> "uptrace/uptrace" ["e"=1]
+"metrico/gigapipe" -> "Altinity/clickhouse-operator"
+"metrico/gigapipe" -> "metrico/qryn-view" ["e"=1]
+"metrico/gigapipe" -> "sipcapture/homer-app" ["e"=1]
+"metrico/gigapipe" -> "flant/loghouse" ["e"=1]
+"metrico/gigapipe" -> "Altinity/clickhouse-backup"
+"metrico/gigapipe" -> "metrico/clickhouse-mate" ["e"=1]
+"metrico/gigapipe" -> "Altinity/clickhouse-grafana"
+"metrico/gigapipe" -> "sipcapture/paStash" ["e"=1]
+"metrico/gigapipe" -> "sipcapture/rtcagent"
+"metrico/gigapipe" -> "gigapi/gigapi" ["e"=1]
+"metrico/gigapipe" -> "chdb-io/chdb" ["e"=1]
+"metrico/gigapipe" -> "ContentSquare/chproxy"
+"metrico/gigapipe" -> "clickvisual/clickvisual"
+"metrico/gigapipe" -> "odigos-io/odigos" ["e"=1]
+"ClickHouse/clickhouse-jdbc-bridge" -> "housepower/ClickHouse-Native-JDBC"
+"ClickHouse/clickhouse-jdbc-bridge" -> "ClickHouse/clickhouse-odbc"
+"ClickHouse/clickhouse-jdbc-bridge" -> "DmitryBe/spark-clickhouse"
+"Altinity/clickhouse-mysql-data-reader" -> "yymysql/mysql-clickhouse-replication" ["e"=1]
+"Altinity/clickhouse-mysql-data-reader" -> "long2ice/synch" ["e"=1]
+"Altinity/clickhouse-mysql-data-reader" -> "Altinity/clickhouse-rpm"
+"Altinity/clickhouse-mysql-data-reader" -> "Altinity/clicktail"
+"Altinity/clickhouse-mysql-data-reader" -> "ClickHouse/clickhouse_exporter"
+"Altinity/clickhouse-mysql-data-reader" -> "housepower/clickhouse_sinker"
+"Altinity/clickhouse-mysql-data-reader" -> "RickyHuo/hangout-output-clickhouse"
+"Altinity/clickhouse-mysql-data-reader" -> "fuslab/anyscale"
+"Altinity/clickhouse-mysql-data-reader" -> "ClickHouse/clickhouse-presentations"
+"Altinity/clickhouse-mysql-data-reader" -> "housepower/ckman"
+"Altinity/clickhouse-mysql-data-reader" -> "ClickHouse/clickhouse-jdbc-bridge"
+"Altinity/clickhouse-mysql-data-reader" -> "signal18/replication-manager" ["e"=1]
+"childe/gohangout" -> "childe/hangout" ["e"=1]
+"childe/gohangout" -> "kevwan/go-stash" ["e"=1]
+"childe/gohangout" -> "clickvisual/clickvisual"
+"childe/gohangout" -> "loggie-io/loggie" ["e"=1]
+"childe/gohangout" -> "housepower/clickhouse_sinker"
+"childe/gohangout" -> "ContentSquare/chproxy"
+"childe/gohangout" -> "DTStack/jlogstash"
+"childe/gohangout" -> "brokercap/Bifrost" ["e"=1]
+"childe/gohangout" -> "flashcatcloud/categraf" ["e"=1]
+"childe/gohangout" -> "AliyunContainerService/kube-eventer" ["e"=1]
+"childe/gohangout" -> "ClickHouse/clickhouse-go"
+"childe/gohangout" -> "medcl/infini-gateway" ["e"=1]
+"childe/gohangout" -> "RickyHuo/hangout-output-clickhouse"
+"childe/gohangout" -> "medcl/esm" ["e"=1]
+"childe/gohangout" -> "alibaba/loongcollector" ["e"=1]
+"Percona-Lab/clickhousedb_fdw" -> "ildus/clickhouse_fdw"
+"Percona-Lab/clickhousedb_fdw" -> "mkabilov/pg2ch"
+"Percona-Lab/clickhousedb_fdw" -> "Infinidat/infi.clickhouse_fdw"
+"Percona-Lab/clickhousedb_fdw" -> "valyala/chclient"
+"ildus/clickhouse_fdw" -> "Percona-Lab/clickhousedb_fdw"
+"ildus/clickhouse_fdw" -> "mkabilov/pg2ch"
+"ildus/clickhouse_fdw" -> "x4m/pg_tm_aux"
+"ivi-ru/flink-clickhouse-sink" -> "itinycheng/flink-connector-clickhouse" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "apache/bahir-flink" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "gmmstrive/flink-connector-clickhouse" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "housepower/ClickHouse-Native-JDBC"
+"ivi-ru/flink-clickhouse-sink" -> "streamnative/pulsar-flink" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "housepower/clickhouse_sinker"
+"ivi-ru/flink-clickhouse-sink" -> "housepower/ckman"
+"ivi-ru/flink-clickhouse-sink" -> "danny0405/flink-source-code-analysis" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "ClickHouse/clickhouse-java"
+"ivi-ru/flink-clickhouse-sink" -> "Blynk-Technologies/clickhouse4j"
+"ivi-ru/flink-clickhouse-sink" -> "leesf/hudi-resources" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "hairless/plink" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "zhuxiaoshang/flink-be-god" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "apache/doris-flink-connector" ["e"=1]
+"ivi-ru/flink-clickhouse-sink" -> "DmitryBe/spark-clickhouse"
+"ContentSquare/chproxy" -> "Altinity/clickhouse-grafana"
+"ContentSquare/chproxy" -> "Altinity/clickhouse-backup"
+"ContentSquare/chproxy" -> "housepower/ckman"
+"ContentSquare/chproxy" -> "housepower/clickhouse_sinker"
+"ContentSquare/chproxy" -> "nikepan/clickhouse-bulk"
+"ContentSquare/chproxy" -> "ClickHouse/clickhouse-go"
+"ContentSquare/chproxy" -> "ClickHouse/clickhouse-presentations"
+"ContentSquare/chproxy" -> "tabixio/tabix"
+"ContentSquare/chproxy" -> "Altinity/clickhouse-operator"
+"ContentSquare/chproxy" -> "ClickHouse/clickhouse_exporter"
+"ContentSquare/chproxy" -> "ClickHouse/clickhouse-java"
+"ContentSquare/chproxy" -> "housepower/ClickHouse-Native-JDBC"
+"ContentSquare/chproxy" -> "childe/gohangout"
+"ContentSquare/chproxy" -> "clickvisual/clickvisual"
+"ContentSquare/chproxy" -> "mymarilyn/clickhouse-driver"
+"housepower/ClickHouse-Native-JDBC" -> "ClickHouse/clickhouse-java"
+"housepower/ClickHouse-Native-JDBC" -> "Blynk-Technologies/clickhouse4j"
+"housepower/ClickHouse-Native-JDBC" -> "housepower/clickhouse_sinker"
+"housepower/ClickHouse-Native-JDBC" -> "ClickHouse/spark-clickhouse-connector"
+"housepower/ClickHouse-Native-JDBC" -> "ClickHouse/clickhouse-jdbc-bridge"
+"housepower/ClickHouse-Native-JDBC" -> "ivi-ru/flink-clickhouse-sink"
+"housepower/ClickHouse-Native-JDBC" -> "ClickHouse/clickhouse-presentations"
+"housepower/ClickHouse-Native-JDBC" -> "ContentSquare/chproxy"
+"housepower/ClickHouse-Native-JDBC" -> "ClickHouse/clickhouse_exporter"
+"housepower/ClickHouse-Native-JDBC" -> "housepower/ckman"
+"housepower/ClickHouse-Native-JDBC" -> "ClickHouse/clickhouse-odbc"
+"housepower/ClickHouse-Native-JDBC" -> "tabixio/tabix"
+"housepower/ClickHouse-Native-JDBC" -> "itinycheng/flink-connector-clickhouse" ["e"=1]
+"housepower/ClickHouse-Native-JDBC" -> "VirtusAI/clickhouse-client-java"
+"housepower/ClickHouse-Native-JDBC" -> "HouseOps/HouseOps"
+"nauu/clickhousebook" -> "ClickHouse-China/ClickhouseMeetup"
+"papyrussolution/UhttBarcodeReference" -> "papyrussolution/OpenPapyrus"
+"papyrussolution/UhttBarcodeReference" -> "natasha/natasha" ["e"=1]
+"papyrussolution/UhttBarcodeReference" -> "smi2/phpClickHouse"
+"papyrussolution/UhttBarcodeReference" -> "wapmorgan/Morphos" ["e"=1]
+"DTStack/jfilebeat" -> "DTStack/catcher"
+"DTStack/catcher" -> "DTStack/jfilebeat"
+"ClickHouse/metabase-clickhouse-driver" -> "ClickHouse/clickhouse-odbc"
+"ClickHouse/metabase-clickhouse-driver" -> "grafana/clickhouse-datasource"
+"ClickHouse/metabase-clickhouse-driver" -> "Slach/clickhouse-flamegraph"
+"ClickHouse/metabase-clickhouse-driver" -> "nikepan/clickhouse-bulk"
+"ClickHouse/metabase-clickhouse-driver" -> "tabixio/tabix"
+"ClickHouse/metabase-clickhouse-driver" -> "ildus/clickhouse_fdw"
+"ClickHouse/metabase-clickhouse-driver" -> "ClickHouse/clickhouse-presentations"
+"ClickHouse/metabase-clickhouse-driver" -> "housepower/clickhouse_sinker"
+"ClickHouse/metabase-clickhouse-driver" -> "ClickHouse/clickhouse-jdbc-bridge"
+"ClickHouse/metabase-clickhouse-driver" -> "Altinity/clickhouse-mysql-data-reader"
+"ClickHouse/metabase-clickhouse-driver" -> "ClickHouse/dbt-clickhouse"
+"ClickHouse/metabase-clickhouse-driver" -> "ClickHouse/clickhouse-connect"
+"ClickHouse/metabase-clickhouse-driver" -> "korchasa/awesome-clickhouse"
+"ClickHouse/metabase-clickhouse-driver" -> "ClickHouse/clickhouse_exporter"
+"ClickHouse/metabase-clickhouse-driver" -> "Blynk-Technologies/clickhouse4j"
+"HouseOps/HouseOps" -> "VKCOM/lighthouse"
+"HouseOps/HouseOps" -> "tabixio/tabix"
+"HouseOps/HouseOps" -> "jaykelin/clickhouse-hdfs-loader"
+"HouseOps/HouseOps" -> "ClickHouse/clickhouse_exporter"
+"HouseOps/HouseOps" -> "ClickHouse/clickhouse-odbc"
+"HouseOps/HouseOps" -> "Altinity/clickhouse-rpm"
+"mindis/prom2click" -> "Percona-Lab/PromHouse"
+"mindis/prom2click" -> "iyacontrol/prom2click"
+"mindis/prom2click" -> "ClickHouse/clickhouse_exporter"
+"mkabilov/pg2ch" -> "Percona-Lab/clickhousedb_fdw"
+"mkabilov/pg2ch" -> "ildus/clickhouse_fdw"
+"housepower/clickhouse_sinker" -> "housepower/ckman"
+"housepower/clickhouse_sinker" -> "ContentSquare/chproxy"
+"housepower/clickhouse_sinker" -> "ClickHouse/clickhouse_exporter"
+"housepower/clickhouse_sinker" -> "nikepan/clickhouse-bulk"
+"housepower/clickhouse_sinker" -> "housepower/ClickHouse-Native-JDBC"
+"housepower/clickhouse_sinker" -> "ClickHouse/clickhouse-presentations"
+"housepower/clickhouse_sinker" -> "Altinity/clickhouse-backup"
+"housepower/clickhouse_sinker" -> "ivi-ru/flink-clickhouse-sink"
+"housepower/clickhouse_sinker" -> "ClickHouse/clickhouse-go"
+"housepower/clickhouse_sinker" -> "tabixio/tabix"
+"housepower/clickhouse_sinker" -> "Altinity/clickhouse-grafana"
+"housepower/clickhouse_sinker" -> "mkabilov/pg2ch"
+"housepower/clickhouse_sinker" -> "childe/gohangout"
+"housepower/clickhouse_sinker" -> "Percona-Lab/PromHouse"
+"housepower/clickhouse_sinker" -> "Altinity/clickhouse-mysql-data-reader"
+"maximdanilchenko/aiochclient" -> "long2ice/asynch"
+"maximdanilchenko/aiochclient" -> "mymarilyn/aioch"
+"maximdanilchenko/aiochclient" -> "xzkostyan/clickhouse-sqlalchemy"
+"maximdanilchenko/aiochclient" -> "mymarilyn/clickhouse-driver"
+"maximdanilchenko/aiochclient" -> "Infinidat/infi.clickhouse_orm"
+"Altinity/clickhouse-rpm-install" -> "Altinity/clickhouse-rpm"
+"Altinity/clickhouse-rpm-install" -> "RickyHuo/hangout-output-clickhouse"
+"Altinity/clickhouse-rpm-install" -> "red-soft-ru/clickhouse-rpm"
+"Altinity/clickhouse-rpm-install" -> "ClickHouse/clickhouse_exporter"
+"mymarilyn/aioch" -> "maximdanilchenko/aiochclient"
+"mymarilyn/aioch" -> "mymarilyn/clickhouse-driver"
+"mymarilyn/aioch" -> "long2ice/asynch"
+"mymarilyn/aioch" -> "xzkostyan/clickhouse-sqlalchemy"
+"Altinity/clicktail" -> "Percona-Lab/PromHouse"
+"Altinity/clicktail" -> "honeycombio/honeytail"
+"Altinity/clicktail" -> "percona/go-mysql"
+"VKCOM/kittenhouse" -> "VKCOM/lighthouse"
+"VKCOM/kittenhouse" -> "nikepan/clickhouse-bulk"
+"VKCOM/lighthouse" -> "VKCOM/kittenhouse"
+"VKCOM/lighthouse" -> "HouseOps/HouseOps"
+"esazykin/laravel-clickhouse" -> "the-tinderbox/ClickhouseBuilder"
+"esazykin/laravel-clickhouse" -> "the-tinderbox/ClickhouseClient"
+"mintance/nginx-clickhouse" -> "funcmike/logstash-output-clickhouse"
+"FusionDB/fusiondb-postgress" -> "fuslab/anyscale"
+"carrotquest/django-clickhouse" -> "Infinidat/infi.clickhouse_orm"
+"carrotquest/django-clickhouse" -> "jayvynl/django-clickhouse-backend"
+"Altinity/ClickHouse" -> "Altinity/clickhouse-regression"
+"Altinity/ClickHouse" -> "Altinity/altinityknowledgebase"
+"Altinity/ClickHouse" -> "Altinity/clickhouse-sql-examples"
+"fuslab/anyscale" -> "FusionDB/fusiondb-postgress"
+"fuslab/anyscale" -> "wwwbjqcom/mysql_audit"
+"actiontech/dble-docs-cn" -> "actiontech/dtle-docs-cn"
+"actiontech/dble-docs-cn" -> "wwwbjqcom/mysql_audit"
+"testflows/TestFlows" -> "Altinity/clickhouse-regression"
+"wwwbjqcom/Analysisbinlog" -> "wwwbjqcom/binlogAL"
+"wwwbjqcom/mysql2iso" -> "wwwbjqcom/mysql_audit"
+"valyala/chclient" -> "Vertamedia/chtable"
+"wwwbjqcom/mysql_to_db" -> "wwwbjqcom/tubing"
+"wwwbjqcom/mysql_to_db" -> "wwwbjqcom/mysql2iso"
+"ClickHouse/clickhouse-cpp" -> "ClickHouse/clickhouse-odbc"
+"ClickHouse/clickhouse-cpp" -> "artpaul/clickhouse-cpp"
+"ClickHouse/clickhouse-cpp" -> "mymarilyn/clickhouse-driver"
+"glushkovds/phpclickhouse-laravel" -> "bavix/laravel-clickhouse"
+"glushkovds/phpclickhouse-laravel" -> "cybercog/laravel-clickhouse"
+"glushkovds/phpclickhouse-laravel" -> "the-tinderbox/ClickhouseBuilder"
+"glushkovds/phpclickhouse-laravel" -> "smi2/phpClickHouse"
+"PostHog/posthog.com" -> "PostHog/posthog-js"
+"PostHog/posthog.com" -> "PostHog/squeak"
+"PostHog/posthog.com" -> "PostHog/posthog-js-lite"
+"PostHog/posthog.com" -> "neondatabase/website"
+"bavix/laravel-clickhouse" -> "glushkovds/phpclickhouse-laravel"
+"Slach/clickhouse-flamegraph" -> "delium/clickhouse-migrator"
+"Slach/clickhouse-flamegraph" -> "Altinity/altinityknowledgebase"
+"long2ice/asynch" -> "maximdanilchenko/aiochclient"
+"long2ice/asynch" -> "mymarilyn/aioch"
+"long2ice/asynch" -> "xzkostyan/clickhouse-sqlalchemy"
+"PostHog/posthog-js" -> "PostHog/posthog-js-lite"
+"PostHog/posthog-js" -> "PostHog/posthog.com"
+"PostHog/posthog-js" -> "PostHog/squeak"
+"PostHog/posthog-js" -> "PostHog/HouseWatch"
+"PostHog/posthog-js" -> "PostHog/posthog-php"
+"percona/go-mysql" -> "Altinity/clicktail"
+"Blynk-Technologies/clickhouse4j" -> "housepower/ClickHouse-Native-JDBC"
+"Blynk-Technologies/clickhouse4j" -> "ClickHouse/clickhouse-java"
+"Blynk-Technologies/clickhouse4j" -> "ivi-ru/flink-clickhouse-sink"
+"Blynk-Technologies/clickhouse4j" -> "DmitryBe/spark-clickhouse"
+"Blynk-Technologies/clickhouse4j" -> "jaykelin/clickhouse-hdfs-loader"
+"wwwbjqcom/mysql_audit" -> "wwwbjqcom/mysql2iso"
+"PostHog/posthog-js-lite" -> "PostHog/posthog-js"
+"yaooqinn/itachi" -> "MrPowers/beavis"
+"yaooqinn/itachi" -> "MrPowers/bebe"
+"ClickHouse-China/ClickhouseMeetup" -> "jaykelin/clickhouse-hdfs-loader"
+"ITECOMMPAY/kibouse" -> "valyala/chclient"
+"Percona-Lab/clickhouse_exporter" -> "ClickHouse/clickhouse_exporter"
+"MrPowers/farsante" -> "MrPowers/beavis"
+"PostHog/posthog-php" -> "PostHog/posthog-node"
+"bryzgaloff/airflow-clickhouse-plugin" -> "ClickHouse/dbt-clickhouse"
+"wwwbjqcom/tubing" -> "wwwbjqcom/mysql2iso"
+"wwwbjqcom/binlogAL" -> "wwwbjqcom/tubing"
+"payloadcms/nextjs-custom-server" -> "payloadcms/next-payload"
+"payloadcms/nextjs-custom-server" -> "payloadcms/custom-website-series"
+"payloadcms/nextjs-custom-server" -> "Lambdo-Labs/payloadcms-astro-template"
+"payloadcms/nextjs-custom-server" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/nextjs-custom-server" -> "payloadcms/next-payload-demo"
+"payloadcms/nextjs-custom-server" -> "AlessioGr/payload-plugin-lexical"
+"payloadcms/nextjs-custom-server" -> "payloadcms/migrate-mongo-example"
+"ClickHouse/spark-clickhouse-connector" -> "housepower/ClickHouse-Native-JDBC"
+"ClickHouse/spark-clickhouse-connector" -> "yaooqinn/itachi"
+"ClickHouse/spark-clickhouse-connector" -> "CoxAutomotiveDataSolutions/spark-distcp"
+"ClickHouse/spark-clickhouse-connector" -> "ClickHouse/dbt-clickhouse"
+"ClickHouse/dbt-clickhouse" -> "bryzgaloff/airflow-clickhouse-plugin"
+"ClickHouse/dbt-clickhouse" -> "ClickHouse/clickhouse-kafka-connect"
+"ClickHouse/dbt-clickhouse" -> "ClickHouse/clickhouse-connect"
+"ClickHouse/dbt-clickhouse" -> "Altinity/clickhouse-sink-connector"
+"ClickHouse/dbt-clickhouse" -> "ClickHouse/spark-clickhouse-connector"
+"ClickHouse/dbt-clickhouse" -> "markporoshin/dbt-greenplum"
+"ClickHouse/dbt-clickhouse" -> "ClickHouse/examples"
+"ClickHouse/dbt-clickhouse" -> "gocardless/airflow-dbt" ["e"=1]
+"payloadcms/custom-website-series" -> "payloadcms/nextjs-custom-server"
+"jeanbmar/payload-s3-upload" -> "payloadcms/plugin-cloud-storage"
+"jeanbmar/payload-s3-upload" -> "payloadcms/plugin-stripe"
+"housepower/ckman" -> "ClickHouse/clickhouse_exporter"
+"housepower/ckman" -> "housepower/clickhouse_sinker"
+"housepower/ckman" -> "ContentSquare/chproxy"
+"housepower/ckman" -> "ivi-ru/flink-clickhouse-sink"
+"housepower/ckman" -> "Altinity/clickhouse-backup"
+"housepower/ckman" -> "itinycheng/flink-connector-clickhouse" ["e"=1]
+"housepower/ckman" -> "housepower/ClickHouse-Native-JDBC"
+"housepower/ckman" -> "ClickHouse/clickhouse-presentations"
+"housepower/ckman" -> "Altinity/clickhouse-rpm"
+"housepower/ckman" -> "devlive-community/dbm" ["e"=1]
+"housepower/ckman" -> "Altinity/clickhouse-mysql-data-reader"
+"housepower/ckman" -> "ClickHouse-China/ClickhouseMeetup"
+"housepower/ckman" -> "ByConity/ByConity" ["e"=1]
+"housepower/ckman" -> "ClickHouse/clickhouse-jdbc-bridge"
+"housepower/ckman" -> "housepower/ckman-fe"
+"Altinity/altinityknowledgebase" -> "Altinity/ClickHouse"
+"Altinity/tableau-connector-for-clickhouse" -> "ClickHouse/clickhouse-tableau-connector-jdbc"
+"MrPowers/bebe" -> "yaooqinn/itachi"
+"ClickHouse/clickhouse-tableau-connector-jdbc" -> "Altinity/tableau-connector-for-clickhouse"
+"ekm507/makenote" -> "jadijadi/makenote" ["e"=1]
+"ekm507/makenote" -> "Soheil-Rasouli/internet-origin"
+"ClickHouse/clickhouse-connect" -> "mymarilyn/clickhouse-driver"
+"ClickHouse/clickhouse-connect" -> "xzkostyan/clickhouse-sqlalchemy"
+"ClickHouse/clickhouse-connect" -> "ClickHouse/dbt-clickhouse"
+"ClickHouse/clickhouse-connect" -> "maximdanilchenko/aiochclient"
+"ClickHouse/clickhouse-connect" -> "amirj4m/Jadi-list-of-promises"
+"ClickHouse/clickhouse-connect" -> "long2ice/asynch"
+"ClickHouse/clickhouse-connect" -> "Soheil-Rasouli/internet-origin"
+"ClickHouse/clickhouse-connect" -> "chdb-io/chdb" ["e"=1]
+"ClickHouse/clickhouse-connect" -> "ClickHouse/clickhouse-odbc"
+"ClickHouse/clickhouse-connect" -> "Infinidat/infi.clickhouse_orm"
+"clickvisual/clickvisual" -> "gotomicro/ego" ["e"=1]
+"clickvisual/clickvisual" -> "alibaba/loongcollector" ["e"=1]
+"clickvisual/clickvisual" -> "childe/gohangout"
+"clickvisual/clickvisual" -> "flashcatcloud/categraf" ["e"=1]
+"clickvisual/clickvisual" -> "loggie-io/loggie" ["e"=1]
+"clickvisual/clickvisual" -> "kevwan/go-stash" ["e"=1]
+"clickvisual/clickvisual" -> "ContentSquare/chproxy"
+"clickvisual/clickvisual" -> "zeromicro/cds" ["e"=1]
+"clickvisual/clickvisual" -> "go-kratos/gateway" ["e"=1]
+"clickvisual/clickvisual" -> "brokercap/Bifrost" ["e"=1]
+"clickvisual/clickvisual" -> "starsliao/TenSunS" ["e"=1]
+"clickvisual/clickvisual" -> "koderover/zadig" ["e"=1]
+"clickvisual/clickvisual" -> "feiyu563/PrometheusAlert" ["e"=1]
+"clickvisual/clickvisual" -> "housepower/clickhouse_sinker"
+"clickvisual/clickvisual" -> "housepower/ckman"
+"payloadcms/plugin-nested-docs" -> "payloadcms/plugin-search"
+"payloadcms/plugin-nested-docs" -> "payloadcms/plugin-redirects"
+"payloadcms/plugin-nested-docs" -> "payloadcms/plugin-form-builder"
+"markporoshin/dbt-greenplum" -> "LexxaRRioo/rzv_data_engineering_series_s01e01"
+"go-faster/jx" -> "ClickHouse/ch-go"
+"go-faster/jx" -> "go-faster/errors"
+"go-faster/jx" -> "romshark/jscan"
+"go-faster/jx" -> "go-faster/oteldb"
+"payloadcms/plugin-seo" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/plugin-seo" -> "payloadcms/plugin-search"
+"payloadcms/plugin-seo" -> "payloadcms/plugin-form-builder"
+"payloadcms/plugin-seo" -> "payloadcms/plugin-stripe"
+"payloadcms/plugin-seo" -> "AlessioGr/payload-plugin-lexical"
+"payloadcms/plugin-seo" -> "chladog/payload-webp"
+"payloadcms/plugin-seo" -> "payloadcms/plugin-nested-docs"
+"payloadcms/plugin-seo" -> "pemedia/payload-visual-editor"
+"payloadcms/plugin-seo" -> "boomworks/payload-plugin-author-fields"
+"payloadcms/plugin-seo" -> "payloadcms/plugin-redirects"
+"invakid404/payload-blurhash-plugin" -> "chladog/payload-webp"
+"invakid404/payload-blurhash-plugin" -> "NouanceLabs/payload-simple-rbac"
+"invakid404/payload-blurhash-plugin" -> "brachypelma/payload-plugin-comments"
+"invakid404/payload-blurhash-plugin" -> "GeorgeHulpoi/payload-recaptcha-v3"
+"invakid404/payload-blurhash-plugin" -> "NouanceLabs/payload-better-fields-plugin"
+"invakid404/payload-blurhash-plugin" -> "boomworks/payload-plugin-author-fields"
+"invakid404/payload-blurhash-plugin" -> "r1tsuu/payload-enchants"
+"invakid404/payload-blurhash-plugin" -> "leonardstruck/payload-base64-plugin"
+"invakid404/payload-blurhash-plugin" -> "NouanceLabs/payload-dashboard-analytics"
+"payloadcms/public-demo" -> "payloadcms/next-payload"
+"ClickHouse/ch-go" -> "go-faster/jx"
+"ClickHouse/ch-go" -> "vahid-sohrabloo/chconn" ["e"=1]
+"ClickHouse/ch-go" -> "go-faster/oteldb"
+"ClickHouse/ch-go" -> "ClickHouse/clickhouse-go"
+"ClickHouse/ch-go" -> "grafana/clickhouse-datasource"
+"ClickHouse/ch-go" -> "ClickHouse/examples"
+"payloadcms/plugin-form-builder" -> "payloadcms/plugin-search"
+"payloadcms/plugin-form-builder" -> "payloadcms/plugin-nested-docs"
+"payloadcms/plugin-form-builder" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/plugin-form-builder" -> "payloadcms/plugin-stripe"
+"payloadcms/plugin-form-builder" -> "payloadcms/plugin-redirects"
+"payloadcms/plugin-form-builder" -> "payloadcms/plugin-seo"
+"cybercog/laravel-clickhouse" -> "glushkovds/phpclickhouse-laravel"
+"ClickHouse/homebrew-clickhouse" -> "Altinity/altinityknowledgebase"
+"Altinity/clickhouse-sink-connector" -> "bakwc/mysql_ch_replicator"
+"Altinity/clickhouse-sink-connector" -> "ClickHouse/clickhouse-kafka-connect"
+"Altinity/clickhouse-sink-connector" -> "ClickHouse/dbt-clickhouse"
+"Altinity/clickhouse-sink-connector" -> "Altinity/ClickHouse"
+"Altinity/clickhouse-sink-connector" -> "Altinity/altinityknowledgebase"
+"Altinity/clickhouse-sink-connector" -> "Altinity/clickhouse-grafana"
+"grafana/clickhouse-datasource" -> "duyet/clickhouse-monitoring"
+"grafana/clickhouse-datasource" -> "ClickHouse/JSONBench"
+"payloadcms/plugin-search" -> "payloadcms/plugin-nested-docs"
+"payloadcms/plugin-search" -> "payloadcms/plugin-form-builder"
+"payloadcms/plugin-search" -> "payloadcms/plugin-seo"
+"payloadcms/plugin-search" -> "payloadcms/plugin-stripe"
+"payloadcms/plugin-password-protection" -> "leonardstruck/payload-base64-plugin"
+"payloadcms/plugin-password-protection" -> "payloadcms/plugin-zapier"
+"payloadcms/plugin-password-protection" -> "notchris/payload-table-field"
+"chladog/payload-webp" -> "invakid404/payload-blurhash-plugin"
+"chladog/payload-webp" -> "brachypelma/payload-plugin-comments"
+"chladog/payload-webp" -> "payloadcms/plugin-zapier"
+"chladog/payload-webp" -> "boomworks/payload-plugin-author-fields"
+"chladog/payload-webp" -> "finkinfridom/payload-auth0-plugin"
+"chladog/payload-webp" -> "payloadcms/plugin-password-protection"
+"thgh/payload-plugin-oauth" -> "WilsonLe/payload-oauth2"
+"thgh/payload-plugin-oauth" -> "finkinfridom/payload-auth0-plugin"
+"thgh/payload-plugin-oauth" -> "ahmetskilinc/payload-appointments-plugin"
+"thgh/payload-plugin-oauth" -> "payloadcms/plugin-cloud-storage"
+"thgh/payload-plugin-oauth" -> "filipzava/payload-plugin-ai-chat"
+"thgh/payload-plugin-oauth" -> "payloadcms/plugin-zapier"
+"thgh/payload-plugin-oauth" -> "NouanceLabs/payload-dashboard-analytics"
+"AlessioGr/payload-plugin-lexical" -> "pemedia/payload-visual-editor"
+"AlessioGr/payload-plugin-lexical" -> "payloadcms/plugin-seo"
+"AlessioGr/payload-plugin-lexical" -> "payloadcms/plugin-cloud-storage"
+"AlessioGr/payload-plugin-lexical" -> "NouanceLabs/payload-dashboard-analytics"
+"AlessioGr/payload-plugin-lexical" -> "DennisSnijder/payload-workflow"
+"AlessioGr/payload-plugin-lexical" -> "NouanceLabs/payload-better-fields-plugin"
+"AlessioGr/payload-plugin-lexical" -> "chladog/payload-webp"
+"AlessioGr/payload-plugin-lexical" -> "payloadcms/plugin-form-builder"
+"AlessioGr/payload-plugin-lexical" -> "teunmooij/payload-tools"
+"AlessioGr/payload-plugin-lexical" -> "boomworks/payload-plugin-author-fields"
+"AlessioGr/payload-plugin-lexical" -> "joas8211/payload-tenancy"
+"AlessioGr/payload-plugin-lexical" -> "payloadcms/plugin-search"
+"AlessioGr/payload-plugin-lexical" -> "invakid404/payload-blurhash-plugin"
+"AlessioGr/payload-plugin-lexical" -> "innovixx/payload-icon-picker-field"
+"AlessioGr/payload-plugin-lexical" -> "finkinfridom/payload-auth0-plugin"
+"payloadcms/next-payload-demo" -> "payloadcms/next-payload"
+"payloadcms/plugin-cloud-storage" -> "payloadcms/plugin-seo"
+"payloadcms/plugin-cloud-storage" -> "payloadcms/plugin-form-builder"
+"payloadcms/plugin-cloud-storage" -> "pemedia/payload-visual-editor"
+"payloadcms/plugin-cloud-storage" -> "payloadcms/plugin-search"
+"payloadcms/plugin-cloud-storage" -> "AlessioGr/payload-plugin-lexical"
+"payloadcms/plugin-cloud-storage" -> "teunmooij/payload-tools"
+"payloadcms/plugin-cloud-storage" -> "payloadcms/plugin-nested-docs"
+"payloadcms/plugin-cloud-storage" -> "payloadcms/plugin-stripe"
+"payloadcms/plugin-cloud-storage" -> "finkinfridom/payload-auth0-plugin"
+"payloadcms/plugin-cloud-storage" -> "jeanbmar/payload-s3-upload"
+"payloadcms/plugin-cloud-storage" -> "chladog/payload-webp"
+"payloadcms/plugin-cloud-storage" -> "thgh/payload-plugin-oauth"
+"payloadcms/plugin-cloud-storage" -> "NouanceLabs/payload-dashboard-analytics"
+"payloadcms/plugin-cloud-storage" -> "DennisSnijder/payload-workflow"
+"payloadcms/plugin-cloud-storage" -> "boomworks/payload-plugin-author-fields"
+"payloadcms/website" -> "payloadcms/website-cms"
+"payloadcms/website" -> "payloadcms/next-payload"
+"payloadcms/website" -> "r1tsuu/payload-enchants"
+"payloadcms/website" -> "payloadcms/payload-3.0-demo"
+"payloadcms/website" -> "pemedia/payload-visual-editor"
+"payloadcms/website" -> "payloadcms/nextjs-custom-server"
+"payloadcms/website" -> "AlessioGr/payload-plugin-lexical"
+"payloadcms/website" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/website" -> "joas8211/payload-tenancy"
+"payloadcms/website" -> "payloadcms/public-demo"
+"payloadcms/website" -> "ashbuilds/payload-ai"
+"payloadcms/website" -> "WilsonLe/payload-oauth2"
+"payloadcms/website" -> "NouanceLabs/payload-dashboard-analytics"
+"payloadcms/website" -> "neondatabase/website"
+"payloadcms/website" -> "payloadcms/plugin-search"
+"Lambdo-Labs/payloadcms-astro-template" -> "mooxl/astroad"
+"payloadcms/migrate-mongo-example" -> "payloadcms/template-website"
+"payloadcms/remix-server" -> "manawiki/repay"
+"payloadcms/plugin-stripe" -> "payloadcms/plugin-zapier"
+"payloadcms/plugin-stripe" -> "payloadcms/plugin-form-builder"
+"payloadcms/plugin-stripe" -> "payloadcms/plugin-seo"
+"payloadcms/plugin-stripe" -> "brachypelma/payload-plugin-comments"
+"payloadcms/plugin-stripe" -> "payloadcms/plugin-search"
+"payloadcms/website-cms" -> "payloadcms/website"
+"payloadcms/website-cms" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/website-cms" -> "payloadcms/plugin-search"
+"payloadcms/website-cms" -> "finkinfridom/payload-auth0-plugin"
+"Aengz/payload-redis-cache" -> "italodr/payload-plugin-tree-list"
+"Aengz/payload-redis-cache" -> "brachypelma/payload-plugin-comments"
+"Aengz/payload-redis-cache" -> "payloadcms/plugin-password-protection"
+"Aengz/payload-redis-cache" -> "ScottEAdams/payload-plugin-phone-field"
+"PhilDL/remix-gospel-stack" -> "xHomu/remix-v2-server" ["e"=1]
+"PhilDL/remix-gospel-stack" -> "payloadcms/remix-server"
+"ClickHouse/clickhouse-kafka-connect" -> "Altinity/clickhouse-sink-connector"
+"ClickHouse/clickhouse-kafka-connect" -> "ClickHouse/dbt-clickhouse"
+"finkinfridom/payload-auth0-plugin" -> "ScottEAdams/payload-plugin-google-one-tap"
+"finkinfridom/payload-auth0-plugin" -> "ScottEAdams/payload-plugin-phone-field"
+"finkinfridom/payload-auth0-plugin" -> "payloadcms/plugin-password-protection"
+"finkinfridom/payload-auth0-plugin" -> "novanda1/payload-imagekit"
+"finkinfridom/payload-auth0-plugin" -> "chladog/payload-webp"
+"jayvynl/django-clickhouse-backend" -> "carrotquest/django-clickhouse"
+"liuyu/open-cmdb" -> "wwwbjqcom/mysql_audit"
+"manawiki/repay" -> "payloadcms/remix-server"
+"leonardstruck/payload-base64-plugin" -> "payloadcms/plugin-password-protection"
+"leonardstruck/payload-base64-plugin" -> "filipzava/payload-plugin-ai-chat"
+"payloadcms/plugin-zapier" -> "payloadcms/plugin-password-protection"
+"payloadcms/plugin-zapier" -> "leonardstruck/payload-base64-plugin"
+"Altinity/clickhouse-regression" -> "testflows/TestFlows"
+"Altinity/clickhouse-regression" -> "Altinity/ClickHouse"
+"ScottEAdams/payload-plugin-google-one-tap" -> "ScottEAdams/payload-plugin-phone-field"
+"ScottEAdams/payload-plugin-phone-field" -> "ScottEAdams/payload-plugin-google-one-tap"
+"smi2/phpClickHouse" -> "the-tinderbox/ClickhouseBuilder"
+"smi2/phpClickHouse" -> "FriendsOfDoctrine/dbal-clickhouse"
+"smi2/phpClickHouse" -> "smi2/clickhouse-frontend"
+"smi2/phpClickHouse" -> "glushkovds/phpclickhouse-laravel"
+"smi2/phpClickHouse" -> "8bitov/clickhouse-php-client"
+"smi2/phpClickHouse" -> "tabixio/tabix"
+"smi2/phpClickHouse" -> "esazykin/laravel-clickhouse"
+"smi2/phpClickHouse" -> "SeasX/SeasClick"
+"smi2/phpClickHouse" -> "swoole/phpkafka" ["e"=1]
+"smi2/phpClickHouse" -> "arnaud-lb/php-rdkafka" ["e"=1]
+"smi2/phpClickHouse" -> "ClickHouse/clickhouse-go"
+"smi2/phpClickHouse" -> "dtm-php/dtm-client" ["e"=1]
+"smi2/phpClickHouse" -> "rryqszq4/ngx-php" ["e"=1]
+"smi2/phpClickHouse" -> "swow/swow" ["e"=1]
+"smi2/phpClickHouse" -> "swoole/yasd" ["e"=1]
+"payloadcms/next-payload" -> "payloadcms/next-payload-demo"
+"payloadcms/next-payload" -> "payloadcms/nextjs-custom-server"
+"payloadcms/next-payload" -> "pemedia/payload-visual-editor"
+"payloadcms/next-payload" -> "payloadcms/payload-3.0-demo"
+"payloadcms/next-payload" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/next-payload" -> "AlessioGr/payload-plugin-lexical"
+"payloadcms/next-payload" -> "NouanceLabs/payload-better-fields-plugin"
+"payloadcms/next-payload" -> "payloadcms/plugin-seo"
+"payloadcms/next-payload" -> "joas8211/payload-tenancy"
+"payloadcms/next-payload" -> "NouanceLabs/payload-dashboard-analytics"
+"payloadcms/next-payload" -> "payloadcms/public-demo"
+"payloadcms/next-payload" -> "payloadcms/plugin-stripe"
+"payloadcms/next-payload" -> "payloadcms/vercel-deploy-payload-postgres"
+"payloadcms/next-payload" -> "payloadcms/website"
+"payloadcms/next-payload" -> "payloadcms/website-cms"
+"r1tsuu/payload-enchants" -> "ashbuilds/payload-ai"
+"r1tsuu/payload-enchants" -> "NouanceLabs/payload-better-fields-plugin"
+"r1tsuu/payload-enchants" -> "authsmith/payload-auth-plugin"
+"r1tsuu/payload-enchants" -> "WilsonLe/payload-oauth2"
+"r1tsuu/payload-enchants" -> "invakid404/payload-blurhash-plugin"
+"r1tsuu/payload-enchants" -> "oversightstudio/payload-plugins"
+"r1tsuu/payload-enchants" -> "AdrianMaj/payload-lexical-typography"
+"r1tsuu/payload-enchants" -> "teunmooij/payload-tools"
+"r1tsuu/payload-enchants" -> "joas8211/payload-tenancy"
+"r1tsuu/payload-enchants" -> "Livog/Payload.3.0.Starter"
+"r1tsuu/payload-enchants" -> "rilrom/payload-bites"
+"r1tsuu/payload-enchants" -> "pemedia/payload-visual-editor"
+"r1tsuu/payload-enchants" -> "GeorgeHulpoi/payload-recaptcha-v3"
+"r1tsuu/payload-enchants" -> "Newesissrl/payload-exportcollections-plugin"
+"r1tsuu/payload-enchants" -> "italodr/payload-plugin-tree-list"
+"ClickHouse/clickhouse-java" -> "housepower/ClickHouse-Native-JDBC"
+"ClickHouse/clickhouse-java" -> "tabixio/tabix"
+"ClickHouse/clickhouse-java" -> "ContentSquare/chproxy"
+"ClickHouse/clickhouse-java" -> "Blynk-Technologies/clickhouse4j"
+"ClickHouse/clickhouse-java" -> "ivi-ru/flink-clickhouse-sink"
+"ClickHouse/clickhouse-java" -> "ClickHouse/clickhouse-presentations"
+"ClickHouse/clickhouse-java" -> "itinycheng/flink-connector-clickhouse" ["e"=1]
+"ClickHouse/clickhouse-java" -> "Altinity/clickhouse-backup"
+"ClickHouse/clickhouse-java" -> "Altinity/clickhouse-grafana"
+"ClickHouse/clickhouse-java" -> "ClickHouse/clickhouse-odbc"
+"ClickHouse/clickhouse-java" -> "ClickHouse/clickhouse-go"
+"ClickHouse/clickhouse-java" -> "Altinity/clickhouse-operator"
+"ClickHouse/clickhouse-java" -> "mymarilyn/clickhouse-driver"
+"ClickHouse/clickhouse-java" -> "ClickHouse/clickhouse_exporter"
+"ClickHouse/clickhouse-java" -> "apache/seatunnel" ["e"=1]
+"DTStack/jlogstash" -> "childe/hangout" ["e"=1]
+"DTStack/jlogstash" -> "DTStack/jlogstash-performance-testing"
+"DTStack/jlogstash" -> "DTStack/jfilebeat"
+"DTStack/jlogstash" -> "DTStack/jlogstash-input-plugin"
+"DTStack/jlogstash" -> "DTStack/jlogstash-output-plugin"
+"DTStack/jlogstash" -> "childe/gohangout"
+"PostHog/HouseWatch" -> "duyet/clickhouse-monitoring"
+"PostHog/HouseWatch" -> "Altinity/clickhouse-backup"
+"PostHog/HouseWatch" -> "azat/chdig"
+"PostHog/HouseWatch" -> "grafana/clickhouse-datasource"
+"PostHog/HouseWatch" -> "PostHog/squeak"
+"PostHog/HouseWatch" -> "ClickHouse/examples"
+"PostHog/HouseWatch" -> "PostHog/posthog-js"
+"PostHog/HouseWatch" -> "korchasa/awesome-clickhouse"
+"pemedia/payload-visual-editor" -> "NouanceLabs/payload-dashboard-analytics"
+"pemedia/payload-visual-editor" -> "NouanceLabs/payload-better-fields-plugin"
+"pemedia/payload-visual-editor" -> "AlessioGr/payload-plugin-lexical"
+"pemedia/payload-visual-editor" -> "DennisSnijder/payload-workflow"
+"pemedia/payload-visual-editor" -> "payloadcms/plugin-cloud-storage"
+"pemedia/payload-visual-editor" -> "payloadcms/plugin-seo"
+"pemedia/payload-visual-editor" -> "boomworks/payload-plugin-author-fields"
+"pemedia/payload-visual-editor" -> "joas8211/payload-tenancy"
+"pemedia/payload-visual-editor" -> "payloadcms/plugin-form-builder"
+"pemedia/payload-visual-editor" -> "Aengz/payload-redis-cache"
+"pemedia/payload-visual-editor" -> "innovixx/payload-icon-picker-field"
+"pemedia/payload-visual-editor" -> "invakid404/payload-blurhash-plugin"
+"pemedia/payload-visual-editor" -> "chladog/payload-webp"
+"pemedia/payload-visual-editor" -> "authsmith/payload-auth-plugin"
+"pemedia/payload-visual-editor" -> "r1tsuu/payload-enchants"
+"NouanceLabs/payload-better-fields-plugin" -> "NouanceLabs/payload-dashboard-analytics"
+"NouanceLabs/payload-better-fields-plugin" -> "pemedia/payload-visual-editor"
+"NouanceLabs/payload-better-fields-plugin" -> "r1tsuu/payload-enchants"
+"NouanceLabs/payload-better-fields-plugin" -> "invakid404/payload-blurhash-plugin"
+"NouanceLabs/payload-better-fields-plugin" -> "AlessioGr/payload-plugin-lexical"
+"NouanceLabs/payload-better-fields-plugin" -> "authsmith/payload-auth-plugin"
+"NouanceLabs/payload-better-fields-plugin" -> "joas8211/payload-tenancy"
+"NouanceLabs/payload-better-fields-plugin" -> "payloadcms/plugin-cloud-storage"
+"NouanceLabs/payload-better-fields-plugin" -> "payloadcms/plugin-seo"
+"NouanceLabs/payload-better-fields-plugin" -> "chladog/payload-webp"
+"NouanceLabs/payload-better-fields-plugin" -> "ashbuilds/payload-ai"
+"NouanceLabs/payload-better-fields-plugin" -> "DennisSnijder/payload-workflow"
+"NouanceLabs/payload-better-fields-plugin" -> "NouanceLabs/payload-iframe-tabs-plugin"
+"NouanceLabs/payload-better-fields-plugin" -> "GeorgeHulpoi/payload-totp"
+"NouanceLabs/payload-better-fields-plugin" -> "shefing/payload-tools"
+"DTStack/jlogstash-filter-plugin" -> "DTStack/jlogstash-output-plugin"
+"DTStack/jlogstash-output-plugin" -> "DTStack/jlogstash-filter-plugin"
+"DTStack/jlogstash-performance-testing" -> "DTStack/jlogstash-output-plugin"
+"Infinidat/infi.clickhouse_orm" -> "mymarilyn/clickhouse-driver"
+"Infinidat/infi.clickhouse_orm" -> "cloudflare/sqlalchemy-clickhouse"
+"Infinidat/infi.clickhouse_orm" -> "carrotquest/django-clickhouse"
+"Infinidat/infi.clickhouse_orm" -> "xzkostyan/clickhouse-sqlalchemy"
+"Infinidat/infi.clickhouse_orm" -> "smi2/clickhouse-frontend"
+"Infinidat/infi.clickhouse_orm" -> "Altinity/clickhouse-grafana"
+"Infinidat/infi.clickhouse_orm" -> "maximdanilchenko/aiochclient"
+"Infinidat/infi.clickhouse_orm" -> "HouseOps/HouseOps"
+"Infinidat/infi.clickhouse_orm" -> "yurial/clickhouse-client"
+"Infinidat/infi.clickhouse_orm" -> "kszucs/pandahouse"
+"Infinidat/infi.clickhouse_orm" -> "ClickHouse/clickhouse-connect"
+"Infinidat/infi.clickhouse_orm" -> "ClickHouse/clickhouse_exporter"
+"Infinidat/infi.clickhouse_orm" -> "tabixio/tabix"
+"Infinidat/infi.clickhouse_orm" -> "long2ice/asynch"
+"Infinidat/infi.clickhouse_orm" -> "ClickHouse/dbt-clickhouse"
+"smi2/clickhouse-frontend" -> "ClickHouse/graphouse" ["e"=1]
+"smi2/clickhouse-frontend" -> "8bitov/clickhouse-php-client"
+"smi2/clickhouse-frontend" -> "smi2/phpClickHouse"
+"smi2/clickhouse-frontend" -> "ITECOMMPAY/kibouse"
+"smi2/clickhouse-frontend" -> "roistat/go-clickhouse"
+"smi2/clickhouse-frontend" -> "smi2/phpMigrationsClickhouse"
+"DennisSnijder/payload-workflow" -> "payloadcms/plugin-zapier"
+"DennisSnijder/payload-workflow" -> "brachypelma/payload-plugin-comments"
+"DennisSnijder/payload-workflow" -> "NouanceLabs/payload-dashboard-analytics"
+"DennisSnijder/payload-workflow" -> "pemedia/payload-visual-editor"
+"DennisSnijder/payload-workflow" -> "innovixx/payload-icon-picker-field"
+"DennisSnijder/payload-workflow" -> "leonardstruck/payload-base64-plugin"
+"DennisSnijder/payload-workflow" -> "WilsonLe/payload-oauth2"
+"joas8211/payload-tenancy" -> "teunmooij/payload-tools"
+"joas8211/payload-tenancy" -> "brachypelma/payload-plugin-comments"
+"joas8211/payload-tenancy" -> "NouanceLabs/payload-dashboard-analytics"
+"joas8211/payload-tenancy" -> "WilsonLe/payload-oauth2"
+"joas8211/payload-tenancy" -> "innovixx/payload-color-picker-field"
+"joas8211/payload-tenancy" -> "pemedia/payload-visual-editor"
+"joas8211/payload-tenancy" -> "chladog/payload-webp"
+"joas8211/payload-tenancy" -> "NouanceLabs/payload-better-fields-plugin"
+"joas8211/payload-tenancy" -> "payloadcms/plugin-seo"
+"joas8211/payload-tenancy" -> "innovixx/payload-icon-picker-field"
+"joas8211/payload-tenancy" -> "r1tsuu/payload-enchants"
+"joas8211/payload-tenancy" -> "finkinfridom/payload-auth0-plugin"
+"joas8211/payload-tenancy" -> "payloadcms/plugin-cloud-storage"
+"joas8211/payload-tenancy" -> "thgh/payload-plugin-oauth"
+"joas8211/payload-tenancy" -> "AlessioGr/payload-plugin-lexical"
+"teunmooij/payload-tools" -> "payloadcms/plugin-cloud-storage"
+"teunmooij/payload-tools" -> "joas8211/payload-tenancy"
+"teunmooij/payload-tools" -> "NouanceLabs/payload-dashboard-analytics"
+"teunmooij/payload-tools" -> "finkinfridom/payload-auth0-plugin"
+"teunmooij/payload-tools" -> "payloadcms/plugin-search"
+"teunmooij/payload-tools" -> "payloadcms/plugin-password-protection"
+"teunmooij/payload-tools" -> "r1tsuu/payload-enchants"
+"teunmooij/payload-tools" -> "payloadcms/plugin-nested-docs"
+"innovixx/payload-color-picker-field" -> "innovixx/payload-icon-picker-field"
+"NouanceLabs/payload-dashboard-analytics" -> "NouanceLabs/payload-better-fields-plugin"
+"NouanceLabs/payload-dashboard-analytics" -> "pemedia/payload-visual-editor"
+"NouanceLabs/payload-dashboard-analytics" -> "innovixx/payload-icon-picker-field"
+"NouanceLabs/payload-dashboard-analytics" -> "DennisSnijder/payload-workflow"
+"NouanceLabs/payload-dashboard-analytics" -> "boomworks/payload-plugin-author-fields"
+"NouanceLabs/payload-dashboard-analytics" -> "payloadcms/plugin-template"
+"NouanceLabs/payload-dashboard-analytics" -> "teunmooij/payload-tools"
+"NouanceLabs/payload-dashboard-analytics" -> "payloadcms/plugin-stripe"
+"NouanceLabs/payload-dashboard-analytics" -> "AlessioGr/payload-plugin-lexical"
+"NouanceLabs/payload-dashboard-analytics" -> "joas8211/payload-tenancy"
+"NouanceLabs/payload-dashboard-analytics" -> "chladog/payload-webp"
+"NouanceLabs/payload-dashboard-analytics" -> "brachypelma/payload-plugin-comments"
+"NouanceLabs/payload-dashboard-analytics" -> "NouanceLabs/payload-iframe-tabs-plugin"
+"NouanceLabs/payload-dashboard-analytics" -> "payloadcms/plugin-zapier"
+"NouanceLabs/payload-dashboard-analytics" -> "payloadcms/plugin-cloud-storage"
+"mooxl/astroad" -> "Lambdo-Labs/payloadcms-astro-template"
+"mooxl/astroad" -> "payloadcms/remix-server"
+"payloadcms/template-website-nextjs" -> "payloadcms/template-website"
+"payloadcms/template-website" -> "payloadcms/template-website-nextjs"
+"go-faster/oteldb" -> "go-faster/sdk"
+"boomworks/payload-plugin-author-fields" -> "payloadcms/plugin-redirects"
+"boomworks/payload-plugin-author-fields" -> "payloadcms/plugin-zapier"
+"boomworks/payload-plugin-author-fields" -> "madaxen86/payload-plugin-import-export"
+"brachypelma/payload-plugin-comments" -> "payloadcms/plugin-zapier"
+"brachypelma/payload-plugin-comments" -> "payloadcms/plugin-password-protection"
+"brachypelma/payload-plugin-comments" -> "filipzava/payload-plugin-ai-chat"
+"brachypelma/payload-plugin-comments" -> "chladog/payload-webp"
+"NouanceLabs/payload-simple-rbac" -> "payloadcms/plugin-password-protection"
+"filipzava/payload-plugin-ai-chat" -> "leonardstruck/payload-base64-plugin"
+"Altinity/clickhouse-grafana" -> "ContentSquare/chproxy"
+"Altinity/clickhouse-grafana" -> "tabixio/tabix"
+"Altinity/clickhouse-grafana" -> "ClickHouse/clickhouse_exporter"
+"Altinity/clickhouse-grafana" -> "Percona-Lab/PromHouse"
+"Altinity/clickhouse-grafana" -> "ClickHouse/graphouse" ["e"=1]
+"Altinity/clickhouse-grafana" -> "smi2/clickhouse-frontend"
+"Altinity/clickhouse-grafana" -> "Altinity/clickhouse-backup"
+"Altinity/clickhouse-grafana" -> "ClickHouse/clickhouse-presentations"
+"Altinity/clickhouse-grafana" -> "mymarilyn/clickhouse-driver"
+"Altinity/clickhouse-grafana" -> "grafana/clickhouse-datasource"
+"Altinity/clickhouse-grafana" -> "nikepan/clickhouse-bulk"
+"Altinity/clickhouse-grafana" -> "Infinidat/infi.clickhouse_orm"
+"Altinity/clickhouse-grafana" -> "ClickHouse/clickhouse-odbc"
+"Altinity/clickhouse-grafana" -> "Altinity/clickhouse-operator"
+"Altinity/clickhouse-grafana" -> "flant/loghouse" ["e"=1]
+"payloadcms/payload-3.0-demo" -> "payloadcms/next-payload"
+"payloadcms/payload-3.0-demo" -> "r1tsuu/payload-enchants"
+"payloadcms/payload-3.0-demo" -> "jherr/payload-3.0-movies"
+"payloadcms/payload-3.0-demo" -> "NouanceLabs/payload-better-fields-plugin"
+"payloadcms/payload-3.0-demo" -> "Livog/Payload.3.0.Starter"
+"payloadcms/payload-3.0-demo" -> "NouanceLabs/payload-dashboard-analytics"
+"payloadcms/payload-3.0-demo" -> "teunmooij/payload-tools"
+"payloadcms/payload-3.0-demo" -> "payloadcms/website"
+"payloadcms/payload-3.0-demo" -> "payloadcms/vercel-deploy-payload-postgres"
+"payloadcms/payload-3.0-demo" -> "payloadcms/plugin-cloud-storage"
+"payloadcms/payload-3.0-demo" -> "joas8211/payload-tenancy"
+"payloadcms/payload-3.0-demo" -> "AlessioGr/payload-plugin-lexical"
+"payloadcms/payload-3.0-demo" -> "authsmith/payload-auth-plugin"
+"payloadcms/payload-3.0-demo" -> "ashbuilds/payload-ai"
+"payloadcms/payload-3.0-demo" -> "finkinfridom/payload-cloudinary-plugin"
+"ClickHouse/clickhouse-go" -> "mailru/go-clickhouse"
+"ClickHouse/clickhouse-go" -> "ContentSquare/chproxy"
+"ClickHouse/clickhouse-go" -> "segmentio/kafka-go" ["e"=1]
+"ClickHouse/clickhouse-go" -> "tabixio/tabix"
+"ClickHouse/clickhouse-go" -> "ClickHouse/ch-go"
+"ClickHouse/clickhouse-go" -> "Altinity/clickhouse-backup"
+"ClickHouse/clickhouse-go" -> "Altinity/clickhouse-operator"
+"ClickHouse/clickhouse-go" -> "housepower/clickhouse_sinker"
+"ClickHouse/clickhouse-go" -> "elastic/go-elasticsearch" ["e"=1]
+"ClickHouse/clickhouse-go" -> "IBM/sarama" ["e"=1]
+"ClickHouse/clickhouse-go" -> "prometheus/client_golang" ["e"=1]
+"ClickHouse/clickhouse-go" -> "robfig/cron" ["e"=1]
+"ClickHouse/clickhouse-go" -> "confluentinc/confluent-kafka-go" ["e"=1]
+"ClickHouse/clickhouse-go" -> "mailru/easyjson" ["e"=1]
+"ClickHouse/clickhouse-go" -> "json-iterator/go" ["e"=1]
+"WilsonLe/payload-oauth2" -> "thgh/payload-plugin-oauth"
+"WilsonLe/payload-oauth2" -> "authsmith/payload-auth-plugin"
+"WilsonLe/payload-oauth2" -> "CrawlerCode/payload-authjs"
+"WilsonLe/payload-oauth2" -> "ahmetskilinc/payload-appointments-plugin"
+"WilsonLe/payload-oauth2" -> "ashbuilds/payload-ai"
+"WilsonLe/payload-oauth2" -> "DennisSnijder/payload-workflow"
+"WilsonLe/payload-oauth2" -> "r1tsuu/payload-enchants"
+"WilsonLe/payload-oauth2" -> "finkinfridom/payload-auth0-plugin"
+"WilsonLe/payload-oauth2" -> "payloadcms/plugin-zapier"
+"WilsonLe/payload-oauth2" -> "joas8211/payload-tenancy"
+"WilsonLe/payload-oauth2" -> "GeorgeHulpoi/payload-recaptcha-v3"
+"WilsonLe/payload-oauth2" -> "aritrakrbasu/payload-kanban-board"
+"WilsonLe/payload-oauth2" -> "Newesissrl/payload-exportcollections-plugin"
+"WilsonLe/payload-oauth2" -> "brachypelma/payload-plugin-comments"
+"WilsonLe/payload-oauth2" -> "sinloss/payload-warding"
+"hatarist/clickhouse-cli" -> "crobox/clickhouse-scala-client"
+"hatarist/clickhouse-cli" -> "ClickHouse/clickhouse_exporter"
+"hatarist/clickhouse-cli" -> "Slach/clickhouse-flamegraph"
+"Livog/Payload.3.0.Starter" -> "CrawlerCode/payload-authjs"
+"Livog/Payload.3.0.Starter" -> "r1tsuu/payload-enchants"
+"Livog/Payload.3.0.Starter" -> "GeorgeHulpoi/payload-recaptcha-v3"
+"Livog/Payload.3.0.Starter" -> "tyteen4a03/payload-lexical-renderer-example"
+"Livog/Payload.3.0.Starter" -> "authsmith/payload-auth-plugin"
+"FriendsOfDoctrine/dbal-clickhouse" -> "smi2/phpClickHouse"
+"innovixx/payload-icon-picker-field" -> "innovixx/payload-color-picker-field"
+"innovixx/payload-icon-picker-field" -> "filipzava/payload-plugin-ai-chat"
+"innovixx/payload-icon-picker-field" -> "payloadcms/plugin-zapier"
+"ClickHouse/clickhouse_exporter" -> "Percona-Lab/clickhouse_exporter"
+"ClickHouse/clickhouse_exporter" -> "housepower/ckman"
+"ClickHouse/clickhouse_exporter" -> "housepower/clickhouse_sinker"
+"ClickHouse/clickhouse_exporter" -> "Altinity/clickhouse-grafana"
+"ClickHouse/clickhouse_exporter" -> "ContentSquare/chproxy"
+"ClickHouse/clickhouse_exporter" -> "Altinity/clickhouse-backup"
+"ClickHouse/clickhouse_exporter" -> "ClickHouse/clickhouse-presentations"
+"ClickHouse/clickhouse_exporter" -> "nikepan/clickhouse-bulk"
+"ClickHouse/clickhouse_exporter" -> "Altinity/clickhouse-rpm-install"
+"ClickHouse/clickhouse_exporter" -> "mindis/prom2click"
+"ClickHouse/clickhouse_exporter" -> "HouseOps/HouseOps"
+"ClickHouse/clickhouse_exporter" -> "Altinity/clicktail"
+"ClickHouse/clickhouse_exporter" -> "hatarist/clickhouse-cli"
+"ClickHouse/clickhouse_exporter" -> "go-graphite/graphite-clickhouse" ["e"=1]
+"ClickHouse/clickhouse_exporter" -> "housepower/ClickHouse-Native-JDBC"
+"bakwc/mysql_ch_replicator" -> "Altinity/clickhouse-sink-connector"
+"papyrussolution/OpenPapyrus" -> "papyrussolution/UhttBarcodeReference"
+"duyet/clickhouse-monitoring" -> "grafana/clickhouse-datasource"
+"duyet/clickhouse-monitoring" -> "caioricciuti/ch-ui"
+"amirj4m/Jadi-list-of-promises" -> "Soheil-Rasouli/internet-origin"
+"amirj4m/Jadi-list-of-promises" -> "ekm507/makenote"
+"sinloss/payload-warding" -> "AlessioGr/payload-plugin-ai"
+"Newesissrl/payload-exportcollections-plugin" -> "italodr/payload-plugin-tree-list"
+"Newesissrl/payload-exportcollections-plugin" -> "ahmetskilinc/payload-appointments-plugin"
+"Newesissrl/payload-exportcollections-plugin" -> "wkentdag/payload-plugin-scheduler"
+"ahmetskilinc/payload-appointments-plugin" -> "Newesissrl/payload-exportcollections-plugin"
+"ahmetskilinc/payload-appointments-plugin" -> "innovixx/payload-icon-picker-field"
+"notchris/payload-table-field" -> "payloadcms/plugin-password-protection"
+"notchris/payload-table-field" -> "notchris/payload-label-popover"
+"notchris/payload-table-field" -> "filipzava/payload-plugin-ai-chat"
+"cloudflare/sqlalchemy-clickhouse" -> "xzkostyan/clickhouse-sqlalchemy"
+"cloudflare/sqlalchemy-clickhouse" -> "Infinidat/infi.clickhouse_orm"
+"cloudflare/sqlalchemy-clickhouse" -> "mymarilyn/clickhouse-driver"
+"cloudflare/sqlalchemy-clickhouse" -> "kszucs/pandahouse"
+"cloudflare/sqlalchemy-clickhouse" -> "crobox/clickhouse-scala-client"
+"cloudflare/sqlalchemy-clickhouse" -> "ClickHouse/clickhouse-odbc"
+"cloudflare/sqlalchemy-clickhouse" -> "mymarilyn/aioch"
+"cloudflare/sqlalchemy-clickhouse" -> "ClickHouse/graphouse" ["e"=1]
+"mailru/dbr" -> "mailru/go-clickhouse"
+"Soheil-Rasouli/internet-origin" -> "ekm507/makenote"
+"Soheil-Rasouli/internet-origin" -> "amirj4m/Jadi-list-of-promises"
+"aritrakrbasu/payload-kanban-board" -> "wkentdag/payload-plugin-scheduler"
+"aritrakrbasu/payload-kanban-board" -> "notchris/payload-mask-plugin"
+"aritrakrbasu/payload-kanban-board" -> "aritrakrbasu/payload-google-map-autocomplete-places"
+"wkentdag/payload-plugin-scheduler" -> "notchris/payload-mask-plugin"
+"transferia/transferia" -> "centralmind/gateway"
+"ClickHouse/clickhouse-presentations" -> "ContentSquare/chproxy"
+"ClickHouse/clickhouse-presentations" -> "housepower/clickhouse_sinker"
+"ClickHouse/clickhouse-presentations" -> "tabixio/tabix"
+"ClickHouse/clickhouse-presentations" -> "Altinity/clickhouse-grafana"
+"ClickHouse/clickhouse-presentations" -> "ClickHouse/clickhouse_exporter"
+"ClickHouse/clickhouse-presentations" -> "ClickHouse-China/ClickhouseMeetup"
+"ClickHouse/clickhouse-presentations" -> "Altinity/clickhouse-backup"
+"ClickHouse/clickhouse-presentations" -> "mymarilyn/clickhouse-driver"
+"ClickHouse/clickhouse-presentations" -> "housepower/ClickHouse-Native-JDBC"
+"ClickHouse/clickhouse-presentations" -> "ClickHouse/clickhouse-java"
+"ClickHouse/clickhouse-presentations" -> "Altinity/clickhouse-operator"
+"ClickHouse/clickhouse-presentations" -> "Slach/clickhouse-flamegraph"
+"ClickHouse/clickhouse-presentations" -> "nikepan/clickhouse-bulk"
+"ClickHouse/clickhouse-presentations" -> "ClickHouse/clickhouse-go"
+"ClickHouse/clickhouse-presentations" -> "pingcap/tiflash" ["e"=1]
+"xzkostyan/clickhouse-sqlalchemy" -> "mymarilyn/clickhouse-driver"
+"xzkostyan/clickhouse-sqlalchemy" -> "cloudflare/sqlalchemy-clickhouse"
+"xzkostyan/clickhouse-sqlalchemy" -> "Infinidat/infi.clickhouse_orm"
+"xzkostyan/clickhouse-sqlalchemy" -> "maximdanilchenko/aiochclient"
+"xzkostyan/clickhouse-sqlalchemy" -> "mymarilyn/aioch"
+"xzkostyan/clickhouse-sqlalchemy" -> "ClickHouse/clickhouse-connect"
+"xzkostyan/clickhouse-sqlalchemy" -> "long2ice/asynch"
+"xzkostyan/clickhouse-sqlalchemy" -> "kszucs/pandahouse"
+"xzkostyan/clickhouse-sqlalchemy" -> "ClickHouse/dbt-clickhouse"
+"xzkostyan/clickhouse-sqlalchemy" -> "Altinity/clickhouse-sink-connector"
+"xzkostyan/clickhouse-sqlalchemy" -> "ClickHouse/clickhouse-odbc"
+"xzkostyan/clickhouse-sqlalchemy" -> "bryzgaloff/airflow-clickhouse-plugin"
+"authsmith/payload-auth-plugin" -> "CrawlerCode/payload-authjs"
+"authsmith/payload-auth-plugin" -> "WilsonLe/payload-oauth2"
+"authsmith/payload-auth-plugin" -> "ashbuilds/payload-ai"
+"authsmith/payload-auth-plugin" -> "r1tsuu/payload-enchants"
+"authsmith/payload-auth-plugin" -> "NouanceLabs/payload-better-fields-plugin"
+"authsmith/payload-auth-plugin" -> "brachypelma/payload-plugin-comments"
+"authsmith/payload-auth-plugin" -> "ahmetskilinc/payload-appointments-plugin"
+"authsmith/payload-auth-plugin" -> "pemedia/payload-visual-editor"
+"authsmith/payload-auth-plugin" -> "AdrianMaj/payload-lexical-typography"
+"authsmith/payload-auth-plugin" -> "payload-auth/payload-auth"
+"authsmith/payload-auth-plugin" -> "NouanceLabs/payload-dashboard-analytics"
+"authsmith/payload-auth-plugin" -> "GeorgeHulpoi/payload-totp"
+"authsmith/payload-auth-plugin" -> "Livog/Payload.3.0.Starter"
+"authsmith/payload-auth-plugin" -> "rilrom/payload-bites"
+"authsmith/payload-auth-plugin" -> "joas8211/payload-tenancy"
+"ashbuilds/payload-ai" -> "r1tsuu/payload-enchants"
+"ashbuilds/payload-ai" -> "authsmith/payload-auth-plugin"
+"ashbuilds/payload-ai" -> "WilsonLe/payload-oauth2"
+"ashbuilds/payload-ai" -> "rilrom/payload-bites"
+"ashbuilds/payload-ai" -> "CrawlerCode/payload-authjs"
+"ashbuilds/payload-ai" -> "NouanceLabs/payload-dashboard-analytics"
+"ashbuilds/payload-ai" -> "oversightstudio/payload-plugins"
+"ashbuilds/payload-ai" -> "payload-auth/payload-auth"
+"ashbuilds/payload-ai" -> "NouanceLabs/payload-better-fields-plugin"
+"ashbuilds/payload-ai" -> "ahmetskilinc/payload-appointments-plugin"
+"ashbuilds/payload-ai" -> "GeorgeHulpoi/payload-totp"
+"ashbuilds/payload-ai" -> "Newesissrl/payload-exportcollections-plugin"
+"ashbuilds/payload-ai" -> "italodr/payload-plugin-tree-list"
+"ashbuilds/payload-ai" -> "shefing/payload-tools"
+"ashbuilds/payload-ai" -> "AdrianMaj/payload-lexical-typography"
+"tabixio/tabix" -> "Altinity/clickhouse-grafana"
+"tabixio/tabix" -> "ContentSquare/chproxy"
+"tabixio/tabix" -> "ClickHouse/clickhouse-java"
+"tabixio/tabix" -> "ClickHouse/clickhouse-presentations"
+"tabixio/tabix" -> "ClickHouse/clickhouse-go"
+"tabixio/tabix" -> "mymarilyn/clickhouse-driver"
+"tabixio/tabix" -> "HouseOps/HouseOps"
+"tabixio/tabix" -> "smi2/clickhouse-frontend"
+"tabixio/tabix" -> "Altinity/clickhouse-backup"
+"tabixio/tabix" -> "housepower/clickhouse_sinker"
+"tabixio/tabix" -> "ClickHouse/clickhouse_exporter"
+"tabixio/tabix" -> "nikepan/clickhouse-bulk"
+"tabixio/tabix" -> "smi2/phpClickHouse"
+"tabixio/tabix" -> "housepower/ClickHouse-Native-JDBC"
+"tabixio/tabix" -> "flant/loghouse" ["e"=1]
+"nikepan/clickhouse-bulk" -> "VKCOM/kittenhouse"
+"nikepan/clickhouse-bulk" -> "ContentSquare/chproxy"
+"nikepan/clickhouse-bulk" -> "housepower/clickhouse_sinker"
+"nikepan/clickhouse-bulk" -> "smi2/clickhouse-frontend"
+"nikepan/clickhouse-bulk" -> "Altinity/clickhouse-backup"
+"nikepan/clickhouse-bulk" -> "ClickHouse/graphouse" ["e"=1]
+"nikepan/clickhouse-bulk" -> "Slach/clickhouse-flamegraph"
+"nikepan/clickhouse-bulk" -> "ClickHouse/clickhouse_exporter"
+"nikepan/clickhouse-bulk" -> "Altinity/clickhouse-grafana"
+"nikepan/clickhouse-bulk" -> "mintance/nginx-clickhouse"
+"nikepan/clickhouse-bulk" -> "Altinity/clickhouse-zabbix-template"
+"nikepan/clickhouse-bulk" -> "ClickHouse/clickhouse-presentations"
+"nikepan/clickhouse-bulk" -> "ildus/clickhouse_fdw"
+"nikepan/clickhouse-bulk" -> "tabixio/tabix"
+"nikepan/clickhouse-bulk" -> "AlexeyKupershtokh/clickhouse-maxmind-geoip"
+"caioricciuti/ch-ui" -> "duyet/clickhouse-monitoring"
+"caioricciuti/ch-ui" -> "ClickHouse/clickhouse-js"
+"caioricciuti/ch-ui" -> "ClickHouse/examples"
+"CrawlerCode/payload-authjs" -> "authsmith/payload-auth-plugin"
+"CrawlerCode/payload-authjs" -> "WilsonLe/payload-oauth2"
+"CrawlerCode/payload-authjs" -> "Livog/Payload.3.0.Starter"
+"CrawlerCode/payload-authjs" -> "ashbuilds/payload-ai"
+"CrawlerCode/payload-authjs" -> "ahmetskilinc/payload-appointments-plugin"
+"CrawlerCode/payload-authjs" -> "r1tsuu/payload-enchants"
+"CrawlerCode/payload-authjs" -> "janbuchar/payload-oapi"
+"CrawlerCode/payload-authjs" -> "jhb-software/payload-plugins"
+"shefing/payload-tools" -> "italodr/payload-plugin-tree-list"
+"shefing/payload-tools" -> "jhb-software/payload-plugins"
+"shefing/payload-tools" -> "oversightstudio/payload-plugins"
+"shefing/payload-tools" -> "AdrianMaj/payload-lexical-typography"
+"jhb-software/payload-plugins" -> "oversightstudio/payload-plugins"
+"ClickHouse/clickhouse-odbc" -> "ClickHouse/clickhouse-tableau-connector-jdbc"
+"ClickHouse/clickhouse-odbc" -> "valyala/chclient"
+"ClickHouse/clickhouse-odbc" -> "ClickHouse/clickhouse-jdbc-bridge"
+"ClickHouse/clickhouse-odbc" -> "cloudflare/sqlalchemy-clickhouse"
+"ClickHouse/clickhouse-odbc" -> "Altinity/clickhouse-rpm"
+"ClickHouse/clickhouse-odbc" -> "Altinity/clickhouse-grafana"
+"ClickHouse/clickhouse-odbc" -> "HouseOps/HouseOps"
+"ClickHouse/clickhouse-odbc" -> "ClickHouse/clickhouse-cpp"
+"ClickHouse/clickhouse-odbc" -> "Altinity/tableau-connector-for-clickhouse"
+"ClickHouse/kubenetmon" -> "ClickHouse/JSONBench"
+"italodr/payload-plugin-tree-list" -> "Newesissrl/payload-exportcollections-plugin"
+"italodr/payload-plugin-tree-list" -> "shefing/payload-tools"
+"italodr/payload-plugin-tree-list" -> "rilrom/payload-bites"
+"tomashco/payload-instagram-plugin" -> "wkentdag/payload-plugin-scheduler"
+"notchris/payload-mask-plugin" -> "wkentdag/payload-plugin-scheduler"
+"AdrianMaj/payload-lexical-typography" -> "DanailMinchev/awesome-payload"
+"AdrianMaj/payload-lexical-typography" -> "rilrom/payload-bites"
+"AdrianMaj/payload-lexical-typography" -> "shefing/payload-tools"
+"AdrianMaj/payload-lexical-typography" -> "akhrarovsaid/payload-theme-quantum-leap"
+"AdrianMaj/payload-lexical-typography" -> "oversightstudio/payload-plugins"
+"the-tinderbox/ClickhouseBuilder" -> "the-tinderbox/ClickhouseClient"
+"the-tinderbox/ClickhouseBuilder" -> "glushkovds/phpclickhouse-laravel"
+"the-tinderbox/ClickhouseBuilder" -> "esazykin/laravel-clickhouse"
+"the-tinderbox/ClickhouseBuilder" -> "smi2/phpClickHouse"
+"the-tinderbox/ClickhouseBuilder" -> "bavix/laravel-clickhouse"
+"centralmind/gateway" -> "transferia/transferia"
+"centralmind/gateway" -> "iamtelescope/telescope"
+"ClickHouse/mcp-clickhouse" -> "ClickHouse/JSONBench"
+"ClickHouse/JSONBench" -> "ClickHouse/kubenetmon"
+"ClickHouse/JSONBench" -> "azat/chdig"
+"ClickHouse/JSONBench" -> "grafana/clickhouse-datasource"
+"mailru/go-clickhouse" -> "mailru/dbr"
+"mailru/go-clickhouse" -> "ClickHouse/clickhouse-go"
+"mailru/go-clickhouse" -> "roistat/go-clickhouse"
+"mailru/go-clickhouse" -> "housepower/clickhouse_sinker"
+"iamtelescope/telescope" -> "transferia/transferia"
+"iamtelescope/telescope" -> "centralmind/gateway"
+"iamtelescope/telescope" -> "azat/chdig"
+"rilrom/payload-bites" -> "italodr/payload-plugin-tree-list"
+"rilrom/payload-bites" -> "oversightstudio/payload-plugins"
+"rilrom/payload-bites" -> "LaunchThatApp/payload-shadcn"
+"rilrom/payload-bites" -> "AdrianMaj/payload-lexical-typography"
+"rilrom/payload-bites" -> "GeorgeHulpoi/payload-totp"
+"payload-auth/payload-auth" -> "b3nab/payload-better-auth"
+"payload-auth/payload-auth" -> "Matmax-Worldwide/payloadcmsmcp"
+"mymarilyn/clickhouse-driver" -> "xzkostyan/clickhouse-sqlalchemy"
+"mymarilyn/clickhouse-driver" -> "Infinidat/infi.clickhouse_orm"
+"mymarilyn/clickhouse-driver" -> "mymarilyn/aioch"
+"mymarilyn/clickhouse-driver" -> "ClickHouse/clickhouse-connect"
+"mymarilyn/clickhouse-driver" -> "kszucs/pandahouse"
+"mymarilyn/clickhouse-driver" -> "maximdanilchenko/aiochclient"
+"mymarilyn/clickhouse-driver" -> "cloudflare/sqlalchemy-clickhouse"
+"mymarilyn/clickhouse-driver" -> "Altinity/clickhouse-grafana"
+"mymarilyn/clickhouse-driver" -> "tabixio/tabix"
+"mymarilyn/clickhouse-driver" -> "ClickHouse/clickhouse-presentations"
+"mymarilyn/clickhouse-driver" -> "long2ice/asynch"
+"mymarilyn/clickhouse-driver" -> "Altinity/clickhouse-backup"
+"mymarilyn/clickhouse-driver" -> "ClickHouse/clickhouse-go"
+"mymarilyn/clickhouse-driver" -> "ContentSquare/chproxy"
+"mymarilyn/clickhouse-driver" -> "ClickHouse/clickhouse-java"
+"the-tinderbox/ClickhouseClient" -> "the-tinderbox/ClickhouseBuilder"
+"shopnex-ai/shopnex" -> "DanailMinchev/awesome-payload"
+"Percona-Lab/PromHouse" -> "go-graphite/graphite-clickhouse" ["e"=1]
+"Percona-Lab/PromHouse" -> "Altinity/clicktail"
+"Percona-Lab/PromHouse" -> "ClickHouse/graphouse" ["e"=1]
+"Percona-Lab/PromHouse" -> "mindis/prom2click"
+"Percona-Lab/PromHouse" -> "go-graphite/carbon-clickhouse" ["e"=1]
+"Percona-Lab/PromHouse" -> "Altinity/clickhouse-grafana"
+"kszucs/pandahouse" -> "mymarilyn/clickhouse-driver"
+"kszucs/pandahouse" -> "cloudflare/sqlalchemy-clickhouse"
+"kszucs/pandahouse" -> "xzkostyan/clickhouse-sqlalchemy"
+"kszucs/pandahouse" -> "mintance/nginx-clickhouse"
+"oversightstudio/payload-plugins" -> "jhb-software/payload-plugins"
+"oversightstudio/payload-plugins" -> "shefing/payload-tools"
+"oversightstudio/payload-plugins" -> "Newesissrl/payload-exportcollections-plugin"
+"oversightstudio/payload-plugins" -> "rilrom/payload-bites"
+"oversightstudio/payload-plugins" -> "italodr/payload-plugin-tree-list"
+"rubn-g/payloadcms-lexical-ext" -> "GeorgeHulpoi/payload-totp"
+"DanailMinchev/awesome-payload" -> "LaunchThatApp/payload-shadcn"
+"LaunchThatApp/payload-shadcn" -> "DanailMinchev/awesome-payload"
+"akhrarovsaid/payload-theme-quantum-leap" -> "akhrarovsaid/payload-v3-faqs"
+"Altinity/clickhouse-operator" ["l"="1.19,-9.223"]
+"Altinity/clickhouse-backup" ["l"="1.173,-9.241"]
+"ContentSquare/chproxy" ["l"="1.214,-9.268"]
+"ClickHouse/clickhouse-go" ["l"="1.212,-9.199"]
+"Altinity/clickhouse-grafana" ["l"="1.19,-9.273"]
+"ClickHouse/clickhouse-presentations" ["l"="1.17,-9.276"]
+"metrico/gigapipe" ["l"="1.245,-9.224"]
+"ClickHouse/clickhouse_exporter" ["l"="1.15,-9.29"]
+"ClickHouse/clickhouse-java" ["l"="1.197,-9.292"]
+"strimzi/strimzi-kafka-operator" ["l"="7.969,-9.058"]
+"housepower/clickhouse_sinker" ["l"="1.181,-9.258"]
+"zalando/postgres-operator" ["l"="7.982,-9.153"]
+"nikepan/clickhouse-bulk" ["l"="1.156,-9.251"]
+"jaegertracing/jaeger-clickhouse" ["l"="2.97,13.105"]
+"chdb-io/chdb" ["l"="-0.488,14.919"]
+"spotahome/redis-operator" ["l"="8.114,-9.285"]
+"tabixio/tabix" ["l"="1.211,-9.245"]
+"housepower/ckman" ["l"="1.168,-9.297"]
+"mymarilyn/clickhouse-driver" ["l"="1.232,-9.303"]
+"Altinity/clickhouse-sink-connector" ["l"="1.181,-9.378"]
+"PostHog/HouseWatch" ["l"="1.062,-9.138"]
+"uptrace/uptrace" ["l"="9.947,-11.436"]
+"metrico/qryn-view" ["l"="-0.135,15.783"]
+"sipcapture/homer-app" ["l"="63.593,-14.852"]
+"flant/loghouse" ["l"="7.299,-9.362"]
+"metrico/clickhouse-mate" ["l"="-0.107,15.777"]
+"sipcapture/paStash" ["l"="63.624,-14.861"]
+"sipcapture/rtcagent" ["l"="1.294,-9.21"]
+"gigapi/gigapi" ["l"="-0.174,15.811"]
+"clickvisual/clickvisual" ["l"="1.279,-9.269"]
+"odigos-io/odigos" ["l"="7.26,-6.404"]
+"ClickHouse/clickhouse-jdbc-bridge" ["l"="1.147,-9.331"]
+"housepower/ClickHouse-Native-JDBC" ["l"="1.178,-9.313"]
+"ClickHouse/clickhouse-odbc" ["l"="1.19,-9.341"]
+"DmitryBe/spark-clickhouse" ["l"="1.134,-9.353"]
+"Altinity/clickhouse-mysql-data-reader" ["l"="1.126,-9.308"]
+"yymysql/mysql-clickhouse-replication" ["l"="8.802,-4.195"]
+"long2ice/synch" ["l"="8.848,-4.245"]
+"Altinity/clickhouse-rpm" ["l"="1.156,-9.343"]
+"Altinity/clicktail" ["l"="1.059,-9.307"]
+"RickyHuo/hangout-output-clickhouse" ["l"="1.19,-9.325"]
+"fuslab/anyscale" ["l"="1.028,-9.381"]
+"signal18/replication-manager" ["l"="8.887,-4.297"]
+"childe/gohangout" ["l"="1.275,-9.243"]
+"childe/hangout" ["l"="-3.788,8.909"]
+"kevwan/go-stash" ["l"="3.091,-9.024"]
+"loggie-io/loggie" ["l"="7.955,-9.408"]
+"DTStack/jlogstash" ["l"="1.36,-9.24"]
+"brokercap/Bifrost" ["l"="8.972,-4.286"]
+"flashcatcloud/categraf" ["l"="8.794,-5.579"]
+"AliyunContainerService/kube-eventer" ["l"="7.981,-9.338"]
+"medcl/infini-gateway" ["l"="-3.758,8.643"]
+"medcl/esm" ["l"="-3.72,8.793"]
+"alibaba/loongcollector" ["l"="7.983,-9.417"]
+"Percona-Lab/clickhousedb_fdw" ["l"="1.045,-9.236"]
+"ildus/clickhouse_fdw" ["l"="1.073,-9.227"]
+"mkabilov/pg2ch" ["l"="1.079,-9.245"]
+"Infinidat/infi.clickhouse_fdw" ["l"="1.001,-9.229"]
+"valyala/chclient" ["l"="1.109,-9.252"]
+"x4m/pg_tm_aux" ["l"="1.031,-9.206"]
+"ivi-ru/flink-clickhouse-sink" ["l"="1.153,-9.313"]
+"itinycheng/flink-connector-clickhouse" ["l"="-2.58,15.16"]
+"apache/bahir-flink" ["l"="-2.593,15.124"]
+"gmmstrive/flink-connector-clickhouse" ["l"="-2.6,15.276"]
+"streamnative/pulsar-flink" ["l"="-2.865,11.103"]
+"danny0405/flink-source-code-analysis" ["l"="-2.553,15.219"]
+"Blynk-Technologies/clickhouse4j" ["l"="1.165,-9.332"]
+"leesf/hudi-resources" ["l"="-2.549,15.02"]
+"hairless/plink" ["l"="-2.515,15.152"]
+"zhuxiaoshang/flink-be-god" ["l"="-2.503,15.215"]
+"apache/doris-flink-connector" ["l"="-2.534,15.171"]
+"ClickHouse/spark-clickhouse-connector" ["l"="1.191,-9.401"]
+"VirtusAI/clickhouse-client-java" ["l"="1.129,-9.371"]
+"HouseOps/HouseOps" ["l"="1.207,-9.317"]
+"nauu/clickhousebook" ["l"="1.137,-9.445"]
+"ClickHouse-China/ClickhouseMeetup" ["l"="1.148,-9.367"]
+"papyrussolution/UhttBarcodeReference" ["l"="1.341,-9.035"]
+"papyrussolution/OpenPapyrus" ["l"="1.364,-9.003"]
+"natasha/natasha" ["l"="-44.123,26.04"]
+"smi2/phpClickHouse" ["l"="1.273,-9.135"]
+"wapmorgan/Morphos" ["l"="-16.004,25.633"]
+"DTStack/jfilebeat" ["l"="1.421,-9.243"]
+"DTStack/catcher" ["l"="1.446,-9.244"]
+"ClickHouse/metabase-clickhouse-driver" ["l"="1.136,-9.275"]
+"grafana/clickhouse-datasource" ["l"="1.11,-9.157"]
+"Slach/clickhouse-flamegraph" ["l"="1.102,-9.324"]
+"ClickHouse/dbt-clickhouse" ["l"="1.208,-9.366"]
+"ClickHouse/clickhouse-connect" ["l"="1.248,-9.342"]
+"korchasa/awesome-clickhouse" ["l"="1.072,-9.192"]
+"VKCOM/lighthouse" ["l"="1.266,-9.294"]
+"jaykelin/clickhouse-hdfs-loader" ["l"="1.173,-9.36"]
+"mindis/prom2click" ["l"="1.082,-9.285"]
+"Percona-Lab/PromHouse" ["l"="1.106,-9.278"]
+"iyacontrol/prom2click" ["l"="1.031,-9.283"]
+"maximdanilchenko/aiochclient" ["l"="1.276,-9.329"]
+"long2ice/asynch" ["l"="1.282,-9.35"]
+"mymarilyn/aioch" ["l"="1.266,-9.345"]
+"xzkostyan/clickhouse-sqlalchemy" ["l"="1.248,-9.36"]
+"Infinidat/infi.clickhouse_orm" ["l"="1.239,-9.325"]
+"Altinity/clickhouse-rpm-install" ["l"="1.123,-9.339"]
+"red-soft-ru/clickhouse-rpm" ["l"="1.079,-9.378"]
+"honeycombio/honeytail" ["l"="0.991,-9.31"]
+"percona/go-mysql" ["l"="1.018,-9.324"]
+"VKCOM/kittenhouse" ["l"="1.241,-9.268"]
+"esazykin/laravel-clickhouse" ["l"="1.29,-9.084"]
+"the-tinderbox/ClickhouseBuilder" ["l"="1.307,-9.098"]
+"the-tinderbox/ClickhouseClient" ["l"="1.31,-9.072"]
+"mintance/nginx-clickhouse" ["l"="1.144,-9.222"]
+"funcmike/logstash-output-clickhouse" ["l"="1.103,-9.184"]
+"FusionDB/fusiondb-postgress" ["l"="1.01,-9.391"]
+"carrotquest/django-clickhouse" ["l"="1.293,-9.381"]
+"jayvynl/django-clickhouse-backend" ["l"="1.323,-9.406"]
+"Altinity/ClickHouse" ["l"="1.12,-9.427"]
+"Altinity/clickhouse-regression" ["l"="1.1,-9.454"]
+"Altinity/altinityknowledgebase" ["l"="1.113,-9.401"]
+"Altinity/clickhouse-sql-examples" ["l"="1.114,-9.461"]
+"wwwbjqcom/mysql_audit" ["l"="0.961,-9.431"]
+"actiontech/dble-docs-cn" ["l"="0.92,-9.436"]
+"actiontech/dtle-docs-cn" ["l"="0.895,-9.44"]
+"testflows/TestFlows" ["l"="1.087,-9.473"]
+"wwwbjqcom/Analysisbinlog" ["l"="0.878,-9.506"]
+"wwwbjqcom/binlogAL" ["l"="0.893,-9.493"]
+"wwwbjqcom/mysql2iso" ["l"="0.94,-9.452"]
+"Vertamedia/chtable" ["l"="1.062,-9.261"]
+"wwwbjqcom/mysql_to_db" ["l"="0.929,-9.471"]
+"wwwbjqcom/tubing" ["l"="0.913,-9.475"]
+"ClickHouse/clickhouse-cpp" ["l"="1.224,-9.391"]
+"artpaul/clickhouse-cpp" ["l"="1.241,-9.452"]
+"glushkovds/phpclickhouse-laravel" ["l"="1.326,-9.112"]
+"bavix/laravel-clickhouse" ["l"="1.337,-9.09"]
+"cybercog/laravel-clickhouse" ["l"="1.36,-9.105"]
+"PostHog/posthog.com" ["l"="0.903,-9.021"]
+"PostHog/posthog-js" ["l"="0.966,-9.065"]
+"PostHog/squeak" ["l"="0.974,-9.089"]
+"PostHog/posthog-js-lite" ["l"="0.933,-9.049"]
+"neondatabase/website" ["l"="0.752,-8.884"]
+"delium/clickhouse-migrator" ["l"="1.053,-9.35"]
+"PostHog/posthog-php" ["l"="0.957,-9.033"]
+"yaooqinn/itachi" ["l"="1.194,-9.486"]
+"MrPowers/beavis" ["l"="1.195,-9.532"]
+"MrPowers/bebe" ["l"="1.194,-9.51"]
+"ITECOMMPAY/kibouse" ["l"="1.163,-9.189"]
+"Percona-Lab/clickhouse_exporter" ["l"="1.102,-9.3"]
+"MrPowers/farsante" ["l"="1.197,-9.561"]
+"PostHog/posthog-node" ["l"="0.95,-9.01"]
+"bryzgaloff/airflow-clickhouse-plugin" ["l"="1.248,-9.399"]
+"payloadcms/nextjs-custom-server" ["l"="0.566,-8.781"]
+"payloadcms/next-payload" ["l"="0.579,-8.748"]
+"payloadcms/custom-website-series" ["l"="0.553,-8.809"]
+"Lambdo-Labs/payloadcms-astro-template" ["l"="0.508,-8.835"]
+"payloadcms/plugin-cloud-storage" ["l"="0.6,-8.712"]
+"payloadcms/next-payload-demo" ["l"="0.586,-8.785"]
+"AlessioGr/payload-plugin-lexical" ["l"="0.586,-8.72"]
+"payloadcms/migrate-mongo-example" ["l"="0.57,-8.825"]
+"CoxAutomotiveDataSolutions/spark-distcp" ["l"="1.191,-9.448"]
+"ClickHouse/clickhouse-kafka-connect" ["l"="1.207,-9.41"]
+"markporoshin/dbt-greenplum" ["l"="1.246,-9.426"]
+"ClickHouse/examples" ["l"="1.136,-9.175"]
+"gocardless/airflow-dbt" ["l"="-0.494,16.073"]
+"jeanbmar/payload-s3-upload" ["l"="0.641,-8.702"]
+"payloadcms/plugin-stripe" ["l"="0.615,-8.708"]
+"devlive-community/dbm" ["l"="49.917,3.446"]
+"ByConity/ByConity" ["l"="51.226,2.716"]
+"housepower/ckman-fe" ["l"="1.133,-9.322"]
+"Altinity/tableau-connector-for-clickhouse" ["l"="1.163,-9.384"]
+"ClickHouse/clickhouse-tableau-connector-jdbc" ["l"="1.165,-9.401"]
+"ekm507/makenote" ["l"="1.334,-9.364"]
+"jadijadi/makenote" ["l"="-49.677,18.046"]
+"Soheil-Rasouli/internet-origin" ["l"="1.314,-9.353"]
+"amirj4m/Jadi-list-of-promises" ["l"="1.309,-9.367"]
+"gotomicro/ego" ["l"="3.023,-8.875"]
+"zeromicro/cds" ["l"="3.019,-9.067"]
+"go-kratos/gateway" ["l"="2.992,-8.903"]
+"starsliao/TenSunS" ["l"="8.843,-5.615"]
+"koderover/zadig" ["l"="7.952,-9.366"]
+"feiyu563/PrometheusAlert" ["l"="8.924,-5.604"]
+"payloadcms/plugin-nested-docs" ["l"="0.631,-8.726"]
+"payloadcms/plugin-search" ["l"="0.615,-8.73"]
+"payloadcms/plugin-redirects" ["l"="0.638,-8.715"]
+"payloadcms/plugin-form-builder" ["l"="0.621,-8.719"]
+"LexxaRRioo/rzv_data_engineering_series_s01e01" ["l"="1.268,-9.457"]
+"go-faster/jx" ["l"="1.184,-9.073"]
+"ClickHouse/ch-go" ["l"="1.173,-9.129"]
+"go-faster/errors" ["l"="1.202,-9.042"]
+"romshark/jscan" ["l"="1.181,-9.027"]
+"go-faster/oteldb" ["l"="1.165,-9.086"]
+"payloadcms/plugin-seo" ["l"="0.603,-8.723"]
+"chladog/payload-webp" ["l"="0.596,-8.688"]
+"pemedia/payload-visual-editor" ["l"="0.574,-8.711"]
+"boomworks/payload-plugin-author-fields" ["l"="0.613,-8.697"]
+"invakid404/payload-blurhash-plugin" ["l"="0.572,-8.681"]
+"NouanceLabs/payload-simple-rbac" ["l"="0.59,-8.633"]
+"brachypelma/payload-plugin-comments" ["l"="0.584,-8.674"]
+"GeorgeHulpoi/payload-recaptcha-v3" ["l"="0.539,-8.671"]
+"NouanceLabs/payload-better-fields-plugin" ["l"="0.559,-8.704"]
+"r1tsuu/payload-enchants" ["l"="0.549,-8.688"]
+"leonardstruck/payload-base64-plugin" ["l"="0.593,-8.654"]
+"NouanceLabs/payload-dashboard-analytics" ["l"="0.584,-8.701"]
+"payloadcms/public-demo" ["l"="0.608,-8.779"]
+"vahid-sohrabloo/chconn" ["l"="4.049,13.602"]
+"ClickHouse/homebrew-clickhouse" ["l"="1.08,-9.43"]
+"bakwc/mysql_ch_replicator" ["l"="1.174,-9.419"]
+"duyet/clickhouse-monitoring" ["l"="1.099,-9.124"]
+"ClickHouse/JSONBench" ["l"="1.068,-9.103"]
+"payloadcms/plugin-password-protection" ["l"="0.607,-8.656"]
+"payloadcms/plugin-zapier" ["l"="0.601,-8.673"]
+"notchris/payload-table-field" ["l"="0.617,-8.629"]
+"finkinfridom/payload-auth0-plugin" ["l"="0.613,-8.681"]
+"thgh/payload-plugin-oauth" ["l"="0.59,-8.666"]
+"WilsonLe/payload-oauth2" ["l"="0.559,-8.671"]
+"ahmetskilinc/payload-appointments-plugin" ["l"="0.549,-8.661"]
+"filipzava/payload-plugin-ai-chat" ["l"="0.597,-8.645"]
+"DennisSnijder/payload-workflow" ["l"="0.583,-8.685"]
+"teunmooij/payload-tools" ["l"="0.596,-8.699"]
+"joas8211/payload-tenancy" ["l"="0.573,-8.695"]
+"innovixx/payload-icon-picker-field" ["l"="0.576,-8.669"]
+"payloadcms/website" ["l"="0.597,-8.746"]
+"payloadcms/website-cms" ["l"="0.625,-8.746"]
+"payloadcms/payload-3.0-demo" ["l"="0.552,-8.732"]
+"ashbuilds/payload-ai" ["l"="0.532,-8.684"]
+"mooxl/astroad" ["l"="0.477,-8.86"]
+"payloadcms/template-website" ["l"="0.572,-8.855"]
+"payloadcms/remix-server" ["l"="0.434,-8.89"]
+"manawiki/repay" ["l"="0.41,-8.886"]
+"Aengz/payload-redis-cache" ["l"="0.579,-8.65"]
+"italodr/payload-plugin-tree-list" ["l"="0.532,-8.657"]
+"ScottEAdams/payload-plugin-phone-field" ["l"="0.617,-8.649"]
+"PhilDL/remix-gospel-stack" ["l"="0.413,-8.923"]
+"xHomu/remix-v2-server" ["l"="-7.644,-31.809"]
+"ScottEAdams/payload-plugin-google-one-tap" ["l"="0.632,-8.653"]
+"novanda1/payload-imagekit" ["l"="0.651,-8.66"]
+"liuyu/open-cmdb" ["l"="0.96,-9.462"]
+"FriendsOfDoctrine/dbal-clickhouse" ["l"="1.276,-9.104"]
+"smi2/clickhouse-frontend" ["l"="1.238,-9.192"]
+"8bitov/clickhouse-php-client" ["l"="1.243,-9.139"]
+"SeasX/SeasClick" ["l"="1.26,-9.089"]
+"swoole/phpkafka" ["l"="-20.291,24.721"]
+"arnaud-lb/php-rdkafka" ["l"="-19.045,25.108"]
+"dtm-php/dtm-client" ["l"="-20.301,24.68"]
+"rryqszq4/ngx-php" ["l"="-20.193,24.792"]
+"swow/swow" ["l"="-20.278,24.696"]
+"swoole/yasd" ["l"="-20.291,24.71"]
+"payloadcms/vercel-deploy-payload-postgres" ["l"="0.545,-8.764"]
+"authsmith/payload-auth-plugin" ["l"="0.536,-8.698"]
+"oversightstudio/payload-plugins" ["l"="0.516,-8.66"]
+"AdrianMaj/payload-lexical-typography" ["l"="0.502,-8.652"]
+"Livog/Payload.3.0.Starter" ["l"="0.518,-8.705"]
+"rilrom/payload-bites" ["l"="0.506,-8.67"]
+"Newesissrl/payload-exportcollections-plugin" ["l"="0.54,-8.646"]
+"apache/seatunnel" ["l"="-2.62,14.953"]
+"DTStack/jlogstash-performance-testing" ["l"="1.391,-9.236"]
+"DTStack/jlogstash-input-plugin" ["l"="1.388,-9.255"]
+"DTStack/jlogstash-output-plugin" ["l"="1.391,-9.22"]
+"azat/chdig" ["l"="1.045,-9.055"]
+"NouanceLabs/payload-iframe-tabs-plugin" ["l"="0.593,-8.68"]
+"GeorgeHulpoi/payload-totp" ["l"="0.503,-8.694"]
+"shefing/payload-tools" ["l"="0.519,-8.649"]
+"DTStack/jlogstash-filter-plugin" ["l"="1.408,-9.212"]
+"cloudflare/sqlalchemy-clickhouse" ["l"="1.224,-9.349"]
+"yurial/clickhouse-client" ["l"="1.272,-9.374"]
+"kszucs/pandahouse" ["l"="1.253,-9.315"]
+"ClickHouse/graphouse" ["l"="4.151,-7.212"]
+"roistat/go-clickhouse" ["l"="1.293,-9.164"]
+"smi2/phpMigrationsClickhouse" ["l"="1.236,-9.159"]
+"innovixx/payload-color-picker-field" ["l"="0.564,-8.65"]
+"payloadcms/plugin-template" ["l"="0.634,-8.676"]
+"payloadcms/template-website-nextjs" ["l"="0.572,-8.873"]
+"go-faster/sdk" ["l"="1.157,-9.061"]
+"madaxen86/payload-plugin-import-export" ["l"="0.654,-8.685"]
+"jherr/payload-3.0-movies" ["l"="0.518,-8.774"]
+"finkinfridom/payload-cloudinary-plugin" ["l"="0.508,-8.753"]
+"mailru/go-clickhouse" ["l"="1.27,-9.185"]
+"segmentio/kafka-go" ["l"="3.778,-8.86"]
+"elastic/go-elasticsearch" ["l"="3.691,-8.846"]
+"IBM/sarama" ["l"="3.715,-8.794"]
+"prometheus/client_golang" ["l"="3.744,-8.783"]
+"robfig/cron" ["l"="3.647,-8.826"]
+"confluentinc/confluent-kafka-go" ["l"="3.807,-8.819"]
+"mailru/easyjson" ["l"="3.868,-8.64"]
+"json-iterator/go" ["l"="3.72,-8.764"]
+"CrawlerCode/payload-authjs" ["l"="0.516,-8.681"]
+"aritrakrbasu/payload-kanban-board" ["l"="0.559,-8.611"]
+"sinloss/payload-warding" ["l"="0.539,-8.625"]
+"hatarist/clickhouse-cli" ["l"="1.102,-9.349"]
+"crobox/clickhouse-scala-client" ["l"="1.141,-9.392"]
+"tyteen4a03/payload-lexical-renderer-example" ["l"="0.477,-8.704"]
+"go-graphite/graphite-clickhouse" ["l"="4.139,-7.237"]
+"caioricciuti/ch-ui" ["l"="1.113,-9.097"]
+"AlessioGr/payload-plugin-ai" ["l"="0.522,-8.601"]
+"wkentdag/payload-plugin-scheduler" ["l"="0.54,-8.601"]
+"notchris/payload-label-popover" ["l"="0.631,-8.605"]
+"mailru/dbr" ["l"="1.32,-9.175"]
+"notchris/payload-mask-plugin" ["l"="0.55,-8.587"]
+"aritrakrbasu/payload-google-map-autocomplete-places" ["l"="0.566,-8.582"]
+"transferia/transferia" ["l"="1.005,-8.942"]
+"centralmind/gateway" ["l"="1.028,-8.937"]
+"pingcap/tiflash" ["l"="0.619,14.122"]
+"payload-auth/payload-auth" ["l"="0.488,-8.716"]
+"Altinity/clickhouse-zabbix-template" ["l"="1.117,-9.229"]
+"AlexeyKupershtokh/clickhouse-maxmind-geoip" ["l"="1.109,-9.209"]
+"ClickHouse/clickhouse-js" ["l"="1.109,-9.042"]
+"janbuchar/payload-oapi" ["l"="0.472,-8.671"]
+"jhb-software/payload-plugins" ["l"="0.495,-8.661"]
+"ClickHouse/kubenetmon" ["l"="1.062,-9.076"]
+"tomashco/payload-instagram-plugin" ["l"="0.532,-8.575"]
+"DanailMinchev/awesome-payload" ["l"="0.461,-8.631"]
+"akhrarovsaid/payload-theme-quantum-leap" ["l"="0.482,-8.615"]
+"iamtelescope/telescope" ["l"="1.027,-8.974"]
+"ClickHouse/mcp-clickhouse" ["l"="1.024,-9.087"]
+"LaunchThatApp/payload-shadcn" ["l"="0.472,-8.646"]
+"b3nab/payload-better-auth" ["l"="0.464,-8.734"]
+"Matmax-Worldwide/payloadcmsmcp" ["l"="0.448,-8.723"]
+"shopnex-ai/shopnex" ["l"="0.433,-8.612"]
+"go-graphite/carbon-clickhouse" ["l"="4.126,-7.232"]
+"rubn-g/payloadcms-lexical-ext" ["l"="0.458,-8.691"]
+"akhrarovsaid/payload-v3-faqs" ["l"="0.468,-8.593"]
+}

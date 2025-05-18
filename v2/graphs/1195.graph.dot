@@ -1,0 +1,563 @@
+digraph G {
+"metal3-io/baremetal-operator" -> "metal3-io/cluster-api-provider-metal3"
+"metal3-io/baremetal-operator" -> "metal3-io/metal3-docs"
+"metal3-io/baremetal-operator" -> "metal3-io/metal3-dev-env"
+"metal3-io/baremetal-operator" -> "metal3-io/ironic-image"
+"metal3-io/baremetal-operator" -> "metal3-io/cluster-api-provider-baremetal"
+"metal3-io/baremetal-operator" -> "siderolabs/sidero" ["e"=1]
+"metal3-io/baremetal-operator" -> "tinkerbell/tink" ["e"=1]
+"metal3-io/baremetal-operator" -> "kubernetes-sigs/cluster-api-provider-openstack"
+"metal3-io/baremetal-operator" -> "ovn-kubernetes/ovn-kubernetes" ["e"=1]
+"metal3-io/baremetal-operator" -> "kubernetes-sigs/cluster-api-provider-kubevirt"
+"metal3-io/baremetal-operator" -> "kubernetes-sigs/image-builder"
+"metal3-io/baremetal-operator" -> "kubernetes-sigs/cluster-api" ["e"=1]
+"jetstack/kube-oidc-proxy" -> "mintel/dex-k8s-authenticator"
+"jetstack/kube-oidc-proxy" -> "TremoloSecurity/kube-oidc-proxy"
+"jetstack/kube-oidc-proxy" -> "jetstack/navigator"
+"jetstack/kube-oidc-proxy" -> "vmware-tanzu/pinniped"
+"jetstack/kube-oidc-proxy" -> "int128/kubelogin" ["e"=1]
+"jetstack/kube-oidc-proxy" -> "jetstack/tarmak"
+"jetstack/kube-oidc-proxy" -> "pusher/k8s-auth-example"
+"jetstack/kube-oidc-proxy" -> "Ladicle/kubectl-rolesum" ["e"=1]
+"carvel-dev/kapp" -> "carvel-dev/kapp-controller"
+"carvel-dev/kapp" -> "carvel-dev/kbld"
+"carvel-dev/kapp" -> "carvel-dev/carvel"
+"carvel-dev/kapp" -> "carvel-dev/imgpkg"
+"carvel-dev/kapp" -> "carvel-dev/vendir"
+"carvel-dev/kapp" -> "carvel-dev/ytt"
+"carvel-dev/kapp" -> "carvel-dev/secretgen-controller"
+"carvel-dev/kapp" -> "carvel-dev/kwt"
+"carvel-dev/kapp" -> "buildpacks-community/kpack"
+"carvel-dev/kapp" -> "vmware-tanzu/cartographer"
+"carvel-dev/kapp" -> "kptdev/kpt" ["e"=1]
+"krishnapmv/k8s-ldap" -> "ObjectifLibre/k8s-ldap"
+"krishnapmv/k8s-ldap" -> "fydrah/loginapp"
+"metal3-io/metal3-docs" -> "metal3-io/baremetal-operator"
+"metal3-io/metal3-docs" -> "metal3-io/metal3-dev-env"
+"metal3-io/metal3-docs" -> "metal3-io/ironic-image"
+"metal3-io/metal3-docs" -> "metal3-io/cluster-api-provider-metal3"
+"metal3-io/metal3-docs" -> "metal3-io/cluster-api-provider-baremetal"
+"mintel/dex-k8s-authenticator" -> "vmware-archive/gangway"
+"mintel/dex-k8s-authenticator" -> "jetstack/kube-oidc-proxy"
+"mintel/dex-k8s-authenticator" -> "fydrah/loginapp"
+"mintel/dex-k8s-authenticator" -> "int128/kubelogin" ["e"=1]
+"mintel/dex-k8s-authenticator" -> "micahhausler/k8s-oidc-helper" ["e"=1]
+"mintel/dex-k8s-authenticator" -> "ObjectifLibre/k8s-ldap"
+"kubernetes/cloud-provider-vsphere" -> "kubernetes-sigs/vsphere-csi-driver"
+"kubernetes/cloud-provider-vsphere" -> "kubernetes-sigs/cluster-api-provider-vsphere"
+"kubernetes/cloud-provider-vsphere" -> "vmware-tanzu/crash-diagnostics"
+"kubernetes-sigs/vsphere-csi-driver" -> "kubernetes/cloud-provider-vsphere"
+"kubernetes-sigs/vsphere-csi-driver" -> "kubernetes-sigs/cluster-api-provider-vsphere"
+"kubernetes-sigs/vsphere-csi-driver" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"kubernetes-sigs/vsphere-csi-driver" -> "vmware-tanzu/velero-plugin-for-vsphere" ["e"=1]
+"kubernetes-sigs/vsphere-csi-driver" -> "vmware/load-balancer-and-ingress-services-for-kubernetes" ["e"=1]
+"kubernetes-sigs/vsphere-csi-driver" -> "vmwarecloudadvocacy/acme_fitness_demo"
+"kubernetes-sigs/vsphere-csi-driver" -> "tsalm-pivotal/tap-install"
+"kubernetes-sigs/vsphere-csi-driver" -> "vmware-archive/cloud-init-vmware-guestinfo" ["e"=1]
+"vmware-archive/gangway" -> "alexbrand/gangway-dex-tutorial"
+"vmware-archive/gangway" -> "mintel/dex-k8s-authenticator"
+"ObjectifLibre/k8s-ldap" -> "fydrah/loginapp"
+"fydrah/loginapp" -> "ObjectifLibre/k8s-ldap"
+"fydrah/loginapp" -> "ObjectifLibre/kube-oidc"
+"mercedes-benz/sechub" -> "mercedes-benz/kosmoo"
+"mercedes-benz/sechub" -> "mercedes-benz/mercedes-benz-foss-manifesto"
+"mercedes-benz/sechub" -> "mercedes-benz/namespace-provisioner"
+"carvel-dev/ytt" -> "carvel-dev/kapp"
+"carvel-dev/ytt" -> "carvel-dev/kapp-controller"
+"carvel-dev/ytt" -> "carvel-dev/kbld"
+"carvel-dev/ytt" -> "carvel-dev/vendir"
+"carvel-dev/ytt" -> "carvel-dev/carvel"
+"carvel-dev/ytt" -> "carvel-dev/imgpkg"
+"carvel-dev/ytt" -> "carvel-dev/secretgen-controller"
+"carvel-dev/ytt" -> "buildpacks-community/kpack"
+"carvel-dev/ytt" -> "open-policy-agent/conftest" ["e"=1]
+"carvel-dev/ytt" -> "kptdev/kpt" ["e"=1]
+"carvel-dev/ytt" -> "kudobuilder/kudo" ["e"=1]
+"carvel-dev/ytt" -> "vmware-tanzu/cartographer"
+"carvel-dev/ytt" -> "vmware-tanzu/pinniped"
+"carvel-dev/ytt" -> "hairyhenderson/gomplate" ["e"=1]
+"carvel-dev/ytt" -> "inlets/inlets-operator" ["e"=1]
+"buildpacks-community/kpack" -> "buildpacks/pack" ["e"=1]
+"buildpacks-community/kpack" -> "cloudfoundry/cf-for-k8s" ["e"=1]
+"buildpacks-community/kpack" -> "vmware-tanzu/cartographer"
+"buildpacks-community/kpack" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"buildpacks-community/kpack" -> "buildpacks/lifecycle"
+"buildpacks-community/kpack" -> "carvel-dev/kapp-controller"
+"buildpacks-community/kpack" -> "carvel-dev/kapp"
+"buildpacks-community/kpack" -> "cloudfoundry/korifi" ["e"=1]
+"buildpacks-community/kpack" -> "buildpacks/spec"
+"buildpacks-community/kpack" -> "pivotal-cf/om" ["e"=1]
+"buildpacks-community/kpack" -> "carvel-dev/ytt"
+"buildpacks-community/kpack" -> "buildpacks/samples"
+"buildpacks-community/kpack" -> "google/kf" ["e"=1]
+"buildpacks-community/kpack" -> "buildpacks-community/kpack-cli"
+"buildpacks-community/kpack" -> "carvel-dev/imgpkg"
+"mercedes-benz/foss" -> "mercedes-benz/mercedes-benz-foss-manifesto"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/image-builder"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/vsphere-csi-driver"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes/cloud-provider-vsphere"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "vmware-tanzu/pinniped"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/cluster-api" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/cluster-api-ipam-provider-in-cluster"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/cluster-api-provider-openstack"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/cluster-api-provider-aws" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "vmware-tanzu/crash-diagnostics"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "metal3-io/cluster-api-provider-metal3"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/cluster-api-provider-azure" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "vmware/hamlet"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "vmware-tanzu/tanzu-framework"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "kubernetes-sigs/cluster-api-operator"
+"kubernetes-sigs/cluster-api-provider-vsphere" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes/cloud-provider-openstack" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes-sigs/image-builder"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "gophercloud/gophercloud" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes-sigs/cluster-api-addon-provider-helm"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "metal3-io/cluster-api-provider-metal3"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes-sigs/cluster-api-provider-vsphere"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes-sigs/cluster-api-operator"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes-sigs/cluster-api" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "metal3-io/cluster-api-provider-baremetal"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "metal3-io/baremetal-operator"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "tobiasgiese/cluster-api-migration"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "vmware-tanzu/cluster-api-provider-bringyourownhost"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "terraform-provider-openstack/terraform-provider-openstack" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "mercedes-benz/cluster-api-state-metrics"
+"kubernetes-sigs/cluster-api-provider-openstack" -> "crossplane-contrib/provider-openstack"
+"carvel-dev/kbld" -> "carvel-dev/imgpkg"
+"carvel-dev/kbld" -> "carvel-dev/kapp-controller"
+"carvel-dev/kbld" -> "carvel-dev/vendir"
+"carvel-dev/kbld" -> "carvel-dev/secretgen-controller"
+"carvel-dev/kbld" -> "carvel-dev/carvel"
+"carvel-dev/kbld" -> "carvel-dev/kapp"
+"carvel-dev/kbld" -> "carvel-dev/ytt"
+"buildpacks/lifecycle" -> "buildpacks/spec"
+"buildpacks/lifecycle" -> "buildpacks/rfcs"
+"buildpacks/lifecycle" -> "heroku/buildpacks-nodejs"
+"buildpacks/spec" -> "buildpacks/lifecycle"
+"buildpacks/spec" -> "buildpacks/rfcs"
+"buildpacks/spec" -> "buildpacks/samples"
+"buildpacks/spec" -> "buildpacks/community"
+"buildpacks/spec" -> "heroku/cnb-shim"
+"carvel-dev/carvel" -> "carvel-dev/imgpkg"
+"carvel-dev/carvel" -> "carvel-dev/secretgen-controller"
+"carvel-dev/carvel" -> "carvel-dev/vendir"
+"carvel-dev/carvel" -> "carvel-dev/kbld"
+"carvel-dev/carvel" -> "carvel-dev/kapp-controller"
+"carvel-dev/carvel" -> "carvel-dev/kapp"
+"carvel-dev/carvel" -> "carvel-dev/ytt"
+"CNA-Tech/PKS-Ninja" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"CNA-Tech/PKS-Ninja" -> "vmware/nsx-t-datacenter-ci-pipelines"
+"CNA-Tech/PKS-Ninja" -> "vmwarecloudadvocacy/acme_fitness_demo"
+"CNA-Tech/PKS-Ninja" -> "CNA-Tech/Apps-on-PKS"
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api-provider-vsphere"
+"kubernetes-sigs/image-builder" -> "metal3-io/cluster-api-provider-metal3"
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api-addon-provider-helm"
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api-provider-openstack"
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api-operator"
+"kubernetes-sigs/image-builder" -> "ionos-cloud/cluster-api-provider-proxmox" ["e"=1]
+"kubernetes-sigs/image-builder" -> "Jont828/cluster-api-visualizer"
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api-provider-azure" ["e"=1]
+"kubernetes-sigs/image-builder" -> "vmware-tanzu/cluster-api-provider-bringyourownhost"
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api" ["e"=1]
+"kubernetes-sigs/image-builder" -> "kubernetes-sigs/cluster-api-provider-kubevirt"
+"kubernetes-sigs/image-builder" -> "projectsveltos/addon-controller" ["e"=1]
+"kubernetes-sigs/image-builder" -> "clastix/kamaji" ["e"=1]
+"redhat-developer/service-binding-operator" -> "servicebinding/spec"
+"buildpacks/samples" -> "buildpacks/spec"
+"buildpacks/samples" -> "buildpacks/tekton-integration"
+"metal3-io/ironic-image" -> "metal3-io/metal3-dev-env"
+"metal3-io/ironic-image" -> "metal3-io/project-infra"
+"metal3-io/metal3-dev-env" -> "metal3-io/ironic-image"
+"metal3-io/metal3-dev-env" -> "metal3-io/cluster-api-provider-metal3"
+"metal3-io/metal3-dev-env" -> "metal3-io/project-infra"
+"metal3-io/metal3-dev-env" -> "metal3-io/baremetal-operator"
+"vmwarecloudadvocacy/acme_fitness_demo" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"vmwarecloudadvocacy/acme_fitness_demo" -> "doddatpivotal/tkg-lab-e2e-adaptation"
+"vmwarecloudadvocacy/acme_fitness_demo" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"vmwarecloudadvocacy/acme_fitness_demo" -> "matthewmcnew/kpdemo"
+"vmwarecloudadvocacy/acme_fitness_demo" -> "josemzr/vsphere-k8s-scripts"
+"vmwarecloudadvocacy/acme_fitness_demo" -> "Turbots/tanzu-demo"
+"kubevirt/cloud-provider-kubevirt" -> "kubernetes-sigs/cluster-api-provider-kubevirt"
+"kubevirt/cloud-provider-kubevirt" -> "kubevirt/csi-driver"
+"mercedes-benz/kosmoo" -> "mercedes-benz/cluster-api-state-metrics"
+"carvel-dev/imgpkg" -> "carvel-dev/secretgen-controller"
+"carvel-dev/imgpkg" -> "carvel-dev/vendir"
+"carvel-dev/imgpkg" -> "carvel-dev/kapp-controller"
+"carvel-dev/imgpkg" -> "carvel-dev/kbld"
+"carvel-dev/imgpkg" -> "carvel-dev/carvel"
+"carvel-dev/imgpkg" -> "carvel-dev/kapp"
+"carvel-dev/kapp-controller" -> "carvel-dev/secretgen-controller"
+"carvel-dev/kapp-controller" -> "carvel-dev/imgpkg"
+"carvel-dev/kapp-controller" -> "carvel-dev/kbld"
+"carvel-dev/kapp-controller" -> "carvel-dev/vendir"
+"carvel-dev/kapp-controller" -> "carvel-dev/carvel"
+"carvel-dev/kapp-controller" -> "carvel-dev/kapp"
+"carvel-dev/kapp-controller" -> "carvel-dev/ytt"
+"carvel-dev/kapp-controller" -> "pivotal/docs-tap"
+"webmeshproj/webmesh-vdi" -> "metal3-io/baremetal-operator"
+"vmware-tanzu/pinniped" -> "kubernetes-sigs/cluster-api-provider-vsphere"
+"vmware-tanzu/pinniped" -> "carvel-dev/kapp-controller"
+"vmware-tanzu/pinniped" -> "BeryJu/korb" ["e"=1]
+"vmware-tanzu/pinniped" -> "carvel-dev/carvel"
+"vmware-tanzu/pinniped" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"vmware-tanzu/pinniped" -> "carvel-dev/secretgen-controller"
+"vmware-tanzu/pinniped" -> "projectsveltos/addon-controller" ["e"=1]
+"vmware-tanzu/pinniped" -> "jetstack/kube-oidc-proxy"
+"vmware-tanzu/pinniped" -> "FairwindsOps/pluto" ["e"=1]
+"vmware-tanzu/pinniped" -> "vmware-tanzu/cartographer"
+"vmware-tanzu/pinniped" -> "vmware-tanzu-labs/cf-mgmt" ["e"=1]
+"vmware-tanzu/pinniped" -> "kubernetes-sigs/vsphere-csi-driver"
+"vmware-tanzu/pinniped" -> "Tanzu-Solutions-Engineering/tanzu-to-go-workshop"
+"vmware-tanzu/pinniped" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"vmware-labs/reconciler-runtime" -> "reconcilerio/runtime"
+"vmware-labs/reconciler-runtime" -> "servicebinding/runtime"
+"carvel-dev/vendir" -> "carvel-dev/imgpkg"
+"carvel-dev/vendir" -> "carvel-dev/kbld"
+"carvel-dev/vendir" -> "carvel-dev/secretgen-controller"
+"carvel-dev/vendir" -> "carvel-dev/kapp-controller"
+"carvel-dev/vendir" -> "carvel-dev/carvel"
+"carvel-dev/vendir" -> "carvel-dev/kapp"
+"carvel-dev/vendir" -> "carvel-dev/ytt"
+"telekom/das-schiff" -> "telekom/das-schiff-network-operator"
+"telekom/das-schiff" -> "lfn-cnti/bestpractices" ["e"=1]
+"telekom/das-schiff" -> "kubernetes-sigs/cluster-api-ipam-provider-in-cluster"
+"telekom/das-schiff" -> "telekom/netplanner"
+"telekom/das-schiff" -> "metal3-io/cluster-api-provider-metal3"
+"carvel-dev/secretgen-controller" -> "carvel-dev/imgpkg"
+"carvel-dev/secretgen-controller" -> "carvel-dev/kapp-controller"
+"carvel-dev/secretgen-controller" -> "carvel-dev/kbld"
+"carvel-dev/secretgen-controller" -> "carvel-dev/vendir"
+"carvel-dev/secretgen-controller" -> "carvel-dev/carvel"
+"carvel-dev/secretgen-controller" -> "carvel-dev/kapp"
+"metal3-io/cluster-api-provider-metal3" -> "metal3-io/metal3-dev-env"
+"metal3-io/cluster-api-provider-metal3" -> "metal3-io/baremetal-operator"
+"metal3-io/cluster-api-provider-metal3" -> "metal3-io/project-infra"
+"metal3-io/cluster-api-provider-metal3" -> "kubernetes-sigs/image-builder"
+"metal3-io/cluster-api-provider-metal3" -> "metal3-io/ip-address-manager"
+"metal3-io/cluster-api-provider-metal3" -> "kubernetes-sigs/kernel-module-management" ["e"=1]
+"metal3-io/cluster-api-provider-metal3" -> "kubernetes-sigs/cluster-api-addon-provider-helm"
+"metal3-io/cluster-api-provider-metal3" -> "metal3-io/metal3-docs"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "tsalm-pivotal/tap-install"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "vmwarecloudadvocacy/acme_fitness_demo"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "vmware-tanzu-labs/reference-platform-for-kubernetes"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "Tanzu-Solutions-Engineering/tanzu-to-go-workshop"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "Tanzu-Solutions-Engineering/tanzu-gitops"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "matthewmcnew/kpdemo"
+"Tanzu-Solutions-Engineering/tkg-lab" -> "josemzr/vsphere-k8s-scripts"
+"buildpacks-community/kpack-cli" -> "vmware-tanzu/tanzu-application-platform-reference-service-packages"
+"vmware-tanzu/servicebinding" -> "vmware-tanzu/tanzu-application-platform-reference-service-packages"
+"vmware-tanzu/servicebinding" -> "servicebinding/runtime"
+"kubevirt/csi-driver" -> "kubevirt/containerdisks" ["e"=1]
+"metal3-io/ip-address-manager" -> "metal3-io/project-infra"
+"servicebinding/spec" -> "vmware-tanzu/servicebinding"
+"servicebinding/spec" -> "servicebinding/runtime"
+"servicebinding/spec" -> "redhat-developer/service-binding-operator"
+"servicebinding/spec" -> "spring-cloud/spring-cloud-bindings"
+"mercedes-benz/namespace-provisioner" -> "mercedes-benz/kosmoo"
+"vmware-tanzu/vm-operator-api" -> "vmware-tanzu/vm-operator"
+"josemzr/vsphere-k8s-scripts" -> "warroyo/tkgs-proxy-inject"
+"vmware-tanzu/community-edition" -> "vmware-tanzu/cartographer"
+"vmware-tanzu/community-edition" -> "vmware-tanzu/tanzu-framework"
+"vmware-tanzu/community-edition" -> "carvel-dev/carvel"
+"vmware-tanzu/community-edition" -> "carvel-dev/kapp-controller"
+"vmware-tanzu/community-edition" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"vmware-tanzu/community-edition" -> "lamw/vsphere-with-tanzu-nsxt-automated-lab-deployment" ["e"=1]
+"vmware-tanzu/community-edition" -> "carvel-dev/secretgen-controller"
+"vmware-tanzu/community-edition" -> "carvel-dev/imgpkg"
+"vmware-tanzu/community-edition" -> "carvel-dev/kapp"
+"vmware-tanzu/community-edition" -> "vmware-tanzu/vm-operator"
+"vmware-tanzu/community-edition" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"vmware-tanzu/community-edition" -> "carvel-dev/ytt"
+"vmware-tanzu/community-edition" -> "vmware-samples/vcenter-event-broker-appliance" ["e"=1]
+"vmware-tanzu/community-edition" -> "carvel-dev/vendir"
+"vmware-tanzu/community-edition" -> "Tanzu-Solutions-Engineering/tanzu-to-go-workshop"
+"vmware-tanzu/cluster-api-provider-bringyourownhost" -> "kubernetes-sigs/cluster-api-operator"
+"vmware-tanzu/cluster-api-provider-bringyourownhost" -> "kubernetes-sigs/cluster-api-addon-provider-helm"
+"vmware-tanzu/cluster-api-provider-bringyourownhost" -> "vmware-tanzu/tanzu-framework"
+"vmware-tanzu/cluster-api-provider-bringyourownhost" -> "loft-sh/cluster-api-provider-vcluster"
+"vmware-tanzu/cluster-api-provider-bringyourownhost" -> "tinkerbell/cluster-api-provider-tinkerbell" ["e"=1]
+"vmware-tanzu/cluster-api-provider-bringyourownhost" -> "kubernetes-sigs/kernel-module-management" ["e"=1]
+"k0sproject/k0sctl" -> "k0smotron/k0smotron"
+"k0sproject/k0sctl" -> "k0sproject/k0s" ["e"=1]
+"k0sproject/k0sctl" -> "k0sproject/bootloose"
+"tanzu-end-to-end/end-to-end-workshop" -> "doddatpivotal/tkg-lab-e2e-adaptation"
+"pivotal/docs-tap" -> "tsalm-pivotal/tap-install"
+"pivotal/docs-tap" -> "vrabbi/local-tap-setup"
+"pivotal/docs-tap" -> "timosalm/spring-cloud-demo-tap"
+"pivotal/docs-tap" -> "x95castle1/custom-cartographer-supply-chain-examples"
+"pivotal/docs-tap" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"vmware-tanzu/vm-operator" -> "vmware-tanzu/vm-operator-api"
+"vmware-tanzu/vm-operator" -> "vsphere-tmm/Supervisor-Services"
+"ctrsploit/ctrsploit" -> "cloud-native-security-news/cloud-native-security-news"
+"ctrsploit/ctrsploit" -> "yeahx/KubeAPI-Inspector"
+"servicebinding/runtime" -> "vmware-tanzu/servicebinding"
+"SovereignCloudStack/k8s-cluster-api-provider" -> "SovereignCloudStack/cluster-stacks"
+"doddatpivotal/tkg-lab-e2e-adaptation" -> "tanzu-end-to-end/end-to-end-workshop"
+"mercedes-benz/DnA" -> "xgeekshq/split"
+"mercedes-benz/DnA" -> "mercedes-benz/sechub"
+"mercedes-benz/DnA" -> "xgeekshq/intelli-mate"
+"mercedes-benz/DnA" -> "mercedes-benz/foss"
+"liquidmetal-dev/cluster-api-provider-microvm" -> "liquidmetal-dev/image-builder"
+"vmware-tanzu-labs/tanzu-validated-solutions" -> "tsalm-pivotal/tap-install"
+"vmware-tanzu-labs/tanzu-validated-solutions" -> "pivotal/docs-tap"
+"vmware-tanzu-labs/tanzu-validated-solutions" -> "vmware-tanzu/service-installer-for-vmware-tanzu"
+"vmware-tanzu-labs/tanzu-validated-solutions" -> "vmware-tanzu-labs/terraform-provider-namespace-management"
+"vmware-tanzu-labs/tanzu-validated-solutions" -> "pacphi/make-onboarding-suck-less"
+"Azure-Samples/acme-fitness-store" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"xgeekshq/split" -> "asantos00/next-feature-flags"
+"xgeekshq/split" -> "rpvsilva/graphql-fastify-server"
+"vmware-tanzu/cartographer" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"vmware-tanzu/cartographer" -> "vmware-tanzu/community-edition"
+"vmware-tanzu/cartographer" -> "tsalm-pivotal/tap-install"
+"vmware-tanzu/cartographer" -> "Tanzu-Solutions-Engineering/tkg-lab"
+"vmware-tanzu/cartographer" -> "carvel-dev/kapp-controller"
+"vmware-tanzu/cartographer" -> "carvel-dev/carvel"
+"vmware-tanzu/cartographer" -> "pivotal/docs-tap"
+"vmware-tanzu/cartographer" -> "vmware-tanzu/tanzu-framework"
+"vmware-tanzu/cartographer" -> "vrabbi/tap-oss"
+"vmware-tanzu/cartographer" -> "buildpacks-community/kpack"
+"vmware-tanzu/cartographer" -> "Tanzu-Solutions-Engineering/tanzu-to-go-workshop"
+"vmware-tanzu/cartographer" -> "carvel-dev/secretgen-controller"
+"vmware-tanzu/cartographer" -> "vmware-tanzu/apps-cli-plugin"
+"vmware-tanzu/cartographer" -> "vmwarecloudadvocacy/acme_fitness_demo"
+"vmware-tanzu/cartographer" -> "matthewmcnew/kpdemo"
+"vmware-tanzu/service-installer-for-vmware-tanzu" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"telekom/netplanner" -> "telekom/das-schiff-network-operator"
+"Tanzu-Solutions-Engineering/tanzu-to-go-workshop" -> "tsalm-pivotal/tap-install"
+"Jont828/cluster-api-visualizer" -> "kubernetes-sigs/cluster-api-operator"
+"kubernetes-sigs/cluster-api-operator" -> "kubernetes-sigs/cluster-api-addon-provider-helm"
+"kubernetes-sigs/cluster-api-operator" -> "clastix/cluster-api-control-plane-provider-kamaji"
+"kubernetes-sigs/cluster-api-operator" -> "Jont828/cluster-api-visualizer"
+"kubernetes-sigs/cluster-api-operator" -> "vmware-tanzu/cluster-api-provider-bringyourownhost"
+"kubernetes-sigs/cluster-api-operator" -> "osism/k8s-capi-images"
+"tsalm-pivotal/tap-install" -> "Tanzu-Solutions-Engineering/tanzu-to-go-workshop"
+"tsalm-pivotal/tap-install" -> "alexandreroman/tap-install-gitops"
+"tsalm-pivotal/tap-install" -> "pacphi/make-onboarding-suck-less"
+"tsalm-pivotal/tap-install" -> "pivotal/docs-tap"
+"tsalm-pivotal/tap-install" -> "vmware-tanzu-labs/tanzu-validated-solutions"
+"rpvsilva/graphql-fastify-server" -> "asantos00/next-feature-flags"
+"educates/educates-training-platform" -> "pivotal/docs-tap"
+"educates/educates-training-platform" -> "vrabbi/tap-oss"
+"kubernetes-sigs/cluster-api-provider-kubevirt" -> "kubevirt/cloud-provider-kubevirt"
+"kubernetes-sigs/cluster-api-provider-kubevirt" -> "clastix/cluster-api-control-plane-provider-kamaji"
+"kubernetes-sigs/cluster-api-provider-kubevirt" -> "liquidmetal-dev/cluster-api-provider-microvm"
+"telekom/das-schiff-network-operator" -> "telekom/netplanner"
+"mercedes-benz/cluster-api-state-metrics" -> "mercedes-benz/kosmoo"
+"mercedes-benz/cluster-api-state-metrics" -> "tobiasgiese/cluster-api-migration"
+"clastix/cluster-api-control-plane-provider-kamaji" -> "kubernetes-sigs/cluster-api-addon-provider-helm"
+"clastix/cluster-api-control-plane-provider-kamaji" -> "kubernetes-sigs/cluster-api-operator"
+"clastix/cluster-api-control-plane-provider-kamaji" -> "kubernetes-sigs/cluster-api-provider-kubevirt"
+"kubernetes-sigs/cluster-api-addon-provider-helm" -> "kubernetes-sigs/cluster-api-operator"
+"kubernetes-sigs/cluster-api-addon-provider-helm" -> "clastix/cluster-api-control-plane-provider-kamaji"
+"kubernetes-sigs/cluster-api-addon-provider-helm" -> "SovereignCloudStack/cluster-stacks"
+"ahrtr/etcd-defrag" -> "tobiasgiese/cluster-api-migration"
+"k0smotron/k0smotron" -> "k0rdent/kcm"
+"k0smotron/k0smotron" -> "k0sproject/k0sctl"
+"k0smotron/k0smotron" -> "clastix/cluster-api-control-plane-provider-kamaji"
+"k0smotron/k0smotron" -> "clastix/kamaji" ["e"=1]
+"k0smotron/k0smotron" -> "secengjeff/awskillswitch" ["e"=1]
+"k0smotron/k0smotron" -> "k0rdent/k0rdent"
+"SovereignCloudStack/cluster-stacks" -> "SovereignCloudStack/cluster-stack-operator"
+"SovereignCloudStack/cluster-stack-operator" -> "SovereignCloudStack/cluster-stacks"
+"aenix-io/etcd-operator" -> "clastix/cluster-api-control-plane-provider-kamaji"
+"Esonhugh/k8spider" -> "Esonhugh/ingressNightmare-CVE-2025-1974-exps"
+"nccgroup/kubetcd" -> "yeahx/KubeAPI-Inspector"
+"yeahx/KubeAPI-Inspector" -> "nccgroup/kubetcd"
+"yeahx/KubeAPI-Inspector" -> "1c3z/fileleak"
+"yeahx/KubeAPI-Inspector" -> "ctrsploit/ctrsploit"
+"yeahx/KubeAPI-Inspector" -> "Esonhugh/ingressNightmare-CVE-2025-1974-exps"
+"k0rdent/kof" -> "k0rdent/kcm"
+"k0rdent/kof" -> "k0rdent/k0rdent"
+"k0rdent/kcm" -> "k0rdent/kof"
+"k0rdent/kcm" -> "k0rdent/k0rdent"
+"k0rdent/k0rdent" -> "k0rdent/kcm"
+"k0rdent/k0rdent" -> "k0rdent/kof"
+"k0rdent/k0rdent" -> "k0rdent/catalog"
+"k0rdent/k0rdent" -> "Mirantis/rockoon"
+"jpbetz/auger" -> "etcd-io/auger"
+"jpbetz/auger" -> "nccgroup/kubetcd"
+"jpbetz/auger" -> "JulienBalestra/kube-csr"
+"jpbetz/auger" -> "pusher/k8s-auth-example"
+"metal3-io/baremetal-operator" ["l"="9.995,-12.575"]
+"metal3-io/cluster-api-provider-metal3" ["l"="9.959,-12.555"]
+"metal3-io/metal3-docs" ["l"="9.983,-12.542"]
+"metal3-io/metal3-dev-env" ["l"="9.999,-12.55"]
+"metal3-io/ironic-image" ["l"="10.01,-12.536"]
+"metal3-io/cluster-api-provider-baremetal" ["l"="9.976,-12.568"]
+"siderolabs/sidero" ["l"="9.264,-12.03"]
+"tinkerbell/tink" ["l"="3.655,-7.04"]
+"kubernetes-sigs/cluster-api-provider-openstack" ["l"="9.957,-12.582"]
+"ovn-kubernetes/ovn-kubernetes" ["l"="8.348,-9.38"]
+"kubernetes-sigs/cluster-api-provider-kubevirt" ["l"="9.998,-12.629"]
+"kubernetes-sigs/image-builder" ["l"="9.937,-12.593"]
+"kubernetes-sigs/cluster-api" ["l"="7.894,-9.107"]
+"jetstack/kube-oidc-proxy" ["l"="9.72,-12.679"]
+"mintel/dex-k8s-authenticator" ["l"="9.71,-12.746"]
+"TremoloSecurity/kube-oidc-proxy" ["l"="9.752,-12.69"]
+"jetstack/navigator" ["l"="9.676,-12.691"]
+"vmware-tanzu/pinniped" ["l"="9.779,-12.565"]
+"int128/kubelogin" ["l"="7.677,-9.066"]
+"jetstack/tarmak" ["l"="9.74,-12.717"]
+"pusher/k8s-auth-example" ["l"="9.64,-12.732"]
+"Ladicle/kubectl-rolesum" ["l"="7.378,-8.908"]
+"carvel-dev/kapp" ["l"="9.754,-12.459"]
+"carvel-dev/kapp-controller" ["l"="9.745,-12.496"]
+"carvel-dev/kbld" ["l"="9.774,-12.463"]
+"carvel-dev/carvel" ["l"="9.775,-12.499"]
+"carvel-dev/imgpkg" ["l"="9.744,-12.478"]
+"carvel-dev/vendir" ["l"="9.764,-12.479"]
+"carvel-dev/ytt" ["l"="9.786,-12.481"]
+"carvel-dev/secretgen-controller" ["l"="9.761,-12.497"]
+"carvel-dev/kwt" ["l"="9.767,-12.402"]
+"buildpacks-community/kpack" ["l"="9.716,-12.463"]
+"vmware-tanzu/cartographer" ["l"="9.744,-12.522"]
+"kptdev/kpt" ["l"="7.714,-9.145"]
+"krishnapmv/k8s-ldap" ["l"="9.744,-12.806"]
+"ObjectifLibre/k8s-ldap" ["l"="9.734,-12.778"]
+"fydrah/loginapp" ["l"="9.721,-12.792"]
+"vmware-archive/gangway" ["l"="9.684,-12.777"]
+"micahhausler/k8s-oidc-helper" ["l"="10.524,-9.993"]
+"kubernetes/cloud-provider-vsphere" ["l"="9.843,-12.58"]
+"kubernetes-sigs/vsphere-csi-driver" ["l"="9.806,-12.573"]
+"kubernetes-sigs/cluster-api-provider-vsphere" ["l"="9.871,-12.572"]
+"vmware-tanzu/crash-diagnostics" ["l"="9.86,-12.546"]
+"Tanzu-Solutions-Engineering/tkg-lab" ["l"="9.754,-12.56"]
+"vmware-tanzu/velero-plugin-for-vsphere" ["l"="7.932,-9.668"]
+"vmware/load-balancer-and-ingress-services-for-kubernetes" ["l"="-50.346,6.968"]
+"vmwarecloudadvocacy/acme_fitness_demo" ["l"="9.721,-12.562"]
+"tsalm-pivotal/tap-install" ["l"="9.74,-12.555"]
+"vmware-archive/cloud-init-vmware-guestinfo" ["l"="-49.256,6.367"]
+"alexbrand/gangway-dex-tutorial" ["l"="9.669,-12.803"]
+"ObjectifLibre/kube-oidc" ["l"="9.717,-12.817"]
+"mercedes-benz/sechub" ["l"="10.171,-12.56"]
+"mercedes-benz/kosmoo" ["l"="10.104,-12.571"]
+"mercedes-benz/mercedes-benz-foss-manifesto" ["l"="10.196,-12.536"]
+"mercedes-benz/namespace-provisioner" ["l"="10.139,-12.566"]
+"open-policy-agent/conftest" ["l"="7.662,-8.954"]
+"kudobuilder/kudo" ["l"="7.737,-9.153"]
+"hairyhenderson/gomplate" ["l"="27.275,-22.675"]
+"inlets/inlets-operator" ["l"="7.632,-8.785"]
+"buildpacks/pack" ["l"="7.896,-9.006"]
+"cloudfoundry/cf-for-k8s" ["l"="7.784,-13.757"]
+"buildpacks/lifecycle" ["l"="9.667,-12.399"]
+"cloudfoundry/korifi" ["l"="7.757,-13.76"]
+"buildpacks/spec" ["l"="9.691,-12.395"]
+"pivotal-cf/om" ["l"="7.831,-13.718"]
+"buildpacks/samples" ["l"="9.684,-12.423"]
+"google/kf" ["l"="7.858,-13.805"]
+"buildpacks-community/kpack-cli" ["l"="9.645,-12.438"]
+"mercedes-benz/foss" ["l"="10.224,-12.529"]
+"kubernetes-sigs/cluster-api-ipam-provider-in-cluster" ["l"="9.908,-12.518"]
+"kubernetes-sigs/cluster-api-provider-aws" ["l"="8.519,-43.983"]
+"kubernetes-sigs/cluster-api-provider-azure" ["l"="-46.2,6.911"]
+"vmware/hamlet" ["l"="9.888,-12.54"]
+"vmware-tanzu/tanzu-framework" ["l"="9.829,-12.55"]
+"kubernetes-sigs/cluster-api-operator" ["l"="9.934,-12.62"]
+"kubernetes/cloud-provider-openstack" ["l"="1.194,15.042"]
+"gophercloud/gophercloud" ["l"="1.207,15.103"]
+"kubernetes-sigs/cluster-api-addon-provider-helm" ["l"="9.955,-12.619"]
+"tobiasgiese/cluster-api-migration" ["l"="10.023,-12.56"]
+"vmware-tanzu/cluster-api-provider-bringyourownhost" ["l"="9.91,-12.597"]
+"terraform-provider-openstack/terraform-provider-openstack" ["l"="1.173,15.079"]
+"mercedes-benz/cluster-api-state-metrics" ["l"="10.05,-12.576"]
+"crossplane-contrib/provider-openstack" ["l"="9.935,-12.553"]
+"buildpacks/rfcs" ["l"="9.667,-12.371"]
+"heroku/buildpacks-nodejs" ["l"="9.64,-12.382"]
+"buildpacks/community" ["l"="9.689,-12.356"]
+"heroku/cnb-shim" ["l"="9.706,-12.369"]
+"CNA-Tech/PKS-Ninja" ["l"="9.691,-12.594"]
+"vmware/nsx-t-datacenter-ci-pipelines" ["l"="9.652,-12.609"]
+"CNA-Tech/Apps-on-PKS" ["l"="9.676,-12.614"]
+"ionos-cloud/cluster-api-provider-proxmox" ["l"="9.342,-12.032"]
+"Jont828/cluster-api-visualizer" ["l"="9.915,-12.634"]
+"projectsveltos/addon-controller" ["l"="7.438,-9.35"]
+"clastix/kamaji" ["l"="7.623,-9.226"]
+"redhat-developer/service-binding-operator" ["l"="9.504,-12.327"]
+"servicebinding/spec" ["l"="9.524,-12.344"]
+"buildpacks/tekton-integration" ["l"="9.653,-12.418"]
+"metal3-io/project-infra" ["l"="9.991,-12.526"]
+"doddatpivotal/tkg-lab-e2e-adaptation" ["l"="9.672,-12.564"]
+"vmware-tanzu-labs/tanzu-validated-solutions" ["l"="9.738,-12.571"]
+"matthewmcnew/kpdemo" ["l"="9.728,-12.543"]
+"josemzr/vsphere-k8s-scripts" ["l"="9.704,-12.572"]
+"Turbots/tanzu-demo" ["l"="9.689,-12.565"]
+"kubevirt/cloud-provider-kubevirt" ["l"="10.03,-12.633"]
+"kubevirt/csi-driver" ["l"="10.061,-12.638"]
+"pivotal/docs-tap" ["l"="9.713,-12.539"]
+"webmeshproj/webmesh-vdi" ["l"="10.064,-12.555"]
+"BeryJu/korb" ["l"="7.458,-9.223"]
+"FairwindsOps/pluto" ["l"="7.568,-9.064"]
+"vmware-tanzu-labs/cf-mgmt" ["l"="7.815,-13.713"]
+"Tanzu-Solutions-Engineering/tanzu-to-go-workshop" ["l"="9.758,-12.544"]
+"vmware-labs/reconciler-runtime" ["l"="9.487,-12.371"]
+"reconcilerio/runtime" ["l"="9.462,-12.369"]
+"servicebinding/runtime" ["l"="9.521,-12.369"]
+"telekom/das-schiff" ["l"="9.947,-12.49"]
+"telekom/das-schiff-network-operator" ["l"="9.951,-12.459"]
+"lfn-cnti/bestpractices" ["l"="31.614,-23.037"]
+"telekom/netplanner" ["l"="9.965,-12.467"]
+"metal3-io/ip-address-manager" ["l"="9.974,-12.515"]
+"kubernetes-sigs/kernel-module-management" ["l"="8.514,-9.636"]
+"vmware-tanzu-labs/reference-platform-for-kubernetes" ["l"="9.761,-12.597"]
+"Tanzu-Solutions-Engineering/tanzu-gitops" ["l"="9.755,-12.584"]
+"vmware-tanzu/tanzu-application-platform-reference-service-packages" ["l"="9.594,-12.405"]
+"vmware-tanzu/servicebinding" ["l"="9.547,-12.374"]
+"kubevirt/containerdisks" ["l"="8.495,-9.655"]
+"spring-cloud/spring-cloud-bindings" ["l"="9.531,-12.317"]
+"vmware-tanzu/vm-operator-api" ["l"="9.805,-12.63"]
+"vmware-tanzu/vm-operator" ["l"="9.792,-12.605"]
+"warroyo/tkgs-proxy-inject" ["l"="9.673,-12.582"]
+"vmware-tanzu/community-edition" ["l"="9.775,-12.526"]
+"lamw/vsphere-with-tanzu-nsxt-automated-lab-deployment" ["l"="-50.105,6.8"]
+"vmware-samples/vcenter-event-broker-appliance" ["l"="-50.052,6.819"]
+"loft-sh/cluster-api-provider-vcluster" ["l"="9.905,-12.572"]
+"tinkerbell/cluster-api-provider-tinkerbell" ["l"="3.692,-6.997"]
+"k0sproject/k0sctl" ["l"="10.08,-12.752"]
+"k0smotron/k0smotron" ["l"="10.04,-12.744"]
+"k0sproject/k0s" ["l"="8.04,-8.772"]
+"k0sproject/bootloose" ["l"="10.111,-12.76"]
+"tanzu-end-to-end/end-to-end-workshop" ["l"="9.647,-12.565"]
+"vrabbi/local-tap-setup" ["l"="9.69,-12.546"]
+"timosalm/spring-cloud-demo-tap" ["l"="9.689,-12.531"]
+"x95castle1/custom-cartographer-supply-chain-examples" ["l"="9.677,-12.54"]
+"vsphere-tmm/Supervisor-Services" ["l"="9.785,-12.634"]
+"ctrsploit/ctrsploit" ["l"="9.48,-12.86"]
+"cloud-native-security-news/cloud-native-security-news" ["l"="9.453,-12.869"]
+"yeahx/KubeAPI-Inspector" ["l"="9.503,-12.847"]
+"SovereignCloudStack/k8s-cluster-api-provider" ["l"="9.938,-12.687"]
+"SovereignCloudStack/cluster-stacks" ["l"="9.949,-12.663"]
+"mercedes-benz/DnA" ["l"="10.229,-12.558"]
+"xgeekshq/split" ["l"="10.267,-12.566"]
+"xgeekshq/intelli-mate" ["l"="10.251,-12.55"]
+"liquidmetal-dev/cluster-api-provider-microvm" ["l"="10.027,-12.661"]
+"liquidmetal-dev/image-builder" ["l"="10.05,-12.676"]
+"vmware-tanzu/service-installer-for-vmware-tanzu" ["l"="9.738,-12.601"]
+"vmware-tanzu-labs/terraform-provider-namespace-management" ["l"="9.718,-12.597"]
+"pacphi/make-onboarding-suck-less" ["l"="9.733,-12.584"]
+"Azure-Samples/acme-fitness-store" ["l"="9.72,-12.618"]
+"asantos00/next-feature-flags" ["l"="10.285,-12.578"]
+"rpvsilva/graphql-fastify-server" ["l"="10.294,-12.562"]
+"vrabbi/tap-oss" ["l"="9.697,-12.514"]
+"vmware-tanzu/apps-cli-plugin" ["l"="9.714,-12.514"]
+"clastix/cluster-api-control-plane-provider-kamaji" ["l"="9.976,-12.654"]
+"osism/k8s-capi-images" ["l"="9.931,-12.651"]
+"alexandreroman/tap-install-gitops" ["l"="9.717,-12.58"]
+"educates/educates-training-platform" ["l"="9.67,-12.519"]
+"ahrtr/etcd-defrag" ["l"="10.051,-12.522"]
+"k0rdent/kcm" ["l"="10.036,-12.785"]
+"secengjeff/awskillswitch" ["l"="37.906,-7.423"]
+"k0rdent/k0rdent" ["l"="10.056,-12.799"]
+"SovereignCloudStack/cluster-stack-operator" ["l"="9.954,-12.681"]
+"aenix-io/etcd-operator" ["l"="9.988,-12.687"]
+"Esonhugh/k8spider" ["l"="9.487,-12.919"]
+"Esonhugh/ingressNightmare-CVE-2025-1974-exps" ["l"="9.497,-12.887"]
+"nccgroup/kubetcd" ["l"="9.531,-12.824"]
+"1c3z/fileleak" ["l"="9.476,-12.829"]
+"k0rdent/kof" ["l"="10.036,-12.809"]
+"k0rdent/catalog" ["l"="10.059,-12.824"]
+"Mirantis/rockoon" ["l"="10.083,-12.821"]
+"jpbetz/auger" ["l"="9.577,-12.782"]
+"etcd-io/auger" ["l"="9.547,-12.774"]
+"JulienBalestra/kube-csr" ["l"="9.577,-12.81"]
+}

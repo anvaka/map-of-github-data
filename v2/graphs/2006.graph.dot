@@ -1,0 +1,590 @@
+digraph G {
+"fedora-infra/anitya" -> "fedora-infra/fedmsg"
+"fedora-infra/anitya" -> "fedora-infra/bodhi"
+"fedora-infra/anitya" -> "fedora-infra/the-new-hotness"
+"fedora-infra/anitya" -> "fedora-infra/fedora-packages"
+"fedora-infra/anitya" -> "rpm-software-management/rpmlint"
+"fedora-infra/anitya" -> "fedora-copr/copr"
+"osbuild/osbuild" -> "osbuild/osbuild-composer"
+"osbuild/osbuild" -> "osbuild/image-builder-crc"
+"osbuild/osbuild" -> "osbuild/cockpit-composer"
+"osbuild/osbuild" -> "coreos/bootupd" ["e"=1]
+"osbuild/osbuild" -> "osbuild/bootc-image-builder" ["e"=1]
+"osbuild/osbuild" -> "weldr/lorax"
+"SELinuxProject/refpolicy" -> "SELinuxProject/setools"
+"SELinuxProject/refpolicy" -> "SELinuxProject/selinux"
+"SELinuxProject/refpolicy" -> "SELinuxProject/selinux-notebook"
+"SELinuxProject/refpolicy" -> "OwlCyberDefense/refpolicy"
+"SELinuxProject/refpolicy" -> "SELinuxProject/selinux-kernel"
+"SELinuxProject/refpolicy" -> "fedora-selinux/selinux-policy"
+"SELinuxProject/refpolicy" -> "SELinuxProject/selinux-testsuite"
+"SELinuxProject/refpolicy" -> "SELinuxProject/cil"
+"SELinuxProject/refpolicy" -> "containers/container-selinux"
+"clalancette/oz" -> "redhat-imaging/imagefactory"
+"SELinuxProject/setools" -> "SELinuxProject/refpolicy"
+"SELinuxProject/setools" -> "SELinuxProject/selinux-kernel"
+"SELinuxProject/setools" -> "SELinuxProject/cil"
+"SELinuxProject/setools" -> "SELinuxProject/selinux-testsuite"
+"SELinuxProject/setools" -> "SELinuxProject/selint"
+"SELinuxProject/setools" -> "SELinuxProject/selinux-notebook"
+"containers/udica" -> "containers/container-selinux"
+"containers/udica" -> "RedHatDemos/SecurityDemos" ["e"=1]
+"containers/udica" -> "coreos/fedora-coreos-tracker" ["e"=1]
+"containers/udica" -> "openshift/hive" ["e"=1]
+"containers/udica" -> "containers/oci-seccomp-bpf-hook" ["e"=1]
+"containers/udica" -> "fedora-selinux/selinux-policy"
+"containers/udica" -> "SELinuxProject/refpolicy"
+"containers/udica" -> "stratis-storage/stratisd" ["e"=1]
+"containers/udica" -> "linux-system-roles/selinux" ["e"=1]
+"containers/udica" -> "kubernetes-sigs/security-profiles-operator" ["e"=1]
+"containers/udica" -> "coreos/fedora-coreos-config" ["e"=1]
+"KNBH/KNBH" -> "davidbolvansky/TINZbierkaPrikladov"
+"davidbolvansky/TINZbierkaPrikladov" -> "KNBH/KNBH"
+"packit/packit" -> "packit/ogr"
+"packit/packit" -> "fedora-copr/copr"
+"packit/packit" -> "packit/packit-service"
+"packit/packit" -> "packit/sandcastle"
+"fedora-cloud/Fedora-Dockerfiles" -> "6jx/6jx"
+"fedora-cloud/Fedora-Dockerfiles" -> "rylan-justice/cessation"
+"fedora-cloud/Fedora-Dockerfiles" -> "rylan-justice/riddance"
+"fedora-cloud/Fedora-Dockerfiles" -> "sclorg/rhscl-dockerfiles"
+"fedora-cloud/Fedora-Dockerfiles" -> "containerbuildsystem/atomic-reactor"
+"fedora-cloud/Fedora-Dockerfiles" -> "fedora-cloud/docker-brew-fedora" ["e"=1]
+"fedora-cloud/Fedora-Dockerfiles" -> "containerbuildsystem/osbs-client"
+"fedora-cloud/Fedora-Dockerfiles" -> "fedora-infra/fedmsg"
+"fedora-cloud/Fedora-Dockerfiles" -> "projectatomic/atomic-site"
+"fedora-cloud/Fedora-Dockerfiles" -> "projectatomic/adb-atomic-developer-bundle"
+"fedora-cloud/Fedora-Dockerfiles" -> "projectatomic/atomic"
+"fedora-cloud/Fedora-Dockerfiles" -> "developer-portal/content"
+"fedora-infra/bodhi" -> "fedora-infra/fedmsg"
+"fedora-infra/bodhi" -> "fedora-infra/anitya"
+"fedora-infra/bodhi" -> "fedora-infra/fedora-messaging"
+"fedora-infra/bodhi" -> "fedora-infra/fedora-packages"
+"fedora-infra/bodhi" -> "redhat-developer/rpm-packaging-guide"
+"mairin/selinux-coloring-book" -> "fedoradesign/coloringbook-containers"
+"mairin/selinux-coloring-book" -> "mairin/coloringbook-container-commandos"
+"thoth-station/core" -> "thoth-station/storages"
+"thoth-station/core" -> "thoth-station/adviser"
+"thoth-station/core" -> "thoth-station/thamos"
+"thoth-station/core" -> "thoth-station/kebechet"
+"thoth-station/core" -> "thoth-station/glyph"
+"thoth-station/core" -> "thoth-station/thoth-application"
+"thoth-station/storages" -> "thoth-station/thamos"
+"thoth-station/storages" -> "thoth-station/core"
+"thoth-station/storages" -> "thoth-station/adviser"
+"thoth-station/adviser" -> "thoth-station/kebechet"
+"thoth-station/adviser" -> "thoth-station/thamos"
+"thoth-station/adviser" -> "thoth-station/core"
+"thoth-station/adviser" -> "thoth-station/storages"
+"thoth-station/adviser" -> "GiorgosKarantonis/Github-Issues-Classifier"
+"thoth-station/adviser" -> "thoth-station/glyph"
+"thoth-station/kebechet" -> "thoth-station/adviser"
+"thoth-station/kebechet" -> "thoth-station/thamos"
+"thoth-station/kebechet" -> "thoth-station/storages"
+"thoth-station/kebechet" -> "thoth-station/core"
+"thoth-station/kebechet" -> "thoth-station/thoth-application"
+"thoth-station/thamos" -> "thoth-station/storages"
+"thoth-station/thamos" -> "thoth-station/adviser"
+"thoth-station/thamos" -> "thoth-station/kebechet"
+"rpm-software-management/dnf-plugins-core" -> "rpm-software-management/dnf-plugins-extras"
+"rpm-software-management/dnf-plugins-core" -> "rpm-software-management/libdnf"
+"rpm-software-management/dnf-plugins-core" -> "rpm-software-management/libcomps"
+"rpm-software-management/dnf-plugins-core" -> "rpm-software-management/ci-dnf-stack"
+"Pagure/pagure" -> "fedora-infra/fedmsg"
+"user-cont/conu" -> "user-cont/colin"
+"user-cont/conu" -> "user-cont/release-bot"
+"user-cont/conu" -> "packit/ogr"
+"user-cont/conu" -> "teemtee/fmf"
+"user-cont/conu" -> "containerbuildsystem/osbs-client"
+"user-cont/conu" -> "fedora-modularity/meta-test-family"
+"OwlCyberDefense/setools3" -> "OwlCyberDefense/setools"
+"user-cont/release-bot" -> "packit/ogr"
+"rpm-software-management/libdnf" -> "openSUSE/libsolv"
+"rpm-software-management/libdnf" -> "rpm-software-management/dnf-plugins-core"
+"rpm-software-management/libdnf" -> "rpm-software-management/libcomps"
+"Cropi/usbguard-notifier" -> "KNBH/KNBH"
+"Cropi/usbguard-notifier" -> "marektamaskovic/strace2seccomp"
+"packit/packit-service" -> "packit/deployment"
+"packit/packit-service" -> "packit/sandcastle"
+"packit/packit-service" -> "packit/dashboard"
+"packit/packit-service" -> "packit/ogr"
+"teemtee/fmf" -> "fedora-modularity/meta-test-family"
+"thoth-station/jupyter-nbrequirements" -> "thoth-station/storages"
+"thoth-station/jupyter-nbrequirements" -> "thoth-station/jupyterlab-requirements"
+"packit/ogr" -> "packit/packit-service"
+"packit/ogr" -> "thoth-station/kebechet"
+"packit/ogr" -> "packit/sandcastle"
+"marektamaskovic/strace2seccomp" -> "skozina/cda-slides"
+"packit/sandcastle" -> "packit/deployment"
+"SELinuxProject/selinux" -> "SELinuxProject/refpolicy"
+"SELinuxProject/selinux" -> "SELinuxProject/selinux-notebook"
+"SELinuxProject/selinux" -> "SELinuxProject/selinux-kernel"
+"SELinuxProject/selinux" -> "SELinuxProject/setools"
+"SELinuxProject/selinux" -> "fedora-selinux/selinux-policy"
+"SELinuxProject/selinux" -> "SELinuxProject/cil"
+"SELinuxProject/selinux" -> "SELinuxProject/selinux-testsuite"
+"SELinuxProject/selinux" -> "OwlCyberDefense/refpolicy"
+"SELinuxProject/selinux" -> "containers/udica"
+"SELinuxProject/selinux" -> "linux-audit/audit-userspace"
+"SELinuxProject/selinux" -> "OwlCyberDefense/setools"
+"SELinuxProject/selinux" -> "seccomp/libseccomp" ["e"=1]
+"SELinuxProject/selinux" -> "containers/container-selinux"
+"SELinuxProject/selinux" -> "rpm-software-management/rpm"
+"SELinuxProject/selinux" -> "USBGuard/usbguard"
+"osbuild/osbuild-composer" -> "osbuild/image-builder-crc"
+"osbuild/osbuild-composer" -> "osbuild/osbuild"
+"osbuild/osbuild-composer" -> "osbuild/image-builder-frontend"
+"osbuild/osbuild-composer" -> "fedora-copr/copr"
+"thoth-station/micropipenv" -> "thoth-station/storages"
+"thoth-station/micropipenv" -> "thoth-station/core"
+"thoth-station/micropipenv" -> "thoth-station/adviser"
+"thoth-station/micropipenv" -> "thoth-station/invectio"
+"thoth-station/micropipenv" -> "packit/ogr"
+"thoth-station/micropipenv" -> "GiorgosKarantonis/Github-Issues-Classifier"
+"thoth-station/micropipenv" -> "thoth-station/glyph"
+"thoth-station/micropipenv" -> "thoth-station/jupyter-nbrequirements"
+"projectatomic/atomic" -> "projectatomic/atomic-system-containers"
+"projectatomic/atomic" -> "projectatomic/nulecule"
+"projectatomic/atomic" -> "coreos/rpm-ostree" ["e"=1]
+"projectatomic/atomic" -> "projectatomic/atomicapp"
+"projectatomic/atomic" -> "projectatomic/container-best-practices"
+"projectatomic/atomic" -> "containerbuildsystem/atomic-reactor"
+"projectatomic/atomic" -> "projectatomic/atomic-site"
+"projectatomic/atomic" -> "CentOS-PaaS-SIG/linchpin" ["e"=1]
+"projectatomic/atomic" -> "openshift/ansible-service-broker" ["e"=1]
+"projectatomic/atomic" -> "projectatomic/adb-atomic-developer-bundle"
+"projectatomic/atomic" -> "redhat-imaging/imagefactory"
+"openSUSE/libsolv" -> "rpm-software-management/librepo"
+"openSUSE/libsolv" -> "rpm-software-management/libdnf"
+"openSUSE/libsolv" -> "rpm-software-management/hawkey"
+"openSUSE/libsolv" -> "rpm-software-management/dnf"
+"openSUSE/libsolv" -> "openSUSE/libzypp"
+"openSUSE/libsolv" -> "openSUSE/zypper" ["e"=1]
+"openSUSE/libsolv" -> "rpm-software-management/rpm"
+"fedora-selinux/selinux-policy" -> "fedora-selinux/selinux-policy-contrib"
+"fedora-selinux/selinux-policy" -> "OwlCyberDefense/refpolicy"
+"fedora-selinux/selinux-policy" -> "SELinuxProject/refpolicy"
+"fedora-selinux/selinux-policy" -> "fedora-selinux/selinux"
+"pykickstart/pykickstart" -> "rhinstaller/anaconda"
+"pykickstart/pykickstart" -> "weldr/lorax"
+"SELinuxProject/selinux-notebook" -> "SELinuxProject/refpolicy"
+"SELinuxProject/selinux-notebook" -> "SELinuxProject/selinux"
+"SELinuxProject/selinux-notebook" -> "SELinuxProject/setools"
+"SELinuxProject/selinux-notebook" -> "SELinuxProject/selinux-kernel"
+"SELinuxProject/selinux-notebook" -> "SELinuxProject/selint"
+"SELinuxProject/selinux-notebook" -> "fedora-selinux/selinux-policy"
+"SELinuxProject/selinux-notebook" -> "mairin/selinux-coloring-book"
+"SELinuxProject/selinux-notebook" -> "containers/container-selinux"
+"SELinuxProject/selinux-notebook" -> "linux-audit/audit-userspace"
+"SELinuxProject/selinux-notebook" -> "containers/udica"
+"OwlCyberDefense/refpolicy" -> "TresysTechnology/refpolicy-contrib"
+"OwlCyberDefense/refpolicy" -> "fedora-selinux/selinux-policy"
+"OwlCyberDefense/refpolicy" -> "SELinuxProject/refpolicy"
+"OwlCyberDefense/refpolicy" -> "OwlCyberDefense/setools"
+"google/ukip" -> "USBGuard/usbguard"
+"rpm-software-management/dnf-plugins-extras" -> "rpm-software-management/dnf-plugins-core"
+"rpm-software-management/dnf-plugins-extras" -> "rpm-software-management/dnf-plugin-system-upgrade"
+"rpm-software-management/tito" -> "release-engineering/dist-git"
+"rpm-software-management/tito" -> "rpm-software-management/mock"
+"rpm-software-management/tito" -> "rpm-software-management/rpmlint"
+"rpm-software-management/tito" -> "fedora-copr/copr"
+"projectatomic/dockerfile_lint" -> "projectatomic/container-best-practices"
+"projectatomic/dockerfile_lint" -> "aweiteka/dockerfile_checker"
+"osbuild/image-builder-crc" -> "osbuild/osbuild-composer"
+"projectatomic/adb-atomic-developer-bundle" -> "projectatomic/vagrant-service-manager"
+"projectatomic/adb-atomic-developer-bundle" -> "projectatomic/adb-utils"
+"containerbuildsystem/atomic-reactor" -> "containerbuildsystem/osbs-client"
+"containerbuildsystem/atomic-reactor" -> "projectatomic/atomicapp"
+"containerbuildsystem/atomic-reactor" -> "kbsingh/cccp-index"
+"containerbuildsystem/atomic-reactor" -> "projectatomic/nulecule"
+"containerbuildsystem/atomic-reactor" -> "containerbuildsystem/koji-containerbuild"
+"SELinuxProject/cil" -> "SELinuxProject/selinux-testsuite"
+"SELinuxProject/cil" -> "SELinuxProject/selinux-kernel"
+"OwlCyberDefense/setools" -> "OwlCyberDefense/setools3"
+"OwlCyberDefense/setools" -> "seandroid-analytics/seal"
+"OwlCyberDefense/setools" -> "seandroid-analytics/selint"
+"SELinuxProject/selint" -> "dburgener/cascade"
+"teemtee/tmt" -> "rpminspect/rpminspect"
+"teemtee/tmt" -> "neoave/mrack"
+"teemtee/tmt" -> "teemtee/fmf"
+"packit/deployment" -> "packit/sandcastle"
+"packit/dashboard" -> "packit/deployment"
+"thoth-station/glyph" -> "thoth-station/storages"
+"AICoE/aicoe-ci" -> "thoth-station/thoth-application"
+"weldr/lorax" -> "livecd-tools/livecd-tools"
+"weldr/lorax" -> "osbuild/osbuild-composer"
+"weldr/lorax" -> "rhinstaller/anaconda"
+"weldr/lorax" -> "osbuild/osbuild"
+"weldr/lorax" -> "rpm-software-management/mock"
+"weldr/lorax" -> "pykickstart/pykickstart"
+"weldr/lorax" -> "fedora-selinux/selinux-policy"
+"weldr/lorax" -> "rhinstaller/initial-setup"
+"weldr/lorax" -> "rpm-software-management/rpmlint"
+"weldr/lorax" -> "rhinstaller/kickstart-tests"
+"rhinstaller/anaconda" -> "pykickstart/pykickstart"
+"rhinstaller/anaconda" -> "weldr/lorax"
+"rhinstaller/anaconda" -> "rpm-software-management/dnf"
+"rhinstaller/anaconda" -> "rpm-software-management/mock"
+"rhinstaller/anaconda" -> "livecd-tools/livecd-tools"
+"rhinstaller/anaconda" -> "rhinstaller/hello-world-anaconda-addon"
+"rhinstaller/anaconda" -> "dracutdevs/dracut" ["e"=1]
+"rhinstaller/anaconda" -> "coreos/rpm-ostree" ["e"=1]
+"rhinstaller/anaconda" -> "rhinstaller/anaconda-webui"
+"rhinstaller/anaconda" -> "rpm-software-management/rpm"
+"rhinstaller/anaconda" -> "osbuild/osbuild"
+"rhinstaller/anaconda" -> "rpm-software-management/libdnf"
+"rhinstaller/anaconda" -> "ostreedev/ostree" ["e"=1]
+"rhinstaller/anaconda" -> "redhat-performance/tuned" ["e"=1]
+"rhinstaller/anaconda" -> "rhinstaller/kickstart-tests"
+"firewalld/firewalld" -> "rpm-software-management/dnf"
+"firewalld/firewalld" -> "rhinstaller/anaconda"
+"firewalld/firewalld" -> "NetworkManager/NetworkManager"
+"firewalld/firewalld" -> "dracutdevs/dracut" ["e"=1]
+"firewalld/firewalld" -> "linux-audit/audit-documentation"
+"firewalld/firewalld" -> "sddm/sddm" ["e"=1]
+"firewalld/firewalld" -> "iputils/iputils" ["e"=1]
+"firewalld/firewalld" -> "virt-manager/virt-manager" ["e"=1]
+"firewalld/firewalld" -> "SELinuxProject/selinux"
+"USBGuard/usbguard" -> "Cropi/usbguard-notifier"
+"USBGuard/usbguard" -> "google/ukip"
+"USBGuard/usbguard" -> "linux-application-whitelisting/fapolicyd"
+"USBGuard/usbguard" -> "latchset/tang" ["e"=1]
+"USBGuard/usbguard" -> "netblue30/firejail" ["e"=1]
+"USBGuard/usbguard" -> "latchset/clevis" ["e"=1]
+"USBGuard/usbguard" -> "GrapheneOS/linux-hardened" ["e"=1]
+"USBGuard/usbguard" -> "SELinuxProject/selinux"
+"USBGuard/usbguard" -> "subgraph/oz" ["e"=1]
+"USBGuard/usbguard" -> "corna/me_cleaner" ["e"=1]
+"USBGuard/usbguard" -> "Rohde-Schwarz/TrustedGRUB2" ["e"=1]
+"USBGuard/usbguard" -> "SELinuxProject/refpolicy"
+"USBGuard/usbguard" -> "containers/container-selinux"
+"USBGuard/usbguard" -> "linux-audit/audit-userspace"
+"USBGuard/usbguard" -> "containers/bubblewrap" ["e"=1]
+"containerbuildsystem/dockerfile-parse" -> "containerbuildsystem/koji-containerbuild"
+"containerbuildsystem/dockerfile-parse" -> "containerbuildsystem/osbs-client"
+"containerbuildsystem/dockerfile-parse" -> "containerbuildsystem/atomic-reactor"
+"containerbuildsystem/dockerfile-parse" -> "containerbuildsystem/osbs-box"
+"containerbuildsystem/dockerfile-parse" -> "user-cont/colin"
+"projectatomic/container-best-practices" -> "projectatomic/adb-atomic-developer-bundle"
+"rpm-software-management/rpm" -> "rpm-software-management/dnf"
+"rpm-software-management/rpm" -> "rpm-software-management/libdnf"
+"rpm-software-management/rpm" -> "rpm-software-management/dnf5"
+"rpm-software-management/rpm" -> "rpm-software-management/yum"
+"rpm-software-management/rpm" -> "fedora-infra/bodhi"
+"rpm-software-management/rpm" -> "rpm-software-management/mock"
+"rpm-software-management/rpm" -> "fedora-copr/copr"
+"rpm-software-management/rpm" -> "rpm-software-management/dnf-plugins-core"
+"rpm-software-management/rpm" -> "fedora-selinux/selinux-policy"
+"rpm-software-management/rpm" -> "rpm-software-management/rpmlint"
+"rpm-software-management/rpm" -> "packit/packit"
+"rpm-software-management/rpm" -> "openSUSE/libsolv"
+"rpm-software-management/rpm" -> "fedora-cloud/docker-brew-fedora" ["e"=1]
+"rpm-software-management/rpm" -> "fedora-infra/anitya"
+"rpm-software-management/rpm" -> "dracutdevs/dracut" ["e"=1]
+"rpm-software-management/dnf" -> "rpm-software-management/rpm"
+"rpm-software-management/dnf" -> "rpm-software-management/dnf5"
+"rpm-software-management/dnf" -> "rpm-software-management/libdnf"
+"rpm-software-management/dnf" -> "openSUSE/libsolv"
+"rpm-software-management/dnf" -> "rpm-software-management/dnf-plugins-core"
+"rpm-software-management/dnf" -> "rhinstaller/anaconda"
+"rpm-software-management/dnf" -> "rpm-software-management/yum"
+"rpm-software-management/dnf" -> "firewalld/firewalld"
+"rpm-software-management/dnf" -> "flatpak/flatpak" ["e"=1]
+"rpm-software-management/dnf" -> "coreos/rpm-ostree" ["e"=1]
+"rpm-software-management/dnf" -> "fedora-infra/bodhi"
+"rpm-software-management/dnf" -> "rpm-software-management/dnf-plugins-extras"
+"rpm-software-management/dnf" -> "flathub/flathub" ["e"=1]
+"rpm-software-management/dnf" -> "rpm-software-management/mock"
+"rpm-software-management/dnf" -> "developer-portal/content"
+"livecd-tools/livecd-tools" -> "weldr/lorax"
+"projectatomic/nulecule" -> "projectatomic/atomicapp"
+"projectatomic/nulecule" -> "projectatomic/nulecule-library"
+"projectatomic/nulecule" -> "containerbuildsystem/atomic-reactor"
+"projectatomic/nulecule" -> "kbsingh/cccp-index"
+"projectatomic/nulecule" -> "projectatomic/adb-atomic-developer-bundle"
+"projectatomic/nulecule" -> "projectatomic/ContainerApplicationGenericLabels"
+"release-engineering/dist-git" -> "fedora-copr/copr"
+"seandroid-analytics/seal" -> "seandroid-analytics/selint"
+"seandroid-analytics/seal" -> "OwlCyberDefense/setools"
+"fedora-python/pyp2rpm" -> "fedora-python/portingdb"
+"containers/container-selinux" -> "containers/udica"
+"containers/container-selinux" -> "fedora-selinux/selinux-policy"
+"containers/container-selinux" -> "SELinuxProject/refpolicy"
+"fedora-infra/fedmsg" -> "fedora-infra/datagrepper"
+"fedora-infra/fedmsg" -> "fedora-infra/fedora-messaging"
+"fedora-infra/fedmsg" -> "fedora-infra/bodhi"
+"fedora-infra/fedmsg" -> "fedora-infra/fedora-packages"
+"fedora-infra/fedmsg" -> "fedora-infra/anitya"
+"fedora-infra/fedmsg" -> "fedora-infra/python-fedora"
+"SELinuxProject/selinux-testsuite" -> "SELinuxProject/cil"
+"SELinuxProject/selinux-testsuite" -> "SELinuxProject/selinux-kernel"
+"containerbuildsystem/koji-containerbuild" -> "containerbuildsystem/osbs-box"
+"containerbuildsystem/koji-containerbuild" -> "containerbuildsystem/osbs-client"
+"developer-portal/website" -> "developer-portal/content"
+"developer-portal/content" -> "developer-portal/website"
+"containerbuildsystem/osbs-client" -> "containerbuildsystem/atomic-reactor"
+"containerbuildsystem/osbs-client" -> "containerbuildsystem/koji-containerbuild"
+"projectatomic/ContainerApplicationGenericLabels" -> "projectatomic/atomicapp"
+"thoth-station/jupyterlab-requirements" -> "thoth-station/jupyter-nbrequirements"
+"projectatomic/atomicapp" -> "projectatomic/nulecule-library"
+"projectatomic/atomicapp" -> "projectatomic/nulecule"
+"projectatomic/atomicapp" -> "redhat-developer/opencompose"
+"projectatomic/atomicapp" -> "kbsingh/cccp-index"
+"projectatomic/atomicapp" -> "containerbuildsystem/atomic-reactor"
+"projectatomic/atomicapp" -> "projectatomic/ContainerApplicationGenericLabels"
+"NetworkManager/NetworkManager" -> "GNOME/network-manager-applet"
+"linux-audit/audit-documentation" -> "linux-audit/audit-kernel"
+"linux-audit/audit-documentation" -> "linux-audit/audit-userspace"
+"linux-audit/audit-documentation" -> "linux-audit/audit-testsuite"
+"dburgener/cascade" -> "SELinuxProject/selint"
+"projectatomic/nulecule-library" -> "projectatomic/atomicapp"
+"mmsrubar/MAT-sbirka-prikladu" -> "marektamaskovic/strace2seccomp"
+"rpm-software-management/dnf5" -> "rpm-software-management/libdnf"
+"rpm-software-management/dnf5" -> "rpm-software-management/dnf"
+"rpm-software-management/dnf5" -> "rpm-software-management/dnf-plugins-core"
+"rpm-software-management/dnf5" -> "rpm-software-management/rpm"
+"FedoraQt/MediaWriter" -> "rpm-software-management/dnf"
+"FedoraQt/MediaWriter" -> "rpm-software-management/dnf5"
+"FedoraQt/MediaWriter" -> "fedora-cloud/Fedora-Dockerfiles"
+"FedoraQt/MediaWriter" -> "lmacken/liveusb-creator"
+"FedoraQt/MediaWriter" -> "flatpak/flatpak" ["e"=1]
+"FedoraQt/MediaWriter" -> "ibus/ibus" ["e"=1]
+"FedoraQt/MediaWriter" -> "weldr/lorax"
+"FedoraQt/MediaWriter" -> "WhitewaterFoundry/Fedora-Remix-for-WSL" ["e"=1]
+"linux-audit/audit-kernel" -> "linux-audit/audit-userspace"
+"linux-audit/audit-kernel" -> "linux-audit/audit-documentation"
+"linux-audit/audit-kernel" -> "linux-audit/audit-testsuite"
+"linux-audit/audit-userspace" -> "linux-audit/audit-kernel"
+"linux-audit/audit-userspace" -> "linux-audit/audit-documentation"
+"linux-audit/audit-userspace" -> "Neo23x0/auditd" ["e"=1]
+"linux-audit/audit-userspace" -> "bfuzzy/auditd-attack" ["e"=1]
+"linux-audit/audit-userspace" -> "stevegrubb/audit-explorer"
+"linux-audit/audit-userspace" -> "slackhq/go-audit" ["e"=1]
+"linux-audit/audit-userspace" -> "OwlCyberDefense/refpolicy"
+"linux-audit/audit-userspace" -> "EBWi11/AgentSmith-HIDS" ["e"=1]
+"linux-audit/audit-userspace" -> "SELinuxProject/selinux-notebook"
+"linux-audit/audit-userspace" -> "SELinuxProject/selinux"
+"fedora-copr/copr" -> "release-engineering/dist-git"
+"fedora-copr/copr" -> "packit/specfile"
+"fedora-copr/copr" -> "packit/packit"
+"projectatomic/vagrant-service-manager" -> "projectatomic/adb-utils"
+"projectatomic/adb-utils" -> "projectatomic/vagrant-service-manager"
+"projectatomic/adb-utils" -> "chouseknecht/minishift-up-role"
+"redhat-developer/rpm-packaging-guide" -> "rpm-software-management/mock"
+"redhat-developer/rpm-packaging-guide" -> "fedora-infra/bodhi"
+"redhat-developer/rpm-packaging-guide" -> "rpm-software-management/rpmlint"
+"rpm-software-management/mock" -> "rpm-software-management/tito"
+"rpm-software-management/mock" -> "release-engineering/dist-git"
+"rpm-software-management/mock" -> "fedora-copr/copr"
+"rpm-software-management/mock" -> "rpm-software-management/rpmlint"
+"rpm-software-management/mock" -> "redhat-developer/rpm-packaging-guide"
+"rpm-software-management/mock" -> "weldr/lorax"
+"rpm-software-management/mock" -> "rpm-software-management/rpm"
+"rpm-software-management/mock" -> "pykickstart/pykickstart"
+"rpm-software-management/mock" -> "dracutdevs/dracut" ["e"=1]
+"rpm-software-management/mock" -> "rpminspect/rpminspect"
+"rpm-software-management/mock" -> "rhinstaller/anaconda"
+"rpm-software-management/mock" -> "fedora-python/pyp2rpm"
+"rpm-software-management/mock" -> "fedora-infra/bodhi"
+"SELinuxProject/selinux-kernel" -> "SELinuxProject/selinux-testsuite"
+"SELinuxProject/selinux-kernel" -> "SELinuxProject/cil"
+"SELinuxProject/selinux-kernel" -> "SELinuxProject/setools"
+"SELinuxProject/selinux-kernel" -> "SELinuxProject/refpolicy"
+"SELinuxProject/selinux-kernel" -> "SELinuxProject/selinux"
+"osbuild/cockpit-composer" -> "osbuild/image-builder-crc"
+"osbuild/cockpit-composer" -> "packit/packit.dev"
+"rpm-software-management/librepo" -> "rpm-software-management/hawkey"
+"rpm-software-management/librepo" -> "rpm-software-management/libcomps"
+"CentOS/container-index" -> "CentOS/container-pipeline-service"
+"CentOS/container-index" -> "projectatomic/vagrant-service-manager"
+"CentOS/container-pipeline-service" -> "CentOS/container-index"
+"skozina/cda-slides" -> "marektamaskovic/strace2seccomp"
+"redhat-developer/opencompose" -> "redhat-developer/henge"
+"redhat-developer/opencompose" -> "projectatomic/atomicapp"
+"fedora-infra/anitya" ["l"="-17.526,-2.819"]
+"fedora-infra/fedmsg" ["l"="-17.559,-2.855"]
+"fedora-infra/bodhi" ["l"="-17.548,-2.805"]
+"fedora-infra/the-new-hotness" ["l"="-17.515,-2.853"]
+"fedora-infra/fedora-packages" ["l"="-17.545,-2.838"]
+"rpm-software-management/rpmlint" ["l"="-17.532,-2.773"]
+"fedora-copr/copr" ["l"="-17.475,-2.781"]
+"osbuild/osbuild" ["l"="-17.505,-2.669"]
+"osbuild/osbuild-composer" ["l"="-17.482,-2.685"]
+"osbuild/image-builder-crc" ["l"="-17.477,-2.658"]
+"osbuild/cockpit-composer" ["l"="-17.468,-2.635"]
+"coreos/bootupd" ["l"="-16.924,-2.831"]
+"osbuild/bootc-image-builder" ["l"="-17.003,-2.855"]
+"weldr/lorax" ["l"="-17.536,-2.699"]
+"SELinuxProject/refpolicy" ["l"="-17.553,-2.547"]
+"SELinuxProject/setools" ["l"="-17.521,-2.536"]
+"SELinuxProject/selinux" ["l"="-17.566,-2.569"]
+"SELinuxProject/selinux-notebook" ["l"="-17.543,-2.528"]
+"OwlCyberDefense/refpolicy" ["l"="-17.587,-2.576"]
+"SELinuxProject/selinux-kernel" ["l"="-17.532,-2.552"]
+"fedora-selinux/selinux-policy" ["l"="-17.549,-2.594"]
+"SELinuxProject/selinux-testsuite" ["l"="-17.515,-2.557"]
+"SELinuxProject/cil" ["l"="-17.528,-2.569"]
+"containers/container-selinux" ["l"="-17.577,-2.535"]
+"clalancette/oz" ["l"="-17.589,-2.959"]
+"redhat-imaging/imagefactory" ["l"="-17.616,-2.969"]
+"SELinuxProject/selint" ["l"="-17.501,-2.509"]
+"containers/udica" ["l"="-17.563,-2.513"]
+"RedHatDemos/SecurityDemos" ["l"="10.589,-11.464"]
+"coreos/fedora-coreos-tracker" ["l"="-16.881,-2.837"]
+"openshift/hive" ["l"="10.428,-11.414"]
+"containers/oci-seccomp-bpf-hook" ["l"="8.022,-8.699"]
+"stratis-storage/stratisd" ["l"="-14.878,-0.889"]
+"linux-system-roles/selinux" ["l"="8.546,-11.932"]
+"kubernetes-sigs/security-profiles-operator" ["l"="7.574,-8.981"]
+"coreos/fedora-coreos-config" ["l"="-16.867,-2.853"]
+"KNBH/KNBH" ["l"="-17.637,-2.407"]
+"davidbolvansky/TINZbierkaPrikladov" ["l"="-17.637,-2.387"]
+"packit/packit" ["l"="-17.448,-2.828"]
+"packit/ogr" ["l"="-17.421,-2.907"]
+"packit/packit-service" ["l"="-17.421,-2.877"]
+"packit/sandcastle" ["l"="-17.427,-2.865"]
+"fedora-cloud/Fedora-Dockerfiles" ["l"="-17.613,-2.917"]
+"6jx/6jx" ["l"="-17.592,-2.925"]
+"rylan-justice/cessation" ["l"="-17.637,-2.921"]
+"rylan-justice/riddance" ["l"="-17.63,-2.9"]
+"sclorg/rhscl-dockerfiles" ["l"="-17.655,-2.908"]
+"containerbuildsystem/atomic-reactor" ["l"="-17.592,-2.995"]
+"fedora-cloud/docker-brew-fedora" ["l"="-49.506,7.702"]
+"containerbuildsystem/osbs-client" ["l"="-17.559,-2.971"]
+"projectatomic/atomic-site" ["l"="-17.64,-2.948"]
+"projectatomic/adb-atomic-developer-bundle" ["l"="-17.665,-2.992"]
+"projectatomic/atomic" ["l"="-17.64,-2.986"]
+"developer-portal/content" ["l"="-17.604,-2.839"]
+"fedora-infra/fedora-messaging" ["l"="-17.572,-2.832"]
+"redhat-developer/rpm-packaging-guide" ["l"="-17.528,-2.795"]
+"mairin/selinux-coloring-book" ["l"="-17.504,-2.45"]
+"fedoradesign/coloringbook-containers" ["l"="-17.499,-2.413"]
+"mairin/coloringbook-container-commandos" ["l"="-17.474,-2.428"]
+"thoth-station/core" ["l"="-17.368,-2.965"]
+"thoth-station/storages" ["l"="-17.352,-2.952"]
+"thoth-station/adviser" ["l"="-17.365,-2.952"]
+"thoth-station/thamos" ["l"="-17.358,-2.968"]
+"thoth-station/kebechet" ["l"="-17.38,-2.951"]
+"thoth-station/glyph" ["l"="-17.346,-2.961"]
+"thoth-station/thoth-application" ["l"="-17.375,-2.982"]
+"GiorgosKarantonis/Github-Issues-Classifier" ["l"="-17.382,-2.961"]
+"rpm-software-management/dnf-plugins-core" ["l"="-17.487,-2.729"]
+"rpm-software-management/dnf-plugins-extras" ["l"="-17.47,-2.747"]
+"rpm-software-management/libdnf" ["l"="-17.499,-2.71"]
+"rpm-software-management/libcomps" ["l"="-17.463,-2.699"]
+"rpm-software-management/ci-dnf-stack" ["l"="-17.447,-2.733"]
+"Pagure/pagure" ["l"="-17.543,-2.897"]
+"user-cont/conu" ["l"="-17.48,-2.954"]
+"user-cont/colin" ["l"="-17.505,-2.988"]
+"user-cont/release-bot" ["l"="-17.44,-2.94"]
+"teemtee/fmf" ["l"="-17.471,-2.927"]
+"fedora-modularity/meta-test-family" ["l"="-17.463,-2.947"]
+"OwlCyberDefense/setools3" ["l"="-17.657,-2.515"]
+"OwlCyberDefense/setools" ["l"="-17.638,-2.539"]
+"openSUSE/libsolv" ["l"="-17.47,-2.717"]
+"Cropi/usbguard-notifier" ["l"="-17.637,-2.436"]
+"marektamaskovic/strace2seccomp" ["l"="-17.661,-2.409"]
+"packit/deployment" ["l"="-17.409,-2.866"]
+"packit/dashboard" ["l"="-17.397,-2.879"]
+"thoth-station/jupyter-nbrequirements" ["l"="-17.331,-2.947"]
+"thoth-station/jupyterlab-requirements" ["l"="-17.311,-2.954"]
+"skozina/cda-slides" ["l"="-17.667,-2.39"]
+"linux-audit/audit-userspace" ["l"="-17.61,-2.559"]
+"seccomp/libseccomp" ["l"="8.872,-8.279"]
+"rpm-software-management/rpm" ["l"="-17.511,-2.734"]
+"USBGuard/usbguard" ["l"="-17.603,-2.498"]
+"osbuild/image-builder-frontend" ["l"="-17.451,-2.665"]
+"thoth-station/micropipenv" ["l"="-17.363,-2.934"]
+"thoth-station/invectio" ["l"="-17.338,-2.921"]
+"projectatomic/atomic-system-containers" ["l"="-17.66,-3.022"]
+"projectatomic/nulecule" ["l"="-17.621,-3.017"]
+"coreos/rpm-ostree" ["l"="-16.944,-2.821"]
+"projectatomic/atomicapp" ["l"="-17.606,-3.032"]
+"projectatomic/container-best-practices" ["l"="-17.701,-2.995"]
+"CentOS-PaaS-SIG/linchpin" ["l"="10.533,-11.161"]
+"openshift/ansible-service-broker" ["l"="8.07,-13.863"]
+"rpm-software-management/librepo" ["l"="-17.436,-2.696"]
+"rpm-software-management/hawkey" ["l"="-17.424,-2.716"]
+"rpm-software-management/dnf" ["l"="-17.543,-2.744"]
+"openSUSE/libzypp" ["l"="-17.407,-2.699"]
+"openSUSE/zypper" ["l"="35.885,19.184"]
+"fedora-selinux/selinux-policy-contrib" ["l"="-17.512,-2.596"]
+"fedora-selinux/selinux" ["l"="-17.529,-2.61"]
+"pykickstart/pykickstart" ["l"="-17.57,-2.727"]
+"rhinstaller/anaconda" ["l"="-17.555,-2.709"]
+"TresysTechnology/refpolicy-contrib" ["l"="-17.6,-2.601"]
+"google/ukip" ["l"="-17.603,-2.45"]
+"rpm-software-management/dnf-plugin-system-upgrade" ["l"="-17.429,-2.748"]
+"rpm-software-management/tito" ["l"="-17.497,-2.794"]
+"release-engineering/dist-git" ["l"="-17.472,-2.802"]
+"rpm-software-management/mock" ["l"="-17.514,-2.763"]
+"projectatomic/dockerfile_lint" ["l"="-17.753,-3.01"]
+"aweiteka/dockerfile_checker" ["l"="-17.779,-3.02"]
+"projectatomic/vagrant-service-manager" ["l"="-17.688,-3.034"]
+"projectatomic/adb-utils" ["l"="-17.689,-3.017"]
+"kbsingh/cccp-index" ["l"="-17.596,-3.016"]
+"containerbuildsystem/koji-containerbuild" ["l"="-17.56,-2.991"]
+"seandroid-analytics/seal" ["l"="-17.67,-2.53"]
+"seandroid-analytics/selint" ["l"="-17.668,-2.546"]
+"dburgener/cascade" ["l"="-17.477,-2.498"]
+"teemtee/tmt" ["l"="-17.471,-2.89"]
+"rpminspect/rpminspect" ["l"="-17.485,-2.838"]
+"neoave/mrack" ["l"="-17.454,-2.904"]
+"AICoE/aicoe-ci" ["l"="-17.366,-3.005"]
+"livecd-tools/livecd-tools" ["l"="-17.555,-2.668"]
+"rhinstaller/initial-setup" ["l"="-17.57,-2.683"]
+"rhinstaller/kickstart-tests" ["l"="-17.535,-2.675"]
+"rhinstaller/hello-world-anaconda-addon" ["l"="-17.596,-2.714"]
+"dracutdevs/dracut" ["l"="-16.91,-2.596"]
+"rhinstaller/anaconda-webui" ["l"="-17.584,-2.702"]
+"ostreedev/ostree" ["l"="-16.93,-2.766"]
+"redhat-performance/tuned" ["l"="6.893,-6.112"]
+"firewalld/firewalld" ["l"="-17.603,-2.669"]
+"NetworkManager/NetworkManager" ["l"="-17.675,-2.672"]
+"linux-audit/audit-documentation" ["l"="-17.63,-2.603"]
+"sddm/sddm" ["l"="-12.868,-3.441"]
+"iputils/iputils" ["l"="6.43,-4.989"]
+"virt-manager/virt-manager" ["l"="9.217,-8.959"]
+"linux-application-whitelisting/fapolicyd" ["l"="-17.645,-2.468"]
+"latchset/tang" ["l"="-18.826,-42.989"]
+"netblue30/firejail" ["l"="-53.276,9.821"]
+"latchset/clevis" ["l"="-18.794,-42.986"]
+"GrapheneOS/linux-hardened" ["l"="-52.726,9.671"]
+"subgraph/oz" ["l"="10.242,-9.534"]
+"corna/me_cleaner" ["l"="-40.49,-33.98"]
+"Rohde-Schwarz/TrustedGRUB2" ["l"="-18.863,-42.927"]
+"containers/bubblewrap" ["l"="-16.939,-2.711"]
+"containerbuildsystem/dockerfile-parse" ["l"="-17.543,-3.002"]
+"containerbuildsystem/osbs-box" ["l"="-17.538,-2.986"]
+"rpm-software-management/dnf5" ["l"="-17.531,-2.726"]
+"rpm-software-management/yum" ["l"="-17.491,-2.757"]
+"flatpak/flatpak" ["l"="-14.204,-0.819"]
+"flathub/flathub" ["l"="-14.138,-0.683"]
+"projectatomic/nulecule-library" ["l"="-17.609,-3.049"]
+"projectatomic/ContainerApplicationGenericLabels" ["l"="-17.626,-3.049"]
+"fedora-python/pyp2rpm" ["l"="-17.436,-2.777"]
+"fedora-python/portingdb" ["l"="-17.4,-2.782"]
+"fedora-infra/datagrepper" ["l"="-17.569,-2.882"]
+"fedora-infra/python-fedora" ["l"="-17.583,-2.867"]
+"developer-portal/website" ["l"="-17.63,-2.846"]
+"redhat-developer/opencompose" ["l"="-17.593,-3.064"]
+"GNOME/network-manager-applet" ["l"="-17.705,-2.673"]
+"linux-audit/audit-kernel" ["l"="-17.641,-2.58"]
+"linux-audit/audit-testsuite" ["l"="-17.66,-2.6"]
+"mmsrubar/MAT-sbirka-prikladu" ["l"="-17.682,-2.399"]
+"FedoraQt/MediaWriter" ["l"="-17.594,-2.782"]
+"lmacken/liveusb-creator" ["l"="-17.644,-2.788"]
+"ibus/ibus" ["l"="21.112,2.249"]
+"WhitewaterFoundry/Fedora-Remix-for-WSL" ["l"="-49.357,7.677"]
+"Neo23x0/auditd" ["l"="-42.513,-33.186"]
+"bfuzzy/auditd-attack" ["l"="-42.608,-33.154"]
+"stevegrubb/audit-explorer" ["l"="-17.648,-2.559"]
+"slackhq/go-audit" ["l"="-42.776,-33.238"]
+"EBWi11/AgentSmith-HIDS" ["l"="-44.899,-29.629"]
+"packit/specfile" ["l"="-17.444,-2.798"]
+"chouseknecht/minishift-up-role" ["l"="-17.709,-3.033"]
+"packit/packit.dev" ["l"="-17.447,-2.621"]
+"CentOS/container-index" ["l"="-17.708,-3.07"]
+"CentOS/container-pipeline-service" ["l"="-17.719,-3.09"]
+"redhat-developer/henge" ["l"="-17.589,-3.09"]
+}
