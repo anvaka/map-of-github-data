@@ -33,6 +33,9 @@ digraph G {
 "flashrom/flashrom" -> "LongSoft/IFRExtractor-RS"
 "flashrom/flashrom" -> "bigbigmdm/IMSProg"
 "flashrom/flashrom" -> "binarly-io/efiXplorer"
+"system76/firmware-open" -> "coreboot/coreboot" ["e"=1]
+"system76/firmware-open" -> "linuxboot/linuxboot" ["e"=1]
+"integralfx/MemTestHelper" -> "BoringBoredom/UEFI-Editor" ["e"=1]
 "LongSoft/UEFITool" -> "chipsec/chipsec"
 "LongSoft/UEFITool" -> "platomav/MEAnalyzer"
 "LongSoft/UEFITool" -> "theopolis/uefi-firmware-parser"
@@ -54,6 +57,7 @@ digraph G {
 "rhboot/efibootmgr" -> "LongSoft/CrScreenshotDxe"
 "rhboot/efibootmgr" -> "dell/dkms"
 "rhboot/efibootmgr" -> "fpmurphy/UEFI-Utilities-2019"
+"facebook/openr" -> "facebook/openbmc" ["e"=1]
 "openstack-archive/pyghmi" -> "kontron/python-ipmi"
 "ipmitool/ipmitool" -> "openbmc/openbmc"
 "ipmitool/ipmitool" -> "openbmc/docs"
@@ -70,7 +74,11 @@ digraph G {
 "ipmitool/ipmitool" -> "kasuganosoras/SuperMicro-IPMI-LicenseGenerator" ["e"=1]
 "ipmitool/ipmitool" -> "cobbler/cobbler" ["e"=1]
 "ipmitool/ipmitool" -> "tianocore/tianocore.github.io"
+"ipxe/ipxe" -> "tianocore/edk2" ["e"=1]
+"ipxe/ipxe" -> "rhboot/shim" ["e"=1]
+"ipxe/ipxe" -> "coreboot/coreboot" ["e"=1]
 "kontron/python-ipmi" -> "openstack-archive/pyghmi"
+"psal/anonymouth" -> "corna/me_cleaner" ["e"=1]
 "setarcos/ch341prog" -> "command-tab/ch341eeprom"
 "setarcos/ch341prog" -> "boseji/CH341-Store"
 "setarcos/ch341prog" -> "stefanct/ch341eepromtool"
@@ -84,6 +92,11 @@ digraph G {
 "setarcos/ch341prog" -> "pepe2k/u-boot_mod" ["e"=1]
 "setarcos/ch341prog" -> "bigbigmdm/IMSProg"
 "setarcos/ch341prog" -> "McMCCRU/SNANDer"
+"ARM-software/arm-trusted-firmware" -> "tianocore/edk2" ["e"=1]
+"speed47/spectre-meltdown-checker" -> "corna/me_cleaner" ["e"=1]
+"Battelle/movfuscator" -> "chip-red-pill/MicrocodeDecryptor" ["e"=1]
+"isec-tugraz/meltdown" -> "corna/me_cleaner" ["e"=1]
+"pepe2k/u-boot_mod" -> "setarcos/ch341prog" ["e"=1]
 "chipsec/chipsec" -> "LongSoft/UEFITool"
 "chipsec/chipsec" -> "theopolis/uefi-firmware-parser"
 "chipsec/chipsec" -> "platomav/MEAnalyzer"
@@ -129,6 +142,8 @@ digraph G {
 "platomav/CPUMicrocodes" -> "binarly-io/efiXplorer"
 "platomav/CPUMicrocodes" -> "datasone/grub-mod-setup_var"
 "platomav/CPUMicrocodes" -> "skochinsky/me-tools"
+"dfd-tud/deda" -> "corna/me_cleaner" ["e"=1]
+"dfd-tud/deda" -> "linuxboot/heads" ["e"=1]
 "PSPReverse/PSPTool" -> "theopolis/uefi-firmware-parser"
 "PSPReverse/PSPTool" -> "PSPReverse/PSPEmu"
 "PSPReverse/PSPTool" -> "ptresearch/IntelTXE-PoC"
@@ -144,6 +159,7 @@ digraph G {
 "PSPReverse/PSPTool" -> "PSPReverse/amd-sp-glitch"
 "PSPReverse/PSPTool" -> "ptresearch/unME11"
 "PSPReverse/PSPTool" -> "binarly-io/efiXplorer"
+"tomaspinho/rtl8821ce" -> "dell/dkms" ["e"=1]
 "intel/Intel-Linux-Processor-Microcode-Data-Files" -> "platomav/CPUMicrocodes"
 "intel/Intel-Linux-Processor-Microcode-Data-Files" -> "platomav/MCExtractor"
 "intel/Intel-Linux-Processor-Microcode-Data-Files" -> "intel/FSP"
@@ -159,6 +175,10 @@ digraph G {
 "intel/Intel-Linux-Processor-Microcode-Data-Files" -> "JamesAmiTw/ru-uefi"
 "intel/Intel-Linux-Processor-Microcode-Data-Files" -> "acpica/acpica"
 "intel/Intel-Linux-Processor-Microcode-Data-Files" -> "intel/cryptography-primitives" ["e"=1]
+"Cr4sh/s6_pcie_microblaze" -> "Cr4sh/SmmBackdoorNg" ["e"=1]
+"Cr4sh/s6_pcie_microblaze" -> "Cr4sh/SmmBackdoor" ["e"=1]
+"Cr4sh/s6_pcie_microblaze" -> "theopolis/uefi-firmware-parser" ["e"=1]
+"Cr4sh/s6_pcie_microblaze" -> "binarly-io/efiXplorer" ["e"=1]
 "dell/dellemc-openmanage-ansible-modules" -> "dell/redfish-ansible-module"
 "dell/dellemc-openmanage-ansible-modules" -> "dell/iDRAC-Redfish-Scripting"
 "dell/dellemc-openmanage-ansible-modules" -> "dell/omsdk"
@@ -170,9 +190,17 @@ digraph G {
 "dell/dellemc-openmanage-ansible-modules" -> "ansible-collections/community.vmware" ["e"=1]
 "dell/dellemc-openmanage-ansible-modules" -> "dell/OpenManage-Enterprise"
 "gerdesi/NVIDIA_P106" -> "iiiyx/p106-100-p104-100"
+"nsacyber/Hardware-and-Firmware-Security-Guidance" -> "PreOS-Security/awesome-firmware-security" ["e"=1]
+"xoreaxeaxeax/rosenbridge" -> "corna/me_cleaner" ["e"=1]
+"oreboot/oreboot" -> "linuxboot/heads" ["e"=1]
+"oreboot/oreboot" -> "linuxboot/linuxboot" ["e"=1]
+"oreboot/oreboot" -> "coreboot/coreboot" ["e"=1]
+"ChrisTheCoolHut/Firmware_Slap" -> "al3xtjames/ghidra-firmware-utils" ["e"=1]
+"erpalma/throttled" -> "corna/me_cleaner" ["e"=1]
 "LongSoft/InsydeImageExtractor" -> "theopolis/uefi-spider"
 "LongSoft/InsydeImageExtractor" -> "liho98/lenovo-bios-logo-extraction-guide"
 "LongSoft/InsydeImageExtractor" -> "ISpillMyDrink/UEFI-Repair-Guide"
+"kitsunyan/intel-undervolt" -> "digmorepaka/thinkpad-firmware-patches" ["e"=1]
 "theopolis/uefi-firmware-parser" -> "yeggor/uefi_retool"
 "theopolis/uefi-firmware-parser" -> "snare/ida-efiutils"
 "theopolis/uefi-firmware-parser" -> "jethrogb/uefireverse"
@@ -188,6 +216,7 @@ digraph G {
 "theopolis/uefi-firmware-parser" -> "LongSoft/CrScreenshotDxe"
 "theopolis/uefi-firmware-parser" -> "platomav/MCExtractor"
 "theopolis/uefi-firmware-parser" -> "andreiw/UefiToolsPkg"
+"redhat-performance/badfish" -> "DMTF/Redfish-Tacklebox" ["e"=1]
 "linuxboot/linuxboot" -> "linuxboot/book"
 "linuxboot/linuxboot" -> "u-root/u-root" ["e"=1]
 "linuxboot/linuxboot" -> "linuxboot/heads"
@@ -220,6 +249,15 @@ digraph G {
 "coreboot/coreboot" -> "hamishcoleman/thinkpad-ec"
 "RossMeikleham/UEFIBoy" -> "andreiw/tinycc"
 "RossMeikleham/UEFIBoy" -> "rinusser/UEFIStarter"
+"carmaa/inception" -> "Cr4sh/SmmBackdoor" ["e"=1]
+"carmaa/inception" -> "chipsec/chipsec" ["e"=1]
+"carmaa/inception" -> "advanced-threat-research/firmware-security-training" ["e"=1]
+"ValdikSS/Super-UEFIinSecureBoot-Disk" -> "andreiw/UefiToolsPkg" ["e"=1]
+"ValdikSS/Super-UEFIinSecureBoot-Disk" -> "pbatard/EfiFs" ["e"=1]
+"ValdikSS/Super-UEFIinSecureBoot-Disk" -> "theopolis/uefi-firmware-parser" ["e"=1]
+"ValdikSS/Super-UEFIinSecureBoot-Disk" -> "microsoft/mu_plus" ["e"=1]
+"ValdikSS/Super-UEFIinSecureBoot-Disk" -> "jethrogb/uefireverse" ["e"=1]
+"emsec/hal" -> "osresearch/spispy" ["e"=1]
 "das-labor/neopg" -> "9elements/converged-security-suite"
 "al3xtjames/ghidra-firmware-utils" -> "DSecurity/efiSeek"
 "al3xtjames/ghidra-firmware-utils" -> "yeggor/uefi_retool"
@@ -324,6 +362,7 @@ digraph G {
 "Intel-BMC/openbmc" -> "openbmc/bmcweb"
 "Intel-BMC/openbmc" -> "Nuvoton-Israel/openbmc"
 "Intel-BMC/openbmc" -> "facebook/openbmc"
+"thedalles77/USB_Laptop_Keyboard_Controller" -> "iam4722202468/ThinkpadBattery" ["e"=1]
 "REhints/Publications" -> "flothrone/bootguard"
 "REhints/Publications" -> "advanced-threat-research/efi-whitelist"
 "REhints/Publications" -> "advanced-threat-research/firmware-security-training"
@@ -383,6 +422,10 @@ digraph G {
 "yeggor/uefi_retool" -> "Cr4sh/smram_parse"
 "theopolis/uefi-spider" -> "theopolis/uefi-firmware-samples"
 "HewlettPackard/nagios-plugins-hpilo" -> "HewlettPackard/nagios-hpeilo-restful-extension"
+"andreiw/RaspberryPiPkg" -> "tianocore/edk2-platforms" ["e"=1]
+"andreiw/RaspberryPiPkg" -> "pbatard/EfiFs" ["e"=1]
+"andreiw/RaspberryPiPkg" -> "tianocore/edk2-staging" ["e"=1]
+"andreiw/RaspberryPiPkg" -> "andreiw/UefiToolsPkg" ["e"=1]
 "lenovo/powershell-redfish-lenovo" -> "lenovo/python-redfish-lenovo"
 "datasone/grub-mod-setup_var" -> "datasone/setup_var.efi"
 "datasone/grub-mod-setup_var" -> "LongSoft/Universal-IFR-Extractor"
@@ -484,6 +527,7 @@ digraph G {
 "dell/csi-powerflex" -> "dell/csm-operator"
 "dell/ansible-powermax" -> "dell/ansible-unity"
 "dell/ansible-powermax" -> "dell/csi-powermax"
+"PreOS-Security/fwaudit" -> "embedi/meitools" ["e"=1]
 "openbmc/bmcweb" -> "openbmc/phosphor-dbus-interfaces"
 "openbmc/bmcweb" -> "openbmc/webui-vue"
 "openbmc/bmcweb" -> "openbmc/phosphor-host-ipmid"
@@ -523,6 +567,7 @@ digraph G {
 "sebmalek/t430-macos-efi" -> "luangrillo/t430-macos"
 "sebmalek/t430-macos-efi" -> "ThiagoSchetini/macosx-thinkpad-t430"
 "sebmalek/t430-macos-efi" -> "ConnerLambdaAccount/T430-EFI"
+"u-root/u-bmc" -> "9elements/converged-security-suite" ["e"=1]
 "uefitech/resources" -> "fpmurphy/UEFI-Utilities-2019"
 "uefitech/resources" -> "fpmurphy/UEFI-Utilities"
 "uefitech/resources" -> "andreiw/UefiToolsPkg"
@@ -605,6 +650,7 @@ digraph G {
 "banhbaoxamlan/X230-Hackintosh" -> "Bizzaro/x230-osx"
 "banhbaoxamlan/X230-Hackintosh" -> "Koloses/x230-macOS-OpenCore"
 "banhbaoxamlan/X230-Hackintosh" -> "fivestrong/Hackintosh-X230i-macOS"
+"u-boot/u-boot" -> "tianocore/edk2" ["e"=1]
 "dell/ansible-unity" -> "dell/ansible-powerstore"
 "dell/ansible-unity" -> "dell/ansible-powermax"
 "dell/ansible-unity" -> "dell/csi-unity"
@@ -613,6 +659,9 @@ digraph G {
 "dell/ansible-powerstore" -> "dell/python-powerstore"
 "dell/ansible-powerstore" -> "dell/ansible-vplex"
 "dell/ansible-powerstore" -> "dell/terraform-provider-powerstore"
+"raspberrypi/rpi-eeprom" -> "tianocore/edk2-platforms" ["e"=1]
+"bobranten/Ext4Fsd" -> "LongSoft/UEFITool" ["e"=1]
+"edk2-porting/edk2-msm" -> "tianocore/edk2" ["e"=1]
 "binarly-io/efiXplorer" -> "yeggor/uefi_retool"
 "binarly-io/efiXplorer" -> "theopolis/uefi-firmware-parser"
 "binarly-io/efiXplorer" -> "can1357/NtRays" ["e"=1]
@@ -628,12 +677,22 @@ digraph G {
 "binarly-io/efiXplorer" -> "linuxboot/fiano"
 "binarly-io/efiXplorer" -> "gdbinit/EFISwissKnife"
 "binarly-io/efiXplorer" -> "gdbinit/efi_dxe_emulator"
+"GSDragoon/RadeonSoftwareSlimmer" -> "xCuri0/ReBarUEFI" ["e"=1]
+"grayhatacademy/ghidra_scripts" -> "al3xtjames/ghidra-firmware-utils" ["e"=1]
+"AllsafeCyberSecurity/awesome-ghidra" -> "al3xtjames/ghidra-firmware-utils" ["e"=1]
+"waynebonc/iDeviceLogAnalyzer-public" -> "MuertoGB/SMCTool" ["e"=1]
+"pyllyukko/user.js" -> "corna/me_cleaner" ["e"=1]
+"vmatare/thinkfan" -> "hamishcoleman/thinkpad-ec" ["e"=1]
+"astrelsky/Ghidra-Cpp-Class-Analyzer" -> "al3xtjames/ghidra-firmware-utils" ["e"=1]
 "mostav02/Remove_IntelME_FPT" -> "oood/How-to-Disable-Intel-ME-on-Intel-NUCs"
 "mostav02/Remove_IntelME_FPT" -> "ADLINK/bios-utility"
 "mostav02/Remove_IntelME_FPT" -> "BoringBoredom/UEFI-Editor"
 "mostav02/Remove_IntelME_FPT" -> "platomav/MEAnalyzer"
 "mostav02/Remove_IntelME_FPT" -> "LongSoft/IFRExtractor-RS"
 "mostav02/Remove_IntelME_FPT" -> "platomav/BIOSUtilities"
+"ivandavidov/minimal" -> "linuxboot/heads" ["e"=1]
+"AltraMayor/f3" -> "corna/me_cleaner" ["e"=1]
+"lavabit/magma" -> "corna/me_cleaner" ["e"=1]
 "acpica/acpica" -> "tianocore/edk2-platforms"
 "acpica/acpica" -> "managarm/lai" ["e"=1]
 "acpica/acpica" -> "microsoft/mu_plus"
@@ -683,6 +742,7 @@ digraph G {
 "n4ru/IVprep" -> "n4ru/1vyrain"
 "n4ru/IVprep" -> "n4ru/patched-bioses"
 "n4ru/IVprep" -> "hamishcoleman/thinkpad-ec"
+"leveldown-security/SVD-Loader-Ghidra" -> "al3xtjames/ghidra-firmware-utils" ["e"=1]
 "Cacodemon345/uefidoom" -> "a1ive/uefi-tetris"
 "BoringBoredom/UEFI-Editor" -> "datasone/setup_var.efi"
 "BoringBoredom/UEFI-Editor" -> "LongSoft/IFRExtractor-RS"
@@ -699,6 +759,8 @@ digraph G {
 "BoringBoredom/UEFI-Editor" -> "xCuri0/ReBarUEFI"
 "BoringBoredom/UEFI-Editor" -> "theopolis/uefi-firmware-parser"
 "BoringBoredom/UEFI-Editor" -> "LongSoft/Universal-IFR-Extractor"
+"chenall/grub4dos" -> "pbatard/EfiFs" ["e"=1]
+"chenall/grub4dos" -> "pbatard/UEFI-Shell" ["e"=1]
 "Koshak1013/HuananzhiX99_BIOS_mods" -> "miyconst/Mi899"
 "Koshak1013/HuananzhiX99_BIOS_mods" -> "markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh"
 "Koshak1013/HuananzhiX99_BIOS_mods" -> "xCuri0/ReBarUEFI"
@@ -728,7 +790,10 @@ digraph G {
 "pbatard/uefi-ntfs" -> "microsoft/mu_plus"
 "pbatard/uefi-ntfs" -> "pbatard/uefi-simple"
 "pbatard/uefi-ntfs" -> "Kostr/UEFI-Lessons"
+"virtio-win/kvm-guest-drivers-windows" -> "tianocore/edk2" ["e"=1]
 "coreos/grub" -> "rhboot/grub2"
+"pftf/RPi4" -> "tianocore/edk2-platforms" ["e"=1]
+"pftf/RPi4" -> "pbatard/EfiFs" ["e"=1]
 "zamaudio/intelmetool" -> "skochinsky/me-tools"
 "zamaudio/intelmetool" -> "IllegalArgument/Huffman11"
 "zamaudio/intelmetool" -> "kakaroto/MFSUtil"
@@ -755,6 +820,8 @@ digraph G {
 "verfasor/X230-Hackintosh" -> "Lunarixus/ThinkPadx230Catalina"
 "verfasor/X230-Hackintosh" -> "muhrizki1996/Hackintosh-Lenovo-ThinkPad-X230"
 "verfasor/X230-Hackintosh" -> "sebmalek/t430-macos-efi"
+"kagurazakakotori/ubmp-cn-code" -> "vinxue/UefiToolkitPkg" ["e"=1]
+"sj15712795029/bluetooth_stack" -> "Jieli-Tech/fw-AC63_BT_SDK" ["e"=1]
 "inflex/OpenBoardView" -> "piernov/OpenBoardView"
 "PSPReverse/PSPEmu" -> "PSPReverse/psp-docs"
 "PSPReverse/PSPEmu" -> "PSPReverse/amd-sp-glitch"
@@ -771,6 +838,7 @@ digraph G {
 "christian-kramer/JieLi-AC690X-Familiarization" -> "kagaimiq/jl-uboot-tool"
 "christian-kramer/JieLi-AC690X-Familiarization" -> "Jieli-Tech/fw-AC63_BT_SDK"
 "christian-kramer/JieLi-AC690X-Familiarization" -> "kagaimiq/jielie"
+"cseagle/blc" -> "Sentinel-One/brick" ["e"=1]
 "jussihi/SMM-Rootkit" -> "pRain1337/Hermes"
 "jussihi/SMM-Rootkit" -> "Cr4sh/SmmBackdoorNg"
 "jussihi/SMM-Rootkit" -> "pRain1337/plouton"
@@ -933,6 +1001,12 @@ digraph G {
 "vaginessa/InsydeH2O-extractor-2" -> "jbit/uninsyde"
 "BIOS-iEngineer/HUANANZHI-X99-TF" -> "BIOS-iEngineer/HUANANZHI-X99-TF-2021"
 "BIOS-iEngineer/HUANANZHI-X99-TF" -> "BIOS-iEngineer/HUANANZHI-X99-F8"
+"fwupd/fwupd" -> "coreboot/coreboot" ["e"=1]
+"fwupd/fwupd" -> "tianocore/edk2" ["e"=1]
+"fwupd/fwupd" -> "LongSoft/UEFITool" ["e"=1]
+"fwupd/fwupd" -> "corna/me_cleaner" ["e"=1]
+"hephaest0s/usbkill" -> "corna/me_cleaner" ["e"=1]
+"BoringBoredom/PC-Optimization-Hub" -> "BoringBoredom/UEFI-Editor" ["e"=1]
 "nofeletru/UsbAsp-flash" -> "YTEC-info/CH341A-Softwares"
 "nofeletru/UsbAsp-flash" -> "boseji/CH341-Store"
 "nofeletru/UsbAsp-flash" -> "bigbigmdm/IMSProg"
@@ -948,6 +1022,8 @@ digraph G {
 "nofeletru/UsbAsp-flash" -> "bbogush/nand_programmer"
 "nofeletru/UsbAsp-flash" -> "ZakKemble/AVRDUDESS" ["e"=1]
 "nofeletru/UsbAsp-flash" -> "OpenBoardView/OpenBoardView"
+"philipl/pifs" -> "corna/me_cleaner" ["e"=1]
+"sp00n/CoreCycler" -> "notfromstatefarm/nvflashk" ["e"=1]
 "Kostr/UEFI-Lessons" -> "andreiw/UefiToolsPkg"
 "Kostr/UEFI-Lessons" -> "zhenghuadai/uefi-programming"
 "Kostr/UEFI-Lessons" -> "fpmurphy/UEFI-Utilities-2019"
@@ -978,6 +1054,8 @@ digraph G {
 "rhboot/shim" -> "pbatard/uefi-ntfs"
 "rhboot/shim" -> "microsoft/mu_plus"
 "rhboot/shim" -> "tpm2-software/tpm2-tools" ["e"=1]
+"hirschmann/nbfc" -> "LongSoft/UEFITool" ["e"=1]
+"USBGuard/usbguard" -> "corna/me_cleaner" ["e"=1]
 "duszmox/ThinkPad-X1C4-macOS-OpenCore" -> "diepnt90/Thinkpad-X1-Carbon-4th-2016-macOS-Catalina-Hackintosh-Opencore"
 "duszmox/ThinkPad-X1C4-macOS-OpenCore" -> "lzjqsdd/Thinkpad-X1C4-Hackintosh"
 "facebook/openbmc" -> "openbmc/openbmc"
@@ -995,6 +1073,8 @@ digraph G {
 "facebook/openbmc" -> "openbmc/openbmc-test-automation"
 "facebook/openbmc" -> "facebook/openbmc-uboot"
 "facebook/openbmc" -> "openbmc/phosphor-host-ipmid"
+"simpleble/simpleble" -> "Kistler-Group/sdbus-cpp" ["e"=1]
+"rms-support-letter/rms-support-letter.github.io" -> "corna/me_cleaner" ["e"=1]
 "YTEC-info/CH341A-Softwares" -> "tomek-o/CH341A-tool"
 "YTEC-info/CH341A-Softwares" -> "nofeletru/UsbAsp-flash"
 "YTEC-info/CH341A-Softwares" -> "therealdreg/asprogrammer-dregmod"
@@ -1024,11 +1104,15 @@ digraph G {
 "gdbinit/firmware_vault" -> "flothrone/bootguard"
 "That-Guy-Jack/HP-ILO-Fan-Control" -> "kendallgoto/ilo4_unlock"
 "That-Guy-Jack/HP-ILO-Fan-Control" -> "alex3025/ilo-fans-controller"
+"domgetter/NCoC" -> "corna/me_cleaner" ["e"=1]
 "tandasat/HelloSmm" -> "tandasat/HelloIommuPkg"
 "HewlettPackard/python-ilorest-library-old" -> "HewlettPackard/python-ilorest-library"
 "HewlettPackard/python-ilorest-library-old" -> "HewlettPackard/python-redfish-utility"
 "HewlettPackard/python-ilorest-library-old" -> "HewlettPackard/chef-ilorest-cookbook"
 "HewlettPackard/python-ilorest-library-old" -> "HewlettPackard/nagios-hpeilo-restful-extension"
+"tuxera/ntfs-3g" -> "pbatard/uefi-ntfs" ["e"=1]
+"tuxera/ntfs-3g" -> "pbatard/ntfs-3g" ["e"=1]
+"tuxera/ntfs-3g" -> "pbatard/EfiFs" ["e"=1]
 "Cr4sh/SmmBackdoor" -> "Cr4sh/PeiBackdoor"
 "Cr4sh/SmmBackdoor" -> "Cr4sh/SmmBackdoorNg"
 "Cr4sh/SmmBackdoor" -> "jethrogb/uefireverse"
@@ -1046,6 +1130,8 @@ digraph G {
 "Cr4sh/SmmBackdoor" -> "quarkslab/dreamboot" ["e"=1]
 "binarly-io/Vulnerability-REsearch" -> "river-li/awesome-uefi-security"
 "binarly-io/Vulnerability-REsearch" -> "tandasat/SmmExploit"
+"facebook/fboss" -> "facebook/openbmc" ["e"=1]
+"AsuharietYgvar/AppleNeuralHash2ONNX" -> "chip-red-pill/MicrocodeDecryptor" ["e"=1]
 "bacher09/pwgen-for-bios" -> "let-def/insydious"
 "bacher09/pwgen-for-bios" -> "dogbert/bios-pwgen"
 "bacher09/pwgen-for-bios" -> "platomav/BIOSUtilities"
@@ -1061,6 +1147,8 @@ digraph G {
 "bacher09/pwgen-for-bios" -> "A-syncritus/bios-pw"
 "bacher09/pwgen-for-bios" -> "pk4tech/Dell-8CF8-Bios-Unlocker"
 "bacher09/pwgen-for-bios" -> "bibanon/Coreboot-ThinkPads"
+"corkami/docs" -> "advanced-threat-research/firmware-security-training" ["e"=1]
+"bonzini/qboot" -> "coreboot/seabios" ["e"=1]
 "opencomputeproject/OCP-OSF-Aptio_Community_Edition" -> "opencomputeproject/OCP-HM-MegaRAC_Community_Edition"
 "can1357/haruspex" -> "chip-red-pill/uCodeDisasm"
 "can1357/haruspex" -> "isec-tugraz/msrevelio" ["e"=1]
@@ -1068,6 +1156,9 @@ digraph G {
 "open-power/petitboot" -> "open-power/skiboot"
 "open-power/petitboot" -> "open-power/op-build"
 "open-power/petitboot" -> "glevand/petitboot--buildroot"
+"zackelia/ghidra-dark" -> "al3xtjames/ghidra-firmware-utils" ["e"=1]
+"xoreaxeaxeax/sinkhole" -> "ptresearch/unME11" ["e"=1]
+"xoreaxeaxeax/sinkhole" -> "Cr4sh/ThinkPwn" ["e"=1]
 "HewlettPackard/chef-provisioning-oneview" -> "HewlettPackard/oneview-chef"
 "pbatard/UEFI-Shell" -> "pbatard/uefi-ntfs"
 "pbatard/UEFI-Shell" -> "pbatard/EfiFs"
@@ -1145,11 +1236,14 @@ digraph G {
 "dell/helm-charts" -> "dell/common-github-actions"
 "dell/common-github-actions" -> "dell/karavi-topology"
 "dell/common-github-actions" -> "dell/karavi-metrics-powerflex"
+"netblue30/firejail" -> "corna/me_cleaner" ["e"=1]
 "kendallgoto/ilo4_unlock" -> "alex3025/ilo-fans-controller"
 "kendallgoto/ilo4_unlock" -> "That-Guy-Jack/HP-ILO-Fan-Control"
 "kendallgoto/ilo4_unlock" -> "DavidIlie/ilo4-fan-controller"
 "kendallgoto/ilo4_unlock" -> "airbus-seclab/ilo4_toolbox"
 "kendallgoto/ilo4_unlock" -> "seveas/python-hpilo"
+"10se1ucgo/DisableWinTracking" -> "corna/me_cleaner" ["e"=1]
+"can1357/NtRays" -> "binarly-io/efiXplorer" ["e"=1]
 "openbmc/openbmc" -> "openbmc/docs"
 "openbmc/openbmc" -> "facebook/openbmc"
 "openbmc/openbmc" -> "ipmitool/ipmitool"
@@ -1165,10 +1259,24 @@ digraph G {
 "openbmc/openbmc" -> "coreboot/coreboot"
 "openbmc/openbmc" -> "openbmc/phosphor-dbus-interfaces"
 "openbmc/openbmc" -> "DMTF/Redfishtool"
+"ionescu007/VisualUefi" -> "jethrogb/uefireverse" ["e"=1]
+"ionescu007/VisualUefi" -> "Cr4sh/SmmBackdoor" ["e"=1]
+"ionescu007/VisualUefi" -> "LongSoft/CrScreenshotDxe" ["e"=1]
+"ionescu007/VisualUefi" -> "binarly-io/efiXplorer" ["e"=1]
 "dell/dkms" -> "rhboot/efibootmgr"
 "dell/dkms" -> "rpm-software-management/mock" ["e"=1]
+"u-root/u-root" -> "linuxboot/linuxboot" ["e"=1]
+"u-root/u-root" -> "linuxboot/heads" ["e"=1]
+"u-root/u-root" -> "linuxboot/book" ["e"=1]
+"u-root/u-root" -> "linuxboot/fiano" ["e"=1]
+"memtest86plus/memtest86plus" -> "coreboot/coreboot" ["e"=1]
+"memtest86plus/memtest86plus" -> "LongSoft/UEFITool" ["e"=1]
+"memtest86plus/memtest86plus" -> "pbatard/EfiFs" ["e"=1]
+"memtest86plus/memtest86plus" -> "openSIL/openSIL" ["e"=1]
+"memtest86plus/memtest86plus" -> "platomav/MCExtractor" ["e"=1]
 "biosbits/bits" -> "intel/luv-yocto"
 "biosbits/bits" -> "jethrogb/uefireverse"
+"conorpp/u2f-zero" -> "linuxboot/heads" ["e"=1]
 "JamesAmiTw/ru-uefi" -> "LongSoft/Universal-IFR-Extractor"
 "JamesAmiTw/ru-uefi" -> "andreiw/UefiToolsPkg"
 "JamesAmiTw/ru-uefi" -> "datasone/grub-mod-setup_var"
@@ -1184,6 +1292,7 @@ digraph G {
 "JamesAmiTw/ru-uefi" -> "jyao1/EdkiiShellTool"
 "JamesAmiTw/ru-uefi" -> "LongSoft/IFRExtractor-RS"
 "JamesAmiTw/ru-uefi" -> "datasone/setup_var.efi"
+"harbaum/I2C-Tiny-USB" -> "gschorcht/i2c-ch341-usb" ["e"=1]
 "fpmurphy/UEFI-Utilities" -> "fpmurphy/UEFI-Utilities-2016"
 "HewlettPackard/oneview-ansible" -> "HewlettPackard/python-hpOneView"
 "HewlettPackard/oneview-ansible" -> "HewlettPackard/oneview-python"
@@ -1196,6 +1305,7 @@ digraph G {
 "dword1511/stm32-vserprog" -> "bbogush/nand_programmer"
 "dword1511/stm32-vserprog" -> "posystorage/serprog-stm32-gd32"
 "dword1511/stm32-vserprog" -> "981213/spi-nand-prog"
+"pbatard/libwdi" -> "pbatard/uefi-ntfs" ["e"=1]
 "pciutils/pciids" -> "pciutils/pciutils"
 "alex3025/ilo-fans-controller" -> "kendallgoto/ilo4_unlock"
 "alex3025/ilo-fans-controller" -> "That-Guy-Jack/HP-ILO-Fan-Control"
@@ -1214,6 +1324,7 @@ digraph G {
 "microsoft/mu_feature_mm_supv" -> "microsoft/mu_devops"
 "microsoft/mu_feature_mm_supv" -> "microsoft/mu_feature_ipmi"
 "microsoft/mu_feature_mm_supv" -> "microsoft/mu_feature_config"
+"shadlyd15/DoomLinux" -> "Cacodemon345/uefidoom" ["e"=1]
 "openbmc/docs" -> "openbmc/openbmc"
 "openbmc/docs" -> "Intel-BMC/openbmc"
 "openbmc/docs" -> "openbmc/phosphor-dbus-interfaces"
@@ -1237,6 +1348,7 @@ digraph G {
 "LongSoft/CrScreenshotDxe" -> "LongSoft/TE2PE"
 "LongSoft/CrScreenshotDxe" -> "snare/ida-efiutils"
 "LongSoft/CrScreenshotDxe" -> "theopolis/uefi-firmware-parser"
+"chris1111/Geforce-Kepler-patcher" -> "chris1111/Patch-HD4000-Monterey" ["e"=1]
 "pciutils/pciutils" -> "pciutils/pciids"
 "pciutils/pciutils" -> "billfarrow/pcimem" ["e"=1]
 "pciutils/pciutils" -> "gittup/pciutils"
@@ -1267,6 +1379,7 @@ digraph G {
 "dreamwhite/ChonkyAppleALC-Build" -> "dreamwhite/Chonky-itlwm-Build"
 "dreamwhite/ChonkyIntelBluetoothFirmware-Build" -> "dreamwhite/Chonky-itlwm-Build"
 "dreamwhite/Chonky-itlwm-Build" -> "dreamwhite/ChonkyIntelBluetoothFirmware-Build"
+"qemu/qemu" -> "tianocore/edk2" ["e"=1]
 "OpenBoardView/OpenBoardView" -> "whitequark/kicad-boardview" ["e"=1]
 "OpenBoardView/OpenBoardView" -> "inflex/OpenBoardView"
 "OpenBoardView/OpenBoardView" -> "inflex/OpenBoardData"
@@ -1281,6 +1394,13 @@ digraph G {
 "OpenBoardView/OpenBoardView" -> "hamishcoleman/thinkpad-ec"
 "OpenBoardView/OpenBoardView" -> "devbisme/kicad-3rd-party-tools" ["e"=1]
 "OpenBoardView/OpenBoardView" -> "blackmagic-debug/blackmagic" ["e"=1]
+"Metabolix/HackBGRT" -> "LongSoft/UEFITool" ["e"=1]
+"berthubert/googerteller" -> "chip-red-pill/MicrocodeDecryptor" ["e"=1]
+"maqp/tfc" -> "corna/me_cleaner" ["e"=1]
+"DavidS95/Smokeless_UMAF" -> "BoringBoredom/UEFI-Editor" ["e"=1]
+"DavidS95/Smokeless_UMAF" -> "xCuri0/ReBarUEFI" ["e"=1]
+"DavidS95/Smokeless_UMAF" -> "LongSoft/UEFITool" ["e"=1]
+"DavidS95/Smokeless_UMAF" -> "datasone/setup_var.efi" ["e"=1]
 "chip-red-pill/MicrocodeDecryptor" -> "chip-red-pill/uCodeDisasm"
 "chip-red-pill/MicrocodeDecryptor" -> "ptresearch/IntelTXE-PoC"
 "chip-red-pill/MicrocodeDecryptor" -> "pietroborrello/CustomProcessingUnit"
@@ -1351,6 +1471,7 @@ digraph G {
 "Cr4sh/fwexpl" -> "Cr4sh/ThinkPwn"
 "Cr4sh/fwexpl" -> "Cr4sh/SmmBackdoor"
 "Cr4sh/fwexpl" -> "skochinsky/me-tools"
+"notpeter/apple-installer-checksums" -> "gdbinit/firmware_vault" ["e"=1]
 "hamishcoleman/thinkpad-ec" -> "n4ru/1vyrain"
 "hamishcoleman/thinkpad-ec" -> "merge/skulls"
 "hamishcoleman/thinkpad-ec" -> "gch1p/thinkpad-bios-software-flashing-guide"
@@ -1370,6 +1491,7 @@ digraph G {
 "MuertoGB/SMCTool" -> "MuertoGB/SMCFT"
 "MuertoGB/SMCTool" -> "MuertoGB/MacBRTool"
 "MuertoGB/SMCTool" -> "MuertoGB/MacEfiToolkit"
+"SideChannelMarvels/Deadpool" -> "advanced-threat-research/firmware-security-training" ["e"=1]
 "Bizzaro/x230-osx" -> "xxx10101xxx/ThinkPad-X230-macOS"
 "Bizzaro/x230-osx" -> "littlegtplr/Hackintosh-X230-macOS"
 "Bizzaro/x230-osx" -> "chuckhacker/ThinkPad-X230-macOS-10.12.2"
@@ -1379,6 +1501,7 @@ digraph G {
 "ptresearch/me-disablement" -> "ptresearch/IntelME-JTAG"
 "mischief/efivim" -> "RossMeikleham/UEFIBoy"
 "mischief/efivim" -> "vinxue/UefiToolkitPkg"
+"JuliaPoo/Artfuscator" -> "binarly-io/efiXplorer" ["e"=1]
 "microsoft/mu_devops" -> "microsoft/mu_feature_mm_supv"
 "rhboot/efivar" -> "rhboot/efibootmgr"
 "rhboot/efivar" -> "rhboot/shim"
@@ -1401,6 +1524,9 @@ digraph G {
 "tianocore/edk2-platforms" -> "microsoft/mu_basecore"
 "tianocore/edk2-platforms" -> "tianocore-training/Tianocore_Training_Contents"
 "tianocore/edk2-platforms" -> "rhboot/efivar"
+"Wack0/CVE-2022-21894" -> "tandasat/SmmExploit" ["e"=1]
+"Wack0/CVE-2022-21894" -> "river-li/awesome-uefi-security" ["e"=1]
+"Wack0/CVE-2022-21894" -> "IOActive/Platbox" ["e"=1]
 "tianocore/edk2-staging" -> "tianocore/edk2-platforms"
 "tianocore/edk2-staging" -> "intel/ModernFW"
 "tianocore/edk2-staging" -> "microsoft/mu_basecore"
@@ -1449,6 +1575,7 @@ digraph G {
 "juancgarcia/HID-Relay" -> "mmshivesh/HC05withHID"
 "juancgarcia/HID-Relay" -> "rampadc/cc254x-hidKbdM" ["e"=1]
 "juancgarcia/HID-Relay" -> "felis/USB_Host_Shield_2.0" ["e"=1]
+"nguyentumine/AIO-Boot" -> "pbatard/EfiFs" ["e"=1]
 "DMTF/Redfish-Tools" -> "DMTF/Redfish-Tacklebox"
 "DMTF/Redfish-Tools" -> "DMTF/Redfishtool"
 "DMTF/Redfish-Tools" -> "DMTF/Redfish-Service-Validator"
@@ -1537,6 +1664,7 @@ digraph G {
 "andreiw/UefiToolsPkg" -> "microsoft/mu_plus"
 "andreiw/UefiToolsPkg" -> "uefitech/resources"
 "andreiw/UefiToolsPkg" -> "kurtqiao/MyPkg"
+"realoriginal/bootlicker" -> "Cr4sh/SmmBackdoorNg" ["e"=1]
 "Cr4sh/PeiBackdoor" -> "Cr4sh/smram_parse"
 "Cr4sh/PeiBackdoor" -> "skochinsky/me-tools"
 "Cr4sh/PeiBackdoor" -> "Cr4sh/UEFI_boot_script_expl"
@@ -1605,6 +1733,7 @@ digraph G {
 "MuertoGB/SMCFT" -> "MuertoGB/MacBRTool"
 "MuertoGB/SMCFT" -> "MuertoGB/MacEfiToolkit"
 "jyao1/EdkiiShellTool" -> "topeterk/DumpHii"
+"nmikhailov/Validity90" -> "corna/me_cleaner" ["e"=1]
 "Cr4sh/SmmBackdoorNg" -> "jussihi/SMM-Rootkit"
 "Cr4sh/SmmBackdoorNg" -> "IOActive/Platbox"
 "Cr4sh/SmmBackdoorNg" -> "river-li/awesome-uefi-security"
@@ -1635,9 +1764,16 @@ digraph G {
 "HewlettPackard/python-redfish-utility" -> "HewlettPackard/ansible-ilorest-role"
 "HewlettPackard/python-redfish-utility" -> "DMTF/python-redfish-utility"
 "HewlettPackard/python-redfish-utility" -> "HewlettPackard/ilo-rest-api-docs"
+"terminatorul/NvStrapsReBar" -> "xCuri0/ReBarUEFI" ["e"=1]
+"terminatorul/NvStrapsReBar" -> "notfromstatefarm/nvflashk" ["e"=1]
+"terminatorul/NvStrapsReBar" -> "BoringBoredom/UEFI-Editor" ["e"=1]
+"libc0607/Realtek_switch_hacking" -> "McMCCRU/SNANDer" ["e"=1]
+"hardenedlinux/linux-exploit-development-tutorial" -> "advanced-threat-research/firmware-security-training" ["e"=1]
 "dogbert/bios-pwgen" -> "let-def/insydious"
+"marcnewlin/hi_my_name_is_keyboard" -> "skysafe/reblog" ["e"=1]
 "Microsemi/switchtec-kernel" -> "Microsemi/switchtec-user"
 "Microsemi/switchtec-kernel" -> "Microsemi/switchtec-dma"
+"a1ive/grub2-filemanager" -> "pbatard/EfiFs" ["e"=1]
 "opencomputeproject/Project_Olympus" -> "Azure/Project-Cerberus"
 "opencomputeproject/Project_Olympus" -> "tianocore/edk2-staging"
 "LongSoft/Universal-IFR-Extractor" -> "datasone/grub-mod-setup_var"
@@ -1652,6 +1788,8 @@ digraph G {
 "LongSoft/Universal-IFR-Extractor" -> "LongSoft/UEFITool"
 "LongSoft/Universal-IFR-Extractor" -> "platomav/MCExtractor"
 "LongSoft/Universal-IFR-Extractor" -> "XDleader555/grub_setup_var"
+"ajkhoury/UEFI-Bootkit" -> "Cr4sh/SmmBackdoor" ["e"=1]
+"ajkhoury/UEFI-Bootkit" -> "Cr4sh/PeiBackdoor" ["e"=1]
 "PreOS-Security/awesome-firmware-security" -> "al3xtjames/ghidra-firmware-utils"
 "PreOS-Security/awesome-firmware-security" -> "yeggor/uefi_retool"
 "PreOS-Security/awesome-firmware-security" -> "PreOS-Security/fwaudit" ["e"=1]
@@ -1669,6 +1807,7 @@ digraph G {
 "DMTF/python-redfish-library" -> "lenovo/python-redfish-lenovo"
 "therealdreg/asprogrammer-dregmod" -> "therealdreg/flashrom_build_windows_x64"
 "Frans-Willem/CsrUsbSpiDeviceRE" -> "raplin/CsrUsbSpiDeviceRE"
+"981213/mtk_uartboot" -> "hackpascal/ufprog" ["e"=1]
 "tmbinc/bgrep" -> "snare/ida-efiutils"
 "Cr4sh/smram_parse" -> "Cr4sh/Aptiocalypsis"
 "Cr4sh/smram_parse" -> "Cr4sh/UEFI_boot_script_expl"
@@ -1685,6 +1824,9 @@ digraph G {
 "Microsemi/switchtec-user" -> "Microsemi/switchtec-kernel"
 "Microsemi/switchtec-user" -> "Microsemi/switchtec-dma"
 "piernov/OpenBoardView" -> "inflex/OpenBoardView"
+"evilsocket/opensnitch" -> "corna/me_cleaner" ["e"=1]
+"pirate/sites-using-cloudflare" -> "corna/me_cleaner" ["e"=1]
+"Billy-Ellis/Exploit-Challenges" -> "advanced-threat-research/firmware-security-training" ["e"=1]
 "bbogush/nand_programmer" -> "dword1511/stm32-vserprog"
 "bbogush/nand_programmer" -> "Droid-MAX/SNANDer"
 "bbogush/nand_programmer" -> "hackpascal/ufprog"
@@ -1701,12 +1843,18 @@ digraph G {
 "dell/redfish-ansible-module" -> "anupamaloke/Dell-EMC-Ansible-Modules-for-iDRAC"
 "advanced-threat-research/efi-whitelist" -> "ptresearch/parseMFS"
 "advanced-threat-research/efi-whitelist" -> "flothrone/bootguard"
+"billfarrow/pcimem" -> "pciutils/pciutils" ["e"=1]
+"louwrentius/fio-plot" -> "nutanix/libvfio-user" ["e"=1]
+"zeffy/wufuc" -> "corna/me_cleaner" ["e"=1]
+"zeffy/wufuc" -> "LongSoft/UEFITool" ["e"=1]
+"airbus-seclab/cpu_rec" -> "osresearch/spispy" ["e"=1]
 "hymen81/UEFI-Game-FlappyBirdy" -> "rubikshift/UEFI_MARIO"
 "hymen81/UEFI-Game-FlappyBirdy" -> "IyadHamid/UefiGame"
 "HewlettPackard/ansible-ilorest-role" -> "HewlettPackard/ilo-rest-api-docs"
 "HewlettPackard/ansible-ilorest-role" -> "HewlettPackard/python-redfish-utility"
 "HewlettPackard/ansible-ilorest-role" -> "HewlettPackard/python-ilorest-library"
 "HewlettPackard/ansible-ilorest-role" -> "HewlettPackard/ilo-ansible-collection"
+"xsh3llsh0ck/Deadwing" -> "pRain1337/Hermes" ["e"=1]
 "openbmc/phosphor-webui" -> "openbmc/webui-vue"
 "openbmc/phosphor-webui" -> "openbmc/phosphor-fan-presence"
 "flothrone/bootguard" -> "REhints/BlackHat_2017"
@@ -1715,6 +1863,8 @@ digraph G {
 "flothrone/bootguard" -> "kakaroto/MFSUtil"
 "flothrone/bootguard" -> "ptresearch/unME12"
 "andreiw/tinycc" -> "rinusser/UEFIStarter"
+"xoreaxeaxeax/sandsifter" -> "corna/me_cleaner" ["e"=1]
+"xoreaxeaxeax/sandsifter" -> "chipsec/chipsec" ["e"=1]
 "dell/iDRAC-Redfish-Scripting" -> "dell/redfish-ansible-module"
 "dell/iDRAC-Redfish-Scripting" -> "dell/dellemc-openmanage-ansible-modules"
 "dell/iDRAC-Redfish-Scripting" -> "DMTF/python-redfish-library"
@@ -1730,6 +1880,7 @@ digraph G {
 "dell/iDRAC-Redfish-Scripting" -> "dell/OpenManage-PowerShell-Modules"
 "dell/iDRAC-Redfish-Scripting" -> "DMTF/Redfish-Tacklebox"
 "dell/iDRAC-Redfish-Scripting" -> "HewlettPackard/python-redfish-utility"
+"postmarketOS/pmbootstrap" -> "linuxboot/heads" ["e"=1]
 "embedi/meloader" -> "embedi/meitools"
 "embedi/meloader" -> "ptresearch/parseMFS"
 "embedi/meloader" -> "REhints/BlackHat_2017"
@@ -1781,16 +1932,16 @@ digraph G {
 "LongSoft/UEFITool" ["l"="-40.414,-33.935"]
 "coreboot/coreboot" ["l"="-40.496,-33.936"]
 "chipsec/chipsec" ["l"="-40.445,-33.986"]
-"qemu/qemu" ["l"="-6.733,19.713"]
-"u-boot/u-boot" ["l"="-17.762,-43.251"]
-"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254"]
+"qemu/qemu" ["l"="-6.733,19.713", "c"=637]
+"u-boot/u-boot" ["l"="-17.762,-43.251", "c"=55]
+"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254", "c"=55]
 "acpica/acpica" ["l"="-40.329,-33.912"]
 "theopolis/uefi-firmware-parser" ["l"="-40.354,-33.986"]
 "intel/FSP" ["l"="-40.356,-33.923"]
 "openbmc/openbmc" ["l"="-40.668,-34.034"]
-"ionescu007/VisualUefi" ["l"="-42.996,-35.371"]
-"microsoft/Windows-driver-samples" ["l"="-42.825,-35.125"]
-"Mattiwatti/EfiGuard" ["l"="-42.893,-35.308"]
+"ionescu007/VisualUefi" ["l"="-42.996,-35.371", "c"=40]
+"microsoft/Windows-driver-samples" ["l"="-42.825,-35.125", "c"=40]
+"Mattiwatti/EfiGuard" ["l"="-42.893,-35.308", "c"=40]
 "gschorcht/spi-ch341-usb" ["l"="-40.447,-33.72"]
 "gschorcht/i2c-ch341-usb" ["l"="-40.447,-33.701"]
 "allanbian1017/i2c-ch341-usb" ["l"="-40.427,-33.71"]
@@ -1802,19 +1953,22 @@ digraph G {
 "platomav/MCExtractor" ["l"="-40.371,-33.964"]
 "platomav/MEAnalyzer" ["l"="-40.393,-33.964"]
 "osresearch/spispy" ["l"="-40.412,-34.078"]
-"grandideastudio/jtagulator" ["l"="32.084,-4.975"]
-"tigard-tools/tigard" ["l"="32.063,-4.972"]
+"grandideastudio/jtagulator" ["l"="32.084,-4.975", "c"=1023]
+"tigard-tools/tigard" ["l"="32.063,-4.972", "c"=1023]
 "McMCCRU/SNANDer" ["l"="-40.438,-33.791"]
 "LongSoft/IFRExtractor-RS" ["l"="-40.4,-33.976"]
 "bigbigmdm/IMSProg" ["l"="-40.455,-33.796"]
 "binarly-io/efiXplorer" ["l"="-40.37,-34.029"]
-"platomav/BIOSUtilities" ["l"="-40.383,-33.981"]
+"system76/firmware-open" ["l"="-9.215,-3.746", "c"=227]
+"linuxboot/linuxboot" ["l"="-40.384,-33.925"]
+"integralfx/MemTestHelper" ["l"="-47.579,8.929", "c"=393]
 "BoringBoredom/UEFI-Editor" ["l"="-40.414,-33.964"]
+"platomav/BIOSUtilities" ["l"="-40.383,-33.981"]
 "corna/me_cleaner" ["l"="-40.49,-33.98"]
 "LongSoft/Universal-IFR-Extractor" ["l"="-40.395,-33.994"]
 "jethrogb/uefireverse" ["l"="-40.333,-34.014"]
 "platomav/CPUMicrocodes" ["l"="-40.38,-33.944"]
-"CloverHackyColor/CloverBootloader" ["l"="23.23,-22.143"]
+"CloverHackyColor/CloverBootloader" ["l"="23.23,-22.143", "c"=196]
 "xCuri0/ReBarUEFI" ["l"="-40.449,-33.909"]
 "rhboot/efibootmgr" ["l"="-40.218,-33.94"]
 "rhboot/efivar" ["l"="-40.245,-33.926"]
@@ -1822,6 +1976,8 @@ digraph G {
 "LongSoft/CrScreenshotDxe" ["l"="-40.313,-33.979"]
 "dell/dkms" ["l"="-40.137,-33.941"]
 "fpmurphy/UEFI-Utilities-2019" ["l"="-40.285,-33.947"]
+"facebook/openr" ["l"="7.29,-4.622", "c"=491]
+"facebook/openbmc" ["l"="-40.758,-34.054"]
 "openstack-archive/pyghmi" ["l"="-40.828,-33.966"]
 "kontron/python-ipmi" ["l"="-40.801,-33.986"]
 "ipmitool/ipmitool" ["l"="-40.739,-34.036"]
@@ -1830,25 +1986,29 @@ digraph G {
 "openbmc/bmcweb" ["l"="-40.785,-34.062"]
 "Intel-BMC/openbmc" ["l"="-40.731,-34.066"]
 "dell/iDRAC-Redfish-Scripting" ["l"="-40.889,-34.123"]
-"facebook/openbmc" ["l"="-40.758,-34.054"]
-"prometheus-community/ipmi_exporter" ["l"="9.495,-10.651"]
-"ipxe/ipxe" ["l"="-50.079,10.277"]
+"prometheus-community/ipmi_exporter" ["l"="9.495,-10.651", "c"=484]
+"ipxe/ipxe" ["l"="-50.079,10.277", "c"=59]
 "DMTF/python-redfish-library" ["l"="-40.865,-34.09"]
-"cw1997/dell_fans_controller" ["l"="22.855,-21.668"]
-"kasuganosoras/SuperMicro-IPMI-LicenseGenerator" ["l"="-25.889,-23.223"]
-"cobbler/cobbler" ["l"="1.254,15.036"]
+"cw1997/dell_fans_controller" ["l"="22.855,-21.668", "c"=196]
+"kasuganosoras/SuperMicro-IPMI-LicenseGenerator" ["l"="-25.889,-23.223", "c"=1142]
+"cobbler/cobbler" ["l"="1.254,15.036", "c"=857]
+"psal/anonymouth" ["l"="-52.456,12.584", "c"=266]
 "command-tab/ch341eeprom" ["l"="-40.383,-33.742"]
 "boseji/CH341-Store" ["l"="-40.438,-33.753"]
 "stefanct/ch341eepromtool" ["l"="-40.403,-33.74"]
 "Trel725/chavrprog" ["l"="-40.367,-33.729"]
 "dword1511/stm32-vserprog" ["l"="-40.424,-33.731"]
-"pepe2k/u-boot_mod" ["l"="-65.553,14.571"]
+"pepe2k/u-boot_mod" ["l"="-65.553,14.571", "c"=1333]
+"speed47/spectre-meltdown-checker" ["l"="-17.438,-42.018", "c"=1132]
+"Battelle/movfuscator" ["l"="-16.467,-6.697", "c"=469]
+"chip-red-pill/MicrocodeDecryptor" ["l"="-40.181,-34.063"]
+"isec-tugraz/meltdown" ["l"="-17.388,-41.997", "c"=1132]
 "Cr4sh/SmmBackdoor" ["l"="-40.33,-34.06"]
-"google/honggfuzz" ["l"="-41.587,-36.28"]
-"firmadyne/firmadyne" ["l"="-41.534,-37.413"]
-"joxeankoret/diaphora" ["l"="-42.945,-36.851"]
-"google/syzkaller" ["l"="-41.641,-36.269"]
-"ufrisk/pcileech" ["l"="-44.708,-36.462"]
+"google/honggfuzz" ["l"="-41.587,-36.28", "c"=91]
+"firmadyne/firmadyne" ["l"="-41.534,-37.413", "c"=610]
+"joxeankoret/diaphora" ["l"="-42.945,-36.851", "c"=306]
+"google/syzkaller" ["l"="-41.641,-36.269", "c"=91]
+"ufrisk/pcileech" ["l"="-44.708,-36.462", "c"=880]
 "linuxboot/heads" ["l"="-40.522,-33.956"]
 "merge/skulls" ["l"="-40.549,-33.939"]
 "n4ru/1vyrain" ["l"="-40.597,-33.941"]
@@ -1859,14 +2019,14 @@ digraph G {
 "n4ru/IVprep" ["l"="-40.614,-33.948"]
 "banhbaoxamlan/X230-Hackintosh" ["l"="-40.644,-33.939"]
 "digmorepaka/thinkpad-firmware-patches" ["l"="-40.577,-33.982"]
-"linuxboot/linuxboot" ["l"="-40.384,-33.925"]
-"oreboot/oreboot" ["l"="-25.119,-22.756"]
+"oreboot/oreboot" ["l"="-25.119,-22.756", "c"=1180]
 "littlegtplr/Hackintosh-X230-macOS" ["l"="-40.652,-33.923"]
 "intel/Intel-Linux-Processor-Microcode-Data-Files" ["l"="-40.347,-33.946"]
 "ptresearch/unME11" ["l"="-40.313,-34.006"]
 "ptresearch/IntelTXE-PoC" ["l"="-40.282,-34.022"]
 "datasone/grub-mod-setup_var" ["l"="-40.42,-33.993"]
 "skochinsky/me-tools" ["l"="-40.308,-34.022"]
+"dfd-tud/deda" ["l"="54.408,4.542", "c"=214]
 "PSPReverse/PSPTool" ["l"="-40.346,-34.049"]
 "PSPReverse/PSPEmu" ["l"="-40.394,-34.136"]
 "DSecurity/efiSeek" ["l"="-40.333,-34.029"]
@@ -1874,48 +2034,65 @@ digraph G {
 "snare/ida-efiutils" ["l"="-40.32,-34.044"]
 "yeggor/uefi_retool" ["l"="-40.344,-34.036"]
 "PSPReverse/amd-sp-glitch" ["l"="-40.378,-34.122"]
-"intel/linux-sgx" ["l"="-16.683,-42.213"]
+"tomaspinho/rtl8821ce" ["l"="-43.284,-31.134", "c"=1158]
+"intel/linux-sgx" ["l"="-16.683,-42.213", "c"=621]
 "slimbootloader/slimbootloader" ["l"="-40.33,-33.929"]
-"intel/linux-sgx-driver" ["l"="-16.666,-42.237"]
+"intel/linux-sgx-driver" ["l"="-16.666,-42.237", "c"=621]
 "tianocore/edk2-staging" ["l"="-40.303,-33.9"]
-"ayeks/SGX-hardware" ["l"="-16.689,-42.222"]
-"vusec/ridl" ["l"="-17.334,-41.945"]
+"ayeks/SGX-hardware" ["l"="-16.689,-42.222", "c"=621]
+"vusec/ridl" ["l"="-17.334,-41.945", "c"=1132]
 "JamesAmiTw/ru-uefi" ["l"="-40.354,-33.969"]
-"intel/cryptography-primitives" ["l"="6.492,-6.125"]
+"intel/cryptography-primitives" ["l"="6.492,-6.125", "c"=335]
+"Cr4sh/s6_pcie_microblaze" ["l"="-43.047,-35.346", "c"=40]
+"Cr4sh/SmmBackdoorNg" ["l"="-40.32,-34.11"]
 "dell/dellemc-openmanage-ansible-modules" ["l"="-40.916,-34.178"]
 "dell/redfish-ansible-module" ["l"="-40.869,-34.144"]
 "dell/omsdk" ["l"="-40.9,-34.152"]
 "dell/ansible-powerstore" ["l"="-40.934,-34.223"]
 "dell/ansible-unity" ["l"="-40.955,-34.238"]
-"ansible-collections/vmware.vmware_rest" ["l"="8.717,-12.148"]
+"ansible-collections/vmware.vmware_rest" ["l"="8.717,-12.148", "c"=600]
 "dell/ansible-powermax" ["l"="-40.972,-34.231"]
 "dell/terraform-provider-redfish" ["l"="-40.917,-34.155"]
-"ansible-collections/community.vmware" ["l"="8.686,-12.153"]
+"ansible-collections/community.vmware" ["l"="8.686,-12.153", "c"=600]
 "dell/OpenManage-Enterprise" ["l"="-40.937,-34.155"]
 "gerdesi/NVIDIA_P106" ["l"="-40.471,-33.822"]
 "iiiyx/p106-100-p104-100" ["l"="-40.472,-33.841"]
+"nsacyber/Hardware-and-Firmware-Security-Guidance" ["l"="-42.518,-32.958", "c"=79]
+"PreOS-Security/awesome-firmware-security" ["l"="-40.405,-34.112"]
+"xoreaxeaxeax/rosenbridge" ["l"="-16.463,-6.654", "c"=469]
+"ChrisTheCoolHut/Firmware_Slap" ["l"="-41.508,-37.454", "c"=610]
+"al3xtjames/ghidra-firmware-utils" ["l"="-40.366,-34.049"]
+"erpalma/throttled" ["l"="-14.211,-1.096", "c"=152]
 "LongSoft/InsydeImageExtractor" ["l"="-40.461,-34.016"]
 "theopolis/uefi-spider" ["l"="-40.371,-34.008"]
 "liho98/lenovo-bios-logo-extraction-guide" ["l"="-40.506,-34.049"]
 "ISpillMyDrink/UEFI-Repair-Guide" ["l"="-40.519,-33.996"]
+"kitsunyan/intel-undervolt" ["l"="-14.219,-1.066", "c"=152]
 "linuxboot/fiano" ["l"="-40.352,-34.01"]
 "andreiw/UefiToolsPkg" ["l"="-40.318,-33.95"]
+"redhat-performance/badfish" ["l"="10.241,-11.481", "c"=431]
+"DMTF/Redfish-Tacklebox" ["l"="-40.852,-34.111"]
 "linuxboot/book" ["l"="-40.371,-33.88"]
-"u-root/u-root" ["l"="-16.204,-45.882"]
-"u-root/u-bmc" ["l"="3.651,-6.853"]
+"u-root/u-root" ["l"="-16.204,-45.882", "c"=1284]
+"u-root/u-bmc" ["l"="3.651,-6.853", "c"=0]
 "open-power/petitboot" ["l"="-40.152,-33.833"]
 "flothrone/bootguard" ["l"="-40.262,-34.055"]
 "coreboot/seabios" ["l"="-40.557,-33.896"]
 "RossMeikleham/UEFIBoy" ["l"="-40.414,-34.057"]
 "andreiw/tinycc" ["l"="-40.395,-34.027"]
 "rinusser/UEFIStarter" ["l"="-40.429,-34.055"]
+"carmaa/inception" ["l"="-47.273,-34.28", "c"=204]
+"advanced-threat-research/firmware-security-training" ["l"="-40.265,-34.104"]
+"ValdikSS/Super-UEFIinSecureBoot-Disk" ["l"="-50.177,10.207", "c"=59]
+"pbatard/EfiFs" ["l"="-40.299,-33.947"]
+"microsoft/mu_plus" ["l"="-40.306,-33.883"]
+"emsec/hal" ["l"="33.025,-3.629", "c"=180]
 "das-labor/neopg" ["l"="-40.461,-34.168"]
 "9elements/converged-security-suite" ["l"="-40.428,-34.101"]
-"al3xtjames/ghidra-firmware-utils" ["l"="-40.366,-34.049"]
-"grayhatacademy/ghidra_scripts" ["l"="-41.477,-37.558"]
+"grayhatacademy/ghidra_scripts" ["l"="-41.477,-37.558", "c"=610]
 "gdbinit/EFISwissKnife" ["l"="-40.309,-34.036"]
-"astrelsky/Ghidra-Cpp-Class-Analyzer" ["l"="-41.435,-37.613"]
-"threatrack/ghidra-fidb-repo" ["l"="-41.47,-37.61"]
+"astrelsky/Ghidra-Cpp-Class-Analyzer" ["l"="-41.435,-37.613", "c"=610]
+"threatrack/ghidra-fidb-repo" ["l"="-41.47,-37.61", "c"=610]
 "assafcarlsbad/efi_dxe_emulator" ["l"="-40.346,-34.07"]
 "Kistler-Group/sdbus-cpp" ["l"="-40.889,-34.004"]
 "openbmc/sdbusplus" ["l"="-40.838,-34.03"]
@@ -1937,14 +2114,14 @@ digraph G {
 "chip-red-pill/IntelTXE-PoC" ["l"="-40.172,-34.023"]
 "embedi/meloader" ["l"="-40.24,-34.064"]
 "pietroborrello/CustomProcessingUnit" ["l"="-40.16,-34.088"]
-"gamozolabs/applepie" ["l"="-43.1,-35.171"]
-"ionescu007/hdk" ["l"="-43.124,-35.176"]
+"gamozolabs/applepie" ["l"="-43.1,-35.171", "c"=40]
+"ionescu007/hdk" ["l"="-43.124,-35.176", "c"=40]
 "chip-red-pill/crbus_scripts" ["l"="-40.186,-34.034"]
 "YTEC-info/CH341A-Softwares" ["l"="-40.475,-33.763"]
 "Upcycle-Electronics/CH341A-Pro" ["l"="-40.475,-33.733"]
 "davidcarne/pcbre" ["l"="-40.466,-34.142"]
-"airbus-seclab/cpu_rec" ["l"="-41.578,-37.513"]
-"alainiamburg/sniffROM" ["l"="-41.637,-37.502"]
+"airbus-seclab/cpu_rec" ["l"="-41.578,-37.513", "c"=610]
+"alainiamburg/sniffROM" ["l"="-41.637,-37.502", "c"=610]
 "felixheld/qspimux" ["l"="-40.444,-34.12"]
 "datasone/setup_var.efi" ["l"="-40.414,-34.006"]
 "donovan6000/Universal-IFR-Extractor" ["l"="-40.394,-34.009"]
@@ -1953,9 +2130,10 @@ digraph G {
 "ibm-openbmc/openbmc" ["l"="-40.704,-34.094"]
 "openbmc/phosphor-dbus-interfaces" ["l"="-40.723,-34.054"]
 "Nuvoton-Israel/openbmc" ["l"="-40.72,-34.093"]
+"thedalles77/USB_Laptop_Keyboard_Controller" ["l"="-22.594,-44.727", "c"=114]
+"iam4722202468/ThinkpadBattery" ["l"="-40.611,-33.972"]
 "REhints/Publications" ["l"="-40.241,-34.098"]
 "advanced-threat-research/efi-whitelist" ["l"="-40.231,-34.08"]
-"advanced-threat-research/firmware-security-training" ["l"="-40.265,-34.104"]
 "REhints/BlackHat_2017" ["l"="-40.218,-34.093"]
 "Cr4sh/PeiBackdoor" ["l"="-40.296,-34.069"]
 "HewlettPackard/python-hpOneView" ["l"="-41.141,-34.177"]
@@ -1985,31 +2163,31 @@ digraph G {
 "theopolis/uefi-firmware-samples" ["l"="-40.401,-34.04"]
 "HewlettPackard/nagios-plugins-hpilo" ["l"="-41.055,-34.138"]
 "HewlettPackard/nagios-hpeilo-restful-extension" ["l"="-41.035,-34.128"]
+"andreiw/RaspberryPiPkg" ["l"="-49.834,8.736", "c"=59]
 "lenovo/powershell-redfish-lenovo" ["l"="-40.93,-34.077"]
 "lenovo/python-redfish-lenovo" ["l"="-40.914,-34.091"]
 "dreamwhite/bios-extraction-guide" ["l"="-40.473,-34.046"]
 "XDleader555/grub_setup_var" ["l"="-40.424,-34.022"]
-"ReddestDream/OcQuirks" ["l"="23.444,-22.222"]
+"ReddestDream/OcQuirks" ["l"="23.444,-22.222", "c"=196]
 "holoto/efi_shell_flash_bios" ["l"="-40.485,-34.029"]
-"benbaker76/PinConfigurator" ["l"="23.473,-22.363"]
-"ic005k/Xiasl" ["l"="23.435,-22.282"]
+"benbaker76/PinConfigurator" ["l"="23.473,-22.363", "c"=196]
+"ic005k/Xiasl" ["l"="23.435,-22.282", "c"=196]
 "AndersTrier/grub-with-setup_var" ["l"="-40.447,-34.026"]
-"1Revenger1/ECEnabler" ["l"="23.466,-22.262"]
+"1Revenger1/ECEnabler" ["l"="23.466,-22.262", "c"=196]
 "mikebdp2/insydeH20-advanced-settings-tools" ["l"="-40.431,-34.04"]
-"CyberShadow/MMTool-Extract-All" ["l"="23.666,-20.942"]
-"nj8u7cc/ParseGPT" ["l"="23.652,-20.951"]
-"0xFireWolf/NightShiftUnlocker" ["l"="23.489,-22.073"]
-"w568w/CurrentActivity" ["l"="23.656,-20.938"]
-"seSuperuser/Superuser-UI" ["l"="23.658,-20.935"]
-"kasp1/create-android-keystore" ["l"="23.666,-20.937"]
-"Jonahss/adb-foreach" ["l"="23.671,-20.938"]
-"jindrapetrik/jbomutils" ["l"="23.671,-20.933"]
-"seSuperuser/sepolicy-inject" ["l"="23.665,-20.931"]
-"AppleLife/NullCPUPowerManagement" ["l"="23.665,-20.946"]
+"CyberShadow/MMTool-Extract-All" ["l"="23.666,-20.942", "c"=1013]
+"nj8u7cc/ParseGPT" ["l"="23.652,-20.951", "c"=1013]
+"0xFireWolf/NightShiftUnlocker" ["l"="23.489,-22.073", "c"=196]
+"w568w/CurrentActivity" ["l"="23.656,-20.938", "c"=1013]
+"seSuperuser/Superuser-UI" ["l"="23.658,-20.935", "c"=1013]
+"kasp1/create-android-keystore" ["l"="23.666,-20.937", "c"=1013]
+"Jonahss/adb-foreach" ["l"="23.671,-20.938", "c"=1013]
+"jindrapetrik/jbomutils" ["l"="23.671,-20.933", "c"=1013]
+"seSuperuser/sepolicy-inject" ["l"="23.665,-20.931", "c"=1013]
+"AppleLife/NullCPUPowerManagement" ["l"="23.665,-20.946", "c"=1013]
 "bigbigmdm/QT-CH341A-LINUX-PROGRAMMER" ["l"="-40.403,-33.755"]
 "lenovo/pylxca" ["l"="-40.941,-34.087"]
 "microsoft/mu_basecore" ["l"="-40.303,-33.861"]
-"microsoft/mu_plus" ["l"="-40.306,-33.883"]
 "microsoft/mu_tiano_plus" ["l"="-40.301,-33.846"]
 "microsoft/mu_silicon_intel_tiano" ["l"="-40.283,-33.84"]
 "tianocore/edk2-pytool-extensions" ["l"="-40.272,-33.874"]
@@ -2035,6 +2213,8 @@ digraph G {
 "dell/csi-unity" ["l"="-40.984,-34.272"]
 "dell/karavi-metrics-powerflex" ["l"="-41.053,-34.3"]
 "dell/csm-operator" ["l"="-41.002,-34.297"]
+"PreOS-Security/fwaudit" ["l"="-46.757,-34.148", "c"=204]
+"embedi/meitools" ["l"="-40.201,-34.075"]
 "openbmc/webui-vue" ["l"="-40.788,-34.08"]
 "openbmc/phosphor-host-ipmid" ["l"="-40.792,-34.044"]
 "openbmc/linux" ["l"="-40.736,-34.078"]
@@ -2053,7 +2233,6 @@ digraph G {
 "LongSoft/FTK" ["l"="-40.394,-34.05"]
 "LongSoft/FD44Editor" ["l"="-40.447,-34.067"]
 "LongSoft/UBU-helpers" ["l"="-40.414,-34.036"]
-"DMTF/Redfish-Tacklebox" ["l"="-40.852,-34.111"]
 "DMTF/Redfish-Tools" ["l"="-40.848,-34.1"]
 "DMTF/Redfish-Service-Validator" ["l"="-40.818,-34.109"]
 "sebmalek/t430-macos-efi" ["l"="-40.678,-33.877"]
@@ -2080,7 +2259,6 @@ digraph G {
 "ptresearch/IntelME-Crypto" ["l"="-40.218,-34.033"]
 "microsoft/mu_pip_python_library" ["l"="-40.259,-33.8"]
 "ptresearch/parseMFS" ["l"="-40.206,-34.089"]
-"embedi/meitools" ["l"="-40.201,-34.075"]
 "microsoft/mu_pip_environment" ["l"="-40.249,-33.782"]
 "facebook/openbmc-linux" ["l"="-40.788,-34.023"]
 "facebook/openbmc-uboot" ["l"="-40.773,-34.027"]
@@ -2091,47 +2269,59 @@ digraph G {
 "BIOS-iEngineer/MACHINIST-X99ZV102" ["l"="-40.53,-33.828"]
 "Andrej-Antipov/X99-K9-Machinist-Hackintosh" ["l"="-40.52,-33.815"]
 "BIOS-iEngineer/HUANANZHI-X99-F8" ["l"="-40.547,-33.82"]
-"pbatard/EfiFs" ["l"="-40.299,-33.947"]
 "osmaniax/hackintosh" ["l"="-40.653,-33.992"]
 "chris1111/Patch-HD4000-Monterey" ["l"="-40.693,-33.953"]
-"MSzturc/ThinkpadAssistant" ["l"="23.557,-22.325"]
+"MSzturc/ThinkpadAssistant" ["l"="23.557,-22.325", "c"=196]
 "5T33Z0/Lenovo-T530-Hackintosh-OpenCore" ["l"="-40.706,-33.94"]
 "Ninjaxsh/X230-Monterey-OpenCore-Hackintosh-EFI" ["l"="-40.675,-33.937"]
-"zhen-zen/YogaSMC" ["l"="23.525,-22.299"]
+"zhen-zen/YogaSMC" ["l"="23.525,-22.299", "c"=196]
 "Koloses/x230-macOS-OpenCore" ["l"="-40.669,-33.949"]
 "dell/python-powerstore" ["l"="-40.938,-34.237"]
 "dell/ansible-vplex" ["l"="-40.916,-34.232"]
 "dell/terraform-provider-powerstore" ["l"="-40.924,-34.243"]
-"can1357/NtRays" ["l"="-41.612,-34.438"]
+"raspberrypi/rpi-eeprom" ["l"="42.849,7.598", "c"=818]
+"bobranten/Ext4Fsd" ["l"="-25.846,-23.478", "c"=1142]
+"edk2-porting/edk2-msm" ["l"="-49.769,8.449", "c"=59]
+"can1357/NtRays" ["l"="-41.612,-34.438", "c"=773]
 "river-li/awesome-uefi-security" ["l"="-40.35,-34.095"]
-"Cr4sh/SmmBackdoorNg" ["l"="-40.32,-34.11"]
-"ioncodes/idacode" ["l"="-43.048,-36.969"]
+"ioncodes/idacode" ["l"="-43.048,-36.969", "c"=306]
+"GSDragoon/RadeonSoftwareSlimmer" ["l"="-47.641,8.899", "c"=393]
+"AllsafeCyberSecurity/awesome-ghidra" ["l"="-41.457,-37.596", "c"=610]
+"waynebonc/iDeviceLogAnalyzer-public" ["l"="41.429,-21.669", "c"=312]
+"MuertoGB/SMCTool" ["l"="-40.181,-33.972"]
+"pyllyukko/user.js" ["l"="-52.476,12.418", "c"=266]
+"vmatare/thinkfan" ["l"="-14.079,-1.043", "c"=152]
 "oood/How-to-Disable-Intel-ME-on-Intel-NUCs" ["l"="-40.505,-33.919"]
-"managarm/lai" ["l"="-23.734,-23.311"]
+"ivandavidov/minimal" ["l"="-11.654,-3.058", "c"=964]
+"AltraMayor/f3" ["l"="-14.54,-1.072", "c"=152]
+"lavabit/magma" ["l"="-51.786,7.436", "c"=682]
+"managarm/lai" ["l"="-23.734,-23.311", "c"=349]
 "tianocore/edk2-libc" ["l"="-40.274,-33.91"]
-"acidanthera/audk" ["l"="23.542,-22.249"]
+"acidanthera/audk" ["l"="23.542,-22.249", "c"=196]
 "lorf/csr-spi-ftdi" ["l"="-40.417,-33.643"]
 "pfalcon/blutunode" ["l"="-40.377,-33.608"]
 "Frans-Willem/CsrSpiDrivers" ["l"="-40.401,-33.619"]
 "Frans-Willem/CsrUsbSpiDeviceRE" ["l"="-40.407,-33.603"]
 "mmshivesh/HC05withHID" ["l"="-40.432,-33.615"]
 "juancgarcia/HID-Relay" ["l"="-40.445,-33.596"]
-"cnlohr/espusb" ["l"="-15.126,-41.142"]
+"cnlohr/espusb" ["l"="-15.126,-41.142", "c"=210]
 "christian-kramer/JieLi-AC690X-Familiarization" ["l"="-40.401,-33.53"]
-"ObdDiag-Net/allpro" ["l"="-14.366,-24.467"]
+"ObdDiag-Net/allpro" ["l"="-14.366,-24.467", "c"=236]
 "darkautism/HC-05-Dev" ["l"="-40.441,-33.631"]
-"espressif/ESP8266_MP3_DECODER" ["l"="-15.099,-41.137"]
+"espressif/ESP8266_MP3_DECODER" ["l"="-15.099,-41.137", "c"=210]
 "stephen-kun/csr8670" ["l"="-40.388,-33.635"]
-"kodera2t/ESP32_OLED_webradio" ["l"="-15.746,-42.239"]
-"I0x0I/DIY-A-BLE-Keyboard" ["l"="-22.991,-44.009"]
-"iam4722202468/ThinkpadBattery" ["l"="-40.611,-33.972"]
+"kodera2t/ESP32_OLED_webradio" ["l"="-15.746,-42.239", "c"=387]
+"I0x0I/DIY-A-BLE-Keyboard" ["l"="-22.991,-44.009", "c"=221]
 "thrimbor/thinkpad-uefi-sign" ["l"="-40.605,-33.988"]
 "n4ru/patched-bioses" ["l"="-40.649,-33.959"]
+"leveldown-security/SVD-Loader-Ghidra" ["l"="-41.52,-37.543", "c"=610]
 "Cacodemon345/uefidoom" ["l"="-40.133,-33.684"]
 "direstraits96/BIOS-MOD-TOOLS" ["l"="-40.441,-34.011"]
-"BoringBoredom/PC-Optimization-Hub" ["l"="-47.637,8.843"]
-"amitxv/PC-Tuning" ["l"="-47.635,8.826"]
-"djdallmann/GamingPCSetup" ["l"="-47.652,8.834"]
+"BoringBoredom/PC-Optimization-Hub" ["l"="-47.637,8.843", "c"=393]
+"amitxv/PC-Tuning" ["l"="-47.635,8.826", "c"=393]
+"djdallmann/GamingPCSetup" ["l"="-47.652,8.834", "c"=393]
+"chenall/grub4dos" ["l"="-50.113,10.197", "c"=59]
+"pbatard/UEFI-Shell" ["l"="-40.268,-33.949"]
 "markkpa/x99-t8d-and-x99-f8d-Opencore-Hackintosh" ["l"="-40.593,-33.804"]
 "ThinkPadThink/Guide2011-3" ["l"="-40.587,-33.833"]
 "BIOS-iEngineer/HUANANZHI-X99-TF" ["l"="-40.551,-33.803"]
@@ -2139,24 +2329,27 @@ digraph G {
 "BIOS-iEngineer/HUANANZHI-X99-F8-2021" ["l"="-40.556,-33.834"]
 "arutar/FrankenDriver" ["l"="-40.493,-33.83"]
 "andrescera/X79-X99-X299-OPENCORE-EFI-CATALINA-BIGSUR" ["l"="-40.573,-33.802"]
-"itdoginfo/podkop" ["l"="-44.831,23.422"]
+"itdoginfo/podkop" ["l"="-44.831,23.422", "c"=417]
 "pbatard/uefi-ntfs" ["l"="-40.292,-33.926"]
-"pbatard/UEFI-Shell" ["l"="-40.268,-33.949"]
 "pbatard/ntfs-3g" ["l"="-40.251,-33.941"]
-"pbatard/libwdi" ["l"="-17.681,-43.27"]
-"ValdikSS/Super-UEFIinSecureBoot-Disk" ["l"="-50.177,10.207"]
+"pbatard/libwdi" ["l"="-17.681,-43.27", "c"=55]
 "pbatard/uefi-simple" ["l"="-40.228,-33.866"]
+"virtio-win/kvm-guest-drivers-windows" ["l"="-14.249,-1.357", "c"=152]
 "coreos/grub" ["l"="-40.111,-33.77"]
 "rhboot/grub2" ["l"="-40.146,-33.804"]
+"pftf/RPi4" ["l"="42.895,7.516", "c"=818]
 "zamaudio/intelmetool" ["l"="-40.274,-34.044"]
 "IllegalArgument/Huffman11" ["l"="-40.252,-34.048"]
 "skysafe/reblog" ["l"="-40.384,-34.075"]
-"marcnewlin/hi_my_name_is_keyboard" ["l"="-44.973,-32.912"]
+"marcnewlin/hi_my_name_is_keyboard" ["l"="-44.973,-32.912", "c"=53]
 "Jieli-Tech/fw-AC63_BT_SDK" ["l"="-40.38,-33.495"]
 "tpunix/AC632Nuke" ["l"="-40.356,-33.48"]
 "Jieli-Tech/fw-Bootloader" ["l"="-40.388,-33.474"]
 "Jieli-Tech/fw-AD15N" ["l"="-40.371,-33.47"]
 "verfasor/X230T-Hackintosh" ["l"="-40.656,-33.888"]
+"kagurazakakotori/ubmp-cn-code" ["l"="4.487,-39.81", "c"=1133]
+"vinxue/UefiToolkitPkg" ["l"="-40.278,-33.962"]
+"sj15712795029/bluetooth_stack" ["l"="-17.599,-43.121", "c"=55]
 "piernov/OpenBoardView" ["l"="-40.369,-33.847"]
 "PSPReverse/psp-docs" ["l"="-40.415,-34.179"]
 "open-power/op-build" ["l"="-40.088,-33.809"]
@@ -2168,6 +2361,7 @@ digraph G {
 "buzzcola3/JieLi-AC690X-Programming" ["l"="-40.425,-33.519"]
 "kagaimiq/jl-uboot-tool" ["l"="-40.408,-33.505"]
 "kagaimiq/jielie" ["l"="-40.421,-33.494"]
+"cseagle/blc" ["l"="-43.067,-37.046", "c"=306]
 "jussihi/SMM-Rootkit" ["l"="-40.301,-34.149"]
 "pRain1337/Hermes" ["l"="-40.278,-34.185"]
 "pRain1337/plouton" ["l"="-40.283,-34.202"]
@@ -2177,14 +2371,14 @@ digraph G {
 "sibradzic/UEFI-playground" ["l"="-40.595,-34.001"]
 "thrimbor/thinkpad-uefi-patches" ["l"="-40.587,-34.013"]
 "ValdikSS/thinkpad-shahash" ["l"="-40.614,-34.008"]
-"EETagent/T480-OpenCore-Hackintosh" ["l"="23.629,-22.39"]
-"benbender/x1c6-hackintosh" ["l"="23.584,-22.324"]
+"EETagent/T480-OpenCore-Hackintosh" ["l"="23.629,-22.39", "c"=196]
+"benbender/x1c6-hackintosh" ["l"="23.584,-22.324", "c"=196]
 "seveas/python-hpilo" ["l"="-41.046,-34.096"]
 "HewlettPackard/python-ilorest-library" ["l"="-40.977,-34.109"]
 "HewlettPackard/python-ilorest-library-old" ["l"="-41.008,-34.114"]
 "let-def/insydious" ["l"="-40.53,-33.879"]
 "dogbert/bios-pwgen" ["l"="-40.549,-33.87"]
-"karosium/smbusb" ["l"="-14.353,-42.182"]
+"karosium/smbusb" ["l"="-14.353,-42.182", "c"=820]
 "binarly-io/fwhunt-scan" ["l"="-40.339,-34.173"]
 "binarly-io/FwHunt" ["l"="-40.344,-34.144"]
 "Sentinel-One/efi_fuzz" ["l"="-40.327,-34.157"]
@@ -2215,7 +2409,6 @@ digraph G {
 "inflex/BK-390A" ["l"="-40.248,-33.822"]
 "inflex/bv2bvr" ["l"="-40.247,-33.84"]
 "inflex/keyboard-tester" ["l"="-40.257,-33.832"]
-"MuertoGB/SMCTool" ["l"="-40.181,-33.972"]
 "ayilm1/gMUXBypass" ["l"="-40.098,-33.997"]
 "Sjenja87/dGMUX_BKeys" ["l"="-40.074,-34"]
 "MuertoGB/MacBRTool" ["l"="-40.159,-33.994"]
@@ -2234,22 +2427,30 @@ digraph G {
 "duszmox/ThinkPad-X1C4-macOS-OpenCore" ["l"="-40.631,-34.063"]
 "lzjqsdd/Thinkpad-X1C4-Hackintosh" ["l"="-40.646,-34.062"]
 "BIOS-iEngineer/HUANANZHI-X99-TF-2021" ["l"="-40.567,-33.78"]
+"fwupd/fwupd" ["l"="-14.273,-0.887", "c"=152]
+"hephaest0s/usbkill" ["l"="-44.788,-32.492", "c"=53]
 "therealdreg/asprogrammer-dregmod" ["l"="-40.468,-33.783"]
 "bbogush/nand_programmer" ["l"="-40.432,-33.768"]
-"ZakKemble/AVRDUDESS" ["l"="-14.064,-42.295"]
+"ZakKemble/AVRDUDESS" ["l"="-14.064,-42.295", "c"=820]
 "OpenBoardView/OpenBoardView" ["l"="-40.41,-33.876"]
+"philipl/pifs" ["l"="-16.613,-6.604", "c"=469]
+"sp00n/CoreCycler" ["l"="-47.607,8.955", "c"=393]
+"notfromstatefarm/nvflashk" ["l"="-40.473,-33.883"]
 "tianocore-docs/edk2-UefiDriverWritersGuide" ["l"="-40.211,-33.984"]
 "intel/Edk2Code" ["l"="-40.235,-33.989"]
 "rhboot/pesign" ["l"="-40.18,-33.885"]
 "lcp/mokutil" ["l"="-40.204,-33.899"]
 "mjg59/shim" ["l"="-40.197,-33.87"]
 "rhboot/shim-review" ["l"="-40.21,-33.883"]
-"tpm2-software/tpm2-tools" ["l"="-18.67,-42.97"]
-"facebook/fboss" ["l"="7.334,-4.65"]
-"Broadcom-Switch/OpenNSL" ["l"="7.362,-4.657"]
+"tpm2-software/tpm2-tools" ["l"="-18.67,-42.97", "c"=55]
+"hirschmann/nbfc" ["l"="-49.539,9.809", "c"=59]
+"USBGuard/usbguard" ["l"="-17.603,-2.498", "c"=2006]
+"facebook/fboss" ["l"="7.334,-4.65", "c"=491]
+"Broadcom-Switch/OpenNSL" ["l"="7.362,-4.657", "c"=491]
 "facebook/OpenBIC" ["l"="-40.787,-34.094"]
-"facebook/openr" ["l"="7.29,-4.622"]
 "openbmc/openbmc-test-automation" ["l"="-40.75,-34.087"]
+"simpleble/simpleble" ["l"="-15.767,-44.782", "c"=943]
+"rms-support-letter/rms-support-letter.github.io" ["l"="-47.331,-25.414", "c"=70]
 "tomek-o/CH341A-tool" ["l"="-40.488,-33.776"]
 "YTEC-info/CH347-Softwares" ["l"="-40.496,-33.724"]
 "Droid-MAX/SNANDer" ["l"="-40.454,-33.769"]
@@ -2258,26 +2459,33 @@ digraph G {
 "semaf/CH341-USB-EEPROM-Flash-BIOS-Programmer" ["l"="-40.513,-33.747"]
 "vladikoms/CH341A" ["l"="-40.498,-33.738"]
 "gdbinit/firmware_vault" ["l"="-40.24,-34.04"]
-"sadponyguerillaboy/Swift-Apple-EFI-Patcher" ["l"="-0.215,0.393"]
+"sadponyguerillaboy/Swift-Apple-EFI-Patcher" ["l"="-0.215,0.393", "c"=108]
 "erikberglund/AppleNVRAM" ["l"="-40.191,-34.103"]
 "That-Guy-Jack/HP-ILO-Fan-Control" ["l"="-41.154,-34.044"]
 "alex3025/ilo-fans-controller" ["l"="-41.175,-34.049"]
+"domgetter/NCoC" ["l"="-16.85,-6.359", "c"=469]
 "tandasat/HelloSmm" ["l"="-40.224,-34.227"]
 "HewlettPackard/python-redfish-utility" ["l"="-40.958,-34.108"]
 "HewlettPackard/chef-ilorest-cookbook" ["l"="-40.987,-34.122"]
-"ajkhoury/UEFI-Bootkit" ["l"="-43.018,-35.361"]
+"tuxera/ntfs-3g" ["l"="25.986,-22.981", "c"=63]
+"ajkhoury/UEFI-Bootkit" ["l"="-43.018,-35.361", "c"=40]
 "Cr4sh/ThinkPwn" ["l"="-40.306,-34.057"]
 "Cr4sh/Aptiocalypsis" ["l"="-40.318,-34.094"]
-"quarkslab/dreamboot" ["l"="-43.1,-35.305"]
+"quarkslab/dreamboot" ["l"="-43.1,-35.305", "c"=40]
 "binarly-io/Vulnerability-REsearch" ["l"="-40.371,-34.151"]
+"AsuharietYgvar/AppleNeuralHash2ONNX" ["l"="-13.665,-5.584", "c"=86]
 "bacher09/pwgen-for-bios" ["l"="-40.475,-33.913"]
-"pbatard/Fido" ["l"="-49.721,9.776"]
+"pbatard/Fido" ["l"="-49.721,9.776", "c"=59]
 "A-syncritus/bios-pw" ["l"="-40.506,-33.897"]
 "pk4tech/Dell-8CF8-Bios-Unlocker" ["l"="-40.507,-33.885"]
+"corkami/docs" ["l"="-45.413,-34.577", "c"=282]
+"bonzini/qboot" ["l"="8.687,-9.352", "c"=14]
 "opencomputeproject/OCP-OSF-Aptio_Community_Edition" ["l"="-40.672,-34.12"]
 "can1357/haruspex" ["l"="-40.096,-34.085"]
-"isec-tugraz/msrevelio" ["l"="-17.266,-41.946"]
+"isec-tugraz/msrevelio" ["l"="-17.266,-41.946", "c"=1132]
 "glevand/petitboot--buildroot" ["l"="-40.123,-33.83"]
+"zackelia/ghidra-dark" ["l"="-41.408,-37.621", "c"=610]
+"xoreaxeaxeax/sinkhole" ["l"="-16.447,-6.614", "c"=469]
 "HewlettPackard/oneview-chef" ["l"="-41.188,-34.162"]
 "kikileaf/ThinkPad-X230-MacOS-with-OpenCore" ["l"="-40.71,-33.922"]
 "pcbre/pcbre" ["l"="-40.495,-34.177"]
@@ -2286,16 +2494,22 @@ digraph G {
 "dell/csm" ["l"="-40.999,-34.311"]
 "dell/csm-replication" ["l"="-40.998,-34.332"]
 "acassis/xap-gcc" ["l"="-40.361,-33.59"]
-"luchina-gabriel/EFI-X99-HUANANZHI-F8-INTEL-XEON-V3-RX-580-8GB" ["l"="22.939,-22.73"]
+"luchina-gabriel/EFI-X99-HUANANZHI-F8-INTEL-XEON-V3-RX-580-8GB" ["l"="22.939,-22.73", "c"=196]
 "oscaroum/huananzhi_x99_f8" ["l"="-40.6,-33.786"]
 "dell/karavi-topology" ["l"="-41.077,-34.313"]
 "dell/helm-charts" ["l"="-41.063,-34.313"]
 "ISpillMyDrink/UEFITool" ["l"="-40.546,-34.017"]
 "dell/common-github-actions" ["l"="-41.074,-34.301"]
+"netblue30/firejail" ["l"="-53.276,9.821", "c"=19]
 "DavidIlie/ilo4-fan-controller" ["l"="-41.181,-34.068"]
-"rpm-software-management/mock" ["l"="-17.514,-2.763"]
+"10se1ucgo/DisableWinTracking" ["l"="-49.891,9.809", "c"=59]
+"rpm-software-management/mock" ["l"="-17.514,-2.763", "c"=2006]
+"memtest86plus/memtest86plus" ["l"="-14.839,-1.27", "c"=152]
+"openSIL/openSIL" ["l"="-40.344,-33.832"]
 "biosbits/bits" ["l"="-40.367,-34.169"]
 "intel/luv-yocto" ["l"="-40.357,-34.222"]
+"conorpp/u2f-zero" ["l"="56.089,3.79", "c"=931]
+"harbaum/I2C-Tiny-USB" ["l"="-14.103,-42.185", "c"=820]
 "HewlettPackard/terraform-provider-oneview" ["l"="-41.128,-34.191"]
 "HewlettPackard/oneview-osdeployment" ["l"="-41.16,-34.147"]
 "dword1511/serprog-stm32vcp" ["l"="-40.412,-33.687"]
@@ -2307,17 +2521,19 @@ digraph G {
 "shadlyd15/NesUEFI" ["l"="-40.475,-34.112"]
 "microsoft/mu_devops" ["l"="-40.289,-33.791"]
 "microsoft/mu_feature_ipmi" ["l"="-40.278,-33.781"]
+"shadlyd15/DoomLinux" ["l"="-15.892,-6.504", "c"=469]
 "openbmc/openbmc-tools" ["l"="-40.754,-34.104"]
 "openbmc/openbmc-build-scripts" ["l"="-40.77,-34.105"]
 "LongSoft/TE2PE" ["l"="-40.257,-33.984"]
-"billfarrow/pcimem" ["l"="32.646,-2.731"]
+"chris1111/Geforce-Kepler-patcher" ["l"="23.333,-22.275", "c"=196]
+"billfarrow/pcimem" ["l"="32.646,-2.731", "c"=561]
 "gittup/pciutils" ["l"="-40.146,-33.897"]
-"linux-nvme/libnvme" ["l"="1.986,15.161"]
-"starofrainnight/winio" ["l"="-42.442,-35.804"]
-"nvmedirect/nvmedirect" ["l"="2.02,15.155"]
+"linux-nvme/libnvme" ["l"="1.986,15.161", "c"=756]
+"starofrainnight/winio" ["l"="-42.442,-35.804", "c"=40]
+"nvmedirect/nvmedirect" ["l"="2.02,15.155", "c"=756]
 "Microsemi/switchtec-kernel" ["l"="-40.085,-33.91"]
 "nutanix/libvfio-user" ["l"="-40.103,-33.887"]
-"linux-rdma/perftest" ["l"="1.897,14.43"]
+"linux-rdma/perftest" ["l"="1.897,14.43", "c"=572]
 "sanpeqf/openocd-ch341a" ["l"="-40.493,-33.667"]
 "HewlettPackard/ilo-ansible-collection" ["l"="-40.998,-34.075"]
 "HewlettPackard/ansible-ilorest-role" ["l"="-40.979,-34.09"]
@@ -2325,44 +2541,45 @@ digraph G {
 "HewlettPackard/oneview-puppet" ["l"="-41.209,-34.154"]
 "dreamwhite/ChonkyIntelBluetoothFirmware-Build" ["l"="-40.53,-34.107"]
 "dreamwhite/Chonky-itlwm-Build" ["l"="-40.543,-34.101"]
-"whitequark/kicad-boardview" ["l"="-19.057,-41.679"]
-"GlasgowEmbedded/glasgow" ["l"="32.862,-3.834"]
-"radiomanV/TL866" ["l"="-21.022,-46.614"]
-"devbisme/kicad-3rd-party-tools" ["l"="-18.994,-41.613"]
-"blackmagic-debug/blackmagic" ["l"="-17.715,-43.095"]
-"chip-red-pill/MicrocodeDecryptor" ["l"="-40.181,-34.063"]
-"MarginResearch/cannoli" ["l"="-41.364,-36.167"]
-"FPSG-UIUC/hertzbleed" ["l"="-17.123,-41.984"]
-"vitoplantamura/BugChecker" ["l"="-42.891,-35.328"]
-"airbus-cert/ttddbg" ["l"="-43.091,-37.024"]
-"gaasedelen/tenet" ["l"="-43.002,-36.939"]
-"SinaKarvandi/Hypervisor-From-Scratch" ["l"="-42.971,-35.283"]
-"JonathanSalwan/Tigress_protection" ["l"="-43.033,-36.853"]
-"lifting-bits/anvill" ["l"="-43.072,-36.754"]
-"JonathanSalwan/VMProtect-devirtualization" ["l"="-41.534,-34.359"]
+"whitequark/kicad-boardview" ["l"="-19.057,-41.679", "c"=604]
+"GlasgowEmbedded/glasgow" ["l"="32.862,-3.834", "c"=180]
+"radiomanV/TL866" ["l"="-21.022,-46.614", "c"=528]
+"devbisme/kicad-3rd-party-tools" ["l"="-18.994,-41.613", "c"=604]
+"blackmagic-debug/blackmagic" ["l"="-17.715,-43.095", "c"=55]
+"Metabolix/HackBGRT" ["l"="-49.633,9.437", "c"=59]
+"berthubert/googerteller" ["l"="-53.328,11.276", "c"=710]
+"maqp/tfc" ["l"="-3.332,-28.426", "c"=4]
+"DavidS95/Smokeless_UMAF" ["l"="-12.76,-0.348", "c"=672]
+"MarginResearch/cannoli" ["l"="-41.364,-36.167", "c"=91]
+"FPSG-UIUC/hertzbleed" ["l"="-17.123,-41.984", "c"=1132]
+"vitoplantamura/BugChecker" ["l"="-42.891,-35.328", "c"=40]
+"airbus-cert/ttddbg" ["l"="-43.091,-37.024", "c"=306]
+"gaasedelen/tenet" ["l"="-43.002,-36.939", "c"=306]
+"SinaKarvandi/Hypervisor-From-Scratch" ["l"="-42.971,-35.283", "c"=40]
+"JonathanSalwan/Tigress_protection" ["l"="-43.033,-36.853", "c"=306]
+"lifting-bits/anvill" ["l"="-43.072,-36.754", "c"=306]
+"JonathanSalwan/VMProtect-devirtualization" ["l"="-41.534,-34.359", "c"=773]
 "dartraiden/NVIDIA-patcher" ["l"="-40.449,-33.872"]
-"notfromstatefarm/nvflashk" ["l"="-40.473,-33.883"]
-"IndeedMiners/PolarisBiosEditor" ["l"="-20.528,5.819"]
+"IndeedMiners/PolarisBiosEditor" ["l"="-20.528,5.819", "c"=163]
 "nethe-GitHub/select_default_GPU" ["l"="-40.456,-33.84"]
-"terminatorul/NvStrapsReBar" ["l"="-12.604,-1.665"]
-"DavidS95/Smokeless_UMAF" ["l"="-12.76,-0.348"]
-"GSDragoon/RadeonSoftwareSlimmer" ["l"="-47.641,8.899"]
-"Orbmu2k/nvidiaProfileInspector" ["l"="-12.658,-1.673"]
-"Sporif/dxvk-async" ["l"="-12.638,-1.724"]
+"terminatorul/NvStrapsReBar" ["l"="-12.604,-1.665", "c"=436]
+"Orbmu2k/nvidiaProfileInspector" ["l"="-12.658,-1.673", "c"=436]
+"Sporif/dxvk-async" ["l"="-12.638,-1.724", "c"=436]
 "MuertoGB/SMCFT" ["l"="-40.14,-33.987"]
 "MuertoGB/MacEfiToolkit" ["l"="-40.149,-33.976"]
 "GeographicCone/UefiVarTool" ["l"="-40.454,-34.044"]
-"ab3lkaizen/SCEHUB" ["l"="-47.586,8.822"]
+"ab3lkaizen/SCEHUB" ["l"="-47.586,8.822", "c"=393]
 "LaneLyng/MobilePascalTDPTweaker" ["l"="-40.479,-34.067"]
-"vmatare/thinkfan" ["l"="-14.079,-1.043"]
-"hamishcoleman/thinkpad-dosflash" ["l"="-22.453,-44.708"]
+"notpeter/apple-installer-checksums" ["l"="23.282,-22.261", "c"=196]
+"hamishcoleman/thinkpad-dosflash" ["l"="-22.453,-44.708", "c"=114]
+"SideChannelMarvels/Deadpool" ["l"="31.986,-5.084", "c"=1023]
 "xxx10101xxx/ThinkPad-X230-macOS" ["l"="-40.739,-33.899"]
 "chuckhacker/ThinkPad-X230-macOS-10.12.2" ["l"="-40.72,-33.889"]
 "ptresearch/me-disablement" ["l"="-40.238,-34.021"]
-"vinxue/UefiToolkitPkg" ["l"="-40.278,-33.962"]
-"pftf/RPi4" ["l"="42.895,7.516"]
+"JuliaPoo/Artfuscator" ["l"="-41.571,-34.443", "c"=773]
 "tianocore/edk2-non-osi" ["l"="-40.353,-33.869"]
-"intel/seam-loader" ["l"="-16.752,-42.126"]
+"Wack0/CVE-2022-21894" ["l"="-43.151,-35.379", "c"=40]
+"intel/seam-loader" ["l"="-16.752,-42.126", "c"=621]
 "kagaimiq/jl-misctools" ["l"="-40.429,-33.474"]
 "danse-macabre/ida-efitools" ["l"="-40.269,-34.085"]
 "G33KatWork/EFIPWN" ["l"="-40.296,-34.109"]
@@ -2370,66 +2587,68 @@ digraph G {
 "binarly-io/SupplyChainAttacks" ["l"="-40.393,-34.22"]
 "ibNai/BTKBAdapter" ["l"="-40.476,-33.572"]
 "LSChyi/Bluetooth-keyboard-adapter" ["l"="-40.452,-33.56"]
-"rampadc/cc254x-hidKbdM" ["l"="-23.041,-44.032"]
-"felis/USB_Host_Shield_2.0" ["l"="-13.983,-42.166"]
+"rampadc/cc254x-hidKbdM" ["l"="-23.041,-44.032", "c"=221]
+"felis/USB_Host_Shield_2.0" ["l"="-13.983,-42.166", "c"=820]
+"nguyentumine/AIO-Boot" ["l"="-50.085,10.122", "c"=59]
 "DMTF/Redfish-Interop-Validator" ["l"="-40.836,-34.122"]
 "DMTF/python-redfish-utility" ["l"="-40.897,-34.1"]
 "DMTF/libredfish" ["l"="-40.838,-34.109"]
-"osresearch/safeboot" ["l"="-18.853,-42.861"]
-"QubesOS/qubes-secpack" ["l"="-45.699,-35.221"]
-"Cr4sh/openreil" ["l"="-43.016,-36.995"]
+"osresearch/safeboot" ["l"="-18.853,-42.861", "c"=55]
+"QubesOS/qubes-secpack" ["l"="-45.699,-35.221", "c"=282]
+"Cr4sh/openreil" ["l"="-43.016,-36.995", "c"=306]
 "kolyandex/Intel-ME-region-injector" ["l"="-40.388,-33.902"]
 "bigbigmdm/EZP2019-EZP2025_chip_data_editor" ["l"="-40.498,-33.79"]
 "bigbigmdm/CH341a_spi_programmer" ["l"="-40.506,-33.776"]
 "Jazzzny/iFR" ["l"="-40.483,-33.795"]
-"openSIL/openSIL" ["l"="-40.344,-33.832"]
-"amd/AMD-ASPFW" ["l"="-16.825,-42.116"]
+"amd/AMD-ASPFW" ["l"="-16.825,-42.116", "c"=621]
 "amd/firmware_binaries" ["l"="-40.336,-33.794"]
 "oxidecomputer/phbl" ["l"="-40.323,-33.776"]
+"realoriginal/bootlicker" ["l"="-43.118,-35.397", "c"=40]
 "DMTF/Redfish-Mockup-Server" ["l"="-40.873,-34.075"]
 "DMTF/Redfish-Mockup-Creator" ["l"="-40.859,-34.069"]
-"redhat-performance/badfish" ["l"="10.241,-11.481"]
 "intel/intelRSD" ["l"="-40.815,-34.136"]
 "DMTF/Redfish-Interface-Emulator" ["l"="-40.887,-34.064"]
 "DMTF/Redfish-Profile-Simulator" ["l"="-40.914,-34.053"]
-"spddl/GoInterruptPolicy" ["l"="-47.609,8.843"]
-"sp00n/CoreCycler" ["l"="-47.607,8.955"]
-"emoose/DLSSTweaks" ["l"="-12.653,-1.627"]
+"spddl/GoInterruptPolicy" ["l"="-47.609,8.843", "c"=393]
+"emoose/DLSSTweaks" ["l"="-12.653,-1.627", "c"=436]
 "HewlettPackard/ilo-rest-api-docs" ["l"="-40.994,-34.098"]
+"nmikhailov/Validity90" ["l"="-14.198,-1.126", "c"=152]
 "Cr4sh/pico_dma" ["l"="-40.282,-34.162"]
-"Oliver-1-1/SmmInfect" ["l"="-41.704,-34.318"]
-"realoriginal/bootlicker" ["l"="-43.118,-35.397"]
+"Oliver-1-1/SmmInfect" ["l"="-41.704,-34.318", "c"=773]
 "ekknod/smm" ["l"="-40.305,-34.182"]
-"Xyrem/HyperDeceit" ["l"="-43.05,-35.483"]
-"Cr4sh/s6_pcie_microblaze" ["l"="-43.047,-35.346"]
-"xoreaxeaxeax/sandsifter" ["l"="-16.497,-6.613"]
-"speed47/spectre-meltdown-checker" ["l"="-17.438,-42.018"]
-"evilsocket/opensnitch" ["l"="-53.726,11.183"]
-"pyllyukko/user.js" ["l"="-52.476,12.418"]
-"netblue30/firejail" ["l"="-53.276,9.821"]
-"gorhill/uMatrix" ["l"="-52.5,12.342"]
+"Xyrem/HyperDeceit" ["l"="-43.05,-35.483", "c"=40]
+"xoreaxeaxeax/sandsifter" ["l"="-16.497,-6.613", "c"=469]
+"evilsocket/opensnitch" ["l"="-53.726,11.183", "c"=710]
+"gorhill/uMatrix" ["l"="-52.5,12.342", "c"=266]
+"libc0607/Realtek_switch_hacking" ["l"="-65.468,14.505", "c"=1333]
+"hardenedlinux/linux-exploit-development-tutorial" ["l"="-45.09,-34.735", "c"=282]
 "Microsemi/switchtec-user" ["l"="-40.054,-33.906"]
 "Microsemi/switchtec-dma" ["l"="-40.055,-33.919"]
+"a1ive/grub2-filemanager" ["l"="-50.133,10.165", "c"=59]
 "opencomputeproject/Project_Olympus" ["l"="-40.16,-33.861"]
-"PreOS-Security/awesome-firmware-security" ["l"="-40.405,-34.112"]
-"PreOS-Security/fwaudit" ["l"="-46.757,-34.148"]
 "raplin/CsrUsbSpiDeviceRE" ["l"="-40.4,-33.583"]
+"981213/mtk_uartboot" ["l"="-65.236,15.301", "c"=995]
 "tmbinc/bgrep" ["l"="-40.237,-34.142"]
-"ohjeongwook/dumpflash" ["l"="31.983,-5.112"]
+"pirate/sites-using-cloudflare" ["l"="23.836,-27.589", "c"=28]
+"Billy-Ellis/Exploit-Challenges" ["l"="-45.012,-34.58", "c"=282]
+"ohjeongwook/dumpflash" ["l"="31.983,-5.112", "c"=1023]
 "7134956/nand_programmer" ["l"="-40.417,-33.747"]
 "whitcloudfly/CUBE_NANDO_HAL" ["l"="-40.39,-33.763"]
 "hbeatty/iDRAC-Ansible-module" ["l"="-40.851,-34.164"]
 "anupamaloke/Dell-EMC-Ansible-Modules-for-iDRAC" ["l"="-40.863,-34.171"]
+"louwrentius/fio-plot" ["l"="2.098,15.107", "c"=756]
+"zeffy/wufuc" ["l"="-49.732,9.887", "c"=59]
 "hymen81/UEFI-Game-FlappyBirdy" ["l"="-40.193,-33.742"]
 "rubikshift/UEFI_MARIO" ["l"="-40.189,-33.72"]
+"xsh3llsh0ck/Deadwing" ["l"="-41.706,-34.267", "c"=773]
 "openbmc/phosphor-fan-presence" ["l"="-40.778,-34.118"]
 "dell/DellPEWSMANTools" ["l"="-40.924,-34.12"]
-"stmcginnis/gofish" ["l"="3.654,-6.819"]
+"stmcginnis/gofish" ["l"="3.654,-6.819", "c"=0]
 "bb-Ricardo/check_redfish" ["l"="-40.886,-34.165"]
 "dell/OpenManage-PowerShell-Modules" ["l"="-40.917,-34.132"]
-"sam-b/windows_kernel_resources" ["l"="-41.553,-36.461"]
-"Billy-Ellis/Exploit-Challenges" ["l"="-45.012,-34.58"]
-"CHEF-KOCH/Android-Vulnerabilities-Overview" ["l"="-41.187,-36.195"]
-"Fuzion24/AndroidKernelExploitationPlayground" ["l"="-41.3,-36.25"]
+"postmarketOS/pmbootstrap" ["l"="-16.558,-0.397", "c"=339]
+"sam-b/windows_kernel_resources" ["l"="-41.553,-36.461", "c"=91]
+"CHEF-KOCH/Android-Vulnerabilities-Overview" ["l"="-41.187,-36.195", "c"=91]
+"Fuzion24/AndroidKernelExploitationPlayground" ["l"="-41.3,-36.25", "c"=91]
 "s-sosnitskiy80/Insider_BIOS_Tools" ["l"="-40.19,-34.124"]
 }

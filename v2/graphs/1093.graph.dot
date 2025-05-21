@@ -14,17 +14,30 @@ digraph G {
 "nette/php-generator" -> "nette/application"
 "nette/php-generator" -> "nette/tester"
 "nette/php-generator" -> "nette/security"
+"phpstan/phpstan-symfony" -> "nette/robot-loader" ["e"=1]
+"phpstan/phpstan-symfony" -> "nette/bootstrap" ["e"=1]
+"phpstan/phpstan-symfony" -> "nette/neon" ["e"=1]
+"phpstan/phpstan-symfony" -> "nette/finder" ["e"=1]
+"phpstan/phpstan-symfony" -> "nette/di" ["e"=1]
 "shopsys/shopsys" -> "shopsys/framework"
 "shopsys/shopsys" -> "shopsys/project-base"
 "shopsys/shopsys" -> "shopsys/http-smoke-testing"
 "shopsys/shopsys" -> "shopsys/coding-standards"
 "shopsys/shopsys" -> "shopsys/monorepo-tools" ["e"=1]
 "shopsys/shopsys" -> "slevomat/eet-client"
+"shopsys/monorepo-tools" -> "shopsys/project-base" ["e"=1]
+"shopsys/monorepo-tools" -> "shopsys/framework" ["e"=1]
+"shopsys/monorepo-tools" -> "shopsys/shopsys" ["e"=1]
+"shopsys/monorepo-tools" -> "shopsys/coding-standards" ["e"=1]
+"shopsys/monorepo-tools" -> "shopsys/http-smoke-testing" ["e"=1]
 "shopsys/project-base" -> "shopsys/framework"
 "shopsys/project-base" -> "shopsys/coding-standards"
 "shopsys/project-base" -> "shopsys/http-smoke-testing"
 "shopsys/framework" -> "shopsys/coding-standards"
 "shopsys/framework" -> "shopsys/project-base"
+"danielm/uploader" -> "nette/tracy" ["e"=1]
+"SleekDB/SleekDB" -> "nette/latte" ["e"=1]
+"joaomilho/Enterprise" -> "nette/tracy" ["e"=1]
 "antonioribeiro/countries-laravel" -> "antonioribeiro/ia-collection"
 "antonioribeiro/countries-laravel" -> "antonioribeiro/ia-arr"
 "antonioribeiro/countries-laravel" -> "antonioribeiro/ia-str"
@@ -123,6 +136,8 @@ digraph G {
 "nette/forms" -> "nette/latte"
 "nette/forms" -> "nette/robot-loader"
 "nette/forms" -> "nette/schema"
+"phpstan/phpdoc-parser" -> "nette/robot-loader" ["e"=1]
+"phpstan/phpdoc-parser" -> "nette/finder" ["e"=1]
 "nette/robot-loader" -> "nette/finder"
 "nette/robot-loader" -> "nette/bootstrap"
 "nette/robot-loader" -> "nette/neon"
@@ -153,6 +168,8 @@ digraph G {
 "nette/application" -> "nette/latte"
 "nette/application" -> "nette/robot-loader"
 "nette/application" -> "nette/schema"
+"thephpleague/plates" -> "nette/latte" ["e"=1]
+"banago/PHPloy" -> "dg/ftp-deployment" ["e"=1]
 "nextras/migrations" -> "nextras/dbal"
 "nextras/migrations" -> "contributte/console"
 "nextras/migrations" -> "phpstan/phpstan-nette"
@@ -191,12 +208,14 @@ digraph G {
 "nette/http" -> "nette/robot-loader"
 "nette/http" -> "nette/latte"
 "nette/http" -> "nette/finder"
+"pdepend/pdepend" -> "nette/bootstrap" ["e"=1]
 "setnicka/ulozto-downloader" -> "JanPalasek/ulozto-captcha-breaker"
 "setnicka/ulozto-downloader" -> "covid19cz/erouska-android"
 "setnicka/ulozto-downloader" -> "tkohout/OSTRAJava"
 "setnicka/ulozto-downloader" -> "pkejval/uld-docker"
 "setnicka/ulozto-downloader" -> "bakalari-api/bakalari-api"
 "setnicka/ulozto-downloader" -> "zigul/HomeAssistant-CEZdistribuce"
+"PHP-CS-Fixer/diff" -> "nette/finder" ["e"=1]
 "nette/di" -> "nette/bootstrap"
 "nette/di" -> "nette/neon"
 "nette/di" -> "nette/robot-loader"
@@ -290,6 +309,10 @@ digraph G {
 "nette/mail" -> "nette/latte"
 "nette/mail" -> "nette/robot-loader"
 "nette/mail" -> "nette/schema"
+"phpstan/phpstan-phpunit" -> "nette/robot-loader" ["e"=1]
+"phpstan/phpstan-phpunit" -> "nette/bootstrap" ["e"=1]
+"phpstan/phpstan-phpunit" -> "nette/neon" ["e"=1]
+"phpstan/phpstan-phpunit" -> "nette/finder" ["e"=1]
 "vitSkalicky/lepsi-rozvrh" -> "bakalari-api/bakalari-api"
 "contributte/doctrine-fixtures" -> "contributte/doctrine-cache"
 "contributte/doctrine-fixtures" -> "contributte/doctrine-annotations"
@@ -403,6 +426,8 @@ digraph G {
 "nette/nette" -> "nette/bootstrap"
 "nette/nette" -> "nette/di"
 "nette/nette" -> "nette/tracy"
+"biberlabs/awesome-doctrine" -> "mrtnzlml-archive/CMS-lite" ["e"=1]
+"biberlabs/awesome-doctrine" -> "DeprecatedPackages/DoctrineMigrations" ["e"=1]
 "heureka/php-rq" -> "mkoubik/sloth"
 "dg/dibi" -> "nette/database"
 "dg/dibi" -> "nette/http"
@@ -420,6 +445,7 @@ digraph G {
 "dg/dibi" -> "nette/mail"
 "dg/dibi" -> "contributte/translation"
 "JanPalasek/ulozto-captcha-breaker" -> "setnicka/ulozto-downloader"
+"phpstan/phpstan-src" -> "phpstan/phpstan-nette" ["e"=1]
 "covid19cz/erouska-android" -> "covid19cz/erouska-ios"
 "covid19cz/erouska-android" -> "covid19cz/erouska-homepage"
 "covid19cz/erouska-android" -> "covid19cz/erouska-backend"
@@ -430,10 +456,20 @@ digraph G {
 "Kdyby/RabbitMq" -> "Kdyby/Monolog"
 "heureka/inflection" -> "Tharos/Schematic"
 "Toaster192/czech.h" -> "vutfitdiscord/rubbergod"
+"GrahamCampbell/Result-Type" -> "nette/schema" ["e"=1]
 "nextras/dbal" -> "nextras/migrations"
 "nextras/dbal" -> "nextras/orm"
 "nextras/dbal" -> "nextras/datagrid"
+"brick/date-time" -> "peckadesign/Monitoring" ["e"=1]
+"brick/date-time" -> "nextras/migrations" ["e"=1]
+"brick/date-time" -> "naja-js/naja" ["e"=1]
+"brick/date-time" -> "nittro/nittro" ["e"=1]
+"brick/date-time" -> "contributte/console" ["e"=1]
+"brick/date-time" -> "contributte/componette-site" ["e"=1]
+"brick/date-time" -> "Kdyby/Translation" ["e"=1]
+"brick/date-time" -> "peckadesign/AsyncControl" ["e"=1]
 "bakalari-api/bakalari-api-v3" -> "bakalari-api/bakalari-api"
+"morris/lessql" -> "nextras/orm" ["e"=1]
 "covid19cz/erouska-ios" -> "covid19cz/erouska-android"
 "covid19cz/erouska-ios" -> "covid19cz/erouska-webapp"
 "dg/composer-cleaner" -> "dg/php-extensions-finder"
@@ -456,9 +492,17 @@ digraph G {
 "Kdyby/TesterExtras" -> "bitbang/http"
 "Kdyby/FakeSession" -> "milo/hydrator"
 "sinus-x/rubbergoddess" -> "sinus-x/discord-wormhole"
+"laravel/sail" -> "nette/schema" ["e"=1]
+"paragonie/easydb" -> "dg/dibi" ["e"=1]
+"thephpleague/config" -> "nette/schema" ["e"=1]
+"dflydev/dflydev-dot-access-data" -> "nette/schema" ["e"=1]
+"peppeocchi/php-cron-scheduler" -> "nette/php-generator" ["e"=1]
+"phpmyadmin/sql-parser" -> "nette/schema" ["e"=1]
+"formr/formr" -> "nette/forms" ["e"=1]
 "sjurba/rebase-editor" -> "MitMaro/git-interactive-rebase-tool" ["e"=1]
 "sjurba/rebase-editor" -> "nextras/migrations"
 "sjurba/rebase-editor" -> "contributte/componette-site"
+"JakubOnderka/PHP-Parallel-Lint" -> "nette/neon" ["e"=1]
 "janmarek/WebLoader" -> "nittro/nittro"
 "mrtnzlml-archive/testbench" -> "contributte/componette-site"
 "mrtnzlml-archive/testbench" -> "mrtnzlml-archive/zlml.cz"
@@ -489,6 +533,11 @@ digraph G {
 "haltuf/genderer" -> "nextras/tracy-monolog-adapter"
 "janmarek/Texyla" -> "Kdyby/Wkhtmltopdf"
 "nextras/tracy-query-panel" -> "nextras/tracy-monolog-adapter"
+"slevomat/coding-standard" -> "nette/utils" ["e"=1]
+"slevomat/coding-standard" -> "nette/robot-loader" ["e"=1]
+"slevomat/coding-standard" -> "nette/finder" ["e"=1]
+"nunomaduro/termwind" -> "nette/schema" ["e"=1]
+"kint-php/kint" -> "nette/tracy" ["e"=1]
 "vojtech-dobes/nette.ajax.js" -> "Kdyby/Translation"
 "vojtech-dobes/nette.ajax.js" -> "Kdyby/Doctrine"
 "vojtech-dobes/nette.ajax.js" -> "nette/sandbox"
@@ -528,6 +577,7 @@ digraph G {
 "nittro/nittro" -> "Tharos/Schematic"
 "nittro/nittro" -> "phpstan/phpstan-nette"
 "nittro/nittro" -> "WebChemistry/images"
+"laravel/serializable-closure" -> "nette/schema" ["e"=1]
 "nette-intellij/intellij-neon" -> "nette-intellij/intellij-nette"
 "nette-intellij/intellij-neon" -> "nette-intellij/intellij-latte"
 "phpstan/phpstan-nette" -> "contributte/console"
@@ -545,6 +595,7 @@ digraph G {
 "contributte/componette-site" -> "nette-intellij/intellij-nette-factory-generator"
 "mrtnzlml-archive/CMS-lite" -> "mrtnzlml-archive/zlml.cz"
 "Tharos/Schematic" -> "nittro/nittro"
+"lulco/phoenix" -> "tomaj/nette-api" ["e"=1]
 "tomaj/nette-api" -> "ricco24/api-nette"
 "milo/vendor-versions" -> "nextras/tracy-monolog-adapter"
 "shopsys/coding-standards" -> "shopsys/framework"
@@ -598,6 +649,7 @@ digraph G {
 "dg/texy" -> "contributte/application"
 "dg/texy" -> "nette/safe-stream"
 "dg/texy" -> "phpstan/phpstan-nette"
+"marc-mabe/php-enum" -> "consistence/consistence" ["e"=1]
 "Krejdom/school_notes" -> "spito/testing"
 "Krejdom/school_notes" -> "xbrukner/bc_statnice"
 "Krejdom/school_notes" -> "teaching-lab/stack-cs-activities"
@@ -612,6 +664,10 @@ digraph G {
 "Kdyby/StrictObjects" -> "mkoubik/sloth"
 "Kdyby/StrictObjects" -> "milo/vendor-versions"
 "nextras/tracy-monolog-adapter" -> "milo/vendor-versions"
+"EFTEC/BladeOne" -> "nette/latte" ["e"=1]
+"EFTEC/BladeOne" -> "nette/http" ["e"=1]
+"EFTEC/BladeOne" -> "nette/tracy" ["e"=1]
+"vrana/notorm" -> "nette/nette" ["e"=1]
 "ondrejnov/eet" -> "slevomat/eet-client"
 "ondrejnov/eet" -> "filipsedivy/php-eet"
 "ondrejnov/eet" -> "JakubMrozek/eet"
@@ -635,10 +691,13 @@ digraph G {
 "schematicon/validator-php" -> "nextras/tracy-monolog-adapter"
 "ricco24/api-nette" -> "mkoubik/sloth"
 "milo/hydrator" -> "Kdyby/FakeSession"
+"MitMaro/git-interactive-rebase-tool" -> "sjurba/rebase-editor" ["e"=1]
+"komarserjio/notejam" -> "nette-intellij/intellij-nette-factory-generator" ["e"=1]
 "slevomat/eet-client" -> "ondrejnov/eet"
 "slevomat/eet-client" -> "nittro/nittro"
 "slevomat/eet-client" -> "contributte/doctrine-orm"
 "slevomat/eet-client" -> "peckadesign/Monitoring"
+"ifsnop/mysqldump-php" -> "nette/latte" ["e"=1]
 "Kdyby/Doctrine" -> "Kdyby/Events"
 "Kdyby/Doctrine" -> "Kdyby/Translation"
 "Kdyby/Doctrine" -> "Kdyby/Console"
@@ -693,6 +752,7 @@ digraph G {
 "Kdyby/Events" -> "Kdyby/Console"
 "Kdyby/Events" -> "nette/reflection"
 "nextras/secured-links" -> "nextras/mail-panel"
+"easy-coding-standard/easy-coding-standard" -> "nette/robot-loader" ["e"=1]
 "naja-js/naja" -> "nittro/nittro"
 "naja-js/naja" -> "contributte/webpack"
 "naja-js/naja" -> "nextras/migrations"
@@ -703,6 +763,12 @@ digraph G {
 "naja-js/naja" -> "Tharos/Schematic"
 "naja-js/naja" -> "contributte/webpack-skeleton"
 "naja-js/naja" -> "fmasa/auto-di"
+"phpstan/phpstan-doctrine" -> "nette/robot-loader" ["e"=1]
+"phpstan/phpstan-doctrine" -> "nette/finder" ["e"=1]
+"phpstan/phpstan-doctrine" -> "nette/bootstrap" ["e"=1]
+"phpstan/phpstan-doctrine" -> "nette/neon" ["e"=1]
+"phpstan/phpstan-doctrine" -> "nette/di" ["e"=1]
+"orchestral/testbench-core" -> "nette/bootstrap" ["e"=1]
 "contributte/doctrine-orm" -> "contributte/doctrine-dbal"
 "contributte/doctrine-orm" -> "contributte/doctrine-migrations"
 "contributte/doctrine-orm" -> "contributte/doctrine-annotations"
@@ -728,6 +794,7 @@ digraph G {
 "shopsys/http-smoke-testing" -> "shopsys/coding-standards"
 "shopsys/http-smoke-testing" -> "shopsys/framework"
 "shopsys/http-smoke-testing" -> "shopsys/project-base"
+"loadingio/css-spinner" -> "nette/tracy" ["e"=1]
 "nette/sandbox" -> "nette/examples"
 "nette/sandbox" -> "nette/web-project"
 "nette/sandbox" -> "nette/code-checker"
@@ -736,11 +803,18 @@ digraph G {
 "nette/sandbox" -> "naja-js/naja"
 "nette/examples" -> "nette/sandbox"
 "nette/examples" -> "nette/code-checker"
+"Jean85/pretty-package-versions" -> "nette/finder" ["e"=1]
+"Jean85/pretty-package-versions" -> "nette/robot-loader" ["e"=1]
+"Jean85/pretty-package-versions" -> "nette/utils" ["e"=1]
+"Jean85/pretty-package-versions" -> "nette/bootstrap" ["e"=1]
+"Jean85/pretty-package-versions" -> "nette/neon" ["e"=1]
+"Jean85/pretty-package-versions" -> "nette/di" ["e"=1]
 "contributte/doctrine-dbal" -> "contributte/doctrine-cache"
 "contributte/doctrine-dbal" -> "contributte/doctrine-annotations"
 "contributte/doctrine-dbal" -> "contributte/doctrine-migrations"
 "contributte/doctrine-dbal" -> "contributte/doctrine-fixtures"
 "contributte/doctrine-dbal" -> "contributte/doctrine-orm"
+"czproject/git-php" -> "dg/MySQL-dump" ["e"=1]
 "brabijan/images" -> "DeprecatedPackages/DoctrineMigrations"
 "nette-intellij/intellij-nette" -> "nette-intellij/intellij-neon"
 "nette-intellij/intellij-nette" -> "nette-intellij/intellij-latte"
@@ -753,21 +827,27 @@ digraph G {
 "nette/finder" ["l"="-14.914,25.382"]
 "nette/utils" ["l"="-14.936,25.366"]
 "nette/schema" ["l"="-14.89,25.393"]
-"Jean85/pretty-package-versions" ["l"="-13.918,26.198"]
-"phpstan/phpdoc-parser" ["l"="-13.846,26.339"]
+"Jean85/pretty-package-versions" ["l"="-13.918,26.198", "c"=111]
+"phpstan/phpdoc-parser" ["l"="-13.846,26.339", "c"=111]
 "nette/http" ["l"="-14.923,25.434"]
 "nette/caching" ["l"="-14.895,25.412"]
 "nette/component-model" ["l"="-14.91,25.432"]
 "nette/application" ["l"="-14.893,25.426"]
 "nette/tester" ["l"="-14.895,25.439"]
 "nette/security" ["l"="-14.905,25.422"]
+"phpstan/phpstan-symfony" ["l"="-15.637,25.888", "c"=50]
 "shopsys/shopsys" ["l"="-14.661,25.682"]
 "shopsys/framework" ["l"="-14.647,25.699"]
 "shopsys/project-base" ["l"="-14.628,25.698"]
 "shopsys/http-smoke-testing" ["l"="-14.638,25.711"]
 "shopsys/coding-standards" ["l"="-14.637,25.688"]
-"shopsys/monorepo-tools" ["l"="-16.178,25.989"]
+"shopsys/monorepo-tools" ["l"="-16.178,25.989", "c"=50]
 "slevomat/eet-client" ["l"="-14.74,25.623"]
+"danielm/uploader" ["l"="22.372,-30.876", "c"=239]
+"nette/tracy" ["l"="-14.924,25.46"]
+"SleekDB/SleekDB" ["l"="-17.49,23.704", "c"=676]
+"nette/latte" ["l"="-14.895,25.457"]
+"joaomilho/Enterprise" ["l"="-16.691,-6.487", "c"=469]
 "antonioribeiro/countries-laravel" ["l"="-14.922,25.25"]
 "antonioribeiro/ia-collection" ["l"="-14.93,25.277"]
 "antonioribeiro/ia-arr" ["l"="-14.922,25.268"]
@@ -778,12 +858,14 @@ digraph G {
 "nette/forms" ["l"="-14.879,25.441"]
 "nette/mail" ["l"="-14.912,25.445"]
 "nette/database" ["l"="-14.878,25.425"]
-"nette/latte" ["l"="-14.895,25.457"]
-"thephpleague/config" ["l"="-13.826,26.245"]
-"composer/xdebug-handler" ["l"="-14.107,26.165"]
-"php-fig/http-factory" ["l"="-13.969,26.243"]
-"dflydev/dflydev-dot-access-data" ["l"="-15.373,23.495"]
-"ramsey/collection" ["l"="-13.887,26.301"]
+"thephpleague/config" ["l"="-13.826,26.245", "c"=111]
+"composer/xdebug-handler" ["l"="-14.107,26.165", "c"=111]
+"php-fig/http-factory" ["l"="-13.969,26.243", "c"=111]
+"dflydev/dflydev-dot-access-data" ["l"="-15.373,23.495", "c"=361]
+"ramsey/collection" ["l"="-13.887,26.301", "c"=111]
+"thephpleague/plates" ["l"="-17.537,23.656", "c"=676]
+"banago/PHPloy" ["l"="-15.92,25.608", "c"=50]
+"dg/ftp-deployment" ["l"="-14.851,25.478"]
 "nextras/migrations" ["l"="-14.859,25.547"]
 "nextras/dbal" ["l"="-14.892,25.522"]
 "contributte/console" ["l"="-14.872,25.564"]
@@ -793,6 +875,7 @@ digraph G {
 "nextras/orm" ["l"="-14.872,25.517"]
 "nextras/mail-panel" ["l"="-14.936,25.551"]
 "phpstan/phpstan-mockery" ["l"="-14.957,25.54"]
+"pdepend/pdepend" ["l"="-15.81,26.039", "c"=50]
 "setnicka/ulozto-downloader" ["l"="-14.649,25.428"]
 "JanPalasek/ulozto-captcha-breaker" ["l"="-14.622,25.423"]
 "covid19cz/erouska-android" ["l"="-14.603,25.405"]
@@ -800,12 +883,14 @@ digraph G {
 "pkejval/uld-docker" ["l"="-14.63,25.442"]
 "bakalari-api/bakalari-api" ["l"="-14.685,25.405"]
 "zigul/HomeAssistant-CEZdistribuce" ["l"="-14.607,25.445"]
+"PHP-CS-Fixer/diff" ["l"="-14.217,24.486", "c"=181]
 "vutfitdiscord/rubbergod" ["l"="-14.662,25.398"]
 "sinus-x/rubbergoddess" ["l"="-14.638,25.368"]
 "su-fit-vut/student-voice" ["l"="-14.654,25.373"]
 "kub05h/fitsch" ["l"="-14.641,25.387"]
-"GrahamCampbell/Result-Type" ["l"="-13.866,26.249"]
-"laravel/serializable-closure" ["l"="-13.808,26.25"]
+"GrahamCampbell/Result-Type" ["l"="-13.866,26.249", "c"=111]
+"laravel/serializable-closure" ["l"="-13.808,26.25", "c"=111]
+"phpstan/phpstan-phpunit" ["l"="-15.624,25.859", "c"=50]
 "vitSkalicky/lepsi-rozvrh" ["l"="-14.689,25.385"]
 "contributte/doctrine-fixtures" ["l"="-14.869,25.597"]
 "contributte/doctrine-cache" ["l"="-14.883,25.588"]
@@ -862,11 +947,14 @@ digraph G {
 "Komarovec/NeuralSandbox" ["l"="-14.581,25.376"]
 "Komarovec/NeuralQsandbox" ["l"="-14.569,25.382"]
 "nette/nette" ["l"="-14.861,25.442"]
-"nette/tracy" ["l"="-14.924,25.46"]
+"biberlabs/awesome-doctrine" ["l"="-16.44,23.578", "c"=1167]
+"mrtnzlml-archive/CMS-lite" ["l"="-14.869,25.682"]
+"DeprecatedPackages/DoctrineMigrations" ["l"="-15.041,25.623"]
 "heureka/php-rq" ["l"="-14.785,25.707"]
 "mkoubik/sloth" ["l"="-14.8,25.685"]
 "dg/dibi" ["l"="-14.886,25.483"]
 "dg/texy" ["l"="-14.929,25.528"]
+"phpstan/phpstan-src" ["l"="-15.657,25.904", "c"=50]
 "covid19cz/erouska-ios" ["l"="-14.571,25.402"]
 "covid19cz/erouska-homepage" ["l"="-14.603,25.382"]
 "covid19cz/erouska-backend" ["l"="-14.59,25.387"]
@@ -877,6 +965,10 @@ digraph G {
 "heureka/inflection" ["l"="-14.749,25.577"]
 "Tharos/Schematic" ["l"="-14.79,25.564"]
 "Toaster192/czech.h" ["l"="-14.678,25.423"]
+"brick/date-time" ["l"="-15.606,25.933", "c"=50]
+"peckadesign/Monitoring" ["l"="-14.766,25.627"]
+"peckadesign/AsyncControl" ["l"="-14.781,25.553"]
+"morris/lessql" ["l"="-16.123,25.518", "c"=50]
 "dg/composer-cleaner" ["l"="-14.821,25.605"]
 "haltuf/genderer" ["l"="-14.797,25.629"]
 "fprochazka/travis-local-build" ["l"="-14.838,25.639"]
@@ -889,8 +981,14 @@ digraph G {
 "Kdyby/TesterExtras" ["l"="-14.777,25.613"]
 "sinus-x/discord-wormhole" ["l"="-14.625,25.352"]
 "Kdyby/FakeSession" ["l"="-14.828,25.662"]
+"laravel/sail" ["l"="-13.826,26.284", "c"=111]
+"paragonie/easydb" ["l"="-15.963,25.549", "c"=50]
+"peppeocchi/php-cron-scheduler" ["l"="-16.11,25.731", "c"=50]
+"phpmyadmin/sql-parser" ["l"="-13.74,26.305", "c"=111]
+"formr/formr" ["l"="-17.427,23.65", "c"=676]
 "sjurba/rebase-editor" ["l"="-14.88,25.615"]
-"MitMaro/git-interactive-rebase-tool" ["l"="-13.21,-6.962"]
+"MitMaro/git-interactive-rebase-tool" ["l"="-13.21,-6.962", "c"=86]
+"JakubOnderka/PHP-Parallel-Lint" ["l"="-15.729,25.905", "c"=50]
 "janmarek/WebLoader" ["l"="-14.811,25.504"]
 "kaja47/Matcher" ["l"="-14.987,25.582"]
 "brabijan/images" ["l"="-15.018,25.607"]
@@ -911,43 +1009,51 @@ digraph G {
 "contributte/oauth2-client" ["l"="-15.026,25.558"]
 "janmarek/Texyla" ["l"="-15.056,25.596"]
 "nextras/tracy-query-panel" ["l"="-14.828,25.691"]
+"slevomat/coding-standard" ["l"="-15.75,25.91", "c"=50]
+"nunomaduro/termwind" ["l"="-14.656,30.314", "c"=46]
+"kint-php/kint" ["l"="-16.215,25.828", "c"=50]
 "vojtech-dobes/nette.ajax.js" ["l"="-14.831,25.524"]
 "Kdyby/Doctrine" ["l"="-14.875,25.541"]
 "nette/coding-standard" ["l"="-14.793,25.496"]
 "WebChemistry/images" ["l"="-14.78,25.536"]
 "nette-intellij/intellij-nette-factory-generator" ["l"="-14.831,25.586"]
-"mrtnzlml-archive/CMS-lite" ["l"="-14.869,25.682"]
+"lulco/phoenix" ["l"="-16.606,25.579", "c"=50]
 "tomaj/nette-api" ["l"="-14.781,25.752"]
 "ricco24/api-nette" ["l"="-14.79,25.725"]
 "jkremser/nahodny-slusny-cech" ["l"="-14.69,25.473"]
 "Krejdom/school_notes" ["l"="-14.647,25.481"]
 "honzajavorek/cs-apis" ["l"="-14.732,25.413"]
 "tenhobi/maturita-sps-cl" ["l"="-14.672,25.454"]
-"dg/ftp-deployment" ["l"="-14.851,25.478"]
-"banago/PHPloy" ["l"="-15.92,25.608"]
 "xiaoxiae/Maturita-CZ" ["l"="-14.648,25.46"]
+"marc-mabe/php-enum" ["l"="-16.144,25.715", "c"=50]
+"consistence/consistence" ["l"="-14.814,25.573"]
 "xbrukner/bc_statnice" ["l"="-14.624,25.481"]
 "teaching-lab/stack-cs-activities" ["l"="-14.63,25.5"]
+"EFTEC/BladeOne" ["l"="-17.506,23.619", "c"=676]
+"vrana/notorm" ["l"="-17.717,23.62", "c"=676]
 "ondrejnov/eet" ["l"="-14.719,25.657"]
 "filipsedivy/php-eet" ["l"="-14.72,25.679"]
 "JakubMrozek/eet" ["l"="-14.693,25.666"]
 "mhujer/fio-api-php" ["l"="-14.703,25.687"]
 "schematicon/validator-php" ["l"="-14.807,25.673"]
-"peckadesign/Monitoring" ["l"="-14.766,25.627"]
+"komarserjio/notejam" ["l"="-16.448,23.514", "c"=1167]
+"ifsnop/mysqldump-php" ["l"="-16.217,25.675", "c"=50]
 "Kdyby/Console" ["l"="-14.895,25.55"]
 "nextras/forms" ["l"="-14.906,25.577"]
 "contributte/mailing" ["l"="-14.977,25.671"]
-"consistence/consistence" ["l"="-14.814,25.573"]
 "fmasa/auto-di" ["l"="-14.801,25.556"]
 "consistence/coding-standard" ["l"="-14.774,25.59"]
-"peckadesign/AsyncControl" ["l"="-14.781,25.553"]
+"easy-coding-standard/easy-coding-standard" ["l"="-15.791,25.916", "c"=50]
 "contributte/webpack" ["l"="-14.75,25.522"]
 "contributte/webpack-skeleton" ["l"="-14.767,25.521"]
+"phpstan/phpstan-doctrine" ["l"="-15.655,25.885", "c"=50]
+"orchestral/testbench-core" ["l"="-14.05,26.458", "c"=111]
 "uestla/YetORM" ["l"="-14.778,25.634"]
 "mkraemer/react-pcntl" ["l"="-14.844,25.72"]
+"loadingio/css-spinner" ["l"="22.105,-29.535", "c"=36]
 "nette/examples" ["l"="-14.761,25.489"]
 "nette/code-checker" ["l"="-14.741,25.492"]
 "nette/build-tools" ["l"="-14.753,25.504"]
-"DeprecatedPackages/DoctrineMigrations" ["l"="-15.041,25.623"]
+"czproject/git-php" ["l"="-15.582,25.558", "c"=50]
 "Kdyby/DateTimeProvider" ["l"="-14.846,25.664"]
 }

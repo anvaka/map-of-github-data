@@ -32,6 +32,7 @@ digraph G {
 "IQSS/dataverse" -> "IQSS/dataverse-client-javascript"
 "IQSS/dataverse" -> "samvera/hyrax"
 "IQSS/dataverse" -> "openjournals/joss" ["e"=1]
+"lindeloev/tests-as-linear" -> "debruine/faux" ["e"=1]
 "rero/sonar" -> "rero/rero-ils-ui"
 "NatLibFi/Annif" -> "NatLibFi/Annif-tutorial"
 "NatLibFi/Annif" -> "NatLibFi/Skosmos" ["e"=1]
@@ -73,6 +74,9 @@ digraph G {
 "projectblacklight/blacklight-gallery" -> "projectblacklight/blacklight-vue"
 "DSpace-Labs/SAFBuilder" -> "cstarcher/pysaf"
 "DSpace-Labs/SAFBuilder" -> "the-library-code/dspace-rest-python"
+"ckan/ckan" -> "IQSS/dataverse" ["e"=1]
+"indico/indico" -> "inveniosoftware/invenio" ["e"=1]
+"indico/indico" -> "zenodo/zenodo" ["e"=1]
 "inveniosoftware/invenio" -> "zenodo/zenodo"
 "inveniosoftware/invenio" -> "inveniosoftware/invenio-app-rdm"
 "inveniosoftware/invenio" -> "inveniosoftware/training"
@@ -106,6 +110,7 @@ digraph G {
 "pulibrary/bibdata" -> "pulibrary/orangelight"
 "IQSS/dataverse-client-javascript" -> "IQSS/dataverse-frontend"
 "rero/rero-ils-ui" -> "rero/sonar"
+"textbrowser/dooble" -> "textbrowser/biblioteq" ["e"=1]
 "projectblacklight/blacklight" -> "projectblacklight/spotlight"
 "projectblacklight/blacklight" -> "samvera/hyrax"
 "projectblacklight/blacklight" -> "vufind-org/vufind"
@@ -136,9 +141,11 @@ digraph G {
 "DSpace/DSpace" -> "IQSS/dataverse"
 "DSpace/DSpace" -> "omeka/Omeka" ["e"=1]
 "DSpace/DSpace" -> "IIIF/awesome-iiif" ["e"=1]
+"pkp/ojs" -> "DSpace/DSpace" ["e"=1]
 "islandora-interest-groups/Islandora-Metadata-Interest-Group" -> "islandora-interest-groups/Islandora-IR-Interest-Group"
 "islandora-interest-groups/Islandora-Metadata-Interest-Group" -> "Islandora-Labs/islandora_awesome"
 "islandora-interest-groups/Islandora-Metadata-Interest-Group" -> "Islandora/documentation"
+"hypothesis/h" -> "zenodo/zenodo" ["e"=1]
 "textbrowser/spot-on" -> "textbrowser/smoke"
 "jcreel/SAFCreator" -> "cstarcher/pysaf"
 "edsu/pymarc" -> "lpmagnuson/pymarc-workshop"
@@ -162,6 +169,7 @@ digraph G {
 "MarcusBarnes/mik" -> "Islandora-Labs/islandora_awesome"
 "ropensci/osfr" -> "debruine/faux"
 "ropensci/osfr" -> "osfclient/osfclient"
+"archivesspace/archivesspace" -> "samvera/hyku" ["e"=1]
 "scriptotek/php-marc" -> "indexdata/phpyaz"
 "scriptotek/php-marc" -> "pear/File_MARC"
 "scriptotek/php-marc" -> "pkiraly/qa-catalogue"
@@ -190,12 +198,15 @@ digraph G {
 "Koha-Community/Koha" -> "DSpace/DSpace"
 "Koha-Community/Koha" -> "hectorcorrea/marcli"
 "Koha-Community/Koha" -> "libris/librisxl"
+"openjournals/joss" -> "zenodo/zenodo" ["e"=1]
 "samvera/hyku" -> "samvera/hyrax"
 "samvera/hyku" -> "duraspace/pcdm"
 "samvera/hyku" -> "samvera/valkyrie"
 "samvera/hyku" -> "samvera/bulkrax"
 "samvera/hyku" -> "pulibrary/plum"
 "samvera/hyku" -> "samvera/hydra-pcdm"
+"opensemanticsearch/open-semantic-search" -> "NatLibFi/Annif" ["e"=1]
+"artefactual/archivematica" -> "samvera/hyku" ["e"=1]
 "cstarcher/pysaf" -> "jcreel/SAFCreator"
 "IQSS/dataverse-frontend" -> "IQSS/dataverse-client-javascript"
 "NCSU-Libraries/quick_search" -> "upenn-libraries/xmlaminar"
@@ -287,33 +298,35 @@ digraph G {
 "inveniosoftware/invenio" ["l"="39.269,34.76"]
 "ropensci/osfr" ["l"="39.277,34.627"]
 "CenterForOpenScience/ember-osf-preprints" ["l"="39.267,34.661"]
-"datalad/datalad" ["l"="61.722,35.371"]
-"ourresearch/oadoi" ["l"="-34.297,16.364"]
-"crsh/papaja" ["l"="40.553,35.598"]
+"datalad/datalad" ["l"="61.722,35.371", "c"=568]
+"ourresearch/oadoi" ["l"="-34.297,16.364", "c"=996]
+"crsh/papaja" ["l"="40.553,35.598", "c"=51]
 "samvera-deprecated/sufia" ["l"="39.336,34.765"]
-"sciencefair-land/sciencefair" ["l"="-3.277,22.024"]
+"sciencefair-land/sciencefair" ["l"="-3.277,22.024", "c"=1087]
 "CenterForOpenScience/helm-charts" ["l"="39.248,34.646"]
-"scinote-eln/scinote-web" ["l"="40.872,37.95"]
+"scinote-eln/scinote-web" ["l"="40.872,37.95", "c"=141]
 "IQSS/dataverse-docker" ["l"="39.306,34.702"]
 "gdcc/pyDataverse" ["l"="39.328,34.697"]
-"ckan/ckan" ["l"="-4.431,-42.321"]
+"ckan/ckan" ["l"="-4.431,-42.321", "c"=302]
 "gdcc/dataverse-kubernetes" ["l"="39.304,34.719"]
-"artefactual/archivematica" ["l"="-36.802,20.878"]
+"artefactual/archivematica" ["l"="-36.802,20.878", "c"=326]
 "gdcc/dataverse-ansible" ["l"="39.265,34.71"]
 "GlobalDataverseCommunityConsortium/dataverse-language-packs" ["l"="39.289,34.708"]
 "IQSS/dataverse-client-python" ["l"="39.319,34.713"]
 "DSpace/DSpace" ["l"="39.231,34.779"]
 "IQSS/dataverse-client-javascript" ["l"="39.296,34.695"]
 "samvera/hyrax" ["l"="39.334,34.786"]
-"openjournals/joss" ["l"="41.01,35.254"]
+"openjournals/joss" ["l"="41.01,35.254", "c"=51]
+"lindeloev/tests-as-linear" ["l"="40.683,35.56", "c"=51]
+"debruine/faux" ["l"="39.28,34.596"]
 "rero/sonar" ["l"="39.208,34.819"]
 "rero/rero-ils-ui" ["l"="39.225,34.812"]
 "NatLibFi/Annif" ["l"="39.384,34.94"]
 "NatLibFi/Annif-tutorial" ["l"="39.389,34.918"]
-"NatLibFi/Skosmos" ["l"="-1.733,-41.953"]
+"NatLibFi/Skosmos" ["l"="-1.733,-41.953", "c"=456]
 "pkiraly/qa-catalogue" ["l"="39.405,34.89"]
 "osma/annif" ["l"="39.367,34.955"]
-"tomtung/omikuji" ["l"="51.71,31.019"]
+"tomtung/omikuji" ["l"="51.71,31.019", "c"=83]
 "gbv/cocoda" ["l"="39.377,34.975"]
 "IQSS/dataverse-frontend" ["l"="39.311,34.683"]
 "samvera/hydra-head" ["l"="39.317,34.802"]
@@ -353,12 +366,13 @@ digraph G {
 "DSpace-Labs/SAFBuilder" ["l"="39.168,34.766"]
 "cstarcher/pysaf" ["l"="39.123,34.762"]
 "the-library-code/dspace-rest-python" ["l"="39.184,34.77"]
+"indico/indico" ["l"="35.959,18.947", "c"=979]
 "samvera/hyku" ["l"="39.331,34.808"]
 "RCOSDP/weko" ["l"="39.267,34.781"]
-"codemeta/codemeta" ["l"="41.292,35.166"]
+"codemeta/codemeta" ["l"="41.292,35.166", "c"=51]
 "fcrepo/fcrepo" ["l"="39.316,34.75"]
-"openlibhums/janeway" ["l"="-3.29,21.929"]
-"IIIF/awesome-iiif" ["l"="-52.103,-11.592"]
+"openlibhums/janeway" ["l"="-3.29,21.929", "c"=1087]
+"IIIF/awesome-iiif" ["l"="-52.103,-11.592", "c"=1201]
 "rero/rero-ils" ["l"="39.249,34.798"]
 "ORCID/orcid-model" ["l"="39.131,34.656"]
 "ORCID/orcid-api-tutorial" ["l"="39.141,34.645"]
@@ -372,26 +386,28 @@ digraph G {
 "samvera/hydra-works" ["l"="39.371,34.835"]
 "samvera/hydra-pcdm" ["l"="39.368,34.812"]
 "samvera-deprecated/curation_concerns" ["l"="39.378,34.854"]
-"ICIJ/extract" ["l"="-5.026,-41.212"]
-"o19s/quepid" ["l"="-2.344,8.837"]
+"textbrowser/dooble" ["l"="-20.309,-28.154", "c"=107]
+"textbrowser/biblioteq" ["l"="39.171,34.9"]
+"ICIJ/extract" ["l"="-5.026,-41.212", "c"=333]
+"o19s/quepid" ["l"="-2.344,8.837", "c"=1024]
 "ruby-marc/ruby-marc" ["l"="39.395,34.805"]
 "samvera-deprecated/hydra" ["l"="39.36,34.782"]
 "DSpace/dspace-angular" ["l"="39.198,34.781"]
 "DSpace/RestContract" ["l"="39.205,34.797"]
-"pkp/ojs" ["l"="24.671,-26.227"]
-"archivesspace/archivesspace" ["l"="-36.753,20.846"]
+"pkp/ojs" ["l"="24.671,-26.227", "c"=32]
+"archivesspace/archivesspace" ["l"="-36.753,20.846", "c"=326]
 "4Science/DSpace" ["l"="39.181,34.793"]
-"omeka/omeka-s" ["l"="-52.154,-11.536"]
-"omeka/Omeka" ["l"="-52.179,-11.521"]
+"omeka/omeka-s" ["l"="-52.154,-11.536", "c"=1201]
+"omeka/Omeka" ["l"="-52.179,-11.521", "c"=1201]
+"hypothesis/h" ["l"="-2.405,-29.74", "c"=4]
 "textbrowser/spot-on" ["l"="39.131,34.925"]
 "textbrowser/smoke" ["l"="39.109,34.94"]
 "jcreel/SAFCreator" ["l"="39.099,34.76"]
 "edsu/pymarc" ["l"="39.408,34.848"]
 "lpmagnuson/pymarc-workshop" ["l"="39.428,34.833"]
-"mcarruthers/LCNAF-Named-Entity-Reconciliation" ["l"="-0.864,-42.19"]
+"mcarruthers/LCNAF-Named-Entity-Reconciliation" ["l"="-0.864,-42.19", "c"=1022]
 "libraryhackers/library-callnumber-lc" ["l"="39.449,34.832"]
-"cmharlow/metadataQA" ["l"="-0.829,-42.23"]
-"textbrowser/biblioteq" ["l"="39.171,34.9"]
+"cmharlow/metadataQA" ["l"="-0.829,-42.23", "c"=1022]
 "samvera/active_fedora" ["l"="39.385,34.786"]
 "libris/librisxl" ["l"="39.229,34.892"]
 "libris/lxlviewer" ["l"="39.216,34.909"]
@@ -400,7 +416,6 @@ digraph G {
 "fcrepo-exts/fcrepo-import-export" ["l"="39.358,34.734"]
 "UB-Mannheim/malibu" ["l"="39.32,34.903"]
 "mnylc/islandora_multi_importer" ["l"="39.47,34.993"]
-"debruine/faux" ["l"="39.28,34.596"]
 "scriptotek/php-marc" ["l"="39.415,34.876"]
 "indexdata/phpyaz" ["l"="39.456,34.875"]
 "folio-org/folio-install" ["l"="39.265,34.923"]
@@ -421,6 +436,7 @@ digraph G {
 "coral-erm/coral" ["l"="39.209,34.86"]
 "samvera/valkyrie" ["l"="39.306,34.809"]
 "samvera/bulkrax" ["l"="39.316,34.824"]
+"opensemanticsearch/open-semantic-search" ["l"="-1.68,-41.966", "c"=456]
 "upenn-libraries/xmlaminar" ["l"="39.421,34.814"]
 "Islandora-Labs/islandora_dev101" ["l"="39.449,34.996"]
 "SFULibrary/islandora_datastream_crud" ["l"="39.477,35.009"]
@@ -441,9 +457,9 @@ digraph G {
 "unt-libraries/pycallnumber" ["l"="39.433,34.85"]
 "UW-Madison-Library/bibcard" ["l"="39.462,34.854"]
 "ORCID/ORCID-Source" ["l"="39.167,34.663"]
-"ORCID/python-orcid" ["l"="-34.222,16.088"]
+"ORCID/python-orcid" ["l"="-34.222,16.088", "c"=996]
 "ORCID/orcid-angular" ["l"="39.164,34.638"]
-"WDscholia/scholia" ["l"="-1.003,-42.222"]
+"WDscholia/scholia" ["l"="-1.003,-42.222", "c"=1022]
 "pkiraly/qa-catalogue-web" ["l"="39.428,34.893"]
 "NatLibFi/bib-rdf-pipeline" ["l"="39.426,34.908"]
 "scriptotek/mc2skos" ["l"="39.408,34.91"]

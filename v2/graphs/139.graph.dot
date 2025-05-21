@@ -30,6 +30,7 @@ digraph G {
 "microsoft/BuildXL" -> "dotnet/arcade"
 "microsoft/BuildXL" -> "dotnet/roslyn-analyzers"
 "mikefourie-zz/MSBuildExplorer" -> "mikefourie-zz/MSBuildExtensionPack"
+"OneGet/oneget" -> "dotnet/codeformatter" ["e"=1]
 "mikefourie-zz/MSBuildExtensionPack" -> "mikefourie-zz/MSBuildExplorer"
 "mikefourie-zz/MSBuildExtensionPack" -> "loresoft/msbuildtasks"
 "kyokan/bob-wallet" -> "pinheadmz/handout"
@@ -92,6 +93,9 @@ digraph G {
 "awaescher/Fusion" -> "rodneyviana/netext"
 "awaescher/Fusion" -> "Maoni0/realmon"
 "awaescher/Fusion" -> "devlooped/GitInfo"
+"neuecc/Utf8Json" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"dotnet/command-line-api" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
+"dotnet/command-line-api" -> "dotnet/format" ["e"=1]
 "dotnet/dotnet-api-docs" -> "dotnet/docs" ["e"=1]
 "dotnet/dotnet-api-docs" -> "dotnet/performance"
 "dotnet/dotnet-api-docs" -> "dotnet/sdk"
@@ -107,6 +111,7 @@ digraph G {
 "dotnet/dotnet-api-docs" -> "dotnet/roslyn-sdk"
 "dotnet/dotnet-api-docs" -> "dotnet/docs-maui" ["e"=1]
 "dotnet/dotnet-api-docs" -> "dotnet/templates"
+"dotnet-presentations/aspnetcore-app-workshop" -> "davidfowl/Todos" ["e"=1]
 "natemcmaster/dotnet-serve" -> "natemcmaster/dotnet-tools" ["e"=1]
 "natemcmaster/dotnet-serve" -> "jerriep/dotnet-outdated"
 "natemcmaster/dotnet-serve" -> "ProxyKit/ProxyKit" ["e"=1]
@@ -122,6 +127,11 @@ digraph G {
 "natemcmaster/dotnet-serve" -> "Amine-Smahi/Sqlite-Global-Tool" ["e"=1]
 "natemcmaster/dotnet-serve" -> "dotnet-script/dotnet-script" ["e"=1]
 "natemcmaster/dotnet-serve" -> "benaadams/Ben.Demystifier" ["e"=1]
+"kevin-montrose/Jil" -> "dotnet/corefxlab" ["e"=1]
+"kevin-montrose/Jil" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"OpenCover/opencover" -> "microsoft/CodeContracts" ["e"=1]
+"versionize/versionize" -> "adamralph/minver" ["e"=1]
+"versionize/versionize" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "dotnet/dotNext" -> "dadhi/FastExpressionCompiler" ["e"=1]
 "dotnet/dotNext" -> "microsoft/Microsoft.IO.RecyclableMemoryStream"
 "dotnet/dotNext" -> "amis92/csharp-source-generators" ["e"=1]
@@ -137,6 +147,10 @@ digraph G {
 "dotnet/dotNext" -> "benaadams/Ben.Demystifier" ["e"=1]
 "dotnet/dotNext" -> "StephenCleary/AsyncEx" ["e"=1]
 "dotnet/dotNext" -> "NetFabric/NetFabric.Hyperlinq"
+"ikvmnet/ikvm" -> "EgorBo/Disasmo" ["e"=1]
+"meziantou/Meziantou.Analyzer" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
+"meziantou/Meziantou.Analyzer" -> "DotNetAnalyzers/IDisposableAnalyzers" ["e"=1]
+"meziantou/Meziantou.Analyzer" -> "dotnet/roslyn-analyzers" ["e"=1]
 "handshake-org/hsd" -> "kyokan/bob-wallet"
 "handshake-org/hsd" -> "handshake-org/hnsd"
 "handshake-org/hsd" -> "handshake-org/hs-airdrop"
@@ -152,6 +166,7 @@ digraph G {
 "handshake-org/hsd" -> "handshake-org/handshake-org.github.io"
 "handshake-org/hsd" -> "HandyOSS/HandyHost" ["e"=1]
 "handshake-org/hsd" -> "decentralized-identity/ion" ["e"=1]
+"microsoft/FASTER" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "dotnet/installer" -> "dotnet/sdk"
 "dotnet/installer" -> "dotnet/winforms" ["e"=1]
 "dotnet/installer" -> "dotnet/wpf" ["e"=1]
@@ -182,6 +197,7 @@ digraph G {
 "phmonte/Buildalyzer" -> "datalust/superpower"
 "phmonte/Buildalyzer" -> "dadhi/FastExpressionCompiler" ["e"=1]
 "phmonte/Buildalyzer" -> "dotnet/project-system"
+"safakgur/guard" -> "NetFabric/NetFabric.Hyperlinq" ["e"=1]
 "jerriep/dotnet-outdated" -> "natemcmaster/dotnet-tools" ["e"=1]
 "jerriep/dotnet-outdated" -> "NuKeeperDotNet/NuKeeper"
 "jerriep/dotnet-outdated" -> "natemcmaster/dotnet-serve"
@@ -191,6 +207,11 @@ digraph G {
 "jerriep/dotnet-outdated" -> "dotnet/platform-compat"
 "jerriep/dotnet-outdated" -> "benaadams/Ben.BlockingDetector"
 "jerriep/dotnet-outdated" -> "adamralph/minver"
+"ProxyKit/ProxyKit" -> "dotnet/crank" ["e"=1]
+"ProxyKit/ProxyKit" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"ProxyKit/ProxyKit" -> "davidfowl/Micronetes" ["e"=1]
+"sq/JSIL" -> "dotnet/llilc" ["e"=1]
+"sq/JSIL" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
 "EgorBo/Disasmo" -> "xoofx/JitBuddy"
 "EgorBo/Disasmo" -> "SergeyTeplyakov/ObjectLayoutInspector"
 "EgorBo/Disasmo" -> "EgorBo/SimdJsonSharp"
@@ -206,6 +227,27 @@ digraph G {
 "EgorBo/Disasmo" -> "microsoft/RoslynClrHeapAllocationAnalyzer"
 "EgorBo/Disasmo" -> "NetFabric/NetFabric.Hyperlinq"
 "EgorBo/Disasmo" -> "kkokosa/Tune"
+"ashmind/SharpLab" -> "SergeyTeplyakov/ObjectLayoutInspector" ["e"=1]
+"ashmind/SharpLab" -> "EgorBo/Disasmo" ["e"=1]
+"ashmind/SharpLab" -> "dotnet/dotNext" ["e"=1]
+"ashmind/SharpLab" -> "dotnet/roslyn-analyzers" ["e"=1]
+"ncalc/ncalc" -> "sebastienros/parlot" ["e"=1]
+"Samsung/netcoredbg" -> "microsoft/clrmd" ["e"=1]
+"Samsung/netcoredbg" -> "dotnet/diagnostics" ["e"=1]
+"Samsung/netcoredbg" -> "microsoft/MIEngine" ["e"=1]
+"mtrojnar/osslsigncode" -> "dotnet/sign" ["e"=1]
+"mtrojnar/osslsigncode" -> "vcsjones/AzureSignTool" ["e"=1]
+"SimonCropp/NaughtyStrings" -> "xunit/xunit.analyzers" ["e"=1]
+"bridgedotnet/Bridge" -> "dotnet/llilc" ["e"=1]
+"github/git-sizer" -> "microsoft/scalar" ["e"=1]
+"elw00d/consoleframework" -> "xoofx/zio" ["e"=1]
+"SonarSource/sonarcloud-github-action" -> "SonarSource/sonar-scanner-msbuild" ["e"=1]
+"twitchax/AspNetCore.Proxy" -> "adamralph/bullseye" ["e"=1]
+"GitTools/GitVersion" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
+"GitTools/GitVersion" -> "GitTools/GitReleaseManager" ["e"=1]
+"GitTools/GitVersion" -> "adamralph/minver" ["e"=1]
+"GitTools/GitVersion" -> "GitTools/actions" ["e"=1]
+"cezarypiatek/MappingGenerator" -> "daveaglick/Scripty" ["e"=1]
 "dotnet/performance" -> "dotnet/designs"
 "dotnet/performance" -> "EgorBo/Disasmo"
 "dotnet/performance" -> "dotnet/diagnostics"
@@ -221,6 +263,11 @@ digraph G {
 "dotnet/performance" -> "microsoft/coyote"
 "dotnet/performance" -> "dotnet/sdk"
 "dotnet/performance" -> "microsoft/clrmd"
+"icsharpcode/CodeConverter" -> "icsharpcode/RefactoringEssentials" ["e"=1]
+"icsharpcode/CodeConverter" -> "dotnet/upgrade-assistant" ["e"=1]
+"icsharpcode/CodeConverter" -> "dotnet/try-convert" ["e"=1]
+"icsharpcode/CodeConverter" -> "dotnet/roslyn-analyzers" ["e"=1]
+"dgiagio/warp" -> "adamralph/bullseye" ["e"=1]
 "Polly-Contrib/Simmy" -> "Polly-Contrib/Polly.Contrib.SimmyDemo_WebApi"
 "Polly-Contrib/Simmy" -> "App-vNext/Polly-Samples"
 "Polly-Contrib/Simmy" -> "microsoft/coyote"
@@ -232,6 +279,9 @@ digraph G {
 "Polly-Contrib/Simmy" -> "microsoft/infersharp"
 "Polly-Contrib/Simmy" -> "BenMorris/NetArchTest" ["e"=1]
 "Polly-Contrib/Simmy" -> "safakgur/guard" ["e"=1]
+"gmamaladze/trienet" -> "bleroy/lunr-core" ["e"=1]
+"gmamaladze/trienet" -> "dotnet/dotNext" ["e"=1]
+"icedland/iced" -> "EgorBo/Disasmo" ["e"=1]
 "jskeet/DemoCode" -> "jskeet/nodatime"
 "jskeet/DemoCode" -> "mgravell/PooledAwait"
 "jskeet/DemoCode" -> "sestoft/C5"
@@ -250,6 +300,10 @@ digraph G {
 "john-h-k/MathSharp" -> "dcwuser/metanumerics" ["e"=1]
 "john-h-k/MathSharp" -> "reaqtive/reaqtor"
 "john-h-k/MathSharp" -> "zspitz/ExpressionTreeVisualizer" ["e"=1]
+"mganss/XmlSchemaClassGenerator" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"djluck/prometheus-net.DotNetRuntime" -> "dotnet/diagnostics" ["e"=1]
+"mayuki/Kurukuru" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"mayuki/Kurukuru" -> "xoofx/zio" ["e"=1]
 "dotnet/diagnostics" -> "microsoft/clrmd"
 "dotnet/diagnostics" -> "dotnet/dotnet-monitor"
 "dotnet/diagnostics" -> "Maoni0/mem-doc"
@@ -265,6 +319,11 @@ digraph G {
 "dotnet/diagnostics" -> "AppMetrics/AppMetrics" ["e"=1]
 "dotnet/diagnostics" -> "dotnet/dotNext"
 "dotnet/diagnostics" -> "SkyAPM/SkyAPM-dotnet" ["e"=1]
+"Tyrrrz/CliFx" -> "datalust/superpower" ["e"=1]
+"Tyrrrz/CliFx" -> "bleroy/lunr-core" ["e"=1]
+"Tyrrrz/CliFx" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
+"LogExperts/LogExpert" -> "fremag/MemoScope.Net" ["e"=1]
+"LogExperts/LogExpert" -> "mike-ward/VSColorOutput" ["e"=1]
 "dotnet/cli-lab" -> "dotnet/project-system-tools"
 "dotnet/cli-lab" -> "dotnet/SqlClient"
 "dotnet/cli-lab" -> "dotnet/format"
@@ -274,6 +333,9 @@ digraph G {
 "dotnet/cli-lab" -> "dotnet/sdk-container-builds"
 "dotnet/cli-lab" -> "jmalarcon/DotNetVersions"
 "dotnet/cli-lab" -> "dotnet/websdk"
+"MichalStrehovsky/zerosharp" -> "EgorBo/Disasmo" ["e"=1]
+"JakeBayer/FuzzySharp" -> "xoofx/zio" ["e"=1]
+"sharpenrocks/Sharpen" -> "ironcev/awesome-roslyn" ["e"=1]
 "spectresystems/jarvis" -> "spectresystems/spectre.cli"
 "spectresystems/jarvis" -> "cklutz/LockCheck"
 "spectresystems/jarvis" -> "drewnoakes/string-theory"
@@ -286,6 +348,8 @@ digraph G {
 "drewnoakes/string-theory" -> "indy-singh/StringsAreEvil"
 "drewnoakes/string-theory" -> "Ref12/AsyncDbg"
 "drewnoakes/string-theory" -> "EgorBo/SimdJsonSharp"
+"xoofx/CppAst.NET" -> "EgorBo/Disasmo" ["e"=1]
+"xoofx/CppAst.NET" -> "stark-lang/stark" ["e"=1]
 "adamralph/simple-exec" -> "adamralph/bullseye"
 "adamralph/simple-exec" -> "adamralph/minver"
 "adamralph/simple-exec" -> "PublicApiGenerator/PublicApiGenerator"
@@ -300,6 +364,7 @@ digraph G {
 "adamralph/simple-exec" -> "benaadams/Ben.Demystifier" ["e"=1]
 "adamralph/simple-exec" -> "damianh/LittleForker"
 "adamralph/simple-exec" -> "bleroy/lunr-core"
+"dotnet-outdated/dotnet-outdated" -> "dotnet/format" ["e"=1]
 "otvorete/petition" -> "stelf/en2bg4term"
 "otvorete/petition" -> "doino-gretchenliev/revolut-stocks"
 "otvorete/petition" -> "ivaylokenov/MyTested.AspNetCore.Mvc" ["e"=1]
@@ -316,6 +381,15 @@ digraph G {
 "otvorete/petition" -> "gsamokovarov/jump" ["e"=1]
 "otvorete/petition" -> "hackman/linux-sysadmin-course"
 "tylerjensen/ServiceWire" -> "cyanfish/grpc-dotnet-namedpipes"
+"khellang/Middleware" -> "adamralph/bullseye" ["e"=1]
+"benaadams/Ben.Demystifier" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"benaadams/Ben.Demystifier" -> "benaadams/Ben.BlockingDetector" ["e"=1]
+"CoreWCF/CoreWCF" -> "hvanbakel/CsprojToVs2017" ["e"=1]
+"sidristij/dotnetbook" -> "Maoni0/mem-doc" ["e"=1]
+"sidristij/dotnetbook" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"meziantou/Meziantou.Framework" -> "dotnet/dotNext" ["e"=1]
+"meziantou/Meziantou.Framework" -> "thomasgalliker/ObjectDumper" ["e"=1]
+"meziantou/Meziantou.Framework" -> "adamralph/bullseye" ["e"=1]
 "DotNetAnalyzers/IDisposableAnalyzers" -> "meziantou/Meziantou.Analyzer" ["e"=1]
 "DotNetAnalyzers/IDisposableAnalyzers" -> "DotNetAnalyzers/AspNetCoreAnalyzers"
 "DotNetAnalyzers/IDisposableAnalyzers" -> "DotNetAnalyzers/ReflectionAnalyzers"
@@ -352,6 +426,7 @@ digraph G {
 "KeRNeLith/QuikGraph" -> "Washi1337/Rivers" ["e"=1]
 "KeRNeLith/QuikGraph" -> "NewWheelTech/geometry4Sharp" ["e"=1]
 "KeRNeLith/QuikGraph" -> "vfrz/DotNetGraph"
+"louthy/csharp-monad" -> "config-r/config-r" ["e"=1]
 "security-code-scan/security-code-scan" -> "pumasecurity/puma-scan" ["e"=1]
 "security-code-scan/security-code-scan" -> "microsoft/DevSkim" ["e"=1]
 "security-code-scan/security-code-scan" -> "dotnet-security-guard/roslyn-security-guard" ["e"=1]
@@ -368,12 +443,30 @@ digraph G {
 "security-code-scan/security-code-scan" -> "NWebsec/NWebsec" ["e"=1]
 "security-code-scan/security-code-scan" -> "dotnet/roslynator" ["e"=1]
 "guardrailsio/awesome-dotnet-security" -> "security-code-scan/security-code-scan"
+"aspnet/HttpClientFactory" -> "davidfowl/Channels" ["e"=1]
 "brutaldev/StrongNameSigner" -> "dsplaisted/strongnamer"
+"natemcmaster/LettuceEncrypt" -> "featherhttp/framework" ["e"=1]
+"natemcmaster/LettuceEncrypt" -> "microsoft/coyote" ["e"=1]
+"natemcmaster/LettuceEncrypt" -> "dotnet/crank" ["e"=1]
+"getsentry/sentry-dotnet" -> "dotnet/format" ["e"=1]
+"aspnet/Entropy" -> "DamianEdwards/TagHelperPack" ["e"=1]
 "alexanderkozlenko/json-rpc-client" -> "alexanderkozlenko/aspnetcore-json-rpc"
 "alexanderkozlenko/json-rpc-client" -> "alexanderkozlenko/json-rpc"
+"BluestormDNA/ProjectPSX" -> "john-h-k/MathSharp" ["e"=1]
+"aspnet/dnx" -> "dotnet/llilc" ["e"=1]
 "panthernet/GraphX" -> "microsoft/automatic-graph-layout"
 "panthernet/GraphX" -> "Orcomp/Orc.GraphExplorer" ["e"=1]
 "panthernet/GraphX" -> "KeRNeLith/QuikGraph"
+"OpenSilver/OpenSilver" -> "bleroy/lunr-core" ["e"=1]
+"hallatore/Netling" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"nanoframework/Home" -> "dotnet/dotNext" ["e"=1]
+"mmanela/chutzpah" -> "microsoft/CodeContracts" ["e"=1]
+"chocolatey-archive/chocolatey" -> "dotnet/codeformatter" ["e"=1]
+"chocolatey-archive/chocolatey" -> "microsoft/docker" ["e"=1]
+"actions/setup-dotnet" -> "dotnet/format" ["e"=1]
+"actions/setup-dotnet" -> "dotnet/roslyn-analyzers" ["e"=1]
+"actions/setup-dotnet" -> "dotnet/sdk" ["e"=1]
+"actions/setup-dotnet" -> "Tyrrrz/GitHubActionsTestLogger" ["e"=1]
 "VerbalExpressions/CSharpVerbalExpressions" -> "scientistproject/Scientist.net" ["e"=1]
 "VerbalExpressions/CSharpVerbalExpressions" -> "antiufo/roslyn-linq-rewrite"
 "VerbalExpressions/CSharpVerbalExpressions" -> "daveaglick/Scripty"
@@ -400,6 +493,8 @@ digraph G {
 "mikehadlow/AsmSpy" -> "gsscoder/commandline" ["e"=1]
 "mikehadlow/AsmSpy" -> "adamralph/bullseye"
 "mikehadlow/AsmSpy" -> "microsoft/dotnet-apiport"
+"ellson/MOTHBALLED-graphviz" -> "microsoft/automatic-graph-layout" ["e"=1]
+"AdaptiveConsulting/ReactiveTrader" -> "AdaptiveConsulting/Aeron.NET" ["e"=1]
 "dotnet/SqlClient" -> "dotnet/extensions" ["e"=1]
 "dotnet/SqlClient" -> "dotnet/sdk"
 "dotnet/SqlClient" -> "dotnet/project-system"
@@ -419,8 +514,19 @@ digraph G {
 "vcsjones/AzureSignTool" -> "novotnyllc/RSAKeyVaultProvider"
 "vcsjones/AzureSignTool" -> "novotnyllc/NuGetKeyVaultSignTool"
 "vcsjones/AzureSignTool" -> "microsoft/AzureKeyVaultExplorer"
+"zzzprojects/EntityFramework-Effort" -> "GitTools/GitLink" ["e"=1]
+"microsoft/artifacts-credprovider" -> "dotnet/format" ["e"=1]
+"microsoft/artifacts-credprovider" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
+"microsoft/artifacts-credprovider" -> "dotnet/sourcelink" ["e"=1]
+"microsoft/artifacts-credprovider" -> "dotnet/arcade" ["e"=1]
+"dotnet/winforms" -> "dotnet/installer" ["e"=1]
+"dotnet/winforms" -> "dotnet/sdk" ["e"=1]
 "Metalnem/sharpfuzz" -> "Metalnem/libfuzzer-dotnet"
 "Metalnem/sharpfuzz" -> "jakobbotsch/Fuzzlyn"
+"microsoft/FeatureManagement-Dotnet" -> "dotnet/crank" ["e"=1]
+"microsoft/FeatureManagement-Dotnet" -> "microsoft/coyote" ["e"=1]
+"microsoft/FeatureManagement-Dotnet" -> "dotnet/HttpRepl" ["e"=1]
+"microsoft/FeatureManagement-Dotnet" -> "dotnet/dotNext" ["e"=1]
 "MiloszKrajewski/K4os.Compression.LZ4" -> "MiloszKrajewski/lz4net"
 "MiloszKrajewski/K4os.Compression.LZ4" -> "rikimaru0345/Ceras"
 "MiloszKrajewski/K4os.Compression.LZ4" -> "Cysharp/MasterMemory" ["e"=1]
@@ -436,6 +542,7 @@ digraph G {
 "MiloszKrajewski/K4os.Compression.LZ4" -> "jamescourtney/FlatSharp"
 "MiloszKrajewski/K4os.Compression.LZ4" -> "dotnet/dotNext"
 "MiloszKrajewski/K4os.Compression.LZ4" -> "Cysharp/ZLogger" ["e"=1]
+"valit-stack/Valit" -> "mariusschulz/ExtraLINQ" ["e"=1]
 "praeclarum/FuGetGallery" -> "dotnet/sourcelink"
 "praeclarum/FuGetGallery" -> "drewnoakes/string-theory"
 "praeclarum/FuGetGallery" -> "KirillOsenkov/MSBuildStructuredLog"
@@ -507,6 +614,7 @@ digraph G {
 "adamralph/minver" -> "GitTools/GitVersion" ["e"=1]
 "adamralph/minver" -> "xoofx/dotnet-releaser" ["e"=1]
 "adamralph/minver" -> "ZiggyCreatures/FusionCache" ["e"=1]
+"machine/machine.specifications" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
 "tomasr/viasfora" -> "IllyaTheHath/viasfora"
 "tomasr/viasfora" -> "mike-ward/VSColorOutput"
 "tomasr/viasfora" -> "MykolaBalakin/VSOutputEnhancer"
@@ -519,6 +627,7 @@ digraph G {
 "tomasr/viasfora" -> "StefanKert/BuildVision"
 "tomasr/viasfora" -> "EWSoftware/VSSpellChecker"
 "tomasr/viasfora" -> "DustinCampbell/CSharpEssentials"
+"servicetitan/Stl.Fusion" -> "microsoft/coyote" ["e"=1]
 "IronyProject/Irony" -> "daxnet/irony"
 "IronyProject/Irony" -> "b3b00/csly"
 "IronyProject/Irony" -> "sebastienros/parlot"
@@ -526,6 +635,10 @@ digraph G {
 "IronyProject/Irony" -> "benjamin-hodgson/Pidgin"
 "IronyProject/Irony" -> "datalust/superpower"
 "IronyProject/Irony" -> "picoe/Eto.Parse"
+"shibayan/Sharprompt" -> "adamralph/simple-exec" ["e"=1]
+"shibayan/Sharprompt" -> "datalust/superpower" ["e"=1]
+"Xabaril/BeatPulse" -> "benaadams/Ben.BlockingDetector" ["e"=1]
+"Xabaril/BeatPulse" -> "NuKeeperDotNet/NuKeeper" ["e"=1]
 "chrisnas/ClrEvents" -> "chrisnas/DebuggingExtensions"
 "EgorBo/SimdJsonSharp" -> "Tornhoof/SpanJson"
 "EgorBo/SimdJsonSharp" -> "EgorBo/Disasmo"
@@ -548,6 +661,9 @@ digraph G {
 "Vect0rZ/Quic.NET" -> "limpo1989/kcp-csharp" ["e"=1]
 "Vect0rZ/Quic.NET" -> "Cysharp/KcpTransport"
 "Vect0rZ/Quic.NET" -> "MirrorNetworking/kcp2k" ["e"=1]
+"nucypher/nucypher" -> "handshake-org/hsd" ["e"=1]
+"bilal-fazlani/commanddotnet" -> "benjamin-hodgson/Pidgin" ["e"=1]
+"Azure/Azurite" -> "dotnet/sourcelink" ["e"=1]
 "CopyText/TextCopy" -> "thomasgalliker/ObjectDumper"
 "mgravell/Pipelines.Sockets.Unofficial" -> "mgravell/PooledAwait"
 "mgravell/Pipelines.Sockets.Unofficial" -> "dotnet/Nerdbank.Streams"
@@ -604,11 +720,14 @@ digraph G {
 "GitTools/GitLink" -> "dotnet/corefxlab"
 "GitTools/GitLink" -> "etishor/Metrics.NET" ["e"=1]
 "GitTools/GitLink" -> "tenor/RestBus" ["e"=1]
+"connamara/quickfixn" -> "AdaptiveConsulting/Aeron.NET" ["e"=1]
 "SoftUni/Programming-Basics-Book-CSharp-EN" -> "SoftUni/Programming-Basics-Book-CSharp-BG"
 "SoftUni/Programming-Basics-Book-CSharp-EN" -> "SoftUni/Programming-Basics-Book-JS-BG"
+"polterguy/magic" -> "adamralph/bullseye" ["e"=1]
 "sebastienros/memoryleak" -> "Maoni0/realmon"
 "sebastienros/memoryleak" -> "dotnet/dotnet-monitor"
 "sebastienros/memoryleak" -> "bartoszlenar/Validot"
+"nbarbettini/little-aspnetcore-book" -> "natemcmaster/dotnet-serve" ["e"=1]
 "microsoft/slngen" -> "microsoft/MSBuildSdks"
 "microsoft/slngen" -> "microsoft/vs-threading"
 "microsoft/slngen" -> "dotnet/project-system-tools"
@@ -633,6 +752,7 @@ digraph G {
 "dotnet/format" -> "dotnet/sourcelink"
 "dotnet/format" -> "khellang/Scrutor" ["e"=1]
 "dotnet/format" -> "dotnet-script/dotnet-script" ["e"=1]
+"StephenCleary/Comparers" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
 "Nihlus/AdvancedDLSupport" -> "AmmyUI/AmmyUI" ["e"=1]
 "Nihlus/AdvancedDLSupport" -> "tonerdo/pose" ["e"=1]
 "Nihlus/AdvancedDLSupport" -> "xoofx/zio"
@@ -648,8 +768,17 @@ digraph G {
 "Nihlus/AdvancedDLSupport" -> "rikimaru0345/Ceras"
 "Nihlus/AdvancedDLSupport" -> "ltrzesniewski/InlineIL.Fody"
 "Nihlus/AdvancedDLSupport" -> "EgorBo/Disasmo"
+"SonarSource/sonarlint-intellij" -> "SonarSource/sonarlint-visualstudio" ["e"=1]
+"microsoft/Trill" -> "ReubenBond/Hagar" ["e"=1]
+"microsoft/Trill" -> "davidfowl/BedrockFramework" ["e"=1]
+"microsoft/Trill" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"microsoft/Trill" -> "dotnet/corefxlab" ["e"=1]
 "Polly-Contrib/Polly.Contrib.WaitAndRetry" -> "Polly-Contrib/Polly.Contrib.AzureFunctions.CircuitBreaker"
 "Polly-Contrib/Polly.Contrib.WaitAndRetry" -> "App-vNext/Polly.Extensions.Http"
+"cuteant/SpanNetty" -> "davidfowl/BedrockFramework" ["e"=1]
+"helios-io/helios" -> "davidfowl/Channels" ["e"=1]
+"elastic/apm-agent-dotnet" -> "dotnet/dotnet-monitor" ["e"=1]
+"RicoSuter/DNT" -> "adamralph/minver" ["e"=1]
 "jtmueller/Collections.Pooled" -> "reegeek/StructLinq"
 "jtmueller/Collections.Pooled" -> "NetFabric/NetFabric.Hyperlinq"
 "jtmueller/Collections.Pooled" -> "bitfaster/BitFaster.Caching"
@@ -675,6 +804,7 @@ digraph G {
 "reegeek/StructLinq" -> "Cysharp/Utf8StreamReader"
 "reegeek/StructLinq" -> "jackmott/LinqFaster"
 "reegeek/StructLinq" -> "cathei/LinqGen"
+"chjj/bns" -> "pinheadmz/hs-anyone" ["e"=1]
 "namebasehq/api-documentation" -> "wy/namebase-exchange-python"
 "namebasehq/api-documentation" -> "namebasehq/exchange-api"
 "namebasehq/api-documentation" -> "handshake-org/HIPs"
@@ -696,6 +826,7 @@ digraph G {
 "adamralph/bullseye" -> "JasperFx/wolverine" ["e"=1]
 "adamralph/bullseye" -> "axuno/SmartFormat" ["e"=1]
 "adamralph/bullseye" -> "bleroy/lunr-core"
+"sailro/Reflexil" -> "telerik/JustDecompileEngine" ["e"=1]
 "JetBrains/resharper-rider-samples" -> "JetBrains/resharper-rider-plugin"
 "JetBrains/resharper-rider-samples" -> "JetBrains/resharper-devguide"
 "SergeyTeplyakov/ObjectLayoutInspector" -> "EgorBo/Disasmo"
@@ -713,9 +844,12 @@ digraph G {
 "SergeyTeplyakov/ObjectLayoutInspector" -> "dotnet/diagnostics"
 "SergeyTeplyakov/ObjectLayoutInspector" -> "dotnet/performance"
 "SergeyTeplyakov/ObjectLayoutInspector" -> "Maoni0/mem-doc"
+"madskristensen/ShortcutExporter" -> "microsoft/VS-PPT" ["e"=1]
 "config-r/config-r" -> "daveaglick/Scripty"
 "config-r/config-r" -> "config-r/config-r-samples"
 "config-r/config-r" -> "danielwertheim/structurizer"
+"axle-h/Retro.Net" -> "dotnet/sourcelink" ["e"=1]
+"axle-h/Retro.Net" -> "featherhttp/framework" ["e"=1]
 "rikimaru0345/Ceras" -> "jackmott/LinqFaster"
 "rikimaru0345/Ceras" -> "VSadov/NonBlocking"
 "rikimaru0345/Ceras" -> "MiloszKrajewski/K4os.Compression.LZ4"
@@ -763,6 +897,10 @@ digraph G {
 "bjorkstromm/depends" -> "KirillOsenkov/MSBuildStructuredLog"
 "petabridge/Incrementalist" -> "aspirant-project/aspirant"
 "petabridge/Incrementalist" -> "0xced/Chisel"
+"Open-NET-Libraries/Open.ChannelExtensions" -> "dotnet/Nerdbank.Streams" ["e"=1]
+"Open-NET-Libraries/Open.ChannelExtensions" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"microsoft/ProcDump-for-Linux" -> "dotnet/diagnostics" ["e"=1]
+"microsoft/ProcDump-for-Linux" -> "Maoni0/mem-doc" ["e"=1]
 "mgravell/PooledAwait" -> "mgravell/Pipelines.Sockets.Unofficial"
 "mgravell/PooledAwait" -> "VSadov/NonBlocking"
 "mgravell/PooledAwait" -> "davidfowl/BedrockFramework"
@@ -773,9 +911,17 @@ digraph G {
 "mgravell/PooledAwait" -> "tmds/Tmds.Systemd"
 "unoplatform/Uno.CodeGen" -> "unoplatform/Uno.Core"
 "unoplatform/Uno.CodeGen" -> "unoplatform/Uno.SourceGeneration"
+"malxau/yori" -> "davidfowl/Micronetes" ["e"=1]
+"malxau/yori" -> "awaescher/Fusion" ["e"=1]
+"malxau/yori" -> "davidfowl/Todos" ["e"=1]
+"0xd4d/JitDasm" -> "xoofx/JitBuddy" ["e"=1]
+"0xd4d/JitDasm" -> "YoshihiroIto/JitPad" ["e"=1]
+"0xd4d/JitDasm" -> "goldshtn/minidumper" ["e"=1]
+"CoreyKaylor/Lightning.NET" -> "davidfowl/Channels" ["e"=1]
 "agnicore/nfx" -> "aumcode/nfx"
 "agnicore/nfx" -> "aumcode/nfx-demos"
 "agnicore/nfx" -> "azist/azos"
+"hhblaze/DBreeze" -> "xoofx/zio" ["e"=1]
 "dfederm/ReferenceTrimmer" -> "0xced/Chisel"
 "uranium62/xxHash" -> "ssg/HashDepot"
 "aumcode/nfx" -> "agnicore/nfx"
@@ -819,6 +965,7 @@ digraph G {
 "dotnet/arcade" -> "NuGet/NuGet.Client"
 "StackExchange/StackExchange.Utils" -> "StackExchange/StackExchange.Metrics"
 "stark-lang/stark" -> "stark-lang/stark-old-experiment"
+"praeclarum/Netjs" -> "xen2/SharpLang" ["e"=1]
 "davidfowl/BedrockFramework" -> "davidfowl/Micronetes"
 "davidfowl/BedrockFramework" -> "featherhttp/framework"
 "davidfowl/BedrockFramework" -> "mgravell/Pipelines.Sockets.Unofficial"
@@ -849,6 +996,8 @@ digraph G {
 "azist/azos" -> "aumcode/nfx"
 "azist/azos" -> "agnicore/nfx"
 "azist/azos" -> "aumcode/nfx-demos"
+"dotnet/AspNetDocs" -> "dotnet/dotnet-api-docs" ["e"=1]
+"pengweiqhca/Xunit.DependencyInjection" -> "xunit/xunit.analyzers" ["e"=1]
 "fmi/java-course" -> "avelin/fmi-os"
 "fmi/java-course" -> "ivo3123/DifferentialEquations"
 "fmi/java-course" -> "Angeld55/Object-oriented_programming_FMI"
@@ -858,6 +1007,9 @@ digraph G {
 "fmi/java-course" -> "GeorgiTerziev02/Object-oriented_programming_FMI"
 "fmi/java-course" -> "Angeld55/Math_courses_seminars_notes_and_tasks"
 "EliteLoser/DotNetVersionLister" -> "jmalarcon/DotNetVersions"
+"DataDog/dd-trace-dotnet" -> "caozhiyuan/ClrProfiler.Trace" ["e"=1]
+"DataDog/dd-trace-dotnet" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"DataDog/dd-trace-dotnet" -> "dotnet/diagnostics" ["e"=1]
 "Tornhoof/SpanJson" -> "EgorBo/SimdJsonSharp"
 "Tornhoof/SpanJson" -> "Dogwei/Swifter.Json" ["e"=1]
 "Tornhoof/SpanJson" -> "Cysharp/Utf8StreamReader"
@@ -887,6 +1039,7 @@ digraph G {
 "chrisnas/DebuggingExtensions" -> "chrisnas/ClrEvents"
 "chrisnas/DebuggingExtensions" -> "goldshtn/msos"
 "chrisnas/DebuggingExtensions" -> "benaadams/Ben.StringIntern"
+"microsoft/workbooks" -> "GitTools/GitLink" ["e"=1]
 "dotnet/project-system-tools" -> "microsoft/VSProjectSystem"
 "dotnet/project-system-tools" -> "dotnet/roslyn-tools"
 "dotnet/project-system-tools" -> "dotnet/windowsdesktop"
@@ -900,6 +1053,7 @@ digraph G {
 "dotnet/project-system-tools" -> "phmonte/Buildalyzer"
 "dotnet/project-system-tools" -> "dotnet/project-system"
 "dotnet/project-system-tools" -> "dotnet/sign"
+"kekyo/IL2C" -> "ltrzesniewski/InlineIL.Fody" ["e"=1]
 "jacqueskang/IpcServiceFramework" -> "cyanfish/grpc-dotnet-namedpipes"
 "jacqueskang/IpcServiceFramework" -> "UweKeim/ZetaIpc"
 "jacqueskang/IpcServiceFramework" -> "steamcore/TinyIpc"
@@ -931,6 +1085,7 @@ digraph G {
 "dotnet/sourcelink" -> "dotnet/diagnostics"
 "dotnet/sourcelink" -> "benaadams/Ben.Demystifier" ["e"=1]
 "dotnet/sourcelink" -> "microsoft/coyote"
+"dbforge/nUpdate" -> "xoofx/zio" ["e"=1]
 "ltrzesniewski/InlineIL.Fody" -> "EgorBo/Disasmo"
 "ltrzesniewski/InlineIL.Fody" -> "reegeek/StructLinq"
 "ltrzesniewski/InlineIL.Fody" -> "Abc-Arbitrage/ZeroLog"
@@ -939,8 +1094,12 @@ digraph G {
 "ltrzesniewski/InlineIL.Fody" -> "YoshihiroIto/JitPad"
 "ltrzesniewski/InlineIL.Fody" -> "ltrzesniewski/RazorBlade"
 "ltrzesniewski/InlineIL.Fody" -> "damageboy/VxSort"
+"ZacharyPatten/Towel" -> "john-h-k/MathSharp" ["e"=1]
+"ZacharyPatten/Towel" -> "NetFabric/NetFabric.Hyperlinq" ["e"=1]
+"ZacharyPatten/Towel" -> "SolutionsDesign/Algorithmia" ["e"=1]
 "microsoft/MSBuildLocator" -> "microsoft/MSBuildSdks"
 "microsoft/MSBuildLocator" -> "phmonte/Buildalyzer"
+"bobvanderlinden/sharpfilesystem" -> "xoofx/zio" ["e"=1]
 "ctaggart/SourceLink" -> "GitTools/GitLink"
 "xoofx/JitBuddy" -> "0xd4d/JitDasm" ["e"=1]
 "xoofx/JitBuddy" -> "EgorBo/Disasmo"
@@ -949,6 +1108,7 @@ digraph G {
 "Angeld55/Object-oriented_programming_FMI" -> "Angeld55/Introduction_to_programming_FMI"
 "Angeld55/Object-oriented_programming_FMI" -> "stoychoX/Object-oriented-programming-FMI"
 "Angeld55/Object-oriented_programming_FMI" -> "Justsvetoslavov/Object-oriented_programming_FMI"
+"ligershark/side-waffle" -> "madskristensen/ExtensibilityTools" ["e"=1]
 "NuGet/NuGet.Client" -> "NuGet/Home" ["e"=1]
 "NuGet/NuGet.Client" -> "NuGet/NuGet.Server" ["e"=1]
 "NuGet/NuGet.Client" -> "NuGet/NuGetGallery" ["e"=1]
@@ -965,6 +1125,8 @@ digraph G {
 "NuGet/NuGet.Client" -> "dotnet/sourcelink"
 "NuGet/NuGet.Client" -> "dotnet/msbuild" ["e"=1]
 "kevin-montrose/LinqAF" -> "jackmott/LinqFaster"
+"xoofx/Tomlyn" -> "xoofx/zio" ["e"=1]
+"xoofx/Tomlyn" -> "stark-lang/stark" ["e"=1]
 "microsoft/CLRInstrumentationEngine" -> "microsoft/clr-samples"
 "microsoft/CLRInstrumentationEngine" -> "caozhiyuan/ClrProfiler.Trace"
 "Astn/JSON-RPC.NET" -> "edjCase/JsonRpc"
@@ -985,6 +1147,7 @@ digraph G {
 "ironcev/awesome-roslyn" -> "SergeyTeplyakov/ErrorProne.NET"
 "ironcev/awesome-roslyn" -> "meziantou/Meziantou.Analyzer" ["e"=1]
 "ironcev/awesome-roslyn" -> "antiufo/roslyn-linq-rewrite"
+"Athari/CsConsoleFormat" -> "cklutz/LockCheck" ["e"=1]
 "YoshihiroIto/Biaui" -> "YoshihiroIto/JitPad"
 "YoshihiroIto/Biaui" -> "devpelux/fullcontrols"
 "YoshihiroIto/Biaui" -> "GabrieleAsaro/Yeet-Emulator" ["e"=1]
@@ -994,6 +1157,8 @@ digraph G {
 "JetBrains/resharper-rider-plugin" -> "JetBrains/resharper-devguide"
 "JetBrains/resharper-rider-plugin" -> "JetBrains/rd"
 "JetBrains/resharper-rider-plugin" -> "matkoch/resharper-testlinker"
+"DragonSpit/HPCsharp" -> "VictorNicollet/NoAlloq" ["e"=1]
+"reactiveui/Pharmacist" -> "reaqtive/reaqtor" ["e"=1]
 "alexanderkozlenko/aspnetcore-request-decompression" -> "alexanderkozlenko/json-rpc-client"
 "allisterb/jemalloc.NET" -> "davidfowl/Channels"
 "allisterb/jemalloc.NET" -> "aumcode/nfx"
@@ -1008,6 +1173,7 @@ digraph G {
 "damageboy/VxSort" -> "YoshihiroIto/JitPad"
 "damageboy/VxSort" -> "damageboy/vxsort-cpp"
 "dotnet/arcade-services" -> "dotnet/arcade-validation"
+"fsharp/fsharp-compiler-docs" -> "dotnet/netcorecli-fsc" ["e"=1]
 "dotnet/ml-api-docs" -> "dotnet/llvm-project"
 "dotnet/source-build-reference-packages" -> "dotnet/source-build-externals"
 "dotnet/source-build-reference-packages" -> "dotnet/NuGet.BuildTasks"
@@ -1119,6 +1285,16 @@ digraph G {
 "HandshakeAlliance/HandyMiner-CLI" -> "HandshakeAlliance/hindexer"
 "HandshakeAlliance/HandyMiner-CLI" -> "HNScan/HNScan"
 "HandshakeAlliance/HandyMiner-CLI" -> "HandshakeAlliance/nomenclate"
+"aspnet/KestrelHttpServer" -> "dotnet/corefxlab" ["e"=1]
+"dotnet/runtimelab" -> "dotnet/designs" ["e"=1]
+"dotnet/runtimelab" -> "dotnet/dotNext" ["e"=1]
+"dotnet/runtimelab" -> "dotnet/performance" ["e"=1]
+"dotnet/runtimelab" -> "EgorBo/Disasmo" ["e"=1]
+"dotnet/runtimelab" -> "dotnet/diagnostics" ["e"=1]
+"dotnet/runtimelab" -> "dotnet/roslyn-analyzers" ["e"=1]
+"DotNetAnalyzers/StyleCopAnalyzers" -> "dotnet/roslyn-analyzers" ["e"=1]
+"DotNetAnalyzers/StyleCopAnalyzers" -> "SonarSource/sonar-dotnet" ["e"=1]
+"DotNetAnalyzers/StyleCopAnalyzers" -> "dotnet/format" ["e"=1]
 "dotnet/corefxlab" -> "aspnet/KestrelHttpServer" ["e"=1]
 "dotnet/corefxlab" -> "davidfowl/Channels"
 "dotnet/corefxlab" -> "dotnet/corert" ["e"=1]
@@ -1150,6 +1326,12 @@ digraph G {
 "microsoft/Microsoft.IO.RecyclableMemoryStream" -> "amis92/csharp-source-generators" ["e"=1]
 "microsoft/Microsoft.IO.RecyclableMemoryStream" -> "davidfowl/BedrockFramework"
 "dotnet/docs-desktop" -> "dotnet/ml-api-docs"
+"microsoft/FluidFramework" -> "microsoft/coyote" ["e"=1]
+"OmniSharp/omnisharp-roslyn" -> "dotnet/format" ["e"=1]
+"madskristensen/WebEssentials2015" -> "madskristensen/ExtensibilityTools" ["e"=1]
+"gluck/il-repack" -> "microsoft/clrmd" ["e"=1]
+"gluck/il-repack" -> "microsoft/vs-threading" ["e"=1]
+"gluck/il-repack" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
 "microsoft/CodeContracts" -> "dotnet/corefxlab"
 "microsoft/CodeContracts" -> "icsharpcode/RefactoringEssentials"
 "microsoft/CodeContracts" -> "dotnet/codeformatter"
@@ -1165,14 +1347,32 @@ digraph G {
 "microsoft/CodeContracts" -> "microsoft/dotnet-samples"
 "microsoft/CodeContracts" -> "DotNetAnalyzers/StyleCopAnalyzers" ["e"=1]
 "microsoft/CodeContracts" -> "microsoft/Microsoft.IO.RecyclableMemoryStream"
+"mspnp/performance-optimization" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"mspnp/performance-optimization" -> "config-r/config-r" ["e"=1]
+"mspnp/performance-optimization" -> "davidfowl/Channels" ["e"=1]
+"mspnp/performance-optimization" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"xin9le/FastEnum" -> "Cysharp/PrivateProxy" ["e"=1]
+"xin9le/FastEnum" -> "reegeek/StructLinq" ["e"=1]
+"xin9le/FastEnum" -> "VSadov/NonBlocking" ["e"=1]
+"aloneguid/parquet-dotnet" -> "dotnet/Nerdbank.Streams" ["e"=1]
 "Tyrrrz/GitHubActionsTestLogger" -> "Tyrrrz/Gress" ["e"=1]
 "Tyrrrz/GitHubActionsTestLogger" -> "Tyrrrz/MiniRazor"
 "Tyrrrz/GitHubActionsTestLogger" -> "SimonCropp/Polyfill" ["e"=1]
 "Tyrrrz/GitHubActionsTestLogger" -> "mhutch/MonoDevelop.MSBuildEditor"
 "Tyrrrz/GitHubActionsTestLogger" -> "devlooped/SmallSharp"
+"dotnet-presentations/dotNETConf" -> "davidfowl/Todos" ["e"=1]
 "xen2/SharpLang" -> "dotnet/llilc"
 "xen2/SharpLang" -> "ciplogic/CodeRefractor"
 "davidwengier/SourceGeneratorPlayground" -> "davidwengier/SourceGeneratorTemplate"
+"Sergio0694/ComputeSharp" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"sveinungf/spreadcheetah" -> "Nyrest/FastGenericNew" ["e"=1]
+"sveinungf/spreadcheetah" -> "sebastienros/parlot" ["e"=1]
+"TomaszRewak/C-sharp-console-gui-framework" -> "bleroy/lunr-core" ["e"=1]
+"TomaszRewak/C-sharp-console-gui-framework" -> "datalust/superpower" ["e"=1]
+"AaronRobinsonMSFT/DNNE" -> "EgorBo/Disasmo" ["e"=1]
+"AaronRobinsonMSFT/DNNE" -> "dotnet/jitutils" ["e"=1]
+"AaronRobinsonMSFT/DNNE" -> "dotnet/Nerdbank.Streams" ["e"=1]
+"statiqdev/Statiq.Web" -> "dotnet/corefxlab" ["e"=1]
 "davidfowl/Todos" -> "featherhttp/framework"
 "davidfowl/Todos" -> "davidfowl/DotNetCodingPatterns"
 "davidfowl/Todos" -> "davidfowl/Micronetes"
@@ -1188,6 +1388,11 @@ digraph G {
 "davidfowl/Todos" -> "davidfowl/AspNetCoreDiagnosticScenarios" ["e"=1]
 "davidfowl/Todos" -> "dotnet-presentations/dotNETConf" ["e"=1]
 "davidfowl/Todos" -> "Maoni0/mem-doc"
+"git-tfs/git-tfs" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"microsoft/bond" -> "dotnet/corefxlab" ["e"=1]
+"microsoft/bond" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"microsoft/bond" -> "microsoft/CodeContracts" ["e"=1]
+"microsoft/bond" -> "dotnet/llilc" ["e"=1]
 "dotnet/crank" -> "microsoft/coyote"
 "dotnet/crank" -> "Maoni0/mem-doc"
 "dotnet/crank" -> "dotnet/tye" ["e"=1]
@@ -1218,8 +1423,25 @@ digraph G {
 "microsoft/RoslynClrHeapAllocationAnalyzer" -> "benaadams/Ben.BlockingDetector"
 "microsoft/RoslynClrHeapAllocationAnalyzer" -> "cybermaxs/awesome-analyzers"
 "microsoft/RoslynClrHeapAllocationAnalyzer" -> "allisterb/jemalloc.NET"
+"dotnet-foundation/foundation" -> "dotnet/llilc" ["e"=1]
+"dotnet-foundation/foundation" -> "dotnet/project-system" ["e"=1]
+"wishstudio/flinux" -> "dotnet/llilc" ["e"=1]
+"microsoft/ApplicationInspector" -> "microsoft/infersharp" ["e"=1]
+"TurnerSoftware/CacheTower" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"TurnerSoftware/CacheTower" -> "bleroy/lunr-core" ["e"=1]
+"TurnerSoftware/CacheTower" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"NuGet/Home" -> "NuGet/NuGet.Client" ["e"=1]
+"NuGet/Home" -> "dotnet/project-system" ["e"=1]
+"NuGet/Home" -> "dotnet/sdk" ["e"=1]
+"NuGet/Home" -> "dotnet/roslyn-analyzers" ["e"=1]
+"NuGet/Home" -> "dotnet/corefxlab" ["e"=1]
+"NuGet/Home" -> "dotnet/sourcelink" ["e"=1]
 "bartoszlenar/Validot" -> "bartoszlenar/CoreValidation"
 "bartoszlenar/Validot" -> "TomaszRewak/C-sharp-stack-only-json-parser"
+"dotnet/Scaffolding" -> "dotnet/razor" ["e"=1]
+"dotnet/Scaffolding" -> "dotnet/project-system" ["e"=1]
+"dotnet/Scaffolding" -> "dotnet/performance" ["e"=1]
+"JasperFx/jasper" -> "dadhi/ImTools" ["e"=1]
 "madskristensen/Tweakster" -> "loop8ack/ExtensionPackTools"
 "madskristensen/Tweakster" -> "madskristensen/ToggleFeatures"
 "madskristensen/Tweakster" -> "VsixCommunity/Community.VisualStudio.Toolkit"
@@ -1228,6 +1450,13 @@ digraph G {
 "HavenDV/H.Pipes" -> "HavenDV/H.Ipc"
 "HavenDV/H.Pipes" -> "cloudtoid/interprocess"
 "HavenDV/H.Pipes" -> "steamcore/TinyIpc"
+"neolithos/neolua" -> "microsoft/VSLua" ["e"=1]
+"NuGet/NuGetGallery" -> "NuGet/NuGet.Client" ["e"=1]
+"madelson/MedallionShell" -> "KirillOsenkov/XmlParser" ["e"=1]
+"madelson/MedallionShell" -> "adamralph/bullseye" ["e"=1]
+"json-everything/json-everything" -> "adamralph/minver" ["e"=1]
+"json-everything/json-everything" -> "dotnet/dotNext" ["e"=1]
+"json-everything/json-everything" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "andy489/Empirical_Methods_and_Statistics" -> "andy489/Software_Engineering_State_Exam"
 "andy489/Empirical_Methods_and_Statistics" -> "avelin/fmi-os"
 "andy489/Empirical_Methods_and_Statistics" -> "andy489/Linux_Shell"
@@ -1238,6 +1467,9 @@ digraph G {
 "spectresystems/snitch" -> "adamralph/simple-exec"
 "spectresystems/snitch" -> "TNG/ArchUnitNET" ["e"=1]
 "spectresystems/snitch" -> "spectresystems/spectre.io"
+"frhagn/Typewriter" -> "daveaglick/Scripty" ["e"=1]
+"frhagn/Typewriter" -> "bleroy/lunr-core" ["e"=1]
+"frhagn/Typewriter" -> "microsoft/CodeContracts" ["e"=1]
 "microsoft/scalar" -> "microsoft/git"
 "microsoft/scalar" -> "microsoft/VFSForGit" ["e"=1]
 "microsoft/scalar" -> "microsoft/BuildXL"
@@ -1257,6 +1489,16 @@ digraph G {
 "YaccConstructor/QuickGraph" -> "panthernet/GraphX"
 "YaccConstructor/QuickGraph" -> "NetTopologySuite/NetTopologySuite" ["e"=1]
 "YaccConstructor/QuickGraph" -> "vfrz/DotNetGraph"
+"StyleCop/StyleCop" -> "dotnet/roslyn-analyzers" ["e"=1]
+"StyleCop/StyleCop" -> "dotnet/format" ["e"=1]
+"StyleCop/StyleCop" -> "SonarSource/sonar-dotnet" ["e"=1]
+"petabridge/akka-bootcamp" -> "asynkron/Wire" ["e"=1]
+"tmds/Tmds.Ssh" -> "eiriktsarpalis/PolyType" ["e"=1]
+"KorzhCom/EasyData" -> "featherhttp/framework" ["e"=1]
+"codecadwallader/codemaid" -> "icsharpcode/RefactoringEssentials" ["e"=1]
+"codecadwallader/codemaid" -> "microsoft/VS-PPT" ["e"=1]
+"codecadwallader/codemaid" -> "microsoft/VSSDK-Extensibility-Samples" ["e"=1]
+"codecadwallader/codemaid" -> "tomasr/viasfora" ["e"=1]
 "dotnet/codeformatter" -> "dotnet/format"
 "dotnet/codeformatter" -> "dotnet/corefxlab"
 "dotnet/codeformatter" -> "scientistproject/Scientist.net" ["e"=1]
@@ -1309,8 +1551,17 @@ digraph G {
 "justinstenning/SharedMemory" -> "jamescourtney/FlatSharp"
 "justinstenning/SharedMemory" -> "jtmueller/Collections.Pooled"
 "justinstenning/SharedMemory" -> "cyanfish/grpc-dotnet-namedpipes"
+"bytecodealliance/wasmtime-dotnet" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
+"EWSoftware/SHFB" -> "microsoft/CodeContracts" ["e"=1]
+"betwixt-labs/bebop" -> "microsoft/coyote" ["e"=1]
+"FortuneN/FineCodeCoverage" -> "madushans/DependenSee" ["e"=1]
+"FortuneN/FineCodeCoverage" -> "Tyrrrz/GitHubActionsTestLogger" ["e"=1]
+"FortuneN/FineCodeCoverage" -> "EgorBo/Disasmo" ["e"=1]
+"FortuneN/FineCodeCoverage" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
 "Tyrrrz/MiniRazor" -> "bleroy/lunr-core"
 "Tyrrrz/MiniRazor" -> "Tyrrrz/Contextual"
+"adoconnection/RazorEngineCore" -> "Tyrrrz/MiniRazor" ["e"=1]
+"RicoSuter/NJsonSchema" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "KirillOsenkov/RoslynQuoter" -> "ironcev/awesome-roslyn"
 "KirillOsenkov/RoslynQuoter" -> "amis92/csharp-source-generators" ["e"=1]
 "KirillOsenkov/RoslynQuoter" -> "KirillOsenkov/MSBuildStructuredLog"
@@ -1356,6 +1607,7 @@ digraph G {
 "bleroy/lunr-core" -> "Tyrrrz/CliFx" ["e"=1]
 "bleroy/lunr-core" -> "adamralph/bullseye"
 "bleroy/lunr-core" -> "sebastienros/yessql" ["e"=1]
+"nager/Nager.Date" -> "adamralph/minver" ["e"=1]
 "adospace/fluent-ui-xaml" -> "ghost1372/ModernWpf"
 "adospace/fluent-ui-xaml" -> "manuelroemer/Celestial.UIToolkit"
 "adospace/fluent-ui-xaml" -> "devpelux/fullcontrols"
@@ -1381,8 +1633,14 @@ digraph G {
 "TomaszRewak/C-sharp-stack-only-json-parser" -> "mgravell/PooledAwait"
 "TomaszRewak/C-sharp-stack-only-json-parser" -> "bleroy/lunr-core"
 "TomaszRewak/C-sharp-stack-only-json-parser" -> "EgorBo/Disasmo"
+"YairHalberstadt/stronginject" -> "NetFabric/NetFabric.Hyperlinq" ["e"=1]
 "jmalarcon/DotNetVersions" -> "EliteLoser/DotNetVersionLister"
 "jmalarcon/DotNetVersions" -> "dotnet/cli-lab"
+"microsoft/RockPaperScissorsLizardSpock" -> "dotnet/HttpRepl" ["e"=1]
+"pact-foundation/pact-net" -> "microsoft/coyote" ["e"=1]
+"danielwertheim/Ensure.That" -> "fluentassertions/fluentassertions.analyzers" ["e"=1]
+"open-telemetry/opentelemetry-dotnet-contrib" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"open-telemetry/opentelemetry-dotnet-contrib" -> "dotnet/dotNext" ["e"=1]
 "xoofx/kalk" -> "stark-lang/stark"
 "Jmgr/actiona" -> "RMPR/atbswp"
 "buffrr/letsdane" -> "imperviousinc/fingertip"
@@ -1415,6 +1673,7 @@ digraph G {
 "microsoft/dotnet-apiport" -> "DotNetAnalyzers/StyleCopAnalyzers" ["e"=1]
 "microsoft/dotnet-apiport" -> "dotnet/platform-compat"
 "microsoft/dotnet-apiport" -> "microsoft/vs-threading"
+"devlooped/ThisAssembly" -> "devlooped/GitInfo" ["e"=1]
 "dotnet/try-convert" -> "dotnet/upgrade-assistant"
 "dotnet/try-convert" -> "hvanbakel/CsprojToVs2017"
 "dotnet/try-convert" -> "microsoft/dotnet-apiport"
@@ -1431,6 +1690,8 @@ digraph G {
 "dotnet/try-convert" -> "dotnet/tye" ["e"=1]
 "dotnet/try-convert" -> "MarcosMeli/FileHelpers" ["e"=1]
 "chjj/liburkel" -> "handshake-org/urkel"
+"microsoft/DacFx" -> "dotnet/SqlClient" ["e"=1]
+"OData/odata.net" -> "microsoft/CodeContracts" ["e"=1]
 "RMPR/atbswp" -> "Jmgr/actiona"
 "RMPR/atbswp" -> "lkwate/neural-question-generation"
 "RMPR/atbswp" -> "repeats/Repeat"
@@ -1449,6 +1710,10 @@ digraph G {
 "microsoft/coyote" -> "NetFabric/NetFabric.Hyperlinq"
 "microsoft/coyote" -> "dotnet/command-line-api" ["e"=1]
 "microsoft/coyote" -> "open-telemetry/opentelemetry-dotnet" ["e"=1]
+"seesharper/LightInject" -> "adamralph/simple-exec" ["e"=1]
+"seesharper/LightInject" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
+"AngryCarrot789/WPFDarkTheme" -> "YoshihiroIto/Biaui" ["e"=1]
+"AngryCarrot789/WPFDarkTheme" -> "adospace/fluent-ui-xaml" ["e"=1]
 "bitfaster/BitFaster.Caching" -> "VSadov/NonBlocking"
 "bitfaster/BitFaster.Caching" -> "koculu/ZoneTree" ["e"=1]
 "bitfaster/BitFaster.Caching" -> "dadhi/FastExpressionCompiler" ["e"=1]
@@ -1464,6 +1729,7 @@ digraph G {
 "bitfaster/BitFaster.Caching" -> "Tornhoof/SpanJson"
 "bitfaster/BitFaster.Caching" -> "dotnet/dotNext"
 "bitfaster/BitFaster.Caching" -> "Abc-Arbitrage/ZeroLog"
+"agileobjects/ReadableExpressions" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
 "wy/namebase-exchange-python" -> "namebasehq/api-documentation"
 "pinheadmz/handout" -> "pinheadmz/palmreader"
 "pinheadmz/handout" -> "kyokan/bob-extension"
@@ -1482,16 +1748,25 @@ digraph G {
 "pinheadmz/handout" -> "handshake-org/hs-names"
 "jefffhaynes/BinarySerializer" -> "rikimaru0345/Ceras"
 "madskristensen/TrailingWhitespace" -> "Therena/OpenFolderExtension"
+"davidwhitney/CoreBoy" -> "john-h-k/MathSharp" ["e"=1]
+"davidwhitney/CoreBoy" -> "davidfowl/BedrockFramework" ["e"=1]
 "MathInspector/MathInspector" -> "doino-gretchenliev/revolut-stocks"
 "MathInspector/MathInspector" -> "microsoft/Extensible-Storage-Engine"
 "MathInspector/MathInspector" -> "blasty/CVE-2021-3156" ["e"=1]
 "MathInspector/MathInspector" -> "leon-thomm/Ryven" ["e"=1]
 "MathInspector/MathInspector" -> "ManimCommunity/manim-tweets"
 "MathInspector/MathInspector" -> "google-deepmind/tree" ["e"=1]
+"proudmonkey/AutoWrapper" -> "adamralph/simple-exec" ["e"=1]
+"DinoZ1729/Ray" -> "bullhe4d/bigwatermelon" ["e"=1]
+"mike-ward/Markdown-Edit" -> "madskristensen/MarkdownEditor" ["e"=1]
+"alphaleonis/AlphaFS" -> "jackmott/LinqFaster" ["e"=1]
 "tkp1n/IoUring.Transport" -> "tmds/Tmds.LinuxAsync"
 "james-stevens/powerdns-webui" -> "james-stevens/wallet-ids-in-dns"
 "dasMulli/data-builder-generator" -> "StefH/FluentBuilder"
 "dasMulli/data-builder-generator" -> "pmrogala/Buildenator"
+"re-motion/Relinq" -> "davidfowl/Channels" ["e"=1]
+"re-motion/Relinq" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"re-motion/Relinq" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
 "davidfowl/Micronetes" -> "davidfowl/BedrockFramework"
 "davidfowl/Micronetes" -> "featherhttp/framework"
 "davidfowl/Micronetes" -> "davidfowl/Todos"
@@ -1507,6 +1782,8 @@ digraph G {
 "davidfowl/Micronetes" -> "AndreyAkinshin/perfolizer"
 "davidfowl/Micronetes" -> "snatch-dev/Convey" ["e"=1]
 "davidfowl/Micronetes" -> "bleroy/lunr-core"
+"Cysharp/ProcessX" -> "Cysharp/Utf8StringInterpolation" ["e"=1]
+"Cysharp/ProcessX" -> "Cysharp/Utf8StreamReader" ["e"=1]
 "microsoft/dotnet-samples" -> "microsoft/clrmd"
 "microsoft/dotnet-samples" -> "microsoft/CodeContracts"
 "microsoft/dotnet-samples" -> "microsoft/Win2D-Samples" ["e"=1]
@@ -1516,21 +1793,26 @@ digraph G {
 "microsoft/dotnet-samples" -> "microsoft/clr-samples"
 "microsoft/dotnet-samples" -> "microsoft/Tx" ["e"=1]
 "microsoft/dotnet-samples" -> "microsoft/DesktopBridgeToUWP-Samples" ["e"=1]
+"punker76/code-samples" -> "adospace/fluent-ui-xaml" ["e"=1]
 "microsoft/llvm" -> "microsoft/clang"
 "microsoft/clang" -> "microsoft/llvm"
 "microsoft/clang" -> "microsoft/compiler-rt"
 "microsoft/clang" -> "microsoft/clang-tools-extra"
 "microsoft/clang" -> "microsoft/openssl"
+"microsoft/win32metadata" -> "EgorBo/Disasmo" ["e"=1]
 "HellBrick/AsyncCollections" -> "jehugaleahsa/ComparerExtensions"
 "HellBrick/AsyncCollections" -> "ashmind/ashmind-extensions"
 "HellBrick/AsyncCollections" -> "MathosProject/Mathos-Project"
 "xunit/visualstudio.xunit" -> "xunit/assert.xunit"
 "xunit/visualstudio.xunit" -> "xunit/xunit.analyzers"
 "xunit/visualstudio.xunit" -> "xunit/resharper-xunit"
+"nlkl/Optional" -> "datalust/superpower" ["e"=1]
 "DustinCampbell/CSharpEssentials" -> "Wintellect/Wintellect.Analyzers"
 "DustinCampbell/CSharpEssentials" -> "icsharpcode/RefactoringEssentials"
+"asc-community/AngouriMath" -> "john-h-k/MathSharp" ["e"=1]
 "cloudtoid/interprocess" -> "justinstenning/SharedMemory"
 "cloudtoid/interprocess" -> "steamcore/TinyIpc"
+"curiosity-ai/catalyst" -> "bleroy/lunr-core" ["e"=1]
 "dotnet/windowsdesktop" -> "dotnet/versions"
 "dotnet/windowsdesktop" -> "dotnet/project-system-tools"
 "dotnet/windowsdesktop" -> "dotnet/roslyn-tools"
@@ -1560,6 +1842,7 @@ digraph G {
 "namebasehq/awesome-handshake" -> "pinheadmz/goshake"
 "namebasehq/awesome-handshake" -> "buffrr/letsdane"
 "chsienki/Kittitas" -> "davidwengier/SourceGeneratorTemplate"
+"PistonDevelopers/VisualRust" -> "dotnet/llilc" ["e"=1]
 "Sergio0694/BinaryPack" -> "xoofx/zio"
 "Sergio0694/BinaryPack" -> "nxrighthere/NetStack" ["e"=1]
 "Sergio0694/BinaryPack" -> "jamescourtney/FlatSharp"
@@ -1568,11 +1851,15 @@ digraph G {
 "EWSoftware/VSSpellChecker" -> "icsharpcode/RefactoringEssentials"
 "EWSoftware/VSSpellChecker" -> "mike-ward/VSColorOutput"
 "EWSoftware/VSSpellChecker" -> "madskristensen/MarkdownEditor"
+"rionmonster/Glyphfriend" -> "madskristensen/ExtensibilityTools" ["e"=1]
+"subins2000/p2pt" -> "RangerMauve/mutable-webtorrent" ["e"=1]
 "HandyOSS/HandyBrowser" -> "handshake-org/HIPs"
 "HandyOSS/HandyBrowser" -> "namebasehq/api-documentation"
 "HandyOSS/HandyBrowser" -> "hnsfund/xnhns"
 "HandyOSS/HandyBrowser" -> "pinheadmz/handout"
+"Cysharp/LogicLooper" -> "Cysharp/KcpTransport" ["e"=1]
 "SLaks/VSEmbed" -> "jaredpar/EditorUtils"
+"dotnet/apireviews" -> "dotnet/jitutils" ["e"=1]
 "NetFabric/LinqBenchmarks" -> "NetFabric/NetFabric.Numerics"
 "NetFabric/LinqBenchmarks" -> "reegeek/StructLinq"
 "VictorNicollet/NoAlloq" -> "VSadov/NonBlocking"
@@ -1592,6 +1879,7 @@ digraph G {
 "cyanfish/grpc-dotnet-namedpipes" -> "tylerjensen/ServiceWire"
 "YanaRGeorgieva/Logic-programming" -> "BoyanVD/LogicProgramming-2022-2023"
 "Angeld55/Math_courses_seminars_notes_and_tasks" -> "Angeld55/Data_structures_and_algorithms_FMI"
+"manuelroemer/Nullable" -> "tunnelvisionlabs/ReferenceAssemblyAnnotator" ["e"=1]
 "lowleveldesign/debug-recipes" -> "rodneyviana/netext"
 "lowleveldesign/debug-recipes" -> "chrisnas/DebuggingExtensions"
 "lowleveldesign/debug-recipes" -> "Dynatrace/superdump"
@@ -1622,6 +1910,7 @@ digraph G {
 "NuGetArchive/NuGet.PackageManagement" -> "NuGetArchive/NuGet.VisualStudioExtension"
 "lkwate/neural-question-generation" -> "Tikquuss/meta_XLM"
 "pinheadmz/goshake" -> "pinheadmz/holdmyhand"
+"markjprice/cs10dotnet6" -> "dotnet/csharpstandard" ["e"=1]
 "microsoft/automatic-graph-layout" -> "panthernet/GraphX"
 "microsoft/automatic-graph-layout" -> "YaccConstructor/QuickGraph"
 "microsoft/automatic-graph-layout" -> "KirillOsenkov/MSBuildStructuredLog"
@@ -1637,6 +1926,12 @@ digraph G {
 "microsoft/automatic-graph-layout" -> "dotnet/pinvoke" ["e"=1]
 "microsoft/automatic-graph-layout" -> "mmanela/diffplex" ["e"=1]
 "microsoft/automatic-graph-layout" -> "KirillOsenkov/SourceBrowser"
+"justinstenning/Direct3DHook" -> "justinstenning/SharedMemory" ["e"=1]
+"dotnet/msbuild" -> "dotnet/sdk" ["e"=1]
+"dotnet/msbuild" -> "dotnet/project-system" ["e"=1]
+"dotnet/msbuild" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"aspnet/Announcements" -> "dotnet/announcements" ["e"=1]
+"StackExchange/NetGain" -> "dotnet/corefxlab" ["e"=1]
 "dotnet/roslyn-analyzers" -> "DotNetAnalyzers/StyleCopAnalyzers" ["e"=1]
 "dotnet/roslyn-analyzers" -> "dotnet/roslynator" ["e"=1]
 "dotnet/roslyn-analyzers" -> "dotnet/project-system"
@@ -1652,6 +1947,13 @@ digraph G {
 "dotnet/roslyn-analyzers" -> "SonarSource/sonar-dotnet"
 "dotnet/roslyn-analyzers" -> "KirillOsenkov/RoslynQuoter"
 "dotnet/roslyn-analyzers" -> "KirillOsenkov/MSBuildStructuredLog"
+"dotnet/docs" -> "dotnet/sdk" ["e"=1]
+"dotnet/docs" -> "dotnet/dotnet-api-docs" ["e"=1]
+"NonFactors/AspNetCore.Grid" -> "DamianEdwards/TagHelperPack" ["e"=1]
+"microsoft/TouchDevelop" -> "microsoft/docker" ["e"=1]
+"microsoft/TouchDevelop" -> "microsoft/CodeContracts" ["e"=1]
+"microsoft/TouchDevelop" -> "dotnet/codeformatter" ["e"=1]
+"belav/csharpier" -> "dotnet/format" ["e"=1]
 "telerik/JustDecompileEngine" -> "telerik/JustAssembly"
 "telerik/JustDecompileEngine" -> "telerik/justdecompile-plugins"
 "telerik/JustDecompileEngine" -> "microsoft/VS-PPT"
@@ -1682,9 +1984,22 @@ digraph G {
 "dotnet/Nerdbank.GitVersioning" -> "KirillOsenkov/MSBuildStructuredLog"
 "dotnet/Nerdbank.GitVersioning" -> "TestableIO/System.IO.Abstractions" ["e"=1]
 "dotnet/Nerdbank.GitVersioning" -> "dotnet/dotNext"
+"clowd/Clowd.Squirrel" -> "HavenDV/DependencyPropertyGenerator" ["e"=1]
+"alugili/CSharp-9-CheatSheet" -> "bleroy/lunr-core" ["e"=1]
+"BlueRaja/High-Speed-Priority-Queue-for-C-Sharp" -> "sestoft/C5" ["e"=1]
+"sdushantha/wifi-password" -> "bullhe4d/bigwatermelon" ["e"=1]
 "NuGetArchive/NuGet3" -> "NuGetArchive/NuGet.VisualStudioExtension"
 "NuGetArchive/NuGet3" -> "NuGetArchive/NuGet.PackageManagement"
 "NuGet/NuGet2" -> "NuGetArchive/NuGet3"
+"DevTeam/Pure.DI" -> "Nyrest/FastGenericNew" ["e"=1]
+"Tyrrrz/DotnetRuntimeBootstrapper" -> "Tyrrrz/MiniRazor" ["e"=1]
+"danielpalme/IocPerformance" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"dotnet/wcf" -> "dotnet/llilc" ["e"=1]
+"dotnet/wcf" -> "microsoft/dotnet-apiport" ["e"=1]
+"microsoft/perfview" -> "dotnet/diagnostics" ["e"=1]
+"microsoft/perfview" -> "Maoni0/mem-doc" ["e"=1]
+"microsoft/perfview" -> "microsoft/clrmd" ["e"=1]
+"microsoft/perfview" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "dotnet/upgrade-assistant" -> "dotnet/try-convert"
 "dotnet/upgrade-assistant" -> "dotnet/format"
 "dotnet/upgrade-assistant" -> "dotnet/systemweb-adapters"
@@ -1700,6 +2015,9 @@ digraph G {
 "dotnet/upgrade-assistant" -> "dotnet/command-line-api" ["e"=1]
 "dotnet/upgrade-assistant" -> "microsoft/Microsoft.IO.RecyclableMemoryStream"
 "dotnet/upgrade-assistant" -> "riok/mapperly" ["e"=1]
+"davidfowl/TodoApp" -> "davidfowl/DotNetCodingPatterns" ["e"=1]
+"davidfowl/TodoApp" -> "DamianEdwards/MinimalApiPlayground" ["e"=1]
+"MicrosoftDocs/Virtualization-Documentation" -> "microsoft/docker" ["e"=1]
 "dotnet/llilc" -> "dotnet/corert" ["e"=1]
 "dotnet/llilc" -> "dotnet/LLVMSharp" ["e"=1]
 "dotnet/llilc" -> "xen2/SharpLang"
@@ -1715,6 +2033,12 @@ digraph G {
 "dotnet/llilc" -> "bridgedotnet/Bridge" ["e"=1]
 "dotnet/llilc" -> "microsoft/CodeContracts"
 "dotnet/llilc" -> "NETMF/netmf-interpreter" ["e"=1]
+"dotnet/ClangSharp" -> "EgorBo/Disasmo" ["e"=1]
+"dotnet/ClangSharp" -> "dotnet/llilc" ["e"=1]
+"dotnet/LLVMSharp" -> "dotnet/llilc" ["e"=1]
+"dotnet/LLVMSharp" -> "xen2/SharpLang" ["e"=1]
+"NETMF/netmf-interpreter" -> "dotnet/llilc" ["e"=1]
+"NETMF/netmf-interpreter" -> "icsharpcode/RefactoringEssentials" ["e"=1]
 "SonarSource/sonaranalyzer-dotnet" -> "SonarSource/sonar-.net-documentation"
 "SonarSource/sonaranalyzer-dotnet" -> "SonarSource/sonar-scanner-msbuild"
 "microsoft/MIEngine" -> "microsoft/ConcordExtensibilitySamples"
@@ -1732,7 +2056,13 @@ digraph G {
 "microsoft/MIEngine" -> "microsoft/RoslynClrHeapAllocationAnalyzer"
 "microsoft/MIEngine" -> "chrisdunelm/DotNetAnywhere" ["e"=1]
 "microsoft/MIEngine" -> "microsoft/extendvs"
+"wesdoyle/design-patterns-explained-with-food" -> "davidfowl/DotNetCodingPatterns" ["e"=1]
 "canton7/PropertyChanged.SourceGenerator" -> "HavenDV/DependencyPropertyGenerator"
+"amis92/csharp-source-generators" -> "dotnet/dotNext" ["e"=1]
+"sdrapkin/SecurityDriven.Inferno" -> "asynkron/Wire" ["e"=1]
+"sdrapkin/SecurityDriven.Inferno" -> "daveaglick/Scripty" ["e"=1]
+"sdrapkin/SecurityDriven.Inferno" -> "config-r/config-r" ["e"=1]
+"tallesl/net-libraries-that-make-your-life-easier" -> "aloisdg/awesome-linq" ["e"=1]
 "DamianEdwards/MinimalApiPlayground" -> "DamianEdwards/MinimalApis.Extensions"
 "DamianEdwards/MinimalApiPlayground" -> "anuraj/MinimalApi" ["e"=1]
 "DamianEdwards/MinimalApiPlayground" -> "DamianEdwards/MiniValidation"
@@ -1748,7 +2078,14 @@ digraph G {
 "DamianEdwards/MinimalApiPlayground" -> "ardalis/Result" ["e"=1]
 "DamianEdwards/MinimalApiPlayground" -> "dotnet/aspire-samples" ["e"=1]
 "DamianEdwards/MinimalApiPlayground" -> "davidfowl/aspire-ai-chat-demo" ["e"=1]
+"MatthewKing/DeviceId" -> "adamralph/bullseye" ["e"=1]
+"github/VisualStudio" -> "microsoft/VSSDK-Extensibility-Samples" ["e"=1]
+"github/VisualStudio" -> "dotnet/project-system" ["e"=1]
+"github/VisualStudio" -> "microsoft/VS-PPT" ["e"=1]
 "StefanKert/BuildVision" -> "MykolaBalakin/VSOutputEnhancer"
+"jonsequitur/dotnet-repl" -> "adamralph/bullseye" ["e"=1]
+"jonsequitur/dotnet-repl" -> "adamralph/simple-exec" ["e"=1]
+"bflattened/bflat" -> "dotnet/dotNext" ["e"=1]
 "Nyrest/FastGenericNew" -> "EngRajabi/Enum.Source.Generator"
 "Nyrest/FastGenericNew" -> "cathei/LinqGen"
 "Nyrest/FastGenericNew" -> "Cysharp/PrivateProxy"
@@ -1757,13 +2094,18 @@ digraph G {
 "Nyrest/FastGenericNew" -> "bitfaster/BitFaster.Caching"
 "Nyrest/FastGenericNew" -> "diegofrata/Generator.Equals"
 "Nyrest/FastGenericNew" -> "m31coding/M31.FluentAPI"
+"aspnet/Benchmarks" -> "dotnet/crank" ["e"=1]
+"aspnet/Benchmarks" -> "dotnet/corefxlab" ["e"=1]
+"aspnet/Benchmarks" -> "dotnet/performance" ["e"=1]
 "leonardochaia/dotnet-affected" -> "nx-dotnet/nx-dotnet" ["e"=1]
 "leonardochaia/dotnet-affected" -> "petabridge/Incrementalist"
 "leonardochaia/dotnet-affected" -> "0xced/Chisel"
 "leonardochaia/dotnet-affected" -> "leonardochaia/dotnet-affected-action"
 "leonardochaia/dotnet-affected" -> "eiriktsarpalis/PolyType"
 "IllyaTheHath/viasfora" -> "tomasr/viasfora"
+"msysgit/msysgit" -> "dotnet/codeformatter" ["e"=1]
 "diegofrata/Generator.Equals" -> "HavenDV/DependencyPropertyGenerator"
+"dokan-dev/dokan-dotnet" -> "xoofx/zio" ["e"=1]
 "microsoft/VSSDK-Extensibility-Samples" -> "microsoft/VSProjectSystem"
 "microsoft/VSSDK-Extensibility-Samples" -> "microsoft/VSExtensibility"
 "microsoft/VSSDK-Extensibility-Samples" -> "microsoft/VS-PPT"
@@ -1779,6 +2121,9 @@ digraph G {
 "microsoft/VSSDK-Extensibility-Samples" -> "dotnet/project-system"
 "microsoft/VSSDK-Extensibility-Samples" -> "dotnet/roslyn-analyzers"
 "microsoft/VSSDK-Extensibility-Samples" -> "dotnet/msbuild" ["e"=1]
+"DuendeArchive/BFF" -> "DamianEdwards/MinimalApis.Extensions" ["e"=1]
+"rossning92/movy" -> "richardclegg/vis_route" ["e"=1]
+"rossning92/movy" -> "bullhe4d/bigwatermelon" ["e"=1]
 "icsharpcode/RefactoringEssentials" -> "code-cracker/code-cracker"
 "icsharpcode/RefactoringEssentials" -> "DustinCampbell/CSharpEssentials"
 "icsharpcode/RefactoringEssentials" -> "microsoft/CodeContracts"
@@ -1797,8 +2142,20 @@ digraph G {
 "DamianEdwards/MiniValidation" -> "DamianEdwards/MinimalApis.Extensions"
 "DamianEdwards/MiniValidation" -> "DamianEdwards/MinimalApiPlayground"
 "DamianEdwards/MiniValidation" -> "DamianEdwards/RazorSlices" ["e"=1]
+"disruptor-net/Disruptor-net" -> "AdaptiveConsulting/Aeron.NET" ["e"=1]
+"disruptor-net/Disruptor-net" -> "Abc-Arbitrage/ZeroLog" ["e"=1]
+"disruptor-net/Disruptor-net" -> "VSadov/NonBlocking" ["e"=1]
+"disruptor-net/Disruptor-net" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"disruptor-net/Disruptor-net" -> "Abc-Arbitrage/Zebus" ["e"=1]
+"disruptor-net/Disruptor-net" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
+"disruptor-net/Disruptor-net" -> "dotnet/dotNext" ["e"=1]
 "madushans/DependenSee" -> "spectresystems/snitch"
 "madushans/DependenSee" -> "bjorkstromm/depends"
+"badamczewski/PowerUp" -> "EgorBo/Disasmo" ["e"=1]
+"badamczewski/PowerUp" -> "dotnet/dotNext" ["e"=1]
+"badamczewski/PowerUp" -> "Maoni0/mem-doc" ["e"=1]
+"badamczewski/PowerUp" -> "NetFabric/NetFabric.Hyperlinq" ["e"=1]
+"JonPSmith/AuthPermissions.AspNetCore" -> "DamianEdwards/MinimalApis.Extensions" ["e"=1]
 "sebastienros/parlot" -> "benjamin-hodgson/Pidgin"
 "sebastienros/parlot" -> "sebastienros/shortcodes"
 "sebastienros/parlot" -> "sebastienros/yessql" ["e"=1]
@@ -1810,6 +2167,8 @@ digraph G {
 "sebastienros/parlot" -> "IronyProject/Irony"
 "sebastienros/parlot" -> "devlooped/ThisAssembly" ["e"=1]
 "martinfmi/java_developer_training" -> "v--/se2018"
+"sebastienros/yessql" -> "sebastienros/parlot" ["e"=1]
+"sebastienros/yessql" -> "bleroy/lunr-core" ["e"=1]
 "devlooped/GitInfo" -> "adamralph/minver"
 "devlooped/GitInfo" -> "devlooped/ThisAssembly" ["e"=1]
 "devlooped/GitInfo" -> "dotnet/Nerdbank.GitVersioning"
@@ -1825,6 +2184,8 @@ digraph G {
 "devlooped/GitInfo" -> "benaadams/Ben.Demystifier" ["e"=1]
 "devlooped/GitInfo" -> "dotnet/sourcelink"
 "devlooped/GitInfo" -> "GitTools/GitVersion" ["e"=1]
+"wixtoolset/wix" -> "dotnet/sign" ["e"=1]
+"christopherread/Obvs" -> "Abc-Arbitrage/Zebus" ["e"=1]
 "microsoft/extendvs" -> "madskristensen/ExtensibilityTools"
 "microsoft/extendvs" -> "microsoft/VSProjectSystem"
 "microsoft/extendvs" -> "microsoft/VSSDK-Analyzers"
@@ -1845,6 +2206,9 @@ digraph G {
 "VSadov/NonBlocking" -> "U8String/U8String" ["e"=1]
 "MiloszKrajewski/lz4net" -> "MiloszKrajewski/K4os.Compression.LZ4"
 "MiloszKrajewski/lz4net" -> "EgorBo/SimdJsonSharp"
+"TestableIO/System.IO.Abstractions" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
+"anuraj/MinimalApi" -> "DamianEdwards/MinimalApiPlayground" ["e"=1]
+"anuraj/MinimalApi" -> "DamianEdwards/MinimalApis.Extensions" ["e"=1]
 "liyupi/daxigua" -> "xiaopengand/daxigua"
 "liyupi/daxigua" -> "bullhe4d/bigwatermelon"
 "liyupi/daxigua" -> "globalaihub/python-education-v2" ["e"=1]
@@ -1860,6 +2224,9 @@ digraph G {
 "liyupi/daxigua" -> "MathInspector/MathInspector"
 "liyupi/daxigua" -> "gordicaleksa/pytorch-GAT" ["e"=1]
 "liyupi/daxigua" -> "doino-gretchenliev/revolut-stocks"
+"JasonBock/Rocks" -> "dadhi/ImTools" ["e"=1]
+"JasonBock/Rocks" -> "sebastienros/parlot" ["e"=1]
+"JasonBock/Rocks" -> "Nyrest/FastGenericNew" ["e"=1]
 "dotnet/csharpstandard" -> "dotnet/csharplang" ["e"=1]
 "dotnet/csharpstandard" -> "dotnet/razor"
 "dotnet/csharpstandard" -> "dotnet/performance"
@@ -1875,6 +2242,7 @@ digraph G {
 "dotnet/csharpstandard" -> "dotnet/dotNext"
 "dotnet/csharpstandard" -> "dotnet/project-system"
 "dotnet/csharpstandard" -> "dotnet/diagnostics"
+"khalidabuhakmeh/Htmx.Net" -> "DamianEdwards/TagHelperPack" ["e"=1]
 "davidfowl/DotNetCodingPatterns" -> "davidfowl/AspNetCoreDiagnosticScenarios" ["e"=1]
 "davidfowl/DotNetCodingPatterns" -> "Maoni0/mem-doc"
 "davidfowl/DotNetCodingPatterns" -> "davidfowl/TodoApp" ["e"=1]
@@ -1895,6 +2263,7 @@ digraph G {
 "martincostello/dotnet-minimal-api-integration-testing" -> "DamianEdwards/MinimalApis.Extensions"
 "martincostello/dotnet-minimal-api-integration-testing" -> "martincostello/xunit-logging" ["e"=1]
 "martincostello/dotnet-minimal-api-integration-testing" -> "JasperFx/alba" ["e"=1]
+"chucknorris/roundhouse" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "GitTools/GitReleaseManager" -> "GitTools/GitReleaseNotes"
 "GitTools/GitReleaseManager" -> "GitTools/actions"
 "GitTools/GitReleaseManager" -> "adamralph/minver"
@@ -1910,6 +2279,8 @@ digraph G {
 "microsoft/VSExtensibility" -> "madskristensen/EditorConfigLanguage"
 "microsoft/VSExtensibility" -> "microsoft/vs-mef"
 "microsoft/VSExtensibility" -> "EgorBo/Disasmo"
+"bridgedotnet/Granular" -> "dotnet/llilc" ["e"=1]
+"bridgedotnet/Granular" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
 "namebasehq/handshake-oidc" -> "james-stevens/wallet-ids-in-dns"
 "imperviousinc/badass-ens" -> "imperviousinc/handover"
 "imperviousinc/fingertip" -> "buffrr/letsdane"
@@ -1951,6 +2322,7 @@ digraph G {
 "The-NOPE-Project/intraday_nope_research" -> "xiaopengand/daxigua"
 "AArnott/Xunit.Combinatorial" -> "PublicApiGenerator/PublicApiGenerator"
 "AArnott/Xunit.Combinatorial" -> "xunit/xunit.analyzers"
+"dorny/test-reporter" -> "Tyrrrz/GitHubActionsTestLogger" ["e"=1]
 "bitdiffer/bitdiffer" -> "cklutz/LockCheck"
 "serdedotnet/serde" -> "eiriktsarpalis/PolyType"
 "deepvalue-network/software" -> "The-NOPE-Project/intraday_nope_research"
@@ -1975,6 +2347,8 @@ digraph G {
 "microsoft/Extensible-Storage-Engine" -> "chrisdunelm/DotNetAnywhere" ["e"=1]
 "microsoft/Extensible-Storage-Engine" -> "dotnet/corefxlab"
 "microsoft/Extensible-Storage-Engine" -> "SergeyTeplyakov/ErrorProne.NET"
+"dajuric/dot-imaging" -> "asynkron/Wire" ["e"=1]
+"Chia-Network/pool-reference" -> "reaqtive/reaqtor" ["e"=1]
 "microsoft/docker" -> "MicrosoftDocs/Virtualization-Documentation" ["e"=1]
 "microsoft/docker" -> "aspnet/aspnet-docker" ["e"=1]
 "microsoft/docker" -> "microsoft/Docker-PowerShell" ["e"=1]
@@ -2016,6 +2390,8 @@ digraph G {
 "reaqtive/reaqtor" -> "reactiveui/Sextant" ["e"=1]
 "reaqtive/reaqtor" -> "IgorBuchelnikov/ObservableComputations"
 "reaqtive/reaqtor" -> "Maoni0/realmon"
+"madskristensen/WebCompiler" -> "madskristensen/MarkdownEditor" ["e"=1]
+"madskristensen/WebCompiler" -> "madskristensen/ExtensibilityTools" ["e"=1]
 "dotnet/dotnet-monitor" -> "dotnet/diagnostics"
 "dotnet/dotnet-monitor" -> "open-telemetry/opentelemetry-dotnet" ["e"=1]
 "dotnet/dotnet-monitor" -> "dotnet/crank"
@@ -2036,7 +2412,10 @@ digraph G {
 "OmarElabd/ObjectExporter" -> "ycherkes/ObjectDumper"
 "stelf/fmi-db" -> "Andreshk/FunctionalProgramming2016"
 "podkrepi-bg/frontend" -> "podkrepi-bg/api"
+"nx-dotnet/nx-dotnet" -> "leonardochaia/dotnet-affected" ["e"=1]
+"Code52/pretzel" -> "config-r/config-r" ["e"=1]
 "goldshtn/msos" -> "goldshtn/LiveStacks"
+"p-org/PSharp" -> "davidfowl/Channels" ["e"=1]
 "mhutch/MonoDevelop.MSBuildEditor" -> "chsienki/Kittitas"
 "VsixCommunity/Community.VisualStudio.Toolkit" -> "microsoft/VSExtensibility"
 "VsixCommunity/Community.VisualStudio.Toolkit" -> "madskristensen/Community.VisualStudio.Toolkit"
@@ -2058,6 +2437,7 @@ digraph G {
 "MikePopoloski/StringFormatter" -> "vexe/gstring"
 "MikePopoloski/StringFormatter" -> "ltrzesniewski/InlineIL.Fody"
 "MikePopoloski/StringFormatter" -> "joeduffy/slice.net"
+"OfficeDev/Open-Xml-PowerTools" -> "microsoft/dotnet-apiport" ["e"=1]
 "xiaopengand/daxigua" -> "sannaha/sannaha.github.io"
 "xiaopengand/daxigua" -> "liyupi/daxigua"
 "xiaopengand/daxigua" -> "bullhe4d/bigwatermelon"
@@ -2074,6 +2454,8 @@ digraph G {
 "Tyrrrz/Contextual" -> "Tyrrrz/Hallstatt"
 "SergeyTeplyakov/StructRecordsGenerator" -> "SergeyTeplyakov/ConcurrencyAnalyzers"
 "aumcode/serbench" -> "aumcode/nfx-demos"
+"MirrorNetworking/kcp2k" -> "Cysharp/KcpTransport" ["e"=1]
+"MirrorNetworking/kcp2k" -> "Molth/Kcp-CSharp" ["e"=1]
 "kyokan/bob-extension" -> "anothersoft/hns-bridge"
 "kyokan/bob-extension" -> "pinheadmz/handout"
 "VsixCommunity/Samples" -> "VsixCommunity/Community.VisualStudio.VSCT"
@@ -2097,6 +2479,12 @@ digraph G {
 "loresoft/msbuildtasks" -> "dotnet/Nerdbank.GitVersioning"
 "loresoft/msbuildtasks" -> "NuGet/NuGetGallery" ["e"=1]
 "loresoft/msbuildtasks" -> "devlooped/GitInfo"
+"dotnet/cli" -> "dotnet/sdk" ["e"=1]
+"dotnet/cli" -> "dotnet/corefxlab" ["e"=1]
+"dotnet/pinvoke" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"dotnet/corert" -> "dotnet/llilc" ["e"=1]
+"dotnet/corert" -> "dotnet/corefxlab" ["e"=1]
+"dotnet/corert" -> "dotnet/roslyn-analyzers" ["e"=1]
 "msgpack/msgpack-cli" -> "kevin-montrose/Sigil" ["e"=1]
 "msgpack/msgpack-cli" -> "MessagePack-CSharp/MessagePack-CSharp" ["e"=1]
 "msgpack/msgpack-cli" -> "MiloszKrajewski/lz4net"
@@ -2105,8 +2493,16 @@ digraph G {
 "msgpack/msgpack-cli" -> "asynkron/Wire"
 "msgpack/msgpack-cli" -> "helios-io/helios" ["e"=1]
 "msgpack/msgpack-cli" -> "dotnet/corefxlab"
+"dotnet/intro-to-dotnet-web-dev" -> "dotnet/upgrade-assistant" ["e"=1]
+"dotnet/vscode-csharp" -> "dotnet/sdk" ["e"=1]
+"dotnet/vscode-csharp" -> "dotnet/format" ["e"=1]
+"DREAM-DK/MAKRO" -> "publiusfederalist/federalist" ["e"=1]
 "App-vNext/Polly-Samples" -> "Polly-Contrib/Simmy"
 "App-vNext/Polly-Samples" -> "App-vNext/Throttlebird"
+"matthiasjost/dotnet-content-creators" -> "okyrylchuk/dotnet6_features" ["e"=1]
+"NuGetPackageExplorer/NuGetPackageExplorer" -> "dotnet/sourcelink" ["e"=1]
+"NuGetPackageExplorer/NuGetPackageExplorer" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"gsscoder/commandline" -> "dotnet/corefxlab" ["e"=1]
 "microsoft/clrmd" -> "fremag/MemoScope.Net"
 "microsoft/clrmd" -> "dotnet/diagnostics"
 "microsoft/clrmd" -> "microsoft/perfview" ["e"=1]
@@ -2122,6 +2518,7 @@ digraph G {
 "microsoft/clrmd" -> "EgorBo/Disasmo"
 "microsoft/clrmd" -> "kevin-montrose/Sigil" ["e"=1]
 "microsoft/clrmd" -> "microsoft/vs-mef"
+"microsoft/Pyjion" -> "dotnet/llilc" ["e"=1]
 "KirillOsenkov/SourceBrowser" -> "KirillOsenkov/MSBuildStructuredLog"
 "KirillOsenkov/SourceBrowser" -> "microsoft/vs-threading"
 "KirillOsenkov/SourceBrowser" -> "KirillOsenkov/RoslynQuoter"
@@ -2153,11 +2550,30 @@ digraph G {
 "AArnott/CodeGeneration.Roslyn" -> "unoplatform/Uno.CodeGen"
 "AArnott/CodeGeneration.Roslyn" -> "YairHalberstadt/stronginject" ["e"=1]
 "Burtsev-Alexey/net-object-deep-copy" -> "force-net/DeepCloner"
+"aloneguid/config" -> "adamralph/minver" ["e"=1]
+"aloneguid/config" -> "thomasgalliker/ObjectDumper" ["e"=1]
 "microsoft/xunit-performance" -> "davidfowl/Channels"
 "microsoft/ConcordExtensibilitySamples" -> "microsoft/VSProjectSystem"
 "KirillOsenkov/XmlParser" -> "mhutch/MonoDevelop.MSBuildEditor"
 "KirillOsenkov/XmlParser" -> "microsoft/vs-editor-api"
 "KirillOsenkov/XmlParser" -> "aelij/IgnoresAccessChecksToGenerator"
+"xoofx/dotnet-releaser" -> "xoofx/zio" ["e"=1]
+"xoofx/dotnet-releaser" -> "adamralph/minver" ["e"=1]
+"xoofx/dotnet-releaser" -> "VSadov/NonBlocking" ["e"=1]
+"xoofx/dotnet-releaser" -> "NetFabric/NetFabric.Hyperlinq" ["e"=1]
+"xoofx/dotnet-releaser" -> "bleroy/lunr-core" ["e"=1]
+"OpenLiveWriter/OpenLiveWriter" -> "microsoft/VS-PPT" ["e"=1]
+"OpenLiveWriter/OpenLiveWriter" -> "icsharpcode/RefactoringEssentials" ["e"=1]
+"OpenLiveWriter/OpenLiveWriter" -> "microsoft/CodeContracts" ["e"=1]
+"sjkp/letsencrypt-siteextension" -> "praeclarum/FuGetGallery" ["e"=1]
+"markjprice/cs11dotnet7" -> "dotnet/csharpstandard" ["e"=1]
+"SonarSource/SonarJS" -> "SonarSource/sonar-dotnet" ["e"=1]
+"pierre3/PlantUmlClassDiagramGenerator" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
+"alirezanet/Husky.Net" -> "adamralph/minver" ["e"=1]
+"alirezanet/Husky.Net" -> "dotnet/format" ["e"=1]
+"alirezanet/Husky.Net" -> "adamralph/bullseye" ["e"=1]
+"alirezanet/Husky.Net" -> "ironcev/awesome-roslyn" ["e"=1]
+"alirezanet/Husky.Net" -> "spectresystems/snitch" ["e"=1]
 "chjj/mako" -> "chjj/lcdb"
 "chjj/mako" -> "kyokan/bob-wallet"
 "chjj/mako" -> "buffrr/letsdane"
@@ -2169,6 +2585,7 @@ digraph G {
 "aloisdg/awesome-linq" -> "tallesl/net-libraries-that-make-your-life-easier" ["e"=1]
 "aloisdg/awesome-linq" -> "mariusschulz/ExtraLINQ"
 "aloisdg/awesome-linq" -> "cybermaxs/awesome-analyzers"
+"elringus/bootsharp" -> "xoofx/zio" ["e"=1]
 "dotnet/Nerdbank.Streams" -> "mgravell/Pipelines.Sockets.Unofficial"
 "dotnet/Nerdbank.Streams" -> "bitfaster/BitFaster.Caching"
 "dotnet/Nerdbank.Streams" -> "microsoft/vs-streamjsonrpc"
@@ -2206,6 +2623,8 @@ digraph G {
 "microsoft/VS-PPT" -> "madskristensen/FileDiffer" ["e"=1]
 "microsoft/VS-PPT" -> "madskristensen/ExtensibilityTools"
 "microsoft/VS-PPT" -> "dotnet/codeformatter"
+"Elfocrash/clean-minimal-api" -> "DamianEdwards/MinimalApiPlayground" ["e"=1]
+"RolandPheasant/TailBlazer" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
 "cybermaxs/awesome-analyzers" -> "SergeyTeplyakov/ErrorProne.NET"
 "cybermaxs/awesome-analyzers" -> "ironcev/awesome-roslyn"
 "cybermaxs/awesome-analyzers" -> "dotnet/roslyn-analyzers"
@@ -2221,6 +2640,8 @@ digraph G {
 "cybermaxs/awesome-analyzers" -> "amis92/csharp-source-generators" ["e"=1]
 "cybermaxs/awesome-analyzers" -> "microsoft/Microsoft.Unity.Analyzers" ["e"=1]
 "cybermaxs/awesome-analyzers" -> "NetFabric/NetFabric.Hyperlinq"
+"nodejs/node-chakracore" -> "dotnet/llilc" ["e"=1]
+"moq/Moq.AutoMocker" -> "fluentassertions/fluentassertions.analyzers" ["e"=1]
 "clemensv/messaging" -> "davidfowl/DotNetCodingPatterns"
 "clemensv/messaging" -> "microsoft/coyote"
 "clemensv/messaging" -> "Grauenwolf/CleanArchitecture" ["e"=1]
@@ -2236,12 +2657,20 @@ digraph G {
 "clemensv/messaging" -> "Particular/Workshop" ["e"=1]
 "clemensv/messaging" -> "Azure/logicapps" ["e"=1]
 "clemensv/messaging" -> "dotnet/Nerdbank.GitVersioning"
+"mgravell/fast-member" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"mgravell/fast-member" -> "datalust/superpower" ["e"=1]
 "goldshtn/minidumper" -> "goldshtn/etrace"
 "goldshtn/minidumper" -> "goldshtn/LiveStacks"
 "goldshtn/minidumper" -> "0xd4d/JitDasm" ["e"=1]
+"GuillaumeSalles/redux.NET" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"GuillaumeSalles/redux.NET" -> "asynkron/Wire" ["e"=1]
+"editorconfig/editorconfig-visualstudio" -> "madskristensen/TrailingWhitespace" ["e"=1]
 "edjCase/JsonRpc" -> "alexanderkozlenko/aspnetcore-json-rpc"
 "edjCase/JsonRpc" -> "Astn/JSON-RPC.NET"
 "edjCase/JsonRpc" -> "CXuesong/JsonRpc.Standard"
+"rogeralsing/Microphone" -> "asynkron/Wire" ["e"=1]
+"rogeralsing/Microphone" -> "davidfowl/Channels" ["e"=1]
+"domn1995/dunet" -> "diegofrata/Generator.Equals" ["e"=1]
 "podkrepi-bg/api" -> "podkrepi-bg/frontend"
 "josefpihrt/linqtoregex" -> "josefpihrt/dotmarkdown"
 "asynkron/Wire" -> "akkadotnet/Hyperion"
@@ -2253,6 +2682,12 @@ digraph G {
 "asynkron/Wire" -> "petabridge/akkadotnet-helpers" ["e"=1]
 "asynkron/Wire" -> "evendotnet/Even" ["e"=1]
 "asynkron/Wire" -> "daveaglick/Scripty"
+"petabridge/NBench" -> "asynkron/Wire" ["e"=1]
+"petabridge/NBench" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"petabridge/NBench" -> "daveaglick/Scripty" ["e"=1]
+"mrusme/superhighway84" -> "publiusfederalist/federalist" ["e"=1]
+"ErikEJ/SqlCeToolbox" -> "microsoft/VS-PPT" ["e"=1]
+"dpaquette/TagHelperSamples" -> "DamianEdwards/TagHelperPack" ["e"=1]
 "fremag/MemoScope.Net" -> "microsoft/clrmd"
 "fremag/MemoScope.Net" -> "Alois-xx/MemAnalyzer"
 "fremag/MemoScope.Net" -> "Dynatrace/superdump"
@@ -2271,6 +2706,9 @@ digraph G {
 "dotnet/systemweb-adapters" -> "CoreWebForms/CoreWebForms"
 "dotnet/systemweb-adapters" -> "CZEMacLeod/MSBuild.SDK.SystemWeb"
 "dotnet/systemweb-adapters" -> "dotnet/upgrade-assistant"
+"csharpfritz/InstantAPIs" -> "DamianEdwards/MinimalApis.Extensions" ["e"=1]
+"JasperFx/alba" -> "martincostello/dotnet-minimal-api-integration-testing" ["e"=1]
+"microsoft/Mobius" -> "dotnet/corefxlab" ["e"=1]
 "okyrylchuk/dotnet6_features" -> "DamianEdwards/MinimalApis.Extensions"
 "okyrylchuk/dotnet6_features" -> "okyrylchuk/csharp9_features"
 "okyrylchuk/dotnet6_features" -> "DamianEdwards/MinimalApiPlayground"
@@ -2278,6 +2716,9 @@ digraph G {
 "okyrylchuk/dotnet6_features" -> "matthiasjost/dotnet-content-creators" ["e"=1]
 "okyrylchuk/dotnet6_features" -> "davidfowl/DotNetCodingPatterns"
 "madskristensen/MarkdownEditor2022" -> "madskristensen/MarkdownEditor"
+"nats-io/nats.net.v1" -> "fremag/MemoScope.Net" ["e"=1]
+"damianh/LibLog" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"damianh/LibLog" -> "datalust/superpower" ["e"=1]
 "EngRajabi/Enum.Source.Generator" -> "Nyrest/FastGenericNew"
 "EngRajabi/Enum.Source.Generator" -> "StefH/FluentBuilder"
 "Maoni0/realmon" -> "davidfowl/IISCrossover" ["e"=1]
@@ -2290,6 +2731,8 @@ digraph G {
 "asc-community/HonkPerf.NET" -> "reegeek/StructLinq"
 "asc-community/HonkPerf.NET" -> "vangogih/FastMigrations.Json.Net" ["e"=1]
 "SonarSource/sonarqube-roslyn-sdk" -> "DanielHWe/sonar-fxcop"
+"ForNeVeR/Cesium" -> "EgorBo/Disasmo" ["e"=1]
+"lduchosal/ipnetwork" -> "thomasgalliker/ObjectDumper" ["e"=1]
 "SergeyTeplyakov/ErrorProne.NET" -> "meziantou/Meziantou.Analyzer" ["e"=1]
 "SergeyTeplyakov/ErrorProne.NET" -> "cybermaxs/awesome-analyzers"
 "SergeyTeplyakov/ErrorProne.NET" -> "nietras/Sep" ["e"=1]
@@ -2305,6 +2748,8 @@ digraph G {
 "SergeyTeplyakov/ErrorProne.NET" -> "microsoft/Microsoft.IO.RecyclableMemoryStream"
 "SergeyTeplyakov/ErrorProne.NET" -> "antiufo/roslyn-linq-rewrite"
 "SergeyTeplyakov/ErrorProne.NET" -> "KirillOsenkov/RoslynQuoter"
+"NuGet/NuGet.Server" -> "NuGet/NuGet.Client" ["e"=1]
+"NuGet/NuGet.Server" -> "NuGet/NuGet2" ["e"=1]
 "CollinAlpert/Lombok.NET" -> "StefH/FluentBuilder"
 "CollinAlpert/Lombok.NET" -> "SteveDunn/Intellenum" ["e"=1]
 "CollinAlpert/Lombok.NET" -> "Nyrest/FastGenericNew"
@@ -2320,6 +2765,8 @@ digraph G {
 "publiusfederalist/federalist" -> "james-stevens/wallet-ids-in-dns"
 "publiusfederalist/federalist" -> "RangerMauve/mutable-webtorrent"
 "publiusfederalist/federalist" -> "kyokan/bob-wallet"
+"anakic/Jot" -> "rikimaru0345/Ceras" ["e"=1]
+"anakic/Jot" -> "Nihlus/AdvancedDLSupport" ["e"=1]
 "SergeyTeplyakov/ConcurrencyAnalyzers" -> "SergeyTeplyakov/StructRecordsGenerator"
 "dsplaisted/strongnamer" -> "brutaldev/StrongNameSigner"
 "dsplaisted/strongnamer" -> "eiriktsarpalis/PolyType"
@@ -2333,6 +2780,7 @@ digraph G {
 "nikoladimitroff/Game-Engine-Architecture" -> "fmi/machine-learning-lectures"
 "Scooletz/RampUp" -> "trbngr/AkkaCqrs" ["e"=1]
 "Scooletz/RampUp" -> "Scooletz/SewingMachine"
+"koculu/Topaz" -> "eiriktsarpalis/PolyType" ["e"=1]
 "stelf/en2bg4term" -> "avelin/fmi-pearls"
 "stelf/en2bg4term" -> "doino-gretchenliev/revolut-stocks"
 "stelf/en2bg4term" -> "hackman/linux-sysadmin-course"
@@ -2352,6 +2800,9 @@ digraph G {
 "ycherkes/ObjectDumper" -> "ycherkes/VarDump"
 "anothersoft/hns-bridge" -> "james-stevens/wallet-ids-in-dns"
 "htools-org/htools-dane-ca" -> "pinheadmz/holdmyhand"
+"kutyel/linq.ts" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"NickCraver/StackExchange.Exceptional" -> "StackExchange/StackExchange.Utils" ["e"=1]
+"NickCraver/StackExchange.Exceptional" -> "StackExchange/StackExchange.Metrics" ["e"=1]
 "nakov/TurtleGraphics.NET" -> "nakov/Nakov.io.cin"
 "nakov/TurtleGraphics.NET" -> "nakov/NakovForwardServer"
 "dotnet/dotnet" -> "dotnet/sdk"
@@ -2361,6 +2812,9 @@ digraph G {
 "dotnet/dotnet" -> "dotnet/razor"
 "dotnet/dotnet" -> "dotnet/designs"
 "dotnet/dotnet" -> "dotnet/dotNext"
+"scientistproject/Scientist.net" -> "dotnet/codeformatter" ["e"=1]
+"scientistproject/Scientist.net" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"scientistproject/Scientist.net" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
 "KirillOsenkov/MSBuildStructuredLog" -> "microsoft/MSBuildSdks"
 "KirillOsenkov/MSBuildStructuredLog" -> "dotnet/project-system"
 "KirillOsenkov/MSBuildStructuredLog" -> "KirillOsenkov/SourceBrowser"
@@ -2391,6 +2845,15 @@ digraph G {
 "daveaglick/Scripty" -> "datalust/superpower"
 "daveaglick/Scripty" -> "microsoft/dotnet-apiport"
 "daveaglick/Scripty" -> "fsprojects/Paket" ["e"=1]
+"RickStrahl/MarkdownMonster" -> "microsoft/VS-PPT" ["e"=1]
+"msgpack/msgpack" -> "msgpack/msgpack-cli" ["e"=1]
+"amaneureka/AtomOS" -> "dotnet/llilc" ["e"=1]
+"sprache/Sprache" -> "datalust/superpower" ["e"=1]
+"sprache/Sprache" -> "benjamin-hodgson/Pidgin" ["e"=1]
+"sprache/Sprache" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"dotnet/roslynator" -> "dotnet/roslyn-analyzers" ["e"=1]
+"dotnet/roslynator" -> "dotnet/format" ["e"=1]
+"markjprice/cs12dotnet8" -> "dotnet/csharpstandard" ["e"=1]
 "dotnet/project-system" -> "microsoft/VSProjectSystem"
 "dotnet/project-system" -> "microsoft/MSBuildSdks"
 "dotnet/project-system" -> "dotnet/sdk"
@@ -2406,6 +2869,7 @@ digraph G {
 "dotnet/project-system" -> "dotnet/platform-compat"
 "dotnet/project-system" -> "microsoft/dotnet-apiport"
 "dotnet/project-system" -> "dotnet/format"
+"GregFinzer/Compare-Net-Objects" -> "force-net/DeepCloner" ["e"=1]
 "kreeben/resin" -> "mgholam/hOOt" ["e"=1]
 "kreeben/resin" -> "bleroy/lunr-core"
 "kreeben/resin" -> "kreeben/sir"
@@ -2416,11 +2880,21 @@ digraph G {
 "kreeben/resin" -> "DevrexLabs/memstate" ["e"=1]
 "kreeben/resin" -> "warden-stack/Warden" ["e"=1]
 "kreeben/resin" -> "asynkron/Wire"
+"Cysharp/StructureOfArraysGenerator" -> "Cysharp/Utf8StringInterpolation" ["e"=1]
+"warden-stack/Warden" -> "config-r/config-r" ["e"=1]
 "telerik/JustAssembly" -> "telerik/JustDecompileEngine"
 "telerik/JustAssembly" -> "bitdiffer/bitdiffer"
+"esskar/Serialize.Linq" -> "xoofx/zio" ["e"=1]
+"Giorgi/LINQPad.QueryPlanVisualizer" -> "nessos/LinqOptimizer" ["e"=1]
+"koculu/ZoneTree" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"koculu/ZoneTree" -> "VSadov/NonBlocking" ["e"=1]
+"dotnet/training-tutorials" -> "dotnet/versions" ["e"=1]
+"microsoft/CSharpClient-for-Kafka" -> "AdaptiveConsulting/Aeron.NET" ["e"=1]
+"ekonbenefits/impromptu-interface" -> "asynkron/Wire" ["e"=1]
 "eiriktsarpalis/PolyType" -> "AArnott/Nerdbank.MessagePack"
 "eiriktsarpalis/PolyType" -> "eiriktsarpalis/TypeShape" ["e"=1]
 "eiriktsarpalis/PolyType" -> "serdedotnet/serde"
+"MarcosMeli/FileHelpers" -> "dotnet/try-convert" ["e"=1]
 "force-net/DeepCloner" -> "AlenToma/FastDeepCloner"
 "force-net/DeepCloner" -> "MarcinJuraszek/CloneExtensions"
 "force-net/DeepCloner" -> "thomasgalliker/ObjectDumper"
@@ -2436,6 +2910,7 @@ digraph G {
 "force-net/DeepCloner" -> "rikimaru0345/Ceras"
 "force-net/DeepCloner" -> "esskar/Serialize.Linq" ["e"=1]
 "force-net/DeepCloner" -> "jackmott/LinqFaster"
+"Recognos/Metrics.NET" -> "fremag/MemoScope.Net" ["e"=1]
 "deadlydog/Invoke-MsBuild" -> "microsoft/vssetup.powershell"
 "SonarSource/sonar-dotnet" -> "SonarSource/sonar-scanner-msbuild"
 "SonarSource/sonar-dotnet" -> "SonarSource/sonarlint-visualstudio"
@@ -2453,6 +2928,7 @@ digraph G {
 "SonarSource/sonar-dotnet" -> "cybermaxs/awesome-analyzers"
 "SonarSource/sonar-dotnet" -> "security-code-scan/security-code-scan"
 "xunit/assert.xunit" -> "xunit/visualstudio.xunit"
+"goblinfactory/konsole" -> "xoofx/zio" ["e"=1]
 "cathei/LinqGen" -> "asc-community/HonkPerf.NET"
 "cathei/LinqGen" -> "Nyrest/FastGenericNew"
 "cathei/LinqGen" -> "annulusgames/BurstLinq" ["e"=1]
@@ -2481,10 +2957,14 @@ digraph G {
 "SonarSource/sonarlint-visualstudio" -> "SonarSource/sonarlint-core" ["e"=1]
 "SonarSource/sonarlint-visualstudio" -> "code-cracker/code-cracker"
 "SonarSource/sonarlint-visualstudio" -> "dotnet/roslyn-analyzers"
+"nats-io/nats.net" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"Cysharp/SimdLinq" -> "Cysharp/Utf8StringInterpolation" ["e"=1]
+"Cysharp/SimdLinq" -> "Cysharp/PrivateProxy" ["e"=1]
 "Angeld55/Algorithms_FMI" -> "Angeld55/Data_structures_and_algorithms_FMI"
 "hnschat/web" -> "james-stevens/wallet-ids-in-dns"
 "Nathanwoodburn/HNS-server" -> "varodomains/dashboard"
 "Nathanwoodburn/HNS-server" -> "befranz/hshelp"
+"emgarten/Sleet" -> "ctaggart/SourceLink" ["e"=1]
 "madskristensen/RainbowBraces" -> "madskristensen/Surrounder"
 "davidfowl/NetStandard" -> "davidfowl/Channels"
 "microsoft/clr-samples" -> "amanda-mitchell/CoreCLRProfiler"
@@ -2494,6 +2974,7 @@ digraph G {
 "microsoft/clr-samples" -> "microsoftarchive/clrprofiler"
 "CoreWebForms/CoreWebForms" -> "WebFormsCore/WebFormsCore"
 "dotnet/jitutils" -> "jakobbotsch/Fuzzlyn"
+"agileobjects/AgileMapper" -> "thomasgalliker/ObjectDumper" ["e"=1]
 "dotnet/versions" -> "dotnet/windowsdesktop"
 "dotnet/versions" -> "dotnet/source-build-reference-packages"
 "dotnet/versions" -> "dotnet/roslyn-tools"
@@ -2510,11 +2991,18 @@ digraph G {
 "AdaptiveConsulting/Aeron.NET" -> "davidfowl/Channels"
 "AdaptiveConsulting/Aeron.NET" -> "aL3891/RioSharp" ["e"=1]
 "AdaptiveConsulting/Aeron.NET" -> "rsocket/rsocket-net" ["e"=1]
+"dotnet-security-guard/roslyn-security-guard" -> "security-code-scan/security-code-scan" ["e"=1]
 "dotnet/symreader-portable" -> "dotnet/symreader"
 "dotnet/symreader-portable" -> "dotnet/ml-api-docs"
 "Abc-Arbitrage/Disruptor-net" -> "Abc-Arbitrage/Aeron.ClientServer"
 "avelin/fmi-pearls" -> "v--/se2018"
 "avelin/fmi-pearls" -> "egelev/DI"
+"dotnet/standard" -> "dotnet/corefxlab" ["e"=1]
+"dotnet/standard" -> "dotnet/sdk" ["e"=1]
+"adamsitnik/awesome-dot-net-performance" -> "Maoni0/mem-doc" ["e"=1]
+"adamsitnik/awesome-dot-net-performance" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"adamsitnik/awesome-dot-net-performance" -> "dotnet/corefxlab" ["e"=1]
+"adamsitnik/awesome-dot-net-performance" -> "microsoft/coyote" ["e"=1]
 "microsoft/vstest" -> "microsoft/testfx"
 "microsoft/vstest" -> "microsoft/vstest-docs"
 "microsoft/vstest" -> "KirillOsenkov/MSBuildStructuredLog"
@@ -2530,6 +3018,12 @@ digraph G {
 "microsoft/vstest" -> "microsoft/VS-PPT"
 "microsoft/vstest" -> "NuGet/NuGet.Client"
 "microsoft/vstest" -> "dotnet/msbuild" ["e"=1]
+"dotnet/templating" -> "dotnet/project-system" ["e"=1]
+"dotnet/templating" -> "dotnet/format" ["e"=1]
+"dotnet/templating" -> "dotnet/sdk" ["e"=1]
+"dotnet/templating" -> "dotnet/roslyn-analyzers" ["e"=1]
+"dotnet/templating" -> "dotnet/sourcelink" ["e"=1]
+"microsoft/VCSamples" -> "microsoft/dotnet-samples" ["e"=1]
 "dotnet/sdk" -> "dotnet/runtime" ["e"=1]
 "dotnet/sdk" -> "dotnet/project-system"
 "dotnet/sdk" -> "dotnet/installer"
@@ -2545,6 +3039,21 @@ digraph G {
 "dotnet/sdk" -> "dotnet/format"
 "dotnet/sdk" -> "dotnet/aspire" ["e"=1]
 "dotnet/sdk" -> "dotnet/command-line-api" ["e"=1]
+"lolp1/Overlay.NET" -> "Nihlus/AdvancedDLSupport" ["e"=1]
+"dotnet/ILMerge" -> "dotnet/sourcelink" ["e"=1]
+"BcryptNet/bcrypt.net" -> "dotnet/dotNext" ["e"=1]
+"BcryptNet/bcrypt.net" -> "adamralph/simple-exec" ["e"=1]
+"toddams/RazorLight" -> "Tyrrrz/MiniRazor" ["e"=1]
+"prasannavl/WinApi" -> "justinstenning/SharedMemory" ["e"=1]
+"prasannavl/WinApi" -> "Nihlus/AdvancedDLSupport" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "VSadov/NonBlocking" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "benjamin-hodgson/Pidgin" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "NetFabric/NetFabric.Hyperlinq" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "dotnet/dotNext" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"dadhi/FastExpressionCompiler" -> "xoofx/zio" ["e"=1]
+"Cysharp/YetAnotherHttpHandler" -> "Cysharp/KcpTransport" ["e"=1]
 "dotnet/sign" -> "vcsjones/AzureSignTool"
 "dotnet/sign" -> "microsoft/MSBuildSdks"
 "dotnet/sign" -> "dotnet/project-system-tools"
@@ -2554,6 +3063,12 @@ digraph G {
 "dotnet/sign" -> "dotnet/Nerdbank.GitVersioning"
 "dotnet/sign" -> "microsoft/vs-threading"
 "dotnet/sign" -> "microsoft/slngen"
+"microsoft/mssql-jdbc" -> "dotnet/SqlClient" ["e"=1]
+"SimonCropp/WinDebloat" -> "0xced/Chisel" ["e"=1]
+"abdonkov/DSA" -> "jackmott/LinqFaster" ["e"=1]
+"abdonkov/DSA" -> "riyadparvez/data-structures-csharp" ["e"=1]
+"hazzik/DelegateDecompiler" -> "jackmott/LinqFaster" ["e"=1]
+"hazzik/DelegateDecompiler" -> "SergeyTeplyakov/ObjectLayoutInspector" ["e"=1]
 "DotNetAnalyzers/WpfAnalyzers" -> "DotNetAnalyzers/PropertyChangedAnalyzers"
 "DotNetAnalyzers/WpfAnalyzers" -> "bblanchon/WpfBindingErrors"
 "DotNetAnalyzers/WpfAnalyzers" -> "DotNetAnalyzers/ReflectionAnalyzers"
@@ -2588,12 +3103,24 @@ digraph G {
 "microsoft/testfx" -> "nunit/nunit" ["e"=1]
 "microsoft/testfx" -> "microsoft/vs-threading"
 "microsoft/testfx" -> "coverlet-coverage/coverlet" ["e"=1]
+"MichalStrehovsky/sizoscope" -> "EgorBo/Disasmo" ["e"=1]
+"MichalStrehovsky/sizoscope" -> "aelij/IgnoresAccessChecksToGenerator" ["e"=1]
+"MichalStrehovsky/sizoscope" -> "Cysharp/PrivateProxy" ["e"=1]
+"tmds/Tmds.DBus" -> "tmds/Tmds.Systemd" ["e"=1]
+"tmds/Tmds.DBus" -> "tmds/Tmds.LibC" ["e"=1]
+"thomhurst/ModularPipelines" -> "dotnet/Nerdbank.Streams" ["e"=1]
+"thomhurst/ModularPipelines" -> "Cysharp/PrivateProxy" ["e"=1]
+"thomhurst/ModularPipelines" -> "eiriktsarpalis/PolyType" ["e"=1]
+"thomhurst/ModularPipelines" -> "sebastienros/parlot" ["e"=1]
+"nunit/nunit-console" -> "nunit/nunit.analyzers" ["e"=1]
 "xunit/xunit.analyzers" -> "xunit/visualstudio.xunit"
 "xunit/xunit.analyzers" -> "fluentassertions/fluentassertions.analyzers"
 "repeats/Repeat" -> "RMPR/atbswp"
 "repeats/Repeat" -> "Ixiko/AHK-Rare" ["e"=1]
 "repeats/Repeat" -> "autokey/autokey" ["e"=1]
 "repeats/Repeat" -> "john-h-k/MathSharp"
+"microsoft/DevSkim" -> "security-code-scan/security-code-scan" ["e"=1]
+"microsoft/DevSkim" -> "dotnet/roslyn-analyzers" ["e"=1]
 "madskristensen/MarkdownEditor" -> "madskristensen/MarkdownEditor2022"
 "madskristensen/MarkdownEditor" -> "madskristensen/FileIcons"
 "madskristensen/MarkdownEditor" -> "laurentkempe/GitDiffMargin"
@@ -2610,6 +3137,13 @@ digraph G {
 "madskristensen/MarkdownEditor" -> "madskristensen/KnownMonikersExplorer"
 "madskristensen/MarkdownEditor" -> "madskristensen/CommentRemover" ["e"=1]
 "madskristensen/FileIcons" -> "madskristensen/Editorsk" ["e"=1]
+"DamianEdwards/RazorSlices" -> "ltrzesniewski/RazorBlade" ["e"=1]
+"DamianEdwards/RazorSlices" -> "DamianEdwards/MinimalApis.Extensions" ["e"=1]
+"DamianEdwards/RazorSlices" -> "DamianEdwards/MiniValidation" ["e"=1]
+"DamianEdwards/RazorSlices" -> "Cysharp/Utf8StreamReader" ["e"=1]
+"lowleveldesign/process-governor" -> "lowleveldesign/debug-recipes" ["e"=1]
+"justcoding121/advanced-algorithms" -> "SolutionsDesign/Algorithmia" ["e"=1]
+"justcoding121/advanced-algorithms" -> "YaccConstructor/QuickGraph" ["e"=1]
 "Cysharp/PrivateProxy" -> "Cysharp/Utf8StringInterpolation"
 "Cysharp/PrivateProxy" -> "Cysharp/KcpTransport"
 "Cysharp/PrivateProxy" -> "Cysharp/Utf8StreamReader"
@@ -2617,10 +3151,19 @@ digraph G {
 "Cysharp/PrivateProxy" -> "eiriktsarpalis/PolyType"
 "JamesNK/aspnetcore-grafana" -> "davidfowl/IdentityEndpointsSample"
 "JamesNK/aspnetcore-grafana" -> "0xced/Chisel"
+"microsoft/dotnet-framework-docker" -> "dotnet/docker-tools" ["e"=1]
+"nietras/Sep" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
+"nietras/Sep" -> "0xced/Chisel" ["e"=1]
+"nietras/Sep" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"serilog/serilog-sinks-async" -> "fluentassertions/fluentassertions.analyzers" ["e"=1]
 "laurentkempe/GitDiffMargin" -> "madskristensen/MarkdownEditor"
 "laurentkempe/GitDiffMargin" -> "madskristensen/TrailingWhitespace"
 "laurentkempe/GitDiffMargin" -> "microsoft/VS-PPT"
 "laurentkempe/GitDiffMargin" -> "StefanKert/BuildVision"
+"Cysharp/csbindgen" -> "Cysharp/PrivateProxy" ["e"=1]
+"xuhuisheng/sonar-l10n-zh" -> "SonarSource/sonar-scanner-msbuild" ["e"=1]
+"lowleveldesign/wtrace" -> "goldshtn/etrace" ["e"=1]
+"lowleveldesign/wtrace" -> "fremag/MemoScope.Net" ["e"=1]
 "davidfowl/Channels" -> "ProjectMagma/Magma"
 "davidfowl/Channels" -> "allisterb/jemalloc.NET"
 "davidfowl/Channels" -> "dotnet/corefxlab"
@@ -2630,8 +3173,13 @@ digraph G {
 "davidfowl/Channels" -> "microsoft/xunit-performance"
 "davidfowl/Channels" -> "jfrijters/Managed.Reflection"
 "davidfowl/Channels" -> "StackExchange/capnproto-net"
+"SteveSandersonMS/DotNetIsolator" -> "Cysharp/PrivateProxy" ["e"=1]
+"microsoft/node-api-dotnet" -> "microsoft/vs-streamjsonrpc" ["e"=1]
+"sebastienros/esprima-dotnet" -> "sebastienros/parlot" ["e"=1]
 "tghamm/Anthropic.SDK" -> "Cysharp/Claudia"
 "tghamm/Anthropic.SDK" -> "tghamm/Mistral.SDK"
+"SimonCropp/Polyfill" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
+"SimonCropp/Polyfill" -> "serdedotnet/serde" ["e"=1]
 "dotnet/source-build" -> "dotnet/source-build-reference-packages"
 "dotnet/source-build" -> "dotnet/linker"
 "dotnet/source-build" -> "dotnet/jitutils"
@@ -2656,6 +3204,9 @@ digraph G {
 "antiufo/roslyn-linq-rewrite" -> "scientistproject/Scientist.net" ["e"=1]
 "noordwind/Collectively.Api" -> "noordwind/Collectively.Web"
 "davidfowl/IdentityEndpointsSample" -> "davidfowl/eStoreLite"
+"adamralph/xbehave.net" -> "xunit/xunit.analyzers" ["e"=1]
+"adamralph/xbehave.net" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
+"U8String/U8String" -> "Cysharp/Utf8StringInterpolation" ["e"=1]
 "microsoft/vstest-docs" -> "microsoft/vstest"
 "goldshtn/etrace" -> "goldshtn/LiveStacks"
 "goldshtn/etrace" -> "goldshtn/minidumper"
@@ -2670,6 +3221,9 @@ digraph G {
 "madskristensen/Surrounder" -> "madskristensen/PresenterMode"
 "warden-stack/Warden.Api" -> "noordwind/Collectively.Web"
 "noordwind/Collectively.Web" -> "noordwind/Collectively.Api"
+"MichaCo/DnsClient.NET" -> "dotnet/dotNext" ["e"=1]
+"MichaCo/DnsClient.NET" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"octokit/octokit.net" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "microsoft/vswhere" -> "KirillOsenkov/MSBuildStructuredLog"
 "microsoft/vswhere" -> "microsoft/vssetup.powershell"
 "microsoft/vswhere" -> "microsoft/vs-setup-samples"
@@ -2717,17 +3271,28 @@ digraph G {
 "microsoft/vs-streamjsonrpc" -> "microsoft/clrmd"
 "stark-lang/stark-old-experiment" -> "stark-lang/stark"
 "richlander/container-workshop" -> "DamianEdwards/MinimalApis.Extensions"
+"wmww/Pinecone" -> "terrajobst/minsk" ["e"=1]
+"kevin-montrose/Sigil" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"kevin-montrose/Sigil" -> "microsoft/clrmd" ["e"=1]
+"kevin-montrose/Sigil" -> "dotnet/corefxlab" ["e"=1]
+"kevin-montrose/Sigil" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
+"kevin-montrose/Sigil" -> "aumcode/nfx" ["e"=1]
+"kevin-montrose/Sigil" -> "microsoft/vs-threading" ["e"=1]
+"approvals/ApprovalTests.Net" -> "PublicApiGenerator/PublicApiGenerator" ["e"=1]
+"approvals/ApprovalTests.Net" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "dotnet/linker" -> "dotnet/jitutils"
 "dotnet/linker" -> "dotnet/source-build"
 "dotnet/linker" -> "dotnet/project-system-tools"
 "dotnet/linker" -> "dotnet/platform-compat"
 "dotnet/linker" -> "dotnet/project-system"
 "dotnet/linker" -> "dotnet/designs"
+"MisterJames/GenFu" -> "jerriep/dotnet-outdated" ["e"=1]
 "Cysharp/Utf8StreamReader" -> "Cysharp/Utf8StringInterpolation"
 "Cysharp/Utf8StreamReader" -> "Cysharp/PrivateProxy"
 "Cysharp/Utf8StreamReader" -> "Cysharp/ValueTaskSupplement" ["e"=1]
 "Cysharp/Utf8StreamReader" -> "Cysharp/KcpTransport"
 "Cysharp/Utf8StreamReader" -> "annulusgames/ZeroMessenger" ["e"=1]
+"MicrosoftDocs/cpp-docs" -> "MicrosoftDocs/visualstudio-docs" ["e"=1]
 "MicrosoftDocs/visualstudio-docs" -> "MicrosoftDocs/cpp-docs" ["e"=1]
 "MicrosoftDocs/visualstudio-docs" -> "microsoft/VSSDK-Extensibility-Samples"
 "MicrosoftDocs/visualstudio-docs" -> "microsoft/VSProjectSystem"
@@ -2743,13 +3308,28 @@ digraph G {
 "MicrosoftDocs/visualstudio-docs" -> "KirillOsenkov/MSBuildStructuredLog"
 "MicrosoftDocs/visualstudio-docs" -> "microsoft/VSExtensibility"
 "MicrosoftDocs/visualstudio-docs" -> "NuGetPackageExplorer/NuGetPackageExplorer" ["e"=1]
+"Giorgi/EFCore.Visualizer" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
+"m4rs-mt/ILGPU" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "Testura/Testura.Code" -> "Testura/Testura.Android"
 "Testura/Testura.Code" -> "Testura/Testura.Code.UnitTestGenerator"
 "Testura/Testura.Code" -> "ironcev/awesome-roslyn"
 "Testura/Testura.Code" -> "AArnott/CodeGeneration.Roslyn"
+"lecaillon/Evolve" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "microsoft/git" -> "microsoft/scalar"
 "microsoft/git" -> "microsoft/VFSForGit" ["e"=1]
 "microsoft/git" -> "microsoft/docker"
+"dloss/binary-parsing" -> "jefffhaynes/BinarySerializer" ["e"=1]
+"HangfireIO/Cronos" -> "adamralph/minver" ["e"=1]
+"tonerdo/readline" -> "antiufo/roslyn-linq-rewrite" ["e"=1]
+"tonerdo/readline" -> "asynkron/Wire" ["e"=1]
+"tonerdo/readline" -> "Nihlus/AdvancedDLSupport" ["e"=1]
+"tonerdo/readline" -> "xoofx/zio" ["e"=1]
+"dotnet/WatsonTcp" -> "dotnet/Nerdbank.Streams" ["e"=1]
+"natemcmaster/dotnet-tools" -> "natemcmaster/dotnet-serve" ["e"=1]
+"natemcmaster/dotnet-tools" -> "dotnet/format" ["e"=1]
+"natemcmaster/dotnet-tools" -> "jerriep/dotnet-outdated" ["e"=1]
+"natemcmaster/dotnet-tools" -> "benaadams/Ben.BlockingDetector" ["e"=1]
+"natemcmaster/dotnet-tools" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "Cysharp/Utf8StringInterpolation" -> "Cysharp/Utf8StreamReader"
 "Cysharp/Utf8StringInterpolation" -> "U8String/U8String" ["e"=1]
 "Cysharp/Utf8StringInterpolation" -> "Cysharp/PrivateProxy"
@@ -2775,6 +3355,7 @@ digraph G {
 "Cysharp/KcpTransport" -> "Cysharp/YetAnotherHttpHandler" ["e"=1]
 "Cysharp/KcpTransport" -> "Cysharp/LogicLooper" ["e"=1]
 "Cysharp/KcpTransport" -> "Nyrest/FastGenericNew"
+"dasMulli/dotnet-win32-service" -> "dotnet/platform-compat" ["e"=1]
 "AlenToma/FastDeepCloner" -> "force-net/DeepCloner"
 "Cysharp/Claudia" -> "tghamm/Anthropic.SDK"
 "Cysharp/Claudia" -> "hadashiA/VitalRouter" ["e"=1]
@@ -2782,7 +3363,14 @@ digraph G {
 "icsharpcode/NRefactory" -> "icsharpcode/RefactoringEssentials"
 "icsharpcode/NRefactory" -> "lukebuehler/NRefactory-Completion-Sample"
 "icsharpcode/NRefactory" -> "icsharpcode/SharpDevelop" ["e"=1]
+"saucecontrol/PhotoSauce" -> "bitfaster/BitFaster.Caching" ["e"=1]
+"saucecontrol/PhotoSauce" -> "bleroy/lunr-core" ["e"=1]
+"saucecontrol/PhotoSauce" -> "EgorBo/Disasmo" ["e"=1]
+"DiscUtils/DiscUtils" -> "xoofx/zio" ["e"=1]
+"AmmyUI/AmmyUI" -> "Nihlus/AdvancedDLSupport" ["e"=1]
+"pumasecurity/puma-scan" -> "security-code-scan/security-code-scan" ["e"=1]
 "madskristensen/EditorConfigLanguage" -> "loop8ack/ExtensionPackTools"
+"praeclarum/1brc" -> "0xced/Chisel" ["e"=1]
 "Drawaes/CondenserDotNet" -> "Drawaes/Leto"
 "Drawaes/CondenserDotNet" -> "Drawaes/TrimDB"
 "Drawaes/Leto" -> "Drawaes/CondenserDotNet"
@@ -2813,6 +3401,7 @@ digraph G {
 "rodneyviana/netext" -> "southpolenator/SharpDebug"
 "rodneyviana/netext" -> "kevingosse/DynaMD"
 "rodneyviana/netext" -> "microsoft/clrmd"
+"tonybaloney/CSnakes" -> "eiriktsarpalis/PolyType" ["e"=1]
 "dotnet/announcements" -> "aspnet/Announcements" ["e"=1]
 "dotnet/announcements" -> "dotnet/standard" ["e"=1]
 "dotnet/announcements" -> "dotnet/designs"
@@ -2849,6 +3438,10 @@ digraph G {
 "xoofx/zio" -> "Nihlus/AdvancedDLSupport"
 "xoofx/zio" -> "jackmott/LinqFaster"
 "xoofx/zio" -> "elw00d/consoleframework" ["e"=1]
+"awaescher/RepoZ" -> "awaescher/Fusion" ["e"=1]
+"scriptcs/scriptcs" -> "daveaglick/Scripty" ["e"=1]
+"scriptcs/scriptcs" -> "dotnet/codeformatter" ["e"=1]
+"scriptcs/scriptcs" -> "config-r/config-r" ["e"=1]
 "dotnet/roslyn-sdk" -> "dotnet/roslyn-analyzers"
 "dotnet/roslyn-sdk" -> "davidwengier/SourceGeneratorTemplate"
 "dotnet/roslyn-sdk" -> "dotnet/project-system"
@@ -2872,6 +3465,7 @@ digraph G {
 "b3b00/csly" -> "datalust/superpower"
 "b3b00/csly" -> "dadhi/FastExpressionCompiler" ["e"=1]
 "b3b00/csly" -> "devlooped/ThisAssembly" ["e"=1]
+"microsoft/Recognizers-Text" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "benjamin-hodgson/Pidgin" -> "sprache/Sprache" ["e"=1]
 "benjamin-hodgson/Pidgin" -> "datalust/superpower"
 "benjamin-hodgson/Pidgin" -> "sebastienros/parlot"
@@ -2887,6 +3481,9 @@ digraph G {
 "benjamin-hodgson/Pidgin" -> "benaadams/Ben.Demystifier" ["e"=1]
 "benjamin-hodgson/Pidgin" -> "scriban/scriban" ["e"=1]
 "benjamin-hodgson/Pidgin" -> "VSadov/NonBlocking"
+"microsoft/VFSForGit" -> "microsoft/scalar" ["e"=1]
+"microsoft/VFSForGit" -> "microsoft/git" ["e"=1]
+"xoofx/ultra" -> "EgorBo/Disasmo" ["e"=1]
 "dotnet/designs" -> "dotnet/performance"
 "dotnet/designs" -> "dotnet/project-system"
 "dotnet/designs" -> "dotnet/corefxlab"
@@ -2902,12 +3499,22 @@ digraph G {
 "dotnet/designs" -> "microsoft/vs-threading"
 "dotnet/designs" -> "KirillOsenkov/SourceBrowser"
 "dotnet/designs" -> "dotnet/standard" ["e"=1]
+"icsharpcode/SharpDevelop" -> "icsharpcode/NRefactory" ["e"=1]
 "dotnet/platform-compat" -> "dotnet/linker"
 "dotnet/platform-compat" -> "dotnet/project-system"
 "dotnet/platform-compat" -> "dasMulli/dotnet-win32-service" ["e"=1]
+"RyanLamansky/dotnet-webassembly" -> "xoofx/zio" ["e"=1]
+"RyanLamansky/dotnet-webassembly" -> "benjamin-hodgson/Pidgin" ["e"=1]
+"datastax/csharp-driver" -> "HdrHistogram/HdrHistogram.NET" ["e"=1]
+"mparlak/Flee" -> "datalust/superpower" ["e"=1]
+"Terminals-Origin/Terminals" -> "KirillOsenkov/MSBuildStructuredLog" ["e"=1]
+"microsoft/GraphEngine" -> "microsoft/automatic-graph-layout" ["e"=1]
+"microsoft/GraphEngine" -> "dotnet/corefxlab" ["e"=1]
+"microsoft/GraphEngine" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "alexanderkozlenko/aspnetcore-json-rpc" -> "alexanderkozlenko/json-rpc-client"
 "alexanderkozlenko/aspnetcore-json-rpc" -> "alexanderkozlenko/json-rpc"
 "alexanderkozlenko/aspnetcore-json-rpc" -> "alexanderkozlenko/random-org"
+"mattjohnsonpint/TimeZoneConverter" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
 "RehanSaeed/EditorConfig" -> "Dotnet-Boxed/Templates" ["e"=1]
 "RehanSaeed/EditorConfig" -> "adamralph/minver"
 "RehanSaeed/EditorConfig" -> "SergeyTeplyakov/ErrorProne.NET"
@@ -2918,12 +3525,16 @@ digraph G {
 "RehanSaeed/EditorConfig" -> "DotNetAnalyzers/StyleCopAnalyzers" ["e"=1]
 "RehanSaeed/EditorConfig" -> "domn1995/dunet" ["e"=1]
 "RehanSaeed/EditorConfig" -> "PublicApiGenerator/PublicApiGenerator"
+"OmniSharp/csharp-language-server-protocol" -> "b3b00/csly" ["e"=1]
+"OmniSharp/csharp-language-server-protocol" -> "microsoft/vs-streamjsonrpc" ["e"=1]
+"adamdriscoll/poshtools" -> "microsoft/VS-PPT" ["e"=1]
 "microsoft/slow-cheetah" -> "sayedihashimi/slow-cheetah"
 "microsoft/slow-cheetah" -> "microsoft/json-document-transforms"
 "microsoft/slow-cheetah" -> "golavr/ConfigurationTransform"
 "microsoft/slow-cheetah" -> "microsoft/slngen"
 "microsoft/slow-cheetah" -> "microsoft/vs-mef"
 "microsoftarchive/mef" -> "microsoft/vs-mef"
+"moq/labs" -> "SonarSource/sonar-dotnet" ["e"=1]
 "jackmott/LinqFaster" -> "antiufo/roslyn-linq-rewrite"
 "jackmott/LinqFaster" -> "kevin-montrose/LinqAF"
 "jackmott/LinqFaster" -> "NetFabric/NetFabric.Hyperlinq"
@@ -2948,6 +3559,7 @@ digraph G {
 "microsoft/vs-mef" -> "microsoft/slngen"
 "microsoft/vs-mef" -> "microsoft/vs-editor-api"
 "KirillOsenkov/MetadataTools" -> "KirillOsenkov/QuickInfo"
+"novotnyllc/MSBuildSdkExtras" -> "microsoft/MSBuildSdks" ["e"=1]
 "Dynatrace/superdump" -> "fremag/MemoScope.Net"
 "Dynatrace/superdump" -> "microsoft/clrmd"
 "Dynatrace/superdump" -> "chrisnas/DebuggingExtensions"
@@ -2973,7 +3585,24 @@ digraph G {
 "goldshtn/LiveStacks" -> "goldshtn/etrace"
 "goldshtn/LiveStacks" -> "kevingosse/DynaMD"
 "Testura/Testura.Android.PageObjectCreator" -> "Testura/Testura.Android"
+"justeattakeaway/httpclient-interception" -> "martincostello/dotnet-minimal-api-integration-testing" ["e"=1]
+"microsoft/ClearScript" -> "microsoft/Microsoft.IO.RecyclableMemoryStream" ["e"=1]
 "RainwayApp/warden" -> "steamcore/TinyIpc"
+"skx/sysadmin-util" -> "hackman/linux-sysadmin-course" ["e"=1]
+"axuno/SmartFormat" -> "thomasgalliker/ObjectDumper" ["e"=1]
+"axuno/SmartFormat" -> "adamralph/bullseye" ["e"=1]
+"axuno/SmartFormat" -> "adamralph/simple-exec" ["e"=1]
+"axuno/SmartFormat" -> "xoofx/zio" ["e"=1]
+"SteveSanderson/Blazor" -> "featherhttp/framework" ["e"=1]
+"sebastienros/fluid" -> "sebastienros/parlot" ["e"=1]
+"stevejgordon/CorrelationId" -> "benaadams/Ben.BlockingDetector" ["e"=1]
+"kubernetes-client/csharp" -> "dotnet/dotNext" ["e"=1]
+"kubernetes-client/csharp" -> "dotnet/diagnostics" ["e"=1]
+"kubernetes-client/csharp" -> "dotnet/dotnet-monitor" ["e"=1]
+"RehanSaeed/Schema.NET" -> "adamralph/minver" ["e"=1]
+"kiwitcms/Kiwi" -> "otvorete/petition" ["e"=1]
+"microsoft/OpenAPI.NET" -> "dotnet/Nerdbank.GitVersioning" ["e"=1]
+"microsoft/OpenAPI.NET" -> "microsoft/vs-threading" ["e"=1]
 "WorkMaze/JUST.net" -> "blushingpenguin/Jolt.Net"
 "WorkMaze/JUST.net" -> "microsoft/json-document-transforms"
 "hvanbakel/CsprojToVs2017" -> "dotnet/try-convert"
@@ -3005,6 +3634,10 @@ digraph G {
 "chriseldredge/Klondike" -> "themotleyfool/NuGet.Lucene"
 "chriseldredge/Klondike" -> "GitTools/GitLink"
 "chriseldredge/Klondike" -> "themotleyfool/Klondike-Release"
+"tonerdo/pose" -> "jackmott/LinqFaster" ["e"=1]
+"tonerdo/pose" -> "Nihlus/AdvancedDLSupport" ["e"=1]
+"tonerdo/pose" -> "SergeyTeplyakov/ErrorProne.NET" ["e"=1]
+"tonerdo/pose" -> "fremag/MemoScope.Net" ["e"=1]
 "thomasgalliker/ObjectDumper" -> "OmarElabd/ObjectExporter"
 "thomasgalliker/ObjectDumper" -> "force-net/DeepCloner"
 "thomasgalliker/ObjectDumper" -> "axuno/SmartFormat" ["e"=1]
@@ -3012,6 +3645,9 @@ digraph G {
 "thomasgalliker/ObjectDumper" -> "CopyText/TextCopy"
 "thomasgalliker/ObjectDumper" -> "6bee/Remote.Linq" ["e"=1]
 "thomasgalliker/ObjectDumper" -> "agileobjects/ReadableExpressions" ["e"=1]
+"microsoft/roosterjs" -> "microsoft/vstest" ["e"=1]
+"microsoft/roosterjs" -> "xoofx/zio" ["e"=1]
+"SonarSource/sonarlint-vscode" -> "SonarSource/sonarlint-visualstudio" ["e"=1]
 "microsoft/vs-editor-api" -> "josetr/VsixTesting"
 "microsoft/vs-editor-api" -> "VsixCommunity/ExtensibilityTemplatePack"
 "avelin/fmi-os" -> "georgibaltiev/os-2024-25"
@@ -3055,14 +3691,16 @@ digraph G {
 "microsoft/vstest" ["l"="-32.414,-0.541"]
 "awaescher/Fusion" ["l"="-32.263,-0.558"]
 "microsoft/coyote" ["l"="-32.232,-0.48"]
-"microsoft/p4vfs" ["l"="-21.959,-25.241"]
-"fastbuild/fastbuild" ["l"="-21.939,-25.434"]
-"microsoft/wil" ["l"="-37.673,1.039"]
-"microsoft/xlang" ["l"="-37.64,1.048"]
+"microsoft/p4vfs" ["l"="-21.959,-25.241", "c"=101]
+"fastbuild/fastbuild" ["l"="-21.939,-25.434", "c"=101]
+"microsoft/wil" ["l"="-37.673,1.039", "c"=435]
+"microsoft/xlang" ["l"="-37.64,1.048", "c"=435]
 "dotnet/arcade" ["l"="-32.404,-0.506"]
 "dotnet/roslyn-analyzers" ["l"="-32.344,-0.578"]
 "mikefourie-zz/MSBuildExplorer" ["l"="-32.321,-0.756"]
 "mikefourie-zz/MSBuildExtensionPack" ["l"="-32.326,-0.737"]
+"OneGet/oneget" ["l"="-48.166,7.702", "c"=311]
+"dotnet/codeformatter" ["l"="-32.35,-0.652"]
 "loresoft/msbuildtasks" ["l"="-32.316,-0.671"]
 "kurumiimari/shakedex" ["l"="-32.672,-1.157"]
 "namebasehq/api-documentation" ["l"="-32.628,-1.218"]
@@ -3071,25 +3709,25 @@ digraph G {
 "hnsfund/xnhns" ["l"="-32.626,-1.197"]
 "dotnet/HttpRepl" ["l"="-32.234,-0.504"]
 "featherhttp/framework" ["l"="-32.219,-0.42"]
-"microsoft/FeatureManagement-Dotnet" ["l"="-34.326,-0.882"]
+"microsoft/FeatureManagement-Dotnet" ["l"="-34.326,-0.882", "c"=8]
 "dotnet/crank" ["l"="-32.242,-0.439"]
 "dotnet/Nerdbank.GitVersioning" ["l"="-32.242,-0.581"]
 "natemcmaster/dotnet-serve" ["l"="-32.273,-0.426"]
-"CarterCommunity/Carter" ["l"="-34.33,-0.909"]
+"CarterCommunity/Carter" ["l"="-34.33,-0.909", "c"=8]
 "adamralph/bullseye" ["l"="-32.17,-0.619"]
 "dotnet/diagnostics" ["l"="-32.255,-0.488"]
-"dotnet/command-line-api" ["l"="-34.653,-1.05"]
+"dotnet/command-line-api" ["l"="-34.653,-1.05", "c"=8]
 "dotnet/dotnet-monitor" ["l"="-32.27,-0.453"]
 "StackExchange/StackExchange.Utils" ["l"="-32.197,-0.71"]
-"moq/Moq.AutoMocker" ["l"="-34.487,-0.709"]
-"BrighterCommand/Brighter" ["l"="-34.306,-1.014"]
+"moq/Moq.AutoMocker" ["l"="-34.487,-0.709", "c"=8]
+"BrighterCommand/Brighter" ["l"="-34.306,-1.014", "c"=8]
 "handshake-org/hs-airdrop" ["l"="-32.526,-1.116"]
 "microsoft/Extensible-Storage-Engine" ["l"="-32.338,-0.816"]
 "handshake-org/hs-tree-data" ["l"="-32.507,-1.149"]
 "MathInspector/MathInspector" ["l"="-32.414,-1.109"]
 "doino-gretchenliev/revolut-stocks" ["l"="-32.384,-1.211"]
-"blasty/CVE-2021-3156" ["l"="-44.486,-29.474"]
-"r4j0x00/exploits" ["l"="-44.556,-29.597"]
+"blasty/CVE-2021-3156" ["l"="-44.486,-29.474", "c"=3]
+"r4j0x00/exploits" ["l"="-44.556,-29.597", "c"=3]
 "handshake-org/faucet-tool" ["l"="-32.533,-1.087"]
 "HNScan/HNScan" ["l"="-32.628,-1.333"]
 "Abc-Arbitrage/Zebus" ["l"="-32.004,-0.379"]
@@ -3098,7 +3736,7 @@ digraph G {
 "fremag/MemoScope.Net" ["l"="-32.195,-0.554"]
 "microsoft/vs-threading" ["l"="-32.296,-0.552"]
 "hvanbakel/CsprojToVs2017" ["l"="-32.259,-0.534"]
-"benaadams/Ben.Demystifier" ["l"="-34.53,-0.99"]
+"benaadams/Ben.Demystifier" ["l"="-34.53,-0.99", "c"=8]
 "adamralph/minver" ["l"="-32.229,-0.629"]
 "dotnet/sourcelink" ["l"="-32.314,-0.544"]
 "microsoft/clrmd" ["l"="-32.238,-0.557"]
@@ -3106,123 +3744,179 @@ digraph G {
 "rodneyviana/netext" ["l"="-32.158,-0.588"]
 "Maoni0/realmon" ["l"="-32.167,-0.437"]
 "devlooped/GitInfo" ["l"="-32.208,-0.627"]
+"neuecc/Utf8Json" ["l"="-26.873,-32.685", "c"=66]
+"microsoft/Microsoft.IO.RecyclableMemoryStream" ["l"="-32.204,-0.524"]
+"dotnet/format" ["l"="-32.34,-0.532"]
 "dotnet/dotnet-api-docs" ["l"="-32.429,-0.497"]
-"dotnet/docs" ["l"="-34.422,-1.48"]
+"dotnet/docs" ["l"="-34.422,-1.48", "c"=8]
 "dotnet/performance" ["l"="-32.285,-0.496"]
 "dotnet/sdk" ["l"="-32.388,-0.479"]
-"dotnet/EntityFramework.Docs" ["l"="-34.347,-1.327"]
+"dotnet/EntityFramework.Docs" ["l"="-34.347,-1.327", "c"=8]
 "dotnet/csharpstandard" ["l"="-32.331,-0.47"]
 "dotnet/docs-desktop" ["l"="-32.592,-0.426"]
 "dotnet/SqlClient" ["l"="-32.357,-0.464"]
 "dotnet/designs" ["l"="-32.32,-0.506"]
 "dotnet/roslyn-api-docs" ["l"="-32.474,-0.528"]
 "dotnet/roslyn-tools" ["l"="-32.472,-0.507"]
-"dotnet/samples" ["l"="-34.388,-1.388"]
+"dotnet/samples" ["l"="-34.388,-1.388", "c"=8]
 "dotnet/roslyn-sdk" ["l"="-32.399,-0.559"]
-"dotnet/docs-maui" ["l"="-37.201,-2.288"]
+"dotnet/docs-maui" ["l"="-37.201,-2.288", "c"=113]
 "dotnet/templates" ["l"="-32.497,-0.523"]
-"natemcmaster/dotnet-tools" ["l"="-34.432,-1.048"]
+"dotnet-presentations/aspnetcore-app-workshop" ["l"="-45.145,7.026", "c"=1079]
+"davidfowl/Todos" ["l"="-32.211,-0.351"]
+"natemcmaster/dotnet-tools" ["l"="-34.432,-1.048", "c"=8]
 "jerriep/dotnet-outdated" ["l"="-32.276,-0.523"]
-"ProxyKit/ProxyKit" ["l"="-34.338,-1.081"]
+"ProxyKit/ProxyKit" ["l"="-34.338,-1.081", "c"=8]
 "davidfowl/Micronetes" ["l"="-32.199,-0.409"]
-"RickStrahl/Westwind.AspnetCore.LiveReload" ["l"="-36.379,-0.744"]
-"davidfowl/IISCrossover" ["l"="-36.403,-0.729"]
+"RickStrahl/Westwind.AspnetCore.LiveReload" ["l"="-36.379,-0.744", "c"=260]
+"davidfowl/IISCrossover" ["l"="-36.403,-0.729", "c"=260]
 "praeclarum/FuGetGallery" ["l"="-32.303,-0.477"]
-"Amine-Smahi/Blazume" ["l"="-36.396,-0.71"]
-"ipjohnson/EasyRpc" ["l"="-36.386,-0.717"]
-"praeclarum/Ooui" ["l"="-36.925,-2.241"]
-"Amine-Smahi/Sqlite-Global-Tool" ["l"="-36.396,-0.693"]
-"dotnet-script/dotnet-script" ["l"="-34.707,-1.074"]
+"Amine-Smahi/Blazume" ["l"="-36.396,-0.71", "c"=260]
+"ipjohnson/EasyRpc" ["l"="-36.386,-0.717", "c"=260]
+"praeclarum/Ooui" ["l"="-36.925,-2.241", "c"=113]
+"Amine-Smahi/Sqlite-Global-Tool" ["l"="-36.396,-0.693", "c"=260]
+"dotnet-script/dotnet-script" ["l"="-34.707,-1.074", "c"=8]
+"kevin-montrose/Jil" ["l"="-34.405,-1.172", "c"=8]
+"dotnet/corefxlab" ["l"="-32.27,-0.581"]
+"OpenCover/opencover" ["l"="-34.657,-1.004", "c"=8]
+"microsoft/CodeContracts" ["l"="-32.323,-0.65"]
+"versionize/versionize" ["l"="-34.569,-0.563", "c"=8]
 "dotnet/dotNext" ["l"="-32.197,-0.493"]
-"dadhi/FastExpressionCompiler" ["l"="-34.534,-0.858"]
-"microsoft/Microsoft.IO.RecyclableMemoryStream" ["l"="-32.204,-0.524"]
-"amis92/csharp-source-generators" ["l"="-34.523,-0.768"]
+"dadhi/FastExpressionCompiler" ["l"="-34.534,-0.858", "c"=8]
+"amis92/csharp-source-generators" ["l"="-34.523,-0.768", "c"=8]
 "Maoni0/mem-doc" ["l"="-32.222,-0.447"]
-"mcintyre321/OneOf" ["l"="-34.453,-0.851"]
-"madelson/DistributedLock" ["l"="-34.42,-0.931"]
-"riok/mapperly" ["l"="-34.445,-0.827"]
-"Cysharp/MemoryPack" ["l"="-26.812,-32.69"]
+"mcintyre321/OneOf" ["l"="-34.453,-0.851", "c"=8]
+"madelson/DistributedLock" ["l"="-34.42,-0.931", "c"=8]
+"riok/mapperly" ["l"="-34.445,-0.827", "c"=8]
+"Cysharp/MemoryPack" ["l"="-26.812,-32.69", "c"=66]
 "dotnet/Nerdbank.Streams" ["l"="-32.095,-0.506"]
-"open-telemetry/opentelemetry-dotnet" ["l"="-34.456,-1.099"]
-"StephenCleary/AsyncEx" ["l"="-34.589,-1.065"]
+"open-telemetry/opentelemetry-dotnet" ["l"="-34.456,-1.099", "c"=8]
+"StephenCleary/AsyncEx" ["l"="-34.589,-1.065", "c"=8]
 "NetFabric/NetFabric.Hyperlinq" ["l"="-32.114,-0.513"]
-"bcoin-org/bcoin" ["l"="-18.53,10.53"]
+"ikvmnet/ikvm" ["l"="-35.034,-0.962", "c"=8]
+"EgorBo/Disasmo" ["l"="-32.164,-0.503"]
+"meziantou/Meziantou.Analyzer" ["l"="-34.525,-0.745", "c"=8]
+"SergeyTeplyakov/ErrorProne.NET" ["l"="-32.225,-0.606"]
+"DotNetAnalyzers/IDisposableAnalyzers" ["l"="-32.151,-0.727"]
+"bcoin-org/bcoin" ["l"="-18.53,10.53", "c"=122]
 "handshake-org/handshake-org.github.io" ["l"="-32.619,-1.108"]
-"HandyOSS/HandyHost" ["l"="-18.688,7.923"]
-"decentralized-identity/ion" ["l"="-23.755,14.06"]
+"HandyOSS/HandyHost" ["l"="-18.688,7.923", "c"=438]
+"decentralized-identity/ion" ["l"="-23.755,14.06", "c"=697]
+"microsoft/FASTER" ["l"="-34.613,-1.388", "c"=8]
 "dotnet/installer" ["l"="-32.415,-0.467"]
-"dotnet/winforms" ["l"="-34.701,-1.578"]
-"dotnet/wpf" ["l"="-36.645,0.864"]
+"dotnet/winforms" ["l"="-34.701,-1.578", "c"=8]
+"dotnet/wpf" ["l"="-36.645,0.864", "c"=137]
 "dotnet/core-setup" ["l"="-32.445,-0.432"]
-"dotnet/runtime" ["l"="-34.554,-1.505"]
-"dotnet/cli" ["l"="-34.486,-1.507"]
-"dotnet/extensions" ["l"="-34.447,-1.322"]
+"dotnet/runtime" ["l"="-34.554,-1.505", "c"=8]
+"dotnet/cli" ["l"="-34.486,-1.507", "c"=8]
+"dotnet/extensions" ["l"="-34.447,-1.322", "c"=8]
 "dotnet/windowsdesktop" ["l"="-32.466,-0.491"]
-"dotnet/standard" ["l"="-34.54,-1.434"]
-"dotnet/format" ["l"="-32.34,-0.532"]
+"dotnet/standard" ["l"="-34.54,-1.434", "c"=8]
 "AArnott/CodeGeneration.Roslyn" ["l"="-32.228,-0.67"]
 "bjorkstromm/depends" ["l"="-32.163,-0.65"]
 "KirillOsenkov/RoslynQuoter" ["l"="-32.304,-0.619"]
-"devlooped/ThisAssembly" ["l"="-34.618,-0.697"]
+"devlooped/ThisAssembly" ["l"="-34.618,-0.697", "c"=8]
 "dfederm/ReferenceTrimmer" ["l"="-32.143,-0.663"]
 "microsoft/MSBuildLocator" ["l"="-32.343,-0.629"]
 "datalust/superpower" ["l"="-32.12,-0.585"]
+"safakgur/guard" ["l"="-34.507,-0.829", "c"=8]
 "NuKeeperDotNet/NuKeeper" ["l"="-32.204,-0.589"]
 "dotnet/platform-compat" ["l"="-32.374,-0.508"]
 "benaadams/Ben.BlockingDetector" ["l"="-32.209,-0.467"]
-"EgorBo/Disasmo" ["l"="-32.164,-0.503"]
+"sq/JSIL" ["l"="-34.91,-1.371", "c"=8]
+"dotnet/llilc" ["l"="-32.3,-0.693"]
+"antiufo/roslyn-linq-rewrite" ["l"="-32.18,-0.599"]
 "xoofx/JitBuddy" ["l"="-32.112,-0.415"]
 "SergeyTeplyakov/ObjectLayoutInspector" ["l"="-32.171,-0.486"]
 "EgorBo/SimdJsonSharp" ["l"="-32.068,-0.477"]
 "VSadov/NonBlocking" ["l"="-32.09,-0.481"]
 "ltrzesniewski/InlineIL.Fody" ["l"="-32.053,-0.408"]
-"MichalStrehovsky/sizoscope" ["l"="-34.893,-0.773"]
+"MichalStrehovsky/sizoscope" ["l"="-34.893,-0.773", "c"=8]
 "jackmott/LinqFaster" ["l"="-32.073,-0.527"]
-"badamczewski/PowerUp" ["l"="-34.606,-0.769"]
-"U8String/U8String" ["l"="-35.014,-0.813"]
+"badamczewski/PowerUp" ["l"="-34.606,-0.769", "c"=8]
+"U8String/U8String" ["l"="-35.014,-0.813", "c"=8]
 "dotnet/jitutils" ["l"="-32.418,-0.392"]
-"0xd4d/JitDasm" ["l"="-43.541,-35.985"]
+"0xd4d/JitDasm" ["l"="-43.541,-35.985", "c"=618]
 "microsoft/RoslynClrHeapAllocationAnalyzer" ["l"="-32.217,-0.564"]
 "kkokosa/Tune" ["l"="-32.13,-0.497"]
-"dotnet/runtimelab" ["l"="-33.06,-3.59"]
-"adamsitnik/awesome-dot-net-performance" ["l"="-34.496,-1.118"]
+"ashmind/SharpLab" ["l"="-34.678,-1.06", "c"=8]
+"ncalc/ncalc" ["l"="-34.688,-0.814", "c"=8]
+"sebastienros/parlot" ["l"="-32.034,-0.591"]
+"Samsung/netcoredbg" ["l"="-35.183,-1.207", "c"=8]
+"microsoft/MIEngine" ["l"="-32.38,-0.644"]
+"mtrojnar/osslsigncode" ["l"="-52.804,-11.961", "c"=400]
+"dotnet/sign" ["l"="-32.331,-0.615"]
+"vcsjones/AzureSignTool" ["l"="-32.384,-0.778"]
+"SimonCropp/NaughtyStrings" ["l"="-34.464,-0.546", "c"=8]
+"xunit/xunit.analyzers" ["l"="-32.11,-0.84"]
+"bridgedotnet/Bridge" ["l"="-34.827,-1.305", "c"=8]
+"github/git-sizer" ["l"="-13.954,-6.816", "c"=86]
+"microsoft/scalar" ["l"="-32.411,-0.436"]
+"elw00d/consoleframework" ["l"="-34.8,-0.858", "c"=8]
+"xoofx/zio" ["l"="-32.059,-0.545"]
+"SonarSource/sonarcloud-github-action" ["l"="7.842,-45.648", "c"=544]
+"SonarSource/sonar-scanner-msbuild" ["l"="-32.439,-0.746"]
+"twitchax/AspNetCore.Proxy" ["l"="-34.151,-1.524", "c"=8]
+"GitTools/GitVersion" ["l"="-34.683,-0.983", "c"=8]
+"GitTools/GitReleaseManager" ["l"="-32.178,-0.752"]
+"GitTools/actions" ["l"="-32.161,-0.822"]
+"cezarypiatek/MappingGenerator" ["l"="-34.503,-0.864", "c"=8]
+"daveaglick/Scripty" ["l"="-32.263,-0.639"]
+"dotnet/runtimelab" ["l"="-33.06,-3.59", "c"=293]
+"adamsitnik/awesome-dot-net-performance" ["l"="-34.496,-1.118", "c"=8]
+"icsharpcode/CodeConverter" ["l"="-36.389,1.236", "c"=137]
+"icsharpcode/RefactoringEssentials" ["l"="-32.374,-0.693"]
+"dotnet/upgrade-assistant" ["l"="-32.31,-0.44"]
+"dotnet/try-convert" ["l"="-32.306,-0.521"]
+"dgiagio/warp" ["l"="-34.708,-1.013", "c"=8]
 "Polly-Contrib/Simmy" ["l"="-32.304,-0.384"]
 "Polly-Contrib/Polly.Contrib.SimmyDemo_WebApi" ["l"="-32.314,-0.337"]
 "App-vNext/Polly-Samples" ["l"="-32.32,-0.303"]
 "Polly-Contrib/Polly.Contrib.WaitAndRetry" ["l"="-32.385,-0.253"]
 "vany0114/chaos-injection-using-simmy" ["l"="-32.331,-0.34"]
-"Xabaril/Esquio" ["l"="-34.167,-0.704"]
+"Xabaril/Esquio" ["l"="-34.167,-0.704", "c"=8]
 "microsoft/infersharp" ["l"="-32.28,-0.477"]
-"BenMorris/NetArchTest" ["l"="-34.402,-0.823"]
-"safakgur/guard" ["l"="-34.507,-0.829"]
+"BenMorris/NetArchTest" ["l"="-34.402,-0.823", "c"=8]
+"gmamaladze/trienet" ["l"="-34.673,-0.586", "c"=8]
+"bleroy/lunr-core" ["l"="-32.105,-0.532"]
+"icedland/iced" ["l"="-43.618,-35.964", "c"=618]
 "jskeet/DemoCode" ["l"="-32.059,-0.666"]
 "jskeet/nodatime" ["l"="-32.012,-0.715"]
 "mgravell/PooledAwait" ["l"="-32.105,-0.459"]
 "sestoft/C5" ["l"="-32.197,-0.683"]
 "john-h-k/MathSharp" ["l"="-31.988,-0.422"]
-"terrafx/terrafx" ["l"="-33.053,-3.484"]
-"Sergio0694/ComputeSharp" ["l"="-33.016,-3.46"]
-"asc-community/AngouriMath" ["l"="-36.145,-3.218"]
-"ZacharyPatten/Towel" ["l"="-34.435,-0.857"]
-"veldrid/veldrid" ["l"="-33.063,-3.387"]
+"terrafx/terrafx" ["l"="-33.053,-3.484", "c"=293]
+"Sergio0694/ComputeSharp" ["l"="-33.016,-3.46", "c"=293]
+"asc-community/AngouriMath" ["l"="-36.145,-3.218", "c"=364]
+"ZacharyPatten/Towel" ["l"="-34.435,-0.857", "c"=8]
+"veldrid/veldrid" ["l"="-33.063,-3.387", "c"=293]
 "TomaszRewak/C-sharp-stack-only-json-parser" ["l"="-32.075,-0.459"]
 "Sergio0694/BinaryPack" ["l"="-31.968,-0.47"]
-"dotnet/ClangSharp" ["l"="-33.045,-3.541"]
+"dotnet/ClangSharp" ["l"="-33.045,-3.541", "c"=293]
 "CarlVerret/csFastFloat" ["l"="-32.072,-0.419"]
-"amerkoleci/Vortice.Windows" ["l"="-33.035,-3.439"]
+"amerkoleci/Vortice.Windows" ["l"="-33.035,-3.439", "c"=293]
 "rikimaru0345/Ceras" ["l"="-32.005,-0.515"]
-"dcwuser/metanumerics" ["l"="-33.381,-3.781"]
+"dcwuser/metanumerics" ["l"="-33.381,-3.781", "c"=293]
 "reaqtive/reaqtor" ["l"="-32.129,-0.53"]
-"zspitz/ExpressionTreeVisualizer" ["l"="-34.46,-0.616"]
-"microsoft/perfview" ["l"="-34.578,-1.303"]
+"zspitz/ExpressionTreeVisualizer" ["l"="-34.46,-0.616", "c"=8]
+"mganss/XmlSchemaClassGenerator" ["l"="-34.425,-0.833", "c"=8]
+"djluck/prometheus-net.DotNetRuntime" ["l"="-32.784,1.882", "c"=106]
+"mayuki/Kurukuru" ["l"="-34.599,-0.98", "c"=8]
+"microsoft/perfview" ["l"="-34.578,-1.303", "c"=8]
 "davidfowl/BedrockFramework" ["l"="-32.194,-0.442"]
-"AppMetrics/AppMetrics" ["l"="-34.392,-1.132"]
-"SkyAPM/SkyAPM-dotnet" ["l"="-32.781,0.873"]
+"AppMetrics/AppMetrics" ["l"="-34.392,-1.132", "c"=8]
+"SkyAPM/SkyAPM-dotnet" ["l"="-32.781,0.873", "c"=106]
+"Tyrrrz/CliFx" ["l"="-34.667,-0.922", "c"=8]
+"LogExperts/LogExpert" ["l"="-35.048,-0.753", "c"=8]
+"mike-ward/VSColorOutput" ["l"="-32.499,-0.768"]
 "dotnet/cli-lab" ["l"="-32.374,-0.406"]
-"dotnet/upgrade-assistant" ["l"="-32.31,-0.44"]
 "dotnet/sdk-container-builds" ["l"="-32.399,-0.323"]
 "jmalarcon/DotNetVersions" ["l"="-32.435,-0.31"]
 "dotnet/websdk" ["l"="-32.412,-0.348"]
+"MichalStrehovsky/zerosharp" ["l"="-34.919,-1.003", "c"=8]
+"JakeBayer/FuzzySharp" ["l"="-34.661,-0.542", "c"=8]
+"sharpenrocks/Sharpen" ["l"="-34.807,-0.911", "c"=8]
+"ironcev/awesome-roslyn" ["l"="-32.265,-0.67"]
 "spectresystems/jarvis" ["l"="-32.205,-0.744"]
 "spectresystems/spectre.cli" ["l"="-32.197,-0.819"]
 "cklutz/LockCheck" ["l"="-32.276,-0.861"]
@@ -3232,45 +3926,47 @@ digraph G {
 "ReubenBond/Hagar" ["l"="-32.083,-0.548"]
 "indy-singh/StringsAreEvil" ["l"="-32.075,-0.496"]
 "Ref12/AsyncDbg" ["l"="-32.163,-0.523"]
+"xoofx/CppAst.NET" ["l"="-33.029,-3.573", "c"=293]
+"stark-lang/stark" ["l"="-31.919,-0.545"]
 "adamralph/simple-exec" ["l"="-32.134,-0.644"]
 "PublicApiGenerator/PublicApiGenerator" ["l"="-32.185,-0.663"]
-"axuno/SmartFormat" ["l"="-34.561,-0.872"]
-"xoofx/zio" ["l"="-32.059,-0.545"]
+"axuno/SmartFormat" ["l"="-34.561,-0.872", "c"=8]
 "spectresystems/snitch" ["l"="-32.113,-0.697"]
-"mariotoffia/FluentDocker" ["l"="-34.513,-0.846"]
-"Tyrrrz/CliWrap" ["l"="-34.589,-0.894"]
+"mariotoffia/FluentDocker" ["l"="-34.513,-0.846", "c"=8]
+"Tyrrrz/CliWrap" ["l"="-34.589,-0.894", "c"=8]
 "damianh/LittleForker" ["l"="-32.073,-0.711"]
-"bleroy/lunr-core" ["l"="-32.105,-0.532"]
+"dotnet-outdated/dotnet-outdated" ["l"="-34.484,-0.755", "c"=8]
 "otvorete/petition" ["l"="-32.323,-1.464"]
 "stelf/en2bg4term" ["l"="-32.348,-1.359"]
-"ivaylokenov/MyTested.AspNetCore.Mvc" ["l"="-36.023,-0.965"]
+"ivaylokenov/MyTested.AspNetCore.Mvc" ["l"="-36.023,-0.965", "c"=260]
 "podkrepi-bg/frontend" ["l"="-32.348,-1.515"]
 "fmi/machine-learning-lectures" ["l"="-32.279,-1.493"]
-"ivaylokenov/MyTested.WebApi" ["l"="-36.04,-0.942"]
-"NikolayIT/OpenJudgeSystem" ["l"="-35.992,-0.982"]
-"kiwitcms/Kiwi" ["l"="-1.703,-0.185"]
+"ivaylokenov/MyTested.WebApi" ["l"="-36.04,-0.942", "c"=260]
+"NikolayIT/OpenJudgeSystem" ["l"="-35.992,-0.982", "c"=260]
+"kiwitcms/Kiwi" ["l"="-1.703,-0.185", "c"=224]
 "nikoladimitroff/Game-Engine-Architecture" ["l"="-32.249,-1.478"]
-"iboB/dynamix" ["l"="-19.915,-26.25"]
+"iboB/dynamix" ["l"="-19.915,-26.25", "c"=10]
 "SoftUni/Programming-Basics-Book-CSharp-BG" ["l"="-32.287,-1.568"]
 "fmi/java-course" ["l"="-32.354,-1.655"]
 "Glamdring/OpenLex" ["l"="-32.317,-1.495"]
-"gsamokovarov/jump" ["l"="-13.337,-7.172"]
+"gsamokovarov/jump" ["l"="-13.337,-7.172", "c"=86]
 "hackman/linux-sysadmin-course" ["l"="-32.333,-1.403"]
 "tylerjensen/ServiceWire" ["l"="-31.679,-0.474"]
 "cyanfish/grpc-dotnet-namedpipes" ["l"="-31.708,-0.487"]
-"DotNetAnalyzers/IDisposableAnalyzers" ["l"="-32.151,-0.727"]
-"meziantou/Meziantou.Analyzer" ["l"="-34.525,-0.745"]
+"khellang/Middleware" ["l"="-34.345,-0.888", "c"=8]
+"CoreWCF/CoreWCF" ["l"="-34.48,-1.172", "c"=8]
+"sidristij/dotnetbook" ["l"="-34.559,-1.122", "c"=8]
+"meziantou/Meziantou.Framework" ["l"="-34.507,-0.704", "c"=8]
+"thomasgalliker/ObjectDumper" ["l"="-31.991,-0.822"]
 "DotNetAnalyzers/AspNetCoreAnalyzers" ["l"="-32.114,-0.78"]
 "DotNetAnalyzers/ReflectionAnalyzers" ["l"="-32.105,-0.796"]
 "DotNetAnalyzers/WpfAnalyzers" ["l"="-32.085,-0.786"]
 "DotNetAnalyzers/PropertyChangedAnalyzers" ["l"="-32.1,-0.769"]
 "cybermaxs/awesome-analyzers" ["l"="-32.249,-0.686"]
-"xunit/xunit.analyzers" ["l"="-32.11,-0.84"]
-"agileobjects/ReadableExpressions" ["l"="-34.473,-0.685"]
-"SergeyTeplyakov/ErrorProne.NET" ["l"="-32.225,-0.606"]
+"agileobjects/ReadableExpressions" ["l"="-34.473,-0.685", "c"=8]
 "fluentassertions/fluentassertions.analyzers" ["l"="-32.153,-0.8"]
-"Xabaril/BeatPulse" ["l"="-34.27,-1.054"]
-"stevejgordon/CorrelationId" ["l"="-34.323,-1.03"]
+"Xabaril/BeatPulse" ["l"="-34.27,-1.054", "c"=8]
+"stevejgordon/CorrelationId" ["l"="-34.323,-1.03", "c"=8]
 "davidfowl/DotNetCodingPatterns" ["l"="-32.229,-0.372"]
 "KeRNeLith/QuikGraph" ["l"="-32.256,-0.833"]
 "YaccConstructor/QuickGraph" ["l"="-32.226,-0.803"]
@@ -3278,74 +3974,90 @@ digraph G {
 "Kemsekov/GraphSharp" ["l"="-32.277,-0.89"]
 "panthernet/GraphX" ["l"="-32.259,-0.799"]
 "microsoft/automatic-graph-layout" ["l"="-32.259,-0.717"]
-"Washi1337/Rivers" ["l"="-43.394,-35.897"]
-"NewWheelTech/geometry4Sharp" ["l"="-26.354,-34.706"]
+"Washi1337/Rivers" ["l"="-43.394,-35.897", "c"=618]
+"NewWheelTech/geometry4Sharp" ["l"="-26.354,-34.706", "c"=35]
 "vfrz/DotNetGraph" ["l"="-32.245,-0.884"]
+"louthy/csharp-monad" ["l"="-35.97,-3.068", "c"=364]
+"config-r/config-r" ["l"="-32.286,-0.735"]
 "security-code-scan/security-code-scan" ["l"="-32.423,-0.666"]
-"pumasecurity/puma-scan" ["l"="-46.993,-34.263"]
-"microsoft/DevSkim" ["l"="-48.353,-29.466"]
-"dotnet-security-guard/roslyn-security-guard" ["l"="-46.932,-34.255"]
+"pumasecurity/puma-scan" ["l"="-46.993,-34.263", "c"=204]
+"microsoft/DevSkim" ["l"="-48.353,-29.466", "c"=11]
+"dotnet-security-guard/roslyn-security-guard" ["l"="-46.932,-34.255", "c"=204]
 "RetireNet/dotnet-retire" ["l"="-32.501,-0.724"]
 "SonarSource/sonar-dotnet" ["l"="-32.385,-0.674"]
 "guardrailsio/awesome-dotnet-security" ["l"="-32.494,-0.695"]
 "code-cracker/code-cracker" ["l"="-32.343,-0.691"]
-"DotNetAnalyzers/StyleCopAnalyzers" ["l"="-34.647,-1.137"]
-"find-sec-bugs/find-sec-bugs" ["l"="-47.915,-30.235"]
-"coverlet-coverage/coverlet" ["l"="-34.599,-1.037"]
+"DotNetAnalyzers/StyleCopAnalyzers" ["l"="-34.647,-1.137", "c"=8]
+"find-sec-bugs/find-sec-bugs" ["l"="-47.915,-30.235", "c"=11]
+"coverlet-coverage/coverlet" ["l"="-34.599,-1.037", "c"=8]
 "SonarSource/sonarlint-visualstudio" ["l"="-32.401,-0.712"]
-"NWebsec/NWebsec" ["l"="-34.181,-1.003"]
-"dotnet/roslynator" ["l"="-34.649,-0.983"]
+"NWebsec/NWebsec" ["l"="-34.181,-1.003", "c"=8]
+"dotnet/roslynator" ["l"="-34.649,-0.983", "c"=8]
+"aspnet/HttpClientFactory" ["l"="-34.147,-1.439", "c"=8]
+"davidfowl/Channels" ["l"="-32.14,-0.484"]
 "brutaldev/StrongNameSigner" ["l"="-32.114,-0.744"]
+"natemcmaster/LettuceEncrypt" ["l"="-34.416,-1.03", "c"=8]
+"getsentry/sentry-dotnet" ["l"="54.576,-15.056", "c"=25]
+"aspnet/Entropy" ["l"="-34.167,-1.547", "c"=8]
+"DamianEdwards/TagHelperPack" ["l"="-32.228,-0.206"]
 "alexanderkozlenko/json-rpc-client" ["l"="-31.743,-0.667"]
 "alexanderkozlenko/aspnetcore-json-rpc" ["l"="-31.78,-0.653"]
 "alexanderkozlenko/json-rpc" ["l"="-31.754,-0.656"]
-"Orcomp/Orc.GraphExplorer" ["l"="-36.23,1.143"]
+"BluestormDNA/ProjectPSX" ["l"="-12.512,1.636", "c"=247]
+"aspnet/dnx" ["l"="-34.287,-1.574", "c"=8]
+"Orcomp/Orc.GraphExplorer" ["l"="-36.23,1.143", "c"=137]
+"OpenSilver/OpenSilver" ["l"="-36.054,2.617", "c"=615]
+"hallatore/Netling" ["l"="-34.357,-1.143", "c"=8]
+"nanoframework/Home" ["l"="-35.162,-1.346", "c"=8]
+"mmanela/chutzpah" ["l"="-34.008,-0.779", "c"=8]
+"chocolatey-archive/chocolatey" ["l"="-48.157,7.726", "c"=311]
+"microsoft/docker" ["l"="-32.518,-0.462"]
+"actions/setup-dotnet" ["l"="7.983,-45.655", "c"=544]
+"Tyrrrz/GitHubActionsTestLogger" ["l"="-32.133,-0.681"]
 "VerbalExpressions/CSharpVerbalExpressions" ["l"="-32.286,-0.657"]
-"scientistproject/Scientist.net" ["l"="-34.409,-1.078"]
-"antiufo/roslyn-linq-rewrite" ["l"="-32.18,-0.599"]
-"daveaglick/Scripty" ["l"="-32.263,-0.639"]
-"JimBobSquarePants/ImageProcessor" ["l"="-34.683,-1.244"]
-"TylerBrinkley/Enums.NET" ["l"="-34.535,-0.943"]
-"Topshelf/Topshelf" ["l"="-34.459,-1.252"]
-"jason-roberts/FeatureToggle" ["l"="-34.249,-0.962"]
-"config-r/config-r" ["l"="-32.286,-0.735"]
-"tonerdo/readline" ["l"="-34.696,-0.915"]
-"gsscoder/commandline" ["l"="-34.64,-1.021"]
-"sprache/Sprache" ["l"="-34.582,-0.99"]
-"dotnet/corefxlab" ["l"="-32.27,-0.581"]
-"dotnet/codeformatter" ["l"="-32.35,-0.652"]
+"scientistproject/Scientist.net" ["l"="-34.409,-1.078", "c"=8]
+"JimBobSquarePants/ImageProcessor" ["l"="-34.683,-1.244", "c"=8]
+"TylerBrinkley/Enums.NET" ["l"="-34.535,-0.943", "c"=8]
+"Topshelf/Topshelf" ["l"="-34.459,-1.252", "c"=8]
+"jason-roberts/FeatureToggle" ["l"="-34.249,-0.962", "c"=8]
+"tonerdo/readline" ["l"="-34.696,-0.915", "c"=8]
+"gsscoder/commandline" ["l"="-34.64,-1.021", "c"=8]
+"sprache/Sprache" ["l"="-34.582,-0.99", "c"=8]
 "mikehadlow/AsmSpy" ["l"="-32.256,-0.603"]
-"damianh/LibLog" ["l"="-34.422,-1.064"]
+"damianh/LibLog" ["l"="-34.422,-1.064", "c"=8]
 "microsoft/dotnet-apiport" ["l"="-32.326,-0.568"]
+"ellson/MOTHBALLED-graphviz" ["l"="-4.017,-41.765", "c"=302]
+"AdaptiveConsulting/ReactiveTrader" ["l"="-36.573,1.156", "c"=137]
 "dotnet/razor" ["l"="-32.351,-0.43"]
-"microsoft/DacFx" ["l"="-47.11,8.263"]
+"microsoft/DacFx" ["l"="-47.11,8.263", "c"=841]
 "dotnet/announcements" ["l"="-32.353,-0.5"]
-"CoreWCF/CoreWCF" ["l"="-34.48,-1.172"]
-"microsoft/OpenAPI.NET" ["l"="-34.294,-1.067"]
+"microsoft/OpenAPI.NET" ["l"="-34.294,-1.067", "c"=8]
 "dotnet/dotnet" ["l"="-32.378,-0.429"]
-"vcsjones/AzureSignTool" ["l"="-32.384,-0.778"]
-"dotnet/sign" ["l"="-32.331,-0.615"]
 "novotnyllc/RSAKeyVaultProvider" ["l"="-32.412,-0.846"]
 "novotnyllc/NuGetKeyVaultSignTool" ["l"="-32.404,-0.83"]
 "microsoft/AzureKeyVaultExplorer" ["l"="-32.421,-0.87"]
+"zzzprojects/EntityFramework-Effort" ["l"="-1.167,1.675", "c"=1057]
+"GitTools/GitLink" ["l"="-32.168,-0.703"]
+"microsoft/artifacts-credprovider" ["l"="-45.819,7.032", "c"=144]
 "Metalnem/sharpfuzz" ["l"="-32.545,-0.246"]
 "Metalnem/libfuzzer-dotnet" ["l"="-32.565,-0.223"]
 "jakobbotsch/Fuzzlyn" ["l"="-32.482,-0.318"]
 "MiloszKrajewski/K4os.Compression.LZ4" ["l"="-32.045,-0.476"]
 "MiloszKrajewski/lz4net" ["l"="-32.032,-0.51"]
-"Cysharp/MasterMemory" ["l"="-26.81,-32.71"]
-"adamhathcock/sharpcompress" ["l"="-34.796,-1.166"]
-"MessagePack-CSharp/MessagePack-CSharp" ["l"="-26.883,-32.736"]
+"Cysharp/MasterMemory" ["l"="-26.81,-32.71", "c"=66]
+"adamhathcock/sharpcompress" ["l"="-34.796,-1.166", "c"=8]
+"MessagePack-CSharp/MessagePack-CSharp" ["l"="-26.883,-32.736", "c"=66]
 "uranium62/xxHash" ["l"="-31.99,-0.31"]
 "jtmueller/Collections.Pooled" ["l"="-32.025,-0.486"]
-"Cysharp/ZString" ["l"="-26.82,-32.756"]
+"Cysharp/ZString" ["l"="-26.82,-32.756", "c"=66]
 "jamescourtney/FlatSharp" ["l"="-31.956,-0.501"]
-"Cysharp/ZLogger" ["l"="-26.775,-32.692"]
+"Cysharp/ZLogger" ["l"="-26.775,-32.692", "c"=66]
+"valit-stack/Valit" ["l"="-34.582,-0.765", "c"=8]
+"mariusschulz/ExtraLINQ" ["l"="-32.195,-0.983"]
 "KirillOsenkov/SourceBrowser" ["l"="-32.302,-0.581"]
-"NuGetPackageExplorer/NuGetPackageExplorer" ["l"="-34.659,-1.244"]
-"novotnyllc/MSBuildSdkExtras" ["l"="-37.499,1.147"]
-"ashmind/SharpLab" ["l"="-34.678,-1.06"]
-"haf/expecto" ["l"="-36.045,-3.102"]
+"NuGetPackageExplorer/NuGetPackageExplorer" ["l"="-34.659,-1.244", "c"=8]
+"novotnyllc/MSBuildSdkExtras" ["l"="-37.499,1.147", "c"=435]
+"haf/expecto" ["l"="-36.045,-3.102", "c"=364]
 "dotnet/nuget-trends" ["l"="-32.336,-0.401"]
 "buchizo/ClaudiaIDE" ["l"="-32.647,-0.703"]
 "Meowtrix/MoeIDE" ["l"="-32.704,-0.724"]
@@ -3353,9 +4065,9 @@ digraph G {
 "madskristensen/FileIcons" ["l"="-32.638,-0.737"]
 "VsixCommunity/Community.VisualStudio.Toolkit" ["l"="-32.507,-0.643"]
 "madskristensen/MarkdownEditor" ["l"="-32.56,-0.727"]
-"codecadwallader/codemaid" ["l"="-34.734,-1.04"]
+"codecadwallader/codemaid" ["l"="-34.734,-1.04", "c"=8]
 "nessos/LinqOptimizer" ["l"="-32.065,-0.603"]
-"nessos/Streams" ["l"="-36.008,-3.005"]
+"nessos/Streams" ["l"="-36.008,-3.005", "c"=364]
 "nessos/GpuLinq" ["l"="-31.974,-0.674"]
 "docopt/docopt.net" ["l"="-31.817,-0.405"]
 "Nyrest/FastGenericNew" ["l"="-31.889,-0.447"]
@@ -3366,40 +4078,40 @@ digraph G {
 "aelij/IgnoresAccessChecksToGenerator" ["l"="-32.234,-0.532"]
 "terrajobst/minsk" ["l"="-32.258,-0.466"]
 "terrajobst/git-istage" ["l"="-32.282,-0.347"]
-"MichalStrehovsky/zerosharp" ["l"="-34.919,-1.003"]
-"GitTools/GitReleaseManager" ["l"="-32.178,-0.752"]
-"GitTools/GitVersion" ["l"="-34.683,-0.983"]
-"xoofx/dotnet-releaser" ["l"="-34.694,-0.741"]
-"ZiggyCreatures/FusionCache" ["l"="-34.415,-0.851"]
+"xoofx/dotnet-releaser" ["l"="-34.694,-0.741", "c"=8]
+"ZiggyCreatures/FusionCache" ["l"="-34.415,-0.851", "c"=8]
+"machine/machine.specifications" ["l"="-34.364,-0.952", "c"=8]
 "tomasr/viasfora" ["l"="-32.493,-0.79"]
 "IllyaTheHath/viasfora" ["l"="-32.523,-0.827"]
-"mike-ward/VSColorOutput" ["l"="-32.499,-0.768"]
 "MykolaBalakin/VSOutputEnhancer" ["l"="-32.467,-0.779"]
 "microsoft/VS-PPT" ["l"="-32.432,-0.688"]
 "madskristensen/RainbowBraces" ["l"="-32.561,-0.86"]
 "laurentkempe/GitDiffMargin" ["l"="-32.513,-0.751"]
 "madskristensen/EditorConfigLanguage" ["l"="-32.53,-0.714"]
-"dotnetprojects/WpfToolkit" ["l"="-36.488,1.15"]
+"dotnetprojects/WpfToolkit" ["l"="-36.488,1.15", "c"=137]
 "StefanKert/BuildVision" ["l"="-32.425,-0.817"]
 "EWSoftware/VSSpellChecker" ["l"="-32.47,-0.735"]
 "DustinCampbell/CSharpEssentials" ["l"="-32.378,-0.727"]
+"servicetitan/Stl.Fusion" ["l"="-36.691,-1.061", "c"=260]
 "IronyProject/Irony" ["l"="-31.98,-0.622"]
 "daxnet/irony" ["l"="-31.915,-0.64"]
 "b3b00/csly" ["l"="-32.007,-0.61"]
-"sebastienros/parlot" ["l"="-32.034,-0.591"]
 "benjamin-hodgson/Pidgin" ["l"="-32.061,-0.575"]
 "picoe/Eto.Parse" ["l"="-31.946,-0.639"]
+"shibayan/Sharprompt" ["l"="-34.693,-0.865", "c"=8]
 "chrisnas/ClrEvents" ["l"="-32.103,-0.571"]
 "Tornhoof/SpanJson" ["l"="-31.985,-0.453"]
 "fiigii/PacketTracer" ["l"="-31.985,-0.399"]
 "Vect0rZ/Quic.NET" ["l"="-31.876,-0.513"]
 "seanmcelroy/QuicDotNet" ["l"="-31.83,-0.531"]
-"icerpc/icerpc-csharp" ["l"="-35.199,-0.688"]
-"limpo1989/kcp-csharp" ["l"="-24.789,-33.069"]
+"icerpc/icerpc-csharp" ["l"="-35.199,-0.688", "c"=8]
+"limpo1989/kcp-csharp" ["l"="-24.789,-33.069", "c"=82]
 "Cysharp/KcpTransport" ["l"="-31.882,-0.474"]
-"MirrorNetworking/kcp2k" ["l"="-24.768,-33.04"]
+"MirrorNetworking/kcp2k" ["l"="-24.768,-33.04", "c"=82]
+"nucypher/nucypher" ["l"="-21.181,10.681", "c"=22]
+"bilal-fazlani/commanddotnet" ["l"="-34.72,-0.857", "c"=8]
+"Azure/Azurite" ["l"="-45.012,6.084", "c"=957]
 "CopyText/TextCopy" ["l"="-31.949,-0.867"]
-"thomasgalliker/ObjectDumper" ["l"="-31.991,-0.822"]
 "mgravell/Pipelines.Sockets.Unofficial" ["l"="-32.096,-0.43"]
 "davidfowl/TcpEcho" ["l"="-32.133,-0.391"]
 "mgravell/simplsockets" ["l"="-32.072,-0.371"]
@@ -3411,91 +4123,110 @@ digraph G {
 "davidfowl/MultiProtocolAspNetCore" ["l"="-32.164,-0.379"]
 "Alois-xx/MemAnalyzer" ["l"="-32.141,-0.454"]
 "Cysharp/PrivateProxy" ["l"="-31.917,-0.483"]
-"TurnerSoftware/CacheTower" ["l"="-34.396,-0.768"]
-"nxrighthere/ENet-CSharp" ["l"="-27.097,-32.69"]
+"TurnerSoftware/CacheTower" ["l"="-34.396,-0.768", "c"=8]
+"nxrighthere/ENet-CSharp" ["l"="-27.097,-32.69", "c"=66]
 "justinstenning/SharedMemory" ["l"="-31.798,-0.51"]
-"microsoft/CodeContracts" ["l"="-32.323,-0.65"]
-"BlueRaja/High-Speed-Priority-Queue-for-C-Sharp" ["l"="-26.962,-32.872"]
+"BlueRaja/High-Speed-Priority-Queue-for-C-Sharp" ["l"="-26.962,-32.872", "c"=66]
 "SolutionsDesign/Algorithmia" ["l"="-32.188,-0.877"]
-"neuecc/ZeroFormatter" ["l"="-26.895,-32.781"]
-"morelinq/MoreLINQ" ["l"="-34.54,-1.038"]
-"disruptor-net/Disruptor-net" ["l"="-34.367,-1.126"]
-"jbevain/cecil" ["l"="-34.84,-1.257"]
-"GitTools/GitLink" ["l"="-32.168,-0.703"]
+"neuecc/ZeroFormatter" ["l"="-26.895,-32.781", "c"=66]
+"morelinq/MoreLINQ" ["l"="-34.54,-1.038", "c"=8]
+"disruptor-net/Disruptor-net" ["l"="-34.367,-1.126", "c"=8]
+"jbevain/cecil" ["l"="-34.84,-1.257", "c"=8]
 "ctaggart/SourceLink" ["l"="-32.136,-0.765"]
 "GitTools/GitReleaseNotes" ["l"="-32.158,-0.768"]
-"davidfowl/Channels" ["l"="-32.14,-0.484"]
 "asynkron/Wire" ["l"="-32.127,-0.605"]
-"etishor/Metrics.NET" ["l"="-34.33,-1.215"]
-"tenor/RestBus" ["l"="-34.206,-1.162"]
+"etishor/Metrics.NET" ["l"="-34.33,-1.215", "c"=8]
+"tenor/RestBus" ["l"="-34.206,-1.162", "c"=8]
+"connamara/quickfixn" ["l"="-10.479,12.809", "c"=265]
 "SoftUni/Programming-Basics-Book-CSharp-EN" ["l"="-32.272,-1.583"]
 "SoftUni/Programming-Basics-Book-JS-BG" ["l"="-32.303,-1.594"]
+"polterguy/magic" ["l"="16.144,-9.555", "c"=198]
 "sebastienros/memoryleak" ["l"="-32.192,-0.377"]
 "bartoszlenar/Validot" ["l"="-32.109,-0.327"]
+"nbarbettini/little-aspnetcore-book" ["l"="-34.059,-1.217", "c"=8]
 "microsoft/vs-mef" ["l"="-32.397,-0.586"]
-"3F/MvsSln" ["l"="-34.783,-0.273"]
+"3F/MvsSln" ["l"="-34.783,-0.273", "c"=8]
 "microsoft/slow-cheetah" ["l"="-32.537,-0.554"]
-"belav/csharpier" ["l"="-34.51,-0.728"]
-"dotnet/tye" ["l"="-34.372,-1.103"]
-"dotnet-outdated/dotnet-outdated" ["l"="-34.484,-0.755"]
-"khellang/Scrutor" ["l"="-34.449,-0.966"]
+"belav/csharpier" ["l"="-34.51,-0.728", "c"=8]
+"dotnet/tye" ["l"="-34.372,-1.103", "c"=8]
+"khellang/Scrutor" ["l"="-34.449,-0.966", "c"=8]
+"StephenCleary/Comparers" ["l"="-34.588,-0.69", "c"=8]
 "Nihlus/AdvancedDLSupport" ["l"="-32.061,-0.514"]
-"AmmyUI/AmmyUI" ["l"="-35.44,-1.523"]
-"tonerdo/pose" ["l"="-34.647,-0.958"]
-"anakic/Jot" ["l"="-36.563,1.204"]
+"AmmyUI/AmmyUI" ["l"="-35.44,-1.523", "c"=8]
+"tonerdo/pose" ["l"="-34.647,-0.958", "c"=8]
+"anakic/Jot" ["l"="-36.563,1.204", "c"=137]
 "Firwood-Software/AdvancedCSharpForLowLevelProgramming" ["l"="-31.985,-0.498"]
-"prasannavl/WinApi" ["l"="-36.596,1.19"]
-"SharpGenTools/SharpGenTools" ["l"="-33.05,-3.508"]
+"prasannavl/WinApi" ["l"="-36.596,1.19", "c"=137]
+"SharpGenTools/SharpGenTools" ["l"="-33.05,-3.508", "c"=293]
+"SonarSource/sonarlint-intellij" ["l"="-1.901,11.946", "c"=15]
+"microsoft/Trill" ["l"="-34.653,-1.577", "c"=8]
 "Polly-Contrib/Polly.Contrib.AzureFunctions.CircuitBreaker" ["l"="-32.418,-0.189"]
 "App-vNext/Polly.Extensions.Http" ["l"="-32.419,-0.215"]
+"cuteant/SpanNetty" ["l"="-32.586,0.949", "c"=106]
+"helios-io/helios" ["l"="-34.352,-1.224", "c"=8]
+"elastic/apm-agent-dotnet" ["l"="-34.52,-1.069", "c"=8]
+"RicoSuter/DNT" ["l"="-34.789,-0.324", "c"=8]
 "bitfaster/BitFaster.Caching" ["l"="-32.012,-0.47"]
-"Cysharp/ObservableCollections" ["l"="-26.742,-32.687"]
-"InCerryGit/FasterKvCache" ["l"="-32.465,0.951"]
-"Cysharp/NativeMemoryArray" ["l"="-26.69,-32.624"]
+"Cysharp/ObservableCollections" ["l"="-26.742,-32.687", "c"=66]
+"InCerryGit/FasterKvCache" ["l"="-32.465,0.951", "c"=106]
+"Cysharp/NativeMemoryArray" ["l"="-26.69,-32.624", "c"=66]
 "cathei/LinqGen" ["l"="-31.927,-0.437"]
 "NetFabric/LinqBenchmarks" ["l"="-32.011,-0.432"]
 "asc-community/HonkPerf.NET" ["l"="-31.953,-0.426"]
 "VictorNicollet/NoAlloq" ["l"="-32.046,-0.453"]
 "Cysharp/Utf8StreamReader" ["l"="-31.934,-0.479"]
+"chjj/bns" ["l"="15.017,-8.359", "c"=555]
+"pinheadmz/hs-anyone" ["l"="-32.674,-1.187"]
 "wy/namebase-exchange-python" ["l"="-32.619,-1.241"]
 "namebasehq/exchange-api" ["l"="-32.632,-1.251"]
 "namebasehq/handshake-oidc" ["l"="-32.649,-1.235"]
-"SQLStreamStore/SQLStreamStore" ["l"="-34.199,-2.961"]
-"nuke-build/nuke" ["l"="-34.564,-0.904"]
-"JasperFx/marten" ["l"="-34.364,-0.977"]
-"JasperFx/wolverine" ["l"="-34.375,-0.829"]
+"SQLStreamStore/SQLStreamStore" ["l"="-34.199,-2.961", "c"=249]
+"nuke-build/nuke" ["l"="-34.564,-0.904", "c"=8]
+"JasperFx/marten" ["l"="-34.364,-0.977", "c"=8]
+"JasperFx/wolverine" ["l"="-34.375,-0.829", "c"=8]
+"sailro/Reflexil" ["l"="-43.605,-35.932", "c"=618]
+"telerik/JustDecompileEngine" ["l"="-32.364,-0.752"]
 "JetBrains/resharper-rider-samples" ["l"="-32.1,-0.164"]
 "JetBrains/resharper-rider-plugin" ["l"="-32.117,-0.246"]
 "JetBrains/resharper-devguide" ["l"="-32.106,-0.191"]
+"madskristensen/ShortcutExporter" ["l"="-33.912,-0.531", "c"=8]
 "config-r/config-r-samples" ["l"="-32.285,-0.778"]
 "danielwertheim/structurizer" ["l"="-32.297,-0.805"]
+"axle-h/Retro.Net" ["l"="-34.375,-1.043", "c"=8]
 "jefffhaynes/BinarySerializer" ["l"="-31.934,-0.524"]
 "force-net/DeepCloner" ["l"="-31.936,-0.687"]
-"DevrexLabs/memstate" ["l"="-35.07,-0.348"]
-"YairHalberstadt/stronginject" ["l"="-34.571,-0.739"]
-"xoofx/ultra" ["l"="-34.562,-0.76"]
+"DevrexLabs/memstate" ["l"="-35.07,-0.348", "c"=8]
+"YairHalberstadt/stronginject" ["l"="-34.571,-0.739", "c"=8]
+"xoofx/ultra" ["l"="-34.562,-0.76", "c"=8]
 "petabridge/Incrementalist" ["l"="-32.049,-0.694"]
 "devlooped/SmallSharp" ["l"="-32.01,-0.636"]
 "0xced/Chisel" ["l"="-32.076,-0.65"]
 "aspirant-project/aspirant" ["l"="-31.987,-0.731"]
-"davidfowl/Pubbie" ["l"="-47.184,6.695"]
+"Open-NET-Libraries/Open.ChannelExtensions" ["l"="-34.491,-0.692", "c"=8]
+"microsoft/ProcDump-for-Linux" ["l"="-42.693,-36.754", "c"=306]
+"davidfowl/Pubbie" ["l"="-47.184,6.695", "c"=144]
 "tmds/Tmds.Systemd" ["l"="-32.073,-0.352"]
 "unoplatform/Uno.CodeGen" ["l"="-32.231,-0.766"]
 "unoplatform/Uno.Core" ["l"="-32.225,-0.827"]
 "unoplatform/Uno.SourceGeneration" ["l"="-32.229,-0.737"]
+"malxau/yori" ["l"="-34.45,-0.915", "c"=8]
+"YoshihiroIto/JitPad" ["l"="-32.044,-0.3"]
+"goldshtn/minidumper" ["l"="-32.11,-0.642"]
+"CoreyKaylor/Lightning.NET" ["l"="-34.935,-0.446", "c"=8]
 "agnicore/nfx" ["l"="-32.027,-0.67"]
 "aumcode/nfx" ["l"="-32.063,-0.632"]
 "aumcode/nfx-demos" ["l"="-32.014,-0.661"]
 "azist/azos" ["l"="-32.012,-0.683"]
+"hhblaze/DBreeze" ["l"="-34.959,-0.527", "c"=8]
 "ssg/HashDepot" ["l"="-31.964,-0.242"]
 "aumcode/serbench" ["l"="-31.998,-0.661"]
 "allisterb/jemalloc.NET" ["l"="-32.112,-0.552"]
-"kevin-montrose/Sigil" ["l"="-34.453,-1.051"]
-"Singapore-Tech-Entrepreneurs/XComment.io" ["l"="-17.518,-9.316"]
+"kevin-montrose/Sigil" ["l"="-34.453,-1.051", "c"=8]
+"Singapore-Tech-Entrepreneurs/XComment.io" ["l"="-17.518,-9.316", "c"=1323]
 "AlbedoOrg/Albedo" ["l"="-32.13,-1.057"]
 "ashmind/ashmind-extensions" ["l"="-32.157,-1.016"]
 "JetBrains/rd" ["l"="-32.146,-0.358"]
-"JetBrains/resharper-fsharp" ["l"="-36.074,-3.114"]
+"JetBrains/resharper-fsharp" ["l"="-36.074,-3.114", "c"=364]
 "AndreyAkinshin/perfolizer" ["l"="-32.17,-0.456"]
 "sidristij/memory-pools" ["l"="-32.131,-0.293"]
 "maartenba/rider-content" ["l"="-32.146,-0.267"]
@@ -3507,14 +4238,16 @@ digraph G {
 "dotnet/source-build" ["l"="-32.469,-0.428"]
 "NuGet/NuGet.Client" ["l"="-32.436,-0.535"]
 "StackExchange/StackExchange.Metrics" ["l"="-32.181,-0.79"]
-"stark-lang/stark" ["l"="-31.919,-0.545"]
 "stark-lang/stark-old-experiment" ["l"="-31.881,-0.557"]
-"davidfowl/Todos" ["l"="-32.211,-0.351"]
+"praeclarum/Netjs" ["l"="-34.921,-1.343", "c"=8]
+"xen2/SharpLang" ["l"="-32.306,-0.782"]
 "dotnet/razor-compiler" ["l"="-32.377,-0.362"]
-"dotnet/Scaffolding" ["l"="-34.263,-1.585"]
+"dotnet/Scaffolding" ["l"="-34.263,-1.585", "c"=8]
 "handshake-org/hdns" ["l"="-32.677,-1.133"]
 "KirillOsenkov/QuickInfo" ["l"="-32.333,-0.78"]
 "KirillOsenkov/MetadataTools" ["l"="-32.34,-0.847"]
+"dotnet/AspNetDocs" ["l"="-34.3,-1.669", "c"=8]
+"pengweiqhca/Xunit.DependencyInjection" ["l"="-34.198,-0.483", "c"=8]
 "avelin/fmi-os" ["l"="-32.378,-1.704"]
 "ivo3123/DifferentialEquations" ["l"="-32.374,-1.634"]
 "Angeld55/Object-oriented_programming_FMI" ["l"="-32.333,-1.736"]
@@ -3524,8 +4257,9 @@ digraph G {
 "GeorgiTerziev02/Object-oriented_programming_FMI" ["l"="-32.389,-1.658"]
 "Angeld55/Math_courses_seminars_notes_and_tasks" ["l"="-32.323,-1.69"]
 "EliteLoser/DotNetVersionLister" ["l"="-32.463,-0.265"]
-"Dogwei/Swifter.Json" ["l"="-32.749,0.893"]
-"neuecc/Utf8Json" ["l"="-26.873,-32.685"]
+"DataDog/dd-trace-dotnet" ["l"="-34.574,-0.97", "c"=8]
+"caozhiyuan/ClrProfiler.Trace" ["l"="-31.998,-0.772"]
+"Dogwei/Swifter.Json" ["l"="-32.749,0.893", "c"=106]
 "Cysharp/Utf8StringInterpolation" ["l"="-31.937,-0.459"]
 "ufcpp/StringLiteralGenerator" ["l"="-31.916,-0.399"]
 "kkokosa/UpsilonGC" ["l"="-32.01,-0.554"]
@@ -3534,54 +4268,61 @@ digraph G {
 "kevingosse/windbg-extensions" ["l"="-32.086,-0.571"]
 "goldshtn/msos" ["l"="-32.143,-0.591"]
 "benaadams/Ben.StringIntern" ["l"="-32.089,-0.627"]
+"microsoft/workbooks" ["l"="-37.592,0.939", "c"=435]
 "dotnet/test-templates" ["l"="-32.496,-0.547"]
 "dotnet/linker" ["l"="-32.436,-0.474"]
+"kekyo/IL2C" ["l"="-35.457,-0.972", "c"=8]
 "jacqueskang/IpcServiceFramework" ["l"="-31.703,-0.51"]
 "UweKeim/ZetaIpc" ["l"="-31.637,-0.493"]
 "steamcore/TinyIpc" ["l"="-31.658,-0.545"]
 "RandomEngy/PipeMethodCalls" ["l"="-31.668,-0.503"]
 "cloudtoid/interprocess" ["l"="-31.713,-0.534"]
 "dotnet/CliCommandLineParser" ["l"="-32.571,-0.51"]
-"clairernovotny/DeterministicBuilds" ["l"="-37.533,1.208"]
+"clairernovotny/DeterministicBuilds" ["l"="-37.533,1.208", "c"=435]
+"dbforge/nUpdate" ["l"="-36.477,1.242", "c"=137]
 "ins0mniaque/ILSupport" ["l"="-32.038,-0.333"]
-"YoshihiroIto/JitPad" ["l"="-32.044,-0.3"]
 "ltrzesniewski/RazorBlade" ["l"="-32.019,-0.355"]
 "damageboy/VxSort" ["l"="-32.024,-0.306"]
+"bobvanderlinden/sharpfilesystem" ["l"="-53.542,9.752", "c"=19]
 "Angeld55/Data_structures_and_algorithms_FMI" ["l"="-32.306,-1.723"]
 "Angeld55/Introduction_to_programming_FMI" ["l"="-32.309,-1.763"]
 "stoychoX/Object-oriented-programming-FMI" ["l"="-32.33,-1.771"]
 "Justsvetoslavov/Object-oriented_programming_FMI" ["l"="-32.353,-1.768"]
-"NuGet/Home" ["l"="-34.65,-1.336"]
-"NuGet/NuGet.Server" ["l"="-34.636,-1.38"]
-"NuGet/NuGetGallery" ["l"="-34.568,-1.344"]
+"ligershark/side-waffle" ["l"="-34.045,-0.925", "c"=8]
+"madskristensen/ExtensibilityTools" ["l"="-32.484,-0.666"]
+"NuGet/Home" ["l"="-34.65,-1.336", "c"=8]
+"NuGet/NuGet.Server" ["l"="-34.636,-1.38", "c"=8]
+"NuGet/NuGetGallery" ["l"="-34.568,-1.344", "c"=8]
 "NuGet/NuGet2" ["l"="-32.578,-0.486"]
-"dotnet/msbuild" ["l"="-34.618,-1.493"]
+"dotnet/msbuild" ["l"="-34.618,-1.493", "c"=8]
 "kevin-montrose/LinqAF" ["l"="-31.997,-0.538"]
+"xoofx/Tomlyn" ["l"="-34.956,-0.69", "c"=8]
 "microsoft/CLRInstrumentationEngine" ["l"="-32.017,-0.756"]
 "microsoft/clr-samples" ["l"="-32.051,-0.731"]
-"caozhiyuan/ClrProfiler.Trace" ["l"="-31.998,-0.772"]
 "Astn/JSON-RPC.NET" ["l"="-31.981,-0.585"]
 "edjCase/JsonRpc" ["l"="-31.889,-0.612"]
 "CXuesong/JsonRpc.Standard" ["l"="-31.915,-0.6"]
 "microsoft/vs-streamjsonrpc" ["l"="-32.168,-0.544"]
-"ironcev/awesome-roslyn" ["l"="-32.265,-0.67"]
-"sharpenrocks/Sharpen" ["l"="-34.807,-0.911"]
 "Testura/Testura.Code" ["l"="-32.255,-0.744"]
-"alirezanet/Husky.Net" ["l"="-34.538,-0.685"]
-"cezarypiatek/MappingGenerator" ["l"="-34.503,-0.864"]
+"alirezanet/Husky.Net" ["l"="-34.538,-0.685", "c"=8]
+"Athari/CsConsoleFormat" ["l"="-34.745,-0.831", "c"=8]
 "YoshihiroIto/Biaui" ["l"="-32.012,-0.222"]
 "devpelux/fullcontrols" ["l"="-31.98,-0.13"]
-"GabrieleAsaro/Yeet-Emulator" ["l"="-43.43,-35.919"]
+"GabrieleAsaro/Yeet-Emulator" ["l"="-43.43,-35.919", "c"=618]
 "JamieDixon/GraphViz-C-Sharp-Wrapper" ["l"="-32.251,-0.943"]
 "VsixCommunity/ExtensibilityEssentials" ["l"="-32.541,-0.632"]
 "VsixCommunity/ExtensibilityTemplatePack" ["l"="-32.527,-0.626"]
 "madskristensen/VsctIntellisense" ["l"="-32.586,-0.639"]
 "matkoch/resharper-testlinker" ["l"="-32.102,-0.213"]
+"DragonSpit/HPCsharp" ["l"="-27.332,-33.199", "c"=66]
+"reactiveui/Pharmacist" ["l"="-36.154,2.389", "c"=615]
 "alexanderkozlenko/aspnetcore-request-decompression" ["l"="-31.705,-0.683"]
 "goldshtn/LiveStacks" ["l"="-32.105,-0.622"]
 "JakeGinnivan/GitReleaseNotes" ["l"="-32.134,-0.819"]
 "damageboy/vxsort-cpp" ["l"="-32.008,-0.267"]
 "dotnet/arcade-validation" ["l"="-32.518,-0.496"]
+"fsharp/fsharp-compiler-docs" ["l"="-36.062,-3.053", "c"=364]
+"dotnet/netcorecli-fsc" ["l"="-32.496,-0.365"]
 "dotnet/ml-api-docs" ["l"="-32.68,-0.398"]
 "dotnet/llvm-project" ["l"="-32.707,-0.388"]
 "dotnet/source-build-reference-packages" ["l"="-32.497,-0.453"]
@@ -3624,136 +4365,186 @@ digraph G {
 "UrkelLabs/rsd" ["l"="-32.643,-1.383"]
 "UrkelLabs/handshake-client" ["l"="-32.655,-1.404"]
 "UrkelLabs/nomenclate-rs" ["l"="-32.638,-1.406"]
-"aspnet/KestrelHttpServer" ["l"="-34.385,-1.468"]
-"dotnet/corert" ["l"="-34.72,-1.353"]
-"dotnet/llilc" ["l"="-32.3,-0.693"]
-"microsoft/FASTER" ["l"="-34.613,-1.388"]
-"icsharpcode/RefactoringEssentials" ["l"="-32.374,-0.693"]
-"Fody/Fody" ["l"="-34.7,-1.133"]
-"dotnet/wcf" ["l"="-34.507,-1.438"]
+"aspnet/KestrelHttpServer" ["l"="-34.385,-1.468", "c"=8]
+"dotnet/corert" ["l"="-34.72,-1.353", "c"=8]
+"microsoft/FluidFramework" ["l"="-3.919,-29.491", "c"=4]
+"OmniSharp/omnisharp-roslyn" ["l"="-34.958,-1.251", "c"=8]
+"madskristensen/WebEssentials2015" ["l"="-34.026,-0.765", "c"=8]
+"gluck/il-repack" ["l"="-34.805,-1.109", "c"=8]
+"Fody/Fody" ["l"="-34.7,-1.133", "c"=8]
+"dotnet/wcf" ["l"="-34.507,-1.438", "c"=8]
 "microsoft/dotnet-samples" ["l"="-32.204,-0.654"]
-"Tyrrrz/GitHubActionsTestLogger" ["l"="-32.133,-0.681"]
-"Tyrrrz/Gress" ["l"="-36.623,1.391"]
+"mspnp/performance-optimization" ["l"="-44.985,7.133", "c"=1079]
+"xin9le/FastEnum" ["l"="-26.718,-32.605", "c"=66]
+"aloneguid/parquet-dotnet" ["l"="-34.698,-0.643", "c"=8]
+"Tyrrrz/Gress" ["l"="-36.623,1.391", "c"=137]
 "Tyrrrz/MiniRazor" ["l"="-32.042,-0.617"]
-"SimonCropp/Polyfill" ["l"="-34.582,-0.602"]
-"xen2/SharpLang" ["l"="-32.306,-0.782"]
+"SimonCropp/Polyfill" ["l"="-34.582,-0.602", "c"=8]
+"dotnet-presentations/dotNETConf" ["l"="-36.522,-1.068", "c"=260]
 "ciplogic/CodeRefractor" ["l"="-32.309,-0.84"]
 "davidwengier/SourceGeneratorPlayground" ["l"="-32.598,-0.579"]
 "davidwengier/SourceGeneratorTemplate" ["l"="-32.551,-0.579"]
-"davidfowl/TodoApp" ["l"="-34.177,-0.933"]
-"jbogard/ContosoUniversityDotNetCore-Pages" ["l"="-34.134,-1.078"]
+"sveinungf/spreadcheetah" ["l"="-34.609,-0.661", "c"=8]
+"TomaszRewak/C-sharp-console-gui-framework" ["l"="-34.754,-0.901", "c"=8]
+"AaronRobinsonMSFT/DNNE" ["l"="-33.026,-3.596", "c"=293]
+"statiqdev/Statiq.Web" ["l"="-34.439,-1.085", "c"=8]
+"davidfowl/TodoApp" ["l"="-34.177,-0.933", "c"=8]
+"jbogard/ContosoUniversityDotNetCore-Pages" ["l"="-34.134,-1.078", "c"=8]
 "DamianEdwards/MinimalApiPlayground" ["l"="-32.231,-0.291"]
-"natemcmaster/LettuceEncrypt" ["l"="-34.416,-1.03"]
-"dodyg/practical-aspnetcore" ["l"="-34.151,-1.112"]
-"davidfowl/AspNetCoreDiagnosticScenarios" ["l"="-34.252,-1.086"]
-"dotnet-presentations/dotNETConf" ["l"="-36.522,-1.068"]
-"PragmaticFlow/NBomber" ["l"="-34.54,-0.816"]
-"aspnet/Benchmarks" ["l"="-34.343,-1.446"]
+"dodyg/practical-aspnetcore" ["l"="-34.151,-1.112", "c"=8]
+"davidfowl/AspNetCoreDiagnosticScenarios" ["l"="-34.252,-1.086", "c"=8]
+"git-tfs/git-tfs" ["l"="-34.615,-1.238", "c"=8]
+"microsoft/bond" ["l"="-34.601,-1.458", "c"=8]
+"PragmaticFlow/NBomber" ["l"="-34.54,-0.816", "c"=8]
+"aspnet/Benchmarks" ["l"="-34.343,-1.446", "c"=8]
 "szehetner/InliningAnalyzer" ["l"="-32.219,-0.69"]
+"dotnet-foundation/foundation" ["l"="-34.294,-1.703", "c"=8]
+"wishstudio/flinux" ["l"="22.685,-26.551", "c"=28]
+"microsoft/ApplicationInspector" ["l"="-34.568,-1.176", "c"=8]
 "bartoszlenar/CoreValidation" ["l"="-32.095,-0.283"]
+"JasperFx/jasper" ["l"="-34.347,-0.921", "c"=8]
+"dadhi/ImTools" ["l"="-32.046,-0.379"]
 "madskristensen/Tweakster" ["l"="-32.543,-0.694"]
 "loop8ack/ExtensionPackTools" ["l"="-32.562,-0.69"]
 "madskristensen/ToggleFeatures" ["l"="-32.589,-0.701"]
 "madskristensen/ShowTheShortcut" ["l"="-32.605,-0.686"]
 "HavenDV/H.Pipes" ["l"="-31.632,-0.544"]
 "HavenDV/H.Ipc" ["l"="-31.596,-0.535"]
+"neolithos/neolua" ["l"="-24.991,-33.369", "c"=82]
+"microsoft/VSLua" ["l"="-32.414,-0.744"]
+"madelson/MedallionShell" ["l"="-34.758,-0.606", "c"=8]
+"KirillOsenkov/XmlParser" ["l"="-32.392,-0.61"]
+"json-everything/json-everything" ["l"="-34.416,-0.755", "c"=8]
 "andy489/Software_Engineering_State_Exam" ["l"="-32.414,-1.724"]
 "andy489/Linux_Shell" ["l"="-32.408,-1.707"]
-"Suchiman/SerilogAnalyzer" ["l"="-34.871,-0.644"]
-"SteveDunn/Vogen" ["l"="-34.49,-0.734"]
-"TNG/ArchUnitNET" ["l"="-34.443,-0.795"]
+"Suchiman/SerilogAnalyzer" ["l"="-34.871,-0.644", "c"=8]
+"SteveDunn/Vogen" ["l"="-34.49,-0.734", "c"=8]
+"TNG/ArchUnitNET" ["l"="-34.443,-0.795", "c"=8]
 "spectresystems/spectre.io" ["l"="-32.069,-0.751"]
-"microsoft/scalar" ["l"="-32.411,-0.436"]
+"frhagn/Typewriter" ["l"="-34.523,-1.296", "c"=8]
 "microsoft/git" ["l"="-32.504,-0.403"]
-"microsoft/VFSForGit" ["l"="-34.622,-1.577"]
-"github/git-sizer" ["l"="-13.954,-6.816"]
-"josh-project/josh" ["l"="-18.995,-20.117"]
-"facebook/sapling" ["l"="-9.717,-6.151"]
-"Autodesk/hubble" ["l"="7.904,-45.343"]
-"buildfarm/buildfarm" ["l"="1.211,-7.08"]
-"NetTopologySuite/NetTopologySuite" ["l"="37.433,23.772"]
-"dotnet/buildtools" ["l"="-34.249,-1.816"]
-"scriptcs/scriptcs" ["l"="-34.708,-1.215"]
-"cake-build/cake" ["l"="-34.626,-1.115"]
-"justinstenning/Direct3DHook" ["l"="-43.7,-36.084"]
+"microsoft/VFSForGit" ["l"="-34.622,-1.577", "c"=8]
+"josh-project/josh" ["l"="-18.995,-20.117", "c"=132]
+"facebook/sapling" ["l"="-9.717,-6.151", "c"=5]
+"Autodesk/hubble" ["l"="7.904,-45.343", "c"=544]
+"buildfarm/buildfarm" ["l"="1.211,-7.08", "c"=721]
+"NetTopologySuite/NetTopologySuite" ["l"="37.433,23.772", "c"=199]
+"StyleCop/StyleCop" ["l"="-34.688,-1.198", "c"=8]
+"petabridge/akka-bootcamp" ["l"="-34.304,-1.173", "c"=8]
+"tmds/Tmds.Ssh" ["l"="-34.555,-0.226", "c"=8]
+"eiriktsarpalis/PolyType" ["l"="-32.012,-0.588"]
+"KorzhCom/EasyData" ["l"="-34.28,-0.707", "c"=8]
+"microsoft/VSSDK-Extensibility-Samples" ["l"="-32.425,-0.632"]
+"dotnet/buildtools" ["l"="-34.249,-1.816", "c"=8]
+"scriptcs/scriptcs" ["l"="-34.708,-1.215", "c"=8]
+"cake-build/cake" ["l"="-34.626,-1.115", "c"=8]
+"justinstenning/Direct3DHook" ["l"="-43.7,-36.084", "c"=618]
+"bytecodealliance/wasmtime-dotnet" ["l"="-35.005,-1.037", "c"=8]
+"EWSoftware/SHFB" ["l"="-34.722,-1.274", "c"=8]
+"betwixt-labs/bebop" ["l"="-36.866,-1.182", "c"=260]
+"FortuneN/FineCodeCoverage" ["l"="-34.701,-0.894", "c"=8]
+"madushans/DependenSee" ["l"="-32.088,-0.732"]
 "Tyrrrz/Contextual" ["l"="-31.964,-0.653"]
-"Sergio0694/PolySharp" ["l"="-34.549,-0.743"]
+"adoconnection/RazorEngineCore" ["l"="-34.401,-0.967", "c"=8]
+"RicoSuter/NJsonSchema" ["l"="-34.409,-0.95", "c"=8]
+"Sergio0694/PolySharp" ["l"="-34.549,-0.743", "c"=8]
 "Wintellect/Wintellect.Analyzers" ["l"="-32.391,-0.758"]
-"OpenCover/opencover" ["l"="-34.657,-1.004"]
 "mikegoatly/lifti" ["l"="-31.971,-0.554"]
 "kreeben/resin" ["l"="-32.035,-0.561"]
 "bbougot/FluentDispatch" ["l"="-31.976,-0.53"]
-"Tyrrrz/CliFx" ["l"="-34.667,-0.922"]
-"sebastienros/yessql" ["l"="-34.277,-1.027"]
+"sebastienros/yessql" ["l"="-34.277,-1.027", "c"=8]
+"nager/Nager.Date" ["l"="-34.52,-0.906", "c"=8]
 "adospace/fluent-ui-xaml" ["l"="-31.956,-0.059"]
 "ghost1372/ModernWpf" ["l"="-31.954,-0.021"]
 "manuelroemer/Celestial.UIToolkit" ["l"="-31.933,-0.035"]
 "tmds/Tmds.LinuxAsync" ["l"="-31.883,-0.294"]
+"microsoft/RockPaperScissorsLizardSpock" ["l"="-36.612,-1.959", "c"=113]
+"pact-foundation/pact-net" ["l"="-34.447,-0.889", "c"=8]
+"danielwertheim/Ensure.That" ["l"="-34.476,-0.633", "c"=8]
+"open-telemetry/opentelemetry-dotnet-contrib" ["l"="-34.46,-0.953", "c"=8]
 "xoofx/kalk" ["l"="-31.827,-0.578"]
 "Jmgr/actiona" ["l"="-31.749,-0.12"]
 "RMPR/atbswp" ["l"="-31.787,-0.15"]
 "squaredinfinity/VSCommands" ["l"="-32.558,-0.813"]
-"dotnet/try-convert" ["l"="-32.306,-0.521"]
-"dotnet/pinvoke" ["l"="-36.621,1.139"]
-"MarcosMeli/FileHelpers" ["l"="-34.452,-1.145"]
+"dotnet/pinvoke" ["l"="-36.621,1.139", "c"=137]
+"MarcosMeli/FileHelpers" ["l"="-34.452,-1.145", "c"=8]
 "chjj/liburkel" ["l"="-32.673,-1.109"]
+"OData/odata.net" ["l"="-33.853,-1.625", "c"=8]
 "lkwate/neural-question-generation" ["l"="-31.783,-0.109"]
 "repeats/Repeat" ["l"="-31.841,-0.212"]
-"koculu/ZoneTree" ["l"="-34.941,-0.511"]
-"Open-NET-Libraries/Open.ChannelExtensions" ["l"="-34.491,-0.692"]
-"nietras/Sep" ["l"="-34.527,-0.711"]
+"seesharper/LightInject" ["l"="-34.626,-0.809", "c"=8]
+"AngryCarrot789/WPFDarkTheme" ["l"="-36.402,1.124", "c"=137]
+"koculu/ZoneTree" ["l"="-34.941,-0.511", "c"=8]
+"nietras/Sep" ["l"="-34.527,-0.711", "c"=8]
 "anothersoft/hns-bridge" ["l"="-32.684,-1.203"]
-"pinheadmz/hs-anyone" ["l"="-32.674,-1.187"]
 "befranz/hshelp" ["l"="-32.646,-1.22"]
 "imperviousinc/handover" ["l"="-32.701,-1.209"]
 "handshake-org/hs-names" ["l"="-32.664,-1.234"]
 "madskristensen/TrailingWhitespace" ["l"="-32.577,-0.768"]
 "Therena/OpenFolderExtension" ["l"="-32.601,-0.792"]
-"leon-thomm/Ryven" ["l"="-3.539,-41.794"]
+"davidwhitney/CoreBoy" ["l"="-12.389,1.723", "c"=247]
+"leon-thomm/Ryven" ["l"="-3.539,-41.794", "c"=302]
 "ManimCommunity/manim-tweets" ["l"="-32.404,-1.146"]
-"google-deepmind/tree" ["l"="21.818,14.051"]
+"google-deepmind/tree" ["l"="21.818,14.051", "c"=267]
+"proudmonkey/AutoWrapper" ["l"="-34.216,-0.892", "c"=8]
+"DinoZ1729/Ray" ["l"="-24.556,-34.834", "c"=811]
+"bullhe4d/bigwatermelon" ["l"="-32.452,-1.316"]
+"mike-ward/Markdown-Edit" ["l"="-36.46,1.294", "c"=137]
+"alphaleonis/AlphaFS" ["l"="-36.696,1.219", "c"=137]
 "tkp1n/IoUring.Transport" ["l"="-31.845,-0.283"]
 "james-stevens/powerdns-webui" ["l"="-32.679,-1.258"]
 "dasMulli/data-builder-generator" ["l"="-31.729,-0.429"]
 "StefH/FluentBuilder" ["l"="-31.769,-0.436"]
 "pmrogala/Buildenator" ["l"="-31.696,-0.42"]
-"snatch-dev/Convey" ["l"="-34.062,-0.956"]
-"microsoft/Win2D-Samples" ["l"="-37.493,1.026"]
-"microsoft/Microsoft.Diagnostics.Tracing.Logging" ["l"="-45.076,7.074"]
-"microsoft/Windows-appsample-trafficapp" ["l"="-37.429,1.136"]
+"re-motion/Relinq" ["l"="-34.379,-0.763", "c"=8]
+"snatch-dev/Convey" ["l"="-34.062,-0.956", "c"=8]
+"Cysharp/ProcessX" ["l"="-26.738,-32.625", "c"=66]
+"microsoft/Win2D-Samples" ["l"="-37.493,1.026", "c"=435]
+"microsoft/Microsoft.Diagnostics.Tracing.Logging" ["l"="-45.076,7.074", "c"=1079]
+"microsoft/Windows-appsample-trafficapp" ["l"="-37.429,1.136", "c"=435]
 "goldshtn/etrace" ["l"="-32.114,-0.664"]
-"microsoft/Tx" ["l"="-34.545,-1.876"]
-"microsoft/DesktopBridgeToUWP-Samples" ["l"="-37.438,1.076"]
+"microsoft/Tx" ["l"="-34.545,-1.876", "c"=8]
+"microsoft/DesktopBridgeToUWP-Samples" ["l"="-37.438,1.076", "c"=435]
+"punker76/code-samples" ["l"="-36.531,1.037", "c"=137]
 "microsoft/llvm" ["l"="-32.646,-0.36"]
 "microsoft/clang" ["l"="-32.698,-0.317"]
 "microsoft/compiler-rt" ["l"="-32.711,-0.287"]
 "microsoft/clang-tools-extra" ["l"="-32.734,-0.311"]
 "microsoft/openssl" ["l"="-32.741,-0.283"]
+"microsoft/win32metadata" ["l"="-37.626,1.009", "c"=435]
 "HellBrick/AsyncCollections" ["l"="-32.168,-0.966"]
 "jehugaleahsa/ComparerExtensions" ["l"="-32.17,-0.996"]
 "MathosProject/Mathos-Project" ["l"="-32.17,-0.929"]
 "xunit/visualstudio.xunit" ["l"="-32.068,-0.909"]
 "xunit/assert.xunit" ["l"="-32.049,-0.935"]
 "xunit/resharper-xunit" ["l"="-32.035,-0.958"]
+"nlkl/Optional" ["l"="-34.494,-0.892", "c"=8]
+"curiosity-ai/catalyst" ["l"="-35.039,-2.999", "c"=1253]
 "dotnet/deployment-tools" ["l"="-32.56,-0.452"]
 "SergeyTeplyakov/StructRecordsGenerator" ["l"="-32.168,-0.335"]
 "chsienki/Kittitas" ["l"="-32.497,-0.591"]
 "VerifyTests/Verify.SourceGenerators" ["l"="-32.622,-0.578"]
 "pinheadmz/goshake" ["l"="-32.584,-1.203"]
-"nxrighthere/NetStack" ["l"="-27.16,-32.654"]
+"PistonDevelopers/VisualRust" ["l"="-9.993,-5.691", "c"=5]
+"nxrighthere/NetStack" ["l"="-27.16,-32.654", "c"=66]
+"rionmonster/Glyphfriend" ["l"="-33.951,-0.68", "c"=8]
+"subins2000/p2pt" ["l"="-13.68,-4.768", "c"=86]
+"RangerMauve/mutable-webtorrent" ["l"="-32.728,-1.271"]
+"Cysharp/LogicLooper" ["l"="-26.667,-32.579", "c"=66]
 "SLaks/VSEmbed" ["l"="-32.517,-0.571"]
 "jaredpar/EditorUtils" ["l"="-32.569,-0.559"]
+"dotnet/apireviews" ["l"="-34.269,-1.849", "c"=8]
 "NetFabric/NetFabric.Numerics" ["l"="-31.959,-0.396"]
 "YairHalberstadt/SpanLinq" ["l"="-32.024,-0.386"]
-"GitTools/actions" ["l"="-32.161,-0.822"]
 "madskristensen/AddAnyFile" ["l"="-32.592,-0.735"]
-"madskristensen/OpenCommandLine" ["l"="-33.975,-0.647"]
-"madskristensen/CommandTaskRunner" ["l"="-33.998,-0.613"]
+"madskristensen/OpenCommandLine" ["l"="-33.975,-0.647", "c"=8]
+"madskristensen/CommandTaskRunner" ["l"="-33.998,-0.613", "c"=8]
 "DustinCampbell/RoslynNUnitLight" ["l"="-32.399,-0.803"]
 "BoyanVD/LogicProgramming-2022-2023" ["l"="-32.37,-1.448"]
+"manuelroemer/Nullable" ["l"="-34.674,-0.641", "c"=8]
+"tunnelvisionlabs/ReferenceAssemblyAnnotator" ["l"="-32.122,-0.717"]
 "lowleveldesign/debug-recipes" ["l"="-32.18,-0.575"]
 "Dynatrace/superdump" ["l"="-32.161,-0.566"]
-"mariusschulz/ExtraLINQ" ["l"="-32.195,-0.983"]
 "thomaslevesque/Linq.Extras" ["l"="-32.209,-1.04"]
 "TommasoScalici/MathExtensions" ["l"="-32.192,-1.017"]
 "aloisdg/awesome-linq" ["l"="-32.221,-0.864"]
@@ -3768,98 +4559,109 @@ digraph G {
 "hackman/netsec2" ["l"="-32.255,-1.542"]
 "pinheadmz/holdmyhand" ["l"="-32.577,-1.217"]
 "Tikquuss/meta_XLM" ["l"="-31.777,-0.087"]
-"microsoft/GraphEngine" ["l"="-34.653,-1.544"]
-"tgjones/gemini" ["l"="-36.397,1.088"]
-"icsharpcode/AvalonEdit" ["l"="-36.436,1.112"]
-"wieslawsoltes/Core2D" ["l"="-36.124,2.575"]
-"mmanela/diffplex" ["l"="-36.441,1.202"]
-"telerik/JustDecompileEngine" ["l"="-32.364,-0.752"]
+"markjprice/cs10dotnet6" ["l"="-33.74,-0.997", "c"=8]
+"microsoft/GraphEngine" ["l"="-34.653,-1.544", "c"=8]
+"tgjones/gemini" ["l"="-36.397,1.088", "c"=137]
+"icsharpcode/AvalonEdit" ["l"="-36.436,1.112", "c"=137]
+"wieslawsoltes/Core2D" ["l"="-36.124,2.575", "c"=615]
+"mmanela/diffplex" ["l"="-36.441,1.202", "c"=137]
+"aspnet/Announcements" ["l"="-34.311,-1.408", "c"=8]
+"StackExchange/NetGain" ["l"="-34.374,-1.193", "c"=8]
+"NonFactors/AspNetCore.Grid" ["l"="-33.43,-1.533", "c"=8]
+"microsoft/TouchDevelop" ["l"="22.457,-26.658", "c"=28]
 "telerik/JustAssembly" ["l"="-32.371,-0.854"]
 "telerik/justdecompile-plugins" ["l"="-32.382,-0.822"]
-"sailro/Reflexil" ["l"="-43.605,-35.932"]
-"0xd4d/dnlib" ["l"="-43.589,-35.915"]
+"0xd4d/dnlib" ["l"="-43.589,-35.915", "c"=618]
 "icsharpcode/NRefactory" ["l"="-32.414,-0.785"]
-"de4dot/de4dot" ["l"="-43.643,-35.888"]
-"MiniProfiler/dotnet" ["l"="-34.423,-1.214"]
-"OpenLiveWriter/OpenLiveWriter" ["l"="-34.493,-1.411"]
-"VerifyTests/Verify" ["l"="-34.487,-0.827"]
-"jbogard/Respawn" ["l"="-34.406,-0.897"]
-"TestableIO/System.IO.Abstractions" ["l"="-34.567,-0.855"]
+"de4dot/de4dot" ["l"="-43.643,-35.888", "c"=618]
+"MiniProfiler/dotnet" ["l"="-34.423,-1.214", "c"=8]
+"OpenLiveWriter/OpenLiveWriter" ["l"="-34.493,-1.411", "c"=8]
+"VerifyTests/Verify" ["l"="-34.487,-0.827", "c"=8]
+"jbogard/Respawn" ["l"="-34.406,-0.897", "c"=8]
+"TestableIO/System.IO.Abstractions" ["l"="-34.567,-0.855", "c"=8]
+"clowd/Clowd.Squirrel" ["l"="-36.245,2.412", "c"=615]
+"HavenDV/DependencyPropertyGenerator" ["l"="-31.702,-0.35"]
+"alugili/CSharp-9-CheatSheet" ["l"="-34.091,-3.417", "c"=249]
+"sdushantha/wifi-password" ["l"="-13.394,-6.249", "c"=86]
+"DevTeam/Pure.DI" ["l"="-34.585,-0.725", "c"=8]
+"Tyrrrz/DotnetRuntimeBootstrapper" ["l"="-36.285,2.437", "c"=615]
+"danielpalme/IocPerformance" ["l"="-34.605,-0.829", "c"=8]
 "dotnet/systemweb-adapters" ["l"="-32.355,-0.306"]
-"CommunityToolkit/dotnet" ["l"="-36.682,0.959"]
-"Redth/dotnet-maui-check" ["l"="-37.038,-2.136"]
-"dotnet/LLVMSharp" ["l"="-33.012,-3.554"]
-"aspnet/dnx" ["l"="-34.287,-1.574"]
-"sq/JSIL" ["l"="-34.91,-1.371"]
-"dotnet/coreclr" ["l"="-34.554,-1.568"]
-"bridgedotnet/Bridge" ["l"="-34.827,-1.305"]
-"NETMF/netmf-interpreter" ["l"="-35.374,-1.343"]
+"CommunityToolkit/dotnet" ["l"="-36.682,0.959", "c"=137]
+"Redth/dotnet-maui-check" ["l"="-37.038,-2.136", "c"=113]
+"MicrosoftDocs/Virtualization-Documentation" ["l"="-48.124,7.75", "c"=311]
+"dotnet/LLVMSharp" ["l"="-33.012,-3.554", "c"=293]
+"dotnet/coreclr" ["l"="-34.554,-1.568", "c"=8]
+"NETMF/netmf-interpreter" ["l"="-35.374,-1.343", "c"=8]
 "SonarSource/sonaranalyzer-dotnet" ["l"="-32.425,-0.727"]
 "SonarSource/sonar-.net-documentation" ["l"="-32.428,-0.762"]
-"SonarSource/sonar-scanner-msbuild" ["l"="-32.439,-0.746"]
-"microsoft/MIEngine" ["l"="-32.38,-0.644"]
 "microsoft/ConcordExtensibilitySamples" ["l"="-32.457,-0.636"]
-"microsoft/microsoft-pdb" ["l"="-42.857,-35.105"]
+"microsoft/microsoft-pdb" ["l"="-42.857,-35.105", "c"=40]
 "microsoft/VSDebugAdapterHost" ["l"="-32.457,-0.698"]
-"microsoft/VSSDK-Extensibility-Samples" ["l"="-32.425,-0.632"]
-"Samsung/netcoredbg" ["l"="-35.183,-1.207"]
-"microsoft/VSLua" ["l"="-32.414,-0.744"]
-"chrisdunelm/DotNetAnywhere" ["l"="-35.057,-1.228"]
+"chrisdunelm/DotNetAnywhere" ["l"="-35.057,-1.228", "c"=8]
 "microsoft/extendvs" ["l"="-32.457,-0.65"]
+"wesdoyle/design-patterns-explained-with-food" ["l"="-34.155,-0.99", "c"=8]
 "canton7/PropertyChanged.SourceGenerator" ["l"="-31.659,-0.328"]
-"HavenDV/DependencyPropertyGenerator" ["l"="-31.702,-0.35"]
+"sdrapkin/SecurityDriven.Inferno" ["l"="-34.412,-0.572", "c"=8]
+"tallesl/net-libraries-that-make-your-life-easier" ["l"="-34.406,-1.047", "c"=8]
 "DamianEdwards/MinimalApis.Extensions" ["l"="-32.239,-0.27"]
-"anuraj/MinimalApi" ["l"="-34.421,-3.374"]
+"anuraj/MinimalApi" ["l"="-34.421,-3.374", "c"=249]
 "DamianEdwards/MiniValidation" ["l"="-32.245,-0.239"]
 "martincostello/dotnet-minimal-api-integration-testing" ["l"="-32.217,-0.243"]
 "okyrylchuk/dotnet6_features" ["l"="-32.263,-0.263"]
-"DamianEdwards/TagHelperPack" ["l"="-32.228,-0.206"]
-"ardalis/WebApiBestPractices" ["l"="-34.406,-3.149"]
-"ardalis/Result" ["l"="-34.297,-0.857"]
-"dotnet/aspire-samples" ["l"="-44.09,6.311"]
-"davidfowl/aspire-ai-chat-demo" ["l"="-44.129,6.296"]
+"ardalis/WebApiBestPractices" ["l"="-34.406,-3.149", "c"=249]
+"ardalis/Result" ["l"="-34.297,-0.857", "c"=8]
+"dotnet/aspire-samples" ["l"="-44.09,6.311", "c"=1131]
+"davidfowl/aspire-ai-chat-demo" ["l"="-44.129,6.296", "c"=1131]
+"MatthewKing/DeviceId" ["l"="-36.324,2.43", "c"=615]
+"github/VisualStudio" ["l"="-34.661,-1.383", "c"=8]
+"jonsequitur/dotnet-repl" ["l"="-36.125,-3.168", "c"=364]
+"bflattened/bflat" ["l"="-34.778,-0.931", "c"=8]
 "EngRajabi/Enum.Source.Generator" ["l"="-31.814,-0.437"]
-"DevTeam/Pure.DI" ["l"="-34.585,-0.725"]
 "diegofrata/Generator.Equals" ["l"="-31.774,-0.386"]
 "m31coding/M31.FluentAPI" ["l"="-31.844,-0.447"]
 "leonardochaia/dotnet-affected" ["l"="-32.041,-0.65"]
-"nx-dotnet/nx-dotnet" ["l"="10.252,-22.197"]
+"nx-dotnet/nx-dotnet" ["l"="10.252,-22.197", "c"=47]
 "leonardochaia/dotnet-affected-action" ["l"="-31.995,-0.688"]
-"eiriktsarpalis/PolyType" ["l"="-32.012,-0.588"]
+"msysgit/msysgit" ["l"="18.719,13.29", "c"=1213]
+"dokan-dev/dokan-dotnet" ["l"="-53.473,9.723", "c"=19]
 "microsoft/VSExtensibility" ["l"="-32.456,-0.61"]
-"madskristensen/ExtensibilityTools" ["l"="-32.484,-0.666"]
-"Vannevelj/VSDiagnostics" ["l"="-33.781,0.09"]
-"DamianEdwards/RazorSlices" ["l"="-34.338,-0.688"]
-"madushans/DependenSee" ["l"="-32.088,-0.732"]
+"DuendeArchive/BFF" ["l"="-34.092,-1.228", "c"=8]
+"rossning92/movy" ["l"="47.106,26.603", "c"=323]
+"richardclegg/vis_route" ["l"="-32.463,-1.279"]
+"Vannevelj/VSDiagnostics" ["l"="-33.781,0.09", "c"=8]
+"DamianEdwards/RazorSlices" ["l"="-34.338,-0.688", "c"=8]
+"JonPSmith/AuthPermissions.AspNetCore" ["l"="-34.153,-0.803", "c"=8]
 "sebastienros/shortcodes" ["l"="-31.953,-0.616"]
-"sebastienros/fluid" ["l"="-34.466,-0.929"]
-"JasonBock/Rocks" ["l"="-34.601,-0.633"]
+"sebastienros/fluid" ["l"="-34.466,-0.929", "c"=8]
+"JasonBock/Rocks" ["l"="-34.601,-0.633", "c"=8]
 "martinfmi/java_developer_training" ["l"="-32.423,-1.502"]
-"domn1995/dunet" ["l"="-34.562,-0.687"]
-"devlooped/nugetizer" ["l"="-34.652,-0.595"]
-"StephenCleary/Comparers" ["l"="-34.588,-0.69"]
+"domn1995/dunet" ["l"="-34.562,-0.687", "c"=8]
+"devlooped/nugetizer" ["l"="-34.652,-0.595", "c"=8]
+"wixtoolset/wix" ["l"="-36.784,1.056", "c"=137]
+"christopherread/Obvs" ["l"="-36.162,-2.085", "c"=113]
 "microsoft/VSSDK-Analyzers" ["l"="-32.516,-0.67"]
-"dadhi/ImTools" ["l"="-32.046,-0.379"]
 "liyupi/daxigua" ["l"="-32.423,-1.265"]
 "xiaopengand/daxigua" ["l"="-32.422,-1.313"]
-"bullhe4d/bigwatermelon" ["l"="-32.452,-1.316"]
-"globalaihub/python-education-v2" ["l"="5.766,-19.828"]
+"globalaihub/python-education-v2" ["l"="5.766,-19.828", "c"=96]
 "sannaha/sannaha.github.io" ["l"="-32.431,-1.329"]
-"codeedu/imersao-fullstack-fullcycle" ["l"="5.769,-19.866"]
-"allanf181/FuiVazado" ["l"="5.746,-19.822"]
-"ebhy/budgetml" ["l"="45.189,25.946"]
-"achannarasappa/ticker" ["l"="4.958,-5.194"]
-"richardclegg/vis_route" ["l"="-32.463,-1.279"]
-"liyupi/code-nav" ["l"="-4.206,14.78"]
-"gordicaleksa/pytorch-GAT" ["l"="52.796,16.082"]
-"dotnet/csharplang" ["l"="-34.523,-1.472"]
-"oskardudycz/EventSourcing.NetCore" ["l"="-34.127,-0.989"]
-"TheCodeTraveler/AsyncAwaitBestPractices" ["l"="-36.966,-2.228"]
-"justeattakeaway/httpclient-interception" ["l"="-34.218,-0.634"]
-"martincostello/xunit-logging" ["l"="-34.255,-0.538"]
-"JasperFx/alba" ["l"="-34.331,-0.797"]
+"codeedu/imersao-fullstack-fullcycle" ["l"="5.769,-19.866", "c"=96]
+"allanf181/FuiVazado" ["l"="5.746,-19.822", "c"=96]
+"ebhy/budgetml" ["l"="45.189,25.946", "c"=68]
+"achannarasappa/ticker" ["l"="4.958,-5.194", "c"=784]
+"liyupi/code-nav" ["l"="-4.206,14.78", "c"=92]
+"gordicaleksa/pytorch-GAT" ["l"="52.796,16.082", "c"=100]
+"dotnet/csharplang" ["l"="-34.523,-1.472", "c"=8]
+"khalidabuhakmeh/Htmx.Net" ["l"="-34.324,-0.627", "c"=8]
+"oskardudycz/EventSourcing.NetCore" ["l"="-34.127,-0.989", "c"=8]
+"TheCodeTraveler/AsyncAwaitBestPractices" ["l"="-36.966,-2.228", "c"=113]
+"justeattakeaway/httpclient-interception" ["l"="-34.218,-0.634", "c"=8]
+"martincostello/xunit-logging" ["l"="-34.255,-0.538", "c"=8]
+"JasperFx/alba" ["l"="-34.331,-0.797", "c"=8]
+"chucknorris/roundhouse" ["l"="-34.33,-0.973", "c"=8]
 "microsoft/vs-editor-api" ["l"="-32.48,-0.612"]
 "madskristensen/Community.VisualStudio.Toolkit" ["l"="-32.507,-0.623"]
+"bridgedotnet/Granular" ["l"="-35.005,-1.299", "c"=8]
 "imperviousinc/badass-ens" ["l"="-32.728,-1.21"]
 "imperviousinc/beacon" ["l"="-32.701,-1.146"]
 "hnschat/web" ["l"="-32.676,-1.199"]
@@ -3872,44 +4674,40 @@ digraph G {
 "StefH/AnyOf" ["l"="-31.725,-0.403"]
 "The-NOPE-Project/intraday_nope_research" ["l"="-32.425,-1.352"]
 "deepvalue-network/software" ["l"="-32.449,-1.359"]
-"Mr-Un1k0d3r/RedTeamCCode" ["l"="-47.06,-32.393"]
+"Mr-Un1k0d3r/RedTeamCCode" ["l"="-47.06,-32.393", "c"=41]
 "hayden4r4/NOPE" ["l"="-32.429,-1.384"]
 "ajhpark/ib_nope" ["l"="-32.409,-1.38"]
-"jensolson/SPX-Gamma-Exposure" ["l"="-8.219,13.205"]
+"jensolson/SPX-Gamma-Exposure" ["l"="-8.219,13.205", "c"=105]
 "AArnott/Xunit.Combinatorial" ["l"="-32.13,-0.796"]
+"dorny/test-reporter" ["l"="8.114,-45.496", "c"=544]
 "bitdiffer/bitdiffer" ["l"="-32.334,-0.905"]
 "serdedotnet/serde" ["l"="-31.942,-0.591"]
 "steve-care-software/stonksworks" ["l"="-32.465,-1.388"]
-"lockedbyte/CVE-Exploits" ["l"="-44.578,-29.385"]
+"lockedbyte/CVE-Exploits" ["l"="-44.578,-29.385", "c"=3]
 "bogdanghervan/revolut-statement" ["l"="-32.358,-1.227"]
-"microsoft/ManagedEsent" ["l"="-41.342,-32.272"]
-"microsoft/win32metadata" ["l"="-37.626,1.009"]
-"microsoft/docker" ["l"="-32.518,-0.462"]
-"MicrosoftDocs/Virtualization-Documentation" ["l"="-48.124,7.75"]
-"aspnet/aspnet-docker" ["l"="-34.245,-1.539"]
-"microsoft/Docker-PowerShell" ["l"="-48.213,7.615"]
-"microsoft/TouchDevelop" ["l"="22.457,-26.658"]
-"microsoft/nodejstools" ["l"="-34.46,-1.492"]
-"microsoft/CMake" ["l"="-23.441,-27.883"]
-"microsoft/omi" ["l"="-44.891,7.358"]
+"microsoft/ManagedEsent" ["l"="-41.342,-32.272", "c"=289]
+"dajuric/dot-imaging" ["l"="-35.121,-2.76", "c"=1253]
+"Chia-Network/pool-reference" ["l"="50.741,2.085", "c"=2204]
+"aspnet/aspnet-docker" ["l"="-34.245,-1.539", "c"=8]
+"microsoft/Docker-PowerShell" ["l"="-48.213,7.615", "c"=311]
+"microsoft/nodejstools" ["l"="-34.46,-1.492", "c"=8]
+"microsoft/CMake" ["l"="-23.441,-27.883", "c"=26]
+"microsoft/omi" ["l"="-44.891,7.358", "c"=1079]
 "woxieao/watermelon" ["l"="-32.492,-1.325"]
-"evilsocket/ditto" ["l"="-44.425,-32.98"]
-"rossning92/movy" ["l"="47.106,26.603"]
-"DinoZ1729/Ray" ["l"="-24.556,-34.834"]
+"evilsocket/ditto" ["l"="-44.425,-32.98", "c"=53]
 "nansircroft/Learning-assembly-language" ["l"="-32.483,-1.347"]
 "melodyjerry/synthesis_watermelon" ["l"="-32.405,-1.328"]
-"sdushantha/wifi-password" ["l"="-13.394,-6.249"]
-"tensortrade-org/tensortrade" ["l"="-8.924,12.712"]
-"reactiveui/Pharmacist" ["l"="-36.154,2.389"]
-"reactivemarbles/DynamicData" ["l"="-36.61,1.109"]
-"RxDave/Qactive" ["l"="-36.314,-2.078"]
-"reactiveui/Sextant" ["l"="-36.16,2.408"]
+"tensortrade-org/tensortrade" ["l"="-8.924,12.712", "c"=105]
+"reactivemarbles/DynamicData" ["l"="-36.61,1.109", "c"=137]
+"RxDave/Qactive" ["l"="-36.314,-2.078", "c"=113]
+"reactiveui/Sextant" ["l"="-36.16,2.408", "c"=615]
 "IgorBuchelnikov/ObservableComputations" ["l"="-32.031,-0.535"]
-"jonsequitur/dotnet-repl" ["l"="-36.125,-3.168"]
-"open-telemetry/opentelemetry-dotnet-contrib" ["l"="-34.46,-0.953"]
+"madskristensen/WebCompiler" ["l"="-34.039,-0.663", "c"=8]
 "OmarElabd/ObjectExporter" ["l"="-32.122,-0.875"]
 "ycherkes/ObjectDumper" ["l"="-32.099,-0.941"]
 "podkrepi-bg/api" ["l"="-32.361,-1.539"]
+"Code52/pretzel" ["l"="-34.469,-1.407", "c"=8]
+"p-org/PSharp" ["l"="0.87,13.553", "c"=115]
 "VsixCommunity/Samples" ["l"="-32.562,-0.654"]
 "VsixCommunity/Community.VisualStudio.Toolkit.DependencyInjection" ["l"="-32.541,-0.66"]
 "VsixCommunity/Community.VisualStudio.VSCT" ["l"="-32.548,-0.649"]
@@ -3918,75 +4716,96 @@ digraph G {
 "Scooletz/RampUp" ["l"="-31.991,-0.342"]
 "vexe/gstring" ["l"="-31.919,-0.29"]
 "joeduffy/slice.net" ["l"="-31.929,-0.262"]
-"approvals/ApprovalTests.Net" ["l"="-34.435,-0.691"]
+"OfficeDev/Open-Xml-PowerTools" ["l"="-34.971,-1.003", "c"=8]
+"approvals/ApprovalTests.Net" ["l"="-34.435,-0.691", "c"=8]
 "SonarSource/sonarqube-roslyn-sdk" ["l"="-32.446,-0.782"]
 "SonarSource/sonar-scanner-azdo" ["l"="-32.483,-0.823"]
-"SonarSource/sonar-scanner-jenkins" ["l"="-1.795,11.816"]
+"SonarSource/sonar-scanner-jenkins" ["l"="-1.795,11.816", "c"=15]
 "Tyrrrz/Hallstatt" ["l"="-31.922,-0.666"]
 "SergeyTeplyakov/ConcurrencyAnalyzers" ["l"="-32.168,-0.299"]
+"Molth/Kcp-CSharp" ["l"="-31.827,-0.47"]
 "SofiaCPP/advanced-cpp" ["l"="-32.299,-1.404"]
 "savage309/HPC_FMI" ["l"="-32.277,-1.432"]
 "josetr/VsixTesting" ["l"="-32.531,-0.606"]
 "semerdzhiev/fp-2020-21" ["l"="-32.463,-1.51"]
 "htools-org/htools-dane-ca" ["l"="-32.568,-1.234"]
 "msgpack/msgpack-cli" ["l"="-32.09,-0.603"]
-"protobuf-net/protobuf-net" ["l"="-25.127,-33.225"]
-"kevin-montrose/Jil" ["l"="-34.405,-1.172"]
-"helios-io/helios" ["l"="-34.352,-1.224"]
+"protobuf-net/protobuf-net" ["l"="-25.127,-33.225", "c"=82]
+"dotnet/intro-to-dotnet-web-dev" ["l"="-36.596,-1.224", "c"=260]
+"dotnet/vscode-csharp" ["l"="-34.732,-1.31", "c"=8]
+"DREAM-DK/MAKRO" ["l"="-13.735,-38.641", "c"=64]
+"publiusfederalist/federalist" ["l"="-32.707,-1.238"]
 "App-vNext/Throttlebird" ["l"="-32.331,-0.256"]
-"KirillOsenkov/XmlParser" ["l"="-32.392,-0.61"]
+"matthiasjost/dotnet-content-creators" ["l"="-34.15,-0.894", "c"=8]
+"microsoft/Pyjion" ["l"="45.103,20.93", "c"=20]
 "mwpowellhtx/Code.Generation.Roslyn" ["l"="-32.226,-0.71"]
 "cezarypiatek/SmartCodeGenerator" ["l"="-32.217,-0.72"]
 "AArnott/ImmutableObjectGraph" ["l"="-32.207,-0.772"]
 "Burtsev-Alexey/net-object-deep-copy" ["l"="-31.847,-0.748"]
+"aloneguid/config" ["l"="-36.573,1.286", "c"=137]
 "microsoft/xunit-performance" ["l"="-32.139,-0.418"]
+"sjkp/letsencrypt-siteextension" ["l"="9.74,-8.963", "c"=14]
+"markjprice/cs11dotnet7" ["l"="-33.621,-0.976", "c"=8]
+"SonarSource/SonarJS" ["l"="-1.755,11.781", "c"=15]
+"pierre3/PlantUmlClassDiagramGenerator" ["l"="-34.54,-0.657", "c"=8]
 "chjj/mako" ["l"="-32.696,-1.172"]
 "chjj/lcdb" ["l"="-32.748,-1.172"]
-"sipa/miniscript" ["l"="-18.606,10.916"]
-"tallesl/net-libraries-that-make-your-life-easier" ["l"="-34.406,-1.047"]
-"thomhurst/ModularPipelines" ["l"="-34.63,-0.575"]
-"microsoft/XamlBehaviors" ["l"="-37.466,1.041"]
-"microsoft/xaml-standard" ["l"="-37.446,1.036"]
-"madskristensen/FileDiffer" ["l"="-33.866,-0.497"]
-"microsoft/Microsoft.Unity.Analyzers" ["l"="-26.732,-32.778"]
+"sipa/miniscript" ["l"="-18.606,10.916", "c"=122]
+"elringus/bootsharp" ["l"="-34.951,-0.953", "c"=8]
+"thomhurst/ModularPipelines" ["l"="-34.63,-0.575", "c"=8]
+"microsoft/XamlBehaviors" ["l"="-37.466,1.041", "c"=435]
+"microsoft/xaml-standard" ["l"="-37.446,1.036", "c"=435]
+"madskristensen/FileDiffer" ["l"="-33.866,-0.497", "c"=8]
+"Elfocrash/clean-minimal-api" ["l"="-34.265,-0.776", "c"=8]
+"RolandPheasant/TailBlazer" ["l"="-34.745,-0.98", "c"=8]
+"microsoft/Microsoft.Unity.Analyzers" ["l"="-26.732,-32.778", "c"=66]
+"nodejs/node-chakracore" ["l"="21.822,-26.776", "c"=28]
 "clemensv/messaging" ["l"="-32.256,-0.386"]
-"Grauenwolf/CleanArchitecture" ["l"="-34.54,-3.253"]
-"Azure-Samples/cosmos-db-design-patterns" ["l"="-44.988,5.973"]
-"Azure/azure-api-management-devops-resource-kit" ["l"="-44.795,7.168"]
-"devmentors/FeedR" ["l"="-34.415,-3.207"]
-"Particular/Workshop" ["l"="-34.177,-1.194"]
-"Azure/logicapps" ["l"="-44.816,7.176"]
-"goldshtn/minidumper" ["l"="-32.11,-0.642"]
+"Grauenwolf/CleanArchitecture" ["l"="-34.54,-3.253", "c"=249]
+"Azure-Samples/cosmos-db-design-patterns" ["l"="-44.988,5.973", "c"=957]
+"Azure/azure-api-management-devops-resource-kit" ["l"="-44.795,7.168", "c"=1079]
+"devmentors/FeedR" ["l"="-34.415,-3.207", "c"=249]
+"Particular/Workshop" ["l"="-34.177,-1.194", "c"=8]
+"Azure/logicapps" ["l"="-44.816,7.176", "c"=1079]
+"mgravell/fast-member" ["l"="-34.54,-0.923", "c"=8]
+"GuillaumeSalles/redux.NET" ["l"="-26.493,-32.339", "c"=66]
+"editorconfig/editorconfig-visualstudio" ["l"="-55.781,7.269", "c"=444]
+"rogeralsing/Microphone" ["l"="-34.274,-1.218", "c"=8]
 "josefpihrt/dotmarkdown" ["l"="-32.165,-1.112"]
 "akkadotnet/Hyperion" ["l"="-32.085,-0.678"]
-"petabridge/NBench" ["l"="-34.334,-1.193"]
-"petabridge/akka-monitoring" ["l"="-34.301,-1.118"]
-"rogeralsing/Microphone" ["l"="-34.274,-1.218"]
-"petabridge/akkadotnet-helpers" ["l"="-34.266,-1.128"]
-"evendotnet/Even" ["l"="-34.234,-2.838"]
-"Recognos/Metrics.NET" ["l"="-34.351,-1.167"]
+"petabridge/NBench" ["l"="-34.334,-1.193", "c"=8]
+"petabridge/akka-monitoring" ["l"="-34.301,-1.118", "c"=8]
+"petabridge/akkadotnet-helpers" ["l"="-34.266,-1.128", "c"=8]
+"evendotnet/Even" ["l"="-34.234,-2.838", "c"=249]
+"mrusme/superhighway84" ["l"="-48.853,1.307", "c"=475]
+"ErikEJ/SqlCeToolbox" ["l"="-34.245,-0.982", "c"=8]
+"dpaquette/TagHelperSamples" ["l"="-33.688,-1.395", "c"=8]
+"Recognos/Metrics.NET" ["l"="-34.351,-1.167", "c"=8]
+"csharpfritz/InstantAPIs" ["l"="-45.248,6.365", "c"=957]
+"microsoft/Mobius" ["l"="-34.558,-1.39", "c"=8]
 "okyrylchuk/csharp9_features" ["l"="-32.275,-0.215"]
 "rh8512/csharp-minimalapi" ["l"="-32.29,-0.225"]
-"matthiasjost/dotnet-content-creators" ["l"="-34.15,-0.894"]
 "madskristensen/MarkdownEditor2022" ["l"="-32.605,-0.756"]
-"vangogih/FastMigrations.Json.Net" ["l"="-26.773,-33.234"]
+"nats-io/nats.net.v1" ["l"="7.817,-23.333", "c"=2436]
+"vangogih/FastMigrations.Json.Net" ["l"="-26.773,-33.234", "c"=66]
 "DanielHWe/sonar-fxcop" ["l"="-32.462,-0.816"]
+"ForNeVeR/Cesium" ["l"="-35.03,-0.865", "c"=8]
+"lduchosal/ipnetwork" ["l"="-34.819,-0.571", "c"=8]
 "CollinAlpert/Lombok.NET" ["l"="-31.855,-0.484"]
-"SteveDunn/Intellenum" ["l"="-34.442,-0.647"]
+"SteveDunn/Intellenum" ["l"="-34.442,-0.647", "c"=8]
 "distantcam/AutoCtor" ["l"="-31.795,-0.474"]
-"publiusfederalist/federalist" ["l"="-32.707,-1.238"]
 "publiusfederalist/zooko" ["l"="-32.759,-1.268"]
 "publiusfederalist/publius" ["l"="-32.742,-1.245"]
-"RangerMauve/mutable-webtorrent" ["l"="-32.728,-1.271"]
 "k1p1/UE4TopDownARPG" ["l"="-32.219,-1.475"]
 "k1p1/UE5TopDownARPG" ["l"="-32.234,-1.461"]
-"trbngr/AkkaCqrs" ["l"="-34.196,-2.842"]
+"trbngr/AkkaCqrs" ["l"="-34.196,-2.842", "c"=249]
 "Scooletz/SewingMachine" ["l"="-31.967,-0.307"]
+"koculu/Topaz" ["l"="-34.973,-0.929", "c"=8]
 "XenBG/bulgarian-city-coat-of-arms" ["l"="-32.317,-1.367"]
 "fmi/go-lectures" ["l"="-32.324,-1.345"]
 "HdrHistogram/HdrHistogram.NET" ["l"="-31.974,-0.371"]
 "LeeCampbell/HdrHistogram.NET" ["l"="-31.942,-0.348"]
-"unity-cn/Asset-Auditing" ["l"="-24.772,-33.268"]
+"unity-cn/Asset-Auditing" ["l"="-24.772,-33.268", "c"=82]
 "dotnet/symreader" ["l"="-32.767,-0.372"]
 "dotnet/symreader-portable" ["l"="-32.741,-0.381"]
 "SoftUni/Programming-Basics-Book-Java-BG" ["l"="-32.306,-1.578"]
@@ -3994,102 +4813,150 @@ digraph G {
 "nakov/TurtleGraphics.NET" ["l"="-32.268,-1.611"]
 "nakov/NakovForwardServer" ["l"="-32.252,-1.602"]
 "ycherkes/VarDump" ["l"="-32.086,-0.97"]
+"kutyel/linq.ts" ["l"="-34.406,-1.415", "c"=8]
+"NickCraver/StackExchange.Exceptional" ["l"="-34.335,-1.119", "c"=8]
 "nakov/Nakov.io.cin" ["l"="-32.248,-1.624"]
 "dotnet/docker-tools" ["l"="-32.456,-0.385"]
-"fsprojects/Paket" ["l"="-35.985,-3.182"]
-"mgholam/hOOt" ["l"="-35.092,-0.515"]
+"fsprojects/Paket" ["l"="-35.985,-3.182", "c"=364]
+"RickStrahl/MarkdownMonster" ["l"="-36.515,1.222", "c"=137]
+"msgpack/msgpack" ["l"="-20.047,-25.267", "c"=10]
+"amaneureka/AtomOS" ["l"="23.581,-26.919", "c"=28]
+"markjprice/cs12dotnet8" ["l"="-33.703,-0.979", "c"=8]
+"GregFinzer/Compare-Net-Objects" ["l"="-34.542,-0.901", "c"=8]
+"mgholam/hOOt" ["l"="-35.092,-0.515", "c"=8]
 "kreeben/sir" ["l"="-31.993,-0.566"]
-"microsoft/Yams" ["l"="-34.082,-1.686"]
-"OrleansContrib/OrleansFabricSilo" ["l"="-34.042,-1.774"]
-"warden-stack/Warden" ["l"="-34.32,-1.064"]
+"microsoft/Yams" ["l"="-34.082,-1.686", "c"=8]
+"OrleansContrib/OrleansFabricSilo" ["l"="-34.042,-1.774", "c"=8]
+"warden-stack/Warden" ["l"="-34.32,-1.064", "c"=8]
+"Cysharp/StructureOfArraysGenerator" ["l"="-26.705,-32.634", "c"=66]
+"esskar/Serialize.Linq" ["l"="-34.588,-0.661", "c"=8]
+"Giorgi/LINQPad.QueryPlanVisualizer" ["l"="-34.504,-0.451", "c"=8]
+"dotnet/training-tutorials" ["l"="-34.219,-1.992", "c"=8]
+"microsoft/CSharpClient-for-Kafka" ["l"="-34.386,-1.359", "c"=8]
+"ekonbenefits/impromptu-interface" ["l"="-34.62,-0.863", "c"=8]
 "AArnott/Nerdbank.MessagePack" ["l"="-31.963,-0.596"]
-"eiriktsarpalis/TypeShape" ["l"="-36.049,-3.051"]
+"eiriktsarpalis/TypeShape" ["l"="-36.049,-3.051", "c"=364]
 "AlenToma/FastDeepCloner" ["l"="-31.895,-0.707"]
 "MarcinJuraszek/CloneExtensions" ["l"="-31.889,-0.735"]
 "ReubenBond/DeepCopy" ["l"="-31.854,-0.707"]
-"GregFinzer/Compare-Net-Objects" ["l"="-34.542,-0.901"]
-"leandromoh/RecordParser" ["l"="-34.504,-0.609"]
-"mgravell/fast-member" ["l"="-34.54,-0.923"]
-"FluentDateTime/FluentDateTime" ["l"="-34.439,-0.751"]
-"esskar/Serialize.Linq" ["l"="-34.588,-0.661"]
+"leandromoh/RecordParser" ["l"="-34.504,-0.609", "c"=8]
+"FluentDateTime/FluentDateTime" ["l"="-34.439,-0.751", "c"=8]
 "deadlydog/Invoke-MsBuild" ["l"="-32.643,-0.62"]
 "microsoft/vssetup.powershell" ["l"="-32.564,-0.616"]
-"annulusgames/BurstLinq" ["l"="-26.579,-32.719"]
+"goblinfactory/konsole" ["l"="-34.738,-0.872", "c"=8]
+"annulusgames/BurstLinq" ["l"="-26.579,-32.719", "c"=66]
 "patrickklaeren/AutoRegisterInject" ["l"="-31.876,-0.402"]
-"mozilla/experimenter" ["l"="8.444,-44.119"]
-"aspnet/WebSockets" ["l"="-34.248,-1.601"]
-"dotnet/netcorecli-fsc" ["l"="-32.496,-0.365"]
-"SonarSource/sonarlint-vscode" ["l"="-1.822,11.92"]
-"SonarSource/sonarlint-core" ["l"="-1.85,11.884"]
+"mozilla/experimenter" ["l"="8.444,-44.119", "c"=1059]
+"aspnet/WebSockets" ["l"="-34.248,-1.601", "c"=8]
+"SonarSource/sonarlint-vscode" ["l"="-1.822,11.92", "c"=15]
+"SonarSource/sonarlint-core" ["l"="-1.85,11.884", "c"=15]
+"nats-io/nats.net" ["l"="7.778,-23.358", "c"=2436]
+"Cysharp/SimdLinq" ["l"="-26.766,-32.644", "c"=66]
 "Angeld55/Algorithms_FMI" ["l"="-32.282,-1.74"]
+"emgarten/Sleet" ["l"="-35.074,-1.422", "c"=8]
 "madskristensen/Surrounder" ["l"="-32.596,-0.89"]
 "davidfowl/NetStandard" ["l"="-32.126,-0.436"]
 "amanda-mitchell/CoreCLRProfiler" ["l"="-32.034,-0.762"]
 "zodiacon/DotNextMoscow2019" ["l"="-32.001,-0.751"]
 "microsoftarchive/clrprofiler" ["l"="-32.022,-0.779"]
 "WebFormsCore/WebFormsCore" ["l"="-32.364,-0.191"]
+"agileobjects/AgileMapper" ["l"="-34.428,-0.777", "c"=8]
 "davidfowl/TriviaR" ["l"="-31.794,-0.887"]
 "davidfowl/eStoreLite" ["l"="-31.8,-0.863"]
 "davidfowl/IdentityEndpointsSample" ["l"="-31.837,-0.846"]
-"Spreads/Spreads" ["l"="-36.094,-3.031"]
-"aL3891/RioSharp" ["l"="-32.933,1.151"]
-"rsocket/rsocket-net" ["l"="-2.13,12.275"]
+"Spreads/Spreads" ["l"="-36.094,-3.031", "c"=364]
+"aL3891/RioSharp" ["l"="-32.933,1.151", "c"=106]
+"rsocket/rsocket-net" ["l"="-2.13,12.275", "c"=15]
 "microsoft/testfx" ["l"="-32.391,-0.534"]
 "microsoft/vstest-docs" ["l"="-32.456,-0.521"]
-"xunit/xunit" ["l"="-34.602,-1.145"]
-"dotnet/roslyn" ["l"="-34.586,-1.529"]
-"dotnet/aspire" ["l"="-34.309,-0.993"]
+"dotnet/templating" ["l"="-34.343,-1.35", "c"=8]
+"microsoft/VCSamples" ["l"="-37.616,1.063", "c"=435]
+"xunit/xunit" ["l"="-34.602,-1.145", "c"=8]
+"dotnet/roslyn" ["l"="-34.586,-1.529", "c"=8]
+"dotnet/aspire" ["l"="-34.309,-0.993", "c"=8]
+"lolp1/Overlay.NET" ["l"="-43.678,-36.068", "c"=618]
+"dotnet/ILMerge" ["l"="-34.82,-1.214", "c"=8]
+"BcryptNet/bcrypt.net" ["l"="-34.486,-0.877", "c"=8]
+"toddams/RazorLight" ["l"="-34.484,-0.967", "c"=8]
+"Cysharp/YetAnotherHttpHandler" ["l"="-26.653,-32.645", "c"=66]
+"microsoft/mssql-jdbc" ["l"="-47.024,8.329", "c"=841]
+"SimonCropp/WinDebloat" ["l"="-34.518,-0.535", "c"=8]
+"abdonkov/DSA" ["l"="-34.252,-1.054", "c"=8]
+"riyadparvez/data-structures-csharp" ["l"="-32.192,-0.942"]
+"hazzik/DelegateDecompiler" ["l"="-34.343,-0.743", "c"=8]
 "bblanchon/WpfBindingErrors" ["l"="-32.039,-0.833"]
-"tunnelvisionlabs/ReferenceAssemblyAnnotator" ["l"="-32.122,-0.717"]
 "microsoft/testfx-docs" ["l"="-32.459,-0.541"]
-"bUnit-dev/bUnit" ["l"="-36.563,-0.968"]
-"nunit/nunit" ["l"="-34.618,-1.092"]
-"Ixiko/AHK-Rare" ["l"="-46.926,9.105"]
-"autokey/autokey" ["l"="-14.359,-3.31"]
-"madskristensen/ImageOptimizer" ["l"="-33.99,-0.666"]
-"madskristensen/CommentRemover" ["l"="-33.958,-0.602"]
-"madskristensen/Editorsk" ["l"="-33.913,-0.583"]
+"bUnit-dev/bUnit" ["l"="-36.563,-0.968", "c"=260]
+"nunit/nunit" ["l"="-34.618,-1.092", "c"=8]
+"tmds/Tmds.DBus" ["l"="-36.149,2.644", "c"=615]
+"nunit/nunit-console" ["l"="-34.7,-0.953", "c"=8]
+"nunit/nunit.analyzers" ["l"="-32.059,-0.78"]
+"Ixiko/AHK-Rare" ["l"="-46.926,9.105", "c"=655]
+"autokey/autokey" ["l"="-14.359,-3.31", "c"=71]
+"madskristensen/ImageOptimizer" ["l"="-33.99,-0.666", "c"=8]
+"madskristensen/CommentRemover" ["l"="-33.958,-0.602", "c"=8]
+"madskristensen/Editorsk" ["l"="-33.913,-0.583", "c"=8]
+"lowleveldesign/process-governor" ["l"="-43.164,-34.88", "c"=40]
+"justcoding121/advanced-algorithms" ["l"="-34.377,-1.169", "c"=8]
 "JamesNK/aspnetcore-grafana" ["l"="-31.927,-0.773"]
+"microsoft/dotnet-framework-docker" ["l"="-49.066,6.768", "c"=959]
+"serilog/serilog-sinks-async" ["l"="-34.864,-0.715", "c"=8]
+"Cysharp/csbindgen" ["l"="-26.701,-32.65", "c"=66]
+"xuhuisheng/sonar-l10n-zh" ["l"="-1.846,11.727", "c"=15]
+"lowleveldesign/wtrace" ["l"="-43.098,-34.958", "c"=40]
 "jfrijters/Managed.Reflection" ["l"="-32.089,-0.388"]
 "StackExchange/capnproto-net" ["l"="-32.11,-0.371"]
+"SteveSandersonMS/DotNetIsolator" ["l"="-34.833,-0.865", "c"=8]
+"microsoft/node-api-dotnet" ["l"="-34.995,-1.123", "c"=8]
+"sebastienros/esprima-dotnet" ["l"="-34.842,-1.105", "c"=8]
 "tghamm/Anthropic.SDK" ["l"="-31.79,-0.342"]
 "Cysharp/Claudia" ["l"="-31.831,-0.377"]
 "tghamm/Mistral.SDK" ["l"="-31.752,-0.314"]
 "dotnet/xliff-tasks" ["l"="-32.526,-0.379"]
 "noordwind/Collectively.Api" ["l"="-32.144,-0.147"]
 "noordwind/Collectively.Web" ["l"="-32.143,-0.172"]
+"adamralph/xbehave.net" ["l"="-34.351,-0.728", "c"=8]
 "BASSCOM-Programmer/Education-Programme" ["l"="-32.231,-1.619"]
 "mgravell/pipelines.docs" ["l"="-32.097,-0.351"]
 "madskristensen/PresenterMode" ["l"="-32.618,-0.907"]
 "warden-stack/Warden.Api" ["l"="-32.143,-0.189"]
+"MichaCo/DnsClient.NET" ["l"="-34.671,-0.795", "c"=8]
+"octokit/octokit.net" ["l"="-34.676,-1.147", "c"=8]
 "microsoft/vswhere" ["l"="-32.37,-0.613"]
 "microsoft/vs-setup-samples" ["l"="-32.46,-0.67"]
-"microsoft/CsWin32" ["l"="-36.66,1.054"]
-"microsoft/XamlBehaviorsWpf" ["l"="-36.533,1.106"]
+"microsoft/CsWin32" ["l"="-36.66,1.054", "c"=137]
+"microsoft/XamlBehaviorsWpf" ["l"="-36.533,1.106", "c"=137]
 "AArnott/StreamJsonRpc.Sample" ["l"="-32.147,-0.535"]
 "richlander/container-workshop" ["l"="-32.256,-0.177"]
-"Cysharp/ValueTaskSupplement" ["l"="-26.693,-32.567"]
-"annulusgames/ZeroMessenger" ["l"="-26.585,-32.693"]
+"wmww/Pinecone" ["l"="-23.952,-23.113", "c"=349]
+"MisterJames/GenFu" ["l"="-34.395,-1.03", "c"=8]
+"Cysharp/ValueTaskSupplement" ["l"="-26.693,-32.567", "c"=66]
+"annulusgames/ZeroMessenger" ["l"="-26.585,-32.693", "c"=66]
+"MicrosoftDocs/cpp-docs" ["l"="-42.906,-34.962", "c"=40]
 "MicrosoftDocs/visualstudio-docs" ["l"="-32.446,-0.586"]
-"MicrosoftDocs/cpp-docs" ["l"="-42.906,-34.962"]
-"MicrosoftDocs/sql-docs" ["l"="-47.045,8.451"]
-"github/VisualStudio" ["l"="-34.661,-1.383"]
-"MicrosoftDocs/PowerShell-Docs" ["l"="-48.054,7.719"]
+"MicrosoftDocs/sql-docs" ["l"="-47.045,8.451", "c"=841]
+"MicrosoftDocs/PowerShell-Docs" ["l"="-48.054,7.719", "c"=311]
+"Giorgi/EFCore.Visualizer" ["l"="-34.289,-0.751", "c"=8]
+"m4rs-mt/ILGPU" ["l"="-33.077,-3.518", "c"=293]
 "Testura/Testura.Android" ["l"="-32.277,-0.812"]
 "Testura/Testura.Code.UnitTestGenerator" ["l"="-32.26,-0.778"]
-"SaladLab/Akka.Interfaced" ["l"="-34.245,-2.774"]
-"Molth/Kcp-CSharp" ["l"="-31.827,-0.47"]
-"Cysharp/YetAnotherHttpHandler" ["l"="-26.653,-32.645"]
-"Cysharp/LogicLooper" ["l"="-26.667,-32.579"]
-"hadashiA/VitalRouter" ["l"="-26.619,-32.721"]
+"lecaillon/Evolve" ["l"="-34.382,-0.979", "c"=8]
+"dloss/binary-parsing" ["l"="-43.029,-36.506", "c"=306]
+"HangfireIO/Cronos" ["l"="-34.491,-0.993", "c"=8]
+"dotnet/WatsonTcp" ["l"="-35.134,-1.767", "c"=8]
+"SaladLab/Akka.Interfaced" ["l"="-34.245,-2.774", "c"=249]
+"dasMulli/dotnet-win32-service" ["l"="-34.168,-1.075", "c"=8]
+"hadashiA/VitalRouter" ["l"="-26.619,-32.721", "c"=66]
 "lukebuehler/NRefactory-Completion-Sample" ["l"="-32.452,-0.85"]
-"icsharpcode/SharpDevelop" ["l"="-36.37,1.109"]
+"icsharpcode/SharpDevelop" ["l"="-36.37,1.109", "c"=137]
+"saucecontrol/PhotoSauce" ["l"="-34.908,-1.111", "c"=8]
+"DiscUtils/DiscUtils" ["l"="-36.671,1.198", "c"=137]
+"praeclarum/1brc" ["l"="-34.616,-0.375", "c"=8]
 "Drawaes/CondenserDotNet" ["l"="-32.048,-0.223"]
 "Drawaes/TrimDB" ["l"="-32.035,-0.179"]
 "Lockbox-stack/Lockbox" ["l"="-32.14,-0.222"]
-"kekyo/GitReader" ["l"="-34.878,-0.288"]
-"StephenCleary/LocalTelemetry" ["l"="-43.837,6.36"]
-"nunit/nunit.analyzers" ["l"="-32.059,-0.78"]
+"kekyo/GitReader" ["l"="-34.878,-0.288", "c"=8]
+"StephenCleary/LocalTelemetry" ["l"="-43.837,6.36", "c"=1131]
 "markjamesm/MistralSharp" ["l"="-31.729,-0.297"]
 "IvanFilipov/modern_c_plus_plus" ["l"="-32.157,-1.543"]
 "IvanFilipov/FMI-OOP" ["l"="-32.181,-1.553"]
@@ -4097,39 +4964,46 @@ digraph G {
 "Abc-Arbitrage/Zerio" ["l"="-31.898,-0.335"]
 "poizan42/soswow64" ["l"="-32.096,-0.654"]
 "southpolenator/SharpDebug" ["l"="-32.14,-0.574"]
-"aspnet/Announcements" ["l"="-34.311,-1.408"]
-"SteveSanderson/Blazor" ["l"="-34.673,-1.265"]
-"riyadparvez/data-structures-csharp" ["l"="-32.192,-0.942"]
-"aalhour/C-Sharp-Algorithms" ["l"="-34.327,-1.172"]
-"JaCraig/Craig-s-Utility-Library" ["l"="-32.992,1.034"]
-"bobvanderlinden/sharpfilesystem" ["l"="-53.542,9.752"]
-"DiscUtils/DiscUtils" ["l"="-36.671,1.198"]
-"elw00d/consoleframework" ["l"="-34.8,-0.858"]
-"OmniSharp/csharp-language-server-protocol" ["l"="-35.151,-1.234"]
-"stephan-tolksdorf/fparsec" ["l"="-36.06,-3.077"]
-"scriban/scriban" ["l"="-34.589,-0.95"]
-"dasMulli/dotnet-win32-service" ["l"="-34.168,-1.075"]
+"tonybaloney/CSnakes" ["l"="-44.226,6.32", "c"=1131]
+"SteveSanderson/Blazor" ["l"="-34.673,-1.265", "c"=8]
+"aalhour/C-Sharp-Algorithms" ["l"="-34.327,-1.172", "c"=8]
+"JaCraig/Craig-s-Utility-Library" ["l"="-32.992,1.034", "c"=106]
+"awaescher/RepoZ" ["l"="18.743,12.76", "c"=1113]
+"OmniSharp/csharp-language-server-protocol" ["l"="-35.151,-1.234", "c"=8]
+"microsoft/Recognizers-Text" ["l"="-45.664,8.655", "c"=309]
+"stephan-tolksdorf/fparsec" ["l"="-36.06,-3.077", "c"=364]
+"scriban/scriban" ["l"="-34.589,-0.95", "c"=8]
+"RyanLamansky/dotnet-webassembly" ["l"="-35.002,-1.155", "c"=8]
+"datastax/csharp-driver" ["l"="-34.338,-1.497", "c"=8]
+"mparlak/Flee" ["l"="-34.585,-0.827", "c"=8]
+"Terminals-Origin/Terminals" ["l"="-49.348,10.25", "c"=59]
 "alexanderkozlenko/random-org" ["l"="-31.763,-0.673"]
+"mattjohnsonpint/TimeZoneConverter" ["l"="-34.608,-0.88", "c"=8]
 "RehanSaeed/EditorConfig" ["l"="-32.245,-0.65"]
-"Dotnet-Boxed/Templates" ["l"="-34.235,-1.176"]
-"RehanSaeed/Serilog.Exceptions" ["l"="-34.839,-0.712"]
+"Dotnet-Boxed/Templates" ["l"="-34.235,-1.176", "c"=8]
+"RehanSaeed/Serilog.Exceptions" ["l"="-34.839,-0.712", "c"=8]
+"adamdriscoll/poshtools" ["l"="-48.172,7.653", "c"=311]
 "sayedihashimi/slow-cheetah" ["l"="-32.618,-0.537"]
 "microsoft/json-document-transforms" ["l"="-32.663,-0.538"]
 "golavr/ConfigurationTransform" ["l"="-32.588,-0.541"]
 "microsoftarchive/mef" ["l"="-32.476,-0.576"]
+"moq/labs" ["l"="-34.569,-0.926", "c"=8]
 "dudikeleti/DumpMiner" ["l"="-32.123,-0.623"]
 "xquintana/DumpReport" ["l"="-32.124,-0.564"]
 "daxnet/irony-explorer" ["l"="-31.879,-0.652"]
+"microsoft/ClearScript" ["l"="-34.871,-1.126", "c"=8]
 "RainwayApp/warden" ["l"="-31.59,-0.571"]
+"skx/sysadmin-util" ["l"="-14.405,-6.24", "c"=86]
+"kubernetes-client/csharp" ["l"="-34.545,-1.108", "c"=8]
+"RehanSaeed/Schema.NET" ["l"="-34.242,-0.709", "c"=8]
 "WorkMaze/JUST.net" ["l"="-32.723,-0.532"]
 "blushingpenguin/Jolt.Net" ["l"="-32.698,-0.534"]
 "chriseldredge/Klondike" ["l"="-32.075,-0.836"]
 "themotleyfool/NuGet.Lucene" ["l"="-32.041,-0.874"]
 "themotleyfool/Klondike-Release" ["l"="-32.059,-0.864"]
-"agileobjects/AgileMapper" ["l"="-34.428,-0.777"]
-"6bee/Remote.Linq" ["l"="-34.5,-0.647"]
+"6bee/Remote.Linq" ["l"="-34.5,-0.647", "c"=8]
+"microsoft/roosterjs" ["l"="-4.368,-29.53", "c"=4]
 "georgibaltiev/os-2024-25" ["l"="-32.372,-1.727"]
 "TeogopK/Data_Structures_and_Algorithms_FMI" ["l"="-32.389,-1.734"]
-"dpaquette/TagHelperSamples" ["l"="-33.688,-1.395"]
 "filipw/Strathweb.Samples.CSharp.NoVisibilityChecks" ["l"="-32.182,-0.426"]
 }

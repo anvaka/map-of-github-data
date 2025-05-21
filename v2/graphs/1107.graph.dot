@@ -35,6 +35,7 @@ digraph G {
 "StamusNetworks/scirius" -> "OISF/suricata-verify"
 "StamusNetworks/scirius" -> "StamusNetworks/KTS"
 "StamusNetworks/scirius" -> "OISF/suricata" ["e"=1]
+"target/strelka" -> "SuperCowPowers/zat" ["e"=1]
 "OISF/suricata-update" -> "OISF/suricata-verify"
 "OISF/suricata-update" -> "StamusNetworks/scirius"
 "OISF/suricata-update" -> "jasonish/evebox"
@@ -46,6 +47,9 @@ digraph G {
 "OISF/suricata-update" -> "travisbgreen/hunting-rules"
 "OISF/suricata-update" -> "shirkdog/pulledpork"
 "OISF/suricata-update" -> "secureworks/dalton"
+"al0ne/suricata-rules" -> "al0ne/suricata_optimize" ["e"=1]
+"al0ne/suricata-rules" -> "StamusNetworks/SELKS" ["e"=1]
+"al0ne/suricata-rules" -> "StamusNetworks/scirius" ["e"=1]
 "StamusNetworks/SELKS" -> "StamusNetworks/scirius"
 "StamusNetworks/SELKS" -> "jasonish/evebox"
 "StamusNetworks/SELKS" -> "al0ne/suricata-rules" ["e"=1]
@@ -61,6 +65,9 @@ digraph G {
 "StamusNetworks/SELKS" -> "OISF/suricata-update"
 "StamusNetworks/SELKS" -> "zeek/zeek" ["e"=1]
 "StamusNetworks/SELKS" -> "Cyb3rWard0g/HELK" ["e"=1]
+"1aN0rmus/TekDefense-Automater" -> "jonschipp/mal-dnssearch" ["e"=1]
+"csirtgadgets/massive-octo-spice" -> "michalpurzynski/bro-gramming" ["e"=1]
+"mitre-attack/bzar" -> "SuperCowPowers/zat" ["e"=1]
 "jasonish/py-idstools" -> "StamusNetworks/scirius"
 "jasonish/py-idstools" -> "shendo/websnort"
 "jasonish/py-idstools" -> "jasonish/evebox"
@@ -93,6 +100,9 @@ digraph G {
 "aboutsecurity/Bro-samples" -> "reservoirlabs/bro-scripts"
 "aboutsecurity/Bro-samples" -> "sooshie/bro-scripts"
 "aboutsecurity/Bro-samples" -> "grigorescu/bro-scripts"
+"brimdata/zui" -> "brimdata/super" ["e"=1]
+"brimdata/zui" -> "brimdata/brimcap" ["e"=1]
+"brimdata/zui" -> "SuperCowPowers/zat" ["e"=1]
 "sooshie/bro-scripts" -> "LiamRandall/bro-scripts"
 "sooshie/bro-scripts" -> "reservoirlabs/bro-scripts"
 "sooshie/bro-scripts" -> "phirelight/bro-scripts"
@@ -106,6 +116,7 @@ digraph G {
 "sooshie/bro-scripts" -> "securitykitten/bro_scripts"
 "sooshie/bro-scripts" -> "anthonykasza/scratch_pad"
 "sooshie/bro-scripts" -> "evernote/bro-scripts"
+"SuperCowPowers/data_hacking" -> "SuperCowPowers/zat" ["e"=1]
 "blacktop/docker-zeek" -> "zeek/zeek-docker"
 "blacktop/docker-zeek" -> "blacktop/docker-bro"
 "blacktop/docker-zeek" -> "apache/metron-bro-plugin-kafka"
@@ -162,6 +173,7 @@ digraph G {
 "mavam/brospects" -> "sethhall/bro-scripts"
 "DCSO/balboa" -> "DCSO/fever"
 "bro/bro-osquery" -> "corelight/zeek-elf"
+"snort3/snort3" -> "shirkdog/pulledpork" ["e"=1]
 "brimdata/super" -> "brimdata/zui" ["e"=1]
 "brimdata/super" -> "SuperCowPowers/zat"
 "brimdata/super" -> "brimdata/brimcap"
@@ -173,6 +185,7 @@ digraph G {
 "brimdata/super" -> "pevma/SEPTun-Mark-II"
 "brimdata/super" -> "cisco/mercury" ["e"=1]
 "brimdata/super" -> "juttle/juttle"
+"tempesta-tech/tempesta" -> "OISF/libhtp" ["e"=1]
 "jasonish/evebox" -> "StamusNetworks/scirius"
 "jasonish/evebox" -> "StamusNetworks/SELKS"
 "jasonish/evebox" -> "pevma/SEPTun"
@@ -191,6 +204,11 @@ digraph G {
 "zeek/zeek-agent" -> "corelight/json-tcp-lb"
 "zeek/zeek-agent" -> "0xl3x1/zeek-EternalSafety"
 "zeek/zeek-agent" -> "mixmodeai/bro_intel_linter"
+"CriticalPathSecurity/Zeek-Intelligence-Feeds" -> "SuperCowPowers/zat" ["e"=1]
+"CriticalPathSecurity/Zeek-Intelligence-Feeds" -> "tenzir/threatbus" ["e"=1]
+"zeek/spicy" -> "zeek/packages" ["e"=1]
+"iqiyi/qnsm" -> "al0ne/suricata_optimize" ["e"=1]
+"iqiyi/qnsm" -> "google/gonids" ["e"=1]
 "zeek/bro-plugins" -> "sooshie/bro-scripts"
 "zeek/bro-plugins" -> "JustinAzoff/flow-indexer"
 "zeek/bro-plugins" -> "jonschipp/bro-scripts"
@@ -223,6 +241,7 @@ digraph G {
 "exp0se/bro-intel-generator" -> "phirelight/bro-scripts"
 "exp0se/bro-intel-generator" -> "criticalstack/brotop"
 "brimdata/zeek-tsv-http-plugin" -> "brimdata/zync"
+"Invoke-IR/Uproot" -> "CrowdStrike/cs-bro" ["e"=1]
 "0xl3x1/zeek-EternalSafety" -> "precurse/zeek-httpattacks"
 "reservoirlabs/bro-scripts" -> "sooshie/bro-scripts"
 "reservoirlabs/bro-scripts" -> "criticalstack/bro-scripts"
@@ -257,6 +276,8 @@ digraph G {
 "broala/bro-shellshock" -> "sheharbano/Correlation-Framework"
 "brimdata/zync" -> "brimdata/zeek-tsv-http-plugin"
 "brimdata/zync" -> "brimdata/sharkfest-21"
+"CrowdStrike/Forensics" -> "CrowdStrike/cs-bro" ["e"=1]
+"lmco/laikaboss" -> "CrowdStrike/cs-bro" ["e"=1]
 "shirkdog/pulledpork" -> "firnsy/barnyard2"
 "shirkdog/pulledpork" -> "Snorby/snorby"
 "shirkdog/pulledpork" -> "StamusNetworks/scirius"
@@ -269,6 +290,7 @@ digraph G {
 "shirkdog/pulledpork" -> "da667/Autosnort"
 "shirkdog/pulledpork" -> "travisbgreen/hunting-rules"
 "shirkdog/pulledpork" -> "EmergingThreats/et-luajit-scripts"
+"phaethon/kamene" -> "blacktop/docker-bro" ["e"=1]
 "theflakes/sigma_to_wazuh" -> "SanWieb/sigWah"
 "open-nsm/ContainNSM" -> "broala/bro-xor-exe-plugin"
 "hosom/file-extraction" -> "phirelight/bro-scripts"
@@ -288,6 +310,8 @@ digraph G {
 "JustinAzoff/bro_scripts" -> "jonschipp/bro-scripts"
 "JustinAzoff/bro_scripts" -> "broala/bro-xor-exe-plugin"
 "JustinAzoff/bro_scripts" -> "anthonykasza/scratch_pad"
+"rocknsm/rock" -> "CrowdStrike/cs-bro" ["e"=1]
+"rocknsm/rock" -> "JustinAzoff/bro_scripts" ["e"=1]
 "wazuh/wazuh-ruleset" -> "wazuh/wazuh-documentation"
 "wazuh/wazuh-ruleset" -> "wazuh/wazuh-dashboard-plugins"
 "wazuh/wazuh-ruleset" -> "wazuh/wazuh-ansible"
@@ -302,6 +326,14 @@ digraph G {
 "wazuh/wazuh-ruleset" -> "EmergingThreats/et-luajit-scripts"
 "wazuh/wazuh-ruleset" -> "magenx/WAZUH-OSSEC"
 "wazuh/wazuh-ruleset" -> "BinaryDefense/auto-ossec" ["e"=1]
+"Karneades/awesome-malware-persistence" -> "satta/awesome-suricata" ["e"=1]
+"stratosphereips/StratosphereLinuxIPS" -> "stratosphereips/zeek_anomaly_detector" ["e"=1]
+"stratosphereips/StratosphereLinuxIPS" -> "SuperCowPowers/zat" ["e"=1]
+"stratosphereips/StratosphereLinuxIPS" -> "StamusNetworks/scirius" ["e"=1]
+"stratosphereips/StratosphereLinuxIPS" -> "jasonish/evebox" ["e"=1]
+"EmersonElectricCo/fsf" -> "CrowdStrike/cs-bro" ["e"=1]
+"EmersonElectricCo/fsf" -> "phirelight/bro-scripts" ["e"=1]
+"EmersonElectricCo/fsf" -> "michalpurzynski/bro-gramming" ["e"=1]
 "phirelight/bro-scripts" -> "gitunique/bro-scripts"
 "phirelight/bro-scripts" -> "sooshie/bro-scripts"
 "phirelight/bro-scripts" -> "reservoirlabs/bro-scripts"
@@ -340,6 +372,9 @@ digraph G {
 "brimdata/sharkfest-21" -> "brimdata/zync"
 "brimdata/sharkfest-21" -> "brimdata/zeek-tsv-http-plugin"
 "da667/Autosnort" -> "da667/Autosuricata"
+"ptresearch/AttackDetection" -> "StamusNetworks/scirius" ["e"=1]
+"ptresearch/AttackDetection" -> "travisbgreen/hunting-rules" ["e"=1]
+"ptresearch/AttackDetection" -> "secureworks/dalton" ["e"=1]
 "socfortress/Wazuh-Rules" -> "socfortress/CoPilot"
 "socfortress/Wazuh-Rules" -> "socfortress/Playbooks" ["e"=1]
 "socfortress/Wazuh-Rules" -> "branchnetconsulting/wazuh-tools"
@@ -355,9 +390,11 @@ digraph G {
 "socfortress/Wazuh-Rules" -> "Hestat/ossec-sysmon"
 "socfortress/Wazuh-Rules" -> "WithSecureLabs/chainsaw" ["e"=1]
 "socfortress/Wazuh-Rules" -> "SecurityBrewery/catalyst" ["e"=1]
+"OISF/suricata" -> "StamusNetworks/SELKS" ["e"=1]
 "satta/awesome-suricata" -> "klingerko/nids-rule-library"
 "satta/awesome-suricata" -> "Karneades/awesome-security-card-games" ["e"=1]
 "wazuh/wazuh-dashboard" -> "wazuh/wazuh-security-dashboards-plugin"
+"socfortress/Playbooks" -> "socfortress/Wazuh-Rules" ["e"=1]
 "wazuh/wazuh-chef" -> "wazuh/wazuh-bosh"
 "wazuh/wazuh-api" -> "wazuh/wazuh-documentation"
 "wazuh/wazuh-api" -> "wazuh/wazuh-puppet"
@@ -402,6 +439,7 @@ digraph G {
 "wazuh/wazuh-dashboard-plugins" -> "branchnetconsulting/wazuh-tools"
 "wazuh/wazuh-dashboard-plugins" -> "wazuh/wazuh-splunk"
 "wazuh/wazuh-dashboard-plugins" -> "wazuh/wazuh-puppet"
+"apache/incubator-spot" -> "jasonish/py-idstools" ["e"=1]
 "wazuh/wazuh-docker" -> "wazuh/wazuh-ansible"
 "wazuh/wazuh-docker" -> "wazuh/wazuh-dashboard-plugins"
 "wazuh/wazuh-docker" -> "wazuh/wazuh-documentation"
@@ -417,6 +455,7 @@ digraph G {
 "wazuh/wazuh-docker" -> "StamusNetworks/SELKS"
 "wazuh/wazuh-docker" -> "wazuh/wazuh-chef"
 "wazuh/wazuh-docker" -> "wazuh/docker-ossec"
+"austin-taylor/flare" -> "SuperCowPowers/zat" ["e"=1]
 "joanbono/Snorter" -> "shendo/websnort"
 "joanbono/Snorter" -> "firnsy/barnyard2"
 "pevma/SEPTun" -> "pevma/SEPTun-Mark-II"
@@ -511,18 +550,18 @@ digraph G {
 "secureworks/flowsynth" ["l"="-42.601,-31.312"]
 "jasonish/evebox" ["l"="-42.611,-31.283"]
 "StamusNetworks/scirius" ["l"="-42.634,-31.274"]
-"ptresearch/AttackDetection" ["l"="-44.842,-29.571"]
+"ptresearch/AttackDetection" ["l"="-44.842,-29.571", "c"=3]
 "jasonish/py-idstools" ["l"="-42.658,-31.28"]
 "OISF/suricata-update" ["l"="-42.638,-31.304"]
 "pevma/SEPTun" ["l"="-42.553,-31.269"]
 "tenzir/tenzir" ["l"="-42.519,-31.294"]
-"al0ne/suricata-rules" ["l"="-44.716,-29.62"]
-"certsocietegenerale/fame" ["l"="-42.968,-31.986"]
+"al0ne/suricata-rules" ["l"="-44.716,-29.62", "c"=3]
+"certsocietegenerale/fame" ["l"="-42.968,-31.986", "c"=143]
 "travisbgreen/hunting-rules" ["l"="-42.624,-31.297"]
 "SuperCowPowers/zat" ["l"="-42.489,-31.306"]
 "shirkdog/pulledpork" ["l"="-42.661,-31.299"]
-"OTRF/Security-Datasets" ["l"="-42.462,-33.157"]
-"google/stenographer" ["l"="-43.122,-32.003"]
+"OTRF/Security-Datasets" ["l"="-42.462,-33.157", "c"=79]
+"google/stenographer" ["l"="-43.122,-32.003", "c"=143]
 "robcowart/synesis_lite_suricata" ["l"="-42.612,-31.245"]
 "robcowart/synesis_lite_snort" ["l"="-42.595,-31.207"]
 "al0ne/suricata_optimize" ["l"="-42.595,-31.254"]
@@ -530,17 +569,23 @@ digraph G {
 "StamusNetworks/Amsterdam" ["l"="-42.593,-31.34"]
 "OISF/suricata-verify" ["l"="-42.645,-31.332"]
 "StamusNetworks/KTS" ["l"="-42.629,-31.216"]
-"OISF/suricata" ["l"="-42.763,-33.365"]
+"OISF/suricata" ["l"="-42.763,-33.365", "c"=79]
+"target/strelka" ["l"="-42.43,-33.237", "c"=79]
 "OISF/libhtp" ["l"="-42.662,-31.344"]
 "secureworks/aristotle" ["l"="-42.669,-31.323"]
-"Security-Onion-Solutions/security-onion" ["l"="-42.63,-33.317"]
-"arkime/arkime" ["l"="-42.65,-33.375"]
-"cisagov/Malcolm" ["l"="-42.407,-33.28"]
-"Security-Onion-Solutions/securityonion" ["l"="-42.633,-33.292"]
-"rocknsm/rock" ["l"="-43.165,-32.004"]
-"philhagen/sof-elk" ["l"="-42.506,-33.233"]
-"zeek/zeek" ["l"="-42.689,-33.369"]
-"Cyb3rWard0g/HELK" ["l"="-42.518,-33.263"]
+"Security-Onion-Solutions/security-onion" ["l"="-42.63,-33.317", "c"=79]
+"arkime/arkime" ["l"="-42.65,-33.375", "c"=79]
+"cisagov/Malcolm" ["l"="-42.407,-33.28", "c"=79]
+"Security-Onion-Solutions/securityonion" ["l"="-42.633,-33.292", "c"=79]
+"rocknsm/rock" ["l"="-43.165,-32.004", "c"=143]
+"philhagen/sof-elk" ["l"="-42.506,-33.233", "c"=79]
+"zeek/zeek" ["l"="-42.689,-33.369", "c"=79]
+"Cyb3rWard0g/HELK" ["l"="-42.518,-33.263", "c"=79]
+"1aN0rmus/TekDefense-Automater" ["l"="-43.087,-31.966", "c"=143]
+"jonschipp/mal-dnssearch" ["l"="-42.33,-31.348"]
+"csirtgadgets/massive-octo-spice" ["l"="-43.107,-31.958", "c"=143]
+"michalpurzynski/bro-gramming" ["l"="-42.448,-31.321"]
+"mitre-attack/bzar" ["l"="-42.499,-33.174", "c"=79]
 "shendo/websnort" ["l"="-42.689,-31.28"]
 "EmergingThreats/et-luajit-scripts" ["l"="-42.697,-31.241"]
 "firnsy/barnyard2" ["l"="-42.7,-31.298"]
@@ -567,15 +612,18 @@ digraph G {
 "reservoirlabs/bro-scripts" ["l"="-42.432,-31.327"]
 "sooshie/bro-scripts" ["l"="-42.437,-31.334"]
 "grigorescu/bro-scripts" ["l"="-42.411,-31.356"]
+"brimdata/zui" ["l"="-42.498,-33.251", "c"=79]
+"brimdata/super" ["l"="-42.512,-31.237"]
+"brimdata/brimcap" ["l"="-42.493,-31.203"]
 "LiamRandall/bro-scripts" ["l"="-42.432,-31.315"]
 "phirelight/bro-scripts" ["l"="-42.466,-31.331"]
 "zeek/bro-scripts" ["l"="-42.431,-31.343"]
 "CrowdStrike/cs-bro" ["l"="-42.448,-31.332"]
-"michalpurzynski/bro-gramming" ["l"="-42.448,-31.321"]
 "sethhall/bro-scripts" ["l"="-42.42,-31.339"]
 "securitykitten/bro_scripts" ["l"="-42.414,-31.311"]
 "anthonykasza/scratch_pad" ["l"="-42.398,-31.32"]
 "evernote/bro-scripts" ["l"="-42.418,-31.321"]
+"SuperCowPowers/data_hacking" ["l"="-43.091,-31.811", "c"=143]
 "blacktop/docker-zeek" ["l"="-42.512,-31.343"]
 "zeek/zeek-docker" ["l"="-42.523,-31.331"]
 "blacktop/docker-bro" ["l"="-42.499,-31.328"]
@@ -590,7 +638,7 @@ digraph G {
 "JustinAzoff/zeek-pdns" ["l"="-42.39,-31.354"]
 "zeek/bro-plugins" ["l"="-42.395,-31.339"]
 "broala/bro-xor-exe-plugin" ["l"="-42.373,-31.371"]
-"sudohyak/suricata-rules" ["l"="-42.325,-32.594"]
+"sudohyak/suricata-rules" ["l"="-42.325,-32.594", "c"=79]
 "wazuh/wazuh-qa" ["l"="-42.756,-31.116"]
 "wazuh/wazuh-api" ["l"="-42.743,-31.128"]
 "LiamRandall/BroMalware-Exercise" ["l"="-42.428,-31.365"]
@@ -607,24 +655,26 @@ digraph G {
 "DCSO/balboa" ["l"="-42.57,-31.453"]
 "bro/bro-osquery" ["l"="-42.356,-31.287"]
 "corelight/zeek-elf" ["l"="-42.336,-31.276"]
-"brimdata/super" ["l"="-42.512,-31.237"]
-"brimdata/zui" ["l"="-42.498,-33.251"]
-"brimdata/brimcap" ["l"="-42.493,-31.203"]
-"vortex-data/vortex" ["l"="-0.315,14.946"]
+"snort3/snort3" ["l"="-42.817,-33.373", "c"=79]
+"vortex-data/vortex" ["l"="-0.315,14.946", "c"=729]
 "brimdata/zed-sample-data" ["l"="-42.517,-31.211"]
-"CriticalPathSecurity/Zeek-Intelligence-Feeds" ["l"="-42.224,-33.272"]
-"cisco/mercury" ["l"="-40.222,-32.931"]
+"CriticalPathSecurity/Zeek-Intelligence-Feeds" ["l"="-42.224,-33.272", "c"=79]
+"cisco/mercury" ["l"="-40.222,-32.931", "c"=903]
 "juttle/juttle" ["l"="-42.472,-31.172"]
+"tempesta-tech/tempesta" ["l"="6.015,-5.008", "c"=749]
 "ozuriexv/SublimeSuricata" ["l"="-42.619,-31.322"]
 "jasonish/docker-suricata" ["l"="-42.578,-31.311"]
 "zeek/zeek-agent" ["l"="-42.203,-31.372"]
 "corelight/json-tcp-lb" ["l"="-42.184,-31.362"]
 "0xl3x1/zeek-EternalSafety" ["l"="-42.179,-31.383"]
 "mixmodeai/bro_intel_linter" ["l"="-42.24,-31.365"]
+"zeek/spicy" ["l"="-43.025,-36.413", "c"=306]
+"zeek/packages" ["l"="-42.459,-31.305"]
+"iqiyi/qnsm" ["l"="-44.889,-29.611", "c"=3]
+"google/gonids" ["l"="-42.567,-31.386"]
 "JustinAzoff/flow-indexer" ["l"="-42.359,-31.354"]
 "jonschipp/ISLET" ["l"="-42.325,-31.371"]
 "open-nsm/ContainNSM" ["l"="-42.339,-31.39"]
-"jonschipp/mal-dnssearch" ["l"="-42.33,-31.348"]
 "darkphyber/bro" ["l"="-42.472,-31.298"]
 "exp0se/bro-intel-generator" ["l"="-42.466,-31.351"]
 "hosom/file-extraction" ["l"="-42.451,-31.367"]
@@ -637,67 +687,71 @@ digraph G {
 "criticalstack/brotop" ["l"="-42.503,-31.357"]
 "brimdata/zeek-tsv-http-plugin" ["l"="-42.459,-31.139"]
 "brimdata/zync" ["l"="-42.447,-31.126"]
+"Invoke-IR/Uproot" ["l"="-41.171,-32.354", "c"=289]
 "precurse/zeek-httpattacks" ["l"="-42.159,-31.39"]
 "zeek/broker" ["l"="-42.434,-31.26"]
 "zeek/package-manager" ["l"="-42.455,-31.279"]
 "m-chrome/go-suricataparser" ["l"="-42.72,-31.252"]
 "broala/bro-shellshock" ["l"="-42.344,-31.316"]
 "brimdata/sharkfest-21" ["l"="-42.459,-31.117"]
+"CrowdStrike/Forensics" ["l"="-41.194,-32.418", "c"=289]
+"lmco/laikaboss" ["l"="-43.022,-31.982", "c"=143]
 "Snorby/snorby" ["l"="-42.712,-31.32"]
 "joanbono/Snorter" ["l"="-42.716,-31.281"]
 "da667/Autosnort" ["l"="-42.702,-31.346"]
+"phaethon/kamene" ["l"="-40.33,-32.978", "c"=903]
 "theflakes/sigma_to_wazuh" ["l"="-42.852,-31.144"]
 "krkhan/openwrt-bro" ["l"="-42.369,-31.308"]
 "socfortress/Wazuh-Rules" ["l"="-42.812,-31.167"]
 "wazuh/wazuh-splunk" ["l"="-42.729,-31.152"]
 "magenx/WAZUH-OSSEC" ["l"="-42.757,-31.207"]
-"BinaryDefense/auto-ossec" ["l"="-47.207,-34.703"]
+"BinaryDefense/auto-ossec" ["l"="-47.207,-34.703", "c"=204]
+"Karneades/awesome-malware-persistence" ["l"="28.333,-24.251", "c"=895]
+"satta/awesome-suricata" ["l"="-42.554,-31.337"]
+"stratosphereips/StratosphereLinuxIPS" ["l"="-40.102,-33.004", "c"=903]
+"EmersonElectricCo/fsf" ["l"="-43.1,-32.017", "c"=143]
 "wazuh/docker-ossec" ["l"="-42.724,-31.168"]
 "juttle/juttle-engine" ["l"="-42.447,-31.156"]
 "hillar/CDMCS" ["l"="-42.615,-31.391"]
 "sheharbano/BotFlex" ["l"="-42.397,-31.374"]
-"satta/awesome-suricata" ["l"="-42.554,-31.337"]
 "hosom/bro-phishing" ["l"="-42.281,-31.356"]
 "zeek/zeek-osquery" ["l"="-42.387,-31.306"]
 "da667/Autosuricata" ["l"="-42.716,-31.371"]
 "socfortress/CoPilot" ["l"="-42.848,-31.18"]
-"socfortress/Playbooks" ["l"="-42.138,-33.195"]
-"dfir-iris/iris-web" ["l"="-42.315,-33.253"]
-"Shuffle/Shuffle" ["l"="-42.393,-33.265"]
-"tguard-soc-package/nusantara" ["l"="-45.034,-34.017"]
+"socfortress/Playbooks" ["l"="-42.138,-33.195", "c"=79]
+"dfir-iris/iris-web" ["l"="-42.315,-33.253", "c"=79]
+"Shuffle/Shuffle" ["l"="-42.393,-33.265", "c"=79]
+"tguard-soc-package/nusantara" ["l"="-45.034,-34.017", "c"=611]
 "socfortress/OSSIEM" ["l"="-42.866,-31.169"]
-"olafhartong/sysmon-modular" ["l"="-42.45,-33.176"]
-"WithSecureLabs/chainsaw" ["l"="-42.339,-33.258"]
-"SecurityBrewery/catalyst" ["l"="-42.338,-33.212"]
+"olafhartong/sysmon-modular" ["l"="-42.45,-33.176", "c"=79]
+"WithSecureLabs/chainsaw" ["l"="-42.339,-33.258", "c"=79]
+"SecurityBrewery/catalyst" ["l"="-42.338,-33.212", "c"=79]
 "klingerko/nids-rule-library" ["l"="-42.563,-31.366"]
-"Karneades/awesome-security-card-games" ["l"="28.321,-24.193"]
+"Karneades/awesome-security-card-games" ["l"="28.321,-24.193", "c"=895]
 "wazuh/wazuh-dashboard" ["l"="-42.797,-31.095"]
 "wazuh/wazuh-security-dashboards-plugin" ["l"="-42.807,-31.076"]
 "wazuh/wazuh-bosh" ["l"="-42.73,-31.117"]
 "wazuh/ossec-hids" ["l"="-42.733,-31.1"]
-"zeek/packages" ["l"="-42.459,-31.305"]
 "emojifier/emojifier" ["l"="-42.471,-31.314"]
 "ccdcoe/CDMCS" ["l"="-42.631,-31.423"]
-"wazuh/wazuh" ["l"="-42.709,-33.342"]
-"TheHive-Project/Cortex" ["l"="-42.458,-33.344"]
+"apache/incubator-spot" ["l"="-43.328,-32.076", "c"=143]
+"wazuh/wazuh" ["l"="-42.709,-33.342", "c"=79]
+"TheHive-Project/Cortex" ["l"="-42.458,-33.344", "c"=79]
+"austin-taylor/flare" ["l"="-42.339,-33.047", "c"=79]
 "corelight/zeek-cheatsheets" ["l"="-42.481,-31.262"]
 "corelight/threat-hunting-guide" ["l"="-42.456,-31.236"]
-"google/gonids" ["l"="-42.567,-31.386"]
 "rhaist/surevego" ["l"="-42.56,-31.409"]
 "ks2211/go-suricata" ["l"="-42.58,-31.407"]
 "dLoProdz/OSSIEM" ["l"="-42.894,-31.168"]
-"ThreatHuntingProject/hunter" ["l"="-43.209,-31.639"]
+"ThreatHuntingProject/hunter" ["l"="-43.209,-31.639", "c"=143]
 "spitfire55/MegaDev" ["l"="-42.51,-31.314"]
-"target/strelka" ["l"="-42.43,-33.237"]
-"mitre-attack/bzar" ["l"="-42.499,-33.174"]
-"PUNCH-Cyber/stoq" ["l"="-43.005,-31.944"]
+"PUNCH-Cyber/stoq" ["l"="-43.005,-31.944", "c"=143]
 "mrtc0/wazuh" ["l"="-42.765,-31.099"]
-"Netflix/Fido" ["l"="-43.067,-31.98"]
-"DAddYE/foreverb" ["l"="2.887,-35.522"]
-"pwnlandia/mhn" ["l"="-42.658,-33.505"]
+"Netflix/Fido" ["l"="-43.067,-31.98", "c"=143]
+"DAddYE/foreverb" ["l"="2.887,-35.522", "c"=171]
+"pwnlandia/mhn" ["l"="-42.658,-33.505", "c"=79]
 "mcholste/elsa" ["l"="-42.761,-31.355"]
-"sinatra/rack-protection" ["l"="2.912,-35.497"]
-"jejacks0n/navigasmic" ["l"="2.971,-35.422"]
-"omriher/CapTipper" ["l"="-42.986,-31.938"]
-"snort3/snort3" ["l"="-42.817,-33.373"]
+"sinatra/rack-protection" ["l"="2.912,-35.497", "c"=171]
+"jejacks0n/navigasmic" ["l"="2.971,-35.422", "c"=171]
+"omriher/CapTipper" ["l"="-42.986,-31.938", "c"=143]
 }

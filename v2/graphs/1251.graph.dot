@@ -1,4 +1,10 @@
 digraph G {
+"rhash/RHash" -> "XKCP/XKCP" ["e"=1]
+"rhash/RHash" -> "coruus/keccak-tiny" ["e"=1]
+"magic-wormhole/magic-wormhole.rs" -> "jedisct1/rsign2" ["e"=1]
+"aklomp/base64" -> "zhicheng/base64" ["e"=1]
+"aklomp/base64" -> "jwerle/b64.c" ["e"=1]
+"FiloSottile/age" -> "jedisct1/minisign" ["e"=1]
 "libtom/libtomfloat" -> "libtom/libtompoly"
 "libtom/libtomfloat" -> "libtom/tomsfastmath"
 "Wenyi-M/des" -> "tarequeh/DES"
@@ -39,6 +45,7 @@ digraph G {
 "XKCP/XKCP" -> "open-quantum-safe/liboqs"
 "XKCP/XKCP" -> "pq-crystals/dilithium"
 "XKCP/XKCP" -> "jedisct1/libhydrogen"
+"wg/scrypt" -> "Tarsnap/scrypt" ["e"=1]
 "veorq/SipHash" -> "veorq/BLAKE"
 "veorq/SipHash" -> "google/highwayhash" ["e"=1]
 "veorq/SipHash" -> "floodyberry/siphash"
@@ -55,6 +62,8 @@ digraph G {
 "microsoft/PQCrypto-LWEKE" -> "microsoft/PQCrypto-PatchforOpenSSH"
 "microsoft/PQCrypto-LWEKE" -> "microsoft/LWE_Library" ["e"=1]
 "microsoft/PQCrypto-LWEKE" -> "microsoft/Picnic"
+"okdshin/PicoSHA2" -> "kkAyataka/plusaes" ["e"=1]
+"ProtonMail/gopenpgp" -> "cloudflare/circl" ["e"=1]
 "OPEnSLab-OSU/SSLClient" -> "govorox/SSLClient"
 "OPEnSLab-OSU/SSLClient" -> "khoih-prog/EthernetWebServer_SSL"
 "OPEnSLab-OSU/SSLClient" -> "arduino-libraries/ArduinoBearSSL"
@@ -106,6 +115,7 @@ digraph G {
 "microsoft/PQCrypto-VPN" -> "open-quantum-safe/openssh"
 "microsoft/PQCrypto-VPN" -> "exaexa/codecrypt"
 "microsoft/PQCrypto-VPN" -> "microsoft/PQCrypto-PatchforOpenSSH"
+"stbrumme/hash-library" -> "kkAyataka/plusaes" ["e"=1]
 "mupq/pqm4" -> "PQClean/PQClean"
 "mupq/pqm4" -> "pq-crystals/kyber"
 "mupq/pqm4" -> "GiacomoPope/kyber-py"
@@ -123,9 +133,12 @@ digraph G {
 "mupq/pqm4" -> "jasmin-lang/jasmin" ["e"=1]
 "suculent/thinx-aes-lib" -> "DavyLandman/AESLib"
 "suculent/thinx-aes-lib" -> "kakopappa/esp8266-aes-cbc-encryption-decryption"
+"veorq/cryptocoding" -> "PQClean/PQClean" ["e"=1]
+"veorq/cryptocoding" -> "claucece/useful-crypto-resources" ["e"=1]
 "open-quantum-safe/openssh" -> "open-quantum-safe/openssl"
 "open-quantum-safe/openssh" -> "open-quantum-safe/boringssl"
 "open-quantum-safe/openssh" -> "open-quantum-safe/oqs-demos"
+"trezor/trezor-crypto" -> "ctz/cifra" ["e"=1]
 "sphincs/sphincsplus" -> "pq-crystals/dilithium"
 "sphincs/sphincsplus" -> "PQClean/PQClean"
 "sphincs/sphincsplus" -> "sphincs/pyspx"
@@ -161,6 +174,7 @@ digraph G {
 "PQClean/PQClean" -> "microsoft/PQCrypto-VPN"
 "PQClean/PQClean" -> "open-quantum-safe/openssl"
 "PQClean/PQClean" -> "GlowMany/quicksilver-mainnet"
+"NTRUOpenSourceProject/ntru-crypto" -> "defeo/ss-isogeny-software" ["e"=1]
 "kokke/tiny-ECDH-c" -> "kokke/tiny-HMAC-c"
 "kokke/tiny-ECDH-c" -> "kmackay/micro-ecc"
 "kokke/tiny-ECDH-c" -> "kokke/tiny-bignum-c"
@@ -216,8 +230,14 @@ digraph G {
 "shaojunhan/RSA" -> "shanet/Crypto-Example"
 "eduardsui/edwork" -> "Devronium/ConceptApplicationServer"
 "JJChiDguez/csidh" -> "JJChiDguez/sqale-csidh-velusqrt"
+"tink-crypto/tink" -> "jedisct1/libsodium" ["e"=1]
 "bitcoin/libbase58" -> "bitcoin/libblkmaker"
 "bitcoin/libbase58" -> "luke-jr/libbase58"
+"wolfSSL/wolfssl" -> "libtom/libtomcrypt" ["e"=1]
+"wolfSSL/wolfssl" -> "kmackay/micro-ecc" ["e"=1]
+"aws/s2n-tls" -> "jedisct1/libsodium" ["e"=1]
+"janmojzis/tinyssh" -> "jedisct1/libhydrogen" ["e"=1]
+"str4d/rage" -> "jedisct1/minisign" ["e"=1]
 "ctz/cifra" -> "kmackay/micro-ecc"
 "ctz/cifra" -> "trezor/trezor-crypto" ["e"=1]
 "ctz/cifra" -> "norx/norx"
@@ -228,21 +248,31 @@ digraph G {
 "ctz/cifra" -> "intel/tinycrypt"
 "ctz/cifra" -> "ctz/fastpbkdf2"
 "ctz/cifra" -> "khovratovich/Argon2"
+"aws/aws-lc" -> "pq-code-package/mlkem-native" ["e"=1]
+"aws/aws-lc" -> "PQClean/PQClean" ["e"=1]
 "open-quantum-safe/oqs-demos" -> "open-quantum-safe/oqs-provider"
 "open-quantum-safe/oqs-demos" -> "open-quantum-safe/boringssl"
 "open-quantum-safe/oqs-demos" -> "open-quantum-safe/openssl"
 "open-quantum-safe/oqs-demos" -> "open-quantum-safe/openssh"
 "open-quantum-safe/oqs-demos" -> "open-quantum-safe/liboqs-cpp"
 "open-quantum-safe/oqs-demos" -> "open-quantum-safe/liboqs-python"
+"keys-pub/keys" -> "jedisct1/minisign" ["e"=1]
+"jedisct1/libsodium.js" -> "jedisct1/libsodium" ["e"=1]
+"jedisct1/libsodium.js" -> "jedisct1/libhydrogen" ["e"=1]
+"saljam/webwormhole" -> "jedisct1/minisign" ["e"=1]
 "JJChiDguez/sibc" -> "JJChiDguez/sqale-csidh-velusqrt"
 "JJChiDguez/sibc" -> "JJChiDguez/csidh"
 "JJChiDguez/sibc" -> "SQISign/sqisign-ac20-obsolete"
+"libressl/portable" -> "libtom/libtomcrypt" ["e"=1]
+"libressl/portable" -> "BLAKE2/BLAKE2" ["e"=1]
 "acmert/parametric-ntt" -> "kemalderya/pqc-param-ntt"
 "acmert/parametric-ntt" -> "xiang-rc/cfntt_ref"
 "acmert/parametric-ntt" -> "KULeuven-COSIC/NTRU_NTT_HW"
 "acmert/parametric-ntt" -> "acmert/kyber-polmul-hw"
 "acmert/parametric-ntt" -> "GMUCERG/Dilithium"
 "acmert/parametric-ntt" -> "xingyf14/CRYSTALS-Kyber"
+"dedis/kyber" -> "cloudflare/circl" ["e"=1]
+"dedis/kyber" -> "bwesterb/go-ristretto" ["e"=1]
 "open-quantum-safe/liboqs-rust" -> "rustpq/pqcrypto"
 "jwerle/b64.c" -> "zhicheng/base64"
 "spaniakos/AES" -> "DavyLandman/AESLib"
@@ -257,7 +287,9 @@ digraph G {
 "acmert/kyber-polmul-hw" -> "xingyf14/CRYSTALS-Kyber"
 "acmert/kyber-polmul-hw" -> "GMUCERG/Dilithium"
 "bitcoin/libblkmaker" -> "bitcoin/libbase58"
+"weidai11/cryptopp" -> "jedisct1/libsodium" ["e"=1]
 "msotoodeh/curve25519" -> "agl/curve25519-donna"
+"stealth/opmsg" -> "exaexa/codecrypt" ["e"=1]
 "jedisct1/minisign" -> "jedisct1/encpipe"
 "jedisct1/minisign" -> "str4d/rage" ["e"=1]
 "jedisct1/minisign" -> "FiloSottile/age" ["e"=1]
@@ -273,6 +305,8 @@ digraph G {
 "jedisct1/minisign" -> "jedisct1/piknik" ["e"=1]
 "jedisct1/minisign" -> "samuel-lucas6/Kryptor" ["e"=1]
 "jedisct1/minisign" -> "jedisct1/rsign2"
+"FiloSottile/passage" -> "jedisct1/minisign" ["e"=1]
+"FiloSottile/passage" -> "aperezdc/signify" ["e"=1]
 "intel/tinycrypt" -> "intel/tinycbor" ["e"=1]
 "intel/tinycrypt" -> "kmackay/micro-ecc"
 "intel/tinycrypt" -> "ctz/cifra"
@@ -306,6 +340,7 @@ digraph G {
 "Tarsnap/tarsnap" -> "aperezdc/signify"
 "Tarsnap/tarsnap" -> "alexjurkiewicz/acts"
 "Tarsnap/tarsnap" -> "str4d/rage" ["e"=1]
+"zlib-ng/minizip-ng" -> "libtom/libtomcrypt" ["e"=1]
 "open-quantum-safe/oqs-provider" -> "open-quantum-safe/oqs-demos"
 "open-quantum-safe/oqs-provider" -> "open-quantum-safe/openssl"
 "open-quantum-safe/oqs-provider" -> "open-quantum-safe/liboqs"
@@ -316,6 +351,7 @@ digraph G {
 "open-quantum-safe/oqs-provider" -> "PQClean/PQClean"
 "open-quantum-safe/oqs-provider" -> "open-quantum-safe/liboqs-python"
 "JJChiDguez/sqale-csidh-velusqrt" -> "JJChiDguez/csidh"
+"intel/tinycbor" -> "intel/tinycrypt" ["e"=1]
 "khovratovich/Argon2" -> "norx/norx"
 "Argyle-Software/kyber" -> "Argyle-Software/dilithium"
 "Argyle-Software/kyber" -> "rustpq/pqcrypto"
@@ -368,10 +404,26 @@ digraph G {
 "rweather/arduinolibs" -> "arduino-libraries/ArduinoBearSSL"
 "rweather/arduinolibs" -> "ricaun/ArduinoUniqueID" ["e"=1]
 "rweather/arduinolibs" -> "sandeepmistry/arduino-LoRa" ["e"=1]
+"P-H-C/phc-winner-argon2" -> "jedisct1/libsodium" ["e"=1]
+"P-H-C/phc-winner-argon2" -> "Tarsnap/scrypt" ["e"=1]
+"P-H-C/phc-winner-argon2" -> "BLAKE2/BLAKE2" ["e"=1]
+"P-H-C/phc-winner-argon2" -> "open-quantum-safe/liboqs" ["e"=1]
+"signalapp/libsignal-protocol-c" -> "veorq/SipHash" ["e"=1]
+"signalapp/libsignal-protocol-c" -> "BLAKE2/BLAKE2" ["e"=1]
+"signalapp/libsignal-protocol-c" -> "jedisct1/libsodium" ["e"=1]
 "agl/curve25519-donna" -> "msotoodeh/curve25519"
 "agl/curve25519-donna" -> "floodyberry/ed25519-donna"
 "agl/curve25519-donna" -> "orlp/ed25519"
 "agl/curve25519-donna" -> "microsoft/FourQlib"
+"mit-plv/fiat-crypto" -> "microsoft/PQCrypto-SIDH" ["e"=1]
+"google/cityhash" -> "veorq/SipHash" ["e"=1]
+"nodejs/TSC" -> "tniessen/node-pqclean" ["e"=1]
+"nodejs/TSC" -> "mildsunrise/cursed_gpu_linux" ["e"=1]
+"nodejs/TSC" -> "wintercg/proposal-webcrypto-streams" ["e"=1]
+"nodejs/TSC" -> "dsprenkels/randombytes" ["e"=1]
+"nodejs/TSC" -> "claucece/useful-crypto-resources" ["e"=1]
+"nodejs/TSC" -> "GlowMany/quicksilver-mainnet" ["e"=1]
+"nodejs/TSC" -> "cloudflare/mitmengine" ["e"=1]
 "brainhub/SHA3IUF" -> "mjosaarinen/tiny_sha3"
 "BLAKE2/libb2" -> "BLAKE2/BLAKE2"
 "BLAKE2/libb2" -> "norx/norx"
@@ -408,6 +460,7 @@ digraph G {
 "intrbiz/arduino-crypto" -> "MatthewGaber/ESP8266BitcoinMiner"
 "intrbiz/arduino-crypto" -> "kakopappa/arduino-esp8266-aes-lib"
 "intrbiz/arduino-crypto" -> "kakopappa/arduino-esp8266-aes-encryption-with-nodejs"
+"google/highwayhash" -> "veorq/SipHash" ["e"=1]
 "B-Con/crypto-algorithms" -> "kokke/tiny-AES-c"
 "B-Con/crypto-algorithms" -> "dhuertas/AES"
 "B-Con/crypto-algorithms" -> "libtom/libtomcrypt"
@@ -462,6 +515,7 @@ digraph G {
 "Argyle-Software/dilithium" -> "Argyle-Software/kyber"
 "Argyle-Software/dilithium" -> "Argyle-Software/sphincsplus"
 "creachadair/imath" -> "suiginsoft/hebimath"
+"cloudflare/tls-tris" -> "cloudflarearchive/sidh" ["e"=1]
 "mildsunrise/cursed_gpu_linux" -> "tniessen/node-pqclean"
 "mildsunrise/cursed_gpu_linux" -> "dsprenkels/randombytes"
 "mildsunrise/cursed_gpu_linux" -> "wintercg/proposal-webcrypto-streams"
@@ -476,11 +530,16 @@ digraph G {
 "tniessen/node-pqclean" -> "GlowMany/quicksilver-mainnet"
 "conorpp/bitsliced-aes" -> "usubalang/usuba"
 "fschlieker/ring-TESLA" -> "mjosaarinen/hilabliss"
+"Mbed-TLS/mbedtls" -> "kokke/tiny-AES-c" ["e"=1]
+"bitwiseshiftleft/sjcl" -> "jedisct1/libsodium" ["e"=1]
+"jedisct1/piknik" -> "jedisct1/minisign" ["e"=1]
+"jedisct1/piknik" -> "jedisct1/encpipe" ["e"=1]
 "tarequeh/DES" -> "dhuertas/DES"
 "tarequeh/DES" -> "Wenyi-M/des"
 "tarequeh/DES" -> "fffaraz/cppDES"
 "tarequeh/DES" -> "andrewkiluk/RSA-Library"
 "tarequeh/DES" -> "dhuertas/AES"
+"rosenpass/rosenpass" -> "rustpq/pqcrypto" ["e"=1]
 "open-quantum-safe/liboqs" -> "PQClean/PQClean"
 "open-quantum-safe/liboqs" -> "open-quantum-safe/openssl"
 "open-quantum-safe/liboqs" -> "pq-crystals/kyber"
@@ -508,6 +567,10 @@ digraph G {
 "open-quantum-safe/openssl" -> "pq-crystals/kyber"
 "open-quantum-safe/openssl" -> "microsoft/Picnic"
 "open-quantum-safe/openssl" -> "open-quantum-safe/liboqs-cpp"
+"mildsunrise/protobuf-inspector" -> "mildsunrise/cursed_gpu_linux" ["e"=1]
+"mildsunrise/protobuf-inspector" -> "tniessen/node-pqclean" ["e"=1]
+"mildsunrise/protobuf-inspector" -> "dsprenkels/randombytes" ["e"=1]
+"tlsfuzzer/python-ecdsa" -> "kmackay/micro-ecc" ["e"=1]
 "exaexa/codecrypt" -> "annealmail/annealmail"
 "exaexa/codecrypt" -> "microsoft/PQCrypto-VPN"
 "Cathedrow/Cryptosuite" -> "DavyLandman/AESLib"
@@ -556,6 +619,7 @@ digraph G {
 "libtom/tomsfastmath" -> "libtom/libtomfloat"
 "libtom/tomsfastmath" -> "libtom/libtompoly"
 "libtom/tomsfastmath" -> "libtom/libtommath"
+"cloudflare/gokey" -> "cloudflare/circl" ["e"=1]
 "dhuertas/AES" -> "WaterJuice/WjCryptLib"
 "dhuertas/AES" -> "kokke/tiny-AES-c"
 "dhuertas/AES" -> "dhuertas/block-cipher-modes"
@@ -571,8 +635,11 @@ digraph G {
 "dhuertas/AES" -> "Urban82/Aes256"
 "dhuertas/AES" -> "shaojunhan/RSA"
 "dhuertas/AES" -> "kkAyataka/plusaes"
+"h2o/picotls" -> "eduardsui/tlse" ["e"=1]
+"h2o/picotls" -> "ctz/cifra" ["e"=1]
 "zhicheng/base64" -> "jwerle/b64.c"
 "zhicheng/base64" -> "elzoughby/Base64"
+"cr-marcstevens/sha1collisiondetection" -> "XKCP/XKCP" ["e"=1]
 "BLAKE2/BLAKE2" -> "BLAKE2/libb2"
 "BLAKE2/BLAKE2" -> "XKCP/XKCP"
 "BLAKE2/BLAKE2" -> "minio/blake2b-simd" ["e"=1]
@@ -583,7 +650,9 @@ digraph G {
 "BLAKE2/BLAKE2" -> "veorq/BLAKE"
 "BLAKE2/BLAKE2" -> "mjosaarinen/tiny_sha3"
 "BLAKE2/BLAKE2" -> "NebulousLabs/Sia-GPU-Miner" ["e"=1]
+"brandur/redis-cell" -> "Tarsnap/spiped" ["e"=1]
 "majek/csiphash" -> "floodyberry/siphash"
+"lammertb/libcrc" -> "intel/tinycrypt" ["e"=1]
 "orlp/ed25519" -> "floodyberry/ed25519-donna"
 "orlp/ed25519" -> "msotoodeh/curve25519"
 "orlp/ed25519" -> "agl/curve25519-donna"
@@ -609,6 +678,18 @@ digraph G {
 "claucece/useful-crypto-resources" -> "GlowMany/relayer"
 "claucece/useful-crypto-resources" -> "PQClean/PQClean"
 "pq-code-package/mlkem-native" -> "pq-code-package/mlkem-c-embedded"
+"nodejs/node-addon-api" -> "tniessen/node-pqclean" ["e"=1]
+"nodejs/node-addon-api" -> "mildsunrise/cursed_gpu_linux" ["e"=1]
+"nodejs/node-addon-api" -> "dsprenkels/randombytes" ["e"=1]
+"nodejs/node-addon-api" -> "wintercg/proposal-webcrypto-streams" ["e"=1]
+"nodejs/node-addon-api" -> "claucece/useful-crypto-resources" ["e"=1]
+"nodejs/node-addon-api" -> "PQClean/PQClean" ["e"=1]
+"randombit/botan" -> "libtom/libtomcrypt" ["e"=1]
+"randombit/botan" -> "jedisct1/libsodium" ["e"=1]
+"mkj/dropbear" -> "libtom/libtommath" ["e"=1]
+"pyca/pynacl" -> "jedisct1/libsodium" ["e"=1]
+"pyca/pynacl" -> "jedisct1/libhydrogen" ["e"=1]
+"pyca/pynacl" -> "open-quantum-safe/liboqs-python" ["e"=1]
 "jedisct1/libhydrogen" -> "LoupVaillant/Monocypher"
 "jedisct1/libhydrogen" -> "jedisct1/minisign"
 "jedisct1/libhydrogen" -> "jedisct1/libsodium"
@@ -624,9 +705,14 @@ digraph G {
 "jedisct1/libhydrogen" -> "rweather/arduinolibs"
 "jedisct1/libhydrogen" -> "rweather/noise-c" ["e"=1]
 "jedisct1/libhydrogen" -> "iqlusioninc/sear" ["e"=1]
+"kokke/tiny-regex-c" -> "kokke/tiny-bignum-c" ["e"=1]
+"kokke/tiny-regex-c" -> "kokke/tiny-AES-c" ["e"=1]
 "matt-wu/AES" -> "dhuertas/AES"
 "matt-wu/AES" -> "mrpre/atls" ["e"=1]
 "matt-wu/AES" -> "kokke/tiny-AES-c"
+"yourtion/LearningMasteringAlgorithms-C" -> "andrewkiluk/RSA-Library" ["e"=1]
+"ReneNyffenegger/cpp-base64" -> "SergeyBel/AES" ["e"=1]
+"dsprenkels/sss" -> "dsprenkels/randombytes" ["e"=1]
 "usubalang/usuba" -> "conorpp/bitsliced-aes"
 "ilvn/SHA256" -> "jb55/sha256.c"
 "ilvn/SHA256" -> "ogay/sha2"
@@ -705,6 +791,16 @@ digraph G {
 "dsprenkels/randombytes" -> "GlowMany/testnet_manuals"
 "dsprenkels/randombytes" -> "GlowMany/testnet"
 "dsprenkels/randombytes" -> "tniessen/fluent-bit"
+"rhash/RHash" ["l"="13.302,-6.793", "c"=67]
+"XKCP/XKCP" ["l"="-21.334,-24.389"]
+"coruus/keccak-tiny" ["l"="-21.333,-24.36"]
+"magic-wormhole/magic-wormhole.rs" ["l"="-19.324,-19.74", "c"=132]
+"jedisct1/rsign2" ["l"="-20.995,-24.477"]
+"aklomp/base64" ["l"="-19.423,-26.031", "c"=10]
+"zhicheng/base64" ["l"="-20.801,-24.154"]
+"jwerle/b64.c" ["l"="-20.764,-24.14"]
+"FiloSottile/age" ["l"="-13.612,-6.947", "c"=86]
+"jedisct1/minisign" ["l"="-21.052,-24.449"]
 "libtom/libtomfloat" ["l"="-20.997,-24.254"]
 "libtom/libtompoly" ["l"="-20.975,-24.247"]
 "libtom/tomsfastmath" ["l"="-20.988,-24.237"]
@@ -734,7 +830,6 @@ digraph G {
 "GlowMany/relayer" ["l"="-21.416,-24.543"]
 "tniessen/content" ["l"="-21.396,-24.481"]
 "GlowMany/validators-contest" ["l"="-21.376,-24.548"]
-"XKCP/XKCP" ["l"="-21.334,-24.389"]
 "KeccakTeam/KeccakTools" ["l"="-21.311,-24.42"]
 "mjosaarinen/tiny_sha3" ["l"="-21.304,-24.367"]
 "mupq/pqm4" ["l"="-21.479,-24.454"]
@@ -743,28 +838,33 @@ digraph G {
 "BLAKE2/BLAKE2" ["l"="-21.266,-24.325"]
 "XKCP/K12" ["l"="-21.34,-24.416"]
 "pq-crystals/kyber" ["l"="-21.486,-24.418"]
-"coruus/keccak-tiny" ["l"="-21.333,-24.36"]
-"kste/cryptosmt" ["l"="-45.765,-34.659"]
+"kste/cryptosmt" ["l"="-45.765,-34.659", "c"=282]
 "BLAKE2/libb2" ["l"="-21.266,-24.352"]
 "open-quantum-safe/liboqs" ["l"="-21.449,-24.416"]
 "pq-crystals/dilithium" ["l"="-21.473,-24.433"]
 "jedisct1/libhydrogen" ["l"="-21.106,-24.352"]
+"wg/scrypt" ["l"="-34.79,0.338", "c"=8]
+"Tarsnap/scrypt" ["l"="-21.019,-24.609"]
 "veorq/SipHash" ["l"="-21.25,-24.291"]
 "veorq/BLAKE" ["l"="-21.274,-24.299"]
-"google/highwayhash" ["l"="-19.512,-25.985"]
+"google/highwayhash" ["l"="-19.512,-25.985", "c"=10]
 "floodyberry/siphash" ["l"="-21.277,-24.273"]
 "majek/csiphash" ["l"="-21.263,-24.261"]
-"veorq/awesome-post-quantum" ["l"="-19.187,13"]
-"wangyi-fudan/wyhash" ["l"="-19.624,-26.067"]
+"veorq/awesome-post-quantum" ["l"="-19.187,13", "c"=173]
+"wangyi-fudan/wyhash" ["l"="-19.624,-26.067", "c"=10]
 "veorq/oee" ["l"="-21.291,-24.245"]
-"veorq/cryptocoding" ["l"="-19.098,12.954"]
+"veorq/cryptocoding" ["l"="-19.098,12.954", "c"=173]
 "khovratovich/Argon2" ["l"="-21.177,-24.313"]
 "norx/norx" ["l"="-21.211,-24.317"]
 "microsoft/PQCrypto-LWEKE" ["l"="-21.443,-24.356"]
 "microsoft/PQCrypto-SIKE" ["l"="-21.43,-24.344"]
 "microsoft/PQCrypto-PatchforOpenSSH" ["l"="-21.447,-24.343"]
-"microsoft/LWE_Library" ["l"="51.193,1.532"]
+"microsoft/LWE_Library" ["l"="51.193,1.532", "c"=378]
 "microsoft/Picnic" ["l"="-21.444,-24.318"]
+"okdshin/PicoSHA2" ["l"="-19.757,-25.981", "c"=10]
+"kkAyataka/plusaes" ["l"="-20.927,-24.084"]
+"ProtonMail/gopenpgp" ["l"="-52.219,7.719", "c"=682]
+"cloudflare/circl" ["l"="-21.522,-24.389"]
 "OPEnSLab-OSU/SSLClient" ["l"="-20.817,-24.401"]
 "govorox/SSLClient" ["l"="-20.788,-24.405"]
 "khoih-prog/EthernetWebServer_SSL" ["l"="-20.798,-24.427"]
@@ -778,7 +878,6 @@ digraph G {
 "libtom/libtomcrypt" ["l"="-21.022,-24.233"]
 "gilgad13/rsa-gmp" ["l"="-20.89,-24.171"]
 "mborisov1/rsa_embedded" ["l"="-20.89,-24.186"]
-"zhicheng/base64" ["l"="-20.801,-24.154"]
 "kokke/tiny-ECDH-c" ["l"="-21.039,-24.197"]
 "ogay/hmac" ["l"="-20.87,-24.197"]
 "maldevel/RSA2048" ["l"="-20.814,-24.186"]
@@ -790,7 +889,7 @@ digraph G {
 "Argyle-Software/dilithium" ["l"="-21.501,-24.49"]
 "itzmeanjan/ml-dsa" ["l"="-21.548,-24.45"]
 "rustpq/pqcrypto" ["l"="-21.503,-24.468"]
-"malb/lattice-estimator" ["l"="51.341,1.443"]
+"malb/lattice-estimator" ["l"="51.341,1.443", "c"=378]
 "open-quantum-safe/openssl" ["l"="-21.463,-24.387"]
 "pq-crystals/security-estimates" ["l"="-21.503,-24.402"]
 "open-quantum-safe/liboqs-python" ["l"="-21.51,-24.415"]
@@ -802,61 +901,62 @@ digraph G {
 "microsoft/PQCrypto-VPN" ["l"="-21.462,-24.365"]
 "open-quantum-safe/openssh" ["l"="-21.481,-24.369"]
 "exaexa/codecrypt" ["l"="-21.501,-24.322"]
-"simple-crypto/SCALib" ["l"="32.112,-5.078"]
+"stbrumme/hash-library" ["l"="-19.634,-26.002", "c"=10]
+"simple-crypto/SCALib" ["l"="32.112,-5.078", "c"=1023]
 "pq-code-package/mlkem-native" ["l"="-21.524,-24.481"]
 "awslabs/bike-kem" ["l"="-21.484,-24.518"]
 "mupq/pqriscv" ["l"="-21.469,-24.478"]
 "mupq/mupq" ["l"="-21.479,-24.485"]
 "xingyf14/CRYSTALS-Kyber" ["l"="-21.579,-24.499"]
-"jasmin-lang/jasmin" ["l"="-22.23,-19.508"]
+"jasmin-lang/jasmin" ["l"="-22.23,-19.508", "c"=392]
 "suculent/thinx-aes-lib" ["l"="-20.919,-24.338"]
 "DavyLandman/AESLib" ["l"="-20.9,-24.316"]
 "kakopappa/esp8266-aes-cbc-encryption-decryption" ["l"="-20.912,-24.358"]
 "open-quantum-safe/boringssl" ["l"="-21.497,-24.358"]
+"trezor/trezor-crypto" ["l"="-18.337,10.565", "c"=122]
+"ctz/cifra" ["l"="-21.135,-24.289"]
 "sphincs/pyspx" ["l"="-21.544,-24.418"]
 "kste/haraka" ["l"="-21.565,-24.428"]
-"cloudflare/circl" ["l"="-21.522,-24.389"]
-"dedis/kyber" ["l"="-16.827,7.542"]
-"tuneinsight/lattigo" ["l"="51.386,1.406"]
-"mit-plv/fiat-crypto" ["l"="-22.237,-19.462"]
-"mmcloughlin/addchain" ["l"="-18.809,13.273"]
-"herumi/mcl" ["l"="50.568,1.908"]
-"cloudflare/gokeyless" ["l"="-20.634,-21.909"]
+"dedis/kyber" ["l"="-16.827,7.542", "c"=509]
+"tuneinsight/lattigo" ["l"="51.386,1.406", "c"=378]
+"mit-plv/fiat-crypto" ["l"="-22.237,-19.462", "c"=392]
+"mmcloughlin/addchain" ["l"="-18.809,13.273", "c"=173]
+"herumi/mcl" ["l"="50.568,1.908", "c"=2204]
+"cloudflare/gokeyless" ["l"="-20.634,-21.909", "c"=245]
 "gtank/ristretto255" ["l"="-21.6,-24.353"]
-"cloudflare/bn256" ["l"="50.526,1.882"]
+"cloudflare/bn256" ["l"="50.526,1.882", "c"=2204]
 "bwesterb/go-ristretto" ["l"="-21.572,-24.353"]
+"NTRUOpenSourceProject/ntru-crypto" ["l"="51.217,1.572", "c"=378]
+"defeo/ss-isogeny-software" ["l"="-21.47,-24.309"]
 "kokke/tiny-HMAC-c" ["l"="-21.06,-24.155"]
 "kmackay/micro-ecc" ["l"="-21.06,-24.25"]
 "kokke/tiny-bignum-c" ["l"="-21.039,-24.171"]
 "esxgx/easy-ecc" ["l"="-21.103,-24.229"]
 "iSECPartners/nano-ecc" ["l"="-21.077,-24.225"]
-"ANSSI-FR/libecc" ["l"="-16.843,9.934"]
+"ANSSI-FR/libecc" ["l"="-16.843,9.934", "c"=303]
 "kokke/tiny-MQTT-c" ["l"="-21.065,-24.176"]
 "thejinchao/dhexchange" ["l"="-21.08,-24.167"]
-"kokke/tiny-regex-c" ["l"="-22.184,-25.916"]
+"kokke/tiny-regex-c" ["l"="-22.184,-25.916", "c"=101]
 "libtom/libtommath" ["l"="-21.004,-24.21"]
 "kokke/tiny-lint-c" ["l"="-21.06,-24.136"]
-"gingerBill/gb" ["l"="-22.17,-25.738"]
+"gingerBill/gb" ["l"="-22.17,-25.738", "c"=101]
 "jedisct1/encpipe" ["l"="-21.086,-24.419"]
-"jedisct1/minisign" ["l"="-21.052,-24.449"]
 "jedisct1/charm" ["l"="-21.111,-24.398"]
 "Argyle-Software/kyber" ["l"="-21.522,-24.5"]
 "sebastienrousseau/kyberlib" ["l"="-21.497,-24.505"]
 "Argyle-Software/sphincsplus" ["l"="-21.511,-24.509"]
-"tprest/Lattice-IBE" ["l"="51.247,1.545"]
+"tprest/Lattice-IBE" ["l"="51.247,1.545", "c"=378]
 "itzmeanjan/falcon" ["l"="-21.545,-24.48"]
 "IAIK/Picnic" ["l"="-21.456,-24.285"]
 "dkales/banquet" ["l"="-21.463,-24.259"]
 "cantora/avr-crypto-lib" ["l"="-20.916,-24.273"]
 "jedisct1/rust-minisign" ["l"="-20.953,-24.495"]
 "jedisct1/rust-minisign-verify" ["l"="-20.926,-24.508"]
-"defeo/ss-isogeny-software" ["l"="-21.47,-24.309"]
 "mjosaarinen/hilabliss" ["l"="-21.491,-24.278"]
 "MatthewGaber/ESP8266BitcoinMiner" ["l"="-20.889,-24.402"]
 "intrbiz/arduino-crypto" ["l"="-20.914,-24.389"]
 "KeccakTeam/Xoodoo" ["l"="-21.29,-24.442"]
 "threehook/go-pedersen-commitment" ["l"="-21.586,-24.331"]
-"jedisct1/rsign2" ["l"="-20.995,-24.477"]
 "MEM-AEAD/mem-aead" ["l"="-21.215,-24.34"]
 "jimmiebergmann/RSA" ["l"="-20.841,-24.088"]
 "dangweizhen/RSA" ["l"="-20.866,-24.066"]
@@ -867,27 +967,35 @@ digraph G {
 "Devronium/ConceptApplicationServer" ["l"="-21.127,-24.149"]
 "JJChiDguez/csidh" ["l"="-21.388,-24.311"]
 "JJChiDguez/sqale-csidh-velusqrt" ["l"="-21.402,-24.305"]
+"tink-crypto/tink" ["l"="-2.358,11.669", "c"=15]
+"jedisct1/libsodium" ["l"="-21.032,-24.374"]
 "bitcoin/libbase58" ["l"="-21.26,-24.13"]
 "bitcoin/libblkmaker" ["l"="-21.277,-24.102"]
 "luke-jr/libbase58" ["l"="-21.226,-24.185"]
-"ctz/cifra" ["l"="-21.135,-24.289"]
-"trezor/trezor-crypto" ["l"="-18.337,10.565"]
+"wolfSSL/wolfssl" ["l"="-18.049,-43.122", "c"=55]
+"aws/s2n-tls" ["l"="-19.422,-25.571", "c"=10]
+"janmojzis/tinyssh" ["l"="2.114,-5.254", "c"=472]
+"str4d/rage" ["l"="-19.233,-19.958", "c"=132]
 "agl/curve25519-donna" ["l"="-21.213,-24.269"]
-"h2o/picotls" ["l"="-10.971,-4.489"]
+"h2o/picotls" ["l"="-10.971,-4.489", "c"=1245]
 "Ko-/aes-armcortexm" ["l"="-21.158,-24.225"]
 "LoupVaillant/Monocypher" ["l"="-21.144,-24.34"]
 "intel/tinycrypt" ["l"="-21.086,-24.283"]
 "ctz/fastpbkdf2" ["l"="-21.138,-24.26"]
+"aws/aws-lc" ["l"="-18.937,-25.482", "c"=10]
 "open-quantum-safe/oqs-provider" ["l"="-21.474,-24.401"]
+"keys-pub/keys" ["l"="-51.99,6.831", "c"=682]
+"jedisct1/libsodium.js" ["l"="-6.446,-35.718", "c"=1859]
+"saljam/webwormhole" ["l"="-19.313,-19.832", "c"=132]
 "JJChiDguez/sibc" ["l"="-21.405,-24.33"]
 "SQISign/sqisign-ac20-obsolete" ["l"="-21.406,-24.349"]
+"libressl/portable" ["l"="-11.067,-4.531", "c"=1245]
 "acmert/parametric-ntt" ["l"="-21.613,-24.529"]
 "kemalderya/pqc-param-ntt" ["l"="-21.632,-24.538"]
 "xiang-rc/cfntt_ref" ["l"="-21.634,-24.554"]
 "KULeuven-COSIC/NTRU_NTT_HW" ["l"="-21.646,-24.534"]
 "acmert/kyber-polmul-hw" ["l"="-21.596,-24.517"]
 "GMUCERG/Dilithium" ["l"="-21.613,-24.513"]
-"jwerle/b64.c" ["l"="-20.764,-24.14"]
 "spaniakos/AES" ["l"="-20.926,-24.312"]
 "Chair-for-Security-Engineering/BIKE" ["l"="-21.491,-24.547"]
 "symbolicsoft/kyber-k2so" ["l"="-21.579,-24.405"]
@@ -895,25 +1003,23 @@ digraph G {
 "rust-crypto-labs/kybe-rs" ["l"="-21.524,-24.529"]
 "addaleax/69" ["l"="-21.45,-24.509"]
 "jedisct1/aes-torture" ["l"="-21.457,-24.52"]
+"weidai11/cryptopp" ["l"="-19.821,-25.644", "c"=10]
 "msotoodeh/curve25519" ["l"="-21.222,-24.245"]
-"str4d/rage" ["l"="-19.233,-19.958"]
-"FiloSottile/age" ["l"="-13.612,-6.947"]
+"stealth/opmsg" ["l"="9.731,-9.409", "c"=14]
 "aperezdc/signify" ["l"="-21.04,-24.508"]
-"FiloSottile/passage" ["l"="-19.277,-19.88"]
+"FiloSottile/passage" ["l"="-19.277,-19.88", "c"=132]
 "Tarsnap/tarsnap" ["l"="-21.022,-24.551"]
-"FiloSottile/awesome-age" ["l"="-19.253,-19.868"]
-"jedisct1/libsodium" ["l"="-21.032,-24.374"]
-"str4d/age-plugin-yubikey" ["l"="-19.257,-19.937"]
-"matiaskorhonen/paper-age" ["l"="-19.28,-19.845"]
-"keys-pub/keys" ["l"="-51.99,6.831"]
-"jedisct1/piknik" ["l"="4.158,-8.094"]
-"samuel-lucas6/Kryptor" ["l"="-53.512,11.514"]
-"intel/tinycbor" ["l"="-18.015,-45.044"]
-"mcu-tools/mcuboot" ["l"="-17.762,-43.129"]
-"adamgreen/CrashCatcher" ["l"="-17.934,-43.092"]
-"apache/mynewt-nimble" ["l"="-17.675,-43.139"]
-"lammertb/libcrc" ["l"="-17.631,-42.992"]
-"RT-Thread-packages/nimble" ["l"="-17.58,-43.176"]
+"FiloSottile/awesome-age" ["l"="-19.253,-19.868", "c"=132]
+"str4d/age-plugin-yubikey" ["l"="-19.257,-19.937", "c"=132]
+"matiaskorhonen/paper-age" ["l"="-19.28,-19.845", "c"=132]
+"jedisct1/piknik" ["l"="4.158,-8.094", "c"=0]
+"samuel-lucas6/Kryptor" ["l"="-53.512,11.514", "c"=710]
+"intel/tinycbor" ["l"="-18.015,-45.044", "c"=550]
+"mcu-tools/mcuboot" ["l"="-17.762,-43.129", "c"=55]
+"adamgreen/CrashCatcher" ["l"="-17.934,-43.092", "c"=55]
+"apache/mynewt-nimble" ["l"="-17.675,-43.139", "c"=55]
+"lammertb/libcrc" ["l"="-17.631,-42.992", "c"=55]
+"RT-Thread-packages/nimble" ["l"="-17.58,-43.176", "c"=55]
 "Cathedrow/Cryptosuite" ["l"="-20.873,-24.301"]
 "Octoate/ArduinoDES" ["l"="-20.886,-24.343"]
 "rweather/arduinolibs" ["l"="-20.958,-24.321"]
@@ -921,14 +1027,14 @@ digraph G {
 "boseji/xxtea-lib" ["l"="-20.868,-24.322"]
 "alexantoniades/encrypted-lora-gateway" ["l"="-20.866,-24.34"]
 "Tarsnap/spiped" ["l"="-20.998,-24.591"]
-"Tarsnap/scrypt" ["l"="-21.019,-24.609"]
 "Tarsnap/kivaloo" ["l"="-21.026,-24.583"]
 "Tarsnap/libcperciva" ["l"="-21.042,-24.594"]
-"freebsd/crochet" ["l"="-25.15,-23.443"]
-"freebsd/pkg" ["l"="-25.14,-23.476"]
+"freebsd/crochet" ["l"="-25.15,-23.443", "c"=745]
+"freebsd/pkg" ["l"="-25.14,-23.476", "c"=745]
 "Tarsnap/tarsnap-gui" ["l"="-20.987,-24.545"]
 "miracle2k/tarsnapper" ["l"="-20.964,-24.569"]
 "alexjurkiewicz/acts" ["l"="-21.063,-24.562"]
+"zlib-ng/minizip-ng" ["l"="-19.495,-25.755", "c"=10]
 "RustCrypto/KEMs" ["l"="-21.542,-24.54"]
 "prokls/ntrust-native" ["l"="-21.547,-24.522"]
 "sujoyetc/SABER_HW" ["l"="-21.606,-24.494"]
@@ -937,102 +1043,113 @@ digraph G {
 "floodyberry/curve25519-donna" ["l"="-21.211,-24.216"]
 "cassvin/Rsa" ["l"="-20.832,-24.029"]
 "technion/libscrypt" ["l"="-21.015,-24.649"]
-"wg/scrypt" ["l"="-34.79,0.338"]
 "tniessen/littlefs-disk-img-viewer" ["l"="-21.347,-24.509"]
 "tniessen/awesome-wasm-langs" ["l"="-21.381,-24.491"]
 "tniessen/nodejs.org" ["l"="-21.35,-24.494"]
 "XBQ314/A-Number-Theoretic-Transform-Accelerator-with-Two-Parallel-Simplified-Butterfly-Units" ["l"="-21.657,-24.545"]
-"Mbed-TLS/mbedtls" ["l"="-17.803,-43.212"]
-"weidai11/cryptopp" ["l"="-19.821,-25.644"]
-"littlefs-project/littlefs" ["l"="-17.728,-43.126"]
-"zserge/jsmn" ["l"="-22.145,-26.061"]
-"DaveGamble/cJSON" ["l"="-17.84,-43.2"]
-"nanopb/nanopb" ["l"="-17.814,-43.162"]
-"richgel999/miniz" ["l"="-22.078,-25.779"]
+"Mbed-TLS/mbedtls" ["l"="-17.803,-43.212", "c"=55]
+"littlefs-project/littlefs" ["l"="-17.728,-43.126", "c"=55]
+"zserge/jsmn" ["l"="-22.145,-26.061", "c"=101]
+"DaveGamble/cJSON" ["l"="-17.84,-43.2", "c"=55]
+"nanopb/nanopb" ["l"="-17.814,-43.162", "c"=55]
+"richgel999/miniz" ["l"="-22.078,-25.779", "c"=101]
 "rweather/arduino-projects" ["l"="-20.953,-24.348"]
-"ricaun/ArduinoUniqueID" ["l"="-15.954,-41.996"]
-"sandeepmistry/arduino-LoRa" ["l"="54.397,6.364"]
+"ricaun/ArduinoUniqueID" ["l"="-15.954,-41.996", "c"=387]
+"sandeepmistry/arduino-LoRa" ["l"="54.397,6.364", "c"=644]
+"P-H-C/phc-winner-argon2" ["l"="-9.477,-6.099", "c"=5]
+"signalapp/libsignal-protocol-c" ["l"="-52.51,7.451", "c"=682]
 "microsoft/FourQlib" ["l"="-21.33,-24.314"]
+"google/cityhash" ["l"="-19.582,-25.909", "c"=10]
+"nodejs/TSC" ["l"="-0.044,-33.419", "c"=110]
 "CoolOppo/pescrambler" ["l"="-20.897,-24.027"]
-"kkAyataka/plusaes" ["l"="-20.927,-24.084"]
 "florianhirner/proteus" ["l"="-21.649,-24.574"]
 "FatemehAhsan/CRYSTALS-Dilithium_Key-Generation_Verilog" ["l"="-21.64,-24.509"]
 "fschlieker/ring-TESLA" ["l"="-21.503,-24.263"]
 "kakopappa/arduino-esp8266-aes-lib" ["l"="-20.896,-24.419"]
 "kakopappa/arduino-esp8266-aes-encryption-with-nodejs" ["l"="-20.916,-24.416"]
-"onethawt/idaplugins-list" ["l"="-42.936,-36.878"]
-"sobolevn/awesome-cryptography" ["l"="-44.302,-33.857"]
-"polymorf/findcrypt-yara" ["l"="-42.974,-36.951"]
+"onethawt/idaplugins-list" ["l"="-42.936,-36.878", "c"=306]
+"sobolevn/awesome-cryptography" ["l"="-44.302,-33.857", "c"=865]
+"polymorf/findcrypt-yara" ["l"="-42.974,-36.951", "c"=306]
 "itzmeanjan/ml-kem" ["l"="-21.573,-24.46"]
 "eduardsui/tlse" ["l"="-21.079,-24.198"]
-"r-lyeh/tinybits" ["l"="-22.218,-25.681"]
-"zpl-c/zpl" ["l"="-22.194,-25.849"]
-"rxi/sandbird" ["l"="-22.359,-26.02"]
+"r-lyeh/tinybits" ["l"="-22.218,-25.681", "c"=101]
+"zpl-c/zpl" ["l"="-22.194,-25.849", "c"=101]
+"rxi/sandbird" ["l"="-22.359,-26.02", "c"=101]
 "Urban82/Aes256" ["l"="-20.943,-24.066"]
-"bricke/Qt-AES" ["l"="-20.232,-27.831"]
-"ReneNyffenegger/cpp-base64" ["l"="-19.609,-25.897"]
-"BaumFX/cpp-anti-debug" ["l"="-42.83,-35.426"]
-"JustasMasiulis/lazy_importer" ["l"="-42.802,-35.383"]
-"JustasMasiulis/xorstr" ["l"="-42.788,-35.405"]
+"bricke/Qt-AES" ["l"="-20.232,-27.831", "c"=107]
+"ReneNyffenegger/cpp-base64" ["l"="-19.609,-25.897", "c"=10]
+"BaumFX/cpp-anti-debug" ["l"="-42.83,-35.426", "c"=40]
+"JustasMasiulis/lazy_importer" ["l"="-42.802,-35.383", "c"=40]
+"JustasMasiulis/xorstr" ["l"="-42.788,-35.405", "c"=40]
 "ceceww/aes" ["l"="-20.964,-24.044"]
-"changeofpace/Self-Remapping-Code" ["l"="-42.864,-35.383"]
+"changeofpace/Self-Remapping-Code" ["l"="-42.864,-35.383", "c"=40]
 "System-Glitch/SHA256" ["l"="-20.943,-24.029"]
-"namazso/MagicSigner" ["l"="-43.137,-35.487"]
+"namazso/MagicSigner" ["l"="-43.137,-35.487", "c"=40]
 "asdfjkl/pyky" ["l"="-21.531,-24.429"]
-"GiacomoPope/Castryck-Decru-SageMath" ["l"="-45.5,-34.641"]
+"GiacomoPope/Castryck-Decru-SageMath" ["l"="-45.5,-34.641", "c"=282]
 "itzmeanjan/sphincs-plus" ["l"="-21.602,-24.462"]
 "creachadair/imath" ["l"="-20.94,-24.236"]
 "suiginsoft/hebimath" ["l"="-20.904,-24.241"]
+"cloudflare/tls-tris" ["l"="-11.134,-4.555", "c"=1245]
+"cloudflarearchive/sidh" ["l"="-21.399,-24.373"]
 "tniessen/node" ["l"="-21.376,-24.478"]
 "tniessen/fluent-bit" ["l"="-21.44,-24.48"]
 "conorpp/bitsliced-aes" ["l"="-21.175,-24.184"]
 "usubalang/usuba" ["l"="-21.182,-24.162"]
+"bitwiseshiftleft/sjcl" ["l"="-6.264,-35.693", "c"=1859]
 "dhuertas/DES" ["l"="-20.894,-24.106"]
 "fffaraz/cppDES" ["l"="-20.825,-24.114"]
+"rosenpass/rosenpass" ["l"="65.223,-13.145", "c"=586]
 "thomwiggers/kemtls-experiment" ["l"="-21.479,-24.344"]
+"mildsunrise/protobuf-inspector" ["l"="56.57,-10.802", "c"=24]
+"tlsfuzzer/python-ecdsa" ["l"="-16.854,10.032", "c"=303]
 "annealmail/annealmail" ["l"="-21.522,-24.301"]
 "daknuett/cryptosuite2" ["l"="-20.843,-24.305"]
 "leomil72/swRTC" ["l"="-20.846,-24.283"]
 "damico/ARDUINO-OATH-TOKEN" ["l"="-20.825,-24.298"]
 "agl/ed25519" ["l"="-21.65,-24.343"]
-"openssl/openssl" ["l"="-19.973,-25.314"]
-"randombit/botan" ["l"="-19.806,-25.822"]
-"tink-crypto/tink" ["l"="-2.358,11.669"]
-"P-H-C/phc-winner-argon2" ["l"="-9.477,-6.099"]
-"vurtun/nuklear" ["l"="-22.074,-25.92"]
-"libuv/libuv" ["l"="-19.793,-25.328"]
-"lz4/lz4" ["l"="-19.67,-25.498"]
-"shadowsocks/shadowsocks-libev" ["l"="-45.829,13.295"]
-"zeromq/libzmq" ["l"="-19.826,-25.497"]
-"Cyan4973/xxHash" ["l"="-19.617,-25.626"]
-"facebook/zstd" ["l"="-19.726,-25.395"]
+"openssl/openssl" ["l"="-19.973,-25.314", "c"=10]
+"randombit/botan" ["l"="-19.806,-25.822", "c"=10]
+"vurtun/nuklear" ["l"="-22.074,-25.92", "c"=101]
+"libuv/libuv" ["l"="-19.793,-25.328", "c"=10]
+"lz4/lz4" ["l"="-19.67,-25.498", "c"=10]
+"shadowsocks/shadowsocks-libev" ["l"="-45.829,13.295", "c"=42]
+"zeromq/libzmq" ["l"="-19.826,-25.497", "c"=10]
+"Cyan4973/xxHash" ["l"="-19.617,-25.626", "c"=10]
+"facebook/zstd" ["l"="-19.726,-25.395", "c"=10]
 "wbhart/bsdnt" ["l"="-21.029,-24.149"]
-"miracl/MIRACL" ["l"="50.514,1.916"]
+"miracl/MIRACL" ["l"="50.514,1.916", "c"=2204]
+"cloudflare/gokey" ["l"="4.323,-8.777", "c"=0]
 "dhuertas/block-cipher-modes" ["l"="-20.914,-24.102"]
 "matt-wu/AES" ["l"="-20.987,-24.114"]
 "openluopworld/aes_128" ["l"="-20.995,-24.082"]
 "elzoughby/Base64" ["l"="-20.764,-24.17"]
-"minio/blake2b-simd" ["l"="3.954,-7.806"]
+"cr-marcstevens/sha1collisiondetection" ["l"="23.749,-27.486", "c"=28]
+"minio/blake2b-simd" ["l"="3.954,-7.806", "c"=0]
 "wernerd/Skein3Fish" ["l"="-21.297,-24.305"]
 "sneves/blake2-avx2" ["l"="-21.294,-24.327"]
-"NebulousLabs/Sia-GPU-Miner" ["l"="65.467,-12.949"]
-"str4d/ed25519-java" ["l"="-52.653,7.414"]
+"NebulousLabs/Sia-GPU-Miner" ["l"="65.467,-12.949", "c"=586]
+"brandur/redis-cell" ["l"="9.302,-3.913", "c"=382]
+"str4d/ed25519-java" ["l"="-52.653,7.414", "c"=682]
 "GlowMany/tgrade-mainnet" ["l"="-21.439,-24.554"]
 "pq-code-package/mlkem-c-embedded" ["l"="-21.552,-24.503"]
-"noiseprotocol/noise_spec" ["l"="-48.749,0.327"]
-"jedisct1/libsodium.js" ["l"="-6.446,-35.718"]
-"rweather/noise-c" ["l"="-52.579,7.573"]
-"iqlusioninc/sear" ["l"="-19.214,12.979"]
-"mrpre/atls" ["l"="-22.294,14.454"]
+"nodejs/node-addon-api" ["l"="40.959,8.931", "c"=499]
+"mkj/dropbear" ["l"="-17.892,-43.305", "c"=55]
+"pyca/pynacl" ["l"="-1.318,3.414", "c"=258]
+"noiseprotocol/noise_spec" ["l"="-48.749,0.327", "c"=1019]
+"rweather/noise-c" ["l"="-52.579,7.573", "c"=682]
+"iqlusioninc/sear" ["l"="-19.214,12.979", "c"=173]
+"mrpre/atls" ["l"="-22.294,14.454", "c"=412]
+"yourtion/LearningMasteringAlgorithms-C" ["l"="-18.353,-27.696", "c"=62]
+"dsprenkels/sss" ["l"="-17.767,10.536", "c"=122]
 "jb55/sha256.c" ["l"="-21.009,-24.04"]
 "ogay/sha2" ["l"="-20.991,-24.026"]
-"cloudflarearchive/sidh" ["l"="-21.399,-24.373"]
 "Sobuno/ZKBoo" ["l"="-21.433,-24.278"]
 "IAIK/fish-begol" ["l"="-21.435,-24.296"]
 "tniessen/pino" ["l"="-21.348,-24.477"]
-"atomicobject/heatshrink" ["l"="-17.851,-43.078"]
-"pellepl/spiffs" ["l"="-17.736,-43.086"]
-"NordicSemiconductor/pc-nrfutil" ["l"="-15.883,-43.54"]
+"atomicobject/heatshrink" ["l"="-17.851,-43.078", "c"=55]
+"pellepl/spiffs" ["l"="-17.736,-43.086", "c"=55]
+"NordicSemiconductor/pc-nrfutil" ["l"="-15.883,-43.54", "c"=989]
 "LoupVaillant/Monokex" ["l"="-21.168,-24.356"]
 "cmcqueen/aes-min" ["l"="-21.174,-24.374"]
 "ar-nelson/monocypher-wasm" ["l"="-21.141,-24.365"]

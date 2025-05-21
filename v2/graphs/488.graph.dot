@@ -1,4 +1,8 @@
 digraph G {
+"QEF/q-e" -> "cp2k/cp2k" ["e"=1]
+"QEF/q-e" -> "dftbplus/dftbplus" ["e"=1]
+"QEF/q-e" -> "pyscf/pyscf" ["e"=1]
+"QEF/q-e" -> "psi4/psi4" ["e"=1]
 "lammps/lammps" -> "deepmodeling/deepmd-kit" ["e"=1]
 "lammps/lammps" -> "cp2k/cp2k"
 "lammps/lammps" -> "MDAnalysis/mdanalysis"
@@ -26,8 +30,16 @@ digraph G {
 "alanwilter/acpype" -> "MobleyLab/alchemical-analysis"
 "alanwilter/acpype" -> "openforcefield/openff-toolkit"
 "alanwilter/acpype" -> "choderalab/perses"
+"ccsb-scripps/AutoDock-GPU" -> "luancarvalhomartins/PyAutoFEP" ["e"=1]
 "merzlab/QUICK" -> "pyscf/gpu4pyscf"
 "merzlab/QUICK" -> "leeping/geomeTRIC"
+"jax-md/jax-md" -> "pyscf/pyscf" ["e"=1]
+"openmm/pdbfixer" -> "openmm/openmmforcefields" ["e"=1]
+"openmm/pdbfixer" -> "ParmEd/ParmEd" ["e"=1]
+"openmm/pdbfixer" -> "mdtraj/mdtraj" ["e"=1]
+"openmm/pdbfixer" -> "deGrootLab/pmx" ["e"=1]
+"openmm/pdbfixer" -> "openforcefield/openff-toolkit" ["e"=1]
+"openmm/pdbfixer" -> "nglviewer/nglview" ["e"=1]
 "markovmodel/deeptime" -> "markovmodel/pyemma_tutorials"
 "markovmodel/deeptime" -> "markovmodel/PyEMMA"
 "markovmodel/deeptime" -> "msmbuilder/vde"
@@ -48,6 +60,7 @@ digraph G {
 "nwchemgit/nwchem" -> "plumed/plumed2"
 "nwchemgit/nwchem" -> "m3g/packmol"
 "nwchemgit/nwchem" -> "openbabel/openbabel" ["e"=1]
+"mpi4py/mpi4py" -> "jhrmnn/pyberny" ["e"=1]
 "theochem/iodata" -> "cclib/cclib"
 "theochem/iodata" -> "theochem/chemtools"
 "theochem/iodata" -> "theochem/gbasis"
@@ -66,6 +79,10 @@ digraph G {
 "proteneer/timemachine" -> "OpenFreeEnergy/cinnabar"
 "proteneer/timemachine" -> "lpwgroup/torsiondrive"
 "proteneer/timemachine" -> "choderalab/espaloma"
+"rdkit/rdkit" -> "openmm/openmm" ["e"=1]
+"rdkit/rdkit" -> "MDAnalysis/mdanalysis" ["e"=1]
+"rdkit/rdkit" -> "psi4/psi4" ["e"=1]
+"rdkit/rdkit" -> "grimme-lab/xtb" ["e"=1]
 "cp2k/cp2k" -> "grimme-lab/xtb"
 "cp2k/cp2k" -> "pyscf/pyscf"
 "cp2k/cp2k" -> "dftbplus/dftbplus"
@@ -81,8 +98,18 @@ digraph G {
 "cp2k/cp2k" -> "atomistic-machine-learning/schnetpack" ["e"=1]
 "cp2k/cp2k" -> "mir-group/nequip" ["e"=1]
 "cp2k/cp2k" -> "i-pi/i-pi" ["e"=1]
+"molstar/molstar" -> "nglviewer/nglview" ["e"=1]
+"molstar/molstar" -> "mdtraj/mdtraj" ["e"=1]
+"deepmodeling/deepmd-kit" -> "lammps/lammps" ["e"=1]
+"deepmodeling/deepmd-kit" -> "cp2k/cp2k" ["e"=1]
+"deepmodeling/deepmd-kit" -> "MDAnalysis/mdanalysis" ["e"=1]
+"deepmodeling/deepmd-kit" -> "pyscf/pyscf" ["e"=1]
 "espressomd/espresso" -> "espressopp/espressopp"
 "espressomd/espresso" -> "glotzerlab/hoomd-blue"
+"XuhanLiu/DrugEx" -> "luancarvalhomartins/PyAutoFEP" ["e"=1]
+"schrodinger/pymol-open-source" -> "MDAnalysis/mdanalysis" ["e"=1]
+"schrodinger/pymol-open-source" -> "mdtraj/mdtraj" ["e"=1]
+"schrodinger/pymol-open-source" -> "openmm/openmm" ["e"=1]
 "scanberg/viamd" -> "michellab/a3fe"
 "scanberg/viamd" -> "pablo-arantes/making-it-rain" ["e"=1]
 "scanberg/viamd" -> "ParmEd/ParmEd"
@@ -119,7 +146,11 @@ digraph G {
 "Colvars/colvars" -> "MobleyLab/alchemical-analysis"
 "Colvars/colvars" -> "jewettaij/moltemplate"
 "Colvars/colvars" -> "bio-phys/MDBenchmark"
+"spglib/spglib" -> "dftbplus/dftbplus" ["e"=1]
+"libAtoms/QUIP" -> "dftbplus/dftbplus" ["e"=1]
 "yoshida-lab/XenonPy" -> "RadonPy/RadonPy"
+"veusz/veusz" -> "grimme-lab/xtb" ["e"=1]
+"veusz/veusz" -> "jewettaij/moltemplate" ["e"=1]
 "glotzerlab/hoomd-blue" -> "glotzerlab/freud"
 "glotzerlab/hoomd-blue" -> "glotzerlab/signac"
 "glotzerlab/hoomd-blue" -> "glotzerlab/signac-flow"
@@ -198,7 +229,17 @@ digraph G {
 "GHeinzelmann/BAT.py" -> "cole-group/FEgrow"
 "GHeinzelmann/BAT.py" -> "wolberlab/OpenMMDL"
 "GHeinzelmann/BAT.py" -> "OpenFreeEnergy/openfe"
+"prody/ProDy" -> "mdtraj/mdtraj" ["e"=1]
+"prody/ProDy" -> "ParmEd/ParmEd" ["e"=1]
+"prody/ProDy" -> "openmm/openmmforcefields" ["e"=1]
+"prody/ProDy" -> "nglviewer/nglview" ["e"=1]
+"deeptime-ml/deeptime" -> "markovmodel/PyEMMA" ["e"=1]
+"deeptime-ml/deeptime" -> "markovmodel/deeptime" ["e"=1]
+"deeptime-ml/deeptime" -> "mdtraj/mdtraj" ["e"=1]
+"deeptime-ml/deeptime" -> "markovmodel/pyemma_tutorials" ["e"=1]
+"deeptime-ml/deeptime" -> "plumed/plumed2" ["e"=1]
 "markovmodel/pyemma_tutorials" -> "markovmodel/PyEMMA"
+"quantumlib/OpenFermion" -> "pyscf/pyscf" ["e"=1]
 "NominHanggai/szaboqc" -> "jeanwsr/S-O-MQC-HW"
 "NominHanggai/szaboqc" -> "Warlocat/A-Not-So-Short-Guide-for-LinJun-Group"
 "NominHanggai/szaboqc" -> "sunqm/libcint"
@@ -206,6 +247,9 @@ digraph G {
 "NominHanggai/szaboqc" -> "yangjunjie0320/hf-tutorial"
 "MCompChem/fep-benchmark" -> "choderalab/yank"
 "MCompChem/fep-benchmark" -> "schrodinger/public_binding_free_energy_benchmark"
+"Pymol-Scripts/Pymol-script-repo" -> "Valdes-Tresanco-MS/gmx_MMPBSA" ["e"=1]
+"Pymol-Scripts/Pymol-script-repo" -> "MobleyLab/alchemical-analysis" ["e"=1]
+"Pymol-Scripts/Pymol-script-repo" -> "luancarvalhomartins/PyAutoFEP" ["e"=1]
 "omnia-md/conda-recipes" -> "markovmodel/thermotools"
 "ParmEd/ParmEd" -> "mdtraj/mdtraj"
 "ParmEd/ParmEd" -> "shirtsgroup/InterMol"
@@ -252,6 +296,7 @@ digraph G {
 "paduagroup/fftool" -> "orlandoacevedo/IL"
 "TinkerTools/tinker-hp" -> "TinkerTools/tinker"
 "TinkerTools/tinker-hp" -> "TinkerTools/tinker9"
+"atomistic-machine-learning/schnetpack" -> "grimme-lab/xtb" ["e"=1]
 "openpathsampling/openpathsampling" -> "openmm/openmm-plumed"
 "openpathsampling/openpathsampling" -> "markovmodel/PyEMMA"
 "shirtsgroup/InterMol" -> "ParmEd/ParmEd"
@@ -267,6 +312,10 @@ digraph G {
 "shirtsgroup/InterMol" -> "Isra3l/ligpargen"
 "shirtsgroup/InterMol" -> "Becksteinlab/GromacsWrapper"
 "shirtsgroup/InterMol" -> "Colvars/colvars"
+"aiqm/torchani" -> "grimme-lab/xtb" ["e"=1]
+"aiqm/torchani" -> "MolSSI/QCEngine" ["e"=1]
+"aiqm/torchani" -> "openforcefield/openff-toolkit" ["e"=1]
+"aiqm/torchani" -> "mdtraj/mdtraj" ["e"=1]
 "openmopac/mopac" -> "leeping/geomeTRIC"
 "openmopac/mopac" -> "grimme-lab/std2"
 "openmopac/mopac" -> "grimme-lab/xtb"
@@ -280,6 +329,7 @@ digraph G {
 "glotzerlab/signac" -> "glotzerlab/software"
 "glotzerlab/signac" -> "glotzerlab/signac-docs"
 "glotzerlab/signac" -> "glotzerlab/signac-examples"
+"cyclops-community/ctf" -> "jjgoings/McMurchie-Davidson" ["e"=1]
 "jensengroup/xyz2mol" -> "leeping/forcebalance"
 "jensengroup/xyz2mol" -> "cclib/cclib"
 "jensengroup/xyz2mol" -> "alchemistry/alchemlyb"
@@ -303,6 +353,7 @@ digraph G {
 "cclib/cclib" -> "charnley/rmsd"
 "cclib/cclib" -> "dftbplus/dftbplus"
 "cclib/cclib" -> "jensengroup/xyz2mol"
+"i-pi/i-pi" -> "dftbplus/dftbplus" ["e"=1]
 "dftd4/dftd4" -> "dftd3/simple-dftd3"
 "dftd4/dftd4" -> "dftbplus/dftbplus"
 "dftd4/dftd4" -> "tblite/tblite"
@@ -341,6 +392,7 @@ digraph G {
 "MolSSI-BSE/basis_set_exchange" -> "MolSSI/QCFractal"
 "MolSSI-BSE/basis_set_exchange" -> "leeping/geomeTRIC"
 "MolSSI-BSE/basis_set_exchange" -> "MolSSI/QCEngine"
+"MobleyLab/drug-computing" -> "choderalab/yank" ["e"=1]
 "TinkerTools/tinker9" -> "TinkerTools/tinker"
 "TinkerTools/tinker9" -> "TinkerTools/poltype2"
 "mosdef-hub/mbuild" -> "mosdef-hub/foyer"
@@ -371,6 +423,8 @@ digraph G {
 "msmbuilder/msmbuilder" -> "MobleyLab/FreeSolv"
 "ValeevGroup/mpqc" -> "simint-chem/simint-generator"
 "patonlab/wSterimol" -> "patonlab/Sterimol"
+"ValeevGroup/tiledarray" -> "evaleev/libint" ["e"=1]
+"ValeevGroup/tiledarray" -> "ValeevGroup/mpqc" ["e"=1]
 "MolSSI/QCEngine" -> "MolSSI/QCElemental"
 "MolSSI/QCEngine" -> "MolSSI/QCFractal"
 "MolSSI/QCEngine" -> "MolSSI/QCSchema"
@@ -427,6 +481,7 @@ digraph G {
 "dewberryants/asciiMol" -> "MolSSI/QCFractal"
 "dewberryants/asciiMol" -> "jvalegre/aqme"
 "dewberryants/asciiMol" -> "matteoferla/Fragmenstein" ["e"=1]
+"haddocking/pdb-tools" -> "openmm/openmmforcefields" ["e"=1]
 "grimme-lab/xtb" -> "crest-lab/crest"
 "grimme-lab/xtb" -> "dftbplus/dftbplus"
 "grimme-lab/xtb" -> "psi4/psi4"
@@ -442,6 +497,7 @@ digraph G {
 "grimme-lab/xtb" -> "tblite/tblite"
 "grimme-lab/xtb" -> "duartegroup/autodE"
 "grimme-lab/xtb" -> "nwchemgit/nwchem"
+"dellacortelab/prospr" -> "proteneer/timemachine" ["e"=1]
 "theochem/procrustes" -> "theochem/chemtools"
 "theochem/procrustes" -> "theochem/grid"
 "theochem/procrustes" -> "theochem/gbasis"
@@ -463,6 +519,7 @@ digraph G {
 "choderalab/espaloma" -> "choderalab/yank"
 "jeanwsr/S-O-MQC-HW" -> "NominHanggai/szaboqc"
 "jeanwsr/S-O-MQC-HW" -> "jeanwsr/awesome-qc-courses"
+"oddt/oddt" -> "openforcefield/openff-toolkit" ["e"=1]
 "cp2k/cp2k-input-tools" -> "cp2k/cp2k-output-tools"
 "cp2k/cp2k-input-tools" -> "SINGROUP/pycp2k"
 "cp2k/cp2k-input-tools" -> "avishart/CP2K_Editor"
@@ -486,6 +543,13 @@ digraph G {
 "SINGROUP/pycp2k" -> "cp2k/cp2k-output-tools"
 "SINGROUP/pycp2k" -> "dev-zero/cp2k-tools"
 "SINGROUP/pycp2k" -> "cp2k/cp2k-svn"
+"torchmd/torchmd" -> "openmm/openmm-torch" ["e"=1]
+"torchmd/torchmd" -> "mdtraj/mdtraj" ["e"=1]
+"torchmd/torchmd" -> "plumed/plumed2" ["e"=1]
+"torchmd/torchmd" -> "openforcefield/openff-toolkit" ["e"=1]
+"torchmd/torchmd" -> "sha256feng/mldl-md-dynamics" ["e"=1]
+"torchmd/torchmd" -> "openmm/openmmforcefields" ["e"=1]
+"deepqmc/deepqmc" -> "pyscf/pyscf" ["e"=1]
 "crest-lab/crest" -> "grimme-lab/xtb"
 "crest-lab/crest" -> "duartegroup/autodE"
 "crest-lab/crest" -> "cclib/cclib"
@@ -516,6 +580,8 @@ digraph G {
 "mrkllntschpp/lammps-tutorials" -> "abelcarreras/phonolammps" ["e"=1]
 "tbereau/auto_martini" -> "jag1g13/pycgtool"
 "tbereau/auto_martini" -> "GMPavanLab/Swarm-CG"
+"nglviewer/ngl" -> "nglviewer/nglview" ["e"=1]
+"nglviewer/ngl" -> "choderalab/yank" ["e"=1]
 "westpa/westpa" -> "GrossfieldLab/loos"
 "westpa/westpa" -> "ParmEd/ParmEd"
 "westpa/westpa" -> "alchemistry/alchemlyb"
@@ -525,7 +591,18 @@ digraph G {
 "westpa/westpa" -> "choderalab/software-development"
 "westpa/westpa" -> "choderalab/perses"
 "westpa/westpa" -> "MiaoLab20/gamd-openmm"
+"3dmol/3Dmol.js" -> "nglviewer/nglview" ["e"=1]
+"3dmol/3Dmol.js" -> "psi4/psi4" ["e"=1]
+"3dmol/3Dmol.js" -> "ParmEd/ParmEd" ["e"=1]
+"3dmol/3Dmol.js" -> "OpenChemistry/avogadrolibs" ["e"=1]
+"3dmol/3Dmol.js" -> "openforcefield/openff-toolkit" ["e"=1]
+"3dmol/3Dmol.js" -> "leeping/geomeTRIC" ["e"=1]
+"3dmol/3Dmol.js" -> "cclib/cclib" ["e"=1]
+"3dmol/3Dmol.js" -> "MolSSI/cookiecutter-cms" ["e"=1]
 "compchem-cybertraining/Tutorials_CP2K" -> "cp2k/cp2k-output-tools"
+"lightdock/lightdock" -> "openmm/openmmforcefields" ["e"=1]
+"lightdock/lightdock" -> "GHeinzelmann/BAT.py" ["e"=1]
+"lightdock/lightdock" -> "choderalab/openmmtools" ["e"=1]
 "sha256feng/mldl-md-dynamics" -> "torchmd/torchmd" ["e"=1]
 "sha256feng/mldl-md-dynamics" -> "openforcefield/openff-toolkit"
 "sha256feng/mldl-md-dynamics" -> "mdtraj/mdtraj"
@@ -604,12 +681,18 @@ digraph G {
 "markovmodel/PyEMMA" -> "openmm/openmmforcefields"
 "markovmodel/PyEMMA" -> "MolSSI/cookiecutter-cms"
 "markovmodel/PyEMMA" -> "alchemistry/alchemlyb"
+"FoldingAtHome/coronavirus" -> "openmm/openmm" ["e"=1]
+"FoldingAtHome/coronavirus" -> "choderalab/openmmtools" ["e"=1]
+"FoldingAtHome/coronavirus" -> "mdtraj/mdtraj" ["e"=1]
+"whitead/dmol-book" -> "MolSSI/cookiecutter-cms" ["e"=1]
 "MobleyLab/FreeSolv" -> "MobleyLab/alchemical-analysis"
+"chemosim-lab/ProLIF" -> "GHeinzelmann/BAT.py" ["e"=1]
 "sunqm/qcint" -> "simint-chem/simint-generator"
 "PCMSolver/pcmsolver" -> "maxscheurer/cppe"
 "grimme-lab/xtb-python" -> "tblite/tblite"
 "grimme-lab/xtb-python" -> "grimme-lab/xtb"
 "NREL/m2p" -> "NREL/polyID"
+"digital-chemistry-laboratory/morfeus" -> "duartegroup/autodE" ["e"=1]
 "openmm/openmm-torch" -> "openmm/openmm-ml"
 "openmm/openmm-torch" -> "openmm/NNPOps"
 "openmm/openmm-torch" -> "openmm/openmmforcefields"
@@ -681,7 +764,10 @@ digraph G {
 "markovmodel/pytram" -> "markovmodel/variational"
 "cmelab/GIXStapose" -> "rsdefever/GAFF-foyer"
 "grimme-lab/xtb4stda" -> "grimme-lab/std2"
+"google-deepmind/ferminet" -> "pyscf/pyscf" ["e"=1]
 "srtee/lammps-USER-CONP2" -> "zhenxingwang/lammps-conp"
+"bjodah/chempy" -> "psi4/psi4" ["e"=1]
+"bjodah/chempy" -> "cclib/cclib" ["e"=1]
 "MDAnalysis/mdanalysis" -> "mdtraj/mdtraj"
 "MDAnalysis/mdanalysis" -> "ParmEd/ParmEd"
 "MDAnalysis/mdanalysis" -> "nglviewer/nglview"
@@ -697,6 +783,7 @@ digraph G {
 "MDAnalysis/mdanalysis" -> "deepmodeling/deepmd-kit" ["e"=1]
 "MDAnalysis/mdanalysis" -> "atomistic-machine-learning/schnetpack" ["e"=1]
 "MDAnalysis/mdanalysis" -> "torchmd/torchmd" ["e"=1]
+"torchmd/torchmd-net" -> "openmm/openmm-torch" ["e"=1]
 "MobleyLab/alchemical-analysis" -> "alchemistry/alchemlyb"
 "MobleyLab/alchemical-analysis" -> "choderalab/pymbar"
 "MobleyLab/alchemical-analysis" -> "deGrootLab/pmx"
@@ -706,6 +793,9 @@ digraph G {
 "MobleyLab/alchemical-analysis" -> "MobleyLab/Lomap"
 "MobleyLab/alchemical-analysis" -> "MobleyLab/FreeSolv"
 "MobleyLab/alchemical-analysis" -> "CCPBioSim/fesetup"
+"quantum-visualizations/qmsolve" -> "psi4/psi4" ["e"=1]
+"quantum-visualizations/qmsolve" -> "pyscf/pyscf" ["e"=1]
+"learningmatter-mit/NeuralForceField" -> "openmm/openmm-torch" ["e"=1]
 "ricalessandri/Martini3-small-molecules" -> "GMPavanLab/Swarm-CG"
 "Walter-Feng/Hartree-Fock-in-CPP" -> "yangjunjie0320/hf-tutorial"
 "conda-incubator/condacolab" -> "choderalab/perses"
@@ -722,6 +812,12 @@ digraph G {
 "Allen-Tildesley/examples" -> "iRASPA/RASPA2" ["e"=1]
 "Allen-Tildesley/examples" -> "GrossfieldLab/loos"
 "Allen-Tildesley/examples" -> "brucefan1983/Molecular-Dynamics-Simulation" ["e"=1]
+"pablo-arantes/making-it-rain" -> "GHeinzelmann/BAT.py" ["e"=1]
+"pablo-arantes/making-it-rain" -> "luancarvalhomartins/PyAutoFEP" ["e"=1]
+"pablo-arantes/making-it-rain" -> "Valdes-Tresanco-MS/gmx_MMPBSA" ["e"=1]
+"pablo-arantes/making-it-rain" -> "choderalab/yank" ["e"=1]
+"pablo-arantes/making-it-rain" -> "alchemistry/alchemlyb" ["e"=1]
+"pablo-arantes/making-it-rain" -> "wolberlab/OpenMMDL" ["e"=1]
 "openmm/openmm-ml" -> "openmm/openmm-plumed"
 "openmm/openmm-ml" -> "openmm/openmm-torch"
 "openmm/openmm-ml" -> "openmm/NNPOps"
@@ -744,6 +840,8 @@ digraph G {
 "Amber-MD/pytraj" -> "mdtraj/mdtraj"
 "Amber-MD/pytraj" -> "choderalab/openmmtools"
 "Amber-MD/pytraj" -> "openforcefield/openff-toolkit"
+"ReactionMechanismGenerator/RMG-Py" -> "duartegroup/autodE" ["e"=1]
+"ReactionMechanismGenerator/RMG-Py" -> "cclib/cclib" ["e"=1]
 "simongravelle/lammps-input-files" -> "mrkllntschpp/lammps-tutorials"
 "simongravelle/lammps-input-files" -> "lammpstutorials/lammpstutorials.github.io"
 "simongravelle/lammps-input-files" -> "dwsideriusNIST/LAMMPS_Examples"
@@ -796,6 +894,7 @@ digraph G {
 "markovmodel/variational" -> "markovmodel/thermotools"
 "TREX-CoE/aiida-qp2" -> "TREX-CoE/trexio_tools"
 "TREX-CoE/aiida-qp2" -> "TREX-CoE/qmcchem2"
+"BioPandas/biopandas" -> "nglviewer/nglview" ["e"=1]
 "nglviewer/nglview" -> "mdtraj/mdtraj"
 "nglviewer/nglview" -> "MDAnalysis/mdanalysis"
 "nglviewer/nglview" -> "ParmEd/ParmEd"
@@ -813,6 +912,7 @@ digraph G {
 "nglviewer/nglview" -> "plumed/plumed2"
 "QC-Edu/IntroQM" -> "theochem/grid"
 "QC-Edu/IntroQM" -> "theochem/Selector"
+"AngelRuizMoreno/Jupyter_Dock" -> "rxdock/rxdock" ["e"=1]
 "Gallicchio-Lab/AToM-OpenMM" -> "GHeinzelmann/BAT.py"
 "Gallicchio-Lab/AToM-OpenMM" -> "choderalab/yank"
 "Gallicchio-Lab/AToM-OpenMM" -> "quantaosun/Dock-MD-FEP"
@@ -832,6 +932,7 @@ digraph G {
 "BradyAJohnston/MolecularNodes" -> "openforcefield/openff-toolkit"
 "BradyAJohnston/MolecularNodes" -> "a-r-j/graphein" ["e"=1]
 "BradyAJohnston/MolecularNodes" -> "dauparas/ProteinMPNN" ["e"=1]
+"deepmodeling/DMFF" -> "openmm/openmm-ml" ["e"=1]
 "RadonPy/RadonPy" -> "PEJpOhno/SMiPoly"
 "RadonPy/RadonPy" -> "yoshida-lab/XenonPy"
 "RadonPy/RadonPy" -> "polysimtools/pysimm"
@@ -862,6 +963,12 @@ digraph G {
 "paiardin/DockingPie" -> "rxdock/rxdock"
 "jvalegre/robert" -> "jvalegre/aqme"
 "jvalegre/robert" -> "patonlab/DBSTEP"
+"Acellera/htmd" -> "openforcefield/openff-toolkit" ["e"=1]
+"Acellera/htmd" -> "choderalab/yank" ["e"=1]
+"Acellera/htmd" -> "ParmEd/ParmEd" ["e"=1]
+"Acellera/htmd" -> "mdtraj/mdtraj" ["e"=1]
+"Acellera/htmd" -> "michellab/Sire" ["e"=1]
+"Acellera/htmd" -> "choderalab/perses" ["e"=1]
 "luigibonati/mlcolvar" -> "BingqingCheng/cace" ["e"=1]
 "luigibonati/mlcolvar" -> "bjmorgan/kinisi"
 "pyscf/gpu4pyscf" -> "merzlab/QUICK"
@@ -917,6 +1024,7 @@ digraph G {
 "jag1g13/pycgtool" -> "GMPavanLab/Swarm-CG"
 "jag1g13/pycgtool" -> "tbereau/auto_martini"
 "jag1g13/pycgtool" -> "Marcello-Sega/pytim"
+"jkitchin/dft-book" -> "pierrehirel/atomsk" ["e"=1]
 "patonlab/GoodVibes" -> "duartegroup/autodE"
 "patonlab/GoodVibes" -> "patonlab/DBSTEP"
 "patonlab/GoodVibes" -> "patonlab/pyQRC"
@@ -951,6 +1059,13 @@ digraph G {
 "CrawfordGroup/ProgrammingProjects" -> "jjgoings/McMurchie-Davidson"
 "CrawfordGroup/ProgrammingProjects" -> "FermiQC/Fermi.jl" ["e"=1]
 "CrawfordGroup/ProgrammingProjects" -> "MolSSI/cookiecutter-cms"
+"jensengroup/propka" -> "deGrootLab/pmx" ["e"=1]
+"jensengroup/propka" -> "ParmEd/ParmEd" ["e"=1]
+"jensengroup/propka" -> "openmm/openmmforcefields" ["e"=1]
+"jensengroup/propka" -> "mdtraj/mdtraj" ["e"=1]
+"jensengroup/propka" -> "MobleyLab/alchemical-analysis" ["e"=1]
+"jensengroup/propka" -> "GHeinzelmann/BAT.py" ["e"=1]
+"jensengroup/propka" -> "choderalab/yank" ["e"=1]
 "nutjunkie/IQmol" -> "orbkit/orbkit"
 "nutjunkie/IQmol" -> "PCMSolver/pcmsolver"
 "nutjunkie/IQmol" -> "susilehtola/erkale"
@@ -990,6 +1105,7 @@ digraph G {
 "ur-whitelab/MDCrow" -> "wolberlab/OpenMMDL"
 "SSAGESproject/SSAGES" -> "mosdef-hub/mbuild"
 "dwsideriusNIST/LAMMPS_Examples" -> "freitas-rodrigo/FreeEnergyLAMMPS"
+"dptech-corp/Uni-Dock" -> "wolberlab/OpenMMDL" ["e"=1]
 "OpenFreeEnergy/konnektor" -> "OpenFreeEnergy/feflow"
 "OpenFreeEnergy/feflow" -> "OpenFreeEnergy/konnektor"
 "jewettaij/moltemplate" -> "m3g/packmol"
@@ -1022,7 +1138,13 @@ digraph G {
 "openmm/openmmforcefields" -> "mdtraj/mdtraj"
 "openmm/openmmforcefields" -> "openforcefield/openff-bespokefit"
 "openmm/openmmforcefields" -> "openforcefield/openff-interchange"
+"phonopy/phonopy" -> "dftbplus/dftbplus" ["e"=1]
+"QMCPACK/qmcpack" -> "dftbplus/dftbplus" ["e"=1]
+"QMCPACK/qmcpack" -> "psi4/psi4" ["e"=1]
+"QMCPACK/qmcpack" -> "sunqm/libcint" ["e"=1]
+"QMCPACK/qmcpack" -> "pyscf/pyscf" ["e"=1]
 "lammpstutorials/lammpstutorials-inputs" -> "simongravelle/pyplot-perso"
+"isayev/ASE_ANI" -> "jensengroup/xyz2mol" ["e"=1]
 "sunqm/libcint" -> "evaleev/libint"
 "sunqm/libcint" -> "psi4/psi4numpy"
 "sunqm/libcint" -> "CrawfordGroup/ProgrammingProjects"
@@ -1038,6 +1160,7 @@ digraph G {
 "sunqm/libcint" -> "pyscf/gpu4pyscf"
 "sunqm/libcint" -> "cclib/cclib"
 "sunqm/libcint" -> "dftlibs/xcfun"
+"RobRomijnders/AE_ts" -> "msmbuilder/vde" ["e"=1]
 "choderalab/software-development" -> "MolSSI/cookiecutter-cms"
 "choderalab/software-development" -> "choderalab/yank"
 "choderalab/software-development" -> "openforcefield/openff-toolkit"
@@ -1054,6 +1177,8 @@ digraph G {
 "choderalab/software-development" -> "Autodesk/molecular-design-toolkit" ["e"=1]
 "choderalab/software-development" -> "markovmodel/pyemma_tutorials"
 "michellab/a3fe" -> "wolberlab/OpenMMDL"
+"jparkhill/TensorMol" -> "openforcefield/openff-toolkit" ["e"=1]
+"jparkhill/TensorMol" -> "jhrmnn/pyberny" ["e"=1]
 "MolSSI/QCFractal" -> "MolSSI/QCPortal"
 "MolSSI/QCFractal" -> "MolSSI/QCElemental"
 "MolSSI/QCFractal" -> "MolSSI/QCSchema"
@@ -1063,6 +1188,15 @@ digraph G {
 "Psivant/femto" -> "OpenFreeEnergy/gufe"
 "Psivant/femto" -> "OpenFreeEnergy/cinnabar"
 "fjclark/red" -> "OpenFreeEnergy/feflow"
+"Discngine/fpocket" -> "Valdes-Tresanco-MS/gmx_MMPBSA" ["e"=1]
+"Discngine/fpocket" -> "luancarvalhomartins/PyAutoFEP" ["e"=1]
+"Discngine/fpocket" -> "fhh2626/BFEE2" ["e"=1]
+"Discngine/fpocket" -> "GHeinzelmann/BAT.py" ["e"=1]
+"qmlcode/qml" -> "jhrmnn/pyberny" ["e"=1]
+"lmmentel/awesome-python-chemistry" -> "psi4/psi4" ["e"=1]
+"lmmentel/awesome-python-chemistry" -> "pyscf/pyscf" ["e"=1]
+"lmmentel/awesome-python-chemistry" -> "cclib/cclib" ["e"=1]
+"lmmentel/awesome-python-chemistry" -> "grimme-lab/xtb" ["e"=1]
 "openforcefield/openff-toolkit" -> "openforcefield/openff-forcefields"
 "openforcefield/openff-toolkit" -> "choderalab/openmmtools"
 "openforcefield/openff-toolkit" -> "openmm/openmmforcefields"
@@ -1082,9 +1216,13 @@ digraph G {
 "paduagroup/clandp" -> "zhenxingwang/lammps-conp"
 "paduagroup/clandp" -> "paduagroup/fftool"
 "paduagroup/clandp" -> "vladislavivanistsev/RTIL-FF"
+"abinit/abinit" -> "dftbplus/dftbplus" ["e"=1]
 "Marcello-Sega/pytim" -> "jag1g13/pycgtool"
 "Marcello-Sega/pytim" -> "bio-phys/MDBenchmark"
 "Allen-Tildesley/corrections" -> "Allen-Tildesley/data"
+"openbabel/openbabel" -> "grimme-lab/xtb" ["e"=1]
+"openbabel/openbabel" -> "psi4/psi4" ["e"=1]
+"openbabel/openbabel" -> "mdtraj/mdtraj" ["e"=1]
 "cp2k/cp2k-svn" -> "SINGROUP/pycp2k"
 "cryos/avogadro" -> "OpenChemistry/avogadrolibs"
 "cryos/avogadro" -> "OpenChemistry/avogadroapp"
@@ -1175,21 +1313,25 @@ digraph G {
 "MolSSI/QCSchema" -> "MolSSI/QCEngine"
 "bytedance/byteqc" -> "pyscf/gpu4pyscf"
 "Allen-Tildesley/data" -> "Allen-Tildesley/corrections"
-"lammps/lammps" ["l"="22.556,13.267"]
-"deepmodeling/deepmd-kit" ["l"="21.944,13.14"]
+"QEF/q-e" ["l"="21.741,12.985", "c"=344]
 "cp2k/cp2k" ["l"="22.55,13.372"]
+"dftbplus/dftbplus" ["l"="22.577,13.382"]
+"pyscf/pyscf" ["l"="22.614,13.402"]
+"psi4/psi4" ["l"="22.58,13.351"]
+"lammps/lammps" ["l"="22.556,13.267"]
+"deepmodeling/deepmd-kit" ["l"="21.944,13.14", "c"=344]
 "MDAnalysis/mdanalysis" ["l"="22.51,13.316"]
 "mrkllntschpp/lammps-tutorials" ["l"="22.58,13.18"]
-"materialsproject/pymatgen" ["l"="21.91,13.047"]
+"materialsproject/pymatgen" ["l"="21.91,13.047", "c"=344]
 "jewettaij/moltemplate" ["l"="22.566,13.22"]
 "gromacs/gromacs" ["l"="22.516,13.289"]
 "openmm/openmm" ["l"="22.49,13.299"]
-"brucefan1983/GPUMD" ["l"="21.907,13.098"]
-"libAtoms/QUIP" ["l"="21.917,13.084"]
-"atomistic-machine-learning/schnetpack" ["l"="21.96,13.158"]
+"brucefan1983/GPUMD" ["l"="21.907,13.098", "c"=344]
+"libAtoms/QUIP" ["l"="21.917,13.084", "c"=344]
+"atomistic-machine-learning/schnetpack" ["l"="21.96,13.158", "c"=344]
 "plumed/plumed2" ["l"="22.495,13.273"]
 "m3g/packmol" ["l"="22.55,13.291"]
-"mir-group/nequip" ["l"="21.996,13.141"]
+"mir-group/nequip" ["l"="21.996,13.141", "c"=344]
 "simongravelle/lammps-input-files" ["l"="22.597,13.18"]
 "alanwilter/acpype" ["l"="22.428,13.249"]
 "deGrootLab/pmx" ["l"="22.388,13.247"]
@@ -1197,15 +1339,20 @@ digraph G {
 "alchemistry/alchemlyb" ["l"="22.461,13.242"]
 "Valdes-Tresanco-MS/gmx_MMPBSA" ["l"="22.371,13.218"]
 "openmm/openmmforcefields" ["l"="22.466,13.227"]
-"jensengroup/propka" ["l"="23.395,13.842"]
+"jensengroup/propka" ["l"="23.395,13.842", "c"=209]
 "lmmpf/PyAutoFEP" ["l"="22.373,13.237"]
-"openmm/pdbfixer" ["l"="23.432,13.827"]
+"openmm/pdbfixer" ["l"="23.432,13.827", "c"=209]
 "MobleyLab/alchemical-analysis" ["l"="22.408,13.245"]
 "openforcefield/openff-toolkit" ["l"="22.496,13.255"]
 "choderalab/perses" ["l"="22.449,13.218"]
+"ccsb-scripps/AutoDock-GPU" ["l"="23.449,13.835", "c"=209]
+"luancarvalhomartins/PyAutoFEP" ["l"="22.395,13.227"]
 "merzlab/QUICK" ["l"="22.682,13.419"]
 "pyscf/gpu4pyscf" ["l"="22.662,13.429"]
 "leeping/geomeTRIC" ["l"="22.658,13.384"]
+"jax-md/jax-md" ["l"="21.988,13.185", "c"=344]
+"mdtraj/mdtraj" ["l"="22.466,13.277"]
+"nglviewer/nglview" ["l"="22.473,13.321"]
 "markovmodel/deeptime" ["l"="22.398,13.311"]
 "markovmodel/pyemma_tutorials" ["l"="22.417,13.298"]
 "markovmodel/PyEMMA" ["l"="22.439,13.277"]
@@ -1213,18 +1360,17 @@ digraph G {
 "sha256feng/mldl-md-dynamics" ["l"="22.468,13.295"]
 "msmbuilder/msmbuilder" ["l"="22.393,13.288"]
 "nwchemgit/nwchem" ["l"="22.588,13.369"]
-"psi4/psi4" ["l"="22.58,13.351"]
-"dftbplus/dftbplus" ["l"="22.577,13.382"]
 "cclib/cclib" ["l"="22.609,13.365"]
-"pyscf/pyscf" ["l"="22.614,13.402"]
 "grimme-lab/xtb" ["l"="22.591,13.402"]
 "sunqm/libcint" ["l"="22.649,13.4"]
 "dftd4/dftd4" ["l"="22.567,13.394"]
 "psi4/psi4numpy" ["l"="22.615,13.353"]
-"electronic-structure/SIRIUS" ["l"="21.845,12.939"]
+"electronic-structure/SIRIUS" ["l"="21.845,12.939", "c"=344]
 "evaleev/libint" ["l"="22.641,13.383"]
 "crest-lab/crest" ["l"="22.615,13.379"]
-"openbabel/openbabel" ["l"="23.519,13.75"]
+"openbabel/openbabel" ["l"="23.519,13.75", "c"=209]
+"mpi4py/mpi4py" ["l"="2.063,14.351", "c"=572]
+"jhrmnn/pyberny" ["l"="22.682,13.4"]
 "theochem/iodata" ["l"="22.615,13.442"]
 "theochem/chemtools" ["l"="22.611,13.499"]
 "theochem/gbasis" ["l"="22.625,13.511"]
@@ -1239,20 +1385,22 @@ digraph G {
 "OpenFreeEnergy/cinnabar" ["l"="22.479,13.197"]
 "lpwgroup/torsiondrive" ["l"="22.509,13.158"]
 "choderalab/espaloma" ["l"="22.475,13.211"]
-"QEF/q-e" ["l"="21.741,12.985"]
+"rdkit/rdkit" ["l"="23.54,13.733", "c"=209]
 "SINGROUP/pycp2k" ["l"="22.497,13.532"]
-"i-pi/i-pi" ["l"="21.876,13.112"]
+"i-pi/i-pi" ["l"="21.876,13.112", "c"=344]
+"molstar/molstar" ["l"="23.475,13.886", "c"=209]
 "espressomd/espresso" ["l"="22.682,13.19"]
 "espressopp/espressopp" ["l"="22.726,13.175"]
 "glotzerlab/hoomd-blue" ["l"="22.607,13.2"]
+"XuhanLiu/DrugEx" ["l"="23.381,13.666", "c"=209]
+"schrodinger/pymol-open-source" ["l"="23.485,13.835", "c"=209]
 "scanberg/viamd" ["l"="22.432,13.186"]
 "michellab/a3fe" ["l"="22.407,13.155"]
-"pablo-arantes/making-it-rain" ["l"="23.441,13.806"]
-"mdtraj/mdtraj" ["l"="22.466,13.277"]
+"pablo-arantes/making-it-rain" ["l"="23.441,13.806", "c"=209]
 "CrawfordGroup/ProgrammingProjects" ["l"="22.632,13.367"]
-"lmmentel/awesome-python-chemistry" ["l"="23.557,13.686"]
-"quantumlib/OpenFermion" ["l"="21.055,17.456"]
-"JuliaMolSim/DFTK.jl" ["l"="21.953,17.75"]
+"lmmentel/awesome-python-chemistry" ["l"="23.557,13.686", "c"=209]
+"quantumlib/OpenFermion" ["l"="21.055,17.456", "c"=237]
+"JuliaMolSim/DFTK.jl" ["l"="21.953,17.75", "c"=863]
 "marrink-lab/vermouth-martinize" ["l"="22.445,13.409"]
 "marrink-lab/polyply_1.0" ["l"="22.489,13.346"]
 "Tsjerk/Insane" ["l"="22.431,13.444"]
@@ -1265,20 +1413,21 @@ digraph G {
 "GrossfieldLab/loos" ["l"="22.489,13.173"]
 "shirtsgroup/InterMol" ["l"="22.527,13.251"]
 "bio-phys/MDBenchmark" ["l"="22.454,13.331"]
+"spglib/spglib" ["l"="21.842,13.002", "c"=344]
 "yoshida-lab/XenonPy" ["l"="22.751,13.016"]
 "RadonPy/RadonPy" ["l"="22.737,13.044"]
+"veusz/veusz" ["l"="-34.296,16.991", "c"=652]
 "glotzerlab/freud" ["l"="22.607,13.223"]
 "glotzerlab/signac" ["l"="22.655,13.19"]
 "glotzerlab/signac-flow" ["l"="22.639,13.189"]
 "glotzerlab/hoomd-examples" ["l"="22.643,13.175"]
 "mosdef-hub/mbuild" ["l"="22.546,13.209"]
-"jax-md/jax-md" ["l"="21.988,13.185"]
 "Allen-Tildesley/examples" ["l"="22.547,13.183"]
 "glotzerlab/fresnel" ["l"="22.626,13.176"]
-"torchmd/torchmd" ["l"="21.968,13.192"]
+"torchmd/torchmd" ["l"="21.968,13.192", "c"=344]
 "glotzerlab/gsd" ["l"="22.634,13.201"]
 "choderalab/openmmtools" ["l"="22.478,13.24"]
-"mir-group/flare" ["l"="21.947,13.098"]
+"mir-group/flare" ["l"="21.947,13.098", "c"=344]
 "MolSSI/cookiecutter-cms" ["l"="22.536,13.302"]
 "choderalab/software-development" ["l"="22.458,13.259"]
 "MolSSI/QCFractal" ["l"="22.617,13.311"]
@@ -1286,32 +1435,32 @@ digraph G {
 "choderalab/yank" ["l"="22.435,13.233"]
 "MolSSI/QCElemental" ["l"="22.629,13.327"]
 "MolSSI/QCSchema" ["l"="22.615,13.327"]
-"chemosim-lab/ProLIF" ["l"="23.451,13.748"]
+"chemosim-lab/ProLIF" ["l"="23.451,13.748", "c"=209]
 "openforcefield/openff-forcefields" ["l"="22.492,13.223"]
-"datamol-io/datamol" ["l"="23.514,13.703"]
+"datamol-io/datamol" ["l"="23.514,13.703", "c"=209]
 "freitas-rodrigo/FreeEnergyLAMMPS" ["l"="22.668,13.084"]
 "plrodolfo/FluidFreeEnergyforLAMMPS" ["l"="22.683,13.059"]
 "mosdef-hub/foyer" ["l"="22.527,13.201"]
 "mushroomfire/mdapy" ["l"="22.672,13.22"]
-"materialsvirtuallab/maml" ["l"="21.938,13.073"]
-"SINGROUP/dscribe" ["l"="21.933,13.102"]
-"BingqingCheng/ASAP" ["l"="21.974,13.108"]
-"nglviewer/nglview" ["l"="22.473,13.321"]
-"gnina/gnina" ["l"="23.429,13.74"]
-"ccsb-scripps/AutoDock-Vina" ["l"="23.455,13.791"]
+"materialsvirtuallab/maml" ["l"="21.938,13.073", "c"=344]
+"SINGROUP/dscribe" ["l"="21.933,13.102", "c"=344]
+"BingqingCheng/ASAP" ["l"="21.974,13.108", "c"=344]
+"gnina/gnina" ["l"="23.429,13.74", "c"=209]
+"ccsb-scripps/AutoDock-Vina" ["l"="23.455,13.791", "c"=209]
 "hernanchavezthielemann/GRO2LAM" ["l"="22.56,13.245"]
 "orlandoacevedo/IL" ["l"="22.605,13.245"]
 "duartegroup/autodE" ["l"="22.646,13.34"]
 "patonlab/GoodVibes" ["l"="22.676,13.34"]
-"digital-chemistry-laboratory/morfeus" ["l"="23.588,13.728"]
+"digital-chemistry-laboratory/morfeus" ["l"="23.588,13.728", "c"=209]
 "jvalegre/aqme" ["l"="22.68,13.311"]
 "GHeinzelmann/BAT.py" ["l"="22.395,13.194"]
 "Gallicchio-Lab/AToM-OpenMM" ["l"="22.415,13.197"]
-"luancarvalhomartins/PyAutoFEP" ["l"="22.395,13.227"]
 "GHeinzelmann/GHOAT.py" ["l"="22.351,13.183"]
 "cole-group/FEgrow" ["l"="22.33,13.16"]
 "wolberlab/OpenMMDL" ["l"="22.388,13.132"]
 "OpenFreeEnergy/openfe" ["l"="22.446,13.202"]
+"prody/ProDy" ["l"="23.39,13.818", "c"=209]
+"deeptime-ml/deeptime" ["l"="21.695,15.767", "c"=516]
 "NominHanggai/szaboqc" ["l"="22.765,13.383"]
 "jeanwsr/S-O-MQC-HW" ["l"="22.737,13.369"]
 "Warlocat/A-Not-So-Short-Guide-for-LinJun-Group" ["l"="22.804,13.397"]
@@ -1319,6 +1468,7 @@ digraph G {
 "yangjunjie0320/hf-tutorial" ["l"="22.825,13.379"]
 "MCompChem/fep-benchmark" ["l"="22.401,13.208"]
 "schrodinger/public_binding_free_energy_benchmark" ["l"="22.373,13.183"]
+"Pymol-Scripts/Pymol-script-repo" ["l"="23.435,13.857", "c"=209]
 "omnia-md/conda-recipes" ["l"="22.296,13.398"]
 "markovmodel/thermotools" ["l"="22.323,13.38"]
 "choderalab/pymbar" ["l"="22.448,13.24"]
@@ -1330,33 +1480,35 @@ digraph G {
 "TinkerTools/tinker9" ["l"="22.339,13.091"]
 "TinkerTools/tinker-hp" ["l"="22.336,13.107"]
 "MolSSI-BSE/basis_set_exchange" ["l"="22.649,13.364"]
-"FermiQC/Fermi.jl" ["l"="21.994,17.719"]
+"FermiQC/Fermi.jl" ["l"="21.994,17.719", "c"=863]
 "jjgoings/McMurchie-Davidson" ["l"="22.668,13.368"]
 "simint-chem/simint-generator" ["l"="22.707,13.404"]
 "ValeevGroup/mpqc" ["l"="22.702,13.387"]
 "dftlibs/xcfun" ["l"="22.695,13.431"]
-"evangelistalab/forte" ["l"="21.929,17.602"]
-"ValeevGroup/tiledarray" ["l"="21.975,17.646"]
+"evangelistalab/forte" ["l"="21.929,17.602", "c"=863]
+"ValeevGroup/tiledarray" ["l"="21.975,17.646", "c"=863]
 "paduagroup/clandp" ["l"="22.625,13.241"]
 "srtee/lammps-USER-CONP2" ["l"="22.638,13.227"]
 "openpathsampling/openpathsampling" ["l"="22.421,13.215"]
 "openmm/openmm-plumed" ["l"="22.431,13.147"]
 "Isra3l/ligpargen" ["l"="22.529,13.171"]
 "Becksteinlab/GromacsWrapper" ["l"="22.449,13.295"]
+"aiqm/torchani" ["l"="21.943,13.187", "c"=344]
 "openmopac/mopac" ["l"="22.634,13.442"]
 "grimme-lab/std2" ["l"="22.649,13.493"]
-"eljost/pysisyphus" ["l"="51.64,25.651"]
+"eljost/pysisyphus" ["l"="51.64,25.651", "c"=1275]
 "glotzerlab/signac-dashboard" ["l"="22.655,13.166"]
 "glotzerlab/software" ["l"="22.68,13.162"]
 "glotzerlab/signac-docs" ["l"="22.669,13.175"]
 "glotzerlab/signac-examples" ["l"="22.69,13.171"]
+"cyclops-community/ctf" ["l"="21.924,17.673", "c"=863]
 "jensengroup/xyz2mol" ["l"="22.571,13.307"]
 "leeping/forcebalance" ["l"="22.526,13.237"]
-"Acellera/moleculekit" ["l"="23.411,13.821"]
-"isayev/ASE_ANI" ["l"="21.91,13.22"]
-"isayevlab/Auto3D_pkg" ["l"="23.58,13.657"]
+"Acellera/moleculekit" ["l"="23.411,13.821", "c"=209]
+"isayev/ASE_ANI" ["l"="21.91,13.22", "c"=344]
+"isayevlab/Auto3D_pkg" ["l"="23.58,13.657", "c"=209]
 "charnley/rmsd" ["l"="22.598,13.336"]
-"bp-kelley/descriptastorus" ["l"="23.479,13.635"]
+"bp-kelley/descriptastorus" ["l"="23.479,13.635", "c"=209]
 "dftd3/simple-dftd3" ["l"="22.55,13.422"]
 "tblite/tblite" ["l"="22.57,13.431"]
 "libmbd/libmbd" ["l"="22.546,13.451"]
@@ -1364,7 +1516,7 @@ digraph G {
 "patonlab/wSterimol" ["l"="22.774,13.299"]
 "patonlab/Sterimol" ["l"="22.765,13.287"]
 "jvalegre/robert" ["l"="22.716,13.303"]
-"nhanitvn/TSAE" ["l"="52.583,14.663"]
+"nhanitvn/TSAE" ["l"="52.583,14.663", "c"=569]
 "mollenhauerm/keras-temporal-autoencoder" ["l"="22.334,13.344"]
 "msultan/vde_metadynamics" ["l"="22.325,13.332"]
 "openforcefield/openff-bespokefit" ["l"="22.486,13.215"]
@@ -1374,6 +1526,7 @@ digraph G {
 "lukasturcani/stk" ["l"="22.585,13.28"]
 "JelfsMaterialsGroup/stko" ["l"="22.651,13.27"]
 "QuantumPackage/qp2" ["l"="22.731,13.405"]
+"MobleyLab/drug-computing" ["l"="23.375,13.886", "c"=209]
 "TinkerTools/poltype2" ["l"="22.317,13.06"]
 "SSAGESproject/SSAGES" ["l"="22.554,13.164"]
 "mosdef-hub/gmso" ["l"="22.519,13.184"]
@@ -1386,14 +1539,14 @@ digraph G {
 "MobleyLab/FreeSolv" ["l"="22.368,13.274"]
 "openforcefield/qca-dataset-submission" ["l"="22.546,13.233"]
 "Marcello-Sega/pytim" ["l"="22.439,13.356"]
-"datreant/datreant" ["l"="43.842,24.311"]
+"datreant/datreant" ["l"="43.842,24.311", "c"=95]
 "michellab/Sire" ["l"="22.339,13.208"]
 "robashaw/libecpint" ["l"="22.741,13.427"]
 "rpmuller/pyquante2" ["l"="22.789,13.478"]
 "theochem/horton" ["l"="22.726,13.449"]
 "ChiCheng45/Gaussium" ["l"="22.825,13.496"]
 "michellab/BioSimSpace" ["l"="22.305,13.204"]
-"protocaller/ProtoCaller" ["l"="-9.97,17.59"]
+"protocaller/ProtoCaller" ["l"="-9.97,17.59", "c"=522]
 "patonlab/pyQRC" ["l"="22.731,13.332"]
 "patonlab/Kinisot" ["l"="22.764,13.327"]
 "mosdef-hub/mosdef_tutorials" ["l"="22.524,13.14"]
@@ -1407,47 +1560,54 @@ digraph G {
 "rsdefever/GAFF-foyer" ["l"="22.541,13.136"]
 "mphowardlab/azplugins" ["l"="22.673,13.147"]
 "dewberryants/asciiMol" ["l"="22.612,13.274"]
-"matteoferla/Fragmenstein" ["l"="23.395,13.736"]
+"matteoferla/Fragmenstein" ["l"="23.395,13.736", "c"=209]
+"haddocking/pdb-tools" ["l"="23.412,13.857", "c"=209]
 "grimme-lab/xtb-python" ["l"="22.581,13.449"]
-"aiqm/torchani" ["l"="21.943,13.187"]
+"dellacortelab/prospr" ["l"="24.415,13.346", "c"=281]
 "theochem/procrustes" ["l"="22.615,13.54"]
 "theochem/Selector" ["l"="22.605,13.565"]
 "openmm/openmm-ml" ["l"="22.454,13.164"]
 "jeanwsr/awesome-qc-courses" ["l"="22.775,13.356"]
+"oddt/oddt" ["l"="23.436,13.712", "c"=209]
 "cp2k/cp2k-output-tools" ["l"="22.482,13.595"]
 "dev-zero/cp2k-tools" ["l"="22.473,13.557"]
 "cp2k/cp2k-svn" ["l"="22.473,13.537"]
+"openmm/openmm-torch" ["l"="22.471,13.187"]
+"deepqmc/deepqmc" ["l"="21.844,17.685", "c"=863]
 "grimme-lab/dxtb" ["l"="22.69,13.368"]
-"Discngine/fpocket" ["l"="23.409,13.803"]
+"Discngine/fpocket" ["l"="23.409,13.803", "c"=209]
 "lammpstutorials/lammpstutorials.github.io" ["l"="22.614,13.146"]
 "dwsideriusNIST/LAMMPS_Examples" ["l"="22.632,13.129"]
-"deepmodeling/dpdata" ["l"="22.046,13.134"]
+"deepmodeling/dpdata" ["l"="22.046,13.134", "c"=344]
 "nuwan-d/LAMMPS_tutorials_for_short_courses" ["l"="22.597,13.153"]
-"brucefan1983/Molecular-Dynamics-Simulation" ["l"="22.036,13.007"]
+"brucefan1983/Molecular-Dynamics-Simulation" ["l"="22.036,13.007", "c"=344]
 "pierrehirel/atomsk" ["l"="22.581,13.14"]
 "ovilab/atomify" ["l"="22.602,13.126"]
-"deepmodeling/dpgen" ["l"="22.016,13.152"]
-"abelcarreras/phonolammps" ["l"="21.795,13.055"]
+"deepmodeling/dpgen" ["l"="22.016,13.152", "c"=344]
+"abelcarreras/phonolammps" ["l"="21.795,13.055", "c"=344]
 "tbereau/auto_martini" ["l"="22.473,13.397"]
+"nglviewer/ngl" ["l"="23.513,13.889", "c"=209]
 "westpa/westpa" ["l"="22.461,13.201"]
 "MiaoLab20/gamd-openmm" ["l"="22.435,13.092"]
+"3dmol/3Dmol.js" ["l"="23.52,13.858", "c"=209]
+"OpenChemistry/avogadrolibs" ["l"="22.558,13.332"]
 "compchem-cybertraining/Tutorials_CP2K" ["l"="22.488,13.616"]
-"Acellera/htmd" ["l"="23.422,13.809"]
+"lightdock/lightdock" ["l"="23.375,13.842", "c"=209]
+"Acellera/htmd" ["l"="23.422,13.809", "c"=209]
 "openforcefield/protein-ligand-benchmark" ["l"="22.41,13.178"]
 "fgrunewald/Martini_PolyPly" ["l"="22.488,13.38"]
 "marrink-lab/MDVoxelSegmentation" ["l"="22.473,13.375"]
 "Psi4Education/psi4education" ["l"="22.663,13.322"]
-"jhrmnn/pyberny" ["l"="22.682,13.4"]
 "Amber-MD/cpptraj" ["l"="22.344,13.282"]
 "tubiana/TTClust" ["l"="22.285,13.289"]
-"deeptime-ml/deeptime" ["l"="21.695,15.767"]
 "markovmodel/msmtools" ["l"="22.359,13.351"]
+"FoldingAtHome/coronavirus" ["l"="-10.08,17.7", "c"=522]
+"whitead/dmol-book" ["l"="21.958,13.119", "c"=344]
 "sunqm/qcint" ["l"="22.695,13.415"]
 "PCMSolver/pcmsolver" ["l"="22.767,13.536"]
 "maxscheurer/cppe" ["l"="22.789,13.558"]
 "NREL/m2p" ["l"="22.775,13.024"]
 "NREL/polyID" ["l"="22.795,13.01"]
-"openmm/openmm-torch" ["l"="22.471,13.187"]
 "openmm/NNPOps" ["l"="22.459,13.143"]
 "MaginnGroup/Cassandra" ["l"="22.567,13.093"]
 "MaginnGroup/mosdef_cassandra" ["l"="22.57,13.066"]
@@ -1468,21 +1628,27 @@ digraph G {
 "markovmodel/pytram" ["l"="22.333,13.364"]
 "markovmodel/variational" ["l"="22.339,13.376"]
 "cmelab/GIXStapose" ["l"="22.541,13.097"]
+"google-deepmind/ferminet" ["l"="21.812,17.679", "c"=863]
 "zhenxingwang/lammps-conp" ["l"="22.649,13.238"]
+"bjodah/chempy" ["l"="23.589,13.679", "c"=209]
+"torchmd/torchmd-net" ["l"="22.011,13.181", "c"=344]
 "dseeliger/pmx" ["l"="22.367,13.253"]
 "MobleyLab/Lomap" ["l"="22.343,13.235"]
 "CCPBioSim/fesetup" ["l"="22.359,13.237"]
+"quantum-visualizations/qmsolve" ["l"="33.975,-4.847", "c"=769]
+"learningmatter-mit/NeuralForceField" ["l"="21.996,13.162", "c"=344]
 "Walter-Feng/Hartree-Fock-in-CPP" ["l"="22.849,13.378"]
 "conda-incubator/condacolab" ["l"="22.381,13.161"]
-"Mishima-syk/psikit" ["l"="23.785,13.634"]
+"Mishima-syk/psikit" ["l"="23.785,13.634", "c"=209]
 "rxdock/rxdock" ["l"="22.31,13.124"]
 "Allen-Tildesley/corrections" ["l"="22.553,13.133"]
 "Allen-Tildesley/data" ["l"="22.546,13.147"]
-"iRASPA/RASPA2" ["l"="22.182,12.865"]
+"iRASPA/RASPA2" ["l"="22.182,12.865", "c"=344]
 "andeplane/atomify" ["l"="22.611,13.08"]
-"peteboyd/lammps_interface" ["l"="22.138,12.904"]
+"peteboyd/lammps_interface" ["l"="22.138,12.904", "c"=344]
 "lammpstutorials/lammpstutorials-inputs" ["l"="22.636,13.092"]
-"simongravelle/python-for-lammps" ["l"="-3.695,23.764"]
+"ReactionMechanismGenerator/RMG-Py" ["l"="51.437,25.648", "c"=1275]
+"simongravelle/python-for-lammps" ["l"="-3.695,23.764", "c"=827]
 "MiaoLab20/pyreweighting" ["l"="22.42,13.062"]
 "Gervasiolab/OpenBPMD" ["l"="22.432,13.045"]
 "choderalab/openmoltools" ["l"="22.281,13.191"]
@@ -1492,34 +1658,32 @@ digraph G {
 "TREX-CoE/trexio_tools" ["l"="22.85,13.435"]
 "TREX-CoE/qmcchem2" ["l"="22.838,13.431"]
 "TREX-CoE/aiida-qp2" ["l"="22.843,13.447"]
-"nglviewer/ngl" ["l"="23.513,13.889"]
-"molstar/molstar" ["l"="23.475,13.886"]
-"3dmol/3Dmol.js" ["l"="23.52,13.858"]
-"BioPandas/biopandas" ["l"="23.414,13.776"]
-"pharmai/plip" ["l"="23.431,13.791"]
+"BioPandas/biopandas" ["l"="23.414,13.776", "c"=209]
+"pharmai/plip" ["l"="23.431,13.791", "c"=209]
+"AngelRuizMoreno/Jupyter_Dock" ["l"="23.458,13.773", "c"=209]
 "quantaosun/Dock-MD-FEP" ["l"="22.359,13.165"]
 "BradyAJohnston/MolecularNodes" ["l"="22.434,13.322"]
-"sokrypton/ColabDesign" ["l"="24.279,13.452"]
-"martinpacesa/BindCraft" ["l"="24.245,13.486"]
-"biotite-dev/biotite" ["l"="23.377,13.798"]
-"gcorso/DiffDock" ["l"="24.303,13.475"]
-"sokrypton/ColabFold" ["l"="24.305,13.392"]
-"a-r-j/graphein" ["l"="23.404,13.704"]
-"dauparas/ProteinMPNN" ["l"="24.3,13.437"]
+"sokrypton/ColabDesign" ["l"="24.279,13.452", "c"=281]
+"martinpacesa/BindCraft" ["l"="24.245,13.486", "c"=281]
+"biotite-dev/biotite" ["l"="23.377,13.798", "c"=209]
+"gcorso/DiffDock" ["l"="24.303,13.475", "c"=281]
+"sokrypton/ColabFold" ["l"="24.305,13.392", "c"=281]
+"a-r-j/graphein" ["l"="23.404,13.704", "c"=209]
+"dauparas/ProteinMPNN" ["l"="24.3,13.437", "c"=281]
+"deepmodeling/DMFF" ["l"="22.005,13.228", "c"=344]
 "PEJpOhno/SMiPoly" ["l"="22.727,13.016"]
 "polysimtools/pysimm" ["l"="22.668,13.117"]
 "Ramprasad-Group/PSP" ["l"="22.767,13.048"]
 "OpenChemistry/avogadroapp" ["l"="22.54,13.354"]
-"OpenChemistry/avogadrolibs" ["l"="22.558,13.332"]
 "cryos/avogadro" ["l"="22.52,13.396"]
-"chemfiles/chemfiles" ["l"="-8.112,-4.159"]
-"cdk/cdk" ["l"="23.57,13.708"]
+"chemfiles/chemfiles" ["l"="-8.112,-4.159", "c"=407]
+"cdk/cdk" ["l"="23.57,13.708", "c"=209]
 "paiardin/DockingPie" ["l"="22.275,13.102"]
 "luigibonati/mlcolvar" ["l"="22.41,13.356"]
-"BingqingCheng/cace" ["l"="22.066,13.089"]
+"BingqingCheng/cace" ["l"="22.066,13.089", "c"=344]
 "bjmorgan/kinisi" ["l"="22.376,13.393"]
 "bytedance/byteqc" ["l"="22.687,13.455"]
-"isayevlab/AIMNet2" ["l"="21.948,13.245"]
+"isayevlab/AIMNet2" ["l"="21.948,13.245", "c"=344]
 "orbkit/orbkit" ["l"="22.764,13.511"]
 "nutjunkie/IQmol" ["l"="22.743,13.499"]
 "zorkzou/Molden2AIM" ["l"="22.771,13.56"]
@@ -1529,24 +1693,27 @@ digraph G {
 "asapdiscovery/asapdiscovery" ["l"="22.38,13.26"]
 "GOMC-WSU/MoSDeF-GOMC" ["l"="22.574,13.111"]
 "aoterodelaroza/postg" ["l"="22.781,13.586"]
+"jkitchin/dft-book" ["l"="21.77,13.055", "c"=344]
 "OpenFreeEnergy/kartograf" ["l"="22.282,13.219"]
-"prody/ProDy" ["l"="23.39,13.818"]
 "Tsjerk/Backward" ["l"="22.415,13.47"]
-"PytLab/VASPy" ["l"="21.771,13.036"]
-"FitSNAP/FitSNAP" ["l"="21.909,13.115"]
+"PytLab/VASPy" ["l"="21.771,13.036", "c"=344]
+"FitSNAP/FitSNAP" ["l"="21.909,13.115", "c"=344]
 "ur-whitelab/MDCrow" ["l"="22.383,13.099"]
+"dptech-corp/Uni-Dock" ["l"="24.24,13.683", "c"=281]
 "OpenFreeEnergy/konnektor" ["l"="22.303,13.227"]
 "usnistgov/atomman" ["l"="22.609,13.165"]
+"phonopy/phonopy" ["l"="21.818,12.997", "c"=344]
+"QMCPACK/qmcpack" ["l"="21.827,17.644", "c"=863]
 "simongravelle/pyplot-perso" ["l"="22.646,13.064"]
-"Autodesk/molecular-design-toolkit" ["l"="21.835,13.318"]
+"RobRomijnders/AE_ts" ["l"="52.535,14.68", "c"=569]
+"Autodesk/molecular-design-toolkit" ["l"="21.835,13.318", "c"=344]
+"jparkhill/TensorMol" ["l"="21.882,13.229", "c"=344]
 "Psivant/stormm" ["l"="22.431,13.122"]
 "fjclark/red" ["l"="22.288,13.235"]
+"qmlcode/qml" ["l"="21.875,13.203", "c"=344]
 "vladislavivanistsev/RTIL-FF" ["l"="22.641,13.251"]
-"abinit/abinit" ["l"="21.747,12.926"]
+"abinit/abinit" ["l"="21.747,12.926", "c"=344]
 "BALL-Project/ball" ["l"="22.499,13.447"]
-"phonopy/phonopy" ["l"="21.818,12.997"]
-"MaterSim/PyXtal" ["l"="21.896,13.035"]
-"lightdock/lightdock" ["l"="23.375,13.842"]
-"HannesStark/EquiBind" ["l"="24.294,13.567"]
-"haddocking/pdb-tools" ["l"="23.412,13.857"]
+"MaterSim/PyXtal" ["l"="21.896,13.035", "c"=344]
+"HannesStark/EquiBind" ["l"="24.294,13.567", "c"=281]
 }

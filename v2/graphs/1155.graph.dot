@@ -1,4 +1,6 @@
 digraph G {
+"sameersbn/docker-postgresql" -> "sameersbn/docker-redmine" ["e"=1]
+"sameersbn/docker-gitlab" -> "sameersbn/docker-redmine" ["e"=1]
 "maxtepkeev/python-redmine" -> "anteo/redmine_custom_workflows"
 "maxtepkeev/python-redmine" -> "Ilogeek/redmine_issue_dynamic_edit"
 "maxtepkeev/python-redmine" -> "alexbevi/redmine_knowledgebase"
@@ -136,6 +138,7 @@ digraph G {
 "jgraichen/redmine_dashboard" -> "taqueci/redmine_wysiwyg_editor"
 "jgraichen/redmine_dashboard" -> "ixti/redmine_tags"
 "jgraichen/redmine_dashboard" -> "haru/redmine_wiki_extensions"
+"edavis10/redmine" -> "backlogs/redmine_backlogs" ["e"=1]
 "mrliptontea/PurpleMine2" -> "jgraichen/redmine_dashboard"
 "mrliptontea/PurpleMine2" -> "Nitrino/flatly_light_redmine"
 "mrliptontea/PurpleMine2" -> "danmunn/redmine_dmsf"
@@ -426,6 +429,10 @@ digraph G {
 "daipresents/redmine_all_time_team" -> "daipresents/redmine_version_burndown_charts"
 "fraoustin/redmine_dark" -> "martin-svoboda/bs-redmine-theme-dark"
 "fraoustin/redmine_dark" -> "sk-ys/redmine_enhanced_ux"
+"redmine/redmine" -> "mrliptontea/PurpleMine2" ["e"=1]
+"redmine/redmine" -> "sameersbn/docker-redmine" ["e"=1]
+"redmine/redmine" -> "danmunn/redmine_dmsf" ["e"=1]
+"redmine/redmine" -> "jgraichen/redmine_dashboard" ["e"=1]
 "farend/redmine_theme_farend_bleuclair" -> "farend/redmine_theme_farend_fancy"
 "farend/redmine_theme_farend_bleuclair" -> "alphanodes/additional_tags"
 "farend/redmine_theme_farend_bleuclair" -> "clear-code/redmine_full_text_search"
@@ -495,6 +502,7 @@ digraph G {
 "jperelli/Redmine-Periodic-Task" -> "alphanodes/additionals"
 "jperelli/Redmine-Periodic-Task" -> "southbridgeio/redmine_recurring_tasks"
 "jperelli/Redmine-Periodic-Task" -> "ergoserv/redmine-progressive-projects-list"
+"python-gitlab/python-gitlab" -> "maxtepkeev/python-redmine" ["e"=1]
 "redmine-git-hosting/redmine_git_hosting" -> "jbox-web/redmine_bootstrap_kit"
 "redmine-git-hosting/redmine_git_hosting" -> "jbox-web/redmine_jenkins"
 "redmine-git-hosting/redmine_git_hosting" -> "alphanodes/additionals"
@@ -550,6 +558,9 @@ digraph G {
 "alphanodes/redmine_messenger" -> "ergoserv/redmine-progressive-projects-list"
 "theill/redmine-basecamp-theme" -> "BevanR/martini"
 "theill/redmine-basecamp-theme" -> "edavis10/question_plugin"
+"sameersbn/docker-postgresql" ["l"="2.751,13.819", "c"=257]
+"sameersbn/docker-redmine" ["l"="2.077,-36.391"]
+"sameersbn/docker-gitlab" ["l"="6.05,-12.022", "c"=270]
 "maxtepkeev/python-redmine" ["l"="2.089,-36.355"]
 "anteo/redmine_custom_workflows" ["l"="2.135,-36.346"]
 "Ilogeek/redmine_issue_dynamic_edit" ["l"="2.115,-36.329"]
@@ -566,14 +577,11 @@ digraph G {
 "danmunn/redmine_dmsf" ["l"="2.113,-36.354"]
 "Loriowar/redmine_issues_tree" ["l"="2.121,-36.344"]
 "taqueci/redmine_wysiwyg_editor" ["l"="2.098,-36.334"]
-"sameersbn/docker-redmine" ["l"="2.077,-36.391"]
 "docker-library/redmine" ["l"="2.072,-36.356"]
-"sameersbn/docker-gitlab" ["l"="6.05,-12.022"]
 "bitnami/bitnami-docker-redmine" ["l"="2.026,-36.434"]
-"redmine/redmine" ["l"="4.413,-37.068"]
+"redmine/redmine" ["l"="4.413,-37.068", "c"=1]
 "peclik/clipboard_image_paste" ["l"="2.152,-36.373"]
 "Nitrino/flatly_light_redmine" ["l"="2.116,-36.379"]
-"sameersbn/docker-postgresql" ["l"="2.751,13.819"]
 "nounder/redmine_impersonate" ["l"="2.149,-36.326"]
 "akiko-pusu/redmine_issue_templates" ["l"="2.108,-36.315"]
 "agileware-jp/redmine_issue_templates" ["l"="2.079,-36.305"]
@@ -637,6 +645,8 @@ digraph G {
 "ergoserv/redmine-progressive-projects-list" ["l"="2.135,-36.334"]
 "jfqd/redmine_helpdesk" ["l"="2.152,-36.316"]
 "haru/redmine_wiki_extensions" ["l"="2.133,-36.312"]
+"edavis10/redmine" ["l"="4.892,-37.257", "c"=1]
+"backlogs/redmine_backlogs" ["l"="2.211,-36.396"]
 "akabekobeko/redmine-theme-minimalflat2" ["l"="2.074,-36.372"]
 "tkusukawa/redmine_wiki_lists" ["l"="2.177,-36.226"]
 "redmica/redmine_issues_panel" ["l"="2.041,-36.3"]
@@ -648,12 +658,10 @@ digraph G {
 "samchen2009/ekanban" ["l"="2.345,-36.404"]
 "edavis10/redmine-stuff-to-do-plugin" ["l"="2.291,-36.42"]
 "edavis10/redmine-timesheet-plugin" ["l"="2.271,-36.409"]
-"backlogs/redmine_backlogs" ["l"="2.211,-36.396"]
 "256MbTeam/Redmine-Scrumbler" ["l"="2.255,-36.38"]
 "fernandokosh/redmine_time_tracker" ["l"="2.251,-36.409"]
 "bradbeattie/redmine-graphs-plugin" ["l"="2.245,-36.391"]
 "akiko-pusu/redmine_banner" ["l"="2.167,-36.36"]
-"edavis10/redmine" ["l"="4.892,-37.257"]
 "alexmonteiro/Redmine-Monitoring-Controlling" ["l"="2.244,-36.425"]
 "dergachev/redmine_git_remote" ["l"="2.276,-36.337"]
 "linniksa/redmine_git_mirror" ["l"="2.309,-36.332"]
@@ -697,6 +705,7 @@ digraph G {
 "daipresents/redmine_roadmaps" ["l"="2.242,-36.452"]
 "two-pack/redmine_xls_export" ["l"="2.174,-36.398"]
 "southbridgeio/redmine_recurring_tasks" ["l"="2.105,-36.259"]
+"python-gitlab/python-gitlab" ["l"="7.139,-8.678", "c"=14]
 "redmine-git-hosting/redmine_git_hosting" ["l"="2.199,-36.292"]
 "voondo/redmine_git_server" ["l"="2.211,-36.272"]
 "leovitch/redmine_importer" ["l"="2.193,-36.519"]

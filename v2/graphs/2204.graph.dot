@@ -14,6 +14,9 @@ digraph G {
 "Chia-Network/chia-blockchain" -> "Chia-Network/bladebit"
 "Chia-Network/chia-blockchain" -> "ethereum/go-ethereum" ["e"=1]
 "Chia-Network/chia-blockchain" -> "jina-ai/serve" ["e"=1]
+"dogecoin/dogecoin" -> "Chia-Network/chia-blockchain" ["e"=1]
+"wso2/product-is" -> "wso2/balana" ["e"=1]
+"filecoin-project/lotus" -> "ethersphere/bee" ["e"=1]
 "Chia-Network/chia-network.github.io" -> "martomi/chiadog"
 "poanetwork/vdf" -> "harmony-one/vdf"
 "poanetwork/vdf" -> "ericxor61a0c0d/VDF"
@@ -49,11 +52,18 @@ digraph G {
 "zeutro/openabe" -> "relic-toolkit/relic"
 "zeutro/openabe" -> "ikalchev/kpabe-yct14-cpp"
 "zeutro/openabe" -> "xuekema/Revocable-CPABE-KEK_Tree"
+"Seagate/openSeaChest" -> "Chia-Network/bladebit" ["e"=1]
+"arnaucube/go-snark-study" -> "kilic/bls12-381" ["e"=1]
+"spacemeshos/go-spacemesh" -> "ethersphere/bee" ["e"=1]
+"spacemeshos/go-spacemesh" -> "madMAx43v3r/chia-gigahorse" ["e"=1]
+"HarryR/solcrypto" -> "cloudflare/bn256" ["e"=1]
 "Chia-Network/chips" -> "Yakuhito/tibet"
 "Chia-Network/chips" -> "Yakuhito/GreenWeb.js"
 "Chia-Network/chips" -> "Tail-Database/tail-database-app"
 "Chia-Network/chips" -> "dkackman/chia-repl"
 "Chia-Network/chips" -> "GobyWallet/openapi"
+"mratsim/constantine" -> "supranational/blst" ["e"=1]
+"drand/drand" -> "supranational/blst" ["e"=1]
 "skalenetwork/libBLS" -> "skalenetwork/skale-consensus"
 "skalenetwork/libBLS" -> "skalenetwork/skale.py"
 "skalenetwork/libBLS" -> "skalenetwork/skaled"
@@ -89,12 +99,17 @@ digraph G {
 "JHUISI/charm" -> "encryptogroup/ABY" ["e"=1]
 "JHUISI/charm" -> "miracl/core"
 "JHUISI/charm" -> "encryptedsystems/Clusion"
+"ethersphere/swarm" -> "ethersphere/bee" ["e"=1]
 "harmony-one/vdf" -> "keyfuse/vdf"
 "harmony-one/vdf" -> "poanetwork/vdf"
 "harmony-one/vdf" -> "iotaledger/vdf"
+"poanetwork/hbbft" -> "poanetwork/vdf" ["e"=1]
+"zkcrypto/bls12_381" -> "supranational/blst" ["e"=1]
 "fentec-project/CiFEr" -> "fentec-project/neural-network-on-encrypted-data"
 "fentec-project/CiFEr" -> "fentec-project/gofe"
 "fentec-project/CiFEr" -> "OpenMined/PyFE" ["e"=1]
+"cloudflare/circl" -> "herumi/mcl" ["e"=1]
+"cloudflare/circl" -> "cloudflare/bn256" ["e"=1]
 "miracl/core" -> "miracl/amcl"
 "miracl/core" -> "miracl/MIRACL"
 "miracl/core" -> "docknetwork/crypto"
@@ -210,6 +225,7 @@ digraph G {
 "JezaChen/Searchable_Symmetric_Encryption" -> "JezaChen/SSEPy"
 "JezaChen/Searchable_Symmetric_Encryption" -> "MonashCybersecurityLab/JanusPP"
 "JezaChen/Searchable_Symmetric_Encryption" -> "IanVanHoudt/Searchable-Symmetric-Encryption"
+"guanzhi/GmSSL" -> "miracl/MIRACL" ["e"=1]
 "supranational/blst" -> "zkcrypto/bls12_381" ["e"=1]
 "supranational/blst" -> "herumi/mcl"
 "supranational/blst" -> "kilic/bls12-381"
@@ -225,6 +241,8 @@ digraph G {
 "supranational/blst" -> "paulmillr/noble-bls12-381" ["e"=1]
 "supranational/blst" -> "dusk-network/plonk" ["e"=1]
 "supranational/blst" -> "fluidex/awesome-plonk" ["e"=1]
+"sqfmi/Watchy" -> "ethersphere/bee" ["e"=1]
+"CoinSummer/filecoin" -> "doristeo/SwarmMonitoring" ["e"=1]
 "relic-toolkit/relic" -> "herumi/mcl"
 "relic-toolkit/relic" -> "blynn/pbc"
 "relic-toolkit/relic" -> "JHUISI/charm"
@@ -255,6 +273,8 @@ digraph G {
 "ethersphere/bee" -> "Chia-Network/pool-reference"
 "ethersphere/bee" -> "mattmattox/DiskScan" ["e"=1]
 "ethersphere/bee" -> "SupportTools/drone-runner-cleanup" ["e"=1]
+"Consensys/gnark-crypto" -> "supranational/blst" ["e"=1]
+"Consensys/gnark-crypto" -> "kilic/bls12-381" ["e"=1]
 "skalenetwork/sgxwallet" -> "skalenetwork/skale.py"
 "skalenetwork/sgxwallet" -> "skalenetwork/skale-consensus"
 "skalenetwork/sgxwallet" -> "skalenetwork/skale.js"
@@ -265,7 +285,14 @@ digraph G {
 "skalenetwork/sgxwallet" -> "skalenetwork/skaled"
 "skalenetwork/sgxwallet" -> "skalenetwork/documentation"
 "skalenetwork/sgxwallet" -> "skalenetwork/skale-demo"
+"paulmillr/noble-bls12-381" -> "kilic/bls12-381" ["e"=1]
+"OpenMined/PyFE" -> "fentec-project/CiFEr" ["e"=1]
+"getamis/alice" -> "kilic/bls12-381" ["e"=1]
 "0xmichalis/chiapos" -> "chuwt/dive-into-chia"
+"dedis/kyber" -> "cloudflare/bn256" ["e"=1]
+"dedis/kyber" -> "herumi/bls" ["e"=1]
+"dedis/kyber" -> "kilic/bls12-381" ["e"=1]
+"dedis/kyber" -> "herumi/mcl" ["e"=1]
 "Chia-Network/clvm_tools" -> "Chia-Network/clvm"
 "Chia-Network/clvm_tools" -> "Chia-Network/chialisp-web"
 "Chia-Network/chiavdf" -> "iotaledger/vdf"
@@ -310,6 +337,7 @@ digraph G {
 "skalenetwork/skale-node" -> "skalenetwork/skale.py"
 "skalenetwork/skale-node" -> "skalenetwork/skaled-tests"
 "Chia-Network/wallets" -> "Chia-Network/clvm"
+"Sneeds-Feed-and-Seed/sneedacity" -> "Chia-Network/pool-reference" ["e"=1]
 "retzkek/chiamon" -> "stolk/chiaharvestgraph"
 "retzkek/chiamon" -> "ytx1991/ChiaMonitor"
 "retzkek/chiamon" -> "philippnormann/chia-monitor"
@@ -370,6 +398,7 @@ digraph G {
 "swar/Swar-Chia-Plot-Manager" -> "abueide/harry-plotter"
 "swar/Swar-Chia-Plot-Manager" -> "Chia-Network/bladebit"
 "swar/Swar-Chia-Plot-Manager" -> "Chia-Network/chia-blockchain"
+"autonomys/subspace" -> "madMAx43v3r/chia-gigahorse" ["e"=1]
 "ericaltendorf/plotman" -> "rjsears/chia_plot_manager"
 "ericaltendorf/plotman" -> "martomi/chiadog"
 "ericaltendorf/plotman" -> "swar/Swar-Chia-Plot-Manager"
@@ -414,6 +443,7 @@ digraph G {
 "HiveProject2021/chives-blockchain" -> "BTCgreen-Network/shibgreen-blockchain"
 "HiveProject2021/chives-blockchain" -> "Caldera-Network/caldera-blockchain"
 "HiveProject2021/chives-blockchain" -> "Flax-Network/flax-blockchain"
+"tamarin-prover/tamarin-prover" -> "relic-toolkit/relic" ["e"=1]
 "herumi/mcl" -> "herumi/bls"
 "herumi/mcl" -> "relic-toolkit/relic"
 "herumi/mcl" -> "blynn/pbc"
@@ -429,6 +459,7 @@ digraph G {
 "herumi/mcl" -> "arkworks-rs/snark" ["e"=1]
 "herumi/mcl" -> "osu-crypto/libOTe" ["e"=1]
 "herumi/mcl" -> "Chia-Network/bls-signatures"
+"ekzhang/graphics-workshop" -> "Chia-Network/chia-blockchain" ["e"=1]
 "ldeffenb/monBee" -> "mfw78/apiarist"
 "Chia-Mine/chia-agent" -> "Yakuhito/GreenWeb.js"
 "Chia-Mine/chia-agent" -> "freddiecoleman/chia-client"
@@ -456,6 +487,8 @@ digraph G {
 "stotiks/chia-plotter" -> "ChainGreenOrg/chaingreen-blockchain"
 "stotiks/chia-plotter" -> "guydavis/machinaris"
 "stotiks/chia-plotter" -> "Spare-Network/spare-blockchain"
+"andreacorbellini/ecc" -> "blynn/pbc" ["e"=1]
+"andreacorbellini/ecc" -> "relic-toolkit/relic" ["e"=1]
 "junwei-wang/cpabe" -> "stefano81/dcpabe"
 "junwei-wang/cpabe" -> "sagrawal87/ABE"
 "junwei-wang/cpabe" -> "liuweiran900217/CloudCrypto"
@@ -527,6 +560,8 @@ digraph G {
 "h9-dev/chia-miner" -> "ericaltendorf/plotman"
 "h9-dev/chia-miner" -> "Flax-Network/flax-blockchain"
 "h9-dev/chia-miner" -> "grayfallstown/Chia-Plot-Status"
+"WyvernTKC/cpuminer-gr-avx2" -> "Chia-Network/bladebit" ["e"=1]
+"WyvernTKC/cpuminer-gr-avx2" -> "stotiks/chia-plotter" ["e"=1]
 "chuwt/dive-into-chia" -> "0xmichalis/chiapos"
 "chuwt/dive-into-chia" -> "chuwt/chia-bls-go"
 "stolk/chiaharvestgraph" -> "stolk/chiaplotgraph"
@@ -547,6 +582,7 @@ digraph G {
 "herumi/ate-pairing" -> "scipr-lab/libff"
 "herumi/ate-pairing" -> "pepper-project/pequin" ["e"=1]
 "herumi/ate-pairing" -> "herumi/mcl"
+"amiller/HoneyBadgerBFT" -> "herumi/bls" ["e"=1]
 "Chia-Network/pool-reference" -> "Chia-Network/chiapos"
 "Chia-Network/pool-reference" -> "madMAx43v3r/chia-plotter"
 "Chia-Network/pool-reference" -> "martomi/chiadog"
@@ -579,10 +615,12 @@ digraph G {
 "Mahdi171/CP-ABE" -> "mohammed-kamel/odabe"
 "gsmaster8/MTA_CP_ABE" -> "mohammed-kamel/odabe"
 "gsmaster8/MTA_CP_ABE" -> "urarik/CP-ABE-based-on-ECC-implementation"
+"minerdao/lotus-ops" -> "doristeo/SwarmMonitoring" ["e"=1]
 "stolk/chiaplotgraph" -> "stolk/chiaheightgraph"
 "stolk/chiaplotgraph" -> "stolk/chiaharvestgraph"
 "stolk/chiaplotgraph" -> "kubec/chia-log-analyzer"
 "stolk/chiaplotgraph" -> "Eelviny/chia-docker"
+"sxguan/fabric-go-sdk" -> "vincy-ch/medicalDataSharing" ["e"=1]
 "guydavis/machinaris" -> "stolk/chiaharvestgraph"
 "guydavis/machinaris" -> "philippnormann/chia-monitor"
 "guydavis/machinaris" -> "gilnobrega/farmr"
@@ -802,6 +840,8 @@ digraph G {
 "JezaChen/SSEPy" -> "JezaChen/Searchable_Symmetric_Encryption"
 "JezaChen/SSEPy" -> "emad7105/awesome-sse"
 "JezaChen/SSEPy" -> "IanVanHoudt/Searchable-Symmetric-Encryption"
+"mit-plv/fiat-crypto" -> "relic-toolkit/relic" ["e"=1]
+"dedis/cothority" -> "herumi/bls" ["e"=1]
 "Yakuhito/GreenWeb.js" -> "Chia-Mine/clvm-js"
 "Yakuhito/GreenWeb.js" -> "Tail-Database/tail-database-app"
 "Yakuhito/GreenWeb.js" -> "dkackman/chia-repl"
@@ -911,6 +951,7 @@ digraph G {
 "IanVanHoudt/Searchable-Symmetric-Encryption" -> "sashank/jsse"
 "scipr-lab/libff" -> "scipr-lab/libfqfft"
 "scipr-lab/libff" -> "herumi/ate-pairing"
+"guanzhi/GM-Standards" -> "miracl/MIRACL" ["e"=1]
 "xuekema/Revocable-CPABE-KEK_Tree" -> "gsmaster8/MTA_CP_ABE"
 "miracl/MIRACL" -> "relic-toolkit/relic"
 "miracl/MIRACL" -> "miracl/core"
@@ -961,6 +1002,9 @@ digraph G {
 "encryptedsystems/Clusion" -> "bernymac/CloudCryptoSearch"
 "encryptedsystems/Clusion" -> "wanfen018/Attribute-Based-Searchable-Encryption"
 "encryptedsystems/Clusion" -> "InitialDLab/SEAL-ORAM" ["e"=1]
+"pepper-project/pequin" -> "herumi/ate-pairing" ["e"=1]
+"libtom/libtomcrypt" -> "miracl/MIRACL" ["e"=1]
+"cossacklabs/acra" -> "encryptedsystems/Clusion" ["e"=1]
 "warpdotgreen/cli" -> "Tail-Database/tail-database-app"
 "gdanezis/bplib" -> "gdanezis/petlib"
 "xch-dev/rue" -> "xch-dev/chia-wallet-sdk"
@@ -972,18 +1016,21 @@ digraph G {
 "madMAx43v3r/chia-plotter" ["l"="50.812,2.112"]
 "swar/Swar-Chia-Plot-Manager" ["l"="50.781,2.153"]
 "ericaltendorf/plotman" ["l"="50.784,2.095"]
-"dogecoin/dogecoin" ["l"="-21.439,10.783"]
+"dogecoin/dogecoin" ["l"="-21.439,10.783", "c"=22]
 "martomi/chiadog" ["l"="50.768,2.099"]
 "stotiks/chia-plotter" ["l"="50.814,2.161"]
 "Chia-Network/chia-blockchain-gui" ["l"="50.733,2.014"]
-"solana-labs/solana" ["l"="-21.237,10.787"]
-"github/docs" ["l"="8.819,-44.718"]
-"ethereum/solidity" ["l"="-21.124,10.845"]
+"solana-labs/solana" ["l"="-21.237,10.787", "c"=22]
+"github/docs" ["l"="8.819,-44.718", "c"=828]
+"ethereum/solidity" ["l"="-21.124,10.845", "c"=22]
 "ethersphere/bee" ["l"="50.711,2.164"]
-"ccxt/binance-trade-bot" ["l"="-10.584,11.473"]
+"ccxt/binance-trade-bot" ["l"="-10.584,11.473", "c"=408]
 "Chia-Network/bladebit" ["l"="50.816,2.137"]
-"ethereum/go-ethereum" ["l"="-21.199,10.926"]
-"jina-ai/serve" ["l"="46.285,31.438"]
+"ethereum/go-ethereum" ["l"="-21.199,10.926", "c"=22]
+"jina-ai/serve" ["l"="46.285,31.438", "c"=605]
+"wso2/product-is" ["l"="-2.483,15.728", "c"=43]
+"wso2/balana" ["l"="50.142,1.838"]
+"filecoin-project/lotus" ["l"="-23.047,6.273", "c"=1054]
 "Chia-Network/chia-network.github.io" ["l"="50.714,2.059"]
 "poanetwork/vdf" ["l"="50.937,1.914"]
 "harmony-one/vdf" ["l"="50.914,1.919"]
@@ -1002,12 +1049,12 @@ digraph G {
 "supranational/blst" ["l"="50.602,1.923"]
 "Chia-Network/chiapos" ["l"="50.744,2.051"]
 "relic-toolkit/relic" ["l"="50.543,1.932"]
-"zkcrypto/pairing" ["l"="-18.904,12.991"]
+"zkcrypto/pairing" ["l"="-18.904,12.991", "c"=173]
 "blynn/pbc" ["l"="50.546,1.915"]
 "herumi/mcl" ["l"="50.568,1.908"]
-"zkcrypto/bls12_381" ["l"="-18.854,12.951"]
-"sipa/bips" ["l"="-18.596,11.061"]
-"ZenGo-X/curv" ["l"="-16.725,7.498"]
+"zkcrypto/bls12_381" ["l"="-18.854,12.951", "c"=173]
+"sipa/bips" ["l"="-18.596,11.061", "c"=122]
+"ZenGo-X/curv" ["l"="-16.725,7.498", "c"=509]
 "skalenetwork/libBLS" ["l"="50.663,1.836"]
 "phoreproject/bls" ["l"="50.648,1.912"]
 "zeutro/openabe" ["l"="50.466,1.912"]
@@ -1020,12 +1067,21 @@ digraph G {
 "TU-Berlin-SNET/jTR-ABE" ["l"="50.421,1.899"]
 "ikalchev/kpabe-yct14-cpp" ["l"="50.468,1.943"]
 "xuekema/Revocable-CPABE-KEK_Tree" ["l"="50.439,1.936"]
+"Seagate/openSeaChest" ["l"="2.018,15.322", "c"=756]
+"arnaucube/go-snark-study" ["l"="-18.959,13.058", "c"=173]
+"kilic/bls12-381" ["l"="50.616,1.867"]
+"spacemeshos/go-spacemesh" ["l"="-20.658,6.692", "c"=163]
+"madMAx43v3r/chia-gigahorse" ["l"="50.832,2.154"]
+"HarryR/solcrypto" ["l"="-19.058,13.055", "c"=173]
+"cloudflare/bn256" ["l"="50.526,1.882"]
 "Chia-Network/chips" ["l"="50.842,1.933"]
 "Yakuhito/tibet" ["l"="50.821,1.919"]
 "Yakuhito/GreenWeb.js" ["l"="50.835,1.922"]
 "Tail-Database/tail-database-app" ["l"="50.814,1.946"]
 "dkackman/chia-repl" ["l"="50.833,1.943"]
 "GobyWallet/openapi" ["l"="50.823,1.938"]
+"mratsim/constantine" ["l"="-18.758,12.959", "c"=173]
+"drand/drand" ["l"="-16.803,7.454", "c"=509]
 "skalenetwork/skale-consensus" ["l"="50.67,1.81"]
 "skalenetwork/skale.py" ["l"="50.683,1.789"]
 "skalenetwork/skaled" ["l"="50.685,1.81"]
@@ -1050,14 +1106,17 @@ digraph G {
 "debatem1/pypbc" ["l"="50.486,1.857"]
 "fentec-project/gofe" ["l"="50.387,1.911"]
 "miracl/MIRACL" ["l"="50.514,1.916"]
-"encryptogroup/ABY" ["l"="51.539,1.358"]
+"encryptogroup/ABY" ["l"="51.539,1.358", "c"=378]
 "miracl/core" ["l"="50.517,1.946"]
+"ethersphere/swarm" ["l"="-22.553,11.932", "c"=822]
+"poanetwork/hbbft" ["l"="-22.143,13.235", "c"=628]
 "fentec-project/CiFEr" ["l"="50.361,1.928"]
 "fentec-project/neural-network-on-encrypted-data" ["l"="50.354,1.911"]
-"OpenMined/PyFE" ["l"="51.679,1.536"]
+"OpenMined/PyFE" ["l"="51.679,1.536", "c"=378]
+"cloudflare/circl" ["l"="-21.522,-24.389", "c"=1251]
 "miracl/amcl" ["l"="50.523,1.977"]
 "docknetwork/crypto" ["l"="50.506,2.01"]
-"mmcloughlin/addchain" ["l"="-18.809,13.273"]
+"mmcloughlin/addchain" ["l"="-18.809,13.273", "c"=173]
 "chrizchow/JPBC-FAME" ["l"="50.414,1.888"]
 "xXFracXx/xACS-cpABE" ["l"="50.405,1.897"]
 "Gao-Chuan/encrypt_netdisk" ["l"="50.432,1.857"]
@@ -1086,41 +1145,40 @@ digraph G {
 "AltarIbnL/Multi-keyword-fuzzy-searchable-encryption" ["l"="50.401,1.813"]
 "dis2/bls12" ["l"="50.672,1.906"]
 "jgharehchamani/Small-Client-SSE" ["l"="50.316,1.721"]
-"kilic/bls12-381" ["l"="50.616,1.867"]
-"supranational/sppark" ["l"="-18.673,12.936"]
-"Consensys/gnark-crypto" ["l"="-18.793,12.947"]
-"arkworks-rs/algebra" ["l"="-18.856,12.915"]
-"zcash/halo2" ["l"="-18.829,12.914"]
-"EspressoSystems/jellyfish" ["l"="-18.809,12.942"]
-"mratsim/constantine" ["l"="-18.758,12.959"]
-"paulmillr/noble-bls12-381" ["l"="-6.469,-35.628"]
-"dusk-network/plonk" ["l"="-18.827,12.936"]
-"fluidex/awesome-plonk" ["l"="-18.776,12.966"]
-"osu-crypto/libOTe" ["l"="51.522,1.338"]
+"guanzhi/GmSSL" ["l"="-22.313,14.564", "c"=412]
+"supranational/sppark" ["l"="-18.673,12.936", "c"=173]
+"Consensys/gnark-crypto" ["l"="-18.793,12.947", "c"=173]
+"arkworks-rs/algebra" ["l"="-18.856,12.915", "c"=173]
+"zcash/halo2" ["l"="-18.829,12.914", "c"=173]
+"EspressoSystems/jellyfish" ["l"="-18.809,12.942", "c"=173]
+"paulmillr/noble-bls12-381" ["l"="-6.469,-35.628", "c"=1859]
+"dusk-network/plonk" ["l"="-18.827,12.936", "c"=173]
+"fluidex/awesome-plonk" ["l"="-18.776,12.966", "c"=173]
+"sqfmi/Watchy" ["l"="-16.929,-43.017", "c"=55]
+"CoinSummer/filecoin" ["l"="-23.023,6.298", "c"=1054]
+"doristeo/SwarmMonitoring" ["l"="50.666,2.224"]
+"osu-crypto/libOTe" ["l"="51.522,1.338", "c"=378]
 "herumi/ate-pairing" ["l"="50.553,1.884"]
-"cryptobiu/libscapi" ["l"="51.572,1.328"]
-"emp-toolkit/emp-tool" ["l"="51.549,1.341"]
-"cloudflare/bn256" ["l"="50.526,1.882"]
+"cryptobiu/libscapi" ["l"="51.572,1.328", "c"=378]
+"emp-toolkit/emp-tool" ["l"="51.549,1.341", "c"=378]
 "ethersphere/bee-dashboard" ["l"="50.66,2.208"]
-"ethersphere/swarm" ["l"="-22.553,11.932"]
 "ethersphere/bee-clef" ["l"="50.663,2.178"]
-"filecoin-project/community-china" ["l"="-23.007,6.294"]
-"filecoin-project/lotus" ["l"="-23.047,6.273"]
+"filecoin-project/community-china" ["l"="-23.007,6.294", "c"=1054]
 "ethersphere/exportSwarmKey" ["l"="50.646,2.19"]
 "ethersphere/beekeeper" ["l"="50.693,2.203"]
 "ethersphere/bee-js" ["l"="50.685,2.222"]
-"doristeo/SwarmMonitoring" ["l"="50.666,2.224"]
 "Chia-Network/pool-reference" ["l"="50.741,2.085"]
-"mattmattox/DiskScan" ["l"="51.679,0.87"]
-"SupportTools/drone-runner-cleanup" ["l"="51.677,0.883"]
+"mattmattox/DiskScan" ["l"="51.679,0.87", "c"=1033]
+"SupportTools/drone-runner-cleanup" ["l"="51.677,0.883", "c"=1033]
+"getamis/alice" ["l"="-16.744,7.556", "c"=509]
 "0xmichalis/chiapos" ["l"="50.69,2.347"]
 "chuwt/dive-into-chia" ["l"="50.704,2.33"]
+"dedis/kyber" ["l"="-16.827,7.542", "c"=509]
 "Chia-Network/clvm_tools" ["l"="50.71,2"]
 "Chia-Network/clvm" ["l"="50.721,2.037"]
 "Chia-Network/chialisp-web" ["l"="50.713,1.977"]
 "att/XACML" ["l"="50.118,1.82"]
 "apache/incubator-retired-openaz" ["l"="50.096,1.806"]
-"wso2/balana" ["l"="50.142,1.838"]
 "authzforce/server" ["l"="50.152,1.816"]
 "authzforce/java-xacml-sdk" ["l"="50.096,1.829"]
 "grayfallstown/Chia-Plot-Status" ["l"="50.762,2.127"]
@@ -1138,6 +1196,7 @@ digraph G {
 "protolambda/go-kzg" ["l"="50.611,1.824"]
 "Chia-Mine/chia-agent" ["l"="50.808,1.933"]
 "CMEONE/chia-utils" ["l"="50.795,1.952"]
+"Sneeds-Feed-and-Seed/sneedacity" ["l"="-46.207,9.739", "c"=562]
 "stolk/chiaharvestgraph" ["l"="50.772,2.135"]
 "ytx1991/ChiaMonitor" ["l"="50.761,2.115"]
 "philippnormann/chia-monitor" ["l"="50.798,2.129"]
@@ -1148,22 +1207,24 @@ digraph G {
 "gilnobrega/farmr" ["l"="50.784,2.133"]
 "abueide/harry-plotter" ["l"="50.753,2.143"]
 "kubec/chia-log-analyzer" ["l"="50.767,2.147"]
-"madMAx43v3r/chia-gigahorse" ["l"="50.832,2.154"]
 "stolk/chiaplotgraph" ["l"="50.741,2.135"]
 "Chia-Network/drplotter" ["l"="50.845,2.143"]
 "lmacken/plow" ["l"="50.86,2.136"]
 "madMAx43v3r/mmx-node" ["l"="50.814,2.18"]
 "pkwenda/Swar-Chia-Plot-Manager" ["l"="50.748,2.211"]
+"autonomys/subspace" ["l"="-20.612,6.725", "c"=163]
 "Chia-Network/chia-gaming" ["l"="50.755,1.952"]
 "HiveProject2021/chives-blockchain" ["l"="50.879,2.187"]
 "silicoin-network/silicoin-blockchain" ["l"="50.873,2.207"]
 "BTCgreen-Network/shibgreen-blockchain" ["l"="50.917,2.19"]
 "Caldera-Network/caldera-blockchain" ["l"="50.91,2.177"]
 "Flax-Network/flax-blockchain" ["l"="50.846,2.198"]
-"scipr-lab/libiop" ["l"="-18.823,13.016"]
+"tamarin-prover/tamarin-prover" ["l"="-22.257,-19.543", "c"=392]
+"scipr-lab/libiop" ["l"="-18.823,13.016", "c"=173]
 "scipr-lab/libff" ["l"="50.55,1.851"]
-"dalek-cryptography/bulletproofs" ["l"="-18.962,12.964"]
-"arkworks-rs/snark" ["l"="-18.899,12.966"]
+"dalek-cryptography/bulletproofs" ["l"="-18.962,12.964", "c"=173]
+"arkworks-rs/snark" ["l"="-18.899,12.966", "c"=173]
+"ekzhang/graphics-workshop" ["l"="-24.854,-27.591", "c"=145]
 "ldeffenb/monBee" ["l"="50.633,2.215"]
 "mfw78/apiarist" ["l"="50.639,2.235"]
 "Chia-Mine/clvm-js" ["l"="50.826,1.906"]
@@ -1173,6 +1234,7 @@ digraph G {
 "mymagadsl/cptool" ["l"="50.87,2.166"]
 "ChainGreenOrg/chaingreen-blockchain" ["l"="50.85,2.222"]
 "Spare-Network/spare-blockchain" ["l"="50.856,2.211"]
+"andreacorbellini/ecc" ["l"="-16.802,10.046", "c"=303]
 "TU-Berlin-SNET/JCPABE" ["l"="50.424,1.96"]
 "hjlpb/ABE" ["l"="50.414,1.946"]
 "zlwen/cpabe-java" ["l"="50.4,1.952"]
@@ -1192,10 +1254,12 @@ digraph G {
 "Flofie/chia-desktop" ["l"="50.728,2.191"]
 "h9-dev/chia-plotter" ["l"="50.784,2.231"]
 "cdians/FastChia" ["l"="50.736,2.232"]
+"WyvernTKC/cpuminer-gr-avx2" ["l"="-20.565,6.22", "c"=163]
 "chuwt/chia-bls-go" ["l"="50.707,2.361"]
 "stolk/chiaheightgraph" ["l"="50.736,2.152"]
-"pepper-project/pequin" ["l"="-18.994,13.098"]
-"reaqtive/reaqtor" ["l"="-32.129,-0.53"]
+"pepper-project/pequin" ["l"="-18.994,13.098", "c"=173]
+"amiller/HoneyBadgerBFT" ["l"="-22.226,13.191", "c"=628]
+"reaqtive/reaqtor" ["l"="-32.129,-0.53", "c"=139]
 "ethsana/sana" ["l"="50.611,2.261"]
 "iokfine/bee-dashboard" ["l"="50.656,2.241"]
 "ethersphere/swarm-cli" ["l"="50.666,2.254"]
@@ -1204,7 +1268,9 @@ digraph G {
 "mohammed-kamel/odabe" ["l"="50.451,1.926"]
 "gsmaster8/MTA_CP_ABE" ["l"="50.445,1.955"]
 "urarik/CP-ABE-based-on-ECC-implementation" ["l"="50.436,1.98"]
+"minerdao/lotus-ops" ["l"="-22.985,6.316", "c"=1054]
 "Eelviny/chia-docker" ["l"="50.692,2.135"]
+"sxguan/fabric-go-sdk" ["l"="-22.374,14.009", "c"=412]
 "ForkFarmer/ForkFarmer" ["l"="50.829,2.173"]
 "wolfrage76/windows-plotman" ["l"="50.781,2.072"]
 "Pengor/chia-log-analysis" ["l"="50.702,2.098"]
@@ -1237,6 +1303,8 @@ digraph G {
 "stotiks/mmx-node" ["l"="50.815,2.214"]
 "madMAx43v3r/mmx-binaries" ["l"="50.849,2.177"]
 "raingggg/coctohug" ["l"="50.804,2.265"]
+"mit-plv/fiat-crypto" ["l"="-22.237,-19.462", "c"=392]
+"dedis/cothority" ["l"="-22.204,13.216", "c"=628]
 "offerpool/offerpool" ["l"="50.856,1.916"]
 "mintgarden-io/nft-companion" ["l"="50.87,1.87"]
 "zakhikhan/chia-nft-minting-helper" ["l"="50.89,1.838"]
@@ -1259,7 +1327,7 @@ digraph G {
 "xch-dev/chia-wallet-sdk" ["l"="50.77,1.905"]
 "warpdotgreen/cli" ["l"="50.779,1.943"]
 "madMAx43v3r/chia-plot-sink" ["l"="50.876,2.15"]
-"autonomys/space-acres" ["l"="-20.629,6.699"]
+"autonomys/space-acres" ["l"="-20.629,6.699", "c"=163]
 "graemes/mownplow" ["l"="50.891,2.127"]
 "ytx1991/ChiaSimplePlotter" ["l"="50.897,2.14"]
 "randombit/pairings.py" ["l"="50.56,1.957"]
@@ -1267,19 +1335,21 @@ digraph G {
 "charybr/spring-data-rest-acl" ["l"="50.2,1.775"]
 "iamthiago/security-acl" ["l"="50.222,1.769"]
 "scipr-lab/libfqfft" ["l"="50.541,1.817"]
-"bristolcrypto/SPDZ-2" ["l"="51.567,1.361"]
-"emp-toolkit/emp-ot" ["l"="51.546,1.328"]
-"encryptogroup/PSI" ["l"="51.552,1.298"]
-"encryptogroup/OTExtension" ["l"="51.563,1.342"]
-"mpc-msri/EzPC" ["l"="51.511,1.366"]
+"guanzhi/GM-Standards" ["l"="-22.31,14.525", "c"=412]
+"bristolcrypto/SPDZ-2" ["l"="51.567,1.361", "c"=378]
+"emp-toolkit/emp-ot" ["l"="51.546,1.328", "c"=378]
+"encryptogroup/PSI" ["l"="51.552,1.298", "c"=378]
+"encryptogroup/OTExtension" ["l"="51.563,1.342", "c"=378]
+"mpc-msri/EzPC" ["l"="51.511,1.366", "c"=378]
 "herumi/bls-eth-go-binary" ["l"="50.648,1.887"]
-"dedis/kyber" ["l"="-16.827,7.542"]
 "dfinity-side-projects/js-bls-lib" ["l"="50.638,1.87"]
 "scipr-lab/bace" ["l"="50.537,1.789"]
 "mostafa-eltaher/AbacSpringSecurity" ["l"="50.249,1.826"]
-"kevinlewi/fastore" ["l"="22.958,-26.075"]
+"kevinlewi/fastore" ["l"="22.958,-26.075", "c"=28]
 "bernymac/CloudCryptoSearch" ["l"="50.35,1.823"]
-"InitialDLab/SEAL-ORAM" ["l"="-16.639,-42.349"]
+"InitialDLab/SEAL-ORAM" ["l"="-16.639,-42.349", "c"=621]
+"libtom/libtomcrypt" ["l"="-21.022,-24.233", "c"=1251]
+"cossacklabs/acra" ["l"="46.069,-26.121", "c"=2]
 "xch-dev/rue" ["l"="50.775,1.868"]
 "xch-dev/sage" ["l"="50.784,1.841"]
 "GalacticExchange/pretrained" ["l"="50.697,1.744"]

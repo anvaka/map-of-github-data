@@ -14,6 +14,7 @@ digraph G {
 "fastmachinelearning/hls4ml" -> "google/qkeras"
 "fastmachinelearning/hls4ml" -> "dgschwend/zynqnet"
 "fastmachinelearning/hls4ml" -> "Xilinx/finn-hlslib"
+"tensorflow/model-optimization" -> "google/qkeras" ["e"=1]
 "Xilinx/PYNQ_Workshop" -> "Xilinx/PYNQ"
 "Xilinx/PYNQ_Workshop" -> "Xilinx/BNN-PYNQ"
 "Xilinx/PYNQ_Workshop" -> "awai54st/PYNQ-Classification"
@@ -98,11 +99,20 @@ digraph G {
 "TomG008/SkyNet" -> "IBM/AccDNN"
 "TomG008/SkyNet" -> "DNN-Accelerators/Open-Source-IPs"
 "TomG008/SkyNet" -> "heymesut/SJTU_microe"
+"ai-techsystems/deepC" -> "ONNC/onnc" ["e"=1]
+"nvdla/hw" -> "nvdla/sw" ["e"=1]
+"nvdla/hw" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
+"nvdla/hw" -> "nvdla/doc" ["e"=1]
+"ARM-software/SCALE-Sim" -> "jneless/EyerissF" ["e"=1]
+"ARM-software/SCALE-Sim" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
 "project-oak/silveroak" -> "ymherklotz/vericert"
+"litex-hub/linux-on-litex-vexriscv" -> "SpinalHDL/SaxonSoc" ["e"=1]
 "tomcl/V2releases" -> "ImperialCollegeLondon/Visual2"
 "tomcl/V2releases" -> "good-data-movement/manifesto"
 "Qirun/ARM_Cortex-M3" -> "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition"
 "Qirun/ARM_Cortex-M3" -> "WalkerLau/DetectHumanFaces"
+"ucb-bar/gemmini" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
+"ucb-bar/gemmini" -> "SingularityKChen/dl_accelerator" ["e"=1]
 "WalkerLau/Accelerating-CNN-with-FPGA" -> "doonny/PipeCNN"
 "WalkerLau/Accelerating-CNN-with-FPGA" -> "awai54st/PYNQ-Classification"
 "WalkerLau/Accelerating-CNN-with-FPGA" -> "dhm2013724/yolov2_xilinx_fpga"
@@ -118,6 +128,7 @@ digraph G {
 "WalkerLau/Accelerating-CNN-with-FPGA" -> "Yu-Zhewen/Tiny_YOLO_v3_ZYNQ"
 "WalkerLau/Accelerating-CNN-with-FPGA" -> "embedeep/Free-TPU"
 "WalkerLau/Accelerating-CNN-with-FPGA" -> "IBM/AccDNN"
+"tensorflow/mlir" -> "ONNC/onnc" ["e"=1]
 "Xilinx/brevitas" -> "Xilinx/finn"
 "Xilinx/brevitas" -> "Xilinx/finn-hlslib"
 "Xilinx/brevitas" -> "fastmachinelearning/hls4ml"
@@ -170,6 +181,7 @@ digraph G {
 "ilaydayaman/CNN_for_SLR" -> "flymin/LeNet-on-Zynq"
 "ilaydayaman/CNN_for_SLR" -> "sumanth-kalluri/cnn_hardware_acclerator_for_fpga"
 "ilaydayaman/CNN_for_SLR" -> "canteen-man/CNN_FPGA_ZYNQ_PYNQ"
+"sampsyo/cs6120" -> "UIUC-ChenLab/scalehls" ["e"=1]
 "Xilinx/PYNQ-ComputerVision" -> "Xilinx/QNN-MO-PYNQ"
 "Xilinx/PYNQ-ComputerVision" -> "Xilinx/PYNQ-DL"
 "Xilinx/PYNQ-ComputerVision" -> "Xilinx/PYNQ-HelloWorld"
@@ -221,6 +233,9 @@ digraph G {
 "jneless/EyerissF" -> "haoking/opencvjs" ["e"=1]
 "jneless/EyerissF" -> "stanford-mast/nn_dataflow" ["e"=1]
 "jneless/EyerissF" -> "fanyev5/fanyev5_base" ["e"=1]
+"Xilinx/dma_ip_drivers" -> "Xilinx/XRT" ["e"=1]
+"Xilinx/dma_ip_drivers" -> "Xilinx/Vitis-Tutorials" ["e"=1]
+"Xilinx/dma_ip_drivers" -> "Xilinx/Vitis_Accel_Examples" ["e"=1]
 "Xilinx/finn" -> "Xilinx/brevitas"
 "Xilinx/finn" -> "Xilinx/finn-examples"
 "Xilinx/finn" -> "Xilinx/finn-hlslib"
@@ -251,6 +266,12 @@ digraph G {
 "KastnerRG/pp4fpgas" -> "fastmachinelearning/hls4ml-tutorial"
 "KastnerRG/pp4fpgas" -> "xupsh/pp4fpgas-cn-hls"
 "KastnerRG/pp4fpgas" -> "Xilinx/finn"
+"keyu-tian/Cpp-Gomoku-with-AI" -> "sunyiyue/CCIMLib" ["e"=1]
+"calyxir/calyx" -> "cornell-zhang/heterocl" ["e"=1]
+"calyxir/calyx" -> "cornell-zhang/allo" ["e"=1]
+"calyxir/calyx" -> "stanford-ppl/spatial" ["e"=1]
+"calyxir/calyx" -> "UIUC-ChenLab/scalehls" ["e"=1]
+"calyxir/calyx" -> "circt-hls/circt-hls" ["e"=1]
 "taoyilee/clacc" -> "arasi15/CNN-Accelerator-Implementation-based-on-Eyerissv2"
 "taoyilee/clacc" -> "karthisugumar/CSE240D-Hierarchical_Mesh_NoC-Eyeriss_v2"
 "taoyilee/clacc" -> "jneless/EyerissF"
@@ -348,6 +369,12 @@ digraph G {
 "danielholanda/LeFlow" -> "Xilinx/BNN-PYNQ"
 "danielholanda/LeFlow" -> "JulianKemmerer/PipelineC" ["e"=1]
 "danielholanda/LeFlow" -> "awai54st/PYNQ-Classification"
+"Xilinx/RapidWright" -> "UCLA-VAST/AutoBridge" ["e"=1]
+"Xilinx/RapidWright" -> "UCLA-VAST/RapidStream" ["e"=1]
+"Xilinx/RapidWright" -> "cornell-zhang/rosetta" ["e"=1]
+"Xilinx/RapidWright" -> "Xilinx/HLS" ["e"=1]
+"Xilinx/RapidWright" -> "Xilinx/SDAccel_Examples" ["e"=1]
+"Xilinx/RapidWright" -> "lana555/dynamatic" ["e"=1]
 "EECS-NTNU/bismo" -> "hsharma35/bitfusion"
 "EECS-NTNU/bismo" -> "maltanar/fpga-tidbits" ["e"=1]
 "lulinchen/cnn_open" -> "hunterlew/convolution_network_on_FPGA"
@@ -365,7 +392,11 @@ digraph G {
 "lulinchen/cnn_open" -> "WalkerLau/Accelerating-CNN-with-FPGA"
 "lulinchen/cnn_open" -> "cxlisme/FPGA-proj"
 "lulinchen/cnn_open" -> "LeiWang1999/ZYNQ-NVDLA"
+"xiaop1/Verilog-Practice" -> "xupsh/pp4fpgas-cn" ["e"=1]
 "ac-optimus/Convolution-using-systolic-arrays" -> "wzc810049078/systolic-array-matrix-multiplier"
+"dawsonjon/fpu" -> "abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" ["e"=1]
+"spcl/dace" -> "cornell-zhang/heterocl" ["e"=1]
+"spcl/dace" -> "definelicht/hlslib" ["e"=1]
 "xupsh/pp4fpgas-cn" -> "xupsh/pp4fpgas-cn-hls"
 "xupsh/pp4fpgas-cn" -> "doonny/PipeCNN"
 "xupsh/pp4fpgas-cn" -> "WalkerLau/Accelerating-CNN-with-FPGA"
@@ -416,6 +447,8 @@ digraph G {
 "nvdla/vp" -> "nvdla/doc"
 "nvdla/vp" -> "JunningWu/Learning-NVDLA-Notes"
 "nvdla/vp" -> "nvdla/qbox" ["e"=1]
+"ucbdrive/skipnet" -> "cornell-zhang/dnn-gating" ["e"=1]
+"progranism/Open-Source-FPGA-Bitcoin-Miner" -> "aws/aws-fpga" ["e"=1]
 "ONNC/onnc" -> "nvdla/sw"
 "ONNC/onnc" -> "JunningWu/Learning-NVDLA-Notes"
 "ONNC/onnc" -> "ONNC/onnc-tutorial"
@@ -438,6 +471,7 @@ digraph G {
 "lastweek/fpga_readings" -> "slaclab/surf" ["e"=1]
 "lastweek/fpga_readings" -> "spcl/hls_tutorial_examples"
 "lastweek/fpga_readings" -> "cornell-zhang/bnn-fpga"
+"sld-columbia/esp" -> "UCLA-VAST/AutoSA" ["e"=1]
 "nvdla/sw" -> "nvdla/vp"
 "nvdla/sw" -> "nvdla/doc"
 "nvdla/sw" -> "JunningWu/Learning-NVDLA-Notes"
@@ -460,6 +494,7 @@ digraph G {
 "Avnet/Ultra96-PYNQ" -> "drichmond/PYNQ-HLS"
 "Avnet/Ultra96-PYNQ" -> "Xilinx/LSTM-PYNQ"
 "Avnet/Ultra96-PYNQ" -> "Avnet/bdf" ["e"=1]
+"submission2019/cnn-quantization" -> "cornell-zhang/dnn-quant-ocs" ["e"=1]
 "xupsh/pp4fpgas-cn-hls" -> "xupsh/pp4fpgas-cn"
 "xupsh/pp4fpgas-cn-hls" -> "TomG008/SkyNet"
 "xupsh/pp4fpgas-cn-hls" -> "onioncc/iSmartDNN"
@@ -507,6 +542,7 @@ digraph G {
 "embedeep/Free-TPU" -> "zhan6841/FPGA-Accelerator-for-AES-LeNet-VGG16"
 "Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL" -> "tirumalnaidu/opencl-hls-cnn-accelerator"
 "Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL" -> "thinkoco/c5soc_opencl"
+"becomequantum/Kryon" -> "awai54st/PYNQ-Classification" ["e"=1]
 "Xilinx/XilinxBoardStore" -> "Xilinx/Vitis_Accel_Examples"
 "Xilinx/XilinxBoardStore" -> "Xilinx/XilinxTclStore" ["e"=1]
 "Xilinx/XilinxBoardStore" -> "definelicht/hlslib"
@@ -588,6 +624,9 @@ digraph G {
 "hillhao/PYNQ-project" -> "hirayaku/DAC2018-TGIIF"
 "hillhao/PYNQ-project" -> "onioncc/iSmartDNN"
 "hillhao/PYNQ-project" -> "mfarhadi/CNNIOT"
+"larq/larq" -> "google/qkeras" ["e"=1]
+"larq/larq" -> "Xilinx/brevitas" ["e"=1]
+"hunterlew/mstar_deeplearning_project" -> "hunterlew/convolution_network_on_FPGA" ["e"=1]
 "wbrueckner/cv2pynq" -> "wbrueckner/cv2PYNQ-The-project-behind-the-library"
 "Starrynightzyq/ZYNQ-PYNQ-Z2-Gobang" -> "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition"
 "Xilinx/ml-suite" -> "Xilinx/CHaiDNN"
@@ -674,6 +713,9 @@ digraph G {
 "stanford-ppl/spatial" -> "jingpu/Halide-HLS" ["e"=1]
 "stanford-ppl/spatial" -> "sifive/chisel-circt"
 "stanford-ppl/spatial" -> "cornell-zhang/heterocl"
+"UCSBarchlab/PyRTL" -> "UCSBarchlab/OpenTPU" ["e"=1]
+"firesim/firesim" -> "CSL-KU/firesim-nvdla" ["e"=1]
+"Avnet/bdf" -> "Avnet/Ultra96-PYNQ" ["e"=1]
 "Xilinx/QNN-MO-PYNQ" -> "Xilinx/BNN-PYNQ"
 "Xilinx/QNN-MO-PYNQ" -> "awai54st/PYNQ-Classification"
 "Xilinx/QNN-MO-PYNQ" -> "Xilinx/PYNQ-ComputerVision"
@@ -689,6 +731,7 @@ digraph G {
 "Xilinx/QNN-MO-PYNQ" -> "dhm2013724/yolov2_xilinx_fpga"
 "Xilinx/QNN-MO-PYNQ" -> "xupsh/pp4fpgas-cn-hls"
 "Xilinx/QNN-MO-PYNQ" -> "Xilinx/LSTM-PYNQ"
+"vmware-archive/cascade" -> "lastweek/fpga_readings" ["e"=1]
 "sumilao/Zynq-7000-DPU-TRD" -> "JinChen-tw/pynqz2_dpu140"
 "Xilinx/SDAccel-Tutorials" -> "Xilinx/SDAccel_Examples"
 "Xilinx/SDAccel-Tutorials" -> "Xilinx/Applications"
@@ -703,6 +746,10 @@ digraph G {
 "leo47007/TPU-Tensor-Processing-Unit" -> "embedeep/FREE-TPU-V3plus-for-FPGA"
 "leo47007/TPU-Tensor-Processing-Unit" -> "embedeep/Free-TPU"
 "leo47007/TPU-Tensor-Processing-Unit" -> "hsiehong/tpu"
+"cucapra/dahlia" -> "ymherklotz/vericert" ["e"=1]
+"mit-han-lab/haq" -> "EECS-NTNU/bismo" ["e"=1]
+"blue-oil/blueoil" -> "HirokiNakahara/GUINNESS" ["e"=1]
+"intel/intel-device-plugins-for-kubernetes" -> "Xilinx/FPGA_as_a_Service" ["e"=1]
 "hsharma35/bitfusion" -> "EECS-NTNU/bismo"
 "hsharma35/bitfusion" -> "clevercool/ANT-Quantization"
 "hsharma35/bitfusion" -> "hsharma35/dnnweaver2"
@@ -740,6 +787,8 @@ digraph G {
 "CSL-KU/firesim-nvdla" -> "soDLA-publishment/soDLA"
 "CSL-KU/firesim-nvdla" -> "nvdla/sw"
 "CSL-KU/firesim-nvdla" -> "bu-icsg/dana" ["e"=1]
+"Tiiiger/QPyTorch" -> "EECS-NTNU/bismo" ["e"=1]
+"Tiiiger/QPyTorch" -> "clevercool/ANT-Quantization" ["e"=1]
 "cathalmccabe/PYNQ_tutorials" -> "Xilinx/Embedded-Design-Tutorials"
 "cea-wind/SimpleTPU" -> "cameronshinn/tiny-tpu"
 "cea-wind/SimpleTPU" -> "embedeep/FREE-TPU-V3plus-for-FPGA"
@@ -761,6 +810,7 @@ digraph G {
 "hirayaku/DAC2018-TGIIF" -> "b9515308/ZCU102_YOLO"
 "romulus0914/CNN_VGG19_verilog" -> "xiangze/CNN_FPGA"
 "a2824256/HLS-LeNet" -> "FloyedShen/mnist_hls"
+"antmicro/google-coral-baseboard" -> "charley871103/TPU" ["e"=1]
 "drichmond/PYNQ-HLS" -> "Xilinx/QNN-MO-PYNQ"
 "drichmond/PYNQ-HLS" -> "manoharvhr/PYNQ-Torch"
 "drichmond/PYNQ-HLS" -> "Xilinx/PYNQ_Bootcamp"
@@ -816,6 +866,7 @@ digraph G {
 "xyzxinyizhang/2018-DAC-System-Design-Contest" -> "onioncc/iSmartDNN"
 "xyzxinyizhang/2018-DAC-System-Design-Contest" -> "jgoeders/dac_2019_contest"
 "wbrueckner/cv2PYNQ-The-project-behind-the-library" -> "wbrueckner/cv2pynq"
+"BertMoons/QuantizedNeuralNetworks-Keras-Tensorflow" -> "google/qkeras" ["e"=1]
 "dillonhuff/ahaHLS" -> "etherzhhb/Shang"
 "dillonhuff/ahaHLS" -> "dillonhuff/clockwork"
 "dillonhuff/ahaHLS" -> "lana555/dynamatic"
@@ -873,6 +924,8 @@ digraph G {
 "martinferianc/Robotics-EIE3" -> "martinferianc/C90Compiler-EIE2"
 "b9515308/ZCU102_YOLO" -> "b9515308/YOLO_quantize"
 "b9515308/YOLO_quantize" -> "b9515308/ZCU102_YOLO"
+"LeiWang1999/FPGA" -> "dhm2013724/yolov2_xilinx_fpga" ["e"=1]
+"LeiWang1999/FPGA" -> "xupsh/pp4fpgas-cn" ["e"=1]
 "MasLiang/CNN-On-FPGA" -> "sumanth-kalluri/cnn_hardware_acclerator_for_fpga"
 "MasLiang/CNN-On-FPGA" -> "cxlisme/FPGA-proj"
 "MasLiang/CNN-On-FPGA" -> "omarelhedaby/CNN-FPGA"
@@ -885,11 +938,17 @@ digraph G {
 "MasLiang/CNN-On-FPGA" -> "hunterlew/convolution_network_on_FPGA"
 "MasLiang/CNN-On-FPGA" -> "papcjy/mnist_fpga"
 "MasLiang/CNN-On-FPGA" -> "lirui-shanghaitech/CNN-Accelerator-VLSI"
+"666DZY666/micronet" -> "Xilinx/brevitas" ["e"=1]
+"breagen/MachSuite" -> "cornell-zhang/rosetta" ["e"=1]
+"breagen/MachSuite" -> "lana555/dynamatic" ["e"=1]
 "Xtra-Computing/ThunderGP" -> "Xtra-Computing/ReGraph"
 "Xtra-Computing/ThunderGP" -> "cornell-zhang/HiSparse"
 "Xtra-Computing/ThunderGP" -> "rapidstream-org/rapidstream-tapa"
 "Xtra-Computing/ThunderGP" -> "UCLA-VAST/AutoBridge"
 "Xtra-Computing/ThunderGP" -> "cornell-zhang/GraphLily"
+"sin-x/FPGA" -> "omarelhedaby/CNN-FPGA" ["e"=1]
+"SpinalHDL/SpinalHDL" -> "SpinalHDL/SpinalWorkshop" ["e"=1]
+"SpinalHDL/SpinalHDL" -> "jijingg/Spinal-bootcamp" ["e"=1]
 "Xilinx/Vitis-Tutorials" -> "Xilinx/Vitis_Accel_Examples"
 "Xilinx/Vitis-Tutorials" -> "Xilinx/Vitis_Libraries"
 "Xilinx/Vitis-Tutorials" -> "Xilinx/Vitis-HLS-Introductory-Examples"
@@ -921,6 +980,8 @@ digraph G {
 "Xilinx/Vitis-HLS-Introductory-Examples" -> "TomG008/SkyNet"
 "Xilinx/Vitis-HLS-Introductory-Examples" -> "Xilinx/DPU-PYNQ"
 "user-xleo/DNN-Accelerator" -> "eda-lab/CNNAF-CNN-Accelerator_init"
+"doonny/basic_knowledge" -> "doonny/PipeCNN" ["e"=1]
+"lucidrains/mixture-of-experts" -> "VITA-Group/M3ViT" ["e"=1]
 "Xilinx/Vitis_Libraries" -> "Xilinx/Vitis-Tutorials"
 "Xilinx/Vitis_Libraries" -> "Xilinx/Vitis_Accel_Examples"
 "Xilinx/Vitis_Libraries" -> "Xilinx/Vitis-HLS-Introductory-Examples"
@@ -941,6 +1002,14 @@ digraph G {
 "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition" -> "WalkerLau/DetectHumanFaces"
 "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition" -> "LeiWang1999/DigitalAlarmClock"
 "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition" -> "Thes0me/pango_video_local_dimming"
+"BRTResearch/AIChip_Paper_List" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
+"BRTResearch/AIChip_Paper_List" -> "taoyilee/clacc" ["e"=1]
+"BRTResearch/AIChip_Paper_List" -> "SingularityKChen/dl_accelerator" ["e"=1]
+"quic/aimet" -> "Xilinx/brevitas" ["e"=1]
+"Xilinx/embeddedsw" -> "Xilinx/Vitis-Tutorials" ["e"=1]
+"Xilinx/embeddedsw" -> "Xilinx/Vitis_Libraries" ["e"=1]
+"Xilinx/embeddedsw" -> "Xilinx/PYNQ" ["e"=1]
+"Xilinx/embeddedsw" -> "Xilinx/Vitis-HLS-Introductory-Examples" ["e"=1]
 "amiq-consulting/CNN-using-HLS" -> "FedericoSerafini/HLS-CNN"
 "amiq-consulting/CNN-using-HLS" -> "changwoolee/lenet5_hls"
 "amiq-consulting/CNN-using-HLS" -> "pp-Innovate/FPGA-ZynqNet"
@@ -979,6 +1048,8 @@ digraph G {
 "eda-lab/CNNAF-CNN-Accelerator_init" -> "mayshin10/CNN-Accelerator"
 "tirumalnaidu/opencl-hls-cnn-accelerator" -> "Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL"
 "tirumalnaidu/opencl-hls-cnn-accelerator" -> "williamyang4978/PipeCNN_Winograd"
+"fpgasystems/Coyote" -> "definelicht/hlslib" ["e"=1]
+"fpgasystems/Coyote" -> "arc-research-lab/CHARM" ["e"=1]
 "exo-lang/exo" -> "llvm/Polygeist" ["e"=1]
 "exo-lang/exo" -> "UCLA-VAST/AutoSA"
 "exo-lang/exo" -> "kumasento/polymer" ["e"=1]
@@ -989,6 +1060,8 @@ digraph G {
 "exo-lang/exo" -> "calyxir/calyx" ["e"=1]
 "exo-lang/exo" -> "pku-liang/AMOS" ["e"=1]
 "exo-lang/exo" -> "bondhugula/pluto" ["e"=1]
+"google/xls" -> "Xilinx/HLS" ["e"=1]
+"google/xls" -> "UIUC-ChenLab/scalehls" ["e"=1]
 "fastmachinelearning/hls4ml-tutorial" -> "fastmachinelearning/hls4ml"
 "fastmachinelearning/hls4ml-tutorial" -> "Xilinx/finn-examples"
 "fastmachinelearning/hls4ml-tutorial" -> "fastmachinelearning/qonnx"
@@ -1029,6 +1102,8 @@ digraph G {
 "jijingg/Spinal-bootcamp" -> "yportne13/SpinalResNet"
 "jijingg/Spinal-bootcamp" -> "tomverbeure/math"
 "zhangzek/3x3_matrix_Systolic_Array_multiplier" -> "Dazhuzhu-github/systolic-array"
+"llvm/Polygeist" -> "UIUC-ChenLab/scalehls" ["e"=1]
+"llvm/Polygeist" -> "Xilinx/mlir-aie" ["e"=1]
 "google/qkeras" -> "fastmachinelearning/hls4ml-tutorial"
 "google/qkeras" -> "BertMoons/QuantizedNeuralNetworks-Keras-Tensorflow" ["e"=1]
 "google/qkeras" -> "fastmachinelearning/hls4ml"
@@ -1044,6 +1119,7 @@ digraph G {
 "google/qkeras" -> "sld-columbia/esp" ["e"=1]
 "google/qkeras" -> "mit-han-lab/haq" ["e"=1]
 "google/qkeras" -> "Xilinx/finn-hlslib"
+"mlcommons/tiny" -> "google/qkeras" ["e"=1]
 "heheda365/ultra_net" -> "jiangwx/SkrSkr"
 "heheda365/ultra_net" -> "TomG008/SkyNet"
 "heheda365/ultra_net" -> "AiArtisan/dac_sdc_2022_champion"
@@ -1054,6 +1130,8 @@ digraph G {
 "heheda365/ultra_net" -> "jgoeders/dac_sdc_2022_designs"
 "heheda365/ultra_net" -> "jgoeders/dac_sdc_2021_designs"
 "heheda365/ultra_net" -> "hirayaku/DAC2018-TGIIF"
+"Nitcloud/Digital-IDE" -> "LeiWang1999/ZYNQ-NVDLA" ["e"=1]
+"Nitcloud/Digital-IDE" -> "cxdzyq1110/NPU_on_FPGA" ["e"=1]
 "thedatabusdotio/fpga-ml-accelerator" -> "sumanth-kalluri/cnn_hardware_acclerator_for_fpga"
 "thedatabusdotio/fpga-ml-accelerator" -> "padhi499/Image-Classification-using-CNN-on-FPGA"
 "thedatabusdotio/fpga-ml-accelerator" -> "taoyilee/clacc"
@@ -1065,6 +1143,8 @@ digraph G {
 "karthisugumar/CSE240D-Hierarchical_Mesh_NoC-Eyeriss_v2" -> "rgb000000/eyeriss-chisel3"
 "diwu1990/UnarySim" -> "adamsolomou/SC-DNN"
 "diwu1990/UnarySim" -> "diwu1990/uSystolic-Sim"
+"NNgen/nngen" -> "IBM/AccDNN" ["e"=1]
+"NNgen/nngen" -> "TF2-Engine/TF2" ["e"=1]
 "zeasa/nvdla-compiler" -> "LeiWang1999/nvdla_loadables"
 "zeasa/nvdla-compiler" -> "VVViy/VVViy.github.io"
 "sazczmh/PYNQ_Workshop" -> "sazczmh/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS"
@@ -1084,17 +1164,20 @@ digraph G {
 "WalkerLau/DetectHumanFaces" -> "Qirun/ARM_Cortex-M3"
 "WalkerLau/DetectHumanFaces" -> "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition"
 "WalkerLau/DetectHumanFaces" -> "flyjancy/CortexM0_SoC_Task"
+"kssteven418/I-BERT" -> "GATECH-EIC/ViTCoD" ["e"=1]
 "apache/tvm-vta" -> "SingularityKChen/dl_accelerator"
 "apache/tvm-vta" -> "ucb-bar/gemmini" ["e"=1]
 "apache/tvm-vta" -> "UCLA-VAST/AutoSA"
 "apache/tvm-vta" -> "stanford-ppl/spatial"
 "apache/tvm-vta" -> "harvard-acc/gem5-aladdin" ["e"=1]
 "apache/tvm-vta" -> "cornell-zhang/heterocl"
+"Xilinx/xup_vitis_network_example" -> "UCLA-VAST/AutoBridge" ["e"=1]
 "manoharvhr/PYNQ-Torch" -> "drichmond/PYNQ-HLS"
 "Xilinx/Vitis_Embedded_Platform_Source" -> "Xilinx/Vitis_Accel_Examples"
 "Xilinx/Vitis_Embedded_Platform_Source" -> "Xilinx/Embedded-Reference-Platforms-User-Guide"
 "Xilinx/Vitis_Embedded_Platform_Source" -> "Xilinx/Vitis-In-Depth-Tutorial"
 "Xilinx/Vitis_Embedded_Platform_Source" -> "Xilinx/DPU-PYNQ"
+"chiselverify/chiselverify" -> "sifive/chisel-circt" ["e"=1]
 "UIUC-ChenLab/scalehls" -> "cornell-zhang/allo"
 "UIUC-ChenLab/scalehls" -> "cornell-zhang/heterocl"
 "UIUC-ChenLab/scalehls" -> "rapidstream-org/rapidstream-tapa"
@@ -1125,6 +1208,7 @@ digraph G {
 "IBM/AccDNN" -> "fengbintu/Neural-Networks-on-Silicon"
 "IBM/AccDNN" -> "fpgasystems/spooNN"
 "IBM/AccDNN" -> "Xilinx/CHaiDNN"
+"iml130/mlir-emitc" -> "Xilinx/mlir-air" ["e"=1]
 "arasi15/CNN-Accelerator-Implementation-based-on-Eyerissv2" -> "karthisugumar/CSE240D-Hierarchical_Mesh_NoC-Eyeriss_v2"
 "arasi15/CNN-Accelerator-Implementation-based-on-Eyerissv2" -> "lirui-shanghaitech/CNN-Accelerator-VLSI"
 "arasi15/CNN-Accelerator-Implementation-based-on-Eyerissv2" -> "taoyilee/clacc"
@@ -1225,6 +1309,7 @@ digraph G {
 "jiangwx/SkrSkr" -> "xliu0709/DACSDC2021"
 "jiangwx/SkrSkr" -> "jgoeders/dac_sdc_2021_designs"
 "jiangwx/SkrSkr" -> "AiArtisan/dac_sdc_2022_champion"
+"ROCm/rocMLIR" -> "nod-ai/iree-amd-aie" ["e"=1]
 "cornell-zhang/GraphZoom" -> "cornell-zhang/uptune"
 "cornell-zhang/GraphZoom" -> "cornell-zhang/GARNET"
 "cornell-zhang/GraphZoom" -> "cornell-zhang/SPADE"
@@ -1255,6 +1340,7 @@ digraph G {
 "Xilinx/Vitis-In-Depth-Tutorial" -> "Xilinx/Vitis_Embedded_Platform_Source"
 "Xilinx/Vitis-In-Depth-Tutorial" -> "Xilinx/Vitis_Accel_Examples"
 "Xilinx/Vitis-In-Depth-Tutorial" -> "Avnet/Ultra96-PYNQ"
+"kumasento/polymer" -> "circt-hls/circt-hls" ["e"=1]
 "Marco-Winzker/FPGA-Vision" -> "Marco-Winzker/FPGA-FIR-Filter"
 "UCLA-VAST/FlexCNN" -> "rapidstream-org/rapidstream-tapa"
 "good-data-movement/manifesto" -> "good-data-movement/awesome-privacy-resources"
@@ -1283,11 +1369,24 @@ digraph G {
 "wzc810049078/turbo-interleaver" -> "wzc810049078/ZC-RISCV-CORE"
 "wzc810049078/turbo-interleaver" -> "wzc810049078/systolic-array-matrix-multiplier"
 "wzc810049078/ZC-RISCV-CORE" -> "wzc810049078/turbo-interleaver"
+"abdelazeem201/ASIC-Design-Roadmap" -> "abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" ["e"=1]
 "Xilinx/kria-vitis-platforms" -> "Xilinx/kria-apps-firmware"
 "Xilinx/kria-vitis-platforms" -> "Xilinx/smartcam"
 "Xilinx/kria-vitis-platforms" -> "Xilinx/Kria-PYNQ"
 "Xilinx/kria-vitis-platforms" -> "Xilinx/Xilinx_Kria_KV260_Workshop"
 "Xilinx/kria-vitis-platforms" -> "Xilinx/VVAS"
+"dtysky/FPGA-Imaging-Library" -> "hunterlew/convolution_network_on_FPGA" ["e"=1]
+"dtysky/FPGA-Imaging-Library" -> "WalkerLau/Accelerating-CNN-with-FPGA" ["e"=1]
+"dtysky/FPGA-Imaging-Library" -> "xupsh/pp4fpgas-cn" ["e"=1]
+"dtysky/FPGA-Imaging-Library" -> "doonny/PipeCNN" ["e"=1]
+"dtysky/FPGA-Imaging-Library" -> "diaoenmao/FPGA-CNN" ["e"=1]
+"dtysky/FPGA-Imaging-Library" -> "mtmd/FPGA_Based_CNN" ["e"=1]
+"scalesim-project/scale-sim-v2" -> "GATECH-EIC/ViTCoD" ["e"=1]
+"scalesim-project/scale-sim-v2" -> "diwu1990/uSystolic-Sim" ["e"=1]
+"Xilinx/open-nic" -> "Xilinx/Vitis_Accel_Examples" ["e"=1]
+"google/CFU-Playground" -> "tensil-ai/tensil" ["e"=1]
+"google/CFU-Playground" -> "SingularityKChen/dl_accelerator" ["e"=1]
+"google/CFU-Playground" -> "UCSBarchlab/OpenTPU" ["e"=1]
 "LeiWang1999/ZYNQ-NVDLA" -> "JunningWu/Learning-NVDLA-Notes"
 "LeiWang1999/ZYNQ-NVDLA" -> "soDLA-publishment/soDLA"
 "LeiWang1999/ZYNQ-NVDLA" -> "19801201/SpinalHDL_CNN_Accelerator"
@@ -1343,10 +1442,14 @@ digraph G {
 "abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" -> "sharc-lab/Edge-MoE"
 "abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" -> "dldldlfma/super_small_toy_tpu"
 "abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" -> "abdelazeem201/Design-and-ASIC-Implementation-of-32-Point-FFT-Processor" ["e"=1]
+"ikwzm/udmabuf" -> "KastnerRG/pp4fpgas" ["e"=1]
+"fpgasystems/Vitis_with_100Gbps_TCP-IP" -> "UCLA-VAST/AutoBridge" ["e"=1]
+"PyHDI/veriloggen" -> "etherzhhb/Shang" ["e"=1]
 "padhi499/Image-Classification-using-CNN-on-FPGA" -> "sumanth-kalluri/cnn_hardware_acclerator_for_fpga"
 "padhi499/Image-Classification-using-CNN-on-FPGA" -> "thedatabusdotio/fpga-ml-accelerator"
 "padhi499/Image-Classification-using-CNN-on-FPGA" -> "omarelhedaby/CNN-FPGA"
 "padhi499/Image-Classification-using-CNN-on-FPGA" -> "lirui-shanghaitech/CNN-Accelerator-VLSI"
+"sony/model_optimization" -> "fastmachinelearning/qonnx" ["e"=1]
 "diaoenmao/FPGA-CNN" -> "mtmd/FPGA_Based_CNN"
 "diaoenmao/FPGA-CNN" -> "hunterlew/convolution_network_on_FPGA"
 "diaoenmao/FPGA-CNN" -> "xiangze/CNN_FPGA"
@@ -1356,7 +1459,9 @@ digraph G {
 "diaoenmao/FPGA-CNN" -> "alan4186/Hardware-CNN"
 "diaoenmao/FPGA-CNN" -> "cornell-zhang/bnn-fpga"
 "diaoenmao/FPGA-CNN" -> "StefanSredojevic/Deep-Neural-Network-Hardware-Accelerator"
+"kaitoukito/Integrated-Circuit-Textbooks" -> "Dazhuzhu-github/systolic-array" ["e"=1]
 "xiangze/CNN_FPGA" -> "brianhill11/FPGA-CNN"
+"NetFPGA/netfpga" -> "Xilinx/HLx_Examples" ["e"=1]
 "Xilinx/HLS" -> "UCLA-VAST/AutoBridge"
 "Xilinx/HLS" -> "UIUC-ChenLab/scalehls"
 "Xilinx/HLS" -> "cornell-zhang/rosetta"
@@ -1461,6 +1566,8 @@ digraph G {
 "suisuisi/FPGAandCNN" -> "lirui-shanghaitech/CNN-Accelerator-VLSI"
 "suisuisi/FPGAandCNN" -> "adamgallas/fpga_accelerator_yolov3tiny"
 "suisuisi/FPGAandCNN" -> "LeiWang1999/ZYNQ-NVDLA"
+"Digilent/vivado-library" -> "Xilinx/PYNQ" ["e"=1]
+"Digilent/vivado-library" -> "Xilinx/Vitis_Libraries" ["e"=1]
 "tensil-ai/tensil" -> "19801201/SpinalHDL_CNN_Accelerator"
 "tensil-ai/tensil" -> "spcl/gemm_hls"
 "tensil-ai/tensil" -> "Xilinx/finn"
@@ -1474,12 +1581,18 @@ digraph G {
 "tensil-ai/tensil" -> "sld-columbia/esp" ["e"=1]
 "tensil-ai/tensil" -> "ucb-bar/gemmini" ["e"=1]
 "tensil-ai/tensil" -> "UCSBarchlab/OpenTPU"
+"SpinalHDL/NaxRiscv" -> "SpinalHDL/SaxonSoc" ["e"=1]
+"SpinalHDL/NaxRiscv" -> "agra-uni-bremen/microrv32" ["e"=1]
+"SpinalHDL/NaxRiscv" -> "tomverbeure/math" ["e"=1]
+"SpinalHDL/NaxRiscv" -> "Chainsaw-Team/Chainsaw" ["e"=1]
 "cjg91/trans-fat" -> "gnodipac886/ViT-FPGA-TPU"
 "cjg91/trans-fat" -> "Buck008/Transformer-Accelerator-Based-on-FPGA"
 "cjg91/trans-fat" -> "gl9544/vit_transformer_fpga"
 "cjg91/trans-fat" -> "puccinic/Transformer_dataflow"
 "cjg91/trans-fat" -> "sharc-lab/Edge-MoE"
 "cjg91/trans-fat" -> "hguq/HG-PIPE"
+"Digilent/vivado-boards" -> "Xilinx/PYNQ" ["e"=1]
+"Digilent/vivado-boards" -> "Xilinx/XilinxBoardStore" ["e"=1]
 "Xilinx/PYNQ" -> "Xilinx/BNN-PYNQ"
 "Xilinx/PYNQ" -> "Xilinx/PYNQ_Workshop"
 "Xilinx/PYNQ" -> "awai54st/PYNQ-Classification"
@@ -1495,8 +1608,10 @@ digraph G {
 "Xilinx/PYNQ" -> "Xilinx/DPU-PYNQ"
 "Xilinx/PYNQ" -> "Xilinx/PYNQ-ComputerVision"
 "Xilinx/PYNQ" -> "Xilinx/linux-xlnx" ["e"=1]
+"bxinquan/zynq_cam_isp_demo" -> "Nitcloud/Image_sim" ["e"=1]
 "leamoon/StochasticNet" -> "adamsolomou/SC-DNN"
 "qixingzhang/Embedded-System-Standalone-Flow-Design-using-Zynq" -> "Maxwellhyh/AMD_AECG_Summer_School_Projects"
+"google-research/vmoe" -> "VITA-Group/M3ViT" ["e"=1]
 "XueTianyu24/cnn_accelerator" -> "omarelhedaby/CNN-FPGA"
 "XueTianyu24/cnn_accelerator" -> "peilin-chen/hls_for_cnn_mnist"
 "XueTianyu24/cnn_accelerator" -> "cxlisme/FPGA-proj"
@@ -1541,6 +1656,7 @@ digraph G {
 "pku-liang/Sanger" -> "GATECH-EIC/ViTCoD"
 "pku-liang/Sanger" -> "mit-han-lab/spatten"
 "pku-liang/Sanger" -> "GATECH-EIC/ViTALiTy"
+"hahnyuan/PTQ4ViT" -> "GATECH-EIC/ViTCoD" ["e"=1]
 "xddcore/OpenNNA" -> "xddcore/OpenNNA2.0"
 "xddcore/OpenNNA" -> "adamgallas/fpga_accelerator_yolov3tiny"
 "xddcore/OpenNNA" -> "bunny965/yolov5-fpga-hardware-acceleration"
@@ -1559,6 +1675,7 @@ digraph G {
 "Xilinx/mlir-air" -> "nod-ai/iree-amd-aie"
 "Xilinx/mlir-air" -> "Xilinx/mlir-aie"
 "Xilinx/mlir-air" -> "Xilinx/llvm-aie"
+"rachelselinar/DREAMPlaceFPGA" -> "UCLA-VAST/RapidStream" ["e"=1]
 "intel/fpga-npu" -> "thousrm/universal_NPU-CNN_accelerator"
 "intel/fpga-npu" -> "cxdzyq1110/NPU_on_FPGA"
 "intel/fpga-npu" -> "gnodipac886/ViT-FPGA-TPU"
@@ -1579,6 +1696,7 @@ digraph G {
 "Dazhuzhu-github/systolic-array" -> "cameronshinn/tiny-tpu"
 "Dazhuzhu-github/systolic-array" -> "ac-optimus/Convolution-using-systolic-arrays"
 "etherzhhb/Shang" -> "dillonhuff/ahaHLS"
+"polyphony-dev/polyphony" -> "etherzhhb/Shang" ["e"=1]
 "heymesut/SJTU_microe" -> "AiArtisan/dac_sdc_2022_champion"
 "heymesut/SJTU_microe" -> "jgoeders/dac_sdc_2021_designs"
 "heymesut/SJTU_microe" -> "AILearnerLi/DAC-SDC-2020-SEUer"
@@ -1610,6 +1728,8 @@ digraph G {
 "fengbintu/Neural-Networks-on-Silicon" -> "stanford-mast/nn_dataflow" ["e"=1]
 "fengbintu/Neural-Networks-on-Silicon" -> "dhm2013724/yolov2_xilinx_fpga"
 "fengbintu/Neural-Networks-on-Silicon" -> "jbush001/NyuziProcessor" ["e"=1]
+"MatthieuCourbariaux/BinaryNet" -> "Xilinx/BNN-PYNQ" ["e"=1]
+"MatthieuCourbariaux/BinaryNet" -> "cornell-zhang/bnn-fpga" ["e"=1]
 "jha-lab/acceltran" -> "sjtu-zhao-lab/SALO"
 "jha-lab/acceltran" -> "mit-han-lab/spatten"
 "VITA-Group/M3ViT" -> "sharc-lab/Edge-MoE"
@@ -1635,6 +1755,7 @@ digraph G {
 "aliemo/transfomers-silicon-research" -> "HLSTransform/submission"
 "aliemo/transfomers-silicon-research" -> "VITA-Group/M3ViT"
 "aliemo/transfomers-silicon-research" -> "zkkli/I-ViT" ["e"=1]
+"hamsternz/FPGA_Webserver" -> "aws/aws-fpga" ["e"=1]
 "FedericoSerafini/HLS-CNN" -> "amiq-consulting/CNN-using-HLS"
 "alan4186/Hardware-CNN" -> "mtmd/FPGA_Based_CNN"
 "alan4186/Hardware-CNN" -> "AniketBadhan/Convolutional-Neural-Network"
@@ -1659,6 +1780,7 @@ digraph G {
 "ChunxuGuo/SummerSchool2022" -> "Maxwellhyh/AMD_AECG_Summer_School_Projects"
 "ChunxuGuo/SummerSchool2022" -> "qixingzhang/Embedded-System-Standalone-Flow-Design-using-Zynq"
 "ChunxuGuo/SummerSchool2022" -> "heymesut/SJTU_microe"
+"bperez77/xilinx_axidma" -> "dgschwend/zynqnet" ["e"=1]
 "Xilinx/HLx_Examples" -> "Xilinx/SDAccel_Examples"
 "Xilinx/HLx_Examples" -> "fpgasystems/fpga-network-stack" ["e"=1]
 "Xilinx/HLx_Examples" -> "Xilinx/xfopencv"
@@ -1678,7 +1800,10 @@ digraph G {
 "peilin-chen/hls_for_cnn_mnist" -> "doveyour/mnist-nnet-hls-zynq7020-fpga"
 "peilin-chen/hls_for_cnn_mnist" -> "YutongChenVictor/Fpga-accelerator-demos"
 "peilin-chen/hls_for_cnn_mnist" -> "hfwang132/lenet-hls-pynq"
+"pmgysel/caffe" -> "HirokiNakahara/GUINNESS" ["e"=1]
+"bu-icsg/dana" -> "soDLA-publishment/soDLA" ["e"=1]
 "Chainsaw-Team/Chainsaw" -> "proteus-core/proteus"
+"libxsmm/tpp-mlir" -> "Xilinx/mlir-air" ["e"=1]
 "clevercool/ANT-Quantization" -> "abdelfattah-lab/BitMoD-HPCA-25"
 "clevercool/ANT-Quantization" -> "snu-comparch/Tender"
 "clevercool/ANT-Quantization" -> "hsharma35/bitfusion"
@@ -1699,6 +1824,7 @@ digraph G {
 "cornell-zhang/GARNET" -> "cornell-zhang/SPADE"
 "cornell-zhang/GARNET" -> "cornell-zhang/HOGA"
 "jgoeders/dac_sdc_2022_designs" -> "AiArtisan/dac_sdc_2022_champion"
+"Vitorian/awesome-fpga" -> "lastweek/fpga_readings" ["e"=1]
 "gnodipac886/ViT-FPGA-TPU" -> "Buck008/Transformer-Accelerator-Based-on-FPGA"
 "gnodipac886/ViT-FPGA-TPU" -> "cjg91/trans-fat"
 "gnodipac886/ViT-FPGA-TPU" -> "hguq/HG-PIPE"
@@ -1723,6 +1849,7 @@ digraph G {
 "dgschwend/zynqnet" -> "fpgasystems/spooNN"
 "dgschwend/zynqnet" -> "xupsh/pp4fpgas-cn"
 "dgschwend/zynqnet" -> "Xilinx/QNN-MO-PYNQ"
+"baidu-research/DeepBench" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
 "embedeep/FREE-TPU-V3plus-for-FPGA" -> "cea-wind/SimpleTPU"
 "embedeep/FREE-TPU-V3plus-for-FPGA" -> "embedeep/Free-TPU"
 "embedeep/FREE-TPU-V3plus-for-FPGA" -> "gnodipac886/ViT-FPGA-TPU"
@@ -1748,6 +1875,13 @@ digraph G {
 "Buck008/Transformer-Accelerator-Based-on-FPGA" -> "mit-han-lab/spatten"
 "Buck008/Transformer-Accelerator-Based-on-FPGA" -> "embedeep/FREE-TPU-V3plus-for-FPGA"
 "Buck008/Transformer-Accelerator-Based-on-FPGA" -> "gl9544/vit_transformer_fpga"
+"zssloth/Embedded-Neural-Network" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
+"zssloth/Embedded-Neural-Network" -> "dgschwend/zynqnet" ["e"=1]
+"zssloth/Embedded-Neural-Network" -> "doonny/PipeCNN" ["e"=1]
+"zssloth/Embedded-Neural-Network" -> "cornell-zhang/bnn-fpga" ["e"=1]
+"zssloth/Embedded-Neural-Network" -> "Xilinx/BNN-PYNQ" ["e"=1]
+"fpgasystems/fpga-network-stack" -> "Xilinx/HLx_Examples" ["e"=1]
+"fpgasystems/fpga-network-stack" -> "Xilinx/Vitis_Libraries" ["e"=1]
 "albertomarchisio/SwiftTron" -> "jha-lab/acceltran"
 "tostq/DeepLearningC" -> "fan-wenjie/LeNet-5"
 "tostq/DeepLearningC" -> "changwoolee/lenet5_hls"
@@ -1771,10 +1905,14 @@ digraph G {
 "amd/RyzenAI-SW" -> "Xilinx/mlir-air"
 "amd/RyzenAI-SW" -> "ROCm/rocm-examples" ["e"=1]
 "amd/RyzenAI-SW" -> "Xilinx/aie-rt"
+"makslevental/mlir-python-extras" -> "Xilinx/aie-rt" ["e"=1]
 "thousrm/universal_NPU-CNN_accelerator" -> "lirui-shanghaitech/CNN-Accelerator-VLSI"
 "thousrm/universal_NPU-CNN_accelerator" -> "8krisv/CNN-ACCELERATOR"
 "thousrm/universal_NPU-CNN_accelerator" -> "intel/fpga-npu"
 "thousrm/universal_NPU-CNN_accelerator" -> "BoooC/CNN-Accelerator-Based-on-Eyeriss-v2"
+"openFPGA666/FpgaGuide" -> "suisuisi/FPGAandCNN" ["e"=1]
+"openFPGA666/FpgaGuide" -> "flytt-away/FPGA-Video-Capture" ["e"=1]
+"openFPGA666/FpgaGuide" -> "omarelhedaby/CNN-FPGA" ["e"=1]
 "sharc-lab/Edge-MoE" -> "VITA-Group/M3ViT"
 "sharc-lab/Edge-MoE" -> "jha-lab/acceltran"
 "sharc-lab/Edge-MoE" -> "GATECH-EIC/ViTCoD"
@@ -1879,6 +2017,7 @@ digraph G {
 "arc-research-lab/SSR" -> "arc-research-lab/AIM"
 "arc-research-lab/SSR" -> "arc-research-lab/Aries"
 "arc-research-lab/SSR" -> "arc-research-lab/CHARM"
+"GraphIt-DSL/graphit" -> "Xtra-Computing/ThunderGP" ["e"=1]
 "thinkoco/c5soc_opencl" -> "Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL"
 "mtmd/FPGA_Based_CNN" -> "diaoenmao/FPGA-CNN"
 "mtmd/FPGA_Based_CNN" -> "hunterlew/convolution_network_on_FPGA"
@@ -1895,10 +2034,19 @@ digraph G {
 "mtmd/FPGA_Based_CNN" -> "onioncc/iSmartDNN"
 "mtmd/FPGA_Based_CNN" -> "dgschwend/zynqnet"
 "mtmd/FPGA_Based_CNN" -> "cornell-zhang/bnn-fpga"
+"bondhugula/pluto" -> "UCLA-VAST/AutoSA" ["e"=1]
 "nod-ai/iree-amd-aie" -> "Xilinx/mlir-air"
 "nod-ai/iree-amd-aie" -> "Xilinx/llvm-aie"
 "nod-ai/iree-amd-aie" -> "AMDResearch/Riallto"
 "nod-ai/iree-amd-aie" -> "Xilinx/mlir-aie"
+"intel/intel-npu-acceleration-library" -> "amd/RyzenAI-SW" ["e"=1]
+"intel/intel-npu-acceleration-library" -> "Xilinx/llvm-aie" ["e"=1]
+"stanford-mast/nn_dataflow" -> "hsharma35/bitfusion" ["e"=1]
+"stanford-mast/nn_dataflow" -> "jneless/EyerissF" ["e"=1]
+"stanford-mast/nn_dataflow" -> "SingularityKChen/dl_accelerator" ["e"=1]
+"stanford-mast/nn_dataflow" -> "taoyilee/clacc" ["e"=1]
+"stanford-mast/nn_dataflow" -> "hsharma35/dnnweaver2" ["e"=1]
+"stanford-mast/nn_dataflow" -> "GATECH-EIC/AutoDNNchip" ["e"=1]
 "HLSTransform/submission" -> "sharc-lab/Edge-MoE"
 "HLSTransform/submission" -> "cjg91/trans-fat"
 "amd/xdna-driver" -> "amd/RyzenAI-SW"
@@ -1918,7 +2066,11 @@ digraph G {
 "mit-han-lab/spatten" -> "SamsungLabs/Butterfly_Acc"
 "DD-DuDa/awesome-vit-quantization-acceleration" -> "hguq/HG-PIPE"
 "onnx/turnkeyml" -> "amd/gaia"
+"PrincetonUniversity/LLMCompass" -> "clevercool/ANT-Quantization" ["e"=1]
 "stanford-ppl/spatial-lang" -> "stanford-ppl/spatial"
+"Xilinx/XilinxTclStore" -> "Xilinx/XilinxBoardStore" ["e"=1]
+"Xilinx/XilinxTclStore" -> "Xilinx/HLx_Examples" ["e"=1]
+"agalimberti/NoCRouter" -> "karthisugumar/CSE240D-Hierarchical_Mesh_NoC-Eyeriss_v2" ["e"=1]
 "Xilinx/llvm-aie" -> "nod-ai/iree-amd-aie"
 "Xilinx/llvm-aie" -> "AMDResearch/Riallto"
 "Xilinx/llvm-aie" -> "Xilinx/mlir-air"
@@ -1961,9 +2113,21 @@ digraph G {
 "Xilinx/BNN-PYNQ" -> "Xilinx/ml-suite"
 "Xilinx/BNN-PYNQ" -> "doonny/PipeCNN"
 "Xilinx/BNN-PYNQ" -> "Xilinx/CHaiDNN"
+"Digilent/digilent-xdc" -> "Xilinx/XilinxBoardStore" ["e"=1]
+"Digilent/digilent-xdc" -> "Xilinx/Vitis-Tutorials" ["e"=1]
+"Xilinx/linux-xlnx" -> "Xilinx/PYNQ" ["e"=1]
+"Xilinx/linux-xlnx" -> "Xilinx/XRT" ["e"=1]
+"Xilinx/linux-xlnx" -> "Xilinx/Vitis-Tutorials" ["e"=1]
+"Xilinx/linux-xlnx" -> "Xilinx/Vitis_Libraries" ["e"=1]
+"cnrv/rocket-chip-read" -> "soDLA-publishment/soDLA" ["e"=1]
+"leetenki/YOLOv2" -> "HirokiNakahara/GUINNESS" ["e"=1]
+"Xilinx/u-boot-xlnx" -> "Xilinx/PYNQ" ["e"=1]
+"Xilinx/u-boot-xlnx" -> "Xilinx/Vitis_Libraries" ["e"=1]
+"Xilinx/u-boot-xlnx" -> "Xilinx/XRT" ["e"=1]
 "hguq/HG-PIPE" -> "gl9544/vit_transformer_fpga"
 "hguq/HG-PIPE" -> "gnodipac886/ViT-FPGA-TPU"
 "hguq/HG-PIPE" -> "Buck008/Transformer-Accelerator-Based-on-FPGA"
+"HanGuo97/flute" -> "GATECH-EIC/ShiftAddLLM" ["e"=1]
 "BoooC/CNN-Accelerator-Based-on-Eyeriss-v2" -> "arasi15/CNN-Accelerator-Implementation-based-on-Eyerissv2"
 "UCSBarchlab/OpenTPU" -> "jofrfu/tinyTPU"
 "UCSBarchlab/OpenTPU" -> "UCSBarchlab/PyRTL" ["e"=1]
@@ -1986,6 +2150,7 @@ digraph G {
 "GATECH-EIC/ShiftAddLLM" -> "GATECH-EIC/ShiftAddViT"
 "GATECH-EIC/ShiftAddLLM" -> "GATECH-EIC/ViTALiTy"
 "SpinalHDL/SpinalCrypto" -> "SpinalHDL/SpinalDoc-RTD"
+"phanrahan/magma" -> "sifive/chisel-circt" ["e"=1]
 "abdelfattah-lab/BitMoD-HPCA-25" -> "clevercool/ANT-Quantization"
 "Xilinx/SDSoC_Examples" -> "Xilinx/SDSoC-Tutorials"
 "Xilinx/SDSoC_Examples" -> "Xilinx/xfopencv"
@@ -2004,6 +2169,12 @@ digraph G {
 "martinferianc/C90Compiler-EIE2" -> "martinferianc/CPUSimulator-EIE2"
 "martinferianc/C90Compiler-EIE2" -> "martinferianc/relax"
 "martinferianc/C90Compiler-EIE2" -> "martinferianc/Robotics-EIE3"
+"csarron/awesome-emdl" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
+"NervanaSystems/ngraph" -> "ONNC/onnc" ["e"=1]
+"basicmi/AI-Chip" -> "fengbintu/Neural-Networks-on-Silicon" ["e"=1]
+"basicmi/AI-Chip" -> "doonny/PipeCNN" ["e"=1]
+"basicmi/AI-Chip" -> "dgschwend/zynqnet" ["e"=1]
+"basicmi/AI-Chip" -> "IBM/AccDNN" ["e"=1]
 "awai54st/PYNQ-Classification" -> "Xilinx/BNN-PYNQ"
 "awai54st/PYNQ-Classification" -> "Xilinx/QNN-MO-PYNQ"
 "awai54st/PYNQ-Classification" -> "dgschwend/zynqnet"
@@ -2097,6 +2268,7 @@ digraph G {
 "google/qkeras" ["l"="31.763,-2.615"]
 "dgschwend/zynqnet" ["l"="31.768,-2.751"]
 "Xilinx/finn-hlslib" ["l"="31.75,-2.666"]
+"tensorflow/model-optimization" ["l"="45.627,25.723", "c"=68]
 "Xilinx/PYNQ_Workshop" ["l"="31.713,-2.739"]
 "Xilinx/BNN-PYNQ" ["l"="31.731,-2.734"]
 "awai54st/PYNQ-Classification" ["l"="31.751,-2.752"]
@@ -2122,7 +2294,7 @@ digraph G {
 "AniketBadhan/Convolutional-Neural-Network" ["l"="31.869,-2.785"]
 "cornell-zhang/bnn-fpga" ["l"="31.713,-2.722"]
 "changwoolee/lenet5_hls" ["l"="31.754,-2.738"]
-"dtysky/FPGA-Imaging-Library" ["l"="32.751,-2.598"]
+"dtysky/FPGA-Imaging-Library" ["l"="32.751,-2.598", "c"=561]
 "thedatabusdotio/fpga-ml-accelerator" ["l"="31.884,-2.79"]
 "padhi499/Image-Classification-using-CNN-on-FPGA" ["l"="31.892,-2.762"]
 "lirui-shanghaitech/CNN-Accelerator-VLSI" ["l"="31.927,-2.773"]
@@ -2164,38 +2336,48 @@ digraph G {
 "IBM/AccDNN" ["l"="31.804,-2.773"]
 "DNN-Accelerators/Open-Source-IPs" ["l"="31.653,-2.826"]
 "heymesut/SJTU_microe" ["l"="31.663,-2.857"]
+"ai-techsystems/deepC" ["l"="-16.146,-42.573", "c"=387]
+"ONNC/onnc" ["l"="31.903,-2.926"]
+"nvdla/hw" ["l"="31.917,-3.876", "c"=188]
+"nvdla/sw" ["l"="31.906,-2.901"]
+"fengbintu/Neural-Networks-on-Silicon" ["l"="31.792,-2.807"]
+"nvdla/doc" ["l"="31.927,-2.947"]
+"ARM-software/SCALE-Sim" ["l"="31.037,-2.894", "c"=1037]
+"jneless/EyerissF" ["l"="31.91,-2.834"]
 "project-oak/silveroak" ["l"="31.507,-2.433"]
 "ymherklotz/vericert" ["l"="31.554,-2.455"]
+"litex-hub/linux-on-litex-vexriscv" ["l"="32.842,-3.822", "c"=180]
+"SpinalHDL/SaxonSoc" ["l"="32.093,-2.548"]
 "tomcl/V2releases" ["l"="31.513,-2.323"]
 "ImperialCollegeLondon/Visual2" ["l"="31.502,-2.295"]
 "good-data-movement/manifesto" ["l"="31.532,-2.365"]
 "Qirun/ARM_Cortex-M3" ["l"="32.145,-2.643"]
 "Starrynightzyq/Nexys4DDR-ARM-M3-Plate-Recognition" ["l"="32.114,-2.66"]
 "WalkerLau/DetectHumanFaces" ["l"="32.167,-2.636"]
+"ucb-bar/gemmini" ["l"="31.825,-3.938", "c"=188]
+"SingularityKChen/dl_accelerator" ["l"="31.89,-2.817"]
 "xupsh/pp4fpgas-cn" ["l"="31.761,-2.722"]
 "suisuisi/FPGAandCNN" ["l"="31.907,-2.745"]
 "Xilinx/CHaiDNN" ["l"="31.721,-2.754"]
-"666DZY666/micronet" ["l"="52.669,33.387"]
-"Zhen-Dong/HAWQ" ["l"="52.575,33.451"]
-"Efficient-ML/Awesome-Model-Quantization" ["l"="52.603,33.399"]
+"tensorflow/mlir" ["l"="37.156,0.945", "c"=112]
+"666DZY666/micronet" ["l"="52.669,33.387", "c"=271]
+"Zhen-Dong/HAWQ" ["l"="52.575,33.451", "c"=271]
+"Efficient-ML/Awesome-Model-Quantization" ["l"="52.603,33.399", "c"=271]
 "fastmachinelearning/qonnx" ["l"="31.788,-2.627"]
-"quic/aimet" ["l"="52.582,33.376"]
-"IntelLabs/distiller" ["l"="52.71,33.427"]
-"fengbintu/Neural-Networks-on-Silicon" ["l"="31.792,-2.807"]
-"ModelTC/MQBench" ["l"="52.551,33.403"]
-"nvdla/doc" ["l"="31.927,-2.947"]
-"nvdla/sw" ["l"="31.906,-2.901"]
+"quic/aimet" ["l"="52.582,33.376", "c"=271]
+"IntelLabs/distiller" ["l"="52.71,33.427", "c"=271]
+"ModelTC/MQBench" ["l"="52.551,33.403", "c"=271]
 "nvdla/vp" ["l"="31.933,-2.925"]
-"nvdla/hw" ["l"="31.917,-3.876"]
 "nvdla/nvdla.github.io" ["l"="31.938,-2.98"]
 "JunningWu/Learning-NVDLA-Notes" ["l"="31.936,-2.882"]
-"ONNC/onnc" ["l"="31.903,-2.926"]
 "Xilinx/pytorch-ocr" ["l"="31.618,-2.797"]
 "tukl-msd/LSTM-PYNQ" ["l"="31.628,-2.785"]
 "Xilinx/PYNQ-DL" ["l"="31.672,-2.766"]
 "Xilinx/SDSoC_Examples" ["l"="31.639,-2.748"]
 "pp-Innovate/FPGA-ZynqNet" ["l"="31.761,-2.772"]
 "flymin/LeNet-on-Zynq" ["l"="31.845,-2.853"]
+"sampsyo/cs6120" ["l"="-22.215,-18.571", "c"=763]
+"UIUC-ChenLab/scalehls" ["l"="31.665,-2.547"]
 "Avnet/Ultra96-PYNQ" ["l"="31.662,-2.754"]
 "Xilinx/xfopencv" ["l"="31.673,-2.741"]
 "sfox14/pynq-ekf" ["l"="31.692,-2.831"]
@@ -2204,43 +2386,47 @@ digraph G {
 "ZhaoqxCN/PYNQ-CNN-ATTEMPT" ["l"="31.822,-2.728"]
 "amiq-consulting/CNN-using-HLS" ["l"="31.774,-2.737"]
 "ferrandi/PandA-bambu" ["l"="31.6,-2.534"]
-"UIUC-ChenLab/scalehls" ["l"="31.665,-2.547"]
 "lana555/dynamatic" ["l"="31.602,-2.503"]
 "etherzhhb/Shang" ["l"="31.575,-2.535"]
-"google/xls" ["l"="32.934,-3.7"]
+"google/xls" ["l"="32.934,-3.7", "c"=180]
 "dillonhuff/ahaHLS" ["l"="31.557,-2.51"]
 "Xilinx/HLS" ["l"="31.662,-2.598"]
-"llvm/circt" ["l"="31.812,-3.85"]
+"llvm/circt" ["l"="31.812,-3.85", "c"=188]
 "pnnl/soda-opt" ["l"="31.566,-2.493"]
-"olofk/edalize" ["l"="32.923,-3.679"]
-"calyxir/calyx" ["l"="32.871,-3.471"]
+"olofk/edalize" ["l"="32.923,-3.679", "c"=180]
+"calyxir/calyx" ["l"="32.871,-3.471", "c"=180]
 "cornell-zhang/rosetta" ["l"="31.645,-2.612"]
-"JulianKemmerer/PipelineC" ["l"="32.847,-3.726"]
-"kumasento/polymer" ["l"="37.159,1.093"]
-"chipsalliance/firrtl" ["l"="31.759,-3.918"]
-"pku-liang/Hector" ["l"="31.576,-4.062"]
-"jneless/EyerissF" ["l"="31.91,-2.834"]
-"zihuatanejp/xor-crypto-js" ["l"="-51.569,-14.679"]
+"JulianKemmerer/PipelineC" ["l"="32.847,-3.726", "c"=180]
+"kumasento/polymer" ["l"="37.159,1.093", "c"=112]
+"chipsalliance/firrtl" ["l"="31.759,-3.918", "c"=188]
+"pku-liang/Hector" ["l"="31.576,-4.062", "c"=188]
+"zihuatanejp/xor-crypto-js" ["l"="-51.569,-14.679", "c"=788]
 "karthisugumar/CSE240D-Hierarchical_Mesh_NoC-Eyeriss_v2" ["l"="31.923,-2.813"]
-"SingularityKChen/dl_accelerator" ["l"="31.89,-2.817"]
 "arasi15/CNN-Accelerator-Implementation-based-on-Eyerissv2" ["l"="31.934,-2.82"]
 "tissue3/EyerissSimulator" ["l"="31.894,-2.854"]
-"xuuhaoo/DefenseCrash" ["l"="-51.552,-14.711"]
+"xuuhaoo/DefenseCrash" ["l"="-51.552,-14.711", "c"=788]
 "sunyiyue/CCIMLib" ["l"="31.894,-2.874"]
-"milanyangbo/myrpc" ["l"="-51.559,-14.697"]
-"shine977/wefetch" ["l"="-51.556,-14.721"]
-"zhang-rf/mybatis-boost" ["l"="-51.542,-14.712"]
-"sasou/gene" ["l"="-51.562,-14.76"]
-"haoking/opencvjs" ["l"="-51.542,-14.726"]
-"stanford-mast/nn_dataflow" ["l"="31.021,-2.853"]
-"fanyev5/fanyev5_base" ["l"="-51.552,-14.732"]
-"Xilinx/Vitis_Libraries" ["l"="31.689,-2.664"]
+"milanyangbo/myrpc" ["l"="-51.559,-14.697", "c"=788]
+"shine977/wefetch" ["l"="-51.556,-14.721", "c"=788]
+"zhang-rf/mybatis-boost" ["l"="-51.542,-14.712", "c"=788]
+"sasou/gene" ["l"="-51.562,-14.76", "c"=788]
+"haoking/opencvjs" ["l"="-51.542,-14.726", "c"=788]
+"stanford-mast/nn_dataflow" ["l"="31.021,-2.853", "c"=1037]
+"fanyev5/fanyev5_base" ["l"="-51.552,-14.732", "c"=788]
+"Xilinx/dma_ip_drivers" ["l"="32.67,-2.688", "c"=561]
+"Xilinx/XRT" ["l"="31.703,-2.615"]
 "Xilinx/Vitis_Accel_Examples" ["l"="31.679,-2.649"]
+"Xilinx/Vitis_Libraries" ["l"="31.689,-2.664"]
 "spcl/hls_tutorial_examples" ["l"="31.721,-2.701"]
 "Xilinx/HLx_Examples" ["l"="31.683,-2.71"]
-"fpgasystems/fpga-network-stack" ["l"="32.71,-2.754"]
+"fpgasystems/fpga-network-stack" ["l"="32.71,-2.754", "c"=561]
+"keyu-tian/Cpp-Gomoku-with-AI" ["l"="-51.57,-14.721", "c"=788]
+"cornell-zhang/heterocl" ["l"="31.679,-2.606"]
+"cornell-zhang/allo" ["l"="31.695,-2.561"]
+"stanford-ppl/spatial" ["l"="31.785,-2.885"]
+"circt-hls/circt-hls" ["l"="31.626,-2.497"]
 "soDLA-publishment/soDLA" ["l"="31.918,-2.863"]
-"BRTResearch/AIChip_Paper_List" ["l"="31.013,-2.907"]
+"BRTResearch/AIChip_Paper_List" ["l"="31.013,-2.907", "c"=1037]
 "jofrfu/tinyTPU" ["l"="31.921,-2.761"]
 "cameronshinn/tiny-tpu" ["l"="31.957,-2.785"]
 "leo47007/TPU-Tensor-Processing-Unit" ["l"="31.957,-2.771"]
@@ -2258,33 +2444,34 @@ digraph G {
 "sweetwenwen/Stochastic-computing-based-neural-network-accelerator" ["l"="32.29,-2.803"]
 "romulus0914/CNN_VGG19_verilog" ["l"="31.855,-2.792"]
 "ZFTurbo/Verilog-Generator-of-Neural-Net-Digit-Detector-for-FPGA" ["l"="31.839,-2.78"]
-"SpinalHDL/SaxonSoc" ["l"="32.093,-2.548"]
 "SpinalHDL/SpinalWorkshop" ["l"="32.053,-2.547"]
-"SpinalHDL/NaxRiscv" ["l"="31.73,-3.695"]
+"SpinalHDL/NaxRiscv" ["l"="31.73,-3.695", "c"=188]
 "UCLA-VAST/AutoSA" ["l"="31.686,-2.589"]
 "UCLA-VAST/AutoBridge" ["l"="31.641,-2.565"]
 "rapidstream-org/rapidstream-tapa" ["l"="31.663,-2.575"]
-"cornell-zhang/heterocl" ["l"="31.679,-2.606"]
 "Xilinx/SDAccel_Examples" ["l"="31.656,-2.697"]
 "sharc-lab/FPGA_ECE8893" ["l"="31.744,-2.775"]
 "danielholanda/LeFlow" ["l"="31.807,-2.727"]
 "hsharma35/dnnweaver2" ["l"="31.753,-2.793"]
 "TF2-Engine/TF2" ["l"="31.855,-2.7"]
+"Xilinx/RapidWright" ["l"="32.9,-3.744", "c"=180]
+"UCLA-VAST/RapidStream" ["l"="31.619,-2.554"]
 "EECS-NTNU/bismo" ["l"="31.771,-2.855"]
 "hsharma35/bitfusion" ["l"="31.746,-2.887"]
-"maltanar/fpga-tidbits" ["l"="31.727,-4.033"]
+"maltanar/fpga-tidbits" ["l"="31.727,-4.033", "c"=188]
 "papcjy/mnist_fpga" ["l"="31.869,-2.81"]
 "ZFTurbo/MobileNet-in-FPGA" ["l"="31.846,-2.824"]
 "cxlisme/FPGA-proj" ["l"="31.9,-2.729"]
+"xiaop1/Verilog-Practice" ["l"="32.819,-2.712", "c"=561]
 "ac-optimus/Convolution-using-systolic-arrays" ["l"="32.03,-2.737"]
 "wzc810049078/systolic-array-matrix-multiplier" ["l"="32.084,-2.715"]
-"Xilinx/XRT" ["l"="31.703,-2.615"]
+"dawsonjon/fpu" ["l"="32.843,-2.722", "c"=561]
+"spcl/dace" ["l"="37.354,1.1", "c"=112]
 "Xilinx/FPGA_as_a_Service" ["l"="31.632,-2.629"]
 "Xilinx/Vitis_Embedded_Platform_Source" ["l"="31.669,-2.683"]
 "Xilinx/mlir-aie" ["l"="31.71,-2.53"]
-"Xilinx/dma_ip_drivers" ["l"="32.67,-2.688"]
-"Xilinx/linux-xlnx" ["l"="32.643,-2.625"]
-"fpgasystems/Vitis_with_100Gbps_TCP-IP" ["l"="32.719,-2.803"]
+"Xilinx/linux-xlnx" ["l"="32.643,-2.625", "c"=561]
+"fpgasystems/Vitis_with_100Gbps_TCP-IP" ["l"="32.719,-2.803", "c"=561]
 "yztong/LeNet_RTL" ["l"="31.86,-2.894"]
 "flymin/vgg16-on-Zynq" ["l"="31.855,-2.87"]
 "WenqiJiang/VGG16_FPGA_Accelerator" ["l"="31.872,-2.872"]
@@ -2292,32 +2479,35 @@ digraph G {
 "jijingg/Spinal-bootcamp" ["l"="32.059,-2.53"]
 "SpinalHDL/Spinal-bootcamp" ["l"="32.087,-2.527"]
 "Chainsaw-Team/Chainsaw" ["l"="32.008,-2.565"]
-"SpinalHDL/SpinalHDL" ["l"="32.825,-3.682"]
+"SpinalHDL/SpinalHDL" ["l"="32.825,-3.682", "c"=180]
 "tomverbeure/math" ["l"="32.029,-2.562"]
 "SpinalHDL/SpinalDoc-RTD" ["l"="32.055,-2.513"]
-"SpinalHDL/VexiiRiscv" ["l"="31.703,-3.668"]
+"SpinalHDL/VexiiRiscv" ["l"="31.703,-3.668", "c"=188]
 "19801201/SpinalHDL_CNN_Accelerator" ["l"="31.967,-2.639"]
 "agra-uni-bremen/microrv32" ["l"="32.063,-2.496"]
-"nvdla/qbox" ["l"="31.37,-3.627"]
+"nvdla/qbox" ["l"="31.37,-3.627", "c"=188]
+"ucbdrive/skipnet" ["l"="49.351,32.792", "c"=401]
+"cornell-zhang/dnn-gating" ["l"="31.622,-2.61"]
+"progranism/Open-Source-FPGA-Bitcoin-Miner" ["l"="-20.715,5.819", "c"=163]
+"aws/aws-fpga" ["l"="31.639,-2.659"]
 "ONNC/onnc-tutorial" ["l"="31.894,-2.953"]
 "CSL-KU/firesim-nvdla" ["l"="31.918,-2.884"]
 "ONNC/onnc-umbrella" ["l"="31.903,-2.973"]
-"stanford-ppl/spatial" ["l"="31.785,-2.885"]
 "OpenDLA/OpenDLA" ["l"="31.938,-2.906"]
-"onnx/onnx-mlir" ["l"="37.108,0.982"]
-"tensorflow/mlir" ["l"="37.156,0.945"]
-"bu-icsg/dana" ["l"="31.693,-3.999"]
-"NervanaSystems/ngraph" ["l"="37.206,0.889"]
+"onnx/onnx-mlir" ["l"="37.108,0.982", "c"=112]
+"bu-icsg/dana" ["l"="31.693,-3.999", "c"=188]
+"NervanaSystems/ngraph" ["l"="37.206,0.889", "c"=112]
 "lastweek/fpga_readings" ["l"="31.663,-2.669"]
-"vmware-archive/cascade" ["l"="32.886,-3.574"]
-"slaclab/surf" ["l"="33.01,-3.699"]
-"PrincetonUniversity/openpiton" ["l"="31.767,-3.811"]
-"ARM-software/SCALE-Sim" ["l"="31.037,-2.894"]
+"vmware-archive/cascade" ["l"="32.886,-3.574", "c"=180]
+"slaclab/surf" ["l"="33.01,-3.699", "c"=180]
+"sld-columbia/esp" ["l"="31.654,-3.772", "c"=188]
+"PrincetonUniversity/openpiton" ["l"="31.767,-3.811", "c"=188]
 "apache/tvm-vta" ["l"="31.787,-2.772"]
-"ucb-bar/gemmini" ["l"="31.825,-3.938"]
 "lvhao7896/DAC2018" ["l"="31.592,-2.901"]
 "xiaoyuuuuu/dac-hdc-2018-object-detection-in-Jetson-TX2" ["l"="31.608,-2.88"]
-"Avnet/bdf" ["l"="32.581,-2.492"]
+"Avnet/bdf" ["l"="32.581,-2.492", "c"=561]
+"submission2019/cnn-quantization" ["l"="52.578,33.482", "c"=271]
+"cornell-zhang/dnn-quant-ocs" ["l"="31.591,-2.586"]
 "sazczmh/High-Level-Synthesis-Flow-on-Zynq-using-Vivado-HLS" ["l"="31.74,-2.816"]
 "xupsh/2019_SummerCamp" ["l"="31.697,-2.877"]
 "thousrm/universal_NPU-CNN_accelerator" ["l"="31.965,-2.807"]
@@ -2327,9 +2517,10 @@ digraph G {
 "Er1cZ/Deploying_CNN_on_FPGA_using_OpenCL" ["l"="32.055,-2.643"]
 "tirumalnaidu/opencl-hls-cnn-accelerator" ["l"="32.012,-2.674"]
 "thinkoco/c5soc_opencl" ["l"="32.08,-2.625"]
+"becomequantum/Kryon" ["l"="32.753,-2.548", "c"=561]
 "Xilinx/XilinxBoardStore" ["l"="31.683,-2.626"]
-"Xilinx/XilinxTclStore" ["l"="32.667,-2.633"]
-"Xilinx/open-nic" ["l"="32.7,-2.8"]
+"Xilinx/XilinxTclStore" ["l"="32.667,-2.633", "c"=561]
+"Xilinx/open-nic" ["l"="32.7,-2.8", "c"=561]
 "linghaosong/Sextans" ["l"="31.679,-2.571"]
 "cornell-zhang/HiSparse" ["l"="31.653,-2.585"]
 "Xilinx/gemx" ["l"="31.661,-2.635"]
@@ -2338,64 +2529,70 @@ digraph G {
 "sifive/block-nvdla-sifive" ["l"="31.985,-2.912"]
 "isuckatdrifting/Zeus" ["l"="31.972,-2.897"]
 "silicontalks01/OpenDLA" ["l"="31.958,-2.945"]
-"cnrv/rocket-chip-read" ["l"="31.696,-3.986"]
+"cnrv/rocket-chip-read" ["l"="31.696,-3.986", "c"=188]
 "jongse-park/dnnweaver2.drone" ["l"="31.757,-2.844"]
 "DreamIP/haddoc2" ["l"="31.751,-2.864"]
+"larq/larq" ["l"="52.486,33.589", "c"=271]
+"hunterlew/mstar_deeplearning_project" ["l"="35.865,4.424", "c"=128]
 "wbrueckner/cv2PYNQ-The-project-behind-the-library" ["l"="31.626,-2.885"]
 "Starrynightzyq/ZYNQ-PYNQ-Z2-Gobang" ["l"="32.125,-2.635"]
 "Xilinx/ml-suite" ["l"="31.679,-2.727"]
 "Xilinx/Edge-AI-Platform-Tutorials" ["l"="31.651,-2.763"]
 "dicecco1/fpga_caffe" ["l"="31.653,-2.727"]
 "Xilinx/SDSoC-Tutorials" ["l"="31.653,-2.742"]
-"aws/aws-fpga" ["l"="31.639,-2.659"]
 "StefanSredojevic/Deep-Neural-Network-Hardware-Accelerator" ["l"="31.86,-2.734"]
 "Xilinx/SDAccel-Tutorials" ["l"="31.601,-2.659"]
 "cornell-zhang/quickest" ["l"="31.614,-2.586"]
 "cornell-zhang/FracBNN" ["l"="31.639,-2.599"]
-"breagen/MachSuite" ["l"="31.04,-2.829"]
+"breagen/MachSuite" ["l"="31.04,-2.829", "c"=1037]
 "cornell-zhang/uptune" ["l"="31.622,-2.595"]
-"cornell-zhang/dnn-gating" ["l"="31.622,-2.61"]
-"cornell-zhang/dnn-quant-ocs" ["l"="31.591,-2.586"]
 "cornell-zhang/GraphZoom" ["l"="31.612,-2.601"]
 "cornell-zhang/facedetect-fpga" ["l"="31.611,-2.622"]
 "cornell-zhang/GARNET" ["l"="31.607,-2.592"]
 "cornell-zhang/Polynormer" ["l"="31.604,-2.581"]
-"zslwyuan/Light-HLS" ["l"="32.975,-5.65"]
+"zslwyuan/Light-HLS" ["l"="32.975,-5.65", "c"=830]
 "sazczmh/PYNQ_Workshop" ["l"="31.727,-2.833"]
 "stanford-ppl/spatial-lang" ["l"="31.79,-2.925"]
 "stanford-ppl/spatial-quickstart" ["l"="31.804,-2.938"]
 "sfu-arch/muir" ["l"="31.768,-2.919"]
 "stanford-ppl/spatial-multiverse" ["l"="31.774,-2.938"]
-"jingpu/Halide-HLS" ["l"="32.754,-3.325"]
+"jingpu/Halide-HLS" ["l"="32.754,-3.325", "c"=180]
 "sifive/chisel-circt" ["l"="31.784,-2.972"]
+"UCSBarchlab/PyRTL" ["l"="32.881,-3.526", "c"=180]
+"firesim/firesim" ["l"="31.783,-3.929", "c"=188]
 "sumilao/Zynq-7000-DPU-TRD" ["l"="31.588,-2.768"]
 "JinChen-tw/pynqz2_dpu140" ["l"="31.549,-2.799"]
 "Xilinx/Applications" ["l"="31.584,-2.678"]
 "Xtra-Computing/ThunderGP" ["l"="31.597,-2.609"]
 "hsiehong/tpu" ["l"="31.989,-2.762"]
+"cucapra/dahlia" ["l"="32.862,-3.448", "c"=180]
+"mit-han-lab/haq" ["l"="52.605,33.479", "c"=271]
+"blue-oil/blueoil" ["l"="33.008,-3.222", "c"=180]
+"HirokiNakahara/GUINNESS" ["l"="31.685,-2.752"]
+"intel/intel-device-plugins-for-kubernetes" ["l"="8.305,-9.503", "c"=14]
 "clevercool/ANT-Quantization" ["l"="31.727,-2.947"]
 "isakedo/DNNsim" ["l"="31.736,-2.926"]
 "thuCGRA/SpinalHDL_Chinese_Doc" ["l"="32.089,-2.499"]
 "Xilinx/Embedded-Reference-Platforms-User-Guide" ["l"="31.632,-2.732"]
 "mc-imperial/multicore-test-harness" ["l"="31.514,-2.405"]
 "jianyicheng/iiProver" ["l"="31.529,-2.429"]
+"Tiiiger/QPyTorch" ["l"="52.585,33.519", "c"=271]
 "cathalmccabe/PYNQ_tutorials" ["l"="31.828,-2.443"]
 "Xilinx/Embedded-Design-Tutorials" ["l"="31.814,-2.475"]
 "b9515308/ZCU102_YOLO" ["l"="31.648,-2.802"]
 "xiangze/CNN_FPGA" ["l"="31.858,-2.718"]
 "FloyedShen/mnist_hls" ["l"="31.811,-2.899"]
+"antmicro/google-coral-baseboard" ["l"="-17.96,-42.243", "c"=55]
 "manoharvhr/PYNQ-Torch" ["l"="31.634,-2.809"]
 "Xilinx/PYNQ_Bootcamp" ["l"="31.607,-2.814"]
 "XDF2018/ML_Embedded_Workshop" ["l"="31.601,-2.785"]
 "Xilinx/AI-Model-Zoo" ["l"="31.615,-2.724"]
 "wutianze/dnndk-pynqz2" ["l"="31.557,-2.819"]
-"HirokiNakahara/GUINNESS" ["l"="31.685,-2.752"]
 "djtfoo/lenet5-verilog" ["l"="31.855,-2.936"]
-"cornell-zhang/allo" ["l"="31.695,-2.561"]
-"cucapra/dahlia" ["l"="32.862,-3.448"]
 "arc-research-lab/CHARM" ["l"="31.689,-2.534"]
 "jndeng/DACSDC-DeepZ" ["l"="31.619,-2.864"]
 "jgoeders/dac_2019_contest" ["l"="31.594,-2.874"]
+"BertMoons/QuantizedNeuralNetworks-Keras-Tensorflow" ["l"="52.581,33.704", "c"=271]
 "dillonhuff/clockwork" ["l"="31.516,-2.492"]
 "ymherklotz/verismith" ["l"="31.554,-2.421"]
 "jianyicheng/DSS" ["l"="31.587,-2.49"]
@@ -2415,56 +2612,62 @@ digraph G {
 "martinferianc/C90Compiler-EIE2" ["l"="31.424,-2.324"]
 "martinferianc/Robotics-EIE3" ["l"="31.411,-2.33"]
 "b9515308/YOLO_quantize" ["l"="31.624,-2.821"]
+"LeiWang1999/FPGA" ["l"="32.757,-2.745", "c"=561]
 "vipinkmenon/neuralNetwork" ["l"="31.893,-2.718"]
 "Xtra-Computing/ReGraph" ["l"="31.553,-2.613"]
 "cornell-zhang/GraphLily" ["l"="31.628,-2.584"]
+"sin-x/FPGA" ["l"="32.741,-2.707", "c"=561]
 "Xilinx/Vitis-AI-Tutorials" ["l"="31.699,-2.684"]
 "Xilinx/Vivado-Design-Tutorials" ["l"="31.785,-2.53"]
 "user-xleo/DNN-Accelerator" ["l"="31.903,-2.637"]
+"doonny/basic_knowledge" ["l"="31.973,-4.047", "c"=188]
+"lucidrains/mixture-of-experts" ["l"="38.611,-0.435", "c"=39]
+"VITA-Group/M3ViT" ["l"="32.063,-2.751"]
 "LeiWang1999/DigitalAlarmClock" ["l"="32.161,-2.666"]
 "Thes0me/pango_video_local_dimming" ["l"="32.141,-2.669"]
+"Xilinx/embeddedsw" ["l"="32.667,-2.603", "c"=561]
 "FedericoSerafini/HLS-CNN" ["l"="31.802,-2.703"]
 "Xilinx/Vitis-In-Depth-Tutorial" ["l"="31.645,-2.684"]
 "Xilinx/kria-vitis-platforms" ["l"="31.585,-2.703"]
 "eda-lab/CNNAF-CNN-Accelerator" ["l"="31.903,-2.677"]
 "mayshin10/CNN-Accelerator" ["l"="31.894,-2.659"]
 "williamyang4978/PipeCNN_Winograd" ["l"="31.947,-2.669"]
+"fpgasystems/Coyote" ["l"="32.686,-2.804", "c"=561]
 "exo-lang/exo" ["l"="31.652,-2.52"]
-"llvm/Polygeist" ["l"="37.132,1.05"]
-"pku-liang/AMOS" ["l"="37.001,1.054"]
-"bondhugula/pluto" ["l"="37.108,1.083"]
+"llvm/Polygeist" ["l"="37.132,1.05", "c"=112]
+"pku-liang/AMOS" ["l"="37.001,1.054", "c"=112]
+"bondhugula/pluto" ["l"="37.108,1.083", "c"=112]
 "thesps/conifer" ["l"="31.791,-2.596"]
 "tensil-ai/tensil" ["l"="31.825,-2.698"]
-"Xilinx/xup_vitis_network_example" ["l"="32.703,-2.819"]
+"Xilinx/xup_vitis_network_example" ["l"="32.703,-2.819", "c"=561]
 "zhangzek/3x3_matrix_Systolic_Array_multiplier" ["l"="32.008,-2.731"]
-"BertMoons/QuantizedNeuralNetworks-Keras-Tensorflow" ["l"="52.581,33.704"]
-"larq/larq" ["l"="52.486,33.589"]
-"mlcommons/tiny" ["l"="-16.139,-42.535"]
+"mlcommons/tiny" ["l"="-16.139,-42.535", "c"=387]
 "soon-yau/QNN" ["l"="31.795,-2.558"]
-"tensorflow/model-optimization" ["l"="45.627,25.723"]
 "Xilinx/RFNoC-HLS-NeuralNet" ["l"="31.624,-2.683"]
-"sld-columbia/esp" ["l"="31.654,-3.772"]
-"mit-han-lab/haq" ["l"="52.605,33.479"]
 "AiArtisan/dac_sdc_2022_champion" ["l"="31.685,-2.85"]
 "jgoeders/dac_sdc_2022_designs" ["l"="31.682,-2.863"]
 "jgoeders/dac_sdc_2021_designs" ["l"="31.673,-2.851"]
+"Nitcloud/Digital-IDE" ["l"="32.687,-2.66", "c"=561]
 "rgb000000/eyeriss-chisel3" ["l"="31.933,-2.843"]
 "diwu1990/uSystolic-Sim" ["l"="32.185,-2.793"]
+"NNgen/nngen" ["l"="32.949,-3.407", "c"=180]
 "LeiWang1999/nvdla_loadables" ["l"="31.996,-2.973"]
 "VVViy/VVViy.github.io" ["l"="31.995,-2.956"]
-"Marco-Winzker/Spiking_NN_RGB_FPGA" ["l"="60.599,33.586"]
-"OpenHEC/SNN-simulator-on-PYNQcluster" ["l"="60.549,33.634"]
+"Marco-Winzker/Spiking_NN_RGB_FPGA" ["l"="60.599,33.586", "c"=607]
+"OpenHEC/SNN-simulator-on-PYNQcluster" ["l"="60.549,33.634", "c"=607]
 "Marco-Winzker/NN_RGB_FPGA" ["l"="31.927,-2.616"]
 "YutongChenVictor/Fpga-accelerator-demos" ["l"="31.93,-2.663"]
 "flyjancy/CortexM0_SoC_Task" ["l"="32.213,-2.618"]
-"harvard-acc/gem5-aladdin" ["l"="31.041,-2.91"]
+"kssteven418/I-BERT" ["l"="52.518,33.443", "c"=271]
+"GATECH-EIC/ViTCoD" ["l"="32.08,-2.769"]
+"harvard-acc/gem5-aladdin" ["l"="31.041,-2.91", "c"=1037]
+"chiselverify/chiselverify" ["l"="31.679,-3.986", "c"=188]
 "hst10/pylog" ["l"="31.643,-2.482"]
 "Xilinx/mlir-air" ["l"="31.704,-2.507"]
 "UIUC-ChenLab/ScaleHLS-HIDA" ["l"="31.673,-2.514"]
-"circt-hls/circt-hls" ["l"="31.626,-2.497"]
+"iml130/mlir-emitc" ["l"="37.165,1.063", "c"=112]
 "dldldlfma/eyeriss_v1" ["l"="31.96,-2.853"]
-"NVlabs/timeloop" ["l"="31.019,-2.883"]
-"UCLA-VAST/RapidStream" ["l"="31.619,-2.554"]
+"NVlabs/timeloop" ["l"="31.019,-2.883", "c"=1037]
 "UCLA-VAST/FlexCNN" ["l"="31.71,-2.584"]
 "Marco-Winzker/FPGA-Vision" ["l"="31.945,-2.567"]
 "wutianze/HydraMini" ["l"="31.523,-2.838"]
@@ -2476,8 +2679,10 @@ digraph G {
 "UCLA-VAST/Serpens" ["l"="31.653,-2.558"]
 "sharc-lab/LightningSim" ["l"="31.626,-2.534"]
 "gewuek/vitis_ai_custom_platform_flow" ["l"="31.615,-2.703"]
-"PSAL-POSTECH/ONNXim" ["l"="31.068,-2.992"]
+"PSAL-POSTECH/ONNXim" ["l"="31.068,-2.992", "c"=1037]
 "xliu0709/DACSDC2021" ["l"="31.669,-2.865"]
+"ROCm/rocMLIR" ["l"="37.179,1.07", "c"=112]
+"nod-ai/iree-amd-aie" ["l"="31.716,-2.493"]
 "EPFL-LAP/dynamatic" ["l"="31.592,-2.465"]
 "wzc810049078/turbo-interleaver" ["l"="32.101,-2.704"]
 "wzc810049078/ZC-RISCV-CORE" ["l"="32.113,-2.711"]
@@ -2491,10 +2696,13 @@ digraph G {
 "martinferianc/Improving_Per_Esti_for_FPGA-based_Acc_for_CNNs-ARC2020" ["l"="31.434,-2.357"]
 "Ekdohibs/PolyGen" ["l"="31.57,-2.467"]
 "cornell-brg/hb-pytorch" ["l"="31.547,-2.595"]
+"abdelazeem201/ASIC-Design-Roadmap" ["l"="32.693,-4.657", "c"=972]
 "Xilinx/kria-apps-firmware" ["l"="31.539,-2.717"]
 "Xilinx/smartcam" ["l"="31.541,-2.69"]
 "Xilinx/Xilinx_Kria_KV260_Workshop" ["l"="31.568,-2.715"]
 "Xilinx/VVAS" ["l"="31.529,-2.701"]
+"scalesim-project/scale-sim-v2" ["l"="31.027,-2.921", "c"=1037]
+"google/CFU-Playground" ["l"="33.03,-3.785", "c"=180]
 "XueTianyu24/cnn_accelerator" ["l"="31.918,-2.695"]
 "GuoningHuang/FPGA-CNN-accelerator-based-on-systolic-array" ["l"="31.943,-2.718"]
 "xddcore/OpenNNA" ["l"="31.924,-2.71"]
@@ -2503,11 +2711,15 @@ digraph G {
 "debtanu09/systolic_array_matrix_multiplier" ["l"="32.026,-2.85"]
 "Buck008/Transformer-Accelerator-Based-on-FPGA" ["l"="32.04,-2.775"]
 "sharc-lab/Edge-MoE" ["l"="32.016,-2.752"]
-"abdelazeem201/Design-and-ASIC-Implementation-of-32-Point-FFT-Processor" ["l"="32.649,-4.637"]
+"abdelazeem201/Design-and-ASIC-Implementation-of-32-Point-FFT-Processor" ["l"="32.649,-4.637", "c"=972]
+"ikwzm/udmabuf" ["l"="32.631,-2.677", "c"=561]
+"PyHDI/veriloggen" ["l"="32.917,-3.494", "c"=180]
+"sony/model_optimization" ["l"="-34.876,22.144", "c"=429]
+"kaitoukito/Integrated-Circuit-Textbooks" ["l"="31.97,-3.97", "c"=188]
 "brianhill11/FPGA-CNN" ["l"="31.859,-2.67"]
-"Xilinx/RapidWright" ["l"="32.9,-3.744"]
+"NetFPGA/netfpga" ["l"="32.791,-2.722", "c"=561]
 "IMPETUS-UdeS/rule4ml" ["l"="31.815,-2.599"]
-"rachelselinar/DREAMPlaceFPGA" ["l"="33.002,-5.514"]
+"rachelselinar/DREAMPlaceFPGA" ["l"="33.002,-5.514", "c"=830]
 "chipsalliance/firrtl-spec" ["l"="31.782,-3.003"]
 "Xilinx/logicnets" ["l"="31.856,-2.581"]
 "cjg91/trans-fat" ["l"="32.002,-2.762"]
@@ -2529,65 +2741,72 @@ digraph G {
 "MartaAndronic/PolyLUT" ["l"="31.876,-2.535"]
 "Xilinx/kria-base-hardware" ["l"="31.506,-2.718"]
 "jjejdhhd/License-Plate-Recognition-FPGA" ["l"="31.979,-2.819"]
-"google/CFU-Playground" ["l"="33.03,-3.785"]
+"Digilent/vivado-library" ["l"="32.699,-2.605", "c"=561]
 "gnodipac886/ViT-FPGA-TPU" ["l"="32.023,-2.78"]
 "gl9544/vit_transformer_fpga" ["l"="32.038,-2.793"]
 "puccinic/Transformer_dataflow" ["l"="32.03,-2.803"]
 "hguq/HG-PIPE" ["l"="32.049,-2.799"]
+"Digilent/vivado-boards" ["l"="32.632,-2.518", "c"=561]
+"bxinquan/zynq_cam_isp_demo" ["l"="-34.595,22.314", "c"=429]
 "leamoon/StochasticNet" ["l"="32.317,-2.821"]
 "qixingzhang/Embedded-System-Standalone-Flow-Design-using-Zynq" ["l"="31.604,-2.964"]
 "Maxwellhyh/AMD_AECG_Summer_School_Projects" ["l"="31.59,-2.972"]
+"google-research/vmoe" ["l"="38.598,-0.457", "c"=39]
 "lsq314/SpMM_TCAD" ["l"="31.651,-2.541"]
 "linghaosong/Serpens" ["l"="31.673,-2.531"]
-"gtaylormb/ultra96v2_imx219_to_displayport" ["l"="32.499,-3.717"]
-"nod-ai/iree-amd-aie" ["l"="31.716,-2.493"]
+"gtaylormb/ultra96v2_imx219_to_displayport" ["l"="32.499,-3.717", "c"=180]
 "Xilinx/llvm-aie" ["l"="31.706,-2.482"]
 "amd/RyzenAI-SW" ["l"="31.734,-2.509"]
 "AMDResearch/Riallto" ["l"="31.721,-2.472"]
 "amd/xdna-driver" ["l"="31.734,-2.49"]
-"iml130/mlir-emitc" ["l"="37.165,1.063"]
 "Xilinx/aie-rt" ["l"="31.758,-2.475"]
 "stephenneuendorffer/vyasa" ["l"="31.772,-2.445"]
 "pku-liang/Sanger" ["l"="32.079,-2.785"]
-"GATECH-EIC/ViTCoD" ["l"="32.08,-2.769"]
 "GATECH-EIC/ViTALiTy" ["l"="32.12,-2.799"]
+"hahnyuan/PTQ4ViT" ["l"="52.511,33.42", "c"=271]
 "xddcore/OpenNNA2.0" ["l"="31.958,-2.681"]
 "19801201/Ultra_low_power_CNN_Accelerated" ["l"="31.989,-2.623"]
 "liuwei9/SpinalHDL_CNN_Accelerator" ["l"="31.979,-2.609"]
 "mpskex/chisel-npu" ["l"="32.013,-2.831"]
 "suchandler96/gem5-NVDLA" ["l"="32.028,-2.826"]
-"basicmi/AI-Chip" ["l"="37.291,0.775"]
-"zssloth/Embedded-Neural-Network" ["l"="52.669,33.545"]
-"ucb-bar/chipyard" ["l"="31.795,-3.901"]
-"HewlettPackard/cacti" ["l"="31.062,-2.902"]
-"jbush001/NyuziProcessor" ["l"="31.931,-3.842"]
+"polyphony-dev/polyphony" ["l"="32.944,-3.376", "c"=180]
+"basicmi/AI-Chip" ["l"="37.291,0.775", "c"=112]
+"zssloth/Embedded-Neural-Network" ["l"="52.669,33.545", "c"=271]
+"ucb-bar/chipyard" ["l"="31.795,-3.901", "c"=188]
+"HewlettPackard/cacti" ["l"="31.062,-2.902", "c"=1037]
+"jbush001/NyuziProcessor" ["l"="31.931,-3.842", "c"=188]
+"MatthieuCourbariaux/BinaryNet" ["l"="52.596,33.617", "c"=271]
 "jha-lab/acceltran" ["l"="32.062,-2.782"]
 "sjtu-zhao-lab/SALO" ["l"="32.104,-2.789"]
-"VITA-Group/M3ViT" ["l"="32.063,-2.751"]
-"PeiyanFlying/SPViT" ["l"="49.025,33.241"]
+"PeiyanFlying/SPViT" ["l"="49.025,33.241", "c"=401]
 "SamsungLabs/Butterfly_Acc" ["l"="32.097,-2.775"]
 "os-hxfan/BayesNN_FPGA" ["l"="32.133,-2.772"]
 "SamsungLabs/Sparse-Multi-DNN-Scheduling" ["l"="32.14,-2.79"]
 "hmarkc/parallel-prompt-decoding" ["l"="32.15,-2.773"]
 "aliemo/transfomers-silicon-research" ["l"="32.038,-2.756"]
-"scalesim-project/scale-sim-v2" ["l"="31.027,-2.921"]
 "HLSTransform/submission" ["l"="31.961,-2.704"]
-"zkkli/I-ViT" ["l"="-52.898,-12.1"]
+"zkkli/I-ViT" ["l"="-52.898,-12.1", "c"=400]
+"hamsternz/FPGA_Webserver" ["l"="32.748,-3.669", "c"=180]
 "suhasr1991/Convolutional-Neural-Network-hardware-using-Verilog" ["l"="31.833,-2.844"]
 "maeri-project/FEATHER" ["l"="32.121,-2.754"]
 "qixingzhang/SummerSchool2022-Vitis-AI" ["l"="31.577,-2.99"]
 "ChunxuGuo/SummerSchool2022" ["l"="31.617,-2.936"]
-"Xilinx/HLS_packet_processing" ["l"="32.75,-2.933"]
-"fpgadeveloper/fpga-drive-aximm-pcie" ["l"="32.667,-2.669"]
-"alexforencich/verilog-axis" ["l"="32.751,-2.66"]
+"bperez77/xilinx_axidma" ["l"="32.632,-2.647", "c"=561]
+"Xilinx/HLS_packet_processing" ["l"="32.75,-2.933", "c"=561]
+"fpgadeveloper/fpga-drive-aximm-pcie" ["l"="32.667,-2.669", "c"=561]
+"alexforencich/verilog-axis" ["l"="32.751,-2.66", "c"=561]
 "hfwang132/lenet-hls-pynq" ["l"="31.955,-2.599"]
+"pmgysel/caffe" ["l"="52.666,33.591", "c"=271]
 "proteus-core/proteus" ["l"="32.006,-2.524"]
+"libxsmm/tpp-mlir" ["l"="37.172,1.093", "c"=112]
 "abdelfattah-lab/BitMoD-HPCA-25" ["l"="31.726,-2.974"]
 "snu-comparch/Tender" ["l"="31.709,-2.974"]
 "arc-research-lab/SSR" ["l"="31.68,-2.487"]
 "arc-research-lab/AIM" ["l"="31.67,-2.472"]
 "makslevental/openhls" ["l"="31.543,-2.537"]
 "cornell-zhang/datuner" ["l"="31.543,-2.581"]
+"Vitorian/awesome-fpga" ["l"="25.804,-26.592", "c"=32]
+"baidu-research/DeepBench" ["l"="37.226,0.818", "c"=112]
 "ShixiangLi/Transformer_FPGA" ["l"="32.055,-2.813"]
 "albertomarchisio/SwiftTron" ["l"="32.093,-2.819"]
 "tostq/DeepLearningC" ["l"="31.561,-2.775"]
@@ -2596,10 +2815,12 @@ digraph G {
 "flytt-away/FPGA-Video-Capture" ["l"="31.984,-2.683"]
 "amd/ryzen-ai-documentation" ["l"="31.748,-2.462"]
 "huggingface/optimum-amd" ["l"="31.737,-2.443"]
-"ROCm/composable_kernel" ["l"="64.195,-1.714"]
+"ROCm/composable_kernel" ["l"="64.195,-1.714", "c"=477]
 "amd/gaia" ["l"="31.741,-2.394"]
-"ROCm/rocm-examples" ["l"="64.182,-1.756"]
+"ROCm/rocm-examples" ["l"="64.182,-1.756", "c"=477]
+"makslevental/mlir-python-extras" ["l"="37.25,1.11", "c"=112]
 "BoooC/CNN-Accelerator-Based-on-Eyeriss-v2" ["l"="31.979,-2.846"]
+"openFPGA666/FpgaGuide" ["l"="32.696,-2.708", "c"=561]
 "iharbour-heyaonan/FPGA_image_process" ["l"="32.135,-2.72"]
 "BambooWhispering/FPGA-image-simulation" ["l"="32.165,-2.71"]
 "fivexxxxx/image_processing" ["l"="32.176,-2.725"]
@@ -2608,30 +2829,36 @@ digraph G {
 "cornell-zhang/allo-pldi24-artifact" ["l"="31.69,-2.517"]
 "nachiket/papaa-opencl" ["l"="31.873,-2.646"]
 "arc-research-lab/SCARIF" ["l"="31.663,-2.446"]
-"MatthieuCourbariaux/BinaryNet" ["l"="52.596,33.617"]
-"corundum/corundum" ["l"="32.721,-2.717"]
-"firesim/firesim" ["l"="31.783,-3.929"]
-"olofk/fusesoc" ["l"="32.897,-3.71"]
-"aolofsson/oh" ["l"="32.787,-2.644"]
+"corundum/corundum" ["l"="32.721,-2.717", "c"=561]
+"olofk/fusesoc" ["l"="32.897,-3.71", "c"=180]
+"aolofsson/oh" ["l"="32.787,-2.644", "c"=561]
 "Floatkyun/Ultra-Vision" ["l"="32.018,-2.647"]
 "zzzzzxh499/Pango_voice_magicbox" ["l"="32.032,-2.669"]
 "RakeshUIUC/multihead_attn_accelerator" ["l"="32.053,-2.829"]
 "arc-research-lab/Aries" ["l"="31.689,-2.458"]
+"GraphIt-DSL/graphit" ["l"="51.462,15.327", "c"=1231]
+"intel/intel-npu-acceleration-library" ["l"="64.076,-2.433", "c"=1153]
 "DD-DuDa/awesome-vit-quantization-acceleration" ["l"="32.087,-2.846"]
 "onnx/turnkeyml" ["l"="31.744,-2.357"]
-"UCSBarchlab/PyRTL" ["l"="32.881,-3.526"]
-"VerticalResearchGroup/miaow" ["l"="31.907,-3.836"]
-"19801201/DOSLAM" ["l"="32.002,-2.605"]
+"PrincetonUniversity/LLMCompass" ["l"="31.044,-2.994", "c"=1037]
+"agalimberti/NoCRouter" ["l"="31.496,-3.717", "c"=188]
+"Digilent/digilent-xdc" ["l"="32.663,-2.534", "c"=561]
+"leetenki/YOLOv2" ["l"="-34.583,20.507", "c"=1031]
+"Xilinx/u-boot-xlnx" ["l"="32.633,-2.594", "c"=561]
+"HanGuo97/flute" ["l"="38.883,-0.261", "c"=39]
 "GATECH-EIC/ShiftAddLLM" ["l"="32.171,-2.833"]
+"VerticalResearchGroup/miaow" ["l"="31.907,-3.836", "c"=188]
+"19801201/DOSLAM" ["l"="32.002,-2.605"]
 "GATECH-EIC/ShiftAddViT" ["l"="32.198,-2.851"]
+"phanrahan/magma" ["l"="32.842,-3.467", "c"=180]
 "Xilinx/xilinx-tiny-cnn" ["l"="31.653,-2.779"]
 "MsaysKid/Pango_Voice_MagicBox_Software" ["l"="32.053,-2.666"]
 "SamsungLabs/PMPD" ["l"="32.176,-2.771"]
+"csarron/awesome-emdl" ["l"="52.67,33.513", "c"=271]
 "quanzaihh/Neural-Network-Accelerator" ["l"="31.971,-2.731"]
-"fengzhu2007/anycode" ["l"="38.034,-0.044"]
-"hexnn/Stark" ["l"="38.031,-0.029"]
-"Auroral0810/EasyRename" ["l"="38.044,-0.033"]
-"hillbig/binary_net" ["l"="-34.62,20.524"]
-"pmgysel/caffe" ["l"="52.666,33.591"]
+"fengzhu2007/anycode" ["l"="38.034,-0.044", "c"=39]
+"hexnn/Stark" ["l"="38.031,-0.029", "c"=39]
+"Auroral0810/EasyRename" ["l"="38.044,-0.033", "c"=39]
+"hillbig/binary_net" ["l"="-34.62,20.524", "c"=1031]
 "Xilinx/RFNoC-HLS-ATSC-RX" ["l"="31.567,-2.673"]
 }

@@ -1,4 +1,9 @@
 digraph G {
+"shinken-solutions/shinken" -> "sni/thruk" ["e"=1]
+"shinken-solutions/shinken" -> "monitoring-plugins/monitoring-plugins" ["e"=1]
+"shinken-solutions/shinken" -> "Icinga/icinga2" ["e"=1]
+"shinken-solutions/shinken" -> "lingej/pnp4nagios" ["e"=1]
+"bareos/bareos" -> "Icinga/icingaweb2" ["e"=1]
 "Icinga/icinga2" -> "Icinga/icingaweb2"
 "Icinga/icinga2" -> "Icinga/icingaweb2-module-director"
 "Icinga/icinga2" -> "Mikesch-mp/icingaweb2-module-grafana"
@@ -30,11 +35,18 @@ digraph G {
 "Icinga/icingaweb2" -> "nbuchwitz/icingaweb2-module-map"
 "Icinga/icingaweb2" -> "Linuxfabrik/monitoring-plugins"
 "Icinga/icingaweb2" -> "findmypast/icingaweb2-module-graphite"
+"NagiosEnterprises/nagioscore" -> "nagios-plugins/nagios-plugins" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "NagiosEnterprises/nrpe" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "NagiosEnterprises/ncpa" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "NagiosEnterprises/ndoutils" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "Icinga/icinga2" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "monitoring-plugins/monitoring-plugins" ["e"=1]
 "Icinga/icinga-powershell-framework" -> "Icinga/icinga-powershell-plugins"
 "Icinga/icinga-powershell-framework" -> "Icinga/icingadb"
 "Icinga/icinga-powershell-framework" -> "Icinga/icingadb-web"
 "Icinga/icinga-powershell-framework" -> "Icinga/icingaweb2-module-reporting"
 "NagiosEnterprises/nrdp" -> "NagiosEnterprises/nsca"
+"Checkmk/checkmk" -> "ConSol-Monitoring/omd" ["e"=1]
 "nagios-plugins/nagios-plugins" -> "NagiosEnterprises/nagioscore" ["e"=1]
 "nagios-plugins/nagios-plugins" -> "NagiosEnterprises/nrpe"
 "nagios-plugins/nagios-plugins" -> "monitoring-plugins/monitoring-plugins"
@@ -118,6 +130,7 @@ digraph G {
 "ConSol-Monitoring/omd" -> "Griesbacher/histou"
 "ConSol-Monitoring/omd" -> "Griesbacher/nagflux"
 "ConSol-Monitoring/omd" -> "ConSol/sakuli"
+"grafana/grafana-image-renderer" -> "Icinga/icingadb" ["e"=1]
 "drewkerrigan/nagios-http-json" -> "phrawzty/check_http_json"
 "Qwant/WebExtension" -> "Qwant/qwant-viprivacy"
 "BaldMansMojo/check_vmware_esx" -> "ITRS-Group/system-addons-plugins-op5-check_vmware_api"
@@ -179,6 +192,7 @@ digraph G {
 "Icinga/icingaweb2-theme-company" -> "nbuchwitz/icingaweb2-module-map"
 "NagiosEnterprises/nsca" -> "NagiosEnterprises/nrdp"
 "NagiosEnterprises/nsca" -> "NagiosEnterprises/ndoutils"
+"Cacti/cacti" -> "Icinga/icingaweb2" ["e"=1]
 "monitoring-plugins/monitoring-plugins" -> "monitoring-plugins/monitoring-plugin-perl"
 "monitoring-plugins/monitoring-plugins" -> "Icinga/icingaweb2"
 "monitoring-plugins/monitoring-plugins" -> "nagios-plugins/nagios-plugins"
@@ -194,6 +208,7 @@ digraph G {
 "monitoring-plugins/monitoring-plugins" -> "Icinga/icinga2"
 "monitoring-plugins/monitoring-plugins" -> "lausser/check_nwc_health"
 "monitoring-plugins/monitoring-plugins" -> "sni/thruk"
+"ansible/ansible-lockdown" -> "Icinga/ansible-playbooks" ["e"=1]
 "jjethwa/icinga2" -> "Icinga/docker-icinga2"
 "jjethwa/icinga2" -> "Icinga/icingaweb2-module-graphite"
 "jjethwa/icinga2" -> "Icinga/docker-icinga2-demo"
@@ -202,6 +217,7 @@ digraph G {
 "jjethwa/icinga2" -> "Icinga/icingaweb2"
 "jjethwa/icinga2" -> "nbuchwitz/icingaweb2-module-map"
 "jjethwa/icinga2" -> "Icinga/icinga2-api-examples"
+"zorkian/nagios-api" -> "pynag/pynag" ["e"=1]
 "lippserd/docker-compose-icinga" -> "Icinga/docker-icinga2"
 "telekom-mms/ansible-collection-icinga-director" -> "telekom-mms/ansible-collection-acme"
 "telekom-mms/ansible-collection-icinga-director" -> "Icinga/icingaweb2-module-x509"
@@ -272,6 +288,7 @@ digraph G {
 "findmypast/icingaweb2-module-graphite" -> "morgajel/icingaweb2-module-boxydash"
 "findmypast/icingaweb2-module-graphite" -> "nbuchwitz/icingaweb2-module-map"
 "findmypast/icingaweb2-module-graphite" -> "Icinga/icingaweb2-module-generictts"
+"dev-sec/ansible-ssh-hardening" -> "Icinga/ansible-playbooks" ["e"=1]
 "sni/thruk" -> "naemon/naemon-core"
 "sni/thruk" -> "ConSol-Monitoring/omd"
 "sni/thruk" -> "sni/lmd"
@@ -296,6 +313,9 @@ digraph G {
 "telekom-mms/docker-management-container" -> "telekom-mms/ansible-bad-and-good-practices"
 "morgajel/icingaweb2-module-boxydash" -> "invliD/icingaweb2-module-statusmap"
 "Griesbacher/histou" -> "Griesbacher/nagflux"
+"munin-monitoring/munin" -> "Icinga/icinga2" ["e"=1]
+"munin-monitoring/munin" -> "Icinga/icingaweb2" ["e"=1]
+"HariSekhon/Dockerfiles" -> "HariSekhon/Nagios-Plugins" ["e"=1]
 "matteocorti/check_ssl_cert" -> "monitoring-plugins/monitoring-plugins"
 "matteocorti/check_ssl_cert" -> "Mikesch-mp/icingaweb2-module-grafana"
 "matteocorti/check_ssl_cert" -> "Linuxfabrik/monitoring-plugins"
@@ -311,6 +331,7 @@ digraph G {
 "matteocorti/check_ssl_cert" -> "madrisan/nagios-plugins-linux"
 "matteocorti/check_ssl_cert" -> "mickem/nscp"
 "matteocorti/check_ssl_cert" -> "mocdaniel/dashing-icinga2"
+"HariSekhon/DevOps-Python-tools" -> "HariSekhon/Nagios-Plugins" ["e"=1]
 "Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2"
 "Icinga/icingaweb2-module-director" -> "Icinga/icingaweb2-module-businessprocess"
 "Icinga/icingaweb2-module-director" -> "Icinga/icinga2"
@@ -510,12 +531,16 @@ digraph G {
 "nbuchwitz/icingaweb2-module-map" -> "Icinga/icingaweb2-module-nagvis"
 "Icinga/icingaweb2-module-vsphere" -> "Icinga/icingaweb2-module-fileshipper"
 "Icinga/icingaweb2-module-vsphere" -> "Icinga/icingaweb2-module-cube"
+"shinken-solutions/shinken" ["l"="3.053,-36", "c"=171]
+"sni/thruk" ["l"="9.053,-11.222"]
+"monitoring-plugins/monitoring-plugins" ["l"="9.127,-11.208"]
 "Icinga/icinga2" ["l"="9.185,-11.211"]
+"lingej/pnp4nagios" ["l"="9.081,-11.186"]
+"bareos/bareos" ["l"="14.679,-11.367", "c"=855]
 "Icinga/icingaweb2" ["l"="9.147,-11.243"]
 "Icinga/icingaweb2-module-director" ["l"="9.161,-11.222"]
 "Mikesch-mp/icingaweb2-module-grafana" ["l"="9.174,-11.226"]
 "Icinga/icingaweb2-module-businessprocess" ["l"="9.178,-11.238"]
-"monitoring-plugins/monitoring-plugins" ["l"="9.127,-11.208"]
 "mocdaniel/dashing-icinga2" ["l"="9.162,-11.238"]
 "Icinga/icingaweb2-module-graphite" ["l"="9.186,-11.247"]
 "Icinga/icingaweb2-module-vspheredb" ["l"="9.196,-11.242"]
@@ -529,23 +554,24 @@ digraph G {
 "madrisan/nagios-plugins-linux" ["l"="9.105,-11.32"]
 "madrisan/HadCRUT5" ["l"="9.104,-11.381"]
 "findmypast/icingaweb2-module-graphite" ["l"="9.164,-11.26"]
+"NagiosEnterprises/nagioscore" ["l"="8.971,-8.275", "c"=14]
+"nagios-plugins/nagios-plugins" ["l"="9.132,-11.168"]
+"NagiosEnterprises/nrpe" ["l"="9.138,-11.142"]
+"NagiosEnterprises/ncpa" ["l"="9.154,-11.122"]
+"NagiosEnterprises/ndoutils" ["l"="9.164,-11.09"]
 "Icinga/icinga-powershell-framework" ["l"="9.227,-11.247"]
 "Icinga/icinga-powershell-plugins" ["l"="9.225,-11.265"]
 "Icinga/icingaweb2-module-reporting" ["l"="9.199,-11.268"]
 "NagiosEnterprises/nrdp" ["l"="9.132,-11.115"]
 "NagiosEnterprises/nsca" ["l"="9.145,-11.108"]
-"nagios-plugins/nagios-plugins" ["l"="9.132,-11.168"]
-"NagiosEnterprises/nagioscore" ["l"="8.971,-8.275"]
-"NagiosEnterprises/nrpe" ["l"="9.138,-11.142"]
-"lingej/pnp4nagios" ["l"="9.081,-11.186"]
-"NagiosEnterprises/ncpa" ["l"="9.154,-11.122"]
+"Checkmk/checkmk" ["l"="12.669,-9.757", "c"=18]
+"ConSol-Monitoring/omd" ["l"="9.026,-11.263"]
 "NagVis/nagvis" ["l"="9.107,-11.2"]
 "mickem/nscp" ["l"="9.108,-11.179"]
 "nagios-plugins/nagios-plugin-perl" ["l"="9.114,-11.143"]
 "matteocorti/check_ssl_cert" ["l"="9.134,-11.225"]
 "SteScho/manubulon-snmp" ["l"="9.166,-11.171"]
-"JasonRivers/Docker-Nagios" ["l"="11.24,-8.647"]
-"NagiosEnterprises/ndoutils" ["l"="9.164,-11.09"]
+"JasonRivers/Docker-Nagios" ["l"="11.24,-8.647", "c"=18]
 "Icinga/icingaweb2-module-cube" ["l"="9.199,-11.254"]
 "Icinga/icingaweb2-module-idoreports" ["l"="9.21,-11.282"]
 "Icinga/icingaweb2-module-pdfexport" ["l"="9.213,-11.27"]
@@ -565,11 +591,10 @@ digraph G {
 "hgrimm/check_cisco_ucs" ["l"="9.208,-11.165"]
 "lausser/check_oracle_health" ["l"="9.172,-11.153"]
 "lausser/check_logfiles" ["l"="9.152,-11.157"]
-"ConSol-Monitoring/omd" ["l"="9.026,-11.263"]
-"sni/thruk" ["l"="9.053,-11.222"]
 "Griesbacher/histou" ["l"="9.037,-11.236"]
 "Griesbacher/nagflux" ["l"="9.005,-11.256"]
 "ConSol/sakuli" ["l"="9.001,-11.303"]
+"grafana/grafana-image-renderer" ["l"="9.777,-10.746", "c"=484]
 "drewkerrigan/nagios-http-json" ["l"="9.277,-11.19"]
 "phrawzty/check_http_json" ["l"="9.311,-11.185"]
 "Qwant/WebExtension" ["l"="9.09,-11.463"]
@@ -595,10 +620,14 @@ digraph G {
 "NagiosEnterprises/check_mssql_collection" ["l"="9.185,-11.11"]
 "NagiosEnterprises/automation" ["l"="9.168,-11.065"]
 "Icinga/icingaweb2-theme-company" ["l"="9.202,-11.236"]
+"Cacti/cacti" ["l"="6.34,-2.728", "c"=225]
 "monitoring-plugins/monitoring-plugin-perl" ["l"="9.08,-11.245"]
+"ansible/ansible-lockdown" ["l"="8.584,-12.404", "c"=600]
 "jjethwa/icinga2" ["l"="9.132,-11.29"]
 "Icinga/docker-icinga2" ["l"="9.088,-11.353"]
 "Icinga/icinga2-api-examples" ["l"="9.151,-11.3"]
+"zorkian/nagios-api" ["l"="2.923,-35.943", "c"=171]
+"pynag/pynag" ["l"="8.911,-11.228"]
 "lippserd/docker-compose-icinga" ["l"="9.066,-11.371"]
 "telekom-mms/ansible-collection-icinga-director" ["l"="9.244,-11.31"]
 "telekom-mms/ansible-collection-acme" ["l"="9.268,-11.342"]
@@ -624,15 +653,20 @@ digraph G {
 "Icinga/icingaweb2-module-generictts" ["l"="9.183,-11.281"]
 "monitoring-plugins/nagios-mib" ["l"="9.06,-11.267"]
 "morgajel/icingaweb2-module-boxydash" ["l"="9.178,-11.327"]
+"dev-sec/ansible-ssh-hardening" ["l"="8.479,-12.834", "c"=1228]
 "sni/grafana-pnp-datasource" ["l"="9.005,-11.197"]
 "m-lab/prometheus-nagios-exporter" ["l"="8.981,-11.271"]
 "madrisan/go-mattermost-notify" ["l"="9.097,-11.421"]
 "madrisan/open-scores" ["l"="9.104,-11.404"]
 "telekom-mms/docker-management-container" ["l"="9.298,-11.336"]
 "invliD/icingaweb2-module-statusmap" ["l"="9.185,-11.306"]
+"munin-monitoring/munin" ["l"="6.561,-2.476", "c"=225]
+"HariSekhon/Dockerfiles" ["l"="-2.961,17.014", "c"=455]
+"HariSekhon/Nagios-Plugins" ["l"="9.145,-11.192"]
 "timdaman/check_docker" ["l"="9.212,-11.201"]
 "glensc/monitoring-plugin-check_domain" ["l"="9.088,-11.265"]
 "HenriWahl/Nagstamon" ["l"="9.098,-11.222"]
+"HariSekhon/DevOps-Python-tools" ["l"="-3.038,16.994", "c"=455]
 "ConSol-Monitoring/snclient" ["l"="9.066,-11.167"]
 "centreon/centreon-nsclient-build" ["l"="9.07,-11.144"]
 "Linuxfabrik/lib" ["l"="9.162,-11.286"]
@@ -643,17 +677,13 @@ digraph G {
 "centreon/nagiosToCentreon" ["l"="9.018,-11.067"]
 "centreon/centreon-test-lib" ["l"="9.03,-11.082"]
 "opinkerfi/adagios" ["l"="8.88,-11.236"]
-"pynag/pynag" ["l"="8.911,-11.228"]
 "flackem/check_multi" ["l"="9.047,-11.169"]
 "Icinga/icingabeat" ["l"="9.251,-11.281"]
 "opinkerfi/okconfig" ["l"="8.891,-11.21"]
 "Icinga/icingaweb2-module-elasticsearch" ["l"="9.236,-11.283"]
 "Icinga/icinga2-diagnostics" ["l"="9.171,-11.307"]
 "Icinga/icinga-notifications-web" ["l"="9.294,-11.232"]
-"HariSekhon/Nagios-Plugins" ["l"="9.145,-11.192"]
-"HariSekhon/DevOps-Python-tools" ["l"="-3.038,16.994"]
-"fboender/ansible-cmdb" ["l"="8.646,-12.367"]
-"HariSekhon/Dockerfiles" ["l"="-2.961,17.014"]
+"fboender/ansible-cmdb" ["l"="8.646,-12.367", "c"=600]
 "lingej/pnp-metrics-api" ["l"="8.984,-11.186"]
 "statusengine/interface" ["l"="9.189,-10.998"]
 "statusengine/worker" ["l"="9.183,-11.021"]

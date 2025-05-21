@@ -1,4 +1,5 @@
 digraph G {
+"moderngpu/moderngpu" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
 "ARM-software/SCALE-Sim" -> "scalesim-project/scale-sim-v2"
 "ARM-software/SCALE-Sim" -> "stanford-mast/nn_dataflow"
 "ARM-software/SCALE-Sim" -> "NVlabs/timeloop"
@@ -33,6 +34,14 @@ digraph G {
 "uvahotspot/HotSpot" -> "bu-icsg/TAP-2.5D"
 "uvahotspot/HotSpot" -> "HewlettPackard/mcpat"
 "uvahotspot/HotSpot" -> "PrincetonUniversity/muchiSim"
+"RRZE-HPC/gpu-benches" -> "accel-sim/accel-sim-framework" ["e"=1]
+"ucb-bar/gemmini" -> "NVlabs/timeloop" ["e"=1]
+"ucb-bar/gemmini" -> "scalesim-project/scale-sim-v2" ["e"=1]
+"ucb-bar/gemmini" -> "BRTResearch/AIChip_Paper_List" ["e"=1]
+"ucb-bar/gemmini" -> "harvard-acc/gem5-aladdin" ["e"=1]
+"ucb-bar/gemmini" -> "ARM-software/SCALE-Sim" ["e"=1]
+"ucb-bar/gemmini" -> "HewlettPackard/cacti" ["e"=1]
+"cloudcores/CuAssembler" -> "NVlabs/NVBit" ["e"=1]
 "neurosim/MLP_NeuroSim_V3.0" -> "neurosim/DNN_NeuroSim_V2.1"
 "neurosim/MLP_NeuroSim_V3.0" -> "thu-nics/MNSIM-2.0"
 "neurosim/MLP_NeuroSim_V3.0" -> "SEAL-UCSB/NVSim"
@@ -87,6 +96,15 @@ digraph G {
 "CMU-SAFARI/ramulator-pim" -> "miglopst/PIM_NDP_papers"
 "CMU-SAFARI/ramulator-pim" -> "CMU-SAFARI/prim-benchmarks"
 "CMU-SAFARI/ramulator-pim" -> "VIA-Research/uPIMulator"
+"MPSLab-ASU/ccf" -> "MPSLab-ASU/DiRAC" ["e"=1]
+"MPSLab-ASU/ccf" -> "MPSLab-ASU/dMazeRunner" ["e"=1]
+"jneless/EyerissF" -> "stanford-mast/nn_dataflow" ["e"=1]
+"taoyilee/clacc" -> "stanford-mast/nn_dataflow" ["e"=1]
+"taoyilee/clacc" -> "BRTResearch/AIChip_Paper_List" ["e"=1]
+"NVIDIA/open-gpu-doc" -> "NVlabs/NVBit" ["e"=1]
+"NVIDIA/open-gpu-doc" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"spcl/dace" -> "NVlabs/timeloop" ["e"=1]
+"ONNC/onnc" -> "stanford-mast/nn_dataflow" ["e"=1]
 "maeri-project/MAERI_bsv_isca2018" -> "hyoukjun/MAESTRO"
 "maeri-project/MAERI_bsv_isca2018" -> "maeri-project/MAERI_bsv"
 "hyoukjun/MAESTRO" -> "maeri-project/MAERI_bsv_isca2018"
@@ -105,6 +123,8 @@ digraph G {
 "zhongruiwang/memristorCNN" -> "zhongruiwang/memristor_RL"
 "zhongruiwang/memristorCNN" -> "ianvermeulen/memristor_simulations"
 "zhongruiwang/memristorCNN" -> "ElimuMichael/Memristor"
+"sld-columbia/esp" -> "harvard-acc/gem5-aladdin" ["e"=1]
+"nvdla/sw" -> "ARM-software/SCALE-Sim" ["e"=1]
 "miglopst/PIM_NDP_papers" -> "Systems-ShiftLab/MultiPIM"
 "miglopst/PIM_NDP_papers" -> "CMU-SAFARI/IMPICA"
 "maestro-project/maestro" -> "NVlabs/timeloop"
@@ -122,9 +142,12 @@ digraph G {
 "maestro-project/maestro" -> "maestro-project/confuciux"
 "maestro-project/maestro" -> "KULeuven-MICAS/zigzag"
 "maestro-project/maestro" -> "stanford-mast/nn_dataflow"
+"hsharma35/dnnweaver2" -> "stanford-mast/nn_dataflow" ["e"=1]
 "GT-CHIPS/gem5_chips" -> "FCAS-LAB/Chiplet-Gem5-SharedMemory"
 "GT-CHIPS/gem5_chips" -> "PrincetonUniversity/muchiSim"
 "GT-CHIPS/gem5_chips" -> "FCAS-LAB/chiplet_simulators"
+"cornell-zhang/rosetta" -> "breagen/MachSuite" ["e"=1]
+"NVlabs/matchlib" -> "harvard-acc/ALADDIN" ["e"=1]
 "booksim/booksim2" -> "davidepatti/noxim" ["e"=1]
 "booksim/booksim2" -> "harvard-acc/gem5-aladdin"
 "booksim/booksim2" -> "booksim/booksim"
@@ -140,6 +163,7 @@ digraph G {
 "booksim/booksim2" -> "umd-memsys/DRAMSim2"
 "booksim/booksim2" -> "CMU-SAFARI/ramulator2"
 "booksim/booksim2" -> "spcl/rapidchiplet"
+"hsharma35/bitfusion" -> "stanford-mast/nn_dataflow" ["e"=1]
 "maeri-project/MAERI_bsv" -> "maeri-project/MAERI_bsv_isca2018"
 "maeri-project/MAERI_bsv" -> "hyoukjun/DesignCNNAccelerators"
 "maeri-project/MAERI_bsv" -> "georgia-tech-synergy-lab/maestro-stable"
@@ -149,6 +173,7 @@ digraph G {
 "DebashisGanguly/gpgpu-sim_UVMSmart" -> "CMU-SAFARI/Mosaic"
 "nvidia-compiler-sdk/nvvmir-samples" -> "nvidia-compiler-sdk/pynvvm"
 "nvidia-compiler-sdk/nvvmir-samples" -> "apc-llc/nvcc-llvm-ir"
+"envytools/envytools" -> "NVlabs/SASSI" ["e"=1]
 "CMU-SAFARI/Mosaic" -> "adwaitjog/mafia"
 "SEAL-UCSB/NVmain" -> "TheNetAdmin/LENS-VANS"
 "SEAL-UCSB/NVmain" -> "cyjseagull/gem5-nvmain-hybrid-simulator"
@@ -176,6 +201,9 @@ digraph G {
 "TeCSAR-UNCC/gem5-SALAM" -> "harvard-acc/smaug"
 "TeCSAR-UNCC/gem5-SALAM" -> "MPSLab-ASU/ccf" ["e"=1]
 "nvidia-compiler-sdk/hsnvvm" -> "nvidia-compiler-sdk/pynvvm"
+"VerticalResearchGroup/miaow" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"rajesh-s/computer-architecture-and-systems-resources" -> "HewlettPackard/cacti" ["e"=1]
+"rajesh-s/computer-architecture-and-systems-resources" -> "ChampSim/ChampSim" ["e"=1]
 "gem5/gem5" -> "ucb-bar/chipyard" ["e"=1]
 "gem5/gem5" -> "riscv-boom/riscv-boom" ["e"=1]
 "gem5/gem5" -> "powerjg/learning_gem5"
@@ -195,6 +223,7 @@ digraph G {
 "breagen/MachSuite" -> "cornell-zhang/rosetta" ["e"=1]
 "breagen/MachSuite" -> "harvard-acc/ALADDIN"
 "breagen/MachSuite" -> "lana555/dynamatic" ["e"=1]
+"NervanaSystems/maxas" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
 "HewlettPackard/mcpat" -> "harvard-acc/gem5-aladdin"
 "HewlettPackard/mcpat" -> "HewlettPackard/cacti"
 "HewlettPackard/mcpat" -> "umd-memsys/DRAMSim2"
@@ -284,6 +313,12 @@ digraph G {
 "BRTResearch/AIChip_Paper_List" -> "booksim/booksim2"
 "hpsresearchgroup/scarab" -> "agusnt/Berti-Artifact"
 "MPSLab-ASU/DiRAC" -> "MPSLab-ASU/dMazeRunner"
+"tukl-msd/DRAMSys" -> "tukl-msd/DRAMPower" ["e"=1]
+"tukl-msd/DRAMSys" -> "umd-memsys/DRAMsim3" ["e"=1]
+"tukl-msd/DRAMSys" -> "CMU-SAFARI/ramulator" ["e"=1]
+"tukl-msd/DRAMSys" -> "CMU-SAFARI/ramulator2" ["e"=1]
+"vortexgpgpu/vortex" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"vortexgpgpu/vortex" -> "accel-sim/accel-sim-framework" ["e"=1]
 "joksas/badcrossbar" -> "joksas/nonideality-aware-mnn-training"
 "HewlettPackard/cacti" -> "NVlabs/timeloop"
 "HewlettPackard/cacti" -> "HewlettPackard/mcpat"
@@ -319,6 +354,7 @@ digraph G {
 "georgia-tech-synergy-lab/SIGMA" -> "sfu-arch/SpGEMM"
 "georgia-tech-synergy-lab/SIGMA" -> "Accelergy-Project/accelergy"
 "georgia-tech-synergy-lab/SIGMA" -> "stonne-simulator/stonne"
+"jbush001/NyuziProcessor" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
 "accel-sim/accel-sim-framework" -> "NVlabs/NVBit"
 "accel-sim/accel-sim-framework" -> "gpgpu-sim/gpgpu-sim_distribution"
 "accel-sim/accel-sim-framework" -> "sarchlab/mgpusim"
@@ -334,6 +370,8 @@ digraph G {
 "accel-sim/accel-sim-framework" -> "DebashisGanguly/gpgpu-sim_UVMSmart"
 "accel-sim/accel-sim-framework" -> "booksim/booksim2"
 "accel-sim/accel-sim-framework" -> "accel-sim/gpgpu-sim_distribution"
+"astra-sim/astra-sim" -> "scalesim-project/scale-sim-v2" ["e"=1]
+"astra-sim/astra-sim" -> "accel-sim/accel-sim-framework" ["e"=1]
 "neurosim/DNN_NeuroSim_V2.1" -> "neurosim/DNN_NeuroSim_V1.4"
 "neurosim/DNN_NeuroSim_V2.1" -> "neurosim/MLP_NeuroSim_V3.0"
 "neurosim/DNN_NeuroSim_V2.1" -> "thu-nics/MNSIM-2.0"
@@ -341,6 +379,7 @@ digraph G {
 "neurosim/DNN_NeuroSim_V2.1" -> "neurosim/DNN_NeuroSim_V1.3"
 "neurosim/DNN_NeuroSim_V2.1" -> "neurosim/DNN_NeuroSim_V2.0"
 "neurosim/DNN_NeuroSim_V2.1" -> "neurosim/DNN_NeuroSim_V1.0"
+"apache/tvm-vta" -> "harvard-acc/gem5-aladdin" ["e"=1]
 "maestro-project/gamma" -> "Accelergy-Project/micro22-sparseloop-artifact"
 "maestro-project/gamma" -> "maestro-project/confuciux"
 "maestro-project/gamma" -> "ucb-bar/cosa"
@@ -348,6 +387,8 @@ digraph G {
 "harvard-acc/LLVM-Tracer" -> "harvard-acc/ALADDIN"
 "harvard-acc/LLVM-Tracer" -> "breagen/MachSuite"
 "Accelergy-Project/accelergy-timeloop-infrastructure" -> "Accelergy-Project/timeloop-accelergy-exercises"
+"shinpei0208/gdev" -> "NVlabs/SASSI" ["e"=1]
+"shinpei0208/gdev" -> "NVlabs/NVBit" ["e"=1]
 "ZigZag-Project/zigzag-v1" -> "MPSLab-ASU/dMazeRunner"
 "harvard-acc/smaug" -> "harvard-acc/gem5-aladdin"
 "harvard-acc/smaug" -> "harvard-acc/ALADDIN"
@@ -357,6 +398,8 @@ digraph G {
 "harvard-acc/smaug" -> "maestro-project/maestro"
 "harvard-acc/smaug" -> "Accelergy-Project/timeloop-accelergy-exercises"
 "harvard-acc/smaug" -> "TeCSAR-UNCC/gem5-SALAM"
+"IBM/AccDNN" -> "ARM-software/SCALE-Sim" ["e"=1]
+"IBM/AccDNN" -> "stanford-mast/nn_dataflow" ["e"=1]
 "NVlabs/NVBit" -> "accel-sim/accel-sim-framework"
 "NVlabs/NVBit" -> "NVlabs/SASSI"
 "NVlabs/NVBit" -> "DebashisGanguly/gpgpu-sim_UVMSmart"
@@ -371,6 +414,7 @@ digraph G {
 "NVlabs/NVBit" -> "accel-sim/gpu-app-collection"
 "NVlabs/NVBit" -> "NVlabs/nvbitfi"
 "NVlabs/NVBit" -> "sderek/CUDAAdvisor"
+"UCLA-VAST/AutoSA" -> "NVlabs/timeloop" ["e"=1]
 "Accelergy-Project/timeloop-accelergy-exercises" -> "NVlabs/timeloop"
 "Accelergy-Project/timeloop-accelergy-exercises" -> "Accelergy-Project/accelergy-timeloop-infrastructure"
 "Accelergy-Project/timeloop-accelergy-exercises" -> "Accelergy-Project/timeloop-accelergy-tutorial"
@@ -378,9 +422,12 @@ digraph G {
 "Accelergy-Project/timeloop-accelergy-exercises" -> "maestro-project/gamma"
 "accel-sim/gpu-app-collection" -> "accel-sim/gpgpu-sim_distribution"
 "accel-sim/gpgpu-sim_distribution" -> "accel-sim/gpu-app-collection"
+"SingularityKChen/dl_accelerator" -> "PSAL-POSTECH/ONNXim" ["e"=1]
 "OSU-STARLAB/UVM_benchmark" -> "tallendev/uvm-eval"
 "TheNetAdmin/LENS-VANS" -> "TheNetAdmin/VANS"
+"CMU-SAFARI/rowhammer" -> "CMU-SAFARI/ramulator" ["e"=1]
 "car3s/IPCP_ISCA2020" -> "zeal4u/PMP"
+"NVSL/OptaneStudy" -> "TheNetAdmin/LENS-VANS" ["e"=1]
 "gem5/gem5-resources" -> "gem5bootcamp/gem5-bootcamp-env"
 "adwaitjog/mafia" -> "CMU-SAFARI/Mosaic"
 "neurosim/DNN_NeuroSim_V1.1" -> "neurosim/DNN_NeuroSim_V1.0"
@@ -389,6 +436,10 @@ digraph G {
 "adam-smnk/Open-CIM-Compiler" -> "Zhaoshixin-sky/CIM-MLC"
 "adam-smnk/Open-CIM-Compiler" -> "tud-ccc/Cinnamon"
 "Accelergy-Project/timeloop-accelergy-tutorial" -> "Accelergy-Project/pytorch2timeloop-converter"
+"NVIDIA-developer-blog/code-samples" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"kaitoukito/Computer-Science-Textbooks" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"kaitoukito/Computer-Science-Textbooks" -> "accel-sim/accel-sim-framework" ["e"=1]
+"rose-compiler/rose" -> "gtcasl/gpuocelot" ["e"=1]
 "scalesim-project/scale-sim-v2" -> "ARM-software/SCALE-Sim"
 "scalesim-project/scale-sim-v2" -> "stonne-simulator/stonne"
 "scalesim-project/scale-sim-v2" -> "NVlabs/timeloop"
@@ -404,6 +455,8 @@ digraph G {
 "scalesim-project/scale-sim-v2" -> "accel-sim/accel-sim-framework"
 "scalesim-project/scale-sim-v2" -> "umd-memsys/DRAMsim3"
 "scalesim-project/scale-sim-v2" -> "georgia-tech-synergy-lab/SIGMA"
+"sbeamer/gapbs" -> "s5z/zsim" ["e"=1]
+"areuther/ai-accelerators" -> "georgia-tech-synergy-lab/SIGMA" ["e"=1]
 "CMU-SAFARI/ramulator" -> "CMU-SAFARI/ramulator2"
 "CMU-SAFARI/ramulator" -> "umd-memsys/DRAMsim3"
 "CMU-SAFARI/ramulator" -> "CMU-SAFARI/ramulator-pim"
@@ -427,6 +480,10 @@ digraph G {
 "CMU-SAFARI/Pythia" -> "agusnt/Berti-Artifact"
 "CMU-SAFARI/Pythia" -> "Quangmire/ChampSim"
 "Systems-ShiftLab/MultiPIM" -> "CMU-SAFARI/ramulator-pim"
+"vetter/shoc" -> "gtcasl/gpuocelot" ["e"=1]
+"davidepatti/noxim" -> "booksim/booksim2" ["e"=1]
+"davidepatti/noxim" -> "harvard-acc/gem5-aladdin" ["e"=1]
+"davidepatti/noxim" -> "Accelergy-Project/accelergy" ["e"=1]
 "stonne-simulator/stonne" -> "scalesim-project/scale-sim-v2"
 "stonne-simulator/stonne" -> "stonne-simulator/sst-elements-with-stonne"
 "stonne-simulator/stonne" -> "stonne-simulator/omega"
@@ -442,6 +499,7 @@ digraph G {
 "ucb-bar/cosa" -> "kartik-hegde/mindmappings"
 "ucb-bar/cosa" -> "NVlabs/timeloop"
 "yonseicasl/NPUsim" -> "yonseicasl/Nebula"
+"ekondis/mixbench" -> "accel-sim/accel-sim-framework" ["e"=1]
 "gtcasl/gpuocelot" -> "NVlabs/SASSI"
 "gtcasl/gpuocelot" -> "NVlabs/NVBit"
 "gtcasl/gpuocelot" -> "vetter/shoc" ["e"=1]
@@ -467,6 +525,7 @@ digraph G {
 "CMU-SAFARI/DAMOV" -> "Systems-ShiftLab/MultiPIM"
 "CMU-SAFARI/DAMOV" -> "CMU-SAFARI/prim-benchmarks"
 "CMU-SAFARI/DAMOV" -> "CMU-SAFARI/ramulator-pim"
+"google/distributed_point_functions" -> "facebookresearch/GPU-DPF" ["e"=1]
 "Quangmire/ChampSim" -> "Quangmire/voyager"
 "avadhpatel/marss" -> "stephand/ptlsim"
 "joksas/nonideality-aware-mnn-training" -> "joksas/badcrossbar"
@@ -480,6 +539,7 @@ digraph G {
 "TheNetAdmin/VANS" -> "TheNetAdmin/LENS"
 "Accelergy-Project/pytorch2timeloop-converter" -> "Accelergy-Project/timeloop-accelergy-tutorial"
 "FCAS-LAB/Chiplet-GPGPU-Sim-MessagePassing" -> "FCAS-LAB/Chiplet_Heterogeneous_newVersion"
+"parsa-epfl/cloudsuite" -> "s5z/zsim" ["e"=1]
 "Quangmire/voyager" -> "Quangmire/ChampSim"
 "lshpku/hwd-prefetch-study" -> "miaochenlu/learn_prefetcher"
 "lshpku/hwd-prefetch-study" -> "agusnt/Berti-Artifact"
@@ -495,6 +555,9 @@ digraph G {
 "cyjseagull/gem5-nvmain-hybrid-simulator" -> "cyjseagull/SHMA"
 "cyjseagull/gem5-nvmain-hybrid-simulator" -> "SEAL-UCSB/NVmain"
 "mit-carbon/Graphite" -> "gthparch/macsim"
+"shinezyy/micro-arch-training" -> "gem5/gem5" ["e"=1]
+"shinezyy/micro-arch-training" -> "ChampSim/ChampSim" ["e"=1]
+"MIPT-ILab/mipt-mips" -> "CMU-SAFARI/ramulator" ["e"=1]
 "hjq310/NeuroPack" -> "joksas/badcrossbar"
 "sstsimulator/sst-elements" -> "sstsimulator/sst-core"
 "sstsimulator/sst-elements" -> "stonne-simulator/sst-elements-with-stonne"
@@ -504,12 +567,21 @@ digraph G {
 "gthparch/macsim" -> "macsimgt/macsim-public"
 "gthparch/macsim" -> "Multi2Sim/multi2sim"
 "gthparch/macsim" -> "harvard-acc/gem5-aladdin"
+"intel/fpga-npu" -> "PSAL-POSTECH/ONNXim" ["e"=1]
 "FCAS-LAB/Chiplet_Heterogeneous_newVersion" -> "FCAS-LAB/Chiplet-GPGPU-Sim-MessagePassing"
 "gem5bootcamp/gem5-bootcamp-env" -> "gem5/gem5-resources"
 "stonne-simulator/sst-elements-with-stonne" -> "stonne-simulator/omega"
 "stonne-simulator/omega" -> "stonne-simulator/sst-elements-with-stonne"
+"fengbintu/Neural-Networks-on-Silicon" -> "BRTResearch/AIChip_Paper_List" ["e"=1]
+"fengbintu/Neural-Networks-on-Silicon" -> "ARM-software/SCALE-Sim" ["e"=1]
+"fengbintu/Neural-Networks-on-Silicon" -> "NVlabs/timeloop" ["e"=1]
+"fengbintu/Neural-Networks-on-Silicon" -> "HewlettPackard/cacti" ["e"=1]
+"fengbintu/Neural-Networks-on-Silicon" -> "stanford-mast/nn_dataflow" ["e"=1]
+"aliemo/transfomers-silicon-research" -> "scalesim-project/scale-sim-v2" ["e"=1]
 "CMU-SAFARI/Hermes" -> "CMU-SAFARI/Load-Inspector"
 "CMU-SAFARI/Hermes" -> "CMU-SAFARI/Pythia"
+"THU-DSP-LAB/ventus-gpgpu" -> "accel-sim/accel-sim-framework" ["e"=1]
+"THU-DSP-LAB/ventus-gpgpu" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
 "KULeuven-MICAS/zigzag" -> "KULeuven-MICAS/stream"
 "KULeuven-MICAS/zigzag" -> "KULeuven-MICAS/DeFiNES"
 "KULeuven-MICAS/zigzag" -> "NVlabs/timeloop"
@@ -544,6 +616,7 @@ digraph G {
 "SAITPublic/PIMSimulator" -> "PSAL-POSTECH/ONNXim"
 "SAITPublic/PIMSimulator" -> "Yufeng98/CENT"
 "KULeuven-MICAS/DeFiNES" -> "KULeuven-MICAS/zigzag"
+"KnowingNothing/compiler-and-arch" -> "NVlabs/timeloop" ["e"=1]
 "cyjseagull/SHMA" -> "AXLEproject/axle-zsim-nvmain"
 "cyjseagull/SHMA" -> "cyjseagull/gem5-nvmain-hybrid-simulator"
 "cyjseagull/SHMA" -> "mileyan/network_project"
@@ -552,6 +625,7 @@ digraph G {
 "amuramatsu/dwf" -> "knowm/waveforms4j"
 "cmuparlay/PIM-tree" -> "leesou/PIM-DL-ASPLOS"
 "fgr1986/vlsi_memristor_compact_model" -> "fgr1986/rram_multilevel_driver"
+"baidu-research/DeepBench" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
 "CMU-SAFARI/ramulator2" -> "CMU-SAFARI/ramulator"
 "CMU-SAFARI/ramulator2" -> "umd-memsys/DRAMsim3"
 "CMU-SAFARI/ramulator2" -> "scale-snu/attacc_simulator"
@@ -568,6 +642,7 @@ digraph G {
 "CMU-SAFARI/ramulator2" -> "booksim/booksim2"
 "CMU-SAFARI/ramulator2" -> "stonne-simulator/stonne"
 "neurosim/DNN_NeuroSim_V1.4" -> "neurosim/DNN_NeuroSim_V2.1"
+"cli99/llm-analysis" -> "PrincetonUniversity/LLMCompass" ["e"=1]
 "sunxt99/PIMCOMP-NN" -> "wangxy-2000/pimsim-nn"
 "sunxt99/PIMCOMP-NN" -> "Zhaoshixin-sky/CIM-MLC"
 "miaochenlu/learn_prefetcher" -> "lshpku/hwd-prefetch-study"
@@ -617,6 +692,8 @@ digraph G {
 "knowm/memristor-models-4-all" -> "knowm/memristor-discovery"
 "knowm/memristor-models-4-all" -> "hjq310/NeuroPack"
 "knowm/memristor-models-4-all" -> "knowm/jspice"
+"microsoft/T-MAC" -> "PrincetonUniversity/LLMCompass" ["e"=1]
+"enfiskutensykkel/ssd-gpu-dma" -> "platformxlab/G10" ["e"=1]
 "VIA-Research/uPIMulator" -> "VIA-Research/LazyDP"
 "VIA-Research/uPIMulator" -> "VIA-Research/dpsgd_profiler"
 "VIA-Research/uPIMulator" -> "ranggihwang/Pregated_MoE"
@@ -652,6 +729,7 @@ digraph G {
 "ranggihwang/Pregated_MoE" -> "VIA-Research/dpsgd_profiler"
 "ranggihwang/Pregated_MoE" -> "VIA-Research/vTrain"
 "ranggihwang/Pregated_MoE" -> "facebookresearch/GPU-DPF"
+"microsoft/vidur" -> "casys-kaist/LLMServingSim" ["e"=1]
 "PrincetonUniversity/LLMCompass" -> "casys-kaist/NeuPIMs"
 "PrincetonUniversity/LLMCompass" -> "PrincetonUniversity/muchiSim"
 "PrincetonUniversity/LLMCompass" -> "mutinifni/splitwise-sim" ["e"=1]
@@ -660,6 +738,9 @@ digraph G {
 "PrincetonUniversity/LLMCompass" -> "abhibambhaniya/GenZ-LLM-Analyzer"
 "PrincetonUniversity/LLMCompass" -> "PSAL-POSTECH/ONNXim"
 "PrincetonUniversity/LLMCompass" -> "clevercool/ANT-Quantization" ["e"=1]
+"mutinifni/splitwise-sim" -> "PrincetonUniversity/LLMCompass" ["e"=1]
+"yuhc/gpu-rodinia" -> "accel-sim/accel-sim-framework" ["e"=1]
+"yuhc/gpu-rodinia" -> "breagen/MachSuite" ["e"=1]
 "harvard-acc/gem5-aladdin" -> "harvard-acc/ALADDIN"
 "harvard-acc/gem5-aladdin" -> "harvard-acc/smaug"
 "harvard-acc/gem5-aladdin" -> "TeCSAR-UNCC/gem5-SALAM"
@@ -686,6 +767,7 @@ digraph G {
 "casys-kaist/NeuPIMs" -> "casys-kaist/mNPUsim"
 "leesou/PIM-DL-ASPLOS" -> "cmuparlay/PIM-tree"
 "leesou/PIM-DL-ASPLOS" -> "AIS-SNU/PID-Comm" ["e"=1]
+"EfficientMoE/MoE-Infinity" -> "ranggihwang/Pregated_MoE" ["e"=1]
 "tud-ccc/Cinnamon" -> "adam-smnk/Open-CIM-Compiler"
 "spcl/rapidchiplet" -> "FCAS-LAB/chiplet_simulators"
 "spcl/rapidchiplet" -> "PrincetonUniversity/muchiSim"
@@ -697,13 +779,20 @@ digraph G {
 "xuanyoya/Interstellar-CNN-scheduler" -> "MPSLab-ASU/DiRAC"
 "xuanyoya/Interstellar-CNN-scheduler" -> "maeri-project/MAERI_bsv"
 "knowm/memristor-discovery" -> "knowm/waveforms4j"
+"ferry-hhh/CXL-DMSim" -> "PSAL-POSTECH/M2NDP-public" ["e"=1]
 "CGCL-codes/HSCC" -> "stanford-mast/zsim"
 "CGCL-codes/HSCC" -> "cyjseagull/SHMA"
+"shioyadan/Konata" -> "ChampSim/ChampSim" ["e"=1]
+"shioyadan/Konata" -> "gem5/gem5" ["e"=1]
+"shioyadan/Konata" -> "powerjg/learning_gem5" ["e"=1]
 "VIA-Research/vTrain" -> "VIA-Research/LazyDP"
 "VIA-Research/vTrain" -> "VIA-Research/dpsgd_profiler"
 "VIA-Research/vTrain" -> "ranggihwang/Pregated_MoE"
 "VIA-Research/vTrain" -> "facebookresearch/GPU-DPF"
 "VIA-Research/vTrain" -> "VIA-Research/uPIMulator"
+"UCSBarchlab/OpenTPU" -> "ARM-software/SCALE-Sim" ["e"=1]
+"UCSBarchlab/OpenTPU" -> "stanford-mast/nn_dataflow" ["e"=1]
+"UCSBarchlab/OpenTPU" -> "harvard-acc/gem5-aladdin" ["e"=1]
 "casys-kaist/LLMServingSim" -> "casys-kaist/NeuPIMs"
 "casys-kaist/LLMServingSim" -> "PSAL-POSTECH/ONNXim"
 "casys-kaist/LLMServingSim" -> "scale-snu/attacc_simulator"
@@ -729,6 +818,11 @@ digraph G {
 "vineodd/PIMSim" -> "umd-memsys/DRAMsim3"
 "vineodd/PIMSim" -> "powerjg/learning_gem5"
 "vineodd/PIMSim" -> "HewlettPackard/mcpat"
+"MoE-Inf/awesome-moe-inference" -> "ranggihwang/Pregated_MoE" ["e"=1]
+"basicmi/AI-Chip" -> "BRTResearch/AIChip_Paper_List" ["e"=1]
+"basicmi/AI-Chip" -> "ARM-software/SCALE-Sim" ["e"=1]
+"basicmi/AI-Chip" -> "stanford-mast/nn_dataflow" ["e"=1]
+"basicmi/AI-Chip" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
 "ChampSim/ChampSim" -> "CMU-SAFARI/Pythia"
 "ChampSim/ChampSim" -> "harvard-acc/gem5-aladdin"
 "ChampSim/ChampSim" -> "HewlettPackard/cacti"
@@ -752,6 +846,8 @@ digraph G {
 "Yufeng98/CENT" -> "scale-snu/attacc_simulator"
 "Yufeng98/CENT" -> "CMU-SAFARI/Sectored-DRAM"
 "Yufeng98/CENT" -> "arkhadem/aim_simulator"
+"Jokeren/Awesome-GPU" -> "accel-sim/accel-sim-framework" ["e"=1]
+"Jokeren/Awesome-GPU" -> "NVlabs/NVBit" ["e"=1]
 "DawnCarol/DawnCarol" -> "lshpku/hwd-prefetch-study"
 "zhongruiwang/memristor_RL" -> "zhongruiwang/memristorCNN"
 "tukl-msd/gem5.TnT" -> "gem5/gem5-resources"
@@ -761,6 +857,8 @@ digraph G {
 "Aayush-Ankit/puma-simulator" -> "adam-smnk/Open-CIM-Compiler"
 "Aayush-Ankit/puma-simulator" -> "Zhaoshixin-sky/CIM-MLC"
 "ElimuMichael/Memristor" -> "SaharCarmel/Memristor-NN"
+"moderngpu/moderngpu" ["l"="36.696,0.93", "c"=112]
+"gpgpu-sim/gpgpu-sim_distribution" ["l"="31.034,-2.965"]
 "ARM-software/SCALE-Sim" ["l"="31.037,-2.894"]
 "scalesim-project/scale-sim-v2" ["l"="31.027,-2.921"]
 "stanford-mast/nn_dataflow" ["l"="31.021,-2.853"]
@@ -770,10 +868,10 @@ digraph G {
 "Accelergy-Project/accelergy" ["l"="31.009,-2.87"]
 "harvard-acc/ALADDIN" ["l"="31.04,-2.87"]
 "stonne-simulator/stonne" ["l"="30.997,-2.903"]
-"jneless/EyerissF" ["l"="31.91,-2.834"]
+"jneless/EyerissF" ["l"="31.91,-2.834", "c"=212]
 "harvard-acc/gem5-aladdin" ["l"="31.041,-2.91"]
 "BRTResearch/AIChip_Paper_List" ["l"="31.013,-2.907"]
-"fengbintu/Neural-Networks-on-Silicon" ["l"="31.792,-2.807"]
+"fengbintu/Neural-Networks-on-Silicon" ["l"="31.792,-2.807", "c"=212]
 "booksim/booksim2" ["l"="31.041,-2.936"]
 "harvard-acc/smaug" ["l"="31.004,-2.883"]
 "CMU-SAFARI/ramulator" ["l"="31.08,-2.936"]
@@ -792,6 +890,11 @@ digraph G {
 "uvahotspot/HotSpot" ["l"="31,-2.927"]
 "bu-icsg/TAP-2.5D" ["l"="30.952,-2.926"]
 "PrincetonUniversity/muchiSim" ["l"="30.994,-2.984"]
+"RRZE-HPC/gpu-benches" ["l"="36.839,0.972", "c"=112]
+"accel-sim/accel-sim-framework" ["l"="31.017,-2.941"]
+"ucb-bar/gemmini" ["l"="31.825,-3.938", "c"=188]
+"cloudcores/CuAssembler" ["l"="36.931,0.931", "c"=112]
+"NVlabs/NVBit" ["l"="30.968,-2.981"]
 "neurosim/MLP_NeuroSim_V3.0" ["l"="31.191,-2.773"]
 "neurosim/DNN_NeuroSim_V2.1" ["l"="31.207,-2.776"]
 "thu-nics/MNSIM-2.0" ["l"="31.2,-2.794"]
@@ -808,11 +911,9 @@ digraph G {
 "Accelergy-Project/timeloop-accelergy-exercises" ["l"="31.006,-2.842"]
 "ucb-bar/cosa" ["l"="30.993,-2.839"]
 "KULeuven-MICAS/zigzag" ["l"="30.959,-2.856"]
-"ucb-bar/gemmini" ["l"="31.825,-3.938"]
-"accel-sim/accel-sim-framework" ["l"="31.017,-2.941"]
 "Accelergy-Project/accelergy-timeloop-infrastructure" ["l"="30.985,-2.851"]
 "CMU-SAFARI/ramulator2" ["l"="31.06,-2.954"]
-"tukl-msd/DRAMSys" ["l"="31.464,-3.644"]
+"tukl-msd/DRAMSys" ["l"="31.464,-3.644", "c"=188]
 "SAITPublic/PIMSimulator" ["l"="31.095,-2.984"]
 "tukl-msd/DRAMPower" ["l"="31.088,-2.9"]
 "PSAL-POSTECH/ONNXim" ["l"="31.068,-2.992"]
@@ -822,27 +923,39 @@ digraph G {
 "miglopst/PIM_NDP_papers" ["l"="31.138,-2.986"]
 "CMU-SAFARI/prim-benchmarks" ["l"="31.142,-3.008"]
 "VIA-Research/uPIMulator" ["l"="31.114,-3.023"]
+"MPSLab-ASU/ccf" ["l"="32.714,-3.403", "c"=180]
+"taoyilee/clacc" ["l"="31.899,-2.803", "c"=212]
+"NVIDIA/open-gpu-doc" ["l"="7.577,-11.275", "c"=515]
+"spcl/dace" ["l"="37.354,1.1", "c"=112]
+"ONNC/onnc" ["l"="31.903,-2.926", "c"=212]
 "maeri-project/MAERI_bsv_isca2018" ["l"="30.989,-2.77"]
 "hyoukjun/MAESTRO" ["l"="30.979,-2.746"]
 "maeri-project/MAERI_bsv" ["l"="31.007,-2.807"]
 "SEAL-UCSB/NVmain" ["l"="31.211,-2.853"]
 "neurosim/DNN_NeuroSim_V1.0" ["l"="31.203,-2.814"]
 "CRAFT-THU/XB-Sim" ["l"="31.172,-2.763"]
-"stevenygd/WAGE.pytorch" ["l"="52.591,33.551"]
+"stevenygd/WAGE.pytorch" ["l"="52.591,33.551", "c"=271]
 "zhongruiwang/memristorCNN" ["l"="31.214,-2.669"]
 "zhongruiwang/memristor_RL" ["l"="31.214,-2.65"]
 "ianvermeulen/memristor_simulations" ["l"="31.23,-2.648"]
 "ElimuMichael/Memristor" ["l"="31.193,-2.692"]
+"sld-columbia/esp" ["l"="31.654,-3.772", "c"=188]
+"nvdla/sw" ["l"="31.906,-2.901", "c"=212]
 "maestro-project/gamma" ["l"="30.973,-2.825"]
 "pku-liang/TENET" ["l"="30.938,-2.832"]
-"pku-liang/TileFlow" ["l"="37.029,1.134"]
+"pku-liang/TileFlow" ["l"="37.029,1.134", "c"=112]
 "maestro-project/confuciux" ["l"="30.959,-2.835"]
+"hsharma35/dnnweaver2" ["l"="31.753,-2.793", "c"=212]
 "GT-CHIPS/gem5_chips" ["l"="30.986,-2.961"]
 "FCAS-LAB/Chiplet-Gem5-SharedMemory" ["l"="30.958,-3.005"]
 "FCAS-LAB/chiplet_simulators" ["l"="30.975,-3.002"]
-"davidepatti/noxim" ["l"="31.479,-3.688"]
+"cornell-zhang/rosetta" ["l"="31.645,-2.612", "c"=212]
+"breagen/MachSuite" ["l"="31.04,-2.829"]
+"NVlabs/matchlib" ["l"="31.482,-3.654", "c"=188]
+"davidepatti/noxim" ["l"="31.479,-3.688", "c"=188]
 "booksim/booksim" ["l"="31.002,-2.955"]
 "spcl/rapidchiplet" ["l"="31.002,-3.002"]
+"hsharma35/bitfusion" ["l"="31.746,-2.887", "c"=212]
 "hyoukjun/DesignCNNAccelerators" ["l"="31.007,-2.761"]
 "georgia-tech-synergy-lab/maestro-stable" ["l"="31.003,-2.778"]
 "DebashisGanguly/gpgpu-sim_UVMSmart" ["l"="30.986,-3.015"]
@@ -853,6 +966,8 @@ digraph G {
 "nvidia-compiler-sdk/nvvmir-samples" ["l"="30.824,-3.074"]
 "nvidia-compiler-sdk/pynvvm" ["l"="30.797,-3.091"]
 "apc-llc/nvcc-llvm-ir" ["l"="30.851,-3.056"]
+"envytools/envytools" ["l"="7.498,-11.277", "c"=515]
+"NVlabs/SASSI" ["l"="30.934,-3.006"]
 "adwaitjog/mafia" ["l"="30.946,-3.095"]
 "TheNetAdmin/LENS-VANS" ["l"="31.243,-2.856"]
 "cyjseagull/gem5-nvmain-hybrid-simulator" ["l"="31.218,-2.88"]
@@ -865,21 +980,20 @@ digraph G {
 "illinois-impact/puma-compiler" ["l"="31.257,-2.767"]
 "nvidia-compiler-sdk/hsnvvm" ["l"="30.782,-3.103"]
 "TeCSAR-UNCC/gem5-SALAM" ["l"="30.993,-2.889"]
-"MPSLab-ASU/ccf" ["l"="32.714,-3.403"]
-"ucb-bar/chipyard" ["l"="31.795,-3.901"]
-"riscv-boom/riscv-boom" ["l"="31.794,-3.871"]
-"powerjg/learning_gem5" ["l"="31.102,-2.931"]
-"gpgpu-sim/gpgpu-sim_distribution" ["l"="31.034,-2.965"]
-"riscv-software-src/riscv-isa-sim" ["l"="31.742,-3.857"]
-"chipsalliance/chisel" ["l"="31.824,-3.917"]
+"VerticalResearchGroup/miaow" ["l"="31.907,-3.836", "c"=188]
+"rajesh-s/computer-architecture-and-systems-resources" ["l"="32.74,-4.634", "c"=972]
 "ChampSim/ChampSim" ["l"="31.123,-2.938"]
-"chipsalliance/rocket-chip" ["l"="31.814,-3.883"]
-"openhwgroup/cva6" ["l"="31.828,-3.832"]
-"verilator/verilator" ["l"="32.845,-3.656"]
-"breagen/MachSuite" ["l"="31.04,-2.829"]
-"KastnerRG/spector" ["l"="63.971,-2.184"]
-"cornell-zhang/rosetta" ["l"="31.645,-2.612"]
-"lana555/dynamatic" ["l"="31.602,-2.503"]
+"ucb-bar/chipyard" ["l"="31.795,-3.901", "c"=188]
+"riscv-boom/riscv-boom" ["l"="31.794,-3.871", "c"=188]
+"powerjg/learning_gem5" ["l"="31.102,-2.931"]
+"riscv-software-src/riscv-isa-sim" ["l"="31.742,-3.857", "c"=188]
+"chipsalliance/chisel" ["l"="31.824,-3.917", "c"=188]
+"chipsalliance/rocket-chip" ["l"="31.814,-3.883", "c"=188]
+"openhwgroup/cva6" ["l"="31.828,-3.832", "c"=188]
+"verilator/verilator" ["l"="32.845,-3.656", "c"=180]
+"KastnerRG/spector" ["l"="63.971,-2.184", "c"=477]
+"lana555/dynamatic" ["l"="31.602,-2.503", "c"=212]
+"NervanaSystems/maxas" ["l"="36.924,0.876", "c"=112]
 "arm-university/arm-gem5-rsk" ["l"="31.074,-2.842"]
 "akdimitri/RRAM_COMPILER" ["l"="31.248,-2.691"]
 "knowm/memristor-models-4-all" ["l"="31.233,-2.675"]
@@ -896,67 +1010,75 @@ digraph G {
 "IBM/analog-nas" ["l"="31.271,-2.737"]
 "CMU-SAFARI/VAMPIRE" ["l"="31.111,-2.855"]
 "tukl-msd/DRAMSpec" ["l"="31.116,-2.872"]
-"vortexgpgpu/vortex" ["l"="31.89,-3.847"]
-"jbush001/NyuziProcessor" ["l"="31.931,-3.842"]
-"NervanaSystems/maxas" ["l"="36.924,0.876"]
-"THU-DSP-LAB/ventus-gpgpu" ["l"="31.886,-3.914"]
-"cloudcores/CuAssembler" ["l"="36.931,0.931"]
-"VerticalResearchGroup/miaow" ["l"="31.907,-3.836"]
-"NVlabs/NVBit" ["l"="30.968,-2.981"]
-"basicmi/AI-Chip" ["l"="37.291,0.775"]
-"taoyilee/clacc" ["l"="31.899,-2.803"]
-"SingularityKChen/dl_accelerator" ["l"="31.89,-2.817"]
+"vortexgpgpu/vortex" ["l"="31.89,-3.847", "c"=188]
+"jbush001/NyuziProcessor" ["l"="31.931,-3.842", "c"=188]
+"THU-DSP-LAB/ventus-gpgpu" ["l"="31.886,-3.914", "c"=188]
+"basicmi/AI-Chip" ["l"="37.291,0.775", "c"=112]
+"SingularityKChen/dl_accelerator" ["l"="31.89,-2.817", "c"=212]
 "hpsresearchgroup/scarab" ["l"="31.286,-3.002"]
 "agusnt/Berti-Artifact" ["l"="31.248,-2.985"]
 "joksas/nonideality-aware-mnn-training" ["l"="31.231,-2.696"]
 "harvard-acc/LLVM-Tracer" ["l"="31.057,-2.818"]
-"NVlabs/matchlib" ["l"="31.482,-3.654"]
 "sfu-arch/SpGEMM" ["l"="30.934,-2.88"]
 "sarchlab/mgpusim" ["l"="31.05,-2.924"]
 "accel-sim/gpu-app-collection" ["l"="30.963,-2.955"]
 "gthparch/macsim" ["l"="30.983,-2.94"]
 "accel-sim/gpgpu-sim_distribution" ["l"="30.952,-2.964"]
+"astra-sim/astra-sim" ["l"="1.941,14.578", "c"=572]
+"apache/tvm-vta" ["l"="31.787,-2.772", "c"=212]
 "Accelergy-Project/micro22-sparseloop-artifact" ["l"="30.955,-2.805"]
 "ysshao/WIICA" ["l"="31.062,-2.791"]
+"shinpei0208/gdev" ["l"="7.417,-11.263", "c"=515]
 "ZigZag-Project/zigzag-v1" ["l"="30.932,-2.808"]
 "xuanyoya/Interstellar-CNN-scheduler" ["l"="30.992,-2.819"]
-"NVlabs/SASSI" ["l"="30.934,-3.006"]
-"utcs-scea/altis" ["l"="64.018,-2.075"]
+"IBM/AccDNN" ["l"="31.804,-2.773", "c"=212]
+"utcs-scea/altis" ["l"="64.018,-2.075", "c"=477]
 "gtcasl/gpuocelot" ["l"="30.907,-3.02"]
-"daadaada/turingas" ["l"="36.95,0.894"]
+"daadaada/turingas" ["l"="36.95,0.894", "c"=112]
 "NVlabs/nvbitfi" ["l"="30.908,-2.986"]
 "sderek/CUDAAdvisor" ["l"="30.929,-2.984"]
+"UCLA-VAST/AutoSA" ["l"="31.686,-2.589", "c"=212]
 "Accelergy-Project/timeloop-accelergy-tutorial" ["l"="31.02,-2.791"]
+"CMU-SAFARI/rowhammer" ["l"="-17.212,-41.868", "c"=1132]
 "car3s/IPCP_ISCA2020" ["l"="31.245,-3.05"]
 "zeal4u/PMP" ["l"="31.228,-3.026"]
+"NVSL/OptaneStudy" ["l"="1.592,13.33", "c"=376]
 "gem5/gem5-resources" ["l"="31.074,-2.763"]
 "gem5bootcamp/gem5-bootcamp-env" ["l"="31.081,-2.74"]
 "adam-smnk/Open-CIM-Compiler" ["l"="31.275,-2.778"]
 "tud-ccc/Cinnamon" ["l"="31.299,-2.773"]
 "Accelergy-Project/pytorch2timeloop-converter" ["l"="31.027,-2.77"]
-"GATECH-EIC/ViTCoD" ["l"="32.08,-2.769"]
+"NVIDIA-developer-blog/code-samples" ["l"="36.723,0.91", "c"=112]
+"kaitoukito/Computer-Science-Textbooks" ["l"="31.92,-3.931", "c"=188]
+"rose-compiler/rose" ["l"="-22.073,-18.657", "c"=763]
+"GATECH-EIC/ViTCoD" ["l"="32.08,-2.769", "c"=212]
 "PrincetonUniversity/LLMCompass" ["l"="31.044,-2.994"]
-"diwu1990/uSystolic-Sim" ["l"="32.185,-2.793"]
+"diwu1990/uSystolic-Sim" ["l"="32.185,-2.793", "c"=212]
+"sbeamer/gapbs" ["l"="51.468,15.303", "c"=1231]
+"areuther/ai-accelerators" ["l"="-18.599,-43.236", "c"=55]
 "CMU-SAFARI/Pythia" ["l"="31.203,-2.986"]
 "CMU-SAFARI/Hermes" ["l"="31.227,-3.003"]
 "CMU-SAFARI/Pythia-HDL" ["l"="31.228,-2.985"]
 "CMU-SAFARI/Load-Inspector" ["l"="31.213,-3.013"]
 "Quangmire/ChampSim" ["l"="31.248,-3.016"]
+"vetter/shoc" ["l"="64.082,-2.092", "c"=477]
 "stonne-simulator/sst-elements-with-stonne" ["l"="30.934,-2.903"]
 "stonne-simulator/omega" ["l"="30.952,-2.899"]
 "kartik-hegde/mindmappings" ["l"="30.979,-2.801"]
 "yonseicasl/NPUsim" ["l"="31.06,-3.059"]
-"vetter/shoc" ["l"="64.082,-2.092"]
-"vtsynergy/CU2CL" ["l"="64.409,-1.977"]
-"PAA-NCIC/PPoPP2017_artifact" ["l"="36.968,0.879"]
+"ekondis/mixbench" ["l"="64.154,-1.996", "c"=477]
+"vtsynergy/CU2CL" ["l"="64.409,-1.977", "c"=477]
+"PAA-NCIC/PPoPP2017_artifact" ["l"="36.968,0.879", "c"=112]
 "upmem/dpu_demo" ["l"="31.163,-3.03"]
 "CMU-SAFARI/SparseP" ["l"="31.167,-3.057"]
 "leesou/PIM-DL-ASPLOS" ["l"="31.182,-3.042"]
 "CMU-SAFARI/SimplePIM" ["l"="31.176,-3.018"]
-"AIS-SNU/PID-Comm" ["l"="52.948,33.473"]
+"AIS-SNU/PID-Comm" ["l"="52.948,33.473", "c"=271]
 "upmem/upmem_llm_framework" ["l"="31.129,-3.035"]
 "pku-liang/HASCO" ["l"="30.897,-2.825"]
 "pku-liang/TensorLib" ["l"="30.901,-2.802"]
+"google/distributed_point_functions" ["l"="51.675,1.342", "c"=378]
+"facebookresearch/GPU-DPF" ["l"="31.138,-3.07"]
 "Quangmire/voyager" ["l"="31.267,-3.03"]
 "avadhpatel/marss" ["l"="31.142,-2.876"]
 "stephand/ptlsim" ["l"="31.17,-2.869"]
@@ -964,19 +1086,23 @@ digraph G {
 "FCAS-LAB/Chiplet_Heterogeneous_newVersion" ["l"="30.948,-3.028"]
 "TheNetAdmin/LENS" ["l"="31.285,-2.861"]
 "FCAS-LAB/Chiplet-GPGPU-Sim-MessagePassing" ["l"="30.934,-3.045"]
+"parsa-epfl/cloudsuite" ["l"="63.337,-12.538", "c"=1127]
 "lshpku/hwd-prefetch-study" ["l"="31.223,-2.958"]
 "miaochenlu/learn_prefetcher" ["l"="31.245,-2.957"]
 "hjq310/NeuroPack" ["l"="31.23,-2.71"]
 "AXLEproject/axle-zsim-nvmain" ["l"="31.231,-2.896"]
 "mit-carbon/Graphite" ["l"="30.918,-2.951"]
+"shinezyy/micro-arch-training" ["l"="31.865,-4.01", "c"=188]
+"MIPT-ILab/mipt-mips" ["l"="31.529,-3.591", "c"=188]
 "sstsimulator/sst-elements" ["l"="30.885,-2.907"]
 "sstsimulator/sst-core" ["l"="30.902,-2.924"]
 "macsimgt/macsim-public" ["l"="30.946,-2.941"]
 "Multi2Sim/multi2sim" ["l"="31.009,-2.971"]
+"intel/fpga-npu" ["l"="31.992,-2.799", "c"=212]
+"aliemo/transfomers-silicon-research" ["l"="32.038,-2.756", "c"=212]
 "KULeuven-MICAS/stream" ["l"="30.922,-2.846"]
 "KULeuven-MICAS/DeFiNES" ["l"="30.931,-2.859"]
 "lzyerste/gem5_doc" ["l"="31.143,-2.911"]
-"facebookresearch/GPU-DPF" ["l"="31.138,-3.07"]
 "VIA-Research/LazyDP" ["l"="31.114,-3.064"]
 "VIA-Research/dpsgd_profiler" ["l"="31.119,-3.056"]
 "ranggihwang/Pregated_MoE" ["l"="31.123,-3.074"]
@@ -986,13 +1112,16 @@ digraph G {
 "7bvcxz/PIMsim" ["l"="31.122,-3.001"]
 "SAITPublic/PIMLibrary" ["l"="31.112,-3.006"]
 "Yufeng98/CENT" ["l"="31.094,-3.042"]
+"KnowingNothing/compiler-and-arch" ["l"="36.989,1.015", "c"=112]
 "mileyan/network_project" ["l"="31.224,-2.92"]
 "CGCL-codes/HSCC" ["l"="31.244,-2.911"]
 "amuramatsu/dwf" ["l"="31.278,-2.565"]
 "knowm/waveforms4j" ["l"="31.267,-2.59"]
 "cmuparlay/PIM-tree" ["l"="31.197,-3.06"]
 "fgr1986/rram_multilevel_driver" ["l"="31.184,-2.651"]
+"baidu-research/DeepBench" ["l"="37.226,0.818", "c"=112]
 "SET-Scheduling-Project/GEMINI-HPCA2024" ["l"="31.05,-3.026"]
+"cli99/llm-analysis" ["l"="39.06,-0.448", "c"=39]
 "sunxt99/PIMCOMP-NN" ["l"="31.286,-2.805"]
 "SET-Scheduling-Project/SET-ISCA2023" ["l"="31.041,-3.057"]
 "casys-kaist/mNPUsim" ["l"="31.065,-3.022"]
@@ -1002,25 +1131,30 @@ digraph G {
 "mladenovvaleri/Advanced-Memristor-Modeling-in-LTSpise" ["l"="31.248,-2.647"]
 "knowm/memristor-discovery" ["l"="31.252,-2.623"]
 "knowm/jspice" ["l"="31.269,-2.655"]
-"hsharma35/bitfusion" ["l"="31.746,-2.887"]
-"hsharma35/dnnweaver2" ["l"="31.753,-2.793"]
-"GATECH-EIC/AutoDNNchip" ["l"="31.713,-2.853"]
-"mutinifni/splitwise-sim" ["l"="39.137,-0.413"]
-"abhibambhaniya/GenZ-LLM-Analyzer" ["l"="31.019,-3.062"]
-"clevercool/ANT-Quantization" ["l"="31.727,-2.947"]
-"cdsc-github/parade-ara-simulator" ["l"="32.034,-4.088"]
-"cwfletcher/buffets" ["l"="30.97,-2.913"]
+"microsoft/T-MAC" ["l"="38.909,-0.291", "c"=39]
+"enfiskutensykkel/ssd-gpu-dma" ["l"="1.764,14.462", "c"=572]
+"GATECH-EIC/AutoDNNchip" ["l"="31.713,-2.853", "c"=212]
+"microsoft/vidur" ["l"="39.084,-0.418", "c"=39]
 "casys-kaist/LLMServingSim" ["l"="31.089,-3.028"]
+"mutinifni/splitwise-sim" ["l"="39.137,-0.413", "c"=39]
+"abhibambhaniya/GenZ-LLM-Analyzer" ["l"="31.019,-3.062"]
+"clevercool/ANT-Quantization" ["l"="31.727,-2.947", "c"=212]
+"yuhc/gpu-rodinia" ["l"="64.06,-2.065", "c"=477]
+"cdsc-github/parade-ara-simulator" ["l"="32.034,-4.088", "c"=188]
+"cwfletcher/buffets" ["l"="30.97,-2.913"]
+"EfficientMoE/MoE-Infinity" ["l"="39.001,-0.372", "c"=39]
 "mec-UMN/HISIM" ["l"="30.999,-3.032"]
+"ferry-hhh/CXL-DMSim" ["l"="1.718,14.173", "c"=572]
 "stanford-mast/zsim" ["l"="31.277,-2.913"]
-"PKUZHOU/NeoMem-MICRO-2024" ["l"="1.737,14.182"]
-"microsoft/vidur" ["l"="39.084,-0.418"]
+"shioyadan/Konata" ["l"="31.696,-3.731", "c"=188]
+"UCSBarchlab/OpenTPU" ["l"="31.938,-2.787", "c"=212]
+"PKUZHOU/NeoMem-MICRO-2024" ["l"="1.737,14.182", "c"=572]
 "maestro-project/frame" ["l"="31.01,-3.097"]
-"shioyadan/Konata" ["l"="31.696,-3.731"]
-"shinezyy/micro-arch-training" ["l"="31.865,-4.01"]
-"gem5-gpu/gem5-gpu" ["l"="32.106,-4.126"]
+"MoE-Inf/awesome-moe-inference" ["l"="38.981,-0.359", "c"=39]
+"gem5-gpu/gem5-gpu" ["l"="32.106,-4.126", "c"=188]
 "CMU-SAFARI/Sectored-DRAM" ["l"="31.085,-3.071"]
 "arkhadem/aim_simulator" ["l"="31.097,-3.079"]
+"Jokeren/Awesome-GPU" ["l"="36.866,0.965", "c"=112]
 "DawnCarol/DawnCarol" ["l"="31.278,-2.962"]
 "tukl-msd/gem5.TnT" ["l"="31.065,-2.72"]
 "SaharCarmel/Memristor-NN" ["l"="31.173,-2.676"]

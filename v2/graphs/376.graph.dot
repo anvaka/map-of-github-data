@@ -44,6 +44,7 @@ digraph G {
 "google/zetasql" -> "greenplum-db/gporca"
 "google/zetasql" -> "pganalyze/libpg_query" ["e"=1]
 "google/zetasql" -> "MaterializeInc/materialize" ["e"=1]
+"pmwkaa/sophia" -> "couchbase/forestdb" ["e"=1]
 "cmu-db/noisepage" -> "cmu-db/peloton"
 "cmu-db/noisepage" -> "hyrise/hyrise"
 "cmu-db/noisepage" -> "cmu-db/bustub" ["e"=1]
@@ -74,6 +75,33 @@ digraph G {
 "uber/aresdb" -> "facebookarchive/beringei" ["e"=1]
 "uber/aresdb" -> "uber/kraken" ["e"=1]
 "uber/aresdb" -> "antonmks/Alenka" ["e"=1]
+"pipelinedb/pipelinedb" -> "cmu-db/peloton" ["e"=1]
+"pipelinedb/pipelinedb" -> "heavyai/heavydb" ["e"=1]
+"lidaohang/ceph_study" -> "tikv/titan" ["e"=1]
+"pingcap/presentations" -> "UncP/aili" ["e"=1]
+"hydro-project/anna" -> "sfu-dis/bztree" ["e"=1]
+"hydro-project/anna" -> "pmem/pmemkv" ["e"=1]
+"hydro-project/anna" -> "baotonglu/dash" ["e"=1]
+"hydro-project/anna" -> "yaledb/calvin" ["e"=1]
+"hydro-project/anna" -> "wangziqi2013/BwTree" ["e"=1]
+"hydro-project/anna" -> "yxymit/DBx1000" ["e"=1]
+"hydro-project/anna" -> "microsoft/pmwcas" ["e"=1]
+"hydro-project/anna" -> "leanstore/leanstore" ["e"=1]
+"RedisLabs/memtier_benchmark" -> "pmem/pmemkv" ["e"=1]
+"yongman/tidis" -> "tikv/titan" ["e"=1]
+"distributedio/titan" -> "tikv/titan" ["e"=1]
+"openacid/slim" -> "UncP/aili" ["e"=1]
+"tecbot/gorocksdb" -> "pingcap/go-ycsb" ["e"=1]
+"tecbot/gorocksdb" -> "tikv/titan" ["e"=1]
+"dremio/gandiva" -> "TimoKersten/db-engine-paradigms" ["e"=1]
+"dremio/gandiva" -> "intel/BDTK" ["e"=1]
+"facebookarchive/LogDevice" -> "efficient/SuRF" ["e"=1]
+"pisa-engine/pisa" -> "gvinciguerra/PGM-index" ["e"=1]
+"pingcap/tiflash" -> "greenplum-db/gporca" ["e"=1]
+"pingcap/tiflash" -> "tikv/titan" ["e"=1]
+"efficient/libcuckoo" -> "efficient/cuckoofilter" ["e"=1]
+"efficient/libcuckoo" -> "kohler/masstree-beta" ["e"=1]
+"efficient/libcuckoo" -> "armon/libart" ["e"=1]
 "pingcap/go-ycsb" -> "pingcap/go-tpc"
 "pingcap/go-ycsb" -> "tikv/titan"
 "pingcap/go-ycsb" -> "basicthinker/YCSB-C"
@@ -89,6 +117,9 @@ digraph G {
 "pingcap/go-ycsb" -> "ls4154/YCSB-cpp"
 "pingcap/go-ycsb" -> "tikv/pd" ["e"=1]
 "pingcap/go-ycsb" -> "Iceber/iouring-go" ["e"=1]
+"twitter/rezolus" -> "hse-project/hse" ["e"=1]
+"enyim/EnyimMemcached" -> "couchbase/couchbase-net-client" ["e"=1]
+"dataform-co/dataform" -> "google/zetasql" ["e"=1]
 "utsaslab/pebblesdb" -> "abhisharma7/WiscKey"
 "utsaslab/pebblesdb" -> "tikv/titan"
 "utsaslab/pebblesdb" -> "basicthinker/YCSB-C"
@@ -104,12 +135,15 @@ digraph G {
 "utsaslab/pebblesdb" -> "HewlettPackard/quartz"
 "utsaslab/pebblesdb" -> "wangziqi2013/BwTree"
 "utsaslab/pebblesdb" -> "UncP/aili"
+"tikv/agatedb" -> "tikv/titan" ["e"=1]
 "pmem/pmem-redis" -> "pmem/redis"
 "pmem/pmem-redis" -> "memKeyDB/memKeyDB"
 "pmem/pmem-redis" -> "swapnilh/whisper"
 "pmem/pmem-redis" -> "DICL/FAST_FAIR"
 "pmem/pmem-redis" -> "utsaslab/SplitFS"
 "pmem/pmem-redis" -> "HewlettPackard/quartz"
+"heterodb/pg-strom" -> "heavyai/heavydb" ["e"=1]
+"nhachicha/SnappyDB" -> "couchbase/couchbase-lite-android" ["e"=1]
 "spring-projects/spring-data-couchbase" -> "couchbase/couchbase-kafka-connector"
 "spring-projects/spring-data-couchbase" -> "couchbase/couchbase-spark-connector"
 "spring-projects/spring-data-couchbase" -> "couchbase/couchbase-java-client"
@@ -145,11 +179,21 @@ digraph G {
 "helun/Ektorp" -> "mbreese/couchdb4j"
 "helun/Ektorp" -> "couchbaselabs/Android-Couchbase"
 "helun/Ektorp" -> "couchbaselabs/AndroidGrocerySync"
+"BlazingDB/blazingsql" -> "heavyai/heavydb" ["e"=1]
+"BlazingDB/blazingsql" -> "uber/aresdb" ["e"=1]
+"libspatialindex/libspatialindex" -> "learnedsystems/SOSD" ["e"=1]
+"libspatialindex/libspatialindex" -> "Liuguanli/RSMI" ["e"=1]
+"libspatialindex/libspatialindex" -> "learnedsystems/RMI" ["e"=1]
+"libspatialindex/libspatialindex" -> "microsoft/ALEX" ["e"=1]
+"CMU-SAFARI/MQSim" -> "HewlettPackard/quartz" ["e"=1]
 "stxxl/stxxl" -> "thrill/thrill" ["e"=1]
 "stxxl/stxxl" -> "tlx/tlx"
 "stxxl/stxxl" -> "cosmo-team/cosmo" ["e"=1]
 "stxxl/stxxl" -> "lh3/ropebwt2"
 "stxxl/stxxl" -> "thomasmoelhave/tpie"
+"johnzeng/rocksdb-doc-cn" -> "tikv/titan" ["e"=1]
+"johnzeng/rocksdb-doc-cn" -> "wangziqi2013/BwTree" ["e"=1]
+"johnzeng/rocksdb-doc-cn" -> "cld378632668/Wisckey_SeparateKVStorage" ["e"=1]
 "stephentu/silo" -> "kohler/masstree-beta"
 "stephentu/silo" -> "yxymit/DBx1000"
 "stephentu/silo" -> "sfu-dis/ermia"
@@ -175,6 +219,7 @@ digraph G {
 "yaledb/calvin" -> "sfu-dis/ermia"
 "yaledb/calvin" -> "DataManagementLab/ScaleStore"
 "yaledb/calvin" -> "readablesystems/sto"
+"aerospike/aerospike-server" -> "pmem/pmemkv" ["e"=1]
 "CGCL-codes/HME" -> "CGCL-codes/mioDB"
 "CGCL-codes/HME" -> "HewlettPackard/quartz"
 "ut-osa/strata" -> "ut-osa/assise"
@@ -270,6 +315,11 @@ digraph G {
 "DICL/CCEH" -> "SeKwonLee/WORT"
 "DICL/CCEH" -> "NVSL/OptaneStudy"
 "SeKwonLee/WORT" -> "BenTsai7/SCM-DRAM-FPTree"
+"urcu/userspace-rcu" -> "kohler/masstree-beta" ["e"=1]
+"urcu/userspace-rcu" -> "wangziqi2013/BwTree" ["e"=1]
+"urcu/userspace-rcu" -> "LPD-EPFL/ASCYLIB" ["e"=1]
+"urcu/userspace-rcu" -> "LPD-EPFL/CLHT" ["e"=1]
+"urcu/userspace-rcu" -> "NVSL/linux-nova" ["e"=1]
 "TimoKersten/db-engine-paradigms" -> "cwida/fsst"
 "TimoKersten/db-engine-paradigms" -> "leanstore/leanstore"
 "TimoKersten/db-engine-paradigms" -> "cwida/public_bi_benchmark"
@@ -288,7 +338,12 @@ digraph G {
 "psiul/ICDE2019-GPU-Join" -> "Henning1/dogqc"
 "couchbaselabs/couchbase-mobile-tools" -> "Infosys/CouchbaseLiteTester"
 "MonetDB/sqlalchemy-monetdb" -> "MonetDB/pymonetdb"
+"hydro-project/fluent" -> "efficient/SuRF" ["e"=1]
+"hydro-project/fluent" -> "cmu-db/peloton" ["e"=1]
 "couchbase/couchbase-lite-C" -> "couchbase/couchbase-lite-core"
+"Percona-Lab/sysbench-tpcc" -> "TPC-Council/HammerDB" ["e"=1]
+"Percona-Lab/sysbench-tpcc" -> "cmu-db/benchbase" ["e"=1]
+"hchasestevens/hchasestevens.github.io" -> "NicolasLM/bplustree" ["e"=1]
 "TPC-Council/HammerDB" -> "cmu-db/benchbase"
 "TPC-Council/HammerDB" -> "Percona-Lab/sysbench-tpcc" ["e"=1]
 "TPC-Council/HammerDB" -> "citusdata/citus-benchmark"
@@ -319,6 +374,10 @@ digraph G {
 "yingjunwu/DBMS-Indexology" -> "kohler/masstree-beta"
 "yingjunwu/DBMS-Indexology" -> "utsaslab/pebblesdb"
 "yingjunwu/DBMS-Indexology" -> "stanford-futuredata/index-baselines"
+"ucbrise/anna" -> "yaledb/calvin" ["e"=1]
+"psankar/simplefs" -> "NVSL/linux-nova" ["e"=1]
+"enpeizhao/duck_db" -> "zcbenz/BPlusTree" ["e"=1]
+"enpeizhao/duck_db" -> "niteshkumartiwari/B-Plus-Tree" ["e"=1]
 "myui/btree4j" -> "andylamp/BPlusTree"
 "myui/btree4j" -> "ggrandes/kvstore"
 "HustAIsGroup/CDBTune" -> "shxinding/ResTune" ["e"=1]
@@ -332,6 +391,7 @@ digraph G {
 "rescrv/HyperLevelDB" -> "utsaslab/pebblesdb"
 "rescrv/HyperLevelDB" -> "epfl-labos/TRIAD"
 "rescrv/HyperLevelDB" -> "WangEP/SLM-DB"
+"GoogleCloudPlatform/DataflowTemplates" -> "google/zetasql" ["e"=1]
 "andreaskipf/learnedcardinalities" -> "naru-project/naru"
 "andreaskipf/learnedcardinalities" -> "neurocard/neurocard"
 "andreaskipf/learnedcardinalities" -> "learnedsystems/CEB"
@@ -359,18 +419,34 @@ digraph G {
 "malbrain/Btree-source-code" -> "malbrain/database"
 "malbrain/Btree-source-code" -> "runshenzhu/palmtree"
 "cwida/public_bi_benchmark" -> "damslab/reproducibility"
+"open-mpi/hwloc" -> "memkind/memkind" ["e"=1]
 "forax/exotic" -> "forax/beautiful_logger"
 "efficient/HOPE" -> "cuckoo-trie/cuckoo-trie-code"
+"CorfuDB/CorfuDB" -> "efficient/SuRF" ["e"=1]
+"CorfuDB/CorfuDB" -> "utsaslab/pebblesdb" ["e"=1]
+"CorfuDB/CorfuDB" -> "kohler/masstree-beta" ["e"=1]
 "thawk105/ccbench" -> "rotaki/tpcc-runner"
 "couchbase/couchbase-lite-net" -> "couchbase/couchbase-net-client"
 "couchbase/couchbase-lite-net" -> "couchbase/sync_gateway"
 "couchbase/couchbase-lite-net" -> "couchbase/couchbase-lite-core"
 "couchbase/couchbase-lite-net" -> "couchbaselabs/Couchbase.Lite.Mapping"
 "couchbase/couchbase-lite-net" -> "couchbaselabs/couchbase-mobile-tools"
+"SPFlow/SPFlow" -> "DataManagementLab/deepdb-public" ["e"=1]
 "PDS-Lab/GearDB" -> "PDS-Lab/MatrixKV"
 "couchbase/couchbase-lite-java-core" -> "couchbase/couchbase-lite-java"
 "couchbase/couchbase-lite-java-core" -> "couchbase/couchbase-lite-java-listener"
 "warlo/rocksdb-statistics" -> "ericaloha/L2SM"
+"OpenMPDK/KVSSD" -> "abhisharma7/WiscKey" ["e"=1]
+"thustorage/octopus" -> "DICL/CCEH" ["e"=1]
+"thustorage/octopus" -> "linux-pmfs/pmfs" ["e"=1]
+"thustorage/octopus" -> "sfu-dis/pibench" ["e"=1]
+"thustorage/octopus" -> "utsaslab/RECIPE" ["e"=1]
+"thustorage/octopus" -> "thustorage/nvm-datastructure" ["e"=1]
+"thustorage/octopus" -> "NVSL/NOVA" ["e"=1]
+"thustorage/octopus" -> "NVSL/OptaneStudy" ["e"=1]
+"erikgrinaker/readings" -> "cmu-db/noisepage" ["e"=1]
+"erikgrinaker/readings" -> "hyrise/hyrise" ["e"=1]
+"erikgrinaker/readings" -> "wangziqi2013/BwTree" ["e"=1]
 "begeekmyfriend/skiplist" -> "begeekmyfriend/tash"
 "begeekmyfriend/skiplist" -> "begeekmyfriend/kdtree"
 "begeekmyfriend/skiplist" -> "begeekmyfriend/CuckooFilter"
@@ -420,6 +496,10 @@ digraph G {
 "bcaine/learned_indices" -> "baotonglu/apex"
 "bcaine/learned_indices" -> "learnedsystems/RadixSpline"
 "bcaine/learned_indices" -> "Pfzuo/Path-Hashing" ["e"=1]
+"rjl493456442/leveldb-handbook" -> "wangziqi2013/BwTree" ["e"=1]
+"rjl493456442/leveldb-handbook" -> "tikv/titan" ["e"=1]
+"rjl493456442/leveldb-handbook" -> "bcaine/learned_indices" ["e"=1]
+"rjl493456442/leveldb-handbook" -> "cld378632668/Wisckey_SeparateKVStorage" ["e"=1]
 "mikebenfield/Learned-Index-Structures" -> "bcaine/learned_indices"
 "mikebenfield/Learned-Index-Structures" -> "anikristo/LearnedSort"
 "anikristo/LearnedSort" -> "learnedsystems/RadixSpline"
@@ -473,6 +553,7 @@ digraph G {
 "RyanMarcus/imdb_pg_dataset" -> "antonismand/ReJOIN"
 "RyanMarcus/imdb_pg_dataset" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark"
 "RyanMarcus/imdb_pg_dataset" -> "AlibabaIncubator/Lero-on-PostgreSQL"
+"FastFilter/xor_singleheader" -> "cwida/ALP" ["e"=1]
 "viktorleis/perfevent" -> "wangziqi2016/index-microbench"
 "viktorleis/perfevent" -> "leanstore/leanstore"
 "stanford-futuredata/index-baselines" -> "bcaine/learned_indices"
@@ -491,6 +572,7 @@ digraph G {
 "sfu-dis/bztree" -> "sfu-dis/pibench-online"
 "sfu-dis/bztree" -> "sfu-dis/preemptdb"
 "couchbase/indexing" -> "couchbase/eventing"
+"InitialDLab/SampleJoin" -> "wuziniu/BayesCard" ["e"=1]
 "couchbase/couchbase-lite-java" -> "couchbase/couchbase-lite-java-core"
 "couchbase/couchbase-lite-java" -> "couchbase/couchbase-lite-java-listener"
 "pmem/pmem-rocksdb" -> "WangEP/SLM-DB"
@@ -515,6 +597,9 @@ digraph G {
 "mir-pucrs/smartix-rl" -> "rmitbggroup/IndexAdvisor"
 "mir-pucrs/smartix-rl" -> "shankur/autoindex"
 "couchbase/platform" -> "couchbase/phosphor"
+"numactl/numactl" -> "pmem/pmdk" ["e"=1]
+"numactl/numactl" -> "memkind/memkind" ["e"=1]
+"numactl/numactl" -> "pmem/ndctl" ["e"=1]
 "begeekmyfriend/bplustree" -> "zcbenz/BPlusTree"
 "begeekmyfriend/bplustree" -> "begeekmyfriend/kdtree"
 "begeekmyfriend/bplustree" -> "begeekmyfriend/leetcode" ["e"=1]
@@ -533,6 +618,11 @@ digraph G {
 "Kronuz/cpp-btree" -> "zcbenz/BPlusTree"
 "Kronuz/cpp-btree" -> "frozenca/BTree"
 "Kronuz/cpp-btree" -> "jeffplaisance/BppTree"
+"cmu-db/bustub" -> "cmu-db/noisepage" ["e"=1]
+"voldemort/voldemort" -> "couchbase/forestdb" ["e"=1]
+"wiredtiger/wiredtiger" -> "cmu-db/peloton" ["e"=1]
+"wiredtiger/wiredtiger" -> "wangziqi2013/BwTree" ["e"=1]
+"wiredtiger/wiredtiger" -> "couchbase/forestdb" ["e"=1]
 "sqlancer/sqlancer" -> "anse1/sqlsmith"
 "sqlancer/sqlancer" -> "s3team/Squirrel"
 "sqlancer/sqlancer" -> "cmu-db/benchbase"
@@ -548,6 +638,9 @@ digraph G {
 "sqlancer/sqlancer" -> "sslab-gatech/apollo"
 "sqlancer/sqlancer" -> "pingcap/tiflash" ["e"=1]
 "sqlancer/sqlancer" -> "substrait-io/substrait" ["e"=1]
+"Tencent/TBase" -> "greenplum-db/gporca" ["e"=1]
+"opengauss-mirror/openGauss-server" -> "greenplum-db/gporca" ["e"=1]
+"intel/intel-cmt-cat" -> "pmem/pmdk" ["e"=1]
 "gramoli/synchrobench" -> "LPD-EPFL/ASCYLIB"
 "gramoli/synchrobench" -> "microsoft/pmwcas"
 "gramoli/synchrobench" -> "trigonak/ccbench"
@@ -578,6 +671,8 @@ digraph G {
 "cmu-db/peloton" -> "stephentu/silo"
 "cmu-db/peloton" -> "kohler/masstree-beta"
 "cmu-db/peloton" -> "wiredtiger/wiredtiger" ["e"=1]
+"ept/hermitage" -> "cmu-db/peloton" ["e"=1]
+"tikv/raft-engine" -> "tikv/titan" ["e"=1]
 "memKeyDB/memKeyDB" -> "pmem/pmem-redis"
 "memKeyDB/memKeyDB" -> "pmem/redis"
 "memkind/memkind" -> "pmem/pmdk"
@@ -591,6 +686,10 @@ digraph G {
 "memkind/memkind" -> "geopm/geopm" ["e"=1]
 "memkind/memkind" -> "rafaelkallis/adaptive-radix-tree"
 "memkind/memkind" -> "OpenMPDK/SMDK" ["e"=1]
+"BaronStack/book_paper" -> "tikv/titan" ["e"=1]
+"BaronStack/book_paper" -> "wangziqi2013/BwTree" ["e"=1]
+"BaronStack/book_paper" -> "utsaslab/pebblesdb" ["e"=1]
+"goossaert/kingdb" -> "pmem/pmemkv" ["e"=1]
 "VoltDB/voltdb" -> "apavlo/h-store"
 "VoltDB/voltdb" -> "cmu-db/peloton"
 "VoltDB/voltdb" -> "greenplum-db/gporca"
@@ -623,6 +722,8 @@ digraph G {
 "pmem/pmdk" -> "pmem/libpmemobj-cpp"
 "pmem/pmdk" -> "Apress/programming-persistent-memory"
 "pmem/pmdk" -> "efficient/rdma_bench" ["e"=1]
+"facebook/CacheLib" -> "wangziqi2013/BwTree" ["e"=1]
+"facebook/CacheLib" -> "tikv/titan" ["e"=1]
 "chaoran/fast-wait-free-queue" -> "pramalhe/ConcurrencyFreaks"
 "chaoran/fast-wait-free-queue" -> "rusnikola/lfqueue"
 "chaoran/fast-wait-free-queue" -> "cksystemsgroup/scal"
@@ -657,6 +758,7 @@ digraph G {
 "cwida/fsst" -> "learnedsystems/SOSD"
 "cwida/fsst" -> "spiraldb/fsst"
 "cwida/fsst" -> "fast-pack/FastPFOR" ["e"=1]
+"thomvaill/log4brains" -> "couchbase/kafka-connect-couchbase" ["e"=1]
 "couchbaselabs/Android-Couchbase" -> "couchbaselabs/AndroidGrocerySync"
 "couchbaselabs/Android-Couchbase" -> "couchbase/iOS-Couchbase"
 "couchbase/couchbase-java-client" -> "couchbase/couchbase-kafka-connector"
@@ -670,7 +772,11 @@ digraph G {
 "couchbase/couchbase-java-client" -> "couchbase/forestdb"
 "couchbase/couchbase-java-client" -> "couchbase/couchbase-jvm-core"
 "couchbase/couchbase-java-client" -> "couchbase/couchbase-lite-ios"
+"Seagate/cortx" -> "pmem/pmemkv" ["e"=1]
 "shuaimu/rococo" -> "NYU-NEWS/janus"
+"indeedeng/lsmtree" -> "andylamp/BPlusTree" ["e"=1]
+"ChrisWhealy/DistributedSystemNotes" -> "jarulraj/databaseology" ["e"=1]
+"osrg/namazu" -> "pingcap/go-ycsb" ["e"=1]
 "couchbase/couchbase-net-client" -> "couchbaselabs/Linq2Couchbase"
 "couchbase/couchbase-net-client" -> "couchbase/couchbase-lite-net"
 "couchbase/couchbase-net-client" -> "couchbaselabs/couchbase-net-examples"
@@ -739,6 +845,8 @@ digraph G {
 "s3team/Squirrel" -> "anse1/sqlsmith"
 "s3team/Squirrel" -> "Griffin-2022/Griffin"
 "MonetDB/pymonetdb" -> "MonetDB/sqlalchemy-monetdb"
+"aerospike/aerospike-server" -> "couchbase/forestdb" ["e"=1]
+"powturbo/TurboPFor-Integer-Compression" -> "cwida/fsst" ["e"=1]
 "gvinciguerra/PGM-index" -> "learnedsystems/SOSD"
 "gvinciguerra/PGM-index" -> "learnedsystems/RMI"
 "gvinciguerra/PGM-index" -> "microsoft/ALEX"
@@ -769,6 +877,9 @@ digraph G {
 "learnedsystems/SOSD" -> "pfl-cs/LISA"
 "learnedsystems/SOSD" -> "bcaine/learned_indices"
 "learnedsystems/SOSD" -> "bingmann/stx-btree"
+"jepsen-io/elle" -> "cmu-db/benchbase" ["e"=1]
+"jepsen-io/elle" -> "yaledb/calvin" ["e"=1]
+"amplab/succinct" -> "efficient/SuRF" ["e"=1]
 "LumingSun/ML4DB-paper-list" -> "TsinghuaDatabaseGroup/AIDB"
 "LumingSun/ML4DB-paper-list" -> "gregrahn/join-order-benchmark"
 "LumingSun/ML4DB-paper-list" -> "learnedsystems/BaoForPostgreSQL"
@@ -807,6 +918,8 @@ digraph G {
 "learnedsystems/RMI" -> "luffy06/NFL"
 "learnedsystems/RMI" -> "Liuguanli/RSMI"
 "learnedsystems/RMI" -> "stanford-futuredata/index-baselines"
+"shiyanhui/libcsp" -> "hse-project/hse" ["e"=1]
+"uber/fiber" -> "uber/aresdb" ["e"=1]
 "couchbase/couchbase-python-client" -> "couchbase/couchbase-kafka-connector"
 "couchbase/couchbase-python-client" -> "couchbase/couchbase-spark-connector"
 "couchbase/couchbase-python-client" -> "couchbase/couchbase-java-client"
@@ -849,8 +962,12 @@ digraph G {
 "yxymit/DBx1000" -> "cmu-db/benchbase"
 "Henning1/dogqc" -> "Henning1/resql"
 "Henning1/dogqc" -> "TU-Berlin-DIMA/Hawk-VLDBJ"
+"GoogleCloudPlatform/bigquery-utils" -> "google/zetasql" ["e"=1]
 "TsinghuaDatabaseGroup/AI4DBCode" -> "jt-zhang/CardinalityEstimationTestbed"
 "TsinghuaDatabaseGroup/AI4DBCode" -> "XuanheZhou/AutoIndex"
+"satanson/cpp_etudes" -> "yongwen/columbia" ["e"=1]
+"pingcap/tidb-dashboard" -> "zanmato1984/cura" ["e"=1]
+"zhangysh1995/awesome-database-testing" -> "s3team/Squirrel" ["e"=1]
 "gvinciguerra/PyGM" -> "gvinciguerra/PGM-index"
 "microsoft/ALEX" -> "learnedsystems/SOSD"
 "microsoft/ALEX" -> "learnedsystems/RMI"
@@ -915,6 +1032,8 @@ digraph G {
 "pingcap/go-tpc" -> "innerr/ticat"
 "pingcap/go-tpc" -> "pingcap/go-ycsb"
 "pmem/redis" -> "pmem/pmem-redis"
+"nushoin/RTree" -> "learnedsystems/SOSD" ["e"=1]
+"nushoin/RTree" -> "tlx/tlx" ["e"=1]
 "LineairDB/LineairDB" -> "rotaki/tpcc-runner"
 "LineairDB/LineairDB" -> "thawk105/ccbench"
 "learnedsystems/RadixSpline" -> "learnedsystems/SOSD"
@@ -969,6 +1088,7 @@ digraph G {
 "NVSL/OptaneStudy" -> "DICL/CCEH"
 "NVSL/OptaneStudy" -> "TheNetAdmin/LENS-VANS" ["e"=1]
 "NVSL/OptaneStudy" -> "utsaslab/SplitFS"
+"zxjcarrot/DPTree-code" -> "baotonglu/apex" ["e"=1]
 "chenzhangyu/Clevel-Hashing" -> "Pfzuo/Level-Hashing"
 "DataManagementLab/deepdb-public" -> "naru-project/naru"
 "DataManagementLab/deepdb-public" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark"
@@ -1023,6 +1143,10 @@ digraph G {
 "ustcadsl/unikv" -> "ustcadsl/depart"
 "illinoisdata/quicksel" -> "waltercai/pqo-opensource"
 "mjasny/distexprunner" -> "toziegler/zig-zipf"
+"bytedance/terarkdb" -> "tikv/titan" ["e"=1]
+"bytedance/terarkdb" -> "wangziqi2013/BwTree" ["e"=1]
+"bytedance/terarkdb" -> "pmem/pmemkv" ["e"=1]
+"antonmks/Alenka" -> "heavyai/heavydb" ["e"=1]
 "XuanheZhou/LearnedRewrite" -> "DAMO-NLP-SG/LLM-R2"
 "couchbase/couchbase-spark-connector" -> "couchbase/couchbase-kafka-connector"
 "couchbase/couchbase-spark-connector" -> "couchbase/couchbase-python-client"
@@ -1031,6 +1155,10 @@ digraph G {
 "couchbase/couchbase-spark-connector" -> "couchbase/sync_gateway"
 "couchbase/couchbase-spark-connector" -> "couchbase/gocb"
 "couchbase/couchbase-spark-connector" -> "spring-projects/spring-data-couchbase"
+"facebookincubator/velox" -> "cmu-db/noisepage" ["e"=1]
+"begeekmyfriend/leetcode" -> "begeekmyfriend/bplustree" ["e"=1]
+"LMDB/lmdb" -> "couchbase/forestdb" ["e"=1]
+"huachaohuang/ekv" -> "tikv/titan" ["e"=1]
 "couchbase/go-couchbase" -> "couchbase/gocb"
 "leanstore/leanstore" -> "hyrise/hyrise"
 "leanstore/leanstore" -> "cmu-db/optd-original" ["e"=1]
@@ -1047,6 +1175,7 @@ digraph G {
 "leanstore/leanstore" -> "yxymit/DBx1000"
 "leanstore/leanstore" -> "mitdbg/treeline"
 "leanstore/leanstore" -> "mutable-org/mutable"
+"HypoPG/hypopg" -> "hyrise/index_selection_evaluation" ["e"=1]
 "Jiacheng-WU/lipp" -> "luffy06/NFL"
 "Jiacheng-WU/lipp" -> "gre4index/GRE"
 "Jiacheng-WU/lipp" -> "baotonglu/apex"
@@ -1059,6 +1188,7 @@ digraph G {
 "Jiacheng-WU/lipp" -> "learnedsystems/RadixSpline"
 "Jiacheng-WU/lipp" -> "learnedsystems/SOSD"
 "Jiacheng-WU/lipp" -> "chaohcc/film"
+"microsoft/rDSN" -> "kohler/masstree-beta" ["e"=1]
 "apavlo/h-store" -> "VoltDB/voltdb"
 "apavlo/h-store" -> "oltpbenchmark/oltpbench"
 "apavlo/h-store" -> "cmu-db/peloton"
@@ -1074,7 +1204,16 @@ digraph G {
 "apavlo/h-store" -> "wangziqi2013/BwTree"
 "apavlo/h-store" -> "rmind/masstree"
 "apavlo/h-store" -> "Cavalia/Cavalia"
+"vmware/splinterdb" -> "BLepers/KVell" ["e"=1]
+"vmware/splinterdb" -> "tikv/titan" ["e"=1]
+"vmware/splinterdb" -> "wangziqi2013/BwTree" ["e"=1]
 "zxjcarrot/spitfire" -> "hpides/viper"
+"thrill/thrill" -> "stxxl/stxxl" ["e"=1]
+"thrill/thrill" -> "tlx/tlx" ["e"=1]
+"PlatformLab/RAMCloud" -> "kohler/masstree-beta" ["e"=1]
+"PlatformLab/RAMCloud" -> "pmem/pmemkv" ["e"=1]
+"PlatformLab/RAMCloud" -> "Cavalia/Cavalia" ["e"=1]
+"PlatformLab/RAMCloud" -> "oltpbenchmark/oltpbench" ["e"=1]
 "pmem/kvdk" -> "intel/MTMC-Temporal-Profiler"
 "pmem/kvdk" -> "intel/confidential-computing-zoo" ["e"=1]
 "pmem/kvdk" -> "pmem/pmem-rocksdb"
@@ -1083,6 +1222,7 @@ digraph G {
 "pmem/kvdk" -> "baotonglu/dash"
 "pmem/kvdk" -> "pmem/pmem-redis"
 "pmem/kvdk" -> "hpides/viper"
+"apache/datasketches-java" -> "greenplum-db/gporca" ["e"=1]
 "anse1/sqlsmith" -> "sqlancer/sqlancer"
 "anse1/sqlsmith" -> "s3team/Squirrel"
 "anse1/sqlsmith" -> "gregrahn/join-order-benchmark"
@@ -1098,8 +1238,23 @@ digraph G {
 "anse1/sqlsmith" -> "ossc-db/pg_plan_advsr" ["e"=1]
 "anse1/sqlsmith" -> "learnedsystems/BaoForPostgreSQL"
 "anse1/sqlsmith" -> "andreaskipf/learnedcardinalities"
+"s-hironobu/pg_plan_inspector" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "learnedsystems/BaoForPostgreSQL" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "sfu-db/AreCELearnedYet" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "DataManagementLab/deepdb-public" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "learnedsystems/CEB" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "balsa-project/balsa" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "naru-project/naru" ["e"=1]
+"s-hironobu/pg_plan_inspector" -> "andreaskipf/learnedcardinalities" ["e"=1]
+"linux-nvme/nvme-cli" -> "pmem/pmdk" ["e"=1]
+"spdk/spdk" -> "pmem/pmdk" ["e"=1]
+"opensmartnic/awesome-smartnic" -> "casys-kaist/LineFS" ["e"=1]
 "casys-kaist/LineFS" -> "ut-osa/assise"
 "casys-kaist/LineFS" -> "smartnickit-project/smartnic-bench" ["e"=1]
+"ApsaraDB/PolarDB-for-PostgreSQL" -> "greenplum-db/gporca" ["e"=1]
+"ApsaraDB/PolarDB-for-PostgreSQL" -> "cmu-db/peloton" ["e"=1]
+"EvgSkv/logica" -> "google/zetasql" ["e"=1]
+"y-scope/clp" -> "cwida/fsst" ["e"=1]
 "MonetDB/MonetDB" -> "MonetDB/MonetDB-old"
 "MonetDB/MonetDB" -> "MonetDB/pymonetdb"
 "MonetDB/MonetDB" -> "leanstore/leanstore"
@@ -1112,6 +1267,8 @@ digraph G {
 "MonetDB/MonetDB" -> "TimoKersten/db-engine-paradigms"
 "MonetDB/MonetDB" -> "MonetDB/MonetDB-Go"
 "MonetDB/MonetDB" -> "anilshanbhag/crystal"
+"logicalclocks/rondb" -> "sfu-dis/mosaicdb" ["e"=1]
+"logicalclocks/rondb" -> "kohler/masstree-beta" ["e"=1]
 "gre4index/GRE" -> "Jiacheng-WU/lipp"
 "gre4index/GRE" -> "baotonglu/apex"
 "gre4index/GRE" -> "iotlpf/FINEdex"
@@ -1119,6 +1276,7 @@ digraph G {
 "gre4index/GRE" -> "chaohcc/film"
 "gre4index/GRE" -> "rmitbggroup/LearnedIndexDiskExp"
 "gre4index/GRE" -> "tawnysky/PLIN"
+"seiflotfy/cuckoofilter" -> "efficient/cuckoofilter" ["e"=1]
 "Nathaniel-Han/End-to-End-CardEst-Benchmark" -> "learnedsystems/CEB"
 "Nathaniel-Han/End-to-End-CardEst-Benchmark" -> "DataManagementLab/deepdb-public"
 "Nathaniel-Han/End-to-End-CardEst-Benchmark" -> "neurocard/neurocard"
@@ -1191,10 +1349,13 @@ digraph G {
 "couchbase/couchbase-kafka-connector" -> "couchbase/couchnode"
 "couchbase/couchbase-kafka-connector" -> "couchbase/gocb"
 "couchbase/couchbase-kafka-connector" -> "couchbase/sync_gateway"
+"oscarlab/betrfs" -> "sslab-gatech/fxmark" ["e"=1]
 "flode/BwTree" -> "wangziqi2013/BwTree"
+"rescrv/HyperDex" -> "rescrv/HyperLevelDB" ["e"=1]
 "OceanBase-Partner/lectures-on-dbms-implementation" -> "OceanBase-Partner/miniob"
 "OceanBase-Partner/lectures-on-dbms-implementation" -> "luooofan/miniob-2022"
 "OceanBase-Partner/lectures-on-dbms-implementation" -> "dase314/db_impl_course"
+"DeveloperPaul123/thread-pool" -> "frozenca/BTree" ["e"=1]
 "wuxb45/remixdb" -> "ustcadsl/diffkv"
 "wuxb45/remixdb" -> "ustcadsl/depart"
 "wuxb45/remixdb" -> "SpanDB/SpanDB"
@@ -1256,7 +1417,9 @@ digraph G {
 "rmitbggroup/IndexAdvisor" -> "XuanheZhou/AutoIndex"
 "emperorlu/learned-leveldb" -> "emperorlu/Learned-RocksDB"
 "OceanBase-Partner/miniob" -> "OceanBase-Partner/lectures-on-dbms-implementation"
+"cosmoss-jigu/pactree" -> "sfu-dis/pibench-ep2" ["e"=1]
 "ucf-cs/Tervel" -> "ucf-cs/tlds"
+"rmind/libqsbr" -> "rmind/masstree" ["e"=1]
 "zanmato1984/cura" -> "jiashu-z/how-to-plot"
 "zanmato1984/cura" -> "DBGroup-SUSTech/GHive"
 "yongwen/columbia" -> "greenplum-db/gporca"
@@ -1298,8 +1461,13 @@ digraph G {
 "sfu-dis/FPTree" -> "sfu-dis/tesseract"
 "sfu-dis/pibench-ep2" -> "baotonglu/apex"
 "innerr/ticat" -> "hanfei1991/microcosm"
+"RoaringBitmap/CRoaring" -> "cwida/fsst" ["e"=1]
 "NYU-NEWS/janus" -> "shuaimu/rococo"
 "NYU-NEWS/janus" -> "stonysystems/rolis"
+"rxin/db-readings" -> "cmu-db/peloton" ["e"=1]
+"rxin/db-readings" -> "cmu-db/noisepage" ["e"=1]
+"zhenlohuang/awesome-distributed-systems" -> "cmu-db/peloton" ["e"=1]
+"greenplum-db/gpdb" -> "greenplum-db/gporca" ["e"=1]
 "TsinghuaDatabaseGroup/AIDB" -> "LumingSun/ML4DB-paper-list"
 "TsinghuaDatabaseGroup/AIDB" -> "weAIDB/awsome-data-llm"
 "TsinghuaDatabaseGroup/AIDB" -> "learnedsystems/BaoForPostgreSQL"
@@ -1315,16 +1483,33 @@ digraph G {
 "TsinghuaDatabaseGroup/AIDB" -> "DataManagementLab/deepdb-public"
 "TsinghuaDatabaseGroup/AIDB" -> "balsa-project/balsa"
 "TsinghuaDatabaseGroup/AIDB" -> "naru-project/naru"
+"skyplane-project/skyplane" -> "balsa-project/balsa" ["e"=1]
+"polardb/polardbx-engine" -> "tikv/titan" ["e"=1]
+"polardb/polardbx-engine" -> "leanstore/leanstore" ["e"=1]
+"polardb/polardbx-engine" -> "greenplum-db/gporca" ["e"=1]
+"polardb/polardbx-engine" -> "tikv/rocksdb" ["e"=1]
+"polardb/polardbx-sql" -> "greenplum-db/gporca" ["e"=1]
+"smfrpc/smf" -> "pmem/pmemkv" ["e"=1]
 "UWSysLab/tapir" -> "UWSysLab/NOPaxos"
 "UWSysLab/tapir" -> "NYU-NEWS/janus"
 "UWSysLab/tapir" -> "UWSysLab/specpaxos"
 "UWSysLab/tapir" -> "yaledb/calvin"
+"ngaut/builddatabase" -> "cmu-db/peloton" ["e"=1]
+"intel/confidential-computing-zoo" -> "pmem/kvdk" ["e"=1]
+"fast-pack/FastPFOR" -> "cwida/FastLanes" ["e"=1]
+"fast-pack/FastPFOR" -> "cwida/fsst" ["e"=1]
+"fast-pack/FastPFOR" -> "efficient/SuRF" ["e"=1]
+"apache/madlib" -> "greenplum-db/gporca" ["e"=1]
+"apache/systemds" -> "tugraz-isds/systemds" ["e"=1]
 "rmind/masstree" -> "kohler/masstree-beta"
 "rmind/masstree" -> "cararemixed/hansei" ["e"=1]
 "rmind/masstree" -> "wuxb45/wormhole"
 "rmind/masstree" -> "rmind/thmap"
 "Cavalia/Cavalia" -> "yingjunwu/IndexZoo" ["e"=1]
 "Cavalia/Cavalia" -> "stephentu/silo"
+"pganalyze/libpg_query" -> "hyrise/sql-parser" ["e"=1]
+"pganalyze/libpg_query" -> "anse1/sqlsmith" ["e"=1]
+"pganalyze/libpg_query" -> "hyrise/hyrise" ["e"=1]
 "greenplum-db/gporca" -> "yongwen/columbia"
 "greenplum-db/gporca" -> "cmu-db/peloton"
 "greenplum-db/gporca" -> "hyrise/hyrise"
@@ -1341,11 +1526,20 @@ digraph G {
 "greenplum-db/gporca" -> "anse1/sqlsmith"
 "greenplum-db/gporca" -> "substrait-io/substrait" ["e"=1]
 "orange1438/BTree-and-BPlusTree-Realize" -> "zcbenz/BPlusTree"
+"apache/hawq" -> "greenplum-db/gporca" ["e"=1]
 "sfu-dis/ermia" -> "efficient/cicada-engine"
 "sfu-dis/ermia" -> "sfu-dis/bztree"
 "sfu-dis/ermia" -> "jarulraj/n-store"
 "sfu-dis/ermia" -> "wangziqi2016/index-microbench"
+"thustorage/pacman" -> "thustorage/nvm-datastructure" ["e"=1]
+"thustorage/pacman" -> "WangEP/SLM-DB" ["e"=1]
 "dase314/db_impl_course" -> "dase314/dase314.github.io"
+"OpenMPDK/SMDK" -> "pmem/ndctl" ["e"=1]
+"twitter/pelikan" -> "pmem/pmem-redis" ["e"=1]
+"DistSysCorp/ddia" -> "dase314/db_impl_course" ["e"=1]
+"speedb-io/speedb" -> "tikv/titan" ["e"=1]
+"speedb-io/speedb" -> "leanstore/leanstore" ["e"=1]
+"speedb-io/speedb" -> "BLepers/KVell" ["e"=1]
 "couchbase/fleece" -> "couchbase/couchbase-lite-core"
 "Wind-Gone/OceanBase-Contest-Miniob" -> "Wind-Gone/Toy-Compiler"
 "Wind-Gone/OceanBase-Contest-Miniob" -> "Wind-Gone/VLDBSS2022-ECNU-DaSE"
@@ -1385,6 +1579,7 @@ digraph G {
 "zhaoyue-ntu/QueryFormer" -> "DataManagementLab/zero-shot-cost-estimation"
 "zhaoyue-ntu/QueryFormer" -> "zhaoyue-ntu/qp_evaluation"
 "zhaoyue-ntu/QueryFormer" -> "RyanMarcus/imdb_pg_dataset"
+"stressapptest/stressapptest" -> "pmem/ndctl" ["e"=1]
 "chaohcc/film" -> "rmitbggroup/LearnedIndexDiskExp"
 "balsa-project/balsa" -> "learnedsystems/BaoForPostgreSQL"
 "balsa-project/balsa" -> "AlibabaIncubator/Lero-on-PostgreSQL"
@@ -1460,7 +1655,27 @@ digraph G {
 "embedded2016/bplus-tree" -> "zcbenz/BPlusTree"
 "embedded2016/bplus-tree" -> "indutny/bplus"
 "embedded2016/bplus-tree" -> "embedded2016/server-framework" ["e"=1]
+"KarryRen/SCU-CS-Class-Materials" -> "SolidLao/GPTuner" ["e"=1]
+"stoneatom/stonedb" -> "greenplum-db/gporca" ["e"=1]
+"stoneatom/stonedb" -> "leanstore/leanstore" ["e"=1]
+"stoneatom/stonedb" -> "hyrise/hyrise" ["e"=1]
+"goccy/bigquery-emulator" -> "google/zetasql" ["e"=1]
+"ossc-db/pg_hint_plan" -> "gregrahn/join-order-benchmark" ["e"=1]
+"ossc-db/pg_hint_plan" -> "learnedsystems/BaoForPostgreSQL" ["e"=1]
+"ossc-db/pg_hint_plan" -> "alibaba/pilotscope" ["e"=1]
+"ossc-db/pg_hint_plan" -> "balsa-project/balsa" ["e"=1]
+"ossc-db/pg_hint_plan" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark" ["e"=1]
+"filebench/filebench" -> "NVSL/linux-nova" ["e"=1]
+"filebench/filebench" -> "sslab-gatech/fxmark" ["e"=1]
+"filebench/filebench" -> "utsaslab/SplitFS" ["e"=1]
+"filebench/filebench" -> "NVSL/OptaneStudy" ["e"=1]
+"s-yata/marisa-trie" -> "armon/libart" ["e"=1]
+"s-yata/marisa-trie" -> "efficient/SuRF" ["e"=1]
+"photondb/photondb" -> "wangziqi2013/BwTree" ["e"=1]
 "frozenca/BTree" -> "Kronuz/cpp-btree"
+"ClickHouse/ClickBench" -> "TimoKersten/db-engine-paradigms" ["e"=1]
+"ClickHouse/ClickBench" -> "sqlancer/sqlancer" ["e"=1]
+"ClickHouse/ClickBench" -> "cmu-db/benchbase" ["e"=1]
 "apache/incubator-retired-quickstep" -> "vmware-archive/quickstep"
 "cwida/FastLanes" -> "cwida/ALP"
 "cwida/FastLanes" -> "cwida/fsst"
@@ -1503,6 +1718,11 @@ digraph G {
 "HewlettPackard/Atlas" -> "basicthinker/ThyNVM"
 "HewlettPackard/Atlas" -> "HewlettPackard/nvthreads"
 "HewlettPackard/Atlas" -> "FabricAttachedMemory/Emulation"
+"Percona-Lab/tpcc-mysql" -> "oltpbenchmark/oltpbench" ["e"=1]
+"Percona-Lab/tpcc-mysql" -> "facebookarchive/linkbench" ["e"=1]
+"fast-pack/streamvbyte" -> "cwida/ALP" ["e"=1]
+"intel/isa-l" -> "pmem/pmdk" ["e"=1]
+"intel/isa-l" -> "pmem/pmemkv" ["e"=1]
 "oltpbenchmark/oltpbench" -> "cmu-db/benchbase"
 "oltpbenchmark/oltpbench" -> "yxymit/DBx1000"
 "oltpbenchmark/oltpbench" -> "apavlo/h-store"
@@ -1519,6 +1739,7 @@ digraph G {
 "oltpbenchmark/oltpbench" -> "wangziqi2016/index-microbench"
 "oltpbenchmark/oltpbench" -> "kohler/masstree-beta"
 "Blondig/Lero-on-PostgreSQL" -> "TianyiChen0316/LOGER"
+"efficient/epaxos" -> "mitdbg/deneva" ["e"=1]
 "sslab-gatech/fxmark" -> "NVSL/NOVA"
 "Wind-Gone/awesome-ai4db-paper" -> "zhaoyue-ntu/QueryFormer"
 "Wind-Gone/awesome-ai4db-paper" -> "Wind-Gone/awesome-olap-paper"
@@ -1526,11 +1747,13 @@ digraph G {
 "Wind-Gone/awesome-ai4db-paper" -> "Wind-Gone/OceanBase-Contest-Miniob"
 "Wind-Gone/awesome-ai4db-paper" -> "Wind-Gone/Toy-Compiler"
 "Wind-Gone/awesome-ai4db-paper" -> "AlibabaIncubator/Lero-on-PostgreSQL"
+"eventql/eventql" -> "heavyai/heavydb" ["e"=1]
 "jarulraj/databaseology" -> "yxymit/DBx1000"
 "curtis-sun/TLI" -> "chaohcc/film"
 "curtis-sun/TLI" -> "luffy06/NFL"
 "curtis-sun/TLI" -> "baotonglu/apex"
 "curtis-sun/TLI" -> "Jiacheng-WU/lipp"
+"krareT/terichdb" -> "apavlo/h-store" ["e"=1]
 "couchbase/couchnode" -> "couchbase/couchbase-kafka-connector"
 "couchbase/couchnode" -> "couchbase/couchbase-spark-connector"
 "couchbase/couchnode" -> "couchbase/couchbase-python-client"
@@ -1544,6 +1767,8 @@ digraph G {
 "couchbase/couchnode" -> "couchbaselabs/node-ottoman"
 "luooofan/miniob-2022" -> "357447923/miniob_test"
 "luooofan/miniob-2022" -> "lyxiong0/miniob"
+"plar/go-adaptive-radix-tree" -> "armon/libart" ["e"=1]
+"iotlpf/ROLEX" -> "baotonglu/apex" ["e"=1]
 "runshenzhu/palmtree" -> "malbrain/Btree-source-code"
 "runshenzhu/palmtree" -> "flode/ARTSynchronized"
 "runshenzhu/palmtree" -> "kohler/masstree-beta"
@@ -1558,6 +1783,7 @@ digraph G {
 "for0nething/FACE-A-Normalizing-Flow-based-Cardinality-Estimator" -> "wuziniu/FactorJoin"
 "for0nething/FACE-A-Normalizing-Flow-based-Cardinality-Estimator" -> "postechdblab/learned-cardinality-estimation"
 "RunanWang/LDSS" -> "parimarjan/learned-cardinalities"
+"howardlau1999/rdmapp" -> "baotonglu/dex" ["e"=1]
 "electrum/ssb-dbgen" -> "Kyligence/ssb-kylin"
 "electrum/ssb-dbgen" -> "electrum/tpch-dbgen"
 "electrum/ssb-dbgen" -> "nuko-yokohama/ssb-postgres"
@@ -1574,8 +1800,24 @@ digraph G {
 "couchbase/sync_gateway" -> "spring-projects/spring-data-couchbase"
 "couchbase/sync_gateway" -> "couchbase/couchbase-lite-ios"
 "couchbase/sync_gateway" -> "couchbase/forestdb"
+"apache/cloudberry" -> "greenplum-db/gporca" ["e"=1]
+"TUDB-Labs/mLoRA" -> "SolidLao/GPTuner" ["e"=1]
+"axboe/fio" -> "pmem/pmdk" ["e"=1]
+"brianfrankcooper/YCSB" -> "pmem/pmdk" ["e"=1]
+"brianfrankcooper/YCSB" -> "pingcap/go-ycsb" ["e"=1]
+"brianfrankcooper/YCSB" -> "cmu-db/peloton" ["e"=1]
+"brianfrankcooper/YCSB" -> "basicthinker/YCSB-C" ["e"=1]
 "luooofan/miniob-2023" -> "zhaoyiping0622/miniob-2023"
 "luooofan/miniob-2023" -> "357447923/miniob_test"
+"weld-project/weld" -> "heavyai/heavydb" ["e"=1]
+"weld-project/weld" -> "cmu-db/peloton" ["e"=1]
+"weld-project/weld" -> "greenplum-db/gporca" ["e"=1]
+"kangkaisen/olap-performance" -> "yongwen/columbia" ["e"=1]
+"kangkaisen/olap-performance" -> "greenplum-db/gporca" ["e"=1]
+"huachaohuang/awesome-dbdev" -> "leanstore/leanstore" ["e"=1]
+"huachaohuang/awesome-dbdev" -> "cmu-db/noisepage" ["e"=1]
+"cmu-db/15445-bootcamp" -> "leanstore/leanstore" ["e"=1]
+"fastio/1store" -> "cmu-db/peloton" ["e"=1]
 "kohler/masstree-beta" -> "stephentu/silo"
 "kohler/masstree-beta" -> "rmind/masstree"
 "kohler/masstree-beta" -> "flode/ARTSynchronized"
@@ -1591,6 +1833,15 @@ digraph G {
 "kohler/masstree-beta" -> "sfu-dis/pibench"
 "kohler/masstree-beta" -> "bingmann/stx-btree"
 "kohler/masstree-beta" -> "sfu-dis/corobase"
+"gregrahn/tpcds-kit" -> "gregrahn/tpch-kit" ["e"=1]
+"gregrahn/tpcds-kit" -> "gregrahn/join-order-benchmark" ["e"=1]
+"gregrahn/tpcds-kit" -> "RyanMarcus/imdb_pg_dataset" ["e"=1]
+"gregrahn/tpcds-kit" -> "balsa-project/balsa" ["e"=1]
+"gregrahn/tpcds-kit" -> "zhaoyue-ntu/QueryFormer" ["e"=1]
+"gregrahn/tpcds-kit" -> "learnedsystems/BaoForPostgreSQL" ["e"=1]
+"gregrahn/tpcds-kit" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark" ["e"=1]
+"gregrahn/tpcds-kit" -> "electrum/ssb-dbgen" ["e"=1]
+"gregrahn/tpcds-kit" -> "electrum/tpch-dbgen" ["e"=1]
 "HewlettPackard/quartz" -> "DICL/FAST_FAIR"
 "HewlettPackard/quartz" -> "Pfzuo/Level-Hashing"
 "HewlettPackard/quartz" -> "HewlettPackard/Atlas"
@@ -1606,6 +1857,8 @@ digraph G {
 "HewlettPackard/quartz" -> "pmem/pmem-redis"
 "HewlettPackard/quartz" -> "pmem/pmemkv"
 "HewlettPackard/quartz" -> "NVSL/NOVA"
+"uwdb/Cosette" -> "SJTU-IPADS/SQLSolver" ["e"=1]
+"uwdb/Cosette" -> "sqlancer/sqlancer" ["e"=1]
 "bingmann/stx-btree" -> "tlx/tlx"
 "bingmann/stx-btree" -> "speedskater/hot"
 "bingmann/stx-btree" -> "learnedsystems/SOSD"
@@ -1624,6 +1877,9 @@ digraph G {
 "MonetDB/MonetDB-old" -> "TimoKersten/db-engine-paradigms"
 "MonetDB/MonetDB-old" -> "MonetDB/MonetDBLite-C"
 "HewlettPackard/nvthreads" -> "efeslab/agamotto"
+"rockset/rocksdb-cloud" -> "tikv/titan" ["e"=1]
+"rockset/rocksdb-cloud" -> "SpanDB/SpanDB" ["e"=1]
+"rockset/rocksdb-cloud" -> "wangziqi2013/BwTree" ["e"=1]
 "gregrahn/join-order-benchmark" -> "andreaskipf/learnedcardinalities"
 "gregrahn/join-order-benchmark" -> "learnedsystems/BaoForPostgreSQL"
 "gregrahn/join-order-benchmark" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark"
@@ -1655,8 +1911,14 @@ digraph G {
 "TsinghuaDatabaseGroup/DB-GPT" -> "itrummer/dbbert"
 "TsinghuaDatabaseGroup/DB-GPT" -> "cmu-db/ottertune"
 "viktorleis/vmcache" -> "tuhhosg/exmap"
+"daos-stack/daos" -> "pmem/pmdk" ["e"=1]
+"daos-stack/daos" -> "NVSL/linux-nova" ["e"=1]
+"daos-stack/daos" -> "pmem/pmemkv" ["e"=1]
 "pfl-cs/ALECE" -> "wuziniu/FactorJoin"
 "pfl-cs/ALECE" -> "StCarmen/PRICE"
+"UncP/Mushroom" -> "UncP/aili" ["e"=1]
+"UncP/Mushroom" -> "cmu-db/peloton" ["e"=1]
+"UncP/Mushroom" -> "utsaslab/pebblesdb" ["e"=1]
 "couchbase/couchbase-lite-core" -> "couchbase/couchbase-lite-C"
 "couchbase/couchbase-lite-core" -> "couchbase/couchbase-lite-java-ce-root"
 "couchbase/couchbase-lite-core" -> "couchbase/libcouchbase"
@@ -1665,6 +1927,7 @@ digraph G {
 "couchbase/couchbase-lite-core" -> "couchbaselabs/couchbase-mobile-tools"
 "couchbase/couchbase-lite-core" -> "couchbase/couchbase-lite-java-core"
 "tikv/rocksdb" -> "tikv/titan"
+"thu-db/huadb" -> "XuanheZhou/LearnedRewrite" ["e"=1]
 "Wind-Gone/awesome-olap-paper" -> "Wind-Gone/VLDBSS2022-ECNU-DaSE"
 "Wind-Gone/awesome-olap-paper" -> "Wind-Gone/awesome-ai4db-paper"
 "Wind-Gone/awesome-olap-paper" -> "Wind-Gone/OceanBase-Contest-Miniob"
@@ -1699,6 +1962,7 @@ digraph G {
 "sfu-dis/optiql" -> "sfu-dis/tesseract"
 "rmitbggroup/LearnedIndexDiskExp" -> "chaohcc/film"
 "rmitbggroup/LearnedIndexDiskExp" -> "luffy06/NFL"
+"facebookarchive/beringei" -> "cmu-db/peloton" ["e"=1]
 "couchbase/couchbase-lite-ios" -> "couchbase/sync_gateway"
 "couchbase/couchbase-lite-ios" -> "couchbase/couchbase-kafka-connector"
 "couchbase/couchbase-lite-ios" -> "couchbase/couchbase-spark-connector"
@@ -1710,6 +1974,26 @@ digraph G {
 "couchbase/couchbase-lite-ios" -> "spring-projects/spring-data-couchbase"
 "couchbase/couchbase-lite-ios" -> "couchbase/forestdb"
 "couchbase/couchbase-lite-ios" -> "couchbase/couchbase-lite-core"
+"RLGen/LakeBench" -> "dhofmann34/AutoOD_Demo" ["e"=1]
+"intel/pcm" -> "pmem/pmdk" ["e"=1]
+"pinterest/rocksplicator" -> "tikv/titan" ["e"=1]
+"pinterest/rocksplicator" -> "pmem/pmemkv" ["e"=1]
+"pinterest/rocksplicator" -> "utsaslab/pebblesdb" ["e"=1]
+"pinterest/rocksplicator" -> "wangziqi2013/BwTree" ["e"=1]
+"neozhaoliang/pywonderland" -> "begeekmyfriend/bplustree" ["e"=1]
+"vortex-data/vortex" -> "maxi-k/btrblocks" ["e"=1]
+"vortex-data/vortex" -> "cwida/fsst" ["e"=1]
+"vortex-data/vortex" -> "cwida/FastLanes" ["e"=1]
+"vortex-data/vortex" -> "spiraldb/fsst" ["e"=1]
+"postgrespro/aqo" -> "gregrahn/join-order-benchmark" ["e"=1]
+"postgrespro/aqo" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark" ["e"=1]
+"postgrespro/aqo" -> "DataManagementLab/deepdb-public" ["e"=1]
+"postgrespro/aqo" -> "learnedsystems/BaoForPostgreSQL" ["e"=1]
+"postgrespro/aqo" -> "learnedsystems/CEB" ["e"=1]
+"postgrespro/aqo" -> "antonismand/ReJOIN" ["e"=1]
+"postgrespro/aqo" -> "naru-project/naru" ["e"=1]
+"cmu-db/optd-original" -> "leanstore/leanstore" ["e"=1]
+"cmu-db/optd-original" -> "greenplum-db/gporca" ["e"=1]
 "Kyligence/ssb-kylin" -> "electrum/ssb-dbgen"
 "Kyligence/ssb-kylin" -> "Kyligence/kylin-tpch"
 "mitdbg/deneva" -> "yxymit/DBx1000"
@@ -1731,6 +2015,9 @@ digraph G {
 "pmem/pmemkv" -> "memKeyDB/memKeyDB"
 "pmem/pmemkv" -> "sfu-dis/bztree"
 "pmem/pmemkv" -> "sfu-dis/pibench"
+"tikv/rust-rocksdb" -> "tikv/rocksdb" ["e"=1]
+"facebookincubator/nimble" -> "cwida/FastLanes" ["e"=1]
+"facebookincubator/nimble" -> "maxi-k/btrblocks" ["e"=1]
 "alibaba/pilotscope" -> "balsa-project/balsa"
 "alibaba/pilotscope" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark"
 "alibaba/pilotscope" -> "learnedsystems/BaoForPostgreSQL"
@@ -1746,7 +2033,10 @@ digraph G {
 "alibaba/pilotscope" -> "sfu-db/AreCELearnedYet"
 "alibaba/pilotscope" -> "hyrise/index_selection_evaluation"
 "alibaba/pilotscope" -> "alibaba/smart-vscode-extension"
+"xapian/xapian" -> "malbrain/Btree-source-code" ["e"=1]
 "TsinghuaDatabaseGroup/DBMeeting" -> "for0nething/FACE-A-Normalizing-Flow-based-Cardinality-Estimator"
+"twitter/fatcache" -> "pmem/pmemkv" ["e"=1]
+"twitter/fatcache" -> "utsaslab/SplitFS" ["e"=1]
 "zhuyuqing/bestconf" -> "HustAIsGroup/CDBTune"
 "DAMO-NLP-SG/LLM-R2" -> "SJTU-IPADS/SQLSolver"
 "DAMO-NLP-SG/LLM-R2" -> "XuanheZhou/LearnedRewrite"
@@ -1754,6 +2044,7 @@ digraph G {
 "SolidLao/GPTuner" -> "itrummer/dbbert"
 "SolidLao/GPTuner" -> "PKU-DAIR/KnobsTuningEA"
 "SolidLao/GPTuner" -> "RyanMarcus/imdb_pg_dataset"
+"skyzh/write-you-a-vector-db" -> "leanstore/leanstore" ["e"=1]
 "couchbase/eventing" -> "couchbase/indexing"
 "liang-zibo/DACE" -> "wuziniu/unified_model"
 "kaiwenw/JoinGym" -> "yunjiazhang/adaptiveness_vs_learning"
@@ -1764,6 +2055,9 @@ digraph G {
 "xderui/miniob" -> "357447923/miniob_test"
 "SJTU-IPADS/SQLSolver" -> "DAMO-NLP-SG/LLM-R2"
 "baotonglu/dex" -> "sfu-dis/tesseract"
+"TileDB-Inc/TileDB" -> "heavyai/heavydb" ["e"=1]
+"TileDB-Inc/TileDB" -> "hyrise/hyrise" ["e"=1]
+"simongog/sdsl-lite" -> "efficient/SuRF" ["e"=1]
 "weAIDB/awsome-data-llm" -> "TsinghuaDatabaseGroup/AIDB"
 "weAIDB/awsome-data-llm" -> "Blondig/Lero-on-PostgreSQL"
 "weAIDB/awsome-data-llm" -> "hyrise/rl_index_selection"
@@ -1789,6 +2083,7 @@ digraph G {
 "cmu-db/ottertune" -> "Percona-Lab/tpcc-mysql" ["e"=1]
 "cmu-db/ottertune" -> "Qihoo360/mysql-sniffer" ["e"=1]
 "cmu-db/ottertune" -> "linmagit/QueryBot5000"
+"nitrite/nitrite-java" -> "couchbase/couchbase-lite-android" ["e"=1]
 "pmem/syscall_intercept" -> "NVSL/linux-nova"
 "pmem/syscall_intercept" -> "hpc/ior" ["e"=1]
 "pmem/syscall_intercept" -> "pmem/pmdk"
@@ -1821,6 +2116,7 @@ digraph G {
 "tlx/tlx" -> "stxxl/stxxl"
 "alibaba/app-controller" -> "alibaba/smart-vscode-extension"
 "alibaba/app-controller" -> "alibaba/pilotscope"
+"PKU-DAIR/Starter-Guide" -> "weAIDB/awsome-data-llm" ["e"=1]
 "hyrise/hyrise" -> "hyrise/sql-parser"
 "hyrise/hyrise" -> "leanstore/leanstore"
 "hyrise/hyrise" -> "cmu-db/noisepage"
@@ -1836,6 +2132,10 @@ digraph G {
 "hyrise/hyrise" -> "sfu-dis/corobase"
 "hyrise/hyrise" -> "oltpbenchmark/oltpbench"
 "hyrise/hyrise" -> "facebookincubator/velox" ["e"=1]
+"krareT/trkdb" -> "efficient/SuRF" ["e"=1]
+"cinemagoer/cinemagoer" -> "gregrahn/join-order-benchmark" ["e"=1]
+"cinemagoer/cinemagoer" -> "andreaskipf/learnedcardinalities" ["e"=1]
+"jarulraj/sqlcheck" -> "jarulraj/databaseology" ["e"=1]
 "swapnilh/whisper" -> "snalli/mnemosyne-gcc"
 "wangziqi2016/index-microbench" -> "flode/ARTSynchronized"
 "wangziqi2016/index-microbench" -> "utsaslab/RECIPE"
@@ -1851,10 +2151,18 @@ digraph G {
 "wangziqi2016/index-microbench" -> "viktorleis/perfevent"
 "wangziqi2016/index-microbench" -> "rafaelkallis/adaptive-radix-tree"
 "wangziqi2016/index-microbench" -> "sfu-dis/bztree"
+"Tessil/hat-trie" -> "armon/libart" ["e"=1]
+"Tessil/hat-trie" -> "gvinciguerra/PGM-index" ["e"=1]
+"antirez/rax" -> "armon/libart" ["e"=1]
+"antirez/rax" -> "kohler/masstree-beta" ["e"=1]
 "begeekmyfriend/kdtree" -> "begeekmyfriend/tash"
 "begeekmyfriend/kdtree" -> "begeekmyfriend/skiplist"
 "begeekmyfriend/kdtree" -> "begeekmyfriend/CuckooFilter"
 "begeekmyfriend/kdtree" -> "begeekmyfriend/bplustree"
+"lotus-data/lotus" -> "weAIDB/awsome-data-llm" ["e"=1]
+"uber/queryparser" -> "google/zetasql" ["e"=1]
+"nvfuse/nvfuse" -> "ut-osa/assise" ["e"=1]
+"TAG-Research/TAG-Bench" -> "weAIDB/awsome-data-llm" ["e"=1]
 "UWSysLab/NOPaxos" -> "UWSysLab/Eris"
 "UWSysLab/NOPaxos" -> "efficient/fasst" ["e"=1]
 "gregrahn/tpch-kit" -> "gregrahn/tpcds-kit" ["e"=1]
@@ -1905,6 +2213,8 @@ digraph G {
 "NicolasLM/bplustree" -> "begeekmyfriend/bplustree"
 "NicolasLM/bplustree" -> "zcbenz/BPlusTree"
 "NicolasLM/bplustree" -> "myui/btree4j"
+"yinqiwen/ardb" -> "couchbase/forestdb" ["e"=1]
+"facebook/mysql-5.6" -> "cmu-db/peloton" ["e"=1]
 "armon/libart" -> "rafaelkallis/adaptive-radix-tree"
 "armon/libart" -> "speedskater/hot"
 "armon/libart" -> "flode/ARTSynchronized"
@@ -1935,6 +2245,12 @@ digraph G {
 "heavyai/heavydb" -> "cmu-db/noisepage"
 "heavyai/heavydb" -> "apache/hawq" ["e"=1]
 "heavyai/heavydb" -> "hyrise/hyrise"
+"andikleen/pmu-tools" -> "pmem/pmdk" ["e"=1]
+"crate/crate" -> "heavyai/heavydb" ["e"=1]
+"crate/crate" -> "VoltDB/voltdb" ["e"=1]
+"ailidani/paxi" -> "UWSysLab/NOPaxos" ["e"=1]
+"ailidani/paxi" -> "yaledb/calvin" ["e"=1]
+"ailidani/paxi" -> "mitdbg/deneva" ["e"=1]
 "NVSL/linux-nova" -> "NVSL/NOVA"
 "NVSL/linux-nova" -> "linux-pmfs/pmfs"
 "NVSL/linux-nova" -> "NVSL/OptaneStudy"
@@ -2022,6 +2338,9 @@ digraph G {
 "heavyai/pymapd" -> "heavyai/heavyai.jl"
 "heavyai/pymapd" -> "heavyai/vega-transform-heavydb"
 "heavyai/pymapd" -> "heavyai/jupyterlab-heavyai"
+"utsaslab/crashmonkey" -> "utsaslab/SplitFS" ["e"=1]
+"utsaslab/crashmonkey" -> "linux-pmfs/pmfs" ["e"=1]
+"utsaslab/crashmonkey" -> "NVSL/linux-nova" ["e"=1]
 "couchbase/kv_engine" -> "couchbase/platform"
 "couchbase/kv_engine" -> "couchbase/couchstore"
 "couchbase/kv_engine" -> "couchbase/kafka-connect-couchbase"
@@ -2045,90 +2364,112 @@ digraph G {
 "hpides/viper" ["l"="1.634,13.329"]
 "chenzhangyu/Clevel-Hashing" ["l"="1.571,13.366"]
 "sfu-dis/ssd-vs-pm" ["l"="1.649,13.405"]
-"WukLab/pDPM" ["l"="1.793,14.281"]
+"WukLab/pDPM" ["l"="1.793,14.281", "c"=572]
 "efficient/cuckoofilter" ["l"="1.703,13.329"]
-"efficient/libcuckoo" ["l"="-19.728,-25.986"]
-"seiflotfy/cuckoofilter" ["l"="4.041,-8.157"]
-"FastFilter/fastfilter_cpp" ["l"="-19.108,-26.326"]
+"efficient/libcuckoo" ["l"="-19.728,-25.986", "c"=10]
+"seiflotfy/cuckoofilter" ["l"="4.041,-8.157", "c"=0]
+"FastFilter/fastfilter_cpp" ["l"="-19.108,-26.326", "c"=10]
 "efficient/SuRF" ["l"="1.743,13.399"]
 "begeekmyfriend/CuckooFilter" ["l"="1.782,13.27"]
-"MGunlogson/CuckooFilter4J" ["l"="9.193,-3.743"]
-"irfansharif/cfilter" ["l"="4.141,-8.07"]
+"MGunlogson/CuckooFilter4J" ["l"="9.193,-3.743", "c"=382]
+"irfansharif/cfilter" ["l"="4.141,-8.07", "c"=0]
 "wangziqi2013/BwTree" ["l"="1.729,13.383"]
-"FastFilter/xor_singleheader" ["l"="-19.118,-26.279"]
+"FastFilter/xor_singleheader" ["l"="-19.118,-26.279", "c"=10]
 "kohler/masstree-beta" ["l"="1.723,13.403"]
-"mavam/libbf" ["l"="39.402,37.82"]
+"mavam/libbf" ["l"="39.402,37.82", "c"=1288]
 "armon/libart" ["l"="1.676,13.395"]
-"AMDComputeLibraries/morton_filter" ["l"="-19.044,-26.37"]
+"AMDComputeLibraries/morton_filter" ["l"="-19.044,-26.37", "c"=10]
 "utsaslab/pebblesdb" ["l"="1.677,13.301"]
 "pmem/pmdk" ["l"="1.583,13.308"]
 "google/zetasql" ["l"="1.907,13.449"]
-"substrait-io/substrait" ["l"="-0.428,14.907"]
-"facebookincubator/velox" ["l"="-0.461,14.957"]
-"GoogleCloudPlatform/bigquery-utils" ["l"="44.882,16.378"]
+"substrait-io/substrait" ["l"="-0.428,14.907", "c"=729]
+"facebookincubator/velox" ["l"="-0.461,14.957", "c"=729]
+"GoogleCloudPlatform/bigquery-utils" ["l"="44.882,16.378", "c"=213]
 "hyrise/hyrise" ["l"="1.836,13.464"]
-"OpenLineage/OpenLineage" ["l"="-2.41,14.766"]
-"apache/calcite" ["l"="-2.682,14.818"]
+"OpenLineage/OpenLineage" ["l"="-2.41,14.766", "c"=43]
+"apache/calcite" ["l"="-2.682,14.818", "c"=43]
 "TimoKersten/db-engine-paradigms" ["l"="1.867,13.441"]
 "cmu-db/peloton" ["l"="1.808,13.463"]
-"apache/datafusion" ["l"="-0.445,14.993"]
-"uber/queryparser" ["l"="-2.359,14.844"]
+"apache/datafusion" ["l"="-0.445,14.993", "c"=729]
+"uber/queryparser" ["l"="-2.359,14.844", "c"=43]
 "cmu-db/noisepage" ["l"="1.846,13.489"]
-"apache/incubator-gluten" ["l"="-2.532,14.908"]
+"apache/incubator-gluten" ["l"="-2.532,14.908", "c"=43]
 "greenplum-db/gporca" ["l"="1.872,13.487"]
-"pganalyze/libpg_query" ["l"="2.907,13.579"]
-"MaterializeInc/materialize" ["l"="-0.498,15.038"]
-"cmu-db/bustub" ["l"="0.548,13.892"]
-"risinglightdb/risinglight" ["l"="0.552,13.994"]
-"pingcap/tiflash" ["l"="0.619,14.122"]
+"pganalyze/libpg_query" ["l"="2.907,13.579", "c"=257]
+"MaterializeInc/materialize" ["l"="-0.498,15.038", "c"=729]
+"pmwkaa/sophia" ["l"="-22.156,-26.433", "c"=101]
+"couchbase/forestdb" ["l"="1.777,13.079"]
+"cmu-db/bustub" ["l"="0.548,13.892", "c"=115]
+"risinglightdb/risinglight" ["l"="0.552,13.994", "c"=115]
+"pingcap/tiflash" ["l"="0.619,14.122", "c"=115]
 "leanstore/leanstore" ["l"="1.805,13.419"]
 "LumingSun/ML4DB-paper-list" ["l"="1.832,13.596"]
 "cmu-db/benchbase" ["l"="1.846,13.518"]
-"rxin/db-readings" ["l"="0.676,13.823"]
+"rxin/db-readings" ["l"="0.676,13.823", "c"=115]
 "yxymit/DBx1000" ["l"="1.772,13.436"]
-"pingcap/awesome-database-learning" ["l"="0.619,13.883"]
+"pingcap/awesome-database-learning" ["l"="0.619,13.883", "c"=115]
 "UncP/aili" ["l"="1.703,13.374"]
 "uber/aresdb" ["l"="1.962,13.497"]
 "heavyai/heavydb" ["l"="1.852,13.548"]
-"BlazingDB/blazingsql" ["l"="43.911,23.653"]
-"m3db/m3" ["l"="8.246,-8.89"]
-"apache/pinot" ["l"="-2.709,14.746"]
-"heterodb/pg-strom" ["l"="2.952,13.541"]
-"weld-project/weld" ["l"="-0.591,15.005"]
+"BlazingDB/blazingsql" ["l"="43.911,23.653", "c"=95]
+"m3db/m3" ["l"="8.246,-8.89", "c"=14]
+"apache/pinot" ["l"="-2.709,14.746", "c"=43]
+"heterodb/pg-strom" ["l"="2.952,13.541", "c"=257]
+"weld-project/weld" ["l"="-0.591,15.005", "c"=729]
 "uber/peloton" ["l"="2.07,13.503"]
-"filodb/FiloDB" ["l"="-2.542,17.11"]
-"uber/petastorm" ["l"="-2.71,17.193"]
-"facebookarchive/LogDevice" ["l"="0.956,13.976"]
-"facebookarchive/beringei" ["l"="0.986,14.038"]
-"uber/kraken" ["l"="8.061,-9.015"]
-"antonmks/Alenka" ["l"="-15.808,-8.27"]
-"pingcap/go-ycsb" ["l"="1.72,13.293"]
-"pingcap/go-tpc" ["l"="1.799,13.336"]
+"filodb/FiloDB" ["l"="-2.542,17.11", "c"=455]
+"uber/petastorm" ["l"="-2.71,17.193", "c"=455]
+"facebookarchive/LogDevice" ["l"="0.956,13.976", "c"=115]
+"facebookarchive/beringei" ["l"="0.986,14.038", "c"=115]
+"uber/kraken" ["l"="8.061,-9.015", "c"=14]
+"antonmks/Alenka" ["l"="-15.808,-8.27", "c"=1915]
+"pipelinedb/pipelinedb" ["l"="2.841,13.677", "c"=257]
+"lidaohang/ceph_study" ["l"="2.281,14.935", "c"=756]
 "tikv/titan" ["l"="1.649,13.272"]
+"pingcap/presentations" ["l"="0.591,14.163", "c"=115]
+"hydro-project/anna" ["l"="0.944,14.021", "c"=115]
+"pmem/pmemkv" ["l"="1.614,13.31"]
+"yaledb/calvin" ["l"="1.733,13.464"]
+"RedisLabs/memtier_benchmark" ["l"="9.087,-4.039", "c"=382]
+"yongman/tidis" ["l"="0.832,14.273", "c"=115]
+"distributedio/titan" ["l"="0.829,14.236", "c"=115]
+"openacid/slim" ["l"="4.055,-8.425", "c"=0]
+"tecbot/gorocksdb" ["l"="3.932,-8.232", "c"=0]
+"pingcap/go-ycsb" ["l"="1.72,13.293"]
+"dremio/gandiva" ["l"="-0.625,14.908", "c"=729]
+"intel/BDTK" ["l"="1.937,13.362"]
+"pisa-engine/pisa" ["l"="54.521,25.837", "c"=439]
+"gvinciguerra/PGM-index" ["l"="1.692,13.518"]
+"pingcap/go-tpc" ["l"="1.799,13.336"]
 "basicthinker/YCSB-C" ["l"="1.656,13.316"]
-"brianfrankcooper/YCSB" ["l"="0.454,-33.243"]
-"bytedance/terarkdb" ["l"="0.799,14.123"]
-"osrg/namazu" ["l"="0.754,14.001"]
-"tecbot/gorocksdb" ["l"="3.932,-8.232"]
-"cockroachdb/pebble" ["l"="4.08,-8.42"]
+"brianfrankcooper/YCSB" ["l"="0.454,-33.243", "c"=110]
+"bytedance/terarkdb" ["l"="0.799,14.123", "c"=115]
+"osrg/namazu" ["l"="0.754,14.001", "c"=115]
+"cockroachdb/pebble" ["l"="4.08,-8.42", "c"=0]
 "ustcadsl/diffkv" ["l"="1.67,13.261"]
-"yongman/tidis" ["l"="0.832,14.273"]
 "ls4154/YCSB-cpp" ["l"="1.689,13.275"]
-"tikv/pd" ["l"="0.644,14.243"]
-"Iceber/iouring-go" ["l"="7.336,-8.907"]
+"tikv/pd" ["l"="0.644,14.243", "c"=115]
+"Iceber/iouring-go" ["l"="7.336,-8.907", "c"=14]
+"twitter/rezolus" ["l"="-10.286,-6.462", "c"=5]
+"hse-project/hse" ["l"="1.703,13.257"]
+"enyim/EnyimMemcached" ["l"="-34.299,-1.388", "c"=8]
+"couchbase/couchbase-net-client" ["l"="1.934,12.89"]
+"dataform-co/dataform" ["l"="44.866,16.282", "c"=213]
 "abhisharma7/WiscKey" ["l"="1.653,13.297"]
 "theoanab/SILK-USENIXATC2019" ["l"="1.629,13.235"]
 "rescrv/HyperLevelDB" ["l"="1.669,13.232"]
 "PDS-Lab/MatrixKV" ["l"="1.634,13.279"]
 "SpanDB/SpanDB" ["l"="1.646,13.25"]
 "BLepers/KVell" ["l"="1.639,13.312"]
-"pmem/pmemkv" ["l"="1.614,13.31"]
 "HewlettPackard/quartz" ["l"="1.584,13.341"]
+"tikv/agatedb" ["l"="0.615,14.071", "c"=115]
 "pmem/pmem-redis" ["l"="1.568,13.297"]
 "pmem/redis" ["l"="1.544,13.256"]
 "memKeyDB/memKeyDB" ["l"="1.57,13.259"]
 "swapnilh/whisper" ["l"="1.571,13.323"]
 "utsaslab/SplitFS" ["l"="1.554,13.319"]
+"nhachicha/SnappyDB" ["l"="56.811,-14.068", "c"=123]
+"couchbase/couchbase-lite-android" ["l"="1.814,12.999"]
 "spring-projects/spring-data-couchbase" ["l"="1.764,13.024"]
 "couchbase/couchbase-kafka-connector" ["l"="1.775,13.022"]
 "couchbase/couchbase-spark-connector" ["l"="1.784,13.035"]
@@ -2138,8 +2479,6 @@ digraph G {
 "couchbase/gocb" ["l"="1.768,13.009"]
 "couchbase/sync_gateway" ["l"="1.804,13.02"]
 "couchbaselabs/node-ottoman" ["l"="1.76,12.988"]
-"couchbase/couchbase-lite-android" ["l"="1.814,12.999"]
-"couchbase/forestdb" ["l"="1.777,13.079"]
 "couchbase/couchbase-lite-ios" ["l"="1.788,12.999"]
 "couchbase/manifest" ["l"="1.743,13.003"]
 "intel/ipmctl" ["l"="1.55,13.286"]
@@ -2153,16 +2492,23 @@ digraph G {
 "mbreese/couchdb4j" ["l"="1.835,12.779"]
 "couchbaselabs/Android-Couchbase" ["l"="1.836,12.869"]
 "couchbaselabs/AndroidGrocerySync" ["l"="1.845,12.835"]
+"libspatialindex/libspatialindex" ["l"="39.642,23.793", "c"=157]
+"learnedsystems/SOSD" ["l"="1.696,13.478"]
+"Liuguanli/RSMI" ["l"="1.624,13.529"]
+"learnedsystems/RMI" ["l"="1.676,13.481"]
+"microsoft/ALEX" ["l"="1.685,13.501"]
+"CMU-SAFARI/MQSim" ["l"="1.958,15.094", "c"=756]
 "stxxl/stxxl" ["l"="1.577,13.486"]
-"thrill/thrill" ["l"="-19.977,-26.444"]
+"thrill/thrill" ["l"="-19.977,-26.444", "c"=10]
 "tlx/tlx" ["l"="1.679,13.425"]
-"cosmo-team/cosmo" ["l"="54.294,26.146"]
+"cosmo-team/cosmo" ["l"="54.294,26.146", "c"=439]
 "lh3/ropebwt2" ["l"="1.534,13.508"]
 "thomasmoelhave/tpie" ["l"="1.526,13.527"]
+"johnzeng/rocksdb-doc-cn" ["l"="0.653,14.07", "c"=115]
+"cld378632668/Wisckey_SeparateKVStorage" ["l"="1.655,13.332"]
 "stephentu/silo" ["l"="1.737,13.434"]
 "sfu-dis/ermia" ["l"="1.727,13.419"]
 "Cavalia/Cavalia" ["l"="1.761,13.42"]
-"yaledb/calvin" ["l"="1.733,13.464"]
 "sfu-dis/corobase" ["l"="1.71,13.428"]
 "readablesystems/sto" ["l"="1.765,13.46"]
 "efficient/cicada-engine" ["l"="1.719,13.447"]
@@ -2171,18 +2517,19 @@ digraph G {
 "oltpbenchmark/oltpbench" ["l"="1.794,13.485"]
 "HewlettPackard/foedus" ["l"="1.595,13.42"]
 "luyi0619/aria" ["l"="1.753,13.497"]
-"efficient/fasst" ["l"="1.802,14.395"]
+"efficient/fasst" ["l"="1.802,14.395", "c"=572]
 "NYU-NEWS/janus" ["l"="1.632,13.566"]
 "DataManagementLab/ScaleStore" ["l"="1.812,13.356"]
+"aerospike/aerospike-server" ["l"="-3.247,20.187", "c"=709]
 "CGCL-codes/HME" ["l"="1.536,13.358"]
 "CGCL-codes/mioDB" ["l"="1.489,13.365"]
 "ut-osa/strata" ["l"="1.507,13.297"]
 "ut-osa/assise" ["l"="1.466,13.268"]
 "SeKwonLee/WORT" ["l"="1.601,13.373"]
 "BenTsai7/SCM-DRAM-FPTree" ["l"="1.587,13.374"]
-"yinqiwen/ardb" ["l"="0.915,14.206"]
-"wiredtiger/wiredtiger" ["l"="0.461,-33.314"]
-"percona/PerconaFT" ["l"="0.69,14.554"]
+"yinqiwen/ardb" ["l"="0.915,14.206", "c"=115]
+"wiredtiger/wiredtiger" ["l"="0.461,-33.314", "c"=110]
+"percona/PerconaFT" ["l"="0.69,14.554", "c"=115]
 "IMCG/nvm-malloc" ["l"="1.625,13.339"]
 "pmem/libpmemobj-cpp" ["l"="1.604,13.323"]
 "Apress/programming-persistent-memory" ["l"="1.602,13.341"]
@@ -2193,21 +2540,22 @@ digraph G {
 "anikristo/LearnedSort" ["l"="1.669,13.467"]
 "flode/BwTree" ["l"="1.748,13.366"]
 "rmind/masstree" ["l"="1.723,13.369"]
-"learnedsystems/RMI" ["l"="1.676,13.481"]
-"Pfzuo/Path-Hashing" ["l"="1.839,14.242"]
+"Pfzuo/Path-Hashing" ["l"="1.839,14.242", "c"=572]
 "LPD-EPFL/CLHT" ["l"="1.581,13.385"]
 "apavlo/py-tpcc" ["l"="1.86,13.464"]
 "mongodb-labs/py-tpcc" ["l"="1.89,13.427"]
-"dranov/protocol-bugs-list" ["l"="1.037,13.653"]
+"dranov/protocol-bugs-list" ["l"="1.037,13.653", "c"=115]
 "LPD-EPFL/ASCYLIB" ["l"="1.601,13.398"]
 "gramoli/synchrobench" ["l"="1.575,13.413"]
 "LPD-EPFL/ssmem" ["l"="1.56,13.402"]
-"utsaslab/dinomo" ["l"="1.792,14.268"]
-"thustorage/osdi21ae" ["l"="1.765,14.293"]
+"utsaslab/dinomo" ["l"="1.792,14.268", "c"=572]
+"thustorage/osdi21ae" ["l"="1.765,14.293", "c"=572]
 "madsys-dev/ROART" ["l"="1.619,13.326"]
+"urcu/userspace-rcu" ["l"="1.948,14.331", "c"=572]
+"NVSL/linux-nova" ["l"="1.556,13.337"]
 "cwida/fsst" ["l"="1.823,13.39"]
 "cwida/public_bi_benchmark" ["l"="1.896,13.374"]
-"fzhedu/db-imv" ["l"="-5.871,19.688"]
+"fzhedu/db-imv" ["l"="-5.871,19.688", "c"=564]
 "viktorleis/perfevent" ["l"="1.777,13.399"]
 "maxi-k/btrblocks" ["l"="1.876,13.38"]
 "lingo-db/lingo-db" ["l"="1.886,13.403"]
@@ -2221,38 +2569,46 @@ digraph G {
 "Infosys/CouchbaseLiteTester" ["l"="1.883,12.884"]
 "MonetDB/sqlalchemy-monetdb" ["l"="2.008,13.39"]
 "MonetDB/pymonetdb" ["l"="1.984,13.406"]
+"hydro-project/fluent" ["l"="0.951,14.063", "c"=115]
 "couchbase/couchbase-lite-C" ["l"="1.855,12.929"]
 "couchbase/couchbase-lite-core" ["l"="1.831,12.937"]
+"Percona-Lab/sysbench-tpcc" ["l"="8.754,-4.357", "c"=382]
 "TPC-Council/HammerDB" ["l"="1.887,13.51"]
-"Percona-Lab/sysbench-tpcc" ["l"="8.754,-4.357"]
+"hchasestevens/hchasestevens.github.io" ["l"="47.363,28.668", "c"=89]
+"NicolasLM/bplustree" ["l"="1.658,13.57"]
 "citusdata/citus-benchmark" ["l"="1.948,13.525"]
-"Percona-Lab/tpcc-mysql" ["l"="8.839,-4.335"]
-"pgsql-io/benchmarksql" ["l"="8.687,-4.437"]
+"Percona-Lab/tpcc-mysql" ["l"="8.839,-4.335", "c"=382]
+"pgsql-io/benchmarksql" ["l"="8.687,-4.437", "c"=382]
 "anse1/sqlsmith" ["l"="1.901,13.545"]
-"EnterpriseDB/zheap" ["l"="2.908,13.509"]
-"postgrespro/aqo" ["l"="2.927,13.495"]
-"akopytov/sysbench" ["l"="8.951,-4.43"]
+"EnterpriseDB/zheap" ["l"="2.908,13.509", "c"=257]
+"postgrespro/aqo" ["l"="2.927,13.495", "c"=257]
+"akopytov/sysbench" ["l"="8.951,-4.43", "c"=382]
 "sqlancer/sqlancer" ["l"="1.924,13.522"]
-"gregrahn/tpcds-kit" ["l"="-2.563,14.877"]
-"cybertec-postgresql/pg_show_plans" ["l"="2.9,13.531"]
+"gregrahn/tpcds-kit" ["l"="-2.563,14.877", "c"=43]
+"cybertec-postgresql/pg_show_plans" ["l"="2.9,13.531", "c"=257]
 "yingjunwu/DBMS-Indexology" ["l"="1.704,13.414"]
-"learnedsystems/SOSD" ["l"="1.696,13.478"]
-"oscarlab/Be-Tree" ["l"="0.72,14.646"]
+"oscarlab/Be-Tree" ["l"="0.72,14.646", "c"=115]
 "stanford-futuredata/index-baselines" ["l"="1.645,13.478"]
+"ucbrise/anna" ["l"="0.917,14.026", "c"=115]
+"psankar/simplefs" ["l"="-22.441,-23.322", "c"=496]
+"enpeizhao/duck_db" ["l"="-18.405,-28.156", "c"=62]
+"zcbenz/BPlusTree" ["l"="1.721,13.498"]
+"niteshkumartiwari/B-Plus-Tree" ["l"="1.726,13.558"]
 "myui/btree4j" ["l"="1.571,13.697"]
 "andylamp/BPlusTree" ["l"="1.533,13.74"]
 "ggrandes/kvstore" ["l"="1.568,13.735"]
 "HustAIsGroup/CDBTune" ["l"="1.822,13.62"]
-"shxinding/ResTune" ["l"="7.238,-10.823"]
+"shxinding/ResTune" ["l"="7.238,-10.823", "c"=515]
 "itrummer/dbbert" ["l"="1.814,13.683"]
 "KqSMea8/CDBTune" ["l"="1.802,13.64"]
 "TsinghuaDatabaseGroup/AI4DBCode" ["l"="1.855,13.632"]
-"PKU-DAIR/DBTune" ["l"="7.26,-10.89"]
+"PKU-DAIR/DBTune" ["l"="7.26,-10.89", "c"=515]
 "learnedsystems/BaoForPostgreSQL" ["l"="1.872,13.618"]
 "linmagit/QueryBot5000" ["l"="1.849,13.594"]
 "Legend147/HashKV" ["l"="1.659,13.254"]
 "epfl-labos/TRIAD" ["l"="1.634,13.183"]
 "WangEP/SLM-DB" ["l"="1.631,13.268"]
+"GoogleCloudPlatform/DataflowTemplates" ["l"="44.862,16.45", "c"=213]
 "andreaskipf/learnedcardinalities" ["l"="1.894,13.606"]
 "naru-project/naru" ["l"="1.904,13.613"]
 "neurocard/neurocard" ["l"="1.914,13.62"]
@@ -2275,54 +2631,57 @@ digraph G {
 "malbrain/Btree-source-code" ["l"="1.757,13.278"]
 "malbrain/database" ["l"="1.778,13.223"]
 "runshenzhu/palmtree" ["l"="1.733,13.326"]
+"open-mpi/hwloc" ["l"="1.985,14.414", "c"=572]
 "forax/exotic" ["l"="1.37,13.428"]
 "forax/beautiful_logger" ["l"="1.33,13.43"]
 "efficient/HOPE" ["l"="1.736,13.347"]
 "cuckoo-trie/cuckoo-trie-code" ["l"="1.7,13.356"]
+"CorfuDB/CorfuDB" ["l"="1.003,13.811", "c"=115]
 "thawk105/ccbench" ["l"="1.842,13.319"]
 "rotaki/tpcc-runner" ["l"="1.866,13.281"]
 "couchbase/couchbase-lite-net" ["l"="1.89,12.927"]
-"couchbase/couchbase-net-client" ["l"="1.934,12.89"]
 "couchbaselabs/Couchbase.Lite.Mapping" ["l"="1.917,12.917"]
+"SPFlow/SPFlow" ["l"="-1.628,-41.356", "c"=963]
 "PDS-Lab/GearDB" ["l"="1.615,13.246"]
 "couchbase/couchbase-lite-java-core" ["l"="1.801,12.945"]
 "couchbase/couchbase-lite-java" ["l"="1.78,12.927"]
 "couchbase/couchbase-lite-java-listener" ["l"="1.795,12.924"]
 "warlo/rocksdb-statistics" ["l"="1.597,13.158"]
 "ericaloha/L2SM" ["l"="1.615,13.185"]
+"OpenMPDK/KVSSD" ["l"="1.969,15.117", "c"=756]
+"thustorage/octopus" ["l"="1.813,14.386", "c"=572]
+"linux-pmfs/pmfs" ["l"="1.534,13.329"]
+"NVSL/NOVA" ["l"="1.522,13.35"]
+"erikgrinaker/readings" ["l"="0.524,13.962", "c"=115]
 "begeekmyfriend/skiplist" ["l"="1.808,13.268"]
 "begeekmyfriend/tash" ["l"="1.808,13.247"]
 "begeekmyfriend/kdtree" ["l"="1.799,13.288"]
 "supermt/FEAT_7.11" ["l"="1.605,13.199"]
 "tikv/rocksdb" ["l"="1.626,13.216"]
 "pmem/pmem-rocksdb" ["l"="1.598,13.257"]
-"tikv/raft-engine" ["l"="0.639,14.116"]
-"SJTU-IPADS/xstore" ["l"="1.816,14.278"]
-"johnzeng/rocksdb-doc-cn" ["l"="0.653,14.07"]
-"UncP/Mushroom" ["l"="0.729,14.008"]
+"tikv/raft-engine" ["l"="0.639,14.116", "c"=115]
+"SJTU-IPADS/xstore" ["l"="1.816,14.278", "c"=572]
+"UncP/Mushroom" ["l"="0.729,14.008", "c"=115]
 "bcaine/learned_indices" ["l"="1.662,13.482"]
 "yangjufo/Learned-Indexes" ["l"="1.651,13.508"]
 "mikebenfield/Learned-Index-Structures" ["l"="1.635,13.489"]
 "iotlpf/FINEdex" ["l"="1.648,13.497"]
 "learnedsystems/RadixSpline" ["l"="1.666,13.496"]
+"rjl493456442/leveldb-handbook" ["l"="0.514,14.032", "c"=115]
 "pfl-cs/LISA" ["l"="1.626,13.514"]
 "daravinds/Learned-Index-Structures" ["l"="1.632,13.544"]
 "Jiacheng-WU/lipp" ["l"="1.656,13.492"]
 "amorten/openlis" ["l"="1.617,13.545"]
-"microsoft/ALEX" ["l"="1.685,13.501"]
-"Liuguanli/RSMI" ["l"="1.624,13.529"]
-"gvinciguerra/PGM-index" ["l"="1.692,13.518"]
 "edydfang/Bourbon" ["l"="1.617,13.427"]
 "curtis-sun/TLI" ["l"="1.666,13.511"]
 "gre4index/GRE" ["l"="1.66,13.501"]
-"cld378632668/Wisckey_SeparateKVStorage" ["l"="1.655,13.332"]
 "hyrise/index_selection_evaluation" ["l"="1.858,13.672"]
 "couchbaselabs/ToDoLite-Android" ["l"="1.872,12.989"]
 "couchbaselabs/GrocerySync-Android" ["l"="1.899,12.999"]
 "couchbaselabs/couchbase-lite-tutorial-android" ["l"="1.892,12.973"]
 "adrianblancode/Materialist" ["l"="1.917,12.978"]
 "wuxb45/wormhole" ["l"="1.683,13.37"]
-"cosmoss-jigu/hydralist" ["l"="0.751,14.742"]
+"cosmoss-jigu/hydralist" ["l"="0.751,14.742", "c"=115]
 "sudarsunkannan/lsm_nvm" ["l"="1.618,13.293"]
 "antonismand/ReJOIN" ["l"="1.903,13.657"]
 "HustAIsGroup/AlphaJoin" ["l"="1.923,13.694"]
@@ -2334,10 +2693,13 @@ digraph G {
 "heavyai/omnisci-vega-mapboxgl-demo-philly-parking" ["l"="1.731,13.752"]
 "balsa-project/balsa" ["l"="1.889,13.647"]
 "AlibabaIncubator/Lero-on-PostgreSQL" ["l"="1.904,13.671"]
+"cwida/ALP" ["l"="1.894,13.351"]
 "karan1149/DeepBloom" ["l"="1.587,13.518"]
 "luffy06/NFL" ["l"="1.648,13.487"]
 "couchbase/indexing" ["l"="1.679,12.962"]
 "couchbase/eventing" ["l"="1.699,12.974"]
+"InitialDLab/SampleJoin" ["l"="-18.653,-26.415", "c"=10]
+"wuziniu/BayesCard" ["l"="1.928,13.631"]
 "lenovo/memcached-pmem" ["l"="1.527,13.259"]
 "heavyai/vega-transform-heavydb" ["l"="1.747,13.711"]
 "heavyai/jupyterlab-heavyai" ["l"="1.76,13.722"]
@@ -2352,130 +2714,144 @@ digraph G {
 "shankur/autoindex" ["l"="1.841,13.709"]
 "couchbase/platform" ["l"="1.659,12.898"]
 "couchbase/phosphor" ["l"="1.641,12.893"]
+"numactl/numactl" ["l"="2.006,14.436", "c"=572]
 "begeekmyfriend/bplustree" ["l"="1.767,13.339"]
-"zcbenz/BPlusTree" ["l"="1.721,13.498"]
-"begeekmyfriend/leetcode" ["l"="-17.902,-27.961"]
+"begeekmyfriend/leetcode" ["l"="-17.902,-27.961", "c"=62]
 "embedded2016/bplus-tree" ["l"="1.755,13.476"]
-"Tencent/phxpaxos" ["l"="0.907,14.06"]
-"baidu/braft" ["l"="0.864,14.038"]
-"willemt/raft" ["l"="0.816,14.01"]
-"cloudwu/coroutine" ["l"="-18.282,-28.325"]
-"google/btree" ["l"="3.936,-8.399"]
-"logcabin/logcabin" ["l"="0.877,13.966"]
+"Tencent/phxpaxos" ["l"="0.907,14.06", "c"=115]
+"baidu/braft" ["l"="0.864,14.038", "c"=115]
+"willemt/raft" ["l"="0.816,14.01", "c"=115]
+"cloudwu/coroutine" ["l"="-18.282,-28.325", "c"=62]
+"google/btree" ["l"="3.936,-8.399", "c"=0]
+"logcabin/logcabin" ["l"="0.877,13.966", "c"=115]
 "Kronuz/cpp-btree" ["l"="1.689,13.599"]
 "frozenca/BTree" ["l"="1.676,13.645"]
 "jeffplaisance/BppTree" ["l"="1.652,13.639"]
+"voldemort/voldemort" ["l"="-3.257,20.035", "c"=709]
 "s3team/Squirrel" ["l"="1.964,13.547"]
 "PSU-Security-Universe/sqlright" ["l"="1.982,13.536"]
-"zhangysh1995/awesome-database-testing" ["l"="0.511,14.131"]
-"testsmt/yinyang" ["l"="36.426,-1.718"]
-"PingCAP-QE/go-sqlancer" ["l"="0.54,14.147"]
-"tingsu/Stoat" ["l"="36.459,-1.693"]
+"zhangysh1995/awesome-database-testing" ["l"="0.511,14.131", "c"=115]
+"testsmt/yinyang" ["l"="36.426,-1.718", "c"=795]
+"PingCAP-QE/go-sqlancer" ["l"="0.54,14.147", "c"=115]
+"tingsu/Stoat" ["l"="36.459,-1.693", "c"=795]
 "sslab-gatech/apollo" ["l"="1.941,13.551"]
+"Tencent/TBase" ["l"="0.758,14.111", "c"=115]
+"opengauss-mirror/openGauss-server" ["l"="0.711,14.125", "c"=115]
+"intel/intel-cmt-cat" ["l"="6.786,-6.237", "c"=335]
 "trigonak/ccbench" ["l"="1.519,13.428"]
-"dvyukov/relacy" ["l"="-41.378,-35.512"]
+"dvyukov/relacy" ["l"="-41.378,-35.512", "c"=91]
 "yoavz1997/Efficient-Lock-Free-Durable-Sets" ["l"="1.543,13.435"]
 "chaoran/fast-wait-free-queue" ["l"="1.449,13.46"]
 "rlu-sync/rlu" ["l"="1.51,13.447"]
 "pramalhe/ConcurrencyFreaks" ["l"="1.451,13.428"]
 "cmu-db/ottertune" ["l"="1.819,13.555"]
-"ngaut/builddatabase" ["l"="0.712,14.05"]
+"ngaut/builddatabase" ["l"="0.712,14.05", "c"=115]
 "VoltDB/voltdb" ["l"="1.826,13.434"]
-"open-mpi/hwloc" ["l"="1.985,14.414"]
+"ept/hermitage" ["l"="0.754,13.771", "c"=115]
 "memkind/jemalloc" ["l"="1.566,13.236"]
-"LLNL/GOTCHA" ["l"="2.053,14.891"]
-"geopm/geopm" ["l"="6.518,-6.549"]
-"OpenMPDK/SMDK" ["l"="1.701,14.249"]
-"apache/kudu" ["l"="-2.635,14.708"]
-"apache/geode" ["l"="-2.646,14.657"]
-"cloudera/kudu" ["l"="-2.59,14.661"]
-"apache/ignite" ["l"="-2.764,14.653"]
-"cloudera/Impala" ["l"="-2.629,14.686"]
-"niteshkumartiwari/B-Plus-Tree" ["l"="1.726,13.558"]
-"enpeizhao/duck_db" ["l"="-18.405,-28.156"]
-"daos-stack/daos" ["l"="2.174,14.957"]
-"NVSL/linux-nova" ["l"="1.556,13.337"]
-"spdk/spdk" ["l"="6.221,-4.927"]
-"linux-pmfs/pmfs" ["l"="1.534,13.329"]
-"efficient/rdma_bench" ["l"="1.849,14.4"]
+"LLNL/GOTCHA" ["l"="2.053,14.891", "c"=756]
+"geopm/geopm" ["l"="6.518,-6.549", "c"=335]
+"OpenMPDK/SMDK" ["l"="1.701,14.249", "c"=572]
+"BaronStack/book_paper" ["l"="0.537,14.083", "c"=115]
+"goossaert/kingdb" ["l"="0.588,14.627", "c"=115]
+"apache/kudu" ["l"="-2.635,14.708", "c"=43]
+"apache/geode" ["l"="-2.646,14.657", "c"=43]
+"cloudera/kudu" ["l"="-2.59,14.661", "c"=43]
+"apache/ignite" ["l"="-2.764,14.653", "c"=43]
+"cloudera/Impala" ["l"="-2.629,14.686", "c"=43]
+"daos-stack/daos" ["l"="2.174,14.957", "c"=756]
+"spdk/spdk" ["l"="6.221,-4.927", "c"=749]
+"efficient/rdma_bench" ["l"="1.849,14.4", "c"=572]
+"facebook/CacheLib" ["l"="0.887,14.104", "c"=115]
 "rusnikola/lfqueue" ["l"="1.422,13.486"]
 "cksystemsgroup/scal" ["l"="1.395,13.487"]
-"MengRao/WFMPMC" ["l"="-20.265,-25.953"]
+"MengRao/WFMPMC" ["l"="-20.265,-25.953", "c"=10]
 "hyrise/sql-parser" ["l"="1.821,13.489"]
 "cybergarage/usql" ["l"="1.88,13.468"]
 "electrum/tpch-dbgen" ["l"="1.911,13.589"]
-"CDDSCLab/training-plan" ["l"="0.494,13.932"]
+"CDDSCLab/training-plan" ["l"="0.494,13.932", "c"=115]
 "cwida/FastLanes" ["l"="1.875,13.356"]
-"cwida/ALP" ["l"="1.894,13.351"]
-"powturbo/TurboPFor-Integer-Compression" ["l"="-19.339,-26.166"]
-"vortex-data/vortex" ["l"="-0.315,14.946"]
-"cmu-db/optd-original" ["l"="0.479,14.041"]
+"powturbo/TurboPFor-Integer-Compression" ["l"="-19.339,-26.166", "c"=10]
+"vortex-data/vortex" ["l"="-0.315,14.946", "c"=729]
+"cmu-db/optd-original" ["l"="0.479,14.041", "c"=115]
 "spiraldb/fsst" ["l"="1.892,13.326"]
-"fast-pack/FastPFOR" ["l"="-19.315,-26.156"]
+"fast-pack/FastPFOR" ["l"="-19.315,-26.156", "c"=10]
+"thomvaill/log4brains" ["l"="23.961,-31.495", "c"=304]
+"couchbase/kafka-connect-couchbase" ["l"="1.653,12.862"]
 "couchbase/iOS-Couchbase" ["l"="1.826,12.844"]
 "couchbase/couchbase-jvm-core" ["l"="1.734,13.047"]
+"Seagate/cortx" ["l"="26.143,-26.858", "c"=32]
 "shuaimu/rococo" ["l"="1.617,13.585"]
+"indeedeng/lsmtree" ["l"="-5.611,10.789", "c"=452]
+"ChrisWhealy/DistributedSystemNotes" ["l"="0.591,13.706", "c"=115]
+"jarulraj/databaseology" ["l"="1.801,13.383"]
 "couchbaselabs/Linq2Couchbase" ["l"="1.96,12.864"]
 "couchbaselabs/couchbase-net-examples" ["l"="1.94,12.862"]
 "couchbaselabs/couchbase-aspnet" ["l"="1.964,12.89"]
 "NVSL/PMFS-new" ["l"="1.526,13.301"]
 "RutgersCSSystems/CrossFS" ["l"="1.507,13.276"]
 "sslab-gatech/fxmark" ["l"="1.5,13.343"]
-"resource-disaggregation/blk-switch" ["l"="1.883,14.146"]
+"resource-disaggregation/blk-switch" ["l"="1.883,14.146", "c"=572]
 "HewlettPackard/foedus_code" ["l"="1.655,13.445"]
 "HewlettPackard/Atlas" ["l"="1.534,13.379"]
 "FabricAttachedMemory/Emulation" ["l"="1.539,13.41"]
 "zxjcarrot/spitfire" ["l"="1.631,13.297"]
 "HNUSystemsLab/HashEvaluation" ["l"="1.541,13.394"]
-"thustorage/Sherman" ["l"="1.786,14.298"]
-"s3team/Polyglot" ["l"="-41.316,-36.272"]
+"thustorage/Sherman" ["l"="1.786,14.298", "c"=572]
+"s3team/Polyglot" ["l"="-41.316,-36.272", "c"=91]
 "Griffin-2022/Griffin" ["l"="1.999,13.554"]
 "gvinciguerra/PyGM" ["l"="1.692,13.566"]
 "bingmann/stx-btree" ["l"="1.68,13.439"]
+"jepsen-io/elle" ["l"="0.822,13.706", "c"=115]
+"amplab/succinct" ["l"="-2.71,17.259", "c"=455]
 "TsinghuaDatabaseGroup/AIDB" ["l"="1.856,13.613"]
 "alibaba/pilotscope" ["l"="1.889,13.66"]
 "weAIDB/awsome-data-llm" ["l"="1.862,13.654"]
 "couchbaselabs/vagrants" ["l"="1.981,12.841"]
-"hse-project/hse" ["l"="1.703,13.257"]
 "hse-project/mpool" ["l"="1.726,13.219"]
 "madthanu/alice" ["l"="1.721,13.185"]
+"shiyanhui/libcsp" ["l"="-22.206,-26.023", "c"=101]
+"uber/fiber" ["l"="-2.8,17.242", "c"=455]
 "Blondig/Lero-on-PostgreSQL" ["l"="1.875,13.668"]
 "IntelLabs/Auto-Steer" ["l"="1.916,13.716"]
 "yxymit/Sundial" ["l"="1.795,13.401"]
 "Henning1/resql" ["l"="2.057,13.374"]
 "TU-Berlin-DIMA/Hawk-VLDBJ" ["l"="2.05,13.396"]
 "XuanheZhou/AutoIndex" ["l"="1.858,13.69"]
+"satanson/cpp_etudes" ["l"="0.498,14.041", "c"=115]
+"pingcap/tidb-dashboard" ["l"="0.554,14.302", "c"=115]
+"zanmato1984/cura" ["l"="2.067,13.419"]
 "couchbase/go-couchbase" ["l"="1.738,12.962"]
 "sfu-dis/mosaicdb" ["l"="1.642,13.425"]
 "sfu-dis/tesseract" ["l"="1.642,13.438"]
 "sfu-dis/optiql" ["l"="1.655,13.424"]
 "baotonglu/dex" ["l"="1.662,13.434"]
 "innerr/ticat" ["l"="1.832,13.292"]
+"nushoin/RTree" ["l"="39.717,23.723", "c"=157]
 "LineairDB/LineairDB" ["l"="1.886,13.261"]
 "learnedsystems/LearnedSecondaryIndex" ["l"="1.624,13.493"]
 "JiananYuan/FITing-Tree" ["l"="1.641,13.512"]
 "aysusayin/FITing-Tree" ["l"="1.656,13.536"]
 "gdymind/Awesome-learned-index" ["l"="1.619,13.47"]
-"cosmoss-jigu/pactree" ["l"="0.744,14.72"]
+"cosmoss-jigu/pactree" ["l"="0.744,14.72", "c"=115]
 "hyrise/rl_index_selection" ["l"="1.845,13.693"]
 "DataManagementLab/zero-shot-cost-estimation" ["l"="1.892,13.7"]
 "malingaperera/DBABandits" ["l"="1.862,13.707"]
 "malingaperera/HMAB" ["l"="1.855,13.719"]
 "JC-Shi/Learned-Index-Benefits" ["l"="1.873,13.702"]
 "anilshanbhag/crystal" ["l"="2.028,13.419"]
-"zanmato1984/cura" ["l"="2.067,13.419"]
 "jiashenC/gpudb-char-and-opt" ["l"="2.052,13.428"]
 "couchbase/libcouchbase" ["l"="1.828,12.9"]
 "couchbaselabs/libcouchbase-cxx" ["l"="1.811,12.871"]
 "padsys/PMIdioBench" ["l"="1.553,13.305"]
-"TheNetAdmin/LENS-VANS" ["l"="31.243,-2.856"]
+"TheNetAdmin/LENS-VANS" ["l"="31.243,-2.856", "c"=1037]
+"zxjcarrot/DPTree-code" ["l"="-4.032,19.776", "c"=564]
 "wuziniu/FactorJoin" ["l"="1.91,13.647"]
 "parimarjan/learned-cardinalities" ["l"="1.948,13.668"]
 "for0nething/FACE-A-Normalizing-Flow-based-Cardinality-Estimator" ["l"="1.918,13.682"]
-"thustorage/pacman" ["l"="1.758,14.309"]
-"SJTU-IPADS/librdpma" ["l"="1.686,14.281"]
-"pmem/rpma" ["l"="1.813,14.352"]
-"wuziniu/BayesCard" ["l"="1.928,13.631"]
+"thustorage/pacman" ["l"="1.758,14.309", "c"=572]
+"SJTU-IPADS/librdpma" ["l"="1.686,14.281", "c"=572]
+"pmem/rpma" ["l"="1.813,14.352", "c"=572]
 "pfl-cs/ALECE" ["l"="1.921,13.657"]
 "RyanMarcus/plr" ["l"="1.568,13.45"]
 "ustcadsl/unikv" ["l"="1.651,13.232"]
@@ -2484,40 +2860,56 @@ digraph G {
 "toziegler/zig-zipf" ["l"="1.883,13.286"]
 "XuanheZhou/LearnedRewrite" ["l"="1.858,13.755"]
 "DAMO-NLP-SG/LLM-R2" ["l"="1.858,13.791"]
+"LMDB/lmdb" ["l"="-22.19,-26.484", "c"=101]
+"huachaohuang/ekv" ["l"="0.595,14.083", "c"=115]
 "viktorleis/mmapbench" ["l"="1.841,13.352"]
 "viktorleis/vmcache" ["l"="1.859,13.334"]
 "mitdbg/treeline" ["l"="1.849,13.373"]
 "mutable-org/mutable" ["l"="1.858,13.401"]
+"HypoPG/hypopg" ["l"="2.826,13.535", "c"=257]
 "pfl-cs/DILI" ["l"="1.611,13.512"]
 "tawnysky/PLIN" ["l"="1.632,13.479"]
 "rmitbggroup/LearnedIndexDiskExp" ["l"="1.634,13.505"]
 "chaohcc/film" ["l"="1.645,13.522"]
-"jarulraj/databaseology" ["l"="1.801,13.383"]
+"microsoft/rDSN" ["l"="0.935,14.046", "c"=115]
 "apache/incubator-retired-quickstep" ["l"="1.913,13.391"]
+"vmware/splinterdb" ["l"="0.71,14.155", "c"=115]
+"PlatformLab/RAMCloud" ["l"="1.793,14.448", "c"=572]
 "pmem/kvdk" ["l"="1.608,13.278"]
 "intel/MTMC-Temporal-Profiler" ["l"="1.585,13.228"]
-"intel/confidential-computing-zoo" ["l"="-16.726,-42.177"]
-"postgrespro/sr_plan" ["l"="2.945,13.497"]
-"postgrespro/pg_wait_sampling" ["l"="2.885,13.514"]
+"intel/confidential-computing-zoo" ["l"="-16.726,-42.177", "c"=621]
+"apache/datasketches-java" ["l"="-5.71,10.711", "c"=452]
+"postgrespro/sr_plan" ["l"="2.945,13.497", "c"=257]
+"postgrespro/pg_wait_sampling" ["l"="2.885,13.514", "c"=257]
 "credativ/sqlreduce" ["l"="1.955,13.57"]
-"ossc-db/pg_plan_advsr" ["l"="2.9,13.495"]
+"ossc-db/pg_plan_advsr" ["l"="2.9,13.495", "c"=257]
+"s-hironobu/pg_plan_inspector" ["l"="2.915,13.479", "c"=257]
+"linux-nvme/nvme-cli" ["l"="1.954,15.157", "c"=756]
+"opensmartnic/awesome-smartnic" ["l"="32.703,-2.857", "c"=561]
 "casys-kaist/LineFS" ["l"="1.439,13.249"]
-"smartnickit-project/smartnic-bench" ["l"="1.723,14.3"]
+"smartnickit-project/smartnic-bench" ["l"="1.723,14.3", "c"=572]
+"ApsaraDB/PolarDB-for-PostgreSQL" ["l"="0.708,14.09", "c"=115]
+"EvgSkv/logica" ["l"="-2.025,-41.389", "c"=963]
+"y-scope/clp" ["l"="-0.227,14.953", "c"=729]
 "MonetDB/MonetDB" ["l"="1.935,13.446"]
 "MonetDB/MonetDB-old" ["l"="1.955,13.41"]
-"vectorengine/vectorsql" ["l"="0.47,14.211"]
+"vectorengine/vectorsql" ["l"="0.47,14.211", "c"=115]
 "MonetDBSolutions/MonetDBe-Python" ["l"="1.979,13.43"]
 "MonetDB/MonetDB-Go" ["l"="1.97,13.446"]
+"logicalclocks/rondb" ["l"="45.274,25.485", "c"=68]
 "wuxb45/remixdb" ["l"="1.658,13.214"]
-"cxl-reskit/cxl-reskit" ["l"="1.689,14.235"]
-"MoatLab/Pond" ["l"="1.721,14.253"]
-"SlugLab/CXLMemSim" ["l"="1.721,14.228"]
+"cxl-reskit/cxl-reskit" ["l"="1.689,14.235", "c"=572]
+"MoatLab/Pond" ["l"="1.721,14.253", "c"=572]
+"SlugLab/CXLMemSim" ["l"="1.721,14.228", "c"=572]
 "pmem/run_qemu" ["l"="1.524,13.227"]
-"ece-fast-lab/cxl_type3_tests" ["l"="1.706,14.221"]
+"ece-fast-lab/cxl_type3_tests" ["l"="1.706,14.221", "c"=572]
+"oscarlab/betrfs" ["l"="0.731,14.681", "c"=115]
+"rescrv/HyperDex" ["l"="-3.203,20.08", "c"=709]
 "OceanBase-Partner/lectures-on-dbms-implementation" ["l"="2.124,13.945"]
 "OceanBase-Partner/miniob" ["l"="2.144,13.96"]
 "luooofan/miniob-2022" ["l"="2.111,13.892"]
 "dase314/db_impl_course" ["l"="2.125,13.983"]
+"DeveloperPaul123/thread-pool" ["l"="-20.008,-26.097", "c"=10]
 "couchbase/docs-cb4" ["l"="1.707,12.998"]
 "couchbase/kv_engine" ["l"="1.686,12.912"]
 "sfu-dis/FPTree" ["l"="1.622,13.457"]
@@ -2525,13 +2917,14 @@ digraph G {
 "gregrahn/tpch-kit" ["l"="1.935,13.611"]
 "tvondra/pg_tpch" ["l"="1.97,13.623"]
 "google/kepler" ["l"="1.957,13.65"]
-"sg20180546/ZNS-awesome-paper" ["l"="1.96,15.122"]
+"sg20180546/ZNS-awesome-paper" ["l"="1.96,15.122", "c"=756]
 "HaoyuHuang/NovaLSM" ["l"="1.703,13.224"]
 "qyliu-hkust/learnedbench" ["l"="1.604,13.532"]
 "emperorlu/learned-leveldb" ["l"="1.581,13.442"]
 "emperorlu/Learned-RocksDB" ["l"="1.588,13.454"]
 "ucf-cs/Tervel" ["l"="1.401,13.446"]
 "ucf-cs/tlds" ["l"="1.373,13.457"]
+"rmind/libqsbr" ["l"="-20.23,-26.016", "c"=10]
 "DBGroup-SUSTech/GHive" ["l"="2.076,13.401"]
 "wangqiim/miniob-competition" ["l"="2.029,13.793"]
 "lyxiong0/miniob" ["l"="2.062,13.832"]
@@ -2548,30 +2941,41 @@ digraph G {
 "sfu-dis/skeena" ["l"="1.618,13.445"]
 "sfu-dis/tabular" ["l"="1.624,13.435"]
 "hanfei1991/microcosm" ["l"="1.848,13.265"]
+"RoaringBitmap/CRoaring" ["l"="-19.502,-26.098", "c"=10]
 "stonysystems/rolis" ["l"="1.615,13.602"]
+"zhenlohuang/awesome-distributed-systems" ["l"="0.734,13.887", "c"=115]
+"greenplum-db/gpdb" ["l"="-2.78,14.807", "c"=43]
 "TsinghuaDatabaseGroup/DB-GPT" ["l"="1.842,13.647"]
 "Wind-Gone/awesome-ai4db-paper" ["l"="1.944,13.7"]
+"skyplane-project/skyplane" ["l"="7.338,-10.951", "c"=515]
+"polardb/polardbx-engine" ["l"="0.674,14.125", "c"=115]
+"polardb/polardbx-sql" ["l"="0.666,14.104", "c"=115]
+"smfrpc/smf" ["l"="0.833,14.178", "c"=115]
 "UWSysLab/tapir" ["l"="1.588,13.588"]
 "UWSysLab/NOPaxos" ["l"="1.523,13.628"]
 "UWSysLab/specpaxos" ["l"="1.556,13.629"]
-"cararemixed/hansei" ["l"="-15.854,-8.244"]
+"apache/madlib" ["l"="3.056,13.348", "c"=257]
+"apache/systemds" ["l"="-2.603,17.247", "c"=455]
+"cararemixed/hansei" ["l"="-15.854,-8.244", "c"=1915]
 "rmind/thmap" ["l"="1.757,13.305"]
-"yingjunwu/IndexZoo" ["l"="-18.679,-26.415"]
-"apache/hawq" ["l"="-2.608,14.723"]
-"greenplum-db/gpdb" ["l"="-2.78,14.807"]
+"yingjunwu/IndexZoo" ["l"="-18.679,-26.415", "c"=10]
+"apache/hawq" ["l"="-2.608,14.723", "c"=43]
 "orange1438/BTree-and-BPlusTree-Realize" ["l"="1.737,13.534"]
 "jarulraj/n-store" ["l"="1.761,13.387"]
 "dase314/dase314.github.io" ["l"="2.131,14.005"]
+"twitter/pelikan" ["l"="1.131,14.059", "c"=115]
+"DistSysCorp/ddia" ["l"="0.403,13.971", "c"=115]
+"speedb-io/speedb" ["l"="0.761,14.141", "c"=115]
 "couchbase/fleece" ["l"="1.804,12.901"]
 "Wind-Gone/awesome-olap-paper" ["l"="1.972,13.726"]
-"NVSL/NOVA" ["l"="1.522,13.35"]
 "basicthinker/ThyNVM" ["l"="1.502,13.373"]
 "DataManagementLab/DFI-public" ["l"="1.823,13.328"]
 "SirLYC/BPTree" ["l"="1.714,13.54"]
-"weicao/cascadb" ["l"="0.636,14.548"]
+"weicao/cascadb" ["l"="0.636,14.548", "c"=115]
 "rlu-sync/rlu-rht" ["l"="1.483,13.464"]
 "jiaguofang/b-plus-tree" ["l"="1.496,13.756"]
 "zhaoyue-ntu/qp_evaluation" ["l"="1.935,13.675"]
+"stressapptest/stressapptest" ["l"="6.811,-6.347", "c"=335]
 "TianyiChen0316/LOGER" ["l"="1.89,13.684"]
 "haitianchen/LEON" ["l"="1.879,13.719"]
 "itrummer/CodexDB" ["l"="1.795,13.745"]
@@ -2591,58 +2995,101 @@ digraph G {
 "harvard-cns/Harvard-CNS-Seminar" ["l"="2.083,13.41"]
 "Eilowangfang/LPCE" ["l"="1.958,13.679"]
 "indutny/bplus" ["l"="1.764,13.519"]
-"embedded2016/server-framework" ["l"="-22.373,-23.465"]
+"embedded2016/server-framework" ["l"="-22.373,-23.465", "c"=496]
+"KarryRen/SCU-CS-Class-Materials" ["l"="-5.438,18.483", "c"=316]
+"SolidLao/GPTuner" ["l"="1.831,13.698"]
+"stoneatom/stonedb" ["l"="0.646,14.094", "c"=115]
+"goccy/bigquery-emulator" ["l"="7.12,-40.385", "c"=573]
+"ossc-db/pg_hint_plan" ["l"="2.85,13.488", "c"=257]
+"filebench/filebench" ["l"="2.056,15.058", "c"=756]
+"s-yata/marisa-trie" ["l"="54.097,27.243", "c"=60]
+"photondb/photondb" ["l"="0.566,14.052", "c"=115]
+"ClickHouse/ClickBench" ["l"="-0.37,14.979", "c"=729]
 "spiraldb/fastlanes" ["l"="1.91,13.337"]
-"facebookincubator/nimble" ["l"="-0.327,14.922"]
-"intel/BDTK" ["l"="1.937,13.362"]
+"facebookincubator/nimble" ["l"="-0.327,14.922", "c"=729]
 "sihangliu/pmtest" ["l"="1.488,13.39"]
 "HewlettPackard/nvthreads" ["l"="1.482,13.341"]
+"fast-pack/streamvbyte" ["l"="-19.29,-26.173", "c"=10]
+"intel/isa-l" ["l"="3.545,-7.766", "c"=0]
+"efficient/epaxos" ["l"="0.932,13.847", "c"=115]
+"eventql/eventql" ["l"="4.432,-7.593", "c"=0]
+"krareT/terichdb" ["l"="0.836,14.351", "c"=115]
 "357447923/miniob_test" ["l"="2.157,13.905"]
+"plar/go-adaptive-radix-tree" ["l"="4.113,-8.131", "c"=0]
+"iotlpf/ROLEX" ["l"="1.808,14.257", "c"=572]
 "db-tu-dresden/FASTgres-PVLDBv16" ["l"="1.938,13.778"]
 "RunanWang/LDSS" ["l"="1.979,13.684"]
+"howardlau1999/rdmapp" ["l"="1.835,14.293", "c"=572]
 "Kyligence/ssb-kylin" ["l"="2.042,13.62"]
 "nuko-yokohama/ssb-postgres" ["l"="2.025,13.605"]
 "tuhhosg/exmap" ["l"="1.879,13.305"]
 "cudbg/sqltutor" ["l"="2.086,13.392"]
+"apache/cloudberry" ["l"="2.755,13.232", "c"=257]
+"TUDB-Labs/mLoRA" ["l"="38.522,-0.271", "c"=39]
+"axboe/fio" ["l"="6.878,-6.209", "c"=335]
 "luooofan/miniob-2023" ["l"="2.189,13.914"]
 "zhaoyiping0622/miniob-2023" ["l"="2.179,13.899"]
+"kangkaisen/olap-performance" ["l"="0.51,14.076", "c"=115]
+"huachaohuang/awesome-dbdev" ["l"="0.603,13.931", "c"=115]
+"cmu-db/15445-bootcamp" ["l"="0.491,13.96", "c"=115]
+"fastio/1store" ["l"="0.918,14.152", "c"=115]
+"uwdb/Cosette" ["l"="-22.081,-19.425", "c"=392]
+"SJTU-IPADS/SQLSolver" ["l"="1.858,13.815"]
 "MonetDB/MonetDBLite-C" ["l"="1.987,13.38"]
-"SolidLao/GPTuner" ["l"="1.831,13.698"]
-"Jun-jie-Huang/awesome-LLM-AIOps" ["l"="52.029,14.823"]
+"rockset/rocksdb-cloud" ["l"="0.727,14.107", "c"=115]
+"Jun-jie-Huang/awesome-LLM-AIOps" ["l"="52.029,14.823", "c"=1096]
 "TsinghuaDatabaseGroup/DBMeeting" ["l"="1.877,13.687"]
-"eosphoros-ai/DB-GPT-Hub" ["l"="37.511,-1.498"]
+"eosphoros-ai/DB-GPT-Hub" ["l"="37.511,-1.498", "c"=999]
 "StCarmen/PRICE" ["l"="1.924,13.672"]
 "couchbase/couchbase-lite-java-ce-root" ["l"="1.849,12.904"]
+"thu-db/huadb" ["l"="0.425,13.983", "c"=115]
 "yunjiazhang/adaptiveness_vs_learning" ["l"="1.958,13.806"]
 "DataManagementLab/lcm-eval" ["l"="1.941,13.814"]
 "couchbase/java-dcp-client" ["l"="1.649,12.837"]
-"couchbase/kafka-connect-couchbase" ["l"="1.653,12.862"]
 "warr99/miniob-test" ["l"="2.141,13.91"]
 "xderui/miniob" ["l"="2.164,13.923"]
-"sundy-li/strawboat" ["l"="0.399,14.213"]
+"sundy-li/strawboat" ["l"="0.399,14.213", "c"=115]
 "cwida/FastLanesGPU" ["l"="1.924,13.323"]
-"Trendyol/go-dcp" ["l"="29.651,-20.851"]
+"Trendyol/go-dcp" ["l"="29.651,-20.851", "c"=233]
 "couchbase/gocbcore" ["l"="1.628,12.848"]
+"RLGen/LakeBench" ["l"="37.39,-1.467", "c"=999]
+"intel/pcm" ["l"="6.812,-6.234", "c"=335]
+"pinterest/rocksplicator" ["l"="0.898,14.085", "c"=115]
+"neozhaoliang/pywonderland" ["l"="47.366,28.7", "c"=89]
 "Kyligence/kylin-tpch" ["l"="2.072,13.631"]
+"tikv/rust-rocksdb" ["l"="0.681,14.265", "c"=115]
 "alibaba/smart-vscode-extension" ["l"="1.896,13.716"]
+"xapian/xapian" ["l"="-18.998,24.769", "c"=37]
+"twitter/fatcache" ["l"="1.227,14.049", "c"=115]
 "zhuyuqing/bestconf" ["l"="1.794,13.697"]
-"SJTU-IPADS/SQLSolver" ["l"="1.858,13.815"]
 "6zHAOyi/TPTGAN" ["l"="1.818,13.73"]
+"skyzh/write-you-a-vector-db" ["l"="0.473,13.965", "c"=115]
 "kaiwenw/JoinGym" ["l"="1.971,13.826"]
 "cmu-db/dbgym" ["l"="1.945,13.839"]
+"TileDB-Inc/TileDB" ["l"="41.329,37.873", "c"=141]
+"simongog/sdsl-lite" ["l"="-19.607,-26.186", "c"=10]
 "oltpbenchmark/website" ["l"="1.788,13.583"]
-"Qihoo360/mysql-sniffer" ["l"="8.914,-4.255"]
+"Qihoo360/mysql-sniffer" ["l"="8.914,-4.255", "c"=382]
+"nitrite/nitrite-java" ["l"="-5.522,10.721", "c"=452]
 "pmem/syscall_intercept" ["l"="1.513,13.318"]
-"hpc/ior" ["l"="2.121,14.969"]
+"hpc/ior" ["l"="2.121,14.969", "c"=756]
 "WiscADSL/uFS" ["l"="1.463,13.3"]
-"filebench/filebench" ["l"="2.056,15.058"]
 "pmem/pmemfile" ["l"="1.438,13.297"]
-"mercury-hpc/mercury" ["l"="2.132,14.924"]
-"NGIOproject/old_GekkoFS_old" ["l"="2.063,14.91"]
-"iovisor/ubpf" ["l"="7.151,-6.144"]
-"extfuse/extfuse" ["l"="2.162,14.992"]
+"mercury-hpc/mercury" ["l"="2.132,14.924", "c"=756]
+"NGIOproject/old_GekkoFS_old" ["l"="2.063,14.91", "c"=756]
+"iovisor/ubpf" ["l"="7.151,-6.144", "c"=335]
+"extfuse/extfuse" ["l"="2.162,14.992", "c"=756]
 "alibaba/app-controller" ["l"="1.893,13.738"]
+"PKU-DAIR/Starter-Guide" ["l"="37.281,-1.471", "c"=999]
+"krareT/trkdb" ["l"="0.857,14.24", "c"=115]
+"cinemagoer/cinemagoer" ["l"="13.1,-6.207", "c"=67]
+"jarulraj/sqlcheck" ["l"="2.725,13.505", "c"=257]
 "snalli/mnemosyne-gcc" ["l"="1.526,13.282"]
+"Tessil/hat-trie" ["l"="-19.704,-26.084", "c"=10]
+"antirez/rax" ["l"="-22.014,-26.159", "c"=101]
+"lotus-data/lotus" ["l"="41.275,0.608", "c"=7]
+"nvfuse/nvfuse" ["l"="2.028,15.187", "c"=756]
+"TAG-Research/TAG-Bench" ["l"="41.321,0.618", "c"=7]
 "UWSysLab/Eris" ["l"="1.492,13.649"]
 "2ndQuadrant/pg-tpch" ["l"="1.988,13.635"]
 "heavyai/heavyai-charting" ["l"="1.77,13.645"]
@@ -2652,23 +3099,22 @@ digraph G {
 "heavyai/metis" ["l"="1.726,13.669"]
 "mogami95/RDMA-Playground" ["l"="1.597,13.438"]
 "pmem/vltrace" ["l"="1.393,13.283"]
-"NicolasLM/bplustree" ["l"="1.658,13.57"]
 "Ashwin-op/B_and_Bplus_Tree" ["l"="1.638,13.61"]
-"ankurdave/part" ["l"="-2.648,17.304"]
-"rapidsai/cudf" ["l"="43.805,23.569"]
-"thustorage/octopus" ["l"="1.813,14.386"]
-"utsaslab/crashmonkey" ["l"="2.135,15.096"]
+"facebook/mysql-5.6" ["l"="1.01,13.995", "c"=115]
+"ankurdave/part" ["l"="-2.648,17.304", "c"=455]
+"rapidsai/cudf" ["l"="43.805,23.569", "c"=95]
+"andikleen/pmu-tools" ["l"="6.828,-6.206", "c"=335]
+"crate/crate" ["l"="-2.705,14.631", "c"=43]
+"ailidani/paxi" ["l"="0.874,13.767", "c"=115]
+"utsaslab/crashmonkey" ["l"="2.135,15.096", "c"=756]
 "Andiry/pmfs-new" ["l"="1.489,13.325"]
 "intel/prd" ["l"="1.485,13.308"]
 "Andiry/nova" ["l"="1.471,13.325"]
 "jungmair/START" ["l"="1.673,13.358"]
 "pramalhe/OneFile" ["l"="1.398,13.41"]
-"rmind/libqsbr" ["l"="-20.23,-26.016"]
-"concurrencykit/ck" ["l"="-19.688,-25.938"]
-"mpoeter/xenium" ["l"="-19.909,-26.021"]
-"nhachicha/SnappyDB" ["l"="56.811,-14.068"]
+"concurrencykit/ck" ["l"="-19.688,-25.938", "c"=10]
+"mpoeter/xenium" ["l"="-19.909,-26.021", "c"=10]
 "efficient/rocksdb" ["l"="1.775,13.369"]
-"simongog/sdsl-lite" ["l"="-19.607,-26.186"]
 "heavyai/community_datasets" ["l"="1.768,13.708"]
 "efficient/cicada-exp-sigmod2017" ["l"="1.733,13.482"]
 "efficient/cicada" ["l"="1.719,13.479"]

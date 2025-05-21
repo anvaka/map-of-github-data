@@ -1,4 +1,5 @@
 digraph G {
+"google/cpu_features" -> "pytorch/cpuinfo" ["e"=1]
 "ARM-software/armnn" -> "ARM-software/ComputeLibrary"
 "ARM-software/armnn" -> "ARM-software/ML-examples" ["e"=1]
 "ARM-software/armnn" -> "ARM-software/android-nn-driver"
@@ -14,6 +15,7 @@ digraph G {
 "ARM-software/armnn" -> "Tencent/FeatherCNN"
 "ARM-software/armnn" -> "microsoft/nnfusion"
 "ARM-software/armnn" -> "OAID/Tengine" ["e"=1]
+"dpilger26/NumCpp" -> "NVIDIA/thrust" ["e"=1]
 "mlcommons/inference" -> "mlcommons/training"
 "mlcommons/inference" -> "baidu-research/DeepBench"
 "mlcommons/inference" -> "NVIDIA/nccl-tests" ["e"=1]
@@ -29,6 +31,17 @@ digraph G {
 "mlcommons/inference" -> "mlcommons/storage" ["e"=1]
 "mlcommons/inference" -> "pytorch/glow"
 "mlcommons/inference" -> "NVIDIA/nccl" ["e"=1]
+"intel/ai-reference-models" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"intel/ai-reference-models" -> "NervanaSystems/ngraph" ["e"=1]
+"intel/ai-reference-models" -> "uxlfoundation/oneDNN" ["e"=1]
+"tensorflow/model-optimization" -> "pytorch/QNNPACK" ["e"=1]
+"tensorflow/model-optimization" -> "google/gemmlowp" ["e"=1]
+"bytedance/byteps" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"Robert-JunWang/Pelee" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"eric612/MobileNet-YOLO" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"inducer/pyopencl" -> "inducer/pycuda" ["e"=1]
+"inducer/pyopencl" -> "inducer/loopy" ["e"=1]
+"microsoft/ai-edu" -> "microsoft/AI-System" ["e"=1]
 "moderngpu/moderngpu" -> "NVIDIA/cub"
 "moderngpu/moderngpu" -> "cudpp/cudpp"
 "moderngpu/moderngpu" -> "NVIDIA/thrust"
@@ -44,6 +57,10 @@ digraph G {
 "moderngpu/moderngpu" -> "NVIDIA/nccl" ["e"=1]
 "moderngpu/moderngpu" -> "NVIDIA/multi-gpu-programming-models"
 "moderngpu/moderngpu" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"openvinotoolkit/openvino" -> "uxlfoundation/oneDNN" ["e"=1]
+"google/tangent" -> "facebookresearch/TensorComprehensions" ["e"=1]
+"gunrock/gunrock" -> "NVIDIA/cub" ["e"=1]
+"gunrock/gunrock" -> "moderngpu/moderngpu" ["e"=1]
 "PacktPublishing/Learn-CUDA-Programming" -> "brucefan1983/CUDA-Programming"
 "PacktPublishing/Learn-CUDA-Programming" -> "Tony-Tan/CUDA_Freshman"
 "PacktPublishing/Learn-CUDA-Programming" -> "CodedK/CUDA-by-Example-source-code-for-the-book-s-examples-"
@@ -59,6 +76,9 @@ digraph G {
 "PacktPublishing/Learn-CUDA-Programming" -> "Liu-xiandong/How_to_optimize_in_GPU"
 "PacktPublishing/Learn-CUDA-Programming" -> "puttsk/cuda-tutorial" ["e"=1]
 "PacktPublishing/Learn-CUDA-Programming" -> "flame/how-to-optimize-gemm"
+"alibaba/MNN" -> "XiaoMi/mace" ["e"=1]
+"rapidsai/cugraph" -> "rapidsai/rmm" ["e"=1]
+"rapidsai/cugraph" -> "NVIDIA/cub" ["e"=1]
 "plaidml/plaidml" -> "apple/tensorflow_macos" ["e"=1]
 "plaidml/plaidml" -> "apache/tvm" ["e"=1]
 "plaidml/plaidml" -> "horovod/horovod" ["e"=1]
@@ -89,6 +109,19 @@ digraph G {
 "mlcommons/training" -> "tensorflow/mesh" ["e"=1]
 "mlcommons/training" -> "horovod/horovod" ["e"=1]
 "mlcommons/training" -> "NVIDIA/nccl-tests" ["e"=1]
+"NVIDIA/cutlass" -> "xlite-dev/LeetCUDA" ["e"=1]
+"NVIDIA/cutlass" -> "gpu-mode/lectures" ["e"=1]
+"aklomp/base64" -> "pytorch/cpuinfo" ["e"=1]
+"imgbot/Imgbot" -> "LBANN/lbann" ["e"=1]
+"Kobzol/hardware-effects" -> "Kobzol/hardware-effects-gpu" ["e"=1]
+"NVIDIA/cuda-samples" -> "NVIDIA/CUDALibrarySamples" ["e"=1]
+"NVIDIA/cuda-samples" -> "xlite-dev/LeetCUDA" ["e"=1]
+"NVIDIA/cuda-samples" -> "NVIDIA/thrust" ["e"=1]
+"NVIDIA/cuda-samples" -> "Tony-Tan/CUDA_Freshman" ["e"=1]
+"NVIDIA/cuda-samples" -> "gpu-mode/lectures" ["e"=1]
+"NVIDIA/cuda-samples" -> "NVIDIA/cccl" ["e"=1]
+"NVIDIA/cuda-samples" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"cybertronai/gradient-checkpointing" -> "facebookresearch/TensorComprehensions" ["e"=1]
 "flame/blis" -> "flame/how-to-optimize-gemm"
 "flame/blis" -> "libxsmm/libxsmm"
 "flame/blis" -> "OpenMathLib/OpenBLAS"
@@ -119,6 +152,11 @@ digraph G {
 "Tony-Tan/CUDA_Freshman" -> "shouxieai/tensorRT_Pro" ["e"=1]
 "Tony-Tan/CUDA_Freshman" -> "openmlsys/openmlsys-zh"
 "Tony-Tan/CUDA_Freshman" -> "NVIDIA/FasterTransformer" ["e"=1]
+"huihut/OpenCV-MinGW-Build" -> "msnh2012/Msnhnet" ["e"=1]
+"flashlight/flashlight" -> "NVIDIA/thrust" ["e"=1]
+"xindongzhang/MNN-APPLICATIONS" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"ARM-software/arm-trusted-firmware" -> "ARM-software/ComputeLibrary" ["e"=1]
+"fritzlabs/Awesome-Mobile-Machine-Learning" -> "pytorch/QNNPACK" ["e"=1]
 "OpenMathLib/OpenBLAS" -> "Reference-LAPACK/lapack" ["e"=1]
 "OpenMathLib/OpenBLAS" -> "flame/how-to-optimize-gemm"
 "OpenMathLib/OpenBLAS" -> "flame/blis"
@@ -167,6 +205,8 @@ digraph G {
 "facebookresearch/TensorComprehensions" -> "apache/tvm" ["e"=1]
 "facebookresearch/TensorComprehensions" -> "inducer/loopy"
 "facebookresearch/TensorComprehensions" -> "google/gemmlowp"
+"PaddlePaddle/Paddle-Lite" -> "XiaoMi/mace" ["e"=1]
+"PaddlePaddle/Paddle-Lite" -> "ARM-software/ComputeLibrary" ["e"=1]
 "inducer/pycuda" -> "inducer/pyopencl" ["e"=1]
 "inducer/pycuda" -> "lebedov/scikit-cuda"
 "inducer/pycuda" -> "cupy/cupy" ["e"=1]
@@ -197,6 +237,12 @@ digraph G {
 "CoffeeBeforeArch/cuda_programming" -> "NVIDIA/cuda-samples" ["e"=1]
 "CoffeeBeforeArch/cuda_programming" -> "deeperlearning/professional-cuda-c-programming"
 "CoffeeBeforeArch/cuda_programming" -> "RussWong/CUDATutorial"
+"banach-space/llvm-tutor" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"banach-space/llvm-tutor" -> "j2kun/mlir-tutorial" ["e"=1]
+"banach-space/llvm-tutor" -> "iree-org/iree" ["e"=1]
+"eric612/Caffe-YOLOv3-Windows" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"bharathgs/Awesome-Distributed-Deep-Learning" -> "mit-han-lab/inter-operator-scheduler" ["e"=1]
+"bharathgs/Awesome-Distributed-Deep-Learning" -> "Jokeren/Awesome-GPU" ["e"=1]
 "NVIDIA/CUDALibrarySamples" -> "NVIDIA/cuda-samples" ["e"=1]
 "NVIDIA/CUDALibrarySamples" -> "NVIDIA/cub"
 "NVIDIA/CUDALibrarySamples" -> "NVIDIA/cutlass" ["e"=1]
@@ -212,6 +258,8 @@ digraph G {
 "NVIDIA/CUDALibrarySamples" -> "flashinfer-ai/flashinfer" ["e"=1]
 "NVIDIA/CUDALibrarySamples" -> "BBuf/how-to-optim-algorithm-in-cuda"
 "NVIDIA/CUDALibrarySamples" -> "brucefan1983/CUDA-Programming"
+"tensorflow/community" -> "tensorflow/mlir" ["e"=1]
+"sun254/awesome-model-compression-and-acceleration" -> "pytorch/QNNPACK" ["e"=1]
 "pytorch/FBGEMM" -> "google/gemmlowp"
 "pytorch/FBGEMM" -> "libxsmm/libxsmm"
 "pytorch/FBGEMM" -> "pytorch/QNNPACK"
@@ -242,6 +290,15 @@ digraph G {
 "pytorch/QNNPACK" -> "huawei-noah/bolt"
 "pytorch/QNNPACK" -> "ARM-software/armnn"
 "pytorch/QNNPACK" -> "pytorch/FBGEMM"
+"openai/blocksparse" -> "NervanaSystems/maxas" ["e"=1]
+"openai/blocksparse" -> "google/gemmlowp" ["e"=1]
+"openai/blocksparse" -> "tensor-compiler/taco" ["e"=1]
+"openai/blocksparse" -> "pytorch/FBGEMM" ["e"=1]
+"openai/blocksparse" -> "openai/openai-gemm" ["e"=1]
+"openai/blocksparse" -> "facebookresearch/TensorComprehensions" ["e"=1]
+"openai/blocksparse" -> "baidu-research/DeepBench" ["e"=1]
+"openai/blocksparse" -> "NVIDIA/cub" ["e"=1]
+"openai/blocksparse" -> "NVIDIA-developer-blog/code-samples" ["e"=1]
 "RRZE-HPC/gpu-benches" -> "NVIDIA/nvbench"
 "RRZE-HPC/gpu-benches" -> "KnowingNothing/MatmulTutorial"
 "RRZE-HPC/gpu-benches" -> "Bruce-Lee-LY/cuda_hgemm"
@@ -272,6 +329,12 @@ digraph G {
 "BBuf/how-to-optim-algorithm-in-cuda" -> "ModelTC/lightllm" ["e"=1]
 "BBuf/how-to-optim-algorithm-in-cuda" -> "openmlsys/openmlsys-zh"
 "BBuf/how-to-optim-algorithm-in-cuda" -> "NVIDIA/cutlass" ["e"=1]
+"AdaptiveCpp/AdaptiveCpp" -> "NVIDIA/cccl" ["e"=1]
+"inisis/brocolli" -> "tsingmicro-toolchain/OnnxSlim" ["e"=1]
+"inisis/brocolli" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"inisis/brocolli" -> "inisis/caffe" ["e"=1]
+"inisis/brocolli" -> "inisis/daisy" ["e"=1]
+"inisis/brocolli" -> "inisis/OnnxSlim" ["e"=1]
 "tensorflow/mlir" -> "iree-org/iree"
 "tensorflow/mlir" -> "tensorflow/runtime" ["e"=1]
 "tensorflow/mlir" -> "pytorch/glow"
@@ -287,6 +350,7 @@ digraph G {
 "tensorflow/mlir" -> "onnx/onnx-mlir"
 "tensorflow/mlir" -> "tensorflow/mlir-hlo"
 "tensorflow/mlir" -> "ONNC/onnc" ["e"=1]
+"Cyan4973/FiniteStateEntropy" -> "NVIDIA/nvcomp" ["e"=1]
 "XiaoMi/mace" -> "alibaba/MNN" ["e"=1]
 "XiaoMi/mace" -> "Tencent/ncnn" ["e"=1]
 "XiaoMi/mace" -> "Tencent/FeatherCNN"
@@ -305,6 +369,7 @@ digraph G {
 "EasonLiao/CudaTree" -> "deeplearningais/curfil"
 "sdemyanov/ConvNet" -> "xingdi-eric-yuan/conv-net-version-3"
 "sdemyanov/ConvNet" -> "TorontoDeepLearning/convnet"
+"jetpacapp/DeepBeliefSDK" -> "google/gemmlowp" ["e"=1]
 "PacktPublishing/Hands-On-GPU-Programming-with-Python-and-CUDA" -> "PacktPublishing/Learn-CUDA-Programming"
 "PacktPublishing/Hands-On-GPU-Programming-with-Python-and-CUDA" -> "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA"
 "PacktPublishing/Hands-On-GPU-Programming-with-Python-and-CUDA" -> "inducer/pycuda"
@@ -341,6 +406,22 @@ digraph G {
 "cloudcores/CuAssembler" -> "Liu-xiandong/How_to_optimize_in_GPU"
 "cloudcores/CuAssembler" -> "Bruce-Lee-LY/cuda_hgemm"
 "cloudcores/CuAssembler" -> "Cjkkkk/CUDA_gemm"
+"microsoft/DirectML" -> "lshqqytiger/stable-diffusion-webui-amdgpu" ["e"=1]
+"microsoft/DirectML" -> "vosen/ZLUDA" ["e"=1]
+"Tencent/PocketFlow" -> "pytorch/QNNPACK" ["e"=1]
+"Tencent/PocketFlow" -> "XiaoMi/mace" ["e"=1]
+"Tencent/PocketFlow" -> "Tencent/FeatherCNN" ["e"=1]
+"Tencent/PocketFlow" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"Tencent/PocketFlow" -> "google/gemmlowp" ["e"=1]
+"PacktPublishing/Learn-OpenCV-4-By-Building-Projects-Second-Edition" -> "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" ["e"=1]
+"sfzhang15/FaceBoxes" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"DLTcollab/sse2neon" -> "intel/ARM_NEON_2_x86_SSE" ["e"=1]
+"DLTcollab/sse2neon" -> "jratcliff63367/sse2neon" ["e"=1]
+"rapidsai/raft" -> "rapidsai/rmm" ["e"=1]
+"rapidsai/raft" -> "NVIDIA/cuCollections" ["e"=1]
+"rapidsai/raft" -> "NVIDIA/cub" ["e"=1]
+"rapidsai/raft" -> "NVIDIA/cccl" ["e"=1]
+"intel/compute-runtime" -> "uxlfoundation/oneDNN" ["e"=1]
 "u39kun/deep-learning-benchmark" -> "LambdaColdStorage/lambda-tensorflow-benchmark"
 "u39kun/deep-learning-benchmark" -> "baidu-research/DeepBench"
 "u39kun/deep-learning-benchmark" -> "hclhkbu/dlbench"
@@ -361,10 +442,18 @@ digraph G {
 "rapidsai/rmm" -> "NVIDIA/libcudacxx"
 "rapidsai/rmm" -> "NVIDIA/MatX"
 "rapidsai/rmm" -> "rapidsai/cuspatial" ["e"=1]
+"flexflow/flexflow-train" -> "jiazhihao/TASO" ["e"=1]
+"flexflow/flexflow-train" -> "microsoft/nnfusion" ["e"=1]
 "owensgroup/SlabHash" -> "owensgroup/GpuBTree"
 "owensgroup/SlabHash" -> "owensgroup/MVGpuBTree"
 "owensgroup/SlabHash" -> "pzrq/megakv"
 "owensgroup/SlabHash" -> "owensgroup/SlabAlloc"
+"egraphs-good/egg" -> "uwplse/tensat" ["e"=1]
+"egraphs-good/egg" -> "mlir-rs/melior" ["e"=1]
+"symisc/sod" -> "microsoft/ELL" ["e"=1]
+"symisc/sod" -> "pytorch/QNNPACK" ["e"=1]
+"symisc/sod" -> "ARM-software/ComputeLibrary" ["e"=1]
+"eigenteam/eigen-git-mirror" -> "OpenMathLib/OpenBLAS" ["e"=1]
 "apache/incubator-nemo" -> "snuspl/pluto"
 "apache/incubator-nemo" -> "snuspl/nemo"
 "apache/incubator-nemo" -> "snuspl/cruise"
@@ -404,8 +493,16 @@ digraph G {
 "XiaoMi/mace-models" -> "BUG1989/caffe-int8-convert-tools"
 "XiaoMi/mace-models" -> "Tencent/FeatherCNN"
 "XiaoMi/mace-models" -> "szad670401/Fast-MTCNN" ["e"=1]
+"rapidsai-community/notebooks-contrib" -> "rapidsai/rmm" ["e"=1]
 "CoffeeBeforeArch/cpp_crash_course" -> "CoffeeBeforeArch/practical_parallelism_in_cpp"
 "CoffeeBeforeArch/cpp_crash_course" -> "CoffeeBeforeArch/cpp_20_samples"
+"AliveToolkit/alive2" -> "llvm/clangir" ["e"=1]
+"sampsyo/bril" -> "llvm/Polygeist" ["e"=1]
+"sampsyo/cs6120" -> "j2kun/mlir-tutorial" ["e"=1]
+"sampsyo/cs6120" -> "kumasento/polymer" ["e"=1]
+"sampsyo/cs6120" -> "facebookresearch/CompilerGym" ["e"=1]
+"sampsyo/cs6120" -> "llvm/Polygeist" ["e"=1]
+"cdisselkoen/llvm-ir" -> "mlir-rs/melior" ["e"=1]
 "shriramsb/vDNN" -> "shriramsb/vdnn-plus-plus"
 "shriramsb/vdnn-plus-plus" -> "shriramsb/vDNN"
 "huiscliu/Tutorials" -> "Tony-Tan/CUDA_Freshman"
@@ -423,10 +520,23 @@ digraph G {
 "huiscliu/Tutorials" -> "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA"
 "huiscliu/Tutorials" -> "onnx/onnx-tensorrt" ["e"=1]
 "huiscliu/Tutorials" -> "BrightXiaoHan/CMakeTutorial" ["e"=1]
+"BBuf/Darknet" -> "msnh2012/Msnhnet" ["e"=1]
+"ferrandi/PandA-bambu" -> "kumasento/polymer" ["e"=1]
+"IntelLabs/distiller" -> "pytorch/QNNPACK" ["e"=1]
+"IntelLabs/distiller" -> "google/gemmlowp" ["e"=1]
+"miaow1988/ShuffleNet_V2_pytorch_caffe" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"onnx/onnx-tensorflow" -> "uxlfoundation/oneDNN" ["e"=1]
 "eth-cscs/COSMA" -> "cp2k/dbcsr"
 "eth-cscs/COSMA" -> "eth-cscs/SpFFT"
 "eth-cscs/COSMA" -> "eth-cscs/Tiled-MM"
 "eth-cscs/COSMA" -> "eth-cscs/DLA-Future"
+"BBuf/Image-processing-algorithm" -> "msnh2012/Msnhnet" ["e"=1]
+"BBuf/Image-processing-algorithm" -> "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" ["e"=1]
+"uTensor/uTensor" -> "ARM-software/armnn" ["e"=1]
+"uTensor/uTensor" -> "microsoft/ELL" ["e"=1]
+"PacktPublishing/Mastering-OpenCV-4-Third-Edition" -> "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" ["e"=1]
+"starimeL/PytorchConverter" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"xxradon/PytorchToCaffe" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
 "depctg/udacity-cs344-colab" -> "udacity/cs344"
 "depctg/udacity-cs344-colab" -> "nickspell/udacity-IntroToParallelProgramming"
 "cudamat/cudamat" -> "lebedov/scikit-cuda"
@@ -455,6 +565,7 @@ digraph G {
 "brucefan1983/CUDA-Programming" -> "gpu-mode/lectures"
 "brucefan1983/CUDA-Programming" -> "shouxieai/tensorRT_Pro" ["e"=1]
 "brucefan1983/CUDA-Programming" -> "LitLeo/TensorRT_Tutorial" ["e"=1]
+"uxlfoundation/oneDPL" -> "uxlfoundation/oneDNN" ["e"=1]
 "pytorch/xla" -> "openxla/xla"
 "pytorch/xla" -> "facebookresearch/fairscale" ["e"=1]
 "pytorch/xla" -> "NVIDIA/apex" ["e"=1]
@@ -485,8 +596,12 @@ digraph G {
 "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" -> "ZhenghaoFei/visual_odom" ["e"=1]
 "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" -> "HuangCongQing/pcl-learning" ["e"=1]
 "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" -> "Syencil/tensorRT" ["e"=1]
+"pytorch/extension-cpp" -> "NVIDIA-developer-blog/code-samples" ["e"=1]
+"pytorch/extension-cpp" -> "NVIDIA/cccl" ["e"=1]
+"pytorch/extension-cpp" -> "KnowingNothing/MatmulTutorial" ["e"=1]
 "chasingegg/Winconv" -> "TaoHuUMD/Winograd_Convolution"
 "chasingegg/Winconv" -> "dorthyluu/cs194-winograd"
+"kristjankorjus/Replicating-DeepMind" -> "TorontoDeepLearning/convnet" ["e"=1]
 "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" -> "microsoft/AI-System"
 "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" -> "openmlsys/openmlsys-zh"
 "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" -> "merrymercy/awesome-tensor-compilers"
@@ -502,6 +617,11 @@ digraph G {
 "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" -> "BBuf/how-to-optim-algorithm-in-cuda"
 "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" -> "alpa-projects/alpa" ["e"=1]
 "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" -> "dyweb/papers-notebook" ["e"=1]
+"NVIDIA/open-gpu-doc" -> "NervanaSystems/maxas" ["e"=1]
+"NVIDIA/open-gpu-doc" -> "cloudcores/CuAssembler" ["e"=1]
+"NVIDIA/open-gpu-doc" -> "NVIDIA/libcudacxx" ["e"=1]
+"facebookarchive/BOLT" -> "tensorflow/mlir" ["e"=1]
+"google-research/morph-net" -> "pytorch/QNNPACK" ["e"=1]
 "spcl/dace" -> "spcl/daceml"
 "spcl/dace" -> "spcl/substation"
 "spcl/dace" -> "spcl/npbench"
@@ -532,6 +652,11 @@ digraph G {
 "Tencent/FeatherCNN" -> "andravin/wincnn"
 "Tencent/FeatherCNN" -> "Rock-100/FaceKit" ["e"=1]
 "Tencent/FeatherCNN" -> "JDAI-CV/dabnn" ["e"=1]
+"didi/AoE" -> "XiaoMi/mobile-ai-bench" ["e"=1]
+"intel/nauta" -> "NervanaSystems/ngraph" ["e"=1]
+"agenium-scale/nsimd" -> "libxsmm/libxsmm" ["e"=1]
+"google/autofdo" -> "jansel/opentuner" ["e"=1]
+"ARM-software/ML-KWS-for-MCU" -> "ARM-software/armnn" ["e"=1]
 "xuqiantong/CUDA-Winograd" -> "andravin/wincnn"
 "xuqiantong/CUDA-Winograd" -> "md2z34/winograd_gpu"
 "xuqiantong/CUDA-Winograd" -> "pku-liang/FlexTensor"
@@ -540,9 +665,11 @@ digraph G {
 "xuqiantong/CUDA-Winograd" -> "thu-pacman/PET"
 "xuqiantong/CUDA-Winograd" -> "UDC-GAC/openCNN"
 "xuqiantong/CUDA-Winograd" -> "xingyul/sparse-winograd-cnn"
+"ROCm/llvm-project" -> "ROCm/rocMLIR" ["e"=1]
 "qsyao/cudaBERT" -> "qsyao/cuda_spatial_deform"
 "wkcn/MobulaOP" -> "wkcn/mobula"
 "wkcn/MobulaOP" -> "szha/mxnet-jit-batch"
+"networkservicemesh/networkservicemesh" -> "ctuning/ck-tensorflow" ["e"=1]
 "facebook/FAI-PEP" -> "enyac-group/single-path-nas" ["e"=1]
 "facebook/FAI-PEP" -> "pytorch/QNNPACK"
 "facebook/FAI-PEP" -> "XiaoMi/mobile-ai-bench"
@@ -560,6 +687,10 @@ digraph G {
 "pytorch/tvm" -> "dmlc/dlpack"
 "pytorch/tvm" -> "StrongSpoon/tvm.schedule"
 "pytorch/tvm" -> "tensorflow/mlir-hlo"
+"ONNC/onnc" -> "onnx/onnx-mlir" ["e"=1]
+"ONNC/onnc" -> "tensorflow/mlir" ["e"=1]
+"ONNC/onnc" -> "NervanaSystems/ngraph" ["e"=1]
+"borgwang/tinynn" -> "msnh2012/Msnhnet" ["e"=1]
 "TorontoDeepLearning/convnet" -> "akrizhevsky/cuda-convnet2"
 "TorontoDeepLearning/convnet" -> "sdemyanov/ConvNet"
 "TorontoDeepLearning/convnet" -> "NervanaSystems/nervanagpu"
@@ -579,6 +710,11 @@ digraph G {
 "NVIDIA/multi-gpu-programming-models" -> "NVIDIA/nccl" ["e"=1]
 "NVIDIA/multi-gpu-programming-models" -> "microsoft/msccl" ["e"=1]
 "NVIDIA/multi-gpu-programming-models" -> "UoB-HPC/BabelStream" ["e"=1]
+"rapidsai/notebooks" -> "rapidsai/rmm" ["e"=1]
+"longcw/pytorch2caffe" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"ARM-software/ML-examples" -> "ARM-software/armnn" ["e"=1]
+"ARM-software/ML-examples" -> "ARM-software/ComputeLibrary" ["e"=1]
+"ARM-software/ML-examples" -> "ARM-software/android-nn-driver" ["e"=1]
 "OpenACC/openacc-training-materials" -> "OpenACC/openacc-best-practices-guide"
 "Ldpe2G/ArmNeonOptimization" -> "rogerou/Arm-neon-intrinsics"
 "Ldpe2G/ArmNeonOptimization" -> "YuanhaoGong/SideWindowFilter"
@@ -598,6 +734,7 @@ digraph G {
 "snuspl/parallax" -> "friendliai/friendli-client"
 "snuspl/parallax" -> "apache/reef"
 "snuspl/parallax" -> "friendliai/FAI-Model"
+"maestro-project/maestro" -> "pku-liang/TileFlow" ["e"=1]
 "keroro824/HashingDeepLearning" -> "RUSH-LAB/SLIDE"
 "keroro824/HashingDeepLearning" -> "IntelLabs/SLIDE_opt_ia"
 "keroro824/HashingDeepLearning" -> "google/neural-tangents" ["e"=1]
@@ -606,6 +743,10 @@ digraph G {
 "keroro824/HashingDeepLearning" -> "jiazhihao/TASO"
 "keroro824/HashingDeepLearning" -> "dblalock/bolt" ["e"=1]
 "keroro824/HashingDeepLearning" -> "uwplse/tensat"
+"facebookresearch/kill-the-bits" -> "pytorch/QNNPACK" ["e"=1]
+"in66-dev/In-Prestissimo" -> "PaddlePaddle/Anakin" ["e"=1]
+"in66-dev/In-Prestissimo" -> "Tencent/FeatherCNN" ["e"=1]
+"zhihu/cuBERT" -> "qsyao/cudaBERT" ["e"=1]
 "PaddlePaddle/Anakin" -> "Tencent/FeatherCNN"
 "PaddlePaddle/Anakin" -> "BUG1989/caffe-int8-convert-tools"
 "PaddlePaddle/Anakin" -> "luoyetx/mini-caffe" ["e"=1]
@@ -643,11 +784,14 @@ digraph G {
 "pku-liang/FlexTensor" -> "pku-liang/TileFlow"
 "pku-liang/FlexTensor" -> "zhaiyi000/tlp"
 "pku-liang/FlexTensor" -> "jiazhihao/TASO"
+"mosharaf/eecs598" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
 "gvtulder/elasticdeform" -> "qsyao/cuda_spatial_deform"
 "gvtulder/elasticdeform" -> "fcalvet/image_tools"
 "gvtulder/elasticdeform" -> "google-deepmind/multidim-image-augmentation"
+"krrishnarraj/clpeak" -> "MegEngine/MegPeak" ["e"=1]
 "vinx13/tvm-cuda-int8-benchmark" -> "masahi/tvm-winograd"
 "dnouri/cuda-convnet" -> "akrizhevsky/cuda-convnet2"
+"ROCm/AMDMIGraphX" -> "ROCm/rocMLIR" ["e"=1]
 "XiaoMi/mobile-ai-bench" -> "XiaoMi/mace-models"
 "XiaoMi/mobile-ai-bench" -> "Tencent/FeatherCNN"
 "XiaoMi/mobile-ai-bench" -> "HolmesShuan/CNN-Inference-Engine-Quick-View"
@@ -664,6 +808,9 @@ digraph G {
 "Cambricon/caffe" -> "Cambricon/caffe_boost"
 "Cambricon/caffe" -> "Cambricon/CNStream"
 "Cambricon/caffe" -> "Cambricon/Cambricon-Gst"
+"ParRes/Kernels" -> "libxsmm/libxsmm" ["e"=1]
+"ParRes/Kernels" -> "cp2k/dbcsr" ["e"=1]
+"szha/KDD18-Gluon" -> "szha/mxnet-jit-batch" ["e"=1]
 "mlcommons/training_results_v0.5" -> "mlcommons/training_policies"
 "cp2k/dbcsr" -> "sfilippone/psblas3" ["e"=1]
 "cp2k/dbcsr" -> "eth-cscs/COSMA"
@@ -683,6 +830,7 @@ digraph G {
 "Kobzol/hardware-effects-gpu" -> "Bruce-Lee-LY/cuda_hgemm"
 "Kobzol/hardware-effects-gpu" -> "ColfaxResearch/cutlass-kernels"
 "harrism/numba_examples" -> "ContinuumIO/gtc2017-numba"
+"MTLab/onnx2caffe" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
 "owensgroup/GpuBTree" -> "owensgroup/MVGpuBTree"
 "owensgroup/GpuBTree" -> "owensgroup/SlabHash"
 "flame/libflame" -> "amd/libflame"
@@ -691,19 +839,26 @@ digraph G {
 "ScientificClubofESI/LaraHack" -> "projeduc/intro_apprentissage_automatique"
 "rbaygildin/learn-gpgpu" -> "gmarciani/cudawesome"
 "ARM-software/Tool-Solutions" -> "ARM-software/armnn-mlperf"
+"envytools/envytools" -> "NervanaSystems/maxas" ["e"=1]
+"xiangweizeng/darknet2ncnn" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"chuanqi305/MobileNetv2-SSDLite" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
 "fqnchina/ImageSmoothing" -> "zhufeida/Benchmark_EPS"
 "MeteoSwiss-APN/dawn" -> "GridTools/gridtools"
 "GridTools/gridtools" -> "GridTools/gt4py"
 "GridTools/gridtools" -> "MeteoSwiss-APN/dawn"
+"awslabs/mxboard" -> "wkcn/MobulaOP" ["e"=1]
 "NervanaSystems/ngraph-tf" -> "tensorflow/ngraph-bridge"
 "NervanaSystems/ngraph-tf" -> "NervanaSystems/ngraph-tensorflow-bridge"
+"ValeevGroup/tiledarray" -> "cp2k/dbcsr" ["e"=1]
 "Luxiush/Weighted-Guided-Image-Filter" -> "RockeyDon/Gradient-Domain-Guided-Image-Filtering"
+"intel/cm-compiler" -> "intel/xetla" ["e"=1]
 "merrymercy/tvm-mali" -> "szad670401/tvm_benchmark_cpp"
 "merrymercy/tvm-mali" -> "tlc-pack/TLCBench"
 "rgavaska/Fast-Adaptive-Bilateral-Filtering" -> "GKalliatakis/Bilateral-Filtering"
 "rgavaska/Fast-Adaptive-Bilateral-Filtering" -> "bigmms/chen_spl20_gabf"
 "rgavaska/Fast-Adaptive-Bilateral-Filtering" -> "wliusjtu/Embedding-Bilateral-Filter-in-Least-Squares-for-Efficient-Edge-preserving-Image-Smoothing"
 "rgavaska/Fast-Adaptive-Bilateral-Filtering" -> "Luxiush/Weighted-Guided-Image-Filter"
+"cornell-zhang/heterocl" -> "kumasento/polymer" ["e"=1]
 "wzsh/wmma_tensorcore_sample" -> "wmmae/wmma_extension"
 "wzsh/wmma_tensorcore_sample" -> "nicolaswilde/cuda-tensorcore-hgemm"
 "wzsh/wmma_tensorcore_sample" -> "Cjkkkk/CUDA_gemm"
@@ -793,6 +948,10 @@ digraph G {
 "microsoft/AI-System" -> "kvcache-ai/Mooncake" ["e"=1]
 "microsoft/AI-System" -> "flashinfer-ai/flashinfer" ["e"=1]
 "microsoft/AI-System" -> "apache/tvm" ["e"=1]
+"arrayfire/arrayfire" -> "NVIDIA/thrust" ["e"=1]
+"arrayfire/arrayfire" -> "NVIDIA/cub" ["e"=1]
+"arrayfire/arrayfire" -> "halide/Halide" ["e"=1]
+"facebookresearch/fairscale" -> "pytorch/torchdynamo" ["e"=1]
 "zwang4/awesome-machine-learning-in-compilers" -> "merrymercy/awesome-tensor-compilers"
 "zwang4/awesome-machine-learning-in-compilers" -> "KnowingNothing/compiler-and-arch"
 "zwang4/awesome-machine-learning-in-compilers" -> "BBuf/tvm_mlir_learn"
@@ -808,6 +967,9 @@ digraph G {
 "zwang4/awesome-machine-learning-in-compilers" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero"
 "zwang4/awesome-machine-learning-in-compilers" -> "shining1984/PL-Compiler-Resource" ["e"=1]
 "zwang4/awesome-machine-learning-in-compilers" -> "llvm/Polygeist"
+"Evian-Zhang/llvm-ir-tutorial" -> "BBuf/tvm_mlir_learn" ["e"=1]
+"Evian-Zhang/llvm-ir-tutorial" -> "buddy-compiler/buddy-mlir" ["e"=1]
+"Evian-Zhang/llvm-ir-tutorial" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
 "vosen/ZLUDA" -> "ROCm/ROCm" ["e"=1]
 "vosen/ZLUDA" -> "lshqqytiger/ZLUDA"
 "vosen/ZLUDA" -> "NVIDIA/open-gpu-kernel-modules" ["e"=1]
@@ -823,6 +985,16 @@ digraph G {
 "vosen/ZLUDA" -> "huggingface/candle" ["e"=1]
 "vosen/ZLUDA" -> "gfx-rs/wgpu" ["e"=1]
 "vosen/ZLUDA" -> "ValveSoftware/Proton" ["e"=1]
+"NVIDIA/nvidia-container-toolkit" -> "NVIDIA/cccl" ["e"=1]
+"mlpack/mlpack" -> "NVIDIA/thrust" ["e"=1]
+"Jittor/jittor" -> "microsoft/nnfusion" ["e"=1]
+"Jittor/jittor" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"Jittor/jittor" -> "alibaba/BladeDISC" ["e"=1]
+"Jittor/jittor" -> "halide/Halide" ["e"=1]
+"Jittor/jittor" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"pytorch/TensorRT" -> "OpenPPL/ppl.nn" ["e"=1]
+"stas00/ml-engineering" -> "gpu-mode/lectures" ["e"=1]
+"deepglint/EasyQuant" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
 "NVIDIA/libcudacxx" -> "NVIDIA/cub"
 "NVIDIA/libcudacxx" -> "NVIDIA/thrust"
 "NVIDIA/libcudacxx" -> "NVIDIA/cccl"
@@ -853,6 +1025,13 @@ digraph G {
 "olcf/cuda-training-series" -> "NVIDIA/cccl"
 "olcf/cuda-training-series" -> "pranjalssh/fast.cu"
 "olcf/cuda-training-series" -> "leimao/CUDA-GEMM-Optimization"
+"huangrt01/CS-Notes" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"plctlab/PLCT-Weekly" -> "buddy-compiler/buddy-mlir" ["e"=1]
+"NervanaSystems/neon" -> "Maratyszcza/NNPACK" ["e"=1]
+"soumith/convnet-benchmarks" -> "Maratyszcza/NNPACK" ["e"=1]
+"soumith/convnet-benchmarks" -> "google/gemmlowp" ["e"=1]
+"soumith/convnet-benchmarks" -> "baidu-research/DeepBench" ["e"=1]
+"andersbll/deeppy" -> "andersbll/cudarray" ["e"=1]
 "alibaba/heterogeneity-aware-lowering-and-optimization" -> "tensorflow/mlir-hlo"
 "alibaba/heterogeneity-aware-lowering-and-optimization" -> "microsoft/nnfusion"
 "alibaba/heterogeneity-aware-lowering-and-optimization" -> "alibaba/ai-matrix"
@@ -942,6 +1121,10 @@ digraph G {
 "merrymercy/awesome-tensor-compilers" -> "alpa-projects/alpa" ["e"=1]
 "merrymercy/awesome-tensor-compilers" -> "openmlsys/openmlsys-zh"
 "merrymercy/awesome-tensor-compilers" -> "BBuf/how-to-optim-algorithm-in-cuda"
+"NVIDIA-Merlin/NVTabular" -> "NVIDIA/cuCollections" ["e"=1]
+"NVIDIA-Merlin/NVTabular" -> "rapidsai/rmm" ["e"=1]
+"msr-fiddle/pipedream" -> "snuspl/nimble" ["e"=1]
+"CppCon/CppCon2020" -> "NVIDIA/libcudacxx" ["e"=1]
 "openhackathons-org/gpubootcamp" -> "openhackathons-org/End-to-End-AI-for-Science"
 "openhackathons-org/gpubootcamp" -> "FZJ-JSC/tutorial-multi-gpu"
 "openhackathons-org/gpubootcamp" -> "nv-legate/cupynumeric"
@@ -950,6 +1133,8 @@ digraph G {
 "openhackathons-org/gpubootcamp" -> "omlins/ParallelStencil.jl" ["e"=1]
 "openhackathons-org/gpubootcamp" -> "OpenACC/openacc-training-materials"
 "openhackathons-org/gpubootcamp" -> "NVIDIA/hpc-container-maker" ["e"=1]
+"intel/intel-extension-for-pytorch" -> "uxlfoundation/oneDNN" ["e"=1]
+"intel/intel-extension-for-pytorch" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
 "onnx/onnx-mlir" -> "llvm/torch-mlir"
 "onnx/onnx-mlir" -> "tensorflow/mlir-hlo"
 "onnx/onnx-mlir" -> "buddy-compiler/buddy-mlir"
@@ -965,6 +1150,8 @@ digraph G {
 "onnx/onnx-mlir" -> "j2kun/mlir-tutorial"
 "onnx/onnx-mlir" -> "MegEngine/MegCC"
 "onnx/onnx-mlir" -> "iml130/mlir-emitc"
+"NVIDIA/gdrcopy" -> "NVIDIA/multi-gpu-programming-models" ["e"=1]
+"NVIDIA/gdrcopy" -> "NVIDIA/nvbench" ["e"=1]
 "llvm/torch-mlir" -> "onnx/onnx-mlir"
 "llvm/torch-mlir" -> "iree-org/iree"
 "llvm/torch-mlir" -> "buddy-compiler/buddy-mlir"
@@ -980,6 +1167,9 @@ digraph G {
 "llvm/torch-mlir" -> "j2kun/mlir-tutorial"
 "llvm/torch-mlir" -> "openxla/xla"
 "llvm/torch-mlir" -> "llvm/circt" ["e"=1]
+"othmanus/algeria-cities" -> "Tiramisu-Compiler/tiramisu" ["e"=1]
+"shining1984/PL-Compiler-Resource" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"shining1984/PL-Compiler-Resource" -> "BBuf/tvm_mlir_learn" ["e"=1]
 "Adlik/Adlik" -> "Adlik/model_optimizer_tf"
 "Adlik/Adlik" -> "Adlik/model_optimizer"
 "Adlik/Adlik" -> "YanshiShield/YanshiShield"
@@ -993,6 +1183,22 @@ digraph G {
 "Adlik/Adlik" -> "ModelTC/MQBench" ["e"=1]
 "Adlik/Adlik" -> "OpenPPL/ppl.cv"
 "Adlik/Adlik" -> "666DZY666/micronet" ["e"=1]
+"NVIDIA-Merlin/HugeCTR" -> "pytorch/FBGEMM" ["e"=1]
+"NVIDIA-Merlin/HugeCTR" -> "alibaba/BladeDISC" ["e"=1]
+"ChrisCummins/ProGraML" -> "facebookresearch/CompilerGym" ["e"=1]
+"Tencent/TurboTransformers" -> "bytedance/ByteTransformer" ["e"=1]
+"Tencent/TurboTransformers" -> "alibaba/BladeDISC" ["e"=1]
+"Tencent/TurboTransformers" -> "microsoft/nnfusion" ["e"=1]
+"tensorflow/runtime" -> "tensorflow/mlir-hlo" ["e"=1]
+"tensorflow/runtime" -> "microsoft/nnfusion" ["e"=1]
+"tensorflow/runtime" -> "tensorflow/mlir" ["e"=1]
+"tensorflow/runtime" -> "alibaba/BladeDISC" ["e"=1]
+"tensorflow/runtime" -> "iree-org/iree" ["e"=1]
+"tensorflow/runtime" -> "onnx/onnx-mlir" ["e"=1]
+"tensorflow/runtime" -> "llvm/torch-mlir" ["e"=1]
+"tensorflow/runtime" -> "jiazhihao/TASO" ["e"=1]
+"tensorflow/runtime" -> "NervanaSystems/ngraph" ["e"=1]
+"tensorflow/runtime" -> "dmlc/dlpack" ["e"=1]
 "google/ml-compiler-opt" -> "facebookresearch/CompilerGym"
 "google/ml-compiler-opt" -> "llvm/Polygeist"
 "google/ml-compiler-opt" -> "zwang4/awesome-machine-learning-in-compilers"
@@ -1038,6 +1244,11 @@ digraph G {
 "NVIDIA/cccl" -> "NVIDIA/TransformerEngine" ["e"=1]
 "NVIDIA/cccl" -> "NVIDIA/cuda-samples" ["e"=1]
 "NVIDIA/cccl" -> "BBuf/how-to-optim-algorithm-in-cuda"
+"bytedance/effective_transformer" -> "bytedance/ByteTransformer" ["e"=1]
+"bytedance/effective_transformer" -> "bytedance/matxscript" ["e"=1]
+"Tencent/TNN" -> "XiaoMi/mace" ["e"=1]
+"Tencent/TNN" -> "huawei-noah/bolt" ["e"=1]
+"Tencent/TNN" -> "OpenPPL/ppl.nn" ["e"=1]
 "sai-bi/ImageSmoothing" -> "csjunxu/Image-Smoothing-State-of-the-art"
 "sai-bi/ImageSmoothing" -> "zhufeida/Benchmark_EPS"
 "sai-bi/ImageSmoothing" -> "sai-bi/L1Flattening" ["e"=1]
@@ -1047,6 +1258,7 @@ digraph G {
 "sai-bi/ImageSmoothing" -> "fqnchina/ImageSmoothing"
 "sai-bi/ImageSmoothing" -> "fergaletto/GVWA"
 "sai-bi/ImageSmoothing" -> "wliusjtu/Semi-Global-Weighted-Least-Squares-in-Image-Filtering"
+"uploadcare/pillow-simd" -> "pytorch/torchdynamo" ["e"=1]
 "d2l-ai/d2l-tvm" -> "pytorch/tvm"
 "d2l-ai/d2l-tvm" -> "microsoft/nnfusion"
 "d2l-ai/d2l-tvm" -> "merrymercy/awesome-tensor-compilers"
@@ -1062,6 +1274,16 @@ digraph G {
 "d2l-ai/d2l-tvm" -> "flame/how-to-optimize-gemm"
 "d2l-ai/d2l-tvm" -> "wkcn/MobulaOP"
 "d2l-ai/d2l-tvm" -> "KnowingNothing/compiler-and-arch"
+"ARM-software/abi-aa" -> "ARM-software/optimized-routines" ["e"=1]
+"jakc4103/DFQ" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"learn-llvm/awesome-llvm" -> "j2kun/mlir-tutorial" ["e"=1]
+"learn-llvm/awesome-llvm" -> "KEKE046/mlir-tutorial" ["e"=1]
+"learn-llvm/awesome-llvm" -> "zwang4/awesome-machine-learning-in-compilers" ["e"=1]
+"intel/neural-compressor" -> "uxlfoundation/oneDNN" ["e"=1]
+"zchrissirhcz/awesome-ncnn" -> "msnh2012/Msnhnet" ["e"=1]
+"gpgpu-sim/gpgpu-sim_distribution" -> "NervanaSystems/maxas" ["e"=1]
+"gpgpu-sim/gpgpu-sim_distribution" -> "cloudcores/CuAssembler" ["e"=1]
+"BRTResearch/AIChip_Paper_List" -> "basicmi/AI-Chip" ["e"=1]
 "NVIDIA/nvcomp" -> "NVIDIA/cuCollections"
 "NVIDIA/nvcomp" -> "NVIDIA/jitify"
 "NVIDIA/nvcomp" -> "facebookresearch/dietgpu" ["e"=1]
@@ -1080,6 +1302,11 @@ digraph G {
 "sleeepyjack/warpcore" -> "owensgroup/SlabHash"
 "sleeepyjack/warpcore" -> "NVIDIA/cuCollections"
 "sleeepyjack/warpcore" -> "muellan/metacache"
+"bytedance/lightseq" -> "alibaba/BladeDISC" ["e"=1]
+"NVIDIA/tensorflow" -> "NVIDIA/CUDALibrarySamples" ["e"=1]
+"NVIDIA/tensorflow" -> "NVIDIA/cub" ["e"=1]
+"NVIDIA/tensorflow" -> "NVIDIA/libcudacxx" ["e"=1]
+"NVIDIA/tensorflow" -> "NVIDIA/cudnn-frontend" ["e"=1]
 "NVIDIA/cuCollections" -> "rapidsai/rmm"
 "NVIDIA/cuCollections" -> "NVIDIA/cub"
 "NVIDIA/cuCollections" -> "sleeepyjack/warpcore"
@@ -1110,6 +1337,8 @@ digraph G {
 "jiazhihao/TASO" -> "bytedance/ByteTransformer"
 "jiazhihao/TASO" -> "mirage-project/mirage" ["e"=1]
 "jiazhihao/TASO" -> "snuspl/nimble"
+"MegEngine/MegEngine" -> "OpenPPL/ppl.nn" ["e"=1]
+"MegEngine/MegEngine" -> "flame/how-to-optimize-gemm" ["e"=1]
 "microsoft/nnfusion" -> "jiazhihao/TASO"
 "microsoft/nnfusion" -> "alibaba/BladeDISC"
 "microsoft/nnfusion" -> "merrymercy/awesome-tensor-compilers"
@@ -1125,10 +1354,23 @@ digraph G {
 "microsoft/nnfusion" -> "tensor-compiler/taco"
 "microsoft/nnfusion" -> "flexflow/flexflow-train" ["e"=1]
 "microsoft/nnfusion" -> "MegEngine/MegCC"
+"PacktPublishing/Learn-LLVM-12" -> "BBuf/tvm_mlir_learn" ["e"=1]
+"PacktPublishing/Learn-LLVM-12" -> "buddy-compiler/buddy-mlir" ["e"=1]
+"microsoft/antares" -> "microsoft/nnfusion" ["e"=1]
+"microsoft/antares" -> "mit-han-lab/inter-operator-scheduler" ["e"=1]
 "GridTools/gt4py" -> "GridTools/gridtools"
 "GridTools/gt4py" -> "ai2cm/pace"
 "GridTools/gt4py" -> "GridTools/serialbox"
 "GridTools/gt4py" -> "MeteoSwiss-APN/dawn"
+"huawei-noah/AdderNet" -> "huawei-noah/bolt" ["e"=1]
+"numba/llvmlite" -> "spcl/pymlir" ["e"=1]
+"exo-lang/exo" -> "llvm/Polygeist" ["e"=1]
+"exo-lang/exo" -> "kumasento/polymer" ["e"=1]
+"exo-lang/exo" -> "pku-liang/AMOS" ["e"=1]
+"exo-lang/exo" -> "bondhugula/pluto" ["e"=1]
+"expnkx/fast_io" -> "stotko/stdgpu" ["e"=1]
+"intel/pti-gpu" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"intel/pti-gpu" -> "intel/mlir-extensions" ["e"=1]
 "mlcommons/ck" -> "ctuning/ck-autotuning"
 "mlcommons/ck" -> "ctuning/ck-tensorflow"
 "mlcommons/ck" -> "ctuning/ck-env"
@@ -1177,6 +1419,14 @@ digraph G {
 "llvm/Polygeist" -> "bondhugula/pluto"
 "llvm/Polygeist" -> "Meinersbur/ppcg"
 "llvm/Polygeist" -> "KEKE046/mlir-tutorial"
+"uxlfoundation/oneMath" -> "uxlfoundation/oneDNN" ["e"=1]
+"uxlfoundation/oneMath" -> "libxsmm/libxsmm" ["e"=1]
+"onnx/optimizer" -> "onnx/onnx-mlir" ["e"=1]
+"onnx/optimizer" -> "OpenPPL/ppl.nn" ["e"=1]
+"onnx/optimizer" -> "alibaba/BladeDISC" ["e"=1]
+"onnx/optimizer" -> "microsoft/nnfusion" ["e"=1]
+"banach-space/clang-tutor" -> "llvm/clangir" ["e"=1]
+"s-gupta/rcnn-depth" -> "deeplearningais/curfil" ["e"=1]
 "msnh2012/Msnhnet" -> "tpoisonooo/how-to-optimize-gemm"
 "msnh2012/Msnhnet" -> "BBuf/ArmNeonOptimization"
 "msnh2012/Msnhnet" -> "aovoc/nnieqat-pytorch" ["e"=1]
@@ -1193,9 +1443,15 @@ digraph G {
 "msnh2012/Msnhnet" -> "tanluren/yolov3-channel-and-layer-pruning" ["e"=1]
 "msnh2012/Msnhnet" -> "dlunion/tensorRTIntegrate" ["e"=1]
 "NVIDIA/nsight-training" -> "cwpearson/nvidia-performance-tools"
+"Maratyszcza/PeachPy" -> "Maratyszcza/NNPACK" ["e"=1]
+"Maratyszcza/PeachPy" -> "libxsmm/libxsmm" ["e"=1]
 "yzhaiustc/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F" -> "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs"
 "yzhaiustc/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F" -> "wjc404/GEMM_AVX512F"
 "yzhaiustc/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F" -> "tpoisonooo/how-to-optimize-gemm"
+"llvm/circt" -> "llvm/torch-mlir" ["e"=1]
+"llvm/circt" -> "llvm/Polygeist" ["e"=1]
+"llvm/circt" -> "iree-org/iree" ["e"=1]
+"sh1r0/caffe-android-lib" -> "Maratyszcza/NNPACK" ["e"=1]
 "inducer/loopy" -> "dmlc/HalideIR"
 "inducer/loopy" -> "inducer/pymbolic" ["e"=1]
 "inducer/loopy" -> "NervanaSystems/maxas"
@@ -1216,9 +1472,11 @@ digraph G {
 "YouQixiaowu/CUDA-Programming-with-Python" -> "MethodJiao/GoSample"
 "YouQixiaowu/CUDA-Programming-with-Python" -> "MethodJiao/OCCGraphicDemo"
 "YouQixiaowu/CUDA-Programming-with-Python" -> "akingse/learn_python"
+"plctlab/PLCT-Open-Reports" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
 "google/ruy" -> "mmperf/mmperf"
 "google/ruy" -> "google/XNNPACK"
 "google/ruy" -> "deepspeedai/DeepSpeed-Kernels"
+"oneapi-src/oneAPI-samples" -> "uxlfoundation/oneDNN" ["e"=1]
 "huawei-noah/bolt" -> "JDAI-CV/dabnn" ["e"=1]
 "huawei-noah/bolt" -> "huawei-noah/vega" ["e"=1]
 "huawei-noah/bolt" -> "OpenPPL/ppl.nn"
@@ -1234,12 +1492,16 @@ digraph G {
 "huawei-noah/bolt" -> "flame/how-to-optimize-gemm"
 "huawei-noah/bolt" -> "xxradon/PytorchToCaffe" ["e"=1]
 "huawei-noah/bolt" -> "google/gemmlowp"
+"huawei-noah/vega" -> "huawei-noah/bolt" ["e"=1]
+"dmlc/minerva" -> "NervanaSystems/nervana-lib-gpu-performance-preview" ["e"=1]
 "tvmai/meetup-slides" -> "pku-liang/AMOS"
 "tvmai/meetup-slides" -> "nox-410/tvm.tl"
 "tvmai/meetup-slides" -> "tvmai/tvmai.github.io"
 "tvmai/meetup-slides" -> "tqchen/ffi-navigator"
 "uwplse/tensat" -> "gussmith23/glenside"
 "uwplse/tensat" -> "uwplse/ruler" ["e"=1]
+"grimoire/mmdetection-to-tensorrt" -> "msnh2012/Msnhnet" ["e"=1]
+"hughperkins/DeepCL" -> "Maratyszcza/NNPACK" ["e"=1]
 "apache/reef" -> "snuspl/dolphin"
 "apache/reef" -> "snuspl/pluto"
 "apache/reef" -> "snuspl/cruise"
@@ -1247,6 +1509,7 @@ digraph G {
 "apache/reef" -> "apache/incubator-nemo"
 "apache/reef" -> "friendliai/LLMServingPerfEvaluator"
 "apache/reef" -> "snuspl/parallax"
+"shinpei0208/gdev" -> "laanwj/decuda" ["e"=1]
 "ctuning/ck-analytics" -> "ctuning/ck-crowdnode"
 "ctuning/ck-analytics" -> "ctuning/ck-web"
 "ctuning/ck-analytics" -> "ctuning/ck-docker"
@@ -1286,6 +1549,8 @@ digraph G {
 "ctuning/ctuning-programs" -> "ctuning/ck-dev-compilers"
 "ctuning/ctuning-programs" -> "ctuning/ck-analytics"
 "ctuning/ctuning-programs" -> "dividiti/gemmbench"
+"UIUC-ChenLab/scalehls" -> "kumasento/polymer" ["e"=1]
+"UIUC-ChenLab/scalehls" -> "llvm/Polygeist" ["e"=1]
 "Cambricon/CNStream" -> "Cambricon/caffe"
 "Cambricon/CNStream" -> "Cambricon/ffmpeg-mlu"
 "Cambricon/CNStream" -> "Cambricon/Cambricon-Gst"
@@ -1298,7 +1563,10 @@ digraph G {
 "Cambricon/CNStream" -> "superlich7/Paddle-Lite"
 "Cambricon/CNStream" -> "CambriconKnight/mlu220-cross-compile-docker-image"
 "Cambricon/cambricon-k8s-device-plugin" -> "Cambricon/mlu-exporter"
+"buaa-hipo/dlcompiler-comparison" -> "uwsampl/sparsetir-artifact" ["e"=1]
 "gussmith23/glenside" -> "uwplse/tensat"
+"pytorch/kineto" -> "pytorch/torchdynamo" ["e"=1]
+"pytorch/kineto" -> "pytorch/FBGEMM" ["e"=1]
 "lambdal/deeplearning-benchmark" -> "LambdaColdStorage/lambda-tensorflow-benchmark"
 "xingdi-eric-yuan/conv-net-version-3" -> "xingdi-eric-yuan/single-layer-convnet"
 "xingdi-eric-yuan/conv-net-version-3" -> "xingdi-eric-yuan/multi-layer-convnet"
@@ -1317,6 +1585,8 @@ digraph G {
 "NVIDIA/NVTX" -> "bryancatanzaro/trove"
 "NVIDIA/NVTX" -> "openucx/ucc" ["e"=1]
 "NVIDIA/NVTX" -> "NVIDIA/cudnn-frontend"
+"NVlabs/NVBit" -> "cloudcores/CuAssembler" ["e"=1]
+"NVlabs/NVBit" -> "daadaada/turingas" ["e"=1]
 "iml130/mlir-emitc" -> "kumasento/polymer"
 "iml130/mlir-emitc" -> "libxsmm/tpp-mlir"
 "iml130/mlir-emitc" -> "ROCm/rocMLIR"
@@ -1343,6 +1613,7 @@ digraph G {
 "tqchen/ffi-navigator" -> "wzh99/relay-mlir"
 "tqchen/ffi-navigator" -> "pku-liang/AMOS"
 "tqchen/ffi-navigator" -> "octoml/octoml-profile"
+"oneapi-src/level-zero" -> "intel/mlir-extensions" ["e"=1]
 "pigirons/sgemm_hsw" -> "pigirons/cpufp"
 "pigirons/sgemm_hsw" -> "StrongSpoon/tvm.schedule"
 "pigirons/sgemm_hsw" -> "BBuf/how-to-optimize-gemm"
@@ -1351,13 +1622,16 @@ digraph G {
 "pigirons/sgemm_hsw" -> "pigirons/conv3x3_m1"
 "pigirons/sgemm_hsw" -> "Yinghan-Li/YHs_Sample"
 "pigirons/sgemm_hsw" -> "cloudcores/CuAssembler"
+"UCLA-VAST/AutoSA" -> "kumasento/polymer" ["e"=1]
 "Cambricon/CN-GDB" -> "Cambricon/caffe"
+"aovoc/nnieqat-pytorch" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
 "Adlik/model_optimizer_tf" -> "Adlik/model_optimizer"
 "nosferalatu/SimpleGPUHashTable" -> "owensgroup/SlabHash"
 "nosferalatu/SimpleGPUHashTable" -> "sleeepyjack/warpcore"
 "nosferalatu/SimpleGPUHashTable" -> "NVIDIA/cuCollections"
 "nosferalatu/SimpleGPUHashTable" -> "cudpp/cudpp"
 "nosferalatu/SimpleGPUHashTable" -> "NVlabs/fermat" ["e"=1]
+"mgaudet/CompilerJobs" -> "mlir-rs/melior" ["e"=1]
 "LLNL/merlin" -> "LLNL/maestrowf"
 "jmgorius/mlir-standalone-template" -> "iml130/mlir-emitc"
 "jmgorius/mlir-standalone-template" -> "makslevental/nelli"
@@ -1386,6 +1660,7 @@ digraph G {
 "Cambricon/caffe_boost" -> "Cambricon/caffe"
 "metricq/metricq-python" -> "metricq/metricq"
 "cwpearson/nvidia-performance-tools" -> "NVIDIA/nsight-training"
+"uxlfoundation/oneCCL" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
 "msnh2012/CasiaLabeler" -> "msnh2012/Msnhnet"
 "msnh2012/CasiaLabeler" -> "pprp/landmark_annotation" ["e"=1]
 "msnh2012/CasiaLabeler" -> "FeiGeChuanShu/ncnn_nanodet_hand" ["e"=1]
@@ -1435,6 +1710,9 @@ digraph G {
 "BBuf/tvm_mlir_learn" -> "iree-org/iree"
 "BBuf/tvm_mlir_learn" -> "Liu-xiandong/How_to_optimize_in_GPU"
 "BBuf/tvm_mlir_learn" -> "xlite-dev/Awesome-LLM-Inference" ["e"=1]
+"ShiqiYu/CPP" -> "openmlsys/openmlsys-zh" ["e"=1]
+"ShiqiYu/CPP" -> "l0ngc/hpc-learning" ["e"=1]
+"apple/tensorflow_macos" -> "plaidml/plaidml" ["e"=1]
 "NVIDIA-developer-blog/code-samples" -> "NVIDIA/cub"
 "NVIDIA-developer-blog/code-samples" -> "NVIDIA/multi-gpu-programming-models"
 "NVIDIA-developer-blog/code-samples" -> "NVIDIA/thrust"
@@ -1450,6 +1728,11 @@ digraph G {
 "NVIDIA-developer-blog/code-samples" -> "NVIDIA/cnmem"
 "NVIDIA-developer-blog/code-samples" -> "baidu-research/persistent-rnn" ["e"=1]
 "NVIDIA-developer-blog/code-samples" -> "NVIDIA/cutlass" ["e"=1]
+"antonmks/Alenka" -> "cudpp/cudpp" ["e"=1]
+"NVIDIA/trt-samples-for-hackathon-cn" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"rose-compiler/rose" -> "bondhugula/pluto" ["e"=1]
+"pytorch/torchrec" -> "pytorch/FBGEMM" ["e"=1]
+"NVIDIA/stdexec" -> "NVIDIA/cccl" ["e"=1]
 "facebookresearch/CompilerGym" -> "google/ml-compiler-opt"
 "facebookresearch/CompilerGym" -> "zwang4/awesome-machine-learning-in-compilers"
 "facebookresearch/CompilerGym" -> "ChrisCummins/ProGraML" ["e"=1]
@@ -1510,12 +1793,21 @@ digraph G {
 "NVIDIA/thrust" -> "ericniebler/range-v3" ["e"=1]
 "NVIDIA/thrust" -> "ROCm/hip" ["e"=1]
 "NVIDIA/thrust" -> "xtensor-stack/xtensor" ["e"=1]
+"tzutalin/ImageNet_Utils" -> "dividiti/ck-caffe" ["e"=1]
 "roastduck/FreeTensor" -> "thu-pacman/PET"
 "roastduck/FreeTensor" -> "pku-liang/AMOS"
 "roastduck/FreeTensor" -> "uwsampl/SparseTIR"
 "roastduck/FreeTensor" -> "UofT-EcoSystem/DietCode"
 "roastduck/FreeTensor" -> "thu-pacman/HyQuas"
+"NVIDIA/caffe" -> "NVIDIA/cnmem" ["e"=1]
 "eedalong/ECE408" -> "aschuh703/ECE408"
+"Atcold/NYU-DLSP21" -> "minitorch/minitorch" ["e"=1]
+"intel/idlf" -> "NervanaSystems/nervanagpu" ["e"=1]
+"ermig1979/Simd" -> "ARM-software/ComputeLibrary" ["e"=1]
+"ermig1979/Simd" -> "projectNe10/Ne10" ["e"=1]
+"ermig1979/Simd" -> "intel/ARM_NEON_2_x86_SSE" ["e"=1]
+"ermig1979/Simd" -> "halide/Halide" ["e"=1]
+"ermig1979/Simd" -> "google/gemmlowp" ["e"=1]
 "OpenPPL/ppl.nn" -> "OpenPPL/ppl.cv"
 "OpenPPL/ppl.nn" -> "OpenPPL/ppq" ["e"=1]
 "OpenPPL/ppl.nn" -> "alibaba/BladeDISC"
@@ -1531,6 +1823,7 @@ digraph G {
 "OpenPPL/ppl.nn" -> "Tencent/TNN" ["e"=1]
 "OpenPPL/ppl.nn" -> "ModelTC/MQBench" ["e"=1]
 "OpenPPL/ppl.nn" -> "pytorch/TensorRT" ["e"=1]
+"dmlc/dmlc-core" -> "dmlc/dlpack" ["e"=1]
 "godweiyang/NN-CUDA-Example" -> "BBuf/how-to-optim-algorithm-in-cuda"
 "godweiyang/NN-CUDA-Example" -> "Tony-Tan/CUDA_Freshman"
 "godweiyang/NN-CUDA-Example" -> "Liu-xiandong/How_to_optimize_in_GPU"
@@ -1546,6 +1839,7 @@ digraph G {
 "godweiyang/NN-CUDA-Example" -> "ifromeast/cuda_learning"
 "godweiyang/NN-CUDA-Example" -> "NVIDIA/FasterTransformer" ["e"=1]
 "godweiyang/NN-CUDA-Example" -> "Cjkkkk/CUDA_gemm"
+"kjw0612/awesome-random-forest" -> "deeplearningais/curfil" ["e"=1]
 "NVIDIA/nvbench" -> "RRZE-HPC/gpu-benches"
 "NVIDIA/nvbench" -> "NVIDIA/cccl"
 "NVIDIA/nvbench" -> "NVIDIA/jitify"
@@ -1568,6 +1862,11 @@ digraph G {
 "NervanaSystems/nervanagpu" -> "PAA-NCIC/PPoPP2017_artifact"
 "NervanaSystems/nervanagpu" -> "joschu/cgt" ["e"=1]
 "NervanaSystems/nervanagpu" -> "NervanaSystems/maxas"
+"alpa-projects/alpa" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"alpa-projects/alpa" -> "microsoft/nnfusion" ["e"=1]
+"alpa-projects/alpa" -> "alibaba/BladeDISC" ["e"=1]
+"alpa-projects/alpa" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"Tencent/PatrickStar" -> "alibaba/BladeDISC" ["e"=1]
 "NVIDIA/cnmem" -> "NVIDIA/jitify"
 "NVIDIA/cnmem" -> "rapidsai/rmm"
 "NVIDIA/cnmem" -> "linnanwang/superneurons-release"
@@ -1575,6 +1874,7 @@ digraph G {
 "NVIDIA/cnmem" -> "cudpp/cudpp"
 "NVIDIA/cnmem" -> "NervanaSystems/maxas"
 "NVIDIA/cnmem" -> "NVIDIA/caffe" ["e"=1]
+"pytorch/functorch" -> "pytorch/torchdynamo" ["e"=1]
 "akrizhevsky/cuda-convnet2" -> "dnouri/cuda-convnet"
 "akrizhevsky/cuda-convnet2" -> "soumith/convnet-benchmarks" ["e"=1]
 "akrizhevsky/cuda-convnet2" -> "TorontoDeepLearning/convnet"
@@ -1590,9 +1890,14 @@ digraph G {
 "akrizhevsky/cuda-convnet2" -> "andravin/wincnn"
 "akrizhevsky/cuda-convnet2" -> "dmlc/cxxnet" ["e"=1]
 "akrizhevsky/cuda-convnet2" -> "dmlc/mshadow" ["e"=1]
+"RRZE-HPC/likwid" -> "libxsmm/libxsmm" ["e"=1]
+"trailofbits/vast" -> "llvm/clangir" ["e"=1]
+"trailofbits/vast" -> "llvm/Polygeist" ["e"=1]
+"datastaxdevs/workshop-graphql-netflix" -> "OpenPPL/ppl.nn" ["e"=1]
 "jratcliff63367/sse2neon" -> "intel/ARM_NEON_2_x86_SSE"
 "jratcliff63367/sse2neon" -> "DLTcollab/sse2neon" ["e"=1]
 "jratcliff63367/sse2neon" -> "RomaTeng/EKF-SLAM-on-Manifold" ["e"=1]
+"csmith-project/creduce" -> "llvm/clangir" ["e"=1]
 "snuspl/nimble" -> "friendliai/FAI-Model"
 "snuspl/nimble" -> "friendliai/periflow-python-sdk"
 "snuspl/nimble" -> "snuspl/parallax"
@@ -1613,6 +1918,7 @@ digraph G {
 "tlc-pack/tenset" -> "uwsampl/SparseTIR"
 "tlc-pack/tenset" -> "zhaiyi000/tlm"
 "tlc-pack/tenset" -> "awslabs/slapo"
+"PKUFlyingPig/CS149-parallel-computing" -> "XiaoSong9905/CUDA-Optimization-Guide" ["e"=1]
 "Jack47/hack-SysML" -> "BBuf/how-to-learn-deep-learning-framework"
 "Jack47/hack-SysML" -> "alibaba/BladeDISC"
 "Jack47/hack-SysML" -> "Yinghan-Li/YHs_Sample"
@@ -1643,6 +1949,11 @@ digraph G {
 "tlc-pack/relax" -> "roastduck/FreeTensor"
 "tlc-pack/relax" -> "awslabs/raf"
 "tlc-pack/relax" -> "anirudhsundar/tvm-gdb-commands"
+"P2Tree/LLVM_for_cpu0" -> "StrongSpoon/tvm.schedule" ["e"=1]
+"P2Tree/LLVM_for_cpu0" -> "buddy-compiler/buddy-mlir" ["e"=1]
+"P2Tree/LLVM_for_cpu0" -> "KEKE046/mlir-tutorial" ["e"=1]
+"P2Tree/LLVM_for_cpu0" -> "Lewuathe/mlir-hello" ["e"=1]
+"pytorch/data" -> "pytorch/torchdynamo" ["e"=1]
 "buddy-compiler/buddy-mlir" -> "KEKE046/mlir-tutorial"
 "buddy-compiler/buddy-mlir" -> "sophgo/tpu-mlir"
 "buddy-compiler/buddy-mlir" -> "onnx/onnx-mlir"
@@ -1658,6 +1969,10 @@ digraph G {
 "buddy-compiler/buddy-mlir" -> "iree-org/iree"
 "buddy-compiler/buddy-mlir" -> "merrymercy/awesome-tensor-compilers"
 "buddy-compiler/buddy-mlir" -> "spcl/pymlir"
+"xiaoweiChen/Learn-LLVM-12" -> "buddy-compiler/buddy-mlir" ["e"=1]
+"xiaoweiChen/Learn-LLVM-12" -> "StrongSpoon/tvm.schedule" ["e"=1]
+"xiaoweiChen/Learn-LLVM-12" -> "KEKE046/mlir-tutorial" ["e"=1]
+"ChunelFeng/CGraph" -> "zjhellofss/KuiperInfer" ["e"=1]
 "nv-legate/cupynumeric" -> "nv-legate/legate"
 "nv-legate/cupynumeric" -> "nv-legate/legate.pandas"
 "nv-legate/cupynumeric" -> "StanfordLegion/legion" ["e"=1]
@@ -1673,6 +1988,9 @@ digraph G {
 "nv-legate/cupynumeric" -> "rapidsai/cugraph" ["e"=1]
 "nv-legate/cupynumeric" -> "PyFR/PyFR" ["e"=1]
 "nv-legate/cupynumeric" -> "NVIDIA/cccl"
+"BaguaSys/bagua" -> "alibaba/BladeDISC" ["e"=1]
+"BaguaSys/bagua" -> "BaguaSys/bagua-core" ["e"=1]
+"BaguaSys/bagua" -> "pytorch/torchdynamo" ["e"=1]
 "intel/mlir-extensions" -> "libxsmm/tpp-mlir"
 "intel/mlir-extensions" -> "intel/graph-compiler"
 "intel/mlir-extensions" -> "numba/numba-mlir"
@@ -1683,6 +2001,7 @@ digraph G {
 "intel/mlir-extensions" -> "intel/xetla"
 "intel/mlir-extensions" -> "intel/intel-xpu-backend-for-triton"
 "intel/mlir-extensions" -> "llvm/mlir-www"
+"hughperkins/cltorch" -> "eBay/maxDNN" ["e"=1]
 "deeperlearning/professional-cuda-c-programming" -> "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes"
 "deeperlearning/professional-cuda-c-programming" -> "CodedK/CUDA-by-Example-source-code-for-the-book-s-examples-"
 "deeperlearning/professional-cuda-c-programming" -> "ArchaeaSoftware/cudahandbook"
@@ -1714,8 +2033,14 @@ digraph G {
 "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" -> "flame/how-to-optimize-gemm"
 "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" -> "pranjalssh/fast.cu"
 "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" -> "nicolaswilde/cuda-tensorcore-hgemm"
+"Tencent/Forward" -> "OpenPPL/ppl.nn" ["e"=1]
+"Tencent/Forward" -> "AI-performance/embedded-ai.bench" ["e"=1]
+"Tencent/Forward" -> "OpenPPL/ppl.cv" ["e"=1]
+"xboot/libonnx" -> "MegEngine/MegCC" ["e"=1]
 "snuspl/cruise" -> "snuspl/pluto"
 "snuspl/cruise" -> "snuspl/nemo"
+"ekondis/mixbench" -> "NVIDIA/nvbench" ["e"=1]
+"ekondis/mixbench" -> "RRZE-HPC/gpu-benches" ["e"=1]
 "YuanhaoGong/CurvatureFilter" -> "YuanhaoGong/SideWindowFilter"
 "YuanhaoGong/CurvatureFilter" -> "YuanhaoGong/Naturalization"
 "YuanhaoGong/CurvatureFilter" -> "YuanhaoGong/WeightedMeanCurvature"
@@ -1737,6 +2062,11 @@ digraph G {
 "OpenPPL/ppl.cv" -> "OpenPPL/ppl.llm.kernel.cuda"
 "OpenPPL/ppl.cv" -> "ModelTC/MQBench" ["e"=1]
 "OpenPPL/ppl.cv" -> "zerollzeng/tiny-tensorrt" ["e"=1]
+"luoyetx/mini-caffe" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"ROCm/composable_kernel" -> "cloudcores/CuAssembler" ["e"=1]
+"ROCm/composable_kernel" -> "ROCm/rocMLIR" ["e"=1]
+"ROCm/composable_kernel" -> "Yinghan-Li/YHs_Sample" ["e"=1]
+"UoB-HPC/BabelStream" -> "NVIDIA/multi-gpu-programming-models" ["e"=1]
 "nv-legate/legate" -> "nv-legate/legate.pandas"
 "nv-legate/legate" -> "nv-legate/cupynumeric"
 "nv-legate/legate" -> "nv-legate/legate-sparse"
@@ -1745,6 +2075,7 @@ digraph G {
 "tbennun/cudnn-training" -> "Hardware-Alchemy/cuDNN-sample"
 "tbennun/cudnn-training" -> "haanjack/mnist-cudnn"
 "tbennun/cudnn-training" -> "eBay/maxDNN"
+"JuliaHubOSS/llvm-cbe" -> "llvm/clangir" ["e"=1]
 "wliusjtu/Generalized-Smoothing-Framework" -> "wliusjtu/Real-time-Image-Smoothing-via-Iterative-Least-Squares"
 "wliusjtu/Generalized-Smoothing-Framework" -> "wliusjtu/Embedding-Bilateral-Filter-in-Least-Squares-for-Efficient-Edge-preserving-Image-Smoothing"
 "ctuning/ck-env" -> "ctuning/ck-crowdnode"
@@ -1766,6 +2097,7 @@ digraph G {
 "apache/tvm-rfcs" -> "tlc-pack/TLCBench"
 "apache/tvm-rfcs" -> "pku-liang/AMOS"
 "apache/tvm-rfcs" -> "anirudhsundar/tvm-gdb-commands"
+"NVlabs/SASSI" -> "PAA-NCIC/PPoPP2017_artifact" ["e"=1]
 "thu-pacman/PET" -> "roastduck/FreeTensor"
 "thu-pacman/PET" -> "mit-han-lab/inter-operator-scheduler"
 "thu-pacman/PET" -> "pku-liang/AMOS"
@@ -1795,6 +2127,7 @@ digraph G {
 "Lewuathe/mlir-hello" -> "jmgorius/mlir-standalone-template"
 "Lewuathe/mlir-hello" -> "llvm/Polygeist"
 "anirudhsundar/tvm-gdb-commands" -> "Lunderberg/tvm-gdb-extension"
+"jaywonchung/reason" -> "jaywonchung/dotfiles" ["e"=1]
 "laanwj/decuda" -> "hyqneuron/asfermi"
 "thenifty/neon-guide" -> "rogerou/Arm-neon-intrinsics"
 "thenifty/neon-guide" -> "intel/ARM_NEON_2_x86_SSE"
@@ -1823,6 +2156,7 @@ digraph G {
 "mit-han-lab/inter-operator-scheduler" -> "nox-410/tvm.tl"
 "mit-han-lab/inter-operator-scheduler" -> "cmu-catalyst/collage"
 "MegEngine/cutlass" -> "njuhope/cuda_sgemm"
+"google/nccl-fastsocket" -> "BaguaSys/bagua-net" ["e"=1]
 "pku-liang/AMOS" -> "pku-liang/FlexTensor"
 "pku-liang/AMOS" -> "UofT-EcoSystem/DietCode"
 "pku-liang/AMOS" -> "nox-410/tvm.tl"
@@ -1868,6 +2202,18 @@ digraph G {
 "swsnu/aisys2021" -> "jaywonchung/dotfiles"
 "BaguaSys/tutorials" -> "BaguaSys/bagua-net"
 "BaguaSys/tutorials" -> "BaguaSys/bagua-core"
+"NVIDIA/open-gpu-kernel-modules" -> "vosen/ZLUDA" ["e"=1]
+"srush/Tensor-Puzzles" -> "minitorch/minitorch" ["e"=1]
+"srush/Tensor-Puzzles" -> "gpu-mode/lectures" ["e"=1]
+"TingsongYu/PyTorch-Tutorial-2nd" -> "chenzomi12/AISystem" ["e"=1]
+"elemental/Elemental" -> "flame/libflame" ["e"=1]
+"elemental/Elemental" -> "libxsmm/libxsmm" ["e"=1]
+"elemental/Elemental" -> "LLNL/Aluminum" ["e"=1]
+"parallel101/course" -> "zjhellofss/KuiperInfer" ["e"=1]
+"parallel101/course" -> "xlite-dev/LeetCUDA" ["e"=1]
+"parallel101/course" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"parallel101/course" -> "openmlsys/openmlsys-zh" ["e"=1]
+"parallel101/course" -> "Tony-Tan/CUDA_Freshman" ["e"=1]
 "openmlsys/openmlsys-zh" -> "microsoft/AI-System"
 "openmlsys/openmlsys-zh" -> "BBuf/tvm_mlir_learn"
 "openmlsys/openmlsys-zh" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero"
@@ -1883,6 +2229,7 @@ digraph G {
 "openmlsys/openmlsys-zh" -> "flashinfer-ai/flashinfer" ["e"=1]
 "openmlsys/openmlsys-zh" -> "kvcache-ai/Mooncake" ["e"=1]
 "openmlsys/openmlsys-zh" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial"
+"google/inception" -> "NervanaSystems/nervanagpu" ["e"=1]
 "minitorch/minitorch" -> "srush/Tensor-Puzzles" ["e"=1]
 "minitorch/minitorch" -> "gpu-mode/lectures"
 "minitorch/minitorch" -> "srush/Triton-Puzzles" ["e"=1]
@@ -1901,6 +2248,11 @@ digraph G {
 "zchee/cuda-sample" -> "lzhengchun/matrix-cuda"
 "zchee/cuda-sample" -> "wangzyon/NVIDIA_SGEMM_PRACTICE"
 "zchee/cuda-sample" -> "NVIDIA-developer-blog/code-samples"
+"andersbll/neural_artistic_style" -> "andersbll/cudarray" ["e"=1]
+"shibatch/sleef" -> "ARM-software/optimized-routines" ["e"=1]
+"shibatch/sleef" -> "libxsmm/libxsmm" ["e"=1]
+"shibatch/sleef" -> "intel/ARM_NEON_2_x86_SSE" ["e"=1]
+"amd/OpenCL-caffe" -> "eBay/maxDNN" ["e"=1]
 "MAhaitao999/CUDA_Programming" -> "QINZHAOYU/CudaSteps"
 "pytorch/torchdynamo" -> "alibaba/BladeDISC"
 "pytorch/torchdynamo" -> "llvm/torch-mlir"
@@ -1947,6 +2299,9 @@ digraph G {
 "Yinghan-Li/YHs_Sample" -> "ByteDance-Seed/Triton-distributed" ["e"=1]
 "Yinghan-Li/YHs_Sample" -> "pranjalssh/fast.cu"
 "Yinghan-Li/YHs_Sample" -> "66RING/tiny-flash-attention"
+"ZhangGe6/onnx-modifier" -> "OpenPPL/ppl.nn" ["e"=1]
+"facebookarchive/fb-caffe-exts" -> "Maratyszcza/NNPACK" ["e"=1]
+"open-mmlab/mmdeploy" -> "OpenPPL/ppl.nn" ["e"=1]
 "nod-ai/SHARK-Studio" -> "lshqqytiger/stable-diffusion-webui-amdgpu"
 "nod-ai/SHARK-Studio" -> "Amblyopius/Stable-Diffusion-ONNX-FP16"
 "nod-ai/SHARK-Studio" -> "llvm/torch-mlir"
@@ -1977,9 +2332,16 @@ digraph G {
 "HeKun-NVIDIA/CUDA-Programming-Guide-in-Chinese" -> "sangyc10/CUDA-code"
 "HeKun-NVIDIA/CUDA-Programming-Guide-in-Chinese" -> "openmlsys/openmlsys-zh"
 "HeKun-NVIDIA/CUDA-Programming-Guide-in-Chinese" -> "gpu-mode/lectures"
+"ROCm/hip" -> "NVIDIA/thrust" ["e"=1]
+"ROCm/hip" -> "NVIDIA/cub" ["e"=1]
+"ROCm/hip" -> "halide/Halide" ["e"=1]
 "Maratyszcza/pthreadpool" -> "Maratyszcza/FP16"
 "Maratyszcza/pthreadpool" -> "Maratyszcza/FXdiv"
 "Maratyszcza/pthreadpool" -> "pytorch/cpuinfo"
+"NVIDIA/nccl" -> "NVIDIA/cub" ["e"=1]
+"NVIDIA/nvbandwidth" -> "NVIDIA/multi-gpu-programming-models" ["e"=1]
+"NVIDIA/nvbandwidth" -> "NVIDIA/nvbench" ["e"=1]
+"NVIDIA/nvbandwidth" -> "NVIDIA/NVTX" ["e"=1]
 "QINZHAOYU/CudaSteps" -> "MAhaitao999/CUDA_Programming"
 "QINZHAOYU/CudaSteps" -> "SeventhBlue/cudaLearningMaterials"
 "QINZHAOYU/CudaSteps" -> "HeKun-NVIDIA/CUDA-Programming-Guide-in-Chinese"
@@ -1991,6 +2353,9 @@ digraph G {
 "QINZHAOYU/CudaSteps" -> "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes"
 "QINZHAOYU/CudaSteps" -> "HuangCongQing/cuda-learning"
 "QINZHAOYU/CudaSteps" -> "Tongkaio/CUDA_Kernel_Samples"
+"pytorch/executorch" -> "google/XNNPACK" ["e"=1]
+"pytorch/executorch" -> "openxla/xla" ["e"=1]
+"ROCm/Tensile" -> "ROCm/rocMLIR" ["e"=1]
 "ARM-software/optimized-routines" -> "shibatch/sleef" ["e"=1]
 "ARM-software/optimized-routines" -> "ARM-software/ComputeLibrary"
 "ARM-software/optimized-routines" -> "projectNe10/Ne10"
@@ -2003,6 +2368,10 @@ digraph G {
 "ARM-software/optimized-routines" -> "kdrag0n/adevtool" ["e"=1]
 "ARM-software/optimized-routines" -> "ARM-software/synchronization-benchmarks"
 "ARM-software/optimized-routines" -> "RRZE-HPC/OSACA" ["e"=1]
+"OpenPPL/ppq" -> "OpenPPL/ppl.nn" ["e"=1]
+"OpenPPL/ppq" -> "BBuf/tvm_mlir_learn" ["e"=1]
+"OpenPPL/ppq" -> "OpenPPL/ppl.cv" ["e"=1]
+"OpenPPL/ppq" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
 "sophgo/tpu-mlir" -> "buddy-compiler/buddy-mlir"
 "sophgo/tpu-mlir" -> "KEKE046/mlir-tutorial"
 "sophgo/tpu-mlir" -> "BBuf/tvm_mlir_learn"
@@ -2018,6 +2387,9 @@ digraph G {
 "sophgo/tpu-mlir" -> "llvm/Polygeist"
 "sophgo/tpu-mlir" -> "Cambricon/triton-linalg"
 "sophgo/tpu-mlir" -> "merrymercy/awesome-tensor-compilers"
+"Jonathan2251/lbd" -> "kumasento/polymer" ["e"=1]
+"Jonathan2251/lbd" -> "buddy-compiler/buddy-mlir" ["e"=1]
+"inikep/lzbench" -> "NVIDIA/nvcomp" ["e"=1]
 "alibaba/BladeDISC" -> "microsoft/nnfusion"
 "alibaba/BladeDISC" -> "tensorflow/mlir-hlo"
 "alibaba/BladeDISC" -> "llvm/torch-mlir"
@@ -2033,6 +2405,7 @@ digraph G {
 "alibaba/BladeDISC" -> "pytorch/torchdynamo"
 "alibaba/BladeDISC" -> "openxla/stablehlo"
 "alibaba/BladeDISC" -> "tensorflow/runtime" ["e"=1]
+"DeepRec-AI/DeepRec" -> "alibaba/BladeDISC" ["e"=1]
 "NVIDIA/MatX" -> "NVIDIA/cccl"
 "NVIDIA/MatX" -> "NVIDIA/nvbench"
 "NVIDIA/MatX" -> "NVIDIA/cuCollections"
@@ -2071,11 +2444,22 @@ digraph G {
 "hidet-org/hidet" -> "UofT-EcoSystem/DietCode"
 "hidet-org/hidet" -> "tile-ai/tilelang" ["e"=1]
 "hidet-org/hidet" -> "TiledTensor/TiledCUDA"
+"joyycom/VNN" -> "OpenPPL/ppl.nn" ["e"=1]
+"joyycom/VNN" -> "huawei-noah/bolt" ["e"=1]
 "owensgroup/MVGpuBTree" -> "owensgroup/GpuBTree"
+"Tencent/TPAT" -> "alibaba/BladeDISC" ["e"=1]
+"Tencent/TPAT" -> "OpenPPL/ppl.cv" ["e"=1]
+"Tencent/TPAT" -> "bytedance/ByteTransformer" ["e"=1]
+"Tencent/TPAT" -> "OpenPPL/ppl.nn" ["e"=1]
+"HeKun-NVIDIA/TensorRT-Developer_Guide_in_Chinese" -> "HeKun-NVIDIA/CUDA-Programming-Guide-in-Chinese" ["e"=1]
+"facebookresearch/dietgpu" -> "NVIDIA/nvcomp" ["e"=1]
 "FZJ-JSC/tutorial-multi-gpu" -> "NVIDIA/multi-gpu-programming-models"
 "FZJ-JSC/tutorial-multi-gpu" -> "XiaoSong9905/CUDA-Optimization-Guide"
 "FZJ-JSC/tutorial-multi-gpu" -> "ColfaxResearch/cutlass-kernels"
 "FZJ-JSC/tutorial-multi-gpu" -> "Bruce-Lee-LY/flash_attention_inference"
+"Xilinx/mlir-aie" -> "llvm/Polygeist" ["e"=1]
+"Xilinx/mlir-aie" -> "kumasento/polymer" ["e"=1]
+"Xilinx/mlir-aie" -> "iml130/mlir-emitc" ["e"=1]
 "friendliai/FAI-Model" -> "friendliai/periflow-cli"
 "friendliai/FAI-Model" -> "friendliai/periflow-python-sdk"
 "friendliai/FAI-Model" -> "friendliai/LLMServingPerfEvaluator"
@@ -2097,9 +2481,16 @@ digraph G {
 "ArchaeaSoftware/cudahandbook" -> "lebedov/scikit-cuda"
 "ArchaeaSoftware/cudahandbook" -> "Yinghan-Li/YHs_Sample"
 "ArchaeaSoftware/cudahandbook" -> "udacity/cs344"
+"ducha-aiki/caffenet-benchmark" -> "Maratyszcza/NNPACK" ["e"=1]
+"ROCm/rocBLAS" -> "ROCm/rocMLIR" ["e"=1]
 "Cambricon/mlu-ops" -> "Cambricon/catch"
 "Cambricon/mlu-ops" -> "Cambricon/CNStream"
 "Cambricon/mlu-ops" -> "Cambricon/triton-linalg"
+"joschu/cgt" -> "NervanaSystems/nervanagpu" ["e"=1]
+"Artelnics/opennn" -> "uxlfoundation/oneDNN" ["e"=1]
+"Artelnics/opennn" -> "stotko/stdgpu" ["e"=1]
+"STEllAR-GROUP/hpx" -> "NVIDIA/thrust" ["e"=1]
+"hpcaitech/EnergonAI" -> "bytedance/ByteTransformer" ["e"=1]
 "snuspl/pluto" -> "snuspl/nemo"
 "snuspl/pluto" -> "snuspl/cruise"
 "xdslproject/xdsl" -> "llvm/Polygeist"
@@ -2119,6 +2510,8 @@ digraph G {
 "xdslproject/xdsl" -> "llvm/torch-mlir"
 "MegEngine/MegPeak" -> "MegEngine/mperf"
 "MegEngine/MegPeak" -> "MegEngine/MegCC"
+"alibaba/EasyParallelLibrary" -> "alibaba/BladeDISC" ["e"=1]
+"egraphs-good/egglog" -> "mlir-rs/melior" ["e"=1]
 "mlc-ai/mlc-en" -> "mlc-ai/mlc-zh"
 "mlc-ai/mlc-en" -> "mlc-ai/notebooks"
 "mlc-ai/mlc-en" -> "tlc-pack/relax"
@@ -2153,6 +2546,7 @@ digraph G {
 "dividiti/gemmbench" -> "ctuning/ck-ext-far-manager-plugin"
 "dividiti/gemmbench" -> "ctuning/ck-web"
 "dividiti/gemmbench" -> "ctuning/ck-crowdtuning"
+"intel/xpumanager" -> "intel/xetla" ["e"=1]
 "pika-org/pika" -> "eth-cscs/DLA-Future"
 "mlir-rs/melior" -> "mlir-rs/mlir-sys"
 "mlir-rs/melior" -> "vaivaswatha/pliron"
@@ -2178,6 +2572,8 @@ digraph G {
 "wangzyon/NVIDIA_SGEMM_PRACTICE" -> "66RING/tiny-flash-attention"
 "wangzyon/NVIDIA_SGEMM_PRACTICE" -> "siboehm/ShallowSpeed" ["e"=1]
 "wangzyon/NVIDIA_SGEMM_PRACTICE" -> "KnowingNothing/MatmulTutorial"
+"oneapi-src/SYCLomatic" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"stressapptest/stressapptest" -> "tud-zih-energy/FIRESTARTER" ["e"=1]
 "Cpp-Project-Manager/Cpp-Project-Manager" -> "Maou-Shimazu/Projects-Answers"
 "sjfeng1999/gpu-arch-microbenchmark" -> "shen203/GPU_Microbenchmark"
 "sjfeng1999/gpu-arch-microbenchmark" -> "daadaada/turingas"
@@ -2197,6 +2593,8 @@ digraph G {
 "mlc-ai/mlc-zh" -> "MegEngine/MegCC"
 "mlc-ai/mlc-zh" -> "llvm/torch-mlir"
 "mlc-ai/mlc-zh" -> "bytedance/byteir"
+"pytorch/PiPPy" -> "pytorch/torchdynamo" ["e"=1]
+"hunterzju/llvm-tutorial" -> "KEKE046/mlir-tutorial" ["e"=1]
 "Maou-Shimazu/Projects-Answers" -> "nullishamy/kate"
 "njuhope/cuda_sgemm" -> "Yinghan-Li/YHs_Sample"
 "njuhope/cuda_sgemm" -> "nicolaswilde/cuda-tensorcore-hgemm"
@@ -2212,6 +2610,8 @@ digraph G {
 "uwsampl/SparseTIR" -> "thu-pacman/PET"
 "uwsampl/SparseTIR" -> "tlc-pack/tenset"
 "uwsampl/SparseTIR" -> "zhaiyi000/tlm"
+"ARM-software/CMSIS-NN" -> "ARM-software/armnn" ["e"=1]
+"microsoft/SparTA" -> "uwsampl/SparseTIR" ["e"=1]
 "nullishamy/kate" -> "Maou-Shimazu/Projects-Answers"
 "nullishamy/kate" -> "Checkmate50/pylambda"
 "YanshiShield/YanshiShield" -> "Adlik/model_optimizer"
@@ -2292,6 +2692,9 @@ digraph G {
 "openxla/stablehlo" -> "buddy-compiler/buddy-mlir"
 "openxla/stablehlo" -> "KEKE046/mlir-tutorial"
 "openxla/stablehlo" -> "intel/mlir-extensions"
+"ROCm/ROCm" -> "vosen/ZLUDA" ["e"=1]
+"ROCm/ROCm" -> "uxlfoundation/oneDNN" ["e"=1]
+"Visualize-ML/Book4_Power-of-Matrix" -> "chenzomi12/AISystem" ["e"=1]
 "llvm/clangir" -> "trailofbits/vast" ["e"=1]
 "llvm/clangir" -> "llvm/Polygeist"
 "llvm/clangir" -> "facebookarchive/clangir" ["e"=1]
@@ -2307,6 +2710,10 @@ digraph G {
 "llvm/clangir" -> "google/ml-compiler-opt"
 "llvm/clangir" -> "spcl/pymlir"
 "llvm/clangir" -> "buddy-compiler/buddy-mlir"
+"ELS-RD/kernl" -> "pytorch/torchdynamo" ["e"=1]
+"ELS-RD/kernl" -> "hidet-org/hidet" ["e"=1]
+"srush/GPU-Puzzles" -> "gpu-mode/lectures" ["e"=1]
+"srush/GPU-Puzzles" -> "xlite-dev/LeetCUDA" ["e"=1]
 "awslabs/slapo" -> "awslabs/raf"
 "awslabs/slapo" -> "awslabs/lorien"
 "awslabs/slapo" -> "uwsampl/SparseTIR"
@@ -2328,6 +2735,9 @@ digraph G {
 "lshqqytiger/stable-diffusion-webui-amdgpu" -> "Bing-su/adetailer" ["e"=1]
 "lshqqytiger/stable-diffusion-webui-amdgpu" -> "Gourieff/sd-webui-reactor" ["e"=1]
 "lshqqytiger/stable-diffusion-webui-amdgpu" -> "lllyasviel/stable-diffusion-webui-forge" ["e"=1]
+"coreylowman/cudarc" -> "mlir-rs/melior" ["e"=1]
+"n00mkrad/text2image-gui" -> "azuritecoin/OnnxDiffusersUI" ["e"=1]
+"n00mkrad/text2image-gui" -> "ssube/onnx-web" ["e"=1]
 "PaddleJitLab/CUDATutorial" -> "BBuf/how-to-optim-algorithm-in-cuda"
 "PaddleJitLab/CUDATutorial" -> "Tongkaio/CUDA_Kernel_Samples"
 "PaddleJitLab/CUDATutorial" -> "xlite-dev/LeetCUDA"
@@ -2358,6 +2768,11 @@ digraph G {
 "halide/Halide" -> "alibaba/MNN" ["e"=1]
 "halide/Halide" -> "BBuf/tvm_mlir_learn"
 "halide/Halide" -> "NVIDIA/thrust"
+"romeric/Fastor" -> "libxsmm/libxsmm" ["e"=1]
+"romeric/Fastor" -> "tensor-compiler/taco" ["e"=1]
+"VoltaML/voltaML" -> "MegEngine/MegCC" ["e"=1]
+"fengbintu/Neural-Networks-on-Silicon" -> "basicmi/AI-Chip" ["e"=1]
+"EdVince/Stable-Diffusion-NCNN" -> "wangzhaode/mnn-stable-diffusion" ["e"=1]
 "openxla/xla" -> "openxla/stablehlo"
 "openxla/xla" -> "iree-org/iree"
 "openxla/xla" -> "llvm/torch-mlir"
@@ -2373,6 +2788,9 @@ digraph G {
 "openxla/xla" -> "BBuf/tvm_mlir_learn"
 "openxla/xla" -> "microsoft/nnfusion"
 "openxla/xla" -> "NVIDIA/TransformerEngine" ["e"=1]
+"vladmandic/sdnext" -> "lshqqytiger/stable-diffusion-webui-amdgpu" ["e"=1]
+"facebookincubator/AITemplate" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"facebookincubator/AITemplate" -> "alibaba/BladeDISC" ["e"=1]
 "zjhellofss/KuiperInfer" -> "zjhellofss/KuiperLLama"
 "zjhellofss/KuiperInfer" -> "BBuf/how-to-optim-algorithm-in-cuda"
 "zjhellofss/KuiperInfer" -> "xlite-dev/LeetCUDA"
@@ -2388,6 +2806,8 @@ digraph G {
 "zjhellofss/KuiperInfer" -> "gpu-mode/lectures"
 "zjhellofss/KuiperInfer" -> "Liu-xiandong/How_to_optimize_in_GPU"
 "zjhellofss/KuiperInfer" -> "yuesong-feng/30dayMakeCppServer" ["e"=1]
+"Reference-LAPACK/lapack" -> "OpenMathLib/OpenBLAS" ["e"=1]
+"Reference-LAPACK/lapack" -> "flame/blis" ["e"=1]
 "AyakaGEMM/Hands-on-GEMM" -> "njuhope/cuda_sgemm"
 "AyakaGEMM/Hands-on-GEMM" -> "nicolaswilde/cuda-sgemm"
 "AyakaGEMM/Hands-on-GEMM" -> "Yinghan-Li/YHs_Sample"
@@ -2407,6 +2827,7 @@ digraph G {
 "xlite-dev/LeetCUDA" -> "deepseek-ai/DeepGEMM" ["e"=1]
 "xlite-dev/LeetCUDA" -> "ModelTC/lightllm" ["e"=1]
 "xlite-dev/LeetCUDA" -> "tile-ai/tilelang" ["e"=1]
+"samjabrahams/tensorflow-on-raspberry-pi" -> "microsoft/ELL" ["e"=1]
 "Maratyszcza/NNPACK" -> "google/gemmlowp"
 "Maratyszcza/NNPACK" -> "pytorch/QNNPACK"
 "Maratyszcza/NNPACK" -> "soumith/convnet-benchmarks" ["e"=1]
@@ -2455,6 +2876,12 @@ digraph G {
 "pigirons/cpufp" -> "OpenPPL/ppl.llm.kernel.cuda"
 "pigirons/cpufp" -> "NervanaSystems/maxas"
 "pigirons/cpufp" -> "BBuf/how-to-optimize-gemm"
+"MatthieuCourbariaux/BinaryNet" -> "google/gemmlowp" ["e"=1]
+"nviennot/core-to-core-latency" -> "pigirons/cpufp" ["e"=1]
+"CVCUDA/CV-CUDA" -> "OpenPPL/ppl.cv" ["e"=1]
+"CVCUDA/CV-CUDA" -> "OpenPPL/ppl.nn" ["e"=1]
+"CVCUDA/CV-CUDA" -> "NVIDIA/CUDALibrarySamples" ["e"=1]
+"uxlfoundation/oneDAL" -> "uxlfoundation/oneDNN" ["e"=1]
 "Amblyopius/Stable-Diffusion-ONNX-FP16" -> "azuritecoin/OnnxDiffusersUI"
 "Amblyopius/Stable-Diffusion-ONNX-FP16" -> "ssube/onnx-web"
 "Amblyopius/Stable-Diffusion-ONNX-FP16" -> "ZTMIDGO/Android-Stable-diffusion-ONNX" ["e"=1]
@@ -2464,6 +2891,8 @@ digraph G {
 "Amblyopius/Stable-Diffusion-ONNX-FP16" -> "NeusZimmer/ONNX-ModularUI-StableDiffusion"
 "Amblyopius/Stable-Diffusion-ONNX-FP16" -> "uchuusen/onnx_stable_diffusion_controlnet"
 "Amblyopius/Stable-Diffusion-ONNX-FP16" -> "JbPasquier/stable-diffusion-onnx-ui"
+"DeepMark/deepmark" -> "NervanaSystems/nervanagpu" ["e"=1]
+"sherlockchou86/VideoPipe" -> "zjhellofss/KuiperInfer" ["e"=1]
 "siboehm/SGEMM_CUDA" -> "wangzyon/NVIDIA_SGEMM_PRACTICE"
 "siboehm/SGEMM_CUDA" -> "leimao/CUDA-GEMM-Optimization"
 "siboehm/SGEMM_CUDA" -> "tspeterkim/flash-attention-minimal"
@@ -2480,6 +2909,9 @@ digraph G {
 "siboehm/SGEMM_CUDA" -> "srush/Triton-Puzzles" ["e"=1]
 "siboehm/SGEMM_CUDA" -> "flashinfer-ai/flashinfer" ["e"=1]
 "openxla/community" -> "openxla/stablehlo"
+"baidu-research/persistent-rnn" -> "openai/openai-gemm" ["e"=1]
+"mit-han-lab/tinyengine" -> "MegEngine/MegCC" ["e"=1]
+"jacobhilton/deep_learning_curriculum" -> "minitorch/minitorch" ["e"=1]
 "tud-zih-energy/FIRESTARTER" -> "tud-zih-energy/x86_adapt"
 "tud-zih-energy/FIRESTARTER" -> "tud-zih-energy/lo2s"
 "tud-zih-energy/FIRESTARTER" -> "tud-zih-energy/x86_energy"
@@ -2497,6 +2929,9 @@ digraph G {
 "harleyszhang/dl_note" -> "nndeploy/nndeploy" ["e"=1]
 "harleyszhang/dl_note" -> "tspeterkim/flash-attention-minimal"
 "harleyszhang/dl_note" -> "xlite-dev/LeetCUDA"
+"sophgo/sophon-demo" -> "sophgo/tpu-mlir" ["e"=1]
+"microsoft/mscclpp" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
+"microsoft/mscclpp" -> "KnowingNothing/MatmulTutorial" ["e"=1]
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" -> "Eddie-Wang1120/HPC-Learning-Notes"
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" -> "l0ngc/hpc-learning"
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" -> "deeperlearning/professional-cuda-c-programming"
@@ -2504,6 +2939,11 @@ digraph G {
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" -> "Liu-xiandong/How_to_optimize_in_GPU"
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" -> "RussWong/CUDATutorial"
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" -> "Cjkkkk/CUDA_gemm"
+"JalaliLabUCLA/Image-feature-detection-using-Phase-Stretch-Transform" -> "YuanhaoGong/CurvatureFilter" ["e"=1]
+"intel/intel-extension-for-tensorflow" -> "intel/xetla" ["e"=1]
+"intel/intel-extension-for-tensorflow" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"intel/intel-extension-for-tensorflow" -> "codeplaysoftware/cutlass-sycl" ["e"=1]
+"LLNL/zfp" -> "NVIDIA/nvcomp" ["e"=1]
 "bytedance/byteir" -> "MegEngine/MegCC"
 "bytedance/byteir" -> "tensorflow/mlir-hlo"
 "bytedance/byteir" -> "buddy-compiler/buddy-mlir"
@@ -2534,8 +2974,16 @@ digraph G {
 "MegEngine/MegCC" -> "OpenPPL/ppl.cv"
 "MegEngine/MegCC" -> "BBuf/tvm_mlir_learn"
 "MegEngine/MegCC" -> "Yinghan-Li/YHs_Sample"
+"ENCP/CNNdroid" -> "Maratyszcza/NNPACK" ["e"=1]
+"ENCP/CNNdroid" -> "google/gemmlowp" ["e"=1]
+"ENCP/CNNdroid" -> "ARM-software/ComputeLibrary" ["e"=1]
+"NVIDIA/NeMo-Framework-Launcher" -> "fanshiqing/grouped_gemm" ["e"=1]
+"ThanatosShinji/onnx-tool" -> "MegEngine/MegCC" ["e"=1]
+"ThanatosShinji/onnx-tool" -> "tsingmicro-toolchain/OnnxSlim" ["e"=1]
+"ThanatosShinji/onnx-tool" -> "onnx/onnx-mlir" ["e"=1]
 "CoffeeBeforeArch/cpp_from_scratch" -> "CoffeeBeforeArch/parallel_cpp"
 "CoffeeBeforeArch/cpp_from_scratch" -> "CoffeeBeforeArch/cpp_sw_dev"
+"corsix/amx" -> "libxsmm/libxsmm" ["e"=1]
 "flame/blislab" -> "tpoisonooo/how-to-optimize-gemm"
 "flame/blislab" -> "flame/how-to-optimize-gemm"
 "flame/blislab" -> "pigirons/cpufp"
@@ -2551,10 +2999,13 @@ digraph G {
 "flame/blislab" -> "cloudcores/CuAssembler"
 "flame/blislab" -> "pigirons/sgemm_hsw"
 "flame/blislab" -> "NervanaSystems/maxas"
+"PKUFlyingPig/CMU10-714" -> "RussWong/CUDATutorial" ["e"=1]
+"cusplibrary/cusplibrary" -> "cudpp/cudpp" ["e"=1]
 "LBANN/lbann" -> "LLNL/Aluminum"
 "LBANN/lbann" -> "LLNL/maestrowf"
 "LBANN/lbann" -> "LLNL/merlin"
 "LBANN/lbann" -> "deep500/deep500"
+"zhangyachen/ComputerArchitectureAndCppBooks" -> "PaddleJitLab/CUDATutorial" ["e"=1]
 "XiaoSong9905/CUDA-Optimization-Guide" -> "XiaoSong9905/HPC-Notes"
 "XiaoSong9905/CUDA-Optimization-Guide" -> "Eddie-Wang1120/HPC-Learning-Notes"
 "XiaoSong9905/CUDA-Optimization-Guide" -> "Liu-xiandong/How_to_optimize_in_GPU"
@@ -2572,6 +3023,7 @@ digraph G {
 "XiaoSong9905/CUDA-Optimization-Guide" -> "wangzyon/NVIDIA_SGEMM_PRACTICE"
 "ForserX/StableDiffusionUI" -> "ssube/onnx-web"
 "ForserX/StableDiffusionUI" -> "ForserX/Asura2D"
+"yechengxi/LightNet" -> "sdemyanov/ConvNet" ["e"=1]
 "bytedance/matxscript" -> "bytedance/ByteTransformer"
 "bytedance/matxscript" -> "bytedance/byteir"
 "bytedance/matxscript" -> "ByteDance-Seed/Triton-distributed" ["e"=1]
@@ -2606,6 +3058,13 @@ digraph G {
 "aschuh703/ECE408" -> "eedalong/ECE408"
 "0xD0GF00D/DocumentSASS" -> "cloudcores/CuAssembler"
 "OpenPPL/ppl.kernel.cpu" -> "OpenPPL/ppl.kernel.cuda"
+"KernelTuner/kernel_tuner" -> "wangzyon/NVIDIA_SGEMM_PRACTICE" ["e"=1]
+"KernelTuner/kernel_tuner" -> "NVIDIA/nvbench" ["e"=1]
+"KernelTuner/kernel_tuner" -> "NVIDIA/cuCollections" ["e"=1]
+"KernelTuner/kernel_tuner" -> "eyalroz/cuda-kat" ["e"=1]
+"KernelTuner/kernel_tuner" -> "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" ["e"=1]
+"KernelTuner/kernel_tuner" -> "NervanaSystems/maxas" ["e"=1]
+"SJTU-ACA-Lab/blue-porcelain" -> "sjfeng1999/gpu-arch-microbenchmark" ["e"=1]
 "ssube/onnx-web" -> "NeusZimmer/ONNX-ModularUI-StableDiffusion"
 "ssube/onnx-web" -> "Amblyopius/Stable-Diffusion-ONNX-FP16"
 "ssube/onnx-web" -> "ForserX/StableDiffusionUI"
@@ -2684,6 +3143,21 @@ digraph G {
 "wangzhaode/llm-export" -> "wangzhaode/onnx-llm"
 "wangzhaode/llm-export" -> "inisis/OnnxSlim"
 "wangzhaode/llm-export" -> "AXERA-TECH/ax-llm" ["e"=1]
+"wangzhaode/mnn-llm" -> "wangzhaode/llm-export" ["e"=1]
+"dmlc/nnvm" -> "Maratyszcza/NNPACK" ["e"=1]
+"dmlc/nnvm" -> "google/gemmlowp" ["e"=1]
+"dmlc/nnvm" -> "facebookresearch/TensorComprehensions" ["e"=1]
+"dmlc/nnvm" -> "NervanaSystems/ngraph" ["e"=1]
+"dmlc/nnvm" -> "baidu-research/DeepBench" ["e"=1]
+"intel/ipex-llm" -> "uxlfoundation/oneDNN" ["e"=1]
+"ModelTC/lightllm" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"ModelTC/lightllm" -> "xlite-dev/LeetCUDA" ["e"=1]
+"ModelTC/lightllm" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"mlc-ai/web-stable-diffusion" -> "mlc-ai/mlc-en" ["e"=1]
+"mlc-ai/web-stable-diffusion" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"LostRuins/koboldcpp" -> "YellowRoseCx/koboldcpp-rocm" ["e"=1]
+"axodox/axodox-machinelearning" -> "Amblyopius/Stable-Diffusion-ONNX-FP16" ["e"=1]
+"bbycroft/llm-viz" -> "chenzomi12/AISystem" ["e"=1]
 "sangyc10/CUDA-code" -> "HeKun-NVIDIA/CUDA-Programming-Guide-in-Chinese"
 "sangyc10/CUDA-code" -> "brucefan1983/CUDA-Programming"
 "sangyc10/CUDA-code" -> "zjhellofss/KuiperLLama"
@@ -2703,6 +3177,9 @@ digraph G {
 "jansel/opentuner" -> "facebookresearch/CompilerGym"
 "jansel/opentuner" -> "CNugteren/CLTune" ["e"=1]
 "jansel/opentuner" -> "lift-project/lift"
+"flashinfer-ai/flashinfer" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"flashinfer-ai/flashinfer" -> "xlite-dev/LeetCUDA" ["e"=1]
+"flashinfer-ai/flashinfer" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
 "flame/how-to-optimize-gemm" -> "flame/blislab"
 "flame/how-to-optimize-gemm" -> "tpoisonooo/how-to-optimize-gemm"
 "flame/how-to-optimize-gemm" -> "merrymercy/awesome-tensor-compilers"
@@ -2718,6 +3195,8 @@ digraph G {
 "flame/how-to-optimize-gemm" -> "flame/blis"
 "flame/how-to-optimize-gemm" -> "andravin/wincnn"
 "flame/how-to-optimize-gemm" -> "alibaba/BladeDISC"
+"mpitutorial/mpitutorial" -> "flame/how-to-optimize-gemm" ["e"=1]
+"mpitutorial/mpitutorial" -> "NVIDIA/cub" ["e"=1]
 "andravin/wincnn" -> "xingyul/sparse-winograd-cnn"
 "andravin/wincnn" -> "BUG1989/caffe-int8-convert-tools"
 "andravin/wincnn" -> "xuqiantong/CUDA-Winograd"
@@ -2748,6 +3227,8 @@ digraph G {
 "l0ngc/hpc-learning" -> "shinezyy/micro-arch-training" ["e"=1]
 "l0ngc/hpc-learning" -> "PaddleJitLab/CUDATutorial"
 "l0ngc/hpc-learning" -> "parallel101/course" ["e"=1]
+"Sunt-ing/stick" -> "XiaoSong9905/CUDA-Optimization-Guide" ["e"=1]
+"kebijuelun/Awesome-LLM-Learning" -> "harleyszhang/llm_note" ["e"=1]
 "microsoft/ELL" -> "microsoft/EdgeML" ["e"=1]
 "microsoft/ELL" -> "uTensor/uTensor" ["e"=1]
 "microsoft/ELL" -> "ARM-software/ComputeLibrary"
@@ -2763,6 +3244,15 @@ digraph G {
 "microsoft/ELL" -> "facebookresearch/TensorComprehensions"
 "microsoft/ELL" -> "tiny-dnn/tiny-dnn" ["e"=1]
 "microsoft/ELL" -> "baidu-research/DeepBench"
+"xlite-dev/Awesome-LLM-Inference" -> "xlite-dev/LeetCUDA" ["e"=1]
+"xlite-dev/Awesome-LLM-Inference" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"xlite-dev/Awesome-LLM-Inference" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"xlite-dev/Awesome-LLM-Inference" -> "gpu-mode/lectures" ["e"=1]
+"intel/caffe" -> "uxlfoundation/oneDNN" ["e"=1]
+"intel/caffe" -> "baidu-research/DeepBench" ["e"=1]
+"intel/caffe" -> "Tencent/FeatherCNN" ["e"=1]
+"intel/caffe" -> "Maratyszcza/NNPACK" ["e"=1]
+"intel/caffe" -> "google/gemmlowp" ["e"=1]
 "baidu-research/DeepBench" -> "mlcommons/training"
 "baidu-research/DeepBench" -> "soumith/convnet-benchmarks" ["e"=1]
 "baidu-research/DeepBench" -> "NervanaSystems/maxas"
@@ -2778,6 +3268,9 @@ digraph G {
 "baidu-research/DeepBench" -> "libxsmm/libxsmm"
 "baidu-research/DeepBench" -> "u39kun/deep-learning-benchmark"
 "baidu-research/DeepBench" -> "NVIDIA/nccl" ["e"=1]
+"nitishsrivastava/deepnet" -> "cudamat/cudamat" ["e"=1]
+"nitishsrivastava/deepnet" -> "TorontoDeepLearning/convnet" ["e"=1]
+"uxlfoundation/oneTBB" -> "NVIDIA/thrust" ["e"=1]
 "bytedance/ByteTransformer" -> "ColfaxResearch/cutlass-kernels"
 "bytedance/ByteTransformer" -> "KnowingNothing/MatmulTutorial"
 "bytedance/ByteTransformer" -> "ByteDance-Seed/Triton-distributed" ["e"=1]
@@ -2793,6 +3286,14 @@ digraph G {
 "bytedance/ByteTransformer" -> "alibaba/rtp-llm" ["e"=1]
 "bytedance/ByteTransformer" -> "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs"
 "bytedance/ByteTransformer" -> "mit-han-lab/omniserve" ["e"=1]
+"MegEngine/InferLLM" -> "MegEngine/MegCC" ["e"=1]
+"MegEngine/InferLLM" -> "MegEngine/MegPeak" ["e"=1]
+"MegEngine/InferLLM" -> "MegEngine/mperf" ["e"=1]
+"MegEngine/InferLLM" -> "tpoisonooo/llama.onnx" ["e"=1]
+"MegEngine/InferLLM" -> "bytedance/byteir" ["e"=1]
+"MegEngine/InferLLM" -> "OpenPPL/ppl.nn" ["e"=1]
+"MegEngine/InferLLM" -> "zjhellofss/KuiperLLama" ["e"=1]
+"MegEngine/InferLLM" -> "tpoisonooo/how-to-optimize-gemm" ["e"=1]
 "cassiebreviu/StableDiffusion" -> "TensorStack-AI/OnnxStack"
 "cassiebreviu/StableDiffusion" -> "DarthAffe/StableDiffusion.NET"
 "cassiebreviu/StableDiffusion" -> "andreae293/Stable-Diffusion.NET-NCNN"
@@ -2802,6 +3303,12 @@ digraph G {
 "tsingmicro-toolchain/OnnxSlim" -> "inisis/OnnxLLM"
 "tsingmicro-toolchain/OnnxSlim" -> "inisis/onion"
 "tsingmicro-toolchain/OnnxSlim" -> "wangzhaode/llm-export"
+"harvard-edge/cs249r_book" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"harvard-edge/cs249r_book" -> "gpu-mode/lectures" ["e"=1]
+"harvard-edge/cs249r_book" -> "xlite-dev/LeetCUDA" ["e"=1]
+"harvard-edge/cs249r_book" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"harvard-edge/cs249r_book" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"vitoplantamura/OnnxStream" -> "ssube/onnx-web" ["e"=1]
 "j2kun/mlir-tutorial" -> "KEKE046/mlir-tutorial"
 "j2kun/mlir-tutorial" -> "buddy-compiler/buddy-mlir"
 "j2kun/mlir-tutorial" -> "llvm/Polygeist"
@@ -2821,6 +3328,7 @@ digraph G {
 "wangzhaode/mnn-yolo" -> "wangzhaode/mnn-stable-diffusion"
 "wangzhaode/mnn-yolo" -> "wangzhaode/mnn-mobilenet"
 "wangzhaode/mnn-yolo" -> "wangzhaode/mnn-segment-anything"
+"Umio-Yasuno/amdgpu_top" -> "lamikr/rocm_sdk_builder" ["e"=1]
 "Eddie-Wang1120/HPC-Learning-Notes" -> "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes"
 "Eddie-Wang1120/HPC-Learning-Notes" -> "l0ngc/hpc-learning"
 "Eddie-Wang1120/HPC-Learning-Notes" -> "XiaoSong9905/CUDA-Optimization-Guide"
@@ -2843,12 +3351,31 @@ digraph G {
 "zjhellofss/kuiperdatawhale" -> "xgqdut2016/cuda_code"
 "zjhellofss/kuiperdatawhale" -> "nndeploy/nndeploy" ["e"=1]
 "zjhellofss/kuiperdatawhale" -> "Eddie-Wang1120/HPC-Learning-Notes"
+"StanfordLegion/legion" -> "nv-legate/cupynumeric" ["e"=1]
+"StanfordLegion/legion" -> "NVIDIA/multi-gpu-programming-models" ["e"=1]
+"StanfordLegion/legion" -> "nv-legate/legate" ["e"=1]
+"StanfordLegion/legion" -> "NVIDIA/cuCollections" ["e"=1]
+"StanfordLegion/legion" -> "tensor-compiler/taco" ["e"=1]
+"apple/axlearn" -> "openxla/xla" ["e"=1]
+"jcjohnson/cnn-benchmarks" -> "albanie/convnet-burden" ["e"=1]
+"tqchen/tinyflow" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"tqchen/tinyflow" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"tqchen/tinyflow" -> "flame/how-to-optimize-gemm" ["e"=1]
+"tqchen/tinyflow" -> "d2l-ai/d2l-tvm" ["e"=1]
+"tqchen/tinyflow" -> "microsoft/nnfusion" ["e"=1]
+"tqchen/tinyflow" -> "google/gemmlowp" ["e"=1]
+"IntelLabs/SkimCaffe" -> "xingyul/sparse-winograd-cnn" ["e"=1]
+"IntelLabs/SkimCaffe" -> "andravin/wincnn" ["e"=1]
+"IntelLabs/SkimCaffe" -> "libxsmm/libxsmm" ["e"=1]
 "microsoft/Llama-2-Onnx" -> "tpoisonooo/llama.onnx"
 "microsoft/Llama-2-Onnx" -> "luchangli03/export_llama_to_onnx"
 "microsoft/Llama-2-Onnx" -> "microsoft/onnxruntime-genai" ["e"=1]
 "microsoft/Llama-2-Onnx" -> "ThanatosShinji/onnx-tool" ["e"=1]
 "microsoft/Llama-2-Onnx" -> "onnx/onnx-mlir"
 "microsoft/Llama-2-Onnx" -> "S-LoRA/S-LoRA" ["e"=1]
+"AmberLJC/LLMSys-PaperList" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
+"cli99/llm-analysis" -> "harleyszhang/llm_counts" ["e"=1]
+"src-d/kmcuda" -> "lebedov/scikit-cuda" ["e"=1]
 "tensor-compiler/taco" -> "microsoft/nnfusion"
 "tensor-compiler/taco" -> "jiazhihao/TASO"
 "tensor-compiler/taco" -> "merrymercy/awesome-tensor-compilers"
@@ -2864,6 +3391,7 @@ digraph G {
 "tensor-compiler/taco" -> "llvm/torch-mlir"
 "tensor-compiler/taco" -> "ValeevGroup/tiledarray" ["e"=1]
 "tensor-compiler/taco" -> "onnx/onnx-mlir"
+"kennethleungty/Llama-2-Open-Source-LLM-CPU-Inference" -> "microsoft/Llama-2-Onnx" ["e"=1]
 "mlc-ai/tokenizers-cpp" -> "wangkuiyi/huggingface-tokenizer-in-cxx"
 "mlc-ai/tokenizers-cpp" -> "mlc-ai/relax"
 "YellowRoseCx/koboldcpp-rocm" -> "lshqqytiger/ZLUDA"
@@ -2912,6 +3440,11 @@ digraph G {
 "BBuf/how-to-learn-deep-learning-framework" -> "zjhellofss/KuiperLLama"
 "BBuf/how-to-learn-deep-learning-framework" -> "xlite-dev/LeetCUDA"
 "BBuf/how-to-learn-deep-learning-framework" -> "mlc-ai/notebooks"
+"simit-lang/simit" -> "tensor-compiler/taco" ["e"=1]
+"thuml/depyf" -> "microsoft/triton-shared" ["e"=1]
+"thuml/depyf" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"thuml/depyf" -> "alibaba/BladeDISC" ["e"=1]
+"thuml/depyf" -> "hidet-org/hidet" ["e"=1]
 "makslevental/mlir-python-extras" -> "Xilinx/aie-rt" ["e"=1]
 "makslevental/mlir-python-extras" -> "makslevental/mlir-wheels"
 "microsoft/triton-shared" -> "Cambricon/triton-linalg"
@@ -2944,6 +3477,16 @@ digraph G {
 "KnowingNothing/MatmulTutorial" -> "ColfaxResearch/cfx-article-src"
 "KnowingNothing/MatmulTutorial" -> "ByteDance-Seed/Triton-distributed" ["e"=1]
 "KnowingNothing/MatmulTutorial" -> "Yinghan-Li/YHs_Sample"
+"herumi/xbyak" -> "uxlfoundation/oneDNN" ["e"=1]
+"herumi/xbyak" -> "libxsmm/libxsmm" ["e"=1]
+"herumi/xbyak" -> "flame/how-to-optimize-gemm" ["e"=1]
+"herumi/xbyak" -> "pigirons/cpufp" ["e"=1]
+"herumi/xbyak" -> "NervanaSystems/maxas" ["e"=1]
+"herumi/xbyak" -> "alibaba/BladeDISC" ["e"=1]
+"nndeploy/nndeploy" -> "zjhellofss/KuiperInfer" ["e"=1]
+"nndeploy/nndeploy" -> "zjhellofss/KuiperLLama" ["e"=1]
+"nndeploy/nndeploy" -> "OpenPPL/ppl.cv" ["e"=1]
+"coderonion/awesome-cuda-and-hpc" -> "DD-DuDa/Cute-Learning" ["e"=1]
 "dividiti/ck-caffe" -> "ctuning/ck-docker"
 "dividiti/ck-caffe" -> "ctuning/ck-math"
 "dividiti/ck-caffe" -> "ctuning/ck-crowdtuning-platforms"
@@ -2959,6 +3502,7 @@ digraph G {
 "dividiti/ck-caffe" -> "ctuning/ck-env"
 "dividiti/ck-caffe" -> "dividiti/gemmbench"
 "dividiti/ck-caffe" -> "ctuning/ck-dev-compilers"
+"FlagAI-Open/Aquila2" -> "FlagOpen/FlagScale" ["e"=1]
 "TensorStack-AI/OnnxStack" -> "cassiebreviu/StableDiffusion"
 "TensorStack-AI/OnnxStack" -> "saddam213/LLamaStack"
 "TensorStack-AI/OnnxStack" -> "DarthAffe/StableDiffusion.NET"
@@ -2995,6 +3539,11 @@ digraph G {
 "RussWong/CUDATutorial" -> "openmlsys/openmlsys-cuda"
 "RussWong/CUDATutorial" -> "flame/blislab"
 "tgale96/grouped_gemm" -> "fanshiqing/grouped_gemm"
+"BobMcDear/attorch" -> "FlagOpen/FlagAttention" ["e"=1]
+"BobMcDear/attorch" -> "microsoft/triton-shared" ["e"=1]
+"BobMcDear/attorch" -> "tspeterkim/flash-attention-minimal" ["e"=1]
+"crabml/crabml" -> "InfiniTensor/InfiniLM" ["e"=1]
+"PacktPublishing/Learn-LLVM-17" -> "KEKE046/mlir-tutorial" ["e"=1]
 "tenstorrent/tt-metal" -> "tenstorrent/tt-buda"
 "tenstorrent/tt-metal" -> "tenstorrent/tt-mlir"
 "tenstorrent/tt-metal" -> "tenstorrent/tt-kmd"
@@ -3109,12 +3658,18 @@ digraph G {
 "octoml/octoml-profile" -> "apache/tvm-rfcs"
 "nod-ai/SHARK-ModelDev" -> "nod-ai/shark-ai"
 "nod-ai/SHARK-ModelDev" -> "iree-org/iree-turbine"
+"google/heir" -> "j2kun/mlir-tutorial" ["e"=1]
 "NVIDIA/Fuser" -> "csarofeen/pytorch"
 "NVIDIA/Fuser" -> "TiledTensor/TiledCUDA"
 "NVIDIA/Fuser" -> "NVIDIA/nvidia-resiliency-ext" ["e"=1]
 "NVIDIA/Fuser" -> "NVIDIA/jitify"
 "NVIDIA/Fuser" -> "ColfaxResearch/cutlass-kernels"
+"philipturner/metal-flash-attention" -> "pranjalssh/fast.cu" ["e"=1]
 "InfiniTensor/RefactorGraph" -> "InfiniTensor/InfiniTensor"
+"ZTMIDGO/Android-Stable-diffusion-ONNX" -> "Amblyopius/Stable-Diffusion-ONNX-FP16" ["e"=1]
+"pytorch-labs/applied-ai" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"pytorch-labs/applied-ai" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
+"pytorch-labs/applied-ai" -> "pranjalssh/fast.cu" ["e"=1]
 "chunhuajiang/arm-gcc-inline-assembler" -> "rogerou/Arm-neon-intrinsics"
 "friendliai/friendli-client" -> "friendliai/periflow-cli"
 "friendliai/friendli-client" -> "friendliai/friendli-model-optimizer"
@@ -3129,6 +3684,19 @@ digraph G {
 "Adlik/model_optimizer" -> "YanshiShield/YanshiShield"
 "saddam213/LLamaStack" -> "AsakusaRinne/semantic-kernel-LLamaSharp"
 "WeLoveAI/onnx2torch" -> "inisis/onion"
+"tiny-dnn/tiny-dnn" -> "Maratyszcza/NNPACK" ["e"=1]
+"tiny-dnn/tiny-dnn" -> "halide/Halide" ["e"=1]
+"tiny-dnn/tiny-dnn" -> "google/gemmlowp" ["e"=1]
+"adam-maj/tiny-gpu" -> "gpu-mode/lectures" ["e"=1]
+"adam-maj/tiny-gpu" -> "xlite-dev/LeetCUDA" ["e"=1]
+"hughperkins/tf-coriander" -> "plaidml/plaidml" ["e"=1]
+"xtensor-stack/xtensor" -> "NVIDIA/thrust" ["e"=1]
+"apache/tvm" -> "BBuf/tvm_mlir_learn" ["e"=1]
+"apache/tvm" -> "halide/Halide" ["e"=1]
+"apache/tvm" -> "merrymercy/awesome-tensor-compilers" ["e"=1]
+"apache/tvm" -> "iree-org/iree" ["e"=1]
+"apache/tvm" -> "pytorch/glow" ["e"=1]
+"apache/tvm" -> "uxlfoundation/oneDNN" ["e"=1]
 "patientx/ComfyUI-Zluda" -> "lshqqytiger/ZLUDA"
 "patientx/ComfyUI-Zluda" -> "brknsoul/ROCmLibs"
 "patientx/ComfyUI-Zluda" -> "lshqqytiger/stable-diffusion-webui-amdgpu-forge"
@@ -3138,6 +3706,9 @@ digraph G {
 "patientx/ComfyUI-Zluda" -> "lshqqytiger/stable-diffusion-webui-amdgpu"
 "patientx/ComfyUI-Zluda" -> "CS1o/Stable-Diffusion-Info"
 "patientx/ComfyUI-Zluda" -> "Beinsezii/comfyui-amd-go-fast"
+"tinygrad/open-gpu-kernel-modules" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"zeux/calm" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"zeux/calm" -> "reed-lau/cute-gemm" ["e"=1]
 "reed-lau/cute-gemm" -> "66RING/tiny-flash-attention"
 "reed-lau/cute-gemm" -> "CalebDu/Awesome-Cute"
 "reed-lau/cute-gemm" -> "DD-DuDa/Cute-Learning"
@@ -3147,6 +3718,7 @@ digraph G {
 "reed-lau/cute-gemm" -> "Bruce-Lee-LY/flash_attention_inference"
 "reed-lau/cute-gemm" -> "tlc-pack/libflash_attn"
 "reed-lau/cute-gemm" -> "wangsiping97/FastGEMV"
+"Lightning-AI/lightning-thunder" -> "NVIDIA/Fuser" ["e"=1]
 "gpu-mode/lectures" -> "xlite-dev/LeetCUDA"
 "gpu-mode/lectures" -> "BBuf/how-to-optim-algorithm-in-cuda"
 "gpu-mode/lectures" -> "gpu-mode/resource-stream" ["e"=1]
@@ -3194,6 +3766,7 @@ digraph G {
 "lift-project/lift" -> "Meinersbur/ppcg"
 "lift-project/lift" -> "rise-lang/shine"
 "lift-project/lift" -> "elevate-lang/elevate"
+"srush/Triton-Puzzles" -> "gpu-mode/lectures" ["e"=1]
 "tenstorrent/tt-buda" -> "tenstorrent/tt-metal"
 "tenstorrent/tt-buda" -> "tenstorrent/tt-buda-demos"
 "tenstorrent/tt-buda" -> "tenstorrent/tt-mlir"
@@ -3215,6 +3788,8 @@ digraph G {
 "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU" -> "YellowRoseCx/koboldcpp-rocm"
 "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU" -> "lshqqytiger/stable-diffusion-webui-amdgpu-forge"
 "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU" -> "lamikr/rocm_sdk_builder"
+"HazyResearch/aisys-building-blocks" -> "tspeterkim/flash-attention-minimal" ["e"=1]
+"HazyResearch/aisys-building-blocks" -> "siboehm/SGEMM_CUDA" ["e"=1]
 "Tongkaio/CUDA_Kernel_Samples" -> "ifromeast/cuda_learning"
 "Tongkaio/CUDA_Kernel_Samples" -> "PaddleJitLab/CUDATutorial"
 "Tongkaio/CUDA_Kernel_Samples" -> "zjhellofss/KuiperLLama"
@@ -3230,6 +3805,17 @@ digraph G {
 "Tongkaio/CUDA_Kernel_Samples" -> "xlite-dev/HGEMM"
 "Tongkaio/CUDA_Kernel_Samples" -> "MLSys-Learner-Resources/Awesome-MLSys-Blogger" ["e"=1]
 "Tongkaio/CUDA_Kernel_Samples" -> "nndeploy/nndeploy" ["e"=1]
+"Deep-Learning-Profiling-Tools/triton-viz" -> "microsoft/triton-shared" ["e"=1]
+"volcengine/veScale" -> "bytedance/byteir" ["e"=1]
+"FlagOpen/FlagGems" -> "FlagOpen/FlagAttention" ["e"=1]
+"FlagOpen/FlagGems" -> "Cambricon/triton-linalg" ["e"=1]
+"FlagOpen/FlagGems" -> "microsoft/triton-shared" ["e"=1]
+"FlagOpen/FlagGems" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"FlagOpen/FlagGems" -> "KEKE046/mlir-tutorial" ["e"=1]
+"FlagOpen/FlagGems" -> "FlagOpen/FlagPerf" ["e"=1]
+"FlagOpen/FlagGems" -> "alibaba/BladeDISC" ["e"=1]
+"mirage-project/mirage" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"mirage-project/mirage" -> "KnowingNothing/compiler-and-arch" ["e"=1]
 "lamikr/rocm_sdk_builder" -> "Said-Akbar/vllm-rocm"
 "lamikr/rocm_sdk_builder" -> "Said-Akbar/triton-gcn5"
 "lamikr/rocm_sdk_builder" -> "ROCm/aiter" ["e"=1]
@@ -3246,12 +3832,22 @@ digraph G {
 "lshqqytiger/ZLUDA" -> "Amblyopius/Stable-Diffusion-ONNX-FP16"
 "lshqqytiger/ZLUDA" -> "Repeerc/flash-attention-v2-RDNA3-minimal"
 "lshqqytiger/ZLUDA" -> "Beinsezii/comfyui-amd-go-fast"
+"microsoft/BitBLAS" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"microsoft/BitBLAS" -> "TiledTensor/TiledCUDA" ["e"=1]
+"microsoft/BitBLAS" -> "KnowingNothing/compiler-and-arch" ["e"=1]
+"microsoft/BitBLAS" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
+"HazyResearch/ThunderKittens" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"HazyResearch/ThunderKittens" -> "gpu-mode/lectures" ["e"=1]
 "likelovewant/ollama-for-amd" -> "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU"
 "likelovewant/ollama-for-amd" -> "ByronLeeeee/Ollama-For-AMD-Installer"
 "likelovewant/ollama-for-amd" -> "YellowRoseCx/koboldcpp-rocm"
 "likelovewant/ollama-for-amd" -> "brknsoul/ROCmLibs"
 "likelovewant/ollama-for-amd" -> "lshqqytiger/ZLUDA"
 "likelovewant/ollama-for-amd" -> "lshqqytiger/stable-diffusion-webui-amdgpu"
+"fla-org/flash-linear-attention" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"fla-org/flash-linear-attention" -> "xlite-dev/LeetCUDA" ["e"=1]
+"hahnyuan/LLM-Viewer" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"IST-DASLab/marlin" -> "KnowingNothing/MatmulTutorial" ["e"=1]
 "eyalroz/cuda-api-wrappers" -> "NVIDIA/jitify"
 "eyalroz/cuda-api-wrappers" -> "stotko/stdgpu"
 "eyalroz/cuda-api-wrappers" -> "NVIDIA/cub"
@@ -3267,11 +3863,15 @@ digraph G {
 "eyalroz/cuda-api-wrappers" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
 "eyalroz/cuda-api-wrappers" -> "NVIDIA/cccl"
 "eyalroz/cuda-api-wrappers" -> "moderngpu/moderngpu"
+"dyweb/papers-notebook" -> "HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["e"=1]
 "dmlc/HalideIR" -> "inducer/loopy"
 "dmlc/HalideIR" -> "inducer/islpy"
 "dmlc/HalideIR" -> "andersy005/tvm-in-action"
 "dmlc/HalideIR" -> "tlc-pack/relax"
 "dmlc/HalideIR" -> "StrongSpoon/tvm.schedule"
+"bytedance/flux" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"microsoft/vattention" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"lucidrains/ring-attention-pytorch" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
 "intel/ARM_NEON_2_x86_SSE" -> "jratcliff63367/sse2neon"
 "intel/ARM_NEON_2_x86_SSE" -> "projectNe10/Ne10"
 "intel/ARM_NEON_2_x86_SSE" -> "DLTcollab/sse2neon" ["e"=1]
@@ -3304,6 +3904,11 @@ digraph G {
 "KEKE046/mlir-tutorial" -> "BBuf/how-to-learn-deep-learning-framework"
 "KEKE046/mlir-tutorial" -> "MegEngine/MegCC"
 "KEKE046/mlir-tutorial" -> "Cambricon/triton-linalg"
+"gpu-mode/resource-stream" -> "gpu-mode/lectures" ["e"=1]
+"gpu-mode/resource-stream" -> "siboehm/SGEMM_CUDA" ["e"=1]
+"gpu-mode/resource-stream" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"gpu-mode/resource-stream" -> "xlite-dev/LeetCUDA" ["e"=1]
+"gpu-mode/resource-stream" -> "olcf/cuda-training-series" ["e"=1]
 "FlagOpen/FlagAttention" -> "FlagOpen/FlagGems" ["e"=1]
 "FlagOpen/FlagAttention" -> "zinccat/Awesome-Triton-Kernels" ["e"=1]
 "FlagOpen/FlagAttention" -> "DD-DuDa/Cute-Learning"
@@ -3316,6 +3921,7 @@ digraph G {
 "FlagOpen/FlagAttention" -> "srush/triton-autodiff" ["e"=1]
 "FlagOpen/FlagAttention" -> "FlagOpen/FlagScale"
 "FlagOpen/FlagAttention" -> "KnowingNothing/MatmulTutorial"
+"rapidsai/cuvs" -> "rapidsai/rmm" ["e"=1]
 "bondhugula/pluto" -> "Meinersbur/ppcg"
 "bondhugula/pluto" -> "kumasento/polymer"
 "bondhugula/pluto" -> "periscop/cloog"
@@ -3331,6 +3937,7 @@ digraph G {
 "bondhugula/pluto" -> "quepas/Compiler-benchmark-suites"
 "bondhugula/pluto" -> "davewathaverford/the-omega-project"
 "bondhugula/pluto" -> "Tiramisu-Compiler/tiramisu"
+"microsoft/onnxruntime-genai" -> "microsoft/Llama-2-Onnx" ["e"=1]
 "leimao/CUDA-GEMM-Optimization" -> "ColfaxResearch/cutlass-kernels"
 "leimao/CUDA-GEMM-Optimization" -> "siboehm/SGEMM_CUDA"
 "leimao/CUDA-GEMM-Optimization" -> "wangzyon/NVIDIA_SGEMM_PRACTICE"
@@ -3339,7 +3946,19 @@ digraph G {
 "leimao/CUDA-GEMM-Optimization" -> "Cjkkkk/CUDA_gemm"
 "leimao/CUDA-GEMM-Optimization" -> "TiledTensor/TiledCUDA"
 "leimao/CUDA-GEMM-Optimization" -> "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs"
+"google-ai-edge/model-explorer" -> "openxla/stablehlo" ["e"=1]
+"google-ai-edge/model-explorer" -> "xdslproject/xdsl" ["e"=1]
+"google-ai-edge/model-explorer" -> "openxla/shardy" ["e"=1]
+"gpu-mode/awesomeMLSys" -> "gpu-mode/lectures" ["e"=1]
+"gpu-mode/awesomeMLSys" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"gpu-mode/awesomeMLSys" -> "siboehm/SGEMM_CUDA" ["e"=1]
+"ornladios/ADIOS2" -> "LBANN/lbann" ["e"=1]
+"intel/intel-npu-acceleration-library" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"intel/intel-npu-acceleration-library" -> "intel/xetla" ["e"=1]
+"intel/intel-npu-acceleration-library" -> "spcl/pymlir" ["e"=1]
+"hahnyuan/nn_tools" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
 "triton-lang/triton-cpu" -> "pytorch-labs/triton-cpu"
+"digitalbrain79/darknet-nnpack" -> "Maratyszcza/NNPACK" ["e"=1]
 "zjhellofss/KuiperLLama" -> "zjhellofss/KuiperInfer"
 "zjhellofss/KuiperLLama" -> "zjhellofss/kuiperdatawhale"
 "zjhellofss/KuiperLLama" -> "RussWong/CUDATutorial"
@@ -3357,11 +3976,20 @@ digraph G {
 "zjhellofss/KuiperLLama" -> "916241958/yolov8-Onnxruntime"
 "snuspl/nemo" -> "snuspl/pluto"
 "snuspl/nemo" -> "snuspl/cruise"
+"tensorflow/benchmarks" -> "mlcommons/training" ["e"=1]
+"tensorflow/benchmarks" -> "baidu-research/DeepBench" ["e"=1]
+"tensorflow/benchmarks" -> "LambdaColdStorage/lambda-tensorflow-benchmark" ["e"=1]
 "brknsoul/ROCmLibs" -> "patientx/ComfyUI-Zluda"
 "brknsoul/ROCmLibs" -> "lshqqytiger/ZLUDA"
 "brknsoul/ROCmLibs" -> "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU"
 "brknsoul/ROCmLibs" -> "YellowRoseCx/koboldcpp-rocm"
 "brknsoul/ROCmLibs" -> "lshqqytiger/stable-diffusion-webui-amdgpu-forge"
+"sophgo/LLM-TPU" -> "sophgo/tpu-mlir" ["e"=1]
+"alibaba/rtp-llm" -> "bytedance/ByteTransformer" ["e"=1]
+"alibaba/rtp-llm" -> "alibaba/BladeDISC" ["e"=1]
+"intel/neural-speed" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"datawhalechina/awesome-compression" -> "harleyszhang/dl_note" ["e"=1]
+"usyd-fsalab/fp6_llm" -> "ColfaxResearch/cfx-article-src" ["e"=1]
 "ColfaxResearch/cutlass-kernels" -> "ColfaxResearch/cfx-article-src"
 "ColfaxResearch/cutlass-kernels" -> "KnowingNothing/MatmulTutorial"
 "ColfaxResearch/cutlass-kernels" -> "reed-lau/cute-gemm"
@@ -3377,6 +4005,7 @@ digraph G {
 "ColfaxResearch/cutlass-kernels" -> "weishengying/cutlass_flash_atten_fp8"
 "ColfaxResearch/cutlass-kernels" -> "microsoft/mscclpp" ["e"=1]
 "ColfaxResearch/cutlass-kernels" -> "xlite-dev/HGEMM"
+"intel/auto-round" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
 "mit-han-lab/patch_conv" -> "xdit-project/DistVAE"
 "intel/graph-compiler" -> "intel/mlir-extensions"
 "PAA-NCIC/PPoPP2017_artifact" -> "hyqneuron/asfermi"
@@ -3414,6 +4043,7 @@ digraph G {
 "TiledTensor/TiledCUDA" -> "microsoft/BitBLAS" ["e"=1]
 "TiledTensor/TiledCUDA" -> "c3sr/tcu_scope"
 "TiledTensor/TiledCUDA" -> "LeiWang1999/tvm_gpu_gemm"
+"HazyResearch/flash-fft-conv" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
 "InfiniTensor/InfiniLM" -> "InfiniTensor/ninetoothed"
 "InfiniTensor/InfiniLM" -> "InfiniTensor/operators"
 "InfiniTensor/InfiniLM" -> "InfiniTensor/InfiniTensor"
@@ -3423,6 +4053,8 @@ digraph G {
 "InfiniTensor/InfiniLM" -> "LearningInfiniTensor/learning-lm-rs"
 "InfiniTensor/InfiniLM" -> "YdrMaster/llama2.rs"
 "InfiniTensor/InfiniLM" -> "LearningInfiniTensor/learning-cxx"
+"gpu-mode/triton-index" -> "66RING/tiny-flash-attention" ["e"=1]
+"gpu-mode/triton-index" -> "DD-DuDa/Cute-Learning" ["e"=1]
 "tenstorrent/tt-kmd" -> "tenstorrent/tt-smi"
 "tenstorrent/tt-kmd" -> "tenstorrent/tt-firmware"
 "tenstorrent/tt-kmd" -> "tenstorrent/tt-flash"
@@ -3460,6 +4092,7 @@ digraph G {
 "DD-DuDa/Cute-Learning" -> "weishengying/cutlass_flash_atten_fp8"
 "DD-DuDa/Cute-Learning" -> "zeroine/cutlass-cute-sample"
 "fanshiqing/grouped_gemm" -> "tgale96/grouped_gemm"
+"shawntan/scattermoe" -> "tgale96/grouped_gemm" ["e"=1]
 "ColfaxResearch/cfx-article-src" -> "ColfaxResearch/cutlass-kernels"
 "ColfaxResearch/cfx-article-src" -> "xlite-dev/HGEMM"
 "ColfaxResearch/cfx-article-src" -> "CalebDu/Awesome-Cute"
@@ -3481,10 +4114,18 @@ digraph G {
 "tenstorrent/tt-tvm" -> "tenstorrent/tt-budabackend"
 "tenstorrent/tt-tvm" -> "tenstorrent/tt-firmware"
 "TiledTensor/TiledKernel" -> "TiledTensor/TiledLower"
+"DT42/BerryNet" -> "microsoft/ELL" ["e"=1]
+"ZJU-LLMs/Foundations-of-LLMs" -> "chenzomi12/AISystem" ["e"=1]
 "inisis/OnnxLLM" -> "inisis/onion"
 "inisis/OnnxLLM" -> "inisis/caffe2onnx"
 "inisis/OnnxLLM" -> "inisis/chexpert"
 "inisis/OnnxLLM" -> "WeLoveAI/onnx2torch"
+"Infatoshi/cuda-course" -> "CoffeeBeforeArch/cuda_programming" ["e"=1]
+"Infatoshi/cuda-course" -> "gpu-mode/lectures" ["e"=1]
+"Infatoshi/cuda-course" -> "siboehm/SGEMM_CUDA" ["e"=1]
+"Infatoshi/cuda-course" -> "wangzyon/NVIDIA_SGEMM_PRACTICE" ["e"=1]
+"Infatoshi/cuda-course" -> "xlite-dev/LeetCUDA" ["e"=1]
+"linkedin/Liger-Kernel" -> "gpu-mode/lectures" ["e"=1]
 "NVIDIA/cub" -> "NVIDIA/thrust"
 "NVIDIA/cub" -> "NVIDIA/libcudacxx"
 "NVIDIA/cub" -> "NVIDIA/cccl"
@@ -3530,6 +4171,12 @@ digraph G {
 "pytorch/cpuinfo" -> "ARM-software/ComputeLibrary"
 "pytorch/cpuinfo" -> "flame/how-to-optimize-gemm"
 "pytorch/cpuinfo" -> "projectNe10/Ne10"
+"kvcache-ai/Mooncake" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"kvcache-ai/Mooncake" -> "xlite-dev/LeetCUDA" ["e"=1]
+"kvcache-ai/Mooncake" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
+"FFTW/fftw3" -> "OpenMathLib/OpenBLAS" ["e"=1]
+"FFTW/fftw3" -> "projectNe10/Ne10" ["e"=1]
+"Steven-Luo/MasteringRAG" -> "harleyszhang/llm_note" ["e"=1]
 "ARM-software/ComputeLibrary" -> "ARM-software/armnn"
 "ARM-software/ComputeLibrary" -> "projectNe10/Ne10"
 "ARM-software/ComputeLibrary" -> "google/gemmlowp"
@@ -3545,6 +4192,9 @@ digraph G {
 "ARM-software/ComputeLibrary" -> "flame/how-to-optimize-gemm"
 "ARM-software/ComputeLibrary" -> "ermig1979/Simd" ["e"=1]
 "ARM-software/ComputeLibrary" -> "alibaba/MNN" ["e"=1]
+"andrewkchan/yalm" -> "66RING/tiny-flash-attention" ["e"=1]
+"AIGeniusInstitute/AI-Agent-In-Action" -> "harleyszhang/llm_note" ["e"=1]
+"dblalock/bolt" -> "google/gemmlowp" ["e"=1]
 "ByronLeeeee/Ollama-For-AMD-Installer" -> "likelovewant/ollama-for-amd"
 "ByronLeeeee/Ollama-For-AMD-Installer" -> "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU"
 "ContinuumIO/gtc2017-numba" -> "harrism/numba_examples"
@@ -3554,6 +4204,8 @@ digraph G {
 "ContinuumIO/gtc2017-numba" -> "numba/numba-examples"
 "ContinuumIO/gtc2017-numba" -> "NVIDIA/cuda-python"
 "ContinuumIO/gtc2017-numba" -> "numba/nvidia-cuda-tutorial"
+"sgl-project/sgl-learning-materials" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"sgl-project/sgl-learning-materials" -> "KnowingNothing/MatmulTutorial" ["e"=1]
 "chenzomi12/AIInfra" -> "chenzomi12/AISystem"
 "chenzomi12/AIInfra" -> "xlite-dev/LeetCUDA"
 "chenzomi12/AIInfra" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial"
@@ -3569,6 +4221,7 @@ digraph G {
 "chenzomi12/AIInfra" -> "deepseek-ai/DeepEP" ["e"=1]
 "chenzomi12/AIInfra" -> "ai-dynamo/dynamo" ["e"=1]
 "chenzomi12/AIInfra" -> "zjhellofss/KuiperInfer"
+"wdndev/llama3-from-scratch-zh" -> "harleyszhang/llm_note" ["e"=1]
 "harleyszhang/llm_note" -> "harleyszhang/dl_note"
 "harleyszhang/llm_note" -> "harleyszhang/lite_llama"
 "harleyszhang/llm_note" -> "xlite-dev/LeetCUDA"
@@ -3584,6 +4237,15 @@ digraph G {
 "harleyszhang/llm_note" -> "zjhellofss/KuiperInfer"
 "harleyszhang/llm_note" -> "AIGeniusInstitute/AI-Agent-In-Action" ["e"=1]
 "harleyszhang/llm_note" -> "wdndev/tiny-llm-zh" ["e"=1]
+"AnswerDotAI/gpu.cpp" -> "gpu-mode/lectures" ["e"=1]
+"pytorch/gloo" -> "facebookresearch/TensorComprehensions" ["e"=1]
+"pytorch/gloo" -> "Maratyszcza/NNPACK" ["e"=1]
+"mikex86/LibreCuda" -> "NVIDIA/cccl" ["e"=1]
+"mikex86/LibreCuda" -> "kuterd/nv_isa_solver" ["e"=1]
+"Infatoshi/mnist-cuda" -> "siboehm/SGEMM_CUDA" ["e"=1]
+"tile-ai/tilelang" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"tile-ai/tilelang" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"bbruceyuan/Hands-On-Large-Language-Models-CN" -> "chenzomi12/AIInfra" ["e"=1]
 "dmlc/dlpack" -> "microsoft/nnfusion"
 "dmlc/dlpack" -> "d2l-ai/d2l-tvm"
 "dmlc/dlpack" -> "tqchen/ffi-navigator"
@@ -3601,6 +4263,7 @@ digraph G {
 "dmlc/dlpack" -> "dmlc/nnvm" ["e"=1]
 "xgqdut2016/cuda_code" -> "xgqdut2016/hpc2torch"
 "xgqdut2016/cuda_code" -> "YdrMaster/notebook"
+"boostorg/compute" -> "NVIDIA/thrust" ["e"=1]
 "inisis/OnnxSlim" -> "tsingmicro-toolchain/OnnxSlim"
 "inisis/OnnxSlim" -> "inisis/OnnxLLM"
 "inisis/OnnxSlim" -> "inisis/onion"
@@ -3612,6 +4275,9 @@ digraph G {
 "inisis/OnnxSlim" -> "inisis/caffe"
 "inisis/OnnxSlim" -> "inisis/katago-benchmark"
 "inisis/OnnxSlim" -> "inisis/machine-learning-facial-deformer"
+"clu0/unet.cu" -> "pranjalssh/fast.cu" ["e"=1]
+"clu0/unet.cu" -> "tspeterkim/flash-attention-minimal" ["e"=1]
+"clu0/unet.cu" -> "siboehm/SGEMM_CUDA" ["e"=1]
 "udacity/cs344" -> "depctg/udacity-cs344-colab"
 "udacity/cs344" -> "ibebrett/CUDA-CS344"
 "udacity/cs344" -> "NVIDIA-developer-blog/code-samples"
@@ -3627,6 +4293,7 @@ digraph G {
 "udacity/cs344" -> "cudpp/cudpp"
 "udacity/cs344" -> "olcf/cuda-training-series"
 "udacity/cs344" -> "NervanaSystems/maxas"
+"baidu-research/baidu-allreduce" -> "openai/openai-gemm" ["e"=1]
 "cudpp/cudpp" -> "NVIDIA/cub"
 "cudpp/cudpp" -> "moderngpu/moderngpu"
 "cudpp/cudpp" -> "Erkaman/Awesome-CUDA"
@@ -3642,12 +4309,24 @@ digraph G {
 "cudpp/cudpp" -> "sleeepyjack/warpcore"
 "cudpp/cudpp" -> "farkhor/CuSha" ["e"=1]
 "cudpp/cudpp" -> "NervanaSystems/maxas"
+"intel/clDNN" -> "uxlfoundation/oneDNN" ["e"=1]
+"intel/clDNN" -> "andravin/wincnn" ["e"=1]
+"intel/clDNN" -> "NervanaSystems/ngraph" ["e"=1]
+"intel/clDNN" -> "PaddlePaddle/Anakin" ["e"=1]
+"intel/clDNN" -> "google/gemmlowp" ["e"=1]
+"intel/clDNN" -> "Maratyszcza/NNPACK" ["e"=1]
+"vincentfpgarcia/kNN-CUDA" -> "cudpp/cudpp" ["e"=1]
+"reframe-hpc/reframe" -> "eth-cscs/COSMA" ["e"=1]
 "amd/blis" -> "amd/libflame"
 "amd/blis" -> "amd/aocl-libm-ose"
 "amd/blis" -> "amd/scalapack"
 "amd/libflame" -> "amd/blis"
 "harleyszhang/lite_llama" -> "zjhellofss/triton_course"
 "harleyszhang/lite_llama" -> "harleyszhang/llm_counts"
+"SiriusNEO/Triton-Puzzles-Lite" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"SiriusNEO/Triton-Puzzles-Lite" -> "KEKE046/mlir-tutorial" ["e"=1]
+"SiriusNEO/Triton-Puzzles-Lite" -> "66RING/tiny-flash-attention" ["e"=1]
+"SiriusNEO/Triton-Puzzles-Lite" -> "DD-DuDa/Cute-Learning" ["e"=1]
 "xlite-dev/HGEMM" -> "TiledTensor/TiledCUDA"
 "xlite-dev/HGEMM" -> "LeiWang1999/Stream-k.tvm"
 "kuterd/nv_isa_solver" -> "cloudcores/CuAssembler"
@@ -3668,6 +4347,7 @@ digraph G {
 "NVIDIA/accelerated-computing-hub" -> "NVIDIA/cuda-python"
 "Maratyszcza/FP16" -> "Maratyszcza/pthreadpool"
 "Maratyszcza/FP16" -> "artyom-beilis/float16"
+"dlsys-course/assignment1-2018" -> "pytorch/tvm" ["e"=1]
 "Cambricon/triton-linalg" -> "microsoft/triton-shared"
 "Cambricon/triton-linalg" -> "FlagOpen/FlagGems" ["e"=1]
 "Cambricon/triton-linalg" -> "bytedance/byteir"
@@ -3675,12 +4355,18 @@ digraph G {
 "Cambricon/triton-linalg" -> "Cambricon/mlu-ops"
 "Cambricon/triton-linalg" -> "triton-lang/triton-cpu"
 "Cambricon/triton-linalg" -> "ByteDance-Seed/Triton-distributed" ["e"=1]
+"pytorch-labs/tritonbench" -> "microsoft/TileFusion" ["e"=1]
 "feifeibear/ChituAttention" -> "chengzeyi/piflux"
+"mobiusml/gemlite" -> "Bruce-Lee-LY/cuda_hgemv" ["e"=1]
+"mobiusml/gemlite" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
+"viennacl/viennacl-dev" -> "naibaf7/libdnn" ["e"=1]
+"LitLeo/TensorRT_Tutorial" -> "BBuf/how-to-optim-algorithm-in-cuda" ["e"=1]
 "bryancatanzaro/trove" -> "NVIDIA/jitify"
 "bryancatanzaro/trove" -> "bryancatanzaro/generics"
 "microsoft/TileFusion" -> "TiledTensor/TiledCUDA"
 "LearningInfiniTensor/learning-lm-rs" -> "LearningInfiniTensor/TinyInfiniTensor"
 "LearningInfiniTensor/learning-lm-rs" -> "LearningInfiniTensor/learning-cxx"
+"pcg-mlp/KsanaLLM" -> "tlc-pack/libflash_attn" ["e"=1]
 "chengzeyi/piflux" -> "feifeibear/ChituAttention"
 "pranjalssh/fast.cu" -> "ColfaxResearch/cutlass-kernels"
 "pranjalssh/fast.cu" -> "DD-DuDa/Cute-Learning"
@@ -3707,6 +4393,9 @@ digraph G {
 "friendliai/LLMServingPerfEvaluator" -> "friendliai/friendli-model-optimizer"
 "friendliai/LLMServingPerfEvaluator" -> "friendliai/periflow-python-sdk"
 "friendliai/LLMServingPerfEvaluator" -> "friendliai/FAI-Model"
+"xlite-dev/ffpa-attn" -> "xlite-dev/HGEMM" ["e"=1]
+"ScalingIntelligence/KernelBench" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"ScalingIntelligence/KernelBench" -> "TiledTensor/TiledCUDA" ["e"=1]
 "Repeerc/flash-attention-v2-RDNA3-minimal" -> "Beinsezii/comfyui-amd-go-fast"
 "weishengying/cutlass_flash_atten_fp8" -> "weishengying/tiny-flash-attention"
 "weishengying/cutlass_flash_atten_fp8" -> "feifeibear/ChituAttention"
@@ -3723,6 +4412,7 @@ digraph G {
 "tenstorrent/tt-mlir" -> "tenstorrent/tt-buda"
 "tenstorrent/tt-mlir" -> "tenstorrent/tt-torch"
 "tenstorrent/tt-mlir" -> "tenstorrent/tt-studio"
+"NVIDIA/nvidia-resiliency-ext" -> "NVIDIA/Fuser" ["e"=1]
 "LearningInfiniTensor/TinyInfiniTensor" -> "LearningInfiniTensor/learning-lm-rs"
 "tenstorrent/tt-forge-fe" -> "tenstorrent/tt-xla"
 "tenstorrent/tt-forge-fe" -> "tenstorrent/tt-mlir"
@@ -3735,6 +4425,9 @@ digraph G {
 "tenstorrent/tt-torch" -> "tenstorrent/tt-xla"
 "tenstorrent/tt-inference-server" -> "tenstorrent/tt-studio"
 "SohamGovande/ThunderKittens-FA3CustomMasks" -> "sgl-project/DeepGEMM"
+"deepseek-ai/open-infra-index" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"vllm-project/vllm-ascend" -> "Ascend/pytorch" ["e"=1]
+"Tencent/ncnn" -> "XiaoMi/mace" ["e"=1]
 "lebedov/scikit-cuda" -> "cudamat/cudamat"
 "lebedov/scikit-cuda" -> "inducer/pycuda"
 "lebedov/scikit-cuda" -> "hannes-brt/cudnn-python-wrappers"
@@ -3750,6 +4443,14 @@ digraph G {
 "lebedov/scikit-cuda" -> "NVIDIA/cub"
 "lebedov/scikit-cuda" -> "dmlc/minpy" ["e"=1]
 "lebedov/scikit-cuda" -> "andersbll/cudarray"
+"csarron/awesome-emdl" -> "google/gemmlowp" ["e"=1]
+"csarron/awesome-emdl" -> "XiaoMi/mobile-ai-bench" ["e"=1]
+"inclusionAI/AReaL" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"lhelontra/tensorflow-on-arm" -> "ARM-software/armnn" ["e"=1]
+"ai-dynamo/dynamo" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
+"OAID/Caffe-HRT" -> "ARM-software/ComputeLibrary" ["e"=1]
+"OAID/Caffe-HRT" -> "merrymercy/tvm-mali" ["e"=1]
+"MoonshotAI/MoBA" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
 "albanie/convnet-burden" -> "jcjohnson/cnn-benchmarks" ["e"=1]
 "albanie/convnet-burden" -> "sovrasov/flops-counter.pytorch" ["e"=1]
 "albanie/convnet-burden" -> "soeaver/caffe-model" ["e"=1]
@@ -3772,6 +4473,11 @@ digraph G {
 "CodedK/CUDA-by-Example-source-code-for-the-book-s-examples-" -> "rkinas/triton-resources" ["e"=1]
 "CodedK/CUDA-by-Example-source-code-for-the-book-s-examples-" -> "ArchaeaSoftware/cudahandbook"
 "CodedK/CUDA-by-Example-source-code-for-the-book-s-examples-" -> "yanqswhu/cuda_by_example"
+"deepseek-ai/DeepGEMM" -> "xlite-dev/LeetCUDA" ["e"=1]
+"pytorch/benchmark" -> "pytorch/torchdynamo" ["e"=1]
+"pytorch/benchmark" -> "alibaba/BladeDISC" ["e"=1]
+"bbruceyuan/LLMs-Zero-to-Hero" -> "chenzomi12/AIInfra" ["e"=1]
+"vllm-project/production-stack" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
 "NervanaSystems/ngraph" -> "uxlfoundation/oneDNN"
 "NervanaSystems/ngraph" -> "tensorflow/mlir"
 "NervanaSystems/ngraph" -> "facebookresearch/TensorComprehensions"
@@ -3802,6 +4508,11 @@ digraph G {
 "basicmi/AI-Chip" -> "stanford-mast/nn_dataflow" ["e"=1]
 "basicmi/AI-Chip" -> "ARM-software/ComputeLibrary"
 "basicmi/AI-Chip" -> "gpgpu-sim/gpgpu-sim_distribution" ["e"=1]
+"LeanModels/DFloat11" -> "wangsiping97/FastGEMV" ["e"=1]
+"TheDan64/inkwell" -> "mlir-rs/melior" ["e"=1]
+"ysh329/embedded-ai.bi-weekly" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"ysh329/embedded-ai.bi-weekly" -> "AI-performance/embedded-ai.bench" ["e"=1]
+"MLNLP-World/LLMs-from-scratch-CN" -> "harleyszhang/llm_note" ["e"=1]
 "Jokeren/Awesome-GPU" -> "cloudcores/CuAssembler"
 "Jokeren/Awesome-GPU" -> "sjfeng1999/gpu-arch-microbenchmark"
 "Jokeren/Awesome-GPU" -> "accel-sim/accel-sim-framework" ["e"=1]
@@ -3817,6 +4528,13 @@ digraph G {
 "Jokeren/Awesome-GPU" -> "microsoft/nnfusion"
 "Jokeren/Awesome-GPU" -> "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs"
 "Jokeren/Awesome-GPU" -> "mit-han-lab/inter-operator-scheduler"
+"NVIDIA/nccl-tests" -> "NVIDIA/multi-gpu-programming-models" ["e"=1]
+"zdevito/ATen" -> "facebookresearch/TensorComprehensions" ["e"=1]
+"zdevito/ATen" -> "Maratyszcza/NNPACK" ["e"=1]
+"zdevito/ATen" -> "google/gemmlowp" ["e"=1]
+"fla-org/native-sparse-attention" -> "66RING/tiny-flash-attention" ["e"=1]
+"microsoft/EdgeML" -> "microsoft/ELL" ["e"=1]
+"microsoft/EdgeML" -> "google/gemmlowp" ["e"=1]
 "NVIDIA/jitify" -> "eyalroz/cuda-api-wrappers"
 "NVIDIA/jitify" -> "NVIDIA/nvbench"
 "NVIDIA/jitify" -> "bryancatanzaro/trove"
@@ -3832,7 +4550,13 @@ digraph G {
 "NVIDIA/jitify" -> "NVIDIA/NVTX"
 "NVIDIA/jitify" -> "rapidsai/rmm"
 "NVIDIA/jitify" -> "NVIDIA/gdrcopy" ["e"=1]
+"yonghenglh6/DepthwiseConvolution" -> "BUG1989/caffe-int8-convert-tools" ["e"=1]
+"ByteDance-Seed/Triton-distributed" -> "KnowingNothing/MatmulTutorial" ["e"=1]
+"MLSys-Learner-Resources/Awesome-MLSys-Blogger" -> "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["e"=1]
 "zjhellofss/triton_course" -> "harleyszhang/lite_llama"
+"ppl-ai/pplx-kernels" -> "ColfaxResearch/cutlass-kernels" ["e"=1]
+"ppl-ai/pplx-kernels" -> "pranjalssh/fast.cu" ["e"=1]
+"ppl-ai/pplx-kernels" -> "ColfaxResearch/cfx-article-src" ["e"=1]
 "FlagAI-Open/OpenSeek" -> "FlagOpen/FlagScale"
 "Said-Akbar/vllm-rocm" -> "Said-Akbar/triton-gcn5"
 "LLNL/maestrowf" -> "LLNL/merlin"
@@ -3842,42 +4566,60 @@ digraph G {
 "nlzy/vllm-gfx906" -> "Said-Akbar/triton-gcn5"
 "FlexFusion/FlexFusion" -> "sgl-project/DeepGEMM"
 "sgl-project/DeepGEMM" -> "SohamGovande/ThunderKittens-FA3CustomMasks"
+"google/cpu_features" ["l"="-19.655,-25.945", "c"=10]
+"pytorch/cpuinfo" ["l"="37.128,0.775"]
 "ARM-software/armnn" ["l"="37.21,0.775"]
 "ARM-software/ComputeLibrary" ["l"="37.183,0.77"]
-"ARM-software/ML-examples" ["l"="-16.102,-42.554"]
+"ARM-software/ML-examples" ["l"="-16.102,-42.554", "c"=387]
 "ARM-software/android-nn-driver" ["l"="37.31,0.711"]
 "pytorch/QNNPACK" ["l"="37.176,0.796"]
 "google/XNNPACK" ["l"="37.164,0.85"]
 "google/gemmlowp" ["l"="37.151,0.815"]
-"OAID/Caffe-HRT" ["l"="33.035,29.121"]
+"OAID/Caffe-HRT" ["l"="33.035,29.121", "c"=57]
 "XiaoMi/mace" ["l"="37.239,0.718"]
 "projectNe10/Ne10" ["l"="37.142,0.743"]
-"ARM-software/CMSIS_5" ["l"="-17.771,-43.142"]
+"ARM-software/CMSIS_5" ["l"="-17.771,-43.142", "c"=55]
 "huawei-noah/bolt" ["l"="37.114,0.758"]
-"ARM-software/ML-KWS-for-MCU" ["l"="35.537,2.486"]
+"ARM-software/ML-KWS-for-MCU" ["l"="35.537,2.486", "c"=308]
 "Tencent/FeatherCNN" ["l"="37.183,0.734"]
 "microsoft/nnfusion" ["l"="37.073,0.947"]
-"OAID/Tengine" ["l"="50.933,2.661"]
+"OAID/Tengine" ["l"="50.933,2.661", "c"=85]
+"dpilger26/NumCpp" ["l"="-20.014,-25.82", "c"=10]
+"NVIDIA/thrust" ["l"="36.687,0.901"]
 "mlcommons/inference" ["l"="37.276,0.9"]
 "mlcommons/training" ["l"="37.297,0.859"]
 "baidu-research/DeepBench" ["l"="37.226,0.818"]
-"NVIDIA/nccl-tests" ["l"="1.965,14.459"]
+"NVIDIA/nccl-tests" ["l"="1.965,14.459", "c"=572]
 "onnx/onnx-mlir" ["l"="37.108,0.982"]
-"NVIDIA/TransformerEngine" ["l"="38.884,-0.512"]
+"NVIDIA/TransformerEngine" ["l"="38.884,-0.512", "c"=39]
 "mlcommons/ck" ["l"="37.616,0.873"]
 "alibaba/ai-matrix" ["l"="37.29,0.927"]
-"mlcommons/tiny" ["l"="-16.139,-42.535"]
+"mlcommons/tiny" ["l"="-16.139,-42.535", "c"=387]
 "iree-org/iree" ["l"="37.132,0.971"]
-"flashinfer-ai/flashinfer" ["l"="38.975,-0.486"]
+"flashinfer-ai/flashinfer" ["l"="38.975,-0.486", "c"=39]
 "mlcommons/inference_policies" ["l"="37.337,0.911"]
-"mlcommons/storage" ["l"="2.022,14.973"]
+"mlcommons/storage" ["l"="2.022,14.973", "c"=756]
 "pytorch/glow" ["l"="37.175,0.908"]
-"NVIDIA/nccl" ["l"="38.96,-0.676"]
+"NVIDIA/nccl" ["l"="38.96,-0.676", "c"=39]
+"intel/ai-reference-models" ["l"="64.218,-2.477", "c"=1153]
+"intel/intel-xpu-backend-for-triton" ["l"="37.166,1.139"]
+"NervanaSystems/ngraph" ["l"="37.206,0.889"]
+"uxlfoundation/oneDNN" ["l"="37.195,0.838"]
+"tensorflow/model-optimization" ["l"="45.627,25.723", "c"=68]
+"bytedance/byteps" ["l"="58.028,23.559", "c"=161]
+"HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["l"="36.947,0.829"]
+"Robert-JunWang/Pelee" ["l"="51.725,33.343", "c"=354]
+"BUG1989/caffe-int8-convert-tools" ["l"="37.158,0.718"]
+"eric612/MobileNet-YOLO" ["l"="51.673,33.285", "c"=354]
+"inducer/pyopencl" ["l"="64.342,-2.11", "c"=477]
+"inducer/pycuda" ["l"="36.665,0.84"]
+"inducer/loopy" ["l"="37.033,0.971"]
+"microsoft/ai-edu" ["l"="50.982,28.288", "c"=104]
+"microsoft/AI-System" ["l"="36.923,0.755"]
 "moderngpu/moderngpu" ["l"="36.696,0.93"]
 "NVIDIA/cub" ["l"="36.72,0.942"]
 "cudpp/cudpp" ["l"="36.677,0.945"]
-"NVIDIA/thrust" ["l"="36.687,0.901"]
-"gunrock/gunrock" ["l"="51.441,15.303"]
+"gunrock/gunrock" ["l"="51.441,15.303", "c"=1231]
 "NervanaSystems/maxas" ["l"="36.924,0.876"]
 "NVIDIA-developer-blog/code-samples" ["l"="36.723,0.91"]
 "eyalroz/cuda-api-wrappers" ["l"="36.675,0.968"]
@@ -3885,15 +4627,18 @@ digraph G {
 "NVIDIA/libcudacxx" ["l"="36.656,0.981"]
 "NVIDIA/cccl" ["l"="36.699,0.959"]
 "NVIDIA/jitify" ["l"="36.704,1.001"]
-"cusplibrary/cusplibrary" ["l"="63.147,-1.737"]
+"cusplibrary/cusplibrary" ["l"="63.147,-1.737", "c"=175]
 "NVIDIA/multi-gpu-programming-models" ["l"="36.747,0.962"]
-"gpgpu-sim/gpgpu-sim_distribution" ["l"="31.034,-2.965"]
+"gpgpu-sim/gpgpu-sim_distribution" ["l"="31.034,-2.965", "c"=1037]
+"openvinotoolkit/openvino" ["l"="64.163,-2.572", "c"=1153]
+"google/tangent" ["l"="45.152,20.435", "c"=20]
+"facebookresearch/TensorComprehensions" ["l"="37.142,0.92"]
 "PacktPublishing/Learn-CUDA-Programming" ["l"="36.768,0.816"]
 "brucefan1983/CUDA-Programming" ["l"="36.789,0.799"]
 "Tony-Tan/CUDA_Freshman" ["l"="36.813,0.818"]
 "CodedK/CUDA-by-Example-source-code-for-the-book-s-examples-" ["l"="36.701,0.815"]
 "NVIDIA/CUDALibrarySamples" ["l"="36.745,0.894"]
-"NVIDIA/cuda-samples" ["l"="38.941,-0.786"]
+"NVIDIA/cuda-samples" ["l"="38.941,-0.786", "c"=39]
 "xlite-dev/LeetCUDA" ["l"="36.853,0.818"]
 "BBuf/how-to-optim-algorithm-in-cuda" ["l"="36.877,0.836"]
 "CoffeeBeforeArch/cuda_programming" ["l"="36.738,0.825"]
@@ -3902,173 +4647,210 @@ digraph G {
 "gpu-mode/lectures" ["l"="36.832,0.767"]
 "PacktPublishing/Hands-On-GPU-Programming-with-Python-and-CUDA" ["l"="36.701,0.75"]
 "Liu-xiandong/How_to_optimize_in_GPU" ["l"="36.883,0.883"]
-"puttsk/cuda-tutorial" ["l"="-14.056,-23.129"]
+"puttsk/cuda-tutorial" ["l"="-14.056,-23.129", "c"=1101]
 "flame/how-to-optimize-gemm" ["l"="37.053,0.853"]
+"alibaba/MNN" ["l"="50.189,29.806", "c"=83]
+"rapidsai/cugraph" ["l"="43.927,23.625", "c"=95]
+"rapidsai/rmm" ["l"="36.687,1.012"]
 "plaidml/plaidml" ["l"="37.251,0.947"]
-"apple/tensorflow_macos" ["l"="27.333,-21.007"]
-"apache/tvm" ["l"="50.13,29.773"]
-"horovod/horovod" ["l"="45.559,25.861"]
-"NervanaSystems/ngraph" ["l"="37.206,0.889"]
-"hughperkins/tf-coriander" ["l"="64.324,-1.956"]
-"ROCm/ROCm" ["l"="64.289,-1.821"]
-"keras-team/autokeras" ["l"="45.58,26.009"]
+"apple/tensorflow_macos" ["l"="27.333,-21.007", "c"=577]
+"apache/tvm" ["l"="50.13,29.773", "c"=83]
+"horovod/horovod" ["l"="45.559,25.861", "c"=68]
+"hughperkins/tf-coriander" ["l"="64.324,-1.956", "c"=477]
+"ROCm/ROCm" ["l"="64.289,-1.821", "c"=477]
+"keras-team/autokeras" ["l"="45.58,26.009", "c"=68]
 "halide/Halide" ["l"="37.107,0.89"]
-"facebookresearch/TensorComprehensions" ["l"="37.142,0.92"]
-"facebookarchive/caffe2" ["l"="47.886,29.061"]
-"apache/mxnet" ["l"="47.989,29.03"]
-"ROCm/hip" ["l"="64.264,-1.882"]
-"EpistasisLab/tpot" ["l"="45.482,26.124"]
-"tensorflow/benchmarks" ["l"="57.92,23.535"]
+"facebookarchive/caffe2" ["l"="47.886,29.061", "c"=89]
+"apache/mxnet" ["l"="47.989,29.03", "c"=89]
+"ROCm/hip" ["l"="64.264,-1.882", "c"=477]
+"EpistasisLab/tpot" ["l"="45.482,26.124", "c"=68]
+"tensorflow/benchmarks" ["l"="57.92,23.535", "c"=161]
 "basicmi/AI-Chip" ["l"="37.291,0.775"]
-"uxlfoundation/oneDNN" ["l"="37.195,0.838"]
 "mlcommons/training_policies" ["l"="37.371,0.897"]
-"flexflow/flexflow-train" ["l"="38.927,-0.488"]
-"pytorch/gloo" ["l"="57.935,23.566"]
+"flexflow/flexflow-train" ["l"="38.927,-0.488", "c"=39]
+"pytorch/gloo" ["l"="57.935,23.566", "c"=161]
 "tensorflow/mlir" ["l"="37.156,0.945"]
-"NVIDIA/gdrcopy" ["l"="1.92,14.452"]
-"tensorflow/mesh" ["l"="45.702,25.677"]
+"NVIDIA/gdrcopy" ["l"="1.92,14.452", "c"=572]
+"tensorflow/mesh" ["l"="45.702,25.677", "c"=68]
+"NVIDIA/cutlass" ["l"="38.965,-0.634", "c"=39]
+"aklomp/base64" ["l"="-19.423,-26.031", "c"=10]
+"imgbot/Imgbot" ["l"="9.02,-44.87", "c"=828]
+"LBANN/lbann" ["l"="37.64,1.216"]
+"Kobzol/hardware-effects" ["l"="-19.739,-26.005", "c"=10]
+"Kobzol/hardware-effects-gpu" ["l"="36.806,0.998"]
+"cybertronai/gradient-checkpointing" ["l"="45.737,25.766", "c"=68]
 "flame/blis" ["l"="37.113,0.808"]
 "libxsmm/libxsmm" ["l"="37.11,0.835"]
 "OpenMathLib/OpenBLAS" ["l"="37.247,0.775"]
 "flame/libflame" ["l"="37.181,0.694"]
 "flame/blislab" ["l"="37.003,0.856"]
-"Reference-LAPACK/lapack" ["l"="62.961,-1.512"]
-"CNugteren/CLBlast" ["l"="64.293,-2.058"]
-"ginkgo-project/ginkgo" ["l"="63.135,-1.514"]
+"Reference-LAPACK/lapack" ["l"="62.961,-1.512", "c"=175]
+"CNugteren/CLBlast" ["l"="64.293,-2.058", "c"=477]
+"ginkgo-project/ginkgo" ["l"="63.135,-1.514", "c"=175]
 "tensor-compiler/taco" ["l"="37.115,0.938"]
-"kokkos/kokkos" ["l"="63.141,-1.443"]
-"giaf/blasfeo" ["l"="61.448,14.832"]
-"NVIDIA/cutlass" ["l"="38.965,-0.634"]
+"kokkos/kokkos" ["l"="63.141,-1.443", "c"=175]
+"giaf/blasfeo" ["l"="61.448,14.832", "c"=480]
 "tpoisonooo/how-to-optimize-gemm" ["l"="36.986,0.849"]
 "BBuf/tvm_mlir_learn" ["l"="36.986,0.9"]
 "godweiyang/NN-CUDA-Example" ["l"="36.832,0.835"]
 "zjhellofss/KuiperInfer" ["l"="36.869,0.795"]
-"NVIDIA/trt-samples-for-hackathon-cn" ["l"="53.301,32.657"]
-"shouxieai/tensorRT_Pro" ["l"="53.346,32.653"]
+"NVIDIA/trt-samples-for-hackathon-cn" ["l"="53.301,32.657", "c"=251]
+"shouxieai/tensorRT_Pro" ["l"="53.346,32.653", "c"=251]
 "openmlsys/openmlsys-zh" ["l"="36.916,0.798"]
-"NVIDIA/FasterTransformer" ["l"="38.883,-0.641"]
-"Tencent/ncnn" ["l"="50.241,29.805"]
-"DrTimothyAldenDavis/SuiteSparse" ["l"="63.043,-1.556"]
-"open-mpi/ompi" ["l"="1.981,14.386"]
-"alibaba/MNN" ["l"="50.189,29.806"]
-"pybind/pybind11" ["l"="-20.066,-25.744"]
+"NVIDIA/FasterTransformer" ["l"="38.883,-0.641", "c"=39]
+"huihut/OpenCV-MinGW-Build" ["l"="-20.463,-27.963", "c"=107]
+"msnh2012/Msnhnet" ["l"="37.04,0.716"]
+"flashlight/flashlight" ["l"="47.672,29.267", "c"=89]
+"xindongzhang/MNN-APPLICATIONS" ["l"="33.352,29.168", "c"=57]
+"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254", "c"=55]
+"fritzlabs/Awesome-Mobile-Machine-Learning" ["l"="46.552,-24.185", "c"=656]
+"Tencent/ncnn" ["l"="50.241,29.805", "c"=83]
+"DrTimothyAldenDavis/SuiteSparse" ["l"="63.043,-1.556", "c"=175]
+"open-mpi/ompi" ["l"="1.981,14.386", "c"=572]
+"pybind/pybind11" ["l"="-20.066,-25.744", "c"=10]
 "ARM-software/armnn-mlperf" ["l"="37.385,0.662"]
 "intel/nn-hal" ["l"="37.352,0.684"]
 "merrymercy/awesome-tensor-compilers" ["l"="37.035,0.94"]
 "llvm/torch-mlir" ["l"="37.11,1.005"]
-"IntelLabs/distiller" ["l"="52.71,33.427"]
+"IntelLabs/distiller" ["l"="52.71,33.427", "c"=271]
 "pytorch/FBGEMM" ["l"="37.128,0.864"]
 "alibaba/BladeDISC" ["l"="37.066,0.962"]
-"dmlc/nnvm" ["l"="57.845,23.597"]
+"dmlc/nnvm" ["l"="57.845,23.597", "c"=161]
 "jiazhihao/TASO" ["l"="37.045,0.992"]
 "Tiramisu-Compiler/tiramisu" ["l"="37.138,1.001"]
-"zdevito/ATen" ["l"="51.447,29.977"]
-"inducer/loopy" ["l"="37.033,0.971"]
-"inducer/pycuda" ["l"="36.665,0.84"]
-"inducer/pyopencl" ["l"="64.342,-2.11"]
+"zdevito/ATen" ["l"="51.447,29.977", "c"=83]
+"PaddlePaddle/Paddle-Lite" ["l"="50.086,29.69", "c"=83]
 "lebedov/scikit-cuda" ["l"="36.601,0.828"]
-"cupy/cupy" ["l"="43.714,23.501"]
+"cupy/cupy" ["l"="43.714,23.501", "c"=95]
 "cudamat/cudamat" ["l"="36.605,0.784"]
-"numba/numba" ["l"="43.67,23.566"]
+"numba/numba" ["l"="43.67,23.566", "c"=95]
 "NVIDIA/cuda-python" ["l"="36.638,0.889"]
-"inducer/pudb" ["l"="45.162,20.777"]
-"onnx/onnx-tensorrt" ["l"="53.248,32.637"]
-"NVIDIA-AI-IOT/torch2trt" ["l"="53.275,32.58"]
-"Infatoshi/cuda-course" ["l"="-14.228,-23.111"]
+"inducer/pudb" ["l"="45.162,20.777", "c"=20]
+"onnx/onnx-tensorrt" ["l"="53.248,32.637", "c"=251]
+"NVIDIA-AI-IOT/torch2trt" ["l"="53.275,32.58", "c"=251]
+"Infatoshi/cuda-course" ["l"="-14.228,-23.111", "c"=1101]
 "siboehm/SGEMM_CUDA" ["l"="36.825,0.925"]
 "CoffeeBeforeArch/cpp_crash_course" ["l"="36.638,0.731"]
 "CoffeeBeforeArch/cpp_from_scratch" ["l"="36.677,0.76"]
 "CoffeeBeforeArch/parallel_cpp" ["l"="36.672,0.741"]
 "pranjalssh/fast.cu" ["l"="36.818,0.95"]
 "CoffeeBeforeArch/parallel_programming" ["l"="36.658,0.757"]
-"gpu-mode/resource-stream" ["l"="39.002,-0.284"]
+"gpu-mode/resource-stream" ["l"="39.002,-0.284", "c"=39]
 "deeperlearning/professional-cuda-c-programming" ["l"="36.762,0.873"]
 "RussWong/CUDATutorial" ["l"="36.862,0.891"]
+"banach-space/llvm-tutor" ["l"="-22.141,-18.515", "c"=763]
+"j2kun/mlir-tutorial" ["l"="37.107,1.03"]
+"eric612/Caffe-YOLOv3-Windows" ["l"="51.634,33.277", "c"=354]
+"bharathgs/Awesome-Distributed-Deep-Learning" ["l"="51.671,1.96", "c"=663]
+"mit-han-lab/inter-operator-scheduler" ["l"="37.018,1.026"]
+"Jokeren/Awesome-GPU" ["l"="36.866,0.965"]
 "NVIDIA/nvbench" ["l"="36.75,0.982"]
-"NVIDIA-Merlin/HugeCTR" ["l"="58.146,23.558"]
-"pytorch/torchrec" ["l"="58.231,23.523"]
-"pytorch/kineto" ["l"="39.097,-0.468"]
-"IST-DASLab/marlin" ["l"="38.931,-0.353"]
+"tensorflow/community" ["l"="45.676,25.696", "c"=68]
+"sun254/awesome-model-compression-and-acceleration" ["l"="52.691,33.486", "c"=271]
+"NVIDIA-Merlin/HugeCTR" ["l"="58.146,23.558", "c"=161]
+"pytorch/torchrec" ["l"="58.231,23.523", "c"=161]
+"pytorch/kineto" ["l"="39.097,-0.468", "c"=39]
+"IST-DASLab/marlin" ["l"="38.931,-0.353", "c"=39]
 "pytorch/torchdynamo" ["l"="37.098,0.959"]
-"bytedance/flux" ["l"="38.984,-0.43"]
-"Tencent/PocketFlow" ["l"="52.744,33.373"]
+"bytedance/flux" ["l"="38.984,-0.43", "c"=39]
+"Tencent/PocketFlow" ["l"="52.744,33.373", "c"=271]
 "Maratyszcza/NNPACK" ["l"="37.154,0.787"]
-"BUG1989/caffe-int8-convert-tools" ["l"="37.158,0.718"]
 "andravin/wincnn" ["l"="37.093,0.778"]
-"JDAI-CV/dabnn" ["l"="-52.272,-15.115"]
+"JDAI-CV/dabnn" ["l"="-52.272,-15.115", "c"=1184]
+"openai/blocksparse" ["l"="48.863,33.895", "c"=556]
+"openai/openai-gemm" ["l"="37.046,0.815"]
 "RRZE-HPC/gpu-benches" ["l"="36.839,0.972"]
 "KnowingNothing/MatmulTutorial" ["l"="36.884,0.961"]
 "Bruce-Lee-LY/cuda_hgemm" ["l"="36.86,0.941"]
 "sjfeng1999/gpu-arch-microbenchmark" ["l"="36.913,0.957"]
-"ekondis/mixbench" ["l"="64.154,-1.996"]
+"ekondis/mixbench" ["l"="64.154,-1.996", "c"=477]
 "cloudcores/CuAssembler" ["l"="36.931,0.931"]
 "sunlex0717/DissectingTensorCores" ["l"="36.893,0.978"]
 "Yinghan-Li/YHs_Sample" ["l"="36.901,0.924"]
 "yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" ["l"="36.91,0.911"]
-"accel-sim/accel-sim-framework" ["l"="31.017,-2.941"]
+"accel-sim/accel-sim-framework" ["l"="31.017,-2.941", "c"=1037]
 "ColfaxResearch/cutlass-kernels" ["l"="36.84,0.986"]
 "TiledTensor/TiledCUDA" ["l"="36.877,1.015"]
-"Kobzol/hardware-effects-gpu" ["l"="36.806,0.998"]
 "BBuf/how-to-learn-deep-learning-framework" ["l"="36.941,0.918"]
-"xlite-dev/Awesome-LLM-Inference" ["l"="38.954,-0.506"]
+"xlite-dev/Awesome-LLM-Inference" ["l"="38.954,-0.506", "c"=39]
 "zhaochenyang20/Awesome-ML-SYS-Tutorial" ["l"="36.876,0.767"]
-"kvcache-ai/Mooncake" ["l"="39.029,-0.539"]
-"ModelTC/lightllm" ["l"="38.919,-0.53"]
-"tensorflow/runtime" ["l"="45.651,25.641"]
+"kvcache-ai/Mooncake" ["l"="39.029,-0.539", "c"=39]
+"ModelTC/lightllm" ["l"="38.919,-0.53", "c"=39]
+"AdaptiveCpp/AdaptiveCpp" ["l"="64.223,-1.97", "c"=477]
+"inisis/brocolli" ["l"="51.637,33.228", "c"=354]
+"tsingmicro-toolchain/OnnxSlim" ["l"="37.049,0.456"]
+"inisis/caffe" ["l"="37.032,0.411"]
+"inisis/daisy" ["l"="37.036,0.381"]
+"inisis/OnnxSlim" ["l"="37.04,0.428"]
+"tensorflow/runtime" ["l"="45.651,25.641", "c"=68]
 "pytorch/tvm" ["l"="37.06,1.036"]
 "tensorflow/mlir-hlo" ["l"="37.124,1.023"]
-"ONNC/onnc" ["l"="31.903,-2.926"]
-"Tencent/TNN" ["l"="50.14,29.861"]
-"PaddlePaddle/Paddle-Lite" ["l"="50.086,29.69"]
+"ONNC/onnc" ["l"="31.903,-2.926", "c"=212]
+"Cyan4973/FiniteStateEntropy" ["l"="-39.263,21.099", "c"=563]
+"NVIDIA/nvcomp" ["l"="36.665,1.03"]
+"Tencent/TNN" ["l"="50.14,29.861", "c"=83]
 "XiaoMi/mace-models" ["l"="37.233,0.677"]
-"daquexian/onnx-simplifier" ["l"="50.2,29.876"]
+"daquexian/onnx-simplifier" ["l"="50.2,29.876", "c"=83]
 "EasonLiao/CudaTree" ["l"="36.536,0.765"]
 "deeplearningais/curfil" ["l"="36.499,0.743"]
 "sdemyanov/ConvNet" ["l"="36.819,0.632"]
 "xingdi-eric-yuan/conv-net-version-3" ["l"="36.782,0.548"]
 "TorontoDeepLearning/convnet" ["l"="36.832,0.682"]
+"jetpacapp/DeepBeliefSDK" ["l"="47.763,29.085", "c"=89]
 "PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" ["l"="36.762,0.699"]
 "PacktPublishing/Hands-On-GPU-Programming-with-CUDA-C-and-Python-3.x-Second-Edition" ["l"="36.665,0.709"]
 "sallenkey-wei/cuda-handbook" ["l"="36.649,0.683"]
 "ContinuumIO/gtc2019-numba" ["l"="36.351,0.825"]
 "ContinuumIO/gtc2020-numba" ["l"="36.373,0.833"]
-"yonghenglh6/DepthwiseConvolution" ["l"="51.654,33.328"]
-"starimeL/PytorchConverter" ["l"="51.66,33.246"]
-"deepglint/EasyQuant" ["l"="52.568,33.435"]
-"eric612/MobileNet-YOLO" ["l"="51.673,33.285"]
-"shicai/MobileNet-Caffe" ["l"="51.674,33.332"]
-"chuanqi305/MobileNetv2-SSDLite" ["l"="51.692,33.305"]
+"yonghenglh6/DepthwiseConvolution" ["l"="51.654,33.328", "c"=354]
+"starimeL/PytorchConverter" ["l"="51.66,33.246", "c"=354]
+"deepglint/EasyQuant" ["l"="52.568,33.435", "c"=271]
+"shicai/MobileNet-Caffe" ["l"="51.674,33.332", "c"=354]
+"chuanqi305/MobileNetv2-SSDLite" ["l"="51.692,33.305", "c"=354]
 "PaddlePaddle/Anakin" ["l"="37.165,0.747"]
-"xxradon/PytorchToCaffe" ["l"="51.63,33.247"]
-"miaow1988/ShuffleNet_V2_pytorch_caffe" ["l"="51.719,33.259"]
-"MTLab/onnx2caffe" ["l"="51.613,33.212"]
-"jakc4103/DFQ" ["l"="52.547,33.437"]
+"xxradon/PytorchToCaffe" ["l"="51.63,33.247", "c"=354]
+"miaow1988/ShuffleNet_V2_pytorch_caffe" ["l"="51.719,33.259", "c"=354]
+"MTLab/onnx2caffe" ["l"="51.613,33.212", "c"=354]
+"jakc4103/DFQ" ["l"="52.547,33.437", "c"=271]
 "daadaada/turingas" ["l"="36.95,0.894"]
 "QianyanTech/NBAssembler" ["l"="36.948,0.95"]
 "0xD0GF00D/DocumentSASS" ["l"="36.941,0.967"]
 "OpenPPL/CuAssembler" ["l"="36.989,0.794"]
-"NVlabs/NVBit" ["l"="30.968,-2.981"]
+"NVlabs/NVBit" ["l"="30.968,-2.981", "c"=1037]
 "PAA-NCIC/PPoPP2017_artifact" ["l"="36.968,0.879"]
 "Cjkkkk/CUDA_gemm" ["l"="36.89,0.913"]
+"microsoft/DirectML" ["l"="-23.409,-27.774", "c"=26]
+"lshqqytiger/stable-diffusion-webui-amdgpu" ["l"="37.249,1.387"]
+"vosen/ZLUDA" ["l"="37.303,1.495"]
+"PacktPublishing/Learn-OpenCV-4-By-Building-Projects-Second-Edition" ["l"="51.314,29.684", "c"=83]
+"sfzhang15/FaceBoxes" ["l"="33.263,29.187", "c"=57]
+"DLTcollab/sse2neon" ["l"="-22.342,-23.364", "c"=496]
+"intel/ARM_NEON_2_x86_SSE" ["l"="37.114,0.703"]
+"jratcliff63367/sse2neon" ["l"="37.122,0.665"]
+"rapidsai/raft" ["l"="-1.044,3.934", "c"=576]
+"NVIDIA/cuCollections" ["l"="36.669,0.998"]
+"intel/compute-runtime" ["l"="64.26,-1.983", "c"=477]
 "u39kun/deep-learning-benchmark" ["l"="37.358,0.777"]
 "LambdaColdStorage/lambda-tensorflow-benchmark" ["l"="37.426,0.751"]
 "hclhkbu/dlbench" ["l"="37.339,0.799"]
 "lambdal/deeplearning-benchmark" ["l"="37.468,0.734"]
-"rapidsai/rmm" ["l"="36.687,1.012"]
-"NVIDIA/cuCollections" ["l"="36.669,0.998"]
-"rapidsai/raft" ["l"="-1.044,3.934"]
 "NVIDIA/cnmem" ["l"="36.72,0.975"]
 "NVIDIA/NVTX" ["l"="36.733,1.018"]
-"rapidsai/cuvs" ["l"="-1.024,3.898"]
-"rapidsai/kvikio" ["l"="1.765,14.51"]
-"rapidsai/cugraph" ["l"="43.927,23.625"]
+"rapidsai/cuvs" ["l"="-1.024,3.898", "c"=576]
+"rapidsai/kvikio" ["l"="1.765,14.51", "c"=572]
 "NVIDIA/MatX" ["l"="36.689,0.986"]
-"rapidsai/cuspatial" ["l"="43.959,23.66"]
+"rapidsai/cuspatial" ["l"="43.959,23.66", "c"=95]
 "owensgroup/SlabHash" ["l"="36.582,1.026"]
 "owensgroup/GpuBTree" ["l"="36.543,1.044"]
 "owensgroup/MVGpuBTree" ["l"="36.527,1.054"]
 "pzrq/megakv" ["l"="36.546,1.066"]
 "owensgroup/SlabAlloc" ["l"="36.557,1.05"]
+"egraphs-good/egg" ["l"="-0.663,15.362", "c"=729]
+"uwplse/tensat" ["l"="37.029,1.186"]
+"mlir-rs/melior" ["l"="37.236,1.081"]
+"symisc/sod" ["l"="-22.271,-26.028", "c"=101]
+"microsoft/ELL" ["l"="37.251,0.836"]
+"eigenteam/eigen-git-mirror" ["l"="59.233,10.862", "c"=87]
 "apache/incubator-nemo" ["l"="36.981,0.618"]
 "snuspl/pluto" ["l"="36.981,0.638"]
 "snuspl/nemo" ["l"="36.969,0.636"]
@@ -4081,11 +4863,11 @@ digraph G {
 "friendliai/periflow-python-sdk" ["l"="36.991,0.662"]
 "JDAI-CV/DNNLibrary" ["l"="37.212,0.658"]
 "daquexian/dnntools" ["l"="37.226,0.618"]
-"BUG1989/ncnn-benchmark" ["l"="51.643,33.201"]
+"BUG1989/ncnn-benchmark" ["l"="51.643,33.201", "c"=354]
 "daquexian/dnnlibrary-example" ["l"="37.239,0.632"]
-"daquexian/chaoli-forum-for-android-2" ["l"="58.912,-15.551"]
+"daquexian/chaoli-forum-for-android-2" ["l"="58.912,-15.551", "c"=467]
 "erickingxu/pyBridge" ["l"="37.24,0.615"]
-"zhy520xp/mace-makefile-project" ["l"="-51.938,-15.667"]
+"zhy520xp/mace-makefile-project" ["l"="-51.938,-15.667", "c"=1008]
 "YuanhaoGong/SideWindowFilter" ["l"="37.189,0.462"]
 "YuanhaoGong/CurvatureFilter" ["l"="37.206,0.397"]
 "Luxiush/Weighted-Guided-Image-Filter" ["l"="37.259,0.392"]
@@ -4094,91 +4876,110 @@ digraph G {
 "YuanhaoGong/WeightedMeanCurvature" ["l"="37.193,0.424"]
 "Beta-y/Side_Window_Filtering" ["l"="37.219,0.452"]
 "sai-bi/ImageSmoothing" ["l"="37.229,0.336"]
-"swz30/CycleISP" ["l"="-34.555,22.441"]
-"kuan-wang/The_Bilateral_Solver" ["l"="-31.115,-35.056"]
-"mgharbi/hdrnet_legacy" ["l"="-33.714,23.046"]
+"swz30/CycleISP" ["l"="-34.555,22.441", "c"=429]
+"kuan-wang/The_Bilateral_Solver" ["l"="-31.115,-35.056", "c"=187]
+"mgharbi/hdrnet_legacy" ["l"="-33.714,23.046", "c"=616]
 "mlcommons/training_results_v0.5" ["l"="37.403,0.904"]
 "mlcommons/logging" ["l"="37.42,0.891"]
 "XiaoMi/mobile-ai-bench" ["l"="37.203,0.701"]
-"XiaoMi/kaldi-onnx" ["l"="35.702,2.408"]
+"XiaoMi/kaldi-onnx" ["l"="35.702,2.408", "c"=308]
 "XiaoMi/mace-kit" ["l"="37.278,0.649"]
-"szad670401/Fast-MTCNN" ["l"="33.196,29.151"]
+"szad670401/Fast-MTCNN" ["l"="33.196,29.151", "c"=57]
+"rapidsai-community/notebooks-contrib" ["l"="43.924,23.718", "c"=95]
 "CoffeeBeforeArch/practical_parallelism_in_cpp" ["l"="36.619,0.717"]
 "CoffeeBeforeArch/cpp_20_samples" ["l"="36.599,0.694"]
+"AliveToolkit/alive2" ["l"="-22.062,-18.585", "c"=763]
+"llvm/clangir" ["l"="37.151,1.076"]
+"sampsyo/bril" ["l"="-22.188,-18.58", "c"=763]
+"llvm/Polygeist" ["l"="37.132,1.05"]
+"sampsyo/cs6120" ["l"="-22.215,-18.571", "c"=763]
+"kumasento/polymer" ["l"="37.159,1.093"]
+"facebookresearch/CompilerGym" ["l"="37.093,1.066"]
+"cdisselkoen/llvm-ir" ["l"="-9.442,-6.402", "c"=5]
 "shriramsb/vDNN" ["l"="36.527,0.969"]
 "shriramsb/vdnn-plus-plus" ["l"="36.541,0.965"]
 "huiscliu/Tutorials" ["l"="36.748,0.778"]
-"LitLeo/TensorRT_Tutorial" ["l"="53.23,32.686"]
-"Syencil/tensorRT" ["l"="53.218,32.707"]
-"dlunion/tensorRTIntegrate" ["l"="53.203,32.687"]
+"LitLeo/TensorRT_Tutorial" ["l"="53.23,32.686", "c"=251]
+"Syencil/tensorRT" ["l"="53.218,32.707", "c"=251]
+"dlunion/tensorRTIntegrate" ["l"="53.203,32.687", "c"=251]
 "sangyc10/CUDA-code" ["l"="36.805,0.779"]
-"CaoWGG/TensorRT-CenterNet" ["l"="53.189,32.699"]
-"chrischoy/pytorch-custom-cuda-tutorial" ["l"="51.381,30.009"]
+"CaoWGG/TensorRT-CenterNet" ["l"="53.189,32.699", "c"=251]
+"chrischoy/pytorch-custom-cuda-tutorial" ["l"="51.381,30.009", "c"=83]
 "udacity/cs344" ["l"="36.716,0.839"]
-"BrightXiaoHan/CMakeTutorial" ["l"="-18.465,-27.978"]
+"BrightXiaoHan/CMakeTutorial" ["l"="-18.465,-27.978", "c"=62]
+"BBuf/Darknet" ["l"="52.897,33.349", "c"=271]
+"ferrandi/PandA-bambu" ["l"="31.6,-2.534", "c"=212]
+"onnx/onnx-tensorflow" ["l"="50.088,29.955", "c"=83]
 "eth-cscs/COSMA" ["l"="37.403,1.002"]
 "cp2k/dbcsr" ["l"="37.338,0.95"]
 "eth-cscs/SpFFT" ["l"="37.444,0.993"]
 "eth-cscs/Tiled-MM" ["l"="37.436,1.015"]
 "eth-cscs/DLA-Future" ["l"="37.477,1.001"]
+"BBuf/Image-processing-algorithm" ["l"="-33.603,23.068", "c"=616]
+"uTensor/uTensor" ["l"="-16.161,-42.533", "c"=387]
+"PacktPublishing/Mastering-OpenCV-4-Third-Edition" ["l"="51.279,29.71", "c"=83]
 "depctg/udacity-cs344-colab" ["l"="36.653,0.795"]
 "nickspell/udacity-IntroToParallelProgramming" ["l"="36.592,0.752"]
 "andersbll/cudarray" ["l"="36.564,0.784"]
-"nitishsrivastava/deepnet" ["l"="47.998,28.919"]
-"lmjohns3/theanets" ["l"="44.889,27.638"]
-"dmlc/minerva" ["l"="57.773,23.509"]
+"nitishsrivastava/deepnet" ["l"="47.998,28.919", "c"=89]
+"lmjohns3/theanets" ["l"="44.889,27.638", "c"=789]
+"dmlc/minerva" ["l"="57.773,23.509", "c"=161]
 "dnouri/cuda-convnet" ["l"="36.785,0.713"]
-"gwtaylor/theano-rnn" ["l"="44.872,27.623"]
-"amaas/stanford-ctc" ["l"="35.698,2.181"]
-"mila-iqia/blocks" ["l"="44.867,27.695"]
+"gwtaylor/theano-rnn" ["l"="44.872,27.623", "c"=789]
+"amaas/stanford-ctc" ["l"="35.698,2.181", "c"=308]
+"mila-iqia/blocks" ["l"="44.867,27.695", "c"=789]
 "YouQixiaowu/CUDA-Programming-with-Python" ["l"="36.72,0.697"]
+"uxlfoundation/oneDPL" ["l"="64.191,-1.959", "c"=477]
 "pytorch/xla" ["l"="37.205,1.003"]
 "openxla/xla" ["l"="37.169,0.988"]
-"facebookresearch/fairscale" ["l"="38.777,-0.604"]
-"NVIDIA/apex" ["l"="50.832,29.796"]
-"google/flax" ["l"="21.721,13.999"]
-"google-deepmind/dm-haiku" ["l"="21.721,14.052"]
-"pytorch/functorch" ["l"="21.677,14.079"]
-"triton-lang/triton" ["l"="38.919,-0.703"]
-"pytorch/TensorRT" ["l"="53.262,32.686"]
-"CVCUDA/CV-CUDA" ["l"="53.302,32.711"]
+"facebookresearch/fairscale" ["l"="38.777,-0.604", "c"=39]
+"NVIDIA/apex" ["l"="50.832,29.796", "c"=83]
+"google/flax" ["l"="21.721,13.999", "c"=267]
+"google-deepmind/dm-haiku" ["l"="21.721,14.052", "c"=267]
+"pytorch/functorch" ["l"="21.677,14.079", "c"=267]
+"triton-lang/triton" ["l"="38.919,-0.703", "c"=39]
+"pytorch/TensorRT" ["l"="53.262,32.686", "c"=251]
+"CVCUDA/CV-CUDA" ["l"="53.302,32.711", "c"=251]
 "LitLeo/OpenCUDA" ["l"="36.741,0.638"]
-"BBuf/Image-processing-algorithm" ["l"="-33.603,23.068"]
 "littlebearsama/CUDA-notes" ["l"="36.716,0.616"]
-"PacktPublishing/Mastering-OpenCV-4-Third-Edition" ["l"="51.279,29.71"]
-"msnh2012/Msnhnet" ["l"="37.04,0.716"]
-"pitzer/SiftGPU" ["l"="60.494,9.503"]
-"xiangweizeng/mobile-lpr" ["l"="34.182,30.04"]
-"Celebrandil/CudaSift" ["l"="60.481,9.541"]
-"ZhenghaoFei/visual_odom" ["l"="59.568,10.979"]
-"HuangCongQing/pcl-learning" ["l"="58.087,9.801"]
+"pitzer/SiftGPU" ["l"="60.494,9.503", "c"=636]
+"xiangweizeng/mobile-lpr" ["l"="34.182,30.04", "c"=892]
+"Celebrandil/CudaSift" ["l"="60.481,9.541", "c"=636]
+"ZhenghaoFei/visual_odom" ["l"="59.568,10.979", "c"=87]
+"HuangCongQing/pcl-learning" ["l"="58.087,9.801", "c"=142]
+"pytorch/extension-cpp" ["l"="51.386,29.973", "c"=83]
 "chasingegg/Winconv" ["l"="37.104,0.557"]
 "TaoHuUMD/Winograd_Convolution" ["l"="37.114,0.524"]
 "dorthyluu/cs194-winograd" ["l"="37.088,0.619"]
-"HuaizhengZhang/AI-Infra-from-Zero-to-Hero" ["l"="36.947,0.829"]
-"microsoft/AI-System" ["l"="36.923,0.755"]
-"AmberLJC/LLMSys-PaperList" ["l"="39.038,-0.452"]
-"tqchen/tinyflow" ["l"="57.91,23.583"]
-"bytedance/byteps" ["l"="58.028,23.559"]
-"alpa-projects/alpa" ["l"="38.879,-0.61"]
-"dyweb/papers-notebook" ["l"="0.669,13.944"]
+"kristjankorjus/Replicating-DeepMind" ["l"="57.235,18.048", "c"=45]
+"AmberLJC/LLMSys-PaperList" ["l"="39.038,-0.452", "c"=39]
+"tqchen/tinyflow" ["l"="57.91,23.583", "c"=161]
+"alpa-projects/alpa" ["l"="38.879,-0.61", "c"=39]
+"dyweb/papers-notebook" ["l"="0.669,13.944", "c"=115]
+"NVIDIA/open-gpu-doc" ["l"="7.577,-11.275", "c"=515]
+"facebookarchive/BOLT" ["l"="-19.59,-26.088", "c"=10]
+"google-research/morph-net" ["l"="52.896,33.956", "c"=708]
 "spcl/dace" ["l"="37.354,1.1"]
 "spcl/daceml" ["l"="37.4,1.125"]
 "spcl/substation" ["l"="37.376,1.125"]
 "spcl/npbench" ["l"="37.396,1.084"]
 "spcl/mlir-dace" ["l"="37.295,1.086"]
-"cornell-zhang/heterocl" ["l"="31.679,-2.606"]
+"cornell-zhang/heterocl" ["l"="31.679,-2.606", "c"=212]
 "spcl/dace-vscode" ["l"="37.386,1.108"]
 "GridTools/gt4py" ["l"="37.458,1.169"]
 "deep500/deep500" ["l"="37.515,1.161"]
-"definelicht/hlslib" ["l"="31.699,-2.649"]
-"ParRes/Kernels" ["l"="63.236,-1.348"]
+"definelicht/hlslib" ["l"="31.699,-2.649", "c"=212]
+"ParRes/Kernels" ["l"="63.236,-1.348", "c"=175]
 "spcl/pymlir" ["l"="37.199,1.073"]
 "spcl/open-earth-compiler" ["l"="37.41,1.105"]
-"mit-han-lab/inter-operator-scheduler" ["l"="37.018,1.026"]
-"NVlabs/timeloop" ["l"="31.019,-2.883"]
-"moli232777144/mtcnn_ncnn" ["l"="33.206,29.199"]
-"Rock-100/FaceKit" ["l"="33.25,29.205"]
+"NVlabs/timeloop" ["l"="31.019,-2.883", "c"=1037]
+"moli232777144/mtcnn_ncnn" ["l"="33.206,29.199", "c"=57]
+"Rock-100/FaceKit" ["l"="33.25,29.205", "c"=57]
+"didi/AoE" ["l"="57.31,-12.166", "c"=216]
+"intel/nauta" ["l"="64.259,-2.508", "c"=1153]
+"agenium-scale/nsimd" ["l"="-19.644,-26.186", "c"=10]
+"google/autofdo" ["l"="6.757,-6.125", "c"=335]
+"jansel/opentuner" ["l"="37.131,1.137"]
 "xuqiantong/CUDA-Winograd" ["l"="37.032,0.794"]
 "md2z34/winograd_gpu" ["l"="37.022,0.738"]
 "pku-liang/FlexTensor" ["l"="37.045,1.022"]
@@ -4187,12 +4988,16 @@ digraph G {
 "thu-pacman/PET" ["l"="36.993,1.032"]
 "UDC-GAC/openCNN" ["l"="37.029,0.755"]
 "xingyul/sparse-winograd-cnn" ["l"="37.07,0.724"]
+"ROCm/llvm-project" ["l"="64.175,-1.769", "c"=477]
+"ROCm/rocMLIR" ["l"="37.179,1.07"]
 "qsyao/cuda_spatial_deform" ["l"="36.927,0.506"]
 "wkcn/MobulaOP" ["l"="36.967,1.155"]
 "wkcn/mobula" ["l"="36.954,1.212"]
 "szha/mxnet-jit-batch" ["l"="36.941,1.158"]
+"networkservicemesh/networkservicemesh" ["l"="8.636,-9.753", "c"=14]
+"ctuning/ck-tensorflow" ["l"="37.665,0.862"]
 "facebook/FAI-PEP" ["l"="37.273,0.687"]
-"enyac-group/single-path-nas" ["l"="52.883,34.051"]
+"enyac-group/single-path-nas" ["l"="52.883,34.051", "c"=708]
 "d2l-ai/d2l-tvm" ["l"="37.023,0.995"]
 "merrymercy/tvm-mali" ["l"="37.046,1.152"]
 "tvmai/meetup-slides" ["l"="37.026,1.095"]
@@ -4202,32 +5007,36 @@ digraph G {
 "tlc-pack/relax" ["l"="37.009,1.063"]
 "dmlc/dlpack" ["l"="37.003,0.999"]
 "StrongSpoon/tvm.schedule" ["l"="37.02,1.047"]
+"borgwang/tinynn" ["l"="51.546,28.096", "c"=104]
 "akrizhevsky/cuda-convnet2" ["l"="36.876,0.741"]
 "NervanaSystems/nervanagpu" ["l"="36.914,0.825"]
 "FZJ-JSC/tutorial-multi-gpu" ["l"="36.77,0.984"]
-"NVIDIA/nvbandwidth" ["l"="1.998,14.495"]
-"ByteDance-Seed/Triton-distributed" ["l"="39.013,-0.386"]
-"microsoft/msccl" ["l"="1.972,14.532"]
-"UoB-HPC/BabelStream" ["l"="63.23,-1.369"]
+"NVIDIA/nvbandwidth" ["l"="1.998,14.495", "c"=572]
+"ByteDance-Seed/Triton-distributed" ["l"="39.013,-0.386", "c"=39]
+"microsoft/msccl" ["l"="1.972,14.532", "c"=572]
+"UoB-HPC/BabelStream" ["l"="63.23,-1.369", "c"=175]
+"rapidsai/notebooks" ["l"="43.903,23.698", "c"=95]
+"longcw/pytorch2caffe" ["l"="51.647,33.257", "c"=354]
 "OpenACC/openacc-training-materials" ["l"="36.58,1.154"]
 "OpenACC/openacc-best-practices-guide" ["l"="36.541,1.189"]
 "rogerou/Arm-neon-intrinsics" ["l"="37.088,0.692"]
 "BBuf/ArmNeonOptimization" ["l"="37.083,0.672"]
 "thenifty/neon-guide" ["l"="37.103,0.731"]
-"intel/ARM_NEON_2_x86_SSE" ["l"="37.114,0.703"]
-"HuiiJi/AISP" ["l"="-34.553,22.375"]
+"HuiiJi/AISP" ["l"="-34.553,22.375", "c"=429]
 "Mysticial/Flops" ["l"="37.067,0.594"]
 "tud-zih-energy/FIRESTARTER" ["l"="37.003,0.466"]
+"maestro-project/maestro" ["l"="30.994,-2.865", "c"=1037]
+"pku-liang/TileFlow" ["l"="37.029,1.134"]
 "keroro824/HashingDeepLearning" ["l"="37.018,1.258"]
 "RUSH-LAB/SLIDE" ["l"="37.003,1.322"]
 "IntelLabs/SLIDE_opt_ia" ["l"="37.025,1.308"]
-"google/neural-tangents" ["l"="21.667,13.957"]
-"openai/blocksparse" ["l"="48.863,33.895"]
-"dblalock/bolt" ["l"="-19.706,10.141"]
-"uwplse/tensat" ["l"="37.029,1.186"]
-"luoyetx/mini-caffe" ["l"="33.084,29.174"]
-"in66-dev/In-Prestissimo" ["l"="33.025,29.135"]
-"olojuwin/facerecognize-for-mobile-phone" ["l"="33.262,29.245"]
+"google/neural-tangents" ["l"="21.667,13.957", "c"=267]
+"dblalock/bolt" ["l"="-19.706,10.141", "c"=22]
+"facebookresearch/kill-the-bits" ["l"="52.622,33.465", "c"=271]
+"in66-dev/In-Prestissimo" ["l"="33.025,29.135", "c"=57]
+"zhihu/cuBERT" ["l"="53.325,27.081", "c"=60]
+"luoyetx/mini-caffe" ["l"="33.084,29.174", "c"=57]
+"olojuwin/facerecognize-for-mobile-phone" ["l"="33.262,29.245", "c"=57]
 "MegEngine/MegCC" ["l"="37.045,0.917"]
 "pigirons/cpufp" ["l"="37.013,0.872"]
 "njuhope/cuda_sgemm" ["l"="36.918,0.935"]
@@ -4236,24 +5045,27 @@ digraph G {
 "yzhaiustc/Optimizing-DGEMM-on-Intel-CPUs-with-AVX512F" ["l"="36.958,0.862"]
 "pku-liang/AMOS" ["l"="37.001,1.054"]
 "UofT-EcoSystem/DietCode" ["l"="36.996,1.071"]
-"pku-liang/TileFlow" ["l"="37.029,1.134"]
 "zhaiyi000/tlp" ["l"="36.992,1.083"]
+"mosharaf/eecs598" ["l"="39.199,-0.433", "c"=39]
 "gvtulder/elasticdeform" ["l"="36.906,0.451"]
 "fcalvet/image_tools" ["l"="36.896,0.425"]
 "google-deepmind/multidim-image-augmentation" ["l"="36.887,0.398"]
+"krrishnarraj/clpeak" ["l"="64.233,-2.075", "c"=477]
+"MegEngine/MegPeak" ["l"="37.08,0.84"]
 "masahi/tvm-winograd" ["l"="37.067,1.23"]
+"ROCm/AMDMIGraphX" ["l"="64.213,-1.761", "c"=477]
 "HolmesShuan/CNN-Inference-Engine-Quick-View" ["l"="37.27,0.626"]
 "AI-performance/embedded-ai.bench" ["l"="37.141,0.699"]
-"AngusG/tensorflow-xnor-bnn" ["l"="52.579,33.635"]
+"AngusG/tensorflow-xnor-bnn" ["l"="52.579,33.635", "c"=271]
 "Cambricon/caffe" ["l"="37.475,1.108"]
 "Cambricon/caffe_boost" ["l"="37.463,1.118"]
 "Cambricon/CNStream" ["l"="37.454,1.091"]
 "Cambricon/Cambricon-Gst" ["l"="37.485,1.1"]
-"sfilippone/psblas3" ["l"="62.658,-0.797"]
+"szha/KDD18-Gluon" ["l"="51.765,33.767", "c"=354]
+"sfilippone/psblas3" ["l"="62.658,-0.797", "c"=953]
 "jacobwilliams/quadpack" ["l"="37.389,0.955"]
 "chunhuajiang/arm-gcc-inline-assembler" ["l"="37.08,0.636"]
 "carlushuang/cpu_gemm_opt" ["l"="37.107,0.609"]
-"Kobzol/hardware-effects" ["l"="-19.739,-26.005"]
 "leimao/CUDA-GEMM-Optimization" ["l"="36.85,0.952"]
 "harrism/numba_examples" ["l"="36.366,0.88"]
 "ContinuumIO/gtc2017-numba" ["l"="36.391,0.862"]
@@ -4264,14 +5076,20 @@ digraph G {
 "rbaygildin/learn-gpgpu" ["l"="36.589,0.923"]
 "gmarciani/cudawesome" ["l"="36.599,0.938"]
 "ARM-software/Tool-Solutions" ["l"="37.44,0.625"]
+"envytools/envytools" ["l"="7.498,-11.277", "c"=515]
+"xiangweizeng/darknet2ncnn" ["l"="32.846,29.073", "c"=57]
 "fqnchina/ImageSmoothing" ["l"="37.23,0.28"]
 "zhufeida/Benchmark_EPS" ["l"="37.217,0.295"]
 "MeteoSwiss-APN/dawn" ["l"="37.491,1.172"]
 "GridTools/gridtools" ["l"="37.48,1.185"]
+"awslabs/mxboard" ["l"="51.776,33.685", "c"=354]
 "NervanaSystems/ngraph-tf" ["l"="37.392,0.862"]
 "tensorflow/ngraph-bridge" ["l"="37.356,0.863"]
 "NervanaSystems/ngraph-tensorflow-bridge" ["l"="37.393,0.846"]
+"ValeevGroup/tiledarray" ["l"="21.975,17.646", "c"=863]
 "RockeyDon/Gradient-Domain-Guided-Image-Filtering" ["l"="37.288,0.378"]
+"intel/cm-compiler" ["l"="64.247,-1.962", "c"=477]
+"intel/xetla" ["l"="37.191,1.166"]
 "szad670401/tvm_benchmark_cpp" ["l"="37.049,1.195"]
 "tlc-pack/TLCBench" ["l"="37.019,1.115"]
 "rgavaska/Fast-Adaptive-Bilateral-Filtering" ["l"="37.294,0.341"]
@@ -4283,7 +5101,7 @@ digraph G {
 "nicolaswilde/cuda-tensorcore-hgemm" ["l"="36.899,0.952"]
 "metricq/aiocouch" ["l"="36.968,0.384"]
 "metricq/metricq-python" ["l"="36.979,0.418"]
-"IntelLabs/SkimCaffe" ["l"="52.714,33.614"]
+"IntelLabs/SkimCaffe" ["l"="52.714,33.614", "c"=271]
 "jafermarq/WinogradAwareNets" ["l"="37.063,0.662"]
 "metricq/metricq" ["l"="36.978,0.436"]
 "tud-zih-energy/lo2s" ["l"="36.992,0.428"]
@@ -4296,10 +5114,8 @@ digraph G {
 "inisis/onion" ["l"="37.043,0.411"]
 "inisis/chexpert" ["l"="37.039,0.402"]
 "WeLoveAI/onnx2torch" ["l"="37.06,0.424"]
-"inisis/daisy" ["l"="37.036,0.381"]
 "inisis/bilibili-video" ["l"="37.03,0.392"]
 "inisis/OnnxLLM" ["l"="37.052,0.436"]
-"inisis/caffe" ["l"="37.032,0.411"]
 "inisis/caffe2onnx" ["l"="37.054,0.414"]
 "inisis/katago-benchmark" ["l"="37.025,0.402"]
 "inisis/machine-learning-facial-deformer" ["l"="37.063,0.401"]
@@ -4314,104 +5130,124 @@ digraph G {
 "periscop/piplib" ["l"="37.122,1.185"]
 "linnanwang/superneurons-release" ["l"="36.58,0.969"]
 "buddy-compiler/buddy-mlir" ["l"="37.088,0.996"]
-"j2kun/mlir-tutorial" ["l"="37.107,1.03"]
-"llvm/circt" ["l"="31.812,-3.85"]
+"llvm/circt" ["l"="31.812,-3.85", "c"=188]
 "openxla/stablehlo" ["l"="37.147,1.037"]
-"ermig1979/Simd" ["l"="-19.57,-26.205"]
+"ermig1979/Simd" ["l"="-19.57,-26.205", "c"=10]
 "ARM-software/optimized-routines" ["l"="37.164,0.667"]
 "andrepuschmann/math-neon" ["l"="37.147,0.65"]
-"kfrlib/kfr" ["l"="38.349,5.564"]
+"kfrlib/kfr" ["l"="38.349,5.564", "c"=65]
 "chenzomi12/AISystem" ["l"="36.88,0.686"]
-"microsoft/ai-edu" ["l"="50.982,28.288"]
+"arrayfire/arrayfire" ["l"="64.369,-1.965", "c"=477]
 "zwang4/awesome-machine-learning-in-compilers" ["l"="37.076,1.018"]
 "KnowingNothing/compiler-and-arch" ["l"="36.989,1.015"]
-"facebookresearch/CompilerGym" ["l"="37.093,1.066"]
 "google/ml-compiler-opt" ["l"="37.128,1.071"]
-"banach-space/llvm-tutor" ["l"="-22.141,-18.515"]
-"shining1984/PL-Compiler-Resource" ["l"="-22.236,-18.462"]
-"llvm/Polygeist" ["l"="37.132,1.05"]
-"vosen/ZLUDA" ["l"="37.303,1.495"]
+"shining1984/PL-Compiler-Resource" ["l"="-22.236,-18.462", "c"=763]
+"Evian-Zhang/llvm-ir-tutorial" ["l"="-22.235,-18.49", "c"=763]
 "lshqqytiger/ZLUDA" ["l"="37.249,1.419"]
-"NVIDIA/open-gpu-kernel-modules" ["l"="-14.222,-0.729"]
-"lshqqytiger/stable-diffusion-webui-amdgpu" ["l"="37.249,1.387"]
-"tracel-ai/burn" ["l"="-8.427,-4.429"]
-"HigherOrderCO/Bend" ["l"="-13.543,-7.868"]
-"vladmandic/sdnext" ["l"="32.217,31.686"]
-"doitsujin/dxvk" ["l"="-14.378,-0.817"]
-"Rust-GPU/Rust-CUDA" ["l"="-8.371,-4.458"]
-"rui314/mold" ["l"="-19.648,-25.785"]
-"huggingface/candle" ["l"="-8.472,-4.459"]
-"gfx-rs/wgpu" ["l"="-9.765,-4.35"]
-"ValveSoftware/Proton" ["l"="-14.321,-0.851"]
-"NVIDIA/stdexec" ["l"="-19.877,-26.042"]
-"AdaptiveCpp/AdaptiveCpp" ["l"="64.223,-1.97"]
-"srush/Triton-Puzzles" ["l"="38.988,-0.306"]
-"HazyResearch/ThunderKittens" ["l"="38.957,-0.343"]
+"NVIDIA/open-gpu-kernel-modules" ["l"="-14.222,-0.729", "c"=152]
+"tracel-ai/burn" ["l"="-8.427,-4.429", "c"=407]
+"HigherOrderCO/Bend" ["l"="-13.543,-7.868", "c"=86]
+"vladmandic/sdnext" ["l"="32.217,31.686", "c"=88]
+"doitsujin/dxvk" ["l"="-14.378,-0.817", "c"=152]
+"Rust-GPU/Rust-CUDA" ["l"="-8.371,-4.458", "c"=407]
+"rui314/mold" ["l"="-19.648,-25.785", "c"=10]
+"huggingface/candle" ["l"="-8.472,-4.459", "c"=407]
+"gfx-rs/wgpu" ["l"="-9.765,-4.35", "c"=227]
+"ValveSoftware/Proton" ["l"="-14.321,-0.851", "c"=152]
+"NVIDIA/nvidia-container-toolkit" ["l"="7.209,-11.422", "c"=515]
+"mlpack/mlpack" ["l"="47.673,29.17", "c"=89]
+"Jittor/jittor" ["l"="49.956,29.805", "c"=83]
+"stas00/ml-engineering" ["l"="40.346,0.666", "c"=7]
+"NVIDIA/stdexec" ["l"="-19.877,-26.042", "c"=10]
+"srush/Triton-Puzzles" ["l"="38.988,-0.306", "c"=39]
+"HazyResearch/ThunderKittens" ["l"="38.957,-0.343", "c"=39]
+"huangrt01/CS-Notes" ["l"="-6.607,19.402", "c"=637]
+"plctlab/PLCT-Weekly" ["l"="-22.338,-18.413", "c"=763]
+"NervanaSystems/neon" ["l"="47.851,29.03", "c"=89]
+"soumith/convnet-benchmarks" ["l"="47.812,29.023", "c"=89]
+"andersbll/deeppy" ["l"="48.009,28.516", "c"=89]
 "alibaba/heterogeneity-aware-lowering-and-optimization" ["l"="37.1,0.927"]
-"martinus/nanobench" ["l"="-19.895,-26.103"]
-"xtensor-stack/xsimd" ["l"="-19.688,-26.103"]
-"eliaskosunen/scnlib" ["l"="-19.933,-26.131"]
-"neka-nat/cupoch" ["l"="58.188,10.094"]
-"nvidia-isaac/nvblox" ["l"="59.35,11.266"]
-"jfalcou/eve" ["l"="-19.782,-26.145"]
+"martinus/nanobench" ["l"="-19.895,-26.103", "c"=10]
+"xtensor-stack/xsimd" ["l"="-19.688,-26.103", "c"=10]
+"eliaskosunen/scnlib" ["l"="-19.933,-26.131", "c"=10]
+"neka-nat/cupoch" ["l"="58.188,10.094", "c"=142]
+"nvidia-isaac/nvblox" ["l"="59.35,11.266", "c"=87]
+"jfalcou/eve" ["l"="-19.782,-26.145", "c"=10]
 "eBay/maxDNN" ["l"="36.928,0.893"]
-"openai/openai-gemm" ["l"="37.046,0.815"]
 "hyqneuron/asfermi" ["l"="36.958,0.906"]
 "google/ruy" ["l"="37.24,0.87"]
-"codeplaysoftware/portBLAS" ["l"="64.206,-2.007"]
-"uxlfoundation/oneMath" ["l"="64.167,-1.95"]
+"codeplaysoftware/portBLAS" ["l"="64.206,-2.007", "c"=477]
+"uxlfoundation/oneMath" ["l"="64.167,-1.95", "c"=477]
 "daadaada/gas" ["l"="36.971,0.808"]
 "xiuxiazhang/KeplerAs" ["l"="36.967,0.891"]
+"NVIDIA-Merlin/NVTabular" ["l"="58.228,23.615", "c"=161]
+"msr-fiddle/pipedream" ["l"="7.319,-11.064", "c"=515]
+"snuspl/nimble" ["l"="36.995,0.727"]
+"CppCon/CppCon2020" ["l"="-19.763,-26.088", "c"=10]
 "openhackathons-org/gpubootcamp" ["l"="36.652,1.081"]
 "openhackathons-org/End-to-End-AI-for-Science" ["l"="36.606,1.137"]
 "nv-legate/cupynumeric" ["l"="36.633,1.023"]
-"omlins/ParallelStencil.jl" ["l"="22.116,16.853"]
-"NVIDIA/hpc-container-maker" ["l"="7.171,-13.781"]
+"omlins/ParallelStencil.jl" ["l"="22.116,16.853", "c"=77]
+"NVIDIA/hpc-container-maker" ["l"="7.171,-13.781", "c"=893]
+"intel/intel-extension-for-pytorch" ["l"="64.147,-2.455", "c"=1153]
 "sophgo/tpu-mlir" ["l"="37.081,0.976"]
 "KEKE046/mlir-tutorial" ["l"="37.071,0.995"]
 "bytedance/byteir" ["l"="37.062,1.01"]
 "iml130/mlir-emitc" ["l"="37.165,1.063"]
+"othmanus/algeria-cities" ["l"="-10.734,-29.149", "c"=1173]
 "Adlik/Adlik" ["l"="37.067,0.813"]
 "Adlik/model_optimizer_tf" ["l"="37.067,0.76"]
 "Adlik/model_optimizer" ["l"="37.054,0.768"]
 "YanshiShield/YanshiShield" ["l"="37.064,0.779"]
-"OpenPPL/ppq" ["l"="52.571,33.354"]
-"ModelTC/MQBench" ["l"="52.551,33.403"]
+"OpenPPL/ppq" ["l"="52.571,33.354", "c"=271]
+"ModelTC/MQBench" ["l"="52.551,33.403", "c"=271]
 "OpenPPL/ppl.cv" ["l"="37.016,0.812"]
-"666DZY666/micronet" ["l"="52.669,33.387"]
-"llvm/clangir" ["l"="37.151,1.076"]
-"jansel/opentuner" ["l"="37.131,1.137"]
-"ChrisCummins/ProGraML" ["l"="35.929,-0.355"]
-"AliveToolkit/alive2" ["l"="-22.062,-18.585"]
+"666DZY666/micronet" ["l"="52.669,33.387", "c"=271]
+"ChrisCummins/ProGraML" ["l"="35.929,-0.355", "c"=315]
+"Tencent/TurboTransformers" ["l"="53.292,27.093", "c"=60]
+"bytedance/ByteTransformer" ["l"="36.968,0.992"]
 "bondhugula/pluto" ["l"="37.108,1.083"]
-"kumasento/polymer" ["l"="37.159,1.093"]
-"ROCm/rocMLIR" ["l"="37.179,1.07"]
 "libxsmm/tpp-mlir" ["l"="37.172,1.093"]
-"sai-bi/L1Flattening" ["l"="64.15,1.578"]
+"bytedance/effective_transformer" ["l"="53.242,27.037", "c"=60]
+"bytedance/matxscript" ["l"="37.032,1.037"]
+"sai-bi/L1Flattening" ["l"="64.15,1.578", "c"=134]
 "wliusjtu/Real-time-Image-Smoothing-via-Iterative-Least-Squares" ["l"="37.257,0.307"]
 "wliusjtu/Generalized-Smoothing-Framework" ["l"="37.251,0.323"]
 "fergaletto/GVWA" ["l"="37.247,0.292"]
-"NVIDIA/nvcomp" ["l"="36.665,1.03"]
-"facebookresearch/dietgpu" ["l"="-39.322,21.111"]
-"szcompressor/cuSZ" ["l"="-18.958,-26.214"]
-"dingwentao/GPU-lossless-compression" ["l"="-18.864,-26.242"]
+"uploadcare/pillow-simd" ["l"="51.04,29.838", "c"=83]
+"ARM-software/abi-aa" ["l"="-17.793,-43.177", "c"=55]
+"learn-llvm/awesome-llvm" ["l"="-22.182,-18.51", "c"=763]
+"intel/neural-compressor" ["l"="64.182,-2.465", "c"=1153]
+"zchrissirhcz/awesome-ncnn" ["l"="49.574,30.912", "c"=1055]
+"BRTResearch/AIChip_Paper_List" ["l"="31.013,-2.907", "c"=1037]
+"facebookresearch/dietgpu" ["l"="-39.322,21.111", "c"=563]
+"szcompressor/cuSZ" ["l"="-18.958,-26.214", "c"=10]
+"dingwentao/GPU-lossless-compression" ["l"="-18.864,-26.242", "c"=10]
 "eyalroz/cuda-kat" ["l"="36.631,1.052"]
-"NVIDIA/gds-nvidia-fs" ["l"="1.81,14.471"]
-"powturbo/Turbo-Range-Coder" ["l"="-39.232,21.108"]
-"LLNL/zfp" ["l"="-19.162,-26.154"]
-"IlyaGrebnov/libsais" ["l"="-39.286,21.166"]
+"NVIDIA/gds-nvidia-fs" ["l"="1.81,14.471", "c"=572]
+"powturbo/Turbo-Range-Coder" ["l"="-39.232,21.108", "c"=563]
+"LLNL/zfp" ["l"="-19.162,-26.154", "c"=10]
+"IlyaGrebnov/libsais" ["l"="-39.286,21.166", "c"=563]
 "sleeepyjack/warpcore" ["l"="36.609,1.013"]
 "muellan/metacache" ["l"="36.574,1.053"]
-"NVIDIA-Merlin/HierarchicalKV" ["l"="58.167,23.63"]
+"bytedance/lightseq" ["l"="53.268,27.061", "c"=60]
+"NVIDIA/tensorflow" ["l"="7.18,-11.491", "c"=515]
+"NVIDIA/cudnn-frontend" ["l"="36.877,0.989"]
+"NVIDIA-Merlin/HierarchicalKV" ["l"="58.167,23.63", "c"=161]
 "uwsampl/SparseTIR" ["l"="36.988,1.059"]
-"bytedance/ByteTransformer" ["l"="36.968,0.992"]
-"mirage-project/mirage" ["l"="39.025,-0.348"]
-"snuspl/nimble" ["l"="36.995,0.727"]
-"microsoft/antares" ["l"="-53.002,-11.836"]
+"mirage-project/mirage" ["l"="39.025,-0.348", "c"=39]
+"MegEngine/MegEngine" ["l"="49.984,29.855", "c"=83]
+"microsoft/antares" ["l"="-53.002,-11.836", "c"=400]
+"PacktPublishing/Learn-LLVM-12" ["l"="-22.26,-18.517", "c"=763]
 "ai2cm/pace" ["l"="37.498,1.193"]
 "GridTools/serialbox" ["l"="37.478,1.205"]
+"huawei-noah/AdderNet" ["l"="50.611,30.068", "c"=83]
+"numba/llvmlite" ["l"="-22.049,-18.429", "c"=763]
+"exo-lang/exo" ["l"="31.652,-2.52", "c"=212]
+"expnkx/fast_io" ["l"="-19.85,-26.138", "c"=10]
+"intel/pti-gpu" ["l"="64.172,-1.99", "c"=477]
+"intel/mlir-extensions" ["l"="37.188,1.113"]
 "ctuning/ck-autotuning" ["l"="37.641,0.864"]
-"ctuning/ck-tensorflow" ["l"="37.665,0.862"]
 "ctuning/ck-env" ["l"="37.653,0.863"]
 "ctuning/ck-math" ["l"="37.647,0.89"]
 "ctuning/ck-crowdnode" ["l"="37.643,0.879"]
@@ -4430,32 +5266,42 @@ digraph G {
 "XiaoSong9905/CUDA-Optimization-Guide" ["l"="36.856,0.91"]
 "AyakaGEMM/Hands-on-GEMM" ["l"="36.884,0.944"]
 "xdslproject/xdsl" ["l"="37.189,1.088"]
-"UIUC-ChenLab/scalehls" ["l"="31.665,-2.547"]
-"Xilinx/mlir-aie" ["l"="31.71,-2.53"]
+"UIUC-ChenLab/scalehls" ["l"="31.665,-2.547", "c"=212]
+"Xilinx/mlir-aie" ["l"="31.71,-2.53", "c"=212]
 "Meinersbur/ppcg" ["l"="37.114,1.101"]
-"aovoc/nnieqat-pytorch" ["l"="51.57,33.197"]
-"BBuf/Darknet" ["l"="52.897,33.349"]
+"onnx/optimizer" ["l"="-44.239,6.049", "c"=1131]
+"banach-space/clang-tutor" ["l"="-22.157,-18.536", "c"=763]
+"s-gupta/rcnn-depth" ["l"="47.897,35.704", "c"=695]
+"aovoc/nnieqat-pytorch" ["l"="51.57,33.197", "c"=354]
 "msnh2012/CasiaLabeler" ["l"="37.037,0.643"]
-"zchrissirhcz/awesome-ncnn" ["l"="49.574,30.912"]
-"zerollzeng/tiny-tensorrt" ["l"="53.231,32.666"]
-"tanluren/yolov3-channel-and-layer-pruning" ["l"="52.798,33.345"]
+"zerollzeng/tiny-tensorrt" ["l"="53.231,32.666", "c"=251]
+"tanluren/yolov3-channel-and-layer-pruning" ["l"="52.798,33.345", "c"=271]
 "NVIDIA/nsight-training" ["l"="36.638,1.173"]
 "cwpearson/nvidia-performance-tools" ["l"="36.663,1.134"]
+"Maratyszcza/PeachPy" ["l"="45.375,20.845", "c"=20]
 "wjc404/GEMM_AVX512F" ["l"="36.974,0.83"]
+"sh1r0/caffe-android-lib" ["l"="32.897,29.038", "c"=57]
 "dmlc/HalideIR" ["l"="37.05,1.071"]
-"inducer/pymbolic" ["l"="-35.978,22.904"]
+"inducer/pymbolic" ["l"="-35.978,22.904", "c"=630]
 "MethodJiao/VulkanDemo" ["l"="36.703,0.656"]
 "MethodJiao/GoSample" ["l"="36.71,0.669"]
 "MethodJiao/OCCGraphicDemo" ["l"="36.687,0.659"]
 "akingse/learn_python" ["l"="36.696,0.672"]
+"plctlab/PLCT-Open-Reports" ["l"="-22.322,-18.439", "c"=763]
 "mmperf/mmperf" ["l"="37.298,0.965"]
 "deepspeedai/DeepSpeed-Kernels" ["l"="37.32,0.886"]
-"huawei-noah/vega" ["l"="52.84,34.038"]
+"oneapi-src/oneAPI-samples" ["l"="64.161,-1.972", "c"=477]
+"huawei-noah/vega" ["l"="52.84,34.038", "c"=708]
+"NervanaSystems/nervana-lib-gpu-performance-preview" ["l"="36.796,0.833"]
 "nox-410/tvm.tl" ["l"="36.989,1.105"]
 "tvmai/tvmai.github.io" ["l"="37.025,1.152"]
 "gussmith23/glenside" ["l"="37.028,1.222"]
-"uwplse/ruler" ["l"="-0.634,15.379"]
+"uwplse/ruler" ["l"="-0.634,15.379", "c"=729]
+"grimoire/mmdetection-to-tensorrt" ["l"="53.194,32.721", "c"=251]
+"hughperkins/DeepCL" ["l"="64.334,-2.04", "c"=477]
 "snuspl/dolphin" ["l"="36.976,0.563"]
+"shinpei0208/gdev" ["l"="7.417,-11.263", "c"=515]
+"laanwj/decuda" ["l"="36.967,0.947"]
 "dividiti/gemmbench-adapt16" ["l"="37.678,0.852"]
 "ctuning/ck-guide-images" ["l"="37.682,0.884"]
 "ctuning/ctuning-programs" ["l"="37.672,0.874"]
@@ -4469,16 +5315,17 @@ digraph G {
 "superlich7/Paddle-Lite" ["l"="37.464,1.07"]
 "CambriconKnight/mlu220-cross-compile-docker-image" ["l"="37.48,1.067"]
 "Cambricon/mlu-exporter" ["l"="37.546,1.105"]
+"buaa-hipo/dlcompiler-comparison" ["l"="-18.621,-43.224", "c"=55]
+"uwsampl/sparsetir-artifact" ["l"="36.959,1.094"]
 "xingdi-eric-yuan/single-layer-convnet" ["l"="36.758,0.521"]
 "xingdi-eric-yuan/multi-layer-convnet" ["l"="36.775,0.512"]
 "NVIDIA/Fuser" ["l"="36.753,1.036"]
-"microsoft/NPKit" ["l"="1.996,14.528"]
+"microsoft/NPKit" ["l"="1.996,14.528", "c"=572]
 "bryancatanzaro/trove" ["l"="36.696,1.06"]
-"openucx/ucc" ["l"="1.979,14.514"]
-"NVIDIA/cudnn-frontend" ["l"="36.877,0.989"]
-"Xilinx/mlir-air" ["l"="31.704,-2.507"]
+"openucx/ucc" ["l"="1.979,14.514", "c"=572]
+"Xilinx/mlir-air" ["l"="31.704,-2.507", "c"=212]
 "jmgorius/mlir-standalone-template" ["l"="37.219,1.093"]
-"tancheng/mlir-cgra" ["l"="32.733,-3.375"]
+"tancheng/mlir-cgra" ["l"="32.733,-3.375", "c"=180]
 "Archermmt/tvm_walk_through" ["l"="37.035,1.084"]
 "apache/tvm-rfcs" ["l"="37.005,1.095"]
 "awslabs/raf" ["l"="36.981,1.09"]
@@ -4486,32 +5333,32 @@ digraph G {
 "anirudhsundar/tvm-gdb-commands" ["l"="37.006,1.117"]
 "wzh99/relay-mlir" ["l"="37.01,1.159"]
 "octoml/octoml-profile" ["l"="36.998,1.128"]
+"oneapi-src/level-zero" ["l"="64.182,-1.977", "c"=477]
 "pigirons/sgemm_hsw" ["l"="37.008,0.9"]
 "BBuf/how-to-optimize-gemm" ["l"="37.036,0.887"]
 "pigirons/conv3x3_m1" ["l"="37.001,0.828"]
+"UCLA-VAST/AutoSA" ["l"="31.686,-2.589", "c"=212]
 "nosferalatu/SimpleGPUHashTable" ["l"="36.599,0.984"]
-"NVlabs/fermat" ["l"="-24.515,-27.944"]
+"NVlabs/fermat" ["l"="-24.515,-27.944", "c"=145]
+"mgaudet/CompilerJobs" ["l"="-22.171,-18.601", "c"=763]
 "LLNL/merlin" ["l"="37.671,1.23"]
 "LLNL/maestrowf" ["l"="37.677,1.253"]
 "makslevental/nelli" ["l"="37.229,1.107"]
 "numba/numba-mlir" ["l"="37.213,1.117"]
 "makslevental/mlir-python-extras" ["l"="37.25,1.11"]
 "google/mlir-npcomp" ["l"="37.26,1.071"]
-"intel/mlir-extensions" ["l"="37.188,1.113"]
-"mlir-rs/melior" ["l"="37.236,1.081"]
 "iree-org/iree-turbine" ["l"="37.227,1.161"]
 "FluidNumerics/gpu-programming" ["l"="36.519,1.21"]
-"pprp/landmark_annotation" ["l"="50.322,29.289"]
-"FeiGeChuanShu/ncnn_nanodet_hand" ["l"="49.635,30.895"]
-"ROCm/AMDMIGraphX" ["l"="64.213,-1.761"]
-"ROCm/Tensile" ["l"="64.201,-1.765"]
+"uxlfoundation/oneCCL" ["l"="64.165,-1.916", "c"=477]
+"pprp/landmark_annotation" ["l"="50.322,29.289", "c"=83]
+"FeiGeChuanShu/ncnn_nanodet_hand" ["l"="49.635,30.895", "c"=1055]
+"ROCm/Tensile" ["l"="64.201,-1.765", "c"=477]
 "iree-org/iree-llvm-sandbox" ["l"="37.26,1.027"]
-"nod-ai/iree-amd-aie" ["l"="31.716,-2.493"]
-"ROCm/rocSOLVER" ["l"="64.236,-1.749"]
+"nod-ai/iree-amd-aie" ["l"="31.716,-2.493", "c"=212]
+"ROCm/rocSOLVER" ["l"="64.236,-1.749", "c"=477]
 "pika-org/pika" ["l"="37.507,0.999"]
 "Meinersbur/isl" ["l"="37.107,1.125"]
-"andersbll/deeppy" ["l"="48.009,28.516"]
-"circt-hls/circt-hls" ["l"="31.626,-2.497"]
+"circt-hls/circt-hls" ["l"="31.626,-2.497", "c"=212]
 "kumasento/polsca" ["l"="37.188,1.131"]
 "polymage-labs/mlirx" ["l"="37.185,1.148"]
 "SeventhBlue/cudaLearningMaterials" ["l"="36.731,0.737"]
@@ -4521,173 +5368,208 @@ digraph G {
 "YashasSamaga/ConvolutionBuildingBlocks" ["l"="37.006,0.699"]
 "jaywonchung/dotfiles" ["l"="36.978,0.683"]
 "friendliai/periflow-cli" ["l"="36.981,0.672"]
+"ShiqiYu/CPP" ["l"="-5.578,20.111", "c"=564]
+"l0ngc/hpc-learning" ["l"="36.866,0.856"]
 "harrism/hemi" ["l"="36.624,0.927"]
-"baidu-research/persistent-rnn" ["l"="46.007,27.733"]
-"spcl/ncc" ["l"="35.927,-0.392"]
+"baidu-research/persistent-rnn" ["l"="46.007,27.733", "c"=277]
+"antonmks/Alenka" ["l"="-15.808,-8.27", "c"=1915]
+"rose-compiler/rose" ["l"="-22.073,-18.657", "c"=763]
+"spcl/ncc" ["l"="35.927,-0.392", "c"=315]
 "facebookresearch/loop_tool" ["l"="37.093,1.166"]
-"soumith/convnet-benchmarks" ["l"="47.812,29.023"]
-"MatthieuCourbariaux/BinaryNet" ["l"="52.596,33.617"]
-"tile-ai/tilelang" ["l"="39.012,-0.362"]
-"ai-dynamo/dynamo" ["l"="39.067,-0.549"]
-"NVIDIA/warp" ["l"="61.236,16.348"]
-"arrayfire/arrayfire" ["l"="64.369,-1.965"]
-"uxlfoundation/oneTBB" ["l"="-19.813,-25.686"]
-"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088"]
-"ericniebler/range-v3" ["l"="-19.86,-26.027"]
-"xtensor-stack/xtensor" ["l"="-19.991,-25.883"]
+"MatthieuCourbariaux/BinaryNet" ["l"="52.596,33.617", "c"=271]
+"tile-ai/tilelang" ["l"="39.012,-0.362", "c"=39]
+"ai-dynamo/dynamo" ["l"="39.067,-0.549", "c"=39]
+"NVIDIA/warp" ["l"="61.236,16.348", "c"=184]
+"uxlfoundation/oneTBB" ["l"="-19.813,-25.686", "c"=10]
+"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088", "c"=10]
+"ericniebler/range-v3" ["l"="-19.86,-26.027", "c"=10]
+"xtensor-stack/xtensor" ["l"="-19.991,-25.883", "c"=10]
+"tzutalin/ImageNet_Utils" ["l"="50.47,33.025", "c"=314]
+"dividiti/ck-caffe" ["l"="37.687,0.869"]
 "roastduck/FreeTensor" ["l"="36.972,1.07"]
 "thu-pacman/HyQuas" ["l"="36.937,1.127"]
+"NVIDIA/caffe" ["l"="51.536,33.367", "c"=354]
 "eedalong/ECE408" ["l"="36.56,0.856"]
 "aschuh703/ECE408" ["l"="36.512,0.85"]
-"open-mmlab/mmdeploy" ["l"="50.347,29.856"]
+"Atcold/NYU-DLSP21" ["l"="47.9,26.467", "c"=323]
+"minitorch/minitorch" ["l"="36.908,0.724"]
+"intel/idlf" ["l"="57.709,23.492", "c"=161]
+"open-mmlab/mmdeploy" ["l"="50.347,29.856", "c"=83]
 "OpenPPL/ppl.llm.kernel.cuda" ["l"="37.002,0.778"]
 "openppl-public/ppl.nn.llm" ["l"="37.009,0.761"]
-"bytedance/lightseq" ["l"="53.268,27.061"]
+"dmlc/dmlc-core" ["l"="57.828,23.524", "c"=161]
 "ifromeast/cuda_learning" ["l"="36.839,0.915"]
-"NervanaSystems/nervana-lib-gpu-performance-preview" ["l"="36.796,0.833"]
-"DeepMark/deepmark" ["l"="45.942,27.676"]
-"bshillingford/autobw.torch" ["l"="45.948,27.696"]
-"joschu/cgt" ["l"="44.924,27.689"]
-"canonizer/halloc" ["l"="-15.838,-8.306"]
-"NVIDIA/caffe" ["l"="51.536,33.367"]
-"uoguelph-mlrg/theano_alexnet" ["l"="44.883,27.597"]
-"gcr/torch-residual-networks" ["l"="45.946,27.638"]
-"NervanaSystems/neon" ["l"="47.851,29.03"]
-"dmlc/cxxnet" ["l"="57.767,23.488"]
-"dmlc/mshadow" ["l"="57.832,23.546"]
-"jratcliff63367/sse2neon" ["l"="37.122,0.665"]
-"DLTcollab/sse2neon" ["l"="-22.342,-23.364"]
-"RomaTeng/EKF-SLAM-on-Manifold" ["l"="59.629,10.926"]
+"kjw0612/awesome-random-forest" ["l"="47.841,28.88", "c"=89]
+"DeepMark/deepmark" ["l"="45.942,27.676", "c"=277]
+"bshillingford/autobw.torch" ["l"="45.948,27.696", "c"=277]
+"joschu/cgt" ["l"="44.924,27.689", "c"=789]
+"Tencent/PatrickStar" ["l"="58.103,23.704", "c"=161]
+"canonizer/halloc" ["l"="-15.838,-8.306", "c"=1915]
+"uoguelph-mlrg/theano_alexnet" ["l"="44.883,27.597", "c"=789]
+"gcr/torch-residual-networks" ["l"="45.946,27.638", "c"=277]
+"dmlc/cxxnet" ["l"="57.767,23.488", "c"=161]
+"dmlc/mshadow" ["l"="57.832,23.546", "c"=161]
+"RRZE-HPC/likwid" ["l"="6.737,-6.263", "c"=335]
+"trailofbits/vast" ["l"="-21.996,-18.568", "c"=763]
+"datastaxdevs/workshop-graphql-netflix" ["l"="-1.327,18.969", "c"=1217]
+"RomaTeng/EKF-SLAM-on-Manifold" ["l"="59.629,10.926", "c"=87]
+"csmith-project/creduce" ["l"="-22.084,-18.599", "c"=763]
 "snuspl/fluffy" ["l"="36.996,0.676"]
 "xboxfanj/math-neon" ["l"="37.152,0.597"]
 "tlc-pack/tenset" ["l"="36.972,1.083"]
 "zhaiyi000/tlm" ["l"="36.972,1.111"]
 "awslabs/slapo" ["l"="36.954,1.077"]
+"PKUFlyingPig/CS149-parallel-computing" ["l"="-7.005,19.484", "c"=637]
 "Jack47/hack-SysML" ["l"="36.967,0.924"]
 "mlc-ai/mlc-zh" ["l"="37.001,0.967"]
-"sgl-project/sgl-learning-materials" ["l"="39.042,-0.418"]
-"sail-sg/zero-bubble-pipeline-parallelism" ["l"="38.894,-0.45"]
-"petuum/adaptdl" ["l"="7.35,-11.154"]
+"sgl-project/sgl-learning-materials" ["l"="39.042,-0.418", "c"=39]
+"sail-sg/zero-bubble-pipeline-parallelism" ["l"="38.894,-0.45", "c"=39]
+"petuum/adaptdl" ["l"="7.35,-11.154", "c"=515]
 "mlc-ai/relax" ["l"="36.978,1.128"]
+"P2Tree/LLVM_for_cpu0" ["l"="-22.301,-18.529", "c"=763]
+"Lewuathe/mlir-hello" ["l"="37.166,1.037"]
+"pytorch/data" ["l"="21.583,14.144", "c"=267]
 "buddy-compiler/buddy-benchmark" ["l"="37.084,1.044"]
+"xiaoweiChen/Learn-LLVM-12" ["l"="-22.271,-18.495", "c"=763]
+"ChunelFeng/CGraph" ["l"="-18.429,-28.228", "c"=62]
 "nv-legate/legate" ["l"="36.587,1.084"]
 "nv-legate/legate.pandas" ["l"="36.568,1.076"]
-"StanfordLegion/legion" ["l"="63.262,-1.411"]
-"rapidsai/cucim" ["l"="41.798,27.336"]
-"LLNL/RAJA" ["l"="63.182,-1.42"]
-"hypre-space/hypre" ["l"="63.12,-1.518"]
-"PyFR/PyFR" ["l"="63.226,-1.553"]
+"StanfordLegion/legion" ["l"="63.262,-1.411", "c"=175]
+"rapidsai/cucim" ["l"="41.798,27.336", "c"=369]
+"LLNL/RAJA" ["l"="63.182,-1.42", "c"=175]
+"hypre-space/hypre" ["l"="63.12,-1.518", "c"=175]
+"PyFR/PyFR" ["l"="63.226,-1.553", "c"=175]
+"BaguaSys/bagua" ["l"="58.072,23.632", "c"=161]
+"BaguaSys/bagua-core" ["l"="37.77,1.257"]
 "intel/graph-compiler" ["l"="37.208,1.138"]
 "NodLabs/mlir-examples" ["l"="37.209,1.158"]
-"intel/xetla" ["l"="37.191,1.166"]
-"intel/intel-xpu-backend-for-triton" ["l"="37.166,1.139"]
 "llvm/mlir-www" ["l"="37.216,1.179"]
+"hughperkins/cltorch" ["l"="64.385,-2.014", "c"=477]
 "Eddie-Wang1120/Professional-CUDA-C-Programming-Code-and-Notes" ["l"="36.819,0.877"]
 "ArchaeaSoftware/cudahandbook" ["l"="36.707,0.88"]
+"Tencent/Forward" ["l"="53.248,32.753", "c"=251]
+"xboot/libonnx" ["l"="-16.13,-42.602", "c"=387]
 "YuanhaoGong/Naturalization" ["l"="37.205,0.366"]
-"timothybrooks/hdr-plus" ["l"="-34.635,22.379"]
+"timothybrooks/hdr-plus" ["l"="-34.635,22.379", "c"=429]
 "OpenPPL/ppl.common" ["l"="37.016,0.781"]
-"nndeploy/nndeploy" ["l"="53.413,32.627"]
-"Tencent/TPAT" ["l"="53.265,32.712"]
-"NVIDIA-AI-IOT/tensorrt_plugin_generator" ["l"="53.339,32.618"]
+"nndeploy/nndeploy" ["l"="53.413,32.627", "c"=251]
+"Tencent/TPAT" ["l"="53.265,32.712", "c"=251]
+"NVIDIA-AI-IOT/tensorrt_plugin_generator" ["l"="53.339,32.618", "c"=251]
+"ROCm/composable_kernel" ["l"="64.195,-1.714", "c"=477]
 "nv-legate/legate-sparse" ["l"="36.555,1.114"]
 "nv-legate/legate.hello" ["l"="36.56,1.097"]
 "tbennun/cudnn-training" ["l"="36.847,1.125"]
 "pwlnk/cuda-neural-network" ["l"="36.823,1.207"]
 "Hardware-Alchemy/cuDNN-sample" ["l"="36.821,1.172"]
 "haanjack/mnist-cudnn" ["l"="36.838,1.181"]
+"JuliaHubOSS/llvm-cbe" ["l"="-22.045,-18.662", "c"=763]
+"NVlabs/SASSI" ["l"="30.934,-3.006", "c"=1037]
 "cmu-catalyst/collage" ["l"="36.964,1.056"]
-"ROCm/composable_kernel" ["l"="64.195,-1.714"]
 "fanshiqing/grouped_gemm" ["l"="36.845,1.061"]
 "tspeterkim/flash-attention-minimal" ["l"="36.84,0.934"]
-"FlagOpen/FlagGems" ["l"="39.023,-0.372"]
-"Lewuathe/mlir-hello" ["l"="37.166,1.037"]
+"FlagOpen/FlagGems" ["l"="39.023,-0.372", "c"=39]
 "Lunderberg/tvm-gdb-extension" ["l"="37.001,1.148"]
-"laanwj/decuda" ["l"="36.967,0.947"]
+"jaywonchung/reason" ["l"="7.426,-11.022", "c"=515]
 "MegEngine/mperf" ["l"="37.08,0.859"]
-"MegEngine/MegPeak" ["l"="37.08,0.84"]
 "MegEngine/cutlass" ["l"="36.918,1.023"]
+"google/nccl-fastsocket" ["l"="1.993,14.511", "c"=572]
 "BaguaSys/operator" ["l"="37.799,1.247"]
 "BaguaSys/tutorials" ["l"="37.776,1.243"]
 "Pylir/Pylir" ["l"="37.369,1.173"]
 "beaver-lodge/beaver" ["l"="37.42,1.199"]
 "Checkmate50/pylambda" ["l"="37.424,1.223"]
-"BaguaSys/bagua-core" ["l"="37.77,1.257"]
 "OpenPPL/hpcc" ["l"="37.005,0.795"]
 "fergaletto/SSIF" ["l"="37.26,0.263"]
 "hkust-adsl/gass" ["l"="36.968,0.758"]
 "swsnu/aisys2021" ["l"="36.965,0.653"]
-"minitorch/minitorch" ["l"="36.908,0.724"]
-"srush/Tensor-Puzzles" ["l"="39.063,-0.265"]
-"srush/GPU-Puzzles" ["l"="40.187,0.851"]
-"srush/LLM-Training-Puzzles" ["l"="39.012,-0.261"]
-"pytorch/torchtitan" ["l"="38.89,-0.387"]
+"srush/Tensor-Puzzles" ["l"="39.063,-0.265", "c"=39]
+"TingsongYu/PyTorch-Tutorial-2nd" ["l"="38.602,-1.993", "c"=202]
+"elemental/Elemental" ["l"="21.988,17.613", "c"=863]
+"parallel101/course" ["l"="-18.547,-28.095", "c"=62]
+"google/inception" ["l"="50.686,33.174", "c"=314]
+"srush/GPU-Puzzles" ["l"="40.187,0.851", "c"=7]
+"srush/LLM-Training-Puzzles" ["l"="39.012,-0.261", "c"=39]
+"pytorch/torchtitan" ["l"="38.89,-0.387", "c"=39]
 "zchee/cuda-sample" ["l"="36.887,0.862"]
 "lzhengchun/matrix-cuda" ["l"="36.945,0.784"]
+"andersbll/neural_artistic_style" ["l"="45.619,29.444", "c"=170]
+"shibatch/sleef" ["l"="-19.583,-26.167", "c"=10]
+"amd/OpenCL-caffe" ["l"="64.359,-2.01", "c"=477]
 "MAhaitao999/CUDA_Programming" ["l"="36.767,0.74"]
 "QINZHAOYU/CudaSteps" ["l"="36.774,0.774"]
-"pytorch/PiPPy" ["l"="38.928,-0.444"]
-"ELS-RD/kernl" ["l"="38.86,-0.528"]
+"pytorch/PiPPy" ["l"="38.928,-0.444", "c"=39]
+"ELS-RD/kernl" ["l"="38.86,-0.528", "c"=39]
 "hidet-org/hidet" ["l"="37.029,1.013"]
-"pytorch/benchmark" ["l"="39.161,-0.455"]
+"pytorch/benchmark" ["l"="39.161,-0.455", "c"=39]
 "DD-DuDa/Cute-Learning" ["l"="36.826,0.978"]
+"ZhangGe6/onnx-modifier" ["l"="-44.202,6.021", "c"=1131]
+"facebookarchive/fb-caffe-exts" ["l"="45.897,27.647", "c"=277]
 "nod-ai/SHARK-Studio" ["l"="37.203,1.236"]
 "Amblyopius/Stable-Diffusion-ONNX-FP16" ["l"="37.257,1.344"]
 "azuritecoin/OnnxDiffusersUI" ["l"="37.261,1.322"]
 "YellowRoseCx/koboldcpp-rocm" ["l"="37.217,1.4"]
 "ssube/onnx-web" ["l"="37.298,1.345"]
 "nod-ai/SHARK-ModelDev" ["l"="37.233,1.206"]
-"HeKun-NVIDIA/TensorRT-Developer_Guide_in_Chinese" ["l"="53.345,32.676"]
+"HeKun-NVIDIA/TensorRT-Developer_Guide_in_Chinese" ["l"="53.345,32.676", "c"=251]
 "PaddleJitLab/CUDATutorial" ["l"="36.846,0.856"]
 "Maratyszcza/pthreadpool" ["l"="37.196,0.629"]
 "Maratyszcza/FP16" ["l"="37.234,0.561"]
 "Maratyszcza/FXdiv" ["l"="37.215,0.584"]
-"pytorch/cpuinfo" ["l"="37.128,0.775"]
 "coderonion/cuda-beginner-course-cpp-version" ["l"="36.747,0.726"]
 "HuangCongQing/cuda-learning" ["l"="36.731,0.721"]
 "Tongkaio/CUDA_Kernel_Samples" ["l"="36.838,0.894"]
-"shibatch/sleef" ["l"="-19.583,-26.167"]
-"ARM-software/abi-aa" ["l"="-17.793,-43.177"]
+"pytorch/executorch" ["l"="39.047,-0.352", "c"=39]
 "ARM-software/acle" ["l"="37.185,0.589"]
-"JuliaMath/openlibm" ["l"="-19.441,-26.254"]
-"libhugetlbfs/libhugetlbfs" ["l"="6.625,-6.182"]
-"kdrag0n/adevtool" ["l"="-55.495,11.937"]
+"JuliaMath/openlibm" ["l"="-19.441,-26.254", "c"=10]
+"libhugetlbfs/libhugetlbfs" ["l"="6.625,-6.182", "c"=335]
+"kdrag0n/adevtool" ["l"="-55.495,11.937", "c"=427]
 "ARM-software/synchronization-benchmarks" ["l"="37.174,0.612"]
-"RRZE-HPC/OSACA" ["l"="6.665,-6.247"]
-"sophgo/sophon-demo" ["l"="53.527,32.6"]
-"sophgo/LLM-TPU" ["l"="53.562,32.57"]
+"RRZE-HPC/OSACA" ["l"="6.665,-6.247", "c"=335]
+"sophgo/sophon-demo" ["l"="53.527,32.6", "c"=251]
+"sophgo/LLM-TPU" ["l"="53.562,32.57", "c"=251]
 "Cambricon/triton-linalg" ["l"="37.151,1.054"]
-"DeepRec-AI/DeepRec" ["l"="58.15,23.519"]
-"autodiff/autodiff" ["l"="-19.556,-25.891"]
-"NVIDIA/AMGX" ["l"="63.137,-1.54"]
+"Jonathan2251/lbd" ["l"="-22.291,-18.564", "c"=763]
+"inikep/lzbench" ["l"="-39.198,21.101", "c"=563]
+"DeepRec-AI/DeepRec" ["l"="58.15,23.519", "c"=161]
+"autodiff/autodiff" ["l"="-19.556,-25.891", "c"=10]
+"NVIDIA/AMGX" ["l"="63.137,-1.54", "c"=175]
 "Ascend/pytorch" ["l"="37.091,1.138"]
-"vllm-project/vllm-ascend" ["l"="39.065,-0.502"]
-"pcg-mlp/KsanaLLM" ["l"="39.07,-0.357"]
+"vllm-project/vllm-ascend" ["l"="39.065,-0.502", "c"=39]
+"pcg-mlp/KsanaLLM" ["l"="39.07,-0.357", "c"=39]
 "microsoft/triton-shared" ["l"="37.113,1.064"]
 "Cambricon/torch_mlu" ["l"="37.086,1.19"]
 "bdhirsh/pytorch_open_registration_example" ["l"="37.104,1.19"]
 "Ascend/AscendSpeed" ["l"="37.094,1.213"]
+"joyycom/VNN" ["l"="61.974,-14.238", "c"=165]
 "Bruce-Lee-LY/flash_attention_inference" ["l"="36.812,1.016"]
 "Erkaman/Awesome-CUDA" ["l"="36.656,0.933"]
 "eegkno/CUDA_by_practice" ["l"="36.707,1.025"]
+"ducha-aiki/caffenet-benchmark" ["l"="50.619,33.182", "c"=314]
+"ROCm/rocBLAS" ["l"="64.222,-1.797", "c"=477]
 "Cambricon/catch" ["l"="37.358,1.066"]
+"Artelnics/opennn" ["l"="47.692,29.201", "c"=89]
+"hpcaitech/EnergonAI" ["l"="38.988,-0.837", "c"=39]
 "opencompl/paper-template" ["l"="37.229,1.128"]
 "opencompl/lean-mlir" ["l"="37.259,1.138"]
+"alibaba/EasyParallelLibrary" ["l"="58.143,23.672", "c"=161]
+"egraphs-good/egglog" ["l"="-0.635,15.286", "c"=729]
 "mlc-ai/mlc-en" ["l"="36.971,1.029"]
+"intel/xpumanager" ["l"="63.973,-2.549", "c"=1153]
 "mlir-rs/mlir-sys" ["l"="37.293,1.113"]
 "vaivaswatha/pliron" ["l"="37.277,1.095"]
-"cdisselkoen/llvm-ir" ["l"="-9.442,-6.402"]
-"egraphs-good/egglog" ["l"="-0.635,15.286"]
-"TheDan64/inkwell" ["l"="-9.62,-6.368"]
-"siboehm/ShallowSpeed" ["l"="57.711,23.683"]
+"TheDan64/inkwell" ["l"="-9.62,-6.368", "c"=5]
+"siboehm/ShallowSpeed" ["l"="57.711,23.683", "c"=161]
+"oneapi-src/SYCLomatic" ["l"="64.135,-1.986", "c"=477]
+"stressapptest/stressapptest" ["l"="6.811,-6.347", "c"=335]
 "Cpp-Project-Manager/Cpp-Project-Manager" ["l"="37.512,1.29"]
 "Maou-Shimazu/Projects-Answers" ["l"="37.49,1.274"]
 "shen203/GPU_Microbenchmark" ["l"="36.9,1.016"]
-"hyperai/tvm-cn" ["l"="51.15,2.773"]
+"hyperai/tvm-cn" ["l"="51.15,2.773", "c"=85]
+"hunterzju/llvm-tutorial" ["l"="-22.294,-18.505", "c"=763]
 "nullishamy/kate" ["l"="37.47,1.257"]
 "lixiuhong/implicit_gemm_convolution" ["l"="36.928,0.975"]
-"uwsampl/sparsetir-artifact" ["l"="36.959,1.094"]
-"microsoft/SparTA" ["l"="63.148,-2.039"]
+"microsoft/SparTA" ["l"="63.148,-2.039", "c"=175]
+"ARM-software/CMSIS-NN" ["l"="-16.1,-42.535", "c"=387]
 "XiaoSong9905/HPC-Notes" ["l"="36.873,0.906"]
 "XiaoSong9905/dgemm-knl" ["l"="36.859,0.924"]
 "awslabs/ratex" ["l"="36.951,1.137"]
@@ -4696,64 +5578,75 @@ digraph G {
 "tud-zih-energy/x86_adapt" ["l"="37.003,0.441"]
 "tud-zih-energy/x86_energy" ["l"="36.989,0.446"]
 "chenzomi12/AIInfra" ["l"="36.843,0.717"]
-"liguodongiot/llm-action" ["l"="38.757,-2.008"]
-"mli/paper-reading" ["l"="50.604,29.465"]
-"sgl-project/sglang" ["l"="38.933,-0.652"]
-"NVIDIA/Megatron-LM" ["l"="38.862,-0.695"]
-"Dao-AILab/flash-attention" ["l"="38.876,-0.736"]
-"vllm-project/vllm" ["l"="40.265,0.397"]
-"herumi/xbyak" ["l"="-42.604,-35.222"]
-"intel/caffe" ["l"="51.559,33.341"]
-"intel/intel-extension-for-pytorch" ["l"="64.147,-2.455"]
-"uxlfoundation/oneDAL" ["l"="64.15,-1.932"]
-"openvinotoolkit/openvino" ["l"="64.163,-2.572"]
+"liguodongiot/llm-action" ["l"="38.757,-2.008", "c"=202]
+"mli/paper-reading" ["l"="50.604,29.465", "c"=83]
+"sgl-project/sglang" ["l"="38.933,-0.652", "c"=39]
+"NVIDIA/Megatron-LM" ["l"="38.862,-0.695", "c"=39]
+"Dao-AILab/flash-attention" ["l"="38.876,-0.736", "c"=39]
+"vllm-project/vllm" ["l"="40.265,0.397", "c"=7]
+"herumi/xbyak" ["l"="-42.604,-35.222", "c"=40]
+"intel/caffe" ["l"="51.559,33.341", "c"=354]
+"uxlfoundation/oneDAL" ["l"="64.15,-1.932", "c"=477]
 "openxla/community" ["l"="37.208,1.046"]
 "openxla/shardy" ["l"="37.237,1.147"]
-"trailofbits/vast" ["l"="-21.996,-18.568"]
-"facebookarchive/clangir" ["l"="-21.928,-18.557"]
+"Visualize-ML/Book4_Power-of-Matrix" ["l"="51.281,28.209", "c"=104]
+"facebookarchive/clangir" ["l"="-21.928,-18.557", "c"=763]
 "chhzh123/ptc-tutorial" ["l"="36.933,1.108"]
 "patientx/ComfyUI-Zluda" ["l"="37.247,1.437"]
-"microsoft/DirectML" ["l"="-23.409,-27.774"]
 "lshqqytiger/stable-diffusion-webui-amdgpu-forge" ["l"="37.232,1.437"]
-"Coyote-A/ultimate-upscale-for-automatic1111" ["l"="32.026,31.699"]
-"pkuliyi2015/multidiffusion-upscaler-for-automatic1111" ["l"="32.128,31.704"]
-"Bing-su/adetailer" ["l"="32.113,31.688"]
-"Gourieff/sd-webui-reactor" ["l"="32.151,31.625"]
-"lllyasviel/stable-diffusion-webui-forge" ["l"="32.266,31.684"]
+"Coyote-A/ultimate-upscale-for-automatic1111" ["l"="32.026,31.699", "c"=88]
+"pkuliyi2015/multidiffusion-upscaler-for-automatic1111" ["l"="32.128,31.704", "c"=88]
+"Bing-su/adetailer" ["l"="32.113,31.688", "c"=88]
+"Gourieff/sd-webui-reactor" ["l"="32.151,31.625", "c"=88]
+"lllyasviel/stable-diffusion-webui-forge" ["l"="32.266,31.684", "c"=88]
+"coreylowman/cudarc" ["l"="-8.349,-4.431", "c"=407]
+"n00mkrad/text2image-gui" ["l"="-36.21,21.058", "c"=597]
 "zjhellofss/KuiperLLama" ["l"="36.838,0.872"]
-"galeselee/Awesome_LLM_System-PaperList" ["l"="39.07,-0.403"]
+"galeselee/Awesome_LLM_System-PaperList" ["l"="39.07,-0.403", "c"=39]
 "harleyszhang/llm_note" ["l"="36.815,0.85"]
+"romeric/Fastor" ["l"="-19.645,-26.018", "c"=10]
+"VoltaML/voltaML" ["l"="31.804,31.935", "c"=88]
+"fengbintu/Neural-Networks-on-Silicon" ["l"="31.792,-2.807", "c"=212]
+"EdVince/Stable-Diffusion-NCNN" ["l"="49.567,30.83", "c"=1055]
+"wangzhaode/mnn-stable-diffusion" ["l"="37.093,0.412"]
+"facebookincubator/AITemplate" ["l"="38.855,-0.59", "c"=39]
 "zjhellofss/kuiperdatawhale" ["l"="36.796,0.856"]
-"ChunelFeng/CGraph" ["l"="-18.429,-28.228"]
-"parallel101/course" ["l"="-18.547,-28.095"]
-"yuesong-feng/30dayMakeCppServer" ["l"="-18.203,-28.038"]
+"yuesong-feng/30dayMakeCppServer" ["l"="-18.203,-28.038", "c"=62]
 "reed-lau/cute-gemm" ["l"="36.828,0.998"]
-"deepseek-ai/DeepGEMM" ["l"="39.065,-0.638"]
-"facebookarchive/fb-caffe-exts" ["l"="45.897,27.647"]
-"ENCP/CNNdroid" ["l"="32.906,29.07"]
-"othmanus/algeria-cities" ["l"="-10.734,-29.149"]
-"alger-ia/dziribert" ["l"="-10.728,-29.096"]
+"deepseek-ai/DeepGEMM" ["l"="39.065,-0.638", "c"=39]
+"samjabrahams/tensorflow-on-raspberry-pi" ["l"="50.292,32.99", "c"=314]
+"ENCP/CNNdroid" ["l"="32.906,29.07", "c"=57]
+"alger-ia/dziribert" ["l"="-10.728,-29.096", "c"=1173]
 "JbPasquier/stable-diffusion-onnx-ui" ["l"="37.283,1.331"]
-"ZTMIDGO/Android-Stable-diffusion-ONNX" ["l"="49.498,30.812"]
+"nviennot/core-to-core-latency" ["l"="6.693,-6.227", "c"=335]
+"ZTMIDGO/Android-Stable-diffusion-ONNX" ["l"="49.498,30.812", "c"=1055]
 "ForserX/StableDiffusionUI" ["l"="37.318,1.365"]
 "NeusZimmer/ONNX-Stable-Diffusion-ModularUI" ["l"="37.271,1.362"]
 "NeusZimmer/ONNX-ModularUI-StableDiffusion" ["l"="37.285,1.358"]
 "uchuusen/onnx_stable_diffusion_controlnet" ["l"="37.285,1.372"]
+"sherlockchou86/VideoPipe" ["l"="53.366,32.624", "c"=251]
+"mit-han-lab/tinyengine" ["l"="-16.12,-42.541", "c"=387]
+"jacobhilton/deep_learning_curriculum" ["l"="37.859,-6.851", "c"=766]
 "harleyszhang/dl_note" ["l"="36.801,0.896"]
 "harleyszhang/lite_llama" ["l"="36.77,0.855"]
-"datawhalechina/awesome-compression" ["l"="51.036,27.763"]
+"datawhalechina/awesome-compression" ["l"="51.036,27.763", "c"=104]
 "harleyszhang/llm_counts" ["l"="36.745,0.859"]
-"harleyszhang/cv_note" ["l"="50.517,28.214"]
+"harleyszhang/cv_note" ["l"="50.517,28.214", "c"=104]
+"microsoft/mscclpp" ["l"="2.009,14.543", "c"=572]
 "Eddie-Wang1120/HPC-Learning-Notes" ["l"="36.856,0.879"]
-"l0ngc/hpc-learning" ["l"="36.866,0.856"]
-"volcengine/veScale" ["l"="38.975,-0.445"]
+"JalaliLabUCLA/Image-feature-detection-using-Phase-Stretch-Transform" ["l"="32.995,29.018", "c"=57]
+"intel/intel-extension-for-tensorflow" ["l"="64.209,-2.436", "c"=1153]
+"codeplaysoftware/cutlass-sycl" ["l"="37.179,1.181"]
+"volcengine/veScale" ["l"="38.975,-0.445", "c"=39]
+"NVIDIA/NeMo-Framework-Launcher" ["l"="38.638,-0.423", "c"=39]
+"ThanatosShinji/onnx-tool" ["l"="-44.224,6.015", "c"=1131]
 "CoffeeBeforeArch/cpp_sw_dev" ["l"="36.656,0.731"]
-"LBANN/lbann" ["l"="37.64,1.216"]
-"Sunt-ing/stick" ["l"="-7.056,19.55"]
+"corsix/amx" ["l"="41.141,-22.949", "c"=419]
+"PKUFlyingPig/CMU10-714" ["l"="-7.012,19.537", "c"=637]
+"zhangyachen/ComputerArchitectureAndCppBooks" ["l"="-22.544,-23.689", "c"=496]
+"Sunt-ing/stick" ["l"="-7.056,19.55", "c"=637]
 "ForserX/Asura2D" ["l"="37.342,1.379"]
-"bytedance/matxscript" ["l"="37.032,1.037"]
-"bytedance/effective_transformer" ["l"="53.242,27.037"]
-"alibaba/EasyParallelLibrary" ["l"="58.143,23.672"]
+"yechengxi/LightNet" ["l"="51.233,38.207", "c"=545]
 "CoffeeBeforeArch/cache_simulator" ["l"="36.645,0.711"]
 "FlagOpen/FlagPerf" ["l"="36.813,1.137"]
 "FlagOpen/FlagAttention" ["l"="36.821,1.069"]
@@ -4765,6 +5658,8 @@ digraph G {
 "TaKeTube/ECE-408" ["l"="36.478,0.846"]
 "OpenPPL/ppl.kernel.cpu" ["l"="36.974,0.709"]
 "OpenPPL/ppl.kernel.cuda" ["l"="36.982,0.734"]
+"KernelTuner/kernel_tuner" ["l"="64.184,-2.164", "c"=477]
+"SJTU-ACA-Lab/blue-porcelain" ["l"="31.961,-3.948", "c"=188]
 "openmlsys/openmlsys-cuda" ["l"="36.93,0.999"]
 "OpenPPL/ppl.llm.serving" ["l"="36.989,0.757"]
 "InfiniTensor/InfiniTensor" ["l"="36.906,1.128"]
@@ -4776,88 +5671,99 @@ digraph G {
 "InfiniTensor/ninetoothed" ["l"="36.894,1.179"]
 "LearningInfiniTensor/learning-lm-rs" ["l"="36.862,1.166"]
 "LearningInfiniTensor/learning-cxx" ["l"="36.847,1.148"]
-"wangzhaode/mnn-stable-diffusion" ["l"="37.093,0.412"]
 "wangzhaode/mnn-yolo" ["l"="37.107,0.377"]
 "wangzhaode/mnn-mobilenet" ["l"="37.11,0.394"]
 "wangzhaode/mnn-segment-anything" ["l"="37.088,0.375"]
-"microsoft/BitBLAS" ["l"="38.934,-0.302"]
+"microsoft/BitBLAS" ["l"="38.934,-0.302", "c"=39]
 "ZhouJiaHuan/yolo_deploy" ["l"="37.111,0.353"]
 "wangzhaode/llm-export" ["l"="37.047,0.52"]
 "luchangli03/export_llama_to_onnx" ["l"="37.039,0.594"]
-"wangzhaode/mnn-llm" ["l"="-52.926,-11.895"]
-"tsingmicro-toolchain/OnnxSlim" ["l"="37.049,0.456"]
+"wangzhaode/mnn-llm" ["l"="-52.926,-11.895", "c"=400]
 "tpoisonooo/llama.onnx" ["l"="37.029,0.682"]
 "wangzhaode/onnx-llm" ["l"="37.059,0.489"]
-"inisis/OnnxSlim" ["l"="37.04,0.428"]
-"AXERA-TECH/ax-llm" ["l"="-18.538,-42.691"]
-"kwea123/pytorch-cppcuda-tutorial" ["l"="63.756,1.729"]
-"CNugteren/CLTune" ["l"="64.247,-2.099"]
+"AXERA-TECH/ax-llm" ["l"="-18.538,-42.691", "c"=55]
+"intel/ipex-llm" ["l"="-2.505,17.132", "c"=455]
+"mlc-ai/web-stable-diffusion" ["l"="40.221,0.663", "c"=7]
+"LostRuins/koboldcpp" ["l"="42.745,-2", "c"=1097]
+"axodox/axodox-machinelearning" ["l"="40.196,0.988", "c"=7]
+"bbycroft/llm-viz" ["l"="40.553,0.364", "c"=7]
+"kwea123/pytorch-cppcuda-tutorial" ["l"="63.756,1.729", "c"=134]
+"CNugteren/CLTune" ["l"="64.247,-2.099", "c"=477]
 "lift-project/lift" ["l"="37.134,1.219"]
-"pmgysel/caffe" ["l"="52.666,33.591"]
-"shinezyy/micro-arch-training" ["l"="31.865,-4.01"]
-"microsoft/ELL" ["l"="37.251,0.836"]
-"microsoft/EdgeML" ["l"="-16.151,-42.555"]
-"uTensor/uTensor" ["l"="-16.161,-42.533"]
-"samjabrahams/tensorflow-on-raspberry-pi" ["l"="50.292,32.99"]
-"DT42/BerryNet" ["l"="50.269,33.037"]
-"majianjia/nnom" ["l"="-16.12,-42.574"]
-"tiny-dnn/tiny-dnn" ["l"="47.785,29.128"]
-"fengbintu/Neural-Networks-on-Silicon" ["l"="31.792,-2.807"]
+"mpitutorial/mpitutorial" ["l"="2.032,14.371", "c"=572]
+"pmgysel/caffe" ["l"="52.666,33.591", "c"=271]
+"shinezyy/micro-arch-training" ["l"="31.865,-4.01", "c"=188]
+"kebijuelun/Awesome-LLM-Learning" ["l"="38.681,-2.11", "c"=202]
+"microsoft/EdgeML" ["l"="-16.151,-42.555", "c"=387]
+"DT42/BerryNet" ["l"="50.269,33.037", "c"=314]
+"majianjia/nnom" ["l"="-16.12,-42.574", "c"=387]
+"tiny-dnn/tiny-dnn" ["l"="47.785,29.128", "c"=89]
 "tlc-pack/libflash_attn" ["l"="36.855,1.032"]
-"alibaba/rtp-llm" ["l"="39.011,-0.464"]
-"mit-han-lab/omniserve" ["l"="38.923,-0.332"]
+"alibaba/rtp-llm" ["l"="39.011,-0.464", "c"=39]
+"mit-han-lab/omniserve" ["l"="38.923,-0.332", "c"=39]
+"MegEngine/InferLLM" ["l"="39.237,-1.998", "c"=202]
 "cassiebreviu/StableDiffusion" ["l"="37.457,1.508"]
 "TensorStack-AI/OnnxStack" ["l"="37.422,1.464"]
 "DarthAffe/StableDiffusion.NET" ["l"="37.447,1.487"]
 "andreae293/Stable-Diffusion.NET-NCNN" ["l"="37.48,1.523"]
 "dranger003/llama.cpp-dotnet" ["l"="37.488,1.549"]
-"google/heir" ["l"="51.329,1.46"]
+"harvard-edge/cs249r_book" ["l"="39.094,-0.499", "c"=39]
+"vitoplantamura/OnnxStream" ["l"="40.271,0.947", "c"=7]
+"google/heir" ["l"="51.329,1.46", "c"=378]
+"Umio-Yasuno/amdgpu_top" ["l"="-14.575,-0.834", "c"=152]
+"lamikr/rocm_sdk_builder" ["l"="37.205,1.497"]
 "He-Ze/HPC-Lab-SYSU" ["l"="36.906,0.852"]
 "zjhellofss/KuiperCourse" ["l"="36.726,0.795"]
 "HuPengsheet/EasyNN" ["l"="36.721,0.765"]
 "xgqdut2016/cuda_code" ["l"="36.801,1.043"]
+"apple/axlearn" ["l"="21.797,13.92", "c"=267]
+"jcjohnson/cnn-benchmarks" ["l"="50.591,33.163", "c"=314]
+"albanie/convnet-burden" ["l"="37.29,0.808"]
 "microsoft/Llama-2-Onnx" ["l"="37.057,0.687"]
-"microsoft/onnxruntime-genai" ["l"="-44.231,6.165"]
-"ThanatosShinji/onnx-tool" ["l"="-44.224,6.015"]
-"S-LoRA/S-LoRA" ["l"="38.842,-0.458"]
-"cyclops-community/ctf" ["l"="21.924,17.673"]
-"ValeevGroup/tiledarray" ["l"="21.975,17.646"]
+"microsoft/onnxruntime-genai" ["l"="-44.231,6.165", "c"=1131]
+"S-LoRA/S-LoRA" ["l"="38.842,-0.458", "c"=39]
+"cli99/llm-analysis" ["l"="39.06,-0.448", "c"=39]
+"src-d/kmcuda" ["l"="65.823,11.739", "c"=203]
+"cyclops-community/ctf" ["l"="21.924,17.673", "c"=863]
+"kennethleungty/Llama-2-Open-Source-LLM-CPU-Inference" ["l"="41.089,-3.631", "c"=146]
 "mlc-ai/tokenizers-cpp" ["l"="36.937,1.26"]
 "wangkuiyi/huggingface-tokenizer-in-cxx" ["l"="36.921,1.307"]
 "brknsoul/ROCmLibs" ["l"="37.219,1.427"]
 "likelovewant/ROCmLibs-for-gfx1103-AMD780M-APU" ["l"="37.215,1.454"]
-"LostRuins/koboldcpp" ["l"="42.745,-2"]
-"lamikr/rocm_sdk_builder" ["l"="37.205,1.497"]
 "likelovewant/ollama-for-amd" ["l"="37.191,1.436"]
-"nktice/AMD-AI" ["l"="64.158,-1.581"]
+"nktice/AMD-AI" ["l"="64.158,-1.581", "c"=477]
 "likelovewant/stable-diffusion-webui-forge-on-amd" ["l"="37.236,1.453"]
-"cierru/st-stepped-thinking" ["l"="43.001,-1.871"]
-"ROCm/flash-attention" ["l"="64.181,-1.637"]
-"Jokeren/Awesome-GPU" ["l"="36.866,0.965"]
+"cierru/st-stepped-thinking" ["l"="43.001,-1.871", "c"=1097]
+"ROCm/flash-attention" ["l"="64.181,-1.637", "c"=477]
 "jslee02/awesome-gpgpu" ["l"="36.572,0.942"]
-"coderonion/awesome-cuda-and-hpc" ["l"="25.664,-26.644"]
-"facebookarchive/fbcuda" ["l"="46.107,27.655"]
-"Apress/ray-tracing-gems" ["l"="-23.168,-27.643"]
+"coderonion/awesome-cuda-and-hpc" ["l"="25.664,-26.644", "c"=32]
+"facebookarchive/fbcuda" ["l"="46.107,27.655", "c"=277]
+"Apress/ray-tracing-gems" ["l"="-23.168,-27.643", "c"=26]
 "romain-jacotin/cuda" ["l"="36.531,0.93"]
-"SiriusNEO/Triton-Puzzles-Lite" ["l"="39.043,-0.332"]
-"Xilinx/aie-rt" ["l"="31.758,-2.475"]
+"SiriusNEO/Triton-Puzzles-Lite" ["l"="39.043,-0.332", "c"=39]
+"simit-lang/simit" ["l"="62.843,1.138", "c"=371]
+"thuml/depyf" ["l"="39.077,-0.392", "c"=39]
+"Xilinx/aie-rt" ["l"="31.758,-2.475", "c"=212]
 "makslevental/mlir-wheels" ["l"="37.284,1.134"]
 "triton-lang/triton-cpu" ["l"="37.156,1.121"]
-"Deep-Learning-Profiling-Tools/triton-viz" ["l"="39.056,-0.223"]
-"mobiusml/gemlite" ["l"="38.957,-0.27"]
-"triton-lang/kernels" ["l"="39.016,-0.197"]
+"Deep-Learning-Profiling-Tools/triton-viz" ["l"="39.056,-0.223", "c"=39]
+"mobiusml/gemlite" ["l"="38.957,-0.27", "c"=39]
+"triton-lang/kernels" ["l"="39.016,-0.197", "c"=39]
 "ColfaxResearch/cfx-article-src" ["l"="36.843,1.003"]
-"dividiti/ck-caffe" ["l"="37.687,0.869"]
+"FlagAI-Open/Aquila2" ["l"="39.234,-2.107", "c"=202]
 "saddam213/LLamaStack" ["l"="37.464,1.465"]
 "Stackyard-AI/Amuse" ["l"="37.422,1.499"]
 "OpenPPL/ppl.pmx" ["l"="37.001,0.744"]
-"daquexian/faster-rwkv" ["l"="49.642,30.752"]
+"daquexian/faster-rwkv" ["l"="49.642,30.752", "c"=1055]
 "HuPengsheet/use-ncnn" ["l"="36.679,0.694"]
 "shreyansh26/FlashAttention-PyTorch" ["l"="36.761,1.084"]
 "kyegomez/FlashAttention20" ["l"="36.72,1.144"]
 "zjhellofss/triton_course" ["l"="36.745,0.845"]
 "RussWong/LLM-engineering" ["l"="36.808,0.917"]
 "tgale96/grouped_gemm" ["l"="36.828,1.047"]
+"BobMcDear/attorch" ["l"="38.995,-0.216", "c"=39]
+"crabml/crabml" ["l"="-8.876,-4.449", "c"=407]
+"PacktPublishing/Learn-LLVM-17" ["l"="-22.237,-18.522", "c"=763]
 "tenstorrent/tt-metal" ["l"="37.303,1.189"]
 "tenstorrent/tt-buda" ["l"="37.335,1.232"]
 "tenstorrent/tt-mlir" ["l"="37.314,1.244"]
@@ -4871,21 +5777,17 @@ digraph G {
 "tenstorrent/tt-firmware" ["l"="37.346,1.22"]
 "tenstorrent/tt-tvm" ["l"="37.345,1.241"]
 "tenstorrent/tt-forge" ["l"="37.298,1.232"]
-"mesozoic-egg/tinygrad-notes" ["l"="-14.328,-23.234"]
+"mesozoic-egg/tinygrad-notes" ["l"="-14.328,-23.234", "c"=1101]
 "wangsiping97/FastGEMV" ["l"="36.791,1.067"]
 "Bruce-Lee-LY/cuda_hgemv" ["l"="36.765,1.117"]
 "luchangli03/onnxsim_large_model" ["l"="37.036,0.561"]
-"codeplaysoftware/cutlass-sycl" ["l"="37.179,1.181"]
 "intel/torch-xpu-ops" ["l"="37.175,1.196"]
-"intel/pti-gpu" ["l"="64.172,-1.99"]
 "pytorch-labs/triton-cpu" ["l"="37.165,1.166"]
-"oneapi-src/SYCLomatic" ["l"="64.135,-1.986"]
 "hpretila/llama.net" ["l"="37.508,1.573"]
 "FlagOpen/FlagCX" ["l"="36.738,1.196"]
 "FlagAI-Open/OpenSeek" ["l"="36.76,1.205"]
-"feifeibear/long-context-attention" ["l"="38.982,-0.409"]
-"FlagAI-Open/Aquila2" ["l"="39.234,-2.107"]
-"alibaba/ChatLearn" ["l"="37.3,-0.348"]
+"feifeibear/long-context-attention" ["l"="38.982,-0.409", "c"=39]
+"alibaba/ChatLearn" ["l"="37.3,-0.348", "c"=126]
 "weishengying/cutlass_flash_atten_fp8" ["l"="36.792,0.95"]
 "xlite-dev/HGEMM" ["l"="36.855,0.988"]
 "luliyucoordinate/cute-flash-attention" ["l"="36.813,0.972"]
@@ -4896,42 +5798,58 @@ digraph G {
 "gsuuon/ad-llama" ["l"="36.989,1.166"]
 "nod-ai/shark-ai" ["l"="37.25,1.193"]
 "csarofeen/pytorch" ["l"="36.728,1.081"]
-"NVIDIA/nvidia-resiliency-ext" ["l"="38.5,-0.255"]
+"NVIDIA/nvidia-resiliency-ext" ["l"="38.5,-0.255", "c"=39]
+"philipturner/metal-flash-attention" ["l"="41.206,-22.978", "c"=419]
+"pytorch-labs/applied-ai" ["l"="39.009,-0.227", "c"=39]
 "pku-liang/MAGIS" ["l"="37.008,1.196"]
 "AsakusaRinne/semantic-kernel-LLamaSharp" ["l"="37.487,1.472"]
+"adam-maj/tiny-gpu" ["l"="31.984,-3.886", "c"=188]
 "CS1o/Stable-Diffusion-Info" ["l"="37.264,1.46"]
 "Beinsezii/comfyui-amd-go-fast" ["l"="37.277,1.438"]
+"tinygrad/open-gpu-kernel-modules" ["l"="39.042,-0.376", "c"=39]
+"zeux/calm" ["l"="39.087,-0.359", "c"=39]
 "CalebDu/Awesome-Cute" ["l"="36.792,0.984"]
-"gpu-mode/awesomeMLSys" ["l"="39.032,-0.309"]
-"linkedin/Liger-Kernel" ["l"="38.866,-0.383"]
+"Lightning-AI/lightning-thunder" ["l"="38.865,-0.336", "c"=39]
+"gpu-mode/awesomeMLSys" ["l"="39.032,-0.309", "c"=39]
+"linkedin/Liger-Kernel" ["l"="38.866,-0.383", "c"=39]
 "naibaf7/libdnn" ["l"="37.045,0.747"]
 "elevate-lang/elevate" ["l"="37.139,1.257"]
 "tenstorrent/tt-budabackend" ["l"="37.356,1.26"]
 "tenstorrent/tt-flash" ["l"="37.365,1.22"]
 "tenstorrent/luwen" ["l"="37.366,1.24"]
 "ByronLeeeee/Ollama-For-AMD-Installer" ["l"="37.182,1.468"]
-"MLSys-Learner-Resources/Awesome-MLSys-Blogger" ["l"="39.147,-0.346"]
+"HazyResearch/aisys-building-blocks" ["l"="38.989,-0.267", "c"=39]
+"MLSys-Learner-Resources/Awesome-MLSys-Blogger" ["l"="39.147,-0.346", "c"=39]
 "Said-Akbar/vllm-rocm" ["l"="37.192,1.532"]
 "Said-Akbar/triton-gcn5" ["l"="37.203,1.543"]
-"ROCm/aiter" ["l"="64.179,-1.687"]
+"ROCm/aiter" ["l"="64.179,-1.687", "c"=477]
 "Repeerc/flash-attention-v2-RDNA3-minimal" ["l"="37.291,1.429"]
+"fla-org/flash-linear-attention" ["l"="38.943,-0.326", "c"=39]
+"hahnyuan/LLM-Viewer" ["l"="39.008,-0.345", "c"=39]
 "andersy005/tvm-in-action" ["l"="37.056,1.132"]
+"microsoft/vattention" ["l"="39.038,-0.4", "c"=39]
+"lucidrains/ring-attention-pytorch" ["l"="38.964,-0.403", "c"=39]
 "christophe-lyon/arm-neon-tests" ["l"="37.125,0.639"]
 "intel/Immintrin-debug" ["l"="37.137,0.624"]
-"simd-everywhere/simde" ["l"="-19.644,-26.163"]
+"simd-everywhere/simde" ["l"="-19.644,-26.163", "c"=10]
 "leimao/TensorRT-Custom-Plugin-Example" ["l"="36.699,1.192"]
-"zinccat/Awesome-Triton-Kernels" ["l"="39.066,-0.179"]
-"BobMcDear/attorch" ["l"="38.995,-0.216"]
-"amirzandieh/HyperAttention" ["l"="40.305,1.359"]
-"srush/triton-autodiff" ["l"="39.084,-0.135"]
-"UCLA-VAST/AutoSA" ["l"="31.686,-2.589"]
+"zinccat/Awesome-Triton-Kernels" ["l"="39.066,-0.179", "c"=39]
+"amirzandieh/HyperAttention" ["l"="40.305,1.359", "c"=7]
+"srush/triton-autodiff" ["l"="39.084,-0.135", "c"=39]
 "ftynse/clint" ["l"="37.137,1.117"]
 "quepas/Compiler-benchmark-suites" ["l"="37.137,1.159"]
 "davewathaverford/the-omega-project" ["l"="37.118,1.164"]
+"google-ai-edge/model-explorer" ["l"="39.148,-0.311", "c"=39]
+"ornladios/ADIOS2" ["l"="63.147,-1.417", "c"=175]
+"intel/intel-npu-acceleration-library" ["l"="64.076,-2.433", "c"=1153]
+"hahnyuan/nn_tools" ["l"="51.614,33.235", "c"=354]
+"digitalbrain79/darknet-nnpack" ["l"="51.657,33.164", "c"=354]
 "caiwanxianhust/FasterLLaMA" ["l"="36.778,0.842"]
 "916241958/yolov8-Onnxruntime" ["l"="36.788,0.91"]
-"ppl-ai/pplx-kernels" ["l"="39.032,-0.326"]
-"microsoft/mscclpp" ["l"="2.009,14.543"]
+"intel/neural-speed" ["l"="64.119,-2.404", "c"=1153]
+"usyd-fsalab/fp6_llm" ["l"="38.894,-0.226", "c"=39]
+"ppl-ai/pplx-kernels" ["l"="39.032,-0.326", "c"=39]
+"intel/auto-round" ["l"="38.638,-0.202", "c"=39]
 "mit-han-lab/patch_conv" ["l"="36.536,0.889"]
 "xdit-project/DistVAE" ["l"="36.577,0.896"]
 "codyjrivera/tsm2x-imp" ["l"="36.985,0.928"]
@@ -4940,8 +5858,10 @@ digraph G {
 "TiledTensor/TiledLower" ["l"="36.842,1.101"]
 "TiledTensor/TiledKernel" ["l"="36.853,1.077"]
 "LeiWang1999/tvm_gpu_gemm" ["l"="36.867,1.09"]
+"HazyResearch/flash-fft-conv" ["l"="49.049,33.962", "c"=556]
 "YdrMaster/operators-rs" ["l"="36.862,1.216"]
 "YdrMaster/llama2.rs" ["l"="36.874,1.219"]
+"gpu-mode/triton-index" ["l"="39.028,-0.224", "c"=39]
 "NVIDIA/nvmath-python" ["l"="36.56,0.999"]
 "NVIDIA/numbast" ["l"="36.575,1.01"]
 "NVIDIA/numba-cuda" ["l"="36.537,0.992"]
@@ -4950,82 +5870,104 @@ digraph G {
 "lshqqytiger/OneTrainer" ["l"="37.236,1.474"]
 "InternLM/turbomind" ["l"="36.782,1.042"]
 "zeroine/cutlass-cute-sample" ["l"="36.794,1.022"]
+"shawntan/scattermoe" ["l"="39.074,-0.219", "c"=39]
 "tenstorrent/tt-studio" ["l"="37.339,1.281"]
 "tenstorrent/tt-inference-server" ["l"="37.355,1.297"]
 "SohamGovande/ThunderKittens-FA3CustomMasks" ["l"="36.808,1.188"]
 "Yongqi-Zhuo/triton-tvm" ["l"="36.923,1.086"]
 "nox-410/Welder" ["l"="36.985,1.151"]
 "uiuc-arc/felix" ["l"="36.957,1.172"]
-"volcengine/verl" ["l"="37.143,-0.472"]
-"OpenRLHF/OpenRLHF" ["l"="37.161,-0.425"]
-"inclusionAI/AReaL" ["l"="37.191,-0.484"]
-"Open-Reasoner-Zero/Open-Reasoner-Zero" ["l"="37.209,-0.473"]
-"google/cpu_features" ["l"="-19.655,-25.945"]
-"gulrak/filesystem" ["l"="-19.953,-26.129"]
+"ZJU-LLMs/Foundations-of-LLMs" ["l"="38.628,-1.942", "c"=202]
+"volcengine/verl" ["l"="37.143,-0.472", "c"=126]
+"OpenRLHF/OpenRLHF" ["l"="37.161,-0.425", "c"=126]
+"inclusionAI/AReaL" ["l"="37.191,-0.484", "c"=126]
+"Open-Reasoner-Zero/Open-Reasoner-Zero" ["l"="37.209,-0.473", "c"=126]
+"gulrak/filesystem" ["l"="-19.953,-26.129", "c"=10]
+"FFTW/fftw3" ["l"="38.24,5.574", "c"=65]
+"Steven-Luo/MasteringRAG" ["l"="38.692,-1.723", "c"=202]
+"andrewkchan/yalm" ["l"="39.24,-0.339", "c"=39]
+"AIGeniusInstitute/AI-Agent-In-Action" ["l"="38.587,-1.806", "c"=202]
 "numba/numba-examples" ["l"="36.331,0.887"]
 "numba/nvidia-cuda-tutorial" ["l"="36.314,0.849"]
-"wdndev/llm_interview_note" ["l"="38.723,-2.075"]
-"deepseek-ai/DeepEP" ["l"="39.104,-0.649"]
-"Steven-Luo/MasteringRAG" ["l"="38.692,-1.723"]
-"AIGeniusInstitute/AI-Agent-In-Action" ["l"="38.587,-1.806"]
-"wdndev/tiny-llm-zh" ["l"="38.765,-2.151"]
-"dmlc/dmlc-core" ["l"="57.828,23.524"]
+"wdndev/llm_interview_note" ["l"="38.723,-2.075", "c"=202]
+"deepseek-ai/DeepEP" ["l"="39.104,-0.649", "c"=39]
+"wdndev/llama3-from-scratch-zh" ["l"="38.729,-2.12", "c"=202]
+"wdndev/tiny-llm-zh" ["l"="38.765,-2.151", "c"=202]
+"AnswerDotAI/gpu.cpp" ["l"="39.049,-0.139", "c"=39]
+"mikex86/LibreCuda" ["l"="39.249,-0.299", "c"=39]
+"kuterd/nv_isa_solver" ["l"="36.906,1.047"]
+"Infatoshi/mnist-cuda" ["l"="-14.218,-23.138", "c"=1101]
+"bbruceyuan/Hands-On-Large-Language-Models-CN" ["l"="38.677,-2.089", "c"=202]
 "xgqdut2016/hpc2torch" ["l"="36.811,1.093"]
 "YdrMaster/notebook" ["l"="36.809,1.111"]
+"boostorg/compute" ["l"="64.303,-2.033", "c"=477]
+"clu0/unet.cu" ["l"="38.938,-0.16", "c"=39]
 "ibebrett/CUDA-CS344" ["l"="36.638,0.811"]
 "jaredhoberock/stanford-cs193g-sp2010" ["l"="36.632,0.772"]
-"Xtra-Computing/Medusa" ["l"="51.397,15.257"]
-"farkhor/CuSha" ["l"="51.425,15.261"]
+"baidu-research/baidu-allreduce" ["l"="57.879,23.522", "c"=161]
+"Xtra-Computing/Medusa" ["l"="51.397,15.257", "c"=1231]
+"farkhor/CuSha" ["l"="51.425,15.261", "c"=1231]
+"intel/clDNN" ["l"="64.228,-2.093", "c"=477]
+"vincentfpgarcia/kNN-CUDA" ["l"="65.722,11.728", "c"=203]
+"reframe-hpc/reframe" ["l"="7.162,-13.842", "c"=893]
 "amd/blis" ["l"="37.317,0.55"]
 "amd/aocl-libm-ose" ["l"="37.355,0.513"]
 "amd/scalapack" ["l"="37.335,0.531"]
 "LeiWang1999/Stream-k.tvm" ["l"="36.891,1.063"]
-"kuterd/nv_isa_solver" ["l"="36.906,1.047"]
 "drkennetz/cuda_examples" ["l"="36.56,1.029"]
 "jacobtomlinson/gpu-python-tutorial" ["l"="36.504,1.019"]
 "gevtushenko/llm.c" ["l"="36.538,1.016"]
 "artyom-beilis/float16" ["l"="37.257,0.524"]
+"dlsys-course/assignment1-2018" ["l"="57.862,23.632", "c"=161]
+"pytorch-labs/tritonbench" ["l"="39.049,-0.17", "c"=39]
 "feifeibear/ChituAttention" ["l"="36.67,0.923"]
 "chengzeyi/piflux" ["l"="36.615,0.907"]
+"viennacl/viennacl-dev" ["l"="64.357,-2.038", "c"=477]
 "bryancatanzaro/generics" ["l"="36.676,1.108"]
-"flashinfer-ai/cutlass-viz" ["l"="39.111,-0.292"]
-"infinigence/FlashOverlap" ["l"="39.103,-0.318"]
+"flashinfer-ai/cutlass-viz" ["l"="39.111,-0.292", "c"=39]
+"infinigence/FlashOverlap" ["l"="39.103,-0.318", "c"=39]
+"xlite-dev/ffpa-attn" ["l"="39.161,-0.275", "c"=39]
+"ScalingIntelligence/KernelBench" ["l"="39.039,-0.281", "c"=39]
 "tenstorrent/tt-xla" ["l"="37.283,1.215"]
 "tenstorrent/tt-torch" ["l"="37.291,1.247"]
 "sgl-project/DeepGEMM" ["l"="36.792,1.229"]
+"deepseek-ai/open-infra-index" ["l"="39.091,-0.615", "c"=39]
 "hannes-brt/cudnn-python-wrappers" ["l"="36.523,0.801"]
-"arrayfire/arrayfire-python" ["l"="-8.113,-4.585"]
+"arrayfire/arrayfire-python" ["l"="-8.113,-4.585", "c"=407]
 "numba/pyculib" ["l"="36.537,0.821"]
-"mila-iqia/platoon" ["l"="44.92,27.563"]
-"src-d/kmcuda" ["l"="65.823,11.739"]
-"dmlc/minpy" ["l"="47.77,29.028"]
-"albanie/convnet-burden" ["l"="37.29,0.808"]
-"jcjohnson/cnn-benchmarks" ["l"="50.591,33.163"]
-"sovrasov/flops-counter.pytorch" ["l"="50.866,29.917"]
-"soeaver/caffe-model" ["l"="51.656,33.388"]
-"Eric-mingjie/rethinking-network-pruning" ["l"="52.711,33.398"]
-"Lyken17/pytorch-OpCounter" ["l"="50.863,29.894"]
-"mit-han-lab/once-for-all" ["l"="52.809,34.01"]
-"marvis/pytorch-caffe-darknet-convert" ["l"="51.664,33.272"]
-"ducha-aiki/caffenet-benchmark" ["l"="50.619,33.182"]
-"ysh329/deep-learning-model-convertor" ["l"="50.344,33.145"]
-"zhijian-liu/torchprofile" ["l"="52.822,34.061"]
+"mila-iqia/platoon" ["l"="44.92,27.563", "c"=789]
+"dmlc/minpy" ["l"="47.77,29.028", "c"=89]
+"csarron/awesome-emdl" ["l"="52.67,33.513", "c"=271]
+"lhelontra/tensorflow-on-arm" ["l"="50.157,32.849", "c"=314]
+"MoonshotAI/MoBA" ["l"="39.065,-0.332", "c"=39]
+"sovrasov/flops-counter.pytorch" ["l"="50.866,29.917", "c"=83]
+"soeaver/caffe-model" ["l"="51.656,33.388", "c"=354]
+"Eric-mingjie/rethinking-network-pruning" ["l"="52.711,33.398", "c"=271]
+"Lyken17/pytorch-OpCounter" ["l"="50.863,29.894", "c"=83]
+"mit-han-lab/once-for-all" ["l"="52.809,34.01", "c"=708]
+"marvis/pytorch-caffe-darknet-convert" ["l"="51.664,33.272", "c"=354]
+"ysh329/deep-learning-model-convertor" ["l"="50.344,33.145", "c"=314]
+"zhijian-liu/torchprofile" ["l"="52.822,34.061", "c"=708]
 "ischintsan/cuda_by_example" ["l"="36.67,0.784"]
-"rkinas/triton-resources" ["l"="-14.287,-23.108"]
+"rkinas/triton-resources" ["l"="-14.287,-23.108", "c"=1101]
 "yanqswhu/cuda_by_example" ["l"="36.616,0.748"]
-"intel/nauta" ["l"="64.259,-2.508"]
-"NervanaSystems/he-transformer" ["l"="51.414,1.48"]
-"BRTResearch/AIChip_Paper_List" ["l"="31.013,-2.907"]
-"nvdla/hw" ["l"="31.917,-3.876"]
-"doonny/PipeCNN" ["l"="31.791,-2.745"]
-"ARM-software/SCALE-Sim" ["l"="31.037,-2.894"]
-"dgschwend/zynqnet" ["l"="31.768,-2.751"]
-"ucb-bar/gemmini" ["l"="31.825,-3.938"]
-"IBM/AccDNN" ["l"="31.804,-2.773"]
+"bbruceyuan/LLMs-Zero-to-Hero" ["l"="38.714,-2.1", "c"=202]
+"vllm-project/production-stack" ["l"="39.028,-0.513", "c"=39]
+"NervanaSystems/he-transformer" ["l"="51.414,1.48", "c"=378]
+"nvdla/hw" ["l"="31.917,-3.876", "c"=188]
+"doonny/PipeCNN" ["l"="31.791,-2.745", "c"=212]
+"ARM-software/SCALE-Sim" ["l"="31.037,-2.894", "c"=1037]
+"dgschwend/zynqnet" ["l"="31.768,-2.751", "c"=212]
+"ucb-bar/gemmini" ["l"="31.825,-3.938", "c"=188]
+"IBM/AccDNN" ["l"="31.804,-2.773", "c"=212]
 "basicmi/AI-Articles" ["l"="37.348,0.738"]
-"stanford-mast/nn_dataflow" ["l"="31.021,-2.853"]
-"antgroup/glake" ["l"="39.016,-0.444"]
-"ROCm/rocPRIM" ["l"="64.232,-1.786"]
+"stanford-mast/nn_dataflow" ["l"="31.021,-2.853", "c"=1037]
+"LeanModels/DFloat11" ["l"="37.146,-0.757", "c"=126]
+"ysh329/embedded-ai.bi-weekly" ["l"="52.666,33.565", "c"=271]
+"MLNLP-World/LLMs-from-scratch-CN" ["l"="38.61,-2.027", "c"=202]
+"antgroup/glake" ["l"="39.016,-0.444", "c"=39]
+"fla-org/native-sparse-attention" ["l"="39.019,-0.298", "c"=39]
+"ROCm/rocPRIM" ["l"="64.232,-1.786", "c"=477]
 "spack/spack-configs" ["l"="37.702,1.277"]
 "feifeibear/DPSKV3MFU" ["l"="36.784,1.267"]
 "nlzy/vllm-gfx906" ["l"="37.2,1.574"]

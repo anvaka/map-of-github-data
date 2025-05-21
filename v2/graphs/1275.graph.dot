@@ -2,6 +2,7 @@ digraph G {
 "equinor/neqsim" -> "equinor/neqsim-python"
 "equinor/neqsim-python" -> "equinor/neqsim"
 "equinor/neqsim-python" -> "fedebenelli/PyForFluids"
+"pycalphad/pycalphad" -> "CalebBell/thermo" ["e"=1]
 "CoolProp/CoolProp" -> "CalebBell/thermo"
 "CoolProp/CoolProp" -> "usnistgov/REFPROP-wrappers"
 "CoolProp/CoolProp" -> "CalebBell/fluids"
@@ -32,6 +33,10 @@ digraph G {
 "jckantor/CBE30338" -> "DanWBR/dwsim"
 "jckantor/CBE30338" -> "kevingreenman/awesome-chemical-engineering-education"
 "thermalogic/SEUIF97" -> "CoolProp/IF97"
+"BYU-PRISM/GEKKO" -> "IDAES/idaes-pse" ["e"=1]
+"BYU-PRISM/GEKKO" -> "CalebBell/thermo" ["e"=1]
+"BYU-PRISM/GEKKO" -> "BioSTEAMDevelopmentGroup/biosteam" ["e"=1]
+"BYU-PRISM/GEKKO" -> "jckantor/CBE30338" ["e"=1]
 "jjgomera/iapws" -> "drunsinn/pyXSteam"
 "jjgomera/iapws" -> "thermalogic/SEUIF97"
 "jjgomera/iapws" -> "iurisegtovich/AwesomeThermodynamics"
@@ -67,6 +72,11 @@ digraph G {
 "jckantor/CBE20255" -> "jjgomera/pychemqt"
 "jckantor/CBE20255" -> "vmm221313/ChemicalEngineering_IITKGP"
 "jckantor/CBE20255" -> "OpenChemE/CHBE356"
+"jckantor/ESTM60203" -> "jckantor/CBE40455" ["e"=1]
+"jckantor/ND-Pyomo-Cookbook" -> "jckantor/CBE30338" ["e"=1]
+"jckantor/ND-Pyomo-Cookbook" -> "IDAES/idaes-pse" ["e"=1]
+"jckantor/ND-Pyomo-Cookbook" -> "jckantor/CBE40455" ["e"=1]
+"LLNL/sundials" -> "Cantera/cantera" ["e"=1]
 "nbwilding/DFT" -> "droundy/deft"
 "oemof/tespy" -> "jfreissmann/heatpumps"
 "oemof/tespy" -> "CoolProp/CoolProp"
@@ -119,6 +129,7 @@ digraph G {
 "BioSTEAMDevelopmentGroup/biosteam" -> "CalebBell/thermo"
 "BioSTEAMDevelopmentGroup/biosteam" -> "watertap-org/watertap"
 "BioSTEAMDevelopmentGroup/biosteam" -> "QSD-Group/DMsan"
+"openmopac/mopac" -> "eljost/pysisyphus" ["e"=1]
 "OpenChemE/CHBE356" -> "OpenChemE/CHBE355"
 "OpenChemE/CHBE356" -> "asanet/chemeng-solved"
 "OpenChemE/CHBE356" -> "OpenChemE/Process-Dynamics-Engine"
@@ -167,6 +178,7 @@ digraph G {
 "opsim/opsim" -> "jonathanxavier/sim42"
 "SLACKHA/pyJac" -> "rmalpica/PyCSP"
 "SLACKHA/pyJac" -> "kahilah/ct2foam" ["e"=1]
+"markummitchell/engauge-digitizer" -> "CoolProp/CoolProp" ["e"=1]
 "acuoci/Matlab4CRE" -> "CAChemE/learn"
 "DanWBR/dwsim" -> "DanWBR/dwsim5"
 "DanWBR/dwsim" -> "CalebBell/thermo"
@@ -258,6 +270,10 @@ digraph G {
 "Cantera/cantera" -> "synthetik-technologies/blastfoam" ["e"=1]
 "Cantera/cantera" -> "iurisegtovich/AwesomeThermodynamics"
 "Cantera/cantera" -> "OpenFOAM/OpenFOAM-dev" ["e"=1]
+"firemodels/fds" -> "Cantera/cantera" ["e"=1]
+"bjodah/chempy" -> "CalebBell/thermo" ["e"=1]
+"bjodah/chempy" -> "ReactionMechanismGenerator/RMG-Py" ["e"=1]
+"bjodah/chempy" -> "CalebBell/chemicals" ["e"=1]
 "CAChemE/learn" -> "jckantor/CBE20255"
 "CAChemE/learn" -> "CAChemE/Python-Chemical-Engineers"
 "CAChemE/learn" -> "OpenChemE/CHBE356"
@@ -265,6 +281,7 @@ digraph G {
 "CAChemE/learn" -> "acuoci/Matlab4CRE"
 "CAChemE/learn" -> "dpploy/chen-3170"
 "CAChemE/learn" -> "wmfschneider/CBE60553"
+"cog-imperial/OMLT" -> "IDAES/idaes-pse" ["e"=1]
 "sandialabs/TChem" -> "LLNL/zero-rk"
 "sandialabs/TChem" -> "rmalpica/PyCSP"
 "ReactionMechanismGenerator/RMG-Py" -> "ReactionMechanismGenerator/RMG-database"
@@ -304,6 +321,7 @@ digraph G {
 "rmalpica/PyCSP" -> "SLACKHA/pyJac"
 "fedebenelli/PyForFluids" -> "ipqa-research/yaeos"
 "QSD-Group/DMsan" -> "QSD-Group/EXPOsan"
+"oemof/oemof-solph" -> "oemof/oemof-examples" ["e"=1]
 "CalebBell/fluids" -> "CalebBell/ht"
 "CalebBell/fluids" -> "CalebBell/thermo"
 "CalebBell/fluids" -> "CalebBell/chemicals"
@@ -319,6 +337,8 @@ digraph G {
 "CalebBell/fluids" -> "equinor/neqsim-python"
 "CalebBell/fluids" -> "CAChemE/learn"
 "CalebBell/fluids" -> "BioSTEAMDevelopmentGroup/thermosteam"
+"alchemyst/Dynamics-and-Control" -> "jckantor/CBE30338" ["e"=1]
+"alchemyst/Dynamics-and-Control" -> "jckantor/CBE20255" ["e"=1]
 "CalebBell/ht" -> "CalebBell/fluids"
 "CalebBell/ht" -> "CalebBell/thermo"
 "CalebBell/ht" -> "CalebBell/chedl"
@@ -346,9 +366,14 @@ digraph G {
 "TUHH-TVT/openCOSMO-RS_conformer_pipeline" -> "lvpp/pysac"
 "TUHH-TVT/openCOSMO-RS_conformer_pipeline" -> "TUHH-TVT/openCOSMO-RS_py"
 "pyequion/pyequion2" -> "caiofcm/pyequion"
+"masfaraud/BMSpy" -> "Nukleon84/pyflowsheet" ["e"=1]
 "emartineznunez/AutoMeKin" -> "ZimmermanGroup/ZStruct"
 "wmfschneider/CBE60553" -> "wmfschneider/CHE30324"
 "TUHH-TVT/openCOSMO-RS_cpp" -> "lvpp/pysac"
+"Pyomo/pyomo" -> "IDAES/idaes-pse" ["e"=1]
+"hgrecco/pint" -> "CalebBell/thermo" ["e"=1]
+"hgrecco/pint" -> "CalebBell/fluids" ["e"=1]
+"marcharper/python-ternary" -> "gustavochm/phasepy" ["e"=1]
 "CalebBell/chedl" -> "CalebBell/fpi"
 "CalebBell/chedl" -> "CalebBell/chemical-metadata"
 "CalebBell/chedl" -> "CalebBell/ht"
@@ -372,6 +397,7 @@ digraph G {
 "ClapeyronThermo/GCIdentifier.jl" -> "ipqa-research/ugropy"
 "edgarsmdn/MLCE_book" -> "kevingreenman/awesome-chemical-engineering-education"
 "edgarsmdn/MLCE_book" -> "jkitchin/s20-06681"
+"m2n037/awesome-mecheng" -> "CalebBell/thermo" ["e"=1]
 "droundy/deft" -> "nbwilding/DFT"
 "droundy/deft" -> "opencdft/cdftpy"
 "CalebBell/thermo" -> "CalebBell/fluids"
@@ -419,6 +445,8 @@ digraph G {
 "reaktoro/reaktoro" -> "gustavochm/phasepy"
 "reaktoro/reaktoro" -> "CalebBell/chemicals"
 "reaktoro/reaktoro" -> "Nukleon84/openikcape"
+"jkitchin/pycse" -> "jckantor/CBE30338" ["e"=1]
+"jkitchin/pycse" -> "dpploy/chen-3170" ["e"=1]
 "usnistgov/AGA8" -> "royvegard/aga8"
 "usnistgov/AGA8" -> "fedebenelli/PyForFluids"
 "CalebBell/chemical-metadata" -> "CalebBell/fpi"
@@ -443,8 +471,9 @@ digraph G {
 "equinor/neqsim" ["l"="51.192,25.711"]
 "equinor/neqsim-python" ["l"="51.216,25.7"]
 "fedebenelli/PyForFluids" ["l"="51.2,25.665"]
-"CoolProp/CoolProp" ["l"="51.343,25.627"]
+"pycalphad/pycalphad" ["l"="21.867,13.076", "c"=344]
 "CalebBell/thermo" ["l"="51.332,25.655"]
+"CoolProp/CoolProp" ["l"="51.343,25.627"]
 "usnistgov/REFPROP-wrappers" ["l"="51.368,25.551"]
 "CalebBell/fluids" ["l"="51.315,25.666"]
 "oemof/tespy" ["l"="51.258,25.631"]
@@ -457,30 +486,32 @@ digraph G {
 "iurisegtovich/AwesomeThermodynamics" ["l"="51.314,25.61"]
 "ReactionMechanismGenerator/RMG-Py" ["l"="51.437,25.648"]
 "DanWBR/dwsim5" ["l"="51.322,25.687"]
-"OpenModelica/OpenModelica" ["l"="-12.351,18.546"]
-"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" ["l"="63.479,-2.731"]
+"OpenModelica/OpenModelica" ["l"="-12.351,18.546", "c"=800]
+"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" ["l"="63.479,-2.731", "c"=1090]
 "zadorlab/sella" ["l"="51.723,25.663"]
 "ZimmermanGroup/pyGSM" ["l"="51.694,25.659"]
 "jckantor/CBE30338" ["l"="51.355,25.654"]
 "jckantor/CBE20255" ["l"="51.328,25.643"]
 "CAChemE/learn" ["l"="51.322,25.628"]
 "jckantor/CBE40455" ["l"="51.369,25.638"]
-"jckantor/ND-Pyomo-Cookbook" ["l"="50.873,25.948"]
+"jckantor/ND-Pyomo-Cookbook" ["l"="50.873,25.948", "c"=743]
 "jckantor/CBE32338" ["l"="51.38,25.678"]
-"jkitchin/pycse" ["l"="21.69,13.144"]
-"alchemyst/Dynamics-and-Control" ["l"="62.489,34.901"]
-"APMonitor/pdc" ["l"="61.271,15.21"]
+"jkitchin/pycse" ["l"="21.69,13.144", "c"=344]
+"alchemyst/Dynamics-and-Control" ["l"="62.489,34.901", "c"=405]
+"APMonitor/pdc" ["l"="61.271,15.21", "c"=480]
 "wmfschneider/CHE30324" ["l"="51.386,25.631"]
 "kevingreenman/awesome-chemical-engineering-education" ["l"="51.28,25.637"]
 "thermalogic/SEUIF97" ["l"="51.414,25.581"]
 "CoolProp/IF97" ["l"="51.428,25.57"]
+"BYU-PRISM/GEKKO" ["l"="61.353,15.032", "c"=480]
+"IDAES/idaes-pse" ["l"="51.294,25.688"]
+"BioSTEAMDevelopmentGroup/biosteam" ["l"="51.278,25.669"]
 "drunsinn/pyXSteam" ["l"="51.411,25.559"]
 "wigging/chemics" ["l"="51.305,25.656"]
 "CalebBell/chemicals" ["l"="51.294,25.647"]
 "CalebBell/chedl" ["l"="51.307,25.679"]
 "Nukleon84/pyflowsheet" ["l"="51.27,25.65"]
 "dpploy/chen-3170" ["l"="51.295,25.624"]
-"BioSTEAMDevelopmentGroup/biosteam" ["l"="51.278,25.669"]
 "stevecalderone/Chemical-Engineering-Thermodynamics" ["l"="51.311,25.705"]
 "OpenChemE/CHBE356" ["l"="51.352,25.674"]
 "asanet/chemeng-solved" ["l"="51.345,25.697"]
@@ -488,26 +519,27 @@ digraph G {
 "wmfschneider/CBE60553" ["l"="51.363,25.627"]
 "CAChemE/Python-Chemical-Engineers" ["l"="51.335,25.608"]
 "vmm221313/ChemicalEngineering_IITKGP" ["l"="51.376,25.615"]
+"jckantor/ESTM60203" ["l"="50.839,25.871", "c"=743]
+"LLNL/sundials" ["l"="63.101,-1.474", "c"=175]
 "nbwilding/DFT" ["l"="51.312,25.422"]
 "droundy/deft" ["l"="51.319,25.437"]
 "jfreissmann/heatpumps" ["l"="51.231,25.61"]
 "fwitte/fluprodia" ["l"="51.226,25.623"]
-"oemof/oemof-solph" ["l"="-11.217,17.643"]
-"FZJ-IEK3-VSA/hplib" ["l"="-11.085,17.659"]
+"oemof/oemof-solph" ["l"="-11.217,17.643", "c"=440]
+"FZJ-IEK3-VSA/hplib" ["l"="-11.085,17.659", "c"=440]
 "oemof/oemof-examples" ["l"="51.214,25.604"]
-"oemof/oemof" ["l"="-11.204,17.663"]
-"lbl-srg/modelica-buildings" ["l"="-12.255,18.548"]
-"oemof/demandlib" ["l"="-11.21,17.681"]
+"oemof/oemof" ["l"="-11.204,17.663", "c"=440]
+"lbl-srg/modelica-buildings" ["l"="-12.255,18.548", "c"=800]
+"oemof/demandlib" ["l"="-11.21,17.681", "c"=440]
 "oemof/oemof-thermal" ["l"="51.213,25.629"]
 "chmarti1/PYroMat" ["l"="51.196,25.613"]
-"IDAES/idaes-pse" ["l"="51.294,25.688"]
 "IDAES/examples-pse" ["l"="51.291,25.725"]
 "watertap-org/watertap" ["l"="51.257,25.709"]
-"cog-imperial/OMLT" ["l"="50.835,25.992"]
+"cog-imperial/OMLT" ["l"="50.835,25.992", "c"=743]
 "CCSI-Toolset/FOQUS" ["l"="51.263,25.73"]
 "IDAES/examples" ["l"="51.278,25.719"]
-"Coramin/Coramin" ["l"="50.849,26.029"]
-"Pyomo/pyomo" ["l"="50.941,25.899"]
+"Coramin/Coramin" ["l"="50.849,26.029", "c"=743]
+"Pyomo/pyomo" ["l"="50.941,25.899", "c"=743]
 "amvro23/essentials-ChEng" ["l"="51.28,25.747"]
 "LLNL/zero-rk" ["l"="51.514,25.665"]
 "rmalpica/PyCSP" ["l"="51.495,25.675"]
@@ -524,15 +556,17 @@ digraph G {
 "QSD-Group/QSDsan" ["l"="51.246,25.691"]
 "QSD-Group/EXPOsan" ["l"="51.24,25.679"]
 "QSD-Group/DMsan" ["l"="51.251,25.673"]
+"openmopac/mopac" ["l"="22.634,13.442", "c"=488]
+"eljost/pysisyphus" ["l"="51.64,25.651"]
 "OpenChemE/CHBE355" ["l"="51.375,25.692"]
 "OpenChemE/Process-Dynamics-Engine" ["l"="51.387,25.701"]
 "jiweiqi/CollectionOfMechanisms" ["l"="51.447,25.689"]
-"Aalto-CFD/CEMAFoam" ["l"="63.344,-2.717"]
+"Aalto-CFD/CEMAFoam" ["l"="63.344,-2.717", "c"=1090]
 "speth/ember" ["l"="51.475,25.688"]
 "DENG-MIT/reactorch" ["l"="51.488,25.719"]
 "ZhangYanTJU/chemicalMechanisms" ["l"="51.457,25.717"]
 "FOSSEE/OMChemSim" ["l"="51.342,25.71"]
-"jwindahlModelon/MultiPhaseMixtureMedia" ["l"="-12.44,18.643"]
+"jwindahlModelon/MultiPhaseMixtureMedia" ["l"="-12.44,18.643", "c"=800]
 "gustavochm/phasepy" ["l"="51.298,25.595"]
 "ipqa-research/ugropy" ["l"="51.281,25.56"]
 "thermotools/thermopack" ["l"="51.288,25.583"]
@@ -558,7 +592,8 @@ digraph G {
 "xiaoruiDong/RDMC" ["l"="51.498,25.594"]
 "srebughini/ASALI" ["l"="51.369,25.74"]
 "SLACKHA/pyJac" ["l"="51.474,25.669"]
-"kahilah/ct2foam" ["l"="63.347,-2.685"]
+"kahilah/ct2foam" ["l"="63.347,-2.685", "c"=1090]
+"markummitchell/engauge-digitizer" ["l"="-34.206,16.959", "c"=652]
 "acuoci/Matlab4CRE" ["l"="51.352,25.602"]
 "jiweiqi/IgnSens" ["l"="51.506,25.732"]
 "ClapeyronThermo/introduction-to-computational-thermodynamics" ["l"="51.312,25.55"]
@@ -566,7 +601,7 @@ digraph G {
 "CoolProp/CoolProp.jl" ["l"="51.326,25.541"]
 "longemen3000/ThermoState.jl" ["l"="51.342,25.562"]
 "ClapeyronThermo/GCIdentifier.jl" ["l"="51.297,25.553"]
-"mojaie/MolecularGraph.jl" ["l"="22.086,17.732"]
+"mojaie/MolecularGraph.jl" ["l"="22.086,17.732", "c"=863]
 "CalebBell/fpi" ["l"="51.284,25.682"]
 "reaktoro/reaktoro" ["l"="51.264,25.592"]
 "caiofcm/pyequion" ["l"="51.226,25.585"]
@@ -577,16 +612,16 @@ digraph G {
 "equinor/pysand" ["l"="51.165,25.747"]
 "tspecht93/HANNA" ["l"="51.274,25.545"]
 "Cantera/cantera-jupyter" ["l"="51.42,25.67"]
-"hystrath/hyStrath" ["l"="63.247,-1.628"]
-"AMReX-Combustion/PeleC" ["l"="63.223,-1.583"]
-"andrealani/COOLFluiD" ["l"="63.229,-1.57"]
-"AMReX-Combustion/PeleLM" ["l"="63.235,-1.647"]
-"LLNL/sundials" ["l"="63.101,-1.474"]
-"synthetik-technologies/blastfoam" ["l"="63.432,-2.738"]
-"OpenFOAM/OpenFOAM-dev" ["l"="63.497,-2.768"]
-"duartegroup/autodE" ["l"="22.646,13.34"]
-"cclib/cclib" ["l"="22.609,13.365"]
-"bjodah/chempy" ["l"="23.589,13.679"]
+"hystrath/hyStrath" ["l"="63.247,-1.628", "c"=175]
+"AMReX-Combustion/PeleC" ["l"="63.223,-1.583", "c"=175]
+"andrealani/COOLFluiD" ["l"="63.229,-1.57", "c"=175]
+"AMReX-Combustion/PeleLM" ["l"="63.235,-1.647", "c"=175]
+"synthetik-technologies/blastfoam" ["l"="63.432,-2.738", "c"=1090]
+"OpenFOAM/OpenFOAM-dev" ["l"="63.497,-2.768", "c"=1090]
+"firemodels/fds" ["l"="34.622,2.445", "c"=308]
+"bjodah/chempy" ["l"="23.589,13.679", "c"=209]
+"duartegroup/autodE" ["l"="22.646,13.34", "c"=488]
+"cclib/cclib" ["l"="22.609,13.365", "c"=488]
 "Argonne-National-Laboratory/Frhodo" ["l"="51.47,25.643"]
 "emartineznunez/AutoMeKin" ["l"="51.617,25.62"]
 "usnistgov/REFPROP-cmake" ["l"="51.392,25.523"]
@@ -595,7 +630,7 @@ digraph G {
 "usnistgov/REFPROP-issues" ["l"="51.394,25.539"]
 "ipqa-research/yaeos" ["l"="51.254,25.609"]
 "DENG-MIT/CRNN" ["l"="51.518,25.751"]
-"DENG-MIT/Arrhenius.jl" ["l"="-54.531,-13.637"]
+"DENG-MIT/Arrhenius.jl" ["l"="-54.531,-13.637", "c"=219]
 "DENG-MIT/Stiff-PINN" ["l"="51.538,25.771"]
 "JacksonBurns/fastprop" ["l"="51.523,25.577"]
 "djsilva99/heatrapy" ["l"="51.27,25.697"]
@@ -603,23 +638,26 @@ digraph G {
 "lvpp/pysac" ["l"="51.29,25.485"]
 "TUHH-TVT/openCOSMO-RS_cpp" ["l"="51.277,25.476"]
 "qcscine/chemoton" ["l"="51.641,25.61"]
+"masfaraud/BMSpy" ["l"="62.443,34.877", "c"=405]
 "ZimmermanGroup/ZStruct" ["l"="51.62,25.601"]
+"hgrecco/pint" ["l"="43.751,23.842", "c"=95]
+"marcharper/python-ternary" ["l"="22.042,14.541", "c"=267]
 "CalebBell/chemical-metadata" ["l"="51.287,25.705"]
 "DanWBR/dwsim4" ["l"="51.324,25.737"]
 "usnistgov/REFPROP-manager" ["l"="51.411,25.504"]
-"blttkgl/DLBFoam-1.0" ["l"="63.415,-2.67"]
+"blttkgl/DLBFoam-1.0" ["l"="63.415,-2.67", "c"=1090]
 "flameletFoam/Cantera-CounterflowFlame" ["l"="51.502,25.7"]
 "FiammettaC/Chemical-Reaction-Engineering-in-Python" ["l"="51.205,25.648"]
 "FiammettaC/AI-for-Chemical-Engineers" ["l"="51.176,25.65"]
 "amvro23/adsorption" ["l"="51.273,25.775"]
 "edgarsmdn/MLCE_book" ["l"="51.231,25.641"]
 "jkitchin/s20-06681" ["l"="51.19,25.636"]
+"m2n037/awesome-mecheng" ["l"="63.279,-1.171", "c"=175]
 "iurisegtovich/PyTherm-applied-thermodynamics" ["l"="51.291,25.609"]
 "Vitens/phreeqpython" ["l"="51.207,25.554"]
 "Vitens/VIPhreeqc" ["l"="51.18,25.547"]
 "paleolimbot/tidyphreeqc" ["l"="51.189,25.532"]
 "DanWBR/DTL" ["l"="51.311,25.724"]
-"eljost/pysisyphus" ["l"="51.64,25.651"]
 "MoleculeResolver/molecule-resolver" ["l"="51.542,25.565"]
 "usnistgov/AGA8" ["l"="51.156,25.673"]
 "royvegard/aga8" ["l"="51.132,25.678"]

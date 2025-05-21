@@ -1,4 +1,5 @@
 digraph G {
+"questdb/questdb" -> "airbytehq/airbyte" ["e"=1]
 "great-expectations/great_expectations" -> "dbt-labs/dbt-core"
 "great-expectations/great_expectations" -> "dagster-io/dagster"
 "great-expectations/great_expectations" -> "awslabs/deequ" ["e"=1]
@@ -14,6 +15,20 @@ digraph G {
 "great-expectations/great_expectations" -> "airbytehq/airbyte"
 "great-expectations/great_expectations" -> "apache/airflow"
 "great-expectations/great_expectations" -> "Netflix/metaflow" ["e"=1]
+"jghoman/awesome-apache-airflow" -> "apache/airflow" ["e"=1]
+"jghoman/awesome-apache-airflow" -> "great-expectations/great_expectations" ["e"=1]
+"mlflow/mlflow" -> "apache/airflow" ["e"=1]
+"amundsen-io/amundsen" -> "dbt-labs/dbt-core" ["e"=1]
+"amundsen-io/amundsen" -> "great-expectations/great_expectations" ["e"=1]
+"amundsen-io/amundsen" -> "airbytehq/airbyte" ["e"=1]
+"amundsen-io/amundsen" -> "dagster-io/dagster" ["e"=1]
+"amundsen-io/amundsen" -> "sodadata/soda-core" ["e"=1]
+"odoo/odoo" -> "apache/superset" ["e"=1]
+"odoo/odoo" -> "metabase/metabase" ["e"=1]
+"simonw/datasette" -> "ibis-project/ibis" ["e"=1]
+"apache/spark" -> "apache/airflow" ["e"=1]
+"apache/spark" -> "apache/superset" ["e"=1]
+"BasPH/data-pipelines-with-apache-airflow" -> "gocardless/airflow-dbt" ["e"=1]
 "PrefectHQ/prefect" -> "dagster-io/dagster"
 "PrefectHQ/prefect" -> "apache/airflow"
 "PrefectHQ/prefect" -> "dbt-labs/dbt-core"
@@ -29,6 +44,9 @@ digraph G {
 "PrefectHQ/prefect" -> "mlflow/mlflow" ["e"=1]
 "PrefectHQ/prefect" -> "iterative/dvc" ["e"=1]
 "PrefectHQ/prefect" -> "Netflix/metaflow" ["e"=1]
+"nomic-ai/deepscatter" -> "uwdata/mosaic" ["e"=1]
+"awslabs/deequ" -> "great-expectations/great_expectations" ["e"=1]
+"awslabs/deequ" -> "sodadata/soda-core" ["e"=1]
 "getredash/redash" -> "metabase/metabase"
 "getredash/redash" -> "apache/superset"
 "getredash/redash" -> "apache/airflow"
@@ -59,6 +77,10 @@ digraph G {
 "dagster-io/dagster" -> "sqlfluff/sqlfluff"
 "dagster-io/dagster" -> "ibis-project/ibis"
 "dagster-io/dagster" -> "tobymao/sqlglot"
+"kedro-org/kedro" -> "great-expectations/great_expectations" ["e"=1]
+"kedro-org/kedro" -> "PrefectHQ/prefect" ["e"=1]
+"kedro-org/kedro" -> "dagster-io/dagster" ["e"=1]
+"andkret/Cookbook" -> "great-expectations/great_expectations" ["e"=1]
 "josephaxisa/henry" -> "WarbyParker/lookmlint"
 "WarbyParker/lookmlint" -> "looker/lookml-test-runner"
 "WarbyParker/lookmlint" -> "josephaxisa/henry"
@@ -130,12 +152,38 @@ digraph G {
 "cube-js/cube" -> "transloadit/uppy" ["e"=1]
 "cube-js/cube" -> "directus/directus" ["e"=1]
 "cube-js/cube" -> "PostHog/posthog" ["e"=1]
+"dolthub/dolt" -> "PRQL/prql" ["e"=1]
+"duckdb/duckdb" -> "dbt-labs/dbt-core" ["e"=1]
+"duckdb/duckdb" -> "tobymao/sqlglot" ["e"=1]
+"duckdb/duckdb" -> "airbytehq/airbyte" ["e"=1]
+"duckdb/duckdb" -> "dagster-io/dagster" ["e"=1]
+"feast-dev/feast" -> "great-expectations/great_expectations" ["e"=1]
+"rudderlabs/rudder-server" -> "grouparoo/grouparoo" ["e"=1]
+"rudderlabs/rudder-server" -> "lightdash/lightdash" ["e"=1]
+"rudderlabs/rudder-server" -> "cube-js/cube" ["e"=1]
+"rudderlabs/rudder-server" -> "airbytehq/airbyte" ["e"=1]
+"rudderlabs/rudder-server" -> "dbt-labs/dbt-core" ["e"=1]
+"rudderlabs/rudder-server" -> "evidence-dev/evidence" ["e"=1]
+"metrico/gigapipe" -> "metrico/qryn-view" ["e"=1]
+"metrico/gigapipe" -> "metrico/clickhouse-mate" ["e"=1]
+"metrico/gigapipe" -> "gigapi/gigapi" ["e"=1]
+"unionai-oss/pandera" -> "ibis-project/ibis" ["e"=1]
+"unionai-oss/pandera" -> "great-expectations/great_expectations" ["e"=1]
+"unionai-oss/pandera" -> "TobikoData/sqlmesh" ["e"=1]
+"unionai-oss/pandera" -> "dagster-io/dagster" ["e"=1]
+"Freeboard/freeboard" -> "getredash/redash" ["e"=1]
 "looker-open-source/henry" -> "looker-open-source/look-at-me-sideways"
 "looker-open-source/henry" -> "looker-open-source/gzr"
 "looker-open-source/henry" -> "ww-tech/lookml-tools"
 "looker-open-source/henry" -> "spectacles-ci/spectacles"
 "looker-open-source/henry" -> "joshtemple/lkml"
 "looker-open-source/henry" -> "looker-open-source/looker_deployer"
+"aws/aws-sdk-pandas" -> "great-expectations/great_expectations" ["e"=1]
+"aws/aws-sdk-pandas" -> "dbt-labs/dbt-core" ["e"=1]
+"mukunku/ParquetViewer" -> "antonycourtney/tad" ["e"=1]
+"holistics/dbml" -> "sqlfluff/sqlfluff" ["e"=1]
+"holistics/dbml" -> "evidence-dev/evidence" ["e"=1]
+"holistics/dbml" -> "re-data/re-data" ["e"=1]
 "InfuseAI/primehub" -> "InfuseAI/piperider"
 "InfuseAI/primehub" -> "InfuseAI/crane"
 "InfuseAI/primehub" -> "InfuseAI/primehub-python-sdk"
@@ -147,6 +195,9 @@ digraph G {
 "InfuseAI/primehub" -> "InfuseAI/primehub-aws-cdk"
 "InfuseAI/primehub" -> "moskytw/data-science-with-python" ["e"=1]
 "InfuseAI/primehub" -> "Canner/vulcan-sql"
+"elliottzheng/CopyTranslator" -> "mattm/sql-style-guide" ["e"=1]
+"mara/mara-pipelines" -> "singer-io/getting-started" ["e"=1]
+"mara/mara-pipelines" -> "transferwise/pipelinewise" ["e"=1]
 "transferwise/pipelinewise" -> "singer-io/getting-started"
 "transferwise/pipelinewise" -> "singer-io/singer-python"
 "transferwise/pipelinewise" -> "gocardless/airflow-dbt"
@@ -167,6 +218,8 @@ digraph G {
 "dbt-msft/dbt-sqlserver" -> "microsoft/dbt-synapse"
 "dbt-msft/dbt-sqlserver" -> "dbt-labs/dbt-codegen"
 "dbt-msft/dbt-sqlserver" -> "Datavault-UK/automate-dv"
+"MarquezProject/marquez" -> "sodadata/soda-core" ["e"=1]
+"MarquezProject/marquez" -> "meltano/meltano" ["e"=1]
 "finos/perspective" -> "apache/arrow" ["e"=1]
 "finos/perspective" -> "evidence-dev/evidence"
 "finos/perspective" -> "ibis-project/ibis"
@@ -182,6 +235,7 @@ digraph G {
 "finos/perspective" -> "holoviz/panel" ["e"=1]
 "finos/perspective" -> "PRQL/prql"
 "finos/perspective" -> "lancedb/lance" ["e"=1]
+"astronomer/astro-cli" -> "astronomer/astronomer-cosmos" ["e"=1]
 "Snowflake-Labs/schemachange" -> "snowflakedb/terraform-provider-snowflake"
 "Snowflake-Labs/schemachange" -> "dbt-labs/dbt-snowflake"
 "Snowflake-Labs/schemachange" -> "Snowflake-Labs/awesome-snowflake"
@@ -233,6 +287,7 @@ digraph G {
 "looker-open-source/embed-sdk" -> "fabio-looker/looker_sso_tool"
 "looker-open-source/embed-sdk" -> "looker-open-source/extension-examples"
 "looker-open-source/embed-sdk" -> "looker-open-source/actions"
+"reata/sqllineage" -> "tobymao/sqlglot" ["e"=1]
 "dbt-labs/dbt-codegen" -> "dbt-labs/dbt-project-evaluator"
 "dbt-labs/dbt-codegen" -> "dbt-labs/dbt-audit-helper"
 "dbt-labs/dbt-codegen" -> "dbt-labs/dbt-utils"
@@ -248,6 +303,19 @@ digraph G {
 "dbt-labs/dbt-codegen" -> "dbt-labs/dbt-snowflake"
 "dbt-labs/dbt-codegen" -> "Datavault-UK/automate-dv"
 "dbt-labs/dbt-codegen" -> "AltimateAI/vscode-dbt-power-user"
+"astronomer/dag-factory" -> "astronomer/astronomer-cosmos" ["e"=1]
+"astronomer/dag-factory" -> "gocardless/airflow-dbt" ["e"=1]
+"astronomer/dag-factory" -> "TobikoData/sqlmesh" ["e"=1]
+"astronomer/dag-factory" -> "sodadata/soda-core" ["e"=1]
+"dataform-co/dataform" -> "TobikoData/sqlmesh" ["e"=1]
+"dataform-co/dataform" -> "datafold/data-diff" ["e"=1]
+"dataform-co/dataform" -> "meltano/meltano" ["e"=1]
+"dataform-co/dataform" -> "dbt-labs/metricflow" ["e"=1]
+"dataform-co/dataform" -> "elementary-data/elementary" ["e"=1]
+"dataform-co/dataform" -> "datacoves/dbt-coves" ["e"=1]
+"dataform-co/dataform" -> "z3z1ma/dbt-osmosis" ["e"=1]
+"dataform-co/dataform" -> "rilldata/rill" ["e"=1]
+"astronomer/astronomer" -> "gocardless/airflow-dbt" ["e"=1]
 "dbt-labs/dbt-spark" -> "databricks/dbt-databricks" ["e"=1]
 "dbt-labs/dbt-spark" -> "dbt-labs/dbt-external-tables"
 "dbt-labs/dbt-spark" -> "dbt-labs/dbt-snowflake"
@@ -285,6 +353,10 @@ digraph G {
 "capitalone/datacompy" -> "awslabs/python-deequ" ["e"=1]
 "capitalone/datacompy" -> "Zac-HD/escape-from-automanual-testing"
 "capitalone/datacompy" -> "fugue-project/fugue" ["e"=1]
+"uwdata/visualization-curriculum" -> "uwdata/mosaic" ["e"=1]
+"RobinL/fuzzymatcher" -> "moj-analytical-services/splink" ["e"=1]
+"fbaptiste/python-deepdive" -> "nordquant/complete-dbt-bootcamp-zero-to-hero" ["e"=1]
+"dbcli/litecli" -> "tconbeer/harlequin" ["e"=1]
 "mattm/sql-style-guide" -> "dbt-labs/corp"
 "mattm/sql-style-guide" -> "brooklyn-data/co"
 "mattm/sql-style-guide" -> "5A59/Zvm" ["e"=1]
@@ -300,12 +372,20 @@ digraph G {
 "mattm/sql-style-guide" -> "eryajf/magic-of-sysuse-scripts" ["e"=1]
 "mattm/sql-style-guide" -> "fal-ai/dbt-fal"
 "mattm/sql-style-guide" -> "Hiflylabs/awesome-dbt"
+"5A59/Zvm" -> "mattm/sql-style-guide" ["e"=1]
+"mckinsey/qbstyles" -> "mckinsey/vizro" ["e"=1]
+"J535D165/data-matching-software" -> "moj-analytical-services/splink" ["e"=1]
 "snowflakedb/SnowAlert" -> "snowflakedb/snowflake-ingest-python"
 "snowflakedb/SnowAlert" -> "mariusndini/MyDay-Health-App"
 "snowflakedb/SnowAlert" -> "Snowflake-Labs/sfgrantreport"
 "snowflakedb/SnowAlert" -> "Snowflake-Labs/schemachange"
 "snowflakedb/SnowAlert" -> "jamesweakley/snowflake-rbgm"
 "snowflakedb/SnowAlert" -> "zoharsan/snowtire"
+"marcboeker/go-duckdb" -> "duckdb/duckdb-postgres" ["e"=1]
+"marcboeker/go-duckdb" -> "duckdb/duckdb-wasm" ["e"=1]
+"marcboeker/go-duckdb" -> "ywelsch/duckdb-prql" ["e"=1]
+"marcboeker/go-duckdb" -> "rilldata/rill" ["e"=1]
+"enilu/web-flash" -> "mattm/sql-style-guide" ["e"=1]
 "dbt-labs/dbt-docs" -> "bitpicky/dbt-sugar"
 "dbt-labs/dbt-docs" -> "dbt-labs/dbt-external-tables"
 "dbt-labs/dbt-docs" -> "dbt-labs/dbt-snowflake"
@@ -350,6 +430,21 @@ digraph G {
 "chrisgoddard/singer-discover" -> "singer-io/singer-tools"
 "chrisgoddard/singer-discover" -> "datamill-co/singer-runner"
 "capitalone/global-attribution-mapping" -> "capitalone/synthetic-data"
+"Netflix/metaflow" -> "great-expectations/great_expectations" ["e"=1]
+"Netflix/metaflow" -> "PrefectHQ/prefect" ["e"=1]
+"gristlabs/grist-core" -> "evidence-dev/evidence" ["e"=1]
+"kestra-io/kestra" -> "airbytehq/airbyte" ["e"=1]
+"chartbrew/chartbrew" -> "lightdash/lightdash" ["e"=1]
+"chartbrew/chartbrew" -> "evidence-dev/evidence" ["e"=1]
+"sybrenjansen/mpire" -> "ipyflow/ipyflow" ["e"=1]
+"ploomber/ploomber" -> "ploomber/jupysql" ["e"=1]
+"uwdata/arquero" -> "uwdata/mosaic" ["e"=1]
+"uwdata/arquero" -> "duckdb/duckdb-wasm" ["e"=1]
+"fin-hypergrid/core" -> "finos/perspective" ["e"=1]
+"PostgREST/postgrest" -> "metabase/metabase" ["e"=1]
+"PostgREST/postgrest" -> "getredash/redash" ["e"=1]
+"keen/dashboards" -> "getredash/redash" ["e"=1]
+"alyssaxuu/flowy" -> "cube-js/cube" ["e"=1]
 "Kanaries/Rath" -> "Kanaries/graphic-walker"
 "Kanaries/Rath" -> "Kanaries/pygwalker" ["e"=1]
 "Kanaries/Rath" -> "lucidrains/PaLM-rlhf-pytorch" ["e"=1]
@@ -365,6 +460,7 @@ digraph G {
 "Kanaries/Rath" -> "finos/perspective"
 "Kanaries/Rath" -> "ObservedObserver/viz-gpt" ["e"=1]
 "Kanaries/Rath" -> "sfu-db/dataprep" ["e"=1]
+"leeoniya/uPlot" -> "finos/perspective" ["e"=1]
 "airbytehq/airbyte" -> "dbt-labs/dbt-core"
 "airbytehq/airbyte" -> "dagster-io/dagster"
 "airbytehq/airbyte" -> "PrefectHQ/prefect"
@@ -380,6 +476,16 @@ digraph G {
 "airbytehq/airbyte" -> "amundsen-io/amundsen" ["e"=1]
 "airbytehq/airbyte" -> "debezium/debezium" ["e"=1]
 "airbytehq/airbyte" -> "lightdash/lightdash"
+"PipedreamHQ/pipedream" -> "airbytehq/airbyte" ["e"=1]
+"jitsucom/jitsu" -> "lightdash/lightdash" ["e"=1]
+"jitsucom/jitsu" -> "airbytehq/airbyte" ["e"=1]
+"jitsucom/jitsu" -> "evidence-dev/evidence" ["e"=1]
+"rapidfuzz/RapidFuzz" -> "moj-analytical-services/splink" ["e"=1]
+"piskvorky/smart_open" -> "ibis-project/ibis" ["e"=1]
+"piskvorky/smart_open" -> "tobymao/sqlglot" ["e"=1]
+"delta-io/delta-rs" -> "TobikoData/sqlmesh" ["e"=1]
+"pditommaso/awesome-pipeline" -> "dagster-io/dagster" ["e"=1]
+"pditommaso/awesome-pipeline" -> "apache/airflow" ["e"=1]
 "AltimateAI/vscode-dbt-power-user" -> "z3z1ma/dbt-osmosis"
 "AltimateAI/vscode-dbt-power-user" -> "tconbeer/sqlfmt"
 "AltimateAI/vscode-dbt-power-user" -> "dbt-labs/dbt-project-evaluator"
@@ -397,9 +503,17 @@ digraph G {
 "AltimateAI/vscode-dbt-power-user" -> "Hiflylabs/awesome-dbt"
 "fivetran/dbt_ad_reporting" -> "fivetran/dbt_netsuite"
 "fivetran/dbt_ad_reporting" -> "datacoves/dbt-coves"
+"pluralsh/plural" -> "meltano/meltano" ["e"=1]
+"pluralsh/plural" -> "re-data/re-data" ["e"=1]
+"pluralsh/plural" -> "fal-ai/dbt-fal" ["e"=1]
+"flyteorg/flyte" -> "dagster-io/dagster" ["e"=1]
+"flyteorg/flyte" -> "PrefectHQ/prefect" ["e"=1]
 "ploomber/soopervisor" -> "ploomber/soorgeon"
 "ploomber/soopervisor" -> "ploomber/pkgmt"
 "ploomber/soopervisor" -> "ploomber/notebooks-academy"
+"vega/voyager" -> "uwdata/mosaic" ["e"=1]
+"lana-k/sqliteviz" -> "Kanaries/graphic-walker" ["e"=1]
+"awslabs/amazon-redshift-utils" -> "dbt-labs/dbt-core" ["e"=1]
 "grouparoo/grouparoo" -> "grouparoo/www.grouparoo.com"
 "grouparoo/grouparoo" -> "grouparoo/app-examples"
 "grouparoo/grouparoo" -> "castledio/castled"
@@ -446,6 +560,9 @@ digraph G {
 "duckdb/dbt-duckdb" -> "duckdb/pg_duckdb" ["e"=1]
 "duckdb/dbt-duckdb" -> "calogica/dbt-expectations"
 "duckdb/dbt-duckdb" -> "Bl3f/yato"
+"sqlpad/sqlpad" -> "getredash/redash" ["e"=1]
+"sqlpad/sqlpad" -> "pinterest/querybook" ["e"=1]
+"sqlpad/sqlpad" -> "metabase/metabase" ["e"=1]
 "pinterest/querybook" -> "TobikoData/sqlmesh"
 "pinterest/querybook" -> "lightdash/lightdash"
 "pinterest/querybook" -> "OpenLineage/OpenLineage" ["e"=1]
@@ -461,6 +578,15 @@ digraph G {
 "pinterest/querybook" -> "datafold/data-diff"
 "pinterest/querybook" -> "dlt-hub/dlt"
 "pinterest/querybook" -> "re-data/re-data"
+"facebook/facebook-python-business-sdk" -> "singer-io/tap-facebook" ["e"=1]
+"googleapis/python-bigquery" -> "dbt-labs/dbt-bigquery" ["e"=1]
+"pipeline-tools/gusty" -> "tomasfarias/airflow-dbt-python" ["e"=1]
+"estuary/flow" -> "TobikoData/sqlmesh" ["e"=1]
+"estuary/flow" -> "meltano/meltano" ["e"=1]
+"fugue-project/fugue" -> "ibis-project/ibis" ["e"=1]
+"fugue-project/fugue" -> "TobikoData/sqlmesh" ["e"=1]
+"fugue-project/fugue" -> "sodadata/soda-core" ["e"=1]
+"fugue-project/fugue" -> "tobymao/sqlglot" ["e"=1]
 "treeverse/lakeFS" -> "delta-io/delta" ["e"=1]
 "treeverse/lakeFS" -> "amundsen-io/amundsen" ["e"=1]
 "treeverse/lakeFS" -> "apache/iceberg" ["e"=1]
@@ -476,6 +602,7 @@ digraph G {
 "treeverse/lakeFS" -> "awslabs/deequ" ["e"=1]
 "treeverse/lakeFS" -> "OpenLineage/OpenLineage" ["e"=1]
 "treeverse/lakeFS" -> "dagster-io/dagster"
+"projectnessie/nessie" -> "TobikoData/sqlmesh" ["e"=1]
 "ploomber/projects" -> "ploomber/soopervisor"
 "gouline/dbt-metabase" -> "z3z1ma/dbt-osmosis"
 "gouline/dbt-metabase" -> "dbt-labs/dbt-project-evaluator"
@@ -518,6 +645,7 @@ digraph G {
 "datapane/datapane" -> "mckinsey/vizro"
 "datapane/datapane" -> "sfu-db/dataprep" ["e"=1]
 "datapane/datapane" -> "evidence-dev/evidence"
+"yikeke/zh-style-guide" -> "mattm/sql-style-guide" ["e"=1]
 "rsyi/whale" -> "fal-ai/dbt-fal"
 "rsyi/whale" -> "re-data/re-data"
 "rsyi/whale" -> "amundsen-io/amundsen" ["e"=1]
@@ -533,6 +661,7 @@ digraph G {
 "rsyi/whale" -> "amundsen-io/amundsendatabuilder" ["e"=1]
 "rsyi/whale" -> "metriql/metriql"
 "rsyi/whale" -> "dbt-checkpoint/dbt-checkpoint"
+"gzuidhof/starboard-notebook" -> "uwdata/mosaic" ["e"=1]
 "Snowflake-Labs/sfquickstarts" -> "Snowflake-Labs/sf-samples"
 "Snowflake-Labs/sfquickstarts" -> "Snowflake-Labs/awesome-snowflake"
 "Snowflake-Labs/sfquickstarts" -> "Snowflake-Labs/snowpark-python-demos"
@@ -563,6 +692,7 @@ digraph G {
 "dbt-labs/dbt-external-tables" -> "calogica/dbt-expectations"
 "dbt-labs/dbt-external-tables" -> "Montreal-Analytics/dbt-snowflake-utils"
 "dbt-labs/dbt-external-tables" -> "Datavault-UK/automate-dv"
+"WassimBenzarti/colab-ssh" -> "InfuseAI/colab-xterm" ["e"=1]
 "rittmananalytics/ra_data_warehouse" -> "erika-e/dbt-tips"
 "rittmananalytics/ra_data_warehouse" -> "dbt-labs/dbt-event-logging"
 "rittmananalytics/ra_data_warehouse" -> "calogica/dbt-date"
@@ -627,13 +757,18 @@ digraph G {
 "calogica/dbt-date" -> "flexanalytics/dbt-business-intelligence"
 "calogica/dbt-date" -> "dbt-labs/dbt-project-evaluator"
 "microsoft/dbt-synapse" -> "microsoft/dbt-fabric"
+"GoogleCloudPlatform/bigquery-utils" -> "dbt-labs/dbt-bigquery" ["e"=1]
+"petl-developers/petl" -> "sodadata/soda-core" ["e"=1]
+"algorithm004-01/algorithm004-01" -> "mattm/sql-style-guide" ["e"=1]
 "sfc-gh-gpavlik/snowflake_data_profiling" -> "sfc-gh-gpavlik/snowflake_script_runner"
+"soggycactus/airflow-repo-template" -> "gocardless/airflow-dbt" ["e"=1]
 "brooklyn-data/co" -> "dbt-labs/corp"
 "brooklyn-data/co" -> "mattm/sql-style-guide"
 "flpezet/analytics-readings" -> "stumelius/howtheydbt"
 "flpezet/analytics-readings" -> "dexters-workshop/analytics-engineering-library"
 "flpezet/analytics-readings" -> "clrcrl/advanced-sql"
 "flpezet/analytics-readings" -> "mindyng/analytics-readings"
+"andreax79/airflow-code-editor" -> "gocardless/airflow-dbt" ["e"=1]
 "gocardless/airflow-dbt" -> "tomasfarias/airflow-dbt-python"
 "gocardless/airflow-dbt" -> "astronomer/airflow-dbt-demo" ["e"=1]
 "gocardless/airflow-dbt" -> "dbt-labs/dbt-external-tables"
@@ -659,6 +794,7 @@ digraph G {
 "looker-open-source/looker_deployer" -> "looker-open-source/gzr"
 "looker-open-source/looker_deployer" -> "looker-open-source/look-at-me-sideways"
 "dbt-labs/docs.getdbt.com" -> "dbt-labs/dbt-project-evaluator"
+"astronomer/airflow-chart" -> "gocardless/airflow-dbt" ["e"=1]
 "starschema/COVID-19-data" -> "RobertFehrmann/fehrminator"
 "Snowflake-Labs/Excelerator" -> "sfc-gh-gpavlik/snowflake_script_runner"
 "databand-ai/dbnd" -> "dataroot/Kaggle-CV"
@@ -674,6 +810,9 @@ digraph G {
 "sfc-gh-gpavlik/snowflake_script_runner" -> "sfc-gh-gpavlik/snowflake_data_profiling"
 "grouparoo/app-examples" -> "grouparoo/www.grouparoo.com"
 "InfuseAI/primehub-controller" -> "InfuseAI/primehub-console"
+"observablehq/plot" -> "uwdata/mosaic" ["e"=1]
+"observablehq/plot" -> "duckdb/duckdb-wasm" ["e"=1]
+"cloudquery/cloudquery" -> "airbytehq/airbyte" ["e"=1]
 "ibis-project/ibis" -> "tobymao/sqlglot"
 "ibis-project/ibis" -> "unionai-oss/pandera" ["e"=1]
 "ibis-project/ibis" -> "TobikoData/sqlmesh"
@@ -689,6 +828,8 @@ digraph G {
 "ibis-project/ibis" -> "dagster-io/dagster"
 "ibis-project/ibis" -> "dask/dask" ["e"=1]
 "ibis-project/ibis" -> "substrait-io/substrait" ["e"=1]
+"growthbook/growthbook" -> "lightdash/lightdash" ["e"=1]
+"growthbook/growthbook" -> "airbytehq/airbyte" ["e"=1]
 "apache/superset" -> "metabase/metabase"
 "apache/superset" -> "getredash/redash"
 "apache/superset" -> "apache/airflow"
@@ -719,6 +860,8 @@ digraph G {
 "apache/airflow" -> "ClickHouse/ClickHouse" ["e"=1]
 "apache/airflow" -> "airbytehq/airbyte"
 "apache/airflow" -> "fastapi/fastapi" ["e"=1]
+"meirwah/awesome-workflow-engines" -> "PrefectHQ/prefect" ["e"=1]
+"RocketChat/Rocket.Chat" -> "metabase/metabase" ["e"=1]
 "metabase/metabase" -> "getredash/redash"
 "metabase/metabase" -> "apache/superset"
 "metabase/metabase" -> "apache/airflow"
@@ -764,6 +907,17 @@ digraph G {
 "lightdash/lightdash" -> "sqlfluff/sqlfluff"
 "lightdash/lightdash" -> "pinterest/querybook"
 "lightdash/lightdash" -> "datafold/data-diff"
+"softwaretechnik-berlin/dbml-renderer" -> "datnguye/dbterd" ["e"=1]
+"plotly/dash" -> "apache/superset" ["e"=1]
+"plotly/dash" -> "apache/airflow" ["e"=1]
+"snowplow/snowplow" -> "dbt-labs/dbt-core" ["e"=1]
+"snowplow/snowplow" -> "getredash/redash" ["e"=1]
+"snowplow/snowplow" -> "airbytehq/airbyte" ["e"=1]
+"snowplow/snowplow" -> "cube-js/cube" ["e"=1]
+"chaos-genius/chaos_genius" -> "monosidev/monosi" ["e"=1]
+"aws/aws-mwaa-local-runner" -> "gocardless/airflow-dbt" ["e"=1]
+"aws/aws-mwaa-local-runner" -> "astronomer/astronomer-cosmos" ["e"=1]
+"aws/aws-mwaa-local-runner" -> "calogica/dbt-expectations" ["e"=1]
 "meltano/meltano" -> "TobikoData/sqlmesh"
 "meltano/meltano" -> "dlt-hub/dlt"
 "meltano/meltano" -> "meltano/sdk"
@@ -779,6 +933,9 @@ digraph G {
 "meltano/meltano" -> "transferwise/pipelinewise"
 "meltano/meltano" -> "calogica/dbt-expectations"
 "meltano/meltano" -> "dagster-io/dagster"
+"open-metadata/OpenMetadata" -> "dbt-labs/dbt-core" ["e"=1]
+"open-metadata/OpenMetadata" -> "airbytehq/airbyte" ["e"=1]
+"open-metadata/OpenMetadata" -> "TobikoData/sqlmesh" ["e"=1]
 "calogica/dbt-expectations" -> "dbt-labs/dbt-utils"
 "calogica/dbt-expectations" -> "dbt-checkpoint/dbt-checkpoint"
 "calogica/dbt-expectations" -> "dbt-labs/dbt-codegen"
@@ -794,6 +951,14 @@ digraph G {
 "calogica/dbt-expectations" -> "Hiflylabs/awesome-dbt"
 "calogica/dbt-expectations" -> "dbt-labs/dbt-external-tables"
 "calogica/dbt-expectations" -> "gocardless/airflow-dbt"
+"mathesar-foundation/mathesar" -> "evidence-dev/evidence" ["e"=1]
+"airflow-helm/charts" -> "astronomer/astronomer-cosmos" ["e"=1]
+"ssp-data/practical-data-engineering" -> "dagster-io/dagster-open-platform" ["e"=1]
+"ssp-data/practical-data-engineering" -> "cnstlungu/portable-data-stack-dagster" ["e"=1]
+"puckel/docker-airflow" -> "apache/airflow" ["e"=1]
+"puckel/docker-airflow" -> "dbt-labs/dbt-core" ["e"=1]
+"puckel/docker-airflow" -> "great-expectations/great_expectations" ["e"=1]
+"danvergara/dblab" -> "tconbeer/harlequin" ["e"=1]
 "zinggAI/zingg" -> "moj-analytical-services/splink"
 "zinggAI/zingg" -> "dedupeio/dedupe" ["e"=1]
 "zinggAI/zingg" -> "J535D165/recordlinkage" ["e"=1]
@@ -809,6 +974,12 @@ digraph G {
 "zinggAI/zingg" -> "calogica/dbt-expectations"
 "zinggAI/zingg" -> "dbt-labs/metricflow"
 "zinggAI/zingg" -> "databricks-industry-solutions/customer-er"
+"YS-L/csvlens" -> "tconbeer/harlequin" ["e"=1]
+"spiceai/spiceai" -> "TobikoData/sqlmesh" ["e"=1]
+"OpenLineage/OpenLineage" -> "sodadata/soda-core" ["e"=1]
+"OpenLineage/OpenLineage" -> "TobikoData/sqlmesh" ["e"=1]
+"OpenLineage/OpenLineage" -> "re-data/re-data" ["e"=1]
+"OpenLineage/OpenLineage" -> "datafold/data-diff" ["e"=1]
 "duckdb/duckdb-wasm" -> "uwdata/mosaic"
 "duckdb/duckdb-wasm" -> "holdenmatt/duckdb-wasm-kit"
 "duckdb/duckdb-wasm" -> "duckdb/dbt-duckdb"
@@ -824,6 +995,7 @@ digraph G {
 "duckdb/duckdb-wasm" -> "malloydata/malloy"
 "duckdb/duckdb-wasm" -> "sqlite/sqlite-wasm" ["e"=1]
 "duckdb/duckdb-wasm" -> "substrait-io/substrait" ["e"=1]
+"roapi/roapi" -> "PRQL/prql" ["e"=1]
 "evidence-dev/evidence" -> "rilldata/rill"
 "evidence-dev/evidence" -> "lightdash/lightdash"
 "evidence-dev/evidence" -> "TobikoData/sqlmesh"
@@ -896,6 +1068,7 @@ digraph G {
 "fal-ai/dbt-fal" -> "ActivitySchema/ActivitySchema"
 "stumelius/howtheydbt" -> "mikekaminsky/dbt-helper"
 "stumelius/howtheydbt" -> "henriblancke/dbt-formatter"
+"nicehash/NiceHashQuickMiner" -> "pinterest/querybook" ["e"=1]
 "dbt-labs/jaffle-shop-classic" -> "dbt-labs/jaffle-shop"
 "dbt-labs/jaffle-shop-classic" -> "dbt-labs/dbt-learn-group-training"
 "dbt-labs/jaffle-shop-classic" -> "dbt-labs/dbt-utils"
@@ -911,6 +1084,9 @@ digraph G {
 "dbt-labs/jaffle-shop-classic" -> "dbt-labs/dbt-codegen"
 "dbt-labs/jaffle-shop-classic" -> "elementary-data/dbt-data-reliability"
 "dbt-labs/jaffle-shop-classic" -> "calogica/dbt-expectations"
+"multiprocessio/datastation" -> "rilldata/rill" ["e"=1]
+"multiprocessio/datastation" -> "evidence-dev/evidence" ["e"=1]
+"multiprocessio/datastation" -> "PRQL/prql" ["e"=1]
 "capitalone/DataProfiler" -> "capitalone/synthetic-data"
 "capitalone/DataProfiler" -> "capitalone/datacompy"
 "capitalone/DataProfiler" -> "datafold/data-diff"
@@ -960,6 +1136,7 @@ digraph G {
 "re-data/re-data" -> "dbt-labs/dbt-project-evaluator"
 "re-data/re-data" -> "OpenLineage/OpenLineage" ["e"=1]
 "re-data/re-data" -> "dbt-labs/dbt-core"
+"ClickHouse/dbt-clickhouse" -> "gocardless/airflow-dbt" ["e"=1]
 "malloydata/malloy" -> "TobikoData/sqlmesh"
 "malloydata/malloy" -> "rilldata/rill"
 "malloydata/malloy" -> "dbt-labs/metricflow"
@@ -975,9 +1152,22 @@ digraph G {
 "malloydata/malloy" -> "elementary-data/elementary"
 "malloydata/malloy" -> "dlt-hub/dlt"
 "malloydata/malloy" -> "metriql/metriql"
+"tmadl/semisup-learn" -> "ploomber/sklearn-evaluation" ["e"=1]
+"awslabs/python-deequ" -> "sodadata/soda-core" ["e"=1]
+"TaKO8Ki/gobang" -> "tconbeer/harlequin" ["e"=1]
 "airbnb/chronon" -> "gabledata/recap"
 "airbnb/chronon" -> "feldera/feldera" ["e"=1]
 "airbnb/chronon" -> "feathr-ai/feathr" ["e"=1]
+"palantir/pyspark-style-guide" -> "sodadata/soda-core" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "Hiflylabs/awesome-dbt" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "elementary-data/elementary" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "datafold/data-diff" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "TobikoData/sqlmesh" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "sodadata/soda-core" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "meltano/meltano" ["e"=1]
+"opendatadiscovery/awesome-data-catalogs" -> "EqualExperts/dbt-unit-testing" ["e"=1]
+"EvgSkv/logica" -> "malloydata/malloy" ["e"=1]
+"EvgSkv/logica" -> "PRQL/prql" ["e"=1]
 "tnightengale/dbt-meta-testing" -> "bitpicky/dbt-sugar"
 "tnightengale/dbt-meta-testing" -> "autotraderuk/oliver-twist"
 "tnightengale/dbt-meta-testing" -> "mjirv/dbt-datamocktool"
@@ -1010,6 +1200,11 @@ digraph G {
 "erika-e/dbt-tips" -> "dbt-labs/dbt-audit-helper"
 "erika-e/dbt-tips" -> "slidoapp/dbt-coverage"
 "erika-e/dbt-tips" -> "elementary-data/dbt-data-reliability"
+"spandanb/learndb-py" -> "tconbeer/harlequin" ["e"=1]
+"sfu-db/connector-x" -> "TobikoData/sqlmesh" ["e"=1]
+"sfu-db/connector-x" -> "ibis-project/ibis" ["e"=1]
+"sfu-db/connector-x" -> "dlt-hub/dlt" ["e"=1]
+"sfu-db/connector-x" -> "tobymao/sqlglot" ["e"=1]
 "kuwala-io/kuwala" -> "fal-ai/dbt-fal"
 "kuwala-io/kuwala" -> "re-data/re-data"
 "kuwala-io/kuwala" -> "metriql/metriql"
@@ -1100,6 +1295,7 @@ digraph G {
 "mjirv/dbt-datamocktool" -> "bitpicky/dbt-sugar"
 "mjirv/dbt-datamocktool" -> "godatadriven/pytest-dbt-core"
 "mjirv/dbt-datamocktool" -> "mikekaminsky/dbt-helper"
+"facebookresearch/madgrad" -> "pinterest/querybook" ["e"=1]
 "tconbeer/sqlfmt" -> "dbt-labs/dbt-project-evaluator"
 "tconbeer/sqlfmt" -> "AltimateAI/vscode-dbt-power-user"
 "tconbeer/sqlfmt" -> "dbt-checkpoint/dbt-checkpoint"
@@ -1115,6 +1311,9 @@ digraph G {
 "tconbeer/sqlfmt" -> "duckdb/dbt-duckdb"
 "tconbeer/sqlfmt" -> "quarylabs/sqruff"
 "tconbeer/sqlfmt" -> "get-select/dbt-snowflake-monitoring"
+"LineaLabs/lineapy" -> "ipyflow/ipyflow" ["e"=1]
+"alitrack/duckdb_fdw" -> "duckdb/duckdb-postgres" ["e"=1]
+"alitrack/duckdb_fdw" -> "Mause/duckdb_engine" ["e"=1]
 "metriql/metriql" -> "tnightengale/dbt-meta-testing"
 "metriql/metriql" -> "bitpicky/dbt-sugar"
 "metriql/metriql" -> "dbt-checkpoint/dbt-checkpoint"
@@ -1124,6 +1323,9 @@ digraph G {
 "metriql/metriql" -> "dbt-labs/dbt-audit-helper"
 "metriql/metriql" -> "dbt-labs/dbt_metrics"
 "metriql/metriql" -> "sqlfluff/sqlfluff-github-actions"
+"duckdb/duckdb-rs" -> "duckdb/duckdb-delta" ["e"=1]
+"duckdb/duckdb-rs" -> "duckdb/community-extensions" ["e"=1]
+"bitsondatadev/trino-getting-started" -> "zsvoboda/ngods-stocks" ["e"=1]
 "tuanchris/modern-data-stack" -> "tuanchris/cloud-data-lake"
 "omnata-labs/dbt-ml-preprocessing" -> "kristeligt-dagblad/dbt_ml"
 "omnata-labs/dbt-ml-preprocessing" -> "re-data/dbt-re-data"
@@ -1135,6 +1337,7 @@ digraph G {
 "omnata-labs/dbt-ml-preprocessing" -> "dbt-labs/dbt-project-evaluator"
 "omnata-labs/dbt-ml-preprocessing" -> "dbt-labs/dbt-audit-helper"
 "omnata-labs/dbt-ml-preprocessing" -> "dbt-labs/dbt-jsonschema"
+"astronomer/airflow-dbt-demo" -> "gocardless/airflow-dbt" ["e"=1]
 "lightdash/dbt2looker" -> "spectacles-ci/spectacles"
 "lightdash/dbt2looker" -> "dbt-labs/dbtdocs-to-lookml"
 "lightdash/dbt2looker" -> "looker-open-source/look-at-me-sideways"
@@ -1192,6 +1395,11 @@ digraph G {
 "PRQL/prql" -> "MaterializeInc/materialize" ["e"=1]
 "PRQL/prql" -> "databendlabs/databend" ["e"=1]
 "PRQL/prql" -> "benbjohnson/litestream" ["e"=1]
+"drivendataorg/cookiecutter-data-science" -> "great-expectations/great_expectations" ["e"=1]
+"ydataai/ydata-profiling" -> "great-expectations/great_expectations" ["e"=1]
+"writer/writer-framework" -> "mckinsey/vizro" ["e"=1]
+"widgetti/solara" -> "ipyflow/ipyflow" ["e"=1]
+"posit-dev/great-tables" -> "ibis-project/ibis" ["e"=1]
 "data-mie/dbt-cloud-cli" -> "dpguthrie/dbtc"
 "looker/lookerbot" -> "WarbyParker/lookmlint"
 "looker/lookerbot" -> "spectacles-ci/spectacles"
@@ -1203,6 +1411,9 @@ digraph G {
 "looker/lookerbot" -> "looker/looker-sdk-ruby"
 "looker/lookerbot" -> "llooker/google_ga360"
 "flexanalytics/dbt-business-intelligence" -> "data-mie/dbt-profiler"
+"zulip/zulip" -> "getredash/redash" ["e"=1]
+"cosmosgl/graph" -> "uwdata/mosaic" ["e"=1]
+"datahub-project/datahub" -> "dbt-labs/dbt-core" ["e"=1]
 "mage-ai/mage-ai" -> "dagster-io/dagster"
 "mage-ai/mage-ai" -> "airbytehq/airbyte"
 "mage-ai/mage-ai" -> "dlt-hub/dlt"
@@ -1218,6 +1429,11 @@ digraph G {
 "mage-ai/mage-ai" -> "ibis-project/ibis"
 "mage-ai/mage-ai" -> "kedro-org/kedro" ["e"=1]
 "mage-ai/mage-ai" -> "lightdash/lightdash"
+"andialbrecht/sqlparse" -> "tobymao/sqlglot" ["e"=1]
+"andialbrecht/sqlparse" -> "sqlfluff/sqlfluff" ["e"=1]
+"andialbrecht/sqlparse" -> "TobikoData/sqlmesh" ["e"=1]
+"Eventual-Inc/Daft" -> "ibis-project/ibis" ["e"=1]
+"Eventual-Inc/Daft" -> "TobikoData/sqlmesh" ["e"=1]
 "dlt-hub/dlt" -> "TobikoData/sqlmesh"
 "dlt-hub/dlt" -> "elementary-data/elementary"
 "dlt-hub/dlt" -> "meltano/meltano"
@@ -1248,6 +1464,7 @@ digraph G {
 "elementary-data/elementary" -> "fal-ai/dbt-fal"
 "elementary-data/elementary" -> "lightdash/lightdash"
 "elementary-data/elementary" -> "sodadata/soda-core"
+"postgresml/postgresml" -> "PRQL/prql" ["e"=1]
 "ploomber/sklearn-evaluation" -> "ploomber/ploomber-engine"
 "ploomber/sklearn-evaluation" -> "tmadl/sklearn-expertsys" ["e"=1]
 "ploomber/sklearn-evaluation" -> "ploomber/jupysql"
@@ -1255,6 +1472,9 @@ digraph G {
 "ploomber/sklearn-evaluation" -> "koaning/scikit-lego" ["e"=1]
 "ploomber/sklearn-evaluation" -> "scikit-learn-contrib/polylearn" ["e"=1]
 "ploomber/soorgeon" -> "ploomber/soopervisor"
+"quadratichq/quadratic" -> "Kanaries/graphic-walker" ["e"=1]
+"quadratichq/quadratic" -> "evidence-dev/evidence" ["e"=1]
+"httpie/desktop" -> "tconbeer/harlequin" ["e"=1]
 "elementary-data/dbt-data-reliability" -> "dbt-labs/dbt-project-evaluator"
 "elementary-data/dbt-data-reliability" -> "brooklyn-data/dbt_artifacts"
 "elementary-data/dbt-data-reliability" -> "dbt-labs/dbt-audit-helper"
@@ -1288,6 +1508,8 @@ digraph G {
 "datafold/data-diff" -> "duckdb/dbt-duckdb"
 "opensource4you/astraea" -> "oharastream/ohara"
 "opensource4you/astraea" -> "opensource4you/readme"
+"nschloe/tiptop" -> "tconbeer/harlequin" ["e"=1]
+"Bycelium/PyFlow" -> "ipyflow/ipyflow" ["e"=1]
 "dbt-labs/metricflow" -> "dbt-labs/dbt-project-evaluator"
 "dbt-labs/metricflow" -> "dbt-labs/dbt_metrics"
 "dbt-labs/metricflow" -> "metriql/metriql"
@@ -1311,6 +1533,12 @@ digraph G {
 "Canner/vulcan-sql" -> "opensource4you/astraea"
 "Canner/vulcan-sql" -> "InfuseAI/primehub"
 "Canner/vulcan-sql" -> "duckdb/dbt-duckdb"
+"xiaohk/stickyland" -> "ipyflow/ipyflow" ["e"=1]
+"GlareDB/glaredb" -> "rpbouman/huey" ["e"=1]
+"dedupeio/dedupe" -> "moj-analytical-services/splink" ["e"=1]
+"dedupeio/dedupe" -> "zinggAI/zingg" ["e"=1]
+"bytewax/bytewax" -> "ibis-project/ibis" ["e"=1]
+"bytewax/bytewax" -> "TobikoData/sqlmesh" ["e"=1]
 "dbt-labs/dbt-snowflake" -> "dbt-labs/dbt-codegen"
 "dbt-labs/dbt-snowflake" -> "dbt-labs/dbt-utils"
 "dbt-labs/dbt-snowflake" -> "dbt-labs/dbt-bigquery"
@@ -1328,6 +1556,11 @@ digraph G {
 "dbt-labs/dbt-snowflake" -> "get-select/dbt-snowflake-monitoring"
 "InfuseAI/colab-xterm" -> "singhsidhukuldeep/Google-Colab-Shell"
 "InfuseAI/colab-xterm" -> "InfuseAI/ArtiVC"
+"marsupialtail/quokka" -> "tobymao/sqlglot" ["e"=1]
+"marsupialtail/quokka" -> "eakmanrq/sqlframe" ["e"=1]
+"marsupialtail/quokka" -> "TobikoData/sqlmesh" ["e"=1]
+"instill-ai/instill-core" -> "InfuseAI/primehub" ["e"=1]
+"linkedin/brooklin" -> "linkedin/venice" ["e"=1]
 "rilldata/rill" -> "evidence-dev/evidence"
 "rilldata/rill" -> "davidgasquez/awesome-duckdb"
 "rilldata/rill" -> "duckdb/dbt-duckdb"
@@ -1343,6 +1576,9 @@ digraph G {
 "rilldata/rill" -> "Bl3f/yato"
 "rilldata/rill" -> "z3z1ma/dbt-osmosis"
 "rilldata/rill" -> "duckdb/pg_duckdb" ["e"=1]
+"databricks/dbt-databricks" -> "dbt-labs/dbt-spark" ["e"=1]
+"databricks/dbt-databricks" -> "dbt-labs/dbt-project-evaluator" ["e"=1]
+"tigrisdata-archive/tigris" -> "linkedin/venice" ["e"=1]
 "duckdb/duckdb-sqlite" -> "duckdb/duckdb-excel"
 "duckdb/duckdb-postgres" -> "MarkRoddy/duckdb-pytables"
 "duckdb/duckdb-postgres" -> "alitrack/duckdb_fdw" ["e"=1]
@@ -1422,6 +1658,9 @@ digraph G {
 "Hiflylabs/awesome-dbt" -> "AltimateAI/vscode-dbt-power-user"
 "Hiflylabs/awesome-dbt" -> "dbt-labs/dbt-audit-helper"
 "Hiflylabs/awesome-dbt" -> "re-data/re-data"
+"Velir/dbt-ga4" -> "brooklyn-data/co" ["e"=1]
+"Velir/dbt-ga4" -> "dbt-checkpoint/dbt-checkpoint" ["e"=1]
+"vega/vegafusion" -> "uwdata/mosaic" ["e"=1]
 "InfuseAI/piperider" -> "DataRecce/recce"
 "InfuseAI/piperider" -> "slidoapp/dbt-coverage"
 "InfuseAI/piperider" -> "InfuseAI/primehub"
@@ -1440,6 +1679,8 @@ digraph G {
 "datonic/datadex" -> "gwenwindflower/octocatalog"
 "datonic/datadex" -> "Bl3f/yato"
 "autotraderuk/dbt-dry-run" -> "ubie-oss/dbt-data-privacy"
+"J535D165/recordlinkage" -> "moj-analytical-services/splink" ["e"=1]
+"J535D165/recordlinkage" -> "zinggAI/zingg" ["e"=1]
 "nordquant/complete-dbt-bootcamp-zero-to-hero" -> "calogica/dbt-expectations"
 "nordquant/complete-dbt-bootcamp-zero-to-hero" -> "Hiflylabs/awesome-dbt"
 "nordquant/complete-dbt-bootcamp-zero-to-hero" -> "dbt-labs/jaffle-shop-classic"
@@ -1482,6 +1723,8 @@ digraph G {
 "InfuseAI/ArtiVC" -> "InfuseAI/crane"
 "InfuseAI/ArtiVC" -> "InfuseAI/piperider"
 "looker-open-source/lookr" -> "looker-open-source/gzr"
+"kylebarron/parquet-wasm" -> "duckdb/duckdb-wasm" ["e"=1]
+"astronomer/astro-sdk" -> "astronomer/astronomer-cosmos" ["e"=1]
 "pdet/Scrooge-McDuck" -> "mehd-io/duckdb-extension-radar"
 "pdet/Scrooge-McDuck" -> "duckdb/extension-template"
 "snowflakedb/spark-snowflake" -> "snowflakedb/snowflake-jdbc"
@@ -1544,6 +1787,9 @@ digraph G {
 "metrico/fluXpipe" -> "metrico/clickhouse-mate"
 "dbt-labs/dbt-jsonschema" -> "dbt-labs/dbt-project-evaluator"
 "dbt-labs/dbt-jsonschema" -> "data-mie/dbt-profiler"
+"apache/arrow-adbc" -> "voltrondata/sqlflite" ["e"=1]
+"apache/arrow-adbc" -> "duckdb/duckdb-delta" ["e"=1]
+"apache/arrow-adbc" -> "eakmanrq/sqlframe" ["e"=1]
 "Snowflake-Labs/dbt_constraints" -> "get-select/dbt-snowflake-monitoring"
 "Snowflake-Labs/dbt_constraints" -> "data-mie/dbt-profiler"
 "Snowflake-Labs/dbt_constraints" -> "brooklyn-data/dbt_artifacts"
@@ -1552,6 +1798,7 @@ digraph G {
 "Snowflake-Labs/dbt_constraints" -> "dbt-labs/dbt-project-evaluator"
 "Snowflake-Labs/dbt_constraints" -> "dbt-labs/dbt-jsonschema"
 "Snowflake-Labs/dbt_constraints" -> "dbt-checkpoint/dbt-checkpoint"
+"ConduitIO/conduit" -> "gabledata/recap" ["e"=1]
 "yu-iskw/dbt-artifacts-parser" -> "dpguthrie/dbtc"
 "dbt-labs/terraform-provider-dbtcloud" -> "dbt-labs/dbt-jobs-as-code"
 "dbt-labs/terraform-provider-dbtcloud" -> "dbt-labs/dbtcloud-terraforming"
@@ -1580,12 +1827,22 @@ digraph G {
 "dbt-labs/dbt-core" -> "apache/airflow"
 "dbt-labs/dbt-core" -> "tobymao/sqlglot"
 "dbt-labs/dbt-core" -> "calogica/dbt-expectations"
+"spotify/luigi" -> "apache/airflow" ["e"=1]
+"spotify/luigi" -> "PrefectHQ/prefect" ["e"=1]
+"spotify/luigi" -> "getredash/redash" ["e"=1]
+"jupyterlab/jupyter-ai" -> "ipyflow/ipyflow" ["e"=1]
+"sqlpage/SQLPage" -> "evidence-dev/evidence" ["e"=1]
+"sqlpage/SQLPage" -> "rilldata/rill" ["e"=1]
+"sqlpage/SQLPage" -> "PRQL/prql" ["e"=1]
+"sqlpage/SQLPage" -> "davidgasquez/awesome-duckdb" ["e"=1]
+"sqlpage/SQLPage" -> "TobikoData/sqlmesh" ["e"=1]
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python" -> "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python-intro"
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python" -> "Snowflake-Labs/snowpark-python-template"
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python" -> "Code360In/data-engineering-with-databricks"
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python" -> "Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python"
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python" -> "Snowflake-Labs/snowpark-python-demos"
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python" -> "Snowflake-Labs/sf-samples"
+"hydradatabase/columnar" -> "TobikoData/sqlmesh" ["e"=1]
 "TobikoData/sqlmesh" -> "tobymao/sqlglot"
 "TobikoData/sqlmesh" -> "dlt-hub/dlt"
 "TobikoData/sqlmesh" -> "duckdb/dbt-duckdb"
@@ -1616,6 +1873,13 @@ digraph G {
 "Kanaries/graphic-walker" -> "mathesar-foundation/mathesar" ["e"=1]
 "Kanaries/graphic-walker" -> "ibis-project/ibis"
 "Kanaries/graphic-walker" -> "mljar/mercury" ["e"=1]
+"unytics/bigfunctions" -> "TobikoData/sqlmesh" ["e"=1]
+"unytics/bigfunctions" -> "malloydata/malloy" ["e"=1]
+"unytics/bigfunctions" -> "fal-ai/dbt-fal" ["e"=1]
+"unytics/bigfunctions" -> "Bl3f/yato" ["e"=1]
+"unytics/bigfunctions" -> "dlt-hub/dlt" ["e"=1]
+"unytics/bigfunctions" -> "dbt-checkpoint/dbt-checkpoint" ["e"=1]
+"unytics/bigfunctions" -> "re-data/re-data" ["e"=1]
 "davidgasquez/awesome-duckdb" -> "rilldata/rill"
 "davidgasquez/awesome-duckdb" -> "duckdb/dbt-duckdb"
 "davidgasquez/awesome-duckdb" -> "rpbouman/huey"
@@ -1631,6 +1895,7 @@ digraph G {
 "davidgasquez/awesome-duckdb" -> "matsonj/nba-monte-carlo"
 "davidgasquez/awesome-duckdb" -> "tconbeer/harlequin"
 "davidgasquez/awesome-duckdb" -> "dlt-hub/dlt"
+"manzt/anywidget" -> "uwdata/mosaic" ["e"=1]
 "snowflakedb/snowflake-cli" -> "snowflakedb/snowpark-python"
 "snowflakedb/snowflake-cli" -> "Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python"
 "snowflakedb/snowflake-cli" -> "Snowflake-Labs/snowpark-python-template"
@@ -1642,6 +1907,7 @@ digraph G {
 "snowflakedb/snowflake-cli" -> "snowflakedb/snowflake-cli-action"
 "snowflakedb/snowflake-cli" -> "Snowflake-Labs/dbt_constraints"
 "snowflakedb/snowflake-cli" -> "snowflakedb/terraform-provider-snowflake"
+"goccy/bigquery-emulator" -> "z3z1ma/dbt-osmosis" ["e"=1]
 "uwdata/mosaic" -> "manzt/quak" ["e"=1]
 "uwdata/mosaic" -> "cmudig/falcon-vis" ["e"=1]
 "uwdata/mosaic" -> "rilldata/rill"
@@ -1670,12 +1936,15 @@ digraph G {
 "ploomber/jupysql" -> "TobikoData/sqlmesh"
 "ploomber/jupysql" -> "caioricciuti/duck-ui"
 "ploomber/jupysql" -> "Bl3f/yato"
+"timestored/qstudio" -> "rilldata/rill" ["e"=1]
+"charles-001/dolphie" -> "tconbeer/harlequin" ["e"=1]
 "gabledata/recap" -> "tekumara/fakesnow"
 "gabledata/recap" -> "jwills/buenavista"
 "gabledata/recap" -> "MarkRoddy/duckdb-pytables"
 "gabledata/recap" -> "ananthdurai/schemata"
 "gabledata/recap" -> "buremba/universql"
 "gabledata/recap" -> "splitgraph/seafowl" ["e"=1]
+"apache/datafusion-python" -> "xorq-labs/xorq" ["e"=1]
 "dbt-labs/corp" -> "dbt-checkpoint/dbt-checkpoint"
 "dbt-labs/corp" -> "dbt-labs/dbt-utils"
 "dbt-labs/corp" -> "calogica/dbt-expectations"
@@ -1691,6 +1960,8 @@ digraph G {
 "dbt-labs/corp" -> "datacoves/dbt-coves"
 "dbt-labs/corp" -> "dbt-labs/dbt-snowflake"
 "dbt-labs/corp" -> "calogica/dbt-date"
+"getdozer/dozer" -> "TobikoData/sqlmesh" ["e"=1]
+"Renumics/spotlight" -> "mckinsey/vizro" ["e"=1]
 "voltrondata/sqlflite" -> "Query-farm/duckdb-airport-extension"
 "voltrondata/sqlflite" -> "apache/arrow-adbc" ["e"=1]
 "voltrondata/sqlflite" -> "duckdb/duckdb-delta"
@@ -1698,6 +1969,7 @@ digraph G {
 "voltrondata/sqlflite" -> "voltrondata/flight-duckdb-example"
 "voltrondata/sqlflite" -> "jwills/buenavista"
 "voltrondata/sqlflite" -> "duckdb/duckdb-iceberg"
+"m-wrzr/populartimes" -> "kuwala-io/kuwala" ["e"=1]
 "zsvoboda/ngods-stocks" -> "zsvoboda/ngods"
 "zsvoboda/ngods-stocks" -> "matsonj/nba-monte-carlo"
 "zsvoboda/ngods-stocks" -> "bitsondatadev/trino-getting-started" ["e"=1]
@@ -1713,6 +1985,7 @@ digraph G {
 "zsvoboda/ngods-stocks" -> "duckdb/dbt-duckdb"
 "zsvoboda/ngods-stocks" -> "ssp-data/practical-data-engineering" ["e"=1]
 "zsvoboda/ngods-stocks" -> "apache/iceberg-python" ["e"=1]
+"quixio/quix-streams" -> "ibis-project/ibis" ["e"=1]
 "get-select/dbt-snowflake-monitoring" -> "get-select/dbt-snowflake-query-tags"
 "get-select/dbt-snowflake-monitoring" -> "Snowflake-Labs/dbt_constraints"
 "get-select/dbt-snowflake-monitoring" -> "dbt-checkpoint/dbt-checkpoint"
@@ -1771,13 +2044,16 @@ digraph G {
 "astronomer/astronomer-cosmos" -> "lvgalvao/data-engineering-roadmap" ["e"=1]
 "astronomer/astronomer-cosmos" -> "sodadata/soda-core"
 "astronomer/astronomer-cosmos" -> "pipeline-tools/gusty" ["e"=1]
+"tmadl/sklearn-expertsys" -> "ploomber/sklearn-evaluation" ["e"=1]
 "ploomber/ploomber-engine" -> "ploomber/pkgmt"
+"approximatelabs/sketch" -> "ipyflow/ipyflow" ["e"=1]
 "AltimateAI/awesome-data-contracts" -> "AltimateAI/altimate-django"
 "AltimateAI/awesome-data-contracts" -> "paypal/data-contract-template"
 "AltimateAI/awesome-data-contracts" -> "PacktPublishing/Driving-Data-Quality-with-Data-Contracts"
 "AltimateAI/awesome-data-contracts" -> "datacontract/datacontract-specification"
 "AltimateAI/awesome-data-contracts" -> "ananthdurai/schemata"
 "tobilg/duckdb-nodejs-layer" -> "tobilg/serverless-duckdb"
+"awslabs/amazon-redshift-monitoring" -> "dbt-labs/redshift" ["e"=1]
 "motherduckdb/duckdb-async" -> "duckdb/duckdb-node-neo"
 "ScalefreeCOM/turbovault4dbt" -> "ScalefreeCOM/datavault4dbt"
 "matsonj/nba-monte-carlo" -> "duckdb/dbt-duckdb"
@@ -1827,6 +2103,12 @@ digraph G {
 "duckdb/extension-template" -> "pdet/Scrooge-McDuck"
 "duckdb/extension-template" -> "duckdb/extension-ci-tools"
 "duckdb/extension-template" -> "mehd-io/duckdb-extension-radar"
+"ClickHouse/ClickHouse" -> "apache/superset" ["e"=1]
+"Kanaries/pygwalker" -> "Kanaries/Rath" ["e"=1]
+"Kanaries/pygwalker" -> "Kanaries/graphic-walker" ["e"=1]
+"Textualize/trogon" -> "tconbeer/harlequin" ["e"=1]
+"prefix-dev/pixi" -> "ibis-project/ibis" ["e"=1]
+"marimo-team/marimo" -> "ibis-project/ibis" ["e"=1]
 "mckinsey/vizro" -> "mckinsey/causalnex" ["e"=1]
 "mckinsey/vizro" -> "Kanaries/pygwalker" ["e"=1]
 "mckinsey/vizro" -> "mckinsey/qbstyles" ["e"=1]
@@ -1842,6 +2124,17 @@ digraph G {
 "mckinsey/vizro" -> "mfrdixon/ML_Finance_Codes" ["e"=1]
 "mckinsey/vizro" -> "holoviz/panel" ["e"=1]
 "mckinsey/vizro" -> "ranaroussi/quantstats" ["e"=1]
+"supabase-community/postgres-language-server" -> "PRQL/prql" ["e"=1]
+"jorgerojas26/lazysql" -> "tconbeer/harlequin" ["e"=1]
+"apache/iceberg-python" -> "duckdb/duckdb-iceberg" ["e"=1]
+"apache/iceberg-python" -> "duckdb/dbt-duckdb" ["e"=1]
+"apache/iceberg-python" -> "TobikoData/sqlmesh" ["e"=1]
+"PeerDB-io/peerdb" -> "TobikoData/sqlmesh" ["e"=1]
+"blaze/blaze" -> "ibis-project/ibis" ["e"=1]
+"sqlite/sqlite-wasm" -> "duckdb/duckdb-wasm" ["e"=1]
+"kayak/pypika" -> "tobymao/sqlglot" ["e"=1]
+"chdb-io/chdb" -> "TobikoData/sqlmesh" ["e"=1]
+"chdb-io/chdb" -> "rilldata/rill" ["e"=1]
 "bitol-io/open-data-contract-standard" -> "datacontract/datacontract-cli"
 "bitol-io/open-data-contract-standard" -> "datacontract/datacontract-specification"
 "bitol-io/open-data-contract-standard" -> "paypal/data-contract-template"
@@ -1874,6 +2167,11 @@ digraph G {
 "snowflakedb/snowflake-sqlalchemy" -> "Snowflake-Labs/schemachange"
 "snowflakedb/snowflake-sqlalchemy" -> "Snowflake-Labs/awesome-snowflake"
 "snowflakedb/snowflake-sqlalchemy" -> "snowflakedb/SnowAlert"
+"schemaspy/schemaspy" -> "sqlfluff/sqlfluff" ["e"=1]
+"schemaspy/schemaspy" -> "datafold/data-diff" ["e"=1]
+"Textualize/frogmouth" -> "tconbeer/harlequin" ["e"=1]
+"OpenRefine/OpenRefine" -> "getredash/redash" ["e"=1]
+"OpenRefine/OpenRefine" -> "metabase/metabase" ["e"=1]
 "data-drift/data-drift" -> "OpenWebhook/webhook-store"
 "data-drift/data-drift" -> "carbonfact/lea"
 "xorq-labs/xorq" -> "eakmanrq/sqlframe"
@@ -1904,6 +2202,7 @@ digraph G {
 "slidoapp/sliger" -> "jozefizso/swift-xattr"
 "slidoapp/sliger" -> "slidoapp/duckberg"
 "slidoapp/sliger" -> "slidoapp/prompterator"
+"darrenburns/elia" -> "tconbeer/harlequin" ["e"=1]
 "paypal/data-contract-template" -> "bitol-io/open-data-contract-standard"
 "paypal/data-contract-template" -> "datacontract/datacontract-specification"
 "paypal/data-contract-template" -> "datacontract/datacontract-cli"
@@ -1923,6 +2222,7 @@ digraph G {
 "bruin-data/bruin" -> "dlt-hub/dlt"
 "bruin-data/bruin" -> "davidgasquez/awesome-duckdb"
 "bruin-data/bruin" -> "arkflow-rs/arkflow" ["e"=1]
+"timeplus-io/proton" -> "TobikoData/sqlmesh" ["e"=1]
 "microsoft/dbt-fabric" -> "microsoft/dbt-fabricspark"
 "microsoft/dbt-fabric" -> "microsoft/dbt-synapse"
 "datacontract/datacontract-cli" -> "datacontract/datacontract-specification"
@@ -1940,6 +2240,12 @@ digraph G {
 "datacontract/datacontract-cli" -> "elementary-data/elementary"
 "datacontract/datacontract-cli" -> "databrickslabs/dqx" ["e"=1]
 "datacontract/datacontract-cli" -> "EqualExperts/dbt-unit-testing"
+"sql-formatter-org/sql-formatter" -> "sqlfluff/sqlfluff" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "TobikoData/sqlmesh" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "ibis-project/ibis" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "dlt-hub/dlt" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "meltano/meltano" ["e"=1]
+"databricks/iceberg-kafka-connect" -> "duckdb/duckdb-iceberg" ["e"=1]
 "Titan-Systems/titan" -> "get-select/dbt-snowflake-monitoring"
 "Titan-Systems/titan" -> "dbt-checkpoint/dbt-checkpoint"
 "Titan-Systems/titan" -> "matsonj/nba-monte-carlo"
@@ -1966,12 +2272,20 @@ digraph G {
 "duckdb/duckdb-iceberg" -> "duckdb/duckdb-postgres"
 "duckdb/duckdb-iceberg" -> "duckdb/community-extensions"
 "duckdb/duckdb-iceberg" -> "dentiny/duck-read-cache-fs"
+"microsoft/fabric-toolbox" -> "djouallah/Fabric_Notebooks_Demo" ["e"=1]
 "bosch-aisecurity-aishield/watchtower" -> "AltimateAI/vscode-dbt-power-user"
 "bosch-aisecurity-aishield/watchtower" -> "bosch-aisecurity-aishield/Reference-Implementations"
 "bosch-aisecurity-aishield/watchtower" -> "kby-ai/FaceRecognition-Android" ["e"=1]
+"delta-io/delta-kernel-rs" -> "duckdb/duckdb-delta" ["e"=1]
+"delta-io/delta-kernel-rs" -> "duckdb/uc_catalog" ["e"=1]
 "dbt-labs/dbt-meshify" -> "nicholasyager/dbt-loom"
 "dbt-labs/dbt-meshify" -> "dpguthrie/dbtc"
 "dbt-labs/dbt-meshify" -> "dbt-labs/dbt-semantic-interfaces"
+"observablehq/framework" -> "uwdata/mosaic" ["e"=1]
+"observablehq/framework" -> "evidence-dev/evidence" ["e"=1]
+"observablehq/framework" -> "rilldata/rill" ["e"=1]
+"observablehq/framework" -> "duckdb/duckdb-wasm" ["e"=1]
+"observablehq/framework" -> "davidgasquez/awesome-duckdb" ["e"=1]
 "datacontract/datacontract-specification" -> "datacontract/datacontract-cli"
 "datacontract/datacontract-specification" -> "bitol-io/open-data-contract-standard"
 "datacontract/datacontract-specification" -> "paypal/data-contract-template"
@@ -1980,6 +2294,7 @@ digraph G {
 "datacontract/datacontract-specification" -> "datamesh-architecture/dataproduct-specification"
 "datacontract/datacontract-specification" -> "datacontract/datacontract-gpt"
 "datacontract/datacontract-specification" -> "opendatamesh-initiative/odm-specification-dpdescriptor"
+"apache/iceberg-go" -> "duckdb/duckdb-iceberg" ["e"=1]
 "tekumara/fakesnow" -> "tekumara/notes"
 "tekumara/fakesnow" -> "silverton-io/snowflakecli"
 "ywelsch/duckdb-prql" -> "Bl3f/yato"
@@ -2053,6 +2368,7 @@ digraph G {
 "dagster-io/mdsfest-opensource-mds" -> "C00ldudeNoonan/simple-dbt-runner"
 "dagster-io/mdsfest-opensource-mds" -> "PedramNavid/rust-for-data"
 "dagster-io/mdsfest-opensource-mds" -> "datonic/datadex"
+"airbytehq/quickstarts" -> "flexanalytics/dbt-business-intelligence" ["e"=1]
 "opendatamesh-initiative/odm-platform" -> "opendatamesh-initiative/odm-specification-datastoreapi"
 "MarkRoddy/duckdb-pytables" -> "dacort/duckdb-athena-extension"
 "MarkRoddy/duckdb-pytables" -> "MarkRoddy/duckservability"
@@ -2075,6 +2391,10 @@ digraph G {
 "slidoapp/prompterator" -> "slidoapp/duckberg"
 "z3z1ma/alto" -> "z3z1ma/cdf"
 "AltimateAI/altimate-django" -> "AltimateAI/datapilot-cli"
+"quarylabs/quary" -> "quarylabs/sqruff" ["e"=1]
+"quarylabs/quary" -> "TobikoData/sqlmesh" ["e"=1]
+"quarylabs/quary" -> "evidence-dev/evidence" ["e"=1]
+"quarylabs/quary" -> "Titan-Systems/titan" ["e"=1]
 "antonycourtney/tad" -> "rilldata/rill"
 "antonycourtney/tad" -> "saulpw/visidata" ["e"=1]
 "antonycourtney/tad" -> "davidgasquez/awesome-duckdb"
@@ -2090,6 +2410,13 @@ digraph G {
 "antonycourtney/tad" -> "wireservice/csvkit" ["e"=1]
 "antonycourtney/tad" -> "vega/voyager" ["e"=1]
 "antonycourtney/tad" -> "wesm/feather" ["e"=1]
+"fireducks-dev/fireducks" -> "ibis-project/ibis" ["e"=1]
+"fireducks-dev/fireducks" -> "quackscience/duckdb-extension-httpserver" ["e"=1]
+"gtoonstra/etl-with-airflow" -> "gocardless/airflow-dbt" ["e"=1]
+"DataTalksClub/stock-markets-analytics-zoomcamp" -> "dlt-hub/dlt" ["e"=1]
+"saulpw/visidata" -> "antonycourtney/tad" ["e"=1]
+"Textualize/toolong" -> "tconbeer/harlequin" ["e"=1]
+"latitude-dev/latitude" -> "rilldata/rill" ["e"=1]
 "singer-io/getting-started" -> "singer-io/singer-python"
 "singer-io/getting-started" -> "transferwise/pipelinewise"
 "singer-io/getting-started" -> "meltano/meltano"
@@ -2122,6 +2449,14 @@ digraph G {
 "rpbouman/huey" -> "duckdb/community-extensions"
 "rpbouman/huey" -> "rilldata/rill"
 "rpbouman/huey" -> "mattf96s/QuackDB"
+"bruin-data/ingestr" -> "bruin-data/bruin" ["e"=1]
+"bruin-data/ingestr" -> "dlt-hub/dlt" ["e"=1]
+"bruin-data/ingestr" -> "TobikoData/sqlmesh" ["e"=1]
+"bruin-data/ingestr" -> "datafold/data-diff" ["e"=1]
+"igrek51/wat" -> "ipyflow/ipyflow" ["e"=1]
+"DataTalksClub/llm-zoomcamp" -> "dlt-hub/dlt" ["e"=1]
+"Netflix/maestro" -> "dlt-hub/dlt" ["e"=1]
+"Netflix/maestro" -> "TobikoData/sqlmesh" ["e"=1]
 "incentius-foss/WhatTheDuck" -> "rpbouman/huey"
 "incentius-foss/WhatTheDuck" -> "l1xnan/duckling"
 "incentius-foss/WhatTheDuck" -> "banagale/FileKitty"
@@ -2129,8 +2464,22 @@ digraph G {
 "slidoapp/duckberg" -> "slidoapp/sliger"
 "slidoapp/duckberg" -> "slidoapp/prompterator"
 "slidoapp/duckberg" -> "jozefizso/swift-xattr"
+"sdg-1/consulting-handbook" -> "TobikoData/sqlmesh" ["e"=1]
+"sdg-1/consulting-handbook" -> "Titan-Systems/titan" ["e"=1]
+"sdg-1/consulting-handbook" -> "Hiflylabs/awesome-dbt" ["e"=1]
+"sdg-1/consulting-handbook" -> "duckdb/dbt-duckdb" ["e"=1]
+"sdg-1/data-team-handbook" -> "TobikoData/sqlmesh" ["e"=1]
+"sdg-1/data-team-handbook" -> "DataRecce/recce" ["e"=1]
+"sdg-1/data-team-handbook" -> "Hiflylabs/awesome-dbt" ["e"=1]
+"sdg-1/data-team-handbook" -> "dlt-hub/dlt" ["e"=1]
+"lvgalvao/data-engineering-roadmap" -> "astronomer/astronomer-cosmos" ["e"=1]
+"lakekeeper/lakekeeper" -> "duckdb/duckdb-iceberg" ["e"=1]
+"linkedin/openhouse" -> "duckdb/duckdb-iceberg" ["e"=1]
 "cromano8/Snowflake_ML_Intro" -> "Snowflake-Labs/orchestration-framework"
 "mehd-io/pypi-duck-flow" -> "Bl3f/yato"
+"vega/falcon" -> "uwdata/mosaic" ["e"=1]
+"vega/falcon" -> "rilldata/rill" ["e"=1]
+"vega/falcon" -> "duckdb/duckdb-wasm" ["e"=1]
 "amphi-ai/amphi-etl" -> "davidgasquez/awesome-duckdb"
 "amphi-ai/amphi-etl" -> "rpbouman/huey"
 "amphi-ai/amphi-etl" -> "TobikoData/sqlmesh"
@@ -2147,10 +2496,12 @@ digraph G {
 "amphi-ai/amphi-etl" -> "iterative/datachain" ["e"=1]
 "amphi-ai/amphi-etl" -> "janbjorge/pgqueuer" ["e"=1]
 "carbonfact/lea" -> "Bl3f/yato"
+"relari-ai/continuous-eval" -> "Titan-Systems/titan" ["e"=1]
 "Snowflake-Labs/snowflake-arctic" -> "streamlit/snowflake-arctic-st-demo"
 "Snowflake-Labs/snowflake-arctic" -> "Snowflake-Labs/sf-samples"
 "Snowflake-Labs/snowflake-arctic" -> "Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python"
 "Snowflake-Labs/snowflake-arctic" -> "llm-random/llm-random"
+"cfahlgren1/natural-sql" -> "incentius-foss/WhatTheDuck" ["e"=1]
 "turbolytics/sql-flow" -> "Bl3f/yato"
 "turbolytics/sql-flow" -> "rayokota/kwack"
 "turbolytics/sql-flow" -> "duckdb/dbt-duckdb"
@@ -2165,6 +2516,7 @@ digraph G {
 "turbolytics/sql-flow" -> "quackscience/duckdb-extension-httpserver"
 "turbolytics/sql-flow" -> "apache/datafusion-python" ["e"=1]
 "turbolytics/sql-flow" -> "voltrondata/sqlflite"
+"redotvideo/mamba-chat" -> "llm-random/llm-random" ["e"=1]
 "Snowflake-Labs/snowflake-demo-notebooks" -> "Snowflake-Labs/snowflake-demo-streamlit"
 "Snowflake-Labs/snowflake-demo-notebooks" -> "Snowflake-Labs/sf-samples"
 "Snowflake-Labs/snowflake-demo-notebooks" -> "Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python"
@@ -2174,6 +2526,12 @@ digraph G {
 "Snowflake-Labs/snowflake-demo-notebooks" -> "snowflakedb/snowflake-cli"
 "Snowflake-Labs/snowflake-demo-notebooks" -> "Snowflake-Labs/orchestration-framework"
 "Snowflake-Labs/snowflake-demo-notebooks" -> "Snowflake-Labs/awesome-snowflake"
+"google-deepmind/recurrentgemma" -> "llm-random/llm-random" ["e"=1]
+"duckdb/pg_duckdb" -> "duckdb/dbt-duckdb" ["e"=1]
+"duckdb/pg_duckdb" -> "davidgasquez/awesome-duckdb" ["e"=1]
+"duckdb/pg_duckdb" -> "TobikoData/sqlmesh" ["e"=1]
+"duckdb/pg_duckdb" -> "duckdb/duckdb-wasm" ["e"=1]
+"duckdb/pg_duckdb" -> "rilldata/rill" ["e"=1]
 "Snowflake-Labs/snowflake-demo-streamlit" -> "Snowflake-Labs/snowflake-demo-notebooks"
 "Snowflake-Labs/snowflake-demo-streamlit" -> "Snowflake-Labs/snowpark-python-template"
 "Snowflake-Labs/snowflake-demo-streamlit" -> "Snowflake-Labs/sf-samples"
@@ -2194,11 +2552,13 @@ digraph G {
 "Bl3f/yato" -> "quackscience/duckdb-extension-httpserver"
 "Bl3f/yato" -> "duckdb/dbt-duckdb"
 "Bl3f/yato" -> "MarkRoddy/duckdb-pytables"
+"narwhals-dev/narwhals" -> "ibis-project/ibis" ["e"=1]
 "l1xnan/duckling" -> "taecontrol/orion"
 "erezsh/reladiff" -> "canva-public/dbt-column-lineage-extractor"
 "erezsh/reladiff" -> "datacoves/dbt-coves"
 "erezsh/reladiff" -> "z3z1ma/dbt-osmosis"
 "djouallah/Fabric_Notebooks_Demo" -> "djouallah/aemo_fabric"
+"paradedb/pg_analytics" -> "buremba/universql" ["e"=1]
 "singer-io/singer-python" -> "singer-io/getting-started"
 "singer-io/singer-python" -> "singer-io/singer-tap-template"
 "singer-io/singer-python" -> "singer-io/tap-github"
@@ -2210,6 +2570,7 @@ digraph G {
 "singer-io/singer-python" -> "singer-io/tap-hubspot"
 "singer-io/singer-python" -> "singer-io/tap-facebook"
 "singer-io/singer-python" -> "stitchdata/google-sheets-integration"
+"airbytehq/PyAirbyte" -> "elementary-data/dbt-data-reliability" ["e"=1]
 "dagster-io/awesome-dagster" -> "dagster-io/community-integrations"
 "dbt-labs/dbtcloud-terraforming" -> "dbt-labs/dbt_faker"
 "DataRecce/recce" -> "InfuseAI/piperider"
@@ -2239,8 +2600,24 @@ digraph G {
 "PicnicSupermarket/dbt-score" -> "slidoapp/dbt-coverage"
 "PicnicSupermarket/dbt-score" -> "godatadriven/dbt-bouncer"
 "PicnicSupermarket/dbt-score" -> "DataRecce/recce"
+"iterative/dvc" -> "great-expectations/great_expectations" ["e"=1]
+"huginn/huginn" -> "metabase/metabase" ["e"=1]
+"darrenburns/posting" -> "tconbeer/harlequin" ["e"=1]
+"briefercloud/briefer" -> "astronomer/astronomer-cosmos" ["e"=1]
+"briefercloud/briefer" -> "evidence-dev/evidence" ["e"=1]
+"apache/polaris" -> "TobikoData/sqlmesh" ["e"=1]
+"Mooncake-Labs/pg_mooncake" -> "turbolytics/sql-flow" ["e"=1]
+"catherinedevlin/ipython-sql" -> "ploomber/jupysql" ["e"=1]
+"drasi-project/drasi-platform" -> "turbolytics/sql-flow" ["e"=1]
+"EnhancedJax/Bagels" -> "tconbeer/harlequin" ["e"=1]
+"unitycatalog/unitycatalog" -> "TobikoData/sqlmesh" ["e"=1]
+"pyper-dev/pyper" -> "bruin-data/bruin" ["e"=1]
+"zasper-io/zasper" -> "bruin-data/bruin" ["e"=1]
+"warpstreamlabs/bento" -> "TobikoData/sqlmesh" ["e"=1]
+"warpstreamlabs/bento" -> "turbolytics/sql-flow" ["e"=1]
 "Snowflake-Labs/orchestration-framework" -> "Snowflake-Labs/sfguide-build-and-deploy-snowpark-ml-models-using-streamlit-snowflake-notebooks"
 "Snowflake-Labs/orchestration-framework" -> "Snowflake-Labs/emerging-solutions-toolbox"
+"manzt/quak" -> "uwdata/mosaic" ["e"=1]
 "Query-farm/duckdb-airport-extension" -> "duckdb/community-extensions"
 "Query-farm/duckdb-airport-extension" -> "voltrondata/sqlflite"
 "Query-farm/duckdb-airport-extension" -> "duckdb/duckdb-delta"
@@ -2275,6 +2652,9 @@ digraph G {
 "evidence-dev/duckdb_gsheets" -> "quackscience/duckdb-extension-httpserver"
 "evidence-dev/duckdb_gsheets" -> "Bl3f/yato"
 "evidence-dev/duckdb_gsheets" -> "dsg-polymtl/flockmtl"
+"apecloud/myduckserver" -> "quackscience/duckdb-extension-httpserver" ["e"=1]
+"apecloud/myduckserver" -> "buremba/universql" ["e"=1]
+"apecloud/myduckserver" -> "turbolytics/sql-flow" ["e"=1]
 "eakmanrq/sqlframe" -> "Bl3f/yato"
 "eakmanrq/sqlframe" -> "TobikoData/sqlmesh"
 "eakmanrq/sqlframe" -> "xorq-labs/xorq"
@@ -2314,6 +2694,7 @@ digraph G {
 "buremba/universql" -> "hafenkran/duckdb-bigquery"
 "buremba/universql" -> "evidence-dev/duckdb_gsheets"
 "buremba/universql" -> "dentiny/duck-read-cache-fs"
+"microsoft/fabric-cicd" -> "microsoft/dbt-fabricspark" ["e"=1]
 "dsg-polymtl/flockmtl" -> "RusselWebber/xlDuckDb"
 "dsg-polymtl/flockmtl" -> "quackscience/duckdb-extension-openprompt"
 "singer-io/tap-facebook" -> "singer-io/target-csv"
@@ -2335,6 +2716,15 @@ digraph G {
 "dbt-labs/dbt-utils" -> "AltimateAI/vscode-dbt-power-user"
 "dbt-labs/dbt-utils" -> "calogica/dbt-date"
 "dbt-labs/dbt-utils" -> "elementary-data/elementary"
+"geldata/gel" -> "PRQL/prql" ["e"=1]
+"thenaturalist/awesome-business-intelligence" -> "rilldata/rill" ["e"=1]
+"thenaturalist/awesome-business-intelligence" -> "evidence-dev/evidence" ["e"=1]
+"thenaturalist/awesome-business-intelligence" -> "dbt-labs/dbt-core" ["e"=1]
+"thenaturalist/awesome-business-intelligence" -> "lightdash/lightdash" ["e"=1]
+"thenaturalist/awesome-business-intelligence" -> "dbt-labs/dbt-utils" ["e"=1]
+"rapidsai/cudf" -> "ibis-project/ibis" ["e"=1]
+"HVF/franchise" -> "antonycourtney/tad" ["e"=1]
+"deepseek-ai/smallpond" -> "davidgasquez/awesome-duckdb" ["e"=1]
 "snowflakedb/snowflake-connector-net" -> "fixer-m/snowflake-db-net-client"
 "snowflakedb/snowflake-connector-net" -> "snowflakedb/gosnowflake"
 "snowflakedb/snowflake-connector-net" -> "snowflakedb/snowflake-jdbc"
@@ -2346,6 +2736,13 @@ digraph G {
 "caioricciuti/duck-ui" -> "duckdb/duckdb-node-neo"
 "caioricciuti/duck-ui" -> "Query-farm/duckdb-airport-extension"
 "caioricciuti/duck-ui" -> "quackscience/quackflight"
+"macbre/sql-metadata" -> "tobymao/sqlglot" ["e"=1]
+"macbre/sql-metadata" -> "TobikoData/sqlmesh" ["e"=1]
+"macbre/sql-metadata" -> "brooklyn-data/dbt_artifacts" ["e"=1]
+"macbre/sql-metadata" -> "eakmanrq/sqlframe" ["e"=1]
+"macbre/sql-metadata" -> "datafold/data-diff" ["e"=1]
+"macbre/sql-metadata" -> "jwills/buenavista" ["e"=1]
+"arkflow-rs/arkflow" -> "turbolytics/sql-flow" ["e"=1]
 "dbt-labs/dbt-mcp" -> "mjirv/dbt-datamocktool"
 "dbt-labs/dbt-mcp" -> "yu-iskw/dbt-artifacts-parser"
 "dbt-labs/dbt-mcp" -> "canva-public/dbt-column-lineage-extractor"
@@ -2363,46 +2760,56 @@ digraph G {
 "Snowflake-Labs/Snowflake-AI-Toolkit" -> "Snowflake-Labs/snowflake-demo-notebooks"
 "Snowflake-Labs/Snowflake-AI-Toolkit" -> "Snowflake-Labs/snowflake-demo-streamlit"
 "Snowflake-Labs/Snowflake-AI-Toolkit" -> "Snowflake-Labs/semantic-model-generator"
+"questdb/questdb" ["l"="-19.465,-24.703", "c"=10]
+"airbytehq/airbyte" ["l"="-0.813,16.021"]
 "great-expectations/great_expectations" ["l"="-0.746,16.065"]
 "dbt-labs/dbt-core" ["l"="-0.677,16.024"]
 "dagster-io/dagster" ["l"="-0.719,16.003"]
-"awslabs/deequ" ["l"="-2.525,14.763"]
-"ydataai/ydata-profiling" ["l"="45.365,26.075"]
-"amundsen-io/amundsen" ["l"="-2.461,14.757"]
+"awslabs/deequ" ["l"="-2.525,14.763", "c"=43]
+"ydataai/ydata-profiling" ["l"="45.365,26.075", "c"=68]
+"amundsen-io/amundsen" ["l"="-2.461,14.757", "c"=43]
 "PrefectHQ/prefect" ["l"="-0.802,16.1"]
-"kedro-org/kedro" ["l"="45.274,25.925"]
-"iterative/dvc" ["l"="45.319,25.9"]
-"datahub-project/datahub" ["l"="-2.583,14.853"]
+"kedro-org/kedro" ["l"="45.274,25.925", "c"=68]
+"iterative/dvc" ["l"="45.319,25.9", "c"=68]
+"datahub-project/datahub" ["l"="-2.583,14.853", "c"=43]
 "sodadata/soda-core" ["l"="-0.588,16.025"]
-"mlflow/mlflow" ["l"="45.387,25.899"]
-"unionai-oss/pandera" ["l"="45.28,26.057"]
-"airbytehq/airbyte" ["l"="-0.813,16.021"]
+"mlflow/mlflow" ["l"="45.387,25.899", "c"=68]
+"unionai-oss/pandera" ["l"="45.28,26.057", "c"=68]
 "apache/airflow" ["l"="-0.898,16.095"]
-"Netflix/metaflow" ["l"="45.284,25.859"]
-"pola-rs/polars" ["l"="44.645,20.67"]
-"pydantic/pydantic" ["l"="44.75,20.746"]
-"spotify/luigi" ["l"="44.514,20.588"]
-"dask/dask" ["l"="43.655,23.686"]
-"streamlit/streamlit" ["l"="44.476,20.451"]
-"astral-sh/ruff" ["l"="44.741,20.693"]
-"getredash/redash" ["l"="-0.98,16.013"]
-"metabase/metabase" ["l"="-0.997,16.11"]
+"Netflix/metaflow" ["l"="45.284,25.859", "c"=68]
+"jghoman/awesome-apache-airflow" ["l"="0.335,16.017", "c"=1224]
+"odoo/odoo" ["l"="15.468,-10.551", "c"=198]
 "apache/superset" ["l"="-1.082,16.047"]
+"metabase/metabase" ["l"="-0.997,16.11"]
+"simonw/datasette" ["l"="5.353,-8.998", "c"=0]
+"ibis-project/ibis" ["l"="-0.598,15.874"]
+"apache/spark" ["l"="-2.926,14.733", "c"=43]
+"BasPH/data-pipelines-with-apache-airflow" ["l"="0.393,15.982", "c"=1224]
+"gocardless/airflow-dbt" ["l"="-0.494,16.073"]
+"pola-rs/polars" ["l"="44.645,20.67", "c"=20]
+"pydantic/pydantic" ["l"="44.75,20.746", "c"=20]
+"spotify/luigi" ["l"="44.514,20.588", "c"=20]
+"dask/dask" ["l"="43.655,23.686", "c"=95]
+"streamlit/streamlit" ["l"="44.476,20.451", "c"=20]
+"astral-sh/ruff" ["l"="44.741,20.693", "c"=20]
+"nomic-ai/deepscatter" ["l"="43.37,24.603", "c"=95]
+"uwdata/mosaic" ["l"="-0.403,15.882"]
+"getredash/redash" ["l"="-0.98,16.013"]
 "cube-js/cube" ["l"="-0.9,15.994"]
-"ClickHouse/ClickHouse" ["l"="-19.566,-24.894"]
-"plotly/dash" ["l"="43.537,23.67"]
-"grafana/grafana" ["l"="8.626,-8.245"]
-"apache/druid" ["l"="-2.764,14.708"]
-"prestodb/presto" ["l"="-2.763,14.77"]
-"getsentry/sentry" ["l"="8.692,-8.077"]
-"Kong/kong" ["l"="8.42,-8.213"]
-"duckdb/duckdb" ["l"="-19.45,-24.831"]
+"ClickHouse/ClickHouse" ["l"="-19.566,-24.894", "c"=10]
+"plotly/dash" ["l"="43.537,23.67", "c"=95]
+"grafana/grafana" ["l"="8.626,-8.245", "c"=14]
+"apache/druid" ["l"="-2.764,14.708", "c"=43]
+"prestodb/presto" ["l"="-2.763,14.77", "c"=43]
+"getsentry/sentry" ["l"="8.692,-8.077", "c"=14]
+"Kong/kong" ["l"="8.42,-8.213", "c"=14]
+"duckdb/duckdb" ["l"="-19.45,-24.831", "c"=10]
 "dlt-hub/dlt" ["l"="-0.565,15.95"]
 "mage-ai/mage-ai" ["l"="-0.734,15.961"]
 "TobikoData/sqlmesh" ["l"="-0.528,15.96"]
 "sqlfluff/sqlfluff" ["l"="-0.633,16.029"]
-"ibis-project/ibis" ["l"="-0.598,15.874"]
 "tobymao/sqlglot" ["l"="-0.616,15.933"]
+"andkret/Cookbook" ["l"="0.421,16.33", "c"=1000]
 "josephaxisa/henry" ["l"="-0.728,15.859"]
 "WarbyParker/lookmlint" ["l"="-0.712,15.877"]
 "looker/lookml-test-runner" ["l"="-0.739,15.853"]
@@ -2431,56 +2838,74 @@ digraph G {
 "tnightengale/dbt-meta-testing" ["l"="-0.432,16.017"]
 "looker/lookerbot" ["l"="-0.711,15.859"]
 "mjirv/dbt-datamocktool" ["l"="-0.409,16.033"]
-"vectordotdev/vector" ["l"="8.404,-8.715"]
-"hasura/graphql-engine" ["l"="-0.067,-20.836"]
-"meilisearch/meilisearch" ["l"="15.459,-10.453"]
-"databendlabs/databend" ["l"="-0.454,15.044"]
-"pubkey/rxdb" ["l"="-4.499,-29.422"]
-"transloadit/uppy" ["l"="-0.871,-26.926"]
-"directus/directus" ["l"="15.584,-10.231"]
-"PostHog/posthog" ["l"="15.889,-10.426"]
+"vectordotdev/vector" ["l"="8.404,-8.715", "c"=14]
+"hasura/graphql-engine" ["l"="-0.067,-20.836", "c"=153]
+"meilisearch/meilisearch" ["l"="15.459,-10.453", "c"=198]
+"databendlabs/databend" ["l"="-0.454,15.044", "c"=729]
+"pubkey/rxdb" ["l"="-4.499,-29.422", "c"=4]
+"transloadit/uppy" ["l"="-0.871,-26.926", "c"=814]
+"directus/directus" ["l"="15.584,-10.231", "c"=198]
+"PostHog/posthog" ["l"="15.889,-10.426", "c"=198]
+"dolthub/dolt" ["l"="4.562,-8.979", "c"=0]
+"PRQL/prql" ["l"="-0.677,15.804"]
+"feast-dev/feast" ["l"="45.299,25.787", "c"=68]
+"rudderlabs/rudder-server" ["l"="16.128,-10.485", "c"=198]
+"grouparoo/grouparoo" ["l"="-0.437,16.13"]
+"evidence-dev/evidence" ["l"="-0.544,15.897"]
+"metrico/gigapipe" ["l"="1.245,-9.224", "c"=1144]
+"metrico/qryn-view" ["l"="-0.135,15.783"]
+"metrico/clickhouse-mate" ["l"="-0.107,15.777"]
+"gigapi/gigapi" ["l"="-0.174,15.811"]
+"Freeboard/freeboard" ["l"="11.354,-8.941", "c"=18]
+"aws/aws-sdk-pandas" ["l"="11.667,-2.658", "c"=873]
+"mukunku/ParquetViewer" ["l"="-34.789,-0.583", "c"=8]
+"antonycourtney/tad" ["l"="-0.476,15.844"]
+"holistics/dbml" ["l"="-2.057,12.68", "c"=15]
+"re-data/re-data" ["l"="-0.541,16.043"]
 "InfuseAI/primehub" ["l"="-0.331,16.167"]
 "InfuseAI/piperider" ["l"="-0.399,16.103"]
 "InfuseAI/crane" ["l"="-0.318,16.229"]
 "InfuseAI/primehub-python-sdk" ["l"="-0.317,16.208"]
 "InfuseAI/dimon" ["l"="-0.35,16.187"]
-"pycontw/pycon.tw" ["l"="47.724,21.139"]
+"pycontw/pycon.tw" ["l"="47.724,21.139", "c"=192]
 "InfuseAI/ArtiVC" ["l"="-0.341,16.208"]
 "DataRecce/recce" ["l"="-0.395,16.078"]
 "InfuseAI/primehub-controller" ["l"="-0.28,16.197"]
 "InfuseAI/primehub-aws-cdk" ["l"="-0.303,16.214"]
-"moskytw/data-science-with-python" ["l"="22.086,2.154"]
+"moskytw/data-science-with-python" ["l"="22.086,2.154", "c"=208]
 "Canner/vulcan-sql" ["l"="-0.318,16.101"]
-"transferwise/pipelinewise" ["l"="-0.548,16.074"]
+"elliottzheng/CopyTranslator" ["l"="-48.645,12.641", "c"=13]
+"mattm/sql-style-guide" ["l"="-0.484,15.96"]
+"mara/mara-pipelines" ["l"="0.402,16.087", "c"=1224]
 "singer-io/getting-started" ["l"="-0.589,16.112"]
+"transferwise/pipelinewise" ["l"="-0.548,16.074"]
 "singer-io/singer-python" ["l"="-0.619,16.194"]
-"gocardless/airflow-dbt" ["l"="-0.494,16.073"]
 "Datavault-UK/automate-dv" ["l"="-0.469,16.081"]
 "meltano/meltano" ["l"="-0.542,15.98"]
 "rittmananalytics/ra_data_warehouse" ["l"="-0.449,16.061"]
-"re-data/re-data" ["l"="-0.541,16.043"]
 "dbt-labs/dbt-external-tables" ["l"="-0.47,16.035"]
 "dbt-labs/dbt-labs-experimental-features" ["l"="-0.469,16.014"]
 "fal-ai/dbt-fal" ["l"="-0.486,16.027"]
-"astronomer/airflow-chart" ["l"="0.284,15.922"]
+"astronomer/airflow-chart" ["l"="0.284,15.922", "c"=1224]
 "dbt-msft/dbt-sqlserver" ["l"="-0.446,16.21"]
 "dbt-msft/tsql-utils" ["l"="-0.442,16.253"]
 "microsoft/dbt-fabric" ["l"="-0.436,16.296"]
 "microsoft/dbt-synapse" ["l"="-0.436,16.277"]
 "dbt-labs/dbt-codegen" ["l"="-0.474,16.047"]
+"MarquezProject/marquez" ["l"="-2.434,14.766", "c"=43]
 "finos/perspective" ["l"="-0.633,15.751"]
-"apache/arrow" ["l"="-2.865,14.862"]
-"evidence-dev/evidence" ["l"="-0.544,15.897"]
-"leeoniya/uPlot" ["l"="-3.822,-29.202"]
-"vaexio/vaex" ["l"="45.322,26.021"]
-"marimo-team/marimo" ["l"="43.003,20.692"]
-"apache/datafusion" ["l"="-0.445,14.993"]
+"apache/arrow" ["l"="-2.865,14.862", "c"=43]
+"leeoniya/uPlot" ["l"="-3.822,-29.202", "c"=4]
+"vaexio/vaex" ["l"="45.322,26.021", "c"=68]
+"marimo-team/marimo" ["l"="43.003,20.692", "c"=1073]
+"apache/datafusion" ["l"="-0.445,14.993", "c"=729]
 "Kanaries/graphic-walker" ["l"="-0.559,15.799"]
-"vega/falcon" ["l"="-5.351,-41.669"]
+"vega/falcon" ["l"="-5.351,-41.669", "c"=333]
 "rilldata/rill" ["l"="-0.487,15.908"]
-"holoviz/panel" ["l"="43.701,23.932"]
-"PRQL/prql" ["l"="-0.677,15.804"]
-"lancedb/lance" ["l"="-0.447,14.924"]
+"holoviz/panel" ["l"="43.701,23.932", "c"=95]
+"lancedb/lance" ["l"="-0.447,14.924", "c"=729]
+"astronomer/astro-cli" ["l"="0.315,15.863", "c"=1224]
+"astronomer/astronomer-cosmos" ["l"="-0.524,16.067"]
 "Snowflake-Labs/schemachange" ["l"="-0.432,15.815"]
 "snowflakedb/terraform-provider-snowflake" ["l"="-0.436,15.843"]
 "dbt-labs/dbt-snowflake" ["l"="-0.457,15.982"]
@@ -2513,6 +2938,7 @@ digraph G {
 "looker-open-source/LookerEmbedReference" ["l"="-0.834,15.774"]
 "fabio-looker/looker_sso_tool" ["l"="-0.86,15.803"]
 "looker-open-source/extension-examples" ["l"="-0.857,15.768"]
+"reata/sqllineage" ["l"="-2.39,14.849", "c"=43]
 "dbt-labs/dbt-project-evaluator" ["l"="-0.449,16.035"]
 "dbt-labs/dbt-audit-helper" ["l"="-0.452,16.047"]
 "elementary-data/dbt-data-reliability" ["l"="-0.461,16.054"]
@@ -2520,36 +2946,52 @@ digraph G {
 "EqualExperts/dbt-unit-testing" ["l"="-0.436,16.067"]
 "datacoves/dbt-coves" ["l"="-0.412,16.044"]
 "AltimateAI/vscode-dbt-power-user" ["l"="-0.443,16.005"]
+"astronomer/dag-factory" ["l"="0.342,15.964", "c"=1224]
+"dataform-co/dataform" ["l"="44.866,16.282", "c"=213]
+"dbt-labs/metricflow" ["l"="-0.518,16.039"]
+"astronomer/astronomer" ["l"="0.308,15.904", "c"=1224]
 "dbt-labs/dbt-spark" ["l"="-0.484,16.089"]
-"databricks/dbt-databricks" ["l"="-1.623,17.603"]
+"databricks/dbt-databricks" ["l"="-1.623,17.603", "c"=1046]
 "dbt-labs/dbt-meshify" ["l"="-0.379,16.163"]
 "tomasfarias/airflow-dbt-python" ["l"="-0.461,16.104"]
 "dbt-labs/dbt-bigquery" ["l"="-0.469,16.066"]
 "dbt-labs/dbt-redshift" ["l"="-0.505,16.219"]
-"astronomer/astronomer-cosmos" ["l"="-0.524,16.067"]
 "dbt-labs/dbt_metrics" ["l"="-0.425,16.05"]
 "capitalone/datacompy" ["l"="-0.711,15.919"]
 "capitalone/locopy" ["l"="-0.792,15.897"]
 "capitalone/DataProfiler" ["l"="-0.63,15.892"]
-"capitalone/giraffez" ["l"="-2.116,14.546"]
-"awslabs/python-deequ" ["l"="-1.716,17.546"]
+"capitalone/giraffez" ["l"="-2.116,14.546", "c"=43]
+"awslabs/python-deequ" ["l"="-1.716,17.546", "c"=1046]
 "Zac-HD/escape-from-automanual-testing" ["l"="-0.771,15.909"]
-"fugue-project/fugue" ["l"="-0.414,14.815"]
-"mattm/sql-style-guide" ["l"="-0.484,15.96"]
+"fugue-project/fugue" ["l"="-0.414,14.815", "c"=729]
+"uwdata/visualization-curriculum" ["l"="-5.307,-41.654", "c"=333]
+"RobinL/fuzzymatcher" ["l"="52.325,26.186", "c"=172]
+"moj-analytical-services/splink" ["l"="-0.571,15.915"]
+"fbaptiste/python-deepdive" ["l"="45.76,21.437", "c"=20]
+"nordquant/complete-dbt-bootcamp-zero-to-hero" ["l"="-0.469,15.926"]
+"dbcli/litecli" ["l"="-13.649,-6.481", "c"=86]
+"tconbeer/harlequin" ["l"="-0.517,15.862"]
 "dbt-labs/corp" ["l"="-0.466,16.001"]
 "brooklyn-data/co" ["l"="-0.46,15.953"]
-"5A59/Zvm" ["l"="-43.895,11.112"]
-"enilu/web-flash" ["l"="-43.915,11.082"]
+"5A59/Zvm" ["l"="-43.895,11.112", "c"=1049]
+"enilu/web-flash" ["l"="-43.915,11.082", "c"=1049]
 "erika-e/dbt-tips" ["l"="-0.419,16.021"]
 "flpezet/analytics-readings" ["l"="-0.409,15.855"]
-"algorithm004-01/algorithm004-01" ["l"="-43.967,11.166"]
-"eryajf/magic-of-sysuse-scripts" ["l"="-43.994,11.159"]
+"algorithm004-01/algorithm004-01" ["l"="-43.967,11.166", "c"=1049]
+"eryajf/magic-of-sysuse-scripts" ["l"="-43.994,11.159", "c"=1049]
 "Hiflylabs/awesome-dbt" ["l"="-0.5,15.994"]
+"mckinsey/qbstyles" ["l"="22.22,14.522", "c"=267]
+"mckinsey/vizro" ["l"="-0.582,15.766"]
+"J535D165/data-matching-software" ["l"="52.333,26.212", "c"=172]
 "snowflakedb/snowflake-ingest-python" ["l"="-0.393,15.718"]
 "mariusndini/MyDay-Health-App" ["l"="-0.376,15.698"]
 "Snowflake-Labs/sfgrantreport" ["l"="-0.368,15.675"]
 "jamesweakley/snowflake-rbgm" ["l"="-0.371,15.653"]
 "zoharsan/snowtire" ["l"="-0.359,15.635"]
+"marcboeker/go-duckdb" ["l"="4.449,-8.3", "c"=0]
+"duckdb/duckdb-postgres" ["l"="-0.243,15.84"]
+"duckdb/duckdb-wasm" ["l"="-0.384,15.852"]
+"ywelsch/duckdb-prql" ["l"="-0.273,15.837"]
 "dbt-labs/dbt-docs" ["l"="-0.41,15.992"]
 "jamesweakley/snoad" ["l"="-0.358,15.609"]
 "snowflakedb/snowflake-kafka-connector" ["l"="-0.308,15.657"]
@@ -2574,91 +3016,110 @@ digraph G {
 "datamill-co/singer-runner" ["l"="-0.663,16.367"]
 "capitalone/global-attribution-mapping" ["l"="-0.664,15.858"]
 "capitalone/synthetic-data" ["l"="-0.68,15.847"]
+"gristlabs/grist-core" ["l"="16.026,-10.224", "c"=198]
+"kestra-io/kestra" ["l"="15.832,-10.248", "c"=198]
+"chartbrew/chartbrew" ["l"="16.141,-10.116", "c"=198]
+"sybrenjansen/mpire" ["l"="45.037,21.108", "c"=20]
+"ipyflow/ipyflow" ["l"="-0.494,15.793"]
+"ploomber/ploomber" ["l"="45.257,25.982", "c"=68]
+"ploomber/jupysql" ["l"="-0.332,15.829"]
+"uwdata/arquero" ["l"="-5.331,-41.604", "c"=333]
+"fin-hypergrid/core" ["l"="-22.324,-21.017", "c"=474]
+"PostgREST/postgrest" ["l"="2.477,13.623", "c"=257]
+"keen/dashboards" ["l"="22.559,-26.838", "c"=28]
+"alyssaxuu/flowy" ["l"="-3.619,-41.88", "c"=302]
 "Kanaries/Rath" ["l"="-0.62,15.815"]
-"Kanaries/pygwalker" ["l"="42.981,20.755"]
-"lucidrains/PaLM-rlhf-pytorch" ["l"="39.755,0.583"]
-"antvis/AVA" ["l"="-4.066,-32.811"]
-"microsoft/lida" ["l"="40.863,-4.017"]
-"windmill-labs/windmill" ["l"="15.981,-10.207"]
-"KDE/kdenlive" ["l"="-32.759,-29.263"]
-"sinaptik-ai/pandas-ai" ["l"="40.729,0.094"]
-"mckinsey/vizro" ["l"="-0.582,15.766"]
-"ObservedObserver/viz-gpt" ["l"="40.924,-4.493"]
-"sfu-db/dataprep" ["l"="45.237,26.208"]
-"trinodb/trino" ["l"="-2.737,14.868"]
-"debezium/debezium" ["l"="-2.78,14.923"]
+"Kanaries/pygwalker" ["l"="42.981,20.755", "c"=1073]
+"lucidrains/PaLM-rlhf-pytorch" ["l"="39.755,0.583", "c"=7]
+"antvis/AVA" ["l"="-4.066,-32.811", "c"=30]
+"microsoft/lida" ["l"="40.863,-4.017", "c"=146]
+"windmill-labs/windmill" ["l"="15.981,-10.207", "c"=198]
+"KDE/kdenlive" ["l"="-32.759,-29.263", "c"=1012]
+"sinaptik-ai/pandas-ai" ["l"="40.729,0.094", "c"=7]
+"ObservedObserver/viz-gpt" ["l"="40.924,-4.493", "c"=146]
+"sfu-db/dataprep" ["l"="45.237,26.208", "c"=68]
+"trinodb/trino" ["l"="-2.737,14.868", "c"=43]
+"debezium/debezium" ["l"="-2.78,14.923", "c"=43]
+"PipedreamHQ/pipedream" ["l"="15.821,-10.204", "c"=198]
+"jitsucom/jitsu" ["l"="16.144,-10.381", "c"=198]
+"rapidfuzz/RapidFuzz" ["l"="52.527,25.915", "c"=172]
+"piskvorky/smart_open" ["l"="44.924,20.902", "c"=20]
+"delta-io/delta-rs" ["l"="-0.401,14.897", "c"=729]
+"pditommaso/awesome-pipeline" ["l"="0.309,16.145", "c"=1224]
 "tconbeer/sqlfmt" ["l"="-0.426,16.035"]
 "duckdb/dbt-duckdb" ["l"="-0.426,15.942"]
 "bosch-aisecurity-aishield/watchtower" ["l"="-0.347,16.005"]
 "fivetran/dbt_ad_reporting" ["l"="-0.374,16.22"]
 "fivetran/dbt_netsuite" ["l"="-0.354,16.308"]
+"pluralsh/plural" ["l"="30.333,-24.784", "c"=523]
+"flyteorg/flyte" ["l"="45.244,25.782", "c"=68]
 "ploomber/soopervisor" ["l"="-0.117,15.572"]
 "ploomber/soorgeon" ["l"="-0.107,15.549"]
 "ploomber/pkgmt" ["l"="-0.162,15.611"]
 "ploomber/notebooks-academy" ["l"="-0.137,15.598"]
-"grouparoo/grouparoo" ["l"="-0.437,16.13"]
+"vega/voyager" ["l"="-5.355,-41.691", "c"=333]
+"lana-k/sqliteviz" ["l"="5.135,-8.842", "c"=0]
+"awslabs/amazon-redshift-utils" ["l"="11.668,-2.571", "c"=873]
 "grouparoo/www.grouparoo.com" ["l"="-0.43,16.187"]
 "grouparoo/app-examples" ["l"="-0.43,16.174"]
 "castledio/castled" ["l"="-0.304,16.191"]
 "metriql/metriql" ["l"="-0.486,16.065"]
 "tuanchris/modern-data-stack" ["l"="-0.369,16.092"]
 "ActivitySchema/ActivitySchema" ["l"="-0.453,16.074"]
-"rudderlabs/rudder-server" ["l"="16.128,-10.485"]
 "grouparoo/sync-engine-example" ["l"="-0.418,16.182"]
-"jitsucom/jitsu" ["l"="16.144,-10.381"]
 "valmi-io/valmi-activation" ["l"="-0.413,16.24"]
-"moj-analytical-services/splink" ["l"="-0.571,15.915"]
-"J535D165/recordlinkage" ["l"="52.367,26.153"]
-"dedupeio/dedupe" ["l"="52.453,26.07"]
+"J535D165/recordlinkage" ["l"="52.367,26.153", "c"=172]
+"dedupeio/dedupe" ["l"="52.453,26.07", "c"=172]
 "zinggAI/zingg" ["l"="-0.564,16.043"]
-"RobinL/fuzzymatcher" ["l"="52.325,26.186"]
-"kosukeimai/fastLink" ["l"="52.342,26.25"]
+"kosukeimai/fastLink" ["l"="52.342,26.25", "c"=172]
 "davidgasquez/awesome-duckdb" ["l"="-0.447,15.881"]
-"J535D165/data-matching-software" ["l"="52.333,26.212"]
 "moj-analytical-services/splink_demos" ["l"="-0.627,15.862"]
 "matsonj/nba-monte-carlo" ["l"="-0.381,15.945"]
 "jwills/buenavista" ["l"="-0.294,15.928"]
 "Mause/duckdb_engine" ["l"="-0.293,15.848"]
 "duckdb/duckdb-iceberg" ["l"="-0.284,15.89"]
-"duckdb/pg_duckdb" ["l"="3.751,13.547"]
+"duckdb/pg_duckdb" ["l"="3.751,13.547", "c"=850]
 "Bl3f/yato" ["l"="-0.303,15.909"]
+"sqlpad/sqlpad" ["l"="2.575,13.926", "c"=257]
 "pinterest/querybook" ["l"="-0.579,15.975"]
-"OpenLineage/OpenLineage" ["l"="-2.41,14.766"]
-"dbt-labs/metricflow" ["l"="-0.518,16.039"]
-"linkedin/coral" ["l"="-2.485,14.89"]
-"MarquezProject/marquez" ["l"="-2.434,14.766"]
+"OpenLineage/OpenLineage" ["l"="-2.41,14.766", "c"=43]
+"linkedin/coral" ["l"="-2.485,14.89", "c"=43]
+"facebook/facebook-python-business-sdk" ["l"="-13.9,25.68", "c"=111]
+"singer-io/tap-facebook" ["l"="-0.598,16.202"]
+"googleapis/python-bigquery" ["l"="44.781,16.427", "c"=213]
+"pipeline-tools/gusty" ["l"="0.325,15.893", "c"=1224]
+"estuary/flow" ["l"="-0.339,14.786", "c"=729]
 "treeverse/lakeFS" ["l"="-0.694,16.093"]
-"delta-io/delta" ["l"="-2.713,14.82"]
-"apache/iceberg" ["l"="-2.686,14.864"]
-"projectnessie/nessie" ["l"="-0.275,14.867"]
-"delta-io/delta-rs" ["l"="-0.401,14.897"]
+"delta-io/delta" ["l"="-2.713,14.82", "c"=43]
+"apache/iceberg" ["l"="-2.686,14.864", "c"=43]
+"projectnessie/nessie" ["l"="-0.275,14.867", "c"=729]
 "ploomber/projects" ["l"="-0.082,15.552"]
 "gouline/dbt-metabase" ["l"="-0.436,16.05"]
-"duckdb/duckdb-postgres" ["l"="-0.243,15.84"]
-"alitrack/duckdb_fdw" ["l"="3.658,13.515"]
+"alitrack/duckdb_fdw" ["l"="3.658,13.515", "c"=850]
 "binste/dbt-ibis" ["l"="-0.269,15.799"]
 "duckdb/community-extensions" ["l"="-0.262,15.851"]
 "duckdb/duckdb-delta" ["l"="-0.233,15.883"]
-"ywelsch/duckdb-prql" ["l"="-0.273,15.837"]
 "duckdb/duckdb-sqlite" ["l"="-0.228,15.781"]
 "dbcli/duckcli" ["l"="-0.25,15.806"]
 "RobertFehrmann/fehrminator" ["l"="-0.338,15.574"]
 "datapane/datapane" ["l"="-0.575,15.725"]
 "datapane/gallery" ["l"="-0.605,15.675"]
-"oegedijk/explainerdashboard" ["l"="45.258,26.183"]
-"akanz1/klib" ["l"="45.277,26.322"]
-"alkaline-ml/pmdarima" ["l"="45.444,26.38"]
-"orchest/orchest" ["l"="45.2,26.015"]
+"oegedijk/explainerdashboard" ["l"="45.258,26.183", "c"=68]
+"akanz1/klib" ["l"="45.277,26.322", "c"=68]
+"alkaline-ml/pmdarima" ["l"="45.444,26.38", "c"=68]
+"orchest/orchest" ["l"="45.2,26.015", "c"=68]
 "datapane/examples" ["l"="-0.589,15.687"]
-"man-group/dtale" ["l"="45.246,26.133"]
-"LineaLabs/lineapy" ["l"="40.628,-2.6"]
-"pycob/pyvibe" ["l"="48.274,17.664"]
+"man-group/dtale" ["l"="45.246,26.133", "c"=68]
+"LineaLabs/lineapy" ["l"="40.628,-2.6", "c"=146]
+"pycob/pyvibe" ["l"="48.274,17.664", "c"=640]
+"yikeke/zh-style-guide" ["l"="-44.065,11.163", "c"=1049]
 "rsyi/whale" ["l"="-0.53,16.103"]
 "databand-ai/dbnd" ["l"="-0.562,16.235"]
 "rsyi/whale-bigquery-public-data" ["l"="-0.561,16.145"]
-"tokern/data-lineage" ["l"="-2.346,14.788"]
+"tokern/data-lineage" ["l"="-2.346,14.788", "c"=43]
 "oxy-hq/oxy" ["l"="-0.564,16.172"]
-"amundsen-io/amundsendatabuilder" ["l"="0.532,15.912"]
+"amundsen-io/amundsendatabuilder" ["l"="0.532,15.912", "c"=1224]
+"gzuidhof/starboard-notebook" ["l"="-5.498,-41.641", "c"=333]
 "Snowflake-Labs/sf-samples" ["l"="-0.454,15.698"]
 "Snowflake-Labs/snowflake-demo-notebooks" ["l"="-0.464,15.684"]
 "Snowflake-Labs/sfguide-getting-started-dataengineering-ml-snowpark-python" ["l"="-0.469,15.699"]
@@ -2670,33 +3131,37 @@ digraph G {
 "Snowflake-Labs/sfguide-getting-started-snowpark-python" ["l"="-0.426,15.713"]
 "datnguye/dbterd" ["l"="-0.42,16.061"]
 "Montreal-Analytics/dbt-snowflake-utils" ["l"="-0.425,15.982"]
+"WassimBenzarti/colab-ssh" ["l"="-44.492,16.914", "c"=215]
+"InfuseAI/colab-xterm" ["l"="-0.289,16.315"]
 "flexanalytics/dbt-business-intelligence" ["l"="-0.399,16.061"]
 "omnata-labs/dbt-ml-preprocessing" ["l"="-0.391,16.044"]
 "ScalefreeCOM/datavault4dbt" ["l"="-0.47,16.168"]
 "PicnicSupermarket/diepvries" ["l"="-0.456,16.185"]
 "sqlfluff/vscode-sqlfluff" ["l"="-0.507,16.122"]
 "sqlfluff/sqlfluff-github-actions" ["l"="-0.531,16.164"]
-"ipyflow/ipyflow" ["l"="-0.494,15.793"]
-"manzt/anywidget" ["l"="43.482,24.324"]
+"manzt/anywidget" ["l"="43.482,24.324", "c"=95]
 "paddymul/buckaroo" ["l"="-0.388,15.759"]
-"jupyter-widgets/ipydatagrid" ["l"="43.487,24.233"]
-"xiaohk/stickyland" ["l"="43.458,24.345"]
-"widgetti/solara" ["l"="42.857,20.591"]
-"widgetti/reacton" ["l"="43.468,24.301"]
-"narwhals-dev/narwhals" ["l"="43.621,26.313"]
-"jupyterlite/jupyterlite" ["l"="43.541,24.028"]
+"jupyter-widgets/ipydatagrid" ["l"="43.487,24.233", "c"=95]
+"xiaohk/stickyland" ["l"="43.458,24.345", "c"=95]
+"widgetti/solara" ["l"="42.857,20.591", "c"=1073]
+"widgetti/reacton" ["l"="43.468,24.301", "c"=95]
+"narwhals-dev/narwhals" ["l"="43.621,26.313", "c"=1179]
+"jupyterlite/jupyterlite" ["l"="43.541,24.028", "c"=95]
 "eakmanrq/sqlframe" ["l"="-0.324,15.927"]
-"jtpio/ipylab" ["l"="43.409,24.189"]
-"igrek51/wat" ["l"="45.066,21.259"]
-"sybrenjansen/mpire" ["l"="45.037,21.108"]
-"mwouts/itables" ["l"="43.547,24.173"]
+"jtpio/ipylab" ["l"="43.409,24.189", "c"=95]
+"igrek51/wat" ["l"="45.066,21.259", "c"=20]
+"mwouts/itables" ["l"="43.547,24.173", "c"=95]
+"GoogleCloudPlatform/bigquery-utils" ["l"="44.882,16.378", "c"=213]
+"petl-developers/petl" ["l"="0.426,16.122", "c"=1224]
 "sfc-gh-gpavlik/snowflake_data_profiling" ["l"="-0.304,15.701"]
 "sfc-gh-gpavlik/snowflake_script_runner" ["l"="-0.32,15.717"]
+"soggycactus/airflow-repo-template" ["l"="0.409,16.009", "c"=1224]
 "dexters-workshop/analytics-engineering-library" ["l"="-0.398,15.823"]
 "clrcrl/advanced-sql" ["l"="-0.379,15.802"]
 "mindyng/analytics-readings" ["l"="-0.385,15.823"]
-"astronomer/airflow-dbt-demo" ["l"="0.404,15.848"]
-"greatexpectationslabs/ge_tutorials" ["l"="0.394,15.876"]
+"andreax79/airflow-code-editor" ["l"="0.307,15.929", "c"=1224]
+"astronomer/airflow-dbt-demo" ["l"="0.404,15.848", "c"=1224]
+"greatexpectationslabs/ge_tutorials" ["l"="0.394,15.876", "c"=1224]
 "dbt-labs/docs.getdbt.com" ["l"="-0.517,16.144"]
 "starschema/COVID-19-data" ["l"="-0.323,15.531"]
 "dataroot/Kaggle-CV" ["l"="-0.569,16.27"]
@@ -2705,68 +3170,94 @@ digraph G {
 "fivetran/analytics-templates" ["l"="-0.341,16.332"]
 "fivetran/dbt_netsuite_source" ["l"="-0.359,16.338"]
 "InfuseAI/primehub-console" ["l"="-0.25,16.216"]
-"Eventual-Inc/Daft" ["l"="-0.373,14.881"]
-"modin-project/modin" ["l"="45.322,26.054"]
-"substrait-io/substrait" ["l"="-0.428,14.907"]
-"apache/spark" ["l"="-2.926,14.733"]
-"apache/echarts" ["l"="-1.014,-32.185"]
-"prometheus/prometheus" ["l"="8.507,-8.355"]
-"fastapi/fastapi" ["l"="44.564,20.476"]
-"n8n-io/n8n" ["l"="40.566,-0.255"]
-"nocodb/nocodb" ["l"="15.639,-10.409"]
-"apache/flink" ["l"="-2.797,14.863"]
-"apache/kafka" ["l"="-2.855,11.641"]
-"celery/celery" ["l"="44.544,20.662"]
-"ray-project/ray" ["l"="50.74,29.255"]
-"appsmithorg/appsmith" ["l"="15.692,-10.338"]
-"minio/minio" ["l"="8.49,-8.155"]
-"ToolJet/ToolJet" ["l"="15.658,-10.155"]
-"Budibase/budibase" ["l"="15.774,-10.231"]
-"andialbrecht/sqlparse" ["l"="-2.217,14.789"]
-"reata/sqllineage" ["l"="-2.39,14.849"]
+"observablehq/plot" ["l"="-5.362,-41.6", "c"=333]
+"cloudquery/cloudquery" ["l"="11.387,-4.764", "c"=147]
+"Eventual-Inc/Daft" ["l"="-0.373,14.881", "c"=729]
+"modin-project/modin" ["l"="45.322,26.054", "c"=68]
+"substrait-io/substrait" ["l"="-0.428,14.907", "c"=729]
+"growthbook/growthbook" ["l"="16.037,-10.349", "c"=198]
+"apache/echarts" ["l"="-1.014,-32.185", "c"=295]
+"prometheus/prometheus" ["l"="8.507,-8.355", "c"=14]
+"fastapi/fastapi" ["l"="44.564,20.476", "c"=20]
+"n8n-io/n8n" ["l"="40.566,-0.255", "c"=7]
+"nocodb/nocodb" ["l"="15.639,-10.409", "c"=198]
+"apache/flink" ["l"="-2.797,14.863", "c"=43]
+"apache/kafka" ["l"="-2.855,11.641", "c"=15]
+"celery/celery" ["l"="44.544,20.662", "c"=20]
+"ray-project/ray" ["l"="50.74,29.255", "c"=83]
+"meirwah/awesome-workflow-engines" ["l"="0.318,16.209", "c"=1224]
+"RocketChat/Rocket.Chat" ["l"="8.634,-7.741", "c"=14]
+"appsmithorg/appsmith" ["l"="15.692,-10.338", "c"=198]
+"minio/minio" ["l"="8.49,-8.155", "c"=14]
+"ToolJet/ToolJet" ["l"="15.658,-10.155", "c"=198]
+"Budibase/budibase" ["l"="15.774,-10.231", "c"=198]
+"andialbrecht/sqlparse" ["l"="-2.217,14.789", "c"=43]
 "malloydata/malloy" ["l"="-0.539,15.931"]
+"softwaretechnik-berlin/dbml-renderer" ["l"="-1.998,12.791", "c"=15]
+"snowplow/snowplow" ["l"="16.191,-10.721", "c"=198]
+"chaos-genius/chaos_genius" ["l"="52.396,14.695", "c"=569]
+"monosidev/monosi" ["l"="-0.293,16.161"]
+"aws/aws-mwaa-local-runner" ["l"="11.623,-2.631", "c"=873]
 "meltano/sdk" ["l"="-0.367,15.808"]
+"open-metadata/OpenMetadata" ["l"="-2.489,14.789", "c"=43]
+"mathesar-foundation/mathesar" ["l"="16.157,-10.208", "c"=198]
+"airflow-helm/charts" ["l"="0.363,15.949", "c"=1224]
+"ssp-data/practical-data-engineering" ["l"="0.326,16.461", "c"=1000]
+"dagster-io/dagster-open-platform" ["l"="-0.345,15.919"]
+"cnstlungu/portable-data-stack-dagster" ["l"="-0.368,15.889"]
+"puckel/docker-airflow" ["l"="0.366,16.031", "c"=1224]
+"danvergara/dblab" ["l"="-13.177,-7.019", "c"=86]
 "databricks-industry-solutions/customer-er" ["l"="-0.6,16.08"]
-"duckdb/duckdb-wasm" ["l"="-0.384,15.852"]
-"uwdata/mosaic" ["l"="-0.403,15.882"]
+"YS-L/csvlens" ["l"="-13.238,-6.891", "c"=86]
+"spiceai/spiceai" ["l"="-0.363,14.942", "c"=729]
 "holdenmatt/duckdb-wasm-kit" ["l"="-0.323,15.799"]
-"kylebarron/parquet-wasm" ["l"="41.344,24.33"]
-"uwdata/arquero" ["l"="-5.331,-41.604"]
-"duckdb/duckdb-rs" ["l"="-0.422,14.846"]
-"duckdb/duckdb-spatial" ["l"="41.41,24.315"]
-"sqlite/sqlite-wasm" ["l"="-6.338,-28.441"]
+"kylebarron/parquet-wasm" ["l"="41.344,24.33", "c"=76]
+"duckdb/duckdb-rs" ["l"="-0.422,14.846", "c"=729]
+"duckdb/duckdb-spatial" ["l"="41.41,24.315", "c"=76]
+"sqlite/sqlite-wasm" ["l"="-6.338,-28.441", "c"=793]
+"roapi/roapi" ["l"="-0.404,14.964", "c"=729]
 "mithunmanohar/awsome-snowflake" ["l"="-0.398,15.698"]
 "littleK0i/SnowKill" ["l"="-0.41,15.837"]
 "lynnlangit/learn-snowflakedb" ["l"="-0.398,15.672"]
 "snowflakedb/snowflake-ml-python" ["l"="-0.437,15.723"]
 "Snowflake-Labs/snowpark-extensions-py" ["l"="-0.429,15.686"]
 "snowflakedb/snowpark-java-scala" ["l"="-0.412,15.712"]
+"nicehash/NiceHashQuickMiner" ["l"="-20.605,6.125", "c"=163]
 "dbt-labs/jaffle-shop-classic" ["l"="-0.497,16.052"]
 "dbt-labs/jaffle-shop" ["l"="-0.551,16.114"]
 "dbt-labs/dbt-learn-group-training" ["l"="-0.544,16.136"]
-"tokern/piicatcher" ["l"="4.941,-38.277"]
+"multiprocessio/datastation" ["l"="-13.417,-6.534", "c"=86]
+"tokern/piicatcher" ["l"="4.941,-38.277", "c"=1]
 "capitalone/rubicon-ml" ["l"="-0.7,15.837"]
-"zillow/luminaire" ["l"="52.405,14.718"]
+"zillow/luminaire" ["l"="52.405,14.718", "c"=569]
 "Levers-Labs/SOMA-B2B-SaaS" ["l"="-0.408,16.007"]
 "ananthdurai/schemata" ["l"="-0.348,16.093"]
 "linkedin/venice" ["l"="-0.133,16.032"]
 "gabledata/recap" ["l"="-0.249,16.009"]
-"streamnative/oxia" ["l"="-2.851,11.075"]
-"linkedin/openhouse" ["l"="-0.249,14.84"]
+"streamnative/oxia" ["l"="-2.851,11.075", "c"=15]
+"linkedin/openhouse" ["l"="-0.249,14.84", "c"=729]
+"ClickHouse/dbt-clickhouse" ["l"="1.208,-9.366", "c"=1144]
+"tmadl/semisup-learn" ["l"="45.093,27.738", "c"=789]
+"ploomber/sklearn-evaluation" ["l"="-0.283,15.748"]
+"TaKO8Ki/gobang" ["l"="-13.102,-6.978", "c"=86]
 "airbnb/chronon" ["l"="-0.126,16.077"]
-"feldera/feldera" ["l"="-0.407,14.989"]
-"feathr-ai/feathr" ["l"="50.967,2.747"]
+"feldera/feldera" ["l"="-0.407,14.989", "c"=729]
+"feathr-ai/feathr" ["l"="50.967,2.747", "c"=85]
+"palantir/pyspark-style-guide" ["l"="-1.697,17.56", "c"=1046]
+"opendatadiscovery/awesome-data-catalogs" ["l"="-2.377,14.707", "c"=43]
+"EvgSkv/logica" ["l"="-2.025,-41.389", "c"=963]
 "re-data/dbt-re-data" ["l"="-0.372,16.063"]
 "dbt-labs/dbt-project-maturity" ["l"="-0.352,16.058"]
 "slidoapp/dbt-coverage" ["l"="-0.413,16.076"]
+"spandanb/learndb-py" ["l"="2.4,-5.285", "c"=472]
+"sfu-db/connector-x" ["l"="-0.449,14.875", "c"=729]
 "kuwala-io/kuwala" ["l"="-0.439,16.103"]
-"ftupas/dbt-spotify-analytics" ["l"="0.309,16.603"]
+"ftupas/dbt-spotify-analytics" ["l"="0.309,16.603", "c"=1000]
 "pvcy/dbt-privacy" ["l"="-0.372,16.044"]
 "slingdata-io/sling-cli" ["l"="-0.406,15.953"]
 "slingdata-io/sling-python" ["l"="-0.352,15.967"]
-"dagster-io/dagster-open-platform" ["l"="-0.345,15.919"]
-"GlareDB/glaredb" ["l"="-0.344,14.914"]
-"airbytehq/PyAirbyte" ["l"="44.746,16.124"]
+"GlareDB/glaredb" ["l"="-0.344,14.914", "c"=729]
+"airbytehq/PyAirbyte" ["l"="44.746,16.124", "c"=213]
 "meltano/hub" ["l"="-0.341,15.774"]
 "MeltanoLabs/tap-dbt" ["l"="-0.355,15.783"]
 "MeltanoLabs/tap-airbyte-wrapper" ["l"="-0.323,15.75"]
@@ -2781,52 +3272,64 @@ digraph G {
 "z3z1ma/dbt-feature-flags" ["l"="-0.296,16.076"]
 "ciejer/tangata_local" ["l"="-0.357,16.04"]
 "godatadriven/pytest-dbt-core" ["l"="-0.416,16.111"]
+"facebookresearch/madgrad" ["l"="51.048,30.004", "c"=83]
 "quarylabs/sqruff" ["l"="-0.374,16.014"]
+"bitsondatadev/trino-getting-started" ["l"="-0.091,14.763", "c"=729]
+"zsvoboda/ngods-stocks" ["l"="-0.347,15.943"]
 "tuanchris/cloud-data-lake" ["l"="-0.304,16.131"]
 "kristeligt-dagblad/dbt_ml" ["l"="-0.307,16.063"]
 "mjirv/dbt_product_analytics" ["l"="-0.368,16.078"]
 "dbt-labs/dbt-jsonschema" ["l"="-0.381,15.995"]
 "dbt-labs/dbtdocs-to-lookml" ["l"="-0.651,15.95"]
-"pipeline-tools/gusty" ["l"="0.325,15.893"]
 "capitalone/ablation" ["l"="-0.718,15.815"]
 "datacoves/cookiecutter-dbt" ["l"="-0.367,16.11"]
 "metaplane/dbt-coalesce-2021-codebase" ["l"="-0.324,16.077"]
 "quantile-development/dagster-meltano" ["l"="-0.257,15.662"]
 "MeltanoLabs/target-postgres" ["l"="-0.284,15.699"]
-"Wilfred/difftastic" ["l"="-13.483,-7.057"]
-"geldata/gel" ["l"="44.385,20.813"]
-"jj-vcs/jj" ["l"="-13.407,-7.183"]
-"neondatabase/neon" ["l"="-0.398,15.206"]
-"casey/just" ["l"="-13.462,-7.192"]
-"launchbadge/sqlx" ["l"="-9.837,-5.966"]
-"MaterializeInc/materialize" ["l"="-0.498,15.038"]
-"benbjohnson/litestream" ["l"="4.715,-8.844"]
+"Wilfred/difftastic" ["l"="-13.483,-7.057", "c"=86]
+"geldata/gel" ["l"="44.385,20.813", "c"=20]
+"jj-vcs/jj" ["l"="-13.407,-7.183", "c"=86]
+"neondatabase/neon" ["l"="-0.398,15.206", "c"=729]
+"casey/just" ["l"="-13.462,-7.192", "c"=86]
+"launchbadge/sqlx" ["l"="-9.837,-5.966", "c"=5]
+"MaterializeInc/materialize" ["l"="-0.498,15.038", "c"=729]
+"benbjohnson/litestream" ["l"="4.715,-8.844", "c"=0]
+"drivendataorg/cookiecutter-data-science" ["l"="45.349,25.991", "c"=68]
+"writer/writer-framework" ["l"="42.501,-2.891", "c"=692]
+"posit-dev/great-tables" ["l"="43.594,26.29", "c"=1179]
 "data-mie/dbt-cloud-cli" ["l"="-0.243,16.276"]
 "dpguthrie/dbtc" ["l"="-0.283,16.223"]
 "looker/looker-sdk-ruby" ["l"="-0.748,15.803"]
 "llooker/google_ga360" ["l"="-0.749,15.821"]
-"kestra-io/kestra" ["l"="15.832,-10.248"]
-"ploomber/sklearn-evaluation" ["l"="-0.283,15.748"]
+"zulip/zulip" ["l"="8.721,-7.685", "c"=14]
+"cosmosgl/graph" ["l"="43.354,24.559", "c"=95]
+"postgresml/postgresml" ["l"="3.858,13.499", "c"=850]
 "ploomber/ploomber-engine" ["l"="-0.249,15.713"]
-"tmadl/sklearn-expertsys" ["l"="45.268,26.275"]
-"ploomber/jupysql" ["l"="-0.332,15.829"]
-"scikit-learn-contrib/scikit-learn-extra" ["l"="45.277,26.502"]
-"koaning/scikit-lego" ["l"="45.251,26.324"]
-"scikit-learn-contrib/polylearn" ["l"="57.899,23.337"]
+"tmadl/sklearn-expertsys" ["l"="45.268,26.275", "c"=68]
+"scikit-learn-contrib/scikit-learn-extra" ["l"="45.277,26.502", "c"=68]
+"koaning/scikit-lego" ["l"="45.251,26.324", "c"=68]
+"scikit-learn-contrib/polylearn" ["l"="57.899,23.337", "c"=161]
+"quadratichq/quadratic" ["l"="-9.326,-5.78", "c"=5]
+"httpie/desktop" ["l"="15.792,-10.049", "c"=198]
 "opensource4you/astraea" ["l"="-0.189,16.186"]
 "oharastream/ohara" ["l"="-0.138,16.198"]
 "opensource4you/readme" ["l"="-0.158,16.217"]
+"nschloe/tiptop" ["l"="43.675,19.141", "c"=1020]
+"Bycelium/PyFlow" ["l"="45.32,21.547", "c"=20]
 "Canner/wren-engine" ["l"="-0.256,16.14"]
-"Gqlify/gqlify" ["l"="43.397,16.269"]
-"InfuseAI/colab-xterm" ["l"="-0.289,16.315"]
-"singhsidhukuldeep/Google-Colab-Shell" ["l"="-0.267,16.359"]
+"Gqlify/gqlify" ["l"="43.397,16.269", "c"=473]
 "rpbouman/huey" ["l"="-0.323,15.877"]
+"bytewax/bytewax" ["l"="-0.452,14.845", "c"=729]
+"singhsidhukuldeep/Google-Colab-Shell" ["l"="-0.267,16.359"]
+"marsupialtail/quokka" ["l"="-0.388,14.841", "c"=729]
+"instill-ai/instill-core" ["l"="40.81,0.756", "c"=7]
+"linkedin/brooklin" ["l"="-0.608,17.055", "c"=398]
+"tigrisdata-archive/tigris" ["l"="44.207,21.527", "c"=20]
 "duckdb/duckdb-excel" ["l"="-0.205,15.747"]
 "MarkRoddy/duckdb-pytables" ["l"="-0.223,15.916"]
-"Mause/duckdb-extension-framework" ["l"="-0.413,14.786"]
+"Mause/duckdb-extension-framework" ["l"="-0.413,14.786", "c"=729]
 "dacort/duckdb-athena-extension" ["l"="-0.25,15.907"]
 "hevoio/recoverable-kafka-producer" ["l"="-0.269,16.212"]
-"monosidev/monosi" ["l"="-0.293,16.161"]
 "Snowflake-Labs/sfguide-getting-started-machine-learning" ["l"="-0.409,15.647"]
 "Snowflake-Labs/roleout" ["l"="-0.427,15.641"]
 "Snowflake-Labs/mlflow-snowflake" ["l"="-0.425,15.658"]
@@ -2834,23 +3337,24 @@ digraph G {
 "Snowflake-Labs/orchestration-framework" ["l"="-0.454,15.637"]
 "ronikobrosly/awesome-data-leadership" ["l"="-0.324,16.02"]
 "einatboro/awesome-survival-analysis" ["l"="-0.243,16.051"]
-"gvwilson/12-design" ["l"="-45.186,7.915"]
-"ronikobrosly/causal-curve" ["l"="-1.089,3.015"]
+"gvwilson/12-design" ["l"="-45.186,7.915", "c"=518]
+"ronikobrosly/causal-curve" ["l"="-1.089,3.015", "c"=258]
+"Velir/dbt-ga4" ["l"="44.767,16.035", "c"=213]
+"vega/vegafusion" ["l"="-5.313,-41.717", "c"=333]
 "PicnicSupermarket/dbt-score" ["l"="-0.405,16.125"]
 "datonic/datadex" ["l"="-0.323,15.911"]
 "gwenwindflower/octocatalog" ["l"="-0.31,15.943"]
 "autotraderuk/dbt-dry-run" ["l"="-0.395,16.153"]
 "ubie-oss/dbt-data-privacy" ["l"="-0.378,16.194"]
-"nordquant/complete-dbt-bootcamp-zero-to-hero" ["l"="-0.469,15.926"]
-"cnstlungu/portable-data-stack-dagster" ["l"="-0.368,15.889"]
-"PacktPublishing/Data-engineering-with-dbt" ["l"="0.605,16.423"]
-"ziritrion/dataeng-zoomcamp" ["l"="47.588,26.095"]
-"spbail/dag-stack" ["l"="0.423,15.837"]
+"PacktPublishing/Data-engineering-with-dbt" ["l"="0.605,16.423", "c"=1000]
+"ziritrion/dataeng-zoomcamp" ["l"="47.588,26.095", "c"=323]
+"spbail/dag-stack" ["l"="0.423,15.837", "c"=1224]
 "dlt-hub/dlthub-education" ["l"="-0.559,15.679"]
 "dagster-io/project-dagster-university" ["l"="-0.386,15.905"]
-"derar-alhussein/Databricks-Certified-Data-Engineer-Associate" ["l"="-1.504,17.697"]
-"ABZ-Aaron/reddit-api-pipeline" ["l"="0.323,16.511"]
+"derar-alhussein/Databricks-Certified-Data-Engineer-Associate" ["l"="-1.504,17.697", "c"=1046]
+"ABZ-Aaron/reddit-api-pipeline" ["l"="0.323,16.511", "c"=1000]
 "godatadriven/dbt-bouncer" ["l"="-0.415,16.163"]
+"astronomer/astro-sdk" ["l"="0.312,15.88", "c"=1224]
 "pdet/Scrooge-McDuck" ["l"="-0.131,15.856"]
 "mehd-io/duckdb-extension-radar" ["l"="-0.165,15.892"]
 "duckdb/extension-template" ["l"="-0.165,15.849"]
@@ -2862,75 +3366,78 @@ digraph G {
 "dbt-labs/jaffle_shop_metrics" ["l"="-0.382,16.111"]
 "AltimateAI/awesome-data-contracts" ["l"="-0.426,16.152"]
 "GClunies/reflekt" ["l"="-0.233,16.111"]
-"metrico/qryn-view" ["l"="-0.135,15.783"]
 "lmangani/vLogQL" ["l"="-0.148,15.802"]
 "metrico/urleng" ["l"="-0.12,15.787"]
 "quackscience/duckdb-extension-clickhouse-sql" ["l"="-0.165,15.795"]
-"metrico/clickhouse-mate" ["l"="-0.107,15.777"]
 "cowsdb/libcows" ["l"="-0.111,15.761"]
-"streamdal/rabbit" ["l"="4.639,-9.102"]
+"streamdal/rabbit" ["l"="4.639,-9.102", "c"=0]
 "slidoapp/sliger" ["l"="-0.337,16.133"]
 "slidoapp/duckberg" ["l"="-0.344,16.144"]
 "slidoapp/dbt-superset-lineage" ["l"="-0.369,16.144"]
 "metrico/fluXpipe" ["l"="-0.126,15.766"]
+"apache/arrow-adbc" ["l"="-0.448,14.805", "c"=729]
+"voltrondata/sqlflite" ["l"="-0.246,15.92"]
 "entechlog/dbt-snow-mask" ["l"="-0.408,15.927"]
+"ConduitIO/conduit" ["l"="-0.325,14.7", "c"=729]
 "yu-iskw/dbt-artifacts-parser" ["l"="-0.33,16.116"]
 "dbt-labs/terraform-provider-dbtcloud" ["l"="-0.219,16.289"]
 "dbt-labs/dbt-jobs-as-code" ["l"="-0.245,16.258"]
 "dbt-labs/dbtcloud-terraforming" ["l"="-0.192,16.319"]
 "Oracen/dbtvault-generator" ["l"="-0.266,16.249"]
+"jupyterlab/jupyter-ai" ["l"="43.601,24.019", "c"=95]
+"sqlpage/SQLPage" ["l"="3.815,13.478", "c"=850]
 "Snowflake-Labs/sfguide-data-engineering-with-snowpark-python-intro" ["l"="-0.435,15.623"]
 "Code360In/data-engineering-with-databricks" ["l"="-0.446,15.616"]
-"Kanaries/GWalkR" ["l"="40.757,35.24"]
-"hydradatabase/columnar" ["l"="3.784,13.54"]
-"mathesar-foundation/mathesar" ["l"="16.157,-10.208"]
-"mljar/mercury" ["l"="43.626,24.05"]
-"tconbeer/harlequin" ["l"="-0.517,15.862"]
+"hydradatabase/columnar" ["l"="3.784,13.54", "c"=850]
+"Kanaries/GWalkR" ["l"="40.757,35.24", "c"=51]
+"mljar/mercury" ["l"="43.626,24.05", "c"=95]
+"unytics/bigfunctions" ["l"="44.829,16.191", "c"=213]
 "snowflakedb/snowflake-cli-action" ["l"="-0.491,15.723"]
-"manzt/quak" ["l"="43.429,24.398"]
-"cmudig/falcon-vis" ["l"="43.45,24.541"]
-"vega/vegafusion" ["l"="-5.313,-41.717"]
-"flekschas/regl-scatterplot" ["l"="43.387,24.588"]
-"observablehq/framework" ["l"="-5.409,-41.59"]
-"juba/pyobsplot" ["l"="43.46,24.406"]
+"goccy/bigquery-emulator" ["l"="7.12,-40.385", "c"=573]
+"manzt/quak" ["l"="43.429,24.398", "c"=95]
+"cmudig/falcon-vis" ["l"="43.45,24.541", "c"=95]
+"flekschas/regl-scatterplot" ["l"="43.387,24.588", "c"=95]
+"observablehq/framework" ["l"="-5.409,-41.59", "c"=333]
+"juba/pyobsplot" ["l"="43.46,24.406", "c"=95]
 "buremba/universql" ["l"="-0.273,15.908"]
-"ploomber/ploomber" ["l"="45.257,25.982"]
-"catherinedevlin/ipython-sql" ["l"="43.614,23.941"]
-"apache/arrow-adbc" ["l"="-0.448,14.805"]
+"catherinedevlin/ipython-sql" ["l"="43.614,23.941", "c"=95]
 "caioricciuti/duck-ui" ["l"="-0.216,15.867"]
+"timestored/qstudio" ["l"="5.692,-8.827", "c"=0]
+"charles-001/dolphie" ["l"="43.787,19.149", "c"=1020]
 "tekumara/fakesnow" ["l"="-0.209,16.029"]
-"splitgraph/seafowl" ["l"="-0.342,14.852"]
-"voltrondata/sqlflite" ["l"="-0.246,15.92"]
+"splitgraph/seafowl" ["l"="-0.342,14.852", "c"=729]
+"apache/datafusion-python" ["l"="-0.39,14.861", "c"=729]
+"xorq-labs/xorq" ["l"="-0.236,15.952"]
+"getdozer/dozer" ["l"="-0.353,15.016", "c"=729]
+"Renumics/spotlight" ["l"="44.969,25.936", "c"=68]
 "Query-farm/duckdb-airport-extension" ["l"="-0.242,15.894"]
 "prmoore77/sidewinder" ["l"="-0.182,15.946"]
 "voltrondata/flight-duckdb-example" ["l"="-0.191,15.934"]
-"zsvoboda/ngods-stocks" ["l"="-0.347,15.943"]
-"bitsondatadev/trino-getting-started" ["l"="-0.091,14.763"]
-"lakekeeper/lakekeeper" ["l"="-0.309,14.879"]
+"m-wrzr/populartimes" ["l"="41.363,24.082", "c"=76]
+"lakekeeper/lakekeeper" ["l"="-0.309,14.879", "c"=729]
 "dagster-io/mdsfest-opensource-mds" ["l"="-0.335,15.893"]
-"starburstdata/dbt-trino" ["l"="-0.085,14.793"]
-"databricks/iceberg-rest-image" ["l"="-0.162,14.842"]
-"databricks/docker-spark-iceberg" ["l"="-0.163,14.818"]
-"ssp-data/practical-data-engineering" ["l"="0.326,16.461"]
-"apache/iceberg-python" ["l"="-0.245,14.864"]
+"starburstdata/dbt-trino" ["l"="-0.085,14.793", "c"=729]
+"databricks/iceberg-rest-image" ["l"="-0.162,14.842", "c"=729]
+"databricks/docker-spark-iceberg" ["l"="-0.163,14.818", "c"=729]
+"apache/iceberg-python" ["l"="-0.245,14.864", "c"=729]
+"quixio/quix-streams" ["l"="-0.51,14.833", "c"=729]
 "get-select/dbt-snowflake-query-tags" ["l"="-0.301,16.025"]
 "jwills/duckdbt" ["l"="-0.256,15.964"]
 "quackscience/duckdb-extension-httpserver" ["l"="-0.228,15.856"]
 "rupurt/odbc-scanner-duckdb-extension" ["l"="-0.221,15.975"]
-"Mause/duckdb-deltatable-extension" ["l"="-0.393,14.798"]
+"Mause/duckdb-deltatable-extension" ["l"="-0.393,14.798", "c"=729]
 "dbt-labs/jaffle-shop-template" ["l"="-0.323,15.956"]
 "evidence-dev/duckdb_gsheets" ["l"="-0.255,15.888"]
-"astronomer/astro-sdk" ["l"="0.312,15.88"]
-"astronomer/dag-factory" ["l"="0.342,15.964"]
-"astronomer/astro-cli" ["l"="0.315,15.863"]
-"astronomer/astronomer-providers" ["l"="0.299,15.87"]
-"lvgalvao/data-engineering-roadmap" ["l"="6.096,-20.628"]
+"astronomer/astronomer-providers" ["l"="0.299,15.87", "c"=1224]
+"lvgalvao/data-engineering-roadmap" ["l"="6.096,-20.628", "c"=96]
+"approximatelabs/sketch" ["l"="45.122,26.269", "c"=68]
 "AltimateAI/altimate-django" ["l"="-0.401,16.221"]
 "paypal/data-contract-template" ["l"="-0.474,16.115"]
 "PacktPublishing/Driving-Data-Quality-with-Data-Contracts" ["l"="-0.447,16.165"]
 "datacontract/datacontract-specification" ["l"="-0.481,16.148"]
 "tobilg/duckdb-nodejs-layer" ["l"="-0.147,15.725"]
 "tobilg/serverless-duckdb" ["l"="-0.165,15.758"]
+"awslabs/amazon-redshift-monitoring" ["l"="11.647,-2.55", "c"=873]
 "motherduckdb/duckdb-async" ["l"="-0.043,15.819"]
 "duckdb/duckdb-node-neo" ["l"="-0.1,15.838"]
 "ScalefreeCOM/turbovault4dbt" ["l"="-0.469,16.204"]
@@ -2947,54 +3454,68 @@ digraph G {
 "jaysobel/dbt-snowflake-queries" ["l"="-0.263,16.046"]
 "infinitelambda/dbt-data-diff" ["l"="-0.26,16.033"]
 "duckdb/extension-ci-tools" ["l"="-0.123,15.834"]
-"mckinsey/causalnex" ["l"="43.69,25.563"]
-"mckinsey/qbstyles" ["l"="22.22,14.522"]
-"business-science/pytimetk" ["l"="-8.958,12.929"]
-"skfolio/skfolio" ["l"="-8.972,12.967"]
-"posit-dev/great-tables" ["l"="43.594,26.29"]
-"Nixtla/statsforecast" ["l"="45.4,26.325"]
-"mfrdixon/ML_Finance_Codes" ["l"="-9.019,12.851"]
-"ranaroussi/quantstats" ["l"="-8.9,12.851"]
+"Textualize/trogon" ["l"="43.617,19.17", "c"=1020]
+"prefix-dev/pixi" ["l"="44.658,20.91", "c"=20]
+"mckinsey/causalnex" ["l"="43.69,25.563", "c"=372]
+"business-science/pytimetk" ["l"="-8.958,12.929", "c"=105]
+"skfolio/skfolio" ["l"="-8.972,12.967", "c"=105]
+"Nixtla/statsforecast" ["l"="45.4,26.325", "c"=68]
+"mfrdixon/ML_Finance_Codes" ["l"="-9.019,12.851", "c"=105]
+"ranaroussi/quantstats" ["l"="-8.9,12.851", "c"=105]
+"supabase-community/postgres-language-server" ["l"="3.809,13.642", "c"=850]
+"jorgerojas26/lazysql" ["l"="-12.74,-9.788", "c"=21]
+"PeerDB-io/peerdb" ["l"="3.77,13.569", "c"=850]
+"blaze/blaze" ["l"="43.73,23.808", "c"=95]
+"kayak/pypika" ["l"="44.829,21.104", "c"=20]
+"chdb-io/chdb" ["l"="-0.488,14.919", "c"=729]
 "bitol-io/open-data-contract-standard" ["l"="-0.464,16.137"]
 "datacontract/datacontract-cli" ["l"="-0.494,16.107"]
 "data-catering/data-caterer" ["l"="-0.491,16.168"]
 "conveyordata/data-product-portal" ["l"="-0.511,16.191"]
-"databrickslabs/dqx" ["l"="-1.673,17.647"]
-"darrenburns/posting" ["l"="-13.221,-7.178"]
-"jorgerojas26/lazysql" ["l"="-12.74,-9.788"]
-"Textualize/toolong" ["l"="-13.211,-7.051"]
-"danvergara/dblab" ["l"="-13.177,-7.019"]
-"EnhancedJax/Bagels" ["l"="-13.096,-7.096"]
-"YS-L/csvlens" ["l"="-13.238,-6.891"]
-"saulpw/visidata" ["l"="-13.476,-6.668"]
+"databrickslabs/dqx" ["l"="-1.673,17.647", "c"=1046]
+"darrenburns/posting" ["l"="-13.221,-7.178", "c"=86]
+"Textualize/toolong" ["l"="-13.211,-7.051", "c"=86]
+"EnhancedJax/Bagels" ["l"="-13.096,-7.096", "c"=86]
+"saulpw/visidata" ["l"="-13.476,-6.668", "c"=86]
+"schemaspy/schemaspy" ["l"="-2.263,12.416", "c"=15]
+"Textualize/frogmouth" ["l"="43.636,19.189", "c"=1020]
+"OpenRefine/OpenRefine" ["l"="-4.393,-42.213", "c"=302]
 "data-drift/data-drift" ["l"="-0.097,15.965"]
 "OpenWebhook/webhook-store" ["l"="-0.048,15.978"]
 "carbonfact/lea" ["l"="-0.222,15.938"]
-"xorq-labs/xorq" ["l"="-0.236,15.952"]
 "quackscience/quackflight" ["l"="-0.204,15.916"]
 "Embucket/embucket" ["l"="-0.184,15.979"]
-"apache/datafusion-python" ["l"="-0.39,14.861"]
 "mesejo/trrex" ["l"="-0.154,15.973"]
 "snowflakedb/snowflake-connector-net" ["l"="-0.331,15.652"]
 "jozefizso/swift-xattr" ["l"="-0.314,16.146"]
 "slidoapp/prompterator" ["l"="-0.324,16.152"]
+"darrenburns/elia" ["l"="43.665,19.174", "c"=1020]
 "bruin-data/bruin" ["l"="-0.549,15.849"]
-"bruin-data/ingestr" ["l"="3.854,12.946"]
-"pyper-dev/pyper" ["l"="44.952,21.299"]
-"BemiHQ/BemiDB" ["l"="3.71,13.55"]
-"zasper-io/zasper" ["l"="16.389,-10.386"]
-"arkflow-rs/arkflow" ["l"="-12.789,-7.161"]
+"bruin-data/ingestr" ["l"="3.854,12.946", "c"=1258]
+"pyper-dev/pyper" ["l"="44.952,21.299", "c"=20]
+"BemiHQ/BemiDB" ["l"="3.71,13.55", "c"=850]
+"zasper-io/zasper" ["l"="16.389,-10.386", "c"=198]
+"arkflow-rs/arkflow" ["l"="-12.789,-7.161", "c"=86]
+"timeplus-io/proton" ["l"="-0.49,14.967", "c"=729]
 "microsoft/dbt-fabricspark" ["l"="-0.435,16.334"]
 "datacontract/datacontract-gpt" ["l"="-0.501,16.149"]
 "datacontract/datacontract-editor" ["l"="-0.505,16.161"]
+"sql-formatter-org/sql-formatter" ["l"="-1.955,14.819", "c"=43]
+"DAGWorks-Inc/hamilton" ["l"="41.119,1.137", "c"=7]
+"databricks/iceberg-kafka-connect" ["l"="-0.214,14.831", "c"=729]
 "silverton-io/snowflakecli" ["l"="-0.287,16.003"]
 "canva-public/dbt-column-lineage-extractor" ["l"="-0.34,16.04"]
-"awslabs/s3-tables-catalog" ["l"="-0.208,14.752"]
+"awslabs/s3-tables-catalog" ["l"="-0.208,14.752", "c"=729]
 "dentiny/duck-read-cache-fs" ["l"="-0.245,15.87"]
-"kby-ai/FaceRecognition-Android" ["l"="51.437,-0.638"]
+"microsoft/fabric-toolbox" ["l"="-46.569,8.501", "c"=762]
+"djouallah/Fabric_Notebooks_Demo" ["l"="-0.59,15.617"]
+"kby-ai/FaceRecognition-Android" ["l"="51.437,-0.638", "c"=487]
+"delta-io/delta-kernel-rs" ["l"="-0.366,14.845", "c"=729]
+"duckdb/uc_catalog" ["l"="-0.194,15.878"]
 "nicholasyager/dbt-loom" ["l"="-0.361,16.168"]
 "dbt-labs/dbt-semantic-interfaces" ["l"="-0.391,16.182"]
 "datamesh-architecture/dataproduct-specification" ["l"="-0.487,16.186"]
+"apache/iceberg-go" ["l"="4.357,-8.138", "c"=0]
 "tekumara/notes" ["l"="-0.172,16.047"]
 "silverton-io/buz" ["l"="-0.29,16.043"]
 "teej/sf-funnels" ["l"="-0.328,15.992"]
@@ -3010,7 +3531,7 @@ digraph G {
 "dagster-io/community-integrations" ["l"="-0.306,15.866"]
 "turbolytics/sql-flow" ["l"="-0.267,15.874"]
 "petehunt/dagster-poor-mans-data-lake" ["l"="-0.337,15.862"]
-"quarylabs/quary" ["l"="3.779,12.993"]
+"quarylabs/quary" ["l"="3.779,12.993", "c"=1258]
 "dbt-labs/dbt-mcp" ["l"="-0.325,16.057"]
 "matsonj/mdsinabox" ["l"="-0.274,15.96"]
 "cnstlungu/portable-data-stack-airflow" ["l"="-0.351,15.849"]
@@ -3018,56 +3539,64 @@ digraph G {
 "C00ldudeNoonan/spotify-ads-dagster" ["l"="-0.358,15.862"]
 "C00ldudeNoonan/simple-dbt-runner" ["l"="-0.313,15.843"]
 "PedramNavid/rust-for-data" ["l"="-0.306,15.829"]
+"airbytehq/quickstarts" ["l"="0.207,16.323", "c"=1000]
 "opendatamesh-initiative/odm-platform" ["l"="-0.452,15.935"]
 "MarkRoddy/duckservability" ["l"="-0.184,15.915"]
 "Snowflake-Labs/snowpark-devops" ["l"="-0.443,15.647"]
 "Snowflake-Labs/snowflake-vcrpy" ["l"="-0.469,15.639"]
 "holdenmatt/use-pyodide" ["l"="-0.314,15.768"]
 "pgzmnk/geoduck" ["l"="-0.303,15.773"]
-"gigapi/gigapi" ["l"="-0.174,15.811"]
 "pgoslatara/dbt-beyond-the-basics" ["l"="-0.406,16.205"]
 "taecontrol/orion" ["l"="-0.048,15.908"]
 "0xfrankz/Kaas" ["l"="-0.005,15.912"]
 "metrico/influxdb3-community" ["l"="-0.075,15.738"]
 "z3z1ma/cdf" ["l"="-0.279,15.776"]
 "AltimateAI/datapilot-cli" ["l"="-0.385,16.263"]
-"antonycourtney/tad" ["l"="-0.476,15.844"]
-"graypegg/chromatism" ["l"="-1.25,-26.864"]
-"Chalarangelo/mocka" ["l"="22.858,-27.439"]
-"HVF/franchise" ["l"="-1.226,-27.006"]
-"BurntSushi/xsv" ["l"="-13.469,-6.72"]
-"wireservice/csvkit" ["l"="-13.546,-6.53"]
-"vega/voyager" ["l"="-5.355,-41.691"]
-"wesm/feather" ["l"="40.382,35.274"]
-"singer-io/tap-facebook" ["l"="-0.598,16.202"]
-"mara/mara-pipelines" ["l"="0.402,16.087"]
+"graypegg/chromatism" ["l"="-1.25,-26.864", "c"=814]
+"Chalarangelo/mocka" ["l"="22.858,-27.439", "c"=28]
+"HVF/franchise" ["l"="-1.226,-27.006", "c"=814]
+"BurntSushi/xsv" ["l"="-13.469,-6.72", "c"=86]
+"wireservice/csvkit" ["l"="-13.546,-6.53", "c"=86]
+"wesm/feather" ["l"="40.382,35.274", "c"=51]
+"fireducks-dev/fireducks" ["l"="43.7,26.289", "c"=1179]
+"gtoonstra/etl-with-airflow" ["l"="0.375,16.002", "c"=1224]
+"DataTalksClub/stock-markets-analytics-zoomcamp" ["l"="47.709,26.17", "c"=323]
+"latitude-dev/latitude" ["l"="16.281,-10.112", "c"=198]
 "singer-io/tap-adwords" ["l"="-0.617,16.145"]
 "singer-io/tap-github" ["l"="-0.615,16.168"]
 "singer-io/tap-salesforce" ["l"="-0.64,16.155"]
 "Snowflake-Labs/sfguide-getting-started-with-cortex-analyst" ["l"="-0.493,15.622"]
 "l1xnan/duckling" ["l"="-0.128,15.903"]
 "mattf96s/QuackDB" ["l"="-0.178,15.867"]
+"DataTalksClub/llm-zoomcamp" ["l"="47.799,26.198", "c"=323]
+"Netflix/maestro" ["l"="-0.23,15.004", "c"=729]
 "incentius-foss/WhatTheDuck" ["l"="-0.111,15.875"]
 "banagale/FileKitty" ["l"="-0.005,15.858"]
+"sdg-1/consulting-handbook" ["l"="0.279,16.381", "c"=1000]
+"sdg-1/data-team-handbook" ["l"="0.278,16.417", "c"=1000]
 "cromano8/Snowflake_ML_Intro" ["l"="-0.436,15.572"]
 "mehd-io/pypi-duck-flow" ["l"="-0.263,15.937"]
 "amphi-ai/amphi-etl" ["l"="-0.44,15.905"]
 "pracdata/awesome-open-source-data-engineering" ["l"="-0.403,15.804"]
-"postgresml/korvus" ["l"="41.236,0.611"]
-"gauge-sh/tach" ["l"="44.986,21.234"]
-"iterative/datachain" ["l"="41.107,0.601"]
-"janbjorge/pgqueuer" ["l"="3.644,13.58"]
+"postgresml/korvus" ["l"="41.236,0.611", "c"=7]
+"gauge-sh/tach" ["l"="44.986,21.234", "c"=20]
+"iterative/datachain" ["l"="41.107,0.601", "c"=7]
+"janbjorge/pgqueuer" ["l"="3.644,13.58", "c"=850]
+"relari-ai/continuous-eval" ["l"="3.732,13.023", "c"=1258]
 "Snowflake-Labs/snowflake-arctic" ["l"="-0.477,15.587"]
 "streamlit/snowflake-arctic-st-demo" ["l"="-0.47,15.54"]
 "llm-random/llm-random" ["l"="-0.491,15.52"]
+"cfahlgren1/natural-sql" ["l"="3.887,12.949", "c"=1258]
 "rayokota/kwack" ["l"="-0.218,15.814"]
 "dsg-polymtl/flockmtl" ["l"="-0.185,15.838"]
 "duckdb/duckdb-azure" ["l"="-0.218,15.844"]
 "duckdb/duckdb-ui" ["l"="-0.216,15.893"]
+"redotvideo/mamba-chat" ["l"="49.158,34.109", "c"=556]
+"google-deepmind/recurrentgemma" ["l"="49.128,33.97", "c"=556]
 "tobilg/duckerd" ["l"="-0.206,15.956"]
 "erezsh/reladiff" ["l"="-0.342,16.073"]
-"djouallah/Fabric_Notebooks_Demo" ["l"="-0.59,15.617"]
 "djouallah/aemo_fabric" ["l"="-0.599,15.579"]
+"paradedb/pg_analytics" ["l"="3.7,13.517", "c"=850]
 "singer-io/target-csv" ["l"="-0.613,16.228"]
 "stitchdata/python-stitch-client" ["l"="-0.65,16.225"]
 "singer-io/tap-hubspot" ["l"="-0.644,16.244"]
@@ -3077,29 +3606,40 @@ digraph G {
 "dlt-hub/dlt-init-openapi" ["l"="-0.249,15.742"]
 "llooker/python_api_samples" ["l"="-0.775,15.817"]
 "llooker/python_sdk" ["l"="-0.796,15.791"]
+"huginn/huginn" ["l"="12.536,-9.265", "c"=18]
+"briefercloud/briefer" ["l"="5.942,-20.506", "c"=96]
+"apache/polaris" ["l"="-0.261,14.901", "c"=729]
+"Mooncake-Labs/pg_mooncake" ["l"="3.761,13.525", "c"=850]
+"drasi-project/drasi-platform" ["l"="40.289,5.866", "c"=1506]
+"unitycatalog/unitycatalog" ["l"="-0.295,14.926", "c"=729]
+"warpstreamlabs/bento" ["l"="-0.292,14.786", "c"=729]
 "Snowflake-Labs/sfguide-build-and-deploy-snowpark-ml-models-using-streamlit-snowflake-notebooks" ["l"="-0.466,15.622"]
 "definite-app/duck-takes-flight" ["l"="-0.162,15.922"]
-"delta-io/delta-kernel-rs" ["l"="-0.366,14.845"]
-"duckdb/uc_catalog" ["l"="-0.194,15.878"]
 "ywelsch/duckdb-psql" ["l"="-0.155,15.877"]
 "rustyconover/duckdb-lindel-extension" ["l"="-0.184,15.893"]
 "hafenkran/duckdb-bigquery" ["l"="-0.199,15.901"]
-"apache/gravitino" ["l"="-2.568,14.952"]
+"apache/gravitino" ["l"="-2.568,14.952", "c"=43]
 "mattiasthalen/adventure-works" ["l"="-0.61,15.606"]
 "duckdb/extension-template-rs" ["l"="-0.205,15.791"]
 "jvanbuel/flowrs" ["l"="-0.525,16.227"]
 "quackscience/duckdb-extension-cronjob" ["l"="-0.202,15.859"]
+"apecloud/myduckserver" ["l"="-10.732,-5.662", "c"=5]
 "l-mds/local-data-stack" ["l"="-0.565,15.609"]
 "fastrepl/canary" ["l"="0.064,15.845"]
 "memiiso/opendbt" ["l"="-0.272,16.069"]
 "quackscience/duckdb-extension-httpclient" ["l"="-0.204,15.83"]
 "mlafeldt/quack-zig" ["l"="-0.188,15.762"]
 "ASML-Labs/dagster-delta" ["l"="-0.287,15.825"]
+"microsoft/fabric-cicd" ["l"="-46.569,8.476", "c"=762]
 "RusselWebber/xlDuckDb" ["l"="-0.147,15.832"]
 "quackscience/duckdb-extension-openprompt" ["l"="-0.131,15.814"]
 "DataZooDE/flapi" ["l"="-0.103,15.814"]
 "InfuseAI/piperider-compare-action" ["l"="-0.344,16.228"]
+"thenaturalist/awesome-business-intelligence" ["l"="-1.39,-27.056", "c"=814]
+"rapidsai/cudf" ["l"="43.805,23.569", "c"=95]
+"deepseek-ai/smallpond" ["l"="39.168,-0.625", "c"=39]
 "fixer-m/snowflake-db-net-client" ["l"="-0.306,15.609"]
+"macbre/sql-metadata" ["l"="-2.248,14.76", "c"=43]
 "ploomber/sanitAI" ["l"="-0.168,15.583"]
 "mattiasthalen/obsidian-insights" ["l"="-0.626,15.571"]
 "richban/opendata-stack-platform" ["l"="-0.633,15.587"]

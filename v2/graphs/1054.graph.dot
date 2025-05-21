@@ -1,4 +1,5 @@
 digraph G {
+"ChainSafe/lodestar" -> "ChainSafe/forest" ["e"=1]
 "filecoin-project/lotus" -> "filecoin-project/venus"
 "filecoin-project/lotus" -> "filecoin-project/community-china"
 "filecoin-project/lotus" -> "filecoin-project/rust-fil-proofs"
@@ -29,6 +30,9 @@ digraph G {
 "filecoin-project/FIPs" -> "filecoin-project/filecoin-ffi"
 "filecoin-project/FIPs" -> "filecoin-project/lotus"
 "filecoin-project/FIPs" -> "filecoin-project/filecoin-plus-large-datasets"
+"storj/storj" -> "filecoin-project/venus" ["e"=1]
+"storj/storj" -> "filecoin-project/lotus" ["e"=1]
+"ipld/go-ipld-prime" -> "ipld/go-car" ["e"=1]
 "textileio/go-threads" -> "textileio/textile"
 "textileio/go-threads" -> "hsanjuan/ipfs-lite" ["e"=1]
 "textileio/go-threads" -> "textileio/powergate"
@@ -39,6 +43,7 @@ digraph G {
 "textileio/go-threads" -> "textileio/go-textile" ["e"=1]
 "textileio/go-threads" -> "textileio/js-examples"
 "textileio/go-threads" -> "textileio/grpc-ipfs-lite"
+"google/rerast" -> "magnet/metered-rs" ["e"=1]
 "rs-ipfs/rust-ipfs" -> "libp2p/rust-libp2p" ["e"=1]
 "rs-ipfs/rust-ipfs" -> "ipfs-rust/ipfs-embed"
 "rs-ipfs/rust-ipfs" -> "ferristseng/rust-ipfs-api"
@@ -59,6 +64,8 @@ digraph G {
 "ipld/go-car" -> "filecoin-project/boost"
 "ipld/go-car" -> "ipld/go-ipld-prime" ["e"=1]
 "ipld/go-car" -> "filecoin-project/go-fil-markets"
+"ChainSafe/gossamer" -> "ChainSafe/forest" ["e"=1]
+"berty/go-orbit-db" -> "textileio/go-threads" ["e"=1]
 "filecoin-project/community" -> "filecoin-project/FIPs"
 "filecoin-project/community" -> "filecoin-project/specs"
 "filecoin-project/community" -> "filecoin-project/ref-fvm"
@@ -89,11 +96,18 @@ digraph G {
 "filecoin-project/venus" -> "CoinSummer/filecoin"
 "filecoin-project/venus" -> "zcash/zcash" ["e"=1]
 "filecoin-project/venus" -> "libp2p/specs" ["e"=1]
+"fluencelabs/nox" -> "filecoin-project/venus" ["e"=1]
+"Conflux-Chain/conflux-rust" -> "filecoin-project/venus" ["e"=1]
+"drand/drand" -> "ChainSafe/forest" ["e"=1]
+"tower-rs/tower-grpc" -> "magnet/metered-rs" ["e"=1]
 "ferristseng/rust-ipfs-api" -> "multiformats/rust-multihash"
 "ferristseng/rust-ipfs-api" -> "rs-ipfs/rust-ipfs"
 "ferristseng/rust-ipfs-api" -> "multiformats/rust-cid"
 "ferristseng/rust-ipfs-api" -> "gkbrk/rust-ipfs-api"
 "ferristseng/rust-ipfs-api" -> "ipfs-rust/ipfs-embed"
+"hsanjuan/ipfs-lite" -> "textileio/go-threads" ["e"=1]
+"hsanjuan/ipfs-lite" -> "textileio/grpc-ipfs-lite" ["e"=1]
+"hsanjuan/ipfs-lite" -> "textileio/powergate" ["e"=1]
 "magnet/metered-rs" -> "elichai/log-derive"
 "filecoin-project/specs" -> "filecoin-project/specs-actors"
 "filecoin-project/specs" -> "filecoin-project/rust-fil-proofs"
@@ -127,6 +141,10 @@ digraph G {
 "waynewyang/analysis-of-filecoin-in-Chinese" -> "twosson/fil_exporter"
 "ipld/libipld" -> "multiformats/rust-cid"
 "elichai/log-derive" -> "magnet/metered-rs"
+"testground/testground" -> "filecoin-project/fvm-specs" ["e"=1]
+"textileio/go-textile" -> "airsecure/airsecure" ["e"=1]
+"textileio/go-textile" -> "textileio/community" ["e"=1]
+"textileio/go-textile" -> "textileio/go-threads" ["e"=1]
 "textileio/js-textile" -> "textileio/js-threads"
 "textileio/js-textile" -> "textileio/community"
 "textileio/js-textile" -> "textileio/js-examples"
@@ -169,12 +187,14 @@ digraph G {
 "textileio/powergate" -> "ipfs/go-bitswap" ["e"=1]
 "textileio/powergate" -> "filecoin-project/community-china"
 "textileio/powergate" -> "filecoin-project/starling"
+"ipfs/kubo" -> "filecoin-project/venus" ["e"=1]
 "textileio/textile" -> "textileio/go-threads"
 "textileio/textile" -> "textileio/js-textile"
 "textileio/textile" -> "textileio/community"
 "textileio/textile" -> "textileio/powergate"
 "textileio/textile" -> "textileio/js-threads"
 "textileio/textile" -> "textileio/js-examples"
+"cpp-pm/hunter" -> "libp2p/cpp-libp2p" ["e"=1]
 "ChainSafe/forest" -> "filecoin-project/ref-fvm"
 "ChainSafe/forest" -> "filecoin-project/rust-fil-proofs"
 "ChainSafe/forest" -> "ChainSafe/gossamer" ["e"=1]
@@ -206,6 +226,11 @@ digraph G {
 "CoinSummer/filecoin" -> "moran666666/lotus-1.4.0"
 "CoinSummer/filecoin" -> "filecoin-project/lotus"
 "CoinSummer/filecoin" -> "twosson/fil_exporter"
+"paullouisageneau/libjuice" -> "libp2p/cpp-libp2p" ["e"=1]
+"ipfs/ipfs-docs" -> "filecoin-project/filecoin-docs" ["e"=1]
+"ethersphere/bee" -> "filecoin-project/community-china" ["e"=1]
+"ethersphere/bee" -> "filecoin-project/lotus" ["e"=1]
+"ChainSafe/ChainBridge" -> "ChainSafe/forest" ["e"=1]
 "filecoin-project/devgrants" -> "filecoin-project/filecoin-docs"
 "filecoin-project/devgrants" -> "filecoin-project/FIPs"
 "filecoin-project/devgrants" -> "filecoin-project/go-fil-markets"
@@ -301,6 +326,9 @@ digraph G {
 "filecoin-project/cpp-filecoin" -> "libp2p/cpp-libp2p"
 "filecoin-project/rust-filecoin-proofs-api" -> "filecoin-project/filecoin-ffi"
 "FleekHQ/space-client-workshop" -> "FleekHQ/space-client"
+"ipfs/ipfs-desktop" -> "filecoin-project/venus" ["e"=1]
+"ipfs/ipfs-desktop" -> "filecoin-project/lotus" ["e"=1]
+"freenet/freenet-core" -> "rs-ipfs/rust-ipfs" ["e"=1]
 "filecoin-project/notary-governance" -> "filecoin-project/filecoin-plus-client-onboarding"
 "filecoin-project/notary-governance" -> "filecoin-project/filecoin-plus-large-datasets"
 "filecoin-project/notary-governance" -> "filecoin-project/FIPs"
@@ -329,6 +357,7 @@ digraph G {
 "web3-storage/web3.storage" -> "filecoin-project/filecoin-docs"
 "web3-storage/web3.storage" -> "ipfs/community" ["e"=1]
 "web3-storage/web3.storage" -> "textileio/powergate"
+"protocol/nft-website" -> "nftstorage/nft.storage" ["e"=1]
 "filecoin-project/filecoin-plus-client-onboarding" -> "filecoin-project/notary-governance"
 "filecoin-project/filecoin-plus-client-onboarding" -> "filecoin-project/filecoin-plus-large-datasets"
 "nftstorage/nft.storage" -> "web3-storage/web3.storage"
@@ -339,6 +368,7 @@ digraph G {
 "nftstorage/nft.storage" -> "nftstorage/nftup"
 "nftstorage/nft.storage" -> "filecoin-project/FIPs"
 "nftstorage/nft.storage" -> "bpierre/use-nft" ["e"=1]
+"telegram-rs/telegram-bot" -> "iqlusioninc/abscissa" ["e"=1]
 "filecoin-project/community-china" -> "minerdao/lotus-ops"
 "filecoin-project/community-china" -> "CoinSummer/filecoin"
 "filecoin-project/community-china" -> "jackoelv/bellperson"
@@ -356,6 +386,7 @@ digraph G {
 "filecoin-project/community-china" -> "textileio/powergate"
 "filecoin-project/filecoin-plus-large-datasets" -> "filecoin-project/notary-governance"
 "filecoin-project/filecoin-plus-large-datasets" -> "filecoin-project/filecoin-plus-client-onboarding"
+"alecbcs/hyprspace" -> "ipni/storetheindex" ["e"=1]
 "minerdao/lotus-ops" -> "filecoin-project/community-china"
 "minerdao/lotus-ops" -> "shannon-6block/lotus-miner"
 "minerdao/lotus-ops" -> "jackoelv/bellperson"
@@ -427,6 +458,7 @@ digraph G {
 "filguard/rust-fil-proofs" -> "jackoelv/bellperson"
 "moran666666/lotus-1.5.0" -> "moran666666/lotus-1.4.0"
 "filecoin-project/dagstore" -> "application-research/filclient"
+"libp2p/go-libp2p" -> "filecoin-project/venus" ["e"=1]
 "filecoin-project/ref-fvm" -> "filecoin-project/fvm-specs"
 "filecoin-project/ref-fvm" -> "filecoin-project/FIPs"
 "filecoin-project/ref-fvm" -> "filecoin-project/builtin-actors"
@@ -498,6 +530,8 @@ digraph G {
 "filecoin-project/fevm-hardhat-kit" -> "jimpick/wallaby-fevm-msg-signer"
 "filecoin-project/lassie" -> "ipni/storetheindex"
 "filecoin-project/lassie" -> "consensus-shipyard/spacenet"
+"ipfs/helia" -> "storacha/ipfs-car" ["e"=1]
+"ipfs/helia" -> "bacalhau-project/bacalhau" ["e"=1]
 "Zondax/filecoin-solidity" -> "filecoin-project/fevm-hardhat-kit"
 "Zondax/filecoin-solidity" -> "ipfs-force-community/go-fvm-sdk"
 "HarukaMa/aleo-explorer" -> "demox-labs/art-factory"
@@ -506,11 +540,19 @@ digraph G {
 "minerdao/awesome-aleo" -> "minerdao/posts"
 "minerdao/awesome-aleo" -> "HarukaMa/aleo-pool-server"
 "minerdao/awesome-aleo" -> "minerdao/aleo-prove-bench"
+"libp2p/libp2p" -> "libp2p/cpp-libp2p" ["e"=1]
+"libp2p/go-libp2p-kad-dht" -> "application-research/estuary" ["e"=1]
 "demox-labs/art-factory" -> "demox-labs/leo-wallet-demo"
 "demox-labs/art-factory" -> "demox-labs/aleo-nft"
 "filecoin-project/fvm-starter-kit-deal-making" -> "filecoin-project/filecoin-fvm-localnet"
 "filecoin-project/fvm-starter-kit-deal-making" -> "filecoin-project/fevm-foundry-kit"
 "CheckerNetwork/node" -> "CheckerNetwork/desktop"
+"andygrove/datafusion-archive" -> "magnet/metered-rs" ["e"=1]
+"libp2p/rust-libp2p" -> "rs-ipfs/rust-ipfs" ["e"=1]
+"ipfs/distributed-wikipedia-mirror" -> "web3-storage/web3.storage" ["e"=1]
+"ArweaveTeam/arweave" -> "filecoin-project/lotus" ["e"=1]
+"ChainSafe/lodestar" ["l"="-20.767,10.876", "c"=22]
+"ChainSafe/forest" ["l"="-23.097,6.243"]
 "filecoin-project/lotus" ["l"="-23.047,6.273"]
 "filecoin-project/venus" ["l"="-23.019,6.252"]
 "filecoin-project/community-china" ["l"="-23.007,6.294"]
@@ -519,12 +561,11 @@ digraph G {
 "CoinSummer/filecoin" ["l"="-23.023,6.298"]
 "filecoin-project/FIPs" ["l"="-23.06,6.211"]
 "filecoin-project/community" ["l"="-23.074,6.246"]
-"ipfs/kubo" ["l"="-22.096,6.877"]
+"ipfs/kubo" ["l"="-22.096,6.877", "c"=633]
 "filecoin-project/ref-fvm" ["l"="-23.078,6.205"]
-"ChainSafe/forest" ["l"="-23.097,6.243"]
 "shannon-6block/lotus-miner" ["l"="-23.014,6.323"]
-"ethersphere/bee" ["l"="50.711,2.164"]
-"libp2p/go-libp2p" ["l"="-22.161,6.86"]
+"ethersphere/bee" ["l"="50.711,2.164", "c"=2204]
+"libp2p/go-libp2p" ["l"="-22.161,6.86", "c"=633]
 "minerdao/lotus-ops" ["l"="-22.985,6.316"]
 "textileio/powergate" ["l"="-23.06,6.308"]
 "filecoin-project/notary-governance" ["l"="-23.107,6.226"]
@@ -537,71 +578,79 @@ digraph G {
 "filecoin-project/devgrants" ["l"="-23.067,6.229"]
 "filecoin-project/filecoin-ffi" ["l"="-23.02,6.212"]
 "filecoin-project/filecoin-plus-large-datasets" ["l"="-23.125,6.215"]
+"storj/storj" ["l"="-21.226,8.015", "c"=715]
+"ipld/go-ipld-prime" ["l"="-22.263,7.078", "c"=633]
+"ipld/go-car" ["l"="-23.061,6.157"]
 "textileio/go-threads" ["l"="-23.068,6.368"]
 "textileio/textile" ["l"="-23.078,6.347"]
-"hsanjuan/ipfs-lite" ["l"="-22.156,7.098"]
+"hsanjuan/ipfs-lite" ["l"="-22.156,7.098", "c"=633]
 "textileio/community" ["l"="-23.099,6.356"]
 "textileio/js-threads" ["l"="-23.091,6.392"]
-"berty/go-orbit-db" ["l"="-22.072,7.018"]
+"berty/go-orbit-db" ["l"="-22.072,7.018", "c"=633]
 "airsecure/airsecure" ["l"="-23.061,6.429"]
-"textileio/go-textile" ["l"="-22.221,7.187"]
+"textileio/go-textile" ["l"="-22.221,7.187", "c"=633]
 "textileio/js-examples" ["l"="-23.09,6.335"]
 "textileio/grpc-ipfs-lite" ["l"="-23.057,6.402"]
+"google/rerast" ["l"="-9.834,-6.188", "c"=5]
+"magnet/metered-rs" ["l"="-23.38,6.322"]
 "rs-ipfs/rust-ipfs" ["l"="-23.226,6.26"]
-"libp2p/rust-libp2p" ["l"="-10.031,-6.054"]
+"libp2p/rust-libp2p" ["l"="-10.031,-6.054", "c"=5]
 "ipfs-rust/ipfs-embed" ["l"="-23.227,6.229"]
 "ferristseng/rust-ipfs-api" ["l"="-23.274,6.233"]
-"tomusdrw/rust-web3" ["l"="-20.788,10.622"]
-"n0-computer/iroh" ["l"="-9.915,-6.205"]
+"tomusdrw/rust-web3" ["l"="-20.788,10.622", "c"=22]
+"n0-computer/iroh" ["l"="-9.915,-6.205", "c"=5]
 "ipld/libipld" ["l"="-23.257,6.215"]
-"rust-ethereum/evm" ["l"="-20.73,10.682"]
-"cometbft/tendermint-rs" ["l"="-19.177,8.202"]
-"use-ink/ink" ["l"="-18.839,9.382"]
-"tomaka/redshirt" ["l"="-9.746,-6.296"]
+"rust-ethereum/evm" ["l"="-20.73,10.682", "c"=22]
+"cometbft/tendermint-rs" ["l"="-19.177,8.202", "c"=438]
+"use-ink/ink" ["l"="-18.839,9.382", "c"=457]
+"tomaka/redshirt" ["l"="-9.746,-6.296", "c"=5]
 "Ghost-Drive/ghost-node" ["l"="-23.253,6.292"]
-"libp2p/specs" ["l"="-22.215,6.935"]
+"libp2p/specs" ["l"="-22.215,6.935", "c"=633]
 "iqlusioninc/abscissa" ["l"="-23.322,6.302"]
-"smol-rs/smol" ["l"="-9.964,-6.213"]
-"ipld/go-car" ["l"="-23.061,6.157"]
-"whyrusleeping/whypfs" ["l"="-22.238,6.798"]
-"ipfs/go-ipfs-blockstore" ["l"="-22.258,7.167"]
-"ipld/go-ipld-prime" ["l"="-22.263,7.078"]
+"smol-rs/smol" ["l"="-9.964,-6.213", "c"=5]
+"whyrusleeping/whypfs" ["l"="-22.238,6.798", "c"=633]
+"ipfs/go-ipfs-blockstore" ["l"="-22.258,7.167", "c"=633]
+"ChainSafe/gossamer" ["l"="-18.895,9.415", "c"=457]
 "filecoin-project/filecoin" ["l"="-23.138,6.256"]
 "data-preservation-programs/slingshot" ["l"="-23.098,6.271"]
 "filecoin-project/venus-docs" ["l"="-23.099,6.212"]
-"fluencelabs/aquavm" ["l"="-22.328,7.935"]
-"fluencelabs/cli" ["l"="-22.335,7.955"]
-"tendermint/tendermint" ["l"="-19.156,8.374"]
-"ipfs-cluster/ipfs-cluster" ["l"="-22.146,7.007"]
-"zcash/zcash" ["l"="-20.736,7.95"]
+"fluencelabs/aquavm" ["l"="-22.328,7.935", "c"=802]
+"fluencelabs/cli" ["l"="-22.335,7.955", "c"=802]
+"tendermint/tendermint" ["l"="-19.156,8.374", "c"=438]
+"ipfs-cluster/ipfs-cluster" ["l"="-22.146,7.007", "c"=633]
+"zcash/zcash" ["l"="-20.736,7.95", "c"=715]
+"fluencelabs/nox" ["l"="-22.386,7.941", "c"=802]
+"Conflux-Chain/conflux-rust" ["l"="50.383,2.896", "c"=85]
+"drand/drand" ["l"="-16.803,7.454", "c"=509]
+"tower-rs/tower-grpc" ["l"="-10.022,-6.03", "c"=5]
 "multiformats/rust-multihash" ["l"="-23.322,6.201"]
 "multiformats/rust-cid" ["l"="-23.292,6.205"]
 "gkbrk/rust-ipfs-api" ["l"="-23.318,6.239"]
-"magnet/metered-rs" ["l"="-23.38,6.322"]
 "elichai/log-derive" ["l"="-23.41,6.333"]
 "waynewyang/analysis-of-filecoin-in-Chinese" ["l"="-22.986,6.28"]
-"yaahc/displaydoc" ["l"="-9.777,-6.375"]
-"iqlusioninc/crates" ["l"="-19.162,12.816"]
+"yaahc/displaydoc" ["l"="-9.777,-6.375", "c"=5]
+"iqlusioninc/crates" ["l"="-19.162,12.816", "c"=173]
 "filecoin-project/bellperson" ["l"="-23.091,6.191"]
-"MinaProtocol/gpu-groth16-prover-3x" ["l"="-18.953,13.164"]
+"MinaProtocol/gpu-groth16-prover-3x" ["l"="-18.953,13.164", "c"=173]
 "filecoin-project/rust-gpu-tools" ["l"="-23.156,6.132"]
-"bsdevlin/fpga_snark_prover" ["l"="-20.878,5.63"]
+"bsdevlin/fpga_snark_prover" ["l"="-20.878,5.63", "c"=163]
 "jackoelv/bellperson" ["l"="-23.006,6.311"]
-"privacy-scaling-explorations/halo2wrong" ["l"="-18.778,12.863"]
-"lurk-lab/neptune" ["l"="-18.778,12.942"]
+"privacy-scaling-explorations/halo2wrong" ["l"="-18.778,12.863", "c"=173]
+"lurk-lab/neptune" ["l"="-18.778,12.942", "c"=173]
 "liyue201/awesome-filecoin" ["l"="-22.949,6.277"]
 "ipfs-force-community/filscan-backend" ["l"="-22.966,6.299"]
-"waynewyang/analysis-of-IPFS-in-Chinese" ["l"="-21.976,7.01"]
+"waynewyang/analysis-of-IPFS-in-Chinese" ["l"="-21.976,7.01", "c"=633]
 "twosson/fil_exporter" ["l"="-22.969,6.283"]
+"testground/testground" ["l"="-22.455,7.062", "c"=633]
 "textileio/js-textile" ["l"="-23.102,6.376"]
 "filecoin-project/rust-filecoin-proofs-api" ["l"="-23.002,6.211"]
 "filecoin-project/cpp-filecoin" ["l"="-23.003,6.178"]
 "ipfs-force-community/sophon-messager" ["l"="-23.152,6.181"]
-"textileio/desktop" ["l"="-22.241,7.219"]
+"textileio/desktop" ["l"="-22.241,7.219", "c"=633]
 "filecoin-shipyard/js-filecoin-api-client" ["l"="-23.148,6.333"]
 "filecoin-shipyard/js-lotus-client" ["l"="-23.158,6.319"]
 "textileio/js-http-client" ["l"="-23.099,6.467"]
-"textileio/photos-desktop" ["l"="-22.225,7.222"]
+"textileio/photos-desktop" ["l"="-22.225,7.222", "c"=633]
 "textileio/js-threads-client" ["l"="-23.097,6.436"]
 "FleekHQ/apollo-cursor-pagination" ["l"="-23.209,6.473"]
 "FleekHQ/brokkr" ["l"="-23.192,6.446"]
@@ -611,19 +660,22 @@ digraph G {
 "FleekHQ/space-daemon" ["l"="-23.141,6.377"]
 "application-research/estuary" ["l"="-23.046,6.177"]
 "filecoin-shipyard/powergate-pinning-service" ["l"="-23.078,6.319"]
-"ipfs/go-bitswap" ["l"="-22.33,7.073"]
+"ipfs/go-bitswap" ["l"="-22.33,7.073", "c"=633]
 "filecoin-project/starling" ["l"="-23.109,6.332"]
-"ChainSafe/gossamer" ["l"="-18.895,9.415"]
-"ChainSafe/mina-rs" ["l"="-18.935,12.835"]
-"ChainSafe/lodestar" ["l"="-20.767,10.876"]
+"cpp-pm/hunter" ["l"="-19.797,-26.393", "c"=10]
+"libp2p/cpp-libp2p" ["l"="-22.962,6.133"]
+"ChainSafe/mina-rs" ["l"="-18.935,12.835", "c"=173]
 "OliverRen/olili_blog" ["l"="-23.013,6.349"]
 "froghub-io/filecoin-sealer-recover" ["l"="-22.986,6.332"]
 "6block/lotus-script" ["l"="-22.997,6.325"]
-"doristeo/SwarmMonitoring" ["l"="50.666,2.224"]
+"doristeo/SwarmMonitoring" ["l"="50.666,2.224", "c"=2204]
 "moran666666/lotus-1.5.0" ["l"="-23.007,6.336"]
 "moran666666/lotus-1.4.0" ["l"="-23.022,6.336"]
+"paullouisageneau/libjuice" ["l"="63.364,-14.185", "c"=524]
+"ipfs/ipfs-docs" ["l"="-22.195,7.017", "c"=633]
+"ChainSafe/ChainBridge" ["l"="-18.936,9.447", "c"=457]
 "filecoin-project/filecoin-plus-client-onboarding" ["l"="-23.132,6.232"]
-"ipfs/devgrants" ["l"="-22.261,7.028"]
+"ipfs/devgrants" ["l"="-22.261,7.028", "c"=633]
 "filecoin-project/lassie" ["l"="-23.026,6.183"]
 "glifio/wallet" ["l"="-23.125,6.276"]
 "Zondax/filecoin-signing-tools" ["l"="-23.114,6.309"]
@@ -639,20 +691,20 @@ digraph G {
 "FleekHQ/space-sdk" ["l"="-23.151,6.412"]
 "jimmylee/next-express-emotion" ["l"="-23.131,6.297"]
 "ipni/storetheindex" ["l"="-23.067,6.174"]
-"libp2p/cpp-libp2p" ["l"="-22.962,6.133"]
-"qdrvm/kagome" ["l"="-18.897,9.463"]
-"libp2p/libp2p" ["l"="-22.173,6.927"]
-"paullouisageneau/libjuice" ["l"="63.364,-14.185"]
-"vasild/cpp-ipfs-http-client" ["l"="-22.473,6.987"]
+"qdrvm/kagome" ["l"="-18.897,9.463", "c"=457]
+"libp2p/libp2p" ["l"="-22.173,6.927", "c"=633]
+"vasild/cpp-ipfs-http-client" ["l"="-22.473,6.987", "c"=633]
 "filecoin-project/lily" ["l"="-22.99,6.246"]
 "filecoin-project/sentinel" ["l"="-22.951,6.247"]
 "vanvank/lotus-ops" ["l"="-23.002,6.383"]
 "ipfs-force-community/filscan-frontend" ["l"="-22.932,6.301"]
 "filecoin-project/ec-gpu" ["l"="-23.179,6.109"]
+"ipfs/ipfs-desktop" ["l"="-22.068,6.963", "c"=633]
+"freenet/freenet-core" ["l"="-51.537,5.779", "c"=1225]
 "application-research/filclient" ["l"="-23.02,6.151"]
 "application-research/estuary-www" ["l"="-23.037,6.132"]
 "CIDgravity/gw" ["l"="-23.023,6.137"]
-"libp2p/hydra-booster" ["l"="-22.3,6.874"]
+"libp2p/hydra-booster" ["l"="-22.3,6.874", "c"=633]
 "TheDiscordian/ipfs-sync" ["l"="-23.006,6.118"]
 "filedrive-team/go-graphsplit" ["l"="-23.122,6.149"]
 "filecoin-project/dagstore" ["l"="-23.006,6.142"]
@@ -661,18 +713,19 @@ digraph G {
 "storacha/w3ui" ["l"="-22.929,6.218"]
 "storacha/ipfs-car" ["l"="-22.876,6.178"]
 "storacha/add-to-web3" ["l"="-22.932,6.187"]
-"storacha/w3name" ["l"="-22.065,6.717"]
-"ipfs-examples/js-ipfs-examples" ["l"="-22.092,6.804"]
+"storacha/w3name" ["l"="-22.065,6.717", "c"=633]
+"ipfs-examples/js-ipfs-examples" ["l"="-22.092,6.804", "c"=633]
 "elastic-ipfs/elastic-ipfs" ["l"="-22.912,6.201"]
-"ipfs/ipfs-docs" ["l"="-22.195,7.017"]
-"ipfs/community" ["l"="-22.177,7.032"]
-"ipfs-shipyard/nft-school-examples" ["l"="-20.293,9.767"]
-"protocol/nft-website" ["l"="-20.902,14.088"]
+"ipfs/community" ["l"="-22.177,7.032", "c"=633]
+"protocol/nft-website" ["l"="-20.902,14.088", "c"=591]
+"ipfs-shipyard/nft-school-examples" ["l"="-20.293,9.767", "c"=22]
 "nftstorage/nftup" ["l"="-22.921,6.144"]
-"bpierre/use-nft" ["l"="-20.821,14.048"]
+"bpierre/use-nft" ["l"="-20.821,14.048", "c"=591]
+"telegram-rs/telegram-bot" ["l"="-10.151,-5.992", "c"=5]
 "moran666666/lotus-1.10.0" ["l"="-22.972,6.312"]
 "minerdao/posts" ["l"="-22.968,6.34"]
 "minerdao/awesome-aleo" ["l"="-22.953,6.36"]
+"alecbcs/hyprspace" ["l"="13.059,-12.194", "c"=847]
 "filguard/lotus-alert" ["l"="-22.949,6.321"]
 "supranational/supra_seal" ["l"="-22.939,6.332"]
 "filecoin-project/venus-wallet" ["l"="-23.21,6.132"]
@@ -686,9 +739,9 @@ digraph G {
 "ipld/js-car" ["l"="-22.851,6.154"]
 "nftstorage/carbites" ["l"="-22.849,6.187"]
 "tech-greedy/singularity" ["l"="-22.992,6.223"]
-"smartchicago/kimball" ["l"="-53.797,10.631"]
+"smartchicago/kimball" ["l"="-53.797,10.631", "c"=19]
 "filecoin-project/venus-sealer" ["l"="-23.172,6.157"]
-"Psychedelic/dank" ["l"="7.117,-23.739"]
+"Psychedelic/dank" ["l"="7.117,-23.739", "c"=2436]
 "ipfs-force-community/go-fvm-sdk" ["l"="-23.126,6.166"]
 "Zondax/filecoin-solidity" ["l"="-23.104,6.143"]
 "filecoin-project/fevm-hardhat-kit" ["l"="-23.115,6.115"]
@@ -698,20 +751,20 @@ digraph G {
 "filecoin-saturn/L1-node" ["l"="-23.02,6.082"]
 "bacalhau-project/examples" ["l"="-23.073,6.092"]
 "bacalhau-project/amplify" ["l"="-23.084,6.099"]
-"ipfs/helia" ["l"="-22.14,6.89"]
-"ipvm-wg/homestar" ["l"="-35.555,14.333"]
+"ipfs/helia" ["l"="-22.14,6.89", "c"=633]
+"ipvm-wg/homestar" ["l"="-35.555,14.333", "c"=664]
 "Ghost-Drive/flysystem-ts" ["l"="-23.268,6.315"]
 "FILCAT/client-contract" ["l"="-23.087,6.116"]
 "CIDgravity/CIDgravity-X" ["l"="-23.029,6.116"]
 "nftstorage/nftstorage.link" ["l"="-22.805,6.163"]
 "google/rust-multihash" ["l"="-23.355,6.185"]
 "HarukaMa/aleo-pool-server" ["l"="-22.919,6.395"]
-"HarukaMa/aleo-prover" ["l"="-22.769,9.252"]
+"HarukaMa/aleo-prover" ["l"="-22.769,9.252", "c"=603]
 "filecoin-saturn/L2-node" ["l"="-22.996,6.049"]
 "filecoin-saturn/browser-client" ["l"="-22.996,6.067"]
 "CheckerNetwork/desktop" ["l"="-23.016,6.036"]
 "CheckerNetwork/node" ["l"="-23.026,6.05"]
-"protocol/web3-dev-team" ["l"="25.288,-26.596"]
+"protocol/web3-dev-team" ["l"="25.288,-26.596", "c"=32]
 "VshareCloud-Project/Filecoin-Storage-Tool" ["l"="-22.902,6.364"]
 "CryptoCraft-Tech/lotus-recovery" ["l"="-22.939,6.35"]
 "filecoin-project/fvm-starter-kit-deal-making" ["l"="-23.141,6.063"]
@@ -721,7 +774,11 @@ digraph G {
 "demox-labs/art-factory" ["l"="-22.861,6.464"]
 "demox-labs/leo-wallet-demo" ["l"="-22.86,6.446"]
 "minerdao/aleo-prove-bench" ["l"="-22.944,6.391"]
+"libp2p/go-libp2p-kad-dht" ["l"="-22.285,6.856", "c"=633]
 "demox-labs/aleo-nft" ["l"="-22.847,6.481"]
 "filecoin-project/filecoin-fvm-localnet" ["l"="-23.142,6.039"]
 "filecoin-project/fevm-foundry-kit" ["l"="-23.16,6.039"]
+"andygrove/datafusion-archive" ["l"="-0.622,14.986", "c"=729]
+"ipfs/distributed-wikipedia-mirror" ["l"="-22.123,7.074", "c"=633]
+"ArweaveTeam/arweave" ["l"="-49.501,18.538", "c"=1583]
 }

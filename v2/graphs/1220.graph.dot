@@ -14,6 +14,7 @@ digraph G {
 "ledger/ledger" -> "egh/ledger-autosync"
 "ledger/ledger" -> "orgzly/orgzly-android" ["e"=1]
 "ledger/ledger" -> "howeyc/ledger"
+"kevinschaich/mintable" -> "ebridges/plaid2qif" ["e"=1]
 "egh/ledger-autosync" -> "captin411/ofxclient"
 "egh/ledger-autosync" -> "slashdotdash/node-ledger"
 "egh/ledger-autosync" -> "slashdotdash/node-ledger-web"
@@ -122,6 +123,10 @@ digraph G {
 "beancount/beancount" -> "BaoXuebin/beancount-gs"
 "beancount/beancount" -> "plaintextaccounting/plaintextaccounting"
 "beancount/beancount" -> "Gnucash/gnucash"
+"moneymanagerex/moneymanagerex" -> "Gnucash/gnucash" ["e"=1]
+"moneymanagerex/moneymanagerex" -> "ananthakumaran/paisa" ["e"=1]
+"cli-guidelines/cli-guidelines" -> "simonmichael/hledger" ["e"=1]
+"gramps-project/gramps" -> "Gnucash/gnucash" ["e"=1]
 "deb-sig/double-entry-generator" -> "zsxsoft/my-beancount-scripts"
 "deb-sig/double-entry-generator" -> "maonx/Beancount-Chinese-User-Manual"
 "deb-sig/double-entry-generator" -> "mckelvin/beancount-boilerplate-cn"
@@ -138,6 +143,7 @@ digraph G {
 "deb-sig/double-entry-generator" -> "andreasgerstmayr/fava-dashboards"
 "deb-sig/double-entry-generator" -> "beancount/fava"
 "nathangrigg/vim-beancount" -> "beancount/beangulp"
+"euforic/banking.js" -> "captin411/ofxclient" ["e"=1]
 "polarmutex/fava-envelope" -> "scauligi/refried"
 "polarmutex/fava-envelope" -> "redstreet/fava_investor"
 "polarmutex/fava-envelope" -> "andreasgerstmayr/fava-portfolio-returns"
@@ -253,6 +259,8 @@ digraph G {
 "zsxsoft/fava-management" -> "kaaass/fava-management"
 "jliesch/ofxget" -> "jliesch/ofxgetqt"
 "jliesch/ofxgetqt" -> "jliesch/ofxget"
+"ghostfolio/ghostfolio" -> "ananthakumaran/paisa" ["e"=1]
+"portfolio-performance/portfolio" -> "Gnucash/gnucash" ["e"=1]
 "kedder/ofxstatement" -> "reubano/csv2ofx"
 "kedder/ofxstatement" -> "gerasiov/ofxstatement-russian"
 "kedder/ofxstatement" -> "finance-quote/finance-quote"
@@ -292,6 +300,9 @@ digraph G {
 "ananthakumaran/paisa" -> "Freika/dawarich" ["e"=1]
 "ananthakumaran/paisa" -> "omnivore-app/omnivore" ["e"=1]
 "ananthakumaran/paisa" -> "RIP-Comm/sossoldi" ["e"=1]
+"codinguser/gnucash-android" -> "Gnucash/gnucash" ["e"=1]
+"codinguser/gnucash-android" -> "GnuCash-Pocket/gnucash-android" ["e"=1]
+"codinguser/gnucash-android" -> "sdementen/piecash" ["e"=1]
 "BaoXuebin/beancount-gs" -> "zsxsoft/my-beancount-scripts"
 "BaoXuebin/beancount-gs" -> "maonx/Beancount-Chinese-User-Manual"
 "BaoXuebin/beancount-gs" -> "deb-sig/double-entry-generator"
@@ -307,6 +318,7 @@ digraph G {
 "BaoXuebin/beancount-gs" -> "sphish/Beancount-CSVImporter"
 "BaoXuebin/beancount-gs" -> "heyeshuang/beancount-homemade-importers"
 "BaoXuebin/beancount-gs" -> "zhang-accounting/zhang"
+"jmathai/elodie" -> "egh/ledger-autosync" ["e"=1]
 "beancount/fava" -> "beancount/beancount"
 "beancount/fava" -> "jbms/beancount-import"
 "beancount/fava" -> "beancount/smart_importer"
@@ -362,6 +374,7 @@ digraph G {
 "kaaass/beancount_bot" -> "kaaass/my-beancount-template"
 "kaaass/beancount_bot" -> "wogong/beancount-bot"
 "LaunchPlatform/beancount-parser" -> "LaunchPlatform/beancount-black"
+"RIP-Comm/sossoldi" -> "ananthakumaran/paisa" ["e"=1]
 "captin411/ofxclient" -> "jseutter/ofxparse"
 "captin411/ofxclient" -> "egh/ledger-autosync"
 "captin411/ofxclient" -> "csingley/ofxtools"
@@ -392,6 +405,7 @@ digraph G {
 "wzyboy/awesome-beancount" -> "hoostus/beancount-price-sources"
 "wzyboy/awesome-beancount" -> "jbms/beancount-import"
 "jiegec/china_bean_importers" -> "miaogaolin/excel-proc"
+"getmoneynote/moneynote-api" -> "BaoXuebin/beancount-gs" ["e"=1]
 "narendraj9/hledger-mode" -> "edkedk99/awesome-hledger"
 "narendraj9/hledger-mode" -> "ledger/ledger-mode"
 "narendraj9/hledger-mode" -> "hpdeifel/hledger-iadd"
@@ -512,14 +526,16 @@ digraph G {
 "Gnucash/gnucash" ["l"="11.101,-12.274"]
 "ananthakumaran/paisa" ["l"="11.24,-12.203"]
 "ledger/vim-ledger" ["l"="11.147,-12.239"]
-"org-roam/org-roam" ["l"="-16.48,-11.982"]
-"magit/magit" ["l"="-16.692,-12.007"]
-"bbatsov/projectile" ["l"="-16.72,-11.946"]
+"org-roam/org-roam" ["l"="-16.48,-11.982", "c"=16]
+"magit/magit" ["l"="-16.692,-12.007", "c"=16]
+"bbatsov/projectile" ["l"="-16.72,-11.946", "c"=16]
 "cantino/reckon" ["l"="11.15,-12.273"]
-"jwiegley/use-package" ["l"="-16.68,-11.957"]
+"jwiegley/use-package" ["l"="-16.68,-11.957", "c"=16]
 "egh/ledger-autosync" ["l"="11.135,-12.309"]
-"orgzly/orgzly-android" ["l"="-16.469,-12.007"]
+"orgzly/orgzly-android" ["l"="-16.469,-12.007", "c"=16]
 "howeyc/ledger" ["l"="11.064,-12.216"]
+"kevinschaich/mintable" ["l"="13.297,-8.588", "c"=18]
+"ebridges/plaid2qif" ["l"="11.283,-12.192"]
 "captin411/ofxclient" ["l"="11.104,-12.37"]
 "slashdotdash/node-ledger" ["l"="11.11,-12.328"]
 "slashdotdash/node-ledger-web" ["l"="11.116,-12.302"]
@@ -561,7 +577,7 @@ digraph G {
 "deb-sig/double-entry-generator" ["l"="11.322,-12.262"]
 "LucaBernstein/beancount-bot-tg" ["l"="11.324,-12.234"]
 "Lencerf/vscode-beancount" ["l"="11.305,-12.295"]
-"xuhcc/beancount-mobile" ["l"="-51.056,-15.015"]
+"xuhcc/beancount-mobile" ["l"="-51.056,-15.015", "c"=788]
 "polarmutex/fava-envelope" ["l"="11.32,-12.321"]
 "BaoXuebin/beancount-gs" ["l"="11.341,-12.269"]
 "kaaass/beancount_bot" ["l"="11.347,-12.234"]
@@ -583,10 +599,14 @@ digraph G {
 "jseutter/ofxparse" ["l"="11.09,-12.402"]
 "csingley/ofxtools" ["l"="11.072,-12.379"]
 "captin411/ofxmate" ["l"="11.11,-12.397"]
+"moneymanagerex/moneymanagerex" ["l"="-52.877,9.427", "c"=19]
+"cli-guidelines/cli-guidelines" ["l"="5.041,-4.958", "c"=784]
+"gramps-project/gramps" ["l"="-2.741,-31.73", "c"=30]
 "jiegec/china_bean_importers" ["l"="11.403,-12.266"]
 "dhr2333/Beancount-Trans" ["l"="11.365,-12.235"]
 "kaaass/my-beancount-template" ["l"="11.341,-12.217"]
 "nathangrigg/vim-beancount" ["l"="11.284,-12.252"]
+"euforic/banking.js" ["l"="2.387,-33.218", "c"=785]
 "scauligi/refried" ["l"="11.349,-12.334"]
 "sulemankm/budget_report" ["l"="11.311,-12.28"]
 "beancount/beanprice" ["l"="11.318,-12.338"]
@@ -612,7 +632,6 @@ digraph G {
 "SEIAROTg/autobean-format" ["l"="11.307,-12.356"]
 "Xuanwo/beancollect" ["l"="11.376,-12.294"]
 "landakram/plaid-cli" ["l"="11.298,-12.165"]
-"ebridges/plaid2qif" ["l"="11.283,-12.192"]
 "polarmutex/beancount.nvim" ["l"="11.271,-12.447"]
 "hoostus/portfolio-returns" ["l"="11.29,-12.382"]
 "seltzered/fava-classy-portfolio" ["l"="11.334,-12.318"]
@@ -624,20 +643,23 @@ digraph G {
 "bratekarate/beancount-categorizer" ["l"="11.331,-12.39"]
 "jliesch/ofxget" ["l"="11.055,-12.413"]
 "jliesch/ofxgetqt" ["l"="11.045,-12.429"]
+"ghostfolio/ghostfolio" ["l"="12.658,-8.933", "c"=18]
+"portfolio-performance/portfolio" ["l"="12.794,-9.016", "c"=18]
 "reubano/csv2ofx" ["l"="11.029,-12.379"]
 "gerasiov/ofxstatement-russian" ["l"="10.981,-12.372"]
 "nicktylah/gnucash-mobile" ["l"="10.906,-12.327"]
-"ghostfolio/ghostfolio" ["l"="12.658,-8.933"]
-"actualbudget/actual" ["l"="12.676,-8.997"]
-"afadil/wealthfolio" ["l"="16.161,-10.327"]
-"h4h13/Paisa" ["l"="-52.361,9.39"]
-"firefly-iii/firefly-iii" ["l"="12.634,-8.976"]
-"hyperdxio/hyperdx" ["l"="16.035,-10.259"]
-"jameskokoska/Cashew" ["l"="-52.323,9.315"]
-"Freika/dawarich" ["l"="12.466,-8.719"]
-"omnivore-app/omnivore" ["l"="12.673,-9.101"]
-"RIP-Comm/sossoldi" ["l"="41.277,-0.153"]
+"actualbudget/actual" ["l"="12.676,-8.997", "c"=18]
+"afadil/wealthfolio" ["l"="16.161,-10.327", "c"=198]
+"h4h13/Paisa" ["l"="-52.361,9.39", "c"=19]
+"firefly-iii/firefly-iii" ["l"="12.634,-8.976", "c"=18]
+"hyperdxio/hyperdx" ["l"="16.035,-10.259", "c"=198]
+"jameskokoska/Cashew" ["l"="-52.323,9.315", "c"=19]
+"Freika/dawarich" ["l"="12.466,-8.719", "c"=18]
+"omnivore-app/omnivore" ["l"="12.673,-9.101", "c"=18]
+"RIP-Comm/sossoldi" ["l"="41.277,-0.153", "c"=7]
+"codinguser/gnucash-android" ["l"="61.352,-15.634", "c"=609]
 "yegle/fava-docker" ["l"="11.409,-12.238"]
+"jmathai/elodie" ["l"="12.388,-11.324", "c"=1212]
 "wzyboy/awesome-beancount" ["l"="11.243,-12.312"]
 "hpdeifel/hledger-iadd" ["l"="11.134,-12.176"]
 "msmart/hreports" ["l"="11.116,-12.151"]
@@ -650,25 +672,23 @@ digraph G {
 "wogong/beancount-bot" ["l"="11.369,-12.201"]
 "mbafford/plaid-sync" ["l"="11.328,-12.173"]
 "hoostus/beancount-price-sources" ["l"="11.222,-12.338"]
+"getmoneynote/moneynote-api" ["l"="12.456,-7.947", "c"=18]
 "Rudd-O/ledgerhelpers" ["l"="11.1,-12.199"]
 "zombor/hledger-envelope-budget" ["l"="11.184,-12.123"]
-"remyhonig/elfeed-org" ["l"="-16.466,-11.9"]
-"skeeto/elfeed" ["l"="-16.533,-11.923"]
-"weirdNox/org-noter" ["l"="-16.408,-11.941"]
-"takaxp/org-tree-slide" ["l"="-16.392,-11.805"]
+"remyhonig/elfeed-org" ["l"="-16.466,-11.9", "c"=16]
+"skeeto/elfeed" ["l"="-16.533,-11.923", "c"=16]
+"weirdNox/org-noter" ["l"="-16.408,-11.941", "c"=16]
+"takaxp/org-tree-slide" ["l"="-16.392,-11.805", "c"=16]
 "dhr2333/Beancount-Trans-Assets" ["l"="11.392,-12.213"]
-"codinguser/gnucash-android" ["l"="61.352,-15.634"]
-"moneymanagerex/moneymanagerex" ["l"="-52.877,9.427"]
-"gramps-project/gramps" ["l"="-2.741,-31.73"]
-"frappe/books" ["l"="15.141,-11.456"]
-"akaunting/akaunting" ["l"="-15.5,27.969"]
+"frappe/books" ["l"="15.141,-11.456", "c"=1205]
+"akaunting/akaunting" ["l"="-15.5,27.969", "c"=29]
 "thefrontside/frontmacs" ["l"="11.128,-12.094"]
 "colindean/plaintextaccounting_workshop" ["l"="11.111,-12.238"]
 "fengkx/beancount-lsp" ["l"="11.307,-12.245"]
 "slashdotdash/node-ledger-rest" ["l"="11.093,-12.331"]
-"haskell-servant/servant" ["l"="-20.806,-20.154"]
-"commercialhaskell/stack" ["l"="-20.877,-20.19"]
-"jaspervdj/hakyll" ["l"="-20.856,-20.219"]
+"haskell-servant/servant" ["l"="-20.806,-20.154", "c"=118]
+"commercialhaskell/stack" ["l"="-20.877,-20.19", "c"=118]
+"jaspervdj/hakyll" ["l"="-20.856,-20.219", "c"=118]
 "abourget/ledger" ["l"="11.026,-12.212"]
 "tn47/goledger" ["l"="11.052,-12.184"]
 "Ikke/ledger-dashboard" ["l"="11.079,-12.32"]

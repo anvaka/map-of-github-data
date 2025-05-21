@@ -1,4 +1,6 @@
 digraph G {
+"loveuav/BlueSkyFlightControl" -> "priseborough/InertialNav" ["e"=1]
+"uzh-rpg/rpg_trajectory_evaluation" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "ros-planning/robot_pose_ekf" -> "udacity/robot_pose_ekf"
 "ros-planning/robot_pose_ekf" -> "ros-perception/laser_filters" ["e"=1]
 "ros-planning/robot_pose_ekf" -> "ros-planning/navigation_tutorials" ["e"=1]
@@ -24,6 +26,10 @@ digraph G {
 "karanchawla/GPS_IMU_Kalman_Filter" -> "mherb/kalman" ["e"=1]
 "karanchawla/GPS_IMU_Kalman_Filter" -> "ethz-asl/lidar_align" ["e"=1]
 "gemini3d/gemini3d" -> "aaronjridley/GITM"
+"commaai/speedchallenge" -> "commaai/laika" ["e"=1]
+"gaowenliang/imu_utils" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"Mayitzin/ahrs" -> "cggos/imu_x_fusion" ["e"=1]
+"Mayitzin/ahrs" -> "Aceinna/gnss-ins-sim" ["e"=1]
 "benzenemo/TightlyCoupledINSGNSS" -> "Erensu/ignav"
 "benzenemo/TightlyCoupledINSGNSS" -> "kaichen686/GINav"
 "benzenemo/TightlyCoupledINSGNSS" -> "i2Nav-WHU/OB_GINS"
@@ -39,6 +45,11 @@ digraph G {
 "benzenemo/TightlyCoupledINSGNSS" -> "HKUST-Aerial-Robotics/GVINS-Dataset"
 "benzenemo/TightlyCoupledINSGNSS" -> "zbai/MATLAB-Groves"
 "benzenemo/TightlyCoupledINSGNSS" -> "i2Nav-WHU/KF-GINS"
+"balzer82/Kalman" -> "karanchawla/GPS_IMU_Kalman_Filter" ["e"=1]
+"balzer82/Kalman" -> "cggos/imu_x_fusion" ["e"=1]
+"mendhak/gpslogger" -> "barbeau/gpstest" ["e"=1]
+"mendhak/gpslogger" -> "google/gps-measurement-tools" ["e"=1]
+"StevenCui/VIO-Doc" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "Aceinna/gnss-ins-sim" -> "2013fangwentao/Multi_Sensor_Fusion"
 "Aceinna/gnss-ins-sim" -> "rodralez/NaveGo"
 "Aceinna/gnss-ins-sim" -> "cggos/imu_x_fusion"
@@ -54,6 +65,7 @@ digraph G {
 "Aceinna/gnss-ins-sim" -> "weisongwen/GraphGNSSLib"
 "Aceinna/gnss-ins-sim" -> "rpng/open_vins" ["e"=1]
 "Aceinna/gnss-ins-sim" -> "tomojitakasu/RTKLIB"
+"pjrambo/VINS-Fusion-gpu" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "Knio/pynmea2" -> "semuconsulting/PyGPSClient"
 "Knio/pynmea2" -> "semuconsulting/pynmeagps"
 "Knio/pynmea2" -> "inmcm/micropyGPS" ["e"=1]
@@ -81,6 +93,7 @@ digraph G {
 "udacity/robot_pose_ekf" -> "cggos/imu_x_fusion"
 "udacity/robot_pose_ekf" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["e"=1]
 "udacity/robot_pose_ekf" -> "ethz-asl/ethzasl_sensor_fusion" ["e"=1]
+"urbandroid-team/dont-kill-my-app" -> "barbeau/gpstest" ["e"=1]
 "gnss-sdr/gnss-sdr" -> "taroz/GNSS-SDRLIB"
 "gnss-sdr/gnss-sdr" -> "osqzss/gps-sdr-sim" ["e"=1]
 "gnss-sdr/gnss-sdr" -> "tomojitakasu/RTKLIB"
@@ -96,8 +109,16 @@ digraph G {
 "gnss-sdr/gnss-sdr" -> "Aceinna/gnss-ins-sim"
 "gnss-sdr/gnss-sdr" -> "nlsfi/FGI-GSRx"
 "gnss-sdr/gnss-sdr" -> "gnuradio/gnuradio" ["e"=1]
+"engcang/vins-application" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "ethz-asl/odom_predictor" -> "nadiawangberg/imu_to_odom"
 "ethz-asl/odom_predictor" -> "tum-phoenix/drive_ros_localize_inertial_navigation_system"
+"mbrossar/ai-imu-dr" -> "cggos/imu_x_fusion" ["e"=1]
+"mbrossar/ai-imu-dr" -> "i2Nav-WHU/Wheel-INS" ["e"=1]
+"mbrossar/ai-imu-dr" -> "Aceinna/gnss-ins-sim" ["e"=1]
+"mbrossar/ai-imu-dr" -> "i2Nav-WHU/OB_GINS" ["e"=1]
+"mbrossar/ai-imu-dr" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
+"mbrossar/ai-imu-dr" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"xioTechnologies/Open-Source-AHRS-With-x-IMU" -> "priseborough/InertialNav" ["e"=1]
 "2013fangwentao/Multi_Sensor_Fusion" -> "cggos/imu_x_fusion"
 "2013fangwentao/Multi_Sensor_Fusion" -> "i2Nav-WHU/OB_GINS"
 "2013fangwentao/Multi_Sensor_Fusion" -> "Erensu/ignav"
@@ -126,6 +147,9 @@ digraph G {
 "alirezaahmadi/KalmanFilter-Vehicle-GNSS-INS" -> "Erensu/ignav"
 "alirezaahmadi/KalmanFilter-Vehicle-GNSS-INS" -> "jayoungo/SINS-GPS-Integrated-Navigation"
 "alirezaahmadi/KalmanFilter-Vehicle-GNSS-INS" -> "bkarwoski/EKF_fusion" ["e"=1]
+"rpng/open_vins" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"pms67/Attitude-Estimation" -> "introlab/OpenIMU" ["e"=1]
+"geohot/twitchslam" -> "commaai/laika" ["e"=1]
 "commaai/laika" -> "commaai/rednose" ["e"=1]
 "commaai/laika" -> "barbeau/awesome-gnss"
 "commaai/laika" -> "GNSSpy-Project/gnsspy"
@@ -156,6 +180,13 @@ digraph G {
 "Stefal/rtkbase" -> "lansalot/FreeRTK" ["e"=1]
 "Stefal/rtkbase" -> "nebkat/esp32-xbee" ["e"=1]
 "Stefal/rtkbase" -> "tomojitakasu/RTKLIB"
+"Razor-AHRS/razor-9dof-ahrs" -> "introlab/OpenIMU" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "cggos/imu_x_fusion" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "zm0612/eskf-gps-imu-fusion" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "ydsf16/imu_gps_localization" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "Aceinna/gnss-ins-sim" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "Erensu/ignav" ["e"=1]
 "Erensu/ignav" -> "i2Nav-WHU/OB_GINS"
 "Erensu/ignav" -> "benzenemo/TightlyCoupledINSGNSS"
 "Erensu/ignav" -> "chichengcn/gici-open"
@@ -171,6 +202,15 @@ digraph G {
 "Erensu/ignav" -> "weisongwen/UrbanNavDataset"
 "Erensu/ignav" -> "HKUST-Aerial-Robotics/GVINS"
 "Erensu/ignav" -> "Erensu/cors"
+"ydsf16/aruco_ekf_slam" -> "libing64/pose_ekf" ["e"=1]
+"ydsf16/aruco_ekf_slam" -> "ydsf16/imu_gps_localization" ["e"=1]
+"HeYijia/vio_data_simulation" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"HeYijia/VINS-Course" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"ros-drivers/nmea_navsat_driver" -> "LORD-MicroStrain/ntrip_client" ["e"=1]
+"UMiNS/MSCKF_VIO_MONO" -> "shaolinbit/minisam_lib" ["e"=1]
+"lijx10/uwb-localization" -> "yandld/nav_matlab" ["e"=1]
+"xiahouzuoxin/notes" -> "xiahouzuoxin/kalman_filter" ["e"=1]
+"commaai/comma2k19" -> "commaai/laika" ["e"=1]
 "aaronboda24/Loose-GNSS-IMU" -> "Erensu/carvig"
 "aaronboda24/Loose-GNSS-IMU" -> "Erensu/ignav"
 "aaronboda24/Loose-GNSS-IMU" -> "karanchawla/GPS_IMU_Kalman_Filter"
@@ -211,6 +251,7 @@ digraph G {
 "qypluobo/supl-server" -> "Ericsson/SUPL-3GPP-LPP-client"
 "Erensu/carvig" -> "Erensu/cors"
 "Erensu/carvig" -> "Erensu/ignav"
+"Ewenwan/Mathematics" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
 "MapIV/eagleye" -> "cggos/imu_x_fusion"
 "MapIV/eagleye" -> "2013fangwentao/Multi_Sensor_Fusion"
 "MapIV/eagleye" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
@@ -227,6 +268,7 @@ digraph G {
 "MapIV/eagleye" -> "wh200720041/iscloam" ["e"=1]
 "MapIV/eagleye" -> "nobleo/rviz_satellite" ["e"=1]
 "acebrianjuan/gnss-sdr-monitor" -> "harshadms/galileo-sdr-sim"
+"rpng/kalibr_allan" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "sfwa/ukf" -> "mherb/kalman" ["e"=1]
 "sfwa/ukf" -> "karanchawla/GPS_IMU_Kalman_Filter"
 "sfwa/ukf" -> "mithi/fusion-ukf" ["e"=1]
@@ -241,6 +283,7 @@ digraph G {
 "sfwa/ukf" -> "JunshengFu/tracking-with-Extended-Kalman-Filter" ["e"=1]
 "sfwa/ukf" -> "artivis/kalmanif" ["e"=1]
 "sfwa/ukf" -> "priseborough/InertialNav"
+"Mictronics/pluto-gps-sim" -> "Mictronics/multi-sdr-gps-sim" ["e"=1]
 "ros-agriculture/ublox_f9p" -> "bao-eng/ublox"
 "ros-agriculture/ublox_f9p" -> "ros-agriculture/ntrip_ros"
 "PrideLab/PRIDE-PPPAR" -> "GeoscienceAustralia/ginan"
@@ -258,6 +301,8 @@ digraph G {
 "PrideLab/PRIDE-PPPAR" -> "zhouforme0318/GAMPII-GOOD"
 "PrideLab/PRIDE-PPPAR" -> "FCB-SGG/FCB-FILES"
 "PrideLab/PRIDE-PPPAR" -> "Erensu/cors"
+"gaochq/IMU_Attitude_Estimator" -> "cggos/imu_x_fusion" ["e"=1]
+"gaochq/IMU_Attitude_Estimator" -> "ydsf16/imu_gps_localization" ["e"=1]
 "YizeZhang/Net_Diff" -> "Erensu/cors"
 "YizeZhang/Net_Diff" -> "XiaoGongWei/MG_APP"
 "YizeZhang/Net_Diff" -> "goGPS-Project/goGPS_MATLAB"
@@ -278,6 +323,9 @@ digraph G {
 "TheGalfins/GNSS_Compare" -> "rokubun/android_rinex"
 "TheGalfins/GNSS_Compare" -> "goGPS-Project/goGPS_Java"
 "mrsp/imu_ekf" -> "softdream/imu_encoder_fusion"
+"RossHartley/invariant-ekf" -> "cggos/imu_x_fusion" ["e"=1]
+"dongjing3309/minisam" -> "shaolinbit/minisam_lib" ["e"=1]
+"dongjing3309/minisam" -> "i2Nav-WHU/OB_GINS" ["e"=1]
 "yyccR/Location" -> "karanchawla/GPS_IMU_Kalman_Filter"
 "yyccR/Location" -> "aaronboda24/Loose-GNSS-IMU"
 "yyccR/papers" -> "i2Nav-WHU/awesome-gins-datasets"
@@ -328,6 +376,8 @@ digraph G {
 "ufrgs-gnss-lab/mphw" -> "purnelldj/gnssr_synth"
 "ufrgs-gnss-lab/mphw" -> "purnelldj/gnssr_lowcost"
 "bao-eng/ublox" -> "ros-agriculture/ublox_f9p"
+"mapsforge/mapsforge" -> "barbeau/gpstest" ["e"=1]
+"moble/quaternion" -> "geospace-code/pymap3d" ["e"=1]
 "geospace-code/pymap3d" -> "geospace-code/georinex"
 "geospace-code/pymap3d" -> "mrJean1/PyGeodesy"
 "geospace-code/pymap3d" -> "NavPy/NavPy"
@@ -362,6 +412,7 @@ digraph G {
 "weisongwen/UrbanLoco" -> "SJTU-ViSYS/M2DGR" ["e"=1]
 "weisongwen/UrbanLoco" -> "epan-utbm/utbm_robocar_dataset"
 "weisongwen/UrbanLoco" -> "wh200720041/iscloam" ["e"=1]
+"inmcm/micropyGPS" -> "Knio/pynmea2" ["e"=1]
 "i2Nav-WHU/Wheel-INS" -> "i2Nav-WHU/Wheel-SLAM"
 "i2Nav-WHU/Wheel-INS" -> "Wallong/VINS-GPS-Wheel" ["e"=1]
 "i2Nav-WHU/Wheel-INS" -> "i2Nav-WHU/OB_GINS"
@@ -372,12 +423,16 @@ digraph G {
 "i2Nav-WHU/Wheel-INS" -> "i2Nav-WHU/IC-GVINS"
 "i2Nav-WHU/Wheel-INS" -> "cggos/imu_x_fusion"
 "i2Nav-WHU/Wheel-INS" -> "chichengcn/gici-open"
+"chrisveness/geodesy" -> "mrJean1/PyGeodesy" ["e"=1]
+"chrisveness/geodesy" -> "vahancho/erkir" ["e"=1]
+"TurtleZhong/Map-based-Visual-Localization" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "xiahouzuoxin/kalman_filter" -> "TKJElectronics/KalmanFilter" ["e"=1]
 "xiahouzuoxin/kalman_filter" -> "simondlevy/TinyEKF"
 "xiahouzuoxin/kalman_filter" -> "xiahouzuoxin/fft"
 "xiahouzuoxin/kalman_filter" -> "leijian001/scalar_kalman_filter"
 "xiahouzuoxin/kalman_filter" -> "xiahouzuoxin/notes" ["e"=1]
 "xiahouzuoxin/kalman_filter" -> "Niyunfeng/PID" ["e"=1]
+"PetWorm/LARVIO" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "SGL-UT/GPSTk" -> "goGPS-Project/goGPS_MATLAB"
 "SGL-UT/GPSTk" -> "YizeZhang/Net_Diff"
 "SGL-UT/GPSTk" -> "SGL-UT/gnsstk"
@@ -393,6 +448,7 @@ digraph G {
 "SGL-UT/GPSTk" -> "taroz/GNSS-SDRLIB"
 "SGL-UT/GPSTk" -> "barbeau/awesome-gnss"
 "SGL-UT/GPSTk" -> "TUW-VieVS/raPPPid"
+"nobleo/rviz_satellite" -> "MapIV/eagleye" ["e"=1]
 "cggos/imu_x_fusion" -> "ydsf16/imu_gps_localization"
 "cggos/imu_x_fusion" -> "2013fangwentao/Multi_Sensor_Fusion"
 "cggos/imu_x_fusion" -> "karanchawla/GPS_IMU_Kalman_Filter"
@@ -408,6 +464,7 @@ digraph G {
 "cggos/imu_x_fusion" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
 "cggos/imu_x_fusion" -> "gaowenliang/imu_utils" ["e"=1]
 "cggos/imu_x_fusion" -> "rpng/MINS" ["e"=1]
+"simondlevy/BreezySLAM" -> "simondlevy/TinyEKF" ["e"=1]
 "nadiawangberg/imu_to_odom" -> "ethz-asl/odom_predictor"
 "GNSSpy-Project/gnsspy" -> "paarnes/GNSS_Multipath_Analysis_Software"
 "GNSSpy-Project/gnsspy" -> "YizeZhang/Net_Diff"
@@ -424,6 +481,10 @@ digraph G {
 "GNSSpy-Project/gnsspy" -> "TUW-VieVS/raPPPid"
 "GNSSpy-Project/gnsspy" -> "Erensu/cors"
 "GNSSpy-Project/gnsspy" -> "GeoscienceAustralia/ginan"
+"sctg-development/RtkGps" -> "illarionov/RtkGps" ["e"=1]
+"SlashDevin/NeoGPS" -> "semuconsulting/PyGPSClient" ["e"=1]
+"pms67/PID" -> "simondlevy/TinyEKF" ["e"=1]
+"CS-SI/Orekit" -> "groops-devs/groops" ["e"=1]
 "yandld/nav_matlab" -> "benzenemo/TightlyCoupledINSGNSS"
 "yandld/nav_matlab" -> "Erensu/ignav"
 "yandld/nav_matlab" -> "lijx10/uwb-localization" ["e"=1]
@@ -436,6 +497,11 @@ digraph G {
 "yandld/nav_matlab" -> "weisongwen/GraphGNSSLib"
 "yandld/nav_matlab" -> "shaolinbit/RTKinGSS"
 "yandld/nav_matlab" -> "weisongwen/researchTools"
+"mbrossar/denoise-imu-gyro" -> "i2Nav-WHU/Wheel-INS" ["e"=1]
+"mbrossar/denoise-imu-gyro" -> "i2Nav-WHU/OB_GINS" ["e"=1]
+"commaai/rednose" -> "commaai/laika" ["e"=1]
+"ethz-asl/ethzasl_msf" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
+"kuankuan-yue/VINS-FUSION-leanrning" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "hmartiro/kalman-cpp" -> "mherb/kalman" ["e"=1]
 "hmartiro/kalman-cpp" -> "tysik/kalman_filters"
 "hmartiro/kalman-cpp" -> "simondlevy/TinyEKF"
@@ -451,6 +517,8 @@ digraph G {
 "lyf8118/BDS-3-B1C-B2a-SDR-receiver" -> "lyf8118/An-open-source-software-defined-IF-signal-simulator-for-GPS-receivers"
 "lyf8118/BDS-3-B1C-B2a-SDR-receiver" -> "pandaclover/B1C_Signals_Simulation"
 "lyf8118/BDS-3-B1C-B2a-SDR-receiver" -> "lnexenl/BeiDou_B1C"
+"qixianyu-buaa/EigenChineseDocument" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
+"rsasaki0109/kalman_filter_localization" -> "cggos/imu_x_fusion" ["e"=1]
 "libing64/learning_rtklib" -> "zhouforme0318/GAMPII-GOOD"
 "libing64/learning_rtklib" -> "ChangChuntao/FAST"
 "libing64/learning_rtklib" -> "rokubun/android_rinex"
@@ -459,6 +527,8 @@ digraph G {
 "weisongwen/researchTools" -> "weisongwen/UrbanNavDataset"
 "weisongwen/researchTools" -> "chichengcn/gici-open"
 "weisongwen/researchTools" -> "weisongwen/GraphGNSSLib"
+"facontidavide/CPP_Optimizations_Diary" -> "cggos/imu_x_fusion" ["e"=1]
+"enginBozkurt/Error-State-Extended-Kalman-Filter" -> "cggos/imu_x_fusion" ["e"=1]
 "ydsf16/imu_gps_localization" -> "cggos/imu_x_fusion"
 "ydsf16/imu_gps_localization" -> "karanchawla/GPS_IMU_Kalman_Filter"
 "ydsf16/imu_gps_localization" -> "zm0612/eskf-gps-imu-fusion"
@@ -489,6 +559,8 @@ digraph G {
 "weisongwen/UrbanNavDataset" -> "XikunLiu-huskit/GLIO"
 "weisongwen/UrbanNavDataset" -> "cggos/imu_x_fusion"
 "weisongwen/UrbanNavDataset" -> "SJTU-ViSYS/M2DGR" ["e"=1]
+"SHTOOLS/SHTOOLS" -> "groops-devs/groops" ["e"=1]
+"neka-nat/cupoch" -> "MapIV/eagleye" ["e"=1]
 "heiwa0519/PPPLib" -> "zhouforme0318/GAMPII-GOOD"
 "heiwa0519/PPPLib" -> "XiaoGongWei/MG_APP"
 "barbeau/awesome-gnss" -> "PrideLab/PRIDE-PPPAR"
@@ -524,6 +596,8 @@ digraph G {
 "KumarRobotics/ublox" -> "sparkfun/Qwiic_Ublox_Gps_Py" ["e"=1]
 "KumarRobotics/ublox" -> "tomojitakasu/RTKLIB"
 "KumarRobotics/ublox" -> "HKUST-Aerial-Robotics/GVINS"
+"commaai/comma10k" -> "commaai/laika" ["e"=1]
+"memsindustrygroup/Open-Source-Sensor-Fusion" -> "priseborough/InertialNav" ["e"=1]
 "kristinemlarson/gnssrefl" -> "demiangomez/Parallel.GAMIT"
 "kristinemlarson/gnssrefl" -> "PrideLab/PRIDE-PPPAR"
 "kristinemlarson/gnssrefl" -> "paarnes/GNSS_Multipath_Analysis_Software"
@@ -532,6 +606,7 @@ digraph G {
 "kristinemlarson/gnssrefl" -> "pjalesSSTL/GNSSR_MERRByS"
 "kristinemlarson/gnssrefl" -> "kristinemlarson/gnssIR_matlab_v3"
 "kristinemlarson/gnssrefl" -> "groops-devs/groops"
+"mbrossar/RINS-W" -> "i2Nav-WHU/Wheel-INS" ["e"=1]
 "pmonta/GNSS-DSP-tools" -> "swift-nav/peregrine"
 "pmonta/GNSS-DSP-tools" -> "danipascual/GNSS-VHDL"
 "pmonta/GNSS-DSP-tools" -> "pmonta/GNSS_Firehose"
@@ -554,7 +629,15 @@ digraph G {
 "de-bkg/gognss" -> "go-gnss/ntrip"
 "go-gnss/rtcm" -> "go-gnss/ntrip"
 "purnelldj/gnssr_synth" -> "purnelldj/gnssr_lowcost"
+"gnuradio/gnuradio" -> "gnss-sdr/gnss-sdr" ["e"=1]
+"osqzss/gps-sdr-sim" -> "gnss-sdr/gnss-sdr" ["e"=1]
+"osqzss/gps-sdr-sim" -> "taroz/GNSS-SDRLIB" ["e"=1]
+"osqzss/gps-sdr-sim" -> "Mictronics/multi-sdr-gps-sim" ["e"=1]
+"hku-mars/r2live" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"kahowang/sensor-fusion-for-localization-and-mapping" -> "cggos/imu_x_fusion" ["e"=1]
+"kahowang/sensor-fusion-for-localization-and-mapping" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
 "aaronjridley/GITM" -> "gemini3d/gemini3d"
+"TixiaoShan/LVI-SAM" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "hirokawa/cssrlib" -> "rtklibexplorer/rtklib-py"
 "hirokawa/cssrlib" -> "hirokawa/cssrlib-data"
 "hirokawa/cssrlib" -> "TUW-VieVS/raPPPid"
@@ -622,6 +705,8 @@ digraph G {
 "geographiclib/geographiclib" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
 "geographiclib/geographiclib" -> "i2Nav-WHU/OB_GINS"
 "geographiclib/geographiclib" -> "cggos/imu_x_fusion"
+"jks-prv/Beagle_SDR_GPS" -> "taroz/GNSS-SDRLIB" ["e"=1]
+"micropython-IMU/micropython-fusion" -> "introlab/OpenIMU" ["e"=1]
 "zm0612/eskf-gps-imu-fusion" -> "ydsf16/imu_gps_localization"
 "zm0612/eskf-gps-imu-fusion" -> "cggos/imu_x_fusion"
 "zm0612/eskf-gps-imu-fusion" -> "karanchawla/GPS_IMU_Kalman_Filter"
@@ -665,6 +750,7 @@ digraph G {
 "weisongwen/GraphGNSSLib" -> "XikunLiu-huskit/GLIO"
 "weisongwen/GraphGNSSLib" -> "hanmn/Troubleshooting" ["e"=1]
 "weisongwen/GraphGNSSLib" -> "2013fangwentao/Multi_Sensor_Fusion"
+"uzh-rpg/rpg_svo_pro_open" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "GeoscienceAustralia/ginan" -> "PrideLab/PRIDE-PPPAR"
 "GeoscienceAustralia/ginan" -> "paarnes/GNSS_Multipath_Analysis_Software"
 "GeoscienceAustralia/ginan" -> "groops-devs/groops"
@@ -681,8 +767,10 @@ digraph G {
 "GeoscienceAustralia/ginan" -> "goGPS-Project/goGPS_MATLAB"
 "GeoscienceAustralia/ginan" -> "GeoscienceAustralia/GeodePy"
 "i2Nav-WHU/IMU-Array" -> "i2Nav-WHU/GIOW-release"
+"utiasSTARS/msckf-swf-comparison" -> "michael-fonder/fonder_thesis-2016" ["e"=1]
 "adrianmo/go-nmea" -> "BertoldVdb/go-ais"
 "adrianmo/go-nmea" -> "go-gnss/ntrip"
+"commaai/calib_challenge" -> "commaai/laika" ["e"=1]
 "aewallin/ppp-tools" -> "CGS-GIS/GPSPACE"
 "aewallin/ppp-tools" -> "rtk-rs/rinex"
 "aewallin/ppp-tools" -> "paarnes/GNSS_Multipath_Analysis_Software"
@@ -712,6 +800,7 @@ digraph G {
 "kaichen686/GINav" -> "i2Nav-WHU/KF-GINS"
 "kaichen686/GINav" -> "TUW-VieVS/raPPPid"
 "kaichen686/GINav" -> "Stanford-NavLab/gnss_lib_py"
+"sparkfun/SparkFun_u-blox_GNSS_Arduino_Library" -> "u-blox/ubxlib" ["e"=1]
 "semuconsulting/pynmeagps" -> "semuconsulting/pyubx2"
 "semuconsulting/pynmeagps" -> "semuconsulting/pyrtcm"
 "Stanford-NavLab/gnss_lib_py" -> "Stanford-NavLab/deep_gnss"
@@ -754,7 +843,10 @@ digraph G {
 "geospace-code/georinex" -> "GeoscienceAustralia/ginan"
 "geospace-code/georinex" -> "geospace-code/pymap3d"
 "geospace-code/georinex" -> "semuconsulting/pygnssutils"
+"plutoplus/plutoplus" -> "Mictronics/multi-sdr-gps-sim" ["e"=1]
+"wanghuayou1028/ICRA2021-SLAM-paper-list" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "globsky/greta-oto" -> "globsky/SignalSim"
+"Wallong/VINS-GPS-Wheel" -> "i2Nav-WHU/Wheel-INS" ["e"=1]
 "ZhangZh3ng/inertial_navigation_basic" -> "Jacktcyy/GPS-INS-navigation"
 "HKUST-Aerial-Robotics/GVINS-Dataset" -> "HKUST-Aerial-Robotics/GVINS"
 "HKUST-Aerial-Robotics/GVINS-Dataset" -> "HKUST-Aerial-Robotics/gnss_comm"
@@ -792,6 +884,12 @@ digraph G {
 "purnelldj/gnssr_lowcost" -> "purnelldj/gnssr_synth"
 "nunojpg/rtcm3torinex" -> "de-bkg/gognss"
 "charlesquick/ntripcaster-containerised" -> "rinex20/ntripcaster_docker"
+"ClemensElflein/OpenMower" -> "Stefal/rtkbase" ["e"=1]
+"xioTechnologies/Fusion" -> "cggos/imu_x_fusion" ["e"=1]
+"xioTechnologies/Fusion" -> "Aceinna/gnss-ins-sim" ["e"=1]
+"lukasvst/dm-vio" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"VREMSoftwareDevelopment/WiFiAnalyzer" -> "barbeau/gpstest" ["e"=1]
+"SJTU-ViSYS/M2DGR" -> "weisongwen/UrbanLoco" ["e"=1]
 "i2Nav-WHU/IC-GVINS" -> "i2Nav-WHU/OB_GINS"
 "i2Nav-WHU/IC-GVINS" -> "chichengcn/gici-open"
 "i2Nav-WHU/IC-GVINS" -> "HKUST-Aerial-Robotics/GVINS"
@@ -822,6 +920,9 @@ digraph G {
 "simondlevy/TinyEKF" -> "ethz-asl/rovio" ["e"=1]
 "simondlevy/TinyEKF" -> "denyssene/SimpleKalmanFilter" ["e"=1]
 "simondlevy/TinyEKF" -> "suhetao/stm32f4_mpu9250" ["e"=1]
+"liuguitao/AVP-SLAM-PLUS" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "cggos/imu_x_fusion" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "ydsf16/imu_gps_localization" ["e"=1]
 "SGL-UT/gnsstk" -> "SGL-UT/gnsstk-apps"
 "SGL-UT/gnsstk" -> "hirokawa/cssrlib"
 "SGL-UT/gnsstk" -> "TUW-VieVS/raPPPid"
@@ -849,6 +950,13 @@ digraph G {
 "rtk-rs/rinex" -> "rtk-rs/cggtts"
 "rtk-rs/rinex" -> "nlsfi/HASlib"
 "rtk-rs/rinex" -> "hirokawa/cssrlib"
+"ori-drs/allan_variance_ros" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"ori-drs/allan_variance_ros" -> "cggos/imu_x_fusion" ["e"=1]
+"ori-drs/allan_variance_ros" -> "i2Nav-WHU/IC-GVINS" ["e"=1]
+"TouchDeeper/VIW-Fusion" -> "i2Nav-WHU/Wheel-INS" ["e"=1]
+"TouchDeeper/VIW-Fusion" -> "i2Nav-WHU/OB_GINS" ["e"=1]
+"TouchDeeper/VIW-Fusion" -> "i2Nav-WHU/IC-GVINS" ["e"=1]
+"TouchDeeper/VIW-Fusion" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "tomojitakasu/PocketSDR" -> "nlsfi/FGI-GSRx"
 "tomojitakasu/PocketSDR" -> "taroz/GNSS-SDRLIB"
 "tomojitakasu/PocketSDR" -> "hirokawa/cssrlib"
@@ -877,10 +985,21 @@ digraph G {
 "i2Nav-WHU/awesome-gins-datasets" -> "QIJINCHEN/IMA-estimation"
 "i2Nav-WHU/awesome-gins-datasets" -> "heiwa0519/TGINS"
 "i2Nav-WHU/awesome-gins-datasets" -> "HKUST-Aerial-Robotics/GVINS-Dataset"
+"ethz-asl/ethzasl_sensor_fusion" -> "libing64/pose_ekf" ["e"=1]
 "ChangChuntao/FAST" -> "GREAT-WHU/GREAT-PVT"
 "ChangChuntao/FAST" -> "TUW-VieVS/raPPPid"
 "ChangChuntao/FAST" -> "zhouforme0318/GAMPII-GOOD"
 "zhouforme0318/GAMPII-GOOD" -> "zhouforme0318/GAMPII-GOOD"
+"PX4/PX4-ECL" -> "priseborough/InertialNav" ["e"=1]
+"PX4/PX4-ECL" -> "rodralez/NaveGo" ["e"=1]
+"PX4/PX4-ECL" -> "Erensu/ignav" ["e"=1]
+"PX4/PX4-ECL" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
+"PX4/PX4-ECL" -> "i2Nav-WHU/OB_GINS" ["e"=1]
+"mherb/kalman" -> "sfwa/ukf" ["e"=1]
+"mherb/kalman" -> "hmartiro/kalman-cpp" ["e"=1]
+"mherb/kalman" -> "simondlevy/TinyEKF" ["e"=1]
+"mherb/kalman" -> "karanchawla/GPS_IMU_Kalman_Filter" ["e"=1]
+"mherb/kalman" -> "cggos/imu_x_fusion" ["e"=1]
 "i2Nav-WHU/evaluate_odometry" -> "i2Nav-WHU/tplots"
 "i2Nav-WHU/OB_GINS" -> "i2Nav-WHU/IC-GVINS"
 "i2Nav-WHU/OB_GINS" -> "i2Nav-WHU/KF-GINS"
@@ -898,6 +1017,7 @@ digraph G {
 "i2Nav-WHU/OB_GINS" -> "i2Nav-WHU/FF-LINS"
 "i2Nav-WHU/OB_GINS" -> "TouchDeeper/VIW-Fusion" ["e"=1]
 "gnsscusdr/CU-SDR-Collection" -> "nlsfi/FGI-GSRx"
+"SpectacularAI/HybVIO" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "semuconsulting/pyrtcm" -> "semuconsulting/pygnssutils"
 "semuconsulting/pyrtcm" -> "hirokawa/cssrlib"
 "kafeiyin00/WHU-HelmetDataset" -> "kafeiyin00/HCTO"
@@ -943,6 +1063,10 @@ digraph G {
 "rtklibexplorer/RTKLIB" -> "hirokawa/cssrlib"
 "rtklibexplorer/RTKLIB" -> "tomojitakasu/PocketSDR"
 "rtklibexplorer/RTKLIB" -> "taroz/GNSS-SDRLIB"
+"tier4/AWSIM" -> "MapIV/eagleye" ["e"=1]
+"TKJElectronics/KalmanFilter" -> "simondlevy/TinyEKF" ["e"=1]
+"TKJElectronics/KalmanFilter" -> "xiahouzuoxin/kalman_filter" ["e"=1]
+"TKJElectronics/KalmanFilter" -> "karanchawla/GPS_IMU_Kalman_Filter" ["e"=1]
 "tomojitakasu/RTKLIB_bin" -> "rtklibexplorer/RTKLIB"
 "tomojitakasu/RTKLIB_bin" -> "tomojitakasu/RTKLIB"
 "tomojitakasu/RTKLIB_bin" -> "Francklin2/RTKLIB_Touchscreen_GUI"
@@ -1022,6 +1146,8 @@ digraph G {
 "i2Nav-WHU/Wheel-SLAM" -> "i2Nav-WHU/Wheel-INS"
 "ymjdz/MATLAB-Codes" -> "zbai/MATLAB-Groves"
 "hahnpv/SoftGNSS" -> "TMBOC/SoftGNSS"
+"Taeyoung96/Awesome-LiDAR-IMU-calibration" -> "i2Nav-WHU/FF-LINS" ["e"=1]
+"JonasBchrt/raw-gnss-fusion" -> "shaolinbit/RTKinGSS" ["e"=1]
 "rwth-irt/gnssFGO" -> "hz658832/gnssFGO"
 "rwth-irt/gnssFGO" -> "rwth-irt/DeepNLOSDetection"
 "awerries/kalman-localization" -> "helipiotr/beng_thesis"
@@ -1088,6 +1214,10 @@ digraph G {
 "LiZhengXiao99/Navigation-Learning" -> "GREAT-WHU/GREAT-PVT"
 "LiZhengXiao99/Navigation-Learning" -> "cggos/imu_x_fusion"
 "LiZhengXiao99/Navigation-Learning" -> "benzenemo/TightlyCoupledINSGNSS"
+"rpng/MINS" -> "XikunLiu-huskit/GLIO" ["e"=1]
+"rpng/MINS" -> "chichengcn/gici-open" ["e"=1]
+"rpng/MINS" -> "i2Nav-WHU/IC-GVINS" ["e"=1]
+"ros-planning/navigation_tutorials" -> "ros-planning/robot_pose_ekf" ["e"=1]
 "IPNL-POLYU/pyrtklib" -> "ebhrz/TDL-GNSS"
 "IPNL-POLYU/pyrtklib" -> "ebhrz/KLTDataset"
 "IPNL-POLYU/pyrtklib" -> "taroz/MatRTKLIB"
@@ -1099,11 +1229,22 @@ digraph G {
 "harshadms/galileo-sdr-sim" -> "globsky/SignalSim"
 "michael-fonder/fonder_thesis-2016" -> "gogogoKKK/PreIntegrationForFusionTest"
 "martinhakansson/rtcm-rs" -> "taroz/PPC-Dataset"
+"Turbo87/utm" -> "mrJean1/PyGeodesy" ["e"=1]
+"Turbo87/utm" -> "geospace-code/pymap3d" ["e"=1]
+"codyd51/gypsum" -> "harshadms/galileo-sdr-sim" ["e"=1]
+"codyd51/gypsum" -> "tomojitakasu/PocketSDR" ["e"=1]
+"bytedance/SchurVINS" -> "i2Nav-WHU/IC-GVINS" ["e"=1]
+"AgOpenGPS-Official/AgOpenGPS" -> "Stefal/rtkbase" ["e"=1]
+"Kyle-ak/imu_tk" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
+"Kyle-ak/imu_tk" -> "2013fangwentao/Multi_Sensor_Fusion" ["e"=1]
+"Kyle-ak/imu_tk" -> "cggos/imu_x_fusion" ["e"=1]
 "tajuma/supl" -> "qypluobo/supl-server"
 "tajuma/supl" -> "google/supl-client"
 "tajuma/supl" -> "Ericsson/SUPL-3GPP-LPP-client"
+"denyssene/SimpleKalmanFilter" -> "simondlevy/TinyEKF" ["e"=1]
 "zhouforme0318/GAMPII-GOOD" -> "ChangChuntao/FAST"
 "QZSS-Strategy-Office/claslib" -> "QZSS-Strategy-Office/madocalib"
+"meyiao/ImuFusion" -> "libing64/pose_ekf" ["e"=1]
 "QZSS-Strategy-Office/madocalib" -> "QZSS-Strategy-Office/claslib"
 "DfAC/AndroidGNSS" -> "DfAC/gps-measurement-tools"
 "DfAC/AndroidGNSS" -> "TheGalfins/GNSS_Compare"
@@ -1164,6 +1305,7 @@ digraph G {
 "taroz/MatRTKLIB" -> "taroz/gsdc2023"
 "taroz/MatRTKLIB" -> "taroz/ge-gnss-visibility"
 "JavierAntoran/gps-stack-sim" -> "RichardHerz/GPS"
+"EttusResearch/uhd" -> "gnss-sdr/gnss-sdr" ["e"=1]
 "tomojitakasu/RTKLIB" -> "rtklibexplorer/RTKLIB"
 "tomojitakasu/RTKLIB" -> "tomojitakasu/RTKLIB_bin"
 "tomojitakasu/RTKLIB" -> "gnss-sdr/gnss-sdr"
@@ -1194,18 +1336,23 @@ digraph G {
 "TMBOC/SoftGNSS" -> "hahnpv/SoftGNSS"
 "TMBOC/SoftGNSS" -> "perrysou/GNSS_SDR"
 "TMBOC/SoftGNSS" -> "kristianpaul/SoftGNSS"
+"tu-darmstadt-ros-pkg/hector_quadrotor" -> "libing64/hector_quadrotor" ["e"=1]
 "pjalesSSTL/GNSSR_MERRByS" -> "pjalesSSTL/GNSSR_MERRByS_Python"
 "pjalesSSTL/GNSSR_MERRByS" -> "oriolcervello/GNSS-REFLECTOMETRY-PROCESSING"
+"loveuav/BlueSkyFlightControl" ["l"="59.394,14.135", "c"=799]
+"priseborough/InertialNav" ["l"="58.409,11.089"]
+"uzh-rpg/rpg_trajectory_evaluation" ["l"="59.474,11.077", "c"=87]
+"HKUST-Aerial-Robotics/GVINS" ["l"="58.409,11.189"]
 "ros-planning/robot_pose_ekf" ["l"="58.513,11.112"]
 "udacity/robot_pose_ekf" ["l"="58.53,11.092"]
-"ros-perception/laser_filters" ["l"="61.612,13.741"]
-"ros-planning/navigation_tutorials" ["l"="60.239,12.545"]
+"ros-perception/laser_filters" ["l"="61.612,13.741", "c"=313]
+"ros-planning/navigation_tutorials" ["l"="60.239,12.545", "c"=286]
 "ydsf16/imu_gps_localization" ["l"="58.426,11.139"]
-"orocos/orocos-bayesian-filtering" ["l"="61.519,13.933"]
-"cra-ros-pkg/robot_localization" ["l"="60.352,12.563"]
-"CCNYRoboticsLab/scan_tools" ["l"="61.578,13.773"]
+"orocos/orocos-bayesian-filtering" ["l"="61.519,13.933", "c"=313]
+"cra-ros-pkg/robot_localization" ["l"="60.352,12.563", "c"=286]
+"CCNYRoboticsLab/scan_tools" ["l"="61.578,13.773", "c"=313]
 "libing64/pose_ekf" ["l"="58.491,11.09"]
-"Gaochao-hit/LIO-SAM_based_relocalization" ["l"="58.23,9.924"]
+"Gaochao-hit/LIO-SAM_based_relocalization" ["l"="58.23,9.924", "c"=142]
 "karanchawla/GPS_IMU_Kalman_Filter" ["l"="58.439,11.107"]
 "cggos/imu_x_fusion" ["l"="58.436,11.153"]
 "2013fangwentao/Multi_Sensor_Fusion" ["l"="58.395,11.157"]
@@ -1214,14 +1361,16 @@ digraph G {
 "yyccR/Location" ["l"="58.426,11.067"]
 "Aceinna/gnss-ins-sim" ["l"="58.374,11.142"]
 "alirezaahmadi/KalmanFilter-Vehicle-GNSS-INS" ["l"="58.45,11.167"]
-"gaowenliang/imu_utils" ["l"="59.456,10.998"]
-"HKUST-Aerial-Robotics/GVINS" ["l"="58.409,11.189"]
-"Little-Potato-1990/localization_in_auto_driving" ["l"="58.137,9.888"]
-"APRIL-ZJU/lidar_IMU_calib" ["l"="58.1,9.966"]
-"mherb/kalman" ["l"="59.413,10.93"]
-"ethz-asl/lidar_align" ["l"="58.06,9.953"]
+"gaowenliang/imu_utils" ["l"="59.456,10.998", "c"=87]
+"Little-Potato-1990/localization_in_auto_driving" ["l"="58.137,9.888", "c"=142]
+"APRIL-ZJU/lidar_IMU_calib" ["l"="58.1,9.966", "c"=142]
+"mherb/kalman" ["l"="59.413,10.93", "c"=87]
+"ethz-asl/lidar_align" ["l"="58.06,9.953", "c"=142]
 "gemini3d/gemini3d" ["l"="58.187,11.133"]
 "aaronjridley/GITM" ["l"="58.171,11.107"]
+"commaai/speedchallenge" ["l"="-14.325,-23.659", "c"=1237]
+"commaai/laika" ["l"="58.242,11.226"]
+"Mayitzin/ahrs" ["l"="57.452,10.898", "c"=821]
 "benzenemo/TightlyCoupledINSGNSS" ["l"="58.355,11.181"]
 "Erensu/ignav" ["l"="58.354,11.199"]
 "kaichen686/GINav" ["l"="58.334,11.224"]
@@ -1236,104 +1385,128 @@ digraph G {
 "HKUST-Aerial-Robotics/GVINS-Dataset" ["l"="58.415,11.229"]
 "zbai/MATLAB-Groves" ["l"="58.321,11.111"]
 "i2Nav-WHU/KF-GINS" ["l"="58.388,11.182"]
-"mbrossar/ai-imu-dr" ["l"="57.401,10.901"]
-"rpng/open_vins" ["l"="59.457,11.072"]
+"balzer82/Kalman" ["l"="64.089,12.656", "c"=1121]
+"mendhak/gpslogger" ["l"="12.269,-8.03", "c"=18]
+"barbeau/gpstest" ["l"="58.309,11.299"]
+"google/gps-measurement-tools" ["l"="58.303,11.242"]
+"StevenCui/VIO-Doc" ["l"="59.51,11.063", "c"=87]
+"mbrossar/ai-imu-dr" ["l"="57.401,10.901", "c"=821]
+"rpng/open_vins" ["l"="59.457,11.072", "c"=87]
 "tomojitakasu/RTKLIB" ["l"="58.313,11.213"]
+"pjrambo/VINS-Fusion-gpu" ["l"="59.603,11.102", "c"=87]
 "Knio/pynmea2" ["l"="58.216,11.222"]
 "semuconsulting/PyGPSClient" ["l"="58.194,11.222"]
 "semuconsulting/pynmeagps" ["l"="58.154,11.206"]
-"inmcm/micropyGPS" ["l"="-20.776,-42.974"]
-"M0r13n/pyais" ["l"="54.653,4.76"]
-"kosma/minmea" ["l"="-17.728,-42.986"]
-"canboat/canboat" ["l"="54.87,4.721"]
+"inmcm/micropyGPS" ["l"="-20.776,-42.974", "c"=635]
+"M0r13n/pyais" ["l"="54.653,4.76", "c"=214]
+"kosma/minmea" ["l"="-17.728,-42.986", "c"=55]
+"canboat/canboat" ["l"="54.87,4.721", "c"=214]
 "rtklibexplorer/RTKLIB" ["l"="58.28,11.233"]
 "taroz/GNSS-SDRLIB" ["l"="58.263,11.3"]
 "barbeau/awesome-gnss" ["l"="58.259,11.235"]
 "rokubun/android_rinex" ["l"="58.245,11.302"]
 "semuconsulting/pyubx2" ["l"="58.172,11.203"]
-"commaai/laika" ["l"="58.242,11.226"]
 "Stefal/rtkbase" ["l"="58.222,11.189"]
 "tomojitakasu/PocketSDR" ["l"="58.253,11.288"]
 "mrsp/imu_ekf" ["l"="58.576,11.067"]
-"ethz-asl/ethzasl_msf" ["l"="59.481,10.967"]
-"ydsf16/aruco_ekf_slam" ["l"="59.591,10.891"]
-"hyye/lio-mapping" ["l"="58.09,9.938"]
+"ethz-asl/ethzasl_msf" ["l"="59.481,10.967", "c"=87]
+"ydsf16/aruco_ekf_slam" ["l"="59.591,10.891", "c"=87]
+"hyye/lio-mapping" ["l"="58.09,9.938", "c"=142]
 "ethz-asl/odom_predictor" ["l"="58.622,11.071"]
-"ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["l"="58.107,9.952"]
-"ethz-asl/ethzasl_sensor_fusion" ["l"="59.528,10.973"]
+"ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["l"="58.107,9.952", "c"=142]
+"ethz-asl/ethzasl_sensor_fusion" ["l"="59.528,10.973", "c"=87]
+"urbandroid-team/dont-kill-my-app" ["l"="-52.305,9.751", "c"=19]
 "gnss-sdr/gnss-sdr" ["l"="58.294,11.275"]
-"osqzss/gps-sdr-sim" ["l"="54.273,4.63"]
-"google/gps-measurement-tools" ["l"="58.303,11.242"]
+"osqzss/gps-sdr-sim" ["l"="54.273,4.63", "c"=214]
 "SGL-UT/GPSTk" ["l"="58.265,11.267"]
 "danipascual/GNSS-matlab" ["l"="58.232,11.342"]
-"f4exb/sdrangel" ["l"="54.278,4.741"]
-"pothosware/SoapySDR" ["l"="54.22,4.784"]
+"f4exb/sdrangel" ["l"="54.278,4.741", "c"=214]
+"pothosware/SoapySDR" ["l"="54.22,4.784", "c"=214]
 "nlsfi/FGI-GSRx" ["l"="58.218,11.336"]
-"gnuradio/gnuradio" ["l"="54.232,4.697"]
+"gnuradio/gnuradio" ["l"="54.232,4.697", "c"=214]
+"engcang/vins-application" ["l"="59.629,11.133", "c"=87]
 "nadiawangberg/imu_to_odom" ["l"="58.654,11.071"]
 "tum-phoenix/drive_ros_localize_inertial_navigation_system" ["l"="58.65,11.046"]
+"i2Nav-WHU/Wheel-INS" ["l"="58.463,11.186"]
+"xioTechnologies/Open-Source-AHRS-With-x-IMU" ["l"="57.554,10.871", "c"=821]
 "chichengcn/gici-open" ["l"="58.416,11.208"]
 "i2Nav-WHU/IC-GVINS" ["l"="58.426,11.182"]
 "weisongwen/UrbanNavDataset" ["l"="58.399,11.208"]
 "Zidane-Han/INS-GNSS-integration" ["l"="58.527,11.161"]
 "yuzhou42/GPS-INS-Integrated-Navigation" ["l"="58.559,11.169"]
 "i2Nav-WHU/awesome-gins-datasets" ["l"="58.429,11.199"]
-"diegoavillegasg/IMU-GNSS-Lidar-sensor-fusion-using-Extended-Kalman-Filter-for-State-Estimation" ["l"="57.323,10.761"]
+"diegoavillegasg/IMU-GNSS-Lidar-sensor-fusion-using-Extended-Kalman-Filter-for-State-Estimation" ["l"="57.323,10.761", "c"=821]
 "jayoungo/SINS-GPS-Integrated-Navigation" ["l"="58.541,11.176"]
-"bkarwoski/EKF_fusion" ["l"="58.216,10.483"]
-"commaai/rednose" ["l"="-14.314,-23.616"]
+"bkarwoski/EKF_fusion" ["l"="58.216,10.483", "c"=142]
+"pms67/Attitude-Estimation" ["l"="57.462,10.665", "c"=821]
+"introlab/OpenIMU" ["l"="58.344,11.085"]
+"geohot/twitchslam" ["l"="-14.308,-23.681", "c"=1237]
+"commaai/rednose" ["l"="-14.314,-23.616", "c"=1237]
 "GNSSpy-Project/gnsspy" ["l"="58.249,11.247"]
 "geospace-code/georinex" ["l"="58.214,11.245"]
 "Stanford-NavLab/gnss_lib_py" ["l"="58.225,11.254"]
-"commaai/comma2k19" ["l"="-14.318,-23.596"]
+"commaai/comma2k19" ["l"="-14.318,-23.596", "c"=1237]
 "hirokawa/cssrlib" ["l"="58.225,11.264"]
 "rtklibexplorer/rtklib-py" ["l"="58.238,11.25"]
 "paarnes/GNSS_Multipath_Analysis_Software" ["l"="58.226,11.275"]
 "GeoscienceAustralia/ginan" ["l"="58.252,11.264"]
 "PrideLab/PRIDE-PPPAR" ["l"="58.262,11.253"]
-"GNSSOEM/ELT_RTKBase" ["l"="42.732,25.772"]
-"eringerli/RpiNtripBase" ["l"="42.744,25.795"]
+"GNSSOEM/ELT_RTKBase" ["l"="42.732,25.772", "c"=1650]
+"eringerli/RpiNtripBase" ["l"="42.744,25.795", "c"=1650]
 "taroz/TouchRTKStation" ["l"="58.256,11.164"]
 "Francklin2/RTKLIB_Touchscreen_GUI" ["l"="58.239,11.165"]
 "ybzwyrcld/ntrip" ["l"="58.138,11.174"]
 "goblimey/ntripcaster" ["l"="58.124,11.139"]
-"AgOpenGPS-Official/AgOpenGPS" ["l"="42.886,25.769"]
-"lansalot/FreeRTK" ["l"="42.801,25.804"]
-"nebkat/esp32-xbee" ["l"="-13.998,-41.899"]
+"AgOpenGPS-Official/AgOpenGPS" ["l"="42.886,25.769", "c"=1650]
+"lansalot/FreeRTK" ["l"="42.801,25.804", "c"=1650]
+"nebkat/esp32-xbee" ["l"="-13.998,-41.899", "c"=812]
+"Razor-AHRS/razor-9dof-ahrs" ["l"="57.582,10.849", "c"=821]
+"shenshikexmu/IMUCalibration-Gesture" ["l"="57.49,10.863", "c"=821]
 "Erensu/cors" ["l"="58.28,11.208"]
+"HeYijia/vio_data_simulation" ["l"="59.564,11.018", "c"=87]
+"HeYijia/VINS-Course" ["l"="59.541,11.051", "c"=87]
+"ros-drivers/nmea_navsat_driver" ["l"="59.292,12.484", "c"=299]
+"LORD-MicroStrain/ntrip_client" ["l"="58.425,11.314"]
+"UMiNS/MSCKF_VIO_MONO" ["l"="59.581,10.948", "c"=87]
+"shaolinbit/minisam_lib" ["l"="58.452,11.327"]
+"lijx10/uwb-localization" ["l"="57.377,11.141", "c"=821]
+"xiahouzuoxin/notes" ["l"="-5.111,19.558", "c"=564]
+"xiahouzuoxin/kalman_filter" ["l"="58.507,10.966"]
 "marcoamm/gnssins" ["l"="58.372,11.08"]
 "wvu-navLab/RobustGNSS" ["l"="58.412,11.163"]
-"priseborough/InertialNav" ["l"="58.409,11.089"]
-"Kyle-ak/imu_tk" ["l"="59.52,10.952"]
-"PX4/PX4-ECL" ["l"="59.553,13.996"]
-"tomas789/tonav" ["l"="59.558,10.962"]
+"Kyle-ak/imu_tk" ["l"="59.52,10.952", "c"=87]
+"PX4/PX4-ECL" ["l"="59.553,13.996", "c"=799]
+"tomas789/tonav" ["l"="59.558,10.962", "c"=87]
 "simondlevy/TinyEKF" ["l"="58.462,11.021"]
-"ethz-asl/rovio" ["l"="59.481,11.031"]
-"mavlink-router/mavlink-router" ["l"="59.567,13.985"]
-"xioTechnologies/Open-Source-AHRS-With-x-IMU" ["l"="57.554,10.871"]
-"ethz-asl/okvis" ["l"="59.453,11.044"]
+"ethz-asl/rovio" ["l"="59.481,11.031", "c"=87]
+"mavlink-router/mavlink-router" ["l"="59.567,13.985", "c"=799]
+"ethz-asl/okvis" ["l"="59.453,11.044", "c"=87]
 "qypluobo/supl-server" ["l"="58.24,11.058"]
 "Ericsson/SUPL-3GPP-LPP-client" ["l"="58.239,11.076"]
+"Ewenwan/Mathematics" ["l"="59.518,11.082", "c"=87]
 "MapIV/eagleye" ["l"="58.466,11.146"]
-"vectr-ucla/direct_lidar_odometry" ["l"="58.233,9.983"]
-"koide3/interactive_slam" ["l"="58.138,9.962"]
-"rpng/MINS" ["l"="59.66,11.129"]
-"KIT-ISAS/lili-om" ["l"="58.129,9.983"]
-"JokerJohn/LIO_SAM_6AXIS" ["l"="58.226,9.971"]
-"hku-mars/BALM" ["l"="58.179,9.998"]
-"gisbi-kim/removert" ["l"="58.169,10.029"]
-"rsasaki0109/lidar_localization_ros2" ["l"="58.268,9.842"]
-"wh200720041/iscloam" ["l"="58.108,9.98"]
-"nobleo/rviz_satellite" ["l"="59.232,12.502"]
+"vectr-ucla/direct_lidar_odometry" ["l"="58.233,9.983", "c"=142]
+"koide3/interactive_slam" ["l"="58.138,9.962", "c"=142]
+"rpng/MINS" ["l"="59.66,11.129", "c"=87]
+"KIT-ISAS/lili-om" ["l"="58.129,9.983", "c"=142]
+"JokerJohn/LIO_SAM_6AXIS" ["l"="58.226,9.971", "c"=142]
+"hku-mars/BALM" ["l"="58.179,9.998", "c"=142]
+"gisbi-kim/removert" ["l"="58.169,10.029", "c"=142]
+"rsasaki0109/lidar_localization_ros2" ["l"="58.268,9.842", "c"=142]
+"wh200720041/iscloam" ["l"="58.108,9.98", "c"=142]
+"nobleo/rviz_satellite" ["l"="59.232,12.502", "c"=299]
 "acebrianjuan/gnss-sdr-monitor" ["l"="58.147,11.393"]
 "harshadms/galileo-sdr-sim" ["l"="58.163,11.371"]
+"rpng/kalibr_allan" ["l"="59.508,11.013", "c"=87]
 "sfwa/ukf" ["l"="58.47,11.06"]
-"mithi/fusion-ukf" ["l"="64.133,12.556"]
+"mithi/fusion-ukf" ["l"="64.133,12.556", "c"=1121]
 "jeremyfix/easykf" ["l"="58.518,11.015"]
-"CAOR-MINES-ParisTech/ukfm" ["l"="57.276,10.894"]
+"CAOR-MINES-ParisTech/ukfm" ["l"="57.276,10.894", "c"=821]
 "ivo-georgiev/ukfLib" ["l"="58.504,11.035"]
-"JunshengFu/tracking-with-Extended-Kalman-Filter" ["l"="64.2,12.573"]
-"artivis/kalmanif" ["l"="58.125,10.527"]
+"JunshengFu/tracking-with-Extended-Kalman-Filter" ["l"="64.2,12.573", "c"=1121]
+"artivis/kalmanif" ["l"="58.125,10.527", "c"=142]
+"Mictronics/pluto-gps-sim" ["l"="53.926,4.709", "c"=214]
+"Mictronics/multi-sdr-gps-sim" ["l"="58.194,11.375"]
 "ros-agriculture/ublox_f9p" ["l"="58.326,11.164"]
 "bao-eng/ublox" ["l"="58.311,11.144"]
 "ros-agriculture/ntrip_ros" ["l"="58.303,11.129"]
@@ -1343,6 +1516,7 @@ digraph G {
 "GREAT-WHU/GREAT-PVT" ["l"="58.311,11.265"]
 "zhouforme0318/GAMPII-GOOD" ["l"="58.283,11.292"]
 "FCB-SGG/FCB-FILES" ["l"="58.206,11.26"]
+"gaochq/IMU_Attitude_Estimator" ["l"="57.475,10.834", "c"=821]
 "XiaoGongWei/MG_APP" ["l"="58.228,11.239"]
 "CGS-GIS/GPSPACE" ["l"="58.235,11.289"]
 "kristianpaul/SoftGNSS" ["l"="58.233,11.363"]
@@ -1352,6 +1526,8 @@ digraph G {
 "DfAC/AndroidGNSS" ["l"="58.289,11.396"]
 "goGPS-Project/goGPS_Java" ["l"="58.273,11.379"]
 "softdream/imu_encoder_fusion" ["l"="58.601,11.047"]
+"RossHartley/invariant-ekf" ["l"="58.171,10.419", "c"=142]
+"dongjing3309/minisam" ["l"="59.52,11.041", "c"=87]
 "yyccR/papers" ["l"="58.494,11.217"]
 "Jacktcyy/GPS-INS-navigation" ["l"="58.562,11.243"]
 "google/supl-client" ["l"="58.262,11.118"]
@@ -1366,7 +1542,6 @@ digraph G {
 "nunojpg/ntripclient" ["l"="58.079,11.154"]
 "nunojpg/ntripserver" ["l"="58.082,11.175"]
 "wvu-navLab/PPP-BayesTree" ["l"="58.45,11.264"]
-"shaolinbit/minisam_lib" ["l"="58.452,11.327"]
 "shaolinbit/RTKinGSS" ["l"="58.367,11.306"]
 "jlblancoc/factor-graphs-course" ["l"="58.489,11.361"]
 "tisyang/cors-relay" ["l"="58.109,11.09"]
@@ -1387,65 +1562,78 @@ digraph G {
 "ufrgs-gnss-lab/mphw" ["l"="58.12,11.324"]
 "purnelldj/gnssr_synth" ["l"="58.102,11.343"]
 "purnelldj/gnssr_lowcost" ["l"="58.092,11.334"]
+"mapsforge/mapsforge" ["l"="39.615,24.064", "c"=157]
+"moble/quaternion" ["l"="58.708,12.711", "c"=299]
 "geospace-code/pymap3d" ["l"="58.236,11.208"]
 "mrJean1/PyGeodesy" ["l"="58.324,11.277"]
 "NavPy/NavPy" ["l"="58.206,11.149"]
 "geospace-code/matmap3d" ["l"="58.216,11.164"]
-"brandon-rhodes/python-sgp4" ["l"="19.487,14.837"]
-"GenericMappingTools/pygmt" ["l"="40.953,22.704"]
-"aburrell/apexpy" ["l"="21.255,15.655"]
+"brandon-rhodes/python-sgp4" ["l"="19.487,14.837", "c"=641]
+"GenericMappingTools/pygmt" ["l"="40.953,22.704", "c"=325]
+"aburrell/apexpy" ["l"="21.255,15.655", "c"=2392]
 "kristinemlarson/gnssrefl" ["l"="58.178,11.29"]
 "taroz/GNSS-Radar" ["l"="58.262,11.32"]
-"Mictronics/multi-sdr-gps-sim" ["l"="58.194,11.375"]
 "pmonta/GNSS-DSP-tools" ["l"="58.206,11.397"]
 "tomojitakasu/RTKLIB_bin" ["l"="58.27,11.22"]
 "IPNL-POLYU/UrbanNavDataset" ["l"="58.439,11.229"]
-"APRIL-ZJU/clins" ["l"="58.224,10.026"]
-"SJTU-ViSYS/M2DGR" ["l"="58.207,9.98"]
-"i2Nav-WHU/Wheel-INS" ["l"="58.463,11.186"]
+"APRIL-ZJU/clins" ["l"="58.224,10.026", "c"=142]
+"SJTU-ViSYS/M2DGR" ["l"="58.207,9.98", "c"=142]
 "i2Nav-WHU/Wheel-SLAM" ["l"="58.517,11.195"]
-"Wallong/VINS-GPS-Wheel" ["l"="59.725,11.084"]
-"mbrossar/RINS-W" ["l"="57.312,10.881"]
-"TouchDeeper/VIW-Fusion" ["l"="59.67,11.08"]
+"Wallong/VINS-GPS-Wheel" ["l"="59.725,11.084", "c"=87]
+"mbrossar/RINS-W" ["l"="57.312,10.881", "c"=821]
+"TouchDeeper/VIW-Fusion" ["l"="59.67,11.08", "c"=87]
 "i2Nav-WHU/GIOW-release" ["l"="58.5,11.175"]
-"xiahouzuoxin/kalman_filter" ["l"="58.507,10.966"]
-"TKJElectronics/KalmanFilter" ["l"="57.591,10.82"]
+"chrisveness/geodesy" ["l"="39.218,24.063", "c"=157]
+"vahancho/erkir" ["l"="58.358,11.331"]
+"TurtleZhong/Map-based-Visual-Localization" ["l"="59.603,11.143", "c"=87]
+"TKJElectronics/KalmanFilter" ["l"="57.591,10.82", "c"=821]
 "xiahouzuoxin/fft" ["l"="58.541,10.93"]
 "leijian001/scalar_kalman_filter" ["l"="58.515,10.933"]
-"xiahouzuoxin/notes" ["l"="-5.111,19.558"]
-"Niyunfeng/PID" ["l"="57.619,10.491"]
+"Niyunfeng/PID" ["l"="57.619,10.491", "c"=821]
+"PetWorm/LARVIO" ["l"="59.568,11.061", "c"=87]
 "SGL-UT/gnsstk" ["l"="58.28,11.313"]
 "aewallin/ppp-tools" ["l"="58.211,11.278"]
-"lijx10/uwb-localization" ["l"="57.377,11.141"]
+"simondlevy/BreezySLAM" ["l"="59.469,11.203", "c"=87]
+"sctg-development/RtkGps" ["l"="-48.256,12.026", "c"=13]
+"SlashDevin/NeoGPS" ["l"="-13.869,-41.767", "c"=812]
+"pms67/PID" ["l"="57.54,10.559", "c"=821]
+"CS-SI/Orekit" ["l"="19.424,14.796", "c"=641]
 "weisongwen/researchTools" ["l"="58.392,11.235"]
+"mbrossar/denoise-imu-gyro" ["l"="57.343,10.906", "c"=821]
+"kuankuan-yue/VINS-FUSION-leanrning" ["l"="59.644,11.104", "c"=87]
 "hmartiro/kalman-cpp" ["l"="58.457,10.984"]
 "tysik/kalman_filters" ["l"="58.453,10.951"]
 "hmartiro/iron-dome" ["l"="58.477,10.948"]
 "shazraz/Extended-Kalman-Filter" ["l"="58.46,10.925"]
 "robodhruv/kalmanfilter-cpp" ["l"="58.435,10.954"]
-"udacity/CarND-Extended-Kalman-Filter-Project" ["l"="61.591,12.641"]
-"iris-ua/iris_lama" ["l"="59.195,12.625"]
+"udacity/CarND-Extended-Kalman-Filter-Project" ["l"="61.591,12.641", "c"=774]
+"iris-ua/iris_lama" ["l"="59.195,12.625", "c"=299]
 "lyf8118/BDS-3-B1C-B2a-SDR-receiver" ["l"="58.116,11.397"]
 "lyf8118/An-open-source-software-defined-IF-signal-simulator-for-GPS-receivers" ["l"="58.089,11.404"]
+"qixianyu-buaa/EigenChineseDocument" ["l"="59.484,11.152", "c"=87]
+"rsasaki0109/kalman_filter_localization" ["l"="58.305,9.775", "c"=142]
 "libing64/learning_rtklib" ["l"="58.284,11.34"]
 "Azurehappen/UrbanRTK-INS-OutlierOpt" ["l"="58.309,11.384"]
-"gaoxiang12/faster-lio" ["l"="58.175,9.948"]
-"PetWorm/LARVIO" ["l"="59.568,11.061"]
+"facontidavide/CPP_Optimizations_Diary" ["l"="59.047,12.668", "c"=299]
+"enginBozkurt/Error-State-Extended-Kalman-Filter" ["l"="57.391,10.715", "c"=821]
+"gaoxiang12/faster-lio" ["l"="58.175,9.948", "c"=142]
 "XikunLiu-huskit/GLIO" ["l"="58.449,11.204"]
+"SHTOOLS/SHTOOLS" ["l"="40.892,22.746", "c"=325]
+"neka-nat/cupoch" ["l"="58.188,10.094", "c"=142]
 "heiwa0519/PPPLib" ["l"="58.222,11.306"]
 "go-gnss/ntrip" ["l"="57.912,11.093"]
 "de-bkg/gognss" ["l"="57.946,11.105"]
 "go-gnss/rtcm" ["l"="57.906,11.075"]
 "xk1yan/ntripCaster" ["l"="57.895,11.104"]
 "KumarRobotics/ublox" ["l"="58.401,11.256"]
-"ros-drivers/nmea_navsat_driver" ["l"="59.292,12.484"]
 "HKUST-Aerial-Robotics/ublox_driver" ["l"="58.372,11.263"]
 "aussierobots/ublox_dgnss" ["l"="58.439,11.296"]
-"LORD-MicroStrain/ntrip_client" ["l"="58.425,11.314"]
-"PX4/PX4-GPSDrivers" ["l"="59.513,14.027"]
-"ArghyaChatterjee/gps-waypoint-based-autonomous-navigation-in-ros" ["l"="61.557,13.707"]
+"PX4/PX4-GPSDrivers" ["l"="59.513,14.027", "c"=799]
+"ArghyaChatterjee/gps-waypoint-based-autonomous-navigation-in-ros" ["l"="61.557,13.707", "c"=313]
 "flynneva/bno055" ["l"="58.439,11.349"]
-"sparkfun/Qwiic_Ublox_Gps_Py" ["l"="-14.012,-41.845"]
+"sparkfun/Qwiic_Ublox_Gps_Py" ["l"="-14.012,-41.845", "c"=812]
+"commaai/comma10k" ["l"="-14.336,-23.628", "c"=1237]
+"memsindustrygroup/Open-Source-Sensor-Fusion" ["l"="57.53,10.912", "c"=821]
 "demiangomez/Parallel.GAMIT" ["l"="58.11,11.289"]
 "kristinemlarson/gnssIR_python" ["l"="58.134,11.296"]
 "kristinemlarson/gnssIR_matlab_v3" ["l"="58.14,11.313"]
@@ -1461,55 +1649,63 @@ digraph G {
 "MapIV/rtklib_ros_bridge" ["l"="58.168,11.035"]
 "JensReimann/RTKLIB" ["l"="58.197,11.087"]
 "jdesbonnet/GNSS_RTK" ["l"="58.154,11.008"]
+"hku-mars/r2live" ["l"="58.124,9.953", "c"=142]
+"kahowang/sensor-fusion-for-localization-and-mapping" ["l"="58.241,9.899", "c"=142]
+"TixiaoShan/LVI-SAM" ["l"="58.125,9.92", "c"=142]
 "hirokawa/cssrlib-data" ["l"="58.194,11.271"]
 "nlsfi/HASlib" ["l"="58.157,11.275"]
 "taroz/MatRTKLIB" ["l"="58.236,11.322"]
 "IPNL-POLYU/pyrtklib" ["l"="58.195,11.289"]
-"TixiaoShan/LVI-SAM" ["l"="58.125,9.92"]
-"lukasvst/dm-vio" ["l"="59.559,11.137"]
-"hku-mars/r3live" ["l"="58.162,9.928"]
-"uzh-rpg/rpg_svo_pro_open" ["l"="59.525,11.114"]
+"lukasvst/dm-vio" ["l"="59.559,11.137", "c"=87]
+"hku-mars/r3live" ["l"="58.162,9.928", "c"=142]
+"uzh-rpg/rpg_svo_pro_open" ["l"="59.525,11.114", "c"=87]
 "semuconsulting/pygnssutils" ["l"="58.172,11.236"]
 "semuconsulting/pyrtcm" ["l"="58.158,11.226"]
 "mayeranalytics/pyUBX" ["l"="58.111,11.203"]
 "u-blox/ubxlib" ["l"="58.195,11.178"]
-"sparkfun/SparkFun_u-blox_GNSS_Arduino_Library" ["l"="-13.961,-41.838"]
+"sparkfun/SparkFun_u-blox_GNSS_Arduino_Library" ["l"="-13.961,-41.838", "c"=812]
 "u-blox/XPLR-HPG-software" ["l"="58.165,11.16"]
-"jacketizer/libnmea" ["l"="-17.695,-42.925"]
+"jacketizer/libnmea" ["l"="-17.695,-42.925", "c"=55]
 "u-blox/cellular" ["l"="58.167,11.146"]
 "nunojpg/rtcm3torinex" ["l"="58.004,11.128"]
 "geographiclib/geographiclib" ["l"="58.423,11.258"]
 "HKUST-Aerial-Robotics/gnss_comm" ["l"="58.411,11.278"]
 "geographiclib/geographiclib-python" ["l"="58.384,11.292"]
-"Joanna-HE/LIGO." ["l"="58.406,10.08"]
+"Joanna-HE/LIGO." ["l"="58.406,10.08", "c"=142]
+"jks-prv/Beagle_SDR_GPS" ["l"="54.166,4.703", "c"=214]
+"micropython-IMU/micropython-fusion" ["l"="-20.607,-42.877", "c"=635]
 "Shelfcol/gps_imu_fusion" ["l"="58.409,11.042"]
-"gaoxiang12/slam_in_autonomous_driving" ["l"="58.178,9.874"]
-"chengwei0427/ct-lio" ["l"="58.3,10.019"]
-"ZikangYuan/liw_oam" ["l"="58.318,9.988"]
-"hku-mars/LiDAR_IMU_Init" ["l"="58.182,9.969"]
-"zijiechenrobotics/ig_lio" ["l"="58.314,10.019"]
-"NeBula-Autonomy/LOCUS" ["l"="58.287,9.939"]
-"hku-mars/STD" ["l"="58.24,10.023"]
-"minwoo0611/MA-LIO" ["l"="58.328,10.018"]
-"PercyJon/PercyJon.github.io" ["l"="52.895,3.022"]
-"HeisenbergEmpire/studynote" ["l"="52.897,3.033"]
-"admin360bug/bypass" ["l"="52.886,3.039"]
-"springmonster/RestfulTool-Retrofit" ["l"="52.878,3.047"]
-"TanaStudy/Java-Study" ["l"="52.886,3.026"]
-"hanmn/Troubleshooting" ["l"="52.886,3.013"]
+"gaoxiang12/slam_in_autonomous_driving" ["l"="58.178,9.874", "c"=142]
+"chengwei0427/ct-lio" ["l"="58.3,10.019", "c"=142]
+"ZikangYuan/liw_oam" ["l"="58.318,9.988", "c"=142]
+"hku-mars/LiDAR_IMU_Init" ["l"="58.182,9.969", "c"=142]
+"zijiechenrobotics/ig_lio" ["l"="58.314,10.019", "c"=142]
+"NeBula-Autonomy/LOCUS" ["l"="58.287,9.939", "c"=142]
+"hku-mars/STD" ["l"="58.24,10.023", "c"=142]
+"minwoo0611/MA-LIO" ["l"="58.328,10.018", "c"=142]
+"PercyJon/PercyJon.github.io" ["l"="52.895,3.022", "c"=391]
+"HeisenbergEmpire/studynote" ["l"="52.897,3.033", "c"=391]
+"admin360bug/bypass" ["l"="52.886,3.039", "c"=391]
+"springmonster/RestfulTool-Retrofit" ["l"="52.878,3.047", "c"=391]
+"TanaStudy/Java-Study" ["l"="52.886,3.026", "c"=391]
+"hanmn/Troubleshooting" ["l"="52.886,3.013", "c"=391]
 "rtk-rs/rinex" ["l"="58.185,11.258"]
 "i2Nav-WHU/IMU-Array" ["l"="58.493,11.192"]
+"utiasSTARS/msckf-swf-comparison" ["l"="59.54,10.922", "c"=87]
+"michael-fonder/fonder_thesis-2016" ["l"="58.662,10.955"]
 "adrianmo/go-nmea" ["l"="57.866,11.078"]
 "BertoldVdb/go-ais" ["l"="57.836,11.068"]
+"commaai/calib_challenge" ["l"="-14.349,-23.655", "c"=1237]
 "Stanford-NavLab/deep_gnss" ["l"="58.174,11.275"]
 "ebhrz/TDL-GNSS" ["l"="58.18,11.311"]
 "lizhengnss/POSGO" ["l"="58.168,11.257"]
-"Mictronics/pluto-gps-sim" ["l"="53.926,4.709"]
 "gym487/gps-sdr-sim-realtime" ["l"="58.163,11.418"]
 "Mictronics/pluto-gps-sim-win32" ["l"="58.184,11.416"]
 "galileoz/gal-osnma-sim" ["l"="58.172,11.381"]
 "kobekobe1234567/gps-sim-ui" ["l"="58.17,11.4"]
 "gregstarr/PyGPS" ["l"="58.144,11.242"]
+"plutoplus/plutoplus" ["l"="53.95,4.727", "c"=214]
+"wanghuayou1028/ICRA2021-SLAM-paper-list" ["l"="59.585,11.186", "c"=87]
 "globsky/greta-oto" ["l"="58.171,11.352"]
 "globsky/SignalSim" ["l"="58.191,11.35"]
 "ZhangZh3ng/inertial_navigation_basic" ["l"="58.595,11.245"]
@@ -1519,66 +1715,67 @@ digraph G {
 "Mil1ium/NTRIP_ROS" ["l"="58.395,11.302"]
 "nunojpg/cartaodecidadao-explorer" ["l"="58.06,11.167"]
 "i2Nav-WHU/tplots" ["l"="58.547,11.153"]
+"ClemensElflein/OpenMower" ["l"="-15.575,-41.324", "c"=210]
+"xioTechnologies/Fusion" ["l"="57.503,10.888", "c"=821]
+"VREMSoftwareDevelopment/WiFiAnalyzer" ["l"="-52.55,9.118", "c"=19]
 "i2Nav-WHU/LE-VINS" ["l"="58.44,11.083"]
-"bytedance/SchurVINS" ["l"="59.661,11.166"]
-"simondlevy/Hackflight" ["l"="58.865,13.94"]
-"simondlevy/BreezySLAM" ["l"="59.469,11.203"]
-"simondlevy/SensorFusion" ["l"="64.236,35.174"]
-"denyssene/SimpleKalmanFilter" ["l"="57.656,10.852"]
-"suhetao/stm32f4_mpu9250" ["l"="57.573,10.916"]
+"bytedance/SchurVINS" ["l"="59.661,11.166", "c"=87]
+"simondlevy/Hackflight" ["l"="58.865,13.94", "c"=264]
+"simondlevy/SensorFusion" ["l"="64.236,35.174", "c"=589]
+"denyssene/SimpleKalmanFilter" ["l"="57.656,10.852", "c"=821]
+"suhetao/stm32f4_mpu9250" ["l"="57.573,10.916", "c"=821]
+"liuguitao/AVP-SLAM-PLUS" ["l"="59.741,11.088", "c"=87]
+"CCNYRoboticsLab/imu_tools" ["l"="60.321,12.498", "c"=286]
 "SGL-UT/gnsstk-apps" ["l"="58.303,11.352"]
 "rtklibexplorer/android_rinex" ["l"="58.214,11.296"]
 "rtk-rs/gnss-rtk" ["l"="58.126,11.258"]
 "rtk-rs/cggtts" ["l"="58.141,11.264"]
+"ori-drs/allan_variance_ros" ["l"="59.535,11.094", "c"=87]
 "JAXA-SNU/MALIB" ["l"="58.255,11.368"]
 "gnsscusdr/CU-SDR-Collection" ["l"="58.205,11.328"]
 "taroz/ge-gnss-visibility" ["l"="58.259,11.346"]
 "QIJINCHEN/IMA-estimation" ["l"="58.501,11.236"]
 "i2Nav-WHU/evaluate_odometry" ["l"="58.578,11.143"]
 "i2Nav-WHU/FF-LINS" ["l"="58.389,11.054"]
+"SpectacularAI/HybVIO" ["l"="59.657,11.095", "c"=87]
 "kafeiyin00/WHU-HelmetDataset" ["l"="58.369,10.979"]
 "kafeiyin00/HCTO" ["l"="58.36,10.945"]
-"zht1117/LiDAR-PGO-uncertainty" ["l"="58.501,10.012"]
-"barbeau/gpstest" ["l"="58.309,11.299"]
-"mendhak/gpslogger" ["l"="12.269,-8.03"]
-"VREMSoftwareDevelopment/WiFiAnalyzer" ["l"="-52.55,9.118"]
-"kylecorry31/Trail-Sense" ["l"="-52.558,9.306"]
-"mapsforge/mapsforge" ["l"="39.615,24.064"]
-"osmandapp/OsmAnd" ["l"="-52.687,9.122"]
-"sctg-development/RtkGps" ["l"="-48.256,12.026"]
+"zht1117/LiDAR-PGO-uncertainty" ["l"="58.501,10.012", "c"=142]
+"kylecorry31/Trail-Sense" ["l"="-52.558,9.306", "c"=19]
+"osmandapp/OsmAnd" ["l"="-52.687,9.122", "c"=19]
+"tier4/AWSIM" ["l"="62.875,12.115", "c"=461]
 "LiZhengXiao99/Navigation-Learning" ["l"="58.362,11.222"]
 "xiaohong-huang/RTK-Visual-Inertial-Navigation" ["l"="58.53,11.246"]
-"JonasBchrt/raw-gnss-fusion" ["l"="58.124,10.382"]
+"JonasBchrt/raw-gnss-fusion" ["l"="58.124,10.382", "c"=142]
 "libing64/att_ekf" ["l"="58.541,11.054"]
 "libing64/hector_quadrotor" ["l"="58.589,11.012"]
-"introlab/OpenIMU" ["l"="58.344,11.085"]
 "introlab/OpenIMU-MiniLogger" ["l"="58.33,11.043"]
-"EliaTarasov/ESKF" ["l"="57.422,10.741"]
-"meyiao/ImuFusion" ["l"="57.402,10.864"]
+"EliaTarasov/ESKF" ["l"="57.422,10.741", "c"=821]
+"meyiao/ImuFusion" ["l"="57.402,10.864", "c"=821]
 "ruffsl/RTKLIB-Tools" ["l"="58.231,11.124"]
 "drotek/SMARTNAV-RTK" ["l"="58.214,11.118"]
 "ymjdz/MATLAB-Codes" ["l"="58.304,11.079"]
 "hahnpv/SoftGNSS" ["l"="58.233,11.404"]
+"Taeyoung96/Awesome-LiDAR-IMU-calibration" ["l"="58.239,10.054", "c"=142]
 "rwth-irt/gnssFGO" ["l"="58.096,11.438"]
 "hz658832/gnssFGO" ["l"="58.079,11.467"]
 "rwth-irt/DeepNLOSDetection" ["l"="58.126,11.377"]
 "awerries/kalman-localization" ["l"="58.612,11.175"]
 "GYengera/Inerital-Navigation-System" ["l"="58.639,11.176"]
-"PBRT/Kalman_CPP" ["l"="57.309,10.809"]
+"PBRT/Kalman_CPP" ["l"="57.309,10.809", "c"=821]
 "libing64/ORB_SLAM2" ["l"="58.613,10.993"]
 "gogogoKKK/PreIntegrationForFusionTest" ["l"="58.64,10.972"]
 "jorgeho1995/geagnss" ["l"="58.326,11.342"]
-"chrisveness/geodesy" ["l"="39.218,24.063"]
-"insarlab/PySolid" ["l"="40.938,23.246"]
-"vahancho/erkir" ["l"="58.358,11.331"]
+"insarlab/PySolid" ["l"="40.938,23.246", "c"=1293]
 "chichengcn/gici-open-dataset" ["l"="58.477,11.24"]
 "ebhrz/KLTDataset" ["l"="58.161,11.314"]
-"uestc-icsp/VoxelMapPlus_Public" ["l"="58.304,10.043"]
-"zhh2005757/FAST-LIO-Multi-Sensor-Fusion" ["l"="58.465,9.973"]
+"uestc-icsp/VoxelMapPlus_Public" ["l"="58.304,10.043", "c"=142]
+"zhh2005757/FAST-LIO-Multi-Sensor-Fusion" ["l"="58.465,9.973", "c"=142]
 "imh/gnss-analysis" ["l"="58.172,11.481"]
-"michael-fonder/fonder_thesis-2016" ["l"="58.662,10.955"]
 "martinhakansson/rtcm-rs" ["l"="58.297,11.446"]
 "taroz/PPC-Dataset" ["l"="58.284,11.411"]
+"Turbo87/utm" ["l"="41.523,24.229", "c"=76]
+"codyd51/gypsum" ["l"="53.855,4.755", "c"=214]
 "QZSS-Strategy-Office/claslib" ["l"="58.265,11.409"]
 "QZSS-Strategy-Office/madocalib" ["l"="58.27,11.422"]
 "DfAC/gps-measurement-tools" ["l"="58.306,11.422"]
@@ -1588,8 +1785,10 @@ digraph G {
 "GREAT-WHU/GREAT-LAG" ["l"="58.341,11.309"]
 "taroz/gsdc2023" ["l"="58.245,11.382"]
 "taroz/gtsam_gnss" ["l"="58.249,11.422"]
-"osqzss/LimeGPS" ["l"="54.119,4.926"]
+"osqzss/LimeGPS" ["l"="54.119,4.926", "c"=214]
 "RichardHerz/GPS" ["l"="58.209,11.457"]
+"EttusResearch/uhd" ["l"="54.105,4.682", "c"=214]
 "IPGP/geodezyx" ["l"="58.076,11.286"]
+"tu-darmstadt-ros-pkg/hector_quadrotor" ["l"="60.213,13.913", "c"=334]
 "oriolcervello/GNSS-REFLECTOMETRY-PROCESSING" ["l"="58.066,11.328"]
 }

@@ -1,4 +1,7 @@
 digraph G {
+"intel/ai-reference-models" -> "uxlfoundation/oneCCL" ["e"=1]
+"intel/ai-reference-models" -> "oneapi-src/oneAPI-samples" ["e"=1]
+"intel/ai-reference-models" -> "intel/pti-gpu" ["e"=1]
 "inducer/pyopencl" -> "inducer/pycuda" ["e"=1]
 "inducer/pyopencl" -> "jrprice/Oclgrind"
 "inducer/pyopencl" -> "HandsOnOpenCL/Exercises-Solutions"
@@ -14,6 +17,9 @@ digraph G {
 "inducer/pyopencl" -> "HandsOnOpenCL/Lecture-Slides"
 "inducer/pyopencl" -> "enjalot/adventures_in_opencl"
 "inducer/pyopencl" -> "KhronosGroup/OpenCL-Headers"
+"plaidml/plaidml" -> "hughperkins/tf-coriander" ["e"=1]
+"plaidml/plaidml" -> "ROCm/ROCm" ["e"=1]
+"plaidml/plaidml" -> "ROCm/hip" ["e"=1]
 "KhronosGroup/SPIRV-LLVM-Translator" -> "KhronosGroup/SPIRV-Tools" ["e"=1]
 "KhronosGroup/SPIRV-LLVM-Translator" -> "KhronosGroup/SPIRV-Headers" ["e"=1]
 "KhronosGroup/SPIRV-LLVM-Translator" -> "google/clspv"
@@ -44,6 +50,10 @@ digraph G {
 "triSYCL/triSYCL" -> "jrprice/Oclgrind"
 "triSYCL/triSYCL" -> "ROCm/hcc"
 "triSYCL/triSYCL" -> "UoB-HPC/BabelStream" ["e"=1]
+"spack/spack" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
+"flame/blis" -> "CNugteren/CLBlast" ["e"=1]
+"flashlight/flashlight" -> "arrayfire/arrayfire" ["e"=1]
+"boostorg/hana" -> "boostorg/compute" ["e"=1]
 "clMathLibraries/clBLAS" -> "clMathLibraries/clFFT"
 "clMathLibraries/clBLAS" -> "CNugteren/CLBlast"
 "clMathLibraries/clBLAS" -> "clMathLibraries/clSPARSE"
@@ -59,6 +69,7 @@ digraph G {
 "clMathLibraries/clBLAS" -> "ddemidov/vexcl"
 "clMathLibraries/clBLAS" -> "codeplaysoftware/portBLAS"
 "clMathLibraries/clBLAS" -> "triSYCL/triSYCL"
+"libav/libav" -> "intel/libva" ["e"=1]
 "intel/llvm" -> "AdaptiveCpp/AdaptiveCpp"
 "intel/llvm" -> "oneapi-src/oneAPI-samples"
 "intel/llvm" -> "triSYCL/triSYCL"
@@ -74,6 +85,8 @@ digraph G {
 "intel/llvm" -> "KhronosGroup/SPIRV-LLVM-Translator"
 "intel/llvm" -> "codeplaysoftware/computecpp-sdk"
 "intel/llvm" -> "intel/opencl-intercept-layer"
+"inducer/pycuda" -> "inducer/pyopencl" ["e"=1]
+"RRZE-HPC/gpu-benches" -> "ekondis/mixbench" ["e"=1]
 "pocl/pocl" -> "google/clspv"
 "pocl/pocl" -> "jrprice/Oclgrind"
 "pocl/pocl" -> "KhronosGroup/OpenCL-ICD-Loader"
@@ -104,6 +117,10 @@ digraph G {
 "AdaptiveCpp/AdaptiveCpp" -> "uxlfoundation/oneDPL"
 "AdaptiveCpp/AdaptiveCpp" -> "LLNL/RAJA" ["e"=1]
 "AdaptiveCpp/AdaptiveCpp" -> "STEllAR-GROUP/hpx" ["e"=1]
+"microsoft/DirectML" -> "ROCm/ROCm" ["e"=1]
+"jgbit/vuda" -> "kpet/clvk" ["e"=1]
+"jgbit/vuda" -> "google/uVkCompute" ["e"=1]
+"jgbit/vuda" -> "google/clspv" ["e"=1]
 "intel/compute-runtime" -> "intel/intel-graphics-compiler"
 "intel/compute-runtime" -> "oneapi-src/level-zero"
 "intel/compute-runtime" -> "intel/llvm"
@@ -130,6 +147,10 @@ digraph G {
 "ROCm/pytorch" -> "ROCm/ROCm-docker"
 "ROCm/pytorch" -> "ROCm/ROCmValidationSuite"
 "ROCm/pytorch" -> "ROCm/MIOpen"
+"uxlfoundation/scikit-learn-intelex" -> "uxlfoundation/oneDAL" ["e"=1]
+"uxlfoundation/scikit-learn-intelex" -> "IntelPython/scikit-learn_bench" ["e"=1]
+"uxlfoundation/scikit-learn-intelex" -> "IntelPython/dpctl" ["e"=1]
+"eigenteam/eigen-git-mirror" -> "arrayfire/arrayfire" ["e"=1]
 "ROCm/MIVisionX" -> "ROCm/rpp"
 "ROCm/MIVisionX" -> "GPUOpen-ProfessionalCompute-Libraries/amdovx-core"
 "ROCm/MIVisionX" -> "GPUOpen-ProfessionalCompute-Libraries/amdovx-modules"
@@ -150,6 +171,7 @@ digraph G {
 "intel/libva" -> "intel/libyami-utils"
 "intel/libva" -> "i-rinat/libvdpau-va-gl" ["e"=1]
 "intel/libva" -> "intel/cartwheel-ffmpeg"
+"ginkgo-project/ginkgo" -> "ROCm/rocALUTION" ["e"=1]
 "ROCm/rocThrust" -> "ROCm/hipCUB"
 "ROCm/rocThrust" -> "ROCm/rocPRIM"
 "ROCm/rocThrust" -> "ROCm/rocRAND"
@@ -167,6 +189,7 @@ digraph G {
 "ROCm/rocm_smi_lib" -> "ROCm/ROCR-Runtime"
 "ROCm/rocm_smi_lib" -> "ROCm/ROCm-CompilerSupport"
 "ROCm/rocm_smi_lib" -> "ROCm/ROCm-Device-Libs"
+"shiguredo/momo" -> "intel/libvpl" ["e"=1]
 "uxlfoundation/oneDPL" -> "uxlfoundation/oneMath"
 "uxlfoundation/oneDPL" -> "intel/llvm"
 "uxlfoundation/oneDPL" -> "KhronosGroup/SyclParallelSTL"
@@ -198,6 +221,7 @@ digraph G {
 "triSYCL/sycl" -> "tadeaustria/llvm"
 "triSYCL/sycl" -> "triSYCL/path_tracer"
 "triSYCL/sycl" -> "intel/fpga-training"
+"OpenVisualCloud/SVT-HEVC" -> "Intel-Media-SDK/MediaSDK" ["e"=1]
 "ROCm/llvm-project" -> "ROCm/ROCm-Device-Libs"
 "ROCm/llvm-project" -> "ROCm/ROCR-Runtime"
 "ROCm/llvm-project" -> "ROCm/clr"
@@ -209,6 +233,7 @@ digraph G {
 "ROCm/llvm-project" -> "ROCm/ROCm-CompilerSupport"
 "ROCm/llvm-project" -> "ROCm/rocMLIR" ["e"=1]
 "ROCm/llvm-project" -> "ROCm/ROCgdb"
+"dlstreamer/dlstreamer" -> "Intel-Media-SDK/MediaSDK" ["e"=1]
 "Oblomov/clinfo" -> "KhronosGroup/OpenCL-ICD-Loader"
 "Oblomov/clinfo" -> "krrishnarraj/clpeak"
 "Oblomov/clinfo" -> "intel/opencl-intercept-layer"
@@ -224,6 +249,9 @@ digraph G {
 "Oblomov/clinfo" -> "google/clspv"
 "Oblomov/clinfo" -> "intel/opencl-clang"
 "Oblomov/clinfo" -> "clMathLibraries/clBLAS"
+"doe300/VC4CL" -> "kpet/clvk" ["e"=1]
+"doe300/VC4CL" -> "pocl/pocl" ["e"=1]
+"doe300/VC4CL" -> "google/clspv" ["e"=1]
 "intel/intel-graphics-compiler" -> "intel/compute-runtime"
 "intel/intel-graphics-compiler" -> "intel/opencl-clang"
 "intel/intel-graphics-compiler" -> "intel/gmmlib"
@@ -239,6 +267,7 @@ digraph G {
 "intel/intel-graphics-compiler" -> "intel/clGPU"
 "intel/intel-graphics-compiler" -> "intel/media-driver"
 "intel/intel-graphics-compiler" -> "KhronosGroup/OpenCL-CTS"
+"ivan-vasilev/neuralnetworks" -> "hughperkins/DeepCL" ["e"=1]
 "KhronosGroup/OpenVX-sample-impl" -> "KhronosGroup/openvx-samples"
 "KhronosGroup/OpenVX-sample-impl" -> "rgiduthuri/openvx_tutorial"
 "KhronosGroup/OpenVX-sample-impl" -> "KhronosGroup/OpenVX-api-docs"
@@ -259,6 +288,7 @@ digraph G {
 "ROCm/aomp" -> "ROCm/HIP-Examples"
 "ROCm/aomp" -> "llvm-doe-org/llvm-project"
 "ROCm/aomp" -> "ROCm/rocprofiler-compute"
+"vgvassilev/cling" -> "ddemidov/vexcl" ["e"=1]
 "intel/media-driver" -> "intel/libva"
 "intel/media-driver" -> "Intel-Media-SDK/MediaSDK"
 "intel/media-driver" -> "intel/gmmlib"
@@ -339,6 +369,9 @@ digraph G {
 "clMathLibraries/clFFT" -> "triSYCL/triSYCL"
 "clMathLibraries/clFFT" -> "KhronosGroup/OpenCL-Headers"
 "clMathLibraries/clFFT" -> "Oblomov/clinfo"
+"Glavnokoman/vuh" -> "google/uVkCompute" ["e"=1]
+"Glavnokoman/vuh" -> "google/clspv" ["e"=1]
+"Glavnokoman/vuh" -> "kpet/clvk" ["e"=1]
 "VeriSilicon/acuity-models" -> "VeriSilicon/TIM-VX"
 "VeriSilicon/acuity-models" -> "VeriSilicon/acuitylite"
 "krrishnarraj/clpeak" -> "intel/opencl-intercept-layer"
@@ -371,6 +404,7 @@ digraph G {
 "ROCm/rccl" -> "ROCm/ROCR-Runtime"
 "ROCm/rccl" -> "microsoft/msccl-tools" ["e"=1]
 "ROCm/rccl" -> "microsoft/mscclpp" ["e"=1]
+"directus/v8-archive" -> "intel/media-driver" ["e"=1]
 "ROCmSoftwarePlatform/hiptensorflow" -> "ROCmSoftwarePlatform/tensorflow"
 "ROCmSoftwarePlatform/hiptensorflow" -> "ROCm/hipCaffe"
 "ROCmSoftwarePlatform/hiptensorflow" -> "benoitsteiner/tensorflow-opencl"
@@ -385,6 +419,7 @@ digraph G {
 "celerity/celerity-runtime" -> "KhronosGroup/SYCL-CTS"
 "celerity/celerity-runtime" -> "cpc/hipcl"
 "celerity/celerity-runtime" -> "insieme/insieme"
+"GPUOpen-Drivers/pal" -> "ROCm/ROCR-Runtime" ["e"=1]
 "ROCm/AMDMIGraphX" -> "ROCm/rocMLIR" ["e"=1]
 "ROCm/AMDMIGraphX" -> "ROCm/hipBLAS"
 "ROCm/AMDMIGraphX" -> "ROCm/Tensile"
@@ -413,6 +448,8 @@ digraph G {
 "ROCm/rocSPARSE" -> "ROCm/rocBLAS"
 "ROCm/rocSPARSE" -> "ROCm/aomp"
 "IntelPython/scikit-learn_bench" -> "uxlfoundation/oneDAL"
+"NERSC/timemory" -> "ROCm/rocprofiler-compute" ["e"=1]
+"NERSC/timemory" -> "ROCm/omnitrace" ["e"=1]
 "google/amber" -> "google/uVkCompute"
 "kpet/clvk" -> "google/clspv"
 "kpet/clvk" -> "intel/opencl-intercept-layer"
@@ -459,7 +496,9 @@ digraph G {
 "intel/opencl-intercept-layer" -> "codeplaysoftware/computecpp-sdk"
 "intel/opencl-intercept-layer" -> "oneapi-src/level-zero"
 "intel/opencl-intercept-layer" -> "zjin-lcf/HeCBench"
+"aws/aws-ofi-nccl" -> "ROCm/rccl" ["e"=1]
 "cpc/hipcl" -> "CHIP-SPV/chipStar"
+"NVIDIA/video-sdk-samples" -> "Intel-Media-SDK/MediaSDK" ["e"=1]
 "ROCm/rocprofiler" -> "ROCm/roctracer"
 "ROCm/rocprofiler" -> "ROCm/ROCmValidationSuite"
 "ROCm/rocprofiler" -> "ROCm/hipBLAS"
@@ -554,6 +593,11 @@ digraph G {
 "bashbaug/SimpleOpenCLSamples" -> "intel/compute-samples"
 "NVIDIA/WebGL" -> "NVIDIA/webgl-path-tracing"
 "NVIDIA/WebGL" -> "NVIDIA/gef-nsight"
+"alpaka-group/alpaka" -> "celerity/celerity-runtime" ["e"=1]
+"alpaka-group/alpaka" -> "codeplaysoftware/syclacademy" ["e"=1]
+"alpaka-group/alpaka" -> "KhronosGroup/SYCL-Docs" ["e"=1]
+"alpaka-group/alpaka" -> "triSYCL/triSYCL" ["e"=1]
+"intel/libxcam" -> "rgiduthuri/openvx_tutorial" ["e"=1]
 "arrayfire/arrayfire" -> "flashlight/flashlight" ["e"=1]
 "arrayfire/arrayfire" -> "NVIDIA/thrust" ["e"=1]
 "arrayfire/arrayfire" -> "boostorg/compute"
@@ -569,6 +613,9 @@ digraph G {
 "arrayfire/arrayfire" -> "ROCm/hip"
 "arrayfire/arrayfire" -> "xtensor-stack/xsimd" ["e"=1]
 "arrayfire/arrayfire" -> "VcDevel/Vc" ["e"=1]
+"vosen/ZLUDA" -> "ROCm/ROCm" ["e"=1]
+"vosen/ZLUDA" -> "ROCm/hip" ["e"=1]
+"mlpack/mlpack" -> "arrayfire/arrayfire" ["e"=1]
 "uxlfoundation/oneAPI-spec" -> "oneapi-src/level-zero"
 "uxlfoundation/oneAPI-spec" -> "oneapi-src/oneAPI-tab"
 "uxlfoundation/oneAPI-spec" -> "oneapi-src/oneapi-ci"
@@ -577,6 +624,8 @@ digraph G {
 "uxlfoundation/oneAPI-spec" -> "uxlfoundation/oneapi-construction-kit"
 "uxlfoundation/oneAPI-spec" -> "oneapi-src/level-zero-tests"
 "uxlfoundation/oneAPI-spec" -> "intel/pti-gpu"
+"NVIDIA/libcudacxx" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
+"DTolm/VkFFT" -> "google/clspv" ["e"=1]
 "KhronosGroup/OpenCL-SDK" -> "KhronosGroup/OpenCL-Guide"
 "KhronosGroup/OpenCL-SDK" -> "KhronosGroup/OpenCL-Docs"
 "KhronosGroup/OpenCL-SDK" -> "KhronosGroup/OpenCL-Headers"
@@ -592,6 +641,16 @@ digraph G {
 "KhronosGroup/OpenCL-SDK" -> "AdaptiveCpp/AdaptiveCpp"
 "KhronosGroup/OpenCL-SDK" -> "Oblomov/clinfo"
 "KhronosGroup/OpenCL-SDK" -> "intel/opencl-intercept-layer"
+"breagen/MachSuite" -> "KastnerRG/spector" ["e"=1]
+"libxsmm/libxsmm" -> "codeplaysoftware/portBLAS" ["e"=1]
+"libxsmm/libxsmm" -> "uxlfoundation/oneMath" ["e"=1]
+"DrTimothyAldenDavis/SuiteSparse" -> "uxlfoundation/oneMath" ["e"=1]
+"KomputeProject/kompute" -> "google/uVkCompute" ["e"=1]
+"KomputeProject/kompute" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
+"KomputeProject/kompute" -> "kpet/clvk" ["e"=1]
+"KomputeProject/kompute" -> "google/clspv" ["e"=1]
+"intel/intel-extension-for-pytorch" -> "uxlfoundation/oneCCL" ["e"=1]
+"intel/intel-extension-for-pytorch" -> "intel/llvm" ["e"=1]
 "KhronosGroup/OpenCL-Guide" -> "KhronosGroup/OpenCL-SDK"
 "KhronosGroup/OpenCL-Guide" -> "KhronosGroup/OpenCL-Docs"
 "KhronosGroup/OpenCL-Guide" -> "rsnemmen/OpenCL-examples"
@@ -613,6 +672,7 @@ digraph G {
 "IntelPython/dpctl" -> "IntelPython/dpnp"
 "IntelPython/dpctl" -> "IntelPython/dpbench"
 "IntelPython/dpctl" -> "soda-inria/sklearn-numba-dpex"
+"dimagi/commcare-hq" -> "intel/media-driver" ["e"=1]
 "ROCm/HIPIFY" -> "ROCm/hipBLAS"
 "ROCm/HIPIFY" -> "ROCm/rocPRIM"
 "ROCm/HIPIFY" -> "ROCm/rocBLAS"
@@ -628,6 +688,7 @@ digraph G {
 "ROCm/HIPIFY" -> "ROCm/AMDMIGraphX"
 "ROCm/HIPIFY" -> "ROCm/HIP-Examples"
 "ROCm/HIPIFY" -> "ROCm/rocSPARSE"
+"ofiwg/libfabric" -> "ROCm/rccl" ["e"=1]
 "ROCm/hipFFT" -> "ROCm/hipSPARSE"
 "ROCm/hipFFT" -> "ROCm/hipCUB"
 "ROCm/hipFFT" -> "ROCm/hipSOLVER"
@@ -711,6 +772,7 @@ digraph G {
 "intel/libvpl" -> "intel/media-driver"
 "intel/libvpl" -> "intel/cartwheel-ffmpeg"
 "intel/libvpl" -> "uxlfoundation/oneCCL"
+"inducer/loopy" -> "inducer/pyopencl" ["e"=1]
 "oneapi-src/oneAPI-samples" -> "intel/llvm"
 "oneapi-src/oneAPI-samples" -> "uxlfoundation/oneMath"
 "oneapi-src/oneAPI-samples" -> "Apress/data-parallel-CPP"
@@ -743,6 +805,8 @@ digraph G {
 "hughperkins/DeepCL" -> "boostorg/compute"
 "intel/media-delivery" -> "intel/vpl-gpu-rt"
 "intel/media-delivery" -> "intel/libvpl"
+"shinpei0208/gdev" -> "ekondis/gpumembench" ["e"=1]
+"intel/torch-ccl" -> "uxlfoundation/oneCCL" ["e"=1]
 "jeffhammond/dpcpp-tutorial" -> "Apress/data-parallel-CPP"
 "KhronosGroup/openvx-samples" -> "KhronosGroup/OpenVX-sample-impl"
 "KhronosGroup/openvx-samples" -> "KhronosGroup/OpenVX-api-docs"
@@ -756,6 +820,8 @@ digraph G {
 "TexasInstruments/jacinto-ai-devkit" -> "TexasInstruments/edgeai"
 "TexasInstruments/jacinto-ai-devkit" -> "TexasInstruments/tvm"
 "ROCm/ROCgdb" -> "ROCm/ROCdbgapi"
+"NVlabs/NVBit" -> "utcs-scea/altis" ["e"=1]
+"microsoft/tensorflow-directml" -> "ROCm/tensorflow-upstream" ["e"=1]
 "oneapi-src/level-zero" -> "oneapi-src/level-zero-tests"
 "oneapi-src/level-zero" -> "uxlfoundation/oneAPI-spec"
 "oneapi-src/level-zero" -> "intel/pti-gpu"
@@ -796,6 +862,10 @@ digraph G {
 "ROCm/rpp" -> "ROCm/rocDecode"
 "ROCm/rpp" -> "ROCm/MIVisionX"
 "ROCm/rpp" -> "ROCm/rocAL"
+"ROCm/rocMLIR" -> "ROCm/AMDMIGraphX" ["e"=1]
+"ROCm/rocMLIR" -> "ROCm/Tensile" ["e"=1]
+"ROCm/rocMLIR" -> "ROCm/rocSOLVER" ["e"=1]
+"Mellanox/nccl-rdma-sharp-plugins" -> "uxlfoundation/oneCCL" ["e"=1]
 "intel/BaseKit-code-samples" -> "intel/HPCKit-code-samples"
 "intel/BaseKit-code-samples" -> "intel/AiKit-code-samples"
 "rocm-arch/tensorflow-rocm" -> "rocm-arch/python-pytorch-rocm"
@@ -806,6 +876,8 @@ digraph G {
 "NVIDIA/webgl-path-tracing" -> "NVIDIA/nvidia-query-resource-opengl"
 "NVIDIA/three.js" -> "NVIDIA/WebGL"
 "rocm-arch/python-pytorch-rocm" -> "rocm-arch/tensorflow-rocm"
+"arrayfire/arrayfire-python" -> "arrayfire/arrayfire" ["e"=1]
+"rose-compiler/rose" -> "vetter/shoc" ["e"=1]
 "CNugteren/CLBlast" -> "clMathLibraries/clBLAS"
 "CNugteren/CLBlast" -> "CNugteren/CLTune"
 "CNugteren/CLBlast" -> "CNugteren/myGEMM"
@@ -824,17 +896,28 @@ digraph G {
 "google/uVkCompute" -> "nihui/vkpeak"
 "google/uVkCompute" -> "google/amber"
 "google/uVkCompute" -> "jeffbolznv/vk_cooperative_matrix_perf"
+"NVIDIA/thrust" -> "arrayfire/arrayfire" ["e"=1]
+"NVIDIA/thrust" -> "ROCm/hip" ["e"=1]
+"PX4/eigen" -> "uxlfoundation/oneMath" ["e"=1]
+"NVIDIA/caffe" -> "mathmanu/caffe-jacinto" ["e"=1]
+"NVIDIA/caffe" -> "mathmanu/caffe-jacinto-models" ["e"=1]
+"NVIDIA/nvbench" -> "ekondis/mixbench" ["e"=1]
 "TexasInstruments/edgeai-tidl-tools" -> "TexasInstruments/edgeai"
 "TexasInstruments/edgeai-tidl-tools" -> "TexasInstruments/edgeai-benchmark"
 "TexasInstruments/edgeai-tidl-tools" -> "TexasInstruments/edgeai-modelzoo"
 "TexasInstruments/edgeai-tidl-tools" -> "TexasInstruments/edgeai-torchvision"
 "TexasInstruments/edgeai-tidl-tools" -> "TexasInstruments/jacinto-ai-devkit"
 "TexasInstruments/edgeai-tidl-tools" -> "TexasInstruments/edgeai-tensorlab"
+"kokkos/kokkos" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
+"kokkos/kokkos" -> "ROCm/hip" ["e"=1]
+"Samsung/veles" -> "hughperkins/DeepCL" ["e"=1]
+"arrayfire/arrayfire-rust" -> "arrayfire/arrayfire" ["e"=1]
 "bgaster/opencl-book-samples" -> "rsnemmen/OpenCL-examples"
 "bgaster/opencl-book-samples" -> "enjalot/adventures_in_opencl"
 "bgaster/opencl-book-samples" -> "intel/compute-samples"
 "bgaster/opencl-book-samples" -> "Dakkers/OpenCL-examples"
 "nihui/vkpeak" -> "nihui/ncnn-android-vkpeak"
+"cplussharp/graph-studio-next" -> "Intel-Media-SDK/samples" ["e"=1]
 "Grench6/RX580-rocM-tensorflow-ubuntu20.4-guide" -> "xuhuisheng/rocm-gfx803"
 "Grench6/RX580-rocM-tensorflow-ubuntu20.4-guide" -> "boriswinner/RX580-rocM-tensorflow-ubuntu20.4-guide"
 "Grench6/RX580-rocM-tensorflow-ubuntu20.4-guide" -> "xuhuisheng/rocm-build"
@@ -886,6 +969,7 @@ digraph G {
 "Dakkers/OpenCL-examples" -> "rsnemmen/OpenCL-examples"
 "Dakkers/OpenCL-examples" -> "sschaetz/nvidia-opencl-examples"
 "Dakkers/OpenCL-examples" -> "bgaster/opencl-book-samples"
+"microsoft/msccl" -> "ROCm/rccl" ["e"=1]
 "clMathLibraries/clSPARSE" -> "clMathLibraries/clRNG"
 "clMathLibraries/clSPARSE" -> "clMathLibraries/clBLAS"
 "clMathLibraries/clSPARSE" -> "clMathLibraries/clFFT"
@@ -905,7 +989,16 @@ digraph G {
 "ROCm/composable_kernel" -> "ROCm/rocMLIR" ["e"=1]
 "ROCm/composable_kernel" -> "ROCm/amd_matrix_instruction_calculator"
 "ROCm/composable_kernel" -> "Yinghan-Li/YHs_Sample" ["e"=1]
+"UoB-HPC/BabelStream" -> "ekondis/mixbench" ["e"=1]
+"UoB-HPC/BabelStream" -> "ROCm/aomp" ["e"=1]
+"UoB-HPC/BabelStream" -> "KhronosGroup/SYCL-Docs" ["e"=1]
+"UoB-HPC/BabelStream" -> "codeplaysoftware/portBLAS" ["e"=1]
+"UoB-HPC/BabelStream" -> "triSYCL/triSYCL" ["e"=1]
+"UoB-HPC/BabelStream" -> "ROCm/rocFFT" ["e"=1]
+"UoB-HPC/BabelStream" -> "ROCm/Tensile" ["e"=1]
 "fjarri/reikna" -> "geggo/gpyfft"
+"gtcasl/gpuocelot" -> "vetter/shoc" ["e"=1]
+"gtcasl/gpuocelot" -> "vtsynergy/CU2CL" ["e"=1]
 "VeriSilicon/TIM-VX" -> "VeriSilicon/tflite-vx-delegate"
 "VeriSilicon/TIM-VX" -> "VeriSilicon/acuity-models"
 "VeriSilicon/TIM-VX" -> "OAID/Tengine-Convert-Tools"
@@ -913,6 +1006,7 @@ digraph G {
 "VeriSilicon/TIM-VX" -> "rgiduthuri/openvx_tutorial"
 "VeriSilicon/TIM-VX" -> "VeriSilicon/acuitylite"
 "fpgacademy/DESim" -> "fpgacademy/Lab_Exercises_Digital_Logic"
+"NVIDIA/cudnn-frontend" -> "ROCm/composable_kernel" ["e"=1]
 "TexasInstruments/edgeai" -> "TexasInstruments/edgeai-tidl-tools"
 "TexasInstruments/edgeai" -> "TexasInstruments/edgeai-modelzoo"
 "TexasInstruments/edgeai" -> "TexasInstruments/edgeai-torchvision"
@@ -991,6 +1085,7 @@ digraph G {
 "amd/OpenCL-caffe" -> "eBay/maxDNN" ["e"=1]
 "amd/OpenCL-caffe" -> "clMathLibraries/clRNG"
 "amd/OpenCL-caffe" -> "dmlc/minerva" ["e"=1]
+"clbr/radeontop" -> "ROCm/rocm_smi_lib" ["e"=1]
 "KhronosGroup/OpenCL-CLHPP" -> "KhronosGroup/OpenCL-Headers"
 "KhronosGroup/OpenCL-CLHPP" -> "KhronosGroup/OpenCL-ICD-Loader"
 "KhronosGroup/OpenCL-CLHPP" -> "KhronosGroup/OpenCL-Docs"
@@ -1006,6 +1101,7 @@ digraph G {
 "KhronosGroup/OpenCL-CLHPP" -> "triSYCL/triSYCL"
 "KhronosGroup/OpenCL-CLHPP" -> "bashbaug/SimpleOpenCLSamples"
 "KhronosGroup/OpenCL-CLHPP" -> "jrprice/Oclgrind"
+"nod-ai/SHARK-Studio" -> "ROCm/ROCm" ["e"=1]
 "ROCm/hip" -> "ROCm/ROCm"
 "ROCm/hip" -> "ROCm/MIOpen"
 "ROCm/hip" -> "ROCm/HIPIFY"
@@ -1076,6 +1172,7 @@ digraph G {
 "ROCm/Tensile" -> "ROCm/AMDMIGraphX"
 "ROCm/Tensile" -> "ROCm/rocWMMA"
 "ROCm/Tensile" -> "ROCm/rocRAND"
+"TexasInstruments/edgeai-yolox" -> "TexasInstruments/edgeai-tensorlab" ["e"=1]
 "ROCm/rocBLAS" -> "ROCm/Tensile"
 "ROCm/rocBLAS" -> "ROCm/hipBLAS"
 "ROCm/rocBLAS" -> "ROCm/rocFFT"
@@ -1091,6 +1188,7 @@ digraph G {
 "ROCm/rocBLAS" -> "RadeonOpenCompute/ROCm_Documentation"
 "ROCm/rocBLAS" -> "ROCm/rocMLIR" ["e"=1]
 "ROCm/rocBLAS" -> "ROCm/rocThrust"
+"STEllAR-GROUP/hpx" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
 "KhronosGroup/SPIRV-LLVM" -> "KhronosGroup/SPIR"
 "KhronosGroup/SPIRV-LLVM" -> "KhronosGroup/SPIRV-Tools" ["e"=1]
 "KhronosGroup/SPIRV-LLVM" -> "KhronosGroup/Vulkan-LoaderAndValidationLayers" ["e"=1]
@@ -1124,6 +1222,8 @@ digraph G {
 "oneapi-src/SYCLomatic" -> "oneapi-src/level-zero"
 "oneapi-src/SYCLomatic" -> "uxlfoundation/oneCCL"
 "oneapi-src/SYCLomatic" -> "Apress/data-parallel-CPP"
+"KhronosGroup/SPIRV-Tools" -> "KhronosGroup/SPIRV-LLVM-Translator" ["e"=1]
+"KhronosGroup/SPIRV-Tools" -> "KhronosGroup/SPIRV-LLVM" ["e"=1]
 "KhronosGroup/OpenCL-ICD-Loader" -> "KhronosGroup/OpenCL-Headers"
 "KhronosGroup/OpenCL-ICD-Loader" -> "KhronosGroup/OpenCL-CLHPP"
 "KhronosGroup/OpenCL-ICD-Loader" -> "Oblomov/clinfo"
@@ -1141,12 +1241,15 @@ digraph G {
 "KhronosGroup/OpenCL-ICD-Loader" -> "KhronosGroup/SPIR"
 "Intel-Media-SDK/samples" -> "Intel-Media-SDK/MediaSDK"
 "Intel-Media-SDK/samples" -> "Intel-Media-SDK/gstreamer-plugins"
+"microsoft/NPKit" -> "ROCm/rccl" ["e"=1]
 "ROCm/rocWMMA" -> "ROCm/hipTensor"
 "ROCm/rocWMMA" -> "ROCm/hipBLASLt"
 "ROCm/rocWMMA" -> "ROCm/HIPCC"
 "ROCm/rocWMMA" -> "ROCm/llvm-project"
 "ROCm/rocWMMA" -> "ROCm/hipBLAS"
 "ulyssesrr/docker-rocm-xtra" -> "Firstbober/rocm-pytorch-gfx803-docker"
+"uxlfoundation/oneDNN" -> "uxlfoundation/oneMath" ["e"=1]
+"uxlfoundation/oneDNN" -> "uxlfoundation/oneDAL" ["e"=1]
 "ROCm/ROCm" -> "ROCm/hip"
 "ROCm/ROCm" -> "ROCm/MIOpen"
 "ROCm/ROCm" -> "vosen/ZLUDA" ["e"=1]
@@ -1162,6 +1265,7 @@ digraph G {
 "ROCm/ROCm" -> "apache/tvm" ["e"=1]
 "ROCm/ROCm" -> "ROCm/ROCR-Runtime"
 "ROCm/ROCm" -> "uxlfoundation/oneDNN" ["e"=1]
+"ProjectPhysX/FluidX3D" -> "ProjectPhysX/OpenCL-Wrapper" ["e"=1]
 "ROCm/hipBLASLt" -> "ROCm/rocWMMA"
 "ROCm/hipBLASLt" -> "ROCm/aiter"
 "ROCm/hipBLASLt" -> "ROCm/hipBLAS"
@@ -1180,6 +1284,7 @@ digraph G {
 "ROCm/ROCR-Runtime" -> "ROCm/rocm-cmake"
 "ROCm/ROCR-Runtime" -> "ROCm/rccl"
 "ROCm/ROCR-Runtime" -> "ROCm/rocBLAS"
+"Reference-LAPACK/lapack" -> "uxlfoundation/oneMath" ["e"=1]
 "uxlfoundation/oneDAL" -> "uxlfoundation/oneMath"
 "uxlfoundation/oneDAL" -> "IntelPython/scikit-learn_bench"
 "uxlfoundation/oneDAL" -> "uxlfoundation/scikit-learn-intelex" ["e"=1]
@@ -1195,6 +1300,11 @@ digraph G {
 "uxlfoundation/oneDAL" -> "oneapi-src/oneAPI-samples"
 "uxlfoundation/oneDAL" -> "intel/MLSL"
 "uxlfoundation/oneDAL" -> "intel/libvpl"
+"KhronosGroup/Vulkan-LoaderAndValidationLayers" -> "KhronosGroup/SPIRV-LLVM" ["e"=1]
+"KhronosGroup/SPIRV-Headers" -> "KhronosGroup/SPIRV-LLVM-Translator" ["e"=1]
+"ROCm/ROC-smi" -> "ROCm/rocm_smi_lib" ["e"=1]
+"ROCm/ROC-smi" -> "ROCm/ROCm-Device-Libs" ["e"=1]
+"anthonix/ffts" -> "clMathLibraries/clFFT" ["e"=1]
 "ROCm/ROCK-Kernel-Driver" -> "ROCm/ROCR-Runtime"
 "ROCm/ROCK-Kernel-Driver" -> "ROCm/ROCT-Thunk-Interface"
 "ROCm/ROCK-Kernel-Driver" -> "ROCm/hcc"
@@ -1210,7 +1320,9 @@ digraph G {
 "ROCm/ROCK-Kernel-Driver" -> "ROCm/HIP-Examples"
 "ROCm/ROCK-Kernel-Driver" -> "ROCm/rocBLAS"
 "ROCm/ROCK-Kernel-Driver" -> "ROCm/ROCm-docker"
+"intel/intel-extension-for-tensorflow" -> "intel/pti-gpu" ["e"=1]
 "ROCm/Megatron-LM" -> "ROCm/MAD"
+"GPUOpen-Archive/CodeXL" -> "ROCm/hcc" ["e"=1]
 "ROCm/HIP-Examples" -> "ROCm/rocBLAS"
 "ROCm/HIP-Examples" -> "ROCm/rocm-examples"
 "ROCm/HIP-Examples" -> "RadeonOpenCompute/ROCm_Documentation"
@@ -1233,6 +1345,8 @@ digraph G {
 "ROCm/rocm-examples" -> "ROCm/aiter"
 "ROCm/rocm-examples" -> "ROCm/ROCR-Runtime"
 "ROCm/rocm-examples" -> "ROCm/rocBLAS"
+"cusplibrary/cusplibrary" -> "viennacl/viennacl-dev" ["e"=1]
+"cusplibrary/cusplibrary" -> "clMathLibraries/clSPARSE" ["e"=1]
 "ROCm/flash-attention" -> "ROCm/TransformerEngine"
 "ROCm/flash-attention" -> "ROCm/composable_kernel"
 "ROCm/flash-attention" -> "ROCm/bitsandbytes"
@@ -1279,6 +1393,7 @@ digraph G {
 "ROCm/ROCm-docker" -> "ROCm/ROCm"
 "ROCm/ROCm-docker" -> "ROCm/rccl"
 "ROCm/ROCm-docker" -> "ROCm/ROCm-OpenCL-Runtime"
+"philipturner/metal-benchmarks" -> "google/uVkCompute" ["e"=1]
 "GPUOpen-ProfessionalCompute-Libraries/amdovx-modules" -> "GPUOpen-ProfessionalCompute-Libraries/amdovx-core"
 "GPUOpen-ProfessionalCompute-Libraries/amdovx-modules" -> "rgiduthuri/openvx_tutorial"
 "GPUOpen-ProfessionalCompute-Libraries/amdovx-modules" -> "ROCm/MIVisionX"
@@ -1337,6 +1452,13 @@ digraph G {
 "ROCm/rocAL" -> "ROCm/rocDecode"
 "nktice/AMD-AI" -> "ROCm/flash-attention"
 "nktice/AMD-AI" -> "arlo-phoenix/bitsandbytes-rocm-5.6"
+"jansel/opentuner" -> "CNugteren/CLTune" ["e"=1]
+"GPUOpen-LibrariesAndSDKs/AMF" -> "Intel-Media-SDK/MediaSDK" ["e"=1]
+"GPUOpen-LibrariesAndSDKs/AMF" -> "intel/libvpl" ["e"=1]
+"GPUOpen-LibrariesAndSDKs/AMF" -> "intel/libva" ["e"=1]
+"arch4edu/arch4edu" -> "rocm-arch/rocm-arch" ["e"=1]
+"arch4edu/arch4edu" -> "rocm-arch/tensorflow-rocm" ["e"=1]
+"ddemidov/amgcl" -> "ddemidov/vexcl" ["e"=1]
 "benoitsteiner/tensorflow-opencl" -> "hughperkins/tf-coriander"
 "benoitsteiner/tensorflow-opencl" -> "amd/OpenCL-caffe"
 "benoitsteiner/tensorflow-opencl" -> "ROCmSoftwarePlatform/hiptensorflow"
@@ -1352,10 +1474,15 @@ digraph G {
 "benoitsteiner/tensorflow-opencl" -> "ROCm/MIOpen"
 "benoitsteiner/tensorflow-opencl" -> "CNugteren/CLBlast"
 "benoitsteiner/tensorflow-opencl" -> "codeplaysoftware/tensorflow"
+"intel/gvt-linux" -> "ROCm/ROCK-Kernel-Driver" ["e"=1]
 "tsl0922/pytorch-gfx803" -> "xuhuisheng/rocm-gfx803"
 "tsl0922/pytorch-gfx803" -> "ulyssesrr/docker-rocm-xtra"
+"YellowRoseCx/koboldcpp-rocm" -> "nktice/AMD-AI" ["e"=1]
+"YellowRoseCx/koboldcpp-rocm" -> "ROCm/flash-attention" ["e"=1]
 "ROCm/amdsmi" -> "ROCm/hipTensor"
 "ROCm/amdsmi" -> "ROCm/rocm_smi_lib"
+"amd/RyzenAI-SW" -> "ROCm/composable_kernel" ["e"=1]
+"amd/RyzenAI-SW" -> "ROCm/rocm-examples" ["e"=1]
 "vtsynergy/OpenDwarfs" -> "KastnerRG/spector"
 "hughperkins/coriander" -> "hughperkins/tf-coriander"
 "hughperkins/coriander" -> "vtsynergy/CU2CL"
@@ -1382,6 +1509,8 @@ digraph G {
 "ROCm/clr" -> "ROCm/hipamd"
 "ROCm/clr" -> "ROCm/rocprofiler"
 "ROCm/clr" -> "ROCm/HIPCC"
+"intel/intel-xpu-backend-for-triton" -> "intel/pti-gpu" ["e"=1]
+"intel/intel-xpu-backend-for-triton" -> "oneapi-src/SYCLomatic" ["e"=1]
 "codeplaysoftware/portBLAS" -> "codeplaysoftware/portDNN"
 "codeplaysoftware/portBLAS" -> "codeplaysoftware/computecpp-sdk"
 "codeplaysoftware/portBLAS" -> "KhronosGroup/SYCL-Docs"
@@ -1445,11 +1574,19 @@ digraph G {
 "hughperkins/tf-coriander" -> "ROCmSoftwarePlatform/tensorflow"
 "hughperkins/tf-coriander" -> "triSYCL/triSYCL"
 "hughperkins/tf-coriander" -> "plaidml/plaidml" ["e"=1]
+"xtensor-stack/xtensor" -> "arrayfire/arrayfire" ["e"=1]
+"conradsnicta/armadillo-code" -> "viennacl/viennacl-dev" ["e"=1]
+"KhronosGroup/OpenGL-Registry" -> "KhronosGroup/OpenCL-Headers" ["e"=1]
+"lamikr/rocm_sdk_builder" -> "ROCm/aiter" ["e"=1]
+"eyalroz/cuda-api-wrappers" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
 "HiPerCoRe/KTT" -> "CNugteren/CLTune"
 "KhronosGroup/OpenCL-Registry" -> "KhronosGroup/OpenCL-CTS"
 "KhronosGroup/OpenCL-Registry" -> "KhronosGroup/OpenCL-Docs"
 "KastnerRG/spector" -> "KastnerRG/Spector-HLS"
 "KastnerRG/spector" -> "fpga-opencl-benchmarks/rodinia_fpga"
+"intel/intel-npu-acceleration-library" -> "oneapi-src/SYCLomatic" ["e"=1]
+"intel/intel-npu-acceleration-library" -> "oneapi-src/level-zero" ["e"=1]
+"KhronosGroup/EGL-Registry" -> "KhronosGroup/OpenCL-Registry" ["e"=1]
 "hughperkins/EasyCL" -> "skelcl/skelcl"
 "intel/libva-utils" -> "intel/libva"
 "intel/libva-utils" -> "intel/intel-vaapi-driver"
@@ -1468,12 +1605,15 @@ digraph G {
 "enjalot/adventures_in_opencl" -> "hughperkins/EasyCL"
 "ROCm/MAD" -> "ROCm/Megatron-LM"
 "woodrex83/ROCm-For-RX580" -> "ulyssesrr/docker-rocm-xtra"
+"FFTW/fftw3" -> "arrayfire/arrayfire" ["e"=1]
+"intel/AI-Playground" -> "oneapi-src/SYCLomatic" ["e"=1]
 "ROCm/aiter" -> "ROCm/composable_kernel"
 "ROCm/aiter" -> "ROCm/hipBLASLt"
 "ROCm/aiter" -> "ROCm/triton"
 "ROCm/aiter" -> "ROCm/rocmProfileData"
 "ROCm/aiter" -> "ROCm/Tensile"
 "ROCm/aiter" -> "ROCm/flash-attention"
+"pytorch/gloo" -> "uxlfoundation/oneCCL" ["e"=1]
 "boostorg/compute" -> "ddemidov/vexcl"
 "boostorg/compute" -> "KhronosGroup/SyclParallelSTL"
 "boostorg/compute" -> "arrayfire/arrayfire"
@@ -1521,6 +1661,7 @@ digraph G {
 "ROCm/ROCm-OpenCL-Runtime" -> "ROCm/rocFFT"
 "ROCm/ROCm-OpenCL-Runtime" -> "ROCm/hcc"
 "ROCm/ROCm-OpenCL-Runtime" -> "ROCm/ROCK-Kernel-Driver"
+"realitix/vulkan" -> "inducer/pyopencl" ["e"=1]
 "Intel-Media-SDK/MediaSDK" -> "intel/libva"
 "Intel-Media-SDK/MediaSDK" -> "intel/media-driver"
 "Intel-Media-SDK/MediaSDK" -> "intel/libvpl"
@@ -1564,6 +1705,7 @@ digraph G {
 "viennacl/viennacl-dev" -> "CNugteren/CLBlast"
 "mathmanu/caffe-jacinto-models" -> "mathmanu/caffe-jacinto"
 "mathmanu/caffe-jacinto-models" -> "TexasInstruments/jacinto-ai-devkit"
+"lebedov/scikit-cuda" -> "inducer/pyopencl" ["e"=1]
 "ROCm/MIOpen" -> "ROCm/rocBLAS"
 "ROCm/MIOpen" -> "ROCm/Tensile"
 "ROCm/MIOpen" -> "ROCm/hcc"
@@ -1609,6 +1751,7 @@ digraph G {
 "KhronosGroup/OpenCL-CTS" -> "KhronosGroup/OpenCL-Headers"
 "KhronosGroup/OpenCL-CTS" -> "kpet/clvk"
 "KhronosGroup/OpenCL-CTS" -> "KhronosGroup/libclcxx"
+"Erkaman/vulkan_minimal_compute" -> "google/clspv" ["e"=1]
 "ROCm/rocm-cmake" -> "ROCm/hipBLAS"
 "ROCm/rocm-cmake" -> "ROCm/hipCUB"
 "ROCm/rocRAND" -> "ROCm/rocPRIM"
@@ -1621,6 +1764,7 @@ digraph G {
 "ROCm/rocRAND" -> "ROCm/hipSPARSE"
 "ROCm/rocRAND" -> "ROCm/rocm-cmake"
 "ROCm/rocRAND" -> "ROCm/rocBLAS"
+"NVIDIA/jitify" -> "ROCm/rocPRIM" ["e"=1]
 "KhronosGroup/OpenCL-Docs" -> "KhronosGroup/OpenCL-CTS"
 "KhronosGroup/OpenCL-Docs" -> "KhronosGroup/OpenCL-Registry"
 "KhronosGroup/OpenCL-Docs" -> "KhronosGroup/OpenCL-Headers"
@@ -1636,32 +1780,43 @@ digraph G {
 "KhronosGroup/OpenCL-Docs" -> "pocl/pocl"
 "KhronosGroup/OpenCL-Docs" -> "intel/intel-graphics-compiler"
 "KhronosGroup/OpenCL-Docs" -> "KhronosGroup/SPIRV-Headers" ["e"=1]
+"pghysels/STRUMPACK" -> "ROCm/rocALUTION" ["e"=1]
 "rsnemmen/OpenCL-examples" -> "Dakkers/OpenCL-examples"
 "rsnemmen/OpenCL-examples" -> "michel-meneses/great-opencl-examples"
 "rsnemmen/OpenCL-examples" -> "sschaetz/nvidia-opencl-examples"
 "rsnemmen/OpenCL-examples" -> "bgaster/opencl-book-samples"
 "rsnemmen/OpenCL-examples" -> "KhronosGroup/OpenCL-Guide"
+"IntelPython/sdc" -> "uxlfoundation/oneDAL" ["e"=1]
+"GPUOpen-Tools/radeon_gpu_profiler" -> "ROCm/ROCK-Kernel-Driver" ["e"=1]
 "OpenACCUserGroup/OpenACCV-V" -> "llvm-doe-org/llvm-project"
 "ROCm/hipDNN" -> "rocmarchive/realcaffe2"
+"intel/ai-reference-models" ["l"="64.218,-2.477", "c"=1153]
+"uxlfoundation/oneCCL" ["l"="64.165,-1.916"]
+"oneapi-src/oneAPI-samples" ["l"="64.161,-1.972"]
+"intel/pti-gpu" ["l"="64.172,-1.99"]
 "inducer/pyopencl" ["l"="64.342,-2.11"]
-"inducer/pycuda" ["l"="36.665,0.84"]
+"inducer/pycuda" ["l"="36.665,0.84", "c"=112]
 "jrprice/Oclgrind" ["l"="64.25,-2.052"]
 "HandsOnOpenCL/Exercises-Solutions" ["l"="64.31,-2.127"]
-"inducer/loopy" ["l"="37.033,0.971"]
+"inducer/loopy" ["l"="37.033,0.971", "c"=112]
 "CNugteren/CLBlast" ["l"="64.293,-2.058"]
 "hughperkins/DeepCL" ["l"="64.334,-2.04"]
 "benshope/PyOpenCL-Tutorial" ["l"="64.396,-2.136"]
 "pocl/pocl" ["l"="64.266,-2.044"]
 "fjarri/reikna" ["l"="64.415,-2.174"]
 "clMathLibraries/clBLAS" ["l"="64.314,-2.052"]
-"realitix/vulkan" ["l"="59.381,34.085"]
+"realitix/vulkan" ["l"="59.381,34.085", "c"=699]
 "Oblomov/clinfo" ["l"="64.277,-2.074"]
 "HandsOnOpenCL/Lecture-Slides" ["l"="64.354,-2.16"]
 "enjalot/adventures_in_opencl" ["l"="64.369,-2.135"]
 "KhronosGroup/OpenCL-Headers" ["l"="64.286,-2.088"]
+"plaidml/plaidml" ["l"="37.251,0.947", "c"=112]
+"hughperkins/tf-coriander" ["l"="64.324,-1.956"]
+"ROCm/ROCm" ["l"="64.289,-1.821"]
+"ROCm/hip" ["l"="64.264,-1.882"]
 "KhronosGroup/SPIRV-LLVM-Translator" ["l"="64.211,-2.051"]
-"KhronosGroup/SPIRV-Tools" ["l"="-23.438,-27.676"]
-"KhronosGroup/SPIRV-Headers" ["l"="-23.479,-27.73"]
+"KhronosGroup/SPIRV-Tools" ["l"="-23.438,-27.676", "c"=26]
+"KhronosGroup/SPIRV-Headers" ["l"="-23.479,-27.73", "c"=26]
 "google/clspv" ["l"="64.232,-2.061"]
 "KhronosGroup/LLVM-SPIRV-Backend" ["l"="64.153,-2.125"]
 "intel/intel-graphics-compiler" ["l"="64.235,-2.001"]
@@ -1670,10 +1825,10 @@ digraph G {
 "intel/opencl-clang" ["l"="64.259,-2.008"]
 "LunarG/LunarGLASS" ["l"="64.28,-1.994"]
 "KhronosGroup/OpenCL-Docs" ["l"="64.255,-2.065"]
-"KhronosGroup/SPIRV-Cross" ["l"="-23.405,-27.639"]
+"KhronosGroup/SPIRV-Cross" ["l"="-23.405,-27.639", "c"=26]
 "triSYCL/triSYCL" ["l"="64.243,-2.023"]
 "kpet/clvk" ["l"="64.209,-2.085"]
-"KhronosGroup/SPIRV-Registry" ["l"="-23.504,-27.755"]
+"KhronosGroup/SPIRV-Registry" ["l"="-23.504,-27.755", "c"=26]
 "intel/llvm" ["l"="64.202,-1.989"]
 "KhronosGroup/SyclParallelSTL" ["l"="64.229,-2.018"]
 "triSYCL/sycl" ["l"="64.167,-2.047"]
@@ -1686,38 +1841,47 @@ digraph G {
 "intel/opencl-intercept-layer" ["l"="64.222,-2.044"]
 "KhronosGroup/libclcxx" ["l"="64.282,-2.041"]
 "ROCm/hcc" ["l"="64.23,-1.868"]
-"UoB-HPC/BabelStream" ["l"="63.23,-1.369"]
+"UoB-HPC/BabelStream" ["l"="63.23,-1.369", "c"=175]
+"spack/spack" ["l"="7.097,-13.734", "c"=893]
+"flame/blis" ["l"="37.113,0.808", "c"=112]
+"flashlight/flashlight" ["l"="47.672,29.267", "c"=89]
+"arrayfire/arrayfire" ["l"="64.369,-1.965"]
+"boostorg/hana" ["l"="-19.845,-26.171", "c"=10]
+"boostorg/compute" ["l"="64.303,-2.033"]
 "clMathLibraries/clFFT" ["l"="64.318,-2.069"]
 "clMathLibraries/clSPARSE" ["l"="64.34,-2.021"]
 "clMathLibraries/clRNG" ["l"="64.352,-2.062"]
 "viennacl/viennacl-dev" ["l"="64.357,-2.038"]
 "amd/OpenCL-caffe" ["l"="64.359,-2.01"]
 "krrishnarraj/clpeak" ["l"="64.233,-2.075"]
-"boostorg/compute" ["l"="64.303,-2.033"]
 "CNugteren/CLTune" ["l"="64.247,-2.099"]
 "CNugteren/myGEMM" ["l"="64.291,-2.108"]
 "ddemidov/vexcl" ["l"="64.32,-2.016"]
 "codeplaysoftware/portBLAS" ["l"="64.206,-2.007"]
-"oneapi-src/oneAPI-samples" ["l"="64.161,-1.972"]
+"libav/libav" ["l"="-38.33,20.836", "c"=853]
+"intel/libva" ["l"="64.382,-1.894"]
 "intel/compute-runtime" ["l"="64.26,-1.983"]
 "uxlfoundation/oneDPL" ["l"="64.191,-1.959"]
 "Apress/data-parallel-CPP" ["l"="64.162,-2.01"]
 "uxlfoundation/oneMath" ["l"="64.167,-1.95"]
 "oneapi-src/level-zero" ["l"="64.182,-1.977"]
+"RRZE-HPC/gpu-benches" ["l"="36.839,0.972", "c"=112]
+"ekondis/mixbench" ["l"="64.154,-1.996"]
 "KhronosGroup/OpenCL-ICD-Loader" ["l"="64.27,-2.061"]
 "KhronosGroup/OpenCL-CLHPP" ["l"="64.26,-2.078"]
-"kokkos/kokkos" ["l"="63.141,-1.443"]
-"ROCm/hip" ["l"="64.264,-1.882"]
-"NVIDIA/cccl" ["l"="36.699,0.959"]
+"kokkos/kokkos" ["l"="63.141,-1.443", "c"=175]
+"NVIDIA/cccl" ["l"="36.699,0.959", "c"=112]
 "celerity/celerity-runtime" ["l"="64.165,-2.027"]
-"LLNL/RAJA" ["l"="63.182,-1.42"]
-"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088"]
+"LLNL/RAJA" ["l"="63.182,-1.42", "c"=175]
+"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088", "c"=10]
+"microsoft/DirectML" ["l"="-23.409,-27.774", "c"=26]
+"jgbit/vuda" ["l"="-23.343,-27.682", "c"=26]
+"google/uVkCompute" ["l"="64.135,-2.201"]
 "intel/compute-samples" ["l"="64.238,-2.045"]
 "intel/gmmlib" ["l"="64.304,-1.942"]
 "intel/media-driver" ["l"="64.333,-1.922"]
 "intel/cm-compiler" ["l"="64.247,-1.962"]
-"uxlfoundation/oneDNN" ["l"="37.195,0.838"]
-"intel/pti-gpu" ["l"="64.172,-1.99"]
+"uxlfoundation/oneDNN" ["l"="37.195,0.838", "c"=112]
 "Intel-Media-SDK/MediaSDK" ["l"="64.357,-1.901"]
 "ROCm/pytorch" ["l"="64.245,-1.795"]
 "ROCm/tensorflow-upstream" ["l"="64.263,-1.848"]
@@ -1731,6 +1895,11 @@ digraph G {
 "ROCm/ROCm-docker" ["l"="64.229,-1.829"]
 "ROCm/ROCmValidationSuite" ["l"="64.277,-1.765"]
 "ROCm/MIOpen" ["l"="64.247,-1.82"]
+"uxlfoundation/scikit-learn-intelex" ["l"="45.321,26.207", "c"=68]
+"uxlfoundation/oneDAL" ["l"="64.15,-1.932"]
+"IntelPython/scikit-learn_bench" ["l"="64.099,-1.929"]
+"IntelPython/dpctl" ["l"="64.106,-1.906"]
+"eigenteam/eigen-git-mirror" ["l"="59.233,10.862", "c"=87]
 "ROCm/MIVisionX" ["l"="64.058,-1.69"]
 "ROCm/rpp" ["l"="64.052,-1.657"]
 "GPUOpen-ProfessionalCompute-Libraries/amdovx-core" ["l"="64.008,-1.661"]
@@ -1739,16 +1908,17 @@ digraph G {
 "ROCm/ROCm-Device-Libs" ["l"="64.188,-1.795"]
 "KhronosGroup/NNEF-Tools" ["l"="64.025,-1.697"]
 "KhronosGroup/OpenVX-sample-impl" ["l"="63.965,-1.644"]
-"intel/libva" ["l"="64.382,-1.894"]
 "intel/libva-utils" ["l"="64.369,-1.919"]
 "intel/intel-vaapi-driver" ["l"="64.405,-1.904"]
 "intel/libvpl" ["l"="64.33,-1.885"]
 "intel/vpl-gpu-rt" ["l"="64.364,-1.872"]
-"GStreamer/gstreamer-vaapi" ["l"="63.541,-13.808"]
+"GStreamer/gstreamer-vaapi" ["l"="63.541,-13.808", "c"=524]
 "intel/libyami" ["l"="64.453,-1.897"]
 "intel/libyami-utils" ["l"="64.428,-1.892"]
-"i-rinat/libvdpau-va-gl" ["l"="-32.143,-24.473"]
+"i-rinat/libvdpau-va-gl" ["l"="-32.143,-24.473", "c"=533]
 "intel/cartwheel-ffmpeg" ["l"="64.415,-1.86"]
+"ginkgo-project/ginkgo" ["l"="63.135,-1.514", "c"=175]
+"ROCm/rocALUTION" ["l"="64.263,-1.758"]
 "ROCm/rocThrust" ["l"="64.247,-1.741"]
 "ROCm/hipCUB" ["l"="64.243,-1.773"]
 "ROCm/rocPRIM" ["l"="64.232,-1.786"]
@@ -1756,26 +1926,25 @@ digraph G {
 "ROCm/hipRAND" ["l"="64.291,-1.718"]
 "ROCm/roctracer" ["l"="64.222,-1.728"]
 "ROCm/hipSOLVER" ["l"="64.274,-1.739"]
-"ROCm/rocALUTION" ["l"="64.263,-1.758"]
 "ROCm/hipBLAS" ["l"="64.222,-1.755"]
 "ROCm/hipSPARSE" ["l"="64.228,-1.742"]
 "ROCm/rocSOLVER" ["l"="64.236,-1.749"]
 "ROCm/hipFFT" ["l"="64.252,-1.752"]
 "ROCm/rocm_smi_lib" ["l"="64.262,-1.786"]
 "ROCm/amdsmi" ["l"="64.289,-1.748"]
-"ROCm/ROC-smi" ["l"="-20.541,5.842"]
+"ROCm/ROC-smi" ["l"="-20.541,5.842", "c"=163]
 "ROCm/ROCR-Runtime" ["l"="64.212,-1.81"]
 "ROCm/ROCm-CompilerSupport" ["l"="64.181,-1.806"]
-"uxlfoundation/oneDAL" ["l"="64.15,-1.932"]
-"uxlfoundation/oneTBB" ["l"="-19.813,-25.686"]
+"shiguredo/momo" ["l"="63.316,-14.024", "c"=524]
+"uxlfoundation/oneTBB" ["l"="-19.813,-25.686", "c"=10]
 "oneapi-src/SYCLomatic" ["l"="64.135,-1.986"]
-"uxlfoundation/oneCCL" ["l"="64.165,-1.916"]
 "ROCm/rocHPCG" ["l"="64.334,-1.724"]
 "KhronosGroup/SYCL-CTS" ["l"="64.135,-2.037"]
 "ORNL/cpp-proposals-pub" ["l"="64.118,-2.038"]
 "tadeaustria/llvm" ["l"="64.113,-2.059"]
 "triSYCL/path_tracer" ["l"="64.114,-2.076"]
 "intel/fpga-training" ["l"="64.124,-2.088"]
+"OpenVisualCloud/SVT-HEVC" ["l"="-38.214,20.798", "c"=853]
 "ROCm/llvm-project" ["l"="64.175,-1.769"]
 "ROCm/clr" ["l"="64.168,-1.796"]
 "ROCm/aomp" ["l"="64.211,-1.741"]
@@ -1783,10 +1952,13 @@ digraph G {
 "ROCm/rocprofiler-compute" ["l"="64.196,-1.735"]
 "ROCm/rocWMMA" ["l"="64.175,-1.739"]
 "ROCm/ROCT-Thunk-Interface" ["l"="64.185,-1.824"]
-"ROCm/rocMLIR" ["l"="37.179,1.07"]
+"ROCm/rocMLIR" ["l"="37.179,1.07", "c"=112]
 "ROCm/ROCgdb" ["l"="64.155,-1.7"]
+"dlstreamer/dlstreamer" ["l"="64.314,-2.574", "c"=1153]
 "OCL-dev/ocl-icd" ["l"="64.317,-2.102"]
+"doe300/VC4CL" ["l"="42.879,7.815", "c"=818]
 "intel/clGPU" ["l"="64.204,-2.068"]
+"ivan-vasilev/neuralnetworks" ["l"="-2.267,17.522", "c"=455]
 "KhronosGroup/openvx-samples" ["l"="63.955,-1.62"]
 "rgiduthuri/openvx_tutorial" ["l"="63.978,-1.625"]
 "KhronosGroup/OpenVX-api-docs" ["l"="63.943,-1.649"]
@@ -1798,17 +1970,18 @@ digraph G {
 "ROCm-Developer-Tools/llvm-project" ["l"="64.205,-1.687"]
 "ROCm/HIP-Examples" ["l"="64.196,-1.81"]
 "llvm-doe-org/llvm-project" ["l"="64.154,-1.685"]
-"glitchdotcom/Glitch-Community" ["l"="-51.562,7.112"]
-"kaniini/antissh" ["l"="-51.559,7.092"]
-"directus/v8-archive" ["l"="-51.56,7.068"]
+"vgvassilev/cling" ["l"="-19.983,-26.03", "c"=10]
+"glitchdotcom/Glitch-Community" ["l"="-51.562,7.112", "c"=682]
+"kaniini/antissh" ["l"="-51.559,7.092", "c"=682]
+"directus/v8-archive" ["l"="-51.56,7.068", "c"=682]
 "intel/media-delivery" ["l"="64.347,-1.863"]
-"minerva-ml/open-solution-home-credit" ["l"="-51.525,7.077"]
+"minerva-ml/open-solution-home-credit" ["l"="-51.525,7.077", "c"=682]
 "intel/intel-hybrid-driver" ["l"="64.453,-1.874"]
 "ROCm/ROCclr" ["l"="64.172,-1.814"]
 "ROCm/hipamd" ["l"="64.178,-1.783"]
 "HandsOnOpenCL/HandsOnOpenCL.github.io" ["l"="64.35,-2.18"]
 "bgaster/opencl-book-samples" ["l"="64.318,-2.154"]
-"PabloVallejo/python-exercises" ["l"="45.567,19.43"]
+"PabloVallejo/python-exercises" ["l"="45.567,19.43", "c"=1169]
 "Dakkers/OpenCL-examples" ["l"="64.304,-2.188"]
 "rsnemmen/OpenCL-examples" ["l"="64.291,-2.173"]
 "bashbaug/SimpleOpenCLSamples" ["l"="64.238,-2.109"]
@@ -1820,39 +1993,38 @@ digraph G {
 "ROCmSoftwarePlatform/hiptensorflow" ["l"="64.304,-1.908"]
 "rocmarchive/realcaffe2" ["l"="64.328,-1.838"]
 "lukeiwanski/tensorflow" ["l"="64.304,-1.922"]
-"Themaister/GLFFT" ["l"="38.046,5.402"]
+"Themaister/GLFFT" ["l"="38.046,5.402", "c"=65]
 "hughperkins/EasyCL" ["l"="64.369,-2.05"]
+"Glavnokoman/vuh" ["l"="-23.253,-27.646", "c"=26]
 "VeriSilicon/acuity-models" ["l"="63.897,-1.612"]
 "VeriSilicon/acuitylite" ["l"="63.903,-1.63"]
-"ekondis/mixbench" ["l"="64.154,-1.996"]
-"MegEngine/MegPeak" ["l"="37.08,0.84"]
+"MegEngine/MegPeak" ["l"="37.08,0.84", "c"=112]
 "ekondis/gpumembench" ["l"="64.147,-2.054"]
 "krrishnarraj/libopencl-stub" ["l"="64.205,-2.147"]
 "CHIP-SPV/chipStar" ["l"="64.151,-2.084"]
 "ROCm/rccl-tests" ["l"="64.266,-1.693"]
-"microsoft/msccl" ["l"="1.972,14.532"]
-"microsoft/NPKit" ["l"="1.996,14.528"]
+"microsoft/msccl" ["l"="1.972,14.532", "c"=572]
+"microsoft/NPKit" ["l"="1.996,14.528", "c"=572]
 "ROCm/Tensile" ["l"="64.201,-1.765"]
-"microsoft/msccl-tools" ["l"="1.986,14.544"]
-"microsoft/mscclpp" ["l"="2.009,14.543"]
+"microsoft/msccl-tools" ["l"="1.986,14.544", "c"=572]
+"microsoft/mscclpp" ["l"="2.009,14.543", "c"=572]
 "benoitsteiner/tensorflow-opencl" ["l"="64.306,-1.967"]
 "ROCm/TransferBench" ["l"="64.291,-1.656"]
 "cpc/hipcl" ["l"="64.128,-2.065"]
 "insieme/insieme" ["l"="64.103,-2.025"]
+"GPUOpen-Drivers/pal" ["l"="-23.439,-27.779", "c"=26]
 "ROCm/composable_kernel" ["l"="64.195,-1.714"]
 "ROCm/rocm-cmake" ["l"="64.208,-1.776"]
-"IntelPython/scikit-learn_bench" ["l"="64.099,-1.929"]
+"NERSC/timemory" ["l"="63.206,-1.352", "c"=175]
+"ROCm/omnitrace" ["l"="64.221,-1.7"]
 "google/amber" ["l"="64.123,-2.245"]
-"google/uVkCompute" ["l"="64.135,-2.201"]
-"jgbit/vuda" ["l"="-23.343,-27.682"]
-"Glavnokoman/vuh" ["l"="-23.253,-27.646"]
 "nihui/vkpeak" ["l"="64.154,-2.18"]
 "ProjectPhysX/OpenCL-Benchmark" ["l"="64.229,-2.177"]
-"ROCm/ROCm" ["l"="64.289,-1.821"]
 "RadeonOpenCompute/ROCm_Documentation" ["l"="64.23,-1.806"]
-"hughperkins/tf-coriander" ["l"="64.324,-1.956"]
 "zjin-lcf/HeCBench" ["l"="64.15,-2.018"]
-"GPUOpen-Tools/radeon_compute_profiler" ["l"="-23.412,-27.822"]
+"aws/aws-ofi-nccl" ["l"="1.983,14.48", "c"=572]
+"NVIDIA/video-sdk-samples" ["l"="-55.787,8.866", "c"=558]
+"GPUOpen-Tools/radeon_compute_profiler" ["l"="-23.412,-27.822", "c"=26]
 "codeplaysoftware/portDNN" ["l"="64.185,-2.045"]
 "codeplaysoftware/SYCL-ML" ["l"="64.165,-2.067"]
 "codeplaysoftware/tensorflow" ["l"="64.242,-1.98"]
@@ -1863,7 +2035,7 @@ digraph G {
 "intel/llvm-patches" ["l"="64.279,-1.96"]
 "intel/ffmpeg_libyami" ["l"="64.497,-1.889"]
 "intel/vc-intrinsics" ["l"="64.259,-1.928"]
-"intel/xetla" ["l"="37.191,1.166"]
+"intel/xetla" ["l"="37.191,1.166", "c"=112]
 "intel/llvm-test-suite" ["l"="64.24,-1.929"]
 "intel/code-base-investigator" ["l"="64.093,-1.976"]
 "UoB-HPC/performance-portability" ["l"="64.059,-1.962"]
@@ -1872,60 +2044,68 @@ digraph G {
 "NVIDIA/WebGL" ["l"="64.089,-1.498"]
 "NVIDIA/webgl-path-tracing" ["l"="64.097,-1.524"]
 "NVIDIA/gef-nsight" ["l"="64.093,-1.474"]
-"arrayfire/arrayfire" ["l"="64.369,-1.965"]
-"flashlight/flashlight" ["l"="47.672,29.267"]
-"NVIDIA/thrust" ["l"="36.687,0.901"]
-"arrayfire/arrayfire-rust" ["l"="-8.207,-4.463"]
-"xtensor-stack/xtensor" ["l"="-19.991,-25.883"]
-"arrayfire/arrayfire-python" ["l"="-8.113,-4.585"]
-"NVIDIA/cub" ["l"="36.72,0.942"]
-"halide/Halide" ["l"="37.107,0.89"]
-"mlpack/mlpack" ["l"="47.673,29.17"]
-"xtensor-stack/xsimd" ["l"="-19.688,-26.103"]
-"VcDevel/Vc" ["l"="-19.678,-26.176"]
+"alpaka-group/alpaka" ["l"="63.216,-1.399", "c"=175]
+"intel/libxcam" ["l"="-34.643,22.349", "c"=429]
+"NVIDIA/thrust" ["l"="36.687,0.901", "c"=112]
+"arrayfire/arrayfire-rust" ["l"="-8.207,-4.463", "c"=407]
+"xtensor-stack/xtensor" ["l"="-19.991,-25.883", "c"=10]
+"arrayfire/arrayfire-python" ["l"="-8.113,-4.585", "c"=407]
+"NVIDIA/cub" ["l"="36.72,0.942", "c"=112]
+"halide/Halide" ["l"="37.107,0.89", "c"=112]
+"mlpack/mlpack" ["l"="47.673,29.17", "c"=89]
+"xtensor-stack/xsimd" ["l"="-19.688,-26.103", "c"=10]
+"VcDevel/Vc" ["l"="-19.678,-26.176", "c"=10]
+"vosen/ZLUDA" ["l"="37.303,1.495", "c"=112]
 "uxlfoundation/oneAPI-spec" ["l"="64.118,-1.983"]
 "oneapi-src/oneAPI-tab" ["l"="64.058,-1.999"]
 "oneapi-src/oneapi-ci" ["l"="64.114,-1.96"]
 "uxlfoundation/foundation" ["l"="64.05,-1.977"]
 "uxlfoundation/oneapi-construction-kit" ["l"="64.093,-2.044"]
 "oneapi-src/level-zero-tests" ["l"="64.137,-1.957"]
+"NVIDIA/libcudacxx" ["l"="36.656,0.981", "c"=112]
+"DTolm/VkFFT" ["l"="-23.382,-27.671", "c"=26]
 "KhronosGroup/OpenCL-SDK" ["l"="64.264,-2.095"]
 "KhronosGroup/OpenCL-Guide" ["l"="64.277,-2.13"]
 "ProjectPhysX/OpenCL-Wrapper" ["l"="64.257,-2.154"]
-"xiaoweiChen/Heterogeneous-Computing-with-OpenCL-2.0" ["l"="-18.672,-27.923"]
+"breagen/MachSuite" ["l"="31.04,-2.829", "c"=1037]
+"KastnerRG/spector" ["l"="63.971,-2.184"]
+"libxsmm/libxsmm" ["l"="37.11,0.835", "c"=112]
+"DrTimothyAldenDavis/SuiteSparse" ["l"="63.043,-1.556", "c"=175]
+"KomputeProject/kompute" ["l"="-23.368,-27.623", "c"=26]
+"intel/intel-extension-for-pytorch" ["l"="64.147,-2.455", "c"=1153]
+"xiaoweiChen/Heterogeneous-Computing-with-OpenCL-2.0" ["l"="-18.672,-27.923", "c"=62]
 "michel-meneses/great-opencl-examples" ["l"="64.276,-2.197"]
 "xuhuisheng/rocm-build" ["l"="64.358,-1.591"]
 "xuhuisheng/rocm-gfx803" ["l"="64.392,-1.549"]
 "Grench6/RX580-rocM-tensorflow-ubuntu20.4-guide" ["l"="64.374,-1.552"]
-"IntelPython/dpctl" ["l"="64.106,-1.906"]
 "IntelPython/numba-dpex" ["l"="64.092,-1.888"]
 "IntelPython/dpnp" ["l"="64.123,-1.908"]
 "IntelPython/dpbench" ["l"="64.072,-1.885"]
 "soda-inria/sklearn-numba-dpex" ["l"="64.065,-1.904"]
+"dimagi/commcare-hq" ["l"="-51.58,7.092", "c"=682]
 "ROCm/HIPIFY" ["l"="64.194,-1.783"]
 "ROCm/rocm-examples" ["l"="64.182,-1.756"]
-"intel/intel-xpu-backend-for-triton" ["l"="37.166,1.139"]
-"intel/mlir-extensions" ["l"="37.188,1.113"]
-"intel/xpumanager" ["l"="63.973,-2.549"]
-"intel/torch-ccl" ["l"="64.215,-2.409"]
-"kokkos/kokkos-kernels" ["l"="63.164,-1.424"]
-"libxsmm/libxsmm" ["l"="37.11,0.835"]
+"ofiwg/libfabric" ["l"="1.961,14.418", "c"=572]
+"intel/intel-xpu-backend-for-triton" ["l"="37.166,1.139", "c"=112]
+"intel/mlir-extensions" ["l"="37.188,1.113", "c"=112]
+"intel/xpumanager" ["l"="63.973,-2.549", "c"=1153]
+"intel/torch-ccl" ["l"="64.215,-2.409", "c"=1153]
+"kokkos/kokkos-kernels" ["l"="63.164,-1.424", "c"=175]
 "rocm-arch/rocm-arch" ["l"="64.27,-1.722"]
-"arch4edu/arch4edu" ["l"="21.032,3.488"]
+"arch4edu/arch4edu" ["l"="21.032,3.488", "c"=852]
 "rocm-arch/tensorflow-rocm" ["l"="64.306,-1.697"]
 "rocm-arch/python-pytorch-rocm" ["l"="64.294,-1.688"]
 "codeplaysoftware/SYCL-For-CUDA-Examples" ["l"="64.184,-1.923"]
 "jeffhammond/dpcpp-tutorial" ["l"="64.151,-2.037"]
 "unisa-hpc/sycl-bench" ["l"="64.128,-2.016"]
 "oneapi-src/oneVPL-cpu" ["l"="64.364,-1.85"]
-"intel/ai-reference-models" ["l"="64.218,-2.477"]
-"intel/intel-extension-for-pytorch" ["l"="64.147,-2.455"]
 "hughperkins/cltorch" ["l"="64.385,-2.014"]
 "hughperkins/coriander" ["l"="64.327,-1.986"]
 "intel/clDNN" ["l"="64.228,-2.093"]
-"Samsung/veles" ["l"="57.72,23.554"]
+"Samsung/veles" ["l"="57.72,23.554", "c"=161]
 "hughperkins/distro-cl" ["l"="64.378,-1.994"]
-"Maratyszcza/NNPACK" ["l"="37.154,0.787"]
+"Maratyszcza/NNPACK" ["l"="37.154,0.787", "c"=112]
+"shinpei0208/gdev" ["l"="7.417,-11.263", "c"=515]
 "intel/FPGA-Devcloud" ["l"="63.913,-2.065"]
 "fpgacademy/DESim" ["l"="63.879,-2.062"]
 "ARC-Lab-UF/intel-training-modules" ["l"="63.858,-2.088"]
@@ -1935,11 +2115,14 @@ digraph G {
 "mathmanu/caffe-jacinto" ["l"="63.862,-1.433"]
 "TexasInstruments/edgeai" ["l"="63.882,-1.488"]
 "TexasInstruments/tvm" ["l"="63.886,-1.442"]
-"openvinotoolkit/npu_compiler" ["l"="64.055,-2.443"]
+"NVlabs/NVBit" ["l"="30.968,-2.981", "c"=1037]
+"utcs-scea/altis" ["l"="64.018,-2.075"]
+"microsoft/tensorflow-directml" ["l"="-23.48,-27.864", "c"=26]
+"openvinotoolkit/npu_compiler" ["l"="64.055,-2.443", "c"=1153]
 "OpenACCUserGroup/OpenACCV-V" ["l"="64.133,-1.667"]
 "oneapi-src/level-zero-spec" ["l"="64.087,-1.952"]
 "intel/MLSL" ["l"="64.127,-1.887"]
-"Mellanox/nccl-rdma-sharp-plugins" ["l"="1.976,14.5"]
+"Mellanox/nccl-rdma-sharp-plugins" ["l"="1.976,14.5", "c"=572]
 "merthidayetoglu/HiCCL" ["l"="64.083,-1.905"]
 "HiPerCoRe/KTT" ["l"="64.223,-2.146"]
 "KernelTuner/kernel_tuner" ["l"="64.184,-2.164"]
@@ -1950,136 +2133,156 @@ digraph G {
 "codeplaysoftware/sycl-for-cuda" ["l"="64.16,-1.888"]
 "NVIDIA/nvidia-query-resource-opengl" ["l"="64.107,-1.501"]
 "NVIDIA/three.js" ["l"="64.075,-1.477"]
+"rose-compiler/rose" ["l"="-22.073,-18.657", "c"=763]
+"vetter/shoc" ["l"="64.082,-2.092"]
 "jeffbolznv/vk_cooperative_matrix_perf" ["l"="64.094,-2.234"]
+"PX4/eigen" ["l"="-19.142,-25.98", "c"=10]
+"NVIDIA/caffe" ["l"="51.536,33.367", "c"=354]
+"NVIDIA/nvbench" ["l"="36.75,0.982", "c"=112]
 "TexasInstruments/edgeai-tidl-tools" ["l"="63.904,-1.517"]
 "TexasInstruments/edgeai-benchmark" ["l"="63.9,-1.494"]
 "TexasInstruments/edgeai-modelzoo" ["l"="63.885,-1.507"]
 "TexasInstruments/edgeai-torchvision" ["l"="63.865,-1.504"]
 "TexasInstruments/edgeai-tensorlab" ["l"="63.927,-1.494"]
 "nihui/ncnn-android-vkpeak" ["l"="64.15,-2.22"]
+"cplussharp/graph-studio-next" ["l"="-55.722,8.999", "c"=558]
+"Intel-Media-SDK/samples" ["l"="64.395,-1.854"]
 "boriswinner/RX580-rocM-tensorflow-ubuntu20.4-guide" ["l"="64.365,-1.53"]
 "tsl0922/pytorch-gfx803" ["l"="64.405,-1.534"]
 "Firstbober/rocm-pytorch-gfx803-docker" ["l"="64.379,-1.528"]
 "ulyssesrr/docker-rocm-xtra" ["l"="64.392,-1.524"]
-"vetter/shoc" ["l"="64.082,-2.092"]
 "yuhc/gpu-rodinia" ["l"="64.06,-2.065"]
 "JuliaParallel/rodinia" ["l"="64.043,-2.091"]
 "cavazos-lab/PolyBench-ACC" ["l"="64.033,-2.116"]
-"gtcasl/gpuocelot" ["l"="30.907,-3.02"]
+"gtcasl/gpuocelot" ["l"="30.907,-3.02", "c"=1037]
 "vtsynergy/OpenDwarfs" ["l"="64.014,-2.149"]
 "NUCAR-DEV/Hetero-Mark" ["l"="64.055,-2.129"]
 "hughperkins/clnn" ["l"="64.419,-2.008"]
-"eBay/maxDNN" ["l"="36.928,0.893"]
-"tkocisky/oxnn" ["l"="45.908,27.659"]
+"eBay/maxDNN" ["l"="36.928,0.893", "c"=112]
+"tkocisky/oxnn" ["l"="45.908,27.659", "c"=277]
 "torch/xt" ["l"="64.436,-2.021"]
 "woodrex83/ROCm-For-RX580" ["l"="64.411,-1.511"]
 "Tokoshie/pytorch-gfx803" ["l"="64.423,-1.538"]
 "jrcichra/rocm-pytorch-gfx803" ["l"="64.422,-1.557"]
-"NVIDIA/nvbench" ["l"="36.75,0.982"]
-"RRZE-HPC/gpu-benches" ["l"="36.839,0.972"]
-"accel-sim/accel-sim-framework" ["l"="31.017,-2.941"]
+"accel-sim/accel-sim-framework" ["l"="31.017,-2.941", "c"=1037]
 "sschaetz/nvidia-opencl-examples" ["l"="64.308,-2.221"]
 "ROCm/aiter" ["l"="64.179,-1.687"]
 "ROCm/flash-attention" ["l"="64.181,-1.637"]
 "ROCm/hipBLASLt" ["l"="64.174,-1.717"]
 "ROCm/triton" ["l"="64.175,-1.664"]
-"cloudcores/CuAssembler" ["l"="36.931,0.931"]
+"cloudcores/CuAssembler" ["l"="36.931,0.931", "c"=112]
 "ROCm/aotriton" ["l"="64.161,-1.654"]
 "ROCm/amd_matrix_instruction_calculator" ["l"="64.211,-1.651"]
-"Yinghan-Li/YHs_Sample" ["l"="36.901,0.924"]
+"Yinghan-Li/YHs_Sample" ["l"="36.901,0.924", "c"=112]
 "geggo/gpyfft" ["l"="64.445,-2.203"]
+"vtsynergy/CU2CL" ["l"="64.409,-1.977"]
 "VeriSilicon/tflite-vx-delegate" ["l"="63.919,-1.593"]
 "fpgacademy/Lab_Exercises_Digital_Logic" ["l"="63.856,-2.058"]
+"NVIDIA/cudnn-frontend" ["l"="36.877,0.989", "c"=112]
 "amd/triSYCL" ["l"="64.179,-2.086"]
 "intel-media-ci/ffmpeg" ["l"="64.454,-1.837"]
-"vtsynergy/CU2CL" ["l"="64.409,-1.977"]
 "ChrisLidbury/CLSmith" ["l"="64.155,-2.159"]
 "TexasInstruments/edgeai-mmdetection" ["l"="63.836,-1.498"]
-"01org/caffe" ["l"="64.411,-2.741"]
-"intel/idlf" ["l"="57.709,23.492"]
-"sh1r0/caffe-android-demo" ["l"="32.876,29.047"]
-"sh1r0/caffe-android-lib" ["l"="32.897,29.038"]
+"01org/caffe" ["l"="64.411,-2.741", "c"=1153]
+"intel/idlf" ["l"="57.709,23.492", "c"=161]
+"sh1r0/caffe-android-demo" ["l"="32.876,29.047", "c"=57]
+"sh1r0/caffe-android-lib" ["l"="32.897,29.038", "c"=57]
 "HazyResearch/CaffeConTroll" ["l"="64.432,-2.041"]
-"dmlc/minerva" ["l"="57.773,23.509"]
+"dmlc/minerva" ["l"="57.773,23.509", "c"=161]
+"clbr/radeontop" ["l"="-14.625,-0.846", "c"=152]
 "KhronosGroup/OpenCL-Registry" ["l"="64.259,-2.113"]
-"NVIDIA/cutlass" ["l"="38.965,-0.634"]
-"ddemidov/amgcl" ["l"="63.094,-1.549"]
-"libocca/occa" ["l"="63.191,-1.451"]
-"wichtounet/etl" ["l"="49.964,33.346"]
-"yixuan/spectra" ["l"="-19.434,-25.943"]
-"romeric/Fastor" ["l"="-19.645,-26.018"]
-"cusplibrary/cusplibrary" ["l"="63.147,-1.737"]
-"ProjectPhysX/FluidX3D" ["l"="63.484,-2.865"]
+"nod-ai/SHARK-Studio" ["l"="37.203,1.236", "c"=112]
+"NVIDIA/cutlass" ["l"="38.965,-0.634", "c"=39]
+"ddemidov/amgcl" ["l"="63.094,-1.549", "c"=175]
+"libocca/occa" ["l"="63.191,-1.451", "c"=175]
+"wichtounet/etl" ["l"="49.964,33.346", "c"=314]
+"yixuan/spectra" ["l"="-19.434,-25.943", "c"=10]
+"romeric/Fastor" ["l"="-19.645,-26.018", "c"=10]
+"cusplibrary/cusplibrary" ["l"="63.147,-1.737", "c"=175]
+"ProjectPhysX/FluidX3D" ["l"="63.484,-2.865", "c"=1090]
 "ProjectPhysX/PTXprofiler" ["l"="64.252,-2.212"]
-"KhronosGroup/Vulkan-LoaderAndValidationLayers" ["l"="-23.425,-27.696"]
+"TexasInstruments/edgeai-yolox" ["l"="31.979,28.281", "c"=352]
+"KhronosGroup/Vulkan-LoaderAndValidationLayers" ["l"="-23.425,-27.696", "c"=26]
 "thewilsonator/llvm-target-spirv" ["l"="64.287,-1.979"]
-"ROCm/omnitrace" ["l"="64.221,-1.7"]
 "ROCm/rocSHMEM" ["l"="64.25,-1.649"]
 "ROCm/rocprofiler-sdk" ["l"="64.238,-1.634"]
-"LLNL/Caliper" ["l"="63.182,-1.386"]
+"LLNL/Caliper" ["l"="63.182,-1.386", "c"=175]
 "kpet/spirv2clc" ["l"="64.118,-2.115"]
 "ROCm/HIP-CPU" ["l"="64.101,-2.136"]
 "ARC-Lab-UF/sv-tutorial" ["l"="63.814,-2.103"]
 "ARC-Lab-UF/vhdl-tutorial" ["l"="63.79,-2.112"]
 "oneapi-src/SYCLomatic-test" ["l"="64.093,-1.994"]
 "ROCm/clang-ocl" ["l"="64.223,-1.918"]
-"Intel-Media-SDK/samples" ["l"="64.395,-1.854"]
 "Intel-Media-SDK/gstreamer-plugins" ["l"="64.425,-1.827"]
 "ROCm/hipTensor" ["l"="64.242,-1.718"]
-"vosen/ZLUDA" ["l"="37.303,1.495"]
-"GPUOpen-Drivers/AMDVLK" ["l"="-23.445,-27.723"]
+"GPUOpen-Drivers/AMDVLK" ["l"="-23.445,-27.723", "c"=26]
 "ROCm/ROCK-Kernel-Driver" ["l"="64.202,-1.829"]
-"microsoft/DirectML" ["l"="-23.409,-27.774"]
-"triton-lang/triton" ["l"="38.919,-0.703"]
-"apache/tvm" ["l"="50.13,29.773"]
-"uxlfoundation/scikit-learn-intelex" ["l"="45.321,26.207"]
-"ROCm/ROCm-ComputeABI-Doc" ["l"="-15.923,-8.249"]
+"triton-lang/triton" ["l"="38.919,-0.703", "c"=39]
+"apache/tvm" ["l"="50.13,29.773", "c"=83]
+"Reference-LAPACK/lapack" ["l"="62.961,-1.512", "c"=175]
+"anthonix/ffts" ["l"="38.252,5.496", "c"=65]
+"ROCm/ROCm-ComputeABI-Doc" ["l"="-15.923,-8.249", "c"=1915]
+"intel/intel-extension-for-tensorflow" ["l"="64.209,-2.436", "c"=1153]
 "ROCm/Megatron-LM" ["l"="64.212,-1.542"]
 "ROCm/MAD" ["l"="64.215,-1.521"]
+"GPUOpen-Archive/CodeXL" ["l"="-23.408,-27.746", "c"=26]
 "ROCm/TransformerEngine" ["l"="64.205,-1.581"]
 "ROCm/bitsandbytes" ["l"="64.174,-1.598"]
 "arlo-phoenix/bitsandbytes-rocm-5.6" ["l"="64.185,-1.591"]
 "AxisCommunications/openvx-graph-parser" ["l"="63.978,-1.598"]
+"philipturner/metal-benchmarks" ["l"="41.182,-22.964", "c"=419]
 "ROCm/rocHPL" ["l"="64.367,-1.698"]
 "KernelTuner/kernel_launcher" ["l"="64.17,-2.203"]
-"wangzyon/NVIDIA_SGEMM_PRACTICE" ["l"="36.872,0.925"]
+"wangzyon/NVIDIA_SGEMM_PRACTICE" ["l"="36.872,0.925", "c"=112]
 "NTNU-HPC-Lab/BAT" ["l"="64.187,-2.198"]
 "KernelTuner/kernel_tuner_tutorial" ["l"="64.184,-2.215"]
-"NVIDIA/cuCollections" ["l"="36.669,0.998"]
-"eyalroz/cuda-kat" ["l"="36.631,1.052"]
-"yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" ["l"="36.91,0.911"]
-"NervanaSystems/maxas" ["l"="36.924,0.876"]
+"NVIDIA/cuCollections" ["l"="36.669,0.998", "c"=112]
+"eyalroz/cuda-kat" ["l"="36.631,1.052", "c"=112]
+"yzhaiustc/Optimizing-SGEMM-on-NVIDIA-Turing-GPUs" ["l"="36.91,0.911", "c"=112]
+"NervanaSystems/maxas" ["l"="36.924,0.876", "c"=112]
 "KhronosGroup/OpenCL-CXX" ["l"="64.355,-2.082"]
 "nktice/AMD-AI" ["l"="64.158,-1.581"]
-"KastnerRG/spector" ["l"="63.971,-2.184"]
+"jansel/opentuner" ["l"="37.131,1.137", "c"=112]
+"GPUOpen-LibrariesAndSDKs/AMF" ["l"="-55.756,8.943", "c"=558]
+"intel/gvt-linux" ["l"="-14.206,-1.454", "c"=152]
+"YellowRoseCx/koboldcpp-rocm" ["l"="37.217,1.4", "c"=112]
+"amd/RyzenAI-SW" ["l"="31.734,-2.509", "c"=212]
 "codeplaysoftware/visioncpp" ["l"="64.165,-2.099"]
 "merthidayetoglu/CommBench" ["l"="64.042,-1.895"]
 "agrocylo/bitsandbytes-rocm" ["l"="64.181,-1.571"]
-"plaidml/plaidml" ["l"="37.251,0.947"]
+"conradsnicta/armadillo-code" ["l"="-19.291,-25.954", "c"=10]
+"KhronosGroup/OpenGL-Registry" ["l"="-23.511,-27.667", "c"=26]
+"lamikr/rocm_sdk_builder" ["l"="37.205,1.497", "c"=112]
+"eyalroz/cuda-api-wrappers" ["l"="36.675,0.968", "c"=112]
 "KastnerRG/Spector-HLS" ["l"="63.96,-2.21"]
 "fpga-opencl-benchmarks/rodinia_fpga" ["l"="63.943,-2.195"]
+"intel/intel-npu-acceleration-library" ["l"="64.076,-2.433", "c"=1153]
+"KhronosGroup/EGL-Registry" ["l"="-23.582,-27.712", "c"=26]
 "skelcl/skelcl" ["l"="64.416,-2.072"]
-"utcs-scea/altis" ["l"="64.018,-2.075"]
-"breagen/MachSuite" ["l"="31.04,-2.829"]
 "ROCm/TheRock" ["l"="64.252,-1.595"]
+"FFTW/fftw3" ["l"="38.24,5.574", "c"=65]
+"intel/AI-Playground" ["l"="64.028,-2.474", "c"=1153]
 "ROCm/rocmProfileData" ["l"="64.191,-1.654"]
-"boostorg/hana" ["l"="-19.845,-26.171"]
-"andravin/wincnn" ["l"="37.093,0.778"]
-"NervanaSystems/ngraph" ["l"="37.206,0.889"]
-"PaddlePaddle/Anakin" ["l"="37.165,0.747"]
-"google/gemmlowp" ["l"="37.151,0.815"]
+"pytorch/gloo" ["l"="57.935,23.566", "c"=161]
+"andravin/wincnn" ["l"="37.093,0.778", "c"=112]
+"NervanaSystems/ngraph" ["l"="37.206,0.889", "c"=112]
+"PaddlePaddle/Anakin" ["l"="37.165,0.747", "c"=112]
+"google/gemmlowp" ["l"="37.151,0.815", "c"=112]
 "ROCm/ROCm-OpenCL-Driver" ["l"="64.137,-1.795"]
-"GPUOpen-LibrariesAndSDKs/AMF" ["l"="-55.756,8.943"]
-"OpenVisualCloud/SVT-HEVC" ["l"="-38.214,20.798"]
-"latelee/H264BSAnalyzer" ["l"="-38.282,20.71"]
-"dlstreamer/dlstreamer" ["l"="64.314,-2.574"]
-"open-webrtc-toolkit/owt-server" ["l"="63.445,-14.105"]
-"lu-zero/mfx_dispatch" ["l"="-55.815,8.932"]
+"latelee/H264BSAnalyzer" ["l"="-38.282,20.71", "c"=853]
+"open-webrtc-toolkit/owt-server" ["l"="63.445,-14.105", "c"=524]
+"lu-zero/mfx_dispatch" ["l"="-55.815,8.932", "c"=558]
 "patflick/miopen-benchmark" ["l"="64.25,-1.86"]
-"naibaf7/libdnn" ["l"="37.045,0.747"]
-"IntelLabs/SpMP" ["l"="63.181,-1.831"]
+"naibaf7/libdnn" ["l"="37.045,0.747", "c"=112]
+"IntelLabs/SpMP" ["l"="63.181,-1.831", "c"=175]
+"lebedov/scikit-cuda" ["l"="36.601,0.828", "c"=112]
 "NVIDIA/cuda-gdb" ["l"="64.109,-1.581"]
 "NVIDIA/cuda-profiler" ["l"="64.082,-1.555"]
 "NVIDIA/nsight-vscode-edition" ["l"="64.111,-1.544"]
+"Erkaman/vulkan_minimal_compute" ["l"="-23.33,-27.659", "c"=26]
+"NVIDIA/jitify" ["l"="36.704,1.001", "c"=112]
+"pghysels/STRUMPACK" ["l"="63.069,-1.453", "c"=175]
+"IntelPython/sdc" ["l"="44.016,23.842", "c"=95]
+"GPUOpen-Tools/radeon_gpu_profiler" ["l"="-23.385,-27.789", "c"=26]
 "ROCm/hipDNN" ["l"="64.365,-1.806"]
 }

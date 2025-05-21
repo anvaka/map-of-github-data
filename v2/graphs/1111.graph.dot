@@ -1,4 +1,8 @@
 digraph G {
+"dev-sec/chef-os-hardening" -> "chefspec/chefspec" ["e"=1]
+"dev-sec/chef-os-hardening" -> "sethvargo/chef-sugar" ["e"=1]
+"dev-sec/chef-os-hardening" -> "test-kitchen/kitchen-dokken" ["e"=1]
+"dockerfile/nginx" -> "sous-chefs/nginx" ["e"=1]
 "chef-boneyard/chef-provisioning" -> "chef-boneyard/chef-provisioning-aws"
 "chef-boneyard/chef-provisioning" -> "chef-boneyard/chef-provisioning-fog"
 "chef-boneyard/chef-provisioning" -> "chef/chef-zero"
@@ -12,6 +16,8 @@ digraph G {
 "chef-boneyard/chef-provisioning" -> "sethvargo/chef-sugar"
 "chef-boneyard/chef-provisioning" -> "test-kitchen/kitchen-vagrant"
 "chef-boneyard/chef-provisioning" -> "chef-cookbooks/chef-server"
+"facebookarchive/bistro" -> "facebookarchive/fbtftp" ["e"=1]
+"facebookarchive/bistro" -> "facebook/between-meals" ["e"=1]
 "timkay/aws" -> "sous-chefs/aws"
 "timkay/aws" -> "appoxy/aws"
 "timkay/aws" -> "aristidb/aws" ["e"=1]
@@ -32,7 +38,9 @@ digraph G {
 "WeAreFarmGeek/diplomat" -> "hashicorp/vault-ruby"
 "WeAreFarmGeek/diplomat" -> "xaviershay/consul-client"
 "WeAreFarmGeek/diplomat" -> "sous-chefs/consul"
+"bridgetkromhout/devops-against-humanity" -> "chef-boneyard/devops-kungfu" ["e"=1]
 "chef-boneyard/chef-rfc" -> "misheska-cookbooks/chef-server12"
+"chef-boneyard/cookbooks" -> "chef/ohai" ["e"=1]
 "chef-boneyard/chef-dk" -> "chef/chef-server"
 "chef-boneyard/chef-dk" -> "test-kitchen/kitchen-vagrant"
 "chef-boneyard/chef-dk" -> "chef-boneyard/chef-rfc"
@@ -118,6 +126,9 @@ digraph G {
 "swoodford/aws" -> "monitoringartist/grafana-aws-cloudwatch-dashboards" ["e"=1]
 "swoodford/aws" -> "ozbillwang/terraform-best-practices" ["e"=1]
 "swoodford/aws" -> "awslabs/aws-security-automation" ["e"=1]
+"odoo/docker" -> "sous-chefs/docker" ["e"=1]
+"phusion/traveling-ruby" -> "chef/omnibus" ["e"=1]
+"breser/git2consul" -> "sous-chefs/consul" ["e"=1]
 "chef/chef-server" -> "chef/chef-workstation"
 "chef/chef-server" -> "chef/automate"
 "chef/chef-server" -> "chef-boneyard/chef-dk"
@@ -175,7 +186,11 @@ digraph G {
 "marcel/aws-s3" -> "flexera-public/right_aws"
 "flexera-public/right_aws" -> "appoxy/aws"
 "flexera-public/right_aws" -> "marcel/aws-s3"
+"neillturner/kitchen-ansible" -> "test-kitchen/test-kitchen" ["e"=1]
+"neillturner/kitchen-ansible" -> "test-kitchen/kitchen-docker" ["e"=1]
+"neillturner/kitchen-ansible" -> "test-kitchen/kitchen-vagrant" ["e"=1]
 "TwoFactorAuth/ruby" -> "castle/ruby-u2f"
+"Foodcritic/foodcritic" -> "chefspec/chefspec" ["e"=1]
 "chef-boneyard/chef-provisioning-aws" -> "chef-boneyard/chef-provisioning"
 "chef-boneyard/chef-provisioning-aws" -> "chef-boneyard/chef-provisioning-vagrant"
 "chef-boneyard/chef-provisioning-aws" -> "chef-cookbooks/chef-server"
@@ -201,6 +216,14 @@ digraph G {
 "test-kitchen/kitchen-dsc" -> "test-kitchen/kitchen-pester"
 "test-kitchen/kitchen-dsc" -> "test-kitchen/kitchen-hyperv"
 "poise/poise-service" -> "poise/poise"
+"docker-library/docker" -> "sous-chefs/docker" ["e"=1]
+"habitat-sh/habitat" -> "habitat-sh/core-plans" ["e"=1]
+"habitat-sh/habitat" -> "test-kitchen/test-kitchen" ["e"=1]
+"habitat-sh/habitat" -> "chef/automate" ["e"=1]
+"habitat-sh/habitat" -> "chef/chef-server" ["e"=1]
+"chef/bento" -> "test-kitchen/test-kitchen" ["e"=1]
+"pytest-dev/pytest-testinfra" -> "test-kitchen/test-kitchen" ["e"=1]
+"k1LoW/awspec" -> "test-kitchen/test-kitchen" ["e"=1]
 "sous-chefs/aws" -> "swoodford/aws"
 "sous-chefs/aws" -> "timkay/aws"
 "sous-chefs/aws" -> "srijithsrk/AWS"
@@ -237,11 +260,14 @@ digraph G {
 "test-kitchen/kitchen-dokken" -> "test-kitchen/dokken-images"
 "test-kitchen/kitchen-dokken" -> "poise/poise-derived"
 "test-kitchen/kitchen-dokken" -> "zuazo/kitchen-in-travis"
+"sous-chefs/java" -> "test-kitchen/kitchen-dokken" ["e"=1]
 "hashicorp/vault-ruby" -> "hashicorp/vault-rails"
 "hashicorp/vault-ruby" -> "WeAreFarmGeek/diplomat"
 "hashicorp/vault-ruby" -> "chef/chef-vault"
 "hashicorp/vault-rails" -> "hashicorp/vault-ruby"
 "hashicorp/vault-rails" -> "castle/ruby-u2f"
+"sous-chefs/php" -> "sous-chefs/jenkins" ["e"=1]
+"sous-chefs/php" -> "chef-boneyard/openssl" ["e"=1]
 "chef-boneyard/devops-kungfu" -> "chef/chef-vault"
 "chef-boneyard/devops-kungfu" -> "Nordstrom/chefdk_bootstrap"
 "chef-boneyard/devops-kungfu" -> "chef-boneyard/chef-provisioning-aws"
@@ -294,7 +320,10 @@ digraph G {
 "chef-boneyard/delivery-truck" -> "chef-boneyard/delivery-sugar"
 "test-kitchen/kitchen-hyperv" -> "test-kitchen/kitchen-dsc"
 "chef-boneyard/chef_handler" -> "chef-boneyard/ohai"
+"phpmyadmin/docker" -> "sous-chefs/docker" ["e"=1]
 "etsy/foodcritic-rules" -> "customink-webops/foodcritic-rules"
+"inspec/inspec" -> "test-kitchen/test-kitchen" ["e"=1]
+"inspec/inspec" -> "chefspec/chefspec" ["e"=1]
 "test-kitchen/test-kitchen" -> "test-kitchen/kitchen-vagrant"
 "test-kitchen/test-kitchen" -> "neillturner/kitchen-ansible" ["e"=1]
 "test-kitchen/test-kitchen" -> "chefspec/chefspec"
@@ -355,12 +384,16 @@ digraph G {
 "facebookarchive/fbtftp" -> "networklore/ztp-tutorial"
 "facebookarchive/fbtftp" -> "facebookarchive/fbtracert" ["e"=1]
 "facebookarchive/fbtftp" -> "facebook/taste-tester"
+"facebook/pyre2" -> "facebook/chef-utils" ["e"=1]
 "chef/cookstyle" -> "chef/chef-workstation"
 "chef/cookstyle" -> "chef/chef-oss-practices"
 "chef/cookstyle" -> "chef-cookbooks/chef_client_updater"
 "chef/cookstyle" -> "jeremymv2/env_pinning"
 "chef/cookstyle" -> "chef/chef-load"
 "jeremymv2/env_pinning" -> "jeremymv2/chef-intranet-scaffolding"
+"voxpupuli/puppet-elasticsearch" -> "sous-chefs/elasticsearch" ["e"=1]
+"newcontext-oss/kitchen-terraform" -> "test-kitchen/test-kitchen" ["e"=1]
+"facebookincubator/dhcplb" -> "facebookarchive/fbtftp" ["e"=1]
 "chef/chef-zero" -> "chef/chef-vault"
 "chef/chef-zero" -> "chef-boneyard/chef-provisioning"
 "sous-chefs/jenkins" -> "chef-boneyard/chef-dk"
@@ -384,10 +417,16 @@ digraph G {
 "test-kitchen/kitchen-vagrant" -> "chef/chef-vault"
 "test-kitchen/kitchen-vagrant" -> "chef-cookbooks/chef_client_updater"
 "test-kitchen/kitchen-vagrant" -> "chef-boneyard/chef-provisioning"
+"mizzy/serverspec" -> "test-kitchen/test-kitchen" ["e"=1]
+"mizzy/serverspec" -> "chefspec/chefspec" ["e"=1]
+"fgrehm/vagrant-cachier" -> "chef/supermarket" ["e"=1]
+"mitchellh/vagrant-aws" -> "test-kitchen/test-kitchen" ["e"=1]
+"aws/opsworks-cookbooks" -> "sous-chefs/aws" ["e"=1]
 "facebook/chef-utils" -> "facebook/grocery-delivery"
 "facebook/chef-utils" -> "facebook/taste-tester"
 "facebook/chef-utils" -> "facebook/chef-cookbooks"
 "facebook/chef-utils" -> "facebook/between-meals"
+"WinRb/WinRM" -> "chef/knife-windows" ["e"=1]
 "test-kitchen/kitchen-ec2" -> "test-kitchen/kitchen-vagrant"
 "test-kitchen/kitchen-ec2" -> "chef/knife-ec2"
 "test-kitchen/kitchen-ec2" -> "poise/poise"
@@ -411,6 +450,8 @@ digraph G {
 "sous-chefs/docker" -> "cachethq/Docker" ["e"=1]
 "sous-chefs/docker" -> "nextcloud/docker" ["e"=1]
 "sous-chefs/docker" -> "matschaffer/knife-solo"
+"nsidc/vagrant-vsphere" -> "CenturyLinkCloud/chef-provisioning-vsphere" ["e"=1]
+"nsidc/vagrant-vsphere" -> "test-kitchen/kitchen-vagrant" ["e"=1]
 "chef/chef-vault" -> "chef-boneyard/chef-vault"
 "chef/chef-vault" -> "chef/chef-zero"
 "chef/chef-vault" -> "chefspec/chefspec"
@@ -425,6 +466,12 @@ digraph G {
 "chef/chef-vault" -> "berkshelf/ridley"
 "chef-boneyard/vagrant-omnibus" -> "berkshelf/vagrant-berkshelf"
 "bitnami-labs/bazel_containers" -> "bloomberg/jenkins-cluster-cookbook"
+"dev-sec/chef-os-hardening" ["l"="8.456,-12.737", "c"=1228]
+"chefspec/chefspec" ["l"="9.135,-12.881"]
+"sethvargo/chef-sugar" ["l"="9.147,-12.842"]
+"test-kitchen/kitchen-dokken" ["l"="9.131,-12.848"]
+"dockerfile/nginx" ["l"="5.451,-11.932", "c"=270]
+"sous-chefs/nginx" ["l"="9.23,-12.942"]
 "chef-boneyard/chef-provisioning" ["l"="9.097,-12.891"]
 "chef-boneyard/chef-provisioning-aws" ["l"="9.071,-12.914"]
 "chef-boneyard/chef-provisioning-fog" ["l"="9.049,-12.882"]
@@ -432,17 +479,18 @@ digraph G {
 "chef/chef-vault" ["l"="9.111,-12.898"]
 "chef-boneyard/chef-provisioning-docker" ["l"="9.028,-12.88"]
 "chef-boneyard/chef-provisioning-vagrant" ["l"="9.063,-12.895"]
-"chefspec/chefspec" ["l"="9.135,-12.881"]
 "CenturyLinkCloud/chef-provisioning-vsphere" ["l"="9.011,-12.94"]
 "chef-boneyard/chef-dk" ["l"="9.142,-12.914"]
 "chef-boneyard/chef-server-cluster" ["l"="9.045,-12.902"]
-"sethvargo/chef-sugar" ["l"="9.147,-12.842"]
 "test-kitchen/kitchen-vagrant" ["l"="9.145,-12.894"]
 "chef-cookbooks/chef-server" ["l"="9.145,-12.932"]
+"facebookarchive/bistro" ["l"="7.255,-4.589", "c"=491]
+"facebookarchive/fbtftp" ["l"="9.169,-12.715"]
+"facebook/between-meals" ["l"="9.169,-12.748"]
 "timkay/aws" ["l"="9.219,-13.052"]
 "sous-chefs/aws" ["l"="9.178,-12.992"]
 "appoxy/aws" ["l"="9.259,-13.119"]
-"aristidb/aws" ["l"="-20.641,-19.941"]
+"aristidb/aws" ["l"="-20.641,-19.941", "c"=118]
 "sous-chefs/consul" ["l"="9.104,-12.751"]
 "bloomberg/consul-cluster-cookbook" ["l"="9.107,-12.719"]
 "sous-chefs/redisio" ["l"="9.127,-12.779"]
@@ -453,17 +501,20 @@ digraph G {
 "chef/knife-windows" ["l"="9.087,-12.969"]
 "chef-boneyard/knife-rackspace" ["l"="9.047,-12.935"]
 "matschaffer/knife-solo" ["l"="9.252,-12.928"]
-"applicationsonline/librarian" ["l"="2.856,-35.854"]
+"applicationsonline/librarian" ["l"="2.856,-35.854", "c"=171]
 "higanworks/knife-zero" ["l"="9.315,-12.929"]
 "srijithsrk/AWS" ["l"="9.195,-13.033"]
 "swoodford/aws" ["l"="9.188,-13.063"]
 "WeAreFarmGeek/diplomat" ["l"="9.026,-12.739"]
 "hashicorp/vault-ruby" ["l"="9.003,-12.775"]
 "xaviershay/consul-client" ["l"="9.011,-12.711"]
+"bridgetkromhout/devops-against-humanity" ["l"="22.817,-26.557", "c"=28]
+"chef-boneyard/devops-kungfu" ["l"="9.088,-12.94"]
 "chef-boneyard/chef-rfc" ["l"="9.12,-12.952"]
 "misheska-cookbooks/chef-server12" ["l"="9.074,-12.983"]
-"chef/chef-server" ["l"="9.174,-12.891"]
+"chef-boneyard/cookbooks" ["l"="2.809,-35.769", "c"=171]
 "chef/ohai" ["l"="9.154,-12.877"]
+"chef/chef-server" ["l"="9.174,-12.891"]
 "sous-chefs/jenkins" ["l"="9.145,-12.971"]
 "chef-boneyard/chef-client" ["l"="9.161,-12.954"]
 "inspec/kitchen-inspec" ["l"="9.087,-12.903"]
@@ -474,10 +525,9 @@ digraph G {
 "chef-boneyard/delivery-truck" ["l"="9.107,-12.971"]
 "chef/cookstyle" ["l"="9.185,-12.859"]
 "chefspec/fauxhai" ["l"="9.114,-12.835"]
-"test-kitchen/kitchen-dokken" ["l"="9.131,-12.848"]
 "sous-chefs/iis" ["l"="9.084,-13.011"]
 "test-kitchen/kitchen-docker" ["l"="9.117,-12.882"]
-"neillturner/kitchen-ansible" ["l"="8.446,-12.332"]
+"neillturner/kitchen-ansible" ["l"="8.446,-12.332", "c"=600]
 "test-kitchen/test-kitchen" ["l"="9.12,-12.923"]
 "chef-boneyard/chef-vault" ["l"="9.171,-12.969"]
 "chef-boneyard/openssl" ["l"="9.21,-13.005"]
@@ -497,47 +547,49 @@ digraph G {
 "Nordstrom/chefdk_bootstrap" ["l"="9.047,-12.993"]
 "chef-cft/chef-examples" ["l"="9.286,-12.876"]
 "chef-boneyard/chef-server-ingredient" ["l"="9.011,-12.9"]
-"donnemartin/awesome-aws" ["l"="10.577,-3.279"]
-"awslabs/aws-well-architected-labs" ["l"="10.482,-2.997"]
-"aws-cloudformation/aws-cloudformation-templates" ["l"="10.813,-4.89"]
-"mbailey/bash-my-aws" ["l"="11.005,-4.725"]
-"awslabs/aws-shell" ["l"="10.167,-6.394"]
-"miztiik/AWS-Demos" ["l"="29.523,-24.708"]
-"cloudavail/aws-missing-tools" ["l"="10.144,-6.421"]
-"stacksimplify/terraform-on-aws-ec2" ["l"="29.366,-23.798"]
-"hashicorp/terraform-provider-aws" ["l"="10.364,-6.31"]
-"monitoringartist/grafana-aws-cloudwatch-dashboards" ["l"="7.733,-9.311"]
-"ozbillwang/terraform-best-practices" ["l"="10.413,-6.18"]
-"awslabs/aws-security-automation" ["l"="11.08,-4.668"]
+"donnemartin/awesome-aws" ["l"="10.577,-3.279", "c"=129]
+"awslabs/aws-well-architected-labs" ["l"="10.482,-2.997", "c"=129]
+"aws-cloudformation/aws-cloudformation-templates" ["l"="10.813,-4.89", "c"=147]
+"mbailey/bash-my-aws" ["l"="11.005,-4.725", "c"=147]
+"awslabs/aws-shell" ["l"="10.167,-6.394", "c"=162]
+"miztiik/AWS-Demos" ["l"="29.523,-24.708", "c"=530]
+"cloudavail/aws-missing-tools" ["l"="10.144,-6.421", "c"=162]
+"stacksimplify/terraform-on-aws-ec2" ["l"="29.366,-23.798", "c"=658]
+"hashicorp/terraform-provider-aws" ["l"="10.364,-6.31", "c"=162]
+"monitoringartist/grafana-aws-cloudwatch-dashboards" ["l"="7.733,-9.311", "c"=14]
+"ozbillwang/terraform-best-practices" ["l"="10.413,-6.18", "c"=162]
+"awslabs/aws-security-automation" ["l"="11.08,-4.668", "c"=147]
+"odoo/docker" ["l"="44.688,18.811", "c"=351]
+"sous-chefs/docker" ["l"="9.183,-12.935"]
+"phusion/traveling-ruby" ["l"="4.201,-37.452", "c"=1]
+"chef/omnibus" ["l"="9.101,-12.859"]
+"breser/git2consul" ["l"="7.041,-12.915", "c"=666]
 "habitat-sh/core-plans" ["l"="9.281,-12.852"]
 "chef-boneyard/chef-web-docs-2016" ["l"="9.219,-12.903"]
 "sous-chefs/elasticsearch" ["l"="9.192,-12.834"]
 "lusis/chef-logstash" ["l"="9.219,-12.788"]
-"voxpupuli/puppet-elasticsearch" ["l"="1.312,-31.5"]
+"voxpupuli/puppet-elasticsearch" ["l"="1.312,-31.5", "c"=997]
 "rackspace-cookbooks/elkstack" ["l"="9.2,-12.787"]
 "elastic/elasticsearch-cloud-aws" ["l"="9.244,-12.78"]
 "lusis/chef-kibana" ["l"="9.206,-12.804"]
-"sous-chefs/nginx" ["l"="9.23,-12.942"]
 "mingle/elasticsearch-opsworks" ["l"="9.246,-12.805"]
-"sensu/sensu-chef" ["l"="3.092,-35.986"]
-"elastic/beats-dashboards" ["l"="-3.662,9.165"]
+"sensu/sensu-chef" ["l"="3.092,-35.986", "c"=171]
+"elastic/beats-dashboards" ["l"="-3.662,9.165", "c"=540]
 "kohsuke/jenkins" ["l"="9.123,-13.098"]
 "hudson/hudson-2.x" ["l"="9.113,-13.146"]
-"jenkinsci/java-client-api" ["l"="5.379,-4.428"]
+"jenkinsci/java-client-api" ["l"="5.379,-4.428", "c"=767]
 "castle/ruby-u2f" ["l"="8.911,-12.718"]
 "TwoFactorAuth/ruby" ["l"="8.903,-12.69"]
 "CyberDeck/devise-fido-u2f" ["l"="8.883,-12.73"]
 "titanous/yubikey" ["l"="8.874,-12.704"]
 "hashicorp/vault-rails" ["l"="8.951,-12.743"]
-"Foodcritic/foodcritic" ["l"="2.873,-35.865"]
-"dev-sec/chef-os-hardening" ["l"="8.456,-12.737"]
+"Foodcritic/foodcritic" ["l"="2.873,-35.865", "c"=171]
 "DomainGroupOSS/elasticsearch-snapshots" ["l"="9.27,-12.755"]
 "marcel/aws-s3" ["l"="9.293,-13.177"]
 "flexera-public/right_aws" ["l"="9.277,-13.15"]
 "mwrock/kitchen-vsphere" ["l"="8.978,-12.94"]
 "facebook/grocery-delivery" ["l"="9.165,-12.766"]
 "facebook/taste-tester" ["l"="9.154,-12.743"]
-"facebook/between-meals" ["l"="9.169,-12.748"]
 "facebook/chef-utils" ["l"="9.145,-12.761"]
 "facebook/chef-cookbooks" ["l"="9.151,-12.802"]
 "chef-solutions/pipeline" ["l"="9.032,-12.975"]
@@ -550,23 +602,26 @@ digraph G {
 "test-kitchen/kitchen-dsc" ["l"="9.215,-12.834"]
 "test-kitchen/kitchen-pester" ["l"="9.242,-12.822"]
 "test-kitchen/kitchen-hyperv" ["l"="9.227,-12.813"]
-"sous-chefs/docker" ["l"="9.183,-12.935"]
-"aws/opsworks-cookbooks" ["l"="10.719,-4.93"]
+"docker-library/docker" ["l"="5.645,-12.014", "c"=270]
+"habitat-sh/habitat" ["l"="-10.042,-5.827", "c"=5]
+"chef/bento" ["l"="-49.169,6.567", "c"=959]
+"pytest-dev/pytest-testinfra" ["l"="8.527,-12.368", "c"=600]
+"k1LoW/awspec" ["l"="10.324,-6.172", "c"=162]
+"aws/opsworks-cookbooks" ["l"="10.719,-4.93", "c"=147]
 "sous-chefs/cron" ["l"="9.223,-12.989"]
 "chef-boneyard/windows" ["l"="9.107,-13.012"]
-"chef/omnibus" ["l"="9.101,-12.859"]
 "chef/omnibus-software" ["l"="9.06,-12.824"]
-"phusion/traveling-ruby" ["l"="4.201,-37.452"]
-"mizzy/serverspec" ["l"="8.463,-12.354"]
+"mizzy/serverspec" ["l"="8.463,-12.354", "c"=600]
 "crohr/pkgr" ["l"="9.025,-12.822"]
-"hone/mruby-cli" ["l"="6.352,-38.334"]
+"hone/mruby-cli" ["l"="6.352,-38.334", "c"=617]
 "test-kitchen/dokken-images" ["l"="9.125,-12.815"]
 "poise/poise-derived" ["l"="9.111,-12.815"]
 "zuazo/kitchen-in-travis" ["l"="9.093,-12.811"]
-"chef-boneyard/devops-kungfu" ["l"="9.088,-12.94"]
-"inspec/inspec" ["l"="8.492,-12.311"]
+"sous-chefs/java" ["l"="-5.856,15.407", "c"=1161]
+"sous-chefs/php" ["l"="-6.073,15.827", "c"=1161]
+"inspec/inspec" ["l"="8.492,-12.311", "c"=600]
 "chef-boneyard/stove" ["l"="9.046,-12.961"]
-"udacity/devops-intro-project" ["l"="29.439,-24.78"]
+"udacity/devops-intro-project" ["l"="29.439,-24.78", "c"=530]
 "adamedx/winbox" ["l"="9.018,-13.022"]
 "sous-chefs/postgresql" ["l"="9.244,-12.894"]
 "sous-chefs/haproxy" ["l"="9.287,-12.947"]
@@ -584,14 +639,11 @@ digraph G {
 "etsy/chef-handlers" ["l"="8.998,-12.845"]
 "sous-chefs/rsync" ["l"="9.263,-13.047"]
 "chef-boneyard/delivery-sugar" ["l"="9.094,-12.993"]
+"phpmyadmin/docker" ["l"="5.548,-11.906", "c"=270]
 "etsy/foodcritic-rules" ["l"="9.05,-12.787"]
 "customink-webops/foodcritic-rules" ["l"="9.077,-12.808"]
-"newcontext-oss/kitchen-terraform" ["l"="10.365,-6.139"]
-"pytest-dev/pytest-testinfra" ["l"="8.527,-12.368"]
-"k1LoW/awspec" ["l"="10.324,-6.172"]
-"chef/bento" ["l"="-49.169,6.567"]
-"facebook/IT-CPE" ["l"="25.887,-21.215"]
-"facebookarchive/fbtftp" ["l"="9.169,-12.715"]
+"newcontext-oss/kitchen-terraform" ["l"="10.365,-6.139", "c"=162]
+"facebook/IT-CPE" ["l"="25.887,-21.215", "c"=207]
 "obazoud/awesome-chef" ["l"="9.198,-12.748"]
 "chef-boneyard/audit" ["l"="9.028,-12.914"]
 "applicationsonline/librarian-chef" ["l"="9.206,-12.958"]
@@ -601,18 +653,21 @@ digraph G {
 "habitat-sh/builder" ["l"="9.322,-12.842"]
 "chef-boneyard/habitat" ["l"="9.315,-12.858"]
 "chef-cookbooks/community_cookbook_tools" ["l"="9.06,-13.084"]
-"facebookarchive/fbkutils" ["l"="7.238,-4.63"]
+"facebookarchive/fbkutils" ["l"="7.238,-4.63", "c"=491]
 "networklore/ztp-tutorial" ["l"="9.178,-12.681"]
-"facebookarchive/fbtracert" ["l"="6.208,-3.964"]
+"facebookarchive/fbtracert" ["l"="6.208,-3.964", "c"=725]
+"facebook/pyre2" ["l"="46.096,18.559", "c"=52]
 "jeremymv2/env_pinning" ["l"="9.242,-12.837"]
 "jeremymv2/chef-intranet-scaffolding" ["l"="9.271,-12.822"]
+"facebookincubator/dhcplb" ["l"="3.631,-7.721", "c"=0]
 "sous-chefs/tomcat" ["l"="9.138,-13.007"]
 "knife-block/knife-block" ["l"="9.144,-13.026"]
+"fgrehm/vagrant-cachier" ["l"="11.489,-34.969", "c"=27]
+"mitchellh/vagrant-aws" ["l"="11.539,-34.933", "c"=27]
+"WinRb/WinRM" ["l"="-47.262,-33.937", "c"=204]
 "NestAway/efk-stack" ["l"="9.045,-12.67"]
-"odoo/docker" ["l"="44.688,18.811"]
-"phpmyadmin/docker" ["l"="5.548,-11.906"]
-"docker-library/docker" ["l"="5.645,-12.014"]
-"cachethq/Docker" ["l"="5.381,-11.935"]
-"nextcloud/docker" ["l"="11.876,-12.056"]
+"cachethq/Docker" ["l"="5.381,-11.935", "c"=270]
+"nextcloud/docker" ["l"="11.876,-12.056", "c"=705]
+"nsidc/vagrant-vsphere" ["l"="-49.122,6.462", "c"=959]
 "bitnami-labs/bazel_containers" ["l"="9.062,-12.658"]
 }

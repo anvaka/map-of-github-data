@@ -1,4 +1,9 @@
 digraph G {
+"HKUST-Aerial-Robotics/VINS-Fusion" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"HKUST-Aerial-Robotics/VINS-Fusion" -> "hku-mars/FAST_LIO" ["e"=1]
+"HKUST-Aerial-Robotics/VINS-Fusion" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"HKUST-Aerial-Robotics/VINS-Fusion" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"HKUST-Aerial-Robotics/VINS-Fusion" -> "TixiaoShan/LVI-SAM" ["e"=1]
 "HuangCongQing/pcl-learning" -> "MNewBie/PCL-Notes"
 "HuangCongQing/pcl-learning" -> "HuangCongQing/3D-LIDAR-Multi-Object-Tracking" ["e"=1]
 "HuangCongQing/pcl-learning" -> "PointCloudLibrary/pcl" ["e"=1]
@@ -14,6 +19,7 @@ digraph G {
 "HuangCongQing/pcl-learning" -> "gaoxiang12/faster-lio"
 "HuangCongQing/pcl-learning" -> "nightn/CloudViewer" ["e"=1]
 "HuangCongQing/pcl-learning" -> "TixiaoShan/LIO-SAM"
+"flann-lib/flann" -> "norlab-ulaval/libpointmatcher" ["e"=1]
 "koide3/hdl_graph_slam" -> "RobustFieldAutonomyLab/LeGO-LOAM"
 "koide3/hdl_graph_slam" -> "TixiaoShan/LIO-SAM"
 "koide3/hdl_graph_slam" -> "koide3/hdl_localization"
@@ -29,6 +35,15 @@ digraph G {
 "koide3/hdl_graph_slam" -> "koide3/ndt_omp"
 "koide3/hdl_graph_slam" -> "wh200720041/floam"
 "koide3/hdl_graph_slam" -> "TixiaoShan/LVI-SAM"
+"cedricxie/apollo_perception_ros" -> "LiuFG/Camera-Lidar-Fusion-ROS" ["e"=1]
+"cedricxie/apollo_perception_ros" -> "sunmiaozju/smartcar" ["e"=1]
+"daohu527/dig-into-apollo" -> "PJLab-ADG/SensorsCalibration" ["e"=1]
+"daohu527/dig-into-apollo" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"LiangliangNan/Easy3D" -> "kzampog/cilantro" ["e"=1]
+"lijx10/USIP" -> "JuanDuGit/DH3D" ["e"=1]
+"SteveMacenski/spatio_temporal_voxel_layer" -> "at-wat/mcl_3dl" ["e"=1]
+"ANYbotics/elevation_mapping" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"ANYbotics/elevation_mapping" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
 "hku-mars/loam_livox" -> "HKUST-Aerial-Robotics/A-LOAM"
 "hku-mars/loam_livox" -> "hyye/lio-mapping"
 "hku-mars/loam_livox" -> "cuitaixiang/LOAM_NOTED"
@@ -44,6 +59,20 @@ digraph G {
 "hku-mars/loam_livox" -> "KIT-ISAS/lili-om"
 "hku-mars/loam_livox" -> "PRBonn/semantic_suma"
 "hku-mars/loam_livox" -> "koide3/hdl_graph_slam"
+"ros-navigation/navigation2" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"ros-navigation/navigation2" -> "hku-mars/FAST_LIO" ["e"=1]
+"sciplot/sciplot" -> "artivis/kalmanif" ["e"=1]
+"youngguncho/awesome-slam-datasets" -> "SJTU-ViSYS/M2DGR" ["e"=1]
+"youngguncho/awesome-slam-datasets" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"youngguncho/awesome-slam-datasets" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"youngguncho/awesome-slam-datasets" -> "hyye/lio-mapping" ["e"=1]
+"cruise-automation/webviz" -> "koide3/hdl_graph_slam" ["e"=1]
+"huchunxu/ros_exploring" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
+"huchunxu/ros_exploring" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"ros-planning/robot_pose_ekf" -> "Gaochao-hit/LIO-SAM_based_relocalization" ["e"=1]
+"karanchawla/GPS_IMU_Kalman_Filter" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"karanchawla/GPS_IMU_Kalman_Filter" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"karanchawla/GPS_IMU_Kalman_Filter" -> "ethz-asl/lidar_align" ["e"=1]
 "norlab-ulaval/libpointmatcher" -> "ethz-asl/segmap"
 "norlab-ulaval/libpointmatcher" -> "norlab-ulaval/libnabo"
 "norlab-ulaval/libpointmatcher" -> "ethz-asl/ethzasl_icp_mapping"
@@ -59,6 +88,8 @@ digraph G {
 "norlab-ulaval/libpointmatcher" -> "mp3guy/ICPCUDA"
 "norlab-ulaval/libpointmatcher" -> "koide3/interactive_slam"
 "norlab-ulaval/libpointmatcher" -> "ethz-asl/voxblox" ["e"=1]
+"ethz-asl/maplab" -> "ethz-asl/segmap" ["e"=1]
+"laurentkneip/opengv" -> "ethz-asl/segmap" ["e"=1]
 "tudelft-iv/multi_sensor_calibration" -> "beltransen/velo2cam_calibration"
 "tudelft-iv/multi_sensor_calibration" -> "hku-mars/mlcc"
 "tudelft-iv/multi_sensor_calibration" -> "ethz-asl/lidar_align"
@@ -89,15 +120,55 @@ digraph G {
 "RobustFieldAutonomyLab/LeGO-LOAM" -> "ethz-asl/segmap"
 "RobustFieldAutonomyLab/LeGO-LOAM" -> "HKUST-Aerial-Robotics/VINS-Mono" ["e"=1]
 "RobustFieldAutonomyLab/LeGO-LOAM" -> "borglab/gtsam" ["e"=1]
+"HorizonAD/stereo_dso" -> "johannes-graeter/limo" ["e"=1]
+"MichaelGrupp/evo" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"MichaelGrupp/evo" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"MichaelGrupp/evo" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"gaowenliang/imu_utils" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"gaowenliang/imu_utils" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"gaowenliang/imu_utils" -> "ethz-asl/lidar_align" ["e"=1]
+"gaowenliang/imu_utils" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"gaowenliang/imu_utils" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"pptacher/probabilistic_robotics" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"pptacher/probabilistic_robotics" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
 "horizon-research/PointCloud-pipeline" -> "horizon-research/Efficient-Deep-Learning-for-Point-Clouds"
+"ceres-solver/ceres-solver" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"wjwwood/serial" -> "TixiaoShan/LIO-SAM" ["e"=1]
 "TUC-ProAut/libRSF" -> "artivis/kalmanif"
 "TUC-ProAut/libRSF" -> "aau-cns/mars_lib"
 "TUC-ProAut/libRSF" -> "leggedrobotics/graph_msf"
 "TUC-ProAut/libRSF" -> "rvp-group/srrg2_solver"
+"MRPT/mrpt" -> "norlab-ulaval/libpointmatcher" ["e"=1]
+"MRPT/mrpt" -> "laboshinl/loam_velodyne" ["e"=1]
+"MRPT/mrpt" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"MRPT/mrpt" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"okalachev/arucogen" -> "beltransen/velo2cam_calibration" ["e"=1]
 "PointCloudLibrary/data" -> "LiveStockShapeAnalysis/Point-Cloud-Processing-example"
 "PointCloudLibrary/data" -> "code-iai/iai_kinect2" ["e"=1]
 "PointCloudLibrary/data" -> "MNewBie/PCL-Notes"
 "PointCloudLibrary/data" -> "xiaohulugo/PointCloudSegmentation"
+"zhulf0804/3D-PointCloud" -> "MIT-SPARK/TEASER-plusplus" ["e"=1]
+"StevenCui/VIO-Doc" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"Krasjet/quaternion" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"cra-ros-pkg/robot_localization" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"cra-ros-pkg/robot_localization" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"cra-ros-pkg/robot_localization" -> "koide3/hdl_localization" ["e"=1]
+"cra-ros-pkg/robot_localization" -> "koide3/hdl_graph_slam" ["e"=1]
+"cra-ros-pkg/robot_localization" -> "laboshinl/loam_velodyne" ["e"=1]
+"gaoxiang12/slambook2" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"gaoxiang12/slambook2" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"gaoxiang12/slambook2" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"gaoxiang12/slambook2" -> "hku-mars/FAST_LIO" ["e"=1]
+"udacity/robot_pose_ekf" -> "hyye/lio-mapping" ["e"=1]
+"udacity/robot_pose_ekf" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["e"=1]
+"SteveMacenski/slam_toolbox" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"SteveMacenski/slam_toolbox" -> "PRBonn/kiss-icp" ["e"=1]
+"SteveMacenski/slam_toolbox" -> "koide3/hdl_graph_slam" ["e"=1]
+"SteveMacenski/slam_toolbox" -> "hku-mars/FAST_LIO" ["e"=1]
+"cherubicXN/afm_cvpr2019" -> "Zumbalamambo/2D-3D-pose-tracking" ["e"=1]
+"cherubicXN/afm_cvpr2019" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"Celebrandil/CudaSift" -> "mp3guy/ICPCUDA" ["e"=1]
+"irobot-ros/ros2-performance" -> "rsasaki0109/kalman_filter_localization" ["e"=1]
 "heethesh/lidar_camera_calibration" -> "acfr/cam_lidar_calibration"
 "heethesh/lidar_camera_calibration" -> "ankitdhall/lidar_camera_calibration"
 "heethesh/lidar_camera_calibration" -> "beltransen/velo2cam_calibration"
@@ -143,6 +214,15 @@ digraph G {
 "xiaohulugo/3DLineDetection" -> "irapkaist/scancontext"
 "xiaohulugo/3DLineDetection" -> "hku-mars/loam_livox"
 "xiaohulugo/3DLineDetection" -> "hyye/lio-mapping"
+"locusrobotics/fuse" -> "PRBonn/kiss-icp" ["e"=1]
+"locusrobotics/fuse" -> "MOLAorg/mola" ["e"=1]
+"locusrobotics/fuse" -> "at-wat/mcl_3dl" ["e"=1]
+"methylDragon/ros-sensor-fusion-tutorial" -> "at-wat/mcl_3dl" ["e"=1]
+"methylDragon/ros-sensor-fusion-tutorial" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
+"dheera/rosboard" -> "at-wat/mcl_3dl" ["e"=1]
+"MegviiRobot/OdomLaserCalibraTool" -> "MegviiRobot/CamLaserCalibraTool" ["e"=1]
+"MegviiRobot/OdomLaserCalibraTool" -> "hyye/lio-mapping" ["e"=1]
+"autocore-ai/MapToolbox" -> "koide3/interactive_slam" ["e"=1]
 "HKUST-Aerial-Robotics/A-LOAM" -> "RobustFieldAutonomyLab/LeGO-LOAM"
 "HKUST-Aerial-Robotics/A-LOAM" -> "cuitaixiang/LOAM_NOTED"
 "HKUST-Aerial-Robotics/A-LOAM" -> "laboshinl/loam_velodyne"
@@ -173,9 +253,21 @@ digraph G {
 "johannes-graeter/limo" -> "ethz-asl/lidar_align"
 "johannes-graeter/limo" -> "ankitdhall/lidar_camera_calibration"
 "johannes-graeter/limo" -> "erik-nelson/blam"
+"jlblancoc/nanoflann" -> "norlab-ulaval/libpointmatcher" ["e"=1]
+"jlblancoc/nanoflann" -> "koide3/fast_gicp" ["e"=1]
+"jlblancoc/nanoflann" -> "kzampog/cilantro" ["e"=1]
+"jlblancoc/nanoflann" -> "MIT-SPARK/TEASER-plusplus" ["e"=1]
+"jlblancoc/nanoflann" -> "hku-mars/ikd-Tree" ["e"=1]
+"jlblancoc/nanoflann" -> "PRBonn/kiss-icp" ["e"=1]
+"alirezaahmadi/KalmanFilter-Vehicle-GNSS-INS" -> "bkarwoski/EKF_fusion" ["e"=1]
+"HuangCongQing/ROS" -> "HuangCongQing/pcl-learning" ["e"=1]
+"HuangCongQing/ROS" -> "MNewBie/PCL-Notes" ["e"=1]
+"artivis/manif" -> "artivis/kalmanif" ["e"=1]
 "UMich-BipedLab/Contact-Aided-Invariant-EKF" -> "UMich-BipedLab/Cassie_StateEstimation"
 "UMich-BipedLab/Contact-Aided-Invariant-EKF" -> "bkarwoski/EKF_fusion"
 "UMich-BipedLab/Contact-Aided-Invariant-EKF" -> "RossHartley/invariant-ekf"
+"uoip/g2opy" -> "gisbi-kim/PyICP-SLAM" ["e"=1]
+"ori-drs/pronto" -> "RossHartley/invariant-ekf" ["e"=1]
 "koide3/ndt_omp" -> "koide3/fast_gicp"
 "koide3/ndt_omp" -> "koide3/hdl_localization"
 "koide3/ndt_omp" -> "irapkaist/SC-LeGO-LOAM"
@@ -209,6 +301,7 @@ digraph G {
 "SubMishMar/cam_lidar_calib" -> "acfr/cam_lidar_calibration"
 "SubMishMar/cam_lidar_calib" -> "heethesh/lidar_camera_calibration"
 "SubMishMar/cam_lidar_calib" -> "icameling/lidar_camera_calibration"
+"Timthony/self_drive" -> "slam-code/apollo" ["e"=1]
 "koide3/hdl_localization" -> "koide3/hdl_graph_slam"
 "koide3/hdl_localization" -> "at-wat/mcl_3dl"
 "koide3/hdl_localization" -> "koide3/ndt_omp"
@@ -224,6 +317,9 @@ digraph G {
 "koide3/hdl_localization" -> "RozDavid/LOL"
 "koide3/hdl_localization" -> "rsasaki0109/lidar_localization_ros2"
 "koide3/hdl_localization" -> "gisbi-kim/SC-LIO-SAM"
+"shenshikexmu/IMUCalibration-Gesture" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"shenshikexmu/IMUCalibration-Gesture" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"ManiiXu/VINS-Mono-Learning" -> "TixiaoShan/LVI-SAM" ["e"=1]
 "wykxwyc/LeGO-LOAM_NOTED" -> "cuitaixiang/LOAM_NOTED"
 "wykxwyc/LeGO-LOAM_NOTED" -> "irapkaist/SC-LeGO-LOAM"
 "wykxwyc/LeGO-LOAM_NOTED" -> "facontidavide/LeGO-LOAM-BOR"
@@ -254,10 +350,13 @@ digraph G {
 "xiaohulugo/PointCloudSegmentation" -> "Yusheng-Xu/VGS-SVGS-Segmentation" ["e"=1]
 "xiaohulugo/PointCloudSegmentation" -> "LiangliangNan/PolyFit" ["e"=1]
 "xiaohulugo/PointCloudSegmentation" -> "AutoLidarPerception/segmenters_lib" ["e"=1]
+"ydsf16/aruco_ekf_slam" -> "hyye/lio-mapping" ["e"=1]
 "AutoLidarPerception/kitti_lidar_camera" -> "ankitVP77/Sensor-Fusion-for-Object-Detection"
 "AutoLidarPerception/kitti_lidar_camera" -> "AutoLidarPerception/kitti_ros"
 "jediofgever/ROS_Raw_Kitti_Player" -> "jhultman/continuous-fusion"
 "jediofgever/ROS_Raw_Kitti_Player" -> "LiuFG/Camera-Lidar-Fusion-ROS"
+"PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" -> "HuangCongQing/pcl-learning" ["e"=1]
+"naturerobots/mesh_navigation" -> "at-wat/mcl_3dl" ["e"=1]
 "Livox-SDK/livox_ros_driver" -> "Livox-SDK/Livox-SDK"
 "Livox-SDK/livox_ros_driver" -> "Livox-SDK/livox_mapping"
 "Livox-SDK/livox_ros_driver" -> "Livox-SDK/livox_ros_driver2"
@@ -303,6 +402,7 @@ digraph G {
 "cuitaixiang/LOAM_NOTED" -> "TixiaoShan/LIO-SAM"
 "cuitaixiang/LOAM_NOTED" -> "Little-Potato-1990/localization_in_auto_driving"
 "cuitaixiang/LOAM_NOTED" -> "gaoxiang12/faster-lio"
+"YiChenCityU/Recent_SLAM_Research" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
 "linbaowei/ScaleRatioICP" -> "arntanguy/icp"
 "ouster-lidar/ouster-sdk" -> "ouster-lidar/ouster-ros"
 "ouster-lidar/ouster-sdk" -> "ros-drivers/ros2_ouster_drivers"
@@ -334,6 +434,11 @@ digraph G {
 "yangjiaolong/Go-ICP" -> "chrischoy/DeepGlobalRegistration" ["e"=1]
 "yangjiaolong/Go-ICP" -> "WangYueFt/dcp" ["e"=1]
 "yangjiaolong/Go-ICP" -> "STORM-IRIT/OpenGR"
+"tum-vision/fastfusion" -> "mp3guy/ICPCUDA" ["e"=1]
+"tu-darmstadt-ros-pkg/hector_slam" -> "laboshinl/loam_velodyne" ["e"=1]
+"tu-darmstadt-ros-pkg/hector_slam" -> "koide3/hdl_graph_slam" ["e"=1]
+"tu-darmstadt-ros-pkg/hector_slam" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"tu-darmstadt-ros-pkg/hector_slam" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
 "Livox-SDK/Livox-SDK" -> "Livox-SDK/livox_ros_driver"
 "Livox-SDK/Livox-SDK" -> "hku-mars/loam_livox"
 "Livox-SDK/Livox-SDK" -> "Livox-SDK/livox_mapping"
@@ -349,6 +454,7 @@ digraph G {
 "Livox-SDK/Livox-SDK" -> "hku-mars/livox_camera_calib"
 "Livox-SDK/Livox-SDK" -> "gaoxiang12/faster-lio"
 "Livox-SDK/Livox-SDK" -> "ethz-asl/lidar_align"
+"ldeecke/gmm-torch" -> "somanshu25/GPU-Accelerated-Point-Cloud-Registration-Using-Hierarchical-GMM" ["e"=1]
 "gwang-cv/Point-Set-Matching-Registration-Material" -> "bing-jian/gmmreg"
 "gwang-cv/Point-Set-Matching-Registration-Material" -> "neka-nat/probreg"
 "gwang-cv/Point-Set-Matching-Registration-Material" -> "XuyangBai/awesome-point-cloud-registration" ["e"=1]
@@ -405,6 +511,8 @@ digraph G {
 "ohirose/bcpd" -> "rabbityl/DeformationPyramid" ["e"=1]
 "ohirose/bcpd" -> "RobinMagnet/pyFM" ["e"=1]
 "nyummvc/CPD-Net" -> "Lingjing324/PR-Net"
+"lyakaap/NetVLAD-pytorch" -> "mikacuy/pointnetvlad" ["e"=1]
+"wuxiaolang/Visual_SLAM_Related_Research" -> "TixiaoShan/LVI-SAM" ["e"=1]
 "MOLAorg/mola" -> "cocel-postech/genz-icp"
 "MOLAorg/mola" -> "MIT-SPARK/KISS-Matcher"
 "MOLAorg/mola" -> "PRBonn/kinematic-icp"
@@ -421,6 +529,10 @@ digraph G {
 "MOLAorg/mola" -> "facontidavide/Bonxai" ["e"=1]
 "MOLAorg/mola" -> "TUMFTM/OpenLiDARMap"
 "Kitware/LidarView" -> "Kitware/VeloView"
+"facontidavide/rosbag_editor" -> "robotics-upo/dll" ["e"=1]
+"facontidavide/rosbag_editor" -> "at-wat/mcl_3dl" ["e"=1]
+"PRBonn/lidar-bonnetal" -> "PRBonn/semantic_suma" ["e"=1]
+"PRBonn/lidar-bonnetal" -> "jbehley/SuMa" ["e"=1]
 "seven-linglx/icp" -> "arntanguy/icp"
 "YuePanEdward/GH-ICP" -> "ethz-asl/robust_point_cloud_registration"
 "YuePanEdward/GH-ICP" -> "yangjiaolong/Go-ICP"
@@ -436,6 +548,8 @@ digraph G {
 "YuePanEdward/GH-ICP" -> "nmellado/Super4PCS"
 "YuePanEdward/GH-ICP" -> "zhujun3753/i-octree"
 "YuePanEdward/GH-ICP" -> "KIT-ISAS/lili-om"
+"qianyizh/ElasticReconstruction" -> "isl-org/FastGlobalRegistration" ["e"=1]
+"qianyizh/ElasticReconstruction" -> "nmellado/Super4PCS" ["e"=1]
 "facontidavide/LeGO-LOAM-BOR" -> "irapkaist/SC-LeGO-LOAM"
 "facontidavide/LeGO-LOAM-BOR" -> "hyye/lio-mapping"
 "facontidavide/LeGO-LOAM-BOR" -> "wykxwyc/LeGO-LOAM_NOTED"
@@ -481,11 +595,17 @@ digraph G {
 "PRBonn/semantic_suma" -> "ethz-asl/segmap"
 "PRBonn/semantic_suma" -> "gisbi-kim/removert"
 "PRBonn/semantic_suma" -> "PRBonn/rangenet_lib" ["e"=1]
+"christianrauch/apriltag_ros" -> "rsasaki0109/lidar_localization_ros2" ["e"=1]
 "HesaiTechnology/HesaiLidar_General_ROS" -> "HesaiTechnology/HesaiLidar_General_SDK"
 "HesaiTechnology/HesaiLidar_General_ROS" -> "HesaiTechnology/HesaiLidar_ROS_2.0"
 "HesaiTechnology/HesaiLidar_General_ROS" -> "HesaiTechnology/HesaiLidar_Swift_ROS"
+"beedotkiran/Lidar_For_AD_references" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"beedotkiran/Lidar_For_AD_references" -> "szenergy/awesome-lidar" ["e"=1]
+"beedotkiran/Lidar_For_AD_references" -> "ethz-asl/lidar_align" ["e"=1]
 "sunmiaozju/smartcar" -> "XidianLemon/calibration_camera_lidar"
 "sunmiaozju/smartcar" -> "Boyang--Li/Motion-Planning-Course" ["e"=1]
+"Forceflow/cuda_voxelizer" -> "fzi-forschungszentrum-informatik/gpu-voxels" ["e"=1]
+"lgsvl/simulator" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
 "slam-code/apollo" -> "dstarer/Robotics"
 "slam-code/apollo" -> "slam-code/cartographer"
 "slam-code/apollo" -> "slam-code/SLAM" ["e"=1]
@@ -512,8 +632,12 @@ digraph G {
 "dstarer/Robotics" -> "slam-code/apollo"
 "dstarer/Robotics" -> "yajian/self-driving-car"
 "dstarer/Robotics" -> "SiChiTong/AutomatedDrivingSeries"
+"yblin/Supervoxel-for-3D-point-clouds" -> "xiaohulugo/PointCloudSegmentation" ["e"=1]
+"veraposeidon/PointCloudVolumeMeasure" -> "LiveStockShapeAnalysis/Point-Cloud-Processing-example" ["e"=1]
 "richardos/icp" -> "pglira/simpleICP"
 "richardos/icp" -> "agnivsen/icp"
+"sdmiller/cpu_tsdf" -> "mp3guy/ICPCUDA" ["e"=1]
+"HKUST-Aerial-Robotics/DenseSurfelMapping" -> "hyye/lio-mapping" ["e"=1]
 "irapkaist/scancontext" -> "irapkaist/SC-LeGO-LOAM"
 "irapkaist/scancontext" -> "gisbi-kim/SC-LIO-SAM"
 "irapkaist/scancontext" -> "wh200720041/iscloam"
@@ -529,9 +653,26 @@ digraph G {
 "irapkaist/scancontext" -> "TixiaoShan/LVI-SAM"
 "irapkaist/scancontext" -> "gisbi-kim/SC-A-LOAM"
 "irapkaist/scancontext" -> "gogojjh/M-LOAM"
+"zgojcic/3DSmoothNet" -> "MIT-SPARK/TEASER-plusplus" ["e"=1]
+"appinho/SARosPerceptionKitti" -> "jediofgever/ROS_Raw_Kitti_Player" ["e"=1]
+"Ewenwan/Mathematics" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["e"=1]
+"Ewenwan/Mathematics" -> "ethz-asl/segmap" ["e"=1]
+"PaoPaoRobot/ICRA2019-paper-list" -> "hyye/lio-mapping" ["e"=1]
+"MapIV/eagleye" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
+"MapIV/eagleye" -> "koide3/interactive_slam" ["e"=1]
+"MapIV/eagleye" -> "KIT-ISAS/lili-om" ["e"=1]
+"MapIV/eagleye" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"MapIV/eagleye" -> "hku-mars/BALM" ["e"=1]
+"MapIV/eagleye" -> "gisbi-kim/removert" ["e"=1]
+"MapIV/eagleye" -> "rsasaki0109/lidar_localization_ros2" ["e"=1]
+"MapIV/eagleye" -> "wh200720041/iscloam" ["e"=1]
+"JeremyBYU/polylidar" -> "xiaohulugo/3DLineDetection" ["e"=1]
 "AIS-Bonn/rviz_cinematographer" -> "hku-mars/D-Map"
 "agarwa65/lidar_camera_calibration" -> "swyphcosmo/ros-camera-lidar-calibration"
 "EpsAvlc/cam_lidar_fusion" -> "zcbmlijygrdwa/camera_lidar_fusion"
+"MegviiRobot/CamOdomCalibraTool" -> "MegviiRobot/CamLaserCalibraTool" ["e"=1]
+"rpng/kalibr_allan" -> "hyye/lio-mapping" ["e"=1]
+"sfwa/ukf" -> "artivis/kalmanif" ["e"=1]
 "hyye/lio-mapping" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM"
 "hyye/lio-mapping" -> "irapkaist/SC-LeGO-LOAM"
 "hyye/lio-mapping" -> "KIT-ISAS/lili-om"
@@ -565,23 +706,40 @@ digraph G {
 "drethage/PointCloudRegistrationTool" -> "horizon-research/PointCloud-pipeline"
 "drethage/PointCloudRegistrationTool" -> "srv/pointcloud_registration"
 "drethage/PointCloudRegistrationTool" -> "ethz-asl/robust_point_cloud_registration"
+"AlanLuSun/High-quality-ellipse-detection" -> "STORM-IRIT/OpenGR" ["e"=1]
+"UMich-BipedLab/Cassie_Model" -> "UMich-BipedLab/Cassie_StateEstimation" ["e"=1]
 "claydergc/loam_velodyne_kitti_ros" -> "claydergc/loam_velodyne_kitti"
+"mint-lab/awesome-robotics-datasets" -> "gisbi-kim/PyICP-SLAM" ["e"=1]
 "TurtleZhong/camera_lidar_calibration_v2" -> "TurtleZhong/camera_lidar_calibration"
 "TurtleZhong/camera_lidar_calibration_v2" -> "ehong-tl/camera_2d_lidar_calibration"
 "TurtleZhong/camera_lidar_calibration_v2" -> "MegviiRobot/CamLaserCalibraTool"
+"VincentCheungM/Run_based_segmentation" -> "ethz-asl/lidar_align" ["e"=1]
+"VincentCheungM/Run_based_segmentation" -> "LimHyungTae/ERASOR" ["e"=1]
+"VincentCheungM/Run_based_segmentation" -> "KIT-ISAS/lili-om" ["e"=1]
 "stevenliu216/Lidar-Odometry-and-Mapping" -> "Jinqiang/demo_lidar"
 "stevenliu216/Lidar-Odometry-and-Mapping" -> "YuePanEdward/LLS-LOAM"
 "stevenliu216/Lidar-Odometry-and-Mapping" -> "306327680/V-Loam"
 "stevenliu216/Lidar-Odometry-and-Mapping" -> "tiger20/LOAM-multi-thread"
 "stevenliu216/Lidar-Odometry-and-Mapping" -> "claydergc/loam_velodyne_kitti"
+"AutoLidarPerception/segmenters_lib" -> "koide3/interactive_slam" ["e"=1]
 "zjudmd1015/icp" -> "Gregjksmith/Iterative-Closest-Point"
 "zjudmd1015/icp" -> "symao/libicp"
 "zjudmd1015/icp" -> "yangjiaolong/Go-ICP"
 "zjudmd1015/icp" -> "ClayFlannigan/icp"
+"ethz-asl/voxgraph" -> "ethz-asl/wavemap" ["e"=1]
+"ethz-asl/voxgraph" -> "ISEE-Technology/CamVox" ["e"=1]
+"ethz-asl/voxgraph" -> "PRBonn/puma" ["e"=1]
+"ethz-asl/voxgraph" -> "hku-mars/BALM" ["e"=1]
+"ethz-asl/voxgraph" -> "versatran01/llol" ["e"=1]
+"ethz-asl/voxgraph" -> "gogojjh/M-LOAM" ["e"=1]
+"ethz-asl/voxgraph" -> "hku-mars/ImMesh" ["e"=1]
 "AutoLidarPerception/kitti_ros" -> "AutoLidarPerception/kitti_lidar_camera"
 "zcbmlijygrdwa/camera_lidar_fusion" -> "EpsAvlc/cam_lidar_fusion"
 "zcbmlijygrdwa/camera_lidar_fusion" -> "Sadaku1993/sensor_fusion"
 "godloveliang/SFND_3D_Object_Tracking" -> "Ram-Godavarthi/Sensor_Fusion_3D_Object_Tracking_Lidar-Camera"
+"koide3/hdl_people_tracking" -> "koide3/hdl_localization" ["e"=1]
+"koide3/hdl_people_tracking" -> "koide3/interactive_slam" ["e"=1]
+"GSORF/Visual-GPS-SLAM" -> "EdwardLiuyc/StaticMapping" ["e"=1]
 "RoboSense-LiDAR/ros_rslidar" -> "RoboSense-LiDAR/rslidar_sdk"
 "ethz-asl/ethzasl_icp_mapping" -> "ethz-asl/laser_slam"
 "ethz-asl/ethzasl_icp_mapping" -> "norlab-ulaval/libpointmatcher"
@@ -597,6 +755,10 @@ digraph G {
 "RossHartley/invariant-ekf" -> "ShuoYangRobotics/Cerberus" ["e"=1]
 "RossHartley/invariant-ekf" -> "cggos/imu_x_fusion" ["e"=1]
 "RossHartley/invariant-ekf" -> "artivis/manif" ["e"=1]
+"dongjing3309/minisam" -> "hyye/lio-mapping" ["e"=1]
+"dongjing3309/minisam" -> "gisbi-kim/PyICP-SLAM" ["e"=1]
+"yewzijian/3DFeatNet" -> "JuanDuGit/DH3D" ["e"=1]
+"yewzijian/3DFeatNet" -> "felja633/DARE" ["e"=1]
 "ai4ce/DeepMapping" -> "felja633/DARE"
 "ai4ce/DeepMapping" -> "ai4ce/DeepMapping2"
 "ai4ce/DeepMapping" -> "ai4ce/DeepSoRo"
@@ -617,8 +779,10 @@ digraph G {
 "epiception/CalibNet" -> "anlif/mi-extrinsic-calib"
 "epiception/CalibNet" -> "cmpute/chainer-regnet"
 "epiception/CalibNet" -> "beltransen/velo2cam_calibration"
+"mengyuest/iros2018-slam-papers" -> "ethz-asl/laser_slam" ["e"=1]
 "dimatura/loam_continuous" -> "dani-carbonell/loam_back_and_forth"
 "dimatura/loam_continuous" -> "daobilige-su/loam_continuous"
+"yzrobot/adaptive_clustering" -> "xiaohulugo/PointCloudSegmentation" ["e"=1]
 "LinZhuoChen/awesome-point-cloud-learning" -> "dashidhy/awesome-point-cloud-deep-learning"
 "LinZhuoChen/awesome-point-cloud-learning" -> "dianyunPCL/deep_learning-point-cloud"
 "ram-lab/lidar_appearance_calibration" -> "ram-lab/MLC"
@@ -627,11 +791,13 @@ digraph G {
 "ram-lab/lidar_appearance_calibration" -> "AlienCat-K/LiDAR-Automatic-Calibration"
 "ram-lab/lidar_appearance_calibration" -> "BIT-MJY/Multiple_Lidar_Calibration"
 "ram-lab/lidar_appearance_calibration" -> "gogojjh/M-LOAM"
+"uzh-rpg/netvlad_tf_open" -> "mikacuy/pointnetvlad" ["e"=1]
 "jyakaranda/ndt_map" -> "jyakaranda/A-LeGO-LOAM"
 "jyakaranda/ndt_map" -> "melhousni/ndt_mapping_localization"
 "jyakaranda/ndt_map" -> "zju-sclab/NDT-library"
 "jyakaranda/ndt_map" -> "MalcolmMielle/ndt_feature_graph"
 "ReillyBova/Point-Cloud-Registration" -> "dakshaau/ICP"
+"fverdoja/Fast-3D-Pointcloud-Segmentation" -> "xiaohulugo/PointCloudSegmentation" ["e"=1]
 "rsasaki0109/lidar_localizer" -> "AbangLZU/ndt_localizer"
 "rsasaki0109/lidar_localizer" -> "melhousni/ndt_mapping_localization"
 "ehong-tl/camera_2d_lidar_calibration" -> "TurtleZhong/camera_lidar_calibration_v2"
@@ -644,6 +810,7 @@ digraph G {
 "wuzhengy/gpsCalibration" -> "jyakaranda/A-LeGO-LOAM"
 "TurtleZhong/camera_lidar_calibration" -> "TurtleZhong/camera_lidar_calibration_v2"
 "TurtleZhong/camera_lidar_calibration" -> "ehong-tl/camera_2d_lidar_calibration"
+"ethz-asl/cblox" -> "EdwardLiuyc/StaticMapping" ["e"=1]
 "AbangLZU/multi_lidar_calibration" -> "ram-lab/lidar_appearance_calibration"
 "AbangLZU/multi_lidar_calibration" -> "FENGChenxi0823/SensorCalibration"
 "AbangLZU/multi_lidar_calibration" -> "Livox-SDK/Livox_automatic_calibration"
@@ -666,6 +833,7 @@ digraph G {
 "cattaneod/PointNetVlad-Pytorch" -> "fpthink/PPT-Net"
 "mrpt-ros-pkg/mrpt_slam" -> "mrpt-ros-pkg/mrpt_navigation"
 "ram-lab/MLC" -> "ram-lab/lidar_appearance_calibration"
+"OrebroUniversity/perception_oru-release" -> "MalcolmMielle/ndt_feature_graph" ["e"=1]
 "Lingjing324/PR-Net" -> "nyummvc/CPD-Net"
 "Lingjing324/PR-Net" -> "jiayi-ma/RPM-L2E"
 "felja633/DARE" -> "Lingjing324/PR-Net"
@@ -680,6 +848,13 @@ digraph G {
 "FPAI/VoxelSequenceNet" -> "FPAI/Deeplabv3Seg"
 "FPAI/Deeplabv3Seg" -> "FPAI/VoxelSequenceNet"
 "FPAI/Deeplabv3Seg" -> "FPAI/PPCL"
+"electech6/ORB_SLAM2_detailed_comments" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"ZJU-FAST-Lab/ego-planner" -> "hku-mars/FAST_LIO" ["e"=1]
+"ANYbotics/grid_map" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"ANYbotics/grid_map" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"ANYbotics/grid_map" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"ANYbotics/grid_map" -> "hku-mars/FAST_LIO" ["e"=1]
+"ANYbotics/grid_map" -> "laboshinl/loam_velodyne" ["e"=1]
 "APRIL-ZJU/lidar_IMU_calib" -> "ethz-asl/lidar_align"
 "APRIL-ZJU/lidar_IMU_calib" -> "chennuo0125-HIT/lidar_imu_calib"
 "APRIL-ZJU/lidar_IMU_calib" -> "hku-mars/LiDAR_IMU_Init"
@@ -700,9 +875,15 @@ digraph G {
 "rsasaki0109/li_slam_ros2" -> "at-wat/mcl_3dl"
 "rsasaki0109/li_slam_ros2" -> "rsasaki0109/kalman_filter_localization"
 "rsasaki0109/li_slam_ros2" -> "rohrschacht/FAST_LIO_SLAM_ros2"
+"ethz-asl/kalibr" -> "TixiaoShan/LIO-SAM" ["e"=1]
 "catec/amcl3d" -> "at-wat/mcl_3dl"
 "catec/amcl3d" -> "RozDavid/LOL"
 "catec/amcl3d" -> "rsasaki0109/amcl_3d"
+"TUMFTM/CameraRadarFusionNet" -> "tudelft-iv/multi_sensor_calibration" ["e"=1]
+"tier4/AutowareArchitectureProposal.proj" -> "koide3/interactive_slam" ["e"=1]
+"tier4/AutowareArchitectureProposal.proj" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"tier4/AutowareArchitectureProposal.proj" -> "sunmiaozju/smartcar" ["e"=1]
+"tier4/AutowareArchitectureProposal.proj" -> "irapkaist/SC-LeGO-LOAM" ["e"=1]
 "TixiaoShan/LIO-SAM" -> "hku-mars/FAST_LIO"
 "TixiaoShan/LIO-SAM" -> "RobustFieldAutonomyLab/LeGO-LOAM"
 "TixiaoShan/LIO-SAM" -> "HKUST-Aerial-Robotics/A-LOAM"
@@ -718,6 +899,9 @@ digraph G {
 "TixiaoShan/LIO-SAM" -> "wh200720041/floam"
 "TixiaoShan/LIO-SAM" -> "HKUST-Aerial-Robotics/VINS-Fusion" ["e"=1]
 "TixiaoShan/LIO-SAM" -> "gisbi-kim/SC-LIO-SAM"
+"weisongwen/UrbanLoco" -> "APRIL-ZJU/clins" ["e"=1]
+"weisongwen/UrbanLoco" -> "SJTU-ViSYS/M2DGR" ["e"=1]
+"weisongwen/UrbanLoco" -> "wh200720041/iscloam" ["e"=1]
 "gisbi-kim/removert" -> "LimHyungTae/ERASOR"
 "gisbi-kim/removert" -> "PRBonn/LiDAR-MOS" ["e"=1]
 "gisbi-kim/removert" -> "gisbi-kim/SC-LIO-SAM"
@@ -733,6 +917,12 @@ digraph G {
 "gisbi-kim/removert" -> "PRBonn/OverlapNet"
 "gisbi-kim/removert" -> "wh200720041/iscloam"
 "gisbi-kim/removert" -> "jedeschaud/ct_icp"
+"chengyangkj/Ros_Qt5_Gui_App" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"chengyangkj/Ros_Qt5_Gui_App" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
+"chengyangkj/Ros_Qt5_Gui_App" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
+"chengyangkj/Ros_Qt5_Gui_App" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"chengyangkj/Ros_Qt5_Gui_App" -> "gaoxiang12/faster-lio" ["e"=1]
+"6-robot/wpr_simulation" -> "fishros/install" ["e"=1]
 "UMich-BipedLab/extrinsic_lidar_camera_calibration" -> "mfxox/ILCC"
 "UMich-BipedLab/extrinsic_lidar_camera_calibration" -> "heethesh/lidar_camera_calibration"
 "UMich-BipedLab/extrinsic_lidar_camera_calibration" -> "beltransen/velo2cam_calibration"
@@ -748,13 +938,25 @@ digraph G {
 "UMich-BipedLab/extrinsic_lidar_camera_calibration" -> "unmannedlab/imu_lidar_calibration"
 "UMich-BipedLab/extrinsic_lidar_camera_calibration" -> "chennuo0125-HIT/lidar_imu_calib"
 "UMich-BipedLab/extrinsic_lidar_camera_calibration" -> "acfr/cam_lidar_calibration"
+"leomariga/pyRANSAC-3D" -> "neka-nat/probreg" ["e"=1]
+"leomariga/pyRANSAC-3D" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"HongbiaoZ/autonomous_exploration_development_environment" -> "hku-mars/Point-LIO" ["e"=1]
+"HongbiaoZ/autonomous_exploration_development_environment" -> "HViktorTsoi/FAST_LIO_LOCALIZATION" ["e"=1]
+"HongbiaoZ/autonomous_exploration_development_environment" -> "hku-mars/ikd-Tree" ["e"=1]
+"UZ-SLAMLab/ORB_SLAM3" -> "TixiaoShan/LIO-SAM" ["e"=1]
 "fzi-forschungszentrum-informatik/gpu-voxels" -> "JanuszBedkowski/gpu_computing_in_robotics"
 "fzi-forschungszentrum-informatik/gpu-voxels" -> "tesseract-robotics/tesseract" ["e"=1]
 "fzi-forschungszentrum-informatik/gpu-voxels" -> "neka-nat/cupoch"
+"mikeferguson/ros2_cookbook" -> "PRBonn/kiss-icp" ["e"=1]
 "kxhit/SG_PR" -> "lilin-hitcrt/SSC"
 "kxhit/SG_PR" -> "MaverickPeter/DiSCO-pytorch"
 "kxhit/SG_PR" -> "csiro-robotics/locus"
 "kxhit/SG_PR" -> "BigMoWangying/LiDAR-Iris"
+"stotko/stdgpu" -> "neka-nat/cupoch" ["e"=1]
+"opendr-eu/opendr" -> "PRBonn/kiss-icp" ["e"=1]
+"TurtleZhong/Map-based-Visual-Localization" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"introlab/rtabmap" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"introlab/rtabmap_ros" -> "TixiaoShan/LIO-SAM" ["e"=1]
 "rsasaki0109/lidarslam_ros2" -> "rsasaki0109/li_slam_ros2"
 "rsasaki0109/lidarslam_ros2" -> "rsasaki0109/lidar_localization_ros2"
 "rsasaki0109/lidarslam_ros2" -> "koide3/glim"
@@ -770,6 +972,9 @@ digraph G {
 "rsasaki0109/lidarslam_ros2" -> "koide3/hdl_localization"
 "rsasaki0109/lidarslam_ros2" -> "koide3/interactive_slam"
 "rsasaki0109/lidarslam_ros2" -> "cocel-postech/genz-icp"
+"Liber-coder/CV_Notes" -> "HuangCongQing/pcl-learning" ["e"=1]
+"Liber-coder/CV_Notes" -> "zhouyong1234/SLAM-All-In-One" ["e"=1]
+"Liber-coder/CV_Notes" -> "LiveStockShapeAnalysis/Point-Cloud-Processing-example" ["e"=1]
 "gadomski/cpd" -> "bing-jian/gmmreg"
 "gadomski/cpd" -> "siavashk/pycpd"
 "gadomski/cpd" -> "gadomski/fgt"
@@ -785,7 +990,18 @@ digraph G {
 "gadomski/cpd" -> "drethage/PointCloudRegistrationTool"
 "gadomski/cpd" -> "yaoyx689/Fast-Robust-ICP"
 "gadomski/cpd" -> "kzampog/cilantro"
+"qxiaofan/awesome-3dcv-papers-daily" -> "HuangCongQing/pcl-learning" ["e"=1]
+"qxiaofan/awesome-3dcv-papers-daily" -> "SJTU-ViSYS/M2DGR" ["e"=1]
+"qxiaofan/awesome-3dcv-papers-daily" -> "MNewBie/PCL-Notes" ["e"=1]
+"niessner/VoxelHashing" -> "mp3guy/ICPCUDA" ["e"=1]
+"fendouai/OpenCVTutorials" -> "HuangCongQing/pcl-learning" ["e"=1]
+"autowarefoundation/autoware_ai_perception" -> "rsasaki0109/lidar_localizer" ["e"=1]
+"autowarefoundation/autoware_ai_perception" -> "XidianLemon/calibration_camera_lidar" ["e"=1]
+"anshulpaigwar/GndNet" -> "haomo-ai/MotionSeg3D" ["e"=1]
+"mathiasmantelli/awesome-mobile-robotics" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
 "fpthink/EPC-Net" -> "fpthink/PPT-Net"
+"halajun/VDO_SLAM" -> "zhuhu00/Awesome_Dynamic_SLAM" ["e"=1]
+"neozhaoliang/surround-view-system-introduction" -> "PJLab-ADG/SensorsCalibration" ["e"=1]
 "LiuFG/Camera-Lidar-Fusion-ROS" -> "EPVelasco/lidar-camera-fusion"
 "LiuFG/Camera-Lidar-Fusion-ROS" -> "jediofgever/ROS_Raw_Kitti_Player"
 "LiuFG/Camera-Lidar-Fusion-ROS" -> "jhultman/continuous-fusion"
@@ -841,11 +1057,23 @@ digraph G {
 "UnknownFreeOccupied/ufomap" -> "LTU-RAI/ExplorationRRT" ["e"=1]
 "UnknownFreeOccupied/ufomap" -> "NeBula-Autonomy/LOCUS"
 "UnknownFreeOccupied/ufomap" -> "uestc-icsp/VoxelMapPlus_Public"
+"nobleo/rviz_satellite" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"nobleo/rviz_satellite" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"nobleo/rviz_satellite" -> "zijiechenrobotics/ig_lio" ["e"=1]
+"nobleo/rviz_satellite" -> "wh200720041/iscloam" ["e"=1]
+"nobleo/rviz_satellite" -> "at-wat/mcl_3dl" ["e"=1]
+"nobleo/rviz_satellite" -> "KIT-ISAS/lili-om" ["e"=1]
+"nobleo/rviz_satellite" -> "vectr-ucla/direct_lidar_inertial_odometry" ["e"=1]
+"nobleo/rviz_satellite" -> "engcang/SLAM-application" ["e"=1]
+"nobleo/rviz_satellite" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
 "Zumbalamambo/2D-3D-pose-tracking" -> "cattaneod/CMRNet"
 "Zumbalamambo/2D-3D-pose-tracking" -> "hyye/dsl"
 "Zumbalamambo/2D-3D-pose-tracking" -> "tony1098/Stereo-Localization-in-LiDAR-Maps"
 "Zumbalamambo/2D-3D-pose-tracking" -> "MapIV/iris"
 "Zumbalamambo/2D-3D-pose-tracking" -> "HyHuang1995/gmmloc"
+"cggos/imu_x_fusion" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"cggos/imu_x_fusion" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"cggos/imu_x_fusion" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
 "yaoyx689/Fast-Robust-ICP" -> "YuePanEdward/GH-ICP"
 "yaoyx689/Fast-Robust-ICP" -> "koide3/fast_gicp"
 "yaoyx689/Fast-Robust-ICP" -> "url-kaist/Quatro"
@@ -861,6 +1089,9 @@ digraph G {
 "yaoyx689/Fast-Robust-ICP" -> "uestc-icsp/VoxelMapPlus_Public"
 "yaoyx689/Fast-Robust-ICP" -> "chengwei0427/ct-lio"
 "yaoyx689/Fast-Robust-ICP" -> "hku-mars/BALM"
+"simondlevy/BreezySLAM" -> "erik-nelson/blam" ["e"=1]
+"simondlevy/BreezySLAM" -> "gisbi-kim/PyICP-SLAM" ["e"=1]
+"simondlevy/BreezySLAM" -> "ethz-asl/segmap" ["e"=1]
 "szenergy/awesome-lidar" -> "Deephome/Awesome-LiDAR-Camera-Calibration"
 "szenergy/awesome-lidar" -> "PRBonn/kiss-icp"
 "szenergy/awesome-lidar" -> "beedotkiran/Lidar_For_AD_references" ["e"=1]
@@ -876,6 +1107,7 @@ digraph G {
 "szenergy/awesome-lidar" -> "PRBonn/depth_clustering" ["e"=1]
 "szenergy/awesome-lidar" -> "PRBonn/LiDAR-MOS" ["e"=1]
 "szenergy/awesome-lidar" -> "TixiaoShan/LIO-SAM"
+"uzh-rpg/deep_drone_acrobatics" -> "uzh-rpg/rl_vo" ["e"=1]
 "Little-Potato-1990/localization_in_auto_driving" -> "irapkaist/SC-LeGO-LOAM"
 "Little-Potato-1990/localization_in_auto_driving" -> "APRIL-ZJU/lidar_IMU_calib"
 "Little-Potato-1990/localization_in_auto_driving" -> "wykxwyc/LeGO-LOAM_NOTED"
@@ -891,6 +1123,9 @@ digraph G {
 "Little-Potato-1990/localization_in_auto_driving" -> "irapkaist/scancontext"
 "Little-Potato-1990/localization_in_auto_driving" -> "hku-mars/loam_livox"
 "Little-Potato-1990/localization_in_auto_driving" -> "wh200720041/floam"
+"ethz-asl/ethzasl_msf" -> "hyye/lio-mapping" ["e"=1]
+"ethz-asl/ethzasl_msf" -> "ethz-asl/segmap" ["e"=1]
+"MIT-SPARK/Kimera-Semantics" -> "PRBonn/semantic_suma" ["e"=1]
 "MIT-SPARK/TEASER-plusplus" -> "koide3/fast_gicp"
 "MIT-SPARK/TEASER-plusplus" -> "hku-mars/BALM"
 "MIT-SPARK/TEASER-plusplus" -> "irapkaist/scancontext"
@@ -906,7 +1141,9 @@ digraph G {
 "MIT-SPARK/TEASER-plusplus" -> "TixiaoShan/LIO-SAM"
 "MIT-SPARK/TEASER-plusplus" -> "hku-mars/r3live"
 "MIT-SPARK/TEASER-plusplus" -> "zhangxy0517/3D-Registration-with-Maximal-Cliques" ["e"=1]
+"xiaofeng419/SLAM-2D-LIDAR-SCAN" -> "gisbi-kim/PyICP-SLAM" ["e"=1]
 "JokerJohn/opensource_slam_noted" -> "JokerJohn/xchu_slam"
+"electech6/LearnSLAM" -> "wykxwyc/LeGO-LOAM_NOTED" ["e"=1]
 "wh200720041/floam" -> "wh200720041/iscloam"
 "wh200720041/floam" -> "irapkaist/SC-LeGO-LOAM"
 "wh200720041/floam" -> "HKUST-Aerial-Robotics/A-LOAM"
@@ -937,6 +1174,12 @@ digraph G {
 "Gaochao-hit/LIO-SAM_based_relocalization" -> "ZikangYuan/liw_oam"
 "Gaochao-hit/LIO-SAM_based_relocalization" -> "w111liang222/lidar-slam-detection"
 "Gaochao-hit/LIO-SAM_based_relocalization" -> "hku-mars/LiDAR_IMU_Init"
+"MIT-SPARK/Kimera" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"qixianyu-buaa/EigenChineseDocument" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"qixianyu-buaa/EigenChineseDocument" -> "LiveStockShapeAnalysis/Point-Cloud-Processing-example" ["e"=1]
+"qixianyu-buaa/EigenChineseDocument" -> "MNewBie/PCL-Notes" ["e"=1]
+"qixianyu-buaa/EigenChineseDocument" -> "kahowang/sensor-fusion-for-localization-and-mapping" ["e"=1]
+"qixianyu-buaa/EigenChineseDocument" -> "MegviiRobot/CamLaserCalibraTool" ["e"=1]
 "cattaneod/CMRNet" -> "Zumbalamambo/2D-3D-pose-tracking"
 "cattaneod/CMRNet" -> "IIPCVLAB/LCCNet"
 "cattaneod/CMRNet" -> "robot-learning-freiburg/CMRNext"
@@ -977,6 +1220,9 @@ digraph G {
 "koide3/fast_gicp" -> "APRIL-ZJU/lidar_IMU_calib"
 "koide3/fast_gicp" -> "hku-mars/STD"
 "koide3/fast_gicp" -> "HKUST-Aerial-Robotics/A-LOAM"
+"wentaoyuan/deepgmr" -> "somanshu25/GPU-Accelerated-Point-Cloud-Registration-Using-Hierarchical-GMM" ["e"=1]
+"addy1997/Robotics-Resources" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
+"leggedrobotics/se2_navigation" -> "leggedrobotics/icp_localization" ["e"=1]
 "gisbi-kim/PyICP-SLAM" -> "gisbi-kim/SC-A-LOAM"
 "gisbi-kim/PyICP-SLAM" -> "irapkaist/scancontext"
 "gisbi-kim/PyICP-SLAM" -> "irapkaist/SC-LeGO-LOAM"
@@ -1006,6 +1252,8 @@ digraph G {
 "Livox-SDK/Livox_automatic_calibration" -> "Livox-SDK/LIO-Livox"
 "Livox-SDK/Livox_automatic_calibration" -> "gogojjh/M-LOAM"
 "Livox-SDK/Livox_automatic_calibration" -> "ethz-asl/lidar_align"
+"facontidavide/CPP_Optimizations_Diary" -> "PRBonn/kiss-icp" ["e"=1]
+"facontidavide/CPP_Optimizations_Diary" -> "jedeschaud/ct_icp" ["e"=1]
 "RozDavid/LOL" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM"
 "RozDavid/LOL" -> "wh200720041/iscloam"
 "RozDavid/LOL" -> "irapkaist/scancontext"
@@ -1036,6 +1284,12 @@ digraph G {
 "nmellado/Super4PCS" -> "gilbaz/LORAX" ["e"=1]
 "nmellado/Super4PCS" -> "avsegal/gicp"
 "nmellado/Super4PCS" -> "YuePanEdward/GH-ICP"
+"ydsf16/imu_gps_localization" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["e"=1]
+"ydsf16/imu_gps_localization" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"ydsf16/imu_gps_localization" -> "gaoxiang12/faster-lio" ["e"=1]
+"ydsf16/imu_gps_localization" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"ydsf16/imu_gps_localization" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"ydsf16/imu_gps_localization" -> "Gaochao-hit/LIO-SAM_based_relocalization" ["e"=1]
 "irapkaist/SC-LeGO-LOAM" -> "irapkaist/scancontext"
 "irapkaist/SC-LeGO-LOAM" -> "wh200720041/iscloam"
 "irapkaist/SC-LeGO-LOAM" -> "facontidavide/LeGO-LOAM-BOR"
@@ -1084,6 +1338,14 @@ digraph G {
 "Livox-SDK/livox_relocalization" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "Livox-SDK/livox_relocalization" -> "SiyuanHuang95/Livox-Localization"
 "Livox-SDK/livox_relocalization" -> "Livox-SDK/horizon_highway_slam"
+"weisongwen/UrbanNavDataset" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"weisongwen/UrbanNavDataset" -> "SJTU-ViSYS/M2DGR" ["e"=1]
+"PRBonn/rangenet_lib" -> "PRBonn/semantic_suma" ["e"=1]
+"PRBonn/rangenet_lib" -> "PRBonn/overlap_localization" ["e"=1]
+"PRBonn/rangenet_lib" -> "PRBonn/OverlapNet" ["e"=1]
+"PRBonn/rangenet_lib" -> "jbehley/SuMa" ["e"=1]
+"PRBonn/rangenet_lib" -> "lilin-hitcrt/SSC" ["e"=1]
+"PRBonn/rangenet_lib" -> "gisbi-kim/removert" ["e"=1]
 "RoboSense-LiDAR/rs_driver" -> "RoboSense-LiDAR/rslidar_sdk"
 "RoboSense-LiDAR/rs_driver" -> "RoboSense-LiDAR/ros_rslidar"
 "neka-nat/cupoch" -> "JanuszBedkowski/gpu_computing_in_robotics"
@@ -1115,9 +1377,16 @@ digraph G {
 "pglira/simpleICP" -> "isl-org/FastGlobalRegistration"
 "pglira/simpleICP" -> "ohirose/bcpd"
 "pglira/simpleICP" -> "koide3/small_gicp"
+"PaoPaoRobot/ICRA2020-paper-list" -> "hyye/lio-mapping" ["e"=1]
+"PaoPaoRobot/ICRA2020-paper-list" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"PaoPaoRobot/ICRA2020-paper-list" -> "YuePanEdward/MULLS" ["e"=1]
+"PaoPaoRobot/ICRA2020-paper-list" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["e"=1]
+"naurril/SUSTechPOINTS" -> "PJLab-ADG/SensorsCalibration" ["e"=1]
+"dynamicslab/pykoopman" -> "decargroup/pykoop" ["e"=1]
 "cgbcgb/A-LOAM-NOTED" -> "wykxwyc/LeGO-LOAM_NOTED"
 "cgbcgb/A-LOAM-NOTED" -> "JokerJohn/opensource_slam_noted"
 "cgbcgb/A-LOAM-NOTED" -> "cuitaixiang/LOAM_NOTED"
+"yanyan-li/SLAM-BOOK" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
 "EdwardLiuyc/StaticMapping" -> "KIT-ISAS/lili-om"
 "EdwardLiuyc/StaticMapping" -> "wh200720041/iscloam"
 "EdwardLiuyc/StaticMapping" -> "hyye/lio-mapping"
@@ -1127,7 +1396,10 @@ digraph G {
 "EdwardLiuyc/StaticMapping" -> "koide3/interactive_slam"
 "EdwardLiuyc/StaticMapping" -> "irapkaist/scancontext"
 "EdwardLiuyc/StaticMapping" -> "gogojjh/M-LOAM"
+"bgrimstad/splinter" -> "APRIL-ZJU/Coco-LIC" ["e"=1]
+"darylclimb/cvml_project" -> "heethesh/lidar_camera_calibration" ["e"=1]
 "UMich-BipedLab/LiDARTag" -> "UMich-BipedLab/extrinsic_lidar_camera_calibration"
+"klintan/vo-survey" -> "gisbi-kim/nano-pgo" ["e"=1]
 "AlienCat-K/LiDAR-Automatic-Calibration" -> "yinwu33/multi_lidar_calibration"
 "RoboSense-LiDAR/rslidar_sdk" -> "RoboSense-LiDAR/rs_driver"
 "RoboSense-LiDAR/rslidar_sdk" -> "RoboSense-LiDAR/ros_rslidar"
@@ -1145,6 +1417,9 @@ digraph G {
 "RoboSense-LiDAR/rslidar_sdk" -> "url-kaist/patchwork-plusplus-ros" ["e"=1]
 "RoboSense-LiDAR/rslidar_sdk" -> "RobustFieldAutonomyLab/LeGO-LOAM"
 "bkarwoski/EKF_fusion" -> "UMich-BipedLab/Contact-Aided-Invariant-EKF"
+"juj/MathGeoLib" -> "gabyx/ApproxMVBB" ["e"=1]
+"jizhang-cmu/ground_based_autonomy_basic" -> "HViktorTsoi/FAST_LIO_LOCALIZATION" ["e"=1]
+"ntnu-arl/mbplanner_ros" -> "hku-mars/ROG-Map" ["e"=1]
 "koide3/interactive_slam" -> "irapkaist/SC-LeGO-LOAM"
 "koide3/interactive_slam" -> "hyye/lio-mapping"
 "koide3/interactive_slam" -> "koide3/hdl_graph_slam"
@@ -1171,6 +1446,7 @@ digraph G {
 "Livox-SDK/livox_high_precision_mapping" -> "Livox-SDK/livox_scanner"
 "hku-mars/lidar_car_platfrom" -> "hku-mars/multi_lidar_calib"
 "hku-mars/lidar_car_platfrom" -> "hku-mars/decentralized_loam"
+"ROS-Mobile/ROS-Mobile-Android" -> "NaokiAkai/als_ros" ["e"=1]
 "Matnay/Sensor_Fusion_Object_Detection_KPIT" -> "DGIST-ARTIV/Fusion-LiDAR-Camera"
 "KleinYuan/RGGNet" -> "LvXudong-HIT/LCCNet"
 "KleinYuan/RGGNet" -> "aaronlws95/regnet"
@@ -1178,6 +1454,7 @@ digraph G {
 "ai4ce/SPARE3D" -> "ai4ce/Self-Supervised-SPARE3D"
 "ai4ce/SPARE3D" -> "cluster3d/cluster3d.github.io"
 "ai4ce/SPARE3D" -> "ai4ce/SNAC"
+"iris-ua/iris_lama_ros" -> "at-wat/mcl_3dl" ["e"=1]
 "Livox-SDK/livox_camera_lidar_calibration" -> "hku-mars/livox_camera_calib"
 "Livox-SDK/livox_camera_lidar_calibration" -> "Livox-SDK/Livox_automatic_calibration"
 "Livox-SDK/livox_camera_lidar_calibration" -> "Livox-SDK/livox_mapping"
@@ -1208,6 +1485,8 @@ digraph G {
 "wh200720041/ssl_slam" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM"
 "wh200720041/ssl_slam" -> "ISEE-Technology/CamVox"
 "wh200720041/ssl_slam" -> "YuePanEdward/MULLS"
+"iris-ua/iris_lama" -> "at-wat/mcl_3dl" ["e"=1]
+"iris-ua/iris_lama" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
 "Kitware/VeloView" -> "ros-drivers/velodyne"
 "Kitware/VeloView" -> "UnaNancyOwen/VelodyneCapture"
 "Kitware/VeloView" -> "Kitware/LidarView"
@@ -1262,6 +1541,12 @@ digraph G {
 "koide3/iridescence" -> "dhchung/nv_liom"
 "koide3/iridescence" -> "ethz-asl/wavemap"
 "koide3/iridescence" -> "ali-pahlevani/GenZ_ICP_Optimized"
+"wsunid/awesome-point-clouds-registration" -> "gwang-cv/Point-Set-Matching-Registration-Material" ["e"=1]
+"wsunid/awesome-point-clouds-registration" -> "ethz-asl/robust_point_cloud_registration" ["e"=1]
+"wsunid/awesome-point-clouds-registration" -> "MIT-SPARK/TEASER-plusplus" ["e"=1]
+"wsunid/awesome-point-clouds-registration" -> "neka-nat/probreg" ["e"=1]
+"wsunid/awesome-point-clouds-registration" -> "YuePanEdward/GH-ICP" ["e"=1]
+"wsunid/awesome-point-clouds-registration" -> "yaoyx689/Fast-Robust-ICP" ["e"=1]
 "nilseuropa/realsense_ros_gazebo" -> "m-tartari/realsense_gazebo_description"
 "nilseuropa/realsense_ros_gazebo" -> "fratopa/Mid360_simulation_plugin"
 "nilseuropa/realsense_ros_gazebo" -> "pal-robotics/realsense_gazebo_plugin"
@@ -1275,6 +1560,9 @@ digraph G {
 "FENGChenxi0823/SensorCalibration" -> "chennuo0125-HIT/lidar_imu_calib"
 "FENGChenxi0823/SensorCalibration" -> "AbangLZU/multi_lidar_calibration"
 "FENGChenxi0823/SensorCalibration" -> "liyang-whu/lidar_rtk_calibration"
+"botforge/CUDA-ScanMatcher-ICP" -> "mp3guy/ICPCUDA" ["e"=1]
+"CAOR-MINES-ParisTech/ukfm" -> "artivis/kalmanif" ["e"=1]
+"hkust-vgd/lcd" -> "JuanDuGit/DH3D" ["e"=1]
 "tttamaki/ICP-test" -> "seven-linglx/icp"
 "HesaiTechnology/HesaiLidar_General_SDK" -> "HesaiTechnology/HesaiLidar_General_ROS"
 "gabyx/ApproxMVBB" -> "kzampog/cilantro"
@@ -1391,6 +1679,7 @@ digraph G {
 "hku-mars/r2live" -> "hku-mars/livox_camera_calib"
 "hku-mars/r2live" -> "HKUST-Aerial-Robotics/GVINS" ["e"=1]
 "hku-mars/r2live" -> "hku-mars/loam_livox"
+"awesome-photogrammetry/awesome-photogrammetry" -> "szenergy/awesome-lidar" ["e"=1]
 "hku-mars/FAST_LIO" -> "TixiaoShan/LIO-SAM"
 "hku-mars/FAST_LIO" -> "gaoxiang12/faster-lio"
 "hku-mars/FAST_LIO" -> "hku-mars/r3live"
@@ -1421,6 +1710,12 @@ digraph G {
 "gisbi-kim/SC-LIO-SAM" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "gisbi-kim/SC-LIO-SAM" -> "hku-mars/BALM"
 "gisbi-kim/SC-LIO-SAM" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM"
+"xiangli0608/Creating-2D-laser-slam-from-scratch" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
+"xiangli0608/Creating-2D-laser-slam-from-scratch" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"xiangli0608/Creating-2D-laser-slam-from-scratch" -> "smilefacehh/LIO-SAM-DetailedNote" ["e"=1]
+"xiangli0608/Creating-2D-laser-slam-from-scratch" -> "kahowang/sensor-fusion-for-localization-and-mapping" ["e"=1]
+"xiangli0608/Creating-2D-laser-slam-from-scratch" -> "wykxwyc/LeGO-LOAM_NOTED" ["e"=1]
+"xiangli0608/Creating-2D-laser-slam-from-scratch" -> "MegviiRobot/CamLaserCalibraTool" ["e"=1]
 "smilefacehh/LIO-SAM-DetailedNote" -> "JokerJohn/LIO_SAM_6AXIS"
 "smilefacehh/LIO-SAM-DetailedNote" -> "yanliang-wang/FAST_LIO_LC"
 "smilefacehh/LIO-SAM-DetailedNote" -> "kahowang/FAST_LIO_SAM"
@@ -1451,6 +1746,8 @@ digraph G {
 "LimHyungTae/ERASOR" -> "HViktorTsoi/PV-LIO"
 "LimHyungTae/ERASOR" -> "KTH-RPL/DynamicMap_Benchmark"
 "LimHyungTae/ERASOR" -> "ethz-asl/dynablox"
+"jbehley/octree" -> "zhujun3753/i-octree" ["e"=1]
+"jbehley/octree" -> "nmellado/Super4PCS" ["e"=1]
 "gisbi-kim/lt-mapper" -> "gisbi-kim/removert"
 "gisbi-kim/lt-mapper" -> "hku-mars/HBA"
 "gisbi-kim/lt-mapper" -> "jedeschaud/ct_icp"
@@ -1496,6 +1793,12 @@ digraph G {
 "kahowang/sensor-fusion-for-localization-and-mapping" -> "hku-mars/STD"
 "kahowang/sensor-fusion-for-localization-and-mapping" -> "engcang/SLAM-application"
 "kahowang/sensor-fusion-for-localization-and-mapping" -> "w111liang222/lidar-slam-detection"
+"COONEO/neor_mini" -> "AbangLZU/ndt_localizer" ["e"=1]
+"COONEO/neor_mini" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
+"XuyangBai/awesome-point-cloud-registration" -> "MIT-SPARK/TEASER-plusplus" ["e"=1]
+"XuyangBai/awesome-point-cloud-registration" -> "neka-nat/probreg" ["e"=1]
+"XuyangBai/awesome-point-cloud-registration" -> "gwang-cv/Point-Set-Matching-Registration-Material" ["e"=1]
+"XuyangBai/awesome-point-cloud-registration" -> "yaoyx689/Fast-Robust-ICP" ["e"=1]
 "hku-mars/ikd-Tree" -> "hku-mars/IKFoM"
 "hku-mars/ikd-Tree" -> "gaoxiang12/faster-lio"
 "hku-mars/ikd-Tree" -> "hku-mars/r2live"
@@ -1511,6 +1814,10 @@ digraph G {
 "hku-mars/ikd-Tree" -> "HViktorTsoi/FAST_LIO_LOCALIZATION"
 "hku-mars/ikd-Tree" -> "jedeschaud/ct_icp"
 "hku-mars/ikd-Tree" -> "gisbi-kim/removert"
+"electech6/ORB_SLAM3_detailed_comments" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"electech6/ORB_SLAM3_detailed_comments" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"stella-cv/stella_vslam" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"stella-cv/stella_vslam" -> "hku-mars/r3live" ["e"=1]
 "PRBonn/puma" -> "PRBonn/range-mcl"
 "PRBonn/puma" -> "PRBonn/vdbfusion" ["e"=1]
 "PRBonn/puma" -> "lab-sun/SLAMesh"
@@ -1581,6 +1888,12 @@ digraph G {
 "xiangli0608/cartographer_detailed_comments_ws" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "xiangli0608/cartographer_detailed_comments_ws" -> "MegviiRobot/OdomLaserCalibraTool" ["e"=1]
 "xiangli0608/cartographer_detailed_comments_ws" -> "HKUST-Aerial-Robotics/A-LOAM"
+"dyfcalid/CameraCalibration" -> "PJLab-ADG/SensorsCalibration" ["e"=1]
+"dyfcalid/CameraCalibration" -> "Deephome/Awesome-LiDAR-Camera-Calibration" ["e"=1]
+"mkazhdan/PoissonRecon" -> "kzampog/cilantro" ["e"=1]
+"HKUST-Aerial-Robotics/GVINS" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"HKUST-Aerial-Robotics/GVINS" -> "gaoxiang12/faster-lio" ["e"=1]
+"HKUST-Aerial-Robotics/GVINS" -> "hku-mars/r3live" ["e"=1]
 "HuangCongQing/3D-Point-Clouds" -> "HuangCongQing/3D-LIDAR-Multi-Object-Tracking" ["e"=1]
 "HuangCongQing/3D-Point-Clouds" -> "HuangCongQing/pcl-learning"
 "HuangCongQing/3D-Point-Clouds" -> "lizhangjie316/Awesome-3D-Point-Cloud-Semantic-Segement"
@@ -1596,12 +1909,32 @@ digraph G {
 "HuangCongQing/3D-Point-Clouds" -> "TianhaoFu/Awesome-3D-Object-Detection" ["e"=1]
 "HuangCongQing/3D-Point-Clouds" -> "hailanyi/3D-Detection-Tracking-Viewer" ["e"=1]
 "HuangCongQing/3D-Point-Clouds" -> "PointsCoder/Awesome-3D-Object-Detection-for-Autonomous-Driving" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "gisbi-kim/removert" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "PRBonn/4DMOS" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "LimHyungTae/ERASOR" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "haomo-ai/MotionSeg3D" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "PRBonn/semantic_suma" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "jedeschaud/ct_icp" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "gisbi-kim/lt-mapper" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "hku-mars/M-detector" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "YuePanEdward/MULLS" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "PRBonn/OverlapNet" ["e"=1]
+"PRBonn/LiDAR-MOS" -> "gisbi-kim/SC-LIO-SAM" ["e"=1]
+"geographiclib/geographiclib" -> "Joanna-HE/LIGO." ["e"=1]
+"geographiclib/geographiclib" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"avisingh599/mono-vo" -> "johannes-graeter/limo" ["e"=1]
+"carzum/termviz" -> "PRBonn/kinematic-icp" ["e"=1]
+"carzum/termviz" -> "NaokiAkai/mcl3d_ros" ["e"=1]
 "ZikangYuan/SDV-LOAM" -> "ZikangYuan/liw_oam"
 "ZikangYuan/SDV-LOAM" -> "ZikangYuan/sr_lio"
 "ZikangYuan/SDV-LOAM" -> "ZikangYuan/sr_livo"
 "ZikangYuan/SDV-LOAM" -> "minwoo0611/MA-LIO"
 "ZikangYuan/SDV-LOAM" -> "xingyuuchen/LIO-PPF"
 "ZikangYuan/SDV-LOAM" -> "ZikangYuan/semi_elastic_lio"
+"HuangCongQing/3D-LIDAR-Multi-Object-Tracking" -> "HuangCongQing/3D-Point-Clouds" ["e"=1]
+"HuangCongQing/3D-LIDAR-Multi-Object-Tracking" -> "Livox-SDK/livox_detection" ["e"=1]
+"HuangCongQing/3D-LIDAR-Multi-Object-Tracking" -> "HuangCongQing/pcl-learning" ["e"=1]
 "issaiass/realsense2_description" -> "issaiass/realsense_gazebo_plugin"
 "issaiass/realsense2_description" -> "pal-robotics/realsense_gazebo_plugin"
 "engcang/SLAM-application" -> "gaoxiang12/faster-lio"
@@ -1646,6 +1979,8 @@ digraph G {
 "leggedrobotics/icp_localization" -> "leggedrobotics/se2_navigation" ["e"=1]
 "leggedrobotics/icp_localization" -> "RozDavid/LOL"
 "leggedrobotics/icp_localization" -> "vectr-ucla/direct_lidar_inertial_odometry"
+"mikeroyal/Photogrammetry-Guide" -> "szenergy/awesome-lidar" ["e"=1]
+"foxglove/studio" -> "PRBonn/kiss-icp" ["e"=1]
 "HViktorTsoi/FAST_LIO_LOCALIZATION" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "HViktorTsoi/FAST_LIO_LOCALIZATION" -> "gisbi-kim/FAST_LIO_SLAM"
 "HViktorTsoi/FAST_LIO_LOCALIZATION" -> "yanliang-wang/FAST_LIO_LC"
@@ -1661,10 +1996,20 @@ digraph G {
 "HViktorTsoi/FAST_LIO_LOCALIZATION" -> "hku-mars/BALM"
 "HViktorTsoi/FAST_LIO_LOCALIZATION" -> "vectr-ucla/direct_lidar_inertial_odometry"
 "HViktorTsoi/FAST_LIO_LOCALIZATION" -> "hku-mars/FAST-LIVO"
+"ros2/ros1_bridge" -> "rsasaki0109/lidarslam_ros2" ["e"=1]
+"ros2/ros1_bridge" -> "rsasaki0109/lidar_localization_ros2" ["e"=1]
+"zm0612/eskf-gps-imu-fusion" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"zm0612/eskf-gps-imu-fusion" -> "chengwei0427/ct-lio" ["e"=1]
+"zm0612/eskf-gps-imu-fusion" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"zm0612/eskf-gps-imu-fusion" -> "Little-Potato-1990/localization_in_auto_driving" ["e"=1]
+"zm0612/eskf-gps-imu-fusion" -> "ZikangYuan/liw_oam" ["e"=1]
+"zm0612/eskf-gps-imu-fusion" -> "hku-mars/LiDAR_IMU_Init" ["e"=1]
+"koide3/slam_docker_collection" -> "rsasaki0109/lidar_localizer" ["e"=1]
 "jac99/MinkLocMultimodal" -> "jac99/MinkLoc3Dv2"
 "jac99/MinkLocMultimodal" -> "jac99/MinkLoc3D"
 "jac99/MinkLocMultimodal" -> "jac99/Egonn"
 "jac99/MinkLocMultimodal" -> "haomo-ai/OverlapTransformer"
+"OpenGP/htrack" -> "OpenGP/sparseicp" ["e"=1]
 "hku-mars/BALM" -> "hku-mars/HBA"
 "hku-mars/BALM" -> "hku-mars/STD"
 "hku-mars/BALM" -> "hku-mars/VoxelMap"
@@ -1695,6 +2040,13 @@ digraph G {
 "YuePanEdward/MULLS" -> "hku-mars/VoxelMap"
 "YuePanEdward/MULLS" -> "gogojjh/M-LOAM"
 "YuePanEdward/MULLS" -> "irapkaist/SC-LeGO-LOAM"
+"IPNL-POLYU/UrbanNavDataset" -> "SJTU-ViSYS/M2DGR" ["e"=1]
+"IPNL-POLYU/UrbanNavDataset" -> "zijiechenrobotics/ig_lio" ["e"=1]
+"IPNL-POLYU/UrbanNavDataset" -> "NeBula-Autonomy/LOCUS" ["e"=1]
+"IPNL-POLYU/UrbanNavDataset" -> "hku-mars/STD" ["e"=1]
+"IPNL-POLYU/UrbanNavDataset" -> "minwoo0611/MA-LIO" ["e"=1]
+"IPNL-POLYU/UrbanNavDataset" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
+"xiihoo/Books_Robot_SLAM_Navigation" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
 "nkliuhui/sync_gps_lidar_imu_cam" -> "ZhuangYanDLUT/hard_sync_dut"
 "nkliuhui/sync_gps_lidar_imu_cam" -> "jypjypjypjyp/lvio_fusion"
 "nkliuhui/sync_gps_lidar_imu_cam" -> "TurtleZhong/LVIO-SAM"
@@ -1704,13 +2056,27 @@ digraph G {
 "aau-cns/mars_lib" -> "leggedrobotics/graph_msf"
 "aau-cns/mars_lib" -> "aau-cns/MSCEqF"
 "aau-cns/mars_lib" -> "TUC-ProAut/libRSF"
+"uzh-rpg/rpg_svo_pro_open" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"uzh-rpg/rpg_svo_pro_open" -> "hku-mars/r3live" ["e"=1]
+"uzh-rpg/rpg_svo_pro_open" -> "gaoxiang12/faster-lio" ["e"=1]
+"ros-perception/pointcloud_to_laserscan" -> "Gaochao-hit/LIO-SAM_based_relocalization" ["e"=1]
+"ros-perception/pointcloud_to_laserscan" -> "rsasaki0109/lidar_localization_ros2" ["e"=1]
+"ros-perception/pointcloud_to_laserscan" -> "rsasaki0109/lidarslam_ros2" ["e"=1]
+"ros-perception/pointcloud_to_laserscan" -> "HViktorTsoi/FAST_LIO_LOCALIZATION" ["e"=1]
+"jkk-research/urban_road_filter" -> "w111liang222/lidar-slam-detection" ["e"=1]
 "HViktorTsoi/rs_to_velodyne" -> "chennuo0125-HIT/lidar_imu_calib"
 "HViktorTsoi/rs_to_velodyne" -> "GDUT-Kyle/faster_lio_sam"
 "HViktorTsoi/rs_to_velodyne" -> "yanliang-wang/FAST_LIO_LC"
 "HViktorTsoi/rs_to_velodyne" -> "Cc19245/LVI-SAM-Easyused"
+"LimHyungTae/patchwork" -> "LimHyungTae/ERASOR" ["e"=1]
+"LimHyungTae/patchwork" -> "gisbi-kim/removert" ["e"=1]
+"LimHyungTae/patchwork" -> "url-kaist/Quatro" ["e"=1]
+"LimHyungTae/patchwork" -> "gisbi-kim/lt-mapper" ["e"=1]
+"LimHyungTae/patchwork" -> "wh200720041/iscloam" ["e"=1]
 "wh200720041/intensity_slam" -> "wh200720041/iscloam"
 "wh200720041/intensity_slam" -> "RoboFeng/RI-LIO"
 "wh200720041/intensity_slam" -> "minwoo0611/IA_LIO_SAM"
+"MaxChanger/awesome-point-cloud-scene-flow" -> "haomo-ai/MotionSeg3D" ["e"=1]
 "lilin-hitcrt/SSC" -> "kxhit/SG_PR"
 "lilin-hitcrt/SSC" -> "lewisjiang/contour-context"
 "lilin-hitcrt/SSC" -> "JoestarK/LiDAR-Iris"
@@ -1884,10 +2250,12 @@ digraph G {
 "Livox-SDK/livox_ros2_driver" -> "Livox-SDK/Livox-SDK2"
 "Livox-SDK/livox_ros2_driver" -> "Livox-SDK/livox_ros_driver2"
 "decargroup/pykoop" -> "decargroup/pymlg"
+"xieqi1/VINS-Mono-noted" -> "electech6/LVI-SAM_detailed_comments" ["e"=1]
 "FAIRSpace-AdMaLL/ndt_localizer" -> "FAIRSpace-AdMaLL/liosam_mapper"
 "DGIST-ARTIV/Fusion-LiDAR-Camera" -> "Matnay/Sensor_Fusion_Object_Detection_KPIT"
 "cluster3d/cluster3d.github.io" -> "ai4ce/Self-Supervised-SPARE3D"
 "cluster3d/cluster3d.github.io" -> "ai4ce/SPARE3D"
+"rameau-fr/MC-Calib" -> "hku-mars/mlcc" ["e"=1]
 "NVIDIA-AI-IOT/cuPCL" -> "NVIDIA-AI-IOT/CUDA-PointPillars" ["e"=1]
 "NVIDIA-AI-IOT/cuPCL" -> "koide3/fast_gicp"
 "NVIDIA-AI-IOT/cuPCL" -> "NVIDIA-AI-IOT/Lidar_AI_Solution" ["e"=1]
@@ -1915,6 +2283,7 @@ digraph G {
 "HViktorTsoi/ACSC" -> "hku-mars/decentralized_loam"
 "HViktorTsoi/ACSC" -> "xmba15/automatic_lidar_camera_calibration"
 "HViktorTsoi/ACSC" -> "HViktorTsoi/FAST_LIO_LOCALIZATION"
+"hku-mars/dyn_small_obs_avoidance" -> "hku-mars/ROG-Map" ["e"=1]
 "gisbi-kim/FAST_LIO_SLAM" -> "yanliang-wang/FAST_LIO_LC"
 "gisbi-kim/FAST_LIO_SLAM" -> "HViktorTsoi/FAST_LIO_LOCALIZATION"
 "gisbi-kim/FAST_LIO_SLAM" -> "kahowang/FAST_LIO_SAM"
@@ -1965,6 +2334,10 @@ digraph G {
 "arntanguy/icp" -> "linbaowei/ScaleRatioICP"
 "leggedrobotics/delora" -> "SRainGit/CAE-LO" ["e"=1]
 "leggedrobotics/delora" -> "dachengxiaocheng/NDT-Transformer"
+"wanghuayou1028/ICRA2021-SLAM-paper-list" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"wanghuayou1028/ICRA2021-SLAM-paper-list" -> "hku-mars/BALM" ["e"=1]
+"wanghuayou1028/ICRA2021-SLAM-paper-list" -> "gogojjh/M-LOAM" ["e"=1]
+"wanghuayou1028/ICRA2021-SLAM-paper-list" -> "hku-mars/r2live" ["e"=1]
 "mit-acl/clipper" -> "HKUST-Aerial-Robotics/G3Reg"
 "mit-acl/clipper" -> "url-kaist/Quatro"
 "KIT-ISAS/lili-om" -> "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM"
@@ -2102,6 +2475,8 @@ digraph G {
 "ai4ce/NYU-VPR" -> "ai4ce/Self-Supervised-SPARE3D"
 "ai4ce/NYU-VPR" -> "ai4ce/SNAC"
 "ai4ce/SNAC" -> "ai4ce/Self-Supervised-SPARE3D"
+"ZJU-FAST-Lab/Fast-Drone-250" -> "hku-mars/FAST_LIO" ["e"=1]
+"jjw-DL/OpenPCDet-Noted" -> "HuangCongQing/pcdet-note" ["e"=1]
 "fishros/install" -> "fishros/d2l-ros2" ["e"=1]
 "fishros/install" -> "hku-mars/FAST_LIO"
 "fishros/install" -> "hku-mars/FAST-LIVO2"
@@ -2132,6 +2507,8 @@ digraph G {
 "hku-mars/r3live" -> "hku-mars/loam_livox"
 "hku-mars/r3live" -> "HKUST-Aerial-Robotics/A-LOAM"
 "hku-mars/r3live" -> "gaoxiang12/slam_in_autonomous_driving"
+"autowarefoundation/autoware" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"autowarefoundation/autoware" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
 "gaoxiang12/faster-lio" -> "hku-mars/FAST_LIO"
 "gaoxiang12/faster-lio" -> "hku-mars/Point-LIO"
 "gaoxiang12/faster-lio" -> "hku-mars/FAST-LIVO"
@@ -2147,12 +2524,24 @@ digraph G {
 "gaoxiang12/faster-lio" -> "engcang/SLAM-application"
 "gaoxiang12/faster-lio" -> "hku-mars/VoxelMap"
 "gaoxiang12/faster-lio" -> "hku-mars/STD"
+"tum-vision/tandem" -> "YuePanEdward/MULLS" ["e"=1]
+"lukasvst/dm-vio" -> "hku-mars/FAST-LIVO" ["e"=1]
+"lukasvst/dm-vio" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"lukasvst/dm-vio" -> "gaoxiang12/faster-lio" ["e"=1]
+"HITSZ-NRSL/Dynamic-VINS" -> "zhuhu00/Awesome_Dynamic_SLAM" ["e"=1]
+"sair-lab/AirSLAM" -> "hku-mars/FAST-LIVO" ["e"=1]
+"KangLiao929/Awesome-Deep-Camera-Calibration" -> "Deephome/Awesome-LiDAR-Camera-Calibration" ["e"=1]
+"KangLiao929/Awesome-Deep-Camera-Calibration" -> "IIPCVLAB/LCCNet" ["e"=1]
+"KangLiao929/Awesome-Deep-Camera-Calibration" -> "OpenCalib/CalibAnything" ["e"=1]
 "csiro-robotics/LoGG3D-Net" -> "jac99/MinkLoc3Dv2"
 "csiro-robotics/LoGG3D-Net" -> "jac99/Egonn"
 "csiro-robotics/LoGG3D-Net" -> "csiro-robotics/SpectralGV"
 "csiro-robotics/LoGG3D-Net" -> "csiro-robotics/locus"
 "csiro-robotics/LoGG3D-Net" -> "slothfulxtx/TransLoc3D"
 "csiro-robotics/LoGG3D-Net" -> "dachengxiaocheng/NDT-Transformer"
+"NVIDIA-ISAAC-ROS/isaac_ros_nvblox" -> "ethz-asl/wavemap" ["e"=1]
+"Vincentqyw/cv-arxiv-daily" -> "zhuhu00/Awesome_Dynamic_SLAM" ["e"=1]
+"Vincentqyw/cv-arxiv-daily" -> "TixiaoShan/LVI-SAM" ["e"=1]
 "SJTU-ViSYS/M2DGR" -> "gaoxiang12/faster-lio"
 "SJTU-ViSYS/M2DGR" -> "hku-mars/BALM"
 "SJTU-ViSYS/M2DGR" -> "hku-mars/STD"
@@ -2168,6 +2557,9 @@ digraph G {
 "SJTU-ViSYS/M2DGR" -> "weisongwen/UrbanLoco" ["e"=1]
 "SJTU-ViSYS/M2DGR" -> "hku-mars/HBA"
 "SJTU-ViSYS/M2DGR" -> "APRIL-ZJU/lidar_IMU_calib"
+"fishros/d2l-ros2" -> "fishros/install" ["e"=1]
+"fishros/d2l-ros2" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"fishros/d2l-ros2" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
 "OpenCalib/JointCalib" -> "alibaba/multiple-cameras-and-3D-LiDARs-extrinsic-calibration"
 "OpenCalib/JointCalib" -> "OpenCalib/CalibAnything"
 "OpenCalib/JointCalib" -> "Xujianhong123Allen/sensor_calibration"
@@ -2191,6 +2583,7 @@ digraph G {
 "haomo-ai/OverlapTransformer" -> "zjuluolun/BVMatch"
 "haomo-ai/OverlapTransformer" -> "jac99/MinkLocMultimodal"
 "haomo-ai/OverlapTransformer" -> "nubot-nudt/LCR-Net"
+"duyongquan/LTSLAM" -> "zhouyong1234/SLAM-All-In-One" ["e"=1]
 "ethz-asl/wavemap" -> "ethz-asl/dynablox"
 "ethz-asl/wavemap" -> "ethz-asl/COIN-LIO"
 "ethz-asl/wavemap" -> "UnknownFreeOccupied/ufomap"
@@ -2230,6 +2623,9 @@ digraph G {
 "NaokiAkai/als_ros" -> "rsasaki0109/lidar_localization_ros2"
 "NaokiAkai/als_ros" -> "jkk-research/wayp_plan_tools" ["e"=1]
 "NaokiAkai/als_ros" -> "ryuichiueda/emcl"
+"liuguitao/AVP-SLAM-PLUS" -> "gaoxiang12/faster-lio" ["e"=1]
+"liuguitao/AVP-SLAM-PLUS" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"liuguitao/AVP-SLAM-PLUS" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
 "hku-mars/LiDAR_IMU_Init" -> "APRIL-ZJU/lidar_IMU_calib"
 "hku-mars/LiDAR_IMU_Init" -> "hku-mars/Point-LIO"
 "hku-mars/LiDAR_IMU_Init" -> "hku-mars/BALM"
@@ -2248,6 +2644,20 @@ digraph G {
 "MetaSLAM/AutoMerge_Docker" -> "MetaSLAM/AutoMemory_Docker"
 "MetaSLAM/AutoMerge_Docker" -> "gisbi-kim/lt-mapper"
 "MetaSLAM/AutoMerge_Docker" -> "uestc-icsp/VoxelMapPlus_Public"
+"MichaelFYang/far_planner" -> "hku-mars/Point-LIO" ["e"=1]
+"MichaelFYang/far_planner" -> "hku-mars/ROG-Map" ["e"=1]
+"mmolero/awesome-point-cloud-processing" -> "xiaohulugo/PointCloudSegmentation" ["e"=1]
+"mmolero/awesome-point-cloud-processing" -> "ethz-asl/robust_point_cloud_registration" ["e"=1]
+"mmolero/awesome-point-cloud-processing" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"mmolero/awesome-point-cloud-processing" -> "kzampog/cilantro" ["e"=1]
+"mmolero/awesome-point-cloud-processing" -> "nmellado/Super4PCS" ["e"=1]
+"pypose/pypose" -> "PRBonn/kiss-icp" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "chennuo0125-HIT/lidar_imu_calib" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "laboshinl/loam_velodyne" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "ethz-asl/lidar_align" ["e"=1]
+"CCNYRoboticsLab/imu_tools" -> "hyye/lio-mapping" ["e"=1]
 "PRBonn/point-cloud-prediction" -> "PRBonn/deep-point-map-compression" ["e"=1]
 "PRBonn/point-cloud-prediction" -> "Blurryface0814/PCPNet"
 "haomo-ai/MotionSeg3D" -> "PRBonn/4DMOS"
@@ -2257,6 +2667,7 @@ digraph G {
 "haomo-ai/MotionSeg3D" -> "PRBonn/auto-mos"
 "haomo-ai/MotionSeg3D" -> "PRBonn/MapMOS"
 "haomo-ai/MotionSeg3D" -> "LimHyungTae/ERASOR"
+"symforce-org/symforce" -> "PRBonn/kiss-icp" ["e"=1]
 "vectr-ucla/direct_lidar_odometry" -> "vectr-ucla/direct_lidar_inertial_odometry"
 "vectr-ucla/direct_lidar_odometry" -> "jedeschaud/ct_icp"
 "vectr-ucla/direct_lidar_odometry" -> "hku-mars/VoxelMap"
@@ -2299,6 +2710,11 @@ digraph G {
 "hku-mars/FAST-LIVO" -> "vectr-ucla/direct_lidar_odometry"
 "hku-mars/FAST-LIVO" -> "lukasvst/dm-vio" ["e"=1]
 "hku-mars/FAST-LIVO" -> "kahowang/FAST_LIO_SAM"
+"NeBula-Autonomy/LAMP" -> "NeBula-Autonomy/LOCUS" ["e"=1]
+"NeBula-Autonomy/LAMP" -> "NeBula-Autonomy/nebula-odometry-dataset" ["e"=1]
+"NeBula-Autonomy/LAMP" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
+"NeBula-Autonomy/LAMP" -> "jedeschaud/ct_icp" ["e"=1]
+"NeBula-Autonomy/LAMP" -> "MetaSLAM/AutoMerge_Docker" ["e"=1]
 "NeBula-Autonomy/LOCUS" -> "NeBula-Autonomy/nebula-odometry-dataset"
 "NeBula-Autonomy/LOCUS" -> "NeBula-Autonomy/LAMP" ["e"=1]
 "NeBula-Autonomy/LOCUS" -> "vectr-ucla/direct_lidar_odometry"
@@ -2308,7 +2724,13 @@ digraph G {
 "NeBula-Autonomy/LOCUS" -> "versatran01/llol"
 "NeBula-Autonomy/LOCUS" -> "HViktorTsoi/PV-LIO"
 "NeBula-Autonomy/LOCUS" -> "url-kaist/Quatro"
+"NVIDIA-ISAAC-ROS/isaac_ros_visual_slam" -> "PRBonn/kiss-icp" ["e"=1]
+"autowarefoundation/autoware_universe" -> "PJLab-ADG/SensorsCalibration" ["e"=1]
+"autowarefoundation/autoware_universe" -> "rsasaki0109/lidarslam_ros2" ["e"=1]
 "NaokiAkai/mcl_ros" -> "ryuichiueda/emcl"
+"JingwenWang95/DSP-SLAM" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"UMich-CURLY-teaching/UMich-ROB-530-public" -> "RossHartley/invariant-ekf" ["e"=1]
+"UMich-CURLY-teaching/UMich-ROB-530-public" -> "artivis/kalmanif" ["e"=1]
 "PJLab-ADG/Livox-Mapping" -> "SiyuanHuang95/Livox-Localization"
 "PJLab-ADG/Livox-Mapping" -> "Livox-SDK/LIO-Livox"
 "PJLab-ADG/Livox-Mapping" -> "KIT-ISAS/lili-om"
@@ -2354,15 +2776,38 @@ digraph G {
 "hku-mars/mlcc" -> "beltransen/velo2cam_calibration"
 "hku-mars/mlcc" -> "gisbi-kim/lt-mapper"
 "hku-mars/mlcc" -> "uestc-icsp/VoxelMapPlus_Public"
+"ori-drs/allan_variance_ros" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"ori-drs/allan_variance_ros" -> "vectr-ucla/direct_lidar_inertial_odometry" ["e"=1]
+"ori-drs/allan_variance_ros" -> "hku-mars/BALM" ["e"=1]
+"ori-drs/allan_variance_ros" -> "JokerJohn/LIO_SAM_6AXIS" ["e"=1]
 "calibtoolkit/calibration_kit" -> "hku-mars/mlcc"
 "calibtoolkit/calibration_kit" -> "gaoxiang12/faster-lio"
 "calibtoolkit/calibration_kit" -> "YuePanEdward/MULLS"
 "calibtoolkit/calibration_kit" -> "liuguitao/AVP-SLAM-PLUS" ["e"=1]
+"versatran01/dsol" -> "APRIL-ZJU/clins" ["e"=1]
 "rvp-group/mdslam" -> "rvp-group/ba-mdslam"
+"cvg/nice-slam" -> "hku-mars/r3live" ["e"=1]
+"mp3guy/Kintinuous" -> "mp3guy/ICPCUDA" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "LimHyungTae/ERASOR" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "jedeschaud/ct_icp" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "gisbi-kim/lt-mapper" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "vectr-ucla/direct_lidar_odometry" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "gisbi-kim/removert" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "koide3/fast_gicp" ["e"=1]
+"url-kaist/patchwork-plusplus" -> "hku-mars/LiDAR_IMU_Init" ["e"=1]
+"facontidavide/Bonxai" -> "ethz-asl/wavemap" ["e"=1]
+"facontidavide/Bonxai" -> "PRBonn/kiss-icp" ["e"=1]
+"facontidavide/Bonxai" -> "MOLAorg/mola" ["e"=1]
+"facontidavide/Bonxai" -> "PRBonn/MapClosures" ["e"=1]
+"facontidavide/Bonxai" -> "PRBonn/kinematic-icp" ["e"=1]
+"facontidavide/Bonxai" -> "koide3/small_gicp" ["e"=1]
+"facontidavide/Bonxai" -> "koide3/glim" ["e"=1]
+"facontidavide/Bonxai" -> "PRBonn/kiss-slam" ["e"=1]
 "pvangoor/eqvio" -> "pvangoor/eqf_vio"
 "pvangoor/eqvio" -> "aau-cns/MSCEqF"
 "pvangoor/eqvio" -> "aau-cns/ABC-EqF"
 "pvangoor/eqvio" -> "pvangoor/GIFT"
+"scomup/MathematicalRobotics" -> "NaokiAkai/mcl3d_ros" ["e"=1]
 "url-kaist/Quatro" -> "engcang/FAST-LIO-SAM-QN"
 "url-kaist/Quatro" -> "minwoo0611/MA-LIO"
 "url-kaist/Quatro" -> "hku-mars/LTAOM"
@@ -2378,6 +2823,11 @@ digraph G {
 "url-kaist/Quatro" -> "HKUST-Aerial-Robotics/G3Reg"
 "url-kaist/Quatro" -> "chengwei0427/ct-lio"
 "url-kaist/Quatro" -> "kevin2431/Traj-LO"
+"stereolabs/zed-ros-wrapper" -> "ros-drivers/velodyne" ["e"=1]
+"PRBonn/vdbfusion" -> "PRBonn/puma" ["e"=1]
+"PRBonn/vdbfusion" -> "hku-mars/ImMesh" ["e"=1]
+"PRBonn/vdbfusion" -> "JunyuanDeng/NeRF-LOAM" ["e"=1]
+"PRBonn/vdbfusion" -> "PRBonn/kiss-icp" ["e"=1]
 "ClayFlannigan/icp" -> "agnivsen/icp"
 "ClayFlannigan/icp" -> "pglira/simpleICP"
 "ClayFlannigan/icp" -> "zjudmd1015/icp"
@@ -2409,6 +2859,9 @@ digraph G {
 "zhuhu00/Awesome_Dynamic_SLAM" -> "silencht/SG-SLAM" ["e"=1]
 "zhuhu00/Awesome_Dynamic_SLAM" -> "ethz-asl/dynablox"
 "zhuhu00/Awesome_Dynamic_SLAM" -> "ivipsourcecode/DS-SLAM" ["e"=1]
+"vmayoral/ros-robotics-companies" -> "PRBonn/kiss-icp" ["e"=1]
+"ouenal/scribblekitti" -> "llijiang/GuidedContrast" ["e"=1]
+"NVIDIA-AI-IOT/CUDA-PointPillars" -> "NVIDIA-AI-IOT/cuPCL" ["e"=1]
 "hku-mars/VoxelMap" -> "HViktorTsoi/PV-LIO"
 "hku-mars/VoxelMap" -> "uestc-icsp/VoxelMapPlus_Public"
 "hku-mars/VoxelMap" -> "hku-mars/BALM"
@@ -2444,6 +2897,8 @@ digraph G {
 "yanliang-wang/FAST_LIO_LC" -> "hku-mars/HBA"
 "yanliang-wang/FAST_LIO_LC" -> "Yixin-F/better_fastlio2"
 "yanliang-wang/FAST_LIO_LC" -> "hku-mars/VoxelMap"
+"gtbook/robotics" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
+"MIT-SPARK/Hydra" -> "hku-mars/VoxelMap" ["e"=1]
 "Huguet57/LIMO-Velo" -> "fetty31/fast_LIMO"
 "Huguet57/LIMO-Velo" -> "minwoo0611/MA-LIO"
 "JokerJohn/LIO_SAM_6AXIS" -> "YJZLuckyBoy/liorf"
@@ -2461,16 +2916,30 @@ digraph G {
 "JokerJohn/LIO_SAM_6AXIS" -> "hku-mars/BALM"
 "JokerJohn/LIO_SAM_6AXIS" -> "ZikangYuan/liw_oam"
 "JokerJohn/LIO_SAM_6AXIS" -> "vectr-ucla/direct_lidar_odometry"
+"kam3k/laser_line_extraction" -> "MegviiRobot/CamLaserCalibraTool" ["e"=1]
 "lewisjiang/contour-context" -> "hku-mars/btc_descriptor"
+"dottantgal/ROS2_learning" -> "PRBonn/kiss-icp" ["e"=1]
+"url-kaist/TRAVEL" -> "LimHyungTae/ERASOR" ["e"=1]
+"url-kaist/TRAVEL" -> "uestc-icsp/VoxelMapPlus_Public" ["e"=1]
+"url-kaist/TRAVEL" -> "url-kaist/ERASOR2" ["e"=1]
+"url-kaist/TRAVEL" -> "url-kaist/Quatro" ["e"=1]
+"url-kaist/TRAVEL" -> "minwoo0611/MA-LIO" ["e"=1]
+"url-kaist/TRAVEL" -> "zijiechenrobotics/ig_lio" ["e"=1]
 "MetaSLAM/GPRS_Survey" -> "jac99/MinkLoc3D"
 "ISEE-Technology/lidar-with-velocity" -> "Livox-SDK/livox_cloud_undistortion"
 "Livox-SDK/livox_cloud_undistortion" -> "ISEE-Technology/lidar-with-velocity"
+"mherb/kalman" -> "hyye/lio-mapping" ["e"=1]
 "TIERS/tiers-lidars-dataset" -> "TIERS/tiers-lidars-dataset-enhanced"
 "TIERS/tiers-lidars-dataset" -> "minwoo0611/MA-LIO"
 "TIERS/tiers-lidars-dataset" -> "uestc-icsp/VoxelMapPlus_Public"
+"nvidia-isaac/nvblox" -> "ethz-asl/wavemap" ["e"=1]
+"nvidia-isaac/nvblox" -> "ethz-asl/dynablox" ["e"=1]
+"nvidia-isaac/nvblox" -> "hku-mars/ImMesh" ["e"=1]
 "StephLin/LIO-SEGMOT" -> "BingqiShen/EMV-LIO"
 "StephLin/LIO-SEGMOT" -> "xingyuuchen/LIO-PPF"
 "StephLin/LIO-SEGMOT" -> "Yaepiii/TRLO"
+"AlexGeControl/Sensor-Fusion-for-Localization-Courseware" -> "kahowang/sensor-fusion-for-localization-and-mapping" ["e"=1]
+"url-kaist/Ground-Segmentation-Benchmark" -> "url-kaist/Quatro" ["e"=1]
 "jac99/MinkLoc3Dv2" -> "jac99/MinkLoc3D"
 "jac99/MinkLoc3Dv2" -> "csiro-robotics/LoGG3D-Net"
 "jac99/MinkLoc3Dv2" -> "cattaneod/PointNetVlad-Pytorch"
@@ -2484,6 +2953,7 @@ digraph G {
 "jac99/MinkLoc3Dv2" -> "fcchit/CFPR"
 "NeBula-Autonomy/nebula-odometry-dataset" -> "NeBula-Autonomy/LOCUS"
 "NeBula-Autonomy/nebula-odometry-dataset" -> "NeBula-Autonomy/nebula-multirobot-dataset"
+"APRIL-ZJU/Ctrl-VIO" -> "APRIL-ZJU/clic" ["e"=1]
 "GDUT-Kyle/faster_lio_sam" -> "kahowang/FAST_LIO_SAM"
 "GDUT-Kyle/faster_lio_sam" -> "yanliang-wang/FAST_LIO_LC"
 "GDUT-Kyle/faster_lio_sam" -> "HViktorTsoi/PV-LIO"
@@ -2495,14 +2965,21 @@ digraph G {
 "GDUT-Kyle/faster_lio_sam" -> "minwoo0611/MA-LIO"
 "GDUT-Kyle/faster_lio_sam" -> "uestc-icsp/VoxelMapPlus_Public"
 "GDUT-Kyle/faster_lio_sam" -> "ZikangYuan/liw_oam"
+"Relja/netvlad" -> "mikacuy/pointnetvlad" ["e"=1]
 "PRBonn/segcontrast" -> "PRBonn/3DUIS"
 "PRBonn/segcontrast" -> "PRBonn/TARL"
 "PRBonn/segcontrast" -> "llijiang/GuidedContrast"
+"yixuan/spectra" -> "kzampog/cilantro" ["e"=1]
+"niessner/Opt" -> "mp3guy/ICPCUDA" ["e"=1]
+"SpectacularAI/HybVIO" -> "APRIL-ZJU/clins" ["e"=1]
+"VIS4ROB-lab/voxfield" -> "ethz-asl/dynablox" ["e"=1]
+"VIS4ROB-lab/voxfield" -> "ethz-asl/wavemap" ["e"=1]
 "ICEORY/DeepStream" -> "luckyluckydadada/livox_color_mapping"
 "ryuichiueda/emcl2" -> "ryuichiueda/emcl"
 "ryuichiueda/emcl2" -> "CIT-Autonomous-Robot-Lab/emcl2_ros2"
 "avsegal/gicp" -> "yorsh87/nicp"
 "avsegal/gicp" -> "ethz-asl/robust_point_cloud_registration"
+"VIS4ROB-lab/HyperSLAM" -> "brytsknguyen/slict" ["e"=1]
 "APRIL-ZJU/OA-LICalib" -> "APRIL-ZJU/clins"
 "APRIL-ZJU/OA-LICalib" -> "Taeyoung96/Awesome-LiDAR-IMU-calibration"
 "APRIL-ZJU/OA-LICalib" -> "APRIL-ZJU/clic"
@@ -2510,6 +2987,7 @@ digraph G {
 "APRIL-ZJU/OA-LICalib" -> "Taeyoung96/GRIL-Calib"
 "APRIL-ZJU/OA-LICalib" -> "unmannedlab/imu_lidar_calibration"
 "APRIL-ZJU/OA-LICalib" -> "minwoo0611/MA-LIO"
+"kafeiyin00/WHU-HelmetDataset" -> "zht1117/LiDAR-PGO-uncertainty" ["e"=1]
 "yinwu33/multi_lidar_calibration" -> "BIT-MJY/Multiple_Lidar_Calibration"
 "yinwu33/multi_lidar_calibration" -> "AlienCat-K/LiDAR-Automatic-Calibration"
 "SiyuanHuang95/Livox-Localization" -> "PJLab-ADG/Livox-Mapping"
@@ -2517,6 +2995,8 @@ digraph G {
 "SiyuanHuang95/Livox-Localization" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "SiyuanHuang95/Livox-Localization" -> "Livox-SDK/livox_relocalization"
 "symao/libicp" -> "adrelino/mv-lm-icp"
+"Taeyoung96/ICRA-2022-SLAM-paper-list" -> "versatran01/llol" ["e"=1]
+"wangx1996/Fast-Ground-Segmentation-Based-on-JPC" -> "Huguet57/LIMO-Velo" ["e"=1]
 "decargroup/pymlg" -> "decargroup/pykoop"
 "decargroup/pymlg" -> "decargroup/navlie"
 "LvXudong-HIT/LCCNet" -> "KleinYuan/RGGNet"
@@ -2555,6 +3035,9 @@ digraph G {
 "gaoxiang12/slam_in_autonomous_driving" -> "zlwang7/S-FAST_LIO"
 "gaoxiang12/slam_in_autonomous_driving" -> "hku-mars/STD"
 "PaoPaoRobot/IROS2022-paper-list" -> "PaoPaoRobot/ICRA2022-paper-list"
+"kanster/awesome-slam" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"kanster/awesome-slam" -> "laboshinl/loam_velodyne" ["e"=1]
+"kanster/awesome-slam" -> "ethz-asl/segmap" ["e"=1]
 "hku-mars/ImMesh" -> "hku-mars/VoxelMap"
 "hku-mars/ImMesh" -> "hku-mars/HBA"
 "hku-mars/ImMesh" -> "RuanJY/SLAMesh"
@@ -2607,6 +3090,10 @@ digraph G {
 "hku-mars/Point-LIO" -> "hku-mars/FAST_LIO"
 "hku-mars/Point-LIO" -> "hku-mars/ImMesh"
 "hku-mars/Point-LIO" -> "kahowang/FAST_LIO_SAM"
+"facontidavide/PlotJuggler" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"facontidavide/PlotJuggler" -> "PRBonn/kiss-icp" ["e"=1]
+"SYSU-RoboticsLab/FAEL" -> "UnknownFreeOccupied/ufomap" ["e"=1]
+"ToniRV/NeRF-SLAM" -> "JunyuanDeng/NeRF-LOAM" ["e"=1]
 "PRBonn/kiss-icp" -> "jedeschaud/ct_icp"
 "PRBonn/kiss-icp" -> "vectr-ucla/direct_lidar_inertial_odometry"
 "PRBonn/kiss-icp" -> "vectr-ucla/direct_lidar_odometry"
@@ -2637,10 +3124,14 @@ digraph G {
 "hku-mars/STD" -> "hku-mars/M-detector"
 "hku-mars/STD" -> "lewisjiang/contour-context"
 "hku-mars/STD" -> "hku-mars/LiDAR_IMU_Init"
+"zang09/ORB_SLAM3_ROS2" -> "rsasaki0109/lidarslam_ros2" ["e"=1]
+"jkk-research/pointcloud_to_grid" -> "NaokiAkai/mcl3d_ros" ["e"=1]
 "BIT-MJY/SeqOT" -> "BIT-MJY/CVTNet"
 "BIT-MJY/SeqOT" -> "haomo-ai/OverlapTransformer"
 "BIT-MJY/SeqOT" -> "ZhouZijie77/LCPR"
 "BIT-MJY/SeqOT" -> "IRMVLab/Diff-IP2D"
+"IntelRealSense/realsense-ros" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"MISTLab/Swarm-SLAM" -> "hku-mars/Swarm-LIO2" ["e"=1]
 "PRBonn/4DMOS" -> "haomo-ai/MotionSeg3D"
 "PRBonn/4DMOS" -> "PRBonn/LiDAR-MOS" ["e"=1]
 "PRBonn/4DMOS" -> "PRBonn/MapMOS"
@@ -2651,6 +3142,7 @@ digraph G {
 "PRBonn/4DMOS" -> "xieKKKi/MotionBEV"
 "PRBonn/4DMOS" -> "LimHyungTae/ERASOR"
 "PRBonn/4DMOS" -> "SCNU-RISLAB/MF-MOS"
+"gangweix/CGI-Stereo" -> "ZikangYuan/sr_lio" ["e"=1]
 "ZikangYuan/sr_lio" -> "ZikangYuan/liw_oam"
 "ZikangYuan/sr_lio" -> "HViktorTsoi/PV-LIO"
 "ZikangYuan/sr_lio" -> "minwoo0611/MA-LIO"
@@ -2674,6 +3166,9 @@ digraph G {
 "nkymzsy/LIO-SAM-MID360" -> "JokerJohn/LIO_SAM_6AXIS"
 "nkymzsy/LIO-SAM-MID360" -> "chengwei0427/ct-lio"
 "nkymzsy/LIO-SAM-MID360" -> "engcang/FAST-LIO-SAM"
+"MaverickPeter/MR_SLAM" -> "uestc-icsp/VoxelMapPlus_Public" ["e"=1]
+"MaverickPeter/MR_SLAM" -> "NeBula-Autonomy/LOCUS" ["e"=1]
+"MaverickPeter/MR_SLAM" -> "HaisenbergPeng/ROLL" ["e"=1]
 "chengwei0427/Lidar_IMU_Localization" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "chengwei0427/Lidar_IMU_Localization" -> "YWL0720/FAST-LOCALIZATION"
 "chengwei0427/Lidar_IMU_Localization" -> "chengwei0427/ct-lio"
@@ -2681,6 +3176,7 @@ digraph G {
 "chengwei0427/Lidar_IMU_Localization" -> "HViktorTsoi/PV-LIO"
 "chengwei0427/Lidar_IMU_Localization" -> "peterWon/D-LIOM"
 "chengwei0427/Lidar_IMU_Localization" -> "liangheming/VoxelMapPlus_FASTLIO2"
+"mit-acl/mppi_numba" -> "nubot-nudt/T-Hybrid-planner" ["e"=1]
 "YungeCui/BoW3D" -> "lewisjiang/contour-context"
 "YungeCui/BoW3D" -> "hku-mars/STD"
 "YungeCui/BoW3D" -> "url-kaist/ERASOR2"
@@ -2702,6 +3198,13 @@ digraph G {
 "ethz-asl/dynablox" -> "url-kaist/ERASOR2"
 "utiasASRL/steam_icp" -> "tiev-tongji/LOG-LIO"
 "utiasASRL/steam_icp" -> "Joanna-HE/LIGO."
+"tier4/AWSIM" -> "rsasaki0109/lidarslam_ros2" ["e"=1]
+"SJTU-ViSYS/Ground-Fusion" -> "ZikangYuan/liw_oam" ["e"=1]
+"SJTU-ViSYS/Ground-Fusion" -> "minwoo0611/MA-LIO" ["e"=1]
+"SJTU-ViSYS/Ground-Fusion" -> "uestc-icsp/VoxelMapPlus_Public" ["e"=1]
+"SJTU-ViSYS/Ground-Fusion" -> "YWL0720/I2EKF-LO" ["e"=1]
+"manhofer/Line3Dpp" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"kxhit/vMAP" -> "JunyuanDeng/NeRF-LOAM" ["e"=1]
 "JokerJohn/Cloud_Map_Evaluation" -> "JokerJohn/PALoc"
 "JokerJohn/Cloud_Map_Evaluation" -> "ethz-asl/COIN-LIO"
 "JokerJohn/Cloud_Map_Evaluation" -> "hku-mars/LTAOM"
@@ -2717,6 +3220,7 @@ digraph G {
 "JokerJohn/Cloud_Map_Evaluation" -> "gisbi-kim/lt-mapper"
 "JokerJohn/Cloud_Map_Evaluation" -> "hku-mars/STD"
 "JokerJohn/Cloud_Map_Evaluation" -> "Yixin-F/better_fastlio2"
+"haomo-ai/SuperFusion" -> "zjuluolun/BEVPlace2" ["e"=1]
 "koide3/direct_visual_lidar_calibration" -> "hku-mars/livox_camera_calib"
 "koide3/direct_visual_lidar_calibration" -> "hku-mars/mlcc"
 "koide3/direct_visual_lidar_calibration" -> "PJLab-ADG/SensorsCalibration"
@@ -2732,6 +3236,12 @@ digraph G {
 "koide3/direct_visual_lidar_calibration" -> "hku-mars/STD"
 "koide3/direct_visual_lidar_calibration" -> "JokerJohn/LIO_SAM_6AXIS"
 "koide3/direct_visual_lidar_calibration" -> "jedeschaud/ct_icp"
+"PRBonn/SHINE_mapping" -> "JunyuanDeng/NeRF-LOAM" ["e"=1]
+"PRBonn/SHINE_mapping" -> "PRBonn/PIN_SLAM" ["e"=1]
+"PRBonn/SHINE_mapping" -> "hku-mars/ImMesh" ["e"=1]
+"PRBonn/SHINE_mapping" -> "minwoo0611/MA-LIO" ["e"=1]
+"PRBonn/SHINE_mapping" -> "RuanJY/SLAMesh" ["e"=1]
+"PRBonn/SHINE_mapping" -> "umautobots/LONER" ["e"=1]
 "chengwei0427/ESKF_LIO" -> "chengwei0427/ct-lio"
 "chengwei0427/ESKF_LIO" -> "zijiechenrobotics/ig_lio"
 "chengwei0427/ESKF_LIO" -> "YWL0720/I2EKF-LO"
@@ -2753,7 +3263,14 @@ digraph G {
 "zlwang7/S-FAST_LIO" -> "Arafat-ninja/FAST_LIO"
 "zlwang7/S-FAST_LIO" -> "Yixin-F/better_fastlio2"
 "zlwang7/S-FAST_LIO" -> "vectr-ucla/direct_lidar_odometry"
+"ChangwuLiu/InGVIO" -> "JonasBchrt/raw-gnss-fusion" ["e"=1]
+"3D-Vision-World/awesome-NeRF-and-3DGS-SLAM" -> "JunyuanDeng/NeRF-LOAM" ["e"=1]
+"silencht/SG-SLAM" -> "zhuhu00/Awesome_Dynamic_SLAM" ["e"=1]
 "aau-cns/ABC-EqF" -> "pvangoor/pylie"
+"ros-perception/image_pipeline" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"ros-perception/image_pipeline" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
+"url-kaist/dynaVINS" -> "zhuhu00/Awesome_Dynamic_SLAM" ["e"=1]
+"url-kaist/outlier-robust-radar-odometry" -> "StephLin/LIO-SEGMOT" ["e"=1]
 "kahowang/FAST_LIO_SAM" -> "yanliang-wang/FAST_LIO_LC"
 "kahowang/FAST_LIO_SAM" -> "gisbi-kim/FAST_LIO_SLAM"
 "kahowang/FAST_LIO_SAM" -> "JokerJohn/LIO_SAM_6AXIS"
@@ -2785,6 +3302,7 @@ digraph G {
 "YJZLuckyBoy/liorf" -> "HViktorTsoi/PV-LIO"
 "YJZLuckyBoy/liorf" -> "zijiechenrobotics/ig_lio"
 "BingqiShen/EMV-LIO" -> "xingyuuchen/LIO-PPF"
+"520xyxyzq/awesome-object-SLAM" -> "zhuhu00/Awesome_Dynamic_SLAM" ["e"=1]
 "robot-pesg/BotanicGarden" -> "TIERS/tiers-lidars-dataset-enhanced"
 "robot-pesg/BotanicGarden" -> "TIERS/tiers-lidars-dataset"
 "robot-pesg/BotanicGarden" -> "PRBonn/MapClosures"
@@ -2793,6 +3311,7 @@ digraph G {
 "lovelyyoshino/FAST_LIO2_Noted" -> "zlwang7/S-FAST_LIO"
 "lovelyyoshino/FAST_LIO2_Noted" -> "kahowang/FAST_LIO_SAM"
 "lovelyyoshino/FAST_LIO2_Noted" -> "GDUT-Kyle/faster-lio_noted"
+"MigVega/Ogm2Pgbm" -> "NaokiAkai/als_ros" ["e"=1]
 "TIERS/tiers-lidars-dataset-enhanced" -> "TIERS/tiers-lidars-dataset"
 "YJZLuckyBoy/liorf_localization" -> "Gaochao-hit/LIO-SAM_based_relocalization"
 "YJZLuckyBoy/liorf_localization" -> "YJZLuckyBoy/liorf"
@@ -2800,6 +3319,7 @@ digraph G {
 "xingyuuchen/LIO-PPF" -> "chengwei0427/ct-lio"
 "xingyuuchen/LIO-PPF" -> "uestc-icsp/VoxelMapPlus_Public"
 "xingyuuchen/LIO-PPF" -> "ZikangYuan/semi_elastic_lio"
+"castacks/tartancalib" -> "Unsigned-Long/iKalibr" ["e"=1]
 "brytsknguyen/slict" -> "uestc-icsp/VoxelMapPlus_Public"
 "brytsknguyen/slict" -> "minwoo0611/MA-LIO"
 "brytsknguyen/slict" -> "APRIL-ZJU/Coco-LIC"
@@ -2834,6 +3354,8 @@ digraph G {
 "erik-nelson/blam" -> "hku-mars/loam_livox"
 "erik-nelson/blam" -> "koide3/interactive_slam"
 "erik-nelson/blam" -> "koide3/hdl_localization"
+"url-kaist/patchwork-plusplus-ros" -> "LimHyungTae/ERASOR" ["e"=1]
+"url-kaist/patchwork-plusplus-ros" -> "Taeyoung96/GRIL-Calib" ["e"=1]
 "lab-sun/SLAMesh" -> "RuanJY/SLAMesh"
 "lab-sun/SLAMesh" -> "hku-mars/ImMesh"
 "lab-sun/SLAMesh" -> "jedeschaud/ct_icp"
@@ -2849,9 +3371,20 @@ digraph G {
 "lab-sun/SLAMesh" -> "BingqiShen/EMV-LIO"
 "lab-sun/SLAMesh" -> "hku-mars/D-Map"
 "lab-sun/SLAMesh" -> "dhchung/nv_liom"
+"TUMFTM/ORB_SLAM3_RGBL" -> "BingqiShen/EMV-LIO" ["e"=1]
+"zhuge2333/4DRadarSLAM" -> "ntnu-arl/lidar_degeneracy_datasets" ["e"=1]
 "APRIL-ZJU/clic" -> "APRIL-ZJU/Coco-LIC"
 "APRIL-ZJU/clic" -> "brytsknguyen/slict"
+"hku-mars/MARSIM" -> "hku-mars/ROG-Map" ["e"=1]
+"hku-mars/MARSIM" -> "hku-mars/D-Map" ["e"=1]
+"hku-mars/MARSIM" -> "hku-mars/Swarm-LIO2" ["e"=1]
+"hku-mars/MARSIM" -> "hku-mars/ImMesh" ["e"=1]
+"hku-mars/MARSIM" -> "hku-mars/HBA" ["e"=1]
 "daobilige-su/loam_back_and_forth" -> "daobilige-su/loam_continuous"
+"Ekumen-OS/beluga" -> "PRBonn/kinematic-icp" ["e"=1]
+"jhu-lcsr/handeye_calib_camodocal" -> "ethz-asl/lidar_align" ["e"=1]
+"jhu-lcsr/handeye_calib_camodocal" -> "Jinqiang/demo_lidar" ["e"=1]
+"jhu-lcsr/handeye_calib_camodocal" -> "MegviiRobot/CamLaserCalibraTool" ["e"=1]
 "zjuluolun/BEVPlace2" -> "zjuluolun/BVMatch"
 "zjuluolun/BEVPlace2" -> "haomo-ai/OverlapTransformer"
 "zjuluolun/BEVPlace2" -> "nubot-nudt/LCR-Net"
@@ -2954,7 +3487,22 @@ digraph G {
 "PRBonn/3DUIS" -> "PRBonn/segcontrast"
 "PRBonn/3DUIS" -> "PRBonn/TARL"
 "PRBonn/3DUIS" -> "PRBonn/auto-mos"
+"CloudCompare/CloudCompare" -> "norlab-ulaval/libpointmatcher" ["e"=1]
+"CloudCompare/CloudCompare" -> "kzampog/cilantro" ["e"=1]
 "fratopa/Mid360_simulation_plugin" -> "Livox-SDK/livox_laser_simulation"
+"cartographer-project/cartographer" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"cartographer-project/cartographer" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"cartographer-project/cartographer" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"cartographer-project/cartographer" -> "laboshinl/loam_velodyne" ["e"=1]
+"ros-planning/navigation" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"ros-planning/navigation" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"ros-planning/navigation" -> "laboshinl/loam_velodyne" ["e"=1]
+"ros-planning/navigation" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"dusty-nv/ros_deep_learning" -> "NVIDIA-AI-IOT/cuPCL" ["e"=1]
+"NVIDIA-AI-IOT/Lidar_AI_Solution" -> "PJLab-ADG/SensorsCalibration" ["e"=1]
+"zhangxy0517/3D-Registration-with-Maximal-Cliques" -> "MIT-SPARK/TEASER-plusplus" ["e"=1]
+"zhangxy0517/3D-Registration-with-Maximal-Cliques" -> "HKUST-Aerial-Robotics/G3Reg" ["e"=1]
+"zhangxy0517/3D-Registration-with-Maximal-Cliques" -> "yaoyx689/Fast-Robust-ICP" ["e"=1]
 "HKUST-Aerial-Robotics/Pagor" -> "HKUST-Aerial-Robotics/G3Reg"
 "HKUST-Aerial-Robotics/Pagor" -> "Pamphlett/Segregator"
 "zeal-up/Simple-LIO-SAM" -> "YJZLuckyBoy/liorf"
@@ -2964,6 +3512,7 @@ digraph G {
 "zeal-up/Simple-LIO-SAM" -> "Tompson11/SLAM_comparison"
 "zeal-up/Simple-LIO-SAM" -> "nkymzsy/LIO-SAM-MID360"
 "zeal-up/Simple-LIO-SAM" -> "chengwei0427/ct-lio"
+"runnanchen/CLIP2Scene" -> "PRBonn/segcontrast" ["e"=1]
 "RuanJY/SLAMesh" -> "lab-sun/SLAMesh"
 "RuanJY/SLAMesh" -> "hku-mars/ImMesh"
 "RuanJY/SLAMesh" -> "HViktorTsoi/PV-LIO"
@@ -2987,6 +3536,7 @@ digraph G {
 "unitreerobotics/point_lio_unilidar" -> "Livox-SDK/livox_ros_driver2"
 "unitreerobotics/point_lio_unilidar" -> "abizovnuralem/go2_ros2_sdk" ["e"=1]
 "unitreerobotics/point_lio_unilidar" -> "chengwei0427/ct-lio"
+"mgonzs13/yolo_ros" -> "rsasaki0109/lidarslam_ros2" ["e"=1]
 "zijiechenrobotics/ig_lio" -> "HViktorTsoi/PV-LIO"
 "zijiechenrobotics/ig_lio" -> "hku-mars/LTAOM"
 "zijiechenrobotics/ig_lio" -> "ethz-asl/COIN-LIO"
@@ -3002,6 +3552,7 @@ digraph G {
 "zijiechenrobotics/ig_lio" -> "hku-mars/btc_descriptor"
 "zijiechenrobotics/ig_lio" -> "liangheming/iG-LIO_SAM_LC"
 "zijiechenrobotics/ig_lio" -> "engcang/FAST-LIO-SAM-QN"
+"Alpaca-zip/ultralytics_ros" -> "rsasaki0109/lidar_localization_ros2" ["e"=1]
 "ZikangYuan/liw_oam" -> "ZikangYuan/sr_lio"
 "ZikangYuan/liw_oam" -> "minwoo0611/MA-LIO"
 "ZikangYuan/liw_oam" -> "ZikangYuan/SDV-LOAM"
@@ -3049,6 +3600,7 @@ digraph G {
 "APRIL-ZJU/Coco-LIC" -> "hku-mars/LTAOM"
 "APRIL-ZJU/Coco-LIC" -> "ntnu-arl/lidar_degeneracy_datasets"
 "APRIL-ZJU/Coco-LIC" -> "YWL0720/I2EKF-LO"
+"HKUST-Aerial-Robotics/FC-Planner" -> "hku-mars/ROG-Map" ["e"=1]
 "engcang/FAST-LIO-Localization-QN" -> "engcang/FAST-LIO-SAM-QN"
 "engcang/FAST-LIO-Localization-QN" -> "engcang/FAST-LIO-SAM-SC-QN"
 "engcang/FAST-LIO-Localization-QN" -> "YWL0720/FAST-LOCALIZATION"
@@ -3068,6 +3620,11 @@ digraph G {
 "YibinWu/LIO-EKF" -> "minwoo0611/MA-LIO"
 "YibinWu/LIO-EKF" -> "chengwei0427/ct-lio"
 "YibinWu/LIO-EKF" -> "PRBonn/MapClosures"
+"HKUST-Aerial-Robotics/D2SLAM" -> "hku-mars/Swarm-LIO2" ["e"=1]
+"changh95/fastcampus_slam_codes" -> "PRBonn/kiss-slam" ["e"=1]
+"changh95/fastcampus_slam_codes" -> "cocel-postech/genz-icp" ["e"=1]
+"changh95/fastcampus_slam_codes" -> "PRBonn/kiss-icp" ["e"=1]
+"changh95/fastcampus_slam_codes" -> "PRBonn/MapClosures" ["e"=1]
 "Liansheng-Wang/faster_lio_localization" -> "Liansheng-Wang/InGM-LIO"
 "biter0088/pc-nerf" -> "biter0088/Non-uniform-quadtree-map"
 "biter0088/pc-nerf" -> "BIT-MJY/SeqOT"
@@ -3100,8 +3657,13 @@ digraph G {
 "OpenCalib/CalibAnything" -> "Deephome/Awesome-LiDAR-Camera-Calibration"
 "OpenCalib/CalibAnything" -> "OpenCalib/LiDAR2INS"
 "OpenCalib/CalibAnything" -> "hku-mars/joint-lidar-camera-calib"
+"ethz-asl/kitti_to_rosbag" -> "jbehley/SuMa" ["e"=1]
+"ethz-asl/kitti_to_rosbag" -> "PRBonn/OverlapNet" ["e"=1]
 "HesaiTechnology/HesaiLidar_ROS_2.0" -> "HesaiTechnology/HesaiLidar_SDK_2.0"
 "HesaiTechnology/HesaiLidar_ROS_2.0" -> "HesaiTechnology/HesaiLidar_General_ROS"
+"jianboqi/CSF" -> "xiaohulugo/PointCloudSegmentation" ["e"=1]
+"jianboqi/CSF" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"jianboqi/CSF" -> "hku-mars/BALM" ["e"=1]
 "JokerJohn/PALoc" -> "JokerJohn/Cloud_Map_Evaluation"
 "JokerJohn/PALoc" -> "JokerJohn/MS-Mapping"
 "JokerJohn/PALoc" -> "zijiechenrobotics/ig_lio"
@@ -3122,6 +3684,25 @@ digraph G {
 "engcang/FAST-LIO-SAM-QN" -> "YibinWu/LIO-EKF"
 "engcang/FAST-LIO-SAM-QN" -> "hku-mars/LTAOM"
 "engcang/FAST-LIO-SAM-QN" -> "engcang/FAST-LIO-SAM-SC-QN"
+"LiZhengXiao99/Navigation-Learning" -> "gaoxiang12/slam_in_autonomous_driving" ["e"=1]
+"rpng/MINS" -> "hku-mars/LTAOM" ["e"=1]
+"rpng/MINS" -> "hku-mars/HBA" ["e"=1]
+"rpng/MINS" -> "ZikangYuan/liw_oam" ["e"=1]
+"rpng/MINS" -> "zijiechenrobotics/ig_lio" ["e"=1]
+"rpng/MINS" -> "minwoo0611/MA-LIO" ["e"=1]
+"rpng/MINS" -> "hku-mars/BALM" ["e"=1]
+"rpng/MINS" -> "APRIL-ZJU/Coco-LIC" ["e"=1]
+"rpng/MINS" -> "Unsigned-Long/iKalibr" ["e"=1]
+"ros-perception/perception_pcl" -> "ros-drivers/velodyne" ["e"=1]
+"cartographer-project/cartographer_ros" -> "laboshinl/loam_velodyne" ["e"=1]
+"cartographer-project/cartographer_ros" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"cartographer-project/cartographer_ros" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"cartographer-project/cartographer_ros" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"cartographer-project/cartographer_ros" -> "slam-code/cartographer" ["e"=1]
+"cartographer-project/cartographer_ros" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
+"luigifreda/slamplay" -> "leggedrobotics/open3d_slam" ["e"=1]
+"luigifreda/slamplay" -> "aau-cns/Lie-plusplus" ["e"=1]
+"liulinbo/slam" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
 "hku-mars/SLAM-HKU-MaRS-LAB" -> "hku-mars/D-Map"
 "hku-mars/SLAM-HKU-MaRS-LAB" -> "hku-mars/HBA"
 "hku-mars/SLAM-HKU-MaRS-LAB" -> "uestc-icsp/VoxelMapPlus_Public"
@@ -3186,6 +3767,9 @@ digraph G {
 "nubot-nudt/InsMOS" -> "nubot-nudt/LCR-Net"
 "nubot-nudt/InsMOS" -> "PRBonn/MapMOS"
 "nubot-nudt/InsMOS" -> "haomo-ai/MotionSeg3D"
+"Ericsii/FAST_LIO_ROS2" -> "Livox-SDK/livox_ros_driver2" ["e"=1]
+"Ericsii/FAST_LIO_ROS2" -> "liangheming/FASTLIO2_ROS2" ["e"=1]
+"Ericsii/FAST_LIO_ROS2" -> "rsasaki0109/lidar_localization_ros2" ["e"=1]
 "JunyuanDeng/NeRF-LOAM" -> "umautobots/LONER"
 "JunyuanDeng/NeRF-LOAM" -> "PRBonn/PIN_SLAM"
 "JunyuanDeng/NeRF-LOAM" -> "PRBonn/SHINE_mapping" ["e"=1]
@@ -3201,6 +3785,9 @@ digraph G {
 "JunyuanDeng/NeRF-LOAM" -> "uestc-icsp/VoxelMapPlus_Public"
 "JunyuanDeng/NeRF-LOAM" -> "SJTU-ViSYS/M2DGR"
 "JunyuanDeng/NeRF-LOAM" -> "xingyuuchen/LIO-PPF"
+"SYSU-STAR/H2-Mapping" -> "PRBonn/PIN_SLAM" ["e"=1]
+"SYSU-STAR/H2-Mapping" -> "hku-mars/D-Map" ["e"=1]
+"SYSU-STAR/H2-Mapping" -> "hku-mars/M2Mapping" ["e"=1]
 "hku-mars/ROG-Map" -> "hku-mars/D-Map"
 "hku-mars/ROG-Map" -> "hku-mars/MARSIM" ["e"=1]
 "hku-mars/ROG-Map" -> "hku-mars/IPC" ["e"=1]
@@ -3265,8 +3852,22 @@ digraph G {
 "KOKIAOKI/3d_bbs" -> "JokerJohn/Cloud_Map_Evaluation"
 "KOKIAOKI/3d_bbs" -> "dhchung/nv_liom"
 "ZikangYuan/semi_elastic_lio" -> "xingyuuchen/LIO-PPF"
+"MIT-SPARK/Kimera-Multi" -> "NeBula-Autonomy/LOCUS" ["e"=1]
+"MIT-SPARK/Kimera-Multi" -> "KumarRobotics/SLIDE_SLAM" ["e"=1]
+"facebookresearch/OrienterNet" -> "jinyummiao/map-in-mono-reloc" ["e"=1]
+"facebookresearch/OrienterNet" -> "zjuluolun/BEVPlace2" ["e"=1]
+"at-wat/neonavigation" -> "at-wat/mcl_3dl" ["e"=1]
+"at-wat/neonavigation" -> "rsasaki0109/lidar_localizer" ["e"=1]
+"at-wat/neonavigation" -> "ryuichiueda/emcl" ["e"=1]
+"at-wat/neonavigation" -> "NaokiAkai/als_ros" ["e"=1]
+"at-wat/neonavigation" -> "NaokiAkai/mcl3d_ros" ["e"=1]
+"sourishg/stereo-calibration" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"sourishg/stereo-calibration" -> "beltransen/velo2cam_calibration" ["e"=1]
+"cvg/limap" -> "XiaoBaiiiiii/colmap-pcd" ["e"=1]
 "tiev-tongji/RingFalsNormal" -> "tiev-tongji/LOG-LIO"
 "NEU-REAL/MTM-Tracker" -> "NEU-REAL/StreamMOS"
+"ailab-hanyang/Radar4Motion" -> "ntnu-arl/lidar_degeneracy_datasets" ["e"=1]
+"HengyiWang/Co-SLAM" -> "JunyuanDeng/NeRF-LOAM" ["e"=1]
 "ryanbgriffiths/ICRA2023PaperList" -> "ryanbgriffiths/IROS2023PaperList"
 "ryanbgriffiths/ICRA2023PaperList" -> "ryanbgriffiths/ICRA2024PaperList"
 "ryanbgriffiths/ICRA2023PaperList" -> "gonultasbu/ICRA2022PaperList" ["e"=1]
@@ -3282,7 +3883,13 @@ digraph G {
 "ZhouZijie77/LCPR" -> "QiZS-BIT/GSPR"
 "ZhouZijie77/LCPR" -> "IRMVLab/Diff-IP2D"
 "ZhouZijie77/LCPR" -> "BIT-XJY/EINet"
+"hku-mars/IPC" -> "hku-mars/ROG-Map" ["e"=1]
 "ethz-asl/waverider" -> "ethz-asl/reactive_avoidance"
+"ZJU-FAST-Lab/uneven_planner" -> "nubot-nudt/T-Hybrid-planner" ["e"=1]
+"XikunLiu-huskit/GLIO" -> "Joanna-HE/LIGO." ["e"=1]
+"XikunLiu-huskit/GLIO" -> "uestc-icsp/VoxelMapPlus_Public" ["e"=1]
+"XikunLiu-huskit/GLIO" -> "chengwei0427/ct-lio" ["e"=1]
+"XikunLiu-huskit/GLIO" -> "zhh2005757/FAST-LIO-Multi-Sensor-Fusion" ["e"=1]
 "zhujun3753/i-octree" -> "hku-mars/Voxel-SLAM"
 "zhujun3753/i-octree" -> "uestc-icsp/VoxelMapPlus_Public"
 "zhujun3753/i-octree" -> "hku-mars/LTAOM"
@@ -3319,6 +3926,7 @@ digraph G {
 "hku-mars/btc_descriptor" -> "hku-mars/Voxel-SLAM"
 "hku-mars/btc_descriptor" -> "zijiechenrobotics/ig_lio"
 "hku-mars/btc_descriptor" -> "uestc-icsp/VoxelMapPlus_Public"
+"yutongwangBIT/VOOM" -> "nubot-nudt/SGLC" ["e"=1]
 "LiHeUA/M2DP" -> "gloryhry/M2DP-CPP"
 "LiHeUA/M2DP" -> "adnan33/M2DP-python"
 "LiHeUA/M2DP" -> "lilin-hitcrt/SSC"
@@ -3383,11 +3991,13 @@ digraph G {
 "ntnu-arl/lidar_degeneracy_datasets" -> "lian-yue0515/MM-LINS"
 "tiev-tongji/LIMOT" -> "Sonne-Zhu/gtsam_demo_limot"
 "tiev-tongji/LIMOT" -> "StephLin/LIO-SEGMOT"
+"stm32f303ret6/livox_laser_simulation_RO2" -> "Livox-SDK/livox_laser_simulation" ["e"=1]
 "NaokiAkai/mcl3d_ros" -> "NaokiAkai/als_ros"
 "NaokiAkai/mcl3d_ros" -> "at-wat/mcl_3dl"
 "NaokiAkai/mcl3d_ros" -> "TakuOkawara/full_linear_wheel_odometry_factor"
 "rvp-group/ba-mdslam" -> "rvp-group/mdslam"
 "victl/VeloSLAM" -> "1chi217/velodyne"
+"hku-mars/PULSAR" -> "hku-mars/D-Map" ["e"=1]
 "Yan-Xia/CASSPR" -> "rayguan97/crossloc3d"
 "lian-yue0515/MM-LINS" -> "zht1117/LiDAR-PGO-uncertainty"
 "unitreerobotics/unilidar_sdk" -> "unitreerobotics/point_lio_unilidar"
@@ -3415,6 +4025,24 @@ digraph G {
 "nubot-nudt/ElC-OIS" -> "nubot-nudt/InsMOS"
 "nubot-nudt/ElC-OIS" -> "nubot-nudt/T-Hybrid-planner"
 "nubot-nudt/ElC-OIS" -> "nubot-nudt/ICD-Fusion"
+"VladimirYugay/Gaussian-SLAM" -> "PRBonn/PIN_SLAM" ["e"=1]
+"PRBonn/depth_clustering" -> "ethz-asl/segmap" ["e"=1]
+"PRBonn/depth_clustering" -> "hyye/lio-mapping" ["e"=1]
+"PRBonn/depth_clustering" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"PRBonn/depth_clustering" -> "PRBonn/semantic_suma" ["e"=1]
+"PRBonn/depth_clustering" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"PRBonn/depth_clustering" -> "koide3/hdl_graph_slam" ["e"=1]
+"PRBonn/depth_clustering" -> "ethz-asl/lidar_align" ["e"=1]
+"PRBonn/depth_clustering" -> "koide3/interactive_slam" ["e"=1]
+"OctoMap/octomap" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"OctoMap/octomap" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"OctoMap/octomap" -> "ethz-asl/segmap" ["e"=1]
+"OctoMap/octomap" -> "laboshinl/loam_velodyne" ["e"=1]
+"andyzeng/3dmatch-toolbox" -> "kzampog/cilantro" ["e"=1]
+"andyzeng/3dmatch-toolbox" -> "mp3guy/ICPCUDA" ["e"=1]
+"andyzeng/3dmatch-toolbox" -> "isl-org/FastGlobalRegistration" ["e"=1]
+"ShuhongLL/SGS-SLAM" -> "VITA-Group/MM3DGS-SLAM" ["e"=1]
+"PRBonn/LiDiff" -> "PRBonn/MapClosures" ["e"=1]
 "ZikangYuan/sr_livo" -> "APRIL-ZJU/Coco-LIC"
 "ZikangYuan/sr_livo" -> "YWL0720/I2EKF-LO"
 "ZikangYuan/sr_livo" -> "ZikangYuan/liw_oam"
@@ -3425,6 +4053,7 @@ digraph G {
 "ZikangYuan/sr_livo" -> "minwoo0611/MA-LIO"
 "ZikangYuan/sr_livo" -> "ZikangYuan/sr_lio"
 "ZikangYuan/sr_livo" -> "ZikangYuan/semi_elastic_lio"
+"meyiao/LaserSLAM" -> "ethz-asl/laser_slam" ["e"=1]
 "hku-mars/FAST-LIVO2" -> "hku-mars/FAST-LIVO"
 "hku-mars/FAST-LIVO2" -> "hku-mars/FAST_LIO"
 "hku-mars/FAST-LIVO2" -> "xuankuzcr/LIV_handhold"
@@ -3456,8 +4085,10 @@ digraph G {
 "PRBonn/PIN_SLAM" -> "hku-mars/HBA"
 "PRBonn/PIN_SLAM" -> "HKUST-Aerial-Robotics/G3Reg"
 "PRBonn/PIN_SLAM" -> "PRBonn/MapClosures"
+"lichtblick-suite/lichtblick" -> "MOLAorg/mola" ["e"=1]
 "liangheming/FASTLIO2_SAM_LC" -> "liangheming/VoxelMapPlus_FASTLIO2"
 "liangheming/FASTLIO2_SAM_LC" -> "liangheming/VoxelMap_LIO_SAM"
+"abeleinin/gp-navigation" -> "nubot-nudt/T-Hybrid-planner" ["e"=1]
 "fetty31/fast_LIMO" -> "Huguet57/LIMO-Velo"
 "fetty31/fast_LIMO" -> "Yaepiii/C-LOAM"
 "fetty31/fast_LIMO" -> "CPerezRuiz335/LIMOncello"
@@ -3495,6 +4126,13 @@ digraph G {
 "Taeyoung96/GRIL-Calib" -> "uestc-icsp/VoxelMapPlus_Public"
 "Taeyoung96/GRIL-Calib" -> "tiev-tongji/LOG-LIO2"
 "Taeyoung96/GRIL-Calib" -> "HViktorTsoi/PV-LIO"
+"lorenwel/linefit_ground_segmentation" -> "LimHyungTae/ERASOR" ["e"=1]
+"lorenwel/linefit_ground_segmentation" -> "hyye/lio-mapping" ["e"=1]
+"lorenwel/linefit_ground_segmentation" -> "wh200720041/iscloam" ["e"=1]
+"zhaofuq/LOD-3DGS" -> "xieyuser/GS-LIVM" ["e"=1]
+"zhaofuq/LOD-3DGS" -> "XiaoBaiiiiii/colmap-pcd" ["e"=1]
+"zhaofuq/LOD-3DGS" -> "hku-mars/Voxel-SLAM" ["e"=1]
+"zhaofuq/LOD-3DGS" -> "APRIL-ZJU/Gaussian-LIC" ["e"=1]
 "YWL0720/FAST-LOCALIZATION" -> "YWL0720/FAST-LIO-COLOR-MAPPING"
 "YWL0720/FAST-LOCALIZATION" -> "engcang/FAST-LIO-Localization-QN"
 "YWL0720/FAST-LOCALIZATION" -> "Yaepiii/C-LOAM"
@@ -3578,6 +4216,9 @@ digraph G {
 "PRBonn/MapClosures" -> "minwoo0611/MA-LIO"
 "aau-cns/MSCEqF" -> "pvangoor/eqvio"
 "aau-cns/MSCEqF" -> "aau-cns/Lie-plusplus"
+"bytedance/SchurVINS" -> "hku-mars/LTAOM" ["e"=1]
+"bytedance/SchurVINS" -> "hku-mars/VoxelMap" ["e"=1]
+"bytedance/SchurVINS" -> "hku-mars/Voxel-SLAM" ["e"=1]
 "engcang/FAST-LIO-SAM-SC-QN" -> "engcang/FAST-LIO-Localization-SC-QN"
 "engcang/FAST-LIO-SAM-SC-QN" -> "engcang/FAST-LIO-Localization-QN"
 "engcang/FAST-LIO-SAM-SC-QN" -> "liangheming/VoxelMapPlus_FASTLIO2"
@@ -3612,6 +4253,7 @@ digraph G {
 "isl-org/FastGlobalRegistration" -> "yaoyx689/Fast-Robust-ICP"
 "isl-org/FastGlobalRegistration" -> "chrischoy/DeepGlobalRegistration" ["e"=1]
 "isl-org/FastGlobalRegistration" -> "norlab-ulaval/libpointmatcher"
+"66Lau/NEXTE_Sentry_Nav" -> "engcang/FAST-LIO-Localization-QN" ["e"=1]
 "hku-mars/LTAOM" -> "zijiechenrobotics/ig_lio"
 "hku-mars/LTAOM" -> "hku-mars/HBA"
 "hku-mars/LTAOM" -> "uestc-icsp/VoxelMapPlus_Public"
@@ -3627,6 +4269,8 @@ digraph G {
 "hku-mars/LTAOM" -> "Yixin-F/better_fastlio2"
 "hku-mars/LTAOM" -> "hku-mars/M-detector"
 "hku-mars/LTAOM" -> "hku-mars/VoxelMap"
+"MIT-SPARK/Khronos" -> "KumarRobotics/SLIDE_SLAM" ["e"=1]
+"yanchi-3dv/diff-gaussian-rasterization-for-gsslam" -> "VITA-Group/MM3DGS-SLAM" ["e"=1]
 "ethz-asl/robust_point_cloud_registration" -> "YuePanEdward/GH-ICP"
 "ethz-asl/robust_point_cloud_registration" -> "nmellado/Super4PCS"
 "ethz-asl/robust_point_cloud_registration" -> "yangjiaolong/Go-ICP"
@@ -3657,6 +4301,7 @@ digraph G {
 "koide3/small_gicp" -> "hwan0806/Awesome-LiDAR-Mapping"
 "koide3/small_gicp" -> "rvp-group/mad-icp"
 "koide3/small_gicp" -> "koide3/direct_visual_lidar_calibration"
+"ori-mrg/robotcar-dataset-sdk" -> "mikacuy/pointnetvlad" ["e"=1]
 "umautobots/LONER" -> "JunyuanDeng/NeRF-LOAM"
 "umautobots/LONER" -> "HViktorTsoi/PV-LIO"
 "umautobots/LONER" -> "zijiechenrobotics/ig_lio"
@@ -3688,6 +4333,7 @@ digraph G {
 "engcang/FAST-LIO-Localization-SC-QN" -> "engcang/FAST-LIO-SAM-SC-QN"
 "hogyun2/awesome-lidar-place-recognition" -> "sparolab/SOLiD"
 "hogyun2/awesome-lidar-place-recognition" -> "hwan0806/Awesome-LiDAR-Mapping"
+"chaehyeonsong/discocal" -> "dongjae0107/ELite" ["e"=1]
 "hku-mars/Swarm-LIO2" -> "YWL0720/I2EKF-LO"
 "hku-mars/Swarm-LIO2" -> "hku-mars/LTAOM"
 "hku-mars/Swarm-LIO2" -> "minwoo0611/MA-LIO"
@@ -3696,6 +4342,16 @@ digraph G {
 "hku-mars/Swarm-LIO2" -> "chengwei0427/Adaptive-LIO"
 "hku-mars/Swarm-LIO2" -> "Joanna-HE/LIGO."
 "hku-mars/Swarm-LIO2" -> "hku-mars/HBA"
+"Kyle-ak/imu_tk" -> "APRIL-ZJU/lidar_IMU_calib" ["e"=1]
+"tomas789/kitti2bag" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"tomas789/kitti2bag" -> "laboshinl/loam_velodyne" ["e"=1]
+"tomas789/kitti2bag" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"tomas789/kitti2bag" -> "wh200720041/floam" ["e"=1]
+"tomas789/kitti2bag" -> "wh200720041/iscloam" ["e"=1]
+"tomas789/kitti2bag" -> "cuitaixiang/LOAM_NOTED" ["e"=1]
+"tomas789/kitti2bag" -> "PRBonn/semantic_suma" ["e"=1]
+"tomas789/kitti2bag" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"HKUST-Aerial-Robotics/OmniNxt" -> "hku-mars/Swarm-LIO2" ["e"=1]
 "ethz-asl/lidar_align" -> "APRIL-ZJU/lidar_IMU_calib"
 "ethz-asl/lidar_align" -> "hyye/lio-mapping"
 "ethz-asl/lidar_align" -> "chennuo0125-HIT/lidar_imu_calib"
@@ -3713,6 +4369,7 @@ digraph G {
 "ethz-asl/lidar_align" -> "wh200720041/floam"
 "NEU-REAL/StreamMOS" -> "NEU-REAL/MTM-Tracker"
 "NEU-REAL/StreamMOS" -> "NEU-REAL/4D-CS"
+"snt-arg/lidar_situational_graphs" -> "PRBonn/MapClosures" ["e"=1]
 "at-wat/mcl_3dl" -> "koide3/hdl_localization"
 "at-wat/mcl_3dl" -> "rsasaki0109/lidar_localization_ros2"
 "at-wat/mcl_3dl" -> "Gaochao-hit/LIO-SAM_based_relocalization"
@@ -3728,6 +4385,8 @@ digraph G {
 "at-wat/mcl_3dl" -> "leggedrobotics/icp_localization"
 "at-wat/mcl_3dl" -> "iris-ua/iris_lama_ros" ["e"=1]
 "at-wat/mcl_3dl" -> "hyye/lio-mapping"
+"jingpang/LearnVIORB" -> "johannes-graeter/limo" ["e"=1]
+"LihanChen2004/pb_rm_simulation" -> "liangheming/FASTLIO2_ROS2" ["e"=1]
 "YWL0720/I2EKF-LO" -> "lian-yue0515/MM-LINS"
 "YWL0720/I2EKF-LO" -> "minwoo0611/MA-LIO"
 "YWL0720/I2EKF-LO" -> "ethz-asl/COIN-LIO"
@@ -3783,6 +4442,7 @@ digraph G {
 "swyphcosmo/ros-camera-lidar-calibration" -> "zcbmlijygrdwa/camera_lidar_fusion"
 "swyphcosmo/ros-camera-lidar-calibration" -> "xiaoliangabc/lidar_camera_calibration"
 "swyphcosmo/ros-camera-lidar-calibration" -> "anlif/mi-extrinsic-calib"
+"CPFL/Autoware-Manuals" -> "ros-drivers/velodyne" ["e"=1]
 "aau-cns/Lie-plusplus" -> "aau-cns/MSCEqF"
 "aau-cns/Lie-plusplus" -> "aau-cns/equivariant-preintegration"
 "aau-cns/Lie-plusplus" -> "pettni/smooth"
@@ -3791,6 +4451,7 @@ digraph G {
 "liangheming/VoxelMapPlus_FASTLIO2" -> "tiev-tongji/LOG-LIO"
 "liangheming/VoxelMapPlus_FASTLIO2" -> "uestc-icsp/VoxelMapPlus_Public"
 "liangheming/VoxelMapPlus_FASTLIO2" -> "tiev-tongji/LOG-LIO2"
+"meyiao/ImuFusion" -> "bkarwoski/EKF_fusion" ["e"=1]
 "ctu-mrs/RMS" -> "ntnu-arl/lidar_degeneracy_datasets"
 "tiev-tongji/LOG-LIO2" -> "tiev-tongji/LOG-LIO"
 "tiev-tongji/LOG-LIO2" -> "chengwei0427/Adaptive-LIO"
@@ -3799,18 +4460,37 @@ digraph G {
 "JeongJae0815/Multi_Velodyne" -> "1chi217/velodyne"
 "IRMVLab/Diff-IP2D" -> "IRMVLab/MADiff"
 "aralab-unr/IMM_LIO" -> "luobodan/QLIO"
+"iliasam/OpenSimpleLidar" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"iliasam/OpenSimpleLidar" -> "koide3/hdl_graph_slam" ["e"=1]
+"PointCloudLibrary/pcl" -> "HuangCongQing/pcl-learning" ["e"=1]
 "liangheming/FASTLIO2_ROS2" -> "liangheming/VoxelMapPlus_FASTLIO2"
 "liangheming/FASTLIO2_ROS2" -> "Yixin-F/better_fastlio2"
 "liangheming/FASTLIO2_ROS2" -> "ethz-asl/COIN-LIO"
 "liangheming/FASTLIO2_ROS2" -> "hku-mars/Voxel-SLAM"
 "liangheming/FASTLIO2_ROS2" -> "hku-mars/LTAOM"
 "liangheming/FASTLIO2_ROS2" -> "zhh2005757/FAST-LIO-Multi-Sensor-Fusion"
+"leggedrobotics/darknet_ros" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"leggedrobotics/darknet_ros" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"leggedrobotics/darknet_ros" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
 "KumarRobotics/SLIDE_SLAM" -> "HKUST-Aerial-Robotics/SLIM"
 "nubot-nudt/SGLC" -> "nubot-nudt/SegNet4D"
 "nubot-nudt/SGLC" -> "nubot-nudt/SG-SLAM"
 "nubot-nudt/SGLC" -> "nubot-nudt/InsMOS"
 "nubot-nudt/SGLC" -> "neng-wang/Awesome-LiDAR-MOS"
 "nubot-nudt/SGLC" -> "nubot-nudt/LCR-Net"
+"MAPIRlab/rf2o_laser_odometry" -> "carlosmccosta/dynamic_robot_localization" ["e"=1]
+"ros-perception/slam_gmapping" -> "laboshinl/loam_velodyne" ["e"=1]
+"ros-perception/slam_gmapping" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"nasa-jpl/rosa" -> "koide3/glim" ["e"=1]
+"SLAM-Handbook-contributors/slam-handbook-public-release" -> "PRBonn/kiss-icp" ["e"=1]
+"SLAM-Handbook-contributors/slam-handbook-public-release" -> "koide3/glim" ["e"=1]
+"SLAM-Handbook-contributors/slam-handbook-public-release" -> "MOLAorg/mola" ["e"=1]
+"SLAM-Handbook-contributors/slam-handbook-public-release" -> "MIT-SPARK/KISS-Matcher" ["e"=1]
+"Geekgineer/YOLOs-CPP" -> "PRBonn/kinematic-icp" ["e"=1]
+"Geekgineer/YOLOs-CPP" -> "fetty31/fast_LIMO" ["e"=1]
+"Geekgineer/YOLOs-CPP" -> "MOLAorg/mola" ["e"=1]
+"Geekgineer/YOLOs-CPP" -> "gisbi-kim/nano-pgo" ["e"=1]
+"gaoxiang12/slambook-en" -> "PRBonn/kiss-icp" ["e"=1]
 "zhh2005757/FAST-LIO-Multi-Sensor-Fusion" -> "liangheming/VoxelMapPlus_FASTLIO2"
 "zhh2005757/FAST-LIO-Multi-Sensor-Fusion" -> "lian-yue0515/MM-LINS"
 "ZikangYuan/dynamic_lio" -> "Yaepiii/C-LOAM"
@@ -3856,6 +4536,15 @@ digraph G {
 "xieyuser/GS-LIVM" -> "zhaofuq/LOD-3DGS" ["e"=1]
 "xieyuser/GS-LIVM" -> "hku-mars/M2Mapping"
 "xieyuser/GS-LIVM" -> "VITA-Group/MM3DGS-SLAM"
+"VladimirYugay/MAGiC-SLAM" -> "hku-mars/M2Mapping" ["e"=1]
+"borglab/gtsam" -> "TixiaoShan/LIO-SAM" ["e"=1]
+"borglab/gtsam" -> "RobustFieldAutonomyLab/LeGO-LOAM" ["e"=1]
+"borglab/gtsam" -> "HKUST-Aerial-Robotics/A-LOAM" ["e"=1]
+"borglab/gtsam" -> "hku-mars/FAST_LIO" ["e"=1]
+"borglab/gtsam" -> "TixiaoShan/LVI-SAM" ["e"=1]
+"denabazazian/Edge_Extraction" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"google-research/Splat-SLAM" -> "xieyuser/GS-LIVM" ["e"=1]
+"zmliao/Fisheye-GS" -> "xieyuser/GS-LIVM" ["e"=1]
 "bing-jian/gmmreg" -> "bing-jian/gmmreg-python"
 "bing-jian/gmmreg" -> "gadomski/cpd"
 "bing-jian/gmmreg" -> "gwang-cv/Point-Set-Matching-Registration-Material"
@@ -3871,6 +4560,9 @@ digraph G {
 "bing-jian/gmmreg" -> "STORM-IRIT/OpenGR"
 "bing-jian/gmmreg" -> "yaoyx689/Fast-Robust-ICP"
 "bing-jian/gmmreg" -> "yorsh87/nicp"
+"vincentfpgarcia/kNN-CUDA" -> "mp3guy/ICPCUDA" ["e"=1]
+"vincentfpgarcia/kNN-CUDA" -> "ethz-asl/robust_point_cloud_registration" ["e"=1]
+"GradientSpaces/LoopSplat" -> "xieyuser/GS-LIVM" ["e"=1]
 "PRBonn/kinematic-icp" -> "cocel-postech/genz-icp"
 "PRBonn/kinematic-icp" -> "rvp-group/mad-icp"
 "PRBonn/kinematic-icp" -> "NKU-MobFly-Robotics/SPTG-LCC"
@@ -3878,6 +4570,7 @@ digraph G {
 "PRBonn/kinematic-icp" -> "YibinWu/LIO-EKF"
 "PRBonn/kinematic-icp" -> "PRBonn/kiss-slam"
 "PRBonn/kinematic-icp" -> "JokerJohn/PALoc"
+"ethz-asl/hand_eye_calibration" -> "ethz-asl/lidar_align" ["e"=1]
 "dakshaau/ICP" -> "ReillyBova/Point-Cloud-Registration"
 "hku-mars/Voxel-SLAM" -> "hku-mars/LTAOM"
 "hku-mars/Voxel-SLAM" -> "HViktorTsoi/PV-LIO"
@@ -3907,6 +4600,9 @@ digraph G {
 "Yixin-F/LiLoc" -> "sdwyc/ROLO"
 "Yixin-F/LiLoc" -> "JokerJohn/MS-Mapping"
 "Yixin-F/LiLoc" -> "YWL0720/I2EKF-LO"
+"hengli/camodocal" -> "hyye/lio-mapping" ["e"=1]
+"JunshengFu/tracking-with-Extended-Kalman-Filter" -> "ethz-asl/lidar_align" ["e"=1]
+"JunshengFu/tracking-with-Extended-Kalman-Filter" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
 "intel/gazebo-realsense" -> "SyrianSpock/realsense_gazebo_plugin"
 "intel/gazebo-realsense" -> "pal-robotics/realsense_gazebo_plugin"
 "beltransen/velo2cam_calibration" -> "ankitdhall/lidar_camera_calibration"
@@ -3930,6 +4626,9 @@ digraph G {
 "agnivsen/icp" -> "ClayFlannigan/icp"
 "agnivsen/icp" -> "Gregjksmith/Iterative-Closest-Point"
 "beltransen/velo2cam_gazebo" -> "beltransen/velo2cam_calibration"
+"nightn/CloudViewer" -> "LiveStockShapeAnalysis/Point-Cloud-Processing-example" ["e"=1]
+"nightn/CloudViewer" -> "HuangCongQing/pcl-learning" ["e"=1]
+"nightn/CloudViewer" -> "MNewBie/PCL-Notes" ["e"=1]
 "koide3/gtsam_points" -> "koide3/glim"
 "koide3/gtsam_points" -> "YWL0720/I2EKF-LO"
 "koide3/gtsam_points" -> "tiev-tongji/LOG-LIO2"
@@ -4006,11 +4705,13 @@ digraph G {
 "neng-wang/Awesome-LiDAR-MOS" -> "nubot-nudt/SegNet4D"
 "neng-wang/Awesome-LiDAR-MOS" -> "nubot-nudt/SG-SLAM"
 "thisparticle/Awesome-Algorithms-Against-Degeneracy" -> "PengYu-Team/GEODE_dataset"
+"HKUST-Aerial-Robotics/RIO" -> "ntnu-arl/lidar_degeneracy_datasets" ["e"=1]
 "Yaepiii/CAD-Mesher" -> "Yaepiii/TRLO"
 "chengwei0427/Adaptive-LIO" -> "lian-yue0515/MM-LINS"
 "chengwei0427/Adaptive-LIO" -> "chengwei0427/II-NVM"
 "chengwei0427/Adaptive-LIO" -> "tiev-tongji/LOG-LIO2"
 "ntnu-arl/drpm" -> "lian-yue0515/D-LI-Init"
+"utiasSTARS/liegroups" -> "artivis/kalmanif" ["e"=1]
 "APRIL-ZJU/Gaussian-LIC" -> "xieyuser/GS-LIVM"
 "APRIL-ZJU/Gaussian-LIC" -> "sheng00125/LIV-GaussMap"
 "APRIL-ZJU/Gaussian-LIC" -> "hku-mars/M2Mapping"
@@ -4026,6 +4727,12 @@ digraph G {
 "zoeylove/Multi-cam-Multi-map-VILO" -> "jiangpin-legend/MR-HBA"
 "nubot-nudt/RLCNet" -> "nubot-nudt/InsCMPR"
 "nubot-nudt/RLCNet" -> "nubot-nudt/DOSS"
+"hku-mars/SUPER" -> "hku-mars/Swarm-LIO2" ["e"=1]
+"hku-mars/SUPER" -> "hku-mars/ROG-Map" ["e"=1]
+"slam-code/SLAM" -> "slam-code/cartographer" ["e"=1]
+"slam-code/SLAM" -> "xiangli0608/cartographer_detailed_comments_ws" ["e"=1]
+"tysik/obstacle_detector" -> "at-wat/mcl_3dl" ["e"=1]
+"roboflow/trackers" -> "PRBonn/kiss-icp" ["e"=1]
 "kzampog/cilantro" -> "norlab-ulaval/libpointmatcher"
 "kzampog/cilantro" -> "MIT-SPARK/TEASER-plusplus"
 "kzampog/cilantro" -> "koide3/fast_gicp"
@@ -4041,6 +4748,7 @@ digraph G {
 "kzampog/cilantro" -> "jlblancoc/nanoflann" ["e"=1]
 "kzampog/cilantro" -> "xiaohulugo/3DLineDetection"
 "kzampog/cilantro" -> "puzzlepaint/surfelmeshing" ["e"=1]
+"HKUST-Aerial-Robotics/VINS-Mono" -> "TixiaoShan/LIO-SAM" ["e"=1]
 "HKUST-Aerial-Robotics/GS-LIVO" -> "xieyuser/GS-LIVM"
 "HKUST-Aerial-Robotics/GS-LIVO" -> "hku-mars/M2Mapping"
 "HKUST-Aerial-Robotics/GS-LIVO" -> "hku-mars/FAST-Calib"
@@ -4052,8 +4760,10 @@ digraph G {
 "HKUST-Aerial-Robotics/GS-LIVO" -> "ethz-asl/COIN-LIO"
 "HKUST-Aerial-Robotics/GS-LIVO" -> "xuankuzcr/LIV_handhold"
 "HKUST-Aerial-Robotics/GS-LIVO" -> "APRIL-ZJU/Coco-LIC"
+"mit-acl/roman" -> "cocel-postech/genz-icp" ["e"=1]
 "MIT-SPARK/spark-fast-lio" -> "cocel-postech/genz-icp"
 "MIT-SPARK/spark-fast-lio" -> "MIT-SPARK/KISS-Matcher"
+"knmcguire/best-of-robot-simulators" -> "TUMFTM/OpenLiDARMap" ["e"=1]
 "ankitdhall/lidar_camera_calibration" -> "beltransen/velo2cam_calibration"
 "ankitdhall/lidar_camera_calibration" -> "heethesh/lidar_camera_calibration"
 "ankitdhall/lidar_camera_calibration" -> "ethz-asl/lidar_align"
@@ -4084,6 +4794,7 @@ digraph G {
 "ros-drivers/velodyne" -> "hku-mars/loam_livox"
 "ros-drivers/velodyne" -> "HKUST-Aerial-Robotics/A-LOAM"
 "ros-drivers/velodyne" -> "irapkaist/SC-LeGO-LOAM"
+"rubengooj/pl-slam" -> "johannes-graeter/limo" ["e"=1]
 "norlab-ulaval/libnabo" -> "norlab-ulaval/libpointmatcher"
 "norlab-ulaval/libnabo" -> "ethz-asl/ethzasl_icp_mapping"
 "norlab-ulaval/libnabo" -> "ethz-asl/segmap"
@@ -4103,6 +4814,10 @@ digraph G {
 "MNewBie/PCL-Notes" -> "qixianyu-buaa/EigenChineseDocument" ["e"=1]
 "MNewBie/PCL-Notes" -> "HKUST-Aerial-Robotics/A-LOAM"
 "MNewBie/PCL-Notes" -> "Livox-SDK/LIO-Livox"
+"ros-drivers/usb_cam" -> "RoboSense-LiDAR/rslidar_sdk" ["e"=1]
+"ros-drivers/usb_cam" -> "ankitdhall/lidar_camera_calibration" ["e"=1]
+"LiangliangNan/PolyFit" -> "xiaohulugo/3DLineDetection" ["e"=1]
+"LiangliangNan/PolyFit" -> "kzampog/cilantro" ["e"=1]
 "slam-code/cartographer" -> "slam-code/SLAM" ["e"=1]
 "slam-code/cartographer" -> "cartographer-project/cartographer_ros" ["e"=1]
 "slam-code/cartographer" -> "xiangli0608/cartographer_detailed_comments_ws"
@@ -4128,8 +4843,10 @@ digraph G {
 "mfxox/ILCC" -> "ethz-asl/lidar_align"
 "mfxox/ILCC" -> "XidianLemon/calibration_camera_lidar"
 "deepglint/FAST_LIO_LOCALIZATION_HUMANOID" -> "lian-yue0515/D-LI-Init"
+"NVIDIA/gvdb-voxels" -> "fzi-forschungszentrum-informatik/gpu-voxels" ["e"=1]
 "xuqingyuan2000/LP-ICP" -> "IF-A-CAT/LIR-LIVO"
 "xuqingyuan2000/LP-ICP" -> "ntnu-arl/drpm"
+"riscmaster/kinematic_arbiter" -> "TUMFTM/OpenLiDARMap" ["e"=1]
 "shadygm/ROSplat" -> "sloretz/ros_oci_images"
 "TUMFTM/OpenLiDARMap" -> "cocel-postech/genz-icp"
 "TUMFTM/OpenLiDARMap" -> "MIT-SPARK/KISS-Matcher"
@@ -4144,6 +4861,7 @@ digraph G {
 "TUMFTM/OpenLiDARMap" -> "PRBonn/kinematic-icp"
 "TUMFTM/OpenLiDARMap" -> "CDonosoK/ros2_camera_lidar_fusion" ["e"=1]
 "TUMFTM/OpenLiDARMap" -> "shadygm/ROSplat"
+"dimatura/pypcd" -> "swyphcosmo/ros-camera-lidar-calibration" ["e"=1]
 "PRBonn/kiss-slam" -> "PRBonn/MapClosures"
 "PRBonn/kiss-slam" -> "cocel-postech/genz-icp"
 "PRBonn/kiss-slam" -> "MIT-SPARK/KISS-Matcher"
@@ -4192,24 +4910,28 @@ digraph G {
 "nubot-nudt/SG-SLAM" -> "neng-wang/Awesome-LiDAR-MOS"
 "nubot-nudt/SG-SLAM" -> "nubot-nudt/SegNet4D"
 "DCSI2022/DALI_SLAM" -> "luobodan/QLIO"
+"HKUST-Aerial-Robotics/VINS-Fusion" ["l"="59.368,11.04", "c"=87]
+"TixiaoShan/LIO-SAM" ["l"="58.127,9.863"]
+"hku-mars/FAST_LIO" ["l"="58.155,9.907"]
+"HKUST-Aerial-Robotics/A-LOAM" ["l"="58.094,9.899"]
+"RobustFieldAutonomyLab/LeGO-LOAM" ["l"="58.066,9.881"]
+"TixiaoShan/LVI-SAM" ["l"="58.125,9.92"]
 "HuangCongQing/pcl-learning" ["l"="58.087,9.801"]
 "MNewBie/PCL-Notes" ["l"="58.097,9.833"]
-"HuangCongQing/3D-LIDAR-Multi-Object-Tracking" ["l"="64.264,12.546"]
-"PointCloudLibrary/pcl" ["l"="59.192,10.935"]
+"HuangCongQing/3D-LIDAR-Multi-Object-Tracking" ["l"="64.264,12.546", "c"=1121]
+"PointCloudLibrary/pcl" ["l"="59.192,10.935", "c"=87]
 "HuangCongQing/3D-Point-Clouds" ["l"="58.033,9.78"]
 "LiveStockShapeAnalysis/Point-Cloud-Processing-example" ["l"="58.074,9.83"]
 "gaoxiang12/slam_in_autonomous_driving" ["l"="58.178,9.874"]
 "PJLab-ADG/SensorsCalibration" ["l"="58.073,9.909"]
-"zhulf0804/3D-PointCloud" ["l"="65.261,11.352"]
-"CloudCompare/CloudCompare" ["l"="37.901,22.953"]
-"yanx27/Pointnet_Pointnet2_pytorch" ["l"="65.336,11.379"]
-"HKUST-Aerial-Robotics/A-LOAM" ["l"="58.094,9.899"]
-"hku-mars/FAST_LIO" ["l"="58.155,9.907"]
+"zhulf0804/3D-PointCloud" ["l"="65.261,11.352", "c"=203]
+"CloudCompare/CloudCompare" ["l"="37.901,22.953", "c"=914]
+"yanx27/Pointnet_Pointnet2_pytorch" ["l"="65.336,11.379", "c"=203]
 "gaoxiang12/faster-lio" ["l"="58.175,9.948"]
-"nightn/CloudViewer" ["l"="-53.714,-12.06"]
-"TixiaoShan/LIO-SAM" ["l"="58.127,9.863"]
+"nightn/CloudViewer" ["l"="-53.714,-12.06", "c"=252]
+"flann-lib/flann" ["l"="59.242,10.96", "c"=87]
+"norlab-ulaval/libpointmatcher" ["l"="58.084,10.057"]
 "koide3/hdl_graph_slam" ["l"="58.115,9.9"]
-"RobustFieldAutonomyLab/LeGO-LOAM" ["l"="58.066,9.881"]
 "koide3/hdl_localization" ["l"="58.179,9.893"]
 "laboshinl/loam_velodyne" ["l"="58.037,9.892"]
 "koide3/interactive_slam" ["l"="58.138,9.962"]
@@ -4220,21 +4942,44 @@ digraph G {
 "ethz-asl/segmap" ["l"="58.05,9.932"]
 "koide3/ndt_omp" ["l"="58.148,9.945"]
 "wh200720041/floam" ["l"="58.128,9.938"]
-"TixiaoShan/LVI-SAM" ["l"="58.125,9.92"]
+"cedricxie/apollo_perception_ros" ["l"="64.332,12.546", "c"=1121]
+"LiuFG/Camera-Lidar-Fusion-ROS" ["l"="57.779,10.115"]
+"sunmiaozju/smartcar" ["l"="57.955,9.851"]
+"daohu527/dig-into-apollo" ["l"="61.72,12.452", "c"=774]
+"LiangliangNan/Easy3D" ["l"="62.919,0.07", "c"=403]
+"kzampog/cilantro" ["l"="58.139,10.135"]
+"lijx10/USIP" ["l"="65.466,11.069", "c"=1265]
+"JuanDuGit/DH3D" ["l"="58.027,10.253"]
+"SteveMacenski/spatio_temporal_voxel_layer" ["l"="60.385,12.553", "c"=286]
+"at-wat/mcl_3dl" ["l"="58.243,9.85"]
+"ANYbotics/elevation_mapping" ["l"="60.502,13.747", "c"=334]
+"vectr-ucla/direct_lidar_odometry" ["l"="58.233,9.983"]
 "cuitaixiang/LOAM_NOTED" ["l"="58.08,9.867"]
 "Livox-SDK/LIO-Livox" ["l"="58.124,10.006"]
 "ChaoqinRobotics/LINS---LiDAR-inertial-SLAM" ["l"="58.107,9.952"]
 "ethz-asl/lidar_align" ["l"="58.06,9.953"]
 "KIT-ISAS/lili-om" ["l"="58.129,9.983"]
 "PRBonn/semantic_suma" ["l"="58.084,9.959"]
-"norlab-ulaval/libpointmatcher" ["l"="58.084,10.057"]
+"ros-navigation/navigation2" ["l"="60.386,12.596", "c"=286]
+"sciplot/sciplot" ["l"="-19.94,-25.91", "c"=10]
+"artivis/kalmanif" ["l"="58.125,10.527"]
+"youngguncho/awesome-slam-datasets" ["l"="59.423,11.137", "c"=87]
+"SJTU-ViSYS/M2DGR" ["l"="58.207,9.98"]
+"cruise-automation/webviz" ["l"="59.074,12.567", "c"=299]
+"huchunxu/ros_exploring" ["l"="60.156,12.572", "c"=286]
+"xiangli0608/cartographer_detailed_comments_ws" ["l"="58.148,9.837"]
+"Little-Potato-1990/localization_in_auto_driving" ["l"="58.137,9.888"]
+"ros-planning/robot_pose_ekf" ["l"="58.513,11.112", "c"=506]
+"Gaochao-hit/LIO-SAM_based_relocalization" ["l"="58.23,9.924"]
+"karanchawla/GPS_IMU_Kalman_Filter" ["l"="58.439,11.107", "c"=506]
+"APRIL-ZJU/lidar_IMU_calib" ["l"="58.1,9.966"]
 "norlab-ulaval/libnabo" ["l"="57.974,10.015"]
 "ethz-asl/ethzasl_icp_mapping" ["l"="57.965,9.942"]
-"ethz-asl/maplab" ["l"="59.409,11.051"]
+"ethz-asl/maplab" ["l"="59.409,11.051", "c"=87]
 "MIT-SPARK/TEASER-plusplus" ["l"="58.161,10.068"]
-"kzampog/cilantro" ["l"="58.139,10.135"]
 "mp3guy/ICPCUDA" ["l"="58.12,10.145"]
-"ethz-asl/voxblox" ["l"="59.411,11.215"]
+"ethz-asl/voxblox" ["l"="59.411,11.215", "c"=87]
+"laurentkneip/opengv" ["l"="59.477,11.004", "c"=87]
 "tudelft-iv/multi_sensor_calibration" ["l"="58.009,9.978"]
 "beltransen/velo2cam_calibration" ["l"="57.999,9.964"]
 "hku-mars/mlcc" ["l"="58.114,10.016"]
@@ -4244,25 +4989,45 @@ digraph G {
 "acfr/cam_lidar_calibration" ["l"="57.991,9.997"]
 "MegviiRobot/CamLaserCalibraTool" ["l"="57.989,9.923"]
 "alibaba/multiple-cameras-and-3D-LiDARs-extrinsic-calibration" ["l"="57.962,10.044"]
-"APRIL-ZJU/lidar_IMU_calib" ["l"="58.1,9.966"]
 "mfxox/ILCC" ["l"="57.957,9.964"]
 "Deephome/Awesome-LiDAR-Camera-Calibration" ["l"="58.051,9.973"]
 "chennuo0125-HIT/lidar_imu_calib" ["l"="58.122,9.969"]
 "hku-mars/livox_camera_calib" ["l"="58.077,9.974"]
 "HViktorTsoi/ACSC" ["l"="58.03,9.977"]
 "wykxwyc/LeGO-LOAM_NOTED" ["l"="58.094,9.874"]
-"HKUST-Aerial-Robotics/VINS-Mono" ["l"="59.372,11.013"]
-"borglab/gtsam" ["l"="59.348,11.022"]
+"HKUST-Aerial-Robotics/VINS-Mono" ["l"="59.372,11.013", "c"=87]
+"borglab/gtsam" ["l"="59.348,11.022", "c"=87]
+"HorizonAD/stereo_dso" ["l"="59.591,11.041", "c"=87]
+"johannes-graeter/limo" ["l"="58.026,9.924"]
+"MichaelGrupp/evo" ["l"="59.344,11.061", "c"=87]
+"gaowenliang/imu_utils" ["l"="59.456,10.998", "c"=87]
+"pptacher/probabilistic_robotics" ["l"="59.432,10.951", "c"=87]
 "horizon-research/PointCloud-pipeline" ["l"="58.196,10.355"]
 "horizon-research/Efficient-Deep-Learning-for-Point-Clouds" ["l"="58.207,10.396"]
+"ceres-solver/ceres-solver" ["l"="59.301,10.933", "c"=87]
+"wjwwood/serial" ["l"="-18.136,-43.151", "c"=55]
 "TUC-ProAut/libRSF" ["l"="58.114,10.479"]
-"artivis/kalmanif" ["l"="58.125,10.527"]
 "aau-cns/mars_lib" ["l"="58.094,10.496"]
 "leggedrobotics/graph_msf" ["l"="58.148,10.311"]
 "rvp-group/srrg2_solver" ["l"="58.07,10.545"]
+"MRPT/mrpt" ["l"="59.377,10.926", "c"=87]
+"okalachev/arucogen" ["l"="60.842,11.654", "c"=632]
 "PointCloudLibrary/data" ["l"="58.12,9.823"]
-"code-iai/iai_kinect2" ["l"="59.531,11.385"]
+"code-iai/iai_kinect2" ["l"="59.531,11.385", "c"=87]
 "xiaohulugo/PointCloudSegmentation" ["l"="58.151,10.091"]
+"StevenCui/VIO-Doc" ["l"="59.51,11.063", "c"=87]
+"Krasjet/quaternion" ["l"="59.362,11.084", "c"=87]
+"cra-ros-pkg/robot_localization" ["l"="60.352,12.563", "c"=286]
+"gaoxiang12/slambook2" ["l"="59.293,11.055", "c"=87]
+"udacity/robot_pose_ekf" ["l"="58.53,11.092", "c"=506]
+"SteveMacenski/slam_toolbox" ["l"="60.406,12.572", "c"=286]
+"PRBonn/kiss-icp" ["l"="58.243,9.939"]
+"cherubicXN/afm_cvpr2019" ["l"="59.49,8.687", "c"=1117]
+"Zumbalamambo/2D-3D-pose-tracking" ["l"="57.745,10.082"]
+"xiaohulugo/3DLineDetection" ["l"="58.057,10.059"]
+"Celebrandil/CudaSift" ["l"="60.481,9.541", "c"=636]
+"irobot-ros/ros2-performance" ["l"="59.312,12.732", "c"=299]
+"rsasaki0109/kalman_filter_localization" ["l"="58.305,9.775"]
 "Livox-SDK/livox_camera_lidar_calibration" ["l"="58.022,9.991"]
 "XidianLemon/calibration_camera_lidar" ["l"="57.975,9.962"]
 "SubMishMar/cam_lidar_calib" ["l"="57.931,9.997"]
@@ -4270,67 +5035,79 @@ digraph G {
 "EPVelasco/lidar-camera-fusion" ["l"="57.884,10.037"]
 "swyphcosmo/ros-camera-lidar-calibration" ["l"="57.819,9.942"]
 "carlosmccosta/dynamic_robot_localization" ["l"="58.196,9.909"]
-"at-wat/mcl_3dl" ["l"="58.243,9.85"]
 "RozDavid/LOL" ["l"="58.144,9.924"]
-"vectr-ucla/direct_lidar_odometry" ["l"="58.233,9.983"]
 "wh200720041/iscloam" ["l"="58.108,9.98"]
 "HViktorTsoi/FAST_LIO_LOCALIZATION" ["l"="58.209,9.956"]
 "AbangLZU/ndt_localizer" ["l"="58.239,9.871"]
-"ColinShaw/robotics-and-machine-vision-resources" ["l"="58.882,12.755"]
-"gtbook/robotics" ["l"="58.919,12.758"]
-"Gaochao-hit/LIO-SAM_based_relocalization" ["l"="58.23,9.924"]
-"xiaohulugo/3DLineDetection" ["l"="58.057,10.059"]
-"LiangliangNan/PolyFit" ["l"="62.885,0.037"]
-"Zumbalamambo/2D-3D-pose-tracking" ["l"="57.745,10.082"]
-"manhofer/Line3Dpp" ["l"="60.513,9.487"]
-"denabazazian/Edge_Extraction" ["l"="38.367,23.709"]
-"HeYijia/PL-VIO" ["l"="59.606,11.086"]
-"cvg/limap" ["l"="59.477,9.362"]
-"johannes-graeter/limo" ["l"="58.026,9.924"]
+"ColinShaw/robotics-and-machine-vision-resources" ["l"="58.882,12.755", "c"=299]
+"gtbook/robotics" ["l"="58.919,12.758", "c"=299]
+"LiangliangNan/PolyFit" ["l"="62.885,0.037", "c"=403]
+"manhofer/Line3Dpp" ["l"="60.513,9.487", "c"=636]
+"denabazazian/Edge_Extraction" ["l"="38.367,23.709", "c"=199]
+"HeYijia/PL-VIO" ["l"="59.606,11.086", "c"=87]
+"cvg/limap" ["l"="59.477,9.362", "c"=274]
 "hku-mars/BALM" ["l"="58.179,9.998"]
-"fabianschenk/RESLAM" ["l"="59.623,11.076"]
-"abner-math/PlaneDetection" ["l"="38.36,23.634"]
+"fabianschenk/RESLAM" ["l"="59.623,11.076", "c"=87]
+"abner-math/PlaneDetection" ["l"="38.36,23.634", "c"=199]
 "irapkaist/scancontext" ["l"="58.12,9.991"]
+"locusrobotics/fuse" ["l"="59.075,12.657", "c"=299]
+"MOLAorg/mola" ["l"="58.349,9.95"]
+"methylDragon/ros-sensor-fusion-tutorial" ["l"="60.405,12.524", "c"=286]
+"dheera/rosboard" ["l"="59.113,12.592", "c"=299]
+"MegviiRobot/OdomLaserCalibraTool" ["l"="61.584,13.846", "c"=313]
+"autocore-ai/MapToolbox" ["l"="62.776,12.195", "c"=461]
 "Jinqiang/demo_lidar" ["l"="57.962,9.917"]
-"jingpang/LearnVIORB" ["l"="59.528,11.062"]
-"rubengooj/pl-slam" ["l"="59.589,11.115"]
+"jingpang/LearnVIORB" ["l"="59.528,11.062", "c"=87]
+"rubengooj/pl-slam" ["l"="59.589,11.115", "c"=87]
 "erik-nelson/blam" ["l"="58.046,9.91"]
+"jlblancoc/nanoflann" ["l"="59.248,10.913", "c"=87]
+"hku-mars/ikd-Tree" ["l"="58.172,9.984"]
+"alirezaahmadi/KalmanFilter-Vehicle-GNSS-INS" ["l"="58.45,11.167", "c"=506]
+"bkarwoski/EKF_fusion" ["l"="58.216,10.483"]
+"HuangCongQing/ROS" ["l"="60.096,12.612", "c"=286]
+"artivis/manif" ["l"="59.384,11.066", "c"=87]
 "UMich-BipedLab/Contact-Aided-Invariant-EKF" ["l"="58.197,10.464"]
 "UMich-BipedLab/Cassie_StateEstimation" ["l"="58.212,10.504"]
-"bkarwoski/EKF_fusion" ["l"="58.216,10.483"]
 "RossHartley/invariant-ekf" ["l"="58.171,10.419"]
+"uoip/g2opy" ["l"="59.457,10.959", "c"=87]
+"gisbi-kim/PyICP-SLAM" ["l"="58.19,10.022"]
+"ori-drs/pronto" ["l"="61.002,16.35", "c"=184]
 "YuePanEdward/MULLS" ["l"="58.144,9.977"]
-"MegviiRobot/OdomLaserCalibraTool" ["l"="61.584,13.846"]
-"MegviiRobot/CamOdomCalibraTool" ["l"="59.639,10.948"]
-"hengli/camodocal" ["l"="59.542,10.954"]
+"MegviiRobot/CamOdomCalibraTool" ["l"="59.639,10.948", "c"=87]
+"hengli/camodocal" ["l"="59.542,10.954", "c"=87]
 "TurtleZhong/camera_lidar_calibration_v2" ["l"="57.904,9.902"]
-"izhengfan/se2lam" ["l"="59.599,11.002"]
-"PetWorm/LARVIO" ["l"="59.568,11.061"]
-"kam3k/laser_line_extraction" ["l"="61.601,13.787"]
+"izhengfan/se2lam" ["l"="59.599,11.002", "c"=87]
+"PetWorm/LARVIO" ["l"="59.568,11.061", "c"=87]
+"kam3k/laser_line_extraction" ["l"="61.601,13.787", "c"=313]
 "icameling/lidar_camera_calibration" ["l"="57.901,9.984"]
+"Timthony/self_drive" ["l"="42.81,6.806", "c"=818]
+"slam-code/apollo" ["l"="58.04,9.705"]
 "rsasaki0109/lidar_localization_ros2" ["l"="58.268,9.842"]
 "gisbi-kim/SC-LIO-SAM" ["l"="58.158,9.963"]
+"shenshikexmu/IMUCalibration-Gesture" ["l"="57.49,10.863", "c"=821]
+"ManiiXu/VINS-Mono-Learning" ["l"="59.552,11.083", "c"=87]
 "facontidavide/LeGO-LOAM-BOR" ["l"="58.091,9.92"]
-"Little-Potato-1990/localization_in_auto_driving" ["l"="58.137,9.888"]
 "smilefacehh/LIO-SAM-DetailedNote" ["l"="58.178,9.913"]
 "cgbcgb/A-LOAM-NOTED" ["l"="58.063,9.777"]
-"fverdoja/Fast-3D-Pointcloud-Segmentation" ["l"="64.342,12.449"]
-"yzrobot/adaptive_clustering" ["l"="64.316,12.503"]
-"PRBonn/depth_clustering" ["l"="64.357,12.512"]
-"yblin/Supervoxel-for-3D-point-clouds" ["l"="64.316,12.386"]
-"lorenwel/linefit_ground_segmentation" ["l"="64.367,12.573"]
-"VincentCheungM/Run_based_segmentation" ["l"="64.336,12.512"]
+"fverdoja/Fast-3D-Pointcloud-Segmentation" ["l"="64.342,12.449", "c"=1121]
+"yzrobot/adaptive_clustering" ["l"="64.316,12.503", "c"=1121]
+"PRBonn/depth_clustering" ["l"="64.357,12.512", "c"=1121]
+"yblin/Supervoxel-for-3D-point-clouds" ["l"="64.316,12.386", "c"=1121]
+"lorenwel/linefit_ground_segmentation" ["l"="64.367,12.573", "c"=1121]
+"VincentCheungM/Run_based_segmentation" ["l"="64.336,12.512", "c"=1121]
 "nmellado/Super4PCS" ["l"="58.148,10.158"]
 "akhilthomas17/pointcloud-landmarks-extractor" ["l"="58.298,9.983"]
 "YuePanEdward/GH-ICP" ["l"="58.21,10.138"]
-"Yusheng-Xu/VGS-SVGS-Segmentation" ["l"="64.337,12.377"]
-"AutoLidarPerception/segmenters_lib" ["l"="64.345,12.527"]
+"Yusheng-Xu/VGS-SVGS-Segmentation" ["l"="64.337,12.377", "c"=1121]
+"AutoLidarPerception/segmenters_lib" ["l"="64.345,12.527", "c"=1121]
+"ydsf16/aruco_ekf_slam" ["l"="59.591,10.891", "c"=87]
 "AutoLidarPerception/kitti_lidar_camera" ["l"="57.799,10.083"]
 "ankitVP77/Sensor-Fusion-for-Object-Detection" ["l"="57.768,10.096"]
 "AutoLidarPerception/kitti_ros" ["l"="57.776,10.083"]
 "jediofgever/ROS_Raw_Kitti_Player" ["l"="57.752,10.128"]
 "jhultman/continuous-fusion" ["l"="57.735,10.133"]
-"LiuFG/Camera-Lidar-Fusion-ROS" ["l"="57.779,10.115"]
+"PacktPublishing/Hands-On-GPU-Accelerated-Computer-Vision-with-OpenCV-and-CUDA" ["l"="36.762,0.699", "c"=112]
+"naturerobots/mesh_navigation" ["l"="60.485,13.703", "c"=334]
 "Livox-SDK/livox_ros_driver" ["l"="58.071,10.004"]
 "Livox-SDK/Livox-SDK" ["l"="58.04,10.001"]
 "Livox-SDK/livox_mapping" ["l"="58.053,10.018"]
@@ -4341,13 +5118,14 @@ digraph G {
 "hku-mars/Point-LIO" ["l"="58.224,9.997"]
 "Livox-SDK/livox_detection" ["l"="58.002,10.019"]
 "Livox-SDK/livox_ros2_driver" ["l"="58.039,10.061"]
-"veraposeidon/PointCloudVolumeMeasure" ["l"="-53.714,-12.013"]
-"AlexGeControl/3D-Point-Cloud-Analytics" ["l"="65.282,11.031"]
-"qixianyu-buaa/EigenChineseDocument" ["l"="59.484,11.152"]
+"veraposeidon/PointCloudVolumeMeasure" ["l"="-53.714,-12.013", "c"=252]
+"AlexGeControl/3D-Point-Cloud-Analytics" ["l"="65.282,11.031", "c"=1265]
+"qixianyu-buaa/EigenChineseDocument" ["l"="59.484,11.152", "c"=87]
 "ethz-asl/robust_point_cloud_registration" ["l"="58.154,10.119"]
-"QingyongHu/SoTA-Point-Cloud" ["l"="65.291,11.363"]
-"Yochengliu/awesome-point-cloud-analysis" ["l"="65.302,11.338"]
+"QingyongHu/SoTA-Point-Cloud" ["l"="65.291,11.363", "c"=203]
+"Yochengliu/awesome-point-cloud-analysis" ["l"="65.302,11.338", "c"=203]
 "dianyunPCL/deep_learning-point-cloud" ["l"="57.924,9.673"]
+"YiChenCityU/Recent_SLAM_Research" ["l"="59.437,11.086", "c"=87]
 "linbaowei/ScaleRatioICP" ["l"="58.375,10.274"]
 "arntanguy/icp" ["l"="58.351,10.253"]
 "ouster-lidar/ouster-sdk" ["l"="58.115,9.879"]
@@ -4363,70 +5141,81 @@ digraph G {
 "yorsh87/nicp" ["l"="58.169,10.121"]
 "adrelino/mv-lm-icp" ["l"="58.144,10.235"]
 "gwang-cv/Point-Set-Matching-Registration-Material" ["l"="58.197,10.178"]
-"chrischoy/DeepGlobalRegistration" ["l"="65.534,11.073"]
-"WangYueFt/dcp" ["l"="65.525,11.105"]
+"chrischoy/DeepGlobalRegistration" ["l"="65.534,11.073", "c"=1265]
+"WangYueFt/dcp" ["l"="65.525,11.105", "c"=1265]
 "STORM-IRIT/OpenGR" ["l"="58.176,10.153"]
+"tum-vision/fastfusion" ["l"="59.494,11.26", "c"=87]
+"tu-darmstadt-ros-pkg/hector_slam" ["l"="60.291,12.496", "c"=286]
 "Livox-SDK/Livox_automatic_calibration" ["l"="58.022,10.037"]
 "Livox-SDK/livox_high_precision_mapping" ["l"="57.991,10.047"]
 "RoboSense-LiDAR/rslidar_sdk" ["l"="58.039,9.87"]
+"ldeecke/gmm-torch" ["l"="46.391,8.018", "c"=148]
+"somanshu25/GPU-Accelerated-Point-Cloud-Registration-Using-Hierarchical-GMM" ["l"="58.233,10.29"]
 "bing-jian/gmmreg" ["l"="58.202,10.209"]
 "neka-nat/probreg" ["l"="58.219,10.181"]
-"XuyangBai/awesome-point-cloud-registration" ["l"="65.544,11.034"]
+"XuyangBai/awesome-point-cloud-registration" ["l"="65.544,11.034", "c"=1265]
 "gadomski/cpd" ["l"="58.186,10.193"]
-"wsunid/awesome-point-clouds-registration" ["l"="65.514,11.039"]
+"wsunid/awesome-point-clouds-registration" ["l"="65.514,11.039", "c"=1265]
 "ohirose/bcpd" ["l"="58.217,10.22"]
-"Juyong/Fast_RNRR" ["l"="31.934,29.303"]
+"Juyong/Fast_RNRR" ["l"="31.934,29.303", "c"=124]
 "siavashk/pycpd" ["l"="58.224,10.239"]
-"shamangary/awesome-local-global-descriptor" ["l"="59.317,9.274"]
-"rosds/PPFMap" ["l"="59.178,15.791"]
+"shamangary/awesome-local-global-descriptor" ["l"="59.317,9.274", "c"=274]
+"rosds/PPFMap" ["l"="59.178,15.791", "c"=536]
 "OpenGP/sparseicp" ["l"="58.139,10.193"]
 "jiayi-ma/PR-GLS" ["l"="58.26,10.301"]
 "jiayi-ma/RPM-L2E" ["l"="58.284,10.336"]
-"prs-eth/OverlapPredator" ["l"="65.549,11.071"]
-"zgojcic/3DSmoothNet" ["l"="65.494,11.074"]
-"chrischoy/FCGF" ["l"="65.531,11.057"]
+"prs-eth/OverlapPredator" ["l"="65.549,11.071", "c"=1265]
+"zgojcic/3DSmoothNet" ["l"="65.494,11.074", "c"=1265]
+"chrischoy/FCGF" ["l"="65.531,11.057", "c"=1265]
 "neka-nat/cupoch" ["l"="58.188,10.094"]
-"hmgoforth/PointNetLK" ["l"="65.507,11.099"]
-"rabbityl/lepard" ["l"="65.595,11.103"]
-"rabbityl/DeformationPyramid" ["l"="65.632,11.127"]
-"RobinMagnet/pyFM" ["l"="63.532,1.042"]
+"hmgoforth/PointNetLK" ["l"="65.507,11.099", "c"=1265]
+"rabbityl/lepard" ["l"="65.595,11.103", "c"=1265]
+"rabbityl/DeformationPyramid" ["l"="65.632,11.127", "c"=1265]
+"RobinMagnet/pyFM" ["l"="63.532,1.042", "c"=134]
 "nyummvc/CPD-Net" ["l"="58.342,10.396"]
 "Lingjing324/PR-Net" ["l"="58.319,10.375"]
-"MOLAorg/mola" ["l"="58.349,9.95"]
+"lyakaap/NetVLAD-pytorch" ["l"="59.353,9.439", "c"=274]
+"mikacuy/pointnetvlad" ["l"="58.03,10.217"]
+"wuxiaolang/Visual_SLAM_Related_Research" ["l"="59.511,11.147", "c"=87]
 "cocel-postech/genz-icp" ["l"="58.396,9.994"]
 "MIT-SPARK/KISS-Matcher" ["l"="58.399,10.023"]
 "PRBonn/kinematic-icp" ["l"="58.44,9.995"]
-"PRBonn/kiss-icp" ["l"="58.243,9.939"]
 "PRBonn/MapClosures" ["l"="58.376,10.027"]
 "rvp-group/mad-icp" ["l"="58.387,10.038"]
 "koide3/glim" ["l"="58.304,10.001"]
 "ethz-asl/COIN-LIO" ["l"="58.345,10.02"]
 "PRBonn/kiss-slam" ["l"="58.403,10.005"]
-"locusrobotics/fuse" ["l"="59.075,12.657"]
 "vectr-ucla/direct_lidar_inertial_odometry" ["l"="58.266,9.995"]
 "jedeschaud/ct_icp" ["l"="58.212,10.005"]
-"facontidavide/Bonxai" ["l"="59.068,12.719"]
+"facontidavide/Bonxai" ["l"="59.068,12.719", "c"=299]
 "TUMFTM/OpenLiDARMap" ["l"="58.441,9.964"]
 "Kitware/LidarView" ["l"="57.908,9.763"]
 "Kitware/VeloView" ["l"="57.947,9.805"]
+"facontidavide/rosbag_editor" ["l"="59.19,12.556", "c"=299]
+"robotics-upo/dll" ["l"="58.185,9.791"]
+"PRBonn/lidar-bonnetal" ["l"="64.421,11.017", "c"=61]
 "seven-linglx/icp" ["l"="58.417,10.311"]
 "MOLAorg/mp2p_icp" ["l"="58.267,10.235"]
 "koide3/small_gicp" ["l"="58.298,10.069"]
 "zhujun3753/i-octree" ["l"="58.322,10.055"]
+"qianyizh/ElasticReconstruction" ["l"="59.476,11.31", "c"=87]
 "PRBonn/OverlapNet" ["l"="58.11,10.038"]
-"PRBonn/lidar-bonnetal" ["l"="64.421,11.017"]
 "gisbi-kim/removert" ["l"="58.169,10.029"]
-"PRBonn/rangenet_lib" ["l"="64.351,11.015"]
+"PRBonn/rangenet_lib" ["l"="64.351,11.015", "c"=61]
+"christianrauch/apriltag_ros" ["l"="59.316,10.642", "c"=87]
 "HesaiTechnology/HesaiLidar_General_ROS" ["l"="57.958,9.677"]
 "HesaiTechnology/HesaiLidar_General_SDK" ["l"="57.937,9.65"]
 "HesaiTechnology/HesaiLidar_ROS_2.0" ["l"="57.941,9.629"]
 "HesaiTechnology/HesaiLidar_Swift_ROS" ["l"="57.961,9.638"]
-"sunmiaozju/smartcar" ["l"="57.955,9.851"]
-"Boyang--Li/Motion-Planning-Course" ["l"="61.69,13.339"]
-"slam-code/apollo" ["l"="58.04,9.705"]
+"beedotkiran/Lidar_For_AD_references" ["l"="64.381,12.497", "c"=1121]
+"szenergy/awesome-lidar" ["l"="58.219,9.895"]
+"Boyang--Li/Motion-Planning-Course" ["l"="61.69,13.339", "c"=313]
+"Forceflow/cuda_voxelizer" ["l"="63.559,1.242", "c"=134]
+"fzi-forschungszentrum-informatik/gpu-voxels" ["l"="58.11,10.124"]
+"lgsvl/simulator" ["l"="61.677,12.459", "c"=774]
 "dstarer/Robotics" ["l"="58.043,9.636"]
 "slam-code/cartographer" ["l"="58.117,9.801"]
-"slam-code/SLAM" ["l"="59.507,11.105"]
+"slam-code/SLAM" ["l"="59.507,11.105", "c"=87]
 "SiChiTong/AutomatedDrivingSeries" ["l"="58.046,9.66"]
 "pal-robotics/realsense_gazebo_plugin" ["l"="58.203,10.573"]
 "issaiass/realsense2_description" ["l"="58.216,10.617"]
@@ -4441,34 +5230,46 @@ digraph G {
 "richardos/icp" ["l"="58.188,10.277"]
 "pglira/simpleICP" ["l"="58.196,10.237"]
 "agnivsen/icp" ["l"="58.168,10.271"]
+"sdmiller/cpu_tsdf" ["l"="59.493,11.304", "c"=87]
+"HKUST-Aerial-Robotics/DenseSurfelMapping" ["l"="59.572,11.148", "c"=87]
 "hku-mars/STD" ["l"="58.24,10.023"]
 "gisbi-kim/SC-A-LOAM" ["l"="58.195,9.966"]
+"appinho/SARosPerceptionKitti" ["l"="64.364,12.539", "c"=1121]
+"Ewenwan/Mathematics" ["l"="59.518,11.082", "c"=87]
+"PaoPaoRobot/ICRA2019-paper-list" ["l"="59.663,11.063", "c"=87]
+"MapIV/eagleye" ["l"="58.466,11.146", "c"=506]
+"JokerJohn/LIO_SAM_6AXIS" ["l"="58.226,9.971"]
+"JeremyBYU/polylidar" ["l"="38.097,23.74", "c"=199]
 "AIS-Bonn/rviz_cinematographer" ["l"="58.345,10.192"]
 "hku-mars/D-Map" ["l"="58.284,10.071"]
 "agarwa65/lidar_camera_calibration" ["l"="57.788,9.937"]
 "EpsAvlc/cam_lidar_fusion" ["l"="57.674,9.895"]
 "zcbmlijygrdwa/camera_lidar_fusion" ["l"="57.714,9.91"]
-"mikacuy/pointnetvlad" ["l"="58.03,10.217"]
+"rpng/kalibr_allan" ["l"="59.508,11.013", "c"=87]
+"sfwa/ukf" ["l"="58.47,11.06", "c"=506]
 "jac99/MinkLoc3D" ["l"="58,10.23"]
 "cattaneod/PointNetVlad-Pytorch" ["l"="57.992,10.253"]
 "XLechter/PCAN" ["l"="58.01,10.263"]
-"JuanDuGit/DH3D" ["l"="58.027,10.253"]
 "Suoivy/LPD-net" ["l"="57.992,10.269"]
-"Relja/netvlad" ["l"="59.334,9.445"]
+"Relja/netvlad" ["l"="59.334,9.445", "c"=274]
 "kxhit/awesome-point-cloud-place-recognition" ["l"="58.074,10.161"]
 "jac99/MinkLoc3Dv2" ["l"="58.013,10.246"]
 "haomo-ai/OverlapTransformer" ["l"="58.07,10.211"]
 "LiHeUA/M2DP" ["l"="58.047,10.245"]
-"QVPR/Patch-NetVLAD" ["l"="59.377,9.447"]
+"QVPR/Patch-NetVLAD" ["l"="59.377,9.447", "c"=274]
 "dachengxiaocheng/NDT-Transformer" ["l"="58.016,10.207"]
 "zjuluolun/BEVPlace2" ["l"="58.066,10.252"]
-"uzh-rpg/netvlad_tf_open" ["l"="59.327,9.495"]
+"uzh-rpg/netvlad_tf_open" ["l"="59.327,9.495", "c"=274]
 "drethage/PointCloudRegistrationTool" ["l"="58.18,10.255"]
 "srv/pointcloud_registration" ["l"="58.19,10.297"]
+"AlanLuSun/High-quality-ellipse-detection" ["l"="59.584,8.429", "c"=1117]
+"UMich-BipedLab/Cassie_Model" ["l"="61.074,16.246", "c"=184]
 "claydergc/loam_velodyne_kitti_ros" ["l"="57.812,9.842"]
 "claydergc/loam_velodyne_kitti" ["l"="57.842,9.856"]
+"mint-lab/awesome-robotics-datasets" ["l"="50.238,29.245", "c"=83]
 "TurtleZhong/camera_lidar_calibration" ["l"="57.86,9.886"]
 "ehong-tl/camera_2d_lidar_calibration" ["l"="57.871,9.875"]
+"LimHyungTae/ERASOR" ["l"="58.264,10.091"]
 "stevenliu216/Lidar-Odometry-and-Mapping" ["l"="57.918,9.892"]
 "YuePanEdward/LLS-LOAM" ["l"="57.922,10.015"]
 "306327680/V-Loam" ["l"="57.896,9.921"]
@@ -4477,22 +5278,30 @@ digraph G {
 "Gregjksmith/Iterative-Closest-Point" ["l"="58.163,10.294"]
 "symao/libicp" ["l"="58.128,10.277"]
 "ClayFlannigan/icp" ["l"="58.166,10.216"]
+"ethz-asl/voxgraph" ["l"="59.445,11.246", "c"=87]
+"ethz-asl/wavemap" ["l"="58.331,10.093"]
+"ISEE-Technology/CamVox" ["l"="58.139,9.998"]
+"PRBonn/puma" ["l"="58.172,10.013"]
+"versatran01/llol" ["l"="58.25,9.832"]
+"hku-mars/ImMesh" ["l"="58.256,10.047"]
 "Sadaku1993/sensor_fusion" ["l"="57.686,9.911"]
 "godloveliang/SFND_3D_Object_Tracking" ["l"="57.67,10.164"]
 "Ram-Godavarthi/Sensor_Fusion_3D_Object_Tracking_Lidar-Camera" ["l"="57.713,10.145"]
+"koide3/hdl_people_tracking" ["l"="64.291,12.501", "c"=1121]
+"GSORF/Visual-GPS-SLAM" ["l"="59.588,11.011", "c"=87]
+"EdwardLiuyc/StaticMapping" ["l"="58.056,9.992"]
 "RoboSense-LiDAR/ros_rslidar" ["l"="57.999,9.802"]
 "ethz-asl/laser_slam" ["l"="57.931,9.839"]
-"ori-drs/pronto" ["l"="61.002,16.35"]
 "RossHartley/invariant-ekf-ros" ["l"="58.161,10.454"]
 "hku-mars/IKFoM" ["l"="58.222,10.057"]
-"ShuoYangRobotics/Cerberus" ["l"="60.941,16.339"]
-"cggos/imu_x_fusion" ["l"="58.436,11.153"]
-"artivis/manif" ["l"="59.384,11.066"]
-"ai4ce/DeepMapping" ["l"="58.457,10.596"]
+"ShuoYangRobotics/Cerberus" ["l"="60.941,16.339", "c"=184]
+"cggos/imu_x_fusion" ["l"="58.436,11.153", "c"=506]
+"dongjing3309/minisam" ["l"="59.52,11.041", "c"=87]
+"yewzijian/3DFeatNet" ["l"="65.486,11.092", "c"=1265]
 "felja633/DARE" ["l"="58.397,10.495"]
+"ai4ce/DeepMapping" ["l"="58.457,10.596"]
 "ai4ce/DeepMapping2" ["l"="58.478,10.628"]
 "ai4ce/DeepSoRo" ["l"="58.497,10.662"]
-"yewzijian/3DFeatNet" ["l"="65.486,11.092"]
 "iMorpheusAI/gpsCalibration" ["l"="57.849,9.775"]
 "iMorpheusAI/journalClub" ["l"="57.82,9.752"]
 "AIS-Bonn/mrs_laser_map" ["l"="57.871,9.791"]
@@ -4502,7 +5311,6 @@ digraph G {
 "FPAI/PPCL" ["l"="57.782,9.55"]
 "mrpt-ros-pkg/mrpt_navigation" ["l"="58.348,9.706"]
 "mrpt-ros-pkg/mrpt_slam" ["l"="58.372,9.67"]
-"rsasaki0109/kalman_filter_localization" ["l"="58.305,9.775"]
 "epiception/CalibNet" ["l"="57.806,10.002"]
 "gitouni/CalibNet_pytorch" ["l"="57.771,10.03"]
 "aaronlws95/regnet" ["l"="57.774,10.013"]
@@ -4510,6 +5318,7 @@ digraph G {
 "KleinYuan/RGGNet" ["l"="57.762,10.02"]
 "anlif/mi-extrinsic-calib" ["l"="57.791,9.966"]
 "cmpute/chainer-regnet" ["l"="57.774,9.997"]
+"mengyuest/iros2018-slam-papers" ["l"="59.678,11.038", "c"=87]
 "dimatura/loam_continuous" ["l"="57.852,9.812"]
 "dani-carbonell/loam_back_and_forth" ["l"="57.822,9.798"]
 "daobilige-su/loam_continuous" ["l"="57.779,9.772"]
@@ -4529,64 +5338,97 @@ digraph G {
 "rsasaki0109/lidar_localizer" ["l"="58.234,9.802"]
 "ram-lab/plycal" ["l"="57.927,9.976"]
 "wuzhengy/gpsCalibration" ["l"="57.938,9.712"]
+"ethz-asl/cblox" ["l"="59.462,11.278", "c"=87]
 "FENGChenxi0823/SensorCalibration" ["l"="58.01,10.1"]
 "AbangLZU/cam_lidar_calibration" ["l"="57.917,10.108"]
 "liyang-whu/lidar_rtk_calibration" ["l"="58.066,10.089"]
 "acschaefer/polex" ["l"="58.063,10.336"]
 "PRBonn/pole-localization" ["l"="58.088,10.231"]
 "HITSZ-NRSL/long-term-localization" ["l"="58.046,10.397"]
-"XLechter/Detail-Preserved-Point-Cloud-Completion-via-SFA" ["l"="65.607,11.459"]
+"XLechter/Detail-Preserved-Point-Cloud-Completion-via-SFA" ["l"="65.607,11.459", "c"=203]
 "kxhit/pointnetvlad" ["l"="57.966,10.256"]
 "fpthink/PPT-Net" ["l"="57.969,10.287"]
+"OrebroUniversity/perception_oru-release" ["l"="60.48,12.991", "c"=286]
 "plumewind/online_calibration" ["l"="57.983,10.135"]
 "FPAI/DINK" ["l"="57.774,9.526"]
+"electech6/ORB_SLAM2_detailed_comments" ["l"="59.479,11.133", "c"=87]
+"ZJU-FAST-Lab/ego-planner" ["l"="60.378,13.817", "c"=334]
+"ANYbotics/grid_map" ["l"="60.339,12.615", "c"=286]
 "unmannedlab/imu_lidar_calibration" ["l"="58.155,10.024"]
 "rsasaki0109/li_slam_ros2" ["l"="58.291,9.811"]
 "rsasaki0109/lidarslam_ros2" ["l"="58.257,9.886"]
 "rohrschacht/FAST_LIO_SLAM_ros2" ["l"="58.325,9.749"]
+"ethz-asl/kalibr" ["l"="59.371,10.987", "c"=87]
 "catec/amcl3d" ["l"="58.217,9.793"]
 "rsasaki0109/amcl_3d" ["l"="58.229,9.73"]
+"TUMFTM/CameraRadarFusionNet" ["l"="63.832,35.186", "c"=589]
+"tier4/AutowareArchitectureProposal.proj" ["l"="62.833,12.17", "c"=461]
 "hku-mars/r3live" ["l"="58.162,9.928"]
-"HKUST-Aerial-Robotics/VINS-Fusion" ["l"="59.368,11.04"]
-"LimHyungTae/ERASOR" ["l"="58.264,10.091"]
-"PRBonn/LiDAR-MOS" ["l"="64.381,11.028"]
+"weisongwen/UrbanLoco" ["l"="58.474,11.264", "c"=506]
+"APRIL-ZJU/clins" ["l"="58.224,10.026"]
+"PRBonn/LiDAR-MOS" ["l"="64.381,11.028", "c"=61]
 "gisbi-kim/lt-mapper" ["l"="58.232,10.04"]
+"chengyangkj/Ros_Qt5_Gui_App" ["l"="60.202,12.553", "c"=286]
+"6-robot/wpr_simulation" ["l"="60.118,12.659", "c"=286]
+"fishros/install" ["l"="58.182,9.825"]
 "UMich-BipedLab/LiDARTag" ["l"="57.91,9.959"]
-"fzi-forschungszentrum-informatik/gpu-voxels" ["l"="58.11,10.124"]
+"leomariga/pyRANSAC-3D" ["l"="38.247,23.696", "c"=199]
+"HongbiaoZ/autonomous_exploration_development_environment" ["l"="60.486,13.799", "c"=334]
+"UZ-SLAMLab/ORB_SLAM3" ["l"="59.328,11.034", "c"=87]
 "JanuszBedkowski/gpu_computing_in_robotics" ["l"="58.125,10.098"]
-"tesseract-robotics/tesseract" ["l"="61.455,16.488"]
+"tesseract-robotics/tesseract" ["l"="61.455,16.488", "c"=184]
+"mikeferguson/ros2_cookbook" ["l"="59.037,12.714", "c"=299]
 "kxhit/SG_PR" ["l"="58.026,10.151"]
 "lilin-hitcrt/SSC" ["l"="58.073,10.126"]
 "MaverickPeter/DiSCO-pytorch" ["l"="58.032,10.185"]
 "csiro-robotics/locus" ["l"="57.991,10.216"]
 "BigMoWangying/LiDAR-Iris" ["l"="58.047,10.089"]
+"stotko/stdgpu" ["l"="36.641,0.958", "c"=112]
+"opendr-eu/opendr" ["l"="58.997,12.739", "c"=299]
+"TurtleZhong/Map-based-Visual-Localization" ["l"="59.603,11.143", "c"=87]
+"introlab/rtabmap" ["l"="59.327,11.091", "c"=87]
+"introlab/rtabmap_ros" ["l"="60.336,12.579", "c"=286]
+"Liber-coder/CV_Notes" ["l"="65.344,4.881", "c"=415]
+"zhouyong1234/SLAM-All-In-One" ["l"="58.268,9.8"]
 "gadomski/fgt" ["l"="58.21,10.263"]
-"andyzeng/3dmatch-toolbox" ["l"="59.443,11.372"]
+"andyzeng/3dmatch-toolbox" ["l"="59.443,11.372", "c"=87]
+"qxiaofan/awesome-3dcv-papers-daily" ["l"="65.33,4.86", "c"=415]
+"niessner/VoxelHashing" ["l"="59.463,11.319", "c"=87]
+"fendouai/OpenCVTutorials" ["l"="51.152,29.792", "c"=83]
+"autowarefoundation/autoware_ai_perception" ["l"="64.386,12.535", "c"=1121]
+"anshulpaigwar/GndNet" ["l"="64.379,12.649", "c"=1121]
+"haomo-ai/MotionSeg3D" ["l"="58.314,10.258"]
+"mathiasmantelli/awesome-mobile-robotics" ["l"="58.919,12.735", "c"=299]
 "fpthink/EPC-Net" ["l"="57.972,10.308"]
+"halajun/VDO_SLAM" ["l"="59.619,11.196", "c"=87]
+"zhuhu00/Awesome_Dynamic_SLAM" ["l"="58.284,10.09"]
+"neozhaoliang/surround-view-system-introduction" ["l"="59.897,10.894", "c"=87]
 "GCaptainNemo/Fusion-Lidar-Camera-ROS" ["l"="57.82,10.083"]
 "Matnay/Sensor_Fusion_Object_Detection_KPIT" ["l"="57.748,10.151"]
-"Kemo-Huang/JMODT" ["l"="64.697,11.079"]
+"Kemo-Huang/JMODT" ["l"="64.697,11.079", "c"=61]
 "williamhyin/lidar_to_camera" ["l"="57.706,10.174"]
 "DGIST-ARTIV/Fusion-LiDAR-Camera" ["l"="57.765,10.15"]
-"Loahit5101/PointPillars-Camera-LiDAR-Fusion" ["l"="64.723,10.976"]
+"Loahit5101/PointPillars-Camera-LiDAR-Fusion" ["l"="64.723,10.976", "c"=61]
 "hku-mars/decentralized_loam" ["l"="58.023,10.019"]
 "hku-mars/lidar_car_platfrom" ["l"="57.955,10.029"]
 "leggedrobotics/icp_localization" ["l"="58.28,9.897"]
 "NaokiAkai/mcl3d_ros" ["l"="58.274,9.766"]
 "chengwei0427/Lidar_IMU_Localization" ["l"="58.307,9.911"]
-"Ericsii/FAST_LIO_ROS2" ["l"="61.102,17.035"]
+"Ericsii/FAST_LIO_ROS2" ["l"="61.102,17.035", "c"=930]
 "hku-mars/r2live" ["l"="58.124,9.953"]
 "UnknownFreeOccupied/ufomap" ["l"="58.331,10.118"]
-"SYSU-RoboticsLab/FAEL" ["l"="60.516,13.823"]
+"SYSU-RoboticsLab/FAEL" ["l"="60.516,13.823", "c"=334]
 "KTH-RPL/dufomap" ["l"="58.344,10.103"]
-"ethz-asl/wavemap" ["l"="58.331,10.093"]
-"UnknownFreeOccupied/UFOExplorer" ["l"="60.536,13.835"]
-"ethz-asl/ssc_exploration" ["l"="60.57,13.875"]
-"ethz-asl/nbvplanner" ["l"="60.499,13.834"]
-"caochao39/tare_planner" ["l"="60.475,13.824"]
+"UnknownFreeOccupied/UFOExplorer" ["l"="60.536,13.835", "c"=334]
+"ethz-asl/ssc_exploration" ["l"="60.57,13.875", "c"=334]
+"ethz-asl/nbvplanner" ["l"="60.499,13.834", "c"=334]
+"caochao39/tare_planner" ["l"="60.475,13.824", "c"=334]
 "ethz-asl/dynablox" ["l"="58.307,10.11"]
-"LTU-RAI/ExplorationRRT" ["l"="60.557,13.82"]
+"LTU-RAI/ExplorationRRT" ["l"="60.557,13.82", "c"=334]
 "uestc-icsp/VoxelMapPlus_Public" ["l"="58.304,10.043"]
+"nobleo/rviz_satellite" ["l"="59.232,12.502", "c"=299]
+"zijiechenrobotics/ig_lio" ["l"="58.314,10.019"]
+"engcang/SLAM-application" ["l"="58.229,9.953"]
 "cattaneod/CMRNet" ["l"="57.713,10.054"]
 "hyye/dsl" ["l"="57.684,10.104"]
 "tony1098/Stereo-Localization-in-LiDAR-Maps" ["l"="57.697,10.079"]
@@ -4595,19 +5437,22 @@ digraph G {
 "url-kaist/Quatro" ["l"="58.275,10.045"]
 "hku-mars/VoxelMap" ["l"="58.244,10.012"]
 "hku-mars/HBA" ["l"="58.266,10.029"]
-"zhangxy0517/3D-Registration-with-Maximal-Cliques" ["l"="65.585,11.038"]
+"zhangxy0517/3D-Registration-with-Maximal-Cliques" ["l"="65.585,11.038", "c"=1265]
 "chengwei0427/ct-lio" ["l"="58.3,10.019"]
-"szenergy/awesome-lidar" ["l"="58.219,9.895"]
-"beedotkiran/Lidar_For_AD_references" ["l"="64.381,12.497"]
-"engcang/SLAM-application" ["l"="58.229,9.953"]
+"simondlevy/BreezySLAM" ["l"="59.469,11.203", "c"=87]
 "hwan0806/Awesome-LiDAR-Mapping" ["l"="58.383,10.02"]
-"Ly0n/awesome-robotic-tooling" ["l"="58.996,12.657"]
-"url-kaist/patchwork-plusplus" ["l"="64.397,12.593"]
+"Ly0n/awesome-robotic-tooling" ["l"="58.996,12.657", "c"=299]
+"url-kaist/patchwork-plusplus" ["l"="64.397,12.593", "c"=1121]
+"uzh-rpg/deep_drone_acrobatics" ["l"="60.288,13.993", "c"=334]
+"uzh-rpg/rl_vo" ["l"="58.542,10.029"]
 "kahowang/sensor-fusion-for-localization-and-mapping" ["l"="58.241,9.899"]
-"MIT-SPARK/Kimera-VIO" ["l"="59.474,11.1"]
+"ethz-asl/ethzasl_msf" ["l"="59.481,10.967", "c"=87]
+"MIT-SPARK/Kimera-Semantics" ["l"="59.527,11.191", "c"=87]
+"MIT-SPARK/Kimera-VIO" ["l"="59.474,11.1", "c"=87]
+"xiaofeng419/SLAM-2D-LIDAR-SCAN" ["l"="61.563,14.117", "c"=313]
 "JokerJohn/opensource_slam_noted" ["l"="58.02,9.659"]
 "JokerJohn/xchu_slam" ["l"="58.01,9.621"]
-"JokerJohn/LIO_SAM_6AXIS" ["l"="58.226,9.971"]
+"electech6/LearnSLAM" ["l"="59.62,11.104", "c"=87]
 "yanliang-wang/FAST_LIO_LC" ["l"="58.263,9.96"]
 "YJZLuckyBoy/liorf_localization" ["l"="58.284,9.876"]
 "kahowang/FAST_LIO_SAM" ["l"="58.25,9.971"]
@@ -4615,53 +5460,70 @@ digraph G {
 "gisbi-kim/FAST_LIO_SLAM" ["l"="58.19,9.985"]
 "ZikangYuan/liw_oam" ["l"="58.318,9.988"]
 "w111liang222/lidar-slam-detection" ["l"="58.284,9.973"]
+"MIT-SPARK/Kimera" ["l"="59.446,11.13", "c"=87]
 "robot-learning-freiburg/CMRNext" ["l"="57.636,10.043"]
 "IRMVLab/LHMap-loc" ["l"="57.64,10.061"]
-"WHU-USI3DV/CoFiI2P" ["l"="65.765,11.067"]
+"WHU-USI3DV/CoFiI2P" ["l"="65.765,11.067", "c"=1265]
 "PRBonn/overlap_localization" ["l"="58.103,10.059"]
-"gisbi-kim/PyICP-SLAM" ["l"="58.19,10.022"]
+"wentaoyuan/deepgmr" ["l"="65.555,11.114", "c"=1265]
+"addy1997/Robotics-Resources" ["l"="58.894,12.766", "c"=299]
+"leggedrobotics/se2_navigation" ["l"="60.451,13.739", "c"=334]
 "minwoo0611/MA-LIO" ["l"="58.328,10.018"]
-"dongjing3309/minisam" ["l"="59.52,11.041"]
 "Kitware/pyLiDAR-SLAM" ["l"="58.273,9.937"]
-"xiaofeng419/SLAM-2D-LIDAR-SCAN" ["l"="61.563,14.117"]
 "Livox-SDK/horizon_highway_slam" ["l"="58.012,10.055"]
-"robotics-upo/dll" ["l"="58.185,9.791"]
-"qianyizh/ElasticReconstruction" ["l"="59.476,11.31"]
-"gilbaz/LORAX" ["l"="65.446,11.11"]
+"facontidavide/CPP_Optimizations_Diary" ["l"="59.047,12.668", "c"=299]
+"gilbaz/LORAX" ["l"="65.446,11.11", "c"=1265]
 "avsegal/gicp" ["l"="58.129,10.168"]
+"ydsf16/imu_gps_localization" ["l"="58.426,11.139", "c"=506]
 "FAIRSpace-AdMaLL/ndt_localizer" ["l"="58.332,9.775"]
 "Livox-SDK/livox_relocalization" ["l"="58.073,10.037"]
 "SiyuanHuang95/Livox-Localization" ["l"="58.141,10.023"]
+"weisongwen/UrbanNavDataset" ["l"="58.399,11.208", "c"=506]
 "RoboSense-LiDAR/rs_driver" ["l"="57.995,9.822"]
 "NVIDIA-AI-IOT/cuPCL" ["l"="58.151,10.041"]
-"nvidia-isaac/nvblox" ["l"="59.35,11.266"]
+"nvidia-isaac/nvblox" ["l"="59.35,11.266", "c"=87]
 "koide3/iridescence" ["l"="58.319,10.076"]
-"NVlabs/curobo" ["l"="61.284,16.419"]
-"MapIV/eagleye" ["l"="58.466,11.146"]
+"NVlabs/curobo" ["l"="61.284,16.419", "c"=184]
 "niosus/notebooks" ["l"="58.202,10.319"]
-"EdwardLiuyc/StaticMapping" ["l"="58.056,9.992"]
-"ethz-asl/cblox" ["l"="59.462,11.278"]
+"PaoPaoRobot/ICRA2020-paper-list" ["l"="59.629,11.116", "c"=87]
+"naurril/SUSTechPOINTS" ["l"="64.457,12.387", "c"=1121]
+"dynamicslab/pykoopman" ["l"="21.763,15.761", "c"=516]
+"decargroup/pykoop" ["l"="58.05,10.648"]
+"yanyan-li/SLAM-BOOK" ["l"="59.545,11.137", "c"=87]
+"bgrimstad/splinter" ["l"="61.279,13.473", "c"=313]
+"APRIL-ZJU/Coco-LIC" ["l"="58.361,10.033"]
+"darylclimb/cvml_project" ["l"="64.89,10.938", "c"=61]
+"klintan/vo-survey" ["l"="59.395,11.198", "c"=87]
+"gisbi-kim/nano-pgo" ["l"="58.475,10.019"]
 "yinwu33/multi_lidar_calibration" ["l"="57.917,10.185"]
 "HViktorTsoi/rs_to_velodyne" ["l"="58.098,10.015"]
 "ros-drivers/velodyne" ["l"="58.015,9.863"]
-"url-kaist/patchwork-plusplus-ros" ["l"="64.359,12.603"]
+"url-kaist/patchwork-plusplus-ros" ["l"="64.359,12.603", "c"=1121]
+"juj/MathGeoLib" ["l"="62.947,0.169", "c"=403]
+"gabyx/ApproxMVBB" ["l"="58.236,10.199"]
+"jizhang-cmu/ground_based_autonomy_basic" ["l"="60.471,13.777", "c"=334]
+"ntnu-arl/mbplanner_ros" ["l"="60.442,13.823", "c"=334]
+"hku-mars/ROG-Map" ["l"="58.266,10.066"]
 "Livox-SDK/LivoxIntegration" ["l"="57.928,10.069"]
 "ryan-brazeal-ufl/OpenPyLivox" ["l"="57.898,10.065"]
 "Livox-SDK/livox_scanner" ["l"="57.92,10.085"]
 "hku-mars/multi_lidar_calib" ["l"="57.904,10.044"]
+"ROS-Mobile/ROS-Mobile-Android" ["l"="59.125,12.426", "c"=299]
+"NaokiAkai/als_ros" ["l"="58.292,9.726"]
 "LvXudong-HIT/LCCNet" ["l"="57.751,10.034"]
 "ai4ce/SPARE3D" ["l"="58.541,10.717"]
 "ai4ce/Self-Supervised-SPARE3D" ["l"="58.525,10.701"]
 "cluster3d/cluster3d.github.io" ["l"="58.545,10.702"]
 "ai4ce/SNAC" ["l"="58.522,10.722"]
+"iris-ua/iris_lama_ros" ["l"="59.167,12.57", "c"=299]
 "wh200720041/ssl_slam" ["l"="58.105,9.921"]
-"wh200720041/ssl_slam2" ["l"="50.654,2.756"]
+"wh200720041/ssl_slam2" ["l"="50.654,2.756", "c"=85]
 "wh200720041/intensity_slam" ["l"="58.036,9.846"]
 "wh200720041/ssl_slam3" ["l"="58.039,9.815"]
-"ISEE-Technology/CamVox" ["l"="58.139,9.998"]
+"iris-ua/iris_lama" ["l"="59.195,12.625", "c"=299]
 "UnaNancyOwen/VelodyneCapture" ["l"="57.907,9.738"]
-"robofit/but_velodyne_lib" ["l"="62.903,12.276"]
-"robofit/but_velodyne" ["l"="62.868,12.263"]
+"robofit/but_velodyne_lib" ["l"="62.903,12.276", "c"=461]
+"robofit/but_velodyne" ["l"="62.868,12.263", "c"=461]
 "daobilige-su/loam_velodyne" ["l"="58.008,9.886"]
 "nicrip/VelodyneHDL" ["l"="57.896,9.717"]
 "zimpha/Velodyne-VLP-16" ["l"="57.879,9.747"]
@@ -4669,10 +5531,10 @@ digraph G {
 "PRBonn/range-mcl" ["l"="58.124,10.044"]
 "Livox-SDK/livox_detection_simu" ["l"="57.941,10.037"]
 "Livox-SDK/livox_lane_detection" ["l"="57.925,10.047"]
-"CarkusL/CenterPoint" ["l"="64.582,11.12"]
+"CarkusL/CenterPoint" ["l"="64.582,11.12", "c"=61]
 "Livox-SDK/livox_free_space" ["l"="57.966,10.065"]
 "Livox-SDK/livox_cloud_undistortion" ["l"="57.83,9.988"]
-"hova88/PointPillars_MultiHead_40FPS" ["l"="64.581,11.081"]
+"hova88/PointPillars_MultiHead_40FPS" ["l"="64.581,11.081", "c"=61]
 "ANYbotics/point_cloud_io" ["l"="57.857,9.916"]
 "koide3/gtsam_points" ["l"="58.346,10.058"]
 "dhchung/nv_liom" ["l"="58.375,10.044"]
@@ -4682,74 +5544,76 @@ digraph G {
 "qiaozhijian/LPD-Net-Pytorch" ["l"="57.958,10.317"]
 "slothfulxtx/TransLoc3D" ["l"="57.979,10.263"]
 "lilin-hitcrt/RINet" ["l"="58,10.244"]
+"botforge/CUDA-ScanMatcher-ICP" ["l"="59.086,15.821", "c"=536]
+"CAOR-MINES-ParisTech/ukfm" ["l"="57.276,10.894", "c"=821]
+"hkust-vgd/lcd" ["l"="65.844,11.057", "c"=1265]
 "tttamaki/ICP-test" ["l"="58.457,10.345"]
-"gabyx/ApproxMVBB" ["l"="58.236,10.199"]
-"juj/MathGeoLib" ["l"="62.947,0.169"]
-"AutoLidarPerception/object_builders_lib" ["l"="64.363,12.469"]
+"AutoLidarPerception/object_builders_lib" ["l"="64.363,12.469", "c"=1121]
 "Livox-SDK/openpylivox" ["l"="57.802,10.055"]
 "dbs4261/livoxsdk-python" ["l"="57.725,10.036"]
 "zhoupengwei/tloam" ["l"="57.853,10.03"]
-"AndreaCensi/csm" ["l"="61.588,13.817"]
+"AndreaCensi/csm" ["l"="61.588,13.817", "c"=313]
 "JoestarK/LiDAR-Iris" ["l"="58.046,10.112"]
 "PJLab-ADG/Livox-Mapping" ["l"="58.192,10.005"]
 "Box-Robotics/ros2-ouster-tools" ["l"="58.122,9.726"]
 "CPFL/ouster" ["l"="58.137,9.723"]
 "rvp-group/srrg2_slam_interfaces" ["l"="58.037,10.575"]
 "bing-jian/gmmreg-python" ["l"="58.229,10.26"]
-"somanshu25/GPU-Accelerated-Point-Cloud-Registration-Using-Hierarchical-GMM" ["l"="58.233,10.29"]
 "amirhertz/pointgmm" ["l"="58.239,10.348"]
 "mpkuse/gmm_pointcloud_align" ["l"="58.246,10.327"]
-"wentaoyuan/deepgmr" ["l"="65.555,11.114"]
 "ai4ce/NYU-VPR" ["l"="58.508,10.695"]
 "zjut-jianhuazhang/CalibRCNN" ["l"="57.74,10.006"]
 "ZhuangYanDLUT/hard_sync_dut" ["l"="57.846,10.221"]
 "nkliuhui/sync_gps_lidar_imu_cam" ["l"="57.879,10.203"]
 "HyHuang1995/sp_orb_slam" ["l"="57.619,10.122"]
 "yukkysaito/amcl_3d" ["l"="58.239,9.695"]
-"hku-mars/ikd-Tree" ["l"="58.172,9.984"]
-"HKUST-Aerial-Robotics/GVINS" ["l"="58.409,11.189"]
+"HKUST-Aerial-Robotics/GVINS" ["l"="58.409,11.189", "c"=506]
+"awesome-photogrammetry/awesome-photogrammetry" ["l"="60.423,9.658", "c"=636]
 "hku-mars/FAST-LIVO" ["l"="58.193,9.942"]
 "hku-mars/FAST-LIVO2" ["l"="58.212,9.924"]
+"xiangli0608/Creating-2D-laser-slam-from-scratch" ["l"="61.581,13.907", "c"=313]
 "chennuo0125-HIT/LIO-SAM-note" ["l"="58.165,9.853"]
 "electech6/LVI-SAM_detailed_comments" ["l"="58.084,10.026"]
 "zeal-up/Simple-LIO-SAM" ["l"="58.268,9.913"]
-"LimHyungTae/patchwork" ["l"="64.377,12.598"]
-"url-kaist/TRAVEL" ["l"="64.387,12.629"]
+"LimHyungTae/patchwork" ["l"="64.377,12.598", "c"=1121]
+"url-kaist/TRAVEL" ["l"="64.387,12.629", "c"=1121]
 "url-kaist/ERASOR2" ["l"="58.302,10.157"]
-"zhuhu00/Awesome_Dynamic_SLAM" ["l"="58.284,10.09"]
 "HViktorTsoi/PV-LIO" ["l"="58.288,10.009"]
 "KTH-RPL/DynamicMap_Benchmark" ["l"="58.332,10.071"]
+"jbehley/octree" ["l"="-22.821,-27.569", "c"=26]
 "JokerJohn/Cloud_Map_Evaluation" ["l"="58.356,10.047"]
 "hku-mars/LTAOM" ["l"="58.314,10.03"]
-"AlexGeControl/Sensor-Fusion-for-Localization-Courseware" ["l"="65.199,11.027"]
+"AlexGeControl/Sensor-Fusion-for-Localization-Courseware" ["l"="65.199,11.027", "c"=1265]
 "zlwang7/S-FAST_LIO" ["l"="58.291,9.959"]
-"2013fangwentao/Multi_Sensor_Fusion" ["l"="58.395,11.157"]
-"zhouyong1234/SLAM-All-In-One" ["l"="58.268,9.8"]
-"PRBonn/puma" ["l"="58.172,10.013"]
-"PRBonn/vdbfusion" ["l"="59.335,11.343"]
+"2013fangwentao/Multi_Sensor_Fusion" ["l"="58.395,11.157", "c"=506]
+"COONEO/neor_mini" ["l"="59.985,12.575", "c"=286]
+"electech6/ORB_SLAM3_detailed_comments" ["l"="59.54,11.162", "c"=87]
+"stella-cv/stella_vslam" ["l"="59.542,11.205", "c"=87]
+"PRBonn/vdbfusion" ["l"="59.335,11.343", "c"=87]
 "lab-sun/SLAMesh" ["l"="58.28,10.022"]
 "RuanJY/SLAMesh" ["l"="58.288,10.036"]
-"PRBonn/SHINE_mapping" ["l"="59.231,11.396"]
-"hku-mars/ImMesh" ["l"="58.256,10.047"]
-"versatran01/llol" ["l"="58.25,9.832"]
+"PRBonn/SHINE_mapping" ["l"="59.231,11.396", "c"=87]
 "pettni/smooth" ["l"="58.103,10.589"]
-"ami-iit/lie-group-controllers" ["l"="61.383,16.173"]
-"CAOR-MINES-ParisTech/ukfm" ["l"="57.276,10.894"]
+"ami-iit/lie-group-controllers" ["l"="61.383,16.173", "c"=184]
 "TomLKoller/ADEKF" ["l"="58.134,10.568"]
 "decargroup/navlie" ["l"="58.08,10.616"]
-"xiangli0608/cartographer_detailed_comments_ws" ["l"="58.148,9.837"]
-"xiangli0608/Creating-2D-laser-slam-from-scratch" ["l"="61.581,13.907"]
-"cartographer-project/cartographer_ros" ["l"="60.297,12.551"]
-"electech6/ORB_SLAM2_detailed_comments" ["l"="59.479,11.133"]
-"electech6/ORB_SLAM3_detailed_comments" ["l"="59.54,11.162"]
+"cartographer-project/cartographer_ros" ["l"="60.297,12.551", "c"=286]
+"dyfcalid/CameraCalibration" ["l"="59.853,10.844", "c"=87]
+"mkazhdan/PoissonRecon" ["l"="62.84,0.082", "c"=403]
 "lizhangjie316/Awesome-3D-Point-Cloud-Semantic-Segement" ["l"="57.983,9.714"]
 "HuangCongQing/Point-Clouds-Visualization" ["l"="58.008,9.71"]
-"jjw-DL/OpenPCDet-Noted" ["l"="64.57,11.143"]
-"filaPro/oneformer3d" ["l"="65.209,11.606"]
+"jjw-DL/OpenPCDet-Noted" ["l"="64.57,11.143", "c"=61]
+"filaPro/oneformer3d" ["l"="65.209,11.606", "c"=203]
 "HuangCongQing/pcdet-note" ["l"="58.022,9.728"]
-"TianhaoFu/Awesome-3D-Object-Detection" ["l"="64.571,11.213"]
-"hailanyi/3D-Detection-Tracking-Viewer" ["l"="64.632,11.108"]
-"PointsCoder/Awesome-3D-Object-Detection-for-Autonomous-Driving" ["l"="64.604,11.213"]
+"TianhaoFu/Awesome-3D-Object-Detection" ["l"="64.571,11.213", "c"=61]
+"hailanyi/3D-Detection-Tracking-Viewer" ["l"="64.632,11.108", "c"=61]
+"PointsCoder/Awesome-3D-Object-Detection-for-Autonomous-Driving" ["l"="64.604,11.213", "c"=61]
+"PRBonn/4DMOS" ["l"="58.304,10.211"]
+"hku-mars/M-detector" ["l"="58.288,10.051"]
+"geographiclib/geographiclib" ["l"="58.423,11.258", "c"=506]
+"Joanna-HE/LIGO." ["l"="58.406,10.08"]
+"avisingh599/mono-vo" ["l"="59.462,10.977", "c"=87]
+"carzum/termviz" ["l"="59.041,12.746", "c"=299]
 "ZikangYuan/SDV-LOAM" ["l"="58.372,9.957"]
 "ZikangYuan/sr_lio" ["l"="58.351,9.976"]
 "ZikangYuan/sr_livo" ["l"="58.366,9.985"]
@@ -4759,10 +5623,17 @@ digraph G {
 "engcang/FAST-LIO-Localization-QN" ["l"="58.346,9.904"]
 "YWL0720/FAST-LOCALIZATION" ["l"="58.387,9.895"]
 "leggedrobotics/open3d_slam" ["l"="58.283,9.991"]
-"leggedrobotics/se2_navigation" ["l"="60.451,13.739"]
+"mikeroyal/Photogrammetry-Guide" ["l"="60.378,9.7", "c"=636]
+"foxglove/studio" ["l"="59.074,12.627", "c"=299]
+"ros2/ros1_bridge" ["l"="60.434,12.536", "c"=286]
+"zm0612/eskf-gps-imu-fusion" ["l"="58.411,11.122", "c"=506]
+"koide3/slam_docker_collection" ["l"="59.252,12.476", "c"=299]
 "jac99/MinkLocMultimodal" ["l"="58.027,10.238"]
 "jac99/Egonn" ["l"="57.985,10.241"]
+"OpenGP/htrack" ["l"="31.163,29.542", "c"=723]
 "hku-mars/Voxel-SLAM" ["l"="58.321,10.04"]
+"IPNL-POLYU/UrbanNavDataset" ["l"="58.439,11.229", "c"=506]
+"xiihoo/Books_Robot_SLAM_Navigation" ["l"="59.765,11.152", "c"=87]
 "jypjypjypjyp/lvio_fusion" ["l"="57.857,10.174"]
 "TurtleZhong/LVIO-SAM" ["l"="57.897,10.132"]
 "Stan994265/mVIL-Fusion" ["l"="57.991,10.305"]
@@ -4770,19 +5641,22 @@ digraph G {
 "pvangoor/eqvio" ["l"="58.108,10.684"]
 "aau-cns/mars_ros" ["l"="58.063,10.517"]
 "aau-cns/MSCEqF" ["l"="58.105,10.626"]
+"uzh-rpg/rpg_svo_pro_open" ["l"="59.525,11.114", "c"=87]
+"ros-perception/pointcloud_to_laserscan" ["l"="60.397,12.493", "c"=286]
+"jkk-research/urban_road_filter" ["l"="64.359,12.621", "c"=1121]
 "GDUT-Kyle/faster_lio_sam" ["l"="58.273,10.006"]
 "Cc19245/LVI-SAM-Easyused" ["l"="58.013,10.082"]
 "RoboFeng/RI-LIO" ["l"="57.998,9.776"]
 "minwoo0611/IA_LIO_SAM" ["l"="57.971,9.763"]
+"MaxChanger/awesome-point-cloud-scene-flow" ["l"="65.337,4.395", "c"=263]
 "lewisjiang/contour-context" ["l"="58.193,10.157"]
 "YungeCui/BoW3D" ["l"="58.22,10.121"]
-"zijiechenrobotics/ig_lio" ["l"="58.314,10.019"]
 "robot-learning-freiburg/LCDNet" ["l"="58.05,10.218"]
 "MetaSLAM/GPRS_Survey" ["l"="57.992,10.196"]
 "csiro-robotics/LoGG3D-Net" ["l"="58.012,10.227"]
 "pettni/smooth_feedback" ["l"="58.07,10.596"]
 "aau-cns/Lie-plusplus" ["l"="58.088,10.639"]
-"Simple-Robotics/candlewick" ["l"="61.359,16.703"]
+"Simple-Robotics/candlewick" ["l"="61.359,16.703", "c"=184]
 "fcchit/CFPR" ["l"="57.971,10.242"]
 "koide3/hdl_global_localization" ["l"="58.183,9.691"]
 "HaisenbergPeng/ROLL" ["l"="58.207,9.687"]
@@ -4790,24 +5664,22 @@ digraph G {
 "Taeyoung96/Awesome-LiDAR-IMU-calibration" ["l"="58.239,10.054"]
 "APRIL-ZJU/OA-LICalib" ["l"="58.205,10.044"]
 "Taeyoung96/GRIL-Calib" ["l"="58.332,10.03"]
-"APRIL-ZJU/clins" ["l"="58.224,10.026"]
 "brytsknguyen/slict" ["l"="58.338,10.004"]
-"victorprad/InfiniTAM" ["l"="59.5,11.287"]
-"botforge/CUDA-ScanMatcher-ICP" ["l"="59.086,15.821"]
-"mp3guy/Kintinuous" ["l"="59.48,11.275"]
-"niessner/VoxelHashing" ["l"="59.463,11.319"]
-"mp3guy/ElasticFusion" ["l"="59.446,11.191"]
-"meiqua/pose_refine" ["l"="59.13,15.783"]
-"tum-vision/fastfusion" ["l"="59.494,11.26"]
+"victorprad/InfiniTAM" ["l"="59.5,11.287", "c"=87]
+"mp3guy/Kintinuous" ["l"="59.48,11.275", "c"=87]
+"mp3guy/ElasticFusion" ["l"="59.446,11.191", "c"=87]
+"meiqua/pose_refine" ["l"="59.13,15.783", "c"=536]
 "robot-learning-freiburg/PADLoC" ["l"="57.971,10.224"]
 "HITSZ-NRSL/lidar_camera_calibrator" ["l"="57.88,10.009"]
-"decargroup/pykoop" ["l"="58.05,10.648"]
 "decargroup/pymlg" ["l"="58.059,10.633"]
+"xieqi1/VINS-Mono-noted" ["l"="59.652,11.055", "c"=87]
 "FAIRSpace-AdMaLL/liosam_mapper" ["l"="58.356,9.745"]
-"NVIDIA-AI-IOT/CUDA-PointPillars" ["l"="64.564,11.127"]
-"NVIDIA-AI-IOT/Lidar_AI_Solution" ["l"="64.585,11.237"]
+"rameau-fr/MC-Calib" ["l"="59.731,10.888", "c"=87]
+"NVIDIA-AI-IOT/CUDA-PointPillars" ["l"="64.564,11.127", "c"=61]
+"NVIDIA-AI-IOT/Lidar_AI_Solution" ["l"="64.585,11.237", "c"=61]
 "m-tartari/realsense_gazebo_plugin" ["l"="58.183,10.546"]
 "xmba15/automatic_lidar_camera_calibration" ["l"="57.925,9.934"]
+"hku-mars/dyn_small_obs_avoidance" ["l"="60.387,13.77", "c"=334]
 "engcang/FAST-LIO-SAM-QN" ["l"="58.325,9.971"]
 "joshmcculloch/lidar-camera-fusion" ["l"="57.635,9.882"]
 "luckyluckydadada/HIKROBOT-MVS-CAMERA-ROS" ["l"="57.972,9.892"]
@@ -4824,18 +5696,18 @@ digraph G {
 "luckyluckydadada/livox_color_mapping" ["l"="58.626,9.666"]
 "kahowang/Livox_Color_View_And_Mpping" ["l"="58.541,9.74"]
 "leggedrobotics/delora" ["l"="57.911,10.252"]
-"SRainGit/CAE-LO" ["l"="65.432,11.081"]
+"SRainGit/CAE-LO" ["l"="65.432,11.081", "c"=1265]
+"wanghuayou1028/ICRA2021-SLAM-paper-list" ["l"="59.585,11.186", "c"=87]
 "mit-acl/clipper" ["l"="58.355,10.161"]
 "HKUST-Aerial-Robotics/G3Reg" ["l"="58.368,10.129"]
 "azureology/kitti-velo2cam" ["l"="57.657,10.206"]
 "borongyuan/FAST_LIO" ["l"="57.697,10.022"]
 "Livox-SDK/livox_laser_simulation" ["l"="58.098,10.158"]
 "lvfengchi/livox_laser_simulation" ["l"="58.084,10.193"]
-"stm32f303ret6/livox_laser_simulation_RO2" ["l"="61.138,17.044"]
+"stm32f303ret6/livox_laser_simulation_RO2" ["l"="61.138,17.044", "c"=930]
 "fishros/transforms3d_cpp" ["l"="57.679,10.029"]
 "YJZLuckyBoy/lviorf" ["l"="57.949,10.115"]
-"OpenGP/htrack" ["l"="31.163,29.542"]
-"ankurhanda/DeformationLoopClosure" ["l"="59.44,11.49"]
+"ankurhanda/DeformationLoopClosure" ["l"="59.44,11.49", "c"=87]
 "liuzm-slam/VLOAM-NOTED" ["l"="57.846,9.963"]
 "rvp-group/mdslam" ["l"="58.385,9.805"]
 "BIT-MJY/occupancy_grid_mapping" ["l"="57.896,10.223"]
@@ -4854,87 +5726,111 @@ digraph G {
 "aau-cns/flight_stack" ["l"="58.046,10.536"]
 "aau-cns/insane_dataset_tools" ["l"="58.036,10.525"]
 "BIT-MJY/Active_SLAM_Based_on_Information_Theory" ["l"="57.86,10.249"]
-"fishros/install" ["l"="58.182,9.825"]
-"fishros/d2l-ros2" ["l"="60.21,12.445"]
-"ZJU-FAST-Lab/ego-planner" ["l"="60.378,13.817"]
-"HKUST-Aerial-Robotics/Fast-Planner" ["l"="60.357,13.829"]
-"ai-winter/ros_motion_planning" ["l"="-54.432,-12.7"]
-"ZJU-FAST-Lab/Fast-Drone-250" ["l"="60.394,13.834"]
-"gaoxiang12/slambook2" ["l"="59.293,11.055"]
-"chengyangkj/Ros_Qt5_Gui_App" ["l"="60.202,12.553"]
-"qiayuanl/legged_control" ["l"="61.077,16.442"]
-"rpng/open_vins" ["l"="59.457,11.072"]
-"SJTU-ViSYS/M2DGR" ["l"="58.207,9.98"]
-"youngguncho/awesome-slam-datasets" ["l"="59.423,11.137"]
-"lukasvst/dm-vio" ["l"="59.559,11.137"]
-"weisongwen/UrbanLoco" ["l"="58.474,11.264"]
-"OpenCalib/JointCalib" ["l"="57.947,10.075"]
+"ZJU-FAST-Lab/Fast-Drone-250" ["l"="60.394,13.834", "c"=334]
+"fishros/d2l-ros2" ["l"="60.21,12.445", "c"=286]
+"HKUST-Aerial-Robotics/Fast-Planner" ["l"="60.357,13.829", "c"=334]
+"ai-winter/ros_motion_planning" ["l"="-54.432,-12.7", "c"=252]
+"qiayuanl/legged_control" ["l"="61.077,16.442", "c"=184]
+"rpng/open_vins" ["l"="59.457,11.072", "c"=87]
+"autowarefoundation/autoware" ["l"="61.666,12.416", "c"=774]
+"tum-vision/tandem" ["l"="59.532,11.223", "c"=87]
+"lukasvst/dm-vio" ["l"="59.559,11.137", "c"=87]
+"HITSZ-NRSL/Dynamic-VINS" ["l"="59.688,11.187", "c"=87]
+"sair-lab/AirSLAM" ["l"="59.616,11.216", "c"=87]
+"KangLiao929/Awesome-Deep-Camera-Calibration" ["l"="59.143,8.641", "c"=1117]
 "OpenCalib/CalibAnything" ["l"="58.033,10.045"]
+"NVIDIA-ISAAC-ROS/isaac_ros_nvblox" ["l"="59.26,11.221", "c"=87]
+"Vincentqyw/cv-arxiv-daily" ["l"="59.459,11.228", "c"=87]
+"OpenCalib/JointCalib" ["l"="57.947,10.075"]
 "Xujianhong123Allen/sensor_calibration" ["l"="57.88,10.098"]
 "BIT-MJY/SeqOT" ["l"="58.016,10.311"]
 "nubot-nudt/LCR-Net" ["l"="58.176,10.308"]
+"duyongquan/LTSLAM" ["l"="59.762,11.126", "c"=87]
 "ethz-asl/waverider" ["l"="58.412,10.209"]
-"ethz-asl/voxgraph" ["l"="59.445,11.246"]
 "hku-mars/btc_descriptor" ["l"="58.305,10.086"]
-"NaokiAkai/als_ros" ["l"="58.292,9.726"]
-"MigVega/Ogm2Pgbm" ["l"="61.539,13.825"]
-"at-wat/neonavigation" ["l"="61.629,13.612"]
-"jkk-research/wayp_plan_tools" ["l"="58.918,12.863"]
+"MigVega/Ogm2Pgbm" ["l"="61.539,13.825", "c"=313]
+"at-wat/neonavigation" ["l"="61.629,13.612", "c"=313]
+"jkk-research/wayp_plan_tools" ["l"="58.918,12.863", "c"=299]
+"liuguitao/AVP-SLAM-PLUS" ["l"="59.741,11.088", "c"=87]
 "MetaSLAM/AutoMerge_Docker" ["l"="58.362,9.93"]
 "MetaSLAM/AutoMemory_Docker" ["l"="58.414,9.864"]
+"MichaelFYang/far_planner" ["l"="60.459,13.809", "c"=334]
+"mmolero/awesome-point-cloud-processing" ["l"="65.278,11.27", "c"=203]
+"pypose/pypose" ["l"="59.307,11.209", "c"=87]
+"CCNYRoboticsLab/imu_tools" ["l"="60.321,12.498", "c"=286]
 "PRBonn/point-cloud-prediction" ["l"="57.904,10.474"]
-"PRBonn/deep-point-map-compression" ["l"="-39.093,21.57"]
+"PRBonn/deep-point-map-compression" ["l"="-39.093,21.57", "c"=806]
 "Blurryface0814/PCPNet" ["l"="57.937,10.429"]
-"haomo-ai/MotionSeg3D" ["l"="58.314,10.258"]
-"PRBonn/4DMOS" ["l"="58.304,10.211"]
 "xieKKKi/MotionBEV" ["l"="58.324,10.284"]
 "nubot-nudt/InsMOS" ["l"="58.297,10.319"]
 "PRBonn/auto-mos" ["l"="58.348,10.276"]
 "PRBonn/MapMOS" ["l"="58.325,10.238"]
-"leggedrobotics/elevation_mapping_cupy" ["l"="60.948,16.373"]
-"luigifreda/slamplay" ["l"="59.514,11.211"]
-"leggedrobotics/traversability_estimation" ["l"="60.478,13.733"]
-"PeterFWS/Structure-PLP-SLAM" ["l"="59.663,11.183"]
+"symforce-org/symforce" ["l"="59.303,11.136", "c"=87]
+"leggedrobotics/elevation_mapping_cupy" ["l"="60.948,16.373", "c"=184]
+"luigifreda/slamplay" ["l"="59.514,11.211", "c"=87]
+"leggedrobotics/traversability_estimation" ["l"="60.478,13.733", "c"=334]
+"PeterFWS/Structure-PLP-SLAM" ["l"="59.663,11.183", "c"=87]
+"NeBula-Autonomy/LAMP" ["l"="59.782,11.011", "c"=87]
 "NeBula-Autonomy/nebula-odometry-dataset" ["l"="58.346,9.861"]
-"NeBula-Autonomy/LAMP" ["l"="59.782,11.011"]
-"ethz-asl/kalibr" ["l"="59.371,10.987"]
-"mit-han-lab/bevfusion" ["l"="64.527,11.227"]
+"NVIDIA-ISAAC-ROS/isaac_ros_visual_slam" ["l"="59.384,11.222", "c"=87]
+"autowarefoundation/autoware_universe" ["l"="62.876,12.14", "c"=461]
+"JingwenWang95/DSP-SLAM" ["l"="59.653,11.222", "c"=87]
+"UMich-CURLY-teaching/UMich-ROB-530-public" ["l"="58.952,12.76", "c"=299]
+"mit-han-lab/bevfusion" ["l"="64.527,11.227", "c"=61]
+"ori-drs/allan_variance_ros" ["l"="59.535,11.094", "c"=87]
 "calibtoolkit/calibration_kit" ["l"="58.037,9.956"]
-"liuguitao/AVP-SLAM-PLUS" ["l"="59.741,11.088"]
+"versatran01/dsol" ["l"="59.66,11.109", "c"=87]
 "rvp-group/ba-mdslam" ["l"="58.414,9.768"]
+"cvg/nice-slam" ["l"="59.293,11.28", "c"=87]
 "aau-cns/ABC-EqF" ["l"="58.105,10.733"]
 "pvangoor/GIFT" ["l"="58.091,10.713"]
+"scomup/MathematicalRobotics" ["l"="59.492,12.566", "c"=299]
 "kevin2431/Traj-LO" ["l"="58.345,10.034"]
-"strawlab/python-pcl" ["l"="65.312,11.279"]
-"uoip/g2opy" ["l"="59.457,10.959"]
+"stereolabs/zed-ros-wrapper" ["l"="59.136,10.881", "c"=87]
+"JunyuanDeng/NeRF-LOAM" ["l"="58.308,10.055"]
+"strawlab/python-pcl" ["l"="65.312,11.279", "c"=203]
 "EasonChen99/I2D-Loc" ["l"="57.602,10.045"]
-"url-kaist/dynaVINS" ["l"="59.681,11.2"]
-"HITSZ-NRSL/Dynamic-VINS" ["l"="59.688,11.187"]
-"halajun/VDO_SLAM" ["l"="59.619,11.196"]
+"url-kaist/dynaVINS" ["l"="59.681,11.2", "c"=87]
 "StephLin/LIO-SEGMOT" ["l"="58.423,10.005"]
-"yubaoliu/RDS-SLAM" ["l"="59.674,11.251"]
-"silencht/SG-SLAM" ["l"="59.703,11.286"]
-"ivipsourcecode/DS-SLAM" ["l"="59.602,11.205"]
+"yubaoliu/RDS-SLAM" ["l"="59.674,11.251", "c"=87]
+"silencht/SG-SLAM" ["l"="59.703,11.286", "c"=87]
+"ivipsourcecode/DS-SLAM" ["l"="59.602,11.205", "c"=87]
+"vmayoral/ros-robotics-companies" ["l"="58.967,12.74", "c"=299]
+"ouenal/scribblekitti" ["l"="64.353,11.126", "c"=61]
+"llijiang/GuidedContrast" ["l"="58.434,10.389"]
 "skyrim835/LVI-SAM-modified" ["l"="57.965,10.101"]
 "engcang/FAST-LIO-SAM" ["l"="58.322,9.931"]
 "Yixin-F/better_fastlio2" ["l"="58.358,10.011"]
+"MIT-SPARK/Hydra" ["l"="60.124,17.58", "c"=363]
 "Huguet57/LIMO-Velo" ["l"="58.485,9.949"]
 "fetty31/fast_LIMO" ["l"="58.491,9.97"]
+"dottantgal/ROS2_learning" ["l"="59.017,12.776", "c"=299]
 "ISEE-Technology/lidar-with-velocity" ["l"="57.768,9.974"]
+"mherb/kalman" ["l"="59.413,10.93", "c"=87]
 "TIERS/tiers-lidars-dataset" ["l"="58.433,9.941"]
 "TIERS/tiers-lidars-dataset-enhanced" ["l"="58.481,9.906"]
 "BingqiShen/EMV-LIO" ["l"="58.407,9.935"]
 "Yaepiii/TRLO" ["l"="58.49,9.994"]
+"url-kaist/Ground-Segmentation-Benchmark" ["l"="64.38,12.613", "c"=1121]
 "LeegoChen/PTC-Net" ["l"="58.025,10.288"]
 "NeBula-Autonomy/nebula-multirobot-dataset" ["l"="58.378,9.836"]
+"APRIL-ZJU/Ctrl-VIO" ["l"="59.867,11.07", "c"=87]
+"APRIL-ZJU/clic" ["l"="58.336,9.984"]
 "chengwei0427/ESKF_LIO" ["l"="58.336,10.048"]
 "GDUT-Kyle/faster-lio_noted" ["l"="58.277,10.058"]
 "PRBonn/segcontrast" ["l"="58.413,10.359"]
 "PRBonn/3DUIS" ["l"="58.383,10.316"]
 "PRBonn/TARL" ["l"="58.406,10.343"]
-"llijiang/GuidedContrast" ["l"="58.434,10.389"]
+"yixuan/spectra" ["l"="-19.434,-25.943", "c"=10]
+"niessner/Opt" ["l"="59.473,11.394", "c"=87]
+"SpectacularAI/HybVIO" ["l"="59.657,11.095", "c"=87]
+"VIS4ROB-lab/voxfield" ["l"="59.328,11.325", "c"=87]
 "ICEORY/DeepStream" ["l"="58.671,9.625"]
-"APRIL-ZJU/clic" ["l"="58.336,9.984"]
+"VIS4ROB-lab/HyperSLAM" ["l"="60.009,11.065", "c"=87]
+"kafeiyin00/WHU-HelmetDataset" ["l"="58.369,10.979", "c"=506]
+"zht1117/LiDAR-PGO-uncertainty" ["l"="58.501,10.012"]
+"Taeyoung96/ICRA-2022-SLAM-paper-list" ["l"="59.542,11.262", "c"=87]
+"wangx1996/Fast-Ground-Segmentation-Based-on-JPC" ["l"="64.418,12.577", "c"=1121]
 "cloudcjf/CCL" ["l"="57.932,10.273"]
 "csiro-robotics/Uncertainty-LPR" ["l"="57.928,10.292"]
 "JokerJohn/SLAMTools" ["l"="58.149,10.37"]
@@ -4944,48 +5840,74 @@ digraph G {
 "YJZLuckyBoy/LVI-SAM-Simple" ["l"="57.968,10.119"]
 "PaoPaoRobot/IROS2022-paper-list" ["l"="58.584,9.808"]
 "PaoPaoRobot/ICRA2022-paper-list" ["l"="58.609,9.793"]
-"hku-mars/M-detector" ["l"="58.288,10.051"]
+"kanster/awesome-slam" ["l"="59.401,11.12", "c"=87]
 "nkymzsy/LIO-SAM-MID360" ["l"="58.266,9.976"]
-"66Lau/NEXTE_Sentry_Nav" ["l"="61.124,17.069"]
+"66Lau/NEXTE_Sentry_Nav" ["l"="61.124,17.069", "c"=930]
+"facontidavide/PlotJuggler" ["l"="59.025,12.619", "c"=299]
+"ToniRV/NeRF-SLAM" ["l"="59.263,11.286", "c"=87]
+"zang09/ORB_SLAM3_ROS2" ["l"="59.606,11.397", "c"=87]
+"jkk-research/pointcloud_to_grid" ["l"="58.848,12.902", "c"=299]
 "ZhouZijie77/LCPR" ["l"="57.982,10.343"]
 "IRMVLab/Diff-IP2D" ["l"="57.982,10.358"]
+"IntelRealSense/realsense-ros" ["l"="60.293,12.646", "c"=286]
+"MISTLab/Swarm-SLAM" ["l"="59.789,11.029", "c"=87]
+"hku-mars/Swarm-LIO2" ["l"="58.363,10.062"]
 "SCNU-RISLAB/MF-MOS" ["l"="58.342,10.291"]
+"gangweix/CGI-Stereo" ["l"="65.185,5.143", "c"=415]
 "ZikangYuan/dynamic_lio" ["l"="58.429,10.019"]
 "YWL0720/I2EKF-LO" ["l"="58.369,10.018"]
 "YibinWu/LIO-EKF" ["l"="58.38,10.005"]
+"MaverickPeter/MR_SLAM" ["l"="59.836,11.011", "c"=87]
 "liangheming/VoxelMapPlus_FASTLIO2" ["l"="58.386,9.983"]
+"mit-acl/mppi_numba" ["l"="60.958,16.295", "c"=184]
+"nubot-nudt/T-Hybrid-planner" ["l"="58.342,10.425"]
 "utiasASRL/steam_icp" ["l"="58.495,10.091"]
 "tiev-tongji/LOG-LIO" ["l"="58.453,10.037"]
-"Joanna-HE/LIGO." ["l"="58.406,10.08"]
+"tier4/AWSIM" ["l"="62.875,12.115", "c"=461]
+"SJTU-ViSYS/Ground-Fusion" ["l"="59.751,11.169", "c"=87]
+"kxhit/vMAP" ["l"="59.213,11.353", "c"=87]
 "JokerJohn/PALoc" ["l"="58.416,10.016"]
 "JokerJohn/MS-Mapping" ["l"="58.4,10.064"]
+"haomo-ai/SuperFusion" ["l"="64.339,11.376", "c"=61]
+"PRBonn/PIN_SLAM" ["l"="58.355,10.08"]
+"umautobots/LONER" ["l"="58.358,10.098"]
 "Arafat-ninja/FAST_LIO" ["l"="58.329,9.889"]
+"ChangwuLiu/InGVIO" ["l"="58.469,11.22", "c"=506]
+"3D-Vision-World/awesome-NeRF-and-3DGS-SLAM" ["l"="59.24,11.286", "c"=87]
 "pvangoor/pylie" ["l"="58.104,10.759"]
+"ros-perception/image_pipeline" ["l"="60.339,12.514", "c"=286]
+"url-kaist/outlier-robust-radar-odometry" ["l"="63.685,35.259", "c"=589]
+"520xyxyzq/awesome-object-SLAM" ["l"="59.715,11.323", "c"=87]
 "robot-pesg/BotanicGarden" ["l"="58.467,9.932"]
 "lovelyyoshino/FAST_LIO2_Noted" ["l"="58.308,9.931"]
 "YJZLuckyBoy/LIO-SAM-Modified" ["l"="58.328,9.809"]
-"APRIL-ZJU/Coco-LIC" ["l"="58.361,10.033"]
+"castacks/tartancalib" ["l"="59.844,10.917", "c"=87]
+"Unsigned-Long/iKalibr" ["l"="58.382,10.066"]
+"TUMFTM/ORB_SLAM3_RGBL" ["l"="59.673,11.314", "c"=87]
+"zhuge2333/4DRadarSLAM" ["l"="63.739,35.247", "c"=589]
+"ntnu-arl/lidar_degeneracy_datasets" ["l"="58.465,10.083"]
+"hku-mars/MARSIM" ["l"="60.425,13.862", "c"=334]
 "daobilige-su/loam_back_and_forth" ["l"="57.754,9.756"]
+"Ekumen-OS/beluga" ["l"="59.096,12.758", "c"=299]
+"jhu-lcsr/handeye_calib_camodocal" ["l"="60.822,11.731", "c"=632]
 "coperception/double-m-quantification" ["l"="58.516,10.747"]
 "ZhengXinyue/bilibili_project" ["l"="58.701,9.598"]
 "KumarRobotics/velodyne_puck" ["l"="57.862,9.645"]
 "1chi217/velodyne" ["l"="57.847,9.587"]
 "ZiliangMiao/Hybrid_Mapping_Cocalibration" ["l"="58.467,9.863"]
 "XiaoBaiiiiii/colmap-pcd" ["l"="58.247,10.08"]
-"zhaofuq/LOD-3DGS" ["l"="63.956,3.302"]
+"zhaofuq/LOD-3DGS" ["l"="63.956,3.302", "c"=49]
 "hku-mars/joint-lidar-camera-calib" ["l"="58.199,10.071"]
 "xieyuser/GS-LIVM" ["l"="58.403,10.15"]
 "YWL0720/FAST-LIO-COLOR-MAPPING" ["l"="58.474,9.805"]
 "hr2894235132/faster-livo" ["l"="58.563,9.705"]
 "OpenCalib/LiDAR2INS" ["l"="58.095,10.1"]
-"i2Nav-WHU/FF-LINS" ["l"="58.389,11.054"]
-"rpng/MINS" ["l"="59.66,11.129"]
-"SJTU-ViSYS/Ground-Fusion" ["l"="59.751,11.169"]
-"Taeyoung96/ICRA-2022-SLAM-paper-list" ["l"="59.542,11.262"]
+"i2Nav-WHU/FF-LINS" ["l"="58.389,11.054", "c"=506]
+"rpng/MINS" ["l"="59.66,11.129", "c"=87]
 "catec/ouster_ros" ["l"="58.1,9.731"]
 "Pamphlett/Segregator" ["l"="58.467,10.225"]
 "HKUST-Aerial-Robotics/Pagor" ["l"="58.433,10.196"]
-"shaolinbit/RTKinGSS" ["l"="58.367,11.306"]
+"shaolinbit/RTKinGSS" ["l"="58.367,11.306", "c"=506]
 "Blurryface0814/SunnyNet" ["l"="57.924,10.45"]
 "biter0088/Non-uniform-quadtree-map" ["l"="57.992,10.384"]
 "biter0088/pc-nerf" ["l"="58,10.357"]
@@ -4993,32 +5915,44 @@ digraph G {
 "leilegelei1/GVIO" ["l"="57.957,10.343"]
 "MetaSLAM/AdaFusion" ["l"="57.949,10.377"]
 "BIT-XJY/EINet" ["l"="57.932,10.37"]
+"cartographer-project/cartographer" ["l"="59.28,10.963", "c"=87]
+"ros-planning/navigation" ["l"="60.273,12.578", "c"=286]
+"dusty-nv/ros_deep_learning" ["l"="53.243,32.43", "c"=251]
 "Tompson11/SLAM_comparison" ["l"="58.348,9.821"]
+"runnanchen/CLIP2Scene" ["l"="65.274,11.803", "c"=203]
 "unitreerobotics/point_lio_unilidar" ["l"="58.254,10.118"]
 "unitreerobotics/unilidar_sdk" ["l"="58.268,10.17"]
-"jizhang-cmu/autonomy_stack_go2" ["l"="60.897,16.506"]
+"jizhang-cmu/autonomy_stack_go2" ["l"="60.897,16.506", "c"=184]
 "unitreerobotics/unilidar_sdk2" ["l"="58.284,10.174"]
-"abizovnuralem/go2_ros2_sdk" ["l"="60.92,16.506"]
+"abizovnuralem/go2_ros2_sdk" ["l"="60.92,16.506", "c"=184]
+"mgonzs13/yolo_ros" ["l"="58.862,12.963", "c"=299]
 "liangheming/iG-LIO_SAM_LC" ["l"="58.395,9.962"]
-"nubot-nudt/T-Hybrid-planner" ["l"="58.342,10.425"]
+"Alpaca-zip/ultralytics_ros" ["l"="58.826,12.971", "c"=299]
 "nubot-nudt/ElC-OIS" ["l"="58.325,10.396"]
-"abeleinin/gp-navigation" ["l"="60.869,16.282"]
+"abeleinin/gp-navigation" ["l"="60.869,16.282", "c"=184]
 "minwoo0611/Awesome-3D-LiDAR-Datasets" ["l"="58.491,10.062"]
 "hogyun2/awesome-lidar-place-recognition" ["l"="58.468,10.043"]
 "sparolab/SOLiD" ["l"="58.44,10.055"]
-"ntnu-arl/lidar_degeneracy_datasets" ["l"="58.465,10.083"]
 "lian-yue0515/MM-LINS" ["l"="58.455,10.018"]
+"HKUST-Aerial-Robotics/FC-Planner" ["l"="60.461,13.889", "c"=334]
 "engcang/FAST-LIO-SAM-SC-QN" ["l"="58.369,9.913"]
 "engcang/FAST-LIO-Localization-SC-QN" ["l"="58.369,9.883"]
 "tiev-tongji/LOG-LIO2" ["l"="58.417,10.047"]
 "chengwei0427/Adaptive-LIO" ["l"="58.416,10.033"]
+"HKUST-Aerial-Robotics/D2SLAM" ["l"="59.717,11.063", "c"=87]
+"changh95/fastcampus_slam_codes" ["l"="59.413,11.261", "c"=87]
 "Liansheng-Wang/faster_lio_localization" ["l"="58.728,10.023"]
 "Liansheng-Wang/InGM-LIO" ["l"="58.672,10.016"]
-"haomo-ai/Cam4DOcc" ["l"="64.618,11.469"]
+"haomo-ai/Cam4DOcc" ["l"="64.618,11.469", "c"=61]
 "IRMVLab/MADiff" ["l"="57.978,10.372"]
 "Yaepiii/C-LOAM" ["l"="58.455,9.997"]
+"ethz-asl/kitti_to_rosbag" ["l"="64.412,10.888", "c"=61]
 "HesaiTechnology/HesaiLidar_SDK_2.0" ["l"="57.934,9.604"]
+"jianboqi/CSF" ["l"="37.802,23.016", "c"=914]
 "DCSI2022/AFLI_Calib" ["l"="58.516,9.998"]
+"LiZhengXiao99/Navigation-Learning" ["l"="58.362,11.222", "c"=506]
+"ros-perception/perception_pcl" ["l"="60.362,12.464", "c"=286]
+"liulinbo/slam" ["l"="59.408,11.073", "c"=87]
 "hku-mars/SLAM-HKU-MaRS-LAB" ["l"="58.297,10.122"]
 "HKUST-Aerial-Robotics/LiDAR-Registration-Benchmark" ["l"="58.399,10.189"]
 "ctu-mrs/RMS" ["l"="58.443,10.11"]
@@ -5026,31 +5960,36 @@ digraph G {
 "nubot-nudt/SG-SLAM" ["l"="58.297,10.383"]
 "neng-wang/Awesome-LiDAR-MOS" ["l"="58.287,10.368"]
 "nubot-nudt/SegNet4D" ["l"="58.297,10.359"]
-"JunyuanDeng/NeRF-LOAM" ["l"="58.308,10.055"]
-"umautobots/LONER" ["l"="58.358,10.098"]
-"PRBonn/PIN_SLAM" ["l"="58.355,10.08"]
-"eriksandstroem/Point-SLAM" ["l"="59.219,11.325"]
-"HengyiWang/Co-SLAM" ["l"="59.211,11.337"]
-"hku-mars/ROG-Map" ["l"="58.266,10.066"]
-"hku-mars/MARSIM" ["l"="60.425,13.862"]
-"hku-mars/IPC" ["l"="60.387,13.878"]
-"hku-mars/dyn_small_obs_avoidance" ["l"="60.387,13.77"]
-"hku-mars/SUPER" ["l"="60.424,13.902"]
-"hku-mars/Swarm-LIO2" ["l"="58.363,10.062"]
-"HKUST-Aerial-Robotics/FC-Planner" ["l"="60.461,13.889"]
+"liangheming/FASTLIO2_ROS2" ["l"="58.406,9.978"]
+"eriksandstroem/Point-SLAM" ["l"="59.219,11.325", "c"=87]
+"HengyiWang/Co-SLAM" ["l"="59.211,11.337", "c"=87]
+"SYSU-STAR/H2-Mapping" ["l"="59.27,11.328", "c"=87]
+"hku-mars/M2Mapping" ["l"="58.433,10.145"]
+"hku-mars/IPC" ["l"="60.387,13.878", "c"=334]
+"hku-mars/SUPER" ["l"="60.424,13.902", "c"=334]
 "SlamCabbage/NDTMC" ["l"="58.124,10.305"]
 "SlamCabbage/NDTMC-LIO-SAM" ["l"="58.11,10.344"]
 "tiev-tongji/RingFalsNormal" ["l"="58.514,10.048"]
 "KOKIAOKI/3d_bbs" ["l"="58.382,10.086"]
 "Yixin-F/LiLoc" ["l"="58.4,10.045"]
+"MIT-SPARK/Kimera-Multi" ["l"="59.766,11.034", "c"=87]
+"KumarRobotics/SLIDE_SLAM" ["l"="58.593,10.153"]
+"facebookresearch/OrienterNet" ["l"="59.482,9.464", "c"=274]
+"jinyummiao/map-in-mono-reloc" ["l"="57.588,10.072"]
+"sourishg/stereo-calibration" ["l"="65.311,4.955", "c"=415]
 "NEU-REAL/MTM-Tracker" ["l"="58.353,10.348"]
 "NEU-REAL/StreamMOS" ["l"="58.348,10.327"]
+"ailab-hanyang/Radar4Motion" ["l"="63.719,35.265", "c"=589]
 "ryanbgriffiths/ICRA2023PaperList" ["l"="58.516,9.853"]
 "ryanbgriffiths/IROS2023PaperList" ["l"="58.495,9.857"]
 "ryanbgriffiths/ICRA2024PaperList" ["l"="58.444,9.904"]
-"gonultasbu/ICRA2022PaperList" ["l"="60.029,11.03"]
+"gonultasbu/ICRA2022PaperList" ["l"="60.029,11.03", "c"=87]
 "QiZS-BIT/GSPR" ["l"="57.964,10.39"]
 "ethz-asl/reactive_avoidance" ["l"="58.454,10.255"]
+"ZJU-FAST-Lab/uneven_planner" ["l"="60.515,13.77", "c"=334]
+"XikunLiu-huskit/GLIO" ["l"="58.449,11.204", "c"=506]
+"zhh2005757/FAST-LIO-Multi-Sensor-Fusion" ["l"="58.465,9.973"]
+"yutongwangBIT/VOOM" ["l"="59.718,11.386", "c"=87]
 "gloryhry/M2DP-CPP" ["l"="58.044,10.28"]
 "adnan33/M2DP-python" ["l"="58.047,10.294"]
 "lus6-Jenny/RING" ["l"="58.383,10.217"]
@@ -5061,12 +6000,11 @@ digraph G {
 "Sonne-Zhu/gtsam_demo_limot" ["l"="58.559,9.955"]
 "TakuOkawara/full_linear_wheel_odometry_factor" ["l"="58.284,9.696"]
 "victl/VeloSLAM" ["l"="57.842,9.554"]
+"hku-mars/PULSAR" ["l"="60.401,13.744", "c"=334]
 "Yan-Xia/CASSPR" ["l"="57.925,10.338"]
-"zht1117/LiDAR-PGO-uncertainty" ["l"="58.501,10.012"]
 "nubot-nudt/RDMNet" ["l"="58.375,10.548"]
 "nubot-nudt/RLCNet" ["l"="58.362,10.517"]
 "Taeyoung96/IROS-2022-SLAM-paper-list" ["l"="58.536,9.818"]
-"jinyummiao/map-in-mono-reloc" ["l"="57.588,10.072"]
 "changh95/kiss-icp-omp" ["l"="58.567,10.05"]
 "bexcite/ptudes-lab" ["l"="58.614,10.058"]
 "StarRealMan/EINRUL" ["l"="58.636,10.294"]
@@ -5077,38 +6015,49 @@ digraph G {
 "simdan93/Collision_avoidance_sailingboat_VLP-16_ROS_Kinetic" ["l"="57.849,9.721"]
 "windowsub0406/3D-Lidar-visualization-VLP-16" ["l"="57.863,9.723"]
 "nubot-nudt/ICD-Fusion" ["l"="58.341,10.461"]
-"hku-mars/M2Mapping" ["l"="58.433,10.145"]
-"SYSU-STAR/H2-Mapping" ["l"="59.27,11.328"]
+"VladimirYugay/Gaussian-SLAM" ["l"="59.223,11.303", "c"=87]
+"OctoMap/octomap" ["l"="59.291,11.087", "c"=87]
+"ShuhongLL/SGS-SLAM" ["l"="59.092,11.361", "c"=87]
+"VITA-Group/MM3DGS-SLAM" ["l"="58.446,10.175"]
+"PRBonn/LiDiff" ["l"="64.53,11.621", "c"=61]
+"meyiao/LaserSLAM" ["l"="61.55,14.088", "c"=313]
+"lichtblick-suite/lichtblick" ["l"="59.072,12.682", "c"=299]
 "liangheming/FASTLIO2_SAM_LC" ["l"="58.514,9.916"]
 "liangheming/VoxelMap_LIO_SAM" ["l"="58.589,9.879"]
 "CPerezRuiz335/LIMOncello" ["l"="58.535,9.946"]
-"ryanbgriffiths/IROS2024PaperList" ["l"="61.71,13.096"]
-"robodhruv/visualnav-transformer" ["l"="60.219,17.582"]
-"YanjieZe/Paper-List" ["l"="59.377,16.568"]
-"bdaiinstitute/vlfm" ["l"="60.212,17.599"]
-"yewzijian/RPMNet" ["l"="65.531,11.091"]
+"ryanbgriffiths/IROS2024PaperList" ["l"="61.71,13.096", "c"=313]
+"robodhruv/visualnav-transformer" ["l"="60.219,17.582", "c"=363]
+"YanjieZe/Paper-List" ["l"="59.377,16.568", "c"=234]
+"bdaiinstitute/vlfm" ["l"="60.212,17.599", "c"=363]
+"APRIL-ZJU/Gaussian-LIC" ["l"="58.417,10.135"]
+"yewzijian/RPMNet" ["l"="65.531,11.091", "c"=1265]
 "gattia/cycpd" ["l"="58.256,10.278"]
-"saikiran321/nonrigid_icp" ["l"="31.951,29.295"]
-"wuhaozhe/pytorch-nicp" ["l"="31.931,29.337"]
+"saikiran321/nonrigid_icp" ["l"="31.951,29.295", "c"=124]
+"wuhaozhe/pytorch-nicp" ["l"="31.931,29.337", "c"=124]
 "sdwyc/ROLO" ["l"="58.443,10.08"]
 "xuqingyuan2000/LP-ICP" ["l"="58.532,10.114"]
 "lian-yue0515/D-LI-Init" ["l"="58.542,10.091"]
 "IF-A-CAT/LIR-LIVO" ["l"="58.485,10.125"]
 "hku-mars/FAST-Calib" ["l"="58.407,10.11"]
 "HKUST-Aerial-Robotics/GS-LIVO" ["l"="58.389,10.108"]
-"VITA-Group/MM3DGS-SLAM" ["l"="58.446,10.175"]
 "sheng00125/LIV-GaussMap" ["l"="58.434,10.16"]
-"APRIL-ZJU/Gaussian-LIC" ["l"="58.417,10.135"]
-"lif314/GS3LAM" ["l"="59.065,11.376"]
-"hjr37/CG-SLAM" ["l"="59.121,11.355"]
-"ShuhongLL/SGS-SLAM" ["l"="59.092,11.361"]
-"GradientSpaces/LoopSplat" ["l"="59.111,11.323"]
+"lif314/GS3LAM" ["l"="59.065,11.376", "c"=87]
+"hjr37/CG-SLAM" ["l"="59.121,11.355", "c"=87]
+"GradientSpaces/LoopSplat" ["l"="59.111,11.323", "c"=87]
+"bytedance/SchurVINS" ["l"="59.661,11.166", "c"=87]
+"MIT-SPARK/Khronos" ["l"="59.583,11.336", "c"=87]
+"yanchi-3dv/diff-gaussian-rasterization-for-gsslam" ["l"="59.128,11.328", "c"=87]
+"ori-mrg/robotcar-dataset-sdk" ["l"="63.878,11.592", "c"=693]
 "gisbi-kim/scancontext_tro" ["l"="58.273,10.132"]
 "dongjing3309/gtsam-examples" ["l"="57.965,9.828"]
-"gaowenliang/imu_utils" ["l"="59.456,10.998"]
+"chaehyeonsong/discocal" ["l"="48.199,35.674", "c"=695]
+"dongjae0107/ELite" ["l"="58.576,10.186"]
+"Kyle-ak/imu_tk" ["l"="59.52,10.952", "c"=87]
+"tomas789/kitti2bag" ["l"="64.425,10.923", "c"=61]
+"HKUST-Aerial-Robotics/OmniNxt" ["l"="60.42,13.878", "c"=334]
 "NEU-REAL/4D-CS" ["l"="58.365,10.359"]
-"naturerobots/mesh_navigation" ["l"="60.485,13.703"]
-"iris-ua/iris_lama_ros" ["l"="59.167,12.57"]
+"snt-arg/lidar_situational_graphs" ["l"="59.28,11.467", "c"=87]
+"LihanChen2004/pb_rm_simulation" ["l"="61.107,17.055", "c"=930]
 "TUMFTM/Multi_LiCa" ["l"="58.539,9.902"]
 "TUMFTM/GMMCalib" ["l"="58.566,9.885"]
 "hku-mars/LAMM" ["l"="58.521,10.146"]
@@ -5118,49 +6067,64 @@ digraph G {
 "lab-sun/C2L-PR" ["l"="57.876,10.403"]
 "YechengLyu/WPI-LiDAR-Camera-Calibration-Toolbox" ["l"="57.794,9.916"]
 "xiaoliangabc/lidar_camera_calibration" ["l"="57.768,9.928"]
+"CPFL/Autoware-Manuals" ["l"="62.779,12.231", "c"=461]
 "aau-cns/equivariant-preintegration" ["l"="58.064,10.684"]
+"meyiao/ImuFusion" ["l"="57.402,10.864", "c"=821]
 "piluohong/hc_lio" ["l"="58.63,9.86"]
 "JeongJae0815/Multi_Velodyne" ["l"="57.853,9.565"]
 "aralab-unr/IMM_LIO" ["l"="58.711,9.995"]
 "luobodan/QLIO" ["l"="58.678,9.995"]
-"liangheming/FASTLIO2_ROS2" ["l"="58.406,9.978"]
-"zhh2005757/FAST-LIO-Multi-Sensor-Fusion" ["l"="58.465,9.973"]
-"KumarRobotics/SLIDE_SLAM" ["l"="58.593,10.153"]
+"iliasam/OpenSimpleLidar" ["l"="23.888,-26.416", "c"=28]
+"leggedrobotics/darknet_ros" ["l"="60.267,12.619", "c"=286]
+"MAPIRlab/rf2o_laser_odometry" ["l"="61.593,13.765", "c"=313]
+"ros-perception/slam_gmapping" ["l"="60.267,12.517", "c"=286]
+"nasa-jpl/rosa" ["l"="58.974,12.838", "c"=299]
+"SLAM-Handbook-contributors/slam-handbook-public-release" ["l"="59.323,11.158", "c"=87]
+"Geekgineer/YOLOs-CPP" ["l"="53.537,32.663", "c"=251]
+"gaoxiang12/slambook-en" ["l"="59.377,11.14", "c"=87]
 "MIT-SPARK/spark-fast-lio" ["l"="58.43,9.981"]
+"VladimirYugay/MAGiC-SLAM" ["l"="59.067,11.34", "c"=87]
+"google-research/Splat-SLAM" ["l"="59.097,11.332", "c"=87]
+"zmliao/Fisheye-GS" ["l"="63.9,3.269", "c"=49]
+"vincentfpgarcia/kNN-CUDA" ["l"="65.722,11.728", "c"=203]
 "NKU-MobFly-Robotics/SPTG-LCC" ["l"="58.584,10.002"]
+"ethz-asl/hand_eye_calibration" ["l"="60.851,11.749", "c"=632]
 "YixFeng/Block-Map-Based-Localization" ["l"="58.464,10.058"]
+"JunshengFu/tracking-with-Extended-Kalman-Filter" ["l"="64.2,12.573", "c"=1121]
 "sjtuyinjie/awesome-LiDAR-Visual-SLAM" ["l"="58.56,10.131"]
 "beltransen/velo2cam_gazebo" ["l"="57.883,9.939"]
 "hku-mars/GS-SDF" ["l"="58.42,10.167"]
-"uzh-rpg/rl_vo" ["l"="58.542,10.029"]
-"gisbi-kim/nano-pgo" ["l"="58.475,10.019"]
-"luohongk/SuperVINS" ["l"="59.762,11.228"]
-"changh95/WeeklySpatialAI" ["l"="-4.623,-23.278"]
+"luohongk/SuperVINS" ["l"="59.762,11.228", "c"=87]
+"changh95/WeeklySpatialAI" ["l"="-4.623,-23.278", "c"=164]
 "PengYu-Team/GEODE_dataset" ["l"="58.583,9.977"]
 "thisparticle/Awesome-Algorithms-Against-Degeneracy" ["l"="58.621,9.967"]
 "MigVega/SLAM2REF" ["l"="58.552,10.172"]
-"dongjae0107/ELite" ["l"="58.576,10.186"]
-"Unsigned-Long/iKalibr" ["l"="58.382,10.066"]
 "nubot-nudt/DOSS" ["l"="58.349,10.5"]
 "nubot-nudt/InsCMPR" ["l"="58.361,10.495"]
+"HKUST-Aerial-Robotics/RIO" ["l"="63.705,35.245", "c"=589]
 "Yaepiii/CAD-Mesher" ["l"="58.552,9.977"]
 "chengwei0427/II-NVM" ["l"="58.497,10.029"]
 "ntnu-arl/drpm" ["l"="58.589,10.111"]
+"utiasSTARS/liegroups" ["l"="22.103,13.755", "c"=267]
 "USTC-AIS-Lab/SI-LIO" ["l"="58.545,10.002"]
 "zoeylove/Multi-cam-Multi-map-VILO" ["l"="58.739,10.156"]
 "jiangpin-legend/MR-HBA" ["l"="58.709,10.147"]
-"LiangliangNan/Easy3D" ["l"="62.919,0.07"]
-"mkazhdan/PoissonRecon" ["l"="62.84,0.082"]
-"jlblancoc/nanoflann" ["l"="59.248,10.913"]
-"puzzlepaint/surfelmeshing" ["l"="59.514,11.304"]
-"tomas789/kitti2bag" ["l"="64.425,10.923"]
-"ros-perception/slam_karto" ["l"="60.256,12.446"]
+"tysik/obstacle_detector" ["l"="61.632,13.704", "c"=313]
+"roboflow/trackers" ["l"="48.625,29.962", "c"=191]
+"puzzlepaint/surfelmeshing" ["l"="59.514,11.304", "c"=87]
+"mit-acl/roman" ["l"="63.1,12.094", "c"=461]
+"knmcguire/best-of-robot-simulators" ["l"="58.967,12.782", "c"=299]
+"ros-drivers/usb_cam" ["l"="60.334,12.547", "c"=286]
+"ros-perception/slam_karto" ["l"="60.256,12.446", "c"=286]
 "deepglint/FAST_LIO_LOCALIZATION_HUMANOID" ["l"="58.619,10.105"]
+"NVIDIA/gvdb-voxels" ["l"="-31.149,-27.381", "c"=194]
+"riscmaster/kinematic_arbiter" ["l"="58.963,12.86", "c"=299]
 "shadygm/ROSplat" ["l"="58.56,9.925"]
 "sloretz/ros_oci_images" ["l"="58.61,9.91"]
-"TUMFTM/FlexCloud" ["l"="61.947,15.288"]
-"LTU-RAI/Map-Conversion-3D-Voxel-Map-to-2D-Occupancy-Map" ["l"="58.786,12.934"]
-"CDonosoK/ros2_camera_lidar_fusion" ["l"="58.851,13.03"]
+"TUMFTM/FlexCloud" ["l"="61.947,15.288", "c"=480]
+"LTU-RAI/Map-Conversion-3D-Voxel-Map-to-2D-Occupancy-Map" ["l"="58.786,12.934", "c"=299]
+"CDonosoK/ros2_camera_lidar_fusion" ["l"="58.851,13.03", "c"=299]
+"dimatura/pypcd" ["l"="64.512,12.411", "c"=1121]
 "RoboSense-Robotics/robosense_ac_slam" ["l"="58.467,10.149"]
 "hku-mars/iBTC" ["l"="58.48,10.171"]
 "pcirujeda/pICP" ["l"="58.161,10.343"]

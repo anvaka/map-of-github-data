@@ -15,6 +15,7 @@ digraph G {
 "scverse/anndata" -> "owkin/PyDESeq2"
 "scverse/anndata" -> "scverse/scirpy"
 "drisso/SingleCellExperiment" -> "alanocallaghan/scater"
+"ENCODE-DCC/atac-seq-pipeline" -> "r3fang/SnapATAC" ["e"=1]
 "scverse/scvi-tools" -> "scverse/scanpy"
 "scverse/scvi-tools" -> "seandavi/awesome-single-cell" ["e"=1]
 "scverse/scvi-tools" -> "theislab/cellrank"
@@ -61,6 +62,8 @@ digraph G {
 "lanagarmire/deepimpute" -> "Vivianstats/scImpute"
 "lanagarmire/deepimpute" -> "gongx030/DrImpute"
 "lanagarmire/deepimpute" -> "theislab/dca"
+"biopython/biopython" -> "scverse/scanpy" ["e"=1]
+"ofajardo/pyreadr" -> "scverse/mudata" ["e"=1]
 "colomemaria/epiScanpy" -> "theislab/diffxpy"
 "colomemaria/epiScanpy" -> "pinellolab/scATAC-benchmarking"
 "colomemaria/epiScanpy" -> "theislab/anndata2ri"
@@ -78,6 +81,7 @@ digraph G {
 "r3fang/SnapATAC" -> "Teichlab/cellphonedb"
 "r3fang/SnapATAC" -> "wbaopaul/scATAC-pro"
 "r3fang/SnapATAC" -> "chris-mcginnis-ucsf/DoubletFinder"
+"alexdobin/STAR" -> "satijalab/seurat" ["e"=1]
 "stuart-lab/signac" -> "GreenleafLab/ArchR"
 "stuart-lab/signac" -> "r3fang/SnapATAC"
 "stuart-lab/signac" -> "chris-mcginnis-ucsf/DoubletFinder"
@@ -93,6 +97,29 @@ digraph G {
 "stuart-lab/signac" -> "cole-trapnell-lab/monocle3"
 "stuart-lab/signac" -> "theislab/cellrank"
 "stuart-lab/signac" -> "aertslab/SCENIC"
+"vanvalenlab/deepcell-tf" -> "scverse/squidpy" ["e"=1]
+"vanvalenlab/deepcell-tf" -> "STOmics/Stereopy" ["e"=1]
+"stardist/stardist" -> "scverse/squidpy" ["e"=1]
+"napari/napari" -> "scverse/squidpy" ["e"=1]
+"vtraag/leidenalg" -> "scverse/scanpy" ["e"=1]
+"vtraag/leidenalg" -> "KrishnaswamyLab/MAGIC" ["e"=1]
+"mikelove/awesome-multi-omics" -> "bioFAM/MOFA" ["e"=1]
+"mikelove/awesome-multi-omics" -> "bioFAM/MOFA2" ["e"=1]
+"mikelove/awesome-multi-omics" -> "MarioniLab/miloR" ["e"=1]
+"mikelove/awesome-multi-omics" -> "alserglab/fgsea" ["e"=1]
+"mikelove/awesome-multi-omics" -> "openproblems-bio/openproblems" ["e"=1]
+"mikelove/awesome-multi-omics" -> "scRNA-tools/scRNA-tools" ["e"=1]
+"mikelove/awesome-multi-omics" -> "statOmics/tradeSeq" ["e"=1]
+"CellProfiler/CellProfiler" -> "scverse/scanpy" ["e"=1]
+"theislab/single-cell-tutorial" -> "scverse/scanpy" ["e"=1]
+"theislab/single-cell-tutorial" -> "theislab/single-cell-best-practices" ["e"=1]
+"theislab/single-cell-tutorial" -> "satijalab/seurat" ["e"=1]
+"theislab/single-cell-tutorial" -> "scverse/scvi-tools" ["e"=1]
+"theislab/single-cell-tutorial" -> "sqjin/CellChat" ["e"=1]
+"theislab/single-cell-tutorial" -> "broadinstitute/infercnv" ["e"=1]
+"theislab/single-cell-tutorial" -> "theislab/scvelo" ["e"=1]
+"theislab/single-cell-tutorial" -> "cellgeni/sceasy" ["e"=1]
+"theislab/single-cell-tutorial" -> "immunogenomics/harmony" ["e"=1]
 "dviraran/SingleR" -> "SingleR-inc/SingleR"
 "dviraran/SingleR" -> "chris-mcginnis-ucsf/DoubletFinder"
 "dviraran/SingleR" -> "immunogenomics/harmony"
@@ -108,6 +135,7 @@ digraph G {
 "dviraran/SingleR" -> "satijalab/seurat-wrappers"
 "dviraran/SingleR" -> "kstreet13/slingshot"
 "dviraran/SingleR" -> "aertslab/AUCell"
+"lmcinnes/pynndescent" -> "KrishnaswamyLab/PHATE" ["e"=1]
 "constantAmateur/SoupX" -> "plger/scDblFinder"
 "constantAmateur/SoupX" -> "chris-mcginnis-ucsf/DoubletFinder"
 "constantAmateur/SoupX" -> "satijalab/sctransform"
@@ -129,6 +157,16 @@ digraph G {
 "velocyto-team/velocyto.R" -> "kstreet13/slingshot"
 "velocyto-team/velocyto.R" -> "chris-mcginnis-ucsf/DoubletFinder"
 "velocyto-team/velocyto.R" -> "Teichlab/cellphonedb"
+"kevinblighe/EnhancedVolcano" -> "alserglab/fgsea" ["e"=1]
+"kevinblighe/EnhancedVolcano" -> "samuel-marsh/scCustomize" ["e"=1]
+"jnothman/UpSetPlot" -> "DingWB/PyComplexHeatmap" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "theislab/single-cell-best-practices" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "crazyhottommy/TCR-BCR-seq-analysis" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "crazyhottommy/awesome_spatial_omics" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "agitter/single-cell-pseudotime" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "carmonalab/ProjecTILs" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "hbctraining/Intro-to-scRNAseq" ["e"=1]
+"crazyhottommy/scRNAseq-analysis-notes" -> "zhanghao-njmu/SCP" ["e"=1]
 "theislab/paga" -> "theislab/scvelo"
 "theislab/paga" -> "dynverse/dynmethods"
 "theislab/paga" -> "brianhie/scanorama"
@@ -154,6 +192,8 @@ digraph G {
 "dtm2451/dittoSeq" -> "rnabioco/clustifyr"
 "dtm2451/dittoSeq" -> "samuel-marsh/scCustomize"
 "dtm2451/dittoSeq" -> "PaulingLiu/ROGUE"
+"arvkevi/kneed" -> "KrishnaswamyLab/PHATE" ["e"=1]
+"arvkevi/kneed" -> "scverse/muon" ["e"=1]
 "kharchenkolab/Baysor" -> "dcjones/proseg"
 "kharchenkolab/Baysor" -> "gustaveroussy/sopa"
 "kharchenkolab/Baysor" -> "scverse/spatialdata-io"
@@ -186,6 +226,7 @@ digraph G {
 "SingleR-inc/SingleR" -> "BorchLab/escape"
 "SingleR-inc/SingleR" -> "kstreet13/slingshot"
 "SingleR-inc/SingleR" -> "constantAmateur/SoupX"
+"thelovelab/DESeq2" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "immunogenomics/harmony" -> "chris-mcginnis-ucsf/DoubletFinder"
 "immunogenomics/harmony" -> "welch-lab/liger"
 "immunogenomics/harmony" -> "aertslab/SCENIC"
@@ -245,6 +286,7 @@ digraph G {
 "cole-trapnell-lab/monocle3" -> "theislab/scvelo"
 "cole-trapnell-lab/monocle3" -> "Teichlab/cellphonedb"
 "cole-trapnell-lab/monocle3" -> "samuel-marsh/scCustomize"
+"rapidsai-community/notebooks-contrib" -> "NVIDIA-Genomics-Research/rapids-single-cell-examples" ["e"=1]
 "Teichlab/scg_lib_structs" -> "theislab/scarches"
 "Teichlab/scg_lib_structs" -> "sdparekh/zUMIs"
 "Teichlab/scg_lib_structs" -> "welch-lab/liger"
@@ -277,6 +319,13 @@ digraph G {
 "chanzuckerberg/cellxgene" -> "sqjin/CellChat"
 "chanzuckerberg/cellxgene" -> "Teichlab/celltypist"
 "chanzuckerberg/cellxgene" -> "theislab/diffxpy"
+"hbctraining/scRNA-seq" -> "hbctraining/Intro-to-scRNAseq" ["e"=1]
+"hbctraining/scRNA-seq" -> "saeyslab/nichenetr" ["e"=1]
+"hbctraining/scRNA-seq" -> "satijalab/seurat" ["e"=1]
+"hbctraining/scRNA-seq" -> "sqjin/CellChat" ["e"=1]
+"hbctraining/scRNA-seq" -> "immunogenomics/harmony" ["e"=1]
+"hbctraining/scRNA-seq" -> "cellgeni/sceasy" ["e"=1]
+"hbctraining/scRNA-seq" -> "chris-mcginnis-ucsf/DoubletFinder" ["e"=1]
 "Irrationone/cellassign" -> "rnabioco/clustifyr"
 "Irrationone/cellassign" -> "aertslab/AUCell"
 "Irrationone/cellassign" -> "kstreet13/slingshot"
@@ -334,12 +383,16 @@ digraph G {
 "theislab/scgen" -> "facebookresearch/CPA"
 "theislab/scgen" -> "theislab/cpa"
 "theislab/scgen" -> "theislab/scCODA"
+"webermarcolivier/statannot" -> "zqfang/GSEApy" ["e"=1]
+"jmzeng1314/GEO" -> "YuLab-SMU/clusterProfiler" ["e"=1]
+"jmzeng1314/GEO" -> "satijalab/seurat" ["e"=1]
 "sidhomj/DeepTCR" -> "phbradley/conga"
 "sidhomj/DeepTCR" -> "phbradley/tcr-dist"
 "sidhomj/DeepTCR" -> "tianshilu/pMTnet" ["e"=1]
 "sidhomj/DeepTCR" -> "antigenomics/vdjdb-db"
 "sidhomj/DeepTCR" -> "regeneron-mpds/TCRAI"
 "sidhomj/DeepTCR" -> "uio-bmi/immuneML"
+"macs3-project/MACS" -> "GreenleafLab/ArchR" ["e"=1]
 "IanevskiAleksandr/sc-type" -> "plger/scDblFinder"
 "IanevskiAleksandr/sc-type" -> "carmonalab/scGate"
 "IanevskiAleksandr/sc-type" -> "aertslab/AUCell"
@@ -349,6 +402,7 @@ digraph G {
 "IanevskiAleksandr/sc-type" -> "Teichlab/celltypist"
 "IanevskiAleksandr/sc-type" -> "ZJUFanLab/scCATCH"
 "IanevskiAleksandr/sc-type" -> "samuel-marsh/scCustomize"
+"imagej/pyimagej" -> "scverse/squidpy" ["e"=1]
 "YuLab-SMU/enrichplot" -> "YuLab-SMU/DOSE"
 "YuLab-SMU/enrichplot" -> "YuLab-SMU/clusterProfiler"
 "YuLab-SMU/enrichplot" -> "alserglab/fgsea"
@@ -397,7 +451,9 @@ digraph G {
 "kharchenkolab/conos" -> "pinellolab/STREAM"
 "kharchenkolab/conos" -> "kstreet13/slingshot"
 "kharchenkolab/conos" -> "theislab/kBET"
+"xia-lab/MetaboAnalystR" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "hzc363/DeepLearningCyTOF" -> "burtonrj/CytoPy"
+"plotly/dash-bio" -> "reneshbedre/bioinfokit" ["e"=1]
 "broadinstitute/CellBender" -> "plger/scDblFinder"
 "broadinstitute/CellBender" -> "MarioniLab/miloR"
 "broadinstitute/CellBender" -> "constantAmateur/SoupX"
@@ -450,6 +506,17 @@ digraph G {
 "drieslab/Giotto" -> "kstreet13/slingshot"
 "drieslab/Giotto" -> "HelenaLC/muscat"
 "drieslab/Giotto" -> "theislab/zellkonverter"
+"mdozmorov/scRNA-seq_notes" -> "hbctraining/Intro-to-scRNAseq" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "zhanghao-njmu/SCP" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "cellgeni/sceasy" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "carmonalab/ProjecTILs" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "agitter/single-cell-pseudotime" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "saeyslab/nichenetr" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "BorchLab/scRepertoire" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "MarioniLab/miloR" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "broadinstitute/infercnv" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "theislab/single-cell-best-practices" ["e"=1]
+"mdozmorov/scRNA-seq_notes" -> "immunogenomics/harmony" ["e"=1]
 "statOmics/tradeSeq" -> "kstreet13/slingshot"
 "statOmics/tradeSeq" -> "MarioniLab/miloR"
 "statOmics/tradeSeq" -> "theislab/cellrank"
@@ -484,6 +551,7 @@ digraph G {
 "lazappi/clustree" -> "saezlab/decoupleR"
 "lazappi/clustree" -> "MarioniLab/miloR"
 "lazappi/clustree" -> "theMILOlab/SPATA2"
+"NVIDIA-Genomics-Research/GenomeWorks" -> "NVIDIA-Genomics-Research/rapids-single-cell-examples" ["e"=1]
 "satijalab/sctransform" -> "constantAmateur/SoupX"
 "satijalab/sctransform" -> "SingleR-inc/SingleR"
 "satijalab/sctransform" -> "mojaveazure/seurat-disk"
@@ -494,6 +562,7 @@ digraph G {
 "satijalab/sctransform" -> "statOmics/tradeSeq"
 "satijalab/sctransform" -> "satijalab/azimuth"
 "satijalab/sctransform" -> "satijalab/seurat-wrappers"
+"gao-lab/Guideline-for-Computational-Biology-and-Bioinformatics" -> "gao-lab/GLUE" ["e"=1]
 "theislab/scvelo" -> "theislab/cellrank"
 "theislab/scvelo" -> "velocyto-team/velocyto.py"
 "theislab/scvelo" -> "theislab/scarches"
@@ -571,6 +640,7 @@ digraph G {
 "dynverse/dynmethods" -> "dynverse/dyno"
 "dynverse/dynmethods" -> "theislab/paga"
 "dynverse/dynmethods" -> "agitter/single-cell-pseudotime"
+"pyranges/pyranges" -> "bionumpy/bionumpy" ["e"=1]
 "EDePasquale/DoubletDecon" -> "JonathanShor/DoubletDetection"
 "brianhie/scanorama" -> "theislab/scarches"
 "brianhie/scanorama" -> "theislab/cellrank"
@@ -605,9 +675,12 @@ digraph G {
 "jsxlei/SCALE" -> "pinellolab/scATAC-benchmarking"
 "AllonMKlein/scrublet" -> "JonathanShor/DoubletDetection"
 "tanaylab/metacell" -> "tanaylab/metacells"
+"vitessce/vitessce" -> "gustaveroussy/sopa" ["e"=1]
+"vitessce/vitessce" -> "scverse/napari-spatialdata" ["e"=1]
 "campbio/celda" -> "constantAmateur/SoupX"
 "campbio/celda" -> "compbiomed/celda"
 "campbio/celda" -> "compbiomed/singleCellTK"
+"openvax/pyensembl" -> "zqfang/GSEApy" ["e"=1]
 "rnabioco/clustifyr" -> "Irrationone/cellassign"
 "wbaopaul/scATAC-pro" -> "crazyhottommy/scATACutils"
 "wbaopaul/scATAC-pro" -> "GreenleafLab/10x-scATAC-2019"
@@ -685,6 +758,7 @@ digraph G {
 "BayraktarLab/cell2location" -> "saeyslab/nichenetr"
 "BayraktarLab/cell2location" -> "navinlabcode/CellTrek"
 "BayraktarLab/cell2location" -> "samuel-marsh/scCustomize"
+"YuLab-SMU/ggtree" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "scverse/squidpy" -> "scverse/spatialdata"
 "scverse/squidpy" -> "BayraktarLab/cell2location"
 "scverse/squidpy" -> "broadinstitute/Tangram"
@@ -702,6 +776,8 @@ digraph G {
 "scverse/squidpy" -> "STOmics/Stereopy"
 "tanaylab/metacells" -> "tanaylab/metacell"
 "tanaylab/metacells" -> "dpeerlab/SEACells"
+"MouseLand/cellpose" -> "scverse/squidpy" ["e"=1]
+"MouseLand/cellpose" -> "scverse/scanpy" ["e"=1]
 "KrishnaswamyLab/SingleCellWorkshop" -> "KrishnaswamyLab/scprep"
 "PMBio/scLVM" -> "vals/umis"
 "PMBio/scLVM" -> "epierson9/ZIFA"
@@ -728,6 +804,7 @@ digraph G {
 "slowkow/harmonypy" -> "immunogenomics/harmony"
 "slowkow/harmonypy" -> "brianhie/scanorama"
 "slowkow/harmonypy" -> "scverse/scirpy"
+"igraph/python-igraph" -> "zqfang/GSEApy" ["e"=1]
 "YuLab-SMU/clusterProfiler" -> "jokergoo/ComplexHeatmap" ["e"=1]
 "YuLab-SMU/clusterProfiler" -> "YuLab-SMU/ggtree" ["e"=1]
 "YuLab-SMU/clusterProfiler" -> "sqjin/CellChat"
@@ -821,6 +898,10 @@ digraph G {
 "quadbio/scRNAseq_analysis_vignette" -> "samuel-marsh/scCustomize"
 "quadbio/scRNAseq_analysis_vignette" -> "quadbio/VoxHunt"
 "quadbio/scRNAseq_analysis_vignette" -> "hbctraining/Intro-to-scRNAseq"
+"ml-jku/hopfield-layers" -> "ml-jku/DeepRC" ["e"=1]
+"hms-dbmi/viv" -> "scverse/napari-spatialdata" ["e"=1]
+"hms-dbmi/viv" -> "scverse/spatialdata" ["e"=1]
+"ANHIG/IMGTHLA" -> "slowkow/awesome-vdj" ["e"=1]
 "ttgump/scDCC" -> "ttgump/scDeepCluster_pytorch"
 "ttgump/scDCC" -> "QUST-AIBBDRC/scGMAI"
 "ttgump/scDCC" -> "Joye9285/scGAC"
@@ -843,8 +924,16 @@ digraph G {
 "Substra/substra" -> "LabeliaLabs/welcome"
 "Substra/substra" -> "LabeliaLabs/referentiel-evaluation-dsrc"
 "Substra/substra" -> "owkin/GrAIdient"
+"trevismd/statannotations" -> "zqfang/GSEApy" ["e"=1]
+"trevismd/statannotations" -> "DingWB/PyComplexHeatmap" ["e"=1]
+"trevismd/statannotations" -> "owkin/PyDESeq2" ["e"=1]
+"trevismd/statannotations" -> "Marsilea-viz/marsilea" ["e"=1]
+"trevismd/statannotations" -> "saezlab/decoupler-py" ["e"=1]
+"trevismd/statannotations" -> "Starlitnightly/omicverse" ["e"=1]
+"trevismd/statannotations" -> "scverse/squidpy" ["e"=1]
 "ZJUFanLab/scDeepSort" -> "ZJUFanLab/scCATCH"
 "ZJUFanLab/scDeepSort" -> "bioinfo-ibms-pumc/SCSA"
+"YingfanWang/PaCMAP" -> "KrishnaswamyLab/PHATE" ["e"=1]
 "IOBR/IOBR" -> "xlucpu/MOVICS"
 "IOBR/IOBR" -> "digitalcytometry/ecotyper"
 "IOBR/IOBR" -> "l-magnificence/Mime"
@@ -853,6 +942,9 @@ digraph G {
 "YuLab-SMU/ChIPseeker" -> "YuLab-SMU/clusterProfiler"
 "YuLab-SMU/ChIPseeker" -> "macs3-project/MACS" ["e"=1]
 "YuLab-SMU/ChIPseeker" -> "crazyhottommy/ChIP-seq-analysis" ["e"=1]
+"j-andrews7/awesome-bioinformatics-benchmarks" -> "BorchLab/scRepertoire" ["e"=1]
+"stemangiola/tidyseurat" -> "samuel-marsh/scCustomize" ["e"=1]
+"hbctraining/Intro-to-DGE" -> "hbctraining/Intro-to-scRNAseq" ["e"=1]
 "juexinwang/scGNN" -> "ttgump/scDCC"
 "juexinwang/scGNN" -> "ttgump/scDeepCluster"
 "juexinwang/scGNN" -> "ZJUFanLab/scDeepSort"
@@ -988,6 +1080,7 @@ digraph G {
 "openproblems-bio/openproblems" -> "KrishnaswamyLab/MELD"
 "openproblems-bio/openproblems" -> "theislab/single-cell-best-practices"
 "PaulingLiu/ROGUE" -> "PaulingLiu/scibet"
+"tianshilu/pMTnet" -> "sidhomj/DeepTCR" ["e"=1]
 "mikessh/vdjtools" -> "milaboratory/mixcr"
 "mikessh/vdjtools" -> "antigenomics/vdjdb-db"
 "mikessh/vdjtools" -> "antigenomics/vdjviz"
@@ -1064,6 +1157,7 @@ digraph G {
 "MarioniLab/miloR" -> "saezlab/decoupleR"
 "MarioniLab/miloR" -> "theislab/scarches"
 "MarioniLab/miloR" -> "saeyslab/nichenetr"
+"xjsun1221/tinyarray" -> "xlucpu/MOVICS" ["e"=1]
 "ZJUFanLab/scCATCH" -> "CahanLab/singleCellNet"
 "ZJUFanLab/scCATCH" -> "HelenaLC/muscat"
 "ZJUFanLab/scCATCH" -> "SingleR-inc/SingleR"
@@ -1200,6 +1294,12 @@ digraph G {
 "theislab/single-cell-best-practices" -> "BayraktarLab/cell2location"
 "theislab/single-cell-best-practices" -> "scverse/scvi-tools"
 "theislab/single-cell-best-practices" -> "theislab/cellrank"
+"jokergoo/ComplexHeatmap" -> "YuLab-SMU/clusterProfiler" ["e"=1]
+"jokergoo/ComplexHeatmap" -> "broadinstitute/infercnv" ["e"=1]
+"jokergoo/ComplexHeatmap" -> "satijalab/seurat" ["e"=1]
+"CGATOxford/UMI-tools" -> "sdparekh/zUMIs" ["e"=1]
+"CGATOxford/UMI-tools" -> "vals/umis" ["e"=1]
+"CGATOxford/UMI-tools" -> "10XGenomics/cellranger" ["e"=1]
 "vals/umis" -> "PMBio/scLVM"
 "vals/umis" -> "LuyiTian/scPipe"
 "vals/umis" -> "govinda-kamath/clustering_on_transcript_compatibility_counts"
@@ -1318,6 +1418,10 @@ digraph G {
 "milaboratory/mixcr" -> "immunoengineer/gliph"
 "milaboratory/mixcr" -> "Teichlab/tracer"
 "milaboratory/mixcr" -> "omnideconv/immunedeconv"
+"duerrsimon/bioicons" -> "scverse/scanpy" ["e"=1]
+"BioinformaticsFMRP/TCGAbiolinks" -> "IOBR/IOBR" ["e"=1]
+"BioinformaticsFMRP/TCGAbiolinks" -> "broadinstitute/infercnv" ["e"=1]
+"BioinformaticsFMRP/TCGAbiolinks" -> "alserglab/fgsea" ["e"=1]
 "QuKunLab/SpatialBenchmarking" -> "YangLabHKUST/SpatialScope"
 "wu-yc/scMetabolism" -> "changwn/scFEA"
 "wu-yc/scMetabolism" -> "sunduanchen/Scissor"
@@ -1332,6 +1436,7 @@ digraph G {
 "digitalcytometry/ecotyper" -> "IOBR/IOBR"
 "digitalcytometry/ecotyper" -> "Japrin/STARTRAC"
 "icbi-lab/luca" -> "ccruizm/GBmap"
+"NVIDIA/NVFlare" -> "owkin/FLamby" ["e"=1]
 "theislab/ehrapy" -> "scverse/pertpy"
 "theislab/ehrapy" -> "scverse/rapids_singlecell"
 "theislab/ehrapy" -> "saezlab/liana-py"
@@ -1340,6 +1445,9 @@ digraph G {
 "theislab/ehrapy" -> "scverse/mudata"
 "theislab/ehrapy" -> "scverse/pytometry"
 "theislab/ehrapy" -> "theislab/moscot"
+"cvxgrp/pymde" -> "theislab/scib" ["e"=1]
+"cvxgrp/pymde" -> "scverse/pertpy" ["e"=1]
+"cvxgrp/pymde" -> "emdann/milopy" ["e"=1]
 "facebookresearch/CPA" -> "theislab/sc-pert"
 "facebookresearch/CPA" -> "theislab/chemCPA"
 "facebookresearch/CPA" -> "theislab/cpa"
@@ -1410,6 +1518,7 @@ digraph G {
 "aristoteleo/spateo-release" -> "Teichlab/celltypist"
 "aristoteleo/spateo-release" -> "prabhakarlab/Banksy"
 "carmonalab/scGate" -> "carmonalab/ProjecTILs"
+"fsspec/universal_pathlib" -> "scverse/shadows" ["e"=1]
 "atarashansky/SAMap" -> "atarashansky/self-assembling-manifold"
 "svalkiers/clusTCR" -> "kmayerb/tcrdist3"
 "JEFworks-Lab/STdeconvolve" -> "JEFworks-Lab/MERINGUE"
@@ -1448,6 +1557,7 @@ digraph G {
 "GreenleafLab/chromVAR" -> "GreenleafLab/ArchR"
 "GreenleafLab/chromVAR" -> "r3fang/SnapATAC"
 "GreenleafLab/chromVAR" -> "GreenleafLab/motifmatchr"
+"tanghaibao/goatools" -> "zqfang/GSEApy" ["e"=1]
 "DingWB/PyComplexHeatmap" -> "mortazavilab/PyWGCNA"
 "DingWB/PyComplexHeatmap" -> "Marsilea-viz/marsilea"
 "DingWB/PyComplexHeatmap" -> "owkin/PyDESeq2"
@@ -1461,6 +1571,14 @@ digraph G {
 "DingWB/PyComplexHeatmap" -> "GangCaoLab/CoolBox" ["e"=1]
 "DingWB/PyComplexHeatmap" -> "dpeerlab/SEACells"
 "DingWB/PyComplexHeatmap" -> "genialis/RNAnorm"
+"kpatel427/YouTubeTutorials" -> "mousepixels/sanbomics_scripts" ["e"=1]
+"kpatel427/YouTubeTutorials" -> "hbctraining/Intro-to-scRNAseq" ["e"=1]
+"kpatel427/YouTubeTutorials" -> "jinworks/CellChat" ["e"=1]
+"ott-jax/ott" -> "theislab/moscot" ["e"=1]
+"openbiox/weekly" -> "Starlitnightly/omicverse" ["e"=1]
+"openbiox/weekly" -> "genecell/single-cell-papers-with-code" ["e"=1]
+"openbiox/weekly" -> "aristoteleo/spateo-release" ["e"=1]
+"openbiox/weekly" -> "xlucpu/MOVICS" ["e"=1]
 "zhanghao-njmu/SCP" -> "junjunlab/scRNAtoolVis"
 "zhanghao-njmu/SCP" -> "Starlitnightly/omicverse"
 "zhanghao-njmu/SCP" -> "jinworks/CellChat"
@@ -1476,6 +1594,7 @@ digraph G {
 "zhanghao-njmu/SCP" -> "IOBR/IOBR"
 "zhanghao-njmu/SCP" -> "Teichlab/celltypist"
 "zhanghao-njmu/SCP" -> "saeyslab/nichenetr"
+"crazyhottommy/RNA-seq-analysis" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "xiaoyeye/CCST" -> "JinmiaoChenLab/SEDR_analyses"
 "xiaoyeye/CCST" -> "JinmiaoChenLab/SEDR"
 "xiaoyeye/CCST" -> "JinmiaoChenLab/GraphST"
@@ -1492,6 +1611,9 @@ digraph G {
 "zhanglabtools/STAGATE" -> "JiangBioLab/DeepST"
 "zhanglabtools/STAGATE" -> "gao-lab/SLAT"
 "zhanglabtools/STAGATE" -> "QIFEIDKN/STAGATE"
+"ponnhide/patchworklib" -> "Marsilea-viz/marsilea" ["e"=1]
+"ponnhide/patchworklib" -> "DingWB/PyComplexHeatmap" ["e"=1]
+"ponnhide/patchworklib" -> "owkin/PyDESeq2" ["e"=1]
 "snap-stanford/GEARS" -> "sanderlab/scPerturb"
 "snap-stanford/GEARS" -> "theislab/sc-pert"
 "snap-stanford/GEARS" -> "biomap-research/scFoundation"
@@ -1540,6 +1662,9 @@ digraph G {
 "mousepixels/sanbomics_scripts" -> "IzarLab/CUIMC-NYP_COVID_autopsy_lung"
 "mousepixels/sanbomics_scripts" -> "scverse/scanpy"
 "mousepixels/sanbomics_scripts" -> "genecell/single-cell-papers-with-code"
+"Phlya/adjustText" -> "zqfang/GSEApy" ["e"=1]
+"Phlya/adjustText" -> "owkin/PyDESeq2" ["e"=1]
+"Phlya/adjustText" -> "scverse/scanpy" ["e"=1]
 "ttgump/scDeepCluster_pytorch" -> "ttgump/scDCC"
 "Zaoqu-Liu/IRLS" -> "l-magnificence/Mime"
 "mortazavilab/PyWGCNA" -> "saezlab/decoupler-py"
@@ -1592,6 +1717,9 @@ digraph G {
 "zqfang/GSEApy" -> "Starlitnightly/omicverse"
 "zqfang/GSEApy" -> "deeptools/pyGenomeTracks" ["e"=1]
 "zqfang/GSEApy" -> "scverse/squidpy"
+"pachterlab/gget" -> "owkin/PyDESeq2" ["e"=1]
+"pachterlab/gget" -> "bionumpy/bionumpy" ["e"=1]
+"pachterlab/gget" -> "zqfang/GSEApy" ["e"=1]
 "crazyhottommy/awesome_spatial_omics" -> "MarioniLab/miloR"
 "crazyhottommy/awesome_spatial_omics" -> "drieslab/Giotto"
 "crazyhottommy/awesome_spatial_omics" -> "carmonalab/ProjecTILs"
@@ -1611,6 +1739,8 @@ digraph G {
 "scverse/spatialdata" -> "ome/ome-zarr-py" ["e"=1]
 "Tchanders/InformationMeasures.jl" -> "Tchanders/NetworkInference.jl"
 "Danko-Lab/BayesPrism" -> "sunduanchen/Scissor"
+"PoisonAlien/maftools" -> "broadinstitute/infercnv" ["e"=1]
+"PoisonAlien/maftools" -> "omnideconv/immunedeconv" ["e"=1]
 "QIFEIDKN/STAGATE_pyG" -> "QIFEIDKN/STAGATE"
 "QIFEIDKN/STAGATE_pyG" -> "zhanglabtools/STAGATE"
 "QIFEIDKN/STAGATE_pyG" -> "JinmiaoChenLab/GraphST"
@@ -1656,6 +1786,7 @@ digraph G {
 "jacoblevine/PhenoGraph" -> "PMBio/scLVM"
 "jacoblevine/PhenoGraph" -> "RGLab/MAST"
 "prabhakarlab/Banksy_py" -> "prabhakarlab/Banksy"
+"biocypher/biocypher" -> "saezlab/pypath" ["e"=1]
 "scverse/napari-spatialdata" -> "scverse/spatialdata-plot"
 "scverse/napari-spatialdata" -> "scverse/spatialdata-notebooks"
 "laminlabs/lamindb" -> "laminlabs/bionty"
@@ -1671,6 +1802,16 @@ digraph G {
 "zpliulab/GENELink" -> "HantaoShu/DeepSEM"
 "linnarsson-lab/loom-viewer" -> "linnarsson-lab/adolescent-mouse"
 "laminlabs/readfcs" -> "laminlabs/bionty"
+"moshi4/pyCirclize" -> "Marsilea-viz/marsilea" ["e"=1]
+"moshi4/pyCirclize" -> "owkin/PyDESeq2" ["e"=1]
+"moshi4/pyCirclize" -> "DingWB/PyComplexHeatmap" ["e"=1]
+"microsoft/BioGPT" -> "bowang-lab/scGPT" ["e"=1]
+"hemberg-lab/scRNA.seq.course" -> "tallulandrews/scRNASeqPipeline" ["e"=1]
+"hemberg-lab/scRNA.seq.course" -> "sdparekh/zUMIs" ["e"=1]
+"hemberg-lab/scRNA.seq.course" -> "scverse/scanpy" ["e"=1]
+"hemberg-lab/scRNA.seq.course" -> "agitter/single-cell-pseudotime" ["e"=1]
+"hemberg-lab/scRNA.seq.course" -> "satijalab/seurat" ["e"=1]
+"hemberg-lab/scRNA.seq.course" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "BatzoglouLabSU/SIMLR" -> "bowang87/SIMLR_PY"
 "BatzoglouLabSU/SIMLR" -> "hms-dbmi/scde"
 "BatzoglouLabSU/SIMLR" -> "epierson9/ZIFA"
@@ -1705,6 +1846,7 @@ digraph G {
 "junjunlab/scRNAtoolVis" -> "genecell/single-cell-papers-with-code"
 "junjunlab/scRNAtoolVis" -> "Starlitnightly/omicverse"
 "junjunlab/scRNAtoolVis" -> "junjunlab/transPlotR"
+"CJ-Chen/TBtools-II" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "broadinstitute/infercnv" -> "navinlabcode/copykat"
 "broadinstitute/infercnv" -> "aertslab/SCENIC"
 "broadinstitute/infercnv" -> "chris-mcginnis-ucsf/DoubletFinder"
@@ -1778,6 +1920,7 @@ digraph G {
 "cortes-ciriano-lab/SComatic" -> "single-cell-genetics/cellsnp-lite"
 "cortes-ciriano-lab/SComatic" -> "KChen-lab/Monopogen"
 "cortes-ciriano-lab/SComatic" -> "MarioniLab/miloR"
+"pinellolab/DNA-Diffusion" -> "kundajelab/DART-Eval" ["e"=1]
 "Marsilea-viz/marsilea" -> "DingWB/PyComplexHeatmap"
 "Marsilea-viz/marsilea" -> "saezlab/decoupler-py"
 "Marsilea-viz/marsilea" -> "Marsilea-viz/legendkit"
@@ -1796,6 +1939,7 @@ digraph G {
 "dpeerlab/spectra" -> "wallet-maker/cytopus"
 "dpeerlab/spectra" -> "dpeerlab/SEACells"
 "dpeerlab/spectra" -> "saezlab/liana"
+"lgienapp/aquarel" -> "Marsilea-viz/marsilea" ["e"=1]
 "kstreet13/slingshot" -> "statOmics/tradeSeq"
 "kstreet13/slingshot" -> "aertslab/AUCell"
 "kstreet13/slingshot" -> "aertslab/SCENIC"
@@ -1827,6 +1971,7 @@ digraph G {
 "sanderlab/scPerturb" -> "scverse/pertpy"
 "sanderlab/scPerturb" -> "theislab/cpa"
 "sanderlab/scPerturb" -> "bunnech/cellot"
+"kundajelab/atac_dnase_pipelines" -> "GreenleafLab/chromVAR" ["e"=1]
 "junjunlab/GseaVis" -> "junjunlab/transPlotR"
 "junjunlab/GseaVis" -> "junjunlab/jjAnno"
 "junjunlab/GseaVis" -> "junjunlab/ClusterGVis"
@@ -1884,6 +2029,12 @@ digraph G {
 "chenhcs/SCS" -> "SydneyBioX/BIDCell"
 "chenhcs/SCS" -> "YeoLab/bento-tools"
 "mscastillo/GRNVBEM" -> "CABSEL/SINCERITIES"
+"seandavi/awesome-single-cell" -> "satijalab/seurat" ["e"=1]
+"seandavi/awesome-single-cell" -> "scverse/scanpy" ["e"=1]
+"seandavi/awesome-single-cell" -> "scverse/scvi-tools" ["e"=1]
+"seandavi/awesome-single-cell" -> "theislab/single-cell-best-practices" ["e"=1]
+"seandavi/awesome-single-cell" -> "agitter/single-cell-pseudotime" ["e"=1]
+"HazyResearch/hyena-dna" -> "bowang-lab/scGPT" ["e"=1]
 "Durenlab/LINGER" -> "snehamitra/SCARlink"
 "Genentech/scimilarity" -> "YosefLab/popV"
 "Genentech/scimilarity" -> "dpeerlab/SEACells"
@@ -1929,6 +2080,8 @@ digraph G {
 "bowang-lab/scGPT" -> "gao-lab/GLUE"
 "bowang-lab/scGPT" -> "evo-design/evo" ["e"=1]
 "bowang-lab/scGPT" -> "cellgeni/sceasy"
+"hussius/deeplearning-biology" -> "scverse/scvi-tools" ["e"=1]
+"hussius/deeplearning-biology" -> "scverse/scanpy" ["e"=1]
 "KrishnaswamyLab/MAGIC" -> "Vivianstats/scImpute"
 "KrishnaswamyLab/MAGIC" -> "theislab/dca"
 "KrishnaswamyLab/MAGIC" -> "mohuangx/SAVER"
@@ -1979,6 +2132,9 @@ digraph G {
 "Starlitnightly/single_cell_tutorial" -> "l-magnificence/Mime"
 "Starlitnightly/single_cell_tutorial" -> "Starlitnightly/bioinformatic_tutorial"
 "Starlitnightly/single_cell_tutorial" -> "junjunlab/ClusterGVis"
+"PharMolix/OpenBioMed" -> "PharMolix/LangCell" ["e"=1]
+"PharMolix/OpenBioMed" -> "biomap-research/scFoundation" ["e"=1]
+"PharMolix/OpenBioMed" -> "bowang-lab/scGPT" ["e"=1]
 "OmicsML/awesome-foundation-model-single-cell-papers" -> "OmicsML/awesome-deep-learning-single-cell-papers"
 "OmicsML/awesome-foundation-model-single-cell-papers" -> "theislab/single-cell-transformer-papers"
 "OmicsML/awesome-foundation-model-single-cell-papers" -> "biomap-research/scFoundation"
@@ -1994,6 +2150,7 @@ digraph G {
 "OmicsML/awesome-foundation-model-single-cell-papers" -> "bowang-lab/scGPT"
 "OmicsML/awesome-foundation-model-single-cell-papers" -> "gao-lab/GLUE"
 "OmicsML/awesome-foundation-model-single-cell-papers" -> "yiqunchen/GenePT"
+"konstantint/matplotlib-venn" -> "zqfang/GSEApy" ["e"=1]
 "snap-stanford/UCE" -> "snap-stanford/SATURN"
 "snap-stanford/UCE" -> "biomap-research/scFoundation"
 "snap-stanford/UCE" -> "HelloWorldLTY/scEval"
@@ -2007,6 +2164,7 @@ digraph G {
 "10XGenomics/loupeR" -> "prabhakarlab/Banksy"
 "aertslab/AUCell" -> "plger/scDblFinder"
 "aertslab/AUCell" -> "saezlab/decoupleR"
+"royerlab/napari-segment-anything" -> "scverse/napari-spatialdata" ["e"=1]
 "tallulandrews/scRNASeqPipeline" -> "sdparekh/zUMIs"
 "tallulandrews/scRNASeqPipeline" -> "hemberg-lab/SC3"
 "gustaveroussy/sopa" -> "scverse/spatialdata"
@@ -2032,6 +2190,7 @@ digraph G {
 "SydneyBioX/BIDCell" -> "chenhcs/SCS"
 "amberT15/LLM_eval" -> "jimmylihui/GenBench"
 "amberT15/LLM_eval" -> "kundajelab/DART-Eval"
+"hbctraining/DGE_workshop" -> "hbctraining/Intro-to-scRNAseq" ["e"=1]
 "LuyiTian/scPipe" -> "LuyiTian/sc_mixology"
 "theislab/dca" -> "KrishnaswamyLab/MAGIC"
 "theislab/dca" -> "theislab/scgen"
@@ -2078,6 +2237,7 @@ digraph G {
 "theislab/single-cell-transformer-papers" -> "vandijklab/cell2sentence-ft"
 "theislab/single-cell-transformer-papers" -> "aristoteleo/spateo-release"
 "theislab/single-cell-transformer-papers" -> "snap-stanford/UCE"
+"twbattaglia/RNAseq-workflow" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "broadinstitute/ssGSEA2.0" -> "omnideconv/immunedeconv"
 "broadinstitute/ssGSEA2.0" -> "BorchLab/escape"
 "broadinstitute/ssGSEA2.0" -> "aertslab/AUCell"
@@ -2092,6 +2252,7 @@ digraph G {
 "crazyhottommy/TCR-BCR-seq-analysis" -> "liulab-dfci/TRUST4"
 "crazyhottommy/TCR-BCR-seq-analysis" -> "phbradley/conga"
 "crazyhottommy/TCR-BCR-seq-analysis" -> "samuel-marsh/scCustomize"
+"mahmoodlab/HEST" -> "JiawenChenn/STimage-1K4M" ["e"=1]
 "l-magnificence/Mime" -> "Zaoqu-Liu/IRLS"
 "l-magnificence/Mime" -> "IOBR/IOBR"
 "l-magnificence/Mime" -> "ZJUFanLab/scRank"
@@ -2111,6 +2272,7 @@ digraph G {
 "bioFAM/MOFA" -> "aertslab/cisTopic"
 "jkobject/geneformer" -> "SuperBianC/scMulan"
 "EperLuo/scDiffusion" -> "DongShengze/scRDiT"
+"evo-design/evo" -> "bowang-lab/scGPT" ["e"=1]
 "xianglin226/Benchmarking-Single-Cell-Perturbation" -> "altoslabs/perturbench"
 "yiqunchen/GenePT" -> "snap-stanford/GEARS"
 "yiqunchen/GenePT" -> "bowang-lab/scGPT"
@@ -2129,6 +2291,7 @@ digraph G {
 "digitalcytometry/cytotrace2" -> "theMILOlab/SPATA2"
 "YosefLab/VISION" -> "PaulingLiu/ROGUE"
 "hmatsu1226/SCODE" -> "CABSEL/SINCERITIES"
+"HICAI-ZJU/Scientific-LLM-Survey" -> "apeterswu/Awesome-Bio-Foundation-Models" ["e"=1]
 "GreenleafLab/motifmatchr" -> "GreenleafLab/chromVARmotifs"
 "RGLab/openCyto" -> "RGLab/ggcyto"
 "RGLab/openCyto" -> "DillonHammill/CytoExploreR"
@@ -2229,6 +2392,7 @@ digraph G {
 "immunoengineer/gliph" -> "HetzDra/turboGliph"
 "immunoengineer/gliph" -> "pogorely/ALICE"
 "immunoengineer/gliph" -> "antigenomics/vdjmatch"
+"Yunuuuu/ggalign" -> "huayc09/SeuratExtend" ["e"=1]
 "Tchanders/NetworkInference.jl" -> "Tchanders/network_inference_tutorials"
 "Tchanders/NetworkInference.jl" -> "Tchanders/InformationMeasures.jl"
 "pwwang/plotthis" -> "pwwang/scplotter"
@@ -2287,9 +2451,12 @@ digraph G {
 "Vivianstats/scImpute" -> "lanagarmire/deepimpute"
 "Vivianstats/scImpute" -> "gongx030/DrImpute"
 "Vivianstats/scImpute" -> "ChenMengjie/VIPER"
+"spacetx/starfish" -> "kharchenkolab/Baysor" ["e"=1]
+"manubot/rootstock" -> "vals/umis" ["e"=1]
 "greenelab/tybalt" -> "scvae/scvae"
 "greenelab/tybalt" -> "greenelab/BioBombe"
 "greenelab/tybalt" -> "greenelab/multi-plier"
+"jokergoo/circlize" -> "YuLab-SMU/clusterProfiler" ["e"=1]
 "sdparekh/zUMIs" -> "CGATOxford/UMI-tools" ["e"=1]
 "sdparekh/zUMIs" -> "tallulandrews/scRNASeqPipeline"
 "sdparekh/zUMIs" -> "vals/umis"
@@ -2311,13 +2478,15 @@ digraph G {
 "theislab/scarches" ["l"="41.255,38.448"]
 "theislab/single-cell-best-practices" ["l"="41.251,38.464"]
 "zqfang/GSEApy" ["l"="41.164,38.486"]
-"theislab/single-cell-tutorial" ["l"="40.597,37.18"]
+"theislab/single-cell-tutorial" ["l"="40.597,37.18", "c"=141]
 "satijalab/seurat" ["l"="41.181,38.506"]
 "owkin/PyDESeq2" ["l"="41.127,38.508"]
 "scverse/scirpy" ["l"="41.178,38.556"]
 "drisso/SingleCellExperiment" ["l"="41.584,38.781"]
 "alanocallaghan/scater" ["l"="41.56,38.75"]
-"seandavi/awesome-single-cell" ["l"="40.647,37.212"]
+"ENCODE-DCC/atac-seq-pipeline" ["l"="40.824,37.191", "c"=141]
+"r3fang/SnapATAC" ["l"="41.164,38.462"]
+"seandavi/awesome-single-cell" ["l"="40.647,37.212", "c"=141]
 "bowang-lab/scGPT" ["l"="41.285,38.388"]
 "theislab/dca" ["l"="41.255,38.395"]
 "immunogenomics/harmony" ["l"="41.228,38.503"]
@@ -2327,7 +2496,7 @@ digraph G {
 "saeyslab/nichenetr" ["l"="41.261,38.526"]
 "drieslab/Giotto" ["l"="41.332,38.506"]
 "BayraktarLab/cell2location" ["l"="41.33,38.475"]
-"mikelove/awesome-multi-omics" ["l"="40.651,37.154"]
+"mikelove/awesome-multi-omics" ["l"="40.651,37.154", "c"=141]
 "saezlab/decoupleR" ["l"="41.285,38.557"]
 "welch-lab/liger" ["l"="41.269,38.501"]
 "bioFAM/mofapy2" ["l"="41.252,38.366"]
@@ -2343,11 +2512,13 @@ digraph G {
 "broadinstitute/CellBender" ["l"="41.259,38.498"]
 "aristoteleo/dynamo-release" ["l"="41.275,38.466"]
 "aertslab/cisTopic" ["l"="41.133,38.432"]
-"r3fang/SnapATAC" ["l"="41.164,38.462"]
 "lanagarmire/deepimpute" ["l"="41.23,38.36"]
 "mohuangx/SAVER" ["l"="41.241,38.372"]
 "Vivianstats/scImpute" ["l"="41.227,38.377"]
 "gongx030/DrImpute" ["l"="41.211,38.348"]
+"biopython/biopython" ["l"="40.709,37.296", "c"=141]
+"ofajardo/pyreadr" ["l"="40.242,35.069", "c"=51]
+"scverse/mudata" ["l"="41.312,38.399"]
 "colomemaria/epiScanpy" ["l"="41.139,38.419"]
 "theislab/diffxpy" ["l"="41.193,38.438"]
 "pinellolab/scATAC-benchmarking" ["l"="41.113,38.422"]
@@ -2361,31 +2532,53 @@ digraph G {
 "GreenleafLab/10x-scATAC-2019" ["l"="41.093,38.44"]
 "agitter/single-cell-pseudotime" ["l"="41.271,38.452"]
 "wbaopaul/scATAC-pro" ["l"="41.082,38.43"]
+"alexdobin/STAR" ["l"="40.746,37.317", "c"=141]
 "MarioniLab/miloR" ["l"="41.242,38.519"]
 "satijalab/sctransform" ["l"="41.307,38.53"]
 "smorabit/hdWGCNA" ["l"="41.249,38.553"]
 "samuel-marsh/scCustomize" ["l"="41.282,38.567"]
 "cole-trapnell-lab/monocle3" ["l"="41.273,38.525"]
+"vanvalenlab/deepcell-tf" ["l"="41.707,26.575", "c"=712]
+"STOmics/Stereopy" ["l"="41.346,38.439"]
+"stardist/stardist" ["l"="41.735,26.533", "c"=712]
+"napari/napari" ["l"="41.756,26.563", "c"=712]
+"vtraag/leidenalg" ["l"="51.531,15.83", "c"=1152]
+"KrishnaswamyLab/MAGIC" ["l"="41.264,38.439"]
+"alserglab/fgsea" ["l"="41.241,38.566"]
+"openproblems-bio/openproblems" ["l"="41.225,38.416"]
+"scRNA-tools/scRNA-tools" ["l"="41.357,38.498"]
+"statOmics/tradeSeq" ["l"="41.292,38.525"]
+"CellProfiler/CellProfiler" ["l"="41.695,26.558", "c"=712]
+"cellgeni/sceasy" ["l"="41.244,38.501"]
 "dviraran/SingleR" ["l"="41.289,38.544"]
 "SingleR-inc/SingleR" ["l"="41.32,38.562"]
 "dviraran/xCell" ["l"="41.256,38.615"]
 "Irrationone/cellassign" ["l"="41.364,38.571"]
 "cole-trapnell-lab/monocle-release" ["l"="41.313,38.516"]
 "ZJUFanLab/scCATCH" ["l"="41.334,38.549"]
-"cellgeni/sceasy" ["l"="41.244,38.501"]
 "satijalab/seurat-wrappers" ["l"="41.273,38.548"]
 "kstreet13/slingshot" ["l"="41.281,38.51"]
 "aertslab/AUCell" ["l"="41.307,38.562"]
+"lmcinnes/pynndescent" ["l"="45.083,26.273", "c"=68]
+"KrishnaswamyLab/PHATE" ["l"="41.211,38.427"]
 "constantAmateur/SoupX" ["l"="41.295,38.533"]
 "plger/scDblFinder" ["l"="41.276,38.537"]
 "campbio/celda" ["l"="41.381,38.54"]
-"statOmics/tradeSeq" ["l"="41.292,38.525"]
 "saezlab/liana" ["l"="41.256,38.539"]
 "MarioniLab/scran" ["l"="41.567,38.768"]
 "MarioniLab/DropletUtils" ["l"="41.595,38.761"]
 "hemberg-lab/SC3" ["l"="41.523,38.717"]
 "velocyto-team/velocyto.R" ["l"="41.204,38.496"]
 "velocyto-team/velocyto.py" ["l"="41.181,38.454"]
+"kevinblighe/EnhancedVolcano" ["l"="40.772,35.611", "c"=51]
+"jnothman/UpSetPlot" ["l"="22.075,14.651", "c"=267]
+"DingWB/PyComplexHeatmap" ["l"="41.147,38.499"]
+"crazyhottommy/scRNAseq-analysis-notes" ["l"="40.657,37.172", "c"=141]
+"crazyhottommy/TCR-BCR-seq-analysis" ["l"="41.171,38.623"]
+"crazyhottommy/awesome_spatial_omics" ["l"="41.3,38.461"]
+"carmonalab/ProjecTILs" ["l"="41.256,38.574"]
+"hbctraining/Intro-to-scRNAseq" ["l"="41.298,38.588"]
+"zhanghao-njmu/SCP" ["l"="41.228,38.585"]
 "dynverse/dynmethods" ["l"="41.276,38.411"]
 "brianhie/scanorama" ["l"="41.238,38.455"]
 "RGLab/MAST" ["l"="41.292,38.476"]
@@ -2393,6 +2586,7 @@ digraph G {
 "dtm2451/dittoSeq" ["l"="41.395,38.581"]
 "rnabioco/clustifyr" ["l"="41.411,38.597"]
 "PaulingLiu/ROGUE" ["l"="41.534,38.577"]
+"arvkevi/kneed" ["l"="45.356,26.334", "c"=68]
 "kharchenkolab/Baysor" ["l"="41.404,38.427"]
 "dcjones/proseg" ["l"="41.456,38.412"]
 "gustaveroussy/sopa" ["l"="41.432,38.412"]
@@ -2404,9 +2598,10 @@ digraph G {
 "jinworks/CellChat" ["l"="41.225,38.554"]
 "BorchLab/scRepertoire" ["l"="41.214,38.578"]
 "NBISweden/workshop-scRNAseq" ["l"="41.344,38.638"]
-"hbctraining/Intro-to-scRNAseq" ["l"="41.298,38.588"]
 "SingleR-inc/celldex" ["l"="41.361,38.613"]
 "BorchLab/escape" ["l"="41.298,38.605"]
+"thelovelab/DESeq2" ["l"="40.828,37.299", "c"=141]
+"YuLab-SMU/clusterProfiler" ["l"="41.153,38.557"]
 "aristoteleo/spateo-release" ["l"="41.36,38.445"]
 "gao-lab/GLUE" ["l"="41.262,38.421"]
 "romain-lopez/scVI-reproducibility" ["l"="41.228,38.298"]
@@ -2424,16 +2619,19 @@ digraph G {
 "theislab/scCODA" ["l"="41.195,38.46"]
 "neurorestore/Augur" ["l"="41.164,38.509"]
 "LouisFaure/scFates" ["l"="41.164,38.398"]
+"rapidsai-community/notebooks-contrib" ["l"="43.924,23.718", "c"=95]
+"NVIDIA-Genomics-Research/rapids-single-cell-examples" ["l"="41.307,38.477"]
 "Teichlab/scg_lib_structs" ["l"="41.298,38.492"]
 "sdparekh/zUMIs" ["l"="41.453,38.621"]
 "Teichlab/celltypist" ["l"="41.261,38.488"]
 "10XGenomics/cellranger" ["l"="41.241,38.49"]
-"pachterlab/ffq" ["l"="40.888,37.239"]
+"pachterlab/ffq" ["l"="40.888,37.239", "c"=141]
 "satijalab/seurat-data" ["l"="41.33,38.589"]
 "satijalab/azimuth" ["l"="41.354,38.589"]
 "chanzuckerberg/cellxgene" ["l"="41.275,38.478"]
 "interactivereport/cellxgene_VIP" ["l"="41.41,38.621"]
-"hemberg-lab/scRNA.seq.course" ["l"="40.638,37.195"]
+"hemberg-lab/scRNA.seq.course" ["l"="40.638,37.195", "c"=141]
+"hbctraining/scRNA-seq" ["l"="40.574,37.155", "c"=141]
 "pinellolab/STREAM" ["l"="41.183,38.444"]
 "kharchenkolab/conos" ["l"="41.283,38.492"]
 "dpeerlab/Palantir" ["l"="41.225,38.456"]
@@ -2441,7 +2639,6 @@ digraph G {
 "theislab/scib-pipeline" ["l"="41.146,38.389"]
 "YosefLab/scib-metrics" ["l"="41.123,38.379"]
 "theislab/scib-reproducibility" ["l"="41.146,38.401"]
-"openproblems-bio/openproblems" ["l"="41.225,38.416"]
 "navinlabcode/copykat" ["l"="41.169,38.541"]
 "theislab/scgen-reproducibility" ["l"="41.204,38.36"]
 "Teichlab/bbknn" ["l"="41.197,38.42"]
@@ -2449,29 +2646,34 @@ digraph G {
 "snap-stanford/GEARS" ["l"="41.265,38.348"]
 "facebookresearch/CPA" ["l"="41.239,38.34"]
 "theislab/cpa" ["l"="41.232,38.329"]
+"webermarcolivier/statannot" ["l"="45.149,26.509", "c"=68]
+"jmzeng1314/GEO" ["l"="40.464,37.128", "c"=141]
 "sidhomj/DeepTCR" ["l"="41.071,38.691"]
 "phbradley/conga" ["l"="41.105,38.666"]
 "phbradley/tcr-dist" ["l"="41.061,38.68"]
-"tianshilu/pMTnet" ["l"="40.114,37.65"]
+"tianshilu/pMTnet" ["l"="40.114,37.65", "c"=141]
 "antigenomics/vdjdb-db" ["l"="41.103,38.654"]
 "regeneron-mpds/TCRAI" ["l"="41.042,38.694"]
 "uio-bmi/immuneML" ["l"="41.021,38.736"]
+"macs3-project/MACS" ["l"="40.84,37.233", "c"=141]
 "IanevskiAleksandr/sc-type" ["l"="41.269,38.563"]
 "carmonalab/scGate" ["l"="41.316,38.581"]
 "Winnie09/GPTCelltype" ["l"="41.264,38.598"]
 "RausellLab/CelliD" ["l"="41.295,38.64"]
+"imagej/pyimagej" ["l"="41.771,26.545", "c"=712]
 "YuLab-SMU/enrichplot" ["l"="41.156,38.587"]
 "YuLab-SMU/DOSE" ["l"="41.069,38.613"]
-"YuLab-SMU/clusterProfiler" ["l"="41.153,38.557"]
-"alserglab/fgsea" ["l"="41.241,38.566"]
 "YuLab-SMU/ChIPseeker" ["l"="41.106,38.584"]
 "saezlab/OmnipathR" ["l"="41.195,38.572"]
 "saezlab/pypath" ["l"="41.127,38.567"]
 "scverse/scanpy-tutorials" ["l"="41.084,38.457"]
 "scverse/scanpy_usage" ["l"="41.013,38.436"]
 "kharchenkolab/pagoda2" ["l"="41.356,38.547"]
+"xia-lab/MetaboAnalystR" ["l"="53.414,16.716", "c"=1038]
 "hzc363/DeepLearningCyTOF" ["l"="41.656,38.181"]
 "burtonrj/CytoPy" ["l"="41.632,38.18"]
+"plotly/dash-bio" ["l"="42.888,25.293", "c"=1215]
+"reneshbedre/bioinfokit" ["l"="41.04,38.491"]
 "swolock/scrublet" ["l"="41.2,38.522"]
 "whitews/FlowKit" ["l"="41.594,38.187"]
 "cytoflow/cytoflow" ["l"="41.602,38.172"]
@@ -2489,22 +2691,22 @@ digraph G {
 "liulab-dfci/TRUST4" ["l"="41.153,38.611"]
 "rcastelo/GSVA" ["l"="41.272,38.577"]
 "Danko-Lab/BayesPrism" ["l"="41.188,38.631"]
-"reneshbedre/bioinfokit" ["l"="41.04,38.491"]
 "dmcable/spacexr" ["l"="41.326,38.493"]
 "prabhakarlab/Banksy" ["l"="41.408,38.47"]
 "MarcElosua/SPOTlight" ["l"="41.385,38.495"]
 "BiomedicalMachineLearning/stLearn" ["l"="41.397,38.466"]
 "HelenaLC/muscat" ["l"="41.303,38.573"]
 "theislab/zellkonverter" ["l"="41.356,38.517"]
-"carmonalab/ProjecTILs" ["l"="41.256,38.574"]
+"mdozmorov/scRNA-seq_notes" ["l"="40.62,37.169", "c"=141]
 "milaboratory/mixcr" ["l"="41.139,38.64"]
-"crazyhottommy/TCR-BCR-seq-analysis" ["l"="41.171,38.623"]
 "mikessh/vdjtools" ["l"="41.12,38.648"]
 "slowkow/awesome-vdj" ["l"="41.139,38.62"]
 "carmonalab/UCell" ["l"="41.306,38.55"]
 "lazappi/clustree" ["l"="41.342,38.567"]
 "theMILOlab/SPATA2" ["l"="41.326,38.539"]
+"NVIDIA-Genomics-Research/GenomeWorks" ["l"="40.602,38.755", "c"=290]
 "mojaveazure/seurat-disk" ["l"="41.329,38.522"]
+"gao-lab/Guideline-for-Computational-Biology-and-Bioinformatics" ["l"="40.623,37.146", "c"=141]
 "egeulgen/pathfindR" ["l"="41.408,38.546"]
 "xuranw/MuSiC" ["l"="41.239,38.6"]
 "Murali-group/Beeline" ["l"="41.178,38.29"]
@@ -2517,7 +2719,6 @@ digraph G {
 "crazyhottommy/scATACseq-analysis-notes" ["l"="41.123,38.402"]
 "jsxlei/SCALE" ["l"="41.045,38.4"]
 "dbrg77/plate_scATAC-seq" ["l"="41.068,38.398"]
-"KrishnaswamyLab/MAGIC" ["l"="41.264,38.439"]
 "dpeerlab/SEACells" ["l"="41.149,38.451"]
 "icbi-lab/infercnvpy" ["l"="41.163,38.438"]
 "tanaylab/metacells" ["l"="41.098,38.471"]
@@ -2530,6 +2731,8 @@ digraph G {
 "saezlab/decoupler-py" ["l"="41.213,38.483"]
 "GreenleafLab/MPAL-Single-Cell-2019" ["l"="41.047,38.435"]
 "crazyhottommy/scATACutils" ["l"="41.081,38.412"]
+"pyranges/pyranges" ["l"="40.903,37.292", "c"=141]
+"bionumpy/bionumpy" ["l"="41.101,38.517"]
 "EDePasquale/DoubletDecon" ["l"="41.509,38.768"]
 "JonathanShor/DoubletDetection" ["l"="41.489,38.753"]
 "brianhie/geosketch" ["l"="41.181,38.39"]
@@ -2540,8 +2743,11 @@ digraph G {
 "ManchesterBioinference/Scasat" ["l"="41.004,38.386"]
 "AllonMKlein/scrublet" ["l"="41.488,38.777"]
 "tanaylab/metacell" ["l"="41.049,38.467"]
+"vitessce/vitessce" ["l"="41.936,26.576", "c"=712]
+"scverse/napari-spatialdata" ["l"="41.434,38.39"]
 "compbiomed/celda" ["l"="41.445,38.546"]
 "compbiomed/singleCellTK" ["l"="41.394,38.563"]
+"openvax/pyensembl" ["l"="40.892,37.343", "c"=141]
 "LuyiTian/sc_mixology" ["l"="41.618,38.695"]
 "Shians/CellBench" ["l"="41.645,38.708"]
 "LuyiTian/scPipe" ["l"="41.588,38.679"]
@@ -2571,8 +2777,9 @@ digraph G {
 "navinlabcode/CellTrek" ["l"="41.404,38.483"]
 "almaan/stereoscope" ["l"="41.385,38.48"]
 "digitalcytometry/cytospace" ["l"="41.418,38.46"]
+"YuLab-SMU/ggtree" ["l"="40.684,35.662", "c"=51]
 "scverse/spatialdata" ["l"="41.384,38.411"]
-"STOmics/Stereopy" ["l"="41.346,38.439"]
+"MouseLand/cellpose" ["l"="41.722,26.551", "c"=712]
 "KrishnaswamyLab/SingleCellWorkshop" ["l"="41.072,38.32"]
 "KrishnaswamyLab/scprep" ["l"="41.119,38.354"]
 "PMBio/scLVM" ["l"="41.524,38.613"]
@@ -2581,21 +2788,16 @@ digraph G {
 "jacoblevine/PhenoGraph" ["l"="41.468,38.57"]
 "Teichlab/cellity" ["l"="41.563,38.64"]
 "emdann/milopy" ["l"="41.286,38.417"]
-"jokergoo/ComplexHeatmap" ["l"="40.718,35.594"]
-"YuLab-SMU/ggtree" ["l"="40.684,35.662"]
-"crazyhottommy/RNA-seq-analysis" ["l"="40.675,37.215"]
-"jokergoo/circlize" ["l"="40.672,35.589"]
-"alexdobin/STAR" ["l"="40.746,37.317"]
-"COMBINE-lab/salmon" ["l"="40.794,37.347"]
+"igraph/python-igraph" ["l"="51.498,15.842", "c"=1152]
+"jokergoo/ComplexHeatmap" ["l"="40.718,35.594", "c"=51]
+"crazyhottommy/RNA-seq-analysis" ["l"="40.675,37.215", "c"=141]
+"jokergoo/circlize" ["l"="40.672,35.589", "c"=51]
+"COMBINE-lab/salmon" ["l"="40.794,37.347", "c"=141]
 "hms-dbmi/scde" ["l"="41.446,38.567"]
 "wu-yc/scMetabolism" ["l"="41.166,38.644"]
-"mdozmorov/scRNA-seq_notes" ["l"="40.62,37.169"]
-"hbctraining/scRNA-seq" ["l"="40.574,37.155"]
 "quadbio/scRNAseq_analysis_vignette" ["l"="41.324,38.651"]
-"hbctraining/Intro-to-DGE" ["l"="40.728,37.091"]
-"crazyhottommy/scRNAseq-analysis-notes" ["l"="40.657,37.172"]
+"hbctraining/Intro-to-DGE" ["l"="40.728,37.091", "c"=141]
 "genecell/single-cell-papers-with-code" ["l"="41.203,38.617"]
-"zhanghao-njmu/SCP" ["l"="41.228,38.585"]
 "Zaoqu-Liu/IRLS" ["l"="41.208,38.721"]
 "digitalcytometry/cytotrace2" ["l"="41.255,38.585"]
 "junjunlab/scRNAtoolVis" ["l"="41.207,38.641"]
@@ -2610,6 +2812,10 @@ digraph G {
 "raphael-group/paste" ["l"="41.473,38.428"]
 "quadbio/scMultiome_analysis_vignette" ["l"="41.344,38.691"]
 "quadbio/VoxHunt" ["l"="41.351,38.715"]
+"ml-jku/hopfield-layers" ["l"="23.711,14.926", "c"=728]
+"ml-jku/DeepRC" ["l"="40.987,38.764"]
+"hms-dbmi/viv" ["l"="41.887,26.565", "c"=712]
+"ANHIG/IMGTHLA" ["l"="40.373,37.542", "c"=141]
 "QUST-AIBBDRC/scGMAI" ["l"="41.336,38.251"]
 "changwn/scFEA" ["l"="41.096,38.747"]
 "YosefLab/Compass" ["l"="41.069,38.765"]
@@ -2621,19 +2827,22 @@ digraph G {
 "Substra/substra-documentation" ["l"="40.963,38.546"]
 "LabeliaLabs/referentiel-evaluation-dsrc" ["l"="40.938,38.552"]
 "owkin/GrAIdient" ["l"="40.962,38.532"]
+"trevismd/statannotations" ["l"="22.048,14.632", "c"=267]
+"Marsilea-viz/marsilea" ["l"="41.154,38.519"]
 "ZJUFanLab/scDeepSort" ["l"="41.366,38.476"]
 "bioinfo-ibms-pumc/SCSA" ["l"="41.381,38.517"]
+"YingfanWang/PaCMAP" ["l"="44.973,26.28", "c"=68]
 "l-magnificence/Mime" ["l"="41.224,38.709"]
 "junjunlab/GseaVis" ["l"="41.21,38.683"]
-"jokergoo/EnrichedHeatmap" ["l"="40.893,37.191"]
-"macs3-project/MACS" ["l"="40.84,37.233"]
-"crazyhottommy/ChIP-seq-analysis" ["l"="40.746,37.189"]
+"jokergoo/EnrichedHeatmap" ["l"="40.893,37.191", "c"=141]
+"crazyhottommy/ChIP-seq-analysis" ["l"="40.746,37.189", "c"=141]
+"j-andrews7/awesome-bioinformatics-benchmarks" ["l"="40.648,37.106", "c"=141]
+"stemangiola/tidyseurat" ["l"="40.906,35.61", "c"=51]
 "Philyzh8/scTAG" ["l"="41.333,38.24"]
 "theislab/sfaira" ["l"="41.22,38.396"]
 "CSOgroup/cellcharter" ["l"="41.452,38.438"]
 "LieberInstitute/HumanPilot" ["l"="41.558,38.467"]
 "LieberInstitute/spatialLIBD" ["l"="41.54,38.466"]
-"scverse/mudata" ["l"="41.312,38.399"]
 "scverse/cookiecutter-scverse" ["l"="41.21,38.38"]
 "MarcElosua/SPOTlight_deconvolution_analysis" ["l"="41.436,38.501"]
 "edward130603/BayesSpace" ["l"="41.49,38.503"]
@@ -2658,11 +2867,11 @@ digraph G {
 "interactivereport/OmicsView" ["l"="41.445,38.642"]
 "interactivereport/bioInfograph" ["l"="41.441,38.659"]
 "Novartis/cellxgene-gateway" ["l"="41.424,38.664"]
-"NVIDIA-Genomics-Research/rapids-single-cell-examples" ["l"="41.307,38.477"]
 "scverse/rapids_singlecell" ["l"="41.31,38.445"]
 "neurorestore/Libra" ["l"="41.137,38.535"]
 "kmayerb/tcrdist3" ["l"="41.054,38.667"]
 "icbi-lab/luca" ["l"="41.137,38.671"]
+"xjsun1221/tinyarray" ["l"="40.311,37.062", "c"=141]
 "CahanLab/singleCellNet" ["l"="41.391,38.626"]
 "cole-trapnell-lab/garnett" ["l"="41.422,38.579"]
 "pachterlab/voyager" ["l"="41.537,38.38"]
@@ -2683,21 +2892,19 @@ digraph G {
 "KChen-lab/Monopogen" ["l"="40.943,38.477"]
 "single-cell-genetics/cellSNP" ["l"="40.889,38.475"]
 "DillonHammill/CytoRSuite" ["l"="41.658,38.132"]
-"scverse/napari-spatialdata" ["l"="41.434,38.39"]
 "zpliulab/GENELink" ["l"="41.146,38.211"]
 "YuLab-SMU/meshes" ["l"="40.976,38.64"]
 "LewisLabUCSD/Ligand-Receptor-Pairs" ["l"="41.407,38.646"]
 "earmingol/cell2cell" ["l"="41.377,38.588"]
-"ml-jku/DeepRC" ["l"="40.987,38.764"]
 "viash-io/viash" ["l"="41.069,38.279"]
 "openpipelines-bio/openpipeline" ["l"="41.098,38.302"]
 "interactivereport/CellMap" ["l"="41.458,38.671"]
 "interactivereport/RNASequest" ["l"="41.462,38.66"]
 "saezlab/liana-py" ["l"="41.307,38.502"]
+"CGATOxford/UMI-tools" ["l"="40.703,37.399", "c"=141]
 "govinda-kamath/clustering_on_transcript_compatibility_counts" ["l"="41.495,38.609"]
 "bnprks/BPCells" ["l"="41.364,38.531"]
 "Starlitnightly/single_cell_tutorial" ["l"="41.194,38.653"]
-"Marsilea-viz/marsilea" ["l"="41.154,38.519"]
 "RGLab/ggcyto" ["l"="41.643,38.114"]
 "RGLab/flowWorkspace" ["l"="41.632,38.105"]
 "RGLab/CytoML" ["l"="41.651,38.102"]
@@ -2707,7 +2914,7 @@ digraph G {
 "zhanglabtools/STAGATE" ["l"="41.534,38.43"]
 "JinmiaoChenLab/SEDR_analyses" ["l"="41.547,38.448"]
 "JiangBioLab/DeepST" ["l"="41.558,38.446"]
-"almaan/her2st" ["l"="42.038,27.315"]
+"almaan/her2st" ["l"="42.038,27.315", "c"=369]
 "QIFEIDKN/STAGATE_pyG" ["l"="41.548,38.424"]
 "Teichlab/SpatialDE" ["l"="41.539,38.486"]
 "gao-lab/SLAT" ["l"="41.493,38.428"]
@@ -2725,14 +2932,18 @@ digraph G {
 "Teichlab/cellhint" ["l"="41.3,38.426"]
 "aertslab/pycisTopic" ["l"="41.18,38.409"]
 "Durenlab/LINGER" ["l"="41.075,38.364"]
+"duerrsimon/bioicons" ["l"="40.865,37.27", "c"=141]
+"BioinformaticsFMRP/TCGAbiolinks" ["l"="40.488,37.707", "c"=141]
 "YangLabHKUST/SpatialScope" ["l"="41.436,38.349"]
 "Teichlab/drug2cell" ["l"="41.098,38.402"]
 "theislab/chemCPA" ["l"="41.239,38.317"]
-"Sijin-ZhangLab/PanMyeloid" ["l"="40.213,36.996"]
+"Sijin-ZhangLab/PanMyeloid" ["l"="40.213,36.996", "c"=141]
 "Japrin/STARTRAC" ["l"="41.276,38.747"]
 "ccruizm/GBmap" ["l"="41.129,38.718"]
+"NVIDIA/NVFlare" ["l"="51.511,2.016", "c"=663]
 "theislab/ehrapy" ["l"="41.361,38.391"]
-"som-shahlab/ehrshot-benchmark" ["l"="-33.116,16.29"]
+"som-shahlab/ehrshot-benchmark" ["l"="-33.116,16.29", "c"=404]
+"cvxgrp/pymde" ["l"="44.935,26.281", "c"=68]
 "bunnech/cellot" ["l"="41.259,38.318"]
 "theislab/multicpa" ["l"="41.218,38.317"]
 "welch-lab/PerturbNet" ["l"="41.204,38.307"]
@@ -2747,6 +2958,8 @@ digraph G {
 "BlishLab/scriabin" ["l"="41.178,38.585"]
 "rajewsky-lab/openst" ["l"="41.463,38.372"]
 "zcang/COMMOT" ["l"="41.431,38.445"]
+"fsspec/universal_pathlib" ["l"="43.616,23.711", "c"=95]
+"scverse/shadows" ["l"="41.495,38.212"]
 "atarashansky/SAMap" ["l"="41.37,38.198"]
 "atarashansky/self-assembling-manifold" ["l"="41.371,38.168"]
 "JEFworks-Lab/STdeconvolve" ["l"="41.675,38.488"]
@@ -2762,15 +2975,19 @@ digraph G {
 "bioFAM/mofax" ["l"="41.213,38.331"]
 "baohongz/bioInfograph" ["l"="41.451,38.682"]
 "GreenleafLab/motifmatchr" ["l"="41.031,38.456"]
-"DingWB/PyComplexHeatmap" ["l"="41.147,38.499"]
+"tanghaibao/goatools" ["l"="40.478,38.533", "c"=290]
 "mortazavilab/PyWGCNA" ["l"="41.136,38.486"]
-"bionumpy/bionumpy" ["l"="41.101,38.517"]
 "mossjacob/pyslingshot" ["l"="41.2,38.537"]
-"GangCaoLab/CoolBox" ["l"="40.988,37.187"]
+"GangCaoLab/CoolBox" ["l"="40.988,37.187", "c"=141]
 "genialis/RNAnorm" ["l"="41.066,38.513"]
+"kpatel427/YouTubeTutorials" ["l"="40.8,37.089", "c"=141]
+"mousepixels/sanbomics_scripts" ["l"="41.184,38.535"]
+"ott-jax/ott" ["l"="21.753,14.018", "c"=267]
+"openbiox/weekly" ["l"="40.62,37.123", "c"=141]
 "junjunlab/ClusterGVis" ["l"="41.225,38.649"]
 "hongleir/SpaceFlow" ["l"="41.601,38.438"]
 "cs-wangbo/Spatial-MGCN" ["l"="41.598,38.422"]
+"ponnhide/patchworklib" ["l"="22.051,14.578", "c"=267]
 "biomap-research/scFoundation" ["l"="41.316,38.336"]
 "yhr91/GEARS_misc" ["l"="41.261,38.304"]
 "theislab/single-cell-transformer-papers" ["l"="41.332,38.348"]
@@ -2784,20 +3001,19 @@ digraph G {
 "xCompass-AI/GeneCompass" ["l"="41.306,38.298"]
 "OmicsML/awesome-foundation-model-single-cell-papers" ["l"="41.343,38.33"]
 "YosefLab/Hotspot" ["l"="41.359,38.365"]
-"mousepixels/sanbomics_scripts" ["l"="41.184,38.535"]
-"kpatel427/YouTubeTutorials" ["l"="40.8,37.089"]
 "mousepixels/sanbomics" ["l"="41.103,38.552"]
 "IzarLab/CUIMC-NYP_COVID_autopsy_lung" ["l"="41.119,38.548"]
+"Phlya/adjustText" ["l"="22.034,14.607", "c"=267]
 "powellgenomicslab/Nebulosa" ["l"="41.316,38.634"]
 "Teichlab/celloline" ["l"="41.587,38.655"]
 "Teichlab/bracer" ["l"="41.095,38.716"]
-"tanghaibao/goatools" ["l"="40.478,38.533"]
-"deeptools/pyGenomeTracks" ["l"="40.874,37.219"]
-"crazyhottommy/awesome_spatial_omics" ["l"="41.3,38.461"]
+"deeptools/pyGenomeTracks" ["l"="40.874,37.219", "c"=141]
+"pachterlab/gget" ["l"="40.847,37.254", "c"=141]
 "scverse/spatialdata-plot" ["l"="41.422,38.38"]
 "scverse/spatialdata-notebooks" ["l"="41.438,38.377"]
-"ome/ome-zarr-py" ["l"="41.83,26.552"]
+"ome/ome-zarr-py" ["l"="41.83,26.552", "c"=712]
 "Tchanders/InformationMeasures.jl" ["l"="41.101,38.204"]
+"PoisonAlien/maftools" ["l"="40.521,37.619", "c"=141]
 "Substra/orchestrator" ["l"="40.976,38.53"]
 "junjunlab/GetTransTool" ["l"="41.177,38.767"]
 "junjunlab/GetGeneLength" ["l"="41.184,38.737"]
@@ -2806,28 +3022,32 @@ digraph G {
 "antigenomics/vdjmatch" ["l"="41.088,38.685"]
 "antigenomics/vdjdb-web" ["l"="41.071,38.66"]
 "pachterlab/concordexR" ["l"="41.618,38.361"]
+"biocypher/biocypher" ["l"="53.49,15.751", "c"=434]
 "laminlabs/lamindb" ["l"="41.466,38.209"]
 "laminlabs/bionty" ["l"="41.48,38.224"]
 "jkobject/scDataLoader" ["l"="41.438,38.242"]
 "laminlabs/readfcs" ["l"="41.502,38.23"]
-"bowang87/SIMLR_PY" ["l"="41.573,38.599"]
-"kevinblighe/EnhancedVolcano" ["l"="40.772,35.611"]
-"stephenturner/annotables" ["l"="41.03,36.98"]
-"hemberg-lab/scmap" ["l"="41.472,38.715"]
+"moshi4/pyCirclize" ["l"="40.4,38.592", "c"=290]
+"microsoft/BioGPT" ["l"="24.232,13.302", "c"=281]
 "tallulandrews/scRNASeqPipeline" ["l"="41.496,38.675"]
+"bowang87/SIMLR_PY" ["l"="41.573,38.599"]
+"stephenturner/annotables" ["l"="41.03,36.98", "c"=141]
+"hemberg-lab/scmap" ["l"="41.472,38.715"]
 "junjunlab/jjAnno" ["l"="41.194,38.684"]
 "junjunlab/transPlotR" ["l"="41.195,38.701"]
+"CJ-Chen/TBtools-II" ["l"="40.55,38.531", "c"=290]
 "OmicsML/SpatialCTD" ["l"="41.384,38.357"]
 "OmicsML/scMoFormer" ["l"="41.367,38.351"]
 "OmicsML/scDiff" ["l"="41.376,38.369"]
-"pachterlab/gget" ["l"="40.847,37.254"]
+"pinellolab/DNA-Diffusion" ["l"="24.58,13.57", "c"=281]
+"kundajelab/DART-Eval" ["l"="41.421,38.16"]
 "Marsilea-viz/legendkit" ["l"="41.095,38.536"]
-"ponnhide/patchworklib" ["l"="22.051,14.578"]
-"CompEpigen/figeno" ["l"="40.878,37.108"]
-"pyranges/pyranges" ["l"="40.903,37.292"]
+"lgienapp/aquarel" ["l"="22.059,14.496", "c"=267]
+"CompEpigen/figeno" ["l"="40.878,37.108", "c"=141]
 "Lotfollahi-lab/nichecompass" ["l"="41.412,38.257"]
 "dpeerlab/ENVI" ["l"="41.428,38.227"]
 "JEFworks-Lab/STalign" ["l"="41.536,38.402"]
+"kundajelab/atac_dnase_pipelines" ["l"="40.903,37.135", "c"=141]
 "junjunlab/tackPlotR" ["l"="41.188,38.717"]
 "junjunlab/jjPlot" ["l"="41.181,38.707"]
 "tiroshlab/3ca" ["l"="41.115,38.809"]
@@ -2842,39 +3062,44 @@ digraph G {
 "SydneyBioX/BIDCell" ["l"="41.489,38.388"]
 "mscastillo/GRNVBEM" ["l"="41.072,38.22"]
 "CABSEL/SINCERITIES" ["l"="41.088,38.231"]
+"HazyResearch/hyena-dna" ["l"="24.535,13.568", "c"=281]
 "Genentech/scimilarity" ["l"="41.17,38.34"]
 "YosefLab/popV" ["l"="41.133,38.306"]
-"scRNA-tools/scRNA-tools" ["l"="41.357,38.498"]
 "Oshlack/splatter" ["l"="41.339,38.483"]
 "Bioconductor/OrchestratingSingleCellAnalysis" ["l"="41.421,38.521"]
 "alexisvdb/singleCellHaystack" ["l"="41.442,38.516"]
-"evo-design/evo" ["l"="24.425,13.492"]
-"KrishnaswamyLab/PHATE" ["l"="41.211,38.427"]
+"evo-design/evo" ["l"="24.425,13.492", "c"=281]
+"hussius/deeplearning-biology" ["l"="40.698,37.272", "c"=141]
 "10XGenomics/single-cell-3prime-paper" ["l"="41.668,38.632"]
 "SuperBianC/scMulan" ["l"="41.333,38.318"]
 "cantinilab/scPRINT" ["l"="41.364,38.297"]
 "theislab/nicheformer" ["l"="41.363,38.312"]
 "microsoft/zero-shot-scfoundation" ["l"="41.346,38.296"]
 "Starlitnightly/bioinformatic_tutorial" ["l"="41.166,38.696"]
+"PharMolix/OpenBioMed" ["l"="23.534,13.365", "c"=209]
+"PharMolix/LangCell" ["l"="41.384,38.29"]
 "xianglin226/Benchmarking-Single-Cell-Perturbation" ["l"="41.385,38.324"]
 "apeterswu/Awesome-Bio-Foundation-Models" ["l"="41.376,38.269"]
 "HelloWorldLTY/scEval" ["l"="41.376,38.307"]
-"PharMolix/LangCell" ["l"="41.384,38.29"]
+"konstantint/matplotlib-venn" ["l"="22.058,14.688", "c"=267]
 "10XGenomics/loupeR" ["l"="41.475,38.473"]
+"royerlab/napari-segment-anything" ["l"="41.788,26.496", "c"=712]
 "MICS-Lab/novae" ["l"="41.495,38.371"]
 "Teichlab/bin2cell" ["l"="41.541,38.357"]
-"vitessce/vitessce" ["l"="41.936,26.576"]
 "pachterlab/concordex" ["l"="41.646,38.355"]
 "HelloWorldLTY/MuSe-GNN" ["l"="41.404,38.279"]
 "rajewsky-lab/spacemake" ["l"="41.492,38.339"]
 "PreibischLab/STIM" ["l"="41.496,38.355"]
 "amberT15/LLM_eval" ["l"="41.412,38.183"]
 "jimmylihui/GenBench" ["l"="41.401,38.211"]
-"kundajelab/DART-Eval" ["l"="41.421,38.16"]
+"hbctraining/DGE_workshop" ["l"="40.742,37.15", "c"=141]
 "scvae/scvae" ["l"="41.227,38.253"]
 "ArcInstitute/arc-virtual-cell-atlas" ["l"="41.286,38.345"]
 "vandijklab/cell2sentence-ft" ["l"="41.401,38.31"]
+"twbattaglia/RNAseq-workflow" ["l"="40.72,37.24", "c"=141]
 "ncborcherding/utility" ["l"="41.154,38.676"]
+"mahmoodlab/HEST" ["l"="41.897,27.266", "c"=369]
+"JiawenChenn/STimage-1K4M" ["l"="41.526,38.341"]
 "ZJUFanLab/scRank" ["l"="41.23,38.748"]
 "catavallejos/BASiCS" ["l"="41.417,38.503"]
 "wehos/CellT" ["l"="41.407,38.327"]
@@ -2883,13 +3108,12 @@ digraph G {
 "altoslabs/perturbench" ["l"="41.429,38.308"]
 "tjhwangxiong/TCGAplot" ["l"="41.211,38.769"]
 "YosefLab/VISION" ["l"="41.602,38.583"]
+"HICAI-ZJU/Scientific-LLM-Survey" ["l"="23.558,13.384", "c"=209]
 "GreenleafLab/chromVARmotifs" ["l"="41,38.452"]
 "Sanofi-Public/enact-pipeline" ["l"="41.567,38.337"]
 "10XGenomics/HumanColonCancer_VisiumHD" ["l"="41.585,38.345"]
-"JiawenChenn/STimage-1K4M" ["l"="41.526,38.341"]
-"KyGao/awesome-docking" ["l"="24.161,13.648"]
+"KyGao/awesome-docking" ["l"="24.161,13.648", "c"=281]
 "edsgard/trendsceek" ["l"="41.584,38.488"]
-"scverse/shadows" ["l"="41.495,38.212"]
 "bowang-lab/genomic-FM" ["l"="41.428,38.143"]
 "hemberg-lab/scRNA.seq.datasets" ["l"="41.188,38.228"]
 "pwwang/plotthis" ["l"="41.254,38.665"]
@@ -2901,13 +3125,15 @@ digraph G {
 "aaronwtr/PertEval" ["l"="41.394,38.268"]
 "HetzDra/turboGliph" ["l"="41.041,38.684"]
 "pogorely/ALICE" ["l"="41.057,38.704"]
+"Yunuuuu/ggalign" ["l"="40.846,35.361", "c"=51]
 "Tchanders/network_inference_tutorials" ["l"="41.119,38.203"]
 "linnarsson-lab/loompy" ["l"="41.058,38.378"]
 "vandijklab/cell2sentence" ["l"="41.408,38.291"]
 "Sanofi-Public/spatialone-pipeline" ["l"="41.592,38.32"]
 "ArcInstitute/SRAgent" ["l"="41.268,38.279"]
 "ArcInstitute/scRecounter" ["l"="41.261,38.247"]
-"CGATOxford/UMI-tools" ["l"="40.703,37.399"]
+"spacetx/starfish" ["l"="42.027,26.641", "c"=712]
+"manubot/rootstock" ["l"="-3.413,22.004", "c"=1087]
 "greenelab/BioBombe" ["l"="41.235,38.162"]
 "greenelab/multi-plier" ["l"="41.213,38.168"]
 "MicrosoftGenomics/Dhaka" ["l"="41.194,38.188"]

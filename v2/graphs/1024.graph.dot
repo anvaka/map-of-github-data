@@ -14,11 +14,16 @@ digraph G {
 "opensearch-project/security" -> "opendistro-for-elasticsearch/anomaly-detection-kibana-plugin"
 "opensearch-project/security" -> "opendistro-for-elasticsearch/perftop"
 "opensearch-project/security" -> "opendistro-for-elasticsearch/deprecated-security-ssl"
+"elastic/search-ui" -> "elastic/eland" ["e"=1]
+"elastic/search-ui" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
+"vdaas/vald" -> "opendistro-for-elasticsearch/k-NN" ["e"=1]
+"banzaicloud/koperator" -> "pravega/zookeeper-operator" ["e"=1]
 "pravega/zookeeper-operator" -> "banzaicloud/koperator" ["e"=1]
 "pravega/zookeeper-operator" -> "apache/rocketmq-operator" ["e"=1]
 "pravega/zookeeper-operator" -> "apache/solr-operator"
 "pravega/zookeeper-operator" -> "instaclustr/cassandra-operator" ["e"=1]
 "pravega/zookeeper-operator" -> "sky-big/pulsar-operator"
+"rabbitmq/cluster-operator" -> "pravega/zookeeper-operator" ["e"=1]
 "opendistro-for-elasticsearch/sample-code" -> "opendistro-for-elasticsearch/index-management"
 "opendistro-for-elasticsearch/sample-code" -> "opendistro-for-elasticsearch/job-scheduler"
 "opendistro-for-elasticsearch/sample-code" -> "opensearch-project/security-dashboards-plugin"
@@ -34,17 +39,22 @@ digraph G {
 "opendistro-for-elasticsearch/sample-code" -> "opendistro-for-elasticsearch/index-management-kibana-plugin"
 "opendistro-for-elasticsearch/sample-code" -> "opendistro/for-elasticsearch-docs"
 "opendistro-for-elasticsearch/sample-code" -> "opendistro-for-elasticsearch/security-parent"
+"zalando-incubator/es-operator" -> "opensearch-project/opensearch-k8s-operator" ["e"=1]
 "elastic/eland" -> "elastic/elasticsearch-labs"
 "elastic/eland" -> "elastic/ml-cpp"
 "elastic/eland" -> "o19s/elasticsearch-learning-to-rank"
 "elastic/eland" -> "o19s/quepid"
 "elastic/eland" -> "walterra/jupyter2kibana"
 "elastic/eland" -> "elastic/rally" ["e"=1]
+"kzwang/elasticsearch-image" -> "MLnick/elasticsearch-vector-scoring" ["e"=1]
+"cdqa-suite/cdQA" -> "Hironsan/bertsearch" ["e"=1]
+"sscarduzio/elasticsearch-readonlyrest-plugin" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
 "StaySense/fast-cosine-similarity" -> "MLnick/elasticsearch-vector-scoring"
 "StaySense/fast-cosine-similarity" -> "alexklibisz/elastik-nearest-neighbors"
 "StaySense/fast-cosine-similarity" -> "rixwew/elasticsearch-approximate-nearest-neighbor"
 "StaySense/fast-cosine-similarity" -> "lior-k/fast-elasticsearch-vector-scoring"
 "o19s/awesome-search-relevance" -> "querqy/chorus"
+"iamazy/elasticsearch-sql" -> "opendistro-for-elasticsearch/sql" ["e"=1]
 "opendistro-for-elasticsearch/sql" -> "amazon-archives/sql-jdbc"
 "opendistro-for-elasticsearch/sql" -> "opendistro-for-elasticsearch/alerting"
 "opendistro-for-elasticsearch/sql" -> "opendistro-for-elasticsearch/index-management"
@@ -60,6 +70,8 @@ digraph G {
 "opendistro-for-elasticsearch/sql" -> "opendistro-for-elasticsearch/k-NN"
 "opendistro-for-elasticsearch/sql" -> "NLPchina/elasticsearch-sql" ["e"=1]
 "opendistro-for-elasticsearch/sql" -> "amazon-archives/sql-odbc"
+"jelmerk/hnswlib" -> "opensearch-project/k-NN" ["e"=1]
+"gnes-ai/gnes" -> "Hironsan/bertsearch" ["e"=1]
 "lior-k/fast-elasticsearch-vector-scoring" -> "MLnick/elasticsearch-vector-scoring"
 "lior-k/fast-elasticsearch-vector-scoring" -> "StaySense/fast-cosine-similarity"
 "lior-k/fast-elasticsearch-vector-scoring" -> "alexklibisz/elastik-nearest-neighbors"
@@ -80,6 +92,7 @@ digraph G {
 "alexklibisz/elastik-nearest-neighbors" -> "alexklibisz/elastiknn"
 "alexklibisz/elastik-nearest-neighbors" -> "rixwew/elasticsearch-approximate-nearest-neighbor"
 "alexklibisz/elastik-nearest-neighbors" -> "lior-k/fast-elasticsearch-vector-scoring"
+"vearch/vearch" -> "opendistro-for-elasticsearch/k-NN" ["e"=1]
 "QingyaoAi/Amazon-Product-Search-Datasets" -> "utahIRlab/ESRT"
 "QingyaoAi/Amazon-Product-Search-Datasets" -> "QingyaoAi/Hierarchical-Embedding-Model-for-Personalized-Product-Search"
 "QingyaoAi/Amazon-Product-Search-Datasets" -> "QingyaoAi/Explainable-Product-Search-with-a-Dynamic-Relation-Embedding-Model"
@@ -109,6 +122,9 @@ digraph G {
 "lucidworks/banana" -> "OpenSextant/SolrTextTagger"
 "lucidworks/banana" -> "healthonnet/hon-lucene-synonyms"
 "lucidworks/banana" -> "sematext/solr-redis"
+"kLabUM/rrcf" -> "aws/random-cut-forest-by-aws" ["e"=1]
+"apresta/tagger" -> "tow/sunburnt" ["e"=1]
+"LuXugang/Lucene-7.x-9.x" -> "opendistro-for-elasticsearch/k-NN" ["e"=1]
 "flaxsearch/luwak" -> "romseygeek/samza-luwak"
 "flaxsearch/luwak" -> "mitre/quaerite"
 "flaxsearch/luwak" -> "flaxsearch/BioSolr"
@@ -146,6 +162,7 @@ digraph G {
 "o19s/quepid" -> "treygrainger/ai-powered-search"
 "o19s/quepid" -> "DmitryKey/bert-solr-search"
 "o19s/quepid" -> "o19s/awesome-search-relevance"
+"vespa-engine/sample-apps" -> "querqy/chorus" ["e"=1]
 "amazon-archives/sql-jdbc" -> "opendistro-for-elasticsearch/job-scheduler"
 "amazon-archives/sql-jdbc" -> "amazon-archives/sql-odbc"
 "amazon-archives/sql-jdbc" -> "opendistro-for-elasticsearch/deprecated-security-advanced-modules"
@@ -159,6 +176,7 @@ digraph G {
 "QingyaoAi/Hierarchical-Embedding-Model-for-Personalized-Product-Search" -> "kepingbi/ProdSearch"
 "QingyaoAi/Hierarchical-Embedding-Model-for-Personalized-Product-Search" -> "utahIRlab/ESRT"
 "QingyaoAi/Hierarchical-Embedding-Model-for-Personalized-Product-Search" -> "rucliujn/JDsearch"
+"apache/rocketmq-operator" -> "pravega/zookeeper-operator" ["e"=1]
 "airalcorn2/Solr-LTR" -> "o19s/hello-ltr"
 "airalcorn2/Solr-LTR" -> "mitre/quaerite"
 "airalcorn2/Solr-LTR" -> "querqy/querqy"
@@ -309,6 +327,11 @@ digraph G {
 "Hironsan/bertsearch" -> "kamalkraj/BERT-NER" ["e"=1]
 "Hironsan/bertsearch" -> "cdqa-suite/cdQA" ["e"=1]
 "Hironsan/bertsearch" -> "DmitryKey/bert-solr-search"
+"koursaros-ai/nboost" -> "Hironsan/bertsearch" ["e"=1]
+"koursaros-ai/nboost" -> "md-experiments/elastic_transformers" ["e"=1]
+"koursaros-ai/nboost" -> "MighTguY/customized-symspell" ["e"=1]
+"koursaros-ai/nboost" -> "SeaseLtd/rated-ranking-evaluator" ["e"=1]
+"koursaros-ai/nboost" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
 "Yelp/nrtsearch" -> "mikemccand/luceneserver"
 "Yelp/nrtsearch" -> "nixiesearch/nixiesearch"
 "Yelp/nrtsearch" -> "msfroh/lucene-university"
@@ -339,6 +362,8 @@ digraph G {
 "metarank/metarank" -> "qdrant/quaterion" ["e"=1]
 "metarank/metarank" -> "markovi/PyClick" ["e"=1]
 "metarank/metarank" -> "orchest/orchest" ["e"=1]
+"markovi/PyClick" -> "o19s/hello-ltr" ["e"=1]
+"markovi/PyClick" -> "mitre/quaerite" ["e"=1]
 "alexklibisz/elastiknn" -> "opendistro-for-elasticsearch/k-NN"
 "alexklibisz/elastiknn" -> "alexklibisz/elastik-nearest-neighbors"
 "alexklibisz/elastiknn" -> "opensearch-project/k-NN"
@@ -418,6 +443,7 @@ digraph G {
 "jd-aig/JAVE" -> "google-research-datasets/MAVE"
 "MighTguY/customized-symspell" -> "tballison/quaerite"
 "MighTguY/customized-symspell" -> "querqy/querqy"
+"neomatrix369/nlp_profiler" -> "md-experiments/elastic_transformers" ["e"=1]
 "querqy/querqy" -> "o19s/quepid"
 "querqy/querqy" -> "querqy/smui"
 "querqy/querqy" -> "mitre/quaerite"
@@ -447,6 +473,7 @@ digraph G {
 "kepingbi/ProdSearch" -> "QingyaoAi/Explainable-Product-Search-with-a-Dynamic-Relation-Embedding-Model"
 "querqy/querqy-elasticsearch" -> "o19s/grand_central"
 "sematext/solr-redis" -> "lucidworks/query-autofiltering-component"
+"opensearch-project/OpenSearch" -> "opensearch-project/OpenSearch-Dashboards" ["e"=1]
 "opensearch-project/OpenSearch-Dashboards" -> "opensearch-project/OpenSearch" ["e"=1]
 "opensearch-project/OpenSearch-Dashboards" -> "opensearch-project/security"
 "opensearch-project/OpenSearch-Dashboards" -> "opensearch-project/opensearch-py"
@@ -468,6 +495,7 @@ digraph G {
 "opensearch-project/opensearch-py" -> "opensearch-project/opensearch-build"
 "opensearch-project/opensearch-py" -> "opensearch-project/OpenSearch-Dashboards"
 "opensearch-project/opensearch-py" -> "opensearch-project/data-prepper"
+"benwilber/boltstream" -> "metarank/metarank" ["e"=1]
 "LisaHJung/Beginners-Crash-Course-to-Elastic-Stack-Series-Table-of-Contents" -> "LisaHJung/Part-1-Intro-to-Elasticsearch-and-Kibana"
 "LisaHJung/Beginners-Crash-Course-to-Elastic-Stack-Series-Table-of-Contents" -> "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-"
 "LisaHJung/Beginners-Crash-Course-to-Elastic-Stack-Series-Table-of-Contents" -> "LisaHJung/Part-4-Running-Aggregations-with-Elasticsearch-and-Kibana"
@@ -479,6 +507,11 @@ digraph G {
 "LisaHJung/Beginners-Crash-Course-to-Elastic-Stack-Series-Table-of-Contents" -> "codingexplained/complete-guide-to-elasticsearch" ["e"=1]
 "opensearch-project/opensearch-java" -> "opensearch-project/spring-data-opensearch"
 "opensearch-project/logstash-output-opensearch" -> "opensearch-project/logstash-input-opensearch"
+"apache/solr" -> "apache/solr-operator" ["e"=1]
+"apache/solr" -> "querqy/querqy" ["e"=1]
+"apache/solr" -> "o19s/quepid" ["e"=1]
+"apache/solr" -> "docker-solr/docker-solr" ["e"=1]
+"apache/solr" -> "django-haystack/pysolr" ["e"=1]
 "o19s/relevant-search-book" -> "o19s/hello-ltr"
 "o19s/relevant-search-book" -> "o19s/quepid"
 "o19s/relevant-search-book" -> "o19s/elasticsearch-learning-to-rank"
@@ -497,6 +530,8 @@ digraph G {
 "opensearch-project/k-NN" -> "opensearch-project/anomaly-detection"
 "opensearch-project/k-NN" -> "opendistro-for-elasticsearch/odfe-cli"
 "opensearch-project/k-NN" -> "opensearch-project/index-management"
+"mikemccand/luceneutil" -> "mikemccand/luceneserver" ["e"=1]
+"projectblacklight/blacklight" -> "o19s/quepid" ["e"=1]
 "opensearch-project/ml-commons" -> "opensearch-project/neural-search"
 "opensearch-project/ml-commons" -> "opensearch-project/flow-framework"
 "LisaHJung/Part-1-Intro-to-Elasticsearch-and-Kibana" -> "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-"
@@ -514,6 +549,7 @@ digraph G {
 "LisaHJung/Part-5-Understanding-Mapping-with-Elasticsearch-and-Kibana" -> "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-"
 "madhusudhankonda/elasticsearch-in-action" -> "madhusudhankonda/elasticsearch-first-steps" ["e"=1]
 "madhusudhankonda/elasticsearch-in-action" -> "mohclips/Elastic-Certified-Engineer-Exam-Notes"
+"currentslab/awesome-vector-search" -> "frutik/awesome-search" ["e"=1]
 "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-" -> "LisaHJung/Part-3-Running-full-text-queries-and-combined-queries-with-Elasticsearch-and-Kibana"
 "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-" -> "LisaHJung/Part-5-Understanding-Mapping-with-Elasticsearch-and-Kibana"
 "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-" -> "LisaHJung/Part-4-Running-Aggregations-with-Elasticsearch-and-Kibana"
@@ -575,6 +611,7 @@ digraph G {
 "opensearch-project/opensearch-k8s-operator" -> "rancher-sandbox/opni-opensearch-operator"
 "opensearch-project/opensearch-k8s-operator" -> "opensearch-project/OpenSearch-Dashboards"
 "lucidworks/hadoop-solr" -> "lucidworks/hive-solr"
+"EsperoTech/yaade" -> "metarank/metarank" ["e"=1]
 "amazon-science/esci-data" -> "shuttie/esci-s"
 "amazon-science/esci-data" -> "wayfair/WANDS"
 "amazon-science/esci-data" -> "rucliujn/JDsearch"
@@ -583,6 +620,7 @@ digraph G {
 "amazon-science/esci-data" -> "google-research-datasets/MAVE"
 "amazon-science/esci-data" -> "Alibaba-NLP/EcomGPT"
 "amazon-science/esci-data" -> "wufanyou/KDD-Cup-2022-Amazon"
+"tldr-devops/startpack" -> "metarank/metarank" ["e"=1]
 "docker-solr/docker-solr" -> "docker-solr/docker-solr-examples"
 "docker-solr/docker-solr" -> "freedev/solrcloud-zookeeper-docker"
 "docker-solr/docker-solr" -> "apache/solr-operator"
@@ -598,6 +636,7 @@ digraph G {
 "docker-solr/docker-solr" -> "querqy/querqy"
 "docker-solr/docker-solr" -> "tflobbe/solrmeter"
 "docker-solr/docker-solr" -> "solr-cool/solr-cool.github.io"
+"dadoonet/fscrawler" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
 "DiceTechJobs/ConceptualSearch" -> "DiceTechJobs/SolrPlugins"
 "DiceTechJobs/ConceptualSearch" -> "DiceTechJobs/SolrConfigExamples"
 "DiceTechJobs/ConceptualSearch" -> "careerbuilder/semantic-knowledge-graph"
@@ -613,14 +652,19 @@ digraph G {
 "DiceTechJobs/SolrPlugins" -> "DiceTechJobs/VectorsInSearch"
 "Aiven-Open/prometheus-exporter-plugin-for-opensearch" -> "aparo/opensearch-prometheus-exporter"
 "o19s/elyzer" -> "searchhub/search-collector"
+"bells/elasticsearch-analysis-dynamic-synonym" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
 "tflobbe/solrmeter" -> "bloomreach/solrcloud-haft"
 "bloomreach/solrcloud-haft" -> "bloomreach/solrcloud-rebalance-api"
 "elsevierlabs-os/soda" -> "OpenSextant/SolrTextTagger"
 "elsevierlabs-os/soda" -> "o19s/match-query-parser"
 "DiceTechJobs/SolrConfigExamples" -> "DiceTechJobs/SolrPlugins"
+"dsys/match" -> "lior-k/fast-elasticsearch-vector-scoring" ["e"=1]
 "LisaHJung/Beginners-guide-to-creating-a-full-stack-JavaScript-app-with-Elasticsearch" -> "LisaHJung/Part-6-Troubleshooting-Beginner-Level-Elasticsearch-Errors"
+"SolrNet/SolrNet" -> "docker-solr/docker-solr" ["e"=1]
 "elastic/connectors" -> "elastic/connectors-ruby"
+"spring-attic/spring-data-solr" -> "treygrainger/solr-in-action" ["e"=1]
 "opensearch-project/spring-data-opensearch" -> "opensearch-project/opensearch-java"
+"modelscope/AdaSeq" -> "Alibaba-NLP/SeqGPT" ["e"=1]
 "opensearch-project/neural-search" -> "opensearch-project/ml-commons"
 "opensearch-project/neural-search" -> "opensearch-project/k-NN"
 "opensearch-project/neural-search" -> "opensearch-project/flow-framework"
@@ -642,10 +686,15 @@ digraph G {
 "elastic/elasticsearch-labs" -> "softwaredoug/searcharray"
 "elastic/elasticsearch-labs" -> "frutik/awesome-search"
 "elastic/elasticsearch-labs" -> "NirDiamant/Controllable-RAG-Agent" ["e"=1]
+"vespa-engine/vespa" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
+"RUC-GSAI/YuLan-Rec" -> "rucliujn/JDsearch" ["e"=1]
 "treygrainger/solr-in-action" -> "lucidworks/hadoop-solr"
 "mikemccand/luceneserver" -> "Yelp/nrtsearch"
 "Alibaba-NLP/SeqGPT" -> "Alibaba-NLP/EcomGPT"
 "Alibaba-NLP/SeqGPT" -> "Alibaba-NLP/CDQA"
+"gsi-upm/sematch" -> "careerbuilder/semantic-knowledge-graph" ["e"=1]
+"apache/lucene-solr" -> "evolvingweb/ajax-solr" ["e"=1]
+"apache/lucene-solr" -> "lucidworks/spark-solr" ["e"=1]
 "careerbuilder/semantic-knowledge-graph" -> "DiceTechJobs/SolrPlugins"
 "careerbuilder/semantic-knowledge-graph" -> "OpenSextant/SolrTextTagger"
 "careerbuilder/semantic-knowledge-graph" -> "DiceTechJobs/ConceptualSearch"
@@ -658,12 +707,18 @@ digraph G {
 "sematext/solr-autocomplete" -> "sematext/query-segmenter"
 "Alibaba-NLP/EcomGPT" -> "Alibaba-NLP/SeqGPT"
 "Alibaba-NLP/EcomGPT" -> "Alibaba-NLP/CDQA"
+"bitsensor/elastalert" -> "opendistro-for-elasticsearch/alerting" ["e"=1]
+"bitsensor/elastalert-kibana-plugin" -> "opendistro-for-elasticsearch/alerting" ["e"=1]
 "nixiesearch/nixiesearch" -> "Yelp/nrtsearch"
 "nixiesearch/nixiesearch" -> "slackhq/astra"
 "nixiesearch/nixiesearch" -> "mikemccand/luceneserver"
 "nixiesearch/nixiesearch" -> "querqy/querqy"
+"Ethan00Si/SESREC-SIGIR-2023" -> "rucliujn/JDsearch" ["e"=1]
 "bloomreach/solrcloud-rebalance-api" -> "bloomreach/solrcloud-haft"
 "o19s/match-query-parser" -> "o19s/grand_central"
+"RD17/ambar" -> "Hironsan/bertsearch" ["e"=1]
+"harpribot/awesome-information-retrieval" -> "frutik/awesome-search" ["e"=1]
+"harpribot/awesome-information-retrieval" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
 "o19s/elasticsearch-learning-to-rank" -> "o19s/hello-ltr"
 "o19s/elasticsearch-learning-to-rank" -> "o19s/relevant-search-book"
 "o19s/elasticsearch-learning-to-rank" -> "tensorflow/ranking" ["e"=1]
@@ -681,6 +736,7 @@ digraph G {
 "o19s/elasticsearch-learning-to-rank" -> "opendistro-for-elasticsearch/k-NN"
 "alexmolas/microsearch" -> "softwaredoug/searcharray"
 "alexmolas/microsearch" -> "bartdegoede/python-searchengine"
+"SeekStorm/SeekStorm" -> "nixiesearch/nixiesearch" ["e"=1]
 "MLnick/elasticsearch-vector-scoring" -> "StaySense/fast-cosine-similarity"
 "MLnick/elasticsearch-vector-scoring" -> "lior-k/fast-elasticsearch-vector-scoring"
 "MLnick/elasticsearch-vector-scoring" -> "ginobefun/elasticsearch-feature-vector-scoring"
@@ -692,8 +748,17 @@ digraph G {
 "softwaredoug/searcharray" -> "searchhub/search-collector"
 "softwaredoug/searcharray" -> "o19s/RankyMcRankFace"
 "DiceTechJobs/RelevancyTuning" -> "tballison/quaerite"
+"KennFalcon/elasticsearch-analysis-hanlp" -> "lior-k/fast-elasticsearch-vector-scoring" ["e"=1]
 "acidvegas/elastop" -> "edmocosta/tuistash"
+"keredson/wordninja" -> "Hironsan/bertsearch" ["e"=1]
+"IBM/elasticsearch-spark-recommender" -> "MLnick/elasticsearch-vector-scoring" ["e"=1]
+"IBM/elasticsearch-spark-recommender" -> "o19s/elasticsearch-learning-to-rank" ["e"=1]
+"dbpedia/extraction-framework" -> "careerbuilder/semantic-knowledge-graph" ["e"=1]
+"tuan3w/visual_search" -> "MLnick/elasticsearch-vector-scoring" ["e"=1]
 "elastic/start-local" -> "edmocosta/tuistash"
+"airalcorn2/RankNet" -> "airalcorn2/Solr-LTR" ["e"=1]
+"codingexplained/complete-guide-to-elasticsearch" -> "LisaHJung/Beginners-Crash-Course-to-Elastic-Stack-Series-Table-of-Contents" ["e"=1]
+"haris-musa/excel-mcp-server" -> "cr7258/elasticsearch-mcp-server" ["e"=1]
 "OpenSextant/SolrTextTagger" -> "elsevierlabs-os/soda"
 "OpenSextant/SolrTextTagger" -> "careerbuilder/semantic-knowledge-graph"
 "OpenSextant/SolrTextTagger" -> "opensemanticsearch/solr-ontology-tagger" ["e"=1]
@@ -717,41 +782,53 @@ digraph G {
 "opendistro-for-elasticsearch/anomaly-detection-kibana-plugin" ["l"="-2.601,8.803"]
 "opendistro-for-elasticsearch/perftop" ["l"="-2.639,8.82"]
 "opendistro-for-elasticsearch/deprecated-security-ssl" ["l"="-2.629,8.782"]
+"elastic/search-ui" ["l"="-3.628,9.084", "c"=540]
+"elastic/eland" ["l"="-2.347,8.746"]
+"o19s/elasticsearch-learning-to-rank" ["l"="-2.391,8.813"]
+"vdaas/vald" ["l"="-1.146,3.98", "c"=576]
+"opendistro-for-elasticsearch/k-NN" ["l"="-2.531,8.795"]
+"banzaicloud/koperator" ["l"="7.837,-9.349", "c"=14]
 "pravega/zookeeper-operator" ["l"="-2.079,8.817"]
-"banzaicloud/koperator" ["l"="7.837,-9.349"]
-"apache/rocketmq-operator" ["l"="-3.082,11.39"]
+"apache/rocketmq-operator" ["l"="-3.082,11.39", "c"=15]
 "apache/solr-operator" ["l"="-2.121,8.848"]
-"instaclustr/cassandra-operator" ["l"="-1.337,18.629"]
+"instaclustr/cassandra-operator" ["l"="-1.337,18.629", "c"=1217]
 "sky-big/pulsar-operator" ["l"="-2.045,8.798"]
+"rabbitmq/cluster-operator" ["l"="8.115,-9.327", "c"=14]
 "opendistro-for-elasticsearch/index-management-kibana-plugin" ["l"="-2.603,8.789"]
 "opendistro/for-elasticsearch-docs" ["l"="-2.691,8.866"]
 "opendistro-for-elasticsearch/security-parent" ["l"="-2.62,8.772"]
-"elastic/eland" ["l"="-2.347,8.746"]
+"zalando-incubator/es-operator" ["l"="7.483,-8.757", "c"=14]
+"opensearch-project/opensearch-k8s-operator" ["l"="-2.815,8.765"]
 "elastic/elasticsearch-labs" ["l"="-2.306,8.725"]
 "elastic/ml-cpp" ["l"="-2.375,8.708"]
-"o19s/elasticsearch-learning-to-rank" ["l"="-2.391,8.813"]
 "o19s/quepid" ["l"="-2.344,8.837"]
 "walterra/jupyter2kibana" ["l"="-2.345,8.712"]
-"elastic/rally" ["l"="-3.675,8.923"]
-"StaySense/fast-cosine-similarity" ["l"="-2.473,8.775"]
+"elastic/rally" ["l"="-3.675,8.923", "c"=540]
+"kzwang/elasticsearch-image" ["l"="58.274,9.142", "c"=744]
 "MLnick/elasticsearch-vector-scoring" ["l"="-2.463,8.756"]
+"cdqa-suite/cdQA" ["l"="55.435,26.166", "c"=1119]
+"Hironsan/bertsearch" ["l"="-2.445,8.83"]
+"sscarduzio/elasticsearch-readonlyrest-plugin" ["l"="-3.588,8.905", "c"=540]
+"StaySense/fast-cosine-similarity" ["l"="-2.473,8.775"]
 "alexklibisz/elastik-nearest-neighbors" ["l"="-2.484,8.791"]
 "rixwew/elasticsearch-approximate-nearest-neighbor" ["l"="-2.499,8.779"]
 "lior-k/fast-elasticsearch-vector-scoring" ["l"="-2.459,8.792"]
 "o19s/awesome-search-relevance" ["l"="-2.348,8.879"]
 "querqy/chorus" ["l"="-2.328,8.872"]
-"opendistro-for-elasticsearch/k-NN" ["l"="-2.531,8.795"]
-"NLPchina/elasticsearch-sql" ["l"="-3.798,8.798"]
+"iamazy/elasticsearch-sql" ["l"="-4.551,12.373", "c"=15]
+"NLPchina/elasticsearch-sql" ["l"="-3.798,8.798", "c"=540]
 "amazon-archives/sql-odbc" ["l"="-2.65,8.747"]
+"jelmerk/hnswlib" ["l"="-2.407,17.9", "c"=455]
+"opensearch-project/k-NN" ["l"="-2.576,8.709"]
+"gnes-ai/gnes" ["l"="52.9,25.615", "c"=172]
 "textkernel/vector-search-plugin" ["l"="-2.489,8.767"]
 "alexklibisz/elastiknn" ["l"="-2.432,8.793"]
 "muhleder/elasticsearch-vector-scoring" ["l"="-2.482,8.747"]
 "ginobefun/elasticsearch-feature-vector-scoring" ["l"="-2.443,8.744"]
-"kzwang/elasticsearch-image" ["l"="58.274,9.142"]
-"Hironsan/bertsearch" ["l"="-2.445,8.83"]
 "jtibshirani/text-embeddings" ["l"="-2.483,8.838"]
-"KennFalcon/elasticsearch-analysis-hanlp" ["l"="-3.903,8.591"]
+"KennFalcon/elasticsearch-analysis-hanlp" ["l"="-3.903,8.591", "c"=540]
 "SthPhoenix/elastik-nearest-neighbors-extended" ["l"="-2.514,8.77"]
+"vearch/vearch" ["l"="-1.006,3.984", "c"=576]
 "QingyaoAi/Amazon-Product-Search-Datasets" ["l"="-2.588,8.974"]
 "utahIRlab/ESRT" ["l"="-2.575,8.987"]
 "QingyaoAi/Hierarchical-Embedding-Model-for-Personalized-Product-Search" ["l"="-2.562,8.957"]
@@ -759,7 +836,7 @@ digraph G {
 "sakuranew/BERT-AttributeExtraction" ["l"="-2.503,8.55"]
 "lvjianxin/Knowledge-extraction" ["l"="-2.506,8.516"]
 "lonePatient/BERT-Attribute-Value-Extract" ["l"="-2.5,8.603"]
-"Wangpeiyi9979/IE-Bert-CNN" ["l"="55.605,26.54"]
+"Wangpeiyi9979/IE-Bert-CNN" ["l"="55.605,26.54", "c"=464]
 "o19s/hello-ltr" ["l"="-2.326,8.833"]
 "querqy/querqy" ["l"="-2.307,8.858"]
 "mitre/quaerite" ["l"="-2.303,8.879"]
@@ -776,32 +853,36 @@ digraph G {
 "lucidworks/banana" ["l"="-2.194,8.887"]
 "lucidworks/silk" ["l"="-2.148,8.894"]
 "lucidworks/spark-solr" ["l"="-2.171,8.901"]
-"NGDATA/hbase-indexer" ["l"="-2.459,16.842"]
+"NGDATA/hbase-indexer" ["l"="-2.459,16.842", "c"=455]
 "docker-solr/docker-solr" ["l"="-2.178,8.866"]
 "tflobbe/solrmeter" ["l"="-2.17,8.924"]
 "DiceTechJobs/SolrPlugins" ["l"="-2.248,8.905"]
 "OpenSextant/SolrTextTagger" ["l"="-2.191,8.912"]
 "healthonnet/hon-lucene-synonyms" ["l"="-2.211,8.859"]
 "sematext/solr-redis" ["l"="-2.195,8.847"]
+"kLabUM/rrcf" ["l"="52.379,14.709", "c"=569]
+"aws/random-cut-forest-by-aws" ["l"="-2.61,8.891"]
+"apresta/tagger" ["l"="47.314,17.556", "c"=657]
+"tow/sunburnt" ["l"="-2.045,8.889"]
+"LuXugang/Lucene-7.x-9.x" ["l"="-3.791,8.595", "c"=540]
 "flaxsearch/luwak" ["l"="-2.289,8.992"]
 "romseygeek/samza-luwak" ["l"="-2.269,9.031"]
 "flaxsearch/BioSolr" ["l"="-2.297,9.031"]
 "lucidworks/solr-helm-chart" ["l"="-2.093,8.842"]
-"apache/solr" ["l"="-2.933,14.594"]
+"apache/solr" ["l"="-2.933,14.594", "c"=43]
 "softwaredoug/searcharray" ["l"="-2.344,8.781"]
 "smirnoffs/quepid-es-proxy" ["l"="-2.362,8.875"]
 "treygrainger/ai-powered-search" ["l"="-2.35,8.806"]
+"vespa-engine/sample-apps" ["l"="-1.34,4.066", "c"=576]
 "kepingbi/ProdSearch" ["l"="-2.561,8.988"]
 "rucliujn/JDsearch" ["l"="-2.534,8.893"]
 "saaay71/solr-vector-scoring" ["l"="-2.307,8.901"]
-"airalcorn2/RankNet" ["l"="54.698,25.856"]
+"airalcorn2/RankNet" ["l"="54.698,25.856", "c"=439]
 "opendistro-for-elasticsearch/anomaly-detection" ["l"="-2.599,8.826"]
 "opendistro-for-elasticsearch/performance-analyzer-rca" ["l"="-2.596,8.816"]
 "opendistro-for-elasticsearch/kibana-reports" ["l"="-2.636,8.861"]
 "opendistro-for-elasticsearch/data-prepper" ["l"="-2.619,8.863"]
 "opendistro/for-elasticsearch" ["l"="-2.707,8.889"]
-"opensearch-project/k-NN" ["l"="-2.576,8.709"]
-"LuXugang/Lucene-7.x-9.x" ["l"="-3.791,8.595"]
 "sanazbahargam/Query-Understanding" ["l"="-2.421,8.988"]
 "frutik/awesome-knowledge-graphs" ["l"="-2.419,8.946"]
 "md-experiments/elastic_transformers" ["l"="-2.477,8.875"]
@@ -815,14 +896,12 @@ digraph G {
 "SeaseLtd/solr-quantities-detection-qparsers" ["l"="-2.114,8.915"]
 "solr-cool/solr-cool.github.io" ["l"="-2.129,8.898"]
 "opendistro-for-elasticsearch/kibana-notebooks" ["l"="-2.606,8.849"]
-"koursaros-ai/nboost" ["l"="54.558,25.795"]
-"gnes-ai/gnes" ["l"="52.9,25.615"]
-"Hironsan/anago" ["l"="53.547,27.491"]
-"utterworks/fast-bert" ["l"="52.823,25.655"]
-"linkedin/detext" ["l"="52.65,25.609"]
-"castorini/anserini" ["l"="54.522,25.717"]
-"kamalkraj/BERT-NER" ["l"="53.578,27.411"]
-"cdqa-suite/cdQA" ["l"="55.435,26.166"]
+"koursaros-ai/nboost" ["l"="54.558,25.795", "c"=439]
+"Hironsan/anago" ["l"="53.547,27.491", "c"=60]
+"utterworks/fast-bert" ["l"="52.823,25.655", "c"=172]
+"linkedin/detext" ["l"="52.65,25.609", "c"=172]
+"castorini/anserini" ["l"="54.522,25.717", "c"=439]
+"kamalkraj/BERT-NER" ["l"="53.578,27.411", "c"=60]
 "Yelp/nrtsearch" ["l"="-2.347,8.929"]
 "mikemccand/luceneserver" ["l"="-2.374,8.949"]
 "nixiesearch/nixiesearch" ["l"="-2.368,8.918"]
@@ -830,24 +909,23 @@ digraph G {
 "slackhq/astra" ["l"="-2.343,8.957"]
 "albogdano/lucene-s3directory" ["l"="-2.364,8.973"]
 "django-haystack/pysolr" ["l"="-2.097,8.891"]
-"tow/sunburnt" ["l"="-2.045,8.889"]
 "search5/solrpy" ["l"="-2.068,8.9"]
 "evolvingweb/ajax-solr" ["l"="-2.024,8.907"]
 "moonlitesolutions/SolrClient" ["l"="-2.066,8.924"]
 "solrcloudpy/solrcloudpy" ["l"="-2.069,8.873"]
-"python-happybase/happybase" ["l"="-2.605,14.473"]
+"python-happybase/happybase" ["l"="-2.605,14.473", "c"=43]
 "metarank/metarank" ["l"="-2.405,8.868"]
 "frutik/awesome-search" ["l"="-2.368,8.851"]
-"EsperoTech/yaade" ["l"="16.019,-9.915"]
-"currentslab/awesome-vector-search" ["l"="-1.148,3.943"]
-"featureform/featureform" ["l"="45.247,25.899"]
-"beir-cellar/beir" ["l"="54.538,25.659"]
+"EsperoTech/yaade" ["l"="16.019,-9.915", "c"=198]
+"currentslab/awesome-vector-search" ["l"="-1.148,3.943", "c"=576]
+"featureform/featureform" ["l"="45.247,25.899", "c"=68]
+"beir-cellar/beir" ["l"="54.538,25.659", "c"=439]
 "amazon-science/esci-data" ["l"="-2.499,8.809"]
-"naver/splade" ["l"="54.533,25.684"]
-"dflex-js/dflex" ["l"="-12.796,-4.146"]
-"qdrant/quaterion" ["l"="-44.375,26.329"]
-"markovi/PyClick" ["l"="54.593,25.862"]
-"orchest/orchest" ["l"="45.2,26.015"]
+"naver/splade" ["l"="54.533,25.684", "c"=439]
+"dflex-js/dflex" ["l"="-12.796,-4.146", "c"=921]
+"qdrant/quaterion" ["l"="-44.375,26.329", "c"=551]
+"markovi/PyClick" ["l"="54.593,25.862", "c"=439]
+"orchest/orchest" ["l"="45.2,26.015", "c"=68]
 "bartdegoede/python-searchengine" ["l"="-2.368,8.629"]
 "alexmolas/microsearch" ["l"="-2.364,8.67"]
 "md-experiments/picture_text" ["l"="-2.49,8.905"]
@@ -857,36 +935,36 @@ digraph G {
 "lucidworks/zeppelin-solr" ["l"="-2.138,8.917"]
 "freedev/solrcloud-zookeeper-docker" ["l"="-2.147,8.872"]
 "kepingbi/ConvProductSearchNF" ["l"="-2.568,9.005"]
-"guyulongcs/Awesome-Deep-Learning-Papers-for-Search-Recommendation-Advertising" ["l"="58.218,23.411"]
-"dzharii/awesome-elasticsearch" ["l"="-3.659,8.945"]
-"harpribot/awesome-information-retrieval" ["l"="54.563,25.722"]
-"aws/random-cut-forest-by-aws" ["l"="-2.61,8.891"]
+"guyulongcs/Awesome-Deep-Learning-Papers-for-Search-Recommendation-Advertising" ["l"="58.218,23.411", "c"=161]
+"dzharii/awesome-elasticsearch" ["l"="-3.659,8.945", "c"=540]
+"harpribot/awesome-information-retrieval" ["l"="54.563,25.722", "c"=439]
 "frutik/awesome-timeseries" ["l"="-2.443,8.957"]
 "frutik/awesome-e-commerce" ["l"="-2.446,8.984"]
 "frutik/elasticsearch-hints" ["l"="-2.429,8.968"]
 "jd-aig/JAVE" ["l"="-2.524,8.645"]
 "cubenlp/ACL19_Scaling_Up_Open_Tagging" ["l"="-2.508,8.639"]
 "google-research-datasets/MAVE" ["l"="-2.501,8.662"]
+"neomatrix369/nlp_profiler" ["l"="48.324,26.236", "c"=323]
 "shopping24/solr-bmax-queryparser" ["l"="-2.287,8.889"]
 "sematext/query-segmenter" ["l"="-2.266,8.896"]
 "querqy/querqy-elasticsearch" ["l"="-2.265,8.837"]
 "nsoft/jesterj" ["l"="-2.1,8.925"]
 "o19s/grand_central" ["l"="-2.245,8.842"]
 "lucidworks/query-autofiltering-component" ["l"="-2.222,8.841"]
-"opensearch-project/OpenSearch" ["l"="-3.028,14.678"]
+"opensearch-project/OpenSearch" ["l"="-3.028,14.678", "c"=43]
 "opensearch-project/opensearch-py" ["l"="-2.764,8.726"]
 "opensearch-project/data-prepper" ["l"="-2.822,8.788"]
 "opensearch-project/logstash-output-opensearch" ["l"="-2.791,8.805"]
 "opensearch-project/opensearch-build" ["l"="-2.789,8.735"]
-"opensearch-project/opensearch-k8s-operator" ["l"="-2.815,8.765"]
 "opensearch-project/helm-charts" ["l"="-2.786,8.761"]
 "opensearch-project/observability" ["l"="-2.721,8.718"]
-"apache/lucene" ["l"="-2.93,14.642"]
-"prometheus-community/elasticsearch_exporter" ["l"="9.375,-10.65"]
+"apache/lucene" ["l"="-2.93,14.642", "c"=43]
+"prometheus-community/elasticsearch_exporter" ["l"="9.375,-10.65", "c"=484]
 "opensearch-project/opensearch-plugins" ["l"="-2.765,8.82"]
 "opensearch-project/opensearch-dsl-py" ["l"="-2.765,8.69"]
 "opensearch-project/opensearch-go" ["l"="-2.795,8.698"]
 "opensearch-project/ml-commons" ["l"="-2.683,8.701"]
+"benwilber/boltstream" ["l"="-3.185,-28.974", "c"=4]
 "LisaHJung/Beginners-Crash-Course-to-Elastic-Stack-Series-Table-of-Contents" ["l"="-2.15,8.516"]
 "LisaHJung/Part-1-Intro-to-Elasticsearch-and-Kibana" ["l"="-2.114,8.506"]
 "LisaHJung/Part-2-Understanding-the-relevance-of-your-search-with-Elasticsearch-and-Kibana-" ["l"="-2.129,8.492"]
@@ -896,7 +974,7 @@ digraph G {
 "LisaHJung/Beginners-guide-to-creating-a-full-stack-JavaScript-app-with-Elasticsearch" ["l"="-2.168,8.491"]
 "LisaHJung/Part-6-Troubleshooting-Beginner-Level-Elasticsearch-Errors" ["l"="-2.143,8.489"]
 "madhusudhankonda/elasticsearch-in-action" ["l"="-2.216,8.61"]
-"codingexplained/complete-guide-to-elasticsearch" ["l"="-0.613,16.759"]
+"codingexplained/complete-guide-to-elasticsearch" ["l"="-0.613,16.759", "c"=398]
 "opensearch-project/opensearch-java" ["l"="-2.864,8.833"]
 "opensearch-project/spring-data-opensearch" ["l"="-2.887,8.852"]
 "opensearch-project/logstash-input-opensearch" ["l"="-2.809,8.824"]
@@ -908,9 +986,11 @@ digraph G {
 "opensearch-project/anomaly-detection" ["l"="-2.603,8.629"]
 "opendistro-for-elasticsearch/odfe-cli" ["l"="-2.574,8.679"]
 "opensearch-project/index-management" ["l"="-2.635,8.674"]
+"mikemccand/luceneutil" ["l"="-3.833,8.553", "c"=540]
+"projectblacklight/blacklight" ["l"="39.351,34.815", "c"=1341]
 "opensearch-project/flow-framework" ["l"="-2.66,8.687"]
 "opensearch-project/opensearch-cli" ["l"="-2.817,8.671"]
-"madhusudhankonda/elasticsearch-first-steps" ["l"="29.364,-23.144"]
+"madhusudhankonda/elasticsearch-first-steps" ["l"="29.364,-23.144", "c"=879]
 "mohclips/Elastic-Certified-Engineer-Exam-Notes" ["l"="-2.199,8.589"]
 "fergiemcdowall/solrstrap" ["l"="-1.99,8.914"]
 "opensearch-project/opensearch-build-libraries" ["l"="-2.813,8.723"]
@@ -932,18 +1012,19 @@ digraph G {
 "opensearch-project/common-utils" ["l"="-2.786,8.842"]
 "frutik/awesome-cloud-apps" ["l"="-2.457,9.005"]
 "Aiven-Open/prometheus-exporter-plugin-for-opensearch" ["l"="-2.876,8.791"]
-"zalando-incubator/es-operator" ["l"="7.483,-8.757"]
 "rancher-sandbox/opni-opensearch-operator" ["l"="-2.832,8.742"]
 "shuttie/esci-s" ["l"="-2.416,8.777"]
 "wayfair/WANDS" ["l"="-2.534,8.828"]
 "ninglab/eCeLLM" ["l"="-2.514,8.833"]
-"ir100/ir100" ["l"="5.936,-41.016"]
+"ir100/ir100" ["l"="5.936,-41.016", "c"=259]
 "Alibaba-NLP/EcomGPT" ["l"="-2.521,8.73"]
 "wufanyou/KDD-Cup-2022-Amazon" ["l"="-2.524,8.854"]
+"tldr-devops/startpack" ["l"="12.038,-8.688", "c"=18]
 "docker-solr/docker-solr-examples" ["l"="-2.153,8.819"]
 "freedev/solr-import-export-json" ["l"="-2.148,8.84"]
 "makuk66/docker-solr" ["l"="-2.175,8.823"]
 "careerbuilder/semantic-knowledge-graph" ["l"="-2.226,8.904"]
+"dadoonet/fscrawler" ["l"="-3.605,9.024", "c"=540]
 "DiceTechJobs/ConceptualSearch" ["l"="-2.226,8.933"]
 "DiceTechJobs/SolrConfigExamples" ["l"="-2.242,8.924"]
 "DiceTechJobs/VectorsInSearch" ["l"="-2.238,8.956"]
@@ -951,10 +1032,16 @@ digraph G {
 "elsevierlabs-os/soda" ["l"="-2.212,8.912"]
 "DiceTechJobs/RelevancyFeedback" ["l"="-2.214,8.968"]
 "aparo/opensearch-prometheus-exporter" ["l"="-2.91,8.802"]
+"bells/elasticsearch-analysis-dynamic-synonym" ["l"="-3.84,8.617", "c"=540]
 "bloomreach/solrcloud-haft" ["l"="-2.163,8.975"]
 "bloomreach/solrcloud-rebalance-api" ["l"="-2.155,8.996"]
+"dsys/match" ["l"="58.26,9.17", "c"=744]
+"SolrNet/SolrNet" ["l"="-34.287,-1.339", "c"=8]
 "elastic/connectors" ["l"="-2.246,8.691"]
 "elastic/connectors-ruby" ["l"="-2.224,8.677"]
+"spring-attic/spring-data-solr" ["l"="-4.866,9.131", "c"=703]
+"modelscope/AdaSeq" ["l"="54.062,15.15", "c"=504]
+"Alibaba-NLP/SeqGPT" ["l"="-2.531,8.7"]
 "cuixuage/KDDCup2022-ESCI" ["l"="-2.527,8.873"]
 "ChengHSUHSU/KDD_Cup2022_AmazonProductSearchESCI" ["l"="-2.544,8.869"]
 "elastic/mcp-server-elasticsearch" ["l"="-2.294,8.639"]
@@ -964,17 +1051,29 @@ digraph G {
 "elastic/crawler" ["l"="-2.316,8.679"]
 "edmocosta/tuistash" ["l"="-2.287,8.691"]
 "elastic/elasticsearch-specification" ["l"="-2.248,8.722"]
-"NirDiamant/Controllable-RAG-Agent" ["l"="41.341,0.442"]
-"Alibaba-NLP/SeqGPT" ["l"="-2.531,8.7"]
+"NirDiamant/Controllable-RAG-Agent" ["l"="41.341,0.442", "c"=7]
+"vespa-engine/vespa" ["l"="-1.243,4.042", "c"=576]
+"RUC-GSAI/YuLan-Rec" ["l"="59.22,22.879", "c"=778]
 "Alibaba-NLP/CDQA" ["l"="-2.513,8.707"]
+"gsi-upm/sematch" ["l"="55.351,27.055", "c"=476]
+"apache/lucene-solr" ["l"="-2.862,14.586", "c"=43]
 "sematext/solr-autocomplete" ["l"="-2.259,8.933"]
 "sematext/solr-researcher" ["l"="-2.262,8.961"]
-"tensorflow/ranking" ["l"="58.143,23.462"]
-"floragunn/search-guard" ["l"="-3.686,8.9"]
-"IBM/elasticsearch-spark-recommender" ["l"="-1.53,16.81"]
-"opensemanticsearch/solr-ontology-tagger" ["l"="-1.619,-41.95"]
-"dbmdz/solr-ocrpayload-plugin" ["l"="46.308,4.935"]
+"bitsensor/elastalert" ["l"="-3.543,8.829", "c"=540]
+"bitsensor/elastalert-kibana-plugin" ["l"="-3.561,8.863", "c"=540]
+"Ethan00Si/SESREC-SIGIR-2023" ["l"="46.907,30.35", "c"=254]
+"RD17/ambar" ["l"="12.746,-8.848", "c"=18]
+"tensorflow/ranking" ["l"="58.143,23.462", "c"=161]
+"floragunn/search-guard" ["l"="-3.686,8.9", "c"=540]
+"SeekStorm/SeekStorm" ["l"="16.497,-10.328", "c"=198]
+"IBM/elasticsearch-spark-recommender" ["l"="-1.53,16.81", "c"=406]
+"keredson/wordninja" ["l"="52.81,24.245", "c"=1203]
+"dbpedia/extraction-framework" ["l"="-0.482,-41.966", "c"=934]
+"tuan3w/visual_search" ["l"="58.33,9.163", "c"=744]
+"haris-musa/excel-mcp-server" ["l"="41.506,3.099", "c"=559]
 "cr7258/elasticsearch-mcp-server" ["l"="-2.28,8.599"]
+"opensemanticsearch/solr-ontology-tagger" ["l"="-1.619,-41.95", "c"=456]
+"dbmdz/solr-ocrpayload-plugin" ["l"="46.308,4.935", "c"=1062]
 "elastic/thumbnails4j" ["l"="-2.3,8.613"]
 "moshebla/solr-vector-scoring" ["l"="-2.303,8.929"]
 }

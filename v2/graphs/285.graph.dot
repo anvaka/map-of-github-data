@@ -4,6 +4,17 @@ digraph G {
 "aquasecurity/fanal" -> "aquasecurity/vuln-list-update"
 "aquasecurity/fanal" -> "aquasecurity/trivy-docker-extension"
 "aquasecurity/fanal" -> "Moniseeta/boltwiz"
+"inconshreveable/go-update" -> "theupdateframework/go-tuf" ["e"=1]
+"getporter/porter" -> "grafeas/kritis" ["e"=1]
+"getporter/porter" -> "in-toto/in-toto" ["e"=1]
+"github/choosealicense.com" -> "licensee/licensee" ["e"=1]
+"github/choosealicense.com" -> "spdx/license-list-XML" ["e"=1]
+"endoflife-date/endoflife.date" -> "guacsec/guac" ["e"=1]
+"endoflife-date/endoflife.date" -> "package-url/purl-spec" ["e"=1]
+"intel/cve-bin-tool" -> "cve-search/cve-search" ["e"=1]
+"intel/cve-bin-tool" -> "google/osv.dev" ["e"=1]
+"intel/cve-bin-tool" -> "aboutcode-org/scancode-toolkit" ["e"=1]
+"intel/cve-bin-tool" -> "tern-tools/tern" ["e"=1]
 "tern-tools/tern" -> "oss-review-toolkit/ort"
 "tern-tools/tern" -> "opensbom-generator/spdx-sbom-generator"
 "tern-tools/tern" -> "aboutcode-org/scancode-toolkit"
@@ -34,6 +45,13 @@ digraph G {
 "oss-review-toolkit/ort" -> "spdx/spdx-spec"
 "oss-review-toolkit/ort" -> "devops-kung-fu/bomber"
 "oss-review-toolkit/ort" -> "slsa-framework/slsa"
+"oras-project/oras" -> "oras-project/oras-go" ["e"=1]
+"oras-project/oras" -> "notaryproject/notation" ["e"=1]
+"project-zot/zot" -> "sigstore/gitsign" ["e"=1]
+"cncf/tag-security" -> "slsa-framework/slsa" ["e"=1]
+"cncf/tag-security" -> "in-toto/in-toto" ["e"=1]
+"cncf/tag-security" -> "guacsec/guac" ["e"=1]
+"vmware-archive/kube-prod-runtime" -> "chainloop-dev/chainloop" ["e"=1]
 "pivotal/LicenseFinder" -> "licensee/licensed"
 "pivotal/LicenseFinder" -> "aboutcode-org/scancode-toolkit"
 "pivotal/LicenseFinder" -> "davglass/license-checker"
@@ -97,8 +115,11 @@ digraph G {
 "fossology/fossology" -> "sw360/sw360portal"
 "CycloneDX/cyclonedx-core-java" -> "CycloneDX/cyclonedx-maven-plugin"
 "CycloneDX/cyclonedx-core-java" -> "DependencyTrack/frontend"
+"toolswatch/vFeed" -> "cve-search/cve-search" ["e"=1]
+"toolswatch/vFeed" -> "NorthernSec/CVE-Scan" ["e"=1]
 "IBM/portieris" -> "sse-secure-systems/connaisseur"
 "IBM/portieris" -> "grafeas/kritis"
+"unicode-org/cldr" -> "spdx/license-list-XML" ["e"=1]
 "google/licensecheck" -> "google/licenseclassifier"
 "eclipse-sw360/sw360" -> "Open-Source-Compliance/Sharing-creates-value"
 "eclipse-sw360/sw360" -> "eclipse-archived/antenna"
@@ -112,6 +133,11 @@ digraph G {
 "Vulnogram/Vulnogram" -> "RedHatProductSecurity/cvelib"
 "Vulnogram/Vulnogram" -> "CVEProject/cve-services"
 "Vulnogram/Vulnogram" -> "CERTCC/cveClient"
+"objectbox/objectbox-go" -> "mitchellh/golicense" ["e"=1]
+"OWASP/owasp.github.io" -> "OWASP/Software-Component-Verification-Standard" ["e"=1]
+"armijnhemel/binaryanalysis-ng" -> "Open-Source-Compliance/Sharing-creates-value" ["e"=1]
+"armijnhemel/binaryanalysis-ng" -> "maxhbr/LDBcollector" ["e"=1]
+"armijnhemel/binaryanalysis-ng" -> "Open-Source-Compliance/package-analysis" ["e"=1]
 "uptane/uptane-standard" -> "theupdateframework/taps"
 "licensee/licensed" -> "pivotal/LicenseFinder"
 "licensee/licensed" -> "licensee/licensee"
@@ -163,6 +189,8 @@ digraph G {
 "CVEProject/cvelist" -> "nixawk/labs" ["e"=1]
 "CVEProject/cvelist" -> "0xn0ne/weblogicScanner" ["e"=1]
 "CVEProject/cvelist" -> "baidu/openrasp" ["e"=1]
+"tektoncd/triggers" -> "tektoncd/chains" ["e"=1]
+"rakyll/autopprof" -> "mitchellh/golicense" ["e"=1]
 "CycloneDX/cyclonedx-python" -> "CycloneDX/cyclonedx-python-lib"
 "CycloneDX/cyclonedx-python" -> "CycloneDX/cyclonedx-node-module"
 "CycloneDX/cyclonedx-python" -> "CycloneDX/specification"
@@ -180,6 +208,7 @@ digraph G {
 "mitchellh/golicense" -> "uw-labs/lichen"
 "mitchellh/golicense" -> "rakyll/autopprof" ["e"=1]
 "mitchellh/golicense" -> "google/go-licenses"
+"OpenSCAP/openscap" -> "cve-search/cve-search" ["e"=1]
 "lestrrat-go/backoff" -> "soh335/shukujitsu"
 "lestrrat-go/backoff" -> "Songmu/gocredits"
 "goharbor/community" -> "goharbor/go-client"
@@ -191,6 +220,7 @@ digraph G {
 "CVEProject/cve-services" -> "CVEProject/cve-schema"
 "CVEProject/cve-services" -> "RedHatProductSecurity/cvelib"
 "CVEProject/cve-services" -> "Vulnogram/Vulnogram"
+"rust-secure-code/cargo-auditable" -> "CycloneDX/cyclonedx-rust-cargo" ["e"=1]
 "src-d/go-license-detector" -> "go-enry/go-license-detector"
 "src-d/go-license-detector" -> "boyter/lc"
 "theupdateframework/specification" -> "in-toto/ITE"
@@ -200,6 +230,7 @@ digraph G {
 "theupdateframework/specification" -> "sigstore/root-signing"
 "theupdateframework/specification" -> "theupdateframework/taps"
 "theupdateframework/specification" -> "uptane/uptane-standard"
+"parallaxsecond/parsec" -> "in-toto/in-toto" ["e"=1]
 "finos/OSLC-handbook" -> "Open-Source-Compliance/Sharing-creates-value"
 "CycloneDX/cyclonedx-dotnet" -> "CycloneDX/cyclonedx-node-module"
 "CycloneDX/cyclonedx-dotnet" -> "CycloneDX/cyclonedx-cli"
@@ -210,6 +241,8 @@ digraph G {
 "aquasecurity/harbor-scanner-trivy" -> "aquasecurity/trivy-db"
 "aquasecurity/harbor-scanner-trivy" -> "goharbor/harbor-operator"
 "aquasecurity/harbor-scanner-trivy" -> "aquasecurity/appshield"
+"sanbornm/go-selfupdate" -> "theupdateframework/go-tuf" ["e"=1]
+"palantir/policy-bot" -> "ossf/allstar" ["e"=1]
 "stevespringett/nist-data-mirror" -> "stevespringett/vulndb-data-mirror"
 "stevespringett/nist-data-mirror" -> "CycloneDX/cyclonedx-maven-plugin"
 "stevespringett/nist-data-mirror" -> "dependency-check/dependency-check-sonar-plugin" ["e"=1]
@@ -222,6 +255,9 @@ digraph G {
 "in-toto/demo" -> "in-toto/ITE"
 "pmckeown/dependency-track-maven-plugin" -> "logandavies181/tfd"
 "pmckeown/dependency-track-maven-plugin" -> "shreyasrama/cph"
+"hugovk/top-pypi-packages" -> "assuremoss/lastpymile" ["e"=1]
+"tektoncd/operator" -> "tektoncd/chains" ["e"=1]
+"juan131/dockerfile-best-practices" -> "vmware-labs/distribution-tooling-for-helm" ["e"=1]
 "jpeddicord/askalono" -> "boyter/lc"
 "aquasecurity/go-dep-parser" -> "aquasecurity/fanal"
 "aquasecurity/vuln-list-update" -> "aquasecurity/vuln-list"
@@ -258,6 +294,13 @@ digraph G {
 "owasp-dep-scan/dep-scan" -> "google/osv.dev"
 "owasp-dep-scan/dep-scan" -> "mrwadams/stride-gpt" ["e"=1]
 "owasp-dep-scan/dep-scan" -> "microsoft/sbom-tool"
+"anchore/syft" -> "DependencyTrack/dependency-track" ["e"=1]
+"anchore/syft" -> "microsoft/sbom-tool" ["e"=1]
+"anchore/grype" -> "DependencyTrack/dependency-track" ["e"=1]
+"go-git/go-billy" -> "spdx/tools-golang" ["e"=1]
+"github/codeql-action" -> "github/advisory-database" ["e"=1]
+"ShiftLeftSecurity/sast-scan" -> "owasp-dep-scan/dep-scan" ["e"=1]
+"ShiftLeftSecurity/sast-scan" -> "devops-kung-fu/bomber" ["e"=1]
 "CycloneDX/cdxgen" -> "CycloneDX/cyclonedx-cli"
 "CycloneDX/cdxgen" -> "owasp-dep-scan/dep-scan"
 "CycloneDX/cdxgen" -> "DependencyTrack/dependency-track"
@@ -273,6 +316,9 @@ digraph G {
 "CycloneDX/cdxgen" -> "CycloneDX/cyclonedx-python"
 "CycloneDX/cdxgen" -> "guacsec/guac"
 "CycloneDX/cdxgen" -> "openvex/spec"
+"regclient/regclient" -> "chainguard-dev/apko" ["e"=1]
+"microsoft/ApplicationInspector" -> "microsoft/sbom-tool" ["e"=1]
+"aquasecurity/trivy-action" -> "aquasecurity/trivy-db" ["e"=1]
 "aquasecurity/trivy-db" -> "aquasecurity/vuln-list-update"
 "aquasecurity/trivy-db" -> "aquasecurity/fanal"
 "aquasecurity/trivy-db" -> "aquasecurity/harbor-scanner-trivy"
@@ -288,6 +334,8 @@ digraph G {
 "google/go-licenses" -> "Songmu/gocredits"
 "google/go-licenses" -> "hashicorp/go-multierror" ["e"=1]
 "google/go-licenses" -> "ribice/glice" ["e"=1]
+"opencve/opencve" -> "cve-search/cve-search" ["e"=1]
+"tcnksm/ghr" -> "Songmu/goxz" ["e"=1]
 "CERTCC/SSVC" -> "theparanoids/PrioritizedRiskRemediation"
 "notaryproject/specifications" -> "notaryproject/notation"
 "notaryproject/specifications" -> "notaryproject/notation-go"
@@ -297,6 +345,7 @@ digraph G {
 "aboutcode-org/scancode.io" -> "aboutcode-org/vulnerablecode"
 "aboutcode-org/scancode.io" -> "aboutcode-org/univers"
 "aboutcode-org/scancode.io" -> "package-url/packageurl-python"
+"coveooss/json-schema-for-humans" -> "CVEProject/cve-schema" ["e"=1]
 "licensee/licensee" -> "licensee/licensed"
 "licensee/licensee" -> "jpeddicord/askalono"
 "licensee/licensee" -> "github/choosealicense.com" ["e"=1]
@@ -327,6 +376,7 @@ digraph G {
 "ossf/wg-best-practices-os-developers" -> "threatspec/threatspec" ["e"=1]
 "ossf/wg-best-practices-os-developers" -> "ossf/security-reviews"
 "ossf/wg-best-practices-os-developers" -> "CycloneDX/specification"
+"snyk/actions" -> "snyk/parlay" ["e"=1]
 "ossf/wg-securing-critical-projects" -> "ossf/wg-metrics-and-metadata"
 "ossf/wg-securing-critical-projects" -> "ossf/wg-security-tooling"
 "ossf/wg-securing-critical-projects" -> "ossf/wg-supply-chain-integrity"
@@ -336,6 +386,8 @@ digraph G {
 "ossf/wg-securing-critical-projects" -> "ossf/criticality_score"
 "ossf/wg-securing-critical-projects" -> "ossf/tac"
 "ossf/wg-securing-critical-projects" -> "ossf/oss-vulnerability-guide"
+"dependency-check/dependency-check-sonar-plugin" -> "stevespringett/nist-data-mirror" ["e"=1]
+"dependency-check/dependency-check-sonar-plugin" -> "DependencyTrack/dependency-track" ["e"=1]
 "sigstore/rekor" -> "sigstore/fulcio"
 "sigstore/rekor" -> "sigstore/sigstore"
 "sigstore/rekor" -> "tektoncd/chains"
@@ -353,6 +405,7 @@ digraph G {
 "sigstore/rekor" -> "in-toto/in-toto-golang"
 "go-enry/go-license-detector" -> "src-d/go-license-detector"
 "go-enry/go-license-detector" -> "google/licenseclassifier"
+"StyraInc/awesome-opa" -> "sse-secure-systems/connaisseur" ["e"=1]
 "OWASP/Software-Component-Verification-Standard" -> "CycloneDX/Sunshine"
 "CycloneDX/bom-examples" -> "spdx/spdx-examples"
 "CycloneDX/bom-examples" -> "CycloneDX/specification"
@@ -363,6 +416,7 @@ digraph G {
 "CycloneDX/bom-examples" -> "CycloneDX/cyclonedx-python-lib"
 "CycloneDX/bom-examples" -> "interlynk-io/sbomqs"
 "CycloneDX/bom-examples" -> "oasis-tcs/csaf"
+"Threagile/threagile" -> "aquasecurity/chain-bench" ["e"=1]
 "mwittig/npm-license-crawler" -> "davglass/license-checker"
 "sse-secure-systems/connaisseur" -> "IBM/portieris"
 "sse-secure-systems/connaisseur" -> "sigstore/policy-controller"
@@ -374,6 +428,7 @@ digraph G {
 "sse-secure-systems/connaisseur" -> "ratify-project/ratify"
 "lyvd/bandit4mal" -> "githubnext/amalfi-artifact"
 "lyvd/bandit4mal" -> "assuremoss/lastpymile"
+"plexsystems/sinker" -> "bitnami/charts-syncer" ["e"=1]
 "fossology/Nirjas" -> "hastagAB/GSoC-19"
 "fossology/Nirjas" -> "fossology/FOSSology.REST.shell"
 "notaryproject/notation" -> "notaryproject/specifications"
@@ -507,6 +562,12 @@ digraph G {
 "secure-systems-lab/dsse" -> "in-toto/archivista"
 "spdx/spdx-examples" -> "spdx/spdx-3-model"
 "CycloneDX/cyclonedx-php-composer" -> "CycloneDX/cyclonedx-php-library"
+"ossf/scorecard" -> "ossf/allstar" ["e"=1]
+"ossf/scorecard" -> "slsa-framework/slsa" ["e"=1]
+"ossf/scorecard" -> "guacsec/guac" ["e"=1]
+"ossf/scorecard" -> "ossf/wg-best-practices-os-developers" ["e"=1]
+"ossf/scorecard" -> "google/osv.dev" ["e"=1]
+"ossf/scorecard" -> "DependencyTrack/dependency-track" ["e"=1]
 "CVEProject/cvelist" -> "trickest/cve" ["e"=1]
 "CVEProject/cvelist" -> "CVEProject/cve-schema"
 "CVEProject/cvelist" -> "CVEProject/cvelistV5"
@@ -519,6 +580,7 @@ digraph G {
 "CVEProject/cvelist" -> "KeenSecurityLab/BinAbsInspector" ["e"=1]
 "CVEProject/cvelist" -> "zhzyker/exphub" ["e"=1]
 "CVEProject/cvelist" -> "BeichenDream/Godzilla" ["e"=1]
+"DefectDojo/django-DefectDojo" -> "DependencyTrack/dependency-track" ["e"=1]
 "ossf/criticality_score" -> "ossf/wg-securing-critical-projects"
 "ossf/criticality_score" -> "rocky-linux/infrastructure" ["e"=1]
 "ossf/criticality_score" -> "ossf/scorecard" ["e"=1]
@@ -553,6 +615,7 @@ digraph G {
 "awesomeSBOM/awesome-sbom" -> "in-toto/attestation"
 "awesomeSBOM/awesome-sbom" -> "bureado/awesome-software-supply-chain-security"
 "awesomeSBOM/awesome-sbom" -> "CycloneDX/bom-examples"
+"praetorian-inc/gokart" -> "ossf/allstar" ["e"=1]
 "google/osv.dev" -> "google/osv-scanner" ["e"=1]
 "google/osv.dev" -> "github/advisory-database"
 "google/osv.dev" -> "guacsec/guac"
@@ -592,8 +655,20 @@ digraph G {
 "aboutcode-org/scancode-toolkit" -> "licensee/licensee"
 "aboutcode-org/scancode-toolkit" -> "spdx/license-list-data"
 "aboutcode-org/scancode-toolkit" -> "armijnhemel/binaryanalysis-ng" ["e"=1]
+"sigstore/cosign" -> "sigstore/rekor" ["e"=1]
+"sigstore/cosign" -> "sigstore/fulcio" ["e"=1]
+"sigstore/cosign" -> "sigstore/gitsign" ["e"=1]
+"sigstore/cosign" -> "chainguard-dev/apko" ["e"=1]
+"sigstore/cosign" -> "sigstore/sigstore" ["e"=1]
+"sigstore/cosign" -> "slsa-framework/slsa" ["e"=1]
+"SMAT-Lab/Scalpel" -> "osssanitizer/maloss" ["e"=1]
 "aquasecurity/defsec" -> "aquasecurity/trivy-checks"
 "aquasecurity/defsec" -> "aquasecurity/trivy-db"
+"notaryproject/notary" -> "theupdateframework/python-tuf" ["e"=1]
+"notaryproject/notary" -> "in-toto/in-toto" ["e"=1]
+"revelc/formatter-maven-plugin" -> "CycloneDX/cyclonedx-maven-plugin" ["e"=1]
+"zarf-dev/zarf" -> "guacsec/guac" ["e"=1]
+"zarf-dev/zarf" -> "chainguard-dev/apko" ["e"=1]
 "RedHatProductSecurity/cvelib" -> "CERTCC/VINCE"
 "RedHatProductSecurity/cvelib" -> "CERTCC/cveClient"
 "RedHatProductSecurity/cvelib" -> "RedHatProductSecurity/component-registry"
@@ -612,6 +687,7 @@ digraph G {
 "ossf/package-analysis" -> "ossf/criticality_score"
 "ossf/package-analysis" -> "ossf/wg-securing-critical-projects"
 "ossf/package-analysis" -> "SAP-samples/cross-language-detection-artifacts"
+"vitsalis/PyCG" -> "osssanitizer/maloss" ["e"=1]
 "CycloneDX/cyclonedx-cli" -> "CycloneDX/cyclonedx-maven-plugin"
 "CycloneDX/cyclonedx-cli" -> "CycloneDX/cdxgen"
 "CycloneDX/cyclonedx-cli" -> "CycloneDX/transparency-exchange-api"
@@ -627,6 +703,8 @@ digraph G {
 "CycloneDX/cyclonedx-cli" -> "interlynk-io/sbomqs"
 "CycloneDX/cyclonedx-cli" -> "openvex/spec"
 "CycloneDX/cyclonedx-cli" -> "awesomeSBOM/awesome-sbom"
+"numfocus/gsoc" -> "aboutcode-org/aboutcode" ["e"=1]
+"lunasec-io/lunasec" -> "guacsec/guac" ["e"=1]
 "fossology/FOSSologyUI" -> "fossology/FOSSologyML" ["e"=1]
 "fossology/FOSSologyUI" -> "fossology/LicenseDb"
 "CycloneDX/cyclonedx-go" -> "CycloneDX/cyclonedx-gomod"
@@ -660,6 +738,10 @@ digraph G {
 "in-toto/attestation" -> "in-toto/demo"
 "in-toto/attestation" -> "sigstore/rekor"
 "in-toto/attestation" -> "gittuf/gittuf"
+"getmeli/meli" -> "ossf/criticality_score" ["e"=1]
+"coreinfrastructure/best-practices-badge" -> "ossf/criticality_score" ["e"=1]
+"coreinfrastructure/best-practices-badge" -> "slsa-framework/slsa" ["e"=1]
+"coreinfrastructure/best-practices-badge" -> "ossf/wg-best-practices-os-developers" ["e"=1]
 "slsa-framework/slsa" -> "guacsec/guac"
 "slsa-framework/slsa" -> "in-toto/in-toto"
 "slsa-framework/slsa" -> "slsa-framework/slsa-github-generator"
@@ -675,6 +757,7 @@ digraph G {
 "slsa-framework/slsa" -> "ossf/allstar"
 "slsa-framework/slsa" -> "anchore/syft" ["e"=1]
 "slsa-framework/slsa" -> "google/osv.dev"
+"docker/metadata-action" -> "sigstore/cosign-installer" ["e"=1]
 "sigstore/fulcio" -> "sigstore/rekor"
 "sigstore/fulcio" -> "sigstore/sigstore"
 "sigstore/fulcio" -> "sigstore/cosign" ["e"=1]
@@ -708,9 +791,12 @@ digraph G {
 "CloudSecurityAlliance/gsd-database" -> "aquasecurity/vuln-list"
 "CloudSecurityAlliance/gsd-database" -> "CVEProject/cve-schema"
 "CloudSecurityAlliance/gsd-database" -> "google/osv.dev"
+"curiefense/curiefense" -> "in-toto/in-toto" ["e"=1]
+"CISecurity/OVALRepo" -> "Sep0lkit/oval-for-el" ["e"=1]
 "neilkuan/ecs-bottlerocket-capacityProvider-sample" -> "bottlerocket-os/twoliter"
 "ossf/osv-schema" -> "scanoss/purl2cpe"
 "cloudsecurityalliance/gsd-project" -> "CloudSecurityAlliance/gsd-tools"
+"camtheperson/get-my-ps5" -> "ossf/criticality_score" ["e"=1]
 "oras-project/oras-go" -> "oras-project/oras" ["e"=1]
 "oras-project/oras-go" -> "notaryproject/notation-go"
 "oras-project/oras-go" -> "notaryproject/notation"
@@ -731,11 +817,14 @@ digraph G {
 "sigstore/sigstore" -> "sigstore/cosign-gatekeeper-provider"
 "sigstore/sigstore" -> "chainguard-dev/apko"
 "sigstore/sigstore" -> "notaryproject/notation"
+"trailofbits/fickling" -> "DataDog/malicious-software-packages-dataset" ["e"=1]
 "owenrumney/squealer" -> "owenrumney/go-github-pr-commenter"
+"containers/krunvm" -> "sigstore/gitsign" ["e"=1]
 "spdx/tools" -> "DoSOCSv2/DoSOCSv2"
 "spdx/tools" -> "spdx/spdx-online-tools"
 "spdx/tools" -> "spdx/tools-python"
 "spdx/tools" -> "Open-Source-Compliance/Sharing-creates-value"
+"kpcyrd/i-probably-didnt-backdoor-this" -> "httplock/httplock" ["e"=1]
 "sigstore/root-signing" -> "theupdateframework/tuf-on-ci"
 "opensbom-generator/spdx-sbom-generator" -> "kubernetes-sigs/bom"
 "opensbom-generator/spdx-sbom-generator" -> "awesomeSBOM/awesome-sbom"
@@ -760,6 +849,7 @@ digraph G {
 "pypa/advisory-database" -> "ossf/osv-schema"
 "veraison/go-cose" -> "notaryproject/notation-action"
 "CycloneDX/cyclonedx-gomod" -> "CycloneDX/cyclonedx-go"
+"rocky-linux/infrastructure" -> "ossf/criticality_score" ["e"=1]
 "ratify-project/ratify" -> "notaryproject/notation"
 "ratify-project/ratify" -> "notaryproject/notation-go"
 "ratify-project/ratify" -> "in-toto/archivista"
@@ -772,6 +862,7 @@ digraph G {
 "aboutcode-org/univers" -> "aboutcode-org/purldb"
 "aboutcode-org/univers" -> "aboutcode-org/dejacode"
 "CloudSecurityAlliance/gsd-tools" -> "cloudsecurityalliance/gsd-project"
+"typesense/showcase-recipe-search" -> "ossf/criticality_score" ["e"=1]
 "secvisogram/secvisogram" -> "gocsaf/csaf"
 "bottlerocket-os/bottlerocket-ecs-updater" -> "bottlerocket-os/bottlerocket-control-container"
 "bottlerocket-os/bottlerocket-ecs-updater" -> "bottlerocket-os/twoliter"
@@ -840,7 +931,22 @@ digraph G {
 "github/advisory-database" -> "wh1t3p1g/tabby" ["e"=1]
 "github/advisory-database" -> "guacsec/guac"
 "github/advisory-database" -> "ossf/scorecard" ["e"=1]
+"ktock/buildg" -> "sigstore/gitsign" ["e"=1]
 "franciscop/legally" -> "eladnava/tldrlegal"
+"rung/threat-matrix-cicd" -> "chughes757/SecureSoftwareSupplyChain" ["e"=1]
+"rung/threat-matrix-cicd" -> "aquasecurity/chain-bench" ["e"=1]
+"rung/threat-matrix-cicd" -> "awesomeSBOM/awesome-sbom" ["e"=1]
+"rung/threat-matrix-cicd" -> "trailofbits/it-depends" ["e"=1]
+"pypa/pip-audit" -> "pypa/advisory-database" ["e"=1]
+"pypa/pip-audit" -> "sigstore/sigstore-python" ["e"=1]
+"pypa/pip-audit" -> "trailofbits/it-depends" ["e"=1]
+"pypa/pip-audit" -> "raimon49/pip-licenses" ["e"=1]
+"step-security/harden-runner" -> "sigstore/gitsign" ["e"=1]
+"step-security/harden-runner" -> "slsa-framework/slsa-github-generator" ["e"=1]
+"step-security/harden-runner" -> "octo-sts/app" ["e"=1]
+"step-security/harden-runner" -> "openvex/spec" ["e"=1]
+"step-security/harden-runner" -> "DataDog/guarddog" ["e"=1]
+"step-security/harden-runner" -> "in-toto/witness" ["e"=1]
 "chainguard-dev/melange" -> "chainguard-dev/apko"
 "chainguard-dev/melange" -> "wolfi-dev/os"
 "chainguard-dev/melange" -> "chainguard-images/images"
@@ -938,6 +1044,8 @@ digraph G {
 "sigstore/gitsign" -> "chainguard-images/images"
 "sigstore/gitsign" -> "sigstore/policy-controller"
 "sigstore/gitsign" -> "step-security/harden-runner" ["e"=1]
+"OWASP/www-project-kubernetes-top-ten" -> "aquasecurity/chain-bench" ["e"=1]
+"OWASP/www-project-kubernetes-top-ten" -> "devops-kung-fu/bomber" ["e"=1]
 "chainguard-dev/apko" -> "chainguard-dev/melange"
 "chainguard-dev/apko" -> "wolfi-dev/os"
 "chainguard-dev/apko" -> "chainguard-images/images"
@@ -963,6 +1071,8 @@ digraph G {
 "buildsec/frsca" -> "in-toto/witness"
 "buildsec/frsca" -> "AevaOnline/supply-chain-synthesis"
 "buildsec/frsca" -> "tektoncd/chains"
+"dependency-check/dependency-check-gradle" -> "CycloneDX/cyclonedx-gradle-plugin" ["e"=1]
+"Ostorlab/KEV" -> "cisagov/vulnrichment" ["e"=1]
 "in-toto/witness" -> "in-toto/archivista"
 "in-toto/witness" -> "buildsec/frsca"
 "in-toto/witness" -> "in-toto/go-witness"
@@ -978,6 +1088,8 @@ digraph G {
 "in-toto/witness" -> "guacsec/guac"
 "in-toto/witness" -> "CycloneDX/transparency-exchange-api"
 "in-toto/witness" -> "chainloop-dev/chainloop"
+"awslabs/automated-security-helper" -> "devops-kung-fu/bomber" ["e"=1]
+"awslabs/automated-security-helper" -> "eBay/sbom-scorecard" ["e"=1]
 "nyph-infosec/daggerboard" -> "openvex/spec"
 "microsoft/component-detection" -> "microsoft/sbom-tool"
 "microsoft/component-detection" -> "interlynk-io/sbomqs"
@@ -1010,6 +1122,7 @@ digraph G {
 "Open-Source-Compliance/Sharing-creates-value" -> "eclipse-sw360/sw360"
 "Open-Source-Compliance/Sharing-creates-value" -> "spdx/spdx-license-diff"
 "Open-Source-Compliance/Sharing-creates-value" -> "Open-Source-Compliance/package-analysis"
+"SummitRoute/csp_security_mistakes" -> "chainguard-dev/ssc-reading-list" ["e"=1]
 "chainguard-dev/ssc-reading-list" -> "sigstore/sigstore-js"
 "chainguard-dev/ssc-reading-list" -> "sigstore/gitsign"
 "chainguard-dev/ssc-reading-list" -> "sigstore/sigstore"
@@ -1071,6 +1184,9 @@ digraph G {
 "bottlerocket-os/hotdog" -> "bottlerocket-os/bottlerocket-test-system"
 "bottlerocket-os/hotdog" -> "bottlerocket-os/bottlerocket-ecs-updater"
 "RedHatProductSecurity/osidb" -> "RedHatProductSecurity/component-registry"
+"aserto-dev/topaz" -> "guacsec/guac" ["e"=1]
+"Bearer/bearer" -> "owasp-dep-scan/dep-scan" ["e"=1]
+"Bearer/bearer" -> "DataDog/guarddog" ["e"=1]
 "eBay/sbom-scorecard" -> "interlynk-io/sbomqs"
 "eBay/sbom-scorecard" -> "spdx/ntia-conformance-checker"
 "eBay/sbom-scorecard" -> "snyk/parlay"
@@ -1086,6 +1202,11 @@ digraph G {
 "eBay/sbom-scorecard" -> "ckotzbauer/vulnerability-operator" ["e"=1]
 "eBay/sbom-scorecard" -> "CycloneDX/cyclonedx-bom-repo-server"
 "eBay/sbom-scorecard" -> "openvex/vexctl"
+"dependency-check/DependencyCheck" -> "DependencyTrack/dependency-track" ["e"=1]
+"aurae-runtime/aurae" -> "chainguard-dev/apko" ["e"=1]
+"project-copacetic/copacetic" -> "ratify-project/ratify" ["e"=1]
+"project-copacetic/copacetic" -> "chainguard-dev/apko" ["e"=1]
+"project-copacetic/copacetic" -> "notaryproject/notation" ["e"=1]
 "guacsec/guac" -> "slsa-framework/slsa"
 "guacsec/guac" -> "in-toto/attestation"
 "guacsec/guac" -> "buildsec/frsca"
@@ -1101,6 +1222,8 @@ digraph G {
 "guacsec/guac" -> "sigstore/cosign" ["e"=1]
 "guacsec/guac" -> "sigstore/rekor"
 "guacsec/guac" -> "google/osv.dev"
+"google/osv-scanner" -> "google/osv.dev" ["e"=1]
+"openappsec/openappsec" -> "owasp-dep-scan/dep-scan" ["e"=1]
 "spdx/license-list-data" -> "spdx/license-list-XML"
 "spdx/license-list-data" -> "spdx/tools"
 "spdx/license-list-data" -> "aboutcode-org/license-expression"
@@ -1134,11 +1257,21 @@ digraph G {
 "SBOMit/specification" -> "in-toto/scai-demos"
 "SBOMit/specification" -> "in-toto/ITE"
 "SBOMit/specification" -> "bomctl/bomctl"
+"sourcegraph/awesome-code-ai" -> "stacklok/codegate" ["e"=1]
 "spdx/license-list-XML" -> "spdx/license-list-data"
 "spdx/license-list-XML" -> "spdx/spdx-spec"
 "spdx/license-list-XML" -> "spdx/tools-python"
 "spdx/license-list-XML" -> "spdx/tools"
 "spdx/license-list-XML" -> "spdx/license-list"
+"google/trillian" -> "sigstore/rekor" ["e"=1]
+"defenseunicorns/lula" -> "in-toto/witness" ["e"=1]
+"Legit-Labs/legitify" -> "aquasecurity/chain-bench" ["e"=1]
+"Legit-Labs/legitify" -> "scribe-public/gitgat" ["e"=1]
+"Legit-Labs/legitify" -> "safedep/vet" ["e"=1]
+"Legit-Labs/legitify" -> "ossf/allstar" ["e"=1]
+"iximiuz/cdebug" -> "chainguard-dev/apko" ["e"=1]
+"chainguard-dev/osquery-defense-kit" -> "chainguard-dev/malcontent" ["e"=1]
+"vmware-labs/wasm-workers-server" -> "vmware-labs/distribution-tooling-for-helm" ["e"=1]
 "gittuf/gittuf" -> "in-toto/attestation"
 "gittuf/gittuf" -> "sigstore/gitsign"
 "gittuf/gittuf" -> "in-toto/in-toto-golang"
@@ -1151,6 +1284,8 @@ digraph G {
 "gittuf/gittuf" -> "in-toto/scai-demos"
 "gittuf/gittuf" -> "theupdateframework/tuf-on-ci"
 "gittuf/gittuf" -> "buildsec/frsca"
+"StyraInc/regal" -> "openvex/vexctl" ["e"=1]
+"Digital-Sapphire/PyUpdater" -> "dennisvang/tufup" ["e"=1]
 "devops-kung-fu/bomber" -> "eBay/sbom-scorecard"
 "devops-kung-fu/bomber" -> "interlynk-io/sbomqs"
 "devops-kung-fu/bomber" -> "CycloneDX/sbom-utility"
@@ -1247,6 +1382,7 @@ digraph G {
 "CycloneDX/sbom-utility" -> "snyk/parlay"
 "CycloneDX/sbom-utility" -> "interlynk-io/sbomasm"
 "CycloneDX/sbom-utility" -> "eBay/sbom-scorecard"
+"cs-au-dk/jelly" -> "osssanitizer/maloss" ["e"=1]
 "CycloneDX/cyclonedx-node-npm" -> "CycloneDX/cyclonedx-javascript-library"
 "scanoss/purl2cpe" -> "openvex/spec"
 "scanoss/purl2cpe" -> "anchore/nvd-data-overrides"
@@ -1276,7 +1412,15 @@ digraph G {
 "DataDog/malicious-software-packages-dataset" -> "h4sh5/pypi-auto-scanner"
 "DataDog/malicious-software-packages-dataset" -> "CGCL-codes/MalTracker"
 "DataDog/malicious-software-packages-dataset" -> "SAP-samples/cross-language-detection-artifacts"
+"google/capslock" -> "eBay/sbom-scorecard" ["e"=1]
+"google/capslock" -> "chainguard-dev/malcontent" ["e"=1]
+"google/capslock" -> "gittuf/gittuf" ["e"=1]
+"google/capslock" -> "edera-dev/krata" ["e"=1]
+"google/capslock" -> "snyk/parlay" ["e"=1]
+"pipeless-ai/pipeless" -> "vmware-labs/distribution-tooling-for-helm" ["e"=1]
+"pipeless-ai/pipeless" -> "chainloop-dev/chainloop" ["e"=1]
 "aquasecurity/trivy-checks" -> "aquasecurity/trivy-aws"
+"projectdiscovery/cvemap" -> "TURROKS/CVE_Prioritizer" ["e"=1]
 "aboutcode-org/aboutcode" -> "aboutcode-org/scancode-workbench"
 "aboutcode-org/aboutcode" -> "aboutcode-org/scancode.io"
 "aboutcode-org/aboutcode" -> "aboutcode-org/vulnerablecode"
@@ -1314,9 +1458,12 @@ digraph G {
 "mindersec/minder" -> "stacklok/toolhive"
 "mindersec/minder" -> "stacklok/codegate"
 "mindersec/minder" -> "sigstore/model-transparency"
+"DataDog/KubeHound" -> "DataDog/guarddog" ["e"=1]
 "avilum/llama-saas" -> "Deci-AI/infery-examples"
 "avilum/llama-saas" -> "avilum/yalla"
 "avilum/llama-saas" -> "avilum/secimport"
+"microsoft/DevSkim" -> "microsoft/OSSGadget" ["e"=1]
+"microsoft/DevSkim" -> "devops-kung-fu/bomber" ["e"=1]
 "snyk/parlay" -> "eBay/sbom-scorecard"
 "snyk/parlay" -> "interlynk-io/sbomasm"
 "snyk/parlay" -> "openvex/vexctl"
@@ -1351,6 +1498,8 @@ digraph G {
 "openpubkey/openpubkey" -> "bastionzero/zli"
 "openpubkey/openpubkey" -> "sigstore/gitsign"
 "openpubkey/openpubkey" -> "sigstore/sigstore-go"
+"malvuln/RansomLord" -> "owasp-dep-scan/blint" ["e"=1]
+"malvuln/RansomLord" -> "Permiso-io-tools/YetiHunter" ["e"=1]
 "protobom/protobom" -> "bomctl/bomctl"
 "protobom/protobom" -> "eBay/sbom-scorecard"
 "protobom/protobom" -> "protobom/sbom-convert"
@@ -1366,6 +1515,7 @@ digraph G {
 "protobom/protobom" -> "openvex/vexctl"
 "protobom/protobom" -> "interlynk-io/sbomqs"
 "protobom/protobom" -> "guacsec/guac"
+"uptane/obsolete-reference-implementation" -> "uptane/uptane-standard" ["e"=1]
 "sigstore/model-transparency" -> "SBOMit/specification"
 "aboutcode-org/license-expression" -> "aboutcode-org/scancode-licensedb"
 "vmware-labs/distribution-tooling-for-helm" -> "vmware-tanzu/asset-relocation-tool-for-kubernetes"
@@ -1451,21 +1601,29 @@ digraph G {
 "cisagov/vulnrichment" -> "ossf/package-analysis"
 "cisagov/vulnrichment" -> "cisagov/LME" ["e"=1]
 "cisagov/vulnrichment" -> "CycloneDX/specification"
+"xaitax/SploitScan" -> "TURROKS/CVE_Prioritizer" ["e"=1]
+"securitytemplates/sectemplates" -> "t0sche/cvss-bt" ["e"=1]
 "oasis-tcs/csaf" -> "cisagov/CSAF"
 "oasis-tcs/csaf" -> "BSI-Bund/secvisogram"
 "oasis-tcs/csaf" -> "openvex/spec"
 "oasis-tcs/csaf" -> "CycloneDX/transparency-exchange-api"
 "oasis-tcs/csaf" -> "gocsaf/csaf"
+"justakazh/sicat" -> "TURROKS/CVE_Prioritizer" ["e"=1]
 "aquasecurity/postee" -> "aquasecurity/appshield"
 "aquasecurity/postee" -> "aquasecurity/terraform-provider-aquasec"
 "aquasecurity/postee" -> "aquasecurity/go-git-pr-commenter"
 "aquasecurity/postee" -> "aquasecurity/defsec"
+"github/gh-copilot" -> "advanced-security/gh-sbom" ["e"=1]
+"google/osv-scalibr" -> "ossf/malicious-packages" ["e"=1]
+"prompt-security/ps-fuzz" -> "owasp-dep-scan/blint" ["e"=1]
 "Permiso-io-tools/CloudGrappler" -> "Permiso-io-tools/CloudConsoleCartographer"
 "Permiso-io-tools/CloudGrappler" -> "cado-security/cloudgrep"
 "Permiso-io-tools/CloudGrappler" -> "Permiso-io-tools/YetiHunter"
 "Permiso-io-tools/CloudGrappler" -> "TURROKS/CVE_Prioritizer"
 "t0sche/cvss-bt" -> "theparanoids/PrioritizedRiskRemediation"
 "t0sche/cvss-bt" -> "TURROKS/CVE_Prioritizer"
+"actions/attest-build-provenance" -> "in-toto/attestation" ["e"=1]
+"secengjeff/awskillswitch" -> "Permiso-io-tools/CloudGrappler" ["e"=1]
 "octo-sts/app" -> "actions/publish-immutable-action"
 "octo-sts/app" -> "stacklok/frizbee"
 "octo-sts/app" -> "chainguard-dev/ghscan"
@@ -1491,9 +1649,15 @@ digraph G {
 "bomctl/bomctl" -> "SBOMit/specification"
 "bomctl/bomctl" -> "protobom/protobom"
 "kusaridev/skootrs" -> "sozercan/guac-ai-mole"
+"zizmorcore/zizmor" -> "sigstore/gitsign" ["e"=1]
+"rustsec/advisory-db" -> "pypa/advisory-database" ["e"=1]
+"mike-engel/jwt-cli" -> "sigstore/gitsign" ["e"=1]
+"secureCodeBox/secureCodeBox" -> "t0sche/cvss-bt" ["e"=1]
+"arminc/clair-scanner" -> "grafeas/kritis" ["e"=1]
 "google/licenseclassifier" -> "go-enry/go-license-detector"
 "google/licenseclassifier" -> "google/licensecheck"
 "google/licenseclassifier" -> "google/go-licenses"
+"StacklokLabs/promptwright" -> "StacklokLabs/mockllm" ["e"=1]
 "stacklok/codegate" -> "mindersec/minder"
 "stacklok/codegate" -> "ragpi/ragpi"
 "stacklok/codegate" -> "stacklok/toolhive"
@@ -1506,6 +1670,12 @@ digraph G {
 "avilum/yalla" -> "avilum/llama-saas"
 "avilum/yalla" -> "Deci-AI/infery-examples"
 "bottlerocket-os/bottlerocket-core-kit" -> "bottlerocket-os/twoliter"
+"grafeas/grafeas" -> "grafeas/kritis" ["e"=1]
+"grafeas/grafeas" -> "in-toto/in-toto" ["e"=1]
+"grafeas/grafeas" -> "sigstore/rekor" ["e"=1]
+"grafeas/grafeas" -> "slsa-framework/slsa" ["e"=1]
+"grafeas/grafeas" -> "guacsec/guac" ["e"=1]
+"openpubkey/opkssh" -> "openpubkey/openpubkey" ["e"=1]
 "CycloneDX/cyclonedx-maven-plugin" -> "CycloneDX/cyclonedx-core-java"
 "CycloneDX/cyclonedx-maven-plugin" -> "CycloneDX/cyclonedx-cli"
 "CycloneDX/cyclonedx-maven-plugin" -> "pmckeown/dependency-track-maven-plugin"
@@ -1538,6 +1708,11 @@ digraph G {
 "aboutcode-org/vulnerablecode" -> "SAP/project-kb" ["e"=1]
 "stacklok/toolhive" -> "mindersec/minder"
 "stacklok/toolhive" -> "StacklokLabs/mkp"
+"spiffe/spiffe" -> "theupdateframework/python-tuf" ["e"=1]
+"spiffe/spiffe" -> "in-toto/in-toto" ["e"=1]
+"opengrep/opengrep" -> "owasp-dep-scan/dep-scan" ["e"=1]
+"opengrep/opengrep" -> "ossf/package-analysis" ["e"=1]
+"opengrep/opengrep" -> "guacsec/guac" ["e"=1]
 "spdx/spdx-spec" -> "spdx/tools-python"
 "spdx/spdx-spec" -> "spdx/tools-golang"
 "spdx/spdx-spec" -> "CycloneDX/specification"
@@ -1582,18 +1757,30 @@ digraph G {
 "aquasecurity/vuln-list-update" ["l"="8.463,-11.356"]
 "aquasecurity/trivy-docker-extension" ["l"="8.566,-11.41"]
 "Moniseeta/boltwiz" ["l"="8.531,-11.352"]
+"inconshreveable/go-update" ["l"="3.693,-8.408", "c"=0]
+"theupdateframework/go-tuf" ["l"="8.069,-11.52"]
+"getporter/porter" ["l"="7.869,-9.083", "c"=14]
+"grafeas/kritis" ["l"="7.913,-11.455"]
+"in-toto/in-toto" ["l"="8.021,-11.442"]
+"github/choosealicense.com" ["l"="8.772,-44.831", "c"=828]
+"licensee/licensee" ["l"="8.238,-11.156"]
+"spdx/license-list-XML" ["l"="8.192,-11.149"]
+"endoflife-date/endoflife.date" ["l"="7.832,-8.774", "c"=14]
+"guacsec/guac" ["l"="8.073,-11.345"]
+"package-url/purl-spec" ["l"="8.128,-11.291"]
+"intel/cve-bin-tool" ["l"="-41.48,-37.36", "c"=610]
+"cve-search/cve-search" ["l"="8.348,-11.517"]
+"google/osv.dev" ["l"="8.154,-11.352"]
+"aboutcode-org/scancode-toolkit" ["l"="8.216,-11.21"]
 "tern-tools/tern" ["l"="8.148,-11.265"]
 "oss-review-toolkit/ort" ["l"="8.16,-11.234"]
 "opensbom-generator/spdx-sbom-generator" ["l"="8.102,-11.281"]
-"aboutcode-org/scancode-toolkit" ["l"="8.216,-11.21"]
 "eBay/sbom-scorecard" ["l"="8.076,-11.307"]
 "kubernetes-sigs/bom" ["l"="8.045,-11.373"]
-"guacsec/guac" ["l"="8.073,-11.345"]
-"package-url/purl-spec" ["l"="8.128,-11.291"]
 "Open-Source-Compliance/Sharing-creates-value" ["l"="8.175,-11.156"]
 "microsoft/component-detection" ["l"="8.096,-11.264"]
 "openvex/spec" ["l"="8.072,-11.325"]
-"anchore/syft" ["l"="7.682,-8.67"]
+"anchore/syft" ["l"="7.682,-8.67", "c"=14]
 "awesomeSBOM/awesome-sbom" ["l"="8.062,-11.303"]
 "fossology/fossology" ["l"="8.201,-11.175"]
 "microsoft/sbom-tool" ["l"="8.12,-11.261"]
@@ -1601,21 +1788,28 @@ digraph G {
 "CycloneDX/cdxgen" ["l"="8.087,-11.245"]
 "DependencyTrack/dependency-track" ["l"="8.119,-11.202"]
 "eclipse-sw360/sw360" ["l"="8.172,-11.139"]
-"ossf/scorecard" ["l"="7.609,-8.652"]
+"ossf/scorecard" ["l"="7.609,-8.652", "c"=14]
 "spdx/spdx-spec" ["l"="8.144,-11.217"]
 "devops-kung-fu/bomber" ["l"="8.09,-11.299"]
+"oras-project/oras" ["l"="7.938,-9.055", "c"=14]
+"oras-project/oras-go" ["l"="7.825,-11.546"]
+"notaryproject/notation" ["l"="7.831,-11.52"]
+"project-zot/zot" ["l"="7.835,-9.099", "c"=14]
+"sigstore/gitsign" ["l"="7.987,-11.486"]
+"cncf/tag-security" ["l"="7.526,-8.753", "c"=14]
+"vmware-archive/kube-prod-runtime" ["l"="63.109,-1.244", "c"=175]
+"chainloop-dev/chainloop" ["l"="7.968,-11.4"]
 "pivotal/LicenseFinder" ["l"="8.269,-11.185"]
 "licensee/licensed" ["l"="8.283,-11.151"]
 "davglass/license-checker" ["l"="8.391,-11.122"]
-"licensee/licensee" ["l"="8.238,-11.156"]
-"ankane/groupdate" ["l"="4.561,-37.486"]
-"rubysec/bundler-audit" ["l"="4.378,-37.452"]
-"flippercloud/flipper" ["l"="4.426,-37.546"]
-"test-prof/test-prof" ["l"="4.355,-37.591"]
-"SamSaffron/memory_profiler" ["l"="4.391,-37.487"]
-"roidrage/lograge" ["l"="4.522,-37.451"]
-"zombocom/derailed_benchmarks" ["l"="4.41,-37.501"]
-"collectiveidea/interactor" ["l"="4.464,-37.503"]
+"ankane/groupdate" ["l"="4.561,-37.486", "c"=1]
+"rubysec/bundler-audit" ["l"="4.378,-37.452", "c"=1]
+"flippercloud/flipper" ["l"="4.426,-37.546", "c"=1]
+"test-prof/test-prof" ["l"="4.355,-37.591", "c"=1]
+"SamSaffron/memory_profiler" ["l"="4.391,-37.487", "c"=1]
+"roidrage/lograge" ["l"="4.522,-37.451", "c"=1]
+"zombocom/derailed_benchmarks" ["l"="4.41,-37.501", "c"=1]
+"collectiveidea/interactor" ["l"="4.464,-37.503", "c"=1]
 "CycloneDX/specification" ["l"="8.072,-11.257"]
 "CycloneDX/bom-examples" ["l"="8.07,-11.268"]
 "package-url/packageurl-python" ["l"="8.191,-11.252"]
@@ -1626,12 +1820,12 @@ digraph G {
 "scanoss/purl2cpe" ["l"="8.107,-11.322"]
 "oasis-tcs/csaf" ["l"="8.124,-11.318"]
 "microsoft/OSSGadget" ["l"="7.961,-11.332"]
-"dependency-check/DependencyCheck" ["l"="-48.13,-30.311"]
-"DefectDojo/django-DefectDojo" ["l"="-48.056,-30.375"]
+"dependency-check/DependencyCheck" ["l"="-48.13,-30.311", "c"=11]
+"DefectDojo/django-DefectDojo" ["l"="-48.056,-30.375", "c"=11]
 "DependencyTrack/frontend" ["l"="8.058,-11.174"]
-"anchore/grype" ["l"="7.665,-8.635"]
+"anchore/grype" ["l"="7.665,-8.635", "c"=14]
 "CycloneDX/cyclonedx-maven-plugin" ["l"="8.042,-11.185"]
-"aquasecurity/trivy" ["l"="7.825,-8.559"]
+"aquasecurity/trivy" ["l"="7.825,-8.559", "c"=14]
 "owasp-dep-scan/dep-scan" ["l"="8.089,-11.215"]
 "spdx/tools-golang" ["l"="8.136,-11.246"]
 "fossology/FOSSologyUI" ["l"="8.218,-11.106"]
@@ -1643,9 +1837,11 @@ digraph G {
 "aboutcode-org/scancode-workbench" ["l"="8.239,-11.231"]
 "sw360/sw360portal" ["l"="8.202,-11.113"]
 "CycloneDX/cyclonedx-core-java" ["l"="8.031,-11.154"]
+"toolswatch/vFeed" ["l"="-43.125,-31.967", "c"=143]
+"NorthernSec/CVE-Scan" ["l"="8.394,-11.546"]
 "IBM/portieris" ["l"="7.875,-11.473"]
 "sse-secure-systems/connaisseur" ["l"="7.919,-11.482"]
-"grafeas/kritis" ["l"="7.913,-11.455"]
+"unicode-org/cldr" ["l"="-9.685,-7.192", "c"=5]
 "google/licensecheck" ["l"="8.248,-11.004"]
 "google/licenseclassifier" ["l"="8.263,-11.026"]
 "eclipse-archived/antenna" ["l"="8.157,-11.122"]
@@ -1658,53 +1854,56 @@ digraph G {
 "RedHatProductSecurity/cvelib" ["l"="8.362,-11.436"]
 "CVEProject/cve-services" ["l"="8.314,-11.424"]
 "CERTCC/cveClient" ["l"="8.374,-11.421"]
+"objectbox/objectbox-go" ["l"="4.286,-8.093", "c"=0]
+"mitchellh/golicense" ["l"="8.291,-10.9"]
+"OWASP/owasp.github.io" ["l"="28.459,-23.955", "c"=895]
+"OWASP/Software-Component-Verification-Standard" ["l"="8.086,-11.193"]
+"armijnhemel/binaryanalysis-ng" ["l"="-41.467,-37.379", "c"=610]
 "uptane/uptane-standard" ["l"="8.107,-11.584"]
 "theupdateframework/taps" ["l"="8.116,-11.598"]
-"brunofacca/active-record-query-trace" ["l"="4.419,-37.647"]
+"brunofacca/active-record-query-trace" ["l"="4.419,-37.647", "c"=1]
 "github/licensed-ci" ["l"="8.313,-11.126"]
-"davydovanton/sidekiq-statistic" ["l"="4.535,-37.604"]
-"Shopify/packwerk" ["l"="4.331,-37.681"]
-"grafeas/grafeas" ["l"="7.772,-8.733"]
-"in-toto/in-toto" ["l"="8.021,-11.442"]
+"davydovanton/sidekiq-statistic" ["l"="4.535,-37.604", "c"=1]
+"Shopify/packwerk" ["l"="4.331,-37.681", "c"=1]
+"grafeas/grafeas" ["l"="7.772,-8.733", "c"=14]
 "tektoncd/chains" ["l"="7.973,-11.448"]
-"cruise-automation/k-rail" ["l"="7.221,-8.877"]
+"cruise-automation/k-rail" ["l"="7.221,-8.877", "c"=14]
 "grafeas/voucher" ["l"="7.848,-11.453"]
-"open-policy-agent/conftest" ["l"="7.662,-8.954"]
-"kelseyhightower/grafeas-tutorial" ["l"="10.425,-9.975"]
+"open-policy-agent/conftest" ["l"="7.662,-8.954", "c"=14]
+"kelseyhightower/grafeas-tutorial" ["l"="10.425,-9.975", "c"=740]
 "fossas/fossa-cli" ["l"="8.185,-11.2"]
 "fossas/fossa-action" ["l"="8.246,-11.207"]
 "XuSihan/LiDetector" ["l"="8.246,-11.125"]
-"OWASP/Software-Component-Verification-Standard" ["l"="8.086,-11.193"]
-"ShiftLeftSecurity/sast-scan" ["l"="-48.143,-29.61"]
-"faastjs/faast.js" ["l"="-4.202,-28.477"]
+"ShiftLeftSecurity/sast-scan" ["l"="-48.143,-29.61", "c"=11]
+"faastjs/faast.js" ["l"="-4.202,-28.477", "c"=4]
 "CycloneDX/cyclonedx-gradle-plugin" ["l"="8.019,-11.174"]
 "CycloneDX/cyclonedx-node-module" ["l"="8.021,-11.199"]
 "CVEProject/cvelist" ["l"="8.291,-11.457"]
-"qazbnm456/awesome-cve-poc" ["l"="-47.841,-30.267"]
+"qazbnm456/awesome-cve-poc" ["l"="-47.841,-30.267", "c"=11]
 "CVEProject/automation-working-group" ["l"="8.29,-11.428"]
-"timwhitez/crawlergo_x_XRAY" ["l"="-44.682,-29.689"]
-"cve-search/cve-search" ["l"="8.348,-11.517"]
-"FeeiCN/Cobra" ["l"="-44.858,-29.78"]
-"SecWiki/linux-kernel-exploits" ["l"="-44.797,-29.929"]
-"coffeehb/Some-PoC-oR-ExP" ["l"="-44.794,-29.798"]
-"ptresearch/AttackDetection" ["l"="-44.842,-29.571"]
-"Medicean/VulApps" ["l"="-44.839,-29.853"]
-"Xyntax/POC-T" ["l"="-44.88,-29.779"]
-"AnyeDuke/Enterprise-Security-Skill" ["l"="-44.943,-29.631"]
-"tunz/js-vuln-db" ["l"="-41.411,-36.364"]
-"nixawk/labs" ["l"="-44.7,-31.998"]
-"0xn0ne/weblogicScanner" ["l"="-44.59,-29.755"]
-"baidu/openrasp" ["l"="-44.676,-29.588"]
+"timwhitez/crawlergo_x_XRAY" ["l"="-44.682,-29.689", "c"=3]
+"FeeiCN/Cobra" ["l"="-44.858,-29.78", "c"=3]
+"SecWiki/linux-kernel-exploits" ["l"="-44.797,-29.929", "c"=3]
+"coffeehb/Some-PoC-oR-ExP" ["l"="-44.794,-29.798", "c"=3]
+"ptresearch/AttackDetection" ["l"="-44.842,-29.571", "c"=3]
+"Medicean/VulApps" ["l"="-44.839,-29.853", "c"=3]
+"Xyntax/POC-T" ["l"="-44.88,-29.779", "c"=3]
+"AnyeDuke/Enterprise-Security-Skill" ["l"="-44.943,-29.631", "c"=3]
+"tunz/js-vuln-db" ["l"="-41.411,-36.364", "c"=91]
+"nixawk/labs" ["l"="-44.7,-31.998", "c"=53]
+"0xn0ne/weblogicScanner" ["l"="-44.59,-29.755", "c"=3]
+"baidu/openrasp" ["l"="-44.676,-29.588", "c"=3]
+"tektoncd/triggers" ["l"="10.66,-11.645", "c"=431]
+"rakyll/autopprof" ["l"="4.378,-8.47", "c"=0]
 "CycloneDX/cyclonedx-python" ["l"="8.056,-11.224"]
 "CycloneDX/cyclonedx-python-lib" ["l"="8.031,-11.224"]
 "CycloneDX/sbom-utility" ["l"="8.056,-11.27"]
 "CycloneDX/cyclonedx-bom-repo-server" ["l"="8.043,-11.239"]
 "CycloneDX/cyclonedx-php-composer" ["l"="7.991,-11.158"]
 "CycloneDX/transparency-exchange-api" ["l"="8.045,-11.329"]
-"mitchellh/golicense" ["l"="8.291,-10.9"]
 "uw-labs/lichen" ["l"="8.287,-10.861"]
-"rakyll/autopprof" ["l"="4.378,-8.47"]
 "google/go-licenses" ["l"="8.287,-10.951"]
+"OpenSCAP/openscap" ["l"="8.48,-13.03", "c"=1228]
 "lestrrat-go/backoff" ["l"="8.367,-10.824"]
 "soh335/shukujitsu" ["l"="8.382,-10.797"]
 "Songmu/gocredits" ["l"="8.334,-10.872"]
@@ -1714,6 +1913,8 @@ digraph G {
 "eladnava/tldrlegal" ["l"="8.382,-11.065"]
 "CVEProject/cve-website" ["l"="8.32,-11.402"]
 "CVEProject/cve-schema" ["l"="8.273,-11.404"]
+"rust-secure-code/cargo-auditable" ["l"="-9.845,-6.553", "c"=5]
+"CycloneDX/cyclonedx-rust-cargo" ["l"="7.994,-11.2"]
 "src-d/go-license-detector" ["l"="8.283,-11.043"]
 "go-enry/go-license-detector" ["l"="8.287,-11.003"]
 "boyter/lc" ["l"="8.31,-11.05"]
@@ -1723,6 +1924,7 @@ digraph G {
 "repository-service-tuf/repository-service-tuf" ["l"="8.083,-11.474"]
 "in-toto/scai-demos" ["l"="8.076,-11.463"]
 "sigstore/root-signing" ["l"="8.032,-11.503"]
+"parallaxsecond/parsec" ["l"="-18.845,-43.027", "c"=55]
 "finos/OSLC-handbook" ["l"="8.177,-11.067"]
 "CycloneDX/cyclonedx-dotnet" ["l"="8.042,-11.208"]
 "CycloneDX/cyclonedx-dotnet-library" ["l"="8.004,-11.181"]
@@ -1730,9 +1932,12 @@ digraph G {
 "goharbor/harbor-scanner-clair" ["l"="8.61,-11.297"]
 "goharbor/harbor-operator" ["l"="8.654,-11.295"]
 "aquasecurity/appshield" ["l"="8.646,-11.343"]
+"sanbornm/go-selfupdate" ["l"="3.735,-8.368", "c"=0]
+"palantir/policy-bot" ["l"="7.921,-45.39", "c"=544]
+"ossf/allstar" ["l"="8.082,-11.391"]
 "stevespringett/nist-data-mirror" ["l"="7.995,-11.128"]
 "stevespringett/vulndb-data-mirror" ["l"="7.96,-11.093"]
-"dependency-check/dependency-check-sonar-plugin" ["l"="-1.767,11.676"]
+"dependency-check/dependency-check-sonar-plugin" ["l"="-1.767,11.676", "c"=15]
 "in-toto/in-toto-golang" ["l"="8.031,-11.461"]
 "in-toto/go-witness" ["l"="8.046,-11.468"]
 "openvex/go-vex" ["l"="8.032,-11.389"]
@@ -1744,6 +1949,11 @@ digraph G {
 "pmckeown/dependency-track-maven-plugin" ["l"="7.994,-11.096"]
 "logandavies181/tfd" ["l"="7.982,-11.06"]
 "shreyasrama/cph" ["l"="7.973,-11.072"]
+"hugovk/top-pypi-packages" ["l"="45.633,21.304", "c"=20]
+"assuremoss/lastpymile" ["l"="7.896,-11.336"]
+"tektoncd/operator" ["l"="10.666,-11.672", "c"=431]
+"juan131/dockerfile-best-practices" ["l"="-4.011,-27.843", "c"=4]
+"vmware-labs/distribution-tooling-for-helm" ["l"="7.852,-11.389"]
 "jpeddicord/askalono" ["l"="8.267,-11.089"]
 "aquasecurity/vuln-list" ["l"="8.371,-11.345"]
 "Songmu/goxz" ["l"="8.335,-10.838"]
@@ -1761,33 +1971,39 @@ digraph G {
 "owasp-dep-scan/blint" ["l"="8.063,-11.14"]
 "AppThreat/vulnerability-db" ["l"="8.089,-11.133"]
 "AppThreat/atom" ["l"="8.07,-11.121"]
-"opengrep/opengrep" ["l"="-48.198,-29.659"]
+"opengrep/opengrep" ["l"="-48.198,-29.659", "c"=11]
 "DataDog/guarddog" ["l"="7.973,-11.31"]
-"Bearer/bearer" ["l"="-48.069,-29.689"]
-"google/osv.dev" ["l"="8.154,-11.352"]
-"mrwadams/stride-gpt" ["l"="28.297,-23.989"]
+"Bearer/bearer" ["l"="-48.069,-29.689", "c"=11]
+"mrwadams/stride-gpt" ["l"="28.297,-23.989", "c"=895]
+"go-git/go-billy" ["l"="8.027,-7.877", "c"=14]
+"github/codeql-action" ["l"="8.017,-45.528", "c"=544]
+"github/advisory-database" ["l"="8.213,-11.384"]
+"regclient/regclient" ["l"="7.852,-9.009", "c"=14]
+"chainguard-dev/apko" ["l"="7.975,-11.514"]
+"microsoft/ApplicationInspector" ["l"="-34.568,-1.176", "c"=8]
+"aquasecurity/trivy-action" ["l"="7.951,-45.723", "c"=544]
 "aquasecurity/defsec" ["l"="8.576,-11.361"]
 "awslabs/coldsnap" ["l"="8.182,-11.281"]
 "bottlerocket-os/bottlerocket-test-system" ["l"="8.148,-11.061"]
 "awslabs/tough" ["l"="8.144,-11.461"]
-"hashicorp/go-multierror" ["l"="4.161,-8.713"]
-"ribice/glice" ["l"="2.635,-9.101"]
+"hashicorp/go-multierror" ["l"="4.161,-8.713", "c"=0]
+"ribice/glice" ["l"="2.635,-9.101", "c"=0]
+"opencve/opencve" ["l"="-42.392,-33.365", "c"=79]
+"tcnksm/ghr" ["l"="4.025,-8.306", "c"=0]
 "CERTCC/SSVC" ["l"="8.206,-11.463"]
 "theparanoids/PrioritizedRiskRemediation" ["l"="8.221,-11.477"]
 "notaryproject/specifications" ["l"="7.794,-11.516"]
-"notaryproject/notation" ["l"="7.831,-11.52"]
 "notaryproject/notation-go" ["l"="7.808,-11.534"]
 "Azure/notation-azure-kv" ["l"="7.792,-11.534"]
 "oras-project/artifacts-spec" ["l"="7.773,-11.516"]
 "aboutcode-org/scancode.io" ["l"="8.238,-11.256"]
 "aboutcode-org/dejacode" ["l"="8.253,-11.27"]
 "aboutcode-org/univers" ["l"="8.246,-11.282"]
-"github/choosealicense.com" ["l"="8.772,-44.831"]
-"spdx/license-list-XML" ["l"="8.192,-11.149"]
-"cc-archive/wp-plugin-creativecommons" ["l"="7.01,-8.493"]
-"ietf-tools/datatracker" ["l"="8.92,-44.857"]
-"todogroup/repolinter" ["l"="8.091,-45.133"]
-"privacy/cookies" ["l"="8.893,-44.868"]
+"coveooss/json-schema-for-humans" ["l"="-3.919,8.301", "c"=1282]
+"cc-archive/wp-plugin-creativecommons" ["l"="7.01,-8.493", "c"=14]
+"ietf-tools/datatracker" ["l"="8.92,-44.857", "c"=828]
+"todogroup/repolinter" ["l"="8.091,-45.133", "c"=544]
+"privacy/cookies" ["l"="8.893,-44.868", "c"=828]
 "ossf/wg-best-practices-os-developers" ["l"="7.946,-11.263"]
 "ossf/wg-security-tooling" ["l"="7.943,-11.228"]
 "ossf/wg-metrics-and-metadata" ["l"="7.93,-11.24"]
@@ -1798,53 +2014,53 @@ digraph G {
 "ossf/package-manager-best-practices" ["l"="7.863,-11.222"]
 "ossf/wg-securing-software-repos" ["l"="7.924,-11.208"]
 "ossf/oss-vulnerability-guide" ["l"="7.92,-11.272"]
-"threatspec/threatspec" ["l"="28.324,-23.952"]
+"threatspec/threatspec" ["l"="28.324,-23.952", "c"=895]
 "ossf/security-reviews" ["l"="7.914,-11.253"]
+"snyk/actions" ["l"="7.813,-45.71", "c"=544]
+"snyk/parlay" ["l"="8.058,-11.318"]
 "ossf/criticality_score" ["l"="8.008,-11.284"]
 "ossf/tac" ["l"="7.907,-11.224"]
 "sigstore/rekor" ["l"="8.011,-11.467"]
 "sigstore/fulcio" ["l"="7.991,-11.466"]
 "sigstore/sigstore" ["l"="7.95,-11.491"]
-"sigstore/gitsign" ["l"="7.987,-11.486"]
-"sigstore/cosign" ["l"="7.866,-8.82"]
-"chainguard-dev/apko" ["l"="7.975,-11.514"]
+"sigstore/cosign" ["l"="7.866,-8.82", "c"=14]
 "sigstore/policy-controller" ["l"="7.964,-11.486"]
 "buildsec/frsca" ["l"="8.008,-11.421"]
 "sigstore/scaffolding" ["l"="7.951,-11.51"]
 "in-toto/witness" ["l"="8.002,-11.436"]
 "sigstore/sigstore-js" ["l"="7.999,-11.496"]
+"StyraInc/awesome-opa" ["l"="7.167,-9.075", "c"=14]
 "CycloneDX/Sunshine" ["l"="8.076,-11.16"]
 "spdx/spdx-examples" ["l"="8.12,-11.235"]
+"Threagile/threagile" ["l"="28.296,-23.956", "c"=895]
+"aquasecurity/chain-bench" ["l"="8.002,-11.393"]
 "mwittig/npm-license-crawler" ["l"="8.418,-11.094"]
-"plexsystems/konstraint" ["l"="7.278,-9.068"]
+"plexsystems/konstraint" ["l"="7.278,-9.068", "c"=14]
 "httplock/httplock" ["l"="7.895,-11.453"]
 "ratify-project/ratify" ["l"="7.865,-11.517"]
 "lyvd/bandit4mal" ["l"="7.92,-11.325"]
 "githubnext/amalfi-artifact" ["l"="7.948,-11.322"]
-"assuremoss/lastpymile" ["l"="7.896,-11.336"]
+"plexsystems/sinker" ["l"="7.296,-9.107", "c"=14]
+"bitnami/charts-syncer" ["l"="7.863,-11.407"]
 "fossology/Nirjas" ["l"="8.344,-11.177"]
 "hastagAB/GSoC-19" ["l"="8.369,-11.181"]
-"oras-project/oras-go" ["l"="7.825,-11.546"]
 "notaryproject/notation-action" ["l"="7.778,-11.541"]
 "notaryproject/notation-core-go" ["l"="7.802,-11.548"]
-"oras-project/oras" ["l"="7.938,-9.055"]
 "mittwald/goharbor-client" ["l"="8.809,-11.256"]
 "TimeBye/go-harbor" ["l"="8.846,-11.249"]
 "bottlerocket-os/bottlerocket-admin-container" ["l"="8.15,-10.976"]
 "bottlerocket-os/bottlerocket-control-container" ["l"="8.145,-11"]
 "bottlerocket-os/bottlerocket-sdk" ["l"="8.133,-10.973"]
 "bottlerocket-os/bottlerocket-ecs-updater" ["l"="8.131,-10.99"]
-"bitnami/charts-syncer" ["l"="7.863,-11.407"]
 "vmware-tanzu/asset-relocation-tool-for-kubernetes" ["l"="7.827,-11.404"]
-"vmware-labs/distribution-tooling-for-helm" ["l"="7.852,-11.389"]
 "SourceCode-AI/aura" ["l"="7.836,-11.32"]
 "IQTLabs/AuraBorealisApp" ["l"="7.8,-11.317"]
 "goharbor/harbor-cluster-operator" ["l"="8.67,-11.27"]
-"goharbor/harbor-helm" ["l"="51.674,0.904"]
-"ovh/beamium" ["l"="3.462,-10.031"]
+"goharbor/harbor-helm" ["l"="51.674,0.904", "c"=1033]
+"ovh/beamium" ["l"="3.462,-10.031", "c"=0]
 "cd1989/harbor-cleaner" ["l"="8.686,-11.292"]
 "sigstore/k8s-manifest-sigstore" ["l"="7.899,-11.429"]
-"tektoncd/results" ["l"="10.652,-11.699"]
+"tektoncd/results" ["l"="10.652,-11.699", "c"=431]
 "osssanitizer/maloss" ["l"="7.934,-11.343"]
 "DataDog/malicious-software-packages-dataset" ["l"="7.938,-11.328"]
 "lxyeternal/pypi_malregistry" ["l"="7.948,-11.338"]
@@ -1854,7 +2070,7 @@ digraph G {
 "IQTLabs/software-supply-chain-compromises" ["l"="7.914,-11.371"]
 "bureado/awesome-software-supply-chain-security" ["l"="7.991,-11.377"]
 "SAP/risk-explorer-for-software-supply-chains" ["l"="7.938,-11.361"]
-"lkpsg/ccscanner" ["l"="-41.232,-37.126"]
+"lkpsg/ccscanner" ["l"="-41.232,-37.126", "c"=610]
 "CERTCC/VINCE" ["l"="8.391,-11.446"]
 "theupdateframework/rust-tuf" ["l"="8.155,-11.499"]
 "DependencyTrack/hyades" ["l"="8.045,-11.096"]
@@ -1867,79 +2083,87 @@ digraph G {
 "notaryproject/tspclient-go" ["l"="7.784,-11.553"]
 "bottlerocket-os/bottlerocket-update-operator" ["l"="8.141,-10.955"]
 "CycloneDX/gh-node-module-generatebom" ["l"="8.012,-11.065"]
-"theupdateframework/go-tuf" ["l"="8.069,-11.52"]
 "theupdateframework/python-tuf" ["l"="8.107,-11.511"]
 "rdimitrov/go-tuf-metadata" ["l"="8.06,-11.556"]
 "sigstore/community" ["l"="8.08,-11.574"]
 "in-toto/attestation-verifier" ["l"="8.073,-11.557"]
-"sanbornm/go-selfupdate" ["l"="3.735,-8.368"]
 "gittuf/gittuf" ["l"="8.055,-11.446"]
-"inconshreveable/go-update" ["l"="3.693,-8.408"]
 "secure-systems-lab/dsse" ["l"="8.073,-11.434"]
 "spdx/spdx-3-model" ["l"="8.111,-11.295"]
 "CycloneDX/cyclonedx-php-library" ["l"="7.961,-11.129"]
-"trickest/cve" ["l"="-45.513,-32.24"]
+"trickest/cve" ["l"="-45.513,-32.24", "c"=53]
 "CVEProject/cvelistV5" ["l"="8.255,-11.435"]
-"ycdxsb/PocOrExp_in_Github" ["l"="-44.349,-29.869"]
-"Threekiii/Awesome-POC" ["l"="-44.37,-29.864"]
-"github/advisory-database" ["l"="8.213,-11.384"]
-"nomi-sec/PoC-in-GitHub" ["l"="-44.529,-30.025"]
-"zhzyker/vulmap" ["l"="-44.526,-29.848"]
-"KeenSecurityLab/BinAbsInspector" ["l"="-41.453,-37.413"]
-"zhzyker/exphub" ["l"="-44.624,-29.81"]
-"BeichenDream/Godzilla" ["l"="-44.551,-29.831"]
-"rocky-linux/infrastructure" ["l"="43.214,-26.905"]
-"typesense/showcase-recipe-search" ["l"="43.106,-26.901"]
-"Netflix/consoleme" ["l"="11.232,-4.812"]
-"camtheperson/get-my-ps5" ["l"="43.095,-26.876"]
+"ycdxsb/PocOrExp_in_Github" ["l"="-44.349,-29.869", "c"=3]
+"Threekiii/Awesome-POC" ["l"="-44.37,-29.864", "c"=3]
+"nomi-sec/PoC-in-GitHub" ["l"="-44.529,-30.025", "c"=3]
+"zhzyker/vulmap" ["l"="-44.526,-29.848", "c"=3]
+"KeenSecurityLab/BinAbsInspector" ["l"="-41.453,-37.413", "c"=610]
+"zhzyker/exphub" ["l"="-44.624,-29.81", "c"=3]
+"BeichenDream/Godzilla" ["l"="-44.551,-29.831", "c"=3]
+"rocky-linux/infrastructure" ["l"="43.214,-26.905", "c"=69]
+"typesense/showcase-recipe-search" ["l"="43.106,-26.901", "c"=69]
+"Netflix/consoleme" ["l"="11.232,-4.812", "c"=147]
+"camtheperson/get-my-ps5" ["l"="43.095,-26.876", "c"=69]
 "ossf/s2c2f" ["l"="8.004,-11.254"]
 "trailofbits/it-depends" ["l"="8.011,-11.363"]
 "chainguard-dev/ssc-reading-list" ["l"="7.964,-11.473"]
 "golang/vulndb" ["l"="8.323,-11.339"]
 "golang/vuln" ["l"="8.384,-11.314"]
 "protobom/protobom" ["l"="8.073,-11.364"]
-"google/osv-scanner" ["l"="7.619,-8.601"]
+"praetorian-inc/gokart" ["l"="4.363,-8.577", "c"=0]
+"google/osv-scanner" ["l"="7.619,-8.601", "c"=14]
 "google/deps.dev" ["l"="8.215,-11.336"]
-"ossf/allstar" ["l"="8.082,-11.391"]
-"intel/cve-bin-tool" ["l"="-41.48,-37.36"]
 "cisagov/vulnrichment" ["l"="8.174,-11.4"]
-"armijnhemel/binaryanalysis-ng" ["l"="-41.467,-37.379"]
+"SMAT-Lab/Scalpel" ["l"="36.155,-0.932", "c"=1188]
 "aquasecurity/trivy-checks" ["l"="8.606,-11.379"]
+"notaryproject/notary" ["l"="7.915,-8.692", "c"=14]
+"revelc/formatter-maven-plugin" ["l"="-1.73,11.921", "c"=15]
+"zarf-dev/zarf" ["l"="8.352,-9.28", "c"=14]
 "RedHatProductSecurity/component-registry" ["l"="8.429,-11.468"]
 "ossf/package-feeds" ["l"="7.963,-11.366"]
-"fossology/FOSSologyML" ["l"="7.623,-23.242"]
+"vitsalis/PyCG" ["l"="36.152,-0.996", "c"=1188]
+"numfocus/gsoc" ["l"="31.514,-28.404", "c"=1078]
+"aboutcode-org/aboutcode" ["l"="8.266,-11.243"]
+"lunasec-io/lunasec" ["l"="-44.045,-29.346", "c"=3]
+"fossology/FOSSologyML" ["l"="7.623,-23.242", "c"=2436]
 "CycloneDX/cyclonedx-go" ["l"="8.097,-11.107"]
 "CycloneDX/cyclonedx-gomod" ["l"="8.103,-11.15"]
 "slsa-framework/slsa-github-generator" ["l"="8.033,-11.431"]
-"Legit-Labs/legitify" ["l"="7.157,-12.219"]
-"OWASP/pytm" ["l"="28.311,-23.942"]
-"fugue/regula" ["l"="10.455,-6.118"]
-"cartography-cncf/cartography" ["l"="11.265,-4.723"]
+"Legit-Labs/legitify" ["l"="7.157,-12.219", "c"=884]
+"OWASP/pytm" ["l"="28.311,-23.942", "c"=895]
+"fugue/regula" ["l"="10.455,-6.118", "c"=162]
+"cartography-cncf/cartography" ["l"="11.265,-4.723", "c"=147]
 "slsa-framework/slsa-verifier" ["l"="8.028,-11.409"]
 "bomctl/bomctl" ["l"="8.097,-11.366"]
-"cncf/tag-security" ["l"="7.526,-8.753"]
+"getmeli/meli" ["l"="-52.28,14.29", "c"=592]
+"coreinfrastructure/best-practices-badge" ["l"="8.061,-45.101", "c"=544]
+"docker/metadata-action" ["l"="8.077,-45.618", "c"=544]
+"sigstore/cosign-installer" ["l"="7.846,-11.578"]
 "aboutcode-org/license-expression" ["l"="8.236,-11.185"]
 "spdx/ntia-conformance-checker" ["l"="8.104,-11.249"]
 "spdx/spdx-online-tools" ["l"="8.137,-11.143"]
 "cloudsecurityalliance/gsd-project" ["l"="8.279,-11.334"]
 "CloudSecurityAlliance/gsd-tools" ["l"="8.266,-11.325"]
 "google/oss-fuzz-vulns" ["l"="8.297,-11.361"]
+"curiefense/curiefense" ["l"="-21.098,-21.734", "c"=245]
+"CISecurity/OVALRepo" ["l"="8.516,-13.037", "c"=1228]
 "neilkuan/ecs-bottlerocket-capacityProvider-sample" ["l"="8.114,-10.918"]
 "bottlerocket-os/twoliter" ["l"="8.113,-10.939"]
 "oras-project/oras-py" ["l"="7.794,-11.577"]
 "kubernetes-sigs/tejolote" ["l"="7.971,-11.427"]
 "sigstore/sigstore-go" ["l"="8.018,-11.489"]
 "sigstore/cosign-gatekeeper-provider" ["l"="7.899,-11.528"]
+"trailofbits/fickling" ["l"="38.052,-7.595", "c"=448]
 "owenrumney/squealer" ["l"="8.633,-11.466"]
 "owenrumney/go-github-pr-commenter" ["l"="8.602,-11.439"]
+"containers/krunvm" ["l"="-17.03,-2.738", "c"=772]
 "DoSOCSv2/DoSOCSv2" ["l"="8.137,-11.115"]
+"kpcyrd/i-probably-didnt-backdoor-this" ["l"="-13.18,-3.083", "c"=1346]
 "theupdateframework/tuf-on-ci" ["l"="8.066,-11.492"]
 "advanced-security/gh-sbom" ["l"="8.066,-11.286"]
-"NorthernSec/CVE-Scan" ["l"="8.394,-11.546"]
 "PidgeyL/cve-search" ["l"="8.422,-11.567"]
-"pypa/pip-audit" ["l"="45.239,21.16"]
+"pypa/pip-audit" ["l"="45.239,21.16", "c"=20]
 "veraison/go-cose" ["l"="7.741,-11.557"]
-"sigstore/cosign-installer" ["l"="7.846,-11.578"]
 "sigstore/helm-charts" ["l"="7.913,-11.536"]
 "sigstore/helm-sigstore" ["l"="7.87,-11.561"]
 "stacklok/sigstore-the-hard-way" ["l"="7.931,-11.535"]
@@ -1955,25 +2179,27 @@ digraph G {
 "ossillate-inc/packj" ["l"="7.984,-11.329"]
 "safedep/vet" ["l"="8.123,-11.425"]
 "avilum/secimport" ["l"="7.79,-11.263"]
-"deadbits/vigil-llm" ["l"="38.011,-7.446"]
-"aquasecurity/chain-bench" ["l"="8.002,-11.393"]
+"deadbits/vigil-llm" ["l"="38.011,-7.446", "c"=448]
 "aquasecurity/chain-bench-action" ["l"="7.937,-11.396"]
-"OWASP/www-project-kubernetes-top-ten" ["l"="7.17,-12.124"]
-"Threagile/threagile" ["l"="28.296,-23.956"]
-"rung/threat-matrix-cicd" ["l"="28.313,-24.039"]
+"OWASP/www-project-kubernetes-top-ten" ["l"="7.17,-12.124", "c"=884]
+"rung/threat-matrix-cicd" ["l"="28.313,-24.039", "c"=895]
 "argonsecurity/pipeline-parser" ["l"="7.953,-11.391"]
-"aquasecurity/tracee" ["l"="7.252,-6.28"]
-"opencve/opencve" ["l"="-42.392,-33.365"]
-"elastic/detection-rules" ["l"="-42.426,-33.164"]
-"projectdiscovery/cvemap" ["l"="-47.756,-29.86"]
-"SigmaHQ/sigma" ["l"="-42.495,-33.282"]
-"Zackriya-Solutions/meeting-minutes" ["l"="41.252,-0.075"]
-"projectdiscovery/nuclei-templates" ["l"="-47.985,-30.185"]
-"github/codeql" ["l"="-44.469,-29.501"]
-"4ra1n/JavaSecInterview" ["l"="-44.394,-29.539"]
-"github/codeql-action" ["l"="8.017,-45.528"]
-"wh1t3p1g/tabby" ["l"="-44.339,-29.506"]
+"aquasecurity/tracee" ["l"="7.252,-6.28", "c"=335]
+"elastic/detection-rules" ["l"="-42.426,-33.164", "c"=79]
+"projectdiscovery/cvemap" ["l"="-47.756,-29.86", "c"=11]
+"SigmaHQ/sigma" ["l"="-42.495,-33.282", "c"=79]
+"Zackriya-Solutions/meeting-minutes" ["l"="41.252,-0.075", "c"=7]
+"projectdiscovery/nuclei-templates" ["l"="-47.985,-30.185", "c"=11]
+"github/codeql" ["l"="-44.469,-29.501", "c"=3]
+"4ra1n/JavaSecInterview" ["l"="-44.394,-29.539", "c"=3]
+"wh1t3p1g/tabby" ["l"="-44.339,-29.506", "c"=3]
+"ktock/buildg" ["l"="7.588,-9.223", "c"=14]
 "franciscop/legally" ["l"="8.412,-11.053"]
+"chughes757/SecureSoftwareSupplyChain" ["l"="7.893,-11.502"]
+"sigstore/sigstore-python" ["l"="7.899,-11.628"]
+"raimon49/pip-licenses" ["l"="8.463,-11.069"]
+"step-security/harden-runner" ["l"="7.157,-12.293", "c"=884]
+"octo-sts/app" ["l"="8.048,-11.598"]
 "chainguard-dev/melange" ["l"="7.973,-11.556"]
 "wolfi-dev/os" ["l"="7.987,-11.539"]
 "chainguard-images/images" ["l"="8.009,-11.548"]
@@ -1985,34 +2211,32 @@ digraph G {
 "chainguard-dev/incert" ["l"="7.944,-11.621"]
 "imjasonh/kontain.me" ["l"="7.98,-11.643"]
 "openvex/vexctl" ["l"="8.05,-11.348"]
-"snyk/parlay" ["l"="8.058,-11.318"]
 "vishalgarg-sec/Software-Supply-Chain-Security" ["l"="7.933,-11.424"]
 "AevaOnline/supply-chain-synthesis" ["l"="7.951,-11.428"]
 "meta-fun/awesome-software-supply-chain-security" ["l"="7.934,-11.381"]
 "slsa-framework/slsa-github-generator-go" ["l"="7.99,-11.416"]
-"toolswatch/vFeed" ["l"="-43.125,-31.967"]
 "cve-search/CVE-Search-Docker" ["l"="8.367,-11.566"]
-"infobyte/faraday" ["l"="-47.95,-30.502"]
-"ivre/ivre" ["l"="-47.881,-30.503"]
-"MISP/MISP" ["l"="-42.567,-33.365"]
-"scipag/vulscan" ["l"="-47.838,-30.457"]
-"archerysec/archerysec" ["l"="-47.871,-30.468"]
-"CIRCL/AIL-framework" ["l"="-43.077,-32.029"]
-"step-security/harden-runner" ["l"="7.157,-12.293"]
+"infobyte/faraday" ["l"="-47.95,-30.502", "c"=11]
+"ivre/ivre" ["l"="-47.881,-30.503", "c"=11]
+"MISP/MISP" ["l"="-42.567,-33.365", "c"=79]
+"scipag/vulscan" ["l"="-47.838,-30.457", "c"=11]
+"archerysec/archerysec" ["l"="-47.871,-30.468", "c"=11]
+"CIRCL/AIL-framework" ["l"="-43.077,-32.029", "c"=143]
 "sethvargo/ratchet" ["l"="7.899,-11.575"]
 "reposaur/reposaur" ["l"="7.831,-11.625"]
-"sethvargo/go-githubactions" ["l"="5.085,-8.378"]
+"sethvargo/go-githubactions" ["l"="5.085,-8.378", "c"=0]
 "scribe-public/gitgat" ["l"="7.862,-11.635"]
-"defenseunicorns/lula" ["l"="8.678,-9.397"]
-"chainloop-dev/chainloop" ["l"="7.968,-11.4"]
+"dependency-check/dependency-check-gradle" ["l"="-1.496,11.517", "c"=15]
+"Ostorlab/KEV" ["l"="-48.123,-29.237", "c"=11]
+"defenseunicorns/lula" ["l"="8.678,-9.397", "c"=14]
+"awslabs/automated-security-helper" ["l"="11.034,-4.596", "c"=147]
 "nyph-infosec/daggerboard" ["l"="8.043,-11.299"]
-"microsoft/FeatureManagement-Dotnet" ["l"="-34.326,-0.882"]
+"microsoft/FeatureManagement-Dotnet" ["l"="-34.326,-0.882", "c"=8]
 "golang/govulncheck-action" ["l"="8.429,-11.302"]
 "sigstore/rekor-search-ui" ["l"="7.921,-11.518"]
 "doubleopen-project/doubleopen-publications" ["l"="8.182,-11.114"]
 "spdx/spdx-license-diff" ["l"="8.151,-11.104"]
-"chughes757/SecureSoftwareSupplyChain" ["l"="7.893,-11.502"]
-"sigstore/sigstore-python" ["l"="7.899,-11.628"]
+"SummitRoute/csp_security_mistakes" ["l"="11.157,-4.582", "c"=147]
 "sigstore/sigstore-rs" ["l"="7.863,-11.698"]
 "sigstore/sigstore-java" ["l"="7.846,-11.731"]
 "siemens/fossology" ["l"="8.215,-11.078"]
@@ -2029,73 +2253,87 @@ digraph G {
 "CycloneDX/cyclonedx-javascript-library" ["l"="7.94,-11.124"]
 "bottlerocket-os/hotdog" ["l"="8.136,-11.019"]
 "RedHatProductSecurity/osidb" ["l"="8.449,-11.467"]
+"aserto-dev/topaz" ["l"="4.127,-9.587", "c"=0]
 "interlynk-io/sbomasm" ["l"="8.05,-11.286"]
 "ossf/sbom-everywhere" ["l"="8.104,-11.338"]
 "philips-software/SPDXMerge" ["l"="8.026,-11.306"]
 "interlynk-io/sbomgr" ["l"="8.042,-11.279"]
-"ckotzbauer/vulnerability-operator" ["l"="6.596,-8.291"]
+"ckotzbauer/vulnerability-operator" ["l"="6.596,-8.291", "c"=14]
+"aurae-runtime/aurae" ["l"="7.327,-9.433", "c"=14]
+"project-copacetic/copacetic" ["l"="7.623,-9.124", "c"=14]
+"openappsec/openappsec" ["l"="-21.033,-21.703", "c"=245]
 "spdx/LicenseListPublisher" ["l"="8.238,-11.094"]
 "aboutcode-org/scancode-licensedb" ["l"="8.257,-11.136"]
 "chainguard-dev/edu" ["l"="8.008,-11.582"]
-"reproducible-containers/diffoci" ["l"="7.976,-9.736"]
+"reproducible-containers/diffoci" ["l"="7.976,-9.736", "c"=14]
 "SBOMit/specification" ["l"="8.099,-11.434"]
+"sourcegraph/awesome-code-ai" ["l"="41.111,-4.143", "c"=146]
+"stacklok/codegate" ["l"="8.262,-11.636"]
 "spdx/license-list" ["l"="8.199,-11.087"]
-"awslabs/automated-security-helper" ["l"="11.034,-4.596"]
+"google/trillian" ["l"="9.013,-9.136", "c"=14]
+"iximiuz/cdebug" ["l"="7.561,-9.173", "c"=14]
+"chainguard-dev/osquery-defense-kit" ["l"="6.962,-12.201", "c"=884]
+"vmware-labs/wasm-workers-server" ["l"="-8.008,-8.067", "c"=691]
+"StyraInc/regal" ["l"="7.001,-9.061", "c"=14]
+"Digital-Sapphire/PyUpdater" ["l"="42.391,20.906", "c"=1073]
 "interlynk-io/sbomex" ["l"="8.063,-11.203"]
 "microsoft/oss-ssc-framework" ["l"="7.991,-11.232"]
-"octo-sts/app" ["l"="8.048,-11.598"]
 "chainguard-dev/digestabot" ["l"="8.055,-11.614"]
 "chainguard-dev/platform-examples" ["l"="8.014,-11.6"]
 "abhisek/supply-chain-security-gateway" ["l"="8.155,-11.439"]
 "mindersec/minder" ["l"="8.196,-11.586"]
 "in-toto/specification" ["l"="7.95,-11.448"]
 "owenrumney/lazytrivy" ["l"="8.541,-11.417"]
-"DataDog/threatest" ["l"="7.061,-12.209"]
-"DataDog/KubeHound" ["l"="7.125,-12.129"]
-"synacktiv/nord-stream" ["l"="7.173,-12.238"]
-"boostsecurityio/poutine" ["l"="7.186,-12.255"]
-"trailofbits/semgrep-rules" ["l"="-48.153,-29.635"]
-"TupleType/awesome-cicd-attacks" ["l"="7.2,-12.203"]
+"DataDog/threatest" ["l"="7.061,-12.209", "c"=884]
+"DataDog/KubeHound" ["l"="7.125,-12.129", "c"=884]
+"synacktiv/nord-stream" ["l"="7.173,-12.238", "c"=884]
+"boostsecurityio/poutine" ["l"="7.186,-12.255", "c"=884]
+"trailofbits/semgrep-rules" ["l"="-48.153,-29.635", "c"=11]
+"TupleType/awesome-cicd-attacks" ["l"="7.2,-12.203", "c"=884]
 "Deci-AI/data-gradients" ["l"="7.681,-11.229"]
 "avilum/yalla" ["l"="7.744,-11.261"]
 "avilum/waycup" ["l"="7.756,-11.222"]
 "OligoCyberSecurity/ShellTorchChecker" ["l"="7.76,-11.277"]
 "wolfi-dev/tools" ["l"="7.99,-11.607"]
 "CycloneDX/license-scanner" ["l"="8.014,-11.228"]
+"cs-au-dk/jelly" ["l"="-1.808,-26.678", "c"=814]
 "CycloneDX/cyclonedx-node-npm" ["l"="7.957,-11.149"]
 "anchore/nvd-data-overrides" ["l"="8.038,-11.317"]
 "aideslucas/local-package-cli" ["l"="7.893,-11.392"]
 "DependencyTrack/hyades-apiserver" ["l"="8.038,-11.064"]
 "chainguard-dev/edu-images-demos" ["l"="8.015,-11.624"]
 "h4sh5/pypi-auto-scanner" ["l"="7.885,-11.321"]
+"google/capslock" ["l"="4.328,-8.729", "c"=0]
+"pipeless-ai/pipeless" ["l"="52.975,32.473", "c"=251]
 "aquasecurity/trivy-aws" ["l"="8.623,-11.396"]
-"aboutcode-org/aboutcode" ["l"="8.266,-11.243"]
+"TURROKS/CVE_Prioritizer" ["l"="8.209,-11.514"]
 "aboutcode-org/aboutcode-toolkit" ["l"="8.318,-11.243"]
 "bitnami/nami" ["l"="7.91,-11.402"]
-"bitnami/bitnami-docker-memcached" ["l"="5.974,-11.714"]
-"bitnami/bitnami-docker-ruby" ["l"="5.964,-11.721"]
-"bitnami/kube-libsonnet" ["l"="9.518,-11.322"]
-"juan131/dockerfile-best-practices" ["l"="-4.011,-27.843"]
+"bitnami/bitnami-docker-memcached" ["l"="5.974,-11.714", "c"=270]
+"bitnami/bitnami-docker-ruby" ["l"="5.964,-11.721", "c"=270]
+"bitnami/kube-libsonnet" ["l"="9.518,-11.322", "c"=834]
 "bitnami/blacksmith" ["l"="7.926,-11.404"]
-"bitnami/bitnami-docker-base" ["l"="5.976,-11.705"]
-"TURROKS/CVE_Prioritizer" ["l"="8.209,-11.514"]
+"bitnami/bitnami-docker-base" ["l"="5.976,-11.705", "c"=270]
 "t0sche/cvss-bt" ["l"="8.201,-11.485"]
 "Permiso-io-tools/CloudGrappler" ["l"="8.215,-11.628"]
-"xaitax/SploitScan" ["l"="-47.73,-29.687"]
-"justakazh/sicat" ["l"="-47.713,-29.605"]
-"securityjoes/MasterParser" ["l"="-42.175,-33.192"]
-"vulnerability-lookup/vulnerability-lookup" ["l"="-42.073,-33.347"]
-"center-for-threat-informed-defense/attack-flow" ["l"="-42.457,-33.098"]
+"xaitax/SploitScan" ["l"="-47.73,-29.687", "c"=11]
+"justakazh/sicat" ["l"="-47.713,-29.605", "c"=11]
+"securityjoes/MasterParser" ["l"="-42.175,-33.192", "c"=79]
+"vulnerability-lookup/vulnerability-lookup" ["l"="-42.073,-33.347", "c"=79]
+"center-for-threat-informed-defense/attack-flow" ["l"="-42.457,-33.098", "c"=79]
 "stacklok/frizbee" ["l"="8.096,-11.617"]
 "mindersec/minder-rules-and-profiles" ["l"="8.191,-11.614"]
 "stacklok/toolhive" ["l"="8.235,-11.61"]
-"stacklok/codegate" ["l"="8.262,-11.636"]
 "sigstore/model-transparency" ["l"="8.162,-11.534"]
+"microsoft/DevSkim" ["l"="-48.353,-29.466", "c"=11]
 "cado-security/cloudgrep" ["l"="8.212,-11.675"]
 "openpubkey/openpubkey" ["l"="8.048,-11.488"]
-"openpubkey/opkssh" ["l"="7.54,-9.215"]
+"openpubkey/opkssh" ["l"="7.54,-9.215", "c"=14]
+"malvuln/RansomLord" ["l"="-47.738,-32.326", "c"=41]
+"Permiso-io-tools/YetiHunter" ["l"="8.192,-11.659"]
 "protobom/sbom-convert" ["l"="8.113,-11.382"]
 "chainguard-dev/bomshell" ["l"="8.036,-11.357"]
+"uptane/obsolete-reference-implementation" ["l"="-16.647,-44.728", "c"=1016]
 "bitnami/oci-multi-tier" ["l"="7.821,-11.378"]
 "vmware-labs/vmware-image-builder-action" ["l"="7.812,-11.391"]
 "AppThreat/chen" ["l"="8.065,-11.081"]
@@ -2111,53 +2349,58 @@ digraph G {
 "kessler/license-report" ["l"="8.467,-11.128"]
 "RSeidelsohn/license-checker-rseidelsohn" ["l"="8.435,-11.153"]
 "iandotkelly/nlf" ["l"="8.449,-11.1"]
-"raimon49/pip-licenses" ["l"="8.463,-11.069"]
-"chaijs/chai-as-promised" ["l"="-0.218,-33.995"]
+"chaijs/chai-as-promised" ["l"="-0.218,-33.995", "c"=110]
 "codepunkt/webpack-license-plugin" ["l"="8.432,-11.125"]
-"victorb/trymodule" ["l"="22.724,-26.643"]
-"textlint/textlint" ["l"="5.971,-39.888"]
-"sindresorhus/np" ["l"="-0.754,-35.886"]
-"testing-library/react-hooks-testing-library" ["l"="-4.027,-29.407"]
-"nodesecurity/nsp" ["l"="-0.185,-34.022"]
+"victorb/trymodule" ["l"="22.724,-26.643", "c"=28]
+"textlint/textlint" ["l"="5.971,-39.888", "c"=154]
+"sindresorhus/np" ["l"="-0.754,-35.886", "c"=498]
+"testing-library/react-hooks-testing-library" ["l"="-4.027,-29.407", "c"=4]
+"nodesecurity/nsp" ["l"="-0.185,-34.022", "c"=110]
 "chainguard-dev/ghscan" ["l"="8.031,-11.57"]
-"chainguard-dev/osquery-defense-kit" ["l"="6.962,-12.201"]
-"r0binak/MTKPI" ["l"="7.15,-12.142"]
-"notaryproject/notary" ["l"="7.915,-8.692"]
-"uptane/obsolete-reference-implementation" ["l"="-16.647,-44.728"]
-"spiffe/spiffe" ["l"="8.07,-8.928"]
-"containernetworking/cni" ["l"="8.203,-9.017"]
-"appc/spec" ["l"="5.72,-12.499"]
+"r0binak/MTKPI" ["l"="7.15,-12.142", "c"=884]
+"spiffe/spiffe" ["l"="8.07,-8.928", "c"=14]
+"containernetworking/cni" ["l"="8.203,-9.017", "c"=14]
+"appc/spec" ["l"="5.72,-12.499", "c"=270]
 "cisagov/CSAF" ["l"="8.157,-11.377"]
-"Ostorlab/KEV" ["l"="-48.123,-29.237"]
-"cisagov/LME" ["l"="-42.294,-33.28"]
+"cisagov/LME" ["l"="-42.294,-33.28", "c"=79]
+"securitytemplates/sectemplates" ["l"="-42.22,-33.222", "c"=79]
 "BSI-Bund/secvisogram" ["l"="8.161,-11.32"]
 "aquasecurity/postee" ["l"="8.659,-11.377"]
 "aquasecurity/terraform-provider-aquasec" ["l"="8.715,-11.389"]
+"github/gh-copilot" ["l"="7.81,-45.277", "c"=544]
+"google/osv-scalibr" ["l"="7.424,-12.324", "c"=884]
+"prompt-security/ps-fuzz" ["l"="38.044,-7.514", "c"=448]
 "Permiso-io-tools/CloudConsoleCartographer" ["l"="8.239,-11.677"]
-"Permiso-io-tools/YetiHunter" ["l"="8.192,-11.659"]
+"actions/attest-build-provenance" ["l"="8.921,-44.816", "c"=828]
+"secengjeff/awskillswitch" ["l"="37.906,-7.423", "c"=448]
 "actions/publish-immutable-action" ["l"="8.053,-11.653"]
 "jonjohnsonjr/dagdotdev" ["l"="7.951,-11.645"]
-"edera-dev/styrolite" ["l"="7.401,-12.266"]
-"primeharbor/sensitive_iam_actions" ["l"="11.119,-4.497"]
+"edera-dev/styrolite" ["l"="7.401,-12.266", "c"=884]
+"primeharbor/sensitive_iam_actions" ["l"="11.119,-4.497", "c"=147]
 "SAP/cloud-active-defense" ["l"="8.25,-11.72"]
 "usnistgov/vulntology" ["l"="8.327,-11.448"]
 "CVEProject/cveproject.github.io" ["l"="8.341,-11.463"]
 "anchore/vulnerability-data-tools" ["l"="8.009,-11.311"]
 "kusaridev/skootrs" ["l"="7.676,-11.456"]
-"ragpi/ragpi" ["l"="8.29,-11.685"]
+"zizmorcore/zizmor" ["l"="7.127,-12.26", "c"=884]
+"rustsec/advisory-db" ["l"="-9.778,-6.5", "c"=5]
+"mike-engel/jwt-cli" ["l"="7.373,-9.16", "c"=14]
+"secureCodeBox/secureCodeBox" ["l"="28.361,-23.942", "c"=895]
+"arminc/clair-scanner" ["l"="7.527,-8.603", "c"=14]
+"StacklokLabs/promptwright" ["l"="38.305,-0.606", "c"=39]
 "StacklokLabs/mockllm" ["l"="8.303,-11.66"]
-"Michaelzag/RooCode-Tips-Tricks" ["l"="42.058,2.209"]
-"The-Pocket-World/PocketManus" ["l"="42.58,1.849"]
+"ragpi/ragpi" ["l"="8.29,-11.685"]
+"Michaelzag/RooCode-Tips-Tricks" ["l"="42.058,2.209", "c"=1083]
+"The-Pocket-World/PocketManus" ["l"="42.58,1.849", "c"=952]
 "SBOM-Community/SBOM-Generation" ["l"="8.046,-11.157"]
 "spdx/spdx-maven-plugin" ["l"="8.021,-11.129"]
-"mojohaus/extra-enforcer-rules" ["l"="-1.768,11.952"]
-"apache/maven-enforcer" ["l"="-1.789,11.999"]
-"khmarbaise/maven-it-extension" ["l"="-1.859,11.942"]
-"s4u/sign-maven-plugin" ["l"="-1.856,11.967"]
-"SAP/project-kb" ["l"="36.241,-0.534"]
+"mojohaus/extra-enforcer-rules" ["l"="-1.768,11.952", "c"=15]
+"apache/maven-enforcer" ["l"="-1.789,11.999", "c"=15]
+"khmarbaise/maven-it-extension" ["l"="-1.859,11.942", "c"=15]
+"s4u/sign-maven-plugin" ["l"="-1.856,11.967", "c"=15]
+"SAP/project-kb" ["l"="36.241,-0.534", "c"=315]
 "StacklokLabs/mkp" ["l"="8.238,-11.639"]
 "spdx/meetings" ["l"="8.14,-11.171"]
-"CycloneDX/cyclonedx-rust-cargo" ["l"="7.994,-11.2"]
 "aquasecurity/aqua-operator" ["l"="8.781,-11.423"]
 "CycloneDX/cyclonedx-webpack-plugin" ["l"="7.978,-11.174"]
 "lukehinds/fastllm" ["l"="8.324,-11.675"]

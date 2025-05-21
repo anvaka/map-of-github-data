@@ -1,4 +1,8 @@
 digraph G {
+"bytedeco/javacpp-presets" -> "bytedeco/javacpp" ["e"=1]
+"bytedeco/javacpp-presets" -> "deeplearning4j/nd4j" ["e"=1]
+"bytedeco/javacpp-presets" -> "deeplearning4j/deeplearning4j-examples" ["e"=1]
+"ta4j/ta4j" -> "OpenGamma/Strata" ["e"=1]
 "OpenHFT/Chronicle-Queue" -> "OpenHFT/Chronicle-Map"
 "OpenHFT/Chronicle-Queue" -> "aeron-io/aeron"
 "OpenHFT/Chronicle-Queue" -> "aeron-io/agrona"
@@ -14,6 +18,7 @@ digraph G {
 "OpenHFT/Chronicle-Queue" -> "OpenHFT/Zero-Allocation-Hashing"
 "OpenHFT/Chronicle-Queue" -> "caplogic/Mappedbus"
 "OpenHFT/Chronicle-Queue" -> "leventov/Koloboke"
+"EsotericSoftware/kryo" -> "RuedigerMoeller/fast-serialization" ["e"=1]
 "openjdk/jmh" -> "openjdk/jol"
 "openjdk/jmh" -> "async-profiler/async-profiler"
 "openjdk/jmh" -> "melix/jmh-gradle-plugin"
@@ -29,6 +34,13 @@ digraph G {
 "openjdk/jmh" -> "openjdk/jdk" ["e"=1]
 "openjdk/jmh" -> "awaitility/awaitility" ["e"=1]
 "openjdk/jmh" -> "reactor/reactor-core" ["e"=1]
+"eclipse-openj9/openj9" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"eclipse-openj9/openj9" -> "async-profiler/async-profiler" ["e"=1]
+"VerbalExpressions/JavaVerbalExpressions" -> "aeron-io/agrona" ["e"=1]
+"java-native-access/jna" -> "bytedeco/javacpp" ["e"=1]
+"deeplearning4j/deeplearning4j" -> "deeplearning4j/deeplearning4j-examples" ["e"=1]
+"deeplearning4j/deeplearning4j" -> "deeplearning4j/nd4j" ["e"=1]
+"bytedeco/javacv" -> "bytedeco/javacpp" ["e"=1]
 "bytedeco/javacpp" -> "bytedeco/javacpp-presets" ["e"=1]
 "bytedeco/javacpp" -> "bytedeco/javacv" ["e"=1]
 "bytedeco/javacpp" -> "java-native-access/jna" ["e"=1]
@@ -44,6 +56,12 @@ digraph G {
 "bytedeco/javacpp" -> "aeron-io/aeron"
 "bytedeco/javacpp" -> "jankotek/mapdb"
 "bytedeco/javacpp" -> "deeplearning4j/deeplearning4j" ["e"=1]
+"raphw/byte-buddy" -> "JCTools/JCTools" ["e"=1]
+"raphw/byte-buddy" -> "async-profiler/async-profiler" ["e"=1]
+"raphw/byte-buddy" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"filamentgroup/tablesaw" -> "shekhargulati/strman-java" ["e"=1]
+"filamentgroup/tablesaw" -> "bootique/bootique" ["e"=1]
+"filamentgroup/tablesaw" -> "worstcase/gumshoe" ["e"=1]
 "EsotericSoftware/reflectasm" -> "EsotericSoftware/kryo" ["e"=1]
 "EsotericSoftware/reflectasm" -> "JCTools/JCTools"
 "EsotericSoftware/reflectasm" -> "raphw/byte-buddy" ["e"=1]
@@ -59,6 +77,9 @@ digraph G {
 "EsotericSoftware/reflectasm" -> "jOOQ/jOOR" ["e"=1]
 "EsotericSoftware/reflectasm" -> "kamranzafar/JCL"
 "EsotericSoftware/reflectasm" -> "OpenHFT/Java-Thread-Affinity"
+"jOOQ/jOOL" -> "npgall/cqengine" ["e"=1]
+"palatable/lambda" -> "aeron-io/agrona" ["e"=1]
+"cxxr/better-java" -> "shekhargulati/99-problems" ["e"=1]
 "corretto/corretto-11" -> "corretto/corretto-8" ["e"=1]
 "corretto/corretto-11" -> "corretto/corretto-17"
 "corretto/corretto-11" -> "corretto/corretto-jdk"
@@ -69,6 +90,23 @@ digraph G {
 "corretto/corretto-11" -> "corretto/amazon-corretto-crypto-provider" ["e"=1]
 "corretto/corretto-11" -> "dragonwell-project/dragonwell11"
 "corretto/corretto-11" -> "adoptium/temurin-build" ["e"=1]
+"Kong/unirest-java" -> "jankotek/mapdb" ["e"=1]
+"wolfcw/libfaketime" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"corretto/corretto-8" -> "corretto/corretto-11" ["e"=1]
+"corretto/corretto-8" -> "corretto/corretto-8-docker" ["e"=1]
+"corretto/corretto-8" -> "corretto/corretto-17" ["e"=1]
+"corretto/corretto-8" -> "corretto/corretto-jdk" ["e"=1]
+"corretto/corretto-8" -> "corretto/corretto-11-docker" ["e"=1]
+"corretto/corretto-8" -> "openjdk/jmc" ["e"=1]
+"code-review-checklists/java-concurrency" -> "odnoklassniki/one-nio" ["e"=1]
+"code-review-checklists/java-concurrency" -> "JCTools/JCTools" ["e"=1]
+"code-review-checklists/java-concurrency" -> "aeron-io/agrona" ["e"=1]
+"code-review-checklists/java-concurrency" -> "openjdk/jcstress" ["e"=1]
+"code-review-checklists/java-concurrency" -> "async-profiler/async-profiler" ["e"=1]
+"code-review-checklists/java-concurrency" -> "aragozin/jvm-tools" ["e"=1]
+"code-review-checklists/java-concurrency" -> "deephacks/awesome-jvm" ["e"=1]
+"qubole/sparklens" -> "uber-common/jvm-profiler" ["e"=1]
+"LeonardoZ/java-concurrency-patterns" -> "deephacks/awesome-jvm" ["e"=1]
 "brettwooldridge/NuProcess" -> "brettwooldridge/SansOrm"
 "brettwooldridge/NuProcess" -> "brettwooldridge/SparseBitSet"
 "brettwooldridge/NuProcess" -> "brettwooldridge/HikariJSON"
@@ -84,6 +122,11 @@ digraph G {
 "brettwooldridge/NuProcess" -> "OpenHFT/Zero-Allocation-Hashing"
 "brettwooldridge/NuProcess" -> "classgraph/classgraph" ["e"=1]
 "brettwooldridge/NuProcess" -> "RuedigerMoeller/kontraktor"
+"google/jimfs" -> "google/caliper" ["e"=1]
+"google/jimfs" -> "google/re2j" ["e"=1]
+"google/jimfs" -> "jankotek/mapdb" ["e"=1]
+"google/jimfs" -> "vigna/fastutil" ["e"=1]
+"google/jimfs" -> "aeron-io/agrona" ["e"=1]
 "AdoptOpenJDK/jitwatch" -> "async-profiler/async-profiler"
 "AdoptOpenJDK/jitwatch" -> "JCTools/JCTools"
 "AdoptOpenJDK/jitwatch" -> "jvm-profiling-tools/honest-profiler"
@@ -114,6 +157,9 @@ digraph G {
 "JCTools/JCTools" -> "ben-manes/caffeine" ["e"=1]
 "JCTools/JCTools" -> "btraceio/btrace" ["e"=1]
 "JCTools/JCTools" -> "OpenHFT/Chronicle-Queue"
+"adamfisk/LittleProxy" -> "jankotek/mapdb" ["e"=1]
+"libtrading/libtrading" -> "penberg/falcon" ["e"=1]
+"libtrading/libtrading" -> "paritytrading/parity" ["e"=1]
 "aeron-io/simple-binary-encoding" -> "aeron-io/aeron"
 "aeron-io/simple-binary-encoding" -> "aeron-io/agrona"
 "aeron-io/simple-binary-encoding" -> "FIXTradingCommunity/fix-simple-binary-encoding" ["e"=1]
@@ -144,6 +190,12 @@ digraph G {
 "aeron-io/aeron" -> "AdoptOpenJDK/jitwatch"
 "aeron-io/aeron" -> "exchange-core/exchange-core" ["e"=1]
 "aeron-io/aeron" -> "vavr-io/vavr" ["e"=1]
+"dremio/gandiva" -> "airlift/slice" ["e"=1]
+"pivovarit/parallel-collectors" -> "OpenHFT/Chronicle-Core" ["e"=1]
+"pivovarit/parallel-collectors" -> "cache2k/cache2k" ["e"=1]
+"EsotericSoftware/yamlbeans" -> "EsotericSoftware/reflectasm" ["e"=1]
+"rapidoid/rapidoid" -> "ngs-doo/dsl-json" ["e"=1]
+"rapidoid/rapidoid" -> "aeron-io/agrona" ["e"=1]
 "RoaringBitmap/RoaringBitmap" -> "apache/calcite" ["e"=1]
 "RoaringBitmap/RoaringBitmap" -> "JCTools/JCTools"
 "RoaringBitmap/RoaringBitmap" -> "async-profiler/async-profiler"
@@ -159,6 +211,11 @@ digraph G {
 "RoaringBitmap/RoaringBitmap" -> "RoaringBitmap/CRoaring" ["e"=1]
 "RoaringBitmap/RoaringBitmap" -> "btraceio/btrace" ["e"=1]
 "RoaringBitmap/RoaringBitmap" -> "facebookincubator/velox" ["e"=1]
+"linkedin/ambry" -> "linkedin/PalDB" ["e"=1]
+"linkedin/ambry" -> "atomix/copycat" ["e"=1]
+"linkedin/ambry" -> "atomix/atomix" ["e"=1]
+"sofastack/sofa-jraft" -> "JCTools/JCTools" ["e"=1]
+"sofastack/sofa-jraft" -> "atomix/atomix" ["e"=1]
 "OpenHFT/Java-Runtime-Compiler" -> "michaelliao/compiler"
 "OpenHFT/Java-Runtime-Compiler" -> "trung/InMemoryJavaCompiler"
 "OpenHFT/Java-Runtime-Compiler" -> "janino-compiler/janino" ["e"=1]
@@ -174,6 +231,15 @@ digraph G {
 "OpenHFT/Java-Runtime-Compiler" -> "OpenHFT/Chronicle-Logger"
 "OpenHFT/Java-Runtime-Compiler" -> "aeron-io/agrona"
 "OpenHFT/Java-Runtime-Compiler" -> "OpenHFT/Chronicle-Values"
+"reactive-streams/reactive-streams-jvm" -> "JCTools/JCTools" ["e"=1]
+"protostuff/protostuff" -> "JCTools/JCTools" ["e"=1]
+"protostuff/protostuff" -> "RuedigerMoeller/fast-serialization" ["e"=1]
+"dgtony/orderbook-rs" -> "dharmeshsing/CoinTossX" ["e"=1]
+"exchange-core/exchange-core" -> "OpenHFT/Chronicle-Queue" ["e"=1]
+"exchange-core/exchange-core" -> "aeron-io/agrona" ["e"=1]
+"exchange-core/exchange-core" -> "paritytrading/parity" ["e"=1]
+"exchange-core/exchange-core" -> "aeron-io/aeron" ["e"=1]
+"exchange-core/exchange-core" -> "OpenHFT/OpenHFT" ["e"=1]
 "openjdk/jcov" -> "openjdk/metropolis"
 "quickfix-j/quickfixj" -> "quickfix/quickfix" ["e"=1]
 "quickfix-j/quickfixj" -> "esanchezros/quickfixj-spring-boot-starter"
@@ -211,6 +277,7 @@ digraph G {
 "dflib/dflib" -> "vmzakharov/dataframe-ec"
 "dflib/dflib" -> "apache/cayenne"
 "dflib/dflib" -> "tginsberg/gatherers4j" ["e"=1]
+"dekorateio/dekorate" -> "cryostatio/cryostat-legacy" ["e"=1]
 "c-guntur/java-katas" -> "BNYMellon/CodeKatas"
 "c-guntur/java-katas" -> "vmzakharov/mutate-test-kata"
 "c-guntur/java-katas" -> "BNYMellon/spring-kata"
@@ -230,6 +297,18 @@ digraph G {
 "IDouble/x86-Assembly-Reverse-Engineering" -> "IDouble/Decentralized-World-Wide-Web-ERC-721"
 "IDouble/x86-Assembly-Reverse-Engineering" -> "IDouble/Gold-Silver-Ratio-Metal-Chart"
 "IDouble/x86-Assembly-Reverse-Engineering" -> "IDouble/Market-Overview-Indexes-Forex-Metals-Crypto"
+"RichardWarburton/java-8-lambdas-exercises" -> "shekhargulati/99-problems" ["e"=1]
+"Netflix/concurrency-limits" -> "async-profiler/async-profiler" ["e"=1]
+"Netflix/concurrency-limits" -> "aeron-io/agrona" ["e"=1]
+"Netflix/concurrency-limits" -> "JCTools/JCTools" ["e"=1]
+"Netflix/concurrency-limits" -> "aragozin/jvm-tools" ["e"=1]
+"openjdk/loom" -> "openjdk/valhalla" ["e"=1]
+"openjdk/loom" -> "openjdk/amber" ["e"=1]
+"openjdk/loom" -> "openjdk/jmc" ["e"=1]
+"openjdk/loom" -> "openjdk/jmh" ["e"=1]
+"openjdk/loom" -> "openjdk/panama-foreign" ["e"=1]
+"openjdk/loom" -> "JCTools/JCTools" ["e"=1]
+"lyft/presto-gateway" -> "airlift/slice" ["e"=1]
 "belaban/JGroups" -> "jgroups-extras/jgroups-raft"
 "belaban/JGroups" -> "infinispan/infinispan"
 "belaban/JGroups" -> "atomix/atomix"
@@ -245,6 +324,9 @@ digraph G {
 "belaban/JGroups" -> "apache/geode" ["e"=1]
 "belaban/JGroups" -> "JCTools/JCTools"
 "belaban/JGroups" -> "hazelcast/hazelcast" ["e"=1]
+"dragonwell-project/dragonwell8" -> "dragonwell-project/dragonwell11" ["e"=1]
+"dragonwell-project/dragonwell8" -> "Tencent/TencentKona-8" ["e"=1]
+"aaberg/sql2o" -> "jankotek/mapdb" ["e"=1]
 "JetBrains/xodus" -> "JetBrains/xodus-dnq"
 "JetBrains/xodus" -> "lmdbjava/lmdbjava"
 "JetBrains/xodus" -> "jankotek/mapdb"
@@ -260,6 +342,14 @@ digraph G {
 "JetBrains/xodus" -> "sksamuel/hoplite" ["e"=1]
 "JetBrains/xodus" -> "yahoo/HaloDB"
 "JetBrains/xodus" -> "caplogic/Mappedbus"
+"akumuli/Akumuli" -> "indeedeng/lsmtree" ["e"=1]
+"tdebatty/java-string-similarity" -> "aeron-io/agrona" ["e"=1]
+"tdebatty/java-string-similarity" -> "vigna/fastutil" ["e"=1]
+"tdebatty/java-string-similarity" -> "jankotek/mapdb" ["e"=1]
+"raft/raft.github.io" -> "atomix/copycat" ["e"=1]
+"smacke/jaydio" -> "OpenHFT/Java-Thread-Affinity" ["e"=1]
+"bethrobson/Head-First-Design-Patterns" -> "shekhargulati/99-problems" ["e"=1]
+"easymock/objenesis" -> "EsotericSoftware/reflectasm" ["e"=1]
 "openjdk/jmc" -> "JDKMissionControl/jmc"
 "openjdk/jmc" -> "thegreystone/jmc-tutorial"
 "openjdk/jmc" -> "flight-recorder/health-report"
@@ -275,6 +365,7 @@ digraph G {
 "openjdk/jmc" -> "moditect/jfrunit" ["e"=1]
 "openjdk/jmc" -> "AdoptOpenJDK/jitwatch"
 "openjdk/jmc" -> "openjdk/jcstress"
+"tobert/pcstat" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
 "RuedigerMoeller/fast-serialization" -> "EsotericSoftware/kryo" ["e"=1]
 "RuedigerMoeller/fast-serialization" -> "OpenHFT/Chronicle-Map"
 "RuedigerMoeller/fast-serialization" -> "RuedigerMoeller/kontraktor"
@@ -354,6 +445,11 @@ digraph G {
 "addthis/stream-lib" -> "OpenHFT/Chronicle-Map"
 "addthis/stream-lib" -> "apache/gobblin" ["e"=1]
 "addthis/stream-lib" -> "alibaba/jstorm" ["e"=1]
+"AsyncHttpClient/async-http-client" -> "JCTools/JCTools" ["e"=1]
+"glowroot/glowroot" -> "jvm-profiling-tools/honest-profiler" ["e"=1]
+"glowroot/glowroot" -> "aragozin/jvm-tools" ["e"=1]
+"glowroot/glowroot" -> "uber-common/jvm-profiler" ["e"=1]
+"nurkiewicz/async-retry" -> "vibur/vibur-object-pool" ["e"=1]
 "apple/servicetalk" -> "apangin/nalim"
 "apple/servicetalk" -> "rsocket/rsocket-java" ["e"=1]
 "apple/servicetalk" -> "line/armeria" ["e"=1]
@@ -369,6 +465,7 @@ digraph G {
 "apple/servicetalk" -> "brettwooldridge/NuProcess"
 "apple/servicetalk" -> "jzillmann/jmh-visualizer"
 "apple/servicetalk" -> "netty/netty-incubator-codec-quic" ["e"=1]
+"jblas-project/jblas" -> "deeplearning4j/nd4j" ["e"=1]
 "OpenHFT/Java-Thread-Affinity" -> "JCTools/JCTools"
 "OpenHFT/Java-Thread-Affinity" -> "OpenHFT/Chronicle-Queue"
 "OpenHFT/Java-Thread-Affinity" -> "OpenHFT/Chronicle-Map"
@@ -401,12 +498,32 @@ digraph G {
 "carrotsearch/hppc" -> "OpenHFT/Java-Thread-Affinity"
 "aggregateknowledge/java-hll" -> "addthis/stream-lib"
 "aggregateknowledge/java-hll" -> "prasanthj/hyperloglog"
+"mvel/mvel" -> "snazy/ohc" ["e"=1]
+"ScottOaks/JavaPerformanceTuning" -> "AdoptOpenJDK/jitwatch" ["e"=1]
 "kamranzafar/JCL" -> "oldratlee/land" ["e"=1]
 "kamranzafar/JCL" -> "OpenHFT/Java-Runtime-Compiler"
 "kamranzafar/JCL" -> "EsotericSoftware/reflectasm"
 "kamranzafar/JCL" -> "sofastack/sofa-ark" ["e"=1]
 "kamranzafar/JCL" -> "kamranzafar/jddl"
+"Netflix/flamescope" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"Netflix/flamescope" -> "async-profiler/async-profiler" ["e"=1]
+"twitter-archive/commons" -> "aragozin/jvm-tools" ["e"=1]
+"stagemonitor/stagemonitor" -> "aragozin/jvm-tools" ["e"=1]
+"stagemonitor/stagemonitor" -> "uber-common/jvm-profiler" ["e"=1]
+"hyperic/sigar" -> "OpenHFT/Java-Thread-Affinity" ["e"=1]
+"hyperic/sigar" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"hyperic/sigar" -> "lz4/lz4-java" ["e"=1]
+"SpencerPark/IJava" -> "jtablesaw/tablesaw" ["e"=1]
+"ninia/jep" -> "deeplearning4j/nd4j" ["e"=1]
+"ninia/jep" -> "bytedeco/javacpp" ["e"=1]
+"amaggiulli/QLNet" -> "OpenGamma/Strata" ["e"=1]
 "influxdata/tdigest" -> "caio/go-tdigest"
+"robert-bor/aho-corasick" -> "google/re2j" ["e"=1]
+"robert-bor/aho-corasick" -> "leventov/Koloboke" ["e"=1]
+"robert-bor/aho-corasick" -> "OpenHFT/Chronicle-Map" ["e"=1]
+"robert-bor/aho-corasick" -> "OpenHFT/Zero-Allocation-Hashing" ["e"=1]
+"robert-bor/aho-corasick" -> "fast-pack/JavaFastPFOR" ["e"=1]
+"bramp/ffmpeg-cli-wrapper" -> "bytedeco/javacpp" ["e"=1]
 "tdunning/t-digest" -> "CamDavidsonPilon/tdigest"
 "tdunning/t-digest" -> "HdrHistogram/HdrHistogram"
 "tdunning/t-digest" -> "addthis/stream-lib"
@@ -422,6 +539,8 @@ digraph G {
 "tdunning/t-digest" -> "spenczar/tdigest"
 "tdunning/t-digest" -> "twitter-archive/distributedlog" ["e"=1]
 "tdunning/t-digest" -> "pipelinedb/pipelinedb" ["e"=1]
+"zeroturnaround/zt-exec" -> "brettwooldridge/NuProcess" ["e"=1]
+"zeroturnaround/zt-exec" -> "kamranzafar/JCL" ["e"=1]
 "jnr/jnr-ffi" -> "SerCeMan/jnr-fuse" ["e"=1]
 "jnr/jnr-ffi" -> "jnr/jnr-posix"
 "jnr/jnr-ffi" -> "jnr/jffi"
@@ -437,6 +556,12 @@ digraph G {
 "jnr/jnr-ffi" -> "zakgof/java-native-benchmark"
 "jnr/jnr-ffi" -> "brettwooldridge/NuProcess"
 "jnr/jnr-ffi" -> "RuedigerMoeller/fast-serialization"
+"jhalterman/expiringmap" -> "cache2k/cache2k" ["e"=1]
+"jhalterman/expiringmap" -> "JCTools/JCTools" ["e"=1]
+"jhalterman/expiringmap" -> "jankotek/mapdb" ["e"=1]
+"chronoxor/FastBinaryEncoding" -> "aeron-io/simple-binary-encoding" ["e"=1]
+"openmessaging/dledger" -> "JCTools/JCTools" ["e"=1]
+"guobinhit/akka-guide" -> "snazy/ohc" ["e"=1]
 "devexperts/aprof" -> "google/allocation-instrumenter"
 "devexperts/aprof" -> "gunnarmorling/jfr-custom-events"
 "IDouble/Customizable-Crypto-Currency-Dashboard-with-Chart" -> "IDouble/Market-Overview-Indexes-Forex-Metals-Crypto"
@@ -455,11 +580,16 @@ digraph G {
 "IDouble/Customizable-Crypto-Currency-Dashboard-with-Chart" -> "IDouble/Trinary-Calculator-JavaScript"
 "IDouble/Customizable-Crypto-Currency-Dashboard-with-Chart" -> "IDouble/Simple-Memory-Reading-Writing"
 "esanchezros/quickfixj-spring-boot-starter-examples" -> "esanchezros/quickfixj-spring-boot-starter"
+"Netflix/iceberg" -> "uber-common/jvm-profiler" ["e"=1]
 "IDouble/Deep-Learning-Machine-Learning-AI-TensorFlow-Python" -> "IDouble/Python-Scripts"
 "IDouble/Deep-Learning-Machine-Learning-AI-TensorFlow-Python" -> "IDouble/Pandas-Python-Data-Analysis-Playground"
 "IDouble/Deep-Learning-Machine-Learning-AI-TensorFlow-Python" -> "IDouble/Binary-Calculator-Android-Java-App"
 "IDouble/Deep-Learning-Machine-Learning-AI-TensorFlow-Python" -> "IDouble/BMI-Calculator-JavaScript"
 "IDouble/Deep-Learning-Machine-Learning-AI-TensorFlow-Python" -> "IDouble/BMI-Calculator-Android-Java-App"
+"sjsdfg/dl4j-tutorials" -> "deeplearning4j/deeplearning4j-examples" ["e"=1]
+"connamara/quickfixn" -> "quickfix-j/quickfixj" ["e"=1]
+"quickfix/quickfix" -> "quickfix-j/quickfixj" ["e"=1]
+"quickfix/quickfix" -> "aeron-io/simple-binary-encoding" ["e"=1]
 "leventov/Koloboke" -> "carrotsearch/hppc"
 "leventov/Koloboke" -> "vigna/fastutil"
 "leventov/Koloboke" -> "OpenHFT/Chronicle-Map"
@@ -475,6 +605,7 @@ digraph G {
 "leventov/Koloboke" -> "lz4/lz4-java"
 "leventov/Koloboke" -> "giltene/jHiccup"
 "leventov/Koloboke" -> "RuedigerMoeller/fast-serialization"
+"kstyrc/embedded-redis" -> "OpenHFT/Java-Thread-Affinity" ["e"=1]
 "IDouble/HTML-Crypto-Currency-Chart-Snippets" -> "IDouble/Customizable-Crypto-Currency-Dashboard-with-Chart"
 "IDouble/HTML-Crypto-Currency-Chart-Snippets" -> "IDouble/Market-Overview-Indexes-Forex-Metals-Crypto"
 "IDouble/HTML-Crypto-Currency-Chart-Snippets" -> "IDouble/Simple-Game-ERC-721-Token-Template"
@@ -490,6 +621,8 @@ digraph G {
 "IDouble/HTML-Crypto-Currency-Chart-Snippets" -> "IDouble/BMI-Calculator-JavaScript"
 "IDouble/HTML-Crypto-Currency-Chart-Snippets" -> "IDouble/x86-Assembly-Reverse-Engineering"
 "IDouble/HTML-Crypto-Currency-Chart-Snippets" -> "IDouble/Simple-Memory-Reading-Writing"
+"marchof/java-almanac" -> "jzillmann/jmh-visualizer" ["e"=1]
+"marchof/java-almanac" -> "openjdk/jmc" ["e"=1]
 "IDouble/Binary-Calculator-JavaScript" -> "IDouble/Trinary-Calculator-JavaScript"
 "IDouble/Binary-Calculator-JavaScript" -> "IDouble/BMI-Calculator-JavaScript"
 "IDouble/Binary-Calculator-JavaScript" -> "IDouble/Binary-Calculator-Android-Java-App"
@@ -512,11 +645,21 @@ digraph G {
 "IDouble/BMI-Calculator-JavaScript" -> "IDouble/Simple-Disassembly-Notes"
 "IDouble/BMI-Calculator-JavaScript" -> "IDouble/Decentralized-World-Wide-Web-ERC-721"
 "IDouble/BMI-Calculator-JavaScript" -> "IDouble/Python-Scripts"
+"yomorun/hashids-java" -> "cache2k/cache2k" ["e"=1]
+"shekhargulati/30-seconds-of-java" -> "shekhargulati/99-problems" ["e"=1]
+"shekhargulati/30-seconds-of-java" -> "shekhargulati/strman-java" ["e"=1]
+"oracle/graalpython" -> "beehive-lab/TornadoVM" ["e"=1]
 "paritytrading/nassau" -> "paritytrading/juncture"
 "paritytrading/nassau" -> "jvirtanen/nasdaq-tools"
 "paritytrading/nassau" -> "jvirtanen/node-soupbintcp"
 "paritytrading/nassau" -> "Amay22/NASDAQ-ITCH-5.0-Parser"
 "paritytrading/nassau" -> "paritytrading/philadelphia"
+"msgpack/msgpack-java" -> "EsotericSoftware/reflectasm" ["e"=1]
+"msgpack/msgpack-java" -> "lz4/lz4-java" ["e"=1]
+"msgpack/msgpack-java" -> "zeromq/jeromq" ["e"=1]
+"msgpack/msgpack-java" -> "caplogic/Mappedbus" ["e"=1]
+"msgpack/msgpack-java" -> "RuedigerMoeller/fast-serialization" ["e"=1]
+"msgpack/msgpack-java" -> "xerial/snappy-java" ["e"=1]
 "cache2k/cache2k" -> "vigna/fastutil"
 "cache2k/cache2k" -> "OpenHFT/Chronicle-Wire"
 "cache2k/cache2k" -> "OpenHFT/Chronicle-Core"
@@ -532,6 +675,9 @@ digraph G {
 "cache2k/cache2k" -> "TimeAndSpaceIO/SmoothieMap"
 "cache2k/cache2k" -> "ratpack/ratpack" ["e"=1]
 "cache2k/cache2k" -> "JCTools/JCTools"
+"google/flogger" -> "google/mug" ["e"=1]
+"google/flogger" -> "google/re2j" ["e"=1]
+"google/flogger" -> "JCTools/JCTools" ["e"=1]
 "BNYMellon/CodeKatas" -> "eclipse-collections/eclipse-collections-kata"
 "BNYMellon/CodeKatas" -> "c-guntur/java-katas"
 "BNYMellon/CodeKatas" -> "BNYMellon/spring-kata"
@@ -539,6 +685,7 @@ digraph G {
 "BNYMellon/CodeKatas" -> "eclipse-collections/eclipse-collections" ["e"=1]
 "BNYMellon/CodeKatas" -> "BNYMellon/graphql-kata"
 "BNYMellon/CodeKatas" -> "rafadelnero/javachallengers" ["e"=1]
+"tbroyer/gradle-errorprone-plugin" -> "melix/jmh-gradle-plugin" ["e"=1]
 "giltene/jHiccup" -> "HdrHistogram/HdrHistogram"
 "giltene/jHiccup" -> "jvm-profiling-tools/honest-profiler"
 "giltene/jHiccup" -> "LatencyUtils/LatencyUtils"
@@ -554,9 +701,17 @@ digraph G {
 "giltene/jHiccup" -> "TimeAndSpaceIO/SmoothieMap"
 "giltene/jHiccup" -> "RichardWarburton/slab"
 "giltene/jHiccup" -> "caplogic/Mappedbus"
+"dstat-real/dstat" -> "patric-r/jvmtop" ["e"=1]
+"dstat-real/dstat" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"dstat-real/dstat" -> "coderplay/perfj" ["e"=1]
+"jiaqi/jmxterm" -> "patric-r/jvmtop" ["e"=1]
 "boundary/high-scale-lib" -> "boundary/overlock" ["e"=1]
 "boundary/high-scale-lib" -> "LatencyUtils/LatencyUtils"
 "boundary/high-scale-lib" -> "google/allocation-instrumenter"
+"ivan-vasilev/neuralnetworks" -> "deeplearning4j/nd4j" ["e"=1]
+"stateless4j/stateless4j" -> "robertvazan/noexception" ["e"=1]
+"stateless4j/stateless4j" -> "JCTools/JCTools" ["e"=1]
+"stateless4j/stateless4j" -> "EsotericSoftware/reflectasm" ["e"=1]
 "cryostatio/cryostat-legacy" -> "cryostatio/cryostat-operator"
 "cryostatio/cryostat-legacy" -> "cryostatio/jfr-datasource"
 "cryostatio/cryostat-legacy" -> "gunnarmorling/jfr-custom-events"
@@ -566,6 +721,7 @@ digraph G {
 "cryostatio/cryostat-legacy" -> "flight-recorder/samples"
 "openjdk/zgc" -> "openjdk/shenandoah"
 "openjdk/zgc" -> "openjdk/panama-foreign"
+"mdeverdelhan/ta4j-origins" -> "tools4j/decimal4j" ["e"=1]
 "beehive-lab/TornadoVM" -> "Syncleus/aparapi"
 "beehive-lab/TornadoVM" -> "NVIDIA/grcuda" ["e"=1]
 "beehive-lab/TornadoVM" -> "openjdk/jextract"
@@ -597,6 +753,10 @@ digraph G {
 "jbellis/jamm" -> "foursquare/heapaudit" ["e"=1]
 "jbellis/jamm" -> "airlift/slice"
 "ning/jvm-compressor-benchmark" -> "ning/compress"
+"hrldcpr/pcollections" -> "carrotsearch/hppc" ["e"=1]
+"hrldcpr/pcollections" -> "melix/jmh-gradle-plugin" ["e"=1]
+"hrldcpr/pcollections" -> "xerial/larray" ["e"=1]
+"hrldcpr/pcollections" -> "JetBrains/xodus" ["e"=1]
 "infinispan/infinispan" -> "belaban/JGroups"
 "infinispan/infinispan" -> "smallrye/smallrye-mutiny" ["e"=1]
 "infinispan/infinispan" -> "hazelcast/hazelcast" ["e"=1]
@@ -612,10 +772,17 @@ digraph G {
 "infinispan/infinispan" -> "apache/activemq-artemis" ["e"=1]
 "infinispan/infinispan" -> "apache/camel-quarkus" ["e"=1]
 "infinispan/infinispan" -> "infinispan/infinispan-console"
+"jhalterman/typetools" -> "npgall/cqengine" ["e"=1]
+"jhalterman/typetools" -> "EsotericSoftware/reflectasm" ["e"=1]
 "ObjectLayout/ObjectLayout" -> "LatencyUtils/LatencyUtils"
 "ObjectLayout/ObjectLayout" -> "xedin/windmill"
 "ObjectLayout/ObjectLayout" -> "graalvm/graal-core" ["e"=1]
 "ObjectLayout/ObjectLayout" -> "openjdk/shenandoah-visualizer"
+"puniverse/capsule" -> "LatencyUtils/LatencyUtils" ["e"=1]
+"puniverse/capsule" -> "xedin/windmill" ["e"=1]
+"HotswapProjects/HotswapAgent" -> "async-profiler/async-profiler" ["e"=1]
+"HotswapProjects/HotswapAgent" -> "aragozin/jvm-tools" ["e"=1]
+"HotswapProjects/HotswapAgent" -> "JCTools/JCTools" ["e"=1]
 "openjdk/skara" -> "openjdk/amber"
 "openjdk/skara" -> "openjdk/valhalla"
 "corretto/corretto-8-docker" -> "corretto/corretto-11-docker"
@@ -629,6 +796,7 @@ digraph G {
 "artyushov/idea-jmh-plugin" -> "melix/jmh-gradle-plugin"
 "artyushov/idea-jmh-plugin" -> "openjdk/jmh"
 "artyushov/idea-jmh-plugin" -> "jzillmann/jmh-visualizer"
+"jenetics/jenetics" -> "deeplearning4j/nd4j" ["e"=1]
 "jnr/jnr-unixsocket" -> "kohlschutter/junixsocket"
 "jnr/jnr-unixsocket" -> "jnr/jnr-posix"
 "jnr/jnr-unixsocket" -> "mcfunley/juds"
@@ -687,6 +855,7 @@ digraph G {
 "IDouble/Simple-Game-ERC-721-Token-Template" -> "IDouble/IDouble"
 "IDouble/Simple-Game-ERC-721-Token-Template" -> "IDouble/Simple-Memory-Reading-Writing"
 "IDouble/Simple-Game-ERC-721-Token-Template" -> "IDouble/BMI-Calculator-Android-Java-App"
+"MicroRaft/MicroRaft" -> "jgroups-extras/jgroups-raft" ["e"=1]
 "deephacks/lmdbjni" -> "deephacks/lmdb"
 "deephacks/lmdbjni" -> "deephacks/RxLMDB"
 "deephacks/lmdbjni" -> "lmdbjava/lmdbjava"
@@ -771,6 +940,7 @@ digraph G {
 "tencentyun/scfcli" -> "serverless-tencent/serverless-tencent-scf"
 "tencentyun/scfcli" -> "serverless-components/tencent-express"
 "tencentyun/scfcli" -> "serverless-components/tencent-scf"
+"openjdk/jdk11u" -> "openjdk/shenandoah" ["e"=1]
 "chrisvest/stormpot" -> "DanielYWoo/fast-object-pool"
 "chrisvest/stormpot" -> "vibur/vibur-object-pool"
 "chrisvest/stormpot" -> "TimeAndSpaceIO/SmoothieMap"
@@ -809,6 +979,8 @@ digraph G {
 "RuedigerMoeller/kontraktor" -> "RuedigerMoeller/fast-serialization"
 "Netflix-Skunkworks/jvmquake" -> "airlift/jvmkill"
 "Netflix-Skunkworks/jvmquake" -> "odnoklassniki/jvmti-tools"
+"jdereg/java-util" -> "cache2k/cache2k" ["e"=1]
+"jdereg/java-util" -> "indeedeng/util" ["e"=1]
 "dacapobench/dacapobench" -> "renaissance-benchmarks/renaissance"
 "dacapobench/dacapobench" -> "corretto/heapothesys"
 "ChenHuajun/pg_roaringbitmap" -> "cybertec-postgresql/pgfaceting"
@@ -890,6 +1062,11 @@ digraph G {
 "IDouble/vyper" -> "IDouble/remix-ide"
 "IDouble/vyper" -> "IDouble/trinity-wallet"
 "IDouble/vyper" -> "IDouble/devp2p"
+"xerial/sqlite-jdbc" -> "jankotek/mapdb" ["e"=1]
+"brendangregg/perf-tools" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"giltene/wrk2" -> "HdrHistogram/HdrHistogram" ["e"=1]
+"giltene/wrk2" -> "async-profiler/async-profiler" ["e"=1]
+"giltene/wrk2" -> "JCTools/JCTools" ["e"=1]
 "aparapi/aparapi" -> "Syncleus/aparapi"
 "aparapi/aparapi" -> "gpu/JOCL"
 "aparapi/aparapi" -> "nativelibs4java/JavaCL"
@@ -910,6 +1087,10 @@ digraph G {
 "OpenHFT/Chronicle-Engine" -> "OpenHFT/Java-Lang"
 "OpenHFT/Chronicle-Engine" -> "OpenHFT/Zero-Allocation-Hashing"
 "OpenHFT/Chronicle-Engine" -> "gsitgithub/SubMicroTrading" ["e"=1]
+"speedment/speedment" -> "OpenHFT/Chronicle-Map" ["e"=1]
+"speedment/speedment" -> "npgall/cqengine" ["e"=1]
+"speedment/speedment" -> "aeron-io/agrona" ["e"=1]
+"javaparser/javaparser" -> "async-profiler/async-profiler" ["e"=1]
 "deeplearning4j/nd4j" -> "worstcase/gumshoe"
 "deeplearning4j/nd4j" -> "shekhargulati/strman-java"
 "deeplearning4j/nd4j" -> "PatMartin/Dex"
@@ -925,6 +1106,21 @@ digraph G {
 "deeplearning4j/nd4j" -> "deeplearning4j/rl4j"
 "deeplearning4j/nd4j" -> "deeplearning4j/deeplearning4j" ["e"=1]
 "deeplearning4j/nd4j" -> "aragozin/jvm-tools"
+"googleapis/google-http-java-client" -> "google/re2j" ["e"=1]
+"uniVocity/univocity-parsers" -> "leventov/Koloboke" ["e"=1]
+"uniVocity/univocity-parsers" -> "JCTools/JCTools" ["e"=1]
+"brendangregg/FlameGraph" -> "async-profiler/async-profiler" ["e"=1]
+"voldemort/voldemort" -> "atomix/atomix" ["e"=1]
+"voldemort/voldemort" -> "jankotek/mapdb" ["e"=1]
+"voldemort/voldemort" -> "linkedin/PalDB" ["e"=1]
+"voldemort/voldemort" -> "dain/leveldb" ["e"=1]
+"deepjavalibrary/djl" -> "deeplearning4j/deeplearning4j-examples" ["e"=1]
+"deepjavalibrary/djl" -> "jtablesaw/tablesaw" ["e"=1]
+"ThomasVitale/awesome-spring" -> "BNYMellon/spring-kata" ["e"=1]
+"hollingsworthd/jBrowserDriver" -> "RuedigerMoeller/fast-serialization" ["e"=1]
+"jmxtrans/jmxtrans" -> "aragozin/jvm-tools" ["e"=1]
+"jmxtrans/jmxtrans" -> "patric-r/jvmtop" ["e"=1]
+"btraceio/btrace" -> "async-profiler/async-profiler" ["e"=1]
 "babl-ws/babl" -> "aitusoftware/aether"
 "artiofix/artio" -> "aeron-io/benchmarks"
 "artiofix/artio" -> "aeron-io/aeron-cookbook-code"
@@ -941,6 +1137,14 @@ digraph G {
 "artiofix/artio" -> "babl-ws/babl"
 "artiofix/artio" -> "paritytrading/nassau"
 "artiofix/artio" -> "OpenHFT/Chronicle-Core"
+"chewiebug/GCViewer" -> "async-profiler/async-profiler" ["e"=1]
+"chewiebug/GCViewer" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"chewiebug/GCViewer" -> "aragozin/jvm-tools" ["e"=1]
+"chewiebug/GCViewer" -> "JCTools/JCTools" ["e"=1]
+"haifengl/smile" -> "jtablesaw/tablesaw" ["e"=1]
+"haifengl/smile" -> "deeplearning4j/nd4j" ["e"=1]
+"haifengl/smile" -> "deeplearning4j/deeplearning4j-examples" ["e"=1]
+"haifengl/smile" -> "bytedeco/javacpp" ["e"=1]
 "brettwooldridge/HikariJSON" -> "brettwooldridge/HikariCP-benchmark"
 "brettwooldridge/HikariJSON" -> "brettwooldridge/NuProcess"
 "brettwooldridge/HikariJSON" -> "brettwooldridge/SansOrm"
@@ -974,6 +1178,13 @@ digraph G {
 "OpenHFT/Chronicle-Map" -> "JCTools/JCTools"
 "OpenHFT/Chronicle-Map" -> "OpenHFT/Chronicle-Core"
 "OpenHFT/Chronicle-Map" -> "jtablesaw/tablesaw"
+"ingokegel/jclasslib" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"apache/maven-mvnd" -> "async-profiler/async-profiler" ["e"=1]
+"vojtechhabarta/typescript-generator" -> "npgall/cqengine" ["e"=1]
+"bsideup/jabel" -> "apangin/nalim" ["e"=1]
+"arnaudroger/SimpleFlatMapper" -> "brettwooldridge/SansOrm" ["e"=1]
+"classgraph/classgraph" -> "JCTools/JCTools" ["e"=1]
+"classgraph/classgraph" -> "AdoptOpenJDK/jitwatch" ["e"=1]
 "snazy/ohc" -> "OpenHFT/Chronicle-Map"
 "snazy/ohc" -> "OpenHFT/Java-Thread-Affinity"
 "snazy/ohc" -> "airlift/slice"
@@ -989,6 +1200,10 @@ digraph G {
 "snazy/ohc" -> "lmdbjava/lmdbjava"
 "snazy/ohc" -> "aragozin/jvm-tools"
 "snazy/ohc" -> "vigna/fastutil"
+"activej/activej" -> "aeron-io/agrona" ["e"=1]
+"activej/activej" -> "ngs-doo/dsl-json" ["e"=1]
+"youngwookim/awesome-hadoop" -> "deephacks/awesome-jvm" ["e"=1]
+"kevinsawicki/http-request" -> "jankotek/mapdb" ["e"=1]
 "aeron-io/agrona" -> "aeron-io/aeron"
 "aeron-io/agrona" -> "JCTools/JCTools"
 "aeron-io/agrona" -> "aeron-io/simple-binary-encoding"
@@ -1004,6 +1219,7 @@ digraph G {
 "aeron-io/agrona" -> "rsocket/rsocket-java" ["e"=1]
 "aeron-io/agrona" -> "vigna/fastutil"
 "aeron-io/agrona" -> "OpenHFT/Zero-Allocation-Hashing"
+"buptdavid/datastructure" -> "jankotek/mapdb" ["e"=1]
 "cardillo/joinery" -> "jtablesaw/tablesaw"
 "cardillo/joinery" -> "zavtech/morpheus-core"
 "cardillo/joinery" -> "netzwerg/paleo"
@@ -1059,6 +1275,10 @@ digraph G {
 "OpenHFT/Chronicle-Wire" -> "artiofix/artio"
 "OpenHFT/Chronicle-Wire" -> "OpenHFT/Java-Thread-Affinity"
 "OpenHFT/Chronicle-Wire" -> "OpenHFT/OpenHFT"
+"datumbox/datumbox-framework" -> "deeplearning4j/nd4j" ["e"=1]
+"aol/cyclops" -> "aol/micro-server" ["e"=1]
+"aol/cyclops" -> "JCTools/JCTools" ["e"=1]
+"CSUG/HouseMD" -> "coderplay/perfj" ["e"=1]
 "gunnarmorling/jfr-custom-events" -> "flight-recorder/samples"
 "gunnarmorling/jfr-custom-events" -> "cryostatio/jfr-datasource"
 "gunnarmorling/jfr-custom-events" -> "BestSolution-at/jfr-doc"
@@ -1077,7 +1297,13 @@ digraph G {
 "melix/jmh-gradle-plugin" -> "gradle/test-retry-gradle-plugin" ["e"=1]
 "melix/jmh-gradle-plugin" -> "google/caliper"
 "melix/jmh-gradle-plugin" -> "jvm-profiling-tools/honest-profiler"
+"knowm/XChart" -> "jtablesaw/tablesaw" ["e"=1]
 "openjdk/jdk-sandbox" -> "openjdk/jdk13u-dev"
+"spring-gradle-plugins/dependency-management-plugin" -> "melix/jmh-gradle-plugin" ["e"=1]
+"advantageous/qbit" -> "RuedigerMoeller/kontraktor" ["e"=1]
+"advantageous/qbit" -> "aol/micro-server" ["e"=1]
+"advantageous/qbit" -> "OpenHFT/Chronicle-Engine" ["e"=1]
+"apache/opennlp" -> "deeplearning4j/deeplearning4j-examples" ["e"=1]
 "openjdk/panama-foreign" -> "openjdk/panama-vector"
 "openjdk/panama-foreign" -> "openjdk/jextract"
 "openjdk/panama-foreign" -> "openjdk/valhalla"
@@ -1099,6 +1325,7 @@ digraph G {
 "OpenHFT/Zero-Allocation-Hashing" -> "lmdbjava/lmdbjava"
 "OpenHFT/Zero-Allocation-Hashing" -> "OpenHFT/Chronicle-Logger"
 "OpenHFT/Zero-Allocation-Hashing" -> "OpenHFT/Chronicle-Values"
+"lemire/fast_double_parser" -> "wrandelshofer/FastDoubleParser" ["e"=1]
 "kohlschutter/junixsocket" -> "jnr/jnr-unixsocket"
 "kohlschutter/junixsocket" -> "mcfunley/juds"
 "kohlschutter/junixsocket" -> "fiken/junixsocket"
@@ -1117,14 +1344,23 @@ digraph G {
 "eclipse-jifa/jifa" -> "mgm3746/garbagecat"
 "eclipse-jifa/jifa" -> "openjdk/shenandoah-visualizer"
 "eclipse-jifa/jifa" -> "dreamlike-ocean/PanamaUring" ["e"=1]
+"forax/java-guide" -> "c-guntur/java-katas" ["e"=1]
 "indeedeng/lsmtree" -> "jordw/heftydb"
 "indeedeng/lsmtree" -> "siathalysedI/lsmtree"
 "indeedeng/lsmtree" -> "andylamp/BPlusTree" ["e"=1]
 "indeedeng/lsmtree" -> "indeedeng/util"
 "indeedeng/lsmtree" -> "bulldog2011/bigqueue"
 "indeedeng/lsmtree" -> "yahoo/HaloDB"
+"abel533/ECharts" -> "ECharts-Java/ECharts-Java" ["e"=1]
+"oracle/tribuo" -> "beehive-lab/TornadoVM" ["e"=1]
+"oracle/tribuo" -> "jtablesaw/tablesaw" ["e"=1]
+"oracle/tribuo" -> "openjdk/jmc" ["e"=1]
+"oracle/tribuo" -> "deeplearning4j/nd4j" ["e"=1]
+"davidmoten/rtree" -> "npgall/concurrent-trees" ["e"=1]
+"inferred/FreeBuilder" -> "google/re2j" ["e"=1]
 "google/thread-weaver" -> "akarnokd/jmh-compare-gui"
 "google/thread-weaver" -> "xedin/windmill"
+"powturbo/TurboPFor-Integer-Compression" -> "fast-pack/JavaFastPFOR" ["e"=1]
 "openjdk/amber-docs" -> "openjdk/valhalla-docs"
 "peter-lawrey/Java-Thread-Affinity" -> "OpenHFT/Java-Thread-Affinity"
 "peter-lawrey/Java-Thread-Affinity" -> "peter-lawrey/Java-Chronicle"
@@ -1145,6 +1381,7 @@ digraph G {
 "Tencent/TencentKona-8" -> "serverless-components/tencent-apigateway"
 "Tencent/TencentKona-8" -> "dragonwell-project/dragonwell17"
 "Tencent/TencentKona-8" -> "tencentyun/scfcli"
+"wecite/papers" -> "coderplay/perfj" ["e"=1]
 "aeron-io/aeron-cookbook-code" -> "AdaptiveConsulting/aeron-io-samples"
 "aeron-io/aeron-cookbook-code" -> "aeron-io/benchmarks"
 "aeron-io/aeron-cookbook-code" -> "scalecube/reactor-aeron" ["e"=1]
@@ -1155,6 +1392,7 @@ digraph G {
 "fusesource/leveldbjni" -> "deephacks/lmdbjni"
 "fusesource/leveldbjni" -> "fusesource/rocksdbjni"
 "fusesource/leveldbjni" -> "xerial/snappy-java"
+"amplab/succinct" -> "fast-pack/JavaFastPFOR" ["e"=1]
 "finos/git-proxy" -> "finos/community"
 "finos/git-proxy" -> "Citi/citi-ospo"
 "finos/git-proxy" -> "finos/open-source-readiness"
@@ -1198,6 +1436,7 @@ digraph G {
 "dain/snappy" -> "ning/jvm-compressor-benchmark"
 "dain/snappy" -> "cowtowncoder/low-gc-membuffers" ["e"=1]
 "dain/snappy" -> "foursquare/heapaudit" ["e"=1]
+"osiegmar/FastCSV" -> "cache2k/cache2k" ["e"=1]
 "tools4j/elara" -> "tools4j/nobark"
 "jgroups-extras/jgroups-raft" -> "belaban/JGroups"
 "jgroups-extras/jgroups-raft" -> "atomix/copycat"
@@ -1205,8 +1444,11 @@ digraph G {
 "jgroups-extras/jgroups-raft" -> "andy-yx-chen/jraft"
 "jgroups-extras/jgroups-raft" -> "atomix/atomix"
 "jgroups-extras/jgroups-raft" -> "YahooArchive/gondola"
+"yandex-qatools/postgresql-embedded" -> "odnoklassniki/one-nio" ["e"=1]
+"uniVocity/univocity-trader" -> "paritytrading/parity" ["e"=1]
 "spotify/threaddump-analyzer" -> "irockel/tda"
 "spotify/threaddump-analyzer" -> "jstack-review/jstack-review"
+"timolson/cointrader" -> "paritytrading/philadelphia" ["e"=1]
 "dragonwell-project/dragonwell11" -> "dragonwell-project/dragonwell17"
 "dragonwell-project/dragonwell11" -> "dragonwell-project/dragonwell8" ["e"=1]
 "dragonwell-project/dragonwell11" -> "Tencent/TencentKona-11"
@@ -1218,6 +1460,7 @@ digraph G {
 "dragonwell-project/dragonwell11" -> "adoptium/emt4j"
 "dragonwell-project/dragonwell11" -> "corretto/corretto-11"
 "dragonwell-project/dragonwell11" -> "bytedance/CompoundVM"
+"FinVolution/pmq" -> "bulldog2011/bigqueue" ["e"=1]
 "IDouble/ghidra" -> "IDouble/obevo"
 "IDouble/ghidra" -> "IDouble/Trinary-Calculator-Android-Java-App"
 "corretto/corretto-docker" -> "corretto/corretto-17"
@@ -1236,6 +1479,8 @@ digraph G {
 "corretto/heapothesys" -> "giltene/HeapFragger"
 "corretto/heapothesys" -> "openjdk/shenandoah-visualizer"
 "corretto/heapothesys" -> "ionutbalosin/jvm-performance-benchmarks"
+"dcaoyuan/chana" -> "coderplay/perfj" ["e"=1]
+"subchen/jetbrick-template-2x" -> "jankotek/mapdb" ["e"=1]
 "corretto/corretto-jdk" -> "corretto/corretto-17"
 "corretto/corretto-jdk" -> "corretto/corretto-11"
 "serverless-components/tencent-apigateway" -> "serverless-components/tencent-cos"
@@ -1425,6 +1670,15 @@ digraph G {
 "finos/legend-shared" -> "finos/legend-sdlc"
 "finos/legend-shared" -> "finos/legend-pure"
 "idexio/idex-contracts-whistler" -> "idexio/staking-replicator"
+"Aircoin-official/AirCash" -> "microsoft/gctoolkit" ["e"=1]
+"moditect/jfrunit" -> "moditect/jfr-analytics" ["e"=1]
+"moditect/jfrunit" -> "RedHatPerf/type-pollution-agent" ["e"=1]
+"moditect/jfrunit" -> "gunnarmorling/jfr-custom-events" ["e"=1]
+"moditect/jfrunit" -> "flight-recorder/samples" ["e"=1]
+"moditect/jfrunit" -> "BestSolution-at/jfr-doc" ["e"=1]
+"Netflix/vector" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"apache/ignite" -> "jankotek/mapdb" ["e"=1]
+"h2database/h2database" -> "jankotek/mapdb" ["e"=1]
 "peter-lawrey/Java-Chronicle" -> "OpenHFT/Chronicle-Queue"
 "peter-lawrey/Java-Chronicle" -> "peter-lawrey/Java-Thread-Affinity"
 "peter-lawrey/Java-Chronicle" -> "OpenHFT/Chronicle-Bytes"
@@ -1437,6 +1691,8 @@ digraph G {
 "peter-lawrey/Java-Chronicle" -> "OpenHFT/Chronicle-Map"
 "peter-lawrey/Java-Chronicle" -> "RichardWarburton/slab"
 "peter-lawrey/Java-Chronicle" -> "OpenHFT/Chronicle-Core"
+"failsafe-lib/failsafe" -> "JCTools/JCTools" ["e"=1]
+"failsafe-lib/failsafe" -> "aeron-io/agrona" ["e"=1]
 "goldmansachs/gs-collections" -> "goldmansachs/gs-collections-kata"
 "goldmansachs/gs-collections" -> "leventov/Koloboke"
 "goldmansachs/gs-collections" -> "eclipse-collections/eclipse-collections" ["e"=1]
@@ -1452,6 +1708,11 @@ digraph G {
 "goldmansachs/gs-collections" -> "goldmansachs/obevo"
 "goldmansachs/gs-collections" -> "goldmansachs/gs-xsd2bean"
 "goldmansachs/gs-collections" -> "ratpack/ratpack" ["e"=1]
+"SerCeMan/jnr-fuse" -> "jnr/jnr-ffi" ["e"=1]
+"amaembo/streamex" -> "odnoklassniki/one-nio" ["e"=1]
+"amaembo/streamex" -> "aeron-io/agrona" ["e"=1]
+"rsocket/rsocket-java" -> "aeron-io/agrona" ["e"=1]
+"rsocket/rsocket-java" -> "JCTools/JCTools" ["e"=1]
 "vigna/fastutil" -> "leventov/Koloboke"
 "vigna/fastutil" -> "carrotsearch/hppc"
 "vigna/fastutil" -> "aeron-io/agrona"
@@ -1467,6 +1728,10 @@ digraph G {
 "vigna/fastutil" -> "raphw/byte-buddy" ["e"=1]
 "vigna/fastutil" -> "async-profiler/async-profiler"
 "vigna/fastutil" -> "jankotek/mapdb"
+"jgrapht/jgrapht" -> "vigna/fastutil" ["e"=1]
+"jgrapht/jgrapht" -> "jankotek/mapdb" ["e"=1]
+"jgrapht/jgrapht" -> "aeron-io/agrona" ["e"=1]
+"jgrapht/jgrapht" -> "JCTools/JCTools" ["e"=1]
 "stevensouza/automon" -> "worstcase/gumshoe"
 "stevensouza/automon" -> "PatMartin/Dex"
 "stevensouza/automon" -> "shekhargulati/strman-java"
@@ -1477,6 +1742,12 @@ digraph G {
 "stevensouza/automon" -> "deeplearning4j/nd4j"
 "stevensouza/automon" -> "shekhargulati/99-problems"
 "stevensouza/automon" -> "jtablesaw/tablesaw"
+"hazelcast/hazelcast" -> "atomix/atomix" ["e"=1]
+"bbottema/simple-java-mail" -> "jtablesaw/tablesaw" ["e"=1]
+"bbottema/simple-java-mail" -> "jankotek/mapdb" ["e"=1]
+"bbottema/simple-java-mail" -> "npgall/cqengine" ["e"=1]
+"apache/lucene" -> "RoaringBitmap/RoaringBitmap" ["e"=1]
+"apache/lucene" -> "async-profiler/async-profiler" ["e"=1]
 "google/caliper" -> "google/jimfs" ["e"=1]
 "google/caliper" -> "google/truth" ["e"=1]
 "google/caliper" -> "google/compile-testing" ["e"=1]
@@ -1492,6 +1763,10 @@ digraph G {
 "google/caliper" -> "jvm-profiling-tools/honest-profiler"
 "google/caliper" -> "google/error-prone" ["e"=1]
 "google/caliper" -> "OpenHFT/Chronicle-Core"
+"kaitoy/pcap4j" -> "RuedigerMoeller/fast-serialization" ["e"=1]
+"LMDB/lmdb" -> "lmdbjava/lmdbjava" ["e"=1]
+"apache/geode" -> "atomix/atomix" ["e"=1]
+"rsocket/rsocket" -> "aeron-io/aeron" ["e"=1]
 "microsoft/gctoolkit" -> "hora-search/hora" ["e"=1]
 "microsoft/gctoolkit" -> "openjdk/jmc"
 "microsoft/gctoolkit" -> "apple/GCGC"
@@ -1537,6 +1812,15 @@ digraph G {
 "OpenHFT/Chronicle-Threads" -> "OpenHFT/Chronicle-Wire"
 "OpenHFT/Chronicle-Threads" -> "OpenHFT/Chronicle-TimeSeries"
 "OpenHFT/Chronicle-Threads" -> "OpenHFT/JLBH"
+"fizzed/rocker" -> "cache2k/cache2k" ["e"=1]
+"EdwardRaff/JSAT" -> "jtablesaw/tablesaw" ["e"=1]
+"EdwardRaff/JSAT" -> "pcpratts/rootbeer1" ["e"=1]
+"orbit/orbit" -> "RuedigerMoeller/kontraktor" ["e"=1]
+"orbit/orbit" -> "aeron-io/agrona" ["e"=1]
+"orbit/orbit" -> "aeron-io/aeron" ["e"=1]
+"orbit/orbit" -> "atomix/atomix" ["e"=1]
+"plasma-umass/doppio" -> "jnr/jnr-ffi" ["e"=1]
+"hankcs/AhoCorasickDoubleArrayTrie" -> "RoaringBitmap/RoaringBitmap" ["e"=1]
 "aol/micro-server" -> "aol/cyclops" ["e"=1]
 "aol/micro-server" -> "aol/cyclops-integration" ["e"=1]
 "aol/micro-server" -> "advantageous/qbit" ["e"=1]
@@ -1552,6 +1836,7 @@ digraph G {
 "aol/micro-server" -> "facebookarchive/jcommon" ["e"=1]
 "aol/micro-server" -> "shekhargulati/strman-java"
 "aol/micro-server" -> "Percy0601/boot-dubbo" ["e"=1]
+"hora-search/hora" -> "microsoft/gctoolkit" ["e"=1]
 "google/allocation-instrumenter" -> "coderplay/perfj"
 "google/allocation-instrumenter" -> "devexperts/aprof"
 "google/allocation-instrumenter" -> "jvm-profiling-tools/honest-profiler"
@@ -1634,12 +1919,14 @@ digraph G {
 "apache/datasketches-java" -> "greenplum-db/gporca" ["e"=1]
 "apache/datasketches-java" -> "apache/calcite" ["e"=1]
 "apache/datasketches-java" -> "RoaringBitmap/RoaringBitmap"
+"aol/cyclops-integration" -> "aol/micro-server" ["e"=1]
 "hyperxpro/Brotli4j" -> "nixxcode/jvm-brotli"
 "corretto/corretto-17" -> "corretto/corretto-21"
 "corretto/corretto-17" -> "corretto/corretto-11"
 "corretto/corretto-17" -> "corretto/corretto-jdk"
 "corretto/corretto-17" -> "corretto/corretto-docker"
 "corretto/corretto-17" -> "corretto/corretto-8" ["e"=1]
+"linkedin/URL-Detector" -> "linkedin/PalDB" ["e"=1]
 "chrishantha/jfr-flame-graph" -> "lhotari/jfr-report-tool"
 "chrishantha/jfr-flame-graph" -> "flamegrapher/flamegrapher"
 "chrishantha/jfr-flame-graph" -> "thegreystone/jmc-flame-view"
@@ -1671,6 +1958,7 @@ digraph G {
 "Tencent/TencentKona-11" -> "dragonwell-project/dragonwell11"
 "Tencent/TencentKona-11" -> "dragonwell-project/dragonwell17"
 "Tencent/TencentKona-11" -> "Tencent/TencentKona-21"
+"sniptt-official/ots" -> "microsoft/gctoolkit" ["e"=1]
 "BNYMellon/spring-kata" -> "BNYMellon/CodeKatas"
 "BNYMellon/spring-kata" -> "c-guntur/java-katas"
 "BNYMellon/spring-kata" -> "eclipse-collections/eclipse-collections-kata"
@@ -1692,6 +1980,8 @@ digraph G {
 "luben/zstd-jni" -> "openjdk/jol"
 "luben/zstd-jni" -> "RoaringBitmap/RoaringBitmap"
 "sproket/Persism" -> "Col-E/FxSampler" ["e"=1]
+"binkley/modern-java-practices" -> "BNYMellon/spring-kata" ["e"=1]
+"nadimkobeissi/appleprivacyletter" -> "microsoft/gctoolkit" ["e"=1]
 "x4e/classfile-rs" -> "TheBritishMidget/PyteCode"
 "x4e/classfile-rs" -> "x4e/jvm-rs"
 "xxDark/asm-inline" -> "3arthqu4ke/HandleWrapper"
@@ -1703,6 +1993,14 @@ digraph G {
 "tools4j/decimal4j" -> "artiofix/artio"
 "dougqh/jvm-mechanics" -> "coderplay/perfj"
 "ben-manes/concurrentlinkedhashmap" -> "cache2k/cache2k"
+"FIXTradingCommunity/fix-simple-binary-encoding" -> "artiofix/artio" ["e"=1]
+"FIXTradingCommunity/fix-simple-binary-encoding" -> "aeron-io/simple-binary-encoding" ["e"=1]
+"FIXTradingCommunity/fix-simple-binary-encoding" -> "paritytrading/philadelphia" ["e"=1]
+"FIXTradingCommunity/fix-simple-binary-encoding" -> "kpavlov/fixio" ["e"=1]
+"PerfMa/xpocket" -> "OpenHFT/Java-Thread-Affinity" ["e"=1]
+"PerfMa/xpocket" -> "eclipse-jifa/jifa" ["e"=1]
+"cloudfoundry/java-buildpack-memory-calculator" -> "jattach/jattach" ["e"=1]
+"cloudfoundry/java-buildpack-memory-calculator" -> "odnoklassniki/one-nio" ["e"=1]
 "x-hansong/TinyKvStore" -> "aronszanto/sLSM-Tree"
 "OpenHFT/Chronicle-Core" -> "OpenHFT/Chronicle-Bytes"
 "OpenHFT/Chronicle-Core" -> "OpenHFT/Chronicle-Wire"
@@ -1719,6 +2017,9 @@ digraph G {
 "OpenHFT/Chronicle-Core" -> "OpenHFT/Chronicle-Queue"
 "OpenHFT/Chronicle-Core" -> "OpenHFT/OpenHFT"
 "OpenHFT/Chronicle-Core" -> "OpenHFT/Chronicle-TimeSeries"
+"elki-project/elki" -> "fast-pack/JavaFastPFOR" ["e"=1]
+"cfg4j/cfg4j" -> "vibur/vibur-dbcp" ["e"=1]
+"cfg4j/cfg4j" -> "atomix/atomix" ["e"=1]
 "paritytrading/parity-extras" -> "paritytrading/philadelphia-extras"
 "goldmansachs/gs-collections-kata" -> "goldmansachs/gs-collections"
 "goldmansachs/gs-collections-kata" -> "eclipse-collections/eclipse-collections-kata"
@@ -1744,10 +2045,14 @@ digraph G {
 "linkedin/PalDB" -> "yahoo/Oak"
 "linkedin/PalDB" -> "atomix/atomix"
 "linkedin/PalDB" -> "coderplay/perfj"
+"graalvm/simplelanguage" -> "flight-recorder/health-report" ["e"=1]
 "mgm3746/garbagecat" -> "petrbouda/jeffrey"
 "mgm3746/garbagecat" -> "GCPlot/gcplot"
+"fix8/fix8" -> "penberg/falcon" ["e"=1]
+"fix8/fix8" -> "paritytrading/parity" ["e"=1]
 "sears/bLSM" -> "siathalysedI/lsmtree"
 "sears/bLSM" -> "dhanus/lsm-tree"
+"deeplearning4j/nd4s" -> "deeplearning4j/nd4j" ["e"=1]
 "coderplay/perfj" -> "jvm-profiling-tools/perf-map-agent"
 "coderplay/perfj" -> "google/allocation-instrumenter"
 "coderplay/perfj" -> "wecite/papers" ["e"=1]
@@ -1794,6 +2099,21 @@ digraph G {
 "jvirtanen/nasdaq-tools" -> "paritytrading/juncture"
 "OpenHFT/jvm-micro-benchmarks" -> "OpenHFT/Spoon"
 "OpenHFT/jvm-micro-benchmarks" -> "OpenHFT/Chronicle-Map-Java8"
+"erthink/libmdbx" -> "lmdbjava/lmdbjava" ["e"=1]
+"erthink/libmdbx" -> "yahoo/HaloDB" ["e"=1]
+"RoaringBitmap/CRoaring" -> "RoaringBitmap/RoaringBitmap" ["e"=1]
+"spotify/apollo" -> "atomix/atomix" ["e"=1]
+"shekhargulati/java8-the-missing-tutorial" -> "shekhargulati/99-problems" ["e"=1]
+"shekhargulati/java8-the-missing-tutorial" -> "shekhargulati/strman-java" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "eclipse-collections/eclipse-collections-kata" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "goldmansachs/gs-collections" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "aeron-io/agrona" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "vigna/fastutil" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "JCTools/JCTools" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "leventov/Koloboke" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "BNYMellon/CodeKatas" ["e"=1]
+"eclipse-collections/eclipse-collections" -> "goldmansachs/reladomo" ["e"=1]
 "deeplearning4j/deeplearning4j-examples" -> "deeplearning4j/deeplearning4j" ["e"=1]
 "deeplearning4j/deeplearning4j-examples" -> "deeplearning4j/nd4j"
 "deeplearning4j/deeplearning4j-examples" -> "sjsdfg/dl4j-tutorials" ["e"=1]
@@ -1824,6 +2144,7 @@ digraph G {
 "jtablesaw/tablesaw" -> "sacert/SoundSea"
 "jtablesaw/tablesaw" -> "jankotek/mapdb"
 "jtablesaw/tablesaw" -> "deepjavalibrary/djl" ["e"=1]
+"oracle/graal" -> "async-profiler/async-profiler" ["e"=1]
 "npgall/cqengine" -> "npgall/concurrent-trees"
 "npgall/cqengine" -> "aeron-io/agrona"
 "npgall/cqengine" -> "jankotek/mapdb"
@@ -1839,6 +2160,7 @@ digraph G {
 "npgall/cqengine" -> "atomix/atomix"
 "npgall/cqengine" -> "vigna/fastutil"
 "npgall/cqengine" -> "awaitility/awaitility" ["e"=1]
+"devoxx/JavaRoadmap" -> "BNYMellon/CodeKatas" ["e"=1]
 "shekhargulati/99-problems" -> "shekhargulati/strman-java"
 "shekhargulati/99-problems" -> "bootique/bootique"
 "shekhargulati/99-problems" -> "PatMartin/Dex"
@@ -1869,6 +2191,8 @@ digraph G {
 "deephacks/awesome-jvm" -> "OpenHFT/Chronicle-Map"
 "deephacks/awesome-jvm" -> "jOOQ/jOOL" ["e"=1]
 "deephacks/awesome-jvm" -> "failsafe-lib/failsafe" ["e"=1]
+"SQiShER/java-object-diff" -> "JetBrains/xodus" ["e"=1]
+"gchq/Gaffer" -> "apache/datasketches-java" ["e"=1]
 "aragozin/jvm-tools" -> "stevensouza/automon"
 "aragozin/jvm-tools" -> "worstcase/gumshoe"
 "aragozin/jvm-tools" -> "OpenHFT/Chronicle-Map"
@@ -1899,6 +2223,9 @@ digraph G {
 "ngs-doo/dsl-json" -> "lmdbjava/lmdbjava"
 "ngs-doo/dsl-json" -> "npgall/cqengine"
 "ngs-doo/dsl-json" -> "aol/cyclops-integration" ["e"=1]
+"opentracing/opentracing-java" -> "JCTools/JCTools" ["e"=1]
+"airlift/airlift" -> "airlift/slice" ["e"=1]
+"airlift/airlift" -> "airlift/aircompressor" ["e"=1]
 "bootique/bootique" -> "shekhargulati/strman-java"
 "bootique/bootique" -> "worstcase/gumshoe"
 "bootique/bootique" -> "PatMartin/Dex"
@@ -1914,6 +2241,11 @@ digraph G {
 "bootique/bootique" -> "filamentgroup/tablesaw" ["e"=1]
 "bootique/bootique" -> "aol/micro-server"
 "bootique/bootique" -> "ratpack/ratpack" ["e"=1]
+"spiermar/d3-flame-graph" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"spiermar/d3-flame-graph" -> "cykl/hprof2flamegraph" ["e"=1]
+"spiermar/d3-flame-graph" -> "jvm-profiling-tools/honest-profiler" ["e"=1]
+"lballabio/QuantLib-SWIG" -> "OpenGamma/Strata" ["e"=1]
+"YahooArchive/anthelion" -> "apache/datasketches-java" ["e"=1]
 "fast-pack/JavaFastPFOR" -> "fast-pack/FastPFOR" ["e"=1]
 "fast-pack/JavaFastPFOR" -> "airlift/aircompressor"
 "fast-pack/JavaFastPFOR" -> "powturbo/TurboPFor-Integer-Compression" ["e"=1]
@@ -1929,6 +2261,7 @@ digraph G {
 "fast-pack/JavaFastPFOR" -> "OpenHFT/Zero-Allocation-Hashing"
 "fast-pack/JavaFastPFOR" -> "lmdbjava/lmdbjava"
 "fast-pack/JavaFastPFOR" -> "RoaringBitmap/RoaringBitmap"
+"FeatureBaseDB/featurebase" -> "RoaringBitmap/RoaringBitmap" ["e"=1]
 "atomix/copycat" -> "atomix/atomix"
 "atomix/copycat" -> "jgroups-extras/jgroups-raft"
 "atomix/copycat" -> "atomix/catalyst"
@@ -1944,12 +2277,25 @@ digraph G {
 "atomix/copycat" -> "jurmous/etcd4j" ["e"=1]
 "atomix/copycat" -> "tetrapods/raft"
 "atomix/copycat" -> "logcabin/logcabin" ["e"=1]
+"fast-pack/FastPFOR" -> "fast-pack/JavaFastPFOR" ["e"=1]
+"scalecube/scalecube-services" -> "OpenHFT/Chronicle-Network" ["e"=1]
+"scalecube/scalecube-services" -> "caplogic/Mappedbus" ["e"=1]
+"scalecube/scalecube-services" -> "atomix/atomix" ["e"=1]
+"scalecube/scalecube-services" -> "lmdbjava/lmdbjava" ["e"=1]
 "ECharts-Java/ECharts-Java" -> "ECharts-Java/ECharts-Java-Examples"
 "ECharts-Java/ECharts-Java" -> "ECharts-Java/Snapshot-PhantomJS"
 "ECharts-Java/ECharts-Java" -> "jfree/jfreechart" ["e"=1]
 "ECharts-Java/ECharts-Java" -> "xiaomaigou/echarts-export-server"
 "ECharts-Java/ECharts-Java" -> "abel533/ECharts" ["e"=1]
 "ECharts-Java/ECharts-Java" -> "dflib/dflib"
+"pascaldekloe/colfer" -> "OpenHFT/Chronicle-Bytes" ["e"=1]
+"pascaldekloe/colfer" -> "OpenHFT/Zero-Allocation-Hashing" ["e"=1]
+"pascaldekloe/colfer" -> "TimeAndSpaceIO/SmoothieMap" ["e"=1]
+"gsitgithub/SubMicroTrading" -> "penberg/falcon" ["e"=1]
+"ReadyTalk/avian" -> "nativelibs4java/BridJ" ["e"=1]
+"apache/systemds" -> "apache/datasketches-java" ["e"=1]
+"electronicarts/ea-async" -> "aeron-io/agrona" ["e"=1]
+"electronicarts/ea-async" -> "npgall/cqengine" ["e"=1]
 "npgall/concurrent-trees" -> "npgall/cqengine"
 "npgall/concurrent-trees" -> "TimeAndSpaceIO/SmoothieMap"
 "npgall/concurrent-trees" -> "npgall/concurrent-locks"
@@ -2008,6 +2354,11 @@ digraph G {
 "openjdk/jextract" -> "openjdk/skara"
 "openjdk/jextract" -> "oracle-actions/setup-java"
 "openjdk/jextract" -> "beehive-lab/TornadoVM"
+"beanshell/beanshell" -> "OpenHFT/Java-Runtime-Compiler" ["e"=1]
+"adyliu/jafka" -> "bulldog2011/luxun" ["e"=1]
+"adyliu/jafka" -> "bulldog2011/bigqueue" ["e"=1]
+"adyliu/jafka" -> "dain/leveldb" ["e"=1]
+"adyliu/jafka" -> "zeromq/jeromq" ["e"=1]
 "jcuda/jcuda-main" -> "jcuda/jcuda"
 "jcuda/jcuda-main" -> "jcuda/jcudnn"
 "jcuda/jcuda-main" -> "jcuda/jcuda-samples"
@@ -2117,6 +2468,10 @@ digraph G {
 "async-profiler/async-profiler" -> "openjdk/jmh"
 "async-profiler/async-profiler" -> "oldmanpushcart/greys-anatomy" ["e"=1]
 "async-profiler/async-profiler" -> "aeron-io/agrona"
+"google/nomulus" -> "google/mug" ["e"=1]
+"Vedenin/useful-java-links" -> "deephacks/awesome-jvm" ["e"=1]
+"Vedenin/useful-java-links" -> "shekhargulati/99-problems" ["e"=1]
+"shyiko/jabba" -> "async-profiler/async-profiler" ["e"=1]
 "JetBrains/youtrack-workflows" -> "JetBrains/youtrack-rest-python-library"
 "JetBrains/youtrack-workflows" -> "JetBrains/youtrack-scripting"
 "HdrHistogram/HdrHistogram" -> "giltene/jHiccup"
@@ -2134,6 +2489,8 @@ digraph G {
 "HdrHistogram/HdrHistogram" -> "async-profiler/async-profiler"
 "HdrHistogram/HdrHistogram" -> "giltene/wrk2" ["e"=1]
 "HdrHistogram/HdrHistogram" -> "OpenHFT/Chronicle-Map"
+"rholder/guava-retrying" -> "JCTools/JCTools" ["e"=1]
+"linkedin/parseq" -> "linkedin/PalDB" ["e"=1]
 "worstcase/gumshoe" -> "stevensouza/automon"
 "worstcase/gumshoe" -> "shekhargulati/strman-java"
 "worstcase/gumshoe" -> "PatMartin/Dex"
@@ -2172,6 +2529,7 @@ digraph G {
 "michaelliao/compiler" -> "OpenHFT/Java-Runtime-Compiler"
 "michaelliao/compiler" -> "trung/InMemoryJavaCompiler"
 "michaelliao/compiler" -> "xiaoyvyv/JavaCompileEngine" ["e"=1]
+"linkedin/dr-elephant" -> "uber-common/jvm-profiler" ["e"=1]
 "zeromq/jeromq" -> "zeromq/jzmq" ["e"=1]
 "zeromq/jeromq" -> "booksbyus/zguide" ["e"=1]
 "zeromq/jeromq" -> "zeromq/libzmq" ["e"=1]
@@ -2187,9 +2545,13 @@ digraph G {
 "zeromq/jeromq" -> "jankotek/mapdb"
 "zeromq/jeromq" -> "RuedigerMoeller/fast-serialization"
 "zeromq/jeromq" -> "zeromq/pyzmq" ["e"=1]
+"Tencent/TencentKonaSMSuite" -> "Tencent/TencentKona-8" ["e"=1]
+"Tencent/TencentKonaSMSuite" -> "Tencent/TencentKona-11" ["e"=1]
+"Tencent/TencentKonaSMSuite" -> "Tencent/TencentKona-17" ["e"=1]
 "javolution/javolution" -> "javolution/jscience"
 "javolution/javolution" -> "dubrousky/javastruct"
 "javolution/javolution" -> "chrisvest/stormpot"
+"la-team/light-admin" -> "aol/micro-server" ["e"=1]
 "jankotek/mapdb" -> "OpenHFT/Chronicle-Map"
 "jankotek/mapdb" -> "JetBrains/xodus"
 "jankotek/mapdb" -> "JCTools/JCTools"
@@ -2205,6 +2567,7 @@ digraph G {
 "jankotek/mapdb" -> "apache/ignite" ["e"=1]
 "jankotek/mapdb" -> "npgall/cqengine"
 "jankotek/mapdb" -> "LMAX-Exchange/disruptor" ["e"=1]
+"unofficial-openjdk/openjdk" -> "JCTools/JCTools" ["e"=1]
 "lz4/lz4-java" -> "OpenHFT/Zero-Allocation-Hashing"
 "lz4/lz4-java" -> "xerial/snappy-java"
 "lz4/lz4-java" -> "airlift/aircompressor"
@@ -2221,11 +2584,13 @@ digraph G {
 "lz4/lz4-java" -> "OpenHFT/Chronicle-Bytes"
 "lz4/lz4-java" -> "ning/compress"
 "andy-yx-chen/jraft" -> "datatechnology/jraft"
+"dleitee/strman" -> "shekhargulati/strman-java" ["e"=1]
 "irockel/tda" -> "spotify/threaddump-analyzer"
 "irockel/tda" -> "chewiebug/GCViewer" ["e"=1]
 "irockel/tda" -> "jstack-review/jstack-review"
 "irockel/tda" -> "sparameswaran/threadlogic"
 "irockel/tda" -> "mkbrv/tda"
+"ojdkbuild/ojdkbuild" -> "AdoptOpenJDK/jitwatch" ["e"=1]
 "airlift/aircompressor" -> "luben/zstd-jni"
 "airlift/aircompressor" -> "airlift/slice"
 "airlift/aircompressor" -> "fast-pack/JavaFastPFOR"
@@ -2241,6 +2606,9 @@ digraph G {
 "airlift/aircompressor" -> "vigna/fastutil"
 "airlift/aircompressor" -> "simdjson/simdjson-java"
 "airlift/aircompressor" -> "vigna/Sux4J" ["e"=1]
+"airlift/airline" -> "vibur/vibur-dbcp" ["e"=1]
+"airlift/airline" -> "OpenHFT/Zero-Allocation-Hashing" ["e"=1]
+"zeromq/zeromq.js" -> "zeromq/jeromq" ["e"=1]
 "xerial/snappy-java" -> "lz4/lz4-java"
 "xerial/snappy-java" -> "luben/zstd-jni"
 "xerial/snappy-java" -> "dain/snappy"
@@ -2268,6 +2636,9 @@ digraph G {
 "shekhargulati/strman-java" -> "aragozin/jvm-tools"
 "shekhargulati/strman-java" -> "filamentgroup/tablesaw" ["e"=1]
 "shekhargulati/strman-java" -> "shekhargulati/java8-the-missing-tutorial" ["e"=1]
+"tinylog-org/tinylog" -> "vibur/vibur-object-pool" ["e"=1]
+"tinylog-org/tinylog" -> "brettwooldridge/SansOrm" ["e"=1]
+"zeromq/jzmq" -> "zeromq/jeromq" ["e"=1]
 "pcpratts/rootbeer1" -> "aparapi/aparapi"
 "pcpratts/rootbeer1" -> "MysterionRise/mavenized-jcuda"
 "apangin/nalim" -> "odnoklassniki/one-nio"
@@ -2330,6 +2701,10 @@ digraph G {
 "DataDog/java-profiler" -> "btraceio/jafar"
 "paritytrading/philadelphia-extras" -> "paritytrading/parity-extras"
 "goldmansachs/gs-ocpmon" -> "goldmansachs/gs-xsd2bean"
+"bennidi/mbassador" -> "leventov/Koloboke" ["e"=1]
+"bennidi/mbassador" -> "caplogic/Mappedbus" ["e"=1]
+"etcd-io/jetcd" -> "atomix/atomix" ["e"=1]
+"etcd-io/jetcd" -> "snazy/ohc" ["e"=1]
 "deeplearning4j/rl4j" -> "deeplearning4j/DataVec"
 "deeplearning4j/rl4j" -> "deeplearning4j/nd4j"
 "deeplearning4j/rl4j" -> "rubenfiszel/scala-drl"
@@ -2341,6 +2716,11 @@ digraph G {
 "deeplearning4j/rl4j" -> "danijar/mindpark"
 "deeplearning4j/rl4j" -> "deeplearning4j/Arbiter"
 "deeplearning4j/rl4j" -> "jmacglashan/burlap" ["e"=1]
+"tang-jie/NettyRPC" -> "jankotek/mapdb" ["e"=1]
+"tencentyun/qcloud-documents" -> "Tencent/TencentKona-8" ["e"=1]
+"jline/jline3" -> "vigna/fastutil" ["e"=1]
+"reactor/reactor-netty" -> "JCTools/JCTools" ["e"=1]
+"mukel/llama2.java" -> "mikepapadim/llama2.tornadovm.java" ["e"=1]
 "fabienrenaud/java-json-benchmark" -> "ngs-doo/dsl-json"
 "fabienrenaud/java-json-benchmark" -> "json-iterator/java" ["e"=1]
 "fabienrenaud/java-json-benchmark" -> "eishay/jvm-serializers" ["e"=1]
@@ -2356,6 +2736,20 @@ digraph G {
 "fabienrenaud/java-json-benchmark" -> "openjdk/jcstress"
 "fabienrenaud/java-json-benchmark" -> "awaitility/awaitility" ["e"=1]
 "fabienrenaud/java-json-benchmark" -> "ionutbalosin/jvm-performance-benchmarks"
+"deeplearning4j/ScalNet" -> "deeplearning4j/DataVec" ["e"=1]
+"apache/fury" -> "JCTools/JCTools" ["e"=1]
+"apache/fury" -> "async-profiler/async-profiler" ["e"=1]
+"apache/fury" -> "aeron-io/agrona" ["e"=1]
+"apache/fury" -> "RoaringBitmap/RoaringBitmap" ["e"=1]
+"apache/fury" -> "vigna/fastutil" ["e"=1]
+"nsacyber/ELITEWOLF" -> "IDouble/Simple-ERC-1155-Multi-Token-Template" ["e"=1]
+"eishay/jvm-serializers" -> "RuedigerMoeller/fast-serialization" ["e"=1]
+"eishay/jvm-serializers" -> "JCTools/JCTools" ["e"=1]
+"linkedin/rest.li" -> "linkedin/PalDB" ["e"=1]
+"oracle/visualvm" -> "openjdk/jmc" ["e"=1]
+"oracle/visualvm" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"oracle/visualvm" -> "openjdk/jmh" ["e"=1]
+"oracle/visualvm" -> "async-profiler/async-profiler" ["e"=1]
 "goldmansachs/reladomo" -> "goldmansachs/reladomo-kata"
 "goldmansachs/reladomo" -> "goldmansachs/obevo"
 "goldmansachs/reladomo" -> "goldmansachs/tablasco"
@@ -2384,6 +2778,11 @@ digraph G {
 "odnoklassniki/one-nio" -> "leventov/Koloboke"
 "odnoklassniki/one-nio" -> "OpenHFT/Chronicle-Core"
 "odnoklassniki/one-nio" -> "code-review-checklists/java-concurrency" ["e"=1]
+"goldshtn/linux-tracing-workshop" -> "jvm-profiling-tools/perf-map-agent" ["e"=1]
+"kilim/kilim" -> "JCTools/JCTools" ["e"=1]
+"kilim/kilim" -> "OpenHFT/Java-Thread-Affinity" ["e"=1]
+"kilim/kilim" -> "atomix/atomix" ["e"=1]
+"kilim/kilim" -> "snazy/ohc" ["e"=1]
 "jvm-profiling-tools/perf-map-agent" -> "jvm-profiling-tools/honest-profiler"
 "jvm-profiling-tools/perf-map-agent" -> "async-profiler/async-profiler"
 "jvm-profiling-tools/perf-map-agent" -> "coderplay/perfj"
@@ -2400,15 +2799,19 @@ digraph G {
 "jvm-profiling-tools/perf-map-agent" -> "brendangregg/FlameGraph" ["e"=1]
 "jvm-profiling-tools/perf-map-agent" -> "brendangregg/perf-tools" ["e"=1]
 "corretto/corretto-21" -> "corretto/corretto-17"
+"janino-compiler/janino" -> "OpenHFT/Java-Runtime-Compiler" ["e"=1]
 "lmdbjava/benchmarks" -> "benalexau/hash-bench"
 "GCPlot/gcplot" -> "GCPlot/gcplot-docker"
 "GCPlot/gcplot" -> "lucidworks/gc-log-analyzer"
+"rife2/bld" -> "openjdk/jextract" ["e"=1]
 "simdjson/simdjson-java" -> "apangin/nalim"
 "simdjson/simdjson-java" -> "davidtos/JUring"
 "simdjson/simdjson-java" -> "parttimenerd/intellij-profiler-plugin"
 "OpenHFT/Chronicle-Queue-Demo" -> "OpenHFT/Chronicle-Engine-GUI"
 "OpenHFT/Chronicle-Queue-Demo" -> "OpenHFT/RFC"
 "OpenHFT/Chronicle-Queue-Demo" -> "OpenHFT/Chronicle-TimeSeries"
+"dylibso/chicory" -> "apangin/nalim" ["e"=1]
+"nicholassm/disruptor-rs" -> "UnitedTraders/aeron-rs" ["e"=1]
 "padreati/rapaio-jupyter-kernel" -> "jupyter-java/awesome-jupyter-java"
 "deeplearning4j/DataVec" -> "deeplearning4j/Arbiter"
 "deeplearning4j/DataVec" -> "deeplearning4j/ScalNet" ["e"=1]
@@ -2486,18 +2889,48 @@ digraph G {
 "bulldog2011/bigqueue" -> "snazy/ohc"
 "bulldog2011/bigqueue" -> "OpenHFT/Zero-Allocation-Hashing"
 "bulldog2011/bigqueue" -> "Netflix/suro" ["e"=1]
+"LinkedInAttic/camus" -> "addthis/stream-lib" ["e"=1]
+"Atmosphere/atmosphere" -> "zeromq/jeromq" ["e"=1]
+"Baqend/Orestes-Bloomfilter" -> "addthis/stream-lib" ["e"=1]
+"Baqend/Orestes-Bloomfilter" -> "aggregateknowledge/java-hll" ["e"=1]
+"Baqend/Orestes-Bloomfilter" -> "OpenHFT/Zero-Allocation-Hashing" ["e"=1]
+"Baqend/Orestes-Bloomfilter" -> "RoaringBitmap/RoaringBitmap" ["e"=1]
+"orientechnologies/orientdb" -> "jankotek/mapdb" ["e"=1]
+"spring-projects/spring-loaded" -> "aragozin/jvm-tools" ["e"=1]
+"marcobehler/marcobehler-guides" -> "BNYMellon/spring-kata" ["e"=1]
+"OpenSourceRisk/Engine" -> "OpenGamma/Strata" ["e"=1]
+"jenv/jenv" -> "async-profiler/async-profiler" ["e"=1]
+"PebbleTemplates/pebble" -> "JetBrains/xodus" ["e"=1]
 "JetBrains/xodus-dnq" -> "JetBrains/xodus-entity-browser"
+"gunnarmorling/1brc" -> "async-profiler/async-profiler" ["e"=1]
+"gunnarmorling/1brc" -> "aeron-io/agrona" ["e"=1]
+"todogroup/awesome-ospo" -> "Citi/citi-ospo" ["e"=1]
+"bitrich-info/xchange-stream" -> "paritytrading/philadelphia" ["e"=1]
+"json-iterator/java" -> "ngs-doo/dsl-json" ["e"=1]
+"json-iterator/java" -> "fabienrenaud/java-json-benchmark" ["e"=1]
+"json-iterator/java" -> "JCTools/JCTools" ["e"=1]
+"json-iterator/java" -> "vigna/fastutil" ["e"=1]
 "datatechnology/jraft" -> "andy-yx-chen/jraft"
 "datatechnology/jraft" -> "hortonworks/ratis"
 "datatechnology/jraft" -> "allengeorge/libraft"
 "datatechnology/jraft" -> "tetrapods/raft"
 "datatechnology/jraft" -> "cloud-software-foundation/c5-replicator"
+"abixen/abixen-platform" -> "aol/micro-server" ["e"=1]
+"fommil/netlib-java" -> "fast-pack/JavaFastPFOR" ["e"=1]
+"fommil/netlib-java" -> "deeplearning4j/nd4j" ["e"=1]
+"fommil/netlib-java" -> "nativelibs4java/ScalaCL" ["e"=1]
 "jzillmann/jmh-visualizer" -> "jzillmann/gradle-jmh-report"
 "jzillmann/jmh-visualizer" -> "lightbend-labs/benchdb"
 "jzillmann/jmh-visualizer" -> "flight-recorder/health-report"
 "jzillmann/jmh-visualizer" -> "apangin/nalim"
 "jzillmann/jmh-visualizer" -> "JDKMissionControl/jmc"
 "jzillmann/jmh-visualizer" -> "melix/jmh-gradle-plugin"
+"Netflix/hollow" -> "aeron-io/agrona" ["e"=1]
+"Netflix/hollow" -> "JCTools/JCTools" ["e"=1]
+"Netflix/hollow" -> "atomix/atomix" ["e"=1]
+"Netflix/hollow" -> "odnoklassniki/one-nio" ["e"=1]
+"Netflix/hollow" -> "snazy/ohc" ["e"=1]
+"mindwind/craft-atom" -> "jankotek/mapdb" ["e"=1]
 "dflib/jjava" -> "jupyter-java/awesome-jupyter-java"
 "openjdk/babylon" -> "Vinhixus/TornadoVM-Ray-Tracer"
 "openjdk/babylon" -> "beehive-lab/TornadoVM-Ray-Tracer"
@@ -2519,6 +2952,11 @@ digraph G {
 "OpenHFT/Chronicle-Engine-GUI" -> "OpenHFT/Chronicle-Websocket-Jetty"
 "mikepapadim/llama2.tornadovm.java" -> "beehive-lab/TornadoVM-Ray-Tracer"
 "mikepapadim/llama2.tornadovm.java" -> "beehive-lab/kfusion-tornadovm"
+"micrometer-metrics/micrometer" -> "async-profiler/async-profiler" ["e"=1]
+"scribejava/scribejava" -> "aragozin/jvm-tools" ["e"=1]
+"booksbyus/zguide" -> "zeromq/jeromq" ["e"=1]
+"DataDog/dd-trace-java" -> "jvm-profiling-tools/ap-loader" ["e"=1]
+"enewhuis/liquibook" -> "paritytrading/parity" ["e"=1]
 "nitrite/nitrite-java" -> "JetBrains/xodus"
 "nitrite/nitrite-java" -> "jankotek/mapdb"
 "nitrite/nitrite-java" -> "lmdbjava/lmdbjava"
@@ -2534,6 +2972,7 @@ digraph G {
 "nitrite/nitrite-java" -> "OpenHFT/Chronicle-Map"
 "nitrite/nitrite-java" -> "TheElectronWill/night-config" ["e"=1]
 "nitrite/nitrite-java" -> "dlsc-software-consulting-gmbh/PreferencesFX" ["e"=1]
+"mirkosertic/Bytecoder" -> "beehive-lab/TornadoVM" ["e"=1]
 "ajermakovics/jvm-mon" -> "patric-r/jvmtop"
 "ajermakovics/jvm-mon" -> "jvm-profiling-tools/honest-profiler"
 "ajermakovics/jvm-mon" -> "aragozin/jvm-tools"
@@ -2549,12 +2988,20 @@ digraph G {
 "ajermakovics/jvm-mon" -> "RitterHou/Geisha" ["e"=1]
 "ajermakovics/jvm-mon" -> "TellH/GitClub" ["e"=1]
 "ajermakovics/jvm-mon" -> "JCTools/JCTools"
+"deliveredtechnologies/rulebook" -> "npgall/cqengine" ["e"=1]
 "jackdent/cs265-lsm-tree" -> "siathalysedI/lsmtree"
 "jackdent/cs265-lsm-tree" -> "billsjchw/LSMTree"
+"ralfstx/minimal-json" -> "ngs-doo/dsl-json" ["e"=1]
+"apache/ratis" -> "atomix/atomix" ["e"=1]
+"quickfixgo/quickfix" -> "quickfix-j/quickfixj" ["e"=1]
+"forge/roaster" -> "jgroups-extras/jgroups-raft" ["e"=1]
+"java-diff-utils/java-diff-utils" -> "vigna/fastutil" ["e"=1]
+"adoptium/temurin-build" -> "corretto/corretto-11" ["e"=1]
 "bulldog2011/luxun" -> "bulldog2011/bigqueue"
 "bulldog2011/luxun" -> "LaiZhou/jsongood" ["e"=1]
 "zeromax007/gpdb-roaringbitmap" -> "cloudberry-contrib/cbcopy"
 "brettwooldridge/SparseBitSet" -> "brettwooldridge/SansOrm"
+"citusdata/postgresql-hll" -> "aggregateknowledge/java-hll" ["e"=1]
 "google/mug" -> "google/flogger" ["e"=1]
 "google/mug" -> "robertvazan/noexception"
 "google/mug" -> "amaembo/streamex" ["e"=1]
@@ -2570,6 +3017,8 @@ digraph G {
 "goldmansachs/obevo" -> "goldmansachs/obevo-kata"
 "aronszanto/sLSM-Tree" -> "billsjchw/LSMTree"
 "aronszanto/sLSM-Tree" -> "jackdent/cs265-lsm-tree"
+"finmath/finmath-lib" -> "OpenGamma/Strata" ["e"=1]
+"finmath/finmath-lib" -> "paritytrading/philadelphia" ["e"=1]
 "xerial/larray" -> "airlift/slice"
 "xerial/larray" -> "indeedeng/util"
 "xerial/larray" -> "monadless/monadless" ["e"=1]
@@ -2577,9 +3026,15 @@ digraph G {
 "goldmansachs/obevo-kata" -> "IDouble/pydata-book"
 "jvirtanen/node-soupbintcp" -> "quannabe/ItchParser"
 "stephanj/Llama3JavaChatCompletionService" -> "mikepapadim/llama2.tornadovm.java"
+"puniverse/quasar" -> "JCTools/JCTools" ["e"=1]
+"puniverse/quasar" -> "OpenHFT/Chronicle-Map" ["e"=1]
+"puniverse/quasar" -> "jankotek/mapdb" ["e"=1]
+"capnproto/capnproto" -> "aeron-io/simple-binary-encoding" ["e"=1]
 "zavtech/morpheus-core" -> "talostrading/d3x-morpheus"
 "zavtech/morpheus-core" -> "cardillo/joinery"
 "zavtech/morpheus-core" -> "netzwerg/paleo"
+"manifold-systems/manifold" -> "aeron-io/agrona" ["e"=1]
+"JetBrains/ring-ui" -> "JetBrains/xodus" ["e"=1]
 "airlift/slice" -> "airlift/airlift" ["e"=1]
 "airlift/slice" -> "airlift/aircompressor"
 "airlift/slice" -> "xerial/larray"
@@ -2602,6 +3057,14 @@ digraph G {
 "lemire/javaewah" -> "airlift/slice"
 "lemire/javaewah" -> "vigna/fastutil"
 "lemire/javaewah" -> "zeromax007/gpdb-roaringbitmap"
+"wenweihu86/raft-java" -> "atomix/atomix" ["e"=1]
+"wenweihu86/raft-java" -> "atomix/copycat" ["e"=1]
+"wenweihu86/raft-java" -> "datatechnology/jraft" ["e"=1]
+"dcevm/dcevm" -> "AdoptOpenJDK/jitwatch" ["e"=1]
+"dcevm/dcevm" -> "jattach/jattach" ["e"=1]
+"dcevm/dcevm" -> "EsotericSoftware/reflectasm" ["e"=1]
+"dcevm/dcevm" -> "JCTools/JCTools" ["e"=1]
+"dcevm/dcevm" -> "RuedigerMoeller/fast-serialization" ["e"=1]
 "cyrilluce/saga-duck" -> "cyrilluce/redux-saga-catch"
 "cyrilluce/saga-duck" -> "serverless-components/tencent-apigateway"
 "goldmansachs/tablasco" -> "goldmansachs/jrpip"
@@ -2612,6 +3075,12 @@ digraph G {
 "goldmansachs/tablasco" -> "goldmansachs/gs-xsd2bean"
 "goldmansachs/tablasco" -> "IDouble/pydata-book"
 "dharmeshsing/CoinTossX" -> "aeron-io/benchmarks"
+"bytedeco/javacpp-presets" ["l"="-3.14,12.492", "c"=15]
+"bytedeco/javacpp" ["l"="-5.456,10.65"]
+"deeplearning4j/nd4j" ["l"="-5.295,10.622"]
+"deeplearning4j/deeplearning4j-examples" ["l"="-5.18,10.601"]
+"ta4j/ta4j" ["l"="-9.772,10.668", "c"=614]
+"OpenGamma/Strata" ["l"="-5.309,10.49"]
 "OpenHFT/Chronicle-Queue" ["l"="-5.485,10.591"]
 "OpenHFT/Chronicle-Map" ["l"="-5.462,10.615"]
 "aeron-io/aeron" ["l"="-5.469,10.501"]
@@ -2622,58 +3091,76 @@ digraph G {
 "peter-lawrey/Java-Chronicle" ["l"="-5.492,10.558"]
 "OpenHFT/Chronicle-Core" ["l"="-5.468,10.578"]
 "aeron-io/simple-binary-encoding" ["l"="-5.429,10.515"]
-"LMAX-Exchange/disruptor" ["l"="-2.918,11.945"]
-"exchange-core/exchange-core" ["l"="-10.434,12.914"]
+"LMAX-Exchange/disruptor" ["l"="-2.918,11.945", "c"=15]
+"exchange-core/exchange-core" ["l"="-10.434,12.914", "c"=265]
 "jankotek/mapdb" ["l"="-5.496,10.654"]
 "OpenHFT/Zero-Allocation-Hashing" ["l"="-5.529,10.593"]
 "caplogic/Mappedbus" ["l"="-5.556,10.566"]
 "leventov/Koloboke" ["l"="-5.544,10.583"]
+"EsotericSoftware/kryo" ["l"="-2.884,12.088", "c"=15]
+"RuedigerMoeller/fast-serialization" ["l"="-5.557,10.603"]
 "openjdk/jmh" ["l"="-5.668,10.459"]
 "openjdk/jol" ["l"="-5.641,10.483"]
 "async-profiler/async-profiler" ["l"="-5.583,10.452"]
 "melix/jmh-gradle-plugin" ["l"="-5.702,10.456"]
 "artyushov/idea-jmh-plugin" ["l"="-5.729,10.441"]
 "AdoptOpenJDK/jitwatch" ["l"="-5.602,10.493"]
-"openjdk/loom" ["l"="-2.544,12.018"]
-"oracle/visualvm" ["l"="-2.751,12.025"]
+"openjdk/loom" ["l"="-2.544,12.018", "c"=15]
+"oracle/visualvm" ["l"="-2.751,12.025", "c"=15]
 "openjdk/jmc" ["l"="-5.696,10.36"]
-"micrometer-metrics/micrometer" ["l"="-2.572,11.984"]
-"raphw/byte-buddy" ["l"="-2.709,12.067"]
+"micrometer-metrics/micrometer" ["l"="-2.572,11.984", "c"=15]
+"raphw/byte-buddy" ["l"="-2.709,12.067", "c"=15]
 "openjdk/jcstress" ["l"="-5.702,10.421"]
-"openjdk/jdk" ["l"="-2.752,11.876"]
-"awaitility/awaitility" ["l"="-2.437,12.05"]
-"reactor/reactor-core" ["l"="-2.607,12.035"]
-"bytedeco/javacpp" ["l"="-5.456,10.65"]
-"bytedeco/javacpp-presets" ["l"="-3.14,12.492"]
-"bytedeco/javacv" ["l"="-3.108,12.387"]
-"java-native-access/jna" ["l"="-2.872,12.17"]
+"openjdk/jdk" ["l"="-2.752,11.876", "c"=15]
+"awaitility/awaitility" ["l"="-2.437,12.05", "c"=15]
+"reactor/reactor-core" ["l"="-2.607,12.035", "c"=15]
+"eclipse-openj9/openj9" ["l"="-2.724,12.188", "c"=15]
+"VerbalExpressions/JavaVerbalExpressions" ["l"="-2.402,12.03", "c"=15]
+"java-native-access/jna" ["l"="-2.872,12.17", "c"=15]
+"deeplearning4j/deeplearning4j" ["l"="48.06,29.126", "c"=89]
+"bytedeco/javacv" ["l"="-3.108,12.387", "c"=15]
 "jnr/jnr-ffi" ["l"="-5.658,10.586"]
-"deeplearning4j/nd4j" ["l"="-5.295,10.622"]
-"oracle/graal" ["l"="-2.649,11.987"]
-"haifengl/smile" ["l"="-2.802,18.447"]
-"puniverse/quasar" ["l"="-2.778,12.143"]
-"EsotericSoftware/kryo" ["l"="-2.884,12.088"]
-"deeplearning4j/deeplearning4j" ["l"="48.06,29.126"]
+"oracle/graal" ["l"="-2.649,11.987", "c"=15]
+"haifengl/smile" ["l"="-2.802,18.447", "c"=38]
+"puniverse/quasar" ["l"="-2.778,12.143", "c"=15]
+"filamentgroup/tablesaw" ["l"="22.402,-29.769", "c"=36]
+"shekhargulati/strman-java" ["l"="-5.336,10.601"]
+"bootique/bootique" ["l"="-5.323,10.64"]
+"worstcase/gumshoe" ["l"="-5.359,10.601"]
 "EsotericSoftware/reflectasm" ["l"="-5.529,10.653"]
 "snazy/ohc" ["l"="-5.532,10.614"]
 "vigna/fastutil" ["l"="-5.58,10.591"]
-"ronmamo/reflections" ["l"="-2.734,12.049"]
-"RuedigerMoeller/fast-serialization" ["l"="-5.557,10.603"]
-"classgraph/classgraph" ["l"="-2.529,12.109"]
-"protostuff/protostuff" ["l"="-2.959,12.035"]
-"jOOQ/jOOR" ["l"="57.191,-12.436"]
+"ronmamo/reflections" ["l"="-2.734,12.049", "c"=15]
+"classgraph/classgraph" ["l"="-2.529,12.109", "c"=15]
+"protostuff/protostuff" ["l"="-2.959,12.035", "c"=15]
+"jOOQ/jOOR" ["l"="57.191,-12.436", "c"=216]
 "kamranzafar/JCL" ["l"="-5.441,10.71"]
+"jOOQ/jOOL" ["l"="-2.391,12.172", "c"=15]
+"npgall/cqengine" ["l"="-5.506,10.621"]
+"palatable/lambda" ["l"="-2.283,12.283", "c"=15]
+"cxxr/better-java" ["l"="-2.495,11.822", "c"=15]
+"shekhargulati/99-problems" ["l"="-5.364,10.646"]
 "corretto/corretto-11" ["l"="-5.704,9.897"]
-"corretto/corretto-8" ["l"="-2.695,12.225"]
+"corretto/corretto-8" ["l"="-2.695,12.225", "c"=15]
 "corretto/corretto-17" ["l"="-5.712,9.863"]
 "corretto/corretto-jdk" ["l"="-5.689,9.865"]
 "corretto/corretto-11-docker" ["l"="-5.669,9.89"]
 "corretto/corretto-21" ["l"="-5.727,9.851"]
 "corretto/corretto-docker" ["l"="-5.703,9.841"]
 "corretto/corretto-8-docker" ["l"="-5.658,9.872"]
-"corretto/amazon-corretto-crypto-provider" ["l"="-18.898,-25.455"]
+"corretto/amazon-corretto-crypto-provider" ["l"="-18.898,-25.455", "c"=10]
 "dragonwell-project/dragonwell11" ["l"="-5.743,9.995"]
-"adoptium/temurin-build" ["l"="-2.833,12.629"]
+"adoptium/temurin-build" ["l"="-2.833,12.629", "c"=15]
+"Kong/unirest-java" ["l"="-2.678,12.127", "c"=15]
+"wolfcw/libfaketime" ["l"="-24.771,-34.264", "c"=1160]
+"jvm-profiling-tools/perf-map-agent" ["l"="-5.54,10.483"]
+"code-review-checklists/java-concurrency" ["l"="-2.347,11.969", "c"=15]
+"odnoklassniki/one-nio" ["l"="-5.577,10.502"]
+"aragozin/jvm-tools" ["l"="-5.448,10.543"]
+"deephacks/awesome-jvm" ["l"="-5.512,10.502"]
+"qubole/sparklens" ["l"="-2.442,14.815", "c"=43]
+"uber-common/jvm-profiler" ["l"="-5.519,10.413"]
+"LeonardoZ/java-concurrency-patterns" ["l"="25.354,-29.749", "c"=768]
 "brettwooldridge/NuProcess" ["l"="-5.523,10.466"]
 "brettwooldridge/SansOrm" ["l"="-5.49,10.401"]
 "brettwooldridge/SparseBitSet" ["l"="-5.522,10.442"]
@@ -2681,60 +3168,73 @@ digraph G {
 "chrisvest/stormpot" ["l"="-5.517,10.523"]
 "OpenHFT/Chronicle-Bytes" ["l"="-5.498,10.578"]
 "npgall/concurrent-trees" ["l"="-5.496,10.519"]
-"softwaremill/akka-http-session" ["l"="-2.478,18.737"]
-"densh/scala-offheap" ["l"="-2.686,18.801"]
+"softwaremill/akka-http-session" ["l"="-2.478,18.737", "c"=38]
+"densh/scala-offheap" ["l"="-2.686,18.801", "c"=38]
 "RichardWarburton/slab" ["l"="-5.537,10.511"]
-"odnoklassniki/one-nio" ["l"="-5.577,10.502"]
-"scala/scala-java8-compat" ["l"="-2.626,18.773"]
+"scala/scala-java8-compat" ["l"="-2.626,18.773", "c"=38]
 "RuedigerMoeller/kontraktor" ["l"="-5.499,10.477"]
+"google/jimfs" ["l"="-2.451,12.07", "c"=15]
+"google/caliper" ["l"="-5.666,10.506"]
+"google/re2j" ["l"="-5.645,10.554"]
 "jvm-profiling-tools/honest-profiler" ["l"="-5.558,10.467"]
-"chewiebug/GCViewer" ["l"="-2.997,12.03"]
-"jvm-profiling-tools/perf-map-agent" ["l"="-5.54,10.483"]
-"aragozin/jvm-tools" ["l"="-5.448,10.543"]
-"btraceio/btrace" ["l"="-3.062,11.989"]
+"chewiebug/GCViewer" ["l"="-2.997,12.03", "c"=15]
+"btraceio/btrace" ["l"="-3.062,11.989", "c"=15]
 "HdrHistogram/HdrHistogram" ["l"="-5.563,10.522"]
 "giltene/jHiccup" ["l"="-5.558,10.494"]
-"sofastack/sofa-jraft" ["l"="-3.079,11.877"]
-"ben-manes/caffeine" ["l"="-2.755,11.966"]
-"FIXTradingCommunity/fix-simple-binary-encoding" ["l"="-10.503,12.783"]
+"sofastack/sofa-jraft" ["l"="-3.079,11.877", "c"=15]
+"ben-manes/caffeine" ["l"="-2.755,11.966", "c"=15]
+"adamfisk/LittleProxy" ["l"="-2.946,12.192", "c"=15]
+"libtrading/libtrading" ["l"="-10.56,12.893", "c"=265]
+"penberg/falcon" ["l"="-5.244,10.47"]
+"paritytrading/parity" ["l"="-5.309,10.523"]
+"FIXTradingCommunity/fix-simple-binary-encoding" ["l"="-10.503,12.783", "c"=265]
 "artiofix/artio" ["l"="-5.353,10.506"]
-"capnproto/capnproto" ["l"="-19.845,-25.426"]
-"quickfix/quickfix" ["l"="-10.523,12.831"]
+"capnproto/capnproto" ["l"="-19.845,-25.426", "c"=10]
+"quickfix/quickfix" ["l"="-10.523,12.831", "c"=265]
 "quickfix-j/quickfixj" ["l"="-5.337,10.488"]
-"libtrading/libtrading" ["l"="-10.56,12.893"]
-"rsocket/rsocket-java" ["l"="-2.4,12.088"]
-"vavr-io/vavr" ["l"="-2.497,12.095"]
+"rsocket/rsocket-java" ["l"="-2.4,12.088", "c"=15]
+"vavr-io/vavr" ["l"="-2.497,12.095", "c"=15]
+"dremio/gandiva" ["l"="-0.625,14.908", "c"=729]
+"airlift/slice" ["l"="-5.597,10.64"]
+"pivovarit/parallel-collectors" ["l"="-2.104,12.228", "c"=15]
+"cache2k/cache2k" ["l"="-5.489,10.537"]
+"EsotericSoftware/yamlbeans" ["l"="-1.643,12.236", "c"=15]
+"rapidoid/rapidoid" ["l"="-2.6,12.206", "c"=15]
+"ngs-doo/dsl-json" ["l"="-5.595,10.565"]
 "RoaringBitmap/RoaringBitmap" ["l"="-5.661,10.624"]
-"apache/calcite" ["l"="-2.682,14.818"]
+"apache/calcite" ["l"="-2.682,14.818", "c"=43]
 "lemire/javaewah" ["l"="-5.624,10.633"]
 "addthis/stream-lib" ["l"="-5.693,10.671"]
-"RoaringBitmap/CRoaring" ["l"="-19.502,-26.098"]
-"facebookincubator/velox" ["l"="-0.461,14.957"]
+"RoaringBitmap/CRoaring" ["l"="-19.502,-26.098", "c"=10]
+"facebookincubator/velox" ["l"="-0.461,14.957", "c"=729]
+"linkedin/ambry" ["l"="-2.673,14.567", "c"=43]
+"linkedin/PalDB" ["l"="-5.573,10.667"]
+"atomix/copycat" ["l"="-5.54,10.788"]
+"atomix/atomix" ["l"="-5.519,10.695"]
 "OpenHFT/Java-Runtime-Compiler" ["l"="-5.427,10.647"]
 "michaelliao/compiler" ["l"="-5.377,10.728"]
 "trung/InMemoryJavaCompiler" ["l"="-5.394,10.709"]
-"janino-compiler/janino" ["l"="-2.702,11.767"]
+"janino-compiler/janino" ["l"="-2.702,11.767", "c"=15]
 "OpenHFT/Java-Lang" ["l"="-5.401,10.658"]
 "OpenHFT/Chronicle-Threads" ["l"="-5.431,10.59"]
 "OpenHFT/Chronicle-Algorithms" ["l"="-5.424,10.6"]
 "OpenHFT/Chronicle-Logger" ["l"="-5.442,10.6"]
 "OpenHFT/Chronicle-Values" ["l"="-5.454,10.593"]
+"reactive-streams/reactive-streams-jvm" ["l"="-2.586,12.093", "c"=15]
+"dgtony/orderbook-rs" ["l"="-10.461,12.928", "c"=265]
+"dharmeshsing/CoinTossX" ["l"="-5.245,10.362"]
+"OpenHFT/OpenHFT" ["l"="-5.391,10.552"]
 "openjdk/jcov" ["l"="-5.962,10.193"]
 "openjdk/metropolis" ["l"="-5.938,10.197"]
 "esanchezros/quickfixj-spring-boot-starter" ["l"="-5.312,10.451"]
 "paritytrading/philadelphia" ["l"="-5.289,10.501"]
 "esanchezros/quickfixj-spring-boot-starter-examples" ["l"="-5.299,10.438"]
-"quickfixgo/quickfix" ["l"="-10.475,12.848"]
+"quickfixgo/quickfix" ["l"="-10.475,12.848", "c"=265]
 "kpavlov/fixio" ["l"="-5.286,10.474"]
-"fix8/fix8" ["l"="-10.539,12.846"]
-"OpenHFT/OpenHFT" ["l"="-5.391,10.552"]
-"penberg/falcon" ["l"="-5.244,10.47"]
-"OpenGamma/Strata" ["l"="-5.309,10.49"]
-"paritytrading/parity" ["l"="-5.309,10.523"]
+"fix8/fix8" ["l"="-10.539,12.846", "c"=265]
 "google/allocation-instrumenter" ["l"="-5.576,10.479"]
 "patric-r/jvmtop" ["l"="-5.493,10.44"]
 "coderplay/perfj" ["l"="-5.544,10.438"]
-"uber-common/jvm-profiler" ["l"="-5.519,10.413"]
 "cykl/hprof2flamegraph" ["l"="-5.566,10.373"]
 "chrishantha/jfr-flame-graph" ["l"="-5.593,10.389"]
 "dflib/dflib" ["l"="-5.215,10.781"]
@@ -2743,7 +3243,9 @@ digraph G {
 "agrestio/agrest" ["l"="-5.255,10.736"]
 "vmzakharov/dataframe-ec" ["l"="-5.298,10.859"]
 "apache/cayenne" ["l"="-5.231,10.732"]
-"tginsberg/gatherers4j" ["l"="-2.148,10.56"]
+"tginsberg/gatherers4j" ["l"="-2.148,10.56", "c"=1247]
+"dekorateio/dekorate" ["l"="-2.213,11.669", "c"=15]
+"cryostatio/cryostat-legacy" ["l"="-5.693,10.286"]
 "c-guntur/java-katas" ["l"="-5.336,10.917"]
 "BNYMellon/CodeKatas" ["l"="-5.318,10.901"]
 "vmzakharov/mutate-test-kata" ["l"="-5.33,10.883"]
@@ -2765,112 +3267,143 @@ digraph G {
 "IDouble/Decentralized-World-Wide-Web-ERC-721" ["l"="-5.391,11.24"]
 "IDouble/Gold-Silver-Ratio-Metal-Chart" ["l"="-5.438,11.207"]
 "IDouble/Market-Overview-Indexes-Forex-Metals-Crypto" ["l"="-5.447,11.215"]
+"RichardWarburton/java-8-lambdas-exercises" ["l"="-5.632,12.37", "c"=619]
+"Netflix/concurrency-limits" ["l"="-2.66,11.921", "c"=15]
+"openjdk/valhalla" ["l"="-5.79,10.318"]
+"openjdk/amber" ["l"="-5.816,10.306"]
+"openjdk/panama-foreign" ["l"="-5.839,10.318"]
+"lyft/presto-gateway" ["l"="-2.391,14.809", "c"=43]
 "belaban/JGroups" ["l"="-5.464,10.681"]
 "jgroups-extras/jgroups-raft" ["l"="-5.507,10.77"]
 "infinispan/infinispan" ["l"="-5.364,10.537"]
-"atomix/atomix" ["l"="-5.519,10.695"]
 "belaban/workshop" ["l"="-5.432,10.734"]
 "JetBrains/xodus" ["l"="-5.549,10.676"]
 "lmdbjava/lmdbjava" ["l"="-5.55,10.639"]
 "zeromq/jeromq" ["l"="-5.485,10.696"]
-"apache/ignite" ["l"="-2.764,14.653"]
-"undertow-io/undertow" ["l"="-2.749,12.153"]
-"apache/geode" ["l"="-2.646,14.657"]
-"hazelcast/hazelcast" ["l"="-2.748,12.269"]
+"apache/ignite" ["l"="-2.764,14.653", "c"=43]
+"undertow-io/undertow" ["l"="-2.749,12.153", "c"=15]
+"apache/geode" ["l"="-2.646,14.657", "c"=43]
+"hazelcast/hazelcast" ["l"="-2.748,12.269", "c"=15]
+"dragonwell-project/dragonwell8" ["l"="-3.065,11.912", "c"=15]
+"Tencent/TencentKona-8" ["l"="-5.792,9.93"]
+"aaberg/sql2o" ["l"="-2.746,12.314", "c"=15]
 "JetBrains/xodus-dnq" ["l"="-5.479,10.824"]
 "JetBrains/xodus-entity-browser" ["l"="-5.499,10.791"]
 "nitrite/nitrite-java" ["l"="-5.522,10.721"]
-"hrldcpr/pcollections" ["l"="-2.311,12.262"]
-"Kotlin/kotlinx-atomicfu" ["l"="54.733,-13.978"]
-"oshai/kotlin-logging" ["l"="54.896,-13.988"]
-"sksamuel/hoplite" ["l"="54.804,-13.9"]
+"hrldcpr/pcollections" ["l"="-2.311,12.262", "c"=15]
+"Kotlin/kotlinx-atomicfu" ["l"="54.733,-13.978", "c"=25]
+"oshai/kotlin-logging" ["l"="54.896,-13.988", "c"=25]
+"sksamuel/hoplite" ["l"="54.804,-13.9", "c"=25]
 "yahoo/HaloDB" ["l"="-5.584,10.714"]
+"akumuli/Akumuli" ["l"="4.371,-7.607", "c"=0]
+"indeedeng/lsmtree" ["l"="-5.611,10.789"]
+"tdebatty/java-string-similarity" ["l"="-2.274,12.045", "c"=15]
+"raft/raft.github.io" ["l"="0.795,13.928", "c"=115]
+"smacke/jaydio" ["l"="-4.117,12.604", "c"=15]
+"bethrobson/Head-First-Design-Patterns" ["l"="29.521,-22.723", "c"=879]
+"easymock/objenesis" ["l"="-2.59,12.298", "c"=15]
 "JDKMissionControl/jmc" ["l"="-5.685,10.331"]
 "thegreystone/jmc-tutorial" ["l"="-5.71,10.321"]
 "flight-recorder/health-report" ["l"="-5.668,10.335"]
-"openjdk/valhalla" ["l"="-5.79,10.318"]
-"openjdk/amber" ["l"="-5.816,10.306"]
-"cryostatio/cryostat-legacy" ["l"="-5.693,10.286"]
 "eclipse-jifa/jifa" ["l"="-5.666,10.285"]
 "openjdk/skara" ["l"="-5.804,10.338"]
 "microsoft/gctoolkit" ["l"="-5.644,10.363"]
-"moditect/jfrunit" ["l"="-2.248,9.424"]
+"moditect/jfrunit" ["l"="-2.248,9.424", "c"=878]
+"tobert/pcstat" ["l"="6.99,-6.223", "c"=335]
 "lz4/lz4-java" ["l"="-5.584,10.619"]
-"eishay/jvm-serializers" ["l"="-3.074,12.074"]
+"eishay/jvm-serializers" ["l"="-3.074,12.074", "c"=15]
 "carrotsearch/hppc" ["l"="-5.556,10.624"]
-"atomix/copycat" ["l"="-5.54,10.788"]
-"apache/ratis" ["l"="-2.989,11.709"]
-"wenweihu86/raft-java" ["l"="-3.068,11.838"]
-"failsafe-lib/failsafe" ["l"="-2.48,12.078"]
+"apache/ratis" ["l"="-2.989,11.709", "c"=15]
+"wenweihu86/raft-java" ["l"="-3.068,11.838", "c"=15]
+"failsafe-lib/failsafe" ["l"="-2.48,12.078", "c"=15]
 "OpenHFT/Chronicle-Engine" ["l"="-5.428,10.575"]
-"Crypto-toolbox/HFT-Orderbook" ["l"="-10.653,12.935"]
-"rigtorp/spartan" ["l"="-10.594,12.888"]
-"charles-cooper/itch-order-book" ["l"="-10.583,12.878"]
-"chronoxor/CppTrader" ["l"="-10.56,12.922"]
+"Crypto-toolbox/HFT-Orderbook" ["l"="-10.653,12.935", "c"=265]
+"rigtorp/spartan" ["l"="-10.594,12.888", "c"=265]
+"charles-cooper/itch-order-book" ["l"="-10.583,12.878", "c"=265]
+"chronoxor/CppTrader" ["l"="-10.56,12.922", "c"=265]
 "OpenHFT/Chronicle-Network" ["l"="-5.445,10.579"]
-"linkedin/dr-elephant" ["l"="-2.515,14.8"]
-"qubole/sparklens" ["l"="-2.442,14.815"]
-"apache/celeborn" ["l"="-2.551,14.937"]
-"apache/incubator-gluten" ["l"="-2.532,14.908"]
-"apache/kyuubi" ["l"="-2.559,14.916"]
-"LucaCanali/sparkMeasure" ["l"="-2.432,14.794"]
-"oldmanpushcart/greys-anatomy" ["l"="-3.177,12.002"]
-"ColZer/DigAndBuried" ["l"="-2.422,14.937"]
+"linkedin/dr-elephant" ["l"="-2.515,14.8", "c"=43]
+"apache/celeborn" ["l"="-2.551,14.937", "c"=43]
+"apache/incubator-gluten" ["l"="-2.532,14.908", "c"=43]
+"apache/kyuubi" ["l"="-2.559,14.916", "c"=43]
+"LucaCanali/sparkMeasure" ["l"="-2.432,14.794", "c"=43]
+"oldmanpushcart/greys-anatomy" ["l"="-3.177,12.002", "c"=15]
+"ColZer/DigAndBuried" ["l"="-2.422,14.937", "c"=43]
 "apache/datasketches-cpp" ["l"="-5.764,10.77"]
 "apache/datasketches" ["l"="-5.743,10.76"]
-"dnbaker/sketch" ["l"="39.457,37.805"]
+"dnbaker/sketch" ["l"="39.457,37.805", "c"=1288]
 "apache/datasketches-java" ["l"="-5.71,10.711"]
 "apache/datasketches-postgresql" ["l"="-5.802,10.803"]
 "aggregateknowledge/java-hll" ["l"="-5.757,10.713"]
-"twitter/algebird" ["l"="-2.699,18.589"]
+"twitter/algebird" ["l"="-2.699,18.589", "c"=38]
 "tdunning/t-digest" ["l"="-5.74,10.658"]
-"Baqend/Orestes-Bloomfilter" ["l"="9.26,-3.781"]
-"uber-archive/AthenaX" ["l"="-2.527,15.056"]
-"dropwizard/metrics" ["l"="-2.854,12.064"]
-"lw-lin/CoolplaySpark" ["l"="-2.542,16.994"]
-"LinkedInAttic/camus" ["l"="-2.516,14.564"]
-"apache/eagle" ["l"="-2.455,14.982"]
-"apache/gobblin" ["l"="-2.587,14.686"]
-"alibaba/jstorm" ["l"="-3.291,12.114"]
+"Baqend/Orestes-Bloomfilter" ["l"="9.26,-3.781", "c"=382]
+"uber-archive/AthenaX" ["l"="-2.527,15.056", "c"=43]
+"dropwizard/metrics" ["l"="-2.854,12.064", "c"=15]
+"lw-lin/CoolplaySpark" ["l"="-2.542,16.994", "c"=455]
+"LinkedInAttic/camus" ["l"="-2.516,14.564", "c"=43]
+"apache/eagle" ["l"="-2.455,14.982", "c"=43]
+"apache/gobblin" ["l"="-2.587,14.686", "c"=43]
+"alibaba/jstorm" ["l"="-3.291,12.114", "c"=15]
+"AsyncHttpClient/async-http-client" ["l"="-2.847,12.093", "c"=15]
+"glowroot/glowroot" ["l"="-2.748,12.228", "c"=15]
+"nurkiewicz/async-retry" ["l"="-2.712,11.903", "c"=15]
+"vibur/vibur-object-pool" ["l"="-5.422,10.421"]
 "apple/servicetalk" ["l"="-5.611,10.417"]
 "apangin/nalim" ["l"="-5.672,10.431"]
-"line/armeria" ["l"="-2.59,11.831"]
-"filodb/FiloDB" ["l"="-2.542,17.11"]
+"line/armeria" ["l"="-2.59,11.831", "c"=15]
+"filodb/FiloDB" ["l"="-2.542,17.11", "c"=455]
 "apple/GCGC" ["l"="-5.655,10.324"]
-"aol/cyclops" ["l"="-2.395,12.192"]
-"apple/swift-nio-ssl" ["l"="42.158,-26.6"]
-"apple/swift-nio-http2" ["l"="42.139,-26.636"]
+"aol/cyclops" ["l"="-2.395,12.192", "c"=15]
+"apple/swift-nio-ssl" ["l"="42.158,-26.6", "c"=69]
+"apple/swift-nio-http2" ["l"="42.139,-26.636", "c"=69]
 "Project-Skara/jdk" ["l"="-5.593,10.342"]
 "jzillmann/jmh-visualizer" ["l"="-5.697,10.398"]
-"netty/netty-incubator-codec-quic" ["l"="-2.588,13.295"]
+"netty/netty-incubator-codec-quic" ["l"="-2.588,13.295", "c"=15]
+"jblas-project/jblas" ["l"="-2.329,17.353", "c"=455]
 "peter-lawrey/Java-Thread-Affinity" ["l"="-5.568,10.546"]
-"smacke/jaydio" ["l"="-4.117,12.604"]
 "goldmansachs/gs-collections" ["l"="-5.449,10.763"]
 "vsonnier/hppcrt" ["l"="-5.598,10.695"]
-"airlift/slice" ["l"="-5.597,10.64"]
 "airlift/aircompressor" ["l"="-5.608,10.589"]
 "prasanthj/hyperloglog" ["l"="-5.802,10.748"]
-"oldratlee/land" ["l"="-5.119,13.222"]
-"sofastack/sofa-ark" ["l"="-3.149,11.921"]
+"mvel/mvel" ["l"="-3.007,11.888", "c"=15]
+"ScottOaks/JavaPerformanceTuning" ["l"="-5.615,12.323", "c"=619]
+"oldratlee/land" ["l"="-5.119,13.222", "c"=698]
+"sofastack/sofa-ark" ["l"="-3.149,11.921", "c"=15]
 "kamranzafar/jddl" ["l"="-5.41,10.754"]
+"Netflix/flamescope" ["l"="6.997,-6.132", "c"=335]
+"twitter-archive/commons" ["l"="-2.635,18.385", "c"=38]
+"stagemonitor/stagemonitor" ["l"="-2.778,12.178", "c"=15]
+"hyperic/sigar" ["l"="-2.99,12.15", "c"=15]
+"SpencerPark/IJava" ["l"="-5.609,15.236", "c"=1161]
+"jtablesaw/tablesaw" ["l"="-5.336,10.665"]
+"ninia/jep" ["l"="-1.92,10.645", "c"=1247]
+"amaggiulli/QLNet" ["l"="-10.537,13.6", "c"=1168]
 "influxdata/tdigest" ["l"="-5.833,10.727"]
 "caio/go-tdigest" ["l"="-5.865,10.749"]
+"robert-bor/aho-corasick" ["l"="54.009,26.981", "c"=60]
+"fast-pack/JavaFastPFOR" ["l"="-5.611,10.614"]
+"bramp/ffmpeg-cli-wrapper" ["l"="-3.139,12.56", "c"=15]
 "CamDavidsonPilon/tdigest" ["l"="-5.819,10.688"]
-"facebookarchive/beringei" ["l"="0.986,14.038"]
-"axiomhq/hyperloglog" ["l"="4.205,-7.794"]
-"TimelyDataflow/timely-dataflow" ["l"="-0.546,15.034"]
-"OpenTSDB/opentsdb" ["l"="-2.73,14.598"]
-"Netflix/concurrency-limits" ["l"="-2.66,11.921"]
+"facebookarchive/beringei" ["l"="0.986,14.038", "c"=115]
+"axiomhq/hyperloglog" ["l"="4.205,-7.794", "c"=0]
+"TimelyDataflow/timely-dataflow" ["l"="-0.546,15.034", "c"=729]
+"OpenTSDB/opentsdb" ["l"="-2.73,14.598", "c"=43]
 "spenczar/tdigest" ["l"="-5.79,10.695"]
-"twitter-archive/distributedlog" ["l"="-2.634,14.568"]
-"pipelinedb/pipelinedb" ["l"="2.841,13.677"]
-"SerCeMan/jnr-fuse" ["l"="7.86,-7.218"]
+"twitter-archive/distributedlog" ["l"="-2.634,14.568", "c"=43]
+"pipelinedb/pipelinedb" ["l"="2.841,13.677", "c"=257]
+"zeroturnaround/zt-exec" ["l"="-2.48,12.154", "c"=15]
+"SerCeMan/jnr-fuse" ["l"="7.86,-7.218", "c"=14]
 "jnr/jnr-posix" ["l"="-5.785,10.615"]
 "jnr/jffi" ["l"="-5.746,10.589"]
 "nativelibs4java/JNAerator" ["l"="-5.798,10.569"]
 "nativelibs4java/BridJ" ["l"="-5.826,10.559"]
 "jnr/jnr-unixsocket" ["l"="-5.841,10.635"]
 "zakgof/java-native-benchmark" ["l"="-5.722,10.601"]
+"jhalterman/expiringmap" ["l"="-2.447,12.092", "c"=15]
+"chronoxor/FastBinaryEncoding" ["l"="-35.328,-1.908", "c"=8]
+"openmessaging/dledger" ["l"="-3.105,11.68", "c"=15]
+"guobinhit/akka-guide" ["l"="-2.257,18.599", "c"=38]
 "devexperts/aprof" ["l"="-5.628,10.392"]
 "gunnarmorling/jfr-custom-events" ["l"="-5.687,10.304"]
 "IDouble/Customizable-Crypto-Currency-Dashboard-with-Chart" ["l"="-5.439,11.233"]
@@ -2880,36 +3413,54 @@ digraph G {
 "IDouble/ChatGPT-Simple-Tutorial-Image-Text-Code-Generation" ["l"="-5.445,11.2"]
 "IDouble/Simple-ERC-1155-Multi-Token-Template" ["l"="-5.459,11.208"]
 "IDouble/Simple-Game-ERC-721-Token-Template" ["l"="-5.432,11.247"]
+"Netflix/iceberg" ["l"="-2.465,14.815", "c"=43]
 "IDouble/Deep-Learning-Machine-Learning-AI-TensorFlow-Python" ["l"="-5.421,11.262"]
 "IDouble/Python-Scripts" ["l"="-5.407,11.265"]
 "IDouble/Pandas-Python-Data-Analysis-Playground" ["l"="-5.431,11.275"]
+"sjsdfg/dl4j-tutorials" ["l"="59.144,23.916", "c"=235]
+"connamara/quickfixn" ["l"="-10.479,12.809", "c"=265]
 "TimeAndSpaceIO/SmoothieMap" ["l"="-5.541,10.568"]
+"kstyrc/embedded-redis" ["l"="-2.432,11.708", "c"=15]
 "IDouble/JSON-XML-REST-SOAP-Playground" ["l"="-5.458,11.196"]
+"marchof/java-almanac" ["l"="-2.202,9.445", "c"=878]
 "IDouble/Cat-Face-Detector-with-OpenCV-and-JavaFX" ["l"="-5.384,11.272"]
 "IDouble/Simple-Blockchain-C-Sharp" ["l"="-5.37,11.282"]
 "IDouble/IPA-2018-Informatiker-EFZ-Applikationsentwicklung-Alpay-Yildirim" ["l"="-5.367,11.307"]
 "IDouble/Trinary-Calculator-Android-Java-App" ["l"="-5.386,11.226"]
+"yomorun/hashids-java" ["l"="-2.379,12.214", "c"=15]
+"shekhargulati/30-seconds-of-java" ["l"="25.332,-29.778", "c"=768]
+"oracle/graalpython" ["l"="-1.942,10.546", "c"=1247]
+"beehive-lab/TornadoVM" ["l"="-5.873,10.423"]
 "paritytrading/nassau" ["l"="-5.259,10.502"]
 "paritytrading/juncture" ["l"="-5.237,10.491"]
 "jvirtanen/nasdaq-tools" ["l"="-5.241,10.506"]
 "jvirtanen/node-soupbintcp" ["l"="-5.194,10.491"]
 "Amay22/NASDAQ-ITCH-5.0-Parser" ["l"="-5.214,10.497"]
-"cache2k/cache2k" ["l"="-5.489,10.537"]
-"fizzed/rocker" ["l"="-2.48,12.272"]
-"Randgalt/record-builder" ["l"="-2.294,9.471"]
-"jdereg/java-util" ["l"="-2.558,12.171"]
-"jooby-project/jooby" ["l"="-2.534,12.232"]
+"msgpack/msgpack-java" ["l"="-2.695,12.188", "c"=15]
+"xerial/snappy-java" ["l"="-5.617,10.66"]
+"fizzed/rocker" ["l"="-2.48,12.272", "c"=15]
+"Randgalt/record-builder" ["l"="-2.294,9.471", "c"=878]
+"jdereg/java-util" ["l"="-2.558,12.171", "c"=15]
+"jooby-project/jooby" ["l"="-2.534,12.232", "c"=15]
 "ben-manes/concurrentlinkedhashmap" ["l"="-5.412,10.472"]
-"ratpack/ratpack" ["l"="-2.525,12.275"]
-"eclipse-collections/eclipse-collections" ["l"="-2.429,12.185"]
+"ratpack/ratpack" ["l"="-2.525,12.275", "c"=15]
+"google/flogger" ["l"="-2.429,12.021", "c"=15]
+"google/mug" ["l"="-5.723,10.548"]
+"eclipse-collections/eclipse-collections" ["l"="-2.429,12.185", "c"=15]
 "BNYMellon/graphql-kata" ["l"="-5.286,10.888"]
-"rafadelnero/javachallengers" ["l"="28.241,-26.794"]
+"rafadelnero/javachallengers" ["l"="28.241,-26.794", "c"=73]
+"tbroyer/gradle-errorprone-plugin" ["l"="55.302,-14.472", "c"=25]
 "LatencyUtils/LatencyUtils" ["l"="-5.577,10.417"]
 "RedHatPerf/type-pollution-agent" ["l"="-5.602,10.367"]
 "jeffgriffith/native-jvm-leaks" ["l"="-5.506,10.367"]
 "LatencyUtils/jRT" ["l"="-5.551,10.416"]
+"dstat-real/dstat" ["l"="9.044,-4.222", "c"=382]
+"jiaqi/jmxterm" ["l"="-0.966,16.916", "c"=398]
 "boundary/high-scale-lib" ["l"="-5.563,10.396"]
-"boundary/overlock" ["l"="-24.825,-23.735"]
+"boundary/overlock" ["l"="-24.825,-23.735", "c"=745]
+"ivan-vasilev/neuralnetworks" ["l"="-2.267,17.522", "c"=455]
+"stateless4j/stateless4j" ["l"="-2.688,11.816", "c"=15]
+"robertvazan/noexception" ["l"="-5.78,10.541"]
 "cryostatio/cryostat-operator" ["l"="-5.724,10.244"]
 "cryostatio/jfr-datasource" ["l"="-5.707,10.267"]
 "cryostatio/cryostat-web" ["l"="-5.722,10.26"]
@@ -2917,64 +3468,70 @@ digraph G {
 "flight-recorder/samples" ["l"="-5.703,10.303"]
 "openjdk/zgc" ["l"="-5.852,10.285"]
 "openjdk/shenandoah" ["l"="-5.856,10.304"]
-"openjdk/panama-foreign" ["l"="-5.839,10.318"]
-"beehive-lab/TornadoVM" ["l"="-5.873,10.423"]
+"mdeverdelhan/ta4j-origins" ["l"="-9.753,10.714", "c"=614]
+"tools4j/decimal4j" ["l"="-5.262,10.523"]
 "Syncleus/aparapi" ["l"="-5.94,10.424"]
-"NVIDIA/grcuda" ["l"="-1.87,10.525"]
+"NVIDIA/grcuda" ["l"="-1.87,10.525", "c"=1247]
 "openjdk/jextract" ["l"="-5.843,10.367"]
 "aparapi/aparapi" ["l"="-5.961,10.442"]
-"microstream-one/microstream" ["l"="-2.228,12.437"]
+"microstream-one/microstream" ["l"="-2.228,12.437", "c"=15]
 "gpu/JOCL" ["l"="-5.977,10.462"]
-"oracle/tribuo" ["l"="-5.667,15.282"]
-"tjake/Jlama" ["l"="45.934,2.26"]
-"neomatrix369/awesome-graal" ["l"="-1.937,10.506"]
-"jreleaser/jreleaser" ["l"="-2.248,9.492"]
+"oracle/tribuo" ["l"="-5.667,15.282", "c"=1161]
+"tjake/Jlama" ["l"="45.934,2.26", "c"=574]
+"neomatrix369/awesome-graal" ["l"="-1.937,10.506", "c"=1247]
+"jreleaser/jreleaser" ["l"="-2.248,9.492", "c"=878]
 "openjdk/babylon" ["l"="-5.923,10.366"]
-"mirkosertic/Bytecoder" ["l"="-11.286,4.981"]
-"jbangdev/jbang" ["l"="-2.23,9.443"]
+"mirkosertic/Bytecoder" ["l"="-11.286,4.981", "c"=983]
+"jbangdev/jbang" ["l"="-2.23,9.443", "c"=878]
 "jbellis/jamm" ["l"="-5.608,10.523"]
 "DimitrisAndreou/memory-measurer" ["l"="-5.692,10.539"]
 "ObjectLayout/ObjectLayout" ["l"="-5.646,10.423"]
 "ning/jvm-compressor-benchmark" ["l"="-5.655,10.653"]
-"mariusae/heapster" ["l"="-3.416,19.944"]
-"foursquare/heapaudit" ["l"="-3.474,19.768"]
+"mariusae/heapster" ["l"="-3.416,19.944", "c"=709]
+"foursquare/heapaudit" ["l"="-3.474,19.768", "c"=709]
 "ning/compress" ["l"="-5.661,10.676"]
-"smallrye/smallrye-mutiny" ["l"="-0.203,9.127"]
+"xerial/larray" ["l"="-5.648,10.715"]
+"smallrye/smallrye-mutiny" ["l"="-0.203,9.127", "c"=320]
 "infinispan/infinispan-simple-tutorials" ["l"="-5.32,10.427"]
-"wildfly/wildfly" ["l"="-0.077,8.973"]
-"hawtio/hawtio" ["l"="-2.266,11.62"]
-"hibernate/hibernate-reactive" ["l"="-5.2,11.766"]
+"wildfly/wildfly" ["l"="-0.077,8.973", "c"=320]
+"hawtio/hawtio" ["l"="-2.266,11.62", "c"=15]
+"hibernate/hibernate-reactive" ["l"="-5.2,11.766", "c"=928]
 "infinispan/infinispan-operator" ["l"="-5.342,10.449"]
 "radargun/radargun" ["l"="-5.354,10.467"]
-"apache/activemq-artemis" ["l"="-2.398,11.749"]
-"apache/camel-quarkus" ["l"="-2.269,11.561"]
+"apache/activemq-artemis" ["l"="-2.398,11.749", "c"=15]
+"apache/camel-quarkus" ["l"="-2.269,11.561", "c"=15]
 "infinispan/infinispan-console" ["l"="-5.33,10.466"]
+"jhalterman/typetools" ["l"="-2.439,12.249", "c"=15]
 "xedin/windmill" ["l"="-5.787,10.454"]
-"graalvm/graal-core" ["l"="-1.915,10.492"]
+"graalvm/graal-core" ["l"="-1.915,10.492", "c"=1247]
 "openjdk/shenandoah-visualizer" ["l"="-5.68,10.345"]
+"puniverse/capsule" ["l"="-2.538,12.258", "c"=15]
+"HotswapProjects/HotswapAgent" ["l"="-2.77,12.215", "c"=15]
 "Syncleus/aparapi-examples" ["l"="-5.98,10.423"]
 "nativelibs4java/JavaCL" ["l"="-5.902,10.511"]
 "gpu/JOCLSamples" ["l"="-6.012,10.476"]
 "jcuda/jcuda" ["l"="-6.053,10.466"]
 "gpu/JOCLBlast" ["l"="-5.995,10.483"]
+"jenetics/jenetics" ["l"="49.894,25.894", "c"=759]
 "kohlschutter/junixsocket" ["l"="-5.902,10.66"]
 "mcfunley/juds" ["l"="-5.896,10.636"]
 "beehive-lab/kfusion-tornadovm" ["l"="-6.031,10.309"]
 "mikepapadim/llama2.tornadovm.java" ["l"="-6.009,10.313"]
 "openjdk/panama-vector" ["l"="-5.832,10.295"]
 "openjdk/amber-docs" ["l"="-5.825,10.249"]
-"openjdk/jfx" ["l"="0.162,10.068"]
+"openjdk/jfx" ["l"="0.162,10.068", "c"=220]
 "openjdk/valhalla-docs" ["l"="-5.815,10.268"]
 "openjdk/lilliput" ["l"="-5.797,10.275"]
 "openjdk/portola" ["l"="-5.892,10.235"]
 "MysterionRise/mavenized-jcuda" ["l"="-6.025,10.447"]
 "MysterionRise/flavours-of-elastic" ["l"="-6.049,10.435"]
-"enewhuis/liquibook" ["l"="-10.506,12.903"]
-"IanLKaplan/matchingEngine" ["l"="-10.468,12.986"]
-"akhin/liteExchange" ["l"="-10.486,12.96"]
-"penberg/helix" ["l"="-10.561,12.866"]
-"jamesdbrock/hffix" ["l"="-10.554,12.827"]
-"prystupa/scala-cucumber-matching-engine" ["l"="-10.449,13.015"]
+"enewhuis/liquibook" ["l"="-10.506,12.903", "c"=265]
+"IanLKaplan/matchingEngine" ["l"="-10.468,12.986", "c"=265]
+"akhin/liteExchange" ["l"="-10.486,12.96", "c"=265]
+"penberg/helix" ["l"="-10.561,12.866", "c"=265]
+"jamesdbrock/hffix" ["l"="-10.554,12.827", "c"=265]
+"prystupa/scala-cucumber-matching-engine" ["l"="-10.449,13.015", "c"=265]
+"MicroRaft/MicroRaft" ["l"="-2.704,12.892", "c"=15]
 "deephacks/lmdbjni" ["l"="-5.6,10.738"]
 "deephacks/lmdb" ["l"="-5.634,10.774"]
 "deephacks/RxLMDB" ["l"="-5.617,10.767"]
@@ -2992,11 +3549,9 @@ digraph G {
 "flamegrapher/flamegrapher" ["l"="-5.641,10.332"]
 "thegreystone/jmc-jshell" ["l"="-5.729,10.288"]
 "yahoo/Oak" ["l"="-5.614,10.681"]
-"linkedin/PalDB" ["l"="-5.573,10.667"]
 "simerplaha/SwayDB" ["l"="-5.638,10.817"]
-"indeedeng/lsmtree" ["l"="-5.611,10.789"]
-"spring2go/okcache" ["l"="-5.554,13.464"]
-"erthink/libmdbx" ["l"="-22.132,-26.534"]
+"spring2go/okcache" ["l"="-5.554,13.464", "c"=698]
+"erthink/libmdbx" ["l"="-22.132,-26.534", "c"=101]
 "jhalterman/concurrentunit" ["l"="-5.964,10.543"]
 "tobyweston/tempus-fugit" ["l"="-6.002,10.544"]
 "google/thread-weaver" ["l"="-5.842,10.501"]
@@ -3037,8 +3592,8 @@ digraph G {
 "serverless-tencent/serverless-tencent-scf" ["l"="-5.819,9.898"]
 "serverless-components/tencent-express" ["l"="-5.826,9.911"]
 "serverless-components/tencent-scf" ["l"="-5.825,9.886"]
+"openjdk/jdk11u" ["l"="-3.098,13.269", "c"=15]
 "DanielYWoo/fast-object-pool" ["l"="-5.441,10.456"]
-"vibur/vibur-object-pool" ["l"="-5.422,10.421"]
 "RobAustin/low-latency-primitive-concurrent-queues" ["l"="-5.422,10.554"]
 "finos/FDC3" ["l"="-5.152,11.041"]
 "finos/FDC3-Sail" ["l"="-5.115,11.029"]
@@ -3053,11 +3608,12 @@ digraph G {
 "3tty0n/gatling-thrift" ["l"="-5.364,10.993"]
 "folio-sec/reladomo-scala" ["l"="-5.377,10.974"]
 "apache/datasketches-memory" ["l"="-5.682,10.739"]
-"diennea/herddb" ["l"="-2.836,11.203"]
+"diennea/herddb" ["l"="-2.836,11.203", "c"=15]
 "Hyperfoil/Hyperfoil" ["l"="-5.695,10.225"]
 "Hyperfoil/Horreum" ["l"="-5.717,10.189"]
 "RuedigerMoeller/fast-cast" ["l"="-5.447,10.401"]
 "airlift/jvmkill" ["l"="-5.76,10.267"]
+"indeedeng/util" ["l"="-5.663,10.792"]
 "corretto/heapothesys" ["l"="-5.723,10.366"]
 "ChenHuajun/pg_roaringbitmap" ["l"="-5.798,10.86"]
 "cybertec-postgresql/pgfaceting" ["l"="-5.822,10.885"]
@@ -3101,40 +3657,55 @@ digraph G {
 "IDouble/meteor-dapp-wallet" ["l"="-5.425,11.374"]
 "IDouble/remix-ide" ["l"="-5.437,11.419"]
 "IDouble/trinity-wallet" ["l"="-5.407,11.419"]
+"xerial/sqlite-jdbc" ["l"="-2.666,12.201", "c"=15]
+"brendangregg/perf-tools" ["l"="6.951,-6.202", "c"=335]
+"giltene/wrk2" ["l"="3.596,-9.333", "c"=0]
 "pcpratts/rootbeer1" ["l"="-6.004,10.434"]
 "nativelibs4java/ScalaCL" ["l"="-6.033,10.403"]
-"gsitgithub/SubMicroTrading" ["l"="-10.524,12.972"]
-"worstcase/gumshoe" ["l"="-5.359,10.601"]
-"shekhargulati/strman-java" ["l"="-5.336,10.601"]
+"gsitgithub/SubMicroTrading" ["l"="-10.524,12.972", "c"=265]
+"speedment/speedment" ["l"="-2.484,12.181", "c"=15]
+"javaparser/javaparser" ["l"="-2.667,11.952", "c"=15]
 "PatMartin/Dex" ["l"="-5.374,10.615"]
 "stevensouza/automon" ["l"="-5.354,10.622"]
-"bootique/bootique" ["l"="-5.323,10.64"]
 "deeplearning4j/DataVec" ["l"="-5.213,10.626"]
-"deeplearning4j/deeplearning4j-examples" ["l"="-5.18,10.601"]
-"jtablesaw/tablesaw" ["l"="-5.336,10.665"]
-"deeplearning4j/nd4s" ["l"="-2.907,18.687"]
+"deeplearning4j/nd4s" ["l"="-2.907,18.687", "c"=38]
 "sacert/SoundSea" ["l"="-5.336,10.622"]
-"shekhargulati/99-problems" ["l"="-5.364,10.646"]
 "deeplearning4j/rl4j" ["l"="-5.183,10.633"]
+"googleapis/google-http-java-client" ["l"="44.608,16.676", "c"=213]
+"uniVocity/univocity-parsers" ["l"="-2.412,12.161", "c"=15]
+"brendangregg/FlameGraph" ["l"="-19.675,-25.405", "c"=10]
+"voldemort/voldemort" ["l"="-3.257,20.035", "c"=709]
+"dain/leveldb" ["l"="-5.561,10.706"]
+"deepjavalibrary/djl" ["l"="45.833,2.384", "c"=574]
+"ThomasVitale/awesome-spring" ["l"="25.771,-30.806", "c"=176]
+"hollingsworthd/jBrowserDriver" ["l"="-1.944,-0.389", "c"=224]
+"jmxtrans/jmxtrans" ["l"="-0.503,17.082", "c"=398]
 "babl-ws/babl" ["l"="-5.276,10.449"]
 "aeron-io/benchmarks" ["l"="-5.285,10.423"]
 "aeron-io/aeron-cookbook-code" ["l"="-5.265,10.427"]
-"tools4j/decimal4j" ["l"="-5.262,10.523"]
-"scalecube/reactor-aeron" ["l"="-2.077,12.333"]
+"scalecube/reactor-aeron" ["l"="-2.077,12.333", "c"=15]
 "brettwooldridge/HikariCP-benchmark" ["l"="-5.448,10.289"]
-"dain/leveldb" ["l"="-5.561,10.706"]
 "fusesource/leveldbjni" ["l"="-5.625,10.731"]
 "dain/snappy" ["l"="-5.639,10.686"]
 "jankotek/JDBM3" ["l"="-5.587,10.81"]
-"adyliu/jafka" ["l"="-3.411,12.224"]
+"adyliu/jafka" ["l"="-3.411,12.224", "c"=15]
+"ingokegel/jclasslib" ["l"="-2.993,11.852", "c"=15]
+"apache/maven-mvnd" ["l"="-2.551,11.869", "c"=15]
+"vojtechhabarta/typescript-generator" ["l"="-2.233,12.074", "c"=15]
+"bsideup/jabel" ["l"="-2.253,9.46", "c"=878]
+"arnaudroger/SimpleFlatMapper" ["l"="-2.545,12.297", "c"=15]
+"activej/activej" ["l"="-2.358,12.305", "c"=15]
+"youngwookim/awesome-hadoop" ["l"="26.022,-26.332", "c"=32]
+"kevinsawicki/http-request" ["l"="-3.291,12.156", "c"=15]
+"buptdavid/datastructure" ["l"="-3.386,12.267", "c"=15]
 "cardillo/joinery" ["l"="-5.22,10.703"]
 "zavtech/morpheus-core" ["l"="-5.163,10.725"]
 "netzwerg/paleo" ["l"="-5.181,10.738"]
-"holgerbrandl/krangl" ["l"="54.844,-13.823"]
+"holgerbrandl/krangl" ["l"="54.844,-13.823", "c"=25]
 "c-bata/jpandas" ["l"="-5.186,10.71"]
 "nRo/DataFrame" ["l"="-5.164,10.696"]
-"knowm/XChart" ["l"="0.285,10.134"]
-"pentaho/mondrian" ["l"="-2.173,15.014"]
+"knowm/XChart" ["l"="0.285,10.134", "c"=220]
+"pentaho/mondrian" ["l"="-2.173,15.014", "c"=43]
 "finos/legend" ["l"="-5.244,10.999"]
 "finos/legend-engine" ["l"="-5.249,11.044"]
 "finos/legend-pure" ["l"="-5.257,11.03"]
@@ -3142,28 +3713,32 @@ digraph G {
 "goldmansachs/reladomo" ["l"="-5.398,10.924"]
 "finos/legend-sdlc" ["l"="-5.235,11.026"]
 "finos/legend-shared" ["l"="-5.247,11.022"]
-"goldmansachs/gs-quant" ["l"="-8.945,12.748"]
+"goldmansachs/gs-quant" ["l"="-8.945,12.748", "c"=105]
 "finos/waltz" ["l"="-5.181,11.043"]
-"finmath/finmath-lib" ["l"="-9.776,10.749"]
-"OpenSourceRisk/Engine" ["l"="-8.686,13.153"]
-"frgomes/jquantlib" ["l"="-9.776,10.78"]
-"lballabio/QuantLib" ["l"="-8.768,12.851"]
-"lballabio/QuantLib-SWIG" ["l"="-8.73,13.136"]
+"finmath/finmath-lib" ["l"="-9.776,10.749", "c"=614]
+"OpenSourceRisk/Engine" ["l"="-8.686,13.153", "c"=105]
+"frgomes/jquantlib" ["l"="-9.776,10.78", "c"=614]
+"lballabio/QuantLib" ["l"="-8.768,12.851", "c"=105]
+"lballabio/QuantLib-SWIG" ["l"="-8.73,13.136", "c"=105]
 "OpenGamma/OG-Platform" ["l"="-5.237,10.445"]
-"ta4j/ta4j" ["l"="-9.772,10.668"]
-"lukstei/trading-backtest" ["l"="-9.774,10.728"]
-"amaggiulli/QLNet" ["l"="-10.537,13.6"]
-"attack68/rateslib" ["l"="-8.762,13.19"]
+"lukstei/trading-backtest" ["l"="-9.774,10.728", "c"=614]
+"attack68/rateslib" ["l"="-8.762,13.19", "c"=105]
+"datumbox/datumbox-framework" ["l"="-2.372,17.403", "c"=455]
+"aol/micro-server" ["l"="-5.265,10.65"]
+"CSUG/HouseMD" ["l"="-3.574,12.316", "c"=15]
 "jzillmann/gradle-jmh-report" ["l"="-5.726,10.406"]
-"tbroyer/gradle-errorprone-plugin" ["l"="55.302,-14.472"]
-"Kotlin/kotlinx-benchmark" ["l"="54.746,-13.966"]
-"GradleUp/shadow" ["l"="54.99,-14.172"]
-"gradle/gradle-profiler" ["l"="54.787,-14.378"]
+"Kotlin/kotlinx-benchmark" ["l"="54.746,-13.966", "c"=25]
+"GradleUp/shadow" ["l"="54.99,-14.172", "c"=25]
+"gradle/gradle-profiler" ["l"="54.787,-14.378", "c"=25]
 "reyerizo/jcstress-gradle-plugin" ["l"="-5.754,10.459"]
-"tbroyer/gradle-apt-plugin" ["l"="55.217,-14.623"]
+"tbroyer/gradle-apt-plugin" ["l"="55.217,-14.623", "c"=25]
 "melix/jmh-gradle-example" ["l"="-5.758,10.444"]
-"gradle/test-retry-gradle-plugin" ["l"="55,-14.413"]
-"google/caliper" ["l"="-5.666,10.506"]
+"gradle/test-retry-gradle-plugin" ["l"="55,-14.413", "c"=25]
+"spring-gradle-plugins/dependency-management-plugin" ["l"="55.099,-14.483", "c"=25]
+"advantageous/qbit" ["l"="-5.259,11.855", "c"=928]
+"apache/opennlp" ["l"="-2.936,14.548", "c"=43]
+"lemire/fast_double_parser" ["l"="-19.711,-26.14", "c"=10]
+"wrandelshofer/FastDoubleParser" ["l"="-5.706,10.515"]
 "fiken/junixsocket" ["l"="-5.936,10.674"]
 "adoptium/emt4j" ["l"="-5.719,10.102"]
 "jvm-profiling-tools/ap-loader" ["l"="-5.68,10.32"]
@@ -3171,44 +3746,54 @@ digraph G {
 "krzysztofslusarski/jvm-gc-logs-analyzer" ["l"="-5.673,10.201"]
 "bytedance/CompoundVM" ["l"="-5.706,10.134"]
 "mgm3746/garbagecat" ["l"="-5.635,10.261"]
-"dreamlike-ocean/PanamaUring" ["l"="-2.772,-34.472"]
+"dreamlike-ocean/PanamaUring" ["l"="-2.772,-34.472", "c"=596]
+"forax/java-guide" ["l"="-2.115,9.573", "c"=878]
 "jordw/heftydb" ["l"="-5.636,10.852"]
 "siathalysedI/lsmtree" ["l"="-5.697,10.94"]
-"andylamp/BPlusTree" ["l"="1.533,13.74"]
-"indeedeng/util" ["l"="-5.663,10.792"]
+"andylamp/BPlusTree" ["l"="1.533,13.74", "c"=376]
 "bulldog2011/bigqueue" ["l"="-5.558,10.728"]
+"abel533/ECharts" ["l"="-3.588,11.912", "c"=15]
+"ECharts-Java/ECharts-Java" ["l"="-5.125,10.824"]
+"davidmoten/rtree" ["l"="39.611,23.78", "c"=157]
+"inferred/FreeBuilder" ["l"="-2.358,12.096", "c"=15]
 "akarnokd/jmh-compare-gui" ["l"="-5.885,10.494"]
+"powturbo/TurboPFor-Integer-Compression" ["l"="-19.339,-26.166", "c"=10]
 "ChronicleClientProjects/Collections" ["l"="-5.619,10.544"]
-"Tencent/TencentKona-8" ["l"="-5.792,9.93"]
 "Tencent/TencentKona-11" ["l"="-5.754,9.96"]
 "Tencent/TencentKona-17" ["l"="-5.774,9.958"]
-"dragonwell-project/dragonwell8" ["l"="-3.065,11.912"]
-"Tencent/TencentKonaSMSuite" ["l"="-22.291,14.52"]
+"Tencent/TencentKonaSMSuite" ["l"="-22.291,14.52", "c"=412]
 "dragonwell-project/dragonwell17" ["l"="-5.765,9.989"]
+"wecite/papers" ["l"="-2.16,18.678", "c"=38]
 "AdaptiveConsulting/aeron-io-samples" ["l"="-5.244,10.394"]
 "lirm/aeron-go" ["l"="-5.221,10.401"]
 "fusesource/rocksdbjni" ["l"="-5.662,10.77"]
-"xerial/snappy-java" ["l"="-5.617,10.66"]
+"amplab/succinct" ["l"="-2.71,17.259", "c"=455]
 "finos/git-proxy" ["l"="-5.15,11.104"]
 "Citi/citi-ospo" ["l"="-5.115,11.125"]
 "finos/open-source-readiness" ["l"="-5.122,11.141"]
 "finos/devops-automation" ["l"="-5.142,11.14"]
 "UnitedTraders/aeron-rs" ["l"="-5.211,10.38"]
-"moditect/layrry" ["l"="-2.19,9.487"]
-"atp-mipt/ljv" ["l"="-2.203,11.148"]
+"moditect/layrry" ["l"="-2.19,9.487", "c"=878]
+"atp-mipt/ljv" ["l"="-2.203,11.148", "c"=15]
 "stokito/IdeaJol" ["l"="-5.746,10.48"]
 "jattach/jattach" ["l"="-5.618,10.455"]
-"cowtowncoder/low-gc-membuffers" ["l"="-3.287,19.664"]
-"MicroRaft/MicroRaft" ["l"="-2.704,12.892"]
+"cowtowncoder/low-gc-membuffers" ["l"="-3.287,19.664", "c"=709]
+"osiegmar/FastCSV" ["l"="-2.2,9.671", "c"=878]
 "andy-yx-chen/jraft" ["l"="-5.539,10.828"]
+"yandex-qatools/postgresql-embedded" ["l"="-2.284,11.833", "c"=15]
+"uniVocity/univocity-trader" ["l"="-9.81,10.704", "c"=614]
 "spotify/threaddump-analyzer" ["l"="-5.391,10.242"]
 "irockel/tda" ["l"="-5.363,10.18"]
 "jstack-review/jstack-review" ["l"="-5.357,10.208"]
+"timolson/cointrader" ["l"="-9.791,10.702", "c"=614]
 "dragonwell-project/dragonwell21" ["l"="-5.784,9.979"]
+"FinVolution/pmq" ["l"="-5.557,13.439", "c"=698]
 "IDouble/ghidra" ["l"="-5.373,11.196"]
 "OpenHFT/RFC" ["l"="-5.403,10.59"]
 "OpenHFT/Chronicle-Queue-Demo" ["l"="-5.404,10.612"]
 "giltene/HeapFragger" ["l"="-5.761,10.342"]
+"dcaoyuan/chana" ["l"="-2.291,18.701", "c"=38]
+"subchen/jetbrick-template-2x" ["l"="-3.345,12.301", "c"=15]
 "IDouble/Blazor-Razor-Playground-C-Sharp" ["l"="-5.432,11.175"]
 "finos/morphir-elm" ["l"="-5.135,11.004"]
 "finos/morphir-jvm" ["l"="-5.15,10.997"]
@@ -3216,7 +3801,7 @@ digraph G {
 "OpenHFT/Chronicle-TimeSeries" ["l"="-5.431,10.608"]
 "OpenHFT/Chronicle-Engine-GUI" ["l"="-5.411,10.597"]
 "apache/cayenne-modeler" ["l"="-5.207,10.75"]
-"apache/jackrabbit" ["l"="-0.839,12.136"]
+"apache/jackrabbit" ["l"="-0.839,12.136", "c"=1081]
 "JetBrains/youtrack-rest-python-library" ["l"="-5.352,11.069"]
 "JetBrains/youtrack-python-scripts" ["l"="-5.336,11.095"]
 "JetBrains/youtrack-workflows" ["l"="-5.37,11.04"]
@@ -3230,70 +3815,74 @@ digraph G {
 "OpenHFT/Chronicle-Map-Java8" ["l"="-5.312,10.572"]
 "OpenHFT/Spoon" ["l"="-5.281,10.564"]
 "idexio/staking-replicator" ["l"="-5.515,11.111"]
+"Aircoin-official/AirCash" ["l"="-23.155,7.974", "c"=802]
+"moditect/jfr-analytics" ["l"="-5.676,10.25"]
+"Netflix/vector" ["l"="6.97,-6.098", "c"=335]
+"h2database/h2database" ["l"="-2.785,12.009", "c"=15]
 "goldmansachs/gs-collections-kata" ["l"="-5.412,10.874"]
 "goldmansachs/gs-xsd2bean" ["l"="-5.415,10.902"]
-"google/jimfs" ["l"="-2.451,12.07"]
-"google/truth" ["l"="-2.396,11.987"]
-"google/compile-testing" ["l"="57.002,-13.776"]
-"google/mug" ["l"="-5.723,10.548"]
-"google/flogger" ["l"="-2.429,12.021"]
-"inferred/FreeBuilder" ["l"="-2.358,12.096"]
-"google/re2j" ["l"="-5.645,10.554"]
-"google/error-prone" ["l"="-2.391,11.914"]
-"hora-search/hora" ["l"="-8.412,-4.23"]
-"uzh-rpg/rpg_timelens" ["l"="61.474,33.403"]
-"sniptt-official/ots" ["l"="-13.493,-5.922"]
+"amaembo/streamex" ["l"="-2.385,12.121", "c"=15]
+"jgrapht/jgrapht" ["l"="-4.068,-41.637", "c"=302]
+"bbottema/simple-java-mail" ["l"="-2.359,9.193", "c"=878]
+"apache/lucene" ["l"="-2.93,14.642", "c"=43]
+"google/truth" ["l"="-2.396,11.987", "c"=15]
+"google/compile-testing" ["l"="57.002,-13.776", "c"=123]
+"google/error-prone" ["l"="-2.391,11.914", "c"=15]
+"kaitoy/pcap4j" ["l"="-2.708,12.459", "c"=15]
+"LMDB/lmdb" ["l"="-22.19,-26.484", "c"=101]
+"rsocket/rsocket" ["l"="-2.301,12.158", "c"=15]
+"hora-search/hora" ["l"="-8.412,-4.23", "c"=407]
+"uzh-rpg/rpg_timelens" ["l"="61.474,33.403", "c"=647]
+"sniptt-official/ots" ["l"="-13.493,-5.922", "c"=86]
 "nativelibs4java/nativelibs4java" ["l"="-5.856,10.573"]
 "ajermakovics/jvm-mon" ["l"="-5.475,10.459"]
-"jiaqi/jmxterm" ["l"="-0.966,16.916"]
-"jmxtrans/jmxtrans" ["l"="-0.503,17.082"]
-"stagemonitor/stagemonitor" ["l"="-2.778,12.178"]
-"etsy/statsd-jvm-profiler" ["l"="-0.457,17.215"]
+"etsy/statsd-jvm-profiler" ["l"="-0.457,17.215", "c"=398]
 "OpenHFT/JLBH" ["l"="-5.395,10.676"]
-"aol/micro-server" ["l"="-5.265,10.65"]
-"aol/cyclops-integration" ["l"="-2.33,12.262"]
-"advantageous/qbit" ["l"="-5.259,11.855"]
-"aolarchive/vulcan" ["l"="-2.276,12.343"]
-"redkale/redkale" ["l"="-3.632,12.02"]
-"puniverse/capsule" ["l"="-2.538,12.258"]
-"kbastani/spring-cloud-microservice-example" ["l"="25.921,-30.578"]
-"bbossgroups/bboss" ["l"="-4.008,8.736"]
-"youtongluan/sumk" ["l"="-3.695,12.093"]
-"rohitghatol/spring-boot-microservices" ["l"="25.89,-30.628"]
-"facebookarchive/jcommon" ["l"="-3.078,12.408"]
-"Percy0601/boot-dubbo" ["l"="-3.53,12.226"]
-"DataDog/sketches-py" ["l"="-18.662,-26.53"]
+"EdwardRaff/JSAT" ["l"="-2.298,17.473", "c"=455]
+"orbit/orbit" ["l"="-2.641,12.265", "c"=15]
+"plasma-umass/doppio" ["l"="-11.257,5.002", "c"=983]
+"hankcs/AhoCorasickDoubleArrayTrie" ["l"="53.944,27.091", "c"=60]
+"aol/cyclops-integration" ["l"="-2.33,12.262", "c"=15]
+"aolarchive/vulcan" ["l"="-2.276,12.343", "c"=15]
+"redkale/redkale" ["l"="-3.632,12.02", "c"=15]
+"kbastani/spring-cloud-microservice-example" ["l"="25.921,-30.578", "c"=176]
+"bbossgroups/bboss" ["l"="-4.008,8.736", "c"=540]
+"youtongluan/sumk" ["l"="-3.695,12.093", "c"=15]
+"rohitghatol/spring-boot-microservices" ["l"="25.89,-30.628", "c"=176]
+"facebookarchive/jcommon" ["l"="-3.078,12.408", "c"=15]
+"Percy0601/boot-dubbo" ["l"="-3.53,12.226", "c"=15]
+"DataDog/sketches-py" ["l"="-18.662,-26.53", "c"=10]
 "tdunning/anomaly-detection" ["l"="-5.868,10.707"]
-"grantjenks/python-runstats" ["l"="52.785,24.103"]
-"cs-au-dk/dk.brics.automaton" ["l"="-11.416,-4.907"]
-"gliwka/hyperscan-java" ["l"="6.379,-5.198"]
-"fulmicoton/multiregexp" ["l"="-11.406,-4.938"]
-"jOOQ/jOOL" ["l"="-2.391,12.172"]
-"googleapis/google-http-java-client" ["l"="44.608,16.676"]
+"grantjenks/python-runstats" ["l"="52.785,24.103", "c"=1203]
+"cs-au-dk/dk.brics.automaton" ["l"="-11.416,-4.907", "c"=1245]
+"gliwka/hyperscan-java" ["l"="6.379,-5.198", "c"=749]
+"fulmicoton/multiregexp" ["l"="-11.406,-4.938", "c"=1245]
 "MyCATApache/Mycat-IPC" ["l"="-5.625,10.566"]
 "apache/datasketches-website" ["l"="-5.768,10.743"]
-"apache/flink-statefun" ["l"="-2.652,15.159"]
-"apache/systemds" ["l"="-2.603,17.247"]
-"ververica/stateful-functions" ["l"="-2.679,15.178"]
-"sameeragarwal/blinkdb" ["l"="-2.41,14.523"]
-"greenplum-db/gporca" ["l"="1.872,13.487"]
+"apache/flink-statefun" ["l"="-2.652,15.159", "c"=43]
+"apache/systemds" ["l"="-2.603,17.247", "c"=455]
+"ververica/stateful-functions" ["l"="-2.679,15.178", "c"=43]
+"sameeragarwal/blinkdb" ["l"="-2.41,14.523", "c"=43]
+"greenplum-db/gporca" ["l"="1.872,13.487", "c"=376]
 "hyperxpro/Brotli4j" ["l"="-5.748,10.622"]
 "nixxcode/jvm-brotli" ["l"="-5.801,10.643"]
+"linkedin/URL-Detector" ["l"="-2.715,14.267", "c"=43]
 "lhotari/jfr-report-tool" ["l"="-5.574,10.324"]
-"epickrram/grav" ["l"="6.98,-5.986"]
-"jvirtanen/coinbase-fix-example" ["l"="-10.264,11.972"]
+"epickrram/grav" ["l"="6.98,-5.986", "c"=335]
+"jvirtanen/coinbase-fix-example" ["l"="-10.264,11.972", "c"=408]
 "paritytrading/philadelphia-extras" ["l"="-5.251,10.487"]
 "paritytrading/parity-extras" ["l"="-5.262,10.48"]
 "msteindorfer/memory-measurer" ["l"="-5.746,10.544"]
 "Tencent/TencentKona-21" ["l"="-5.747,9.937"]
-"ThomasVitale/awesome-spring" ["l"="25.771,-30.806"]
 "luben/zstd-jni" ["l"="-5.634,10.598"]
-"cijaaimee/Slime-World-Manager" ["l"="-35.627,-13.194"]
-"facebook/zstd" ["l"="-19.726,-25.395"]
-"burmanm/gorilla-tsc" ["l"="4.334,-7.731"]
-"inikep/lzbench" ["l"="-39.198,21.101"]
+"cijaaimee/Slime-World-Manager" ["l"="-35.627,-13.194", "c"=74]
+"facebook/zstd" ["l"="-19.726,-25.395", "c"=10]
+"burmanm/gorilla-tsc" ["l"="4.334,-7.731", "c"=0]
+"inikep/lzbench" ["l"="-39.198,21.101", "c"=563]
 "sproket/Persism" ["l"="-5.751,10.403"]
-"Col-E/FxSampler" ["l"="0.108,10.34"]
+"Col-E/FxSampler" ["l"="0.108,10.34", "c"=220]
+"binkley/modern-java-practices" ["l"="-2.289,9.569", "c"=878]
+"nadimkobeissi/appleprivacyletter" ["l"="-13.595,-5.703", "c"=86]
 "x4e/classfile-rs" ["l"="-5.573,10.163"]
 "TheBritishMidget/PyteCode" ["l"="-5.557,10.143"]
 "x4e/jvm-rs" ["l"="-5.597,10.198"]
@@ -3302,78 +3891,74 @@ digraph G {
 "xxDark/JavaShellcodeInjector" ["l"="-5.615,10.235"]
 "green4j/green-jelly" ["l"="-5.221,10.529"]
 "dougqh/jvm-mechanics" ["l"="-5.532,10.374"]
+"PerfMa/xpocket" ["l"="-3.227,11.681", "c"=15]
+"cloudfoundry/java-buildpack-memory-calculator" ["l"="-2.269,11.899", "c"=15]
 "x-hansong/TinyKvStore" ["l"="-5.773,11.077"]
 "aronszanto/sLSM-Tree" ["l"="-5.75,11.044"]
+"elki-project/elki" ["l"="-2.328,17.565", "c"=455]
+"cfg4j/cfg4j" ["l"="-2.345,12.174", "c"=15]
+"vibur/vibur-dbcp" ["l"="-5.388,10.382"]
 "goldmansachs/gs-ocpmon" ["l"="-5.418,10.916"]
 "permazen/permazen" ["l"="-5.517,10.878"]
 "datatechnology/jraft" ["l"="-5.551,10.864"]
-"linkedin/ambry" ["l"="-2.673,14.567"]
-"linkedin/parseq" ["l"="-2.712,14.377"]
-"spotify/sparkey-java" ["l"="-3.192,18.024"]
-"LinkedInAttic/JTune" ["l"="-2.732,14.309"]
+"linkedin/parseq" ["l"="-2.712,14.377", "c"=43]
+"spotify/sparkey-java" ["l"="-3.192,18.024", "c"=38]
+"LinkedInAttic/JTune" ["l"="-2.732,14.309", "c"=43]
+"graalvm/simplelanguage" ["l"="-1.975,10.486", "c"=1247]
 "petrbouda/jeffrey" ["l"="-5.615,10.276"]
 "GCPlot/gcplot" ["l"="-5.631,10.168"]
-"wecite/papers" ["l"="-2.16,18.678"]
-"dcaoyuan/chana" ["l"="-2.291,18.701"]
 "dcapwell/lightweight-java-profiler" ["l"="-5.519,10.342"]
-"khronus/khronus" ["l"="-2.279,18.732"]
-"CSUG/HouseMD" ["l"="-3.574,12.316"]
+"khronus/khronus" ["l"="-2.279,18.732", "c"=38]
 "finos/InnerSource" ["l"="-5.102,11.146"]
 "finos/DEI-SIG" ["l"="-5.112,11.165"]
 "krzysztofslusarski/jvm-profiling-toolkit" ["l"="-5.68,10.162"]
-"vibur/vibur-dbcp" ["l"="-5.388,10.382"]
 "metamx/extendedset" ["l"="-5.678,10.707"]
 "metamx/bytebuffer-collections" ["l"="-5.707,10.748"]
-"wrandelshofer/FastDoubleParser" ["l"="-5.706,10.515"]
 "forax/vector-handle" ["l"="-5.751,10.518"]
 "AugustNagro/utf8.java" ["l"="-5.72,10.474"]
 "OpenHFT/jvm-micro-benchmarks" ["l"="-5.269,10.572"]
-"sjsdfg/dl4j-tutorials" ["l"="59.144,23.916"]
-"deepjavalibrary/djl" ["l"="45.833,2.384"]
-"sjsdfg/deeplearning4j-issues" ["l"="59.12,23.939"]
-"deeplearning4j/ScalNet" ["l"="-2.882,18.72"]
-"apache/opennlp" ["l"="-2.936,14.548"]
-"tensorflow/java" ["l"="-5.748,15.333"]
-"yahoo/TensorFlowOnSpark" ["l"="-2.571,17.128"]
-"NLPchina/ansj_seg" ["l"="-3.992,8.601"]
-"scalanlp/breeze" ["l"="-2.772,18.611"]
-"apache/mahout" ["l"="-2.79,14.586"]
-"npgall/cqengine" ["l"="-5.506,10.621"]
-"amaembo/streamex" ["l"="-2.385,12.121"]
-"speedment/speedment" ["l"="-2.484,12.181"]
-"shekhargulati/java8-the-missing-tutorial" ["l"="25.32,-29.736"]
-"giantray/stackoverflow-java-top-qa" ["l"="-0.502,10.862"]
-"akullpp/awesome-java" ["l"="-2.585,11.438"]
-"shekhargulati/52-technologies-in-2016" ["l"="23.198,-26.976"]
-"cxxr/better-java" ["l"="-2.495,11.822"]
-"deephacks/awesome-jvm" ["l"="-5.512,10.502"]
-"Vedenin/useful-java-links" ["l"="-2.43,11.792"]
-"ngs-doo/dsl-json" ["l"="-5.595,10.565"]
+"spotify/apollo" ["l"="-2.402,12.139", "c"=15]
+"shekhargulati/java8-the-missing-tutorial" ["l"="25.32,-29.736", "c"=768]
+"sjsdfg/deeplearning4j-issues" ["l"="59.12,23.939", "c"=235]
+"deeplearning4j/ScalNet" ["l"="-2.882,18.72", "c"=38]
+"tensorflow/java" ["l"="-5.748,15.333", "c"=1161]
+"yahoo/TensorFlowOnSpark" ["l"="-2.571,17.128", "c"=455]
+"NLPchina/ansj_seg" ["l"="-3.992,8.601", "c"=540]
+"scalanlp/breeze" ["l"="-2.772,18.611", "c"=38]
+"apache/mahout" ["l"="-2.79,14.586", "c"=43]
+"devoxx/JavaRoadmap" ["l"="28.449,-26.81", "c"=73]
+"giantray/stackoverflow-java-top-qa" ["l"="-0.502,10.862", "c"=347]
+"akullpp/awesome-java" ["l"="-2.585,11.438", "c"=15]
+"shekhargulati/52-technologies-in-2016" ["l"="23.198,-26.976", "c"=28]
+"Vedenin/useful-java-links" ["l"="-2.43,11.792", "c"=15]
+"SQiShER/java-object-diff" ["l"="-2.675,11.902", "c"=15]
+"gchq/Gaffer" ["l"="23.953,-31.137", "c"=304]
 "fabienrenaud/java-json-benchmark" ["l"="-5.641,10.516"]
-"json-iterator/java" ["l"="-5.833,15.444"]
-"rapidoid/rapidoid" ["l"="-2.6,12.206"]
-"filamentgroup/tablesaw" ["l"="22.402,-29.769"]
-"fast-pack/JavaFastPFOR" ["l"="-5.611,10.614"]
-"fast-pack/FastPFOR" ["l"="-19.315,-26.156"]
-"powturbo/TurboPFor-Integer-Compression" ["l"="-19.339,-26.166"]
-"lemire/dictionary" ["l"="-19.261,-26.168"]
-"zentures/encoding" ["l"="-19.23,-26.177"]
-"amplab/succinct" ["l"="-2.71,17.259"]
+"json-iterator/java" ["l"="-5.833,15.444", "c"=1161]
+"opentracing/opentracing-java" ["l"="-2.938,12.243", "c"=15]
+"airlift/airlift" ["l"="-2.367,14.826", "c"=43]
+"spiermar/d3-flame-graph" ["l"="6.95,-6.022", "c"=335]
+"YahooArchive/anthelion" ["l"="-3.544,12.147", "c"=15]
+"fast-pack/FastPFOR" ["l"="-19.315,-26.156", "c"=10]
+"lemire/dictionary" ["l"="-19.261,-26.168", "c"=10]
+"zentures/encoding" ["l"="-19.23,-26.177", "c"=10]
+"FeatureBaseDB/featurebase" ["l"="4.097,-8.268", "c"=0]
 "atomix/catalyst" ["l"="-5.513,10.841"]
 "cloud-software-foundation/c5-replicator" ["l"="-5.557,10.832"]
-"jurmous/etcd4j" ["l"="-2.925,11.716"]
-"logcabin/logcabin" ["l"="0.877,13.966"]
-"ECharts-Java/ECharts-Java" ["l"="-5.125,10.824"]
+"jurmous/etcd4j" ["l"="-2.925,11.716", "c"=15]
+"logcabin/logcabin" ["l"="0.877,13.966", "c"=115]
+"scalecube/scalecube-services" ["l"="-2.103,12.293", "c"=15]
 "ECharts-Java/ECharts-Java-Examples" ["l"="-5.103,10.848"]
 "ECharts-Java/Snapshot-PhantomJS" ["l"="-5.099,10.832"]
-"jfree/jfreechart" ["l"="0.285,10.181"]
+"jfree/jfreechart" ["l"="0.285,10.181", "c"=220]
 "xiaomaigou/echarts-export-server" ["l"="-5.085,10.831"]
-"abel533/ECharts" ["l"="-3.588,11.912"]
+"pascaldekloe/colfer" ["l"="3.907,-8.22", "c"=0]
+"ReadyTalk/avian" ["l"="-11.254,5.072", "c"=983]
+"electronicarts/ea-async" ["l"="-2.548,12.204", "c"=15]
 "npgall/concurrent-locks" ["l"="-5.39,10.49"]
 "thegedge/java-radix-tree" ["l"="-5.441,10.433"]
-"davidmoten/rtree" ["l"="39.611,23.78"]
-"ankurdave/part" ["l"="-2.648,17.304"]
-"usethesource/capsule" ["l"="-2.219,12.322"]
+"ankurdave/part" ["l"="-2.648,17.304", "c"=455]
+"usethesource/capsule" ["l"="-2.219,12.322", "c"=15]
 "openeuler-mirror/bishengjdk-17" ["l"="-5.764,9.933"]
 "jcuda/jcuda-main" ["l"="-6.082,10.46"]
 "jcuda/jcuda-samples" ["l"="-6.097,10.469"]
@@ -3381,20 +3966,21 @@ digraph G {
 "jcuda/jcublas" ["l"="-6.073,10.479"]
 "carldea/panama4newbies" ["l"="-5.886,10.345"]
 "krakowski/gradle-jextract" ["l"="-5.885,10.367"]
-"rife2/bld" ["l"="-2.299,9.534"]
+"rife2/bld" ["l"="-2.299,9.534", "c"=878]
 "oracle-actions/setup-java" ["l"="-5.907,10.329"]
-"alibaba/one-java-agent" ["l"="-3.337,11.676"]
-"spring-projects-experimental/spring-boot-migrator" ["l"="-2.125,11.913"]
-"alibaba/fastFFI" ["l"="51.619,15.374"]
-"TrPlugins/TrChat" ["l"="-36.483,-12.405"]
-"InsinuateProjects/TrMenu" ["l"="-36.491,-12.376"]
+"beanshell/beanshell" ["l"="-50.756,11.877", "c"=974]
+"bulldog2011/luxun" ["l"="-5.571,10.773"]
+"alibaba/one-java-agent" ["l"="-3.337,11.676", "c"=15]
+"spring-projects-experimental/spring-boot-migrator" ["l"="-2.125,11.913", "c"=15]
+"alibaba/fastFFI" ["l"="51.619,15.374", "c"=1231]
+"TrPlugins/TrChat" ["l"="-36.483,-12.405", "c"=483]
+"InsinuateProjects/TrMenu" ["l"="-36.491,-12.376", "c"=483]
 "conversant/disruptor" ["l"="-5.401,10.438"]
 "conversant/adlibs" ["l"="-5.369,10.402"]
-"conversant/rtree" ["l"="39.635,23.759"]
+"conversant/rtree" ["l"="39.635,23.759", "c"=157]
 "danijar/layered" ["l"="-5.018,10.632"]
 "danijar/dotfiles" ["l"="-4.991,10.631"]
 "danijar/mindpark" ["l"="-5.081,10.633"]
-"moditect/jfr-analytics" ["l"="-5.676,10.25"]
 "infinispan/infinispan-spring-boot" ["l"="-5.302,10.396"]
 "infinispan/infinispan-images" ["l"="-5.308,10.38"]
 "openjdk/riscv-port" ["l"="-5.868,9.989"]
@@ -3404,104 +3990,130 @@ digraph G {
 "benalexau/hash-bench" ["l"="-5.343,10.564"]
 "lmdbjava/benchmarks" ["l"="-5.387,10.58"]
 "Vinhixus/TornadoVM-Ray-Tracer" ["l"="-5.962,10.345"]
-"brendangregg/FlameGraph" ["l"="-19.675,-25.405"]
-"resilience4j/resilience4j" ["l"="-2.633,11.956"]
+"resilience4j/resilience4j" ["l"="-2.633,11.956", "c"=15]
+"google/nomulus" ["l"="5.787,-4.46", "c"=725]
+"shyiko/jabba" ["l"="-2.375,12.073", "c"=15]
 "JetBrains/youtrack-scripting" ["l"="-5.377,11.066"]
-"giltene/wrk2" ["l"="3.596,-9.333"]
-"dcevm/dcevm" ["l"="-2.841,12.174"]
-"cloudfoundry/java-buildpack-memory-calculator" ["l"="-2.269,11.899"]
-"xiaoyvyv/JavaCompileEngine" ["l"="-50.783,11.999"]
-"zeromq/jzmq" ["l"="2.488,-36.007"]
-"booksbyus/zguide" ["l"="-19.872,-25.456"]
-"zeromq/libzmq" ["l"="-19.826,-25.497"]
+"rholder/guava-retrying" ["l"="-2.899,12", "c"=15]
+"dcevm/dcevm" ["l"="-2.841,12.174", "c"=15]
+"xiaoyvyv/JavaCompileEngine" ["l"="-50.783,11.999", "c"=974]
+"zeromq/jzmq" ["l"="2.488,-36.007", "c"=171]
+"booksbyus/zguide" ["l"="-19.872,-25.456", "c"=10]
+"zeromq/libzmq" ["l"="-19.826,-25.497", "c"=10]
 "spotify/netty-zmtp" ["l"="-5.459,10.793"]
-"zeromq/pyzmq" ["l"="44.607,20.952"]
+"zeromq/pyzmq" ["l"="44.607,20.952", "c"=20]
 "javolution/javolution" ["l"="-5.415,10.357"]
 "javolution/jscience" ["l"="-5.376,10.31"]
 "dubrousky/javastruct" ["l"="-5.4,10.317"]
-"subchen/jetbrick-template-2x" ["l"="-3.345,12.301"]
-"tang-jie/NettyRPC" ["l"="-5.594,12.51"]
-"h2database/h2database" ["l"="-2.785,12.009"]
-"mindwind/craft-atom" ["l"="-3.367,12.291"]
-"lz4/lz4" ["l"="-19.67,-25.498"]
+"la-team/light-admin" ["l"="-4.826,9.007", "c"=703]
+"tang-jie/NettyRPC" ["l"="-5.594,12.51", "c"=619]
+"mindwind/craft-atom" ["l"="-3.367,12.291", "c"=15]
+"unofficial-openjdk/openjdk" ["l"="-3.016,11.941", "c"=15]
+"lz4/lz4" ["l"="-19.67,-25.498", "c"=10]
+"dleitee/strman" ["l"="22.831,-27.007", "c"=28]
 "sparameswaran/threadlogic" ["l"="-5.35,10.137"]
 "mkbrv/tda" ["l"="-5.335,10.156"]
-"airlift/airlift" ["l"="-2.367,14.826"]
+"ojdkbuild/ojdkbuild" ["l"="-2.868,12.244", "c"=15]
 "simdjson/simdjson-java" ["l"="-5.727,10.495"]
-"vigna/Sux4J" ["l"="-2.835,17.404"]
-"google/snappy" ["l"="-19.708,-25.47"]
-"rholder/guava-retrying" ["l"="-2.899,12"]
-"xerial/larray" ["l"="-5.648,10.715"]
+"vigna/Sux4J" ["l"="-2.835,17.404", "c"=455]
+"airlift/airline" ["l"="-2.419,12.242", "c"=15]
+"zeromq/zeromq.js" ["l"="-19.908,-25.388", "c"=10]
+"google/snappy" ["l"="-19.708,-25.47", "c"=10]
+"tinylog-org/tinylog" ["l"="-2.382,12.268", "c"=15]
 "franz1981/type-pollution-agent" ["l"="-5.622,10.357"]
-"bbeaupain/nio_uring" ["l"="-2.503,9.614"]
-"dylibso/chicory" ["l"="-11.258,4.915"]
+"bbeaupain/nio_uring" ["l"="-2.503,9.614", "c"=878]
+"dylibso/chicory" ["l"="-11.258,4.915", "c"=983]
 "check-leak/check-leak" ["l"="-5.584,10.304"]
 "btraceio/jafar" ["l"="-5.602,10.311"]
 "IDouble/lightweight-charts" ["l"="-5.488,11.222"]
 "openstat/ip-radix-tree" ["l"="-5.412,10.388"]
 "nicodri/Log-Structured-Merge-Tree" ["l"="-5.734,10.979"]
 "DataDog/java-profiler" ["l"="-5.583,10.272"]
+"bennidi/mbassador" ["l"="-2.429,12.135", "c"=15]
+"etcd-io/jetcd" ["l"="-2.98,11.81", "c"=15]
 "rubenfiszel/scala-drl" ["l"="-5.133,10.636"]
-"chen0040/java-reinforcement-learning" ["l"="57.158,17.603"]
-"openai/gym-http-api" ["l"="57.236,18.528"]
-"muupan/deep-reinforcement-learning-papers" ["l"="57.347,18.101"]
+"chen0040/java-reinforcement-learning" ["l"="57.158,17.603", "c"=45]
+"openai/gym-http-api" ["l"="57.236,18.528", "c"=45]
+"muupan/deep-reinforcement-learning-papers" ["l"="57.347,18.101", "c"=45]
 "deeplearning4j/Arbiter" ["l"="-5.159,10.647"]
-"jmacglashan/burlap" ["l"="57.212,17.662"]
-"jqno/equalsverifier" ["l"="-2.294,9.392"]
+"jmacglashan/burlap" ["l"="57.212,17.662", "c"=45]
+"tencentyun/qcloud-documents" ["l"="9.079,-5.576", "c"=278]
+"jline/jline3" ["l"="0.331,10.439", "c"=220]
+"reactor/reactor-netty" ["l"="-2.525,12.059", "c"=15]
+"mukel/llama2.java" ["l"="46.02,2.236", "c"=574]
+"jqno/equalsverifier" ["l"="-2.294,9.392", "c"=878]
+"apache/fury" ["l"="-2.972,11.731", "c"=15]
+"nsacyber/ELITEWOLF" ["l"="-42.394,-33.584", "c"=79]
+"linkedin/rest.li" ["l"="-2.648,14.535", "c"=43]
 "goldmansachs/EngineeringEssentials" ["l"="-5.363,10.956"]
-"code-review-checklists/java-concurrency" ["l"="-2.347,11.969"]
-"goldshtn/linux-tracing-workshop" ["l"="7.032,-6.14"]
-"brendangregg/perf-tools" ["l"="6.951,-6.202"]
+"goldshtn/linux-tracing-workshop" ["l"="7.032,-6.14", "c"=335]
+"kilim/kilim" ["l"="-2.814,12.193", "c"=15]
 "GCPlot/gcplot-docker" ["l"="-5.622,10.133"]
 "lucidworks/gc-log-analyzer" ["l"="-5.639,10.138"]
 "davidtos/JUring" ["l"="-5.799,10.491"]
 "parttimenerd/intellij-profiler-plugin" ["l"="-5.777,10.501"]
+"nicholassm/disruptor-rs" ["l"="-10.202,-6.591", "c"=5]
 "padreati/rapaio-jupyter-kernel" ["l"="-5.12,10.881"]
 "jupyter-java/awesome-jupyter-java" ["l"="-5.146,10.858"]
 "jcuda/jcuda-matrix-utils" ["l"="-6.124,10.469"]
-"LMDB/lmdb" ["l"="-22.19,-26.484"]
 "apache/cloudberry-site" ["l"="-5.761,10.851"]
 "cloudberry-contrib/cbcopy" ["l"="-5.748,10.824"]
-"bulldog2011/luxun" ["l"="-5.571,10.773"]
-"FinVolution/pmq" ["l"="-5.557,13.439"]
-"Netflix/suro" ["l"="-1.489,18.262"]
+"Netflix/suro" ["l"="-1.489,18.262", "c"=1217]
+"Atmosphere/atmosphere" ["l"="-2.717,12.254", "c"=15]
+"orientechnologies/orientdb" ["l"="-19.603,-24.393", "c"=10]
+"spring-projects/spring-loaded" ["l"="-3.013,12.115", "c"=15]
+"marcobehler/marcobehler-guides" ["l"="25.743,-30.863", "c"=176]
+"jenv/jenv" ["l"="-2.517,12.007", "c"=15]
+"PebbleTemplates/pebble" ["l"="-2.474,12.228", "c"=15]
+"gunnarmorling/1brc" ["l"="-2.637,12.088", "c"=15]
+"todogroup/awesome-ospo" ["l"="8.07,-45.167", "c"=544]
+"bitrich-info/xchange-stream" ["l"="-9.833,10.689", "c"=614]
 "hortonworks/ratis" ["l"="-5.566,10.919"]
+"abixen/abixen-platform" ["l"="24.446,-31.726", "c"=304]
+"fommil/netlib-java" ["l"="-2.444,17.266", "c"=455]
 "lightbend-labs/benchdb" ["l"="-5.75,10.374"]
-"jfree/jfreesvg" ["l"="0.236,10.2"]
-"moditect/moditect" ["l"="-2.21,9.475"]
-"gluonhq/substrate" ["l"="0.163,10.209"]
-"dustinkredmond/FXTrayIcon" ["l"="0.197,10.158"]
+"Netflix/hollow" ["l"="-1.383,18.301", "c"=1217]
+"jfree/jfreesvg" ["l"="0.236,10.2", "c"=220]
+"moditect/moditect" ["l"="-2.21,9.475", "c"=878]
+"gluonhq/substrate" ["l"="0.163,10.209", "c"=220]
+"dustinkredmond/FXTrayIcon" ["l"="0.197,10.158", "c"=220]
 "JetBrains/youtrack-mobile" ["l"="-5.408,10.962"]
 "chriswhocodes/JFRExplorer" ["l"="-5.598,10.25"]
-"dlsc-software-consulting-gmbh/WorkbenchFX" ["l"="0.158,10.123"]
-"Jsondb/jsondb-core" ["l"="-2.405,12.411"]
-"couchbase/couchbase-lite-android" ["l"="1.814,12.999"]
-"kosi-libs/Kodein-DB" ["l"="54.498,-13.888"]
-"JFXtras/jfxtras-styles" ["l"="0.204,10.114"]
-"dzikoysk/reposilite" ["l"="-35.654,-13.231"]
-"TheElectronWill/night-config" ["l"="-35.892,-13.219"]
-"dlsc-software-consulting-gmbh/PreferencesFX" ["l"="0.172,10.126"]
-"dianbaer/anychat" ["l"="0.227,12.066"]
-"LinShunKang/MyPerf4J" ["l"="-3.323,11.823"]
-"underscoreio/shapeless-guide" ["l"="-2.714,18.776"]
-"traneio/future" ["l"="-2.961,18.819"]
-"RitterHou/Geisha" ["l"="-0.1,10.997"]
-"TellH/GitClub" ["l"="59.882,-11.209"]
+"scribejava/scribejava" ["l"="-2.736,12.11", "c"=15]
+"DataDog/dd-trace-java" ["l"="4.757,-7.407", "c"=0]
+"dlsc-software-consulting-gmbh/WorkbenchFX" ["l"="0.158,10.123", "c"=220]
+"Jsondb/jsondb-core" ["l"="-2.405,12.411", "c"=15]
+"couchbase/couchbase-lite-android" ["l"="1.814,12.999", "c"=376]
+"kosi-libs/Kodein-DB" ["l"="54.498,-13.888", "c"=25]
+"JFXtras/jfxtras-styles" ["l"="0.204,10.114", "c"=220]
+"dzikoysk/reposilite" ["l"="-35.654,-13.231", "c"=74]
+"TheElectronWill/night-config" ["l"="-35.892,-13.219", "c"=74]
+"dlsc-software-consulting-gmbh/PreferencesFX" ["l"="0.172,10.126", "c"=220]
+"dianbaer/anychat" ["l"="0.227,12.066", "c"=370]
+"LinShunKang/MyPerf4J" ["l"="-3.323,11.823", "c"=15]
+"underscoreio/shapeless-guide" ["l"="-2.714,18.776", "c"=38]
+"traneio/future" ["l"="-2.961,18.819", "c"=38]
+"RitterHou/Geisha" ["l"="-0.1,10.997", "c"=347]
+"TellH/GitClub" ["l"="59.882,-11.209", "c"=160]
+"deliveredtechnologies/rulebook" ["l"="-2.95,11.567", "c"=15]
 "billsjchw/LSMTree" ["l"="-5.736,11.025"]
-"LaiZhou/jsongood" ["l"="-3.809,12.43"]
-"robertvazan/noexception" ["l"="-5.78,10.541"]
-"monadless/monadless" ["l"="-2.896,18.789"]
+"ralfstx/minimal-json" ["l"="-2.627,12.595", "c"=15]
+"forge/roaster" ["l"="-2.548,11.998", "c"=15]
+"java-diff-utils/java-diff-utils" ["l"="-2.545,12.046", "c"=15]
+"LaiZhou/jsongood" ["l"="-3.809,12.43", "c"=15]
+"citusdata/postgresql-hll" ["l"="2.844,13.463", "c"=257]
+"monadless/monadless" ["l"="-2.896,18.789", "c"=38]
 "nativelibs4java/Scalaxy" ["l"="-6.07,10.387"]
 "quannabe/ItchParser" ["l"="-5.164,10.484"]
 "stephanj/Llama3JavaChatCompletionService" ["l"="-6.029,10.29"]
 "talostrading/d3x-morpheus" ["l"="-5.133,10.731"]
-"lyft/presto-gateway" ["l"="-2.391,14.809"]
-"qubole/presto-udfs" ["l"="-2.319,14.756"]
-"liancheng/spear" ["l"="-2.384,14.977"]
+"manifold-systems/manifold" ["l"="-2.374,12.15", "c"=15]
+"JetBrains/ring-ui" ["l"="-3.776,-29.448", "c"=4]
+"qubole/presto-udfs" ["l"="-2.319,14.756", "c"=43]
+"liancheng/spear" ["l"="-2.384,14.977", "c"=43]
 "cfelde/BinaryOffheapHashMap" ["l"="-5.627,10.703"]
-"linkedin/coral" ["l"="-2.485,14.89"]
-"lemire/RoaringBitmap" ["l"="9.339,-3.754"]
+"linkedin/coral" ["l"="-2.485,14.89", "c"=43]
+"lemire/RoaringBitmap" ["l"="9.339,-3.754", "c"=382]
 "cyrilluce/saga-duck" ["l"="-5.832,9.835"]
 "cyrilluce/redux-saga-catch" ["l"="-5.843,9.814"]
-"dharmeshsing/CoinTossX" ["l"="-5.245,10.362"]
 }

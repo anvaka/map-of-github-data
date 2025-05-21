@@ -1,12 +1,22 @@
 digraph G {
+"carla-simulator/scenario_runner" -> "PJLab-ADG/LimSim" ["e"=1]
 "JinkyuKimUCB/BDD-X-dataset" -> "JinkyuKimUCB/explainable-deep-driving"
 "JinkyuKimUCB/BDD-X-dataset" -> "qiantianwen/NuScenes-QA"
 "oxford-robotics-institute/radar-robotcar-dataset-sdk" -> "ori-mrg/robotcar-dataset-sdk"
 "JinkyuKimUCB/explainable-deep-driving" -> "JinkyuKimUCB/BDD-X-dataset"
+"JialeCao001/SipMask" -> "hustvl/BMaskR-CNN" ["e"=1]
+"ejcgt/attention-target-detection" -> "hustvl/ViTGaze" ["e"=1]
 "talk2car/Talk2Car" -> "qiantianwen/NuScenes-QA"
 "hustvl/BMaskR-CNN" -> "zimmerrol/mask-rcnn-edge-agreement-loss"
 "hustvl/BMaskR-CNN" -> "hustvl/HAIS" ["e"=1]
 "hustvl/BMaskR-CNN" -> "hustvl/BoxTeacher"
+"autonomousvision/transfuser" -> "hustvl/VAD" ["e"=1]
+"autonomousvision/transfuser" -> "OpenDriveLab/DriveLM" ["e"=1]
+"autonomousvision/transfuser" -> "autonomousvision/navsim" ["e"=1]
+"DerrickXuNu/Learn-Carla" -> "PJLab-ADG/LimSim" ["e"=1]
+"ucla-mobility/OpenCDA" -> "PJLab-ADG/LimSim" ["e"=1]
+"motional/nuplan-devkit" -> "hustvl/VAD" ["e"=1]
+"motional/nuplan-devkit" -> "autonomousvision/navsim" ["e"=1]
 "princeton-computational-imaging/neural-scene-graphs" -> "hturki/suds"
 "princeton-computational-imaging/neural-scene-graphs" -> "zju3dv/object_nerf" ["e"=1]
 "princeton-computational-imaging/neural-scene-graphs" -> "fuxiao0719/PanopticNeRF"
@@ -18,6 +28,8 @@ digraph G {
 "princeton-computational-imaging/neural-scene-graphs" -> "georghess/neurad-studio"
 "princeton-computational-imaging/neural-scene-graphs" -> "fudan-zvg/PVG"
 "princeton-computational-imaging/neural-scene-graphs" -> "LightwheelAI/street-gaussians-ns"
+"isl-org/PhotorealismEnhancement" -> "OPEN-AIR-SUN/mars" ["e"=1]
+"isl-org/PhotorealismEnhancement" -> "nnanhuang/S3Gaussian" ["e"=1]
 "w2kun/RNW" -> "LINA-lln/ADDS-DepthNet"
 "w2kun/RNW" -> "ucaszyp/STEPS"
 "w2kun/RNW" -> "zxcqlf/RobotCar_DepthGT_Generate"
@@ -25,6 +37,10 @@ digraph G {
 "LINA-lln/ADDS-DepthNet" -> "LINA-lln/Steering-KernelNet"
 "LINA-lln/ADDS-DepthNet" -> "w2kun/RNW"
 "LINA-lln/ADDS-DepthNet" -> "madhubabuv/NightDepthADFA"
+"hustvl/QueryInst" -> "hustvl/ViG" ["e"=1]
+"hustvl/QueryInst" -> "hustvl/DiG" ["e"=1]
+"hustvl/HAIS" -> "hustvl/AziNorm" ["e"=1]
+"ShoufaChen/CycleMLP" -> "hustvl/MSG-Transformer" ["e"=1]
 "hustvl/MSG-Transformer" -> "hustvl/Featurized-QueryRCNN"
 "hustvl/MSG-Transformer" -> "hustvl/NeuSample"
 "hustvl/MSG-Transformer" -> "hustvl/DiG"
@@ -34,6 +50,31 @@ digraph G {
 "Co1lin/AIR-Server-Doc" -> "AIR-DISCOVER/LASST"
 "Co1lin/AIR-Server-Doc" -> "wuys13/Multi-Drug-Transfer-Learning"
 "hustvl/AziNorm" -> "SuperZ-Liu/PolarBEV"
+"hustvl/TeViT" -> "hustvl/BoxTeacher" ["e"=1]
+"hustvl/TeViT" -> "hustvl/RILS" ["e"=1]
+"hustvl/TeViT" -> "hustvl/DiG" ["e"=1]
+"hustvl/TeViT" -> "hustvl/Featurized-QueryRCNN" ["e"=1]
+"hustvl/TeViT" -> "hustvl/ViG" ["e"=1]
+"ZhiChen902/SC2-PCR" -> "Forrest-110/FastMAC" ["e"=1]
+"PeterJaq/Awesome-Autonomous-Driving" -> "OpenDriveLab/ViDAR" ["e"=1]
+"hustvl/SparseInst" -> "hustvl/ViG" ["e"=1]
+"hustvl/SparseInst" -> "hustvl/Senna" ["e"=1]
+"hustvl/SparseInst" -> "hustvl/DiG" ["e"=1]
+"hustvl/SparseInst" -> "hustvl/mmMamba" ["e"=1]
+"hustvl/TiNeuVox" -> "hustvl/GNeuVox" ["e"=1]
+"hustvl/TiNeuVox" -> "hustvl/DiG" ["e"=1]
+"vista-simulator/vista" -> "PJLab-ADG/DriveLikeAHuman" ["e"=1]
+"metadriverse/metadrive" -> "autonomousvision/navsim" ["e"=1]
+"metadriverse/metadrive" -> "PJLab-ADG/LimSim" ["e"=1]
+"UCF-SST-Lab/UCF-SST-CitySim1-Dataset" -> "PJLab-ADG/LimSim" ["e"=1]
+"hustvl/MIMDet" -> "hustvl/Featurized-QueryRCNN" ["e"=1]
+"hustvl/MIMDet" -> "hustvl/PolarDETR" ["e"=1]
+"hustvl/MIMDet" -> "hustvl/RILS" ["e"=1]
+"hustvl/MIMDet" -> "hustvl/MSG-Transformer" ["e"=1]
+"hustvl/MIMDet" -> "hustvl/ViG" ["e"=1]
+"astra-vision/MonoScene" -> "astra-vision/SceneRF" ["e"=1]
+"hustvl/TopFormer" -> "hustvl/Featurized-QueryRCNN" ["e"=1]
+"SysCV/LiDAR_snow_sim" -> "PJLab-ADG/PCSim" ["e"=1]
 "JOP-Lee/READ" -> "OPEN-AIR-SUN/mars"
 "JOP-Lee/READ" -> "hturki/suds"
 "JOP-Lee/READ" -> "fudan-zvg/S-NeRF"
@@ -48,11 +89,17 @@ digraph G {
 "JOP-Lee/READ" -> "NVlabs/EmerNeRF"
 "JOP-Lee/READ" -> "tangtaogo/lidar-nerf" ["e"=1]
 "JOP-Lee/READ" -> "hjxwhy/Block-NeRF"
+"Harry-Zhi/semantic_nerf" -> "fuxiao0719/PanopticNeRF" ["e"=1]
+"Harry-Zhi/semantic_nerf" -> "princeton-computational-imaging/neural-scene-graphs" ["e"=1]
 "fuxiao0719/PanopticNeRF" -> "princeton-computational-imaging/neural-scene-graphs"
 "fuxiao0719/PanopticNeRF" -> "DNMP/DNMP"
 "fuxiao0719/PanopticNeRF" -> "hturki/suds"
 "fuxiao0719/PanopticNeRF" -> "meteorshowers/Panoptic-Neural-Fields"
 "fuxiao0719/PanopticNeRF" -> "skyhehe123/AutoRF-pytorch"
+"zju3dv/object_nerf" -> "princeton-computational-imaging/neural-scene-graphs" ["e"=1]
+"zju3dv/object_nerf" -> "fuxiao0719/PanopticNeRF" ["e"=1]
+"TRI-ML/vidar" -> "JOP-Lee/READ" ["e"=1]
+"TRI-ML/vidar" -> "PJLab-ADG/neuralsim" ["e"=1]
 "AIR-DISCOVER/ICRA-RM-Sim2Real" -> "AIR-DISCOVER/ICRA2024-Sim2Real-RM"
 "AIR-DISCOVER/ICRA-RM-Sim2Real" -> "AIR-DISCOVER/LASST"
 "AIR-DISCOVER/ICRA-RM-Sim2Real" -> "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention"
@@ -98,6 +145,8 @@ digraph G {
 "Yang-Li-2000/Touch-Line-Transformer" -> "AIR-DISCOVER/DQS3D"
 "Yang-Li-2000/Touch-Line-Transformer" -> "AIR-DISCOVER/TOIST"
 "Yang-Li-2000/Touch-Line-Transformer" -> "cxx226/DPF"
+"Facebear-ljx/DOGE" -> "AIR-DISCOVER/LASST" ["e"=1]
+"Facebear-ljx/DOGE" -> "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" ["e"=1]
 "AIR-DISCOVER/LASST" -> "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention"
 "AIR-DISCOVER/LASST" -> "Yang-Li-2000/Touch-Line-Transformer"
 "AIR-DISCOVER/LASST" -> "AIR-DISCOVER/Omni-PQ"
@@ -113,6 +162,17 @@ digraph G {
 "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" -> "OPEN-AIR-SUN/Cerberus"
 "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" -> "leiyaocui/STRAP"
 "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" -> "cxx226/DPF"
+"OpenDriveLab/UniAD" -> "hustvl/VAD" ["e"=1]
+"OpenDriveLab/UniAD" -> "OpenDriveLab/DriveLM" ["e"=1]
+"OpenDriveLab/UniAD" -> "swc-17/SparseDrive" ["e"=1]
+"facebookresearch/localrf" -> "PJLab-ADG/neuralsim" ["e"=1]
+"facebookresearch/localrf" -> "DNMP/DNMP" ["e"=1]
+"facebookresearch/localrf" -> "NVlabs/EmerNeRF" ["e"=1]
+"facebookresearch/localrf" -> "OPEN-AIR-SUN/mars" ["e"=1]
+"OpenDriveLab/OpenLane-V2" -> "OpenDriveLab/DriveAGI" ["e"=1]
+"michigan-traffic-lab/Dense-Deep-Reinforcement-Learning" -> "PJLab-ADG/LimSim" ["e"=1]
+"michigan-traffic-lab/Dense-Deep-Reinforcement-Learning" -> "PJLab-ADG/DiLu" ["e"=1]
+"michigan-traffic-lab/Dense-Deep-Reinforcement-Learning" -> "PJLab-ADG/DriveLikeAHuman" ["e"=1]
 "astra-vision/SceneRF" -> "astra-vision/MonoScene" ["e"=1]
 "astra-vision/SceneRF" -> "Brummi/BehindTheScenes"
 "astra-vision/SceneRF" -> "JOP-Lee/READ"
@@ -141,12 +201,24 @@ digraph G {
 "jxbbb/ADAPT" -> "hoi4d/HOI4D_SemSeg"
 "jxbbb/ADAPT" -> "AIR-DISCOVER/DQS3D"
 "jxbbb/ADAPT" -> "PJLab-ADG/DriveLikeAHuman"
+"wayveai/mile" -> "wayveai/Driving-with-LLMs" ["e"=1]
+"wayveai/mile" -> "hustvl/VAD" ["e"=1]
+"wayveai/mile" -> "wayveai/LingoQA" ["e"=1]
 "AIR-DISCOVER/VIBUS" -> "childrentime/dotenv" ["e"=1]
+"sjtuytc/UnboundedNeRFPytorch" -> "JOP-Lee/READ" ["e"=1]
+"OpenDriveLab/ST-P3" -> "hustvl/VAD" ["e"=1]
+"OpenDriveLab/ST-P3" -> "E2E-AD/AD-MLP" ["e"=1]
+"OpenDriveLab/ST-P3" -> "Thinklab-SJTU/Bench2DriveZoo" ["e"=1]
+"OpenDriveLab/ST-P3" -> "wayveai/Driving-with-LLMs" ["e"=1]
+"autonomousvision/plant" -> "wayveai/Driving-with-LLMs" ["e"=1]
+"sshaoshuai/MTR" -> "hustvl/VAD" ["e"=1]
+"hustvl/MapTR" -> "hustvl/VAD" ["e"=1]
 "PJLab-ADG/PCSim" -> "PJLab-ADG/OASim"
 "PJLab-ADG/PCSim" -> "SysCV/LiDAR_snow_sim" ["e"=1]
 "PJLab-ADG/PCSim" -> "PJLab-ADG/3DTrans" ["e"=1]
 "PJLab-ADG/PCSim" -> "PJLab-ADG/neuralsim"
 "hjxwhy/Block-NeRF" -> "fudan-zvg/S-NeRF"
+"nihalsid/panoptic-lifting" -> "fuxiao0719/PanopticNeRF" ["e"=1]
 "zhongcl-thu/3D-Implicit-Transporter" -> "AIR-DISCOVER/Omni-PQ"
 "zhongcl-thu/3D-Implicit-Transporter" -> "leiyaocui/STRAP"
 "zhongcl-thu/3D-Implicit-Transporter" -> "Yang-Li-2000/Touch-Line-Transformer"
@@ -181,6 +253,10 @@ digraph G {
 "AIR-DISCOVER/Omni-PQ" -> "hoi4d/HOI4D_SemSeg"
 "AIR-DISCOVER/LODE" -> "AIR-DISCOVER/TOIST"
 "AIR-DISCOVER/LODE" -> "AIR-DISCOVER/Omni-PQ"
+"javieryu/nerf_bridge" -> "DNMP/DNMP" ["e"=1]
+"DRosemei/RoMe" -> "NVlabs/EmerNeRF" ["e"=1]
+"MiZhenxing/Switch-NeRF" -> "hturki/suds" ["e"=1]
+"ldkong1205/RoboDepth" -> "md4all/md4all" ["e"=1]
 "ucaszyp/STEPS" -> "AIR-DISCOVER/LASST"
 "ucaszyp/STEPS" -> "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention"
 "ucaszyp/STEPS" -> "Yang-Li-2000/Touch-Line-Transformer"
@@ -196,6 +272,7 @@ digraph G {
 "ucaszyp/STEPS" -> "OPEN-AIR-SUN/PQ-Transformer"
 "ucaszyp/STEPS" -> "hoi4d/HOI4D_ActionSeg"
 "ucaszyp/STEPS" -> "cxx226/DPF"
+"linxuewu/Sparse4D" -> "swc-17/SparseDrive" ["e"=1]
 "skyhehe123/AutoRF-pytorch" -> "skyhehe123/MSF" ["e"=1]
 "skyhehe123/AutoRF-pytorch" -> "fuxiao0719/PanopticNeRF"
 "skyhehe123/AutoRF-pytorch" -> "hturki/suds"
@@ -205,6 +282,7 @@ digraph G {
 "leiyaocui/STRAP" -> "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention"
 "leiyaocui/STRAP" -> "AIR-DISCOVER/LASST"
 "leiyaocui/STRAP" -> "hoi4d/HOI4D_ActionSeg"
+"hustvl/GKT" -> "SuperZ-Liu/PolarBEV" ["e"=1]
 "hturki/suds" -> "princeton-computational-imaging/neural-scene-graphs"
 "hturki/suds" -> "fudan-zvg/S-NeRF"
 "hturki/suds" -> "PJLab-ADG/neuralsim"
@@ -218,6 +296,7 @@ digraph G {
 "hturki/suds" -> "fuxiao0719/PanopticNeRF"
 "hturki/suds" -> "skyhehe123/AutoRF-pytorch"
 "hturki/suds" -> "Brummi/BehindTheScenes"
+"snap-research/discoscene" -> "fudan-zvg/S-NeRF" ["e"=1]
 "PediaMedAI/ViTASD" -> "PediaMedAI/PIE"
 "leolyliu/HOI4D-Instructions" -> "cams-hoi/CAMS"
 "leolyliu/HOI4D-Instructions" -> "hoi4d/HOI4D_SemSeg"
@@ -228,11 +307,26 @@ digraph G {
 "hustvl/BoxTeacher" -> "hustvl/RILS"
 "hustvl/BoxTeacher" -> "hustvl/Featurized-QueryRCNN"
 "hustvl/BoxTeacher" -> "hustvl/OpenInst"
+"fudan-zvg/PolarFormer" -> "hustvl/PolarDETR" ["e"=1]
+"fudan-zvg/PolarFormer" -> "SuperZ-Liu/PolarBEV" ["e"=1]
 "SuperZ-Liu/PolarBEV" -> "hustvl/AziNorm"
 "hustvl/RILS" -> "hustvl/OpenInst"
 "PurdueDigitalTwin/ViT-DD" -> "PurdueDigitalTwin/MACP"
 "hustvl/Featurized-QueryRCNN" -> "hustvl/OpenInst"
 "hustvl/Featurized-QueryRCNN" -> "hustvl/GNeuVox"
+"WeOpenML/PandaLM" -> "baaivision/JudgeLM" ["e"=1]
+"OpenDriveLab/ThinkTwice" -> "E2E-AD/AD-MLP" ["e"=1]
+"OpenDriveLab/ThinkTwice" -> "hustvl/VAD" ["e"=1]
+"facebookresearch/NeRF-Det" -> "hturki/suds" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "hustvl/VAD" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "Thinklab-SJTU/Awesome-LLM4AD" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "OpenDriveLab/DriveLM" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "OpenDriveLab/DriveAGI" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "autonomousvision/navsim" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "swc-17/SparseDrive" ["e"=1]
+"OpenDriveLab/End-to-end-Autonomous-Driving" -> "opendilab/LMDrive" ["e"=1]
+"zhangxy0517/3D-Registration-with-Maximal-Cliques" -> "Forrest-110/FastMAC" ["e"=1]
+"exiawsh/StreamPETR" -> "swc-17/SparseDrive" ["e"=1]
 "hustvl/VAD" -> "swc-17/SparseDrive"
 "hustvl/VAD" -> "autonomousvision/tuplan_garage" ["e"=1]
 "hustvl/VAD" -> "hustvl/MapTR" ["e"=1]
@@ -248,6 +342,11 @@ digraph G {
 "hustvl/VAD" -> "OpenDriveLab/End-to-end-Autonomous-Driving" ["e"=1]
 "hustvl/VAD" -> "motional/nuplan-devkit" ["e"=1]
 "hustvl/VAD" -> "sshaoshuai/MTR" ["e"=1]
+"Pranav-chib/End-to-End-Autonomous-Driving" -> "autodriving-heart/CVPR-2024-Papers-Autonomous-Driving" ["e"=1]
+"OpenDriveLab/DriveAdapter" -> "Thinklab-SJTU/Bench2DriveZoo" ["e"=1]
+"OpenDriveLab/DriveAdapter" -> "autonomousvision/navsim" ["e"=1]
+"OpenDriveLab/DriveAdapter" -> "BraveGroup/LAW" ["e"=1]
+"tarashakhurana/4d-occ-forecasting" -> "OpenDriveLab/ViDAR" ["e"=1]
 "OpenDriveLab/DriveAGI" -> "OpenDriveLab/Vista"
 "OpenDriveLab/DriveAGI" -> "OpenDriveLab/DriveLM"
 "OpenDriveLab/DriveAGI" -> "hustvl/VAD"
@@ -278,12 +377,20 @@ digraph G {
 "PJLab-ADG/LimSim" -> "RobertWeijie/IS-KnowledgeBase" ["e"=1]
 "PJLab-ADG/LimSim" -> "wayveai/Driving-with-LLMs"
 "PJLab-ADG/LimSim" -> "wwwwdkdk/Sparrow" ["e"=1]
+"PurdueDigitalTwin/REDFormer" -> "PurdueDigitalTwin/MACP" ["e"=1]
 "hustvl/Symphonies" -> "hustvl/GaussTR"
 "hustvl/Symphonies" -> "ai4ce/SSCBench" ["e"=1]
 "hustvl/Symphonies" -> "hustvl/osp"
 "hustvl/Symphonies" -> "hustvl/mmMamba"
 "hustvl/Symphonies" -> "astra-vision/PaSCo" ["e"=1]
 "hustvl/Symphonies" -> "hustvl/ViG"
+"chaytonmin/UniScene" -> "wzzheng/OccSora" ["e"=1]
+"chaytonmin/UniScene" -> "OpenDriveLab/ViDAR" ["e"=1]
+"ai4ce/SSCBench" -> "hustvl/Symphonies" ["e"=1]
+"MCZhi/GameFormer-Planner" -> "NVlabs/Hydra-MDP" ["e"=1]
+"OpenDriveLab/OpenScene" -> "OpenDriveLab/DriveAGI" ["e"=1]
+"OpenDriveLab/OpenScene" -> "autonomousvision/navsim" ["e"=1]
+"OpenDriveLab/OpenScene" -> "OpenDriveLab/ViDAR" ["e"=1]
 "OpenDriveLab/DriveLM" -> "opendilab/LMDrive"
 "OpenDriveLab/DriveLM" -> "Thinklab-SJTU/Awesome-LLM4AD"
 "OpenDriveLab/DriveLM" -> "wayveai/Driving-with-LLMs"
@@ -304,6 +411,10 @@ digraph G {
 "LLVM-AD/MAPLM" -> "llmbev/talk2bev"
 "LLVM-AD/MAPLM" -> "IrohXu/Awesome-Multimodal-LLM-Autonomous-Driving"
 "LLVM-AD/MAPLM" -> "sungyeonparkk/vision-assistant-for-driving"
+"waymo-research/waymax" -> "PJLab-ADG/LimSim" ["e"=1]
+"waymo-research/waymax" -> "autonomousvision/navsim" ["e"=1]
+"waymo-research/waymax" -> "hustvl/VAD" ["e"=1]
+"DUOMO/TransGPT" -> "PJLab-ADG/LimSim" ["e"=1]
 "wayveai/Driving-with-LLMs" -> "wayveai/LingoQA"
 "wayveai/Driving-with-LLMs" -> "PJLab-ADG/DriveLikeAHuman"
 "wayveai/Driving-with-LLMs" -> "OpenDriveLab/DriveLM"
@@ -340,6 +451,14 @@ digraph G {
 "shalfun/DrivingDiffusion" -> "yileijin/Bootstrap-3D-GS" ["e"=1]
 "shalfun/DrivingDiffusion" -> "f1yfisher/DriveDreamer2"
 "shalfun/DrivingDiffusion" -> "OpenDriveLab/Vista"
+"nv-tlabs/NKSR" -> "PJLab-ADG/neuralsim" ["e"=1]
+"nv-tlabs/NKSR" -> "nv-tlabs/SCube" ["e"=1]
+"nv-tlabs/NKSR" -> "zju3dv/street_gaussians" ["e"=1]
+"nv-tlabs/NKSR" -> "DNMP/DNMP" ["e"=1]
+"hustvl/WeakTr" -> "hustvl/ViG" ["e"=1]
+"hustvl/WeakTr" -> "hustvl/OpenInst" ["e"=1]
+"hustvl/WeakTr" -> "hustvl/mmMamba" ["e"=1]
+"hustvl/WeakTr" -> "hustvl/DiG" ["e"=1]
 "PJLab-ADG/DriveLikeAHuman" -> "PJLab-ADG/DiLu"
 "PJLab-ADG/DriveLikeAHuman" -> "wayveai/Driving-with-LLMs"
 "PJLab-ADG/DriveLikeAHuman" -> "PJLab-ADG/awesome-knowledge-driven-AD"
@@ -355,11 +474,31 @@ digraph G {
 "PJLab-ADG/DriveLikeAHuman" -> "NVlabs/OmniDrive"
 "PJLab-ADG/DriveLikeAHuman" -> "IrohXu/Awesome-Multimodal-LLM-Autonomous-Driving"
 "PJLab-ADG/DriveLikeAHuman" -> "wudongming97/Prompt4Driving"
+"Haiyang-W/UniTR" -> "OpenDriveLab/ViDAR" ["e"=1]
 "OscarHuangWind/Learning-from-Intervention" -> "OscarHuangWind/Safe-Human-in-the-Loop-RL"
+"metadriverse/scenarionet" -> "PJLab-ADG/DriveArena" ["e"=1]
+"metadriverse/scenarionet" -> "autonomousvision/navsim" ["e"=1]
+"metadriverse/scenarionet" -> "wzzheng/GPD" ["e"=1]
+"metadriverse/scenarionet" -> "PJLab-ADG/LimSim" ["e"=1]
+"autonomousvision/carla_garage" -> "autonomousvision/navsim" ["e"=1]
+"autonomousvision/carla_garage" -> "Thinklab-SJTU/Bench2DriveZoo" ["e"=1]
+"autonomousvision/carla_garage" -> "hustvl/VAD" ["e"=1]
+"autonomousvision/carla_garage" -> "OpenDriveLab/DriveLM" ["e"=1]
+"autonomousvision/carla_garage" -> "opendilab/LMDrive" ["e"=1]
 "luluho1208/Diffusion-SS3D" -> "nomiaro/OPA"
 "luluho1208/Diffusion-SS3D" -> "AIR-DISCOVER/DQS3D"
+"SysCV/idisc" -> "Brummi/BehindTheScenes" ["e"=1]
 "qintonguav/e2e-parking-carla" -> "qintonguav/ParkingE2E"
+"autonomousvision/tuplan_garage" -> "hustvl/VAD" ["e"=1]
+"autonomousvision/tuplan_garage" -> "autonomousvision/navsim" ["e"=1]
+"autonomousvision/tuplan_garage" -> "NVlabs/Hydra-MDP" ["e"=1]
+"Tsinghua-MARS-Lab/StateTransformer" -> "NVlabs/Hydra-MDP" ["e"=1]
+"Tsinghua-MARS-Lab/StateTransformer" -> "hustvl/VAD" ["e"=1]
 "zubair-irshad/NeO-360" -> "deepshwang/vegs"
+"commaai/commavq" -> "BraveGroup/Drive-WM" ["e"=1]
+"commaai/commavq" -> "wayveai/Driving-with-LLMs" ["e"=1]
+"commaai/commavq" -> "autonomousvision/navsim" ["e"=1]
+"commaai/commavq" -> "wayveai/LingoQA" ["e"=1]
 "OPEN-AIR-SUN/mars" -> "PJLab-ADG/neuralsim"
 "OPEN-AIR-SUN/mars" -> "georghess/neurad-studio"
 "OPEN-AIR-SUN/mars" -> "JOP-Lee/READ"
@@ -379,6 +518,7 @@ digraph G {
 "Brummi/BehindTheScenes" -> "hturki/suds"
 "Brummi/BehindTheScenes" -> "huang-yh/SelfOcc" ["e"=1]
 "Brummi/BehindTheScenes" -> "DNMP/DNMP"
+"opendilab/DOS" -> "opendilab/LMDrive" ["e"=1]
 "JeffWang987/DriveDreamer" -> "BraveGroup/Drive-WM"
 "JeffWang987/DriveDreamer" -> "f1yfisher/DriveDreamer2"
 "JeffWang987/DriveDreamer" -> "shalfun/DrivingDiffusion"
@@ -394,6 +534,9 @@ digraph G {
 "JeffWang987/DriveDreamer" -> "cure-lab/MagicDrive" ["e"=1]
 "JeffWang987/DriveDreamer" -> "OPEN-AIR-SUN/mars"
 "JeffWang987/DriveDreamer" -> "BraveGroup/LAW"
+"Jiawei-Yang/FreeNeRF" -> "hturki/suds" ["e"=1]
+"InternLandMark/LandMark" -> "DNMP/DNMP" ["e"=1]
+"InternLandMark/LandMark" -> "PJLab-ADG/neuralsim" ["e"=1]
 "PJLab-ADG/neuralsim" -> "zju3dv/street_gaussians"
 "PJLab-ADG/neuralsim" -> "georghess/neurad-studio"
 "PJLab-ADG/neuralsim" -> "OPEN-AIR-SUN/mars"
@@ -409,6 +552,9 @@ digraph G {
 "PJLab-ADG/neuralsim" -> "LightwheelAI/street-gaussians-ns"
 "PJLab-ADG/neuralsim" -> "nv-tlabs/NKSR" ["e"=1]
 "PJLab-ADG/neuralsim" -> "nv-tlabs/SCube"
+"hustvl/Matte-Anything" -> "hustvl/GaussTR" ["e"=1]
+"hustvl/Matte-Anything" -> "hustvl/mmMamba" ["e"=1]
+"hustvl/Matte-Anything" -> "hustvl/ViG" ["e"=1]
 "AIR-DISCOVER/DQS3D" -> "Yang-Li-2000/Touch-Line-Transformer"
 "AIR-DISCOVER/DQS3D" -> "leiyaocui/STRAP"
 "AIR-DISCOVER/DQS3D" -> "AIR-DISCOVER/Omni-PQ"
@@ -418,10 +564,17 @@ digraph G {
 "AIR-DISCOVER/DQS3D" -> "AIR-DISCOVER/TOIST"
 "AIR-DISCOVER/DQS3D" -> "hoi4d/HOI4D_ActionSeg"
 "AIR-DISCOVER/DQS3D" -> "hoi4d/ObjTracking"
+"hustvl/ViTMatte" -> "hustvl/ViG" ["e"=1]
 "Shiran-Yuan/SlimmeRF" -> "JunchenLiu77/Rip-NeRF"
 "Shiran-Yuan/SlimmeRF" -> "leiyaocui/STRAP"
 "Shiran-Yuan/SlimmeRF" -> "AIR-DISCOVER/DQS3D"
 "Shiran-Yuan/SlimmeRF" -> "zhongcl-thu/3D-Implicit-Transporter"
+"hzwer/CVPR2023-DMVFN" -> "YvanYin/DrivingWorld" ["e"=1]
+"PJLab-ADG/3DTrans" -> "PJLab-ADG/PCSim" ["e"=1]
+"PJLab-ADG/3DTrans" -> "shalfun/DrivingDiffusion" ["e"=1]
+"pengsida/learning_nerf" -> "zju3dv/LiDAR-RT" ["e"=1]
+"Totoro97/f2-nerf" -> "PJLab-ADG/neuralsim" ["e"=1]
+"sled-group/chat-with-nerf" -> "CurryYuan/ZSVG3D" ["e"=1]
 "E2E-AD/AD-MLP" -> "NVlabs/BEV-Planner"
 "E2E-AD/AD-MLP" -> "OpenDriveLab/ST-P3" ["e"=1]
 "E2E-AD/AD-MLP" -> "OpenDriveLab/ThinkTwice" ["e"=1]
@@ -440,6 +593,7 @@ digraph G {
 "cxx226/DPF" -> "AIR-DISCOVER/Omni-PQ"
 "cxx226/DPF" -> "leiyaocui/STRAP"
 "cxx226/DPF" -> "AIR-DISCOVER/TOIST"
+"EricLee0224/PAD" -> "AIR-DISCOVER/LASST" ["e"=1]
 "PJLab-ADG/nr3d_lib" -> "PJLab-ADG/neuralsim"
 "PJLab-ADG/nr3d_lib" -> "DNMP/DNMP"
 "Liuxinyv/SAZS" -> "leiyaocui/STRAP"
@@ -478,11 +632,15 @@ digraph G {
 "DNMP/DNMP" -> "PJLab-ADG/nr3d_lib"
 "DNMP/DNMP" -> "JOP-Lee/READ"
 "DNMP/DNMP" -> "fuxiao0719/PanopticNeRF"
+"GAIR-NLP/auto-j" -> "baaivision/JudgeLM" ["e"=1]
 "wudongming97/Prompt4Driving" -> "qiantianwen/NuScenes-QA"
 "wudongming97/Prompt4Driving" -> "NVlabs/OmniDrive"
 "wudongming97/Prompt4Driving" -> "OpenDriveLab/ELM"
 "wudongming97/Prompt4Driving" -> "DLUT-LYZ/CODA-LM"
 "wudongming97/Prompt4Driving" -> "fudan-zvg/Reason2Drive"
+"ifzhang/ByteTrack-V2" -> "E2E-AD/AD-MLP" ["e"=1]
+"Emerge-Lab/gpudrive" -> "autonomousvision/navsim" ["e"=1]
+"kieran514/robustdepth" -> "md4all/md4all" ["e"=1]
 "md4all/md4all" -> "kieran514/robustdepth" ["e"=1]
 "md4all/md4all" -> "seawee1/ForkGAN-pytorch"
 "md4all/md4all" -> "w2kun/RNW"
@@ -503,6 +661,8 @@ digraph G {
 "fudan-zvg/S-NeRF" -> "NVlabs/EmerNeRF"
 "fudan-zvg/S-NeRF" -> "georghess/neurad-studio"
 "fudan-zvg/S-NeRF" -> "hjxwhy/Block-NeRF"
+"jkulhanek/tetra-nerf" -> "DNMP/DNMP" ["e"=1]
+"AIR-DISCOVER/INT2" -> "leiyaocui/STRAP" ["e"=1]
 "hustvl/GNeuVox" -> "hustvl/OpenInst"
 "hustvl/GNeuVox" -> "hustvl/CoStudent"
 "hustvl/GNeuVox" -> "hustvl/Featurized-QueryRCNN"
@@ -584,6 +744,9 @@ digraph G {
 "OpenDriveLab/Vista" -> "GigaAI-research/DriveDreamer4D"
 "OpenDriveLab/Vista" -> "zju3dv/street_gaussians"
 "OpenDriveLab/Vista" -> "OpenDriveLab/DriveLM"
+"prometheus-eval/prometheus-eval" -> "baaivision/JudgeLM" ["e"=1]
+"VILA-Lab/ATLAS" -> "baaivision/JudgeLM" ["e"=1]
+"IsshikiHugh/ExpOven" -> "zju3dv/LiDAR-RT" ["e"=1]
 "NVlabs/EmerNeRF" -> "fudan-zvg/PVG"
 "NVlabs/EmerNeRF" -> "zju3dv/street_gaussians"
 "NVlabs/EmerNeRF" -> "PJLab-ADG/neuralsim"
@@ -614,6 +777,7 @@ digraph G {
 "PJLab-ADG/DiLu" -> "OpenGVLab/DriveMLM"
 "PJLab-ADG/DiLu" -> "Thinklab-SJTU/Awesome-LLM4AD"
 "PJLab-ADG/DiLu" -> "YuanJianhao508/RAG-Driver"
+"Nightmare-n/UniPAD" -> "OpenDriveLab/ViDAR" ["e"=1]
 "ge25nab/Awesome-VLM-AD-ITS" -> "IrohXu/Awesome-Multimodal-LLM-Autonomous-Driving"
 "ge25nab/Awesome-VLM-AD-ITS" -> "Thinklab-SJTU/Awesome-LLM4AD"
 "ge25nab/Awesome-VLM-AD-ITS" -> "hustvl/Senna"
@@ -659,7 +823,12 @@ digraph G {
 "BraveGroup/Drive-WM" -> "hustvl/VAD"
 "BraveGroup/Drive-WM" -> "nnanhuang/S3Gaussian"
 "BraveGroup/Drive-WM" -> "hustvl/DiffusionDrive"
+"wzzheng/OccWorld" -> "OpenDriveLab/ViDAR" ["e"=1]
+"wzzheng/OccWorld" -> "BraveGroup/Drive-WM" ["e"=1]
+"wzzheng/OccWorld" -> "wzzheng/OccSora" ["e"=1]
+"wzzheng/OccWorld" -> "JeffWang987/DriveDreamer" ["e"=1]
 "prs-eth/Dynamic-LiDAR-Resimulation" -> "cqf7419/LiDAR-GS"
+"astra-vision/PaSCo" -> "hustvl/Symphonies" ["e"=1]
 "yifanlu0227/ChatSim" -> "JeffWang987/DriveDreamer"
 "yifanlu0227/ChatSim" -> "PJLab-ADG/DriveArena"
 "yifanlu0227/ChatSim" -> "wenyuqing/panacea"
@@ -726,6 +895,10 @@ digraph G {
 "wayveai/LingoQA" -> "PJLab-ADG/awesome-knowledge-driven-AD"
 "wayveai/LingoQA" -> "PJLab-ADG/DiLu"
 "wayveai/LingoQA" -> "USC-GVL/Agent-Driver"
+"autodriving-heart/Awesome-Autonomous-Driving" -> "hustvl/VAD" ["e"=1]
+"autodriving-heart/Awesome-Autonomous-Driving" -> "autodriving-heart/CVPR-2024-Papers-Autonomous-Driving" ["e"=1]
+"autodriving-heart/Awesome-Autonomous-Driving" -> "swc-17/SparseDrive" ["e"=1]
+"autodriving-heart/Awesome-Autonomous-Driving" -> "Thinklab-SJTU/Awesome-LLM4AD" ["e"=1]
 "autonomousvision/navsim" -> "hustvl/DiffusionDrive"
 "autonomousvision/navsim" -> "autonomousvision/tuplan_garage" ["e"=1]
 "autonomousvision/navsim" -> "hustvl/VAD"
@@ -756,6 +929,9 @@ digraph G {
 "PJLab-ADG/OASim" -> "wenyuqing/panacea"
 "PJLab-ADG/OASim" -> "JeffWang987/DriveDreamer"
 "PJLab-ADG/OASim" -> "PJLab-ADG/nr3d_lib"
+"autonomousvision/sledge" -> "autonomousvision/navsim" ["e"=1]
+"autonomousvision/sledge" -> "OpenDriveLab/ELM" ["e"=1]
+"autonomousvision/sledge" -> "atonderski/neuro-ncap" ["e"=1]
 "OpenDriveLab/ELM" -> "NVlabs/OmniDrive"
 "OpenDriveLab/ELM" -> "wayveai/LingoQA"
 "OpenDriveLab/ELM" -> "DLUT-LYZ/CODA-LM"
@@ -801,6 +977,9 @@ digraph G {
 "DLUT-LYZ/CODA-LM" -> "xmed-lab/NuInstruct"
 "DLUT-LYZ/CODA-LM" -> "wayveai/LingoQA"
 "DLUT-LYZ/CODA-LM" -> "OpenDriveLab/ELM"
+"jchengai/pluto" -> "hustvl/VAD" ["e"=1]
+"jchengai/pluto" -> "NVlabs/Hydra-MDP" ["e"=1]
+"jchengai/pluto" -> "autonomousvision/navsim" ["e"=1]
 "NVlabs/OmniDrive" -> "jmwang0117/HE-Drive"
 "NVlabs/OmniDrive" -> "opendilab/LMDrive"
 "NVlabs/OmniDrive" -> "taco-group/OpenEMMA"
@@ -887,6 +1066,9 @@ digraph G {
 "NVlabs/BEV-Planner" -> "liyingyanUCAS/WoTE"
 "NVlabs/BEV-Planner" -> "NVlabs/Hydra-MDP"
 "NVlabs/BEV-Planner" -> "wzzheng/OccWorld" ["e"=1]
+"LMD0311/Awesome-World-Model" -> "OpenDriveLab/Vista" ["e"=1]
+"LMD0311/Awesome-World-Model" -> "HaoranZhuExplorer/World-Models-Autonomous-Driving-Latest-Survey" ["e"=1]
+"LMD0311/Awesome-World-Model" -> "JeffWang987/DriveDreamer" ["e"=1]
 "wzzheng/GenAD" -> "swc-17/SparseDrive"
 "wzzheng/GenAD" -> "hustvl/VAD"
 "wzzheng/GenAD" -> "NVlabs/Hydra-MDP"
@@ -948,6 +1130,8 @@ digraph G {
 "xmed-lab/NuInstruct" -> "fudan-zvg/Reason2Drive"
 "xmed-lab/NuInstruct" -> "ayesha-ishaq/DriveLMM-o1"
 "xmed-lab/NuInstruct" -> "DLUT-LYZ/CODA-LM"
+"GAP-LAB-CUHK-SZ/gaustudio" -> "zju3dv/street_gaussians" ["e"=1]
+"yxzhang15/PCR" -> "tyhuang98/TEAR-release" ["e"=1]
 "JeffWang987/WorldDreamer" -> "fudan-zvg/WoVoGen"
 "JeffWang987/WorldDreamer" -> "zympsyche/BevWorld"
 "JeffWang987/WorldDreamer" -> "f1yfisher/DriveDreamer2"
@@ -1007,8 +1191,12 @@ digraph G {
 "zsy1987/SA-GS" -> "SainingZhang/UC-GS"
 "zsy1987/SA-GS" -> "saliteta/SA-GS-CODE"
 "zsy1987/SA-GS" -> "RunyiYang/SUNDAE"
+"nyu-systems/Grendel-GS" -> "nv-tlabs/SCube" ["e"=1]
+"Jiawei-Yang/Denoising-ViT" -> "NVlabs/EmerNeRF" ["e"=1]
+"kcheng1021/GaussianPro" -> "zju3dv/street_gaussians" ["e"=1]
 "VISION-SJTU/Lightning-NeRF" -> "carlinds/unisim"
 "AIR-DISCOVER/ICRA2024-Sim2Real-RM" -> "AIR-DISCOVER/ICRA-RM-Sim2Real"
+"zoomin-lee/SemCity" -> "wzzheng/OccSora" ["e"=1]
 "hustvl/WeakSAM" -> "hustvl/hustvl.github.io"
 "hustvl/WeakSAM" -> "hustvl/GroundingSuite"
 "hustvl/WeakSAM" -> "hustvl/CircuitFormer"
@@ -1016,6 +1204,9 @@ digraph G {
 "deepshwang/vegs" -> "kcheng1021/UC-NeRF"
 "deepshwang/vegs" -> "nnanhuang/S3Gaussian"
 "deepshwang/vegs" -> "Kunhao-Liu/ViewExtrapolator"
+"HorizonRobotics/Sparse4D" -> "swc-17/SparseDrive" ["e"=1]
+"HorizonRobotics/Sparse4D" -> "hustvl/VAD" ["e"=1]
+"HorizonRobotics/Sparse4D" -> "OpenDriveLab/ViDAR" ["e"=1]
 "JunchenLiu77/Rip-NeRF" -> "Robot-K/PreAfford"
 "JunchenLiu77/Rip-NeRF" -> "Shiran-Yuan/SlimmeRF"
 "JunchenLiu77/Rip-NeRF" -> "Yang-Li-2000/Touch-Line-Transformer"
@@ -1061,6 +1252,7 @@ digraph G {
 "hustvl/ViTGaze" -> "hustvl/OpenInst"
 "hustvl/ViTGaze" -> "hustvl/ViG"
 "hustvl/ViTGaze" -> "hustvl/GaussTR"
+"haomo-ai/Cam4DOcc" -> "BraveGroup/LAW" ["e"=1]
 "PointsCoder/GPT-Driver" -> "USC-GVL/Agent-Driver"
 "PointsCoder/GPT-Driver" -> "wayveai/Driving-with-LLMs"
 "PointsCoder/GPT-Driver" -> "PJLab-ADG/DriveLikeAHuman"
@@ -1094,6 +1286,7 @@ digraph G {
 "PurdueDigitalTwin/MACP" -> "PurdueDigitalTwin/MACP"
 "hustvl/CircuitFormer" -> "hustvl/hustvl.github.io"
 "hustvl/osp" -> "hustvl/GaussTR"
+"xiliu8006/3DGS-Enhancer" -> "Kunhao-Liu/ViewExtrapolator" ["e"=1]
 "taco-group/OpenEMMA" -> "hustvl/Senna"
 "taco-group/OpenEMMA" -> "NVlabs/OmniDrive"
 "taco-group/OpenEMMA" -> "hustvl/DiffusionDrive"
@@ -1210,6 +1403,7 @@ digraph G {
 "hustvl/Senna" -> "NVlabs/Hydra-MDP"
 "hustvl/Senna" -> "hustvl/Symphonies"
 "hustvl/Senna" -> "autonomousvision/navsim"
+"nv-tlabs/XCube" -> "nv-tlabs/SCube" ["e"=1]
 "nv-tlabs/SCube" -> "nv-tlabs/XCube" ["e"=1]
 "nv-tlabs/SCube" -> "ziyc/drivestudio"
 "nv-tlabs/SCube" -> "cvg/NoPoSplat" ["e"=1]
@@ -1225,6 +1419,7 @@ digraph G {
 "nv-tlabs/SCube" -> "nv-tlabs/Difix3D" ["e"=1]
 "nv-tlabs/SCube" -> "nyu-systems/Grendel-GS" ["e"=1]
 "nv-tlabs/SCube" -> "cvg/depthsplat" ["e"=1]
+"graphdeco-inria/hierarchical-3d-gaussians" -> "ziyc/drivestudio" ["e"=1]
 "nnanhuang/S3Gaussian" -> "VDIGPKU/DrivingGaussian"
 "nnanhuang/S3Gaussian" -> "LightwheelAI/street-gaussians-ns"
 "nnanhuang/S3Gaussian" -> "zju3dv/street_gaussians"
@@ -1240,6 +1435,9 @@ digraph G {
 "nnanhuang/S3Gaussian" -> "chengweialan/DeSiRe-GS"
 "nnanhuang/S3Gaussian" -> "nv-tlabs/SCube"
 "nnanhuang/S3Gaussian" -> "PJLab-ADG/OASim"
+"huang-yh/GaussianFormer" -> "nnanhuang/S3Gaussian" ["e"=1]
+"huang-yh/GaussianFormer" -> "wzzheng/LDM" ["e"=1]
+"huang-yh/GaussianFormer" -> "zju3dv/street_gaussians" ["e"=1]
 "BraveGroup/LAW" -> "PeidongLi/SSR"
 "BraveGroup/LAW" -> "liyingyanUCAS/WoTE"
 "BraveGroup/LAW" -> "BraveGroup/Drive-WM"
@@ -1260,8 +1458,21 @@ digraph G {
 "NVlabs/Hydra-MDP" -> "NVlabs/OmniDrive"
 "NVlabs/Hydra-MDP" -> "hustvl/Senna"
 "NVlabs/Hydra-MDP" -> "BraveGroup/LAW"
+"GANWANSHUI/GaussianOcc" -> "hustvl/GaussTR" ["e"=1]
+"GANWANSHUI/GaussianOcc" -> "wzzheng/OccSora" ["e"=1]
+"GANWANSHUI/GaussianOcc" -> "nnanhuang/S3Gaussian" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/mmMamba" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/GaussTR" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/GroundingSuite" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/DiG" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/EVF-SAM" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/osp" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/AlphaDrive" ["e"=1]
+"hustvl/ControlAR" -> "hustvl/ViG" ["e"=1]
 "ShiPC-AI/TCF" -> "NWPU-YJQ-3DV/2022_Mutual_Voting"
 "ShiPC-AI/TCF" -> "tyhuang98/HERE-release"
+"SY-007-Research/3dgs_render_python" -> "zju3dv/street_gaussians" ["e"=1]
+"ChenYutongTHU/SplatFormer" -> "nv-tlabs/SCube" ["e"=1]
 "TencentARC/NVComposer" -> "Kunhao-Liu/ViewExtrapolator"
 "qintonguav/ParkingE2E" -> "qintonguav/e2e-parking-carla"
 "qintonguav/ParkingE2E" -> "HKUST-Aerial-Robotics/MonoLaneMapping" ["e"=1]
@@ -1270,6 +1481,12 @@ digraph G {
 "qintonguav/ParkingE2E" -> "swc-17/SparseDrive"
 "qintonguav/ParkingE2E" -> "Yzichen/FlashOCC" ["e"=1]
 "qintonguav/ParkingE2E" -> "jmwang0117/HE-Drive"
+"dk-liang/UniSeg3D" -> "xiaomi-mlab/Orion" ["e"=1]
+"ZhengYinan-AIR/Diffusion-Planner" -> "hustvl/DiffusionDrive" ["e"=1]
+"ZhengYinan-AIR/Diffusion-Planner" -> "autonomousvision/navsim" ["e"=1]
+"ZhengYinan-AIR/Diffusion-Planner" -> "jmwang0117/HE-Drive" ["e"=1]
+"ZhengYinan-AIR/Diffusion-Planner" -> "YvanYin/GoalFlow" ["e"=1]
+"ZhengYinan-AIR/Diffusion-Planner" -> "NVlabs/Hydra-MDP" ["e"=1]
 "LightwheelAI/street-gaussians-ns" -> "nnanhuang/S3Gaussian"
 "LightwheelAI/street-gaussians-ns" -> "zju3dv/street_gaussians"
 "LightwheelAI/street-gaussians-ns" -> "fudan-zvg/PVG"
@@ -1298,6 +1515,7 @@ digraph G {
 "hyzhou404/HUGS" -> "fudan-zvg/GS-LiDAR"
 "hyzhou404/HUGS" -> "esdolo/FreeVS"
 "hyzhou404/HUGS" -> "fangzhou2000/DrivingForward"
+"maitrix-org/Pandora" -> "OpenDriveLab/Vista" ["e"=1]
 "hustvl/DiffusionDrive" -> "hustvl/Senna"
 "hustvl/DiffusionDrive" -> "autonomousvision/navsim"
 "hustvl/DiffusionDrive" -> "hustvl/VAD"
@@ -1348,6 +1566,7 @@ digraph G {
 "hustvl/EVF-SAM" -> "baaivision/JudgeLM"
 "hustvl/EVF-SAM" -> "hustvl/WeakSAM"
 "hustvl/EVF-SAM" -> "hustvl/hustvl.github.io"
+"filaPro/unidet3d" -> "AIR-DISCOVER/DQS3D" ["e"=1]
 "hustvl/MaskAdapter" -> "hustvl/mmMamba"
 "hustvl/MaskAdapter" -> "hustvl/GaussTR"
 "hustvl/MaskAdapter" -> "hustvl/MaTVLM"
@@ -1367,9 +1586,11 @@ digraph G {
 "Tencent/TAD_Sim" -> "nnanhuang/S3Gaussian"
 "Tencent/TAD_Sim" -> "ziyc/drivestudio"
 "Tencent/TAD_Sim" -> "johschmitz/blender-driving-scenario-creator" ["e"=1]
+"liudaizong/Awesome-3D-Visual-Grounding" -> "jxbbb/TOD3Cap" ["e"=1]
 "Pixtella/Anagram-MTL" -> "Shiran-Yuan/ArchonView"
 "Pixtella/Anagram-MTL" -> "Robot-K/PreAfford"
 "grenoble-zhang/Ctrl-U" -> "wenyi-li/FairDiff"
+"hustvl/Dynamic-2DGS" -> "hustvl/HDR-HexPlane" ["e"=1]
 "wenyi-li/FairDiff" -> "SainingZhang/UC-GS"
 "wenyi-li/FairDiff" -> "Robot-K/PreAfford"
 "wenyi-li/FairDiff" -> "AIR-DISCOVER/SCP-Diff-Toolkit"
@@ -1380,6 +1601,7 @@ digraph G {
 "Barrybarry-Smith/Driv3R" -> "EnVision-Research/DriveRecon"
 "Barrybarry-Smith/Driv3R" -> "wzzheng/LDM"
 "Barrybarry-Smith/Driv3R" -> "wzzheng/Stag"
+"jkulhanek/wild-gaussians" -> "tobiasfshr/map4d" ["e"=1]
 "Robot-K/PreAfford" -> "SainingZhang/UC-GS"
 "chengweialan/DeSiRe-GS" -> "esdolo/FreeVS"
 "chengweialan/DeSiRe-GS" -> "heiheishuang/MuDG"
@@ -1557,12 +1779,19 @@ digraph G {
 "alibaba/UVOSAM" -> "alibaba/EffiVED"
 "hustvl/CoStudent" -> "hustvl/hustvl.github.io"
 "alibaba/EffiVED" -> "alibaba/UVOSAM"
+"hustvl/LightningDiT" -> "hustvl/DiG" ["e"=1]
+"hustvl/LightningDiT" -> "hustvl/mmMamba" ["e"=1]
+"hustvl/LightningDiT" -> "hustvl/ViG" ["e"=1]
+"hustvl/LightningDiT" -> "hustvl/GaussTR" ["e"=1]
+"hustvl/LightningDiT" -> "hustvl/Senna" ["e"=1]
 "by-luckk/PhysGen3D" -> "GasaiYU/PartRM"
 "by-luckk/PhysGen3D" -> "Shiran-Yuan/ArchonView"
 "by-luckk/PhysGen3D" -> "Arlo0o/UniScene-Unified-Occupancy-centric-Driving-Scene-Generation"
 "by-luckk/PhysGen3D" -> "SainingZhang/UC-GS"
 "zihaosheng/VLM-RL" -> "hustvl/AlphaDrive"
 "zihaosheng/VLM-RL" -> "OscarHuangWind/Learning-from-Intervention"
+"nvidia-cosmos/cosmos-reason1" -> "nvidia-cosmos/cosmos-predict1" ["e"=1]
+"nvidia-cosmos/cosmos-reason1" -> "nvidia-cosmos/cosmos-transfer1" ["e"=1]
 "xiaomi-mlab/Orion" -> "DriveVLA/OpenDriveVLA"
 "xiaomi-mlab/Orion" -> "hustvl/AlphaDrive"
 "xiaomi-mlab/Orion" -> "dk-liang/UniFuture" ["e"=1]
@@ -1591,6 +1820,7 @@ digraph G {
 "hustvl/mmMamba" -> "hustvl/LKCell"
 "hustvl/mmMamba" -> "hustvl/MaTVLM"
 "hustvl/mmMamba" -> "hustvl/OpenInst"
+"dk-liang/UniFuture" -> "xiaomi-mlab/Orion" ["e"=1]
 "hustvl/AlphaDrive" -> "hustvl/Senna"
 "hustvl/AlphaDrive" -> "hustvl/GaussTR"
 "hustvl/AlphaDrive" -> "DriveVLA/OpenDriveVLA"
@@ -1606,6 +1836,7 @@ digraph G {
 "hustvl/AlphaDrive" -> "PeidongLi/SSR"
 "hustvl/AlphaDrive" -> "NVlabs/OmniDrive"
 "hustvl/AlphaDrive" -> "jmwang0117/HE-Drive"
+"fkryan/gazelle" -> "hustvl/ViTGaze" ["e"=1]
 "hustvl/GaussTR" -> "hustvl/mmMamba"
 "hustvl/GaussTR" -> "hustvl/osp"
 "hustvl/GaussTR" -> "hustvl/GroundingSuite"
@@ -1617,6 +1848,7 @@ digraph G {
 "hustvl/GaussTR" -> "Rorisis/Co-Occ" ["e"=1]
 "hustvl/GaussTR" -> "hustvl/MaskAdapter"
 "hustvl/GaussTR" -> "hustvl/Senna"
+"valeoai/V-Max" -> "Sephirex-X/LatentDriver" ["e"=1]
 "hustvl/GroundingSuite" -> "hustvl/mmMamba"
 "hustvl/GroundingSuite" -> "hustvl/GaussTR"
 "hustvl/GroundingSuite" -> "hustvl/hustvl.github.io"
@@ -1649,6 +1881,7 @@ digraph G {
 "YvanYin/GoalFlow" -> "BraveGroup/LAW"
 "YvanYin/GoalFlow" -> "DriveVLA/OpenDriveVLA"
 "YvanYin/GoalFlow" -> "jmwang0117/HE-Drive"
+"chenguolin/DiffSplat" -> "Kunhao-Liu/ViewExtrapolator" ["e"=1]
 "Arlo0o/UniScene-Unified-Occupancy-centric-Driving-Scene-Generation" -> "Shiran-Yuan/ArchonView"
 "Arlo0o/UniScene-Unified-Occupancy-centric-Driving-Scene-Generation" -> "GigaAI-research/DriveDreamer4D"
 "Arlo0o/UniScene-Unified-Occupancy-centric-Driving-Scene-Generation" -> "GasaiYU/PartRM"
@@ -1735,25 +1968,38 @@ digraph G {
 "Thinklab-SJTU/DriveTransformer" -> "wzzheng/GaussianAD" ["e"=1]
 "Thinklab-SJTU/DriveTransformer" -> "hustvl/AlphaDrive"
 "EnVision-Research/DriveRecon" -> "Barrybarry-Smith/Driv3R"
+"AbrahamYabo/LiftImage3D" -> "Kunhao-Liu/ViewExtrapolator" ["e"=1]
 "PJLab-ADG/LeapVAD" -> "StudyingFuFu/L2COcc"
 "wzzheng/GPD" -> "wzzheng/LDM"
 "wzzheng/GPD" -> "Sephirex-X/LatentDriver"
 "royalmelon0505/dist4d" -> "heiheishuang/MuDG"
 "hustvl/MaTVLM" -> "hustvl/OpenInst"
 "hustvl/MaTVLM" -> "hustvl/hustvl.github.io"
+"carla-simulator/scenario_runner" ["l"="62.592,12.255", "c"=461]
+"PJLab-ADG/LimSim" ["l"="63.467,11.742"]
 "JinkyuKimUCB/BDD-X-dataset" ["l"="63.623,11.775"]
 "JinkyuKimUCB/explainable-deep-driving" ["l"="63.654,11.783"]
 "qiantianwen/NuScenes-QA" ["l"="63.561,11.808"]
 "oxford-robotics-institute/radar-robotcar-dataset-sdk" ["l"="63.907,11.595"]
 "ori-mrg/robotcar-dataset-sdk" ["l"="63.878,11.592"]
-"talk2car/Talk2Car" ["l"="63.602,11.825"]
+"JialeCao001/SipMask" ["l"="50.631,30.381", "c"=83]
 "hustvl/BMaskR-CNN" ["l"="63.344,12.155"]
+"ejcgt/attention-target-detection" ["l"="32.496,28.548", "c"=1122]
+"hustvl/ViTGaze" ["l"="63.428,12.014"]
+"talk2car/Talk2Car" ["l"="63.602,11.825"]
 "zimmerrol/mask-rcnn-edge-agreement-loss" ["l"="63.331,12.186"]
-"hustvl/HAIS" ["l"="65.188,11.542"]
+"hustvl/HAIS" ["l"="65.188,11.542", "c"=203]
 "hustvl/BoxTeacher" ["l"="63.374,12.101"]
+"autonomousvision/transfuser" ["l"="62.495,12.238", "c"=461]
+"hustvl/VAD" ["l"="63.469,11.861"]
+"OpenDriveLab/DriveLM" ["l"="63.497,11.81"]
+"autonomousvision/navsim" ["l"="63.44,11.833"]
+"DerrickXuNu/Learn-Carla" ["l"="62.56,12.368", "c"=461]
+"ucla-mobility/OpenCDA" ["l"="62.545,12.337", "c"=461]
+"motional/nuplan-devkit" ["l"="63.271,12.517", "c"=241]
 "princeton-computational-imaging/neural-scene-graphs" ["l"="63.358,11.606"]
 "hturki/suds" ["l"="63.37,11.592"]
-"zju3dv/object_nerf" ["l"="63.813,1.812"]
+"zju3dv/object_nerf" ["l"="63.813,1.812", "c"=134]
 "fuxiao0719/PanopticNeRF" ["l"="63.35,11.567"]
 "OPEN-AIR-SUN/mars" ["l"="63.396,11.641"]
 "DNMP/DNMP" ["l"="63.372,11.575"]
@@ -1763,6 +2009,8 @@ digraph G {
 "georghess/neurad-studio" ["l"="63.381,11.653"]
 "fudan-zvg/PVG" ["l"="63.357,11.641"]
 "LightwheelAI/street-gaussians-ns" ["l"="63.371,11.66"]
+"isl-org/PhotorealismEnhancement" ["l"="63.567,1.558", "c"=134]
+"nnanhuang/S3Gaussian" ["l"="63.364,11.681"]
 "w2kun/RNW" ["l"="63.805,11.616"]
 "LINA-lln/ADDS-DepthNet" ["l"="63.822,11.588"]
 "ucaszyp/STEPS" ["l"="63.728,11.65"]
@@ -1770,34 +2018,58 @@ digraph G {
 "md4all/md4all" ["l"="63.836,11.616"]
 "LINA-lln/Steering-KernelNet" ["l"="63.842,11.571"]
 "madhubabuv/NightDepthADFA" ["l"="63.826,11.561"]
+"hustvl/QueryInst" ["l"="50.692,30.459", "c"=83]
+"hustvl/ViG" ["l"="63.418,12.003"]
+"hustvl/DiG" ["l"="63.413,12.014"]
+"hustvl/AziNorm" ["l"="63.428,12.188"]
+"ShoufaChen/CycleMLP" ["l"="49.075,33.142", "c"=401]
 "hustvl/MSG-Transformer" ["l"="63.422,12.039"]
 "hustvl/Featurized-QueryRCNN" ["l"="63.409,12.062"]
 "hustvl/NeuSample" ["l"="63.433,12.055"]
-"hustvl/DiG" ["l"="63.413,12.014"]
-"hustvl/ViG" ["l"="63.418,12.003"]
 "hustvl/OpenInst" ["l"="63.401,12.05"]
 "hustvl/hustvl.github.io" ["l"="63.391,12.028"]
 "Co1lin/AIR-Server-Doc" ["l"="63.754,11.713"]
 "AIR-DISCOVER/LASST" ["l"="63.715,11.675"]
 "wuys13/Multi-Drug-Transfer-Learning" ["l"="63.776,11.728"]
-"hustvl/AziNorm" ["l"="63.428,12.188"]
 "SuperZ-Liu/PolarBEV" ["l"="63.425,12.163"]
-"fudan-zvg/S-NeRF" ["l"="63.375,11.603"]
-"sjtuytc/UnboundedNeRFPytorch" ["l"="63.657,1.717"]
+"hustvl/TeViT" ["l"="50.695,30.584", "c"=83]
+"hustvl/RILS" ["l"="63.378,12.082"]
+"ZhiChen902/SC2-PCR" ["l"="65.586,11.053", "c"=1265]
+"Forrest-110/FastMAC" ["l"="63.588,11.636"]
+"PeterJaq/Awesome-Autonomous-Driving" ["l"="64.496,11.404", "c"=61]
+"OpenDriveLab/ViDAR" ["l"="63.43,11.795"]
+"hustvl/SparseInst" ["l"="50.659,30.407", "c"=83]
+"hustvl/Senna" ["l"="63.436,11.925"]
+"hustvl/mmMamba" ["l"="63.409,11.996"]
+"hustvl/TiNeuVox" ["l"="63.773,1.805", "c"=134]
+"hustvl/GNeuVox" ["l"="63.406,12.043"]
+"vista-simulator/vista" ["l"="63.17,12.519", "c"=241]
+"PJLab-ADG/DriveLikeAHuman" ["l"="63.53,11.774"]
+"metadriverse/metadrive" ["l"="62.429,12.289", "c"=461]
+"UCF-SST-Lab/UCF-SST-CitySim1-Dataset" ["l"="50.06,3.309", "c"=941]
+"hustvl/MIMDet" ["l"="52.886,29.378", "c"=547]
+"hustvl/PolarDETR" ["l"="63.421,12.109"]
+"astra-vision/MonoScene" ["l"="64.633,11.382", "c"=61]
 "astra-vision/SceneRF" ["l"="63.368,11.547"]
-"Totoro97/f2-nerf" ["l"="63.723,1.734"]
+"hustvl/TopFormer" ["l"="53.166,31.055", "c"=155]
+"SysCV/LiDAR_snow_sim" ["l"="63.747,35.111", "c"=589]
+"PJLab-ADG/PCSim" ["l"="63.436,11.635"]
+"fudan-zvg/S-NeRF" ["l"="63.375,11.603"]
+"sjtuytc/UnboundedNeRFPytorch" ["l"="63.657,1.717", "c"=134]
+"Totoro97/f2-nerf" ["l"="63.723,1.734", "c"=134]
 "NVlabs/EmerNeRF" ["l"="63.372,11.639"]
-"tangtaogo/lidar-nerf" ["l"="64.475,11.886"]
+"tangtaogo/lidar-nerf" ["l"="64.475,11.886", "c"=61]
 "hjxwhy/Block-NeRF" ["l"="63.404,11.567"]
+"Harry-Zhi/semantic_nerf" ["l"="63.873,1.805", "c"=134]
 "skyhehe123/AutoRF-pytorch" ["l"="63.343,11.547"]
+"TRI-ML/vidar" ["l"="64.82,4.37", "c"=263]
 "AIR-DISCOVER/ICRA-RM-Sim2Real" ["l"="63.761,11.668"]
 "AIR-DISCOVER/ICRA2024-Sim2Real-RM" ["l"="63.788,11.666"]
 "Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" ["l"="63.715,11.667"]
 "OPEN-AIR-SUN/Cerberus" ["l"="63.731,11.677"]
-"Facebear-ljx/DOGE" ["l"="60.936,15.117"]
+"Facebear-ljx/DOGE" ["l"="60.936,15.117", "c"=480]
 "OPEN-AIR-SUN/Viewpoint-Bottleneck" ["l"="63.747,11.679"]
 "hustvl/TinyDet" ["l"="63.442,12.14"]
-"hustvl/PolarDETR" ["l"="63.421,12.109"]
 "OPEN-AIR-SUN/PQ-Transformer" ["l"="63.73,11.667"]
 "OPEN-AIR-SUN/SISC" ["l"="63.73,11.692"]
 "AIR-DISCOVER/Omni-PQ" ["l"="63.704,11.66"]
@@ -1805,172 +2077,205 @@ digraph G {
 "AIR-DISCOVER/TOIST" ["l"="63.705,11.672"]
 "AIR-DISCOVER/DQS3D" ["l"="63.693,11.67"]
 "AIR-DISCOVER/VIBUS" ["l"="63.705,11.692"]
-"zhongcl-thu/SNAKE" ["l"="-54.565,-14.675"]
+"zhongcl-thu/SNAKE" ["l"="-54.565,-14.675", "c"=301]
 "leiyaocui/STRAP" ["l"="63.694,11.649"]
 "cxx226/DPF" ["l"="63.715,11.656"]
-"astra-vision/MonoScene" ["l"="64.633,11.382"]
+"OpenDriveLab/UniAD" ["l"="64.465,11.243", "c"=61]
+"swc-17/SparseDrive" ["l"="63.467,11.896"]
+"facebookresearch/localrf" ["l"="63.73,1.8", "c"=134]
+"OpenDriveLab/OpenLane-V2" ["l"="64.414,11.373", "c"=61]
+"OpenDriveLab/DriveAGI" ["l"="63.456,11.785"]
+"michigan-traffic-lab/Dense-Deep-Reinforcement-Learning" ["l"="62.436,12.341", "c"=461]
+"PJLab-ADG/DiLu" ["l"="63.514,11.779"]
 "Brummi/BehindTheScenes" ["l"="63.388,11.538"]
-"ai4ce/SSCBench" ["l"="64.573,11.429"]
-"astra-vision/PaSCo" ["l"="64.575,11.484"]
-"GANWANSHUI/SimpleOccupancy" ["l"="64.636,11.465"]
-"zhangyp15/OccFormer" ["l"="64.616,11.412"]
+"ai4ce/SSCBench" ["l"="64.573,11.429", "c"=61]
+"astra-vision/PaSCo" ["l"="64.575,11.484", "c"=61]
+"GANWANSHUI/SimpleOccupancy" ["l"="64.636,11.465", "c"=61]
+"zhangyp15/OccFormer" ["l"="64.616,11.412", "c"=61]
 "zubair-irshad/NeO-360" ["l"="63.306,11.553"]
-"wbhu/Tri-MipRF" ["l"="63.798,1.749"]
-"JingwenWang95/go-surf" ["l"="59.182,11.437"]
-"zju3dv/Vox-Fusion" ["l"="59.215,11.368"]
+"wbhu/Tri-MipRF" ["l"="63.798,1.749", "c"=134]
+"JingwenWang95/go-surf" ["l"="59.182,11.437", "c"=87]
+"zju3dv/Vox-Fusion" ["l"="59.215,11.368", "c"=87]
 "jxbbb/ADAPT" ["l"="63.653,11.703"]
 "hoi4d/HOI4D_ActionSeg" ["l"="63.683,11.65"]
 "wayveai/Driving-with-LLMs" ["l"="63.524,11.789"]
 "hoi4d/ObjTracking" ["l"="63.673,11.663"]
-"OpenDriveLab/DriveLM" ["l"="63.497,11.81"]
 "hoi4d/HOI4D_SemSeg" ["l"="63.674,11.642"]
-"PJLab-ADG/DriveLikeAHuman" ["l"="63.53,11.774"]
-"childrentime/dotenv" ["l"="-54.924,-13.587"]
-"PJLab-ADG/PCSim" ["l"="63.436,11.635"]
+"wayveai/mile" ["l"="62.545,12.258", "c"=461]
+"wayveai/LingoQA" ["l"="63.516,11.817"]
+"childrentime/dotenv" ["l"="-54.924,-13.587", "c"=219]
+"OpenDriveLab/ST-P3" ["l"="62.518,12.217", "c"=461]
+"E2E-AD/AD-MLP" ["l"="63.48,11.845"]
+"Thinklab-SJTU/Bench2DriveZoo" ["l"="63.436,11.853"]
+"autonomousvision/plant" ["l"="62.525,12.233", "c"=461]
+"sshaoshuai/MTR" ["l"="63.308,12.542", "c"=241]
+"hustvl/MapTR" ["l"="64.461,11.341", "c"=61]
 "PJLab-ADG/OASim" ["l"="63.401,11.685"]
-"SysCV/LiDAR_snow_sim" ["l"="63.747,35.111"]
-"PJLab-ADG/3DTrans" ["l"="64.521,11.183"]
+"PJLab-ADG/3DTrans" ["l"="64.521,11.183", "c"=61]
+"nihalsid/panoptic-lifting" ["l"="63.937,1.925", "c"=134]
 "zhongcl-thu/3D-Implicit-Transporter" ["l"="63.698,11.635"]
 "AIR-DISCOVER/LODE" ["l"="63.747,11.631"]
-"ucaszyp/MonoOcc" ["l"="64.563,11.564"]
-"skyhehe123/MSF" ["l"="-35.437,21.131"]
+"javieryu/nerf_bridge" ["l"="59.191,11.412", "c"=87]
+"DRosemei/RoMe" ["l"="64.368,11.466", "c"=61]
+"MiZhenxing/Switch-NeRF" ["l"="63.651,1.752", "c"=134]
+"ldkong1205/RoboDepth" ["l"="49.913,3.152", "c"=941]
+"ucaszyp/MonoOcc" ["l"="64.563,11.564", "c"=61]
+"linxuewu/Sparse4D" ["l"="64.622,11.297", "c"=61]
+"skyhehe123/MSF" ["l"="-35.437,21.131", "c"=127]
+"hustvl/GKT" ["l"="64.452,11.371", "c"=61]
 "PJLab-ADG/nr3d_lib" ["l"="63.347,11.596"]
+"snap-research/discoscene" ["l"="31.597,29.635", "c"=124]
 "PediaMedAI/ViTASD" ["l"="63.744,11.953"]
 "PediaMedAI/PIE" ["l"="63.721,11.939"]
 "leolyliu/HOI4D-Instructions" ["l"="63.7,11.604"]
 "cams-hoi/CAMS" ["l"="63.715,11.571"]
-"hustvl/RILS" ["l"="63.378,12.082"]
+"fudan-zvg/PolarFormer" ["l"="64.624,11.32", "c"=61]
 "PurdueDigitalTwin/ViT-DD" ["l"="63.713,11.917"]
 "PurdueDigitalTwin/MACP" ["l"="63.687,11.917"]
-"hustvl/GNeuVox" ["l"="63.406,12.043"]
-"hustvl/VAD" ["l"="63.469,11.861"]
-"swc-17/SparseDrive" ["l"="63.467,11.896"]
-"autonomousvision/tuplan_garage" ["l"="63.261,12.49"]
-"hustvl/MapTR" ["l"="64.461,11.341"]
-"autonomousvision/navsim" ["l"="63.44,11.833"]
+"WeOpenML/PandaLM" ["l"="37.231,-0.14", "c"=126]
+"baaivision/JudgeLM" ["l"="63.402,11.98"]
+"OpenDriveLab/ThinkTwice" ["l"="62.54,12.238", "c"=461]
+"facebookresearch/NeRF-Det" ["l"="65.763,11.201", "c"=1265]
+"OpenDriveLab/End-to-end-Autonomous-Driving" ["l"="64.436,11.283", "c"=61]
+"Thinklab-SJTU/Awesome-LLM4AD" ["l"="63.484,11.788"]
+"opendilab/LMDrive" ["l"="63.503,11.793"]
+"zhangxy0517/3D-Registration-with-Maximal-Cliques" ["l"="65.585,11.038", "c"=1265]
+"exiawsh/StreamPETR" ["l"="64.608,11.298", "c"=61]
+"autonomousvision/tuplan_garage" ["l"="63.261,12.49", "c"=241]
 "hustvl/DiffusionDrive" ["l"="63.429,11.888"]
 "NVlabs/Hydra-MDP" ["l"="63.46,11.878"]
 "wzzheng/GenAD" ["l"="63.45,11.847"]
-"hustvl/Senna" ["l"="63.436,11.925"]
-"OpenDriveLab/UniAD" ["l"="64.465,11.243"]
-"Thinklab-SJTU/Bench2DriveZoo" ["l"="63.436,11.853"]
-"jchengai/pluto" ["l"="63.275,12.477"]
-"OpenDriveLab/End-to-end-Autonomous-Driving" ["l"="64.436,11.283"]
-"motional/nuplan-devkit" ["l"="63.271,12.517"]
-"sshaoshuai/MTR" ["l"="63.308,12.542"]
-"OpenDriveLab/DriveAGI" ["l"="63.456,11.785"]
+"jchengai/pluto" ["l"="63.275,12.477", "c"=241]
+"Pranav-chib/End-to-End-Autonomous-Driving" ["l"="62.532,12.204", "c"=461]
+"autodriving-heart/CVPR-2024-Papers-Autonomous-Driving" ["l"="63.518,11.853"]
+"OpenDriveLab/DriveAdapter" ["l"="62.549,12.227", "c"=461]
+"BraveGroup/LAW" ["l"="63.406,11.832"]
+"tarashakhurana/4d-occ-forecasting" ["l"="64.543,11.43", "c"=61]
 "OpenDriveLab/Vista" ["l"="63.419,11.754"]
-"OpenDriveLab/OpenScene" ["l"="64.58,11.412"]
-"OpenDriveLab/ViDAR" ["l"="63.43,11.795"]
-"OpenDriveLab/OpenLane-V2" ["l"="64.414,11.373"]
-"opendilab/LMDrive" ["l"="63.503,11.793"]
-"Thinklab-SJTU/Awesome-LLM4AD" ["l"="63.484,11.788"]
+"OpenDriveLab/OpenScene" ["l"="64.58,11.412", "c"=61]
 "JeffWang987/DriveDreamer" ["l"="63.413,11.739"]
-"CVPR2023-3D-Occupancy-Prediction/CVPR2023-3D-Occupancy-Prediction" ["l"="64.585,11.369"]
+"CVPR2023-3D-Occupancy-Prediction/CVPR2023-3D-Occupancy-Prediction" ["l"="64.585,11.369", "c"=61]
 "PJLab-ADG/awesome-knowledge-driven-AD" ["l"="63.499,11.772"]
 "BraveGroup/Drive-WM" ["l"="63.416,11.788"]
-"PJLab-ADG/LimSim" ["l"="63.467,11.742"]
 "PJLab-ADG/DriveArena" ["l"="63.398,11.732"]
-"PJLab-ADG/DiLu" ["l"="63.514,11.779"]
-"rhzxg/MicroblogCrawler" ["l"="-54.681,-12.571"]
-"Eternity-Sky/Minecraft-Sandbox-games" ["l"="-54.773,-12.557"]
+"rhzxg/MicroblogCrawler" ["l"="-54.681,-12.571", "c"=252]
+"Eternity-Sky/Minecraft-Sandbox-games" ["l"="-54.773,-12.557", "c"=252]
 "anhao/go-ernie" ["l"="63.404,11.804"]
-"waymo-research/waymax" ["l"="63.232,12.512"]
-"Touch-Sun/t-dispatch" ["l"="-54.699,-12.539"]
+"waymo-research/waymax" ["l"="63.232,12.512", "c"=241]
+"Touch-Sun/t-dispatch" ["l"="-54.699,-12.539", "c"=252]
 "yifanlu0227/ChatSim" ["l"="63.411,11.706"]
-"RobertWeijie/IS-KnowledgeBase" ["l"="-54.752,-12.568"]
-"wwwwdkdk/Sparrow" ["l"="-54.776,-12.532"]
+"RobertWeijie/IS-KnowledgeBase" ["l"="-54.752,-12.568", "c"=252]
+"wwwwdkdk/Sparrow" ["l"="-54.776,-12.532", "c"=252]
+"PurdueDigitalTwin/REDFormer" ["l"="63.879,35.179", "c"=589]
 "hustvl/Symphonies" ["l"="63.438,11.975"]
 "hustvl/GaussTR" ["l"="63.419,11.974"]
 "hustvl/osp" ["l"="63.422,11.989"]
-"hustvl/mmMamba" ["l"="63.409,11.996"]
+"chaytonmin/UniScene" ["l"="64.554,11.443", "c"=61]
+"wzzheng/OccSora" ["l"="63.389,11.785"]
+"MCZhi/GameFormer-Planner" ["l"="63.278,12.447", "c"=241]
 "NVlabs/OmniDrive" ["l"="63.474,11.833"]
 "OpenDriveLab/ELM" ["l"="63.513,11.831"]
-"autonomousvision/carla_garage" ["l"="62.559,12.251"]
+"autonomousvision/carla_garage" ["l"="62.559,12.251", "c"=461]
 "OpenGVLab/DriveMLM" ["l"="63.538,11.79"]
 "USC-GVL/Agent-Driver" ["l"="63.518,11.803"]
 "LLVM-AD/MAPLM" ["l"="63.562,11.84"]
 "LLVM-AD/ucu-dataset" ["l"="63.632,11.882"]
-"wayveai/LingoQA" ["l"="63.516,11.817"]
 "llmbev/talk2bev" ["l"="63.557,11.785"]
 "IrohXu/Awesome-Multimodal-LLM-Autonomous-Driving" ["l"="63.527,11.815"]
 "sungyeonparkk/vision-assistant-for-driving" ["l"="63.606,11.865"]
+"DUOMO/TransGPT" ["l"="62.243,11.86", "c"=461]
 "PointsCoder/GPT-Driver" ["l"="63.533,11.802"]
-"wayveai/mile" ["l"="62.545,12.258"]
 "shalfun/DrivingDiffusion" ["l"="63.384,11.765"]
 "wenyuqing/panacea" ["l"="63.402,11.759"]
-"wangxupeng/2019Legal-AI-Challenge-Legal-Case-Element-Recognition-solution" ["l"="50.747,2.974"]
-"Rhythm-Byte/SchemaDiff" ["l"="50.729,3.085"]
-"YPAndrew0907/Animal-Simulation-game" ["l"="50.64,3.095"]
-"cure-lab/MagicDrive" ["l"="-55.145,-11.137"]
-"SKHon/diudiu" ["l"="50.657,3.111"]
-"witcherofresearch/Forgedit" ["l"="50.674,3.088"]
-"CGCL-codes/YiTu" ["l"="50.699,3.063"]
-"IceBearAI/LLM-And-More" ["l"="50.712,3.032"]
-"RexGRM/Alz-IDProteinExplorer" ["l"="50.73,3.033"]
-"yileijin/Bootstrap-3D-GS" ["l"="50.709,3.075"]
+"wangxupeng/2019Legal-AI-Challenge-Legal-Case-Element-Recognition-solution" ["l"="50.747,2.974", "c"=85]
+"Rhythm-Byte/SchemaDiff" ["l"="50.729,3.085", "c"=85]
+"YPAndrew0907/Animal-Simulation-game" ["l"="50.64,3.095", "c"=85]
+"cure-lab/MagicDrive" ["l"="-55.145,-11.137", "c"=365]
+"SKHon/diudiu" ["l"="50.657,3.111", "c"=85]
+"witcherofresearch/Forgedit" ["l"="50.674,3.088", "c"=85]
+"CGCL-codes/YiTu" ["l"="50.699,3.063", "c"=85]
+"IceBearAI/LLM-And-More" ["l"="50.712,3.032", "c"=85]
+"RexGRM/Alz-IDProteinExplorer" ["l"="50.73,3.033", "c"=85]
+"yileijin/Bootstrap-3D-GS" ["l"="50.709,3.075", "c"=85]
 "f1yfisher/DriveDreamer2" ["l"="63.381,11.745"]
+"nv-tlabs/NKSR" ["l"="63.805,1.66", "c"=134]
+"nv-tlabs/SCube" ["l"="63.337,11.674"]
+"zju3dv/street_gaussians" ["l"="63.396,11.663"]
+"hustvl/WeakTr" ["l"="54.017,31.505", "c"=938]
 "PJLab-ADG/GPT4V-AD-Exploration" ["l"="63.52,11.759"]
 "wudongming97/Prompt4Driving" ["l"="63.54,11.832"]
+"Haiyang-W/UniTR" ["l"="64.614,11.257", "c"=61]
 "OscarHuangWind/Learning-from-Intervention" ["l"="63.51,12.023"]
 "OscarHuangWind/Safe-Human-in-the-Loop-RL" ["l"="63.531,12.051"]
+"metadriverse/scenarionet" ["l"="63.207,12.472", "c"=241]
+"wzzheng/GPD" ["l"="63.37,11.779"]
 "luluho1208/Diffusion-SS3D" ["l"="63.761,11.695"]
 "nomiaro/OPA" ["l"="63.788,11.702"]
+"SysCV/idisc" ["l"="64.702,4.34", "c"=263]
 "qintonguav/e2e-parking-carla" ["l"="63.525,11.961"]
 "qintonguav/ParkingE2E" ["l"="63.499,11.926"]
+"Tsinghua-MARS-Lab/StateTransformer" ["l"="63.265,12.456", "c"=241]
 "deepshwang/vegs" ["l"="63.319,11.641"]
-"zju3dv/street_gaussians" ["l"="63.396,11.663"]
-"nnanhuang/S3Gaussian" ["l"="63.364,11.681"]
+"commaai/commavq" ["l"="-14.399,-23.609", "c"=1237]
 "ziyc/drivestudio" ["l"="63.377,11.681"]
-"huang-yh/SelfOcc" ["l"="64.614,11.45"]
+"huang-yh/SelfOcc" ["l"="64.614,11.45", "c"=61]
+"opendilab/DOS" ["l"="59.737,17.693", "c"=169]
 "GigaAI-research/DriveDreamer4D" ["l"="63.364,11.715"]
-"wzzheng/OccWorld" ["l"="64.624,11.433"]
-"LMD0311/Awesome-World-Model" ["l"="-55.466,-13.022"]
-"BraveGroup/LAW" ["l"="63.406,11.832"]
-"nv-tlabs/NKSR" ["l"="63.805,1.66"]
-"nv-tlabs/SCube" ["l"="63.337,11.674"]
+"wzzheng/OccWorld" ["l"="64.624,11.433", "c"=61]
+"LMD0311/Awesome-World-Model" ["l"="-55.466,-13.022", "c"=910]
+"Jiawei-Yang/FreeNeRF" ["l"="63.776,1.766", "c"=134]
+"InternLandMark/LandMark" ["l"="64.066,3.439", "c"=49]
+"hustvl/Matte-Anything" ["l"="42.441,25.162", "c"=1283]
+"hustvl/ViTMatte" ["l"="42.468,25.17", "c"=1283]
 "Shiran-Yuan/SlimmeRF" ["l"="63.676,11.617"]
 "JunchenLiu77/Rip-NeRF" ["l"="63.642,11.614"]
-"E2E-AD/AD-MLP" ["l"="63.48,11.845"]
+"hzwer/CVPR2023-DMVFN" ["l"="-35.881,20.959", "c"=597]
+"YvanYin/DrivingWorld" ["l"="63.336,11.735"]
+"pengsida/learning_nerf" ["l"="63.847,1.968", "c"=134]
+"zju3dv/LiDAR-RT" ["l"="63.3,11.66"]
+"sled-group/chat-with-nerf" ["l"="65.073,11.731", "c"=203]
+"CurryYuan/ZSVG3D" ["l"="63.645,11.663"]
 "NVlabs/BEV-Planner" ["l"="63.422,11.84"]
-"OpenDriveLab/ST-P3" ["l"="62.518,12.217"]
-"OpenDriveLab/ThinkTwice" ["l"="62.54,12.238"]
-"kaixinbear/CAPE" ["l"="64.551,11.304"]
-"Tsinghua-MARS-Lab/ViP3D" ["l"="63.357,12.454"]
+"kaixinbear/CAPE" ["l"="64.551,11.304", "c"=61]
+"Tsinghua-MARS-Lab/ViP3D" ["l"="63.357,12.454", "c"=241]
+"EricLee0224/PAD" ["l"="53.287,14.307", "c"=669]
 "Liuxinyv/SAZS" ["l"="63.707,11.645"]
 "fudan-zvg/Reason2Drive" ["l"="63.541,11.847"]
 "YuanJianhao508/RAG-Driver" ["l"="63.548,11.811"]
 "turingmotors/NuScenes-MQA" ["l"="63.606,11.807"]
 "SysCV/r3d3" ["l"="63.216,11.81"]
 "Barrybarry-Smith/Driv3R" ["l"="63.275,11.785"]
+"GAIR-NLP/auto-j" ["l"="37.443,-0.324", "c"=126]
 "DLUT-LYZ/CODA-LM" ["l"="63.533,11.856"]
-"kieran514/robustdepth" ["l"="64.801,4.442"]
+"ifzhang/ByteTrack-V2" ["l"="64.55,11.257", "c"=61]
+"Emerge-Lab/gpudrive" ["l"="63.225,12.471", "c"=241]
+"kieran514/robustdepth" ["l"="64.801,4.442", "c"=263]
 "seawee1/ForkGAN-pytorch" ["l"="63.859,11.624"]
-"ldkong1205/RoboDepth" ["l"="49.913,3.152"]
 "shuishida/LangProp" ["l"="63.586,11.781"]
 "zilin-huang/PE-RLHF" ["l"="63.552,12.083"]
 "hustvl/HDR-HexPlane" ["l"="63.36,12.06"]
 "kcheng1021/UC-NeRF" ["l"="63.323,11.604"]
+"jkulhanek/tetra-nerf" ["l"="63.739,1.983", "c"=134]
+"AIR-DISCOVER/INT2" ["l"="63.346,12.438", "c"=241]
 "hustvl/CoStudent" ["l"="63.385,12.05"]
 "hustvl/CircuitFormer" ["l"="63.387,12.014"]
 "VDIGPKU/DrivingGaussian" ["l"="63.357,11.667"]
-"kcheng1021/GaussianPro" ["l"="64.018,3.29"]
-"hbb1/2d-gaussian-splatting" ["l"="64.103,3.227"]
+"kcheng1021/GaussianPro" ["l"="64.018,3.29", "c"=49]
+"hbb1/2d-gaussian-splatting" ["l"="64.103,3.227", "c"=49]
 "tobiasfshr/map4d" ["l"="63.347,11.653"]
 "zju3dv/street_crafter" ["l"="63.347,11.686"]
-"autonomousvision/mip-splatting" ["l"="64.032,3.253"]
-"GAP-LAB-CUHK-SZ/gaustudio" ["l"="64.031,3.234"]
-"wzzheng/OccSora" ["l"="63.389,11.785"]
-"Nightmare-n/UniPAD" ["l"="64.356,11.205"]
-"tarashakhurana/4d-occ-forecasting" ["l"="64.543,11.43"]
-"chaytonmin/UniScene" ["l"="64.554,11.443"]
-"OpenDriveLab/OccNet" ["l"="64.595,11.418"]
-"ai4ce/Occ4cast" ["l"="64.551,11.469"]
+"autonomousvision/mip-splatting" ["l"="64.032,3.253", "c"=49]
+"GAP-LAB-CUHK-SZ/gaustudio" ["l"="64.031,3.234", "c"=49]
+"Nightmare-n/UniPAD" ["l"="64.356,11.205", "c"=61]
+"OpenDriveLab/OccNet" ["l"="64.595,11.418", "c"=61]
+"ai4ce/Occ4cast" ["l"="64.551,11.469", "c"=61]
 "HaoranZhuExplorer/World-Models-Autonomous-Driving-Latest-Survey" ["l"="63.428,11.772"]
-"LinShan-Bin/OccNeRF" ["l"="64.626,11.451"]
+"prometheus-eval/prometheus-eval" ["l"="37.249,-0.148", "c"=126]
+"VILA-Lab/ATLAS" ["l"="40.949,0.736", "c"=7]
+"IsshikiHugh/ExpOven" ["l"="30.792,28.803", "c"=94]
+"LinShan-Bin/OccNeRF" ["l"="64.626,11.451", "c"=61]
 "ge25nab/Awesome-VLM-AD-ITS" ["l"="63.494,11.858"]
 "taco-group/OpenEMMA" ["l"="63.448,11.892"]
-"autodriving-heart/CVPR-2024-Papers-Autonomous-Driving" ["l"="63.518,11.853"]
 "jmwang0117/HE-Drive" ["l"="63.446,11.875"]
 "zympsyche/BevWorld" ["l"="63.379,11.806"]
 "prs-eth/Dynamic-LiDAR-Resimulation" ["l"="63.199,11.631"]
@@ -1981,136 +2286,137 @@ digraph G {
 "westlake-autolab/Delphi" ["l"="63.355,11.802"]
 "fudan-zvg/WoVoGen" ["l"="63.35,11.77"]
 "PJLab-ADG/LeapAD" ["l"="63.374,11.835"]
-"opendilab/InterFuser" ["l"="59.681,17.659"]
-"opendilab/DOS" ["l"="59.737,17.693"]
-"opendilab/SmartRefine" ["l"="59.762,17.694"]
-"opendilab/PsyDI" ["l"="59.751,17.698"]
-"opendilab/huggingface_ding" ["l"="59.768,17.709"]
-"opendilab/awesome-end-to-end-autonomous-driving" ["l"="59.713,17.657"]
-"ZhengYinan-AIR/Diffusion-Planner" ["l"="63.248,12.468"]
-"jchengai/planTF" ["l"="63.265,12.47"]
+"opendilab/InterFuser" ["l"="59.681,17.659", "c"=169]
+"opendilab/SmartRefine" ["l"="59.762,17.694", "c"=169]
+"opendilab/PsyDI" ["l"="59.751,17.698", "c"=169]
+"opendilab/huggingface_ding" ["l"="59.768,17.709", "c"=169]
+"opendilab/awesome-end-to-end-autonomous-driving" ["l"="59.713,17.657", "c"=169]
+"autodriving-heart/Awesome-Autonomous-Driving" ["l"="64.487,11.312", "c"=61]
+"ZhengYinan-AIR/Diffusion-Planner" ["l"="63.248,12.468", "c"=241]
+"jchengai/planTF" ["l"="63.265,12.47", "c"=241]
 "GigaAI-research/ReconDreamer" ["l"="63.34,11.714"]
+"autonomousvision/sledge" ["l"="63.196,12.452", "c"=241]
 "autodriving-heart/ECCV-2024-Papers-Autonomous-Driving" ["l"="63.541,11.875"]
-"Pranav-chib/End-to-End-Autonomous-Driving" ["l"="62.532,12.204"]
 "autodriving-heart/NeurIPS2024-Papers-about-Autonomous-Driving" ["l"="63.559,11.881"]
-"alfredgu001324/MapUncertaintyPrediction" ["l"="63.319,12.464"]
+"alfredgu001324/MapUncertaintyPrediction" ["l"="63.319,12.464", "c"=241]
 "jxbbb/TOD3Cap" ["l"="63.637,11.643"]
 "Robot-K/Hint-AD" ["l"="63.571,11.65"]
 "Robot-K/PreAfford" ["l"="63.595,11.616"]
-"CurryYuan/ZSVG3D" ["l"="63.645,11.663"]
 "hyzhou404/HUGSIM" ["l"="63.351,11.702"]
 "carlinds/unisim" ["l"="63.402,11.622"]
 "yanty123/DrivingSphere" ["l"="63.351,11.734"]
 "xiaomi-mlab/Orion" ["l"="63.423,11.874"]
 "GigaAI-research/General-World-Models-Survey" ["l"="63.436,11.743"]
-"chaytonmin/Awesome-Papers-World-Models-Autonomous-Driving" ["l"="-14.46,-23.592"]
+"chaytonmin/Awesome-Papers-World-Models-Autonomous-Driving" ["l"="-14.46,-23.592", "c"=1237]
 "hyzhou404/HUGS" ["l"="63.333,11.661"]
 "chengweialan/DeSiRe-GS" ["l"="63.337,11.691"]
 "zilin-huang/HAIM-DRL" ["l"="63.565,12.101"]
 "liyingyanUCAS/WoTE" ["l"="63.392,11.872"]
-"MCG-NJU/SparseOcc" ["l"="64.629,11.421"]
-"HorizonRobotics/GUMP" ["l"="63.225,12.454"]
+"MCG-NJU/SparseOcc" ["l"="64.629,11.421", "c"=61]
+"HorizonRobotics/GUMP" ["l"="63.225,12.454", "c"=241]
 "PeidongLi/SSR" ["l"="63.391,11.856"]
 "esdolo/FreeVS" ["l"="63.319,11.696"]
 "robustsam/RobustSAM" ["l"="63.307,12.037"]
 "luckybird1994/ASAM" ["l"="63.273,12.064"]
 "hustvl/EVF-SAM" ["l"="63.382,11.986"]
 "ayesha-ishaq/DriveLMM-o1" ["l"="63.545,11.906"]
+"yxzhang15/PCR" ["l"="65.622,11.028", "c"=1265]
+"tyhuang98/TEAR-release" ["l"="63.618,11.668"]
 "JeffWang987/WorldDreamer" ["l"="63.353,11.785"]
 "zhanghm1995/Forge_VFM4AD" ["l"="63.457,11.804"]
 "AnythingInAnyScene/anything_in_anyscene" ["l"="63.422,11.67"]
-"Forrest-110/FastMAC" ["l"="63.588,11.636"]
-"tyhuang98/TEAR-release" ["l"="63.618,11.668"]
-"Laka-3DV/ML-SemReg" ["l"="65.651,11.018"]
-"zhangxy0517/3D-Registration-with-Maximal-Cliques" ["l"="65.585,11.038"]
-"yaorz97/PARENet" ["l"="65.636,11.018"]
+"Laka-3DV/ML-SemReg" ["l"="65.651,11.018", "c"=1265]
+"yaorz97/PARENet" ["l"="65.636,11.018", "c"=1265]
 "SainingZhang/UC-GS" ["l"="63.555,11.624"]
 "wenyi-li/FairDiff" ["l"="63.579,11.614"]
-"liuQuan98/EYOC" ["l"="65.632,11.042"]
+"liuQuan98/EYOC" ["l"="65.632,11.042", "c"=1265]
 "mttgdd/RobotCarDataset-Scraper" ["l"="63.903,11.568"]
-"mikacuy/pointnetvlad" ["l"="58.03,10.217"]
+"mikacuy/pointnetvlad" ["l"="58.03,10.217", "c"=142]
 "hustvl/EVA-X" ["l"="63.371,12.044"]
 "ucd-dare/CarDreamer" ["l"="63.493,11.89"]
-"mh0797/interPlan" ["l"="63.239,12.445"]
+"mh0797/interPlan" ["l"="63.239,12.445", "c"=241]
 "carlinds/splatad" ["l"="63.316,11.674"]
 "zsy1987/SA-GS" ["l"="63.581,11.574"]
 "saliteta/SA-GS-CODE" ["l"="63.586,11.545"]
 "RunyiYang/SUNDAE" ["l"="63.606,11.586"]
+"nyu-systems/Grendel-GS" ["l"="63.964,3.316", "c"=49]
+"Jiawei-Yang/Denoising-ViT" ["l"="64.058,2.847", "c"=49]
 "VISION-SJTU/Lightning-NeRF" ["l"="63.445,11.566"]
+"zoomin-lee/SemCity" ["l"="64.507,11.623", "c"=61]
 "hustvl/WeakSAM" ["l"="63.371,12.014"]
 "hustvl/GroundingSuite" ["l"="63.395,11.994"]
 "Kunhao-Liu/ViewExtrapolator" ["l"="63.272,11.603"]
+"HorizonRobotics/Sparse4D" ["l"="64.639,11.33", "c"=61]
 "yisuanwang/Idea23D" ["l"="63.606,11.641"]
 "AIR-DISCOVER/SCP-Diff-Toolkit" ["l"="63.582,11.597"]
 "AdaCompNUS/WhatMatters" ["l"="63.555,11.728"]
-"baaivision/JudgeLM" ["l"="63.402,11.98"]
-"GAIR-NLP/auto-j" ["l"="37.443,-0.324"]
-"hustvl/ControlAR" ["l"="46.427,30.703"]
-"hustvl/WeakTr" ["l"="54.017,31.505"]
-"hustvl/ViTGaze" ["l"="63.428,12.014"]
-"idiap/multimodal_gaze_target_prediction" ["l"="32.46,28.586"]
+"hustvl/ControlAR" ["l"="46.427,30.703", "c"=367]
+"idiap/multimodal_gaze_target_prediction" ["l"="32.46,28.586", "c"=1122]
+"haomo-ai/Cam4DOcc" ["l"="64.618,11.469", "c"=61]
 "Shiran-Yuan/ArchonView" ["l"="63.523,11.646"]
 "PurdueDigitalTwin/LaMPilot" ["l"="63.697,11.94"]
 "LiljaAdam/gasp" ["l"="63.432,11.595"]
 "tyhuang98/HERE-release" ["l"="63.67,11.717"]
 "ariarobotics/clipperp" ["l"="63.62,11.688"]
+"xiliu8006/3DGS-Enhancer" ["l"="64.149,3.294", "c"=49]
 "hustvl/AlphaDrive" ["l"="63.419,11.913"]
 "DriveVLA/OpenDriveVLA" ["l"="63.409,11.892"]
 "PJLab-ADG/LeapVAD" ["l"="63.328,11.864"]
-"HorizonRobotics/Sparse4D" ["l"="64.639,11.33"]
-"linxuewu/Sparse4D" ["l"="64.622,11.297"]
-"exiawsh/StreamPETR" ["l"="64.608,11.298"]
-"ZikangZhou/QCNet" ["l"="63.309,12.526"]
-"OpenDriveLab/DriveAdapter" ["l"="62.549,12.227"]
-"Thinklab-SJTU/Bench2Drive" ["l"="50.944,2.85"]
+"ZikangZhou/QCNet" ["l"="63.309,12.526", "c"=241]
+"Thinklab-SJTU/Bench2Drive" ["l"="50.944,2.85", "c"=85]
 "wayveai/wayve_scenes" ["l"="63.275,11.667"]
 "qianduoduolr/DecoMotion" ["l"="63.387,12.139"]
-"cvlab-kaist/locotrack" ["l"="32.295,30.701"]
+"cvlab-kaist/locotrack" ["l"="32.295,30.701", "c"=297]
 "hustvl/SA4D" ["l"="63.394,12.097"]
-"adept-thu/MomAD" ["l"="-35.48,20.297"]
+"adept-thu/MomAD" ["l"="-35.48,20.297", "c"=1031]
 "YvanYin/GoalFlow" ["l"="63.411,11.867"]
-"OpenDriveLab/BeTop" ["l"="63.252,12.445"]
+"OpenDriveLab/BeTop" ["l"="63.252,12.445", "c"=241]
 "zlichen/PPAD" ["l"="63.466,11.936"]
-"Rex-sys-hk/PlanScope" ["l"="63.232,12.425"]
-"nv-tlabs/XCube" ["l"="64.37,3.42"]
-"cvg/NoPoSplat" ["l"="64.13,3.198"]
-"city-super/Octree-GS" ["l"="63.994,3.303"]
-"ChenYutongTHU/SplatFormer" ["l"="64.113,3.27"]
-"donydchen/mvsplat360" ["l"="64.157,3.238"]
-"nv-tlabs/Difix3D" ["l"="64.269,3.154"]
-"nyu-systems/Grendel-GS" ["l"="63.964,3.316"]
-"cvg/depthsplat" ["l"="64.103,3.201"]
-"huang-yh/GaussianFormer" ["l"="64.649,11.453"]
-"Tsinghua-MARS-Lab/StateTransformer" ["l"="63.265,12.456"]
-"MCZhi/GameFormer-Planner" ["l"="63.278,12.447"]
-"MCZhi/GameFormer" ["l"="63.299,12.492"]
+"Rex-sys-hk/PlanScope" ["l"="63.232,12.425", "c"=241]
+"nv-tlabs/XCube" ["l"="64.37,3.42", "c"=49]
+"cvg/NoPoSplat" ["l"="64.13,3.198", "c"=49]
+"city-super/Octree-GS" ["l"="63.994,3.303", "c"=49]
+"ChenYutongTHU/SplatFormer" ["l"="64.113,3.27", "c"=49]
+"donydchen/mvsplat360" ["l"="64.157,3.238", "c"=49]
+"nv-tlabs/Difix3D" ["l"="64.269,3.154", "c"=49]
+"cvg/depthsplat" ["l"="64.103,3.201", "c"=49]
+"graphdeco-inria/hierarchical-3d-gaussians" ["l"="63.986,3.27", "c"=49]
+"huang-yh/GaussianFormer" ["l"="64.649,11.453", "c"=61]
+"wzzheng/LDM" ["l"="63.327,11.8"]
+"MCZhi/GameFormer" ["l"="63.299,12.492", "c"=241]
+"GANWANSHUI/GaussianOcc" ["l"="64.648,11.491", "c"=61]
 "ShiPC-AI/TCF" ["l"="63.711,11.752"]
 "NWPU-YJQ-3DV/2022_Mutual_Voting" ["l"="63.734,11.767"]
+"SY-007-Research/3dgs_render_python" ["l"="64.031,3.323", "c"=49]
 "TencentARC/NVComposer" ["l"="63.229,11.568"]
-"HKUST-Aerial-Robotics/MonoLaneMapping" ["l"="64.384,11.508"]
-"Yzichen/FlashOCC" ["l"="64.618,11.394"]
+"HKUST-Aerial-Robotics/MonoLaneMapping" ["l"="64.384,11.508", "c"=61]
+"Yzichen/FlashOCC" ["l"="64.618,11.394", "c"=61]
+"dk-liang/UniSeg3D" ["l"="65.151,11.765", "c"=203]
 "fudan-zvg/GS-LiDAR" ["l"="63.279,11.643"]
 "fangzhou2000/DrivingForward" ["l"="63.309,11.686"]
+"maitrix-org/Pandora" ["l"="33.508,31.437", "c"=109]
 "heiheishuang/MuDG" ["l"="63.331,11.704"]
-"zju3dv/LiDAR-RT" ["l"="63.3,11.66"]
 "fudan-zvg/DriveX" ["l"="63.289,11.711"]
 "WU-CVGL/Omni-Scene" ["l"="63.319,11.711"]
 "hustvl/MaskAdapter" ["l"="63.43,12"]
 "hustvl/OmniMamba" ["l"="63.399,12.012"]
+"filaPro/unidet3d" ["l"="65.173,11.665", "c"=203]
 "hustvl/MaTVLM" ["l"="63.408,12.029"]
-"jiaosiyu1999/MAFT-Plus" ["l"="48.628,30.367"]
+"jiaosiyu1999/MAFT-Plus" ["l"="48.628,30.367", "c"=191]
 "Tencent/TAD_Sim" ["l"="63.425,11.691"]
-"guardstrikelab/carla_apollo_bridge" ["l"="62.628,12.278"]
-"esmini/esmini" ["l"="62.606,12.187"]
-"daohu527/imap" ["l"="62.674,12.195"]
-"pyoscx/scenariogeneration" ["l"="62.627,12.176"]
-"pageldev/libOpenDRIVE" ["l"="62.665,12.169"]
-"johschmitz/blender-driving-scenario-creator" ["l"="62.631,12.159"]
+"guardstrikelab/carla_apollo_bridge" ["l"="62.628,12.278", "c"=461]
+"esmini/esmini" ["l"="62.606,12.187", "c"=461]
+"daohu527/imap" ["l"="62.674,12.195", "c"=461]
+"pyoscx/scenariogeneration" ["l"="62.627,12.176", "c"=461]
+"pageldev/libOpenDRIVE" ["l"="62.665,12.169", "c"=461]
+"johschmitz/blender-driving-scenario-creator" ["l"="62.631,12.159", "c"=461]
+"liudaizong/Awesome-3D-Visual-Grounding" ["l"="65.02,11.768", "c"=203]
 "Pixtella/Anagram-MTL" ["l"="63.55,11.609"]
 "grenoble-zhang/Ctrl-U" ["l"="63.565,11.588"]
+"hustvl/Dynamic-2DGS" ["l"="64.096,3.412", "c"=49]
 "EnVision-Research/DriveRecon" ["l"="63.286,11.739"]
-"wzzheng/LDM" ["l"="63.327,11.8"]
 "wzzheng/Stag" ["l"="63.286,11.763"]
+"jkulhanek/wild-gaussians" ["l"="63.96,3.279", "c"=49]
 "yichen928/X-Drive" ["l"="63.273,11.702"]
 "xiaobiaodu/DreamCar" ["l"="63.262,11.684"]
 "GimpelZhang/GaussianRPG" ["l"="63.313,11.731"]
@@ -2121,41 +2427,41 @@ digraph G {
 "xiaobiaodu/3DRealCar_Toolkit" ["l"="63.292,11.696"]
 "lty2226262/Car_studio" ["l"="63.233,11.692"]
 "royalmelon0505/dist4d" ["l"="63.35,11.721"]
-"jkulhanek/wild-gaussians" ["l"="63.96,3.279"]
-"lilygoli/SpotLessSplats" ["l"="63.821,3.262"]
-"DavidXu-JJ/StreetUnveiler" ["l"="63.601,2.153"]
+"lilygoli/SpotLessSplats" ["l"="63.821,3.262", "c"=49]
+"DavidXu-JJ/StreetUnveiler" ["l"="63.601,2.153", "c"=134]
 "LiAutoAD/DIVE" ["l"="63.319,11.829"]
-"LabShuHangGU/PerLDiff" ["l"="-35.67,22.356"]
+"LabShuHangGU/PerLDiff" ["l"="-35.67,22.356", "c"=463]
 "vita-epfl/GEM" ["l"="63.242,11.731"]
 "ali-videoai/Tora" ["l"="63.448,12.025"]
 "alibaba/EffiVED" ["l"="63.472,12.044"]
 "alibaba/UVOSAM" ["l"="63.46,12.054"]
-"synsin0/EFFOcc" ["l"="64.615,11.541"]
-"GANWANSHUI/GaussianOcc" ["l"="64.648,11.491"]
-"gusongen/DOME" ["l"="64.696,11.573"]
+"synsin0/EFFOcc" ["l"="64.615,11.541", "c"=61]
+"gusongen/DOME" ["l"="64.696,11.573", "c"=61]
 "Sephirex-X/LatentDriver" ["l"="63.49,11.702"]
 "AlniyatRui/CAFE-AD" ["l"="63.516,11.685"]
+"hustvl/LightningDiT" ["l"="46.365,30.634", "c"=367]
 "zihaosheng/VLM-RL" ["l"="63.465,11.965"]
-"dk-liang/UniFuture" ["l"="65.171,11.843"]
-"LMD0311/HERMES" ["l"="-55.101,-10.766"]
-"dk-liang/UniSeg3D" ["l"="65.151,11.765"]
-"Thinklab-SJTU/DriveTransformer" ["l"="63.384,11.893"]
-"Rorisis/Co-Occ" ["l"="64.581,11.529"]
-"nvidia-cosmos/cosmos-transfer1" ["l"="63.334,11.754"]
+"nvidia-cosmos/cosmos-reason1" ["l"="59.466,16.489", "c"=234]
 "nvidia-cosmos/cosmos-predict1" ["l"="63.256,11.759"]
-"nvidia-cosmos/cosmos-reason1" ["l"="59.466,16.489"]
-"nv-tlabs/GEN3C" ["l"="64.236,3.181"]
+"nvidia-cosmos/cosmos-transfer1" ["l"="63.334,11.754"]
+"dk-liang/UniFuture" ["l"="65.171,11.843", "c"=203]
+"LMD0311/HERMES" ["l"="-55.101,-10.766", "c"=845]
+"Thinklab-SJTU/DriveTransformer" ["l"="63.384,11.893"]
+"fkryan/gazelle" ["l"="32.499,28.471", "c"=1122]
+"Rorisis/Co-Occ" ["l"="64.581,11.529", "c"=61]
+"valeoai/V-Max" ["l"="63.196,12.406", "c"=241]
+"nv-tlabs/GEN3C" ["l"="64.236,3.181", "c"=49]
 "nv-tlabs/cosmos-av-sample-toolkits" ["l"="63.3,11.779"]
-"bhyang/diffusion-es" ["l"="63.193,12.427"]
-"YvanYin/DrivingWorld" ["l"="63.336,11.735"]
-"wzzheng/GPD" ["l"="63.37,11.779"]
-"wzzheng/GaussianAD" ["l"="64.694,11.543"]
+"bhyang/diffusion-es" ["l"="63.193,12.427", "c"=241]
+"chenguolin/DiffSplat" ["l"="64.307,3.302", "c"=49]
+"wzzheng/GaussianAD" ["l"="64.694,11.543", "c"=61]
 "wzzheng/Doe" ["l"="63.276,11.831"]
 "SenseTime-FVG/OpenDWM" ["l"="63.367,11.752"]
 "drive-bench/toolkit" ["l"="63.364,11.925"]
 "NVlabs/TokenBench" ["l"="63.201,11.765"]
-"KwaiVGI/GameFactory" ["l"="46.361,30.664"]
+"KwaiVGI/GameFactory" ["l"="46.361,30.664", "c"=367]
 "fudan-zvg/spar" ["l"="63.239,11.621"]
 "nullmax-vision/HiP-AD" ["l"="63.347,11.91"]
+"AbrahamYabo/LiftImage3D" ["l"="64.357,3.077", "c"=49]
 "StudyingFuFu/L2COcc" ["l"="63.304,11.879"]
 }

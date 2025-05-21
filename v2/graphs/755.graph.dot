@@ -24,6 +24,8 @@ digraph G {
 "alexMyG/AndroPyTool" -> "Areizen/Android-Malware-Sandbox" ["e"=1]
 "alexMyG/AndroPyTool" -> "quark-engine/quark-engine" ["e"=1]
 "alexMyG/AndroPyTool" -> "arguslab/Argus-SAF" ["e"=1]
+"trendmicro/tlsh" -> "malicialab/avclass" ["e"=1]
+"rieck/malheur" -> "ocatak-zz/malware_api_class" ["e"=1]
 "AFAgarap/malware-classification" -> "pratikpv/malware_classification"
 "AFAgarap/malware-classification" -> "dchad/malware-detection"
 "AFAgarap/malware-classification" -> "ManSoSec/Microsoft-Malware-Challenge"
@@ -63,6 +65,8 @@ digraph G {
 "tuff96/Malware-detection-using-Machine-Learning" -> "surajr/Machine-Learning-approach-for-Malware-Detection"
 "tuff96/Malware-detection-using-Machine-Learning" -> "obarrera/Machine-Learning-Malware-Detection"
 "tuff96/Malware-detection-using-Machine-Learning" -> "CircleZ3791117/PEMalDetection"
+"VirusTotal/vt-py" -> "malicialab/avclass" ["e"=1]
+"VirusTotal/vt-py" -> "elastic/ember" ["e"=1]
 "shramos/polymorph" -> "shramos/winregmitm"
 "shramos/polymorph" -> "CyberForce/Pesidious"
 "shramos/polymorph" -> "shramos/practical-ml-for-cybersecurity"
@@ -199,8 +203,10 @@ digraph G {
 "vinayakumarr/CDMC2016" -> "vinayakumarr/DEFT-2017"
 "hafeezali/Malware-Classification" -> "spallas/mandroid"
 "CircleZ3791117/CodingPractice" -> "CircleZ3791117/PEMalDetection"
+"quark-engine/quark-engine" -> "alexMyG/AndroPyTool" ["e"=1]
 "E0HYL/AndrozooDownloader" -> "E0HYL/MsDroid"
 "E0HYL/AndrozooDownloader" -> "malscan-android/MalScan"
+"pjlantz/droidbox" -> "alexMyG/AndroPyTool" ["e"=1]
 "shramos/practical-ml-for-cybersecurity" -> "lkuffo/data-viz"
 "pratikpv/malware_detect2" -> "pratikpv/malware_classification"
 "deqangss/aics2019_challenge_adv_mal_defense" -> "deqangss/adv-dnn-ens-malware"
@@ -227,6 +233,7 @@ digraph G {
 "CyberForce/Pesidious" -> "yuxiaorun/MalConv-Adversarial"
 "delvelabs/batea" -> "delvelabs/tachyon"
 "delvelabs/batea" -> "CyberForce/Pesidious"
+"StrangerealIntel/CyberThreatIntel" -> "Cherishao/APT-Sample" ["e"=1]
 "pralab/secml_malware" -> "bfilar/malware_rl"
 "pralab/secml_malware" -> "ryderling/adversarial-attacks-and-defenses-for-windows-pe-malware-detection"
 "pralab/secml_malware" -> "pralab/secml"
@@ -272,6 +279,7 @@ digraph G {
 "sophos/yaraml_rules" -> "Neo23x0/YARA-Performance-Guidelines" ["e"=1]
 "sophos/yaraml_rules" -> "sophos/SOREL-20M"
 "FutureComputing4AI/AutoYara" -> "FutureComputing4AI/MalConv2"
+"RedDrip7/APT_Digital_Weapon" -> "cyber-research/APTMalware" ["e"=1]
 "BiancaGuo/malware_classification_system" -> "VoldyRCX/MalwareAnalyze"
 "BiancaGuo/malware_classification_system" -> "16372212/Malware_Detect_System"
 "BiancaGuo/malware_classification_system" -> "dasilaoluoao/Malware-Detect"
@@ -302,6 +310,7 @@ digraph G {
 "deqangss/adv-dnn-ens-malware" -> "YangXiuxuan/Robust-Android-Malware-Detection-Against-Adversarial-Example-Attacks"
 "deqangss/adv-dnn-ens-malware" -> "vasilisprf/Android-Malware-Detection-Adversarial-Examples"
 "deqangss/adv-dnn-ens-malware" -> "deqangss/malware-uncertainty"
+"microsoft/CyberBattleSim" -> "elastic/ember" ["e"=1]
 "sophos/SOREL-20M" -> "elastic/ember"
 "sophos/SOREL-20M" -> "malicialab/avclass"
 "sophos/SOREL-20M" -> "pralab/secml_malware"
@@ -326,6 +335,15 @@ digraph G {
 "jaketae/deep-malware-detection" -> "FutureComputing4AI/MalConv2"
 "jaketae/deep-malware-detection" -> "ryderling/MalGraph"
 "jaketae/deep-malware-detection" -> "islem-esi/DeepMalwareDetector"
+"logicalhacking/DVHMA" -> "dkhuuthe/MADLIRA" ["e"=1]
+"erocarrera/pefile" -> "elastic/ember" ["e"=1]
+"erocarrera/pefile" -> "sophos/SOREL-20M" ["e"=1]
+"erocarrera/pefile" -> "malicialab/avclass" ["e"=1]
+"mitre/advmlthreatmatrix" -> "pralab/secml_malware" ["e"=1]
+"mitre/advmlthreatmatrix" -> "elastic/ember" ["e"=1]
+"Azure/counterfit" -> "pralab/secml_malware" ["e"=1]
+"Azure/counterfit" -> "pralab/secml" ["e"=1]
+"mandiant/sunburst_countermeasures" -> "sophos/SOREL-20M" ["e"=1]
 "daxiongshu/kaggle_Microsoft_Malware" -> "bindog/ToyMalwareClassification"
 "daxiongshu/kaggle_Microsoft_Malware" -> "2015-10-10/MalwareClassification"
 "splunk/attack-detections-collector" -> "splunk/salo"
@@ -384,9 +402,11 @@ digraph G {
 "bindog/ToyMalwareClassification" -> "zwq0320/malicious_dynamic_behavior_detection_by_cnn"
 "bindog/ToyMalwareClassification" -> "xiaozhouwang/kaggle_Microsoft_Malware"
 "bindog/ToyMalwareClassification" -> "xvshiting/MFC-CNN"
+"gnipping/Awesome-ML-SP-Papers" -> "gnipping/Awesome-Malware-Related-Papers" ["e"=1]
 "dtrizna/quo.vadis" -> "dtrizna/nebula"
 "unica-mlsec/mlsec" -> "pralab/secml"
 "unica-mlsec/mlsec" -> "fabriciojoc/ml-cybersecuritiy-course"
+"maaaaz/androwarn" -> "alexMyG/AndroPyTool" ["e"=1]
 "ryderling/adversarial-attacks-and-defenses-for-windows-pe-malware-detection" -> "weisong-ucr/MAB-malware"
 "ryderling/adversarial-attacks-and-defenses-for-windows-pe-malware-detection" -> "pralab/secml_malware"
 "ryderling/adversarial-attacks-and-defenses-for-windows-pe-malware-detection" -> "pwwl/enhanced-binary-diversification"
@@ -396,6 +416,9 @@ digraph G {
 "boozallen/MOTIF" -> "whyisyoung/BODMAS"
 "boozallen/MOTIF" -> "ucsb-seclab/packware"
 "boozallen/MOTIF" -> "sophos/SOREL-20M"
+"impillar/AndroidReferences" -> "niallmcl/Deep-Android-Malware-Detection" ["e"=1]
+"impillar/AndroidReferences" -> "annamalai-nr/drebin" ["e"=1]
+"impillar/AndroidReferences" -> "ChenJunHero/DroidAPIMiner" ["e"=1]
 "E0HYL/MsDroid" -> "E0HYL/AndrozooDownloader"
 "E0HYL/MsDroid" -> "vinayakakv/android-malware-detection"
 "E0HYL/MsDroid" -> "seclab-fudan/APIGraph"
@@ -405,6 +428,10 @@ digraph G {
 "splunk/salo" -> "splunk/attack-detections-collector"
 "splunk/salo" -> "carbonblack/excel4-tests"
 "khas-ccip/api_sequences_malware_datasets" -> "friendllcc/Malware-Detection-API-Sequence-Intrinsic-Features"
+"ashishb/android-malware" -> "niallmcl/Deep-Android-Malware-Detection" ["e"=1]
+"ashishb/android-malware" -> "alexMyG/AndroPyTool" ["e"=1]
+"ashishb/android-malware" -> "maoqyhz/DroidCC" ["e"=1]
+"ashishb/android-malware" -> "annamalai-nr/drebin" ["e"=1]
 "mwleeds/android-malware-analysis" -> "mburakergenc/Malware-Detection-using-Machine-Learning"
 "mwleeds/android-malware-analysis" -> "gizemiskender/MalwareDetector"
 "urwithajit9/ClaMP" -> "surajr/Machine-Learning-approach-for-Malware-Detection"
@@ -426,12 +453,16 @@ digraph G {
 "traceflight/Android-Malware-Datasets" -> "aditya5558/Android-Malware-Detection"
 "traceflight/Android-Malware-Datasets" -> "aleguma/kronodroid"
 "ririhedou/dr_droid" -> "ririhedou/FrameHanger"
+"XXnormal/RAPIER" -> "Secbrain/Trident" ["e"=1]
+"qian-feng/Gencoding" -> "ryderling/MalGraph" ["e"=1]
 "wagner-group/active-learning" -> "seclab-fudan/APIGraph"
 "wagner-group/active-learning" -> "s2labres/transcendent-release"
 "wagner-group/active-learning" -> "E0HYL/MsDroid"
 "wagner-group/active-learning" -> "E0HYL/AndrozooDownloader"
 "wagner-group/active-learning" -> "malscan-android/MalScan"
 "wagner-group/active-learning" -> "gnipping/Awesome-Malware-Related-Papers"
+"cchio/deep-pwning" -> "endgameinc/gym-malware" ["e"=1]
+"droidefense/engine" -> "mwleeds/android-malware-analysis" ["e"=1]
 "malicialab/avclass" -> "elastic/ember"
 "malicialab/avclass" -> "fmind/euphony"
 "malicialab/avclass" -> "sophos/SOREL-20M"
@@ -447,6 +478,7 @@ digraph G {
 "malicialab/avclass" -> "erocarrera/pefile" ["e"=1]
 "malicialab/avclass" -> "whyisyoung/BODMAS"
 "malicialab/avclass" -> "McGill-DMaS/Kam1n0-Community" ["e"=1]
+"xtiankisutsa/MARA_Framework" -> "alexMyG/AndroPyTool" ["e"=1]
 "dchad/malware-detection" -> "marcoramilli/MalwareTrainingSets"
 "dchad/malware-detection" -> "mburakergenc/Malware-Detection-using-Machine-Learning"
 "dchad/malware-detection" -> "surajr/Machine-Learning-approach-for-Malware-Detection"
@@ -464,6 +496,7 @@ digraph G {
 "dchad/malware-detection" -> "rieck/malheur" ["e"=1]
 "llSourcell/antivirus_demo" -> "Te-k/malware-classification"
 "2015-10-10/MalwareClassification" -> "VoldyRCX/MalwareAnalyze"
+"wtsxDev/Machine-Learning-for-Cyber-Security" -> "elastic/ember" ["e"=1]
 "s2labres/tesseract-ml-release" -> "s2labres/transcendent-release"
 "s2labres/transcendent-release" -> "s2labres/tesseract-ml-release"
 "annamalai-nr/drebin" -> "fmind/euphony"
@@ -502,6 +535,7 @@ digraph G {
 "gizemiskender/MalwareDetector" -> "namk12/Malware-Detection"
 "gizemiskender/MalwareDetector" -> "mburakergenc/Malware-Detection-using-Machine-Learning"
 "sigma0-advx/sigma-zero" -> "attackbench/AttackBench"
+"13o-bbr-bbq/machine_learning_security" -> "endgameinc/gym-malware" ["e"=1]
 "fmind/euphony" -> "DroidEvolver/DroidEvolver"
 "fmind/euphony" -> "annamalai-nr/drebin"
 "fmind/euphony" -> "malscan-android/MalScan"
@@ -539,6 +573,8 @@ digraph G {
 "endgameinc/gym-malware" -> "BishopFox/deephack"
 "sslab-gatech/avpass" -> "dkhuuthe/MADLIRA"
 "sslab-gatech/avpass" -> "fmind/euphony"
+"ifding/iot-malware" -> "malicialab/avclass" ["e"=1]
+"duoergun0729/2book" -> "enjoysport2022/Alibaba-3rd-Security-Algorithm-Challenge" ["e"=1]
 "ArtemKushnerov/az" ["l"="-42.036,-31.79"]
 "E0HYL/AndrozooDownloader" ["l"="-42.068,-31.788"]
 "annamalai-nr/drebin" ["l"="-42.047,-31.782"]
@@ -548,20 +584,24 @@ digraph G {
 "seclab-fudan/APIGraph" ["l"="-42.054,-31.792"]
 "Trustworthy-Software/Reproduction-of-Android-Malware-detection-approaches" ["l"="-42.044,-31.801"]
 "wagner-group/active-learning" ["l"="-42.057,-31.809"]
-"IIE-LibD/libd" ["l"="35.927,-0.796"]
+"IIE-LibD/libd" ["l"="35.927,-0.796", "c"=1188]
 "E0HYL/MsDroid" ["l"="-42.06,-31.778"]
 "alexMyG/AndroPyTool" ["l"="-42.081,-31.772"]
 "aditya5558/Android-Malware-Detection" ["l"="-42.059,-31.731"]
 "yueyueL/DL-based-Android-Malware-Defenses-review" ["l"="-42.034,-31.759"]
 "devoteam-cybertrust/droidstatx" ["l"="-42.149,-31.789"]
-"maaaaz/androwarn" ["l"="56.561,-11.072"]
-"secure-software-engineering/SuSi" ["l"="36.04,-0.847"]
-"CalebFenton/dex-oracle" ["l"="56.68,-10.983"]
+"maaaaz/androwarn" ["l"="56.561,-11.072", "c"=24]
+"secure-software-engineering/SuSi" ["l"="36.04,-0.847", "c"=1188]
+"CalebFenton/dex-oracle" ["l"="56.68,-10.983", "c"=24]
 "vinayakakv/android-malware-detection" ["l"="-42.06,-31.76"]
-"xtiankisutsa/MARA_Framework" ["l"="56.537,-11.053"]
-"Areizen/Android-Malware-Sandbox" ["l"="56.329,-11.08"]
-"quark-engine/quark-engine" ["l"="56.404,-10.93"]
-"arguslab/Argus-SAF" ["l"="36.047,-0.819"]
+"xtiankisutsa/MARA_Framework" ["l"="56.537,-11.053", "c"=24]
+"Areizen/Android-Malware-Sandbox" ["l"="56.329,-11.08", "c"=24]
+"quark-engine/quark-engine" ["l"="56.404,-10.93", "c"=24]
+"arguslab/Argus-SAF" ["l"="36.047,-0.819", "c"=1188]
+"trendmicro/tlsh" ["l"="-42.782,-31.895", "c"=143]
+"malicialab/avclass" ["l"="-41.972,-31.783"]
+"rieck/malheur" ["l"="-42.853,-31.862", "c"=143]
+"ocatak-zz/malware_api_class" ["l"="-42.027,-31.503"]
 "AFAgarap/malware-classification" ["l"="-42.005,-31.682"]
 "pratikpv/malware_classification" ["l"="-41.952,-31.702"]
 "dchad/malware-detection" ["l"="-41.981,-31.712"]
@@ -576,11 +616,10 @@ digraph G {
 "urwithajit9/ClaMP" ["l"="-42.015,-31.669"]
 "elastic/ember" ["l"="-41.941,-31.771"]
 "sophos/SOREL-20M" ["l"="-41.913,-31.782"]
-"malicialab/avclass" ["l"="-41.972,-31.783"]
 "endgameinc/gym-malware" ["l"="-41.93,-31.748"]
 "pralab/secml_malware" ["l"="-41.908,-31.798"]
 "ocatak/malware_api_class" ["l"="-41.915,-31.735"]
-"erocarrera/pefile" ["l"="-43.016,-36.775"]
+"erocarrera/pefile" ["l"="-43.016,-36.775", "c"=306]
 "bfilar/malware_rl" ["l"="-41.888,-31.783"]
 "ucsb-seclab/packware" ["l"="-41.969,-31.799"]
 "FutureComputing4AI/MalConv2" ["l"="-41.886,-31.765"]
@@ -588,7 +627,7 @@ digraph G {
 "Alexander-H-Liu/MalConv-Pytorch" ["l"="-41.961,-31.813"]
 "j40903272/MalConv-keras" ["l"="-41.939,-31.822"]
 "whyisyoung/BODMAS" ["l"="-41.934,-31.794"]
-"guelfoweb/peframe" ["l"="-42.893,-31.889"]
+"guelfoweb/peframe" ["l"="-42.893,-31.889", "c"=143]
 "yuxiaorun/MalConv-Adversarial" ["l"="-41.894,-31.711"]
 "riak16/Malware-Detection-using-Deep-Learning" ["l"="-41.938,-31.693"]
 "niallmcl/Deep-Android-Malware-Detection" ["l"="-42.036,-31.735"]
@@ -601,6 +640,7 @@ digraph G {
 "surajr/Machine-Learning-approach-for-Malware-Detection" ["l"="-41.996,-31.664"]
 "obarrera/Machine-Learning-Malware-Detection" ["l"="-41.964,-31.657"]
 "CircleZ3791117/PEMalDetection" ["l"="-41.992,-31.626"]
+"VirusTotal/vt-py" ["l"="-42.69,-31.946", "c"=143]
 "shramos/polymorph" ["l"="-41.734,-31.688"]
 "shramos/winregmitm" ["l"="-41.704,-31.687"]
 "CyberForce/Pesidious" ["l"="-41.839,-31.702"]
@@ -610,9 +650,9 @@ digraph G {
 "cyber-research/APTMalware" ["l"="-41.843,-31.778"]
 "cyber-research/APTAttribution" ["l"="-41.806,-31.782"]
 "Cherishao/APT-Sample" ["l"="-41.789,-31.794"]
-"RedDrip7/APT_Digital_Weapon" ["l"="-42.897,-32.008"]
-"threaTrace-detector/threaTrace" ["l"="-42.658,-32.611"]
-"tfjmp/provenance-papers" ["l"="-42.658,-32.642"]
+"RedDrip7/APT_Digital_Weapon" ["l"="-42.897,-32.008", "c"=143]
+"threaTrace-detector/threaTrace" ["l"="-42.658,-32.611", "c"=79]
+"tfjmp/provenance-papers" ["l"="-42.658,-32.642", "c"=79]
 "friendllcc/Malware-Detection-API-Sequence-Intrinsic-Features" ["l"="-41.879,-31.751"]
 "vikram-mm/Android-Malware-Detection" ["l"="-42.064,-31.719"]
 "vinayakumarr/Android-Malware-Detection" ["l"="-42.093,-31.73"]
@@ -639,7 +679,7 @@ digraph G {
 "a574824551/Malware_detection_system_based_CNN" ["l"="-41.819,-31.707"]
 "PowerLZY/MalConv-Pytorch" ["l"="-41.891,-31.737"]
 "namk12/Malware-Detection" ["l"="-42.056,-31.713"]
-"Colorado-Mesa-University-Cybersecurity/DeepLearning-AndroidMalware" ["l"="-45.994,-29.32"]
+"Colorado-Mesa-University-Cybersecurity/DeepLearning-AndroidMalware" ["l"="-45.994,-29.32", "c"=3]
 "okokabv/MAPAS" ["l"="-42.078,-31.704"]
 "sammy4321/Android-Malware-Detection-Using-Deep-Learning" ["l"="-42.108,-31.739"]
 "spallas/mandroid" ["l"="-42.081,-31.688"]
@@ -655,7 +695,6 @@ digraph G {
 "clviper/droidstatx" ["l"="-42.18,-31.797"]
 "enjoysport2022/Alibaba-3rd-Security-Algorithm-Challenge" ["l"="-42.046,-31.494"]
 "goodskillprogramer/MalwareClassify" ["l"="-42.061,-31.501"]
-"ocatak-zz/malware_api_class" ["l"="-42.027,-31.503"]
 "HYWZ36/Aliyun_ML_Malware_detect" ["l"="-42.074,-31.514"]
 "k8scat/AliyunSecurityMaliwareDetection" ["l"="-42.07,-31.53"]
 "telsy-cyberops/research" ["l"="-41.74,-31.81"]
@@ -675,6 +714,7 @@ digraph G {
 "vinayakumarr/Network-Traffic-Analysis" ["l"="-42.158,-31.716"]
 "vinayakumarr/WASSA-2017" ["l"="-42.156,-31.727"]
 "vinayakumarr/Domain-generation-algorithms" ["l"="-42.178,-31.721"]
+"pjlantz/droidbox" ["l"="56.567,-10.99", "c"=24]
 "lkuffo/data-viz" ["l"="-41.622,-31.669"]
 "deqangss/aics2019_challenge_adv_mal_defense" ["l"="-42.037,-31.848"]
 "deqangss/adv-dnn-ens-malware" ["l"="-42.04,-31.828"]
@@ -687,6 +727,7 @@ digraph G {
 "Vi45en/Pesidious" ["l"="-41.82,-31.683"]
 "delvelabs/batea" ["l"="-41.782,-31.637"]
 "delvelabs/tachyon" ["l"="-41.754,-31.607"]
+"StrangerealIntel/CyberThreatIntel" ["l"="-42.826,-32.039", "c"=143]
 "pralab/secml" ["l"="-41.859,-31.829"]
 "pwwl/enhanced-binary-diversification" ["l"="-41.876,-31.775"]
 "weisong-ucr/MAB-malware" ["l"="-41.893,-31.774"]
@@ -705,12 +746,12 @@ digraph G {
 "islem-esi/DeepMalwareDetector" ["l"="-41.816,-31.731"]
 "avdhoot0303/Malware-detection-of-PE-files" ["l"="-41.785,-31.727"]
 "jaketae/deep-malware-detection" ["l"="-41.856,-31.74"]
-"delvelabs/vane2" ["l"="-45.061,-33.61"]
+"delvelabs/vane2" ["l"="-45.061,-33.61", "c"=611]
 "carbonblack/excel4-tests" ["l"="-41.733,-31.573"]
 "secureworks/whiskeysamlandfriends" ["l"="-41.724,-31.598"]
 "sophos/yaraml_rules" ["l"="-41.879,-31.809"]
 "FutureComputing4AI/AutoYara" ["l"="-41.864,-31.789"]
-"Neo23x0/YARA-Performance-Guidelines" ["l"="-42.673,-31.908"]
+"Neo23x0/YARA-Performance-Guidelines" ["l"="-42.673,-31.908", "c"=143]
 "BiancaGuo/malware_classification_system" ["l"="-42.146,-31.527"]
 "VoldyRCX/MalwareAnalyze" ["l"="-42.111,-31.555"]
 "16372212/Malware_Detect_System" ["l"="-42.144,-31.507"]
@@ -725,17 +766,22 @@ digraph G {
 "Azure/2020-machine-learning-security-evasion-competition" ["l"="-41.843,-31.805"]
 "eastmountyxz/Malicious-Code-Detection" ["l"="-42.195,-31.507"]
 "YangXiuxuan/Robust-Android-Malware-Detection-Against-Adversarial-Example-Attacks" ["l"="-42.009,-31.854"]
+"microsoft/CyberBattleSim" ["l"="-42.438,-33.075", "c"=79]
 "boozallen/MOTIF" ["l"="-41.945,-31.803"]
-"mandiant/sunburst_countermeasures" ["l"="-42.917,-31.917"]
+"mandiant/sunburst_countermeasures" ["l"="-42.917,-31.917", "c"=143]
 "xiaozhouwang/kaggle_Microsoft_Malware" ["l"="-42.083,-31.613"]
 "geffy/kaggle-malware" ["l"="-42.108,-31.593"]
 "sash-ko/kaggle-malware-classification" ["l"="-42.114,-31.607"]
 "ryderling/MalGraph" ["l"="-41.871,-31.731"]
+"logicalhacking/DVHMA" ["l"="-47.285,-29.594", "c"=11]
+"dkhuuthe/MADLIRA" ["l"="-42.156,-31.874"]
+"mitre/advmlthreatmatrix" ["l"="38.975,-7.356", "c"=232]
+"Azure/counterfit" ["l"="38.083,-7.561", "c"=448]
 "daxiongshu/kaggle_Microsoft_Malware" ["l"="-42.051,-31.605"]
 "2015-10-10/MalwareClassification" ["l"="-42.074,-31.589"]
 "splunk/attack-detections-collector" ["l"="-41.699,-31.532"]
 "splunk/salo" ["l"="-41.713,-31.548"]
-"geffy/kaggle-crowdflower" ["l"="57.523,24.014"]
+"geffy/kaggle-crowdflower" ["l"="57.523,24.014", "c"=864]
 "vrajs5/Microsoft-Malware-Classification-Challenge" ["l"="-42.132,-31.579"]
 "evandowning/deepreflect" ["l"="-41.907,-31.857"]
 "bormaa/Benign-NET" ["l"="-41.837,-31.759"]
@@ -746,32 +792,39 @@ digraph G {
 "E0HYL/FINER-explain" ["l"="-42.008,-31.771"]
 "mgoffin/malwarecookbook" ["l"="-41.947,-31.622"]
 "ganboing/malwarecookbook" ["l"="-41.934,-31.594"]
+"gnipping/Awesome-ML-SP-Papers" ["l"="38.497,-7.764", "c"=1088]
+"gnipping/Awesome-Malware-Related-Papers" ["l"="-42.087,-31.835"]
 "dtrizna/quo.vadis" ["l"="-41.876,-31.876"]
 "fabriciojoc/ml-cybersecuritiy-course" ["l"="-41.798,-31.877"]
+"impillar/AndroidReferences" ["l"="35.901,-0.768", "c"=1188]
+"ashishb/android-malware" ["l"="-47.245,-24.363", "c"=955]
 "mwleeds/android-malware-analysis" ["l"="-42.049,-31.696"]
 "mburakergenc/Malware-Detection-using-Machine-Learning" ["l"="-42.029,-31.701"]
 "attackbench/AttackBench" ["l"="-41.852,-31.874"]
 "aleguma/kronodroid" ["l"="-42.101,-31.787"]
 "ririhedou/dr_droid" ["l"="-42.016,-31.799"]
 "ririhedou/FrameHanger" ["l"="-42.002,-31.812"]
-"gnipping/Awesome-Malware-Related-Papers" ["l"="-42.087,-31.835"]
-"necst/arancino" ["l"="-42.867,-31.632"]
-"rieck/malheur" ["l"="-42.853,-31.862"]
-"ctxis/CAPE" ["l"="-42.837,-31.958"]
-"googleprojectzero/functionsimsearch" ["l"="-43.238,-36.926"]
-"McGill-DMaS/Kam1n0-Community" ["l"="-43.168,-36.931"]
-"honeynet/cuckooml" ["l"="-42.889,-31.783"]
+"XXnormal/RAPIER" ["l"="-40.071,-32.87", "c"=903]
+"qian-feng/Gencoding" ["l"="-43.402,-36.928", "c"=306]
+"cchio/deep-pwning" ["l"="-43.663,-33.64", "c"=865]
+"droidefense/engine" ["l"="56.574,-11.111", "c"=24]
+"necst/arancino" ["l"="-42.867,-31.632", "c"=143]
+"ctxis/CAPE" ["l"="-42.837,-31.958", "c"=143]
+"googleprojectzero/functionsimsearch" ["l"="-43.238,-36.926", "c"=306]
+"McGill-DMaS/Kam1n0-Community" ["l"="-43.168,-36.931", "c"=306]
+"honeynet/cuckooml" ["l"="-42.889,-31.783", "c"=143]
 "llSourcell/antivirus_demo" ["l"="-42.108,-31.643"]
+"wtsxDev/Machine-Learning-for-Cyber-Security" ["l"="-43.963,-33.668", "c"=865]
 "s2labres/tesseract-ml-release" ["l"="-42.064,-31.858"]
-"impillar/AndroidReferences" ["l"="35.901,-0.768"]
-"malwares/DangerousZone" ["l"="-46.353,-23.81"]
+"malwares/DangerousZone" ["l"="-46.353,-23.81", "c"=338]
 "SEU-ProactiveSecurity-Group/MalPurifier" ["l"="-42.009,-31.884"]
 "sigma0-advx/sigma-zero" ["l"="-41.84,-31.894"]
+"13o-bbr-bbq/machine_learning_security" ["l"="-43.868,-33.67", "c"=865]
 "divija96/Malware-Detection" ["l"="-42.087,-31.668"]
 "SP2014/Android-Malware-Detector" ["l"="-42.108,-31.676"]
-"endgameinc/youarespecial" ["l"="-43.752,-33.58"]
-"cchio/deep-pwning" ["l"="-43.663,-33.64"]
+"endgameinc/youarespecial" ["l"="-43.752,-33.58", "c"=865]
 "BishopFox/deephack" ["l"="-41.975,-31.745"]
 "sslab-gatech/avpass" ["l"="-42.128,-31.851"]
-"dkhuuthe/MADLIRA" ["l"="-42.156,-31.874"]
+"ifding/iot-malware" ["l"="-42.687,-31.786", "c"=143]
+"duoergun0729/2book" ["l"="-45.13,-29.601", "c"=3]
 }

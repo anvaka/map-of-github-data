@@ -1,4 +1,7 @@
 digraph G {
+"sorah/envchain" -> "hashicorp/envconsul" ["e"=1]
+"kelseyhightower/confd" -> "hashicorp/consul-template" ["e"=1]
+"nginx/ansible-role-nginx" -> "ansible-community/ansible-vault" ["e"=1]
 "hashicorp/envconsul" -> "hashicorp/consul-template"
 "hashicorp/envconsul" -> "breser/git2consul"
 "hashicorp/envconsul" -> "hashicorp/consul-replicate"
@@ -14,6 +17,16 @@ digraph G {
 "hashicorp/envconsul" -> "djenriquez/vault-ui"
 "hashicorp/envconsul" -> "AcalephStorage/consul-alerts"
 "hashicorp/envconsul" -> "channable/vaultenv"
+"nginx-proxy/docker-gen" -> "hashicorp/consul-template" ["e"=1]
+"cloudalchemy/ansible-prometheus" -> "ansible-community/ansible-vault" ["e"=1]
+"cloudalchemy/ansible-node-exporter" -> "ansible-community/ansible-vault" ["e"=1]
+"gliderlabs/logspout" -> "hashicorp/consul-template" ["e"=1]
+"gliderlabs/logspout" -> "gliderlabs/docker-consul" ["e"=1]
+"SonarSource/sonarcloud-github-action" -> "hashicorp/vault-action" ["e"=1]
+"buzzfeed/sso" -> "Caiyeon/goldfish" ["e"=1]
+"kubernetes-sigs/secrets-store-csi-driver" -> "hashicorp/vault-csi-provider" ["e"=1]
+"kubernetes-sigs/secrets-store-csi-driver" -> "hashicorp/vault-k8s" ["e"=1]
+"DavidWittman/ansible-redis" -> "ansible-collections/ansible-consul" ["e"=1]
 "hashicorp/nomad-driver-podman" -> "Roblox/nomad-driver-containerd"
 "hashicorp/nomad-driver-podman" -> "hashicorp/nomad-autoscaler"
 "hashicorp/nomad-driver-podman" -> "hashicorp/terraform-provider-nomad"
@@ -21,6 +34,11 @@ digraph G {
 "hashicorp/nomad-driver-podman" -> "picatz/terraform-google-nomad"
 "hashicorp/nomad-driver-podman" -> "hashicorp/levant"
 "hashicorp/nomad-driver-podman" -> "cosmonic-labs/netreap"
+"ansible-ThoTeam/nexus3-oss" -> "TerryHowe/ansible-modules-hashivault" ["e"=1]
+"bank-vaults/bank-vaults" -> "hashicorp/vault-helm" ["e"=1]
+"bank-vaults/bank-vaults" -> "hashicorp/vault-k8s" ["e"=1]
+"sethvargo/vault-on-gke" -> "hashicorp/vault-helm" ["e"=1]
+"sethvargo/vault-on-gke" -> "hashicorp/vault-k8s" ["e"=1]
 "hashicorp/terraform-aws-vault" -> "hashicorp/terraform-aws-consul"
 "hashicorp/terraform-aws-vault" -> "hashicorp/terraform-aws-vault-starter"
 "hashicorp/terraform-aws-vault" -> "hashicorp/terraform-aws-nomad"
@@ -40,6 +58,7 @@ digraph G {
 "hashicorp/terraform-aws-consul" -> "hashicorp/terraform-aws-nomad"
 "hashicorp/terraform-aws-consul" -> "hashicorp/nomad-autoscaler"
 "hashicorp/terraform-aws-consul" -> "gruntwork-io/gruntwork-installer"
+"gabrie30/ghorg" -> "jonasvinther/medusa" ["e"=1]
 "gmr/consulate" -> "python-consul/python-consul"
 "gmr/consulate" -> "hashicorp/consul-replicate"
 "gmr/consulate" -> "myENA/consul-backinator"
@@ -52,6 +71,9 @@ digraph G {
 "GuyBarros/nomad_jobs" -> "hashicorp/damon"
 "GuyBarros/nomad_jobs" -> "perrymanuk/hashi-homelab"
 "GuyBarros/nomad_jobs" -> "GuyBarros/terraform-aws-demostack"
+"hashicorp/terraform-guides" -> "hashicorp/vault-guides" ["e"=1]
+"hashicorp/terraform-guides" -> "hashicorp/terraform-foundational-policies-library" ["e"=1]
+"hashicorp/serf" -> "hashicorp/consul-template" ["e"=1]
 "scarolan/painless-password-rotation" -> "sethvargo/vault-secrets-gen"
 "hashicorp/consul-helm" -> "hashicorp/consul-k8s"
 "hashicorp/consul-helm" -> "hashicorp/vault-helm"
@@ -152,6 +174,7 @@ digraph G {
 "angrycub/nomad_example_jobs" -> "hashicorp/terraform-provider-nomad"
 "angrycub/nomad_example_jobs" -> "hashicorp/nomad-autoscaler"
 "angrycub/nomad_example_jobs" -> "mr-karan/nomad-monitoring"
+"voxpupuli/hiera-eyaml" -> "voxpupuli/puppet-consul" ["e"=1]
 "tradel/vault-load-testing" -> "tradel/vault-consul-monitoring"
 "avantoss/vault-infra" -> "lingrino/infra-personal"
 "avantoss/vault-infra" -> "gites/awesome-vault-tools"
@@ -168,6 +191,10 @@ digraph G {
 "gites/awesome-vault-tools" -> "seatgeek/hashi-helper"
 "gites/awesome-vault-tools" -> "sethvargo/vault-secrets-gen"
 "gites/awesome-vault-tools" -> "hashicorp/vault-ssh-helper"
+"hashicorp/terraform-provider-tfe" -> "hashicorp/terraform-aws-terraform-enterprise" ["e"=1]
+"hashicorp/terraform-provider-tfe" -> "assareh/tfc-agent" ["e"=1]
+"scarolan/ansible-terraform" -> "scarolan/painless-password-rotation" ["e"=1]
+"scarolan/ansible-terraform" -> "hashicorp/terraform-aws-vault" ["e"=1]
 "hashicorp/consul-esm" -> "hashicorp/nomad-guides"
 "hashicorp/consul-esm" -> "hashicorp/consul-replicate"
 "hashicorp/consul-esm" -> "hashicorp/terraform-provider-consul"
@@ -177,6 +204,7 @@ digraph G {
 "hashicorp/consul-esm" -> "haproxytech/haproxy-consul-connect" ["e"=1]
 "channable/alfred-margaret" -> "channable/icepeak"
 "channable/alfred-margaret" -> "ezyang/compact" ["e"=1]
+"voxpupuli/puppet-nginx" -> "voxpupuli/puppet-consul" ["e"=1]
 "jrasell/sherpa" -> "jrasell/chemtrail"
 "jrasell/sherpa" -> "elsevier-core-engineering/replicator"
 "jrasell/sherpa" -> "trivago/scalad"
@@ -197,6 +225,7 @@ digraph G {
 "tradel/vault-consul-monitoring" -> "tradel/vault-load-testing"
 "tradel/vault-consul-monitoring" -> "WhatsARanjit/vault-counter"
 "hashicorp/private-terraform-enterprise" -> "robertpeteuil/consul-demo"
+"gliderlabs/docker-alpine" -> "hashicorp/consul-template" ["e"=1]
 "hashicorp/consul-template" -> "gliderlabs/registrator" ["e"=1]
 "hashicorp/consul-template" -> "hashicorp/envconsul"
 "hashicorp/consul-template" -> "kelseyhightower/confd" ["e"=1]
@@ -212,6 +241,9 @@ digraph G {
 "hashicorp/consul-template" -> "hashicorp/serf" ["e"=1]
 "hashicorp/consul-template" -> "gliderlabs/logspout" ["e"=1]
 "hashicorp/consul-template" -> "hashicorp/best-practices" ["e"=1]
+"gliderlabs/registrator" -> "hashicorp/consul-template" ["e"=1]
+"gliderlabs/registrator" -> "gliderlabs/docker-consul" ["e"=1]
+"gliderlabs/registrator" -> "hashicorp/envconsul" ["e"=1]
 "AcalephStorage/consul-alerts" -> "jippi/hashi-ui"
 "AcalephStorage/consul-alerts" -> "josegonzalez/awesome-consul"
 "AcalephStorage/consul-alerts" -> "hashicorp/consul-template"
@@ -242,6 +274,10 @@ digraph G {
 "jsiebens/hashi-up" -> "ansible-community/ansible-nomad"
 "jsiebens/hashi-up" -> "mr-karan/homelab"
 "jsiebens/hashi-up" -> "fhemberger/nomad-demo"
+"rickfast/consul-client" -> "breser/git2consul" ["e"=1]
+"rickfast/consul-client" -> "hashicorp/consul-template" ["e"=1]
+"atcol/docker-registry-ui" -> "gliderlabs/docker-consul" ["e"=1]
+"aquasecurity/trivy-action" -> "hashicorp/vault-action" ["e"=1]
 "hashicorp/vault-action" -> "hashicorp/vault-helm"
 "hashicorp/vault-action" -> "gitrgoliveira/vault-plugin-auth-tfe"
 "hashicorp/vault-action" -> "hashicorp/setup-terraform" ["e"=1]
@@ -255,6 +291,7 @@ digraph G {
 "hashicorp/vault-action" -> "hashicorp/vault-secrets-operator"
 "hashicorp/vault-action" -> "zaproxy/action-full-scan" ["e"=1]
 "hashicorp/vault-action" -> "hashicorp/vault-csi-provider"
+"hashicorp/hcl" -> "hashicorp/consul-template" ["e"=1]
 "gliderlabs/docker-consul" -> "gliderlabs/registrator" ["e"=1]
 "gliderlabs/docker-consul" -> "hashicorp/consul-template"
 "gliderlabs/docker-consul" -> "gliderlabs/logspout" ["e"=1]
@@ -270,6 +307,7 @@ digraph G {
 "gliderlabs/docker-consul" -> "breser/git2consul"
 "gliderlabs/docker-consul" -> "bellycard/docker-loadbalancer"
 "gliderlabs/docker-consul" -> "python-consul/python-consul"
+"hashicorp/setup-terraform" -> "hashicorp/vault-action" ["e"=1]
 "breser/git2consul" -> "hashicorp/envconsul"
 "breser/git2consul" -> "Cimpress-MCP/fsconsul"
 "breser/git2consul" -> "DataDog/kvexpress"
@@ -286,8 +324,12 @@ digraph G {
 "breser/git2consul" -> "sous-chefs/consul" ["e"=1]
 "breser/git2consul" -> "mantl/consul-cli"
 "nicholasjackson/demo-consul-service-mesh" -> "nicholasjackson/docker-consul-envoy"
+"mantl/mantl" -> "hashicorp/consul-template" ["e"=1]
+"mantl/mantl" -> "AcalephStorage/consul-alerts" ["e"=1]
+"coursehero/slacktee" -> "djenriquez/vault-ui" ["e"=1]
 "hashicorp/terraform-enterprise-release-notes" -> "cneralich/tfe-tfc-migration-tool"
 "hashicorp/terraform-enterprise-release-notes" -> "hashicorp/terraform-aws-terraform-enterprise"
+"hashicorp/waypoint" -> "hashicorp/levant" ["e"=1]
 "mr-karan/homelab" -> "fhemberger/nomad-demo"
 "mr-karan/homelab" -> "aldoborrero/hashi-homelab"
 "mr-karan/homelab" -> "nahsi-homelab/nomad"
@@ -328,6 +370,7 @@ digraph G {
 "hashicorp/nomad-autoscaler" -> "cosmonic-labs/netreap"
 "hashicorp/nomad-autoscaler" -> "zerodha/nomad-cluster-setup" ["e"=1]
 "hashicorp/nomad-autoscaler" -> "hashicorp/faas-nomad"
+"cloudfoundry-attic/lattice-release" -> "gliderlabs/connectable" ["e"=1]
 "progrium/busybox" -> "jeanblanchard/docker-busybox-java"
 "hashicorp/consul-replicate" -> "gmr/consulate"
 "hashicorp/consul-replicate" -> "myENA/consul-backinator"
@@ -354,6 +397,7 @@ digraph G {
 "hashicorp/terraform-foundational-policies-library" -> "hashicorp/terraform-aws-terraform-enterprise"
 "hashicorp/terraform-foundational-policies-library" -> "straubt1/tfx"
 "hashicorp/terraform-foundational-policies-library" -> "hashicorp/terraform-guides" ["e"=1]
+"ned1313/terraform-tuesdays" -> "hashicorp/terraform-sentinel-policies" ["e"=1]
 "perrymanuk/hashi-homelab" -> "aldoborrero/hashi-homelab"
 "perrymanuk/hashi-homelab" -> "assareh/home-lab"
 "perrymanuk/hashi-homelab" -> "jsiebens/hashi-up"
@@ -369,6 +413,9 @@ digraph G {
 "perrymanuk/hashi-homelab" -> "servian/hashiqube"
 "perrymanuk/hashi-homelab" -> "angrycub/nomad_example_jobs"
 "perrymanuk/hashi-homelab" -> "Roblox/nomad-driver-containerd"
+"ricoberger/vault-secrets-operator" -> "hashicorp/vault-secrets-operator" ["e"=1]
+"ricoberger/vault-secrets-operator" -> "hashicorp/vault-k8s" ["e"=1]
+"ricoberger/vault-secrets-operator" -> "hashicorp/vault-csi-provider" ["e"=1]
 "TerribleDev/TimberWinR" -> "TerribleDev/zanzibar"
 "TerribleDev/TimberWinR" -> "Cimpress-MCP/vagrant-orchestrate"
 "TerribleDev/TimberWinR" -> "Cimpress-MCP/hiera-gosecret"
@@ -402,6 +449,7 @@ digraph G {
 "cneralich/tfe-tfc-migration-tool" -> "gitrgoliveira/vault-plugin-auth-tfe"
 "cneralich/tfe-tfc-migration-tool" -> "hashicorp/private-terraform-enterprise"
 "cneralich/tfe-tfc-migration-tool" -> "assareh/tfc-agent"
+"neillturner/kitchen-ansible" -> "jhaals/ansible-vault" ["e"=1]
 "hashicorp/homebrew-tap" -> "hashicorp/tfc-workflows-tooling"
 "hashicorp/terraform-azurerm-terraform-enterprise" -> "hashicorp/terraform-google-terraform-enterprise"
 "hashicorp/terraform-azurerm-terraform-enterprise" -> "hashicorp/terraform-aws-terraform-enterprise"
@@ -423,10 +471,13 @@ digraph G {
 "servian/hashiqube" -> "nunchistudio/hashibox"
 "servian/hashiqube" -> "hashicorp/damon"
 "jrasell/chemtrail" -> "jrasell/sherpa"
+"hashicorp/terraform-provider-kubernetes-alpha" -> "hashicorp/vault-helm" ["e"=1]
+"hashicorp/terraform-provider-kubernetes-alpha" -> "hashicorp/vault-csi-provider" ["e"=1]
 "fhemberger/nomad-demo" -> "pete0emerson/hashipoc"
 "fhemberger/nomad-demo" -> "nahsi-homelab/nomad"
 "fhemberger/nomad-demo" -> "hashicorp/nomad-pack-community-registry"
 "fhemberger/nomad-demo" -> "perrymanuk/hashi-homelab"
+"jenkinsci/helm-charts" -> "hashicorp/vault-helm" ["e"=1]
 "jcolemorrison/vault-on-aws" -> "jcolemorrison/cloudfoundation"
 "jcolemorrison/vault-on-aws" -> "jcolemorrison/getting-into-consul"
 "hashicorp/vault-csi-provider" -> "hashicorp/vault-k8s"
@@ -459,6 +510,7 @@ digraph G {
 "Cimpress-MCP/gosecret" -> "Cimpress-MCP/vagrant-orchestrate"
 "Cimpress-MCP/gosecret" -> "Cimpress-MCP/oauth_reverse_proxy"
 "Cimpress-MCP/gosecret" -> "Cimpress-MCP/deployment-tracker"
+"hashicorp/nomad" -> "hashicorp/consul-template" ["e"=1]
 "jonasvinther/medusa" -> "FalcoSuessgott/vkv"
 "jonasvinther/medusa" -> "adamdecaf/vault-backend-migrator"
 "jonasvinther/medusa" -> "bank-vaults/bank-vaults" ["e"=1]
@@ -481,6 +533,9 @@ digraph G {
 "hvac/hvac" -> "ansible/molecule" ["e"=1]
 "hvac/hvac" -> "hashicorp/vault-k8s"
 "hvac/hvac" -> "Boostport/kubernetes-vault" ["e"=1]
+"Capgemini/Apollo" -> "AcalephStorage/consul-alerts" ["e"=1]
+"stack72/ops-books" -> "voxpupuli/puppet-consul" ["e"=1]
+"stack72/ops-books" -> "seatgeek/hashi-helper" ["e"=1]
 "jsok/hiera-vault" -> "jsok/puppet-vault"
 "jsok/hiera-vault" -> "lynxman/hiera-consul"
 "Cimpress-MCP/vagrant-winrm-syncedfolders" -> "Cimpress-MCP/deployment-tracker"
@@ -489,6 +544,9 @@ digraph G {
 "jhaals/ansible-vault" -> "TerryHowe/ansible-modules-hashivault"
 "jhaals/ansible-vault" -> "djenriquez/vault-ui"
 "jhaals/ansible-vault" -> "neillturner/kitchen-ansible" ["e"=1]
+"prometheus/consul_exporter" -> "myENA/consul-backinator" ["e"=1]
+"prometheus/consul_exporter" -> "mantl/consul-cli" ["e"=1]
+"prometheus/consul_exporter" -> "hashicorp/consul-replicate" ["e"=1]
 "hashicorp/damon" -> "robinovitch61/wander"
 "hashicorp/damon" -> "hashicorp/nomad-pack"
 "hashicorp/damon" -> "jippi/awesome-nomad"
@@ -528,16 +586,21 @@ digraph G {
 "mantl/consul-cli" -> "hashicorp/consul-replicate"
 "gliderlabs/resolvable" -> "gliderlabs/connectable"
 "gitrgoliveira/vault-plugin-auth-tfe" -> "GuyBarros/terraform-enterprise-counter"
+"argoproj-labs/argocd-vault-plugin" -> "hashicorp/vault-helm" ["e"=1]
 "Roblox/nomad-node-problem-detector" -> "Roblox/rblx_nurd"
 "straubt1/tfx" -> "cneralich/tfe-tfc-migration-tool"
 "straubt1/tfx" -> "assareh/tfc-agent"
 "straubt1/tfx" -> "straubt1/tfe-alternative-worker"
 "fmeringdal/do-hashicorp-cluster" -> "jsiebens/nomad-droplets-autoscaler"
 "fmeringdal/do-hashicorp-cluster" -> "aldoborrero/hashi-homelab"
+"cloudfoundry-community/vault-boshrelease" -> "shieldproject/shield-boshrelease" ["e"=1]
 "jsok/puppet-vault" -> "jsok/hiera-vault"
 "Cimpress-MCP/PostalCodes.Net" -> "Cimpress-MCP/deployment-tracker"
 "Cimpress-MCP/deployment-tracker" -> "Cimpress-MCP/hiera-gosecret"
+"Yelp/dumb-init" -> "hashicorp/consul-template" ["e"=1]
 "pshima/consul-snapshot" -> "myENA/consul-backinator"
+"TritonDataCenter/containerpilot" -> "AcalephStorage/consul-alerts" ["e"=1]
+"TritonDataCenter/containerpilot" -> "hashicorp/envconsul" ["e"=1]
 "robinovitch61/wander" -> "hashicorp/damon"
 "robinovitch61/wander" -> "hashicorp/nomad-pack"
 "robinovitch61/wander" -> "hashicorp/nomad-autoscaler"
@@ -552,6 +615,24 @@ digraph G {
 "robinovitch61/wander" -> "seatgeek/nomad-helper"
 "robinovitch61/wander" -> "Roblox/nomad-node-problem-detector"
 "robinovitch61/wander" -> "nunchistudio/hashibox"
+"fabiolb/fabio" -> "hashicorp/consul-template" ["e"=1]
+"fabiolb/fabio" -> "jippi/hashi-ui" ["e"=1]
+"fabiolb/fabio" -> "Caiyeon/goldfish" ["e"=1]
+"fabiolb/fabio" -> "hashicorp/envconsul" ["e"=1]
+"apache/libcloud" -> "hvac/hvac" ["e"=1]
+"hashicorp/best-practices" -> "hashicorp/consul-template" ["e"=1]
+"hashicorp/best-practices" -> "hashicorp/envconsul" ["e"=1]
+"pearofducks/ansible-vim" -> "TerryHowe/ansible-modules-hashivault" ["e"=1]
+"iron-io/dockers" -> "gliderlabs/docker-consul" ["e"=1]
+"iron-io/dockers" -> "hashicorp/envconsul" ["e"=1]
+"statsite/statsite" -> "hashicorp/envconsul" ["e"=1]
+"statsite/statsite" -> "breser/git2consul" ["e"=1]
+"statsite/statsite" -> "AcalephStorage/consul-alerts" ["e"=1]
+"statsite/statsite" -> "jippi/hashi-ui" ["e"=1]
+"statsite/statsite" -> "djenriquez/vault-ui" ["e"=1]
+"operable/cog" -> "djenriquez/vault-ui" ["e"=1]
+"operable/cog" -> "breser/git2consul" ["e"=1]
+"operable/cog" -> "seatgeek/hashi-helper" ["e"=1]
 "hashicorp/terraform-sentinel-policies" -> "hashicorp/terraform-foundational-policies-library"
 "hashicorp/terraform-sentinel-policies" -> "djschnei21/multi-product-integration-demo"
 "hashicorp/terraform-sentinel-policies" -> "assareh/tfc-agent"
@@ -562,6 +643,7 @@ digraph G {
 "hashicorp/terraform-sentinel-policies" -> "hashicorp/field-workshops-consul"
 "hashicorp/terraform-sentinel-policies" -> "hashicorp/boundary-reference-architecture"
 "hashicorp/terraform-sentinel-policies" -> "hashicorp/sentinel-github-actions"
+"DontShaveTheYak/cf2tf" -> "hashicorp/terraform-sentinel-policies" ["e"=1]
 "hashicorp/nomad-pack-community-registry" -> "hashicorp/nomad-pack"
 "hashicorp/nomad-pack-community-registry" -> "perrymanuk/hashi-homelab"
 "hashicorp/nomad-pack-community-registry" -> "fhemberger/nomad-demo"
@@ -605,6 +687,9 @@ digraph G {
 "hashicorp/nomad-pack" -> "jsiebens/hashi-up"
 "Cimpress-MCP/healthcheck.spec" -> "Cimpress-MCP/deployment-tracker"
 "Cimpress-MCP/healthcheck.spec" -> "Cimpress-MCP/oauth_reverse_proxy"
+"brikis98/infrastructure-as-code-talk" -> "hashicorp/terraform-aws-consul" ["e"=1]
+"gruntwork-io/fetch" -> "gruntwork-io/gruntwork-installer" ["e"=1]
+"docker-archive/dockercloud-haproxy" -> "gliderlabs/docker-consul" ["e"=1]
 "adobe/cryptr" -> "gites/awesome-vault-tools"
 "adobe/cryptr" -> "sethvargo/vault-secrets-gen"
 "adobe/cryptr" -> "hashicorp/vault-ssh-helper"
@@ -619,6 +704,8 @@ digraph G {
 "hashicorp/vault-secrets-operator" -> "hashicorp/terraform-provider-vault" ["e"=1]
 "hashicorp/vault-secrets-operator" -> "argoproj-labs/argocd-vault-plugin" ["e"=1]
 "hashicorp/vault-secrets-operator" -> "hashicorp/vault-csi-provider"
+"hashicorp-forge/hermes" -> "hashicorp/damon" ["e"=1]
+"ZZROTDesign/docker-clean" -> "gliderlabs/docker-consul" ["e"=1]
 "egen/safe" -> "cloudfoundry-incubator/docker-boshrelease" ["e"=1]
 "egen/safe" -> "djenriquez/vault-ui"
 "egen/safe" -> "shieldproject/shield" ["e"=1]
@@ -630,6 +717,7 @@ digraph G {
 "rundeck-plugins/ansible-plugin" -> "rundeck/anvils-demo"
 "rundeck-plugins/ansible-plugin" -> "octplane/ansible_stdout_compact_logger"
 "rundeck-plugins/ansible-plugin" -> "geerlingguy/ansible-role-awx" ["e"=1]
+"kz8s/tack" -> "hashicorp/envconsul" ["e"=1]
 "TerryHowe/ansible-modules-hashivault" -> "jhaals/ansible-vault"
 "TerryHowe/ansible-modules-hashivault" -> "ansible-community/ansible-vault"
 "TerryHowe/ansible-modules-hashivault" -> "hashicorp/vault-ssh-helper"
@@ -648,14 +736,18 @@ digraph G {
 "hashicorp/docker-consul" -> "hashicorp/consul-replicate"
 "hashicorp/docker-consul" -> "hashicorp/docker-base"
 "hashicorp/docker-consul" -> "gliderlabs/docker-consul"
+"jonmorehouse/terraform-provisioner-ansible" -> "jhaals/ansible-vault" ["e"=1]
 "Cimpress-MCP/postal-codes-js" -> "Cimpress-MCP/PostalCodes.Net"
 "star3am/hashiqube" -> "servian/hashiqube"
 "star3am/hashiqube" -> "star3am/terraform-modules-library"
+"riemers/ansible-gitlab-runner" -> "ansible-community/ansible-vault" ["e"=1]
 "hashicorp/docker-vault" -> "hashicorp/vault-plugin-auth-kubernetes"
 "hashicorp/docker-vault" -> "hashicorp/vault-plugin-auth-jwt"
 "hashicorp/docker-vault" -> "hashicorp/terraform-provider-vault" ["e"=1]
 "hashicorp/docker-vault" -> "hashicorp/vault-provision-example"
 "hashicorp/docker-vault" -> "hashicorp/vault-guides"
+"yyyar/gobetween" -> "jippi/hashi-ui" ["e"=1]
+"ks888/LambStatus" -> "Caiyeon/goldfish" ["e"=1]
 "rishavnandi/ansible_homelab" -> "natelandau/ansible-homelab-config"
 "rishavnandi/ansible_homelab" -> "nickjg1/homeserver-ansible"
 "rishavnandi/ansible_homelab" -> "artyorsh/ansible-collection-selfhosted"
@@ -675,9 +767,11 @@ digraph G {
 "jippi/hashi-ui" -> "hashicorp/consul-replicate"
 "jippi/hashi-ui" -> "Caiyeon/goldfish"
 "cosmonic-labs/netreap" -> "Roblox/nomad-driver-containerd"
+"airbnb/synapse" -> "hashicorp/consul-template" ["e"=1]
 "hashicorp/tfc-workflows-github" -> "hashicorp/tfc-workflows-tooling"
 "hashicorp/tfc-workflows-github" -> "hashicorp/tfc-workflows-gitlab"
 "hashicorp/tfc-workflows-github" -> "hashicorp/hcp-terraform-operator" ["e"=1]
+"kelseyhightower/consul-on-kubernetes" -> "hashicorp/consul-k8s" ["e"=1]
 "hashicorp/tfc-workflows-gitlab" -> "hashicorp/tfc-workflows-tooling"
 "ansible-community/ansible-nomad" -> "ansible-collections/ansible-consul"
 "ansible-community/ansible-nomad" -> "ansible-community/ansible-vault"
@@ -722,6 +816,7 @@ digraph G {
 "Caiyeon/goldfish" -> "wallix/awless" ["e"=1]
 "Caiyeon/goldfish" -> "camptocamp/terraboard" ["e"=1]
 "Caiyeon/goldfish" -> "egen/safe"
+"weaveworks/grafanalib" -> "djenriquez/vault-ui" ["e"=1]
 "jippi/awesome-nomad" -> "hashicorp/levant"
 "jippi/awesome-nomad" -> "jippi/hashi-ui"
 "jippi/awesome-nomad" -> "hashicorp/damon"
@@ -737,6 +832,9 @@ digraph G {
 "jippi/awesome-nomad" -> "hashicorp/faas-nomad"
 "jippi/awesome-nomad" -> "hashicorp/nomad-pack-community-registry"
 "jippi/awesome-nomad" -> "hashicorp/nomad-pack"
+"Boostport/kubernetes-vault" -> "djenriquez/vault-ui" ["e"=1]
+"Boostport/kubernetes-vault" -> "Caiyeon/goldfish" ["e"=1]
+"Boostport/kubernetes-vault" -> "UKHomeOffice/vault-sidekick" ["e"=1]
 "jrasell/nomadfiles" -> "jet/nomad-service-alerter"
 "ansible-community/ansible-vault" -> "ansible-collections/ansible-consul"
 "ansible-community/ansible-vault" -> "ansible-community/ansible-nomad"
@@ -744,6 +842,8 @@ digraph G {
 "ansible-community/ansible-vault" -> "MiteshSharma/AnsibleVaultRole"
 "ansible-community/ansible-vault" -> "riemers/ansible-gitlab-runner" ["e"=1]
 "ansible-community/ansible-vault" -> "cloudalchemy/ansible-node-exporter" ["e"=1]
+"rundeck/rundeck" -> "rundeck-plugins/ansible-plugin" ["e"=1]
+"timbod7/haskell-chart" -> "channable/alfred-margaret" ["e"=1]
 "seatgeek/hashi-helper" -> "protectwise/stork"
 "channable/vaultenv" -> "channable/icepeak"
 "channable/vaultenv" -> "channable/alfred-margaret"
@@ -757,11 +857,27 @@ digraph G {
 "elsevier-core-engineering/replicator" -> "protectwise/stork"
 "hashicorp/guides-configuration" -> "tradel/vault-consul-monitoring"
 "hashicorp/guides-configuration" -> "hashicorp/consul-guides"
+"dthree/addict" -> "Caiyeon/goldfish" ["e"=1]
+"jon6fingrs/ghostboard" -> "artyorsh/ansible-collection-selfhosted" ["e"=1]
+"hashicorp/terraform-provider-tls" -> "hashicorp/terraform-provider-nomad" ["e"=1]
+"hootsuite/atlantis" -> "Caiyeon/goldfish" ["e"=1]
+"hootsuite/atlantis" -> "seatgeek/hashi-helper" ["e"=1]
+"hootsuite/atlantis" -> "djenriquez/vault-ui" ["e"=1]
+"hootsuite/atlantis" -> "hashicorp/envconsul" ["e"=1]
+"hootsuite/atlantis" -> "jippi/awesome-nomad" ["e"=1]
 "hashicorp/go-discover" -> "hashicorp/nomad-autoscaler"
 "hashicorp/go-discover" -> "hashicorp/terraform-provider-nomad"
 "hashicorp/go-discover" -> "jippi/awesome-nomad"
+"kagent-dev/kagent" -> "nicholasjackson/fake-service" ["e"=1]
+"hashicorp/terraform-provider-vault" -> "hashicorp/vault-plugin-auth-kubernetes" ["e"=1]
+"hashicorp/terraform-provider-vault" -> "hashicorp/vault-k8s" ["e"=1]
+"hashicorp/terraform-provider-vault" -> "hashicorp/vault-plugin-auth-jwt" ["e"=1]
+"hashicorp/terraform-provider-vault" -> "hashicorp/terraform-provider-consul" ["e"=1]
+"hashicorp/terraform-provider-vault" -> "hashicorp/terraform-provider-nomad" ["e"=1]
 "seatgeek/nomad-firehose" -> "seatgeek/nomad-helper"
 "seatgeek/nomad-firehose" -> "jet/nomad-service-alerter"
+"hashicorp/terraform-provider-helm" -> "hashicorp/vault-helm" ["e"=1]
+"kelseyhightower/nomad-on-kubernetes" -> "hashicorp/faas-nomad" ["e"=1]
 "mapmyfitness/libra" -> "elsevier-core-engineering/replicator"
 "seatgeek/nomad-helper" -> "seatgeek/nomad-firehose"
 "seatgeek/nomad-helper" -> "hashicorp/nomad-open-telemetry-getting-started"
@@ -769,22 +885,38 @@ digraph G {
 "hashicorp/terraform-provider-nomad" -> "hashicorp/nomad-open-telemetry-getting-started"
 "hashicorp/terraform-provider-nomad" -> "hashicorp/nomad-driver-podman"
 "brianshumate/vaultron" -> "hashicorp/private-terraform-enterprise"
+"sorah/envchain" ["l"="6.013,-38.434", "c"=617]
 "hashicorp/envconsul" ["l"="7.069,-12.904"]
+"kelseyhightower/confd" ["l"="5.877,-12.294", "c"=270]
 "hashicorp/consul-template" ["l"="7.119,-12.937"]
+"nginx/ansible-role-nginx" ["l"="7.923,-12.985", "c"=739]
+"ansible-community/ansible-vault" ["l"="7.116,-12.984"]
 "breser/git2consul" ["l"="7.041,-12.915"]
 "hashicorp/consul-replicate" ["l"="7.069,-12.95"]
-"gliderlabs/registrator" ["l"="5.974,-12.323"]
+"gliderlabs/registrator" ["l"="5.974,-12.323", "c"=270]
 "jippi/hashi-ui" ["l"="7.055,-12.963"]
 "hashicorp/consul-esm" ["l"="7.076,-12.963"]
 "gmr/consulate" ["l"="7.043,-12.939"]
 "hvac/hvac" ["l"="7.07,-12.85"]
 "Caiyeon/goldfish" ["l"="7.102,-12.887"]
-"fabiolb/fabio" ["l"="3.763,-8.265"]
-"kelseyhightower/confd" ["l"="5.877,-12.294"]
+"fabiolb/fabio" ["l"="3.763,-8.265", "c"=0]
 "myENA/consul-backinator" ["l"="7.021,-12.927"]
 "djenriquez/vault-ui" ["l"="7.127,-12.875"]
 "AcalephStorage/consul-alerts" ["l"="7.085,-12.93"]
 "channable/vaultenv" ["l"="6.994,-12.879"]
+"nginx-proxy/docker-gen" ["l"="5.986,-12.2", "c"=270]
+"cloudalchemy/ansible-prometheus" ["l"="7.973,-13.003", "c"=739]
+"cloudalchemy/ansible-node-exporter" ["l"="8.004,-13.01", "c"=739]
+"gliderlabs/logspout" ["l"="5.988,-12.283", "c"=270]
+"gliderlabs/docker-consul" ["l"="7.153,-12.966"]
+"SonarSource/sonarcloud-github-action" ["l"="7.842,-45.648", "c"=544]
+"hashicorp/vault-action" ["l"="6.956,-12.781"]
+"buzzfeed/sso" ["l"="8.139,-8.925", "c"=14]
+"kubernetes-sigs/secrets-store-csi-driver" ["l"="7.734,-9.24", "c"=14]
+"hashicorp/vault-csi-provider" ["l"="7.005,-12.737"]
+"hashicorp/vault-k8s" ["l"="7.034,-12.762"]
+"DavidWittman/ansible-redis" ["l"="7.908,-13.034", "c"=739]
+"ansible-collections/ansible-consul" ["l"="7.076,-13.028"]
 "hashicorp/nomad-driver-podman" ["l"="7.031,-13.073"]
 "Roblox/nomad-driver-containerd" ["l"="7.001,-13.064"]
 "hashicorp/nomad-autoscaler" ["l"="6.998,-13.027"]
@@ -793,22 +925,28 @@ digraph G {
 "picatz/terraform-google-nomad" ["l"="7.08,-13.125"]
 "hashicorp/levant" ["l"="7.015,-13.048"]
 "cosmonic-labs/netreap" ["l"="7.012,-13.09"]
+"ansible-ThoTeam/nexus3-oss" ["l"="-1.875,11.423", "c"=15]
+"TerryHowe/ansible-modules-hashivault" ["l"="7.153,-12.868"]
+"bank-vaults/bank-vaults" ["l"="7.693,-9.268", "c"=14]
+"hashicorp/vault-helm" ["l"="7.011,-12.78"]
+"sethvargo/vault-on-gke" ["l"="45.27,16.475", "c"=213]
 "hashicorp/terraform-aws-vault" ["l"="6.971,-12.843"]
 "hashicorp/terraform-aws-consul" ["l"="6.95,-12.912"]
 "hashicorp/terraform-aws-vault-starter" ["l"="6.919,-12.829"]
 "hashicorp/terraform-aws-nomad" ["l"="6.973,-12.933"]
 "hashicorp/vault-guides" ["l"="6.994,-12.811"]
-"hashicorp/terraform-provider-vault" ["l"="10.395,-5.887"]
-"hashicorp/terraform-google-vault" ["l"="45.303,16.377"]
-"jtblin/kube2iam" ["l"="7.806,-9.05"]
-"hashicorp/vault-helm" ["l"="7.011,-12.78"]
+"hashicorp/terraform-provider-vault" ["l"="10.395,-5.887", "c"=162]
+"hashicorp/terraform-google-vault" ["l"="45.303,16.377", "c"=213]
+"jtblin/kube2iam" ["l"="7.806,-9.05", "c"=14]
 "hashicorp/vault-plugin-auth-kubernetes" ["l"="6.98,-12.723"]
-"aws-quickstart/quickstart-hashicorp-vault" ["l"="10.985,-5.061"]
+"aws-quickstart/quickstart-hashicorp-vault" ["l"="10.985,-5.061", "c"=147]
 "jcolemorrison/vault-on-aws" ["l"="6.842,-12.904"]
-"hashicorp/best-practices" ["l"="10.327,-6.196"]
+"hashicorp/best-practices" ["l"="10.327,-6.196", "c"=162]
 "hashicorp/docker-vault" ["l"="6.965,-12.749"]
-"newcontext-oss/kitchen-terraform" ["l"="10.365,-6.139"]
+"newcontext-oss/kitchen-terraform" ["l"="10.365,-6.139", "c"=162]
 "gruntwork-io/gruntwork-installer" ["l"="6.907,-12.926"]
+"gabrie30/ghorg" ["l"="7.404,-8.897", "c"=14]
+"jonasvinther/medusa" ["l"="7.15,-12.697"]
 "python-consul/python-consul" ["l"="7.065,-12.927"]
 "lynxman/hiera-consul" ["l"="6.948,-12.943"]
 "JoergM/consul-examples" ["l"="6.998,-12.951"]
@@ -819,35 +957,32 @@ digraph G {
 "hashicorp/damon" ["l"="6.977,-13.066"]
 "perrymanuk/hashi-homelab" ["l"="6.953,-13.111"]
 "GuyBarros/terraform-aws-demostack" ["l"="6.9,-12.871"]
+"hashicorp/terraform-guides" ["l"="10.392,-6.149", "c"=162]
+"hashicorp/terraform-foundational-policies-library" ["l"="6.832,-12.793"]
+"hashicorp/serf" ["l"="3.971,-8.257", "c"=0]
 "scarolan/painless-password-rotation" ["l"="7.126,-12.735"]
 "sethvargo/vault-secrets-gen" ["l"="7.099,-12.764"]
 "hashicorp/consul-helm" ["l"="7.055,-12.787"]
 "hashicorp/consul-k8s" ["l"="7.094,-12.835"]
 "hashicorp/terraform-provider-consul" ["l"="7.141,-12.904"]
 "hashicorp/consul-api-gateway" ["l"="7.174,-12.821"]
-"kelseyhightower/consul-on-kubernetes" ["l"="10.382,-10.041"]
-"prometheus/consul_exporter" ["l"="9.325,-10.553"]
-"hashicorp/vault-k8s" ["l"="7.034,-12.762"]
-"hashicorp/terraform-provider-kubernetes-alpha" ["l"="10.439,-5.988"]
-"hashicorp/terraform-guides" ["l"="10.392,-6.149"]
+"kelseyhightower/consul-on-kubernetes" ["l"="10.382,-10.041", "c"=740]
+"prometheus/consul_exporter" ["l"="9.325,-10.553", "c"=484]
+"hashicorp/terraform-provider-kubernetes-alpha" ["l"="10.439,-5.988", "c"=162]
 "brianshumate/vaultron" ["l"="6.991,-12.763"]
 "hashicorp/consul-guides" ["l"="7.005,-12.861"]
-"bank-vaults/bank-vaults" ["l"="7.693,-9.268"]
 "hashicorp/boundary-reference-architecture" ["l"="6.848,-12.832"]
 "hashicorp/guides-configuration" ["l"="7.017,-12.828"]
 "hashicorp/nomad-guides" ["l"="7.004,-12.984"]
 "gites/awesome-vault-tools" ["l"="7.085,-12.784"]
-"hashicorp/terraform-foundational-policies-library" ["l"="6.832,-12.793"]
 "hashicorp/vault-secrets-operator" ["l"="7.038,-12.727"]
-"hashicorp/vault-csi-provider" ["l"="7.005,-12.737"]
-"argoproj-labs/argocd-vault-plugin" ["l"="7.618,-9.313"]
-"hashicorp/terraform-provider-helm" ["l"="10.403,-5.955"]
-"databus23/helm-diff" ["l"="7.643,-9.03"]
-"grafana/helm-charts" ["l"="7.9,-9.079"]
-"hashicorp/vault-action" ["l"="6.956,-12.781"]
-"argoproj/argo-helm" ["l"="7.706,-9.181"]
-"external-secrets/external-secrets" ["l"="7.701,-9.054"]
-"kubernetes-sigs/external-dns" ["l"="7.856,-8.961"]
+"argoproj-labs/argocd-vault-plugin" ["l"="7.618,-9.313", "c"=14]
+"hashicorp/terraform-provider-helm" ["l"="10.403,-5.955", "c"=162]
+"databus23/helm-diff" ["l"="7.643,-9.03", "c"=14]
+"grafana/helm-charts" ["l"="7.9,-9.079", "c"=14]
+"argoproj/argo-helm" ["l"="7.706,-9.181", "c"=14]
+"external-secrets/external-secrets" ["l"="7.701,-9.054", "c"=14]
+"kubernetes-sigs/external-dns" ["l"="7.856,-8.961", "c"=14]
 "hashicorp/faas-nomad" ["l"="7.024,-13.028"]
 "jet/nomad-service-alerter" ["l"="7.035,-13.009"]
 "jippi/awesome-nomad" ["l"="6.995,-13.042"]
@@ -878,6 +1013,7 @@ digraph G {
 "hashicorp/nomad-open-telemetry-getting-started" ["l"="6.956,-13.057"]
 "Roblox/nomad-node-problem-detector" ["l"="6.99,-13.117"]
 "mr-karan/nomad-monitoring" ["l"="7.036,-13.137"]
+"voxpupuli/hiera-eyaml" ["l"="1.412,-31.473", "c"=997]
 "tradel/vault-load-testing" ["l"="6.924,-12.796"]
 "tradel/vault-consul-monitoring" ["l"="6.946,-12.81"]
 "avantoss/vault-infra" ["l"="7.089,-12.723"]
@@ -889,11 +1025,16 @@ digraph G {
 "josegonzalez/awesome-consul" ["l"="7.073,-12.816"]
 "adobe/cryptr" ["l"="7.126,-12.782"]
 "seatgeek/hashi-helper" ["l"="7.055,-12.871"]
+"hashicorp/terraform-provider-tfe" ["l"="10.439,-5.839", "c"=162]
+"hashicorp/terraform-aws-terraform-enterprise" ["l"="6.768,-12.782"]
+"assareh/tfc-agent" ["l"="6.828,-12.76"]
+"scarolan/ansible-terraform" ["l"="10.267,-6.125", "c"=162]
 "zeroXten/consul-do" ["l"="7.102,-12.969"]
-"haproxytech/haproxy-consul-connect" ["l"="8.929,-9.303"]
+"haproxytech/haproxy-consul-connect" ["l"="8.929,-9.303", "c"=14]
 "channable/alfred-margaret" ["l"="6.937,-12.858"]
 "channable/icepeak" ["l"="6.954,-12.874"]
-"ezyang/compact" ["l"="-20.468,-20.329"]
+"ezyang/compact" ["l"="-20.468,-20.329", "c"=118]
+"voxpupuli/puppet-nginx" ["l"="1.356,-31.524", "c"=997]
 "jrasell/chemtrail" ["l"="6.937,-13.02"]
 "trivago/scalad" ["l"="6.913,-13.026"]
 "hashicorp/vault-plugin-auth-jwt" ["l"="6.948,-12.699"]
@@ -904,55 +1045,58 @@ digraph G {
 "WhatsARanjit/vault-counter" ["l"="6.91,-12.81"]
 "hashicorp/private-terraform-enterprise" ["l"="6.916,-12.769"]
 "robertpeteuil/consul-demo" ["l"="6.9,-12.778"]
-"hashicorp/consul" ["l"="8.512,-8.406"]
-"gliderlabs/docker-consul" ["l"="7.153,-12.966"]
-"hashicorp/nomad" ["l"="8.494,-8.464"]
-"weibocom/nginx-upsync-module" ["l"="-20.673,-21.634"]
-"hashicorp/serf" ["l"="3.971,-8.257"]
-"gliderlabs/logspout" ["l"="5.988,-12.283"]
-"mantl/mantl" ["l"="6.501,-13.244"]
-"Capgemini/Apollo" ["l"="6.455,-13.26"]
+"gliderlabs/docker-alpine" ["l"="5.942,-12.194", "c"=270]
+"hashicorp/consul" ["l"="8.512,-8.406", "c"=14]
+"hashicorp/nomad" ["l"="8.494,-8.464", "c"=14]
+"weibocom/nginx-upsync-module" ["l"="-20.673,-21.634", "c"=245]
+"mantl/mantl" ["l"="6.501,-13.244", "c"=837]
+"Capgemini/Apollo" ["l"="6.455,-13.26", "c"=837]
 "aldoborrero/hashi-homelab" ["l"="6.941,-13.15"]
 "mr-karan/homelab" ["l"="6.963,-13.161"]
 "fhemberger/nomad-demo" ["l"="6.971,-13.14"]
+"rickfast/consul-client" ["l"="-5.226,9.234", "c"=703]
+"atcol/docker-registry-ui" ["l"="5.979,-12.419", "c"=270]
+"aquasecurity/trivy-action" ["l"="7.951,-45.723", "c"=544]
 "gitrgoliveira/vault-plugin-auth-tfe" ["l"="6.899,-12.763"]
-"hashicorp/setup-terraform" ["l"="10.476,-6.091"]
+"hashicorp/setup-terraform" ["l"="10.476,-6.091", "c"=162]
 "hashicorp/tfc-workflows-github" ["l"="6.88,-12.71"]
 "jfrog/vault-plugin-secrets-artifactory" ["l"="6.93,-12.751"]
 "hashicorp/field-workshops-consul" ["l"="6.88,-12.778"]
-"zaproxy/action-full-scan" ["l"="7.822,-45.693"]
+"zaproxy/action-full-scan" ["l"="7.822,-45.693", "c"=544]
+"hashicorp/hcl" ["l"="10.391,-6.397", "c"=162]
 "hashicorp/docker-consul" ["l"="7.144,-12.998"]
 "gliderlabs/connectable" ["l"="7.255,-12.984"]
-"mattfinlayson/ansible-consul" ["l"="7.896,-13.199"]
+"mattfinlayson/ansible-consul" ["l"="7.896,-13.199", "c"=739]
 "progrium/busybox" ["l"="7.221,-13.019"]
-"QubitProducts/bamboo" ["l"="6.434,-13.202"]
-"ehazlett/interlock" ["l"="6.144,-12.409"]
+"QubitProducts/bamboo" ["l"="6.434,-13.202", "c"=837]
+"ehazlett/interlock" ["l"="6.144,-12.409", "c"=270]
 "bellycard/docker-loadbalancer" ["l"="7.204,-12.974"]
 "Cimpress-MCP/fsconsul" ["l"="6.924,-12.898"]
 "DataDog/kvexpress" ["l"="7.029,-12.858"]
 "Cimpress-MCP/gosecret" ["l"="6.91,-12.894"]
-"wintoncode/Winton.Extensions.Configuration.Consul" ["l"="-34.636,-0.942"]
-"sous-chefs/consul" ["l"="9.104,-12.751"]
+"wintoncode/Winton.Extensions.Configuration.Consul" ["l"="-34.636,-0.942", "c"=8]
+"sous-chefs/consul" ["l"="9.104,-12.751", "c"=1111]
 "nicholasjackson/docker-consul-envoy" ["l"="6.727,-13.002"]
+"coursehero/slacktee" ["l"="43.553,21.416", "c"=20]
 "hashicorp/terraform-enterprise-release-notes" ["l"="6.797,-12.792"]
 "cneralich/tfe-tfc-migration-tool" ["l"="6.851,-12.789"]
-"hashicorp/terraform-aws-terraform-enterprise" ["l"="6.768,-12.782"]
+"hashicorp/waypoint" ["l"="10.484,-6.387", "c"=162]
 "nahsi-homelab/nomad" ["l"="6.98,-13.173"]
-"kubernetes-sigs/secrets-store-csi-driver" ["l"="7.734,-9.24"]
-"ricoberger/vault-secrets-operator" ["l"="7.531,-9.289"]
+"ricoberger/vault-secrets-operator" ["l"="7.531,-9.289", "c"=14]
 "UKHomeOffice/vault-sidekick" ["l"="7.029,-12.684"]
-"sethvargo/vault-on-gke" ["l"="45.27,16.475"]
-"external-secrets/kubernetes-external-secrets" ["l"="7.713,-9.1"]
+"external-secrets/kubernetes-external-secrets" ["l"="7.713,-9.1", "c"=14]
 "shipyard-run/blueprints" ["l"="6.828,-13.038"]
 "jumppad-labs/hclconfig" ["l"="6.838,-13.068"]
 "hashicorp/go-changelog" ["l"="6.821,-13.06"]
 "hashicorp/terraform-aws-consul-starter" ["l"="6.89,-12.829"]
-"zerodha/nomad-cluster-setup" ["l"="23.596,-29.139"]
+"zerodha/nomad-cluster-setup" ["l"="23.596,-29.139", "c"=36]
+"cloudfoundry-attic/lattice-release" ["l"="7.961,-13.71", "c"=507]
 "jeanblanchard/docker-busybox-java" ["l"="7.249,-13.041"]
 "maxmanuylov/terraform-provider-kubernetes" ["l"="7.09,-12.992"]
 "hashicorp/terraform-sentinel-policies" ["l"="6.841,-12.773"]
 "hashicorp/tfe-policies-example" ["l"="6.794,-12.777"]
 "straubt1/tfx" ["l"="6.817,-12.777"]
+"ned1313/terraform-tuesdays" ["l"="-46.179,7.312", "c"=144]
 "assareh/home-lab" ["l"="6.914,-13.153"]
 "kencx/homelab" ["l"="6.929,-13.133"]
 "davosian/home-cluster-v2" ["l"="6.912,-13.125"]
@@ -967,7 +1111,8 @@ digraph G {
 "hashicorp/field-workshops-terraform" ["l"="6.861,-12.763"]
 "hashicorp/field-workshops-vault" ["l"="6.865,-12.748"]
 "nicolaka/TFBI" ["l"="6.81,-12.762"]
-"assareh/tfc-agent" ["l"="6.828,-12.76"]
+"neillturner/kitchen-ansible" ["l"="8.446,-12.332", "c"=600]
+"jhaals/ansible-vault" ["l"="7.151,-12.845"]
 "hashicorp/homebrew-tap" ["l"="6.818,-12.668"]
 "hashicorp/tfc-workflows-tooling" ["l"="6.848,-12.706"]
 "hashicorp/terraform-azurerm-terraform-enterprise" ["l"="6.743,-12.767"]
@@ -977,88 +1122,108 @@ digraph G {
 "star3am/hashiqube" ["l"="6.872,-13.095"]
 "nunchistudio/hashibox" ["l"="6.9,-13.092"]
 "pete0emerson/hashipoc" ["l"="6.985,-13.193"]
+"jenkinsci/helm-charts" ["l"="7.921,-9.126", "c"=14]
 "jcolemorrison/cloudfoundation" ["l"="6.8,-12.914"]
-"cneira/firecracker-task-driver" ["l"="-25.371,-22.227"]
+"cneira/firecracker-task-driver" ["l"="-25.371,-22.227", "c"=1051]
 "hashicorp/field-workshops-nomad" ["l"="6.88,-12.753"]
 "tgross/goroutine-inspect" ["l"="7.099,-13.148"]
 "jasonodonnell/vault-agent-demo" ["l"="6.885,-12.807"]
 "devops-rob/target-cli" ["l"="6.808,-13.088"]
 "nicholasjackson/kapsule" ["l"="6.8,-13.041"]
-"jonasvinther/medusa" ["l"="7.15,-12.697"]
 "FalcoSuessgott/vkv" ["l"="7.164,-12.654"]
 "adamdecaf/vault-backend-migrator" ["l"="7.189,-12.669"]
 "egen/safe" ["l"="7.157,-12.802"]
-"elsesiy/kubectl-view-secret" ["l"="7.316,-9.072"]
-"TerryHowe/ansible-modules-hashivault" ["l"="7.153,-12.868"]
-"jhaals/ansible-vault" ["l"="7.151,-12.845"]
-"ansible/molecule" ["l"="8.594,-12.34"]
-"Boostport/kubernetes-vault" ["l"="10.406,-10.11"]
+"elsesiy/kubectl-view-secret" ["l"="7.316,-9.072", "c"=14]
+"ansible/molecule" ["l"="8.594,-12.34", "c"=600]
+"Boostport/kubernetes-vault" ["l"="10.406,-10.11", "c"=740]
+"stack72/ops-books" ["l"="10.229,-6.091", "c"=162]
 "jsok/hiera-vault" ["l"="6.89,-12.952"]
 "Cimpress-MCP/vagrant-winrm-syncedfolders" ["l"="6.861,-12.882"]
-"neillturner/kitchen-ansible" ["l"="8.446,-12.332"]
 "seatgeek/nomad-helper" ["l"="6.96,-13.037"]
 "mxab/nacp" ["l"="7.007,-13.119"]
-"ansible-collections/ansible-consul" ["l"="7.076,-13.028"]
-"ansible-community/ansible-vault" ["l"="7.116,-12.984"]
-"DavidWittman/ansible-redis" ["l"="7.908,-13.034"]
 "fmeringdal/do-hashicorp-cluster" ["l"="6.914,-13.198"]
 "darron/sifter" ["l"="7.042,-12.822"]
-"mantl/mesos-consul" ["l"="6.409,-13.244"]
+"mantl/mesos-consul" ["l"="6.409,-13.244", "c"=837]
 "gliderlabs/resolvable" ["l"="7.311,-12.999"]
 "GuyBarros/terraform-enterprise-counter" ["l"="6.895,-12.735"]
 "Roblox/rblx_nurd" ["l"="7.004,-13.165"]
 "straubt1/tfe-alternative-worker" ["l"="6.79,-12.755"]
 "jsiebens/nomad-droplets-autoscaler" ["l"="6.895,-13.228"]
+"cloudfoundry-community/vault-boshrelease" ["l"="7.814,-13.789", "c"=507]
+"shieldproject/shield-boshrelease" ["l"="7.191,-12.791"]
 "Cimpress-MCP/PostalCodes.Net" ["l"="6.812,-12.893"]
+"Yelp/dumb-init" ["l"="5.942,-12.151", "c"=270]
 "pshima/consul-snapshot" ["l"="6.992,-12.91"]
+"TritonDataCenter/containerpilot" ["l"="-24.916,-23.774", "c"=745]
+"apache/libcloud" ["l"="1.381,15.064", "c"=857]
+"pearofducks/ansible-vim" ["l"="8.615,-12.368", "c"=600]
+"iron-io/dockers" ["l"="6.032,-12.291", "c"=270]
+"statsite/statsite" ["l"="4.072,-7.617", "c"=0]
+"operable/cog" ["l"="4.906,15.131", "c"=44]
 "djschnei21/multi-product-integration-demo" ["l"="6.827,-12.737"]
 "hashicorp/sentinel-github-actions" ["l"="6.812,-12.746"]
+"DontShaveTheYak/cf2tf" ["l"="10.899,-4.658", "c"=147]
 "jboero/nomados" ["l"="6.999,-13.137"]
 "myENA/consultant" ["l"="6.997,-12.926"]
 "CGamesPlay/infra" ["l"="6.871,-13.188"]
 "jonasvinther/nomad-gitops-operator" ["l"="6.924,-13.107"]
 "Cimpress-MCP/healthcheck.spec" ["l"="6.863,-12.912"]
+"brikis98/infrastructure-as-code-talk" ["l"="10.311,-6.135", "c"=162]
+"gruntwork-io/fetch" ["l"="10.371,-6.055", "c"=162]
+"docker-archive/dockercloud-haproxy" ["l"="6.21,-12.405", "c"=270]
 "lingrino/vaku" ["l"="7.175,-12.764"]
-"redhat-cop/vault-config-operator" ["l"="10.564,-11.599"]
+"redhat-cop/vault-config-operator" ["l"="10.564,-11.599", "c"=431]
 "hashicorp/vault-benchmark" ["l"="7.056,-12.679"]
-"cloudfoundry-incubator/docker-boshrelease" ["l"="7.842,-13.8"]
-"shieldproject/shield" ["l"="7.836,-13.815"]
-"shieldproject/shield-boshrelease" ["l"="7.191,-12.791"]
-"ljfranklin/terraform-resource" ["l"="7.784,-13.632"]
+"hashicorp-forge/hermes" ["l"="9.584,-10.253", "c"=484]
+"ZZROTDesign/docker-clean" ["l"="6.06,-12.318", "c"=270]
+"cloudfoundry-incubator/docker-boshrelease" ["l"="7.842,-13.8", "c"=507]
+"shieldproject/shield" ["l"="7.836,-13.815", "c"=507]
+"ljfranklin/terraform-resource" ["l"="7.784,-13.632", "c"=507]
 "rundeck-plugins/ansible-plugin" ["l"="7.238,-12.849"]
-"rundeck/rundeck" ["l"="8.754,-12.27"]
+"rundeck/rundeck" ["l"="8.754,-12.27", "c"=600]
 "rundeck/anvils-demo" ["l"="7.28,-12.822"]
 "octplane/ansible_stdout_compact_logger" ["l"="7.296,-12.853"]
-"geerlingguy/ansible-role-awx" ["l"="7.76,-12.995"]
-"sohaha/naiveui-admin-template" ["l"="-53.028,-12.028"]
-"sohutv/hotcaffeine" ["l"="-53.055,-12.013"]
-"zhensherlock/company-autocomplete" ["l"="-53.011,-11.889"]
-"KylinC/ChatFinance" ["l"="-53.002,-11.977"]
+"geerlingguy/ansible-role-awx" ["l"="7.76,-12.995", "c"=739]
+"kz8s/tack" ["l"="10.338,-10.031", "c"=740]
+"sohaha/naiveui-admin-template" ["l"="-53.028,-12.028", "c"=400]
+"sohutv/hotcaffeine" ["l"="-53.055,-12.013", "c"=400]
+"zhensherlock/company-autocomplete" ["l"="-53.011,-11.889", "c"=400]
+"KylinC/ChatFinance" ["l"="-53.002,-11.977", "c"=400]
 "MiteshSharma/AnsibleVaultRole" ["l"="7.172,-12.929"]
-"interface-ui/interface-ui" ["l"="-52.964,-12.008"]
-"TeeworldsFun/Tee-World" ["l"="-53.017,-12.093"]
-"ansible-community/ara" ["l"="8.591,-12.361"]
+"interface-ui/interface-ui" ["l"="-52.964,-12.008", "c"=400]
+"TeeworldsFun/Tee-World" ["l"="-53.017,-12.093", "c"=400]
+"ansible-community/ara" ["l"="8.591,-12.361", "c"=600]
 "hashicorp/docker-base" ["l"="7.172,-13.024"]
+"jonmorehouse/terraform-provisioner-ansible" ["l"="10.175,-6.16", "c"=162]
 "Cimpress-MCP/postal-codes-js" ["l"="6.774,-12.893"]
 "star3am/terraform-modules-library" ["l"="6.846,-13.113"]
+"riemers/ansible-gitlab-runner" ["l"="7.956,-13.057", "c"=739]
+"yyyar/gobetween" ["l"="3.804,-8.194", "c"=0]
+"ks888/LambStatus" ["l"="10.153,-6.284", "c"=162]
 "rishavnandi/ansible_homelab" ["l"="6.923,-13.266"]
 "nickjg1/homeserver-ansible" ["l"="6.9,-13.293"]
 "artyorsh/ansible-collection-selfhosted" ["l"="6.929,-13.309"]
+"airbnb/synapse" ["l"="-0.266,17.227", "c"=398]
 "hashicorp/tfc-workflows-gitlab" ["l"="6.856,-12.687"]
-"hashicorp/hcp-terraform-operator" ["l"="7.551,-9.62"]
+"hashicorp/hcp-terraform-operator" ["l"="7.551,-9.62", "c"=14]
 "Cimpress/swagger-ui-cimpress" ["l"="6.841,-12.879"]
 "theopak/react-parallax-card" ["l"="6.808,-12.874"]
 "nyxcharon/vault-ui" ["l"="7.201,-12.879"]
-"hootsuite/atlantis" ["l"="10.272,-6.156"]
-"k1LoW/awspec" ["l"="10.324,-6.172"]
-"kelseyhightower/vault-controller" ["l"="10.41,-10.092"]
-"goss-org/goss" ["l"="8.512,-12.343"]
-"coreos/vault-operator" ["l"="10.392,-10.186"]
-"wallix/awless" ["l"="10.143,-6.356"]
-"camptocamp/terraboard" ["l"="10.43,-6.162"]
-"riemers/ansible-gitlab-runner" ["l"="7.956,-13.057"]
-"cloudalchemy/ansible-node-exporter" ["l"="8.004,-13.01"]
+"hootsuite/atlantis" ["l"="10.272,-6.156", "c"=162]
+"k1LoW/awspec" ["l"="10.324,-6.172", "c"=162]
+"kelseyhightower/vault-controller" ["l"="10.41,-10.092", "c"=740]
+"goss-org/goss" ["l"="8.512,-12.343", "c"=600]
+"coreos/vault-operator" ["l"="10.392,-10.186", "c"=740]
+"wallix/awless" ["l"="10.143,-6.356", "c"=162]
+"camptocamp/terraboard" ["l"="10.43,-6.162", "c"=162]
+"weaveworks/grafanalib" ["l"="9.705,-10.633", "c"=484]
+"timbod7/haskell-chart" ["l"="-20.656,-20.054", "c"=118]
 "protectwise/stork" ["l"="7.008,-12.936"]
 "mapmyfitness/libra" ["l"="6.948,-12.995"]
+"dthree/addict" ["l"="-1.392,-26.826", "c"=814]
+"jon6fingrs/ghostboard" ["l"="12.446,-8.461", "c"=18]
+"hashicorp/terraform-provider-tls" ["l"="10.389,-5.821", "c"=162]
 "hashicorp/go-discover" ["l"="7.056,-13.093"]
+"kagent-dev/kagent" ["l"="9.706,-11.055", "c"=834]
+"kelseyhightower/nomad-on-kubernetes" ["l"="10.409,-10.001", "c"=740]
 }

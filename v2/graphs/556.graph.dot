@@ -1,5 +1,9 @@
 digraph G {
+"epfml/attention-cnn" -> "openai/sparse_attention" ["e"=1]
+"mamba-org/mamba" -> "state-spaces/mamba" ["e"=1]
+"rusty1s/pytorch_sparse" -> "huggingface/pytorch_block_sparse" ["e"=1]
 "wzlxjtu/PositionalEncoding2D" -> "tatp22/multidim-positional-encoding"
+"huggingface/hmtl" -> "facebookresearch/adaptive-span" ["e"=1]
 "openai/blocksparse" -> "openai/sparse_attention"
 "openai/blocksparse" -> "ptillet/torch-blocksparse"
 "openai/blocksparse" -> "huggingface/pytorch_block_sparse"
@@ -15,6 +19,8 @@ digraph G {
 "openai/blocksparse" -> "gunrock/gunrock" ["e"=1]
 "openai/blocksparse" -> "NVIDIA/cub" ["e"=1]
 "openai/blocksparse" -> "NVIDIA-developer-blog/code-samples" ["e"=1]
+"microsoft/NeuronBlocks" -> "openai/sparse_attention" ["e"=1]
+"jcpeterson/openwebtext" -> "huggingface/pytorch_block_sparse" ["e"=1]
 "openai/sparse_attention" -> "openai/blocksparse"
 "openai/sparse_attention" -> "kimiyoung/transformer-xl" ["e"=1]
 "openai/sparse_attention" -> "lucidrains/reformer-pytorch"
@@ -30,6 +36,8 @@ digraph G {
 "openai/sparse_attention" -> "thunlp/ERNIE" ["e"=1]
 "openai/sparse_attention" -> "idiap/fast-transformers"
 "openai/sparse_attention" -> "facebookresearch/XLM" ["e"=1]
+"keitakurita/Practical_NLP_in_PyTorch" -> "facebookresearch/adaptive-span" ["e"=1]
+"juho-lee/set_transformer" -> "lucidrains/perceiver-pytorch" ["e"=1]
 "facebookresearch/adaptive-span" -> "nelson-liu/contextual-repr-analysis" ["e"=1]
 "facebookresearch/adaptive-span" -> "facebookresearch/unlikelihood_training" ["e"=1]
 "facebookresearch/adaptive-span" -> "Smerity/sha-rnn" ["e"=1]
@@ -45,12 +53,18 @@ digraph G {
 "facebookresearch/adaptive-span" -> "openai/sparse_attention"
 "facebookresearch/adaptive-span" -> "cybertronai/transformer-xl"
 "facebookresearch/adaptive-span" -> "deep-spin/entmax" ["e"=1]
+"keroro824/HashingDeepLearning" -> "openai/blocksparse" ["e"=1]
+"deep-spin/entmax" -> "facebookresearch/adaptive-span" ["e"=1]
 "zhuohan123/macaron-net" -> "gonglinyuan/StackingBERT"
 "HazyResearch/butterfly" -> "HazyResearch/structured-nets"
 "HazyResearch/butterfly" -> "HazyResearch/fly"
 "cmsflash/efficient-attention" -> "lucidrains/linear-attention-transformer"
 "cmsflash/efficient-attention" -> "xyltt/Linear-Transformer"
 "cmsflash/efficient-attention" -> "lironui/Linear-Attention-Mechanism" ["e"=1]
+"google/trax" -> "lucidrains/reformer-pytorch" ["e"=1]
+"raminmh/liquid_time_constant_networks" -> "state-spaces/s4" ["e"=1]
+"allenai/longformer" -> "lucidrains/reformer-pytorch" ["e"=1]
+"allenai/longformer" -> "google-research/bigbird" ["e"=1]
 "idiap/fast-transformers" -> "lucidrains/performer-pytorch"
 "idiap/fast-transformers" -> "lucidrains/linear-attention-transformer"
 "idiap/fast-transformers" -> "lucidrains/reformer-pytorch"
@@ -81,6 +95,8 @@ digraph G {
 "lucidrains/reformer-pytorch" -> "tatp22/linformer-pytorch"
 "lucidrains/reformer-pytorch" -> "zihangdai/xlnet" ["e"=1]
 "lucidrains/reformer-pytorch" -> "lucidrains/sinkhorn-transformer"
+"mlech26l/ncps" -> "state-spaces/s4" ["e"=1]
+"mlech26l/ncps" -> "NX-AI/xlstm" ["e"=1]
 "mit-han-lab/lite-transformer" -> "mit-han-lab/hardware-aware-transformers" ["e"=1]
 "mit-han-lab/lite-transformer" -> "sacmehta/delight"
 "mit-han-lab/lite-transformer" -> "laiguokun/Funnel-Transformer"
@@ -122,20 +138,32 @@ digraph G {
 "lucidrains/linear-attention-transformer" -> "mlpen/Nystromformer" ["e"=1]
 "lucidrains/linear-attention-transformer" -> "lucidrains/perceiver-pytorch"
 "lucidrains/linear-attention-transformer" -> "OpenNLPLab/cosFormer" ["e"=1]
+"lucidrains/mixture-of-experts" -> "lucidrains/linear-attention-transformer" ["e"=1]
 "sacmehta/delight" -> "mit-han-lab/lite-transformer"
 "sacmehta/delight" -> "kahne/NonAutoregGenProgress" ["e"=1]
+"ml-jku/hopfield-layers" -> "idiap/fast-transformers" ["e"=1]
+"ml-jku/hopfield-layers" -> "state-spaces/s4" ["e"=1]
+"ml-jku/hopfield-layers" -> "NX-AI/xlstm" ["e"=1]
 "lucidrains/sinkhorn-transformer" -> "lucidrains/routing-transformer"
 "lucidrains/sinkhorn-transformer" -> "yzh119/BPT"
+"HHousen/TransformerSum" -> "microsoft/fastseq" ["e"=1]
 "richarddwang/electra_pytorch" -> "lucidrains/electra-pytorch"
 "richarddwang/electra_pytorch" -> "lonePatient/electra_pytorch"
 "richarddwang/electra_pytorch" -> "microsoft/COCO-LM"
 "richarddwang/electra_pytorch" -> "laiguokun/Funnel-Transformer"
 "richarddwang/electra_pytorch" -> "google-research/electra" ["e"=1]
+"abhimishra91/transformers-tutorials" -> "allenai/naacl2021-longdoc-tutorial" ["e"=1]
+"mit-han-lab/hardware-aware-transformers" -> "mit-han-lab/lite-transformer" ["e"=1]
+"acl-org/acl-anthology" -> "facebookresearch/adaptive-span" ["e"=1]
 "tatp22/multidim-positional-encoding" -> "wzlxjtu/PositionalEncoding2D"
 "tatp22/multidim-positional-encoding" -> "krasserm/perceiver-io"
 "tatp22/multidim-positional-encoding" -> "lucidrains/perceiver-pytorch"
+"Smerity/sha-rnn" -> "facebookresearch/adaptive-span" ["e"=1]
+"Smerity/sha-rnn" -> "lucidrains/reformer-pytorch" ["e"=1]
+"microsoft/MPNet" -> "laiguokun/Funnel-Transformer" ["e"=1]
 "ptillet/torch-blocksparse" -> "huggingface/pytorch_block_sparse"
 "ptillet/torch-blocksparse" -> "openai/blocksparse"
+"microsoft/ProphetNet" -> "microsoft/fastseq" ["e"=1]
 "tatp22/linformer-pytorch" -> "lucidrains/linformer"
 "tatp22/linformer-pytorch" -> "lucidrains/linear-attention-transformer"
 "tatp22/linformer-pytorch" -> "lucidrains/sinkhorn-transformer"
@@ -163,7 +191,10 @@ digraph G {
 "Separius/awesome-fast-attention" -> "AlexHex7/Non-local_pytorch" ["e"=1]
 "Separius/awesome-fast-attention" -> "cmsflash/efficient-attention"
 "Separius/awesome-fast-attention" -> "lucidrains/linformer"
+"microsoft/fastformers" -> "microsoft/fastseq" ["e"=1]
+"microsoft/fastformers" -> "laiguokun/Funnel-Transformer" ["e"=1]
 "HazyResearch/hippo-code" -> "state-spaces/s4"
+"2prime/ODE-DL" -> "zhuohan123/macaron-net" ["e"=1]
 "microsoft/fastseq" -> "guolinke/TUPE"
 "microsoft/fastseq" -> "microsoft/fastformers" ["e"=1]
 "microsoft/fastseq" -> "laiguokun/Funnel-Transformer"
@@ -180,6 +211,7 @@ digraph G {
 "lucidrains/local-attention" -> "lucidrains/taylor-series-linear-attention"
 "lucidrains/local-attention" -> "NVIDIA/transformer-ls" ["e"=1]
 "lucidrains/local-attention" -> "lucidrains/pytorch-custom-utils"
+"asigalov61/Tegridy-MIDI-Dataset" -> "asigalov61/Optimus-VIRTUOSO" ["e"=1]
 "lucidrains/electra-pytorch" -> "richarddwang/electra_pytorch"
 "lucidrains/electra-pytorch" -> "lonePatient/electra_pytorch"
 "laiguokun/Funnel-Transformer" -> "MC-BERT/MC-BERT"
@@ -191,6 +223,11 @@ digraph G {
 "lonePatient/electra_pytorch" -> "lucidrains/electra-pytorch"
 "lonePatient/electra_pytorch" -> "richarddwang/electra_pytorch"
 "XuezheMax/fairseq-apollo" -> "sooftware/luna-transformer" ["e"=1]
+"BlinkDL/RWKV-LM" -> "state-spaces/mamba" ["e"=1]
+"HuCaoFighting/Swin-Unet" -> "JCruan519/VM-UNet" ["e"=1]
+"amusi/ICCV2023-Papers-with-Code" -> "MzeroMiko/VMamba" ["e"=1]
+"lucidrains/x-transformers" -> "lucidrains/reformer-pytorch" ["e"=1]
+"miracleyoo/pytorch-lightning-template" -> "MzeroMiko/VMamba" ["e"=1]
 "cloneofsimo/realformer-pytorch" -> "cloneofsimo/clipping-CLIP-to-GAN"
 "cloneofsimo/realformer-pytorch" -> "L0Z1K/para-Kor"
 "lucidrains/performer-pytorch" -> "idiap/fast-transformers"
@@ -208,6 +245,8 @@ digraph G {
 "lucidrains/performer-pytorch" -> "sacmehta/delight"
 "lucidrains/performer-pytorch" -> "state-spaces/s4"
 "lucidrains/performer-pytorch" -> "Separius/awesome-fast-attention"
+"lucidrains/lambda-networks" -> "lucidrains/performer-pytorch" ["e"=1]
+"McGregorWwww/UCTransNet" -> "kiharalab/ACC-UNet" ["e"=1]
 "lucidrains/perceiver-pytorch" -> "krasserm/perceiver-io"
 "lucidrains/perceiver-pytorch" -> "lucidrains/performer-pytorch"
 "lucidrains/perceiver-pytorch" -> "lucidrains/flamingo-pytorch" ["e"=1]
@@ -223,6 +262,13 @@ digraph G {
 "lucidrains/perceiver-pytorch" -> "NVlabs/GroupViT" ["e"=1]
 "lucidrains/perceiver-pytorch" -> "state-spaces/s4"
 "lucidrains/perceiver-pytorch" -> "esceptico/perceiver-io"
+"lucidrains/tab-transformer-pytorch" -> "lucidrains/electra-pytorch" ["e"=1]
+"Rayicer/TransFuse" -> "JCruan519/EGE-UNet" ["e"=1]
+"Rayicer/TransFuse" -> "yaoppeng/U-Net_v2" ["e"=1]
+"Rayicer/TransFuse" -> "xianlin7/ConvFormer" ["e"=1]
+"raminmh/CfC" -> "state-spaces/s4" ["e"=1]
+"raminmh/CfC" -> "lindermanlab/S5" ["e"=1]
+"juntang-zhuang/Adabelief-Optimizer" -> "lucidrains/performer-pytorch" ["e"=1]
 "google-research/bigbird" -> "allenai/longformer" ["e"=1]
 "google-research/bigbird" -> "google-research/long-range-arena"
 "google-research/bigbird" -> "LowinLi/chinese-bigbird"
@@ -234,6 +280,10 @@ digraph G {
 "google-research/bigbird" -> "google-research/longt5"
 "google-research/bigbird" -> "allenai/naacl2021-longdoc-tutorial"
 "google-research/bigbird" -> "microsoft/DeBERTa" ["e"=1]
+"Ki6an/fastT5" -> "microsoft/fastseq" ["e"=1]
+"IBM/CrossViT" -> "hunto/LocalMamba" ["e"=1]
+"lucidrains/rotary-embedding-torch" -> "lucidrains/local-attention" ["e"=1]
+"lucidrains/rotary-embedding-torch" -> "lucidrains/agent-attention-pytorch" ["e"=1]
 "google-research/long-range-arena" -> "idiap/fast-transformers"
 "google-research/long-range-arena" -> "lucidrains/performer-pytorch"
 "google-research/long-range-arena" -> "google-research/bigbird"
@@ -256,6 +306,10 @@ digraph G {
 "cloneofsimo/clipping-CLIP-to-GAN" -> "cloneofsimo/poly2SOP"
 "L0Z1K/para-Kor" -> "cloneofsimo/clipping-CLIP-to-GAN"
 "cloneofsimo/poly2SOP" -> "cloneofsimo/zeroshot-storytelling"
+"raminmh/liquid-s4" -> "lindermanlab/S5" ["e"=1]
+"xmindflow/Awesome-Transformer-in-Medical-Imaging" -> "Omid-Nejati/MedViT" ["e"=1]
+"Dao-AILab/flash-attention" -> "state-spaces/mamba" ["e"=1]
+"MCG-NJU/VideoMAE" -> "OpenGVLab/VideoMamba" ["e"=1]
 "state-spaces/s4" -> "srush/annotated-s4"
 "state-spaces/s4" -> "state-spaces/mamba"
 "state-spaces/s4" -> "lindermanlab/S5"
@@ -283,10 +337,14 @@ digraph G {
 "srush/annotated-s4" -> "HazyResearch/H3"
 "srush/annotated-s4" -> "srush/LLM-Training-Puzzles" ["e"=1]
 "srush/annotated-s4" -> "radarFudan/Awesome-state-space-models"
+"icey-zhang/SuperYOLO" -> "HZAI-ZJNU/Mamba-YOLO" ["e"=1]
+"huaaaliu/RGBX_Semantic_Segmentation" -> "zifuwan/Sigma" ["e"=1]
 "huoxiangzuo/HiFuse" -> "Omid-Nejati/MedViT"
 "huoxiangzuo/HiFuse" -> "huoxiangzuo/SPA"
 "huoxiangzuo/HiFuse" -> "YubiaoYue/MedMamba"
 "JunnYu/FLASHQuad_pytorch" -> "hscspring/bytepiece-rs"
+"jeya-maria-jose/UNeXt-pytorch" -> "JCruan519/EGE-UNet" ["e"=1]
+"jeya-maria-jose/UNeXt-pytorch" -> "JCruan519/VM-UNet" ["e"=1]
 "lucidrains/FLASH-pytorch" -> "JunnYu/FLASHQuad_pytorch"
 "lucidrains/FLASH-pytorch" -> "lucidrains/flash-cosine-sim-attention" ["e"=1]
 "lucidrains/FLASH-pytorch" -> "ZhuiyiTechnology/GAU-alpha" ["e"=1]
@@ -295,6 +353,7 @@ digraph G {
 "krasserm/perceiver-io" -> "google-research/perceiver-ar"
 "krasserm/perceiver-io" -> "lucidrains/perceiver-ar-pytorch"
 "esceptico/perceiver-io" -> "esceptico/squeezer" ["e"=1]
+"Dootmaan/MT-UNet" -> "gorkemcanates/Dual-Cross-Attention" ["e"=1]
 "HazyResearch/fly" -> "HazyResearch/butterfly"
 "cloneofsimo/zeroshot-storytelling" -> "cloneofsimo/poly2SOP"
 "BlinkDL/RWKV-CUDA" -> "JL-er/RWKV-PEFT"
@@ -303,6 +362,7 @@ digraph G {
 "google-research/perceiver-ar" -> "lucidrains/perceiver-ar-pytorch"
 "google-research/perceiver-ar" -> "feizc/Perceiver-Music-Generation"
 "BlinkDL/RWKV-v2-RNN-Pile" -> "ArEnSc/Production-RWKV"
+"JonasGeiping/cramming" -> "HazyResearch/H3" ["e"=1]
 "HazyResearch/H3" -> "facebookresearch/mega"
 "HazyResearch/H3" -> "ctlllll/SGConv"
 "HazyResearch/H3" -> "lindermanlab/S5"
@@ -314,9 +374,18 @@ digraph G {
 "HazyResearch/H3" -> "JonasGeiping/cramming" ["e"=1]
 "HazyResearch/H3" -> "HazyResearch/m2"
 "HazyResearch/H3" -> "lucidrains/recurrent-memory-transformer-pytorch" ["e"=1]
+"JunweiLiang/awesome_lists" -> "yyyujintang/Awesome-Mamba-Papers" ["e"=1]
 "ctlllll/SGConv" -> "lindermanlab/S5"
+"Amshaker/unetr_plus_plus" -> "bowang-lab/U-Mamba" ["e"=1]
+"Amshaker/unetr_plus_plus" -> "ge-xing/SegMamba" ["e"=1]
+"yangqy1110/Diffusion-Models" -> "ziyangwang007/Mamba-UNet" ["e"=1]
+"ExtensityAI/symbolicai" -> "NX-AI/xlstm" ["e"=1]
 "lucidrains/perceiver-ar-pytorch" -> "feizc/Perceiver-Music-Generation"
 "lucidrains/perceiver-ar-pytorch" -> "google-research/perceiver-ar"
+"NITR098/Awesome-U-Net" -> "xmindflow/deformableLKA" ["e"=1]
+"NITR098/Awesome-U-Net" -> "SLDGroup/EMCAD" ["e"=1]
+"NITR098/Awesome-U-Net" -> "yaoppeng/U-Net_v2" ["e"=1]
+"NITR098/Awesome-U-Net" -> "ziyangwang007/Mamba-UNet" ["e"=1]
 "lindermanlab/S5" -> "i404788/s5-pytorch"
 "lindermanlab/S5" -> "ctlllll/SGConv"
 "lindermanlab/S5" -> "srush/annotated-s4"
@@ -330,6 +399,8 @@ digraph G {
 "lindermanlab/S5" -> "luchris429/popjaxrl" ["e"=1]
 "lindermanlab/S5" -> "HazyResearch/spacetime"
 "lindermanlab/S5" -> "ruke1ire/RTF"
+"OpenGVLab/InternVideo" -> "OpenGVLab/VideoMamba" ["e"=1]
+"CarperAI/OpenELM" -> "HazyResearch/H3" ["e"=1]
 "facebookresearch/mega" -> "XuezheMax/fairseq-apollo"
 "facebookresearch/mega" -> "HazyResearch/based"
 "facebookresearch/mega" -> "lucidrains/Mega-pytorch"
@@ -337,6 +408,7 @@ digraph G {
 "facebookresearch/mega" -> "lindermanlab/S5"
 "JCruan519/MALUNet" -> "JCruan519/EGE-UNet"
 "JCruan519/MALUNet" -> "xuxuxuxuxuxjh/LB-UNet"
+"asigalov61/Los-Angeles-Music-Composer" -> "asigalov61/Perceiver-Music-Transformer" ["e"=1]
 "harrisonvanderbyl/rwkvstic" -> "hizkifw/WebChatRWKVstic"
 "harrisonvanderbyl/rwkvstic" -> "ArEnSc/Production-RWKV"
 "harrisonvanderbyl/rwkvstic" -> "harrisonvanderbyl/rwkv_chatbot"
@@ -344,11 +416,14 @@ digraph G {
 "harrisonvanderbyl/rwkvstic" -> "cryscan/eloise"
 "harrisonvanderbyl/rwkvstic" -> "gururise/rwkv_gradio"
 "harrisonvanderbyl/rwkvstic" -> "mrsteyk/RWKV-LM-deepspeed"
+"MASILab/3DUX-Net" -> "ge-xing/SegMamba" ["e"=1]
+"MASILab/3DUX-Net" -> "bowang-lab/U-Mamba" ["e"=1]
 "nlpodyssey/verbaflow" -> "nlpodyssey/rwkv"
 "lucidrains/Mega-pytorch" -> "facebookresearch/mega"
 "asigalov61/Perceiver-Music-Transformer" -> "feizc/Perceiver-Music-Generation"
 "asigalov61/Perceiver-Music-Transformer" -> "google-research/perceiver-ar"
 "asigalov61/Perceiver-Music-Transformer" -> "asigalov61/Optimus-VIRTUOSO"
+"salesforce/causalai" -> "HazyResearch/spacetime" ["e"=1]
 "meraks/Swin-Transformer-1D" -> "chgwan/1DSwin"
 "ArEnSc/Production-RWKV" -> "mrsteyk/rwkvk-rs"
 "ArEnSc/Production-RWKV" -> "harrisonvanderbyl/rwkv_chatbot"
@@ -380,6 +455,7 @@ digraph G {
 "RWKV/rwkv.cpp" -> "ggml-org/ggml" ["e"=1]
 "RWKV/rwkv.cpp" -> "josStorer/RWKV-Runner" ["e"=1]
 "RWKV/rwkv.cpp" -> "ridgerchu/SpikeGPT" ["e"=1]
+"vec2text/vec2text" -> "HazyResearch/m2" ["e"=1]
 "Omid-Nejati/MedViT" -> "Omid-Nejati/MedViTV2"
 "Omid-Nejati/MedViT" -> "huoxiangzuo/HiFuse"
 "Omid-Nejati/MedViT" -> "Omid-Nejati/BEFUnet"
@@ -387,6 +463,12 @@ digraph G {
 "Omid-Nejati/MedViT" -> "Omid-Nejati/DenUnet"
 "Omid-Nejati/MedViT" -> "Omid-Nejati/Locality-iN-Locality"
 "Omid-Nejati/MedViT" -> "YubiaoYue/MedMamba"
+"OpenGVLab/SAM-Med2D" -> "bowang-lab/U-Mamba" ["e"=1]
+"Liuhong99/Sophia" -> "HazyResearch/safari" ["e"=1]
+"josStorer/RWKV-Runner" -> "Ai00-X/ai00_server" ["e"=1]
+"josStorer/RWKV-Runner" -> "RWKV/rwkv.cpp" ["e"=1]
+"NVlabs/FasterViT" -> "NVlabs/MambaVision" ["e"=1]
+"kyegomez/LongNet" -> "kyegomez/zeta" ["e"=1]
 "YaoleiQi/DSCNet" -> "xmindflow/deformableLKA"
 "YaoleiQi/DSCNet" -> "jocpae/clDice" ["e"=1]
 "YaoleiQi/DSCNet" -> "Zyun-Y/DconnNet" ["e"=1]
@@ -402,6 +484,14 @@ digraph G {
 "YaoleiQi/DSCNet" -> "MrBlankness/LightM-UNet"
 "YaoleiQi/DSCNet" -> "MIC-DKFZ/MedNeXt" ["e"=1]
 "YaoleiQi/DSCNet" -> "Beckschen/3D-TransUNet" ["e"=1]
+"yemu1138178251/FFCA-YOLO" -> "HZAI-ZJNU/Mamba-YOLO" ["e"=1]
+"Jamie-Stirling/RetNet" -> "johnma2006/mamba-minimal" ["e"=1]
+"Jamie-Stirling/RetNet" -> "alxndrTL/mamba.py" ["e"=1]
+"Jamie-Stirling/RetNet" -> "HazyResearch/m2" ["e"=1]
+"Jamie-Stirling/RetNet" -> "state-spaces/mamba" ["e"=1]
+"OpenGVLab/VideoMAEv2" -> "OpenGVLab/VideoMamba" ["e"=1]
+"srush/LLM-Training-Puzzles" -> "srush/annotated-mamba" ["e"=1]
+"vitoplantamura/OnnxStream" -> "RWKV/rwkv.cpp" ["e"=1]
 "harrisonvanderbyl/rwkv-cpp-accelerated" -> "RWKV/rwkv.cpp"
 "harrisonvanderbyl/rwkv-cpp-accelerated" -> "harrisonvanderbyl/godot-rwkv"
 "harrisonvanderbyl/rwkv-cpp-accelerated" -> "cryscan/web-rwkv"
@@ -413,6 +503,10 @@ digraph G {
 "harrisonvanderbyl/rwkv-cpp-accelerated" -> "harrisonvanderbyl/rwkvstic"
 "harrisonvanderbyl/rwkv-cpp-accelerated" -> "jiamingkong/RWKV_chains"
 "harrisonvanderbyl/rwkv-cpp-accelerated" -> "cryscan/eloise"
+"Atome-FE/llama-node" -> "harrisonvanderbyl/rwkv-cpp-accelerated" ["e"=1]
+"Atome-FE/llama-node" -> "RWKV/rwkv.cpp" ["e"=1]
+"YOLOonMe/EMA-attention-module" -> "yaoppeng/U-Net_v2" ["e"=1]
+"YOLOonMe/EMA-attention-module" -> "xmindflow/deformableLKA" ["e"=1]
 "howard-hou/VisualRWKV" -> "deepglint/RWKV-CLIP"
 "howard-hou/VisualRWKV" -> "OpenGVLab/Vision-RWKV"
 "howard-hou/VisualRWKV" -> "RWKV/RWKV-infctx-trainer"
@@ -448,6 +542,9 @@ digraph G {
 "RWKV/RWKV-infctx-trainer" -> "Prunoideae/rwkv-contrib"
 "RWKV/RWKV-infctx-trainer" -> "RWKV/RWKV-wiki"
 "xianlin7/ConvFormer" -> "FengheTan9/CMUNeXt"
+"leejet/stable-diffusion.cpp" -> "RWKV/rwkv.cpp" ["e"=1]
+"valeman/Transformers_And_LLM_Are_What_You_Dont_Need" -> "pg2455/KAN-Tutorial" ["e"=1]
+"OpenGVLab/unmasked_teacher" -> "OpenGVLab/VideoMamba" ["e"=1]
 "JCruan519/EGE-UNet" -> "JCruan519/MALUNet"
 "JCruan519/EGE-UNet" -> "JCruan519/VM-UNet"
 "JCruan519/EGE-UNet" -> "kiharalab/ACC-UNet"
@@ -463,6 +560,7 @@ digraph G {
 "JCruan519/EGE-UNet" -> "Xiaoqi-Zhao-DLUT/MSNet-M2SNet" ["e"=1]
 "JCruan519/EGE-UNet" -> "yykzjh/PMFSNet" ["e"=1]
 "JCruan519/EGE-UNet" -> "xmindflow/DermoSegDiff" ["e"=1]
+"NouamaneTazi/bloomz.cpp" -> "RWKV/rwkv.cpp" ["e"=1]
 "HazyResearch/safari" -> "lindermanlab/S5"
 "HazyResearch/safari" -> "HazyResearch/hyena-dna" ["e"=1]
 "HazyResearch/safari" -> "state-spaces/s4"
@@ -499,6 +597,13 @@ digraph G {
 "FengheTan9/Medical-Image-Segmentation-Benchmarks" -> "FengheTan9/Multi-Level-Global-Context-Cross-Consistency"
 "FengheTan9/Medical-Image-Segmentation-Benchmarks" -> "Curli-quan/Slide-SAM"
 "FengheTan9/Medical-Image-Segmentation-Benchmarks" -> "FengheTan9/CMU-Net"
+"PotatoSpudowski/fastLLaMa" -> "RWKV/rwkv.cpp" ["e"=1]
+"MIC-DKFZ/MedNeXt" -> "ge-xing/SegMamba" ["e"=1]
+"MIC-DKFZ/MedNeXt" -> "bowang-lab/U-Mamba" ["e"=1]
+"DaiShiResearch/TransNeXt" -> "SLDGroup/EMCAD" ["e"=1]
+"DaiShiResearch/TransNeXt" -> "MzeroMiko/VMamba" ["e"=1]
+"DaiShiResearch/TransNeXt" -> "JCruan519/VM-UNet" ["e"=1]
+"QwenLM/qwen.cpp" -> "RWKV/rwkv.cpp" ["e"=1]
 "xmindflow/deformableLKA" -> "xmindflow/DAEFormer" ["e"=1]
 "xmindflow/deformableLKA" -> "StevenLauHKHK/Large-Separable-Kernel-Attention"
 "xmindflow/deformableLKA" -> "ChongQingNoSubway/SelfReg-UNet"
@@ -613,9 +718,11 @@ digraph G {
 "huoxiangzuo/SPA" -> "huoxiangzuo/Doctor-SAM"
 "Prunoideae/web-rwkv-axum" -> "Prunoideae/rwkv-contrib"
 "SmerkyG/gptcore" -> "SmerkyG/RWKV_Explained"
+"daquexian/faster-rwkv" -> "MollySophia/rwkv-mobile" ["e"=1]
 "RWKV/rwkv-onnx" -> "donomii/go-rwkv.cpp"
 "Prunoideae/rwkv-contrib" -> "Prunoideae/web-rwkv-axum"
 "sustcsonglin/flash-linear-rnn" -> "Gothos/LRU-pytorch"
+"KerfuffleV2/smolrsrwkv" -> "mrsteyk/rwkvk-rs" ["e"=1]
 "SunDoge/bytepiece-rs" -> "hscspring/bytepiece-rs"
 "KindXiaoming/pykan" -> "Blealtan/efficient-kan"
 "KindXiaoming/pykan" -> "mintisan/awesome-kan"
@@ -722,6 +829,7 @@ digraph G {
 "yyyujintang/Awesome-Mamba-Papers" -> "yuweihao/MambaOut"
 "yyyujintang/Awesome-Mamba-Papers" -> "bowang-lab/U-Mamba"
 "yyyujintang/Awesome-Mamba-Papers" -> "AvivBick/awesome-ssm-ml"
+"CompVis/zigma" -> "feizc/Diffusion-RWKV" ["e"=1]
 "Yangzhangcst/Mamba-in-CV" -> "ReaFly/Awesome-Vision-Mamba"
 "Yangzhangcst/Mamba-in-CV" -> "Ruixxxx/Awesome-Vision-Mamba-Models"
 "Yangzhangcst/Mamba-in-CV" -> "Event-AHU/Mamba_State_Space_Model_Paper_List"
@@ -737,6 +845,9 @@ digraph G {
 "Yangzhangcst/Mamba-in-CV" -> "lewandofskee/MobileMamba"
 "Yangzhangcst/Mamba-in-CV" -> "lx6c78/Vision-Mamba-A-Comprehensive-Survey-and-Taxonomy"
 "Yangzhangcst/Mamba-in-CV" -> "alexhe101/Pan-Mamba" ["e"=1]
+"52CV/CVPR-2024-Papers" -> "Yangzhangcst/Mamba-in-CV" ["e"=1]
+"52CV/CVPR-2024-Papers" -> "MzeroMiko/VMamba" ["e"=1]
+"52CV/CVPR-2024-Papers" -> "NVlabs/MambaVision" ["e"=1]
 "team-daniel/KAN" -> "ZiyaoLi/fast-kan"
 "team-daniel/KAN" -> "pg2455/KAN-Tutorial"
 "team-daniel/KAN" -> "JianpanHuang/KAN"
@@ -764,6 +875,7 @@ digraph G {
 "state-spaces/mamba" -> "microsoft/Swin-Transformer" ["e"=1]
 "state-spaces/mamba" -> "microsoft/LoRA" ["e"=1]
 "state-spaces/mamba" -> "vllm-project/vllm" ["e"=1]
+"uni-medical/SAM-Med3D" -> "bowang-lab/U-Mamba" ["e"=1]
 "SLDGroup/EMCAD" -> "SLDGroup/G-CASCADE" ["e"=1]
 "SLDGroup/EMCAD" -> "SLDGroup/CASCADE" ["e"=1]
 "SLDGroup/EMCAD" -> "Mengqi-Lei/ConDSeg"
@@ -790,6 +902,10 @@ digraph G {
 "MzeroMiko/VMamba" -> "kyegomez/VisionMamba"
 "MzeroMiko/VMamba" -> "johnma2006/mamba-minimal"
 "MzeroMiko/VMamba" -> "HZAI-ZJNU/Mamba-YOLO"
+"AILab-CVC/UniRepLKNet" -> "hustvl/Vim" ["e"=1]
+"AILab-CVC/UniRepLKNet" -> "MzeroMiko/VMamba" ["e"=1]
+"AILab-CVC/UniRepLKNet" -> "OpenGVLab/Vision-RWKV" ["e"=1]
+"google-deepmind/alphageometry" -> "state-spaces/mamba" ["e"=1]
 "JiarunLiu/Swin-UMamba" -> "bowang-lab/U-Mamba"
 "JiarunLiu/Swin-UMamba" -> "MrBlankness/LightM-UNet"
 "JiarunLiu/Swin-UMamba" -> "ge-xing/SegMamba"
@@ -902,6 +1018,7 @@ digraph G {
 "XiudingCai/Awesome-Mamba-Collection" -> "radarFudan/Awesome-state-space-models"
 "XiudingCai/Awesome-Mamba-Collection" -> "alxndrTL/mamba.py"
 "XiudingCai/Awesome-Mamba-Collection" -> "hustvl/Vim"
+"badripatro/simba" -> "lx6c78/Vision-Mamba-A-Comprehensive-Survey-and-Taxonomy" ["e"=1]
 "GistNoesis/FourierKAN" -> "WillHua127/GraphKAN-Graph-Kolmogorov-Arnold-Networks"
 "GistNoesis/FourierKAN" -> "Blealtan/efficient-kan"
 "GistNoesis/FourierKAN" -> "GistNoesis/FusedFourierKAN"
@@ -934,6 +1051,7 @@ digraph G {
 "Event-AHU/Mamba_State_Space_Model_Paper_List" -> "NVlabs/MambaVision"
 "Event-AHU/Mamba_State_Space_Model_Paper_List" -> "OpenGVLab/VideoMamba"
 "Event-AHU/Mamba_State_Space_Model_Paper_List" -> "csguoh/MambaIR" ["e"=1]
+"nomic-ai/contrastors" -> "HazyResearch/m2" ["e"=1]
 "Ruixxxx/Awesome-Vision-Mamba-Models" -> "Event-AHU/Mamba_State_Space_Model_Paper_List"
 "Ruixxxx/Awesome-Vision-Mamba-Models" -> "yyyujintang/Awesome-Mamba-Papers"
 "Ruixxxx/Awesome-Vision-Mamba-Models" -> "MzeroMiko/VMamba"
@@ -949,7 +1067,10 @@ digraph G {
 "Ruixxxx/Awesome-Vision-Mamba-Models" -> "Yaziwel/Awesome-RWKV-in-Vision"
 "Ruixxxx/Awesome-Vision-Mamba-Models" -> "ziyangwang007/Mamba-UNet"
 "Ruixxxx/Awesome-Vision-Mamba-Models" -> "LeapLabTHU/MLLA" ["e"=1]
+"HazyResearch/aisys-building-blocks" -> "HazyResearch/zoology" ["e"=1]
 "LilLouis5/Vision-Transformer" -> "LilLouis5/Vision-Mamba-"
+"DmitryRyumin/AAAI-2024-Papers" -> "Event-AHU/Mamba_State_Space_Model_Paper_List" ["e"=1]
+"DmitryRyumin/AAAI-2024-Papers" -> "radarFudan/Awesome-state-space-models" ["e"=1]
 "AI-Guru/xlstm-resources" -> "muditbhargava66/PyxLSTM"
 "AI-Guru/xlstm-resources" -> "andrewgcodes/xlstm"
 "AI-Guru/xlstm-resources" -> "kyegomez/xLSTM"
@@ -1011,6 +1132,7 @@ digraph G {
 "OpenGVLab/VideoMamba" -> "OpenGVLab/Vision-RWKV"
 "OpenGVLab/VideoMamba" -> "yyyujintang/Awesome-Mamba-Papers"
 "OpenGVLab/VideoMamba" -> "CompVis/zigma" ["e"=1]
+"OpenGVLab/DCNv4" -> "xmindflow/deformableLKA" ["e"=1]
 "kyegomez/VisionMamba" -> "hustvl/Vim"
 "kyegomez/VisionMamba" -> "MzeroMiko/VMamba"
 "kyegomez/VisionMamba" -> "YubiaoYue/MedMamba"
@@ -1026,6 +1148,7 @@ digraph G {
 "kyegomez/VisionMamba" -> "bowang-lab/U-Mamba"
 "kyegomez/VisionMamba" -> "XiudingCai/Awesome-Mamba-Collection"
 "kyegomez/VisionMamba" -> "yyyujintang/Awesome-Mamba-Papers"
+"ma-xu/Rewrite-the-Stars" -> "TerryPei/EfficientVMamba" ["e"=1]
 "YubiaoYue/MedMamba" -> "JiarunLiu/Swin-UMamba"
 "YubiaoYue/MedMamba" -> "JCruan519/VM-UNet"
 "YubiaoYue/MedMamba" -> "bowang-lab/U-Mamba"
@@ -1059,6 +1182,7 @@ digraph G {
 "ziyangwang007/Mamba-UNet" -> "YubiaoYue/MedMamba"
 "ziyangwang007/Mamba-UNet" -> "yaoppeng/U-Net_v2"
 "kyegomez/MultiModalMamba" -> "kyegomez/MambaTransformer"
+"csguoh/MambaIR" -> "MzeroMiko/VMamba" ["e"=1]
 "MrBlankness/LightM-UNet" -> "JCruan519/VM-UNet"
 "MrBlankness/LightM-UNet" -> "ziyangwang007/Mamba-UNet"
 "MrBlankness/LightM-UNet" -> "bowang-lab/U-Mamba"
@@ -1171,6 +1295,7 @@ digraph G {
 "IvanDrokin/torch-conv-kan" -> "AdityaNG/kan-gpt"
 "IvanDrokin/torch-conv-kan" -> "GistNoesis/FourierKAN"
 "IvanDrokin/torch-conv-kan" -> "pg2455/KAN-Tutorial"
+"scott-yjyang/Vivim" -> "ge-xing/SegMamba" ["e"=1]
 "zifuwan/Sigma" -> "millieXie/FusionMamba" ["e"=1]
 "zifuwan/Sigma" -> "huaaaliu/RGBX_Semantic_Segmentation" ["e"=1]
 "zifuwan/Sigma" -> "UkcheolShin/CRM_RGBTSeg" ["e"=1]
@@ -1218,6 +1343,7 @@ digraph G {
 "redotvideo/mamba-chat" -> "lucidrains/self-rewarding-lm-pytorch" ["e"=1]
 "redotvideo/mamba-chat" -> "srush/annotated-mamba"
 "redotvideo/mamba-chat" -> "llm-random/llm-random" ["e"=1]
+"OpenGVLab/video-mamba-suite" -> "OpenGVLab/VideoMamba" ["e"=1]
 "google-deepmind/recurrentgemma" -> "proger/hippogriff"
 "google-deepmind/recurrentgemma" -> "proger/accelerated-scan"
 "google-deepmind/recurrentgemma" -> "HazyResearch/based"
@@ -1229,6 +1355,7 @@ digraph G {
 "google-deepmind/recurrentgemma" -> "google-deepmind/penzai" ["e"=1]
 "google-deepmind/recurrentgemma" -> "lindermanlab/S5"
 "google-deepmind/recurrentgemma" -> "apple/ml-sigmoid-attention"
+"OpenGVLab/VideoChat-Flash" -> "OpenGVLab/VideoMamba" ["e"=1]
 "remigenet/TKAN" -> "remigenet/TKAT"
 "remigenet/TKAN" -> "remigenet/SigKAN"
 "remigenet/TKAN" -> "MSD-IRIMAS/Simple-KAN-4-Time-Series"
@@ -1236,6 +1363,9 @@ digraph G {
 "remigenet/TKAN" -> "team-daniel/KAN"
 "remigenet/TKAN" -> "huangst21/TimeKAN"
 "v3ucn/RWKV_Role_Playing_with_GPT-SoVITS" -> "shengxia/RWKV_Role_Playing_API"
+"Beckschen/3D-TransUNet" -> "ge-xing/SegMamba" ["e"=1]
+"Beckschen/3D-TransUNet" -> "bowang-lab/U-Mamba" ["e"=1]
+"Beckschen/3D-TransUNet" -> "MrBlankness/LightM-UNet" ["e"=1]
 "riiswa/kanrl" -> "ZiyaoLi/fast-kan"
 "riiswa/kanrl" -> "SynodicMonth/ChebyKAN"
 "riiswa/kanrl" -> "epignatelli/navix" ["e"=1]
@@ -1258,6 +1388,8 @@ digraph G {
 "theodorblackbird/lina-speech" -> "recursal/minmodmon"
 "theodorblackbird/lina-speech" -> "chomeyama/SiFiGAN" ["e"=1]
 "OpenMOSE/RWKV-LM-RLHF" -> "JL-er/RWKV-PEFT"
+"huggingface/ratchet" -> "cryscan/web-rwkv" ["e"=1]
+"LeapLabTHU/Agent-Attention" -> "MzeroMiko/VMamba" ["e"=1]
 "AmeenAli/HiddenMambaAttn" -> "Itamarzimm/UnifiedImplicitAttnRepr"
 "AmeenAli/HiddenMambaAttn" -> "FarnoushRJ/MambaLRP"
 "AmeenAli/HiddenMambaAttn" -> "YuHengsss/VSSD"
@@ -1332,6 +1464,7 @@ digraph G {
 "AvivBick/awesome-ssm-ml" -> "yyyujintang/Awesome-Mamba-Papers"
 "AvivBick/awesome-ssm-ml" -> "XiudingCai/Awesome-Mamba-Collection"
 "AvivBick/awesome-ssm-ml" -> "goombalab/phi-mamba"
+"LMMMEng/TransXNet" -> "tianrun-chen/xLSTM-UNet-PyTorch" ["e"=1]
 "GistNoesis/FusedFourierKAN" -> "syassami/FourierKAN-mnist"
 "sidhu2690/RBF-KAN" -> "SpaceLearner/JacobiKAN"
 "kyegomez/xLSTM" -> "muditbhargava66/PyxLSTM"
@@ -1448,6 +1581,13 @@ digraph G {
 "ex3ndr/supervoice-librilight-preprocessed" -> "ex3ndr/supervoice-gpt"
 "ex3ndr/supervoice-vocoder" -> "liuhuang31/g2pw_once"
 "p1an-lin-jung/wv_tts" -> "ex3ndr/supervoice-hybrid"
+"AIFengheshu/Plug-play-modules" -> "lewandofskee/MobileMamba" ["e"=1]
+"AIFengheshu/Plug-play-modules" -> "LMMMEng/OverLoCK" ["e"=1]
+"AIFengheshu/Plug-play-modules" -> "Yangzhangcst/Mamba-in-CV" ["e"=1]
+"ShiArthur03/ShiArthur03" -> "yuweihao/MambaOut" ["e"=1]
+"ai-dawang/PlugNPlay-Modules" -> "MzeroMiko/VMamba" ["e"=1]
+"ai-dawang/PlugNPlay-Modules" -> "hustvl/Vim" ["e"=1]
+"ai-dawang/PlugNPlay-Modules" -> "Human9000/nd-Mamba2-torch" ["e"=1]
 "lgy112112/Efficient-KAN-in-Chinese" -> "Adamdad/kat" ["e"=1]
 "lgy112112/Efficient-KAN-in-Chinese" -> "2448845600/EasyTSF"
 "lgy112112/Efficient-KAN-in-Chinese" -> "lgy112112/DeepLearning-Tutorial-Chinese"
@@ -1483,6 +1623,7 @@ digraph G {
 "yuweihao/MambaOut" -> "test-time-training/ttt-lm-pytorch"
 "yuweihao/MambaOut" -> "ShiArthur03/ShiArthur03" ["e"=1]
 "yuweihao/MambaOut" -> "Blealtan/efficient-kan"
+"swordlidev/Efficient-Multimodal-LLMs-Survey" -> "shufangxun/LLaVA-MoD" ["e"=1]
 "test-time-training/ttt-lm-pytorch" -> "test-time-training/ttt-lm-jax"
 "test-time-training/ttt-lm-pytorch" -> "test-time-training/ttt-lm-kernels"
 "test-time-training/ttt-lm-pytorch" -> "fla-org/flash-linear-attention" ["e"=1]
@@ -1498,6 +1639,7 @@ digraph G {
 "test-time-training/ttt-lm-pytorch" -> "state-spaces/mamba"
 "test-time-training/ttt-lm-pytorch" -> "LTH14/mar" ["e"=1]
 "test-time-training/ttt-lm-pytorch" -> "johnma2006/mamba-minimal"
+"ShihuaHuang95/DEIM" -> "HZAI-ZJNU/Mamba-YOLO" ["e"=1]
 "muslehal/xLSTMTime" -> "saurav-dhait/Time-Series-Forecasting-with-xLSTM"
 "muslehal/xLSTMTime" -> "mauricekraus/xLSTM-Mixer" ["e"=1]
 "muslehal/xLSTMTime" -> "muditbhargava66/PyxLSTM"
@@ -1508,6 +1650,7 @@ digraph G {
 "muslehal/xLSTMTime" -> "brandon-toews/xlstm-vs-markov"
 "muslehal/xLSTMTime" -> "akaashdash/xlstm"
 "AGENDD/RWKV-ASR" -> "AGENDD/RWKV-SpeechChat"
+"Atten4Vis/LW-DETR" -> "HZAI-ZJNU/Mamba-YOLO" ["e"=1]
 "HZAI-ZJNU/Mamba-YOLO" -> "SwjtuMa/FER-YOLO-Mamba"
 "HZAI-ZJNU/Mamba-YOLO" -> "yemu1138178251/FFCA-YOLO" ["e"=1]
 "HZAI-ZJNU/Mamba-YOLO" -> "MzeroMiko/VMamba"
@@ -1564,8 +1707,13 @@ digraph G {
 "Human9000/nd-Mamba2-torch" -> "JCruan519/VM-UNet"
 "Human9000/nd-Mamba2-torch" -> "Yaziwel/Awesome-RWKV-in-Vision"
 "Human9000/nd-Mamba2-torch" -> "hustvl/Vim"
+"microsoft/Samba" -> "google-deepmind/recurrentgemma" ["e"=1]
+"microsoft/Samba" -> "jzhang38/LongMamba" ["e"=1]
+"microsoft/Samba" -> "jxiw/MambaInLlama" ["e"=1]
+"microsoft/Samba" -> "redotvideo/mamba-chat" ["e"=1]
 "sjtuplayer/SaRA" -> "Fantasyele/LLaVA-KD"
 "sjtuplayer/SaRA" -> "zhangzjn/EMOv2"
+"turbo-llm/turbo-alignment" -> "corl-team/rebased" ["e"=1]
 "remigenet/TKAT" -> "remigenet/SigKAN"
 "remigenet/TKAT" -> "remigenet/TKAN"
 "test-time-training/ttt-lm-jax" -> "test-time-training/ttt-lm-pytorch"
@@ -1601,12 +1749,15 @@ digraph G {
 "lewandofskee/MobileMamba" -> "yunxiangfu2001/SegMAN"
 "lewandofskee/MobileMamba" -> "xwmaxwma/TinyViM" ["e"=1]
 "v3ucn/GPT-SoVITS-V2" -> "v3ucn/RWKV_Role_Playing_with_GPT-SoVITS"
+"BGU-CS-VIL/WTConv" -> "SLDGroup/EMCAD" ["e"=1]
+"BGU-CS-VIL/WTConv" -> "ziyangwang007/Mamba-UNet" ["e"=1]
 "zavareh1/Wav-KAN" -> "SynodicMonth/ChebyKAN"
 "Yaziwel/Awesome-RWKV-in-Vision" -> "OpenGVLab/Vision-RWKV"
 "Yaziwel/Awesome-RWKV-in-Vision" -> "Yaziwel/Restore-RWKV"
 "Yaziwel/Awesome-RWKV-in-Vision" -> "howard-hou/VisualRWKV"
 "Yaziwel/Awesome-RWKV-in-Vision" -> "hithqd/PointRWKV" ["e"=1]
 "jxiw/MambaInLlama" -> "goombalab/phi-mamba"
+"natolambert/rlhf-book" -> "srush/annotated-mamba" ["e"=1]
 "ex3ndr/supervoice-enhance" -> "ex3ndr/supervoice-hybrid"
 "NX-AI/vision-lstm" -> "NX-AI/xlstm"
 "NX-AI/vision-lstm" -> "tianrun-chen/xLSTM-UNet-PyTorch"
@@ -1659,9 +1810,16 @@ digraph G {
 "Karl1109/SFIAN" -> "Karl1109/CrackSCF"
 "TorchRWKV/rwkv-kit" -> "TorchRWKV/flash-linear-attention"
 "ex3ndr/supervoice-hybrid" -> "p1an-lin-jung/wv_tts"
+"sunsmarterjie/yolov12" -> "HZAI-ZJNU/Mamba-YOLO" ["e"=1]
 "yueliu1999/GuardReasoner" -> "yueliu1999/Awesome-Efficient-Inference-for-LRMs"
 "LMMMEng/OverLoCK" -> "WangXueyang-uestc/ARConv"
 "LMMMEng/OverLoCK" -> "yunxiangfu2001/SegMAN"
+"lucidrains/titans-pytorch" -> "test-time-training/ttt-lm-pytorch" ["e"=1]
+"lucidrains/titans-pytorch" -> "alxndrTL/mamba.py" ["e"=1]
+"jiachenzhu/DyT" -> "NVlabs/MambaVision" ["e"=1]
+"jiachenzhu/DyT" -> "LMMMEng/OverLoCK" ["e"=1]
+"jiachenzhu/DyT" -> "yuweihao/MambaOut" ["e"=1]
+"jiachenzhu/DyT" -> "lewandofskee/MobileMamba" ["e"=1]
 "yueliu1999/Awesome-Efficient-Inference-for-LRMs" -> "sail-sg/FlowReasoner"
 "yueliu1999/Awesome-Efficient-Inference-for-LRMs" -> "yueliu1999/KAN4Graph"
 "yueliu1999/Awesome-Efficient-Inference-for-LRMs" -> "TianyuanYang/KAN4Rec"
@@ -1670,50 +1828,59 @@ digraph G {
 "Karl1109/SCSegamba" -> "Karl1109/TUT"
 "zhangzjn/EMOv2" -> "Fantasyele/LLaVA-KD"
 "sail-sg/FlowReasoner" -> "yueliu1999/Awesome-Efficient-Inference-for-LRMs"
+"epfml/attention-cnn" ["l"="53.56,31.039", "c"=155]
+"openai/sparse_attention" ["l"="48.822,33.923"]
+"mamba-org/mamba" ["l"="43.614,23.748", "c"=95]
+"state-spaces/mamba" ["l"="49.202,34.162"]
+"rusty1s/pytorch_sparse" ["l"="65.127,11.377", "c"=203]
+"huggingface/pytorch_block_sparse" ["l"="48.88,33.948"]
 "wzlxjtu/PositionalEncoding2D" ["l"="48.798,33.791"]
 "tatp22/multidim-positional-encoding" ["l"="48.818,33.823"]
-"openai/blocksparse" ["l"="48.863,33.895"]
-"openai/sparse_attention" ["l"="48.822,33.923"]
-"ptillet/torch-blocksparse" ["l"="48.89,33.912"]
-"huggingface/pytorch_block_sparse" ["l"="48.88,33.948"]
-"google-research/sputnik" ["l"="63.158,-1.978"]
-"NervanaSystems/maxas" ["l"="36.924,0.876"]
-"google/gemmlowp" ["l"="37.151,0.815"]
-"tensor-compiler/taco" ["l"="37.115,0.938"]
-"pytorch/FBGEMM" ["l"="37.128,0.864"]
-"openai/openai-gemm" ["l"="37.046,0.815"]
-"facebookresearch/TensorComprehensions" ["l"="37.142,0.92"]
-"baidu-research/DeepBench" ["l"="37.226,0.818"]
-"IntelLabs/SkimCaffe" ["l"="52.714,33.614"]
-"gunrock/gunrock" ["l"="51.441,15.303"]
-"NVIDIA/cub" ["l"="36.72,0.942"]
-"NVIDIA-developer-blog/code-samples" ["l"="36.723,0.91"]
-"kimiyoung/transformer-xl" ["l"="53.149,25.692"]
-"lucidrains/reformer-pytorch" ["l"="48.824,33.956"]
-"allenai/longformer" ["l"="53.252,27.091"]
-"namisan/mt-dnn" ["l"="53.308,27.184"]
-"bojone/attention" ["l"="53.649,27.27"]
-"openai/distribution_augmentation" ["l"="23.206,14.41"]
-"zihangdai/xlnet" ["l"="53.051,25.718"]
+"huggingface/hmtl" ["l"="52.951,25.564", "c"=172]
 "facebookresearch/adaptive-span" ["l"="48.781,33.928"]
-"epfml/attention-cnn" ["l"="53.56,31.039"]
-"yikangshen/Ordered-Neurons" ["l"="52.953,25.326"]
-"openai/finetune-transformer-lm" ["l"="53.112,25.624"]
-"thunlp/ERNIE" ["l"="53.397,27.266"]
+"openai/blocksparse" ["l"="48.863,33.895"]
+"ptillet/torch-blocksparse" ["l"="48.89,33.912"]
+"google-research/sputnik" ["l"="63.158,-1.978", "c"=175]
+"NervanaSystems/maxas" ["l"="36.924,0.876", "c"=112]
+"google/gemmlowp" ["l"="37.151,0.815", "c"=112]
+"tensor-compiler/taco" ["l"="37.115,0.938", "c"=112]
+"pytorch/FBGEMM" ["l"="37.128,0.864", "c"=112]
+"openai/openai-gemm" ["l"="37.046,0.815", "c"=112]
+"facebookresearch/TensorComprehensions" ["l"="37.142,0.92", "c"=112]
+"baidu-research/DeepBench" ["l"="37.226,0.818", "c"=112]
+"IntelLabs/SkimCaffe" ["l"="52.714,33.614", "c"=271]
+"gunrock/gunrock" ["l"="51.441,15.303", "c"=1231]
+"NVIDIA/cub" ["l"="36.72,0.942", "c"=112]
+"NVIDIA-developer-blog/code-samples" ["l"="36.723,0.91", "c"=112]
+"microsoft/NeuronBlocks" ["l"="53.329,27.334", "c"=60]
+"jcpeterson/openwebtext" ["l"="53.366,25.768", "c"=172]
+"kimiyoung/transformer-xl" ["l"="53.149,25.692", "c"=172]
+"lucidrains/reformer-pytorch" ["l"="48.824,33.956"]
+"allenai/longformer" ["l"="53.252,27.091", "c"=60]
+"namisan/mt-dnn" ["l"="53.308,27.184", "c"=60]
+"bojone/attention" ["l"="53.649,27.27", "c"=60]
+"openai/distribution_augmentation" ["l"="23.206,14.41", "c"=505]
+"zihangdai/xlnet" ["l"="53.051,25.718", "c"=172]
+"yikangshen/Ordered-Neurons" ["l"="52.953,25.326", "c"=172]
+"openai/finetune-transformer-lm" ["l"="53.112,25.624", "c"=172]
+"thunlp/ERNIE" ["l"="53.397,27.266", "c"=60]
 "idiap/fast-transformers" ["l"="48.866,33.983"]
-"facebookresearch/XLM" ["l"="53.036,25.657"]
-"nelson-liu/contextual-repr-analysis" ["l"="52.925,25.291"]
-"facebookresearch/unlikelihood_training" ["l"="53.41,26.083"]
-"Smerity/sha-rnn" ["l"="53.204,27.143"]
+"facebookresearch/XLM" ["l"="53.036,25.657", "c"=172]
+"keitakurita/Practical_NLP_in_PyTorch" ["l"="53.997,27.081", "c"=60]
+"juho-lee/set_transformer" ["l"="23.153,14.826", "c"=505]
+"lucidrains/perceiver-pytorch" ["l"="48.859,33.923"]
+"nelson-liu/contextual-repr-analysis" ["l"="52.925,25.291", "c"=172]
+"facebookresearch/unlikelihood_training" ["l"="53.41,26.083", "c"=172]
+"Smerity/sha-rnn" ["l"="53.204,27.143", "c"=60]
 "lucidrains/routing-transformer" ["l"="48.77,33.947"]
-"huggingface/naacl_transfer_learning_tutorial" ["l"="23.497,14.916"]
-"mrqa/MRQA-Shared-Task-2019" ["l"="54.744,26.404"]
+"huggingface/naacl_transfer_learning_tutorial" ["l"="23.497,14.916", "c"=728]
+"mrqa/MRQA-Shared-Task-2019" ["l"="54.744,26.404", "c"=587]
 "mit-han-lab/lite-transformer" ["l"="48.766,33.977"]
-"huggingface/hmtl" ["l"="52.951,25.564"]
 "allenai/tpu_pretrain" ["l"="48.729,33.903"]
-"pmichel31415/are-16-heads-really-better-than-1" ["l"="52.912,27.228"]
+"pmichel31415/are-16-heads-really-better-than-1" ["l"="52.912,27.228", "c"=60]
 "cybertronai/transformer-xl" ["l"="48.742,33.884"]
-"deep-spin/entmax" ["l"="23.198,14.956"]
+"deep-spin/entmax" ["l"="23.198,14.956", "c"=505]
+"keroro824/HashingDeepLearning" ["l"="37.018,1.258", "c"=112]
 "zhuohan123/macaron-net" ["l"="48.95,33.837"]
 "gonglinyuan/StackingBERT" ["l"="48.939,33.88"]
 "HazyResearch/butterfly" ["l"="49.055,33.861"]
@@ -1722,132 +1889,167 @@ digraph G {
 "cmsflash/efficient-attention" ["l"="48.744,33.936"]
 "lucidrains/linear-attention-transformer" ["l"="48.797,33.949"]
 "xyltt/Linear-Transformer" ["l"="48.712,33.928"]
-"lironui/Linear-Attention-Mechanism" ["l"="42.232,23.948"]
+"lironui/Linear-Attention-Mechanism" ["l"="42.232,23.948", "c"=76]
+"google/trax" ["l"="53.153,25.852", "c"=172]
+"raminmh/liquid_time_constant_networks" ["l"="22.822,14.679", "c"=505]
+"state-spaces/s4" ["l"="49.031,34.068"]
+"google-research/bigbird" ["l"="48.844,34.038"]
 "lucidrains/performer-pytorch" ["l"="48.838,33.984"]
 "google-research/long-range-arena" ["l"="48.916,34.009"]
-"ml-jku/hopfield-layers" ["l"="23.711,14.926"]
+"ml-jku/hopfield-layers" ["l"="23.711,14.926", "c"=728]
 "tatp22/linformer-pytorch" ["l"="48.807,33.987"]
 "Separius/awesome-fast-attention" ["l"="48.801,33.971"]
-"state-spaces/s4" ["l"="49.031,34.068"]
-"lucidrains/x-transformers" ["l"="45.933,31.614"]
-"mlpen/Nystromformer" ["l"="23.635,14.848"]
-"facebookresearch/fairscale" ["l"="38.777,-0.604"]
-"YatingMusic/compound-word-transformer" ["l"="38.716,4.156"]
-"google/trax" ["l"="53.153,25.852"]
-"google-research/electra" ["l"="53.282,27.163"]
+"lucidrains/x-transformers" ["l"="45.933,31.614", "c"=605]
+"mlpen/Nystromformer" ["l"="23.635,14.848", "c"=728]
+"facebookresearch/fairscale" ["l"="38.777,-0.604", "c"=39]
+"YatingMusic/compound-word-transformer" ["l"="38.716,4.156", "c"=201]
+"google-research/electra" ["l"="53.282,27.163", "c"=60]
 "lucidrains/sinkhorn-transformer" ["l"="48.74,33.961"]
-"mit-han-lab/hardware-aware-transformers" ["l"="52.792,34.03"]
+"mlech26l/ncps" ["l"="22.794,14.65", "c"=505]
+"NX-AI/xlstm" ["l"="49.259,34.17"]
+"mit-han-lab/hardware-aware-transformers" ["l"="52.792,34.03", "c"=708]
 "sacmehta/delight" ["l"="48.743,34.002"]
 "laiguokun/Funnel-Transformer" ["l"="48.851,34.002"]
-"Tencent/TurboTransformers" ["l"="53.292,27.093"]
-"yitu-opensource/ConvBert" ["l"="53.181,26.881"]
-"zhijian-liu/torchprofile" ["l"="52.822,34.061"]
+"Tencent/TurboTransformers" ["l"="53.292,27.093", "c"=60]
+"yitu-opensource/ConvBert" ["l"="53.181,26.881", "c"=60]
+"zhijian-liu/torchprofile" ["l"="52.822,34.061", "c"=708]
 "cloneofsimo/realformer-pytorch" ["l"="48.671,33.982"]
-"autoliuweijie/FastBERT" ["l"="53.357,27.178"]
+"autoliuweijie/FastBERT" ["l"="53.357,27.178", "c"=60]
 "YulhwaKim/cutlass_tilesparse" ["l"="48.912,33.924"]
 "microsoft/fastseq" ["l"="48.903,33.97"]
-"google-research/rigl" ["l"="52.683,33.215"]
-"rusty1s/pytorch_sparse" ["l"="65.127,11.377"]
-"lucidrains/compressive-transformer-pytorch" ["l"="37.944,-1.659"]
+"google-research/rigl" ["l"="52.683,33.215", "c"=271]
+"lucidrains/compressive-transformer-pytorch" ["l"="37.944,-1.659", "c"=1218]
 "lucidrains/linformer" ["l"="48.788,33.994"]
 "lucidrains/local-attention" ["l"="48.797,33.892"]
 "lucidrains/FLASH-pytorch" ["l"="48.686,33.904"]
-"lucidrains/mixture-of-experts" ["l"="38.611,-0.435"]
-"lucidrains/perceiver-pytorch" ["l"="48.859,33.923"]
-"OpenNLPLab/cosFormer" ["l"="39.481,5.858"]
-"kahne/NonAutoregGenProgress" ["l"="53.957,24.693"]
+"lucidrains/mixture-of-experts" ["l"="38.611,-0.435", "c"=39]
+"OpenNLPLab/cosFormer" ["l"="39.481,5.858", "c"=593]
+"kahne/NonAutoregGenProgress" ["l"="53.957,24.693", "c"=492]
 "yzh119/BPT" ["l"="48.685,33.954"]
+"HHousen/TransformerSum" ["l"="58.337,28.99", "c"=665]
 "richarddwang/electra_pytorch" ["l"="48.713,34.057"]
 "lucidrains/electra-pytorch" ["l"="48.679,34.074"]
 "lonePatient/electra_pytorch" ["l"="48.699,34.079"]
 "microsoft/COCO-LM" ["l"="48.661,34.054"]
+"abhimishra91/transformers-tutorials" ["l"="53.325,27.014", "c"=60]
+"allenai/naacl2021-longdoc-tutorial" ["l"="48.8,34.092"]
+"acl-org/acl-anthology" ["l"="-33.968,16.269", "c"=996]
 "krasserm/perceiver-io" ["l"="48.853,33.835"]
+"microsoft/MPNet" ["l"="54.723,25.251", "c"=439]
+"microsoft/ProphetNet" ["l"="45.987,30.757", "c"=367]
 "kuixu/Linear-Multihead-Attention" ["l"="48.771,34.023"]
-"pprp/awesome-attention-mechanism-in-cv" ["l"="53.594,31.164"]
-"speedinghzl/CCNet" ["l"="53.423,31.008"]
-"XiaLiPKU/EMANet" ["l"="53.4,31.008"]
-"AlexHex7/Non-local_pytorch" ["l"="53.479,31.065"]
+"pprp/awesome-attention-mechanism-in-cv" ["l"="53.594,31.164", "c"=155]
+"speedinghzl/CCNet" ["l"="53.423,31.008", "c"=155]
+"XiaLiPKU/EMANet" ["l"="53.4,31.008", "c"=155]
+"AlexHex7/Non-local_pytorch" ["l"="53.479,31.065", "c"=155]
+"microsoft/fastformers" ["l"="52.612,25.524", "c"=172]
 "HazyResearch/hippo-code" ["l"="48.99,34.075"]
+"2prime/ODE-DL" ["l"="21.864,16.129", "c"=516]
 "guolinke/TUPE" ["l"="48.912,33.948"]
-"microsoft/fastformers" ["l"="52.612,25.524"]
-"facebookresearch/transformer-sequential" ["l"="23.701,14.852"]
-"facebookresearch/GENRE" ["l"="-0.406,-42.173"]
-"HHousen/TransformerSum" ["l"="58.337,28.99"]
-"dreasysnail/POINTER" ["l"="57.633,29.29"]
-"lucidrains/rotary-embedding-torch" ["l"="46.375,30.416"]
-"lucidrains/Adan-pytorch" ["l"="48.845,32.994"]
+"facebookresearch/transformer-sequential" ["l"="23.701,14.852", "c"=728]
+"facebookresearch/GENRE" ["l"="-0.406,-42.173", "c"=934]
+"dreasysnail/POINTER" ["l"="57.633,29.29", "c"=1082]
+"lucidrains/rotary-embedding-torch" ["l"="46.375,30.416", "c"=367]
+"lucidrains/Adan-pytorch" ["l"="48.845,32.994", "c"=401]
 "lucidrains/mixture-of-attention" ["l"="48.761,33.858"]
 "lucidrains/taylor-series-linear-attention" ["l"="48.897,33.891"]
-"NVIDIA/transformer-ls" ["l"="23.765,14.849"]
+"NVIDIA/transformer-ls" ["l"="23.765,14.849", "c"=728]
 "lucidrains/pytorch-custom-utils" ["l"="48.817,33.858"]
+"asigalov61/Tegridy-MIDI-Dataset" ["l"="38.769,4.186", "c"=201]
+"asigalov61/Optimus-VIRTUOSO" ["l"="48.835,33.7"]
 "MC-BERT/MC-BERT" ["l"="48.811,34.031"]
 "ofirpress/shortformer" ["l"="48.943,33.914"]
 "XuezheMax/fairseq-apollo" ["l"="49.038,33.898"]
-"sooftware/luna-transformer" ["l"="-5.341,-23.062"]
+"sooftware/luna-transformer" ["l"="-5.341,-23.062", "c"=164]
+"BlinkDL/RWKV-LM" ["l"="39.888,0.618", "c"=7]
+"HuCaoFighting/Swin-Unet" ["l"="61.818,36.933", "c"=178]
+"JCruan519/VM-UNet" ["l"="49.148,34.259"]
+"amusi/ICCV2023-Papers-with-Code" ["l"="50.838,29.727", "c"=83]
+"MzeroMiko/VMamba" ["l"="49.155,34.212"]
+"miracleyoo/pytorch-lightning-template" ["l"="-3.788,23.501", "c"=827]
 "cloneofsimo/clipping-CLIP-to-GAN" ["l"="48.622,33.978"]
 "L0Z1K/para-Kor" ["l"="48.639,33.985"]
-"lucidrains/lambda-networks" ["l"="50.866,30.012"]
-"juntang-zhuang/Adabelief-Optimizer" ["l"="51.014,30.026"]
-"yitu-opensource/T2T-ViT" ["l"="50.843,29.831"]
-"lucidrains/alphafold2" ["l"="24.331,13.346"]
-"lucidrains/flamingo-pytorch" ["l"="49.022,30.299"]
-"facebookresearch/deit" ["l"="50.79,29.736"]
-"juho-lee/set_transformer" ["l"="23.153,14.826"]
-"lucidrains/TimeSformer-pytorch" ["l"="47.974,33.84"]
-"facebookresearch/vissl" ["l"="52.961,29.524"]
-"yuewang-cuhk/awesome-vision-language-pretraining-papers" ["l"="48.733,31.999"]
-"NVlabs/GroupViT" ["l"="48.79,30.31"]
+"lucidrains/lambda-networks" ["l"="50.866,30.012", "c"=83]
+"juntang-zhuang/Adabelief-Optimizer" ["l"="51.014,30.026", "c"=83]
+"yitu-opensource/T2T-ViT" ["l"="50.843,29.831", "c"=83]
+"lucidrains/alphafold2" ["l"="24.331,13.346", "c"=281]
+"McGregorWwww/UCTransNet" ["l"="61.78,36.927", "c"=178]
+"kiharalab/ACC-UNet" ["l"="49.113,34.369"]
+"lucidrains/flamingo-pytorch" ["l"="49.022,30.299", "c"=191]
+"facebookresearch/deit" ["l"="50.79,29.736", "c"=83]
+"lucidrains/TimeSformer-pytorch" ["l"="47.974,33.84", "c"=168]
+"facebookresearch/vissl" ["l"="52.961,29.524", "c"=547]
+"yuewang-cuhk/awesome-vision-language-pretraining-papers" ["l"="48.733,31.999", "c"=300]
+"NVlabs/GroupViT" ["l"="48.79,30.31", "c"=191]
 "esceptico/perceiver-io" ["l"="48.858,33.863"]
-"google-research/bigbird" ["l"="48.844,34.038"]
+"lucidrains/tab-transformer-pytorch" ["l"="46.038,24.715", "c"=1262]
+"Rayicer/TransFuse" ["l"="61.712,36.956", "c"=178]
+"JCruan519/EGE-UNet" ["l"="49.128,34.329"]
+"yaoppeng/U-Net_v2" ["l"="49.107,34.342"]
+"xianlin7/ConvFormer" ["l"="49.083,34.417"]
+"raminmh/CfC" ["l"="22.794,14.685", "c"=505]
+"lindermanlab/S5" ["l"="49.039,34.007"]
 "LowinLi/chinese-bigbird" ["l"="48.838,34.075"]
 "thevasudevgupta/bigbird" ["l"="48.819,34.061"]
-"armancohan/long-summarization" ["l"="58.367,29.035"]
-"google-research/pegasus" ["l"="58.354,29.067"]
-"KLUE-benchmark/KLUE" ["l"="-5.126,-23.17"]
+"armancohan/long-summarization" ["l"="58.367,29.035", "c"=665]
+"google-research/pegasus" ["l"="58.354,29.067", "c"=665]
+"KLUE-benchmark/KLUE" ["l"="-5.126,-23.17", "c"=164]
 "google-research/longt5" ["l"="48.79,34.064"]
-"allenai/naacl2021-longdoc-tutorial" ["l"="48.8,34.092"]
-"microsoft/DeBERTa" ["l"="53.231,27.124"]
-"lindermanlab/S5" ["l"="49.039,34.007"]
+"microsoft/DeBERTa" ["l"="53.231,27.124", "c"=60]
+"Ki6an/fastT5" ["l"="38.673,-0.684", "c"=39]
+"IBM/CrossViT" ["l"="49.187,33.09", "c"=401]
+"hunto/LocalMamba" ["l"="49.163,34.167"]
+"lucidrains/agent-attention-pytorch" ["l"="48.968,33.941"]
 "lucidrains/h-transformer-1d" ["l"="48.897,34.056"]
 "srush/annotated-s4" ["l"="49.058,34.043"]
-"harvardnlp/pytorch-struct" ["l"="57.622,29.477"]
+"harvardnlp/pytorch-struct" ["l"="57.622,29.477", "c"=1082]
 "HazyResearch/safari" ["l"="49.018,34.016"]
-"asigalov61/Optimus-VIRTUOSO" ["l"="48.835,33.7"]
 "asigalov61/Amazing-GPT2-Piano" ["l"="48.828,33.677"]
-"princeton-nlp/DensePhrases" ["l"="54.506,25.572"]
+"princeton-nlp/DensePhrases" ["l"="54.506,25.572", "c"=439]
 "meraks/Swin-Transformer-1D" ["l"="48.88,34.085"]
 "toshas/torch-discounted-cumsum" ["l"="49.229,33.918"]
 "johnryan465/pscan" ["l"="49.201,33.947"]
 "cloneofsimo/poly2SOP" ["l"="48.591,33.976"]
 "cloneofsimo/zeroshot-storytelling" ["l"="48.571,33.975"]
-"state-spaces/mamba" ["l"="49.202,34.162"]
+"raminmh/liquid-s4" ["l"="22.767,14.697", "c"=505]
+"xmindflow/Awesome-Transformer-in-Medical-Imaging" ["l"="61.664,36.908", "c"=178]
+"Omid-Nejati/MedViT" ["l"="49.039,34.302"]
+"Dao-AILab/flash-attention" ["l"="38.876,-0.736", "c"=39]
+"MCG-NJU/VideoMAE" ["l"="48.045,33.812", "c"=168]
+"OpenGVLab/VideoMamba" ["l"="49.175,34.184"]
 "johnma2006/mamba-minimal" ["l"="49.144,34.13"]
 "radarFudan/Awesome-state-space-models" ["l"="49.1,34.118"]
-"fla-org/flash-linear-attention" ["l"="38.943,-0.326"]
-"AI4HealthUOL/SSSD" ["l"="45.074,24.472"]
+"fla-org/flash-linear-attention" ["l"="38.943,-0.326", "c"=39]
+"AI4HealthUOL/SSSD" ["l"="45.074,24.472", "c"=166]
 "alxndrTL/mamba.py" ["l"="49.124,34.147"]
 "hustvl/Vim" ["l"="49.146,34.193"]
-"lucidrains/vector-quantize-pytorch" ["l"="38.599,2.021"]
-"arogozhnikov/einops" ["l"="50.9,29.579"]
+"lucidrains/vector-quantize-pytorch" ["l"="38.599,2.021", "c"=54]
+"arogozhnikov/einops" ["l"="50.9,29.579", "c"=83]
 "srush/annotated-mamba" ["l"="49.096,34.052"]
 "AvivBick/awesome-ssm-ml" ["l"="49.114,34.106"]
-"google/flaxformer" ["l"="21.85,13.904"]
+"google/flaxformer" ["l"="21.85,13.904", "c"=267]
 "HazyResearch/flash-fft-conv" ["l"="49.049,33.962"]
 "ctlllll/SGConv" ["l"="49.049,34.022"]
 "TariqAHassan/S4Torch" ["l"="49.058,33.998"]
 "HazyResearch/H3" ["l"="49.075,34.008"]
-"srush/LLM-Training-Puzzles" ["l"="39.012,-0.261"]
+"srush/LLM-Training-Puzzles" ["l"="39.012,-0.261", "c"=39]
+"icey-zhang/SuperYOLO" ["l"="54.436,34.246", "c"=887]
+"HZAI-ZJNU/Mamba-YOLO" ["l"="49.099,34.242"]
+"huaaaliu/RGBX_Semantic_Segmentation" ["l"="47.821,35.634", "c"=695]
+"zifuwan/Sigma" ["l"="49.094,34.225"]
 "huoxiangzuo/HiFuse" ["l"="49.042,34.285"]
-"Omid-Nejati/MedViT" ["l"="49.039,34.302"]
 "huoxiangzuo/SPA" ["l"="48.994,34.303"]
 "YubiaoYue/MedMamba" ["l"="49.103,34.262"]
 "JunnYu/FLASHQuad_pytorch" ["l"="48.641,33.884"]
 "hscspring/bytepiece-rs" ["l"="48.614,33.872"]
-"lucidrains/flash-cosine-sim-attention" ["l"="21.882,13.835"]
-"ZhuiyiTechnology/GAU-alpha" ["l"="53.371,26.925"]
+"jeya-maria-jose/UNeXt-pytorch" ["l"="61.785,36.903", "c"=178]
+"lucidrains/flash-cosine-sim-attention" ["l"="21.882,13.835", "c"=267]
+"ZhuiyiTechnology/GAU-alpha" ["l"="53.371,26.925", "c"=60]
 "google-research/perceiver-ar" ["l"="48.855,33.764"]
 "lucidrains/perceiver-ar-pytorch" ["l"="48.845,33.781"]
-"esceptico/squeezer" ["l"="-44.46,26.395"]
+"esceptico/squeezer" ["l"="-44.46,26.395", "c"=551]
+"Dootmaan/MT-UNet" ["l"="61.743,36.905", "c"=178]
+"gorkemcanates/Dual-Cross-Attention" ["l"="49.082,34.342"]
 "BlinkDL/RWKV-CUDA" ["l"="49.567,34.061"]
 "JL-er/RWKV-PEFT" ["l"="49.464,34.059"]
 "BlinkDL/nanoRWKV" ["l"="49.618,34.064"]
@@ -1855,25 +2057,37 @@ digraph G {
 "feizc/Perceiver-Music-Generation" ["l"="48.838,33.757"]
 "BlinkDL/RWKV-v2-RNN-Pile" ["l"="49.593,33.896"]
 "ArEnSc/Production-RWKV" ["l"="49.568,33.921"]
+"JonasGeiping/cramming" ["l"="38.763,-0.346", "c"=39]
 "facebookresearch/mega" ["l"="49.063,33.942"]
 "HazyResearch/based" ["l"="49.1,33.935"]
 "jzhang38/LongMamba" ["l"="49.121,34.05"]
 "AmeenAli/HiddenMambaAttn" ["l"="49.089,34.085"]
-"JonasGeiping/cramming" ["l"="38.763,-0.346"]
 "HazyResearch/m2" ["l"="49.079,33.976"]
-"lucidrains/recurrent-memory-transformer-pytorch" ["l"="37.996,-1.591"]
+"lucidrains/recurrent-memory-transformer-pytorch" ["l"="37.996,-1.591", "c"=1218]
+"JunweiLiang/awesome_lists" ["l"="-3.978,23.512", "c"=827]
+"yyyujintang/Awesome-Mamba-Papers" ["l"="49.138,34.169"]
+"Amshaker/unetr_plus_plus" ["l"="62.514,37.699", "c"=284]
+"bowang-lab/U-Mamba" ["l"="49.134,34.249"]
+"ge-xing/SegMamba" ["l"="49.12,34.272"]
+"yangqy1110/Diffusion-Models" ["l"="45.782,31.652", "c"=605]
+"ziyangwang007/Mamba-UNet" ["l"="49.134,34.279"]
+"ExtensityAI/symbolicai" ["l"="41.583,-3.752", "c"=146]
+"NITR098/Awesome-U-Net" ["l"="61.737,36.869", "c"=178]
+"xmindflow/deformableLKA" ["l"="49.089,34.369"]
+"SLDGroup/EMCAD" ["l"="49.068,34.321"]
 "i404788/s5-pytorch" ["l"="49.035,33.985"]
-"raminmh/liquid-s4" ["l"="22.767,14.697"]
 "NicolasZucchet/minimal-LRU" ["l"="48.995,33.982"]
 "Gothos/LRU-pytorch" ["l"="48.99,33.997"]
 "ag1988/dss" ["l"="49.012,33.989"]
-"luchris429/popjaxrl" ["l"="59.33,17.336"]
+"luchris429/popjaxrl" ["l"="59.33,17.336", "c"=169]
 "HazyResearch/spacetime" ["l"="49.011,33.952"]
 "ruke1ire/RTF" ["l"="49.019,33.972"]
+"OpenGVLab/InternVideo" ["l"="47.549,30.045", "c"=254]
+"CarperAI/OpenELM" ["l"="59.174,17.344", "c"=169]
 "lucidrains/Mega-pytorch" ["l"="49.056,33.914"]
 "JCruan519/MALUNet" ["l"="49.15,34.341"]
-"JCruan519/EGE-UNet" ["l"="49.128,34.329"]
 "xuxuxuxuxuxjh/LB-UNet" ["l"="49.141,34.361"]
+"asigalov61/Los-Angeles-Music-Composer" ["l"="38.903,4.181", "c"=201]
 "harrisonvanderbyl/rwkvstic" ["l"="49.532,33.96"]
 "hizkifw/WebChatRWKVstic" ["l"="49.552,33.947"]
 "harrisonvanderbyl/rwkv_chatbot" ["l"="49.557,33.934"]
@@ -1881,8 +2095,10 @@ digraph G {
 "cryscan/eloise" ["l"="49.5,33.981"]
 "gururise/rwkv_gradio" ["l"="49.54,33.934"]
 "mrsteyk/RWKV-LM-deepspeed" ["l"="49.575,33.955"]
+"MASILab/3DUX-Net" ["l"="62.5,37.704", "c"=284]
 "nlpodyssey/verbaflow" ["l"="49.676,33.974"]
 "nlpodyssey/rwkv" ["l"="49.652,33.98"]
+"salesforce/causalai" ["l"="43.684,25.385", "c"=372]
 "chgwan/1DSwin" ["l"="48.868,34.103"]
 "mrsteyk/rwkvk-rs" ["l"="49.586,33.92"]
 "FengheTan9/CMU-Net" ["l"="49.06,34.423"]
@@ -1895,39 +2111,46 @@ digraph G {
 "Ai00-X/ai00_server" ["l"="49.439,34.028"]
 "Blealtan/RWKV-LM-LoRA" ["l"="49.467,34.024"]
 "cryscan/web-rwkv" ["l"="49.436,34.045"]
-"BlinkDL/ChatRWKV" ["l"="39.251,-1.95"]
-"BlinkDL/RWKV-LM" ["l"="39.888,0.618"]
-"PotatoSpudowski/fastLLaMa" ["l"="42.522,-1.941"]
-"leejet/stable-diffusion.cpp" ["l"="40.288,0.872"]
+"BlinkDL/ChatRWKV" ["l"="39.251,-1.95", "c"=202]
+"PotatoSpudowski/fastLLaMa" ["l"="42.522,-1.941", "c"=1097]
+"leejet/stable-diffusion.cpp" ["l"="40.288,0.872", "c"=7]
 "RWKV/RWKV-infctx-trainer" ["l"="49.45,34.043"]
-"ggml-org/ggml" ["l"="40.122,0.635"]
-"josStorer/RWKV-Runner" ["l"="39.286,-1.858"]
-"ridgerchu/SpikeGPT" ["l"="60.809,33.628"]
+"ggml-org/ggml" ["l"="40.122,0.635", "c"=7]
+"josStorer/RWKV-Runner" ["l"="39.286,-1.858", "c"=202]
+"ridgerchu/SpikeGPT" ["l"="60.809,33.628", "c"=607]
+"vec2text/vec2text" ["l"="37.93,-6.846", "c"=766]
 "Omid-Nejati/MedViTV2" ["l"="49.005,34.324"]
 "Omid-Nejati/BEFUnet" ["l"="49.028,34.326"]
-"xmindflow/Awesome-Transformer-in-Medical-Imaging" ["l"="61.664,36.908"]
 "Omid-Nejati/DenUnet" ["l"="49.014,34.314"]
 "Omid-Nejati/Locality-iN-Locality" ["l"="49.009,34.302"]
+"OpenGVLab/SAM-Med2D" ["l"="62.449,37.732", "c"=284]
+"Liuhong99/Sophia" ["l"="48.818,32.958", "c"=401]
+"NVlabs/FasterViT" ["l"="49.017,32.999", "c"=401]
+"NVlabs/MambaVision" ["l"="49.119,34.205"]
+"kyegomez/LongNet" ["l"="38.125,-1.544", "c"=1218]
+"kyegomez/zeta" ["l"="49.172,34.235"]
 "YaoleiQi/DSCNet" ["l"="49.099,34.316"]
-"xmindflow/deformableLKA" ["l"="49.089,34.369"]
-"jocpae/clDice" ["l"="61.709,37.715"]
-"Zyun-Y/DconnNet" ["l"="61.743,37.723"]
-"HuXiaoling/TopoLoss" ["l"="51.924,16.483"]
-"rayleizhu/BiFormer" ["l"="49.114,32.98"]
-"SLDGroup/EMCAD" ["l"="49.068,34.321"]
-"ge-xing/SegMamba" ["l"="49.12,34.272"]
-"JCruan519/VM-UNet" ["l"="49.148,34.259"]
-"MIC-DKFZ/Skeleton-Recall" ["l"="61.766,37.711"]
-"iMED-Lab/CS-Net" ["l"="61.662,37.687"]
-"cheng-haha/ScConv" ["l"="49.13,32.954"]
+"jocpae/clDice" ["l"="61.709,37.715", "c"=1043]
+"Zyun-Y/DconnNet" ["l"="61.743,37.723", "c"=1043]
+"HuXiaoling/TopoLoss" ["l"="51.924,16.483", "c"=100]
+"rayleizhu/BiFormer" ["l"="49.114,32.98", "c"=401]
+"MIC-DKFZ/Skeleton-Recall" ["l"="61.766,37.711", "c"=1043]
+"iMED-Lab/CS-Net" ["l"="61.662,37.687", "c"=1043]
+"cheng-haha/ScConv" ["l"="49.13,32.954", "c"=401]
 "MrBlankness/LightM-UNet" ["l"="49.137,34.295"]
-"MIC-DKFZ/MedNeXt" ["l"="62.491,37.689"]
-"Beckschen/3D-TransUNet" ["l"="62.524,37.671"]
+"MIC-DKFZ/MedNeXt" ["l"="62.491,37.689", "c"=284]
+"Beckschen/3D-TransUNet" ["l"="62.524,37.671", "c"=284]
+"yemu1138178251/FFCA-YOLO" ["l"="51.321,16.315", "c"=1152]
+"Jamie-Stirling/RetNet" ["l"="49.022,32.886", "c"=401]
+"OpenGVLab/VideoMAEv2" ["l"="48.083,33.864", "c"=168]
+"vitoplantamura/OnnxStream" ["l"="40.271,0.947", "c"=7]
 "harrisonvanderbyl/godot-rwkv" ["l"="49.483,33.965"]
 "ZeldaHuang/rwkv-cpp-server" ["l"="49.525,33.984"]
 "RWKV/rwkv-onnx" ["l"="49.555,34"]
 "howard-hou/VisualRWKV" ["l"="49.391,34.059"]
 "jiamingkong/RWKV_chains" ["l"="49.524,33.997"]
+"Atome-FE/llama-node" ["l"="40.811,0.957", "c"=7]
+"YOLOonMe/EMA-attention-module" ["l"="49.132,32.939", "c"=401]
 "deepglint/RWKV-CLIP" ["l"="49.367,34.079"]
 "OpenGVLab/Vision-RWKV" ["l"="49.245,34.144"]
 "AGENDD/RWKV-ASR" ["l"="49.405,34.041"]
@@ -1939,7 +2162,7 @@ digraph G {
 "Yaziwel/Awesome-RWKV-in-Vision" ["l"="49.235,34.125"]
 "theodorblackbird/lina-speech" ["l"="49.416,33.974"]
 "HazyResearch/zoology" ["l"="49.117,33.948"]
-"nomic-ai/contrastors" ["l"="54.57,25.693"]
+"nomic-ai/contrastors" ["l"="54.57,25.693", "c"=439]
 "proger/accelerated-scan" ["l"="49.151,33.982"]
 "neromous/RWKV-Ouroboros" ["l"="49.467,34.038"]
 "shoumenchougou/Awesome-RWKV-Prompts" ["l"="49.45,34.056"]
@@ -1949,25 +2172,24 @@ digraph G {
 "Triang-jyed-driung/RWKV-World-Finetune" ["l"="49.494,34.039"]
 "Prunoideae/rwkv-contrib" ["l"="49.455,34.021"]
 "RWKV/RWKV-wiki" ["l"="49.412,34.056"]
-"xianlin7/ConvFormer" ["l"="49.083,34.417"]
-"kiharalab/ACC-UNet" ["l"="49.113,34.369"]
-"jeya-maria-jose/UNeXt-pytorch" ["l"="61.785,36.903"]
-"yaoppeng/U-Net_v2" ["l"="49.107,34.342"]
-"ziyangwang007/Mamba-UNet" ["l"="49.134,34.279"]
+"valeman/Transformers_And_LLM_Are_What_You_Dont_Need" ["l"="43.742,26.173", "c"=1179]
+"pg2455/KAN-Tutorial" ["l"="49.296,34.407"]
+"OpenGVLab/unmasked_teacher" ["l"="47.778,32.957", "c"=373]
 "CUHK-AIM-Group/U-KAN" ["l"="49.184,34.308"]
-"Rayicer/TransFuse" ["l"="61.712,36.956"]
-"Xiaoqi-Zhao-DLUT/MSNet-M2SNet" ["l"="61.624,37.029"]
-"yykzjh/PMFSNet" ["l"="-33.257,-26.813"]
-"xmindflow/DermoSegDiff" ["l"="61.811,36.563"]
-"HazyResearch/hyena-dna" ["l"="24.535,13.568"]
-"HazyResearch/ThunderKittens" ["l"="38.957,-0.343"]
-"Liuhong99/Sophia" ["l"="48.818,32.958"]
-"lucidrains/block-recurrent-transformer-pytorch" ["l"="37.937,-1.606"]
-"stanford-crfm/levanter" ["l"="21.857,13.985"]
+"Xiaoqi-Zhao-DLUT/MSNet-M2SNet" ["l"="61.624,37.029", "c"=178]
+"yykzjh/PMFSNet" ["l"="-33.257,-26.813", "c"=185]
+"xmindflow/DermoSegDiff" ["l"="61.811,36.563", "c"=178]
+"NouamaneTazi/bloomz.cpp" ["l"="42.363,-1.95", "c"=1097]
+"HazyResearch/hyena-dna" ["l"="24.535,13.568", "c"=281]
+"HazyResearch/ThunderKittens" ["l"="38.957,-0.343", "c"=39]
+"lucidrains/block-recurrent-transformer-pytorch" ["l"="37.937,-1.606", "c"=1218]
+"stanford-crfm/levanter" ["l"="21.857,13.985", "c"=267]
 "NicolasZucchet/Online-learning-LR-dependencies" ["l"="48.978,33.965"]
 "shengxia/RWKV_Role_Playing" ["l"="49.449,34.003"]
 "Curli-quan/Slide-SAM" ["l"="49.034,34.464"]
-"xmindflow/DAEFormer" ["l"="61.645,36.913"]
+"DaiShiResearch/TransNeXt" ["l"="49.107,32.94", "c"=401]
+"QwenLM/qwen.cpp" ["l"="39.16,-1.848", "c"=202]
+"xmindflow/DAEFormer" ["l"="61.645,36.913", "c"=178]
 "StevenLauHKHK/Large-Separable-Kernel-Attention" ["l"="49.049,34.392"]
 "ChongQingNoSubway/SelfReg-UNet" ["l"="49.102,34.409"]
 "Seikaijyu/RWKV-PEFT-Simple" ["l"="49.491,34.056"]
@@ -1975,7 +2197,7 @@ digraph G {
 "shengxia/RWKV_Role_Playing_API" ["l"="49.447,33.965"]
 "v3ucn/RWKV_Role_Playing_with_GPT-SoVITS" ["l"="49.456,33.952"]
 "1694439208/RWKV-ToolKit" ["l"="49.46,33.982"]
-"Minami-su/character_AI_open" ["l"="39.169,-1.594"]
+"Minami-su/character_AI_open" ["l"="39.169,-1.594", "c"=202]
 "Durham/RWKV-finetune-script" ["l"="49.507,34.036"]
 "xzhong411/BCU-Net" ["l"="49.12,34.398"]
 "Retinal-Research/EVIT-UNET" ["l"="49.042,34.414"]
@@ -1984,12 +2206,11 @@ digraph G {
 "Jiaoyang45/Rolling-Unet" ["l"="49.127,34.383"]
 "Prunoideae/web-rwkv-axum" ["l"="49.43,34.012"]
 "TorchRWKV/rwkv-kit" ["l"="49.428,34.068"]
-"daquexian/faster-rwkv" ["l"="49.642,30.752"]
+"daquexian/faster-rwkv" ["l"="49.642,30.752", "c"=1055]
 "cryscan/web-rwkv-realweb" ["l"="49.452,34.077"]
-"kyegomez/zeta" ["l"="49.172,34.235"]
 "kyegomez/VisionMamba" ["l"="49.117,34.222"]
 "kyegomez/Jamba" ["l"="49.231,34.183"]
-"kyegomez/Andromeda" ["l"="48.654,32.901"]
+"kyegomez/Andromeda" ["l"="48.654,32.901", "c"=401]
 "kyegomez/swarms-pytorch" ["l"="49.212,34.28"]
 "kyegomez/MambaByte" ["l"="49.229,34.265"]
 "kyegomez/MultiModalMamba" ["l"="49.18,34.367"]
@@ -2006,36 +2227,34 @@ digraph G {
 "Jellyfish042/Sudoku-RWKV" ["l"="49.472,34.077"]
 "SmerkyG/gptcore" ["l"="49.521,34.092"]
 "SmerkyG/RWKV_Explained" ["l"="49.535,34.109"]
+"MollySophia/rwkv-mobile" ["l"="49.474,34.132"]
+"KerfuffleV2/smolrsrwkv" ["l"="-11.097,-6.785", "c"=5]
 "KindXiaoming/pykan" ["l"="49.316,34.271"]
 "Blealtan/efficient-kan" ["l"="49.277,34.314"]
 "mintisan/awesome-kan" ["l"="49.313,34.345"]
-"karpathy/llm.c" ["l"="40.217,0.608"]
-"facebookresearch/sam2" ["l"="48.908,29.989"]
-"Dao-AILab/flash-attention" ["l"="38.876,-0.736"]
-"meta-llama/llama3" ["l"="40.155,0.388"]
-"google-research/tuning_playbook" ["l"="50.662,29.386"]
-"facebookresearch/segment-anything" ["l"="50.506,29.519"]
-"lucidrains/vit-pytorch" ["l"="50.683,29.606"]
-"openai/CLIP" ["l"="50.642,29.547"]
+"karpathy/llm.c" ["l"="40.217,0.608", "c"=7]
+"facebookresearch/sam2" ["l"="48.908,29.989", "c"=191]
+"meta-llama/llama3" ["l"="40.155,0.388", "c"=7]
+"google-research/tuning_playbook" ["l"="50.662,29.386", "c"=83]
+"facebookresearch/segment-anything" ["l"="50.506,29.519", "c"=83]
+"lucidrains/vit-pytorch" ["l"="50.683,29.606", "c"=83]
+"openai/CLIP" ["l"="50.642,29.547", "c"=83]
 "GistNoesis/FourierKAN" ["l"="49.335,34.349"]
-"labmlai/annotated_deep_learning_paper_implementations" ["l"="50.577,29.37"]
-"jax-ml/jax" ["l"="50.809,29.353"]
-"MzeroMiko/VMamba" ["l"="49.155,34.212"]
-"yyyujintang/Awesome-Mamba-Papers" ["l"="49.138,34.169"]
+"labmlai/annotated_deep_learning_paper_implementations" ["l"="50.577,29.37", "c"=83]
+"jax-ml/jax" ["l"="50.809,29.353", "c"=83]
 "Dao-AILab/causal-conv1d" ["l"="49.133,34.219"]
 "redotvideo/mamba-chat" ["l"="49.158,34.109"]
 "tommyip/mamba2-minimal" ["l"="49.039,34.201"]
 "XiudingCai/Awesome-Mamba-Collection" ["l"="49.097,34.164"]
-"LeapLabTHU/MLLA" ["l"="49.246,32.943"]
+"LeapLabTHU/MLLA" ["l"="49.246,32.943", "c"=401]
 "AntonioTepsich/Convolutional-KANs" ["l"="49.287,34.355"]
 "ZiyaoLi/fast-kan" ["l"="49.316,34.382"]
 "IvanDrokin/torch-conv-kan" ["l"="49.275,34.369"]
 "SynodicMonth/ChebyKAN" ["l"="49.33,34.391"]
-"Adamdad/kat" ["l"="-55.186,-11.361"]
+"Adamdad/kat" ["l"="-55.186,-11.361", "c"=365]
 "team-daniel/KAN" ["l"="49.313,34.417"]
 "chenziwenhaoshuai/Vision-KAN" ["l"="49.287,34.377"]
 "AdityaNG/kan-gpt" ["l"="49.313,34.37"]
-"pg2455/KAN-Tutorial" ["l"="49.296,34.407"]
 "WillHua127/GraphKAN-Graph-Kolmogorov-Arnold-Networks" ["l"="49.358,34.351"]
 "remigenet/TKAN" ["l"="49.333,34.416"]
 "Jerry-Master/KAN-benchmarking" ["l"="49.335,34.374"]
@@ -2044,20 +2263,20 @@ digraph G {
 "Indoxer/LKAN" ["l"="49.341,34.384"]
 "akaashdash/kansformers" ["l"="49.27,34.398"]
 "Ruixxxx/Awesome-Vision-Mamba-Models" ["l"="49.107,34.19"]
-"NVlabs/MambaVision" ["l"="49.119,34.205"]
-"csguoh/MambaIR" ["l"="-35.862,22.296"]
+"csguoh/MambaIR" ["l"="-35.862,22.296", "c"=463]
 "ReaFly/Awesome-Vision-Mamba" ["l"="49.1,34.206"]
 "yuweihao/MambaOut" ["l"="49.198,34.214"]
-"bowang-lab/U-Mamba" ["l"="49.134,34.249"]
+"CompVis/zigma" ["l"="46.253,30.54", "c"=367]
+"feizc/Diffusion-RWKV" ["l"="49.321,34.106"]
 "Yangzhangcst/Mamba-in-CV" ["l"="49.08,34.187"]
-"csguoh/Awesome-Mamba-in-Low-Level-Vision" ["l"="-35.921,22.31"]
-"zifuwan/Sigma" ["l"="49.094,34.225"]
+"csguoh/Awesome-Mamba-in-Low-Level-Vision" ["l"="-35.921,22.31", "c"=463]
 "maklachur/Mamba-in-Computer-Vision" ["l"="49.017,34.172"]
-"XiaoBuL/CM-UNet" ["l"="49.083,32.805"]
+"XiaoBuL/CM-UNet" ["l"="49.083,32.805", "c"=401]
 "YuHengsss/VSSD" ["l"="49.06,34.162"]
 "lewandofskee/MobileMamba" ["l"="48.978,34.231"]
 "lx6c78/Vision-Mamba-A-Comprehensive-Survey-and-Taxonomy" ["l"="49.048,34.183"]
-"alexhe101/Pan-Mamba" ["l"="54.139,34.257"]
+"alexhe101/Pan-Mamba" ["l"="54.139,34.257", "c"=887]
+"52CV/CVPR-2024-Papers" ["l"="50.911,29.662", "c"=83]
 "JianpanHuang/KAN" ["l"="49.311,34.455"]
 "MSD-IRIMAS/Simple-KAN-4-Time-Series" ["l"="49.327,34.431"]
 "jakariaemon/CNN-KAN" ["l"="49.275,34.412"]
@@ -2067,27 +2286,27 @@ digraph G {
 "kyegomez/xLSTM" ["l"="49.324,34.173"]
 "muditbhargava66/PyxLSTM" ["l"="49.306,34.176"]
 "NISCHALPI/xLSTM-and-mLSTM" ["l"="49.33,34.16"]
-"haotian-liu/LLaVA" ["l"="47.375,29.865"]
-"huggingface/peft" ["l"="40.04,0.52"]
-"facebookresearch/DiT" ["l"="45.849,31.545"]
-"microsoft/unilm" ["l"="38.785,-0.95"]
-"microsoft/Swin-Transformer" ["l"="50.669,29.705"]
-"microsoft/LoRA" ["l"="39.84,0.5"]
-"vllm-project/vllm" ["l"="40.265,0.397"]
-"SLDGroup/G-CASCADE" ["l"="61.613,36.982"]
-"SLDGroup/CASCADE" ["l"="61.6,37.003"]
+"haotian-liu/LLaVA" ["l"="47.375,29.865", "c"=254]
+"huggingface/peft" ["l"="40.04,0.52", "c"=7]
+"facebookresearch/DiT" ["l"="45.849,31.545", "c"=605]
+"microsoft/unilm" ["l"="38.785,-0.95", "c"=39]
+"microsoft/Swin-Transformer" ["l"="50.669,29.705", "c"=83]
+"microsoft/LoRA" ["l"="39.84,0.5", "c"=7]
+"vllm-project/vllm" ["l"="40.265,0.397", "c"=7]
+"uni-medical/SAM-Med3D" ["l"="62.469,37.721", "c"=284]
+"SLDGroup/G-CASCADE" ["l"="61.613,36.982", "c"=178]
+"SLDGroup/CASCADE" ["l"="61.6,37.003", "c"=178]
 "Mengqi-Lei/ConDSeg" ["l"="49.035,34.345"]
 "UARK-AICV/MEGANet" ["l"="49.009,34.348"]
 "Inha-CVAI/MADGNet" ["l"="49.046,34.361"]
 "wjh892521292/LKM-UNet" ["l"="49.12,34.29"]
-"Linwei-Chen/FADC" ["l"="49.082,32.909"]
+"Linwei-Chen/FADC" ["l"="49.082,32.909", "c"=401]
 "xmindflow/MSA-2Net" ["l"="49.056,34.267"]
 "nizhenliang/CGRSeg" ["l"="49.021,34.365"]
-"OpenGVLab/VideoMamba" ["l"="49.175,34.184"]
-"hunto/LocalMamba" ["l"="49.163,34.167"]
-"HZAI-ZJNU/Mamba-YOLO" ["l"="49.099,34.242"]
+"AILab-CVC/UniRepLKNet" ["l"="49.061,32.948", "c"=401]
+"google-deepmind/alphageometry" ["l"="38.804,-0.866", "c"=39]
 "JiarunLiu/Swin-UMamba" ["l"="49.153,34.272"]
-"zzr-idam/UVM-Net" ["l"="-35.89,22.335"]
+"zzr-idam/UVM-Net" ["l"="-35.89,22.335", "c"=463]
 "wurenkai/UltraLight-VM-UNet" ["l"="49.154,34.292"]
 "TerryPei/EfficientVMamba" ["l"="49.177,34.204"]
 "tianrun-chen/xLSTM-UNet-PyTorch" ["l"="49.181,34.269"]
@@ -2097,30 +2316,30 @@ digraph G {
 "Zhangyanbo/MLP-KAN" ["l"="49.385,34.436"]
 "CG80499/KAN-GPT-2" ["l"="49.362,34.414"]
 "StarostinV/convkan" ["l"="49.284,34.392"]
-"assafbk/DeciMamba" ["l"="38.955,0.015"]
-"princeton-nlp/ProLong" ["l"="38.002,-1.387"]
+"assafbk/DeciMamba" ["l"="38.955,0.015", "c"=39]
+"princeton-nlp/ProLong" ["l"="38.002,-1.387", "c"=1218]
 "sjelassi/transformers_ssm_copy" ["l"="49.127,34.024"]
 "OpenNLPLab/HGRN" ["l"="49.148,34.023"]
-"princeton-nlp/HELMET" ["l"="38.017,-1.343"]
-"SJTU-IPADS/PowerInfer" ["l"="38.998,-0.659"]
-"NX-AI/xlstm" ["l"="49.259,34.17"]
-"facebookresearch/schedule_free" ["l"="38.814,-0.246"]
+"princeton-nlp/HELMET" ["l"="38.017,-1.343", "c"=1218]
+"SJTU-IPADS/PowerInfer" ["l"="38.998,-0.659", "c"=39]
+"facebookresearch/schedule_free" ["l"="38.814,-0.246", "c"=39]
 "wurenkai/H-vmunet" ["l"="49.161,34.306"]
-"HuCaoFighting/Swin-Unet" ["l"="61.818,36.933"]
-"feizc/Diffusion-RWKV" ["l"="49.321,34.106"]
 "NX-AI/vision-lstm" ["l"="49.233,34.203"]
-"HarborYuan/ovsam" ["l"="48.712,30.143"]
-"megvii-research/RevCol" ["l"="49.059,32.989"]
+"HarborYuan/ovsam" ["l"="48.712,30.143", "c"=191]
+"megvii-research/RevCol" ["l"="49.059,32.989", "c"=401]
 "wurenkai/MHA-UNet" ["l"="49.17,34.322"]
 "wurenkai/HF-UNet-and-Autooral-dataset" ["l"="49.155,34.322"]
 "pengzhangzhi/Awesome-Mamba" ["l"="49.066,34.128"]
 "xmindflow/Awesome_Mamba" ["l"="49.066,34.2"]
+"badripatro/simba" ["l"="44.722,24.574", "c"=166]
 "GistNoesis/FusedFourierKAN" ["l"="49.396,34.338"]
 "lif314/X-KANeRF" ["l"="49.391,34.378"]
 "syassami/FourierKAN-mnist" ["l"="49.379,34.336"]
 "riiswa/kanrl" ["l"="49.367,34.37"]
+"HazyResearch/aisys-building-blocks" ["l"="38.989,-0.267", "c"=39]
 "LilLouis5/Vision-Transformer" ["l"="48.953,34.293"]
 "LilLouis5/Vision-Mamba-" ["l"="48.997,34.267"]
+"DmitryRyumin/AAAI-2024-Papers" ["l"="38.259,2.314", "c"=54]
 "AI-Guru/xlstm-resources" ["l"="49.306,34.19"]
 "andrewgcodes/xlstm" ["l"="49.338,34.177"]
 "muslehal/xLSTMTime" ["l"="49.328,34.187"]
@@ -2129,64 +2348,54 @@ digraph G {
 "styalai/xLSTM-pytorch" ["l"="49.34,34.147"]
 "saurav-dhait/Time-Series-Forecasting-with-xLSTM" ["l"="49.354,34.185"]
 "XiangboGaoBarry/KA-Conv" ["l"="49.256,34.384"]
-"OpenGVLab/video-mamba-suite" ["l"="48.112,33.987"]
-"OpenGVLab/InternVideo" ["l"="47.549,30.045"]
-"OpenGVLab/VideoChat-Flash" ["l"="47.552,30.13"]
-"OpenGVLab/unmasked_teacher" ["l"="47.778,32.957"]
-"OpenGVLab/VideoMAEv2" ["l"="48.083,33.864"]
-"scott-yjyang/Vivim" ["l"="62.399,37.919"]
-"MCG-NJU/VideoMAE" ["l"="48.045,33.812"]
-"CompVis/zigma" ["l"="46.253,30.54"]
+"OpenGVLab/video-mamba-suite" ["l"="48.112,33.987", "c"=168]
+"OpenGVLab/VideoChat-Flash" ["l"="47.552,30.13", "c"=254]
+"scott-yjyang/Vivim" ["l"="62.399,37.919", "c"=284]
+"OpenGVLab/DCNv4" ["l"="49.086,32.955", "c"=401]
+"ma-xu/Rewrite-the-Stars" ["l"="49.061,32.93", "c"=401]
 "kyegomez/MambaTransformer" ["l"="49.172,34.422"]
-"gorkemcanates/Dual-Cross-Attention" ["l"="49.082,34.342"]
 "Human9000/nd-Mamba2-torch" ["l"="49.076,34.226"]
 "AlwaysFHao/Mamba-Install" ["l"="49.194,34.252"]
-"uni-medical/SAM-Med3D" ["l"="62.469,37.721"]
-"ljwztc/CLIP-Driven-Universal-Model" ["l"="62.442,37.668"]
-"Amshaker/unetr_plus_plus" ["l"="62.514,37.699"]
-"SuperMedIntel/MedSegDiff" ["l"="-54.351,-12.549"]
+"ljwztc/CLIP-Driven-Universal-Model" ["l"="62.442,37.668", "c"=284]
+"SuperMedIntel/MedSegDiff" ["l"="-54.351,-12.549", "c"=252]
 "zang0902/EM-Net" ["l"="49.181,34.334"]
-"lucidrains/agent-attention-pytorch" ["l"="48.968,33.941"]
 "XuezheMax/megalodon" ["l"="49.086,33.89"]
-"OpenNLPLab/lightning-attention" ["l"="39.488,5.94"]
-"Beomi/InfiniTransformer" ["l"="37.884,-1.429"]
+"OpenNLPLab/lightning-attention" ["l"="39.488,5.94", "c"=593]
+"Beomi/InfiniTransformer" ["l"="37.884,-1.429", "c"=1218]
 "test-time-training/ttt-lm-pytorch" ["l"="49.201,34.129"]
-"yuqinie98/PatchTST" ["l"="44.941,24.448"]
-"ExtensityAI/symbolicai" ["l"="41.583,-3.752"]
-"MASILab/3DUX-Net" ["l"="62.5,37.704"]
-"ge-xing/Diff-UNet" ["l"="61.848,36.559"]
-"DeepMed-Lab-ECNU/BCP" ["l"="61.92,36.667"]
-"uni-medical/STU-Net" ["l"="62.464,37.698"]
+"yuqinie98/PatchTST" ["l"="44.941,24.448", "c"=166]
+"ge-xing/Diff-UNet" ["l"="61.848,36.559", "c"=178]
+"DeepMed-Lab-ECNU/BCP" ["l"="61.92,36.667", "c"=178]
+"uni-medical/STU-Net" ["l"="62.464,37.698", "c"=284]
 "Zyphra/BlackMamba" ["l"="49.269,34.188"]
 "kyegomez/MoE-Mamba" ["l"="49.35,34.21"]
-"millieXie/FusionMamba" ["l"="54.185,34.241"]
-"huaaaliu/RGBX_Semantic_Segmentation" ["l"="47.821,35.634"]
-"UkcheolShin/CRM_RGBTSeg" ["l"="47.901,35.591"]
-"zyrant/Summary-of-RGB-T-Salient-Object-Detection-and-Semantic-segmentation" ["l"="47.763,35.5"]
-"FreeformRobotics/EAEFNet" ["l"="47.856,35.558"]
+"millieXie/FusionMamba" ["l"="54.185,34.241", "c"=887]
+"UkcheolShin/CRM_RGBTSeg" ["l"="47.901,35.591", "c"=695]
+"zyrant/Summary-of-RGB-T-Salient-Object-Detection-and-Semantic-segmentation" ["l"="47.763,35.5", "c"=695]
+"FreeformRobotics/EAEFNet" ["l"="47.856,35.558", "c"=695]
 "zhouweilian1904/Mamba-in-Mamba" ["l"="49.026,34.244"]
 "ahappyyang/GraphMamba" ["l"="48.994,34.251"]
 "Ryanfzhang/GraphKan" ["l"="49.416,34.354"]
 "yueliu1999/KAN4Graph" ["l"="49.464,34.391"]
-"GLAD-RUC/GGNN4Science" ["l"="23.568,13.281"]
-"ChengyiLIU-cs/Generative-Diffusion-Models-on-Graphs" ["l"="23.153,13.627"]
+"GLAD-RUC/GGNN4Science" ["l"="23.568,13.281", "c"=209]
+"ChengyiLIU-cs/Generative-Diffusion-Models-on-Graphs" ["l"="23.153,13.627", "c"=209]
 "Jellyfish042/uncheatable_eval" ["l"="49.491,34.083"]
 "jloveric/high-order-layers-torch" ["l"="49.3,34.441"]
-"microsoft/Samba" ["l"="38.866,-0.168"]
+"microsoft/Samba" ["l"="38.866,-0.168", "c"=39]
 "hkproj/mamba-notes" ["l"="49.192,34.061"]
-"jondurbin/bagel" ["l"="38.497,-0.221"]
-"lucidrains/self-rewarding-lm-pytorch" ["l"="37.219,-0.29"]
-"llm-random/llm-random" ["l"="-0.491,15.52"]
+"jondurbin/bagel" ["l"="38.497,-0.221", "c"=39]
+"lucidrains/self-rewarding-lm-pytorch" ["l"="37.219,-0.29", "c"=126]
+"llm-random/llm-random" ["l"="-0.491,15.52", "c"=268]
 "google-deepmind/recurrentgemma" ["l"="49.128,33.97"]
 "proger/hippogriff" ["l"="49.164,33.957"]
 "kyegomez/Griffin" ["l"="49.171,33.942"]
-"google-deepmind/penzai" ["l"="21.797,14"]
+"google-deepmind/penzai" ["l"="21.797,14", "c"=267]
 "apple/ml-sigmoid-attention" ["l"="49.144,33.93"]
 "remigenet/SigKAN" ["l"="49.33,34.468"]
 "huangst21/TimeKAN" ["l"="49.362,34.458"]
-"epignatelli/navix" ["l"="59.331,17.386"]
-"araffin/sbx" ["l"="59.34,17.444"]
-"EdanToledo/Stoix" ["l"="59.314,17.418"]
+"epignatelli/navix" ["l"="59.331,17.386", "c"=169]
+"araffin/sbx" ["l"="59.34,17.444", "c"=169]
+"EdanToledo/Stoix" ["l"="59.314,17.418", "c"=169]
 "yuunnn-w/RWKV_QQBot_BackEnd" ["l"="49.416,34.097"]
 "TorchRWKV/flash-linear-attention" ["l"="49.428,34.084"]
 "cryscan/web-rwkv-inspector" ["l"="49.403,34.089"]
@@ -2194,31 +2403,33 @@ digraph G {
 "lucidrains/pause-transformer" ["l"="48.751,33.805"]
 "lucidrains/kalman-filtering-attention" ["l"="48.771,33.822"]
 "ex3ndr/supervoice-gpt" ["l"="49.447,33.889"]
-"yangdongchao/SimpleSpeech" ["l"="38.38,2.137"]
+"yangdongchao/SimpleSpeech" ["l"="38.38,2.137", "c"=54]
 "recursal/minmodmon" ["l"="49.409,33.952"]
-"chomeyama/SiFiGAN" ["l"="38.459,2.224"]
+"chomeyama/SiFiGAN" ["l"="38.459,2.224", "c"=54]
+"huggingface/ratchet" ["l"="-8.584,-4.315", "c"=407]
+"LeapLabTHU/Agent-Attention" ["l"="49.212,32.946", "c"=401]
 "Itamarzimm/UnifiedImplicitAttnRepr" ["l"="49.056,34.093"]
 "FarnoushRJ/MambaLRP" ["l"="49.069,34.072"]
 "Tavish9/KANeRF" ["l"="49.428,34.392"]
 "YuHengsss/MSVMamba" ["l"="49.077,34.173"]
-"ToniChopp/ECAMP" ["l"="62.334,37.535"]
-"Amshaker/GroupMamba" ["l"="48.83,33.026"]
-"ma-xu/Rewrite-the-Stars" ["l"="49.061,32.93"]
+"ToniChopp/ECAMP" ["l"="62.334,37.535", "c"=284]
+"Amshaker/GroupMamba" ["l"="48.83,33.026", "c"=401]
 "goombalab/hydra" ["l"="49.138,34.074"]
 "Hprairie/Bi-Mamba2" ["l"="49.12,34.077"]
 "goombalab/phi-mamba" ["l"="49.157,34.055"]
+"LMMMEng/TransXNet" ["l"="49.117,32.9", "c"=401]
 "sidhu2690/RBF-KAN" ["l"="49.378,34.312"]
-"srush/Triton-Puzzles" ["l"="38.988,-0.306"]
-"BobMcDear/attorch" ["l"="38.995,-0.216"]
+"srush/Triton-Puzzles" ["l"="38.988,-0.306", "c"=39]
+"BobMcDear/attorch" ["l"="38.995,-0.216", "c"=39]
 "HazyResearch/prefix-linear-attention" ["l"="49.114,33.921"]
 "berlino/seq_icl" ["l"="49.136,33.912"]
 "athms/mad-lab" ["l"="49.16,33.903"]
-"srush/triton-autodiff" ["l"="39.084,-0.135"]
+"srush/triton-autodiff" ["l"="39.084,-0.135", "c"=39]
 "corl-team/rebased" ["l"="49.12,33.894"]
 "corl-team/lime" ["l"="49.133,33.865"]
-"corl-team/katakomba" ["l"="59.395,17.338"]
-"corl-team/headless-ad" ["l"="59.344,17.257"]
-"ColfaxResearch/cutlass-kernels" ["l"="36.84,0.986"]
+"corl-team/katakomba" ["l"="59.395,17.338", "c"=169]
+"corl-team/headless-ad" ["l"="59.344,17.257", "c"=169]
+"ColfaxResearch/cutlass-kernels" ["l"="36.84,0.986", "c"=112]
 "jxiw/MambaByte" ["l"="49.248,34.278"]
 "kyegomez/MHMoE" ["l"="49.386,34.211"]
 "seydi1370/Basis_Functions" ["l"="49.391,34.411"]
@@ -2235,70 +2446,71 @@ digraph G {
 "sustcsonglin/mamba-triton" ["l"="49.188,33.972"]
 "TianyuanYang/KAN4Rec" ["l"="49.486,34.398"]
 "yueliu1999/Awesome-Efficient-Inference-for-LRMs" ["l"="49.504,34.409"]
-"yueliu1999/fastcodellama" ["l"="36.47,-0.084"]
+"yueliu1999/fastcodellama" ["l"="36.47,-0.084", "c"=315]
 "Jellyfish042/RWKV-StateTuning" ["l"="49.503,34.07"]
 "JL-er/WorldRWKV" ["l"="49.513,34.059"]
 "JL-er/DiSHA" ["l"="49.521,34.075"]
-"MollySophia/rwkv-mobile" ["l"="49.474,34.132"]
 "peytontolbert/Griffin" ["l"="49.191,33.922"]
 "uthree/fastersvc" ["l"="49.497,33.849"]
 "ex3ndr/supervoice-flow" ["l"="49.49,33.785"]
 "liuhuang31/g2pw_once" ["l"="49.48,33.848"]
 "p1an-lin-jung/wv_tts" ["l"="49.496,33.799"]
+"AIFengheshu/Plug-play-modules" ["l"="6.379,-9.978", "c"=14]
+"LMMMEng/OverLoCK" ["l"="48.861,34.212"]
+"ShiArthur03/ShiArthur03" ["l"="-4.134,23.691", "c"=827]
+"ai-dawang/PlugNPlay-Modules" ["l"="50.541,29.574", "c"=83]
 "lgy112112/Efficient-KAN-in-Chinese" ["l"="49.275,34.468"]
 "2448845600/EasyTSF" ["l"="49.307,34.495"]
 "lgy112112/DeepLearning-Tutorial-Chinese" ["l"="49.267,34.495"]
-"NVlabs/FasterViT" ["l"="49.017,32.999"]
-"FoundationVision/VAR" ["l"="51.232,2.921"]
-"LTH14/mar" ["l"="46.402,30.601"]
-"pengsida/learning_research" ["l"="-4.009,23.579"]
-"ShiArthur03/ShiArthur03" ["l"="-4.134,23.691"]
+"FoundationVision/VAR" ["l"="51.232,2.921", "c"=85]
+"LTH14/mar" ["l"="46.402,30.601", "c"=367]
+"pengsida/learning_research" ["l"="-4.009,23.579", "c"=827]
+"swordlidev/Efficient-Multimodal-LLMs-Survey" ["l"="47.518,30.217", "c"=254]
+"shufangxun/LLaVA-MoD" ["l"="48.873,34.285"]
 "test-time-training/ttt-lm-jax" ["l"="49.24,34.085"]
 "test-time-training/ttt-lm-kernels" ["l"="49.216,34.088"]
-"ytongbai/LVM" ["l"="46.493,30.613"]
-"lucidrains/titans-pytorch" ["l"="37.442,-0.633"]
-"cambrian-mllm/cambrian" ["l"="47.383,30.081"]
-"MoonshotAI/MoBA" ["l"="39.065,-0.332"]
-"mauricekraus/xLSTM-Mixer" ["l"="-5.892,-41.803"]
+"ytongbai/LVM" ["l"="46.493,30.613", "c"=367]
+"lucidrains/titans-pytorch" ["l"="37.442,-0.633", "c"=126]
+"cambrian-mllm/cambrian" ["l"="47.383,30.081", "c"=254]
+"MoonshotAI/MoBA" ["l"="39.065,-0.332", "c"=39]
+"ShihuaHuang95/DEIM" ["l"="48.587,30.078", "c"=191]
+"mauricekraus/xLSTM-Mixer" ["l"="-5.892,-41.803", "c"=333]
 "brandon-toews/xlstm-vs-markov" ["l"="49.365,34.193"]
+"Atten4Vis/LW-DETR" ["l"="48.593,30.118", "c"=191]
 "SwjtuMa/FER-YOLO-Mamba" ["l"="49.041,34.258"]
-"yemu1138178251/FFCA-YOLO" ["l"="51.321,16.315"]
-"yang-0201/MAF-YOLO" ["l"="51.351,16.316"]
-"Atten4Vis/LW-DETR" ["l"="48.593,30.118"]
-"iMoonLab/Hyper-YOLO" ["l"="51.355,16.271"]
-"txchen-USTC/MiM-ISTD" ["l"="54.109,31.979"]
-"FishAndWasabi/YOLO-MS" ["l"="47.729,35.619"]
-"icey-zhang/SuperYOLO" ["l"="54.436,34.246"]
-"BICLab/SpikeYOLO" ["l"="60.802,33.693"]
-"ouyanghaodong/DEYO" ["l"="48.526,30.107"]
-"CUHK-AIM-Group/EndoGaussian" ["l"="61.391,37.058"]
-"Adamdad/rational_kat_cu" ["l"="38.954,0.365"]
+"yang-0201/MAF-YOLO" ["l"="51.351,16.316", "c"=1152]
+"iMoonLab/Hyper-YOLO" ["l"="51.355,16.271", "c"=1152]
+"txchen-USTC/MiM-ISTD" ["l"="54.109,31.979", "c"=2290]
+"FishAndWasabi/YOLO-MS" ["l"="47.729,35.619", "c"=695]
+"BICLab/SpikeYOLO" ["l"="60.802,33.693", "c"=607]
+"ouyanghaodong/DEYO" ["l"="48.526,30.107", "c"=191]
+"CUHK-AIM-Group/EndoGaussian" ["l"="61.391,37.058", "c"=178]
+"Adamdad/rational_kat_cu" ["l"="38.954,0.365", "c"=39]
 "quiqi/relu_kan" ["l"="49.345,34.433"]
 "JaouadT/KANU_Net" ["l"="49.249,34.41"]
+"jxiw/MambaInLlama" ["l"="49.182,34.028"]
 "sjtuplayer/SaRA" ["l"="48.899,34.29"]
 "Fantasyele/LLaVA-KD" ["l"="48.907,34.269"]
 "zhangzjn/EMOv2" ["l"="48.927,34.265"]
-"test-time-training/mttt" ["l"="59.37,22.606"]
+"turbo-llm/turbo-alignment" ["l"="-44.236,26.098", "c"=551]
+"test-time-training/mttt" ["l"="59.37,22.606", "c"=778]
 "vasqu/mamba2-torch" ["l"="48.998,34.203"]
 "duttapallabi2907/U-VixLSTM" ["l"="49.229,34.244"]
-"yyyujintang/VMRNN-PyTorch" ["l"="41.692,25.749"]
+"yyyujintang/VMRNN-PyTorch" ["l"="41.692,25.749", "c"=537]
 "MrPio/KAN-Continual_Learning_tests" ["l"="49.277,34.443"]
 "mlvlab/EfficientViM" ["l"="48.947,34.246"]
 "Karl1109/SCSegamba" ["l"="48.895,34.245"]
 "OSUPCVLab/MobileUNETR" ["l"="48.94,34.228"]
 "yunxiangfu2001/SegMAN" ["l"="48.926,34.207"]
-"xwmaxwma/TinyViM" ["l"="49.056,32.659"]
+"xwmaxwma/TinyViM" ["l"="49.056,32.659", "c"=401]
 "v3ucn/GPT-SoVITS-V2" ["l"="49.469,33.917"]
-"hithqd/PointRWKV" ["l"="65.246,11.754"]
-"jxiw/MambaInLlama" ["l"="49.182,34.028"]
+"BGU-CS-VIL/WTConv" ["l"="49.086,32.894", "c"=401]
+"hithqd/PointRWKV" ["l"="65.246,11.754", "c"=203]
+"natolambert/rlhf-book" ["l"="37.088,-0.409", "c"=126]
 "ex3ndr/supervoice-enhance" ["l"="49.47,33.785"]
-"LeapLabTHU/Agent-Attention" ["l"="49.212,32.946"]
-"BGU-CS-VIL/WTConv" ["l"="49.086,32.894"]
-"OpenGVLab/DCNv4" ["l"="49.086,32.955"]
-"KimHanjung/VISAGE" ["l"="50.655,30.78"]
-"MambaLLIE/MambaLLIE" ["l"="-35.988,22.255"]
+"KimHanjung/VISAGE" ["l"="50.655,30.78", "c"=83]
+"MambaLLIE/MambaLLIE" ["l"="-35.988,22.255", "c"=463]
 "EdwardChasel/Spatial-Mamba" ["l"="48.977,34.185"]
-"shufangxun/LLaVA-MoD" ["l"="48.873,34.285"]
 "Yaziwel/All-In-One-Medical-Image-Restoration-via-Task-Adaptive-Routing" ["l"="49.32,34.068"]
 "Yaziwel/Region-Attention-Transformer-for-Medical-Image-Restoration" ["l"="49.3,34.062"]
 "Karl1109/CrackSCF" ["l"="48.832,34.269"]
@@ -2307,9 +2519,10 @@ digraph G {
 "AIIRWKV/RWKV-RAG-Personal" ["l"="49.445,34.088"]
 "yynil/RWKVinLLAMA" ["l"="49.46,34.095"]
 "cahya-wirawan/rwkv-tokenizer" ["l"="49.558,34.086"]
+"sunsmarterjie/yolov12" ["l"="48.65,30.037", "c"=191]
 "yueliu1999/GuardReasoner" ["l"="49.547,34.418"]
-"LMMMEng/OverLoCK" ["l"="48.861,34.212"]
 "WangXueyang-uestc/ARConv" ["l"="48.824,34.218"]
+"jiachenzhu/DyT" ["l"="49.144,32.899", "c"=401]
 "sail-sg/FlowReasoner" ["l"="49.52,34.426"]
 "RainbowPillow/FRAME" ["l"="48.869,34.248"]
 }

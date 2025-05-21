@@ -1,8 +1,27 @@
 digraph G {
+"onnx/tensorflow-onnx" -> "onnx/onnxmltools" ["e"=1]
+"onnx/tensorflow-onnx" -> "onnx/keras-onnx" ["e"=1]
+"onnx/tensorflow-onnx" -> "ZhangGe6/onnx-modifier" ["e"=1]
+"onnx/tensorflow-onnx" -> "onnx/optimizer" ["e"=1]
 "onnx/keras-onnx" -> "onnx/onnxmltools"
 "onnx/keras-onnx" -> "onnx/tensorflow-onnx" ["e"=1]
 "onnx/keras-onnx" -> "ZFTurbo/Keras-inference-time-optimizer"
 "onnx/keras-onnx" -> "onnx/onnx-docker"
+"daquexian/onnx-simplifier" -> "onnx/optimizer" ["e"=1]
+"daquexian/onnx-simplifier" -> "ZhangGe6/onnx-modifier" ["e"=1]
+"SciSharp/TensorFlow.NET" -> "SciSharp/LLamaSharp" ["e"=1]
+"onnx/tutorials" -> "onnx/onnxmltools" ["e"=1]
+"dotnet/TorchSharp" -> "SciSharp/LLamaSharp" ["e"=1]
+"onnx/sklearn-onnx" -> "onnx/onnxmltools" ["e"=1]
+"onnx/sklearn-onnx" -> "onnx/keras-onnx" ["e"=1]
+"project-alice-assistant/ProjectAlice" -> "NaomiProject/Naomi" ["e"=1]
+"microsoft/DirectML" -> "microsoft/Olive" ["e"=1]
+"microsoft/DirectML" -> "microsoft/onnxruntime-genai" ["e"=1]
+"onnx/onnx-tensorflow" -> "onnx/onnxmltools" ["e"=1]
+"henon/Python.Included" -> "tonybaloney/CSnakes" ["e"=1]
+"SciSharp/BotSharp" -> "SciSharp/LLamaSharp" ["e"=1]
+"SciSharp/BotSharp" -> "microsoft/kernel-memory" ["e"=1]
+"SenparcCoreFramework/SCF" -> "SenparcCoreFramework/ScfPackageSources" ["e"=1]
 "onnx/onnxmltools" -> "onnx/sklearn-onnx" ["e"=1]
 "onnx/onnxmltools" -> "onnx/keras-onnx"
 "onnx/onnxmltools" -> "onnx/tensorflow-onnx" ["e"=1]
@@ -22,7 +41,9 @@ digraph G {
 "microsoft/onnxconverter-common" -> "microsoft/onnxscript"
 "microsoft/onnxconverter-common" -> "microsoft/onnxruntime-extensions"
 "ZFTurbo/Keras-inference-time-optimizer" -> "ZFTurbo/Keras-augmentation-layer"
+"JeffreySu/WechatVideoCourse" -> "Senparc/DPB" ["e"=1]
 "Senparc/DPB" -> "OpenSenparc/Senparc.Weixin.Plugins.WeixinTraceManager"
+"prabhuignoto/vue-float-menu" -> "bcakmakoglu/revue-draggable" ["e"=1]
 "OkGoDoIt/OpenAI-API-dotnet" -> "betalgo/openai"
 "OkGoDoIt/OpenAI-API-dotnet" -> "RageAgainstThePixel/OpenAI-DotNet"
 "OkGoDoIt/OpenAI-API-dotnet" -> "openai/openai-dotnet"
@@ -38,6 +59,8 @@ digraph G {
 "OkGoDoIt/OpenAI-API-dotnet" -> "stefanprodan/AspNetCoreRateLimit" ["e"=1]
 "OkGoDoIt/OpenAI-API-dotnet" -> "MapsterMapper/Mapster" ["e"=1]
 "OkGoDoIt/OpenAI-API-dotnet" -> "RageAgainstThePixel/com.openai.unity" ["e"=1]
+"fugue-project/fugue" -> "fugue-project/tutorials" ["e"=1]
+"pytorch/android-demo-app" -> "microsoft/onnxruntime-inference-examples" ["e"=1]
 "PrefectHQ/server" -> "PrefectHQ/legacy-ui"
 "PrefectHQ/server" -> "PrefectHQ/prefect-kubernetes"
 "PrefectHQ/server" -> "PrefectHQ/prefect-collection-template"
@@ -79,9 +102,13 @@ digraph G {
 "NeuCharFramework/NcfPackageSources" -> "NeuCharFramework/NCF" ["e"=1]
 "NeuCharFramework/NcfPackageSources" -> "NeuCharFramework/Senparc.Xncf.WeixinManager"
 "NeuCharFramework/NcfPackageSources" -> "SenparcCoreFramework/ScfPackageSources"
+"NeuCharFramework/NCF" -> "NeuCharFramework/NcfPackageSources" ["e"=1]
+"NeuCharFramework/NCF" -> "Senparc/Senparc.AI" ["e"=1]
 "PrefectHQ/legacy-ui" -> "PrefectHQ/server"
 "PrefectHQ/legacy-ui" -> "PrefectHQ/prefect-collection-template"
 "PrefectHQ/legacy-ui" -> "PrefectHQ/prefect-email"
+"synesthesiam/voice2json" -> "NaomiProject/Naomi" ["e"=1]
+"anish2690/vue-draggable-next" -> "bcakmakoglu/revue-draggable" ["e"=1]
 "marcominerva/TinyHelpers" -> "marcominerva/MinimalHelpers"
 "marcominerva/TinyHelpers" -> "marcominerva/SimpleAuthentication"
 "marcominerva/TinyHelpers" -> "marcominerva/ChatGptNet"
@@ -112,6 +139,8 @@ digraph G {
 "RageAgainstThePixel/OpenAI-DotNet" -> "awaescher/OllamaSharp"
 "RageAgainstThePixel/OpenAI-DotNet" -> "geffzhang/awesome-semantickernel"
 "RageAgainstThePixel/OpenAI-DotNet" -> "marcominerva/ChatGptNet"
+"RageAgainstThePixel/com.openai.unity" -> "RageAgainstThePixel/OpenAI-DotNet" ["e"=1]
+"wiz0u/WTelegramClient" -> "openai/openai-dotnet" ["e"=1]
 "microsoft/onnxruntime-inference-examples" -> "microsoft/onnxruntime-extensions"
 "microsoft/onnxruntime-inference-examples" -> "microsoft/onnxruntime" ["e"=1]
 "microsoft/onnxruntime-inference-examples" -> "daquexian/onnx-simplifier" ["e"=1]
@@ -127,6 +156,12 @@ digraph G {
 "microsoft/onnxruntime-inference-examples" -> "open-mmlab/mmdeploy" ["e"=1]
 "microsoft/onnxruntime-inference-examples" -> "OpenPPL/ppq" ["e"=1]
 "microsoft/onnxruntime-inference-examples" -> "huggingface/optimum" ["e"=1]
+"tolgee/tolgee-platform" -> "devflowinc/trieve" ["e"=1]
+"tolgee/tolgee-platform" -> "kitops-ml/kitops" ["e"=1]
+"tolgee/tolgee-platform" -> "StarmoonAI/Starmoon" ["e"=1]
+"searxng/searxng-docker" -> "yokingma/search_with_ai" ["e"=1]
+"zetane/viewer" -> "ZhangGe6/onnx-modifier" ["e"=1]
+"zetane/viewer" -> "microsoft/onnxconverter-common" ["e"=1]
 "mosecorg/mosec" -> "NaomiProject/Naomi"
 "mosecorg/mosec" -> "StarmoonAI/Starmoon"
 "mosecorg/mosec" -> "kitops-ml/kitops"
@@ -142,6 +177,10 @@ digraph G {
 "mosecorg/mosec" -> "KruxAI/ragbuilder" ["e"=1]
 "mosecorg/mosec" -> "David-Kunz/gen.nvim" ["e"=1]
 "mosecorg/mosec" -> "speaches-ai/speaches" ["e"=1]
+"DamianEdwards/MinimalApiPlayground" -> "dotnet/aspire-samples" ["e"=1]
+"DamianEdwards/MinimalApiPlayground" -> "davidfowl/aspire-ai-chat-demo" ["e"=1]
+"huggingface/optimum" -> "microsoft/Olive" ["e"=1]
+"hexthedev/OpenAi-Api-Unity" -> "OkGoDoIt/OpenAI-API-dotnet" ["e"=1]
 "BBuf/onnx2X" -> "Talmaj/onnx2pytorch"
 "microsoft/onnxruntime-extensions" -> "microsoft/onnxscript"
 "microsoft/onnxruntime-extensions" -> "microsoft/onnxruntime-genai"
@@ -154,6 +193,10 @@ digraph G {
 "fumihwh/onnx-pytorch" -> "Talmaj/onnx2pytorch"
 "bcakmakoglu/revue-draggable" -> "carlosjorger/fluid-dnd"
 "pytorch/ort" -> "microsoft/onnxruntime-training-examples"
+"dotnet/blazor-samples" -> "dotnet/aspire-samples" ["e"=1]
+"dotnet/blazor-samples" -> "dotnet-smartcomponents/smartcomponents" ["e"=1]
+"Melissa-AI/Melissa-Core" -> "NaomiProject/Naomi" ["e"=1]
+"openai/openai-openapi" -> "openai/openai-dotnet" ["e"=1]
 "dstackai/dstack" -> "StarmoonAI/Starmoon"
 "dstackai/dstack" -> "zenml-io/zenml" ["e"=1]
 "dstackai/dstack" -> "mosecorg/mosec"
@@ -169,6 +212,11 @@ digraph G {
 "dstackai/dstack" -> "fugue-project/fugue" ["e"=1]
 "dstackai/dstack" -> "skypilot-org/skypilot" ["e"=1]
 "dstackai/dstack" -> "devflowinc/trieve"
+"openai/openai-quickstart-python" -> "betalgo/openai" ["e"=1]
+"pytorch/torcharrow" -> "pytorch/ort" ["e"=1]
+"blueagler/QuillBot-Premium-Helper" -> "adamlui/chatgpt-infinity" ["e"=1]
+"tensorchord/envd" -> "mosecorg/mosec" ["e"=1]
+"OML-Team/open-metric-learning" -> "ENOT-AutoDL/onnx2torch" ["e"=1]
 "PrefectHQ/prefect-recipes" -> "anna-geller/dataflow-ops"
 "PrefectHQ/prefect-recipes" -> "PrefectHQ/prefect-aws"
 "PrefectHQ/prefect-recipes" -> "PrefectHQ/prefect-collection-template"
@@ -214,6 +262,8 @@ digraph G {
 "ENOT-AutoDL/onnx2torch" -> "zchrissirhcz/cmake_examples" ["e"=1]
 "ENOT-AutoDL/onnx2torch" -> "onnx/optimizer"
 "ENOT-AutoDL/onnx2torch" -> "FeiGeChuanShu/segment-anything-ncnn" ["e"=1]
+"Azure/data-api-builder" -> "dotnet/aspire-samples" ["e"=1]
+"Azure/data-api-builder" -> "microsoft/kernel-memory" ["e"=1]
 "betalgo/openai" -> "OkGoDoIt/OpenAI-API-dotnet"
 "betalgo/openai" -> "RageAgainstThePixel/OpenAI-DotNet"
 "betalgo/openai" -> "openai/openai-dotnet"
@@ -244,6 +294,11 @@ digraph G {
 "microsoft/onnxscript" -> "onnx/optimizer"
 "microsoft/onnxscript" -> "microsoft/onnxruntime-genai"
 "microsoft/onnxscript" -> "microsoft/onnxconverter-common"
+"run-house/runhouse" -> "dstackai/dstack" ["e"=1]
+"OpenPPL/ppq" -> "ZhangGe6/onnx-modifier" ["e"=1]
+"NikiforovAll/keycloak-authorization-services-dotnet" -> "dotnet/eShopSupport" ["e"=1]
+"NikiforovAll/keycloak-authorization-services-dotnet" -> "thangchung/practical-dotnet-aspire" ["e"=1]
+"NikiforovAll/keycloak-authorization-services-dotnet" -> "dotnet/aspire-samples" ["e"=1]
 "marcominerva/SimpleAuthentication" -> "marcominerva/MinimalHelpers"
 "marcominerva/SimpleAuthentication" -> "andreadottor/Umarell"
 "marcominerva/SimpleAuthentication" -> "marcominerva/OperationResults"
@@ -265,6 +320,8 @@ digraph G {
 "PrefectHQ/prefect-ray" -> "PrefectHQ/prefect-databricks"
 "PrefectHQ/prefect-ray" -> "PrefectHQ/prefect-kubernetes"
 "PrefectHQ/prefect-ray" -> "PrefectHQ/prefect-dask"
+"SteveSandersonMS/dotnet-wasi-sdk" -> "SteveSandersonMS/dotnet-ai-workshop" ["e"=1]
+"Tencent/TPAT" -> "onnx/optimizer" ["e"=1]
 "PrefectHQ/prefect-dask" -> "PrefectHQ/prefect-twitter"
 "PrefectHQ/prefect-dask" -> "PrefectHQ/prefect-postgres"
 "PrefectHQ/prefect-dask" -> "PrefectHQ/prefect-great-expectations"
@@ -419,6 +476,11 @@ digraph G {
 "marcominerva/MinimalHelpers" -> "marcominerva/SimpleAuthentication"
 "marcominerva/MinimalHelpers" -> "marcominerva/TinyHelpers"
 "marcominerva/MinimalHelpers" -> "andreadottor/Umarell"
+"srcnalt/OpenAI-Unity" -> "OkGoDoIt/OpenAI-API-dotnet" ["e"=1]
+"wieslawsoltes/ChatGPT" -> "OkGoDoIt/OpenAI-API-dotnet" ["e"=1]
+"wieslawsoltes/ChatGPT" -> "betalgo/openai" ["e"=1]
+"wieslawsoltes/ChatGPT" -> "SciSharp/LLamaSharp" ["e"=1]
+"tailcallhq/tailcall" -> "devflowinc/trieve" ["e"=1]
 "sandrohanea/whisper.net" -> "SciSharp/LLamaSharp"
 "sandrohanea/whisper.net" -> "sandrohanea/echosharp"
 "sandrohanea/whisper.net" -> "sdcb/OpenVINO.NET" ["e"=1]
@@ -434,6 +496,8 @@ digraph G {
 "sandrohanea/whisper.net" -> "feiyun0112/Gradio.Net" ["e"=1]
 "sandrohanea/whisper.net" -> "raoyutian/PaddleOCRSharp" ["e"=1]
 "sandrohanea/whisper.net" -> "bezzad/Downloader" ["e"=1]
+"basetenlabs/truss" -> "dstackai/dstack" ["e"=1]
+"PINTO0309/onnx2tf" -> "ZhangGe6/onnx-modifier" ["e"=1]
 "rpeden/prefect-docker-compose" -> "flavienbwk/prefect-docker-compose"
 "rpeden/prefect-docker-compose" -> "fraibacas/prefect-orion"
 "rpeden/prefect-docker-compose" -> "PrefectHQ/prefect-recipes"
@@ -510,6 +574,7 @@ digraph G {
 "anna-geller/prefect-deployment-patterns" -> "anna-geller/prefect-dataplatform"
 "PrefectHQ/prefect-docker" -> "PrefectHQ/prefect-sqlalchemy"
 "marcominerva/OperationResults" -> "marcominerva/SearchGPT"
+"microsoft/semantic-kernel" -> "microsoft/kernel-memory" ["e"=1]
 "SciSharp/LLamaSharp" -> "SciSharp/BotSharp" ["e"=1]
 "SciSharp/LLamaSharp" -> "microsoft/kernel-memory"
 "SciSharp/LLamaSharp" -> "awaescher/OllamaSharp"
@@ -525,6 +590,7 @@ digraph G {
 "SciSharp/LLamaSharp" -> "microsoft/fluentui-blazor" ["e"=1]
 "SciSharp/LLamaSharp" -> "spectreconsole/spectre.console" ["e"=1]
 "SciSharp/LLamaSharp" -> "betalgo/openai"
+"a16z-infra/ai-getting-started" -> "KudoAI/chatgpt.js" ["e"=1]
 "microsoft/kernel-memory" -> "microsoft/chat-copilot" ["e"=1]
 "microsoft/kernel-memory" -> "Azure-Samples/miyagi" ["e"=1]
 "microsoft/kernel-memory" -> "microsoft/semantic-kernel-starters"
@@ -540,6 +606,10 @@ digraph G {
 "microsoft/kernel-memory" -> "microsoft/SemanticKernelCookBook"
 "microsoft/kernel-memory" -> "kbeaugrand/SemanticKernel.Assistants"
 "microsoft/kernel-memory" -> "dotnet/aspire" ["e"=1]
+"PrefectHQ/marvin" -> "PrefectHQ/ControlFlow" ["e"=1]
+"cofactoryai/textbase" -> "KudoAI/chatgpt.js" ["e"=1]
+"topoteretes/cognee" -> "PrefectHQ/ControlFlow" ["e"=1]
+"topoteretes/cognee" -> "devflowinc/trieve" ["e"=1]
 "adamlui/chatgpt-infinity" -> "adamlui/ai-web-extensions"
 "adamlui/chatgpt-infinity" -> "adamlui/chatgpt-widescreen"
 "adamlui/chatgpt-infinity" -> "adamlui/chatgpt-auto-continue"
@@ -557,6 +627,13 @@ digraph G {
 "adamlui/ai-web-extensions" -> "adamlui/autoclear-chatgpt-history"
 "adamlui/ai-web-extensions" -> "KudoAI/googlegpt"
 "microsoft/CopilotHackathon" -> "microsoft/CopilotAdventures"
+"microsoft/chat-copilot" -> "microsoft/kernel-memory" ["e"=1]
+"microsoft/chat-copilot" -> "microsoft/semantic-kernel-starters" ["e"=1]
+"microsoft/chat-copilot" -> "SciSharp/LLamaSharp" ["e"=1]
+"microsoft/chat-copilot" -> "MicrosoftDocs/semantic-kernel-docs" ["e"=1]
+"microsoft/chat-copilot" -> "modelcontextprotocol/csharp-sdk" ["e"=1]
+"junhoyeo/threads-api" -> "KudoAI/chatgpt.js" ["e"=1]
+"Eternaldeath/AIProductHome" -> "yokingma/search_with_ai" ["e"=1]
 "KudoAI/chatgpt.js" -> "adamlui/chatgpt-infinity"
 "KudoAI/chatgpt.js" -> "a16z-infra/ai-getting-started" ["e"=1]
 "KudoAI/chatgpt.js" -> "junhoyeo/threads-api" ["e"=1]
@@ -609,6 +686,7 @@ digraph G {
 "MicrosoftDocs/semantic-kernel-docs" -> "matthewbolanos/sk-v1-proposal"
 "MicrosoftDocs/semantic-kernel-docs" -> "Azure-Samples/semantic-kernel-rag-chat"
 "MicrosoftDocs/semantic-kernel-docs" -> "microsoft/kernel-memory"
+"dotnet/aspire" -> "dotnet/aspire-samples" ["e"=1]
 "NaomiProject/Naomi" -> "StarmoonAI/Starmoon"
 "NaomiProject/Naomi" -> "mosecorg/mosec"
 "NaomiProject/Naomi" -> "kitops-ml/kitops"
@@ -631,6 +709,10 @@ digraph G {
 "tryAGI/LangChain" -> "sandrohanea/whisper.net"
 "tryAGI/LangChain" -> "RageAgainstThePixel/OpenAI-DotNet"
 "tryAGI/LangChain" -> "Jenscaasen/UniversalLLMFunctionCaller"
+"techwithtim/Price-Tracking-Web-Scraper" -> "KudoAI/chatgpt.js" ["e"=1]
+"Azure-Samples/miyagi" -> "microsoft/kernel-memory" ["e"=1]
+"Azure-Samples/miyagi" -> "microsoft/semantic-kernel-starters" ["e"=1]
+"Azure-Samples/miyagi" -> "johnmaeda/SK-Recipes" ["e"=1]
 "tensorlakeai/indexify" -> "StarmoonAI/Starmoon"
 "tensorlakeai/indexify" -> "mosecorg/mosec"
 "tensorlakeai/indexify" -> "NaomiProject/Naomi"
@@ -646,6 +728,10 @@ digraph G {
 "tensorlakeai/indexify" -> "topoteretes/cognee" ["e"=1]
 "tensorlakeai/indexify" -> "jondot/awesome-rust-llm" ["e"=1]
 "tensorlakeai/indexify" -> "edwinkys/oasysdb" ["e"=1]
+"Azure-Samples/azure-search-openai-demo-csharp" -> "dotnet/eShopSupport" ["e"=1]
+"Azure-Samples/azure-search-openai-demo-csharp" -> "dotnet/ai-samples" ["e"=1]
+"Azure-Samples/azure-search-openai-demo-csharp" -> "microsoft/kernel-memory" ["e"=1]
+"Azure-Samples/azure-search-openai-demo-csharp" -> "Azure-Samples/semantic-kernel-rag-chat" ["e"=1]
 "marcominerva/ChatGptNet" -> "marcominerva/SimpleAuthentication"
 "marcominerva/ChatGptNet" -> "marcominerva/TinyHelpers"
 "marcominerva/ChatGptNet" -> "PawanOsman/ChatGPT.Net"
@@ -653,7 +739,15 @@ digraph G {
 "marcominerva/ChatGptNet" -> "marcominerva/SqlDatabaseVectorSearch"
 "marcominerva/ChatGptNet" -> "marcominerva/OpenAIEmbeddingSample"
 "marcominerva/ChatGptNet" -> "marcominerva/MinimalHelpers"
+"jncraton/languagemodels" -> "KudoAI/chatgpt.js" ["e"=1]
+"SkalskiP/awesome-chatgpt-code-interpreter-experiments" -> "KudoAI/chatgpt.js" ["e"=1]
+"microsoft/Llama-2-Onnx" -> "microsoft/onnxruntime-genai" ["e"=1]
+"microsoft/Llama-2-Onnx" -> "ThanatosShinji/onnx-tool" ["e"=1]
+"AndersonBY/vector-vein" -> "yokingma/search_with_ai" ["e"=1]
+"CommunityToolkit/Windows" -> "microsoft/ai-dev-gallery" ["e"=1]
 "uhub/awesome-chatgpt" -> "adamlui/ai-web-extensions"
+"rasbt/scipy2023-deeplearning" -> "KudoAI/chatgpt.js" ["e"=1]
+"microsoft/node-api-dotnet" -> "microsoft/typechat.net" ["e"=1]
 "geffzhang/awesome-semantickernel" -> "microsoft/typechat.net"
 "geffzhang/awesome-semantickernel" -> "microsoft/semantic-kernel-starters"
 "geffzhang/awesome-semantickernel" -> "kbeaugrand/SemanticKernel.Assistants"
@@ -669,6 +763,7 @@ digraph G {
 "geffzhang/awesome-semantickernel" -> "HillPhelmuth/AdventuresInSemanticKernel"
 "geffzhang/awesome-semantickernel" -> "tryAGI/LangChain"
 "geffzhang/awesome-semantickernel" -> "elbruno/semantickernel-localLLMs"
+"microsoft/project-oagents" -> "geffzhang/awesome-semantickernel" ["e"=1]
 "adamlui/chatgpt-auto-refresh" -> "adamlui/chatgpt-widescreen"
 "adamlui/chatgpt-auto-refresh" -> "adamlui/chatgpt-auto-continue"
 "adamlui/chatgpt-auto-refresh" -> "adamlui/chatgpt-infinity"
@@ -723,6 +818,10 @@ digraph G {
 "kinfey/dotNETOAIBooks" -> "kinfey/MSFabricCopilotWorkshop"
 "magols/BlazorGPT" -> "marcominerva/KernelMemoryService"
 "rvinothrajendran/MicrosoftSemanticKernelSamples" -> "Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet"
+"DAGWorks-Inc/burr" -> "PrefectHQ/ControlFlow" ["e"=1]
+"quic/ai-hub-models" -> "microsoft/onnxruntime-genai" ["e"=1]
+"quic/ai-hub-models" -> "microsoft/onnxruntime-extensions" ["e"=1]
+"quic/ai-hub-models" -> "microsoft/onnxruntime-inference-examples" ["e"=1]
 "tryAGI/Ollama" -> "awaescher/OllamaSharp"
 "dotnet/ai-samples" -> "dotnet/eShopSupport"
 "dotnet/ai-samples" -> "modelcontextprotocol/csharp-sdk"
@@ -739,11 +838,18 @@ digraph G {
 "dotnet/ai-samples" -> "davidfowl/aspire-ai-chat-demo"
 "dotnet/ai-samples" -> "dotnet/smartcomponents"
 "dotnet/ai-samples" -> "microsoft/SemanticKernelCookBook"
+"prom3theu5/aspirational-manifests" -> "dotnet/aspire-samples" ["e"=1]
+"prom3theu5/aspirational-manifests" -> "CommunityToolkit/Aspire" ["e"=1]
+"prom3theu5/aspirational-manifests" -> "thangchung/practical-dotnet-aspire" ["e"=1]
 "eidolon-ai/eidolon" -> "kitops-ml/kitops"
 "eidolon-ai/eidolon" -> "DataBassGit/AgentForge" ["e"=1]
 "eidolon-ai/eidolon" -> "MarianoMolina/project_alice" ["e"=1]
 "eidolon-ai/eidolon" -> "Eng-Elias/CrewAI-Visualizer" ["e"=1]
 "eidolon-ai/eidolon" -> "rnadigital/agentcloud" ["e"=1]
+"LLM-Red-Team/metaso-free-api" -> "yokingma/search_with_ai" ["e"=1]
+"rashadphz/farfalle" -> "yokingma/search_with_ai" ["e"=1]
+"fatwang2/search4all" -> "yokingma/search_with_ai" ["e"=1]
+"pretzelai/pretzelai" -> "devflowinc/trieve" ["e"=1]
 "kitops-ml/kitops" -> "NaomiProject/Naomi"
 "kitops-ml/kitops" -> "mosecorg/mosec"
 "kitops-ml/kitops" -> "StarmoonAI/Starmoon"
@@ -759,6 +865,8 @@ digraph G {
 "kitops-ml/kitops" -> "dstackai/dstack"
 "kitops-ml/kitops" -> "topoteretes/cognee" ["e"=1]
 "kitops-ml/kitops" -> "kitops-ml/pykitops"
+"michaelfeil/infinity" -> "dstackai/dstack" ["e"=1]
+"githubnext/copilot-workspace-user-manual" -> "microsoft/vscode-ai-toolkit" ["e"=1]
 "yokingma/search_with_ai" -> "ptonlix/LangChain-SearXNG"
 "yokingma/search_with_ai" -> "memfreeme/memfree" ["e"=1]
 "yokingma/search_with_ai" -> "fatwang2/search4all" ["e"=1]
@@ -774,6 +882,8 @@ digraph G {
 "yokingma/search_with_ai" -> "miurla/morphic" ["e"=1]
 "yokingma/search_with_ai" -> "SmartSchoolAI/ai-to-pptx" ["e"=1]
 "yokingma/search_with_ai" -> "VoAPI/VoAPI" ["e"=1]
+"Azure-Samples/serverless-chat-langchainjs" -> "microsoft/generative-ai-with-javascript" ["e"=1]
+"Azure-Samples/serverless-chat-langchainjs" -> "Azure-Samples/langchainjs-quickstart-demo" ["e"=1]
 "microsoft/vscode-ai-toolkit" -> "microsoft/ai-dev-gallery"
 "microsoft/vscode-ai-toolkit" -> "microsoft/PhiCookBook"
 "microsoft/vscode-ai-toolkit" -> "microsoft/onnxruntime-genai"
@@ -804,6 +914,7 @@ digraph G {
 "awaescher/OllamaSharp" -> "NickSwardh/YoloDotNet" ["e"=1]
 "awaescher/OllamaSharp" -> "dotnet/smartcomponents"
 "awaescher/OllamaSharp" -> "afrise/MCPSharp"
+"Giorgi/EFCore.Visualizer" -> "marcominerva/MinimalHelpers" ["e"=1]
 "microsoft/PhiCookBook" -> "microsoft/onnxruntime-genai"
 "microsoft/PhiCookBook" -> "Azure-Samples/graphrag-accelerator" ["e"=1]
 "microsoft/PhiCookBook" -> "microsoft/chat-copilot" ["e"=1]
@@ -836,6 +947,7 @@ digraph G {
 "kitbagjs/router" -> "PrefectHQ/prefect-twitter"
 "carlosjorger/fluid-dnd" -> "bcakmakoglu/revue-draggable"
 "carlosjorger/fluid-dnd" -> "kitbagjs/router"
+"OcularEngineering/ocular" -> "devflowinc/trieve" ["e"=1]
 "dotnet/aspire-samples" -> "dotnet/aspire" ["e"=1]
 "dotnet/aspire-samples" -> "CommunityToolkit/Aspire"
 "dotnet/aspire-samples" -> "prom3theu5/aspirational-manifests" ["e"=1]
@@ -867,6 +979,7 @@ digraph G {
 "dotnet-smartcomponents/smartcomponents" -> "mrpmorris/Fluxor" ["e"=1]
 "dotnet-smartcomponents/smartcomponents" -> "IEvangelist/blazorators" ["e"=1]
 "dotnet-smartcomponents/smartcomponents" -> "openai/openai-dotnet"
+"kalliope-project/kalliope" -> "NaomiProject/Naomi" ["e"=1]
 "dotnet/eShopSupport" -> "dotnet/ai-samples"
 "dotnet/eShopSupport" -> "dotnet/smartcomponents"
 "dotnet/eShopSupport" -> "davidfowl/aspire-ai-chat-demo"
@@ -882,6 +995,8 @@ digraph G {
 "dotnet/eShopSupport" -> "dotnet-smartcomponents/smartcomponents"
 "dotnet/eShopSupport" -> "dotnet/docs-aspire"
 "dotnet/eShopSupport" -> "microsoft/kernel-memory"
+"SmartSchoolAI/ai-to-pptx" -> "yokingma/search_with_ai" ["e"=1]
+"Omniplex-ai/omniplex" -> "yokingma/search_with_ai" ["e"=1]
 "PrefectHQ/ControlFlow" -> "PrefectHQ/prefect-dbt"
 "PrefectHQ/ControlFlow" -> "PrefectHQ/marvin" ["e"=1]
 "PrefectHQ/ControlFlow" -> "StarmoonAI/Starmoon"
@@ -897,6 +1012,8 @@ digraph G {
 "PrefectHQ/ControlFlow" -> "mosecorg/mosec"
 "PrefectHQ/ControlFlow" -> "PrefectHQ/prefect-snowflake"
 "PrefectHQ/ControlFlow" -> "PrefectHQ/prefect-collection-template"
+"microsoft/prompty" -> "microsoft/semantic-kernel-starters" ["e"=1]
+"microsoft/prompty" -> "geffzhang/awesome-semantickernel" ["e"=1]
 "ptonlix/LangChain-SearXNG" -> "yokingma/search_with_ai"
 "openai/openai-dotnet" -> "modelcontextprotocol/csharp-sdk"
 "openai/openai-dotnet" -> "OkGoDoIt/OpenAI-API-dotnet"
@@ -963,6 +1080,7 @@ digraph G {
 "dotnet/smartcomponents" -> "microsoft/ai-dev-gallery"
 "dotnet/smartcomponents" -> "SteveSandersonMS/RealtimeAIApp"
 "dotnet/smartcomponents" -> "davidfowl/CommandAndControl"
+"0xced/Chisel" -> "StephenCleary/LocalTelemetry" ["e"=1]
 "StephenCleary/LocalTelemetry" -> "petabridge/dotnet-grafana-dashboards"
 "qmatteoq/SemanticKernel-Demos" -> "marcominerva/OpenAIEmbeddingSample"
 "qmatteoq/SemanticKernel-Demos" -> "rvinothrajendran/MicrosoftSemanticKernelSamples"
@@ -970,6 +1088,7 @@ digraph G {
 "kinfey/SemanticKernelCookBook" -> "geffzhang/awesome-semantickernel"
 "dotnet/docs-aspire" -> "CommunityToolkit/Aspire"
 "dotnet/docs-aspire" -> "dotnet/aspire-samples"
+"JeffreySu/Senparc.WebSocket" -> "Senparc/DPB" ["e"=1]
 "Azure-Samples/langchainjs-quickstart-demo" -> "Azure-Samples/ollama-javascript-playground"
 "elbruno/semantickernel-localLLMs" -> "BLaZeKiLL/Codeblaze.SemanticKernel"
 "marcominerva/KernelMemoryService" -> "marcominerva/OpenAIEmbeddingSample"
@@ -999,6 +1118,7 @@ digraph G {
 "microsoft/generative-ai-with-javascript" -> "microsoft/CopilotAdventures"
 "microsoft/generative-ai-with-javascript" -> "Azure-Samples/langchainjs-quickstart-demo"
 "microsoft/generative-ai-with-javascript" -> "Azure-Samples/serverless-chat-langchainjs" ["e"=1]
+"lumina-ai-inc/chunkr" -> "devflowinc/trieve" ["e"=1]
 "dotnet-presentations/dotnet-aspire-workshop" -> "dotnet-presentations/eshop-app-workshop"
 "erwinkramer/bank-api" -> "mikolaj-jankowski/Clean-Architecture-And-Domain-Driven-Design-Solution-Template"
 "erwinkramer/bank-api" -> "thangchung/practical-dotnet-aspire"
@@ -1015,8 +1135,14 @@ digraph G {
 "erwinkramer/bank-api" -> "JasperFx/wolverine" ["e"=1]
 "erwinkramer/bank-api" -> "LSXPrime/Aegis" ["e"=1]
 "erwinkramer/bank-api" -> "NimblePros/eShopOnWeb" ["e"=1]
+"memfreeme/memfree" -> "yokingma/search_with_ai" ["e"=1]
+"lmnr-ai/lmnr" -> "devflowinc/trieve" ["e"=1]
 "mikolaj-jankowski/Clean-Architecture-And-Domain-Driven-Design-Solution-Template" -> "erwinkramer/bank-api"
 "mikolaj-jankowski/Clean-Architecture-And-Domain-Driven-Design-Solution-Template" -> "evgenirusev/.NET-Domain-Driven-Design-Template" ["e"=1]
+"openai/openai-realtime-embedded" -> "espressif/esp-webrtc-solution" ["e"=1]
+"openai/openai-realtime-embedded" -> "StarmoonAI/Starmoon" ["e"=1]
+"Nutlope/turboseek" -> "yokingma/search_with_ai" ["e"=1]
+"humanlayer/humanlayer" -> "PrefectHQ/ControlFlow" ["e"=1]
 "SteveSandersonMS/dotnet-ai-workshop" -> "SteveSandersonMS/RealtimeAIApp"
 "Hexastack/Hexabot" -> "kitops-ml/kitops"
 "Hexastack/Hexabot" -> "Hexastack/eazychart"
@@ -1044,14 +1170,19 @@ digraph G {
 "adamlui/userscripts" -> "adamlui/chatgpt-auto-continue"
 "adamlui/userscripts" -> "KudoAI/duckduckgpt"
 "adamlui/userscripts" -> "KudoAI/bravegpt"
+"microsoft/semanticworkbench" -> "kbeaugrand/SemanticKernel.Connectors.Memory.SqlServer" ["e"=1]
+"lotus-data/lotus" -> "PrefectHQ/ControlFlow" ["e"=1]
 "CommunityToolkit/Aspire" -> "dotnet/aspire-samples"
 "CommunityToolkit/Aspire" -> "dotnet/docs-aspire"
 "CommunityToolkit/Aspire" -> "prom3theu5/aspirational-manifests" ["e"=1]
 "CommunityToolkit/Aspire" -> "dotnet/aspire" ["e"=1]
+"KruxAI/ragbuilder" -> "tensorlakeai/indexify" ["e"=1]
+"KruxAI/ragbuilder" -> "PrefectHQ/ControlFlow" ["e"=1]
 "SteveSandersonMS/RealtimeAIApp" -> "SteveSandersonMS/dotnet-ai-workshop"
 "marcominerva/SqlDatabaseVectorSearch" -> "marcominerva/OpenAIEmbeddingSample"
 "Ming-jiayou/SimpleRAG" -> "Jenscaasen/UniversalLLMFunctionCaller"
 "foxminchan/BookWorm" -> "thangchung/practical-dotnet-aspire"
+"Thytu/Agentarium" -> "PrefectHQ/ControlFlow" ["e"=1]
 "microsoft/Generative-AI-for-beginners-dotnet" -> "modelcontextprotocol/csharp-sdk"
 "microsoft/Generative-AI-for-beginners-dotnet" -> "dotnet/ai-samples"
 "microsoft/Generative-AI-for-beginners-dotnet" -> "microsoft/mastering-github-copilot-for-dotnet-csharp-developers"
@@ -1067,6 +1198,8 @@ digraph G {
 "microsoft/Generative-AI-for-beginners-dotnet" -> "awaescher/OllamaSharp"
 "microsoft/Generative-AI-for-beginners-dotnet" -> "davidfowl/TodoApp" ["e"=1]
 "microsoft/Generative-AI-for-beginners-dotnet" -> "CommunityToolkit/Aspire"
+"microsoft/documentdb" -> "modelcontextprotocol/csharp-sdk" ["e"=1]
+"AnotiaWang/deep-research-web-ui" -> "yokingma/search_with_ai" ["e"=1]
 "modelcontextprotocol/csharp-sdk" -> "openai/openai-dotnet"
 "modelcontextprotocol/csharp-sdk" -> "dotnet/ai-samples"
 "modelcontextprotocol/csharp-sdk" -> "afrise/MCPSharp"
@@ -1082,6 +1215,7 @@ digraph G {
 "modelcontextprotocol/csharp-sdk" -> "microsoft/ai-dev-gallery"
 "modelcontextprotocol/csharp-sdk" -> "JasperFx/wolverine" ["e"=1]
 "modelcontextprotocol/csharp-sdk" -> "tonybaloney/CSnakes"
+"akdeb/ElatoAI" -> "StarmoonAI/Starmoon" ["e"=1]
 "afrise/MCPSharp" -> "PederHP/mcpdotnet"
 "afrise/MCPSharp" -> "salty-flower/ModelContextProtocol.NET"
 "afrise/MCPSharp" -> "modelcontextprotocol/csharp-sdk"
@@ -1094,82 +1228,97 @@ digraph G {
 "PederHP/mcpdotnet" -> "modelcontextprotocol/csharp-sdk"
 "m5stack/openai-realtime-embedded-sdk" -> "ciniml/openai-realtime-embedded-sdk"
 "ciniml/openai-realtime-embedded-sdk" -> "m5stack/openai-realtime-embedded-sdk"
-"onnx/keras-onnx" ["l"="-44.328,6.033"]
+"onnx/tensorflow-onnx" ["l"="50.108,29.867", "c"=83]
 "onnx/onnxmltools" ["l"="-44.274,6.076"]
-"onnx/tensorflow-onnx" ["l"="50.108,29.867"]
+"onnx/keras-onnx" ["l"="-44.328,6.033"]
+"ZhangGe6/onnx-modifier" ["l"="-44.202,6.021"]
+"onnx/optimizer" ["l"="-44.239,6.049"]
 "ZFTurbo/Keras-inference-time-optimizer" ["l"="-44.36,5.988"]
 "onnx/onnx-docker" ["l"="-44.372,6.025"]
-"onnx/sklearn-onnx" ["l"="45.766,26.501"]
+"daquexian/onnx-simplifier" ["l"="50.2,29.876", "c"=83]
+"SciSharp/TensorFlow.NET" ["l"="-34.822,-1.488", "c"=8]
+"SciSharp/LLamaSharp" ["l"="-44.202,6.425"]
+"onnx/tutorials" ["l"="50.191,29.845", "c"=83]
+"dotnet/TorchSharp" ["l"="-34.999,-2.983", "c"=1253]
+"onnx/sklearn-onnx" ["l"="45.766,26.501", "c"=68]
+"project-alice-assistant/ProjectAlice" ["l"="-14.414,-39.104", "c"=64]
+"NaomiProject/Naomi" ["l"="-44.329,6.528"]
+"microsoft/DirectML" ["l"="-23.409,-27.774", "c"=26]
+"microsoft/Olive" ["l"="-44.227,6.132"]
+"microsoft/onnxruntime-genai" ["l"="-44.231,6.165"]
+"onnx/onnx-tensorflow" ["l"="50.088,29.955", "c"=83]
+"henon/Python.Included" ["l"="-35.056,-2.919", "c"=1253]
+"tonybaloney/CSnakes" ["l"="-44.226,6.32"]
+"SciSharp/BotSharp" ["l"="-32.828,0.679", "c"=106]
+"microsoft/kernel-memory" ["l"="-44.155,6.38"]
+"SenparcCoreFramework/SCF" ["l"="-32.797,1.006", "c"=106]
+"SenparcCoreFramework/ScfPackageSources" ["l"="-44.37,6.362"]
 "microsoft/onnxruntime-extensions" ["l"="-44.244,6.096"]
 "microsoft/onnxconverter-common" ["l"="-44.226,6.069"]
-"onnx/tutorials" ["l"="50.191,29.845"]
-"onnx/onnx-tensorflow" ["l"="50.088,29.955"]
-"onnx/optimizer" ["l"="-44.239,6.049"]
-"onnx/onnx-coreml" ["l"="46.687,-24.182"]
-"microsoft/Olive" ["l"="-44.227,6.132"]
-"daquexian/onnx-simplifier" ["l"="50.2,29.876"]
+"onnx/onnx-coreml" ["l"="46.687,-24.182", "c"=656]
 "microsoft/onnxruntime-inference-examples" ["l"="-44.26,6.115"]
 "microsoft/onnxruntime-training-examples" ["l"="-44.287,6.124"]
 "microsoft/onnxscript" ["l"="-44.222,6.09"]
-"dmlc/treelite" ["l"="57.807,23.578"]
+"dmlc/treelite" ["l"="57.807,23.578", "c"=161]
 "ThanatosShinji/onnx-tool" ["l"="-44.224,6.015"]
 "ZFTurbo/Keras-augmentation-layer" ["l"="-44.379,5.963"]
+"JeffreySu/WechatVideoCourse" ["l"="-32.895,1.037", "c"=106]
 "Senparc/DPB" ["l"="-44.318,6.355"]
 "OpenSenparc/Senparc.Weixin.Plugins.WeixinTraceManager" ["l"="-44.341,6.335"]
+"prabhuignoto/vue-float-menu" ["l"="-6.853,-32.627", "c"=72]
+"bcakmakoglu/revue-draggable" ["l"="-44.652,6.684"]
 "OkGoDoIt/OpenAI-API-dotnet" ["l"="-44.136,6.467"]
 "betalgo/openai" ["l"="-44.195,6.484"]
 "RageAgainstThePixel/OpenAI-DotNet" ["l"="-44.166,6.469"]
 "openai/openai-dotnet" ["l"="-44.173,6.413"]
-"wieslawsoltes/ChatGPT" ["l"="-36.116,2.48"]
+"wieslawsoltes/ChatGPT" ["l"="-36.116,2.48", "c"=615]
 "PawanOsman/ChatGPT.Net" ["l"="-44.095,6.504"]
-"srcnalt/OpenAI-Unity" ["l"="-24.975,-32.544"]
-"SciSharp/LLamaSharp" ["l"="-44.202,6.425"]
-"hexthedev/OpenAi-Api-Unity" ["l"="-25.013,-32.518"]
-"SciSharp/BotSharp" ["l"="-32.828,0.679"]
+"srcnalt/OpenAI-Unity" ["l"="-24.975,-32.544", "c"=82]
+"hexthedev/OpenAi-Api-Unity" ["l"="-25.013,-32.518", "c"=82]
 "marcominerva/ChatGptNet" ["l"="-44.044,6.49"]
 "modelcontextprotocol/csharp-sdk" ["l"="-44.19,6.363"]
-"microsoft/kernel-memory" ["l"="-44.155,6.38"]
-"stefanprodan/AspNetCoreRateLimit" ["l"="-34.422,-1.118"]
-"MapsterMapper/Mapster" ["l"="-34.466,-0.99"]
-"RageAgainstThePixel/com.openai.unity" ["l"="-24.977,-32.521"]
+"stefanprodan/AspNetCoreRateLimit" ["l"="-34.422,-1.118", "c"=8]
+"MapsterMapper/Mapster" ["l"="-34.466,-0.99", "c"=8]
+"RageAgainstThePixel/com.openai.unity" ["l"="-24.977,-32.521", "c"=82]
+"fugue-project/fugue" ["l"="-0.414,14.815", "c"=729]
+"fugue-project/tutorials" ["l"="-44.546,6.597"]
+"pytorch/android-demo-app" ["l"="49.533,30.968", "c"=1055]
 "PrefectHQ/server" ["l"="-44.526,6.7"]
 "PrefectHQ/legacy-ui" ["l"="-44.55,6.7"]
 "PrefectHQ/prefect-kubernetes" ["l"="-44.504,6.669"]
 "PrefectHQ/prefect-collection-template" ["l"="-44.492,6.667"]
 "PrefectHQ/prefect-dask" ["l"="-44.522,6.667"]
 "PrefectHQ/prefect-databricks" ["l"="-44.495,6.656"]
-"microsoft/onnxruntime-genai" ["l"="-44.231,6.165"]
-"huggingface/optimum" ["l"="38.709,-0.64"]
-"microsoft/DirectML" ["l"="-23.409,-27.774"]
-"microsoft/onnxruntime" ["l"="50.173,29.746"]
-"intel/neural-compressor" ["l"="64.182,-2.465"]
-"intel/intel-extension-for-pytorch" ["l"="64.147,-2.455"]
+"huggingface/optimum" ["l"="38.709,-0.64", "c"=39]
+"microsoft/onnxruntime" ["l"="50.173,29.746", "c"=83]
+"intel/neural-compressor" ["l"="64.182,-2.465", "c"=1153]
+"intel/intel-extension-for-pytorch" ["l"="64.147,-2.455", "c"=1153]
 "microsoft/PhiCookBook" ["l"="-44.212,6.224"]
 "Talmaj/onnx2pytorch" ["l"="-44.234,5.933"]
 "fumihwh/onnx-pytorch" ["l"="-44.21,5.929"]
 "BBuf/onnx2X" ["l"="-44.257,5.929"]
 "ENOT-AutoDL/onnx2torch" ["l"="-44.231,5.974"]
-"onnx/onnx-mlir" ["l"="37.108,0.982"]
-"Tencent/TPAT" ["l"="53.265,32.712"]
-"ZhangGe6/onnx-modifier" ["l"="-44.202,6.021"]
-"OpenPPL/ppl.nn" ["l"="37.036,0.833"]
-"pnnx/pnnx" ["l"="49.587,30.862"]
-"alibaba/BladeDISC" ["l"="37.066,0.962"]
-"microsoft/nnfusion" ["l"="37.073,0.947"]
-"OpenPPL/ppq" ["l"="52.571,33.354"]
-"NVIDIA/TensorRT-Model-Optimizer" ["l"="38.964,-0.464"]
-"grimoire/torch2trt_dynamic" ["l"="53.166,32.734"]
+"onnx/onnx-mlir" ["l"="37.108,0.982", "c"=112]
+"Tencent/TPAT" ["l"="53.265,32.712", "c"=251]
+"OpenPPL/ppl.nn" ["l"="37.036,0.833", "c"=112]
+"pnnx/pnnx" ["l"="49.587,30.862", "c"=1055]
+"alibaba/BladeDISC" ["l"="37.066,0.962", "c"=112]
+"microsoft/nnfusion" ["l"="37.073,0.947", "c"=112]
+"OpenPPL/ppq" ["l"="52.571,33.354", "c"=271]
+"NVIDIA/TensorRT-Model-Optimizer" ["l"="38.964,-0.464", "c"=39]
+"grimoire/torch2trt_dynamic" ["l"="53.166,32.734", "c"=251]
 "NeuCharFramework/NcfPackageSources" ["l"="-44.342,6.362"]
-"NeuCharFramework/NCF" ["l"="-32.739,0.877"]
+"NeuCharFramework/NCF" ["l"="-32.739,0.877", "c"=106]
 "NeuCharFramework/Senparc.Xncf.WeixinManager" ["l"="-44.368,6.345"]
-"SenparcCoreFramework/ScfPackageSources" ["l"="-44.37,6.362"]
+"Senparc/Senparc.AI" ["l"="-44.278,6.375"]
 "PrefectHQ/prefect-email" ["l"="-44.521,6.658"]
+"synesthesiam/voice2json" ["l"="-14.363,-39.08", "c"=64]
+"anish2690/vue-draggable-next" ["l"="-54.93,-13.904", "c"=219]
 "marcominerva/TinyHelpers" ["l"="-44.003,6.49"]
 "marcominerva/MinimalHelpers" ["l"="-43.981,6.455"]
 "marcominerva/SimpleAuthentication" ["l"="-43.983,6.487"]
 "pytorch/ort" ["l"="-44.328,6.119"]
-"machine-learning-apps/ml-template-azure" ["l"="-45.161,7.815"]
-"fugue-project/tutorials" ["l"="-44.546,6.597"]
+"machine-learning-apps/ml-template-azure" ["l"="-45.161,7.815", "c"=518]
 "fugue-project/tune" ["l"="-44.582,6.587"]
 "fugue-project/prefect-fugue" ["l"="-44.477,6.644"]
 "fugue-project/triad" ["l"="-44.563,6.577"]
@@ -1180,43 +1329,56 @@ digraph G {
 "anna-geller/packaging-prefect-flows" ["l"="-44.531,6.763"]
 "PrefectHQ/prefect-recipes" ["l"="-44.475,6.689"]
 "PrefectHQ/prefect-helm" ["l"="-44.497,6.691"]
-"aiqinxuancai/TiktokenSharp" ["l"="5.326,-9.057"]
+"aiqinxuancai/TiktokenSharp" ["l"="5.326,-9.057", "c"=0]
 "tryAGI/LangChain" ["l"="-44.213,6.403"]
 "Cledev-Limited/Cledev.OpenAI" ["l"="-44.146,6.549"]
 "jodendaal/OpenAI.Net" ["l"="-44.169,6.529"]
-"dmitry-brazhenko/SharpToken" ["l"="5.253,-9.014"]
+"dmitry-brazhenko/SharpToken" ["l"="5.253,-9.014", "c"=0]
 "awaescher/OllamaSharp" ["l"="-44.246,6.448"]
 "geffzhang/awesome-semantickernel" ["l"="-44.135,6.41"]
-"itsnine/yolov5-onnxruntime" ["l"="53.516,32.825"]
-"leimao/ONNX-Runtime-Inference" ["l"="60.046,11.343"]
-"xlite-dev/lite.ai.toolkit" ["l"="50.235,29.859"]
-"onnx/models" ["l"="50.143,29.815"]
-"onnx/onnx-tensorrt" ["l"="53.248,32.637"]
-"open-mmlab/mmdeploy" ["l"="50.347,29.856"]
-"mosecorg/mosec" ["l"="-44.324,6.551"]
-"NaomiProject/Naomi" ["l"="-44.329,6.528"]
-"StarmoonAI/Starmoon" ["l"="-44.343,6.538"]
+"wiz0u/WTelegramClient" ["l"="-35.088,-0.898", "c"=8]
+"itsnine/yolov5-onnxruntime" ["l"="53.516,32.825", "c"=251]
+"leimao/ONNX-Runtime-Inference" ["l"="60.046,11.343", "c"=87]
+"xlite-dev/lite.ai.toolkit" ["l"="50.235,29.859", "c"=83]
+"onnx/models" ["l"="50.143,29.815", "c"=83]
+"onnx/onnx-tensorrt" ["l"="53.248,32.637", "c"=251]
+"open-mmlab/mmdeploy" ["l"="50.347,29.856", "c"=83]
+"tolgee/tolgee-platform" ["l"="16.012,-10.119", "c"=198]
+"devflowinc/trieve" ["l"="-44.4,6.551"]
 "kitops-ml/kitops" ["l"="-44.359,6.52"]
+"StarmoonAI/Starmoon" ["l"="-44.343,6.538"]
+"searxng/searxng-docker" ["l"="-53.468,11.014", "c"=710]
+"yokingma/search_with_ai" ["l"="-44.373,6.538"]
+"zetane/viewer" ["l"="50.422,29.802", "c"=83]
+"mosecorg/mosec" ["l"="-44.324,6.551"]
 "tensorlakeai/indexify" ["l"="-44.353,6.559"]
 "dstackai/dstack" ["l"="-44.343,6.582"]
 "PrefectHQ/ControlFlow" ["l"="-44.404,6.6"]
-"JuliaDynamics/Agents.jl" ["l"="21.983,16.71"]
-"yokingma/search_with_ai" ["l"="-44.373,6.538"]
-"tensorchord/envd" ["l"="8.103,-9.459"]
-"michaelfeil/infinity" ["l"="41.178,0.853"]
-"devflowinc/trieve" ["l"="-44.4,6.551"]
-"KruxAI/ragbuilder" ["l"="41.314,0.488"]
-"David-Kunz/gen.nvim" ["l"="-12.804,-9.807"]
-"speaches-ai/speaches" ["l"="40.474,3.154"]
-"triton-inference-server/onnxruntime_backend" ["l"="39.225,-0.769"]
-"bcakmakoglu/revue-draggable" ["l"="-44.652,6.684"]
+"JuliaDynamics/Agents.jl" ["l"="21.983,16.71", "c"=77]
+"tensorchord/envd" ["l"="8.103,-9.459", "c"=14]
+"michaelfeil/infinity" ["l"="41.178,0.853", "c"=7]
+"KruxAI/ragbuilder" ["l"="41.314,0.488", "c"=7]
+"David-Kunz/gen.nvim" ["l"="-12.804,-9.807", "c"=21]
+"speaches-ai/speaches" ["l"="40.474,3.154", "c"=908]
+"DamianEdwards/MinimalApiPlayground" ["l"="-32.231,-0.291", "c"=139]
+"dotnet/aspire-samples" ["l"="-44.09,6.311"]
+"davidfowl/aspire-ai-chat-demo" ["l"="-44.129,6.296"]
+"triton-inference-server/onnxruntime_backend" ["l"="39.225,-0.769", "c"=39]
 "carlosjorger/fluid-dnd" ["l"="-44.62,6.676"]
-"zenml-io/zenml" ["l"="45.223,25.876"]
-"evidentlyai/evidently" ["l"="45.243,25.941"]
-"deepchecks/deepchecks" ["l"="45.231,26.033"]
-"topoteretes/cognee" ["l"="41.224,0.456"]
-"fugue-project/fugue" ["l"="-0.414,14.815"]
-"skypilot-org/skypilot" ["l"="38.822,-0.668"]
+"dotnet/blazor-samples" ["l"="-36.579,-1.036", "c"=260]
+"dotnet-smartcomponents/smartcomponents" ["l"="-44.139,6.352"]
+"Melissa-AI/Melissa-Core" ["l"="35.838,3.255", "c"=1271]
+"openai/openai-openapi" ["l"="40.651,0.415", "c"=7]
+"zenml-io/zenml" ["l"="45.223,25.876", "c"=68]
+"evidentlyai/evidently" ["l"="45.243,25.941", "c"=68]
+"deepchecks/deepchecks" ["l"="45.231,26.033", "c"=68]
+"topoteretes/cognee" ["l"="41.224,0.456", "c"=7]
+"skypilot-org/skypilot" ["l"="38.822,-0.668", "c"=39]
+"openai/openai-quickstart-python" ["l"="40.479,0.364", "c"=7]
+"pytorch/torcharrow" ["l"="21.555,14.161", "c"=267]
+"blueagler/QuillBot-Premium-Helper" ["l"="-33.835,16.838", "c"=652]
+"adamlui/chatgpt-infinity" ["l"="-44.304,6.745"]
+"OML-Team/open-metric-learning" ["l"="-44.321,26.156", "c"=551]
 "PrefectHQ/prefect-aws" ["l"="-44.48,6.659"]
 "Pocket/data-flows" ["l"="-44.501,6.707"]
 "anna-geller/prefect-deployment-patterns" ["l"="-44.481,6.711"]
@@ -1225,27 +1387,27 @@ digraph G {
 "anna-geller/prefect-docker-deployment" ["l"="-44.454,6.714"]
 "radbrt/prefect_flows" ["l"="-44.443,6.69"]
 "PrefectHQ/prefect-docker" ["l"="-44.545,6.682"]
-"NVIDIA/trt-samples-for-hackathon-cn" ["l"="53.301,32.657"]
-"ModelTC/MQBench" ["l"="52.551,33.403"]
-"nndeploy/nndeploy" ["l"="53.413,32.627"]
-"shouxieai/tensorRT_Pro" ["l"="53.346,32.653"]
-"zerollzeng/tiny-tensorrt" ["l"="53.231,32.666"]
-"quic/aimet" ["l"="52.582,33.376"]
-"VainF/Torch-Pruning" ["l"="52.647,33.355"]
-"OML-Team/open-metric-learning" ["l"="-44.321,26.156"]
-"microsoft/nn-Meter" ["l"="52.686,34.014"]
+"NVIDIA/trt-samples-for-hackathon-cn" ["l"="53.301,32.657", "c"=251]
+"ModelTC/MQBench" ["l"="52.551,33.403", "c"=271]
+"nndeploy/nndeploy" ["l"="53.413,32.627", "c"=251]
+"shouxieai/tensorRT_Pro" ["l"="53.346,32.653", "c"=251]
+"zerollzeng/tiny-tensorrt" ["l"="53.231,32.666", "c"=251]
+"quic/aimet" ["l"="52.582,33.376", "c"=271]
+"VainF/Torch-Pruning" ["l"="52.647,33.355", "c"=271]
+"microsoft/nn-Meter" ["l"="52.686,34.014", "c"=708]
 "senysenyseny16/prokki" ["l"="-44.258,5.963"]
-"zchrissirhcz/cmake_examples" ["l"="49.607,30.796"]
-"FeiGeChuanShu/segment-anything-ncnn" ["l"="49.62,30.823"]
-"elsa-workflows/elsa-core" ["l"="-34.419,-1.096"]
-"fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat" ["l"="-32.733,0.714"]
-"radzenhq/radzen-blazor" ["l"="-36.64,-1.01"]
-"dotnetcore/DotnetSpider" ["l"="-32.88,0.757"]
-"essensoft/paylinks" ["l"="-32.79,0.801"]
-"ldqk/Masuit.Tools" ["l"="-32.862,0.662"]
-"spectreconsole/spectre.console" ["l"="-34.626,-1.043"]
-"abpframework/abp" ["l"="-34.243,-1.244"]
-"microsoft/fluentui-blazor" ["l"="-36.651,-0.985"]
+"zchrissirhcz/cmake_examples" ["l"="49.607,30.796", "c"=1055]
+"FeiGeChuanShu/segment-anything-ncnn" ["l"="49.62,30.823", "c"=1055]
+"Azure/data-api-builder" ["l"="-45.137,6.286", "c"=957]
+"elsa-workflows/elsa-core" ["l"="-34.419,-1.096", "c"=8]
+"fudiwei/DotNetCore.SKIT.FlurlHttpClient.Wechat" ["l"="-32.733,0.714", "c"=106]
+"radzenhq/radzen-blazor" ["l"="-36.64,-1.01", "c"=260]
+"dotnetcore/DotnetSpider" ["l"="-32.88,0.757", "c"=106]
+"essensoft/paylinks" ["l"="-32.79,0.801", "c"=106]
+"ldqk/Masuit.Tools" ["l"="-32.862,0.662", "c"=106]
+"spectreconsole/spectre.console" ["l"="-34.626,-1.043", "c"=8]
+"abpframework/abp" ["l"="-34.243,-1.244", "c"=8]
+"microsoft/fluentui-blazor" ["l"="-36.651,-0.985", "c"=260]
 "PrefectHQ/prefect-shell" ["l"="-44.511,6.667"]
 "PrefectHQ/prefect-postgres" ["l"="-44.505,6.645"]
 "PrefectHQ/prefect-airbyte" ["l"="-44.518,6.649"]
@@ -1256,58 +1418,68 @@ digraph G {
 "PrefectHQ/prefect-twitter" ["l"="-44.505,6.66"]
 "AlessandroLollo/prefect-cubejs" ["l"="-44.512,6.642"]
 "PrefectHQ/prefect-azure" ["l"="-44.498,6.646"]
+"run-house/runhouse" ["l"="21.468,14.193", "c"=267]
+"NikiforovAll/keycloak-authorization-services-dotnet" ["l"="-33.922,-1.115", "c"=8]
+"dotnet/eShopSupport" ["l"="-44.124,6.322"]
+"thangchung/practical-dotnet-aspire" ["l"="-44.016,6.338"]
 "andreadottor/Umarell" ["l"="-43.949,6.476"]
 "marcominerva/OperationResults" ["l"="-43.954,6.494"]
-"ose-net/yesql.net" ["l"="-33.204,-0.43"]
+"ose-net/yesql.net" ["l"="-33.204,-0.43", "c"=8]
 "PrefectHQ/prefect-ray" ["l"="-44.514,6.632"]
 "PrefectHQ/prefect-snowflake" ["l"="-44.491,6.641"]
 "PrefectHQ/prefect-github" ["l"="-44.523,6.648"]
+"SteveSandersonMS/dotnet-wasi-sdk" ["l"="-34.997,-1.014", "c"=8]
+"SteveSandersonMS/dotnet-ai-workshop" ["l"="-44.097,6.339"]
 "PrefectHQ/prefect-slack" ["l"="-44.549,6.646"]
 "PrefectHQ/prefect-sqlalchemy" ["l"="-44.569,6.66"]
 "PrefectHQ/prefect-gcp" ["l"="-44.523,6.636"]
 "blazordevita/BlazorDevIta.ERP" ["l"="-43.925,6.483"]
+"tailcallhq/tailcall" ["l"="-0.316,15.126", "c"=729]
 "sandrohanea/whisper.net" ["l"="-44.247,6.4"]
 "sandrohanea/echosharp" ["l"="-44.297,6.401"]
-"sdcb/OpenVINO.NET" ["l"="-32.529,0.748"]
-"dotnet/TorchSharp" ["l"="-34.999,-2.983"]
-"Ruslan-B/FFmpeg.AutoGen" ["l"="-35.065,-1.541"]
-"takuya-takeuchi/FaceRecognitionDotNet" ["l"="-32.588,0.801"]
+"sdcb/OpenVINO.NET" ["l"="-32.529,0.748", "c"=106]
+"Ruslan-B/FFmpeg.AutoGen" ["l"="-35.065,-1.541", "c"=8]
+"takuya-takeuchi/FaceRecognitionDotNet" ["l"="-32.588,0.801", "c"=106]
 "microsoft/ai-dev-gallery" ["l"="-44.195,6.308"]
-"rosenbjerg/FFMpegCore" ["l"="-35.033,-1.485"]
-"chinware/AtomUI" ["l"="-36.209,2.484"]
-"sdcb/PaddleSharp" ["l"="-32.607,0.762"]
-"feiyun0112/Gradio.Net" ["l"="-32.549,0.652"]
-"raoyutian/PaddleOCRSharp" ["l"="-32.634,0.752"]
-"bezzad/Downloader" ["l"="-36.416,1.007"]
-"PawanOsman/ChatGPT-Official" ["l"="46.183,1.68"]
-"PawanOsman/chatgpt-io" ["l"="46.194,1.649"]
+"rosenbjerg/FFMpegCore" ["l"="-35.033,-1.485", "c"=8]
+"chinware/AtomUI" ["l"="-36.209,2.484", "c"=615]
+"sdcb/PaddleSharp" ["l"="-32.607,0.762", "c"=106]
+"feiyun0112/Gradio.Net" ["l"="-32.549,0.652", "c"=106]
+"raoyutian/PaddleOCRSharp" ["l"="-32.634,0.752", "c"=106]
+"bezzad/Downloader" ["l"="-36.416,1.007", "c"=137]
+"basetenlabs/truss" ["l"="40.676,-2.709", "c"=146]
+"PINTO0309/onnx2tf" ["l"="49.882,29.935", "c"=83]
+"PawanOsman/ChatGPT-Official" ["l"="46.183,1.68", "c"=904]
+"PawanOsman/chatgpt-io" ["l"="46.194,1.649", "c"=904]
 "BruceQiu1996/NChatGPTRev" ["l"="-44.084,6.551"]
-"PINTO0309/simple-onnx-processing-tools" ["l"="49.767,29.99"]
-"MegEngine/MegCC" ["l"="37.045,0.917"]
-"tsingmicro-toolchain/OnnxSlim" ["l"="37.049,0.456"]
+"PINTO0309/simple-onnx-processing-tools" ["l"="49.767,29.99", "c"=83]
+"MegEngine/MegCC" ["l"="37.045,0.917", "c"=112]
+"tsingmicro-toolchain/OnnxSlim" ["l"="37.049,0.456", "c"=112]
 "scailable/sclblonnx" ["l"="-44.18,5.974"]
 "gmalivenko/onnx-opcounter" ["l"="-44.171,5.998"]
 "saurabh-shandilya/onnx-utils" ["l"="-44.202,5.976"]
-"DerryHub/BEVFormer_tensorrt" ["l"="64.608,11.319"]
-"NVIDIA/Deep-Learning-Accelerator-SW" ["l"="53.329,32.568"]
+"DerryHub/BEVFormer_tensorrt" ["l"="64.608,11.319", "c"=61]
+"NVIDIA/Deep-Learning-Accelerator-SW" ["l"="53.329,32.568", "c"=251]
 "Cledev-Limited/Cledev.OpenAI.Studio" ["l"="-44.141,6.577"]
 "anna-geller/prefect-aws-lambda" ["l"="-44.44,6.734"]
 "anna-geller/prefect-streaming" ["l"="-44.463,6.742"]
 "marcominerva/TinyCMS" ["l"="-43.903,6.529"]
 "marcominerva/SearchGPT" ["l"="-43.924,6.515"]
-"SciSharp/TensorFlow.NET" ["l"="-34.822,-1.488"]
-"AIDotNet/AntSK" ["l"="52.562,3.156"]
-"dotnet/aspire" ["l"="-34.309,-0.993"]
-"microsoft/chat-copilot" ["l"="-44.336,7.215"]
-"Azure-Samples/miyagi" ["l"="-44.39,7.2"]
+"microsoft/semantic-kernel" ["l"="40.359,0.332", "c"=7]
+"AIDotNet/AntSK" ["l"="52.562,3.156", "c"=391]
+"dotnet/aspire" ["l"="-34.309,-0.993", "c"=8]
+"a16z-infra/ai-getting-started" ["l"="41.049,-3.962", "c"=146]
+"KudoAI/chatgpt.js" ["l"="-44.331,6.625"]
+"microsoft/chat-copilot" ["l"="-44.336,7.215", "c"=801]
+"Azure-Samples/miyagi" ["l"="-44.39,7.2", "c"=801]
 "microsoft/semantic-kernel-starters" ["l"="-44.098,6.38"]
 "dotnet/ai-samples" ["l"="-44.165,6.348"]
-"microsoft/semantic-kernel" ["l"="40.359,0.332"]
 "MicrosoftDocs/semantic-kernel-docs" ["l"="-44.108,6.411"]
-"Azure-Samples/azure-search-openai-demo-csharp" ["l"="-44.371,7.259"]
+"Azure-Samples/azure-search-openai-demo-csharp" ["l"="-44.371,7.259", "c"=801]
 "microsoft/SemanticKernelCookBook" ["l"="-44.114,6.393"]
 "kbeaugrand/SemanticKernel.Assistants" ["l"="-44.084,6.428"]
-"adamlui/chatgpt-infinity" ["l"="-44.304,6.745"]
+"PrefectHQ/marvin" ["l"="41.256,-3.98", "c"=146]
+"cofactoryai/textbase" ["l"="41.127,-4.073", "c"=146]
 "adamlui/ai-web-extensions" ["l"="-44.291,6.76"]
 "adamlui/chatgpt-widescreen" ["l"="-44.298,6.779"]
 "adamlui/chatgpt-auto-continue" ["l"="-44.315,6.769"]
@@ -1319,52 +1491,56 @@ digraph G {
 "adamlui/autoclear-chatgpt-history" ["l"="-44.294,6.801"]
 "microsoft/CopilotHackathon" ["l"="-44.036,6.179"]
 "microsoft/CopilotAdventures" ["l"="-44.061,6.205"]
-"KudoAI/chatgpt.js" ["l"="-44.331,6.625"]
-"a16z-infra/ai-getting-started" ["l"="41.049,-3.962"]
-"junhoyeo/threads-api" ["l"="38.258,-1.569"]
-"rasbt/scipy2023-deeplearning" ["l"="41.064,34.974"]
+"junhoyeo/threads-api" ["l"="38.258,-1.569", "c"=1218]
+"Eternaldeath/AIProductHome" ["l"="45.69,-0.755", "c"=222]
+"rasbt/scipy2023-deeplearning" ["l"="41.064,34.974", "c"=51]
 "KudoAI/chatgpt.js-greasemonkey-starter" ["l"="-44.315,6.659"]
-"Etesam913/react-magic-motion" ["l"="-3.508,-30.067"]
-"SkalskiP/awesome-chatgpt-code-interpreter-experiments" ["l"="40.984,-3.834"]
-"madkarmaa/automatic-chatgpt-dan" ["l"="44.27,0.542"]
-"OcularEngineering/ocular" ["l"="3.762,13.085"]
-"getcorefin/corefin" ["l"="3.776,13.054"]
-"lumina-ai-inc/chunkr" ["l"="41.334,0.315"]
-"relari-ai/continuous-eval" ["l"="3.732,13.023"]
-"quarylabs/quary" ["l"="3.779,12.993"]
-"getzep/zep" ["l"="40.993,0.671"]
-"tolgee/tolgee-platform" ["l"="16.012,-10.119"]
-"Helicone/helicone" ["l"="40.994,0.57"]
+"Etesam913/react-magic-motion" ["l"="-3.508,-30.067", "c"=4]
+"SkalskiP/awesome-chatgpt-code-interpreter-experiments" ["l"="40.984,-3.834", "c"=146]
+"madkarmaa/automatic-chatgpt-dan" ["l"="44.27,0.542", "c"=135]
+"OcularEngineering/ocular" ["l"="3.762,13.085", "c"=1258]
+"getcorefin/corefin" ["l"="3.776,13.054", "c"=1258]
+"lumina-ai-inc/chunkr" ["l"="41.334,0.315", "c"=7]
+"relari-ai/continuous-eval" ["l"="3.732,13.023", "c"=1258]
+"quarylabs/quary" ["l"="3.779,12.993", "c"=1258]
+"getzep/zep" ["l"="40.993,0.671", "c"=7]
+"Helicone/helicone" ["l"="40.994,0.57", "c"=7]
 "devflowinc/firecrawl-simple" ["l"="-44.47,6.531"]
-"pretzelai/pretzelai" ["l"="3.735,12.998"]
+"pretzelai/pretzelai" ["l"="3.735,12.998", "c"=1258]
 "Azure-Samples/semantic-kernel-rag-chat" ["l"="-44.076,6.387"]
 "johnmaeda/SK-Recipes" ["l"="-44.074,6.367"]
-"Azure/intelligent-app-workshop" ["l"="-44.407,7.177"]
+"Azure/intelligent-app-workshop" ["l"="-44.407,7.177", "c"=801]
 "adhurwit/SemanticQuestion10K" ["l"="-44.047,6.384"]
 "matthewbolanos/sk-v1-proposal" ["l"="-44.067,6.404"]
 "jimbobbennett/console-gpt" ["l"="-44.05,6.366"]
 "microsoft/typechat.net" ["l"="-44.091,6.41"]
 "rvinothrajendran/MicrosoftSemanticKernelSamples" ["l"="-44.05,6.41"]
 "kbeaugrand/SemanticKernel.Connectors.Memory.SqlServer" ["l"="-44.081,6.446"]
-"Zenohm/Friday" ["l"="35.772,3.272"]
+"Zenohm/Friday" ["l"="35.772,3.272", "c"=1271]
 "jeastham1993/langchain-dotnet" ["l"="-44.275,6.41"]
 "afrise/MCPSharp" ["l"="-44.239,6.376"]
 "tryAGI/Ollama" ["l"="-44.271,6.437"]
-"qdrant/qdrant-dotnet" ["l"="40.76,1.467"]
+"qdrant/qdrant-dotnet" ["l"="40.76,1.467", "c"=7]
 "Jenscaasen/UniversalLLMFunctionCaller" ["l"="-44.284,6.355"]
-"jondot/awesome-rust-llm" ["l"="-8.692,-4.393"]
-"edwinkys/oasysdb" ["l"="-8.716,-4.477"]
+"techwithtim/Price-Tracking-Web-Scraper" ["l"="60.014,34.406", "c"=699]
+"jondot/awesome-rust-llm" ["l"="-8.692,-4.393", "c"=407]
+"edwinkys/oasysdb" ["l"="-8.716,-4.477", "c"=407]
 "marcominerva/DatabaseGPT" ["l"="-44.017,6.527"]
 "marcominerva/SqlDatabaseVectorSearch" ["l"="-44.023,6.473"]
 "marcominerva/OpenAIEmbeddingSample" ["l"="-44.042,6.452"]
+"jncraton/languagemodels" ["l"="41.286,-4.02", "c"=146]
+"microsoft/Llama-2-Onnx" ["l"="37.057,0.687", "c"=112]
+"AndersonBY/vector-vein" ["l"="45.413,0.364", "c"=99]
+"CommunityToolkit/Windows" ["l"="-37.56,0.907", "c"=435]
 "uhub/awesome-chatgpt" ["l"="-44.267,6.838"]
+"microsoft/node-api-dotnet" ["l"="-34.995,-1.123", "c"=8]
 "kinfey/SemanticKernelCookBook" ["l"="-44.1,6.452"]
-"Senparc/Senparc.AI" ["l"="-44.278,6.375"]
 "qmatteoq/SemanticKernel-Demos" ["l"="-44.07,6.424"]
 "PederHP/mcpdotnet" ["l"="-44.226,6.356"]
 "BLaZeKiLL/Codeblaze.SemanticKernel" ["l"="-44.114,6.444"]
 "HillPhelmuth/AdventuresInSemanticKernel" ["l"="-44.108,6.434"]
 "elbruno/semantickernel-localLLMs" ["l"="-44.166,6.444"]
+"microsoft/project-oagents" ["l"="-44.387,7.117", "c"=801]
 "NeuCharFramework/Senparc.Xncf.OpenAI" ["l"="-44.305,6.373"]
 "PrefectHQ/langchain-prefect" ["l"="-44.488,6.628"]
 "zzstoatzz/prefect-memory-profiling" ["l"="-44.498,6.597"]
@@ -1376,127 +1552,131 @@ digraph G {
 "magols/BlazorGPT" ["l"="-43.955,6.445"]
 "marcominerva/KernelMemoryService" ["l"="-44.002,6.446"]
 "Azure-AI-Community/Microsoft-Semantic-Kernel-Community-dotnet" ["l"="-44.015,6.406"]
-"dotnet/eShopSupport" ["l"="-44.124,6.322"]
+"DAGWorks-Inc/burr" ["l"="41.11,0.671", "c"=7]
+"quic/ai-hub-models" ["l"="49.702,29.89", "c"=83]
 "microsoft/Generative-AI-for-beginners-dotnet" ["l"="-44.149,6.324"]
-"dotnet/aspire-samples" ["l"="-44.09,6.311"]
-"dotnet-smartcomponents/smartcomponents" ["l"="-44.139,6.352"]
-"SteveSandersonMS/dotnet-ai-workshop" ["l"="-44.097,6.339"]
-"davidfowl/aspire-ai-chat-demo" ["l"="-44.129,6.296"]
 "dotnet/smartcomponents" ["l"="-44.173,6.325"]
-"eidolon-ai/eidolon" ["l"="-44.375,6.473"]
-"DataBassGit/AgentForge" ["l"="41.014,-3.73"]
-"MarianoMolina/project_alice" ["l"="39.935,-2.171"]
-"Eng-Elias/CrewAI-Visualizer" ["l"="40.086,-2.029"]
-"rnadigital/agentcloud" ["l"="40.015,-2"]
-"kitops-ml/pykitops" ["l"="-44.351,6.493"]
-"ptonlix/LangChain-SearXNG" ["l"="-44.419,6.522"]
-"memfreeme/memfree" ["l"="41.279,0.298"]
-"fatwang2/search4all" ["l"="45.514,0.474"]
-"LLM-Red-Team/metaso-free-api" ["l"="45.542,0.532"]
-"rashadphz/farfalle" ["l"="41.063,0.364"]
-"onenov/search_with_ai" ["l"="-44.394,6.51"]
-"ai365vip/chat-api" ["l"="45.49,0.541"]
-"fatwang2/search2ai" ["l"="45.535,0.463"]
-"vastxie/99AI" ["l"="45.532,2.025"]
-"MartialBE/one-hub" ["l"="45.558,0.569"]
-"miurla/morphic" ["l"="40.998,0.269"]
-"SmartSchoolAI/ai-to-pptx" ["l"="-2.956,-33.512"]
-"VoAPI/VoAPI" ["l"="45.584,0.531"]
-"microsoft/vscode-ai-toolkit" ["l"="-44.19,6.267"]
-"microsoft/genaiscript" ["l"="41.126,0.143"]
-"microsoft/TinyTroupe" ["l"="41.093,0.167"]
-"aymenfurter/microagents" ["l"="41.282,0.858"]
-"microsoft/azure-genai-design-patterns" ["l"="-44.377,7.211"]
-"collabora/WhisperFusion" ["l"="40.598,3.119"]
-"NickSwardh/YoloDotNet" ["l"="-32.464,0.75"]
-"Azure-Samples/graphrag-accelerator" ["l"="-44.405,7.319"]
-"NVlabs/VILA" ["l"="47.441,30.034"]
-"huggingface/smollm" ["l"="38.717,-0.386"]
-"lm-sys/RouteLLM" ["l"="41.042,0.536"]
-"microsoft/sample-app-aoai-chatGPT" ["l"="-44.361,7.24"]
-"microsoft/prompty" ["l"="-44.387,7.159"]
-"pytorch/torchtune" ["l"="38.819,-0.505"]
-"meta-llama/llama-cookbook" ["l"="40.401,0.438"]
-"kitbagjs/router" ["l"="-44.536,6.658"]
+"prom3theu5/aspirational-manifests" ["l"="-34.411,-0.734", "c"=8]
 "CommunityToolkit/Aspire" ["l"="-44.084,6.283"]
-"prom3theu5/aspirational-manifests" ["l"="-34.411,-0.734"]
+"eidolon-ai/eidolon" ["l"="-44.375,6.473"]
+"DataBassGit/AgentForge" ["l"="41.014,-3.73", "c"=146]
+"MarianoMolina/project_alice" ["l"="39.935,-2.171", "c"=1006]
+"Eng-Elias/CrewAI-Visualizer" ["l"="40.086,-2.029", "c"=1006]
+"rnadigital/agentcloud" ["l"="40.015,-2", "c"=1006]
+"LLM-Red-Team/metaso-free-api" ["l"="45.542,0.532", "c"=99]
+"rashadphz/farfalle" ["l"="41.063,0.364", "c"=7]
+"fatwang2/search4all" ["l"="45.514,0.474", "c"=99]
+"kitops-ml/pykitops" ["l"="-44.351,6.493"]
+"githubnext/copilot-workspace-user-manual" ["l"="7.671,-45.271", "c"=544]
+"microsoft/vscode-ai-toolkit" ["l"="-44.19,6.267"]
+"ptonlix/LangChain-SearXNG" ["l"="-44.419,6.522"]
+"memfreeme/memfree" ["l"="41.279,0.298", "c"=7]
+"onenov/search_with_ai" ["l"="-44.394,6.51"]
+"ai365vip/chat-api" ["l"="45.49,0.541", "c"=99]
+"fatwang2/search2ai" ["l"="45.535,0.463", "c"=99]
+"vastxie/99AI" ["l"="45.532,2.025", "c"=574]
+"MartialBE/one-hub" ["l"="45.558,0.569", "c"=99]
+"miurla/morphic" ["l"="40.998,0.269", "c"=7]
+"SmartSchoolAI/ai-to-pptx" ["l"="-2.956,-33.512", "c"=30]
+"VoAPI/VoAPI" ["l"="45.584,0.531", "c"=99]
+"Azure-Samples/serverless-chat-langchainjs" ["l"="-44.398,7.136", "c"=801]
+"microsoft/generative-ai-with-javascript" ["l"="-44.111,6.241"]
+"Azure-Samples/langchainjs-quickstart-demo" ["l"="-44.098,6.191"]
+"microsoft/genaiscript" ["l"="41.126,0.143", "c"=7]
+"microsoft/TinyTroupe" ["l"="41.093,0.167", "c"=7]
+"aymenfurter/microagents" ["l"="41.282,0.858", "c"=7]
+"microsoft/azure-genai-design-patterns" ["l"="-44.377,7.211", "c"=801]
+"collabora/WhisperFusion" ["l"="40.598,3.119", "c"=908]
+"NickSwardh/YoloDotNet" ["l"="-32.464,0.75", "c"=106]
+"Giorgi/EFCore.Visualizer" ["l"="-34.289,-0.751", "c"=8]
+"Azure-Samples/graphrag-accelerator" ["l"="-44.405,7.319", "c"=801]
+"NVlabs/VILA" ["l"="47.441,30.034", "c"=254]
+"huggingface/smollm" ["l"="38.717,-0.386", "c"=39]
+"lm-sys/RouteLLM" ["l"="41.042,0.536", "c"=7]
+"microsoft/sample-app-aoai-chatGPT" ["l"="-44.361,7.24", "c"=801]
+"microsoft/prompty" ["l"="-44.387,7.159", "c"=801]
+"pytorch/torchtune" ["l"="38.819,-0.505", "c"=39]
+"meta-llama/llama-cookbook" ["l"="40.401,0.438", "c"=7]
+"kitbagjs/router" ["l"="-44.536,6.658"]
 "dotnet/docs-aspire" ["l"="-44.102,6.284"]
-"thangchung/practical-dotnet-aspire" ["l"="-44.016,6.338"]
 "dotnet-presentations/dotnet-aspire-workshop" ["l"="-44.03,6.283"]
 "dotnet-presentations/eshop-app-workshop" ["l"="-44.044,6.267"]
-"JasperFx/wolverine" ["l"="-34.375,-0.829"]
-"dotnet/blazor-samples" ["l"="-36.579,-1.036"]
-"Azure-Samples/eShopOnAzure" ["l"="-34.552,-3.192"]
-"davidfowl/TodoApp" ["l"="-34.177,-0.933"]
-"Blazor-Diagrams/Blazor.Diagrams" ["l"="-36.536,-1.004"]
-"Giorgi/EFCore.Visualizer" ["l"="-34.289,-0.751"]
+"JasperFx/wolverine" ["l"="-34.375,-0.829", "c"=8]
+"Azure-Samples/eShopOnAzure" ["l"="-34.552,-3.192", "c"=249]
+"davidfowl/TodoApp" ["l"="-34.177,-0.933", "c"=8]
+"Blazor-Diagrams/Blazor.Diagrams" ["l"="-36.536,-1.004", "c"=260]
 "SteveSandersonMS/RealtimeAIApp" ["l"="-44.114,6.344"]
-"spark-dotnet/framework" ["l"="-34.265,-0.745"]
-"CodeBeamOrg/CodeBeam.MudBlazor.Extensions" ["l"="-36.553,-1.05"]
-"apexcharts/Blazor-ApexCharts" ["l"="-36.559,-1.014"]
-"mrpmorris/Fluxor" ["l"="-36.583,-0.968"]
-"IEvangelist/blazorators" ["l"="-36.457,-1.027"]
+"spark-dotnet/framework" ["l"="-34.265,-0.745", "c"=8]
+"CodeBeamOrg/CodeBeam.MudBlazor.Extensions" ["l"="-36.553,-1.05", "c"=260]
+"apexcharts/Blazor-ApexCharts" ["l"="-36.559,-1.014", "c"=260]
+"mrpmorris/Fluxor" ["l"="-36.583,-0.968", "c"=260]
+"IEvangelist/blazorators" ["l"="-36.457,-1.027", "c"=260]
+"kalliope-project/kalliope" ["l"="35.791,3.201", "c"=1271]
 "dotnetConf/FocusOnAI_24" ["l"="-44.06,6.311"]
-"NikiforovAll/keycloak-authorization-services-dotnet" ["l"="-33.922,-1.115"]
-"PrefectHQ/marvin" ["l"="41.256,-3.98"]
-"CommunityToolkit/dotnet" ["l"="-36.682,0.959"]
-"dotnet/eShop" ["l"="-34.111,-1.06"]
-"riok/mapperly" ["l"="-34.445,-0.827"]
+"Omniplex-ai/omniplex" ["l"="41.202,0.383", "c"=7]
+"CommunityToolkit/dotnet" ["l"="-36.682,0.959", "c"=137]
+"dotnet/eShop" ["l"="-34.111,-1.06", "c"=8]
+"riok/mapperly" ["l"="-34.445,-0.827", "c"=8]
 "jonowilliams26/StructuredMinimalApi" ["l"="-43.931,6.404"]
-"openvinotoolkit/openvino.genai" ["l"="64.097,-2.484"]
-"wejoncy/QLLM" ["l"="38.74,-0.204"]
-"google-ai-edge/ai-edge-torch" ["l"="49.817,29.931"]
-"microsoft/T-MAC" ["l"="38.909,-0.291"]
-"huggingface/optimum-intel" ["l"="64.107,-2.454"]
-"intel/intel-npu-acceleration-library" ["l"="64.076,-2.433"]
-"microsoft/Llama-2-Onnx" ["l"="37.057,0.687"]
+"openvinotoolkit/openvino.genai" ["l"="64.097,-2.484", "c"=1153]
+"wejoncy/QLLM" ["l"="38.74,-0.204", "c"=39]
+"google-ai-edge/ai-edge-torch" ["l"="49.817,29.931", "c"=83]
+"microsoft/T-MAC" ["l"="38.909,-0.291", "c"=39]
+"huggingface/optimum-intel" ["l"="64.107,-2.454", "c"=1153]
+"intel/intel-npu-acceleration-library" ["l"="64.076,-2.433", "c"=1153]
 "foxminchan/BookWorm" ["l"="-43.988,6.318"]
 "erwinkramer/bank-api" ["l"="-43.931,6.344"]
-"mehdihadeli/food-delivery-modular-monolith" ["l"="-34.316,-3.248"]
+"mehdihadeli/food-delivery-modular-monolith" ["l"="-34.316,-3.248", "c"=249]
 "mikolaj-jankowski/Clean-Architecture-And-Domain-Driven-Design-Solution-Template" ["l"="-43.956,6.331"]
 "lofcz/LlmTornado" ["l"="-44.027,6.431"]
 "bradygaster/AugmentR" ["l"="-44.059,6.459"]
-"Azure-Samples/semantic-kernel-advanced-usage" ["l"="-44.412,7.112"]
-"Azure/AI-in-a-Box" ["l"="-44.418,7.204"]
-"Azure-Samples/semantic-kernel-workshop" ["l"="-44.435,7.121"]
+"Azure-Samples/semantic-kernel-advanced-usage" ["l"="-44.412,7.112", "c"=801]
+"Azure/AI-in-a-Box" ["l"="-44.418,7.204", "c"=801]
+"Azure-Samples/semantic-kernel-workshop" ["l"="-44.435,7.121", "c"=801]
 "Ming-jiayou/SimpleRAG" ["l"="-44.307,6.334"]
 "microsoft/mastering-github-copilot-for-dotnet-csharp-developers" ["l"="-44.084,6.236"]
 "davidfowl/CommandAndControl" ["l"="-44.152,6.259"]
+"0xced/Chisel" ["l"="-32.076,-0.65", "c"=139]
 "StephenCleary/LocalTelemetry" ["l"="-43.837,6.36"]
 "petabridge/dotnet-grafana-dashboards" ["l"="-43.876,6.355"]
-"Azure-Samples/langchainjs-quickstart-demo" ["l"="-44.098,6.191"]
+"JeffreySu/Senparc.WebSocket" ["l"="-32.842,1.097", "c"=106]
 "Azure-Samples/ollama-javascript-playground" ["l"="-44.091,6.163"]
 "espressif/esp-webrtc-solution" ["l"="-44.413,6.493"]
-"tonybaloney/CSnakes" ["l"="-44.226,6.32"]
-"xoofx/ultra" ["l"="-34.562,-0.76"]
-"henon/Python.Included" ["l"="-35.056,-2.919"]
-"eiriktsarpalis/PolyType" ["l"="-32.012,-0.588"]
-"sveinungf/spreadcheetah" ["l"="-34.609,-0.661"]
-"nietras/Sep" ["l"="-34.527,-0.711"]
-"Dreamescaper/BlazorBindings.Maui" ["l"="-37.224,-2.349"]
-"microsoft/generative-ai-with-javascript" ["l"="-44.111,6.241"]
-"Azure-Samples/serverless-chat-langchainjs" ["l"="-44.398,7.136"]
-"jhaygood86/PeachPDF" ["l"="-36.643,2.304"]
-"LumexUI/lumexui" ["l"="-36.579,2.337"]
-"SteveDunn/Vogen" ["l"="-34.49,-0.734"]
+"xoofx/ultra" ["l"="-34.562,-0.76", "c"=8]
+"eiriktsarpalis/PolyType" ["l"="-32.012,-0.588", "c"=139]
+"sveinungf/spreadcheetah" ["l"="-34.609,-0.661", "c"=8]
+"nietras/Sep" ["l"="-34.527,-0.711", "c"=8]
+"Dreamescaper/BlazorBindings.Maui" ["l"="-37.224,-2.349", "c"=113]
+"jhaygood86/PeachPDF" ["l"="-36.643,2.304", "c"=615]
+"LumexUI/lumexui" ["l"="-36.579,2.337", "c"=615]
+"SteveDunn/Vogen" ["l"="-34.49,-0.734", "c"=8]
 "CharlieDigital/dn8-modular-monolith" ["l"="-43.898,6.327"]
-"ZiggyCreatures/FusionCache" ["l"="-34.415,-0.851"]
-"alirezanet/Gridify" ["l"="-34.348,-0.792"]
-"LSXPrime/Aegis" ["l"="-36.483,2.367"]
-"NimblePros/eShopOnWeb" ["l"="-34.508,-3.189"]
-"evgenirusev/.NET-Domain-Driven-Design-Template" ["l"="-34.576,-3.17"]
+"ZiggyCreatures/FusionCache" ["l"="-34.415,-0.851", "c"=8]
+"alirezanet/Gridify" ["l"="-34.348,-0.792", "c"=8]
+"LSXPrime/Aegis" ["l"="-36.483,2.367", "c"=615]
+"NimblePros/eShopOnWeb" ["l"="-34.508,-3.189", "c"=249]
+"lmnr-ai/lmnr" ["l"="41.246,0.408", "c"=7]
+"evgenirusev/.NET-Domain-Driven-Design-Template" ["l"="-34.576,-3.17", "c"=249]
+"openai/openai-realtime-embedded" ["l"="38.803,1.449", "c"=54]
+"Nutlope/turboseek" ["l"="41.282,0.362", "c"=7]
+"humanlayer/humanlayer" ["l"="41.252,0.43", "c"=7]
 "Hexastack/Hexabot" ["l"="-44.433,6.449"]
 "Hexastack/eazychart" ["l"="-44.461,6.429"]
-"swirlai/swirl-search" ["l"="40.967,0.282"]
-"LangbaseInc/BaseAI" ["l"="41.357,0.333"]
-"CommunityToolkit/Windows" ["l"="-37.56,0.907"]
-"CommunityToolkit/Labs-Windows" ["l"="-37.521,0.909"]
-"dotMorten/WinUIEx" ["l"="-37.541,0.922"]
-"w-ahmad/WinUI.TableView" ["l"="-37.567,0.866"]
-"microsoft/WindowsAppSDK-Samples" ["l"="-37.54,0.973"]
-"AIDotNet/koala-ai" ["l"="-32.518,0.653"]
-"HavenDV/H.NotifyIcon" ["l"="-37.53,0.878"]
-"unvell/ReoGrid" ["l"="-36.41,1.071"]
+"swirlai/swirl-search" ["l"="40.967,0.282", "c"=7]
+"LangbaseInc/BaseAI" ["l"="41.357,0.333", "c"=7]
+"CommunityToolkit/Labs-Windows" ["l"="-37.521,0.909", "c"=435]
+"dotMorten/WinUIEx" ["l"="-37.541,0.922", "c"=435]
+"w-ahmad/WinUI.TableView" ["l"="-37.567,0.866", "c"=435]
+"microsoft/WindowsAppSDK-Samples" ["l"="-37.54,0.973", "c"=435]
+"AIDotNet/koala-ai" ["l"="-32.518,0.653", "c"=106]
+"HavenDV/H.NotifyIcon" ["l"="-37.53,0.878", "c"=435]
+"unvell/ReoGrid" ["l"="-36.41,1.071", "c"=137]
+"microsoft/semanticworkbench" ["l"="-44.442,7.084", "c"=801]
+"lotus-data/lotus" ["l"="41.275,0.608", "c"=7]
+"Thytu/Agentarium" ["l"="41.404,0.371", "c"=7]
+"microsoft/documentdb" ["l"="3.77,13.481", "c"=850]
+"AnotiaWang/deep-research-web-ui" ["l"="45.735,0.59", "c"=99]
+"akdeb/ElatoAI" ["l"="45.585,-0.384", "c"=222]
 "salty-flower/ModelContextProtocol.NET" ["l"="-44.261,6.349"]
 "ciniml/openai-realtime-embedded-sdk" ["l"="-44.453,6.482"]
 "microsoft/micronaire" ["l"="-44.263,6.322"]

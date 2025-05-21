@@ -1,4 +1,5 @@
 digraph G {
+"webrtc/adapter" -> "DoubangoTelecom/webrtc2sip" ["e"=1]
 "kamailio/kamailio" -> "OpenSIPS/opensips"
 "kamailio/kamailio" -> "sipwise/rtpengine"
 "kamailio/kamailio" -> "signalwire/freeswitch"
@@ -80,6 +81,9 @@ digraph G {
 "baresip/baresip" -> "irontec/sngrep"
 "baresip/baresip" -> "signalwire/freeswitch"
 "baresip/baresip" -> "asterisk/asterisk"
+"fonoster/fonoster" -> "fonoster/routr" ["e"=1]
+"metrico/gigapipe" -> "sipcapture/homer-app" ["e"=1]
+"metrico/gigapipe" -> "sipcapture/paStash" ["e"=1]
 "drachtio/docker-rtpengine" -> "ianblenke/docker-rtpengine"
 "voiceip/tinyphone" -> "tomek-o/tSIP"
 "sipwise/rtpengine" -> "sippy/rtpproxy"
@@ -119,6 +123,8 @@ digraph G {
 "asterisk/ari-py" -> "asterisk/node-ari-client"
 "asterisk/ari-py" -> "maxiberta/django-asterisk"
 "asterisk/ari-py" -> "greenfieldtech-nirs/phpari"
+"herlesupreeth/docker_open5gs" -> "herlesupreeth/Kamailio_IMS_Config" ["e"=1]
+"alphacep/vosk-server" -> "unispeech/unimrcp" ["e"=1]
 "marcelog/PAMI" -> "marcelog/PAGI"
 "marcelog/PAMI" -> "welltime/phpagi"
 "marcelog/PAMI" -> "marcelog/Nami"
@@ -199,6 +205,7 @@ digraph G {
 "cdr-stats/cdr-stats" -> "newfies-dialer/newfies-dialer"
 "cdr-stats/cdr-stats" -> "roramirez/qpanel"
 "cdr-stats/cdr-stats" -> "friends-of-freeswitch/switchio"
+"fiorix/go-diameter" -> "cgrates/cgrates" ["e"=1]
 "drachtio/drachtio-server" -> "drachtio/drachtio-srf"
 "drachtio/drachtio-server" -> "drachtio/drachtio-fsmrf"
 "drachtio/drachtio-server" -> "drachtio/drachtio-siprec-recording-server"
@@ -217,6 +224,7 @@ digraph G {
 "voiceboys/sbcOS" -> "sems-server/sems"
 "voiceboys/sbcOS" -> "sipcapture/paStash"
 "pentesteracademy/patoolkit" -> "pentesteracademy/voipshark"
+"ultravideo/uvgRTP" -> "BelledonneCommunications/ortp" ["e"=1]
 "jfernandz/pyst2" -> "jeansch/py-asterisk"
 "jfernandz/pyst2" -> "rdegges/pycall"
 "jfernandz/pyst2" -> "gawel/panoramisk"
@@ -290,6 +298,7 @@ digraph G {
 "jeansch/py-asterisk" -> "jfernandz/pyst2"
 "jeansch/py-asterisk" -> "rdegges/pycall"
 "2600hz/libwebphone" -> "open-voip-alliance/WebphoneLib"
+"jitsi/jitsi-android" -> "DoubangoTelecom/imsdroid" ["e"=1]
 "voiceip/oreka" -> "drachtio/drachtio-siprec-recording-server"
 "voiceip/oreka" -> "OrecX/Oreka"
 "voiceip/oreka" -> "drachtio/drachtio-server"
@@ -335,6 +344,7 @@ digraph G {
 "willamowius/h323plus" -> "willamowius/callgen323"
 "willamowius/h323plus" -> "muggot/openmcu"
 "JVoiceXML/mrcp4j" -> "Malatawy15/Cairo-Mrcpv2-Server"
+"ghettovoice/gosip" -> "miconda/sipexer" ["e"=1]
 "retel-io/ari-proxy" -> "CyCoreSystems/ari-proxy"
 "juha-h/libbaresip-android" -> "juha-h/libwebrtc"
 "sems-server/sems" -> "voiceboys/sbcOS"
@@ -567,6 +577,8 @@ digraph G {
 "asterisk/node-ari-client" -> "CyCoreSystems/asterisk-k8s-demo"
 "asterisk/node-ari-client" -> "staskobzar/amiws"
 "asterisk/node-ari-client" -> "zmarius81/asterisk.io"
+"cloudwebrtc/go-sip-ua" -> "percipia/eslgo" ["e"=1]
+"cloudwebrtc/go-sip-ua" -> "custompbx/custompbx" ["e"=1]
 "hnimminh/libresbc" -> "voiceboys/sbcOS"
 "hnimminh/libresbc" -> "dOpensource/dsiprouter"
 "hnimminh/libresbc" -> "miconda/sip-resources"
@@ -590,6 +602,8 @@ digraph G {
 "BelledonneCommunications/mediastreamer2" -> "BelledonneCommunications/linphone-web-plugin"
 "BelledonneCommunications/mediastreamer2" -> "BelledonneCommunications/linphone-web-ui"
 "BelledonneCommunications/mediastreamer2" -> "BelledonneCommunications/linphone-cmake-builder"
+"EnableSecurity/awesome-rtc-hacking" -> "EnableSecurity/sipvicious" ["e"=1]
+"EnableSecurity/awesome-rtc-hacking" -> "Pepelux/sippts" ["e"=1]
 "tayler6000/pyVoIP" -> "SIPp/pysipp"
 "tayler6000/pyVoIP" -> "voiceip/tinyphone"
 "tayler6000/pyVoIP" -> "AGProjects/python-sipsimple"
@@ -606,6 +620,7 @@ digraph G {
 "CyCoreSystems/ari" -> "rprinz08/pjgo"
 "mlan/docker-asterisk" -> "andrius/asterisk"
 "mlan/docker-asterisk" -> "ugoviti/izpbx"
+"jselbie/stunserver" -> "resiprocate/resiprocate" ["e"=1]
 "0x19/goesl" -> "fiorix/go-eventsocket"
 "0x19/goesl" -> "percipia/eslgo"
 "0x19/goesl" -> "cgrates/fsock"
@@ -670,6 +685,10 @@ digraph G {
 "BelledonneCommunications/liblinphone" -> "BelledonneCommunications/bctoolbox"
 "BelledonneCommunications/liblinphone" -> "BelledonneCommunications/linphone-web-plugin"
 "BelledonneCommunications/liblinphone" -> "BelledonneCommunications/linphone-web-ui"
+"meething/meething" -> "sipcapture/homer-ui" ["e"=1]
+"StefanKopieczek/gossip" -> "0x19/goesl" ["e"=1]
+"StefanKopieczek/gossip" -> "sippy/go-b2bua" ["e"=1]
+"StefanKopieczek/gossip" -> "kirm/sip.js" ["e"=1]
 "nils-ohlmeier/sipsak" -> "sems-server/sems"
 "nils-ohlmeier/sipsak" -> "sipcapture/sipgrep"
 "nils-ohlmeier/sipsak" -> "miconda/sipexer"
@@ -706,8 +725,13 @@ digraph G {
 "BelledonneCommunications/linphone-iphone" -> "BelledonneCommunications/linphone-web-plugin"
 "BelledonneCommunications/linphone-iphone" -> "BelledonneCommunications/linphone-web-ui"
 "BelledonneCommunications/linphone-iphone" -> "BelledonneCommunications/linphone-cmake-builder"
+"rtckit/awesome-rtc" -> "miconda/sip-resources" ["e"=1]
 "herlesupreeth/Kamailio_IMS_Config" -> "herlesupreeth/kamailio"
 "herlesupreeth/Kamailio_IMS_Config" -> "herlesupreeth/FHoSS"
+"flutter-webrtc/dart-sip-ua" -> "versatica/JsSIP" ["e"=1]
+"flutter-webrtc/dart-sip-ua" -> "havfo/WEBRTC-to-SIP" ["e"=1]
+"flutter-webrtc/dart-sip-ua" -> "CyCoreSystems/ari" ["e"=1]
+"flutter-webrtc/dart-sip-ua" -> "InnovateAsterisk/Browser-Phone" ["e"=1]
 "BelledonneCommunications/belle-sip" -> "BelledonneCommunications/bzrtp"
 "BelledonneCommunications/belle-sip" -> "BelledonneCommunications/linphone-cmake-builder"
 "BelledonneCommunications/belle-sip" -> "BelledonneCommunications/bctoolbox"
@@ -973,6 +997,7 @@ digraph G {
 "asterisk/asterisk" -> "InnovateAsterisk/Browser-Phone"
 "asterisk/asterisk" -> "asterisk/node-ari-client"
 "asterisk/asterisk" -> "DoubangoTelecom/sipml5"
+"libnice/libnice" -> "resiprocate/resiprocate" ["e"=1]
 "SIPp/pysipp" -> "mojolingo/sippy_cup"
 "SIPp/pysipp" -> "saghul/sipp-scenarios"
 "SIPp/pysipp" -> "pbertera/SIPp-by-example"
@@ -1011,6 +1036,7 @@ digraph G {
 "DoubangoTelecom/sipml5" -> "irontec/sngrep"
 "DoubangoTelecom/sipml5" -> "signalwire/freeswitch"
 "DoubangoTelecom/sipml5" -> "asterisk/asterisk"
+"volvet/h264extractor" -> "willamowius/h323plus" ["e"=1]
 "prog-it/Asterisk-CDR-Viewer-Mod" -> "g613/asterisk-cdr-viewer"
 "prog-it/Asterisk-CDR-Viewer-Mod" -> "litnimax/astconfman"
 "cgrates/cgrates" -> "sipwise/rtpengine"
@@ -1066,6 +1092,8 @@ digraph G {
 "bg111/asterisk-chan-dongle" -> "prog-it/Asterisk-CDR-Viewer-Mod"
 "bg111/asterisk-chan-dongle" -> "MatejKovacic/RasPBX-install"
 "bg111/asterisk-chan-dongle" -> "g613/asterisk-cdr-viewer"
+"jart/gosip" -> "percipia/eslgo" ["e"=1]
+"jart/gosip" -> "miconda/sipexer" ["e"=1]
 "BetterVoice/freeswitch-container" -> "esl-client/esl-client"
 "BetterVoice/freeswitch-container" -> "kovalyshyn/docker-freeswitch"
 "BetterVoice/freeswitch-container" -> "shimaore/esl"
@@ -1127,6 +1155,7 @@ digraph G {
 "sipcapture/hep-js" -> "sipcapture/pastash_plugins"
 "vonvey/esl-client" -> "seven1240/FreeSWITCH-Portal"
 "ederwander/Asterisk-Google-Speech-Recognition" -> "subnetsRU/asterisk"
+"sipsorcery-org/sipsorcery" -> "pjsip/pjproject" ["e"=1]
 "versatica/JsSIP" -> "onsip/SIP.js"
 "versatica/JsSIP" -> "DoubangoTelecom/sipml5"
 "versatica/JsSIP" -> "kamailio/kamailio"
@@ -1203,6 +1232,10 @@ digraph G {
 "miconda/sipexer" -> "sippy/rtpproxy"
 "miconda/sipexer" -> "sipcapture/heplify-server"
 "miconda/sipexer" -> "pbertera/SIPp-by-example"
+"emiago/sipgo" -> "miconda/sipexer" ["e"=1]
+"emiago/sipgo" -> "CyCoreSystems/ari" ["e"=1]
+"emiago/sipgo" -> "sippy/go-b2bua" ["e"=1]
+"emiago/sipgo" -> "hnimminh/libresbc" ["e"=1]
 "BelledonneCommunications/linphone-desktop" -> "BelledonneCommunications/liblinphone"
 "BelledonneCommunications/linphone-desktop" -> "BelledonneCommunications/linphone-iphone"
 "BelledonneCommunications/linphone-desktop" -> "BelledonneCommunications/linphone-android"
@@ -1329,6 +1362,8 @@ digraph G {
 "altanai/Ramudroid" -> "altanai/computervision"
 "altanai/Ramudroid" -> "altanai/webrtcdevelopment"
 "altanai/Ramudroid" -> "altanai/unifiedCommunicator"
+"thought-machine/please" -> "tcncloud/wollemi" ["e"=1]
+"datso/react-native-pjsip" -> "VoIPGRID/Vialer-pjsip-iOS" ["e"=1]
 "pjsip/pjproject" -> "signalwire/freeswitch"
 "pjsip/pjproject" -> "OpenSIPS/opensips"
 "pjsip/pjproject" -> "kamailio/kamailio"
@@ -1370,13 +1405,17 @@ digraph G {
 "EvoluxBR/greenswitch" -> "EvoluxBR/open-cnl" ["e"=1]
 "EvoluxBR/greenswitch" -> "sangoma/python-ESL"
 "EvoluxBR/greenswitch" -> "Otoru/Genesis"
+"JoneXiong/DjangoX" -> "JoneXiong/YouPBX" ["e"=1]
 "telephoneorg/docker-kamailio" -> "telephoneorg/docker-freeswitch"
+"mike-zhang/mikeBlogEssays" -> "cdevelop/FreeSWITCH-ASR" ["e"=1]
 "andrius/asterisk" -> "mlan/docker-asterisk"
 "andrius/asterisk" -> "dougbtv/docker-asterisk"
 "andrius/asterisk" -> "tiredofit/docker-freepbx"
 "andrius/asterisk" -> "pipobscure/NodeJS-AsteriskManager"
 "andrius/asterisk" -> "asterisk/node-ari-client"
 "andrius/asterisk" -> "asterisk/asterisk-external-media"
+"usnistgov/jsip" -> "pbertera/SIPp-by-example" ["e"=1]
+"usnistgov/jsip" -> "esl-client/esl-client" ["e"=1]
 "fredposner/scripts" -> "Omid-Mohajerani/Learn-Kamailio"
 "shanghaimoon888/mod_vadasr" -> "zhouhailin/unimrcp-1.6"
 "shanghaimoon888/mod_vadasr" -> "NFhook/mod_asr"
@@ -1418,6 +1457,8 @@ digraph G {
 "resiprocate/resiprocate" -> "versatica/libmediasoupclient" ["e"=1]
 "resiprocate/resiprocate" -> "unitycs/GB28181Platform" ["e"=1]
 "resiprocate/resiprocate" -> "ireader/sdk" ["e"=1]
+"jookies/jasmin" -> "cgrates/cgrates" ["e"=1]
+"Azure-Samples/Cognitive-Speech-TTS" -> "unispeech/unimrcp" ["e"=1]
 "CyCoreSystems/asterisk-k8s-demo" -> "CyCoreSystems/asterisk-config"
 "CyCoreSystems/asterisk-k8s-demo" -> "CyCoreSystems/ari-proxy"
 "CyCoreSystems/asterisk-k8s-demo" -> "redhat-nfvpe/vnf-asterisk"
@@ -1447,6 +1488,9 @@ digraph G {
 "nwaycn/FSGui" -> "wkyo/freeswitch-chatbot"
 "nwaycn/FSGui" -> "esl-client/esl-client"
 "nwaycn/FSGui" -> "rts-cn/awesome-freeswitch"
+"dpirch/libfvad" -> "unispeech/unimrcp" ["e"=1]
+"dpirch/libfvad" -> "cotinyang/MRCP-Plugin-Demo" ["e"=1]
+"dpirch/libfvad" -> "sippy/rtpproxy" ["e"=1]
 "seven1240/xui" -> "nwaycn/FSGui"
 "laoyin/java-sip-mrcp" -> "laoyin/freeswitch_admin_ui"
 "laoyin/java-sip-mrcp" -> "laoyin/freeswitch_chatGPT"
@@ -1458,6 +1502,9 @@ digraph G {
 "laoyin/java-sip-mrcp" -> "shanghaimoon888/mod_vadasr"
 "laoyin/java-sip-mrcp" -> "zhouhailin/freeswitch-externals"
 "laoyin/java-sip-mrcp" -> "notehel/mod_asr_ali_3.x"
+"creytiv/re" -> "baresip/baresip" ["e"=1]
+"creytiv/re" -> "DoubangoTelecom/webrtc2sip" ["e"=1]
+"creytiv/re" -> "resiprocate/resiprocate" ["e"=1]
 "englercj/node-esl" -> "shimaore/esl"
 "englercj/node-esl" -> "seven1240/xui"
 "englercj/node-esl" -> "BetterVoice/freeswitch-container"
@@ -1491,6 +1538,7 @@ digraph G {
 "2600hz/monster-ui" -> "voipxswitch/kamailio-jsonrpc-client"
 "so010/knockplop" -> "havfo/Kurento-Nodejs-SIP"
 "akscf/mod_whisper_asr" -> "akscf/mod_openai_asr"
+"dchapyshev/aspia" -> "mikopbx/Core" ["e"=1]
 "fonoster/routr" -> "hnimminh/libresbc"
 "fonoster/routr" -> "InnovateAsterisk/Browser-Phone"
 "fonoster/routr" -> "miconda/sipexer"
@@ -1520,6 +1568,7 @@ digraph G {
 "srsman/lemon" -> "JoneXiong/YouPBX"
 "srsman/lemon" -> "rts-cn/zh"
 "srsman/lemon" -> "caoliang1918/contact-center" ["e"=1]
+"j0r1/JRTPLIB" -> "BelledonneCommunications/ortp" ["e"=1]
 "pbertera/SIPp-by-example" -> "saghul/sipp-scenarios"
 "pbertera/SIPp-by-example" -> "ossobv/sipp-scenarios"
 "pbertera/SIPp-by-example" -> "SIPp/pysipp"
@@ -1636,6 +1685,8 @@ digraph G {
 "kirm/sip.js" -> "sippy/b2bua"
 "kirm/sip.js" -> "cwysong85/sipjs-udp"
 "kirm/sip.js" -> "versatica/JsSIP"
+"cisco/libsrtp" -> "pjsip/pjproject" ["e"=1]
+"cisco/libsrtp" -> "resiprocate/resiprocate" ["e"=1]
 "mwolff44/pk-sbc" -> "openvoips/OV500"
 "fozavci/viproy-voipkit" -> "EnableSecurity/sipvicious"
 "fozavci/viproy-voipkit" -> "fozavci/metasploit-framework-with-viproy"
@@ -1651,6 +1702,8 @@ digraph G {
 "daimoc/Kurento-SIP-GW" -> "havfo/multiparty-meeting-sipgw"
 "ehsud/mod_g729" -> "ehsud/pbx-mon"
 "ehsud/mod_g729" -> "xadhoom/mod_bcg729"
+"webrtc/adapter" ["l"="64.724,-14.277", "c"=385]
+"DoubangoTelecom/webrtc2sip" ["l"="63.418,-14.78"]
 "kamailio/kamailio" ["l"="63.512,-14.817"]
 "OpenSIPS/opensips" ["l"="63.511,-14.792"]
 "sipwise/rtpengine" ["l"="63.525,-14.848"]
@@ -1671,10 +1724,9 @@ digraph G {
 "collecttix/ctxSip" ["l"="63.471,-14.893"]
 "fonoster/routr" ["l"="63.537,-14.88"]
 "fusionpbx/fusionpbx" ["l"="63.569,-14.828"]
-"DoubangoTelecom/webrtc2sip" ["l"="63.418,-14.78"]
 "freeswitch/sofia-sip" ["l"="63.546,-14.804"]
 "unispeech/unimrcp" ["l"="63.584,-14.748"]
-"meetecho/janus-gateway" ["l"="64.602,-14.23"]
+"meetecho/janus-gateway" ["l"="64.602,-14.23", "c"=385]
 "sipcapture/homer-app" ["l"="63.593,-14.852"]
 "sipcapture/heplify-server" ["l"="63.59,-14.837"]
 "sipcapture/heplify" ["l"="63.577,-14.855"]
@@ -1685,9 +1737,12 @@ digraph G {
 "baresip/baresip-android" ["l"="63.417,-14.61"]
 "juha-h/libwebrtc" ["l"="63.44,-14.652"]
 "tomek-o/tSIP" ["l"="63.333,-14.789"]
-"creytiv/re" ["l"="63.336,-14.144"]
-"baresip/re" ["l"="63.272,-14.155"]
+"creytiv/re" ["l"="63.336,-14.144", "c"=524]
+"baresip/re" ["l"="63.272,-14.155", "c"=524]
 "resiprocate/resiprocate" ["l"="63.475,-14.748"]
+"fonoster/fonoster" ["l"="15.865,-10.32", "c"=198]
+"metrico/gigapipe" ["l"="1.245,-9.224", "c"=1144]
+"sipcapture/paStash" ["l"="63.624,-14.861"]
 "drachtio/docker-rtpengine" ["l"="63.72,-14.928"]
 "ianblenke/docker-rtpengine" ["l"="63.674,-14.914"]
 "voiceip/tinyphone" ["l"="63.349,-14.833"]
@@ -1701,7 +1756,7 @@ digraph G {
 "dOpensource/dsiprouter" ["l"="63.535,-14.922"]
 "sip3io/sip3-ansible" ["l"="63.383,-15.129"]
 "Infactum/tg2sip" ["l"="63.511,-15.078"]
-"kunzite-app/008" ["l"="45.02,25.797"]
+"kunzite-app/008" ["l"="45.02,25.797", "c"=68]
 "gmaruzz/saraphone" ["l"="63.509,-14.911"]
 "break-pointer/homebridge-tion" ["l"="63.471,-15.013"]
 "asterisk/ari-py" ["l"="63.589,-15.091"]
@@ -1714,6 +1769,9 @@ digraph G {
 "asterisk/node-ari-client" ["l"="63.652,-15.044"]
 "maxiberta/django-asterisk" ["l"="63.57,-15.11"]
 "greenfieldtech-nirs/phpari" ["l"="63.627,-15.119"]
+"herlesupreeth/docker_open5gs" ["l"="52.453,3.871", "c"=1110]
+"herlesupreeth/Kamailio_IMS_Config" ["l"="63.289,-14.606"]
+"alphacep/vosk-server" ["l"="35.631,2.475", "c"=308]
 "marcelog/PAMI" ["l"="63.641,-15.123"]
 "marcelog/PAGI" ["l"="63.638,-15.147"]
 "welltime/phpagi" ["l"="63.657,-15.113"]
@@ -1746,7 +1804,7 @@ digraph G {
 "Pepelux/sippts" ["l"="63.452,-14.899"]
 "pentesteracademy/voipshark" ["l"="63.253,-14.945"]
 "fozavci/viproy-voipkit" ["l"="63.376,-14.899"]
-"abriginets/wreckuests" ["l"="-45.238,-24.868"]
+"abriginets/wreckuests" ["l"="-45.238,-24.868", "c"=724]
 "niloofarkheirkhah/nili" ["l"="63.282,-14.932"]
 "friends-of-freeswitch/switchio" ["l"="63.563,-14.985"]
 "EvoluxBR/greenswitch" ["l"="63.61,-14.954"]
@@ -1760,7 +1818,7 @@ digraph G {
 "xadhoom/mod_bcg729" ["l"="63.586,-14.769"]
 "BelledonneCommunications/linphone-iphone" ["l"="63.333,-14.724"]
 "BetterVoice/freeswitch-container" ["l"="63.624,-14.788"]
-"StefanKopieczek/gossip" ["l"="65.117,-13.181"]
+"StefanKopieczek/gossip" ["l"="65.117,-13.181", "c"=586]
 "VoIPGRID/Vialer-pjsip-iOS" ["l"="63.44,-14.699"]
 "drachtio/drachtio-server" ["l"="63.604,-14.889"]
 "BelledonneCommunications/linphone-desktop" ["l"="63.316,-14.707"]
@@ -1770,6 +1828,7 @@ digraph G {
 "cdr-stats/cdr-stats" ["l"="63.502,-15.054"]
 "Star2Billing/a2billing" ["l"="63.479,-15.05"]
 "newfies-dialer/newfies-dialer" ["l"="63.457,-15.106"]
+"fiorix/go-diameter" ["l"="52.297,3.831", "c"=1110]
 "drachtio/drachtio-srf" ["l"="63.638,-14.921"]
 "drachtio/drachtio-fsmrf" ["l"="63.657,-14.921"]
 "drachtio/drachtio-siprec-recording-server" ["l"="63.584,-14.899"]
@@ -1783,8 +1842,9 @@ digraph G {
 "hnimminh/libresbc" ["l"="63.53,-14.902"]
 "nickvsnetworking/kamailio-101-tutorial" ["l"="63.496,-14.917"]
 "sems-server/sems" ["l"="63.503,-14.898"]
-"sipcapture/paStash" ["l"="63.624,-14.861"]
 "pentesteracademy/patoolkit" ["l"="63.187,-14.965"]
+"ultravideo/uvgRTP" ["l"="63.409,-14.153", "c"=524]
+"BelledonneCommunications/ortp" ["l"="63.296,-14.748"]
 "rdegges/pycall" ["l"="63.475,-15.088"]
 "ettoreleandrotognoli/python-ami" ["l"="63.53,-15.13"]
 "VoIPGRID/cacofonisk" ["l"="63.523,-15.154"]
@@ -1814,6 +1874,8 @@ digraph G {
 "florentchauveau/go-kamailio-binrpc" ["l"="63.474,-14.665"]
 "2600hz/libwebphone" ["l"="63.401,-14.919"]
 "open-voip-alliance/WebphoneLib" ["l"="63.332,-14.936"]
+"jitsi/jitsi-android" ["l"="64.387,-14.038", "c"=385]
+"DoubangoTelecom/imsdroid" ["l"="63.353,-14.663"]
 "OrecX/Oreka" ["l"="63.628,-14.896"]
 "asterisk-java/asterisk-java" ["l"="63.634,-14.977"]
 "ari4java/ari4java" ["l"="63.671,-14.98"]
@@ -1837,6 +1899,7 @@ digraph G {
 "muggot/openmcu" ["l"="63.278,-14.665"]
 "JVoiceXML/mrcp4j" ["l"="63.634,-14.6"]
 "Malatawy15/Cairo-Mrcpv2-Server" ["l"="63.628,-14.626"]
+"ghettovoice/gosip" ["l"="65.068,-13.185", "c"=586]
 "retel-io/ari-proxy" ["l"="63.757,-15.044"]
 "sipwise/sems" ["l"="63.435,-14.943"]
 "cdevelop/FreeSWITCH-ASR" ["l"="63.669,-14.703"]
@@ -1873,7 +1936,7 @@ digraph G {
 "striveh/spring-cloud-freeswitch" ["l"="63.713,-14.64"]
 "ch3nnn/springboot-freeswitch" ["l"="63.699,-14.644"]
 "zhouhailin/freeswitch-cdr-all" ["l"="63.71,-14.652"]
-"caoliang1918/contact-center" ["l"="-55.001,-11.413"]
+"caoliang1918/contact-center" ["l"="-55.001,-11.413", "c"=365]
 "yjmyzz/esl-client" ["l"="63.652,-14.667"]
 "rts-cn/xswitch-free" ["l"="63.72,-14.725"]
 "flymote/FSlmx" ["l"="63.706,-14.717"]
@@ -1948,22 +2011,25 @@ digraph G {
 "asterisk/asterisk-external-media" ["l"="63.708,-15.054"]
 "pipobscure/NodeJS-AsteriskManager" ["l"="63.676,-15.067"]
 "zmarius81/asterisk.io" ["l"="63.688,-15.055"]
+"cloudwebrtc/go-sip-ua" ["l"="65.078,-13.213", "c"=586]
+"custompbx/custompbx" ["l"="63.7,-14.736"]
 "BelledonneCommunications/mediastreamer2" ["l"="63.294,-14.73"]
 "BelledonneCommunications/belle-sip" ["l"="63.309,-14.739"]
-"BelledonneCommunications/ortp" ["l"="63.296,-14.748"]
 "BelledonneCommunications/bzrtp" ["l"="63.311,-14.728"]
 "BelledonneCommunications/bctoolbox" ["l"="63.281,-14.724"]
 "BelledonneCommunications/liblinphone" ["l"="63.301,-14.717"]
 "BelledonneCommunications/linphone-web-plugin" ["l"="63.321,-14.736"]
 "BelledonneCommunications/linphone-web-ui" ["l"="63.316,-14.75"]
 "BelledonneCommunications/linphone-cmake-builder" ["l"="63.325,-14.744"]
+"EnableSecurity/awesome-rtc-hacking" ["l"="-43.959,-33.79", "c"=865]
 "tayler6000/pyVoIP" ["l"="63.37,-14.967"]
 "AGProjects/python-sipsimple" ["l"="63.418,-15.025"]
 "OpenJarbas/baresipy" ["l"="63.323,-14.992"]
 "abourget/ari" ["l"="63.807,-15.056"]
+"jselbie/stunserver" ["l"="65.294,-13.297", "c"=586]
 "2600hz/kazoo" ["l"="63.478,-14.913"]
 "2600hz/monster-ui" ["l"="63.455,-14.963"]
-"cabol/shards" ["l"="3.281,15.432"]
+"cabol/shards" ["l"="3.281,15.432", "c"=223]
 "urueedi/kazoo-provision" ["l"="63.448,-14.95"]
 "tqcenglish/CSipSimple" ["l"="63.396,-14.617"]
 "r3gis3r/CSipSimple" ["l"="63.377,-14.637"]
@@ -1982,17 +2048,18 @@ digraph G {
 "i-p-tel/sipdroid" ["l"="63.383,-14.676"]
 "BelledonneCommunications/linphone-sdk" ["l"="63.295,-14.695"]
 "BelledonneCommunications/flexisip" ["l"="63.281,-14.704"]
-"ddssingsong/webrtc_android" ["l"="64.948,-14.116"]
-"DoubangoTelecom/imsdroid" ["l"="63.353,-14.663"]
+"ddssingsong/webrtc_android" ["l"="64.948,-14.116", "c"=385]
+"meething/meething" ["l"="-23.748,14.486", "c"=697]
 "sippy/b2bua" ["l"="63.523,-14.918"]
 "sippy/rtp_cluster" ["l"="63.564,-14.888"]
 "nesterenkodm/pjsip" ["l"="63.406,-14.707"]
 "cwliu/linphone-swift-demo" ["l"="63.253,-14.726"]
-"herlesupreeth/Kamailio_IMS_Config" ["l"="63.289,-14.606"]
+"rtckit/awesome-rtc" ["l"="25.778,-26.613", "c"=32]
 "herlesupreeth/kamailio" ["l"="63.277,-14.585"]
 "herlesupreeth/FHoSS" ["l"="63.262,-14.586"]
-"j0r1/JRTPLIB" ["l"="63.469,-14.117"]
-"j0r1/JThread" ["l"="63.513,-14.146"]
+"flutter-webrtc/dart-sip-ua" ["l"="64.993,-13.478", "c"=586]
+"j0r1/JRTPLIB" ["l"="63.469,-14.117", "c"=524]
+"j0r1/JThread" ["l"="63.513,-14.146", "c"=524]
 "enniel/ami" ["l"="63.611,-15.162"]
 "daniele77/aritester" ["l"="63.627,-15.189"]
 "freeswitch/spandsp" ["l"="63.467,-14.793"]
@@ -2001,7 +2068,7 @@ digraph G {
 "jinsuojinsuo/mod_baidu_asr" ["l"="63.665,-14.63"]
 "ricardojlrufino/webphone-sip" ["l"="63.408,-14.939"]
 "AGProjects/sylkserver" ["l"="63.384,-15.007"]
-"tariq86/rn-sip-app" ["l"="3.988,-28.007"]
+"tariq86/rn-sip-app" ["l"="3.988,-28.007", "c"=23]
 "nimbleape/asterisk-dialogflow-rtp-audioserver" ["l"="63.756,-15.106"]
 "nimbleape/asterisk-dialogflow-ari-bridge" ["l"="63.776,-15.123"]
 "dougbtv/kamailio-etcd-dispatcher" ["l"="63.617,-15.034"]
@@ -2045,13 +2112,13 @@ digraph G {
 "pmairoldi/pjsip-ios" ["l"="63.332,-14.763"]
 "wazo-platform/wazo-ui" ["l"="63.587,-15.061"]
 "DoubangoTelecom/doubango" ["l"="63.369,-14.704"]
-"fyhertz/spydroid-ipcamera" ["l"="62.226,-14.526"]
-"yixia/librtmp" ["l"="62.321,-14.444"]
+"fyhertz/spydroid-ipcamera" ["l"="62.226,-14.526", "c"=165]
+"yixia/librtmp" ["l"="62.321,-14.444", "c"=165]
 "RestComm/restcomm-android-sdk" ["l"="63.336,-14.617"]
 "VoiSmart/pjsip-android-builder" ["l"="63.411,-14.651"]
-"EnableSecurity/awesome-rtc-hacking" ["l"="-43.959,-33.79"]
 "fusionpbx/fusionpbx-install.sh" ["l"="63.658,-14.774"]
 "nemerald-voip/fspbx" ["l"="63.61,-14.807"]
+"libnice/libnice" ["l"="63.388,-14.152", "c"=524]
 "pbertera/SIPPing" ["l"="63.394,-14.974"]
 "OpenSIPS/SIPssert" ["l"="63.389,-14.95"]
 "alxgb/sip-parser" ["l"="63.413,-14.955"]
@@ -2059,28 +2126,29 @@ digraph G {
 "saghul/sipsimple-examples" ["l"="63.407,-15.05"]
 "AGProjects/sipclients" ["l"="63.411,-15.065"]
 "AGProjects/python3-sipsimple" ["l"="63.39,-15.051"]
-"theintencity/rtclite" ["l"="61.938,-14.888"]
+"theintencity/rtclite" ["l"="61.938,-14.888", "c"=165]
 "mgwilliams/python3-pjsip" ["l"="63.373,-15.063"]
 "DoubangoTelecom/telepresence" ["l"="63.367,-14.722"]
+"volvet/h264extractor" ["l"="-38.344,20.699", "c"=853]
 "prog-it/Asterisk-CDR-Viewer-Mod" ["l"="63.503,-15.207"]
 "g613/asterisk-cdr-viewer" ["l"="63.496,-15.244"]
 "unispeech/swig-wrapper" ["l"="63.593,-14.7"]
-"dpirch/libfvad" ["l"="36.886,4.472"]
+"dpirch/libfvad" ["l"="36.886,4.472", "c"=128]
 "unispeech/asterisk-unimrcp" ["l"="63.583,-14.685"]
-"rasta-mouse/Sherlock" ["l"="-44.998,-31.966"]
-"Kevin-Robertson/Inveigh" ["l"="-45.198,-32.082"]
-"pentestmonkey/windows-privesc-check" ["l"="-44.953,-31.935"]
-"royhills/ike-scan" ["l"="-47.585,-34.65"]
-"curi0usJack/luckystrike" ["l"="-47.408,-34.301"]
+"rasta-mouse/Sherlock" ["l"="-44.998,-31.966", "c"=53]
+"Kevin-Robertson/Inveigh" ["l"="-45.198,-32.082", "c"=53]
+"pentestmonkey/windows-privesc-check" ["l"="-44.953,-31.935", "c"=53]
+"royhills/ike-scan" ["l"="-47.585,-34.65", "c"=204]
+"curi0usJack/luckystrike" ["l"="-47.408,-34.301", "c"=204]
 "bg111/asterisk-chan-dongle" ["l"="63.528,-15.255"]
 "krip-tip/asterisk-chan-dongle" ["l"="63.542,-15.234"]
 "jstasiak/asterisk-chan-dongle" ["l"="63.56,-15.245"]
 "sergei-mironov/asterisk-dongle-setup" ["l"="63.552,-15.262"]
 "IchthysMaranatha/asterisk-chan-quectel" ["l"="63.537,-15.292"]
 "MatejKovacic/RasPBX-install" ["l"="63.494,-15.316"]
+"jart/gosip" ["l"="65.081,-13.173", "c"=586]
 "kovalyshyn/docker-freeswitch" ["l"="63.682,-14.811"]
 "PremiereGlobal/freeswitch-docker" ["l"="63.693,-14.799"]
-"custompbx/custompbx" ["l"="63.7,-14.736"]
 "sipcapture/hepgen.js" ["l"="63.645,-14.87"]
 "AGProjects/sylk-webrtc" ["l"="63.355,-15.028"]
 "ederwander/Asterisk-Google-Speech-Recognition" ["l"="63.713,-15.148"]
@@ -2094,6 +2162,7 @@ digraph G {
 "vonvey/esl-client" ["l"="63.726,-14.74"]
 "seven1240/FreeSWITCH-Portal" ["l"="63.769,-14.74"]
 "subnetsRU/asterisk" ["l"="63.732,-15.175"]
+"sipsorcery-org/sipsorcery" ["l"="-35.02,-1.556", "c"=8]
 "wangduanduan/siphub" ["l"="63.581,-14.939"]
 "DoubangoTelecom/idoubs" ["l"="63.363,-14.685"]
 "DoubangoTelecom/boghe" ["l"="63.384,-14.718"]
@@ -2102,6 +2171,7 @@ digraph G {
 "VoIPGRID/vialer-android" ["l"="63.384,-14.593"]
 "kwanko/voip-elk-stack" ["l"="63.549,-15.044"]
 "pchero/jade" ["l"="63.532,-15.054"]
+"emiago/sipgo" ["l"="65.09,-13.148", "c"=586]
 "versatica/OverSIP" ["l"="63.39,-14.759"]
 "DoubangoTelecom/click-2-dial" ["l"="63.374,-14.787"]
 "Omid-Mohajerani/freeswitch" ["l"="63.447,-15.011"]
@@ -2118,23 +2188,29 @@ digraph G {
 "ph4r05/android-openssl" ["l"="63.438,-14.593"]
 "sipcapture/hepipe.js" ["l"="63.668,-14.869"]
 "sipcapture/statstrmr" ["l"="63.7,-14.874"]
-"cisco/libsrtp" ["l"="63.405,-14.134"]
-"ireader/media-server" ["l"="63.492,-14.1"]
+"thought-machine/please" ["l"="1.14,-7.108", "c"=721]
+"datso/react-native-pjsip" ["l"="3.925,-28.041", "c"=23]
+"cisco/libsrtp" ["l"="63.405,-14.134", "c"=524]
+"ireader/media-server" ["l"="63.492,-14.1", "c"=524]
 "muggot/myphone3" ["l"="63.255,-14.636"]
 "tmakkonen/sipcmd" ["l"="63.499,-14.743"]
 "guisousanunes/sipcmd2" ["l"="63.508,-14.684"]
-"EvoluxBR/open-cnl" ["l"="-3.508,-28.739"]
+"EvoluxBR/open-cnl" ["l"="-3.508,-28.739", "c"=4]
 "sangoma/python-ESL" ["l"="63.611,-14.978"]
 "Otoru/Genesis" ["l"="63.614,-14.993"]
+"JoneXiong/DjangoX" ["l"="49.133,22.329", "c"=783]
 "telephoneorg/docker-freeswitch" ["l"="63.601,-15.125"]
+"mike-zhang/mikeBlogEssays" ["l"="4.389,-6.797", "c"=0]
+"usnistgov/jsip" ["l"="64.14,-13.933", "c"=385]
 "Digital-Daz/fusionpbx-docker" ["l"="63.709,-14.787"]
 "telephoneorg/docker-kazoo" ["l"="63.589,-15.159"]
-"libnice/libnice" ["l"="63.388,-14.152"]
-"cheungreed/gb28181-2016" ["l"="64.071,-13.098"]
-"medooze/media-server" ["l"="63.426,-14.117"]
-"versatica/libmediasoupclient" ["l"="64.435,-14.348"]
-"unitycs/GB28181Platform" ["l"="64.058,-13.106"]
-"ireader/sdk" ["l"="63.487,-14.133"]
+"cheungreed/gb28181-2016" ["l"="64.071,-13.098", "c"=375]
+"medooze/media-server" ["l"="63.426,-14.117", "c"=524]
+"versatica/libmediasoupclient" ["l"="64.435,-14.348", "c"=385]
+"unitycs/GB28181Platform" ["l"="64.058,-13.106", "c"=375]
+"ireader/sdk" ["l"="63.487,-14.133", "c"=524]
+"jookies/jasmin" ["l"="3.562,-7.223", "c"=0]
+"Azure-Samples/Cognitive-Speech-TTS" ["l"="-44.315,7.36", "c"=801]
 "redhat-nfvpe/vnf-asterisk" ["l"="63.756,-15.061"]
 "akscf/mod_openai_asr" ["l"="63.709,-14.745"]
 "jchavanton/voip_perf" ["l"="63.716,-14.892"]
@@ -2143,11 +2219,10 @@ digraph G {
 "seven1240/xui" ["l"="63.712,-14.763"]
 "ehsud/pbx-mon" ["l"="63.691,-14.758"]
 "lishulongVI/freeswitch" ["l"="63.743,-14.733"]
-"JoneXiong/DjangoX" ["l"="49.133,22.329"]
 "cwliu/sip.ios" ["l"="63.216,-14.726"]
 "2600hz/kazoo-configs-kamailio" ["l"="63.489,-14.962"]
 "so010/knockplop" ["l"="63.318,-14.963"]
-"fonoster/fonoster" ["l"="15.865,-10.32"]
+"dchapyshev/aspia" ["l"="-44.875,23.776", "c"=417]
 "hwzyyx/web" ["l"="63.759,-14.658"]
 "jiafenggit/lemon" ["l"="63.764,-14.678"]
 "ossobv/sipp-scenarios" ["l"="63.42,-14.84"]
@@ -2157,14 +2232,13 @@ digraph G {
 "TakWolf/PJSIP-Android-Compilation" ["l"="63.352,-14.597"]
 "zencodex/CSipSimple" ["l"="63.348,-14.577"]
 "prinsun/BlogDemo.SimpleSipPhone" ["l"="63.433,-14.666"]
-"datso/react-native-pjsip" ["l"="3.925,-28.041"]
 "sangoma/phpagi" ["l"="63.668,-15.148"]
 "vialer/vialer-js" ["l"="63.36,-14.862"]
 "sem32/freeswitch-PushNotificator" ["l"="63.322,-15.026"]
 "ehsud/lamb" ["l"="63.729,-14.765"]
 "garronej/chan-dongle-extended-pages" ["l"="63.469,-15.367"]
 "mscdex/sipster" ["l"="63.695,-14.937"]
-"rainliu/gosips" ["l"="65.127,-13.162"]
+"rainliu/gosips" ["l"="65.127,-13.162", "c"=586]
 "kirm/voice-server" ["l"="63.628,-14.939"]
 "cwysong85/sipjs-udp" ["l"="63.666,-14.94"]
 "fozavci/metasploit-framework-with-viproy" ["l"="63.321,-14.904"]

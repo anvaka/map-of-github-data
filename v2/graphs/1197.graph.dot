@@ -29,6 +29,11 @@ digraph G {
 "vedderb/vesc_tool" -> "RollingGecko/VescUartControl"
 "vedderb/vesc_tool" -> "mjbots/moteus" ["e"=1]
 "vedderb/vesc_tool" -> "DieBieEngineering/DieBieMS"
+"vedderb/bldc" -> "vedderb/vesc_tool" ["e"=1]
+"vedderb/bldc" -> "vedderb/bldc-tool" ["e"=1]
+"vedderb/bldc" -> "paltatech/VESC-controller" ["e"=1]
+"vedderb/bldc" -> "vedderb/vesc_bms_fw" ["e"=1]
+"vedderb/bldc" -> "shamansystems/Cheap-FOCer-2" ["e"=1]
 "kariudo/onewheel-bluetooth" -> "TomasHubelbauer/onewheel-web-bluetooth"
 "EnnoidMe/ENNOID-BMS" -> "DieBieEngineering/DieBieMS"
 "EnnoidMe/ENNOID-BMS" -> "foxBMS/foxbms-2"
@@ -49,6 +54,7 @@ digraph G {
 "foxBMS/foxbms-1" -> "EnnoidMe/ENNOID-BMS"
 "foxBMS/foxbms-1" -> "Teslafly/Dead-OpenBMS-dead"
 "foxBMS/foxbms-1" -> "DieBieEngineering/DieBieMS"
+"PX4/sapog" -> "open-bldc/open-bldc-hardware" ["e"=1]
 "RedCommissary/mppt-2420-hw" -> "RedCommissary/motor-control-board" ["e"=1]
 "RedCommissary/mppt-2420-hw" -> "RedCommissary/mppt-charger-firmware"
 "RedCommissary/mppt-2420-hw" -> "RedCommissary/stm32f334-buck-boost"
@@ -110,6 +116,7 @@ digraph G {
 "vedderb/nrf51_vesc" -> "vedderb/vesc-os-pi"
 "Zanduino/INA" -> "Zanduino/INA226"
 "Zanduino/INA" -> "jarzebski/Arduino-INA226"
+"RedCommissary/altium-library" -> "RedCommissary/mppt-2420-hw" ["e"=1]
 "TechAUmNu/A200S" -> "galpavlin/BESC"
 "TechAUmNu/A200S" -> "galpavlin/BESC-G2"
 "rpasichnyk/vesc_tool" -> "janpom/davega"
@@ -180,6 +187,8 @@ digraph G {
 "DieBieEngineering/DieBieMS-Bootloader" -> "DieBieEngineering/DieBieMS-Firmware"
 "DieBieEngineering/DieBieMS-Bootloader" -> "DieBieEngineering/DieBieMS-Tool"
 "Nanoux/Onewave" -> "ponewheel/android-ponewheel"
+"EFeru/hoverboard-firmware-hack-FOC" -> "shamansystems/Cheap-FOCer-2" ["e"=1]
+"MyEMS/myems" -> "foxBMS/foxbms-2" ["e"=1]
 "Teslafly/Dead-OpenBMS-dead" -> "rickygu/openBMS"
 "Teslafly/Dead-OpenBMS-dead" -> "DieBieEngineering/DieBieMS"
 "Teslafly/Dead-OpenBMS-dead" -> "nseidle/BMS"
@@ -215,6 +224,12 @@ digraph G {
 "stuartpittaway/diyBMSv4Code" -> "stuartpittaway/diyBMSv4"
 "stuartpittaway/diyBMSv4Code" -> "stuartpittaway/diyBMSv4Leaf"
 "stuartpittaway/diyBMSv4Code" -> "chickey/diyBMS"
+"vedderb/bldc-hardware" -> "vedderb/bldc-tool" ["e"=1]
+"vedderb/bldc-hardware" -> "vedderb/vesc_tool" ["e"=1]
+"vedderb/bldc-hardware" -> "paltatech/VESC-controller" ["e"=1]
+"vedderb/bldc-hardware" -> "shamansystems/Cheap-FOCer-2" ["e"=1]
+"vedderb/bldc-hardware" -> "vedderb/vesc_bms_fw" ["e"=1]
+"bluerobotics/BlueESC" -> "open-bldc/open-bldc-hardware" ["e"=1]
 "ckflight/ESC_BLDC_HARDWARE" -> "fishpepper/tinyFISH"
 "MTrab/landroid_cloud" -> "Barma-lej/landroid-card"
 "MTrab/landroid_cloud" -> "Barma-lej/halandroid"
@@ -259,6 +274,7 @@ digraph G {
 "rickygu/openBMS" -> "spmp/Low-Cost-BMS-STM32"
 "transistorgrab/OSSI" -> "MartinStokroos/openMicroInverter"
 "surfdado/bldc" -> "Mitchlol/balance_buddy"
+"CryptoBlades/cryptoblades" -> "taylorotwell/next-example-frontend" ["e"=1]
 "stuartpittaway/diyBMSv4ESP32" -> "stuartpittaway/diyBMSv4Code"
 "stuartpittaway/diyBMSv4ESP32" -> "stuartpittaway/diyBMS-CurrentShunt"
 "stuartpittaway/diyBMSv4ESP32" -> "stuartpittaway/diyBMSv4"
@@ -287,6 +303,7 @@ digraph G {
 "AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE" -> "aplavins/Arduino-MPPT"
 "AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE" -> "deba168/MPPT_Master"
 "AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE" -> "RedCommissary/mppt-2420-hw"
+"adamb314/ServoProject" -> "ClemensElflein/xESC" ["e"=1]
 "aplavins/Arduino-MPPT" -> "deba168/MPPT_Master"
 "aplavins/Arduino-MPPT" -> "TheDIYGuy999/MPPT_Buck_Converter_ACS712"
 "aplavins/Arduino-MPPT" -> "LibreSolar/mppt-2420-lc"
@@ -321,6 +338,7 @@ digraph G {
 "Green-bms/SmartBMS" -> "DieBieEngineering/DieBieMS"
 "Green-bms/SmartBMS" -> "spmp/Low-Cost-BMS-STM32"
 "Green-bms/SmartBMS" -> "foxBMS/foxbms-1"
+"Koxx3/SmartESC_STM32_v2" -> "thankthemaker/rESCue" ["e"=1]
 "taylorotwell/next-example-frontend" -> "taylorotwell/next-example-backend"
 "taylorotwell/next-example-frontend" -> "themsaid/ergodnc-nextjs"
 "taylorotwell/next-example-frontend" -> "themsaid/ergodnc"
@@ -355,6 +373,8 @@ digraph G {
 "vedderb/vesc_bms_bootloader" -> "vedderb/vesc_braking_resistor"
 "majbthrd/pic16f1454-bootloader" -> "majbthrd/PIC16F1-USB-DFU-Bootloader"
 "majbthrd/pic16f1454-bootloader" -> "74hc595/PIC16F1-USB-Bootloader"
+"ClemensElflein/OpenMower" -> "ClemensElflein/open_mower_ros" ["e"=1]
+"ClemensElflein/OpenMower" -> "ClemensElflein/xESC" ["e"=1]
 "lolwheel/Owie" -> "OnewheelCommunityEdition/OWCE_App"
 "lolwheel/Owie" -> "rewheel-app/rewheel"
 "lolwheel/Owie" -> "radimklaska/onewheel"
@@ -427,6 +447,8 @@ digraph G {
 "ClemensElflein/open_mower_ros" -> "jkaflik/OpenMowerNext"
 "cloudn1ne/Mowgli" -> "cloudn1ne/MowgliRover"
 "cloudn1ne/Mowgli" -> "cedbossneo/Mowgli"
+"pekkaroi/bldc-drive" -> "open-bldc/open-bldc-hardware" ["e"=1]
+"pekkaroi/bldc-drive" -> "esden/open-bldc" ["e"=1]
 "jaromir-sukuba/a-p-prog" -> "battlecoder/zeppp"
 "jaromir-sukuba/a-p-prog" -> "majbthrd/PIC16F1-USB-DFU-Bootloader"
 "jaromir-sukuba/a-p-prog" -> "stechiez/a-p-prog"
@@ -435,6 +457,8 @@ digraph G {
 "LibreSolar/bms-c1" -> "LibreSolar/bms-firmware"
 "LibreSolar/bms-c1" -> "foxBMS/foxbms-2"
 "LibreSolar/bms-c1" -> "EnnoidMe/ENNOID-BMS"
+"fishpepper/OpenSky" -> "fishpepper/tinyFISH" ["e"=1]
+"fishpepper/OpenSky" -> "fishpepper/tinyPEPPER" ["e"=1]
 "vedderb/vesc-os-pi" -> "vedderb/vesc_braking_resistor"
 "vedderb/vesc-os-pi" -> "vedderb/display_tool"
 "vedderb/nunchuk_rf_hw" -> "vedderb/nunchuk_mod"
@@ -475,6 +499,8 @@ digraph G {
 "DieBieEngineering/DieBieMS" -> "foxBMS/foxbms-1"
 "DieBieEngineering/DieBieMS" -> "janpom/davega"
 "DieBieEngineering/DieBieMS" -> "TechAUmNu/A200S"
+"Twisted-Fields/rp2040-motor-controller" -> "ClemensElflein/xESC" ["e"=1]
+"Twisted-Fields/rp2040-motor-controller" -> "paltatech/VESC-controller" ["e"=1]
 "Barma-lej/landroid-card" -> "MTrab/landroid_cloud"
 "Barma-lej/landroid-card" -> "Barma-lej/halandroid"
 "raphaelchang/infinity-hardware" -> "raphaelchang/infinity-firmware"
@@ -483,11 +509,13 @@ digraph G {
 "vedderb/vesc_pkg" -> "vedderb/vesc_express"
 "raphaelchang/battman-hardware" -> "raphaelchang/battman-firmware"
 "raphaelchang/infinity-firmware" -> "raphaelchang/infinity-hardware"
+"dalathegreat/Battery-Emulator" -> "stuartpittaway/diyBMSv4" ["e"=1]
 "LibreSolar/charge-controller-firmware" -> "LibreSolar/mppt-2420-lc"
 "LibreSolar/charge-controller-firmware" -> "LibreSolar/mppt-2420-hc"
 "LibreSolar/charge-controller-firmware" -> "LibreSolar/mppt-1210-hus"
 "LibreSolar/charge-controller-firmware" -> "LibreSolar/bms-firmware"
 "LibreSolar/charge-controller-firmware" -> "LibreSolar/bms-5s50-sc"
+"creapunk/CLN-ClosedLoopNemaDriver" -> "Green-bms/SmartBMS" ["e"=1]
 "LibreSolar/mppt-2420-lc" -> "LibreSolar/charge-controller-firmware"
 "LibreSolar/mppt-2420-lc" -> "LibreSolar/mppt-1210-hus"
 "LibreSolar/mppt-2420-lc" -> "LibreSolar/mppt-2420-hc"
@@ -504,6 +532,7 @@ digraph G {
 "LibreSolar/mppt-2420-lc" -> "opensolarproject/OSPController"
 "LibreSolar/mppt-2420-lc" -> "junglejim8/opensolar"
 "msglazer/Anti-Spark_Switch" -> "vedderb/SparkSwitch"
+"GUAIK-ORG/CawFOC" -> "fake-rick/caw-drive" ["e"=1]
 "cedbossneo/openmower-gui" -> "cloudn1ne/MowgliRover"
 "cedbossneo/openmower-gui" -> "vermut/ha_openmower"
 "davidmpye/V10_Dyson_BMS" -> "tinfever/FW-Dyson-BMS"
@@ -539,6 +568,7 @@ digraph G {
 "LibreSolar/bms-firmware" -> "foxBMS/foxbms-2"
 "LibreSolar/bms-firmware" -> "nseidle/BMS"
 "LibreSolar/bms-firmware" -> "EnnoidMe/ENNOID-BMS"
+"boblemaire/IoTaWatt" -> "stuartpittaway/diyBMSv4" ["e"=1]
 "Malvineous/makita-xgt-serial" -> "twaymouth/XGT-Tester"
 "fake-rick/caw-bms" -> "fake-rick/caw-foc"
 "fake-rick/caw-bms" -> "fake-rick/caw-drive"
@@ -600,16 +630,16 @@ digraph G {
 "stuartpittaway/diyBMS-CurrentShunt" ["l"="-21.132,-43.491"]
 "nseidle/BMS" ["l"="-21.067,-43.537"]
 "rickygu/openBMS" ["l"="-21.048,-43.534"]
-"Louisvdw/dbus-serialbattery" ["l"="-12.625,19.219"]
-"victronenergy/venus" ["l"="-12.643,19.268"]
+"Louisvdw/dbus-serialbattery" ["l"="-12.625,19.219", "c"=1678]
+"victronenergy/venus" ["l"="-12.643,19.268", "c"=1678]
 "AngeloCasi/FUGU-ARDUINO-MPPT-FIRMWARE" ["l"="-21.14,-43.444"]
 "vedderb/vesc_tool" ["l"="-21,-43.59"]
-"vedderb/bldc" ["l"="-20.298,-43.767"]
-"vedderb/bldc-hardware" ["l"="-20.259,-43.765"]
+"vedderb/bldc" ["l"="-20.298,-43.767", "c"=624]
+"vedderb/bldc-hardware" ["l"="-20.259,-43.765", "c"=624]
 "vedderb/vesc_bms_fw" ["l"="-21.028,-43.562"]
 "vedderb/bldc-tool" ["l"="-20.96,-43.582"]
 "paltatech/VESC-controller" ["l"="-21.023,-43.599"]
-"odriverobotics/ODrive" ["l"="-20.276,-43.749"]
+"odriverobotics/ODrive" ["l"="-20.276,-43.749", "c"=624]
 "SolidGeek/VescUart" ["l"="-20.963,-43.613"]
 "shamansystems/Cheap-FOCer-2" ["l"="-21.02,-43.629"]
 "thankthemaker/rESCue" ["l"="-20.948,-43.594"]
@@ -617,7 +647,7 @@ digraph G {
 "vedderb/nrf52_vesc" ["l"="-20.99,-43.574"]
 "vedderb/bldc-bootloader" ["l"="-20.974,-43.574"]
 "RollingGecko/VescUartControl" ["l"="-20.982,-43.603"]
-"mjbots/moteus" ["l"="-20.232,-43.735"]
+"mjbots/moteus" ["l"="-20.232,-43.735", "c"=624]
 "kariudo/onewheel-bluetooth" ["l"="-20.779,-43.64"]
 "TomasHubelbauer/onewheel-web-bluetooth" ["l"="-20.77,-43.629"]
 "EnnoidMe/ENNOID-BMS-Tool" ["l"="-21.095,-43.576"]
@@ -627,8 +657,10 @@ digraph G {
 "LibreSolar/bms-c1" ["l"="-21.096,-43.535"]
 "EnnoidMe/ENNOID-BMS-Firmware" ["l"="-21.106,-43.569"]
 "spmp/Low-Cost-BMS-STM32" ["l"="-21.081,-43.538"]
+"PX4/sapog" ["l"="59.428,14.026", "c"=799]
+"open-bldc/open-bldc-hardware" ["l"="-20.894,-43.582"]
 "RedCommissary/mppt-2420-hw" ["l"="-21.126,-43.403"]
-"RedCommissary/motor-control-board" ["l"="-17.468,-42.863"]
+"RedCommissary/motor-control-board" ["l"="-17.468,-42.863", "c"=55]
 "RedCommissary/mppt-charger-firmware" ["l"="-21.145,-43.377"]
 "RedCommissary/stm32f334-buck-boost" ["l"="-21.115,-43.379"]
 "LibreSolar/mppt-2420-lc" ["l"="-21.109,-43.433"]
@@ -650,7 +682,6 @@ digraph G {
 "scttnlsn/bms" ["l"="-21.13,-43.542"]
 "vedderb/bldc-logger" ["l"="-20.939,-43.562"]
 "vedderb/rise_sdvp" ["l"="-20.956,-43.561"]
-"open-bldc/open-bldc-hardware" ["l"="-20.894,-43.582"]
 "esden/open-bldc" ["l"="-20.898,-43.567"]
 "vedderb/CapPCB" ["l"="-20.946,-43.573"]
 "open-bldc/obldc2-firmware" ["l"="-20.911,-43.576"]
@@ -663,6 +694,7 @@ digraph G {
 "Zanduino/INA" ["l"="-21.211,-43.436"]
 "Zanduino/INA226" ["l"="-21.235,-43.423"]
 "jarzebski/Arduino-INA226" ["l"="-21.247,-43.438"]
+"RedCommissary/altium-library" ["l"="-17.485,-42.852", "c"=55]
 "TechAUmNu/A200S" ["l"="-21.042,-43.591"]
 "galpavlin/BESC" ["l"="-21.047,-43.61"]
 "rpasichnyk/vesc_tool" ["l"="-21.006,-43.657"]
@@ -706,6 +738,8 @@ digraph G {
 "charclo/roxie-firmware" ["l"="-20.982,-43.653"]
 "SimonRafferty/VESC_ESP32_Display" ["l"="-20.962,-43.668"]
 "drewbaumann/onewheel-web" ["l"="-20.755,-43.625"]
+"EFeru/hoverboard-firmware-hack-FOC" ["l"="-20.366,-43.753", "c"=624]
+"MyEMS/myems" ["l"="-11.998,18.717", "c"=800]
 "collin80/TeslaBMS" ["l"="-21.057,-43.501"]
 "kanocarra/smart-battery-management-system" ["l"="-21.02,-43.519"]
 "LibreSolar/bms-15s80-sc" ["l"="-21.075,-43.496"]
@@ -713,11 +747,12 @@ digraph G {
 "MuellerDominik/theBMS" ["l"="-21.038,-43.493"]
 "Michael-DeSando/BMS" ["l"="-21.017,-43.504"]
 "ClemensElflein/xESC" ["l"="-21.03,-43.679"]
-"tinymovr/Tinymovr" ["l"="-20.216,-43.702"]
+"tinymovr/Tinymovr" ["l"="-20.216,-43.702", "c"=624]
 "nordstream3/FOC" ["l"="-21.03,-43.661"]
-"jaxxzer/open-esc-firmware" ["l"="58.837,13.902"]
-"EFeru/bldc-motor-control-FOC" ["l"="-20.311,-43.72"]
+"jaxxzer/open-esc-firmware" ["l"="58.837,13.902", "c"=264]
+"EFeru/bldc-motor-control-FOC" ["l"="-20.311,-43.72", "c"=624]
 "stuartpittaway/diyBMSv4Leaf" ["l"="-21.159,-43.489"]
+"bluerobotics/BlueESC" ["l"="58.779,13.907", "c"=264]
 "ckflight/ESC_BLDC_HARDWARE" ["l"="-20.99,-43.715"]
 "fishpepper/tinyFISH" ["l"="-20.962,-43.74"]
 "MTrab/pyworxcloud" ["l"="-21.048,-43.931"]
@@ -731,20 +766,23 @@ digraph G {
 "vamoirid/Battery-Management-System-STM32-Software" ["l"="-21.129,-43.607"]
 "vedderb/udp-uart-bridge" ["l"="-20.919,-43.562"]
 "Greg-Fordyce/evBMS" ["l"="-21.017,-43.532"]
-"collin80/GEVCU" ["l"="-14.347,-24.266"]
+"collin80/GEVCU" ["l"="-14.347,-24.266", "c"=236]
 "transistorgrab/OSSI" ["l"="-21.031,-43.381"]
 "MartinStokroos/openMicroInverter" ["l"="-21.075,-43.414"]
 "Mitchlol/balance_buddy" ["l"="-20.898,-43.604"]
+"CryptoBlades/cryptoblades" ["l"="-46.656,-32.122", "c"=41]
+"taylorotwell/next-example-frontend" ["l"="-21.299,-43.319"]
 "fake-rick/caw-bms" ["l"="-21.152,-43.559"]
 "jharvey/Charge_Controller" ["l"="-21.169,-43.452"]
 "fl4p/fugu-mppt-firmware" ["l"="-21.174,-43.439"]
 "cryptosri/SriStrategy1.0" ["l"="-21.215,-43.389"]
-"gluesql/gluesql" ["l"="-10.17,-6.372"]
+"gluesql/gluesql" ["l"="-10.17,-6.372", "c"=5]
+"adamb314/ServoProject" ["l"="41.748,5.983", "c"=3623]
 "elektra42/freifunk-open-mppt" ["l"="-21.109,-43.404"]
-"creapunk/CLN-ClosedLoopNemaDriver" ["l"="-20.232,-43.784"]
-"yuanzhongqiao/sagemaker-defect-detection" ["l"="41.725,5.917"]
-"54zorb/Zorb-Framework" ["l"="-17.676,-42.977"]
-"taylorotwell/next-example-frontend" ["l"="-21.299,-43.319"]
+"creapunk/CLN-ClosedLoopNemaDriver" ["l"="-20.232,-43.784", "c"=624]
+"yuanzhongqiao/sagemaker-defect-detection" ["l"="41.725,5.917", "c"=3623]
+"54zorb/Zorb-Framework" ["l"="-17.676,-42.977", "c"=55]
+"Koxx3/SmartESC_STM32_v2" ["l"="-19.839,-43.806", "c"=624]
 "taylorotwell/next-example-backend" ["l"="-21.32,-43.3"]
 "themsaid/ergodnc-nextjs" ["l"="-21.276,-43.325"]
 "themsaid/ergodnc" ["l"="-21.272,-43.342"]
@@ -757,6 +795,8 @@ digraph G {
 "mark99i/vesc-display-install" ["l"="-20.955,-43.687"]
 "vedderb/nunchuk_mod" ["l"="-20.861,-43.553"]
 "vedderb/nunchuk_rf_hw" ["l"="-20.879,-43.561"]
+"ClemensElflein/OpenMower" ["l"="-15.575,-41.324", "c"=210]
+"ClemensElflein/open_mower_ros" ["l"="-21.042,-43.74"]
 "contactsimonwilson/floatwheel" ["l"="-20.82,-43.639"]
 "tinfever/FW-Dyson-BMS" ["l"="-21.17,-43.587"]
 "davidmpye/V10_Dyson_BMS" ["l"="-21.196,-43.598"]
@@ -768,27 +808,28 @@ digraph G {
 "vedderb/SparkSwitch" ["l"="-20.923,-43.589"]
 "msglazer/Anti-Spark_Switch" ["l"="-20.926,-43.603"]
 "ClemensElflein/xESC2040" ["l"="-21.06,-43.685"]
-"ClemensElflein/open_mower_ros" ["l"="-21.042,-43.74"]
 "ClemensElflein/xesc_firmware" ["l"="-21.011,-43.693"]
 "ClemensElflein/xesc_ros" ["l"="-21.028,-43.698"]
-"Twisted-Fields/rp2040-motor-controller" ["l"="-20.195,-43.734"]
+"Twisted-Fields/rp2040-motor-controller" ["l"="-20.195,-43.734", "c"=624]
 "maakbaas/mbldc" ["l"="-21.057,-43.702"]
 "ClemensElflein/OpenMowerOS" ["l"="-21.035,-43.714"]
-"ClemensElflein/OpenMower" ["l"="-15.575,-41.324"]
 "ClemensElflein/slic3r_coverage_planner" ["l"="-21.079,-43.758"]
 "ClemensElflein/ftc_local_planner" ["l"="-21.099,-43.768"]
 "cedbossneo/openmower-gui" ["l"="-21.024,-43.76"]
 "ClemensElflein/OpenMowerApp" ["l"="-21.069,-43.742"]
 "cloudn1ne/Mowgli" ["l"="-21.052,-43.772"]
-"Fields2Cover/Fields2Cover" ["l"="61.709,13.648"]
+"Fields2Cover/Fields2Cover" ["l"="61.709,13.648", "c"=313]
 "vermut/ha_openmower" ["l"="-21.018,-43.749"]
-"ArghyaChatterjee/gps-waypoint-based-autonomous-navigation-in-ros" ["l"="61.557,13.707"]
-"nobleo/full_coverage_path_planner" ["l"="61.678,13.602"]
-"Greenzie/boustrophedon_planner" ["l"="61.707,13.613"]
+"ArghyaChatterjee/gps-waypoint-based-autonomous-navigation-in-ros" ["l"="61.557,13.707", "c"=313]
+"nobleo/full_coverage_path_planner" ["l"="61.678,13.602", "c"=313]
+"Greenzie/boustrophedon_planner" ["l"="61.707,13.613", "c"=313]
 "cloudn1ne/MowgliRover" ["l"="-21.041,-43.762"]
 "jkaflik/OpenMowerNext" ["l"="-21.058,-43.756"]
 "cedbossneo/Mowgli" ["l"="-21.067,-43.791"]
+"pekkaroi/bldc-drive" ["l"="-20.151,-43.768", "c"=624]
 "vedderb/QuadcopterSystem" ["l"="-20.898,-43.542"]
+"fishpepper/OpenSky" ["l"="58.745,13.857", "c"=264]
+"fishpepper/tinyPEPPER" ["l"="-20.939,-43.76"]
 "themsaid/ergodnc-nuxtjs" ["l"="-21.258,-43.325"]
 "themsaid/ergodnc-remix" ["l"="-21.296,-43.352"]
 "raphaelchang/battman-hardware" ["l"="-20.982,-43.52"]
@@ -796,21 +837,22 @@ digraph G {
 "raphaelchang/infinity-firmware" ["l"="-20.925,-43.483"]
 "LibreSolar/bms-5s50-sc" ["l"="-21.081,-43.469"]
 "raphaelchang/battman-firmware" ["l"="-20.953,-43.501"]
+"dalathegreat/Battery-Emulator" ["l"="-12.94,18.717", "c"=2958]
 "LibreSolar/pwm-2420-lus" ["l"="-21.077,-43.427"]
 "junglejim8/opensolar" ["l"="-21.095,-43.415"]
+"GUAIK-ORG/CawFOC" ["l"="-20.341,-43.662", "c"=624]
+"fake-rick/caw-drive" ["l"="-21.197,-43.553"]
 "cedbossneo/mowgli-docker" ["l"="-21.077,-43.802"]
 "paltatech/half-bridge" ["l"="-21.047,-43.622"]
-"bluerobotics/BlueESC" ["l"="58.779,13.907"]
 "Malvineous/makita-xgt-serial" ["l"="-21.247,-43.645"]
 "rosvall/makita-lxt-protocol" ["l"="-21.231,-43.648"]
 "twaymouth/XGT-Tester" ["l"="-21.245,-43.635"]
 "mnh-jansson/78k0-flash-utility" ["l"="-21.217,-43.652"]
+"boblemaire/IoTaWatt" ["l"="-15.49,-41.064", "c"=210]
 "fake-rick/caw-foc" ["l"="-21.186,-43.562"]
-"fake-rick/caw-drive" ["l"="-21.197,-43.553"]
-"fishpepper/tinyPEPPER" ["l"="-20.939,-43.76"]
 "aTaylor60/ESC_Frame" ["l"="-20.923,-43.773"]
 "Tom-evnut/TeslaBMS" ["l"="-21.037,-43.475"]
-"Tom-evnut/TeslaBMSV2" ["l"="-13.019,18.693"]
+"Tom-evnut/TeslaBMSV2" ["l"="-13.019,18.693", "c"=2958]
 "FabioBatSilva/TinyWheel" ["l"="-20.75,-43.612"]
 "OnlyInAmerica/OneWheelMonitor" ["l"="-20.758,-43.602"]
 "SDI-SoftwareDefinedInverter/TAPAS" ["l"="-21.008,-43.358"]

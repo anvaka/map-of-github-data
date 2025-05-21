@@ -1,4 +1,8 @@
 digraph G {
+"isec-tugraz/ZombieLoad" -> "jovanbulck/sgx-step" ["e"=1]
+"vusec/ridl" -> "jovanbulck/sgx-step" ["e"=1]
+"ARM-software/arm-trusted-firmware" -> "OP-TEE/optee_os" ["e"=1]
+"ARM-software/arm-trusted-firmware" -> "OP-TEE/optee_client" ["e"=1]
 "jovanbulck/sgx-step" -> "vschiavoni/sgx-papers"
 "jovanbulck/sgx-step" -> "lsds/spectre-attack-sgx"
 "jovanbulck/sgx-step" -> "ayeks/SGX-hardware"
@@ -14,6 +18,7 @@ digraph G {
 "jovanbulck/sgx-step" -> "apache/incubator-teaclave-sgx-sdk"
 "jovanbulck/sgx-step" -> "Maxul/Awesome-SGX-Open-Source"
 "jovanbulck/sgx-step" -> "KitMurdock/plundervolt"
+"isec-tugraz/meltdown" -> "jovanbulck/sgx-step" ["e"=1]
 "ftramer/slalom" -> "goten-team/Goten"
 "ftramer/slalom" -> "ziqi-zhang/TEESlice-artifact"
 "ftramer/slalom" -> "snwagh/securenn-public" ["e"=1]
@@ -40,6 +45,7 @@ digraph G {
 "google/asylo" -> "inclavare-containers/inclavare-containers"
 "google/asylo" -> "keystone-enclave/keystone"
 "google/asylo" -> "Maxul/Awesome-SGX-Open-Source"
+"siemens/jailhouse" -> "OP-TEE/optee_os" ["e"=1]
 "project-oak/oak" -> "google/asylo"
 "project-oak/oak" -> "jovanbulck/sgx-step"
 "project-oak/oak" -> "NVIDIA/nvtrust"
@@ -70,6 +76,13 @@ digraph G {
 "microsoft/CCF" -> "ayeks/SGX-hardware"
 "microsoft/CCF" -> "intel/linux-sgx"
 "microsoft/CCF" -> "Jim8y/awesome-sgx"
+"intel/Intel-Linux-Processor-Microcode-Data-Files" -> "intel/linux-sgx" ["e"=1]
+"intel/Intel-Linux-Processor-Microcode-Data-Files" -> "intel/linux-sgx-driver" ["e"=1]
+"intel/Intel-Linux-Processor-Microcode-Data-Files" -> "ayeks/SGX-hardware" ["e"=1]
+"misc0110/PTEditor" -> "jovanbulck/sgx-step" ["e"=1]
+"microsoft/0xDeCA10B" -> "microsoft/CCF" ["e"=1]
+"paboldin/meltdown-exploit" -> "jovanbulck/sgx-step" ["e"=1]
+"paboldin/meltdown-exploit" -> "lsds/spectre-attack-sgx" ["e"=1]
 "keystone-enclave/keystone" -> "Penglai-Enclave/Penglai-Enclave-sPMP"
 "keystone-enclave/keystone" -> "intel/linux-sgx-driver"
 "keystone-enclave/keystone" -> "jovanbulck/sgx-step"
@@ -115,6 +128,8 @@ digraph G {
 "Maxul/Awesome-SGX-Open-Source" -> "jovanbulck/sgx-step"
 "Maxul/Awesome-SGX-Open-Source" -> "NVIDIA/nvtrust"
 "Maxul/Awesome-SGX-Open-Source" -> "intel/SGXDataCenterAttestationPrimitives"
+"microsoft/eEVM" -> "microsoft/CCF" ["e"=1]
+"riscv-software-src/opensbi" -> "keystone-enclave/keystone" ["e"=1]
 "openenclave/openenclave" -> "intel/linux-sgx"
 "openenclave/openenclave" -> "occlum/occlum"
 "openenclave/openenclave" -> "apache/incubator-teaclave-sgx-sdk"
@@ -130,6 +145,11 @@ digraph G {
 "openenclave/openenclave" -> "Maxul/Awesome-SGX-Open-Source"
 "openenclave/openenclave" -> "apache/incubator-teaclave"
 "openenclave/openenclave" -> "intel/linux-sgx-driver"
+"intel/cryptography-primitives" -> "intel/tdx" ["e"=1]
+"intel/cryptography-primitives" -> "intel/intel-sgx-ssl" ["e"=1]
+"intel/cryptography-primitives" -> "intel/SGXDataCenterAttestationPrimitives" ["e"=1]
+"intel/cryptography-primitives" -> "intel/linux-sgx" ["e"=1]
+"intel/cryptography-primitives" -> "intel/seam-loader" ["e"=1]
 "Azure-Samples/blockchain" -> "Azure-Samples/blockchain-devkit"
 "Azure-Samples/blockchain" -> "Azure/azure-blockchain-projects" ["e"=1]
 "Azure-Samples/blockchain" -> "bellaj/Blockchain" ["e"=1]
@@ -191,6 +211,15 @@ digraph G {
 "gramineproject/graphene" -> "inclavare-containers/inclavare-containers"
 "gramineproject/graphene" -> "fortanix/rust-sgx"
 "gramineproject/graphene" -> "jovanbulck/sgx-step"
+"hyperledger-archives/avalon" -> "tozd/docker-sgx" ["e"=1]
+"google/go-tpm-tools" -> "google/go-sev-guest" ["e"=1]
+"google/go-tpm-tools" -> "google/go-tdx-guest" ["e"=1]
+"google/go-tpm-tools" -> "AMDESE/sev-guest" ["e"=1]
+"google/go-tpm-tools" -> "microsoft/archived-confidential-sidecar-containers" ["e"=1]
+"sec-deadlines/sec-deadlines.github.io" -> "vschiavoni/sgx-papers" ["e"=1]
+"sec-deadlines/sec-deadlines.github.io" -> "jovanbulck/sgx-step" ["e"=1]
+"mesalock-linux/mesalink" -> "mesalock-linux/mesalock-distro" ["e"=1]
+"mesalock-linux/mesalink" -> "apache/incubator-teaclave-sgx-sdk" ["e"=1]
 "lsds/sgx-lkl" -> "vschiavoni/sgx-papers"
 "lsds/sgx-lkl" -> "intel/SGXDataCenterAttestationPrimitives"
 "lsds/sgx-lkl" -> "gramineproject/graphene"
@@ -225,6 +254,8 @@ digraph G {
 "intel/sgx-ra-sample" -> "fortanix/rust-sgx"
 "intel/sgx-ra-sample" -> "sangfansh/SGX101_sample_code"
 "intel/sgx-ra-sample" -> "dingelish/SGXfail"
+"Eugnis/spectre-attack" -> "lsds/spectre-attack-sgx" ["e"=1]
+"Eugnis/spectre-attack" -> "jovanbulck/sgx-step" ["e"=1]
 "landoxy/intel-sgx-deep-learning" -> "intel/sgx-pytorch"
 "intel/sgx-software-enable" -> "intel/linux-sgx-driver"
 "apache/incubator-teaclave" -> "apache/incubator-teaclave-sgx-sdk"
@@ -301,6 +332,7 @@ digraph G {
 "apache/incubator-teaclave-trustzone-sdk" -> "occlum/occlum"
 "GJDuck/LowFat" -> "GJDuck/EffectiveSan"
 "GJDuck/LowFat" -> "tudinfse/sgxbounds"
+"bbbrumley/portsmash" -> "jovanbulck/sgx-step" ["e"=1]
 "signalapp/ContactDiscoveryService" -> "signalapp/SecureValueRecovery"
 "signalapp/ContactDiscoveryService" -> "signalapp/storage-service" ["e"=1]
 "signalapp/ContactDiscoveryService" -> "signalapp/ContactDiscoveryService-Icelake"
@@ -320,6 +352,7 @@ digraph G {
 "OP-TEE/optee_client" -> "OP-TEE/optee_os"
 "OP-TEE/optee_client" -> "OP-TEE/manifest"
 "OP-TEE/optee_client" -> "OP-TEE/optee_docs"
+"crozone/SpectrePoC" -> "lsds/spectre-attack-sgx" ["e"=1]
 "mesalock-linux/mesabox" -> "mesalock-linux/packages"
 "mesalock-linux/packages" -> "mesalock-linux/minit"
 "intel/kvm-sgx" -> "intel/qemu-sgx"
@@ -362,6 +395,8 @@ digraph G {
 "keystone-enclave/keystone-sdk" -> "keystone-enclave/linux-keystone-driver"
 "keystone-enclave/keystone-sdk" -> "keystone-enclave/keystone-runtime"
 "keystone-enclave/keystone-sdk" -> "keystone-enclave/riscv-pk"
+"lingxu-wxw/SE_Notes" -> "ServerlessBench/ServerlessBench" ["e"=1]
+"google/go-tpm" -> "google/go-sev-guest" ["e"=1]
 "enarx/enarx" -> "openenclave/openenclave"
 "enarx/enarx" -> "occlum/occlum"
 "enarx/enarx" -> "gramineproject/gramine"
@@ -394,6 +429,7 @@ digraph G {
 "OP-TEE/optee_os" -> "siemens/jailhouse" ["e"=1]
 "OP-TEE/optee_os" -> "keystone-enclave/keystone"
 "OP-TEE/optee_os" -> "apache/incubator-teaclave-sgx-sdk"
+"seL4/seL4" -> "OP-TEE/optee_os" ["e"=1]
 "mc2-project/federated-xgboost" -> "Raymw/Federated-XGBoost"
 "mc2-project/federated-xgboost" -> "mc2-project/secure-xgboost"
 "mc2-project/federated-xgboost" -> "QinbinLi/DPBoost"
@@ -409,16 +445,20 @@ digraph G {
 "edgelesssys/marblerun" -> "gramineproject/gramine"
 "edgelesssys/marblerun" -> "edgelesssys/contrast"
 "QinbinLi/DPBoost" -> "loretanr/dp-gbdt"
+"containers/libkrun" -> "coconut-svsm/svsm" ["e"=1]
+"dragonflyoss/nydus" -> "inclavare-containers/inclavare-containers" ["e"=1]
 "mc2-project/secure-xgboost" -> "mc2-project/federated-xgboost"
 "mc2-project/secure-xgboost" -> "awslabs/privacy-preserving-xgboost-inference"
 "signalapp/SecureValueRecovery" -> "signalapp/ContactDiscoveryService"
 "signalapp/SecureValueRecovery" -> "signalapp/libmobilecoin-ios-artifacts" ["e"=1]
+"signalapp/ringrtc" -> "signalapp/SecureValueRecovery" ["e"=1]
 "Penglai-Enclave/Penglai-Enclave-sPMP" -> "Penglai-Enclave/Penglai-Enclave-TVM"
 "Penglai-Enclave/Penglai-Enclave-sPMP" -> "Penglai-Enclave/Penglai-Enclave"
 "Penglai-Enclave/Penglai-Enclave-sPMP" -> "riscvarchive/riscv-tee"
 "Penglai-Enclave/Penglai-Enclave-sPMP" -> "keystone-enclave/keystone"
 "Penglai-Enclave/Penglai-Enclave-sPMP" -> "ServerlessBench/ServerlessBench"
 "Penglai-Enclave/Penglai-Enclave-sPMP" -> "rivosinc/salus" ["e"=1]
+"google/rowhammer-test" -> "jovanbulck/sgx-step" ["e"=1]
 "KitMurdock/plundervolt" -> "jovanbulck/sgx-step"
 "inclavare-containers/inclavare-containers" -> "occlum/occlum"
 "inclavare-containers/inclavare-containers" -> "intel/SGXDataCenterAttestationPrimitives"
@@ -435,6 +475,8 @@ digraph G {
 "inclavare-containers/inclavare-containers" -> "Jim8y/awesome-sgx"
 "inclavare-containers/inclavare-containers" -> "HyperEnclave/hyperenclave"
 "inclavare-containers/inclavare-containers" -> "dingelish/SGXfail"
+"rcore-os/zCore" -> "occlum/occlum" ["e"=1]
+"intel/he-transformer" -> "goten-team/Goten" ["e"=1]
 "mc2-project/mc2" -> "mc2-project/opaque-sql"
 "mc2-project/mc2" -> "mc2-project/secure-xgboost"
 "mc2-project/mc2" -> "mc2-project/delphi" ["e"=1]
@@ -449,6 +491,7 @@ digraph G {
 "intel/tdx" -> "intel/tdx-module"
 "intel/tdx" -> "intel/seam-loader"
 "intel/tdx" -> "confidential-containers/td-shim"
+"google/safeside" -> "jovanbulck/sgx-step" ["e"=1]
 "Raymw/Federated-XGBoost" -> "mc2-project/federated-xgboost"
 "Raymw/Federated-XGBoost" -> "HikariX/MP-FedXGB"
 "OP-TEE/optee_linuxdriver" -> "OP-TEE/optee_client"
@@ -456,6 +499,7 @@ digraph G {
 "OP-TEE/optee_linuxdriver" -> "OP-TEE/build"
 "OP-TEE/optee_linuxdriver" -> "OP-TEE/manifest"
 "ServerlessBench/ServerlessBench" -> "tx19980520/new-tech-stack" ["e"=1]
+"Brandawg93/homebridge-nest-cam" -> "lsds/sgx-lkl" ["e"=1]
 "AMDESE/linux" -> "AMDESE/qemu"
 "goten-team/Goten" -> "hku-systems/SOTER"
 "goten-team/Goten" -> "ziqi-zhang/TEESlice-artifact"
@@ -474,12 +518,14 @@ digraph G {
 "sslab-gatech/opensgx" -> "jovanbulck/sgx-tutorial-space18"
 "sslab-gatech/opensgx" -> "intel/intel-sgx-ssl"
 "sslab-gatech/opensgx" -> "tristartom/sgx-emulator"
+"littlekernel/lk" -> "OP-TEE/optee_os" ["e"=1]
 "deislabs/mystikos" -> "edgelesssys/edgelessrt"
 "deislabs/mystikos" -> "intel/kvm-sgx"
 "deislabs/mystikos" -> "lsds/sgx-lkl"
 "deislabs/mystikos" -> "intel/tdx-module"
 "deislabs/mystikos" -> "intel/ACON"
 "deislabs/mystikos" -> "occlum/ngo"
+"pmem/kvdk" -> "intel/confidential-computing-zoo" ["e"=1]
 "edgelesssys/ego" -> "edgelesssys/marblerun"
 "edgelesssys/ego" -> "edgelesssys/edgelessrt"
 "edgelesssys/ego" -> "edgelesssys/edgelessdb"
@@ -537,6 +583,7 @@ digraph G {
 "Penglai-Enclave/Penglai-Enclave" -> "Penglai-Enclave/Penglai-Enclave-TVM"
 "Penglai-Enclave/Penglai-Enclave" -> "Penglai-Enclave/Penglai-Enclave-sPMP"
 "Penglai-Enclave/Penglai-Enclave" -> "ServerlessBench/ServerlessBench"
+"QuarkContainer/Quark" -> "inclavare-containers/inclavare-containers" ["e"=1]
 "mofanv/PPFL" -> "FumiyukiKato/FL-TEE"
 "mofanv/PPFL" -> "mofanv/darknetz"
 "veracruz-project/veracruz" -> "veraison/veraison" ["e"=1]
@@ -547,6 +594,7 @@ digraph G {
 "intel-staging/qemu-tdx" -> "intel/tdx"
 "DMTF/spdm-dump" -> "DMTF/spdm-emu"
 "WUSTL-CSPL/RT-TEE" -> "sssecret2019/mytee"
+"asterinas/asterinas" -> "occlum/occlum" ["e"=1]
 "confidential-containers/confidential-containers" -> "confidential-containers/operator"
 "confidential-containers/confidential-containers" -> "confidential-containers/guest-components"
 "confidential-containers/confidential-containers" -> "confidential-containers/attestation-service"
@@ -592,6 +640,7 @@ digraph G {
 "ayeks/SGX-hardware" -> "gramineproject/gramine"
 "ayeks/SGX-hardware" -> "sslab-gatech/opensgx"
 "ayeks/SGX-hardware" -> "occlum/occlum"
+"signalapp/libsignal-protocol-c" -> "signalapp/ContactDiscoveryService" ["e"=1]
 "intel/confidential-computing-zoo" -> "gramineproject/gramine"
 "intel/confidential-computing-zoo" -> "intel/tdx-tools"
 "intel/confidential-computing-zoo" -> "Maxul/Awesome-SGX-Open-Source"
@@ -632,6 +681,10 @@ digraph G {
 "virtee/sev" -> "AMDESE/linux-svsm"
 "virtee/sev" -> "virtee/sev-snp-measure"
 "virtee/sev" -> "AMDESE/sev-tool"
+"lkl/linux" -> "lsds/sgx-lkl" ["e"=1]
+"lkl/linux" -> "gramineproject/graphene" ["e"=1]
+"lkl/linux" -> "intel/linux-sgx-driver" ["e"=1]
+"kelda/kelda" -> "mc2-project/mc2" ["e"=1]
 "intel/ccc-linux-guest-hardening" -> "intel/tdx-linux"
 "intel/tdx-tools" -> "intel/tdx"
 "intel/tdx-tools" -> "AMDESE/AMDSEV"
@@ -693,6 +746,7 @@ digraph G {
 "virtee/sevctl" -> "virtee/sev"
 "virtee/sevctl" -> "virtee/snpguest"
 "virtee/sevctl" -> "AMDESE/sev-guest"
+"xen-project/xen" -> "AMDESE/AMDSEV" ["e"=1]
 "edgelesssys/constellation" -> "edgelesssys/marblerun"
 "edgelesssys/constellation" -> "edgelesssys/contrast"
 "edgelesssys/constellation" -> "edgelesssys/ego"
@@ -708,6 +762,7 @@ digraph G {
 "edgelesssys/constellation" -> "sigstore/cosign" ["e"=1]
 "edgelesssys/constellation" -> "aquasecurity/starboard" ["e"=1]
 "edgelesssys/constellation" -> "intel/confidential-computing-zoo"
+"google/trillian" -> "google/asylo" ["e"=1]
 "islet-project/islet" -> "TF-RMM/tf-rmm"
 "islet-project/islet" -> "sectrs-acai/acai"
 "islet-project/islet" -> "coconut-svsm/svsm"
@@ -727,8 +782,12 @@ digraph G {
 "intel/linux-sgx" -> "jovanbulck/sgx-step"
 "intel/linux-sgx" -> "lsds/sgx-lkl"
 "sssecret2019/mytee" -> "WUSTL-CSPL/RT-TEE"
+"equation314/RVM-Tutorial" -> "HyperEnclave/hyperenclave" ["e"=1]
+"Azure/azure-blockchain-projects" -> "Azure/coco-framework" ["e"=1]
+"Azure/azure-blockchain-projects" -> "Azure-Samples/blockchain" ["e"=1]
 "ccc-certifier-framework/certifier-framework-for-confidential-computing" -> "Azure/confidential-computing-cvm-guest-attestation"
 "ccc-certifier-framework/certifier-framework-for-confidential-computing" -> "virtee/snpguest"
+"tianocore/edk2-staging" -> "intel/seam-loader" ["e"=1]
 "ziqi-zhang/TEESlice-artifact" -> "ziqi-zhang/TAOISM"
 "ziqi-zhang/TEESlice-artifact" -> "hku-systems/SOTER"
 "AMDESE/linux-svsm" -> "coconut-svsm/svsm"
@@ -761,6 +820,7 @@ digraph G {
 "asterinas/jinzhao-disk" -> "occlum/ngo"
 "asterinas/jinzhao-disk" -> "asterinas/mlsdisk"
 "asterinas/jinzhao-disk" -> "SOFAEnclave/enclave-configuration-service"
+"bellaj/Blockchain" -> "Azure-Samples/blockchain" ["e"=1]
 "intel/linux-sgx-driver" -> "intel/linux-sgx"
 "intel/linux-sgx-driver" -> "intel/SGXDataCenterAttestationPrimitives"
 "intel/linux-sgx-driver" -> "ayeks/SGX-hardware"
@@ -789,8 +849,10 @@ digraph G {
 "coconut-svsm/svsm" -> "intel/vtpm-td"
 "coconut-svsm/svsm" -> "AMDESE/sev-guest"
 "coconut-svsm/svsm" -> "NVIDIA/nvtrust"
+"openSIL/openSIL" -> "amd/AMD-ASPFW" ["e"=1]
 "kudelskisecurity/sgx-reencrypt" -> "kudelskisecurity/sgxfun"
 "kudelskisecurity/sgx-reencrypt" -> "acsl-technion/eleos"
+"isec-tugraz/armageddon" -> "jovanbulck/sgx-step" ["e"=1]
 "bl4ck5un/mbedtls-SGX" -> "lsds/TaLoS"
 "bl4ck5un/mbedtls-SGX" -> "ayeks/TresorSGX"
 "bl4ck5un/mbedtls-SGX" -> "shwetasshinde24/Panoply"
@@ -843,6 +905,7 @@ digraph G {
 "HyperEnclave/hyperenclave" -> "asterinas/hyperenclave"
 "HyperEnclave/hyperenclave" -> "SOFAEnclave/KubeTEE"
 "HyperEnclave/hyperenclave" -> "canonical/tdx"
+"encryptedsystems/Clusion" -> "InitialDLab/SEAL-ORAM" ["e"=1]
 "InitialDLab/SEAL-ORAM" -> "sshsshy/ZeroTrace"
 "InitialDLab/SEAL-ORAM" -> "obliviousram/PathORAM"
 "InitialDLab/SEAL-ORAM" -> "ghackebeil/PyORAM"
@@ -878,6 +941,12 @@ digraph G {
 "edgelesssys/contrast" -> "edgelesssys/marblerun"
 "edgelesssys/contrast" -> "edgelesssys/constellation"
 "edgelesssys/contrast" -> "edgelesssys/ego"
+"microsoft/openvmm" -> "coconut-svsm/svsm" ["e"=1]
+"microsoft/openvmm" -> "microsoft/igvm" ["e"=1]
+"keylime/keylime" -> "coconut-svsm/svsm" ["e"=1]
+"keylime/keylime" -> "confidential-containers/trustee" ["e"=1]
+"keylime/keylime" -> "inclavare-containers/rats-tls" ["e"=1]
+"cr-marcstevens/sha1collisiondetection" -> "lsds/spectre-attack-sgx" ["e"=1]
 "ayeks/TresorSGX" -> "shwetasshinde24/Panoply"
 "ayeks/TresorSGX" -> "bl4ck5un/mbedtls-SGX"
 "ayeks/TresorSGX" -> "ftes/sgx-lib"
@@ -945,6 +1014,10 @@ digraph G {
 "intel/intel-sgx-ssl" -> "ayeks/TresorSGX"
 "intel/intel-sgx-ssl" -> "yerzhan7/SGX_SQLite"
 "intel/intel-sgx-ssl" -> "acsl-technion/eleos"
+"apple/security-pcc" -> "NVIDIA/nvtrust" ["e"=1]
+"apple/security-pcc" -> "project-oak/oak" ["e"=1]
+"apple/security-pcc" -> "coconut-svsm/svsm" ["e"=1]
+"apple/security-pcc" -> "ccc-certifier-framework/certifier-framework-for-confidential-computing" ["e"=1]
 "lsds/TaLoS" -> "lsds/LibSEAL"
 "lsds/TaLoS" -> "bl4ck5un/mbedtls-SGX"
 "lsds/TaLoS" -> "ibr-ds/sgx-perf"
@@ -969,6 +1042,8 @@ digraph G {
 "apache/incubator-teaclave-sgx-sdk" -> "Jim8y/awesome-sgx"
 "apache/incubator-teaclave-sgx-sdk" -> "lsds/sgx-lkl"
 "apache/incubator-teaclave-sgx-sdk" -> "apache/incubator-teaclave-trustzone-sdk"
+"project-dune/dune" -> "intel/tdx" ["e"=1]
+"project-dune/dune" -> "HyperEnclave/atc22-ae" ["e"=1]
 "tudinfse/sgxbounds" -> "sslab-gatech/t-sgx"
 "svartkanin/linux-sgx-remoteattestation" -> "sslab-gatech/sgx-tutorial-ccs17"
 "svartkanin/linux-sgx-remoteattestation" -> "IBM/sgx-trust-management"
@@ -1024,7 +1099,12 @@ digraph G {
 "yerzhan7/SGX_SQLite" -> "ayeks/TresorSGX"
 "yerzhan7/SGX_SQLite" -> "sereca/SecureKeeper"
 "yerzhan7/SGX_SQLite" -> "cryptograph/stealthdb"
+"isec-tugraz/ZombieLoad" ["l"="-17.317,-41.96", "c"=1132]
 "jovanbulck/sgx-step" ["l"="-16.707,-42.217"]
+"vusec/ridl" ["l"="-17.334,-41.945", "c"=1132]
+"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254", "c"=55]
+"OP-TEE/optee_os" ["l"="-16.582,-42.151"]
+"OP-TEE/optee_client" ["l"="-16.537,-42.131"]
 "vschiavoni/sgx-papers" ["l"="-16.669,-42.224"]
 "lsds/spectre-attack-sgx" ["l"="-16.701,-42.265"]
 "ayeks/SGX-hardware" ["l"="-16.689,-42.222"]
@@ -1033,20 +1113,21 @@ digraph G {
 "gramineproject/gramine" ["l"="-16.714,-42.197"]
 "gramineproject/graphene" ["l"="-16.665,-42.212"]
 "lsds/sgx-lkl" ["l"="-16.674,-42.23"]
-"misc0110/PTEditor" ["l"="-17.286,-41.942"]
-"isec-tugraz/transientfail" ["l"="-17.319,-41.934"]
+"misc0110/PTEditor" ["l"="-17.286,-41.942", "c"=1132]
+"isec-tugraz/transientfail" ["l"="-17.319,-41.934", "c"=1132]
 "AMDESE/AMDSEV" ["l"="-16.752,-42.151"]
-"isec-tugraz/cache_template_attacks" ["l"="-17.289,-41.911"]
+"isec-tugraz/cache_template_attacks" ["l"="-17.289,-41.911", "c"=1132]
 "apache/incubator-teaclave-sgx-sdk" ["l"="-16.652,-42.2"]
 "Maxul/Awesome-SGX-Open-Source" ["l"="-16.686,-42.195"]
 "KitMurdock/plundervolt" ["l"="-16.761,-42.251"]
+"isec-tugraz/meltdown" ["l"="-17.388,-41.997", "c"=1132]
 "ftramer/slalom" ["l"="-16.597,-42.235"]
 "goten-team/Goten" ["l"="-16.555,-42.253"]
 "ziqi-zhang/TEESlice-artifact" ["l"="-16.537,-42.252"]
-"snwagh/securenn-public" ["l"="51.518,1.386"]
+"snwagh/securenn-public" ["l"="51.518,1.386", "c"=378]
 "hku-systems/SOTER" ["l"="-16.551,-42.242"]
 "mofanv/PPFL" ["l"="-16.53,-42.235"]
-"capeprivacy/tf-trusted" ["l"="6.505,-9.296"]
+"capeprivacy/tf-trusted" ["l"="6.505,-9.296", "c"=14]
 "mofanv/darknetz" ["l"="-16.53,-42.22"]
 "RiS3-Lab/ShadowNet" ["l"="-16.565,-42.233"]
 "google/asylo" ["l"="-16.64,-42.221"]
@@ -1058,6 +1139,7 @@ digraph G {
 "intel/SGXDataCenterAttestationPrimitives" ["l"="-16.693,-42.204"]
 "inclavare-containers/inclavare-containers" ["l"="-16.679,-42.175"]
 "keystone-enclave/keystone" ["l"="-16.619,-42.196"]
+"siemens/jailhouse" ["l"="-25.04,-22.343", "c"=1051]
 "project-oak/oak" ["l"="-16.701,-42.178"]
 "NVIDIA/nvtrust" ["l"="-16.784,-42.147"]
 "veracruz-project/veracruz" ["l"="-16.758,-42.228"]
@@ -1066,47 +1148,60 @@ digraph G {
 "intel/tdx" ["l"="-16.735,-42.15"]
 "microsoft/CCF" ["l"="-16.622,-42.234"]
 "Azure/coco-framework" ["l"="-16.588,-42.26"]
-"microsoft/eEVM" ["l"="-20.55,10.872"]
-"Penglai-Enclave/Penglai-Enclave-sPMP" ["l"="-16.555,-42.18"]
+"microsoft/eEVM" ["l"="-20.55,10.872", "c"=22]
+"intel/Intel-Linux-Processor-Microcode-Data-Files" ["l"="-40.347,-33.946", "c"=360]
 "intel/linux-sgx-driver" ["l"="-16.666,-42.237"]
+"microsoft/0xDeCA10B" ["l"="-22.031,12.842", "c"=628]
+"paboldin/meltdown-exploit" ["l"="-17.375,-42.04", "c"=1132]
+"Penglai-Enclave/Penglai-Enclave-sPMP" ["l"="-16.555,-42.18"]
 "Penglai-Enclave/Penglai-Enclave" ["l"="-16.544,-42.189"]
-"riscv-software-src/opensbi" ["l"="31.692,-3.914"]
+"riscv-software-src/opensbi" ["l"="31.692,-3.914", "c"=188]
 "keystone-enclave/keystone-runtime" ["l"="-16.564,-42.201"]
 "keystone-enclave/keystone-sdk" ["l"="-16.545,-42.203"]
 "dingelish/SGXfail" ["l"="-16.672,-42.204"]
 "svartkanin/linux-sgx-remoteattestation" ["l"="-16.659,-42.261"]
 "HyperEnclave/hyperenclave" ["l"="-16.693,-42.139"]
 "intel/confidential-computing-zoo" ["l"="-16.726,-42.177"]
+"intel/cryptography-primitives" ["l"="6.492,-6.125", "c"=335]
+"intel/seam-loader" ["l"="-16.752,-42.126"]
 "Azure-Samples/blockchain" ["l"="-16.53,-42.319"]
 "Azure-Samples/blockchain-devkit" ["l"="-16.483,-42.346"]
-"Azure/azure-blockchain-projects" ["l"="-22.741,14.241"]
-"bellaj/Blockchain" ["l"="-21.174,10.798"]
-"Consensys/quorum" ["l"="-22.498,9.03"]
-"EYBlockchain/nightfall" ["l"="-20.615,11"]
+"Azure/azure-blockchain-projects" ["l"="-22.741,14.241", "c"=412]
+"bellaj/Blockchain" ["l"="-21.174,10.798", "c"=22]
+"Consensys/quorum" ["l"="-22.498,9.03", "c"=603]
+"EYBlockchain/nightfall" ["l"="-20.615,11", "c"=22]
 "urbanairship/react-native-airship" ["l"="-16.526,-42.351"]
-"stratisproject/StratisBitcoinFullNode" ["l"="-18.286,10.746"]
+"stratisproject/StratisBitcoinFullNode" ["l"="-18.286,10.746", "c"=122]
 "alertlogic/erllambda" ["l"="-16.503,-42.365"]
-"ARMmbed/mbed-os-5-docs" ["l"="-17.539,-43.414"]
-"decrypto-org/blockchain-papers" ["l"="-21.083,10.78"]
-"ethereum/remix" ["l"="-20.89,10.948"]
-"ethereum-oasis-op/baseline" ["l"="-20.571,11.094"]
+"ARMmbed/mbed-os-5-docs" ["l"="-17.539,-43.414", "c"=55]
+"decrypto-org/blockchain-papers" ["l"="-21.083,10.78", "c"=22]
+"ethereum/remix" ["l"="-20.89,10.948", "c"=22]
+"ethereum-oasis-op/baseline" ["l"="-20.571,11.094", "c"=22]
 "EthereumEx/ethereum-arm-templates" ["l"="-16.506,-42.335"]
 "microsoft/Azure-DCAP-Client" ["l"="-16.667,-42.149"]
 "intel/tdx-tools" ["l"="-16.751,-42.137"]
 "cloud-security-research/sgx-ra-tls" ["l"="-16.684,-42.259"]
 "ibr-ds/sgx-perf" ["l"="-16.625,-42.321"]
 "ibr-ds/SGXoMeter" ["l"="-16.605,-42.341"]
+"hyperledger-archives/avalon" ["l"="-22.436,14.157", "c"=412]
+"tozd/docker-sgx" ["l"="-16.714,-42.269"]
+"google/go-tpm-tools" ["l"="-18.657,-42.958", "c"=55]
+"google/go-sev-guest" ["l"="-16.816,-42.135"]
+"google/go-tdx-guest" ["l"="-16.808,-42.158"]
+"AMDESE/sev-guest" ["l"="-16.82,-42.104"]
+"microsoft/archived-confidential-sidecar-containers" ["l"="-16.83,-42.082"]
+"sec-deadlines/sec-deadlines.github.io" ["l"="-41.723,-36.166", "c"=91]
+"mesalock-linux/mesalink" ["l"="-10.022,-5.918", "c"=5]
+"mesalock-linux/mesalock-distro" ["l"="-16.611,-42.087"]
 "deislabs/mystikos" ["l"="-16.738,-42.197"]
 "bl4ck5un/mbedtls-SGX" ["l"="-16.657,-42.276"]
-"mesalock-linux/mesalock-distro" ["l"="-16.611,-42.087"]
-"mesalock-linux/mesalink" ["l"="-10.022,-5.918"]
 "mesalock-linux/mesabox" ["l"="-16.609,-42.106"]
 "mesalock-linux/packages" ["l"="-16.594,-42.073"]
 "mesalock-linux/mesapy" ["l"="-16.638,-42.164"]
-"tozd/docker-sgx" ["l"="-16.714,-42.269"]
 "sslab-gatech/sgx-tutorial-ccs17" ["l"="-16.673,-42.278"]
 "digawp/hello-enclave" ["l"="-16.687,-42.279"]
 "sangfansh/SGX101_sample_code" ["l"="-16.704,-42.288"]
+"Eugnis/spectre-attack" ["l"="-17.351,-42.023", "c"=1132]
 "landoxy/intel-sgx-deep-learning" ["l"="-16.833,-42.184"]
 "intel/sgx-pytorch" ["l"="-16.805,-42.183"]
 "intel/sgx-software-enable" ["l"="-16.676,-42.315"]
@@ -1129,25 +1224,25 @@ digraph G {
 "yerzhan7/SGX_SQLite" ["l"="-16.633,-42.283"]
 "SabaEskandarian/ObliDB" ["l"="-16.622,-42.336"]
 "xzhangxa/SGX-CMake" ["l"="-16.683,-42.29"]
-"OP-TEE/optee_os" ["l"="-16.582,-42.151"]
 "apache/incubator-teaclave-java-tee-sdk" ["l"="-16.545,-42.163"]
 "mesalock-linux/gbdt-rs" ["l"="-16.475,-42.155"]
 "GJDuck/LowFat" ["l"="-16.777,-42.464"]
 "GJDuck/EffectiveSan" ["l"="-16.786,-42.49"]
 "tudinfse/sgxbounds" ["l"="-16.762,-42.431"]
+"bbbrumley/portsmash" ["l"="-17.319,-41.896", "c"=1132]
 "signalapp/ContactDiscoveryService" ["l"="-16.72,-42.296"]
 "signalapp/SecureValueRecovery" ["l"="-16.76,-42.333"]
-"signalapp/storage-service" ["l"="-52.622,7.322"]
+"signalapp/storage-service" ["l"="-52.622,7.322", "c"=682]
 "signalapp/ContactDiscoveryService-Icelake" ["l"="-16.737,-42.324"]
 "edgelesssys/edgelessdb" ["l"="-16.781,-42.232"]
-"signalapp/Curve25519Kit" ["l"="-52.588,7.428"]
+"signalapp/Curve25519Kit" ["l"="-52.588,7.428", "c"=682]
 "mc2-project/opaque-sql" ["l"="-16.628,-42.3"]
 "davechallis/rust-xgboost" ["l"="-16.439,-42.134"]
 "purpleprotocol/graphlib" ["l"="-16.416,-42.153"]
-"OP-TEE/optee_client" ["l"="-16.537,-42.131"]
 "linaro-swg/optee_examples" ["l"="-16.543,-42.109"]
 "OP-TEE/build" ["l"="-16.558,-42.116"]
 "OP-TEE/manifest" ["l"="-16.554,-42.129"]
+"crozone/SpectrePoC" ["l"="-17.337,-42.003", "c"=1132]
 "mesalock-linux/minit" ["l"="-16.582,-42.051"]
 "lsds/TaLoS" ["l"="-16.649,-42.284"]
 "sebva/docker-sgx" ["l"="-16.728,-42.283"]
@@ -1159,7 +1254,6 @@ digraph G {
 "projectceladon/device-intel-cic" ["l"="-16.874,-42.214"]
 "AMDESE/sev-tool" ["l"="-16.785,-42.123"]
 "virtee/sev" ["l"="-16.796,-42.106"]
-"AMDESE/sev-guest" ["l"="-16.82,-42.104"]
 "virtee/snpguest" ["l"="-16.785,-42.109"]
 "AMDESE/linux" ["l"="-16.767,-42.117"]
 "virtee/sev-snp-measure" ["l"="-16.811,-42.107"]
@@ -1174,12 +1268,14 @@ digraph G {
 "InitialDLab/SEAL-ORAM" ["l"="-16.639,-42.349"]
 "ilebedev/sanctum" ["l"="-16.771,-42.384"]
 "pwnall/sanctum" ["l"="-16.755,-42.37"]
+"lingxu-wxw/SE_Notes" ["l"="-17.865,-28.207", "c"=62]
+"ServerlessBench/ServerlessBench" ["l"="-16.524,-42.173"]
+"google/go-tpm" ["l"="-18.694,-42.959", "c"=55]
 "enarx/enarx" ["l"="-16.727,-42.218"]
 "SOFAEnclave/KubeTEE" ["l"="-16.679,-42.112"]
 "asterinas/hyperenclave" ["l"="-16.674,-42.098"]
-"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254"]
-"enovella/TEE-reversing" ["l"="-45.954,-34.506"]
-"siemens/jailhouse" ["l"="-25.04,-22.343"]
+"enovella/TEE-reversing" ["l"="-45.954,-34.506", "c"=1178]
+"seL4/seL4" ["l"="-24.969,-22.405", "c"=1051]
 "mc2-project/federated-xgboost" ["l"="-16.472,-42.307"]
 "Raymw/Federated-XGBoost" ["l"="-16.439,-42.307"]
 "mc2-project/secure-xgboost" ["l"="-16.493,-42.308"]
@@ -1189,28 +1285,37 @@ digraph G {
 "edgelesssys/constellation" ["l"="-16.788,-42.187"]
 "edgelesssys/contrast" ["l"="-16.805,-42.208"]
 "loretanr/dp-gbdt" ["l"="-16.415,-42.335"]
+"containers/libkrun" ["l"="-17.033,-2.698", "c"=772]
+"coconut-svsm/svsm" ["l"="-16.809,-42.124"]
+"dragonflyoss/nydus" ["l"="8.138,-9.287", "c"=14]
 "awslabs/privacy-preserving-xgboost-inference" ["l"="-16.463,-42.325"]
-"signalapp/libmobilecoin-ios-artifacts" ["l"="-52.691,7.386"]
+"signalapp/libmobilecoin-ios-artifacts" ["l"="-52.691,7.386", "c"=682]
+"signalapp/ringrtc" ["l"="-52.588,7.365", "c"=682]
 "Penglai-Enclave/Penglai-Enclave-TVM" ["l"="-16.527,-42.184"]
 "riscvarchive/riscv-tee" ["l"="-16.506,-42.175"]
-"ServerlessBench/ServerlessBench" ["l"="-16.524,-42.173"]
-"rivosinc/salus" ["l"="-25.22,-22.36"]
+"rivosinc/salus" ["l"="-25.22,-22.36", "c"=1051]
+"google/rowhammer-test" ["l"="-17.248,-41.878", "c"=1132]
 "AliyunContainerService/sgx-device-plugin" ["l"="-16.68,-42.127"]
+"rcore-os/zCore" ["l"="-9.531,-8.823", "c"=871]
+"intel/he-transformer" ["l"="51.444,1.471", "c"=378]
 "mc2-project/mc2" ["l"="-16.564,-42.294"]
-"mc2-project/delphi" ["l"="51.504,1.388"]
-"mpc-msri/EzPC" ["l"="51.511,1.366"]
-"jeffreysijuntan/CryptGPU" ["l"="51.487,1.341"]
+"mc2-project/delphi" ["l"="51.504,1.388", "c"=378]
+"mpc-msri/EzPC" ["l"="51.511,1.366", "c"=378]
+"jeffreysijuntan/CryptGPU" ["l"="51.487,1.341", "c"=378]
 "occlum/ngo" ["l"="-16.714,-42.136"]
 "SOFAEnclave/enclave-configuration-service" ["l"="-16.693,-42.104"]
 "intel-staging/qemu-tdx" ["l"="-16.731,-42.127"]
 "intel/tdx-module" ["l"="-16.765,-42.154"]
-"intel/seam-loader" ["l"="-16.752,-42.126"]
 "confidential-containers/td-shim" ["l"="-16.781,-42.136"]
+"google/safeside" ["l"="-17.32,-41.922", "c"=1132]
 "HikariX/MP-FedXGB" ["l"="-16.409,-42.31"]
-"tx19980520/new-tech-stack" ["l"="-17.888,-28.216"]
+"tx19980520/new-tech-stack" ["l"="-17.888,-28.216", "c"=62]
+"Brandawg93/homebridge-nest-cam" ["l"="-17.496,-39.225", "c"=622]
 "sslab-gatech/opensgx" ["l"="-16.706,-42.25"]
 "tristartom/sgx-emulator" ["l"="-16.751,-42.275"]
+"littlekernel/lk" ["l"="-17.638,-43.305", "c"=55]
 "intel/ACON" ["l"="-16.786,-42.164"]
+"pmem/kvdk" ["l"="1.608,13.278", "c"=376]
 "confidential-containers/confidential-containers" ["l"="-16.806,-42.148"]
 "DMTF/libspdm" ["l"="-16.777,-42.048"]
 "DMTF/spdm-emu" ["l"="-16.782,-42.03"]
@@ -1222,26 +1327,28 @@ digraph G {
 "confidential-containers/ocicrypt-rs" ["l"="-16.876,-42.136"]
 "confidential-containers/simple-kbs" ["l"="-16.893,-42.123"]
 "intel/ehsm" ["l"="-16.76,-42.182"]
-"intel/crypto-api-toolkit" ["l"="6.437,-6.108"]
+"intel/crypto-api-toolkit" ["l"="6.437,-6.108", "c"=335]
 "asterinas/jinzhao-disk" ["l"="-16.707,-42.111"]
 "asterinas/jinzhao-attest" ["l"="-16.701,-42.121"]
-"veraison/veraison" ["l"="-18.897,-43.043"]
+"QuarkContainer/Quark" ["l"="8.263,-9.525", "c"=14]
+"veraison/veraison" ["l"="-18.897,-43.043", "c"=55]
 "sssecret2019/mytee" ["l"="-16.448,-42.227"]
+"asterinas/asterinas" ["l"="-9.541,-8.78", "c"=871]
 "confidential-containers/operator" ["l"="-16.862,-42.148"]
 "confidential-containers/guest-components" ["l"="-16.843,-42.146"]
 "confidential-containers/cloud-api-adaptor" ["l"="-16.856,-42.16"]
 "confidential-containers/trustee" ["l"="-16.83,-42.162"]
 "canonical/tdx" ["l"="-16.754,-42.163"]
-"coconut-svsm/svsm" ["l"="-16.809,-42.124"]
-"google/go-sev-guest" ["l"="-16.816,-42.135"]
 "Azure/confidential-computing-cvm-guest-attestation" ["l"="-16.816,-42.091"]
 "gramineproject/gsc" ["l"="-16.806,-42.226"]
-"pmem/kvdk" ["l"="1.608,13.278"]
+"signalapp/libsignal-protocol-c" ["l"="-52.51,7.451", "c"=682]
 "gramineproject/examples" ["l"="-16.847,-42.225"]
 "gramineproject/gramine-tdx" ["l"="-16.822,-42.195"]
 "intel/confidential-computing-documentation" ["l"="-16.876,-42.238"]
 "virtee/sevctl" ["l"="-16.802,-42.094"]
 "AMDESE/linux-svsm" ["l"="-16.801,-42.115"]
+"lkl/linux" ["l"="6.076,-5.026", "c"=749]
+"kelda/kelda" ["l"="31.228,-28.327", "c"=1078]
 "intel/ccc-linux-guest-hardening" ["l"="-16.748,-42.105"]
 "intel/tdx-linux" ["l"="-16.764,-42.133"]
 "intel/confidential-cloud-native-primitives" ["l"="-16.733,-42.084"]
@@ -1255,20 +1362,21 @@ digraph G {
 "kaist-ina/SGX-Tor" ["l"="-16.572,-42.33"]
 "inclavare-containers/librats" ["l"="-16.923,-42.151"]
 "LIT-Protocol/sev-snp-utils" ["l"="-16.846,-42.081"]
-"microsoft/archived-confidential-sidecar-containers" ["l"="-16.83,-42.082"]
-"kubernetes-sigs/security-profiles-operator" ["l"="7.574,-8.981"]
-"sigstore/cosign" ["l"="7.866,-8.82"]
-"aquasecurity/starboard" ["l"="7.494,-8.929"]
+"xen-project/xen" ["l"="-25.084,-22.339", "c"=1051]
+"kubernetes-sigs/security-profiles-operator" ["l"="7.574,-8.981", "c"=14]
+"sigstore/cosign" ["l"="7.866,-8.82", "c"=14]
+"aquasecurity/starboard" ["l"="7.494,-8.929", "c"=14]
+"google/trillian" ["l"="9.013,-9.136", "c"=14]
 "islet-project/islet" ["l"="-16.866,-42.112"]
 "TF-RMM/tf-rmm" ["l"="-16.911,-42.101"]
 "sectrs-acai/acai" ["l"="-16.893,-42.095"]
+"equation314/RVM-Tutorial" ["l"="-9.639,-8.804", "c"=871]
 "ccc-certifier-framework/certifier-framework-for-confidential-computing" ["l"="-16.791,-42.089"]
+"tianocore/edk2-staging" ["l"="-40.303,-33.9", "c"=360]
 "ziqi-zhang/TAOISM" ["l"="-16.51,-42.259"]
 "amd/AMD-ASPFW" ["l"="-16.825,-42.116"]
 "PSPReverse/amd-sev-migration-attack" ["l"="-16.835,-42.092"]
 "dragonwell-project/alibaba-dragonwell-security-provider" ["l"="-16.516,-42.155"]
-"google/go-tdx-guest" ["l"="-16.808,-42.158"]
-"google/go-tpm-tools" ["l"="-18.657,-42.958"]
 "intel/trustauthority-client-for-go" ["l"="-16.726,-42.027"]
 "cc-api/container-integrity-measurement-agent" ["l"="-16.733,-42.056"]
 "intel/trustauthority-client-for-python" ["l"="-16.721,-42.009"]
@@ -1277,25 +1385,33 @@ digraph G {
 "asterinas/mlsdisk" ["l"="-16.7,-42.086"]
 "microsoft/igvm" ["l"="-16.845,-42.106"]
 "intel/vtpm-td" ["l"="-16.86,-42.089"]
+"openSIL/openSIL" ["l"="-40.344,-33.832", "c"=360]
+"isec-tugraz/armageddon" ["l"="-17.265,-41.908", "c"=1132]
 "intel/cloud-native-ai-pipeline" ["l"="-16.735,-42.068"]
 "HyperEnclave/atc22-ae" ["l"="-16.659,-42.114"]
+"encryptedsystems/Clusion" ["l"="50.373,1.809", "c"=2204]
 "obliviousram/PathORAM" ["l"="-16.629,-42.378"]
 "ghackebeil/PyORAM" ["l"="-16.648,-42.376"]
 "svsm-vtpm/linux-svsm" ["l"="-16.881,-42.072"]
 "IBM/sgx-trust-management" ["l"="-16.619,-42.281"]
+"microsoft/openvmm" ["l"="-43.148,-35.273", "c"=40]
+"keylime/keylime" ["l"="-18.725,-42.992", "c"=55]
+"cr-marcstevens/sha1collisiondetection" ["l"="23.749,-27.486", "c"=28]
 "ftes/sgx-lib" ["l"="-16.663,-42.326"]
 "utds3lab/sgx-nbench" ["l"="-16.686,-42.328"]
+"apple/security-pcc" ["l"="42.172,-26.696", "c"=69]
 "lsds/LibSEAL" ["l"="-16.645,-42.314"]
 "sereca/SecureKeeper" ["l"="-16.612,-42.293"]
+"project-dune/dune" ["l"="-25.103,-22.253", "c"=1051]
 "sslab-gatech/t-sgx" ["l"="-16.745,-42.39"]
-"hyperledger-archives/sawtooth-core" ["l"="-22.633,14.146"]
-"hyperledger-archives/composer" ["l"="-22.575,14.181"]
-"ewasm/design" ["l"="-20.643,11.014"]
-"Consensys/cakeshop" ["l"="-22.396,8.981"]
-"Azure/acs-engine" ["l"="-46.225,6.923"]
-"enzymefinance/oyente" ["l"="-20.588,10.852"]
-"amiller/HoneyBadgerBFT" ["l"="-22.226,13.191"]
-"scipr-lab/libsnark" ["l"="-18.941,12.975"]
+"hyperledger-archives/sawtooth-core" ["l"="-22.633,14.146", "c"=412]
+"hyperledger-archives/composer" ["l"="-22.575,14.181", "c"=412]
+"ewasm/design" ["l"="-20.643,11.014", "c"=22]
+"Consensys/cakeshop" ["l"="-22.396,8.981", "c"=603]
+"Azure/acs-engine" ["l"="-46.225,6.923", "c"=144]
+"enzymefinance/oyente" ["l"="-20.588,10.852", "c"=22]
+"amiller/HoneyBadgerBFT" ["l"="-22.226,13.191", "c"=628]
+"scipr-lab/libsnark" ["l"="-18.941,12.975", "c"=173]
 "linaro-swg/hello_world" ["l"="-16.526,-42.086"]
 "sebva/sgx-orchestrator" ["l"="-16.781,-42.308"]
 "sebva/sgx-device-plugin" ["l"="-16.805,-42.322"]

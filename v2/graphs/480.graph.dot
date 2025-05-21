@@ -1,4 +1,9 @@
 digraph G {
+"google-deepmind/ai-safety-gridworlds" -> "openai/safety-gym" ["e"=1]
+"google-deepmind/ai-safety-gridworlds" -> "openai/safety-starter-agents" ["e"=1]
+"google-deepmind/ai-safety-gridworlds" -> "befelix/safe_learning" ["e"=1]
+"google-deepmind/ai-safety-gridworlds" -> "PKU-Alignment/safety-gymnasium" ["e"=1]
+"google-deepmind/ai-safety-gridworlds" -> "chauncygu/Safe-Reinforcement-Learning-Baselines" ["e"=1]
 "RobotLocomotion/drake" -> "stack-of-tasks/pinocchio" ["e"=1]
 "RobotLocomotion/drake" -> "RussTedrake/underactuated" ["e"=1]
 "RobotLocomotion/drake" -> "ethz-adrl/control-toolbox"
@@ -14,6 +19,11 @@ digraph G {
 "RobotLocomotion/drake" -> "petercorke/robotics-toolbox-python" ["e"=1]
 "RobotLocomotion/drake" -> "osqp/osqp"
 "RobotLocomotion/drake" -> "google-deepmind/mujoco_menagerie" ["e"=1]
+"nasa-jpl/open-source-rover" -> "RobotLocomotion/drake" ["e"=1]
+"m-lundberg/simple-pid" -> "python-control/python-control" ["e"=1]
+"m-lundberg/simple-pid" -> "do-mpc/do-mpc" ["e"=1]
+"m-lundberg/simple-pid" -> "ethz-adrl/control-toolbox" ["e"=1]
+"AtsushiSakai/MATLABRobotics" -> "AtsushiSakai/PyAdvancedControl" ["e"=1]
 "loco-3d/crocoddyl" -> "leggedrobotics/ocs2" ["e"=1]
 "loco-3d/crocoddyl" -> "stack-of-tasks/pinocchio" ["e"=1]
 "loco-3d/crocoddyl" -> "stack-of-tasks/tsid"
@@ -29,6 +39,8 @@ digraph G {
 "loco-3d/crocoddyl" -> "robomechanics/quad-sdk" ["e"=1]
 "loco-3d/crocoddyl" -> "Simple-Robotics/aligator"
 "loco-3d/crocoddyl" -> "LeCAR-Lab/dial-mpc" ["e"=1]
+"openrr/urdf-viz" -> "Gepetto/example-robot-data" ["e"=1]
+"NVIDIA-AI-IOT/jetracer" -> "prl-mushr/mushr" ["e"=1]
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" -> "tomcattiger1230/CasADi_MPC_MHE_Python"
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" -> "bevanda/Learning-Based-MPC"
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" -> "s7ev3n/MPC_Code"
@@ -44,6 +56,8 @@ digraph G {
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" -> "helgeanl/GP-MPC"
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" -> "casadi/casadi"
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" -> "hilo-mpc/hilo-mpc"
+"RocketPy-Team/RocketPy" -> "istellartech/OpenTsiolkovsky" ["e"=1]
+"RocketPy-Team/RocketPy" -> "istellartech/OpenGoddard" ["e"=1]
 "locuslab/mpc.pytorch" -> "locuslab/differentiable-mpc"
 "locuslab/mpc.pytorch" -> "do-mpc/do-mpc"
 "locuslab/mpc.pytorch" -> "Shunichi09/PythonLinearNonlinearControl"
@@ -59,6 +73,12 @@ digraph G {
 "locuslab/mpc.pytorch" -> "acados/acados"
 "locuslab/mpc.pytorch" -> "alexliniger/MPCC"
 "locuslab/mpc.pytorch" -> "AtsushiSakai/PyAdvancedControl"
+"epfml/OptML_course" -> "cvxgrp/cvxpylayers" ["e"=1]
+"cvxpy/cvxpy" -> "cvxgrp/cvxpylayers" ["e"=1]
+"cvxpy/cvxpy" -> "cvxgrp/scs" ["e"=1]
+"cvxpy/cvxpy" -> "osqp/osqp" ["e"=1]
+"cvxpy/cvxpy" -> "coin-or/Ipopt" ["e"=1]
+"cvxpy/cvxpy" -> "embotech/ecos" ["e"=1]
 "ethz-adrl/ifopt" -> "ethz-adrl/towr" ["e"=1]
 "ethz-adrl/ifopt" -> "giaf/hpipm"
 "ethz-adrl/ifopt" -> "ethz-adrl/control-toolbox"
@@ -100,6 +120,13 @@ digraph G {
 "TUMFTM/trajectory_planning_helpers" -> "TUMFTM/race-simulation"
 "TUMFTM/trajectory_planning_helpers" -> "TUMFTM/f1-timing-database"
 "TUMFTM/trajectory_planning_helpers" -> "TUMFTM/velocity_optimization"
+"flame/blis" -> "giaf/blasfeo" ["e"=1]
+"sawcordwell/pymdptoolbox" -> "akifumi-wachi-4/safe_near_optimal_mdp" ["e"=1]
+"dynamicslab/pysindy" -> "pnnl/neuromancer" ["e"=1]
+"dynamicslab/pysindy" -> "wilsonrljr/sysidentpy" ["e"=1]
+"rlnav/motion_planning" -> "matssteinweg/Multi-Purpose-MPC" ["e"=1]
+"argmin-rs/argmin" -> "oxfordcontrol/Clarabel.rs" ["e"=1]
+"pytorch/botorch" -> "cvxgrp/cvxpylayers" ["e"=1]
 "coin-or/Ipopt" -> "casadi/casadi"
 "coin-or/Ipopt" -> "osqp/osqp"
 "coin-or/Ipopt" -> "ethz-adrl/ifopt"
@@ -125,6 +152,8 @@ digraph G {
 "arbabiha/KoopmanMPC_for_flowcontrol" -> "i-abr/mpc-koopman" ["e"=1]
 "arbabiha/KoopmanMPC_for_flowcontrol" -> "shiivashaakeri/Data-Driven-Model-Predictive-Control-MPC-with-Stability-and-Robustness-Guarantees"
 "arbabiha/KoopmanMPC_for_flowcontrol" -> "sisl/variational_koopman" ["e"=1]
+"cyberbotics/webots" -> "RobotLocomotion/drake" ["e"=1]
+"cyberbotics/webots" -> "ethz-adrl/control-toolbox" ["e"=1]
 "meshcat-dev/meshcat" -> "meshcat-dev/meshcat-python"
 "meshcat-dev/meshcat" -> "rdeits/MeshCat.jl"
 "meshcat-dev/meshcat" -> "coal-library/coal" ["e"=1]
@@ -132,6 +161,12 @@ digraph G {
 "meshcat-dev/meshcat" -> "ami-iit/meshcat-cpp"
 "meshcat-dev/meshcat" -> "KavrakiLab/vamp" ["e"=1]
 "meshcat-dev/meshcat" -> "stack-of-tasks/eigenpy"
+"mit-biomimetics/Cheetah-Software" -> "loco-3d/crocoddyl" ["e"=1]
+"mit-biomimetics/Cheetah-Software" -> "RobotLocomotion/drake" ["e"=1]
+"jckantor/CBE30338" -> "APMonitor/pdc" ["e"=1]
+"onlytailei/CppRobotics" -> "ethz-adrl/control-toolbox" ["e"=1]
+"onlytailei/CppRobotics" -> "alexliniger/MPCC" ["e"=1]
+"orocos/orocos_kinematics_dynamics" -> "loco-3d/crocoddyl" ["e"=1]
 "robotology/osqp-eigen" -> "google/osqp-cpp"
 "robotology/osqp-eigen" -> "osqp/osqp"
 "robotology/osqp-eigen" -> "giaf/hpipm"
@@ -162,6 +197,11 @@ digraph G {
 "HiroIshida/robust-tube-mpc" -> "alexliniger/MPCC"
 "HiroIshida/robust-tube-mpc" -> "HybridRobotics/MPC-CBF"
 "HiroIshida/robust-tube-mpc" -> "arbabiha/KoopmanMPC_for_flowcontrol"
+"fjp/frenet" -> "mubowen/Optimal-Trajectory-generation-for-Lane-Changing-in-Frenet-Frame" ["e"=1]
+"fjp/frenet" -> "mubowen/Baidu-Apollo-control-algorithm" ["e"=1]
+"qiaoxu123/Self-Driving-Cars" -> "alexliniger/MPCC" ["e"=1]
+"ompl/ompl" -> "RobotLocomotion/drake" ["e"=1]
+"ompl/ompl" -> "ethz-adrl/control-toolbox" ["e"=1]
 "deng-haoyang/ParNMPC" -> "OpenOCL/OpenOCL"
 "deng-haoyang/ParNMPC" -> "HybridRobotics/NMPC-DCLF-DCBF"
 "deng-haoyang/ParNMPC" -> "HiroIshida/robust-tube-mpc"
@@ -183,6 +223,19 @@ digraph G {
 "cvxr/CVX" -> "sqlp/sedumi"
 "cvxr/CVX" -> "embotech/ecos"
 "cvxr/CVX" -> "nathanieljohnston/QETLAB"
+"qutip/qutip-notebooks" -> "rogercolbeck/QI" ["e"=1]
+"qqfly/how-to-learn-robotics" -> "ethz-adrl/control-toolbox" ["e"=1]
+"victorlei/smop" -> "python-control/python-control" ["e"=1]
+"stevengj/nlopt" -> "coin-or/Ipopt" ["e"=1]
+"stevengj/nlopt" -> "ethz-adrl/ifopt" ["e"=1]
+"stevengj/nlopt" -> "osqp/osqp" ["e"=1]
+"stevengj/nlopt" -> "casadi/casadi" ["e"=1]
+"stevengj/nlopt" -> "ethz-adrl/control-toolbox" ["e"=1]
+"stevengj/nlopt" -> "acados/acados" ["e"=1]
+"stevengj/nlopt" -> "coin-or/CppAD" ["e"=1]
+"Farama-Foundation/HighwayEnv" -> "eleurent/phd-bibliography" ["e"=1]
+"anagabandi/nn_dynamics" -> "locuslab/mpc.pytorch" ["e"=1]
+"anagabandi/nn_dynamics" -> "chennnnnyize-zz/Optimal-Control-via-Neural-Networks" ["e"=1]
 "eleurent/phd-bibliography" -> "eleurent/rl-agents" ["e"=1]
 "eleurent/phd-bibliography" -> "Shunichi09/PythonLinearNonlinearControl"
 "eleurent/phd-bibliography" -> "ethz-adrl/control-toolbox"
@@ -244,6 +297,9 @@ digraph G {
 "ethz-adrl/control-toolbox" -> "TinyMPC/TinyMPC"
 "ethz-adrl/control-toolbox" -> "ANYbotics/kindr" ["e"=1]
 "ydsf16/particle_filter_localization" -> "vatsl/ParticleFilter"
+"gkjohnson/urdf-loaders" -> "meshcat-dev/meshcat" ["e"=1]
+"gkjohnson/urdf-loaders" -> "loco-3d/crocoddyl" ["e"=1]
+"wil3/gymfc" -> "utiasDSL/safe-control-gym" ["e"=1]
 "locuslab/differentiable-mpc" -> "locuslab/mpc.pytorch"
 "locuslab/differentiable-mpc" -> "locuslab/qpth"
 "locuslab/differentiable-mpc" -> "UM-ARM-Lab/pytorch_mppi" ["e"=1]
@@ -257,6 +313,8 @@ digraph G {
 "befelix/safe-exploration" -> "befelix/lyapunov-learning"
 "befelix/safe-exploration" -> "helgeanl/GP-MPC"
 "befelix/safe-exploration" -> "befelix/SafeOpt"
+"cybergalactic/MSS" -> "ccalas/mpc" ["e"=1]
+"Hypha-ROS/hypharos_minicar" -> "Hypha-ROS/hypharos_racecar" ["e"=1]
 "TUMFTM/global_racetrajectory_optimization" -> "TUMFTM/trajectory_planning_helpers"
 "TUMFTM/global_racetrajectory_optimization" -> "TUMFTM/GraphBasedLocalTrajectoryPlanner"
 "TUMFTM/global_racetrajectory_optimization" -> "TUMFTM/mod_vehicle_dynamics_control"
@@ -272,10 +330,17 @@ digraph G {
 "TUMFTM/global_racetrajectory_optimization" -> "CL2-UWaterloo/Raceline-Optimization"
 "TUMFTM/global_racetrajectory_optimization" -> "ForzaETH/race_stack"
 "TUMFTM/global_racetrajectory_optimization" -> "juanmanzanero/fastest-lap"
+"mlpack/ensmallen" -> "Simple-Robotics/proxsuite" ["e"=1]
+"stephane-caron/lipm_walking_controller" -> "mayataka/robotoc" ["e"=1]
+"uzh-rpg/rpg_quadrotor_control" -> "uzh-rpg/data_driven_mpc" ["e"=1]
 "cvxgrp/diffcp" -> "cvxgrp/cocp"
 "cvxgrp/diffcp" -> "cvxgrp/cone_prog_refine"
 "cvxgrp/diffcp" -> "cvxgrp/cvxpygen"
 "DAIRLab/dairlib" -> "ADVRHumanoids/casadi_kin_dyn"
+"altmany/export_fig" -> "yalmip/YALMIP" ["e"=1]
+"ethz-adrl/towr" -> "ethz-adrl/ifopt" ["e"=1]
+"ethz-adrl/towr" -> "loco-3d/crocoddyl" ["e"=1]
+"ethz-adrl/towr" -> "ethz-adrl/control-toolbox" ["e"=1]
 "EmbersArc/SCpp" -> "EmbersArc/SCvx"
 "EmbersArc/SCpp" -> "EmbersArc/SuccessiveConvexificationFreeFinalTime"
 "EmbersArc/SCpp" -> "dmalyuta/lcvx"
@@ -286,6 +351,15 @@ digraph G {
 "EmbersArc/SCpp" -> "UW-ACL/SCPToolbox_tutorial"
 "EmbersArc/SCpp" -> "EmbersArc/Epigraph"
 "EmbersArc/SCpp" -> "abhikamath/Rocket-Controls"
+"Geonhee-LEE/mpc_ros" -> "alexliniger/MPCC" ["e"=1]
+"Geonhee-LEE/mpc_ros" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
+"anassinator/ilqr" -> "Shunichi09/PythonLinearNonlinearControl" ["e"=1]
+"anassinator/ilqr" -> "RoboticExplorationLab/TrajectoryOptimization.jl" ["e"=1]
+"anassinator/ilqr" -> "locuslab/mpc.pytorch" ["e"=1]
+"anassinator/ilqr" -> "RoboticExplorationLab/Altro.jl" ["e"=1]
+"anassinator/ilqr" -> "optimusride/altro-cpp" ["e"=1]
+"anassinator/ilqr" -> "ethz-adrl/control-toolbox" ["e"=1]
+"ori-drs/pronto" -> "mayataka/robotoc" ["e"=1]
 "SoMuchForSubtlety/f1viewer" -> "robvdpol/RaceControl"
 "SoMuchForSubtlety/f1viewer" -> "bootsie123/F1-Web-Viewer"
 "SoMuchForSubtlety/f1viewer" -> "NoahFetz/F1AppleTV"
@@ -300,6 +374,16 @@ digraph G {
 "SoMuchForSubtlety/f1viewer" -> "davidor/formula1-lap-charts"
 "SoMuchForSubtlety/f1viewer" -> "maartenflippo/f1tv-tweaks"
 "SoMuchForSubtlety/f1viewer" -> "SHWotever/SimHub" ["e"=1]
+"Le0nX/ModernRoboticsCpp" -> "loco-3d/crocoddyl" ["e"=1]
+"Le0nX/ModernRoboticsCpp" -> "ethz-adrl/control-toolbox" ["e"=1]
+"ERGO-Code/HiGHS" -> "cvanaret/Uno" ["e"=1]
+"ERGO-Code/HiGHS" -> "coin-or/Ipopt" ["e"=1]
+"simupy/simupy" -> "python-control/python-control" ["e"=1]
+"simupy/simupy" -> "BYU-PRISM/GEKKO" ["e"=1]
+"OpenMDAO/dymos" -> "istellartech/OpenGoddard" ["e"=1]
+"OpenMDAO/dymos" -> "PSOPT/psopt" ["e"=1]
+"OpenMDAO/dymos" -> "mpopt/mpopt" ["e"=1]
+"coin-or/Cbc" -> "coin-or/Ipopt" ["e"=1]
 "cvxgrp/scs" -> "embotech/ecos"
 "cvxgrp/scs" -> "oxfordcontrol/COSMO.jl" ["e"=1]
 "cvxgrp/scs" -> "jump-dev/Convex.jl" ["e"=1]
@@ -319,6 +403,8 @@ digraph G {
 "harishsatishchandra/SMC-controller" -> "priscillascu/Sliding_Mode_Control_Matlab" ["e"=1]
 "harishsatishchandra/SMC-controller" -> "MaciPaci/Simulation-of-Underactuated-AUV-Control-Algorithms" ["e"=1]
 "harishsatishchandra/SMC-controller" -> "euge2838/Autonomous_Guidance_MPC_and_LQR-LMI"
+"XiaojingGeorgeZhang/OBCA" -> "alexliniger/MPCC" ["e"=1]
+"XiaojingGeorgeZhang/OBCA" -> "urosolia/RacingLMPC" ["e"=1]
 "TUMFTM/mod_vehicle_dynamics_control" -> "TUMFTM/sim_vehicle_dynamics"
 "TUMFTM/mod_vehicle_dynamics_control" -> "TUMFTM/global_racetrajectory_optimization"
 "TUMFTM/mod_vehicle_dynamics_control" -> "TUMFTM/trajectory_planning_helpers"
@@ -332,13 +418,23 @@ digraph G {
 "TUMFTM/mod_vehicle_dynamics_control" -> "andresmendes/Vehicle-Dynamics-Lateral"
 "TUMFTM/mod_vehicle_dynamics_control" -> "Marksman007577/Autonomous-Drive"
 "TUMFTM/mod_vehicle_dynamics_control" -> "TUMFTM/race-simulation"
+"plotly/plotly_matlab" -> "yalmip/YALMIP" ["e"=1]
+"andybarry/flight" -> "AutoRally/autorally" ["e"=1]
+"andybarry/flight" -> "RobotLocomotion/drake" ["e"=1]
+"nrontsis/PILCO" -> "SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control" ["e"=1]
 "forgi86/pyMPC" -> "do-mpc/do-mpc"
 "forgi86/pyMPC" -> "matssteinweg/Multi-Purpose-MPC"
 "forgi86/pyMPC" -> "locuslab/differentiable-mpc"
 "forgi86/pyMPC" -> "Shunichi09/PythonLinearNonlinearControl"
 "forgi86/pyMPC" -> "helgeanl/GP-MPC"
+"autodiff/autodiff" -> "coin-or/CppAD" ["e"=1]
+"autodiff/autodiff" -> "casadi/casadi" ["e"=1]
+"autodiff/autodiff" -> "ethz-adrl/ifopt" ["e"=1]
+"yangmingustb/planning_books_1" -> "Shunichi09/PythonLinearNonlinearControl" ["e"=1]
 "ohtsukalab/autogenu-jupyter" -> "mayataka/robotoc"
 "ohtsukalab/autogenu-jupyter" -> "deng-haoyang/ParNMPC"
+"nicola-decao/BNAF" -> "CW-Huang/CP-Flow" ["e"=1]
+"coin-or/Clp" -> "coin-or/Ipopt" ["e"=1]
 "soc-ucsd/DMPC_for_platoons" -> "bghojogh/DNMPC-Platooning"
 "soc-ucsd/DMPC_for_platoons" -> "prajval10/Platoon_control"
 "soc-ucsd/DMPC_for_platoons" -> "olivergafvert/dmpc"
@@ -362,15 +458,24 @@ digraph G {
 "AMZ-Racing/fssim" -> "FSTDriverless/AirSim"
 "loco-3d/ndcurves" -> "ADVRHumanoids/casadi_kin_dyn"
 "loco-3d/ndcurves" -> "stack-of-tasks/tsid"
+"eurika-kaiser/SINDY-MPC" -> "helgeanl/GP-MPC" ["e"=1]
+"eurika-kaiser/SINDY-MPC" -> "uzh-rpg/data_driven_mpc" ["e"=1]
+"eurika-kaiser/SINDY-MPC" -> "bevanda/Learning-Based-MPC" ["e"=1]
+"eurika-kaiser/SINDY-MPC" -> "OpenOCL/OpenOCL" ["e"=1]
+"eurika-kaiser/SINDY-MPC" -> "lucasrm25/Gaussian-Process-based-Model-Predictive-Control" ["e"=1]
+"gsilano/CrazyS" -> "bcbarbara/crazyflie_nmpc" ["e"=1]
 "cs231n/gcloud" -> "cs231n/cs231n.github.io" ["e"=1]
 "cs231n/gcloud" -> "StanfordASL/AA203-Notes"
 "cs231n/gcloud" -> "cezannec/capsule_net_pytorch" ["e"=1]
 "cs231n/gcloud" -> "chrischute/squad" ["e"=1]
+"chakravala/Grassmann.jl" -> "JuliaGeometry/GeometryBasics.jl" ["e"=1]
 "bamos/thesis" -> "locuslab/qpth"
 "bamos/thesis" -> "locuslab/optnet"
 "bamos/thesis" -> "cvxgrp/cvxpylayers"
 "bamos/thesis" -> "chennnnnyize-zz/Optimal-Control-via-Neural-Networks"
 "bamos/thesis" -> "locuslab/differentiable-mpc"
+"duckietown/gym-duckietown" -> "eleurent/phd-bibliography" ["e"=1]
+"jump-dev/Convex.jl" -> "cvxgrp/scs" ["e"=1]
 "meshcat-dev/meshcat-python" -> "meshcat-dev/meshcat"
 "meshcat-dev/meshcat-python" -> "coal-library/coal" ["e"=1]
 "meshcat-dev/meshcat-python" -> "ami-iit/meshcat-cpp"
@@ -397,6 +502,10 @@ digraph G {
 "mit-racecar/racecar_simulator" -> "mit-racecar/racecar"
 "mit-racecar/racecar_simulator" -> "mit-racecar/racecar_gazebo"
 "mit-racecar/racecar_simulator" -> "Hypha-ROS/hypharos_racecar"
+"imeshsps/ros-navbot" -> "prl-mushr/mushr" ["e"=1]
+"epfl-lts2/pygsp" -> "epfl-lts2/pyunlocbox" ["e"=1]
+"BethanyL/DeepKoopman" -> "arbabiha/KoopmanMPC_for_flowcontrol" ["e"=1]
+"tesseract-robotics/trajopt" -> "loco-3d/crocoddyl" ["e"=1]
 "TUMFTM/sim_vehicle_dynamics" -> "TUMFTM/mod_vehicle_dynamics_control"
 "TUMFTM/sim_vehicle_dynamics" -> "TUMFTM/trajectory_planning_helpers"
 "TUMFTM/sim_vehicle_dynamics" -> "TUMFTM/NeuralNetwork_for_VehicleDynamicsModeling"
@@ -444,6 +553,7 @@ digraph G {
 "alphaville/optimization-engine" -> "sequenceplanner/r2r" ["e"=1]
 "alphaville/optimization-engine" -> "casadi/casadi"
 "alphaville/optimization-engine" -> "osqp/osqp"
+"AtsushiSakai/HybridAStarTrailer" -> "AtsushiSakai/PyAdvancedControl" ["e"=1]
 "istellartech/OpenMOMO" -> "istellartech/OpenTsiolkovsky"
 "urosolia/RacingLMPC" -> "urosolia/LMPC"
 "urosolia/RacingLMPC" -> "urosolia/LMPC_SimpleExample"
@@ -482,6 +592,8 @@ digraph G {
 "ccalas/mpc" -> "OUXT-Polaris/ros_ship_packages" ["e"=1]
 "StanfordASL/stlcg" -> "vincekurtz/stlpy"
 "StanfordASL/stlcg" -> "unstable-zeros/learning-cbfs"
+"uzh-rpg/rpg_mpc" -> "uzh-rpg/data_driven_mpc" ["e"=1]
+"uzh-rpg/rpg_mpc" -> "acado/acado" ["e"=1]
 "AgrawalAmey/safe-explorer" -> "AliBaheri/Safe-Reinforcement-Learning"
 "euge2838/Autonomous_Guidance_MPC_and_LQR-LMI" -> "ajinkya-khade/ACC_Vehicle_MPC"
 "euge2838/Autonomous_Guidance_MPC_and_LQR-LMI" -> "mubowen/Baidu-Apollo-control-algorithm"
@@ -533,6 +645,9 @@ digraph G {
 "jonnyhyman/G-FOLD-Python" -> "istellartech/OpenGoddard"
 "jonnyhyman/G-FOLD-Python" -> "GuodongZhu/Mars-Ascent-Vehicle-Convex-Optimal-Control"
 "jonnyhyman/G-FOLD-Python" -> "Noiredd/PEGAS-MATLAB" ["e"=1]
+"RussTedrake/manipulation" -> "RobotLocomotion/drake" ["e"=1]
+"RussTedrake/manipulation" -> "loco-3d/crocoddyl" ["e"=1]
+"RussTedrake/manipulation" -> "meshcat-dev/meshcat" ["e"=1]
 "HJReachability/fastrack" -> "HJReachability/meta_fastrack"
 "HJReachability/fastrack" -> "HJReachability/helperOC"
 "xiaoyuyang0901/Simulation-platform" -> "tommoy/-lateral-LQR-Autonomous-driving-carsim-simulink-"
@@ -571,6 +686,7 @@ digraph G {
 "dmalyuta/successive_rendezvous" -> "EmbersArc/SuccessiveConvexificationFreeFinalTime"
 "dmalyuta/successive_rendezvous" -> "Lysandr/ECE5555----Convex-Optimal-Rocket-Landing-Guidance"
 "JuliaRobotics/RigidBodySim.jl" -> "JuliaRobotics/RigidBodyDynamics.jl"
+"robotology/idyntree" -> "ami-iit/adam" ["e"=1]
 "CPCLAB-UNIPI/SIPPY" -> "wilsonrljr/sysidentpy"
 "CPCLAB-UNIPI/SIPPY" -> "AndyLamperski/pyN4SID"
 "CPCLAB-UNIPI/SIPPY" -> "jgoppert/sysid"
@@ -584,7 +700,11 @@ digraph G {
 "CPCLAB-UNIPI/SIPPY" -> "AleksandarHaber/Subspace-Identification-State-Space-System-Identification-of-Dynamical-Systems-and-Time-Series-"
 "CPCLAB-UNIPI/SIPPY" -> "MaartenSchoukens/deepSI"
 "CPCLAB-UNIPI/SIPPY" -> "dgedon/DeepSSM_SysID"
+"leggedrobotics/xpp" -> "ethz-adrl/ifopt" ["e"=1]
 "JakobaRmn/Constraint_RL_MPC" -> "FilippoAiraldi/learning-safety-in-mpc-based-rl"
+"ANYbotics/kindr" -> "ethz-adrl/control-toolbox" ["e"=1]
+"ANYbotics/kindr" -> "loco-3d/crocoddyl" ["e"=1]
+"ANYbotics/kindr" -> "ethz-adrl/ifopt" ["e"=1]
 "bbsan2k/plugin.video.f1tv" -> "dut-iptv/dut-iptv"
 "cvxr/TFOCS" -> "cvxr/CVX"
 "LPMP/LPMP" -> "martius-lab/blackbox-deep-graph-matching"
@@ -641,14 +761,18 @@ digraph G {
 "rdeits/MeshCat.jl" -> "MasonProtter/ReplMaker.jl" ["e"=1]
 "giaf/hpmpc" -> "adbuerger/casiopeia"
 "giaf/hpmpc" -> "moehle/cvxpy_codegen"
+"TUMcps/CORA" -> "aalanwar/Data-Driven-Predictive-Control" ["e"=1]
 "balrifaee/Net-MPC_Collision-Avoidance" -> "ZexuWang/MPC_based-nonlinear-trajectory-planning" ["e"=1]
 "balrifaee/Net-MPC_Collision-Avoidance" -> "euge2838/Autonomous_Guidance_MPC_and_LQR-LMI"
+"carlosluis/online_dmpc" -> "chengji253/DMPC-for-multi-agent" ["e"=1]
 "prajval10/Platoon_control" -> "bghojogh/DNMPC-Platooning"
 "prajval10/Platoon_control" -> "mathworks/Truck-Platooning"
 "prajval10/Platoon_control" -> "wzx0hello0wzx/Event_trriggered_MPC_PLATOON"
 "prajval10/Platoon_control" -> "soc-ucsd/DMPC_for_platoons"
 "eufsa/eufs_sim" -> "grafue/SERVO"
 "AMZ-Racing/rbb_core" -> "AMZ-Driverless/rbb_web"
+"rdeits/iris-distro" -> "mpetersen94/gcs" ["e"=1]
+"rdeits/iris-distro" -> "TobiaMarcucci/shortest-paths-in-graphs-of-convex-sets" ["e"=1]
 "mahaarbo/urdf2casadi" -> "ADVRHumanoids/casadi_kin_dyn"
 "mahaarbo/urdf2casadi" -> "mahaarbo/casclik"
 "mahaarbo/urdf2casadi" -> "Gepetto/jnrh2023"
@@ -664,6 +788,8 @@ digraph G {
 "Benny44/QPALM" -> "Benny44/QPALM_vLADEL"
 "AnkushChak89/ApproximateNonlinearMPC" -> "bevanda/Learning-Based-MPC"
 "osqp/osqpth" -> "osqp/osqp-r"
+"kazuotani14/iLQR" -> "RoboticExplorationLab/Altro.jl" ["e"=1]
+"kazuotani14/iLQR" -> "optimusride/altro-cpp" ["e"=1]
 "EmbersArc/PPO" -> "llSourcell/Landing-a-SpaceX-Falcon-Heavy-Rocket"
 "AMZ-Racing/fsd_skeleton" -> "AMZ-Racing/fssim"
 "AMZ-Racing/fsd_skeleton" -> "AMZ-Racing/rbb_core"
@@ -694,6 +820,7 @@ digraph G {
 "theOehrly/Fast-F1" -> "bootsie123/F1-Web-Viewer"
 "theOehrly/Fast-F1" -> "JustAman62/undercut-f1"
 "theOehrly/Fast-F1" -> "tdjsnelling/monaco"
+"Thinklab-SJTU/ThinkMatch" -> "martius-lab/blackbox-deep-graph-matching" ["e"=1]
 "f1tenth/f1tenth_simulator" -> "f1tenth/f1tenth_labs"
 "f1tenth/f1tenth_simulator" -> "f1tenth/f1tenth_gym_ros"
 "f1tenth/f1tenth_simulator" -> "f1tenth/f1tenth_doc"
@@ -701,6 +828,8 @@ digraph G {
 "f1tenth/f1tenth_simulator" -> "f1tenth/f1tenth_gym"
 "f1tenth/f1tenth_simulator" -> "f1tenth/f1tenth_racetracks"
 "f1tenth/f1tenth_simulator" -> "tianbot/tianracer"
+"rlabbe/filterpy" -> "python-control/python-control" ["e"=1]
+"rlabbe/filterpy" -> "do-mpc/do-mpc" ["e"=1]
 "jainachin/bayesrace" -> "mlab-upenn/LearningMPC"
 "mlab-upenn/LearningMPC" -> "mlab-upenn/mpcc"
 "mlab-upenn/LearningMPC" -> "kohonda/proj-svg_mppi" ["e"=1]
@@ -708,6 +837,7 @@ digraph G {
 "mlab-upenn/LearningMPC" -> "jainachin/bayesrace"
 "mlab-upenn/LearningMPC" -> "yuwwang123/LearningMPC"
 "mlab-upenn/LearningMPC" -> "HybridRobotics/car-racing"
+"jonnyhyman/Chaos" -> "jonnyhyman/G-FOLD-Python" ["e"=1]
 "openai/safety-starter-agents" -> "openai/safety-gym"
 "openai/safety-starter-agents" -> "chauncygu/Safe-Reinforcement-Learning-Baselines"
 "openai/safety-starter-agents" -> "jachiam/cpo"
@@ -723,6 +853,10 @@ digraph G {
 "openai/safety-starter-agents" -> "AgrawalAmey/safe-explorer"
 "openai/safety-starter-agents" -> "SapanaChaudhary/PyTorch-CPO"
 "openai/safety-starter-agents" -> "liuzuxin/safe-mbrl"
+"lava/matplotlib-cpp" -> "ethz-adrl/control-toolbox" ["e"=1]
+"lava/matplotlib-cpp" -> "osqp/osqp" ["e"=1]
+"utiasDSL/gym-pybullet-drones" -> "utiasDSL/safe-control-gym" ["e"=1]
+"zhm-real/MotionPlanning" -> "alexliniger/MPCC" ["e"=1]
 "python-control/python-control" -> "do-mpc/do-mpc"
 "python-control/python-control" -> "python-control/Slycot" ["e"=1]
 "python-control/python-control" -> "JuliaControl/ControlSystems.jl" ["e"=1]
@@ -766,6 +900,9 @@ digraph G {
 "cvxgrp/cvxpylayers" -> "bamos/thesis"
 "cvxgrp/cvxpylayers" -> "cvxgrp/diffcp"
 "cvxgrp/cvxpylayers" -> "locuslab/deq" ["e"=1]
+"robomechanics/quad-sdk" -> "loco-3d/crocoddyl" ["e"=1]
+"open-dynamic-robot-initiative/open_robot_actuator_hardware" -> "loco-3d/crocoddyl" ["e"=1]
+"boston-dynamics/spot-sdk" -> "RobotLocomotion/drake" ["e"=1]
 "TUMFTM/ScenarioArchitect" -> "TUMFTM/trajectory_planning_helpers"
 "lugh56/control-and-system-book" -> "ethz-adrl/control-toolbox"
 "lugh56/control-and-system-book" -> "leggedrobotics/ocs2" ["e"=1]
@@ -774,6 +911,8 @@ digraph G {
 "lugh56/control-and-system-book" -> "yrlu/quadrotor" ["e"=1]
 "lugh56/control-and-system-book" -> "HybridRobotics/NMPC-DCLF-DCBF"
 "lugh56/control-and-system-book" -> "MatthewPeterKelly/OptimTraj"
+"lcm-proj/lcm" -> "RobotLocomotion/drake" ["e"=1]
+"lcm-proj/lcm" -> "loco-3d/crocoddyl" ["e"=1]
 "leoking99-BIT/MPC-for-Self-driving-Vehicles" -> "1PandaDing/Matlab-simulink-"
 "leoking99-BIT/MPC-for-Self-driving-Vehicles" -> "NezaRIP/carsim-simulink-MPC-controller-practice"
 "leoking99-BIT/MPC-for-Self-driving-Vehicles" -> "xiaoyuyang0901/Simulation-platform"
@@ -783,6 +922,7 @@ digraph G {
 "tomcattiger1230/CasADi_MPC_MHE_Python" -> "devsonni/MPC-Implementation"
 "tomcattiger1230/CasADi_MPC_MHE_Python" -> "duynamrcv/mpc_casadi"
 "tomcattiger1230/CasADi_MPC_MHE_Python" -> "duynamrcv/quadrotor_mpc"
+"kengz/awesome-deep-rl" -> "chauncygu/Safe-Reinforcement-Learning-Baselines" ["e"=1]
 "f1tenth/f1tenth_system" -> "f1tenth/f1tenth_gym"
 "f1tenth/f1tenth_system" -> "f1tenth/vesc"
 "f1tenth/f1tenth_system" -> "f1tenth/f1tenth_gym_ros"
@@ -808,12 +948,24 @@ digraph G {
 "robvdpol/RaceControl" -> "kodosexe/F1Hub"
 "robvdpol/RaceControl" -> "MRAJEKO/UF1-Viewer-with-F1MV"
 "robvdpol/RaceControl" -> "fullhunt/spring4shell-scan"
+"DrTimothyAldenDavis/SuiteSparse" -> "embotech/ecos" ["e"=1]
 "albarji/proxTV" -> "glmgen/glmgen"
 "albarji/proxTV" -> "simoneparisotto/TDV-for-image-denoising"
 "albarji/proxTV" -> "WanglifuCV/TotalVariationAlgorithms"
 "albarji/proxTV" -> "jakobsj/TVReg"
 "albarji/proxTV" -> "pmelchior/proxmin"
 "albarji/proxTV" -> "adler-j/learned_primal_dual" ["e"=1]
+"dynamicslab/databook_python" -> "pnnl/neuromancer" ["e"=1]
+"RussTedrake/underactuated" -> "RobotLocomotion/drake" ["e"=1]
+"RussTedrake/underactuated" -> "loco-3d/crocoddyl" ["e"=1]
+"RussTedrake/underactuated" -> "ethz-adrl/control-toolbox" ["e"=1]
+"RussTedrake/underactuated" -> "ethz-adrl/ifopt" ["e"=1]
+"RussTedrake/underactuated" -> "giaf/hpipm" ["e"=1]
+"RussTedrake/underactuated" -> "MatthewPeterKelly/OptimTraj" ["e"=1]
+"jwangjie/Gaussian-Process-Regression-Tutorial" -> "helgeanl/GP-MPC" ["e"=1]
+"jwangjie/Gaussian-Process-Regression-Tutorial" -> "Eric-Bradford/SDD-GP-MPC" ["e"=1]
+"jwangjie/Gaussian-Process-Regression-Tutorial" -> "lucasrm25/Gaussian-Process-based-Model-Predictive-Control" ["e"=1]
+"jwangjie/Gaussian-Process-Regression-Tutorial" -> "uzh-rpg/data_driven_mpc" ["e"=1]
 "openai/safety-gym" -> "openai/safety-starter-agents"
 "openai/safety-gym" -> "PKU-Alignment/safety-gymnasium"
 "openai/safety-gym" -> "chauncygu/Safe-Reinforcement-Learning-Baselines"
@@ -829,8 +981,12 @@ digraph G {
 "openai/safety-gym" -> "facebookresearch/mbrl-lib" ["e"=1]
 "openai/safety-gym" -> "zlr20/saferl_kit"
 "openai/safety-gym" -> "liuzuxin/OSRL"
+"UM-ARM-Lab/pytorch_mppi" -> "Tim-Salzmann/l4casadi" ["e"=1]
+"UM-ARM-Lab/pytorch_mppi" -> "se-hwan/cusadi" ["e"=1]
+"UM-ARM-Lab/pytorch_mppi" -> "locuslab/mpc.pytorch" ["e"=1]
 "urosolia/LMPC" -> "urosolia/LMPC_SimpleExample"
 "urosolia/LMPC" -> "urosolia/RacingLMPC"
+"roboticslibrary/rl" -> "ethz-adrl/control-toolbox" ["e"=1]
 "SFU-MARS/optimized_dp" -> "StanfordASL/hj_reachability"
 "SFU-MARS/optimized_dp" -> "HJReachability/helperOC"
 "SFU-MARS/optimized_dp" -> "smlbansal/deepreach"
@@ -838,6 +994,10 @@ digraph G {
 "SFU-MARS/optimized_dp" -> "risk-sensitive-reachability/ToolboxLS"
 "SFU-MARS/optimized_dp" -> "SafeRoboticsLab/SHARP"
 "SFU-MARS/optimized_dp" -> "HJReachability/safety_rl"
+"uzh-rpg/high_mpc" -> "uzh-rpg/data_driven_mpc" ["e"=1]
+"uzh-rpg/high_mpc" -> "TUM-AAS/neural-mpc" ["e"=1]
+"uzh-rpg/high_mpc" -> "utiasDSL/safe-control-gym" ["e"=1]
+"uzh-rpg/high_mpc" -> "Tim-Salzmann/l4casadi" ["e"=1]
 "f1tenth/f1tenth_gym" -> "f1tenth/f1tenth_gym_ros"
 "f1tenth/f1tenth_gym" -> "f1tenth/f1tenth_system"
 "f1tenth/f1tenth_gym" -> "f1tenth/f1tenth_simulator"
@@ -853,6 +1013,7 @@ digraph G {
 "f1tenth/f1tenth_gym" -> "JohannesBetz/AutonomousRacing_Literature"
 "f1tenth/f1tenth_gym" -> "f1tenth-dev/simulator"
 "f1tenth/f1tenth_gym" -> "ETH-PBL/TC-Driver"
+"openai/procgen" -> "openai/safety-gym" ["e"=1]
 "HybridRobotics/MPC-CBF" -> "HybridRobotics/NMPC-DCLF-DCBF"
 "HybridRobotics/MPC-CBF" -> "HybridRobotics/CBF-CLF-Helper"
 "HybridRobotics/MPC-CBF" -> "HybridRobotics/car-racing"
@@ -865,10 +1026,24 @@ digraph G {
 "HybridRobotics/MPC-CBF" -> "rcheng805/RL-CBF"
 "HybridRobotics/MPC-CBF" -> "hocherie/cbf_quadrotor"
 "abhimasand/AI-Assetto-Corsa" -> "Jurredr/ACRL"
+"cybergalactic/PythonVehicleSimulator" -> "XueYifan1995/Real-time-NMPC-for-USVs-CasADi" ["e"=1]
+"Daybr4ak/ShiroScan" -> "Summer177/seeyon_exp" ["e"=1]
+"rbdl/rbdl" -> "loco-3d/crocoddyl" ["e"=1]
+"rbdl/rbdl" -> "ethz-adrl/control-toolbox" ["e"=1]
+"rbdl/rbdl" -> "stack-of-tasks/tsid" ["e"=1]
+"rbdl/rbdl" -> "coin-or/qpOASES" ["e"=1]
+"raisimTech/raisimLib" -> "mayataka/robotoc" ["e"=1]
+"libprima/prima" -> "cvanaret/Uno" ["e"=1]
 "mjl/particle_filter_demo" -> "leimao/Particle-Filter"
 "mjl/particle_filter_demo" -> "NewProggie/Particle-Filter" ["e"=1]
 "mjl/particle_filter_demo" -> "mit-racecar/particle_filter"
 "mjl/particle_filter_demo" -> "ydsf16/particle_filter_localization"
+"leggedrobotics/ros_best_practices" -> "ethz-adrl/control-toolbox" ["e"=1]
+"vprusso/toqito" -> "nathanieljohnston/QETLAB" ["e"=1]
+"facebookresearch/higher" -> "cvxgrp/cvxpylayers" ["e"=1]
+"dartsim/dart" -> "RobotLocomotion/drake" ["e"=1]
+"dartsim/dart" -> "loco-3d/crocoddyl" ["e"=1]
+"ami-iit/bipedal-locomotion-framework" -> "ADVRHumanoids/casadi_kin_dyn" ["e"=1]
 "coin-or/qpOASES" -> "giaf/hpipm"
 "coin-or/qpOASES" -> "robotology/osqp-eigen"
 "coin-or/qpOASES" -> "google/osqp-cpp"
@@ -884,10 +1059,19 @@ digraph G {
 "coin-or/qpOASES" -> "matheecs/ocs2_legged_robot_notes" ["e"=1]
 "coin-or/qpOASES" -> "qiayuanl/legged_control" ["e"=1]
 "coin-or/qpOASES" -> "casadi/casadi"
+"JuliaGeometry/Meshes.jl" -> "JuliaGeometry/GeometryBasics.jl" ["e"=1]
 "nirajbasnet/Nonlinear_MPCC_for_autonomous_racing" -> "mlab-upenn/mpcc"
 "nirajbasnet/Nonlinear_MPCC_for_autonomous_racing" -> "wueestry/f110-mpcc"
 "nirajbasnet/Nonlinear_MPCC_for_autonomous_racing" -> "mlab-upenn/LearningMPC"
 "nirajbasnet/Nonlinear_MPCC_for_autonomous_racing" -> "MPC-Berkeley/Racing-LMPC-ROS2"
+"upb-lea/reinforcement_learning_course_materials" -> "pnnl/neuromancer" ["e"=1]
+"uzh-rpg/deep_drone_acrobatics" -> "uzh-rpg/data_driven_mpc" ["e"=1]
+"rusty1s/deep-graph-matching-consensus" -> "martius-lab/blackbox-deep-graph-matching" ["e"=1]
+"ds4dm/ecole" -> "martius-lab/blackbox-backprop" ["e"=1]
+"YukunXia/Carla_iLQR_MPC" -> "mlab-upenn/LearningMPC" ["e"=1]
+"YukunXia/Carla_iLQR_MPC" -> "urosolia/RacingLMPC" ["e"=1]
+"lezcano/geotorch" -> "cvxgrp/cvxpylayers" ["e"=1]
+"trackmania-rl/tmrl" -> "learn-to-race/l2r" ["e"=1]
 "matssteinweg/Multi-Purpose-MPC" -> "taewankim1/robust_mpc_obstacle_avoidance"
 "matssteinweg/Multi-Purpose-MPC" -> "samarth-kalluraya/Obstacle_Avoidance_MPC_Controller_A_star_Planning"
 "matssteinweg/Multi-Purpose-MPC" -> "rst-tu-dortmund/mpc_local_planner" ["e"=1]
@@ -903,8 +1087,14 @@ digraph G {
 "matssteinweg/Multi-Purpose-MPC" -> "mcarfagno/mpc_python" ["e"=1]
 "matssteinweg/Multi-Purpose-MPC" -> "XiaojingGeorgeZhang/OBCA" ["e"=1]
 "matssteinweg/Multi-Purpose-MPC" -> "tud-amr/amr-lmpcc" ["e"=1]
+"stack-of-tasks/pinocchio" -> "loco-3d/crocoddyl" ["e"=1]
+"stack-of-tasks/pinocchio" -> "RobotLocomotion/drake" ["e"=1]
+"stack-of-tasks/pinocchio" -> "ethz-adrl/control-toolbox" ["e"=1]
 "coin-or/Ipopt" -> "coin-or/Clp.old"
 "coin-or/Ipopt" -> "coin-or/Cbc.old"
+"locuslab/deq" -> "cvxgrp/cvxpylayers" ["e"=1]
+"locuslab/deq" -> "locuslab/optnet" ["e"=1]
+"PatWie/CppNumericalSolvers" -> "ethz-adrl/ifopt" ["e"=1]
 "toUpperCase78/formula1-datasets" -> "f1db/f1db"
 "toUpperCase78/formula1-datasets" -> "davidor/formula1-lap-charts"
 "toUpperCase78/formula1-datasets" -> "br-g/openf1"
@@ -985,10 +1175,22 @@ digraph G {
 "tianbot/tianracer" -> "pmusau17/Platooning-F1Tenth"
 "mc12027/OpenLAP-Lap-Time-Simulator" -> "TUMFTM/laptime-simulation"
 "mc12027/OpenLAP-Lap-Time-Simulator" -> "dstrassera/OpenLapSim"
+"MadNLP/MadNLP.jl" -> "cvanaret/Uno" ["e"=1]
 "sportstimes/f1" -> "jolpica/jolpica-f1"
 "sportstimes/f1" -> "slowlydev/f1-dash"
 "sportstimes/f1" -> "SoMuchForSubtlety/f1viewer"
 "sportstimes/f1" -> "f1db/f1db"
+"coal-library/coal" -> "stack-of-tasks/tsid" ["e"=1]
+"coal-library/coal" -> "loco-3d/crocoddyl" ["e"=1]
+"coal-library/coal" -> "Simple-Robotics/aligator" ["e"=1]
+"coal-library/coal" -> "Simple-Robotics/Simple" ["e"=1]
+"coal-library/coal" -> "Simple-Robotics/proxsuite" ["e"=1]
+"coal-library/coal" -> "Gepetto/example-robot-data" ["e"=1]
+"xuy/pyipopt" -> "coin-or/Ipopt" ["e"=1]
+"erwincoumans/tiny-differentiable-simulator" -> "loco-3d/crocoddyl" ["e"=1]
+"erwincoumans/tiny-differentiable-simulator" -> "dojo-sim/Dojo.jl" ["e"=1]
+"erwincoumans/tiny-differentiable-simulator" -> "ethz-adrl/ifopt" ["e"=1]
+"erwincoumans/tiny-differentiable-simulator" -> "ethz-adrl/control-toolbox" ["e"=1]
 "duburcqa/jiminy" -> "ADVRHumanoids/casadi_kin_dyn"
 "duburcqa/jiminy" -> "stack-of-tasks/tsid"
 "duburcqa/jiminy" -> "mayataka/robotoc"
@@ -999,7 +1201,11 @@ digraph G {
 "duburcqa/jiminy" -> "Simple-Robotics/aligator"
 "duburcqa/jiminy" -> "Simple-Robotics/proxsuite"
 "duburcqa/jiminy" -> "stephane-caron/lipm_walking_controller" ["e"=1]
+"keenon/nimblephysics" -> "dojo-sim/Dojo.jl" ["e"=1]
 "davidor/formula1-lap-charts" -> "gronberg/f1lt"
+"JuliaControl/ControlSystems.jl" -> "JuliaRobotics/RigidBodyDynamics.jl" ["e"=1]
+"pparmesh/Constrained_ILQR" -> "RoboticExplorationLab/Altro.jl" ["e"=1]
+"araffin/rl-tutorial-jnrr19" -> "openai/safety-gym" ["e"=1]
 "UW-ACL/SCPToolbox.jl" -> "UW-ACL/SCPToolbox_tutorial"
 "UW-ACL/SCPToolbox.jl" -> "EmbersArc/SCvx"
 "UW-ACL/SCPToolbox.jl" -> "EmbersArc/SCpp"
@@ -1023,6 +1229,7 @@ digraph G {
 "liuzuxin/MPC_template-model_predictive_control_for_reinforcement_learning" -> "DangFengying/RL-based-event-triggered-MPC"
 "liuzuxin/MPC_template-model_predictive_control_for_reinforcement_learning" -> "jlubars/RL-MPC-LaneMerging"
 "liuzuxin/MPC_template-model_predictive_control_for_reinforcement_learning" -> "bevanda/Learning-Based-MPC"
+"moribots/motion_planning" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
 "axelbr/racecar_gym" -> "CPS-TUWien/racing_dreamer"
 "axelbr/racecar_gym" -> "ffelten/CrazyRL"
 "axelbr/racecar_gym" -> "learn-to-race/l2r"
@@ -1066,6 +1273,8 @@ digraph G {
 "f1tenth/f1tenth_gym_ros" -> "CL2-UWaterloo/f1tenth_ws"
 "f1tenth/f1tenth_gym_ros" -> "HiPeRT/unimore_roboracer"
 "f1tenth/f1tenth_gym_ros" -> "MichaelBosello/f1tenth-RL"
+"google-research/realworldrl_suite" -> "openai/safety-gym" ["e"=1]
+"fabiopardo/tonic" -> "openai/safety-gym" ["e"=1]
 "stack-of-tasks/eigenpy" -> "Simple-Robotics/proxsuite-nlp"
 "stack-of-tasks/eigenpy" -> "Simple-Robotics/LoIK"
 "stack-of-tasks/eigenpy" -> "Simple-Robotics/aligator"
@@ -1077,6 +1286,7 @@ digraph G {
 "stack-of-tasks/eigenpy" -> "Gepetto/example-robot-data"
 "coin-or/Clp.old" -> "coin-or/Cbc.old"
 "coin-or/Clp.old" -> "coin-or/Osi.old"
+"fupinglee/ShiroScan" -> "xinyu2428/TDOA_RCE" ["e"=1]
 "RoboticExplorationLab/Altro.jl" -> "RoboticExplorationLab/TrajectoryOptimization.jl"
 "RoboticExplorationLab/Altro.jl" -> "optimusride/altro-cpp"
 "RoboticExplorationLab/Altro.jl" -> "RoboticExplorationLab/ALTRO"
@@ -1224,6 +1434,15 @@ digraph G {
 "RoboticExplorationLab/RobotZoo.jl" -> "RoboticExplorationLab/RobotDynamics.jl"
 "maartenflippo/f1tv-tweaks" -> "MarkusTheOrt/F1TVUnofficial"
 "RoboticExplorationLab/RobotDynamics.jl" -> "RoboticExplorationLab/RobotZoo.jl"
+"leggedrobotics/ocs2" -> "loco-3d/crocoddyl" ["e"=1]
+"petercorke/robotics-toolbox-matlab" -> "ethz-adrl/control-toolbox" ["e"=1]
+"petercorke/robotics-toolbox-matlab" -> "RobotLocomotion/drake" ["e"=1]
+"mathworks/MATLAB-Simulink-Challenge-Project-Hub" -> "ethz-adrl/control-toolbox" ["e"=1]
+"mathworks/MATLAB-Simulink-Challenge-Project-Hub" -> "do-mpc/do-mpc" ["e"=1]
+"khalil-research/PyEPO" -> "pnnl/neuromancer" ["e"=1]
+"petercorke/robotics-toolbox-python" -> "RobotLocomotion/drake" ["e"=1]
+"petercorke/robotics-toolbox-python" -> "loco-3d/crocoddyl" ["e"=1]
+"petercorke/robotics-toolbox-python" -> "ethz-adrl/control-toolbox" ["e"=1]
 "Jared-Chan/f1ml" -> "TomWebster98/Race-Strategy-Analysis"
 "Jared-Chan/f1ml" -> "chandanamulagund/Maximizing-Performance-Data-Analysis-of-Formula-1-Driver-and-Race-Data"
 "do-mpc/do-mpc" -> "locuslab/mpc.pytorch"
@@ -1253,6 +1472,8 @@ digraph G {
 "HybridRobotics/NMPC-DCLF-DCBF" -> "shaoanlu/mppi_cbf"
 "HybridRobotics/NMPC-DCLF-DCBF" -> "buntonj/CLF-CBF-QP"
 "HybridRobotics/NMPC-DCLF-DCBF" -> "elena-ecn/mpc-cbf"
+"coin-or/pulp" -> "coin-or/Ipopt" ["e"=1]
+"rust-or/good_lp" -> "oxfordcontrol/Clarabel.rs" ["e"=1]
 "SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control" -> "Eric-Bradford/SDD-GP-MPC"
 "SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control" -> "helgeanl/GP-MPC"
 "SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control" -> "liuzuxin/MPC_template-model_predictive_control_for_reinforcement_learning"
@@ -1313,6 +1534,9 @@ digraph G {
 "HybridRobotics/car-racing" -> "mlab-upenn/LearningMPC"
 "f1tenth/f1tenth_racetracks" -> "f1tenth/f1tenth_planning"
 "f1tenth/f1tenth_racetracks" -> "f1tenth/AutonomousRacing_Literature"
+"pantor/ruckig" -> "loco-3d/crocoddyl" ["e"=1]
+"stephane-caron/pymanoid" -> "mayataka/robotoc" ["e"=1]
+"stephane-caron/pymanoid" -> "loco-3d/crocoddyl" ["e"=1]
 "jlubars/RL-MPC-LaneMerging" -> "KaguraTart/SUMO-RL-ramp-control"
 "jlubars/RL-MPC-LaneMerging" -> "DongChen06/MARL_CAVs" ["e"=1]
 "jlubars/RL-MPC-LaneMerging" -> "JakobaRmn/Constraint_RL_MPC"
@@ -1320,6 +1544,7 @@ digraph G {
 "jlubars/RL-MPC-LaneMerging" -> "DangFengying/RL-based-event-triggered-MPC"
 "jlubars/RL-MPC-LaneMerging" -> "FilippoAiraldi/learning-safety-in-mpc-based-rl"
 "jlubars/RL-MPC-LaneMerging" -> "mahmoudtaouti/RL_Highway_Merge"
+"tinyzqh/light_mappo" -> "chauncygu/Multi-Agent-Constrained-Policy-Optimisation" ["e"=1]
 "pnnl/neuromancer" -> "Tim-Salzmann/l4casadi"
 "pnnl/neuromancer" -> "do-mpc/do-mpc"
 "pnnl/neuromancer" -> "khalil-research/PyEPO" ["e"=1]
@@ -1353,7 +1578,9 @@ digraph G {
 "bootsie123/F1-Web-Viewer" -> "SoMuchForSubtlety/f1viewer"
 "bootsie123/F1-Web-Viewer" -> "robvdpol/RaceControl"
 "bootsie123/F1-Web-Viewer" -> "leonardoxh/race-control-tv"
+"Pandas-Team/Automatic-Parking" -> "HybridRobotics/car-racing" ["e"=1]
 "locuslab/DC3" -> "locuslab/optnet"
+"jrl-umi3218/RBDyn" -> "ADVRHumanoids/casadi_kin_dyn" ["e"=1]
 "Carbon-for-F1TV/Carbon-for-F1TV" -> "bootsie123/F1-Web-Viewer"
 "Carbon-for-F1TV/Carbon-for-F1TV" -> "iebb/F1WebViewer-SelfHosted"
 "Carbon-for-F1TV/Carbon-for-F1TV" -> "WesselKroos/race-tv-multiplayer"
@@ -1388,17 +1615,23 @@ digraph G {
 "APMonitor/pds" -> "APMonitor/data_science"
 "APMonitor/pds" -> "APMonitor/dynopt"
 "APMonitor/pds" -> "APMonitor/mdc"
+"ARCaD-Lab-UM/RF-MPC" -> "mayataka/robotoc" ["e"=1]
+"DongChen06/MARL_CAVs" -> "jlubars/RL-MPC-LaneMerging" ["e"=1]
+"DongChen06/MARL_CAVs" -> "mahmoudtaouti/RL_Highway_Merge" ["e"=1]
 "jonathancurrie/OPTI" -> "ebertolazzi/mexIPOPT"
 "jonathancurrie/OPTI" -> "yalmip/YALMIP"
 "jonathancurrie/OPTI" -> "sqlp/sdpt3"
 "jonathancurrie/OPTI" -> "unstable-zeros/robust-mpc-sls"
 "jonathancurrie/OPTI" -> "xiaoyuyang0901/Simulation-platform"
+"UM-ARM-Lab/pytorch_kinematics" -> "se-hwan/cusadi" ["e"=1]
+"UM-ARM-Lab/pytorch_kinematics" -> "loco-3d/crocoddyl" ["e"=1]
 "aalanwar/Data-Driven-Reachability-Analysis" -> "aalanwar/Data-Driven-Predictive-Control"
 "nosnoc/LCQPow" -> "nosnoc/nosnoc_py"
 "z1un/weaver_exp" -> "Summer177/seeyon_exp"
 "z1un/weaver_exp" -> "xinyu2428/TDOA_RCE"
 "mathworks/vehicle-model-predictive-control" -> "souhaiel1/Longitudinal-and-Lateral-Control-of-an-automotive-vehicle"
 "mathworks/vehicle-model-predictive-control" -> "wilkerson-102/OSU-ADAS-MPC"
+"mechmotum/cyipopt" -> "coin-or/Ipopt" ["e"=1]
 "xinyu2428/TDOA_RCE" -> "Summer177/seeyon_exp"
 "xinyu2428/TDOA_RCE" -> "z1un/weaver_exp"
 "smlbansal/deepreach" -> "StanfordASL/hj_reachability"
@@ -1428,6 +1661,8 @@ digraph G {
 "vincekurtz/stlpy" -> "yotakayama/STLCCP"
 "vincekurtz/stlpy" -> "anand-bala/signal-temporal-logic"
 "Ro3code/aircraft_3d_animation" -> "Ro3code/x15_adaptive_flight_control_system"
+"cvxgrp/cvx_short_course" -> "cvxgrp/cvxpygen" ["e"=1]
+"cvxgrp/cvx_short_course" -> "cvxgrp/cocp" ["e"=1]
 "cvxgrp/cvxpygen" -> "cvxgrp/diffcp"
 "cvxgrp/cvxpygen" -> "cvxgrp/cocp"
 "cvxgrp/cvxpygen" -> "UW-ACL/pipg-demo"
@@ -1447,7 +1682,13 @@ digraph G {
 "PSOPT/psopt" -> "giaf/hpipm"
 "PSOPT/psopt" -> "JuliaMPC/NLOptControl.jl"
 "hanlinniu/multiple_usvs_collision_avoidance" -> "fxqinnovation/mpc4usv"
+"brentyi/jaxls" -> "ami-iit/jaxsim" ["e"=1]
+"brentyi/jaxlie" -> "kevin-tracy/qpax" ["e"=1]
+"brentyi/jaxlie" -> "ami-iit/jaxsim" ["e"=1]
+"young-geng/CQL" -> "ZhengYinan-AIR/FISOR" ["e"=1]
+"young-geng/CQL" -> "ryanxhr/POR" ["e"=1]
 "XiaoLi996/OA-EXP" -> "z1un/weaver_exp"
+"joaoleal/CppADCodeGen" -> "coin-or/CppAD" ["e"=1]
 "ami-iit/adam" -> "ami-iit/jaxsim"
 "ami-iit/adam" -> "se-hwan/cusadi"
 "ami-iit/adam" -> "ami-iit/liecasadi"
@@ -1466,6 +1707,7 @@ digraph G {
 "APMonitor/apm_python" -> "APMonitor/apopt"
 "APMonitor/apm_python" -> "APMonitor/arduino"
 "Zhaofeng-Tian/Adaptive-Cruise-Control-System-Modelling" -> "TalhaRao/Adaptive-Cruise-Control"
+"HybridRobotics/Lane-Change-CBF" -> "HybridRobotics/car-racing" ["e"=1]
 "ymzhang01/focops" -> "zmsn-2077/CUP-safe-rl"
 "ROAM-Lab-ND/spatial_v2_extended" -> "ROAM-Lab-ND/HS-DDP-MATLAB"
 "machines-in-motion/biconvex_mpc" -> "machines-in-motion/minimal_examples_crocoddyl"
@@ -1499,6 +1741,8 @@ digraph G {
 "taewankim1/sequential_convex_programming" -> "BenChung/SuccessiveConvexification"
 "ossamaAhmed/blackbox_mpc" -> "UtkarshMishra04/DMD-MPC-RL"
 "mahaitongdae/Feasible-Actor-Critic" -> "mahaitongdae/Reachability_Constrained_RL"
+"kiloreux/awesome-robotics" -> "RobotLocomotion/drake" ["e"=1]
+"google-deepmind/mujoco" -> "RobotLocomotion/drake" ["e"=1]
 "chauncygu/Safe-Reinforcement-Learning-Baselines" -> "openai/safety-starter-agents"
 "chauncygu/Safe-Reinforcement-Learning-Baselines" -> "PKU-Alignment/omnisafe"
 "chauncygu/Safe-Reinforcement-Learning-Baselines" -> "PKU-Alignment/safety-gymnasium"
@@ -1514,10 +1758,19 @@ digraph G {
 "chauncygu/Safe-Reinforcement-Learning-Baselines" -> "chauncygu/Safe-Multi-Agent-Mujoco"
 "chauncygu/Safe-Reinforcement-Learning-Baselines" -> "liuzuxin/cvpo-safe-rl"
 "chauncygu/Safe-Reinforcement-Learning-Baselines" -> "MIT-REALM/neural_clbf"
+"VincentWong3/automatic-driving-decision-and-planning-for-matlab" -> "leoking99-BIT/MPC-for-Self-driving-Vehicles" ["e"=1]
+"symengine/symengine" -> "casadi/casadi" ["e"=1]
 "nosnoc/nosnoc" -> "nosnoc/nosnoc_py"
 "nosnoc/nosnoc" -> "nosnoc/LCQPow"
 "nosnoc/nosnoc" -> "FreyJo/casados-integrators"
 "nosnoc/nosnoc" -> "minlp-toolbox/CAMINO"
+"stephane-caron/pink" -> "stack-of-tasks/tsid" ["e"=1]
+"stephane-caron/pink" -> "se-hwan/cusadi" ["e"=1]
+"stephane-caron/pink" -> "loco-3d/crocoddyl" ["e"=1]
+"stephane-caron/pink" -> "Simple-Robotics/aligator" ["e"=1]
+"robot-descriptions/awesome-robot-descriptions" -> "loco-3d/crocoddyl" ["e"=1]
+"robot-descriptions/awesome-robot-descriptions" -> "Gepetto/example-robot-data" ["e"=1]
+"lagadic/visp" -> "ethz-adrl/control-toolbox" ["e"=1]
 "f1db/f1db" -> "toUpperCase78/formula1-datasets"
 "f1db/f1db" -> "jolpica/jolpica-f1"
 "f1db/f1db" -> "br-g/openf1"
@@ -1525,6 +1778,7 @@ digraph G {
 "f1db/f1db" -> "slowlydev/f1-dash"
 "f1db/f1db" -> "f1stuff/f1-live-data"
 "f1db/f1db" -> "bacinger/f1-circuits"
+"CHH3213/chhRobotics" -> "matssteinweg/Multi-Purpose-MPC" ["e"=1]
 "brunofloriano/NN_MPC" -> "ZhuLinche/DeepMPC"
 "brunofloriano/NN_MPC" -> "bevanda/Learning-Based-MPC"
 "fullhunt/spring4shell-scan" -> "metaStor/SpringScan" ["e"=1]
@@ -1532,6 +1786,13 @@ digraph G {
 "fullhunt/spring4shell-scan" -> "0x727/SpringBootExploit" ["e"=1]
 "fullhunt/spring4shell-scan" -> "pmiaowu/BurpFastJsonScan" ["e"=1]
 "fullhunt/spring4shell-scan" -> "z1un/weaver_exp"
+"symforce-org/symforce" -> "acados/acados" ["e"=1]
+"symforce-org/symforce" -> "ethz-adrl/control-toolbox" ["e"=1]
+"yingchengyang/Reinforcement-Learning-Papers" -> "liuzuxin/OSRL" ["e"=1]
+"facebookresearch/theseus" -> "cvxgrp/cvxpylayers" ["e"=1]
+"nicklashansen/tdmpc" -> "TUM-AAS/ml-casadi" ["e"=1]
+"nicklashansen/tdmpc" -> "FilippoAiraldi/mpc-reinforcement-learning" ["e"=1]
+"vista-simulator/vista" -> "JohannesBetz/AutonomousRacing_Literature" ["e"=1]
 "MPC-Berkeley/barc" -> "MPC-Berkeley/genesis_path_follower"
 "MPC-Berkeley/barc" -> "urosolia/RacingLMPC"
 "MPC-Berkeley/barc" -> "urosolia/LMPC_SimpleExample"
@@ -1583,6 +1844,7 @@ digraph G {
 "Optimal-Control-16-745/lecture-notebooks-2022" -> "mpetersen94/gcs"
 "Optimal-Control-16-745/lecture-notebooks-2022" -> "RoboticExplorationLab/Altro.jl"
 "Optimal-Control-16-745/lecture-notebooks-2022" -> "kevin-tracy/DifferentiableCollisions.jl"
+"Bharath2/iLQR" -> "RoboticExplorationLab/Altro.jl" ["e"=1]
 "yalmip/YALMIP" -> "sqlp/sedumi"
 "yalmip/YALMIP" -> "sqlp/sdpt3"
 "yalmip/YALMIP" -> "cvxr/CVX"
@@ -1610,11 +1872,16 @@ digraph G {
 "dojo-sim/Dojo.jl" -> "RoboticExplorationLab/Altro.jl"
 "dojo-sim/Dojo.jl" -> "thowell/optimization_dynamics"
 "dojo-sim/Dojo.jl" -> "keenon/nimblephysics" ["e"=1]
+"giacomo-b/CppRobotics" -> "ethz-adrl/control-toolbox" ["e"=1]
 "ebertolazzi/mexIPOPT" -> "jonathancurrie/OPTI"
+"boschresearch/torchphysics" -> "pnnl/neuromancer" ["e"=1]
+"benmoseley/harmonic-oscillator-pinn" -> "pnnl/neuromancer" ["e"=1]
 "soc-ucsd/DeeP-LCC" -> "soc-ucsd/Decentralized-DeeP-LCC"
 "qpSWIFT/qpSWIFT" -> "ROAM-Lab-ND/spatial_v2_extended"
 "qpSWIFT/qpSWIFT" -> "Simple-Robotics/proxsuite-nlp"
 "JuliaDecisionFocusedLearning/InferOpt.jl" -> "JuliaDecisionFocusedLearning/ImplicitDifferentiation.jl" ["e"=1]
+"oxfordcontrol/Clarabel.jl" -> "oxfordcontrol/Clarabel.rs" ["e"=1]
+"oxfordcontrol/Clarabel.jl" -> "cvanaret/Uno" ["e"=1]
 "quadprog/quadprog" -> "qpsolvers/qpsolvers"
 "quadprog/quadprog" -> "liuq/QuadProgpp"
 "quadprog/quadprog" -> "qpSWIFT/qpSWIFT"
@@ -1636,6 +1903,7 @@ digraph G {
 "juanmanzanero/fastest-lap" -> "mc12027/OpenLAP-Lap-Time-Simulator"
 "juanmanzanero/fastest-lap" -> "bacinger/f1-circuits"
 "juanmanzanero/fastest-lap" -> "teasit/magic-formula-tyre-tool"
+"cyanrain7/TRPO-in-MARL" -> "chauncygu/Multi-Agent-Constrained-Policy-Optimisation" ["e"=1]
 "Jonas-Nicodemus/PINNs-based-MPC" -> "shiivashaakeri/Data-Driven-Model-Predictive-Control-MPC-with-Stability-and-Robustness-Guarantees"
 "Simple-Robotics/proxsuite" -> "Simple-Robotics/aligator"
 "Simple-Robotics/proxsuite" -> "giaf/hpipm"
@@ -1652,6 +1920,7 @@ digraph G {
 "Simple-Robotics/proxsuite" -> "leggedrobotics/ocs2" ["e"=1]
 "Simple-Robotics/proxsuite" -> "robotology/osqp-eigen"
 "Simple-Robotics/proxsuite" -> "giaf/blasfeo"
+"TUMFTM/EthicalTrajectoryPlanning" -> "TUMFTM/trajectory_planning_helpers" ["e"=1]
 "cvanaret/Uno" -> "MadNLP/MadNLP.jl" ["e"=1]
 "cvanaret/Uno" -> "oxfordcontrol/Clarabel.jl" ["e"=1]
 "cvanaret/Uno" -> "giaf/hpipm"
@@ -1670,6 +1939,10 @@ digraph G {
 "SapanaChaudhary/PyTorch-CPO" -> "dobro12/CPO"
 "SapanaChaudhary/PyTorch-CPO" -> "ajlangley/cpo-pytorch"
 "SapanaChaudhary/PyTorch-CPO" -> "hari-sikchi/pytorch_CPO"
+"metaopt/torchopt" -> "cvxgrp/cvxpylayers" ["e"=1]
+"upkie/upkie" -> "stack-of-tasks/tsid" ["e"=1]
+"upkie/upkie" -> "Simple-Robotics/aligator" ["e"=1]
+"upkie/upkie" -> "Simple-Robotics/LoIK" ["e"=1]
 "heilmeiera/time-discrete-race-simulator" -> "TUMFTM/race-simulation"
 "teasit/magic-formula-tyre-library" -> "teasit/magic-formula-tyre-tool"
 "aerorobotics/neural-fly" -> "GuanyaShi/Online-Meta-Adaptive-Control"
@@ -1698,6 +1971,8 @@ digraph G {
 "optimusride/altro-cpp" -> "RoboticExplorationLab/ALTRO"
 "optimusride/altro-cpp" -> "bjack205/altro"
 "optimusride/altro-cpp" -> "RoboticExplorationLab/Altro.jl"
+"AIR-DISCOVER/ICRA-RM-Sim2Real" -> "Facebear-ljx/DOGE" ["e"=1]
+"LiJiangnanBit/path_optimizer_2" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
 "JohannesBetz/AutonomousRacing_Literature" -> "f1tenth/AutonomousRacing_Literature"
 "JohannesBetz/AutonomousRacing_Literature" -> "TUMFTM/velocity_optimization"
 "JohannesBetz/AutonomousRacing_Literature" -> "linklab-uva/RACECAR_DATA"
@@ -1711,6 +1986,7 @@ digraph G {
 "zlr20/saferl_kit" -> "AlgTUDelft/WCSAC"
 "iebb/F1WebViewer-SelfHosted" -> "iebb/F1-Web-Viewer"
 "iebb/F1WebViewer-SelfHosted" -> "bootsie123/F1-Web-Viewer"
+"sisl/MPOPIS" -> "shaoanlu/mppi_cbf" ["e"=1]
 "f1tenth/AutonomousRacing_Literature" -> "f1tenth/f1tenth_racetracks"
 "f1tenth/AutonomousRacing_Literature" -> "f1tenth/f1tenth_planning"
 "DangFengying/RL-based-event-triggered-MPC" -> "Woodenonez/TrajTrack-MPCnDQN-RLBoost"
@@ -1752,6 +2028,13 @@ digraph G {
 "ami-iit/liecasadi" -> "ADVRHumanoids/casadi_kin_dyn"
 "iebb/F1-Web-Viewer" -> "iebb/F1WebViewer-SelfHosted"
 "driveblocks/AV-Open-Source" -> "TUMFTM/embes"
+"Pyomo/pyomo" -> "coin-or/Ipopt" ["e"=1]
+"Pyomo/pyomo" -> "BYU-PRISM/GEKKO" ["e"=1]
+"facontidavide/PlotJuggler" -> "RobotLocomotion/drake" ["e"=1]
+"linorobot/linorobot" -> "Hypha-ROS/hypharos_racecar" ["e"=1]
+"cvxgrp/cvxbook_additional_exercises" -> "cvxr/CVX" ["e"=1]
+"cvxgrp/cvxbook_additional_exercises" -> "Optimal-Control-16-745/lecture-notebooks-2023" ["e"=1]
+"cvxgrp/cvxbook_additional_exercises" -> "coin-or/Ipopt" ["e"=1]
 "meco-group/omg-tools" -> "rst-tu-dortmund/mpc_local_planner" ["e"=1]
 "meco-group/omg-tools" -> "sikang/mpl_ros" ["e"=1]
 "meco-group/omg-tools" -> "mit-acl/faster" ["e"=1]
@@ -1767,11 +2050,17 @@ digraph G {
 "meco-group/omg-tools" -> "ethz-adrl/ifopt"
 "meco-group/omg-tools" -> "ethz-adrl/control-toolbox"
 "meco-group/omg-tools" -> "sbpl/sbpl" ["e"=1]
+"danfis/libccd" -> "Simple-Robotics/proxsuite" ["e"=1]
+"shacklettbp/madrona" -> "google/trajax" ["e"=1]
 "istellartech/OpenTsiolkovsky" -> "ina111/MatRockSim"
 "istellartech/OpenTsiolkovsky" -> "sus304/ForRocket"
 "istellartech/OpenTsiolkovsky" -> "istellartech/OpenGoddard"
 "istellartech/OpenTsiolkovsky" -> "istellartech/OpenMOMO"
 "istellartech/OpenTsiolkovsky" -> "EmbersArc/SuccessiveConvexificationFreeFinalTime"
+"jslee02/awesome-robotics-libraries" -> "RobotLocomotion/drake" ["e"=1]
+"jslee02/awesome-robotics-libraries" -> "ethz-adrl/control-toolbox" ["e"=1]
+"google-deepmind/mujoco_mpc" -> "loco-3d/crocoddyl" ["e"=1]
+"LucasAlegre/morl-baselines" -> "liuzuxin/OSRL" ["e"=1]
 "PKU-Alignment/safety-gymnasium" -> "PKU-Alignment/omnisafe"
 "PKU-Alignment/safety-gymnasium" -> "PKU-Alignment/Safe-Policy-Optimization"
 "PKU-Alignment/safety-gymnasium" -> "chauncygu/Safe-Reinforcement-Learning-Baselines"
@@ -1817,13 +2106,20 @@ digraph G {
 "FilippoAiraldi/mpc-reinforcement-learning" -> "matssteinweg/Multi-Purpose-MPC"
 "FilippoAiraldi/mpc-reinforcement-learning" -> "utiasDSL/safe-control-gym"
 "FilippoAiraldi/mpc-reinforcement-learning" -> "DangFengying/RL-based-event-triggered-MPC"
+"facebookresearch/online-dt" -> "liuzuxin/OSRL" ["e"=1]
+"yihaosun1124/OfflineRL-Kit" -> "liuzuxin/OSRL" ["e"=1]
+"hanruihua/RDA-planner" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
 "mit-racecar/hardware" -> "mit-racecar/racecar"
+"ihmcrobotics/ihmc-open-robotics-software" -> "mayataka/robotoc" ["e"=1]
 "qpsolvers/qpbenchmark" -> "Simple-Robotics/proxsuite"
 "qpsolvers/qpbenchmark" -> "Simple-Robotics/proxsuite-nlp"
 "qpsolvers/qpbenchmark" -> "se-hwan/cusadi"
 "qpsolvers/qpbenchmark" -> "Simple-Robotics/LoIK"
 "qpsolvers/qpbenchmark" -> "qpsolvers/qpsolvers"
+"PKU-MARL/Multi-Agent-Transformer" -> "chauncygu/Multi-Agent-Constrained-Policy-Optimisation" ["e"=1]
+"proroklab/popgym" -> "ryanxhr/IVR" ["e"=1]
 "bitzhangcy/Safe-Deep-Reinforcement-Learning" -> "zlr20/saferl_kit"
+"Mr-Tony921/xju-robot" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
 "acados/acados" -> "giaf/hpipm"
 "acados/acados" -> "casadi/casadi"
 "acados/acados" -> "Tim-Salzmann/l4casadi"
@@ -1839,6 +2135,7 @@ digraph G {
 "acados/acados" -> "meco-group/fatrop"
 "acados/acados" -> "ethz-adrl/ifopt"
 "acados/acados" -> "se-hwan/cusadi"
+"Allenpandas/Reinforcement-Learning-Papers" -> "liuzuxin/OSRL" ["e"=1]
 "kevin-tracy/DifferentiableCollisions.jl" -> "kevin-tracy/dpax"
 "kevin-tracy/DifferentiableCollisions.jl" -> "dojo-sim/Dojo.jl"
 "kevin-tracy/DifferentiableCollisions.jl" -> "kevin-tracy/qpax"
@@ -1849,6 +2146,10 @@ digraph G {
 "kevin-tracy/DifferentiableCollisions.jl" -> "jianzhuozhuTHU/MPC-D-CBF"
 "kevin-tracy/DifferentiableCollisions.jl" -> "RoboticExplorationLab/TrajectoryOptimization.jl"
 "kevin-tracy/DifferentiableCollisions.jl" -> "bjack205/altro"
+"robot-descriptions/robot_descriptions.py" -> "Gepetto/example-robot-data" ["e"=1]
+"robot-descriptions/robot_descriptions.py" -> "qpsolvers/qpsolvers" ["e"=1]
+"robot-descriptions/robot_descriptions.py" -> "Simple-Robotics/proxsuite" ["e"=1]
+"robot-descriptions/robot_descriptions.py" -> "ami-iit/adam" ["e"=1]
 "ajinkya-khade/ACC_Vehicle_MPC" -> "s7ev3n/MPC_Code"
 "ajinkya-khade/ACC_Vehicle_MPC" -> "euge2838/Autonomous_Guidance_MPC_and_LQR-LMI"
 "ajinkya-khade/ACC_Vehicle_MPC" -> "wuyenlin/adaptive-cruise-control-mpc"
@@ -1856,11 +2157,15 @@ digraph G {
 "ajinkya-khade/ACC_Vehicle_MPC" -> "ChenBohan/Notes-of-MPC-in-Self-Driving-Car"
 "ajinkya-khade/ACC_Vehicle_MPC" -> "xiaoyuyang0901/Simulation-platform"
 "ajinkya-khade/ACC_Vehicle_MPC" -> "mathworks/vehicle-model-predictive-control"
+"NCAlgebra/NC" -> "rogercolbeck/QI" ["e"=1]
 "taewankim1/robust_mpc_obstacle_avoidance" -> "matssteinweg/Multi-Purpose-MPC"
 "taewankim1/robust_mpc_obstacle_avoidance" -> "tg623623nana/Vehicle_Motion_Planning_with_Obstacles_Avoidance_using_MPC"
 "ymontmarin/_tps_robotique" -> "Gepetto/jnrh2023"
 "ymontmarin/_tps_robotique" -> "machines-in-motion/minimal_examples_crocoddyl"
 "ymontmarin/_tps_robotique" -> "agimus-project/colmpc"
+"tud-amr/mppi-isaac" -> "se-hwan/cusadi" ["e"=1]
+"Dangko/ego-planner-for-ground-robot" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
+"JuliaGraphics/QML.jl" -> "JuliaGeometry/GeometryBasics.jl" ["e"=1]
 "Daniella1/urdf_files_dataset" -> "robot-descriptions/awesome-robot-descriptions" ["e"=1]
 "Daniella1/urdf_files_dataset" -> "Gepetto/example-robot-data"
 "TUM-AAS/neural-mpc" -> "TUM-AAS/ml-casadi"
@@ -1895,6 +2200,8 @@ digraph G {
 "rssalessio/PyDeePC" -> "rssalessio/PyZPC"
 "rssalessio/PyDeePC" -> "soc-ucsd/DeeP-LCC"
 "rssalessio/PyDeePC" -> "michael-cummins/DeePC-Hunt"
+"jianzhuozhuTHU/putn" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
+"jhavl/dkt" -> "loco-3d/crocoddyl" ["e"=1]
 "jianzhuozhuTHU/MPC-D-CBF" -> "elena-ecn/mpc-cbf"
 "jianzhuozhuTHU/MPC-D-CBF" -> "USE-jx/NMPC_CASADI_CPP" ["e"=1]
 "jianzhuozhuTHU/MPC-D-CBF" -> "Dangko/ego-planner-for-ground-robot" ["e"=1]
@@ -1910,6 +2217,7 @@ digraph G {
 "f1tenth/f1tenth_labs_openrepo" -> "f1tenth/AutonomousRacing_Literature"
 "f1tenth/f1tenth_labs_openrepo" -> "pmusau17/Platooning-F1Tenth"
 "f1tenth/f1tenth_labs_openrepo" -> "f1tenth/f1tenth_racetracks"
+"AIR-DISCOVER/TOIST" -> "Facebear-ljx/DOGE" ["e"=1]
 "AutoRally/autorally" -> "AutoRally/autorally_platform_instructions"
 "AutoRally/autorally" -> "UM-ARM-Lab/pytorch_mppi" ["e"=1]
 "AutoRally/autorally" -> "TUMFTM/global_racetrajectory_optimization"
@@ -1941,6 +2249,7 @@ digraph G {
 "JuliaRobotics/Caesar.jl" -> "JuliaRobotics/RoME.jl"
 "JuliaRobotics/Caesar.jl" -> "JuliaRobotics/DistributedFactorGraphs.jl"
 "JuliaRobotics/Caesar.jl" -> "JuliaRobotics/AprilTags.jl"
+"auto-differentiation/xad" -> "coin-or/CppAD" ["e"=1]
 "JuliaGeometry/Rotations.jl" -> "JuliaGeometry/CoordinateTransformations.jl"
 "PKU-Alignment/Safe-Policy-Optimization" -> "PKU-Alignment/safety-gymnasium"
 "PKU-Alignment/Safe-Policy-Optimization" -> "PKU-Alignment/omnisafe"
@@ -1975,7 +2284,9 @@ digraph G {
 "Simple-Robotics/aligator" -> "loco-3d/crocoddyl"
 "Simple-Robotics/aligator" -> "edantec/MPC_benchmark"
 "Simple-Robotics/aligator" -> "heli-sudoo/HKD-MPC" ["e"=1]
+"btx0424/OmniDrones" -> "ffelten/CrazyRL" ["e"=1]
 "JuliaRobotics/IncrementalInference.jl" -> "JuliaRobotics/RoME.jl"
+"anuragajay/decision-diffuser" -> "liuzuxin/OSRL" ["e"=1]
 "DezsoRanki/RL-MPC" -> "FARAZLOTFI/offroad_autonomous_navigation"
 "akjayant/mbppol" -> "zmsn-2077/CUP-safe-rl"
 "acl21/wcsac" -> "AlgTUDelft/WCSAC"
@@ -2057,6 +2368,7 @@ digraph G {
 "ryanxhr/DWBC" -> "Facebear-ljx/DOGE"
 "ryanxhr/DWBC" -> "pcheng2/TSRL"
 "ryanxhr/DWBC" -> "ryanxhr/POR"
+"facebookresearch/BenchMARL" -> "ffelten/CrazyRL" ["e"=1]
 "slowlydev/f1-dash" -> "br-g/openf1"
 "slowlydev/f1-dash" -> "f1stuff/f1-live-data"
 "slowlydev/f1-dash" -> "theOehrly/Fast-F1"
@@ -2133,7 +2445,11 @@ digraph G {
 "TinyMPC/TinyMPC" -> "qiayuanl/legged_control" ["e"=1]
 "TinyMPC/TinyMPC" -> "ZJU-FAST-Lab/LBFGS-Lite" ["e"=1]
 "TinyMPC/TinyMPC" -> "Geonhee-LEE/mpc_ros" ["e"=1]
+"jyjblrd/Low-Cost-Mocap" -> "TinyMPC/TinyMPC" ["e"=1]
 "Eric-Bradford/SDD-GP-MPC" -> "shiivashaakeri/Data-Driven-Model-Predictive-Control-MPC-with-Stability-and-Robustness-Guarantees"
+"PKU-Alignment/safe-rlhf" -> "PKU-Alignment/omnisafe" ["e"=1]
+"OpenRL-Lab/openrl" -> "PKU-Alignment/safety-gymnasium" ["e"=1]
+"RyanZotti/Self-Driving-Car" -> "DJTobias/Cherry-Autonomous-Racecar" ["e"=1]
 "fdevinc/ungar" -> "edantec/MPC_benchmark"
 "jolpica/jolpica-f1" -> "br-g/openf1"
 "jolpica/jolpica-f1" -> "f1db/f1db"
@@ -2147,8 +2463,14 @@ digraph G {
 "jolpica/jolpica-f1" -> "Rafacv23/F1-api"
 "jolpica/jolpica-f1" -> "sportstimes/f1"
 "jolpica/jolpica-f1" -> "alec-kr/F1PyStats"
+"philippe-eecs/IDQL" -> "ryanxhr/IVR" ["e"=1]
+"philippe-eecs/IDQL" -> "ZhengYinan-AIR/FISOR" ["e"=1]
 "linklab-uva/deep-dynamics" -> "TUMFTM/NeuralNetwork_for_VehicleDynamicsModeling"
 "FARAZLOTFI/offroad_autonomous_navigation" -> "DezsoRanki/RL-MPC"
+"kohonda/proj-svg_mppi" -> "mlab-upenn/LearningMPC" ["e"=1]
+"NxRLab/ModernRobotics" -> "RobotLocomotion/drake" ["e"=1]
+"NxRLab/ModernRobotics" -> "ethz-adrl/control-toolbox" ["e"=1]
+"qboticslabs/ros_robotics_projects" -> "datlife/jetson-car" ["e"=1]
 "qpsolvers/qpsolvers" -> "Simple-Robotics/proxsuite"
 "qpsolvers/qpsolvers" -> "giaf/hpipm"
 "qpsolvers/qpsolvers" -> "quadprog/quadprog"
@@ -2164,6 +2486,8 @@ digraph G {
 "qpsolvers/qpsolvers" -> "based-robotics/jaxadi"
 "qpsolvers/qpsolvers" -> "stack-of-tasks/pinocchio" ["e"=1]
 "qpsolvers/qpsolvers" -> "google/osqp-cpp"
+"sbrin/lopaka" -> "sb-ocr/focus-dial" ["e"=1]
+"USE-jx/NMPC_CASADI_CPP" -> "jianzhuozhuTHU/MPC-D-CBF" ["e"=1]
 "OpenOCL/OpenOCL" -> "deng-haoyang/ParNMPC"
 "OpenOCL/OpenOCL" -> "bevanda/Learning-Based-MPC"
 "OpenOCL/OpenOCL" -> "MatthewPeterKelly/OptimTraj"
@@ -2179,6 +2503,7 @@ digraph G {
 "OpenOCL/OpenOCL" -> "jkoendev/optimal-control-literature-software"
 "OpenOCL/OpenOCL" -> "PSOPT/psopt"
 "OpenOCL/OpenOCL" -> "olivergafvert/dmpc"
+"ethz-asl/mav_control_rw" -> "uzh-rpg/data_driven_mpc" ["e"=1]
 "liuzuxin/DSRL" -> "liuzuxin/OSRL"
 "liuzuxin/DSRL" -> "liuzuxin/FSRL"
 "liuzuxin/DSRL" -> "ZhengYinan-AIR/FISOR"
@@ -2215,7 +2540,10 @@ digraph G {
 "liuzuxin/FSRL" -> "openai/safety-starter-agents"
 "liuzuxin/FSRL" -> "chauncygu/Multi-Agent-Constrained-Policy-Optimisation"
 "liuzuxin/FSRL" -> "PKU-Alignment/omnisafe"
+"USC-ACTLab/crazyswarm" -> "bcbarbara/crazyflie_nmpc" ["e"=1]
+"USC-ACTLab/crazyswarm" -> "uzh-rpg/data_driven_mpc" ["e"=1]
 "kevin-tracy/dpax" -> "kevin-tracy/qpax"
+"bethesirius/ChosunTruck" -> "MPC-Berkeley/barc" ["e"=1]
 "Tim-Salzmann/l4casadi" -> "TUM-AAS/ml-casadi"
 "Tim-Salzmann/l4casadi" -> "se-hwan/cusadi"
 "Tim-Salzmann/l4casadi" -> "acados/acados"
@@ -2238,6 +2566,7 @@ digraph G {
 "JustAman62/undercut-f1" -> "slowlydev/f1-dash"
 "JustAman62/undercut-f1" -> "Kuberwastaken/backdooms"
 "tdjsnelling/monaco" -> "f1stuff/f1-live-data"
+"MizuhoAOKI/python_simple_mppi" -> "Tim-Salzmann/l4casadi" ["e"=1]
 "DJTobias/Cherry-Autonomous-Racecar" -> "Hypha-ROS/hypharos_racecar"
 "DJTobias/Cherry-Autonomous-Racecar" -> "datlife/jetson-car"
 "DJTobias/Cherry-Autonomous-Racecar" -> "tawnkramer/shark" ["e"=1]
@@ -2253,6 +2582,7 @@ digraph G {
 "kevin-tracy/qpax" -> "vincekurtz/hydrax"
 "kevin-tracy/qpax" -> "based-robotics/jaxadi"
 "kevin-tracy/qpax" -> "Simple-Robotics/proxsuite-nlp"
+"engnadeau/pybotics" -> "Gepetto/example-robot-data" ["e"=1]
 "meco-group/fatrop" -> "Simple-Robotics/aligator"
 "meco-group/fatrop" -> "se-hwan/cusadi"
 "meco-group/fatrop" -> "jgillis/fatrop_demo"
@@ -2272,11 +2602,13 @@ digraph G {
 "RoboticExplorationLab/ALTRO" -> "bjack205/altro"
 "RoboticExplorationLab/ALTRO" -> "RoboticExplorationLab/TinyMPC-AL"
 "RoboticExplorationLab/ALTRO" -> "RoboticExplorationLab/Altro.jl"
+"LeCAR-Lab/CoVO-MPC" -> "shaoanlu/mppi_cbf" ["e"=1]
 "locuslab/icnn" -> "chennnnnyize-zz/Optimal-Control-via-Neural-Networks"
 "locuslab/icnn" -> "locuslab/optnet"
 "locuslab/icnn" -> "iamalexkorotin/Wasserstein2GenerativeNetworks" ["e"=1]
 "locuslab/icnn" -> "locuslab/differentiable-mpc"
 "locuslab/icnn" -> "CW-Huang/CP-Flow"
+"metab0t/PyOptInterface" -> "cvanaret/Uno" ["e"=1]
 "mahmoudtaouti/RL_Highway_Merge" -> "KaguraTart/SUMO-RL-ramp-control"
 "Gepetto/jnrh2023" -> "alessandroassirelli98/pinocchio-casadi-examples"
 "Gepetto/jnrh2023" -> "ADVRHumanoids/casadi_kin_dyn"
@@ -2298,6 +2630,13 @@ digraph G {
 "AIR-DI/D2C" -> "Facebear-ljx/RGM"
 "AIR-DI/D2C" -> "pcheng2/TSRL"
 "pcheng2/TSRL" -> "t6-thu/xTED"
+"rl-tools/rl-tools" -> "acados/acados" ["e"=1]
+"rl-tools/rl-tools" -> "utiasDSL/safe-control-gym" ["e"=1]
+"rl-tools/rl-tools" -> "Tim-Salzmann/l4casadi" ["e"=1]
+"rl-tools/rl-tools" -> "meco-group/fatrop" ["e"=1]
+"rl-tools/rl-tools" -> "TUM-AAS/ml-casadi" ["e"=1]
+"esa/pagmo2" -> "coin-or/Ipopt" ["e"=1]
+"esa/pagmo2" -> "ethz-adrl/ifopt" ["e"=1]
 "s7ev3n/MPC_Code" -> "ajinkya-khade/ACC_Vehicle_MPC"
 "s7ev3n/MPC_Code" -> "euge2838/Autonomous_Guidance_MPC_and_LQR-LMI"
 "s7ev3n/MPC_Code" -> "harishsatishchandra/SMC-controller"
@@ -2322,6 +2661,13 @@ digraph G {
 "ZhengYinan-AIR/FISOR" -> "ltlhuuu/PSEC"
 "ZhengYinan-AIR/FISOR" -> "Facebear-ljx/DOGE"
 "ZhengYinan-AIR/FISOR" -> "2toinf/DecisionNCE"
+"DRCL-USC/Hector_Simulation" -> "loco-3d/crocoddyl" ["e"=1]
+"Kyubyong/sudoku" -> "locuslab/optnet" ["e"=1]
+"PythonOT/POT" -> "cvxgrp/cvxpylayers" ["e"=1]
+"PolySync/oscc" -> "AutoRally/autorally" ["e"=1]
+"PolySync/oscc" -> "MPC-Berkeley/barc" ["e"=1]
+"hbrobotics/ros_arduino_bridge" -> "Hypha-ROS/hypharos_racecar" ["e"=1]
+"TuragaLab/flybody" -> "vincekurtz/hydrax" ["e"=1]
 "EhsanSabouni/CDC2024_RL_adpative_MPC_CBF" -> "dtch1997/rl_cbf"
 "RobotLocomotion/gcs-science-robotics" -> "mpetersen94/gcs"
 "RobotLocomotion/gcs-science-robotics" -> "TobiaMarcucci/shortest-paths-in-graphs-of-convex-sets"
@@ -2342,6 +2688,7 @@ digraph G {
 "se-hwan/cusadi" -> "google-deepmind/mujoco_warp" ["e"=1]
 "se-hwan/cusadi" -> "Simple-Robotics/LoIK"
 "edantec/MPC_benchmark" -> "Simple-Robotics/simple-mpc"
+"ebrahimpichka/awesome-optimization" -> "cvanaret/Uno" ["e"=1]
 "giaf/blasfeo" -> "giaf/hpipm"
 "giaf/blasfeo" -> "acados/acados"
 "giaf/blasfeo" -> "giaf/hpmpc"
@@ -2377,6 +2724,11 @@ digraph G {
 "AtsushiSakai/PyAdvancedControl" -> "XiaojingGeorgeZhang/OBCA" ["e"=1]
 "AtsushiSakai/PyAdvancedControl" -> "forgi86/pyMPC"
 "shunchan0677/Tensorflow_in_ROS" -> "OTL/rostensorflow"
+"joschu/trajopt" -> "MatthewPeterKelly/OptimTraj" ["e"=1]
+"joschu/trajopt" -> "ethz-adrl/ifopt" ["e"=1]
+"joschu/trajopt" -> "RoboticExplorationLab/TrajectoryOptimization.jl" ["e"=1]
+"joschu/trajopt" -> "loco-3d/crocoddyl" ["e"=1]
+"joschu/trajopt" -> "google/osqp-cpp" ["e"=1]
 "ForzaETH/race_stack" -> "ETH-PBL/MAP-Controller"
 "ForzaETH/race_stack" -> "BDEvan5/f1tenth_benchmarks"
 "ForzaETH/race_stack" -> "HiPeRT/unimore_roboracer"
@@ -2385,11 +2737,14 @@ digraph G {
 "ForzaETH/race_stack" -> "f1tenth/f1tenth_gym"
 "ForzaETH/race_stack" -> "f1tenth/f1tenth_system"
 "ForzaETH/race_stack" -> "f1tenth/f1tenth_racetracks"
+"sea-bass/pyroboplan" -> "Simple-Robotics/aligator" ["e"=1]
 "2toinf/DecisionNCE" -> "t6-thu/xTED"
 "2toinf/DecisionNCE" -> "AIR-DI/D2C"
 "2toinf/DecisionNCE" -> "Facebear-ljx/DOGE"
 "2toinf/DecisionNCE" -> "Facebear-ljx/PROTO"
 "2toinf/DecisionNCE" -> "Facebear-ljx/RGM"
+"iit-DLSLab/Quadruped-PyMPC" -> "se-hwan/cusadi" ["e"=1]
+"iit-DLSLab/Quadruped-PyMPC" -> "vincekurtz/hydrax" ["e"=1]
 "shiivashaakeri/Data-Driven-Model-Predictive-Control-MPC-with-Stability-and-Robustness-Guarantees" -> "shiivashaakeri/Data-Driven-MPC-Linear-Systems-RL"
 "shiivashaakeri/Data-Driven-Model-Predictive-Control-MPC-with-Stability-and-Robustness-Guarantees" -> "aalanwar/Data-Driven-Predictive-Control"
 "datlife/jetson-car" -> "DJTobias/Cherry-Autonomous-Racecar"
@@ -2417,10 +2772,12 @@ digraph G {
 "shaoanlu/mppi_cbf" -> "ShockLeo/Iterative-MPC-DHOCBF"
 "agimus-project/colmpc" -> "machines-in-motion/minimal_examples_crocoddyl"
 "t6-thu/awesome-cross-domain-policy-transfer-for-embodied-agents" -> "t6-thu/xTED"
+"RoboticExplorationLab/ReLUQP-py" -> "se-hwan/cusadi" ["e"=1]
 "machines-in-motion/mim_solvers" -> "machines-in-motion/minimal_examples_crocoddyl"
 "machines-in-motion/mim_solvers" -> "agimus-project/colmpc"
 "MIT-REALM/gcbfplus" -> "MIT-REALM/gcbf-pytorch"
 "JuliaRobotics/LCMCore.jl" -> "JuliaRobotics/DistributedFactorGraphs.jl"
+"quimortiz/dynoRRT" -> "agimus-project/colmpc" ["e"=1]
 "roahmlab/RAPTOR" -> "edantec/MPC_benchmark"
 "roahmlab/RAPTOR" -> "Simple-Robotics/simple-mpc"
 "ltlhuuu/A2PR" -> "ltlhuuu/PSEC"
@@ -2444,6 +2801,10 @@ digraph G {
 "locuslab/optnet" -> "cvxgrp/cocp"
 "locuslab/optnet" -> "osqp/cuosqp"
 "locuslab/optnet" -> "VITA-Group/Open-L2O" ["e"=1]
+"LeCAR-Lab/model-based-diffusion" -> "based-robotics/jaxadi" ["e"=1]
+"LeCAR-Lab/model-based-diffusion" -> "Simple-Robotics/aligator" ["e"=1]
+"LeCAR-Lab/model-based-diffusion" -> "se-hwan/cusadi" ["e"=1]
+"cemoody/topicsne" -> "locuslab/qpth" ["e"=1]
 "t6-thu/xTED" -> "AIR-DI/D2C"
 "t6-thu/xTED" -> "Facebear-ljx/PROTO"
 "tkkim-robot/safe_control" -> "tkkim-robot/online_adaptive_cbf"
@@ -2477,6 +2838,13 @@ digraph G {
 "embotech/ecos" -> "jump-dev/Hypatia.jl" ["e"=1]
 "embotech/ecos" -> "oxfordcontrol/COSMO.jl" ["e"=1]
 "embotech/ecos" -> "cvxgrp/cvxpygen"
+"cvxopt/cvxopt" -> "embotech/ecos" ["e"=1]
+"cvxopt/cvxopt" -> "cvxgrp/scs" ["e"=1]
+"cvxopt/cvxopt" -> "qpsolvers/qpsolvers" ["e"=1]
+"cvxopt/cvxopt" -> "osqp/osqp" ["e"=1]
+"cvxopt/cvxopt" -> "sqlp/sedumi" ["e"=1]
+"cvxopt/cvxopt" -> "coin-or/Ipopt" ["e"=1]
+"cvxopt/cvxopt" -> "cvxgrp/cvxpylayers" ["e"=1]
 "Simple-Robotics/ContactBench" -> "Simple-Robotics/LoIK"
 "stack-of-tasks/tsid" -> "loco-3d/crocoddyl"
 "stack-of-tasks/tsid" -> "stephane-caron/pink" ["e"=1]
@@ -2488,8 +2856,10 @@ digraph G {
 "stack-of-tasks/tsid" -> "loco-3d/multicontact-locomotion-planning" ["e"=1]
 "stack-of-tasks/tsid" -> "loco-3d/ndcurves"
 "stack-of-tasks/tsid" -> "Simple-Robotics/proxsuite-nlp"
+"LeCAR-Lab/dial-mpc" -> "se-hwan/cusadi" ["e"=1]
 "bamos/block" -> "locuslab/qpth"
 "bamos/block" -> "bamos/setGPU"
+"ModiaSim/Modia.jl" -> "rdeits/MeshCat.jl" ["e"=1]
 "danielpmorton/cbfpy" -> "StanfordASL/oscbf"
 "danielpmorton/cbfpy" -> "based-robotics/jaxadi"
 "danielpmorton/cbfpy" -> "kevin-tracy/qpax"
@@ -2539,10 +2909,15 @@ digraph G {
 "IntelligentControlSystems/l4acados" -> "manish-pra/sampling-gpmpc"
 "jgillis/fatrop_demo" -> "jgillis/madnlp_demo"
 "Simple-Robotics/simple-mpc" -> "edantec/MPC_benchmark"
+"PyDMD/PyDMD" -> "pnnl/neuromancer" ["e"=1]
+"kthohr/optim" -> "ethz-adrl/ifopt" ["e"=1]
+"kthohr/optim" -> "google/osqp-cpp" ["e"=1]
+"kthohr/optim" -> "giaf/hpipm" ["e"=1]
 "mit-racecar/particle_filter" -> "mit-racecar/racecar_gazebo"
 "mit-racecar/particle_filter" -> "kctess5/range_libc"
 "mit-racecar/particle_filter" -> "mjl/particle_filter_demo"
 "mit-racecar/particle_filter" -> "Hypha-ROS/hypharos_racecar"
+"osrf/car_demo" -> "AutoRally/autorally" ["e"=1]
 "giaf/hpipm" -> "giaf/blasfeo"
 "giaf/hpipm" -> "acados/acados"
 "giaf/hpipm" -> "Simple-Robotics/proxsuite"
@@ -2558,13 +2933,16 @@ digraph G {
 "giaf/hpipm" -> "alexliniger/MPCC"
 "giaf/hpipm" -> "mayataka/robotoc"
 "giaf/hpipm" -> "cvanaret/Uno"
+"hungpham2511/toppra" -> "loco-3d/crocoddyl" ["e"=1]
 "cvxgrp/proximal" -> "svaiter/pyprox"
 "cvxgrp/proximal" -> "epfl-lts2/pyunlocbox"
 "cvxgrp/proximal" -> "cvxr/TFOCS"
+"aleju/self-driving-truck" -> "DJTobias/Cherry-Autonomous-Racecar" ["e"=1]
 "andresmendes/openvd" -> "andresmendes/Vehicle-Dynamics-Lateral"
 "Rukenshia/pomodoro" -> "RamboRogers/rfhunter" ["e"=1]
 "Rukenshia/pomodoro" -> "Kuberwastaken/backdooms"
 "Rukenshia/pomodoro" -> "sb-ocr/focus-dial"
+"OpenRobotLab/Seer" -> "2toinf/UniAct" ["e"=1]
 "pmelchior/proxmin" -> "epfl-lts2/pyunlocbox"
 "jachiam/cpo" -> "openai/safety-starter-agents"
 "jachiam/cpo" -> "SapanaChaudhary/PyTorch-CPO"
@@ -2581,10 +2959,13 @@ digraph G {
 "jachiam/cpo" -> "akjayant/PPO_Lagrangian_PyTorch"
 "jachiam/cpo" -> "AlgTUDelft/WCSAC"
 "jachiam/cpo" -> "chauncygu/Safe-Multi-Agent-Mujoco"
+"google-deepmind/mujoco_warp" -> "vincekurtz/hydrax" ["e"=1]
+"google-deepmind/mujoco_warp" -> "se-hwan/cusadi" ["e"=1]
 "2toinf/UniAct" -> "OpenRobotLab/Seer" ["e"=1]
 "2toinf/UniAct" -> "t6-thu/xTED"
 "2toinf/UniAct" -> "AIR-DI/D2C"
 "2toinf/UniAct" -> "2toinf/DecisionNCE"
+"YashBansod/Robotics-Planning-Dynamics-and-Control" -> "s7ev3n/MPC_Code" ["e"=1]
 "chunhsienho/ADAS_Project-Auto-steering-ACC" -> "TalhaRao/Adaptive-Cruise-Control"
 "Hypha-ROS/hypharos_racecar" -> "Hypha-ROS/hypharos_minicar" ["e"=1]
 "Hypha-ROS/hypharos_racecar" -> "ART-Robot-Release/racecar"
@@ -2612,6 +2993,9 @@ digraph G {
 "acado/acado" -> "osqp/osqp"
 "sb-ocr/focus-dial" -> "UrbanCircles/igor"
 "HiPeRT/unimore_roboracer" -> "ForzaETH/race_stack"
+"eleurent/rl-agents" -> "eleurent/phd-bibliography" ["e"=1]
+"SpatialVLA/SpatialVLA" -> "2toinf/UniAct" ["e"=1]
+"TUMFTM/OpenLiDARMap" -> "TUMFTM/FlexCloud" ["e"=1]
 "EmbersArc/gym-rocketlander" -> "EmbersArc/SuccessiveConvexificationFreeFinalTime"
 "EmbersArc/gym-rocketlander" -> "EmbersArc/SCpp"
 "EmbersArc/gym-rocketlander" -> "EmbersArc/PPO"
@@ -2620,6 +3004,7 @@ digraph G {
 "EmbersArc/gym-rocketlander" -> "dmalyuta/lcvx"
 "EmbersArc/gym-rocketlander" -> "arex18/rocket-lander"
 "Alro10/MOESP-and-N4SID" -> "bssthu/system_identification_code_from_book"
+"eurika-kaiser/KRONIC" -> "arbabiha/KoopmanMPC_for_flowcontrol" ["e"=1]
 "asherikov/qpmad" -> "jrl-umi3218/eigen-quadprog"
 "asherikov/qpmad" -> "isri-aist/QpSolverCollection" ["e"=1]
 "asherikov/qpmad" -> "jrl-umi3218/eigen-qld"
@@ -2630,32 +3015,48 @@ digraph G {
 "ltlhuuu/PSEC" -> "ltlhuuu/A2PR"
 "leap-c/leap-c" -> "IntelligentControlSystems/l4acados"
 "leap-c/leap-c" -> "MPC-Based-Reinforcement-Learning/mpc4rl"
+"google-deepmind/ai-safety-gridworlds" ["l"="57.55,18.296", "c"=45]
+"openai/safety-gym" ["l"="61.156,15.019"]
+"openai/safety-starter-agents" ["l"="61.136,15.02"]
+"befelix/safe_learning" ["l"="61.206,15.041"]
+"PKU-Alignment/safety-gymnasium" ["l"="61.125,15.043"]
+"chauncygu/Safe-Reinforcement-Learning-Baselines" ["l"="61.145,15.038"]
 "RobotLocomotion/drake" ["l"="61.38,14.897"]
-"stack-of-tasks/pinocchio" ["l"="61.234,16.424"]
-"RussTedrake/underactuated" ["l"="61.172,16.404"]
+"stack-of-tasks/pinocchio" ["l"="61.234,16.424", "c"=184]
+"RussTedrake/underactuated" ["l"="61.172,16.404", "c"=184]
 "ethz-adrl/control-toolbox" ["l"="61.461,14.923"]
-"leggedrobotics/ocs2" ["l"="61.108,16.409"]
+"leggedrobotics/ocs2" ["l"="61.108,16.409", "c"=184]
 "loco-3d/crocoddyl" ["l"="61.437,14.854"]
-"jslee02/awesome-robotics-libraries" ["l"="58.915,12.682"]
-"NxRLab/ModernRobotics" ["l"="58.845,12.66"]
-"mit-biomimetics/Cheetah-Software" ["l"="61.135,16.409"]
-"ethz-adrl/towr" ["l"="61.129,16.38"]
-"ompl/ompl" ["l"="61.406,16.435"]
+"jslee02/awesome-robotics-libraries" ["l"="58.915,12.682", "c"=299]
+"NxRLab/ModernRobotics" ["l"="58.845,12.66", "c"=299]
+"mit-biomimetics/Cheetah-Software" ["l"="61.135,16.409", "c"=184]
+"ethz-adrl/towr" ["l"="61.129,16.38", "c"=184]
+"ompl/ompl" ["l"="61.406,16.435", "c"=184]
 "casadi/casadi" ["l"="61.441,14.912"]
-"google-deepmind/mujoco_mpc" ["l"="61.163,16.386"]
-"petercorke/robotics-toolbox-python" ["l"="58.845,12.704"]
+"google-deepmind/mujoco_mpc" ["l"="61.163,16.386", "c"=184]
+"petercorke/robotics-toolbox-python" ["l"="58.845,12.704", "c"=299]
 "osqp/osqp" ["l"="61.452,14.886"]
-"google-deepmind/mujoco_menagerie" ["l"="61.196,16.401"]
+"google-deepmind/mujoco_menagerie" ["l"="61.196,16.401", "c"=184]
+"nasa-jpl/open-source-rover" ["l"="19.362,14.34", "c"=868]
+"m-lundberg/simple-pid" ["l"="57.587,10.586", "c"=821]
+"python-control/python-control" ["l"="61.393,14.982"]
+"do-mpc/do-mpc" ["l"="61.415,14.967"]
+"AtsushiSakai/MATLABRobotics" ["l"="61.68,13.39", "c"=313]
+"AtsushiSakai/PyAdvancedControl" ["l"="61.43,14.987"]
 "stack-of-tasks/tsid" ["l"="61.455,14.782"]
 "mayataka/robotoc" ["l"="61.461,14.837"]
-"qiayuanl/legged_control" ["l"="61.077,16.442"]
+"qiayuanl/legged_control" ["l"="61.077,16.442", "c"=184]
 "giaf/hpipm" ["l"="61.452,14.867"]
 "Simple-Robotics/proxsuite" ["l"="61.449,14.812"]
 "acados/acados" ["l"="61.421,14.919"]
-"bridgedp/hunter_bipedal_control" ["l"="61.067,16.48"]
-"robomechanics/quad-sdk" ["l"="61.085,16.38"]
+"bridgedp/hunter_bipedal_control" ["l"="61.067,16.48", "c"=184]
+"robomechanics/quad-sdk" ["l"="61.085,16.38", "c"=184]
 "Simple-Robotics/aligator" ["l"="61.413,14.782"]
-"LeCAR-Lab/dial-mpc" ["l"="61.093,16.456"]
+"LeCAR-Lab/dial-mpc" ["l"="61.093,16.456", "c"=184]
+"openrr/urdf-viz" ["l"="61.271,16.462", "c"=184]
+"Gepetto/example-robot-data" ["l"="61.417,14.747"]
+"NVIDIA-AI-IOT/jetracer" ["l"="53.221,32.437", "c"=251]
+"prl-mushr/mushr" ["l"="61.777,15.265"]
 "MMehrez/MPC-and-MHE-implementation-in-MATLAB-using-Casadi" ["l"="61.444,15.061"]
 "tomcattiger1230/CasADi_MPC_MHE_Python" ["l"="61.421,15.161"]
 "bevanda/Learning-Based-MPC" ["l"="61.458,15.079"]
@@ -2667,39 +3068,45 @@ digraph G {
 "lucasrm25/Gaussian-Process-based-Model-Predictive-Control" ["l"="61.415,15.056"]
 "matssteinweg/Multi-Purpose-MPC" ["l"="61.461,15.046"]
 "HiroIshida/robust-tube-mpc" ["l"="61.434,15.039"]
-"ARCaD-Lab-UM/RF-MPC" ["l"="61.056,16.351"]
+"ARCaD-Lab-UM/RF-MPC" ["l"="61.056,16.351", "c"=184]
 "helgeanl/GP-MPC" ["l"="61.394,15.038"]
 "hilo-mpc/hilo-mpc" ["l"="61.36,15.009"]
+"RocketPy-Team/RocketPy" ["l"="62.867,-2.323", "c"=1176]
+"istellartech/OpenTsiolkovsky" ["l"="61.21,14.71"]
+"istellartech/OpenGoddard" ["l"="61.264,14.746"]
 "locuslab/mpc.pytorch" ["l"="61.372,14.968"]
 "locuslab/differentiable-mpc" ["l"="61.312,14.965"]
-"do-mpc/do-mpc" ["l"="61.415,14.967"]
 "Shunichi09/PythonLinearNonlinearControl" ["l"="61.435,14.965"]
-"UM-ARM-Lab/pytorch_mppi" ["l"="61.098,16.337"]
+"UM-ARM-Lab/pytorch_mppi" ["l"="61.098,16.337", "c"=184]
 "Tim-Salzmann/l4casadi" ["l"="61.377,14.926"]
 "utiasDSL/safe-control-gym" ["l"="61.268,15.004"]
-"anassinator/ilqr" ["l"="61.542,13.277"]
-"uzh-rpg/high_mpc" ["l"="60.319,13.946"]
+"anassinator/ilqr" ["l"="61.542,13.277", "c"=313]
+"uzh-rpg/high_mpc" ["l"="60.319,13.946", "c"=334]
 "locuslab/qpth" ["l"="61.237,14.939"]
 "TUM-AAS/ml-casadi" ["l"="61.35,14.967"]
 "FilippoAiraldi/mpc-reinforcement-learning" ["l"="61.377,15.02"]
 "urosolia/RacingLMPC" ["l"="61.484,15.038"]
 "alexliniger/MPCC" ["l"="61.516,14.975"]
-"AtsushiSakai/PyAdvancedControl" ["l"="61.43,14.987"]
+"epfml/OptML_course" ["l"="21.472,13.818", "c"=267]
+"cvxgrp/cvxpylayers" ["l"="61.282,14.898"]
+"cvxpy/cvxpy" ["l"="50.99,25.8", "c"=743]
+"cvxgrp/scs" ["l"="61.366,14.853"]
+"coin-or/Ipopt" ["l"="61.465,14.897"]
+"embotech/ecos" ["l"="61.414,14.817"]
 "ethz-adrl/ifopt" ["l"="61.474,14.879"]
 "robotology/osqp-eigen" ["l"="61.469,14.854"]
-"coin-or/Ipopt" ["l"="61.465,14.897"]
 "google/osqp-cpp" ["l"="61.491,14.848"]
 "MatthewPeterKelly/OptimTraj" ["l"="61.425,14.879"]
-"leggedrobotics/xpp" ["l"="61.085,16.302"]
+"leggedrobotics/xpp" ["l"="61.085,16.302", "c"=184]
 "coin-or/qpOASES" ["l"="61.489,14.872"]
-"Geonhee-LEE/mpc_ros" ["l"="61.611,13.477"]
-"zhm-real/MotionPlanning" ["l"="61.651,13.429"]
-"LiJiangnanBit/path_optimizer" ["l"="61.574,13.409"]
-"rst-tu-dortmund/mpc_local_planner" ["l"="61.628,13.532"]
-"XiaojingGeorgeZhang/OBCA" ["l"="61.56,13.419"]
+"Geonhee-LEE/mpc_ros" ["l"="61.611,13.477", "c"=313]
+"zhm-real/MotionPlanning" ["l"="61.651,13.429", "c"=313]
+"LiJiangnanBit/path_optimizer" ["l"="61.574,13.409", "c"=313]
+"rst-tu-dortmund/mpc_local_planner" ["l"="61.628,13.532", "c"=313]
+"XiaojingGeorgeZhang/OBCA" ["l"="61.56,13.419", "c"=313]
 "TUMFTM/global_racetrajectory_optimization" ["l"="61.727,15.084"]
-"karlkurzer/path_planner" ["l"="61.59,13.424"]
-"mit-acl/faster" ["l"="60.354,13.849"]
+"karlkurzer/path_planner" ["l"="61.59,13.424", "c"=313]
+"mit-acl/faster" ["l"="60.354,13.849", "c"=334]
 "TUMFTM/trajectory_planning_helpers" ["l"="61.753,15.097"]
 "TUMFTM/GraphBasedLocalTrajectoryPlanner" ["l"="61.734,15.105"]
 "TUMFTM/ScenarioArchitect" ["l"="61.768,15.109"]
@@ -2711,83 +3118,114 @@ digraph G {
 "TUMFTM/race-simulation" ["l"="61.768,15.097"]
 "TUMFTM/f1-timing-database" ["l"="61.785,15.099"]
 "TUMFTM/velocity_optimization" ["l"="61.781,15.119"]
-"stevengj/nlopt" ["l"="-19.39,-25.909"]
+"flame/blis" ["l"="37.113,0.808", "c"=112]
+"giaf/blasfeo" ["l"="61.448,14.832"]
+"sawcordwell/pymdptoolbox" ["l"="61.284,13.23", "c"=313]
+"akifumi-wachi-4/safe_near_optimal_mdp" ["l"="61.165,15.115"]
+"dynamicslab/pysindy" ["l"="21.783,15.81", "c"=516]
+"pnnl/neuromancer" ["l"="61.338,14.926"]
+"wilsonrljr/sysidentpy" ["l"="61.336,15.006"]
+"rlnav/motion_planning" ["l"="61.743,13.561", "c"=313]
+"argmin-rs/argmin" ["l"="-8.265,-4.411", "c"=407]
+"oxfordcontrol/Clarabel.rs" ["l"="61.386,14.823"]
+"pytorch/botorch" ["l"="45.788,26.155", "c"=68]
+"stevengj/nlopt" ["l"="-19.39,-25.909", "c"=10]
 "coin-or/CppAD" ["l"="61.491,14.828"]
-"Pyomo/pyomo" ["l"="50.941,25.899"]
-"coin-or/Cbc" ["l"="51.015,25.935"]
+"Pyomo/pyomo" ["l"="50.941,25.899", "c"=743]
+"coin-or/Cbc" ["l"="51.015,25.935", "c"=743]
 "arbabiha/KoopmanMPC_for_flowcontrol" ["l"="61.41,15.102"]
 "aalanwar/Data-Driven-Predictive-Control" ["l"="61.393,15.135"]
-"eurika-kaiser/KRONIC" ["l"="21.734,15.731"]
-"ramvasudevan/soft-robot-koopman" ["l"="63.074,0.936"]
-"MilanKorda/KoopmanMPC" ["l"="21.751,15.69"]
-"mbudisic/koopman" ["l"="21.718,15.715"]
+"eurika-kaiser/KRONIC" ["l"="21.734,15.731", "c"=516]
+"ramvasudevan/soft-robot-koopman" ["l"="63.074,0.936", "c"=371]
+"MilanKorda/KoopmanMPC" ["l"="21.751,15.69", "c"=516]
+"mbudisic/koopman" ["l"="21.718,15.715", "c"=516]
 "Eric-Bradford/SDD-GP-MPC" ["l"="61.39,15.095"]
-"i-abr/mpc-koopman" ["l"="21.772,15.678"]
+"i-abr/mpc-koopman" ["l"="21.772,15.678", "c"=516]
 "shiivashaakeri/Data-Driven-Model-Predictive-Control-MPC-with-Stability-and-Robustness-Guarantees" ["l"="61.369,15.16"]
-"sisl/variational_koopman" ["l"="21.736,15.703"]
+"sisl/variational_koopman" ["l"="21.736,15.703", "c"=516]
+"cyberbotics/webots" ["l"="60.456,12.699", "c"=286]
 "meshcat-dev/meshcat" ["l"="61.437,14.634"]
 "meshcat-dev/meshcat-python" ["l"="61.432,14.594"]
 "rdeits/MeshCat.jl" ["l"="61.482,14.606"]
-"coal-library/coal" ["l"="61.326,16.419"]
+"coal-library/coal" ["l"="61.326,16.419", "c"=184]
 "based-robotics/mjinx" ["l"="61.384,14.731"]
 "ami-iit/meshcat-cpp" ["l"="61.421,14.609"]
-"KavrakiLab/vamp" ["l"="61.299,16.435"]
+"KavrakiLab/vamp" ["l"="61.299,16.435", "c"=184]
 "stack-of-tasks/eigenpy" ["l"="61.435,14.727"]
-"giaf/blasfeo" ["l"="61.448,14.832"]
-"embotech/ecos" ["l"="61.414,14.817"]
+"jckantor/CBE30338" ["l"="51.355,25.654", "c"=1275]
+"APMonitor/pdc" ["l"="61.271,15.21"]
+"onlytailei/CppRobotics" ["l"="61.627,13.451", "c"=313]
+"orocos/orocos_kinematics_dynamics" ["l"="61.359,16.457", "c"=184]
 "deng-haoyang/ParNMPC" ["l"="61.461,14.99"]
 "rui-huang-opt/tmpc" ["l"="61.435,15.093"]
 "ccalas/mpc" ["l"="61.481,15.091"]
 "HybridRobotics/MPC-CBF" ["l"="61.301,15.05"]
+"fjp/frenet" ["l"="61.492,13.332", "c"=313]
+"mubowen/Optimal-Trajectory-generation-for-Lane-Changing-in-Frenet-Frame" ["l"="61.588,15.173"]
+"mubowen/Baidu-Apollo-control-algorithm" ["l"="61.573,15.135"]
+"qiaoxu123/Self-Driving-Cars" ["l"="61.543,13.427", "c"=313]
 "ohtsukalab/autogenu-jupyter" ["l"="61.506,14.942"]
 "AnkushChak89/ApproximateNonlinearMPC" ["l"="61.471,15.064"]
 "chenyutao36/MATMPC" ["l"="61.537,14.998"]
-"matheecs/ocs2_legged_robot_notes" ["l"="61.026,16.392"]
+"matheecs/ocs2_legged_robot_notes" ["l"="61.026,16.392", "c"=184]
 "cvxr/CVX" ["l"="61.605,14.819"]
 "cvxr/TFOCS" ["l"="61.668,14.754"]
 "yalmip/YALMIP" ["l"="61.569,14.9"]
 "sqlp/sdpt3" ["l"="61.607,14.875"]
 "sqlp/sedumi" ["l"="61.57,14.857"]
 "nathanieljohnston/QETLAB" ["l"="61.695,14.776"]
+"qutip/qutip-notebooks" ["l"="21.156,17.268", "c"=237]
+"rogercolbeck/QI" ["l"="61.742,14.747"]
+"qqfly/how-to-learn-robotics" ["l"="60.09,12.579", "c"=286]
+"victorlei/smop" ["l"="-5.216,23.343", "c"=960]
+"Farama-Foundation/HighwayEnv" ["l"="62.369,12.278", "c"=461]
 "eleurent/phd-bibliography" ["l"="61.457,14.963"]
-"eleurent/rl-agents" ["l"="62.419,12.31"]
-"Farama-Foundation/HighwayEnv" ["l"="62.369,12.278"]
-"chauvinSimon/My_Bibliography_for_Research_on_Autonomous_Driving" ["l"="61.438,13.293"]
-"mit-acl/cadrl_ros" ["l"="59.709,14.907"]
+"anagabandi/nn_dynamics" ["l"="59.27,17.687", "c"=169]
+"chennnnnyize-zz/Optimal-Control-via-Neural-Networks" ["l"="61.211,14.9"]
+"eleurent/rl-agents" ["l"="62.419,12.31", "c"=461]
+"chauvinSimon/My_Bibliography_for_Research_on_Autonomous_Driving" ["l"="61.438,13.293", "c"=313]
+"mit-acl/cadrl_ros" ["l"="59.709,14.907", "c"=1017]
 "meco-group/omg-tools" ["l"="61.501,14.919"]
-"YukunXia/Carla_iLQR_MPC" ["l"="61.51,13.288"]
+"YukunXia/Carla_iLQR_MPC" ["l"="61.51,13.288", "c"=313]
 "BYU-PRISM/GEKKO" ["l"="61.353,15.032"]
 "APMonitor/apm_python" ["l"="61.268,15.167"]
-"IDAES/idaes-pse" ["l"="51.294,25.688"]
+"IDAES/idaes-pse" ["l"="51.294,25.688", "c"=1275]
 "CPCLAB-UNIPI/SIPPY" ["l"="61.342,15.049"]
-"CalebBell/thermo" ["l"="51.332,25.655"]
-"python-control/python-control" ["l"="61.393,14.982"]
-"Pyomo/pyomo-gallery" ["l"="50.9,25.977"]
-"APMonitor/pdc" ["l"="61.271,15.21"]
-"BioSTEAMDevelopmentGroup/biosteam" ["l"="51.278,25.669"]
-"jckantor/ND-Pyomo-Cookbook" ["l"="50.873,25.948"]
-"coin-or/python-mip" ["l"="50.954,25.929"]
-"jckantor/CBE30338" ["l"="51.355,25.654"]
+"CalebBell/thermo" ["l"="51.332,25.655", "c"=1275]
+"Pyomo/pyomo-gallery" ["l"="50.9,25.977", "c"=743]
+"BioSTEAMDevelopmentGroup/biosteam" ["l"="51.278,25.669", "c"=1275]
+"jckantor/ND-Pyomo-Cookbook" ["l"="50.873,25.948", "c"=743]
+"coin-or/python-mip" ["l"="50.954,25.929", "c"=743]
 "TinyMPC/TinyMPC" ["l"="61.475,14.937"]
-"ANYbotics/kindr" ["l"="61.146,16.343"]
+"ANYbotics/kindr" ["l"="61.146,16.343", "c"=184]
 "ydsf16/particle_filter_localization" ["l"="61.632,15.54"]
 "vatsl/ParticleFilter" ["l"="61.635,15.571"]
+"gkjohnson/urdf-loaders" ["l"="59.099,12.498", "c"=299]
+"wil3/gymfc" ["l"="60.266,14.063", "c"=334]
 "befelix/safe-exploration" ["l"="61.284,15.027"]
-"kohonda/mppi_playground" ["l"="61.05,16.292"]
-"tud-amr/mrca-mav" ["l"="61.917,13.575"]
+"kohonda/mppi_playground" ["l"="61.05,16.292", "c"=184]
+"tud-amr/mrca-mav" ["l"="61.917,13.575", "c"=313]
 "befelix/lyapunov-learning" ["l"="61.24,15.05"]
 "befelix/SafeOpt" ["l"="61.233,15.037"]
+"cybergalactic/MSS" ["l"="60.628,13.368", "c"=1053]
+"Hypha-ROS/hypharos_minicar" ["l"="61.591,13.572", "c"=313]
+"Hypha-ROS/hypharos_racecar" ["l"="61.601,15.35"]
 "AMZ-Racing/fssim" ["l"="61.72,15.016"]
 "JohannesBetz/AutonomousRacing_Literature" ["l"="61.778,15.135"]
 "f1tenth/f1tenth_racetracks" ["l"="61.783,15.176"]
 "CL2-UWaterloo/Raceline-Optimization" ["l"="61.749,15.138"]
 "juanmanzanero/fastest-lap" ["l"="61.807,15.067"]
+"mlpack/ensmallen" ["l"="-19.453,-25.934", "c"=10]
+"stephane-caron/lipm_walking_controller" ["l"="61.229,16.248", "c"=184]
+"uzh-rpg/rpg_quadrotor_control" ["l"="60.296,13.949", "c"=334]
+"uzh-rpg/data_driven_mpc" ["l"="61.376,15.001"]
 "cvxgrp/diffcp" ["l"="61.265,14.86"]
 "cvxgrp/cocp" ["l"="61.25,14.849"]
 "cvxgrp/cone_prog_refine" ["l"="61.234,14.838"]
 "cvxgrp/cvxpygen" ["l"="61.309,14.828"]
 "DAIRLab/dairlib" ["l"="61.357,14.689"]
 "ADVRHumanoids/casadi_kin_dyn" ["l"="61.394,14.753"]
+"altmany/export_fig" ["l"="-5.257,23.226", "c"=960]
 "EmbersArc/SCpp" ["l"="61.303,14.73"]
 "EmbersArc/SCvx" ["l"="61.292,14.72"]
 "EmbersArc/SuccessiveConvexificationFreeFinalTime" ["l"="61.274,14.717"]
@@ -2799,6 +3237,11 @@ digraph G {
 "UW-ACL/SCPToolbox_tutorial" ["l"="61.323,14.717"]
 "EmbersArc/Epigraph" ["l"="61.325,14.761"]
 "abhikamath/Rocket-Controls" ["l"="61.286,14.684"]
+"jianzhuozhuTHU/MPC-D-CBF" ["l"="61.308,15.001"]
+"RoboticExplorationLab/TrajectoryOptimization.jl" ["l"="61.462,14.723"]
+"RoboticExplorationLab/Altro.jl" ["l"="61.489,14.673"]
+"optimusride/altro-cpp" ["l"="61.509,14.665"]
+"ori-drs/pronto" ["l"="61.002,16.35", "c"=184]
 "SoMuchForSubtlety/f1viewer" ["l"="62.075,15.116"]
 "robvdpol/RaceControl" ["l"="62.055,15.131"]
 "bootsie123/F1-Web-Viewer" ["l"="62.076,15.138"]
@@ -2813,28 +3256,41 @@ digraph G {
 "iebb/F1WebViewer-SelfHosted" ["l"="62.092,15.15"]
 "davidor/formula1-lap-charts" ["l"="62.075,15.065"]
 "maartenflippo/f1tv-tweaks" ["l"="62.062,15.167"]
-"SHWotever/SimHub" ["l"="-14.553,-41.978"]
-"cvxgrp/scs" ["l"="61.366,14.853"]
-"oxfordcontrol/COSMO.jl" ["l"="22.363,16.638"]
-"jump-dev/Convex.jl" ["l"="22.175,16.663"]
-"oxfordcontrol/Clarabel.rs" ["l"="61.386,14.823"]
+"SHWotever/SimHub" ["l"="-14.553,-41.978", "c"=1299]
+"Le0nX/ModernRoboticsCpp" ["l"="61.307,16.411", "c"=184]
+"ERGO-Code/HiGHS" ["l"="50.998,25.911", "c"=743]
+"cvanaret/Uno" ["l"="61.432,14.816"]
+"simupy/simupy" ["l"="62.418,34.835", "c"=405]
+"OpenMDAO/dymos" ["l"="62.775,-2.244", "c"=1176]
+"PSOPT/psopt" ["l"="61.396,14.837"]
+"mpopt/mpopt" ["l"="61.306,14.784"]
+"oxfordcontrol/COSMO.jl" ["l"="22.363,16.638", "c"=77]
+"jump-dev/Convex.jl" ["l"="22.175,16.663", "c"=77]
 "bodono/scs-python" ["l"="61.325,14.861"]
-"oxfordcontrol/Clarabel.jl" ["l"="22.38,16.603"]
+"oxfordcontrol/Clarabel.jl" ["l"="22.38,16.603", "c"=77]
 "cvxgrp/CVXcanon" ["l"="61.311,14.852"]
-"jump-dev/SCS.jl" ["l"="22.655,16.626"]
-"cvxopt/cvxopt" ["l"="50.963,25.833"]
-"cvxgrp/cvxpylayers" ["l"="61.282,14.898"]
+"jump-dev/SCS.jl" ["l"="22.655,16.626", "c"=77]
+"cvxopt/cvxopt" ["l"="50.963,25.833", "c"=743]
 "embotech/ecos-python" ["l"="61.326,14.839"]
 "harishsatishchandra/SMC-controller" ["l"="61.518,15.139"]
-"priscillascu/Sliding_Mode_Control_Matlab" ["l"="60.291,11.91"]
-"MaciPaci/Simulation-of-Underactuated-AUV-Control-Algorithms" ["l"="60.57,13.346"]
+"priscillascu/Sliding_Mode_Control_Matlab" ["l"="60.291,11.91", "c"=632]
+"MaciPaci/Simulation-of-Underactuated-AUV-Control-Algorithms" ["l"="60.57,13.346", "c"=1053]
 "TUMFTM/veh_passenger" ["l"="61.712,15.131"]
 "xiaoyuyang0901/Simulation-platform" ["l"="61.613,15.124"]
-"mubowen/Baidu-Apollo-control-algorithm" ["l"="61.573,15.135"]
 "TUMFTM/NeuralNetwork_for_VehicleDynamicsModeling" ["l"="61.753,15.161"]
 "andresmendes/Vehicle-Dynamics-Lateral" ["l"="61.702,15.158"]
 "Marksman007577/Autonomous-Drive" ["l"="61.642,15.145"]
+"plotly/plotly_matlab" ["l"="-5.273,23.245", "c"=960]
+"andybarry/flight" ["l"="59.423,10.874", "c"=87]
+"AutoRally/autorally" ["l"="61.561,15.116"]
+"nrontsis/PILCO" ["l"="59.275,17.711", "c"=169]
+"SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control" ["l"="61.381,15.073"]
 "forgi86/pyMPC" ["l"="61.408,15.006"]
+"autodiff/autodiff" ["l"="-19.556,-25.891", "c"=10]
+"yangmingustb/planning_books_1" ["l"="61.625,13.413", "c"=313]
+"nicola-decao/BNAF" ["l"="23.092,14.434", "c"=505]
+"CW-Huang/CP-Flow" ["l"="61.149,14.9"]
+"coin-or/Clp" ["l"="50.985,25.973", "c"=743]
 "soc-ucsd/DMPC_for_platoons" ["l"="61.425,15.253"]
 "bghojogh/DNMPC-Platooning" ["l"="61.406,15.257"]
 "prajval10/Platoon_control" ["l"="61.418,15.28"]
@@ -2853,16 +3309,21 @@ digraph G {
 "cv-core/MIT-Driverless-CV-TrainingInfra" ["l"="61.75,15.019"]
 "FSTDriverless/AirSim" ["l"="61.764,15.002"]
 "loco-3d/ndcurves" ["l"="61.452,14.745"]
+"eurika-kaiser/SINDY-MPC" ["l"="21.745,15.772", "c"=516]
+"gsilano/CrazyS" ["l"="60.384,14.069", "c"=334]
+"bcbarbara/crazyflie_nmpc" ["l"="61.332,14.98"]
 "cs231n/gcloud" ["l"="60.64,15.054"]
-"cs231n/cs231n.github.io" ["l"="48.069,28.667"]
+"cs231n/cs231n.github.io" ["l"="48.069,28.667", "c"=89]
 "StanfordASL/AA203-Notes" ["l"="60.697,15.046"]
-"cezannec/capsule_net_pytorch" ["l"="49.08,27.715"]
-"chrischute/squad" ["l"="54.802,26.571"]
+"cezannec/capsule_net_pytorch" ["l"="49.08,27.715", "c"=1018]
+"chrischute/squad" ["l"="54.802,26.571", "c"=587]
+"chakravala/Grassmann.jl" ["l"="22.056,16.744", "c"=77]
+"JuliaGeometry/GeometryBasics.jl" ["l"="61.505,14.536"]
 "bamos/thesis" ["l"="61.254,14.92"]
 "locuslab/optnet" ["l"="61.234,14.904"]
-"chennnnnyize-zz/Optimal-Control-via-Neural-Networks" ["l"="61.211,14.9"]
+"duckietown/gym-duckietown" ["l"="62.379,12.35", "c"=461]
 "ymontmarin/_tps_robotique" ["l"="61.398,14.63"]
-"stephane-caron/pink" ["l"="61.253,16.419"]
+"stephane-caron/pink" ["l"="61.253,16.419", "c"=184]
 "fsoco/fsoco-dataset" ["l"="61.744,15.039"]
 "Autonomous-Racing-PG/ar-tu-do" ["l"="61.631,15.283"]
 "linklab-uva/f1tenth_gtc_tutorial" ["l"="61.665,15.275"]
@@ -2870,10 +3331,12 @@ digraph G {
 "mit-racecar/racecar_simulator" ["l"="61.614,15.37"]
 "mit-racecar/racecar" ["l"="61.635,15.363"]
 "mit-racecar/racecar_gazebo" ["l"="61.621,15.335"]
-"Hypha-ROS/hypharos_racecar" ["l"="61.601,15.35"]
+"imeshsps/ros-navbot" ["l"="53.254,32.347", "c"=251]
+"epfl-lts2/pygsp" ["l"="52.887,15.795", "c"=100]
+"epfl-lts2/pyunlocbox" ["l"="61.815,14.586"]
+"BethanyL/DeepKoopman" ["l"="21.755,15.742", "c"=516]
+"tesseract-robotics/trajopt" ["l"="61.426,16.468", "c"=184]
 "TUMFTM/YawMomentDiagrams" ["l"="61.729,15.128"]
-"uzh-rpg/data_driven_mpc" ["l"="61.376,15.001"]
-"SimonRennotte/Data-Efficient-Reinforcement-Learning-with-Probabilistic-Model-Predictive-Control" ["l"="61.381,15.073"]
 "williamedwards/autompc" ["l"="61.36,15.097"]
 "TUM-AAS/neural-mpc" ["l"="61.357,14.991"]
 "mlab-upenn/LearningMPC" ["l"="61.58,15.091"]
@@ -2887,15 +3350,14 @@ digraph G {
 "osqp/osqp.rs" ["l"="61.308,14.812"]
 "osqp/osqp-r" ["l"="61.258,14.83"]
 "alphaville/optimization-engine" ["l"="61.4,14.858"]
-"cvanaret/Uno" ["l"="61.432,14.816"]
 "meco-group/fatrop" ["l"="61.417,14.834"]
 "based-robotics/jaxadi" ["l"="61.38,14.809"]
 "kul-optec/alpaqa" ["l"="61.288,14.815"]
 "se-hwan/cusadi" ["l"="61.4,14.811"]
-"JuliaFirstOrder/ProximalAlgorithms.jl" ["l"="22.336,16.602"]
-"sequenceplanner/r2r" ["l"="-14.007,-25.225"]
+"JuliaFirstOrder/ProximalAlgorithms.jl" ["l"="22.336,16.602", "c"=77]
+"sequenceplanner/r2r" ["l"="-14.007,-25.225", "c"=835]
+"AtsushiSakai/HybridAStarTrailer" ["l"="61.581,13.444", "c"=313]
 "istellartech/OpenMOMO" ["l"="61.18,14.706"]
-"istellartech/OpenTsiolkovsky" ["l"="61.21,14.71"]
 "urosolia/LMPC" ["l"="61.529,15.053"]
 "urosolia/LMPC_SimpleExample" ["l"="61.536,15.068"]
 "MPC-Berkeley/genesis_path_follower" ["l"="61.513,15.064"]
@@ -2903,14 +3365,16 @@ digraph G {
 "HybridRobotics/car-racing" ["l"="61.4,15.069"]
 "MPC-Berkeley/genesis_parking" ["l"="61.563,15.053"]
 "ajinkya-khade/ACC_Vehicle_MPC" ["l"="61.546,15.15"]
-"disaster-robotics-proalertas/usv_sim_lsa" ["l"="60.648,13.394"]
+"disaster-robotics-proalertas/usv_sim_lsa" ["l"="60.648,13.394", "c"=1053]
 "Pengskr/MPC" ["l"="61.485,15.132"]
 "XueYifan1995/Real-time-NMPC-for-USVs-CasADi" ["l"="61.475,15.173"]
 "bermeom/MPC-mobile-robot-Path-following" ["l"="61.486,15.151"]
-"OUXT-Polaris/ros_ship_packages" ["l"="60.639,13.415"]
+"OUXT-Polaris/ros_ship_packages" ["l"="60.639,13.415", "c"=1053]
 "StanfordASL/stlcg" ["l"="61.119,15.214"]
 "vincekurtz/stlpy" ["l"="61.05,15.295"]
 "unstable-zeros/learning-cbfs" ["l"="61.207,15.109"]
+"uzh-rpg/rpg_mpc" ["l"="60.308,13.929", "c"=334]
+"acado/acado" ["l"="61.442,14.935"]
 "AgrawalAmey/safe-explorer" ["l"="61.126,15.086"]
 "AliBaheri/Safe-Reinforcement-Learning" ["l"="61.163,15.087"]
 "souhaiel1/Longitudinal-and-Lateral-Control-of-an-automotive-vehicle" ["l"="61.556,15.179"]
@@ -2922,19 +3386,13 @@ digraph G {
 "jolpica/jolpica-f1" ["l"="62.028,15.042"]
 "llSourcell/Landing-a-SpaceX-Falcon-Heavy-Rocket" ["l"="61.169,14.562"]
 "EmbersArc/PPO" ["l"="61.192,14.593"]
-"wilsonrljr/sysidentpy" ["l"="61.336,15.006"]
-"dynamicslab/pysindy" ["l"="21.783,15.81"]
 "dgedon/DeepSSM_SysID" ["l"="61.326,15.064"]
-"baggepinnen/ControlSystemIdentification.jl" ["l"="22.266,16.645"]
-"pnnl/neuromancer" ["l"="61.338,14.926"]
-"PyDMD/PyDMD" ["l"="21.722,15.753"]
+"baggepinnen/ControlSystemIdentification.jl" ["l"="22.266,16.645", "c"=77]
+"PyDMD/PyDMD" ["l"="21.722,15.753", "c"=516]
 "BYU-PRISM/Seeq" ["l"="61.305,15.019"]
-"RoboticExplorationLab/TrajectoryOptimization.jl" ["l"="61.462,14.723"]
-"RoboticExplorationLab/Altro.jl" ["l"="61.489,14.673"]
 "dojo-sim/Dojo.jl" ["l"="61.469,14.687"]
-"optimusride/altro-cpp" ["l"="61.509,14.665"]
 "StanfordASL/GuSTO.jl" ["l"="61.374,14.715"]
-"RoboticExplorationLab/Algames.jl" ["l"="61.491,13.212"]
+"RoboticExplorationLab/Algames.jl" ["l"="61.491,13.212", "c"=313]
 "RoboticExplorationLab/RobotDynamics.jl" ["l"="61.522,14.687"]
 "JuliaRobotics/RigidBodyDynamics.jl" ["l"="61.512,14.623"]
 "JuliaMPC/NLOptControl.jl" ["l"="61.469,14.757"]
@@ -2942,9 +3400,9 @@ digraph G {
 "thowell/CALIPSO.jl" ["l"="61.492,14.697"]
 "JuliaRobotics/TORA.jl" ["l"="61.51,14.71"]
 "xdedss/GFOLD_KSP" ["l"="61.223,14.671"]
-"istellartech/OpenGoddard" ["l"="61.264,14.746"]
 "GuodongZhu/Mars-Ascent-Vehicle-Convex-Optimal-Control" ["l"="61.244,14.724"]
-"Noiredd/PEGAS-MATLAB" ["l"="62.992,-3.528"]
+"Noiredd/PEGAS-MATLAB" ["l"="62.992,-3.528", "c"=833]
+"RussTedrake/manipulation" ["l"="61.301,16.367", "c"=184]
 "HJReachability/fastrack" ["l"="60.732,15.089"]
 "HJReachability/meta_fastrack" ["l"="60.71,15.101"]
 "HJReachability/helperOC" ["l"="60.762,15.079"]
@@ -2952,7 +3410,6 @@ digraph G {
 "1PandaDing/Matlab-simulink-" ["l"="61.62,15.173"]
 "NezaRIP/carsim-simulink-MPC-controller-practice" ["l"="61.603,15.151"]
 "leoking99-BIT/MPC-for-Self-driving-Vehicles" ["l"="61.631,15.162"]
-"rogercolbeck/QI" ["l"="61.742,14.747"]
 "Q-Compiler/UniversalQCompiler" ["l"="61.764,14.734"]
 "xuelang-wang/Paper-code-implementation" ["l"="61.459,15.104"]
 "taewankim1/sequential_convex_programming" ["l"="61.277,14.706"]
@@ -2960,11 +3417,13 @@ digraph G {
 "BenChung/SuccessiveConvexification" ["l"="61.295,14.698"]
 "UW-ACL/pipg-demo" ["l"="61.282,14.757"]
 "JuliaRobotics/RigidBodySim.jl" ["l"="61.543,14.608"]
+"robotology/idyntree" ["l"="61.387,16.215", "c"=184]
+"ami-iit/adam" ["l"="61.369,14.801"]
 "AndyLamperski/pyN4SID" ["l"="61.326,15.082"]
 "jgoppert/sysid" ["l"="61.339,15.09"]
-"python-control/Slycot" ["l"="62.52,34.922"]
+"python-control/Slycot" ["l"="62.52,34.922", "c"=405]
 "Alro10/MOESP-and-N4SID" ["l"="61.303,15.116"]
-"ilayn/harold" ["l"="62.496,34.92"]
+"ilayn/harold" ["l"="62.496,34.92", "c"=405]
 "AleksandarHaber/Subspace-Identification-State-Space-System-Identification-of-Dynamical-Systems-and-Time-Series-" ["l"="61.312,15.091"]
 "MaartenSchoukens/deepSI" ["l"="61.325,15.104"]
 "JakobaRmn/Constraint_RL_MPC" ["l"="61.363,15.142"]
@@ -2979,15 +3438,11 @@ digraph G {
 "ART-Robot-Release/racecar" ["l"="61.621,15.351"]
 "xmy0916/racecar" ["l"="61.654,15.355"]
 "tianbot/tianbot_racecar" ["l"="61.593,15.376"]
-"befelix/safe_learning" ["l"="61.206,15.041"]
 "YaChienChang/Neural-Lyapunov-Control" ["l"="61.187,15.102"]
 "rcheng805/RL-CBF" ["l"="61.189,15.054"]
 "hari-sikchi/safeRL" ["l"="61.18,15.079"]
-"openai/safety-gym" ["l"="61.156,15.019"]
 "MIT-REALM/neural_clbf" ["l"="61.23,15.075"]
-"chauncygu/Safe-Reinforcement-Learning-Baselines" ["l"="61.145,15.038"]
 "jachiam/cpo" ["l"="61.129,15.001"]
-"openai/safety-starter-agents" ["l"="61.136,15.02"]
 "befelix/SafeMDP" ["l"="61.199,15.073"]
 "APMonitor/pds" ["l"="61.238,15.235"]
 "APMonitor/mdc" ["l"="61.258,15.231"]
@@ -3000,28 +3455,33 @@ digraph G {
 "yemam3/SAC-RCBF" ["l"="61.179,15.037"]
 "mahaitongdae/Reachability_Constrained_RL" ["l"="60.979,15.058"]
 "JuliaGeometry/Rotations.jl" ["l"="61.508,14.576"]
-"JuliaGeometry/GeometryBasics.jl" ["l"="61.505,14.536"]
 "JuliaGeometry/CoordinateTransformations.jl" ["l"="61.526,14.584"]
-"MasonProtter/ReplMaker.jl" ["l"="21.813,16.96"]
+"MasonProtter/ReplMaker.jl" ["l"="21.813,16.96", "c"=77]
 "giaf/hpmpc" ["l"="61.536,14.757"]
 "adbuerger/casiopeia" ["l"="61.57,14.721"]
 "moehle/cvxpy_codegen" ["l"="61.557,14.732"]
-"ZexuWang/MPC_based-nonlinear-trajectory-planning" ["l"="63.646,12.474"]
+"TUMcps/CORA" ["l"="22.452,16.893", "c"=77]
+"ZexuWang/MPC_based-nonlinear-trajectory-planning" ["l"="63.646,12.474", "c"=241]
+"carlosluis/online_dmpc" ["l"="61.878,13.521", "c"=313]
+"chengji253/DMPC-for-multi-agent" ["l"="61.451,15.257"]
 "mathworks/Truck-Platooning" ["l"="61.417,15.316"]
 "wzx0hello0wzx/Event_trriggered_MPC_PLATOON" ["l"="61.404,15.291"]
 "grafue/SERVO" ["l"="61.732,14.96"]
 "AMZ-Driverless/rbb_web" ["l"="61.716,14.975"]
+"rdeits/iris-distro" ["l"="60.264,13.791", "c"=334]
+"mpetersen94/gcs" ["l"="61.404,14.595"]
+"TobiaMarcucci/shortest-paths-in-graphs-of-convex-sets" ["l"="61.379,14.555"]
 "mahaarbo/urdf2casadi" ["l"="61.377,14.697"]
 "mahaarbo/casclik" ["l"="61.357,14.667"]
 "Gepetto/jnrh2023" ["l"="61.391,14.687"]
 "Kim-ChuanToh/SDPT3" ["l"="61.639,14.871"]
-"prl-mushr/mushr" ["l"="61.777,15.265"]
 "f1tenth/vesc" ["l"="61.768,15.239"]
 "f1tenth/f1tenth_system" ["l"="61.774,15.208"]
 "MPC-Berkeley/ParkingMPC.jl" ["l"="61.591,15.043"]
 "Benny44/QPALM" ["l"="61.237,14.791"]
 "Benny44/QPALM_vLADEL" ["l"="61.214,14.782"]
 "osqp/osqpth" ["l"="61.228,14.869"]
+"kazuotani14/iLQR" ["l"="61.527,13.259", "c"=313]
 "cirquit/clara" ["l"="61.774,15.012"]
 "JuliaRobotics/MeshCatMechanisms.jl" ["l"="61.547,14.571"]
 "JuliaRobotics/LCMCore.jl" ["l"="61.556,14.538"]
@@ -3034,19 +3494,21 @@ digraph G {
 "f1stuff/f1-live-data" ["l"="62.053,15.052"]
 "JustAman62/undercut-f1" ["l"="62.092,14.995"]
 "tdjsnelling/monaco" ["l"="62.038,15.061"]
+"Thinklab-SJTU/ThinkMatch" ["l"="50.974,26.523", "c"=490]
 "f1tenth/f1tenth_simulator" ["l"="61.808,15.213"]
 "f1tenth/f1tenth_labs" ["l"="61.8,15.223"]
 "f1tenth/f1tenth_gym_ros" ["l"="61.777,15.191"]
 "f1tenth/f1tenth_doc" ["l"="61.787,15.224"]
 "f1tenth/f1tenth_gym" ["l"="61.788,15.208"]
 "tianbot/tianracer" ["l"="61.841,15.234"]
+"rlabbe/filterpy" ["l"="64.088,12.696", "c"=1121]
 "jainachin/bayesrace" ["l"="61.659,15.146"]
 "mlab-upenn/mpcc" ["l"="61.625,15.09"]
-"kohonda/proj-svg_mppi" ["l"="61.026,16.28"]
+"kohonda/proj-svg_mppi" ["l"="61.026,16.28", "c"=184]
 "nirajbasnet/Nonlinear_MPCC_for_autonomous_racing" ["l"="61.644,15.105"]
 "yuwwang123/LearningMPC" ["l"="61.607,15.072"]
+"jonnyhyman/Chaos" ["l"="-24.675,-35.055", "c"=811]
 "PKU-Alignment/Safe-Policy-Optimization" ["l"="61.118,15.028"]
-"PKU-Alignment/safety-gymnasium" ["l"="61.125,15.043"]
 "PKU-Alignment/omnisafe" ["l"="61.109,15.061"]
 "liuzuxin/FSRL" ["l"="61.095,15.041"]
 "akjayant/PPO_Lagrangian_PyTorch" ["l"="61.088,14.967"]
@@ -3054,47 +3516,54 @@ digraph G {
 "SvenGronauer/Bullet-Safety-Gym" ["l"="61.099,15.02"]
 "SapanaChaudhary/PyTorch-CPO" ["l"="61.08,14.979"]
 "liuzuxin/safe-mbrl" ["l"="61.061,15.011"]
-"JuliaControl/ControlSystems.jl" ["l"="22.19,16.746"]
-"simupy/simupy" ["l"="62.418,34.835"]
+"lava/matplotlib-cpp" ["l"="-20.048,-25.84", "c"=10]
+"utiasDSL/gym-pybullet-drones" ["l"="60.299,14.034", "c"=334]
+"JuliaControl/ControlSystems.jl" ["l"="22.19,16.746", "c"=77]
 "A-make/awesome-control-theory" ["l"="61.471,15.005"]
-"ahundt/awesome-robotics" ["l"="58.932,12.657"]
-"mathworks-robotics/awesome-matlab-robotics" ["l"="-5.545,23.229"]
-"mithi/robotics-coursework" ["l"="58.888,12.667"]
+"ahundt/awesome-robotics" ["l"="58.932,12.657", "c"=299]
+"mathworks-robotics/awesome-matlab-robotics" ["l"="-5.545,23.229", "c"=960]
+"mithi/robotics-coursework" ["l"="58.888,12.667", "c"=299]
 "robotsorcerer/awesome-neurocontrol" ["l"="61.532,15.019"]
-"google/jaxopt" ["l"="21.783,14.066"]
-"cvxpy/cvxpy" ["l"="50.99,25.8"]
-"DiffEqML/torchdyn" ["l"="22.895,14.587"]
-"facebookresearch/theseus" ["l"="59.246,11.176"]
-"lezcano/geotorch" ["l"="21.532,14.039"]
-"rtqichen/torchdiffeq" ["l"="22.907,14.56"]
-"khalil-research/PyEPO" ["l"="50.846,25.907"]
-"google-research/torchsde" ["l"="22.953,14.571"]
-"locuslab/deq" ["l"="22.853,14.575"]
+"google/jaxopt" ["l"="21.783,14.066", "c"=267]
+"DiffEqML/torchdyn" ["l"="22.895,14.587", "c"=505]
+"facebookresearch/theseus" ["l"="59.246,11.176", "c"=87]
+"lezcano/geotorch" ["l"="21.532,14.039", "c"=267]
+"rtqichen/torchdiffeq" ["l"="22.907,14.56", "c"=505]
+"khalil-research/PyEPO" ["l"="50.846,25.907", "c"=743]
+"google-research/torchsde" ["l"="22.953,14.571", "c"=505]
+"locuslab/deq" ["l"="22.853,14.575", "c"=505]
+"open-dynamic-robot-initiative/open_robot_actuator_hardware" ["l"="62.332,15.985", "c"=1280]
+"boston-dynamics/spot-sdk" ["l"="62.25,15.872", "c"=1280]
 "lugh56/control-and-system-book" ["l"="61.479,14.975"]
-"yrlu/quadrotor" ["l"="60.257,13.946"]
+"yrlu/quadrotor" ["l"="60.257,13.946", "c"=334]
+"lcm-proj/lcm" ["l"="61.108,16.366", "c"=184]
 "Murad275/nmpc_CarSim" ["l"="61.639,15.194"]
 "devsonni/MPC-Implementation" ["l"="61.406,15.209"]
 "duynamrcv/mpc_casadi" ["l"="61.421,15.195"]
 "duynamrcv/quadrotor_mpc" ["l"="61.386,15.239"]
+"kengz/awesome-deep-rl" ["l"="57.686,18.253", "c"=45]
 "f1tenth/f1tenth_planning" ["l"="61.797,15.191"]
 "f1tenth/particle_filter" ["l"="61.793,15.246"]
 "HiPeRT/unimore_roboracer" ["l"="61.795,15.173"]
 "WesselKroos/race-tv-multiplayer" ["l"="62.066,15.151"]
 "MRAJEKO/UF1-Viewer-with-F1MV" ["l"="62.11,15.087"]
 "fullhunt/spring4shell-scan" ["l"="62.215,15.199"]
+"DrTimothyAldenDavis/SuiteSparse" ["l"="63.043,-1.556", "c"=175]
 "albarji/proxTV" ["l"="61.907,14.47"]
 "glmgen/glmgen" ["l"="61.931,14.431"]
 "simoneparisotto/TDV-for-image-denoising" ["l"="61.93,14.454"]
 "WanglifuCV/TotalVariationAlgorithms" ["l"="61.934,14.477"]
 "jakobsj/TVReg" ["l"="61.897,14.446"]
 "pmelchior/proxmin" ["l"="61.865,14.525"]
-"adler-j/learned_primal_dual" ["l"="-35.424,23.279"]
+"adler-j/learned_primal_dual" ["l"="-35.424,23.279", "c"=630]
+"dynamicslab/databook_python" ["l"="21.719,15.812", "c"=516]
+"jwangjie/Gaussian-Process-Regression-Tutorial" ["l"="46.007,26.142", "c"=68]
 "chauncygu/Safe-Multi-Agent-Mujoco" ["l"="61.116,15.009"]
-"google-deepmind/ai-safety-gridworlds" ["l"="57.55,18.296"]
-"Farama-Foundation/D4RL" ["l"="59.425,17.567"]
-"facebookresearch/mbrl-lib" ["l"="59.345,17.576"]
+"Farama-Foundation/D4RL" ["l"="59.425,17.567", "c"=169]
+"facebookresearch/mbrl-lib" ["l"="59.345,17.576", "c"=169]
 "zlr20/saferl_kit" ["l"="61.087,15.026"]
 "liuzuxin/OSRL" ["l"="61.081,15.049"]
+"roboticslibrary/rl" ["l"="61.343,16.434", "c"=184]
 "SFU-MARS/optimized_dp" ["l"="60.795,15.08"]
 "smlbansal/deepreach" ["l"="60.776,15.072"]
 "HJReachability/beacls" ["l"="60.765,15.097"]
@@ -3106,31 +3575,51 @@ digraph G {
 "Tinker-Twins/AutoDRIVE" ["l"="61.756,15.19"]
 "f1tenth-dev/simulator" ["l"="61.705,15.234"]
 "ETH-PBL/TC-Driver" ["l"="61.811,15.24"]
+"openai/procgen" ["l"="57.537,18.351", "c"=45]
 "HybridRobotics/CBF-CLF-Helper" ["l"="61.284,15.064"]
 "HybridRobotics/cbf" ["l"="61.305,15.065"]
 "elena-ecn/mpc-cbf" ["l"="61.286,15.042"]
-"jianzhuozhuTHU/MPC-D-CBF" ["l"="61.308,15.001"]
 "HybridRobotics/CBF-Pointwise-Feasibility" ["l"="61.275,15.087"]
 "buntonj/CLF-CBF-QP" ["l"="61.319,15.05"]
 "hocherie/cbf_quadrotor" ["l"="61.258,15.083"]
 "abhimasand/AI-Assetto-Corsa" ["l"="61.797,15.357"]
 "Jurredr/ACRL" ["l"="61.787,15.332"]
+"cybergalactic/PythonVehicleSimulator" ["l"="60.651,13.343", "c"=1053]
+"Daybr4ak/ShiroScan" ["l"="-44.537,-29.453", "c"=3]
+"Summer177/seeyon_exp" ["l"="62.354,15.257"]
+"rbdl/rbdl" ["l"="61.282,16.401", "c"=184]
+"raisimTech/raisimLib" ["l"="60.995,16.4", "c"=184]
+"libprima/prima" ["l"="62.61,-0.712", "c"=953]
 "mjl/particle_filter_demo" ["l"="61.628,15.476"]
 "leimao/Particle-Filter" ["l"="61.645,15.508"]
-"NewProggie/Particle-Filter" ["l"="64.211,12.443"]
+"NewProggie/Particle-Filter" ["l"="64.211,12.443", "c"=1121]
 "mit-racecar/particle_filter" ["l"="61.617,15.411"]
+"leggedrobotics/ros_best_practices" ["l"="58.973,12.663", "c"=299]
+"vprusso/toqito" ["l"="20.952,17.516", "c"=237]
+"facebookresearch/higher" ["l"="57.824,19.464", "c"=433]
+"dartsim/dart" ["l"="61.309,16.346", "c"=184]
+"ami-iit/bipedal-locomotion-framework" ["l"="61.309,16.214", "c"=184]
 "liuq/QuadProgpp" ["l"="61.522,14.843"]
 "qpSWIFT/qpSWIFT" ["l"="61.526,14.795"]
-"ShuoYangRobotics/A1-QP-MPC-Controller" ["l"="61.06,16.395"]
+"ShuoYangRobotics/A1-QP-MPC-Controller" ["l"="61.06,16.395", "c"=184]
+"JuliaGeometry/Meshes.jl" ["l"="22.061,16.86", "c"=77]
 "wueestry/f110-mpcc" ["l"="61.645,15.082"]
 "MPC-Berkeley/Racing-LMPC-ROS2" ["l"="61.665,15.095"]
+"upb-lea/reinforcement_learning_course_materials" ["l"="47.85,26.466", "c"=323]
+"uzh-rpg/deep_drone_acrobatics" ["l"="60.288,13.993", "c"=334]
+"rusty1s/deep-graph-matching-consensus" ["l"="52.592,15.809", "c"=100]
+"ds4dm/ecole" ["l"="50.932,26.643", "c"=490]
+"martius-lab/blackbox-backprop" ["l"="61.148,15.072"]
+"trackmania-rl/tmrl" ["l"="58.182,18.902", "c"=45]
+"learn-to-race/l2r" ["l"="61.841,15.307"]
 "taewankim1/robust_mpc_obstacle_avoidance" ["l"="61.492,15.068"]
 "samarth-kalluraya/Obstacle_Avoidance_MPC_Controller_A_star_Planning" ["l"="61.512,15.042"]
 "imoneoi/autonomous_driving_mpc" ["l"="61.447,15.13"]
-"mcarfagno/mpc_python" ["l"="61.656,12.903"]
-"tud-amr/amr-lmpcc" ["l"="61.862,13.535"]
+"mcarfagno/mpc_python" ["l"="61.656,12.903", "c"=774]
+"tud-amr/amr-lmpcc" ["l"="61.862,13.535", "c"=313]
 "coin-or/Clp.old" ["l"="61.4,14.882"]
 "coin-or/Cbc.old" ["l"="61.414,14.895"]
+"PatWie/CppNumericalSolvers" ["l"="-19.413,-25.912", "c"=10]
 "JaideepGuntupalli/f1-predictor" ["l"="62.025,14.972"]
 "jbreeden-um/phd-code" ["l"="61.262,15.105"]
 "heilmeiera/time-discrete-race-simulator" ["l"="61.795,15.106"]
@@ -3139,8 +3628,7 @@ digraph G {
 "iamKaiZhang/DeePC" ["l"="61.298,15.351"]
 "StefanoGioia/Data-Enabled-Predictive-Control-DeePC-implementation" ["l"="61.306,15.336"]
 "4flixt/DeePC_Perspective" ["l"="61.311,15.347"]
-"joaoleal/CppADCodeGen" ["l"="-19.232,-25.734"]
-"autodiff/autodiff" ["l"="-19.556,-25.891"]
+"joaoleal/CppADCodeGen" ["l"="-19.232,-25.734", "c"=10]
 "coin-or/ADOL-C" ["l"="61.552,14.791"]
 "Unicamp-E-Racing/driverless-2019" ["l"="61.804,15.004"]
 "papalotis/ft-fsd-path-planning" ["l"="61.824,14.98"]
@@ -3150,12 +3638,16 @@ digraph G {
 "pmusau17/Platooning-F1Tenth" ["l"="61.849,15.213"]
 "mc12027/OpenLAP-Lap-Time-Simulator" ["l"="61.822,15.082"]
 "dstrassera/OpenLapSim" ["l"="61.839,15.063"]
+"MadNLP/MadNLP.jl" ["l"="22.387,16.619", "c"=77]
+"Simple-Robotics/Simple" ["l"="61.424,14.765"]
+"xuy/pyipopt" ["l"="49.827,25.913", "c"=759]
+"erwincoumans/tiny-differentiable-simulator" ["l"="61.241,16.312", "c"=184]
 "duburcqa/jiminy" ["l"="61.438,14.78"]
-"ami-iit/bipedal-locomotion-framework" ["l"="61.309,16.214"]
-"stephane-caron/lipm_walking_controller" ["l"="61.229,16.248"]
+"keenon/nimblephysics" ["l"="61.243,16.192", "c"=184]
 "gronberg/f1lt" ["l"="62.119,15.067"]
+"pparmesh/Constrained_ILQR" ["l"="61.537,13.327", "c"=313]
+"araffin/rl-tutorial-jnrr19" ["l"="57.723,18.15", "c"=45]
 "embedded-software-laboratory/sequential-convex-programming" ["l"="61.305,14.754"]
-"PSOPT/psopt" ["l"="61.396,14.837"]
 "f1tenth-dev/tutorials" ["l"="61.715,15.253"]
 "f1tenth-dev/pure_pursuit" ["l"="61.696,15.261"]
 "verivital/F1TenthVanderbilt" ["l"="61.716,15.268"]
@@ -3163,25 +3655,27 @@ digraph G {
 "ossamaAhmed/blackbox_mpc" ["l"="61.372,15.184"]
 "DangFengying/RL-based-event-triggered-MPC" ["l"="61.362,15.12"]
 "jlubars/RL-MPC-LaneMerging" ["l"="61.345,15.138"]
+"moribots/motion_planning" ["l"="61.578,13.285", "c"=313]
 "axelbr/racecar_gym" ["l"="61.846,15.28"]
 "ffelten/CrazyRL" ["l"="61.876,15.314"]
-"learn-to-race/l2r" ["l"="61.841,15.307"]
 "dut-iptv/dut-iptv.github.io" ["l"="62.154,15.242"]
 "paulskrzypczyk/steeringreview" ["l"="61.713,14.757"]
 "mtcq/unitary_inverse" ["l"="61.72,14.775"]
 "CL2-UWaterloo/f1tenth_ws" ["l"="61.733,15.156"]
 "MichaelBosello/f1tenth-RL" ["l"="61.739,15.203"]
+"google-research/realworldrl_suite" ["l"="59.388,17.564", "c"=169]
+"fabiopardo/tonic" ["l"="59.32,17.595", "c"=169]
 "Simple-Robotics/proxsuite-nlp" ["l"="61.444,14.763"]
 "Simple-Robotics/LoIK" ["l"="61.408,14.763"]
 "eigency-org/eigency" ["l"="61.435,14.669"]
-"jrl-umi3218/jrl-cmakemodules" ["l"="-19.175,-25.717"]
-"Gepetto/example-robot-data" ["l"="61.417,14.747"]
+"jrl-umi3218/jrl-cmakemodules" ["l"="-19.175,-25.717", "c"=10]
 "coin-or/Osi.old" ["l"="61.355,14.876"]
+"fupinglee/ShiroScan" ["l"="-44.503,-29.646", "c"=3]
+"xinyu2428/TDOA_RCE" ["l"="62.355,15.229"]
 "RoboticExplorationLab/ALTRO" ["l"="61.52,14.649"]
-"pparmesh/Constrained_ILQR" ["l"="61.537,13.327"]
 "bjack205/altro" ["l"="61.492,14.651"]
-"RoboticExplorationLab/ReLUQP.jl" ["l"="60.878,16.43"]
-"Bharath2/iLQR" ["l"="61.532,13.291"]
+"RoboticExplorationLab/ReLUQP.jl" ["l"="60.878,16.43", "c"=184]
+"Bharath2/iLQR" ["l"="61.532,13.291", "c"=313]
 "EmbersArc/EiCOS" ["l"="61.349,14.786"]
 "StanfordASL/neural-network-lyapunov" ["l"="61.15,15.149"]
 "RuikunZhou/Unknown_Neural_Lyapunov" ["l"="61.17,15.131"]
@@ -3192,41 +3686,34 @@ digraph G {
 "laishere/ksp_simple_landing_mission" ["l"="61.194,14.653"]
 "robin-shaun/Falcon9-Soft-Landing-Simulation" ["l"="61.209,14.646"]
 "ADVRHumanoids/horizon" ["l"="61.364,14.747"]
-"ami-iit/adam" ["l"="61.369,14.801"]
-"robot-descriptions/robot_descriptions.py" ["l"="61.264,16.43"]
-"akifumi-wachi-4/safe_near_optimal_mdp" ["l"="61.165,15.115"]
+"robot-descriptions/robot_descriptions.py" ["l"="61.264,16.43", "c"=184]
 "TUMFTM/embes" ["l"="61.831,15.12"]
 "mubowen/Commaai-Openpilot-automatic-vehicle-control-algorithm-" ["l"="61.578,15.161"]
-"mubowen/Optimal-Trajectory-generation-for-Lane-Changing-in-Frenet-Frame" ["l"="61.588,15.173"]
 "unstable-zeros/learning-hcbfs" ["l"="61.19,15.138"]
 "mohitsrinivasan/Barrier_MotionPlanning" ["l"="61.18,15.153"]
 "wuyenlin/adaptive-cruise-control-mpc" ["l"="61.566,15.197"]
 "TalhaRao/Adaptive-Cruise-Control" ["l"="61.588,15.21"]
-"bcbarbara/crazyflie_nmpc" ["l"="61.332,14.98"]
 "unstable-zeros/robust-mpc-sls" ["l"="61.655,14.932"]
 "ShaoruChen/time-delay-robust-SLS-MPC" ["l"="61.679,14.92"]
 "xyf27323/path_following_by_MPC" ["l"="61.61,15.187"]
 "misarb/autonomVehicle" ["l"="61.621,15.154"]
 "qpsolvers/qpsolvers" ["l"="61.468,14.823"]
 "mayataka/hpipm-cpp" ["l"="61.581,14.794"]
-"iit-DLSLab/Quadruped-PyMPC" ["l"="61.013,16.472"]
-"isri-aist/BaselineWalkingController" ["l"="61.253,16.249"]
-"heli-sudoo/HKD-MPC" ["l"="61.006,16.38"]
-"loco-3d/multicontact-locomotion-planning" ["l"="61.261,16.159"]
-"robotology/walking-controllers" ["l"="61.261,16.233"]
-"skywoodsz/qm_control" ["l"="61.022,16.427"]
+"iit-DLSLab/Quadruped-PyMPC" ["l"="61.013,16.472", "c"=184]
+"isri-aist/BaselineWalkingController" ["l"="61.253,16.249", "c"=184]
+"heli-sudoo/HKD-MPC" ["l"="61.006,16.38", "c"=184]
+"loco-3d/multicontact-locomotion-planning" ["l"="61.261,16.159", "c"=184]
+"robotology/walking-controllers" ["l"="61.261,16.233", "c"=184]
+"skywoodsz/qm_control" ["l"="61.022,16.427", "c"=184]
 "bitfsd/ConeDetection" ["l"="61.783,14.945"]
 "FT-Autonomous/F1Tenth-RL" ["l"="61.734,15.231"]
 "StanfordASL/Adaptive-Control-Oriented-Meta-Learning" ["l"="61.122,15.183"]
 "gtfactslab/IROS2020_LearningBarriers" ["l"="61.165,15.18"]
 "CSCsw/ColPack" ["l"="61.597,14.765"]
-"martius-lab/blackbox-backprop" ["l"="61.148,15.072"]
-"ds4dm/ecole" ["l"="50.932,26.643"]
 "martius-lab/blackbox-differentiation-combinatorial-solvers" ["l"="61.138,15.108"]
-"locuslab/SATNet" ["l"="23.509,14.89"]
+"locuslab/SATNet" ["l"="23.509,14.89", "c"=728]
 "JuliaDecisionFocusedLearning/InferOpt.jl" ["l"="61.085,15.119"]
-"rusty1s/deep-graph-matching-consensus" ["l"="52.592,15.809"]
-"RoboticExplorationLab/ReLUQP-py" ["l"="60.927,16.426"]
+"RoboticExplorationLab/ReLUQP-py" ["l"="60.927,16.426", "c"=184]
 "ahmedmoawad124/Self-Driving-Vehicle-Control" ["l"="61.566,15.227"]
 "ryantibs/genlasso" ["l"="61.956,14.417"]
 "tansey/gfl" ["l"="61.934,14.406"]
@@ -3235,34 +3722,40 @@ digraph G {
 "monimoyb/RMPC_MixedUncertainty" ["l"="61.423,15.143"]
 "monimoyb/RMPC_SimpleTube" ["l"="61.424,15.124"]
 "RoboticExplorationLab/RobotZoo.jl" ["l"="61.547,14.676"]
+"petercorke/robotics-toolbox-matlab" ["l"="58.782,12.668", "c"=299]
+"mathworks/MATLAB-Simulink-Challenge-Project-Hub" ["l"="-5.477,23.227", "c"=960]
 "Jared-Chan/f1ml" ["l"="62.201,15.004"]
 "TomWebster98/Race-Strategy-Analysis" ["l"="62.167,15.004"]
 "chandanamulagund/Maximizing-Performance-Data-Analysis-of-Formula-1-Driver-and-Race-Data" ["l"="62.189,14.987"]
 "shaoanlu/mppi_cbf" ["l"="61.291,15.091"]
-"ethz-asl/mav_control_rw" ["l"="60.268,13.909"]
-"uzh-rpg/rpg_mpc" ["l"="60.308,13.929"]
-"uzh-rpg/rpg_quadrotor_control" ["l"="60.296,13.949"]
-"ZJU-FAST-Lab/CMPCC" ["l"="60.281,13.843"]
-"utiasDSL/gym-pybullet-drones" ["l"="60.299,14.034"]
+"coin-or/pulp" ["l"="50.98,25.879", "c"=743]
+"rust-or/good_lp" ["l"="-8.145,-4.497", "c"=407]
+"ethz-asl/mav_control_rw" ["l"="60.268,13.909", "c"=334]
+"ZJU-FAST-Lab/CMPCC" ["l"="60.281,13.843", "c"=334]
 "KenLPham/F1-AppleTV" ["l"="62.092,15.197"]
 "linklab-uva/deep-dynamics" ["l"="61.756,15.22"]
 "svenlr/car-physics-pacejka" ["l"="61.734,15.184"]
-"HybridRobotics/Lane-Change-CBF" ["l"="63.57,12.477"]
+"HybridRobotics/Lane-Change-CBF" ["l"="63.57,12.477", "c"=241]
+"pantor/ruckig" ["l"="61.376,16.449", "c"=184]
+"stephane-caron/pymanoid" ["l"="61.267,16.287", "c"=184]
 "KaguraTart/SUMO-RL-ramp-control" ["l"="61.332,15.186"]
-"DongChen06/MARL_CAVs" ["l"="62.377,12.309"]
+"DongChen06/MARL_CAVs" ["l"="62.377,12.309", "c"=461]
 "wenqing-2021/On_Ramp_Merge_Safe_RL" ["l"="61.328,15.165"]
 "mahmoudtaouti/RL_Highway_Merge" ["l"="61.315,15.183"]
-"patrick-kidger/diffrax" ["l"="21.779,14.095"]
-"tum-pbs/PhiFlow" ["l"="21.772,15.86"]
-"SciML/NeuralPDE.jl" ["l"="22.13,16.676"]
-"boschresearch/torchphysics" ["l"="21.783,15.939"]
+"tinyzqh/light_mappo" ["l"="57.884,18.231", "c"=45]
+"chauncygu/Multi-Agent-Constrained-Policy-Optimisation" ["l"="61.099,15.008"]
+"patrick-kidger/diffrax" ["l"="21.779,14.095", "c"=267]
+"tum-pbs/PhiFlow" ["l"="21.772,15.86", "c"=516]
+"SciML/NeuralPDE.jl" ["l"="22.13,16.676", "c"=77]
+"boschresearch/torchphysics" ["l"="21.783,15.939", "c"=516]
 "andresmendes/openvd" ["l"="61.69,15.184"]
 "andresmendes/Vehicle-Dynamics-Longitudinal" ["l"="61.672,15.162"]
 "toby4548/Vehicle_Dynamics" ["l"="61.706,15.194"]
 "Groggy/race-control-tv" ["l"="62.141,15.157"]
 "iebb/F1-Web-Viewer" ["l"="62.111,15.158"]
+"Pandas-Team/Automatic-Parking" ["l"="61.529,13.4", "c"=313]
 "locuslab/DC3" ["l"="61.2,14.867"]
-"chengji253/DMPC-for-multi-agent" ["l"="61.451,15.257"]
+"jrl-umi3218/RBDyn" ["l"="61.321,16.275", "c"=184]
 "linqingbh/Consensus-based-DMPC" ["l"="61.458,15.242"]
 "aalanwar/Data-Driven-Reachability-Analysis" ["l"="61.389,15.157"]
 "senoa95/cooperative_platooning" ["l"="61.394,15.28"]
@@ -3271,18 +3764,16 @@ digraph G {
 "Weixy21/BarrierNet" ["l"="61.24,15.113"]
 "Berk-Tosun/cbf-cartpole" ["l"="61.223,15.102"]
 "MIT-REALM/gcbf-pytorch" ["l"="61.206,15.147"]
-"TobiaMarcucci/shortest-paths-in-graphs-of-convex-sets" ["l"="61.379,14.555"]
 "cvxgrp/fastpathplanning" ["l"="61.366,14.528"]
-"mpetersen94/gcs" ["l"="61.404,14.595"]
 "jonathancurrie/OPTI" ["l"="61.614,14.948"]
 "ebertolazzi/mexIPOPT" ["l"="61.618,14.92"]
+"UM-ARM-Lab/pytorch_kinematics" ["l"="61.23,16.404", "c"=184]
 "nosnoc/LCQPow" ["l"="61.501,14.769"]
 "nosnoc/nosnoc_py" ["l"="61.515,14.76"]
 "z1un/weaver_exp" ["l"="62.318,15.243"]
-"Summer177/seeyon_exp" ["l"="62.354,15.257"]
-"xinyu2428/TDOA_RCE" ["l"="62.355,15.229"]
 "mathworks/vehicle-model-predictive-control" ["l"="61.546,15.209"]
 "wilkerson-102/OSU-ADAS-MPC" ["l"="61.543,15.24"]
+"mechmotum/cyipopt" ["l"="49.831,25.885", "c"=759]
 "UCSD-SASLab/refineCBF" ["l"="60.759,15.034"]
 "EdmundLuan/CLF_CBF_NMPC_python" ["l"="61.264,15.06"]
 "hanlinniu/multiple_usvs_collision_avoidance" ["l"="61.484,15.22"]
@@ -3292,19 +3783,22 @@ digraph G {
 "anand-bala/signal-temporal-logic" ["l"="61.01,15.324"]
 "Ro3code/aircraft_3d_animation" ["l"="61.862,15.028"]
 "Ro3code/x15_adaptive_flight_control_system" ["l"="61.888,15.008"]
+"cvxgrp/cvx_short_course" ["l"="50.948,25.75", "c"=743]
 "google/trajax" ["l"="61.349,14.713"]
 "vincekurtz/hydrax" ["l"="61.374,14.763"]
 "kevin-tracy/qpax" ["l"="61.398,14.734"]
 "google/deluca" ["l"="61.313,14.647"]
-"mpopt/mpopt" ["l"="61.306,14.784"]
-"acado/acado" ["l"="61.442,14.935"]
-"csu-hmc/opty" ["l"="49.826,25.848"]
+"csu-hmc/opty" ["l"="49.826,25.848", "c"=759]
 "fxqinnovation/mpc4usv" ["l"="61.491,15.249"]
-"XiaoLi996/OA-EXP" ["l"="62.333,15.29"]
+"brentyi/jaxls" ["l"="22.047,13.88", "c"=267]
 "ami-iit/jaxsim" ["l"="61.37,14.782"]
+"brentyi/jaxlie" ["l"="22.021,13.916", "c"=267]
+"young-geng/CQL" ["l"="59.507,17.549", "c"=169]
+"ZhengYinan-AIR/FISOR" ["l"="61,15.078"]
+"ryanxhr/POR" ["l"="60.902,15.127"]
+"XiaoLi996/OA-EXP" ["l"="62.333,15.29"]
 "ami-iit/liecasadi" ["l"="61.362,14.823"]
-"robotology/idyntree" ["l"="61.387,16.215"]
-"jjyyxx/srlnbc" ["l"="58.186,18.127"]
+"jjyyxx/srlnbc" ["l"="58.186,18.127", "c"=45]
 "uiuc-iml/autompc" ["l"="61.326,15.13"]
 "APMonitor/apm_matlab" ["l"="61.257,15.186"]
 "APMonitor/apopt" ["l"="61.238,15.184"]
@@ -3326,89 +3820,97 @@ digraph G {
 "yashpant/FlyByLogic" ["l"="61.016,15.389"]
 "UtkarshMishra04/DMD-MPC-RL" ["l"="61.364,15.22"]
 "mahaitongdae/Feasible-Actor-Critic" ["l"="60.962,15.045"]
-"chauncygu/Multi-Agent-Constrained-Policy-Optimisation" ["l"="61.099,15.008"]
+"kiloreux/awesome-robotics" ["l"="58.905,12.638", "c"=299]
+"google-deepmind/mujoco" ["l"="61.182,16.333", "c"=184]
 "liuzuxin/cvpo-safe-rl" ["l"="61.085,15.064"]
+"VincentWong3/automatic-driving-decision-and-planning-for-matlab" ["l"="61.617,13.303", "c"=313]
+"symengine/symengine" ["l"="20.607,14.216", "c"=1146]
 "nosnoc/nosnoc" ["l"="61.484,14.78"]
 "FreyJo/casados-integrators" ["l"="61.502,14.747"]
 "minlp-toolbox/CAMINO" ["l"="61.518,14.746"]
+"robot-descriptions/awesome-robot-descriptions" ["l"="61.187,16.427", "c"=184]
+"lagadic/visp" ["l"="60.777,11.754", "c"=632]
+"CHH3213/chhRobotics" ["l"="61.625,13.362", "c"=313]
 "ZhuLinche/DeepMPC" ["l"="61.459,15.154"]
-"metaStor/SpringScan" ["l"="-44.293,-29.757"]
+"metaStor/SpringScan" ["l"="-44.293,-29.757", "c"=3]
 "SummerSec/SpringExploit" ["l"="62.257,15.223"]
-"0x727/SpringBootExploit" ["l"="-44.319,-29.731"]
-"pmiaowu/BurpFastJsonScan" ["l"="-44.4,-29.74"]
+"0x727/SpringBootExploit" ["l"="-44.319,-29.731", "c"=3]
+"pmiaowu/BurpFastJsonScan" ["l"="-44.4,-29.74", "c"=3]
+"symforce-org/symforce" ["l"="59.303,11.136", "c"=87]
+"yingchengyang/Reinforcement-Learning-Papers" ["l"="59.538,17.583", "c"=169]
+"nicklashansen/tdmpc" ["l"="59.341,17.599", "c"=169]
+"vista-simulator/vista" ["l"="63.17,12.519", "c"=241]
 "AutoRally/autorally_platform_instructions" ["l"="61.586,15.11"]
-"AutoRally/autorally" ["l"="61.561,15.116"]
-"XiaojingGeorgeZhang/H-OBCA" ["l"="61.54,13.386"]
+"XiaojingGeorgeZhang/H-OBCA" ["l"="61.54,13.386", "c"=313]
 "chauncygu/Safe-Multi-Agent-Robosuite" ["l"="61.105,14.986"]
 "chauncygu/Safe-Multi-Agent-Isaac-Gym" ["l"="61.089,14.99"]
 "duynamrcv/quadrotor_acados" ["l"="61.374,15.279"]
 "SailorBrandon/MPC-for-Quadrotors" ["l"="61.363,15.265"]
-"rust-or/good_lp" ["l"="-8.145,-4.497"]
 "qpsolvers/qpbenchmark" ["l"="61.43,14.794"]
-"argmin-rs/argmin" ["l"="-8.265,-4.411"]
 "oxfordcontrol/Clarabel.cpp" ["l"="61.333,14.801"]
 "darnstrom/daqp" ["l"="61.471,14.805"]
-"linalg-rs/rlst" ["l"="-8.295,-4.251"]
-"joschu/trajopt" ["l"="61.386,16.473"]
+"linalg-rs/rlst" ["l"="-8.295,-4.251", "c"=407]
+"joschu/trajopt" ["l"="61.386,16.473", "c"=184]
 "Facebear-ljx/SBAC" ["l"="60.911,15.106"]
 "Facebear-ljx/PROTO" ["l"="60.925,15.098"]
 "Facebear-ljx/RGM" ["l"="60.924,15.116"]
 "Optimal-Control-16-745/lecture-notebooks-2022" ["l"="61.454,14.603"]
 "dynamics-simulation-16-715/lecture-notebooks" ["l"="61.448,14.555"]
 "Optimal-Control-16-745/lecture-notebooks-2023" ["l"="61.469,14.565"]
-"MATPOWER/matpower" ["l"="-11.131,17.523"]
-"NicolasBoumal/manopt" ["l"="21.485,14.091"]
-"plotly/plotly_matlab" ["l"="-5.273,23.245"]
-"precise-simulation/featool-multiphysics" ["l"="63.021,-1.461"]
+"MATPOWER/matpower" ["l"="-11.131,17.523", "c"=440]
+"NicolasBoumal/manopt" ["l"="21.485,14.091", "c"=267]
+"precise-simulation/featool-multiphysics" ["l"="63.021,-1.461", "c"=175]
 "dojo-sim/dojopy" ["l"="61.505,14.683"]
-"dojo-sim/ContactImplicitMPC.jl" ["l"="61.05,16.332"]
-"robot-acceleration/GRiD" ["l"="61.349,16.143"]
-"erwincoumans/tiny-differentiable-simulator" ["l"="61.241,16.312"]
+"dojo-sim/ContactImplicitMPC.jl" ["l"="61.05,16.332", "c"=184]
+"robot-acceleration/GRiD" ["l"="61.349,16.143", "c"=184]
 "thowell/RoboDojo.jl" ["l"="61.471,14.654"]
 "simon-lc/Silico.jl" ["l"="61.454,14.664"]
 "thowell/optimization_dynamics" ["l"="61.475,14.638"]
-"keenon/nimblephysics" ["l"="61.243,16.192"]
+"giacomo-b/CppRobotics" ["l"="61.54,13.503", "c"=313]
+"benmoseley/harmonic-oscillator-pinn" ["l"="21.702,16.003", "c"=516]
 "soc-ucsd/DeeP-LCC" ["l"="61.312,15.368"]
 "soc-ucsd/Decentralized-DeeP-LCC" ["l"="61.306,15.392"]
-"JuliaDecisionFocusedLearning/ImplicitDifferentiation.jl" ["l"="22.107,16.926"]
+"JuliaDecisionFocusedLearning/ImplicitDifferentiation.jl" ["l"="22.107,16.926", "c"=77]
 "quadprog/quadprog" ["l"="61.526,14.816"]
 "leap-c/leap-c" ["l"="61.536,14.875"]
-"OpenMDAO/dymos" ["l"="62.775,-2.244"]
 "teasit/magic-formula-tyre-tool" ["l"="61.863,15.063"]
+"cyanrain7/TRPO-in-MARL" ["l"="57.934,18.269", "c"=45]
 "Jonas-Nicodemus/PINNs-based-MPC" ["l"="61.355,15.067"]
-"Simple-Robotics/Simple" ["l"="61.424,14.765"]
-"MadNLP/MadNLP.jl" ["l"="22.387,16.619"]
-"ds4dm/Tulip.jl" ["l"="22.341,16.66"]
-"ralna/GALAHAD" ["l"="62.591,-0.689"]
-"exanauts/ExaModels.jl" ["l"="22.418,16.608"]
-"metab0t/PyOptInterface" ["l"="22.438,16.603"]
+"TUMFTM/EthicalTrajectoryPlanning" ["l"="63.245,12.377", "c"=241]
+"ds4dm/Tulip.jl" ["l"="22.341,16.66", "c"=77]
+"ralna/GALAHAD" ["l"="62.591,-0.689", "c"=953]
+"exanauts/ExaModels.jl" ["l"="22.418,16.608", "c"=77]
+"metab0t/PyOptInterface" ["l"="22.438,16.603", "c"=77]
 "dobro12/CPO" ["l"="61.036,14.965"]
 "ajlangley/cpo-pytorch" ["l"="61.105,14.971"]
 "hari-sikchi/pytorch_CPO" ["l"="61.053,14.963"]
+"metaopt/torchopt" ["l"="21.723,13.931", "c"=267]
+"upkie/upkie" ["l"="61.343,16.248", "c"=184]
 "teasit/magic-formula-tyre-library" ["l"="61.888,15.061"]
 "aerorobotics/neural-fly" ["l"="61.282,14.972"]
 "GuanyaShi/Online-Meta-Adaptive-Control" ["l"="61.237,14.974"]
 "RobotLocomotion/gcs-science-robotics" ["l"="61.4,14.551"]
-"cyanrain7/TRPO-in-MARL" ["l"="57.934,18.269"]
-"PKU-MARL/Multi-Agent-Transformer" ["l"="57.92,18.276"]
-"marlbenchmark/off-policy" ["l"="57.889,18.246"]
-"tinyzqh/light_mappo" ["l"="57.884,18.231"]
-"ffelten/MASAC" ["l"="58.012,18.198"]
+"PKU-MARL/Multi-Agent-Transformer" ["l"="57.92,18.276", "c"=45]
+"marlbenchmark/off-policy" ["l"="57.889,18.246", "c"=45]
+"ffelten/MASAC" ["l"="58.012,18.198", "c"=45]
 "mahaitongdae/Safety_Index_Synthesis" ["l"="60.951,15.054"]
+"AIR-DISCOVER/ICRA-RM-Sim2Real" ["l"="63.761,11.668", "c"=693]
+"Facebear-ljx/DOGE" ["l"="60.936,15.117"]
+"LiJiangnanBit/path_optimizer_2" ["l"="61.547,13.361", "c"=313]
 "linklab-uva/RACECAR_DATA" ["l"="61.889,15.216"]
 "SafeRoboticsLab/Dual_Control_HRI" ["l"="60.766,15.134"]
 "bitzhangcy/Safe-Deep-Reinforcement-Learning" ["l"="61.048,15.028"]
+"sisl/MPOPIS" ["l"="61.024,16.297", "c"=184]
 "Woodenonez/TrajTrack-MPCnDQN-RLBoost" ["l"="61.347,15.173"]
 "Weixy21/Adaptive-CBF" ["l"="61.231,15.141"]
 "agimus-project/colmpc" ["l"="61.394,14.66"]
 "jarredbarber/eigen-QP" ["l"="61.637,14.838"]
 "jrl-umi3218/eigen-quadprog" ["l"="61.605,14.841"]
 "f1tenth/ESweek2021_educationclassA3" ["l"="61.829,15.191"]
-"Facebear-ljx/DOGE" ["l"="60.936,15.117"]
 "ryanxhr/DWBC" ["l"="60.914,15.136"]
-"AIR-DISCOVER/LASST" ["l"="63.715,11.675"]
+"AIR-DISCOVER/LASST" ["l"="63.715,11.675", "c"=693]
 "t6-thu/H2O" ["l"="60.926,15.131"]
-"Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" ["l"="63.715,11.667"]
+"Yang-Li-2000/Distance-Aware-Occlusion-Detection-with-Focused-Attention" ["l"="63.715,11.667", "c"=693]
 "pcheng2/TSRL" ["l"="60.917,15.115"]
 "Stanford-ILIAD/Confidence-Aware-Imitation-Learning" ["l"="60.89,15.164"]
 "jrl-umi3218/eigen-qld" ["l"="61.622,14.828"]
@@ -3416,38 +3918,54 @@ digraph G {
 "cvxgrp/proximal" ["l"="61.756,14.657"]
 "stonkens/cbf_opt" ["l"="60.744,15.019"]
 "driveblocks/AV-Open-Source" ["l"="61.863,15.117"]
-"sikang/mpl_ros" ["l"="60.302,13.871"]
-"sikang/motion_primitive_library" ["l"="60.278,13.875"]
-"hungpham2511/toppra" ["l"="61.399,16.458"]
-"tesseract-robotics/trajopt" ["l"="61.426,16.468"]
-"sbpl/sbpl" ["l"="61.566,13.562"]
+"facontidavide/PlotJuggler" ["l"="59.025,12.619", "c"=299]
+"linorobot/linorobot" ["l"="60.369,12.507", "c"=286]
+"cvxgrp/cvxbook_additional_exercises" ["l"="51.004,25.718", "c"=743]
+"sikang/mpl_ros" ["l"="60.302,13.871", "c"=334]
+"sikang/motion_primitive_library" ["l"="60.278,13.875", "c"=334]
+"hungpham2511/toppra" ["l"="61.399,16.458", "c"=184]
+"sbpl/sbpl" ["l"="61.566,13.562", "c"=313]
+"danfis/libccd" ["l"="61.436,16.377", "c"=184]
+"shacklettbp/madrona" ["l"="59.309,17.363", "c"=169]
 "ina111/MatRockSim" ["l"="61.155,14.678"]
 "sus304/ForRocket" ["l"="61.18,14.684"]
-"PKU-MARL/HARL" ["l"="57.91,18.246"]
+"LucasAlegre/morl-baselines" ["l"="59.387,17.371", "c"=169]
+"PKU-MARL/HARL" ["l"="57.91,18.246", "c"=45]
 "liuzuxin/DSRL" ["l"="61.054,15.058"]
 "PKU-Alignment/SafeDreamer" ["l"="61.077,15.087"]
-"PeiranLi0930/TorchProject" ["l"="50.651,2.959"]
-"merua0oo0/im" ["l"="50.624,2.968"]
-"elleryqueenhomels/fast_neural_style_transfer" ["l"="50.698,2.899"]
-"pentilm/AirCtrl" ["l"="50.632,2.986"]
-"WAMAWAMA/WAMA_Modules" ["l"="50.686,2.887"]
-"PKU-Alignment/safe-rlhf" ["l"="37.184,-0.232"]
-"wangxupeng/2019Legal-AI-Challenge-Legal-Case-Element-Recognition-solution" ["l"="50.747,2.974"]
-"ali-vilab/Cones-V2" ["l"="50.691,2.975"]
-"PeiranLi0930/L-SVD" ["l"="50.674,3.012"]
-"pentilm/StellarSolver" ["l"="50.703,2.88"]
-"silvery107/rl-mpc-locomotion" ["l"="61.066,16.458"]
+"PeiranLi0930/TorchProject" ["l"="50.651,2.959", "c"=85]
+"merua0oo0/im" ["l"="50.624,2.968", "c"=85]
+"elleryqueenhomels/fast_neural_style_transfer" ["l"="50.698,2.899", "c"=85]
+"pentilm/AirCtrl" ["l"="50.632,2.986", "c"=85]
+"WAMAWAMA/WAMA_Modules" ["l"="50.686,2.887", "c"=85]
+"PKU-Alignment/safe-rlhf" ["l"="37.184,-0.232", "c"=126]
+"wangxupeng/2019Legal-AI-Challenge-Legal-Case-Element-Recognition-solution" ["l"="50.747,2.974", "c"=85]
+"ali-vilab/Cones-V2" ["l"="50.691,2.975", "c"=85]
+"PeiranLi0930/L-SVD" ["l"="50.674,3.012", "c"=85]
+"pentilm/StellarSolver" ["l"="50.703,2.88", "c"=85]
+"silvery107/rl-mpc-locomotion" ["l"="61.066,16.458", "c"=184]
+"facebookresearch/online-dt" ["l"="59.561,17.61", "c"=169]
+"yihaosun1124/OfflineRL-Kit" ["l"="59.463,17.601", "c"=169]
+"hanruihua/RDA-planner" ["l"="59.846,14.951", "c"=1017]
 "mit-racecar/hardware" ["l"="61.662,15.391"]
+"ihmcrobotics/ihmc-open-robotics-software" ["l"="61.17,16.291", "c"=184]
+"proroklab/popgym" ["l"="59.316,17.461", "c"=169]
+"ryanxhr/IVR" ["l"="60.895,15.142"]
+"Mr-Tony921/xju-robot" ["l"="61.723,13.593", "c"=313]
+"Allenpandas/Reinforcement-Learning-Papers" ["l"="59.565,17.671", "c"=169]
 "kevin-tracy/dpax" ["l"="61.408,14.701"]
 "kevin-tracy/DiffPills.jl" ["l"="61.425,14.656"]
 "bjack205/slap" ["l"="61.413,14.661"]
 "chunhsienho/ADAS_Project-Auto-steering-ACC" ["l"="61.576,15.188"]
 "ChenBohan/Notes-of-MPC-in-Self-Driving-Car" ["l"="61.537,15.19"]
+"NCAlgebra/NC" ["l"="20.962,14.723", "c"=1241]
 "tg623623nana/Vehicle_Motion_Planning_with_Obstacles_Avoidance_using_MPC" ["l"="61.523,15.083"]
+"tud-amr/mppi-isaac" ["l"="61.085,16.317", "c"=184]
+"Dangko/ego-planner-for-ground-robot" ["l"="59.896,14.995", "c"=1017]
+"JuliaGraphics/QML.jl" ["l"="21.796,16.744", "c"=77]
 "Daniella1/urdf_files_dataset" ["l"="61.362,14.646"]
-"robot-descriptions/awesome-robot-descriptions" ["l"="61.187,16.427"]
 "unstable-zeros/dl-mpc-sls" ["l"="61.437,15.236"]
-"JuliaArrays/StaticArrays.jl" ["l"="21.976,16.767"]
+"JuliaArrays/StaticArrays.jl" ["l"="21.976,16.767", "c"=77]
 "JuliaRobotics/Caesar.jl" ["l"="61.578,14.529"]
 "rssalessio/PyDeePC" ["l"="61.319,15.317"]
 "Zhang-Xuewen/DeePCtools" ["l"="61.332,15.35"]
@@ -3455,17 +3973,15 @@ digraph G {
 "Zhang-Xuewen/Deep-DeePC" ["l"="61.339,15.336"]
 "rssalessio/PyZPC" ["l"="61.298,15.316"]
 "michael-cummins/DeePC-Hunt" ["l"="61.288,15.325"]
-"USE-jx/NMPC_CASADI_CPP" ["l"="59.961,15.025"]
-"Dangko/ego-planner-for-ground-robot" ["l"="59.896,14.995"]
-"jianzhuozhuTHU/putn" ["l"="60.513,13.794"]
+"jianzhuozhuTHU/putn" ["l"="60.513,13.794", "c"=334]
+"jhavl/dkt" ["l"="58.81,12.735", "c"=299]
+"USE-jx/NMPC_CASADI_CPP" ["l"="59.961,15.025", "c"=1017]
 "janedipan/Demo-Acbf2312" ["l"="61.264,14.982"]
-"hanruihua/RDA-planner" ["l"="59.846,14.951"]
-"LiJiangnanBit/path_optimizer_2" ["l"="61.547,13.361"]
-"mit-acl/mppi_numba" ["l"="60.958,16.295"]
-"osrf/car_demo" ["l"="61.564,13.488"]
-"vvrs/MPPIController" ["l"="60.81,16.352"]
-"Hypha-ROS/hypharos_minicar" ["l"="61.591,13.572"]
-"ferreirafabio/mppi_pendulum" ["l"="60.864,16.35"]
+"AIR-DISCOVER/TOIST" ["l"="63.705,11.672", "c"=693]
+"mit-acl/mppi_numba" ["l"="60.958,16.295", "c"=184]
+"osrf/car_demo" ["l"="61.564,13.488", "c"=313]
+"vvrs/MPPIController" ["l"="60.81,16.352", "c"=184]
+"ferreirafabio/mppi_pendulum" ["l"="60.864,16.35", "c"=184]
 "mit-racecar/vesc" ["l"="61.673,15.337"]
 "RacecarJ/installRACECARJ" ["l"="61.642,15.4"]
 "LapsTimeOFF/DigiFlag_F1MV" ["l"="62.127,15.099"]
@@ -3473,12 +3989,15 @@ digraph G {
 "f1-tools/MultiViewer-StreamDeck-Plugin" ["l"="62.146,15.083"]
 "JuliaRobotics/IncrementalInference.jl" ["l"="61.611,14.506"]
 "JuliaRobotics/RoME.jl" ["l"="61.597,14.491"]
+"auto-differentiation/xad" ["l"="-19.396,-25.783", "c"=10]
 "HenryLHH/fusion" ["l"="61.046,15.078"]
 "ZifanWu/CAL" ["l"="61.054,15.09"]
 "Simple-Robotics/simple-mpc" ["l"="61.384,14.747"]
 "roahmlab/RAPTOR" ["l"="61.39,14.772"]
 "machines-in-motion/mim_solvers" ["l"="61.398,14.713"]
 "edantec/MPC_benchmark" ["l"="61.37,14.732"]
+"btx0424/OmniDrones" ["l"="60.397,13.97", "c"=334]
+"anuragajay/decision-diffuser" ["l"="59.401,16.791", "c"=234]
 "DezsoRanki/RL-MPC" ["l"="61.315,15.151"]
 "FARAZLOTFI/offroad_autonomous_navigation" ["l"="61.299,15.169"]
 "akjayant/mbppol" ["l"="60.993,15.006"]
@@ -3494,63 +4013,78 @@ digraph G {
 "t6-thu/xTED" ["l"="60.938,15.102"]
 "ETH-PBL/MAP-Controller" ["l"="61.811,15.157"]
 "BDEvan5/f1tenth_benchmarks" ["l"="61.829,15.161"]
-"ryanxhr/POR" ["l"="60.902,15.127"]
-"ryanxhr/IVR" ["l"="60.895,15.142"]
 "befelix/Safe-RL-Benchmark" ["l"="61.218,15.061"]
 "TUMFTM/3DVehicleDynamicsStateEstimation" ["l"="61.923,15.26"]
 "TUMFTM/MixNet" ["l"="61.914,15.224"]
 "TUMFTM/Open-Car-Dynamics" ["l"="61.937,15.251"]
+"facebookresearch/BenchMARL" ["l"="57.911,18.301", "c"=45]
 "subhashhhhhh/Fastlytics" ["l"="62.102,15.019"]
 "BrightDV/BoxBox" ["l"="62.065,14.967"]
 "GoktugOcal/LiveF1" ["l"="62.094,15.058"]
-"ZJU-FAST-Lab/GCOPTER" ["l"="60.343,13.871"]
-"ZJU-FAST-Lab/LBFGS-Lite" ["l"="60.298,13.807"]
+"ZJU-FAST-Lab/GCOPTER" ["l"="60.343,13.871", "c"=334]
+"ZJU-FAST-Lab/LBFGS-Lite" ["l"="60.298,13.807", "c"=334]
+"jyjblrd/Low-Cost-Mocap" ["l"="58.962,14.191", "c"=264]
+"OpenRL-Lab/openrl" ["l"="57.955,18.262", "c"=45]
+"RyanZotti/Self-Driving-Car" ["l"="61.496,12.506", "c"=774]
+"DJTobias/Cherry-Autonomous-Racecar" ["l"="61.591,15.288"]
 "fdevinc/ungar" ["l"="61.333,14.673"]
 "harningle/fia-doc" ["l"="61.997,15.016"]
 "jcnewell/ergast-f1-api" ["l"="62.113,15.045"]
 "Samuel-Roach/ergast-py" ["l"="62.009,14.998"]
 "Rafacv23/F1-api" ["l"="62.062,15.011"]
 "alec-kr/F1PyStats" ["l"="62.049,15.001"]
+"philippe-eecs/IDQL" ["l"="59.383,16.842", "c"=234]
+"qboticslabs/ros_robotics_projects" ["l"="60.183,12.636", "c"=286]
+"datlife/jetson-car" ["l"="61.583,15.322"]
+"sbrin/lopaka" ["l"="-18.024,-43.843", "c"=55]
+"sb-ocr/focus-dial" ["l"="62.318,14.871"]
 "jkoendev/optimal-control-literature-software" ["l"="61.505,15.016"]
-"ZhengYinan-AIR/FISOR" ["l"="61,15.078"]
-"facebookresearch/online-dt" ["l"="59.561,17.61"]
-"nissymori/JAX-CORL" ["l"="59.371,17.422"]
+"nissymori/JAX-CORL" ["l"="59.371,17.422", "c"=169]
+"USC-ACTLab/crazyswarm" ["l"="60.384,14.091", "c"=334]
+"bethesirius/ChosunTruck" ["l"="61.54,12.327", "c"=774]
 "AmarBhatt/DynamicPathFollowingRobot" ["l"="61.484,15.197"]
 "Kuberwastaken/backdooms" ["l"="62.192,14.932"]
-"DJTobias/Cherry-Autonomous-Racecar" ["l"="61.591,15.288"]
-"datlife/jetson-car" ["l"="61.583,15.322"]
-"tawnkramer/shark" ["l"="61.502,12.716"]
+"MizuhoAOKI/python_simple_mppi" ["l"="61.058,16.313", "c"=184]
+"tawnkramer/shark" ["l"="61.502,12.716", "c"=774]
 "cometa/Autonomia" ["l"="61.563,15.302"]
 "shunchan0677/Tensorflow_in_ROS" ["l"="61.554,15.348"]
+"engnadeau/pybotics" ["l"="58.808,12.639", "c"=299]
 "jgillis/fatrop_demo" ["l"="61.346,14.813"]
 "RoboticExplorationLab/TinyMPC-AL" ["l"="61.559,14.632"]
-"iamalexkorotin/Wasserstein2GenerativeNetworks" ["l"="21.584,13.542"]
-"CW-Huang/CP-Flow" ["l"="61.149,14.9"]
+"LeCAR-Lab/CoVO-MPC" ["l"="61.02,16.314", "c"=184]
+"iamalexkorotin/Wasserstein2GenerativeNetworks" ["l"="21.584,13.542", "c"=267]
 "alessandroassirelli98/pinocchio-casadi-examples" ["l"="61.379,14.662"]
 "kristianceder/DRL-Traj-Planner" ["l"="61.336,15.203"]
 "MIT-REALM/gcbfplus" ["l"="61.193,15.176"]
 "MPC-Based-Reinforcement-Learning/mpc4rl" ["l"="61.561,14.875"]
 "AIR-DI/D2C" ["l"="60.939,15.09"]
+"rl-tools/rl-tools" ["l"="59.273,17.453", "c"=169]
+"esa/pagmo2" ["l"="49.846,26.042", "c"=759]
 "mr-d-self-driving/Control-and-AI-Algorithms" ["l"="61.496,15.173"]
 "Petrus1904/HandbookLinearDPC" ["l"="61.342,15.234"]
 "shiivashaakeri/Data-Driven-MPC-Linear-Systems-RL" ["l"="61.353,15.205"]
-"philippe-eecs/IDQL" ["l"="59.383,16.842"]
 "ltlhuuu/PSEC" ["l"="60.97,15.106"]
 "2toinf/DecisionNCE" ["l"="60.951,15.095"]
+"DRCL-USC/Hector_Simulation" ["l"="61.049,16.428", "c"=184]
+"Kyubyong/sudoku" ["l"="26.591,-25.129", "c"=32]
+"PythonOT/POT" ["l"="21.573,13.907", "c"=267]
+"PolySync/oscc" ["l"="61.523,12.456", "c"=774]
+"hbrobotics/ros_arduino_bridge" ["l"="60.266,12.545", "c"=286]
+"TuragaLab/flybody" ["l"="61.144,16.288", "c"=184]
 "EhsanSabouni/CDC2024_RL_adpative_MPC_CBF" ["l"="61.159,14.972"]
-"ZJU-FAST-Lab/Implicit-SDF-Planner" ["l"="60.342,13.851"]
-"hojae-io/ModelBasedFootstepPlanning-IROS2024" ["l"="61.036,16.532"]
-"google-deepmind/mujoco_warp" ["l"="61.179,16.374"]
+"ZJU-FAST-Lab/Implicit-SDF-Planner" ["l"="60.342,13.851", "c"=334]
+"hojae-io/ModelBasedFootstepPlanning-IROS2024" ["l"="61.036,16.532", "c"=184]
+"google-deepmind/mujoco_warp" ["l"="61.179,16.374", "c"=184]
+"ebrahimpichka/awesome-optimization" ["l"="50.893,25.874", "c"=743]
 "osqp/qdldl" ["l"="61.505,14.787"]
 "TUMFTM/FlexMap_Fusion" ["l"="61.968,15.277"]
 "TUMFTM/FlexCloud" ["l"="61.947,15.288"]
-"AtsushiSakai/MATLABRobotics" ["l"="61.68,13.39"]
-"AtsushiSakai/HybridAStarTrailer" ["l"="61.581,13.444"]
 "OTL/rostensorflow" ["l"="61.539,15.385"]
 "ForzaETH/particle_filter" ["l"="61.811,15.143"]
-"ENSTABretagneRobotics/razor_imu_9dof" ["l"="57.624,10.82"]
+"sea-bass/pyroboplan" ["l"="61.26,16.399", "c"=184]
+"ENSTABretagneRobotics/razor_imu_9dof" ["l"="57.624,10.82", "c"=821]
 "asherikov/qpmad" ["l"="61.587,14.832"]
-"GabrielEGC/IHMC-Robotics" ["l"="61.04,16.279"]
+"GabrielEGC/IHMC-Robotics" ["l"="61.04,16.279", "c"=184]
 "stack-of-tasks/eiquadprog" ["l"="61.563,14.827"]
 "TUMFTM/tsl" ["l"="61.94,15.27"]
 "mvcisback/py-metric-temporal-logic" ["l"="60.973,15.354"]
@@ -3558,38 +4092,45 @@ digraph G {
 "STLInspector/STLInspector" ["l"="60.948,15.362"]
 "ShockLeo/Iterative-MPC-DHOCBF" ["l"="61.272,15.127"]
 "t6-thu/awesome-cross-domain-policy-transfer-for-embodied-agents" ["l"="60.894,15.095"]
+"quimortiz/dynoRRT" ["l"="63.837,2.531", "c"=134]
 "ltlhuuu/A2PR" ["l"="60.968,15.127"]
 "Edivad99/NJS-ErgastF1API" ["l"="62.143,15.031"]
 "weiranyu/pyErgast" ["l"="62.153,15.047"]
 "locuslab/e2e-model-learning" ["l"="61.187,14.895"]
-"locuslab/lcp-physics" ["l"="61.312,16.148"]
+"locuslab/lcp-physics" ["l"="61.312,16.148", "c"=184]
 "bamos/block" ["l"="61.176,14.92"]
-"VITA-Group/Open-L2O" ["l"="50.851,26.535"]
+"VITA-Group/Open-L2O" ["l"="50.851,26.535", "c"=490]
+"LeCAR-Lab/model-based-diffusion" ["l"="61.036,16.38", "c"=184]
+"cemoody/topicsne" ["l"="44.918,26.193", "c"=68]
 "tkkim-robot/safe_control" ["l"="61.204,14.994"]
-"kjunelee/MetaOptNet" ["l"="57.759,19.313"]
-"jump-dev/Hypatia.jl" ["l"="22.337,16.631"]
+"kjunelee/MetaOptNet" ["l"="57.759,19.313", "c"=433]
+"jump-dev/Hypatia.jl" ["l"="22.337,16.631", "c"=77]
 "Simple-Robotics/ContactBench" ["l"="61.415,14.728"]
 "bamos/setGPU" ["l"="61.118,14.894"]
+"ModiaSim/Modia.jl" ["l"="22.244,16.678", "c"=77]
 "danielpmorton/cbfpy" ["l"="61.349,14.734"]
 "StanfordASL/oscbf" ["l"="61.325,14.697"]
 "dasGringuen/assetto_corsa_gym" ["l"="61.774,15.296"]
 "based-robotics/mujoco-sysid" ["l"="61.329,14.736"]
 "sohonisaurabh/CarND-Kidnapped-Vehicle-Project" ["l"="61.638,15.598"]
-"Simple-Robotics/candlewick" ["l"="61.359,16.703"]
+"Simple-Robotics/candlewick" ["l"="61.359,16.703", "c"=184]
 "IntelligentControlSystems/l4acados" ["l"="61.537,14.92"]
 "jgillis/madnlp_demo" ["l"="61.316,14.798"]
+"kthohr/optim" ["l"="-19.494,-25.945", "c"=10]
 "kctess5/range_libc" ["l"="61.605,15.448"]
-"epfl-lts2/pyunlocbox" ["l"="61.815,14.586"]
+"aleju/self-driving-truck" ["l"="61.612,12.477", "c"=774]
 "Rukenshia/pomodoro" ["l"="62.269,14.894"]
-"RamboRogers/rfhunter" ["l"="40.426,5.845"]
-"sb-ocr/focus-dial" ["l"="62.318,14.871"]
-"zbzhu99/Constrained-Decision-Making-Paper-List" ["l"="61.101,14.949"]
+"RamboRogers/rfhunter" ["l"="40.426,5.845", "c"=1506]
+"OpenRobotLab/Seer" ["l"="59.407,16.484", "c"=234]
 "2toinf/UniAct" ["l"="60.919,15.078"]
-"OpenRobotLab/Seer" ["l"="59.407,16.484"]
-"MAPIRlab/rf2o_laser_odometry" ["l"="61.593,13.765"]
+"zbzhu99/Constrained-Decision-Making-Paper-List" ["l"="61.101,14.949"]
+"YashBansod/Robotics-Planning-Dynamics-and-Control" ["l"="61.8,13.317", "c"=313]
+"MAPIRlab/rf2o_laser_odometry" ["l"="61.593,13.765", "c"=313]
 "UrbanCircles/igor" ["l"="62.352,14.854"]
+"SpatialVLA/SpatialVLA" ["l"="59.41,16.514", "c"=234]
+"TUMFTM/OpenLiDARMap" ["l"="58.441,9.964", "c"=142]
 "EmbersArc/gym-rocketlander" ["l"="61.254,14.667"]
 "arex18/rocket-lander" ["l"="61.23,14.606"]
 "bssthu/system_identification_code_from_book" ["l"="61.289,15.142"]
-"isri-aist/QpSolverCollection" ["l"="61.311,16.175"]
+"isri-aist/QpSolverCollection" ["l"="61.311,16.175", "c"=184]
 }

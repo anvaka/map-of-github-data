@@ -1,4 +1,7 @@
 digraph G {
+"flutter-webrtc/flutter-webrtc-demo" -> "livekit/client-sdk-flutter" ["e"=1]
+"webrtc-sdk/libwebrtc" -> "webrtc-sdk/webrtc" ["e"=1]
+"webrtc-sdk/libwebrtc" -> "webrtc-sdk/webrtc-build" ["e"=1]
 "webrtc-sdk/webrtc" -> "webrtc-sdk/libwebrtc" ["e"=1]
 "webrtc-sdk/webrtc" -> "webrtc-sdk/android"
 "webrtc-sdk/webrtc" -> "shiguredo-webrtc-build/webrtc-build" ["e"=1]
@@ -6,7 +9,13 @@ digraph G {
 "webrtc-sdk/webrtc" -> "webrtc-sdk/Specs"
 "webrtc-sdk/webrtc" -> "livekit/rust-sdks"
 "webrtc-sdk/webrtc" -> "livekit/client-sdk-android"
+"flutter-webrtc/flutter-webrtc-server" -> "livekit/client-sdk-flutter" ["e"=1]
+"stasel/WebRTC-iOS" -> "livekit/client-sdk-swift" ["e"=1]
 "twilio/media-streams" -> "craigsdennis/genai-phone-call"
+"open-webrtc-toolkit/owt-client-native" -> "webrtc-sdk/webrtc" ["e"=1]
+"livekit/livekit" -> "livekit/client-sdk-js" ["e"=1]
+"facemoji/alter-core" -> "livekit/livekit-cli" ["e"=1]
+"shiguredo-webrtc-build/webrtc-build" -> "webrtc-sdk/webrtc" ["e"=1]
 "livekit/livekit-react" -> "livekit/client-sdk-js"
 "livekit/livekit-react" -> "livekit/node-sdks"
 "livekit/livekit-react" -> "livekit/client-sdk-android"
@@ -16,6 +25,10 @@ digraph G {
 "livekit/livekit-react" -> "livekit/livekit-recorder"
 "livekit/livekit-react" -> "frostbyte73/core"
 "livekit/livekit-react" -> "livekit/livekit-server-sdk-python"
+"stasel/WebRTC" -> "livekit/client-sdk-swift" ["e"=1]
+"stasel/WebRTC" -> "webrtc-sdk/webrtc" ["e"=1]
+"stasel/WebRTC" -> "rno/WebRTC" ["e"=1]
+"stasel/WebRTC" -> "webrtc-sdk/android" ["e"=1]
 "livekit/client-sdk-swift" -> "livekit-examples/swift-example"
 "livekit/client-sdk-swift" -> "livekit/client-sdk-android"
 "livekit/client-sdk-swift" -> "livekit/node-sdks"
@@ -28,6 +41,7 @@ digraph G {
 "livekit/client-sdk-swift" -> "livekit/client-sdk-flutter"
 "livekit/client-sdk-swift" -> "livekit/ingress"
 "livekit/client-sdk-swift" -> "livekit/webrtc-xcframework"
+"algesten/str0m" -> "livekit/rust-sdks" ["e"=1]
 "livekit/client-sdk-flutter" -> "livekit/server-sdk-go"
 "livekit/client-sdk-flutter" -> "livekit/egress"
 "livekit/client-sdk-flutter" -> "livekit/livekit-cli"
@@ -103,6 +117,7 @@ digraph G {
 "livekit/client-sdk-js" -> "livekit/livekit-helm"
 "livekit/client-sdk-js" -> "livekit/track-processors-js"
 "livekit/client-sdk-js" -> "livekit/protocol"
+"RelevanceAI/relevanceai" -> "misbahsy/Doc2Podcast" ["e"=1]
 "livekit/node-sdks" -> "livekit/client-sdk-js"
 "livekit/node-sdks" -> "livekit/livekit-react"
 "livekit/node-sdks" -> "livekit/egress"
@@ -117,9 +132,12 @@ digraph G {
 "livekit/node-sdks" -> "livekit/server-sdk-go"
 "livekit/node-sdks" -> "livekit/rust-sdks"
 "livekit/node-sdks" -> "livekit/python-sdks"
+"openai/openai-openapi" -> "openai/openai-realtime-api-beta" ["e"=1]
+"l7mp/stunner" -> "livekit/livekit-helm" ["e"=1]
 "livekit/client-sdk-react-native" -> "livekit/react-native-webrtc"
 "livekit/client-sdk-react-native" -> "livekit/node-sdks"
 "livekit/client-sdk-react-native" -> "livekit/components-js"
+"emiago/sipgo" -> "livekit/sip" ["e"=1]
 "livekit/egress" -> "livekit/ingress"
 "livekit/egress" -> "livekit/server-sdk-go"
 "livekit/egress" -> "livekit/livekit-cli"
@@ -152,6 +170,8 @@ digraph G {
 "livekit/rust-sdks" -> "livekit/psrpc"
 "livekit/rust-sdks" -> "livekit/client-sdk-swift"
 "livekit/rust-sdks" -> "livekit/track-processors-js"
+"element-hq/element-x-ios" -> "matrix-org/waterfall" ["e"=1]
+"mynaparrot/plugNmeet-server" -> "livekit-examples/meet" ["e"=1]
 "livekit-examples/swift-example" -> "livekit/client-sdk-swift"
 "livekit/client-sdk-unity-web" -> "livekit-examples/unity-webgl-demo"
 "livekit/ingress" -> "livekit/egress"
@@ -159,6 +179,7 @@ digraph G {
 "livekit/ingress" -> "livekit/psrpc"
 "livekit/ingress" -> "livekit/livekit-cli"
 "livekit/ingress" -> "livekit/node-sdks"
+"anthropics/anthropic-sdk-typescript" -> "openai/openai-realtime-api-beta" ["e"=1]
 "livekit-examples/meet" -> "livekit-examples/livestream"
 "livekit-examples/meet" -> "livekit/components-js"
 "livekit-examples/meet" -> "livekit/node-sdks"
@@ -174,7 +195,9 @@ digraph G {
 "livekit-examples/meet" -> "livekit/ingress"
 "livekit-examples/meet" -> "livekit-examples/spatial-audio"
 "livekit-examples/meet" -> "livekit/livekit-react"
+"amulchapla/AI-Powered-Call-Center-Intelligence" -> "microsoft/call-center-ai" ["e"=1]
 "livekit-examples/spatial-audio" -> "livekit/server-sdk-ruby"
+"ricky0123/vad" -> "deepgram-starters/nextjs-live-transcription" ["e"=1]
 "livekit/components-js" -> "livekit/client-sdk-js"
 "livekit/components-js" -> "livekit-examples/meet"
 "livekit/components-js" -> "livekit/node-sdks"
@@ -191,11 +214,16 @@ digraph G {
 "livekit/components-js" -> "livekit/server-sdk-go"
 "livekit/components-js" -> "Sean-Der/embedded-sdk"
 "rno/WebRTC" -> "webrtc-sdk/android"
+"vocodedev/vocode-core" -> "voxos-ai/bolna" ["e"=1]
+"vocodedev/vocode-core" -> "twilio-labs/call-gpt" ["e"=1]
+"enjalot/latent-scope" -> "SouthBridgeAI/offmute" ["e"=1]
 "junruxiong/IncarnaMind" -> "Wang-Shuo/A-Guide-to-Retrieval-Augmented-LLM"
 "junruxiong/IncarnaMind" -> "FutureClubNL/RAGMeUp" ["e"=1]
 "junruxiong/IncarnaMind" -> "YassKhazzan/openperplex_backend_os" ["e"=1]
 "junruxiong/IncarnaMind" -> "fill3d/fill" ["e"=1]
 "junruxiong/IncarnaMind" -> "Yusuke710/nanoPerplexityAI"
+"go-gst/go-gst" -> "livekit/server-sdk-go" ["e"=1]
+"GetStream/webrtc-android" -> "webrtc-sdk/android" ["e"=1]
 "Wang-Shuo/A-Guide-to-Retrieval-Augmented-LLM" -> "sufengniu/RefGPT"
 "mutonix/RefGPT" -> "sufengniu/RefGPT"
 "livekit/python-sdks" -> "livekit/agents-playground"
@@ -229,12 +257,23 @@ digraph G {
 "livekit-examples/kitt" -> "livekit/egress"
 "livekit/components-android" -> "livekit-examples/android-livestream"
 "livekit-examples/android-livestream" -> "livekit/components-android"
+"openai/openai-assistants-quickstart" -> "openai/openai-realtime-api-beta" ["e"=1]
+"openai/openai-assistants-quickstart" -> "openai/openai-responses-starter-app" ["e"=1]
+"AllAboutAI-YT/easy-local-rag" -> "svpino/livekit-assistant" ["e"=1]
+"daveebbelaar/python-whatsapp-bot" -> "gkamradt/QuickAgent" ["e"=1]
+"mshumer/ai-journalist" -> "svpino/livekit-assistant" ["e"=1]
+"cloudflare/orange" -> "craigsdennis/talk-to-javascript-openai-workers" ["e"=1]
+"ntegrals/aura-voice" -> "deepgram-starters/nextjs-live-transcription" ["e"=1]
+"e2b-dev/code-interpreter" -> "transitive-bullshit/openai-realtime-api" ["e"=1]
+"cognitivecomputations/github2file" -> "SouthBridgeAI/offmute" ["e"=1]
+"groq/groq-api-cookbook" -> "serkandyck/realtime-voice-assistant-groq" ["e"=1]
 "gkamradt/QuickAgent" -> "serkandyck/realtime-voice-assistant-groq"
 "gkamradt/QuickAgent" -> "unclecode/groqcall"
 "gkamradt/QuickAgent" -> "sudarshan-koirala/rag-chat-with-pdf"
 "gkamradt/QuickAgent" -> "svpino/livekit-assistant"
 "gkamradt/QuickAgent" -> "deepgram-devs/deepgram-ai-agent-demo"
 "gkamradt/QuickAgent" -> "christianrice/ai-demos" ["e"=1]
+"vndee/local-talking-llm" -> "techwithtim/LiveKit-AI-Voice-Assitant" ["e"=1]
 "twilio-labs/call-gpt" -> "microsoft/call-center-ai"
 "twilio-labs/call-gpt" -> "akiani/aidialer"
 "twilio-labs/call-gpt" -> "sshh12/llm_convo"
@@ -250,6 +289,7 @@ digraph G {
 "twilio-labs/call-gpt" -> "deepgram/deepgram-twilio-streaming-voice-agent"
 "twilio-labs/call-gpt" -> "vocodedev/vocode-core" ["e"=1]
 "twilio-labs/call-gpt" -> "reecevela/phone"
+"Omniplex-ai/omniplex" -> "Yusuke710/nanoPerplexityAI" ["e"=1]
 "serkandyck/realtime-voice-assistant-groq" -> "gkamradt/QuickAgent"
 "serkandyck/realtime-voice-assistant-groq" -> "definitive-io/crewai-groq" ["e"=1]
 "serkandyck/realtime-voice-assistant-groq" -> "jgravelle/StrawberryGroq" ["e"=1]
@@ -317,9 +357,13 @@ digraph G {
 "livekit/sip" -> "emiago/sipgo" ["e"=1]
 "livekit/sip" -> "emiago/gophone" ["e"=1]
 "livekit/sip" -> "matrix-org/waterfall"
+"ai-ng/swift" -> "serkandyck/realtime-voice-assistant-groq" ["e"=1]
+"ai-ng/swift" -> "dsa/fast-voice-assistant" ["e"=1]
+"ai-ng/swift" -> "livekit/agents-playground" ["e"=1]
 "run-llama/voice-chat-pdf" -> "nickscamara/firecrawl-openai-realtime"
 "run-llama/voice-chat-pdf" -> "run-llama/openai_realtime_client"
 "run-llama/voice-chat-pdf" -> "misbahsy/meetingmind"
+"HumeAI/hume-evi-next-js-starter" -> "deepgram-starters/nextjs-live-transcription" ["e"=1]
 "misbahsy/meetingmind" -> "misbahsy/Doc2Podcast"
 "misbahsy/meetingmind" -> "run-llama/voice-chat-pdf"
 "misbahsy/meetingmind" -> "SouthBridgeAI/offmute"
@@ -328,6 +372,11 @@ digraph G {
 "misbahsy/meetingmind" -> "bklieger-groq/NotebookLlama-Groq"
 "misbahsy/meetingmind" -> "ahmad2b/postbot3000" ["e"=1]
 "misbahsy/meetingmind" -> "misbahsy/MindMapper"
+"openai/openai-realtime-console" -> "openai/openai-realtime-api-beta" ["e"=1]
+"openai/openai-realtime-console" -> "langchain-ai/react-voice-agent" ["e"=1]
+"openai/openai-realtime-console" -> "openai/openai-realtime-twilio-demo" ["e"=1]
+"openai/openai-realtime-console" -> "livekit-examples/realtime-playground" ["e"=1]
+"openai/openai-realtime-console" -> "twilio-samples/speech-assistant-openai-realtime-api-node" ["e"=1]
 "langchain-ai/react-voice-agent" -> "Azure-Samples/aisearch-openai-rag-audio" ["e"=1]
 "langchain-ai/react-voice-agent" -> "langchain-ai/company-researcher" ["e"=1]
 "langchain-ai/react-voice-agent" -> "run-llama/openai_realtime_client"
@@ -342,6 +391,7 @@ digraph G {
 "langchain-ai/react-voice-agent" -> "dheerajrhegde/servicedesk_langgraph_tavily" ["e"=1]
 "langchain-ai/react-voice-agent" -> "hwchase17/langfuzz"
 "langchain-ai/react-voice-agent" -> "run-llama/voice-chat-pdf"
+"langchain-ai/langchain-academy" -> "langchain-ai/react-voice-agent" ["e"=1]
 "akiani/aidialer" -> "twilio-labs/call-gpt"
 "twilio-samples/speech-assistant-openai-realtime-api-node" -> "twilio-samples/live-translation-openai-realtime-api"
 "twilio-samples/speech-assistant-openai-realtime-api-node" -> "twilio-samples/speech-assistant-openai-realtime-api-python"
@@ -360,13 +410,22 @@ digraph G {
 "twilio-samples/speech-assistant-openai-realtime-api-python" -> "run-llama/openai_realtime_client"
 "twilio-samples/speech-assistant-openai-realtime-api-python" -> "openai/openai-realtime-api-beta"
 "twilio-samples/speech-assistant-openai-realtime-api-python" -> "AgoraIO/openai-realtime-python"
+"openai/openai-realtime-embedded" -> "openai/openai-realtime-api-beta" ["e"=1]
 "transitive-bullshit/openai-realtime-api" -> "openai/openai-realtime-api-beta"
 "techwithtim/LiveKit-AI-Voice-Assitant" -> "Jalsemgeest/Python"
 "techwithtim/LiveKit-AI-Voice-Assitant" -> "svpino/livekit-assistant"
+"Doriandarko/gemini-ui-to-code" -> "svpino/livekit-assistant" ["e"=1]
+"s-smits/agentic-cursorrules" -> "SouthBridgeAI/offmute" ["e"=1]
+"Nutlope/blinkshot" -> "run-llama/voice-chat-pdf" ["e"=1]
+"Nutlope/blinkshot" -> "misbahsy/meetingmind" ["e"=1]
+"varungodbole/prompt-tuning-playbook" -> "SouthBridgeAI/offmute" ["e"=1]
+"TEN-framework/ten_framework.bak" -> "AgoraIO/openai-realtime-python" ["e"=1]
+"mckaywrigley/buildware-ai" -> "transitive-bullshit/openai-realtime-api" ["e"=1]
 "SouthBridgeAI/offmute" -> "misbahsy/meetingmind"
 "SouthBridgeAI/offmute" -> "s-smits/agentic-cursorrules" ["e"=1]
 "SouthBridgeAI/offmute" -> "SouthBridgeAI/diagen"
 "SouthBridgeAI/offmute" -> "SouthBridgeAI/llm-transcription-study"
+"bracesproul/gen-ui-python" -> "langchain-ai/react-voice-agent" ["e"=1]
 "svpino/livekit-assistant" -> "techwithtim/LiveKit-AI-Voice-Assitant"
 "svpino/livekit-assistant" -> "svpino/alloy-voice-assistant" ["e"=1]
 "svpino/livekit-assistant" -> "livekit/agents-playground"
@@ -376,6 +435,9 @@ digraph G {
 "svpino/livekit-assistant" -> "gkamradt/QuickAgent"
 "svpino/livekit-assistant" -> "alexfazio/OpenPlexity-Pages"
 "svpino/livekit-assistant" -> "dsa/fast-voice-assistant"
+"PromtEngineer/Verbi" -> "gkamradt/QuickAgent" ["e"=1]
+"Azure-Samples/aoai-realtime-audio-sdk" -> "openai/openai-realtime-api-beta" ["e"=1]
+"bklieger-groq/stockbot-on-groq" -> "Yusuke710/nanoPerplexityAI" ["e"=1]
 "Anil-matcha/AI-Voice-Agent" -> "bolna-ai/bolna"
 "Azure-Samples/agent-openai-java-banking-assistant" -> "Azure-Samples/azure-search-openai-demo-java"
 "Azure-Samples/agent-openai-java-banking-assistant" -> "Azure-Samples/semantic-kernel-advanced-usage" ["e"=1]
@@ -383,8 +445,12 @@ digraph G {
 "run-llama/openai_realtime_client" -> "twilio-samples/speech-assistant-openai-realtime-api-python"
 "run-llama/openai_realtime_client" -> "langchain-ai/react-voice-agent"
 "run-llama/openai_realtime_client" -> "AgoraIO/openai-realtime-python"
+"svpino/alloy-voice-assistant" -> "svpino/livekit-assistant" ["e"=1]
+"svpino/alloy-voice-assistant" -> "dsa/fast-voice-assistant" ["e"=1]
 "misbahsy/Doc2Podcast" -> "misbahsy/InsightExpress" ["e"=1]
 "misbahsy/Doc2Podcast" -> "misbahsy/meetingmind"
+"Bklieger/ScribeWizard" -> "bklieger-groq/NotebookLlama-Groq" ["e"=1]
+"Bklieger/ScribeWizard" -> "alexfazio/OpenPlexity-Pages" ["e"=1]
 "mem0ai/mem0-chrome-extension" -> "bklieger-groq/NotebookLlama-Groq"
 "cameronking4/openai-realtime-blocks" -> "cameronking4/openai-realtime-api-nextjs"
 "cameronking4/openai-realtime-blocks" -> "cameronking4/VapiBlocks"
@@ -405,6 +471,7 @@ digraph G {
 "openai/openai-realtime-api-beta" -> "langchain-ai/react-voice-agent"
 "openai/openai-realtime-api-beta" -> "craigsdennis/talk-to-javascript-openai-workers"
 "openai/openai-realtime-api-beta" -> "openai/openai-realtime-solar-system"
+"RayFernando1337/MLX-Auto-Subtitled-Video-Generator" -> "misbahsy/meetingmind" ["e"=1]
 "bolna-ai/bolna" -> "Anil-matcha/AI-Voice-Agent"
 "bolna-ai/bolna" -> "bentoml/BentoVoiceAgent"
 "bolna-ai/bolna" -> "voxos-ai/bolna"
@@ -424,6 +491,7 @@ digraph G {
 "livekit-examples/realtime-playground" -> "livekit-examples/voice-pipeline-agent-python"
 "livekit-examples/realtime-playground" -> "Azure-Samples/aisearch-openai-rag-audio" ["e"=1]
 "pyserve/EchoLink-AI-Powered-Voice-Calling-with-Twilio-and-Meta-LLAMA" -> "Th1b4uthkt/dashboard-call-center-ai-agent"
+"nirbar1985/ai-travel-agent" -> "langchain-ai/react-voice-agent" ["e"=1]
 "nickscamara/firecrawl-openai-realtime" -> "run-llama/voice-chat-pdf"
 "dsa/fast-voice-assistant" -> "livekit/agents-playground"
 "dsa/fast-voice-assistant" -> "livekit/agents-js"
@@ -438,6 +506,7 @@ digraph G {
 "TechxGenus/CursorCore" -> "ysy-phoenix/evalhub"
 "avijeett007/Knotie-AI" -> "trizmo/SalesGPT---Twilio"
 "avijeett007/Knotie-AI" -> "pyserve/EchoLink-AI-Powered-Voice-Calling-with-Twilio-and-Meta-LLAMA"
+"johnmai-dev/NotebookMLX" -> "bklieger-groq/NotebookLlama-Groq" ["e"=1]
 "askjohngeorge/ai-dialer" -> "askjohngeorge/sales-prompt-creator"
 "askjohngeorge/ai-dialer" -> "Th1b4uthkt/dashboard-call-center-ai-agent"
 "Sean-Der/embedded-sdk" -> "livekit/psrpc"
@@ -448,8 +517,14 @@ digraph G {
 "livekit-examples/voice-assistant-frontend" -> "livekit-examples/gemini-playground"
 "livekit-examples/voice-assistant-frontend" -> "livekit/agents-js"
 "askjohngeorge/sales-prompt-creator" -> "askjohngeorge/ai-dialer"
+"sullyo/webapp-starter" -> "transitive-bullshit/openai-realtime-api" ["e"=1]
 "Barty-Bart/elevenlabs-twilio-ai-caller" -> "Barty-Bart/openai-realtime-api-voice-assistant-V2"
 "Barty-Bart/elevenlabs-twilio-ai-caller" -> "Barty-Bart/openai-realtime-api-voice-assistant"
+"openai/openai-cua-sample-app" -> "openai/openai-responses-starter-app" ["e"=1]
+"openai/openai-cua-sample-app" -> "openai/openai-voice-agent-sdk-sample" ["e"=1]
+"openai/openai-cua-sample-app" -> "openai/openai-support-agent-demo" ["e"=1]
+"openai/openai-cua-sample-app" -> "openai/openai-realtime-twilio-demo" ["e"=1]
+"openai/openai-cua-sample-app" -> "openai/openai-fm" ["e"=1]
 "cameronking4/openai-realtime-api-nextjs" -> "cameronking4/openai-realtime-blocks"
 "cameronking4/openai-realtime-api-nextjs" -> "skrivov/openai-voice-webrtc-next"
 "cameronking4/openai-realtime-api-nextjs" -> "craigsdennis/talk-to-javascript-openai-workers"
@@ -478,67 +553,96 @@ digraph G {
 "openai/openai-responses-starter-app" -> "openai/openai-voice-agent-sdk-sample"
 "openai/openai-responses-starter-app" -> "openai/openai-cua-sample-app" ["e"=1]
 "openai/openai-responses-starter-app" -> "openai/openai-fm"
+"openai/openai-structured-outputs-samples" -> "openai/openai-realtime-twilio-demo" ["e"=1]
+"openai/openai-structured-outputs-samples" -> "openai/openai-realtime-solar-system" ["e"=1]
+"google-gemini/gemini-image-editing-nextjs-quickstart" -> "openai/openai-voice-agent-sdk-sample" ["e"=1]
+"flutter-webrtc/flutter-webrtc-demo" ["l"="65.019,-13.468", "c"=586]
+"livekit/client-sdk-flutter" ["l"="42.705,-1.338"]
+"webrtc-sdk/libwebrtc" ["l"="63.377,-14.108", "c"=524]
 "webrtc-sdk/webrtc" ["l"="42.654,-1.289"]
-"webrtc-sdk/libwebrtc" ["l"="63.377,-14.108"]
-"webrtc-sdk/android" ["l"="42.637,-1.275"]
-"shiguredo-webrtc-build/webrtc-build" ["l"="63.324,-14.061"]
 "webrtc-sdk/webrtc-build" ["l"="42.622,-1.292"]
+"webrtc-sdk/android" ["l"="42.637,-1.275"]
+"shiguredo-webrtc-build/webrtc-build" ["l"="63.324,-14.061", "c"=524]
 "webrtc-sdk/Specs" ["l"="42.616,-1.277"]
 "livekit/rust-sdks" ["l"="42.717,-1.305"]
 "livekit/client-sdk-android" ["l"="42.686,-1.312"]
+"flutter-webrtc/flutter-webrtc-server" ["l"="65.01,-13.44", "c"=586]
+"stasel/WebRTC-iOS" ["l"="65.074,-14.31", "c"=385]
+"livekit/client-sdk-swift" ["l"="42.688,-1.349"]
 "twilio/media-streams" ["l"="43.02,-1.319"]
 "craigsdennis/genai-phone-call" ["l"="43.017,-1.299"]
-"livekit/livekit-react" ["l"="42.69,-1.333"]
+"open-webrtc-toolkit/owt-client-native" ["l"="63.432,-14.078", "c"=524]
+"livekit/livekit" ["l"="64.585,-14.062", "c"=385]
 "livekit/client-sdk-js" ["l"="42.705,-1.321"]
+"facemoji/alter-core" ["l"="-33.928,-26.089", "c"=119]
+"livekit/livekit-cli" ["l"="42.72,-1.325"]
+"livekit/livekit-react" ["l"="42.69,-1.333"]
 "livekit/node-sdks" ["l"="42.73,-1.336"]
 "livekit/egress" ["l"="42.718,-1.343"]
-"livekit/client-sdk-swift" ["l"="42.688,-1.349"]
-"livekit/livekit-cli" ["l"="42.72,-1.325"]
 "livekit/livekit-recorder" ["l"="42.686,-1.37"]
 "frostbyte73/core" ["l"="42.652,-1.343"]
 "livekit/livekit-server-sdk-python" ["l"="42.704,-1.292"]
+"stasel/WebRTC" ["l"="65.128,-14.348", "c"=385]
+"rno/WebRTC" ["l"="42.612,-1.253"]
 "livekit-examples/swift-example" ["l"="42.656,-1.374"]
 "livekit-examples/swift-example-collection" ["l"="42.653,-1.359"]
-"stasel/WebRTC" ["l"="65.128,-14.348"]
-"livekit/client-sdk-flutter" ["l"="42.705,-1.338"]
 "livekit/ingress" ["l"="42.735,-1.325"]
 "livekit/webrtc-xcframework" ["l"="42.67,-1.382"]
+"algesten/str0m" ["l"="-10.728,-5.948", "c"=5]
 "livekit/server-sdk-go" ["l"="42.73,-1.312"]
 "livekit/components-js" ["l"="42.745,-1.335"]
 "livekit/livekit-helm" ["l"="42.676,-1.331"]
 "livekit/protocol" ["l"="42.741,-1.308"]
 "livekit-examples/meet" ["l"="42.74,-1.353"]
-"ionorg/ion-sdk-flutter" ["l"="65.049,-13.442"]
+"ionorg/ion-sdk-flutter" ["l"="65.049,-13.442", "c"=586]
 "livekit/psrpc" ["l"="42.734,-1.288"]
 "livekit/sip" ["l"="42.765,-1.335"]
 "livekit/track-processors-js" ["l"="42.72,-1.287"]
 "livekit/server-sdk-kotlin" ["l"="42.713,-1.263"]
 "michaljanocko/schemawax" ["l"="42.657,-1.325"]
-"facemoji/alter-sdk" ["l"="-33.951,-26.096"]
+"facemoji/alter-sdk" ["l"="-33.951,-26.096", "c"=119]
 "livekit/python-sdks" ["l"="42.761,-1.316"]
 "livekit/agents-js" ["l"="42.779,-1.315"]
 "deepgram/deepgram-python-sdk" ["l"="43.084,-1.193"]
 "deepgram/deepgram-js-sdk" ["l"="43.041,-1.223"]
 "livekit/components-android" ["l"="42.635,-1.321"]
+"RelevanceAI/relevanceai" ["l"="39.853,-2.178", "c"=1006]
+"misbahsy/Doc2Podcast" ["l"="42.995,-1.125"]
 "livekit/client-sdk-unity-web" ["l"="42.768,-1.365"]
+"openai/openai-openapi" ["l"="40.651,0.415", "c"=7]
+"openai/openai-realtime-api-beta" ["l"="42.861,-1.221"]
+"l7mp/stunner" ["l"="65.07,-13.351", "c"=586]
 "livekit/client-sdk-react-native" ["l"="42.751,-1.383"]
 "livekit/react-native-webrtc" ["l"="42.749,-1.417"]
-"rno/WebRTC" ["l"="42.612,-1.253"]
-"GetStream/webrtc-android" ["l"="54.419,-14.266"]
+"emiago/sipgo" ["l"="65.09,-13.148", "c"=586]
+"GetStream/webrtc-android" ["l"="54.419,-14.266", "c"=25]
 "Sean-Der/embedded-sdk" ["l"="42.751,-1.289"]
+"element-hq/element-x-ios" ["l"="-49.058,1.929", "c"=673]
+"matrix-org/waterfall" ["l"="42.795,-1.382"]
+"mynaparrot/plugNmeet-server" ["l"="13.341,-8.392", "c"=18]
 "livekit-examples/unity-webgl-demo" ["l"="42.778,-1.403"]
+"anthropics/anthropic-sdk-typescript" ["l"="41.042,0.445", "c"=7]
 "livekit-examples/livestream" ["l"="42.717,-1.367"]
 "livekit/agents-playground" ["l"="42.802,-1.328"]
 "livekit-examples/kitt" ["l"="42.73,-1.38"]
-"mynaparrot/plugNmeet-server" ["l"="13.341,-8.392"]
 "livekit-examples/spatial-audio" ["l"="42.711,-1.418"]
+"amulchapla/AI-Powered-Call-Center-Intelligence" ["l"="-44.489,7.232", "c"=801]
+"microsoft/call-center-ai" ["l"="43.085,-1.27"]
 "livekit/server-sdk-ruby" ["l"="42.696,-1.448"]
+"ricky0123/vad" ["l"="40.46,3.25", "c"=908]
+"deepgram-starters/nextjs-live-transcription" ["l"="42.986,-1.258"]
+"vocodedev/vocode-core" ["l"="41.059,0.574", "c"=7]
+"voxos-ai/bolna" ["l"="43.061,-1.282"]
+"twilio-labs/call-gpt" ["l"="43.02,-1.268"]
+"enjalot/latent-scope" ["l"="43.317,24.643", "c"=95]
+"SouthBridgeAI/offmute" ["l"="43.03,-1.107"]
 "junruxiong/IncarnaMind" ["l"="43.01,-1.005"]
 "Wang-Shuo/A-Guide-to-Retrieval-Augmented-LLM" ["l"="43.03,-0.948"]
-"FutureClubNL/RAGMeUp" ["l"="41.375,0.546"]
-"YassKhazzan/openperplex_backend_os" ["l"="41.361,0.458"]
-"fill3d/fill" ["l"="40.843,6.045"]
+"FutureClubNL/RAGMeUp" ["l"="41.375,0.546", "c"=7]
+"YassKhazzan/openperplex_backend_os" ["l"="41.361,0.458", "c"=7]
+"fill3d/fill" ["l"="40.843,6.045", "c"=1506]
 "Yusuke710/nanoPerplexityAI" ["l"="42.973,-1.097"]
+"go-gst/go-gst" ["l"="64.88,-13.205", "c"=586]
 "sufengniu/RefGPT" ["l"="43.044,-0.905"]
 "mutonix/RefGPT" ["l"="43.053,-0.881"]
 "livekit/client-sdk-unity" ["l"="42.785,-1.28"]
@@ -553,113 +657,128 @@ digraph G {
 "Azure-Samples/azure-search-openai-demo-java" ["l"="43.172,-1.26"]
 "Azure-Samples/agent-openai-java-banking-assistant" ["l"="43.145,-1.263"]
 "livekit-examples/android-livestream" ["l"="42.612,-1.326"]
+"openai/openai-assistants-quickstart" ["l"="41.113,0.346", "c"=7]
+"openai/openai-responses-starter-app" ["l"="42.793,-1.085"]
+"AllAboutAI-YT/easy-local-rag" ["l"="41.782,0.391", "c"=7]
+"svpino/livekit-assistant" ["l"="42.881,-1.315"]
+"daveebbelaar/python-whatsapp-bot" ["l"="27.218,-30.15", "c"=668]
 "gkamradt/QuickAgent" ["l"="42.946,-1.329"]
+"mshumer/ai-journalist" ["l"="41.136,0.502", "c"=7]
+"cloudflare/orange" ["l"="-5.05,-27.561", "c"=688]
+"craigsdennis/talk-to-javascript-openai-workers" ["l"="42.876,-1.152"]
+"ntegrals/aura-voice" ["l"="40.977,0.543", "c"=7]
+"e2b-dev/code-interpreter" ["l"="41.265,0.455", "c"=7]
+"transitive-bullshit/openai-realtime-api" ["l"="42.91,-1.178"]
+"cognitivecomputations/github2file" ["l"="41.313,0.544", "c"=7]
+"groq/groq-api-cookbook" ["l"="41.365,0.502", "c"=7]
 "serkandyck/realtime-voice-assistant-groq" ["l"="42.927,-1.355"]
 "unclecode/groqcall" ["l"="42.985,-1.369"]
 "sudarshan-koirala/rag-chat-with-pdf" ["l"="42.954,-1.365"]
-"svpino/livekit-assistant" ["l"="42.881,-1.315"]
 "deepgram-devs/deepgram-ai-agent-demo" ["l"="42.989,-1.287"]
-"christianrice/ai-demos" ["l"="41.884,0.57"]
-"twilio-labs/call-gpt" ["l"="43.02,-1.268"]
-"microsoft/call-center-ai" ["l"="43.085,-1.27"]
+"christianrice/ai-demos" ["l"="41.884,0.57", "c"=7]
+"vndee/local-talking-llm" ["l"="41.862,0.821", "c"=7]
+"techwithtim/LiveKit-AI-Voice-Assitant" ["l"="42.859,-1.309"]
 "akiani/aidialer" ["l"="43.049,-1.261"]
 "sshh12/llm_convo" ["l"="43.067,-1.25"]
-"voxos-ai/bolna" ["l"="43.061,-1.282"]
 "bolna-ai/bolna" ["l"="43.084,-1.301"]
 "twilio-samples/speech-assistant-openai-realtime-api-node" ["l"="42.881,-1.212"]
 "Mithun1508/ChatGPT-Phone-Call-Server" ["l"="43.033,-1.291"]
-"KoljaB/AIVoiceChat" ["l"="41.888,0.903"]
+"KoljaB/AIVoiceChat" ["l"="41.888,0.903", "c"=7]
 "openai/openai-realtime-twilio-demo" ["l"="42.883,-1.18"]
 "deepgram/deepgram-twilio-streaming-voice-agent" ["l"="42.954,-1.243"]
-"vocodedev/vocode-core" ["l"="41.059,0.574"]
 "reecevela/phone" ["l"="43.044,-1.312"]
-"definitive-io/crewai-groq" ["l"="40.091,-2.056"]
-"jgravelle/StrawberryGroq" ["l"="41.664,0.466"]
+"Omniplex-ai/omniplex" ["l"="41.202,0.383", "c"=7]
+"definitive-io/crewai-groq" ["l"="40.091,-2.056", "c"=1006]
+"jgravelle/StrawberryGroq" ["l"="41.664,0.466", "c"=7]
 "skapadia3214/groq-voice" ["l"="42.934,-1.392"]
-"deepgram-starters/nextjs-live-transcription" ["l"="42.986,-1.258"]
 "deepgram-starters/nextjs-text-to-speech" ["l"="42.995,-1.236"]
-"livekit/agents" ["l"="41.1,0.227"]
+"livekit/agents" ["l"="41.1,0.227", "c"=7]
 "trizmo/SalesGPT---Twilio" ["l"="43.166,-1.37"]
 "revolutionarybukhari/ai-calling-agent" ["l"="43.179,-1.389"]
 "Agentic-Insights/voice-bot" ["l"="43.192,-1.407"]
-"amulchapla/AI-Powered-Call-Center-Intelligence" ["l"="-44.489,7.232"]
-"microsoft/Conversation-Knowledge-Mining-Solution-Accelerator" ["l"="-44.462,7.197"]
-"kunzite-app/008" ["l"="45.02,25.797"]
-"microsoft/multi-modal-customer-service-agent" ["l"="-44.486,7.139"]
-"Azure-Samples/aisearch-openai-rag-audio" ["l"="-44.436,7.176"]
+"microsoft/Conversation-Knowledge-Mining-Solution-Accelerator" ["l"="-44.462,7.197", "c"=801]
+"kunzite-app/008" ["l"="45.02,25.797", "c"=68]
+"microsoft/multi-modal-customer-service-agent" ["l"="-44.486,7.139", "c"=801]
+"Azure-Samples/aisearch-openai-rag-audio" ["l"="-44.436,7.176", "c"=801]
 "microsoft/synthetic-rag-index" ["l"="43.114,-1.255"]
 "bentoml/BentoVoiceAgent" ["l"="43.111,-1.289"]
 "VapiAI/example-server-python-flask" ["l"="42.791,-1.503"]
 "livekit-examples/voice-pipeline-agent-python" ["l"="42.829,-1.305"]
 "dsa/fast-voice-assistant" ["l"="42.842,-1.35"]
-"emiago/sipgo" ["l"="65.09,-13.148"]
-"emiago/gophone" ["l"="65.125,-13.105"]
-"matrix-org/waterfall" ["l"="42.795,-1.382"]
+"emiago/gophone" ["l"="65.125,-13.105", "c"=586]
+"ai-ng/swift" ["l"="41.473,0.834", "c"=7]
 "run-llama/voice-chat-pdf" ["l"="42.92,-1.209"]
 "nickscamara/firecrawl-openai-realtime" ["l"="42.949,-1.207"]
 "run-llama/openai_realtime_client" ["l"="42.866,-1.244"]
 "misbahsy/meetingmind" ["l"="42.971,-1.143"]
-"misbahsy/Doc2Podcast" ["l"="42.995,-1.125"]
-"SouthBridgeAI/offmute" ["l"="43.03,-1.107"]
-"RayFernando1337/MLX-Auto-Subtitled-Video-Generator" ["l"="27.622,-21.016"]
-"transitive-bullshit/openai-realtime-api" ["l"="42.91,-1.178"]
+"HumeAI/hume-evi-next-js-starter" ["l"="41.476,0.714", "c"=7]
+"RayFernando1337/MLX-Auto-Subtitled-Video-Generator" ["l"="27.622,-21.016", "c"=577]
 "bklieger-groq/NotebookLlama-Groq" ["l"="42.954,-1.074"]
-"ahmad2b/postbot3000" ["l"="41.548,0.471"]
+"ahmad2b/postbot3000" ["l"="41.548,0.471", "c"=7]
 "misbahsy/MindMapper" ["l"="43.009,-1.153"]
+"openai/openai-realtime-console" ["l"="41.133,0.262", "c"=7]
 "langchain-ai/react-voice-agent" ["l"="42.886,-1.257"]
-"langchain-ai/company-researcher" ["l"="41.567,0.388"]
-"langchain-ai/memory-agent" ["l"="41.689,0.407"]
-"Nachoeigu/agentic-customer-service-medical-clinic" ["l"="41.527,0.489"]
-"bracesproul/gen-ui-python" ["l"="41.548,0.53"]
-"openai/openai-realtime-console" ["l"="41.133,0.262"]
-"langchain-ai/langgraph-supervisor-py" ["l"="41.487,0.306"]
-"langchain-ai/agent-chat-ui" ["l"="41.5,0.362"]
-"dheerajrhegde/servicedesk_langgraph_tavily" ["l"="41.577,0.517"]
+"langchain-ai/company-researcher" ["l"="41.567,0.388", "c"=7]
+"langchain-ai/memory-agent" ["l"="41.689,0.407", "c"=7]
+"Nachoeigu/agentic-customer-service-medical-clinic" ["l"="41.527,0.489", "c"=7]
+"bracesproul/gen-ui-python" ["l"="41.548,0.53", "c"=7]
+"langchain-ai/langgraph-supervisor-py" ["l"="41.487,0.306", "c"=7]
+"langchain-ai/agent-chat-ui" ["l"="41.5,0.362", "c"=7]
+"dheerajrhegde/servicedesk_langgraph_tavily" ["l"="41.577,0.517", "c"=7]
 "hwchase17/langfuzz" ["l"="42.912,-1.274"]
+"langchain-ai/langchain-academy" ["l"="41.408,0.352", "c"=7]
 "twilio-samples/live-translation-openai-realtime-api" ["l"="42.863,-1.193"]
 "twilio-samples/speech-assistant-openai-realtime-api-python" ["l"="42.84,-1.219"]
-"openai/openai-realtime-api-beta" ["l"="42.861,-1.221"]
 "Barty-Bart/openai-realtime-api-voice-assistant-V2" ["l"="42.842,-1.186"]
 "Barty-Bart/openai-realtime-api-voice-assistant" ["l"="42.823,-1.19"]
 "alexfazio/OpenPlexity-Pages" ["l"="42.948,-1.169"]
 "binhe22/Single-File-Artifacts" ["l"="42.986,-1.07"]
 "AgoraIO/openai-realtime-python" ["l"="42.83,-1.251"]
-"techwithtim/LiveKit-AI-Voice-Assitant" ["l"="42.859,-1.309"]
+"openai/openai-realtime-embedded" ["l"="38.803,1.449", "c"=54]
 "Jalsemgeest/Python" ["l"="42.874,-1.34"]
-"s-smits/agentic-cursorrules" ["l"="41.537,0.203"]
+"Doriandarko/gemini-ui-to-code" ["l"="41.374,0.441", "c"=7]
+"s-smits/agentic-cursorrules" ["l"="41.537,0.203", "c"=7]
+"Nutlope/blinkshot" ["l"="41.364,0.352", "c"=7]
+"varungodbole/prompt-tuning-playbook" ["l"="46.166,6.06", "c"=571]
+"TEN-framework/ten_framework.bak" ["l"="41.361,-0.014", "c"=7]
+"mckaywrigley/buildware-ai" ["l"="41.466,0.408", "c"=7]
 "SouthBridgeAI/diagen" ["l"="43.085,-1.077"]
 "SouthBridgeAI/llm-transcription-study" ["l"="43.05,-1.081"]
-"svpino/alloy-voice-assistant" ["l"="41.212,0.435"]
+"svpino/alloy-voice-assistant" ["l"="41.212,0.435", "c"=7]
 "jjmlovesgit/livekitAgent" ["l"="42.9,-1.335"]
+"PromtEngineer/Verbi" ["l"="41.326,0.513", "c"=7]
+"Azure-Samples/aoai-realtime-audio-sdk" ["l"="-44.489,7.204", "c"=801]
+"bklieger-groq/stockbot-on-groq" ["l"="41.421,0.39", "c"=7]
 "Anil-matcha/AI-Voice-Agent" ["l"="43.104,-1.326"]
-"Azure-Samples/semantic-kernel-advanced-usage" ["l"="-44.412,7.112"]
-"misbahsy/InsightExpress" ["l"="52.371,28.008"]
+"Azure-Samples/semantic-kernel-advanced-usage" ["l"="-44.412,7.112", "c"=801]
+"misbahsy/InsightExpress" ["l"="52.371,28.008", "c"=60]
+"Bklieger/ScribeWizard" ["l"="41.433,0.581", "c"=7]
 "mem0ai/mem0-chrome-extension" ["l"="42.945,-1.024"]
 "cameronking4/openai-realtime-blocks" ["l"="42.883,-1.081"]
 "cameronking4/openai-realtime-api-nextjs" ["l"="42.881,-1.118"]
 "cameronking4/VapiBlocks" ["l"="42.878,-1.049"]
 "TechxGenus/CursorCore" ["l"="43.121,-1.057"]
-"Azure-Samples/aoai-realtime-audio-sdk" ["l"="-44.489,7.204"]
-"openai/openai-assistants-quickstart" ["l"="41.113,0.346"]
-"craigsdennis/talk-to-javascript-openai-workers" ["l"="42.876,-1.152"]
 "openai/openai-realtime-solar-system" ["l"="42.849,-1.153"]
 "avijeett007/Knotie-AI" ["l"="43.146,-1.34"]
 "pyserve/EchoLink-AI-Powered-Voice-Calling-with-Twilio-and-Meta-LLAMA" ["l"="43.186,-1.348"]
 "Th1b4uthkt/dashboard-call-center-ai-agent" ["l"="43.219,-1.357"]
+"nirbar1985/ai-travel-agent" ["l"="41.557,0.492", "c"=7]
 "OpenInterpreter/01-app" ["l"="42.863,-1.414"]
 "realtime-ai/realtime-ai" ["l"="42.867,-1.383"]
 "Barty-Bart/elevenlabs-twilio-ai-caller" ["l"="42.813,-1.172"]
 "ysy-phoenix/evalhub" ["l"="43.141,-1.046"]
+"johnmai-dev/NotebookMLX" ["l"="27.662,-21.038", "c"=577]
 "askjohngeorge/ai-dialer" ["l"="43.246,-1.366"]
 "askjohngeorge/sales-prompt-creator" ["l"="43.264,-1.372"]
 "livekit-examples/multimodal-agent-python" ["l"="42.842,-1.326"]
 "livekit-examples/gemini-playground" ["l"="42.82,-1.345"]
-"skrivov/openai-voice-webrtc-next" ["l"="42.866,-1.092"]
-"openai/openai-fm" ["l"="42.793,-1.058"]
-"openai/openai-support-agent-demo" ["l"="42.813,-1.08"]
-"openai/openai-responses-starter-app" ["l"="42.793,-1.085"]
+"sullyo/webapp-starter" ["l"="41.581,0.094", "c"=7]
+"openai/openai-cua-sample-app" ["l"="41.294,0.218", "c"=7]
 "openai/openai-voice-agent-sdk-sample" ["l"="42.822,-1.107"]
-"openai/openai-structured-outputs-samples" ["l"="41.375,0.279"]
-"vercel-labs/ai-sdk-preview-multi-steps" ["l"="41.47,0.666"]
-"openai/openai-cua-sample-app" ["l"="41.294,0.218"]
+"openai/openai-support-agent-demo" ["l"="42.813,-1.08"]
+"openai/openai-fm" ["l"="42.793,-1.058"]
+"skrivov/openai-voice-webrtc-next" ["l"="42.866,-1.092"]
+"openai/openai-structured-outputs-samples" ["l"="41.375,0.279", "c"=7]
+"vercel-labs/ai-sdk-preview-multi-steps" ["l"="41.47,0.666", "c"=7]
+"google-gemini/gemini-image-editing-nextjs-quickstart" ["l"="41.632,0.268", "c"=7]
 }

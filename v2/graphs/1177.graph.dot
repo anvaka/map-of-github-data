@@ -1,4 +1,5 @@
 digraph G {
+"pfsense/pfsense" -> "zabbix/zabbix" ["e"=1]
 "zabbix/zabbix" -> "zabbix/zabbix-docker"
 "zabbix/zabbix" -> "zabbix/community-templates"
 "zabbix/zabbix" -> "grafana/grafana-zabbix"
@@ -14,7 +15,16 @@ digraph G {
 "zabbix/zabbix" -> "graphite-project/graphite-web" ["e"=1]
 "zabbix/zabbix" -> "monitoringartist/zabbix-community-repos"
 "zabbix/zabbix" -> "elastic/logstash" ["e"=1]
+"librenms/librenms" -> "zabbix/zabbix" ["e"=1]
+"pixelb/ps_mem" -> "monitoringartist/zabbix-community-repos" ["e"=1]
+"pixelb/ps_mem" -> "dj-wasabi/ansible-zabbix-server" ["e"=1]
 "MogiePete/zabbix-systemd-service-monitoring" -> "zabbix-tools/zabbix-module-systemd"
+"anbai-inc/Kibana_Hanization" -> "X-Mars/Zabbix-Alert-WeChat" ["e"=1]
+"anbai-inc/Kibana_Hanization" -> "qiueer/zabbix" ["e"=1]
+"ANXS/postgresql" -> "dj-wasabi/ansible-zabbix-agent" ["e"=1]
+"NagiosEnterprises/nagioscore" -> "zabbix/zabbix" ["e"=1]
+"jdauphant/ansible-role-nginx" -> "dj-wasabi/ansible-zabbix-agent" ["e"=1]
+"asbru-cm/asbru-cm" -> "lesovsky/zabbix-extensions" ["e"=1]
 "thecamels/zabbix" -> "jjmartres/Zabbix"
 "thecamels/zabbix" -> "monitoringartist/zabbix-community-repos"
 "thecamels/zabbix" -> "RuslanMahotkin/zabbix"
@@ -30,6 +40,11 @@ digraph G {
 "thecamels/zabbix" -> "netkiller/zabbix"
 "thecamels/zabbix" -> "gpmidi/zabbix-apache-stats"
 "thecamels/zabbix" -> "v-zhuravlev/zbx-smartctl"
+"lamw/ghettoVCB" -> "monitoringartist/zabbix-community-repos" ["e"=1]
+"Checkmk/checkmk" -> "zabbix/zabbix" ["e"=1]
+"opendiffy/diffy" -> "zabbix/zabbix" ["e"=1]
+"librenms/docker" -> "zabbix/zabbix-docker" ["e"=1]
+"vmware-archive/halite" -> "OneOaaS/graphtrees" ["e"=1]
 "kloczek/zabbix-templates" -> "kloczek/zapish"
 "kloczek/zabbix-templates" -> "zabbix-tooling/zabbix-agent-extensions"
 "kloczek/zabbix-templates" -> "itmicus/zabbix"
@@ -38,7 +53,12 @@ digraph G {
 "itmicus/zabbix" -> "zabbix-tooling/zabbix-agent-extensions"
 "itmicus/zabbix" -> "kloczek/zabbix-templates"
 "itmicus/zabbix" -> "RuslanMahotkin/zabbix"
+"schors/tgdante2" -> "ableev/Zabbix-in-Telegram" ["e"=1]
 "lorf/zapache" -> "gpmidi/zabbix-apache-stats"
+"roscom-hvatit/dovolno" -> "ableev/Zabbix-in-Telegram" ["e"=1]
+"netkiller/shell" -> "netkiller/zabbix" ["e"=1]
+"netkiller/shell" -> "qiueer/zabbix" ["e"=1]
+"netkiller/shell" -> "zhausong/zabbix-book" ["e"=1]
 "ericoc/zabbix-slack-alertscript" -> "v-zhuravlev/zabbix-notify"
 "ericoc/zabbix-slack-alertscript" -> "lesovsky/zabbix-extensions"
 "ericoc/zabbix-slack-alertscript" -> "dj-wasabi/ansible-zabbix-agent"
@@ -69,6 +89,7 @@ digraph G {
 "zhausong/zabbix-book" -> "binbin91/oms" ["e"=1]
 "zhausong/zabbix-book" -> "jjmartres/Zabbix"
 "zhausong/zabbix-book" -> "CNSRE/Zabbix-Templates"
+"ops-coffee/demo" -> "myide/django-sso" ["e"=1]
 "grundic/zabbix-disk-performance" -> "thecamels/zabbix"
 "grundic/zabbix-disk-performance" -> "lesovsky/zabbix-extensions"
 "grundic/zabbix-disk-performance" -> "RuslanMahotkin/zabbix"
@@ -104,12 +125,14 @@ digraph G {
 "adubkov/zbx_nginx_template" -> "vicendominguez/memcached-zabbix-template"
 "adubkov/zbx_nginx_template" -> "untergeek/zabbix-grab-bag" ["e"=1]
 "dnaeon/zabbix-ldap-sync" -> "zabbix-tooling/zabbix-ldap-sync"
+"squid-cache/squid" -> "zabbix/zabbix" ["e"=1]
 "unioslo/zabbix-cli" -> "q1x/zabbix-gnomes"
 "unioslo/zabbix-cli" -> "dj-wasabi/ansible-zabbix-agent"
 "unioslo/zabbix-cli" -> "zabbix-tooling/zabbix-agent-extensions"
 "unioslo/zabbix-cli" -> "kovetskiy/zabbixctl"
 "unioslo/zabbix-cli" -> "zabbix-tools/zabbix-module-systemd"
 "unioslo/zabbix-cli" -> "adubkov/py-zabbix"
+"Cacti/cacti" -> "zabbix/zabbix" ["e"=1]
 "q1x/zabbix-gnomes" -> "vulogov/zlm-python"
 "q1x/zabbix-gnomes" -> "unioslo/zabbix-cli"
 "q1x/zabbix-gnomes" -> "monitoringartist/zapix"
@@ -151,6 +174,8 @@ digraph G {
 "monitoringartist/zabbix-docker-monitoring" -> "zabbix-tools/mib2zabbix"
 "patricegautier/unifiZabbix" -> "MassimilianoPasquini97/zbx_unifi_network"
 "patricegautier/unifiZabbix" -> "radiorabe/rabe-zabbix"
+"ansible-collections/community.vmware" -> "ansible-collections/community.zabbix" ["e"=1]
+"chenryn/logstash-best-practice-cn" -> "CNSRE/Zabbix-Templates" ["e"=1]
 "monitoringartist/zabbix-community-repos" -> "jjmartres/Zabbix"
 "monitoringartist/zabbix-community-repos" -> "grafana/grafana-zabbix"
 "monitoringartist/zabbix-community-repos" -> "thecamels/zabbix"
@@ -192,11 +217,15 @@ digraph G {
 "dj-wasabi/ansible-zabbix-agent" -> "ericoc/zabbix-slack-alertscript"
 "dj-wasabi/ansible-zabbix-agent" -> "lesovsky/zabbix-extensions"
 "dj-wasabi/ansible-zabbix-agent" -> "v-zhuravlev/zabbix-notify"
+"rbicelli/pfsense-zabbix-template" -> "zabbix-tools/mib2zabbix" ["e"=1]
+"divio/django-simple-sso" -> "myide/django-sso" ["e"=1]
 "anapsix/zabbix-haproxy" -> "lesovsky/zabbix-extensions"
+"myide/open-cmdb" -> "myide/django-sso" ["e"=1]
 "dj-wasabi/ansible-zabbix-server" -> "dj-wasabi/ansible-zabbix-agent"
 "dj-wasabi/ansible-zabbix-server" -> "dj-wasabi/ansible-zabbix-web"
 "dj-wasabi/ansible-zabbix-server" -> "dj-wasabi/ansible-zabbix-proxy"
 "dj-wasabi/ansible-zabbix-proxy" -> "dj-wasabi/ansible-zabbix-web"
+"grafana/grafana-docker" -> "grafana/grafana-zabbix" ["e"=1]
 "Sean-Bradley/SNMP2ZABBIX" -> "Sean-Bradley/SNMPWALK2ZABBIX"
 "canghai908/zbxtable" -> "canghai908/zbxtable-web"
 "canghai908/zbxtable" -> "canghai908/ms-agent"
@@ -227,6 +256,8 @@ digraph G {
 "grafana/grafana-zabbix" -> "voilet/cmdb" ["e"=1]
 "grafana/grafana-zabbix" -> "percona/grafana-dashboards" ["e"=1]
 "grafana/grafana-zabbix" -> "vozlt/nginx-module-vts" ["e"=1]
+"no13bus/redispapa" -> "CNSRE/Zabbix-Templates" ["e"=1]
+"glpi-project/glpi" -> "zabbix/zabbix" ["e"=1]
 "ableev/Zabbix-in-Telegram" -> "jjmartres/Zabbix"
 "ableev/Zabbix-in-Telegram" -> "grafana/grafana-zabbix"
 "ableev/Zabbix-in-Telegram" -> "thecamels/zabbix"
@@ -302,6 +333,9 @@ digraph G {
 "v-zhuravlev/zbx-smartctl" -> "zabbix-tools/zabbix-module-systemd"
 "v-zhuravlev/zbx-smartctl" -> "xxsokolov/Zabbix-Notification-Telegram"
 "v-zhuravlev/zbx-smartctl" -> "ableev/Zabbix-in-Telegram"
+"Matty9191/ssl-cert-check" -> "selivan/https-ssl-cert-check-zabbix" ["e"=1]
+"burnettk/delete-docker-registry-image" -> "monitoringartist/zabbix-docker-monitoring" ["e"=1]
+"yaoweibin/ngx_http_substitutions_filter_module" -> "CNSRE/Plog" ["e"=1]
 "qiueer/zabbix" -> "meetbill/zabbix_manager"
 "qiueer/zabbix" -> "X-Mars/Zabbix-Alert-WeChat"
 "qiueer/zabbix" -> "zhujinhe/collection-of-zabbix-templates"
@@ -317,6 +351,7 @@ digraph G {
 "qiueer/zabbix" -> "zhausong/zabbix-book"
 "qiueer/zabbix" -> "guohongze/adminset" ["e"=1]
 "qiueer/zabbix" -> "hgz6536/opman-django" ["e"=1]
+"rabbitmq/erlang-rpm" -> "jasonmcintosh/rabbitmq-zabbix" ["e"=1]
 "zabbix/community-templates" -> "zabbix/zabbix"
 "zabbix/community-templates" -> "zabbix/zabbix-docker"
 "zabbix/community-templates" -> "grafana/grafana-zabbix"
@@ -333,11 +368,15 @@ digraph G {
 "zabbix/community-templates" -> "patricegautier/unifiZabbix"
 "zabbix/community-templates" -> "ableev/Zabbix-in-Telegram"
 "zabbix-tooling/zabbix-agent-extensions" -> "v-zhuravlev/zbx_template_apache2"
+"shengxinjing/woniu-cmdb" -> "OneOaaS/graphtrees" ["e"=1]
+"shengxinjing/woniu-cmdb" -> "CNSRE/Zabbix-Templates" ["e"=1]
+"xiaoluoge11/lmanager" -> "OneOaaS/graphtrees" ["e"=1]
 "meetbill/Vim" -> "meetbill/zabbix_manager"
 "meetbill/Vim" -> "meetbill/meetbill.github.io"
 "meetbill/Vim" -> "meetbill/MyPythonLib"
 "meetbill/Vim" -> "meetbill/shell_menu"
 "meetbill/Vim" -> "meetbill/py_menu"
+"idcos/Cloudboot" -> "meetbill/zabbix_manager" ["e"=1]
 "mkhpalm/elastizabbix" -> "dkanbier/zabbix-elasticsearch"
 "zabbix-tools/go-zabbix" -> "adubkov/go-zabbix"
 "zabbix-tools/go-zabbix" -> "kovetskiy/zabbixctl"
@@ -352,7 +391,10 @@ digraph G {
 "monitoringartist/kubernetes-zabbix" -> "monitoringartist/dockbix-xxl"
 "zabbix-tools/g2z" -> "zabbix-tools/zabbix-module-python"
 "zabbix-tools/g2z" -> "zabbix-tools/ZabbixTemplates"
+"v5tech/ELK" -> "qiueer/zabbix" ["e"=1]
+"jaywcjlove/vim-web" -> "meetbill/Vim" ["e"=1]
 "v-zhuravlev/zabbix-notify" -> "ericoc/zabbix-slack-alertscript"
+"postgrespro/mamonsu" -> "lesovsky/zabbix-extensions" ["e"=1]
 "OneOaaS/graphtrees" -> "OneOaaS/monitor_ce"
 "OneOaaS/graphtrees" -> "meetbill/zatree"
 "monitoringartist/zapix" -> "q1x/zabbix-gnomes"
@@ -411,6 +453,8 @@ digraph G {
 "jjmartres/Zabbix" -> "RuslanMahotkin/zabbix"
 "jjmartres/Zabbix" -> "zabbix/community-templates"
 "jjmartres/Zabbix" -> "monitoringartist/zabbix-docker-monitoring"
+"requilence/integram" -> "ableev/Zabbix-in-Telegram" ["e"=1]
+"IzakMarais/reporter" -> "grafana/grafana-zabbix" ["e"=1]
 "selivan/https-ssl-cert-check-zabbix" -> "v-zhuravlev/zbx-smartctl"
 "selivan/https-ssl-cert-check-zabbix" -> "ansible-collections/community.zabbix"
 "X-Mars/Zabbix-Alert-WeChat" -> "X-Mars/Quick-Installation-ZABBIX"
@@ -456,6 +500,11 @@ digraph G {
 "zabbix-tools/zabbix-module-python" -> "zabbix-tools/g2z"
 "X-Mars/check_system" -> "X-Mars/Quick-Installation-NAGIOS"
 "meetbill/py_menu" -> "meetbill/MyPythonLib"
+"strizhechenko/netutils-linux" -> "burner1024/zabbix-sql" ["e"=1]
+"strizhechenko/netutils-linux" -> "ableev/Zabbix-in-Telegram" ["e"=1]
+"nickjj/ansible-docker" -> "dj-wasabi/ansible-zabbix-agent" ["e"=1]
+"meetbill/op_practice_book" -> "meetbill/shell_menu" ["e"=1]
+"meetbill/op_practice_book" -> "meetbill/zabbix_manager" ["e"=1]
 "Huawei/containerops" -> "Huawei/dockyard"
 "netkiller/zabbix" -> "omni-lchen/zabbix-mongodb"
 "netkiller/zabbix" -> "jizhang/zabbix-templates"
@@ -476,6 +525,10 @@ digraph G {
 "X-Mars/AnjukeSpider" -> "X-Mars/Quick-Installation-NAGIOS"
 "bluetom520/zabbix-weixin" -> "bluetom520/zabbix-weixin-picture"
 "bluetom520/zabbix-weixin" -> "bluetom520/dingding"
+"AsuraTeam/monitor" -> "meetbill/zabbix_manager" ["e"=1]
+"aqzt/sso" -> "zhujinhe/collection-of-zabbix-templates" ["e"=1]
+"Terminals-Origin/Terminals" -> "ableev/Zabbix-in-Telegram" ["e"=1]
+"le0pard/postgresql_book" -> "lesovsky/zabbix-extensions" ["e"=1]
 "zabbix-tools/zabbix-module-systemd" -> "zabbix-tools/zabbix-module-python"
 "lesovsky/zabbix-extensions" -> "zabbix-tooling/zabbix-agent-extensions"
 "lesovsky/zabbix-extensions" -> "postgrespro/mamonsu" ["e"=1]
@@ -501,62 +554,81 @@ digraph G {
 "jizhang/zabbix-templates" -> "grundic/zabbix-disk-performance"
 "jizhang/zabbix-templates" -> "zhujinhe/collection-of-zabbix-templates"
 "jizhang/zabbix-templates" -> "vicendominguez/nginx-zabbix-template"
+"meetbill/openstack_install" -> "meetbill/shell_menu" ["e"=1]
+"vstconsulting/polemarch" -> "ansible-collections/community.zabbix" ["e"=1]
+"pfsense/pfsense" ["l"="8.675,-43.842", "c"=1059]
 "zabbix/zabbix" ["l"="9.668,-3.126"]
 "zabbix/zabbix-docker" ["l"="9.624,-3.136"]
 "zabbix/community-templates" ["l"="9.594,-3.169"]
 "grafana/grafana-zabbix" ["l"="9.622,-3.166"]
-"NagiosEnterprises/nagioscore" ["l"="8.971,-8.275"]
-"openstack/openstack" ["l"="8.913,-8.369"]
+"NagiosEnterprises/nagioscore" ["l"="8.971,-8.275", "c"=14]
+"openstack/openstack" ["l"="8.913,-8.369", "c"=14]
 "jjmartres/Zabbix" ["l"="9.585,-3.206"]
-"puppetlabs/puppet" ["l"="8.861,-8.353"]
-"glpi-project/glpi" ["l"="-16.145,27.986"]
-"librenms/librenms" ["l"="6.283,-2.839"]
+"puppetlabs/puppet" ["l"="8.861,-8.353", "c"=14]
+"glpi-project/glpi" ["l"="-16.145,27.986", "c"=29]
+"librenms/librenms" ["l"="6.283,-2.839", "c"=225]
 "lukecyca/pyzabbix" ["l"="9.617,-3.2"]
-"prometheus/prometheus" ["l"="8.507,-8.355"]
-"wazuh/wazuh" ["l"="-42.709,-33.342"]
-"graphite-project/graphite-web" ["l"="8.892,-8.325"]
+"prometheus/prometheus" ["l"="8.507,-8.355", "c"=14]
+"wazuh/wazuh" ["l"="-42.709,-33.342", "c"=79]
+"graphite-project/graphite-web" ["l"="8.892,-8.325", "c"=14]
 "monitoringartist/zabbix-community-repos" ["l"="9.6,-3.19"]
-"elastic/logstash" ["l"="8.77,-8.384"]
+"elastic/logstash" ["l"="8.77,-8.384", "c"=14]
+"pixelb/ps_mem" ["l"="8.438,-12.256", "c"=600]
+"dj-wasabi/ansible-zabbix-server" ["l"="9.526,-3.133"]
 "MogiePete/zabbix-systemd-service-monitoring" ["l"="9.473,-3.075"]
 "zabbix-tools/zabbix-module-systemd" ["l"="9.515,-3.114"]
+"anbai-inc/Kibana_Hanization" ["l"="-3.646,8.821", "c"=540]
+"X-Mars/Zabbix-Alert-WeChat" ["l"="9.646,-3.282"]
+"qiueer/zabbix" ["l"="9.629,-3.257"]
+"ANXS/postgresql" ["l"="7.878,-13.039", "c"=739]
+"dj-wasabi/ansible-zabbix-agent" ["l"="9.551,-3.166"]
+"jdauphant/ansible-role-nginx" ["l"="7.865,-13.076", "c"=739]
+"asbru-cm/asbru-cm" ["l"="12.35,-9.832", "c"=18]
+"lesovsky/zabbix-extensions" ["l"="9.533,-3.199"]
 "thecamels/zabbix" ["l"="9.561,-3.208"]
 "RuslanMahotkin/zabbix" ["l"="9.551,-3.233"]
 "grundic/zabbix-disk-performance" ["l"="9.57,-3.237"]
 "itmicus/zabbix" ["l"="9.533,-3.213"]
-"lesovsky/zabbix-extensions" ["l"="9.533,-3.199"]
 "ableev/Zabbix-in-Telegram" ["l"="9.563,-3.189"]
 "vulnersCom/zabbix-threat-control" ["l"="9.53,-3.242"]
 "jizhang/zabbix-templates" ["l"="9.585,-3.238"]
 "zabbix-tooling/zabbix-agent-extensions" ["l"="9.506,-3.176"]
-"dj-wasabi/ansible-zabbix-agent" ["l"="9.551,-3.166"]
 "zabbix-tools/mib2zabbix" ["l"="9.58,-3.15"]
 "netkiller/zabbix" ["l"="9.612,-3.242"]
 "gpmidi/zabbix-apache-stats" ["l"="9.534,-3.268"]
 "v-zhuravlev/zbx-smartctl" ["l"="9.5,-3.196"]
+"lamw/ghettoVCB" ["l"="-49.222,6.391", "c"=959]
+"Checkmk/checkmk" ["l"="12.669,-9.757", "c"=18]
+"opendiffy/diffy" ["l"="8.966,-8.315", "c"=14]
+"librenms/docker" ["l"="6.292,-2.785", "c"=225]
+"vmware-archive/halite" ["l"="9.253,-5.883", "c"=278]
+"OneOaaS/graphtrees" ["l"="9.639,-3.303"]
 "kloczek/zabbix-templates" ["l"="9.476,-3.194"]
 "kloczek/zapish" ["l"="9.427,-3.184"]
+"schors/tgdante2" ["l"="-44.959,23.647", "c"=417]
 "lorf/zapache" ["l"="9.543,-3.289"]
+"roscom-hvatit/dovolno" ["l"="-44.99,23.639", "c"=417]
+"netkiller/shell" ["l"="8.807,-5.906", "c"=278]
+"zhausong/zabbix-book" ["l"="9.653,-3.262"]
 "ericoc/zabbix-slack-alertscript" ["l"="9.527,-3.179"]
 "v-zhuravlev/zabbix-notify" ["l"="9.502,-3.156"]
 "bageljp/zabbix-slack" ["l"="9.479,-3.165"]
-"Prototype-X/Zabbix-Network-Weathermap" ["l"="6.278,-2.698"]
+"Prototype-X/Zabbix-Network-Weathermap" ["l"="6.278,-2.698", "c"=225]
 "express42/zabbixapi" ["l"="9.447,-3.152"]
 "q1x/zabbix-gnomes" ["l"="9.591,-3.114"]
 "maxhq/zabbix-backup" ["l"="9.51,-3.252"]
 "mattiasgeniar/zabbix-orphaned-data-cleanup" ["l"="9.475,-3.245"]
 "zabbix-tooling/zabbix-ldap-sync" ["l"="9.563,-3.015"]
 "dnaeon/zabbix-ldap-sync" ["l"="9.567,-3.044"]
-"zhausong/zabbix-book" ["l"="9.653,-3.262"]
 "yunweibang/zatree" ["l"="9.71,-3.281"]
 "meetbill/zabbix_manager" ["l"="9.618,-3.296"]
-"qiueer/zabbix" ["l"="9.629,-3.257"]
-"OneOaaS/graphtrees" ["l"="9.639,-3.303"]
-"roncoo/roncoo-cmdb" ["l"="9.046,-5.831"]
-"X-Mars/Zabbix-Alert-WeChat" ["l"="9.646,-3.282"]
+"roncoo/roncoo-cmdb" ["l"="9.046,-5.831", "c"=278]
 "adubkov/zbx_redis_template" ["l"="9.581,-3.337"]
 "zhujinhe/collection-of-zabbix-templates" ["l"="9.612,-3.274"]
-"binbin91/oms" ["l"="9.063,-5.851"]
+"binbin91/oms" ["l"="9.063,-5.851", "c"=278]
 "CNSRE/Zabbix-Templates" ["l"="9.802,-3.313"]
+"ops-coffee/demo" ["l"="8.822,-5.817", "c"=278]
+"myide/django-sso" ["l"="9.741,-3.446"]
 "mkhpalm/elastizabbix" ["l"="9.52,-3.299"]
 "adubkov/zbx_nginx_template" ["l"="9.556,-3.32"]
 "vicendominguez/nginx-zabbix-template" ["l"="9.564,-3.285"]
@@ -571,41 +643,46 @@ digraph G {
 "X-Mars/beenote" ["l"="9.73,-3.398"]
 "X-Mars/LemonRemoteControl" ["l"="9.703,-3.368"]
 "X-Mars/djangOauth" ["l"="9.729,-3.421"]
-"myide/django-sso" ["l"="9.741,-3.446"]
 "X-Mars/check_system" ["l"="9.685,-3.351"]
 "alfssobsd/zabbix-redis" ["l"="9.561,-3.373"]
 "jbfavre/python-zabbix" ["l"="9.566,-3.07"]
 "jbfavre/python-protobix" ["l"="9.584,-3.064"]
 "vicendominguez/memcached-zabbix-template" ["l"="9.532,-3.353"]
-"untergeek/zabbix-grab-bag" ["l"="-3.938,8.963"]
+"untergeek/zabbix-grab-bag" ["l"="-3.938,8.963", "c"=540]
+"squid-cache/squid" ["l"="-20.527,-21.803", "c"=245]
 "unioslo/zabbix-cli" ["l"="9.544,-3.114"]
 "kovetskiy/zabbixctl" ["l"="9.513,-3.046"]
 "adubkov/py-zabbix" ["l"="9.578,-3.126"]
+"Cacti/cacti" ["l"="6.34,-2.728", "c"=225]
 "vulogov/zlm-python" ["l"="9.6,-3.081"]
 "monitoringartist/zapix" ["l"="9.61,-3.112"]
 "globocom/zabbix-scripts" ["l"="9.629,-3.071"]
 "usiusi360/zabirepo" ["l"="9.601,-3.01"]
 "janssenlima/api-zabbix" ["l"="9.644,-3.058"]
 "gescheit/scripts" ["l"="9.648,-3.149"]
-"voilet/cmdb" ["l"="9.039,-5.786"]
+"voilet/cmdb" ["l"="9.039,-5.786", "c"=278]
 "monitoringartist/zabbix-docker-monitoring" ["l"="9.638,-3.192"]
-"guohongze/adminset" ["l"="8.978,-5.718"]
+"guohongze/adminset" ["l"="8.978,-5.718", "c"=278]
 "monitoringartist/dockbix-agent-xxl" ["l"="9.685,-3.199"]
 "monitoringartist/dockbix-xxl" ["l"="9.68,-3.173"]
 "monitoringartist/kubernetes-zabbix" ["l"="9.703,-3.187"]
 "patricegautier/unifiZabbix" ["l"="9.658,-3.228"]
 "MassimilianoPasquini97/zbx_unifi_network" ["l"="9.705,-3.234"]
 "radiorabe/rabe-zabbix" ["l"="9.56,-3.255"]
+"ansible-collections/community.vmware" ["l"="8.686,-12.153", "c"=600]
 "ansible-collections/community.zabbix" ["l"="9.556,-3.138"]
-"ansible-collections/community.vmware" ["l"="8.686,-12.153"]
+"chenryn/logstash-best-practice-cn" ["l"="-3.821,8.896", "c"=540]
 "dj-wasabi/blog-installing-zabbix-with-ansible" ["l"="9.534,-3.088"]
-"ansible-collections/vmware.vmware_rest" ["l"="8.717,-12.148"]
-"ansible-collections/community.postgresql" ["l"="8.683,-12.033"]
-"ansible-collections/community.crypto" ["l"="8.678,-12.104"]
-"dj-wasabi/ansible-zabbix-server" ["l"="9.526,-3.133"]
+"ansible-collections/vmware.vmware_rest" ["l"="8.717,-12.148", "c"=600]
+"ansible-collections/community.postgresql" ["l"="8.683,-12.033", "c"=600]
+"ansible-collections/community.crypto" ["l"="8.678,-12.104", "c"=600]
 "zbal/zabbix" ["l"="9.58,-3.267"]
 "dj-wasabi/ansible-zabbix-proxy" ["l"="9.517,-3.148"]
 "dj-wasabi/ansible-zabbix-web" ["l"="9.509,-3.135"]
+"rbicelli/pfsense-zabbix-template" ["l"="8.58,-43.739", "c"=1059]
+"divio/django-simple-sso" ["l"="43.66,21.359", "c"=20]
+"myide/open-cmdb" ["l"="9.016,-5.934", "c"=278]
+"grafana/grafana-docker" ["l"="4.296,-7.007", "c"=0]
 "Sean-Bradley/SNMP2ZABBIX" ["l"="9.574,-3.09"]
 "Sean-Bradley/SNMPWALK2ZABBIX" ["l"="9.567,-3.105"]
 "canghai908/zbxtable" ["l"="9.6,-3.292"]
@@ -622,17 +699,18 @@ digraph G {
 "huawei-openlab/oct" ["l"="10.025,-3.361"]
 "Huawei/containerops" ["l"="10.005,-3.402"]
 "vulogov/zlm-cython" ["l"="9.59,-3.034"]
-"percona/grafana-dashboards" ["l"="9.304,-10.692"]
-"vozlt/nginx-module-vts" ["l"="-20.732,-21.695"]
+"percona/grafana-dashboards" ["l"="9.304,-10.692", "c"=484]
+"vozlt/nginx-module-vts" ["l"="-20.732,-21.695", "c"=245]
+"no13bus/redispapa" ["l"="8.904,-4.041", "c"=382]
 "xxsokolov/Zabbix-Notification-Telegram" ["l"="9.51,-3.214"]
-"postgrespro/mamonsu" ["l"="2.867,13.561"]
+"postgrespro/mamonsu" ["l"="2.867,13.561", "c"=257]
 "zabbix-tools/zabbix-module-python" ["l"="9.506,-3.084"]
 "pozgo/grafana-xxl" ["l"="9.756,-3.165"]
 "berngp/docker-zabbix" ["l"="9.739,-3.136"]
 "jcloudpub/speedy" ["l"="9.927,-3.354"]
-"containerops/wharf" ["l"="2.921,-8.242"]
-"reborndb/qdb" ["l"="0.926,14.375"]
-"hyperhq/hyperd" ["l"="8.505,-9.329"]
+"containerops/wharf" ["l"="2.921,-8.242", "c"=0]
+"reborndb/qdb" ["l"="0.926,14.375", "c"=115]
+"hyperhq/hyperd" ["l"="8.505,-9.329", "c"=14]
 "adubkov/go-zabbix" ["l"="9.537,-3.033"]
 "npotorino/zabbix-backup" ["l"="9.464,-3.286"]
 "diego-cavalcante/zabbix.icones" ["l"="9.485,-3.296"]
@@ -640,41 +718,50 @@ digraph G {
 "mrunalp/ocitools" ["l"="10.049,-3.357"]
 "zabbix-tools/go-zabbix" ["l"="9.516,-3.012"]
 "rday/zabbix" ["l"="9.527,-2.993"]
-"Cosium/zabbix_zfs-on-linux" ["l"="8.589,-43.699"]
+"Cosium/zabbix_zfs-on-linux" ["l"="8.589,-43.699", "c"=1059]
 "nikimaxim/zbx-smartmonitor" ["l"="9.455,-3.213"]
 "nobody43/zabbix-smartmontools" ["l"="9.447,-3.23"]
 "krom/zabbix_template_md" ["l"="9.478,-3.216"]
 "nobody43/zabbix-mini-IPMI" ["l"="9.428,-3.213"]
-"hequan2017/autoops" ["l"="9.026,-5.824"]
-"Neeky/mysqltools" ["l"="8.932,-4.253"]
+"Matty9191/ssl-cert-check" ["l"="-21.031,-22.471", "c"=245]
+"selivan/https-ssl-cert-check-zabbix" ["l"="9.476,-3.136"]
+"burnettk/delete-docker-registry-image" ["l"="6.022,-12.442", "c"=270]
+"yaoweibin/ngx_http_substitutions_filter_module" ["l"="-20.644,-21.724", "c"=245]
+"hequan2017/autoops" ["l"="9.026,-5.824", "c"=278]
+"Neeky/mysqltools" ["l"="8.932,-4.253", "c"=382]
 "dongwenpeng/zabbix" ["l"="9.625,-3.31"]
-"YoLoveLife/DevOps" ["l"="8.987,-5.802"]
-"wylok/sparrow" ["l"="9.001,-5.796"]
+"YoLoveLife/DevOps" ["l"="8.987,-5.802", "c"=278]
+"wylok/sparrow" ["l"="9.001,-5.796", "c"=278]
 "JPOPS/Monitor" ["l"="9.682,-3.285"]
-"hgz6536/opman-django" ["l"="9.015,-5.813"]
-"rbicelli/pfsense-zabbix-template" ["l"="8.58,-43.739"]
+"hgz6536/opman-django" ["l"="9.015,-5.813", "c"=278]
+"rabbitmq/erlang-rpm" ["l"="-2.919,11.542", "c"=15]
 "v-zhuravlev/zbx_template_apache2" ["l"="9.461,-3.167"]
+"shengxinjing/woniu-cmdb" ["l"="9.114,-5.842", "c"=278]
+"xiaoluoge11/lmanager" ["l"="9.077,-5.885", "c"=278]
 "meetbill/Vim" ["l"="9.601,-3.387"]
 "meetbill/meetbill.github.io" ["l"="9.628,-3.384"]
 "meetbill/MyPythonLib" ["l"="9.595,-3.417"]
 "meetbill/shell_menu" ["l"="9.618,-3.371"]
 "meetbill/py_menu" ["l"="9.61,-3.405"]
+"idcos/Cloudboot" ["l"="9.164,-5.966", "c"=278]
 "dkanbier/zabbix-elasticsearch" ["l"="9.502,-3.326"]
 "chenzhiwei/linux" ["l"="9.753,-3.279"]
-"zhangqichuan/CheungSSH" ["l"="9.107,-5.959"]
-"chenryn/logstash-best-practice-cn" ["l"="-3.821,8.896"]
+"zhangqichuan/CheungSSH" ["l"="9.107,-5.959", "c"=278]
 "zabbix-tools/g2z" ["l"="9.481,-3.051"]
 "zabbix-tools/ZabbixTemplates" ["l"="9.462,-3.029"]
+"v5tech/ELK" ["l"="-3.806,8.93", "c"=540]
+"jaywcjlove/vim-web" ["l"="-14.449,-9.263", "c"=34]
 "OneOaaS/monitor_ce" ["l"="9.627,-3.282"]
 "meetbill/zatree" ["l"="9.635,-3.354"]
 "monitoringartist/zabbix-searcher" ["l"="9.615,-3.056"]
 "meetbill/zabbix_templates" ["l"="9.615,-3.336"]
 "janssenlima/scripts-zabbix" ["l"="9.682,-3.02"]
-"netbox-community/netbox-docker" ["l"="6.181,-2.836"]
-"feiyu563/PrometheusAlert" ["l"="8.924,-5.604"]
-"ansible/awx" ["l"="8.666,-12.296"]
-"prometheus-operator/kube-prometheus" ["l"="8.063,-8.959"]
-"selivan/https-ssl-cert-check-zabbix" ["l"="9.476,-3.136"]
+"netbox-community/netbox-docker" ["l"="6.181,-2.836", "c"=225]
+"feiyu563/PrometheusAlert" ["l"="8.924,-5.604", "c"=278]
+"ansible/awx" ["l"="8.666,-12.296", "c"=600]
+"prometheus-operator/kube-prometheus" ["l"="8.063,-8.959", "c"=14]
+"requilence/integram" ["l"="-43.81,16.473", "c"=919]
+"IzakMarais/reporter" ["l"="9.746,-10.716", "c"=484]
 "X-Mars/Quick-Installation-ZABBIX" ["l"="9.663,-3.319"]
 "X-Mars/Quick-Installation-NAGIOS" ["l"="9.672,-3.342"]
 "superbigsea/zabbix-wechat" ["l"="9.649,-3.339"]
@@ -685,6 +772,9 @@ digraph G {
 "X-Mars/UpgradeDNS" ["l"="9.673,-3.367"]
 "stdonato/zabdash" ["l"="9.595,-2.981"]
 "chises/zabbix-unifi" ["l"="9.739,-3.231"]
+"strizhechenko/netutils-linux" ["l"="6.391,-4.193", "c"=725]
+"nickjj/ansible-docker" ["l"="7.939,-13.007", "c"=739]
+"meetbill/op_practice_book" ["l"="8.892,-5.869", "c"=278]
 "omni-lchen/zabbix-mongodb" ["l"="9.676,-3.251"]
 "jpmenil/zabbix-templates" ["l"="9.437,-3.267"]
 "bluetom520/zabbix-weixin" ["l"="9.724,-3.33"]
@@ -692,5 +782,11 @@ digraph G {
 "bluetom520/ZABBIXAPI" ["l"="9.737,-3.344"]
 "X-Mars/SpecifyDynamicIPAccess" ["l"="9.675,-3.397"]
 "X-Mars/AnjukeSpider" ["l"="9.686,-3.38"]
+"AsuraTeam/monitor" ["l"="9.062,-5.711", "c"=278]
+"aqzt/sso" ["l"="8.921,-5.89", "c"=278]
+"Terminals-Origin/Terminals" ["l"="-49.348,10.25", "c"=59]
+"le0pard/postgresql_book" ["l"="-43.534,24.767", "c"=158]
 "sepich/zabbix" ["l"="9.493,-3.214"]
+"meetbill/openstack_install" ["l"="1.241,15.203", "c"=857]
+"vstconsulting/polemarch" ["l"="8.721,-12.497", "c"=600]
 }

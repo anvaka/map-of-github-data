@@ -1,4 +1,9 @@
 digraph G {
+"ergo-services/ergo" -> "lunatic-solutions/lunatic" ["e"=1]
+"RustPython/RustPython" -> "wasmerio/wasmer" ["e"=1]
+"saghul/txiki.js" -> "wasm3/wasm3" ["e"=1]
+"saghul/txiki.js" -> "bytecodealliance/wasm-micro-runtime" ["e"=1]
+"google/robotstxt" -> "bytecodealliance/lucet" ["e"=1]
 "wasdk/WebAssemblyStudio" -> "WebAssembly/binaryen"
 "wasdk/WebAssemblyStudio" -> "AssemblyScript/assemblyscript"
 "wasdk/WebAssemblyStudio" -> "ballercat/walt" ["e"=1]
@@ -14,6 +19,9 @@ digraph G {
 "wasdk/WebAssemblyStudio" -> "nebulet/nebulet" ["e"=1]
 "wasdk/WebAssemblyStudio" -> "rustwasm/team" ["e"=1]
 "wasdk/WebAssemblyStudio" -> "rustwasm/wasm-pack" ["e"=1]
+"wasmerio/wasmer-python" -> "wasmerio/wasmer" ["e"=1]
+"wasmerio/wasmer-python" -> "wasmerio/wasmer-js" ["e"=1]
+"nodegui/nodegui" -> "AssemblyScript/assemblyscript" ["e"=1]
 "bytecodealliance/wasmtime" -> "wasmerio/wasmer"
 "bytecodealliance/wasmtime" -> "WebAssembly/WASI"
 "bytecodealliance/wasmtime" -> "bytecodealliance/wasm-micro-runtime"
@@ -29,6 +37,7 @@ digraph G {
 "bytecodealliance/wasmtime" -> "wasm3/wasm3"
 "bytecodealliance/wasmtime" -> "clap-rs/clap" ["e"=1]
 "bytecodealliance/wasmtime" -> "rust-bakery/nom" ["e"=1]
+"GoogleChromeLabs/comlink" -> "AssemblyScript/assemblyscript" ["e"=1]
 "AssemblyScript/assemblyscript" -> "WebAssembly/binaryen"
 "AssemblyScript/assemblyscript" -> "swc-project/swc" ["e"=1]
 "AssemblyScript/assemblyscript" -> "wasmerio/wasmer"
@@ -44,6 +53,7 @@ digraph G {
 "AssemblyScript/assemblyscript" -> "statelyai/xstate" ["e"=1]
 "AssemblyScript/assemblyscript" -> "immerjs/immer" ["e"=1]
 "AssemblyScript/assemblyscript" -> "mbasso/awesome-wasm"
+"microsoft/tsdoc" -> "AssemblyScript/assemblyscript" ["e"=1]
 "emscripten-core/emscripten" -> "WebAssembly/binaryen"
 "emscripten-core/emscripten" -> "emscripten-core/emsdk"
 "emscripten-core/emscripten" -> "AssemblyScript/assemblyscript"
@@ -59,6 +69,12 @@ digraph G {
 "emscripten-core/emscripten" -> "bytecodealliance/wasmtime"
 "emscripten-core/emscripten" -> "pixijs/pixijs" ["e"=1]
 "emscripten-core/emscripten" -> "ocornut/imgui" ["e"=1]
+"build-trust/ockam" -> "lunatic-solutions/lunatic" ["e"=1]
+"build-trust/ockam" -> "spinframework/spin" ["e"=1]
+"weaveworks/ignite" -> "krustlet/krustlet" ["e"=1]
+"copy/v86" -> "wasmerio/wasmer" ["e"=1]
+"copy/v86" -> "emscripten-core/emscripten" ["e"=1]
+"copy/v86" -> "bytecodealliance/wasmtime" ["e"=1]
 "appcypher/awesome-wasm-langs" -> "mbasso/awesome-wasm"
 "appcypher/awesome-wasm-langs" -> "appcypher/awesome-wasm-runtimes"
 "appcypher/awesome-wasm-langs" -> "WebAssembly/binaryen"
@@ -89,6 +105,8 @@ digraph G {
 "wasmerio/wasmer" -> "launchbadge/sqlx" ["e"=1]
 "wasmerio/wasmer" -> "hyperium/hyper" ["e"=1]
 "wasmerio/wasmer" -> "rayon-rs/rayon" ["e"=1]
+"firecracker-microvm/firecracker" -> "wasmerio/wasmer" ["e"=1]
+"rustwasm/wasm-bindgen" -> "wasmerio/wasmer" ["e"=1]
 "emscripten-core/emsdk" -> "emscripten-core/emscripten"
 "emscripten-core/emsdk" -> "WebAssembly/binaryen"
 "emscripten-core/emsdk" -> "WebAssembly/wabt"
@@ -104,14 +122,33 @@ digraph G {
 "emscripten-core/emsdk" -> "bytecodealliance/wasm-micro-runtime"
 "emscripten-core/emsdk" -> "WebAssembly/spec"
 "emscripten-core/emsdk" -> "Dav1dde/glad" ["e"=1]
+"faasm/faasm" -> "gwsystems/sledge-serverless-framework" ["e"=1]
+"faasm/faasm" -> "WAVM/WAVM" ["e"=1]
+"faasm/faasm" -> "WebAssembly/wasi-libc" ["e"=1]
+"faasm/faasm" -> "gwsystems/aWsm" ["e"=1]
+"faasm/faasm" -> "krustlet/krustlet" ["e"=1]
+"faasm/faasm" -> "containerd/runwasi" ["e"=1]
 "chai2010/gopherchina2018-cgo-talk" -> "chai2010/cgo"
 "chai2010/gopherchina2018-cgo-talk" -> "draffensperger/go-interlang"
+"golang-china/awesome-go-zh" -> "chai2010/gopherchina2018-cgo-talk" ["e"=1]
+"nebulet/nebulet" -> "cervus-v/cervus" ["e"=1]
+"nebulet/nebulet" -> "bytecodealliance/lucet" ["e"=1]
+"nebulet/nebulet" -> "rianhunter/wasmjit" ["e"=1]
 "kwast-os/kwast" -> "KernelFreeze/etheryal-kernel"
+"wasmerio/wasmer-go" -> "wasmerio/wasmer" ["e"=1]
 "cervus-v/cervus" -> "nebulet/nebulet" ["e"=1]
 "cervus-v/cervus" -> "CommonWA/cwa-spec"
 "cervus-v/cervus" -> "wasmerio/kernel-wasm"
 "cervus-v/cervus" -> "rianhunter/wasmjit"
 "cervus-v/cervus" -> "losfair/IceCore"
+"perlin-network/life" -> "WAVM/WAVM" ["e"=1]
+"perlin-network/life" -> "rianhunter/wasmjit" ["e"=1]
+"perlin-network/life" -> "bytecodealliance/lucet" ["e"=1]
+"perlin-network/life" -> "appcypher/awesome-wasm-runtimes" ["e"=1]
+"boa-dev/boa" -> "wasmerio/wasmer" ["e"=1]
+"bottlerocket-os/bottlerocket" -> "krustlet/krustlet" ["e"=1]
+"microsoft/BosqueLanguage" -> "bytecodealliance/lucet" ["e"=1]
+"microsoft/BosqueLanguage" -> "AssemblyScript/assemblyscript" ["e"=1]
 "WebAssembly/WASI" -> "bytecodealliance/wasmtime"
 "WebAssembly/WASI" -> "wasmerio/wasmer"
 "WebAssembly/WASI" -> "bytecodealliance/wasm-micro-runtime"
@@ -127,6 +164,7 @@ digraph G {
 "WebAssembly/WASI" -> "bytecodealliance/wit-bindgen"
 "WebAssembly/WASI" -> "WebAssembly/wasi-libc"
 "WebAssembly/WASI" -> "bytecodealliance/lucet"
+"bastion-rs/bastion" -> "lunatic-solutions/lunatic" ["e"=1]
 "bytecodealliance/lucet" -> "bytecodealliance/cranelift" ["e"=1]
 "bytecodealliance/lucet" -> "bytecodealliance/wasm-micro-runtime"
 "bytecodealliance/lucet" -> "WAVM/WAVM"
@@ -157,6 +195,14 @@ digraph G {
 "bytecodealliance/wasm-micro-runtime" -> "bellard/quickjs" ["e"=1]
 "bytecodealliance/wasm-micro-runtime" -> "WebAssembly/wasi-libc"
 "bytecodealliance/wasm-micro-runtime" -> "bytecodealliance/wasm-tools"
+"zxh0/luago-book" -> "zxh0/wasmgo-book" ["e"=1]
+"torch2424/wasmboy" -> "dcodeIO/webassembly" ["e"=1]
+"torch2424/wasmboy" -> "mbasso/awesome-wasm" ["e"=1]
+"torch2424/wasmboy" -> "bytecodealliance/lucet" ["e"=1]
+"torch2424/wasmboy" -> "WebAssembly/threads" ["e"=1]
+"torch2424/wasmboy" -> "AssemblyScript/assemblyscript" ["e"=1]
+"rustwasm/wasm-pack" -> "wasmerio/wasmer" ["e"=1]
+"rustwasm/wasm-pack" -> "WebAssembly/binaryen" ["e"=1]
 "3dgen/cppwasm-book" -> "wasmlang/awesome-wasm-zh"
 "3dgen/cppwasm-book" -> "sonysuqin/WasmVideoPlayer" ["e"=1]
 "3dgen/cppwasm-book" -> "emscripten-core/emsdk"
@@ -175,6 +221,13 @@ digraph G {
 "gwsystems/aWsm" -> "gwsystems/sledge-serverless-framework"
 "gwsystems/aWsm" -> "ARM-software/bento-linker"
 "gwsystems/aWsm" -> "innative-sdk/innative"
+"linkerd/linkerd2-proxy" -> "krustlet/krustlet" ["e"=1]
+"rustwasm/rust-webpack-template" -> "ballercat/wasm-loader" ["e"=1]
+"kube-rs/kube" -> "krustlet/krustlet" ["e"=1]
+"kube-rs/kube" -> "containerd/runwasi" ["e"=1]
+"cherow/cherow" -> "AssemblyScript/prototype" ["e"=1]
+"rustwasm/twiggy" -> "rustwasm/walrus" ["e"=1]
+"fitzgen/dodrio" -> "bytecodealliance/lucet" ["e"=1]
 "dflemstr/rust-native-wasm-loader" -> "yamafaktory/rust-wasm-webpack"
 "wasmlang/awesome-wasm-zh" -> "3dgen/cppwasm-book"
 "wasmlang/awesome-wasm-zh" -> "golang-china/go2-book" ["e"=1]
@@ -214,6 +267,7 @@ digraph G {
 "WebAssembly/proposals" -> "WebAssembly/tool-conventions"
 "WebAssembly/proposals" -> "bytecodealliance/jco"
 "WebAssembly/proposals" -> "GoogleChromeLabs/wasm-feature-detect"
+"mdn/pwa-examples" -> "mdn/webassembly-examples" ["e"=1]
 "xtuc/webassemblyjs" -> "AssemblyScript/binaryen.js"
 "xtuc/webassemblyjs" -> "dcodeIO/webassembly"
 "xtuc/webassemblyjs" -> "sunfishcode/wasm-reference-manual"
@@ -223,6 +277,11 @@ digraph G {
 "xtuc/webassemblyjs" -> "wasmerio/wasmer-js"
 "xtuc/webassemblyjs" -> "mdn/webassembly-examples"
 "xtuc/webassemblyjs" -> "AssemblyScript/wabt.js"
+"wasmi-labs/wasmi" -> "bytecodealliance/wasm-tools" ["e"=1]
+"wasmi-labs/wasmi" -> "bytecodealliance/wit-bindgen" ["e"=1]
+"wasmi-labs/wasmi" -> "bytecodealliance/wasm-micro-runtime" ["e"=1]
+"wasmi-labs/wasmi" -> "appcypher/awesome-wasm-runtimes" ["e"=1]
+"wasmi-labs/wasmi" -> "wasm3/wasm3" ["e"=1]
 "wasmerio/kernel-wasm" -> "cervus-v/cervus"
 "wasmerio/kernel-wasm" -> "nebulet/nebulet" ["e"=1]
 "wasmerio/kernel-wasm" -> "kwast-os/kwast"
@@ -243,6 +302,7 @@ digraph G {
 "appcypher/awesome-wasm-runtimes" -> "mbasso/awesome-wasm"
 "appcypher/awesome-wasm-runtimes" -> "faasm/faasm" ["e"=1]
 "appcypher/awesome-wasm-runtimes" -> "WasmEdge/WasmEdge"
+"rustwasm/wee_alloc" -> "rustwasm/walrus" ["e"=1]
 "wasmerio/wasmer-js" -> "wasmerio/webassembly.sh"
 "wasmerio/wasmer-js" -> "bjorn3/browser_wasi_shim"
 "wasmerio/wasmer-js" -> "GoogleChromeLabs/wasi-fs-access"
@@ -266,6 +326,7 @@ digraph G {
 "WebAssembly/wasi-libc" -> "WebAssembly/meetings"
 "WebAssembly/wasi-libc" -> "gwsystems/aWsm"
 "WebAssembly/wasi-libc" -> "WebAssembly/wasi-threads"
+"danleh/wasabi" -> "ASSERT-KTH/slumps" ["e"=1]
 "innative-sdk/innative" -> "gwsystems/aWsm"
 "innative-sdk/innative" -> "kanaka/wac"
 "rianhunter/wasmjit" -> "cervus-v/cervus"
@@ -322,6 +383,11 @@ digraph G {
 "WebAssembly/function-references" -> "WebAssembly/js-types"
 "WebAssembly/function-references" -> "WebAssembly/module-linking"
 "yamafaktory/rust-wasm-webpack" -> "dflemstr/rust-native-wasm-loader"
+"bellard/quickjs" -> "wasm3/wasm3" ["e"=1]
+"bellard/quickjs" -> "bytecodealliance/wasm-micro-runtime" ["e"=1]
+"bellard/quickjs" -> "wasmerio/wasmer" ["e"=1]
+"bellard/quickjs" -> "AssemblyScript/assemblyscript" ["e"=1]
+"infinyon/fluvio" -> "spinframework/spin" ["e"=1]
 "lunatic-solutions/lunatic" -> "lunatic-solutions/submillisecond"
 "lunatic-solutions/lunatic" -> "GetFirefly/firefly" ["e"=1]
 "lunatic-solutions/lunatic" -> "bastion-rs/bastion" ["e"=1]
@@ -352,6 +418,9 @@ digraph G {
 "wasm3/wasm3" -> "mbasso/awesome-wasm"
 "wasm3/wasm3" -> "saghul/txiki.js" ["e"=1]
 "wasm3/wasm3" -> "WebAssembly/wasi-sdk"
+"tetratelabs/wazero" -> "knqyf263/go-plugin" ["e"=1]
+"ffmpegwasm/ffmpeg.wasm" -> "AssemblyScript/assemblyscript" ["e"=1]
+"microsoft/verona" -> "bytecodealliance/lucet" ["e"=1]
 "krustlet/krustlet" -> "kube-rs/kube" ["e"=1]
 "krustlet/krustlet" -> "wasmCloud/wasmCloud"
 "krustlet/krustlet" -> "containerd/runwasi"
@@ -367,6 +436,7 @@ digraph G {
 "krustlet/krustlet" -> "aya-rs/aya" ["e"=1]
 "krustlet/krustlet" -> "kcp-dev/kcp" ["e"=1]
 "krustlet/krustlet" -> "engineerd/wasm-to-oci"
+"storj/drpc" -> "loopholelabs/frpc-go" ["e"=1]
 "WasmEdge/WasmEdge" -> "wasmerio/wasmer"
 "WasmEdge/WasmEdge" -> "MikeK1999/solana-pumpfun-bot" ["e"=1]
 "WasmEdge/WasmEdge" -> "bytecodealliance/wasm-micro-runtime"
@@ -383,9 +453,11 @@ digraph G {
 "WasmEdge/WasmEdge" -> "6boris/awesome-golang-algorithm" ["e"=1]
 "WasmEdge/WasmEdge" -> "wasm3/wasm3"
 "GoogleChromeLabs/wasm-feature-detect" -> "MaxGraey/wasm-check"
+"tomaka/redshirt" -> "bytecodealliance/lucet" ["e"=1]
 "second-state/wasm-learning" -> "second-state/wasmedge-nodejs-starter"
 "second-state/wasm-learning" -> "second-state/dapr-wasm"
 "second-state/wasm-learning" -> "second-state/vercel-wasm-runtime"
+"osohq/oso" -> "lunatic-solutions/lunatic" ["e"=1]
 "WebAssembly/module-linking" -> "WebAssembly/function-references"
 "WebAssembly/module-linking" -> "WebAssembly/exception-handling"
 "bytecodealliance/wasm-tools" -> "bytecodealliance/wit-bindgen"
@@ -403,7 +475,13 @@ digraph G {
 "bytecodealliance/wasm-tools" -> "bytecodealliance/component-docs"
 "bytecodealliance/wasm-tools" -> "WebAssembly/WASI"
 "bytecodealliance/wasm-tools" -> "WebAssembly/wasi-io"
+"bytecodealliance/wasmtime-go" -> "knqyf263/go-plugin" ["e"=1]
+"dapr/java-sdk" -> "dapr/rust-sdk" ["e"=1]
+"titzer/wizard-engine" -> "FastVM/Web49" ["e"=1]
 "wasienv/wasienv" -> "WebAssembly/wasi-sdk"
+"justjake/quickjs-emscripten" -> "bytecodealliance/javy" ["e"=1]
+"bytecodealliance/cap-std" -> "bytecodealliance/cargo-wasi" ["e"=1]
+"bytecodealliance/cap-std" -> "bytecodealliance/wasi-rs" ["e"=1]
 "WebAssembly/memory64" -> "WebAssembly/multi-memory"
 "WebAssembly/memory64" -> "WebAssembly/tool-conventions"
 "bytecodealliance/cargo-wasi" -> "bytecodealliance/wasi-rs"
@@ -416,7 +494,9 @@ digraph G {
 "suborbital/grav" -> "suborbital/reactr"
 "GoogleChromeLabs/wasi-fs-access" -> "wasmerio/wasmer-js"
 "bytecodealliance/wasmtime-demos" -> "bytecodealliance/wasmparser"
+"yomorun/yomo" -> "WasmEdge/WasmEdge" ["e"=1]
 "dapr/rust-sdk" -> "second-state/dapr-wasm"
+"minio/selfupdate" -> "knqyf263/go-plugin" ["e"=1]
 "suborbital/vektor" -> "suborbital/grav"
 "suborbital/vektor" -> "suborbital/subo"
 "suborbital/vektor" -> "suborbital/reactr"
@@ -444,6 +524,7 @@ digraph G {
 "suborbital/reactr" -> "suborbital/subo"
 "suborbital/reactr" -> "suborbital/e2core"
 "suborbital/reactr" -> "suborbital/sat"
+"second-state/wasm-joey" -> "second-state/substrate-ewasm" ["e"=1]
 "WebAssembly/wasi-io" -> "WebAssembly/wasi-clocks"
 "WebAssembly/wasi-io" -> "WebAssembly/wasi-filesystem"
 "WebAssembly/wasi-io" -> "bytecodealliance/wit-deps"
@@ -456,6 +537,7 @@ digraph G {
 "WebAssembly/wasi-filesystem" -> "bytecodealliance/WASI-Virt"
 "WebAssembly/wasi-filesystem" -> "WebAssembly/wasi-http"
 "WebAssembly/wasi-filesystem" -> "WebAssembly/wasi-cloud-core"
+"knix-microfunctions/knix" -> "gwsystems/sledge-serverless-framework" ["e"=1]
 "zxh0/wasmgo-book" -> "Relph1119/wasm-python-book"
 "zxh0/wasmgo-book" -> "mcuking/wasmc"
 "ASSERT-KTH/slumps" -> "satabin/swam"
@@ -469,6 +551,9 @@ digraph G {
 "bytecodealliance/wat" -> "bytecodealliance/wasmprinter"
 "WebAssembly/flexible-vectors" -> "wasm-superopt/rocinante"
 "bytecodealliance/wasmprinter" -> "bytecodealliance/wat"
+"ericdrowell/KineticJS" -> "asm-js/validator" ["e"=1]
+"sql-js/sql.js" -> "emscripten-core/emscripten" ["e"=1]
+"OpenFunction/OpenFunction" -> "wasmCloud/wasmCloud" ["e"=1]
 "wasmCloud/wasmCloud" -> "bytecodealliance/wit-bindgen"
 "wasmCloud/wasmCloud" -> "containerd/runwasi"
 "wasmCloud/wasmCloud" -> "krustlet/krustlet"
@@ -484,6 +569,10 @@ digraph G {
 "wasmCloud/wasmCloud" -> "bytecodealliance/cargo-component"
 "wasmCloud/wasmCloud" -> "WebAssembly/WASI"
 "wasmCloud/wasmCloud" -> "deislabs/wagi"
+"Qovery/engine" -> "wasmerio/wasmer" ["e"=1]
+"Code-Hex/vz" -> "knqyf263/go-plugin" ["e"=1]
+"jerryscript-project/jerryscript" -> "bytecodealliance/wasm-micro-runtime" ["e"=1]
+"jerryscript-project/jerryscript" -> "wasm3/wasm3" ["e"=1]
 "WebAssembly/design" -> "WebAssembly/spec"
 "WebAssembly/design" -> "WebAssembly/binaryen"
 "WebAssembly/design" -> "emscripten-core/emscripten"
@@ -499,6 +588,8 @@ digraph G {
 "WebAssembly/design" -> "v8/v8" ["e"=1]
 "WebAssembly/design" -> "tc39/ecma262" ["e"=1]
 "WebAssembly/design" -> "redox-os/redox" ["e"=1]
+"freenet/freenet-core" -> "lunatic-solutions/lunatic" ["e"=1]
+"kdash-rs/kdash" -> "krustlet/krustlet" ["e"=1]
 "bytecodealliance/wizer" -> "bytecodealliance/wit-bindgen"
 "bytecodealliance/wizer" -> "bytecodealliance/jco"
 "bytecodealliance/wizer" -> "bytecodealliance/WASI-Virt"
@@ -521,10 +612,14 @@ digraph G {
 "wasmCloud/wasmcloud-otp" -> "wasmCloud/wasmcloud-js"
 "wasmCloud/wasmcloud-otp" -> "wasmCloud/examples"
 "fiberplane/fp-bindgen" -> "bytecodealliance/wit-bindgen"
+"project-akri/akri" -> "krustlet/krustlet" ["e"=1]
+"project-akri/akri" -> "wasmCloud/wasmCloud" ["e"=1]
 "wayfair-archive/tungstenjs" -> "wayfair/hypernova-php"
 "vshymanskyy/awesome-wasm-tools" -> "acieroid/wassail"
 "vshymanskyy/awesome-wasm-tools" -> "gwsystems/aWsm"
 "vshymanskyy/awesome-wasm-tools" -> "ASSERT-KTH/slumps"
+"youki-dev/youki" -> "krustlet/krustlet" ["e"=1]
+"youki-dev/youki" -> "spinframework/spin" ["e"=1]
 "deislabs/hippo" -> "deislabs/bindle"
 "deislabs/hippo" -> "deislabs/wagi"
 "deislabs/hippo" -> "fermyon/bartholomew"
@@ -559,6 +654,8 @@ digraph G {
 "bytecodealliance/wit-bindgen" -> "bytecodealliance/preview2-prototyping"
 "bytecodealliance/wit-bindgen" -> "bytecodealliance/wac"
 "bytecodealliance/wit-bindgen" -> "deislabs/spiderlightning"
+"skerkour/bloom" -> "lunatic-solutions/lunatic" ["e"=1]
+"cloudflare/workers-rs" -> "spinframework/spin" ["e"=1]
 "turbolent/w2c2" -> "vshymanskyy/wasm2native"
 "turbolent/w2c2" -> "FastVM/Web49"
 "turbolent/w2c2" -> "gwsystems/aWsm"
@@ -588,6 +685,7 @@ digraph G {
 "deislabs/wagi" -> "bytecodealliance/ComponentizeJS"
 "deislabs/wagi" -> "wasmCloud/wasmCloud"
 "deislabs/wagi" -> "KWasm/kwasm-operator"
+"FastVM/minivm" -> "FastVM/Web49" ["e"=1]
 "lunatic-solutions/lunatic-rs" -> "lunatic-solutions/submillisecond"
 "lunatic-solutions/lunatic-rs" -> "lunatic-solutions/as-lunatic"
 "lunatic-solutions/lunatic-rs" -> "lunatic-solutions/submillisecond-live-view"
@@ -613,8 +711,10 @@ digraph G {
 "WebAssembly/wasi-http" -> "WebAssembly/wasi-cli"
 "WebAssembly/wasi-http" -> "spinframework/containerd-shim-spin"
 "WebAssembly/wasi-http" -> "WebAssembly/wasi-filesystem"
+"JuliaHubOSS/llvm-cbe" -> "kanaka/wac" ["e"=1]
 "bytecodealliance/wasi-nn" -> "second-state/wasmedge-bindgen"
 "mcuking/Awesome-WebAssembly-Applications" -> "mcuking/wasmc"
+"ASDAlexander77/TypeScriptCompiler" -> "web-devkits/Wasmnizer-ts" ["e"=1]
 "suborbital/subo" -> "suborbital/vektor"
 "suborbital/subo" -> "suborbital/grav"
 "second-state/wasmedge_tensorflow_interface" -> "second-state/WasmEdge-tensorflow-tools"
@@ -648,6 +748,8 @@ digraph G {
 "WebAssembly/wabt" -> "mbasso/awesome-wasm"
 "WebAssembly/wabt" -> "WebAssembly/wasi-sdk"
 "WebAssembly/wabt" -> "rustwasm/wasm-bindgen" ["e"=1]
+"chakra-core/ChakraCore" -> "WebAssembly/design" ["e"=1]
+"shuttle-hq/shuttle" -> "spinframework/spin" ["e"=1]
 "spinframework/spin" -> "krustlet/krustlet"
 "spinframework/spin" -> "wasmCloud/wasmCloud"
 "spinframework/spin" -> "WasmEdge/WasmEdge"
@@ -663,6 +765,7 @@ digraph G {
 "spinframework/spin" -> "leptos-rs/leptos" ["e"=1]
 "spinframework/spin" -> "deislabs/wagi"
 "spinframework/spin" -> "hyperium/tonic" ["e"=1]
+"obi1kenobi/trustfall" -> "lunatic-solutions/lunatic" ["e"=1]
 "WebAssembly/binaryen" -> "WebAssembly/wabt"
 "WebAssembly/binaryen" -> "WebAssembly/spec"
 "WebAssembly/binaryen" -> "AssemblyScript/assemblyscript"
@@ -710,6 +813,9 @@ digraph G {
 "bytecodealliance/cargo-component" -> "bytecodealliance/component-docs"
 "inkeliz/karmem" -> "bytecodealliance/go-modules"
 "inkeliz/karmem" -> "prep/wasmexec"
+"quadratichq/quadratic" -> "spinframework/spin" ["e"=1]
+"google/rune" -> "lunatic-solutions/submillisecond" ["e"=1]
+"ruby/ruby.wasm" -> "kateinoigakukun/wasi-vfs" ["e"=1]
 "WebAssembly/spec" -> "WebAssembly/binaryen"
 "WebAssembly/spec" -> "WebAssembly/design"
 "WebAssembly/spec" -> "WebAssembly/wabt"
@@ -733,6 +839,7 @@ digraph G {
 "dphilla/boxer" -> "JonasKruckenberg/k23"
 "dphilla/boxer" -> "KWasm/kwasm-operator"
 "dphilla/boxer" -> "hyperlight-dev/hyperlight-wasm" ["e"=1]
+"microsoft/devicescript" -> "bytecodealliance/javy" ["e"=1]
 "WebAssembly/component-model" -> "bytecodealliance/wit-bindgen"
 "WebAssembly/component-model" -> "bytecodealliance/cargo-component"
 "WebAssembly/component-model" -> "bytecodealliance/registry"
@@ -748,6 +855,9 @@ digraph G {
 "WebAssembly/component-model" -> "bytecodealliance/wac"
 "WebAssembly/component-model" -> "bytecodealliance/preview2-prototyping"
 "WebAssembly/component-model" -> "WebAssembly/proposals"
+"elonlit/Genesis" -> "lunatic-solutions/submillisecond" ["e"=1]
+"nodejs/node-chakracore" -> "AssemblyScript/prototype" ["e"=1]
+"superfly/litefs" -> "lunatic-solutions/lunatic" ["e"=1]
 "WAVM/WAVM" -> "bytecodealliance/wasm-micro-runtime"
 "WAVM/WAVM" -> "wasm3/wasm3"
 "WAVM/WAVM" -> "appcypher/awesome-wasm-runtimes"
@@ -763,13 +873,17 @@ digraph G {
 "WAVM/WAVM" -> "go-interpreter/wagon" ["e"=1]
 "WAVM/WAVM" -> "wasmerio/wasmer"
 "WAVM/WAVM" -> "bytecodealliance/wasmtime"
+"jamsocket/plane" -> "lunatic-solutions/lunatic" ["e"=1]
+"jamsocket/plane" -> "spinframework/spin" ["e"=1]
 "lunatic-solutions/submillisecond" -> "lunatic-solutions/submillisecond-live-view"
 "lunatic-solutions/submillisecond" -> "lunatic-solutions/lunatic"
 "lunatic-solutions/submillisecond" -> "lunatic-solutions/lunatic-rs"
 "lunatic-solutions/submillisecond" -> "thalo-rs/thalo" ["e"=1]
 "lunatic-solutions/submillisecond" -> "pintariching/rustle" ["e"=1]
+"angular/tsickle" -> "01alchemist/TurboScript" ["e"=1]
 "WebAssembly/wasi-sockets" -> "WebAssembly/wasi-io"
 "WebAssembly/wasi-sockets" -> "bytecodealliance/wasi-rs"
+"eslint/typescript-eslint-parser" -> "AssemblyScript/prototype" ["e"=1]
 "fermyon/bartholomew" -> "fermyon/installer"
 "fermyon/bartholomew" -> "deislabs/wagi"
 "fermyon/bartholomew" -> "deislabs/hippo"
@@ -802,6 +916,12 @@ digraph G {
 "second-state/wasmedge-containers-examples" -> "LlamaEdge/talktalk"
 "Liquid-Reply/kind-crun-wasm" -> "KWasm/podman-wasm"
 "prep/wasmexec" -> "dvob/k8s-wasm"
+"gpujs/gpu.js" -> "AssemblyScript/assemblyscript" ["e"=1]
+"plasma-umass/browsix" -> "evanw/thinscript" ["e"=1]
+"aurae-runtime/aurae" -> "containerd/runwasi" ["e"=1]
+"aurae-runtime/aurae" -> "krustlet/krustlet" ["e"=1]
+"bytecodealliance/cranelift" -> "bytecodealliance/lucet" ["e"=1]
+"pintariching/rustle" -> "lunatic-solutions/submillisecond" ["e"=1]
 "extism/extism" -> "spinframework/spin"
 "extism/extism" -> "lunatic-solutions/lunatic"
 "extism/extism" -> "bytecodealliance/wit-bindgen"
@@ -817,9 +937,15 @@ digraph G {
 "extism/extism" -> "zesterer/chumsky" ["e"=1]
 "extism/extism" -> "tracel-ai/burn" ["e"=1]
 "extism/extism" -> "leptos-rs/leptos" ["e"=1]
+"cloudflare/workerd" -> "spinframework/spin" ["e"=1]
+"stdlib-js/stdlib" -> "AssemblyScript/assemblyscript" ["e"=1]
+"nidium/Nidium" -> "AssemblyScript/prototype" ["e"=1]
+"fruiframework/frui" -> "lunatic-solutions/submillisecond" ["e"=1]
 "second-state/microservice-rust-mysql" -> "WasmEdge/wasmedge_hyper_demo"
 "second-state/microservice-rust-mysql" -> "second-state/dapr-wasm"
 "second-state/microservice-rust-mysql" -> "flows-network/flow-functions"
+"slawlor/ractor" -> "lunatic-solutions/lunatic" ["e"=1]
+"ncruces/go-sqlite3" -> "dispatchrun/wzprof" ["e"=1]
 "bytecodealliance/jco" -> "bytecodealliance/cargo-component"
 "bytecodealliance/jco" -> "bytecodealliance/ComponentizeJS"
 "bytecodealliance/jco" -> "bytecodealliance/wit-bindgen"
@@ -835,10 +961,13 @@ digraph G {
 "bytecodealliance/jco" -> "bytecodealliance/wac"
 "bytecodealliance/jco" -> "bytecodealliance/go-modules"
 "bytecodealliance/jco" -> "bytecodealliance/wizer"
+"andoma/vmir" -> "kanaka/wac" ["e"=1]
+"trynova/nova" -> "drogus/jawsm" ["e"=1]
 "WebAssembly/tool-conventions" -> "WebAssembly/memory64"
 "WebAssembly/tool-conventions" -> "WebAssembly/exception-handling"
 "WebAssembly/tool-conventions" -> "WebAssembly/meetings"
 "WebAssembly/tool-conventions" -> "WebAssembly/wasm-c-api"
+"linux-noah/noah" -> "cervus-v/cervus" ["e"=1]
 "vmware-labs/wasm-workers-server" -> "vmware-labs/distribution-tooling-for-helm" ["e"=1]
 "vmware-labs/wasm-workers-server" -> "deislabs/containerd-wasm-shims"
 "vmware-labs/wasm-workers-server" -> "vmware-labs/webassembly-language-runtimes"
@@ -852,6 +981,7 @@ digraph G {
 "loopholelabs/scale" -> "loopholelabs/drafter"
 "loopholelabs/scale" -> "loopholelabs/frisbee-go"
 "loopholelabs/scale" -> "extism/go-sdk"
+"kuasar-io/kuasar" -> "containerd/runwasi" ["e"=1]
 "mbebenita/WasmExplorer" -> "wasdk/WasmFiddle"
 "mbebenita/WasmExplorer" -> "wasdk/wasmexplorer-service"
 "sagemathinc/cowasm" -> "bjorn3/browser_wasi_shim"
@@ -878,6 +1008,7 @@ digraph G {
 "evanw/thinscript" -> "ooc-lang/rock"
 "evanw/thinscript" -> "3Dparallax/insight" ["e"=1]
 "evanw/thinscript" -> "sweet-js/sweet-core" ["e"=1]
+"Sandpack/nodebox-runtime" -> "evanw/polywasm" ["e"=1]
 "deislabs/containerd-wasm-shims" -> "containerd/runwasi"
 "deislabs/containerd-wasm-shims" -> "deislabs/spiderlightning"
 "deislabs/containerd-wasm-shims" -> "KWasm/kwasm-operator"
@@ -907,6 +1038,7 @@ digraph G {
 "vmware-labs/webassembly-language-runtimes" -> "webassemblylabs/webassembly-language-runtimes"
 "vmware-labs/webassembly-language-runtimes" -> "vmware-labs/wasm-workers-server"
 "vmware-labs/webassembly-language-runtimes" -> "kateinoigakukun/wasi-vfs"
+"maximecb/uvm" -> "FastVM/Web49" ["e"=1]
 "FastVM/Web49" -> "yamt/toywasm"
 "lunatic-solutions/submillisecond-live-view" -> "lunatic-solutions/submillisecond"
 "lunatic-solutions/submillisecond-live-view" -> "lunatic-solutions/lunatic-rs"
@@ -920,6 +1052,8 @@ digraph G {
 "bots-garden/capsule" -> "dispatchrun/wasi-go"
 "WebAssembly/wasi-sql" -> "WebAssembly/wasi-keyvalue"
 "WebAssembly/wasi-keyvalue" -> "WebAssembly/wasi-sql"
+"CanadaHonk/porffor" -> "drogus/jawsm" ["e"=1]
+"CanadaHonk/porffor" -> "bytecodealliance/javy" ["e"=1]
 "container2wasm/container2wasm" -> "ktock/vscode-container-wasm"
 "container2wasm/container2wasm" -> "containerd/runwasi"
 "container2wasm/container2wasm" -> "mewz-project/mewz" ["e"=1]
@@ -942,6 +1076,8 @@ digraph G {
 "bytecodealliance/go-modules" -> "bytecodealliance/wit-deps"
 "bytecodealliance/go-modules" -> "bytecodealliance/wasm-pkg-tools"
 "bytecodealliance/go-modules" -> "bytecodealliance/component-docs"
+"pnpm/pacquet" -> "evanw/polywasm" ["e"=1]
+"andrei-markeev/ts2c" -> "evanw/thinscript" ["e"=1]
 "asm-js/validator" -> "mbebenita/LLJS"
 "asm-js/validator" -> "tc39/ecmascript_simd"
 "asm-js/validator" -> "tc39/proposal-async-await" ["e"=1]
@@ -972,6 +1108,7 @@ digraph G {
 "sunfishcode/wasm-reference-manual" -> "ColinEberhardt/chasm"
 "sunfishcode/wasm-reference-manual" -> "dcodeIO/webassembly"
 "sunfishcode/wasm-reference-manual" -> "GoogleChromeLabs/wasm-feature-detect"
+"kaito-project/kaito" -> "Azure/dalec" ["e"=1]
 "pojntfx/r3map" -> "loopholelabs/drafter"
 "bytecodealliance/ComponentizeJS" -> "bytecodealliance/jco"
 "bytecodealliance/ComponentizeJS" -> "bytecodealliance/registry"
@@ -1012,10 +1149,14 @@ digraph G {
 "rylev/wepl" -> "bytecodealliance/wasm-component-ld"
 "rylev/wepl" -> "yoshuawuyts/wstd"
 "WebAssembly/wasi-cloud-core" -> "sunfishcode/world-of-wasi-demo"
+"NerdLang/nerd" -> "AssemblyScript/assemblyscript" ["e"=1]
+"NilsIrl/dockerc" -> "container2wasm/container2wasm" ["e"=1]
+"nalgeon/codapi" -> "taybenlor/runno" ["e"=1]
 "spinframework/spin-operator" -> "spinframework/runtime-class-manager"
 "spinframework/spin-operator" -> "spinframework/containerd-shim-spin"
 "spinframework/spin-operator" -> "spinframework/spin-plugin-kube"
 "spinframework/spin-operator" -> "KWasm/kwasm-operator"
+"renderlet/wander" -> "JonasKruckenberg/k23" ["e"=1]
 "01alchemist/TurboScript" -> "AssemblyScript/prototype"
 "01alchemist/TurboScript" -> "MichaReiser/speedy.js"
 "01alchemist/TurboScript" -> "evanw/thinscript"
@@ -1024,7 +1165,13 @@ digraph G {
 "01alchemist/TurboScript" -> "dcodeIO/webassembly"
 "01alchemist/TurboScript" -> "RReverser/babel-plugin-asm-js"
 "01alchemist/TurboScript" -> "tmcw/wah"
+"typestyle/typestyle" -> "AssemblyScript/prototype" ["e"=1]
+"turbo/js" -> "AssemblyScript/prototype" ["e"=1]
 "wayfair/hypernova-php" -> "wayfair-archive/tungstenjs"
+"m4b/faerie" -> "bytecodealliance/wasmprinter" ["e"=1]
+"golemcloud/golem" -> "bytecodealliance/componentize-py" ["e"=1]
+"golemcloud/golem" -> "wasmCloud/wasmCloud" ["e"=1]
+"golemcloud/golem" -> "bytecodealliance/registry" ["e"=1]
 "bytecodealliance/wrpc" -> "bytecodealliance/wasm-pkg-tools"
 "bytecodealliance/wrpc" -> "bytecodealliance/wit-deps"
 "bytecodealliance/wrpc" -> "bytecodealliance/wac"
@@ -1069,6 +1216,7 @@ digraph G {
 "spinframework/runtime-class-manager" -> "spinframework/spin-plugin-kube"
 "loopholelabs/silo" -> "loopholelabs/firecracker"
 "loopholelabs/firecracker" -> "loopholelabs/silo"
+"mdn/dom-examples" -> "mdn/webassembly-examples" ["e"=1]
 "mbasso/awesome-wasm" -> "appcypher/awesome-wasm-langs"
 "mbasso/awesome-wasm" -> "wasmerio/wasmer"
 "mbasso/awesome-wasm" -> "WebAssembly/binaryen"
@@ -1099,6 +1247,9 @@ digraph G {
 "mbasso/asm-dom" -> "cherow/cherow" ["e"=1]
 "mbasso/asm-dom" -> "google/incremental-dom" ["e"=1]
 "mbasso/asm-dom" -> "WAVM/WAVM"
+"i-net-software/JWebAssembly" -> "appcypher/awesome-wasm-langs" ["e"=1]
+"hyperlight-dev/hyperlight" -> "spinframework/spin" ["e"=1]
+"hyperlight-dev/hyperlight" -> "containerd/runwasi" ["e"=1]
 "drogus/jawsm" -> "CanadaHonk/porffor" ["e"=1]
 "drogus/jawsm" -> "bytecodealliance/ComponentizeJS"
 "drogus/jawsm" -> "trynova/nova" ["e"=1]
@@ -1110,11 +1261,13 @@ digraph G {
 "drogus/jawsm" -> "bytecodealliance/cargo-component"
 "drogus/jawsm" -> "bytecodealliance/jco"
 "drogus/jawsm" -> "web-devkits/Wasmnizer-ts"
+"udevbe/greenfield" -> "container2wasm/container2wasm" ["e"=1]
 "ballercat/wasm-loader" -> "wayfair/hypernova-php"
 "ballercat/wasm-loader" -> "dcodeIO/webassembly"
 "ballercat/wasm-loader" -> "dflemstr/rust-native-wasm-loader"
 "ballercat/wasm-loader" -> "MaxGraey/Assembleash"
 "ballercat/wasm-loader" -> "rustwasm/rust-webpack-template" ["e"=1]
+"evilsocket/cake" -> "LlamaEdge/LlamaEdge" ["e"=1]
 "mdn/webassembly-examples" -> "JasonWeathersby/WASMSobel"
 "mdn/webassembly-examples" -> "WebAssembly/wabt"
 "mdn/webassembly-examples" -> "WebAssembly/spec"
@@ -1130,6 +1283,9 @@ digraph G {
 "mdn/webassembly-examples" -> "bytecodealliance/wasm-tools"
 "mdn/webassembly-examples" -> "appcypher/awesome-wasm-langs"
 "mdn/webassembly-examples" -> "mdn/html-examples" ["e"=1]
+"grain-lang/grain" -> "WebAssembly/binaryen" ["e"=1]
+"go-interpreter/wagon" -> "WAVM/WAVM" ["e"=1]
+"go-interpreter/wagon" -> "WebAssembly/wasm-jit-prototype" ["e"=1]
 "WebAssembly/gc" -> "WebAssembly/proposals"
 "WebAssembly/gc" -> "WebAssembly/component-model"
 "WebAssembly/gc" -> "WebAssembly/meetings"
@@ -1186,6 +1342,7 @@ digraph G {
 "WebAssembly/threads" -> "bytecodealliance/component-docs"
 "WebAssembly/threads" -> "WebAssembly/tail-call"
 "WebAssembly/threads" -> "bytecodealliance/jco"
+"buildsafedev/bsf" -> "WasmEdge/WasmEdge" ["e"=1]
 "WebAssembly/exception-handling" -> "WebAssembly/module-linking"
 "WebAssembly/exception-handling" -> "WebAssembly/function-references"
 "WebAssembly/exception-handling" -> "WebAssembly/esm-integration"
@@ -1195,7 +1352,13 @@ digraph G {
 "makepad/stitch" -> "Neopallium/s1vm"
 "web-devkits/wasm2native" -> "web-devkits/webinizer"
 "LlamaEdge/sd-api-server" -> "LlamaEdge/whisper-api-server"
+"tc39/proposal-binary-ast" -> "AssemblyScript/prototype" ["e"=1]
+"ballercat/walt" -> "AssemblyScript/assemblyscript" ["e"=1]
+"ballercat/walt" -> "AssemblyScript/prototype" ["e"=1]
+"ballercat/walt" -> "mbasso/asm-dom" ["e"=1]
+"ballercat/walt" -> "wasdk/WebAssemblyStudio" ["e"=1]
 "tc39/ecmascript_simd" -> "WebAssembly/simd"
+"nathan/pax" -> "bytecodealliance/lucet" ["e"=1]
 "AssemblyScript/prototype" -> "01alchemist/TurboScript"
 "AssemblyScript/prototype" -> "dcodeIO/webassembly"
 "AssemblyScript/prototype" -> "evanw/thinscript"
@@ -1211,6 +1374,7 @@ digraph G {
 "AssemblyScript/prototype" -> "eslint/typescript-eslint-parser" ["e"=1]
 "AssemblyScript/prototype" -> "fuse-box/fuse-box" ["e"=1]
 "AssemblyScript/prototype" -> "mikeal/r2" ["e"=1]
+"maierfelix/Iroh" -> "AssemblyScript/prototype" ["e"=1]
 "AssemblyScript/binaryen.js" -> "AssemblyScript/wabt.js"
 "AssemblyScript/binaryen.js" -> "AssemblyScript/website"
 "WebAssembly/meetings" -> "WebAssembly/proposals"
@@ -1228,159 +1392,191 @@ digraph G {
 "WebAssembly/meetings" -> "sunfishcode/wasm-reference-manual"
 "WebAssembly/meetings" -> "bytecodealliance/jco"
 "WebAssembly/meetings" -> "bytecodealliance/wasm-tools"
+"astrolang/astro" -> "rsms/co" ["e"=1]
 "bytecodealliance/wasmparser" -> "bytecodealliance/wat"
 "bytecodealliance/wasmparser" -> "bytecodealliance/wasmprinter"
+"ergo-services/ergo" ["l"="4.31,-8.868", "c"=0]
+"lunatic-solutions/lunatic" ["l"="-8.212,-7.907"]
+"RustPython/RustPython" ["l"="-9.598,-5.605", "c"=5]
+"wasmerio/wasmer" ["l"="-8.006,-7.711"]
+"saghul/txiki.js" ["l"="-22.285,-42.367", "c"=1183]
+"wasm3/wasm3" ["l"="-8.065,-7.715"]
+"bytecodealliance/wasm-micro-runtime" ["l"="-8.07,-7.751"]
+"google/robotstxt" ["l"="-3.869,-28.28", "c"=4]
+"bytecodealliance/lucet" ["l"="-8.118,-7.771"]
 "wasdk/WebAssemblyStudio" ["l"="-8.127,-7.595"]
 "WebAssembly/binaryen" ["l"="-8.067,-7.666"]
 "AssemblyScript/assemblyscript" ["l"="-8.025,-7.563"]
-"ballercat/walt" ["l"="-4.36,-28.991"]
+"ballercat/walt" ["l"="-4.36,-28.991", "c"=4]
 "mbasso/awesome-wasm" ["l"="-8.073,-7.618"]
 "wasdk/WasmFiddle" ["l"="-8.134,-7.463"]
 "WebAssembly/wabt" ["l"="-8.032,-7.674"]
-"bytecodealliance/cranelift" ["l"="-9.81,-6.095"]
+"bytecodealliance/cranelift" ["l"="-9.81,-6.095", "c"=5]
 "dcodeIO/webassembly" ["l"="-8.26,-7.688"]
-"bytecodealliance/lucet" ["l"="-8.118,-7.771"]
-"koute/stdweb" ["l"="-9.99,-5.937"]
-"rustwasm/wasm-bindgen" ["l"="-10.017,-5.849"]
-"shamadee/web-dsp" ["l"="1.81,-28.876"]
-"nebulet/nebulet" ["l"="-9.882,-5.995"]
-"rustwasm/team" ["l"="-10.044,-5.885"]
-"rustwasm/wasm-pack" ["l"="-10.002,-5.882"]
+"koute/stdweb" ["l"="-9.99,-5.937", "c"=5]
+"rustwasm/wasm-bindgen" ["l"="-10.017,-5.849", "c"=5]
+"shamadee/web-dsp" ["l"="1.81,-28.876", "c"=12]
+"nebulet/nebulet" ["l"="-9.882,-5.995", "c"=5]
+"rustwasm/team" ["l"="-10.044,-5.885", "c"=5]
+"rustwasm/wasm-pack" ["l"="-10.002,-5.882", "c"=5]
+"wasmerio/wasmer-python" ["l"="42.469,20.574", "c"=1073]
+"wasmerio/wasmer-js" ["l"="-8.313,-7.833"]
+"nodegui/nodegui" ["l"="-21.55,-27.701", "c"=730]
 "bytecodealliance/wasmtime" ["l"="-7.989,-7.754"]
-"wasmerio/wasmer" ["l"="-8.006,-7.711"]
 "WebAssembly/WASI" ["l"="-8.066,-7.793"]
-"bytecodealliance/wasm-micro-runtime" ["l"="-8.07,-7.751"]
-"tokio-rs/tokio" ["l"="-9.685,-5.814"]
-"gfx-rs/wgpu" ["l"="-9.765,-4.35"]
+"tokio-rs/tokio" ["l"="-9.685,-5.814", "c"=5]
+"gfx-rs/wgpu" ["l"="-9.765,-4.35", "c"=227]
 "WasmEdge/WasmEdge" ["l"="-8.018,-7.809"]
-"rust-lang/rust-analyzer" ["l"="-9.746,-5.883"]
-"yewstack/yew" ["l"="-9.692,-5.722"]
-"iced-rs/iced" ["l"="-9.61,-5.794"]
-"tokio-rs/axum" ["l"="-9.712,-5.883"]
-"rayon-rs/rayon" ["l"="-9.835,-6.033"]
-"wasm3/wasm3" ["l"="-8.065,-7.715"]
-"clap-rs/clap" ["l"="-9.794,-5.986"]
-"rust-bakery/nom" ["l"="-9.801,-6.121"]
-"swc-project/swc" ["l"="-4.211,-29.715"]
-"evanw/esbuild" ["l"="-4.18,-29.529"]
-"FredKSchott/snowpack" ["l"="-4.099,-29.4"]
-"denoland/deno" ["l"="-1.385,-31.743"]
+"rust-lang/rust-analyzer" ["l"="-9.746,-5.883", "c"=5]
+"yewstack/yew" ["l"="-9.692,-5.722", "c"=5]
+"iced-rs/iced" ["l"="-9.61,-5.794", "c"=5]
+"tokio-rs/axum" ["l"="-9.712,-5.883", "c"=5]
+"rayon-rs/rayon" ["l"="-9.835,-6.033", "c"=5]
+"clap-rs/clap" ["l"="-9.794,-5.986", "c"=5]
+"rust-bakery/nom" ["l"="-9.801,-6.121", "c"=5]
+"GoogleChromeLabs/comlink" ["l"="-4.287,-29.301", "c"=4]
+"swc-project/swc" ["l"="-4.211,-29.715", "c"=4]
+"evanw/esbuild" ["l"="-4.18,-29.529", "c"=4]
+"FredKSchott/snowpack" ["l"="-4.099,-29.4", "c"=4]
+"denoland/deno" ["l"="-1.385,-31.743", "c"=295]
 "emscripten-core/emscripten" ["l"="-7.954,-7.583"]
-"GoogleChromeLabs/comlink" ["l"="-4.287,-29.301"]
-"lerna/lerna" ["l"="-0.839,-31.402"]
-"gpujs/gpu.js" ["l"="-32.589,-35.794"]
-"rome/tools" ["l"="-4.076,-29.505"]
-"statelyai/xstate" ["l"="-4.122,-29.5"]
-"immerjs/immer" ["l"="-3.93,-29.405"]
+"lerna/lerna" ["l"="-0.839,-31.402", "c"=295]
+"gpujs/gpu.js" ["l"="-32.589,-35.794", "c"=1115]
+"rome/tools" ["l"="-4.076,-29.505", "c"=4]
+"statelyai/xstate" ["l"="-4.122,-29.5", "c"=4]
+"immerjs/immer" ["l"="-3.93,-29.405", "c"=4]
+"microsoft/tsdoc" ["l"="-0.703,-31.191", "c"=295]
 "emscripten-core/emsdk" ["l"="-8.032,-7.63"]
 "WebAssembly/design" ["l"="-7.958,-7.642"]
-"v8/v8" ["l"="-0.574,-31.699"]
-"libuv/libuv" ["l"="-19.793,-25.328"]
-"nothings/stb" ["l"="-23.745,-27.395"]
-"bkaradzic/bgfx" ["l"="-23.622,-27.378"]
-"llvm/llvm-project" ["l"="-20.109,-25.561"]
-"glfw/glfw" ["l"="-23.68,-27.395"]
-"pixijs/pixijs" ["l"="21.922,-30.038"]
-"ocornut/imgui" ["l"="-23.863,-27.379"]
+"v8/v8" ["l"="-0.574,-31.699", "c"=295]
+"libuv/libuv" ["l"="-19.793,-25.328", "c"=10]
+"nothings/stb" ["l"="-23.745,-27.395", "c"=26]
+"bkaradzic/bgfx" ["l"="-23.622,-27.378", "c"=26]
+"llvm/llvm-project" ["l"="-20.109,-25.561", "c"=10]
+"glfw/glfw" ["l"="-23.68,-27.395", "c"=26]
+"pixijs/pixijs" ["l"="21.922,-30.038", "c"=36]
+"ocornut/imgui" ["l"="-23.863,-27.379", "c"=26]
+"build-trust/ockam" ["l"="-9.839,-6.09", "c"=5]
+"spinframework/spin" ["l"="-8.104,-7.9"]
+"weaveworks/ignite" ["l"="8.078,-9.038", "c"=14]
+"krustlet/krustlet" ["l"="-8.124,-7.872"]
+"copy/v86" ["l"="-16.356,-6.948", "c"=469]
 "appcypher/awesome-wasm-langs" ["l"="-8.104,-7.68"]
 "appcypher/awesome-wasm-runtimes" ["l"="-8.103,-7.736"]
-"i-net-software/JWebAssembly" ["l"="-11.309,4.963"]
+"i-net-software/JWebAssembly" ["l"="-11.309,4.963", "c"=983]
 "WAVM/WAVM" ["l"="-8.116,-7.711"]
-"konsoletyper/teavm" ["l"="-11.306,5.018"]
+"konsoletyper/teavm" ["l"="-11.306,5.018", "c"=983]
 "WebAssembly/spec" ["l"="-8.039,-7.755"]
-"launchbadge/sqlx" ["l"="-9.837,-5.966"]
-"hyperium/hyper" ["l"="-9.852,-5.921"]
+"launchbadge/sqlx" ["l"="-9.837,-5.966", "c"=5]
+"hyperium/hyper" ["l"="-9.852,-5.921", "c"=5]
+"firecracker-microvm/firecracker" ["l"="8.358,-8.828", "c"=14]
 "3dgen/cppwasm-book" ["l"="-8.113,-7.548"]
-"gpuweb/gpuweb" ["l"="35.759,24.488"]
+"gpuweb/gpuweb" ["l"="35.759,24.488", "c"=98]
 "WebAssembly/wasi-sdk" ["l"="-8.1,-7.805"]
-"nigels-com/glew" ["l"="-23.598,-27.53"]
-"Kagami/ffmpeg.js" ["l"="64.274,-12.863"]
-"Dav1dde/glad" ["l"="-23.596,-27.491"]
+"nigels-com/glew" ["l"="-23.598,-27.53", "c"=26]
+"Kagami/ffmpeg.js" ["l"="64.274,-12.863", "c"=375]
+"Dav1dde/glad" ["l"="-23.596,-27.491", "c"=26]
+"faasm/faasm" ["l"="63.385,-12.507", "c"=1127]
+"gwsystems/sledge-serverless-framework" ["l"="-8.228,-7.667"]
+"WebAssembly/wasi-libc" ["l"="-8.082,-7.816"]
+"gwsystems/aWsm" ["l"="-8.202,-7.667"]
+"containerd/runwasi" ["l"="-8.062,-8.012"]
 "chai2010/gopherchina2018-cgo-talk" ["l"="-8.056,-7.331"]
 "chai2010/cgo" ["l"="-8.036,-7.303"]
 "draffensperger/go-interlang" ["l"="-8.046,-7.276"]
+"golang-china/awesome-go-zh" ["l"="1.698,-5.518", "c"=472]
+"cervus-v/cervus" ["l"="-8.323,-7.396"]
+"rianhunter/wasmjit" ["l"="-8.257,-7.503"]
 "kwast-os/kwast" ["l"="-8.412,-7.311"]
 "KernelFreeze/etheryal-kernel" ["l"="-8.433,-7.288"]
-"cervus-v/cervus" ["l"="-8.323,-7.396"]
+"wasmerio/wasmer-go" ["l"="4.222,-8.48", "c"=0]
 "CommonWA/cwa-spec" ["l"="-8.325,-7.361"]
 "wasmerio/kernel-wasm" ["l"="-8.372,-7.352"]
-"rianhunter/wasmjit" ["l"="-8.257,-7.503"]
 "losfair/IceCore" ["l"="-8.332,-7.327"]
+"perlin-network/life" ["l"="4.316,-8.334", "c"=0]
+"boa-dev/boa" ["l"="-4.504,-30.012", "c"=4]
+"bottlerocket-os/bottlerocket" ["l"="8.114,-9.043", "c"=14]
+"microsoft/BosqueLanguage" ["l"="-34.798,-1.619", "c"=8]
 "WebAssembly/component-model" ["l"="-8.06,-7.921"]
-"krustlet/krustlet" ["l"="-8.124,-7.872"]
-"spinframework/spin" ["l"="-8.104,-7.9"]
 "bytecodealliance/wit-bindgen" ["l"="-8.08,-7.955"]
-"WebAssembly/wasi-libc" ["l"="-8.082,-7.816"]
-"lunatic-solutions/lunatic" ["l"="-8.212,-7.907"]
-"async-rs/async-std" ["l"="-10.005,-6.106"]
-"wasmi-labs/wasmi" ["l"="-18.955,9.39"]
-"bellard/quickjs" ["l"="-22.224,-42.369"]
+"bastion-rs/bastion" ["l"="-10.127,-6.295", "c"=5]
+"async-rs/async-std" ["l"="-10.005,-6.106", "c"=5]
+"wasmi-labs/wasmi" ["l"="-18.955,9.39", "c"=457]
+"bellard/quickjs" ["l"="-22.224,-42.369", "c"=1183]
 "bytecodealliance/wasm-tools" ["l"="-8.057,-7.89"]
+"zxh0/luago-book" ["l"="-25.083,-33.291", "c"=82]
+"zxh0/wasmgo-book" ["l"="-8.165,-7.424"]
+"torch2424/wasmboy" ["l"="-15.715,1.293", "c"=446]
+"WebAssembly/threads" ["l"="-7.995,-7.848"]
 "wasmlang/awesome-wasm-zh" ["l"="-8.094,-7.466"]
-"sonysuqin/WasmVideoPlayer" ["l"="64.194,-12.884"]
+"sonysuqin/WasmVideoPlayer" ["l"="64.194,-12.884", "c"=375]
 "mbasso/asm-dom" ["l"="-8.202,-7.619"]
-"bvibber/ogv.js" ["l"="64.24,-12.835"]
-"goldvideo/decoder_wasm" ["l"="64.219,-12.895"]
-"ErosZy/WXInlinePlayer" ["l"="64.177,-12.899"]
-"nodejs/node-addon-examples" ["l"="40.932,8.945"]
-"msorvig/qt-webassembly-examples" ["l"="-20.173,-27.574"]
-"hjlld/LearningWebGPU" ["l"="35.68,24.515"]
-"quickjs-zh/QuickJS" ["l"="-22.254,-42.389"]
-"hggq/paozhu" ["l"="-18.478,-28.307"]
-"qicosmos/cosmos" ["l"="-18.417,-28.265"]
-"gwsystems/aWsm" ["l"="-8.202,-7.667"]
-"gwsystems/sledge-serverless-framework" ["l"="-8.228,-7.667"]
+"bvibber/ogv.js" ["l"="64.24,-12.835", "c"=375]
+"goldvideo/decoder_wasm" ["l"="64.219,-12.895", "c"=375]
+"ErosZy/WXInlinePlayer" ["l"="64.177,-12.899", "c"=375]
+"nodejs/node-addon-examples" ["l"="40.932,8.945", "c"=499]
+"msorvig/qt-webassembly-examples" ["l"="-20.173,-27.574", "c"=107]
+"hjlld/LearningWebGPU" ["l"="35.68,24.515", "c"=98]
+"quickjs-zh/QuickJS" ["l"="-22.254,-42.389", "c"=1183]
+"hggq/paozhu" ["l"="-18.478,-28.307", "c"=62]
+"qicosmos/cosmos" ["l"="-18.417,-28.265", "c"=62]
 "ARM-software/bento-linker" ["l"="-8.233,-7.636"]
 "innative-sdk/innative" ["l"="-8.242,-7.581"]
+"linkerd/linkerd2-proxy" ["l"="-10.136,-6.193", "c"=5]
+"rustwasm/rust-webpack-template" ["l"="-10.151,-5.78", "c"=5]
+"ballercat/wasm-loader" ["l"="-8.344,-7.626"]
+"kube-rs/kube" ["l"="-10.173,-6.161", "c"=5]
+"cherow/cherow" ["l"="2.87,-30.046", "c"=1206]
+"AssemblyScript/prototype" ["l"="-8.294,-7.633"]
+"rustwasm/twiggy" ["l"="-9.987,-6.092", "c"=5]
+"rustwasm/walrus" ["l"="-7.926,-7.93"]
+"fitzgen/dodrio" ["l"="-10.143,-5.872", "c"=5]
 "dflemstr/rust-native-wasm-loader" ["l"="-8.43,-7.616"]
 "yamafaktory/rust-wasm-webpack" ["l"="-8.463,-7.614"]
-"golang-china/go2-book" ["l"="1.717,-5.552"]
-"golang-china/awesome-go-zh" ["l"="1.698,-5.518"]
-"zxh0/wasmgo-book" ["l"="-8.165,-7.424"]
+"golang-china/go2-book" ["l"="1.717,-5.552", "c"=472]
 "wasienv/wasienv" ["l"="-8.189,-7.809"]
 "bytecodealliance/wizer" ["l"="-8.084,-7.924"]
 "WebAssembly/tool-conventions" ["l"="-8.057,-7.831"]
-"faasm/faasm" ["l"="63.385,-12.507"]
-"binji/wasm-clang" ["l"="-1.348,-26.408"]
+"binji/wasm-clang" ["l"="-1.348,-26.408", "c"=814]
 "WebAssembly/wasi-nn" ["l"="-7.995,-8.031"]
 "WebAssembly/proposals" ["l"="-8.046,-7.858"]
 "WebAssembly/meetings" ["l"="-8.025,-7.844"]
 "WebAssembly/gc" ["l"="-8.004,-7.865"]
 "WebAssembly/interface-types" ["l"="-7.979,-7.88"]
-"WebAssembly/threads" ["l"="-7.995,-7.848"]
 "WebAssembly/exception-handling" ["l"="-7.961,-7.844"]
 "WebAssembly/reference-types" ["l"="-7.964,-7.861"]
 "bytecodealliance/jco" ["l"="-8.063,-7.946"]
 "GoogleChromeLabs/wasm-feature-detect" ["l"="-8.169,-7.824"]
+"mdn/pwa-examples" ["l"="9.827,-44.606", "c"=794]
+"mdn/webassembly-examples" ["l"="-8.161,-7.74"]
 "xtuc/webassemblyjs" ["l"="-8.245,-7.743"]
 "AssemblyScript/binaryen.js" ["l"="-8.274,-7.775"]
 "sunfishcode/wasm-reference-manual" ["l"="-8.161,-7.796"]
 "kanaka/wac" ["l"="-8.262,-7.555"]
 "WebAssembly/testsuite" ["l"="-8.219,-7.77"]
 "rsms/wasm-util" ["l"="-8.28,-7.711"]
-"wasmerio/wasmer-js" ["l"="-8.313,-7.833"]
-"mdn/webassembly-examples" ["l"="-8.161,-7.74"]
 "AssemblyScript/wabt.js" ["l"="-8.243,-7.779"]
-"RIKEN-RCCS/MilvusVisor" ["l"="4.508,-39.901"]
-"eunomia-bpf/wasm-bpf" ["l"="7.353,-6.24"]
+"RIKEN-RCCS/MilvusVisor" ["l"="4.508,-39.901", "c"=1133]
+"eunomia-bpf/wasm-bpf" ["l"="7.353,-6.24", "c"=335]
 "vshymanskyy/awesome-wasm-tools" ["l"="-8.175,-7.587"]
 "WebAssembly/wasm-c-api" ["l"="-8.131,-7.747"]
-"perlin-network/life" ["l"="4.316,-8.334"]
+"rustwasm/wee_alloc" ["l"="-10.106,-5.856", "c"=5]
 "wasmerio/webassembly.sh" ["l"="-8.359,-7.816"]
 "bjorn3/browser_wasi_shim" ["l"="-8.266,-7.909"]
 "GoogleChromeLabs/wasi-fs-access" ["l"="-8.361,-7.851"]
 "sagemathinc/cowasm" ["l"="-8.32,-7.892"]
-"jedisct1/as-wasi" ["l"="-20.692,14.506"]
+"jedisct1/as-wasi" ["l"="-20.692,14.506", "c"=591]
 "JairusSW/json-as" ["l"="-8.389,-7.833"]
 "bytecodealliance/wasi-rs" ["l"="-7.999,-7.937"]
 "bytecodealliance/cargo-wasi" ["l"="-7.97,-7.911"]
 "WebAssembly/wasi-threads" ["l"="-7.975,-7.807"]
-"CraneStation/lightbeam" ["l"="-20.367,11.308"]
+"danleh/wasabi" ["l"="-22.901,-21.715", "c"=474]
+"ASSERT-KTH/slumps" ["l"="-8.191,-7.522"]
+"CraneStation/lightbeam" ["l"="-20.367,11.308", "c"=22]
 "WebAssembly/wasm-jit-prototype" ["l"="-8.208,-7.567"]
 "Xe/olin" ["l"="-8.288,-7.438"]
 "WebAssembly/esm-integration" ["l"="-7.91,-7.851"]
 "WebAssembly/module-linking" ["l"="-7.941,-7.848"]
-"rustwasm/walrus" ["l"="-7.926,-7.93"]
 "bytecodealliance/wat" ["l"="-7.953,-7.928"]
 "WebAssembly/wasi-filesystem" ["l"="-7.988,-7.987"]
 "WebAssembly/wasi-io" ["l"="-7.985,-7.966"]
@@ -1394,59 +1590,72 @@ digraph G {
 "bytecodealliance/wasm-interface-types" ["l"="-7.957,-7.946"]
 "bytecodealliance/WASI-Virt" ["l"="-8.049,-7.984"]
 "bytecodealliance/wasmtime-demos" ["l"="-7.934,-7.903"]
-"rustwasm/wee_alloc" ["l"="-10.106,-5.856"]
 "WebAssembly/multi-value" ["l"="-7.877,-7.845"]
 "Geal/serverless-wasm" ["l"="-8.341,-7.282"]
 "WebAssembly/function-references" ["l"="-7.919,-7.83"]
 "WebAssembly/proposal-type-imports" ["l"="-7.927,-7.814"]
 "WebAssembly/js-types" ["l"="-7.911,-7.814"]
+"infinyon/fluvio" ["l"="-0.49,15.086", "c"=729]
 "lunatic-solutions/submillisecond" ["l"="-8.315,-7.973"]
-"GetFirefly/firefly" ["l"="4.629,14.864"]
-"bastion-rs/bastion" ["l"="-10.127,-6.295"]
-"rusterlium/rustler" ["l"="4.689,14.864"]
-"spacejam/sled" ["l"="-9.984,-6.161"]
+"GetFirefly/firefly" ["l"="4.629,14.864", "c"=44]
+"rusterlium/rustler" ["l"="4.689,14.864", "c"=44]
+"spacejam/sled" ["l"="-9.984,-6.161", "c"=5]
 "lunatic-solutions/lunatic-rs" ["l"="-8.334,-7.953"]
-"slawlor/ractor" ["l"="-10.19,-6.42"]
-"DataDog/glommio" ["l"="-10.076,-6.354"]
+"slawlor/ractor" ["l"="-10.19,-6.42", "c"=5]
+"DataDog/glommio" ["l"="-10.076,-6.354", "c"=5]
 "extism/extism" ["l"="-8.148,-7.914"]
-"zesterer/chumsky" ["l"="-9.699,-6.402"]
-"sycamore-rs/sycamore" ["l"="-10.075,-5.959"]
-"tokio-rs/tracing" ["l"="-9.988,-6.183"]
-"saghul/txiki.js" ["l"="-22.285,-42.367"]
-"kube-rs/kube" ["l"="-10.173,-6.161"]
+"zesterer/chumsky" ["l"="-9.699,-6.402", "c"=5]
+"sycamore-rs/sycamore" ["l"="-10.075,-5.959", "c"=5]
+"tokio-rs/tracing" ["l"="-9.988,-6.183", "c"=5]
+"tetratelabs/wazero" ["l"="4.253,-8.644", "c"=0]
+"knqyf263/go-plugin" ["l"="-8.104,-8.222"]
+"ffmpegwasm/ffmpeg.wasm" ["l"="-4.279,-29.644", "c"=4]
+"microsoft/verona" ["l"="-9.631,-6.137", "c"=5]
 "wasmCloud/wasmCloud" ["l"="-8.107,-7.951"]
-"containerd/runwasi" ["l"="-8.062,-8.012"]
-"youki-dev/youki" ["l"="-9.852,-6.126"]
-"virtual-kubelet/virtual-kubelet" ["l"="8.036,-9.104"]
+"youki-dev/youki" ["l"="-9.852,-6.126", "c"=5]
+"virtual-kubelet/virtual-kubelet" ["l"="8.036,-9.104", "c"=14]
 "deislabs/wagi" ["l"="-8.116,-8.007"]
-"aya-rs/aya" ["l"="7.267,-6.187"]
-"kcp-dev/kcp" ["l"="7.721,-9.196"]
+"aya-rs/aya" ["l"="7.267,-6.187", "c"=335]
+"kcp-dev/kcp" ["l"="7.721,-9.196", "c"=14]
 "engineerd/wasm-to-oci" ["l"="-8.23,-7.955"]
-"MikeK1999/solana-pumpfun-bot" ["l"="-52.159,-14.997"]
-"rivermoonlight/gobbledegook" ["l"="-52.178,-15.009"]
-"babaybus/DoxygenToolkit.vim" ["l"="-52.176,-14.998"]
-"shuleisanshi/myblog" ["l"="-52.19,-14.998"]
-"xuruoxuan/kkkajs" ["l"="-52.163,-15.009"]
-"unline2/RandomImage" ["l"="-52.166,-14.983"]
-"jayZheng87/Thusy" ["l"="-52.184,-14.981"]
-"onlychain/OCSystem2.0" ["l"="-52.171,-15.03"]
-"mpplab/mnssp3" ["l"="-52.187,-15.041"]
-"x-ream/sqli" ["l"="-52.176,-14.962"]
-"6boris/awesome-golang-algorithm" ["l"="-52.127,-14.964"]
+"storj/drpc" ["l"="4.282,-8.819", "c"=0]
+"loopholelabs/frpc-go" ["l"="-8.011,-8.409"]
+"MikeK1999/solana-pumpfun-bot" ["l"="-52.159,-14.997", "c"=1184]
+"rivermoonlight/gobbledegook" ["l"="-52.178,-15.009", "c"=1184]
+"babaybus/DoxygenToolkit.vim" ["l"="-52.176,-14.998", "c"=1184]
+"shuleisanshi/myblog" ["l"="-52.19,-14.998", "c"=1184]
+"xuruoxuan/kkkajs" ["l"="-52.163,-15.009", "c"=1184]
+"unline2/RandomImage" ["l"="-52.166,-14.983", "c"=1184]
+"jayZheng87/Thusy" ["l"="-52.184,-14.981", "c"=1184]
+"onlychain/OCSystem2.0" ["l"="-52.171,-15.03", "c"=1184]
+"mpplab/mnssp3" ["l"="-52.187,-15.041", "c"=1184]
+"x-ream/sqli" ["l"="-52.176,-14.962", "c"=1184]
+"6boris/awesome-golang-algorithm" ["l"="-52.127,-14.964", "c"=1184]
 "MaxGraey/wasm-check" ["l"="-8.216,-7.826"]
+"tomaka/redshirt" ["l"="-9.746,-6.296", "c"=5]
 "second-state/wasm-learning" ["l"="-7.862,-8.17"]
 "second-state/wasmedge-nodejs-starter" ["l"="-7.842,-8.205"]
 "second-state/dapr-wasm" ["l"="-7.836,-8.24"]
 "second-state/vercel-wasm-runtime" ["l"="-7.814,-8.179"]
+"osohq/oso" ["l"="4.096,-9.561", "c"=0]
 "bytecodealliance/registry" ["l"="-8.062,-7.975"]
 "bytecodealliance/wac" ["l"="-8.026,-7.989"]
+"bytecodealliance/wasmtime-go" ["l"="4.343,-8.424", "c"=0]
+"dapr/java-sdk" ["l"="-33.757,-0.783", "c"=8]
+"dapr/rust-sdk" ["l"="-7.805,-8.286"]
+"titzer/wizard-engine" ["l"="-22.791,-21.707", "c"=474]
+"FastVM/Web49" ["l"="-8.335,-7.5"]
+"justjake/quickjs-emscripten" ["l"="-22.241,-42.257", "c"=1183]
+"bytecodealliance/javy" ["l"="-8.133,-7.976"]
+"bytecodealliance/cap-std" ["l"="-9.902,-6.578", "c"=5]
 "WebAssembly/memory64" ["l"="-7.977,-7.827"]
 "WebAssembly/multi-memory" ["l"="-7.951,-7.829"]
 "suborbital/grav" ["l"="-8.313,-8.189"]
 "suborbital/vektor" ["l"="-8.297,-8.198"]
 "suborbital/subo" ["l"="-8.311,-8.174"]
 "suborbital/reactr" ["l"="-8.288,-8.179"]
-"dapr/rust-sdk" ["l"="-7.805,-8.286"]
+"yomorun/yomo" ["l"="-10.794,-4.45", "c"=1245]
+"minio/selfupdate" ["l"="3.679,-8.385", "c"=0]
 "wasmCloud/wascc-host" ["l"="-8.263,-8.193"]
 "wapc/wapc-rust" ["l"="-8.298,-8.244"]
 "wasmCloud/wascc-actor" ["l"="-8.267,-8.231"]
@@ -1464,14 +1673,16 @@ digraph G {
 "wapc/wapc-guest-tinygo" ["l"="-8.069,-8.297"]
 "suborbital/e2core" ["l"="-8.254,-8.157"]
 "suborbital/sat" ["l"="-8.298,-8.157"]
+"second-state/wasm-joey" ["l"="-22.303,-42.261", "c"=1183]
+"second-state/substrate-ewasm" ["l"="-7.795,-8.167"]
 "WebAssembly/wasi-clocks" ["l"="-7.954,-7.983"]
 "bytecodealliance/wit-deps" ["l"="-8.04,-7.994"]
 "WebAssembly/wasi-cli" ["l"="-7.968,-8"]
 "WebAssembly/wasi-http" ["l"="-8.019,-8.031"]
 "WebAssembly/wasi-cloud-core" ["l"="-8.012,-8.005"]
+"knix-microfunctions/knix" ["l"="63.474,-12.563", "c"=1127]
 "Relph1119/wasm-python-book" ["l"="-8.196,-7.42"]
 "mcuking/wasmc" ["l"="-8.219,-7.441"]
-"ASSERT-KTH/slumps" ["l"="-8.191,-7.522"]
 "satabin/swam" ["l"="-8.202,-7.483"]
 "wapc/wapc-guest-rust" ["l"="-8.317,-8.268"]
 "wasmCloud/capability-providers" ["l"="-8.222,-8.036"]
@@ -1480,46 +1691,56 @@ digraph G {
 "wasmCloud/wasmcloud-js" ["l"="-8.237,-8.045"]
 "WebAssembly/flexible-vectors" ["l"="-7.926,-7.876"]
 "wasm-superopt/rocinante" ["l"="-7.884,-7.895"]
+"ericdrowell/KineticJS" ["l"="21.855,-29.785", "c"=36]
+"asm-js/validator" ["l"="-7.676,-7.879"]
+"sql-js/sql.js" ["l"="-4.755,-29.591", "c"=4]
+"OpenFunction/OpenFunction" ["l"="7.957,-9.139", "c"=14]
 "wasmCloud/wasmcloud-otp" ["l"="-8.208,-8.019"]
 "bytecodealliance/wrpc" ["l"="-8.046,-7.972"]
 "wasmCloud/wadm" ["l"="-8.182,-8.011"]
-"chakra-core/ChakraCore" ["l"="-34.595,-1.71"]
-"Matt-Esch/virtual-dom" ["l"="0.568,-29.405"]
-"Reactive-Extensions/RxJS" ["l"="0.864,-29.215"]
-"servo/servo" ["l"="-9.703,-5.593"]
-"babel/babel" ["l"="-0.736,-31.658"]
-"Flipboard/react-canvas" ["l"="0.701,-29.098"]
-"tc39/ecma262" ["l"="-0.693,-31.513"]
-"redox-os/redox" ["l"="-9.77,-5.645"]
+"Qovery/engine" ["l"="15.755,-10.372", "c"=198]
+"Code-Hex/vz" ["l"="42.868,-26.781", "c"=69]
+"jerryscript-project/jerryscript" ["l"="-22.205,-42.464", "c"=1183]
+"chakra-core/ChakraCore" ["l"="-34.595,-1.71", "c"=8]
+"Matt-Esch/virtual-dom" ["l"="0.568,-29.405", "c"=12]
+"Reactive-Extensions/RxJS" ["l"="0.864,-29.215", "c"=12]
+"servo/servo" ["l"="-9.703,-5.593", "c"=5]
+"babel/babel" ["l"="-0.736,-31.658", "c"=295]
+"Flipboard/react-canvas" ["l"="0.701,-29.098", "c"=12]
+"tc39/ecma262" ["l"="-0.693,-31.513", "c"=295]
+"redox-os/redox" ["l"="-9.77,-5.645", "c"=5]
+"freenet/freenet-core" ["l"="-51.537,5.779", "c"=1225]
+"kdash-rs/kdash" ["l"="7.425,-9.023", "c"=14]
 "bytecodealliance/ComponentizeJS" ["l"="-8.094,-7.977"]
 "bytecodealliance/StarlingMonkey" ["l"="-8.084,-8"]
 "vmware-labs/webassembly-language-runtimes" ["l"="-7.95,-8.029"]
 "fiberplane/fp-bindgen" ["l"="-8.083,-8.038"]
+"project-akri/akri" ["l"="7.866,-9.23", "c"=14]
 "wayfair-archive/tungstenjs" ["l"="-8.459,-7.562"]
 "wayfair/hypernova-php" ["l"="-8.423,-7.58"]
 "deislabs/hippo" ["l"="-8.164,-8.081"]
 "deislabs/bindle" ["l"="-8.121,-8.078"]
 "fermyon/bartholomew" ["l"="-8.188,-8.077"]
 "deislabs/yo-wasm" ["l"="-8.158,-8.046"]
-"bytecodealliance/javy" ["l"="-8.133,-7.976"]
-"second-state/wasmedge-quickjs" ["l"="-22.306,-42.285"]
-"justjake/quickjs-emscripten" ["l"="-22.241,-42.257"]
-"CanadaHonk/porffor" ["l"="-4.3,-30.131"]
+"second-state/wasmedge-quickjs" ["l"="-22.306,-42.285", "c"=1183]
+"CanadaHonk/porffor" ["l"="-4.3,-30.131", "c"=4]
 "drogus/jawsm" ["l"="-8.116,-8.042"]
 "evanw/polywasm" ["l"="-8.171,-8.122"]
 "web-devkits/Wasmnizer-ts" ["l"="-8.142,-8.066"]
 "bytecodealliance/componentize-py" ["l"="-8.067,-7.989"]
 "bytecodealliance/preview2-prototyping" ["l"="-8.03,-7.935"]
 "deislabs/spiderlightning" ["l"="-8.079,-8.084"]
+"skerkour/bloom" ["l"="55.866,-7.281", "c"=944]
+"cloudflare/workers-rs" ["l"="-4.902,-27.694", "c"=688]
 "turbolent/w2c2" ["l"="-8.332,-7.545"]
 "vshymanskyy/wasm2native" ["l"="-8.383,-7.517"]
-"FastVM/Web49" ["l"="-8.335,-7.5"]
 "taybenlor/runno" ["l"="-8.382,-7.921"]
 "second-state/dapr-sdk-wasmedge" ["l"="-7.804,-8.251"]
 "second-state/wasmedge-containers-examples" ["l"="-7.886,-8.202"]
 "second-state/MEGA" ["l"="-7.829,-8.268"]
 "Liquid-Reply/kind-crun-wasm" ["l"="-7.917,-8.184"]
 "KWasm/kwasm-operator" ["l"="-8.002,-8.106"]
+"FastVM/minivm" ["l"="-22.062,-23.26", "c"=496]
 "lunatic-solutions/as-lunatic" ["l"="-8.382,-7.968"]
 "lunatic-solutions/submillisecond-live-view" ["l"="-8.351,-7.983"]
 "second-state/wasmedge_wasi_socket" ["l"="-7.875,-8.254"]
@@ -1527,32 +1748,46 @@ digraph G {
 "bots-garden/capsule" ["l"="-8.213,-8.238"]
 "second-state/netlify-wasm-runtime" ["l"="-7.825,-8.196"]
 "second-state/tencent-scf-wasm-runtime" ["l"="-7.799,-8.195"]
-"second-state/substrate-ewasm" ["l"="-7.795,-8.167"]
 "second-state/SewUp" ["l"="-7.788,-8.188"]
 "bytecodealliance/go-modules" ["l"="-8.048,-8.042"]
 "spinframework/containerd-shim-spin" ["l"="-8.038,-8.109"]
+"JuliaHubOSS/llvm-cbe" ["l"="-22.045,-18.662", "c"=763]
 "second-state/wasmedge-bindgen" ["l"="-7.911,-8.106"]
 "mcuking/Awesome-WebAssembly-Applications" ["l"="-8.229,-7.379"]
+"ASDAlexander77/TypeScriptCompiler" ["l"="-22.866,-22.007", "c"=474]
 "second-state/wasmedge_tensorflow_interface" ["l"="-7.855,-8.311"]
 "flit/cmdis" ["l"="-8.249,-7.615"]
 "esoterra/claw-lang" ["l"="-7.848,-8.017"]
 "lann/wasm-wave" ["l"="-7.919,-8.005"]
 "rylev/dyna" ["l"="-7.816,-8.022"]
-"shuttle-hq/shuttle" ["l"="-9.705,-5.982"]
-"leptos-rs/leptos" ["l"="-9.571,-5.842"]
-"hyperium/tonic" ["l"="-9.933,-6.021"]
-"kuasar-io/kuasar" ["l"="8.142,-9.457"]
+"shuttle-hq/shuttle" ["l"="-9.705,-5.982", "c"=5]
+"leptos-rs/leptos" ["l"="-9.571,-5.842", "c"=5]
+"hyperium/tonic" ["l"="-9.933,-6.021", "c"=5]
+"obi1kenobi/trustfall" ["l"="-9.967,-6.589", "c"=5]
+"kuasar-io/kuasar" ["l"="8.142,-9.457", "c"=14]
 "vmware-labs/wasm-workers-server" ["l"="-8.008,-8.067"]
 "inkeliz/karmem" ["l"="-8.032,-8.178"]
 "prep/wasmexec" ["l"="-8.028,-8.216"]
+"quadratichq/quadratic" ["l"="-9.326,-5.78", "c"=5]
+"google/rune" ["l"="-22.658,-21.665", "c"=474]
+"ruby/ruby.wasm" ["l"="3.941,-37.598", "c"=1]
+"kateinoigakukun/wasi-vfs" ["l"="-7.879,-8.05"]
 "dphilla/boxer" ["l"="-7.998,-8.275"]
 "loopholelabs/scale" ["l"="-8.015,-8.369"]
 "JonasKruckenberg/k23" ["l"="-7.975,-8.198"]
-"hyperlight-dev/hyperlight-wasm" ["l"="-9.52,-6.488"]
-"go-interpreter/wagon" ["l"="4.306,-8.307"]
-"thalo-rs/thalo" ["l"="-10.367,-6.475"]
-"pintariching/rustle" ["l"="5.381,-31.886"]
+"hyperlight-dev/hyperlight-wasm" ["l"="-9.52,-6.488", "c"=5]
+"microsoft/devicescript" ["l"="-4.309,-30.03", "c"=4]
+"elonlit/Genesis" ["l"="-22.777,-21.605", "c"=474]
+"nodejs/node-chakracore" ["l"="21.822,-26.776", "c"=28]
+"superfly/litefs" ["l"="4.945,-8.736", "c"=0]
+"go-interpreter/wagon" ["l"="4.306,-8.307", "c"=0]
+"jamsocket/plane" ["l"="-6.501,-28.37", "c"=793]
+"thalo-rs/thalo" ["l"="-10.367,-6.475", "c"=5]
+"pintariching/rustle" ["l"="5.381,-31.886", "c"=102]
+"angular/tsickle" ["l"="-0.232,-29.307", "c"=12]
+"01alchemist/TurboScript" ["l"="-8.318,-7.667"]
 "WebAssembly/wasi-sockets" ["l"="-7.927,-7.97"]
+"eslint/typescript-eslint-parser" ["l"="-5.032,-29.912", "c"=4]
 "fermyon/installer" ["l"="-8.246,-8.105"]
 "avored/avored-rust-cms" ["l"="-8.216,-8.122"]
 "fermyon/bartholomew-site-template" ["l"="-8.211,-8.097"]
@@ -1567,45 +1802,50 @@ digraph G {
 "LlamaEdge/talktalk" ["l"="-7.879,-8.224"]
 "KWasm/podman-wasm" ["l"="-7.911,-8.212"]
 "dvob/k8s-wasm" ["l"="-8.026,-8.238"]
-"tetratelabs/wazero" ["l"="4.253,-8.644"]
-"rkyv/rkyv" ["l"="-10.005,-6.377"]
-"lapce/floem" ["l"="-9.585,-4.207"]
-"linebender/xilem" ["l"="-9.611,-4.234"]
-"rhaiscript/rhai" ["l"="-9.674,-6.33"]
-"tracel-ai/burn" ["l"="-8.427,-4.429"]
+"plasma-umass/browsix" ["l"="4.017,-7.816", "c"=0]
+"evanw/thinscript" ["l"="-8.264,-7.652"]
+"aurae-runtime/aurae" ["l"="7.327,-9.433", "c"=14]
+"rkyv/rkyv" ["l"="-10.005,-6.377", "c"=5]
+"lapce/floem" ["l"="-9.585,-4.207", "c"=227]
+"linebender/xilem" ["l"="-9.611,-4.234", "c"=227]
+"rhaiscript/rhai" ["l"="-9.674,-6.33", "c"=5]
+"tracel-ai/burn" ["l"="-8.427,-4.429", "c"=407]
+"cloudflare/workerd" ["l"="-4.934,-27.657", "c"=688]
+"stdlib-js/stdlib" ["l"="-32.521,-35.909", "c"=1115]
+"nidium/Nidium" ["l"="-21.654,-27.646", "c"=730]
+"fruiframework/frui" ["l"="-9.555,-4.192", "c"=227]
 "second-state/microservice-rust-mysql" ["l"="-7.764,-8.293"]
 "WasmEdge/wasmedge_hyper_demo" ["l"="-7.729,-8.31"]
 "flows-network/flow-functions" ["l"="-7.753,-8.321"]
-"vmware-labs/distribution-tooling-for-helm" ["l"="7.852,-11.389"]
+"ncruces/go-sqlite3" ["l"="4.475,-8.851", "c"=0]
+"dispatchrun/wzprof" ["l"="-8.141,-8.287"]
+"andoma/vmir" ["l"="-22.022,-18.729", "c"=763]
+"trynova/nova" ["l"="2.484,-30.771", "c"=735]
+"linux-noah/noah" ["l"="4.701,-39.931", "c"=1133]
+"vmware-labs/distribution-tooling-for-helm" ["l"="7.852,-11.389", "c"=285]
 "webassemblylabs/wasm-workers-server" ["l"="-7.978,-8.106"]
 "loopholelabs/polyglot" ["l"="-7.991,-8.393"]
-"loopholelabs/frpc-go" ["l"="-8.011,-8.409"]
 "loopholelabs/drafter" ["l"="-8.006,-8.456"]
 "loopholelabs/frisbee-go" ["l"="-8.035,-8.401"]
 "extism/go-sdk" ["l"="-8.076,-8.345"]
 "mbebenita/WasmExplorer" ["l"="-8.13,-7.379"]
 "wasdk/wasmexplorer-service" ["l"="-8.133,-7.344"]
-"knqyf263/go-plugin" ["l"="-8.104,-8.222"]
 "dispatchrun/net" ["l"="-8.12,-8.278"]
 "dispatchrun/wasi-go" ["l"="-8.147,-8.264"]
-"dispatchrun/wzprof" ["l"="-8.141,-8.287"]
 "dispatchrun/timecraft" ["l"="-8.116,-8.301"]
 "kubernetes-sigs/kube-scheduler-wasm-extension" ["l"="-8.101,-8.255"]
-"evanw/thinscript" ["l"="-8.264,-7.652"]
-"01alchemist/TurboScript" ["l"="-8.318,-7.667"]
-"AssemblyScript/prototype" ["l"="-8.294,-7.633"]
-"evanw/skew" ["l"="-21.44,-25.451"]
-"dbohdan/compilers-targeting-c" ["l"="-22.607,-21.885"]
-"andrei-markeev/ts2c" ["l"="-22.728,-21.96"]
-"andoma/vmir" ["l"="-22.022,-18.729"]
+"evanw/skew" ["l"="-21.44,-25.451", "c"=101]
+"dbohdan/compilers-targeting-c" ["l"="-22.607,-21.885", "c"=474]
+"andrei-markeev/ts2c" ["l"="-22.728,-21.96", "c"=474]
 "ooc-lang/rock" ["l"="-8.34,-7.59"]
-"3Dparallax/insight" ["l"="35.956,24.386"]
-"sweet-js/sweet-core" ["l"="1.384,-26.908"]
+"3Dparallax/insight" ["l"="35.956,24.386", "c"=98]
+"sweet-js/sweet-core" ["l"="1.384,-26.908", "c"=581]
+"Sandpack/nodebox-runtime" ["l"="-22.154,-42.306", "c"=1183]
 "Azure/dalec" ["l"="-8.063,-8.147"]
 "spinframework/spin-operator" ["l"="-8.015,-8.129"]
 "richardanaya/wasm-service" ["l"="-8.402,-8.019"]
 "webassemblylabs/webassembly-language-runtimes" ["l"="-7.903,-8.033"]
-"kateinoigakukun/wasi-vfs" ["l"="-7.879,-8.05"]
+"maximecb/uvm" ["l"="-22.028,-23.232", "c"=496]
 "yamt/toywasm" ["l"="-8.369,-7.467"]
 "KWasm/kwasm-node-installer" ["l"="-7.978,-8.142"]
 "rylev/wepl" ["l"="-7.974,-8.032"]
@@ -1613,26 +1853,26 @@ digraph G {
 "WebAssembly/wasi-keyvalue" ["l"="-8.151,-8.015"]
 "container2wasm/container2wasm" ["l"="-8.169,-7.879"]
 "ktock/vscode-container-wasm" ["l"="-8.257,-7.868"]
-"mewz-project/mewz" ["l"="4.518,-39.921"]
+"mewz-project/mewz" ["l"="4.518,-39.921", "c"=1133]
 "ktock/container2wasm-demo" ["l"="-8.206,-7.866"]
-"leaningtech/webvm" ["l"="12.719,-9.481"]
+"leaningtech/webvm" ["l"="12.719,-9.481", "c"=18]
 "ktock/qemu-wasm" ["l"="-8.229,-7.859"]
-"jprendes/emception" ["l"="-1.355,-26.428"]
-"hyperlight-dev/hyperlight" ["l"="-9.659,-6.415"]
+"jprendes/emception" ["l"="-1.355,-26.428", "c"=814]
+"hyperlight-dev/hyperlight" ["l"="-9.659,-6.415", "c"=5]
 "okuoku/wasmlinux-project" ["l"="-8.242,-7.885"]
-"asm-js/validator" ["l"="-7.676,-7.879"]
+"pnpm/pacquet" ["l"="-7.265,-30.662", "c"=31]
 "mbebenita/LLJS" ["l"="-7.615,-7.882"]
 "tc39/ecmascript_simd" ["l"="-7.797,-7.875"]
-"tc39/proposal-async-await" ["l"="-22.774,-42.139"]
+"tc39/proposal-async-await" ["l"="-22.774,-42.139", "c"=927]
 "web-devkits/wasm2native" ["l"="-8.14,-8.098"]
 "web-devkits/webinizer" ["l"="-8.152,-8.104"]
 "pojntfx/ram-dl" ["l"="-8.011,-8.529"]
 "pojntfx/r3map" ["l"="-8.011,-8.491"]
 "dispatchrun/wazergo" ["l"="-8.103,-8.327"]
-"paritytech/parity-wasm" ["l"="-18.986,9.333"]
+"paritytech/parity-wasm" ["l"="-18.986,9.333", "c"=457]
 "ColinEberhardt/chasm" ["l"="-8.254,-7.814"]
+"kaito-project/kaito" ["l"="-46.184,6.962", "c"=144]
 "zksecurity/wasmati" ["l"="-8.202,-8.172"]
-"pnpm/pacquet" ["l"="-7.265,-30.662"]
 "devongovett/napi-wasm" ["l"="-8.172,-8.181"]
 "flows-network/github-pr-summary" ["l"="-7.763,-8.115"]
 "flows-network/github-pr-review" ["l"="-7.733,-8.122"]
@@ -1641,55 +1881,64 @@ digraph G {
 "loopholelabs/silo" ["l"="-7.985,-8.478"]
 "bytecodealliance/wasm-component-ld" ["l"="-7.923,-8.045"]
 "sunfishcode/world-of-wasi-demo" ["l"="-7.972,-8.015"]
+"NerdLang/nerd" ["l"="-21.565,-27.75", "c"=730]
+"NilsIrl/dockerc" ["l"="-13.039,-7.254", "c"=86]
+"nalgeon/codapi" ["l"="4.886,-8.905", "c"=0]
 "spinframework/runtime-class-manager" ["l"="-8.029,-8.142"]
 "spinframework/spin-plugin-kube" ["l"="-8.04,-8.136"]
+"renderlet/wander" ["l"="60.583,-22.099", "c"=17]
 "MichaReiser/speedy.js" ["l"="-8.342,-7.664"]
 "MaxGraey/Assembleash" ["l"="-8.371,-7.639"]
 "RReverser/babel-plugin-asm-js" ["l"="-8.375,-7.673"]
 "tmcw/wah" ["l"="-8.399,-7.663"]
+"typestyle/typestyle" ["l"="0.671,-29.199", "c"=12]
+"turbo/js" ["l"="23.007,-27.187", "c"=28]
+"m4b/faerie" ["l"="-9.299,-6.448", "c"=5]
+"golemcloud/golem" ["l"="-2.502,19.141", "c"=38]
 "wasmCloud/wasmcloud-operator" ["l"="-8.032,-8.017"]
 "explodingcamera/tinywasm" ["l"="-7.934,-8.286"]
-"moxin-org/moly" ["l"="-11.162,-7.08"]
+"moxin-org/moly" ["l"="-11.162,-7.08", "c"=5]
 "LlamaEdge/rag-api-server" ["l"="-7.934,-8.112"]
-"EricLBuehler/mistral.rs" ["l"="-8.536,-4.415"]
-"EricLBuehler/candle-vllm" ["l"="-8.678,-4.357"]
+"EricLBuehler/mistral.rs" ["l"="-8.536,-4.415", "c"=407]
+"EricLBuehler/candle-vllm" ["l"="-8.678,-4.357", "c"=407]
 "LlamaEdge/chatbot-ui" ["l"="-7.954,-8.094"]
-"foldl/chatllm.cpp" ["l"="40.589,0.815"]
-"kubewharf/podseidon" ["l"="8.073,-9.466"]
+"foldl/chatllm.cpp" ["l"="40.589,0.815", "c"=7]
+"kubewharf/podseidon" ["l"="8.073,-9.466", "c"=14]
 "rsms/co" ["l"="-8.345,-7.736"]
 "makepad/stitch" ["l"="-7.914,-8.334"]
 "LlamaEdge/whisper-api-server" ["l"="-7.914,-8.139"]
 "okuoku/lkl-wasm" ["l"="-8.279,-7.886"]
 "loopholelabs/firecracker" ["l"="-7.972,-8.494"]
-"aalhour/awesome-compilers" ["l"="-22.087,-23.665"]
+"mdn/dom-examples" ["l"="9.835,-44.563", "c"=794]
+"aalhour/awesome-compilers" ["l"="-22.087,-23.665", "c"=496]
 "mbasso/gccx" ["l"="-8.279,-7.58"]
-"ampproject/worker-dom" ["l"="-4.428,-29.04"]
-"ballercat/wasm-loader" ["l"="-8.344,-7.626"]
-"facebookarchive/prepack" ["l"="0.467,-29.144"]
-"cherow/cherow" ["l"="2.87,-30.046"]
-"google/incremental-dom" ["l"="0.127,-29.506"]
-"trynova/nova" ["l"="2.484,-30.771"]
-"sebastianwessel/quickjs" ["l"="-22.208,-42.292"]
+"ampproject/worker-dom" ["l"="-4.428,-29.04", "c"=4]
+"facebookarchive/prepack" ["l"="0.467,-29.144", "c"=12]
+"google/incremental-dom" ["l"="0.127,-29.506", "c"=12]
+"sebastianwessel/quickjs" ["l"="-22.208,-42.292", "c"=1183]
 "thomastschurtschenthaler/electrico" ["l"="-8.118,-8.122"]
-"rustwasm/rust-webpack-template" ["l"="-10.151,-5.78"]
+"udevbe/greenfield" ["l"="-16.335,-3.681", "c"=353]
+"evilsocket/cake" ["l"="40.91,0.286", "c"=7]
 "JasonWeathersby/WASMSobel" ["l"="-8.203,-7.72"]
-"mdn/html-examples" ["l"="9.85,-44.613"]
+"mdn/html-examples" ["l"="9.85,-44.613", "c"=794]
+"grain-lang/grain" ["l"="-22.496,-21.713", "c"=474]
 "WebAssembly/simd" ["l"="-7.899,-7.872"]
 "WebAssembly/tail-call" ["l"="-7.948,-7.876"]
-"titzer/wizard-engine" ["l"="-22.791,-21.707"]
-"brisa-build/brisa" ["l"="-6.291,-28.205"]
+"brisa-build/brisa" ["l"="-6.291,-28.205", "c"=793]
 "yurydelendik/wasmception" ["l"="-8.317,-7.706"]
 "maierfelix/wasm-particles" ["l"="-8.357,-7.705"]
 "grassel/wac-esp" ["l"="-8.293,-7.518"]
+"buildsafedev/bsf" ["l"="30.458,-24.684", "c"=523]
 "Neopallium/s1vm" ["l"="-7.903,-8.358"]
 "LlamaEdge/sd-api-server" ["l"="-7.9,-8.157"]
-"typestyle/typestyle" ["l"="0.671,-29.199"]
-"tc39/proposal-binary-ast" ["l"="-22.9,-42.257"]
-"microsoft/napajs" ["l"="-1.243,-26.897"]
-"fhinkel/type-profile" ["l"="-1.013,-35.545"]
-"developit/workerize" ["l"="-4.411,-29.083"]
-"eslint/typescript-eslint-parser" ["l"="-5.032,-29.912"]
-"fuse-box/fuse-box" ["l"="0.376,-29.229"]
-"mikeal/r2" ["l"="-1.21,-26.85"]
+"tc39/proposal-binary-ast" ["l"="-22.9,-42.257", "c"=927]
+"nathan/pax" ["l"="-9.984,-5.792", "c"=5]
+"microsoft/napajs" ["l"="-1.243,-26.897", "c"=814]
+"fhinkel/type-profile" ["l"="-1.013,-35.545", "c"=498]
+"developit/workerize" ["l"="-4.411,-29.083", "c"=4]
+"fuse-box/fuse-box" ["l"="0.376,-29.229", "c"=12]
+"mikeal/r2" ["l"="-1.21,-26.85", "c"=814]
+"maierfelix/Iroh" ["l"="-1.618,-26.734", "c"=814]
 "AssemblyScript/website" ["l"="-8.323,-7.775"]
+"astrolang/astro" ["l"="-22.476,-21.772", "c"=474]
 }

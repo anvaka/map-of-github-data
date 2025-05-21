@@ -1,4 +1,9 @@
 digraph G {
+"mbentley/docker-omada-controller" -> "Jamesits/pve-fake-subscription" ["e"=1]
+"josenk/terraform-provider-esxi" -> "dustinrue/proxmox-packer" ["e"=1]
+"josenk/terraform-provider-esxi" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"vaniacer/sshto" -> "extremeshok/xshok-proxmox" ["e"=1]
+"thenickdude/OSX-KVM" -> "luchina-gabriel/OSX-PROXMOX" ["e"=1]
 "prometheus-pve/prometheus-pve-exporter" -> "Telmate/terraform-provider-proxmox"
 "prometheus-pve/prometheus-pve-exporter" -> "bpg/terraform-provider-proxmox"
 "prometheus-pve/prometheus-pve-exporter" -> "lae/ansible-role-proxmox"
@@ -14,6 +19,10 @@ digraph G {
 "prometheus-pve/prometheus-pve-exporter" -> "MindFlavor/prometheus_wireguard_exporter" ["e"=1]
 "prometheus-pve/prometheus-pve-exporter" -> "proxmoxer/proxmoxer"
 "prometheus-pve/prometheus-pve-exporter" -> "zimmertr/TJs-Kubernetes-Service"
+"christgau/wsdd" -> "bashclub/zamba-lxc-toolbox" ["e"=1]
+"DomiStyle/docker-idrac6" -> "extremeshok/xshok-proxmox" ["e"=1]
+"DomiStyle/docker-idrac6" -> "proxmoxer/proxmoxer" ["e"=1]
+"githubixx/ansible-role-wireguard" -> "lae/ansible-role-proxmox" ["e"=1]
 "Weilbyte/PVEDiscordDark" -> "tteck/Proxmox" ["e"=1]
 "Weilbyte/PVEDiscordDark" -> "vmstan/gravity-sync" ["e"=1]
 "Weilbyte/PVEDiscordDark" -> "techno-tim/techno-tim.github.io" ["e"=1]
@@ -44,6 +53,8 @@ digraph G {
 "Jamesits/pve-fake-subscription" -> "bashclub/zamba-lxc-toolbox"
 "Jamesits/pve-fake-subscription" -> "ddimick/proxmox-lxc-idmapper"
 "Jamesits/pve-fake-subscription" -> "Brandawg93/PeaNUT" ["e"=1]
+"eko/pihole-exporter" -> "prometheus-pve/prometheus-pve-exporter" ["e"=1]
+"haydenjames/bench-scripts" -> "extremeshok/xshok-proxmox" ["e"=1]
 "DerDanilo/proxmox-stuff" -> "extremeshok/xshok-proxmox"
 "DerDanilo/proxmox-stuff" -> "Tontonjo/proxmox_toolbox"
 "DerDanilo/proxmox-stuff" -> "Corsinvest/awesome-proxmox-ve"
@@ -59,6 +70,7 @@ digraph G {
 "DerDanilo/proxmox-stuff" -> "Jamesits/pve-fake-subscription"
 "DerDanilo/proxmox-stuff" -> "pimox/pimox7"
 "DerDanilo/proxmox-stuff" -> "vmstan/gravity-sync" ["e"=1]
+"Qballjos/portainer_templates" -> "extremeshok/xshok-proxmox" ["e"=1]
 "foundObjects/pve-nag-buster" -> "Jamesits/pve-fake-subscription"
 "foundObjects/pve-nag-buster" -> "Weilbyte/PVEDiscordDark"
 "foundObjects/pve-nag-buster" -> "hintjen/selfhosted-gateway" ["e"=1]
@@ -74,6 +86,7 @@ digraph G {
 "foundObjects/pve-nag-buster" -> "ej52/proxmox-scripts"
 "foundObjects/pve-nag-buster" -> "Brandawg93/PeaNUT" ["e"=1]
 "foundObjects/pve-nag-buster" -> "vmstan/gravity-sync" ["e"=1]
+"jlesage/docker-nginx-proxy-manager" -> "ej52/proxmox-scripts" ["e"=1]
 "zimmertr/TJs-Kubernetes-Service" -> "zimmertr/Kubernetes-Manifests"
 "zimmertr/TJs-Kubernetes-Service" -> "zimmertr/Bootstrap-Kubernetes-with-QEMU"
 "zimmertr/TJs-Kubernetes-Service" -> "dy2k/proxmox-kubernetes"
@@ -89,6 +102,9 @@ digraph G {
 "zimmertr/TJs-Kubernetes-Service" -> "k8s-at-home/awesome-home-kubernetes" ["e"=1]
 "zimmertr/TJs-Kubernetes-Service" -> "corneliusweig/kubernetes-lxd" ["e"=1]
 "zimmertr/TJs-Kubernetes-Service" -> "chriswayg/packer-proxmox-templates"
+"jordanhillis/pvekclean" -> "Corsinvest/cv4pve-autosnap" ["e"=1]
+"jordanhillis/pvekclean" -> "marrobHD/proxmox-tools" ["e"=1]
+"whiskerz007/proxmox_hassos_install" -> "DerDanilo/proxmox-stuff" ["e"=1]
 "travisghansen/kubernetes-pfsense-controller" -> "TheCase/kubernetes-on-proxmox"
 "telcat/vagrant-proxmox" -> "xezpeleta/Ansible-Proxmox-inventory"
 "telcat/vagrant-proxmox" -> "zimmertr/TJs-Kubernetes-Service"
@@ -110,7 +126,15 @@ digraph G {
 "HeinleinSupport/proxmox-tools" -> "cvk98/Proxmox-host-maintenance-mode"
 "TheCase/kubernetes-on-proxmox" -> "devisnotnull/hertzer-proxmox-kubernetes-install-guide"
 "TheCase/kubernetes-on-proxmox" -> "rgl/proxmox-ve"
+"tiny-pilot/tinypilot" -> "DerDanilo/proxmox-stuff" ["e"=1]
+"thenickdude/KVM-Opencore" -> "luchina-gabriel/OSX-PROXMOX" ["e"=1]
+"vmstan/gravity-sync" -> "Weilbyte/PVEDiscordDark" ["e"=1]
+"k3s-io/k3s-ansible" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"k3s-io/k3s-ansible" -> "bpg/terraform-provider-proxmox" ["e"=1]
+"techno-tim/techno-tim.github.io" -> "Weilbyte/PVEDiscordDark" ["e"=1]
 "ddimick/proxmox-lxc-idmapper" -> "Tontonjo/proxmox_toolbox"
+"alexellis/awesome-baremetal" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"jeffreywildman/homebrew-virt-manager" -> "morph027/pve-iso-2-pxe" ["e"=1]
 "proxmoxer/proxmoxer" -> "lae/ansible-role-proxmox"
 "proxmoxer/proxmoxer" -> "extremeshok/xshok-proxmox"
 "proxmoxer/proxmoxer" -> "Telmate/terraform-provider-proxmox"
@@ -126,6 +150,8 @@ digraph G {
 "proxmoxer/proxmoxer" -> "gyptazy/ProxLB"
 "proxmoxer/proxmoxer" -> "DerDanilo/proxmox-stuff"
 "proxmoxer/proxmoxer" -> "ossobv/proxmove"
+"cloudbase/cloudbase-init" -> "hashicorp/packer-plugin-proxmox" ["e"=1]
+"OpenMediaVault-Plugin-Developers/installScript" -> "pimox/pimox7" ["e"=1]
 "kneutron/ansitest" -> "willjasen/proxmox-scripts"
 "kneutron/ansitest" -> "coelacant1/ProxmoxScripts"
 "marrobHD/proxmox-tools" -> "Corsinvest/awesome-proxmox-ve"
@@ -134,6 +160,8 @@ digraph G {
 "marrobHD/proxmox-tools" -> "extremeshok/xshok-proxmox"
 "marrobHD/proxmox-tools" -> "ossobv/proxmove"
 "TheRealAlexV/proxmox-vzbackup-rclone" -> "Marko298/proxmox-vzbackup-rclone"
+"pftf/RPi4" -> "worproject/rpi5-uefi" ["e"=1]
+"pftf/RPi4" -> "jiangcuo/pxvirt" ["e"=1]
 "zzantares/ProxmoxVE" -> "CpuID/pve2-api-php-client"
 "zzantares/ProxmoxVE" -> "Corsinvest/cv4pve-api-php"
 "zzantares/ProxmoxVE" -> "Saleh7/ProxmoxVE_PHP_API"
@@ -153,6 +181,7 @@ digraph G {
 "Corsinvest/awesome-proxmox-ve" -> "coelacant1/ProxmoxScripts"
 "Corsinvest/awesome-proxmox-ve" -> "TheRealAlexV/proxmox-vzbackup-rclone"
 "Corsinvest/awesome-proxmox-ve" -> "bashclub/zamba-lxc-toolbox"
+"jaredhendrickson13/pfsense-api" -> "travisghansen/kubernetes-pfsense-controller" ["e"=1]
 "MrKampf/proxmoxVE" -> "Corsinvest/cv4pve-api-php"
 "dustinrue/proxmox-packer" -> "jacaudi/packer-template-debian-11"
 "dustinrue/proxmox-packer" -> "sdhibit/packer-proxmox-templates"
@@ -160,6 +189,7 @@ digraph G {
 "dustinrue/proxmox-packer" -> "EnsoIT/packer-windows-proxmox"
 "dustinrue/proxmox-packer" -> "romantomjak/packer-proxmox-template"
 "dustinrue/proxmox-packer" -> "marcinbojko/proxmox-kvm-packer"
+"zfsonlinux/zfs-auto-snapshot" -> "Corsinvest/cv4pve-autosnap" ["e"=1]
 "ahuacate/pve-nas" -> "ahuacate/pve-host"
 "dy2k/proxmox-kubernetes" -> "zimmertr/TJs-Kubernetes-Service"
 "dy2k/proxmox-kubernetes" -> "pawalt/proxmox-k3s"
@@ -177,6 +207,8 @@ digraph G {
 "ahuacate/pve-homelab" -> "ahuacate/pve-medialab"
 "romantomjak/packer-proxmox-template" -> "jacaudi/packer-template-debian-11"
 "Corsinvest/cv4pve-diag" -> "Corsinvest/cv4pve-metrics-exporter"
+"K0p1-Git/cloudflare-ddns-updater" -> "Weilbyte/PVEDiscordDark" ["e"=1]
+"techno-tim/launchpad" -> "Weilbyte/PVEDiscordDark" ["e"=1]
 "pimox/pimox7" -> "jiangcuo/pxvirt"
 "pimox/pimox7" -> "jiangcuo/Proxmox-Arm64"
 "pimox/pimox7" -> "Weilbyte/PVEDiscordDark"
@@ -192,6 +224,8 @@ digraph G {
 "pimox/pimox7" -> "pikvm/pikvm" ["e"=1]
 "pimox/pimox7" -> "pucherot/Pi.Alert" ["e"=1]
 "pimox/pimox7" -> "pi-hosted/pi-hosted" ["e"=1]
+"rear/rear" -> "extremeshok/xshok-proxmox" ["e"=1]
+"techno-tim/littlelink-server" -> "Weilbyte/PVEDiscordDark" ["e"=1]
 "Tontonjo/proxmox_toolbox" -> "Tontonjo/proxmox"
 "Tontonjo/proxmox_toolbox" -> "marrobHD/proxmox-tools"
 "Tontonjo/proxmox_toolbox" -> "Corsinvest/awesome-proxmox-ve"
@@ -219,6 +253,7 @@ digraph G {
 "bashclub/proxmox-zfs-postinstall" -> "bashclub/zamba-lxc-toolbox"
 "bashclub/proxmox-zfs-postinstall" -> "bashclub/zfs-housekeeping"
 "CpuID/pve2-api-php-client" -> "zzantares/ProxmoxVE"
+"sickcodes/osx-optimizer" -> "luchina-gabriel/OSX-PROXMOX" ["e"=1]
 "bashclub/zamba-lxc-toolbox" -> "bashclub/proxmox-zfs-postinstall"
 "bashclub/zamba-lxc-toolbox" -> "bashclub/bashclub-zfs-push-pull"
 "bashclub/zamba-lxc-toolbox" -> "Tontonjo/proxmox_toolbox"
@@ -247,6 +282,7 @@ digraph G {
 "bashclub/bashclub-zfs-push-pull" -> "bashclub/zfs-housekeeping"
 "bashclub/bashclub-zfs-push-pull" -> "bashclub/check-zfs-replication"
 "Pumba98/proxmox-packer-templates" -> "EnsoIT/packer-windows-proxmox"
+"ChristianLempa/cheat-sheets" -> "Weilbyte/PVEDiscordDark" ["e"=1]
 "luchina-gabriel/OSX-PROXMOX" -> "thenickdude/KVM-Opencore" ["e"=1]
 "luchina-gabriel/OSX-PROXMOX" -> "tteck/Proxmox" ["e"=1]
 "luchina-gabriel/OSX-PROXMOX" -> "community-scripts/ProxmoxVE" ["e"=1]
@@ -262,6 +298,13 @@ digraph G {
 "luchina-gabriel/OSX-PROXMOX" -> "azukaar/Cosmos-Server" ["e"=1]
 "luchina-gabriel/OSX-PROXMOX" -> "gethomepage/homepage" ["e"=1]
 "luchina-gabriel/OSX-PROXMOX" -> "dockur/macos" ["e"=1]
+"kholia/OSX-KVM" -> "luchina-gabriel/OSX-PROXMOX" ["e"=1]
+"tteck/Proxmox" -> "luchina-gabriel/OSX-PROXMOX" ["e"=1]
+"tteck/Proxmox" -> "Weilbyte/PVEDiscordDark" ["e"=1]
+"psy0rz/zfs_autobackup" -> "Corsinvest/cv4pve-autosnap" ["e"=1]
+"psy0rz/zfs_autobackup" -> "bashclub/zamba-lxc-toolbox" ["e"=1]
+"techno-tim/k3s-ansible" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"techno-tim/k3s-ansible" -> "bpg/terraform-provider-proxmox" ["e"=1]
 "bpg/terraform-provider-proxmox" -> "Telmate/terraform-provider-proxmox"
 "bpg/terraform-provider-proxmox" -> "sergelogvinov/proxmox-csi-plugin" ["e"=1]
 "bpg/terraform-provider-proxmox" -> "muhlba91/pulumi-proxmoxve" ["e"=1]
@@ -294,6 +337,8 @@ digraph G {
 "joshpatten/PVE-VDIClient" -> "Thinstation/thinstation" ["e"=1]
 "cvk98/Proxmox-load-balancer" -> "cvk98/Proxmox-memory-balancer"
 "cvk98/Proxmox-load-balancer" -> "cvk98/Proxmox-host-maintenance-mode"
+"freeipa/freeipa" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"novaspirit/pi-hosted" -> "pimox/pimox7" ["e"=1]
 "LordGaav/proxmox-deploy" -> "libersoft/proxmox-init"
 "cvk98/Proxmox-host-maintenance-mode" -> "cvk98/Proxmox-memory-balancer"
 "ariadata/proxmox-hetzner" -> "kpma1985/ansible_proxmox_hetzner"
@@ -304,8 +349,15 @@ digraph G {
 "onemarcfifty/openwrt-mesh" -> "onemarcfifty/openwrt-scripts"
 "cvk98/Proxmox-memory-balancer" -> "HeinleinSupport/proxmox-tools"
 "cvk98/Proxmox-memory-balancer" -> "cvk98/Proxmox-host-maintenance-mode"
+"Joshua-Riek/ubuntu-rockchip" -> "jiangcuo/pxvirt" ["e"=1]
 "onemarcfifty/cheat-sheets" -> "onemarcfifty/openwrt-mesh"
 "onemarcfifty/cheat-sheets" -> "Corsinvest/awesome-proxmox-ve"
+"dmacvicar/terraform-provider-libvirt" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"dmacvicar/terraform-provider-libvirt" -> "bpg/terraform-provider-proxmox" ["e"=1]
+"ehlesp/smallab-k8s-pve-guide" -> "Corsinvest/awesome-proxmox-ve" ["e"=1]
+"ehlesp/smallab-k8s-pve-guide" -> "bpg/terraform-provider-proxmox" ["e"=1]
+"ehlesp/smallab-k8s-pve-guide" -> "Telmate/terraform-provider-proxmox" ["e"=1]
+"ehlesp/smallab-k8s-pve-guide" -> "zimmertr/TJs-Kubernetes-Service" ["e"=1]
 "vzamora/Proxmox-Cheatsheet" -> "Corsinvest/awesome-proxmox-ve"
 "vzamora/Proxmox-Cheatsheet" -> "marrobHD/proxmox-tools"
 "vzamora/Proxmox-Cheatsheet" -> "Tontonjo/proxmox_toolbox"
@@ -324,6 +376,12 @@ digraph G {
 "jiangcuo/Proxmox-Arm64" -> "edk2-porting/edk2-rk3588" ["e"=1]
 "jiangcuo/Proxmox-Arm64" -> "oneclickvirt/pve" ["e"=1]
 "jiangcuo/Proxmox-Arm64" -> "wofferl/proxmox-backup-arm64"
+"edk2-porting/edk2-rk3588" -> "jiangcuo/pxvirt" ["e"=1]
+"edk2-porting/edk2-rk3588" -> "jiangcuo/Proxmox-Arm64" ["e"=1]
+"O-X-L/ansible-opnsense" -> "lae/ansible-role-proxmox" ["e"=1]
+"O-X-L/ansible-opnsense" -> "bpg/terraform-provider-proxmox" ["e"=1]
+"Nihiue/open-ip-kvm" -> "jiangcuo/Proxmox-Arm64" ["e"=1]
+"Thinstation/thinstation" -> "joshpatten/PVE-VDIClient" ["e"=1]
 "jiangcuo/pxvirt" -> "jiangcuo/Proxmox-Arm64"
 "jiangcuo/pxvirt" -> "pimox/pimox7"
 "jiangcuo/pxvirt" -> "edk2-porting/edk2-rk3588" ["e"=1]
@@ -352,6 +410,7 @@ digraph G {
 "Corsinvest/cv4pve-admin" -> "rcourtman/Pulse"
 "Corsinvest/cv4pve-admin" -> "gyptazy/ProxLB"
 "Corsinvest/cv4pve-admin" -> "gitsang/lxc-iptag"
+"MysticRyuujin/guac-install" -> "Weilbyte/PVEDiscordDark" ["e"=1]
 "alexleigh/pve-mods" -> "Meliox/PVE-mods"
 "lae/ansible-role-proxmox" -> "xezpeleta/Ansible-Proxmox-inventory"
 "lae/ansible-role-proxmox" -> "proxmoxer/proxmoxer"
@@ -383,8 +442,10 @@ digraph G {
 "Meliox/PVE-mods" -> "dougiteixeira/proxmoxve" ["e"=1]
 "Meliox/PVE-mods" -> "Danilop95/Proxmox-Enhanced-Configuration-Utility"
 "Meliox/PVE-mods" -> "fabriziosalmi/proxmox-lxc-autoscale"
+"sergelogvinov/proxmox-csi-plugin" -> "bpg/terraform-provider-proxmox" ["e"=1]
 "ossobv/proxmove" -> "ossobv/proxtop"
 "ossobv/proxmove" -> "marrobHD/proxmox-tools"
+"dockur/windows-arm" -> "jiangcuo/pxvirt" ["e"=1]
 "worproject/rpi5-uefi" -> "jiangcuo/pxvirt"
 "worproject/rpi5-uefi" -> "pftf/RPi4" ["e"=1]
 "Corsinvest/cv4pve-autosnap" -> "kvaps/pve-autosnap"
@@ -417,6 +478,8 @@ digraph G {
 "extremeshok/xshok-proxmox" -> "xezpeleta/Ansible-Proxmox-inventory"
 "extremeshok/xshok-proxmox" -> "Weilbyte/PVEDiscordDark"
 "extremeshok/xshok-proxmox" -> "ariadata/proxmox-hetzner"
+"isc30/ryzen-gpu-passthrough-proxmox" -> "Meliox/PVE-mods" ["e"=1]
+"isc30/ryzen-gpu-passthrough-proxmox" -> "jiangcuo/pxvirt" ["e"=1]
 "coelacant1/ProxmoxScripts" -> "Danilop95/Proxmox-Enhanced-Configuration-Utility"
 "coelacant1/ProxmoxScripts" -> "rcourtman/Pulse"
 "coelacant1/ProxmoxScripts" -> "lowrisk75/proxmox-maintenance-security"
@@ -489,62 +552,73 @@ digraph G {
 "stiliajohny/Book-The-Tao-of-Ansible" -> "coelacant1/ProxmoxScripts"
 "rcourtman/Pulse" -> "lowrisk75/proxmox-maintenance-security"
 "rcourtman/Pulse" -> "coelacant1/ProxmoxScripts"
-"prometheus-pve/prometheus-pve-exporter" ["l"="9.788,-12.04"]
+"mbentley/docker-omada-controller" ["l"="12.024,-8.947", "c"=18]
+"Jamesits/pve-fake-subscription" ["l"="9.708,-12.081"]
+"josenk/terraform-provider-esxi" ["l"="-49.186,6.423", "c"=959]
+"dustinrue/proxmox-packer" ["l"="9.851,-11.924"]
 "Telmate/terraform-provider-proxmox" ["l"="9.796,-12.009"]
+"vaniacer/sshto" ["l"="-51.582,9.891", "c"=19]
+"extremeshok/xshok-proxmox" ["l"="9.747,-12.03"]
+"thenickdude/OSX-KVM" ["l"="-14.151,-1.463", "c"=152]
+"luchina-gabriel/OSX-PROXMOX" ["l"="9.807,-12.143"]
+"prometheus-pve/prometheus-pve-exporter" ["l"="9.788,-12.04"]
 "bpg/terraform-provider-proxmox" ["l"="9.825,-12.023"]
 "lae/ansible-role-proxmox" ["l"="9.79,-11.981"]
-"eko/pihole-exporter" ["l"="-51.492,13.346"]
-"extremeshok/xshok-proxmox" ["l"="9.747,-12.03"]
+"eko/pihole-exporter" ["l"="-51.492,13.346", "c"=200]
 "Corsinvest/awesome-proxmox-ve" ["l"="9.693,-12.056"]
 "Weilbyte/PVEDiscordDark" ["l"="9.78,-12.082"]
-"prometheus/blackbox_exporter" ["l"="9.438,-10.675"]
+"prometheus/blackbox_exporter" ["l"="9.438,-10.675", "c"=484]
 "Corsinvest/cv4pve-autosnap" ["l"="9.713,-12.056"]
 "gyptazy/ProxLB" ["l"="9.708,-12.1"]
-"unpoller/unpoller" ["l"="-16.862,-39.755"]
-"prometheus-community/smartctl_exporter" ["l"="9.572,-10.686"]
-"MindFlavor/prometheus_wireguard_exporter" ["l"="9.556,-10.762"]
+"unpoller/unpoller" ["l"="-16.862,-39.755", "c"=1198]
+"prometheus-community/smartctl_exporter" ["l"="9.572,-10.686", "c"=484]
+"MindFlavor/prometheus_wireguard_exporter" ["l"="9.556,-10.762", "c"=484]
 "proxmoxer/proxmoxer" ["l"="9.77,-12.023"]
 "zimmertr/TJs-Kubernetes-Service" ["l"="9.77,-11.949"]
-"tteck/Proxmox" ["l"="12.264,-9.104"]
-"vmstan/gravity-sync" ["l"="-51.485,13.266"]
-"techno-tim/techno-tim.github.io" ["l"="12.099,-8.904"]
+"christgau/wsdd" ["l"="9.095,-8.792", "c"=14]
+"bashclub/zamba-lxc-toolbox" ["l"="9.728,-12.089"]
+"DomiStyle/docker-idrac6" ["l"="22.685,-21.455", "c"=196]
+"githubixx/ansible-role-wireguard" ["l"="11.595,-9.267", "c"=18]
+"tteck/Proxmox" ["l"="12.264,-9.104", "c"=18]
+"vmstan/gravity-sync" ["l"="-51.485,13.266", "c"=200]
+"techno-tim/techno-tim.github.io" ["l"="12.099,-8.904", "c"=18]
 "pimox/pimox7" ["l"="9.76,-12.142"]
-"techno-tim/launchpad" ["l"="12.079,-8.915"]
+"techno-tim/launchpad" ["l"="12.079,-8.915", "c"=18]
 "DerDanilo/proxmox-stuff" ["l"="9.746,-12.06"]
 "ej52/proxmox-scripts" ["l"="9.729,-12.027"]
 "joshpatten/PVE-VDIClient" ["l"="9.746,-12.084"]
 "foundObjects/pve-nag-buster" ["l"="9.74,-12.11"]
-"Jamesits/pve-fake-subscription" ["l"="9.708,-12.081"]
-"luchina-gabriel/OSX-PROXMOX" ["l"="9.807,-12.143"]
-"homarr-labs/dashboard-icons" ["l"="12.306,-8.906"]
-"themepark-dev/theme.park" ["l"="12.649,-6.472"]
+"homarr-labs/dashboard-icons" ["l"="12.306,-8.906", "c"=18]
+"themepark-dev/theme.park" ["l"="12.649,-6.472", "c"=67]
 "rickycodes/pve-no-subscription" ["l"="9.71,-12.124"]
 "Meliox/PVE-mods" ["l"="9.657,-12.139"]
 "coelacant1/ProxmoxScripts" ["l"="9.638,-12.103"]
-"jordanhillis/pvekclean" ["l"="-14.011,-1.576"]
+"jordanhillis/pvekclean" ["l"="-14.011,-1.576", "c"=152]
 "ossobv/proxmove" ["l"="9.713,-11.998"]
 "Corsinvest/cv4pve-admin" ["l"="9.672,-12.095"]
-"bashclub/zamba-lxc-toolbox" ["l"="9.728,-12.089"]
 "ddimick/proxmox-lxc-idmapper" ["l"="9.661,-12.059"]
-"Brandawg93/PeaNUT" ["l"="12.346,-8.623"]
+"Brandawg93/PeaNUT" ["l"="12.346,-8.623", "c"=18]
+"haydenjames/bench-scripts" ["l"="-63.884,14.853", "c"=875]
 "Tontonjo/proxmox_toolbox" ["l"="9.729,-12.052"]
-"whiskerz007/proxmox_hassos_install" ["l"="-14.871,-39.341"]
+"whiskerz007/proxmox_hassos_install" ["l"="-14.871,-39.341", "c"=64]
 "marrobHD/proxmox-tools" ["l"="9.706,-12.03"]
-"hintjen/selfhosted-gateway" ["l"="12.323,-8.932"]
-"bakito/adguardhome-sync" ["l"="12.291,-8.784"]
-"Spearfoot/disk-burnin-and-testing" ["l"="11.987,-8.934"]
+"Qballjos/portainer_templates" ["l"="12.103,-8.749", "c"=18]
+"hintjen/selfhosted-gateway" ["l"="12.323,-8.932", "c"=18]
+"bakito/adguardhome-sync" ["l"="12.291,-8.784", "c"=18]
+"Spearfoot/disk-burnin-and-testing" ["l"="11.987,-8.934", "c"=18]
 "ayufan/pve-backup-server-dockerfiles" ["l"="9.72,-12.153"]
+"jlesage/docker-nginx-proxy-manager" ["l"="11.686,-11.541", "c"=918]
 "zimmertr/Kubernetes-Manifests" ["l"="9.759,-11.915"]
 "zimmertr/Bootstrap-Kubernetes-with-QEMU" ["l"="9.742,-11.898"]
 "dy2k/proxmox-kubernetes" ["l"="9.732,-11.951"]
-"kubebn/talos-proxmox-kaas" ["l"="9.329,-12.107"]
+"kubebn/talos-proxmox-kaas" ["l"="9.329,-12.107", "c"=1114]
 "TheCase/kubernetes-on-proxmox" ["l"="9.81,-11.865"]
 "pawalt/proxmox-k3s" ["l"="9.735,-11.923"]
-"zimmertr/Bootstrap-Kubernetes-with-LXC" ["l"="8.862,-9.278"]
+"zimmertr/Bootstrap-Kubernetes-with-LXC" ["l"="8.862,-9.278", "c"=14]
 "xezpeleta/Ansible-Proxmox-inventory" ["l"="9.796,-11.962"]
 "morph027/pve-iso-2-pxe" ["l"="9.764,-11.976"]
-"k8s-at-home/awesome-home-kubernetes" ["l"="9.22,-12.235"]
-"corneliusweig/kubernetes-lxd" ["l"="8.833,-9.244"]
+"k8s-at-home/awesome-home-kubernetes" ["l"="9.22,-12.235", "c"=1114]
+"corneliusweig/kubernetes-lxd" ["l"="8.833,-9.244", "c"=14]
 "chriswayg/packer-proxmox-templates" ["l"="9.771,-11.895"]
 "travisghansen/kubernetes-pfsense-controller" ["l"="9.813,-11.808"]
 "telcat/vagrant-proxmox" ["l"="9.798,-11.906"]
@@ -564,27 +638,38 @@ digraph G {
 "cvk98/Proxmox-host-maintenance-mode" ["l"="9.821,-12.238"]
 "devisnotnull/hertzer-proxmox-kubernetes-install-guide" ["l"="9.827,-11.848"]
 "rgl/proxmox-ve" ["l"="9.835,-11.874"]
+"tiny-pilot/tinypilot" ["l"="12.609,-9.244", "c"=18]
+"thenickdude/KVM-Opencore" ["l"="23.25,-22.265", "c"=196]
+"k3s-io/k3s-ansible" ["l"="9.314,-12.296", "c"=1114]
+"alexellis/awesome-baremetal" ["l"="3.649,-7.16", "c"=0]
+"jeffreywildman/homebrew-virt-manager" ["l"="9.322,-8.874", "c"=14]
 "Telmate/proxmox-api-go" ["l"="9.842,-11.977"]
 "hashicorp/packer-plugin-proxmox" ["l"="9.818,-11.965"]
-"dustinrue/proxmox-packer" ["l"="9.851,-11.924"]
 "baseblack/Proxmoxia" ["l"="9.736,-11.98"]
+"cloudbase/cloudbase-init" ["l"="1.32,14.988", "c"=857]
+"OpenMediaVault-Plugin-Developers/installScript" ["l"="12.074,-8.807", "c"=18]
 "kneutron/ansitest" ["l"="9.61,-12.06"]
 "willjasen/proxmox-scripts" ["l"="9.579,-12.052"]
 "StevenSeifried/proxmox-scripts" ["l"="9.667,-11.987"]
 "TheRealAlexV/proxmox-vzbackup-rclone" ["l"="9.655,-12.173"]
 "Marko298/proxmox-vzbackup-rclone" ["l"="9.647,-12.206"]
+"pftf/RPi4" ["l"="42.895,7.516", "c"=818]
+"worproject/rpi5-uefi" ["l"="9.735,-12.247"]
+"jiangcuo/pxvirt" ["l"="9.733,-12.185"]
 "CpuID/pve2-api-php-client" ["l"="9.988,-12.074"]
 "ondrejsika/proxmox-training" ["l"="9.637,-12.046"]
 "Corsinvest/cv4pve-botgram" ["l"="9.62,-12.027"]
 "Danilop95/Proxmox-Enhanced-Configuration-Utility" ["l"="9.648,-12.088"]
 "vzamora/Proxmox-Cheatsheet" ["l"="9.674,-12.017"]
+"jaredhendrickson13/pfsense-api" ["l"="8.582,-43.757", "c"=1059]
 "jacaudi/packer-template-debian-11" ["l"="9.876,-11.888"]
 "sdhibit/packer-proxmox-templates" ["l"="9.857,-11.895"]
 "it-pappa/Packer-Proxmox" ["l"="9.874,-11.911"]
 "EnsoIT/packer-windows-proxmox" ["l"="9.842,-11.902"]
 "romantomjak/packer-proxmox-template" ["l"="9.891,-11.874"]
 "marcinbojko/proxmox-kvm-packer" ["l"="9.891,-11.906"]
-"NatiSayada/k3s-proxmox-terraform-ansible" ["l"="9.175,-12.249"]
+"zfsonlinux/zfs-auto-snapshot" ["l"="-25.727,-23.556", "c"=1142]
+"NatiSayada/k3s-proxmox-terraform-ansible" ["l"="9.175,-12.249", "c"=1114]
 "Corsinvest/cv4pve-metrics" ["l"="9.638,-12.015"]
 "Corsinvest/cv4pve-diag" ["l"="9.6,-12.012"]
 "onemarcfifty/wireguard_vps_vpn" ["l"="9.491,-11.876"]
@@ -596,22 +681,24 @@ digraph G {
 "chriswayg/ansible-initial-server" ["l"="9.771,-11.865"]
 "Aaron-K-T-Berry/packer-ubuntu-proxmox-template" ["l"="9.754,-11.851"]
 "Corsinvest/cv4pve-metrics-exporter" ["l"="9.573,-12.012"]
-"jiangcuo/pxvirt" ["l"="9.733,-12.185"]
+"K0p1-Git/cloudflare-ddns-updater" ["l"="12.137,-8.894", "c"=18]
 "jiangcuo/Proxmox-Arm64" ["l"="9.756,-12.21"]
-"novaspirit/pi-hosted" ["l"="12.18,-8.815"]
+"novaspirit/pi-hosted" ["l"="12.18,-8.815", "c"=18]
 "wofferl/proxmox-backup-arm64" ["l"="9.763,-12.191"]
-"pikvm/pikvm" ["l"="12.407,-9.191"]
-"pucherot/Pi.Alert" ["l"="12.387,-8.873"]
-"pi-hosted/pi-hosted" ["l"="12.137,-8.78"]
+"pikvm/pikvm" ["l"="12.407,-9.191", "c"=18]
+"pucherot/Pi.Alert" ["l"="12.387,-8.873", "c"=18]
+"pi-hosted/pi-hosted" ["l"="12.137,-8.78", "c"=18]
+"rear/rear" ["l"="14.697,-11.389", "c"=855]
+"techno-tim/littlelink-server" ["l"="14.839,-12.019", "c"=1279]
 "Tontonjo/proxmox" ["l"="9.807,-12.06"]
 "inettgmbh/fail2ban-proxmox-backup-server" ["l"="9.769,-12.052"]
 "bashclub/proxmox-zfs-postinstall" ["l"="9.763,-12.103"]
-"ma-karai/nginxproxymanagerGraf" ["l"="12.227,-8.57"]
-"ZoeyVid/NPMplus" ["l"="12.33,-8.714"]
-"jlesage/docker-nginx-proxy-manager" ["l"="11.686,-11.541"]
-"itiligent/Easy-Guacamole-Installer" ["l"="7.748,-3.947"]
+"ma-karai/nginxproxymanagerGraf" ["l"="12.227,-8.57", "c"=18]
+"ZoeyVid/NPMplus" ["l"="12.33,-8.714", "c"=18]
+"itiligent/Easy-Guacamole-Installer" ["l"="7.748,-3.947", "c"=1211]
 "bashclub/bashclub-zfs-push-pull" ["l"="9.783,-12.114"]
 "bashclub/zfs-housekeeping" ["l"="9.764,-12.117"]
+"sickcodes/osx-optimizer" ["l"="40.721,-22.891", "c"=419]
 "tizbac/proxmoxbackupclient_go" ["l"="9.689,-12.123"]
 "fdcastel/Proxmox-Automation" ["l"="9.81,-12.105"]
 "luthermonson/go-proxmox" ["l"="9.879,-11.959"]
@@ -619,31 +706,31 @@ digraph G {
 "vivami/proxmox-automation" ["l"="9.923,-11.909"]
 "inoxio/ansible-role-proxmox-vms" ["l"="9.868,-11.94"]
 "bashclub/check-zfs-replication" ["l"="9.828,-12.12"]
-"thenickdude/KVM-Opencore" ["l"="23.25,-22.265"]
-"community-scripts/ProxmoxVE" ["l"="12.31,-9.072"]
-"kholia/OSX-KVM" ["l"="-14.052,-1.079"]
-"thenickdude/OSX-KVM" ["l"="-14.151,-1.463"]
-"sickcodes/osx-optimizer" ["l"="40.721,-22.891"]
-"corpnewt/gibMacOS" ["l"="23.241,-22.114"]
-"louislam/dockge" ["l"="12.364,-9.049"]
-"azukaar/Cosmos-Server" ["l"="12.383,-8.801"]
-"gethomepage/homepage" ["l"="12.401,-9.102"]
-"dockur/macos" ["l"="12.543,-9.511"]
-"sergelogvinov/proxmox-csi-plugin" ["l"="9.319,-12.09"]
-"muhlba91/pulumi-proxmoxve" ["l"="39.322,22.805"]
-"sergelogvinov/proxmox-cloud-controller-manager" ["l"="9.336,-12.059"]
-"siderolabs/terraform-provider-talos" ["l"="9.275,-12.076"]
-"onedr0p/cluster-template" ["l"="9.25,-12.245"]
-"O-X-L/ansible-opnsense" ["l"="8.608,-43.807"]
-"k3s-io/k3s-ansible" ["l"="9.314,-12.296"]
-"ionos-cloud/cluster-api-provider-proxmox" ["l"="9.342,-12.032"]
-"roeldev/iac-talos-cluster" ["l"="9.348,-12.098"]
-"openbao/openbao" ["l"="7.777,-8.943"]
-"jedrw/kproximate" ["l"="9.359,-12.055"]
+"ChristianLempa/cheat-sheets" ["l"="12.118,-8.957", "c"=18]
+"community-scripts/ProxmoxVE" ["l"="12.31,-9.072", "c"=18]
+"kholia/OSX-KVM" ["l"="-14.052,-1.079", "c"=152]
+"corpnewt/gibMacOS" ["l"="23.241,-22.114", "c"=196]
+"louislam/dockge" ["l"="12.364,-9.049", "c"=18]
+"azukaar/Cosmos-Server" ["l"="12.383,-8.801", "c"=18]
+"gethomepage/homepage" ["l"="12.401,-9.102", "c"=18]
+"dockur/macos" ["l"="12.543,-9.511", "c"=18]
+"psy0rz/zfs_autobackup" ["l"="-25.739,-23.577", "c"=1142]
+"techno-tim/k3s-ansible" ["l"="12.074,-8.979", "c"=18]
+"sergelogvinov/proxmox-csi-plugin" ["l"="9.319,-12.09", "c"=1114]
+"muhlba91/pulumi-proxmoxve" ["l"="39.322,22.805", "c"=1091]
+"sergelogvinov/proxmox-cloud-controller-manager" ["l"="9.336,-12.059", "c"=1114]
+"siderolabs/terraform-provider-talos" ["l"="9.275,-12.076", "c"=1114]
+"onedr0p/cluster-template" ["l"="9.25,-12.245", "c"=1114]
+"O-X-L/ansible-opnsense" ["l"="8.608,-43.807", "c"=1059]
+"ionos-cloud/cluster-api-provider-proxmox" ["l"="9.342,-12.032", "c"=1114]
+"roeldev/iac-talos-cluster" ["l"="9.348,-12.098", "c"=1114]
+"openbao/openbao" ["l"="7.777,-8.943", "c"=14]
+"jedrw/kproximate" ["l"="9.359,-12.055", "c"=1114]
 "Corsinvest/cv4pve-pepper" ["l"="9.834,-12.094"]
-"netdevopsbr/netbox-proxbox" ["l"="6.12,-2.73"]
-"Thinstation/thinstation" ["l"="-50.078,10.346"]
+"netdevopsbr/netbox-proxbox" ["l"="6.12,-2.73", "c"=225]
+"Thinstation/thinstation" ["l"="-50.078,10.346", "c"=59]
 "cvk98/Proxmox-load-balancer" ["l"="9.801,-12.202"]
+"freeipa/freeipa" ["l"="9.456,-8.541", "c"=14]
 "libersoft/proxmox-init" ["l"="9.932,-11.991"]
 "ariadata/proxmox-hetzner" ["l"="9.671,-11.942"]
 "kpma1985/ansible_proxmox_hetzner" ["l"="9.655,-11.901"]
@@ -651,48 +738,48 @@ digraph G {
 "dexogen/pipbs" ["l"="9.78,-12.24"]
 "wofferl/proxmox-backup" ["l"="9.783,-12.22"]
 "onemarcfifty/openwrt-mesh" ["l"="9.547,-11.915"]
+"Joshua-Riek/ubuntu-rockchip" ["l"="54.735,31.906", "c"=780]
 "onemarcfifty/cheat-sheets" ["l"="9.596,-11.962"]
-"Luctia/ezarr" ["l"="12.471,-6.268"]
+"dmacvicar/terraform-provider-libvirt" ["l"="8.519,-12.473", "c"=600]
+"ehlesp/smallab-k8s-pve-guide" ["l"="9.321,-12.191", "c"=1114]
+"Luctia/ezarr" ["l"="12.471,-6.268", "c"=67]
 "briandipalma/proxmox-services" ["l"="9.634,-11.977"]
 "jiangcuo/pve-port-kernel" ["l"="9.733,-12.221"]
-"edk2-porting/edk2-rk3588" ["l"="54.682,31.915"]
-"oneclickvirt/pve" ["l"="-46.622,15.088"]
-"worproject/rpi5-uefi" ["l"="9.735,-12.247"]
+"edk2-porting/edk2-rk3588" ["l"="54.682,31.915", "c"=780]
+"oneclickvirt/pve" ["l"="-46.622,15.088", "c"=93]
+"Nihiue/open-ip-kvm" ["l"="13.006,-9.515", "c"=18]
 "asylumexp/Proxmox" ["l"="9.701,-12.24"]
-"Joshua-Riek/ubuntu-rockchip" ["l"="54.735,31.906"]
 "jiangcuo/pve-iso-builder" ["l"="9.708,-12.218"]
-"strongtz/i915-sriov-dkms" ["l"="-14.124,-1.511"]
-"pftf/RPi4" ["l"="42.895,7.516"]
-"isc30/ryzen-gpu-passthrough-proxmox" ["l"="-14.174,-1.493"]
+"strongtz/i915-sriov-dkms" ["l"="-14.124,-1.511", "c"=152]
+"isc30/ryzen-gpu-passthrough-proxmox" ["l"="-14.174,-1.493", "c"=152]
 "fabriziosalmi/proxmox-lxc-autoscale" ["l"="9.631,-12.134"]
 "rcourtman/Pulse" ["l"="9.614,-12.103"]
 "fabriziosalmi/proxmox-vm-autoscale" ["l"="9.655,-12.116"]
 "Zalaya/sorting-algorithms" ["l"="9.614,-12.081"]
 "gitsang/lxc-iptag" ["l"="9.59,-12.082"]
+"MysticRyuujin/guac-install" ["l"="7.725,-3.971", "c"=1211]
 "alexleigh/pve-mods" ["l"="9.623,-12.171"]
-"lae/ansible-role-netbox" ["l"="6.142,-2.735"]
+"lae/ansible-role-netbox" ["l"="6.142,-2.735", "c"=225]
 "Dilden/Ansible-Proxmox-Automation" ["l"="9.817,-11.936"]
 "MightySlaytanic/pve-monitoring" ["l"="9.623,-12.198"]
-"Upinel/PVE-Intel-vGPU" ["l"="-14.082,-1.538"]
-"dougiteixeira/proxmoxve" ["l"="-15.038,-39.109"]
+"Upinel/PVE-Intel-vGPU" ["l"="-14.082,-1.538", "c"=152]
+"dougiteixeira/proxmoxve" ["l"="-15.038,-39.109", "c"=64]
 "ossobv/proxtop" ["l"="9.693,-11.967"]
+"dockur/windows-arm" ["l"="12.319,-9.342", "c"=18]
 "kvaps/pve-autosnap" ["l"="9.674,-12.04"]
-"Corsinvest/cv4pve-barc" ["l"="14.531,-11.128"]
+"Corsinvest/cv4pve-barc" ["l"="14.531,-11.128", "c"=855]
 "apprell/proxmox-autosnap" ["l"="9.652,-12.033"]
-"psy0rz/zfs_autobackup" ["l"="-25.739,-23.577"]
 "lowrisk75/proxmox-maintenance-security" ["l"="9.594,-12.117"]
 "stiliajohny/Book-The-Tao-of-Ansible" ["l"="9.569,-12.107"]
 "sakakun/Proxmox-Desktop-Client" ["l"="9.569,-12.137"]
-"LooLzzz/docking-station" ["l"="12.432,-8.562"]
+"LooLzzz/docking-station" ["l"="12.432,-8.562", "c"=18]
 "ConfigLMM/ConfigLMM" ["l"="9.593,-12.142"]
 "thushan/proxmox-vm-to-ct" ["l"="9.682,-12.171"]
 "rgl/proxmox-ve-cluster-vagrant" ["l"="9.855,-11.843"]
 "Telmate/terraform-ubuntu-proxmox-iso" ["l"="9.909,-11.97"]
 "danitso/terraform-provider-proxmox" ["l"="9.908,-11.945"]
-"akvorado/akvorado" ["l"="6.245,-4.166"]
-"dmacvicar/terraform-provider-libvirt" ["l"="8.519,-12.473"]
-"techno-tim/k3s-ansible" ["l"="12.074,-8.979"]
-"harvester/harvester" ["l"="51.723,0.91"]
+"akvorado/akvorado" ["l"="6.245,-4.166", "c"=725]
+"harvester/harvester" ["l"="51.723,0.91", "c"=1033]
 "fabriziosalmi/lws" ["l"="9.589,-12.17"]
 "sbarbett/proxmox-ansible" ["l"="9.528,-12.114"]
 }

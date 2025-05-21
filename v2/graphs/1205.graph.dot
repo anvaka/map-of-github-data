@@ -1,4 +1,5 @@
 digraph G {
+"openedx/edx-platform" -> "frappe/lms" ["e"=1]
 "frappe/books" -> "frappe/hrms"
 "frappe/books" -> "frappe/insights"
 "frappe/books" -> "akaunting/akaunting" ["e"=1]
@@ -14,6 +15,9 @@ digraph G {
 "frappe/books" -> "frappe/gameplan"
 "frappe/books" -> "frappe/datatable"
 "frappe/books" -> "frappe/press"
+"frappe/erpnext" -> "frappe/frappe" ["e"=1]
+"frappe/erpnext" -> "frappe/frappe_docker" ["e"=1]
+"frappe/erpnext" -> "frappe/bench" ["e"=1]
 "frappe/frappe" -> "frappe/erpnext" ["e"=1]
 "frappe/frappe" -> "frappe/bench"
 "frappe/frappe" -> "frappe/frappe_docker"
@@ -44,7 +48,15 @@ digraph G {
 "frappe/datatable" -> "frappe/biometric-attendance-sync-tool"
 "frappe/datatable" -> "frappe/books"
 "frappe/datatable" -> "erpnext/foundation"
+"fiduswriter/simple-datatables" -> "frappe/datatable" ["e"=1]
+"ever-co/ever-gauzy" -> "frappe/books" ["e"=1]
+"ever-co/ever-gauzy" -> "frappe/hrms" ["e"=1]
+"instructure/canvas-lms" -> "frappe/lms" ["e"=1]
+"shanmugharajk/react-point-of-sale" -> "bailabs/tailpos" ["e"=1]
+"spacecloud-io/space-cloud" -> "frappe/frappe" ["e"=1]
+"codelitdev/courselit" -> "frappe/lms" ["e"=1]
 "sihaysistema/ERPNext-Guide" -> "Bloomstack/repairs"
+"givanz/Vvveb" -> "frappe/builder" ["e"=1]
 "bailabs/tailpos" -> "ucraft-com/POS-Awesome"
 "bailabs/tailpos" -> "frappe/biometric-attendance-sync-tool"
 "bailabs/tailpos" -> "tngoman/Store-POS" ["e"=1]
@@ -121,6 +133,11 @@ digraph G {
 "libracore/WooCommerceConnector" -> "alyf-de/erpnext_pdf-on-submit"
 "jvfiel/ERPNext-OCR" -> "Monogramm/erpnext_ocr"
 "dokos-io/mautic" -> "Monogramm/erpnext_template"
+"LalanaChami/Pharmacy-Mangment-System" -> "bailabs/tailpos" ["e"=1]
+"LalanaChami/Pharmacy-Mangment-System" -> "ucraft-com/POS-Awesome" ["e"=1]
+"sapplica/sentrifugo" -> "frappe/biometric-attendance-sync-tool" ["e"=1]
+"Blair2004/NexoPOS" -> "ucraft-com/POS-Awesome" ["e"=1]
+"espocrm/espocrm" -> "frappe/crm" ["e"=1]
 "frappe/bench" -> "frappe/frappe_docker"
 "frappe/bench" -> "frappe/frappe"
 "frappe/bench" -> "frappe/press"
@@ -136,6 +153,8 @@ digraph G {
 "frappe/bench" -> "earthians/marley"
 "frappe/bench" -> "frappe/erpnext" ["e"=1]
 "frappe/bench" -> "frappe/builder"
+"tngoman/Store-POS" -> "bailabs/tailpos" ["e"=1]
+"tngoman/Store-POS" -> "ucraft-com/POS-Awesome" ["e"=1]
 "frappe/press" -> "frappe/agent"
 "frappe/press" -> "frappe/insights"
 "frappe/press" -> "frappe/gameplan"
@@ -191,12 +210,14 @@ digraph G {
 "ucraft-com/POS-Awesome" -> "frappe/ecommerce_integrations"
 "ucraft-com/POS-Awesome" -> "frappe/press"
 "ucraft-com/POS-Awesome" -> "frappe/frappe-ui"
+"pupilfirst/pupilfirst" -> "frappe/lms" ["e"=1]
 "frappe/frappe-client" -> "netchampfaris/frappe-ui-starter"
 "frappe/frappe-client" -> "frappe/intellisense"
 "frappe/frappe-client" -> "The-Commit-Company/frappe-js-sdk"
 "frappe/frappe-client" -> "erpnext/foundation"
 "frappe/frappe-client" -> "frappe/cordova-wrapper"
 "frappe/frappe-client" -> "frappe/payments"
+"ulearnpro/ulearn" -> "frappe/lms" ["e"=1]
 "phamos-eu/it_management" -> "alyf-de/erpnext_pdf-on-submit"
 "yrestom/erpnext_telegram" -> "frappe/twilio-integration"
 "yrestom/erpnext_telegram" -> "hashirluv/bluetheme"
@@ -249,6 +270,7 @@ digraph G {
 "Monogramm/erpnext_autoinstall" -> "Monogramm/recod_frappe_devtools"
 "Monogramm/erpnext_autoinstall" -> "Monogramm/recod_erpnext_design"
 "Monogramm/recod_frappe_devtools" -> "Monogramm/erpnext_autoinstall"
+"mCaptcha/mCaptcha" -> "frappe/helpdesk" ["e"=1]
 "frappe/lms" -> "frappe/insights"
 "frappe/lms" -> "frappe/frappe-ui"
 "frappe/lms" -> "frappe/hrms"
@@ -264,6 +286,7 @@ digraph G {
 "frappe/lms" -> "earthians/marley"
 "frappe/lms" -> "frappe/bench"
 "frappe/lms" -> "codelitdev/courselit" ["e"=1]
+"leemonade/leemons" -> "frappe/lms" ["e"=1]
 "frappe/erpnext-shipping" -> "alyf-de/erpnext_pdf-on-submit"
 "frappe/erpnext-shipping" -> "frappe/hospitality"
 "frappe/erpnext-shipping" -> "frappe/ecommerce_integrations"
@@ -282,6 +305,7 @@ digraph G {
 "earthians/marley" -> "NagariaHussain/doppio"
 "earthians/marley" -> "frappe/drive"
 "earthians/marley" -> "frappe/press"
+"micwallace/wallacepos" -> "bailabs/tailpos" ["e"=1]
 "frappe/intellisense" -> "frappe/event_streaming"
 "bhavesh95863/whitelabel" -> "ahmadpak/erpnext_quota"
 "bhavesh95863/whitelabel" -> "alyf-de/erpnext_pdf-on-submit"
@@ -306,6 +330,7 @@ digraph G {
 "alphabit-technology/erpnext-restaurant" -> "ahmadpak/erpnext_quota"
 "alphabit-technology/erpnext-restaurant" -> "bhavesh95863/whitelabel"
 "aakvatech/transport" -> "f-9t9it/optic_store"
+"Mobirise/Mobirise" -> "frappe/builder" ["e"=1]
 "frappe/chat" -> "frappe/non_profit"
 "frappe/chat" -> "netchampfaris/frappe-ui-starter"
 "NagariaHussain/doppio" -> "The-Commit-Company/frappe-react-sdk"
@@ -338,6 +363,7 @@ digraph G {
 "alyf-de/erpnext_druckformate" -> "alyf-de/erpnext_datev"
 "alyf-de/erpnext_druckformate" -> "alyf-de/eu_einvoice"
 "CoreBiz-Engineering/erpnext_german_accounting" -> "alyf-de/erpnext_datev"
+"bigcapitalhq/bigcapital" -> "frappe/books" ["e"=1]
 "gavindsouza/awesome-frappe" -> "NagariaHussain/doppio"
 "gavindsouza/awesome-frappe" -> "shridarpatil/frappe_whatsapp"
 "gavindsouza/awesome-frappe" -> "frappe/print_designer"
@@ -456,6 +482,7 @@ digraph G {
 "frappe/payments" -> "frappe/lending"
 "frappe/waba_integration" -> "shridarpatil/frappe_whatsapp"
 "frappe/waba_integration" -> "efeone/frappe_meta_integration"
+"learnhouse/learnhouse" -> "frappe/lms" ["e"=1]
 "netchampfaris/frappe-ui-starter" -> "NagariaHussain/doppio"
 "netchampfaris/frappe-ui-starter" -> "frappe/frappe-ui"
 "NagariaHussain/digistore" -> "ElasticRun/barista"
@@ -509,6 +536,7 @@ digraph G {
 "frappe/hrms" -> "earthians/marley"
 "frappe/hrms" -> "frappe/frappe"
 "frappe/hrms" -> "frappe/education"
+"prevwong/reka.js" -> "frappe/builder" ["e"=1]
 "The-Commit-Company/frappe-types" -> "The-Commit-Company/frappe-react-sdk"
 "The-Commit-Company/frappe-types" -> "The-Commit-Company/frappe-js-sdk"
 "frappe/webshop" -> "frappe/ecommerce_integrations"
@@ -563,6 +591,7 @@ digraph G {
 "The-Commit-Company/frappe-react-sdk" -> "The-Commit-Company/commit"
 "The-Commit-Company/frappe-react-sdk" -> "The-Commit-Company/raven"
 "The-Commit-Company/frappe-react-sdk" -> "gavindsouza/awesome-frappe"
+"adilmohak/django-lms" -> "frappe/lms" ["e"=1]
 "frappe/insights" -> "frappe/gameplan"
 "frappe/insights" -> "frappe/print_designer"
 "frappe/insights" -> "frappe/press"
@@ -596,6 +625,12 @@ digraph G {
 "frappe/cordova-wrapper" -> "frappe/frappe_theme"
 "frappe/cordova-wrapper" -> "frappe/schools"
 "ESS-LLP/erpnext-healthcare" -> "ESS-LLP/smarte"
+"frappe/gantt" -> "frappe/datatable" ["e"=1]
+"frappe/gantt" -> "frappe/books" ["e"=1]
+"frappe/gantt" -> "frappe/frappe" ["e"=1]
+"vanjs-org/van" -> "18alantom/strawberry" ["e"=1]
+"al1abb/invoify" -> "frappe/helpdesk" ["e"=1]
+"horilla-opensource/horilla" -> "frappe/hrms" ["e"=1]
 "18alantom/strawberry" -> "frappe/pesa"
 "18alantom/strawberry" -> "frappe/insights"
 "18alantom/strawberry" -> "frappe/frappe-ui"
@@ -611,6 +646,11 @@ digraph G {
 "18alantom/strawberry" -> "Tram-One/tram-lite"
 "18alantom/strawberry" -> "frappe/press"
 "18alantom/strawberry" -> "frappe/intellisense"
+"aptabase/aptabase" -> "frappe/crm" ["e"=1]
+"cheeselemon/ophiuchi-desktop" -> "frappe/crm" ["e"=1]
+"cheeselemon/ophiuchi-desktop" -> "frappe/helpdesk" ["e"=1]
+"swiftwave-org/swiftwave" -> "frappe/gameplan" ["e"=1]
+"swiftwave-org/swiftwave" -> "rtCamp/Frappe-Manager" ["e"=1]
 "frappe/crm" -> "frappe/insights"
 "frappe/crm" -> "frappe/gameplan"
 "frappe/crm" -> "frappe/builder"
@@ -689,6 +729,14 @@ digraph G {
 "The-Commit-Company/commit" -> "The-Commit-Company/frappe-types"
 "The-Commit-Company/commit" -> "The-Commit-Company/frappe-react-sdk"
 "ankush/rq_orchestrator" -> "frappe/iff"
+"bluewave-labs/Checkmate" -> "frappe/helpdesk" ["e"=1]
+"solidtime-io/solidtime" -> "frappe/helpdesk" ["e"=1]
+"classroomio/classroomio" -> "frappe/lms" ["e"=1]
+"InvoiceShelf/InvoiceShelf" -> "frappe/helpdesk" ["e"=1]
+"InvoiceShelf/InvoiceShelf" -> "frappe/crm" ["e"=1]
+"Gnucash/gnucash" -> "frappe/books" ["e"=1]
+"orangehrm/orangehrm" -> "frappe/hrms" ["e"=1]
+"usewaypoint/email-builder-js" -> "frappe/builder" ["e"=1]
 "anandbaburajan/cq2" -> "frappe/pesa"
 "anandbaburajan/cq2" -> "frappe/caffeine"
 "anandbaburajan/cq2" -> "frappe/agent"
@@ -700,6 +748,9 @@ digraph G {
 "frappe/mail" -> "frappe/lending"
 "frappe/mail" -> "The-Commit-Company/commit"
 "frappe/mail_agent" -> "frappe/mail"
+"liam-hq/liam" -> "frappe/helpdesk" ["e"=1]
+"hotheadhacker/awesome-selfhost-docker" -> "frappe/helpdesk" ["e"=1]
+"SanshruthR/CCTV_YOLO" -> "frappe/helpdesk" ["e"=1]
 "erpnext/foundation" -> "frappe/hub"
 "alyf-de/eu_einvoice" -> "alyf-de/erpnext_germany"
 "alyf-de/eu_einvoice" -> "alyf-de/erpnext_druckformate"
@@ -708,6 +759,7 @@ digraph G {
 "aerele/pwa-builder" -> "aerele/chatbot"
 "aerele/chatbot" -> "aerele/pwa-builder"
 "resilient-tech/razorpayx-integration" -> "resilient-tech/payment_integration_utils"
+"akaunting/akaunting" -> "frappe/books" ["e"=1]
 "frappe/frappe_docker" -> "frappe/bench"
 "frappe/frappe_docker" -> "gavindsouza/awesome-frappe"
 "frappe/frappe_docker" -> "frappe/frappe"
@@ -723,20 +775,26 @@ digraph G {
 "frappe/frappe_docker" -> "shridarpatil/frappe_whatsapp"
 "frappe/frappe_docker" -> "ucraft-com/POS-Awesome"
 "frappe/frappe_docker" -> "frappe/gameplan"
+"usekaneo/kaneo" -> "frappe/helpdesk" ["e"=1]
+"riktar/jkanban" -> "frappe/datatable" ["e"=1]
+"aaPanel/BillionMail" -> "frappe/helpdesk" ["e"=1]
+"usertour/usertour" -> "frappe/crm" ["e"=1]
+"belastrittmatter/Framely" -> "frappe/crm" ["e"=1]
 "frappe/caffeine" -> "resilient-tech/razorpayx-integration"
 "resilient-tech/payment_integration_utils" -> "resilient-tech/razorpayx-integration"
+"openedx/edx-platform" ["l"="46.899,18.277", "c"=52]
+"frappe/lms" ["l"="15.17,-11.495"]
 "frappe/books" ["l"="15.141,-11.456"]
 "frappe/hrms" ["l"="15.176,-11.519"]
 "frappe/insights" ["l"="15.216,-11.498"]
-"akaunting/akaunting" ["l"="-15.5,27.969"]
+"akaunting/akaunting" ["l"="-15.5,27.969", "c"=29]
 "frappe/bench" ["l"="15.2,-11.515"]
 "frappe/frappe" ["l"="15.145,-11.538"]
 "frappe/frappe_docker" ["l"="15.21,-11.537"]
-"bigcapitalhq/bigcapital" ["l"="16.21,-10.255"]
-"frappe/lms" ["l"="15.17,-11.495"]
+"bigcapitalhq/bigcapital" ["l"="16.21,-10.255", "c"=198]
 "frappe/frappejs" ["l"="15.245,-11.406"]
 "frappe/drive" ["l"="15.2,-11.47"]
-"frappe/erpnext" ["l"="15.713,-10.504"]
+"frappe/erpnext" ["l"="15.713,-10.504", "c"=198]
 "frappe/helpdesk" ["l"="15.148,-11.487"]
 "frappe/gameplan" ["l"="15.207,-11.46"]
 "frappe/datatable" ["l"="15.189,-11.442"]
@@ -745,22 +803,28 @@ digraph G {
 "frappe/frappe-ui" ["l"="15.214,-11.484"]
 "frappe/builder" ["l"="15.196,-11.487"]
 "The-Commit-Company/raven" ["l"="15.231,-11.466"]
-"Budibase/budibase" ["l"="15.774,-10.231"]
+"Budibase/budibase" ["l"="15.774,-10.231", "c"=198]
 "frappe/crm" ["l"="15.176,-11.473"]
 "frappe/print_designer" ["l"="15.228,-11.477"]
 "frappe/wiki" ["l"="15.227,-11.49"]
-"frappe/gantt" ["l"="0.266,-27.913"]
+"frappe/gantt" ["l"="0.266,-27.913", "c"=12]
 "frappe/biometric-attendance-sync-tool" ["l"="15.278,-11.49"]
 "erpnext/foundation" ["l"="15.228,-11.367"]
+"fiduswriter/simple-datatables" ["l"="22.578,-29.441", "c"=36]
+"ever-co/ever-gauzy" ["l"="-12.463,-27.811", "c"=1264]
+"instructure/canvas-lms" ["l"="46.141,17.965", "c"=1976]
+"shanmugharajk/react-point-of-sale" ["l"="-12.554,-28.416", "c"=980]
+"bailabs/tailpos" ["l"="15.318,-11.516"]
+"spacecloud-io/space-cloud" ["l"="16.064,-10.568", "c"=198]
+"codelitdev/courselit" ["l"="46.114,18.07", "c"=1976]
 "sihaysistema/ERPNext-Guide" ["l"="15.445,-11.52"]
 "Bloomstack/repairs" ["l"="15.399,-11.508"]
-"bailabs/tailpos" ["l"="15.318,-11.516"]
+"givanz/Vvveb" ["l"="15.838,-9.567", "c"=198]
 "ucraft-com/POS-Awesome" ["l"="15.275,-11.505"]
-"tngoman/Store-POS" ["l"="-12.547,-28.472"]
+"tngoman/Store-POS" ["l"="-12.547,-28.472", "c"=980]
 "yrestom/erpnext_telegram" ["l"="15.319,-11.488"]
 "Monogramm/erpnext_ocr" ["l"="15.343,-11.476"]
 "ahmadpak/erpnext_quota" ["l"="15.335,-11.502"]
-"shanmugharajk/react-point-of-sale" ["l"="-12.554,-28.416"]
 "bailabs/tailpos-sync" ["l"="15.359,-11.545"]
 "bhavesh95863/whitelabel" ["l"="15.299,-11.51"]
 "alphabit-technology/erpnext-restaurant" ["l"="15.309,-11.499"]
@@ -795,7 +859,7 @@ digraph G {
 "frappe/twilio-integration" ["l"="15.321,-11.466"]
 "vinhnguyent090/bdtheme" ["l"="15.377,-11.516"]
 "jcbdigitalhub/property" ["l"="15.394,-11.52"]
-"shridarpatil/frappe_tinymce" ["l"="23.643,-29.195"]
+"shridarpatil/frappe_tinymce" ["l"="23.643,-29.195", "c"=36]
 "Monogramm/frappe_pwa" ["l"="15.305,-11.583"]
 "aerele/pwa-builder" ["l"="15.284,-11.56"]
 "emadshaaban92/docker-compose-erpnext" ["l"="15.443,-11.545"]
@@ -806,6 +870,10 @@ digraph G {
 "jvfiel/ERPNext-OCR" ["l"="15.372,-11.459"]
 "dokos-io/mautic" ["l"="15.511,-11.423"]
 "Monogramm/erpnext_template" ["l"="15.484,-11.43"]
+"LalanaChami/Pharmacy-Mangment-System" ["l"="-12.447,-28.507", "c"=980]
+"sapplica/sentrifugo" ["l"="-12.534,-28.749", "c"=980]
+"Blair2004/NexoPOS" ["l"="-12.554,-28.518", "c"=980]
+"espocrm/espocrm" ["l"="-12.443,-27.853", "c"=1264]
 "frappe/education" ["l"="15.22,-11.459"]
 "frappe/changemakers" ["l"="15.214,-11.427"]
 "frappe/studio" ["l"="15.248,-11.445"]
@@ -813,7 +881,9 @@ digraph G {
 "frappe/webshop" ["l"="15.241,-11.456"]
 "frappe/erpnext-shipping" ["l"="15.301,-11.467"]
 "frappe/frappe_docs" ["l"="15.328,-11.434"]
+"pupilfirst/pupilfirst" ["l"="46.049,17.971", "c"=1976]
 "The-Commit-Company/frappe-js-sdk" ["l"="15.274,-11.419"]
+"ulearnpro/ulearn" ["l"="46.076,17.967", "c"=1976]
 "phamos-eu/it_management" ["l"="15.366,-11.57"]
 "leam-tech/frappe_telegram" ["l"="15.352,-11.424"]
 "alyf-de/erpnext_simple-pos" ["l"="15.362,-11.52"]
@@ -826,11 +896,14 @@ digraph G {
 "NagariaHussain/tldraw_whiteboard" ["l"="15.352,-11.602"]
 "ParaLogicTech/textile" ["l"="15.339,-11.574"]
 "Monogramm/recod_frappe_devtools" ["l"="15.45,-11.438"]
-"codelitdev/courselit" ["l"="46.114,18.07"]
+"mCaptcha/mCaptcha" ["l"="16.517,-10.161", "c"=198]
+"leemonade/leemons" ["l"="46.115,18.029", "c"=1976]
 "frappe/hospitality" ["l"="15.314,-11.448"]
+"micwallace/wallacepos" ["l"="-12.606,-27.889", "c"=1264]
 "frappe/event_streaming" ["l"="15.24,-11.392"]
 "aakvatech/transport" ["l"="15.384,-11.478"]
 "f-9t9it/optic_store" ["l"="15.423,-11.469"]
+"Mobirise/Mobirise" ["l"="15.801,-9.555", "c"=198]
 "frappe/chat" ["l"="15.321,-11.409"]
 "frappe/non_profit" ["l"="15.284,-11.434"]
 "The-Commit-Company/frappe-react-sdk" ["l"="15.264,-11.445"]
@@ -844,8 +917,8 @@ digraph G {
 "alyf-de/eu_einvoice" ["l"="15.397,-11.638"]
 "CoreBiz-Engineering/erpnext_german_accounting" ["l"="15.411,-11.606"]
 "flexcomng/erpnext_quick_install" ["l"="15.271,-11.522"]
-"bluewave-labs/Checkmate" ["l"="16.308,-10.225"]
-"solidtime-io/solidtime" ["l"="16.278,-10.246"]
+"bluewave-labs/Checkmate" ["l"="16.308,-10.225", "c"=198]
+"solidtime-io/solidtime" ["l"="16.278,-10.246", "c"=198]
 "resilient-tech/india-compliance" ["l"="15.227,-11.431"]
 "resilient-tech/razorpayx-integration" ["l"="15.199,-11.39"]
 "frappe/caffeine" ["l"="15.226,-11.399"]
@@ -853,10 +926,13 @@ digraph G {
 "frappe/razorpay_integration" ["l"="15.397,-11.359"]
 "frappe/waba_integration" ["l"="15.248,-11.535"]
 "efeone/frappe_meta_integration" ["l"="15.241,-11.601"]
+"learnhouse/learnhouse" ["l"="46.142,18.044", "c"=1976]
 "NagariaHussain/digistore" ["l"="15.22,-11.381"]
 "ElasticRun/barista" ["l"="15.264,-11.403"]
 "ankush/rq_orchestrator" ["l"="15.168,-11.362"]
 "frappe/hub" ["l"="15.211,-11.341"]
+"prevwong/reka.js" ["l"="15.815,-9.64", "c"=198]
+"adilmohak/django-lms" ["l"="47.724,19.995", "c"=599]
 "barredterra/frappe_server_performance" ["l"="15.141,-11.338"]
 "shamilnk/shamilnk" ["l"="15.24,-11.631"]
 "kid1194/frappe-better-attach-control" ["l"="15.236,-11.278"]
@@ -869,18 +945,36 @@ digraph G {
 "frappe/erpnext_shopify" ["l"="15.359,-11.365"]
 "frappe/frappe_theme" ["l"="15.387,-11.388"]
 "ESS-LLP/erpnext-healthcare" ["l"="15.282,-11.313"]
+"vanjs-org/van" ["l"="-4.224,-29.937", "c"=4]
 "18alantom/strawberry" ["l"="15.193,-11.415"]
-"vanjs-org/van" ["l"="-4.224,-29.937"]
+"al1abb/invoify" ["l"="16.372,-10.162", "c"=198]
+"horilla-opensource/horilla" ["l"="-12.584,-28.757", "c"=980]
 "anandbaburajan/cq2" ["l"="15.187,-11.362"]
 "Tram-One/tram-lite" ["l"="15.142,-11.378"]
+"aptabase/aptabase" ["l"="16.301,-10.129", "c"=198]
+"cheeselemon/ophiuchi-desktop" ["l"="16.383,-10.274", "c"=198]
+"swiftwave-org/swiftwave" ["l"="46.733,19.671", "c"=20]
 "Henry-Do-Su/frappe_deployer" ["l"="15.265,-11.574"]
 "ankush/frappe_codespace" ["l"="15.263,-11.552"]
 "NagariaHussain/the-missing-frappe-manual" ["l"="15.277,-11.54"]
 "The-Commit-Company/frappe_er_generator" ["l"="15.297,-11.381"]
 "frappe/iff" ["l"="15.156,-11.333"]
+"classroomio/classroomio" ["l"="16.266,-9.995", "c"=198]
+"InvoiceShelf/InvoiceShelf" ["l"="16.349,-10.312", "c"=198]
+"Gnucash/gnucash" ["l"="11.101,-12.274", "c"=1220]
+"orangehrm/orangehrm" ["l"="-12.557,-28.739", "c"=980]
+"usewaypoint/email-builder-js" ["l"="15.433,-8.515", "c"=555]
 "saguas/frappe_base_vat" ["l"="15.271,-11.303"]
 "frappe/mail_agent" ["l"="15.255,-11.39"]
 "TridotsTech/Go1-Webshop" ["l"="15.268,-11.371"]
+"liam-hq/liam" ["l"="16.273,-10.165", "c"=198]
+"hotheadhacker/awesome-selfhost-docker" ["l"="16.454,-10.132", "c"=198]
+"SanshruthR/CCTV_YOLO" ["l"="16.548,-10.121", "c"=198]
 "aerele/chatbot" ["l"="15.284,-11.591"]
 "resilient-tech/payment_integration_utils" ["l"="15.176,-11.378"]
+"usekaneo/kaneo" ["l"="16.47,-10.248", "c"=198]
+"riktar/jkanban" ["l"="12.067,-8.166", "c"=18]
+"aaPanel/BillionMail" ["l"="16.536,-10.093", "c"=198]
+"usertour/usertour" ["l"="16.419,-10.238", "c"=198]
+"belastrittmatter/Framely" ["l"="16.491,-10.208", "c"=198]
 }

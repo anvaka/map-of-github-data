@@ -1,4 +1,5 @@
 digraph G {
+"MihaelIsaev/UIKitPlus" -> "SwifQL/SwifQL" ["e"=1]
 "vapor-community/HTMLKit" -> "MatsMoll/BootstrapKit"
 "vapor-community/HTMLKit" -> "vapor-community/stripe"
 "vapor-community/HTMLKit" -> "pointfreeco/swift-html" ["e"=1]
@@ -22,6 +23,7 @@ digraph G {
 "givip/Telegrammer" -> "rapierorg/telegram-bot-swift"
 "givip/Telegrammer" -> "FabrizioBrancati/SwiftyBot"
 "givip/Telegrammer" -> "nerzh/swift-telegram-sdk"
+"auth0/auth0.js" -> "auth0/Auth0.swift" ["e"=1]
 "vapor/postgres-nio" -> "vapor/postgres-kit"
 "vapor/postgres-nio" -> "vapor/sql-kit"
 "vapor/postgres-nio" -> "vapor/fluent-kit"
@@ -49,6 +51,7 @@ digraph G {
 "vaporberlin/vaporschool" -> "vapor/leaf"
 "vaporberlin/vaporschool" -> "Jinxiansen/ServerSideSwift" ["e"=1]
 "vaporberlin/vaporschool" -> "vapor/api-template"
+"pointfreeco/swift-html" -> "vapor-community/HTMLKit" ["e"=1]
 "airsidemobile/JOSESwift" -> "Kitura/Swift-JWT"
 "airsidemobile/JOSESwift" -> "janniks/prepare-commit-msg"
 "airsidemobile/JOSESwift" -> "vapor/jwt-kit"
@@ -68,7 +71,10 @@ digraph G {
 "vapor-community/awesome-vapor" -> "twostraws/SwiftGD"
 "vapor-community/awesome-vapor" -> "BrettRToomey/Jobs"
 "vapor-community/awesome-vapor" -> "vapor/leaf"
+"swift-server-community/APNSwift" -> "vapor/apns" ["e"=1]
+"swift-server-community/APNSwift" -> "vapor/jwt-kit" ["e"=1]
 "yourkarma/JWT" -> "kylef/JSONWebToken.swift"
+"apple/swift-metrics" -> "swift-server/swift-prometheus" ["e"=1]
 "zhuowei/marina" -> "dokun1/Vaux"
 "dokun1/Vaux" -> "zhuowei/marina"
 "dokun1/Vaux" -> "robb/Swim" ["e"=1]
@@ -76,6 +82,7 @@ digraph G {
 "dokun1/Vaux" -> "orlandos-nl/IkigaJSON" ["e"=1]
 "dokun1/Vaux" -> "JohnSundell/Plot" ["e"=1]
 "dokun1/Vaux" -> "guillermomuntaner/Burritos" ["e"=1]
+"apple/swift-nio-transport-services" -> "vapor/websocket-kit" ["e"=1]
 "MihaelIsaev/AwesomeWS" -> "MihaelIsaev/SwifCron"
 "vapor/fluent-kit" -> "vapor/fluent-postgres-driver"
 "vapor/fluent-kit" -> "vapor/sql-kit"
@@ -98,9 +105,15 @@ digraph G {
 "vapor/mysql-nio" -> "vapor/sql-kit"
 "vapor/mysql-nio" -> "vapor/multipart-kit"
 "vapor/mysql-nio" -> "vapor/queues"
+"CodyFlame/CodyFire" -> "MihaelIsaev/AwesomeWS" ["e"=1]
+"CodyFlame/CodyFire" -> "SwifQL/SwifQL" ["e"=1]
+"swift-server/sswg" -> "vapor/queues" ["e"=1]
 "codewinsdotcom/PostgresClientKit" -> "vapor/postgres-nio"
 "codewinsdotcom/PostgresClientKit" -> "vapor/postgres-kit"
 "codewinsdotcom/PostgresClientKit" -> "PerfectlySoft/Perfect-PostgreSQL"
+"mongodb/mongo-swift-driver" -> "orlandos-nl/MongoKitten" ["e"=1]
+"mongodb/mongo-swift-driver" -> "orlandos-nl/BSON" ["e"=1]
+"mongodb/mongo-swift-driver" -> "swift-server/swift-prometheus" ["e"=1]
 "vapor-community/mailgun" -> "vapor-community/sendgrid"
 "vapor-community/mailgun" -> "vapor-community/stripe"
 "vapor-community/mailgun" -> "vapor-community/styleguide"
@@ -120,6 +133,10 @@ digraph G {
 "SwifQL/SwifQL" -> "twof/VaporCRUDRouter"
 "SwifQL/SwifQL" -> "nerzh/swift-telegram-sdk"
 "miroslavkovac/Lingo" -> "vapor-community/Lingo-Vapor"
+"mattpolzin/OpenAPIKit" -> "mattpolzin/VaporOpenAPI" ["e"=1]
+"mattpolzin/OpenAPIKit" -> "dankinsoid/VaporToOpenAPI" ["e"=1]
+"mattpolzin/OpenAPIKit" -> "vapor-community/stripe-kit" ["e"=1]
+"mattpolzin/OpenAPIKit" -> "swift-server/RediStack" ["e"=1]
 "swift-server/swift-prometheus" -> "swift-otel/swift-otel" ["e"=1]
 "swift-server/swift-prometheus" -> "apple/swift-metrics-extras" ["e"=1]
 "swift-server/swift-prometheus" -> "swift-server/RediStack"
@@ -164,6 +181,8 @@ digraph G {
 "vapor-community/stripe-kit" -> "swift-server/swift-prometheus"
 "vapor-community/stripe-kit" -> "vapor/apns"
 "vapor-community/stripe-kit" -> "sersoft-gmbh/swift-smtp"
+"orlandos-nl/IkigaJSON" -> "vapor-community/stripe-kit" ["e"=1]
+"orlandos-nl/IkigaJSON" -> "SwifQL/SwifQL" ["e"=1]
 "MihaelIsaev/FCM" -> "MihaelIsaev/VaporCron"
 "MihaelIsaev/FCM" -> "SwifQL/SwifQL"
 "MihaelIsaev/FCM" -> "MihaelIsaev/NIOCronScheduler"
@@ -205,6 +224,10 @@ digraph G {
 "vapor/apns" -> "vapor/queues"
 "vapor/apns" -> "vapor/async-kit"
 "vapor/apns" -> "vapor/fluent-postgres-driver"
+"swift-server/swift-backtrace" -> "SwifQL/SwifQL" ["e"=1]
+"swift-server/swift-backtrace" -> "vapor/apns" ["e"=1]
+"swift-server/swift-backtrace" -> "vapor/queues" ["e"=1]
+"swift-server/swift-backtrace" -> "brokenhandsio/VaporSecurityHeaders" ["e"=1]
 "vapor/postgres-kit" -> "vapor/postgres-nio"
 "vapor/postgres-kit" -> "vapor/fluent-postgres-driver"
 "vapor/postgres-kit" -> "vapor/sql-kit"
@@ -276,11 +299,21 @@ digraph G {
 "skelpo/UserManager" -> "twof/VaporNation"
 "skelpo/UserManager" -> "ml-archive/admin-panel-provider"
 "vapor/url-encoded-form" -> "vapor/auth"
+"tib/practical-server-side-swift" -> "madsodgaard/vapor-auth-template" ["e"=1]
+"tib/practical-server-side-swift" -> "brokenhandsio/SteamPress" ["e"=1]
 "auth0/SimpleKeychain" -> "auth0/JWTDecode.swift"
 "auth0/SimpleKeychain" -> "johnpatrickmorgan/NavigationBackport" ["e"=1]
 "auth0/SimpleKeychain" -> "auth0/Auth0.swift"
 "auth0/SimpleKeychain" -> "danielsaidi/ScrollKit" ["e"=1]
 "auth0/SimpleKeychain" -> "GetStream/swiftui-spring-animations" ["e"=1]
+"swiftsocket/SwiftSocket" -> "vapor-community/sockets" ["e"=1]
+"FeatherCMS/feather" -> "madsodgaard/vapor-auth-template" ["e"=1]
+"FeatherCMS/feather" -> "brokenhandsio/SteamPress" ["e"=1]
+"FeatherCMS/feather" -> "vapor-community/HTMLKit" ["e"=1]
+"FeatherCMS/feather" -> "vapor-community/Imperial" ["e"=1]
+"FeatherCMS/feather" -> "SwifQL/SwifQL" ["e"=1]
+"swift-actions/setup-swift" -> "swift-server/swift-prometheus" ["e"=1]
+"auth0/lock" -> "auth0/Lock.swift" ["e"=1]
 "helje5/SwiftSockets" -> "helje5/SwiftyHTTP"
 "madsodgaard/vapor-auth-template" -> "tib/practical-server-side-swift" ["e"=1]
 "madsodgaard/vapor-auth-template" -> "SwifQL/SwifQL"
@@ -297,6 +330,7 @@ digraph G {
 "madsodgaard/vapor-auth-template" -> "mcritz/VaporUploads"
 "madsodgaard/vapor-auth-template" -> "orlandos-nl/IkigaJSON" ["e"=1]
 "madsodgaard/vapor-auth-template" -> "MihaelIsaev/VaporCron"
+"swift-server/swift-service-lifecycle" -> "swift-server/RediStack" ["e"=1]
 "1024jp/GzipSwift" -> "mw99/DataCompression"
 "1024jp/GzipSwift" -> "nicklockwood/GZIP" ["e"=1]
 "1024jp/GzipSwift" -> "tsolomko/SWCompression" ["e"=1]
@@ -310,6 +344,8 @@ digraph G {
 "auth0/JWTDecode.swift" -> "openid/AppAuth-iOS" ["e"=1]
 "kodecocodes/vpr-materials" -> "dankinsoid/VaporToOpenAPI"
 "kodecocodes/vpr-materials" -> "Mikroservices/Smtp"
+"izqui/Taylor" -> "Danappelxx/SwiftMongoDB" ["e"=1]
+"izqui/Taylor" -> "helje5/SwiftSockets" ["e"=1]
 "open-telemetry/opentelemetry-swift" -> "apple/swift-distributed-tracing" ["e"=1]
 "open-telemetry/opentelemetry-swift" -> "swift-otel/swift-otel" ["e"=1]
 "open-telemetry/opentelemetry-swift" -> "DataDog/dd-sdk-ios"
@@ -332,13 +368,19 @@ digraph G {
 "vapor/jwt-kit" -> "swift-server/RediStack"
 "vapor/jwt-kit" -> "vapor/postgres-kit"
 "DataDog/dd-sdk-reactnative" -> "DataDog/dd-sdk-unity"
+"swift-server/guides" -> "vapor/queues" ["e"=1]
+"swift-server/guides" -> "brokenhandsio/SteamPress" ["e"=1]
 "haolizi/electricity_flutter" -> "haolizi/VideoRecord"
 "haolizi/electricity_flutter" -> "CrazyBalls/ggconfuse"
+"swift-extras/swift-extras-json" -> "swift-server/RediStack" ["e"=1]
 "DataDog/dd-sdk-ios" -> "open-telemetry/opentelemetry-swift"
 "DataDog/dd-sdk-ios" -> "DataDog/dd-sdk-android"
 "vapor-community/wallet" -> "fpseverino/swift-wallet"
 "Joannis/VaporSMTPKit" -> "Joannis/SMTPKitten"
 "Joannis/VaporSMTPKit" -> "Mikroservices/Smtp"
+"alchemy-swift/alchemy" -> "swift-server/RediStack" ["e"=1]
+"SwiftPackageIndex/SwiftPackageIndex-Server" -> "vapor/fluent-kit" ["e"=1]
+"SwiftPackageIndex/SwiftPackageIndex-Server" -> "vapor/leaf" ["e"=1]
 "simonedelmann/crud-kit" -> "atacan/Dime-a-Dozen"
 "DataDog/dd-sdk-android" -> "xgouchet/Elmyr"
 "DataDog/dd-sdk-android" -> "DataDog/dd-sdk-reactnative"
@@ -349,13 +391,16 @@ digraph G {
 "DataDog/dd-sdk-swift-testing" -> "DataDog/dd-sdk-unity"
 "vapor-community/sendgrid-kit" -> "fpseverino/swift-wallet"
 "mattpolzin/VaporOpenAPIExample" -> "mattpolzin/VaporOpenAPI"
+"kabiroberai/node-swift" -> "hummingbird-project/hummingbird-examples" ["e"=1]
 "kylef/JSONWebToken.swift" -> "Kitura/Swift-JWT"
 "kylef/JSONWebToken.swift" -> "auth0/JWTDecode.swift"
 "kylef/JSONWebToken.swift" -> "vapor/jwt"
 "kylef/JSONWebToken.swift" -> "SwiftValidatorCommunity/SwiftValidator" ["e"=1]
 "kylef/JSONWebToken.swift" -> "pvzig/SlackKit" ["e"=1]
+"koher/swift-image" -> "twostraws/SwiftGD" ["e"=1]
 "hummingbird-project/swift-mustache" -> "hummingbird-project/hummingbird-websocket"
 "hummingbird-project/swift-mustache" -> "hummingbird-project/hummingbird-auth"
+"stasel/WebRTC" -> "vapor/websocket-kit" ["e"=1]
 "rapierorg/telegram-bot-swift" -> "givip/Telegrammer"
 "rapierorg/telegram-bot-swift" -> "FabrizioBrancati/SwiftyBot"
 "rapierorg/telegram-bot-swift" -> "nerzh/swift-telegram-sdk"
@@ -372,6 +417,8 @@ digraph G {
 "hummingbird-project/hummingbird-examples" -> "hummingbird-project/hummingbird-fluent"
 "hummingbird-project/hummingbird-examples" -> "swift-server/swift-aws-lambda-events"
 "hummingbird-project/hummingbird-examples" -> "swift-server/swift-openapi-hummingbird"
+"BinaryBirds/swift-html" -> "vapor-community/HTMLKit" ["e"=1]
+"BinaryBirds/swift-html" -> "brokenhandsio/SteamPress" ["e"=1]
 "auth0/Auth0.swift" -> "auth0/Lock.swift"
 "auth0/Auth0.swift" -> "auth0/SimpleKeychain"
 "auth0/Auth0.swift" -> "auth0/JWTDecode.swift"
@@ -391,6 +438,8 @@ digraph G {
 "hummingbird-project/hummingbird-lambda" -> "hummingbird-project/hummingbird-redis"
 "hummingbird-project/hummingbird-lambda" -> "swift-server/swift-openapi-hummingbird"
 "hummingbird-project/hummingbird-lambda" -> "hummingbird-project/hummingbird-auth"
+"nicklockwood/GZIP" -> "1024jp/GzipSwift" ["e"=1]
+"Zewo/Zewo" -> "vapor/fluent" ["e"=1]
 "ZewoGraveyard/PostgreSQL" -> "stepanhruda/PostgreSQL-Swift"
 "Danappelxx/SwiftMongoDB" -> "orlandos-nl/MongoKitten"
 "oleghnidets/OHMySQL" -> "ketzusaka/mysql-connector-c"
@@ -414,6 +463,8 @@ digraph G {
 "nodes-php/nemid" -> "ml-archive/nodes-php-backend"
 "ml-archive/nodes-php-backend" -> "nodes-vapor/n-meta"
 "ml-archive/nodes-php-backend" -> "orchestral/debug"
+"sauliusgrigaitis/Swifton" -> "vapor/fluent" ["e"=1]
+"openid/AppAuth-iOS" -> "auth0/JWTDecode.swift" ["e"=1]
 "vapor/fluent" -> "vapor/leaf"
 "vapor/fluent" -> "vapor/fluent-kit"
 "vapor/fluent" -> "vapor/fluent-postgres-driver"
@@ -438,6 +489,7 @@ digraph G {
 "vapor/fluent-mysql-driver" -> "vapor/leaf-kit"
 "vapor/fluent-mysql-driver" -> "vapor/async-kit"
 "vapor/fluent-mysql-driver" -> "vapor/auth"
+"soyersoyer/SwCrypt" -> "vapor-community/sockets" ["e"=1]
 "vapor/toolbox" -> "vapor/leaf"
 "vapor/toolbox" -> "vapor/http"
 "vapor/toolbox" -> "vapor/console-kit"
@@ -467,6 +519,10 @@ digraph G {
 "vapor/redis" -> "vapor/fluent-kit"
 "vapor/redis" -> "vapor/core"
 "vapor/redis" -> "vapor/queues"
+"crossroadlabs/Express" -> "vapor/fluent" ["e"=1]
+"getsentry/sentry-cocoa" -> "DataDog/dd-sdk-ios" ["e"=1]
+"Kitura/BlueSocket" -> "vapor-community/sockets" ["e"=1]
+"Kitura/BlueSocket" -> "helje5/SwiftSockets" ["e"=1]
 "alexeyxo/swift-apns" -> "matthijs2704/vapor-apns"
 "orlandos-nl/MongoKitten" -> "mongodb/mongo-swift-driver" ["e"=1]
 "orlandos-nl/MongoKitten" -> "OpenKitten/Meow"
@@ -515,6 +571,9 @@ digraph G {
 "stormpath/Turnstile" -> "iamjono/SwiftRandom" ["e"=1]
 "stormpath/Turnstile" -> "vapor/jwt"
 "stormpath/Turnstile" -> "kdawgwilk/KarmaAPI"
+"Awesome-Server-Side-Swift/TheList" -> "brokenhandsio/SteamPress" ["e"=1]
+"Awesome-Server-Side-Swift/TheList" -> "orlandos-nl/MongoKitten" ["e"=1]
+"Awesome-Server-Side-Swift/TheList" -> "twostraws/SwiftGD" ["e"=1]
 "vapor/http" -> "vapor/core"
 "vapor/http" -> "vapor/leaf"
 "vapor/http" -> "vapor/queues"
@@ -544,6 +603,8 @@ digraph G {
 "matthijs2704/vapor-apns" -> "kdawgwilk/KarmaAPI"
 "matthijs2704/vapor-apns" -> "twostraws/SwiftGD"
 "matthijs2704/vapor-apns" -> "vapor/docs"
+"swift-server/work-group" -> "jakeheis/Flock" ["e"=1]
+"swift-server/work-group" -> "brokenhandsio/SteamPress" ["e"=1]
 "vapor/mysql-kit" -> "vapor/mysql-nio"
 "vapor/mysql-kit" -> "vapor/fluent-mysql-driver"
 "vapor/mysql-kit" -> "vapor/sql-kit"
@@ -589,6 +650,7 @@ digraph G {
 "vapor/leaf" -> "vapor/fluent-mysql-driver"
 "vapor/leaf" -> "vapor/websocket-kit"
 "vapor/leaf" -> "brokenhandsio/SteamPress"
+"apple/swift-openapi-runtime" -> "swift-server/swift-openapi-async-http-client" ["e"=1]
 "vapor/api-template" -> "vapor/validation"
 "vapor/api-template" -> "vapor/auth"
 "vapor/api-template" -> "vapor/web-template"
@@ -612,6 +674,7 @@ digraph G {
 "vapor/docs" -> "twof/VaporNation"
 "vapor/docs" -> "vapor-community/Imperial"
 "vapor/docs" -> "vapor/routing-kit"
+"apple/swift-openapi-urlsession" -> "swift-server/swift-openapi-async-http-client" ["e"=1]
 "swift-server/swift-openapi-async-http-client" -> "swift-server/swift-openapi-vapor"
 "swift-server/swift-openapi-vapor" -> "swift-server/swift-openapi-async-http-client"
 "swift-server/swift-openapi-vapor" -> "dankinsoid/VaporToOpenAPI"
@@ -666,6 +729,8 @@ digraph G {
 "vapor/core" -> "vapor-community/bits"
 "vapor-community/penny" -> "vapor-community/sqlite-driver"
 "vapor-community/penny" -> "vapor-community/mustache-provider"
+"GraphQLSwift/GraphQL" -> "vapor/fluent" ["e"=1]
+"GraphQLSwift/GraphQL" -> "matthijs2704/vapor-apns" ["e"=1]
 "twostraws/SwiftGD" -> "vapor-community/Imperial"
 "twostraws/SwiftGD" -> "vapor-community/stripe"
 "twostraws/SwiftGD" -> "vapor-community/Lingo-Vapor"
@@ -694,6 +759,7 @@ digraph G {
 "ml-archive/paginator" -> "nodes-vapor/bugsnag"
 "ml-archive/paginator" -> "nodes-vapor/keychain"
 "ml-archive/paginator" -> "ml-archive/flash"
+"GraphQLSwift/Graphiti" -> "vapor/fluent-kit" ["e"=1]
 "LiveUI/S3" -> "ml-archive/aws"
 "calebkleveter/UIWebKit" -> "StevenLambion/GraphQLRouteCollection"
 "mw99/DataCompression" -> "tidwall/DeflateSwift"
@@ -769,9 +835,14 @@ digraph G {
 "anthonycastelli/Vapor-JWTAuthorization" -> "kdawgwilk/KarmaAPI"
 "anthonycastelli/Vapor-JWTAuthorization" -> "stormpath/Turnstile-Vapor-Example"
 "anthonycastelli/Vapor-JWTAuthorization" -> "nodes-vapor/keychain"
+"soto-project/soto" -> "vapor-community/stripe-kit" ["e"=1]
 "haolizi/VideoRecord" -> "haolizi/electricity_flutter"
 "haolizi/VideoRecord" -> "CrazyBalls/ggconfuse"
 "vapor/web-template" -> "vapor/auth-template"
+"sliemeobn/elementary" -> "dankinsoid/VaporToOpenAPI" ["e"=1]
+"Kitura/Swift-SMTP" -> "vapor-community/mailgun" ["e"=1]
+"Kitura/Swift-SMTP" -> "MihaelIsaev/FCM" ["e"=1]
+"Kitura/Swift-SMTP" -> "sersoft-gmbh/swift-smtp" ["e"=1]
 "nodes-vapor/template" -> "nodes-vapor/bugsnag"
 "nodes-vapor/template" -> "nodes-vapor/reset"
 "brokenhandsio/VaporSecurityHeaders" -> "brokenhandsio/vapor-oauth"
@@ -818,6 +889,7 @@ digraph G {
 "vapor-community/bits" -> "vapor-community/debugging"
 "vapor/auth" -> "vapor/url-encoded-form"
 "vapor-community/debugging" -> "vapor-community/bits"
+"swift-server/http" -> "brokenhandsio/SteamPress" ["e"=1]
 "ml-archive/admin-panel-provider" -> "ml-archive/admin-panel"
 "vapor/auth-template" -> "vapor/web-template"
 "vapor/auth-template" -> "vapor/auth"
@@ -833,17 +905,18 @@ digraph G {
 "vapor-community/swiftybeaver-provider" -> "LiveUI/VaporTestTools"
 "vapor-community/swiftybeaver-provider" -> "SwiftyBeaver/SwiftyBeaver-Vapor"
 "fpseverino/swift-wallet" -> "fpseverino/apple-maps-kit"
+"MihaelIsaev/UIKitPlus" ["l"="42.437,-27.141", "c"=69]
+"SwifQL/SwifQL" ["l"="43.879,-27.306"]
 "vapor-community/HTMLKit" ["l"="43.896,-27.261"]
 "MatsMoll/BootstrapKit" ["l"="43.855,-27.272"]
 "vapor-community/stripe" ["l"="43.944,-27.272"]
-"pointfreeco/swift-html" ["l"="42.313,-26.847"]
-"BinaryBirds/swift-html" ["l"="42.097,-26.776"]
-"JohnSundell/Plot" ["l"="42.18,-26.905"]
-"sliemeobn/elementary" ["l"="42.067,-26.742"]
-"SwifQL/SwifQL" ["l"="43.879,-27.306"]
-"FeatherCMS/feather" ["l"="42.075,-26.764"]
+"pointfreeco/swift-html" ["l"="42.313,-26.847", "c"=69]
+"BinaryBirds/swift-html" ["l"="42.097,-26.776", "c"=69]
+"JohnSundell/Plot" ["l"="42.18,-26.905", "c"=69]
+"sliemeobn/elementary" ["l"="42.067,-26.742", "c"=69]
+"FeatherCMS/feather" ["l"="42.075,-26.764", "c"=69]
 "twostraws/SwiftGD" ["l"="43.944,-27.257"]
-"swift-server-community/APNSwift" ["l"="42.114,-26.707"]
+"swift-server-community/APNSwift" ["l"="42.114,-26.707", "c"=69]
 "vapor-community/stripe-kit" ["l"="43.937,-27.229"]
 "vapor/leaf" ["l"="44.029,-27.231"]
 "vapor-community/mailgun" ["l"="43.924,-27.267"]
@@ -859,6 +932,8 @@ digraph G {
 "rapierorg/telegram-bot-swift" ["l"="43.756,-27.391"]
 "FabrizioBrancati/SwiftyBot" ["l"="43.748,-27.418"]
 "nerzh/swift-telegram-sdk" ["l"="43.804,-27.367"]
+"auth0/auth0.js" ["l"="0.794,-35.737", "c"=1882]
+"auth0/Auth0.swift" ["l"="44.091,-26.981"]
 "vapor/postgres-nio" ["l"="44.065,-27.176"]
 "vapor/postgres-kit" ["l"="44.066,-27.205"]
 "vapor/sql-kit" ["l"="44.069,-27.194"]
@@ -866,15 +941,15 @@ digraph G {
 "vapor/fluent-postgres-driver" ["l"="44.053,-27.211"]
 "swift-server/RediStack" ["l"="44.012,-27.188"]
 "vapor/queues" ["l"="44.04,-27.222"]
-"swift-server/async-http-client" ["l"="42.116,-26.721"]
-"swift-server/swift-service-lifecycle" ["l"="42.114,-26.674"]
+"swift-server/async-http-client" ["l"="42.116,-26.721", "c"=69]
+"swift-server/swift-service-lifecycle" ["l"="42.114,-26.674", "c"=69]
 "vapor/async-kit" ["l"="44.072,-27.214"]
-"apple/swift-nio-extras" ["l"="42.141,-26.608"]
-"apple/swift-nio-http2" ["l"="42.139,-26.636"]
-"apple/swift-distributed-tracing" ["l"="42.132,-26.626"]
-"swift-server/sswg" ["l"="42.112,-26.639"]
+"apple/swift-nio-extras" ["l"="42.141,-26.608", "c"=69]
+"apple/swift-nio-http2" ["l"="42.139,-26.636", "c"=69]
+"apple/swift-distributed-tracing" ["l"="42.132,-26.626", "c"=69]
+"swift-server/sswg" ["l"="42.112,-26.639", "c"=69]
 "hummingbird-project/hummingbird-examples" ["l"="44.089,-27.144"]
-"apple/swift-distributed-actors" ["l"="42.143,-26.669"]
+"apple/swift-distributed-actors" ["l"="42.143,-26.669", "c"=69]
 "vaporberlin/vaporschool" ["l"="43.964,-27.277"]
 "vapor-community/awesome-vapor" ["l"="43.987,-27.272"]
 "kodecocodes/vapor-til" ["l"="43.931,-27.301"]
@@ -885,50 +960,56 @@ digraph G {
 "vapor-community/ferno" ["l"="43.961,-27.331"]
 "ml-archive/admin-panel" ["l"="43.897,-27.229"]
 "brokenhandsio/vapor-oauth" ["l"="43.923,-27.253"]
-"Jinxiansen/ServerSideSwift" ["l"="-52.009,-15.945"]
+"Jinxiansen/ServerSideSwift" ["l"="-52.009,-15.945", "c"=1008]
 "vapor/api-template" ["l"="44.039,-27.294"]
 "janniks/prepare-commit-msg" ["l"="43.995,-27.073"]
-"Kitura/BlueECC" ["l"="46.201,-25.942"]
+"Kitura/BlueECC" ["l"="46.201,-25.942", "c"=2]
 "vapor/fluent" ["l"="44.045,-27.253"]
 "orlandos-nl/MongoKitten" ["l"="44.011,-27.292"]
-"soto-project/soto" ["l"="42.038,-26.702"]
-"hummingbird-project/hummingbird" ["l"="42.122,-26.752"]
-"JohnSundell/Publish" ["l"="42.207,-27.009"]
+"soto-project/soto" ["l"="42.038,-26.702", "c"=69]
+"hummingbird-project/hummingbird" ["l"="42.122,-26.752", "c"=69]
+"JohnSundell/Publish" ["l"="42.207,-27.009", "c"=69]
+"vapor/apns" ["l"="44.015,-27.212"]
 "yourkarma/JWT" ["l"="44.117,-27.034"]
+"apple/swift-metrics" ["l"="42.131,-26.704", "c"=69]
+"swift-server/swift-prometheus" ["l"="43.943,-27.184"]
 "zhuowei/marina" ["l"="43.761,-27.229"]
-"robb/Swim" ["l"="42.76,-27.773"]
-"orlandos-nl/IkigaJSON" ["l"="42.122,-26.686"]
-"guillermomuntaner/Burritos" ["l"="42.296,-26.989"]
+"robb/Swim" ["l"="42.76,-27.773", "c"=1171]
+"orlandos-nl/IkigaJSON" ["l"="42.122,-26.686", "c"=69]
+"guillermomuntaner/Burritos" ["l"="42.296,-26.989", "c"=69]
+"apple/swift-nio-transport-services" ["l"="42.124,-26.609", "c"=69]
+"vapor/websocket-kit" ["l"="44.039,-27.194"]
 "MihaelIsaev/AwesomeWS" ["l"="43.842,-27.328"]
 "MihaelIsaev/SwifCron" ["l"="43.848,-27.34"]
 "vapor/mysql-nio" ["l"="44.09,-27.19"]
-"swift-otel/swift-otel" ["l"="42.107,-26.608"]
+"swift-otel/swift-otel" ["l"="42.107,-26.608", "c"=69]
 "vapor/fluent-mysql-driver" ["l"="44.072,-27.233"]
 "vapor/multipart-kit" ["l"="44.082,-27.204"]
-"vapor/apns" ["l"="44.015,-27.212"]
 "vapor/mysql-kit" ["l"="44.093,-27.214"]
+"CodyFlame/CodyFire" ["l"="42.492,-27.207", "c"=69]
 "codewinsdotcom/PostgresClientKit" ["l"="44.135,-27.171"]
 "PerfectlySoft/Perfect-PostgreSQL" ["l"="44.218,-27.164"]
+"mongodb/mongo-swift-driver" ["l"="42.06,-26.62", "c"=69]
+"orlandos-nl/BSON" ["l"="43.985,-27.324"]
 "vapor-community/sendgrid" ["l"="43.95,-27.232"]
 "vapor-community/Imperial" ["l"="43.957,-27.251"]
 "SwifQL/Bridges" ["l"="43.846,-27.306"]
 "MihaelIsaev/FluentQuery" ["l"="43.885,-27.333"]
 "MihaelIsaev/FCM" ["l"="43.863,-27.325"]
-"swift-server/swift-backtrace" ["l"="42.075,-26.658"]
+"swift-server/swift-backtrace" ["l"="42.075,-26.658", "c"=69]
 "MihaelIsaev/VaporCron" ["l"="43.866,-27.339"]
 "madsodgaard/vapor-auth-template" ["l"="43.906,-27.295"]
 "myhealthily/sublimate" ["l"="43.822,-27.32"]
 "twof/VaporCRUDRouter" ["l"="43.954,-27.313"]
 "miroslavkovac/Lingo" ["l"="43.906,-27.187"]
 "vapor-community/Lingo-Vapor" ["l"="43.927,-27.218"]
-"swift-server/swift-prometheus" ["l"="43.943,-27.184"]
-"apple/swift-metrics-extras" ["l"="42.082,-26.567"]
-"apple/swift-metrics" ["l"="42.131,-26.704"]
-"apple/swift-statsd-client" ["l"="42.09,-26.582"]
+"mattpolzin/OpenAPIKit" ["l"="42.16,-26.713", "c"=69]
+"mattpolzin/VaporOpenAPI" ["l"="43.771,-27.26"]
+"dankinsoid/VaporToOpenAPI" ["l"="43.831,-27.261"]
+"apple/swift-metrics-extras" ["l"="42.082,-26.567", "c"=69]
+"apple/swift-statsd-client" ["l"="42.09,-26.582", "c"=69]
 "vapor/leaf-kit" ["l"="44.082,-27.227"]
 "vapor/routing-kit" ["l"="44.084,-27.24"]
-"vapor/websocket-kit" ["l"="44.039,-27.194"]
-"apple/swift-nio-transport-services" ["l"="42.124,-26.609"]
 "vapor/console-kit" ["l"="44.06,-27.222"]
 "vapor-community/pagination" ["l"="43.919,-27.319"]
 "MihaelIsaev/wkhtmltopdf" ["l"="43.869,-27.372"]
@@ -936,7 +1017,6 @@ digraph G {
 "ml-archive/flash" ["l"="43.882,-27.221"]
 "hummingbird-project/hummingbird-websocket" ["l"="44.084,-27.126"]
 "auth0/Lock.swift" ["l"="44.083,-26.958"]
-"auth0/Auth0.swift" ["l"="44.091,-26.981"]
 "sersoft-gmbh/swift-smtp" ["l"="43.879,-27.207"]
 "MihaelIsaev/NIOCronScheduler" ["l"="43.848,-27.354"]
 "vapor/fluent-sqlite-driver" ["l"="44.099,-27.226"]
@@ -965,46 +1045,57 @@ digraph G {
 "ml-archive/admin-panel-provider" ["l"="43.91,-27.247"]
 "vapor/url-encoded-form" ["l"="44.094,-27.297"]
 "vapor/auth" ["l"="44.069,-27.277"]
+"tib/practical-server-side-swift" ["l"="42.036,-26.766", "c"=69]
 "auth0/SimpleKeychain" ["l"="44.06,-26.983"]
-"johnpatrickmorgan/NavigationBackport" ["l"="41.799,-28.215"]
-"danielsaidi/ScrollKit" ["l"="41.814,-28.172"]
-"GetStream/swiftui-spring-animations" ["l"="41.859,-28.163"]
+"johnpatrickmorgan/NavigationBackport" ["l"="41.799,-28.215", "c"=174]
+"danielsaidi/ScrollKit" ["l"="41.814,-28.172", "c"=174]
+"GetStream/swiftui-spring-animations" ["l"="41.859,-28.163", "c"=174]
+"swiftsocket/SwiftSocket" ["l"="45.663,-26.352", "c"=2]
+"vapor-community/sockets" ["l"="44.121,-27.268"]
+"swift-actions/setup-swift" ["l"="42.228,-26.598", "c"=69]
+"auth0/lock" ["l"="0.832,-35.724", "c"=1882]
 "helje5/SwiftSockets" ["l"="44.206,-27.285"]
 "helje5/SwiftyHTTP" ["l"="44.249,-27.294"]
-"tib/practical-server-side-swift" ["l"="42.036,-26.766"]
 "simonedelmann/crud-kit" ["l"="43.899,-27.362"]
-"dankinsoid/VaporToOpenAPI" ["l"="43.831,-27.261"]
 "mcritz/VaporUploads" ["l"="43.907,-27.34"]
 "1024jp/GzipSwift" ["l"="43.988,-26.999"]
 "mw99/DataCompression" ["l"="43.972,-26.962"]
-"nicklockwood/GZIP" ["l"="44.087,-22.424"]
-"tsolomko/SWCompression" ["l"="43.615,-22.971"]
-"evgenyneu/keychain-swift" ["l"="45.506,-26.29"]
-"openid/AppAuth-iOS" ["l"="45.86,-26.31"]
+"nicklockwood/GZIP" ["l"="44.087,-22.424", "c"=6]
+"tsolomko/SWCompression" ["l"="43.615,-22.971", "c"=6]
+"evgenyneu/keychain-swift" ["l"="45.506,-26.29", "c"=2]
+"openid/AppAuth-iOS" ["l"="45.86,-26.31", "c"=2]
 "kodecocodes/vpr-materials" ["l"="43.782,-27.284"]
+"izqui/Taylor" ["l"="44.755,-27.865", "c"=395]
+"Danappelxx/SwiftMongoDB" ["l"="44.025,-27.347"]
 "open-telemetry/opentelemetry-swift" ["l"="43.856,-27.088"]
 "DataDog/dd-sdk-ios" ["l"="43.819,-27.05"]
-"swift-server/swift-kafka-client" ["l"="42.044,-26.421"]
+"swift-server/swift-kafka-client" ["l"="42.044,-26.421", "c"=69]
 "swift-server/swift-openapi-vapor" ["l"="43.866,-27.231"]
 "DataDog/dd-sdk-reactnative" ["l"="43.75,-26.968"]
 "DataDog/dd-sdk-unity" ["l"="43.733,-26.949"]
+"swift-server/guides" ["l"="42.09,-26.652", "c"=69]
 "haolizi/electricity_flutter" ["l"="43.911,-27.465"]
 "haolizi/VideoRecord" ["l"="43.928,-27.462"]
+"swift-extras/swift-extras-json" ["l"="42.067,-26.696", "c"=69]
 "DataDog/dd-sdk-android" ["l"="43.773,-27.005"]
 "fpseverino/swift-wallet" ["l"="43.866,-27.216"]
 "Joannis/VaporSMTPKit" ["l"="43.716,-27.289"]
+"alchemy-swift/alchemy" ["l"="42.061,-26.643", "c"=69]
+"SwiftPackageIndex/SwiftPackageIndex-Server" ["l"="42.202,-26.751", "c"=69]
 "atacan/Dime-a-Dozen" ["l"="43.894,-27.389"]
 "xgouchet/Elmyr" ["l"="43.741,-27"]
-"mattpolzin/VaporOpenAPI" ["l"="43.771,-27.26"]
 "mattpolzin/VaporOpenAPIExample" ["l"="43.747,-27.258"]
 "DataDog/dd-sdk-swift-testing" ["l"="43.721,-26.935"]
 "vapor-community/sendgrid-kit" ["l"="43.897,-27.216"]
-"SwiftValidatorCommunity/SwiftValidator" ["l"="45.622,-26.041"]
-"pvzig/SlackKit" ["l"="42.05,-26.875"]
+"kabiroberai/node-swift" ["l"="42.148,-26.689", "c"=69]
+"SwiftValidatorCommunity/SwiftValidator" ["l"="45.622,-26.041", "c"=2]
+"pvzig/SlackKit" ["l"="42.05,-26.875", "c"=69]
+"koher/swift-image" ["l"="7.334,-39.773", "c"=397]
 "hummingbird-project/swift-mustache" ["l"="44.089,-27.102"]
 "hummingbird-project/hummingbird-auth" ["l"="44.1,-27.113"]
+"stasel/WebRTC" ["l"="65.128,-14.348", "c"=385]
 "ShaneQi/ZEGBot" ["l"="43.723,-27.408"]
-"SwiftyVK/SwiftyVK" ["l"="46.043,-26.238"]
+"SwiftyVK/SwiftyVK" ["l"="46.043,-26.238", "c"=2]
 "hummingbird-project/hummingbird-redis" ["l"="44.111,-27.107"]
 "swift-server/swift-openapi-hummingbird" ["l"="44.113,-27.135"]
 "hummingbird-project/hummingbird-lambda" ["l"="44.113,-27.122"]
@@ -1015,13 +1106,12 @@ digraph G {
 "Kilo-Loco/SLaM" ["l"="44.219,-27.043"]
 "soto-project/soto-codegenerator" ["l"="44.175,-27.084"]
 "hummingbird-project/hummingbird-postgres" ["l"="44.12,-27.093"]
+"Zewo/Zewo" ["l"="44.709,-27.873", "c"=395]
 "ZewoGraveyard/PostgreSQL" ["l"="44.313,-27.146"]
 "stepanhruda/PostgreSQL-Swift" ["l"="44.283,-27.151"]
-"Danappelxx/SwiftMongoDB" ["l"="44.025,-27.347"]
 "oleghnidets/OHMySQL" ["l"="44.269,-27.108"]
 "ketzusaka/mysql-connector-c" ["l"="44.296,-27.092"]
 "mcorega/MySqlSwiftNative" ["l"="44.222,-27.144"]
-"mattpolzin/OpenAPIKit" ["l"="42.16,-26.713"]
 "novi/mysql-swift" ["l"="44.184,-27.18"]
 "PerfectlySoft/Perfect-MySQL" ["l"="44.232,-27.182"]
 "vapor-community/example" ["l"="44.005,-27.227"]
@@ -1031,40 +1121,39 @@ digraph G {
 "nodes-php/nemid" ["l"="43.812,-27.174"]
 "ml-archive/nodes-php-backend" ["l"="43.812,-27.16"]
 "orchestral/debug" ["l"="43.791,-27.144"]
+"sauliusgrigaitis/Swifton" ["l"="44.745,-27.888", "c"=395]
 "vapor/docs" ["l"="44.014,-27.248"]
 "vapor/toolbox" ["l"="44.052,-27.236"]
-"Zewo/Zewo" ["l"="44.709,-27.873"]
-"kylef/swiftenv" ["l"="44.697,-27.894"]
+"kylef/swiftenv" ["l"="44.697,-27.894", "c"=395]
 "vapor/core" ["l"="44.111,-27.251"]
 "vapor/validation" ["l"="44.077,-27.29"]
+"soyersoyer/SwCrypt" ["l"="45.855,-25.875", "c"=2]
 "vapor/website" ["l"="44.13,-27.229"]
 "vapor/redis" ["l"="44.079,-27.26"]
-"vapor-community/sockets" ["l"="44.121,-27.268"]
 "vapor-community/redis-provider" ["l"="44.142,-27.305"]
 "vapor-community/postgresql-driver" ["l"="44.108,-27.357"]
+"crossroadlabs/Express" ["l"="44.725,-27.856", "c"=395]
+"getsentry/sentry-cocoa" ["l"="54.645,-14.902", "c"=25]
+"Kitura/BlueSocket" ["l"="45.873,-26.531", "c"=2]
 "alexeyxo/swift-apns" ["l"="43.955,-27.161"]
 "matthijs2704/vapor-apns" ["l"="43.967,-27.205"]
-"mongodb/mongo-swift-driver" ["l"="42.06,-26.62"]
 "OpenKitten/Meow" ["l"="43.999,-27.339"]
-"orlandos-nl/BSON" ["l"="43.985,-27.324"]
-"Awesome-Server-Side-Swift/TheList" ["l"="45.794,-26.24"]
-"GraphQLSwift/GraphQL" ["l"="41.989,-26.815"]
+"Awesome-Server-Side-Swift/TheList" ["l"="45.794,-26.24", "c"=2]
+"GraphQLSwift/GraphQL" ["l"="41.989,-26.815", "c"=69]
 "vapor-community/mongo-driver" ["l"="44.091,-27.406"]
 "vapor-community/sqlite-driver" ["l"="44.086,-27.376"]
 "vapor-community/csqlite" ["l"="44.093,-27.391"]
 "PerfectlySoft/Perfect-SQLite" ["l"="44.273,-27.185"]
 "PerfectlySoft/Perfect-Redis" ["l"="44.256,-27.195"]
 "PerfectlySoft/PerfectAppTemplate" ["l"="44.256,-27.17"]
-"Kitura/BlueSocket" ["l"="45.873,-26.531"]
-"rakaramos/OnOffButton" ["l"="45.648,-25.627"]
-"swiftsocket/SwiftSocket" ["l"="45.663,-26.352"]
-"endocrimes/Jay" ["l"="44.665,-27.767"]
+"rakaramos/OnOffButton" ["l"="45.648,-25.627", "c"=2]
+"endocrimes/Jay" ["l"="44.665,-27.767", "c"=395]
 "OpenKitten/MeowVapor" ["l"="43.988,-27.353"]
 "vapor-community/fluent-example" ["l"="44.104,-27.377"]
 "vapor-community/mustache-provider" ["l"="44.087,-27.365"]
 "stormpath/Turnstile" ["l"="43.981,-27.189"]
-"stormpath/Turnstile-Perfect" ["l"="45.25,-26.682"]
-"iamjono/SwiftRandom" ["l"="42.384,-26.451"]
+"stormpath/Turnstile-Perfect" ["l"="45.25,-26.682", "c"=2]
+"iamjono/SwiftRandom" ["l"="42.384,-26.451", "c"=69]
 "kdawgwilk/KarmaAPI" ["l"="43.936,-27.164"]
 "vapor/open-crypto" ["l"="44.096,-27.274"]
 "vapor-community/forms" ["l"="44.026,-27.276"]
@@ -1072,10 +1161,14 @@ digraph G {
 "stormpath/Turnstile-Vapor-Example" ["l"="43.921,-27.158"]
 "calebkleveter/UIWebKit" ["l"="43.938,-27.203"]
 "wess/overlook" ["l"="43.93,-27.14"]
+"swift-server/work-group" ["l"="44.644,-27.818", "c"=395]
+"jakeheis/Flock" ["l"="43.974,-27.14"]
+"apple/swift-openapi-runtime" ["l"="42.221,-26.694", "c"=69]
+"swift-server/swift-openapi-async-http-client" ["l"="43.835,-27.228"]
 "vapor/web-template" ["l"="44.065,-27.325"]
 "vapor-community/mongo-provider" ["l"="44.097,-27.335"]
 "vapor/auth-template" ["l"="44.067,-27.31"]
-"swift-server/swift-openapi-async-http-client" ["l"="43.835,-27.228"]
+"apple/swift-openapi-urlsession" ["l"="42.21,-26.646", "c"=69]
 "vapor-community/slack-bot" ["l"="44.057,-27.383"]
 "vapor-community/postgresql" ["l"="44.137,-27.402"]
 "vapor-community/postgresql-provider" ["l"="44.14,-27.384"]
@@ -1094,22 +1187,23 @@ digraph G {
 "vapor/database-kit" ["l"="44.188,-27.224"]
 "vapor-community/bits" ["l"="44.165,-27.284"]
 "LiveUI/S3" ["l"="43.916,-27.199"]
-"tayloraswift/swift-png" ["l"="42.036,-26.576"]
+"tayloraswift/swift-png" ["l"="42.036,-26.576", "c"=69]
 "ml-archive/storage" ["l"="43.856,-27.179"]
 "ml-archive/sugar" ["l"="43.862,-27.2"]
 "nodes-vapor/bugsnag" ["l"="43.89,-27.202"]
 "ml-archive/paginator" ["l"="43.911,-27.213"]
+"GraphQLSwift/Graphiti" ["l"="41.993,-26.757", "c"=69]
 "ml-archive/aws" ["l"="43.885,-27.175"]
 "StevenLambion/GraphQLRouteCollection" ["l"="43.921,-27.175"]
 "tidwall/DeflateSwift" ["l"="43.961,-26.933"]
 "reswifq/reswifq" ["l"="43.972,-27.248"]
 "nodes-vapor/template" ["l"="43.867,-27.19"]
 "brokenhandsio/SteamPressExample" ["l"="43.948,-27.217"]
-"jakeheis/Flock" ["l"="43.974,-27.14"]
 "jakeheis/VaporFlock" ["l"="43.968,-27.111"]
 "ml-archive/readme" ["l"="43.843,-27.198"]
 "ButkiewiczP/atom-language-leaf" ["l"="44.036,-27.311"]
 "BrettRToomey/brett-xml" ["l"="43.896,-27.142"]
+"Kitura/Swift-SMTP" ["l"="45.702,-26.053", "c"=2]
 "nodes-vapor/reset" ["l"="43.87,-27.155"]
 "vapor-community/CSRF" ["l"="43.883,-27.243"]
 "vapor-community/jwt-provider" ["l"="44.242,-27.386"]
@@ -1117,6 +1211,7 @@ digraph G {
 "Jinxiansen/JJHUD" ["l"="43.936,-27.534"]
 "nodes-vapor/stacked" ["l"="43.919,-27.237"]
 "fpseverino/apple-maps-kit" ["l"="43.841,-27.213"]
+"swift-server/http" ["l"="44.647,-27.854", "c"=395]
 "vapor/service" ["l"="44.242,-27.233"]
 "vapor/template-kit" ["l"="44.274,-27.241"]
 "brokenhandsio/vapor-oauth-fluent" ["l"="43.88,-27.272"]

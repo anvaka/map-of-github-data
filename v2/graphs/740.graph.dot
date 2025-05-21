@@ -1,4 +1,10 @@
 digraph G {
+"fabric8io/fabric8" -> "deis/workflow" ["e"=1]
+"GoogleCloudPlatform/k8s-config-connector" -> "GoogleCloudPlatform/k8s-multicluster-ingress" ["e"=1]
+"kudobuilder/kudo" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"zalando-incubator/es-operator" -> "upmc-enterprises/elasticsearch-operator" ["e"=1]
+"slok/grafterm" -> "spotahome/kooper" ["e"=1]
+"genuinetools/img" -> "kubicorn/kubicorn" ["e"=1]
 "ksonnet/ksonnet" -> "ksonnet/ksonnet-lib"
 "ksonnet/ksonnet" -> "vmware-archive/kubecfg"
 "ksonnet/ksonnet" -> "vmware-tanzu/sonobuoy" ["e"=1]
@@ -14,6 +20,23 @@ digraph G {
 "ksonnet/ksonnet" -> "helm/monocular" ["e"=1]
 "ksonnet/ksonnet" -> "brigadecore/brigade" ["e"=1]
 "ksonnet/ksonnet" -> "kubernetes-retired/kube-batch" ["e"=1]
+"jpetazzo/dind" -> "kubernetes-retired/kubeadm-dind-cluster" ["e"=1]
+"projectcontour/contour" -> "projectcontour/gimbal" ["e"=1]
+"hasura/gitkube" -> "kubicorn/kubicorn" ["e"=1]
+"shubheksha/kubernetes-internals" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"uber-archive/makisu" -> "voyagermesh/voyager" ["e"=1]
+"deis/deis" -> "deis/workflow" ["e"=1]
+"deis/deis" -> "helm/helm-classic" ["e"=1]
+"vmware-archive/kube-prod-runtime" -> "vmware-archive/kubecfg" ["e"=1]
+"morvencao/kube-sidecar-injector" -> "kelseyhightower/denyenv-validating-admission-webhook" ["e"=1]
+"cloudworkz/kube-eagle" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"nghialv/promviz" -> "voyagermesh/voyager" ["e"=1]
+"bookingcom/shipper" -> "Boostport/kubernetes-vault" ["e"=1]
+"elgris/microservice-app-example" -> "kelseyhightower/pipeline" ["e"=1]
+"Shopify/shipit-engine" -> "Shopify/krane" ["e"=1]
+"bank-vaults/bank-vaults" -> "coreos/vault-operator" ["e"=1]
+"replicatedhq/ship" -> "vmware-archive/kubecfg" ["e"=1]
+"mintel/dex-k8s-authenticator" -> "micahhausler/k8s-oidc-helper" ["e"=1]
 "ahmetb/gke-letsencrypt" -> "jetstack/kube-lego"
 "ahmetb/gke-letsencrypt" -> "GoogleCloudPlatform/k8s-multicluster-ingress"
 "ahmetb/gke-letsencrypt" -> "kubernetes/ingress-gce" ["e"=1]
@@ -33,6 +56,12 @@ digraph G {
 "containerum/containerum" -> "containerum/letskube"
 "containerum/containerum" -> "containerum/ui"
 "containerum/containerum" -> "apprenda/kismatic"
+"kubernetes/ingress-gce" -> "jetstack/kube-lego" ["e"=1]
+"kubernetes/ingress-gce" -> "GoogleCloudPlatform/k8s-multicluster-ingress" ["e"=1]
+"kubernetes/ingress-gce" -> "GoogleCloudPlatform/k8s-stackdriver" ["e"=1]
+"cablespaghetti/kubeadm-aws" -> "poseidon/typhoon" ["e"=1]
+"dgageot/demoit" -> "garethr/kubetest" ["e"=1]
+"flynn/flynn" -> "deis/workflow" ["e"=1]
 "coreos/docs" -> "coreos/coreos-kubernetes"
 "coreos/docs" -> "coreos/coreos-cloudinit"
 "coreos/docs" -> "coreos/fleet" ["e"=1]
@@ -48,6 +77,16 @@ digraph G {
 "GoogleCloudPlatform/k8s-multicluster-ingress" -> "GoogleCloudPlatform/k8s-stackdriver"
 "GoogleCloudPlatform/k8s-multicluster-ingress" -> "kelseyhightower/pipeline"
 "GoogleCloudPlatform/k8s-multicluster-ingress" -> "cloudendpoints/esp" ["e"=1]
+"google/lmctfy" -> "kubernetes-retired/cluster-registry" ["e"=1]
+"kapicorp/kapitan" -> "ksonnet/ksonnet" ["e"=1]
+"kapicorp/kapitan" -> "vmware-archive/kubecfg" ["e"=1]
+"bitnami/kube-libsonnet" -> "vmware-archive/kubecfg" ["e"=1]
+"ehazlett/stellar" -> "jessfraz/k8s-snowflake" ["e"=1]
+"ehazlett/stellar" -> "kubicorn/kubicorn" ["e"=1]
+"kubeguard/guard" -> "voyagermesh/voyager" ["e"=1]
+"github-release/github-release" -> "kelseyhightower/kube-cert-manager" ["e"=1]
+"github-release/github-release" -> "helm/helm-classic" ["e"=1]
+"wagoodman/bashful" -> "kubicorn/kubicorn" ["e"=1]
 "kelseyhightower/pipeline" -> "kelseyhightower/grafeas-tutorial"
 "kelseyhightower/pipeline" -> "GoogleCloudPlatform/k8s-multicluster-ingress"
 "kelseyhightower/pipeline" -> "kelseyhightower/nomad-on-kubernetes"
@@ -63,6 +102,7 @@ digraph G {
 "kelseyhightower/pipeline" -> "kelseyhightower/denyenv-validating-admission-webhook"
 "kelseyhightower/pipeline" -> "errordeveloper/kubegen"
 "kelseyhightower/pipeline" -> "upmc-enterprises/elasticsearch-operator"
+"grafeas/kritis" -> "kelseyhightower/grafeas-tutorial" ["e"=1]
 "teamhephy/workflow" -> "deis/workflow"
 "projectcontour/gimbal" -> "projectcontour/contour" ["e"=1]
 "projectcontour/gimbal" -> "vmware-archive/wardroom" ["e"=1]
@@ -70,13 +110,25 @@ digraph G {
 "projectcontour/gimbal" -> "cloudfoundry-incubator/kubo-deployment" ["e"=1]
 "projectcontour/gimbal" -> "ksonnet/ksonnet"
 "projectcontour/gimbal" -> "ksonnet/ksonnet-lib"
+"hashicorp/consul-k8s" -> "kelseyhightower/consul-on-kubernetes" ["e"=1]
+"metaparticle-io/package" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
 "coreos/coreos-cloudinit" -> "defunctzombie/ansible-coreos-bootstrap"
+"vmware-archive/tgik" -> "kubicorn/kubicorn" ["e"=1]
 "garethr/kubetest" -> "viglesiasce/kube-lint"
 "garethr/kubetest" -> "instrumenta/kubeval" ["e"=1]
 "garethr/kubetest" -> "spotahome/kooper"
 "garethr/kubetest" -> "planetlabs/draino" ["e"=1]
 "garethr/kubetest" -> "k8guard/k8guard-start-from-here"
+"weaveworks/footloose" -> "kubicorn/kubicorn" ["e"=1]
+"haproxytech/kubernetes-ingress" -> "voyagermesh/voyager" ["e"=1]
+"brigadecore/brigade" -> "kubicorn/kubicorn" ["e"=1]
+"brigadecore/brigade" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"brigadecore/brigade" -> "jetstack/kube-lego" ["e"=1]
+"brigadecore/brigade" -> "voyagermesh/voyager" ["e"=1]
+"Trow-Registry/trow" -> "poseidon/typhoon" ["e"=1]
 "gini/dexter" -> "micahhausler/k8s-oidc-helper"
+"flatcar/Flatcar" -> "poseidon/matchbox" ["e"=1]
+"Shopify/ejson" -> "Shopify/krane" ["e"=1]
 "spotahome/kooper" -> "slok/kube-code-generator"
 "spotahome/kooper" -> "slok/kubewebhook" ["e"=1]
 "spotahome/kooper" -> "GoogleCloudPlatform/metacontroller"
@@ -87,6 +139,8 @@ digraph G {
 "spotahome/kooper" -> "kubernetes-sigs/apiserver-builder-alpha" ["e"=1]
 "spotahome/kooper" -> "GoogleCloudPlatform/freshpod"
 "spotahome/kooper" -> "kubicorn/kubicorn"
+"kelseyhightower/vault-on-google-kubernetes-engine" -> "coreos/vault-operator" ["e"=1]
+"eko/monday" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
 "coreos/coreos-vagrant" -> "coreos/coreos-kubernetes"
 "coreos/coreos-vagrant" -> "coreos/fleet" ["e"=1]
 "coreos/coreos-vagrant" -> "coreos/coreos-cloudinit"
@@ -103,6 +157,8 @@ digraph G {
 "coreos/coreos-vagrant" -> "rancher/os-vagrant"
 "coreos/coreos-vagrant" -> "mitchellh/vagrant-aws" ["e"=1]
 "kubernetes-retired/cluster-registry" -> "GoogleCloudPlatform/k8s-multicluster-ingress"
+"planetlabs/draino" -> "garethr/kubetest" ["e"=1]
+"box/kube-iptables-tailer" -> "garethr/kubetest" ["e"=1]
 "vmware-archive/healthcheck" -> "kubernetes-retired/cluster-registry"
 "vmware-archive/healthcheck" -> "GoogleCloudPlatform/metacontroller"
 "vmware-archive/healthcheck" -> "jessfraz/k8s-snowflake"
@@ -110,6 +166,14 @@ digraph G {
 "vmware-archive/healthcheck" -> "ericchiang/k8s"
 "vmware-archive/healthcheck" -> "kubernetes-retired/service-catalog" ["e"=1]
 "vmware-archive/healthcheck" -> "kubernetes-retired/kube-deploy"
+"slok/kubewebhook" -> "spotahome/kooper" ["e"=1]
+"slok/kubewebhook" -> "kelseyhightower/kubernetes-initializer-tutorial" ["e"=1]
+"coreos/fleet" -> "coreos/coreos-cloudinit" ["e"=1]
+"coreos/fleet" -> "coreos/coreos-vagrant" ["e"=1]
+"coreos/fleet" -> "coreos/docs" ["e"=1]
+"coreos/fleet" -> "coreos/coreos-kubernetes" ["e"=1]
+"hjacobs/kube-janitor" -> "technosophos/helm-template" ["e"=1]
+"zalando-incubator/kopf" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
 "GoogleCloudPlatform/metacontroller" -> "spotahome/kooper"
 "GoogleCloudPlatform/metacontroller" -> "metacontroller/metacontroller" ["e"=1]
 "GoogleCloudPlatform/metacontroller" -> "atlassian/smith"
@@ -125,10 +189,13 @@ digraph G {
 "GoogleCloudPlatform/metacontroller" -> "garethr/kubetest"
 "GoogleCloudPlatform/metacontroller" -> "kubernetes-retired/bootkube"
 "GoogleCloudPlatform/metacontroller" -> "voyagermesh/voyager"
+"resouer/k8s-controller-custom-resource" -> "kelseyhightower/kubernetes-initializer-tutorial" ["e"=1]
 "spotahome/service-level-operator" -> "spotahome/kooper"
 "spotahome/service-level-operator" -> "slok/sloth" ["e"=1]
 "hayorov/helm-gcs" -> "viglesiasce/helm-gcs"
 "hayorov/helm-gcs" -> "Philmod/google-cloud-build-slack"
+"retroryan/istio-workshop" -> "kelseyhightower/istio-ingress-tutorial" ["e"=1]
+"kubernetes-sigs/application" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
 "kelseyhightower/grafeas-tutorial" -> "kelseyhightower/riff-tutorial" ["e"=1]
 "michaelsauter/crane" -> "ianunruh/monitoring"
 "michaelsauter/crane" -> "dtan4/k8stail"
@@ -154,8 +221,18 @@ digraph G {
 "darknoon/brushtips" -> "containerum/mail"
 "kelseyhightower/pipeline-infrastructure-staging" -> "kelseyhightower/pipeline-infrastructure-qa"
 "kelseyhightower/pipeline-infrastructure-production" -> "kelseyhightower/pipeline-infrastructure-qa"
+"appc/spec" -> "coreos/coreos-vagrant" ["e"=1]
+"appc/spec" -> "coreos/coreos-cloudinit" ["e"=1]
 "fabric8io/elasticsearch-cloud-kubernetes" -> "pires/docker-elasticsearch-kubernetes"
 "fabric8io/elasticsearch-cloud-kubernetes" -> "pires/docker-elasticsearch"
+"tinkerbell/tink" -> "poseidon/matchbox" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "pires/docker-elasticsearch-kubernetes" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "upmc-enterprises/elasticsearch-operator" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "clockworksoul/helm-elasticsearch" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "pires/docker-elasticsearch" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "jetstack/kube-lego" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "voyagermesh/voyager" ["e"=1]
+"pires/kubernetes-elasticsearch-cluster" -> "fabric8io/elasticsearch-cloud-kubernetes" ["e"=1]
 "kelseyhightower/intro-to-kubernetes-workshop" -> "kelseyhightower/kubestack"
 "kelseyhightower/intro-to-kubernetes-workshop" -> "kelseyhightower/kube-cert-manager"
 "kelseyhightower/intro-to-kubernetes-workshop" -> "kelseyhightower/craft-kubernetes-workshop"
@@ -171,12 +248,20 @@ digraph G {
 "kelseyhightower/intro-to-kubernetes-workshop" -> "kubernetes-retired/contrib" ["e"=1]
 "kelseyhightower/intro-to-kubernetes-workshop" -> "kelseyhightower/istio-ingress-tutorial"
 "kelseyhightower/intro-to-kubernetes-workshop" -> "ehazlett/interlock" ["e"=1]
+"kubernetes-retired/heapster" -> "voyagermesh/voyager" ["e"=1]
+"alexellis/awesome-baremetal" -> "poseidon/matchbox" ["e"=1]
+"mitchellh/gon" -> "vmware-archive/healthcheck" ["e"=1]
+"ceph/ceph-container" -> "coreos/coreos-kubernetes" ["e"=1]
 "ibuildthecloud/systemd-docker" -> "coreroller/coreroller"
 "ibuildthecloud/systemd-docker" -> "mheese/journalbeat"
 "ibuildthecloud/systemd-docker" -> "dockerimages/docker-systemd"
+"eparis/kubernetes-ansible" -> "helm/helm-classic" ["e"=1]
+"cloudfoundry-attic/lattice-release" -> "helm/helm-classic" ["e"=1]
 "rimusz/coreos-kubernetes-cluster-osx" -> "rimusz/coreos-kubernetes-solo-osx"
 "rimusz/coreos-kubernetes-cluster-osx" -> "TheNewNormal/coreos-osx"
 "rimusz/coreos-kubernetes-cluster-osx" -> "rimusz/coreos-cluster-osx"
+"metacontroller/metacontroller" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"metacontroller/metacontroller" -> "spotahome/kooper" ["e"=1]
 "pires/kubernetes-vagrant-coreos-cluster" -> "coreos/coreos-kubernetes"
 "pires/kubernetes-vagrant-coreos-cluster" -> "pires/kubernetes-elasticsearch-cluster" ["e"=1]
 "pires/kubernetes-vagrant-coreos-cluster" -> "pires/kubernetes-elk-cluster"
@@ -196,7 +281,18 @@ digraph G {
 "lorieri/deis-dashboard" -> "jumbojett/deis-ui"
 "hawtio/hawtio-kubernetes" -> "fabric8io/fabric8-console"
 "hawtio/hawtio-kubernetes" -> "jimmidyson/kuisp"
+"digitalocean/doctl" -> "kubicorn/kubicorn" ["e"=1]
+"heketi/heketi" -> "voyagermesh/voyager" ["e"=1]
+"zalando/skipper" -> "voyagermesh/voyager" ["e"=1]
+"machyve/xhyve" -> "coreos/coreos-xhyve" ["e"=1]
+"coreos/container-linux-config-transpiler" -> "coreos/container-linux-update-operator" ["e"=1]
+"GoogleCloudPlatform/gcsfuse" -> "jetstack/kube-lego" ["e"=1]
+"hvac/hvac" -> "Boostport/kubernetes-vault" ["e"=1]
 "kubernetes-retired/kubedash" -> "kubernetes-retired/kube-ui"
+"Capgemini/Apollo" -> "Capgemini/kubeform" ["e"=1]
+"coreos/ignition" -> "poseidon/matchbox" ["e"=1]
+"coreos/ignition" -> "coreos/container-linux-update-operator" ["e"=1]
+"coreos/ignition" -> "coreos/toolbox" ["e"=1]
 "TheNewNormal/corectl" -> "TheNewNormal/corectl.app"
 "TheNewNormal/corectl" -> "coreos/coreos-xhyve"
 "TheNewNormal/corectl" -> "TheNewNormal/coreos-osx"
@@ -210,6 +306,8 @@ digraph G {
 "pires/docker-elasticsearch-kubernetes" -> "fabric8io/elasticsearch-cloud-kubernetes"
 "pires/docker-elasticsearch-kubernetes" -> "pires/kubernetes-elasticsearch-cluster" ["e"=1]
 "pires/docker-elasticsearch-kubernetes" -> "upmc-enterprises/elasticsearch-operator"
+"fabric8io/fluent-plugin-kubernetes_metadata_filter" -> "wearemolecule/route53-kubernetes" ["e"=1]
+"ailispaw/boot2docker-xhyve" -> "coreos/coreos-xhyve" ["e"=1]
 "Bayer-Group/etcd-aws-cluster" -> "crewjam/etcd-aws"
 "Bayer-Group/etcd-aws-cluster" -> "UKHomeOffice/docker-logstash-kubernetes"
 "Bayer-Group/etcd-aws-cluster" -> "wearemolecule/route53-kubernetes"
@@ -241,6 +339,12 @@ digraph G {
 "deis/rigger" -> "deis/builder"
 "deis/rigger" -> "deis/charts"
 "deis/rigger" -> "deis/registry"
+"sivasamyk/logtrail" -> "upmc-enterprises/elasticsearch-operator" ["e"=1]
+"grammarly/rocker" -> "ibuildthecloud/systemd-docker" ["e"=1]
+"ghostunnel/ghostunnel" -> "coreos/vault-operator" ["e"=1]
+"hyperhq/hypernetes" -> "kubernetes-retired/kubernetes-anywhere" ["e"=1]
+"kubernetes-retired/contrib" -> "jetstack/kube-lego" ["e"=1]
+"kubernetes-retired/contrib" -> "coreos/coreos-kubernetes" ["e"=1]
 "kelseyhightower/compose2kube" -> "kelseyhightower/kubernetes-cluster-federation"
 "kelseyhightower/compose2kube" -> "skippbox/kompose"
 "kelseyhightower/compose2kube" -> "skippbox/kmachine"
@@ -278,6 +382,21 @@ digraph G {
 "poseidon/matchbox" -> "coreos/docs"
 "poseidon/matchbox" -> "kelseyhightower/coreos-ipxe-server"
 "poseidon/matchbox" -> "digitalrebar/provision" ["e"=1]
+"GoogleCloudPlatform/cloud-sql-proxy" -> "jetstack/kube-lego" ["e"=1]
+"GoogleCloudPlatform/cloud-sql-proxy" -> "GoogleCloudPlatform/k8s-stackdriver" ["e"=1]
+"hashicorp/best-practices" -> "kz8s/tack" ["e"=1]
+"redspread/spread" -> "helm/helm-classic" ["e"=1]
+"redspread/spread" -> "coreos/coreos-kubernetes" ["e"=1]
+"redspread/spread" -> "kelseyhightower/kube-cert-manager" ["e"=1]
+"GoogleCloudPlatform/continuous-deployment-on-kubernetes" -> "jetstack/kube-lego" ["e"=1]
+"GoogleCloudPlatform/continuous-deployment-on-kubernetes" -> "voyagermesh/voyager" ["e"=1]
+"GoogleCloudPlatform/continuous-deployment-on-kubernetes" -> "GoogleCloudPlatform/k8s-multicluster-ingress" ["e"=1]
+"coreos/torus" -> "coreos/coreos-kubernetes" ["e"=1]
+"coreos/torus" -> "helm/helm-classic" ["e"=1]
+"coreos/torus" -> "poseidon/matchbox" ["e"=1]
+"kobolog/gorb" -> "kelseyhightower/vault-controller" ["e"=1]
+"kobolog/gorb" -> "coreroller/coreroller" ["e"=1]
+"Yelp/paasta" -> "helm/helm-classic" ["e"=1]
 "coreos/coreos-kubernetes" -> "kubernetes-retired/kube-aws" ["e"=1]
 "coreos/coreos-kubernetes" -> "coreos/coreos-vagrant"
 "coreos/coreos-kubernetes" -> "poseidon/matchbox"
@@ -293,6 +412,10 @@ digraph G {
 "coreos/coreos-kubernetes" -> "coreos/docs"
 "coreos/coreos-kubernetes" -> "kelseyhightower/kube-cert-manager"
 "coreos/coreos-kubernetes" -> "kubernetes-retired/kubedash"
+"machine-drivers/docker-machine-driver-xhyve" -> "coreos/coreos-xhyve" ["e"=1]
+"machine-drivers/docker-machine-driver-xhyve" -> "TheNewNormal/kube-solo-osx" ["e"=1]
+"alex/letsencrypt-aws" -> "wearemolecule/route53-kubernetes" ["e"=1]
+"operable/cog" -> "helm/helm-classic" ["e"=1]
 "deis/etcd" -> "deis/pkg"
 "deis/etcd" -> "deis/postgres"
 "helm/charts-classic" -> "helm/helm-classic"
@@ -319,6 +442,7 @@ digraph G {
 "TheNewNormal/kube-cluster-osx" -> "TheNewNormal/corectl.app"
 "TheNewNormal/kube-cluster-osx" -> "TheNewNormal/coreos-osx"
 "TheNewNormal/kube-cluster-osx" -> "rimusz/coreos-kubernetes-cluster-osx"
+"danderson/pixiecore" -> "coreos/coreos-xhyve" ["e"=1]
 "TheNewNormal/kube-solo-osx" -> "TheNewNormal/kube-cluster-osx"
 "TheNewNormal/kube-solo-osx" -> "TheNewNormal/corectl.app"
 "TheNewNormal/kube-solo-osx" -> "TheNewNormal/coreos-osx"
@@ -355,6 +479,9 @@ digraph G {
 "kubernetes-retired/kubernetes-anywhere" -> "upmc-enterprises/kubernetes-secret-manager"
 "kubernetes-retired/kubernetes-anywhere" -> "kubernetes-retired/frakti" ["e"=1]
 "coreroller/coreroller" -> "coreos/container-linux-update-operator"
+"luxas/kubernetes-on-arm" -> "kelseyhightower/kubernetes-cluster-federation" ["e"=1]
+"luxas/kubernetes-on-arm" -> "kubicorn/kubicorn" ["e"=1]
+"luxas/kubernetes-on-arm" -> "kelseyhightower/konfd" ["e"=1]
 "skippbox/kompose" -> "skippbox/skippbox"
 "deis/docker-go-dev" -> "deis/slugbuilder"
 "deis/docker-go-dev" -> "deis/slugrunner"
@@ -386,6 +513,7 @@ digraph G {
 "deis/builder" -> "deis/monitor"
 "deis/builder" -> "deis/charts"
 "deis/builder" -> "deis/pkg"
+"redhat-developer-tooling/openshift-vagrant" -> "jim-minter/kafkanetes" ["e"=1]
 "deis/minio" -> "deis/slugrunner"
 "deis/minio" -> "deis/slugbuilder"
 "deis/minio" -> "deis/etcd"
@@ -412,6 +540,8 @@ digraph G {
 "skippbox/skippbox" -> "skippbox/boot2k8s"
 "skippbox/skippbox" -> "skippbox/kmachine"
 "skippbox/boot2k8s" -> "skippbox/skippbox"
+"dmacvicar/terraform-provider-libvirt" -> "poseidon/matchbox" ["e"=1]
+"meshbird/meshbird" -> "kubicorn/kubicorn" ["e"=1]
 "jetstack/kube-lego" -> "kelseyhightower/kube-cert-manager"
 "jetstack/kube-lego" -> "kubernetes-retired/contrib" ["e"=1]
 "jetstack/kube-lego" -> "cert-manager/cert-manager" ["e"=1]
@@ -427,6 +557,12 @@ digraph G {
 "jetstack/kube-lego" -> "kubernetes-retired/bootkube"
 "jetstack/kube-lego" -> "kubernetes-retired/kube-aws" ["e"=1]
 "jetstack/kube-lego" -> "brigadecore/brigade" ["e"=1]
+"kubernetes/release" -> "kubernetes-retired/kubernetes-anywhere" ["e"=1]
+"kelseyhightower/app" -> "kelseyhightower/kubernetes-initializer-tutorial" ["e"=1]
+"projectcalico/canal" -> "coreos/coreos-kubernetes" ["e"=1]
+"projectcalico/canal" -> "helm/helm-classic" ["e"=1]
+"projectcalico/canal" -> "coreroller/coreroller" ["e"=1]
+"google/go-jsonnet" -> "ksonnet/ksonnet-lib" ["e"=1]
 "deis/workflow" -> "deis/deis" ["e"=1]
 "deis/workflow" -> "helm/helm-classic"
 "deis/workflow" -> "teamhephy/workflow"
@@ -442,7 +578,9 @@ digraph G {
 "deis/workflow" -> "deis/builder"
 "deis/workflow" -> "kelseyhightower/compose2kube"
 "deis/workflow" -> "kubernetes-retired/kubernetes-anywhere"
+"brikis98/infrastructure-as-code-talk" -> "kz8s/tack" ["e"=1]
 "mheese/journalbeat" -> "Bayer-Group/etcd-aws-cluster"
+"stripe/veneur" -> "kubicorn/kubicorn" ["e"=1]
 "kubernetes-retired/bootkube" -> "poseidon/matchbox"
 "kubernetes-retired/bootkube" -> "coreos/tectonic-installer"
 "kubernetes-retired/bootkube" -> "coreos/container-linux-update-operator"
@@ -458,6 +596,7 @@ digraph G {
 "kubernetes-retired/bootkube" -> "kubernetes-retired/kubeadm-dind-cluster"
 "kubernetes-retired/bootkube" -> "voyagermesh/voyager"
 "kubernetes-retired/bootkube" -> "jtblin/kube2iam" ["e"=1]
+"danderson/netboot" -> "poseidon/matchbox" ["e"=1]
 "kubernetes-retired/kube-deploy" -> "kubernetes-retired/kubernetes-anywhere"
 "kubernetes-retired/kube-deploy" -> "kubernetes-retired/bootkube"
 "kubernetes-retired/kube-deploy" -> "kubernetes-retired/frakti" ["e"=1]
@@ -482,7 +621,10 @@ digraph G {
 "openai/kubernetes-ec2-autoscaler" -> "coreos/coreos-kubernetes"
 "openai/kubernetes-ec2-autoscaler" -> "openai/requests-for-research" ["e"=1]
 "openai/kubernetes-ec2-autoscaler" -> "weaveworks/kubediff" ["e"=1]
+"jtblin/kube2iam" -> "Boostport/kubernetes-vault" ["e"=1]
+"genuinetools/contained.af" -> "kubicorn/kubicorn" ["e"=1]
 "fabric8io/kansible" -> "hawtio/hawtio-kubernetes"
+"MatchbookLab/local-persist" -> "ibuildthecloud/systemd-docker" ["e"=1]
 "kz8s/tack" -> "hootsuite/atlantis" ["e"=1]
 "kz8s/tack" -> "kubernetes-retired/kube-aws" ["e"=1]
 "kz8s/tack" -> "Bayer-Group/etcd-aws-cluster"
@@ -500,6 +642,7 @@ digraph G {
 "kz8s/tack" -> "coreos/coreos-kubernetes"
 "InQuicker/ktmpl" -> "jimmycuadra/ktmpl"
 "crewjam/etcd-aws" -> "Bayer-Group/etcd-aws-cluster"
+"openservicebrokerapi/servicebroker" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
 "kelseyhightower/kubernetes-cluster-federation" -> "kelseyhightower/kube-cert-manager"
 "kelseyhightower/kubernetes-cluster-federation" -> "kubernetes-retired/kubernetes-anywhere"
 "kelseyhightower/kubernetes-cluster-federation" -> "GoogleCloudPlatform/k8s-multicluster-ingress"
@@ -528,8 +671,24 @@ digraph G {
 "PalmStoneGames/kube-cert-manager" -> "upmc-enterprises/kubernetes-secret-manager"
 "PalmStoneGames/kube-cert-manager" -> "kubicorn/kubicorn"
 "PalmStoneGames/kube-cert-manager" -> "tazjin/kubernetes-letsencrypt"
+"kubernetes-retired/service-catalog" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"kubernetes-retired/service-catalog" -> "ksonnet/ksonnet" ["e"=1]
+"godaddy/kubernetes-client" -> "jetstack/kube-lego" ["e"=1]
+"giantswarm/prometheus" -> "jetstack/kube-lego" ["e"=1]
+"helm/monocular" -> "voyagermesh/voyager" ["e"=1]
+"helm/monocular" -> "kubicorn/kubicorn" ["e"=1]
+"helm/monocular" -> "deis/workflow" ["e"=1]
+"vvanholl/elasticsearch-prometheus-exporter" -> "upmc-enterprises/elasticsearch-operator" ["e"=1]
+"weaveworks/kubediff" -> "coreos/vault-operator" ["e"=1]
+"Yolean/kubernetes-kafka" -> "krallistic/kafka-operator" ["e"=1]
+"segmentio/stack" -> "kz8s/tack" ["e"=1]
+"elastic/elasticsearch-docker" -> "pires/docker-elasticsearch" ["e"=1]
+"kubernetes/git-sync" -> "box/kube-applier" ["e"=1]
+"jimmidyson/configmap-reload" -> "fabric8io/configmapcontroller" ["e"=1]
 "upmc-enterprises/kubernetes-secret-manager" -> "kelseyhightower/vault-controller"
 "upmc-enterprises/kubernetes-secret-manager" -> "wearemolecule/route53-kubernetes"
+"kubernetes-retired/frakti" -> "kubernetes-retired/kube-deploy" ["e"=1]
+"kubernetes-retired/frakti" -> "kubernetes-retired/federation" ["e"=1]
 "TheNewNormal/corectl.app" -> "TheNewNormal/corectl"
 "TheNewNormal/corectl.app" -> "TheNewNormal/kube-solo-osx"
 "kelseyhightower/kube-cert-manager" -> "PalmStoneGames/kube-cert-manager"
@@ -547,9 +706,13 @@ digraph G {
 "kelseyhightower/kube-cert-manager" -> "jtblin/kube2iam" ["e"=1]
 "kelseyhightower/kube-cert-manager" -> "kubernetes-retired/bootkube"
 "kelseyhightower/kube-cert-manager" -> "voyagermesh/voyager"
+"SkeltonThatcher/run-book-template" -> "spotahome/service-level-operator" ["e"=1]
+"CrunchyData/crunchy-containers" -> "voyagermesh/voyager" ["e"=1]
+"CrunchyData/crunchy-containers" -> "jetstack/kube-lego" ["e"=1]
 "micahhausler/k8s-oidc-helper" -> "gini/dexter"
 "micahhausler/k8s-oidc-helper" -> "negz/kuberos"
 "micahhausler/k8s-oidc-helper" -> "ericchiang/kube-oidc"
+"campoy/embedmd" -> "ericchiang/k8s" ["e"=1]
 "poseidon/terraform-provider-ct" -> "poseidon/terraform-render-bootstrap"
 "apprenda/kismatic" -> "kubicorn/kubicorn"
 "apprenda/kismatic" -> "kubernetes-retired/bootkube"
@@ -583,6 +746,17 @@ digraph G {
 "funktionio/funktion-connectors" -> "jim-minter/kafkanetes"
 "funktionio/funktion-connectors" -> "hawtio/hawtio-kubernetes"
 "funktionio/funktion-connectors" -> "helm/helm-classic"
+"bitly/oauth2_proxy" -> "jetstack/kube-lego" ["e"=1]
+"gluster/gluster-kubernetes" -> "apprenda/kismatic" ["e"=1]
+"gluster/gluster-kubernetes" -> "upmc-enterprises/elasticsearch-operator" ["e"=1]
+"etcd-io/zetcd" -> "krallistic/kafka-operator" ["e"=1]
+"apache-spark-on-k8s/spark" -> "krallistic/kafka-operator" ["e"=1]
+"djenriquez/vault-ui" -> "Boostport/kubernetes-vault" ["e"=1]
+"djenriquez/vault-ui" -> "kelseyhightower/vault-controller" ["e"=1]
+"gravitational/workshop" -> "kelseyhightower/intro-to-kubernetes-workshop" ["e"=1]
+"gravitational/workshop" -> "kelseyhightower/pipeline" ["e"=1]
+"Caiyeon/goldfish" -> "Boostport/kubernetes-vault" ["e"=1]
+"Caiyeon/goldfish" -> "coreos/vault-operator" ["e"=1]
 "kubernetes-retired/kubeadm-dind-cluster" -> "kubernetes-retired/bootkube"
 "kubernetes-retired/kubeadm-dind-cluster" -> "marun/nkube"
 "kubernetes-retired/kubeadm-dind-cluster" -> "kubicorn/kubicorn"
@@ -598,6 +772,8 @@ digraph G {
 "kubernetes-retired/kubeadm-dind-cluster" -> "vmware-tanzu/sonobuoy" ["e"=1]
 "kubernetes-retired/kubeadm-dind-cluster" -> "helm/monocular" ["e"=1]
 "kubernetes-retired/kubeadm-dind-cluster" -> "kubernetes-retired/contrib" ["e"=1]
+"kubernetes-up-and-running/kuard" -> "kubicorn/kubicorn" ["e"=1]
+"kubernetes-up-and-running/kuard" -> "jetstack/kube-lego" ["e"=1]
 "Shopify/krane" -> "Shopify/shipit-engine" ["e"=1]
 "Shopify/krane" -> "Shopify/kubeaudit" ["e"=1]
 "Shopify/krane" -> "Shopify/ejson" ["e"=1]
@@ -654,6 +830,10 @@ digraph G {
 "kelseyhightower/vault-controller" -> "target/portauthority"
 "kelseyhightower/vault-controller" -> "ericchiang/k8s"
 "wongnai/kube-slack" -> "ultimateboy/slack8s"
+"kubernetes-retired/kube-aws" -> "coreos/coreos-kubernetes" ["e"=1]
+"kubernetes-retired/kube-aws" -> "kz8s/tack" ["e"=1]
+"kubernetes-retired/kube-aws" -> "jetstack/kube-lego" ["e"=1]
+"kubernetes-retired/kube-aws" -> "kubernetes-retired/bootkube" ["e"=1]
 "Boostport/kubernetes-vault" -> "kelseyhightower/vault-controller"
 "Boostport/kubernetes-vault" -> "djenriquez/vault-ui" ["e"=1]
 "Boostport/kubernetes-vault" -> "jtblin/kube2iam" ["e"=1]
@@ -687,16 +867,21 @@ digraph G {
 "ericchiang/k8s" -> "rook/operator-kit"
 "ericchiang/k8s" -> "errordeveloper/kubegen"
 "ericchiang/k8s" -> "dtan4/k8stail"
+"googlearchive/cloud-functions-emulator" -> "GoogleCloudPlatform/k8s-multicluster-ingress" ["e"=1]
+"camilb/prometheus-kubernetes" -> "uruddarraju/kubernetes-rbac-policies" ["e"=1]
 "kelseyhightower/konfd" -> "kelseyhightower/kube-cert-manager"
 "uruddarraju/kubernetes-rbac-policies" -> "wearemolecule/route53-kubernetes"
 "uruddarraju/kubernetes-rbac-policies" -> "micahhausler/k8s-oidc-helper"
 "uruddarraju/kubernetes-rbac-policies" -> "Mirantis/k8s-daemonupgradecontroller"
 "atlassian/smith" -> "atlassian/kubetoken"
 "atlassian/smith" -> "atlassian/voyager"
+"miracle2k/k8s-snapshots" -> "voyagermesh/voyager" ["e"=1]
 "sapcc/kubernetes-operators" -> "sapcc/kube-parrot"
+"devopsgroup-io/vagrant-digitalocean" -> "coreos/coreos-vagrant" ["e"=1]
 "coreos/coreos-overlay" -> "coreos/manifest"
 "coreos/coreos-overlay" -> "coreos/scripts"
 "coreos/coreos-overlay" -> "coreos/portage-stable"
+"zendesk/helm-secrets" -> "jetstack/kube-lego" ["e"=1]
 "coreos/tectonic-installer" -> "kubernetes-retired/bootkube"
 "coreos/tectonic-installer" -> "kubicorn/kubicorn"
 "coreos/tectonic-installer" -> "poseidon/matchbox"
@@ -711,6 +896,13 @@ digraph G {
 "coreos/tectonic-installer" -> "kubernetes-retired/kubernetes-anywhere"
 "coreos/tectonic-installer" -> "apprenda/kismatic"
 "coreos/tectonic-installer" -> "kelseyhightower/kubernetes-initializer-tutorial"
+"cloudflare/unsee" -> "voyagermesh/voyager" ["e"=1]
+"spinnaker/kayenta" -> "Boostport/kubernetes-vault" ["e"=1]
+"luxas/kubeadm-workshop" -> "box/kube-applier" ["e"=1]
+"luxas/kubeadm-workshop" -> "krallistic/kafka-operator" ["e"=1]
+"luxas/kubeadm-workshop" -> "jetstack/kube-lego" ["e"=1]
+"luxas/kubeadm-workshop" -> "kubernetes-retired/kubeadm-dind-cluster" ["e"=1]
+"luxas/kubeadm-workshop" -> "voyagermesh/voyager" ["e"=1]
 "ksonnet/ksonnet-lib" -> "vmware-archive/kubecfg"
 "ksonnet/ksonnet-lib" -> "heptio/vscode-jsonnet"
 "ksonnet/ksonnet-lib" -> "ksonnet/ksonnet"
@@ -719,10 +911,15 @@ digraph G {
 "ksonnet/ksonnet-lib" -> "technosophos/helm-template"
 "ksonnet/ksonnet-lib" -> "jsonnet-bundler/jsonnet-bundler" ["e"=1]
 "ksonnet/ksonnet-lib" -> "GoogleCloudPlatform/metacontroller"
+"apache-spark-on-k8s/kubernetes-HDFS" -> "krallistic/kafka-operator" ["e"=1]
+"stashed/stash" -> "voyagermesh/voyager" ["e"=1]
+"jcmoraisjr/haproxy-ingress" -> "voyagermesh/voyager" ["e"=1]
 "krallistic/kafka-operator" -> "upmc-enterprises/elasticsearch-operator"
 "Philmod/google-cloud-build-slack" -> "stealthybox/container-builder-github-ci-status"
+"config-syncer/config-syncer" -> "voyagermesh/voyager" ["e"=1]
 "apprenda/hands-on-with-kubernetes-workshop" -> "apprenda/berlin-hands-on-workshop"
 "apprenda/hands-on-with-kubernetes-workshop" -> "apprenda/hands-on-with-kubernetes-gke"
+"channable/vaultenv" -> "Boostport/kubernetes-vault" ["e"=1]
 "aaronlevy/kube-controller-demo" -> "sapcc/kubernetes-operators"
 "aaronlevy/kube-controller-demo" -> "rook/operator-kit"
 "negz/kuberos" -> "micahhausler/k8s-oidc-helper"
@@ -746,9 +943,12 @@ digraph G {
 "box/kube-applier" -> "hjacobs/kube-ops-view" ["e"=1]
 "box/kube-applier" -> "InQuicker/ktmpl"
 "giantswarm/aws-operator" -> "giantswarm/operatorkit"
+"sapcc/kubernikus" -> "sapcc/kubernetes-operators" ["e"=1]
 "atlassian/kubetoken" -> "atlassian/ctrl"
 "helm/community" -> "helm/helm-www"
 "helm/community" -> "cncf/k8s-conformance" ["e"=1]
+"Azure/draft-classic" -> "kubicorn/kubicorn" ["e"=1]
+"Azure/draft-classic" -> "jetstack/kube-lego" ["e"=1]
 "vmware-archive/kubecfg" -> "ksonnet/ksonnet-lib"
 "vmware-archive/kubecfg" -> "bitnami/kube-libsonnet" ["e"=1]
 "vmware-archive/kubecfg" -> "vmware-archive/kube-prod-runtime" ["e"=1]
@@ -773,6 +973,10 @@ digraph G {
 "coreos/vault-operator" -> "kelseyhightower/vault-init" ["e"=1]
 "coreos/vault-operator" -> "rook/operator-kit"
 "coreos/vault-operator" -> "sethvargo/vault-kubernetes-authenticator" ["e"=1]
+"databricks/click" -> "voyagermesh/voyager" ["e"=1]
+"grafeas/grafeas" -> "kelseyhightower/grafeas-tutorial" ["e"=1]
+"grafeas/grafeas" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
+"vmware-tanzu/sonobuoy" -> "kubicorn/kubicorn" ["e"=1]
 "Langhalsdino/Kubernetes-GPU-Guide" -> "tensorflow/ecosystem" ["e"=1]
 "Langhalsdino/Kubernetes-GPU-Guide" -> "emergingstack/es-dev-stack" ["e"=1]
 "Langhalsdino/Kubernetes-GPU-Guide" -> "hustcat/k8s-rdma-device-plugin" ["e"=1]
@@ -788,6 +992,9 @@ digraph G {
 "Langhalsdino/Kubernetes-GPU-Guide" -> "gravitational/workshop" ["e"=1]
 "Langhalsdino/Kubernetes-GPU-Guide" -> "kubeflow/mpi-operator" ["e"=1]
 "Langhalsdino/Kubernetes-GPU-Guide" -> "tmulc18/Distributed-TensorFlow-Guide" ["e"=1]
+"cncf/k8s-conformance" -> "kubernetes-retired/bootkube" ["e"=1]
+"cncf/k8s-conformance" -> "kubicorn/kubicorn" ["e"=1]
+"smpio/kubernator" -> "garethr/kubetest" ["e"=1]
 "GoogleCloudPlatform/k8s-stackdriver" -> "GoogleCloudPlatform/k8s-multicluster-ingress"
 "GoogleCloudPlatform/k8s-stackdriver" -> "GoogleCloudPlatform/google-fluentd" ["e"=1]
 "GoogleCloudPlatform/k8s-stackdriver" -> "prometheus-community/stackdriver_exporter"
@@ -810,6 +1017,8 @@ digraph G {
 "christian-posta/envoy-microservices-patterns" -> "bakins/kubernetes-envoy-example"
 "containerum/chkit" -> "containerum/ui"
 "containerum/chkit" -> "containerum/grafana-xxl-solution"
+"kairen/kubeadm-ansible" -> "kubernetes-retired/kubeadm-dind-cluster" ["e"=1]
+"google/cloudprober" -> "GoogleCloudPlatform/metacontroller" ["e"=1]
 "poseidon/typhoon" -> "poseidon/matchbox"
 "poseidon/typhoon" -> "poseidon/terraform-render-bootstrap"
 "poseidon/typhoon" -> "kubernetes-retired/bootkube"
@@ -825,10 +1034,14 @@ digraph G {
 "poseidon/typhoon" -> "cloudnativelabs/kube-router" ["e"=1]
 "poseidon/typhoon" -> "vmware-tanzu/velero" ["e"=1]
 "poseidon/typhoon" -> "hashicorp/terraform-provider-helm" ["e"=1]
+"hootsuite/atlantis" -> "kz8s/tack" ["e"=1]
+"arminc/terraform-ecs" -> "kz8s/tack" ["e"=1]
+"estafette/estafette-gke-preemptible-killer" -> "GoogleCloudPlatform/k8s-multicluster-ingress" ["e"=1]
 "kelseyhightower/nomad-on-kubernetes" -> "kelseyhightower/grafeas-tutorial"
 "kelseyhightower/nomad-on-kubernetes" -> "kelseyhightower/consul-on-kubernetes"
 "kelseyhightower/nomad-on-kubernetes" -> "kelseyhightower/kubernetes-initializer-tutorial"
 "kelseyhightower/nomad-on-kubernetes" -> "hashicorp/faas-nomad" ["e"=1]
+"shyiko/kubesec" -> "Boostport/kubernetes-vault" ["e"=1]
 "prometheus-community/stackdriver_exporter" -> "m-lab/prometheus-bigquery-exporter"
 "kelseyhightower/kubernetes-initializer-tutorial" -> "kelseyhightower/grafeas-tutorial"
 "kelseyhightower/kubernetes-initializer-tutorial" -> "kelseyhightower/denyenv-validating-admission-webhook"
@@ -840,115 +1053,164 @@ digraph G {
 "rook/operator-kit" -> "munnerz/k8s-api-pager-demo"
 "rook/operator-kit" -> "coreos/awesome-kubernetes-extensions"
 "atlassian/voyager" -> "atlassian/ctrl"
+"fabric8io/fabric8" ["l"="-2.337,11.616", "c"=15]
+"deis/workflow" ["l"="10.178,-10.119"]
+"GoogleCloudPlatform/k8s-config-connector" ["l"="45.092,16.539", "c"=213]
+"GoogleCloudPlatform/k8s-multicluster-ingress" ["l"="10.464,-10.015"]
+"kudobuilder/kudo" ["l"="7.737,-9.153", "c"=14]
+"GoogleCloudPlatform/metacontroller" ["l"="10.419,-10.193"]
+"zalando-incubator/es-operator" ["l"="7.483,-8.757", "c"=14]
+"upmc-enterprises/elasticsearch-operator" ["l"="10.476,-10.127"]
+"slok/grafterm" ["l"="4.868,-5.43", "c"=784]
+"spotahome/kooper" ["l"="10.415,-10.244"]
+"genuinetools/img" ["l"="7.839,-8.736", "c"=14]
+"kubicorn/kubicorn" ["l"="10.381,-10.142"]
 "ksonnet/ksonnet" ["l"="10.444,-10.253"]
 "ksonnet/ksonnet-lib" ["l"="10.486,-10.247"]
 "vmware-archive/kubecfg" ["l"="10.481,-10.301"]
-"vmware-tanzu/sonobuoy" ["l"="7.792,-8.968"]
-"projectcontour/contour" ["l"="7.945,-8.942"]
-"kubernetes-retired/service-catalog" ["l"="7.991,-9.085"]
-"kapicorp/kapitan" ["l"="7.721,-9.031"]
-"GoogleCloudPlatform/metacontroller" ["l"="10.419,-10.193"]
-"kubicorn/kubicorn" ["l"="10.381,-10.142"]
-"kubeflow/trainer" ["l"="8.087,-9.331"]
-"kubernetes-sigs/aws-iam-authenticator" ["l"="7.785,-9.173"]
+"vmware-tanzu/sonobuoy" ["l"="7.792,-8.968", "c"=14]
+"projectcontour/contour" ["l"="7.945,-8.942", "c"=14]
+"kubernetes-retired/service-catalog" ["l"="7.991,-9.085", "c"=14]
+"kapicorp/kapitan" ["l"="7.721,-9.031", "c"=14]
+"kubeflow/trainer" ["l"="8.087,-9.331", "c"=14]
+"kubernetes-sigs/aws-iam-authenticator" ["l"="7.785,-9.173", "c"=14]
 "projectcontour/gimbal" ["l"="10.5,-10.279"]
-"Azure/draft-classic" ["l"="7.86,-8.848"]
-"helm/monocular" ["l"="8.029,-8.953"]
-"brigadecore/brigade" ["l"="7.818,-8.832"]
-"kubernetes-retired/kube-batch" ["l"="8.054,-9.32"]
+"Azure/draft-classic" ["l"="7.86,-8.848", "c"=14]
+"helm/monocular" ["l"="8.029,-8.953", "c"=14]
+"brigadecore/brigade" ["l"="7.818,-8.832", "c"=14]
+"kubernetes-retired/kube-batch" ["l"="8.054,-9.32", "c"=14]
+"jpetazzo/dind" ["l"="5.914,-12.277", "c"=270]
+"kubernetes-retired/kubeadm-dind-cluster" ["l"="10.345,-10.173"]
+"hasura/gitkube" ["l"="7.795,-8.824", "c"=14]
+"shubheksha/kubernetes-internals" ["l"="-1.456,-27.906", "c"=760]
+"uber-archive/makisu" ["l"="7.876,-8.894", "c"=14]
+"voyagermesh/voyager" ["l"="10.412,-10.137"]
+"deis/deis" ["l"="5.847,-12.428", "c"=270]
+"helm/helm-classic" ["l"="10.178,-10.088"]
+"vmware-archive/kube-prod-runtime" ["l"="63.109,-1.244", "c"=175]
+"morvencao/kube-sidecar-injector" ["l"="7.935,-9.42", "c"=14]
+"kelseyhightower/denyenv-validating-admission-webhook" ["l"="10.449,-9.986"]
+"cloudworkz/kube-eagle" ["l"="7.628,-9.066", "c"=14]
+"nghialv/promviz" ["l"="9.73,-10.512", "c"=484]
+"bookingcom/shipper" ["l"="7.886,-9.306", "c"=14]
+"Boostport/kubernetes-vault" ["l"="10.406,-10.11"]
+"elgris/microservice-app-example" ["l"="-1.217,-26.777", "c"=814]
+"kelseyhightower/pipeline" ["l"="10.426,-10.036"]
+"Shopify/shipit-engine" ["l"="4.396,-37.623", "c"=1]
+"Shopify/krane" ["l"="10.453,-10.218"]
+"bank-vaults/bank-vaults" ["l"="7.693,-9.268", "c"=14]
+"coreos/vault-operator" ["l"="10.392,-10.186"]
+"replicatedhq/ship" ["l"="7.038,-9.251", "c"=14]
+"mintel/dex-k8s-authenticator" ["l"="9.71,-12.746", "c"=1195]
+"micahhausler/k8s-oidc-helper" ["l"="10.524,-9.993"]
 "ahmetb/gke-letsencrypt" ["l"="10.473,-10.055"]
 "jetstack/kube-lego" ["l"="10.376,-10.11"]
-"GoogleCloudPlatform/k8s-multicluster-ingress" ["l"="10.464,-10.015"]
-"kubernetes/ingress-gce" ["l"="8.538,-43.967"]
-"GoogleCloudPlatform/gke-managed-certs" ["l"="45.381,16.471"]
+"kubernetes/ingress-gce" ["l"="8.538,-43.967", "c"=1059]
+"GoogleCloudPlatform/gke-managed-certs" ["l"="45.381,16.471", "c"=213]
 "wongnai/kube-slack" ["l"="10.578,-10.048"]
-"kelseyhightower/pipeline" ["l"="10.426,-10.036"]
 "hayorov/helm-gcs" ["l"="10.6,-10"]
-"Boostport/kubernetes-vault" ["l"="10.406,-10.11"]
-"cert-manager/cert-manager" ["l"="8.042,-8.834"]
+"cert-manager/cert-manager" ["l"="8.042,-8.834", "c"=14]
 "PalmStoneGames/kube-cert-manager" ["l"="10.427,-10.071"]
 "kelseyhightower/ingress-with-static-ip" ["l"="10.537,-10.041"]
 "kelseyhightower/kube-cert-manager" ["l"="10.362,-10.078"]
-"voyagermesh/voyager" ["l"="10.412,-10.137"]
 "GoogleCloudPlatform/k8s-stackdriver" ["l"="10.501,-9.974"]
-"zendesk/helm-secrets" ["l"="7.66,-9.05"]
+"zendesk/helm-secrets" ["l"="7.66,-9.05", "c"=14]
 "containerum/containerum" ["l"="10.257,-9.893"]
 "containerum/chkit" ["l"="10.237,-9.844"]
 "containerum/letskube" ["l"="10.232,-9.862"]
 "containerum/ui" ["l"="10.252,-9.86"]
 "apprenda/kismatic" ["l"="10.331,-10.064"]
+"cablespaghetti/kubeadm-aws" ["l"="7.716,-8.719", "c"=14]
+"poseidon/typhoon" ["l"="10.314,-10.13"]
+"dgageot/demoit" ["l"="30.622,-24.865", "c"=523]
+"garethr/kubetest" ["l"="10.368,-10.279"]
+"flynn/flynn" ["l"="5.767,-12.405", "c"=270]
 "coreos/docs" ["l"="10.206,-10.048"]
 "coreos/coreos-kubernetes" ["l"="10.269,-10.08"]
 "coreos/coreos-cloudinit" ["l"="10.164,-9.99"]
-"coreos/fleet" ["l"="5.816,-12.45"]
+"coreos/fleet" ["l"="5.816,-12.45", "c"=270]
 "coreos/toolbox" ["l"="10.15,-10.017"]
 "coreos/coreos-vagrant" ["l"="10.179,-10.038"]
 "poseidon/matchbox" ["l"="10.266,-10.108"]
 "coreos/scripts" ["l"="10.118,-10.011"]
 "kubernetes-retired/cluster-registry" ["l"="10.501,-10.055"]
 "kelseyhightower/kubernetes-cluster-federation" ["l"="10.355,-10.045"]
-"estafette/estafette-gke-preemptible-killer" ["l"="45.365,16.517"]
+"estafette/estafette-gke-preemptible-killer" ["l"="45.365,16.517", "c"=213]
 "kubernetes-retired/federation" ["l"="10.494,-9.944"]
 "ianlewis/memcached-operator" ["l"="10.491,-10.024"]
-"cloudendpoints/esp" ["l"="-14.033,-2.057"]
+"cloudendpoints/esp" ["l"="-14.033,-2.057", "c"=152]
+"google/lmctfy" ["l"="5.784,-12.507", "c"=270]
+"bitnami/kube-libsonnet" ["l"="9.518,-11.322", "c"=834]
+"ehazlett/stellar" ["l"="7.669,-8.545", "c"=14]
+"jessfraz/k8s-snowflake" ["l"="10.443,-10.108"]
+"kubeguard/guard" ["l"="7.504,-9.514", "c"=14]
+"github-release/github-release" ["l"="3.842,-8.163", "c"=0]
+"wagoodman/bashful" ["l"="45.601,5.106", "c"=1062]
 "kelseyhightower/grafeas-tutorial" ["l"="10.425,-9.975"]
 "kelseyhightower/nomad-on-kubernetes" ["l"="10.409,-10.001"]
 "kelseyhightower/kubernetes-initializer-tutorial" ["l"="10.402,-10.028"]
 "kelseyhightower/pipeline-application" ["l"="10.476,-9.972"]
 "kelseyhightower/istio-ingress-tutorial" ["l"="10.417,-9.939"]
-"jessfraz/k8s-snowflake" ["l"="10.443,-10.108"]
 "kelseyhightower/consul-on-kubernetes" ["l"="10.382,-10.041"]
 "kelseyhightower/intro-to-kubernetes-workshop" ["l"="10.323,-10.013"]
-"kelseyhightower/denyenv-validating-admission-webhook" ["l"="10.449,-9.986"]
 "errordeveloper/kubegen" ["l"="10.471,-10.095"]
-"upmc-enterprises/elasticsearch-operator" ["l"="10.476,-10.127"]
+"grafeas/kritis" ["l"="7.913,-11.455", "c"=285]
 "teamhephy/workflow" ["l"="10.121,-10.155"]
-"deis/workflow" ["l"="10.178,-10.119"]
-"vmware-archive/wardroom" ["l"="39.437,22.75"]
-"cloudfoundry-incubator/kubo-deployment" ["l"="7.839,-13.757"]
+"vmware-archive/wardroom" ["l"="39.437,22.75", "c"=1091]
+"cloudfoundry-incubator/kubo-deployment" ["l"="7.839,-13.757", "c"=507]
+"hashicorp/consul-k8s" ["l"="7.094,-12.835", "c"=666]
+"metaparticle-io/package" ["l"="7.487,-8.5", "c"=14]
 "defunctzombie/ansible-coreos-bootstrap" ["l"="10.144,-9.967"]
-"garethr/kubetest" ["l"="10.368,-10.279"]
+"vmware-archive/tgik" ["l"="7.799,-9.09", "c"=14]
 "viglesiasce/kube-lint" ["l"="10.32,-10.318"]
-"instrumenta/kubeval" ["l"="7.684,-8.938"]
-"spotahome/kooper" ["l"="10.415,-10.244"]
-"planetlabs/draino" ["l"="7.754,-9.166"]
+"instrumenta/kubeval" ["l"="7.684,-8.938", "c"=14]
+"planetlabs/draino" ["l"="7.754,-9.166", "c"=14]
 "k8guard/k8guard-start-from-here" ["l"="10.33,-10.345"]
+"weaveworks/footloose" ["l"="7.648,-8.939", "c"=14]
+"haproxytech/kubernetes-ingress" ["l"="8.488,-9.196", "c"=14]
+"Trow-Registry/trow" ["l"="7.588,-9.133", "c"=14]
 "gini/dexter" ["l"="10.563,-9.971"]
-"micahhausler/k8s-oidc-helper" ["l"="10.524,-9.993"]
+"flatcar/Flatcar" ["l"="7.577,-9.566", "c"=14]
+"Shopify/ejson" ["l"="4.514,-37.828", "c"=1]
 "slok/kube-code-generator" ["l"="10.442,-10.297"]
-"slok/kubewebhook" ["l"="7.775,-9.343"]
+"slok/kubewebhook" ["l"="7.775,-9.343", "c"=14]
 "rook/operator-kit" ["l"="10.381,-10.255"]
 "spotahome/service-level-operator" ["l"="10.417,-10.292"]
 "box/kube-applier" ["l"="10.466,-10.193"]
-"kubernetes-sigs/apiserver-builder-alpha" ["l"="8.037,-9.22"]
+"kubernetes-sigs/apiserver-builder-alpha" ["l"="8.037,-9.22", "c"=14]
 "GoogleCloudPlatform/freshpod" ["l"="10.437,-10.334"]
+"kelseyhightower/vault-on-google-kubernetes-engine" ["l"="45.338,16.516", "c"=213]
+"eko/monday" ["l"="7.694,-9.023", "c"=14]
 "coreos/coreos-overlay" ["l"="10.086,-9.988"]
-"appc/spec" ["l"="5.72,-12.499"]
-"rkt/rkt" ["l"="5.819,-12.402"]
+"appc/spec" ["l"="5.72,-12.499", "c"=270]
+"rkt/rkt" ["l"="5.819,-12.402", "c"=270]
 "pires/kubernetes-vagrant-coreos-cluster" ["l"="10.252,-10.133"]
-"skynetservices/skydns" ["l"="5.85,-12.392"]
-"deis/deis" ["l"="5.847,-12.428"]
-"helm/helm-classic" ["l"="10.178,-10.088"]
+"skynetservices/skydns" ["l"="5.85,-12.392", "c"=270]
 "rancher/os-vagrant" ["l"="10.118,-9.982"]
-"mitchellh/vagrant-aws" ["l"="11.539,-34.933"]
+"mitchellh/vagrant-aws" ["l"="11.539,-34.933", "c"=27]
+"box/kube-iptables-tailer" ["l"="7.353,-8.957", "c"=14]
 "vmware-archive/healthcheck" ["l"="10.452,-10.14"]
 "ericchiang/k8s" ["l"="10.429,-10.168"]
 "kubernetes-retired/kube-deploy" ["l"="10.311,-10.101"]
-"metacontroller/metacontroller" ["l"="7.662,-9.224"]
+"hjacobs/kube-janitor" ["l"="7.507,-8.834", "c"=14]
+"technosophos/helm-template" ["l"="10.542,-10.303"]
+"zalando-incubator/kopf" ["l"="7.613,-8.992", "c"=14]
+"metacontroller/metacontroller" ["l"="7.662,-9.224", "c"=14]
 "atlassian/smith" ["l"="10.371,-10.232"]
-"zalando-incubator/kopf" ["l"="7.613,-8.992"]
-"kubernetes/apiextensions-apiserver" ["l"="8.179,-9.251"]
+"kubernetes/apiextensions-apiserver" ["l"="8.179,-9.251", "c"=14]
 "kubernetes-retired/bootkube" ["l"="10.341,-10.124"]
-"slok/sloth" ["l"="7.55,-9.093"]
+"resouer/k8s-controller-custom-resource" ["l"="8.101,-9.381", "c"=14]
+"slok/sloth" ["l"="7.55,-9.093", "c"=14]
 "viglesiasce/helm-gcs" ["l"="10.629,-9.974"]
 "Philmod/google-cloud-build-slack" ["l"="10.656,-9.982"]
-"kelseyhightower/riff-tutorial" ["l"="7.753,-13.608"]
+"retroryan/istio-workshop" ["l"="29.336,-23.284", "c"=879]
+"kubernetes-sigs/application" ["l"="7.961,-9.259", "c"=14]
+"kelseyhightower/riff-tutorial" ["l"="7.753,-13.608", "c"=507]
 "michaelsauter/crane" ["l"="10.658,-10.268"]
 "ianunruh/monitoring" ["l"="10.705,-10.294"]
 "dtan4/k8stail" ["l"="10.566,-10.218"]
 "kelseyhightower/pipeline-infrastructure-staging" ["l"="10.52,-9.936"]
 "kelseyhightower/kubernetes-envoy-sds" ["l"="10.454,-9.851"]
-"retroryan/istio-workshop" ["l"="29.336,-23.284"]
 "TheNewNormal/coreos-osx" ["l"="10.175,-10.184"]
 "rimusz/coreos-cluster-osx" ["l"="10.145,-10.193"]
 "TheNewNormal/corectl" ["l"="10.185,-10.207"]
@@ -970,41 +1232,61 @@ digraph G {
 "fabric8io/elasticsearch-cloud-kubernetes" ["l"="10.651,-10.112"]
 "pires/docker-elasticsearch-kubernetes" ["l"="10.589,-10.119"]
 "pires/docker-elasticsearch" ["l"="10.632,-10.123"]
+"tinkerbell/tink" ["l"="3.655,-7.04", "c"=0]
+"pires/kubernetes-elasticsearch-cluster" ["l"="8.175,-9.04", "c"=14]
+"clockworksoul/helm-elasticsearch" ["l"="10.537,-10.115"]
 "kelseyhightower/kubestack" ["l"="10.311,-9.947"]
 "kelseyhightower/craft-kubernetes-workshop" ["l"="10.344,-9.978"]
 "kelseyhightower/compose2kube" ["l"="10.253,-10.057"]
-"gravitational/workshop" ["l"="7.992,-8.67"]
-"kelseyhightower/scheduler" ["l"="7.427,-11.424"]
-"kubernetes-retired/contrib" ["l"="8.128,-8.984"]
-"ehazlett/interlock" ["l"="6.144,-12.409"]
+"gravitational/workshop" ["l"="7.992,-8.67", "c"=14]
+"kelseyhightower/scheduler" ["l"="7.427,-11.424", "c"=515]
+"kubernetes-retired/contrib" ["l"="8.128,-8.984", "c"=14]
+"ehazlett/interlock" ["l"="6.144,-12.409", "c"=270]
+"kubernetes-retired/heapster" ["l"="8.198,-8.945", "c"=14]
+"alexellis/awesome-baremetal" ["l"="3.649,-7.16", "c"=0]
+"mitchellh/gon" ["l"="4.419,-8.547", "c"=0]
+"ceph/ceph-container" ["l"="2.385,14.944", "c"=756]
 "ibuildthecloud/systemd-docker" ["l"="10.318,-9.814"]
 "coreroller/coreroller" ["l"="10.31,-9.905"]
 "mheese/journalbeat" ["l"="10.355,-9.838"]
 "dockerimages/docker-systemd" ["l"="10.315,-9.778"]
-"pires/kubernetes-elasticsearch-cluster" ["l"="8.175,-9.04"]
+"eparis/kubernetes-ansible" ["l"="8.438,-9.226", "c"=14]
+"cloudfoundry-attic/lattice-release" ["l"="7.961,-13.71", "c"=507]
 "pires/kubernetes-elk-cluster" ["l"="10.22,-10.229"]
 "udemy-course/Kubernetes-CN" ["l"="10.242,-10.186"]
-"everpeace/vagrant-mesos" ["l"="6.497,-13.194"]
-"rootsongjc/kubernetes-vagrant-centos-cluster" ["l"="8.006,-9.585"]
+"everpeace/vagrant-mesos" ["l"="6.497,-13.194", "c"=837]
+"rootsongjc/kubernetes-vagrant-centos-cluster" ["l"="8.006,-9.585", "c"=14]
 "defunctzombie/coreos-ansible-example" ["l"="10.123,-9.934"]
 "lorieri/deis-dashboard" ["l"="10.022,-10.034"]
 "jumbojett/deis-ui" ["l"="10.05,-10.05"]
 "hawtio/hawtio-kubernetes" ["l"="9.999,-10.156"]
 "fabric8io/fabric8-console" ["l"="9.982,-10.17"]
 "jimmidyson/kuisp" ["l"="9.975,-10.155"]
+"digitalocean/doctl" ["l"="11.384,-34.691", "c"=27]
+"heketi/heketi" ["l"="8.312,-8.959", "c"=14]
+"zalando/skipper" ["l"="7.378,-8.555", "c"=14]
+"machyve/xhyve" ["l"="6.094,-12.326", "c"=270]
+"coreos/container-linux-config-transpiler" ["l"="-16.801,-2.846", "c"=772]
+"coreos/container-linux-update-operator" ["l"="10.308,-10.074"]
+"GoogleCloudPlatform/gcsfuse" ["l"="8.163,-8.092", "c"=14]
+"hvac/hvac" ["l"="7.07,-12.85", "c"=666]
 "kubernetes-retired/kubedash" ["l"="10.152,-10.124"]
 "kubernetes-retired/kube-ui" ["l"="10.124,-10.126"]
-"ailispaw/boot2docker-xhyve" ["l"="6.158,-12.293"]
-"machine-drivers/docker-machine-driver-xhyve" ["l"="6.128,-12.291"]
+"Capgemini/Apollo" ["l"="6.455,-13.26", "c"=837]
+"Capgemini/kubeform" ["l"="10.288,-10.061"]
+"coreos/ignition" ["l"="-16.859,-2.833", "c"=772]
+"ailispaw/boot2docker-xhyve" ["l"="6.158,-12.293", "c"=270]
+"machine-drivers/docker-machine-driver-xhyve" ["l"="6.128,-12.291", "c"=270]
 "kelproject/pykube" ["l"="10.727,-10.109"]
 "mnubo/kubernetes-py" ["l"="10.759,-10.106"]
+"fabric8io/fluent-plugin-kubernetes_metadata_filter" ["l"="12,-2.2", "c"=873]
+"wearemolecule/route53-kubernetes" ["l"="10.379,-10.003"]
 "Bayer-Group/etcd-aws-cluster" ["l"="10.364,-9.92"]
 "crewjam/etcd-aws" ["l"="10.386,-9.929"]
 "UKHomeOffice/docker-logstash-kubernetes" ["l"="10.374,-9.883"]
-"wearemolecule/route53-kubernetes" ["l"="10.379,-10.003"]
 "pires/docker-logstash" ["l"="10.201,-10.265"]
 "bakins/kubernetes-coreos-terraform" ["l"="10.337,-9.95"]
-"linki/mate" ["l"="7.353,-8.587"]
+"linki/mate" ["l"="7.353,-8.587", "c"=14]
 "upmc-enterprises/kubernetes-secret-manager" ["l"="10.381,-10.07"]
 "skippbox/kmachine" ["l"="10.201,-9.971"]
 "skippbox/skippbox" ["l"="10.188,-9.953"]
@@ -1023,168 +1305,198 @@ digraph G {
 "deis/builder" ["l"="10.142,-10.092"]
 "deis/charts" ["l"="10.121,-10.094"]
 "deis/registry" ["l"="10.111,-10.099"]
+"sivasamyk/logtrail" ["l"="-3.591,8.874", "c"=540]
+"grammarly/rocker" ["l"="5.845,-12.33", "c"=270]
+"ghostunnel/ghostunnel" ["l"="8.525,-8.961", "c"=14]
+"hyperhq/hypernetes" ["l"="8.468,-9.357", "c"=14]
+"kubernetes-retired/kubernetes-anywhere" ["l"="10.288,-10.096"]
 "kelseyhightower/konfd" ["l"="10.314,-10.043"]
 "helm/charts-classic" ["l"="10.134,-10.066"]
 "funktionio/funktion-connectors" ["l"="10.076,-10.128"]
 "deis/router" ["l"="10.12,-10.071"]
-"poseidon/typhoon" ["l"="10.314,-10.13"]
-"coreos/ignition" ["l"="-16.859,-2.833"]
 "poseidon/terraform-provider-matchbox" ["l"="10.22,-10.078"]
 "coreos/tectonic-installer" ["l"="10.328,-10.092"]
-"coreos/container-linux-update-operator" ["l"="10.308,-10.074"]
-"danderson/netboot" ["l"="3.681,-7.52"]
-"coreos/container-linux-config-transpiler" ["l"="-16.801,-2.846"]
+"danderson/netboot" ["l"="3.681,-7.52", "c"=0]
 "poseidon/terraform-render-bootstrap" ["l"="10.287,-10.17"]
-"coreos/torus" ["l"="3.94,-8.089"]
-"Capgemini/kubeform" ["l"="10.288,-10.061"]
+"coreos/torus" ["l"="3.94,-8.089", "c"=0]
 "kelseyhightower/coreos-ipxe-server" ["l"="10.222,-10.101"]
-"digitalrebar/provision" ["l"="63.118,-1.219"]
-"kubernetes-retired/kube-aws" ["l"="7.725,-8.929"]
-"projectcalico/canal" ["l"="8.457,-9.376"]
-"kubernetes-retired/kubernetes-anywhere" ["l"="10.288,-10.096"]
+"digitalrebar/provision" ["l"="63.118,-1.219", "c"=175]
+"GoogleCloudPlatform/cloud-sql-proxy" ["l"="44.994,16.577", "c"=213]
+"hashicorp/best-practices" ["l"="10.327,-6.196", "c"=162]
+"kz8s/tack" ["l"="10.338,-10.031"]
+"redspread/spread" ["l"="3.943,-7.919", "c"=0]
+"GoogleCloudPlatform/continuous-deployment-on-kubernetes" ["l"="8.151,-8.975", "c"=14]
+"kobolog/gorb" ["l"="3.818,-8.03", "c"=0]
+"kelseyhightower/vault-controller" ["l"="10.41,-10.092"]
+"Yelp/paasta" ["l"="6.512,-13.294", "c"=837]
+"kubernetes-retired/kube-aws" ["l"="7.725,-8.929", "c"=14]
+"projectcalico/canal" ["l"="8.457,-9.376", "c"=14]
+"alex/letsencrypt-aws" ["l"="9.995,-6.337", "c"=162]
+"operable/cog" ["l"="4.906,15.131", "c"=44]
 "deis/minio" ["l"="10.104,-10.06"]
 "helm/helm-www" ["l"="10.089,-10.075"]
+"danderson/pixiecore" ["l"="3.839,-7.659", "c"=0]
 "XQuartz/xhyve_old" ["l"="10.152,-10.158"]
-"hyperhq/hypernetes" ["l"="8.468,-9.357"]
 "cncf/demo" ["l"="10.262,-10.162"]
-"kubernetes-retired/frakti" ["l"="8.389,-9.303"]
+"kubernetes-retired/frakti" ["l"="8.389,-9.303", "c"=14]
+"luxas/kubernetes-on-arm" ["l"="7.697,-8.321", "c"=14]
 "deis/docker-go-dev" ["l"="10.072,-10.091"]
+"redhat-developer-tooling/openshift-vagrant" ["l"="10.748,-11.388", "c"=431]
+"jim-minter/kafkanetes" ["l"="10.043,-10.142"]
 "appropriate/docker-nc" ["l"="10.186,-10.288"]
 "deis/logger" ["l"="10.089,-10.103"]
-"jtblin/kube2iam" ["l"="7.806,-9.05"]
+"dmacvicar/terraform-provider-libvirt" ["l"="8.519,-12.473", "c"=600]
+"meshbird/meshbird" ["l"="3.942,-8.156", "c"=0]
+"jtblin/kube2iam" ["l"="7.806,-9.05", "c"=14]
+"kubernetes/release" ["l"="30.659,-24.682", "c"=523]
+"kelseyhightower/app" ["l"="45.011,16.662", "c"=213]
+"google/go-jsonnet" ["l"="9.587,-11.326", "c"=834]
 "deis/steward" ["l"="10.104,-10.179"]
-"flynn/flynn" ["l"="5.767,-12.405"]
-"kubernetes-retired/kubeadm-dind-cluster" ["l"="10.345,-10.173"]
-"projectatomic/nulecule" ["l"="-17.621,-3.017"]
+"brikis98/infrastructure-as-code-talk" ["l"="10.311,-6.135", "c"=162]
+"stripe/veneur" ["l"="8.168,-9.009", "c"=14]
+"projectatomic/nulecule" ["l"="-17.621,-3.017", "c"=2006]
 "openai/kubernetes-ec2-autoscaler" ["l"="10.291,-10.025"]
-"microsoft/KubeGPU" ["l"="7.513,-11.325"]
-"google/prettytensor" ["l"="47.797,28.994"]
-"openai/roboschool" ["l"="57.483,18.154"]
+"microsoft/KubeGPU" ["l"="7.513,-11.325", "c"=515]
+"google/prettytensor" ["l"="47.797,28.994", "c"=89]
+"openai/roboschool" ["l"="57.483,18.154", "c"=45]
 "Langhalsdino/Kubernetes-GPU-Guide" ["l"="10.249,-10.015"]
-"openai/universe-starter-agent" ["l"="57.388,18.152"]
-"openai/vime" ["l"="57.39,18.273"]
-"kz8s/tack" ["l"="10.338,-10.031"]
-"openai/requests-for-research" ["l"="57.37,18.041"]
-"weaveworks/kubediff" ["l"="7.666,-8.978"]
+"openai/universe-starter-agent" ["l"="57.388,18.152", "c"=45]
+"openai/vime" ["l"="57.39,18.273", "c"=45]
+"openai/requests-for-research" ["l"="57.37,18.041", "c"=45]
+"weaveworks/kubediff" ["l"="7.666,-8.978", "c"=14]
+"genuinetools/contained.af" ["l"="7.75,-8.622", "c"=14]
 "fabric8io/kansible" ["l"="9.947,-10.175"]
-"hootsuite/atlantis" ["l"="10.272,-6.156"]
+"MatchbookLab/local-persist" ["l"="6.155,-12.38", "c"=270]
+"hootsuite/atlantis" ["l"="10.272,-6.156", "c"=162]
 "xuwang/aws-terraform" ["l"="10.296,-9.968"]
-"hashicorp/best-practices" ["l"="10.327,-6.196"]
 "xuwang/kube-aws-terraform" ["l"="10.32,-9.978"]
-"kelseyhightower/vault-controller" ["l"="10.41,-10.092"]
-"hashicorp/envconsul" ["l"="7.069,-12.904"]
+"hashicorp/envconsul" ["l"="7.069,-12.904", "c"=666]
+"openservicebrokerapi/servicebroker" ["l"="7.968,-13.797", "c"=507]
 "kelseyhightower/docker-kubernetes-tls-guide" ["l"="10.355,-10.001"]
 "metral/corekube" ["l"="10.369,-9.964"]
 "uruddarraju/kubernetes-rbac-policies" ["l"="10.437,-10.006"]
-"thockin/kube-demos" ["l"="7.605,-8.022"]
-"zalando-incubator/kube-ingress-aws-controller" ["l"="7.446,-8.656"]
+"thockin/kube-demos" ["l"="7.605,-8.022", "c"=14]
+"zalando-incubator/kube-ingress-aws-controller" ["l"="7.446,-8.656", "c"=14]
 "tazjin/kubernetes-letsencrypt" ["l"="10.504,-10.082"]
+"godaddy/kubernetes-client" ["l"="-0.55,-33.736", "c"=110]
+"giantswarm/prometheus" ["l"="8.016,-8.97", "c"=14]
+"vvanholl/elasticsearch-prometheus-exporter" ["l"="9.304,-10.557", "c"=484]
+"Yolean/kubernetes-kafka" ["l"="-0.664,16.96", "c"=398]
+"krallistic/kafka-operator" ["l"="10.524,-10.141"]
+"segmentio/stack" ["l"="10.221,-6.277", "c"=162]
+"elastic/elasticsearch-docker" ["l"="-3.805,9.056", "c"=540]
+"kubernetes/git-sync" ["l"="7.744,-9.01", "c"=14]
+"jimmidyson/configmap-reload" ["l"="7.852,-9.152", "c"=14]
+"fabric8io/configmapcontroller" ["l"="10.58,-10.162"]
+"SkeltonThatcher/run-book-template" ["l"="24.13,-31.265", "c"=304]
+"CrunchyData/crunchy-containers" ["l"="2.762,13.678", "c"=257]
 "negz/kuberos" ["l"="10.542,-9.961"]
 "ericchiang/kube-oidc" ["l"="10.558,-9.993"]
+"campoy/embedmd" ["l"="4.255,-8.166", "c"=0]
 "poseidon/terraform-provider-ct" ["l"="10.259,-10.237"]
 "apprenda/hands-on-with-kubernetes-workshop" ["l"="10.276,-9.981"]
-"gluster/gluster-kubernetes" ["l"="8.175,-8.984"]
-"hjacobs/kube-ops-view" ["l"="7.673,-8.877"]
+"gluster/gluster-kubernetes" ["l"="8.175,-8.984", "c"=14]
+"hjacobs/kube-ops-view" ["l"="7.673,-8.877", "c"=14]
 "drud/vault-consul-on-kube" ["l"="10.396,-9.971"]
-"kelseyhightower/vault-on-google-kubernetes-engine" ["l"="45.338,16.516"]
-"hashicorp/consul-k8s" ["l"="7.094,-12.835"]
-"jim-minter/kafkanetes" ["l"="10.043,-10.142"]
+"bitly/oauth2_proxy" ["l"="8.207,-8.879", "c"=14]
+"etcd-io/zetcd" ["l"="6.308,-13.229", "c"=837]
+"apache-spark-on-k8s/spark" ["l"="-2.702,14.956", "c"=43]
+"djenriquez/vault-ui" ["l"="7.127,-12.875", "c"=666]
+"Caiyeon/goldfish" ["l"="7.102,-12.887", "c"=666]
 "marun/nkube" ["l"="10.321,-10.229"]
-"Mirantis/virtlet" ["l"="8.379,-9.324"]
-"luxas/kubeadm-workshop" ["l"="7.777,-8.681"]
-"cloudnativelabs/kube-router" ["l"="8.087,-9.111"]
-"vmware-archive/kubewatch" ["l"="7.733,-8.992"]
-"coreos/etcd-operator" ["l"="8.122,-9.171"]
-"Shopify/krane" ["l"="10.453,-10.218"]
-"Shopify/shipit-engine" ["l"="4.396,-37.623"]
-"Shopify/kubeaudit" ["l"="7.519,-8.862"]
-"Shopify/ejson" ["l"="4.514,-37.828"]
-"Shopify/job-iteration" ["l"="4.412,-37.711"]
-"segmentio/chamber" ["l"="10.242,-6.329"]
-"pulumi/kubespy" ["l"="7.662,-8.897"]
-"Shopify/semian" ["l"="4.412,-37.666"]
-"fabric8io/configmapcontroller" ["l"="10.58,-10.162"]
+"Mirantis/virtlet" ["l"="8.379,-9.324", "c"=14]
+"luxas/kubeadm-workshop" ["l"="7.777,-8.681", "c"=14]
+"cloudnativelabs/kube-router" ["l"="8.087,-9.111", "c"=14]
+"vmware-archive/kubewatch" ["l"="7.733,-8.992", "c"=14]
+"coreos/etcd-operator" ["l"="8.122,-9.171", "c"=14]
+"kubernetes-up-and-running/kuard" ["l"="7.829,-8.963", "c"=14]
+"Shopify/kubeaudit" ["l"="7.519,-8.862", "c"=14]
+"Shopify/job-iteration" ["l"="4.412,-37.711", "c"=1]
+"segmentio/chamber" ["l"="10.242,-6.329", "c"=162]
+"pulumi/kubespy" ["l"="7.662,-8.897", "c"=14]
+"Shopify/semian" ["l"="4.412,-37.666", "c"=1]
 "mfojtik/k8s-trigger-controller" ["l"="10.617,-10.163"]
 "jenkins-x/exposecontroller" ["l"="10.622,-10.186"]
-"krallistic/kafka-operator" ["l"="10.524,-10.141"]
-"zalando-incubator/es-operator" ["l"="7.483,-8.757"]
-"vvanholl/elasticsearch-prometheus-exporter" ["l"="9.304,-10.557"]
-"clockworksoul/helm-elasticsearch" ["l"="10.537,-10.115"]
-"solo-io/kubesquash" ["l"="6.706,-10.809"]
-"stashed/stash" ["l"="7.585,-9.473"]
-"config-syncer/config-syncer" ["l"="7.568,-9.345"]
-"kubeguard/guard" ["l"="7.504,-9.514"]
-"ops-center/searchlight" ["l"="7.492,-9.567"]
-"pharmer/pharmer" ["l"="7.507,-9.581"]
-"kubedb/docs" ["l"="7.523,-9.575"]
-"kubedb/cli" ["l"="7.517,-9.559"]
-"jcmoraisjr/haproxy-ingress" ["l"="8.131,-9.111"]
-"kubevault/kubevault" ["l"="7.523,-9.585"]
-"kubedb/apimachinery" ["l"="7.51,-9.594"]
+"solo-io/kubesquash" ["l"="6.706,-10.809", "c"=1278]
+"stashed/stash" ["l"="7.585,-9.473", "c"=14]
+"config-syncer/config-syncer" ["l"="7.568,-9.345", "c"=14]
+"ops-center/searchlight" ["l"="7.492,-9.567", "c"=14]
+"pharmer/pharmer" ["l"="7.507,-9.581", "c"=14]
+"kubedb/docs" ["l"="7.523,-9.575", "c"=14]
+"kubedb/cli" ["l"="7.517,-9.559", "c"=14]
+"jcmoraisjr/haproxy-ingress" ["l"="8.131,-9.111", "c"=14]
+"kubevault/kubevault" ["l"="7.523,-9.585", "c"=14]
+"kubedb/apimachinery" ["l"="7.51,-9.594", "c"=14]
 "technosophos/helm-ksonnet" ["l"="10.454,-10.078"]
-"kobolog/gorb" ["l"="3.818,-8.03"]
 "target/portauthority" ["l"="10.406,-10.163"]
 "ultimateboy/slack8s" ["l"="10.623,-10.043"]
-"djenriquez/vault-ui" ["l"="7.127,-12.875"]
-"coreos/vault-operator" ["l"="10.392,-10.186"]
-"Caiyeon/goldfish" ["l"="7.102,-12.887"]
-"UKHomeOffice/vault-sidekick" ["l"="7.029,-12.684"]
-"sethvargo/vault-kubernetes-authenticator" ["l"="45.317,16.472"]
+"UKHomeOffice/vault-sidekick" ["l"="7.029,-12.684", "c"=666]
+"sethvargo/vault-kubernetes-authenticator" ["l"="45.317,16.472", "c"=213]
 "coreos/torcx" ["l"="10.281,-10.14"]
 "giantswarm/operatorkit" ["l"="10.374,-10.303"]
+"googlearchive/cloud-functions-emulator" ["l"="43.903,16.55", "c"=473]
+"camilb/prometheus-kubernetes" ["l"="7.853,-8.984", "c"=14]
 "Mirantis/k8s-daemonupgradecontroller" ["l"="10.454,-9.964"]
 "atlassian/kubetoken" ["l"="10.334,-10.276"]
 "atlassian/voyager" ["l"="10.337,-10.258"]
+"miracle2k/k8s-snapshots" ["l"="7.19,-8.869", "c"=14]
 "sapcc/kubernetes-operators" ["l"="10.398,-10.347"]
 "sapcc/kube-parrot" ["l"="10.4,-10.384"]
+"devopsgroup-io/vagrant-digitalocean" ["l"="11.497,-34.864", "c"=27]
 "coreos/manifest" ["l"="10.04,-9.968"]
 "coreos/portage-stable" ["l"="10.063,-9.96"]
 "coreos/tectonic-forum" ["l"="10.308,-10.155"]
+"cloudflare/unsee" ["l"="9.57,-10.558", "c"=484]
+"spinnaker/kayenta" ["l"="7.56,-8.705", "c"=14]
 "heptio/vscode-jsonnet" ["l"="10.531,-10.271"]
 "ksonnet/parts" ["l"="10.521,-10.25"]
-"technosophos/helm-template" ["l"="10.542,-10.303"]
-"jsonnet-bundler/jsonnet-bundler" ["l"="9.557,-11.333"]
+"jsonnet-bundler/jsonnet-bundler" ["l"="9.557,-11.333", "c"=834]
+"apache-spark-on-k8s/kubernetes-HDFS" ["l"="-2.801,15.108", "c"=43]
 "stealthybox/container-builder-github-ci-status" ["l"="10.683,-9.971"]
 "apprenda/berlin-hands-on-workshop" ["l"="10.257,-9.958"]
 "apprenda/hands-on-with-kubernetes-gke" ["l"="10.262,-9.939"]
+"channable/vaultenv" ["l"="6.994,-12.879", "c"=666]
 "aaronlevy/kube-controller-demo" ["l"="10.392,-10.325"]
 "giantswarm/aws-operator" ["l"="10.355,-10.332"]
 "giantswarm/cert-operator" ["l"="10.371,-10.347"]
 "giantswarm/kvm-operator" ["l"="10.359,-10.367"]
 "LeastAuthority/kubetop" ["l"="10.531,-10.204"]
-"box/kube-iptables-tailer" ["l"="7.353,-8.957"]
 "concur/kubegowatcher" ["l"="10.504,-10.204"]
+"sapcc/kubernikus" ["l"="1.093,14.989", "c"=857]
 "atlassian/ctrl" ["l"="10.315,-10.281"]
 "helm/community" ["l"="10.005,-10.07"]
-"cncf/k8s-conformance" ["l"="8.02,-9.171"]
-"bitnami/kube-libsonnet" ["l"="9.518,-11.322"]
-"vmware-archive/kube-prod-runtime" ["l"="63.109,-1.244"]
-"vmware-archive/kube-manifests" ["l"="5.914,-11.893"]
-"databricks/jsonnet-style-guide" ["l"="9.465,-11.35"]
-"kubecfg/kubecfg" ["l"="9.492,-11.312"]
+"cncf/k8s-conformance" ["l"="8.02,-9.171", "c"=14]
+"vmware-archive/kube-manifests" ["l"="5.914,-11.893", "c"=270]
+"databricks/jsonnet-style-guide" ["l"="9.465,-11.35", "c"=834]
+"kubecfg/kubecfg" ["l"="9.492,-11.312", "c"=834]
 "apptio/kr8" ["l"="10.522,-10.349"]
 "splunk/qbec" ["l"="10.493,-10.363"]
-"bank-vaults/bank-vaults" ["l"="7.693,-9.268"]
-"kelseyhightower/vault-init" ["l"="45.398,16.552"]
-"tensorflow/ecosystem" ["l"="58.014,23.44"]
-"emergingstack/es-dev-stack" ["l"="51.46,33.732"]
-"hustcat/k8s-rdma-device-plugin" ["l"="8.319,-9.475"]
-"kubeflow/arena" ["l"="8.097,-9.44"]
-"NVIDIA/deepops" ["l"="7.181,-13.867"]
-"AliyunContainerService/gpushare-scheduler-extender" ["l"="7.284,-11.356"]
+"kelseyhightower/vault-init" ["l"="45.398,16.552", "c"=213]
+"databricks/click" ["l"="7.697,-8.874", "c"=14]
+"grafeas/grafeas" ["l"="7.772,-8.733", "c"=14]
+"tensorflow/ecosystem" ["l"="58.014,23.44", "c"=161]
+"emergingstack/es-dev-stack" ["l"="51.46,33.732", "c"=354]
+"hustcat/k8s-rdma-device-plugin" ["l"="8.319,-9.475", "c"=14]
+"kubeflow/arena" ["l"="8.097,-9.44", "c"=14]
+"NVIDIA/deepops" ["l"="7.181,-13.867", "c"=893]
+"AliyunContainerService/gpushare-scheduler-extender" ["l"="7.284,-11.356", "c"=515]
 "GoogleCloudPlatform/container-engine-accelerators" ["l"="10.22,-9.94"]
 "coreos/awesome-kubernetes-extensions" ["l"="10.314,-10.201"]
-"Azure/kubeflow-labs" ["l"="-46.086,6.759"]
-"kubeflow/mpi-operator" ["l"="8.124,-9.469"]
-"tmulc18/Distributed-TensorFlow-Guide" ["l"="57.879,23.406"]
-"GoogleCloudPlatform/google-fluentd" ["l"="44.912,16.681"]
+"Azure/kubeflow-labs" ["l"="-46.086,6.759", "c"=144]
+"kubeflow/mpi-operator" ["l"="8.124,-9.469", "c"=14]
+"tmulc18/Distributed-TensorFlow-Guide" ["l"="57.879,23.406", "c"=161]
+"smpio/kubernator" ["l"="-1.978,11.12", "c"=15]
+"GoogleCloudPlatform/google-fluentd" ["l"="44.912,16.681", "c"=213]
 "prometheus-community/stackdriver_exporter" ["l"="10.542,-9.897"]
-"genuinetools/img" ["l"="7.839,-8.736"]
-"kubereboot/kured" ["l"="7.689,-9.089"]
-"fluxcd/flux" ["l"="7.864,-8.925"]
-"vmware-tanzu/velero" ["l"="7.935,-8.894"]
-"hashicorp/terraform-provider-helm" ["l"="10.403,-5.955"]
-"hashicorp/faas-nomad" ["l"="7.024,-13.028"]
+"kairen/kubeadm-ansible" ["l"="7.729,-12.853", "c"=739]
+"google/cloudprober" ["l"="9.705,-10.54", "c"=484]
+"kubereboot/kured" ["l"="7.689,-9.089", "c"=14]
+"fluxcd/flux" ["l"="7.864,-8.925", "c"=14]
+"vmware-tanzu/velero" ["l"="7.935,-8.894", "c"=14]
+"hashicorp/terraform-provider-helm" ["l"="10.403,-5.955", "c"=162]
+"arminc/terraform-ecs" ["l"="10.696,-5.129", "c"=147]
+"hashicorp/faas-nomad" ["l"="7.024,-13.028", "c"=666]
+"shyiko/kubesec" ["l"="7.453,-8.848", "c"=14]
 "m-lab/prometheus-bigquery-exporter" ["l"="10.563,-9.867"]
 "lukebond/cc-au-k8s-operators-workshop" ["l"="10.294,-10.235"]
 "munnerz/k8s-api-pager-demo" ["l"="10.392,-10.29"]

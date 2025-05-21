@@ -14,6 +14,8 @@ digraph G {
 "FreeFem/FreeFem-sources" -> "idaholab/moose"
 "FreeFem/FreeFem-sources" -> "trilinos/Trilinos"
 "FreeFem/FreeFem-sources" -> "precice/precice"
+"pycalphad/pycalphad" -> "prisms-center/phaseField" ["e"=1]
+"moderngpu/moderngpu" -> "cusplibrary/cusplibrary" ["e"=1]
 "nodejs/nodejs.dev" -> "unsplash/datasets" ["e"=1]
 "nodejs/nodejs.dev" -> "nodejs/nodejs.org" ["e"=1]
 "nodejs/nodejs.dev" -> "kata-containers/packaging"
@@ -29,6 +31,10 @@ digraph G {
 "nodejs/nodejs.dev" -> "nodejs/community-committee" ["e"=1]
 "nodejs/nodejs.dev" -> "nodejs/corepack" ["e"=1]
 "nodejs/nodejs.dev" -> "nodejs/mentorship" ["e"=1]
+"gunrock/gunrock" -> "cusplibrary/cusplibrary" ["e"=1]
+"barbagroup/CFDPython" -> "su2code/SU2" ["e"=1]
+"barbagroup/CFDPython" -> "surajp92/CFD_Julia" ["e"=1]
+"barbagroup/CFDPython" -> "PyFR/PyFR" ["e"=1]
 "su2code/SU2" -> "PyFR/PyFR"
 "su2code/SU2" -> "OpenFOAM/OpenFOAM-dev" ["e"=1]
 "su2code/SU2" -> "precice/precice"
@@ -44,6 +50,7 @@ digraph G {
 "su2code/SU2" -> "dealii/dealii"
 "su2code/SU2" -> "AMReX-Codes/amrex"
 "su2code/SU2" -> "hystrath/hyStrath"
+"cgarciae/pypeln" -> "charmplusplus/charm4py" ["e"=1]
 "chaos-polymtl/lethe" -> "exadg/exadg"
 "chaos-polymtl/lethe" -> "ucns3d-team/UCNS3D"
 "chaos-polymtl/lethe" -> "cburstedde/p4est"
@@ -70,6 +77,16 @@ digraph G {
 "kinnala/scikit-fem" -> "mfem/mfem"
 "kinnala/scikit-fem" -> "usnistgov/fipy"
 "kinnala/scikit-fem" -> "sigma-py/quadpy" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "kinnala/scikit-fem" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "mfem/mfem" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "trilinos/Trilinos" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "dealii/dealii" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "FEniCS/dolfinx" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "pyamg/pyamg" ["e"=1]
+"nschloe/awesome-scientific-computing" -> "sfepy/sfepy" ["e"=1]
+"prymitive/karma" -> "dotnet/docs.es-es" ["e"=1]
+"triSYCL/triSYCL" -> "UoB-HPC/BabelStream" ["e"=1]
+"thliebig/openEMS-Project" -> "ElmerCSC/elmerfem" ["e"=1]
 "JWock82/Pynite" -> "ritchie46/anaStruct"
 "JWock82/Pynite" -> "robbievanleeuwen/section-properties"
 "JWock82/Pynite" -> "robbievanleeuwen/concrete-properties"
@@ -85,10 +102,18 @@ digraph G {
 "JWock82/Pynite" -> "OpenSees/OpenSees"
 "JWock82/Pynite" -> "jjcremmers/PyFEM"
 "JWock82/Pynite" -> "sfepy/sfepy"
+"marcomusy/vedo" -> "kinnala/scikit-fem" ["e"=1]
+"nschloe/pygmsh" -> "kinnala/scikit-fem" ["e"=1]
+"nschloe/pygmsh" -> "sfepy/sfepy" ["e"=1]
+"nschloe/pygmsh" -> "FEniCS/dolfinx" ["e"=1]
+"nschloe/pygmsh" -> "NGSolve/ngsolve" ["e"=1]
+"nschloe/pygmsh" -> "firedrakeproject/firedrake" ["e"=1]
 "microhh/microhh" -> "dalesteam/dales"
 "microhh/microhh" -> "NCAR/FastEddy-model"
 "microhh/microhh" -> "friedenhe/hercules"
 "microhh/microhh" -> "CaNS-World/CaNS"
+"BLAST-WarpX/warpx" -> "AMReX-Codes/amrex" ["e"=1]
+"BLAST-WarpX/warpx" -> "AMReX-Astro/Castro" ["e"=1]
 "visit-dav/visit" -> "LLNL/conduit"
 "visit-dav/visit" -> "Alpine-DAV/ascent"
 "visit-dav/visit" -> "LLNL/RAJA"
@@ -105,6 +130,23 @@ digraph G {
 "visit-dav/visit" -> "libMesh/libmesh"
 "visit-dav/visit" -> "SmileiPIC/Smilei" ["e"=1]
 "KratosMultiphysics/Examples" -> "KratosMultiphysics/GiDInterface"
+"spack/spack" -> "kokkos/kokkos" ["e"=1]
+"spack/spack" -> "trilinos/Trilinos" ["e"=1]
+"spack/spack" -> "LLNL/RAJA" ["e"=1]
+"spack/spack" -> "mfem/mfem" ["e"=1]
+"flame/blis" -> "Reference-LAPACK/lapack" ["e"=1]
+"flame/blis" -> "ginkgo-project/ginkgo" ["e"=1]
+"flame/blis" -> "kokkos/kokkos" ["e"=1]
+"OpenMathLib/OpenBLAS" -> "Reference-LAPACK/lapack" ["e"=1]
+"OpenMathLib/OpenBLAS" -> "DrTimothyAldenDavis/SuiteSparse" ["e"=1]
+"barbagroup/AeroPython" -> "PyFR/PyFR" ["e"=1]
+"barbagroup/AeroPython" -> "su2code/SU2" ["e"=1]
+"projectchrono/chrono" -> "mfem/mfem" ["e"=1]
+"projectchrono/chrono" -> "KratosMultiphysics/Kratos" ["e"=1]
+"projectchrono/chrono" -> "precice/precice" ["e"=1]
+"projectchrono/chrono" -> "idaholab/moose" ["e"=1]
+"rusty1s/pytorch_sparse" -> "google-research/sputnik" ["e"=1]
+"rusty1s/pytorch_sparse" -> "hgyhungry/ge-spmm" ["e"=1]
 "open-lasso-python/lasso-python-legacy" -> "qd-cae/qd-cae-python"
 "lattice/quda" -> "JeffersonLab/chroma"
 "lattice/quda" -> "paboyle/Grid"
@@ -218,6 +260,7 @@ digraph G {
 "ChenguangZhang/sdfibm" -> "DLR-RY/TwoPhaseFlow" ["e"=1]
 "YaoyaoBae/simchain" -> "YaoyaoBae/Blockchain-simulator-exe"
 "YaoyaoBae/simchain" -> "Relph1119/TinyBlockChains"
+"openai/blocksparse" -> "google-research/sputnik" ["e"=1]
 "eric2003/OneFLOW" -> "andrealani/COOLFluiD"
 "eric2003/OneFLOW" -> "nasa/CFL3D"
 "eric2003/OneFLOW" -> "sergeas67/OpenHyperFLOW2D"
@@ -249,6 +292,7 @@ digraph G {
 "LLNL/hiop" -> "LLNL/camp"
 "LLNL/hiop" -> "LLNL/Umpire"
 "LLNL/hiop" -> "LLNL/serac"
+"polyfem/polyfem" -> "ddemidov/amgcl" ["e"=1]
 "AMReX-Combustion/PeleLM" -> "AMReX-Combustion/PelePhysics"
 "AMReX-Combustion/PeleLM" -> "AMReX-Combustion/PeleC"
 "AMReX-Combustion/PeleLM" -> "AMReX-Combustion/PeleLMeX"
@@ -289,9 +333,12 @@ digraph G {
 "sandialabs/Albany" -> "CEED/libCEED"
 "sandialabs/Albany" -> "Exawind/amr-wind" ["e"=1]
 "sandialabs/Albany" -> "kokkos/kokkos-kernels"
+"AdaptiveCpp/AdaptiveCpp" -> "kokkos/kokkos" ["e"=1]
+"AdaptiveCpp/AdaptiveCpp" -> "LLNL/RAJA" ["e"=1]
 "ParticulateFlow/LIGGGHTS-PFM" -> "ParticulateFlow/CFDEMcoupling-PFM"
 "ParticulateFlow/LIGGGHTS-PFM" -> "ParticulateFlow/DEM-course-tutorials"
 "ParticulateFlow/LIGGGHTS-PFM" -> "schrummy14/LIGGGHTS_Flexible_Fibers"
+"asdf-format/asdf" -> "yt-project/yt" ["e"=1]
 "vmware-archive/kube-prod-runtime" -> "bitnami/kube-libsonnet" ["e"=1]
 "vmware-archive/kube-prod-runtime" -> "vmware-archive/kubecfg" ["e"=1]
 "vmware-archive/kube-prod-runtime" -> "kata-containers/packaging"
@@ -307,6 +354,15 @@ digraph G {
 "vmware-archive/kube-prod-runtime" -> "chainloop-dev/chainloop" ["e"=1]
 "vmware-archive/kube-prod-runtime" -> "prymitive/karma" ["e"=1]
 "vmware-archive/kube-prod-runtime" -> "bookingcom/shipper" ["e"=1]
+"mpi4py/mpi4py" -> "spectralDNS/shenfun" ["e"=1]
+"mpi4py/mpi4py" -> "trilinos/Trilinos" ["e"=1]
+"bookingcom/shipper" -> "vmware-archive/kube-prod-runtime" ["e"=1]
+"trelau/pyOCCT" -> "NGSolve/netgen" ["e"=1]
+"Xiangyu-Hu/SPHinXsys" -> "chaos-polymtl/lethe" ["e"=1]
+"Xiangyu-Hu/SPHinXsys" -> "IBAMR/IBAMR" ["e"=1]
+"Xiangyu-Hu/SPHinXsys" -> "AMReX-Codes/amrex" ["e"=1]
+"Rhymen/go-whatsapp" -> "toggl/mobileapp" ["e"=1]
+"Rhymen/go-whatsapp" -> "kata-containers/packaging" ["e"=1]
 "opencollab/arpack-ng" -> "m-reuter/arpackpp"
 "opencollab/arpack-ng" -> "pomerol-ed/pomerol" ["e"=1]
 "opencollab/arpack-ng" -> "inducer/arpack"
@@ -316,6 +372,10 @@ digraph G {
 "opencollab/arpack-ng" -> "primme/primme"
 "opencollab/arpack-ng" -> "xiaoyeli/superlu"
 "OP-DSL/OP2-Common" -> "OP-DSL/OPS"
+"texworld/betterbib" -> "kinnala/scikit-fem" ["e"=1]
+"KaHIP/KaHIP" -> "KarypisLab/METIS" ["e"=1]
+"KaHIP/KaHIP" -> "KarypisLab/ParMETIS" ["e"=1]
+"cb-geo/mpm" -> "SudoDEM/SudoDEM" ["e"=1]
 "M2DOLab/OpenLSTO" -> "M2DOLab/OpenLSTO-lite"
 "M2DOLab/OpenLSTO" -> "HayoungChung/openmdao_TopOpt"
 "M2DOLab/OpenLSTO" -> "LLNL/MultiscaleTopOpt"
@@ -346,6 +406,7 @@ digraph G {
 "lyc102/ifem" -> "vinhphunguyen/migfem"
 "lyc102/ifem" -> "wangheyu/AFEPack"
 "lyc102/ifem" -> "jjcremmers/PyFEM"
+"suavecode/SUAVE" -> "su2code/SU2" ["e"=1]
 "KIT-FAST/modalAnalysis-OMA-EMA" -> "knutankv/koma"
 "OpenFOAM/OpenFOAM-7" -> "OpenFOAM/ThirdParty-7"
 "OpenFOAM/OpenFOAM-7" -> "OpenFOAM/OpenFOAM-5.x"
@@ -380,7 +441,11 @@ digraph G {
 "pyamg/pyamg" -> "haasad/PyPardiso"
 "pyamg/pyamg" -> "raptor-library/raptor"
 "pyamg/pyamg" -> "nschloe/pygmsh" ["e"=1]
+"mlpack/ensmallen" -> "ddemidov/amgcl" ["e"=1]
+"DualSPHysics/DualSPHysics" -> "AMReX-Codes/amrex" ["e"=1]
 "AMReX-Fluids/incflo" -> "AMReX-Fluids/IAMR"
+"bitnami/kube-libsonnet" -> "vmware-archive/kube-prod-runtime" ["e"=1]
+"analysiscenter/pydens" -> "zwicker-group/py-pde" ["e"=1]
 "NVIDIA/AMGX" -> "hypre-space/hypre"
 "NVIDIA/AMGX" -> "ddemidov/amgcl"
 "NVIDIA/AMGX" -> "shwina/pyamgx"
@@ -399,6 +464,7 @@ digraph G {
 "SWIFTSIM/SWIFT" -> "alejandrobll/py-sphviewer"
 "SWIFTSIM/SWIFT" -> "SWIFTSIM/swiftsimio"
 "SWIFTSIM/SWIFT" -> "jchelly/gadgetviewer"
+"kokkos/mdspan" -> "kokkos/kokkos-kernels" ["e"=1]
 "CEED/libCEED" -> "CEED/Laghos"
 "CEED/libCEED" -> "LLNL/serac"
 "CEED/libCEED" -> "libocca/occa"
@@ -431,18 +497,31 @@ digraph G {
 "ginkgo-project/ginkgo" -> "mfem/mfem"
 "LLNL/camp" -> "LLNL/CHAI"
 "LLNL/camp" -> "desul/desul"
+"mdolab/adflow" -> "ucns3d-team/UCNS3D" ["e"=1]
+"mdolab/adflow" -> "nasa/CFL3D" ["e"=1]
+"mdolab/adflow" -> "nasa/cfdtools" ["e"=1]
+"mdolab/adflow" -> "flexi-framework/flexi" ["e"=1]
+"mdolab/adflow" -> "andrealani/COOLFluiD" ["e"=1]
+"mdolab/adflow" -> "CaNS-World/CaNS" ["e"=1]
+"ITHACA-FV/ITHACA-FV" -> "mathLab/EZyRB" ["e"=1]
 "goma/goma" -> "grinsfem/grins"
 "JWock82/xlFrame" -> "BrianChevalier/StructPy"
 "JWock82/xlFrame" -> "buddyd16/Structural-Engineering"
 "JWock82/xlFrame" -> "FEALiTE/FEALiTE2D"
 "LLNL/shroud" -> "LLNL/uberenv"
 "LLNL/shroud" -> "swig-fortran/swig"
+"kata-containers/documentation" -> "kata-containers/packaging" ["e"=1]
 "FreeFem/FreeFem-modules" -> "FreeFem/FreeFem-website"
+"glue-viz/glue" -> "yt-project/yt" ["e"=1]
 "cryotools/cosipy" -> "awesome-cryosphere/cryosphere-links"
 "OGGM/oggm-edu" -> "OGGM/oggm-edu-notebooks"
 "OGGM/oggm-edu-notebooks" -> "OGGM/tutorials"
 "JordiBolibar/ALPGM" -> "GLIMS-RGI/rgitools"
 "JordiBolibar/ALPGM" -> "Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression"
+"veusz/veusz" -> "prisms-center/phaseField" ["e"=1]
+"python-adaptive/adaptive" -> "kinnala/scikit-fem" ["e"=1]
+"python-adaptive/adaptive" -> "DedalusProject/dedalus" ["e"=1]
+"NREL/SOWFA" -> "lesgo-jhu/lesgo" ["e"=1]
 "david-kamensky/tIGAr" -> "CALFEM/calfem-matlab-iga"
 "david-kamensky/tIGAr" -> "ijlee2/Isogeometric-Analysis"
 "david-kamensky/tIGAr" -> "canitesc/IGAPack"
@@ -457,6 +536,7 @@ digraph G {
 "schrummy14/LIGGGHTS_Flexible_Fibers" -> "ParticulateFlow/DEM-course-tutorials"
 "schrummy14/LIGGGHTS_Flexible_Fibers" -> "idaholab/LIGGGHTS-INL"
 "schrummy14/LIGGGHTS_Flexible_Fibers" -> "linhanGE/CFDEMcoupling-LG"
+"PMEAL/OpenPNM" -> "CFDEMproject/LIGGGHTS-PUBLIC" ["e"=1]
 "OpenFOAM/OpenFOAM-6" -> "OpenFOAM/ThirdParty-6"
 "OpenFOAM/OpenFOAM-6" -> "OpenFOAM/OpenFOAM-5.x"
 "ParticulateFlow/CFDEMcoupling-PFM" -> "ParticulateFlow/LIGGGHTS-PFM"
@@ -485,6 +565,7 @@ digraph G {
 "zhuminjie/OpenSeesPyDoc" -> "yexiang92/opstool"
 "zhuminjie/OpenSeesPyDoc" -> "nassermarafi/OpenSeesAPI"
 "zhuminjie/OpenSeesPyDoc" -> "Hanlin-Dong/awesome-opensees"
+"spcl/dace" -> "ParRes/Kernels" ["e"=1]
 "jlblancoc/suitesparse-metis-for-windows" -> "DrTimothyAldenDavis/SuiteSparse"
 "jlblancoc/suitesparse-metis-for-windows" -> "tbennun/ceres-windows"
 "jlblancoc/suitesparse-metis-for-windows" -> "PetterS/SuiteSparse"
@@ -497,6 +578,11 @@ digraph G {
 "jlblancoc/suitesparse-metis-for-windows" -> "victorprad/InfiniTAM" ["e"=1]
 "jlblancoc/suitesparse-metis-for-windows" -> "patr-schm/TinyAD" ["e"=1]
 "jlblancoc/suitesparse-metis-for-windows" -> "niessner/VoxelHashing" ["e"=1]
+"autodiff/autodiff" -> "ddemidov/amgcl" ["e"=1]
+"toggl-open-source/toggldesktop" -> "toggl/mobileapp" ["e"=1]
+"mdolab/dafoam" -> "ucns3d-team/UCNS3D" ["e"=1]
+"mdolab/dafoam" -> "hystrath/hyStrath" ["e"=1]
+"mdolab/dafoam" -> "enGits/engrid" ["e"=1]
 "calculix/cae" -> "calculix/ccx2paraview"
 "calculix/cae" -> "calculix/CalculiX-Examples"
 "calculix/cae" -> "spacether/pycalculix"
@@ -582,6 +668,8 @@ digraph G {
 "surajp92/CFD_Julia" -> "nickabattista/IB2d"
 "surajp92/CFD_Julia" -> "IBAMR/IBAMR"
 "surajp92/CFD_Julia" -> "CliMA/Oceananigans.jl" ["e"=1]
+"pynbody/pynbody" -> "alejandrobll/py-sphviewer" ["e"=1]
+"pynbody/pynbody" -> "yt-project/yt" ["e"=1]
 "MatthewReid854/reliability" -> "pystra/pystra"
 "MatthewReid854/reliability" -> "boschresearch/pylife"
 "MatthewReid854/reliability" -> "slightlynybbled/weibull"
@@ -589,6 +677,8 @@ digraph G {
 "MatthewReid854/reliability" -> "derrynknife/SurPyval"
 "MatthewReid854/reliability" -> "SURGroup/UQpy" ["e"=1]
 "MatthewReid854/reliability" -> "tvtoglu/predictr"
+"learn-awesome/learn-awesome" -> "kata-containers/packaging" ["e"=1]
+"andycasey/ads" -> "Open-Astrophysics-Bookshelf/star_formation_notes" ["e"=1]
 "festim-dev/FESTIM" -> "festim-dev/FESTIM-workshop"
 "festim-dev/FESTIM" -> "RemDelaporteMathurin/h-transport-materials"
 "festim-dev/FESTIM" -> "RemDelaporteMathurin/fusion-world"
@@ -620,6 +710,7 @@ digraph G {
 "xcompact3d/Incompact3d" -> "STREAmS-CFD/STREAmS-2"
 "xcompact3d/Incompact3d" -> "matteobernardini/STREAmS"
 "xcompact3d/Incompact3d" -> "opensbli/opensbli"
+"NVIDIA/multi-gpu-programming-models" -> "UoB-HPC/BabelStream" ["e"=1]
 "jeffhammond/HPCInfo" -> "ParRes/Kernels"
 "jeffhammond/HPCInfo" -> "intel/mpi-benchmarks" ["e"=1]
 "jeffhammond/HPCInfo" -> "HPCToolkit/hpctoolkit"
@@ -628,6 +719,7 @@ digraph G {
 "openmc-dev/plotter" -> "openmsr/CAD_to_OpenMC"
 "openmc-dev/plotter" -> "svalinn/DAGMC"
 "openmc-dev/plotter" -> "openmc-dev/validation"
+"fluiddyn/fluidfoam" -> "SedFoam/sedfoam" ["e"=1]
 "jlanversin/ONIX" -> "openmc-dev/openmc-ecosystem"
 "transatomic/reactor" -> "cyclus/cyclus"
 "transatomic/reactor" -> "paulromano/awesome-nuclear"
@@ -648,6 +740,8 @@ digraph G {
 "firedrakeproject/firedrake" -> "devitocodes/devito" ["e"=1]
 "firedrakeproject/firedrake" -> "nschloe/meshio" ["e"=1]
 "firedrakeproject/firedrake" -> "thetisproject/thetis"
+"pyccel/pyccel" -> "pyccel/psydac" ["e"=1]
+"pyccel/pyccel" -> "pyccel/sympde" ["e"=1]
 "cpraveen/dflo" -> "JacobCrabill/FlurryPP"
 "pbrod/numdifftools" -> "maroba/findiff"
 "MatMechLab/AsFem" -> "jjcremmers/PyFEM"
@@ -712,6 +806,7 @@ digraph G {
 "OpenMP-Validation-and-Verification/OpenMP_VV" -> "TApplencourt/OvO"
 "bgin/Radar_ElectroOptical_Simulation" -> "bgin/Radar-ElectroOptical-Simulation"
 "bgin/Radar_ElectroOptical_Simulation" -> "bgin/MissileSimulation"
+"materialsinnovation/pymks" -> "usnistgov/pfhub" ["e"=1]
 "charmplusplus/charm4py" -> "charmplusplus/charm"
 "charmplusplus/charm4py" -> "UIUC-PPL/charm"
 "charmplusplus/charm4py" -> "hpcgroup/TraceR"
@@ -721,9 +816,12 @@ digraph G {
 "agency-library/agency" -> "jaredhoberock/tuple_utility"
 "OP-DSL/OPS" -> "opensbli/opensbli"
 "OP-DSL/OPS" -> "OP-DSL/OP2-Common"
+"open-mpi/hwloc" -> "UoB-HPC/BabelStream" ["e"=1]
+"open-mpi/hwloc" -> "jeffhammond/HPCInfo" ["e"=1]
 "dmitriy-kats/PhaseFieldGrainGrowthSimulations" -> "JunOu/phaseFieldGrainGrowth"
 "dmitriy-kats/PhaseFieldGrainGrowthSimulations" -> "nimesh00/CellularAutomata"
 "dmitriy-kats/PhaseFieldGrainGrowthSimulations" -> "mo-hanxuan/Polycrystal-PhaseField"
+"wangyao1052/LitCAD" -> "BriefFiniteElementNet/BriefFiniteElement.Net" ["e"=1]
 "LLNL/Umpire" -> "LLNL/RAJA"
 "LLNL/Umpire" -> "LLNL/blt"
 "LLNL/Umpire" -> "LLNL/axom"
@@ -797,6 +895,7 @@ digraph G {
 "nasa/T-MATS" -> "nasa/EADINLite"
 "nasa/T-MATS" -> "nasa/Three-Dimensional-Nozzle-Design-Code"
 "nasa/T-MATS" -> "OpenMDAO/OpenMDAO" ["e"=1]
+"AndreWeiner/machine-learning-applied-to-cfd" -> "lesgo-jhu/lesgo" ["e"=1]
 "NERSC/timemory" -> "LLNL/Caliper"
 "NERSC/timemory" -> "HPCToolkit/hpctoolkit"
 "NERSC/timemory" -> "NERSC/timemory-tutorials"
@@ -882,6 +981,7 @@ digraph G {
 "code-saturne/code_saturne" -> "andrealani/COOLFluiD"
 "code-saturne/code_saturne" -> "desjardi/NGA2"
 "code-saturne/code_saturne" -> "NaluCFD/Nalu"
+"Exawind/nalu-wind" -> "NaluCFD/Nalu" ["e"=1]
 "HiFiLES/HiFiLES-solver" -> "JacobCrabill/FlurryPP"
 "HiFiLES/HiFiLES-solver" -> "PyFR/PyFR"
 "HiFiLES/HiFiLES-solver" -> "lesgo-jhu/lesgo"
@@ -914,6 +1014,8 @@ digraph G {
 "precice/openfoam-adapter" -> "precice/calculix-adapter"
 "precice/openfoam-adapter" -> "precice/precice"
 "precice/openfoam-adapter" -> "fppimenta/rheoTool" ["e"=1]
+"lettucecfd/lettuce" -> "tumaer/JAXFLUIDS" ["e"=1]
+"lettucecfd/lettuce" -> "spectralDNS/spectralDNS" ["e"=1]
 "wangheyu/AFEPack" -> "wangheyu/CplusplusBeginner"
 "precice/fenics-adapter" -> "precice/python-bindings"
 "precice/fenics-adapter" -> "precice/dealii-adapter"
@@ -959,6 +1061,7 @@ digraph G {
 "PrincetonUniversity/athena" -> "lanl/phoebus"
 "PrincetonUniversity/athena" -> "PrincetonUniversity/Athena-Cversion"
 "PrincetonUniversity/athena" -> "gamer-project/gamer"
+"chriskohlhoff/executors" -> "agency-library/agency" ["e"=1]
 "clawpack/pyclaw" -> "clawpack/clawpack"
 "clawpack/pyclaw" -> "clawpack/riemann"
 "clawpack/pyclaw" -> "clawpack/geoclaw"
@@ -989,6 +1092,7 @@ digraph G {
 "zhiyingq/PhaseFieldSimulation" -> "eimrek/phase-field-crystal-mpi"
 "mesoscale/mmsp" -> "usnistgov/pfhub"
 "MultiphaseFlowLab/FLOW36" -> "CaNS-World/CaNS-Fizzy"
+"verybadcat/CSharpMath" -> "wo80/CSparse.NET" ["e"=1]
 "oofem/oofem" -> "Micket/oofem"
 "oofem/oofem" -> "rhdodds/warp3d"
 "oofem/oofem" -> "TLCFEM/suanPan"
@@ -998,6 +1102,9 @@ digraph G {
 "oofem/oofem" -> "libMesh/libmesh"
 "dpkn31/Yade-OpenFOAM-coupling" -> "stranskyjan/dem-fem-coupling"
 "dpkn31/Yade-OpenFOAM-coupling" -> "linhanGE/CFDEMcoupling-LG"
+"SURGroup/UQpy" -> "pymor/pymor" ["e"=1]
+"SURGroup/UQpy" -> "RBniCS/RBniCS" ["e"=1]
+"SURGroup/UQpy" -> "Willcox-Research-Group/rom-operator-inference-Python3" ["e"=1]
 "nasa/GFR" -> "JacobCrabill/FlurryPP"
 "jlev/ballistic-missile-range" -> "ferencdv/missile_trajectory_simulator"
 "jlev/ballistic-missile-range" -> "JohannesAutenrieb/MissileSimulation"
@@ -1042,6 +1149,8 @@ digraph G {
 "paranumal/libparanumal" -> "Nek5000/gslib"
 "pep-pig/Topology-optimization-of-structure-via-simp-method" -> "zfergus/topopt"
 "uDALES/u-dales" -> "dalesteam/dales"
+"ValeevGroup/tiledarray" -> "LLNL/Umpire" ["e"=1]
+"ValeevGroup/tiledarray" -> "LLNL/blt" ["e"=1]
 "piclas-framework/piclas" -> "particleincell/Starfish"
 "ROSS-org/ROSS" -> "codes-org/codes"
 "ROSS-org/ROSS" -> "markplagge/NeMo"
@@ -1151,6 +1260,7 @@ digraph G {
 "mit-crpg/BEAVRS" -> "aprilnovak/Okapi"
 "ahmedkmadani/OpenMCProject" -> "fusion-energy/openmc_source_plotter"
 "dongmoon-min/truenorth_sim" -> "markplagge/NeMo"
+"numactl/numactl" -> "hpcg-benchmark/hpcg" ["e"=1]
 "alpaka-group/alpaka" -> "LLNL/RAJA"
 "alpaka-group/alpaka" -> "alpaka-group/llama"
 "alpaka-group/alpaka" -> "libocca/occa"
@@ -1166,6 +1276,8 @@ digraph G {
 "alpaka-group/alpaka" -> "codeplaysoftware/syclacademy" ["e"=1]
 "alpaka-group/alpaka" -> "KhronosGroup/SYCL-Docs" ["e"=1]
 "alpaka-group/alpaka" -> "triSYCL/triSYCL" ["e"=1]
+"open-mpi/ompi" -> "kokkos/kokkos" ["e"=1]
+"open-mpi/ompi" -> "Reference-LAPACK/lapack" ["e"=1]
 "usnistgov/fipy" -> "sfepy/sfepy"
 "usnistgov/fipy" -> "zwicker-group/py-pde"
 "usnistgov/fipy" -> "kinnala/scikit-fem"
@@ -1181,6 +1293,7 @@ digraph G {
 "usnistgov/fipy" -> "spectralDNS/spectralDNS"
 "usnistgov/fipy" -> "sandialabs/Albany"
 "usnistgov/fipy" -> "firedrakeproject/firedrake"
+"arrayfire/arrayfire" -> "kokkos/kokkos" ["e"=1]
 "KarypisLab/METIS" -> "KarypisLab/ParMETIS"
 "KarypisLab/METIS" -> "KaHIP/KaHIP" ["e"=1]
 "KarypisLab/METIS" -> "kahypar/kahypar" ["e"=1]
@@ -1196,11 +1309,29 @@ digraph G {
 "KarypisLab/METIS" -> "ddemidov/amgcl"
 "KarypisLab/METIS" -> "petsc/petsc"
 "KarypisLab/METIS" -> "JarkkoPFC/meshlete" ["e"=1]
+"tum-pbs/PhiFlow" -> "tumaer/JAXFLUIDS" ["e"=1]
+"tum-pbs/PhiFlow" -> "DedalusProject/dedalus" ["e"=1]
+"unsplash/datasets" -> "nodejs/nodejs.dev" ["e"=1]
+"E3SM-Project/E3SM" -> "microhh/microhh" ["e"=1]
+"inducer/meshpy" -> "NGSolve/netgen" ["e"=1]
+"inducer/meshpy" -> "kinnala/scikit-fem" ["e"=1]
 "zenitani/OpenMHD" -> "chiba-aplab/cansplus"
 "zenitani/OpenMHD" -> "minoshim/MLAU"
 "precise-simulation/mesh-viewer" -> "precise-simulation/scientific-app-framework-for-python"
 "precise-simulation/mesh-viewer" -> "precise-simulation/stltool"
 "precise-simulation/mesh-viewer" -> "precise-simulation/guitool"
+"connorferster/handcalcs" -> "connorferster/forallpeople" ["e"=1]
+"connorferster/handcalcs" -> "JWock82/Pynite" ["e"=1]
+"connorferster/handcalcs" -> "robbievanleeuwen/section-properties" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "su2code/SU2" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "precice/precice" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "dealii/dealii" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "PyFR/PyFR" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "ucns3d-team/UCNS3D" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "mfem/mfem" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "ElmerCSC/elmerfem" ["e"=1]
+"OpenFOAM/OpenFOAM-dev" -> "Nek5000/Nek5000" ["e"=1]
+"nasa/Open-Source-Catalog" -> "nasa/NASTRAN-93" ["e"=1]
 "paulromano/awesome-nuclear" -> "terrapower/armi"
 "paulromano/awesome-nuclear" -> "pyne/pyne"
 "paulromano/awesome-nuclear" -> "neams-th-coe/cardinal"
@@ -1219,6 +1350,7 @@ digraph G {
 "lcharleux/abapy" -> "Liujie-SYSU/odb2vtk"
 "smrg-uob/PeriodicBoundaryCondition" -> "rutger-kok/composite_cdm_tan"
 "smrg-uob/PeriodicBoundaryCondition" -> "vis-florum/Abaqus-Plugins"
+"libxsmm/libxsmm" -> "ParRes/Kernels" ["e"=1]
 "FluidityProject/fluidity" -> "PyFR/PyFR"
 "FluidityProject/fluidity" -> "Nek5000/Nek5000"
 "FluidityProject/fluidity" -> "NaluCFD/Nalu"
@@ -1268,6 +1400,13 @@ digraph G {
 "DrTimothyAldenDavis/SuiteSparse" -> "uxlfoundation/oneMath" ["e"=1]
 "DrTimothyAldenDavis/SuiteSparse" -> "embotech/ecos" ["e"=1]
 "DrTimothyAldenDavis/SuiteSparse" -> "ceres-solver/ceres-solver" ["e"=1]
+"openhackathons-org/gpubootcamp" -> "UoB-HPC/BabelStream" ["e"=1]
+"sunpy/sunpy" -> "yt-project/yt" ["e"=1]
+"numerical-mooc/numerical-mooc" -> "spectralDNS/spectralDNS" ["e"=1]
+"numerical-mooc/numerical-mooc" -> "firedrakeproject/firedrake" ["e"=1]
+"numerical-mooc/numerical-mooc" -> "PyFR/PyFR" ["e"=1]
+"numerical-mooc/numerical-mooc" -> "hplgit/num-methods-for-PDEs" ["e"=1]
+"numerical-mooc/numerical-mooc" -> "python-hydro/pyro2" ["e"=1]
 "hgyhungry/ge-spmm" -> "owensgroup/merge-spmm"
 "hgyhungry/ge-spmm" -> "YukeWang96/TC-GNN_ATC23"
 "hgyhungry/ge-spmm" -> "dgSPARSE/dgSPARSE-Lib"
@@ -1293,6 +1432,9 @@ digraph G {
 "google-research/sputnik" -> "GPUPeople/spECK"
 "google-research/sputnik" -> "AlibabaResearch/flash-llm"
 "conservation-laws/ryujin" -> "MFlowCode/MFC"
+"huggingface/pytorch_block_sparse" -> "google-research/sputnik" ["e"=1]
+"google-research/rigl" -> "google-research/sputnik" ["e"=1]
+"bytedance/effective_transformer" -> "AlibabaResearch/flash-llm" ["e"=1]
 "prisms-center/phaseField" -> "dmitriy-kats/PhaseFieldGrainGrowthSimulations"
 "prisms-center/phaseField" -> "usnistgov/pfhub"
 "prisms-center/phaseField" -> "zhubq/PhaseField"
@@ -1314,10 +1456,12 @@ digraph G {
 "exadg/exadg" -> "AMReX-Combustion/PeleC"
 "exadg/exadg" -> "chaos-polymtl/lethe"
 "exadg/exadg" -> "CaNS-World/CaNS"
+"DrTimothyAldenDavis/GraphBLAS" -> "DrTimothyAldenDavis/SuiteSparse" ["e"=1]
 "snakesonabrain/groundhog" -> "JesseBonanno/PySlope"
 "snakesonabrain/groundhog" -> "kunle009/FoundationDesign"
 "snakesonabrain/groundhog" -> "kks32-courses/ce394m"
 "snakesonabrain/groundhog" -> "FrancescaBurali/awesome-geotechnics"
+"MPh-py/MPh" -> "deng-cy/deep_learning_topology_opt" ["e"=1]
 "python-hydro/pyro2" -> "Open-Astrophysics-Bookshelf/numerical_exercises"
 "python-hydro/pyro2" -> "python-hydro/hydro_examples"
 "python-hydro/pyro2" -> "AMReX-Astro/Castro"
@@ -1328,6 +1472,11 @@ digraph G {
 "python-hydro/pyro2" -> "PrincetonUniversity/athena-public-version"
 "python-hydro/pyro2" -> "surajp92/CFD_Julia"
 "python-hydro/pyro2" -> "NaluCFD/Nalu"
+"markummitchell/engauge-digitizer" -> "PyFR/PyFR" ["e"=1]
+"markummitchell/engauge-digitizer" -> "qd-cae/awesome-CAE" ["e"=1]
+"markummitchell/engauge-digitizer" -> "hypre-space/hypre" ["e"=1]
+"markummitchell/engauge-digitizer" -> "trilinos/Trilinos" ["e"=1]
+"markummitchell/engauge-digitizer" -> "su2code/SU2" ["e"=1]
 "OpenMP/Examples" -> "OpenMP-Validation-and-Verification/OpenMP_VV"
 "OpenMP/Examples" -> "LLNL/Quicksilver"
 "OpenMP/Examples" -> "UoB-HPC/openmp-tutorial"
@@ -1346,7 +1495,15 @@ digraph G {
 "openmc-dev/openmc" -> "GEOUNED-org/GEOUNED"
 "openmc-dev/openmc" -> "enrico-dev/enrico"
 "openmc-dev/openmc" -> "Geant4/geant4" ["e"=1]
+"thu-zhanghl/CFD101" -> "surajp92/CFD_Julia" ["e"=1]
+"thu-zhanghl/CFD101" -> "brli3/CFD" ["e"=1]
+"thu-zhanghl/CFD101" -> "mhamadmahdialloush/uFVM" ["e"=1]
+"thu-zhanghl/CFD101" -> "IBAMR/IBAMR" ["e"=1]
+"thu-zhanghl/CFD101" -> "bueler/p4pdes" ["e"=1]
 "MP-Gadget/MP-Gadget" -> "alejandrobll/py-sphviewer"
+"WaterLily-jl/WaterLily.jl" -> "surajp92/CFD_Julia" ["e"=1]
+"mpmath/mpmath" -> "Reference-LAPACK/lapack" ["e"=1]
+"mpmath/mpmath" -> "maroba/findiff" ["e"=1]
 "pism/pism" -> "icepack/icepack"
 "pism/pism" -> "OGGM/oggm"
 "pism/pism" -> "JordiBolibar/ALPGM"
@@ -1399,6 +1556,7 @@ digraph G {
 "linhanGE/CFDEMcoupling-LG" -> "shenzhihao/CFDEMInterFoamIB"
 "linhanGE/CFDEMcoupling-LG" -> "dpkn31/Yade-OpenFOAM-coupling"
 "linhanGE/CFDEMcoupling-LG" -> "DwwWxx/MSP-CFDEMcoupling"
+"Artoriuz/OSEE" -> "m2n037/awesome-mecheng" ["e"=1]
 "zwicker-group/py-pde" -> "DedalusProject/dedalus"
 "zwicker-group/py-pde" -> "usnistgov/fipy"
 "zwicker-group/py-pde" -> "hplgit/num-methods-for-PDEs"
@@ -1414,6 +1572,7 @@ digraph G {
 "zwicker-group/py-pde" -> "JuliaPDE/SurveyofPDEPackages" ["e"=1]
 "zwicker-group/py-pde" -> "snagcliffs/PDE-FIND" ["e"=1]
 "zwicker-group/py-pde" -> "mathLab/PINA" ["e"=1]
+"sthavishtha/list-lattice-Boltzmann-codes" -> "sthavishtha/turbulence-codes" ["e"=1]
 "jfriedlein/usrmat_LS-Dyna_Fortran" -> "adtzlr/ttb"
 "jfriedlein/usrmat_LS-Dyna_Fortran" -> "MechMaster95/LS-DYNA-subroutines"
 "terrapower/armi" -> "paulromano/awesome-nuclear"
@@ -1431,11 +1590,14 @@ digraph G {
 "terrapower/armi" -> "CORE-GATECH-GROUP/serpent-tools"
 "terrapower/armi" -> "GEOUNED-org/GEOUNED"
 "terrapower/armi" -> "idaholab/virtual_test_bed"
+"uxlfoundation/oneMath" -> "kokkos/kokkos-kernels" ["e"=1]
+"PatWie/CppNumericalSolvers" -> "ddemidov/amgcl" ["e"=1]
 "bgin/Radar-ElectroOptical-Simulation" -> "bgin/Radar_ElectroOptical_Simulation"
 "ansys/pydpf-core" -> "ansys/pydpf-post"
 "ansys/pydpf-core" -> "ansys/pymapdl-reader"
 "mhamadmahdialloush/uFVM" -> "brli3/CFD"
 "boschresearch/pylife" -> "Gunnstein/fatpack"
+"lmfit/lmfit-py" -> "zwicker-group/py-pde" ["e"=1]
 "radioactivedecay/radioactivedecay" -> "jlanversin/ONIX"
 "radioactivedecay/radioactivedecay" -> "svalinn/ALARA"
 "radioactivedecay/radioactivedecay" -> "openmc-dev/plotter"
@@ -1450,7 +1612,14 @@ digraph G {
 "spacether/pycalculix" -> "calculix/beso"
 "spacether/pycalculix" -> "Dhondtguido/CalculiX"
 "spacether/pycalculix" -> "AeroDME/NASTRAN-95"
+"codeplaysoftware/syclacademy" -> "UoB-HPC/BabelStream" ["e"=1]
+"HDFGroup/hdf5" -> "CGNS/CGNS" ["e"=1]
+"HDFGroup/hdf5" -> "visit-dav/visit" ["e"=1]
+"HDFGroup/hdf5" -> "Reference-LAPACK/lapack" ["e"=1]
+"synthetik-technologies/blastfoam" -> "hystrath/hyStrath" ["e"=1]
+"synthetik-technologies/blastfoam" -> "AMReX-Combustion/PeleC" ["e"=1]
 "fschuch/xcompact3d_toolbox" -> "xcompact3d/Py4Incompact3D"
+"zjin-lcf/HeCBench" -> "UoB-HPC/BabelStream" ["e"=1]
 "Nek5000/nekRS" -> "Nek5000/Nek5000"
 "Nek5000/nekRS" -> "neams-th-coe/cardinal"
 "Nek5000/nekRS" -> "ucns3d-team/UCNS3D"
@@ -1764,6 +1933,7 @@ digraph G {
 "precice/precice" -> "hypre-space/hypre"
 "precice/precice" -> "ElmerCSC/elmerfem"
 "precice/precice" -> "jaheyns/CfdOF" ["e"=1]
+"lukepolson/youtube_channel" -> "sfepy/sfepy" ["e"=1]
 "mfem/mfem" -> "dealii/dealii"
 "mfem/mfem" -> "GLVis/glvis"
 "mfem/mfem" -> "libMesh/libmesh"
@@ -1779,6 +1949,7 @@ digraph G {
 "mfem/mfem" -> "ddemidov/amgcl"
 "mfem/mfem" -> "FEniCS/dolfinx"
 "mfem/mfem" -> "polyfem/polyfem" ["e"=1]
+"ixmilia/dxf" -> "wo80/CSparse.NET" ["e"=1]
 "clawpack/riemann_book" -> "clawpack/clawpack"
 "clawpack/riemann_book" -> "takluyver/bookbook"
 "clawpack/riemann_book" -> "pkestene/euler2d_kokkos"
@@ -1811,6 +1982,21 @@ digraph G {
 "cburstedde/p4est" -> "parthenon-hpc-lab/parthenon"
 "cburstedde/p4est" -> "BoxLib-Codes/BoxLib"
 "cburstedde/p4est" -> "chaos-polymtl/lethe"
+"Cantera/cantera" -> "hystrath/hyStrath" ["e"=1]
+"Cantera/cantera" -> "AMReX-Combustion/PeleC" ["e"=1]
+"Cantera/cantera" -> "andrealani/COOLFluiD" ["e"=1]
+"Cantera/cantera" -> "AMReX-Combustion/PeleLM" ["e"=1]
+"Cantera/cantera" -> "LLNL/sundials" ["e"=1]
+"firemodels/fds" -> "CaNS-World/CaNS" ["e"=1]
+"firemodels/fds" -> "tumaer/JAXFLUIDS" ["e"=1]
+"firemodels/fds" -> "Nek5000/Nek5000" ["e"=1]
+"scikit-rf/scikit-rf" -> "ansys/pyaedt" ["e"=1]
+"scikit-rf/scikit-rf" -> "mradway/hycohanz" ["e"=1]
+"MmgTools/mmg" -> "NGSolve/netgen" ["e"=1]
+"MmgTools/mmg" -> "gismo/gismo" ["e"=1]
+"MmgTools/mmg" -> "feelpp/feelpp" ["e"=1]
+"MmgTools/mmg" -> "libMesh/libmesh" ["e"=1]
+"MmgTools/mmg" -> "NGSolve/ngsolve" ["e"=1]
 "jgomezc1/ABAQUS-US" -> "WeilinDeng/ABAQUS"
 "jgomezc1/ABAQUS-US" -> "jpsferreira/UMAT-ABAQUS"
 "jgomezc1/ABAQUS-US" -> "KnutAM/MaterialModels"
@@ -1825,6 +2011,7 @@ digraph G {
 "jgomezc1/ABAQUS-US" -> "ALandauer/ABAQUS_Subroutines"
 "AvtechScientific/ASL" -> "goma/goma"
 "AvtechScientific/ASL" -> "NaluCFD/Nalu"
+"bjodah/chempy" -> "lmmentel/mendeleev" ["e"=1]
 "YukeWang96/TC-GNN_ATC23" -> "HPMLL/DTC-SpMM_ASPLOS24"
 "YukeWang96/TC-GNN_ATC23" -> "hgyhungry/ge-spmm"
 "YukeWang96/TC-GNN_ATC23" -> "apuaaChen/vectorSparse"
@@ -1834,6 +2021,7 @@ digraph G {
 "dgSPARSE/dgSPARSE-Lib" -> "CRAFT-THU/RoDe"
 "dgSPARSE/dgSPARSE-Lib" -> "GPUPeople/spECK"
 "dgSPARSE/dgSPARSE-Lib" -> "dgSPARSE/dgSPARSE-Wrapper"
+"ikespand/awesome-machine-learning-fluid-mechanics" -> "lento234/awesome-fluid-dynamics" ["e"=1]
 "ansys/pyansys" -> "ansys/pyansys-dev-guide"
 "ansys/pyansys" -> "ansys/example-data"
 "ansys/pyansys" -> "ansys/pyfluent"
@@ -1844,6 +2032,7 @@ digraph G {
 "ansys/pyansys" -> "ansys/pymechanical"
 "ansys/pyansys" -> "ansys/actions"
 "ansys/pyansys" -> "ansys/pydpf-post"
+"BUAA-CI-LAB/Literatures-on-GNN-Acceleration" -> "hgyhungry/ge-spmm" ["e"=1]
 "tjhei/cracks" -> "Hirshikesh/FEniCS-PhaseField-brittle-fracture"
 "tjhei/cracks" -> "ishovkun/eaglefrac"
 "gismo/gismo" -> "rafavzqz/geopdes"
@@ -1865,9 +2054,27 @@ digraph G {
 "velexi-research/LSMLIB" -> "musheen/LevelSetFortran"
 "velexi-research/LSMLIB" -> "memmett/PyWENO"
 "elburz/awesome-space" -> "Hunter-Github/awesome-space-books"
+"nasa/trick" -> "nasa/T-MATS" ["e"=1]
+"OpenVSP/OpenVSP" -> "nasa/CFL3D" ["e"=1]
+"OpenVSP/OpenVSP" -> "su2code/SU2" ["e"=1]
+"SimFlowCFD/RapidCFD-dev" -> "hystrath/hyStrath" ["e"=1]
+"SimFlowCFD/RapidCFD-dev" -> "Nek5000/nekRS" ["e"=1]
+"RRZE-HPC/likwid" -> "LLNL/RAJA" ["e"=1]
+"RRZE-HPC/likwid" -> "UoB-HPC/BabelStream" ["e"=1]
+"RRZE-HPC/likwid" -> "ParRes/Kernels" ["e"=1]
+"RRZE-HPC/likwid" -> "kokkos/kokkos" ["e"=1]
+"RRZE-HPC/likwid" -> "hpcg-benchmark/hpcg" ["e"=1]
+"rsmpi/rsmpi" -> "LLNL/conduit" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "kokkos/kokkos" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "HPCToolkit/hpctoolkit" ["e"=1]
 "nasa/cfdtools" -> "nasa/TLNS3D"
 "nasa/cfdtools" -> "nasa/GFR"
+"consuldemocracy/consuldemocracy" -> "toggl/mobileapp" ["e"=1]
 "AMReX-Codes/amrex-tutorials" -> "AMReX-Codes/pyamrex"
+"Ceyron/machine-learning-and-simulation" -> "tumaer/JAXFLUIDS" ["e"=1]
+"Ceyron/machine-learning-and-simulation" -> "surajp92/CFD_Julia" ["e"=1]
+"Ceyron/machine-learning-and-simulation" -> "lento234/awesome-fluid-dynamics" ["e"=1]
+"Ceyron/machine-learning-and-simulation" -> "spectralDNS/spectralDNS" ["e"=1]
 "axonn-ai/axonn" -> "hpcgroup/pipit"
 "kokkos/kokkos" -> "kokkos/kokkos-tutorials"
 "kokkos/kokkos" -> "LLNL/RAJA"
@@ -1906,6 +2113,7 @@ digraph G {
 "awesome-cryosphere/cryosphere-links" -> "cryotools/cosipy"
 "awesome-cryosphere/cryosphere-links" -> "icepack/icepack"
 "awesome-cryosphere/cryosphere-links" -> "Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression"
+"AndreWeiner/ml-cfd-lecture" -> "lento234/awesome-fluid-dynamics" ["e"=1]
 "hplgit/scipro-primer" -> "noahwaterfieldprice/python_primer"
 "hplgit/scipro-primer" -> "hplgit/prog4comp"
 "hplgit/scipro-primer" -> "hplgit/num-methods-for-PDEs"
@@ -1913,6 +2121,9 @@ digraph G {
 "Hunter-Github/awesome-space-books" -> "elburz/awesome-space"
 "Hunter-Github/awesome-space-books" -> "specifics/aero-structures"
 "Hunter-Github/awesome-space-books" -> "spacehackersclub/awesome-spacehackers"
+"jeffhammond/STREAM" -> "UoB-HPC/BabelStream" ["e"=1]
+"jeffhammond/STREAM" -> "hpcg-benchmark/hpcg" ["e"=1]
+"jeffhammond/STREAM" -> "ParRes/Kernels" ["e"=1]
 "lento234/awesome-fluid-dynamics" -> "code-mphi/ECOGEN"
 "lento234/awesome-fluid-dynamics" -> "CaNS-World/CaNS"
 "lento234/awesome-fluid-dynamics" -> "surajp92/CFD_Julia"
@@ -1940,6 +2151,10 @@ digraph G {
 "fusion-energy/neutronics-workshop" -> "idaholab/MontePy"
 "fusion-energy/neutronics-workshop" -> "openmc-data-storage/isotope-xs-plotter"
 "fusion-energy/neutronics-workshop" -> "stellarmesh/stellarmesh"
+"google/jax-cfd" -> "tumaer/JAXFLUIDS" ["e"=1]
+"google/jax-cfd" -> "PyFR/PyFR" ["e"=1]
+"google/jax-cfd" -> "DedalusProject/dedalus" ["e"=1]
+"google/jax-cfd" -> "surajp92/CFD_Julia" ["e"=1]
 "alejandrobll/py-sphviewer" -> "MP-Gadget/MP-Gadget"
 "alejandrobll/py-sphviewer" -> "jchelly/gadgetviewer"
 "tjfulle/fem-with-python" -> "AppliedMechanics-EAFIT/SolidsPy"
@@ -1947,6 +2162,10 @@ digraph G {
 "tjfulle/fem-with-python" -> "jjcremmers/PyFEM"
 "tjfulle/fem-with-python" -> "YaoyaoBae/Feon"
 "N-BodyShop/changa" -> "N-BodyShop/gasoline"
+"nv-legate/cupynumeric" -> "StanfordLegion/legion" ["e"=1]
+"nv-legate/cupynumeric" -> "LLNL/RAJA" ["e"=1]
+"nv-legate/cupynumeric" -> "hypre-space/hypre" ["e"=1]
+"nv-legate/cupynumeric" -> "PyFR/PyFR" ["e"=1]
 "pranshupant/DL-ROM" -> "arvindmohan/LSTM_ROM_Arxiv"
 "pranshupant/DL-ROM" -> "stefaniafresca/POD-DL-ROM"
 "pranshupant/DL-ROM" -> "fpichi/gca-rom"
@@ -2015,6 +2234,8 @@ digraph G {
 "fusion-energy/paramak" -> "ukaea/openmc_workshop"
 "fusion-energy/paramak" -> "fusion-energy/fusion_neutronics_workflow"
 "fusion-energy/paramak" -> "fusion-energy/plasmaboundaries"
+"openfoamtutorials/OpenFOAM_Tutorials_" -> "precice/openfoam-adapter" ["e"=1]
+"openfoamtutorials/OpenFOAM_Tutorials_" -> "ChenguangZhang/sdfibm" ["e"=1]
 "m-reuter/arpackpp" -> "opencollab/arpack-ng"
 "ExtremeFLOW/neko" -> "CaNS-World/CaNS"
 "ExtremeFLOW/neko" -> "MFlowCode/MFC"
@@ -2035,6 +2256,7 @@ digraph G {
 "dieter-wilhelm/apdl-mode" -> "Junlings/AnsysAPDL"
 "saran87/Vibration-Signal-Analysis" -> "Vibration-Testing/vibrationtesting"
 "particleincell/PICCBlog" -> "particleincell/Starfish"
+"ekondis/mixbench" -> "UoB-HPC/BabelStream" ["e"=1]
 "ammarkh95/ABAQUS_PDALAC" -> "rutger-kok/composite_cdm_tan"
 "ammarkh95/ABAQUS_PDALAC" -> "davidmorinNTNU/ABAQUS_subroutines"
 "ammarkh95/ABAQUS_PDALAC" -> "faisal-bhuiyan/Physics-based-composite-progressive-failure"
@@ -2057,6 +2279,7 @@ digraph G {
 "libocca/occa" -> "LLNL/SAMRAI"
 "libocca/occa" -> "ValeevGroup/tiledarray" ["e"=1]
 "libocca/occa" -> "arborx/ArborX"
+"amazon-science/FeatGraph" -> "hgyhungry/ge-spmm" ["e"=1]
 "jorgensd/dolfinx-tutorial" -> "bleyerj/comet-fenicsx"
 "jorgensd/dolfinx-tutorial" -> "jorgensd/adios4dolfinx"
 "jorgensd/dolfinx-tutorial" -> "FEniCS/dolfinx"
@@ -2101,6 +2324,7 @@ digraph G {
 "UoB-HPC/BabelStream" -> "LLNL/Umpire"
 "UoB-HPC/BabelStream" -> "ROCm/Tensile" ["e"=1]
 "UoB-HPC/BabelStream" -> "NVIDIA/multi-gpu-programming-models" ["e"=1]
+"uqfoundation/multiprocess" -> "telegraphic/hickle" ["e"=1]
 "scivision/mumps" -> "scivision/mumps-deprecated"
 "JSchoeberl/iFEM" -> "NGSolve/ngs-petsc"
 "JSchoeberl/iFEM" -> "PaulSt/NGSTrefftz"
@@ -2155,12 +2379,14 @@ digraph G {
 "nasa/NASTRAN-93" -> "nasa/OpenMDAO-Framework" ["e"=1]
 "nasa/NASTRAN-93" -> "nasa/dictionaries" ["e"=1]
 "nasa/NASTRAN-93" -> "nasa/ipv6_python"
+"ParticulateFlow/OSCCAR-doc" -> "xiaoh/sediFoam" ["e"=1]
 "desjardi/NGA2" -> "p-costa/SNaC"
 "desjardi/NGA2" -> "code-mphi/ECOGEN"
 "AMReX-Combustion/PeleLMeX" -> "AMReX-Combustion/PelePhysics"
 "AMReX-Combustion/PeleLMeX" -> "AMReX-Fluids/AMReX-Hydro"
 "dalesteam/dales" -> "uDALES/u-dales"
 "dalesteam/dales" -> "uclales/uclales"
+"YukeWang96/GNNAdvisor_OSDI21" -> "YukeWang96/TC-GNN_ATC23" ["e"=1]
 "KarypisLab/ParMETIS" -> "KarypisLab/METIS"
 "KarypisLab/ParMETIS" -> "KarypisLab/GKlib"
 "apuaaChen/vectorSparse" -> "ParCIS/Magicube"
@@ -2169,6 +2395,7 @@ digraph G {
 "ucdavis-kanvinde-group/abaqus-odb-tools" -> "chintanp/python_abaqus"
 "ansys/pymapdl-reader" -> "ansys/pydpf-post"
 "ansys/pymapdl-reader" -> "ansys/pydpf-core"
+"Apress/data-parallel-CPP" -> "UoB-HPC/BabelStream" ["e"=1]
 "thomasantony/msl-apollo-entry-guidance" -> "aofenghanyue/EntryGuidance"
 "kokkos/pykokkos" -> "EngineeringSoftware/gobash"
 "kokkos/pykokkos" -> "EngineeringSoftware/jattack"
@@ -2273,6 +2500,8 @@ digraph G {
 "clawpack/clawpack" -> "clawpack/riemann_book"
 "clawpack/clawpack" -> "clawpack/riemann"
 "clawpack/clawpack" -> "clawpack/geoclaw"
+"elemental/Elemental" -> "ParRes/Kernels" ["e"=1]
+"PlasmaPy/PlasmaPy" -> "yt-project/yt" ["e"=1]
 "pynucastro/pynucastro" -> "AMReX-Astro/Microphysics"
 "pynucastro/pynucastro" -> "AMReX-Astro/MAESTRO"
 "pynucastro/pynucastro" -> "AMReX-Astro/Emu"
@@ -2304,6 +2533,11 @@ digraph G {
 "openmodal/OpenModal" -> "ladisk/ImageBasedModalAnalysisTutorial"
 "openmodal/OpenModal" -> "Gunnstein/strid"
 "openmodal/OpenModal" -> "vibrationtoolbox/vibration_toolbox"
+"nschloe/meshio" -> "mfem/mfem" ["e"=1]
+"nschloe/meshio" -> "FEniCS/dolfinx" ["e"=1]
+"nschloe/meshio" -> "kinnala/scikit-fem" ["e"=1]
+"nschloe/meshio" -> "dealii/dealii" ["e"=1]
+"nschloe/meshio" -> "libMesh/libmesh" ["e"=1]
 "robbievanleeuwen/concrete-properties" -> "ccaprani/pycba"
 "robbievanleeuwen/concrete-properties" -> "robbievanleeuwen/section-properties"
 "robbievanleeuwen/concrete-properties" -> "ritchie46/anaStruct"
@@ -2323,8 +2557,10 @@ digraph G {
 "WeilinDeng/ABAQUS" -> "vis-florum/Abaqus-Plugins"
 "WeilinDeng/ABAQUS" -> "ucdavis-kanvinde-group/abaqus-odb-tools"
 "WeilinDeng/ABAQUS" -> "davidmorinNTNU/ABAQUS_subroutines"
+"phresher/OpenFOAM_Tutorials_Plus" -> "SedFoam/sedfoam" ["e"=1]
 "CALFEM/calfem-matlab" -> "CALFEM/calfem-python"
 "CALFEM/calfem-python" -> "CALFEM/calfem-matlab"
+"ROCm/hip" -> "kokkos/kokkos" ["e"=1]
 "ParCIS/Magicube" -> "apuaaChen/vectorSparse"
 "ParCIS/Magicube" -> "oresths/tSparse"
 "ParCIS/Magicube" -> "YukeWang96/TC-GNN_ATC23"
@@ -2333,7 +2569,15 @@ digraph G {
 "ParCIS/Magicube" -> "HPMLL/DTC-SpMM_ASPLOS24"
 "ParCIS/Magicube" -> "owensgroup/merge-spmm"
 "ParCIS/Magicube" -> "hgyhungry/ge-spmm"
+"poseidon/matchbox" -> "digitalrebar/provision" ["e"=1]
+"ddemidov/vexcl" -> "ddemidov/amgcl" ["e"=1]
+"ddemidov/vexcl" -> "libocca/occa" ["e"=1]
+"ddemidov/vexcl" -> "cusplibrary/cusplibrary" ["e"=1]
+"SimVascular/SimVascular" -> "IBAMR/IBAMR" ["e"=1]
+"BlueBrain/HighFive" -> "arborx/ArborX" ["e"=1]
 "dalcinl/PetIGA" -> "dalcinl/igakit"
+"AeroPython/PyFME" -> "nasa/GTM_DesignSim" ["e"=1]
+"RackHD/RackHD" -> "digitalrebar/provision" ["e"=1]
 "feelpp/feelpp" -> "libMesh/libmesh"
 "feelpp/feelpp" -> "sandialabs/Albany"
 "feelpp/feelpp" -> "andrealani/COOLFluiD"
@@ -2364,6 +2608,7 @@ digraph G {
 "calculix/CalculiX-Examples" -> "calculix/gmsh2ccx"
 "calculix/CalculiX-Examples" -> "ElmerCSC/elmerfem"
 "calculix/CalculiX-Examples" -> "dr-bill-c/MYSTRAN"
+"reclosedev/pyautocad" -> "JWock82/Pynite" ["e"=1]
 "OpenRadioss/OpenRadioss" -> "OpenRadioss/Tools"
 "OpenRadioss/OpenRadioss" -> "calculix/CalculiX-Examples"
 "OpenRadioss/OpenRadioss" -> "febiosoftware/FEBio"
@@ -2379,6 +2624,9 @@ digraph G {
 "OpenRadioss/OpenRadioss" -> "NGSolve/ngsolve"
 "OpenRadioss/OpenRadioss" -> "qd-cae/awesome-CAE"
 "OpenRadioss/OpenRadioss" -> "MYSTRANsolver/MYSTRAN"
+"yalmip/YALMIP" -> "precise-simulation/featool-multiphysics" ["e"=1]
+"manodeep/Corrfunc" -> "MP-Gadget/MP-Gadget" ["e"=1]
+"NVIDIA/MatX" -> "NVIDIA/AMGX" ["e"=1]
 "LLNL/conduit" -> "LLNL/axom"
 "LLNL/conduit" -> "LLNL/blt"
 "LLNL/conduit" -> "Alpine-DAV/ascent"
@@ -2394,6 +2642,7 @@ digraph G {
 "LLNL/conduit" -> "LLNL/uberenv"
 "LLNL/conduit" -> "parthenon-hpc-lab/parthenon"
 "LLNL/conduit" -> "LLNL/pyranda"
+"fmaussion/salem" -> "fmaussion/scientific_programming" ["e"=1]
 "OGGM/oggm" -> "PyGEM-Community/PyGEM"
 "OGGM/oggm" -> "JordiBolibar/ALPGM"
 "OGGM/oggm" -> "jouvetg/igm"
@@ -2415,6 +2664,7 @@ digraph G {
 "icepack/icepack" -> "JordiBolibar/ALPGM"
 "icepack/icepack" -> "PyGEM-Community/PyGEM"
 "hplgit/fem-book" -> "hplgit/num-methods-for-PDEs"
+"Ferrite-FEM/Ferrite.jl" -> "JuliaTopOpt/TopOpt.jl" ["e"=1]
 "CFDEMproject/LIGGGHTS-PUBLIC" -> "CFDEMproject/CFDEMcoupling-PUBLIC"
 "CFDEMproject/LIGGGHTS-PUBLIC" -> "ParticulateFlow/CFDEMcoupling-PFM"
 "CFDEMproject/LIGGGHTS-PUBLIC" -> "xiaoh/sediFoam"
@@ -2499,6 +2749,8 @@ digraph G {
 "JesseBonanno/PySlope" -> "eamontoyaa/pyCSS"
 "JesseBonanno/PySlope" -> "kunle009/FoundationDesign"
 "telegraphic/hickle" -> "yt-project/unyt"
+"bitnami/bitnami-docker-wordpress" -> "vmware-archive/kube-prod-runtime" ["e"=1]
+"STEllAR-GROUP/hpx" -> "kokkos/kokkos" ["e"=1]
 "ansys/pyfluent" -> "ansys/pyfluent-visualization"
 "ansys/pyfluent" -> "ansys/pyansys"
 "ansys/pyfluent" -> "ansys/pyfluent-parametric"
@@ -2561,6 +2813,7 @@ digraph G {
 "williamhunter/topy" -> "pep-pig/Topology-optimization-of-structure-via-simp-method"
 "williamhunter/topy" -> "zfergus/fenics-topopt"
 "peer-open-source/xara" -> "STAIRlab/veux"
+"ROCm/omnitrace" -> "LLNL/Caliper" ["e"=1]
 "petrobras/3W" -> "petrobras/BibMon"
 "petrobras/3W" -> "petrobras/WPRAutoencoders"
 "petrobras/3W" -> "ricardovvargas/3w_dataset"
@@ -2600,6 +2853,8 @@ digraph G {
 "mathLab/IGA-dealii" -> "mechanoChem/mechanoChemIGA"
 "ansys/pyfluent-parametric" -> "ansys/pyfluent-visualization"
 "ansys/pyfluent-visualization" -> "ansys/pyfluent-parametric"
+"yixuan/spectra" -> "opencollab/arpack-ng" ["e"=1]
+"yixuan/spectra" -> "ddemidov/amgcl" ["e"=1]
 "kokkos/kokkos-tutorials" -> "kokkos/kokkos-kernels"
 "kokkos/kokkos-tutorials" -> "kokkos/kokkos-tools"
 "kokkos/kokkos-tutorials" -> "kokkos/kokkos"
@@ -2631,6 +2886,7 @@ digraph G {
 "HPCToolkit/hpctoolkit" -> "LLNL/blt"
 "HPCToolkit/hpctoolkit" -> "intel/mpi-benchmarks" ["e"=1]
 "HPCToolkit/hpctoolkit" -> "UoB-HPC/BabelStream"
+"optimad/bitpit" -> "sandialabs/omega_h" ["e"=1]
 "jsitaraman/tioga" -> "JacobCrabill/FlurryPP"
 "jsitaraman/tioga" -> "majosm/overkit"
 "haiiliin/pyabaqus" -> "haiiliin/abqpy"
@@ -2643,8 +2899,10 @@ digraph G {
 "chintanp/python_abaqus" -> "ucdavis-kanvinde-group/abaqus-odb-tools"
 "JorgeDeLosSantos/pyqus" -> "ucdavis-kanvinde-group/abaqus-odb-tools"
 "JorgeDeLosSantos/pyqus" -> "quisten/abaqusPython"
+"szaghi/VTKFortran" -> "szaghi/OFF" ["e"=1]
 "gyselax/gyselalibxx" -> "CExA-project/ddc"
 "nasa/GTM_DesignSim" -> "nasa/DAVEtools"
+"uwsampl/SparseTIR" -> "microsoft/SparTA" ["e"=1]
 "gdtk-uq/gdtk" -> "stanfordhpccenter/HTR-solver"
 "microsoft/SparTA" -> "uwsampl/SparseTIR" ["e"=1]
 "microsoft/SparTA" -> "xxyux/SpInfer"
@@ -2660,6 +2918,7 @@ digraph G {
 "szaghi/OFF" -> "brli3/CFD"
 "szaghi/OFF" -> "szaghi/VTKFortran" ["e"=1]
 "LatticeQCD/SIMULATeQCD" -> "LatticeQCD/AnalysisToolbox"
+"CFD-GO/TCLB" -> "HiFiLES/HiFiLES-solver" ["e"=1]
 "wme7/Aero-matlab" -> "wme7/ApproximateRiemannSolvers"
 "ldallolio/NASTRAN-95" -> "OdonataResearchLLC/NASTRAN-95"
 "tataratat/splinepy" -> "tataratat/gustaf"
@@ -2682,6 +2941,11 @@ digraph G {
 "PartExa/PartExa" -> "queens-py/queens"
 "nemocrys/dolfinx-openfoam" -> "precice/fenicsx-adapter"
 "precice/fenicsx-adapter" -> "nemocrys/dolfinx-openfoam"
+"NewWheelTech/geometry4Sharp" -> "iainsproat/SharpFE" ["e"=1]
+"ProjectPhysX/FluidX3D" -> "su2code/SU2" ["e"=1]
+"ProjectPhysX/FluidX3D" -> "PyFR/PyFR" ["e"=1]
+"ProjectPhysX/FluidX3D" -> "tumaer/JAXFLUIDS" ["e"=1]
+"ProjectPhysX/FluidX3D" -> "precice/precice" ["e"=1]
 "calculix/beso" -> "williamhunter/topy"
 "calculix/beso" -> "calculix/CalculiX-Examples"
 "calculix/beso" -> "ISosnovik/nn4topopt"
@@ -2740,6 +3004,7 @@ digraph G {
 "Reference-LAPACK/lapack" -> "uxlfoundation/oneMath" ["e"=1]
 "Reference-LAPACK/lapack" -> "modern-fortran/neural-fortran" ["e"=1]
 "Reference-LAPACK/lapack" -> "Fortran-FOSS-Programmers/ford" ["e"=1]
+"hgrecco/pint" -> "yt-project/unyt" ["e"=1]
 "xiaoyeli/superlu_dist" -> "xiaoyeli/superlu"
 "xiaoyeli/superlu_dist" -> "pghysels/STRUMPACK"
 "xiaoyeli/superlu_dist" -> "CEED/libCEED"
@@ -2762,6 +3027,10 @@ digraph G {
 "LLNL/RAJA" -> "kokkos/kokkos-tools"
 "LLNL/RAJA" -> "alpaka-group/alpaka"
 "ansys/pymechanical" -> "ansys/pyansys-geometry"
+"mathLab/PyGeM" -> "mathLab/EZyRB" ["e"=1]
+"mathLab/PyGeM" -> "RBniCS/RBniCS" ["e"=1]
+"mathLab/PyGeM" -> "spacether/pycalculix" ["e"=1]
+"mathLab/PyGeM" -> "mathLab/ATHENA" ["e"=1]
 "chennachaos/awesome-FEM4CFD" -> "chennachaos/CouplingSchemesFSI"
 "LLNL/libROM" -> "LLNL/pylibROM"
 "LLNL/libROM" -> "pymor/pymor"
@@ -2773,6 +3042,8 @@ digraph G {
 "LLNL/libROM" -> "LLNL/gLaSDI"
 "LLNL/libROM" -> "Pressio/pressio-rom"
 "LLNL/libROM" -> "Nek5000/Nek5000"
+"danderson/netboot" -> "digitalrebar/provision" ["e"=1]
+"ampl/gsl" -> "libMesh/libmesh" ["e"=1]
 "haiiliin/abqpy" -> "haiiliin/pyabaqus"
 "haiiliin/abqpy" -> "liangzulin/abaqus_pycharm"
 "haiiliin/abqpy" -> "davidmorinNTNU/ABAQUS_subroutines"
@@ -2804,7 +3075,12 @@ digraph G {
 "mahran-sayed/awesome-aerospace-engineering" -> "Hunter-Github/awesome-space-books"
 "mahran-sayed/awesome-aerospace-engineering" -> "bryanwweber/orbital-mechanics-notes" ["e"=1]
 "mahran-sayed/awesome-aerospace-engineering" -> "cmontalvo251/aerospace"
+"h5py/h5py" -> "yt-project/yt" ["e"=1]
 "itascaconsulting/PFC3D_OpenFOAM" -> "xiaoh/sediFoam"
+"LLNL/zfp" -> "LLNL/blt" ["e"=1]
+"LLNL/zfp" -> "libocca/occa" ["e"=1]
+"LLNL/zfp" -> "ornladios/ADIOS2" ["e"=1]
+"LLNL/zfp" -> "LLNL/conduit" ["e"=1]
 "JorgeDeLosSantos/nusa" -> "BrianChevalier/StructPy"
 "JorgeDeLosSantos/nusa" -> "adtzlr/trusspy"
 "JorgeDeLosSantos/nusa" -> "ritchie46/anaStruct"
@@ -2826,6 +3102,9 @@ digraph G {
 "LLNL/SAMRAI" -> "AMReX-Combustion/PeleC"
 "LLNL/SAMRAI" -> "jsitaraman/tioga"
 "LLNL/SAMRAI" -> "LLNL/conduit"
+"awslabs/palace" -> "mfem/PyMFEM" ["e"=1]
+"awslabs/palace" -> "LLNL/serac" ["e"=1]
+"awslabs/palace" -> "CEED/libCEED" ["e"=1]
 "wme7/ApproximateRiemannSolvers" -> "cangyu/Riemann-Solvers"
 "wme7/ApproximateRiemannSolvers" -> "wme7/WENO"
 "wme7/ApproximateRiemannSolvers" -> "juncas/2DENSE"
@@ -2865,6 +3144,10 @@ digraph G {
 "cusplibrary/cusplibrary" -> "clMathLibraries/clSPARSE" ["e"=1]
 "cusplibrary/cusplibrary" -> "gunrock/gunrock" ["e"=1]
 "cusplibrary/cusplibrary" -> "gunrock/graphblast" ["e"=1]
+"tianjuxue/jax-am" -> "LLNL/ExaCA" ["e"=1]
+"tianjuxue/jax-am" -> "YPLianGroup/AMCA3D" ["e"=1]
+"orbingol/NURBS-Python" -> "gismo/gismo" ["e"=1]
+"orbingol/NURBS-Python" -> "rafavzqz/geopdes" ["e"=1]
 "GeneralElectric/CalculiX" -> "calculix/CalculiX-Examples"
 "GeneralElectric/CalculiX" -> "spacether/pycalculix"
 "GeneralElectric/CalculiX" -> "calculix/cae"
@@ -2927,6 +3210,7 @@ digraph G {
 "svalinn/DAGMC" -> "mit-crpg/BEAVRS"
 "iamlikeme/rainflow" -> "Gunnstein/fatpack"
 "MYSTRANsolver/MYSTRAN" -> "dr-bill-c/MYSTRAN"
+"GrapeTec/T-SPLINE" -> "gismo/gismo" ["e"=1]
 "GongZheng-Justin/CP3d" -> "davecats/channel"
 "LLNL/thicket" -> "LLNL/hatchet"
 "ranran0523/CryptoGCN" -> "harveyp123/LinGCN-Neurips23"
@@ -2970,10 +3254,17 @@ digraph G {
 "rclab-auth/gidopensees" -> "ioannis-vm/OpenSees_Model_Generator"
 "rclab-auth/gidopensees" -> "jamesmaguire/opensees-model-view"
 "rclab-auth/gidopensees" -> "NHERI-SimCenter/PileGroupTool"
+"mpitutorial/mpitutorial" -> "kokkos/kokkos" ["e"=1]
+"VictorEijkhout/TheArtofHPC_pdfs" -> "LLNL/RAJA" ["e"=1]
 "AlibabaResearch/flash-llm" -> "microsoft/SparTA"
 "AlibabaResearch/flash-llm" -> "YukeWang96/TC-GNN_ATC23"
 "AlibabaResearch/flash-llm" -> "xxyux/SpInfer"
 "AlibabaResearch/flash-llm" -> "google-research/sputnik"
+"yixuan/LBFGSpp" -> "ddemidov/amgcl" ["e"=1]
+"Geant4/geant4" -> "openmc-dev/openmc" ["e"=1]
+"Geant4/geant4" -> "svalinn/DAGMC" ["e"=1]
+"Geant4/geant4" -> "pyne/pyne" ["e"=1]
+"Geant4/geant4" -> "radioactivedecay/radioactivedecay" ["e"=1]
 "priyanshu11137/Missile-Guidance-Using-Reinforcement-Learning" -> "LutterWa/Computational-TSG"
 "dumerrill/merge-spmv" -> "owensgroup/merge-spmm"
 "dumerrill/merge-spmv" -> "weifengliu-ssslab/Benchmark_SpMV_using_CSR5"
@@ -2984,6 +3275,7 @@ digraph G {
 "dumerrill/merge-spmv" -> "nulidangxueshen/CSR2"
 "dumerrill/merge-spmv" -> "weifengliu-ssslab/Benchmark_SpMV_using_CSR"
 "mechanoChem/mechanoChemIGA" -> "mathLab/IGA-dealii"
+"Autodesk/XLB" -> "tumaer/JAXFLUIDS" ["e"=1]
 "ddemidov/amgcl" -> "hypre-space/hypre"
 "ddemidov/amgcl" -> "polyfem/polyfem" ["e"=1]
 "ddemidov/amgcl" -> "NVIDIA/AMGX"
@@ -3014,6 +3306,7 @@ digraph G {
 "StanfordLegion/legion" -> "tensor-compiler/taco" ["e"=1]
 "StanfordLegion/legion" -> "UoB-HPC/BabelStream"
 "StanfordLegion/legion" -> "libocca/occa"
+"IntelLabs/SkimCaffe" -> "IntelLabs/SpMP" ["e"=1]
 "m2n037/awesome-mecheng" -> "nagordon/mechpy"
 "m2n037/awesome-mecheng" -> "qd-cae/awesome-CAE"
 "m2n037/awesome-mecheng" -> "kiloreux/awesome-robotics" ["e"=1]
@@ -3033,6 +3326,7 @@ digraph G {
 "jouvetg/igm" -> "jouvetg/igm_old"
 "jouvetg/igm" -> "OGGM/oggm"
 "jouvetg/igm" -> "JordiBolibar/ALPGM"
+"bitnami/minideb" -> "vmware-archive/kube-prod-runtime" ["e"=1]
 "qd-cae/awesome-CAE" -> "qd-cae/qd-cae-python"
 "qd-cae/awesome-CAE" -> "jgomezc1/ABAQUS-US"
 "qd-cae/awesome-CAE" -> "SteveDoyle2/pyNastran"
@@ -3048,6 +3342,9 @@ digraph G {
 "qd-cae/awesome-CAE" -> "WeilinDeng/ABAQUS"
 "qd-cae/awesome-CAE" -> "AppliedMechanics-EAFIT/SolidsPy"
 "qd-cae/awesome-CAE" -> "nasa/NASTRAN-95"
+"sigma-py/quadpy" -> "kinnala/scikit-fem" ["e"=1]
+"sigma-py/quadpy" -> "pyamg/pyamg" ["e"=1]
+"sigma-py/quadpy" -> "mfem/PyMFEM" ["e"=1]
 "shenzhihao/CFDEMInterFoamIB" -> "DwwWxx/MSP-CFDEMcoupling"
 "ritchie46/anaStruct" -> "JWock82/Pynite"
 "ritchie46/anaStruct" -> "robbievanleeuwen/section-properties"
@@ -3070,10 +3367,18 @@ digraph G {
 "qd-cae/qd-cae-python" -> "svenholcombe/matlab-lsdyna"
 "qd-cae/qd-cae-python" -> "jfriedlein/usrmat_LS-Dyna_Fortran"
 "SciCompMod/GMGPolar" -> "DLR-SC/ESID"
+"nrc-cnrc/EGSnrc" -> "svalinn/DAGMC" ["e"=1]
+"nrc-cnrc/EGSnrc" -> "njoy/NJOY2016" ["e"=1]
+"nrc-cnrc/EGSnrc" -> "paulromano/awesome-nuclear" ["e"=1]
+"nrc-cnrc/EGSnrc" -> "openmc-dev/openmc" ["e"=1]
 "UoB-HPC/openmp-tutorial" -> "UoB-HPC/openmp-for-cs"
+"Kitware/ParaView" -> "dealii/dealii" ["e"=1]
+"Kitware/ParaView" -> "ElmerCSC/elmerfem" ["e"=1]
+"hughperkins/coriander" -> "libocca/occa" ["e"=1]
 "LLNL/LaSDI" -> "LLNL/gLaSDI"
 "LLNL/LaSDI" -> "LLNL/pylibROM"
 "LLNL/LaSDI" -> "LLNL/GPLaSDI"
+"kahypar/kahypar" -> "KarypisLab/METIS" ["e"=1]
 "BriefFiniteElementNet/BriefFiniteElement.Net" -> "iainsproat/SharpFE"
 "BriefFiniteElementNet/BriefFiniteElement.Net" -> "mgroupntua/FEM"
 "BriefFiniteElementNet/BriefFiniteElement.Net" -> "FEALiTE/FEALiTE2D"
@@ -3082,7 +3387,14 @@ digraph G {
 "xiexi51/ICCAD-Accel-GCN" -> "shaoyiHusky/SparseProgressiveDistillation"
 "xiexi51/ICCAD-Accel-GCN" -> "xiexi51/MaxK-GNN"
 "xiexi51/ICCAD-Accel-GCN" -> "harveyp123/LinGCN-Neurips23"
+"deepmodeling/jax-fem" -> "kinnala/scikit-fem" ["e"=1]
+"deepmodeling/jax-fem" -> "tumaer/JAXFLUIDS" ["e"=1]
+"deepmodeling/jax-fem" -> "FEniCS/dolfinx" ["e"=1]
+"deepmodeling/jax-fem" -> "IvanYashchuk/jax-fenics-adjoint" ["e"=1]
+"deepmodeling/jax-fem" -> "mfem/PyMFEM" ["e"=1]
 "pnnl/ExaGO" -> "ORNL/ReSolve"
+"qingfengxia/Cfd" -> "brli3/CFD" ["e"=1]
+"qingfengxia/Cfd" -> "qingfengxia/FenicsSolver" ["e"=1]
 "NaluCFD/Nalu" -> "Exawind/nalu-wind" ["e"=1]
 "NaluCFD/Nalu" -> "lesgo-jhu/lesgo"
 "NaluCFD/Nalu" -> "PyFR/PyFR"
@@ -3134,6 +3446,8 @@ digraph G {
 "njoy/ENDFtk" -> "openmc-dev/openmc_mcnp_adapter"
 "wcfrobert/fkit" -> "wcfrobert/ezbolt"
 "alexhagen/wig" -> "ahmedkmadani/OpenMCProject"
+"lmfit/uncertainties" -> "yt-project/unyt" ["e"=1]
+"mozman/ezdxf" -> "ritchie46/anaStruct" ["e"=1]
 "PrincetonUniversity/athena-public-version" -> "PrincetonUniversity/Athena-Cversion"
 "PrincetonUniversity/athena-public-version" -> "PrincetonUniversity/athena"
 "PrincetonUniversity/athena-public-version" -> "parthenon-hpc-lab/athenapk"
@@ -3142,11 +3456,14 @@ digraph G {
 "PrincetonUniversity/athena-public-version" -> "zenitani/OpenMHD"
 "PrincetonUniversity/athena-public-version" -> "lanl/vpic" ["e"=1]
 "project-fluxo/fluxo" -> "minoshim/MLAU"
+"esa/pagmo2" -> "LLNL/hiop" ["e"=1]
 "Meelfy/FEM" -> "chtld/Finite_Element_Method_Matlab"
 "Meelfy/FEM" -> "zhengzhirun/Finite-element-algorithm"
 "Meelfy/FEM" -> "zhangyaqi1989/Multiscale-FEM"
 "Meelfy/FEM" -> "MatMechLab/AsFem"
 "Meelfy/FEM" -> "jjcremmers/PyFEM"
+"conradsnicta/armadillo-code" -> "trilinos/Trilinos" ["e"=1]
+"google/FluidNet" -> "PyFR/PyFR" ["e"=1]
 "kokkos/kokkos-kernels" -> "kokkos/kokkos-tools"
 "kokkos/kokkos-kernels" -> "kokkos/kokkos-tutorials"
 "kokkos/kokkos-kernels" -> "LLNL/RAJA"
@@ -3177,8 +3494,17 @@ digraph G {
 "ansys/pymapdl" -> "dieter-wilhelm/apdl-mode"
 "ansys/pymapdl" -> "ansys/pyaedt"
 "ansys/pymapdl" -> "ansys/pyansys-geometry"
+"pmodels/mpich" -> "HPCToolkit/hpctoolkit" ["e"=1]
+"pmodels/mpich" -> "LLNL/Caliper" ["e"=1]
+"pmodels/mpich" -> "ParRes/Kernels" ["e"=1]
 "CRAFT-THU/RoDe" -> "AnonymousRepo123/AlphaSparse"
 "HPMLL/DTC-SpMM_ASPLOS24" -> "YukeWang96/TC-GNN_ATC23"
+"apollographql/apollo-client-devtools" -> "kata-containers/packaging" ["e"=1]
+"apollographql/apollo-client-devtools" -> "LLNL/Umpire" ["e"=1]
+"apollographql/apollo-client-devtools" -> "toggl/mobileapp" ["e"=1]
+"apollographql/apollo-client-devtools" -> "dotnet/docs.es-es" ["e"=1]
+"QMCPACK/qmcpack" -> "LLNL/blt" ["e"=1]
+"Haptic-Apps/Slide-iOS" -> "dotnet/docs.es-es" ["e"=1]
 "njoy/NJOY2016" -> "njoy/NJOY21"
 "njoy/NJOY2016" -> "mit-crpg/OpenMOC"
 "njoy/NJOY2016" -> "njoy/ENDFtk"
@@ -3198,6 +3524,9 @@ digraph G {
 "ornladios/ADIOS2" -> "AMReX-Codes/amrex"
 "ornladios/ADIOS2" -> "LBANN/lbann" ["e"=1]
 "ornladios/ADIOS2" -> "LLNL/Caliper"
+"jaheyns/CfdOF" -> "precice/precice" ["e"=1]
+"jaheyns/CfdOF" -> "precise-simulation/featool-multiphysics" ["e"=1]
+"jaheyns/CfdOF" -> "hystrath/hyStrath" ["e"=1]
 "PyFR/PyFR" -> "HiFiLES/HiFiLES-solver"
 "PyFR/PyFR" -> "ucns3d-team/UCNS3D"
 "PyFR/PyFR" -> "flexi-framework/flexi"
@@ -3219,6 +3548,8 @@ digraph G {
 "spectralDNS/shenfun" -> "cpraveen/chebpy"
 "spectralDNS/shenfun" -> "openmichigan/PSNM"
 "gedeschaines/propNav" -> "LutterWa/Computational-TSG"
+"freegs-plasma/freegs" -> "fusion-energy/paramak" ["e"=1]
+"Mohamedelrefaie/DrivAerNet" -> "tumaer/JAXFLUIDS" ["e"=1]
 "hystrath/hyStrath" -> "andrealani/COOLFluiD"
 "hystrath/hyStrath" -> "synthetik-technologies/blastfoam" ["e"=1]
 "hystrath/hyStrath" -> "WENO-OF/WENOEXT" ["e"=1]
@@ -3236,11 +3567,14 @@ digraph G {
 "hystrath/hyStrath" -> "davidem88/rhoEnergyFoam"
 "opensbli/opensbli" -> "OP-DSL/OPS"
 "opensbli/opensbli" -> "mlwong/HAMeRS"
+"chebfun/chebfun" -> "spectralDNS/shenfun" ["e"=1]
+"chebfun/chebfun" -> "DedalusProject/dedalus" ["e"=1]
 "youandvern/efficalc" -> "wcfrobert/fkit"
 "particleincell/Starfish" -> "particleincell/PICCBlog"
 "particleincell/Starfish" -> "piclas-framework/piclas"
 "betterscientificsoftware/bssw.io" -> "LLNL/blt"
 "pyiron/pyiron_workflow" -> "eisenforschung/software"
+"fppimenta/rheoTool" -> "ChenguangZhang/sdfibm" ["e"=1]
 "arjankoning1/talys" -> "IAEA-NDS/PREPRO"
 "arjankoning1/talys" -> "njoy/ENDFtk"
 "IAS-Astrophysics/athenak" -> "parthenon-hpc-lab/athenapk"
@@ -3327,6 +3661,8 @@ digraph G {
 "sfepy/sfepy" -> "AppliedMechanics-EAFIT/SolidsPy"
 "sfepy/sfepy" -> "JuliaFEM/JuliaFEM.jl" ["e"=1]
 "sfepy/sfepy" -> "NGSolve/ngsolve"
+"assertj/assertj" -> "dotnet/docs.es-es" ["e"=1]
+"assertj/assertj" -> "box/box-ui-elements" ["e"=1]
 "buddyd16/Structural-Engineering" -> "BrianChevalier/StructPy"
 "buddyd16/Structural-Engineering" -> "ritchie46/anaStruct"
 "buddyd16/Structural-Engineering" -> "JWock82/Pynite"
@@ -3367,6 +3703,7 @@ digraph G {
 "AMReX-Codes/amrex" -> "AMReX-Fluids/IAMR"
 "AMReX-Codes/amrex" -> "Nek5000/Nek5000"
 "AMReX-Codes/amrex" -> "LLNL/RAJA"
+"FFTW/fftw3" -> "Reference-LAPACK/lapack" ["e"=1]
 "LLNL/blt" -> "LLNL/axom"
 "LLNL/blt" -> "LLNL/conduit"
 "LLNL/blt" -> "LLNL/Umpire"
@@ -3430,6 +3767,8 @@ digraph G {
 "mit-crpg/OpenMOC" -> "SlaybaughLab/BART"
 "mit-crpg/OpenMOC" -> "mit-crpg/benchmarks"
 "mit-crpg/OpenMOC" -> "CORE-GATECH-GROUP/serpent-tools"
+"cudpp/cudpp" -> "cusplibrary/cusplibrary" ["e"=1]
+"toggl/toggl_api_docs" -> "toggl/mobileapp" ["e"=1]
 "digitalrebar/provision" -> "kata-containers/packaging"
 "digitalrebar/provision" -> "digitalrebar/provision"
 "digitalrebar/provision" -> "digitalrebar/provision-content"
@@ -3456,6 +3795,7 @@ digraph G {
 "mfem/PyMFEM" -> "hypre-space/hypre"
 "MRod5/pyturb" -> "las-palmas1/gas_turbine_cycle"
 "MRod5/pyturb" -> "ZhongWang24/condition-monitoring-system-for-gas-turbine"
+"klmr/named-operator" -> "jaredhoberock/tuple_utility" ["e"=1]
 "idaholab/raven" -> "idaholab/HERON"
 "idaholab/raven" -> "rakhimov/scram"
 "idaholab/raven" -> "ORNL-Modelica/TRANSFORM-Library"
@@ -3463,9 +3803,15 @@ digraph G {
 "idaholab/raven" -> "idaholab/HYBRID"
 "stefanengblom/stenglib" -> "odedamir/topopt-mgcg-matlab"
 "stefanengblom/stenglib" -> "ooibhadode/IbIPP"
+"mit-han-lab/Block-Sparse-Attention" -> "xxyux/SpInfer" ["e"=1]
 "ludcila/CHT-preCICE" -> "precice/code_aster-adapter"
+"viennacl/viennacl-dev" -> "cusplibrary/cusplibrary" ["e"=1]
+"viennacl/viennacl-dev" -> "IntelLabs/SpMP" ["e"=1]
 "4C-multiphysics/4C" -> "queens-py/queens"
 "4C-multiphysics/4C" -> "PartExa/PartExa"
+"sxs-collaboration/spectre" -> "IAS-Astrophysics/athenak" ["e"=1]
+"sxs-collaboration/spectre" -> "lanl/phoebus" ["e"=1]
+"sxs-collaboration/spectre" -> "parthenon-hpc-lab/athenapk" ["e"=1]
 "las-palmas1/gas_turbine_cycle" -> "MRod5/pyturb"
 "scientificcomputing/scifem" -> "jorgensd/dolfinx_mpc"
 "queens-py/queens" -> "PartExa/PartExa"
@@ -3489,7 +3835,15 @@ digraph G {
 "nasa/CFL3D" -> "andrealani/COOLFluiD"
 "nasa/CFL3D" -> "nasa/NASTRAN-95"
 "nasa/CFL3D" -> "Nek5000/Nek5000"
+"vmware-archive/kubecfg" -> "vmware-archive/kube-prod-runtime" ["e"=1]
+"PyDMD/PyDMD" -> "pymor/pymor" ["e"=1]
+"PyDMD/PyDMD" -> "LLNL/libROM" ["e"=1]
+"PyDMD/PyDMD" -> "PyFR/PyFR" ["e"=1]
+"PyDMD/PyDMD" -> "DedalusProject/dedalus" ["e"=1]
 "PrincetonUniversity/Athena-Cversion" -> "PrincetonUniversity/athena-public-version"
+"kthohr/optim" -> "ddemidov/amgcl" ["e"=1]
+"automeris-io/WebPlotDigitizer" -> "precice/precice" ["e"=1]
+"automeris-io/WebPlotDigitizer" -> "su2code/SU2" ["e"=1]
 "box/box-ui-elements" -> "dotnet/docs.es-es"
 "box/box-ui-elements" -> "kata-containers/packaging"
 "box/box-ui-elements" -> "tusen-ai/simpledet" ["e"=1]
@@ -3506,6 +3860,9 @@ digraph G {
 "PyGEM-Community/PyGEM" -> "icepack/icepack"
 "PyGEM-Community/PyGEM" -> "OGGM/oggm"
 "AMReX-Fluids/IAMR" -> "AMReX-Fluids/incflo"
+"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" -> "surajp92/CFD_Julia" ["e"=1]
+"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" -> "ChenguangZhang/sdfibm" ["e"=1]
+"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" -> "precice/precice" ["e"=1]
 "CaNS-World/CaNS" -> "PhysicsofFluids/AFiD"
 "CaNS-World/CaNS" -> "Multiphysics-Flow-Solvers/FluTAS"
 "CaNS-World/CaNS" -> "PhysicsofFluids/AFiD_GPU_opensource"
@@ -3546,6 +3903,7 @@ digraph G {
 "ISosnovik/nn4topopt" -> "pep-pig/Topology-optimization-of-structure-via-simp-method"
 "ISosnovik/nn4topopt" -> "GhislainRaze/Topology-Optimization"
 "ISosnovik/nn4topopt" -> "edofersan/MaximumSize_on_TopOpt_in_PETSc"
+"wo80/Triangle.NET" -> "BriefFiniteElementNet/BriefFiniteElement.Net" ["e"=1]
 "pymor/pymor" -> "RBniCS/RBniCS"
 "pymor/pymor" -> "LLNL/libROM"
 "pymor/pymor" -> "mathLab/EZyRB"
@@ -3557,6 +3915,8 @@ digraph G {
 "pymor/pymor" -> "redbKIT/redbKIT"
 "pymor/pymor" -> "stefaniafresca/POD-DL-ROM"
 "pymor/pymor" -> "mdolab/pygeo" ["e"=1]
+"pypr/pysph" -> "KratosMultiphysics/Kratos" ["e"=1]
+"pypr/pysph" -> "usnistgov/fipy" ["e"=1]
 "YaoyaoBae/Feon" -> "AppliedMechanics-EAFIT/SolidsPy"
 "YaoyaoBae/Feon" -> "tjfulle/fem-with-python"
 "YaoyaoBae/Feon" -> "jjcremmers/PyFEM"
@@ -3631,6 +3991,10 @@ digraph G {
 "mradway/hycohanz" -> "yuip/hfss-api"
 "SedFoam/sedfoam" -> "xiaoh/sediFoam"
 "SedFoam/sedfoam" -> "dpkn31/Yade-OpenFOAM-coupling"
+"openPMD/openPMD-api" -> "ECP-copa/Cabana" ["e"=1]
+"openPMD/openPMD-api" -> "Alpine-DAV/ascent" ["e"=1]
+"openPMD/openPMD-api" -> "LLNL/conduit" ["e"=1]
+"openPMD/openPMD-api" -> "ornladios/ADIOS2" ["e"=1]
 "fluiddyn/fluidsim" -> "snek5000/snek5000"
 "LLNL/CHAI" -> "LLNL/camp"
 "LLNL/CHAI" -> "desul/desul"
@@ -3656,7 +4020,7 @@ digraph G {
 "dealii/dealii" ["l"="63.067,-1.536"]
 "NGSolve/ngsolve" ["l"="63.033,-1.514"]
 "FEniCS/dolfinx" ["l"="63.024,-1.61"]
-"polyfem/polyfem" ["l"="62.93,0.186"]
+"polyfem/polyfem" ["l"="62.93,0.186", "c"=403]
 "KratosMultiphysics/Kratos" ["l"="63.022,-1.531"]
 "firedrakeproject/firedrake" ["l"="63.048,-1.601"]
 "kinnala/scikit-fem" ["l"="63.08,-1.599"]
@@ -3664,36 +4028,44 @@ digraph G {
 "idaholab/moose" ["l"="62.985,-1.569"]
 "trilinos/Trilinos" ["l"="63.09,-1.492"]
 "precice/precice" ["l"="63.046,-1.494"]
+"pycalphad/pycalphad" ["l"="21.867,13.076", "c"=344]
+"prisms-center/phaseField" ["l"="63.123,-1.713"]
+"moderngpu/moderngpu" ["l"="36.696,0.93", "c"=112]
+"cusplibrary/cusplibrary" ["l"="63.147,-1.737"]
 "nodejs/nodejs.dev" ["l"="63.073,-1.236"]
-"unsplash/datasets" ["l"="-44.289,11.177"]
-"nodejs/nodejs.org" ["l"="-3.736,-30.062"]
+"unsplash/datasets" ["l"="-44.289,11.177", "c"=1049]
+"nodejs/nodejs.org" ["l"="-3.736,-30.062", "c"=4]
 "kata-containers/packaging" ["l"="63.118,-1.281"]
-"kubernetes-sigs/cluster-api-provider-aws" ["l"="8.519,-43.983"]
+"kubernetes-sigs/cluster-api-provider-aws" ["l"="8.519,-43.983", "c"=1059]
 "dotnet/docs.es-es" ["l"="63.107,-1.291"]
 "toggl/mobileapp" ["l"="63.121,-1.264"]
-"apollographql/apollo-client-devtools" ["l"="-0.39,-20.586"]
+"apollographql/apollo-client-devtools" ["l"="-0.39,-20.586", "c"=153]
 "box/box-ui-elements" ["l"="63.092,-1.271"]
 "LLNL/Umpire" ["l"="63.15,-1.358"]
-"nodejs/TSC" ["l"="-0.044,-33.419"]
-"nodejs/node-v8" ["l"="-0.038,-33.393"]
+"nodejs/TSC" ["l"="-0.044,-33.419", "c"=110]
+"nodejs/node-v8" ["l"="-0.038,-33.393", "c"=110]
 "vmware-archive/kube-prod-runtime" ["l"="63.109,-1.244"]
-"nodejs/community-committee" ["l"="-0.045,-33.358"]
-"nodejs/corepack" ["l"="-7.338,-30.415"]
-"nodejs/mentorship" ["l"="-0.038,-33.313"]
+"nodejs/community-committee" ["l"="-0.045,-33.358", "c"=110]
+"nodejs/corepack" ["l"="-7.338,-30.415", "c"=31]
+"nodejs/mentorship" ["l"="-0.038,-33.313", "c"=110]
+"gunrock/gunrock" ["l"="51.441,15.303", "c"=1231]
+"barbagroup/CFDPython" ["l"="63.48,-2.809", "c"=1090]
 "su2code/SU2" ["l"="63.171,-1.565"]
+"surajp92/CFD_Julia" ["l"="63.306,-1.601"]
 "PyFR/PyFR" ["l"="63.226,-1.553"]
-"OpenFOAM/OpenFOAM-dev" ["l"="63.497,-2.768"]
+"OpenFOAM/OpenFOAM-dev" ["l"="63.497,-2.768", "c"=1090]
 "nasa/CFL3D" ["l"="63.181,-1.543"]
-"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" ["l"="63.479,-2.731"]
+"UnnamedMoose/BasicOpenFOAMProgrammingTutorials" ["l"="63.479,-2.731", "c"=1090]
 "ucns3d-team/UCNS3D" ["l"="63.247,-1.549"]
 "Nek5000/Nek5000" ["l"="63.204,-1.546"]
 "eric2003/OneFLOW" ["l"="63.213,-1.567"]
 "andrealani/COOLFluiD" ["l"="63.229,-1.57"]
-"barbagroup/CFDPython" ["l"="63.48,-2.809"]
 "CGNS/CGNS" ["l"="63.23,-1.538"]
-"mdolab/adflow" ["l"="62.74,-2.24"]
+"mdolab/adflow" ["l"="62.74,-2.24", "c"=1176]
 "AMReX-Codes/amrex" ["l"="63.178,-1.522"]
 "hystrath/hyStrath" ["l"="63.247,-1.628"]
+"cgarciae/pypeln" ["l"="45.144,20.955", "c"=20]
+"charmplusplus/charm4py" ["l"="63.199,-1.168"]
 "chaos-polymtl/lethe" ["l"="63.249,-1.433"]
 "exadg/exadg" ["l"="63.247,-1.505"]
 "cburstedde/p4est" ["l"="63.215,-1.495"]
@@ -3704,17 +4076,22 @@ digraph G {
 "code-mphi/ECOGEN" ["l"="63.27,-1.552"]
 "dpkn31/Yade-OpenFOAM-coupling" ["l"="63.335,-1.25"]
 "petsc/petsc" ["l"="63.117,-1.502"]
-"Xiangyu-Hu/SPHinXsys" ["l"="62.669,1.011"]
+"Xiangyu-Hu/SPHinXsys" ["l"="62.669,1.011", "c"=371]
 "mfem/PyMFEM" ["l"="63.069,-1.556"]
 "jjcremmers/PyFEM" ["l"="63.14,-1.557"]
-"nschloe/pygmsh" ["l"="62.807,0.285"]
+"nschloe/pygmsh" ["l"="62.807,0.285", "c"=403]
 "tjfulle/fem-with-python" ["l"="63.121,-1.579"]
 "pyamg/pyamg" ["l"="63.106,-1.586"]
-"deepmodeling/jax-fem" ["l"="21.967,14.055"]
-"nschloe/meshio" ["l"="62.794,0.265"]
+"deepmodeling/jax-fem" ["l"="21.967,14.055", "c"=267]
+"nschloe/meshio" ["l"="62.794,0.265", "c"=403]
 "AppliedMechanics-EAFIT/SolidsPy" ["l"="63.101,-1.514"]
 "usnistgov/fipy" ["l"="63.11,-1.641"]
-"sigma-py/quadpy" ["l"="62.791,0.319"]
+"sigma-py/quadpy" ["l"="62.791,0.319", "c"=403]
+"nschloe/awesome-scientific-computing" ["l"="62.776,0.298", "c"=403]
+"prymitive/karma" ["l"="9.576,-10.532", "c"=484]
+"triSYCL/triSYCL" ["l"="64.243,-2.023", "c"=477]
+"UoB-HPC/BabelStream" ["l"="63.23,-1.369"]
+"thliebig/openEMS-Project" ["l"="33.474,-4.936", "c"=661]
 "JWock82/Pynite" ["l"="63.314,-1.369"]
 "ritchie46/anaStruct" ["l"="63.348,-1.343"]
 "robbievanleeuwen/section-properties" ["l"="63.361,-1.331"]
@@ -3729,11 +4106,14 @@ digraph G {
 "JWock82/xlFrame" ["l"="63.379,-1.38"]
 "JorgeDeLosSantos/nusa" ["l"="63.311,-1.397"]
 "OpenSees/OpenSees" ["l"="63.409,-1.36"]
+"marcomusy/vedo" ["l"="62.777,0.244", "c"=403]
 "microhh/microhh" ["l"="63.428,-1.591"]
 "dalesteam/dales" ["l"="63.524,-1.593"]
 "NCAR/FastEddy-model" ["l"="63.469,-1.597"]
 "friedenhe/hercules" ["l"="63.327,-1.584"]
 "CaNS-World/CaNS" ["l"="63.294,-1.576"]
+"BLAST-WarpX/warpx" ["l"="20.572,13.894", "c"=1146]
+"AMReX-Astro/Castro" ["l"="63.243,-1.567"]
 "visit-dav/visit" ["l"="63.17,-1.467"]
 "LLNL/conduit" ["l"="63.175,-1.431"]
 "Alpine-DAV/ascent" ["l"="63.161,-1.411"]
@@ -3745,11 +4125,22 @@ digraph G {
 "LLNL/serac" ["l"="63.157,-1.447"]
 "LLNL/Caliper" ["l"="63.182,-1.386"]
 "LLNL/SAMRAI" ["l"="63.192,-1.508"]
-"AMReX-Astro/Castro" ["l"="63.243,-1.567"]
 "ornladios/ADIOS2" ["l"="63.147,-1.417"]
-"SmileiPIC/Smilei" ["l"="20.549,13.875"]
+"SmileiPIC/Smilei" ["l"="20.549,13.875", "c"=1146]
 "KratosMultiphysics/Examples" ["l"="62.863,-1.546"]
 "KratosMultiphysics/GiDInterface" ["l"="62.917,-1.539"]
+"spack/spack" ["l"="7.097,-13.734", "c"=893]
+"kokkos/kokkos" ["l"="63.141,-1.443"]
+"flame/blis" ["l"="37.113,0.808", "c"=112]
+"Reference-LAPACK/lapack" ["l"="62.961,-1.512"]
+"ginkgo-project/ginkgo" ["l"="63.135,-1.514"]
+"OpenMathLib/OpenBLAS" ["l"="37.247,0.775", "c"=112]
+"DrTimothyAldenDavis/SuiteSparse" ["l"="63.043,-1.556"]
+"barbagroup/AeroPython" ["l"="62.801,-2.163", "c"=1176]
+"projectchrono/chrono" ["l"="-21.677,-25.632", "c"=101]
+"rusty1s/pytorch_sparse" ["l"="65.127,11.377", "c"=203]
+"google-research/sputnik" ["l"="63.158,-1.978"]
+"hgyhungry/ge-spmm" ["l"="63.174,-1.964"]
 "open-lasso-python/lasso-python-legacy" ["l"="62.978,-1.175"]
 "qd-cae/qd-cae-python" ["l"="62.981,-1.199"]
 "lattice/quda" ["l"="63.515,-1.151"]
@@ -3760,19 +4151,18 @@ digraph G {
 "etmc/tmLQCD" ["l"="63.551,-1.152"]
 "lehner/gpt" ["l"="63.576,-1.121"]
 "mspraggs/pyQCD" ["l"="63.535,-1.107"]
-"UoB-HPC/BabelStream" ["l"="63.23,-1.369"]
 "usqcd-software/qdpxx" ["l"="63.535,-1.142"]
 "LatticeQCD/SIMULATeQCD" ["l"="63.572,-1.141"]
 "jinluchang/Qlattice" ["l"="63.535,-1.168"]
 "aportelli/Hadrons" ["l"="63.555,-1.135"]
 "karlrupp/microprocessor-trend-data" ["l"="63.28,-1.292"]
-"hpc/ior" ["l"="2.121,14.969"]
-"RRZE-HPC/likwid" ["l"="6.737,-6.263"]
-"shioyadan/Konata" ["l"="31.696,-3.731"]
-"The-OpenROAD-Project/asap7-old" ["l"="32.859,-4.716"]
+"hpc/ior" ["l"="2.121,14.969", "c"=756]
+"RRZE-HPC/likwid" ["l"="6.737,-6.263", "c"=335]
+"shioyadan/Konata" ["l"="31.696,-3.731", "c"=188]
+"The-OpenROAD-Project/asap7-old" ["l"="32.859,-4.716", "c"=972]
 "ParRes/Kernels" ["l"="63.236,-1.348"]
-"PrincetonUniversity/openpiton" ["l"="31.767,-3.811"]
-"RRZE-HPC/OSACA" ["l"="6.665,-6.247"]
+"PrincetonUniversity/openpiton" ["l"="31.767,-3.811", "c"=188]
+"RRZE-HPC/OSACA" ["l"="6.665,-6.247", "c"=335]
 "pystra/pystra" ["l"="63.44,-1.315"]
 "hackl/TikZ-StructuralAnalysis" ["l"="63.402,-1.328"]
 "MatthewReid854/reliability" ["l"="63.574,-1.253"]
@@ -3794,7 +4184,6 @@ digraph G {
 "openmc-dev/openmc" ["l"="62.79,-1.651"]
 "paulromano/awesome-nuclear" ["l"="62.77,-1.657"]
 "neams-th-coe/cardinal" ["l"="62.815,-1.634"]
-"prisms-center/phaseField" ["l"="63.123,-1.713"]
 "sandialabs/Albany" ["l"="63.134,-1.494"]
 "rakhimov/scram" ["l"="62.482,-1.664"]
 "cmu-sei/emfta" ["l"="62.449,-1.665"]
@@ -3810,23 +4199,24 @@ digraph G {
 "psicofil/SalomeToCalculix" ["l"="62.856,-1.335"]
 "calculix/Cubit-CalculiX" ["l"="62.86,-1.365"]
 "ChenguangZhang/sdfibm" ["l"="63.331,-1.518"]
-"WENO-OF/WENOEXT" ["l"="63.445,-2.715"]
+"WENO-OF/WENOEXT" ["l"="63.445,-2.715", "c"=1090]
 "IBAMR/IBAMR" ["l"="63.212,-1.523"]
 "nickabattista/IB2d" ["l"="63.301,-1.508"]
 "fmuni/openHFDIB" ["l"="63.391,-1.522"]
-"daidezhi/interPlicFoam" ["l"="63.425,-2.838"]
+"daidezhi/interPlicFoam" ["l"="63.425,-2.838", "c"=1090]
 "davidsblom/FOAM-FSI" ["l"="63.415,-1.518"]
 "wyldckat/ImmersedBoundary" ["l"="63.398,-1.504"]
-"DLR-RY/TwoPhaseFlow" ["l"="63.429,-2.77"]
+"DLR-RY/TwoPhaseFlow" ["l"="63.429,-2.77", "c"=1090]
 "YaoyaoBae/simchain" ["l"="63.233,-1.754"]
 "YaoyaoBae/Blockchain-simulator-exe" ["l"="63.201,-1.703"]
 "Relph1119/TinyBlockChains" ["l"="63.266,-1.79"]
+"openai/blocksparse" ["l"="48.863,33.895", "c"=556]
 "sergeas67/OpenHyperFLOW2D" ["l"="63.267,-1.628"]
 "HiFiLES/HiFiLES-solver" ["l"="63.256,-1.555"]
-"CFD-GO/TCLB" ["l"="62.703,1.374"]
-"SimFlowCFD/RapidCFD-dev" ["l"="63.472,-2.701"]
+"CFD-GO/TCLB" ["l"="62.703,1.374", "c"=371]
+"SimFlowCFD/RapidCFD-dev" ["l"="63.472,-2.701", "c"=1090]
 "NaluCFD/Nalu" ["l"="63.24,-1.582"]
-"synthetik-technologies/blastfoam" ["l"="63.432,-2.738"]
+"synthetik-technologies/blastfoam" ["l"="63.432,-2.738", "c"=1090]
 "LLNL/RAJAPerf" ["l"="63.172,-1.359"]
 "LLNL/Quicksilver" ["l"="63.079,-1.188"]
 "kokkos/kokkos-tools" ["l"="63.189,-1.396"]
@@ -3835,48 +4225,60 @@ digraph G {
 "CEED/Laghos" ["l"="63.172,-1.484"]
 "LLNL/hiop" ["l"="63.141,-1.373"]
 "ORNL/ReSolve" ["l"="63.15,-1.273"]
-"Argonne-National-Laboratory/PIPS" ["l"="60.929,13.587"]
+"Argonne-National-Laboratory/PIPS" ["l"="60.929,13.587", "c"=313]
+"ddemidov/amgcl" ["l"="63.094,-1.549"]
 "AMReX-Combustion/PeleLM" ["l"="63.235,-1.647"]
 "AMReX-Combustion/PelePhysics" ["l"="63.246,-1.655"]
 "AMReX-Combustion/PeleC" ["l"="63.223,-1.583"]
 "AMReX-Combustion/PeleLMeX" ["l"="63.255,-1.689"]
 "stanfordhpccenter/HTR-solver" ["l"="63.28,-1.565"]
 "AMReX-Fluids/IAMR" ["l"="63.216,-1.61"]
-"ddemidov/amgcl" ["l"="63.094,-1.549"]
 "NVIDIA/AMGX" ["l"="63.137,-1.54"]
 "LLNL/sundials" ["l"="63.101,-1.474"]
-"ginkgo-project/ginkgo" ["l"="63.135,-1.514"]
 "CEED/libCEED" ["l"="63.151,-1.481"]
 "sandialabs/seacas" ["l"="63.094,-1.436"]
 "ECP-copa/Cabana" ["l"="63.178,-1.45"]
 "SCOREC/core" ["l"="63.13,-1.47"]
 "sandialabs/omega_h" ["l"="63.072,-1.392"]
-"Exawind/amr-wind" ["l"="-11.173,18.01"]
+"Exawind/amr-wind" ["l"="-11.173,18.01", "c"=440]
 "kokkos/kokkos-kernels" ["l"="63.164,-1.424"]
+"AdaptiveCpp/AdaptiveCpp" ["l"="64.223,-1.97", "c"=477]
 "ParticulateFlow/LIGGGHTS-PFM" ["l"="63.391,-1.195"]
 "ParticulateFlow/CFDEMcoupling-PFM" ["l"="63.371,-1.21"]
 "ParticulateFlow/DEM-course-tutorials" ["l"="63.403,-1.166"]
 "schrummy14/LIGGGHTS_Flexible_Fibers" ["l"="63.382,-1.18"]
-"bitnami/kube-libsonnet" ["l"="9.518,-11.322"]
-"vmware-archive/kubecfg" ["l"="10.481,-10.301"]
-"hjacobs/kube-ops-view" ["l"="7.673,-8.877"]
+"asdf-format/asdf" ["l"="20.394,14.948", "c"=719]
+"yt-project/yt" ["l"="63.403,-1.71"]
+"bitnami/kube-libsonnet" ["l"="9.518,-11.322", "c"=834]
+"vmware-archive/kubecfg" ["l"="10.481,-10.301", "c"=740]
+"hjacobs/kube-ops-view" ["l"="7.673,-8.877", "c"=14]
 "digitalrebar/provision" ["l"="63.118,-1.219"]
-"bitnami/bitnami-docker-ruby" ["l"="5.964,-11.721"]
-"bitnami/bitnami-docker-nginx" ["l"="5.964,-11.737"]
-"chainloop-dev/chainloop" ["l"="7.968,-11.4"]
-"prymitive/karma" ["l"="9.576,-10.532"]
-"bookingcom/shipper" ["l"="7.886,-9.306"]
+"bitnami/bitnami-docker-ruby" ["l"="5.964,-11.721", "c"=270]
+"bitnami/bitnami-docker-nginx" ["l"="5.964,-11.737", "c"=270]
+"chainloop-dev/chainloop" ["l"="7.968,-11.4", "c"=285]
+"bookingcom/shipper" ["l"="7.886,-9.306", "c"=14]
+"mpi4py/mpi4py" ["l"="2.063,14.351", "c"=572]
+"spectralDNS/shenfun" ["l"="63.198,-1.671"]
+"trelau/pyOCCT" ["l"="61.541,0.007", "c"=606]
+"NGSolve/netgen" ["l"="63.005,-1.487"]
+"Rhymen/go-whatsapp" ["l"="27.099,-30.31", "c"=668]
 "opencollab/arpack-ng" ["l"="62.921,-1.484"]
 "m-reuter/arpackpp" ["l"="62.882,-1.495"]
-"pomerol-ed/pomerol" ["l"="21.712,17.527"]
+"pomerol-ed/pomerol" ["l"="21.712,17.527", "c"=863]
 "inducer/arpack" ["l"="62.89,-1.48"]
-"yixuan/spectra" ["l"="-19.434,-25.943"]
+"yixuan/spectra" ["l"="-19.434,-25.943", "c"=10]
 "Reference-ScaLAPACK/scalapack" ["l"="62.954,-1.471"]
-"sourceryinstitute/OpenCoarrays" ["l"="62.556,-0.828"]
+"sourceryinstitute/OpenCoarrays" ["l"="62.556,-0.828", "c"=953]
 "primme/primme" ["l"="62.843,-1.505"]
 "xiaoyeli/superlu" ["l"="63.041,-1.471"]
 "OP-DSL/OP2-Common" ["l"="63.079,-1.321"]
 "OP-DSL/OPS" ["l"="63.111,-1.349"]
+"texworld/betterbib" ["l"="62.782,0.36", "c"=403]
+"KaHIP/KaHIP" ["l"="32.999,-5.375", "c"=830]
+"KarypisLab/METIS" ["l"="63.075,-1.577"]
+"KarypisLab/ParMETIS" ["l"="63.042,-1.633"]
+"cb-geo/mpm" ["l"="62.754,1.138", "c"=371]
+"SudoDEM/SudoDEM" ["l"="63.334,-1.209"]
 "M2DOLab/OpenLSTO" ["l"="62.662,-1.304"]
 "M2DOLab/OpenLSTO-lite" ["l"="62.618,-1.328"]
 "HayoungChung/openmdao_TopOpt" ["l"="62.629,-1.288"]
@@ -3893,7 +4295,7 @@ digraph G {
 "CALFEM/calfem-python" ["l"="63.077,-1.618"]
 "adtzlr/felupe" ["l"="63.135,-1.628"]
 "febiosoftware/FEBio" ["l"="62.985,-1.489"]
-"mo-hanxuan/FEMcy" ["l"="62.53,1.096"]
+"mo-hanxuan/FEMcy" ["l"="62.53,1.096", "c"=371]
 "sanjayg0/feappv" ["l"="63.018,-1.576"]
 "lyc102/ifem" ["l"="63.052,-1.682"]
 "Terenceyuyue/varFEM" ["l"="63.073,-1.684"]
@@ -3901,6 +4303,7 @@ digraph G {
 "CAMLAB-UChile/vemlab" ["l"="63.036,-1.72"]
 "vinhphunguyen/migfem" ["l"="62.951,-1.689"]
 "wangheyu/AFEPack" ["l"="63.022,-1.742"]
+"suavecode/SUAVE" ["l"="62.815,-2.2", "c"=1176]
 "KIT-FAST/modalAnalysis-OMA-EMA" ["l"="63.649,-0.775"]
 "knutankv/koma" ["l"="63.663,-0.798"]
 "OpenFOAM/OpenFOAM-7" ["l"="63.463,-1.035"]
@@ -3912,33 +4315,43 @@ digraph G {
 "spectralDNS/spectralDNS" ["l"="63.239,-1.6"]
 "DedalusProject/dedalus" ["l"="63.185,-1.645"]
 "bueler/p4pdes" ["l"="63.175,-1.3"]
-"JuliaLinearAlgebra/AlgebraicMultigrid.jl" ["l"="22.228,16.817"]
+"JuliaLinearAlgebra/AlgebraicMultigrid.jl" ["l"="22.228,16.817", "c"=77]
 "haasad/PyPardiso" ["l"="62.967,-1.667"]
 "raptor-library/raptor" ["l"="63.032,-1.672"]
+"mlpack/ensmallen" ["l"="-19.453,-25.934", "c"=10]
+"DualSPHysics/DualSPHysics" ["l"="62.642,0.994", "c"=371]
 "AMReX-Fluids/incflo" ["l"="63.216,-1.647"]
+"analysiscenter/pydens" ["l"="21.785,16.049", "c"=516]
+"zwicker-group/py-pde" ["l"="63.123,-1.668"]
 "shwina/pyamgx" ["l"="63.153,-1.59"]
 "libocca/occa" ["l"="63.191,-1.451"]
 "pghysels/STRUMPACK" ["l"="63.069,-1.453"]
-"cusplibrary/cusplibrary" ["l"="63.147,-1.737"]
 "SWIFTSIM/SWIFT" ["l"="63.517,-1.78"]
 "alejandrobll/py-sphviewer" ["l"="63.569,-1.815"]
 "SWIFTSIM/swiftsimio" ["l"="63.545,-1.786"]
 "jchelly/gadgetviewer" ["l"="63.548,-1.804"]
+"kokkos/mdspan" ["l"="-19.888,-26.199", "c"=10]
 "GLVis/glvis" ["l"="63.11,-1.488"]
 "arborx/ArborX" ["l"="63.199,-1.44"]
 "xiaoyeli/superlu_dist" ["l"="63.089,-1.457"]
 "LLNL/libROM" ["l"="63.147,-1.61"]
-"ROCm/rocALUTION" ["l"="64.263,-1.758"]
+"ROCm/rocALUTION" ["l"="64.263,-1.758", "c"=477]
 "hpddm/hpddm" ["l"="63.073,-1.427"]
 "desul/desul" ["l"="63.189,-1.334"]
+"nasa/cfdtools" ["l"="63.179,-1.613"]
+"flexi-framework/flexi" ["l"="63.269,-1.539"]
+"ITHACA-FV/ITHACA-FV" ["l"="63.476,-2.668", "c"=1090]
+"mathLab/EZyRB" ["l"="63.045,-1.761"]
 "goma/goma" ["l"="63.06,-1.616"]
 "grinsfem/grins" ["l"="63.021,-1.651"]
 "FEALiTE/FEALiTE2D" ["l"="63.426,-1.403"]
 "LLNL/shroud" ["l"="63.178,-1.322"]
 "LLNL/uberenv" ["l"="63.158,-1.383"]
 "swig-fortran/swig" ["l"="63.228,-1.258"]
+"kata-containers/documentation" ["l"="8.463,-9.327", "c"=14]
 "FreeFem/FreeFem-modules" ["l"="62.887,-1.566"]
 "FreeFem/FreeFem-website" ["l"="62.903,-1.57"]
+"glue-viz/glue" ["l"="20.415,14.969", "c"=719]
 "cryotools/cosipy" ["l"="63.184,-0.893"]
 "awesome-cryosphere/cryosphere-links" ["l"="63.181,-0.914"]
 "OGGM/oggm-edu" ["l"="63.209,-0.867"]
@@ -3947,6 +4360,10 @@ digraph G {
 "JordiBolibar/ALPGM" ["l"="63.208,-0.942"]
 "GLIMS-RGI/rgitools" ["l"="63.223,-0.915"]
 "Machine-Learning-in-Glaciology-Workshop/Project_MB_Regression" ["l"="63.201,-0.908"]
+"veusz/veusz" ["l"="-34.296,16.991", "c"=652]
+"python-adaptive/adaptive" ["l"="62.681,0.289", "c"=403]
+"NREL/SOWFA" ["l"="-11.221,17.978", "c"=440]
+"lesgo-jhu/lesgo" ["l"="63.272,-1.573"]
 "david-kamensky/tIGAr" ["l"="62.923,-1.672"]
 "CALFEM/calfem-matlab-iga" ["l"="62.872,-1.713"]
 "ijlee2/Isogeometric-Analysis" ["l"="62.887,-1.688"]
@@ -3959,6 +4376,7 @@ digraph G {
 "zfergus/fenics-topopt" ["l"="62.656,-1.291"]
 "idaholab/LIGGGHTS-INL" ["l"="63.385,-1.163"]
 "linhanGE/CFDEMcoupling-LG" ["l"="63.354,-1.203"]
+"PMEAL/OpenPNM" ["l"="62.772,1.482", "c"=371]
 "OpenFOAM/OpenFOAM-6" ["l"="63.452,-1.081"]
 "OpenFOAM/ThirdParty-6" ["l"="63.47,-1.066"]
 "CFDEMproject/CFDEMcoupling-PUBLIC" ["l"="63.372,-1.195"]
@@ -3966,30 +4384,33 @@ digraph G {
 "MonashSmartStructures/ospgrillage" ["l"="63.418,-1.322"]
 "Kleissl/HollowRC" ["l"="63.449,-1.393"]
 "onurkoc/interaction-diagram" ["l"="63.429,-1.38"]
+"spcl/dace" ["l"="37.354,1.1", "c"=112]
 "jlblancoc/suitesparse-metis-for-windows" ["l"="62.957,-1.586"]
-"DrTimothyAldenDavis/SuiteSparse" ["l"="63.043,-1.556"]
 "tbennun/ceres-windows" ["l"="62.868,-1.59"]
 "PetterS/SuiteSparse" ["l"="62.899,-1.596"]
-"ipc-sim/IPC" ["l"="62.643,1.153"]
-"cnr-isti-vclab/vcglib" ["l"="62.901,0.081"]
-"manhofer/Line3Dpp" ["l"="60.513,9.487"]
-"ceres-solver/ceres-solver" ["l"="59.301,10.933"]
-"sweeneychris/TheiaSfM" ["l"="60.474,9.517"]
-"victorprad/InfiniTAM" ["l"="59.5,11.287"]
-"patr-schm/TinyAD" ["l"="62.987,0.21"]
-"niessner/VoxelHashing" ["l"="59.463,11.319"]
+"ipc-sim/IPC" ["l"="62.643,1.153", "c"=371]
+"cnr-isti-vclab/vcglib" ["l"="62.901,0.081", "c"=403]
+"manhofer/Line3Dpp" ["l"="60.513,9.487", "c"=636]
+"ceres-solver/ceres-solver" ["l"="59.301,10.933", "c"=87]
+"sweeneychris/TheiaSfM" ["l"="60.474,9.517", "c"=636]
+"victorprad/InfiniTAM" ["l"="59.5,11.287", "c"=87]
+"patr-schm/TinyAD" ["l"="62.987,0.21", "c"=403]
+"niessner/VoxelHashing" ["l"="59.463,11.319", "c"=87]
+"autodiff/autodiff" ["l"="-19.556,-25.891", "c"=10]
+"toggl-open-source/toggldesktop" ["l"="-17.252,-1.024", "c"=813]
+"mdolab/dafoam" ["l"="62.727,-2.23", "c"=1176]
+"enGits/engrid" ["l"="63.28,-1.642"]
 "GeneralElectric/CalculiX" ["l"="62.913,-1.379"]
 "precice/tutorials" ["l"="62.926,-1.433"]
 "drlukeparry/pyccx" ["l"="62.896,-1.342"]
 "calculix/beso" ["l"="62.777,-1.318"]
-"bmcage/odes" ["l"="39.263,38.574"]
-"Cantera/cantera" ["l"="51.38,25.654"]
-"SciML/Sundials.jl" ["l"="22.378,16.706"]
-"kokkos/kokkos" ["l"="63.141,-1.443"]
+"bmcage/odes" ["l"="39.263,38.574", "c"=566]
+"Cantera/cantera" ["l"="51.38,25.654", "c"=1275]
+"SciML/Sundials.jl" ["l"="22.378,16.706", "c"=77]
 "HaoguangYang/OpenSTAP" ["l"="62.978,-1.603"]
 "sanjayg0/epcms" ["l"="62.994,-1.607"]
 "ParaFEM/ParaFEM" ["l"="62.972,-1.617"]
-"jcyrax/pcbmodelgen" ["l"="33.477,-4.977"]
+"jcyrax/pcbmodelgen" ["l"="33.477,-4.977", "c"=661]
 "chennachaos/awesome-FEM4CFD" ["l"="63.022,-1.392"]
 "feelpp/feelpp" ["l"="63.075,-1.505"]
 "TLCFEM/suanPan" ["l"="63.276,-1.433"]
@@ -4005,33 +4426,35 @@ digraph G {
 "windabovelake/matlabcstapiwithhislist" ["l"="62.907,-0.665"]
 "22zhang/Metasurfaces_Manitude_Phase_Control" ["l"="62.957,-0.659"]
 "kaankvrck/Cst-Py-Api" ["l"="62.934,-0.635"]
-"surajp92/CFD_Julia" ["l"="63.306,-1.601"]
 "lento234/awesome-fluid-dynamics" ["l"="63.311,-1.566"]
-"WaterLily-jl/WaterLily.jl" ["l"="22.13,16.87"]
+"WaterLily-jl/WaterLily.jl" ["l"="22.13,16.87", "c"=77]
 "brli3/CFD" ["l"="63.34,-1.61"]
-"google/jax-cfd" ["l"="21.751,15.857"]
-"trixi-framework/Trixi.jl" ["l"="22.12,16.824"]
+"google/jax-cfd" ["l"="21.751,15.857", "c"=516]
+"trixi-framework/Trixi.jl" ["l"="22.12,16.824", "c"=77]
 "tumaer/JAXFLUIDS" ["l"="63.257,-1.606"]
 "python-hydro/pyro2" ["l"="63.367,-1.65"]
 "mhamadmahdialloush/uFVM" ["l"="63.386,-1.617"]
-"vavrines/Kinetic.jl" ["l"="22.224,16.877"]
-"CliMA/Oceananigans.jl" ["l"="22.126,16.805"]
+"vavrines/Kinetic.jl" ["l"="22.224,16.877", "c"=77]
+"CliMA/Oceananigans.jl" ["l"="22.126,16.805", "c"=77]
+"pynbody/pynbody" ["l"="20.164,14.848", "c"=719]
 "boschresearch/pylife" ["l"="63.687,-1.156"]
 "slightlynybbled/weibull" ["l"="63.6,-1.243"]
 "ReliaQualAssociates/ramstk" ["l"="63.609,-1.226"]
 "derrynknife/SurPyval" ["l"="63.622,-1.251"]
-"SURGroup/UQpy" ["l"="62.608,-2.254"]
+"SURGroup/UQpy" ["l"="62.608,-2.254", "c"=1176]
 "tvtoglu/predictr" ["l"="63.605,-1.267"]
+"learn-awesome/learn-awesome" ["l"="13.08,-10.985", "c"=945]
+"andycasey/ads" ["l"="20.289,14.794", "c"=719]
+"Open-Astrophysics-Bookshelf/star_formation_notes" ["l"="63.481,-1.725"]
 "festim-dev/FESTIM" ["l"="62.4,-1.777"]
 "festim-dev/FESTIM-workshop" ["l"="62.374,-1.78"]
 "RemDelaporteMathurin/h-transport-materials" ["l"="62.381,-1.794"]
 "RemDelaporteMathurin/fusion-world" ["l"="62.444,-1.76"]
-"connorferster/handcalcs" ["l"="47.914,27.938"]
+"connorferster/handcalcs" ["l"="47.914,27.938", "c"=89]
 "xcompact3d/Incompact3d" ["l"="63.303,-1.549"]
 "sthavishtha/turbulence-codes" ["l"="63.291,-1.526"]
 "GongZheng-Justin/CP3d" ["l"="63.386,-1.557"]
 "davecats/channel" ["l"="63.381,-1.574"]
-"lesgo-jhu/lesgo" ["l"="63.272,-1.573"]
 "p-costa/SNaC" ["l"="63.333,-1.562"]
 "xcompact3d/Py4Incompact3D" ["l"="63.381,-1.54"]
 "PhysicsofFluids/AFiD" ["l"="63.316,-1.586"]
@@ -4039,8 +4462,9 @@ digraph G {
 "STREAmS-CFD/STREAmS-2" ["l"="63.347,-1.563"]
 "matteobernardini/STREAmS" ["l"="63.327,-1.573"]
 "opensbli/opensbli" ["l"="63.154,-1.402"]
+"NVIDIA/multi-gpu-programming-models" ["l"="36.747,0.962", "c"=112]
 "jeffhammond/HPCInfo" ["l"="63.238,-1.298"]
-"intel/mpi-benchmarks" ["l"="2.044,14.415"]
+"intel/mpi-benchmarks" ["l"="2.044,14.415", "c"=572]
 "HPCToolkit/hpctoolkit" ["l"="63.215,-1.326"]
 "openmc-dev/plotter" ["l"="62.722,-1.675"]
 "openmc-dev/openmc-ecosystem" ["l"="62.688,-1.679"]
@@ -4048,6 +4472,8 @@ digraph G {
 "openmsr/CAD_to_OpenMC" ["l"="62.683,-1.706"]
 "svalinn/DAGMC" ["l"="62.724,-1.661"]
 "openmc-dev/validation" ["l"="62.697,-1.691"]
+"fluiddyn/fluidfoam" ["l"="63.46,-2.684", "c"=1090]
+"SedFoam/sedfoam" ["l"="63.376,-1.244"]
 "jlanversin/ONIX" ["l"="62.737,-1.654"]
 "transatomic/reactor" ["l"="62.749,-1.722"]
 "cyclus/cyclus" ["l"="62.733,-1.709"]
@@ -4056,15 +4482,17 @@ digraph G {
 "dolfin-adjoint/pyadjoint" ["l"="62.946,-1.774"]
 "hplgit/fenics-tutorial" ["l"="63.053,-1.661"]
 "FEniCS/ufl" ["l"="62.991,-1.662"]
-"gridap/Gridap.jl" ["l"="22.15,16.836"]
-"devitocodes/devito" ["l"="40.959,22.567"]
+"gridap/Gridap.jl" ["l"="22.15,16.836", "c"=77]
+"devitocodes/devito" ["l"="40.959,22.567", "c"=325]
 "thetisproject/thetis" ["l"="62.984,-1.637"]
+"pyccel/pyccel" ["l"="62.536,-0.774", "c"=953]
+"pyccel/sympde" ["l"="62.865,-1.742"]
 "cpraveen/dflo" ["l"="63.31,-1.519"]
 "JacobCrabill/FlurryPP" ["l"="63.274,-1.528"]
 "pbrod/numdifftools" ["l"="63.172,-1.759"]
 "maroba/findiff" ["l"="63.155,-1.686"]
 "MatMechLab/FEMLecture" ["l"="63.221,-1.668"]
-"prisms-center/plasticity" ["l"="21.862,15.035"]
+"prisms-center/plasticity" ["l"="21.862,15.035", "c"=267]
 "jianyingwu/pfczm-abaqus" ["l"="63.235,-1.699"]
 "cangyu/Riemann-Solvers" ["l"="63.598,-1.729"]
 "wme7/ApproximateRiemannSolvers" ["l"="63.562,-1.729"]
@@ -4098,7 +4526,8 @@ digraph G {
 "bgin/Radar_ElectroOptical_Simulation" ["l"="63.423,-0.458"]
 "bgin/Radar-ElectroOptical-Simulation" ["l"="63.426,-0.435"]
 "bgin/MissileSimulation" ["l"="63.419,-0.49"]
-"charmplusplus/charm4py" ["l"="63.199,-1.168"]
+"materialsinnovation/pymks" ["l"="21.901,15.021", "c"=267]
+"usnistgov/pfhub" ["l"="63.137,-1.795"]
 "charmplusplus/charm" ["l"="63.201,-1.222"]
 "UIUC-PPL/charm" ["l"="63.211,-1.186"]
 "hpcgroup/TraceR" ["l"="63.195,-1.192"]
@@ -4109,22 +4538,23 @@ digraph G {
 "ammarkh95/ABAQUS_PDALAC" ["l"="62.866,-1.183"]
 "agency-library/agency" ["l"="63.378,-1.42"]
 "jaredhoberock/tuple_utility" ["l"="63.432,-1.434"]
+"open-mpi/hwloc" ["l"="1.985,14.414", "c"=572]
 "dmitriy-kats/PhaseFieldGrainGrowthSimulations" ["l"="63.191,-1.691"]
 "JunOu/phaseFieldGrainGrowth" ["l"="63.168,-1.726"]
 "nimesh00/CellularAutomata" ["l"="63.289,-1.557"]
 "mo-hanxuan/Polycrystal-PhaseField" ["l"="63.158,-1.718"]
-"ValeevGroup/tiledarray" ["l"="21.975,17.646"]
+"wangyao1052/LitCAD" ["l"="61.562,0.231", "c"=606]
+"BriefFiniteElementNet/BriefFiniteElement.Net" ["l"="63.459,-1.441"]
+"ValeevGroup/tiledarray" ["l"="21.975,17.646", "c"=863]
 "kylebeggs/POD-RBF" ["l"="62.991,-1.96"]
 "erdc/podrbf_nirom" ["l"="62.974,-1.985"]
-"zwicker-group/py-pde" ["l"="63.123,-1.668"]
-"patrick-kidger/diffrax" ["l"="21.779,14.095"]
+"patrick-kidger/diffrax" ["l"="21.779,14.095", "c"=267]
 "maroba/multipoles" ["l"="63.179,-1.739"]
-"simpeg/discretize" ["l"="40.811,22.706"]
-"spectralDNS/shenfun" ["l"="63.198,-1.671"]
-"SciML/DiffEqOperators.jl" ["l"="22.166,16.721"]
+"simpeg/discretize" ["l"="40.811,22.706", "c"=325]
+"SciML/DiffEqOperators.jl" ["l"="22.166,16.721", "c"=77]
 "hplgit/fdm-book" ["l"="63.097,-1.784"]
 "parthenon-hpc-lab/parthenon" ["l"="63.246,-1.518"]
-"optimad/bitpit" ["l"="62.96,0.248"]
+"optimad/bitpit" ["l"="62.96,0.248", "c"=403]
 "TriBITSPub/TriBITS" ["l"="63.229,-1.421"]
 "kokkos/kokkos-tutorials" ["l"="63.199,-1.424"]
 "Daniboy370/Missile-Guidance" ["l"="63.428,-0.618"]
@@ -4136,9 +4566,8 @@ digraph G {
 "aofenghanyue/EntryGuidance" ["l"="63.41,-0.683"]
 "JohannesAutenrieb/MissileSimulation" ["l"="63.413,-0.574"]
 "yt-project/unyt" ["l"="63.439,-1.807"]
-"yt-project/yt" ["l"="63.403,-1.71"]
 "python-quantities/python-quantities" ["l"="63.462,-1.849"]
-"sunpy/ndcube" ["l"="20.438,14.961"]
+"sunpy/ndcube" ["l"="20.438,14.961", "c"=719]
 "spacehackersclub/awesome-spacehackers" ["l"="63.357,-0.938"]
 "thomasantony/msl-apollo-entry-guidance" ["l"="63.385,-0.806"]
 "hplgit/doconce" ["l"="63.011,-1.881"]
@@ -4148,7 +4577,7 @@ digraph G {
 "hplgit/scitools" ["l"="62.977,-1.919"]
 "hplgit/prog4comp" ["l"="63.046,-1.835"]
 "nasa/T-MATS" ["l"="62.882,-1.45"]
-"nasa/TTECTrA" ["l"="19.369,14.219"]
+"nasa/TTECTrA" ["l"="19.369,14.219", "c"=868]
 "nasa/AGTF30" ["l"="62.838,-1.474"]
 "MRod5/pyturb" ["l"="62.784,-1.467"]
 "nasa/EMTAT" ["l"="62.846,-1.434"]
@@ -4157,16 +4586,17 @@ digraph G {
 "nasa/GTM_DesignSim" ["l"="62.797,-1.441"]
 "xjysb/GTML_E" ["l"="62.853,-1.447"]
 "nasa/NPSS-Power-System-Library" ["l"="62.834,-1.451"]
-"OpenMDAO/pyCycle" ["l"="62.774,-2.261"]
+"OpenMDAO/pyCycle" ["l"="62.774,-2.261", "c"=1176]
 "nasa/EADINLite" ["l"="62.819,-1.465"]
 "nasa/Three-Dimensional-Nozzle-Design-Code" ["l"="62.826,-1.436"]
-"OpenMDAO/OpenMDAO" ["l"="62.757,-2.237"]
+"OpenMDAO/OpenMDAO" ["l"="62.757,-2.237", "c"=1176]
+"AndreWeiner/machine-learning-applied-to-cfd" ["l"="63.484,-2.629", "c"=1090]
 "NERSC/timemory" ["l"="63.206,-1.352"]
 "NERSC/timemory-tutorials" ["l"="63.219,-1.308"]
 "hatchet/hatchet" ["l"="63.202,-1.298"]
-"LLNL/GOTCHA" ["l"="2.053,14.891"]
-"ROCm/rocprofiler-compute" ["l"="64.196,-1.735"]
-"ROCm/omnitrace" ["l"="64.221,-1.7"]
+"LLNL/GOTCHA" ["l"="2.053,14.891", "c"=756]
+"ROCm/rocprofiler-compute" ["l"="64.196,-1.735", "c"=477]
+"ROCm/omnitrace" ["l"="64.221,-1.7", "c"=477]
 "sparta/sparta" ["l"="63.296,-1.72"]
 "piclas-framework/piclas" ["l"="63.323,-1.776"]
 "KKFeng/spartacus" ["l"="63.321,-1.75"]
@@ -4184,21 +4614,21 @@ digraph G {
 "MTopOpt/MTO" ["l"="62.676,-1.314"]
 "zhenguonie/2020_TopologyGAN" ["l"="62.703,-1.247"]
 "HISKP-LQCD/hadron" ["l"="63.541,-1.09"]
-"openPMD/openPMD-api" ["l"="20.582,13.907"]
+"openPMD/openPMD-api" ["l"="20.582,13.907", "c"=1146]
 "mrnorman/YAKL" ["l"="63.126,-1.39"]
 "epfl-ecps/channelflow" ["l"="63.333,-1.596"]
 "hpcg-benchmark/hpcg" ["l"="63.252,-1.317"]
-"flang-compiler/f18" ["l"="62.512,-0.884"]
-"libxsmm/libxsmm" ["l"="37.11,0.835"]
-"aradi/fypp" ["l"="62.564,-0.808"]
-"zerothi/fdict" ["l"="62.652,-0.781"]
-"cp2k/dbcsr" ["l"="37.338,0.95"]
-"SciFortran/SciFortran" ["l"="62.588,-0.79"]
+"flang-compiler/f18" ["l"="62.512,-0.884", "c"=953]
+"libxsmm/libxsmm" ["l"="37.11,0.835", "c"=112]
+"aradi/fypp" ["l"="62.564,-0.808", "c"=953]
+"zerothi/fdict" ["l"="62.652,-0.781", "c"=953]
+"cp2k/dbcsr" ["l"="37.338,0.95", "c"=112]
+"SciFortran/SciFortran" ["l"="62.588,-0.79", "c"=953]
 "code-saturne/code_saturne" ["l"="63.259,-1.574"]
-"OpenQBMM/OpenQBMM" ["l"="63.439,-2.756"]
+"OpenQBMM/OpenQBMM" ["l"="63.439,-2.756", "c"=1090]
 "szaghi/OFF" ["l"="63.284,-1.591"]
 "DelNov/T-Flows" ["l"="63.359,-1.613"]
-"enGits/engrid" ["l"="63.28,-1.642"]
+"Exawind/nalu-wind" ["l"="-11.202,17.991", "c"=440]
 "nikola-m/freeCappuccino" ["l"="63.287,-1.624"]
 "jsitaraman/tioga" ["l"="63.276,-1.502"]
 "Terenceyuyue/mVEM" ["l"="63.05,-1.71"]
@@ -4215,7 +4645,8 @@ digraph G {
 "audunarn/ANYstructure" ["l"="63.765,-1.117"]
 "a-ma72/rainflow" ["l"="63.748,-1.027"]
 "precice/openfoam-adapter" ["l"="62.957,-1.446"]
-"fppimenta/rheoTool" ["l"="63.507,-2.711"]
+"fppimenta/rheoTool" ["l"="63.507,-2.711", "c"=1090]
+"lettucecfd/lettuce" ["l"="62.707,1.326", "c"=371]
 "wangheyu/CplusplusBeginner" ["l"="63.006,-1.773"]
 "precice/fenics-adapter" ["l"="62.869,-1.423"]
 "precice/python-bindings" ["l"="62.839,-1.414"]
@@ -4231,12 +4662,10 @@ digraph G {
 "adcox/adaptive-mesh-refinement" ["l"="63.012,-1.801"]
 "SlaybaughLab/BART" ["l"="62.768,-1.621"]
 "owensgroup/merge-spmm" ["l"="63.175,-1.927"]
-"hgyhungry/ge-spmm" ["l"="63.174,-1.964"]
 "dumerrill/merge-spmv" ["l"="63.212,-1.91"]
 "YukeWang96/TC-GNN_ATC23" ["l"="63.154,-1.964"]
 "oresths/tSparse" ["l"="63.16,-1.915"]
 "YusukeNagasaka/Batched-SpMM" ["l"="63.191,-1.953"]
-"google-research/sputnik" ["l"="63.158,-1.978"]
 "PrincetonUniversity/athena" ["l"="63.348,-1.662"]
 "IAS-Astrophysics/athenak" ["l"="63.354,-1.634"]
 "PrincetonUniversity/athena-public-version" ["l"="63.324,-1.645"]
@@ -4245,6 +4674,7 @@ digraph G {
 "lanl/phoebus" ["l"="63.32,-1.617"]
 "PrincetonUniversity/Athena-Cversion" ["l"="63.341,-1.681"]
 "gamer-project/gamer" ["l"="63.398,-1.736"]
+"chriskohlhoff/executors" ["l"="-20.004,-26.167", "c"=10]
 "clawpack/pyclaw" ["l"="63.785,-1.842"]
 "clawpack/clawpack" ["l"="63.763,-1.831"]
 "clawpack/riemann" ["l"="63.788,-1.865"]
@@ -4255,7 +4685,6 @@ digraph G {
 "danghvu/cudaSpmv" ["l"="63.243,-1.994"]
 "MFlowCode/MFC" ["l"="63.323,-1.552"]
 "ExtremeFLOW/neko" ["l"="63.365,-1.56"]
-"flexi-framework/flexi" ["l"="63.269,-1.539"]
 "uranos-gpu/uranos-gpu" ["l"="63.364,-1.54"]
 "enzo-project/enzo-dev" ["l"="63.453,-1.747"]
 "enzo-project/enzo-e" ["l"="63.487,-1.786"]
@@ -4271,13 +4700,15 @@ digraph G {
 "zhiyingq/PhaseFieldSimulation" ["l"="63.162,-1.804"]
 "eimrek/phase-field-crystal-mpi" ["l"="63.153,-1.78"]
 "mesoscale/mmsp" ["l"="63.134,-1.774"]
-"usnistgov/pfhub" ["l"="63.137,-1.795"]
 "MultiphaseFlowLab/FLOW36" ["l"="63.413,-1.606"]
 "CaNS-World/CaNS-Fizzy" ["l"="63.386,-1.596"]
+"verybadcat/CSharpMath" ["l"="-33.294,-3.681", "c"=293]
 "Micket/oofem" ["l"="63.376,-1.448"]
 "rhdodds/warp3d" ["l"="63.402,-1.448"]
-"BriefFiniteElementNet/BriefFiniteElement.Net" ["l"="63.459,-1.441"]
 "stranskyjan/dem-fem-coupling" ["l"="63.324,-1.226"]
+"pymor/pymor" ["l"="63.076,-1.71"]
+"RBniCS/RBniCS" ["l"="63.069,-1.725"]
+"Willcox-Research-Group/rom-operator-inference-Python3" ["l"="63.038,-1.794"]
 "nasa/GFR" ["l"="63.209,-1.586"]
 "jlev/ballistic-missile-range" ["l"="63.413,-0.533"]
 "ferencdv/missile_trajectory_simulator" ["l"="63.408,-0.513"]
@@ -4293,10 +4724,9 @@ digraph G {
 "pygbe/pygbe" ["l"="63.348,-1.453"]
 "adtzlr/trusspy" ["l"="63.335,-1.394"]
 "mpewsey/xsect" ["l"="63.467,-1.389"]
-"Willcox-Research-Group/rom-operator-inference-Python3" ["l"="63.038,-1.794"]
 "Willcox-Research-Group/ROM-OpInf-Combustion-2D" ["l"="63.019,-1.829"]
 "N-BodyShop/changa" ["l"="63.221,-1.151"]
-"mpi-forum/mpi-issues" ["l"="2.059,14.399"]
+"mpi-forum/mpi-issues" ["l"="2.059,14.399", "c"=572]
 "Daniboy370/Autonomous-Systems" ["l"="63.481,-0.567"]
 "Daniboy370/Deep-Learning" ["l"="63.466,-0.571"]
 "Daniboy370/Machine-Learning" ["l"="63.477,-0.582"]
@@ -4306,12 +4736,11 @@ digraph G {
 "markplagge/NeMo" ["l"="63.225,-1.046"]
 "CMGLab/IGA-Notes" ["l"="62.829,-1.763"]
 "mathLab/IGA-dealii" ["l"="62.802,-1.797"]
-"pyccel/sympde" ["l"="62.865,-1.742"]
 "poojahira/spmv-cuda" ["l"="63.225,-1.929"]
 "mlwong/HAMeRS" ["l"="63.204,-1.468"]
 "FPAL-Stanford-University/FloATPy" ["l"="63.13,-1.417"]
 "aprilnovak/Okapi" ["l"="62.723,-1.696"]
-"JuliaNonconvex/Nonconvex.jl" ["l"="22.265,16.718"]
+"JuliaNonconvex/Nonconvex.jl" ["l"="22.265,16.718", "c"=77]
 "pkestene/euler_kokkos" ["l"="63.737,-1.869"]
 "pkestene/euler2d_kokkos" ["l"="63.731,-1.848"]
 "E3SM-Project/EKAT" ["l"="63.094,-1.353"]
@@ -4335,7 +4764,7 @@ digraph G {
 "dmentipl/plonk" ["l"="63.548,-1.886"]
 "dmentipl/phantom-config" ["l"="63.562,-1.902"]
 "LLNL/hatchet" ["l"="63.212,-1.254"]
-"LLNL/Comb" ["l"="2.1,14.385"]
+"LLNL/Comb" ["l"="2.1,14.385", "c"=572]
 "hpcgroup/pipit" ["l"="63.225,-1.227"]
 "LLNL/thicket" ["l"="63.225,-1.243"]
 "tianyikillua/code_aster_on_docker" ["l"="62.794,-1.363"]
@@ -4365,7 +4794,6 @@ digraph G {
 "m-manahan/missile_simulation_matlab" ["l"="63.425,-0.557"]
 "asood18/Missile-Trajectory" ["l"="63.393,-0.563"]
 "nasa/TLNS3D" ["l"="63.172,-1.597"]
-"nasa/cfdtools" ["l"="63.179,-1.613"]
 "mikaem/fenicstools" ["l"="63.004,-1.743"]
 "MiroK/fenics-nitsche" ["l"="62.978,-1.786"]
 "pf4d/fenics_mpm" ["l"="62.992,-1.77"]
@@ -4385,27 +4813,28 @@ digraph G {
 "ahmedkmadani/OpenMCProject" ["l"="62.56,-1.753"]
 "fusion-energy/openmc_source_plotter" ["l"="62.588,-1.732"]
 "dongmoon-min/truenorth_sim" ["l"="63.233,-1.029"]
+"numactl/numactl" ["l"="2.006,14.436", "c"=572]
 "alpaka-group/alpaka" ["l"="63.216,-1.399"]
 "alpaka-group/llama" ["l"="63.267,-1.362"]
-"celerity/celerity-runtime" ["l"="64.165,-2.027"]
+"celerity/celerity-runtime" ["l"="64.165,-2.027", "c"=477]
 "dash-project/dash" ["l"="63.281,-1.325"]
-"ComputationalRadiationPhysics/picongpu" ["l"="20.543,13.927"]
-"codeplaysoftware/syclacademy" ["l"="64.191,-2.011"]
-"KhronosGroup/SYCL-Docs" ["l"="64.181,-2.023"]
-"triSYCL/triSYCL" ["l"="64.243,-2.023"]
-"meshpro/pyfvm" ["l"="62.85,0.346"]
-"inducer/meshpy" ["l"="62.837,0.272"]
-"simulkade/FVTool" ["l"="-5.339,23.026"]
+"ComputationalRadiationPhysics/picongpu" ["l"="20.543,13.927", "c"=1146]
+"codeplaysoftware/syclacademy" ["l"="64.191,-2.011", "c"=477]
+"KhronosGroup/SYCL-Docs" ["l"="64.181,-2.023", "c"=477]
+"open-mpi/ompi" ["l"="1.981,14.386", "c"=572]
+"meshpro/pyfvm" ["l"="62.85,0.346", "c"=403]
+"inducer/meshpy" ["l"="62.837,0.272", "c"=403]
+"simulkade/FVTool" ["l"="-5.339,23.026", "c"=960]
 "hplgit/num-methods-for-PDEs" ["l"="63.083,-1.747"]
-"KarypisLab/METIS" ["l"="63.075,-1.577"]
-"KarypisLab/ParMETIS" ["l"="63.042,-1.633"]
-"KaHIP/KaHIP" ["l"="32.999,-5.375"]
-"kahypar/kahypar" ["l"="33.012,-5.492"]
+"arrayfire/arrayfire" ["l"="64.369,-1.965", "c"=477]
+"kahypar/kahypar" ["l"="33.012,-5.492", "c"=830]
 "KarypisLab/GKlib" ["l"="63.06,-1.638"]
-"zongshenmu/GraphPartitioners" ["l"="32.946,-5.346"]
-"inducer/pymetis" ["l"="32.861,-5.273"]
-"kahypar/mt-kahypar" ["l"="33.019,-5.458"]
-"JarkkoPFC/meshlete" ["l"="-23.078,-27.697"]
+"zongshenmu/GraphPartitioners" ["l"="32.946,-5.346", "c"=830]
+"inducer/pymetis" ["l"="32.861,-5.273", "c"=830]
+"kahypar/mt-kahypar" ["l"="33.019,-5.458", "c"=830]
+"JarkkoPFC/meshlete" ["l"="-23.078,-27.697", "c"=26]
+"tum-pbs/PhiFlow" ["l"="21.772,15.86", "c"=516]
+"E3SM-Project/E3SM" ["l"="40.951,25.571", "c"=420]
 "zenitani/OpenMHD" ["l"="63.357,-1.702"]
 "chiba-aplab/cansplus" ["l"="63.368,-1.735"]
 "minoshim/MLAU" ["l"="63.378,-1.757"]
@@ -4413,6 +4842,8 @@ digraph G {
 "precise-simulation/scientific-app-framework-for-python" ["l"="62.984,-1.406"]
 "precise-simulation/stltool" ["l"="63.002,-1.414"]
 "precise-simulation/guitool" ["l"="62.995,-1.399"]
+"nasa/Open-Source-Catalog" ["l"="19.423,14.153", "c"=868]
+"nasa/NASTRAN-93" ["l"="62.938,-1.336"]
 "CORE-GATECH-GROUP/serpent-tools" ["l"="62.784,-1.679"]
 "fusion-energy/neutronics-workshop" ["l"="62.69,-1.658"]
 "lcharleux/abapy" ["l"="62.943,-1.236"]
@@ -4424,14 +4855,16 @@ digraph G {
 "pencil-code/pencil-code" ["l"="63.333,-1.63"]
 "python-hydro/hydro_examples" ["l"="63.457,-1.686"]
 "python-hydro/how_to_write_a_hydro_code" ["l"="63.497,-1.685"]
-"DrTimothyAldenDavis/GraphBLAS" ["l"="9.451,-3.611"]
-"Reference-LAPACK/lapack" ["l"="62.961,-1.512"]
-"uxlfoundation/oneMath" ["l"="64.167,-1.95"]
-"embotech/ecos" ["l"="61.414,14.817"]
+"DrTimothyAldenDavis/GraphBLAS" ["l"="9.451,-3.611", "c"=382]
+"uxlfoundation/oneMath" ["l"="64.167,-1.95", "c"=477]
+"embotech/ecos" ["l"="61.414,14.817", "c"=480]
+"openhackathons-org/gpubootcamp" ["l"="36.652,1.081", "c"=112]
+"sunpy/sunpy" ["l"="21.139,15.695", "c"=2392]
+"numerical-mooc/numerical-mooc" ["l"="63.53,-2.804", "c"=1090]
 "dgSPARSE/dgSPARSE-Lib" ["l"="63.182,-1.985"]
 "apuaaChen/vectorSparse" ["l"="63.16,-1.949"]
 "GPUPeople/spECK" ["l"="63.171,-1.941"]
-"amazon-science/FeatGraph" ["l"="1.469,14.46"]
+"amazon-science/FeatGraph" ["l"="1.469,14.46", "c"=572]
 "ParCIS/Magicube" ["l"="63.15,-1.932"]
 "xiexi51/MaxK-GNN" ["l"="63.189,-2.075"]
 "CRAFT-THU/RoDe" ["l"="63.181,-2.017"]
@@ -4440,20 +4873,27 @@ digraph G {
 "ceruleangu/Block-Sparse-Benchmark" ["l"="63.135,-1.949"]
 "AlibabaResearch/flash-llm" ["l"="63.147,-2.017"]
 "conservation-laws/ryujin" ["l"="63.419,-1.56"]
+"huggingface/pytorch_block_sparse" ["l"="48.88,33.948", "c"=556]
+"google-research/rigl" ["l"="52.683,33.215", "c"=271]
+"bytedance/effective_transformer" ["l"="53.242,27.037", "c"=60]
 "zhubq/PhaseField" ["l"="63.117,-1.749"]
 "kipa200/Phase_field_code" ["l"="63.117,-1.766"]
 "tjhei/cracks" ["l"="63.124,-1.824"]
-"pycalphad/pycalphad" ["l"="21.867,13.076"]
 "hyperdeal/hyperdeal" ["l"="63.306,-1.478"]
 "PartExa/PartExa" ["l"="63.341,-1.48"]
 "snakesonabrain/groundhog" ["l"="63.476,-1.261"]
 "JesseBonanno/PySlope" ["l"="63.428,-1.27"]
 "kunle009/FoundationDesign" ["l"="63.405,-1.305"]
+"MPh-py/MPh" ["l"="-1.815,10.69", "c"=1247]
 "pynucastro/pynucastro" ["l"="63.385,-1.681"]
+"markummitchell/engauge-digitizer" ["l"="-34.206,16.959", "c"=652]
+"qd-cae/awesome-CAE" ["l"="62.984,-1.288"]
 "OpenMP/Examples" ["l"="63.005,-1.066"]
 "UoB-HPC/openmp-tutorial" ["l"="62.963,-1.016"]
-"Geant4/geant4" ["l"="20.25,13.75"]
+"Geant4/geant4" ["l"="20.25,13.75", "c"=1146]
+"thu-zhanghl/CFD101" ["l"="63.455,-2.736", "c"=1090]
 "MP-Gadget/MP-Gadget" ["l"="63.593,-1.832"]
+"mpmath/mpmath" ["l"="20.613,14.173", "c"=1146]
 "pism/pism" ["l"="63.201,-0.996"]
 "icepack/icepack" ["l"="63.188,-0.951"]
 "OGGM/oggm" ["l"="63.206,-0.927"]
@@ -4469,53 +4909,56 @@ digraph G {
 "funsim/moola" ["l"="62.936,-1.811"]
 "IvanYashchuk/jax-fenics-adjoint" ["l"="62.903,-1.847"]
 "cselab/aphros" ["l"="63.311,-1.536"]
-"cselab/Mirheo" ["l"="63.791,-2.579"]
-"DLR-RY/VoFLibrary" ["l"="63.429,-2.797"]
-"exasim-project/NeoN" ["l"="63.38,-2.78"]
+"cselab/Mirheo" ["l"="63.791,-2.579", "c"=1090]
+"DLR-RY/VoFLibrary" ["l"="63.429,-2.797", "c"=1090]
+"exasim-project/NeoN" ["l"="63.38,-2.78", "c"=1090]
 "Multiphysics-Flow-Solvers/FluTAS" ["l"="63.345,-1.545"]
 "DwwWxx/MSP-CFDEMcoupling" ["l"="63.362,-1.148"]
-"analysiscenter/pydens" ["l"="21.785,16.049"]
-"pdebench/PDEBench" ["l"="21.792,15.907"]
-"tum-pbs/PhiFlow" ["l"="21.772,15.86"]
-"SciML/NeuralPDE.jl" ["l"="22.13,16.676"]
-"NeuroDiffGym/neurodiffeq" ["l"="21.759,15.948"]
-"JuliaPDE/SurveyofPDEPackages" ["l"="22.157,16.79"]
-"snagcliffs/PDE-FIND" ["l"="21.851,15.96"]
-"mathLab/PINA" ["l"="21.719,15.988"]
+"Artoriuz/OSEE" ["l"="25.53,-26.909", "c"=32]
+"m2n037/awesome-mecheng" ["l"="63.279,-1.171"]
+"pdebench/PDEBench" ["l"="21.792,15.907", "c"=516]
+"SciML/NeuralPDE.jl" ["l"="22.13,16.676", "c"=77]
+"NeuroDiffGym/neurodiffeq" ["l"="21.759,15.948", "c"=516]
+"JuliaPDE/SurveyofPDEPackages" ["l"="22.157,16.79", "c"=77]
+"snagcliffs/PDE-FIND" ["l"="21.851,15.96", "c"=516]
+"mathLab/PINA" ["l"="21.719,15.988", "c"=516]
+"sthavishtha/list-lattice-Boltzmann-codes" ["l"="62.711,1.359", "c"=371]
 "MechMaster95/LS-DYNA-subroutines" ["l"="62.95,-1.098"]
 "idaholab/virtual_test_bed" ["l"="62.784,-1.618"]
+"PatWie/CppNumericalSolvers" ["l"="-19.413,-25.912", "c"=10]
 "ansys/pydpf-core" ["l"="63.065,-1.095"]
 "ansys/pydpf-post" ["l"="63.082,-1.095"]
 "ansys/pymapdl-reader" ["l"="63.072,-1.111"]
+"lmfit/lmfit-py" ["l"="21.898,14.563", "c"=267]
 "svalinn/pydagmc" ["l"="62.696,-1.735"]
 "AeroDME/NASTRAN-95" ["l"="62.921,-1.339"]
+"HDFGroup/hdf5" ["l"="-19.095,-25.857", "c"=10]
+"zjin-lcf/HeCBench" ["l"="64.15,-2.018", "c"=477]
 "OpenFOAM/ThirdParty-8" ["l"="63.49,-0.978"]
-"ElsevierSoftwareX/SOFTX_2018_143" ["l"="63.458,-2.714"]
-"mpi4jax/mpi4jax" ["l"="21.855,14.087"]
-"FourierFlows/GeophysicalFlows.jl" ["l"="40.944,25.455"]
-"FourierFlows/FourierFlows.jl" ["l"="22.187,16.891"]
-"SpeedyWeather/SpeedyWeather.jl" ["l"="40.93,25.472"]
+"ElsevierSoftwareX/SOFTX_2018_143" ["l"="63.458,-2.714", "c"=1090]
+"mpi4jax/mpi4jax" ["l"="21.855,14.087", "c"=267]
+"FourierFlows/GeophysicalFlows.jl" ["l"="40.944,25.455", "c"=420]
+"FourierFlows/FourierFlows.jl" ["l"="22.187,16.891", "c"=77]
+"SpeedyWeather/SpeedyWeather.jl" ["l"="40.93,25.472", "c"=420]
 "Open-Astrophysics-Bookshelf/stellar-physics-notes" ["l"="63.49,-1.742"]
-"Open-Astrophysics-Bookshelf/star_formation_notes" ["l"="63.481,-1.725"]
 "Open-Astrophysics-Bookshelf/scientific_computing_cookbook" ["l"="63.5,-1.729"]
 "Open-Astrophysics-Bookshelf/Open-Astrophysics-Bookshelf.github.io" ["l"="63.494,-1.713"]
 "Open-Astrophysics-Bookshelf/astrophysical_processes_notes" ["l"="63.474,-1.737"]
-"KIPAC/StatisticalMethods" ["l"="20.277,14.846"]
+"KIPAC/StatisticalMethods" ["l"="20.277,14.846", "c"=719]
 "anishida/lis" ["l"="63.324,-1.699"]
 "google-research/neural-structural-optimization" ["l"="62.601,-1.241"]
 "sdu-multiphysics/topflow" ["l"="62.568,-1.227"]
 "ClearCalcs/pyCUFSM" ["l"="63.524,-1.399"]
 "scientificcomputing/scifem" ["l"="62.963,-1.718"]
 "PAA-NCIC/PE" ["l"="63.262,-1.273"]
-"jeffhammond/STREAM" ["l"="6.717,-6.34"]
+"jeffhammond/STREAM" ["l"="6.717,-6.34", "c"=335]
 "UK-MAC/CloverLeaf" ["l"="63.277,-1.26"]
 "Slaedr/FVENS" ["l"="63.165,-1.247"]
 "febiosoftware/FEBioStudio" ["l"="62.946,-1.487"]
-"marinlauber/2D-Turbulence-Python" ["l"="23.005,16.979"]
+"marinlauber/2D-Turbulence-Python" ["l"="23.005,16.979", "c"=77]
 "AMReX-Astro/Nyx" ["l"="63.279,-1.613"]
 "BoxLib-Codes/BoxLib" ["l"="63.223,-1.509"]
-"BLAST-WarpX/warpx" ["l"="20.572,13.894"]
-"UW-ERSL/AuTO" ["l"="22.02,14.029"]
+"UW-ERSL/AuTO" ["l"="22.02,14.029", "c"=267]
 "idaholab/HERON" ["l"="62.523,-1.669"]
 "idaholab/FORCE" ["l"="62.502,-1.682"]
 "tcew/nodal-dg" ["l"="63.376,-1.501"]
@@ -4523,11 +4966,11 @@ digraph G {
 "FESTUNG/FESTUNG" ["l"="63.439,-1.505"]
 "hplgit/odespy" ["l"="63.083,-1.803"]
 "hplgit/INF5620" ["l"="63.075,-1.784"]
-"mandli/numerical-methods-pdes" ["l"="63.574,-2.855"]
+"mandli/numerical-methods-pdes" ["l"="63.574,-2.855", "c"=1090]
 "hplgit/scipro-primer" ["l"="63.066,-1.817"]
 "mit-crpg/benchmarks" ["l"="62.774,-1.709"]
 "lmmentel/mendeleev" ["l"="62.68,-1.776"]
-"usnistgov/jarvis" ["l"="21.853,13.036"]
+"usnistgov/jarvis" ["l"="21.853,13.036", "c"=344]
 "mgreminger/EngineeringPaper.xyz" ["l"="63.484,-1.234"]
 "youandvern/efficalc" ["l"="63.439,-1.28"]
 "OpenFOAM/ThirdParty-dev" ["l"="63.429,-1.056"]
@@ -4557,7 +5000,6 @@ digraph G {
 "carlonluca/isogeometric-analysis" ["l"="62.885,-1.654"]
 "salardelavar/OPENSEES_SALAR" ["l"="63.52,-1.311"]
 "LLNL/ExaCMech" ["l"="63.262,-1.39"]
-"SudoDEM/SudoDEM" ["l"="63.334,-1.209"]
 "alfkoehn/fusion_plots" ["l"="62.502,-1.732"]
 "fusion-energy/plasmaboundaries" ["l"="62.57,-1.696"]
 "Pressio/pressio-rom" ["l"="63.187,-1.716"]
@@ -4570,7 +5012,7 @@ digraph G {
 "cslotboom/hysteresis" ["l"="63.619,-1.352"]
 "ioannis-vm/OpenSees_Model_Generator" ["l"="63.576,-1.365"]
 "bienz2/PyFancyPlots" ["l"="63.002,-1.72"]
-"vinhphunguyen/mpmat" ["l"="62.761,1.155"]
+"vinhphunguyen/mpmat" ["l"="62.761,1.155", "c"=371]
 "nauaneed/PyDNS" ["l"="63.44,-1.574"]
 "cslab-ntua/sparsex" ["l"="63.289,-1.967"]
 "cslab-ntua/csx" ["l"="63.307,-1.985"]
@@ -4595,7 +5037,7 @@ digraph G {
 "OWI-Lab/py_fatigue" ["l"="63.768,-0.893"]
 "richti83/ParaView_Reader_for_LIGGGHTS" ["l"="63.419,-1.173"]
 "abhishekdbihani/compaction_LIGGGHTS" ["l"="63.447,-1.162"]
-"mvernacc/proptools" ["l"="62.934,-2.371"]
+"mvernacc/proptools" ["l"="62.934,-2.371", "c"=1176]
 "nulidangxueshen/CSR2" ["l"="63.243,-1.949"]
 "IvanYashchuk/jax-fenics" ["l"="62.885,-1.872"]
 "eisenforschung/software" ["l"="63.211,-1.786"]
@@ -4610,7 +5052,9 @@ digraph G {
 "majosm/overkit-fortran" ["l"="63.355,-1.468"]
 "kokkos/pykokkos-base" ["l"="63.179,-1.275"]
 "EngineeringSoftware/codeditor" ["l"="63.192,-1.278"]
-"jaheyns/CfdOF" ["l"="63.442,-2.695"]
+"jaheyns/CfdOF" ["l"="63.442,-2.695", "c"=1090]
+"lukepolson/youtube_channel" ["l"="33.993,-4.908", "c"=769]
+"ixmilia/dxf" ["l"="61.564,0.263", "c"=606]
 "clawpack/riemann_book" ["l"="63.721,-1.811"]
 "takluyver/bookbook" ["l"="63.751,-1.794"]
 "eldila/MatIB" ["l"="63.342,-1.495"]
@@ -4618,17 +5062,22 @@ digraph G {
 "nickabattista/Holy_Grail" ["l"="63.357,-1.489"]
 "ForestClaw/forestclaw" ["l"="63.245,-1.458"]
 "cburstedde/libsc" ["l"="63.246,-1.477"]
+"firemodels/fds" ["l"="34.622,2.445", "c"=308]
+"scikit-rf/scikit-rf" ["l"="33.453,-4.912", "c"=661]
+"MmgTools/mmg" ["l"="62.881,0.217", "c"=403]
 "jgomezc1/ABAQUS-US" ["l"="62.883,-1.217"]
 "WeilinDeng/ABAQUS" ["l"="62.907,-1.229"]
 "jpsferreira/UMAT-ABAQUS" ["l"="62.841,-1.196"]
 "KnutAM/MaterialModels" ["l"="62.828,-1.213"]
 "davidmorinNTNU/ABAQUS_subroutines" ["l"="62.887,-1.196"]
-"TarletonGroup/CrystalPlasticity" ["l"="21.876,15.051"]
+"TarletonGroup/CrystalPlasticity" ["l"="21.876,15.051", "c"=267]
 "CMMAi/ABAQUS_UMAT" ["l"="62.826,-1.18"]
 "wuhuiguo/Abaqus" ["l"="62.917,-1.243"]
 "ALandauer/ABAQUS_Subroutines" ["l"="62.849,-1.223"]
 "AvtechScientific/ASL" ["l"="63.158,-1.638"]
+"bjodah/chempy" ["l"="23.589,13.679", "c"=209]
 "dgSPARSE/dgSPARSE-Wrapper" ["l"="63.198,-2.009"]
+"ikespand/awesome-machine-learning-fluid-mechanics" ["l"="63.482,-2.605", "c"=1090]
 "ansys/pyansys" ["l"="63.075,-1.063"]
 "ansys/pyansys-dev-guide" ["l"="63.059,-1.08"]
 "ansys/example-data" ["l"="63.059,-1.029"]
@@ -4638,11 +5087,11 @@ digraph G {
 "ansys/pymapdl" ["l"="63.094,-1.131"]
 "ansys/pymechanical" ["l"="63.097,-1.088"]
 "ansys/actions" ["l"="63.08,-1.043"]
+"BUAA-CI-LAB/Literatures-on-GNN-Acceleration" ["l"="1.501,14.487", "c"=572]
 "Hirshikesh/FEniCS-PhaseField-brittle-fracture" ["l"="63.127,-1.859"]
 "ishovkun/eaglefrac" ["l"="63.11,-1.872"]
-"GrapeTec/T-SPLINE" ["l"="61.34,-0.115"]
+"GrapeTec/T-SPLINE" ["l"="61.34,-0.115", "c"=606]
 "sthavishtha/list-iga-codes" ["l"="62.897,-1.648"]
-"MmgTools/mmg" ["l"="62.881,0.217"]
 "tataratat/splinepy" ["l"="62.873,-1.627"]
 "igatoolsProject/igatools" ["l"="62.909,-1.637"]
 "evalf/nutils" ["l"="62.892,-1.62"]
@@ -4651,20 +5100,23 @@ digraph G {
 "musheen/LevelSetFortran" ["l"="63.888,-1.907"]
 "elburz/awesome-space" ["l"="63.388,-0.923"]
 "Hunter-Github/awesome-space-books" ["l"="63.374,-0.951"]
+"nasa/trick" ["l"="19.553,14.273", "c"=868]
+"OpenVSP/OpenVSP" ["l"="62.805,-2.224", "c"=1176]
+"rsmpi/rsmpi" ["l"="-8.213,-4.359", "c"=407]
+"trevor-vincent/awesome-high-performance-computing" ["l"="25.613,-26.684", "c"=32]
+"consuldemocracy/consuldemocracy" ["l"="-20.764,12.023", "c"=22]
 "AMReX-Codes/amrex-tutorials" ["l"="63.202,-1.63"]
 "AMReX-Codes/pyamrex" ["l"="63.219,-1.688"]
+"Ceyron/machine-learning-and-simulation" ["l"="21.724,15.861", "c"=516]
 "axonn-ai/axonn" ["l"="63.238,-1.182"]
-"AdaptiveCpp/AdaptiveCpp" ["l"="64.223,-1.97"]
-"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088"]
-"spack/spack" ["l"="7.097,-13.734"]
-"ROCm/hip" ["l"="64.264,-1.882"]
-"dukenmarga/civil-engineering-toolbox" ["l"="61.428,0.588"]
+"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088", "c"=10]
+"ROCm/hip" ["l"="64.264,-1.882", "c"=477]
+"dukenmarga/civil-engineering-toolbox" ["l"="61.428,0.588", "c"=606]
 "OGGM/world-glacier-explorer" ["l"="63.212,-0.785"]
 "ODINN-SciML/ODINN.jl" ["l"="63.235,-0.931"]
+"AndreWeiner/ml-cfd-lecture" ["l"="63.466,-2.639", "c"=1090]
 "noahwaterfieldprice/python_primer" ["l"="63.06,-1.869"]
 "specifics/aero-structures" ["l"="63.361,-0.976"]
-"AndreWeiner/ml-cfd-lecture" ["l"="63.466,-2.639"]
-"ikespand/awesome-machine-learning-fluid-mechanics" ["l"="63.482,-2.605"]
 "fluiddyn/fluidsim" ["l"="63.443,-1.608"]
 "fusion-energy/paramak" ["l"="62.631,-1.671"]
 "fusion-energy/openmc-plasma-source" ["l"="62.646,-1.652"]
@@ -4673,25 +5125,25 @@ digraph G {
 "stellarmesh/stellarmesh" ["l"="62.654,-1.671"]
 "YaoyaoBae/Feon" ["l"="63.121,-1.56"]
 "N-BodyShop/gasoline" ["l"="63.232,-1.117"]
+"nv-legate/cupynumeric" ["l"="36.633,1.023", "c"=112]
+"StanfordLegion/legion" ["l"="63.262,-1.411"]
 "fpichi/gca-rom" ["l"="63.002,-2.029"]
 "SteveDoyle2/pyNastran" ["l"="62.953,-1.352"]
 "dr-bill-c/MYSTRAN" ["l"="62.948,-1.373"]
-"qd-cae/awesome-CAE" ["l"="62.984,-1.288"]
 "vtpasquale/NASTRAN_CoFE" ["l"="62.974,-1.343"]
-"nasa/NASTRAN-93" ["l"="62.938,-1.336"]
 "MYSTRANsolver/MYSTRAN" ["l"="62.938,-1.386"]
-"mdolab/OpenAeroStruct" ["l"="62.771,-2.216"]
-"smdogroup/tacs" ["l"="62.715,-2.269"]
+"mdolab/OpenAeroStruct" ["l"="62.771,-2.216", "c"=1176]
+"smdogroup/tacs" ["l"="62.715,-2.269", "c"=1176]
 "setvisible/nastran-pch2csv" ["l"="62.941,-1.312"]
 "barkm/torch-fenics" ["l"="63.018,-1.708"]
 "ansys/PyAEDT-docs" ["l"="63.028,-0.942"]
 "ansys/pyedb" ["l"="63.014,-0.952"]
-"scikit-rf/scikit-rf" ["l"="33.453,-4.912"]
 "ansys/pyaedt-toolkits-antenna" ["l"="63.06,-0.945"]
 "DLR-SC/ESID" ["l"="63.076,-1.355"]
 "SciCompMod/GMGPolar" ["l"="63.077,-1.368"]
 "SciCompMod/memilio" ["l"="63.104,-1.394"]
 "fusion-energy/fusion_neutronics_workflow" ["l"="62.607,-1.686"]
+"openfoamtutorials/OpenFOAM_Tutorials_" ["l"="63.499,-2.726", "c"=1090]
 "CLQCD/PyQUDA" ["l"="63.578,-1.078"]
 "weifengliu-ssslab/Benchmark_SpMV_using_CSR" ["l"="63.188,-1.898"]
 "weifengliu-ssslab/Benchmark_SpTRSV_using_CSC" ["l"="63.198,-1.91"]
@@ -4700,6 +5152,7 @@ digraph G {
 "Junlings/AnsysAPDL" ["l"="63.141,-1.067"]
 "saran87/Vibration-Signal-Analysis" ["l"="63.666,-0.87"]
 "particleincell/PICCBlog" ["l"="63.342,-1.821"]
+"ekondis/mixbench" ["l"="64.154,-1.996", "c"=477]
 "faisal-bhuiyan/Physics-based-composite-progressive-failure" ["l"="62.834,-1.154"]
 "PhilReinhold/pyHFSS" ["l"="62.992,-0.796"]
 "bleyerj/comet-fenicsx" ["l"="62.938,-1.747"]
@@ -4711,12 +5164,12 @@ digraph G {
 "platoengine/platoengine" ["l"="63.056,-1.383"]
 "sandialabs/exodusii" ["l"="63.076,-1.407"]
 "weifengliu-ssslab/bhSPARSE" ["l"="63.153,-1.893"]
-"ekondis/mixbench" ["l"="64.154,-1.996"]
-"ROCm/aomp" ["l"="64.211,-1.741"]
-"codeplaysoftware/portBLAS" ["l"="64.206,-2.007"]
-"ROCm/rocFFT" ["l"="64.222,-1.769"]
-"ROCm/Tensile" ["l"="64.201,-1.765"]
-"NVIDIA/multi-gpu-programming-models" ["l"="36.747,0.962"]
+"ROCm/aomp" ["l"="64.211,-1.741", "c"=477]
+"codeplaysoftware/portBLAS" ["l"="64.206,-2.007", "c"=477]
+"ROCm/rocFFT" ["l"="64.222,-1.769", "c"=477]
+"ROCm/Tensile" ["l"="64.201,-1.765", "c"=477]
+"uqfoundation/multiprocess" ["l"="43.911,23.529", "c"=95]
+"telegraphic/hickle" ["l"="63.469,-1.89"]
 "scivision/mumps" ["l"="62.926,-1.458"]
 "scivision/mumps-deprecated" ["l"="62.873,-1.471"]
 "JSchoeberl/iFEM" ["l"="62.957,-1.54"]
@@ -4728,12 +5181,15 @@ digraph G {
 "weifengliu-ssslab/Benchmark_SpMV_using_CSR5" ["l"="63.199,-1.886"]
 "IntelLabs/SpMP" ["l"="63.181,-1.831"]
 "monkey2000/spv8-public" ["l"="63.235,-1.898"]
-"nasa/OpenMDAO-Framework" ["l"="19.407,14.196"]
-"nasa/dictionaries" ["l"="19.408,14.099"]
+"nasa/OpenMDAO-Framework" ["l"="19.407,14.196", "c"=868]
+"nasa/dictionaries" ["l"="19.408,14.099", "c"=868]
 "nasa/ipv6_python" ["l"="62.909,-1.294"]
+"ParticulateFlow/OSCCAR-doc" ["l"="63.467,-2.719", "c"=1090]
 "AMReX-Fluids/AMReX-Hydro" ["l"="63.267,-1.73"]
 "uclales/uclales" ["l"="63.562,-1.584"]
+"YukeWang96/GNNAdvisor_OSDI21" ["l"="1.54,14.417", "c"=572]
 "chintanp/python_abaqus" ["l"="62.938,-1.196"]
+"Apress/data-parallel-CPP" ["l"="64.162,-2.01", "c"=477]
 "kokkos/pykokkos" ["l"="63.192,-1.314"]
 "EngineeringSoftware/gobash" ["l"="63.202,-1.271"]
 "EngineeringSoftware/jattack" ["l"="63.189,-1.267"]
@@ -4751,7 +5207,7 @@ digraph G {
 "hnrwagner/UMAT_Lecture_1" ["l"="62.8,-1.008"]
 "galuszkm/STAN" ["l"="63.469,-1.414"]
 "sdypy/sdypy" ["l"="63.718,-0.832"]
-"obrienadam/Phase" ["l"="22.004,16.029"]
+"obrienadam/Phase" ["l"="22.004,16.029", "c"=516]
 "JesseBonanno/IndeterminateBeam" ["l"="63.391,-1.298"]
 "tunnelsai-public/Civils.ai-PyAnchor" ["l"="63.409,-1.271"]
 "STAIRlab/veux" ["l"="63.606,-1.372"]
@@ -4767,6 +5223,8 @@ digraph G {
 "RJHudspith/GLU" ["l"="63.576,-1.162"]
 "patelte8/vanDANA" ["l"="62.893,-1.801"]
 "Hazem-Kassab/structural_analysis" ["l"="63.504,-1.393"]
+"elemental/Elemental" ["l"="21.988,17.613", "c"=863]
+"PlasmaPy/PlasmaPy" ["l"="20.524,13.904", "c"=1146]
 "AMReX-Astro/MAESTRO" ["l"="63.425,-1.695"]
 "AMReX-Astro/Emu" ["l"="63.412,-1.688"]
 "ladisk/pyuff" ["l"="63.729,-0.838"]
@@ -4774,43 +5232,51 @@ digraph G {
 "Gunnstein/strid" ["l"="63.701,-0.809"]
 "robbievanleeuwen/feastruct" ["l"="63.365,-1.309"]
 "wcfrobert/fkit" ["l"="63.42,-1.304"]
+"phresher/OpenFOAM_Tutorials_Plus" ["l"="63.507,-2.697", "c"=1090]
 "CALFEM/calfem-matlab" ["l"="63.05,-1.576"]
 "LucasWilkinson/ASpT-mirror" ["l"="63.118,-1.946"]
+"poseidon/matchbox" ["l"="10.266,-10.108", "c"=740]
+"ddemidov/vexcl" ["l"="64.32,-2.016", "c"=477]
+"SimVascular/SimVascular" ["l"="62.102,35.837", "c"=424]
+"BlueBrain/HighFive" ["l"="-19.542,-25.999", "c"=10]
 "dalcinl/PetIGA" ["l"="62.862,-1.679"]
+"AeroPython/PyFME" ["l"="62.859,-2.139", "c"=1176]
+"RackHD/RackHD" ["l"="1.278,14.753", "c"=857]
 "hpfem/hermes" ["l"="63.041,-1.444"]
+"reclosedev/pyautocad" ["l"="61.482,0.35", "c"=606]
 "OpenRadioss/Tools" ["l"="62.953,-1.423"]
+"yalmip/YALMIP" ["l"="61.569,14.9", "c"=480]
+"manodeep/Corrfunc" ["l"="22.115,14.227", "c"=267]
+"NVIDIA/MatX" ["l"="36.689,0.986", "c"=112]
 "LLNL/pyranda" ["l"="63.221,-1.46"]
-"PyGEM-Community/PyGEM" ["l"="63.185,-0.931"]
+"fmaussion/salem" ["l"="40.784,25.557", "c"=420]
 "fmaussion/scientific_programming" ["l"="63.213,-0.887"]
-"GlacioHack/xdem" ["l"="60.284,9.899"]
+"PyGEM-Community/PyGEM" ["l"="63.185,-0.931"]
+"GlacioHack/xdem" ["l"="60.284,9.899", "c"=636]
 "munterfi/glacier-flow-model" ["l"="63.23,-0.897"]
+"Ferrite-FEM/Ferrite.jl" ["l"="22.173,16.854", "c"=77]
 "yade/trunk" ["l"="63.344,-1.168"]
 "anabiman/pygran" ["l"="63.413,-1.203"]
-"martinjrobins/SPH-DEM" ["l"="62.615,0.935"]
-"SedFoam/sedfoam" ["l"="63.376,-1.244"]
+"martinjrobins/SPH-DEM" ["l"="62.615,0.935", "c"=371]
 "itascaconsulting/PFC3D_OpenFOAM" ["l"="63.395,-1.23"]
 "nicoguaro/FEM_resources" ["l"="63.106,-1.532"]
 "matlabfem/matlab_fem_elastoplasticity" ["l"="63.138,-1.579"]
 "THeWakeSystems/fcc" ["l"="63.29,-2.055"]
-"RBniCS/RBniCS" ["l"="63.069,-1.725"]
-"mathLab/EZyRB" ["l"="63.045,-1.761"]
-"pymor/pymor" ["l"="63.076,-1.71"]
 "mathLab/ITHACA-SEM" ["l"="63.045,-1.744"]
 "redbKIT/redbKIT" ["l"="63.062,-1.749"]
 "dash-project/dash-apps" ["l"="63.306,-1.3"]
 "ketch/finite-difference-course" ["l"="63.099,-1.839"]
 "hplgit/decay-book" ["l"="63.101,-1.818"]
 "eamontoyaa/pyCSS" ["l"="63.45,-1.24"]
-"telegraphic/hickle" ["l"="63.469,-1.89"]
+"bitnami/bitnami-docker-wordpress" ["l"="5.864,-11.752", "c"=270]
 "ansys/pyfluent-visualization" ["l"="63.113,-1.018"]
 "ansys/pyfluent-parametric" ["l"="63.099,-1.022"]
 "leigq/pyfluent" ["l"="63.087,-1.006"]
-"mdribeiro/DeepCFD" ["l"="63.503,-2.616"]
-"argonne-lcf/PythonFOAM" ["l"="63.456,-2.668"]
+"mdribeiro/DeepCFD" ["l"="63.503,-2.616", "c"=1090]
+"argonne-lcf/PythonFOAM" ["l"="63.456,-2.668", "c"=1090]
 "wafo-project/wafo" ["l"="63.813,-1.084"]
-"Autodesk/XLB" ["l"="21.939,14.07"]
-"tumaer/jax-sph" ["l"="63.622,-2.329"]
-"lettucecfd/lettuce" ["l"="62.707,1.326"]
+"Autodesk/XLB" ["l"="21.939,14.07", "c"=267]
+"tumaer/jax-sph" ["l"="63.622,-2.329", "c"=1090]
 "bobbiesimpson/Isogeometric-BEM" ["l"="62.868,-1.695"]
 "SIMOGroup/SIMO-Package" ["l"="62.852,-1.701"]
 "LLNL/hypre" ["l"="63.192,-1.56"]
@@ -4819,7 +5285,7 @@ digraph G {
 "petrobras/3W" ["l"="63.761,-0.737"]
 "petrobras/BibMon" ["l"="63.788,-0.724"]
 "ricardovvargas/3w_dataset" ["l"="63.773,-0.697"]
-"jonathanwvd/awesome-industrial-datasets" ["l"="51.431,37.874"]
+"jonathanwvd/awesome-industrial-datasets" ["l"="51.431,37.874", "c"=545]
 "petrobras/waid" ["l"="63.775,-0.757"]
 "cholla-hydro/cholla" ["l"="63.46,-1.781"]
 "wme7/WENO" ["l"="63.595,-1.761"]
@@ -4829,23 +5295,23 @@ digraph G {
 "joesy3721/ABAQUS_CDP_TOOL" ["l"="62.841,-1.061"]
 "mechanoChem/mechanoChemIGA" ["l"="62.79,-1.814"]
 "CCTLib/cctlib" ["l"="63.233,-1.277"]
-"LLNL/mpiP" ["l"="2.068,14.417"]
-"pmodels/mpich" ["l"="2.012,14.404"]
-"metocean/diwasp" ["l"="40.72,26.138"]
+"LLNL/mpiP" ["l"="2.068,14.417", "c"=572]
+"pmodels/mpich" ["l"="2.012,14.404", "c"=572]
+"metocean/diwasp" ["l"="40.72,26.138", "c"=1102]
 "thw1021/Code4CFD" ["l"="63.445,-1.54"]
 "hnrwagner/VUMAT_Lecture_1" ["l"="62.784,-0.986"]
 "quisten/abaqusPython" ["l"="62.946,-1.145"]
+"szaghi/VTKFortran" ["l"="62.622,-0.825", "c"=953]
 "gyselax/gyselalibxx" ["l"="63.303,-1.328"]
 "CExA-project/ddc" ["l"="63.281,-1.346"]
 "nasa/DAVEtools" ["l"="62.757,-1.437"]
+"uwsampl/SparseTIR" ["l"="36.988,1.059", "c"=112]
 "gdtk-uq/gdtk" ["l"="63.367,-1.582"]
-"uwsampl/SparseTIR" ["l"="36.988,1.059"]
 "xxyux/SpInfer" ["l"="63.14,-2.062"]
 "Arris-Composites/ODB2VTK" ["l"="62.899,-1.156"]
 "haiiliin/odb2vtk" ["l"="62.89,-1.122"]
 "ElsevierSoftwareX/SOFTX-D-22-00364" ["l"="62.876,-1.125"]
 "uob-positron-imaging-centre/PICI-CFDEM-IB" ["l"="63.369,-1.112"]
-"szaghi/VTKFortran" ["l"="62.622,-0.825"]
 "LatticeQCD/AnalysisToolbox" ["l"="63.596,-1.141"]
 "wme7/Aero-matlab" ["l"="63.615,-1.749"]
 "ldallolio/NASTRAN-95" ["l"="62.904,-1.315"]
@@ -4856,29 +5322,37 @@ digraph G {
 "kokkos/kokkos-fft" ["l"="63.25,-1.372"]
 "queens-py/queens" ["l"="63.374,-1.474"]
 "precice/fenicsx-adapter" ["l"="62.771,-1.406"]
+"NewWheelTech/geometry4Sharp" ["l"="-26.354,-34.706", "c"=35]
+"iainsproat/SharpFE" ["l"="63.484,-1.44"]
+"ProjectPhysX/FluidX3D" ["l"="63.484,-2.865", "c"=1090]
 "DMST1990/ToOptiX" ["l"="62.747,-1.309"]
 "Foxelmanian/ToOptixFreeCADAddon" ["l"="62.749,-1.331"]
 "Foxelmanian/ToOptix" ["l"="62.764,-1.287"]
-"OpenMathLib/OpenBLAS" ["l"="37.247,0.775"]
-"fortran-lang/stdlib" ["l"="62.56,-0.848"]
+"fortran-lang/stdlib" ["l"="62.56,-0.848", "c"=953]
 "Reference-LAPACK/lapack-pre-github-historical-releases" ["l"="62.883,-1.525"]
-"lfortran/lfortran" ["l"="62.52,-0.851"]
-"fortran-lang/fpm" ["l"="62.546,-0.842"]
-"flang-compiler/flang" ["l"="62.54,-0.867"]
-"flame/blis" ["l"="37.113,0.808"]
-"modern-fortran/neural-fortran" ["l"="62.537,-0.818"]
-"Fortran-FOSS-Programmers/ford" ["l"="62.566,-0.823"]
+"lfortran/lfortran" ["l"="62.52,-0.851", "c"=953]
+"fortran-lang/fpm" ["l"="62.546,-0.842", "c"=953]
+"flang-compiler/flang" ["l"="62.54,-0.867", "c"=953]
+"modern-fortran/neural-fortran" ["l"="62.537,-0.818", "c"=953]
+"Fortran-FOSS-Programmers/ford" ["l"="62.566,-0.823", "c"=953]
+"hgrecco/pint" ["l"="43.751,23.842", "c"=95]
 "SuperScientificSoftwareLaboratory/PanguLU" ["l"="63.055,-1.413"]
+"mathLab/PyGeM" ["l"="62.894,0.322", "c"=403]
 "chennachaos/CouplingSchemesFSI" ["l"="63.008,-1.362"]
 "LLNL/pylibROM" ["l"="63.141,-1.65"]
 "LLNL/LaSDI" ["l"="63.143,-1.672"]
 "LLNL/gLaSDI" ["l"="63.154,-1.658"]
+"danderson/netboot" ["l"="3.681,-7.52", "c"=0]
+"ampl/gsl" ["l"="61.096,13.504", "c"=313]
 "Solid-Mechanics/matplotlib-4-abaqus" ["l"="62.963,-1.23"]
 "xiaoyeli/superlu_mt" ["l"="63.016,-1.434"]
-"bryanwweber/orbital-mechanics-notes" ["l"="19.352,14.829"]
+"bryanwweber/orbital-mechanics-notes" ["l"="19.352,14.829", "c"=641]
 "cmontalvo251/aerospace" ["l"="63.334,-0.976"]
+"h5py/h5py" ["l"="43.744,23.694", "c"=95]
+"LLNL/zfp" ["l"="-19.162,-26.154", "c"=10]
 "nasseralkmim/sapy" ["l"="63.341,-1.41"]
 "lanl/CLAMR" ["l"="63.191,-1.579"]
+"awslabs/palace" ["l"="33.478,-4.769", "c"=661]
 "juncas/2DENSE" ["l"="63.583,-1.716"]
 "NicolaRFranco/dlroms" ["l"="62.994,-2.053"]
 "inr-kit/McCAD-Library" ["l"="62.665,-1.74"]
@@ -4886,11 +5360,12 @@ digraph G {
 "OpenFTA/OpenFTA" ["l"="62.427,-1.678"]
 "troeger/fuzzed" ["l"="62.422,-1.658"]
 "Nek5000/NekROM" ["l"="63.24,-1.674"]
-"viennacl/viennacl-dev" ["l"="64.357,-2.038"]
-"cudpp/cudpp" ["l"="36.677,0.945"]
-"clMathLibraries/clSPARSE" ["l"="64.34,-2.021"]
-"gunrock/gunrock" ["l"="51.441,15.303"]
-"gunrock/graphblast" ["l"="9.434,-3.579"]
+"viennacl/viennacl-dev" ["l"="64.357,-2.038", "c"=477]
+"cudpp/cudpp" ["l"="36.677,0.945", "c"=112]
+"clMathLibraries/clSPARSE" ["l"="64.34,-2.021", "c"=477]
+"gunrock/graphblast" ["l"="9.434,-3.579", "c"=382]
+"tianjuxue/jax-am" ["l"="22.031,14.006", "c"=267]
+"orbingol/NURBS-Python" ["l"="61.344,-0.078", "c"=606]
 "ddfem/ccx_mingw64" ["l"="62.886,-1.393"]
 "openmc-dev/openmc_mcnp_adapter" ["l"="62.676,-1.693"]
 "Vibration-Testing/Vibration-Testing-Matlab" ["l"="63.637,-0.849"]
@@ -4899,8 +5374,7 @@ digraph G {
 "Dhondtguido/PaStiX4CalculiX" ["l"="62.846,-1.359"]
 "sandialabs/lgrtk" ["l"="63.05,-1.348"]
 "NimbleSM/NimbleSM" ["l"="63.039,-1.358"]
-"mathLab/Smithers" ["l"="62.901,0.366"]
-"ITHACA-FV/ITHACA-FV" ["l"="63.476,-2.668"]
+"mathLab/Smithers" ["l"="62.901,0.366", "c"=403]
 "makeclean/csg2csg" ["l"="62.697,-1.623"]
 "ranran0523/CryptoGCN" ["l"="63.208,-2.119"]
 "harveyp123/LinGCN-Neurips23" ["l"="63.198,-2.1"]
@@ -4914,35 +5388,36 @@ digraph G {
 "Liu-Qingbin/ODB2VTKplus" ["l"="62.88,-1.152"]
 "youngung/abaqusPy" ["l"="62.89,-1.172"]
 "NHERI-SimCenter/PileGroupTool" ["l"="63.525,-1.369"]
+"mpitutorial/mpitutorial" ["l"="2.032,14.371", "c"=572]
+"VictorEijkhout/TheArtofHPC_pdfs" ["l"="62.54,-0.892", "c"=953]
+"yixuan/LBFGSpp" ["l"="-19.44,-25.902", "c"=10]
 "priyanshu11137/Missile-Guidance-Using-Reinforcement-Learning" ["l"="63.445,-0.68"]
-"ddemidov/vexcl" ["l"="64.32,-2.016"]
-"Yixin-Hu/TetWild" ["l"="62.943,0.197"]
-"yixuan/LBFGSpp" ["l"="-19.44,-25.902"]
-"wildmeshing/fTetWild" ["l"="62.949,0.211"]
-"StanfordLegion/legion" ["l"="63.262,-1.411"]
-"nv-legate/cupynumeric" ["l"="36.633,1.023"]
-"nv-legate/legate" ["l"="36.587,1.084"]
+"Yixin-Hu/TetWild" ["l"="62.943,0.197", "c"=403]
+"wildmeshing/fTetWild" ["l"="62.949,0.211", "c"=403]
+"nv-legate/legate" ["l"="36.587,1.084", "c"=112]
 "StanfordLegion/task-bench" ["l"="63.287,-1.386"]
-"NVIDIA/cuCollections" ["l"="36.669,0.998"]
-"tensor-compiler/taco" ["l"="37.115,0.938"]
-"m2n037/awesome-mecheng" ["l"="63.279,-1.171"]
-"kiloreux/awesome-robotics" ["l"="58.905,12.638"]
+"NVIDIA/cuCollections" ["l"="36.669,0.998", "c"=112]
+"tensor-compiler/taco" ["l"="37.115,0.938", "c"=112]
+"IntelLabs/SkimCaffe" ["l"="52.714,33.614", "c"=271]
+"kiloreux/awesome-robotics" ["l"="58.905,12.638", "c"=299]
 "manjunath5496/Mechanical-Engineering-Books" ["l"="63.289,-1.128"]
-"Artoriuz/OSEE" ["l"="25.53,-26.909"]
-"CalebBell/thermo" ["l"="51.332,25.655"]
-"jslee02/awesome-robotics-libraries" ["l"="58.915,12.682"]
-"mikecroucher/awesome-MATLAB" ["l"="-5.336,23.195"]
-"ahundt/awesome-robotics" ["l"="58.932,12.657"]
+"CalebBell/thermo" ["l"="51.332,25.655", "c"=1275]
+"jslee02/awesome-robotics-libraries" ["l"="58.915,12.682", "c"=299]
+"mikecroucher/awesome-MATLAB" ["l"="-5.336,23.195", "c"=960]
+"ahundt/awesome-robotics" ["l"="58.932,12.657", "c"=299]
+"bitnami/minideb" ["l"="5.948,-11.921", "c"=270]
 "qd-cae/qd-ansa-extension" ["l"="62.982,-1.154"]
 "svenholcombe/matlab-lsdyna" ["l"="62.998,-1.169"]
+"nrc-cnrc/EGSnrc" ["l"="62.092,35.968", "c"=424]
 "UoB-HPC/openmp-for-cs" ["l"="62.944,-0.991"]
+"Kitware/ParaView" ["l"="61.932,35.846", "c"=424]
+"hughperkins/coriander" ["l"="64.327,-1.986", "c"=477]
 "LLNL/GPLaSDI" ["l"="63.14,-1.703"]
-"iainsproat/SharpFE" ["l"="63.484,-1.44"]
 "xiexi51/ICCAD-Accel-GCN" ["l"="63.185,-2.11"]
 "shaoyiHusky/SparseProgressiveDistillation" ["l"="63.185,-2.144"]
 "pnnl/ExaGO" ["l"="63.153,-1.209"]
-"Exawind/nalu-wind" ["l"="-11.202,17.991"]
-"flexi-framework/galaexi" ["l"="62.315,-0.793"]
+"qingfengxia/Cfd" ["l"="63.504,-2.671", "c"=1090]
+"flexi-framework/galaexi" ["l"="62.315,-0.793", "c"=953]
 "adaptive-cfd/WABBIT" ["l"="63.432,-1.65"]
 "UDC-GAC/venom" ["l"="63.107,-2.034"]
 "spcl/smat" ["l"="63.096,-2.062"]
@@ -4952,70 +5427,85 @@ digraph G {
 "IAEA-NDS/PREPRO" ["l"="62.628,-1.752"]
 "wcfrobert/ezbolt" ["l"="63.453,-1.283"]
 "alexhagen/wig" ["l"="62.54,-1.769"]
-"lanl/vpic" ["l"="20.566,13.871"]
+"lmfit/uncertainties" ["l"="21.942,14.535", "c"=267]
+"mozman/ezdxf" ["l"="61.448,0.142", "c"=606]
+"lanl/vpic" ["l"="20.566,13.871", "c"=1146]
 "project-fluxo/fluxo" ["l"="63.393,-1.797"]
+"esa/pagmo2" ["l"="49.846,26.042", "c"=759]
 "Meelfy/FEM" ["l"="63.104,-1.617"]
 "chtld/Finite_Element_Method_Matlab" ["l"="63.097,-1.685"]
 "zhengzhirun/Finite-element-algorithm" ["l"="63.083,-1.657"]
 "zhangyaqi1989/Multiscale-FEM" ["l"="63.092,-1.669"]
-"pyvista/pyvista" ["l"="62.742,0.255"]
+"conradsnicta/armadillo-code" ["l"="-19.291,-25.954", "c"=10]
+"google/FluidNet" ["l"="63.511,-2.514", "c"=1090]
+"pyvista/pyvista" ["l"="62.742,0.255", "c"=403]
 "AnonymousRepo123/AlphaSparse" ["l"="63.199,-2.039"]
+"QMCPACK/qmcpack" ["l"="21.827,17.644", "c"=863]
+"Haptic-Apps/Slide-iOS" ["l"="45.204,-22.163", "c"=6]
 "ornladios/ADIOS" ["l"="63.1,-1.37"]
-"openPMD/openPMD-standard" ["l"="20.599,13.878"]
+"openPMD/openPMD-standard" ["l"="20.599,13.878", "c"=1146]
 "ornladios/ADIOS2-Examples" ["l"="63.117,-1.376"]
-"LBANN/lbann" ["l"="37.64,1.216"]
+"LBANN/lbann" ["l"="37.64,1.216", "c"=112]
 "openmichigan/PSNM" ["l"="63.222,-1.727"]
 "gedeschaines/propNav" ["l"="63.459,-0.663"]
-"unicfdlab/hybridCentralSolvers" ["l"="63.405,-2.735"]
-"duncanam/rhoReactingCentralFoam" ["l"="63.382,-2.734"]
+"freegs-plasma/freegs" ["l"="20.416,13.956", "c"=1146]
+"Mohamedelrefaie/DrivAerNet" ["l"="21.88,15.885", "c"=516]
+"unicfdlab/hybridCentralSolvers" ["l"="63.405,-2.735", "c"=1090]
+"duncanam/rhoReactingCentralFoam" ["l"="63.382,-2.734", "c"=1090]
 "MicroNanoFlows/OpenFOAM-2.4.0-MNF" ["l"="63.287,-1.689"]
-"Aalto-CFD/DLBFoam" ["l"="63.414,-2.698"]
+"Aalto-CFD/DLBFoam" ["l"="63.414,-2.698", "c"=1090]
 "zhulianhua/dugksFoam" ["l"="63.27,-1.706"]
 "davidem88/rhoEnergyFoam" ["l"="63.27,-1.676"]
+"chebfun/chebfun" ["l"="-5.339,23.096", "c"=960]
 "betterscientificsoftware/bssw.io" ["l"="63.12,-1.326"]
 "pyiron/pyiron_workflow" ["l"="63.219,-1.817"]
 "arjankoning1/talys" ["l"="62.612,-1.749"]
 "AFD-Illinois/kharma" ["l"="63.402,-1.662"]
 "xiexi51/RTopK" ["l"="63.211,-2.089"]
 "KTH-Nek5000/KTH_Toolbox" ["l"="63.619,-1.641"]
-"yymao/adstex" ["l"="21.963,14.41"]
-"astropy/specutils" ["l"="20.37,14.925"]
-"pynbody/pynbody" ["l"="20.164,14.848"]
-"asdf-format/asdf" ["l"="20.394,14.948"]
-"jobovy/galpy" ["l"="20.226,14.855"]
-"JuliaFEM/JuliaFEM.jl" ["l"="22.215,16.796"]
+"yymao/adstex" ["l"="21.963,14.41", "c"=267]
+"astropy/specutils" ["l"="20.37,14.925", "c"=719]
+"jobovy/galpy" ["l"="20.226,14.855", "c"=719]
+"JuliaFEM/JuliaFEM.jl" ["l"="22.215,16.796", "c"=77]
+"assertj/assertj" ["l"="-2.41,12.052", "c"=15]
 "open-struct-engineer/Excel" ["l"="63.345,-1.311"]
+"FFTW/fftw3" ["l"="38.24,5.574", "c"=65]
 "ParCIS/FlashSparse" ["l"="63.185,-2.045"]
+"toggl/toggl_api_docs" ["l"="-17.246,-0.934", "c"=813]
 "digitalrebar/provision-content" ["l"="63.117,-1.178"]
 "toggl/mobile-docs" ["l"="63.137,-1.23"]
 "GLVis/pyglvis" ["l"="63.029,-1.586"]
 "las-palmas1/gas_turbine_cycle" ["l"="62.76,-1.472"]
 "ZhongWang24/condition-monitoring-system-for-gas-turbine" ["l"="62.74,-1.47"]
+"klmr/named-operator" ["l"="-19.895,-26.355", "c"=10]
 "idaholab/raven" ["l"="62.56,-1.665"]
 "ORNL-Modelica/TRANSFORM-Library" ["l"="62.533,-1.689"]
 "idaholab/HYBRID" ["l"="62.533,-1.648"]
 "stefanengblom/stenglib" ["l"="62.627,-1.213"]
+"mit-han-lab/Block-Sparse-Attention" ["l"="39.023,-0.27", "c"=39]
 "ludcila/CHT-preCICE" ["l"="62.86,-1.407"]
 "precice/code_aster-adapter" ["l"="62.856,-1.394"]
 "4C-multiphysics/4C" ["l"="63.396,-1.475"]
+"sxs-collaboration/spectre" ["l"="5.172,-39.059", "c"=154]
 "song2001/porophase" ["l"="63.101,-1.899"]
-"tusen-ai/simpledet" ["l"="50.814,30.097"]
-"assertj/assertj" ["l"="-2.41,12.052"]
-"Sylius/Sylius" ["l"="-14.05,24.381"]
-"ropensci/drake" ["l"="40.541,35.385"]
-"firebase/firebase-js-sdk" ["l"="43.77,16.5"]
-"NGSolve/netgen" ["l"="63.005,-1.487"]
-"PyDMD/PyDMD" ["l"="21.722,15.753"]
-"mdolab/pygeo" ["l"="62.74,-2.261"]
+"PyDMD/PyDMD" ["l"="21.722,15.753", "c"=516]
+"kthohr/optim" ["l"="-19.494,-25.945", "c"=10]
+"automeris-io/WebPlotDigitizer" ["l"="-34.255,16.955", "c"=652]
+"tusen-ai/simpledet" ["l"="50.814,30.097", "c"=83]
+"Sylius/Sylius" ["l"="-14.05,24.381", "c"=181]
+"ropensci/drake" ["l"="40.541,35.385", "c"=51]
+"firebase/firebase-js-sdk" ["l"="43.77,16.5", "c"=473]
+"wo80/Triangle.NET" ["l"="-26.292,-34.716", "c"=35]
+"mdolab/pygeo" ["l"="62.74,-2.261", "c"=1176]
+"pypr/pysph" ["l"="62.639,1.016", "c"=371]
 "DavidCico/Development-of-Navier-Stokes-code-by-projection-method" ["l"="63.389,-1.64"]
 "haloless/StupidCFD" ["l"="63.406,-1.634"]
 "live-clones/gmsh" ["l"="62.92,-1.508"]
-"trelau/SMESH" ["l"="61.606,-0.019"]
-"trelau/pyOCCT" ["l"="61.541,0.007"]
+"trelau/SMESH" ["l"="61.606,-0.019", "c"=606]
 "ngsxfem/ngsxfem-jupyter" ["l"="62.937,-1.545"]
 "liuyangzhuan/ButterflyPACK" ["l"="63.041,-1.397"]
-"gchavez2/awesome_hierarchical_matrices" ["l"="-35.791,22.991"]
-"H2Lib/H2Lib" ["l"="-35.819,22.99"]
+"gchavez2/awesome_hierarchical_matrices" ["l"="-35.791,22.991", "c"=630]
+"H2Lib/H2Lib" ["l"="-35.819,22.99", "c"=630]
 "precice/su2-adapter" ["l"="62.899,-1.426"]
 "LLNL/CARE" ["l"="63.162,-1.321"]
 "worbit/topopt2D" ["l"="62.57,-1.263"]

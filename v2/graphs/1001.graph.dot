@@ -34,6 +34,13 @@ digraph G {
 "speckleworks/SpeckleCore" -> "speckleworks/SpeckleAdmin"
 "speckleworks/SpeckleAdmin" -> "speckleworks/SpeckleServer"
 "speckleworks/SpeckleAdmin" -> "speckleworks/SpeckleRevitReboot"
+"NREL/EnergyPlus" -> "NREL/Radiance" ["e"=1]
+"NREL/EnergyPlus" -> "ladybug-tools/ladybug" ["e"=1]
+"NREL/OpenStudio" -> "NREL/Radiance" ["e"=1]
+"NREL/OpenStudio" -> "ladybug-tools/ladybug" ["e"=1]
+"NREL/OpenStudio" -> "ladybug-tools/ladybug-legacy" ["e"=1]
+"NREL/OpenStudio" -> "ladybug-tools/honeybee-legacy" ["e"=1]
+"NREL/OpenStudio" -> "LBNL-ETA/Radiance" ["e"=1]
 "mcneel/rhino3dm" -> "mcneel/compute.rhino3d"
 "mcneel/rhino3dm" -> "mcneel/rhino-developer-samples"
 "mcneel/rhino3dm" -> "mcneel/rhino.inside"
@@ -62,6 +69,10 @@ digraph G {
 "mcneel/rhinoscriptsyntax" -> "mcneel/rhino.inside"
 "mcneel/rhinoscriptsyntax" -> "ladybug-tools/ladybug-legacy"
 "mcneel/rhinoscriptsyntax" -> "mcneel/pythonstubs"
+"jesterKing/import_3dm" -> "mcneel/rhino3dm" ["e"=1]
+"jesterKing/import_3dm" -> "pilcru/ghpythonremote" ["e"=1]
+"jesterKing/import_3dm" -> "mcneel/pythonstubs" ["e"=1]
+"jesterKing/import_3dm" -> "stgeorges/gismo" ["e"=1]
 "jhorikawa/GrasshopperProgrammingTutorials" -> "dantaeyoung/GrasshopperArsenal"
 "jhorikawa/GrasshopperProgrammingTutorials" -> "jhorikawa/GrasshopperHowtos"
 "jhorikawa/GrasshopperProgrammingTutorials" -> "davreev/SpatialSlur"
@@ -95,6 +106,11 @@ digraph G {
 "marialarsson/tsugite" -> "compas-dev/compas"
 "marialarsson/tsugite" -> "marialarsson/procedural_knots"
 "marialarsson/tsugite" -> "9and3/Cockroach"
+"mcneel/opennurbs" -> "mcneel/rhino3dm" ["e"=1]
+"mcneel/opennurbs" -> "mcneel/rhino-developer-samples" ["e"=1]
+"mcneel/opennurbs" -> "mcneel/compute.rhino3d" ["e"=1]
+"mcneel/opennurbs" -> "mcneel/rhinocommon" ["e"=1]
+"mcneel/opennurbs" -> "mcneel/rhino.inside" ["e"=1]
 "OleOhlbrock/CEM" -> "pierluigidacunto/VGS"
 "meshmash/Plankton" -> "Dan-Piker/MeshMachine"
 "meshmash/Plankton" -> "Dan-Piker/K2Goals"
@@ -159,6 +175,12 @@ digraph G {
 "mcneel/pythonstubs" -> "pilcru/ghpythonremote"
 "mcneel/pythonstubs" -> "compas-dev/compas-actions.ghpython_components"
 "mcneel/pythonstubs" -> "ibois-epfl/script-sync"
+"hypar-io/Elements" -> "GSharker/G-Shark" ["e"=1]
+"hypar-io/Elements" -> "BHoM/BHoM" ["e"=1]
+"hypar-io/Elements" -> "nodepen/nodes" ["e"=1]
+"hypar-io/Elements" -> "mcneel/rhino.inside" ["e"=1]
+"hypar-io/Elements" -> "mcneel/compute.rhino3d" ["e"=1]
+"hypar-io/Elements" -> "specklesystems/GrasshopperAsyncComponent" ["e"=1]
 "speckleworks/PySpeckle" -> "speckleworks/SpeckleRevitReboot"
 "SketchUp/sketchup-ruby-debugger" -> "SketchUp/sketchup-extension-vscode-project"
 "SketchUp/sketchup-ruby-debugger" -> "SketchUp/testup-2"
@@ -196,10 +218,23 @@ digraph G {
 "SketchUp/sketchup-extension-vscode-project" -> "Aerilius/sketchup-attribute-inspector"
 "SketchUp/sketchup-extension-vscode-project" -> "SketchUp/sketchup-live-c-api"
 "SketchUp/sketchup-extension-vscode-project" -> "SketchUp/sketchup-shapes"
+"mcneel/rhino.inside-revit" -> "mcneel/rhino.inside" ["e"=1]
+"mcneel/rhino.inside-revit" -> "mcneel/rhino-developer-samples" ["e"=1]
+"mcneel/rhino.inside-revit" -> "mcneel/compute.rhino3d" ["e"=1]
+"mcneel/rhino.inside-revit" -> "mcneel/rhino3dm" ["e"=1]
+"kovacsv/Online3DViewer" -> "mcneel/rhino3dm" ["e"=1]
 "ParametricCamp/TutorialFiles" -> "garciadelcastillo/gh-sharp"
 "ParametricCamp/TutorialFiles" -> "ParametricCamp/brain-plugin-grasshopper"
 "ParametricCamp/TutorialFiles" -> "secg-sr1/ComputationalDesign_C--_To_Python"
 "ParametricCamp/TutorialFiles" -> "mcneel/rhino-developer-samples"
+"specklesystems/speckle-sharp" -> "specklesystems/GrasshopperAsyncComponent" ["e"=1]
+"specklesystems/speckle-sharp" -> "GSharker/G-Shark" ["e"=1]
+"specklesystems/speckle-server" -> "speckleworks/SpeckleServer" ["e"=1]
+"specklesystems/speckle-server" -> "specklesystems/GrasshopperAsyncComponent" ["e"=1]
+"specklesystems/speckle-server" -> "nodepen/nodes" ["e"=1]
+"specklesystems/speckle-server" -> "mcneel/rhino3dm" ["e"=1]
+"specklesystems/speckle-server" -> "mcneel/compute.rhino3d" ["e"=1]
+"specklesystems/speckle-server" -> "GSharker/G-Shark" ["e"=1]
 "mcneel/compute.rhino3d.appserver" -> "mcneel/compute.rhino3d"
 "mcneel/compute.rhino3d.appserver" -> "andrewheumann/jSwan"
 "mcneel/compute.rhino3d.appserver" -> "nodepen/nodes"
@@ -287,10 +322,12 @@ digraph G {
 "GSharker/G-Shark" -> "zahmadsaleem/revit-webview2-demo"
 "GSharker/G-Shark" -> "BHoM/BHoM"
 "GSharker/G-Shark" -> "mitevpi/gh-web-ui"
+"DynamoDS/Dynamo" -> "mcneel/rhino.inside" ["e"=1]
 "tt-acm/DesignExplorer" -> "HydraShare/hydra"
 "tt-acm/DesignExplorer" -> "tt-acm/Spectacles.WebViewer"
 "tt-acm/DesignExplorer" -> "arup-group/a-carbon-tool"
 "tt-acm/DesignExplorer" -> "WeConnect/issue-tracker"
+"Nodi3d/nodi" -> "arup-group/Custom-Grasshopper-UI-Components" ["e"=1]
 "9and3/Cockroach" -> "philipbelesky/GrasshopperBootstrap"
 "9and3/Cockroach" -> "yijiangh/algorithmic_circular_design"
 "compas-rrc/compas_rrc_start" -> "compas-rrc/compas_rrc"
@@ -306,6 +343,9 @@ digraph G {
 "ladybug-tools/butterfly" -> "tt-acm/DesignExplorer"
 "ladybug-tools/butterfly" -> "argonne-lcf/TensorFlowFoam" ["e"=1]
 "ladybug-tools/butterfly" -> "ladybug-tools/dragonfly-legacy"
+"Scrawk/CGALDotNet" -> "GSharker/G-Shark" ["e"=1]
+"specklesystems/specklepy" -> "speckleworks/SpeckleServer" ["e"=1]
+"specklesystems/specklepy" -> "specklesystems/GrasshopperAsyncComponent" ["e"=1]
 "grevit-dev/Grevit" -> "RomanLavrov/RevitFamilyBrowser" ["e"=1]
 "philipbelesky/Caribou" -> "tsvilans/glulamb"
 "philipbelesky/Caribou" -> "philipbelesky/GrasshopperBootstrap"
@@ -321,6 +361,7 @@ digraph G {
 "AndersDeleuran/KangarooGHPython" -> "AndersDeleuran/MeshAnalysis"
 "diego-apellaniz/Karamba3DUIWidgets" -> "diego-apellaniz/KarambaPack"
 "mcneel/rhinocommon-api-docs" -> "mcneel/grasshopper-api-docs"
+"architecture-building-systems/CityEnergyAnalyst" -> "ladybug-tools/uwg" ["e"=1]
 "ladybug-tools/ladybug" -> "ladybug-tools/honeybee"
 "ladybug-tools/ladybug" -> "ladybug-tools/ladybug-legacy"
 "ladybug-tools/ladybug" -> "ladybug-tools/butterfly"
@@ -336,6 +377,7 @@ digraph G {
 "ladybug-tools/ladybug" -> "CenterForTheBuiltEnvironment/comfort_tool" ["e"=1]
 "ladybug-tools/ladybug" -> "ladybug-tools/honeybee-grasshopper"
 "ladybug-tools/ladybug" -> "MingboPeng/Ironbug"
+"paireks/dotbim" -> "GSharker/G-Shark" ["e"=1]
 "visose/Robots" -> "RobotExMachina/Machina.NET"
 "visose/Robots" -> "RobotComponents/RobotComponents"
 "visose/Robots" -> "RobotExMachina/Machina-Grasshopper"
@@ -360,6 +402,7 @@ digraph G {
 "moethu/SketchUpNET" -> "YulioTech/SketchUp-glTF-Exporter-Ruby"
 "moethu/SketchUpNET" -> "TommyKaneko/Sketchup-API-C-Wrapper"
 "moethu/SketchUpNET" -> "grevit-dev/Grevit"
+"robotics/open_abb" -> "visose/Robots" ["e"=1]
 "ladybug-tools/honeybee" -> "ladybug-tools/ladybug"
 "ladybug-tools/honeybee" -> "ladybug-tools/butterfly"
 "ladybug-tools/honeybee" -> "ladybug-tools/ladybug-legacy"
@@ -388,6 +431,7 @@ digraph G {
 "ladybug-tools/honeybee-dynamo" -> "ladybug-tools/butterfly-plus"
 "HydraShare/hydra" -> "WeConnect/issue-tracker"
 "HydraShare/hydra" -> "oderby/VVD"
+"NewWheelTech/geometry4Sharp" -> "GSharker/G-Shark" ["e"=1]
 "BHoM/BHoM" -> "BHoM/documentation"
 "BHoM/BHoM" -> "BHoM/BHoM_Engine"
 "BHoM/BHoM" -> "NonManifoldTopology/Topologic" ["e"=1]
@@ -400,6 +444,7 @@ digraph G {
 "BHoM/BHoM" -> "paireks/dotbim" ["e"=1]
 "BHoM/BHoM" -> "speckleworks/SpeckleServer"
 "BHoM/BHoM" -> "grevit-dev/Grevit"
+"buds-lab/the-building-data-genome-project" -> "ladybug-tools/honeybee" ["e"=1]
 "SketchUp/sketchup-ruby-api-tutorials" -> "SketchUp/sketchup-extension-vscode-project"
 "SketchUp/sketchup-ruby-api-tutorials" -> "SketchUp/sketchup-ruby-debugger"
 "SketchUp/sketchup-ruby-api-tutorials" -> "SketchUp/ruby-c-extension-examples"
@@ -441,7 +486,9 @@ digraph G {
 "ladybug-tools/ladybug-legacy" -> "ladybug-tools/dragonfly-legacy"
 "ladybug-tools/ladybug-legacy" -> "NREL/Radiance"
 "ladybug-tools/ladybug-legacy" -> "tt-acm/DesignExplorer"
+"santoshphilip/eppy" -> "NREL/Radiance" ["e"=1]
 "mcneel/SimpleRhinoTests" -> "mcneel/Rhino.Testing"
+"DesignEngrLab/MIConvexHull" -> "arendvw/clipper" ["e"=1]
 "RobotExMachina/Machina.NET" -> "RobotExMachina/Machina-Grasshopper"
 "RobotExMachina/Machina.NET" -> "RobotExMachina/Machina-Dynamo"
 "RobotExMachina/Machina.NET" -> "RobotExMachina/Machina-Bridge"
@@ -521,8 +568,11 @@ digraph G {
 "mateuszzwierzycki/Owl" -> "AndersDeleuran/ShapeOpGHPython"
 "Co-de-iT/froGH" -> "Co-de-iT/GH2SVG"
 "Co-de-iT/GH2SVG" -> "Co-de-iT/froGH"
+"gtalarico/ironpython-stubs" -> "mcneel/pythonstubs" ["e"=1]
+"gtalarico/ironpython-stubs" -> "mcneel/rhino.inside" ["e"=1]
 "HeinzBenjamin/FlexCLI" -> "mcneel/ghgl"
 "HeinzBenjamin/FlexCLI" -> "pilcru/ghpythonremote"
+"wo80/Triangle.NET" -> "GSharker/G-Shark" ["e"=1]
 "Dan-Piker/Kangaroo-examples" -> "Dan-Piker/K2Goals"
 "Dan-Piker/Kangaroo-examples" -> "meshmash/Plankton"
 "Dan-Piker/Kangaroo-examples" -> "AndersDeleuran/KangarooGHPython"
@@ -553,8 +603,10 @@ digraph G {
 "ladybug-tools/ladybug-grasshopper" -> "ladybug-tools/honeybee-grasshopper"
 "ladybug-tools/ladybug-grasshopper" -> "ladybug-tools/butterfly-plus"
 "MahmoudAbdelRahman/ANT" -> "MahmoudAbdelRahman/-ANT-"
+"RiSearcher/GeometRi.CSharp" -> "GSharker/G-Shark" ["e"=1]
 "ladybug-tools/honeybee-grasshopper" -> "ladybug-tools/butterfly-plus"
 "ladybug-tools/honeybee-grasshopper" -> "ladybug-tools/ladybug-grasshopper"
+"LongNguyenP/DynaShape_Legacy" -> "ladybug-tools/ladybug-dynamo" ["e"=1]
 "Aerilius/sketchup-console-plus" -> "Aerilius/sketchup-attribute-inspector"
 "MahmoudAbdelRahman/-ANT-" -> "MahmoudAbdelRahman/ANT"
 "mcneel/compute.rhino3d" ["l"="62.175,0.52"]
@@ -563,9 +615,9 @@ digraph G {
 "mcneel/rhino-developer-samples" ["l"="62.194,0.527"]
 "mcneel/rhino.inside" ["l"="62.212,0.497"]
 "specklesystems/GrasshopperAsyncComponent" ["l"="62.175,0.469"]
-"mcneel/rhino.inside-revit" ["l"="61.557,1.015"]
+"mcneel/rhino.inside-revit" ["l"="61.557,1.015", "c"=538]
 "pilcru/ghpythonremote" ["l"="62.188,0.567"]
-"hypar-io/Elements" ["l"="61.632,1.064"]
+"hypar-io/Elements" ["l"="61.632,1.064", "c"=538]
 "compas-dev/compas" ["l"="62.191,0.508"]
 "Dan-Piker/Kangaroo-examples" ["l"="62.205,0.562"]
 "mcneel/rhinocommon" ["l"="62.201,0.542"]
@@ -575,26 +627,33 @@ digraph G {
 "andrewheumann/jSwan" ["l"="62.181,0.48"]
 "BHoM/BHoM" ["l"="62.235,0.457"]
 "grevit-dev/Grevit" ["l"="62.277,0.514"]
-"gtalarico/ironpython-stubs" ["l"="61.483,0.995"]
+"gtalarico/ironpython-stubs" ["l"="61.483,0.995", "c"=538]
 "GSharker/G-Shark" ["l"="62.205,0.45"]
 "MahmoudAbdelRahman/GH_CPython" ["l"="62.165,0.579"]
-"architecture-building-systems/revitpythonshell" ["l"="61.509,1.015"]
+"architecture-building-systems/revitpythonshell" ["l"="61.509,1.015", "c"=538]
 "speckleworks/SpeckleServer" ["l"="62.274,0.402"]
 "speckleworks/SpeckleCore" ["l"="62.297,0.394"]
 "speckleworks/SpeckleRhino" ["l"="62.317,0.402"]
 "speckleworks/SpeckleAdmin" ["l"="62.283,0.382"]
 "speckleworks/SpeckleRevitReboot" ["l"="62.293,0.37"]
-"mcneel/opennurbs" ["l"="61.406,-0.038"]
-"jesterKing/import_3dm" ["l"="-32.965,-27.657"]
+"NREL/EnergyPlus" ["l"="-12.119,18.567", "c"=800]
+"NREL/Radiance" ["l"="62.101,0.662"]
+"ladybug-tools/ladybug" ["l"="62.11,0.683"]
+"NREL/OpenStudio" ["l"="-12.099,18.507", "c"=800]
+"ladybug-tools/ladybug-legacy" ["l"="62.144,0.646"]
+"ladybug-tools/honeybee-legacy" ["l"="62.148,0.673"]
+"LBNL-ETA/Radiance" ["l"="62.072,0.676"]
+"mcneel/opennurbs" ["l"="61.406,-0.038", "c"=606]
+"jesterKing/import_3dm" ["l"="-32.965,-27.657", "c"=185]
 "mcneel/rhinoscriptsyntax" ["l"="62.165,0.551"]
 "nodepen/nodes" ["l"="62.184,0.446"]
-"specklesystems/speckle-sharp" ["l"="61.561,1.064"]
+"specklesystems/speckle-sharp" ["l"="61.561,1.064", "c"=538]
 "mcneel/ghpython" ["l"="62.157,0.564"]
 "localcode/rhinopythonscripts" ["l"="62.123,0.571"]
 "mcneel/rhinopython101manual" ["l"="62.12,0.551"]
 "dantaeyoung/GrasshopperArsenal" ["l"="62.179,0.588"]
-"ladybug-tools/ladybug-legacy" ["l"="62.144,0.646"]
 "mcneel/pythonstubs" ["l"="62.14,0.547"]
+"stgeorges/gismo" ["l"="62.124,0.632"]
 "jhorikawa/GrasshopperHowtos" ["l"="62.201,0.578"]
 "davreev/SpatialSlur" ["l"="62.237,0.551"]
 "mitevpi/gh-web-ui" ["l"="62.196,0.473"]
@@ -620,7 +679,6 @@ digraph G {
 "dcascaval/Impala" ["l"="62.218,0.541"]
 "davestasiuk/Exoskeleton2" ["l"="62.26,0.569"]
 "mcneel/GhCanvasViewport" ["l"="62.269,0.557"]
-"ladybug-tools/honeybee-legacy" ["l"="62.148,0.673"]
 "ladybug-tools/epwmap" ["l"="62.125,0.669"]
 "ladybug-tools/honeybee" ["l"="62.131,0.68"]
 "mcneel/grasshopper-api-docs" ["l"="62.266,0.493"]
@@ -657,7 +715,7 @@ digraph G {
 "SketchUp/sketchup-developer-tools" ["l"="62.549,0.534"]
 "AutodeskRoboticsLab/Mimic" ["l"="62.361,0.562"]
 "RobotExMachina/Machina.NET" ["l"="62.31,0.547"]
-"serguei-k/maya-math-nodes" ["l"="-31.43,-27.629"]
+"serguei-k/maya-math-nodes" ["l"="-31.43,-27.629", "c"=194]
 "ladybug-tools/honeybee-radiance" ["l"="62.019,0.663"]
 "ladybug-tools/contributing" ["l"="61.999,0.657"]
 "SketchUp/ruby-c-extension-examples" ["l"="62.504,0.496"]
@@ -673,10 +731,12 @@ digraph G {
 "mcneel/GrasshopperTemplatePackage" ["l"="62.364,0.395"]
 "thomthom/quadface-tools" ["l"="62.521,0.413"]
 "Aerilius/sketchup-attribute-inspector" ["l"="62.588,0.516"]
+"kovacsv/Online3DViewer" ["l"="61.459,-0.097", "c"=606]
 "ParametricCamp/TutorialFiles" ["l"="62.276,0.48"]
 "garciadelcastillo/gh-sharp" ["l"="62.247,0.473"]
 "ParametricCamp/brain-plugin-grasshopper" ["l"="62.314,0.47"]
 "secg-sr1/ComputationalDesign_C--_To_Python" ["l"="62.307,0.484"]
+"specklesystems/speckle-server" ["l"="61.581,1.097", "c"=538]
 "enmerk4r/Swiftlet" ["l"="62.171,0.453"]
 "philipbelesky/GrasshopperBootstrap" ["l"="62.182,0.412"]
 "gtalarico/vue-threejs-rhino-demo" ["l"="62.117,0.457"]
@@ -691,10 +751,7 @@ digraph G {
 "enmerk4r/GHPT" ["l"="62.154,0.436"]
 "philipbelesky/Caribou" ["l"="62.205,0.405"]
 "arendvw/clipper" ["l"="62.158,0.419"]
-"LBNL-ETA/Radiance" ["l"="62.072,0.676"]
 "nljones/Accelerad" ["l"="62.1,0.63"]
-"NREL/Radiance" ["l"="62.101,0.662"]
-"ladybug-tools/ladybug" ["l"="62.11,0.683"]
 "MingboPeng/Ironbug" ["l"="62.116,0.649"]
 "LBNL-ETA/pyradiance" ["l"="62.063,0.7"]
 "MITSustainableDesignLab/Daysim" ["l"="62.049,0.687"]
@@ -706,20 +763,23 @@ digraph G {
 "compas-rrc/compas_rrc_start" ["l"="62.076,0.433"]
 "AndersDeleuran/MeshAnalysis" ["l"="62.262,0.629"]
 "tsvilans/glulamb" ["l"="62.209,0.379"]
-"specklesystems/specklepy" ["l"="61.542,1.12"]
-"paireks/dotbim" ["l"="61.615,1.142"]
+"specklesystems/specklepy" ["l"="61.542,1.12", "c"=538]
+"paireks/dotbim" ["l"="61.615,1.142", "c"=538]
 "zahmadsaleem/revit-webview2-demo" ["l"="62.229,0.402"]
+"DynamoDS/Dynamo" ["l"="61.543,1.039", "c"=538]
 "HydraShare/hydra" ["l"="62.167,0.671"]
 "arup-group/a-carbon-tool" ["l"="62.159,0.771"]
+"Nodi3d/nodi" ["l"="61.377,-0.16", "c"=606]
 "yijiangh/algorithmic_circular_design" ["l"="62.175,0.33"]
 "ladybug-tools/butterfly" ["l"="62.13,0.701"]
 "ladybug-tools/butterfly-plus" ["l"="62.12,0.728"]
 "ladybug-tools/dragonfly-core" ["l"="62.094,0.704"]
 "ladybug-tools/honeybee-dynamo" ["l"="62.118,0.742"]
 "ladybug-tools/ladybug-dynamo" ["l"="62.134,0.738"]
-"argonne-lcf/TensorFlowFoam" ["l"="63.483,-2.653"]
+"argonne-lcf/TensorFlowFoam" ["l"="63.483,-2.653", "c"=1090]
 "ladybug-tools/dragonfly-legacy" ["l"="62.107,0.703"]
-"RomanLavrov/RevitFamilyBrowser" ["l"="61.583,0.935"]
+"Scrawk/CGALDotNet" ["l"="-26.337,-34.693", "c"=35]
+"RomanLavrov/RevitFamilyBrowser" ["l"="61.583,0.935", "c"=538]
 "mcneel/developer.rhino3d.com" ["l"="62.341,0.421"]
 "mcneel/RhinoCycles" ["l"="62.369,0.416"]
 "mcneel/rhinocommon-api-docs" ["l"="62.298,0.463"]
@@ -727,33 +787,37 @@ digraph G {
 "dantaeyoung/GrasshopperChallenges" ["l"="62.175,0.618"]
 "diego-apellaniz/Karamba3DUIWidgets" ["l"="62.029,0.527"]
 "diego-apellaniz/KarambaPack" ["l"="62.059,0.527"]
+"architecture-building-systems/CityEnergyAnalyst" ["l"="-12.172,18.507", "c"=800]
+"ladybug-tools/uwg" ["l"="62.083,0.734"]
 "ladybug-tools/ladybug-grasshopper" ["l"="62.1,0.722"]
-"CenterForTheBuiltEnvironment/comfort_tool" ["l"="-12.099,18.525"]
+"CenterForTheBuiltEnvironment/comfort_tool" ["l"="-12.099,18.525", "c"=800]
 "ladybug-tools/honeybee-grasshopper" ["l"="62.116,0.713"]
 "visose/Robots" ["l"="62.219,0.527"]
 "RobotComponents/RobotComponents" ["l"="62.253,0.508"]
 "RobotExMachina/Machina-Grasshopper" ["l"="62.28,0.54"]
 "robin-gdwl/Robots-in-Grasshopper" ["l"="62.26,0.53"]
-"ImtsSrl/KUKAVARPROXY" ["l"="60.588,11.608"]
-"robotics/open_abb" ["l"="61.777,16.731"]
+"ImtsSrl/KUKAVARPROXY" ["l"="60.588,11.608", "c"=632]
+"robotics/open_abb" ["l"="61.777,16.731", "c"=184]
 "fellesverkstedet/Bark-beetle-parametric-toolpaths" ["l"="62.103,0.52"]
 "linkarkitektur/SpeckleLCA" ["l"="62.152,0.805"]
 "ocni-dtu/lcax" ["l"="62.171,0.807"]
-"ladybug-tools/uwg" ["l"="62.083,0.734"]
 "moethu/SketchUpNET" ["l"="62.442,0.503"]
 "GreenBuildingXML/Sample_gbXML_Files" ["l"="62.161,0.7"]
 "WeConnect/case-apps" ["l"="62.206,0.741"]
 "oderby/VVD" ["l"="62.194,0.691"]
+"NewWheelTech/geometry4Sharp" ["l"="-26.354,-34.706", "c"=35]
 "BHoM/BHoM_Engine" ["l"="62.25,0.425"]
-"NonManifoldTopology/Topologic" ["l"="61.635,1.337"]
+"NonManifoldTopology/Topologic" ["l"="61.635,1.337", "c"=538]
+"buds-lab/the-building-data-genome-project" ["l"="-12.163,18.487", "c"=800]
 "BIM-Tools/SketchUp-IFC-Manager" ["l"="62.569,0.479"]
 "Aerilius/sketchup-console-plus" ["l"="62.566,0.528"]
 "SketchUp/sketchup-stl" ["l"="62.551,0.559"]
 "petrasvestartas/OpenNest" ["l"="62.06,0.508"]
 "johnharding/Biomorpher" ["l"="62.273,0.584"]
 "ocni-dtu/epdx" ["l"="62.164,0.826"]
-"stgeorges/gismo" ["l"="62.124,0.632"]
+"santoshphilip/eppy" ["l"="-12.154,18.538", "c"=800]
 "mcneel/SimpleRhinoTests" ["l"="62.08,0.375"]
+"DesignEngrLab/MIConvexHull" ["l"="-26.276,-34.708", "c"=35]
 "RobotExMachina/Machina-Dynamo" ["l"="62.331,0.562"]
 "RobotExMachina/Machina-Bridge" ["l"="62.337,0.54"]
 "NB70/sketchup-dxf-stl-exporter" ["l"="62.563,0.588"]
@@ -762,11 +826,12 @@ digraph G {
 "jimfoltz/sketchup-c-api-sandbox" ["l"="62.48,0.481"]
 "thomthom/skippy" ["l"="62.585,0.43"]
 "hansukyang/UWG_Matlab" ["l"="62.069,0.758"]
-"NREL/OpenStudio" ["l"="-12.099,18.507"]
-"santoshphilip/eppy" ["l"="-12.154,18.538"]
 "yijiangh/pychoreo" ["l"="62.043,0.467"]
 "Co-de-iT/GH2SVG" ["l"="62.213,0.639"]
+"wo80/Triangle.NET" ["l"="-26.292,-34.716", "c"=35]
 "MahmoudAbdelRahman/ANT" ["l"="62.11,0.591"]
 "TheodoreGalanos/DaylightGAN" ["l"="62.133,0.601"]
 "MahmoudAbdelRahman/-ANT-" ["l"="62.086,0.593"]
+"RiSearcher/GeometRi.CSharp" ["l"="-26.401,-34.693", "c"=35]
+"LongNguyenP/DynaShape_Legacy" ["l"="61.59,1.003", "c"=538]
 }

@@ -1,4 +1,6 @@
 digraph G {
+"checkpoint-restore/criu" -> "NVIDIA/cuda-checkpoint" ["e"=1]
+"checkpoint-restore/criu" -> "dmtcp/dmtcp" ["e"=1]
 "NVIDIA/k8s-device-plugin" -> "AliyunContainerService/gpushare-scheduler-extender"
 "NVIDIA/k8s-device-plugin" -> "NVIDIA/gpu-operator"
 "NVIDIA/k8s-device-plugin" -> "volcano-sh/volcano" ["e"=1]
@@ -29,6 +31,8 @@ digraph G {
 "AliyunContainerService/gpushare-scheduler-extender" -> "kubedl-io/kubedl" ["e"=1]
 "AliyunContainerService/gpushare-scheduler-extender" -> "NVIDIA/gpu-operator"
 "AliyunContainerService/gpushare-scheduler-extender" -> "openkruise/kruise" ["e"=1]
+"kserve/kserve" -> "NVIDIA/k8s-device-plugin" ["e"=1]
+"kserve/kserve" -> "NVIDIA/gpu-operator" ["e"=1]
 "mindprince/nvidia_gpu_prometheus_exporter" -> "BugRoger/nvidia-exporter"
 "mindprince/nvidia_gpu_prometheus_exporter" -> "DRuggeri/netgear_exporter"
 "NVIDIA/gpu-monitoring-tools" -> "AliyunContainerService/gpushare-scheduler-extender"
@@ -76,6 +80,9 @@ digraph G {
 "NVIDIA/gpu-operator" -> "kubernetes-sigs/kueue" ["e"=1]
 "NVIDIA/gpu-operator" -> "k8snetworkplumbingwg/multus-cni" ["e"=1]
 "NVIDIA/gpu-operator" -> "karmada-io/karmada" ["e"=1]
+"volcano-sh/volcano" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"volcano-sh/volcano" -> "NVIDIA/k8s-device-plugin" ["e"=1]
+"volcano-sh/volcano" -> "Project-HAMi/HAMi" ["e"=1]
 "NVIDIA/nvidia-container-runtime" -> "NVIDIA/libnvidia-container"
 "NVIDIA/nvidia-container-runtime" -> "NVIDIA/gpu-monitoring-tools"
 "NVIDIA/nvidia-container-runtime" -> "NVIDIA/k8s-device-plugin"
@@ -91,6 +98,15 @@ digraph G {
 "NVIDIA/nvidia-container-runtime" -> "NVIDIA/deepops" ["e"=1]
 "NVIDIA/nvidia-container-runtime" -> "4paradigm/k8s-vgpu-scheduler"
 "NVIDIA/nvidia-container-runtime" -> "tkestack/vcuda-controller"
+"Azure/AzurePublicDataset" -> "msr-fiddle/philly-traces" ["e"=1]
+"alibaba/clusterdata" -> "msr-fiddle/philly-traces" ["e"=1]
+"alibaba/clusterdata" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
+"alibaba/clusterdata" -> "hkust-adsl/kubernetes-scheduler-simulator" ["e"=1]
+"alibaba/clusterdata" -> "petuum/adaptdl" ["e"=1]
+"sql-machine-learning/sqlflow" -> "sql-machine-learning/elasticdl" ["e"=1]
+"kakaobrain/fast-autoaugment" -> "kakaobrain/torchgpipe" ["e"=1]
+"tensorflow/mesh" -> "kakaobrain/torchgpipe" ["e"=1]
+"tensorflow/mesh" -> "msr-fiddle/pipedream" ["e"=1]
 "NVIDIA/aistore" -> "NVIDIA/ais-k8s"
 "NVIDIA/aistore" -> "webdataset/webdataset" ["e"=1]
 "NVIDIA/aistore" -> "NVIDIA/tensorflow"
@@ -106,6 +122,12 @@ digraph G {
 "NVIDIA/aistore" -> "NVIDIA/k8s-device-plugin"
 "NVIDIA/aistore" -> "tkestack/gpu-manager"
 "NVIDIA/aistore" -> "BaguaSys/bagua" ["e"=1]
+"armadaproject/armada" -> "NVIDIA/KAI-Scheduler" ["e"=1]
+"microsoft/pai" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"microsoft/pai" -> "microsoft/hivedscheduler" ["e"=1]
+"microsoft/pai" -> "microsoft/frameworkcontroller" ["e"=1]
+"microsoft/pai" -> "NVIDIA/k8s-device-plugin" ["e"=1]
+"microsoft/pai" -> "sql-machine-learning/elasticdl" ["e"=1]
 "kakaobrain/torchgpipe" -> "msr-fiddle/pipedream"
 "kakaobrain/torchgpipe" -> "kakaobrain/fast-autoaugment" ["e"=1]
 "kakaobrain/torchgpipe" -> "facebookresearch/fairscale" ["e"=1]
@@ -159,6 +181,15 @@ digraph G {
 "sql-machine-learning/elasticdl" -> "tkestack/vcuda-controller"
 "sql-machine-learning/elasticdl" -> "AliyunContainerService/et-operator"
 "sql-machine-learning/elasticdl" -> "kubernetes-retired/poseidon" ["e"=1]
+"tony-framework/TonY" -> "sql-machine-learning/elasticdl" ["e"=1]
+"Yours3lf/rpi-vk-driver" -> "NVIDIA/open-gpu-doc" ["e"=1]
+"SJTU-IPADS/wukong" -> "SJTU-IPADS/reef" ["e"=1]
+"NVIDIA/deepops" -> "NVIDIA/k8s-device-plugin" ["e"=1]
+"NVIDIA/deepops" -> "NVIDIA/gpu-monitoring-tools" ["e"=1]
+"NVIDIA/deepops" -> "NVIDIA/gpu-operator" ["e"=1]
+"NVIDIA/deepops" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"NVIDIA/deepops" -> "NVIDIA/DCGM" ["e"=1]
+"NVIDIA/deepops" -> "NVIDIA/nvidia-container-runtime" ["e"=1]
 "nickbabcock/OhmGraphite" -> "kallex/PromDapter"
 "nickbabcock/OhmGraphite" -> "prometheus-community/windows_exporter" ["e"=1]
 "nickbabcock/OhmGraphite" -> "utkuozdemir/nvidia_gpu_exporter"
@@ -180,8 +211,11 @@ digraph G {
 "NVIDIA/open-gpu-doc" -> "NVIDIA/open-gpu-kernel-modules" ["e"=1]
 "microsoft/frameworkcontroller" -> "microsoft/hivedscheduler"
 "microsoft/frameworkcontroller" -> "open-intelligence/qizhi"
+"NVIDIA/enroot" -> "NVIDIA/libnvidia-container" ["e"=1]
+"NVIDIA/enroot" -> "NVIDIA/nvidia-container-runtime" ["e"=1]
 "microsoft/KubeGPU" -> "microsoft/KubeDevice"
 "microsoft/KubeGPU" -> "microsoft/DLWorkspace"
+"AliyunContainerService/kubernetes-cronhpa-controller" -> "AliyunContainerService/gpushare-device-plugin" ["e"=1]
 "IBM/kube-safe-scheduler" -> "akanso/extending-kube-scheduler"
 "mcanini/SysML-reading-list" -> "ucbrise/cs294-ai-sys-sp19"
 "mcanini/SysML-reading-list" -> "msr-fiddle/pipedream"
@@ -194,6 +228,11 @@ digraph G {
 "sakjain92/Fractional-GPUs" -> "netx-repo/PipeSwitch"
 "sakjain92/Fractional-GPUs" -> "tkestack/vcuda-controller"
 "sakjain92/Fractional-GPUs" -> "SymbioticLab/Tiresias"
+"kubeflow/arena" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"kubeflow/arena" -> "AliyunContainerService/gpushare-device-plugin" ["e"=1]
+"kubeflow/arena" -> "AliyunContainerService/et-operator" ["e"=1]
+"kubeflow/arena" -> "sql-machine-learning/elasticdl" ["e"=1]
+"kubeflow/arena" -> "tkestack/gpu-manager" ["e"=1]
 "NVIDIA/gpu-feature-discovery" -> "kubernetes-sigs/node-feature-discovery" ["e"=1]
 "NVIDIA/gpu-feature-discovery" -> "ROCm/k8s-device-plugin"
 "NVIDIA/gpu-feature-discovery" -> "NVIDIA/kubevirt-gpu-device-plugin"
@@ -203,7 +242,18 @@ digraph G {
 "NVIDIA/gpu-feature-discovery" -> "NVIDIA/gpu-monitoring-tools"
 "NVIDIA/gpu-feature-discovery" -> "NVIDIA/k8s-device-plugin"
 "NVIDIA/gpu-feature-discovery" -> "pokerfaceSad/GPUMounter"
+"HustAIsGroup/CDBTune" -> "shxinding/ResTune" ["e"=1]
+"HustAIsGroup/CDBTune" -> "PKU-DAIR/DBTune" ["e"=1]
+"kubeflow/mpi-operator" -> "microsoft/hivedscheduler" ["e"=1]
+"kubeflow/mpi-operator" -> "sql-machine-learning/elasticdl" ["e"=1]
+"kubeflow/mpi-operator" -> "pokerfaceSad/GPUMounter" ["e"=1]
 "jaywonchung/Learning-ML" -> "jaywonchung/ShadowTutor"
+"mosharaf/eecs598" -> "mcanini/SysML-reading-list" ["e"=1]
+"mosharaf/eecs598" -> "SymbioticLab/Salus" ["e"=1]
+"mosharaf/eecs598" -> "SymbioticLab/Tiresias" ["e"=1]
+"mosharaf/eecs598" -> "SymbioticLab/Oobleck" ["e"=1]
+"microsoft/Freeflow" -> "joyq-github/TensorFlowonK8s" ["e"=1]
+"Stonesjtu/pytorch_memlab" -> "kakaobrain/torchgpipe" ["e"=1]
 "msr-fiddle/philly-traces" -> "SymbioticLab/Tiresias"
 "msr-fiddle/philly-traces" -> "S-Lab-System-Group/HeliosData"
 "msr-fiddle/philly-traces" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers"
@@ -226,6 +276,9 @@ digraph G {
 "everpeace/k8s-scheduler-extender-example" -> "kelseyhightower/scheduler"
 "everpeace/k8s-scheduler-extender-example" -> "cnych/sample-scheduler-framework"
 "everpeace/k8s-scheduler-extender-example" -> "AliyunContainerService/gpushare-device-plugin"
+"FC-Li/CloudSimPy" -> "hkust-adsl/kubernetes-scheduler-simulator" ["e"=1]
+"FC-Li/CloudSimPy" -> "DIR-LAB/deep-batch-scheduler" ["e"=1]
+"hustcat/k8s-rdma-device-plugin" -> "AliyunContainerService/gpushare-device-plugin" ["e"=1]
 "SymbioticLab/Tiresias" -> "SymbioticLab/Salus"
 "SymbioticLab/Tiresias" -> "msr-fiddle/philly-traces"
 "SymbioticLab/Tiresias" -> "alibaba/GPU-scheduler-for-deep-learning"
@@ -244,6 +297,9 @@ digraph G {
 "pengyanghua/optimus" -> "pengyanghua/DL2"
 "pengyanghua/optimus" -> "kzhang28/Optimus"
 "pengyanghua/optimus" -> "hiddenlayer2020/ML-Job-Scheduler-MLFS"
+"tensorflow/custom-op" -> "sql-machine-learning/elasticdl" ["e"=1]
+"intel/intel-device-plugins-for-kubernetes" -> "ROCm/k8s-device-plugin" ["e"=1]
+"kubevirt/containerized-data-importer" -> "NVIDIA/kubevirt-gpu-device-plugin" ["e"=1]
 "ROCm/k8s-device-plugin" -> "NVIDIA/gpu-feature-discovery"
 "ROCm/k8s-device-plugin" -> "Mellanox/k8s-rdma-shared-dev-plugin" ["e"=1]
 "ROCm/k8s-device-plugin" -> "NVIDIA/kubevirt-gpu-device-plugin"
@@ -329,9 +385,15 @@ digraph G {
 "NVIDIA/nvidia-container-toolkit" -> "NVIDIA/aistore"
 "thomas-young-2013/mindware" -> "PKU-DAIR/mindware"
 "thomas-young-2013/mindware" -> "thomas-young-2013/open-box"
+"tkestack/tke" -> "tkestack/gpu-manager" ["e"=1]
+"tkestack/tke" -> "tkestack/galaxy" ["e"=1]
+"tkestack/tke" -> "tkestack/vcuda-controller" ["e"=1]
+"webdataset/webdataset" -> "NVIDIA/aistore" ["e"=1]
 "petuum/autodist" -> "petuum/tuun"
 "petuum/autodist" -> "petuum/adaptdl"
 "petuum/autodist" -> "asyml/stave"
+"fluid-cloudnative/fluid" -> "Project-HAMi/HAMi" ["e"=1]
+"fluid-cloudnative/fluid" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
 "msr-fiddle/pipedream" -> "kakaobrain/torchgpipe"
 "msr-fiddle/pipedream" -> "AlibabaPAI/DAPPLE"
 "msr-fiddle/pipedream" -> "msr-fiddle/philly-traces"
@@ -347,6 +409,8 @@ digraph G {
 "msr-fiddle/pipedream" -> "SymbioticLab/Oobleck"
 "msr-fiddle/pipedream" -> "SymbioticLab/Tiresias"
 "msr-fiddle/pipedream" -> "parasj/checkmate"
+"kubernetes-sigs/scheduler-plugins" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"kubernetes-sigs/scheduler-plugins" -> "Mr-Linus/Yoda-Scheduler" ["e"=1]
 "Mr-Linus/Yoda-Scheduler" -> "cnych/sample-scheduler-framework"
 "Mr-Linus/Yoda-Scheduler" -> "angao/scheduler-framework-sample"
 "Mr-Linus/Yoda-Scheduler" -> "Mr-Linus/SCV"
@@ -355,6 +419,7 @@ digraph G {
 "Mr-Linus/Yoda-Scheduler" -> "gocrane/crane-scheduler" ["e"=1]
 "Mr-Linus/Yoda-Scheduler" -> "heyfey/vodascheduler"
 "Mr-Linus/Yoda-Scheduler" -> "kubernetes-sigs/scheduler-plugins" ["e"=1]
+"kelseyhightower/intro-to-kubernetes-workshop" -> "kelseyhightower/scheduler" ["e"=1]
 "dmtcp/dmtcp" -> "DMTCP-CRAC/CRAC-early-development"
 "dmtcp/dmtcp" -> "mpickpt/mana"
 "dmtcp/dmtcp" -> "leobago/fti"
@@ -365,7 +430,10 @@ digraph G {
 "tkestack/gpu-admission" -> "tkestack/go-nvml"
 "tkestack/gpu-admission" -> "AliyunContainerService/gpushare-device-plugin"
 "tkestack/gpu-admission" -> "tkestack/csi-operator"
+"lxc/lxcfs" -> "tkestack/gpu-manager" ["e"=1]
+"DRuggeri/nut_exporter" -> "DRuggeri/netgear_exporter" ["e"=1]
 "NVIDIA/cloud-native-stack" -> "NVIDIA/k8s-nim-operator"
+"Mellanox/network-operator" -> "NVIDIA/kubevirt-gpu-device-plugin" ["e"=1]
 "NVIDIA/tensorflow" -> "NVIDIA/aistore"
 "NVIDIA/tensorflow" -> "NVIDIA/DeepLearningExamples" ["e"=1]
 "NVIDIA/tensorflow" -> "NVIDIA/nvidia-container-toolkit"
@@ -381,6 +449,13 @@ digraph G {
 "NVIDIA/tensorflow" -> "tensorflow/tensorrt" ["e"=1]
 "NVIDIA/tensorflow" -> "pytorch/TensorRT" ["e"=1]
 "NVIDIA/tensorflow" -> "tensorflow/runtime" ["e"=1]
+"quiver-team/torch-quiver" -> "lsds/KungFu" ["e"=1]
+"couler-proj/couler" -> "sql-machine-learning/elasticdl" ["e"=1]
+"kubedl-io/kubedl" -> "sql-machine-learning/elasticdl" ["e"=1]
+"kubedl-io/kubedl" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"kubedl-io/kubedl" -> "tkestack/gpu-manager" ["e"=1]
+"kubedl-io/kubedl" -> "AliyunContainerService/gpushare-device-plugin" ["e"=1]
+"kubedl-io/kubedl" -> "tkestack/vcuda-controller" ["e"=1]
 "tkestack/galaxy" -> "tkestack/tapp"
 "tkestack/galaxy" -> "tkestack/csi-operator"
 "tkestack/galaxy" -> "tkestack/lb-controlling-framework"
@@ -405,6 +480,7 @@ digraph G {
 "cnych/sample-scheduler-framework" -> "cnych/sample-scheduler-extender"
 "cnych/sample-scheduler-framework" -> "angao/scheduler-framework-sample"
 "cnych/sample-scheduler-framework" -> "Mr-Linus/Yoda-Scheduler"
+"cncf-tags/container-device-interface" -> "NVIDIA/k8s-dra-driver-gpu" ["e"=1]
 "petuum/adaptdl" -> "petuum/autodist"
 "petuum/adaptdl" -> "stanford-futuredata/gavel"
 "petuum/adaptdl" -> "alibaba/GPU-scheduler-for-deep-learning"
@@ -437,6 +513,8 @@ digraph G {
 "tkestack/vcuda-controller" -> "NTHU-LSALAB/KubeShare"
 "tkestack/vcuda-controller" -> "SymbioticLab/Salus"
 "tkestack/vcuda-controller" -> "tkestack/galaxy"
+"pytorch/elastic" -> "sql-machine-learning/elasticdl" ["e"=1]
+"pytorch/elastic" -> "msr-fiddle/pipedream" ["e"=1]
 "tkestack/tapp" -> "tkestack/galaxy"
 "tkestack/tapp" -> "tkestack/csi-operator"
 "tkestack/tapp" -> "tkestack/go-nvml"
@@ -466,6 +544,8 @@ digraph G {
 "shinpei0208/gdev" -> "ekondis/gpumembench" ["e"=1]
 "shinpei0208/gdev" -> "coldfunction/qCUDA"
 "renatolfc/sched-rl-gym" -> "DIR-LAB/deep-batch-scheduler"
+"Mellanox/k8s-rdma-shared-dev-plugin" -> "elastic-ai/elastic-gpu" ["e"=1]
+"Mellanox/k8s-rdma-shared-dev-plugin" -> "tkestack/gpu-manager" ["e"=1]
 "microsoft/hivedscheduler" -> "microsoft/frameworkcontroller"
 "microsoft/hivedscheduler" -> "stanford-futuredata/gavel"
 "microsoft/hivedscheduler" -> "alibaba/GPU-scheduler-for-deep-learning"
@@ -490,12 +570,17 @@ digraph G {
 "parasj/checkmate" -> "darchr/AutoTM"
 "parasj/checkmate" -> "ShishirPatil/poet"
 "parasj/checkmate" -> "parasj/papers"
+"shikanon/kubeflow-manifests" -> "volcano-sh/devices" ["e"=1]
+"shikanon/kubeflow-manifests" -> "tkestack/gpu-manager" ["e"=1]
+"shikanon/kubeflow-manifests" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
 "apulis/Apulis-AI-Platform" -> "zhejianglab/QianJiangYuan"
 "tkestack/go-nvml" -> "tkestack/csi-operator"
 "tkestack/go-nvml" -> "tkestack/volume-decorator"
 "tkestack/go-nvml" -> "tkestack/lb-controlling-framework"
 "tkestack/docs" -> "tkestack/kube-jarvis"
 "tkestack/docs" -> "tkestack/csi-operator"
+"hongzimao/decima-sim" -> "hkust-adsl/kubernetes-scheduler-simulator" ["e"=1]
+"kleveross/ormb" -> "tkestack/vcuda-controller" ["e"=1]
 "RWTH-ACS/cricket" -> "coldfunction/qCUDA"
 "RWTH-ACS/cricket" -> "Bruce-Lee-LY/cuda_hook"
 "RWTH-ACS/cricket" -> "NVIDIA/cuda-checkpoint"
@@ -551,6 +636,7 @@ digraph G {
 "AliyunContainerService/benchmark-for-spark" -> "AliyunContainerService/roadmap"
 "tkestack/volume-decorator" -> "tkestack/csi-operator"
 "tkestack/kube-jarvis" -> "tkestack/csi-operator"
+"dragonflyoss/dragonfly" -> "Project-HAMi/HAMi" ["e"=1]
 "utkuozdemir/nvidia_gpu_exporter" -> "NVIDIA/dcgm-exporter"
 "utkuozdemir/nvidia_gpu_exporter" -> "prometheus-community/windows_exporter" ["e"=1]
 "utkuozdemir/nvidia_gpu_exporter" -> "a0s/nvidia-smi-exporter"
@@ -581,6 +667,7 @@ digraph G {
 "NVIDIA/dcgm-exporter" -> "NVIDIA/gpu-feature-discovery"
 "NVIDIA/dcgm-exporter" -> "AliyunContainerService/gpushare-scheduler-extender"
 "NVIDIA/dcgm-exporter" -> "NVIDIA/nvbandwidth" ["e"=1]
+"superedge/superedge" -> "tkestack/tapp" ["e"=1]
 "NVIDIA/DCGM" -> "NVIDIA/dcgm-exporter"
 "NVIDIA/DCGM" -> "NVIDIA/nvbandwidth" ["e"=1]
 "NVIDIA/DCGM" -> "NVIDIA/go-nvml"
@@ -596,6 +683,13 @@ digraph G {
 "NVIDIA/DCGM" -> "mej/nhc" ["e"=1]
 "NVIDIA/DCGM" -> "pytorch/kineto" ["e"=1]
 "NVIDIA/DCGM" -> "google/nccl-fastsocket" ["e"=1]
+"ray-project/kuberay" -> "Project-HAMi/HAMi" ["e"=1]
+"ray-project/kuberay" -> "NVIDIA/gpu-operator" ["e"=1]
+"google/cluster-data" -> "msr-fiddle/philly-traces" ["e"=1]
+"google/cluster-data" -> "hkust-adsl/kubernetes-scheduler-simulator" ["e"=1]
+"google/cluster-data" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
+"tencentmusic/cube-studio" -> "Project-HAMi/HAMi" ["e"=1]
+"tencentmusic/cube-studio" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
 "4paradigm/k8s-vgpu-scheduler" -> "Project-HAMi/HAMi"
 "4paradigm/k8s-vgpu-scheduler" -> "tkestack/gpu-manager"
 "4paradigm/k8s-vgpu-scheduler" -> "tkestack/vcuda-controller"
@@ -611,10 +705,18 @@ digraph G {
 "4paradigm/k8s-vgpu-scheduler" -> "Mr-Linus/Yoda-Scheduler"
 "4paradigm/k8s-vgpu-scheduler" -> "4paradigm/openaios-platform"
 "4paradigm/k8s-vgpu-scheduler" -> "alibaba/GPU-scheduler-for-deep-learning"
+"tkestack/kvass" -> "tkestack/kube-jarvis" ["e"=1]
+"kubernetes-sigs/kube-scheduler-simulator" -> "hkust-adsl/kubernetes-scheduler-simulator" ["e"=1]
 "cnstark/gputasker" -> "cnstark/gpueater"
+"uclasystem/dorylus" -> "uclasystem/bamboo" ["e"=1]
 "PKU-DAIR/GAMLP" -> "zwt233/NDLS"
+"baidu/EasyFaaS" -> "everpeace/k8s-scheduler-extender-example" ["e"=1]
+"PersiaML/PERSIA" -> "microsoft/varuna" ["e"=1]
 "4paradigm/pafka" -> "4paradigm/OpenEmbedding"
 "4paradigm/pafka" -> "decis-bench/febench"
+"Jack47/hack-SysML" -> "petuum/adaptdl" ["e"=1]
+"microsoft/superbenchmark" -> "SymbioticLab/Oobleck" ["e"=1]
+"microsoft/superbenchmark" -> "msr-fiddle/philly-traces" ["e"=1]
 "pokerfaceSad/GPUMounter" -> "AliyunContainerService/et-operator"
 "pokerfaceSad/GPUMounter" -> "gvirtus/GVirtuS"
 "Hsword/Hetu" -> "PKU-DAIR/Hetu"
@@ -634,6 +736,7 @@ digraph G {
 "PKU-DAIR/Hetu" -> "alibaba/EasyParallelLibrary" ["e"=1]
 "PKU-DAIR/Hetu" -> "PKU-DAIR/DBTune"
 "PKU-DAIR/Hetu" -> "HPDL-Group/Merak"
+"BaguaSys/bagua" -> "sql-machine-learning/elasticdl" ["e"=1]
 "PKU-DAIR/open-box" -> "PKU-DAIR/mindware"
 "PKU-DAIR/open-box" -> "thomas-young-2013/open-box"
 "PKU-DAIR/open-box" -> "PKU-DAIR/Hetu"
@@ -683,6 +786,9 @@ digraph G {
 "volcano-sh/apis" -> "volcano-sh/website"
 "volcano-sh/apis" -> "volcano-sh/volcano-global"
 "volcano-sh/apis" -> "volcano-sh/devices"
+"shenango/caladan" -> "uclasystem/bamboo" ["e"=1]
+"itrummer/dbbert" -> "PKU-DAIR/DBTune" ["e"=1]
+"CUAI/CorrectAndSmooth" -> "PKU-DAIR/GAMLP" ["e"=1]
 "jaywonchung/reason" -> "jaywonchung/dotfiles" ["e"=1]
 "jaywonchung/reason" -> "ml-energy/leaderboard"
 "jaywonchung/reason" -> "jaywonchung/ShadowTutor"
@@ -738,6 +844,8 @@ digraph G {
 "S-Lab-System-Group/HeliosArtifact" -> "microsoft/elasticflow-traces"
 "S-Lab-System-Group/HeliosArtifact" -> "S-Lab-System-Group/ChronusArtifact"
 "S-Lab-System-Group/HeliosArtifact" -> "S-Lab-System-Group/HeliosData"
+"NVIDIA/nvidia-docker" -> "NVIDIA/k8s-device-plugin" ["e"=1]
+"NVIDIA/nvidia-docker" -> "NVIDIA/nvidia-container-toolkit" ["e"=1]
 "Project-HAMi/HAMi" -> "4paradigm/k8s-vgpu-scheduler"
 "Project-HAMi/HAMi" -> "tkestack/gpu-manager"
 "Project-HAMi/HAMi" -> "AliyunContainerService/gpushare-scheduler-extender"
@@ -768,6 +876,7 @@ digraph G {
 "nebuly-ai/nos" -> "NVIDIA/mig-parted"
 "nebuly-ai/nos" -> "elastic-ai/elastic-gpu"
 "nebuly-ai/nos" -> "AliyunContainerService/gpushare-scheduler-extender"
+"tensorchord/envd" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
 "cnstark/pytorch-docker" -> "cnstark/gputasker"
 "cnstark/pytorch-docker" -> "anibali/docker-pytorch"
 "skyplane-project/skyplane" -> "skypilot-org/skypilot" ["e"=1]
@@ -789,8 +898,17 @@ digraph G {
 "PKU-DAIR/SGL" -> "PKU-DAIR/GAMLP"
 "PKU-DAIR/SGL" -> "PKU-DAIR/Hetu"
 "PKU-DAIR/SGL" -> "PKU-DAIR/open-box"
+"Tencent/caelus" -> "elastic-ai/elastic-gpu-scheduler" ["e"=1]
+"gocrane/crane-scheduler" -> "Mr-Linus/Yoda-Scheduler" ["e"=1]
+"koordinator-sh/koordinator" -> "Project-HAMi/HAMi" ["e"=1]
 "nebuly-ai/exploring-AI-optimization" -> "nebuly-ai/nebuly-ai"
+"codecaution/Awesome-Mixture-of-Experts-Papers" -> "Hsword/Hetu" ["e"=1]
+"NVIDIA/nvbandwidth" -> "NVIDIA/DCGM" ["e"=1]
 "HFAiLab/hfai-models" -> "HFAiLab/ffrecord"
+"run-house/runhouse" -> "skyplane-project/skyplane" ["e"=1]
+"Shenggan/awesome-distributed-ml" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
+"Shenggan/awesome-distributed-ml" -> "eth-easl/orion" ["e"=1]
+"kstone-io/kstone" -> "elastic-ai/elastic-gpu" ["e"=1]
 "dbpunk-labs/db3" -> "dbpunk-labs/octogen"
 "dbpunk-labs/db3" -> "dbpunk-labs/db3.js"
 "HFAiLab/ffrecord" -> "HFAiLab/hfai-models"
@@ -814,7 +932,17 @@ digraph G {
 "RunLLM/aqueduct" -> "erdos-project/erdos" ["e"=1]
 "RunLLM/aqueduct" -> "ucbrise/flor"
 "RunLLM/aqueduct" -> "ShishirPatil/poet"
+"alibaba/open-simulator" -> "hkust-adsl/kubernetes-scheduler-simulator" ["e"=1]
+"alibaba/open-simulator" -> "msr-fiddle/philly-traces" ["e"=1]
+"alibaba/open-simulator" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
 "DicardoX/Research-Space" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers"
+"AmberLJC/FLsystem-paper" -> "SymbioticLab/ModelKeeper" ["e"=1]
+"alibaba/EasyParallelLibrary" -> "microsoft/SuperScaler" ["e"=1]
+"alibaba/EasyParallelLibrary" -> "AlibabaPAI/DAPPLE" ["e"=1]
+"alibaba/EasyParallelLibrary" -> "uclasystem/bamboo" ["e"=1]
+"alibaba/EasyParallelLibrary" -> "alibaba/GPU-scheduler-for-deep-learning" ["e"=1]
+"alibaba/EasyParallelLibrary" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
+"google/learned_optimization" -> "run-ai/genv" ["e"=1]
 "HFAiLab/hdmapnet" -> "HFAiLab/alphafold-optimized"
 "HFAiLab/hdmapnet" -> "HFAiLab/pytorch_distributed"
 "HFAiLab/hdmapnet" -> "HFAiLab/LTSF-formers"
@@ -852,6 +980,7 @@ digraph G {
 "uw-mad-dash/llamatune" -> "shxinding/ResTune"
 "SJTU-IPADS/reef-artifacts" -> "SJTU-IPADS/reef"
 "SJTU-IPADS/reef-artifacts" -> "SJTU-IPADS/disb"
+"ConnollyLeon/awesome-Auto-Parallelism" -> "HPDL-Group/Merak" ["e"=1]
 "SJTU-IPADS/reef" -> "SJTU-IPADS/disb"
 "SJTU-IPADS/reef" -> "SJTU-IPADS/reef-artifacts"
 "SJTU-IPADS/reef" -> "netx-repo/PipeSwitch"
@@ -881,6 +1010,7 @@ digraph G {
 "volcano-sh/volcano-global" -> "volcano-sh/dashboard"
 "volcano-sh/volcano-global" -> "volcano-sh/apis"
 "S-Lab-System-Group/ChronusArtifact" -> "pengyanghua/DL2"
+"mli/transformers-benchmarks" -> "wilicc/gpu-burn" ["e"=1]
 "run-ai/genv" -> "run-ai/rntop"
 "run-ai/genv" -> "NVIDIA/KAI-Scheduler"
 "run-ai/genv" -> "run-ai/runai-model-streamer"
@@ -892,8 +1022,17 @@ digraph G {
 "run-ai/genv" -> "run-ai/jupyterlab_genv"
 "run-ai/genv" -> "google/learned_optimization" ["e"=1]
 "run-ai/genv" -> "grgalex/nvshare"
+"xl0/lovely-tensors" -> "run-ai/genv" ["e"=1]
+"alibaba/feathub" -> "4paradigm/FeatInsight" ["e"=1]
+"PufferAI/PufferLib" -> "imbue-ai/carbs" ["e"=1]
+"lambda7xx/awesome-AI-system" -> "netx-repo/PipeSwitch" ["e"=1]
+"intelligent-machine-learning/dlrover" -> "sql-machine-learning/elasticdl" ["e"=1]
+"intelligent-machine-learning/dlrover" -> "Project-HAMi/HAMi" ["e"=1]
 "Juice-Labs/Juice-Labs" -> "kevmo314/scuda"
 "Juice-Labs/Juice-Labs" -> "RWTH-ACS/cricket"
+"openai/kubernetes-ec2-autoscaler" -> "microsoft/KubeGPU" ["e"=1]
+"mit-han-lab/tiny-training" -> "ShishirPatil/poet" ["e"=1]
+"facebookresearch/HolisticTraceAnalysis" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
 "ml-energy/zeus" -> "SymbioticLab/Oobleck"
 "ml-energy/zeus" -> "ml-energy/leaderboard"
 "ml-energy/zeus" -> "SymbioticLab/Salus"
@@ -917,6 +1056,7 @@ digraph G {
 "eth-easl/orion" -> "alibaba/GPU-scheduler-for-deep-learning"
 "ShishirPatil/poet" -> "parasj/checkmate"
 "pkusys/ElasticFlow" -> "microsoft/elasticflow-traces"
+"Mellanox/nv_peer_memory" -> "NVIDIA/DCGM" ["e"=1]
 "AliyunContainerService/roadmap" -> "AliyunContainerService/benchmark-for-spark"
 "uclasystem/bamboo" -> "uclasystem/VQPy" ["e"=1]
 "uclasystem/bamboo" -> "JF-D/Parcae"
@@ -946,6 +1086,8 @@ digraph G {
 "uw-mad-dash/shockwave" -> "hiddenlayer2020/ML-Job-Scheduler-MLFS"
 "run-ai/jupyterlab_genv" -> "run-ai/vscode-genv"
 "run-ai/vscode-genv" -> "run-ai/jupyterlab_genv"
+"gorilla-llm/gorilla-cli" -> "skyplane-project/skyplane" ["e"=1]
+"AmadeusChan/Awesome-LLM-System-Papers" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
 "hkust-adsl/kubernetes-scheduler-simulator" -> "alibaba/open-simulator" ["e"=1]
 "hkust-adsl/kubernetes-scheduler-simulator" -> "S-Lab-System-Group/HeliosData"
 "hkust-adsl/kubernetes-scheduler-simulator" -> "msr-fiddle/philly-traces"
@@ -984,6 +1126,10 @@ digraph G {
 "NVIDIA/k8s-dra-driver-gpu" -> "Project-HAMi/HAMi-core"
 "pkusys/TGS" -> "eth-easl/orion"
 "pkusys/TGS" -> "Rivendile/Muri"
+"kubernetes-sigs/node-feature-discovery" -> "NVIDIA/gpu-feature-discovery" ["e"=1]
+"kubernetes-sigs/node-feature-discovery" -> "NVIDIA/gpu-operator" ["e"=1]
+"kubernetes-sigs/node-feature-discovery" -> "NVIDIA/k8s-device-plugin" ["e"=1]
+"hustcat/sriov-cni" -> "tkestack/galaxy" ["e"=1]
 "kelseyhightower/scheduler" -> "everpeace/k8s-scheduler-extender-example"
 "grgalex/nvshare" -> "pkusys/TGS"
 "grgalex/nvshare" -> "elastic-ai/elastic-gpu"
@@ -999,6 +1145,22 @@ digraph G {
 "SymbioticLab/Oobleck" -> "SymbioticLab/ModelKeeper"
 "SymbioticLab/Oobleck" -> "HPDL-Group/Merak"
 "tenclass/clink" -> "nvwacloud/tensorlink"
+"peak/s5cmd" -> "skyplane-project/skyplane" ["e"=1]
+"gpustack/gpustack" -> "Project-HAMi/HAMi" ["e"=1]
+"Hsword/SpotServe" -> "eth-easl/orion" ["e"=1]
+"Hsword/SpotServe" -> "JF-D/Parcae" ["e"=1]
+"kubernetes-sigs/lws" -> "NVIDIA/KAI-Scheduler" ["e"=1]
+"kubernetes-sigs/lws" -> "Project-HAMi/HAMi" ["e"=1]
+"NVIDIA/GenerativeAIExamples" -> "NVIDIA/tensorflow" ["e"=1]
+"NVIDIA/GenerativeAIExamples" -> "NVIDIA/nvidia-container-toolkit" ["e"=1]
+"sail-sg/zero-bubble-pipeline-parallelism" -> "ParCIS/Chimera" ["e"=1]
+"byungsoo-oh/ml-systems-papers" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
+"byungsoo-oh/ml-systems-papers" -> "PKU-DAIR/Hetu" ["e"=1]
+"byungsoo-oh/ml-systems-papers" -> "microsoft/nnscaler" ["e"=1]
+"gsidhu/buzee-tauri" -> "federicotorrielli/BetterWhisperX" ["e"=1]
+"substratusai/kubeai" -> "NVIDIA/KAI-Scheduler" ["e"=1]
+"substratusai/kubeai" -> "run-ai/runai-model-streamer" ["e"=1]
+"dyweb/papers-notebook" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
 "NVIDIA/cuda-checkpoint" -> "RWTH-ACS/cricket"
 "NVIDIA/cuda-checkpoint" -> "Bruce-Lee-LY/cuda_hook"
 "NVIDIA/cuda-checkpoint" -> "SJTU-IPADS/PhoenixOS"
@@ -1007,6 +1169,7 @@ digraph G {
 "NVIDIA/cuda-checkpoint" -> "pkusys/TGS"
 "NVIDIA/cuda-checkpoint" -> "antgroup/glake" ["e"=1]
 "NVIDIA/cuda-checkpoint" -> "cedana/cedana" ["e"=1]
+"ericchiang/k8s" -> "kelseyhightower/scheduler" ["e"=1]
 "coldfunction/qCUDA" -> "RWTH-ACS/cricket"
 "coldfunction/qCUDA" -> "EBD-CREST/mrCUDA"
 "coldfunction/qCUDA" -> "Bruce-Lee-LY/cuda_hook"
@@ -1014,6 +1177,9 @@ digraph G {
 "coldfunction/qCUDA" -> "tenclass/clink"
 "cjg/GVirtuS" -> "EBD-CREST/mrCUDA"
 "cjg/GVirtuS" -> "raffmont/GVirtuS"
+"tensorflow/benchmarks" -> "sql-machine-learning/elasticdl" ["e"=1]
+"InternLM/AcmeTrace" -> "S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["e"=1]
+"hongzimao/deeprm" -> "stanford-futuredata/gavel" ["e"=1]
 "Project-HAMi/HAMi-core" -> "Project-HAMi/volcano-vgpu-device-plugin"
 "Project-HAMi/HAMi-core" -> "Project-HAMi/HAMi"
 "Project-HAMi/HAMi-core" -> "Bruce-Lee-LY/cuda_hook"
@@ -1062,10 +1228,13 @@ digraph G {
 "kevmo314/scuda" -> "mikex86/LibreCuda" ["e"=1]
 "kevmo314/scuda" -> "Stengo/DeskPad" ["e"=1]
 "kevmo314/scuda" -> "mufeedvh/code2prompt" ["e"=1]
+"byjlw/video-analyzer" -> "federicotorrielli/BetterWhisperX" ["e"=1]
+"wisupai/e2m" -> "federicotorrielli/BetterWhisperX" ["e"=1]
 "run-ai/runai-model-streamer" -> "run-ai/genv"
 "run-ai/runai-model-streamer" -> "run-ai/fake-gpu-operator"
 "run-ai/runai-model-streamer" -> "run-ai/jupyterlab_genv"
 "run-ai/runai-model-streamer" -> "run-ai/rntop"
+"lvkv/whenfs" -> "kevmo314/scuda" ["e"=1]
 "Evil0ctal/Fast-Powerful-Whisper-AI-Services-API" -> "federicotorrielli/BetterWhisperX"
 "SamsungLabs/Metis" -> "DachengLi1/AMP"
 "nvwacloud/tensorlink" -> "tenclass/clink"
@@ -1082,6 +1251,8 @@ digraph G {
 "anibali/docker-pytorch" -> "cnstark/pytorch-docker"
 "anibali/docker-pytorch" -> "floydhub/dockerfiles"
 "anibali/docker-pytorch" -> "daniilidis-group/neural_renderer" ["e"=1]
+"Langhalsdino/Kubernetes-GPU-Guide" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"kubeflow/trainer" -> "NVIDIA/k8s-device-plugin" ["e"=1]
 "NVIDIA/KAI-Scheduler" -> "run-ai/genv"
 "NVIDIA/KAI-Scheduler" -> "kubernetes-sigs/lws" ["e"=1]
 "NVIDIA/KAI-Scheduler" -> "NVIDIA/k8s-dra-driver-gpu"
@@ -1097,6 +1268,8 @@ digraph G {
 "NVIDIA/KAI-Scheduler" -> "NVIDIA/cuda-checkpoint"
 "NVIDIA/KAI-Scheduler" -> "Mellanox/k8s-rdma-shared-dev-plugin" ["e"=1]
 "NVIDIA/KAI-Scheduler" -> "cncf-tags/container-device-interface" ["e"=1]
+"kubernetes-retired/kube-batch" -> "AliyunContainerService/gpushare-scheduler-extender" ["e"=1]
+"kubernetes-retired/kube-batch" -> "AliyunContainerService/gpushare-device-plugin" ["e"=1]
 "SymbioticLab/Salus" -> "SymbioticLab/Tiresias"
 "SymbioticLab/Salus" -> "netx-repo/PipeSwitch"
 "SymbioticLab/Salus" -> "alibaba/GPU-scheduler-for-deep-learning"
@@ -1112,28 +1285,32 @@ digraph G {
 "SymbioticLab/Salus" -> "SymbioticLab/Aequitas" ["e"=1]
 "SymbioticLab/Salus" -> "msr-fiddle/synergy"
 "volcano-sh/descheduler" -> "volcano-sh/dashboard"
+"checkpoint-restore/criu" ["l"="8.379,-9.047", "c"=14]
+"NVIDIA/cuda-checkpoint" ["l"="7.305,-11.254"]
+"dmtcp/dmtcp" ["l"="7.521,-11.222"]
 "NVIDIA/k8s-device-plugin" ["l"="7.272,-11.403"]
 "AliyunContainerService/gpushare-scheduler-extender" ["l"="7.284,-11.356"]
 "NVIDIA/gpu-operator" ["l"="7.244,-11.395"]
-"volcano-sh/volcano" ["l"="8.049,-9.283"]
+"volcano-sh/volcano" ["l"="8.049,-9.283", "c"=14]
 "AliyunContainerService/gpushare-device-plugin" ["l"="7.315,-11.356"]
 "tkestack/gpu-manager" ["l"="7.287,-11.334"]
 "Project-HAMi/HAMi" ["l"="7.26,-11.334"]
 "NVIDIA/dcgm-exporter" ["l"="7.226,-11.377"]
-"kubeflow/trainer" ["l"="8.087,-9.331"]
+"kubeflow/trainer" ["l"="8.087,-9.331", "c"=14]
 "NVIDIA/nvidia-container-runtime" ["l"="7.291,-11.385"]
 "NVIDIA/nvidia-container-toolkit" ["l"="7.209,-11.422"]
-"kubernetes-sigs/kubebuilder" ["l"="8.003,-8.994"]
+"kubernetes-sigs/kubebuilder" ["l"="8.003,-8.994", "c"=14]
 "NVIDIA/gpu-monitoring-tools" ["l"="7.261,-11.368"]
-"openkruise/kruise" ["l"="8.02,-9.231"]
-"kubernetes/node-problem-detector" ["l"="7.898,-9.133"]
-"kubernetes-sigs/scheduler-plugins" ["l"="8.022,-9.321"]
+"openkruise/kruise" ["l"="8.02,-9.231", "c"=14]
+"kubernetes/node-problem-detector" ["l"="7.898,-9.133", "c"=14]
+"kubernetes-sigs/scheduler-plugins" ["l"="8.022,-9.321", "c"=14]
 "tkestack/vcuda-controller" ["l"="7.324,-11.297"]
 "4paradigm/k8s-vgpu-scheduler" ["l"="7.312,-11.334"]
-"kubeflow/arena" ["l"="8.097,-9.44"]
-"kubernetes-retired/kube-batch" ["l"="8.054,-9.32"]
-"koordinator-sh/koordinator" ["l"="8.043,-9.339"]
-"kubedl-io/kubedl" ["l"="8.076,-9.448"]
+"kubeflow/arena" ["l"="8.097,-9.44", "c"=14]
+"kubernetes-retired/kube-batch" ["l"="8.054,-9.32", "c"=14]
+"koordinator-sh/koordinator" ["l"="8.043,-9.339", "c"=14]
+"kubedl-io/kubedl" ["l"="8.076,-9.448", "c"=14]
+"kserve/kserve" ["l"="45.314,25.725", "c"=68]
 "mindprince/nvidia_gpu_prometheus_exporter" ["l"="7.238,-11.561"]
 "BugRoger/nvidia-exporter" ["l"="7.217,-11.606"]
 "DRuggeri/netgear_exporter" ["l"="7.25,-11.613"]
@@ -1141,94 +1318,104 @@ digraph G {
 "NVIDIA/DCGM" ["l"="7.233,-11.335"]
 "NVIDIA/gpu-feature-discovery" ["l"="7.206,-11.349"]
 "NVIDIA/libnvidia-container" ["l"="7.241,-11.36"]
-"NVIDIA/deepops" ["l"="7.181,-13.867"]
+"NVIDIA/deepops" ["l"="7.181,-13.867", "c"=893]
 "tkestack/gpu-admission" ["l"="7.333,-11.338"]
 "elastic-ai/elastic-gpu" ["l"="7.314,-11.313"]
-"hustcat/k8s-rdma-device-plugin" ["l"="8.319,-9.475"]
+"hustcat/k8s-rdma-device-plugin" ["l"="8.319,-9.475", "c"=14]
 "Mr-Linus/Yoda-Scheduler" ["l"="7.386,-11.34"]
 "everpeace/k8s-scheduler-extender-example" ["l"="7.397,-11.39"]
-"kubernetes-sigs/node-feature-discovery" ["l"="8.076,-9.363"]
-"kserve/kserve" ["l"="45.314,25.725"]
-"kubernetes-sigs/kueue" ["l"="7.91,-9.37"]
-"k8snetworkplumbingwg/multus-cni" ["l"="8.206,-9.292"]
-"karmada-io/karmada" ["l"="7.998,-9.233"]
-"NVIDIA/nvidia-docker" ["l"="50.492,29.589"]
-"NVIDIA/enroot" ["l"="7.196,-13.821"]
+"kubernetes-sigs/node-feature-discovery" ["l"="8.076,-9.363", "c"=14]
+"kubernetes-sigs/kueue" ["l"="7.91,-9.37", "c"=14]
+"k8snetworkplumbingwg/multus-cni" ["l"="8.206,-9.292", "c"=14]
+"karmada-io/karmada" ["l"="7.998,-9.233", "c"=14]
+"NVIDIA/nvidia-docker" ["l"="50.492,29.589", "c"=83]
+"NVIDIA/enroot" ["l"="7.196,-13.821", "c"=893]
+"Azure/AzurePublicDataset" ["l"="63.315,-12.589", "c"=1127]
+"msr-fiddle/philly-traces" ["l"="7.318,-11.149"]
+"alibaba/clusterdata" ["l"="63.246,-12.617", "c"=1127]
+"S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["l"="7.318,-11.124"]
+"hkust-adsl/kubernetes-scheduler-simulator" ["l"="7.328,-11.107"]
+"petuum/adaptdl" ["l"="7.35,-11.154"]
+"sql-machine-learning/sqlflow" ["l"="-2.594,14.934", "c"=43]
+"sql-machine-learning/elasticdl" ["l"="7.315,-11.188"]
+"kakaobrain/fast-autoaugment" ["l"="51.093,30.156", "c"=83]
+"kakaobrain/torchgpipe" ["l"="7.285,-11.069"]
+"tensorflow/mesh" ["l"="45.702,25.677", "c"=68]
+"msr-fiddle/pipedream" ["l"="7.319,-11.064"]
 "NVIDIA/aistore" ["l"="7.216,-11.471"]
 "NVIDIA/ais-k8s" ["l"="7.212,-11.532"]
-"webdataset/webdataset" ["l"="49.092,30.307"]
+"webdataset/webdataset" ["l"="49.092,30.307", "c"=191]
 "NVIDIA/tensorflow" ["l"="7.18,-11.491"]
-"NVIDIA/DALI" ["l"="50.737,29.833"]
-"daos-stack/daos" ["l"="2.174,14.957"]
-"uber/petastorm" ["l"="-2.71,17.193"]
+"NVIDIA/DALI" ["l"="50.737,29.833", "c"=83]
+"daos-stack/daos" ["l"="2.174,14.957", "c"=756]
+"uber/petastorm" ["l"="-2.71,17.193", "c"=455]
 "NVlabs/tensorcom" ["l"="7.183,-11.529"]
-"hpc/ior" ["l"="2.121,14.969"]
-"NVIDIA/gdrcopy" ["l"="1.92,14.452"]
-"BaguaSys/bagua" ["l"="58.072,23.632"]
-"kakaobrain/torchgpipe" ["l"="7.285,-11.069"]
-"msr-fiddle/pipedream" ["l"="7.319,-11.064"]
-"kakaobrain/fast-autoaugment" ["l"="51.093,30.156"]
-"facebookresearch/fairscale" ["l"="38.777,-0.604"]
-"pytorch/PiPPy" ["l"="38.928,-0.444"]
-"flexflow/flexflow-train" ["l"="38.927,-0.488"]
+"hpc/ior" ["l"="2.121,14.969", "c"=756]
+"NVIDIA/gdrcopy" ["l"="1.92,14.452", "c"=572]
+"BaguaSys/bagua" ["l"="58.072,23.632", "c"=161]
+"armadaproject/armada" ["l"="-34.853,-0.555", "c"=8]
+"NVIDIA/KAI-Scheduler" ["l"="7.18,-11.303"]
+"microsoft/pai" ["l"="45.47,25.769", "c"=68]
+"microsoft/hivedscheduler" ["l"="7.353,-11.185"]
+"microsoft/frameworkcontroller" ["l"="7.417,-11.225"]
+"facebookresearch/fairscale" ["l"="38.777,-0.604", "c"=39]
+"pytorch/PiPPy" ["l"="38.928,-0.444", "c"=39]
+"flexflow/flexflow-train" ["l"="38.927,-0.488", "c"=39]
 "AlibabaPAI/DAPPLE" ["l"="7.295,-11.044"]
 "microsoft/varuna" ["l"="7.336,-11.06"]
-"pytorch/gloo" ["l"="57.935,23.566"]
-"microsoft/msccl" ["l"="1.972,14.532"]
-"kakaobrain/pororo" ["l"="-5.094,-23.169"]
+"pytorch/gloo" ["l"="57.935,23.566", "c"=161]
+"microsoft/msccl" ["l"="1.972,14.532", "c"=572]
+"kakaobrain/pororo" ["l"="-5.094,-23.169", "c"=164]
 "alibaba/GPU-scheduler-for-deep-learning" ["l"="7.328,-11.176"]
-"tensorflow/mesh" ["l"="45.702,25.677"]
-"sail-sg/zero-bubble-pipeline-parallelism" ["l"="38.894,-0.45"]
-"microsoft/mscclpp" ["l"="2.009,14.543"]
-"NVIDIA/TransformerEngine" ["l"="38.884,-0.512"]
+"sail-sg/zero-bubble-pipeline-parallelism" ["l"="38.894,-0.45", "c"=39]
+"microsoft/mscclpp" ["l"="2.009,14.543", "c"=572]
+"NVIDIA/TransformerEngine" ["l"="38.884,-0.512", "c"=39]
 "wilicc/gpu-burn" ["l"="7.277,-11.449"]
-"NVIDIA/nccl-tests" ["l"="1.965,14.459"]
-"NVIDIA/nccl" ["l"="38.96,-0.676"]
-"XuehaiPan/nvitop" ["l"="38.884,-0.793"]
+"NVIDIA/nccl-tests" ["l"="1.965,14.459", "c"=572]
+"NVIDIA/nccl" ["l"="38.96,-0.676", "c"=39]
+"XuehaiPan/nvitop" ["l"="38.884,-0.793", "c"=39]
 "ComputationalRadiationPhysics/cuda_memtest" ["l"="7.298,-11.506"]
-"Syllo/nvtop" ["l"="50.872,29.532"]
-"NVIDIA/cuda-samples" ["l"="38.941,-0.786"]
-"NVIDIA/nvbandwidth" ["l"="1.998,14.495"]
-"mli/transformers-benchmarks" ["l"="38.839,-0.555"]
-"wookayin/gpustat" ["l"="50.961,29.669"]
+"Syllo/nvtop" ["l"="50.872,29.532", "c"=83]
+"NVIDIA/cuda-samples" ["l"="38.941,-0.786", "c"=39]
+"NVIDIA/nvbandwidth" ["l"="1.998,14.495", "c"=572]
+"mli/transformers-benchmarks" ["l"="38.839,-0.555", "c"=39]
+"wookayin/gpustat" ["l"="50.961,29.669", "c"=83]
 "virtaitech/orion" ["l"="7.314,-11.282"]
 "RWTH-ACS/cricket" ["l"="7.358,-11.25"]
-"microsoft/hivedscheduler" ["l"="7.353,-11.185"]
-"sql-machine-learning/elasticdl" ["l"="7.315,-11.188"]
-"petuum/adaptdl" ["l"="7.35,-11.154"]
-"kleveross/ftlib" ["l"="8.129,-10.018"]
+"kleveross/ftlib" ["l"="8.129,-10.018", "c"=14]
 "SymbioticLab/Tiresias" ["l"="7.343,-11.133"]
-"msr-fiddle/philly-traces" ["l"="7.318,-11.149"]
-"elasticdeeplearning/edl" ["l"="8.166,-10.105"]
+"elasticdeeplearning/edl" ["l"="8.166,-10.105", "c"=14]
 "stanford-futuredata/gavel" ["l"="7.336,-11.14"]
-"S-Lab-System-Group/Awesome-DL-Scheduling-Papers" ["l"="7.318,-11.124"]
 "AliyunContainerService/et-operator" ["l"="7.209,-11.217"]
-"kubernetes-retired/poseidon" ["l"="8.094,-9.367"]
+"kubernetes-retired/poseidon" ["l"="8.094,-9.367", "c"=14]
+"tony-framework/TonY" ["l"="57.864,23.433", "c"=161]
+"Yours3lf/rpi-vk-driver" ["l"="42.966,7.832", "c"=818]
+"NVIDIA/open-gpu-doc" ["l"="7.577,-11.275"]
+"SJTU-IPADS/wukong" ["l"="-17.742,-28.257", "c"=62]
+"SJTU-IPADS/reef" ["l"="7.251,-11.147"]
 "nickbabcock/OhmGraphite" ["l"="7.155,-11.467"]
 "kallex/PromDapter" ["l"="7.104,-11.507"]
-"prometheus-community/windows_exporter" ["l"="9.407,-10.693"]
+"prometheus-community/windows_exporter" ["l"="9.407,-10.693", "c"=484]
 "utkuozdemir/nvidia_gpu_exporter" ["l"="7.241,-11.435"]
-"Boerderij/Varken" ["l"="12.655,-6.537"]
-"NVIDIA/open-gpu-doc" ["l"="7.577,-11.275"]
+"Boerderij/Varken" ["l"="12.655,-6.537", "c"=67]
 "envytools/envytools" ["l"="7.498,-11.277"]
-"NervanaSystems/maxas" ["l"="36.924,0.876"]
-"GPUOpen-Drivers/AMDVLK" ["l"="-23.445,-27.723"]
-"GPUOpen-Drivers/pal" ["l"="-23.439,-27.779"]
-"NVlabs/NVBit" ["l"="30.968,-2.981"]
-"cloudcores/CuAssembler" ["l"="36.931,0.931"]
-"gpgpu-sim/gpgpu-sim_distribution" ["l"="31.034,-2.965"]
-"Yours3lf/rpi-vk-driver" ["l"="42.966,7.832"]
+"NervanaSystems/maxas" ["l"="36.924,0.876", "c"=112]
+"GPUOpen-Drivers/AMDVLK" ["l"="-23.445,-27.723", "c"=26]
+"GPUOpen-Drivers/pal" ["l"="-23.439,-27.779", "c"=26]
+"NVlabs/NVBit" ["l"="30.968,-2.981", "c"=1037]
+"cloudcores/CuAssembler" ["l"="36.931,0.931", "c"=112]
+"gpgpu-sim/gpgpu-sim_distribution" ["l"="31.034,-2.965", "c"=1037]
 "skeggsb/nouveau" ["l"="7.546,-11.274"]
-"microsoft/DirectX-Specs" ["l"="-23.231,-27.644"]
-"CaffeineViking/vkhr" ["l"="-23.127,-27.759"]
-"NVIDIA/libcudacxx" ["l"="36.656,0.981"]
-"KhronosGroup/VK-GL-CTS" ["l"="-23.483,-27.707"]
-"NVIDIA/open-gpu-kernel-modules" ["l"="-14.222,-0.729"]
-"microsoft/frameworkcontroller" ["l"="7.417,-11.225"]
+"microsoft/DirectX-Specs" ["l"="-23.231,-27.644", "c"=26]
+"CaffeineViking/vkhr" ["l"="-23.127,-27.759", "c"=26]
+"NVIDIA/libcudacxx" ["l"="36.656,0.981", "c"=112]
+"KhronosGroup/VK-GL-CTS" ["l"="-23.483,-27.707", "c"=26]
+"NVIDIA/open-gpu-kernel-modules" ["l"="-14.222,-0.729", "c"=152]
 "open-intelligence/qizhi" ["l"="7.45,-11.26"]
 "microsoft/KubeGPU" ["l"="7.513,-11.325"]
 "microsoft/KubeDevice" ["l"="7.538,-11.35"]
 "microsoft/DLWorkspace" ["l"="7.471,-11.278"]
+"AliyunContainerService/kubernetes-cronhpa-controller" ["l"="8.056,-9.381", "c"=14]
 "IBM/kube-safe-scheduler" ["l"="7.453,-11.427"]
 "akanso/extending-kube-scheduler" ["l"="7.474,-11.446"]
 "mcanini/SysML-reading-list" ["l"="7.413,-10.958"]
@@ -1245,13 +1432,21 @@ digraph G {
 "NVIDIA/go-gpuallocator" ["l"="7.173,-11.347"]
 "volcano-sh/devices" ["l"="7.189,-11.264"]
 "pokerfaceSad/GPUMounter" ["l"="7.212,-11.283"]
+"HustAIsGroup/CDBTune" ["l"="1.822,13.62", "c"=376]
+"shxinding/ResTune" ["l"="7.238,-10.823"]
+"PKU-DAIR/DBTune" ["l"="7.26,-10.89"]
+"kubeflow/mpi-operator" ["l"="8.124,-9.469", "c"=14]
 "jaywonchung/Learning-ML" ["l"="7.487,-10.968"]
 "jaywonchung/ShadowTutor" ["l"="7.478,-10.989"]
+"mosharaf/eecs598" ["l"="39.199,-0.433", "c"=39]
+"SymbioticLab/Oobleck" ["l"="7.321,-11.036"]
+"microsoft/Freeflow" ["l"="1.874,14.437", "c"=572]
+"joyq-github/TensorFlowonK8s" ["l"="7.494,-11.304"]
+"Stonesjtu/pytorch_memlab" ["l"="50.741,29.947", "c"=83]
 "S-Lab-System-Group/HeliosData" ["l"="7.336,-11.124"]
 "S-Lab-System-Group/Lucid" ["l"="7.302,-11.128"]
-"hkust-adsl/kubernetes-scheduler-simulator" ["l"="7.328,-11.107"]
 "Rivendile/Muri" ["l"="7.304,-11.151"]
-"InternLM/AcmeTrace" ["l"="38.762,-1.784"]
+"InternLM/AcmeTrace" ["l"="38.762,-1.784", "c"=202]
 "microsoft/elasticflow-traces" ["l"="7.326,-11.135"]
 "msr-fiddle/synergy" ["l"="7.316,-11.135"]
 "eth-easl/orion" ["l"="7.297,-11.183"]
@@ -1259,44 +1454,48 @@ digraph G {
 "angao/scheduler-framework-sample" ["l"="7.403,-11.365"]
 "kelseyhightower/scheduler" ["l"="7.427,-11.424"]
 "cnych/sample-scheduler-framework" ["l"="7.421,-11.37"]
+"FC-Li/CloudSimPy" ["l"="63.158,-12.641", "c"=1127]
+"DIR-LAB/deep-batch-scheduler" ["l"="7.457,-11.105"]
 "pkusys/ElasticFlow" ["l"="7.319,-11.157"]
 "SymbioticLab/ModelKeeper" ["l"="7.341,-11.092"]
 "uw-mad-dash/shockwave" ["l"="7.366,-11.126"]
 "S-Lab-System-Group/HeliosArtifact" ["l"="7.315,-11.11"]
-"SymbioticLab/Justitia" ["l"="1.92,14.282"]
+"SymbioticLab/Justitia" ["l"="1.92,14.282", "c"=572]
 "yylin1/papers-notebook-with-scheduling" ["l"="7.386,-11.1"]
 "pengyanghua/optimus" ["l"="7.38,-11.14"]
 "pengyanghua/DL2" ["l"="7.401,-11.117"]
 "kzhang28/Optimus" ["l"="7.384,-11.125"]
 "hiddenlayer2020/ML-Job-Scheduler-MLFS" ["l"="7.399,-11.132"]
-"Mellanox/k8s-rdma-shared-dev-plugin" ["l"="8.356,-9.508"]
-"k8snetworkplumbingwg/sriov-network-device-plugin" ["l"="8.345,-9.455"]
+"tensorflow/custom-op" ["l"="45.668,25.628", "c"=68]
+"intel/intel-device-plugins-for-kubernetes" ["l"="8.305,-9.503", "c"=14]
+"kubevirt/containerized-data-importer" ["l"="8.264,-9.391", "c"=14]
+"Mellanox/k8s-rdma-shared-dev-plugin" ["l"="8.356,-9.508", "c"=14]
+"k8snetworkplumbingwg/sriov-network-device-plugin" ["l"="8.345,-9.455", "c"=14]
 "shinpei0208/gdev" ["l"="7.417,-11.263"]
-"GPUOpen-Tools/radeon_gpu_analyzer" ["l"="-23.348,-27.767"]
+"GPUOpen-Tools/radeon_gpu_analyzer" ["l"="-23.348,-27.767", "c"=26]
 "CAmadeus/falcon-tools" ["l"="7.56,-11.308"]
 "CPFL/gdev" ["l"="7.47,-11.258"]
-"sunriseos/SunriseOS" ["l"="-14.089,2.404"]
-"NVlabs/SASSI" ["l"="30.934,-3.006"]
+"sunriseos/SunriseOS" ["l"="-14.089,2.404", "c"=149]
+"NVlabs/SASSI" ["l"="30.934,-3.006", "c"=1037]
 "dalance/prosafe_exporter" ["l"="7.26,-11.645"]
 "DRuggeri/netgear_client" ["l"="7.244,-11.632"]
 "mpickpt/mana" ["l"="7.479,-11.233"]
 "DMTCP-CRAC/CRAC-early-development" ["l"="7.437,-11.238"]
 "marysaka/ghidra_falcon" ["l"="7.589,-11.324"]
-"DIR-LAB/deep-batch-scheduler" ["l"="7.457,-11.105"]
 "renatolfc/sched-rl-gym" ["l"="7.481,-11.1"]
 "lsds/KungFu" ["l"="7.353,-11.112"]
 "lsds/Crossbow" ["l"="7.394,-11.079"]
-"marius-team/marius" ["l"="1.561,14.44"]
-"quiver-team/torch-quiver" ["l"="1.523,14.427"]
-"facebookresearch/stochastic_gradient_push" ["l"="51.406,2.403"]
+"marius-team/marius" ["l"="1.561,14.44", "c"=572]
+"quiver-team/torch-quiver" ["l"="1.523,14.427", "c"=572]
+"facebookresearch/stochastic_gradient_push" ["l"="51.406,2.403", "c"=663]
 "petuum/autodist" ["l"="7.413,-11.101"]
-"sands-lab/grace" ["l"="51.463,2.38"]
+"sands-lab/grace" ["l"="51.463,2.38", "c"=663]
 "parasj/checkmate" ["l"="7.36,-11.009"]
 "open-intelligence/OpenI-Octopus" ["l"="7.468,-11.299"]
 "tankbusta/nvidia_exporter" ["l"="7.206,-11.634"]
 "stanford-mast/INFaaS" ["l"="7.284,-11.14"]
 "jashwantraj92/cocktail" ["l"="7.253,-11.122"]
-"Sys-KU/DeepPlan" ["l"="1.689,14.134"]
+"Sys-KU/DeepPlan" ["l"="1.689,14.134", "c"=572]
 "thomas-young-2013/open-box" ["l"="7.216,-10.919"]
 "thomas-young-2013/mindware" ["l"="7.206,-10.905"]
 "PKU-DAIR/mindware" ["l"="7.231,-10.922"]
@@ -1305,49 +1504,54 @@ digraph G {
 "RapidProjectH2020/GVirtuS" ["l"="7.322,-11.258"]
 "raffmont/GVirtuS" ["l"="7.355,-11.264"]
 "NVIDIA/vgpu-device-manager" ["l"="7.139,-11.352"]
-"Mellanox/network-operator" ["l"="8.39,-9.513"]
-"NVIDIA/TensorRT-LLM" ["l"="38.92,-0.621"]
-"NVIDIA/cccl" ["l"="36.699,0.959"]
-"NVIDIA/GenerativeAIExamples" ["l"="41.12,0.401"]
+"Mellanox/network-operator" ["l"="8.39,-9.513", "c"=14]
+"NVIDIA/TensorRT-LLM" ["l"="38.92,-0.621", "c"=39]
+"NVIDIA/cccl" ["l"="36.699,0.959", "c"=112]
+"NVIDIA/GenerativeAIExamples" ["l"="41.12,0.401", "c"=7]
+"tkestack/tke" ["l"="8.053,-9.359", "c"=14]
+"tkestack/galaxy" ["l"="7.373,-11.4"]
 "petuum/tuun" ["l"="7.443,-11.068"]
 "asyml/stave" ["l"="7.454,-11.08"]
+"fluid-cloudnative/fluid" ["l"="8.097,-9.346", "c"=14]
 "PKU-DAIR/Hetu" ["l"="7.263,-10.95"]
-"snuspl/nimble" ["l"="36.995,0.727"]
+"snuspl/nimble" ["l"="36.995,0.727", "c"=112]
 "hku-systems/vpipe" ["l"="7.342,-11.035"]
-"SymbioticLab/Oobleck" ["l"="7.321,-11.036"]
 "Mr-Linus/SCV" ["l"="7.418,-11.349"]
 "Mr-Linus/NodeSimulator" ["l"="7.404,-11.352"]
-"gocrane/crane-scheduler" ["l"="8.044,-9.415"]
+"gocrane/crane-scheduler" ["l"="8.044,-9.415", "c"=14]
 "heyfey/vodascheduler" ["l"="7.434,-11.354"]
-"dmtcp/dmtcp" ["l"="7.521,-11.222"]
+"kelseyhightower/intro-to-kubernetes-workshop" ["l"="10.323,-10.013", "c"=740]
 "leobago/fti" ["l"="7.557,-11.214"]
-"checkpoint-restore/criu" ["l"="8.379,-9.047"]
-"NERSC/shifter" ["l"="7.208,-13.763"]
+"NERSC/shifter" ["l"="7.208,-13.763", "c"=893]
 "tkestack/go-nvml" ["l"="7.358,-11.4"]
 "tkestack/csi-operator" ["l"="7.36,-11.413"]
+"lxc/lxcfs" ["l"="8.213,-9.209", "c"=14]
+"DRuggeri/nut_exporter" ["l"="9.584,-10.764", "c"=484]
 "NVIDIA/cloud-native-stack" ["l"="7.227,-11.231"]
 "NVIDIA/k8s-nim-operator" ["l"="7.212,-11.247"]
-"NVIDIA/DeepLearningExamples" ["l"="50.583,29.53"]
-"NVIDIA/CUDALibrarySamples" ["l"="36.745,0.894"]
-"NVIDIA/cub" ["l"="36.72,0.942"]
-"NVIDIA-Merlin/HugeCTR" ["l"="58.146,23.558"]
-"NVIDIA/cudnn-frontend" ["l"="36.877,0.989"]
-"DeepRec-AI/DeepRec" ["l"="58.15,23.519"]
-"tensorflow/tensorrt" ["l"="53.102,32.65"]
-"pytorch/TensorRT" ["l"="53.262,32.686"]
-"tensorflow/runtime" ["l"="45.651,25.641"]
-"tkestack/galaxy" ["l"="7.373,-11.4"]
+"NVIDIA/DeepLearningExamples" ["l"="50.583,29.53", "c"=83]
+"NVIDIA/CUDALibrarySamples" ["l"="36.745,0.894", "c"=112]
+"NVIDIA/cub" ["l"="36.72,0.942", "c"=112]
+"NVIDIA-Merlin/HugeCTR" ["l"="58.146,23.558", "c"=161]
+"NVIDIA/cudnn-frontend" ["l"="36.877,0.989", "c"=112]
+"DeepRec-AI/DeepRec" ["l"="58.15,23.519", "c"=161]
+"tensorflow/tensorrt" ["l"="53.102,32.65", "c"=251]
+"pytorch/TensorRT" ["l"="53.262,32.686", "c"=251]
+"tensorflow/runtime" ["l"="45.651,25.641", "c"=68]
+"couler-proj/couler" ["l"="7.795,-9.535", "c"=14]
 "tkestack/tapp" ["l"="7.387,-11.425"]
 "tkestack/lb-controlling-framework" ["l"="7.366,-11.425"]
 "tkestack/volume-decorator" ["l"="7.376,-11.416"]
 "tkestack/docs" ["l"="7.377,-11.441"]
 "NTHU-LSALAB/KubeShare" ["l"="7.338,-11.274"]
-"tkestack/tke" ["l"="8.053,-9.359"]
 "cnych/sample-scheduler-extender" ["l"="7.447,-11.384"]
+"cncf-tags/container-device-interface" ["l"="8.171,-9.405", "c"=14]
+"NVIDIA/k8s-dra-driver-gpu" ["l"="7.243,-11.279"]
 "run-ai/runai" ["l"="7.09,-11.327"]
 "run-ai/docs" ["l"="7.115,-11.327"]
 "run-ai/rntop" ["l"="7.111,-11.31"]
 "Bruce-Lee-LY/cuda_hook" ["l"="7.346,-11.245"]
+"pytorch/elastic" ["l"="8.256,-9.478", "c"=14]
 "k82cn/kubesim" ["l"="7.152,-11.232"]
 "volcano-sh/apis" ["l"="7.138,-11.247"]
 "Project-HAMi/volcano-vgpu-device-plugin" ["l"="7.231,-11.263"]
@@ -1355,9 +1559,9 @@ digraph G {
 "asyml/forte" ["l"="7.47,-11.061"]
 "asyml/ForteHealth" ["l"="7.495,-11.047"]
 "NVIDIA/ais-etl" ["l"="7.202,-11.559"]
-"laanwj/decuda" ["l"="36.967,0.947"]
+"laanwj/decuda" ["l"="36.967,0.947", "c"=112]
 "CPFL/gxen" ["l"="7.443,-11.279"]
-"ekondis/gpumembench" ["l"="64.147,-2.054"]
+"ekondis/gpumembench" ["l"="64.147,-2.054", "c"=477]
 "coldfunction/qCUDA" ["l"="7.358,-11.229"]
 "microsoft/SuperScaler" ["l"="7.271,-10.998"]
 "ParCIS/Chimera" ["l"="7.289,-11.016"]
@@ -1366,10 +1570,12 @@ digraph G {
 "darchr/AutoTM" ["l"="7.37,-10.986"]
 "ShishirPatil/poet" ["l"="7.367,-10.959"]
 "parasj/papers" ["l"="7.387,-10.993"]
+"shikanon/kubeflow-manifests" ["l"="8.117,-9.775", "c"=14]
 "apulis/Apulis-AI-Platform" ["l"="7.528,-11.303"]
 "zhejianglab/QianJiangYuan" ["l"="7.553,-11.327"]
 "tkestack/kube-jarvis" ["l"="7.366,-11.453"]
-"NVIDIA/cuda-checkpoint" ["l"="7.305,-11.254"]
+"hongzimao/decima-sim" ["l"="63.176,-13.357", "c"=1233]
+"kleveross/ormb" ["l"="8.118,-9.923", "c"=14]
 "gvirtus/GVirtuS" ["l"="7.284,-11.265"]
 "SJTU-IPADS/PhoenixOS" ["l"="7.377,-11.265"]
 "EBD-CREST/mrCUDA" ["l"="7.389,-11.236"]
@@ -1392,88 +1598,104 @@ digraph G {
 "4paradigm/zetasql" ["l"="7.479,-11.586"]
 "AliyunContainerService/benchmark-for-spark" ["l"="7.193,-11.192"]
 "AliyunContainerService/roadmap" ["l"="7.178,-11.188"]
+"dragonflyoss/dragonfly" ["l"="8.05,-9.243", "c"=14]
 "a0s/nvidia-smi-exporter" ["l"="7.253,-11.486"]
-"ncabatoff/process-exporter" ["l"="9.421,-10.649"]
-"vpenso/prometheus-slurm-exporter" ["l"="7.123,-13.842"]
-"prometheus/snmp_exporter" ["l"="9.402,-10.658"]
+"ncabatoff/process-exporter" ["l"="9.421,-10.649", "c"=484]
+"vpenso/prometheus-slurm-exporter" ["l"="7.123,-13.842", "c"=893]
+"prometheus/snmp_exporter" ["l"="9.402,-10.658", "c"=484]
 "NVIDIA/go-dcgm" ["l"="7.207,-11.327"]
-"Mellanox/nv_peer_memory" ["l"="1.935,14.485"]
-"NVIDIA/nvidia-resiliency-ext" ["l"="38.5,-0.255"]
-"Mellanox/nccl-rdma-sharp-plugins" ["l"="1.976,14.5"]
-"AlibabaPAI/llumnix" ["l"="39.053,-0.433"]
-"mej/nhc" ["l"="7.125,-13.829"]
-"pytorch/kineto" ["l"="39.097,-0.468"]
-"google/nccl-fastsocket" ["l"="1.993,14.511"]
+"superedge/superedge" ["l"="7.998,-9.317", "c"=14]
+"Mellanox/nv_peer_memory" ["l"="1.935,14.485", "c"=572]
+"NVIDIA/nvidia-resiliency-ext" ["l"="38.5,-0.255", "c"=39]
+"Mellanox/nccl-rdma-sharp-plugins" ["l"="1.976,14.5", "c"=572]
+"AlibabaPAI/llumnix" ["l"="39.053,-0.433", "c"=39]
+"mej/nhc" ["l"="7.125,-13.829", "c"=893]
+"pytorch/kineto" ["l"="39.097,-0.468", "c"=39]
+"google/nccl-fastsocket" ["l"="1.993,14.511", "c"=572]
+"ray-project/kuberay" ["l"="45.237,25.683", "c"=68]
+"google/cluster-data" ["l"="63.22,-12.601", "c"=1127]
+"tencentmusic/cube-studio" ["l"="-2.377,15.09", "c"=43]
 "4paradigm/openaios-platform" ["l"="7.392,-11.477"]
+"tkestack/kvass" ["l"="8.023,-9.381", "c"=14]
+"kubernetes-sigs/kube-scheduler-simulator" ["l"="7.974,-9.388", "c"=14]
 "cnstark/gputasker" ["l"="7.017,-11.274"]
 "cnstark/gpueater" ["l"="6.989,-11.277"]
+"uclasystem/dorylus" ["l"="1.579,14.396", "c"=572]
 "PKU-DAIR/GAMLP" ["l"="7.274,-10.862"]
 "zwt233/NDLS" ["l"="7.28,-10.834"]
+"baidu/EasyFaaS" ["l"="-17.147,-44.947", "c"=550]
+"PersiaML/PERSIA" ["l"="58.151,23.6", "c"=161]
 "4paradigm/pafka" ["l"="7.424,-11.584"]
 "4paradigm/OpenEmbedding" ["l"="7.41,-11.536"]
 "decis-bench/febench" ["l"="7.434,-11.621"]
+"Jack47/hack-SysML" ["l"="36.967,0.924", "c"=112]
+"microsoft/superbenchmark" ["l"="2.033,14.532", "c"=572]
 "Hsword/Hetu" ["l"="7.241,-10.936"]
 "AFDWang/Hetu-Galvatron" ["l"="7.233,-10.952"]
 "PKU-DAIR/Hetu-Galvatron" ["l"="7.241,-10.881"]
 "PKU-DAIR/SGL" ["l"="7.26,-10.911"]
-"ConnollyLeon/awesome-Auto-Parallelism" ["l"="38.906,-0.59"]
-"feifeibear/long-context-attention" ["l"="38.982,-0.409"]
-"alibaba/EasyParallelLibrary" ["l"="58.143,23.672"]
-"PKU-DAIR/DBTune" ["l"="7.26,-10.89"]
+"ConnollyLeon/awesome-Auto-Parallelism" ["l"="38.906,-0.59", "c"=39]
+"feifeibear/long-context-attention" ["l"="38.982,-0.409", "c"=39]
+"alibaba/EasyParallelLibrary" ["l"="58.143,23.672", "c"=161]
 "HPDL-Group/Merak" ["l"="7.297,-10.996"]
-"uber-research/TuRBO" ["l"="45.98,26.24"]
-"automl/ConfigSpace" ["l"="45.855,26.329"]
-"Tencent/TencentKonaSMSuite" ["l"="-22.291,14.52"]
-"NVIDIA/k8s-dra-driver-gpu" ["l"="7.243,-11.279"]
-"cncf-tags/container-device-interface" ["l"="8.171,-9.405"]
-"containerd/nri" ["l"="8.168,-9.345"]
-"tunib-ai/oslo" ["l"="-5.196,-23.256"]
-"Hsword/SpotServe" ["l"="39.108,-0.399"]
+"uber-research/TuRBO" ["l"="45.98,26.24", "c"=68]
+"automl/ConfigSpace" ["l"="45.855,26.329", "c"=68]
+"Tencent/TencentKonaSMSuite" ["l"="-22.291,14.52", "c"=412]
+"containerd/nri" ["l"="8.168,-9.345", "c"=14]
+"tunib-ai/oslo" ["l"="-5.196,-23.256", "c"=164]
+"Hsword/SpotServe" ["l"="39.108,-0.399", "c"=39]
 "DS3Lab/DT-FM" ["l"="7.373,-11.028"]
 "JF-D/Parcae" ["l"="7.335,-11.021"]
 "elastic-ai/elastic-gpu-agent" ["l"="7.355,-11.343"]
 "elastic-ai/elastic-gpu-exporter" ["l"="7.369,-11.356"]
 "volcano-sh/resource-exporter" ["l"="7.115,-11.242"]
 "volcano-sh/volcano-global" ["l"="7.097,-11.249"]
+"shenango/caladan" ["l"="1.802,14.307", "c"=572]
+"itrummer/dbbert" ["l"="1.814,13.683", "c"=376]
+"CUAI/CorrectAndSmooth" ["l"="52.488,16.026", "c"=100]
 "jaywonchung/reason" ["l"="7.426,-11.022"]
-"jaywonchung/dotfiles" ["l"="36.978,0.683"]
+"jaywonchung/dotfiles" ["l"="36.978,0.683", "c"=112]
 "ml-energy/leaderboard" ["l"="7.4,-11.041"]
 "pkusys/TGS" ["l"="7.305,-11.211"]
 "S-Lab-System-Group/ChronusArtifact" ["l"="7.366,-11.105"]
 "swsnu/osspr2021" ["l"="7.506,-10.966"]
-"SJTU-IPADS/reef" ["l"="7.251,-11.147"]
 "Raphael-Hao/Abacus" ["l"="7.342,-11.169"]
 "SJTU-IPADS/reef-artifacts" ["l"="7.257,-11.163"]
 "geoffxy/habitat" ["l"="7.258,-11.087"]
-"ringtail/snout" ["l"="8.2,-9.615"]
+"ringtail/snout" ["l"="8.2,-9.615", "c"=14]
 "SymbioticLab/Fluid" ["l"="7.372,-11.08"]
 "dbpunk-labs/db3.js" ["l"="7.513,-11.632"]
-"spidernet-io/spiderpool" ["l"="7.779,-9.563"]
-"kubean-io/kubean" ["l"="7.755,-9.549"]
-"kubernetes-sigs/lws" ["l"="7.886,-9.55"]
+"spidernet-io/spiderpool" ["l"="7.779,-9.563", "c"=14]
+"kubean-io/kubean" ["l"="7.755,-9.549", "c"=14]
+"kubernetes-sigs/lws" ["l"="7.886,-9.55", "c"=14]
 "nebuly-ai/nos" ["l"="7.348,-11.299"]
 "nebuly-ai/k8s-device-plugin" ["l"="7.38,-11.314"]
 "nebuly-ai/exploring-AI-optimization" ["l"="7.436,-11.329"]
 "awslabs/aws-virtual-gpu-device-plugin" ["l"="7.407,-11.325"]
-"kubeflow/mpi-operator" ["l"="8.124,-9.469"]
 "NVIDIA/mig-parted" ["l"="7.418,-11.303"]
+"tensorchord/envd" ["l"="8.103,-9.459", "c"=14]
 "cnstark/pytorch-docker" ["l"="6.92,-11.275"]
 "anibali/docker-pytorch" ["l"="6.87,-11.275"]
 "skyplane-project/skyplane" ["l"="7.338,-10.951"]
-"skypilot-org/skypilot" ["l"="38.822,-0.668"]
+"skypilot-org/skypilot" ["l"="38.822,-0.668", "c"=39]
 "RunLLM/aqueduct" ["l"="7.36,-10.907"]
-"alpa-projects/alpa" ["l"="38.879,-0.61"]
-"balsa-project/balsa" ["l"="1.889,13.647"]
-"datafusion-contrib/ray-sql" ["l"="-0.366,14.807"]
-"hydro-project/cloudburst" ["l"="63.402,-12.477"]
-"developmentseed/obstore" ["l"="40.53,25.433"]
-"efeslab/Nanoflow" ["l"="39.005,-0.418"]
-"RulinShao/LightSeq" ["l"="38.944,-0.474"]
+"alpa-projects/alpa" ["l"="38.879,-0.61", "c"=39]
+"balsa-project/balsa" ["l"="1.889,13.647", "c"=376]
+"datafusion-contrib/ray-sql" ["l"="-0.366,14.807", "c"=729]
+"hydro-project/cloudburst" ["l"="63.402,-12.477", "c"=1127]
+"developmentseed/obstore" ["l"="40.53,25.433", "c"=420]
+"efeslab/Nanoflow" ["l"="39.005,-0.418", "c"=39]
+"RulinShao/LightSeq" ["l"="38.944,-0.474", "c"=39]
 "romilbhardwaj/kube-tutorial" ["l"="7.328,-10.92"]
-"microsoft/vidur" ["l"="39.084,-0.418"]
+"microsoft/vidur" ["l"="39.084,-0.418", "c"=39]
+"Tencent/caelus" ["l"="8.076,-9.383", "c"=14]
 "nebuly-ai/nebuly-ai" ["l"="7.465,-11.347"]
+"codecaution/Awesome-Mixture-of-Experts-Papers" ["l"="38.648,-0.468", "c"=39]
 "HFAiLab/hfai-models" ["l"="7.097,-11.222"]
 "HFAiLab/ffrecord" ["l"="7.071,-11.213"]
+"run-house/runhouse" ["l"="21.468,14.193", "c"=267]
+"Shenggan/awesome-distributed-ml" ["l"="39.029,-0.669", "c"=39]
+"kstone-io/kstone" ["l"="8.04,-9.377", "c"=14]
 "dbpunk-labs/db3" ["l"="7.543,-11.677"]
 "dbpunk-labs/octogen" ["l"="7.566,-11.711"]
 "HFAiLab/LTSF-formers" ["l"="7.037,-11.213"]
@@ -1481,10 +1703,14 @@ digraph G {
 "HFAiLab/alphafold-optimized" ["l"="7.05,-11.201"]
 "HFAiLab/pytorch_distributed" ["l"="7.051,-11.186"]
 "grgalex/nvshare" ["l"="7.285,-11.25"]
-"LineaLabs/lineapy" ["l"="40.628,-2.6"]
-"erdos-project/erdos" ["l"="62.609,12.328"]
+"LineaLabs/lineapy" ["l"="40.628,-2.6", "c"=146]
+"erdos-project/erdos" ["l"="62.609,12.328", "c"=461]
 "ucbrise/flor" ["l"="7.372,-10.859"]
+"alibaba/open-simulator" ["l"="7.989,-9.508", "c"=14]
 "DicardoX/Research-Space" ["l"="7.37,-11.061"]
+"AmberLJC/FLsystem-paper" ["l"="63.481,-13.601", "c"=1233]
+"google/learned_optimization" ["l"="21.783,13.985", "c"=267]
+"run-ai/genv" ["l"="7.136,-11.296"]
 "msr-fiddle/blox" ["l"="7.285,-11.112"]
 "siasosp23/artifacts" ["l"="7.297,-11.099"]
 "S-Lab-System-Group/Awesome-ML-for-System" ["l"="7.271,-11.105"]
@@ -1494,73 +1720,88 @@ digraph G {
 "volcano-sh/dashboard" ["l"="7.063,-11.245"]
 "volcano-sh/descheduler" ["l"="7.07,-11.257"]
 "uw-mad-dash/llamatune" ["l"="7.246,-10.847"]
-"shxinding/ResTune" ["l"="7.238,-10.823"]
 "SJTU-IPADS/disb" ["l"="7.23,-11.149"]
 "casys-kaist/glet" ["l"="7.192,-11.108"]
 "icloud-ecnu/igniter" ["l"="7.104,-11.05"]
 "icloud-ecnu/Cloudsim" ["l"="7.097,-11.069"]
 "jaywonchung/pegasus" ["l"="7.506,-10.987"]
-"run-ai/genv" ["l"="7.136,-11.296"]
-"NVIDIA/KAI-Scheduler" ["l"="7.18,-11.303"]
 "run-ai/runai-model-streamer" ["l"="7.112,-11.29"]
 "run-ai/fake-gpu-operator" ["l"="7.134,-11.318"]
-"xl0/lovely-tensors" ["l"="21.694,14.118"]
+"xl0/lovely-tensors" ["l"="21.694,14.118", "c"=267]
 "run-ai/jupyterlab_genv" ["l"="7.094,-11.286"]
-"google/learned_optimization" ["l"="21.783,13.985"]
+"alibaba/feathub" ["l"="-2.686,15.144", "c"=43]
+"4paradigm/FeatInsight" ["l"="7.428,-11.645"]
+"PufferAI/PufferLib" ["l"="59.256,17.432", "c"=169]
+"imbue-ai/carbs" ["l"="7.462,-11.144"]
+"lambda7xx/awesome-AI-system" ["l"="39.065,-0.423", "c"=39]
+"intelligent-machine-learning/dlrover" ["l"="38.985,-0.515", "c"=39]
 "Juice-Labs/Juice-Labs" ["l"="7.454,-11.214"]
 "kevmo314/scuda" ["l"="7.477,-11.19"]
+"openai/kubernetes-ec2-autoscaler" ["l"="10.291,-10.025", "c"=740]
+"mit-han-lab/tiny-training" ["l"="-16.185,-42.545", "c"=387]
+"facebookresearch/HolisticTraceAnalysis" ["l"="39.082,-0.447", "c"=39]
 "ml-energy/zeus" ["l"="7.353,-11.075"]
-"HPMLL/BurstGPT" ["l"="39.087,-0.409"]
-"Raphael-Hao/brainstorm" ["l"="39.179,-0.363"]
-"uclasystem/VQPy" ["l"="1.589,14.319"]
-"uclasystem/dorylus" ["l"="1.579,14.396"]
-"uclasystem/MemLiner" ["l"="1.649,14.349"]
-"vqpy/vqpy" ["l"="1.615,14.329"]
-"4paradigm/FeatInsight" ["l"="7.428,-11.645"]
+"HPMLL/BurstGPT" ["l"="39.087,-0.409", "c"=39]
+"Raphael-Hao/brainstorm" ["l"="39.179,-0.363", "c"=39]
+"uclasystem/VQPy" ["l"="1.589,14.319", "c"=572]
+"uclasystem/MemLiner" ["l"="1.649,14.349", "c"=572]
+"vqpy/vqpy" ["l"="1.615,14.329", "c"=572]
 "memark-io/pmedis" ["l"="7.448,-11.641"]
-"alibaba/open-simulator" ["l"="7.989,-9.508"]
+"gorilla-llm/gorilla-cli" ["l"="41.187,-3.856", "c"=146]
+"AmadeusChan/Awesome-LLM-System-Papers" ["l"="39.028,-0.42", "c"=39]
 "HFAiLab/hai-platform" ["l"="7.159,-11.27"]
 "HFAiLab/hai-platform-studio" ["l"="7.129,-11.229"]
-"intelligent-machine-learning/dlrover" ["l"="38.985,-0.515"]
-"Mellanox/k8s-rdma-sriov-dev-plugin" ["l"="8.369,-9.5"]
-"kvcache-ai/Mooncake" ["l"="39.029,-0.539"]
-"WeBankFinTech/Prophecis" ["l"="-2.363,15.02"]
-"kubernetes-sigs/dra-example-driver" ["l"="7.985,-9.534"]
+"Mellanox/k8s-rdma-sriov-dev-plugin" ["l"="8.369,-9.5", "c"=14]
+"kvcache-ai/Mooncake" ["l"="39.029,-0.539", "c"=39]
+"WeBankFinTech/Prophecis" ["l"="-2.363,15.02", "c"=43]
+"kubernetes-sigs/dra-example-driver" ["l"="7.985,-9.534", "c"=14]
 "NVIDIA/nvkind" ["l"="7.189,-11.233"]
-"ferryproxy/ferry" ["l"="7.767,-9.567"]
-"kdoctor-io/kdoctor" ["l"="7.772,-9.548"]
+"ferryproxy/ferry" ["l"="7.767,-9.567", "c"=14]
+"kdoctor-io/kdoctor" ["l"="7.772,-9.548", "c"=14]
+"hustcat/sriov-cni" ["l"="8.321,-9.422", "c"=14]
 "tenclass/clink" ["l"="7.285,-11.213"]
 "nvwacloud/tensorlink" ["l"="7.258,-11.201"]
-"antgroup/glake" ["l"="39.016,-0.444"]
-"cedana/cedana" ["l"="41.046,1.082"]
-"Project-HAMi/ascend-device-plugin" ["l"="7.26,-11.258"]
+"peak/s5cmd" ["l"="10.07,-6.222", "c"=162]
+"gpustack/gpustack" ["l"="39.165,-0.672", "c"=39]
+"byungsoo-oh/ml-systems-papers" ["l"="39.079,-0.468", "c"=39]
 "microsoft/nnscaler" ["l"="7.223,-10.986"]
-"joyq-github/TensorFlowonK8s" ["l"="7.494,-11.304"]
-"awslabs/optimizing-multitask-training-through-dynamic-pipelines" ["l"="1.364,14.458"]
+"gsidhu/buzee-tauri" ["l"="46.37,-0.78", "c"=542]
 "federicotorrielli/BetterWhisperX" ["l"="7.574,-11.156"]
+"substratusai/kubeai" ["l"="7.852,-9.624", "c"=14]
+"dyweb/papers-notebook" ["l"="0.669,13.944", "c"=115]
+"antgroup/glake" ["l"="39.016,-0.444", "c"=39]
+"cedana/cedana" ["l"="41.046,1.082", "c"=7]
+"ericchiang/k8s" ["l"="10.429,-10.168", "c"=740]
+"tensorflow/benchmarks" ["l"="57.92,23.535", "c"=161]
+"hongzimao/deeprm" ["l"="63.162,-13.335", "c"=1233]
+"Project-HAMi/ascend-device-plugin" ["l"="7.26,-11.258"]
+"awslabs/optimizing-multitask-training-through-dynamic-pipelines" ["l"="1.364,14.458", "c"=572]
 "Evil0ctal/Fast-Powerful-Whisper-AI-Services-API" ["l"="7.613,-11.143"]
-"fixie-ai/ultravox" ["l"="41.148,0.208"]
-"ubicloud/ubicloud" ["l"="16.115,-10.309"]
-"trycua/acu" ["l"="41.438,0.199"]
-"CatchTheTornado/text-extract-api" ["l"="41.331,0.217"]
-"swark-io/swark" ["l"="41.456,0.235"]
-"anordin95/run-llama-locally" ["l"="40.205,5.795"]
-"subtrace/subtrace" ["l"="-12.769,-7.356"]
-"ActiveTK/gff" ["l"="4.811,-40.588"]
-"mikex86/LibreCuda" ["l"="39.249,-0.299"]
-"Stengo/DeskPad" ["l"="26.136,-22.648"]
-"mufeedvh/code2prompt" ["l"="41.131,0.105"]
+"fixie-ai/ultravox" ["l"="41.148,0.208", "c"=7]
+"ubicloud/ubicloud" ["l"="16.115,-10.309", "c"=198]
+"trycua/acu" ["l"="41.438,0.199", "c"=7]
+"CatchTheTornado/text-extract-api" ["l"="41.331,0.217", "c"=7]
+"swark-io/swark" ["l"="41.456,0.235", "c"=7]
+"anordin95/run-llama-locally" ["l"="40.205,5.795", "c"=1506]
+"subtrace/subtrace" ["l"="-12.769,-7.356", "c"=86]
+"ActiveTK/gff" ["l"="4.811,-40.588", "c"=1105]
+"mikex86/LibreCuda" ["l"="39.249,-0.299", "c"=39]
+"Stengo/DeskPad" ["l"="26.136,-22.648", "c"=63]
+"mufeedvh/code2prompt" ["l"="41.131,0.105", "c"=7]
+"byjlw/video-analyzer" ["l"="32.423,30.369", "c"=297]
+"wisupai/e2m" ["l"="41.456,0.213", "c"=7]
+"lvkv/whenfs" ["l"="-16.233,-6.261", "c"=469]
 "thustorage/Medusa" ["l"="7.404,-11.281"]
-"microsoft/ParrotServe" ["l"="39.076,-0.375"]
+"microsoft/ParrotServe" ["l"="39.076,-0.375", "c"=39]
 "SJTU-IPADS/PhoenixOS-Remoting" ["l"="7.399,-11.26"]
 "imbue-ai/cluster-health" ["l"="7.411,-11.178"]
 "leptonai/gpud" ["l"="7.407,-11.201"]
-"imbue-ai/carbs" ["l"="7.462,-11.144"]
-"volcengine/veScale" ["l"="38.975,-0.445"]
+"volcengine/veScale" ["l"="38.975,-0.445", "c"=39]
 "floydhub/dockerfiles" ["l"="6.825,-11.277"]
-"daniilidis-group/neural_renderer" ["l"="63.669,1.347"]
-"kubewharf/godel-scheduler" ["l"="8.042,-9.401"]
-"kubernetes-sigs/gateway-api-inference-extension" ["l"="7.871,-9.568"]
+"daniilidis-group/neural_renderer" ["l"="63.669,1.347", "c"=134]
+"Langhalsdino/Kubernetes-GPU-Guide" ["l"="10.249,-10.015", "c"=740]
+"kubewharf/godel-scheduler" ["l"="8.042,-9.401", "c"=14]
+"kubernetes-sigs/gateway-api-inference-extension" ["l"="7.871,-9.568", "c"=14]
 "SymbioticLab/tensorflow-salus" ["l"="7.372,-11.158"]
-"SymbioticLab/Aequitas" ["l"="1.942,14.254"]
+"SymbioticLab/Aequitas" ["l"="1.942,14.254", "c"=572]
 }

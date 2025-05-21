@@ -1,4 +1,5 @@
 digraph G {
+"OpenNebula/one" -> "apache/cloudstack" ["e"=1]
 "kubernetes/cloud-provider-openstack" -> "kubernetes-sigs/cluster-api-provider-openstack" ["e"=1]
 "kubernetes/cloud-provider-openstack" -> "gophercloud/gophercloud"
 "kubernetes/cloud-provider-openstack" -> "openstack/openstack-helm"
@@ -14,6 +15,12 @@ digraph G {
 "kubernetes/cloud-provider-openstack" -> "kubernetes-sigs/cluster-api" ["e"=1]
 "kubernetes/cloud-provider-openstack" -> "openstack/kolla"
 "kubernetes/cloud-provider-openstack" -> "openstack/zun" ["e"=1]
+"openstack/openstack" -> "openstack/nova" ["e"=1]
+"openstack/openstack" -> "openstack/neutron" ["e"=1]
+"ipmitool/ipmitool" -> "cobbler/cobbler" ["e"=1]
+"ipxe/ipxe" -> "cobbler/cobbler" ["e"=1]
+"spacewalkproject/spacewalk" -> "cobbler/cobbler" ["e"=1]
+"FOGProject/fogproject" -> "cobbler/cobbler" ["e"=1]
 "zhangjianweibj/prometheus-libvirt-exporter" -> "kumina/libvirt_exporter"
 "zhangjianweibj/prometheus-libvirt-exporter" -> "Tinkoff/libvirt-exporter"
 "zhangjianweibj/prometheus-libvirt-exporter" -> "bykvaadm/libvirt_exporter_improved"
@@ -32,6 +39,8 @@ digraph G {
 "openstack/keystone" -> "openstack/keystoneauth"
 "openstack/keystone" -> "openstack/tempest"
 "openstack/keystone" -> "openstack/devstack"
+"prometheus-community/ipmi_exporter" -> "Tinkoff/libvirt-exporter" ["e"=1]
+"vmware/pyvmomi" -> "cobbler/cobbler" ["e"=1]
 "openstack-archive/tripleo-heat-templates" -> "openstack-archive/tripleo-common"
 "openstack-archive/tripleo-heat-templates" -> "openstack/puppet-tripleo"
 "openstack-archive/tripleo-heat-templates" -> "openstack/python-tripleoclient"
@@ -43,6 +52,7 @@ digraph G {
 "openstack-archive/tripleo-heat-templates" -> "openstack/tripleo-validations"
 "openstack-archive/tripleo-heat-templates" -> "openstack-archive/tripleo-puppet-elements"
 "openstack-archive/tripleo-heat-templates" -> "openstack/tripleo-image-elements"
+"8enet/Charles-Crack" -> "100apps/charles-hacking" ["e"=1]
 "openstack/diskimage-builder" -> "openstack/ironic-python-agent"
 "openstack/diskimage-builder" -> "openstack/tripleo-image-elements"
 "openstack/diskimage-builder" -> "cloudbase/windows-imaging-tools"
@@ -59,6 +69,7 @@ digraph G {
 "JiYou/openstack" -> "meetbill/openstack_install"
 "JiYou/openstack" -> "openstack/devstack"
 "JiYou/openstack" -> "openstack/keystone"
+"openvswitch/ovs" -> "openstack/neutron" ["e"=1]
 "puppetlabs-toy-chest/razor-server" -> "dxc-technology/Hanlon"
 "puppetlabs-toy-chest/razor-server" -> "RackHD/RackHD"
 "puppetlabs-toy-chest/razor-server" -> "viralpoetry/packer-bare-metal"
@@ -158,15 +169,24 @@ digraph G {
 "cloudbase/windows-imaging-tools" -> "BladeFireLight/WindowsImageTools"
 "cloudbase/windows-imaging-tools" -> "joefitzgerald/packer-windows" ["e"=1]
 "cloudbase/windows-imaging-tools" -> "taliesins/packer-baseboxes" ["e"=1]
+"ceph/ceph-ansible" -> "openstack/openstack-ansible" ["e"=1]
+"ceph/ceph-ansible" -> "openstack/kolla-ansible" ["e"=1]
+"ceph/ceph-ansible" -> "openstack/kolla" ["e"=1]
 "openstack/taskflow" -> "openstack/os-brick"
 "openstack/taskflow" -> "openstack/mistral"
 "rackspace/gophercloud" -> "openstack-archive/golang-client"
 "rackspace/gophercloud" -> "gophercloud/gophercloud"
 "rackspace/gophercloud" -> "go-goose/goose"
 "rackspace/gophercloud" -> "rackspace/rack"
+"intere/hacking" -> "openstack/hacking" ["e"=1]
 "Linaro/openstack-exporter" -> "att-comdev/prometheus-openstack-exporter"
 "greenpau/ovs_exporter" -> "greenpau/ovsdb"
 "solo-io/packer-plugin-arm-image" -> "mkaczanowski/packer-builder-arm"
+"ovn-org/ovn" -> "openstack/neutron" ["e"=1]
+"jwx0539/hackingLibrary" -> "openstack/hacking" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "kubernetes/cloud-provider-openstack" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "gophercloud/gophercloud" ["e"=1]
+"kubernetes-sigs/cluster-api-provider-openstack" -> "terraform-provider-openstack/terraform-provider-openstack" ["e"=1]
 "yeasy/easyOVS" -> "openstack/python-don"
 "openstack/sahara-image-elements" -> "openstack/sahara-specs"
 "openstack/sahara-image-elements" -> "openstack/python-saharaclient"
@@ -303,6 +323,7 @@ digraph G {
 "openstack/kolla" -> "openstack/openstacksdk"
 "openstack/kolla" -> "openstack/zun" ["e"=1]
 "openstack/kolla" -> "gophercloud/gophercloud"
+"theforeman/foreman" -> "cobbler/cobbler" ["e"=1]
 "cobbler/cobbler" -> "theforeman/foreman" ["e"=1]
 "cobbler/cobbler" -> "openstack/openstack-ansible"
 "cobbler/cobbler" -> "fboender/ansible-cmdb" ["e"=1]
@@ -350,6 +371,12 @@ digraph G {
 "openstack/neutron" -> "openstack/octavia"
 "openstack/neutron" -> "openstack/openstack" ["e"=1]
 "openstack/neutron" -> "openstack/python-neutronclient"
+"ansible/ansible-modules-core" -> "openstack/openstack-ansible" ["e"=1]
+"canonical/cloud-init" -> "cloudbase/cloudbase-init" ["e"=1]
+"canonical/cloud-init" -> "openstack/nova" ["e"=1]
+"lukechilds/dockerpi" -> "solo-io/packer-plugin-arm-image" ["e"=1]
+"ansible/ansible-modules-extras" -> "openstack/openstack-ansible" ["e"=1]
+"ansible/galaxy" -> "openstack/openstack-ansible" ["e"=1]
 "openstack/openstack-ansible" -> "openstack/kolla"
 "openstack/openstack-ansible" -> "ceph/ceph-ansible" ["e"=1]
 "openstack/openstack-ansible" -> "openstack/kolla-ansible"
@@ -385,6 +412,7 @@ digraph G {
 "cloudbase/cloudbase-init" -> "hashicorp/packer-plugin-proxmox" ["e"=1]
 "cloudbase/cloudbase-init" -> "rgl/packer-plugin-windows-update" ["e"=1]
 "cloudbase/cloudbase-init" -> "openstack/glance"
+"debops/debops-tools" -> "openstack/openstack-ansible" ["e"=1]
 "openstack/devstack" -> "openstack/nova"
 "openstack/devstack" -> "openstack/neutron"
 "openstack/devstack" -> "openstack/horizon"
@@ -433,6 +461,7 @@ digraph G {
 "openstack/manila" -> "openstack/heat"
 "openstack/manila" -> "openstack/octavia"
 "tumblr/genesis" -> "tumblr/collins"
+"tobegit3hub/seagull" -> "openstack/kolla" ["e"=1]
 "openstack/freezer" -> "openstack/freezer-web-ui"
 "openstack/freezer" -> "openstack/freezer-api"
 "openstack-archive/tripleo-puppet-elements" -> "openstack/python-tripleoclient"
@@ -479,6 +508,7 @@ digraph G {
 "openstack/magnum" -> "openstack/oslo.messaging"
 "openstack/magnum" -> "openstack-archive/sahara"
 "openstack/magnum" -> "openstack/manila"
+"canonical/packer-maas" -> "cloudbase/windows-imaging-tools" ["e"=1]
 "openstack/python-novaclient" -> "openstack/python-neutronclient"
 "openstack/python-novaclient" -> "openstack/python-glanceclient"
 "openstack/python-novaclient" -> "openstack/python-cinderclient"
@@ -528,6 +558,9 @@ digraph G {
 "yeasy/openstack_understand_Neutron" -> "int32bit/openstack-workflow"
 "yeasy/openstack_understand_Neutron" -> "openstack/neutron"
 "yeasy/openstack_understand_Neutron" -> "yeasy/easyOVS"
+"Naituw/WBWebViewConsole" -> "Naituw/CoreMLDemo" ["e"=1]
+"Naituw/WBWebViewConsole" -> "Naituw/FlapFlap" ["e"=1]
+"Naituw/WBWebViewConsole" -> "Naituw/FlappyBirdClone" ["e"=1]
 "zstackio/zstack" -> "zstackio/zstack-utility"
 "zstackio/zstack" -> "zstackio/zstack-dashboard"
 "zstackio/zstack" -> "zstackio/zstack-woodpecker"
@@ -550,7 +583,11 @@ digraph G {
 "100apps/charles-hacking" -> "duraki/charles-keygen"
 "100apps/charles-hacking" -> "HeIp/CharlesHack"
 "100apps/charles-hacking" -> "Naituw/HackingFacebook"
+"scottslowe/learning-tools" -> "openstack/openstack-ansible" ["e"=1]
+"libvirt/libvirt" -> "openstack/nova" ["e"=1]
+"libvirt/libvirt" -> "openstack/neutron" ["e"=1]
 "xiicloud/docker-training" -> "yongluo2013/osf-openstack-training"
+"openstack/kuryr" -> "openstack/magnum" ["e"=1]
 "openstack/puppet-tripleo" -> "openstack-archive/tripleo-puppet-elements"
 "openstack/puppet-tripleo" -> "openstack/python-tripleoclient"
 "openstack/puppet-tripleo" -> "openstack/tripleo-validations"
@@ -561,6 +598,7 @@ digraph G {
 "openstack-archive/tripleo-common" -> "openstack/puppet-tripleo"
 "CoprHD/coprhd-controller" -> "CoprHD/CoprHD.github.io"
 "CoprHD/coprhd-controller" -> "thecodeteam/mosaicme"
+"tao12345666333/vim" -> "int32bit/dotfiles" ["e"=1]
 "zstackio/zstack-utility" -> "zstackio/zstack-dashboard"
 "zstackio/zstack-utility" -> "zstackio/zstack-woodpecker"
 "zstackio/zstack-utility" -> "zstackio/zstack-vyos"
@@ -601,6 +639,7 @@ digraph G {
 "gophercloud/gophercloud" -> "metal3-io/baremetal-operator" ["e"=1]
 "gophercloud/gophercloud" -> "openstack/python-openstackclient"
 "gophercloud/gophercloud" -> "vmware/govmomi" ["e"=1]
+"facebookarchive/swift" -> "openstack/swift" ["e"=1]
 "apache/libcloud" -> "openstack/openstacksdk"
 "apache/libcloud" -> "mistio/mist-ce" ["e"=1]
 "apache/libcloud" -> "openstack/glance"
@@ -616,6 +655,7 @@ digraph G {
 "apache/libcloud" -> "mantl/mesos-consul" ["e"=1]
 "apache/libcloud" -> "mitsuhiko/pipsi" ["e"=1]
 "apache/libcloud" -> "ansible/ansible-container" ["e"=1]
+"LockGit/Hacking" -> "openstack/hacking" ["e"=1]
 "openstack/python-swiftclient" -> "openstack/python-cinderclient"
 "RackHD/RackHD" -> "CoprHD/coprhd-controller"
 "RackHD/RackHD" -> "RackHD/docs"
@@ -626,6 +666,7 @@ digraph G {
 "RackHD/RackHD" -> "RackHD/on-imagebuilder"
 "RackHD/RackHD" -> "cloudfoundry-incubator/kubo-deployment" ["e"=1]
 "RackHD/RackHD" -> "thecodeteam/libstorage" ["e"=1]
+"diyan/pywinrm" -> "cloudbase/cloudbase-init" ["e"=1]
 "openstack/python-openstackclient" -> "openstack/openstacksdk"
 "openstack/python-openstackclient" -> "openstack/requirements"
 "openstack/python-openstackclient" -> "openstack/python-neutronclient"
@@ -647,6 +688,7 @@ digraph G {
 "openstack/python-tripleoclient" -> "openstack/tripleo-validations"
 "openstack/python-tripleoclient" -> "openstack/tripleo-quickstart-extras"
 "openstack/python-tripleoclient" -> "openstack/puppet-tripleo"
+"insight-platform/Savant" -> "bwsw/cloudstack-ui" ["e"=1]
 "ktdreyer/jenkins-job-wrecker" -> "openstack-infra/jenkins-job-builder"
 "openstack/freezer-api" -> "openstack/python-freezerclient"
 "openstack/freezer-api" -> "openstack/freezer-web-ui"
@@ -676,6 +718,10 @@ digraph G {
 "int32bit/openstack-cheat-sheet" -> "JiYou/openstack"
 "openstack/requirements" -> "openstack/releases"
 "openstack/requirements" -> "openstack/project-config"
+"retspen/webvirtmgr" -> "cobbler/cobbler" ["e"=1]
+"retspen/webvirtmgr" -> "openstack/openstack-ansible" ["e"=1]
+"mistio/mist-ce" -> "apache/libcloud" ["e"=1]
+"ansible/ansible-container" -> "openstack/openstack-ansible" ["e"=1]
 "tumblr/collins" -> "tumblr/genesis"
 "tumblr/collins" -> "tumblr/go-collins"
 "tumblr/collins" -> "RackHD/RackHD"
@@ -689,6 +735,8 @@ digraph G {
 "openstack-archive/tripleo-quickstart" -> "openstack-archive/tripleo-puppet-elements"
 "openstack-archive/tripleo-quickstart" -> "redhat-openstack/tripleo-quickstart"
 "openstack-archive/tripleo-quickstart" -> "openstack/tripleo-specs"
+"redhat-openstack/infrared" -> "openstack-archive/tripleo-heat-templates" ["e"=1]
+"apcera/libretto" -> "rackspace/gophercloud" ["e"=1]
 "vexxhost/magnum-cluster-api" -> "vexxhost/keystone-keycloak-backend"
 "vexxhost/magnum-cluster-api" -> "vexxhost/atmosphere"
 "openstack/pbr" -> "openstack/oslo-cookiecutter"
@@ -769,6 +817,7 @@ digraph G {
 "int32bit/dotfiles" -> "tao12345666333/vim" ["e"=1]
 "int32bit/dotfiles" -> "Ethkuil/awesome-thu-student-software" ["e"=1]
 "int32bit/dotfiles" -> "yeasy/openstack_understand_Neutron"
+"Mirantis/virtlet" -> "openstack/kolla" ["e"=1]
 "ncw/swift" -> "openstack-archive/golang-client"
 "Naituw/iPhoneAvailability" -> "Naituw/lwapi"
 "Naituw/iPhoneAvailability" -> "Naituw/hexo-theme-apollo"
@@ -785,6 +834,7 @@ digraph G {
 "Naituw/iPhoneAvailability" -> "Naituw/broccoli-metascript"
 "Naituw/iPhoneAvailability" -> "Naituw/HockeySDK-Mac"
 "Naituw/iPhoneAvailability" -> "Naituw/Surf"
+"sunnyyoung/AppleReserver" -> "Naituw/iPhoneAvailability" ["e"=1]
 "inovex/prometheus-libvirt-exporter" -> "vexxhost/keystoneauth-websso"
 "openstack/heat" -> "openstack/ceilometer"
 "openstack/heat" -> "openstack/magnum"
@@ -831,6 +881,8 @@ digraph G {
 "openstack/swift" -> "facebookarchive/swift" ["e"=1]
 "openstack/swift" -> "intel-cloud/cosbench" ["e"=1]
 "openstack/swift" -> "openstack/ironic"
+"eventlet/eventlet" -> "openstack/oslo.messaging" ["e"=1]
+"eventlet/eventlet" -> "openstack/nova" ["e"=1]
 "openstack/kolla-ansible" -> "openstack/kolla"
 "openstack/kolla-ansible" -> "openstack/openstack-ansible"
 "openstack/kolla-ansible" -> "openstack/openstack-helm"
@@ -853,6 +905,7 @@ digraph G {
 "openstack-infra/jenkins-job-builder" -> "openstack-archive/python-jenkins" ["e"=1]
 "openstack-infra/jenkins-job-builder" -> "openstack-infra/system-config"
 "openstack-infra/jenkins-job-builder" -> "openstack/api-site"
+"meetbill/op_practice_book" -> "meetbill/openstack_install" ["e"=1]
 "openstack-infra/zuul" -> "openstack-infra/nodepool"
 "openstack-infra/zuul" -> "openstack-infra/storyboard"
 "openstack-infra/zuul" -> "openstack-infra/system-config"
@@ -942,6 +995,7 @@ digraph G {
 "apache/cloudstack" -> "apache/cloudstack-primate"
 "apache/cloudstack" -> "openstack/cinder"
 "apache/cloudstack" -> "CloudExplorer-Dev/CloudExplorer-Lite" ["e"=1]
+"vagrant-libvirt/vagrant-libvirt" -> "openstack/openstack-ansible" ["e"=1]
 "openstack/heat-templates" -> "openstack/heat"
 "openstack/heat-templates" -> "openstack/diskimage-builder"
 "openstack/heat-templates" -> "openstack-archive/tripleo-heat-templates"
@@ -999,22 +1053,32 @@ digraph G {
 "openstack-archive/murano-dashboard" -> "openstack/python-muranoclient"
 "openstack/python-muranoclient" -> "openstack/fuel-plugin-murano-tests"
 "openstack/python-muranoclient" -> "openstack-archive/murano-dashboard"
+"OpenNebula/one" ["l"="9.377,-8.73", "c"=14]
+"apache/cloudstack" ["l"="1.371,15.005"]
 "kubernetes/cloud-provider-openstack" ["l"="1.194,15.042"]
-"kubernetes-sigs/cluster-api-provider-openstack" ["l"="9.957,-12.582"]
+"kubernetes-sigs/cluster-api-provider-openstack" ["l"="9.957,-12.582", "c"=1195]
 "gophercloud/gophercloud" ["l"="1.207,15.103"]
 "openstack/openstack-helm" ["l"="1.232,15.09"]
 "terraform-provider-openstack/terraform-provider-openstack" ["l"="1.173,15.079"]
-"openstack/kuryr-kubernetes" ["l"="8.532,-9.503"]
+"openstack/kuryr-kubernetes" ["l"="8.532,-9.503", "c"=14]
 "openstack-exporter/openstack-exporter" ["l"="1.17,15.056"]
 "openstack/magnum" ["l"="1.333,15.16"]
 "sapcc/kubernikus" ["l"="1.093,14.989"]
-"kubernetes/cloud-provider" ["l"="8.087,-9.406"]
+"kubernetes/cloud-provider" ["l"="8.087,-9.406", "c"=14]
 "vexxhost/migratekit" ["l"="1.185,14.936"]
 "openstack-archive/ospurge" ["l"="1.16,15.004"]
 "sapcc/helm-charts" ["l"="1.079,15.005"]
-"kubernetes-sigs/cluster-api" ["l"="7.894,-9.107"]
+"kubernetes-sigs/cluster-api" ["l"="7.894,-9.107", "c"=14]
 "openstack/kolla" ["l"="1.266,15.105"]
-"openstack/zun" ["l"="6.335,-11.081"]
+"openstack/zun" ["l"="6.335,-11.081", "c"=1278]
+"openstack/openstack" ["l"="8.913,-8.369", "c"=14]
+"openstack/nova" ["l"="1.297,15.114"]
+"openstack/neutron" ["l"="1.3,15.142"]
+"ipmitool/ipmitool" ["l"="-40.739,-34.036", "c"=360]
+"cobbler/cobbler" ["l"="1.254,15.036"]
+"ipxe/ipxe" ["l"="-50.079,10.277", "c"=59]
+"spacewalkproject/spacewalk" ["l"="14.818,-11.378", "c"=855]
+"FOGProject/fogproject" ["l"="-49.966,10.263", "c"=59]
 "zhangjianweibj/prometheus-libvirt-exporter" ["l"="1.061,14.916"]
 "kumina/libvirt_exporter" ["l"="1.041,14.889"]
 "Tinkoff/libvirt-exporter" ["l"="1.123,14.977"]
@@ -1022,8 +1086,6 @@ digraph G {
 "openstack/keystone" ["l"="1.324,15.145"]
 "openstack/glance" ["l"="1.353,15.116"]
 "openstack/cinder" ["l"="1.334,15.115"]
-"openstack/neutron" ["l"="1.3,15.142"]
-"openstack/nova" ["l"="1.297,15.114"]
 "openstack/horizon" ["l"="1.322,15.126"]
 "openstack/swift" ["l"="1.316,15.086"]
 "openstack/ceilometer" ["l"="1.366,15.167"]
@@ -1034,6 +1096,8 @@ digraph G {
 "openstack/keystoneauth" ["l"="1.431,15.164"]
 "openstack/tempest" ["l"="1.381,15.138"]
 "openstack/devstack" ["l"="1.248,15.148"]
+"prometheus-community/ipmi_exporter" ["l"="9.495,-10.651", "c"=484]
+"vmware/pyvmomi" ["l"="-49.988,6.907", "c"=1172]
 "openstack-archive/tripleo-heat-templates" ["l"="1.4,14.944"]
 "openstack-archive/tripleo-common" ["l"="1.414,14.964"]
 "openstack/puppet-tripleo" ["l"="1.405,14.929"]
@@ -1041,11 +1105,13 @@ digraph G {
 "openstack-archive/tripleo-quickstart" ["l"="1.419,14.914"]
 "openstack/tripleo-quickstart-extras" ["l"="1.432,14.937"]
 "openstack/tripleo-docs" ["l"="1.387,14.925"]
-"redhat-openstack/infrared" ["l"="10.401,-11.367"]
+"redhat-openstack/infrared" ["l"="10.401,-11.367", "c"=431]
 "openstack/os-net-config" ["l"="1.442,14.907"]
 "openstack/tripleo-validations" ["l"="1.422,14.93"]
 "openstack-archive/tripleo-puppet-elements" ["l"="1.398,14.963"]
 "openstack/tripleo-image-elements" ["l"="1.358,14.956"]
+"8enet/Charles-Crack" ["l"="44.188,-22.663", "c"=6]
+"100apps/charles-hacking" ["l"="0.91,15.305"]
 "openstack/diskimage-builder" ["l"="1.337,15.011"]
 "openstack/ironic-python-agent" ["l"="1.398,15.025"]
 "cloudbase/windows-imaging-tools" ["l"="1.289,14.955"]
@@ -1056,8 +1122,8 @@ digraph G {
 "int32bit/openstack-cheat-sheet" ["l"="1.256,15.219"]
 "openstack/openstack-manuals" ["l"="1.371,15.116"]
 "cloudisopen/OpenStack" ["l"="1.292,15.219"]
-"openstack/openstack" ["l"="8.913,-8.369"]
 "meetbill/openstack_install" ["l"="1.241,15.203"]
+"openvswitch/ovs" ["l"="6.212,-4.878", "c"=749]
 "puppetlabs-toy-chest/razor-server" ["l"="1.249,14.694"]
 "dxc-technology/Hanlon" ["l"="1.224,14.67"]
 "RackHD/RackHD" ["l"="1.278,14.753"]
@@ -1112,7 +1178,7 @@ digraph G {
 "openstack/osprofiler" ["l"="1.439,15.116"]
 "openstack/freezer" ["l"="1.381,15.218"]
 "openstack/project-config" ["l"="1.459,15.116"]
-"cloud-bulldozer/browbeat" ["l"="2.675,14.953"]
+"cloud-bulldozer/browbeat" ["l"="2.675,14.953", "c"=756]
 "openstack/mistral" ["l"="1.477,15.209"]
 "nokia/CloudFlow" ["l"="1.504,15.227"]
 "openstack/python-mistralclient" ["l"="1.526,15.219"]
@@ -1120,26 +1186,32 @@ digraph G {
 "openstack/aodh" ["l"="1.448,15.227"]
 "cloudbase/cloudbase-init" ["l"="1.32,14.988"]
 "cloudbase/cloudbase-init-offline-install" ["l"="1.279,14.919"]
-"canonical/packer-maas" ["l"="-11.603,-2.663"]
+"canonical/packer-maas" ["l"="-11.603,-2.663", "c"=964]
 "cloudbase/coriolis" ["l"="1.221,14.921"]
-"canonical/maas" ["l"="-11.59,-2.606"]
+"canonical/maas" ["l"="-11.59,-2.606", "c"=964]
 "openstack/heat-templates" ["l"="1.351,15.048"]
-"jakobadam/packer-qemu-templates" ["l"="-49.202,6.54"]
+"jakobadam/packer-qemu-templates" ["l"="-49.202,6.54", "c"=959]
 "cloudbase/unattended-setup-scripts" ["l"="1.302,14.901"]
 "BladeFireLight/WindowsImageTools" ["l"="1.273,14.895"]
-"joefitzgerald/packer-windows" ["l"="-49.13,6.56"]
-"taliesins/packer-baseboxes" ["l"="-49.152,6.524"]
+"joefitzgerald/packer-windows" ["l"="-49.13,6.56", "c"=959]
+"taliesins/packer-baseboxes" ["l"="-49.152,6.524", "c"=959]
+"ceph/ceph-ansible" ["l"="2.335,14.921", "c"=756]
+"openstack/openstack-ansible" ["l"="1.271,15.077"]
 "openstack/taskflow" ["l"="1.503,15.268"]
 "openstack/os-brick" ["l"="1.453,15.275"]
 "rackspace/gophercloud" ["l"="1.126,15.107"]
 "openstack-archive/golang-client" ["l"="1.105,15.09"]
 "go-goose/goose" ["l"="1.093,15.116"]
 "rackspace/rack" ["l"="1.065,15.112"]
+"intere/hacking" ["l"="-47.248,-26.023", "c"=70]
+"openstack/hacking" ["l"="1.113,15.23"]
 "Linaro/openstack-exporter" ["l"="1.093,15.051"]
 "greenpau/ovs_exporter" ["l"="1.102,14.941"]
 "greenpau/ovsdb" ["l"="1.092,14.916"]
 "solo-io/packer-plugin-arm-image" ["l"="1.211,14.534"]
 "mkaczanowski/packer-builder-arm" ["l"="1.225,14.566"]
+"ovn-org/ovn" ["l"="8.403,-9.452", "c"=14]
+"jwx0539/hackingLibrary" ["l"="-47.274,-26.041", "c"=70]
 "yeasy/easyOVS" ["l"="1.188,15.27"]
 "openstack/python-don" ["l"="1.17,15.298"]
 "openstack/sahara-specs" ["l"="1.442,15.309"]
@@ -1185,54 +1257,53 @@ digraph G {
 "openstack/governance" ["l"="1.429,15.104"]
 "openstack/operations-guide" ["l"="1.428,15.079"]
 "redhat-openstack/packstack" ["l"="1.441,15.136"]
-"openstack/openstack-ansible" ["l"="1.271,15.077"]
 "openstack-archive/kolla-kubernetes" ["l"="1.212,15.127"]
-"ceph/ceph-ansible" ["l"="2.335,14.921"]
-"cobbler/cobbler" ["l"="1.254,15.036"]
-"theforeman/foreman" ["l"="14.92,-11.374"]
-"fboender/ansible-cmdb" ["l"="8.646,-12.367"]
-"idcos/Cloudboot" ["l"="9.164,-5.966"]
-"roncoo/roncoo-cmdb" ["l"="9.046,-5.831"]
-"voilet/cmdb" ["l"="9.039,-5.786"]
-"TencentBlueKing/bk-cmdb" ["l"="8.951,-5.593"]
-"ipxe/ipxe" ["l"="-50.079,10.277"]
-"vmware/pyvmomi" ["l"="-49.988,6.907"]
-"spacewalkproject/spacewalk" ["l"="14.818,-11.378"]
-"welliamcao/OpsManage" ["l"="8.965,-5.694"]
-"vmware/pyvmomi-community-samples" ["l"="-49.974,6.928"]
+"theforeman/foreman" ["l"="14.92,-11.374", "c"=855]
+"fboender/ansible-cmdb" ["l"="8.646,-12.367", "c"=600]
+"idcos/Cloudboot" ["l"="9.164,-5.966", "c"=278]
+"roncoo/roncoo-cmdb" ["l"="9.046,-5.831", "c"=278]
+"voilet/cmdb" ["l"="9.039,-5.786", "c"=278]
+"TencentBlueKing/bk-cmdb" ["l"="8.951,-5.593", "c"=278]
+"welliamcao/OpsManage" ["l"="8.965,-5.694", "c"=278]
+"vmware/pyvmomi-community-samples" ["l"="-49.974,6.928", "c"=1172]
 "int32bit/openstack-java-sdk" ["l"="1.183,15.357"]
 "int32bit/notes" ["l"="1.198,15.363"]
 "xmpy/hvpi" ["l"="1.173,15.38"]
-"keystone" ["l"="2.931,-35.907"]
+"keystone" ["l"="2.931,-35.907", "c"=171]
 "openstack/glance_store" ["l"="1.402,15.089"]
 "openstack/python-glanceclient" ["l"="1.408,15.112"]
-"openvswitch/ovs" ["l"="6.212,-4.878"]
+"ansible/ansible-modules-core" ["l"="8.638,-12.419", "c"=600]
+"canonical/cloud-init" ["l"="8.429,-8.921", "c"=14]
+"lukechilds/dockerpi" ["l"="42.681,7.717", "c"=818]
+"ansible/ansible-modules-extras" ["l"="8.615,-12.43", "c"=600]
+"ansible/galaxy" ["l"="8.549,-12.289", "c"=600]
 "openstack-ansible/openstack-ansible" ["l"="1.215,15.014"]
-"ansible/ansible-container" ["l"="8.57,-12.372"]
-"openshift/openshift-ansible" ["l"="10.56,-11.413"]
+"ansible/ansible-container" ["l"="8.57,-12.372", "c"=600]
+"openshift/openshift-ansible" ["l"="10.56,-11.413", "c"=431]
 "openstack/python-designateclient" ["l"="1.414,15.067"]
 "openstack-archive/neutron-lbaas" ["l"="1.407,15.177"]
 "openstack/python-octaviaclient" ["l"="1.327,15.186"]
-"caoyingjunz/pixiulib" ["l"="6.329,-11.047"]
-"caoyingjunz/podset-operator" ["l"="6.318,-11.049"]
+"caoyingjunz/pixiulib" ["l"="6.329,-11.047", "c"=1278]
+"caoyingjunz/podset-operator" ["l"="6.318,-11.049", "c"=1278]
 "openstack/octavia-dashboard" ["l"="1.344,15.188"]
-"caoyingjunz/pixiukit" ["l"="6.323,-11.061"]
+"caoyingjunz/pixiukit" ["l"="6.323,-11.061", "c"=1278]
 "openstack/cloud-init" ["l"="1.329,14.93"]
-"hashicorp/packer-plugin-proxmox" ["l"="9.818,-11.965"]
-"rgl/packer-plugin-windows-update" ["l"="-49.134,6.523"]
+"hashicorp/packer-plugin-proxmox" ["l"="9.818,-11.965", "c"=1246]
+"rgl/packer-plugin-windows-update" ["l"="-49.134,6.523", "c"=959]
+"debops/debops-tools" ["l"="8.564,-12.432", "c"=600]
 "openstack/devstack-vagrant" ["l"="1.105,15.219"]
-"openstack/hacking" ["l"="1.113,15.23"]
 "openstack/python-fuelclient" ["l"="1.653,15.189"]
 "openstack/shotgun" ["l"="1.683,15.174"]
 "pkgcloud/pkgcloud" ["l"="1.354,15.255"]
 "godaddy/node-openstack-wrapper" ["l"="1.353,15.3"]
-"Slynova-Org/flydrive" ["l"="-8.35,-31.522"]
+"Slynova-Org/flydrive" ["l"="-8.35,-31.522", "c"=867]
 "openstack/neutron-fwaas" ["l"="1.412,15.193"]
 "tumblr/genesis" ["l"="1.299,14.67"]
 "tumblr/collins" ["l"="1.296,14.703"]
+"tobegit3hub/seagull" ["l"="5.908,-12.464", "c"=270]
 "openstack/freezer-web-ui" ["l"="1.397,15.257"]
 "openstack/freezer-api" ["l"="1.411,15.252"]
-"openstack/kuryr" ["l"="8.602,-9.542"]
+"openstack/kuryr" ["l"="8.602,-9.542", "c"=14]
 "openstack/python-magnumclient" ["l"="1.313,15.203"]
 "openstack/murano" ["l"="1.329,15.235"]
 "openstack/python-novaclient" ["l"="1.392,15.12"]
@@ -1251,29 +1322,33 @@ digraph G {
 "rhtyd/cloudstack-nonoss" ["l"="1.455,14.984"]
 "openstack/keystonemiddleware" ["l"="1.466,15.172"]
 "yeasy/openstack_understand_Neutron" ["l"="1.221,15.215"]
+"Naituw/WBWebViewConsole" ["l"="47.1,-23.228", "c"=116]
+"Naituw/CoreMLDemo" ["l"="1.034,15.252"]
+"Naituw/FlapFlap" ["l"="1.007,15.238"]
+"Naituw/FlappyBirdClone" ["l"="0.997,15.248"]
 "zstackio/zstack" ["l"="1.289,15.023"]
 "zstackio/zstack-utility" ["l"="1.269,14.971"]
 "zstackio/zstack-dashboard" ["l"="1.255,14.979"]
 "zstackio/zstack-woodpecker" ["l"="1.266,14.988"]
-"yunionio/cloudpods" ["l"="50.688,2.722"]
-"apache/cloudstack" ["l"="1.371,15.005"]
+"yunionio/cloudpods" ["l"="50.688,2.722", "c"=85]
 "zstackio/zstack-vyos" ["l"="1.28,14.985"]
-"libvirt/libvirt" ["l"="8.952,-9.006"]
-"fit2cloud/rackshift" ["l"="19.08,12.96"]
-"Qihoo360/wayne" ["l"="9.042,-5.574"]
-"opencurve/curve" ["l"="0.803,14.086"]
-"100apps/charles-hacking" ["l"="0.91,15.305"]
+"libvirt/libvirt" ["l"="8.952,-9.006", "c"=14]
+"fit2cloud/rackshift" ["l"="19.08,12.96", "c"=1113]
+"Qihoo360/wayne" ["l"="9.042,-5.574", "c"=278]
+"opencurve/curve" ["l"="0.803,14.086", "c"=115]
 "HeIp/charles-hacking" ["l"="0.885,15.285"]
-"8enet/Charles-Crack" ["l"="44.188,-22.663"]
 "HeIp-zz/CharlesHack" ["l"="0.905,15.334"]
 "programming086/my-charles-hacking" ["l"="0.886,15.332"]
 "duraki/charles-keygen" ["l"="0.864,15.317"]
 "HeIp/CharlesHack" ["l"="0.882,15.304"]
 "Naituw/HackingFacebook" ["l"="1.014,15.263"]
+"scottslowe/learning-tools" ["l"="8.682,-12.44", "c"=600]
 "xiicloud/docker-training" ["l"="1.246,15.353"]
 "CoprHD/coprhd-controller" ["l"="1.316,14.751"]
 "CoprHD/CoprHD.github.io" ["l"="1.306,14.733"]
 "thecodeteam/mosaicme" ["l"="1.341,14.744"]
+"tao12345666333/vim" ["l"="-14.503,-9.332", "c"=34]
+"int32bit/dotfiles" ["l"="1.245,15.242"]
 "zstackio/doc" ["l"="1.252,14.96"]
 "int32bit/leetcode" ["l"="1.204,15.327"]
 "swevm/scaleio-py" ["l"="1.329,14.719"]
@@ -1284,24 +1359,29 @@ digraph G {
 "gnocchixyz/grafana-gnocchi-datasource" ["l"="1.439,15.253"]
 "gnocchixyz/python-gnocchiclient" ["l"="1.449,15.244"]
 "k-orc/openstack-resource-controller" ["l"="1.161,15.111"]
-"metal3-io/baremetal-operator" ["l"="9.995,-12.575"]
-"vmware/govmomi" ["l"="-50.013,6.933"]
+"metal3-io/baremetal-operator" ["l"="9.995,-12.575", "c"=1195]
+"vmware/govmomi" ["l"="-50.013,6.933", "c"=1172]
+"facebookarchive/swift" ["l"="-3.18,12.373", "c"=15]
 "apache/libcloud" ["l"="1.381,15.064"]
-"mistio/mist-ce" ["l"="9.271,-8.9"]
-"boto/boto" ["l"="44.418,20.854"]
-"CloudVE/cloudbridge" ["l"="40.925,36.939"]
-"hvac/hvac" ["l"="7.07,-12.85"]
-"projectatomic/atomic" ["l"="-17.64,-2.986"]
+"mistio/mist-ce" ["l"="9.271,-8.9", "c"=14]
+"boto/boto" ["l"="44.418,20.854", "c"=20]
+"CloudVE/cloudbridge" ["l"="40.925,36.939", "c"=141]
+"hvac/hvac" ["l"="7.07,-12.85", "c"=666]
+"projectatomic/atomic" ["l"="-17.64,-2.986", "c"=2006]
 "scottwernervt/cloudstorage" ["l"="1.445,15.038"]
-"mantl/mesos-consul" ["l"="6.409,-13.244"]
-"mitsuhiko/pipsi" ["l"="45.117,20.715"]
+"mantl/mesos-consul" ["l"="6.409,-13.244", "c"=837]
+"mitsuhiko/pipsi" ["l"="45.117,20.715", "c"=20]
+"LockGit/Hacking" ["l"="-47.292,-26.014", "c"=70]
 "openstack/python-swiftclient" ["l"="1.326,15.036"]
 "RackHD/docs" ["l"="1.249,14.738"]
-"digitalrebar/provision" ["l"="63.118,-1.219"]
+"digitalrebar/provision" ["l"="63.118,-1.219", "c"=175]
 "RackHD/on-imagebuilder" ["l"="1.255,14.76"]
-"cloudfoundry-incubator/kubo-deployment" ["l"="7.839,-13.757"]
-"thecodeteam/libstorage" ["l"="6.267,-12.385"]
+"cloudfoundry-incubator/kubo-deployment" ["l"="7.839,-13.757", "c"=507]
+"thecodeteam/libstorage" ["l"="6.267,-12.385", "c"=270]
+"diyan/pywinrm" ["l"="-47.307,-33.991", "c"=204]
 "openstack/network-checker" ["l"="1.706,15.163"]
+"insight-platform/Savant" ["l"="53.084,32.532", "c"=251]
+"bwsw/cloudstack-ui" ["l"="1.46,14.955"]
 "ktdreyer/jenkins-job-wrecker" ["l"="1.605,15.055"]
 "openstack-infra/jenkins-job-builder" ["l"="1.575,15.078"]
 "openstack/python-freezerclient" ["l"="1.414,15.271"]
@@ -1314,12 +1394,13 @@ digraph G {
 "openstack/puppet-vitrage" ["l"="1.548,15.361"]
 "stackanetes/stackanetes" ["l"="1.173,15.137"]
 "coreos/kpm" ["l"="1.125,15.149"]
-"projectcalico/k8s-exec-plugin" ["l"="8.59,-9.394"]
+"projectcalico/k8s-exec-plugin" ["l"="8.59,-9.394", "c"=14]
 "cloudbase/coriolis-web" ["l"="1.215,14.893"]
-"int32bit/dotfiles" ["l"="1.245,15.242"]
+"retspen/webvirtmgr" ["l"="9.225,-8.928", "c"=14]
 "tumblr/go-collins" ["l"="1.324,14.682"]
 "cjeanner/tripleo-lab" ["l"="1.417,14.879"]
 "redhat-openstack/tripleo-quickstart" ["l"="1.434,14.886"]
+"apcera/libretto" ["l"="4.082,-8.041", "c"=0]
 "vexxhost/magnum-cluster-api" ["l"="1.156,14.912"]
 "vexxhost/keystone-keycloak-backend" ["l"="1.149,14.892"]
 "vexxhost/atmosphere" ["l"="1.168,14.903"]
@@ -1328,49 +1409,47 @@ digraph G {
 "gnocchixyz/gnocchi" ["l"="1.422,15.227"]
 "openstack-archive/python-ceilometerclient" ["l"="1.398,15.208"]
 "shanhuio/smlvm" ["l"="1.225,15.305"]
-"eoli3n/dotfiles" ["l"="-14.63,-3.736"]
-"tao12345666333/vim" ["l"="-14.503,-9.332"]
-"Ethkuil/awesome-thu-student-software" ["l"="-4.84,20.122"]
+"eoli3n/dotfiles" ["l"="-14.63,-3.736", "c"=71]
+"Ethkuil/awesome-thu-student-software" ["l"="-4.84,20.122", "c"=564]
+"Mirantis/virtlet" ["l"="8.379,-9.324", "c"=14]
 "ncw/swift" ["l"="1.038,15.078"]
 "Naituw/iPhoneAvailability" ["l"="1.044,15.265"]
 "Naituw/lwapi" ["l"="1.018,15.298"]
-"ceph/ceph" ["l"="-19.844,-24.898"]
-"facebookarchive/swift" ["l"="-3.18,12.373"]
-"intel-cloud/cosbench" ["l"="2.335,14.973"]
+"sunnyyoung/AppleReserver" ["l"="-50.993,14.979", "c"=190]
+"ceph/ceph" ["l"="-19.844,-24.898", "c"=10]
+"intel-cloud/cosbench" ["l"="2.335,14.973", "c"=756]
+"eventlet/eventlet" ["l"="44.632,20.932", "c"=20]
 "openstack-infra/zuul" ["l"="1.602,15.1"]
 "openstack-infra/nodepool" ["l"="1.614,15.081"]
-"openstack-archive/python-jenkins" ["l"="5.279,-4.342"]
+"openstack-archive/python-jenkins" ["l"="5.279,-4.342", "c"=767]
+"meetbill/op_practice_book" ["l"="8.892,-5.869", "c"=278]
 "openstack-infra/storyboard" ["l"="1.641,15.1"]
 "sapcc/openstack-helm" ["l"="1.044,15.007"]
 "cloudoperators/greenhouse" ["l"="1.072,14.979"]
 "sapcc/terraform-provider-ccloud" ["l"="1.066,14.992"]
 "openstack-archive/oslo-incubator" ["l"="1.387,15.357"]
-"bwsw/cloudstack-ui" ["l"="1.46,14.955"]
 "ngine-io/awesome-cloudstack" ["l"="1.5,14.934"]
 "bwsw/simple-rtb-exchange" ["l"="1.48,14.932"]
 "redhat-openstack/openstack-puppet-modules" ["l"="1.489,15.133"]
 "openstack-infra/git-review" ["l"="1.558,15.044"]
 "cloudowski/zabbix-openstack" ["l"="1.096,15.027"]
-"Naituw/FlapFlap" ["l"="1.007,15.238"]
-"Naituw/FlappyBirdClone" ["l"="0.997,15.248"]
 "Naituw/dumpdecrypted" ["l"="0.977,15.261"]
 "Naituw/MPOProgressBar" ["l"="0.979,15.283"]
 "openstack/openstack-helm-infra" ["l"="1.208,15.067"]
-"att-comdev/openstack-helm" ["l"="-0.639,16.453"]
+"att-comdev/openstack-helm" ["l"="-0.639,16.453", "c"=398]
 "openstack/openstack-helm-addons" ["l"="1.198,15.079"]
 "portdirect/sydney-workshop" ["l"="1.185,15.103"]
 "openstack/loci" ["l"="1.221,15.051"]
 "sapcc/kubernetes-the-hard-way" ["l"="1.073,14.962"]
-"sapcc/kubernetes-operators" ["l"="10.398,-10.347"]
-"sapcc/maia" ["l"="8.375,-13.612"]
+"sapcc/kubernetes-operators" ["l"="10.398,-10.347", "c"=740]
+"sapcc/maia" ["l"="8.375,-13.612", "c"=462]
 "sapcc/limes" ["l"="0.98,14.952"]
-"OpenNebula/one" ["l"="9.377,-8.73"]
-"oVirt/ovirt-engine" ["l"="9.475,-8.862"]
+"oVirt/ovirt-engine" ["l"="9.475,-8.862", "c"=14]
 "shapeblue/hackerbook" ["l"="1.374,14.963"]
-"CloudExplorer-Dev/CloudExplorer-Lite" ["l"="19.085,12.937"]
-"meetbill/shell_menu" ["l"="9.618,-3.371"]
+"CloudExplorer-Dev/CloudExplorer-Lite" ["l"="19.085,12.937", "c"=1113]
+"vagrant-libvirt/vagrant-libvirt" ["l"="-49.251,6.598", "c"=959]
+"meetbill/shell_menu" ["l"="9.618,-3.371", "c"=1177]
 "gophercloud/utils" ["l"="1.14,15.073"]
-"Naituw/CoreMLDemo" ["l"="1.034,15.252"]
 "openstack-archive/gnocchi" ["l"="1.47,15.257"]
 "openstack-archive/murano-dashboard" ["l"="1.329,15.275"]
 "openstack/murano-apps" ["l"="1.313,15.291"]

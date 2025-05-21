@@ -1,4 +1,5 @@
 digraph G {
+"dtinit/data-transfer-project" -> "google/copybara" ["e"=1]
 "bazelbuild/bazelisk" -> "bazelbuild/buildtools"
 "bazelbuild/bazelisk" -> "bazel-contrib/bazel-gazelle"
 "bazelbuild/bazelisk" -> "bazel-contrib/rules_go"
@@ -14,6 +15,10 @@ digraph G {
 "bazelbuild/bazelisk" -> "bazel-contrib/rules_python"
 "bazelbuild/bazelisk" -> "bazelbuild/examples"
 "bazelbuild/bazelisk" -> "bazelbuild/rules_cc"
+"google/starlark-go" -> "bazelbuild/starlark" ["e"=1]
+"google/starlark-go" -> "facebook/starlark-rust" ["e"=1]
+"google/starlark-go" -> "bazel-contrib/rules_go" ["e"=1]
+"abseil/abseil-py" -> "google/subpar" ["e"=1]
 "rules-proto-grpc/rules_proto_grpc" -> "bazelbuild/rules_proto"
 "rules-proto-grpc/rules_proto_grpc" -> "stackb/rules_proto"
 "rules-proto-grpc/rules_proto_grpc" -> "bazel-contrib/toolchains_llvm"
@@ -29,6 +34,9 @@ digraph G {
 "rules-proto-grpc/rules_proto_grpc" -> "bazel-contrib/target-determinator"
 "rules-proto-grpc/rules_proto_grpc" -> "buildfarm/buildfarm"
 "rules-proto-grpc/rules_proto_grpc" -> "atlassian/bazel-tools"
+"google/pinject" -> "google/subpar" ["e"=1]
+"build-server-protocol/build-server-protocol" -> "JetBrains/bazel-bsp" ["e"=1]
+"build-server-protocol/build-server-protocol" -> "JetBrains/hirschgarten" ["e"=1]
 "bazel-contrib/rules_python" -> "bazelbuild/rules_docker"
 "bazel-contrib/rules_python" -> "bazelbuild/buildtools"
 "bazel-contrib/rules_python" -> "bazelbuild/rules_cc"
@@ -84,6 +92,7 @@ digraph G {
 "salesforce/rules_spring" -> "salesforce/bazel-eclipse"
 "salesforce/rules_spring" -> "bazelbuild/rules_java"
 "salesforce/rules_spring" -> "bazelbuild/rules_k8s"
+"google/lmctfy" -> "google/subpar" ["e"=1]
 "google/startup-os" -> "lucperkins/colossus"
 "google/startup-os" -> "bazeltools/bazel-deps"
 "google/startup-os" -> "bazelbuild/migration-tooling"
@@ -107,6 +116,8 @@ digraph G {
 "lucperkins/colossus" -> "buildbuddy-io/buildbuddy"
 "lucperkins/colossus" -> "bazelbuild/bazel-watcher"
 "lucperkins/colossus" -> "bazel-contrib/rules_jsonnet"
+"google/skylark" -> "bazelbuild/buildtools" ["e"=1]
+"google/skylark" -> "bazel-contrib/rules_go" ["e"=1]
 "bazel-contrib/bazel-gazelle" -> "bazel-contrib/rules_go"
 "bazel-contrib/bazel-gazelle" -> "bazelbuild/buildtools"
 "bazel-contrib/bazel-gazelle" -> "bazelbuild/rules_docker"
@@ -209,6 +220,14 @@ digraph G {
 "buildbarn/bb-storage" -> "buildbarn/bb-event-service"
 "buildbarn/bb-storage" -> "buildbarn/bb-clientd"
 "buildbarn/bb-storage" -> "buildbarn/bb-adrs"
+"bazel-contrib/rules_foreign_cc" -> "bazel-contrib/toolchains_llvm" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "bazelbuild/rules_pkg" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "bazelbuild/rules_cc" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "bazelbuild/bazel-central-registry" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "hedronvision/bazel-compile-commands-extractor" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "tweag/rules_nixpkgs" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "bazelbuild/bazel-skylib" ["e"=1]
+"bazel-contrib/rules_foreign_cc" -> "nelhage/rules_boost" ["e"=1]
 "stackb/rules_proto" -> "rules-proto-grpc/rules_proto_grpc"
 "stackb/rules_proto" -> "pubref/rules_protobuf"
 "stackb/rules_proto" -> "typedb/bazel-distribution"
@@ -402,6 +421,10 @@ digraph G {
 "ali5h/rules_pip" -> "dillon-giacoppo/rules_python_external"
 "ali5h/rules_pip" -> "digital-plumbers-union/rules_pyenv"
 "buildbarn/bb-event-service" -> "buildbarn/bb-browser"
+"bazelbuild/bazel" -> "bazelbuild/bazelisk" ["e"=1]
+"google/nearby" -> "google/riegeli" ["e"=1]
+"facebookincubator/Glean" -> "kythe/kythe" ["e"=1]
+"google/gofuzz" -> "bazel-contrib/rules_go" ["e"=1]
 "erenon/bazel_clang_tidy" -> "storypku/bazel_iwyu"
 "erenon/bazel_clang_tidy" -> "martis42/depend_on_what_you_use"
 "erenon/bazel_clang_tidy" -> "f0rmiga/gcc-toolchain"
@@ -410,7 +433,9 @@ digraph G {
 "erenon/bazel_clang_tidy" -> "bazel-contrib/toolchains_llvm"
 "erenon/bazel_clang_tidy" -> "hedronvision/bazel-make-cc-https-easy"
 "erenon/bazel_clang_tidy" -> "bazelbuild/bazel-central-registry"
+"microsoft/scalar" -> "buildfarm/buildfarm" ["e"=1]
 "kku1993/bazel-hermetic-python" -> "digital-plumbers-union/rules_pyenv"
+"clangd/vscode-clangd" -> "hedronvision/bazel-compile-commands-extractor" ["e"=1]
 "dropbox/dbx_build_tools" -> "ali5h/rules_pip"
 "dropbox/dbx_build_tools" -> "bazel-contrib/bazel-mypy-integration"
 "dropbox/dbx_build_tools" -> "dillon-giacoppo/rules_python_external"
@@ -436,6 +461,7 @@ digraph G {
 "kythe/kythe" -> "oracle/opengrok" ["e"=1]
 "kythe/kythe" -> "facebookincubator/Glean" ["e"=1]
 "kythe/kythe" -> "google/blueprint" ["e"=1]
+"bazel-ios/rules_ios" -> "apple/apple_rules_lint" ["e"=1]
 "facebookincubator/reindeer" -> "benbrittain/buckle"
 "dillon-giacoppo/rules_python_external" -> "ali5h/rules_pip"
 "dillon-giacoppo/rules_python_external" -> "dropbox/dbx_build_tools"
@@ -529,7 +555,9 @@ digraph G {
 "TraceMachina/nativelink" -> "buchgr/bazel-remote"
 "TraceMachina/nativelink" -> "f0rmiga/gcc-toolchain"
 "TraceMachina/nativelink" -> "bazelbuild/remote-apis"
+"google/codesearch" -> "kythe/kythe" ["e"=1]
 "hdl/bazel_rules_hdl" -> "agoessling/rules_vivado"
+"google/pigweed" -> "bazelembedded/bazel-embedded" ["e"=1]
 "kellegous/go" -> "trotto/go-links"
 "kellegous/go" -> "adamyi/golinks"
 "kellegous/go" -> "GoLinks/golinks"
@@ -590,9 +618,14 @@ digraph G {
 "bazelment/trunk" -> "bazelbuild/bazel-watcher"
 "buildbarn/bb-clientd" -> "buildbarn/bb-browser"
 "buildbarn/bb-clientd" -> "buildbarn/bb-remote-execution"
+"mvukov/rules_ros2" -> "erenon/bazel_clang_tidy" ["e"=1]
 "Vertexwahn/rules_qt6" -> "lalten/rules_appimage"
 "eomii/rules_ll" -> "salesforce-misc/bazelrc-lsp"
 "eomii/rules_ll" -> "lalten/rules_appimage"
+"facebook/buck2" -> "facebook/starlark-rust" ["e"=1]
+"facebook/buck2" -> "TraceMachina/nativelink" ["e"=1]
+"facebook/buck2" -> "facebookincubator/reindeer" ["e"=1]
+"facebook/buck2" -> "facebook/dotslash" ["e"=1]
 "hedronvision/bazel-compile-commands-extractor" -> "grailbio/bazel-compilation-database"
 "hedronvision/bazel-compile-commands-extractor" -> "bazel-contrib/toolchains_llvm"
 "hedronvision/bazel-compile-commands-extractor" -> "erenon/bazel_clang_tidy"
@@ -746,6 +779,8 @@ digraph G {
 "aspect-build/rules_jest" -> "aspect-build/rules_esbuild"
 "aspect-build/rules_esbuild" -> "aspect-build/rules_swc"
 "aspect-build/rules_esbuild" -> "aspect-build/rules_jest"
+"google/nomulus" -> "google/copybara" ["e"=1]
+"google/nomulus" -> "kythe/kythe" ["e"=1]
 "thought-machine/please" -> "thought-machine/pleasings"
 "thought-machine/please" -> "pantsbuild/pants" ["e"=1]
 "thought-machine/please" -> "jin/awesome-bazel"
@@ -761,6 +796,7 @@ digraph G {
 "thought-machine/please" -> "bazel-contrib/toolchains_llvm"
 "thought-machine/please" -> "genuinetools/img" ["e"=1]
 "thought-machine/please" -> "google/subpar"
+"google/zoekt" -> "kythe/kythe" ["e"=1]
 "bazelbuild/rules_rust" -> "google/cargo-raze"
 "bazelbuild/rules_rust" -> "bazelbuild/rules_cc"
 "bazelbuild/rules_rust" -> "bazel-contrib/rules_oci"
@@ -791,6 +827,7 @@ digraph G {
 "uber/hermetic_cc_toolchain" -> "hedronvision/bazel-compile-commands-extractor"
 "uber/hermetic_cc_toolchain" -> "thundergolfer/bazel-linting-system"
 "uber/hermetic_cc_toolchain" -> "bazelbuild/rules_cc"
+"facebookexperimental/hermit" -> "facebook/starlark-rust" ["e"=1]
 "EngFlow/bazel_invocation_analyzer" -> "bazelembedded/rules_cc_toolchain"
 "EngFlow/bazel_invocation_analyzer" -> "bazel-contrib/target-determinator"
 "bazel-contrib/rules_scala" -> "bazeltools/bazel-deps"
@@ -838,6 +875,7 @@ digraph G {
 "bazelbuild/intellij" -> "bazelbuild/continuous-integration"
 "bazelbuild/intellij" -> "bazelbuild/rules_android"
 "bazelbuild/intellij" -> "bazelbuild/bazelisk"
+"bazelbuild/tulsi" -> "bazelbuild/bazel-skylib" ["e"=1]
 "bazeltools/bazel-deps" -> "bazelbuild/migration-tooling"
 "bazeltools/bazel-deps" -> "bazel-contrib/rules_scala"
 "bazeltools/bazel-deps" -> "bazelbuild/BUILD_file_generator"
@@ -880,6 +918,7 @@ digraph G {
 "bazelbuild/buildtools" -> "bazelbuild/continuous-integration"
 "bazelbuild/buildtools" -> "bazel-contrib/rules_python"
 "bazelbuild/buildtools" -> "bazelbuild/rules_cc"
+"KDAB/codebrowser" -> "kythe/kythe" ["e"=1]
 "nelhage/rules_boost" -> "bazelment/trunk"
 "nelhage/rules_boost" -> "bazel-contrib/toolchains_llvm"
 "nelhage/rules_boost" -> "bazelbuild/bazel-central-registry"
@@ -928,15 +967,19 @@ digraph G {
 "kklochkov/rules_qt" -> "lalten/rules_appimage"
 "dzbarsky/static-clang" -> "salesforce-misc/bazelrc-lsp"
 "benbrittain/buckle" -> "themarwhal/buck2-rust"
+"Kotlin/kotlin-frontend-plugin" -> "pubref/rules_kotlin" ["e"=1]
+"pantsbuild/pants" -> "thought-machine/please" ["e"=1]
 "withered-magic/starpls" -> "cameron-martin/bazel-lsp"
 "withered-magic/starpls" -> "salesforce-misc/bazelrc-lsp"
 "withered-magic/starpls" -> "buildbuddy-io/bazel_env.bzl"
 "withered-magic/starpls" -> "martis42/depend_on_what_you_use"
+"oracle/opengrok" -> "kythe/kythe" ["e"=1]
 "theoremlp/rules_uv" -> "theoremlp/rules_mypy"
 "theoremlp/rules_uv" -> "aspect-build/rules_py"
 "facebook/dotslash" -> "facebookincubator/reindeer"
 "facebook/dotslash" -> "facebookincubator/superconsole"
 "facebook/dotslash" -> "facebook/starlark-rust"
+"xenomachina/kotlin-argparser" -> "pubref/rules_kotlin" ["e"=1]
 "aspect-build/toolchains_protoc" -> "fmeum/rules_runfiles"
 "buildbuddy-io/bazel_env.bzl" -> "salesforce-misc/bazelrc-lsp"
 "cameron-martin/bazel-lsp" -> "withered-magic/starpls"
@@ -958,11 +1001,19 @@ digraph G {
 "bazelbuild/rules_docker" -> "rules-proto-grpc/rules_proto_grpc"
 "bazelbuild/rules_docker" -> "bazelbuild/bazel-skylib"
 "bazelbuild/rules_docker" -> "bazelbuild/bazelisk"
+"google/clif" -> "kythe/kythe" ["e"=1]
+"google/clif" -> "google/subpar" ["e"=1]
+"google/clif" -> "google/riegeli" ["e"=1]
+"livegrep/livegrep" -> "kythe/kythe" ["e"=1]
+"livegrep/livegrep" -> "thought-machine/please" ["e"=1]
+"bazelbuild/rules_apple" -> "bazelbuild/bazel-skylib" ["e"=1]
 "JetBrains/hirschgarten" -> "JetBrains/bazel-bsp"
 "JetBrains/hirschgarten" -> "JetBrains/intellij-bazel"
 "buildbarn/bonanza" -> "salesforce-misc/bazelrc-lsp"
 "bazelbuild/rules_shell" -> "bazelbuild/rules_testing"
 "theoremlp/rules_mypy" -> "theoremlp/rules_uv"
+"korfuri/awesome-monorepo" -> "jin/awesome-bazel" ["e"=1]
+"facebookarchive/pfff" -> "kythe/kythe" ["e"=1]
 "bazelbuild/bazel-watcher" -> "bazelbuild/rules_pkg"
 "bazelbuild/bazel-watcher" -> "bazel-contrib/target-determinator"
 "bazelbuild/bazel-watcher" -> "bazelbuild/buildtools"
@@ -978,6 +1029,8 @@ digraph G {
 "bazelbuild/bazel-watcher" -> "bazel-contrib/rules_oci"
 "bazelbuild/bazel-watcher" -> "aspect-build/rules_js"
 "bazelbuild/bazel-watcher" -> "buildbuddy-io/buildbuddy"
+"gildor/kotlin-coroutines-okhttp" -> "pubref/rules_kotlin" ["e"=1]
+"facebookincubator/xar" -> "google/subpar" ["e"=1]
 "vincent-picaud/Bazel_and_CompileCommands" -> "grailbio/bazel-compilation-database"
 "vincent-picaud/Bazel_and_CompileCommands" -> "hedronvision/bazel-compile-commands-extractor"
 "buildfarm/buildfarm" -> "buchgr/bazel-remote"
@@ -995,6 +1048,8 @@ digraph G {
 "buildfarm/buildfarm" -> "buildbarn/bb-deployments"
 "buildfarm/buildfarm" -> "buildbarn/bb-storage"
 "buildfarm/buildfarm" -> "bazel-contrib/rules_oci"
+"bazelbuild/rules_typescript" -> "bazel-contrib/rules_nodejs" ["e"=1]
+"bazelbuild/rules_typescript" -> "bazelbuild/bazel-watcher" ["e"=1]
 "bazelbuild/bazel-toolchains" -> "bazelbuild/stardoc"
 "bazelbuild/bazel-toolchains" -> "bazelbuild/proposals"
 "bazelbuild/bazel-toolchains" -> "bazel-contrib/toolchains_llvm"
@@ -1009,7 +1064,10 @@ digraph G {
 "bazelbuild/bazel-toolchains" -> "bazelbuild/continuous-integration"
 "bazelbuild/bazel-toolchains" -> "bazelbuild/remote-apis"
 "bazelbuild/bazel-toolchains" -> "bazelbuild/bazel-watcher"
+"angular/angular-bazel-example" -> "bazel-contrib/rules_nodejs" ["e"=1]
 "bazelbuild/migration-tooling" -> "bazeltools/bazel-deps"
+"dtinit/data-transfer-project" ["l"="-2.4,11.705", "c"=15]
+"google/copybara" ["l"="1.172,-7.135"]
 "bazelbuild/bazelisk" ["l"="1.188,-7.091"]
 "bazelbuild/buildtools" ["l"="1.229,-7.102"]
 "bazel-contrib/bazel-gazelle" ["l"="1.211,-7.101"]
@@ -1026,6 +1084,11 @@ digraph G {
 "bazel-contrib/rules_python" ["l"="1.229,-7.086"]
 "bazelbuild/examples" ["l"="1.218,-7.056"]
 "bazelbuild/rules_cc" ["l"="1.273,-7.053"]
+"google/starlark-go" ["l"="4.26,-8.463", "c"=0]
+"bazelbuild/starlark" ["l"="1.165,-7.062"]
+"facebook/starlark-rust" ["l"="1.215,-6.996"]
+"abseil/abseil-py" ["l"="21.611,13.97", "c"=267]
+"google/subpar" ["l"="1.215,-7.147"]
 "rules-proto-grpc/rules_proto_grpc" ["l"="1.283,-7.09"]
 "bazelbuild/rules_proto" ["l"="1.313,-7.105"]
 "stackb/rules_proto" ["l"="1.283,-7.107"]
@@ -1035,9 +1098,12 @@ digraph G {
 "dropbox/dbx_build_tools" ["l"="1.262,-7.129"]
 "bazel-contrib/target-determinator" ["l"="1.293,-7.064"]
 "atlassian/bazel-tools" ["l"="1.362,-7.157"]
+"google/pinject" ["l"="45.711,18.795", "c"=1120]
+"build-server-protocol/build-server-protocol" ["l"="-2.631,18.944", "c"=38]
+"JetBrains/bazel-bsp" ["l"="1.317,-7.162"]
+"JetBrains/hirschgarten" ["l"="1.34,-7.197"]
 "bazelbuild/rules_rust" ["l"="1.252,-7.1"]
 "bazel-contrib/bazel-mypy-integration" ["l"="1.284,-7.059"]
-"google/subpar" ["l"="1.215,-7.147"]
 "aspect-build/rules_py" ["l"="1.311,-7.043"]
 "bazelbuild/platforms" ["l"="1.308,-7.094"]
 "f0rmiga/gcc-toolchain" ["l"="1.277,-7.032"]
@@ -1050,47 +1116,45 @@ digraph G {
 "bazelbuild/rules_java" ["l"="1.325,-7.14"]
 "bazel-contrib/rules_nodejs" ["l"="1.276,-7.121"]
 "aspect-build/rules_js" ["l"="1.31,-7.07"]
-"bazelbuild/rules_typescript" ["l"="9.713,-21.7"]
+"bazelbuild/rules_typescript" ["l"="9.713,-21.7", "c"=47]
 "aspect-build/rules_ts" ["l"="1.345,-7.077"]
-"angular/angular-bazel-example" ["l"="9.753,-21.845"]
+"angular/angular-bazel-example" ["l"="9.753,-21.845", "c"=47]
 "bazelbuild/rules_k8s" ["l"="1.239,-7.159"]
 "salesforce/rules_spring" ["l"="1.298,-7.176"]
 "bazel-contrib/rules_jvm_external" ["l"="1.286,-7.162"]
 "Zetten/bazel-sonarqube" ["l"="1.318,-7.244"]
 "salesforce/pomgen" ["l"="1.338,-7.239"]
 "salesforce/bazel-eclipse" ["l"="1.347,-7.267"]
+"google/lmctfy" ["l"="5.784,-12.507", "c"=270]
 "google/startup-os" ["l"="1.208,-7.235"]
 "lucperkins/colossus" ["l"="1.212,-7.171"]
 "bazeltools/bazel-deps" ["l"="1.253,-7.221"]
 "bazelbuild/migration-tooling" ["l"="1.23,-7.253"]
 "Khan/snippets" ["l"="1.184,-7.306"]
-"jhuangtw/xg2xg" ["l"="26.853,-26.738"]
+"jhuangtw/xg2xg" ["l"="26.853,-26.738", "c"=32]
 "bazelbuild/BUILD_file_generator" ["l"="1.226,-7.215"]
 "google/bazel-common" ["l"="1.28,-7.192"]
 "thundergolfer/example-bazel-monorepo" ["l"="1.235,-7.14"]
 "enginoid/monorepo-base" ["l"="1.182,-7.188"]
 "typedb/bazel-distribution" ["l"="1.269,-7.104"]
-"neugram/ng" ["l"="4.27,-8.243"]
+"neugram/ng" ["l"="4.27,-8.243", "c"=0]
 "bazel-contrib/rules_jsonnet" ["l"="1.201,-7.205"]
+"google/skylark" ["l"="4.163,-8.27", "c"=0]
 "bazelbuild/rules_kotlin" ["l"="1.334,-7.178"]
 "bazelbuild/intellij" ["l"="1.257,-7.152"]
 "bazel-contrib/rules_jvm" ["l"="1.325,-7.221"]
-"JetBrains/hirschgarten" ["l"="1.34,-7.197"]
 "bazel-contrib/rules_scala" ["l"="1.279,-7.216"]
 "buchgr/bazel-remote" ["l"="1.195,-7.062"]
 "bazelbuild/remote-apis" ["l"="1.204,-7.035"]
 "Asana/bazels3cache" ["l"="1.175,-7.17"]
-"bazel-contrib/rules_foreign_cc" ["l"="8.21,-7.997"]
+"bazel-contrib/rules_foreign_cc" ["l"="8.21,-7.997", "c"=14]
 "buildbarn/bb-remote-execution" ["l"="1.152,-7.017"]
 "buildbarn/bb-storage" ["l"="1.145,-7.029"]
-"bazelbuild/starlark" ["l"="1.165,-7.062"]
-"google/starlark-go" ["l"="4.26,-8.463"]
-"facebook/starlark-rust" ["l"="1.215,-6.996"]
-"stripe/skycfg" ["l"="6.732,-8.9"]
-"bazelbuild/rules_apple" ["l"="41.935,-27.126"]
+"stripe/skycfg" ["l"="6.732,-8.9", "c"=14]
+"bazelbuild/rules_apple" ["l"="41.935,-27.126", "c"=69]
 "google/riegeli" ["l"="1.352,-7.121"]
 "google/array_record" ["l"="1.425,-7.136"]
-"google/gipfeli" ["l"="-39.086,21.075"]
+"google/gipfeli" ["l"="-39.086,21.075", "c"=563]
 "storypku/bazel_iwyu" ["l"="1.303,-7.003"]
 "bazelment/trunk" ["l"="1.281,-7.14"]
 "thundergolfer/bazel-linting-system" ["l"="1.298,-7.108"]
@@ -1122,7 +1186,7 @@ digraph G {
 "tweag/rules_sh" ["l"="1.367,-6.963"]
 "adobe/rules_gitops" ["l"="1.342,-7.101"]
 "stackb/buildkube" ["l"="1.381,-6.949"]
-"tweag/rules_haskell" ["l"="-20.587,-20.178"]
+"tweag/rules_haskell" ["l"="-20.587,-20.178", "c"=118]
 "tweag/nix_gazelle_extension" ["l"="1.355,-6.977"]
 "keith/rules_multirun" ["l"="1.342,-7.025"]
 "eomii/rules_ll" ["l"="1.29,-6.96"]
@@ -1145,8 +1209,7 @@ digraph G {
 "etsy/rules_grafana" ["l"="1.164,-7.207"]
 "ash2k/bazel-tools" ["l"="1.392,-7.142"]
 "withered-magic/starpls" ["l"="1.274,-6.99"]
-"JetBrains/bazel-bsp" ["l"="1.317,-7.162"]
-"JetBrains/inspection-plugin" ["l"="53.591,-12.736"]
+"JetBrains/inspection-plugin" ["l"="53.591,-12.736", "c"=186]
 "JakeWharton/gradle-like-bazel" ["l"="1.372,-7.233"]
 "sdkman/sdkman-db-migrations" ["l"="1.464,-7.277"]
 "hsyed/rules_kotlin_old" ["l"="1.433,-7.252"]
@@ -1159,16 +1222,22 @@ digraph G {
 "bazelbuild/bazel-federation" ["l"="1.384,-7.121"]
 "ali5h/rules_pip" ["l"="1.221,-7.198"]
 "dillon-giacoppo/rules_python_external" ["l"="1.238,-7.184"]
+"bazelbuild/bazel" ["l"="-19.709,-25.194", "c"=10]
+"google/nearby" ["l"="-51.908,9.579", "c"=19]
+"facebookincubator/Glean" ["l"="-20.526,-20.19", "c"=118]
+"google/gofuzz" ["l"="4.18,-8.554", "c"=0]
 "hedronvision/bazel-make-cc-https-easy" ["l"="1.255,-6.952"]
+"microsoft/scalar" ["l"="-32.411,-0.436", "c"=139]
 "kku1993/bazel-hermetic-python" ["l"="1.151,-7.246"]
+"clangd/vscode-clangd" ["l"="-14.724,-10.195", "c"=34]
 "ProdriveTechnologies/bazel-latex" ["l"="1.301,-7.222"]
-"google/codesearch" ["l"="3.81,-8.232"]
-"google/zoekt" ["l"="3.892,-8.054"]
-"Andersbakken/rtags" ["l"="-16.816,-12.002"]
+"google/codesearch" ["l"="3.81,-8.232", "c"=0]
+"google/zoekt" ["l"="3.892,-8.054", "c"=0]
+"Andersbakken/rtags" ["l"="-16.816,-12.002", "c"=16]
 "sourcegraph/srclib" ["l"="1.429,-7.192"]
-"oracle/opengrok" ["l"="3.678,-8.114"]
-"facebookincubator/Glean" ["l"="-20.526,-20.19"]
-"google/blueprint" ["l"="-55.817,11.853"]
+"oracle/opengrok" ["l"="3.678,-8.114", "c"=0]
+"google/blueprint" ["l"="-55.817,11.853", "c"=427]
+"bazel-ios/rules_ios" ["l"="41.962,-27.135", "c"=69]
 "facebookincubator/reindeer" ["l"="1.114,-6.848"]
 "benbrittain/buckle" ["l"="1.092,-6.818"]
 "jvolkman/rules_pycross" ["l"="1.301,-7.038"]
@@ -1179,7 +1248,7 @@ digraph G {
 "bazelembedded/bazel-embedded" ["l"="1.272,-6.952"]
 "hexdae/toolchains_riscv_gnu" ["l"="1.245,-6.941"]
 "agoessling/rules_vivado" ["l"="1.243,-6.903"]
-"MobileNativeFoundation/rules_xcodeproj" ["l"="41.986,-27.122"]
+"MobileNativeFoundation/rules_xcodeproj" ["l"="41.986,-27.122", "c"=69]
 "EngFlow/bazel_invocation_analyzer" ["l"="1.328,-7.074"]
 "bazel-contrib/rules_bazel_integration_test" ["l"="1.364,-7.007"]
 "rmohr/bazeldnf" ["l"="1.409,-7.031"]
@@ -1188,15 +1257,15 @@ digraph G {
 "pybind/pybind11_abseil" ["l"="1.308,-6.931"]
 "pybind/pybind11_protobuf" ["l"="1.307,-6.914"]
 "salesforce/bazel-vscode-java" ["l"="1.367,-7.305"]
-"ios-bazel-users/ios-bazel-users" ["l"="41.921,-27.139"]
+"ios-bazel-users/ios-bazel-users" ["l"="41.921,-27.139", "c"=69]
 "ewhauser/bazel-differ" ["l"="1.328,-7.088"]
-"bazelbuild/rules_swift" ["l"="41.946,-27.15"]
-"build-server-protocol/build-server-protocol" ["l"="-2.631,18.944"]
+"bazelbuild/rules_swift" ["l"="41.946,-27.15", "c"=69]
 "JetBrains/intellij-bazel" ["l"="1.355,-7.201"]
-"VirtusLab/bazel-steward" ["l"="-13.584,-6.271"]
+"VirtusLab/bazel-steward" ["l"="-13.584,-6.271", "c"=86]
 "TraceMachina/nativelink" ["l"="1.226,-7.021"]
-"facebook/buck2" ["l"="-9.774,-6.305"]
+"facebook/buck2" ["l"="-9.774,-6.305", "c"=5]
 "hdl/bazel_rules_hdl" ["l"="1.238,-6.845"]
+"google/pigweed" ["l"="-51.804,9.662", "c"=19]
 "GoLinks/golinks" ["l"="1.073,-7.316"]
 "maccman/go" ["l"="1.059,-7.299"]
 "aspect-build/rules_swc" ["l"="1.374,-7.073"]
@@ -1206,6 +1275,7 @@ digraph G {
 "facebook/dotslash" ["l"="1.157,-6.908"]
 "laurentlb/awesome-starlark" ["l"="1.189,-6.949"]
 "cgrushko/proto_library" ["l"="1.321,-7.198"]
+"mvukov/rules_ros2" ["l"="61.543,16.253", "c"=184]
 "Vertexwahn/rules_qt6" ["l"="1.286,-6.932"]
 "lalten/rules_appimage" ["l"="1.301,-6.894"]
 "aspect-build/bazel-examples" ["l"="1.351,-7.063"]
@@ -1232,28 +1302,39 @@ digraph G {
 "nimbus-build/kickoff" ["l"="1.367,-7.093"]
 "theoremlp/rules_multitool" ["l"="1.371,-7.049"]
 "tweag/credential-helper" ["l"="1.452,-6.993"]
+"google/nomulus" ["l"="5.787,-4.46", "c"=725]
 "thought-machine/please" ["l"="1.14,-7.108"]
 "thought-machine/pleasings" ["l"="1.073,-7.118"]
-"pantsbuild/pants" ["l"="45.002,21.095"]
-"tcncloud/wollemi" ["l"="63.808,-15.212"]
-"blade-build/blade-build" ["l"="1.063,14.093"]
-"cuelang/cue" ["l"="7.826,-9.118"]
-"genuinetools/img" ["l"="7.839,-8.736"]
-"cvogt/cbt" ["l"="-2.7,18.799"]
-"scalapb/ScalaPB" ["l"="-2.574,18.679"]
+"pantsbuild/pants" ["l"="45.002,21.095", "c"=20]
+"tcncloud/wollemi" ["l"="63.808,-15.212", "c"=510]
+"blade-build/blade-build" ["l"="1.063,14.093", "c"=115]
+"cuelang/cue" ["l"="7.826,-9.118", "c"=14]
+"genuinetools/img" ["l"="7.839,-8.736", "c"=14]
+"facebookexperimental/hermit" ["l"="-9.845,-6.702", "c"=5]
+"cvogt/cbt" ["l"="-2.7,18.799", "c"=38]
+"scalapb/ScalaPB" ["l"="-2.574,18.679", "c"=38]
 "bazel-contrib/rules_debian_packages" ["l"="1.389,-7.032"]
 "nadirizr/dazel" ["l"="1.382,-6.983"]
 "bazel-contrib/setup-bazel" ["l"="1.415,-6.97"]
 "bazelbuild/rules_shell" ["l"="1.351,-6.997"]
+"bazelbuild/tulsi" ["l"="41.965,-27.151", "c"=69]
 "pgr0ss/bazel-deps" ["l"="1.25,-7.25"]
 "pubref/rules_maven" ["l"="1.256,-7.282"]
-"google/copybara" ["l"="1.172,-7.135"]
-"google/MOE" ["l"="-22.405,-42.079"]
+"google/MOE" ["l"="-22.405,-42.079", "c"=1183]
 "Olivr/copybara-action" ["l"="1.104,-7.163"]
+"KDAB/codebrowser" ["l"="-45.108,-34.641", "c"=282]
 "rnburn/rules_cc_module" ["l"="1.23,-6.946"]
 "dropbox/rules_node" ["l"="1.238,-7.27"]
 "themarwhal/buck2-rust" ["l"="1.077,-6.801"]
+"Kotlin/kotlin-frontend-plugin" ["l"="54.888,-13.848", "c"=25]
 "buildbuddy-io/bazel_env.bzl" ["l"="1.308,-6.952"]
+"xenomachina/kotlin-argparser" ["l"="54.909,-13.897", "c"=25]
 "aspect-build/toolchains_protoc" ["l"="1.463,-6.977"]
+"google/clif" ["l"="54.643,5.688", "c"=214]
+"livegrep/livegrep" ["l"="3.742,-7.999", "c"=0]
 "buildbarn/bonanza" ["l"="1.35,-6.924"]
+"korfuri/awesome-monorepo" ["l"="-16.434,26.108", "c"=50]
+"facebookarchive/pfff" ["l"="-25.749,-22.671", "c"=150]
+"gildor/kotlin-coroutines-okhttp" ["l"="55.02,-13.901", "c"=25]
+"facebookincubator/xar" ["l"="45.172,20.967", "c"=20]
 }

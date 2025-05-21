@@ -1,4 +1,5 @@
 digraph G {
+"simonw/datasette" -> "PostgREST/postgrest" ["e"=1]
 "sameersbn/docker-postgresql" -> "docker-library/postgres" ["e"=1]
 "sameersbn/docker-postgresql" -> "paunin/PostDock"
 "sameersbn/docker-postgresql" -> "sameersbn/docker-redis"
@@ -15,6 +16,11 @@ digraph G {
 "sameersbn/docker-postgresql" -> "angstwad/docker.ubuntu" ["e"=1]
 "sameersbn/docker-postgresql" -> "docker-archive/dockercloud-haproxy" ["e"=1]
 "pgspider/sqlite_fdw" -> "pgspider/pgspider"
+"hasura/graphql-engine" -> "PostgREST/postgrest" ["e"=1]
+"google/zetasql" -> "pganalyze/libpg_query" ["e"=1]
+"pawelsalawa/sqlitestudio" -> "dbgate/dbgate" ["e"=1]
+"yugabyte/yugabyte-db" -> "citusdata/citus" ["e"=1]
+"analysys/presto-hbase-connector" -> "TianLangStudio/DataXServer" ["e"=1]
 "zubkov-andrei/pg_profile" -> "postgrespro/pg_wait_sampling"
 "zubkov-andrei/pg_profile" -> "powa-team/pg_stat_kcache"
 "zubkov-andrei/pg_profile" -> "pgsentinel/pgsentinel"
@@ -45,6 +51,8 @@ digraph G {
 "cybertec-postgresql/pg_timetable" -> "hapostgres/pg_auto_failover"
 "cybertec-postgresql/pg_timetable" -> "HypoPG/hypopg"
 "cybertec-postgresql/pg_timetable" -> "theory/pgenv"
+"murongqimiao/DAG-diagram" -> "Liwengbin/vue-task-node" ["e"=1]
+"woodpecker-ci/woodpecker" -> "agola-io/agola" ["e"=1]
 "theory/pgtap" -> "okbob/plpgsql_check"
 "theory/pgtap" -> "sqitchers/sqitch"
 "theory/pgtap" -> "pgaudit/pgaudit"
@@ -60,6 +68,9 @@ digraph G {
 "theory/pgtap" -> "pgpartman/pg_partman"
 "theory/pgtap" -> "theory/pgenv"
 "theory/pgtap" -> "mixerp/plpgunit"
+"Altinity/clickhouse-operator" -> "jaegertracing/jaeger-clickhouse" ["e"=1]
+"spotify/dh-virtualenv" -> "spotify/postgresql-metrics" ["e"=1]
+"uber/aresdb" -> "heterodb/pg-strom" ["e"=1]
 "yandex/odyssey" -> "wal-g/wal-g"
 "yandex/odyssey" -> "postgresml/pgcat" ["e"=1]
 "yandex/odyssey" -> "pg-sharding/spqr" ["e"=1]
@@ -105,6 +116,7 @@ digraph G {
 "pipelinedb/pipelinedb" -> "tylertreat/BoomFilters" ["e"=1]
 "pipelinedb/pipelinedb" -> "zombodb/zombodb"
 "pipelinedb/pipelinedb" -> "reorg/pg_repack"
+"NUKnightLab/sql-mysteries" -> "dalibo/pev2" ["e"=1]
 "rapidloop/pgmetrics" -> "lesovsky/pgcenter"
 "rapidloop/pgmetrics" -> "cybertec-postgresql/pgwatch2"
 "rapidloop/pgmetrics" -> "percona/pg_stat_monitor"
@@ -120,6 +132,7 @@ digraph G {
 "rapidloop/pgmetrics" -> "dimitri/pgcopydb"
 "rapidloop/pgmetrics" -> "postgrespro/pg_wait_sampling"
 "rapidloop/pgmetrics" -> "cybertec-postgresql/pg_timetable"
+"trimstray/htrace.sh" -> "jfcoz/postgresqltuner" ["e"=1]
 "le0pard/pgtune" -> "gregs1104/pgtune"
 "le0pard/pgtune" -> "jfcoz/postgresqltuner"
 "le0pard/pgtune" -> "darold/pgbadger"
@@ -135,6 +148,7 @@ digraph G {
 "le0pard/pgtune" -> "pgbouncer/pgbouncer"
 "le0pard/pgtune" -> "citusdata/pg_cron"
 "le0pard/pgtune" -> "yandex/odyssey"
+"mgramin/awesome-db-tools" -> "dhamaniasad/awesome-postgres" ["e"=1]
 "dataegret/pg-utils" -> "lesovsky/pgcenter"
 "dataegret/pg-utils" -> "NikolayS/postgres_dba"
 "dataegret/pg-utils" -> "dataegret/pgcompacttable"
@@ -150,6 +164,9 @@ digraph G {
 "dataegret/pg-utils" -> "okbob/plpgsql_check"
 "dataegret/pg-utils" -> "percona/pg_stat_monitor"
 "dataegret/pg-utils" -> "wal-g/wal-g"
+"Paxa/postbird" -> "sqlectron/sqlectron-gui" ["e"=1]
+"tanelpoder/tpt-oracle" -> "akardapolov/ASH-Viewer" ["e"=1]
+"roxy-wi/roxy-wi" -> "vitabaks/autobase" ["e"=1]
 "faisalbasra/postgres_books" -> "xiongcccc/PostgreSQL-Ecosystem"
 "faisalbasra/postgres_books" -> "francs/PostgreSQL"
 "faisalbasra/postgres_books" -> "tangwz/db-monthly" ["e"=1]
@@ -162,6 +179,11 @@ digraph G {
 "faisalbasra/postgres_books" -> "ApsaraDB/PolarDB-for-PostgreSQL" ["e"=1]
 "faisalbasra/postgres_books" -> "ClusterLabs/PAF"
 "faisalbasra/postgres_books" -> "SolerHo/database-kernel-develop" ["e"=1]
+"rin-nas/postgresql-patterns-library" -> "NikolayS/postgres_dba" ["e"=1]
+"rin-nas/postgresql-patterns-library" -> "dataegret/pg-utils" ["e"=1]
+"rin-nas/postgresql-patterns-library" -> "lesovsky/pgcenter" ["e"=1]
+"beekeeper-studio/beekeeper-studio" -> "dbgate/dbgate" ["e"=1]
+"JoeyBling/webkettle" -> "Kyofin/springboot-datax" ["e"=1]
 "hanson007/FirstBlood" -> "Kyofin/springboot-datax"
 "hanson007/FirstBlood" -> "zipingdong/datax-web"
 "hanson007/FirstBlood" -> "hellobike/tunnel"
@@ -171,6 +193,8 @@ digraph G {
 "hanson007/FirstBlood" -> "WeBankFinTech/Scriptis" ["e"=1]
 "hanson007/FirstBlood" -> "WeiYe-Jing/datax-vue-admin"
 "hellobike/amazonriver" -> "hellobike/tunnel"
+"jackc/tern" -> "pganalyze/pg_query_go" ["e"=1]
+"hzjken/multimodal-transportation-optimization" -> "xNok/OR_location_routing_problem_study" ["e"=1]
 "hapostgres/pg_auto_failover" -> "EnterpriseDB/repmgr"
 "hapostgres/pg_auto_failover" -> "postgrespro/pg_probackup"
 "hapostgres/pg_auto_failover" -> "cybertec-postgresql/pg_squeeze"
@@ -186,6 +210,8 @@ digraph G {
 "hapostgres/pg_auto_failover" -> "CrunchyData/pgmonitor"
 "hapostgres/pg_auto_failover" -> "postgresml/pgcat" ["e"=1]
 "hapostgres/pg_auto_failover" -> "percona/pg_stat_monitor"
+"yandex-cloud/terraform-provider-yandex" -> "yandex/pgconsul" ["e"=1]
+"yandex-cloud/terraform-provider-yandex" -> "open-gpdb/yezzey" ["e"=1]
 "eulerto/wal2json" -> "debezium/postgres-decoderbufs"
 "eulerto/wal2json" -> "confluentinc/bottledwater-pg"
 "eulerto/wal2json" -> "2ndQuadrant/pglogical"
@@ -242,6 +268,7 @@ digraph G {
 "agola-io/agola" -> "agola-io/agola-web"
 "agola-io/agola" -> "sorintlab/pollon"
 "agola-io/agola" -> "ovh/cds" ["e"=1]
+"ucarGroup/DataLink" -> "Kyofin/springboot-datax" ["e"=1]
 "heterodb/pg-strom" -> "heavyai/heavydb" ["e"=1]
 "heterodb/pg-strom" -> "citusdata/cstore_fdw"
 "heterodb/pg-strom" -> "antonmks/Alenka" ["e"=1]
@@ -272,13 +299,18 @@ digraph G {
 "pgbackrest/pgbackrest" -> "CrunchyData/postgres-operator" ["e"=1]
 "pgbackrest/pgbackrest" -> "citusdata/pg_cron"
 "pgbackrest/pgbackrest" -> "prometheus-community/postgres_exporter" ["e"=1]
+"gobackup/gobackup" -> "wal-g/wal-g" ["e"=1]
+"hightman/scws" -> "amutu/zhparser" ["e"=1]
 "grayhemp/pgcookbook" -> "grayhemp/pgtoolkit"
+"pinterest/secor" -> "confluentinc/bottledwater-pg" ["e"=1]
 "dalibo/sqlserver2pgsql" -> "powa-team/powa"
 "dalibo/sqlserver2pgsql" -> "uptimejp/postgres-toolkit"
 "dalibo/sqlserver2pgsql" -> "darold/ora2pg"
 "dalibo/sqlserver2pgsql" -> "dmtolpeko/sqlines"
 "dalibo/sqlserver2pgsql" -> "zubkov-andrei/pg_profile"
 "dalibo/sqlserver2pgsql" -> "dimitri/pgloader"
+"BlazingDB/blazingsql" -> "heterodb/pg-strom" ["e"=1]
+"sameersbn/docker-redmine" -> "sameersbn/docker-postgresql" ["e"=1]
 "thestyleofme/common-datax" -> "thestyleofme/flink-explore"
 "thestyleofme/common-datax" -> "thestyleofme/DataX"
 "thestyleofme/common-datax" -> "thestyleofme/user-behavior-analysis"
@@ -302,10 +334,12 @@ digraph G {
 "theory/pgenv" -> "EnterpriseDB/pg_failover_slots"
 "theory/pgenv" -> "cybertec-postgresql/pg_permissions"
 "theory/pgenv" -> "cybertec-postgresql/pg_timetable"
+"tdunning/t-digest" -> "pipelinedb/pipelinedb" ["e"=1]
 "xocolatl/periods" -> "arkhipov/temporal_tables"
 "xocolatl/periods" -> "nearform/temporal_tables"
 "xocolatl/periods" -> "scalegenius/pg_bitemporal"
 "xocolatl/periods" -> "mlt/temporal_tables"
+"adjust/parquet_fdw" -> "postgrespro/pg_wait_sampling" ["e"=1]
 "larskanis/pg-ldap-sync" -> "dalibo/ldap2pg"
 "larskanis/pg-ldap-sync" -> "EnterpriseDB/pgldapsync"
 "taminomara/psql-hooks" -> "s-hironobu/pg_plan_inspector"
@@ -353,6 +387,7 @@ digraph G {
 "Segfault-Inc/Multicorn" -> "taminomara/psql-hooks"
 "Segfault-Inc/Multicorn" -> "atris/JDBC_FDW"
 "Segfault-Inc/Multicorn" -> "pgxn/pgxnclient"
+"gojek/awesome-distributed-systems" -> "nilenso/postgresql-monitoring" ["e"=1]
 "lesovsky/pgscv" -> "munakoiso/logerrors"
 "lesovsky/pgscv" -> "bdrouvot/pg_toolkit"
 "dataegret/pgcompacttable" -> "cybertec-postgresql/pg_squeeze"
@@ -423,6 +458,7 @@ digraph G {
 "darold/pgcluu" -> "OPMDG/check_pgactivity"
 "darold/pgcluu" -> "EnterpriseDB/pg_catcheck"
 "darold/pgcluu" -> "dalibo/pitrery"
+"groonga/groonga" -> "pgroonga/pgroonga" ["e"=1]
 "Vonng/pg" -> "xiongcccc/PostgreSQL-Ecosystem"
 "Vonng/pg" -> "xiongcccc/postgres-howto"
 "Vonng/pg" -> "xiongcccc/pgcheck"
@@ -476,6 +512,9 @@ digraph G {
 "pgsentinel/pgsentinel" -> "cybertec-postgresql/pg_cgroups"
 "lopezator/migrator" -> "inigohu/pubsub"
 "sameersbn/docker-mysql" -> "sameersbn/docker-redis"
+"TPC-Council/HammerDB" -> "EnterpriseDB/zheap" ["e"=1]
+"TPC-Council/HammerDB" -> "postgrespro/aqo" ["e"=1]
+"TPC-Council/HammerDB" -> "cybertec-postgresql/pg_show_plans" ["e"=1]
 "laurenz/oracle_fdw" -> "orafce/orafce"
 "laurenz/oracle_fdw" -> "darold/ora2pg"
 "laurenz/oracle_fdw" -> "tds-fdw/tds_fdw"
@@ -668,6 +707,13 @@ digraph G {
 "csc-training/advanced-parallel-prog" -> "csc-training/advanced-fortran"
 "ercole-io/ercole-agent" -> "ercole-io/ercole-web"
 "ercole-io/ercole-web" -> "ercole-io/ercole-agent"
+"apache/age" -> "citusdata/citus" ["e"=1]
+"docker-library/postgres" -> "sameersbn/docker-postgresql" ["e"=1]
+"docker-library/postgres" -> "pgaudit/pgaudit" ["e"=1]
+"progit/progit2-zh" -> "postgres-cn/pgdoc-cn" ["e"=1]
+"sosedoff/pgweb" -> "dhamaniasad/awesome-postgres" ["e"=1]
+"sosedoff/pgweb" -> "OmniDB/OmniDB" ["e"=1]
+"sosedoff/pgweb" -> "PostgREST/postgrest" ["e"=1]
 "PostgREST/postgrest" -> "graphile/crystal" ["e"=1]
 "PostgREST/postgrest" -> "dbcli/pgcli" ["e"=1]
 "PostgREST/postgrest" -> "hasura/graphql-engine" ["e"=1]
@@ -683,6 +729,10 @@ digraph G {
 "PostgREST/postgrest" -> "minimaxir/big-list-of-naughty-strings" ["e"=1]
 "PostgREST/postgrest" -> "httpie/cli" ["e"=1]
 "PostgREST/postgrest" -> "caddyserver/caddy" ["e"=1]
+"dbcli/pgcli" -> "PostgREST/postgrest" ["e"=1]
+"dbcli/pgcli" -> "dhamaniasad/awesome-postgres" ["e"=1]
+"dbcli/pgcli" -> "okbob/pspg" ["e"=1]
+"torodb/stampede" -> "microsoft/pg_paxos" ["e"=1]
 "pgexperts/pgx_scripts" -> "NikolayS/postgres_dba"
 "pgexperts/pgx_scripts" -> "ioguix/pgsql-bloat-estimation"
 "pgexperts/pgx_scripts" -> "reorg/pg_repack"
@@ -698,6 +748,10 @@ digraph G {
 "pgexperts/pgx_scripts" -> "ankane/dexter" ["e"=1]
 "pgexperts/pgx_scripts" -> "keithf4/pg_bloat_check"
 "pgexperts/pgx_scripts" -> "hapostgres/pg_auto_failover"
+"coleifer/sqlite-web" -> "OmniDB/OmniDB" ["e"=1]
+"opengauss-mirror/openGauss-server" -> "postgrespro/aqo" ["e"=1]
+"opengauss-mirror/openGauss-server" -> "EnterpriseDB/zheap" ["e"=1]
+"cweijan/vscode-database-client" -> "dbgate/dbgate" ["e"=1]
 "antares-sql/antares" -> "dbgate/dbgate"
 "antares-sql/antares" -> "beekeeper-studio/beekeeper-studio" ["e"=1]
 "antares-sql/antares" -> "antares-sql/antares-ppa"
@@ -734,6 +788,7 @@ digraph G {
 "hpcc-systems/HPCC-Platform" -> "hadoop-hdfs" ["e"=1]
 "hpcc-systems/HPCC-Platform" -> "whym/wikihadoop"
 "hpcc-systems/HPCC-Platform" -> "madlib/archived_madlib"
+"ongres/stackgres" -> "pgsty/pigsty" ["e"=1]
 "dbgate/dbgate" -> "antares-sql/antares"
 "dbgate/dbgate" -> "beekeeper-studio/beekeeper-studio" ["e"=1]
 "dbgate/dbgate" -> "dbeaver/cloudbeaver"
@@ -779,6 +834,9 @@ digraph G {
 "lerocha/chinook-database" -> "nalgeon/sqlean" ["e"=1]
 "lerocha/chinook-database" -> "dalers/mywind"
 "lerocha/chinook-database" -> "JoshClose/CsvHelper" ["e"=1]
+"pgcentralfoundation/pgrx" -> "zombodb/zombodb" ["e"=1]
+"pgcentralfoundation/pgrx" -> "sraoss/pg_ivm" ["e"=1]
+"ligurio/awesome-ci" -> "bleenco/abstruse" ["e"=1]
 "konosp/dbt-airflow-docker-compose" -> "konosp/dbt-on-airflow"
 "sqlpad/sqlpad" -> "OmniDB/OmniDB"
 "sqlpad/sqlpad" -> "HVF/franchise" ["e"=1]
@@ -825,6 +883,7 @@ digraph G {
 "EnterpriseDB/repmgr" -> "paunin/PostDock"
 "EnterpriseDB/repmgr" -> "cybertec-postgresql/pgwatch2"
 "EnterpriseDB/repmgr" -> "cybertec-postgresql/pg_squeeze"
+"xwb1989/sqlparser" -> "pganalyze/pg_query_go" ["e"=1]
 "Code-Institute-Org/gitpod-full-template" -> "Code-Institute-Solutions/readme-template"
 "Code-Institute-Org/gitpod-full-template" -> "Code-Institute-Org/ci-full-template"
 "Code-Institute-Org/gitpod-full-template" -> "Code-Institute-Org/python-essentials-template"
@@ -847,6 +906,7 @@ digraph G {
 "dalibo/pev2" -> "xataio/pgroll" ["e"=1]
 "dalibo/pev2" -> "darold/pgFormatter"
 "dalibo/pev2" -> "ankane/dexter" ["e"=1]
+"message-db/message-db" -> "aquametalabs/aquameta" ["e"=1]
 "ioguix/pgsql-bloat-estimation" -> "pgexperts/pgx_scripts"
 "ioguix/pgsql-bloat-estimation" -> "cybertec-postgresql/pg_squeeze"
 "ioguix/pgsql-bloat-estimation" -> "NikolayS/postgres_dba"
@@ -873,13 +933,20 @@ digraph G {
 "thestyleofme/plugin-driver-parent" -> "thestyleofme/prestosql"
 "thestyleofme/plugin-driver-parent" -> "thestyleofme/spark-gmall-parent"
 "sebastianwebber/pgconfig" -> "sebastianwebber/pgconfig-api"
+"ozontech/file.d" -> "ozontech/pg_doorman" ["e"=1]
+"filodb/FiloDB" -> "pipelinedb/pipelinedb" ["e"=1]
+"hyrise/sql-parser" -> "pganalyze/libpg_query" ["e"=1]
 "xstevens/decoderbufs" -> "debezium/postgres-decoderbufs"
 "udacity/nd027-c3-data-lakes-with-spark" -> "jaycode/short_sale_volume"
 "udacity/nd027-c3-data-lakes-with-spark" -> "aws-samples/aws-dms-archive-data"
 "citusdata/postgres_vectorization_test" -> "postgrespro/vops"
+"Interana/eventsim" -> "udacity/nd027-c3-data-lakes-with-spark" ["e"=1]
+"Interana/eventsim" -> "devrimgunduz/pagila" ["e"=1]
 "OPMDG/check_pgactivity" -> "bucardo/check_postgres"
 "OPMDG/check_pgactivity" -> "gleu/pgdocs_fr"
 "OPMDG/check_pgactivity" -> "gleu/pgstats"
+"sbdchd/squawk" -> "okbob/plpgsql_check" ["e"=1]
+"sbdchd/squawk" -> "sunng87/pgwire" ["e"=1]
 "lesovsky/noisia" -> "NikolayS/postgres_dba"
 "lesovsky/noisia" -> "agroal/pgagroal"
 "lesovsky/noisia" -> "lesovsky/pgcenter"
@@ -895,12 +962,16 @@ digraph G {
 "lesovsky/noisia" -> "petergeoghegan/amcheck"
 "lesovsky/noisia" -> "petergeoghegan/pg_hexedit"
 "lesovsky/noisia" -> "percona/pg_stat_monitor"
+"fergusstrange/embedded-postgres" -> "pganalyze/pg_query_go" ["e"=1]
 "denishpatel/pg-clone-schema" -> "cybertec-postgresql/pg_permissions"
 "philipsoutham/py-mysql2pgsql" -> "maxlapshin/mysql2postgres"
 "philipsoutham/py-mysql2pgsql" -> "the4thdoctor/pg_chameleon"
 "philipsoutham/py-mysql2pgsql" -> "lanyrd/mysql-postgresql-converter"
 "philipsoutham/py-mysql2pgsql" -> "aliyun/rds_dbsync"
 "hettie-d/NORM" -> "hettie-d/postgres_air"
+"WeBankFinTech/Exchangis" -> "Kyofin/springboot-datax" ["e"=1]
+"ClusterLabs/pacemaker" -> "ClusterLabs/PAF" ["e"=1]
+"compose/transporter" -> "pipelinedb/pipelinedb" ["e"=1]
 "pgsty/pg_exporter" -> "powa-team/pg_stat_kcache"
 "pgsty/pg_exporter" -> "ossc-db/pg_store_plans"
 "pgsty/pg_exporter" -> "cybertec-postgresql/vip-manager"
@@ -978,12 +1049,14 @@ digraph G {
 "EnterpriseDB/system_stats" -> "cybertec-postgresql/pg_cgroups"
 "postgrespro/mmts" -> "postgrespro/pg_dtm"
 "darold/pgtt" -> "lzlabs/pg_statement_rollback"
+"WeiYe-Jing/datax-web-ui" -> "hanson007/FirstBlood" ["e"=1]
 "EnterpriseDB/mongo_fdw" -> "citusdata/mongo_fdw"
 "EnterpriseDB/mongo_fdw" -> "EnterpriseDB/hdfs_fdw"
 "EnterpriseDB/mongo_fdw" -> "adjust/kafka_fdw"
 "EnterpriseDB/mongo_fdw" -> "EnterpriseDB/mysql_fdw"
 "EnterpriseDB/mongo_fdw" -> "nahanni/rw_redis_fdw"
 "ycy950519/CorsApi" -> "wyc941012/MachineLearningPlatform"
+"hortonworks/hive-testbench-carter-fork" -> "RunningJon/TPC-DS" ["e"=1]
 "pgspider/pgspider" -> "pgspider/griddb_fdw"
 "powa-team/powa" -> "powa-team/pg_qualstats"
 "powa-team/powa" -> "cybertec-postgresql/pg_squeeze"
@@ -1004,6 +1077,7 @@ digraph G {
 "pgMemento/pgMemento" -> "arkhipov/temporal_tables"
 "dalibo/pitrery" -> "dalibo/ldap2pg"
 "domgiles/swingbench-public" -> "karamul/ashviewer"
+"jackc/pglogrepl" -> "pganalyze/pg_query_go" ["e"=1]
 "SYNwall/SYNwall" -> "ercole-io/ercole"
 "SYNwall/SYNwall" -> "agola-io/agola"
 "SYNwall/SYNwall" -> "ercole-io/ercole-agent"
@@ -1047,6 +1121,9 @@ digraph G {
 "thestyleofme/user-behavior-analysis" -> "thestyleofme/flink-api-spring-boot-starter"
 "thestyleofme/spark-gmall-parent" -> "thestyleofme/flink-sql-platform"
 "thestyleofme/flink-sql-platform" -> "thestyleofme/flink-api-spring-boot-starter"
+"ritzyed/ritzy" -> "nanopack/mist" ["e"=1]
+"shlomi-noach/awesome-mysql" -> "dhamaniasad/awesome-postgres" ["e"=1]
+"treffynnon/sqlstyle.guide" -> "darold/pgFormatter" ["e"=1]
 "petere/pguri" -> "johto/allas"
 "petere/pguri" -> "petere/pgemailaddr"
 "petere/pguri" -> "gleu/pgstats"
@@ -1065,6 +1142,7 @@ digraph G {
 "darold/pgbadger" -> "dhamaniasad/awesome-postgres"
 "darold/pgbadger" -> "le0pard/pgtune"
 "darold/pgbadger" -> "pgexperts/pgx_scripts"
+"p8952/bocker" -> "PostgREST/postgrest" ["e"=1]
 "sqitchers/sqitch" -> "theory/pgtap"
 "sqitchers/sqitch" -> "djrobstep/migra"
 "sqitchers/sqitch" -> "subzerocloud/postgrest-starter-kit"
@@ -1080,6 +1158,8 @@ digraph G {
 "sqitchers/sqitch" -> "zombodb/zombodb"
 "sqitchers/sqitch" -> "dbcli/pgcli" ["e"=1]
 "sqitchers/sqitch" -> "citusdata/pg_cron"
+"pgjdbc/pgjdbc" -> "darold/ora2pg" ["e"=1]
+"pgjdbc/pgjdbc" -> "laurenz/oracle_fdw" ["e"=1]
 "zalando/spilo" -> "zalando/postgres-operator" ["e"=1]
 "zalando/spilo" -> "patroni/patroni"
 "zalando/spilo" -> "sorintlab/stolon"
@@ -1110,10 +1190,13 @@ digraph G {
 "patroni/patroni" -> "hapostgres/pg_auto_failover"
 "patroni/patroni" -> "darold/pgbadger"
 "patroni/patroni" -> "reorg/pg_repack"
+"antonmks/Alenka" -> "heterodb/pg-strom" ["e"=1]
+"supabase/pg_graphql" -> "citusdata/pg_cron" ["e"=1]
 "compose/governor" -> "microsoft/pg_paxos"
 "compose/governor" -> "TritonDataCenter/manatee" ["e"=1]
 "compose/governor" -> "nanopack/yoke"
 "compose/governor" -> "ClusterLabs/PAF"
+"zalando/skipper" -> "zalando/spilo" ["e"=1]
 "ossc-db/pg_rman" -> "postgrespro/pg_probackup"
 "ossc-db/pg_rman" -> "ossc-db/pg_bulkload"
 "ossc-db/pg_rman" -> "pgaudit/pgaudit"
@@ -1184,6 +1267,8 @@ digraph G {
 "darold/ora2pg" -> "cybertec-postgresql/pgwatch2"
 "darold/ora2pg" -> "IvorySQL/IvorySQL"
 "darold/ora2pg" -> "Guy-Incognito/ora2pg"
+"DBDiff/DBDiff" -> "joncrlsn/pgdiff" ["e"=1]
+"vitobotta/hetzner-k3s" -> "vitabaks/autobase" ["e"=1]
 "aquametalabs/aquameta" -> "oelmekki/pgrebase" ["e"=1]
 "aquametalabs/aquameta" -> "subzerocloud/postgrest-starter-kit"
 "aquametalabs/aquameta" -> "mgartner/pg_flame"
@@ -1239,6 +1324,9 @@ digraph G {
 "HypoPG/hypopg" -> "NikolayS/postgres_dba"
 "HypoPG/hypopg" -> "lesovsky/pgcenter"
 "HypoPG/hypopg" -> "cybertec-postgresql/pg_timetable"
+"variety/variety" -> "EnterpriseDB/mongo_fdw" ["e"=1]
+"eralchemy/eralchemy" -> "spotify/postgresql-metrics" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "csc-training/hpc-python" ["e"=1]
 "confluentinc/bottledwater-pg" -> "eulerto/wal2json"
 "confluentinc/bottledwater-pg" -> "xstevens/decoderbufs"
 "confluentinc/bottledwater-pg" -> "pinterest/secor" ["e"=1]
@@ -1260,6 +1348,7 @@ digraph G {
 "sasha-alias/sqltabs" -> "web-pal/DBGlass"
 "sasha-alias/sqltabs" -> "microsoft/pg_paxos"
 "jOOQ/sakila" -> "devrimgunduz/pagila"
+"ableev/Zabbix-in-Telegram" -> "postgrespro/mamonsu" ["e"=1]
 "plv8/plv8" -> "pramsey/pgsql-http"
 "plv8/plv8" -> "gavinwahl/postgres-json-schema" ["e"=1]
 "plv8/plv8" -> "citusdata/pg_cron"
@@ -1275,6 +1364,14 @@ digraph G {
 "plv8/plv8" -> "sqitchers/sqitch"
 "plv8/plv8" -> "gajus/slonik" ["e"=1]
 "plv8/plv8" -> "zombodb/zombodb"
+"nanobox-io/nanobox" -> "nanopack/mist" ["e"=1]
+"nanobox-io/nanobox" -> "nanopack/yoke" ["e"=1]
+"codahale/sneaker" -> "confluentinc/bottledwater-pg" ["e"=1]
+"anse1/sqlsmith" -> "pganalyze/libpg_query" ["e"=1]
+"anse1/sqlsmith" -> "postgrespro/sr_plan" ["e"=1]
+"anse1/sqlsmith" -> "postgrespro/pg_wait_sampling" ["e"=1]
+"anse1/sqlsmith" -> "postgrespro/aqo" ["e"=1]
+"anse1/sqlsmith" -> "ossc-db/pg_plan_advsr" ["e"=1]
 "s-hironobu/pg_plan_inspector" -> "ossc-db/pg_plan_advsr"
 "s-hironobu/pg_plan_inspector" -> "Nathaniel-Han/End-to-End-CardEst-Benchmark" ["e"=1]
 "s-hironobu/pg_plan_inspector" -> "postgrespro/aqo"
@@ -1290,6 +1387,7 @@ digraph G {
 "s-hironobu/pg_plan_inspector" -> "s-hironobu/pg_tuner"
 "s-hironobu/pg_plan_inspector" -> "naru-project/naru" ["e"=1]
 "s-hironobu/pg_plan_inspector" -> "andreaskipf/learnedcardinalities" ["e"=1]
+"koct9i/ioping" -> "pgsentinel/pgsentinel" ["e"=1]
 "Aiven-Open/pghoard" -> "Aiven-Open/pglookout" ["e"=1]
 "Aiven-Open/pghoard" -> "wal-e/wal-e"
 "Aiven-Open/pghoard" -> "wal-g/wal-g"
@@ -1305,6 +1403,18 @@ digraph G {
 "Aiven-Open/pghoard" -> "ankane/pgsync" ["e"=1]
 "Aiven-Open/pghoard" -> "sorintlab/stolon"
 "Aiven-Open/pghoard" -> "spaceshuttl/visionary" ["e"=1]
+"pg-sharding/spqr" -> "yandex/odyssey" ["e"=1]
+"pg-sharding/spqr" -> "yandex/go-hasql" ["e"=1]
+"pg-sharding/spqr" -> "yandex/mysync" ["e"=1]
+"pg-sharding/spqr" -> "cybertec-postgresql/pg_squeeze" ["e"=1]
+"pg-sharding/spqr" -> "open-gpdb/yezzey" ["e"=1]
+"pg-sharding/spqr" -> "open-gpdb/gpdb" ["e"=1]
+"pg-sharding/spqr" -> "agroal/pgagroal" ["e"=1]
+"pg-sharding/spqr" -> "yandex/pgconsul" ["e"=1]
+"pg-sharding/spqr" -> "yandex/pgmigrate" ["e"=1]
+"pg-sharding/spqr" -> "lesovsky/pgcenter" ["e"=1]
+"solidsnack/GraphpostgresQL" -> "microsoft/pg_paxos" ["e"=1]
+"solidsnack/GraphpostgresQL" -> "compose/governor" ["e"=1]
 "VladimirPal/react-flux-backbone" -> "mic-fadeev/postglass"
 "pgaudit/pgaudit" -> "cybertec-postgresql/pg_squeeze"
 "pgaudit/pgaudit" -> "postgrespro/pg_probackup"
@@ -1322,6 +1432,7 @@ digraph G {
 "pgaudit/pgaudit" -> "theory/pgtap"
 "pgaudit/pgaudit" -> "lesovsky/pgcenter"
 "hettie-d/postgres_air" -> "hettie-d/NORM"
+"auxten/go-sqldb" -> "auxten/postgresql-parser" ["e"=1]
 "AnatolyUss/FromMySqlToPostgreSql" -> "AnatolyUss/nmig"
 "AnatolyUss/FromMySqlToPostgreSql" -> "lanyrd/mysql-postgresql-converter"
 "uptimejp/postgres-toolkit" -> "gleu/pgstats"
@@ -1331,6 +1442,7 @@ digraph G {
 "postgres-x2/postgres-x2" -> "postgrespro/vops"
 "jaegertracing/jaeger-clickhouse" -> "yandex/pgconsul"
 "jaegertracing/jaeger-clickhouse" -> "open-gpdb/yezzey"
+"astronomer/airflow-dbt-demo" -> "konosp/dbt-on-airflow" ["e"=1]
 "2ndQuadrant/bdr" -> "2ndQuadrant/pglogical"
 "2ndQuadrant/bdr" -> "EnterpriseDB/repmgr"
 "awslabs/pg-collector" -> "jobinau/pg_gather"
@@ -1347,6 +1459,7 @@ digraph G {
 "ChenHuajun/blog_xqhx" -> "cloud-sn2/cigration"
 "ChenHuajun/blog_xqhx" -> "xiongcccc/pgcheck"
 "ChenHuajun/blog_xqhx" -> "ardentperf/dsef"
+"Breeze0806/go-etl" -> "greenplum-db/gpupgrade" ["e"=1]
 "powa-team/powa-web" -> "powa-team/powa-archivist"
 "ChrisYuan/greenplum_exporter" -> "tangyibo/greenplum_exporter"
 "sorintlab/nbupy" -> "sorintlab/sorintoss-site"
@@ -1356,6 +1469,12 @@ digraph G {
 "ossc-db/syncdb" -> "ossc-db/pg_reorg"
 "ossc-db/pg_reorg" -> "ossc-db/dblink_plus"
 "ossc-db/pg_reorg" -> "ossc-db/syncdb"
+"postgresml/pgcat" -> "yandex/odyssey" ["e"=1]
+"postgresml/pgcat" -> "pgbouncer/pgbouncer" ["e"=1]
+"postgresml/pgcat" -> "dimitri/pgcopydb" ["e"=1]
+"postgresml/pgcat" -> "hapostgres/pg_auto_failover" ["e"=1]
+"postgresml/pgcat" -> "patroni/patroni" ["e"=1]
+"postgresml/pgcat" -> "HypoPG/hypopg" ["e"=1]
 "dhamaniasad/awesome-postgres" -> "dbcli/pgcli" ["e"=1]
 "dhamaniasad/awesome-postgres" -> "PostgREST/postgrest"
 "dhamaniasad/awesome-postgres" -> "ankane/pghero" ["e"=1]
@@ -1386,6 +1505,12 @@ digraph G {
 "digoal/blog" -> "alibaba/canal" ["e"=1]
 "digoal/blog" -> "alibaba/AliSQL" ["e"=1]
 "digoal/blog" -> "rootsongjc/kubernetes-handbook" ["e"=1]
+"amacneil/dbmate" -> "djrobstep/migra" ["e"=1]
+"amacneil/dbmate" -> "sqitchers/sqitch" ["e"=1]
+"greenplum-db/gpdb" -> "digoal/blog" ["e"=1]
+"greenplum-db/gpdb" -> "citusdata/citus" ["e"=1]
+"themattrix/bash-concurrent" -> "AlexTatiyants/pev" ["e"=1]
+"coroot/coroot-pg-agent" -> "Aiven-Open/pgtracer" ["e"=1]
 "EnterpriseDB/barman" -> "pgbackrest/pgbackrest"
 "EnterpriseDB/barman" -> "EnterpriseDB/repmgr"
 "EnterpriseDB/barman" -> "wal-g/wal-g"
@@ -1416,7 +1541,20 @@ digraph G {
 "sorintlab/stolon" -> "paunin/PostDock"
 "sorintlab/stolon" -> "citusdata/citus"
 "sorintlab/stolon" -> "CrunchyData/crunchy-containers"
+"Randommood/Strangeloop2015" -> "nanopack/yoke" ["e"=1]
+"andialbrecht/sqlparse" -> "darold/pgFormatter" ["e"=1]
+"fabianlindfors/reshape" -> "djrobstep/migra" ["e"=1]
+"fabianlindfors/reshape" -> "dimitri/pgcopydb" ["e"=1]
+"fabianlindfors/reshape" -> "yandex/odyssey" ["e"=1]
+"fabianlindfors/reshape" -> "stripe/pg-schema-diff" ["e"=1]
+"fabianlindfors/reshape" -> "cybertec-postgresql/pg_timetable" ["e"=1]
+"shayonj/pg-osc" -> "cybertec-postgresql/pg_squeeze" ["e"=1]
+"shayonj/pg-osc" -> "jnidzwetzki/pg-lock-tracer" ["e"=1]
+"shayonj/pg-osc" -> "pgsentinel/pgsentinel" ["e"=1]
+"shayonj/pg-osc" -> "HypoPG/hypopg" ["e"=1]
 "microsoft/pg_paxos" -> "EnterpriseDB/zheap"
+"ydb-platform/ydb" -> "yandex/odyssey" ["e"=1]
+"officert/mongotron" -> "sqlectron/sqlectron-gui" ["e"=1]
 "sqlectron/sqlectron-gui" -> "sqlectron/sqlectron-term"
 "sqlectron/sqlectron-gui" -> "sqlectron/sqlectron-core"
 "sqlectron/sqlectron-gui" -> "officert/mongotron" ["e"=1]
@@ -1447,6 +1585,12 @@ digraph G {
 "AlexTatiyants/pev" -> "zombodb/zombodb"
 "AlexTatiyants/pev" -> "dbcli/pgcli" ["e"=1]
 "AlexTatiyants/pev" -> "rach/pome" ["e"=1]
+"prometheus-community/postgres_exporter" -> "patroni/patroni" ["e"=1]
+"prometheus-community/postgres_exporter" -> "pgbackrest/pgbackrest" ["e"=1]
+"prometheus-community/postgres_exporter" -> "cybertec-postgresql/pgwatch2" ["e"=1]
+"prometheus-community/postgres_exporter" -> "lesovsky/pgcenter" ["e"=1]
+"prometheus-community/postgres_exporter" -> "wal-g/wal-g" ["e"=1]
+"prometheus-community/postgres_exporter" -> "sorintlab/stolon" ["e"=1]
 "dimitri/pgcopydb" -> "cybertec-postgresql/pg_squeeze"
 "dimitri/pgcopydb" -> "hapostgres/pg_auto_failover"
 "dimitri/pgcopydb" -> "postgresml/pgcat" ["e"=1]
@@ -1487,6 +1631,7 @@ digraph G {
 "pganalyze/pg_query_go" -> "postgrespro/pg_query_state"
 "pganalyze/pg_query_go" -> "postgrespro/pg_wait_sampling"
 "pganalyze/pg_query_go" -> "jackc/sqlfmt"
+"redspread/spread" -> "nanopack/yoke" ["e"=1]
 "lesovsky/pgcenter" -> "NikolayS/postgres_dba"
 "lesovsky/pgcenter" -> "dataegret/pg-utils"
 "lesovsky/pgcenter" -> "rapidloop/pgmetrics"
@@ -1512,6 +1657,10 @@ digraph G {
 "apache/madlib" -> "greenplum-db/pxf"
 "apache/madlib" -> "greenplum-db/plcontainer"
 "apache/madlib" -> "greenplum-db/gporca" ["e"=1]
+"supabase/pg_jsonschema" -> "sraoss/pg_ivm" ["e"=1]
+"supabase/pg_jsonschema" -> "supabase/supa_audit" ["e"=1]
+"supabase/pg_jsonschema" -> "HypoPG/hypopg" ["e"=1]
+"supabase/pg_jsonschema" -> "okbob/plpgsql_check" ["e"=1]
 "zhm/pg-query-parser" -> "zhm/node-pg-query-native"
 "AnatolyUss/nmig" -> "AnatolyUss/FromMySqlToPostgreSql"
 "AnatolyUss/nmig" -> "lanyrd/mysql-postgresql-converter"
@@ -1546,6 +1695,10 @@ digraph G {
 "nanopack/yoke" -> "go-bootstrap/go-bootstrap" ["e"=1]
 "nanopack/yoke" -> "gernest/utron" ["e"=1]
 "nanopack/yoke" -> "EnterpriseDB/repmgr"
+"rach/pome" -> "nanopack/yoke" ["e"=1]
+"rach/pome" -> "spotify/postgresql-metrics" ["e"=1]
+"rach/pome" -> "Aiven-Open/pghoard" ["e"=1]
+"gosuri/uitable" -> "nanopack/mist" ["e"=1]
 "pganalyze/libpg_query" -> "lelit/pglast" ["e"=1]
 "pganalyze/libpg_query" -> "pganalyze/pg_query"
 "pganalyze/libpg_query" -> "pganalyze/pg_query_go"
@@ -1568,8 +1721,12 @@ digraph G {
 "spotify/postgresql-metrics" -> "daamien/PostgreSQL-Dashboard"
 "spotify/postgresql-metrics" -> "nilenso/postgresql-monitoring"
 "spotify/postgresql-metrics" -> "lukasmartinelli/pgclimb"
+"apache/hawq" -> "apache/madlib" ["e"=1]
+"apache/hawq" -> "apache/trafodion" ["e"=1]
 "dongxuyang1985/postgresql_dev_guide" -> "faisalbasra/postgres_books"
 "posix4e/jsoncdc" -> "posix4e/rpgffi"
+"pinterest/teletraan" -> "nanopack/yoke" ["e"=1]
+"benbjohnson/postlite" -> "pganalyze/pg_query_go" ["e"=1]
 "supabase/supa_audit" -> "supabase/pg_jsonschema" ["e"=1]
 "supabase/supa_audit" -> "nearform/temporal_tables"
 "lukasmartinelli/pgfutter" -> "lukasmartinelli/pgclimb"
@@ -1587,6 +1744,7 @@ digraph G {
 "lukasmartinelli/pgfutter" -> "wireservice/csvkit" ["e"=1]
 "lukasmartinelli/pgfutter" -> "cybertec-postgresql/pg_timetable"
 "lukasmartinelli/pgfutter" -> "NikolayS/postgres_dba"
+"Parsely/pykafka" -> "confluentinc/bottledwater-pg" ["e"=1]
 "IvorySQL/IvorySQL" -> "orafce/orafce"
 "IvorySQL/IvorySQL" -> "IvorySQL/Ivory-www"
 "IvorySQL/IvorySQL" -> "IvorySQL/ivory-operator"
@@ -1614,14 +1772,20 @@ digraph G {
 "awslabs/pgbouncer-fast-switchover" -> "postgrespro/pg_shardman"
 "awslabs/pgbouncer-fast-switchover" -> "EnterpriseDB/pg_catcheck"
 "awslabs/pgbouncer-fast-switchover" -> "petergeoghegan/pg_hexedit"
+"yandex/porto" -> "yandex/pgmigrate" ["e"=1]
+"yandex/porto" -> "yandex/pgconsul" ["e"=1]
+"yandex/porto" -> "open-gpdb/yezzey" ["e"=1]
+"yandex/porto" -> "postgrespro/mamonsu" ["e"=1]
 "sqlectron/sqlectron-term" -> "sqlectron/sqlectron-gui"
 "sqlectron/sqlectron-term" -> "sqlectron/sqlectron-core"
 "sqlectron/sqlectron-term" -> "coffeeandscripts/sqlcrush"
+"jcuga/golongpoll" -> "nanopack/mist" ["e"=1]
 "digoal/pgsql_admin_script" -> "digoal/PostgreSQL_HA_with_primary_standby_2vip"
 "digoal/pgsql_admin_script" -> "digoal/postgres_exam_lib"
 "digoal/pgsql_admin_script" -> "digoal/sky_postgresql_cluster"
 "digoal/pgsql_admin_script" -> "xiongcccc/pgcheck"
 "digoal/pgsql_admin_script" -> "xiaoboluo768/qianjinliangfang" ["e"=1]
+"mathiasertl/fabric" -> "renskiy/fabricio" ["e"=1]
 "calebmer/postgrest-client" -> "recmo/PostgrestSkeleton"
 "calebmer/postgrest-client" -> "criles25/postgrest-auth"
 "calebmer/postgrest-client" -> "srid/spas"
@@ -1666,6 +1830,8 @@ digraph G {
 "atris/JDBC_FDW" -> "ZhengYang/odbc_fdw"
 "vyalovvldmr/onx" -> "cordalace/nsjwt"
 "ThatianeDeboleto/JogosPython" -> "aws-samples/aws-dms-archive-data"
+"ankane/pgslice" -> "pgpartman/pg_partman" ["e"=1]
+"ytsaurus/ytsaurus" -> "yandex/odyssey" ["e"=1]
 "citusdata/citus" -> "patroni/patroni"
 "citusdata/citus" -> "timescale/timescaledb" ["e"=1]
 "citusdata/citus" -> "greenplum-db/gpdb" ["e"=1]
@@ -1719,6 +1885,7 @@ digraph G {
 "pgpartman/pg_partman" -> "cybertec-postgresql/pg_timetable"
 "pgpartman/pg_partman" -> "patroni/patroni"
 "jnidzwetzki/pg-lock-tracer" -> "Aiven-Open/pgtracer"
+"sqlpage/SQLPage" -> "darold/pgFormatter" ["e"=1]
 "dimitri/pgloader" -> "darold/pgbadger"
 "dimitri/pgloader" -> "citusdata/citus"
 "dimitri/pgloader" -> "reorg/pg_repack"
@@ -1749,7 +1916,14 @@ digraph G {
 "postgrespro/pg_probackup" -> "postgrespro/pg_shardman"
 "postgrespro/pg_probackup" -> "powa-team/pg_stat_kcache"
 "postgrespro/pg_probackup" -> "dataegret/pg-utils"
+"graphile/crystal" -> "PostgREST/postgrest" ["e"=1]
+"Swfuse/devops-interview" -> "vitabaks/autobase" ["e"=1]
+"skaiworldwide-oss/agensgraph" -> "postgrespro/rum" ["e"=1]
 "posix4e/rpgffi" -> "posix4e/jsoncdc"
+"ramnes/awesome-mongodb" -> "dhamaniasad/awesome-postgres" ["e"=1]
+"ondras/wwwsqldesigner" -> "pgmodeler/pgmodeler" ["e"=1]
+"ondras/wwwsqldesigner" -> "sqlpad/sqlpad" ["e"=1]
+"plotly/falcon" -> "sqlpad/sqlpad" ["e"=1]
 "OmniDB/OmniDB" -> "sqlpad/sqlpad"
 "OmniDB/OmniDB" -> "sosedoff/pgweb" ["e"=1]
 "OmniDB/OmniDB" -> "dbeaver/cloudbeaver"
@@ -1766,6 +1940,7 @@ digraph G {
 "OmniDB/OmniDB" -> "myide/see" ["e"=1]
 "OmniDB/OmniDB" -> "citusdata/citus"
 "sunng87/pgwire" -> "jeroenrinzema/psql-wire"
+"omnigres/omnigres" -> "sraoss/pg_ivm" ["e"=1]
 "2ndQuadrant/pglogical" -> "2ndQuadrant/bdr"
 "2ndQuadrant/pglogical" -> "EnterpriseDB/repmgr"
 "2ndQuadrant/pglogical" -> "reorg/pg_repack"
@@ -1808,6 +1983,9 @@ digraph G {
 "yandex/mysync" -> "man-brain/repl_mon"
 "yandex/mysync" -> "open-gpdb/yezzey"
 "yandex/mysync" -> "yandex/rdsync"
+"garrylachman/ElectroCRUD" -> "sqlectron/sqlectron-gui" ["e"=1]
+"supabase/wrappers" -> "pgsql-io/multicorn2" ["e"=1]
+"supabase/wrappers" -> "taminomara/psql-hooks" ["e"=1]
 "lorint/AdventureWorks-for-Postgres" -> "morenoh149/postgresDBSamples"
 "lorint/AdventureWorks-for-Postgres" -> "devrimgunduz/pagila"
 "lorint/AdventureWorks-for-Postgres" -> "pthom/northwind_psql"
@@ -1827,6 +2005,7 @@ digraph G {
 "postgrespro/rum" -> "okbob/plpgsql_check"
 "postgrespro/rum" -> "powa-team/pg_stat_kcache"
 "postgrespro/rum" -> "citusdata/postgresql-hll"
+"yandex/yandex-tank" -> "yandex/odyssey" ["e"=1]
 "pgpool/pgpool2" -> "pgpool/pgpooladmin"
 "pgpool/pgpool2" -> "EnterpriseDB/zheap"
 "pgpool/pgpool2" -> "petergeoghegan/pg_hexedit"
@@ -1847,6 +2026,7 @@ digraph G {
 "pgmodeler/pgmodeler" -> "pgadmin-org/pgadmin4"
 "pgmodeler/pgmodeler" -> "okfn-brasil/querido-diario" ["e"=1]
 "pgmodeler/pgmodeler" -> "cybertec-postgresql/pgwatch2"
+"rwynn/monstache" -> "toluaina/pgsync" ["e"=1]
 "renskiy/fabricio" -> "cordalace/nsjwt"
 "nilenso/postgresql-monitoring" -> "thecasualcoder/lazy-connect" ["e"=1]
 "nilenso/postgresql-monitoring" -> "gojek/ziggurat" ["e"=1]
@@ -1888,6 +2068,7 @@ digraph G {
 "diogob/postgres-websockets" -> "frafra/postgresql2websocket"
 "diogob/postgres-websockets" -> "subzerocloud/postgrest-starter-kit"
 "dmtolpeko/sqlines" -> "darold/ora2pg"
+"debezium/container-images" -> "debezium/postgres-decoderbufs" ["e"=1]
 "simon-engledew/gocmdpev" -> "bradurani/pg-eyeballs"
 "simon-engledew/gocmdpev" -> "AlexTatiyants/pev"
 "simon-engledew/gocmdpev" -> "pganalyze/pg_query"
@@ -1988,6 +2169,10 @@ digraph G {
 "Code-Institute-Org/ci-full-template" -> "Code-Institute-Org/gitpod-full-template"
 "Code-Institute-Org/ci-full-template" -> "Code-Institute-Solutions/readme-template"
 "Code-Institute-Org/ci-full-template" -> "kera-cudmore/readme-examples"
+"supabase-community/postgres-language-server" -> "pganalyze/libpg_query" ["e"=1]
+"pgmq/pgmq" -> "citusdata/pg_cron" ["e"=1]
+"pgmq/pgmq" -> "pgpartman/pg_partman" ["e"=1]
+"schemaspy/schemaspy" -> "sqitchers/sqitch" ["e"=1]
 "pgbouncer/pgbouncer" -> "postgresml/pgcat" ["e"=1]
 "pgbouncer/pgbouncer" -> "yandex/odyssey"
 "pgbouncer/pgbouncer" -> "darold/pgbadger"
@@ -2037,6 +2222,11 @@ digraph G {
 "pgautoupgrade/docker-pgautoupgrade" -> "tianon/docker-postgres-upgrade"
 "pgautoupgrade/docker-pgautoupgrade" -> "shayonj/pg_easy_replicate" ["e"=1]
 "pgautoupgrade/docker-pgautoupgrade" -> "efrecon/pgbackup"
+"supabase/index_advisor" -> "HypoPG/hypopg" ["e"=1]
+"shayonj/pg_easy_replicate" -> "dimitri/pgcopydb" ["e"=1]
+"shayonj/pg_easy_replicate" -> "cybertec-postgresql/pg_squeeze" ["e"=1]
+"shayonj/pg_easy_replicate" -> "percona/pg_stat_monitor" ["e"=1]
+"shayonj/pg_easy_replicate" -> "NikolayS/postgres_dba" ["e"=1]
 "reorg/pg_repack" -> "cybertec-postgresql/pg_squeeze"
 "reorg/pg_repack" -> "pgexperts/pgx_scripts"
 "reorg/pg_repack" -> "pgpartman/pg_partman"
@@ -2054,6 +2244,7 @@ digraph G {
 "reorg/pg_repack" -> "yandex/odyssey"
 "debezium/postgres-decoderbufs" -> "xstevens/decoderbufs"
 "debezium/postgres-decoderbufs" -> "eulerto/wal2json"
+"sql-formatter-org/sql-formatter" -> "darold/pgFormatter" ["e"=1]
 "postgrespro/zson" -> "postgrespro/pg_pathman"
 "postgrespro/zson" -> "postgrespro/pg_query_state"
 "postgrespro/zson" -> "lacanoid/pgddl"
@@ -2167,6 +2358,8 @@ digraph G {
 "cybertec-postgresql/pg_squeeze" -> "zubkov-andrei/pg_profile"
 "cybertec-postgresql/pg_squeeze" -> "CrunchyData/pgmonitor"
 "cybertec-postgresql/pg_squeeze" -> "keithf4/pg_bloat_check"
+"stripe-archive/mosql" -> "EnterpriseDB/mongo_fdw" ["e"=1]
+"stripe-archive/mosql" -> "compose/governor" ["e"=1]
 "wal-e/wal-e" -> "wal-g/wal-g"
 "wal-e/wal-e" -> "Aiven-Open/pghoard"
 "wal-e/wal-e" -> "EnterpriseDB/barman"
@@ -2182,6 +2375,9 @@ digraph G {
 "wal-e/wal-e" -> "dhamaniasad/awesome-postgres"
 "wal-e/wal-e" -> "ankane/pgsync" ["e"=1]
 "wal-e/wal-e" -> "reorg/pg_repack"
+"strizhechenko/netutils-linux" -> "postgrespro/mamonsu" ["e"=1]
+"strizhechenko/netutils-linux" -> "lesovsky/pgcenter" ["e"=1]
+"gavinwahl/postgres-json-schema" -> "okbob/plpgsql_check" ["e"=1]
 "orafce/orafce" -> "darold/ora2pg"
 "orafce/orafce" -> "laurenz/oracle_fdw"
 "orafce/orafce" -> "darold/pgtt"
@@ -2197,6 +2393,7 @@ digraph G {
 "orafce/orafce" -> "postgrespro/pg_wait_sampling"
 "orafce/orafce" -> "petergeoghegan/pg_hexedit"
 "orafce/orafce" -> "cybertec-postgresql/pg_permissions"
+"supabase/pg_replicate" -> "sunng87/pgwire" ["e"=1]
 "postgrespro/aqo" -> "ossc-db/pg_plan_advsr"
 "postgrespro/aqo" -> "s-hironobu/pg_plan_inspector"
 "postgrespro/aqo" -> "postgrespro/sr_plan"
@@ -2227,6 +2424,12 @@ digraph G {
 "darold/pgFormatter" -> "ioguix/pgsql-bloat-estimation"
 "darold/pgFormatter" -> "pgaudit/pgaudit"
 "darold/pgFormatter" -> "sqitchers/sqitch"
+"mla/pg_sample" -> "OPMDG/check_pgactivity" ["e"=1]
+"adamcooke/procodile" -> "bradurani/pg-eyeballs" ["e"=1]
+"khezen/compose-postgres" -> "sameersbn/docker-postgresql" ["e"=1]
+"prest/prest" -> "PostgREST/postgrest" ["e"=1]
+"prest/prest" -> "subzerocloud/postgrest-starter-kit" ["e"=1]
+"prest/prest" -> "zombodb/zombodb" ["e"=1]
 "jfcoz/postgresqltuner" -> "darold/pgbadger"
 "jfcoz/postgresqltuner" -> "le0pard/pgtune"
 "jfcoz/postgresqltuner" -> "lesovsky/pgcenter"
@@ -2242,6 +2445,7 @@ digraph G {
 "jfcoz/postgresqltuner" -> "dhamaniasad/awesome-postgres"
 "jfcoz/postgresqltuner" -> "EnterpriseDB/repmgr"
 "jfcoz/postgresqltuner" -> "pgbackrest/pgbackrest"
+"JesseKPhillips/USA-Constitution" -> "aquametalabs/aquameta" ["e"=1]
 "web-pal/DBGlass" -> "sasha-alias/sqltabs"
 "web-pal/DBGlass" -> "lukasmartinelli/pgclimb"
 "web-pal/DBGlass" -> "sqlectron/sqlectron-gui"
@@ -2276,6 +2480,9 @@ digraph G {
 "Jawf/DataX-Migration" -> "TianLangStudio/DataXServer"
 "Jawf/DataX-Migration" -> "Kyofin/springboot-datax"
 "pgadmin-org/pgagent" -> "pgadmin-org/pgadmin3"
+"timescale/timescaledb" -> "citusdata/citus" ["e"=1]
+"timescale/timescaledb" -> "PostgREST/postgrest" ["e"=1]
+"timescale/timescaledb" -> "patroni/patroni" ["e"=1]
 "arkhipov/temporal_tables" -> "nearform/temporal_tables"
 "arkhipov/temporal_tables" -> "xocolatl/periods"
 "arkhipov/temporal_tables" -> "scalegenius/pg_bitemporal"
@@ -2291,6 +2498,12 @@ digraph G {
 "arkhipov/temporal_tables" -> "powa-team/pg_qualstats"
 "arkhipov/temporal_tables" -> "df7cb/postgresql-unit"
 "arkhipov/temporal_tables" -> "metosin/spec-tools" ["e"=1]
+"CrunchyData/postgres-operator" -> "sorintlab/stolon" ["e"=1]
+"CrunchyData/postgres-operator" -> "patroni/patroni" ["e"=1]
+"CrunchyData/postgres-operator" -> "CrunchyData/crunchy-containers" ["e"=1]
+"CrunchyData/postgres-operator" -> "pgbackrest/pgbackrest" ["e"=1]
+"xo/usql" -> "okbob/pspg" ["e"=1]
+"cmu-db/ottertune" -> "postgrespro/aqo" ["e"=1]
 "pgadmin-org/pgadmin4" -> "postgres/postgres" ["e"=1]
 "pgadmin-org/pgadmin4" -> "docker-library/postgres" ["e"=1]
 "pgadmin-org/pgadmin4" -> "pgadmin-org/pgagent"
@@ -2306,6 +2519,9 @@ digraph G {
 "pgadmin-org/pgadmin4" -> "encode/uvicorn" ["e"=1]
 "pgadmin-org/pgadmin4" -> "prometheus-community/postgres_exporter" ["e"=1]
 "pgadmin-org/pgadmin4" -> "pgadmin-org/pgadmin3"
+"Mooncake-Labs/pg_mooncake" -> "sraoss/pg_ivm" ["e"=1]
+"Mooncake-Labs/pg_mooncake" -> "apache/cloudberry" ["e"=1]
+"LappleApple/feedmereadmes" -> "djrobstep/migra" ["e"=1]
 "EnterpriseDB/zheap" -> "postgrespro/vops"
 "EnterpriseDB/zheap" -> "greenplum-db/postgres-archive"
 "EnterpriseDB/zheap" -> "cybertec-postgresql/postgres"
@@ -2319,8 +2535,12 @@ digraph G {
 "EnterpriseDB/zheap" -> "postgrespro/pg_shardman"
 "EnterpriseDB/zheap" -> "postgrespro/postgresql.builtin_pool" ["e"=1]
 "EnterpriseDB/zheap" -> "orafce/orafce"
+"jiayihu/pretty-algorithms" -> "jarulraj/sqlcheck" ["e"=1]
+"fgmacedo/python-statemachine" -> "loggi/loggibud" ["e"=1]
 "maxlapshin/mysql2postgres" -> "lanyrd/mysql-postgresql-converter"
 "maxlapshin/mysql2postgres" -> "philipsoutham/py-mysql2pgsql"
+"CrunchyData/pg_parquet" -> "cybertec-postgresql/pg_squeeze" ["e"=1]
+"nexsol-technologies/pgassistant" -> "cybertec-postgresql/pgwatch" ["e"=1]
 "jarulraj/sqlcheck" -> "darold/pgFormatter"
 "jarulraj/sqlcheck" -> "ankane/dexter" ["e"=1]
 "jarulraj/sqlcheck" -> "lesovsky/pgcenter"
@@ -2347,6 +2567,9 @@ digraph G {
 "amutu/zhparser" -> "digoal/pgsql_admin_script"
 "amutu/zhparser" -> "pgroonga/pgroonga"
 "amutu/zhparser" -> "ossc-db/pg_bulkload"
+"le0pard/postgresql_book" -> "postgrespro/mamonsu" ["e"=1]
+"le0pard/postgresql_book" -> "postgrespro/pg_probackup" ["e"=1]
+"le0pard/postgresql_book" -> "postgres-ai/postgres-checkup" ["e"=1]
 "cybertec-postgresql/postgres-showcase" -> "cybertec-postgresql/pg_permissions"
 "cybertec-postgresql/postgres-showcase" -> "cybertec-postgresql/pg_show_plans"
 "cybertec-postgresql/postgres-showcase" -> "omniti-labs/curo"
@@ -2369,6 +2592,7 @@ digraph G {
 "open-gpdb/gp_relsizes_stats" -> "open-gpdb/gp_relaccess_stats"
 "madlib/archived_madlib" -> "greenplum-db/PivotalR-archive"
 "madlib/archived_madlib" -> "apache/madlib"
+"uber/queryparser" -> "pganalyze/libpg_query" ["e"=1]
 "csc-training/hpc-python" -> "csc-training/summerschool"
 "csc-training/hpc-python" -> "csc-training/advanced-parallel-prog"
 "citusdata/postgresql-hll" -> "citusdata/postgresql-topn"
@@ -2414,6 +2638,7 @@ digraph G {
 "open-gpdb/gpdb" -> "open-gpdb/yezzey"
 "open-gpdb/gpdb" -> "open-gpdb/gp_relaccess_stats"
 "open-gpdb/gpdb" -> "munakoiso/pg_comment_stats"
+"postgres/postgres" -> "citusdata/citus" ["e"=1]
 "wal-g/wal-g" -> "wal-e/wal-e"
 "wal-g/wal-g" -> "yandex/odyssey"
 "wal-g/wal-g" -> "pgbackrest/pgbackrest"
@@ -2447,6 +2672,10 @@ digraph G {
 "dalibo/ldap2pg" -> "dalibo/pitrery"
 "dalibo/ldap2pg" -> "dalibo/temboard"
 "dalibo/ldap2pg" -> "larskanis/pg-ldap-sync"
+"HVF/franchise" -> "sqlpad/sqlpad" ["e"=1]
+"zalando/postgres-operator" -> "zalando/spilo" ["e"=1]
+"zalando/postgres-operator" -> "patroni/patroni" ["e"=1]
+"zalando/postgres-operator" -> "sorintlab/stolon" ["e"=1]
 "mrts/docker-postgresql-multiple-databases" -> "MartinKaburu/docker-postgresql-multiple-databases"
 "mrts/docker-postgresql-multiple-databases" -> "edoburu/docker-pgbouncer"
 "subzerocloud/postgrest-starter-kit" -> "subzerocloud/subzero-starter-kit"
@@ -2464,6 +2693,7 @@ digraph G {
 "subzerocloud/postgrest-starter-kit" -> "pramsey/pgsql-http"
 "subzerocloud/postgrest-starter-kit" -> "PostgREST/postgrest-docs"
 "subzerocloud/postgrest-starter-kit" -> "prest/prest" ["e"=1]
+"ankane/dexter" -> "HypoPG/hypopg" ["e"=1]
 "nearform/temporal_tables" -> "arkhipov/temporal_tables"
 "nearform/temporal_tables" -> "xocolatl/periods"
 "nearform/temporal_tables" -> "supabase/supa_audit"
@@ -2471,6 +2701,10 @@ digraph G {
 "nearform/temporal_tables" -> "pgMemento/pgMemento"
 "nearform/temporal_tables" -> "BemiHQ/bemi" ["e"=1]
 "nearform/temporal_tables" -> "ifad/chronomodel"
+"microsoft/documentdb" -> "cybertec-postgresql/pgwatch" ["e"=1]
+"microsoft/documentdb" -> "hapostgres/pg_auto_failover" ["e"=1]
+"microsoft/documentdb" -> "CrunchyData/pgmonitor" ["e"=1]
+"heavyai/heavydb" -> "heterodb/pg-strom" ["e"=1]
 "michaelpq/pg_plugins" -> "powa-team/pg_stat_kcache"
 "michaelpq/pg_plugins" -> "petergeoghegan/pg_hexedit"
 "michaelpq/pg_plugins" -> "postgrespro/pg_query_state"
@@ -2484,6 +2718,10 @@ digraph G {
 "michaelpq/pg_plugins" -> "taminomara/psql-hooks"
 "michaelpq/pg_plugins" -> "vibhorkum/pg_background"
 "michaelpq/pg_plugins" -> "erthalion/postgres-bcc"
+"pgdogdev/pgdog" -> "sraoss/pg_ivm" ["e"=1]
+"blastrain/vitess-sqlparser" -> "pganalyze/pg_query_go" ["e"=1]
+"blastrain/vitess-sqlparser" -> "auxten/postgresql-parser" ["e"=1]
+"lesovsky/zabbix-extensions" -> "postgrespro/mamonsu" ["e"=1]
 "HaloLab001/hmt-web" -> "HaloLab001/dbms_redefinition"
 "HaloLab001/hmt-web" -> "HaloLab001/halo_migrate"
 "HaloTech-Co-Ltd/openHalo" -> "HaloLab001/hmt-web"
@@ -2506,6 +2744,9 @@ digraph G {
 "okbob/pspg" -> "postgrespro/pg_probackup"
 "okbob/pspg" -> "HypoPG/hypopg"
 "okbob/pspg" -> "AlexTatiyants/pev"
+"lelit/pglast" -> "pganalyze/libpg_query" ["e"=1]
+"lelit/pglast" -> "pganalyze/pg_query" ["e"=1]
+"lelit/pglast" -> "s-hironobu/pg_plan_inspector" ["e"=1]
 "subzerocloud/pg-amqp-bridge" -> "gmr/pgsql-listen-exchange"
 "subzerocloud/pg-amqp-bridge" -> "subzerocloud/postgrest-starter-kit"
 "subzerocloud/pg-amqp-bridge" -> "omniti-labs/pg_amqp"
@@ -2517,24 +2758,35 @@ digraph G {
 "ozontech/pg_doorman" -> "open-gpdb/yezzey"
 "sorintlab/sircles" -> "sorintlab/sorintoss-site"
 "sorintlab/sircles" -> "sorintlab/nbupy"
+"simonw/datasette" ["l"="5.353,-8.998", "c"=0]
+"PostgREST/postgrest" ["l"="2.477,13.623"]
 "sameersbn/docker-postgresql" ["l"="2.751,13.819"]
-"docker-library/postgres" ["l"="5.677,-11.974"]
+"docker-library/postgres" ["l"="5.677,-11.974", "c"=270]
 "paunin/PostDock" ["l"="2.734,13.753"]
 "sameersbn/docker-redis" ["l"="2.776,13.925"]
 "DanielDent/docker-postgres-replication" ["l"="2.721,13.838"]
-"sameersbn/docker-redmine" ["l"="2.077,-36.391"]
-"sameersbn/docker-gitlab" ["l"="6.05,-12.022"]
+"sameersbn/docker-redmine" ["l"="2.077,-36.391", "c"=1155]
+"sameersbn/docker-gitlab" ["l"="6.05,-12.022", "c"=270]
 "postgrespro/pg_probackup" ["l"="2.824,13.581"]
-"bessonovevgen/srv-1c-zabbix-template" ["l"="-43.502,24.811"]
-"bitnami/bitnami-docker-postgresql" ["l"="6.01,-11.702"]
+"bessonovevgen/srv-1c-zabbix-template" ["l"="-43.502,24.811", "c"=158]
+"bitnami/bitnami-docker-postgresql" ["l"="6.01,-11.702", "c"=270]
 "andreagrandi/postgresql-docker" ["l"="2.759,13.863"]
 "sameersbn/docker-mysql" ["l"="2.766,13.901"]
-"oscript-library/gitsync" ["l"="-43.434,24.921"]
+"oscript-library/gitsync" ["l"="-43.434,24.921", "c"=158]
 "sorintlab/stolon" ["l"="2.684,13.731"]
-"angstwad/docker.ubuntu" ["l"="7.888,-13.147"]
-"docker-archive/dockercloud-haproxy" ["l"="6.21,-12.405"]
+"angstwad/docker.ubuntu" ["l"="7.888,-13.147", "c"=739]
+"docker-archive/dockercloud-haproxy" ["l"="6.21,-12.405", "c"=270]
 "pgspider/sqlite_fdw" ["l"="2.962,13.233"]
 "pgspider/pgspider" ["l"="3.017,13.165"]
+"hasura/graphql-engine" ["l"="-0.067,-20.836", "c"=153]
+"google/zetasql" ["l"="1.907,13.449", "c"=376]
+"pganalyze/libpg_query" ["l"="2.907,13.579"]
+"pawelsalawa/sqlitestudio" ["l"="-49.198,10.073", "c"=59]
+"dbgate/dbgate" ["l"="2.542,14.022"]
+"yugabyte/yugabyte-db" ["l"="-19.677,-24.87", "c"=10]
+"citusdata/citus" ["l"="2.616,13.667"]
+"analysys/presto-hbase-connector" ["l"="-2.279,14.831", "c"=43]
+"TianLangStudio/DataXServer" ["l"="2.484,12.931"]
 "zubkov-andrei/pg_profile" ["l"="2.863,13.532"]
 "postgrespro/pg_wait_sampling" ["l"="2.885,13.514"]
 "powa-team/pg_stat_kcache" ["l"="2.874,13.516"]
@@ -2563,6 +2815,10 @@ digraph G {
 "hapostgres/pg_auto_failover" ["l"="2.764,13.583"]
 "HypoPG/hypopg" ["l"="2.826,13.535"]
 "theory/pgenv" ["l"="2.843,13.428"]
+"murongqimiao/DAG-diagram" ["l"="-3.421,-42.771", "c"=485]
+"Liwengbin/vue-task-node" ["l"="2.365,12.79"]
+"woodpecker-ci/woodpecker" ["l"="12.065,-9.284", "c"=18]
+"agola-io/agola" ["l"="2.513,13.813"]
 "theory/pgtap" ["l"="2.775,13.441"]
 "sqitchers/sqitch" ["l"="2.707,13.457"]
 "darold/pgFormatter" ["l"="2.768,13.535"]
@@ -2572,75 +2828,98 @@ digraph G {
 "perseas/Pyrseas" ["l"="2.738,13.417"]
 "pgpartman/pg_partman" ["l"="2.768,13.56"]
 "mixerp/plpgunit" ["l"="2.717,13.392"]
+"Altinity/clickhouse-operator" ["l"="1.19,-9.223", "c"=1144]
+"jaegertracing/jaeger-clickhouse" ["l"="2.97,13.105"]
+"spotify/dh-virtualenv" ["l"="45.205,20.858", "c"=20]
+"spotify/postgresql-metrics" ["l"="2.876,13.684"]
+"uber/aresdb" ["l"="1.962,13.497", "c"=376]
+"heterodb/pg-strom" ["l"="2.952,13.541"]
 "yandex/odyssey" ["l"="2.745,13.601"]
 "wal-g/wal-g" ["l"="2.732,13.674"]
-"postgresml/pgcat" ["l"="3.805,13.584"]
-"pg-sharding/spqr" ["l"="3.798,13.502"]
+"postgresml/pgcat" ["l"="3.805,13.584", "c"=850]
+"pg-sharding/spqr" ["l"="3.798,13.502", "c"=850]
 "pgbouncer/pgbouncer" ["l"="2.686,13.622"]
 "reorg/pg_repack" ["l"="2.779,13.583"]
 "patroni/patroni" ["l"="2.688,13.666"]
-"orioledb/orioledb" ["l"="3.879,13.586"]
+"orioledb/orioledb" ["l"="3.879,13.586", "c"=850]
 "dataegret/pg-utils" ["l"="2.836,13.607"]
 "postgrespro/pg_pathman" ["l"="2.841,13.503"]
 "darold/pgbadger" ["l"="2.715,13.608"]
-"ydb-platform/ydb" ["l"="-44.617,26.624"]
+"ydb-platform/ydb" ["l"="-44.617,26.624", "c"=1289]
 "vitabaks/autobase" ["l"="2.789,13.654"]
 "pgbackrest/pgbackrest" ["l"="2.732,13.629"]
 "zalando/spilo" ["l"="2.764,13.703"]
 "cybertec-postgresql/vip-manager" ["l"="2.832,13.448"]
-"zalando/postgres-operator" ["l"="7.982,-9.153"]
-"prometheus-community/postgres_exporter" ["l"="9.382,-10.678"]
+"zalando/postgres-operator" ["l"="7.982,-9.153", "c"=14]
+"prometheus-community/postgres_exporter" ["l"="9.382,-10.678", "c"=484]
 "pipelinedb/pipelinedb" ["l"="2.841,13.677"]
 "citusdata/cstore_fdw" ["l"="2.854,13.594"]
-"filodb/FiloDB" ["l"="-2.542,17.11"]
+"filodb/FiloDB" ["l"="-2.542,17.11", "c"=455]
 "confluentinc/bottledwater-pg" ["l"="2.807,13.709"]
-"citusdata/citus" ["l"="2.616,13.667"]
-"greenplum-db/gpdb" ["l"="-2.78,14.807"]
-"timescale/timescaledb" ["l"="-19.599,-24.74"]
-"confluentinc/ksql" ["l"="-0.612,16.93"]
-"heterodb/pg-strom" ["l"="2.952,13.541"]
-"cmu-db/peloton" ["l"="1.808,13.463"]
-"heavyai/heavydb" ["l"="1.852,13.548"]
+"greenplum-db/gpdb" ["l"="-2.78,14.807", "c"=43]
+"timescale/timescaledb" ["l"="-19.599,-24.74", "c"=10]
+"confluentinc/ksql" ["l"="-0.612,16.93", "c"=398]
+"cmu-db/peloton" ["l"="1.808,13.463", "c"=376]
+"heavyai/heavydb" ["l"="1.852,13.548", "c"=376]
 "citusdata/pg_shard" ["l"="2.85,13.72"]
-"BTrDB/btrdb-server" ["l"="4.231,-7.856"]
-"tylertreat/BoomFilters" ["l"="4.035,-8.107"]
+"BTrDB/btrdb-server" ["l"="4.231,-7.856", "c"=0]
+"tylertreat/BoomFilters" ["l"="4.035,-8.107", "c"=0]
 "zombodb/zombodb" ["l"="2.678,13.574"]
+"NUKnightLab/sql-mysteries" ["l"="25.775,-28.994", "c"=228]
+"dalibo/pev2" ["l"="2.705,13.524"]
 "rapidloop/pgmetrics" ["l"="2.841,13.579"]
 "zalando/pg_view" ["l"="2.885,13.658"]
 "CrunchyData/pgmonitor" ["l"="2.836,13.554"]
 "dimitri/pgcopydb" ["l"="2.793,13.532"]
+"trimstray/htrace.sh" ["l"="-14.036,-6.464", "c"=86]
+"jfcoz/postgresqltuner" ["l"="2.718,13.583"]
 "le0pard/pgtune" ["l"="2.756,13.633"]
 "gregs1104/pgtune" ["l"="2.861,13.647"]
-"jfcoz/postgresqltuner" ["l"="2.718,13.583"]
 "EnterpriseDB/barman" ["l"="2.715,13.648"]
+"mgramin/awesome-db-tools" ["l"="26.154,-26.023", "c"=32]
+"dhamaniasad/awesome-postgres" ["l"="2.608,13.614"]
 "dataegret/pgcompacttable" ["l"="2.885,13.557"]
 "pgexperts/pgx_scripts" ["l"="2.79,13.556"]
 "ioguix/pgsql-bloat-estimation" ["l"="2.849,13.564"]
 "lesovsky/uber-scripts" ["l"="2.898,13.636"]
+"Paxa/postbird" ["l"="4.152,-20.745", "c"=396]
+"sqlectron/sqlectron-gui" ["l"="2.618,13.981"]
+"tanelpoder/tpt-oracle" ["l"="4.599,-4.47", "c"=471]
+"roxy-wi/roxy-wi" ["l"="9.181,-8.988", "c"=14]
 "faisalbasra/postgres_books" ["l"="2.677,13.324"]
 "xiongcccc/PostgreSQL-Ecosystem" ["l"="2.694,13.364"]
 "francs/PostgreSQL" ["l"="2.602,13.308"]
-"tangwz/db-monthly" ["l"="0.52,14.012"]
+"tangwz/db-monthly" ["l"="0.52,14.012", "c"=115]
 "xfg0218/greenplum--summarize" ["l"="2.708,13.205"]
 "xiongcccc/postgres-howto" ["l"="2.711,13.367"]
-"DistSysCorp/jobs" ["l"="0.425,13.94"]
+"DistSysCorp/jobs" ["l"="0.425,13.94", "c"=115]
 "ChenHuajun/blog_xqhx" ["l"="2.664,13.341"]
 "dongxuyang1985/postgresql_dev_guide" ["l"="2.639,13.288"]
-"opengauss-mirror/openGauss-server" ["l"="0.711,14.125"]
-"ApsaraDB/PolarDB-for-PostgreSQL" ["l"="0.708,14.09"]
+"opengauss-mirror/openGauss-server" ["l"="0.711,14.125", "c"=115]
+"ApsaraDB/PolarDB-for-PostgreSQL" ["l"="0.708,14.09", "c"=115]
 "ClusterLabs/PAF" ["l"="2.853,13.547"]
-"SolerHo/database-kernel-develop" ["l"="0.453,14.049"]
-"hanson007/FirstBlood" ["l"="2.555,13.04"]
+"SolerHo/database-kernel-develop" ["l"="0.453,14.049", "c"=115]
+"rin-nas/postgresql-patterns-library" ["l"="-43.696,24.494", "c"=158]
+"beekeeper-studio/beekeeper-studio" ["l"="15.417,-10.381", "c"=198]
+"JoeyBling/webkettle" ["l"="-2.308,15.241", "c"=43]
 "Kyofin/springboot-datax" ["l"="2.498,12.945"]
+"hanson007/FirstBlood" ["l"="2.555,13.04"]
 "zipingdong/datax-web" ["l"="2.52,12.945"]
 "hellobike/tunnel" ["l"="2.592,13.154"]
-"WeiYe-Jing/datax-web-ui" ["l"="-2.371,15.12"]
+"WeiYe-Jing/datax-web-ui" ["l"="-2.371,15.12", "c"=43]
 "HashDataInc/bireme" ["l"="2.63,13.156"]
 "andotorg/JDataX" ["l"="2.544,13.016"]
-"WeBankFinTech/Scriptis" ["l"="-2.408,14.989"]
+"WeBankFinTech/Scriptis" ["l"="-2.408,14.989", "c"=43]
 "WeiYe-Jing/datax-vue-admin" ["l"="2.525,12.99"]
 "hellobike/amazonriver" ["l"="2.62,13.243"]
+"jackc/tern" ["l"="4.26,-9.155", "c"=0]
+"pganalyze/pg_query_go" ["l"="2.931,13.633"]
+"hzjken/multimodal-transportation-optimization" ["l"="44.396,18.394", "c"=351]
+"xNok/OR_location_routing_problem_study" ["l"="3.384,13.855"]
 "EnterpriseDB/repmgr" ["l"="2.764,13.656"]
+"yandex-cloud/terraform-provider-yandex" ["l"="3.291,-6.674", "c"=0]
+"yandex/pgconsul" ["l"="2.959,13.127"]
+"open-gpdb/yezzey" ["l"="2.945,13.171"]
 "eulerto/wal2json" ["l"="2.857,13.621"]
 "debezium/postgres-decoderbufs" ["l"="2.891,13.706"]
 "2ndQuadrant/pglogical" ["l"="2.815,13.601"]
@@ -2660,41 +2939,42 @@ digraph G {
 "pramsey/pgsql-postal" ["l"="2.983,13.388"]
 "df7cb/postgresql-unit" ["l"="2.939,13.312"]
 "pganalyze/pg_query" ["l"="2.884,13.6"]
-"pganalyze/libpg_query" ["l"="2.907,13.579"]
-"pganalyze/pg_query_go" ["l"="2.931,13.633"]
-"lelit/pglast" ["l"="-2.138,14.755"]
-"basecamp/marginalia" ["l"="4.443,-37.605"]
-"afair/postgresql_cursor" ["l"="4.549,-37.777"]
-"ankane/dexter" ["l"="4.51,-37.677"]
-"charkost/prosopite" ["l"="4.368,-37.681"]
-"grodowski/undercover" ["l"="4.369,-37.669"]
+"lelit/pglast" ["l"="-2.138,14.755", "c"=43]
+"basecamp/marginalia" ["l"="4.443,-37.605", "c"=1]
+"afair/postgresql_cursor" ["l"="4.549,-37.777", "c"=1]
+"ankane/dexter" ["l"="4.51,-37.677", "c"=1]
+"charkost/prosopite" ["l"="4.368,-37.681", "c"=1]
+"grodowski/undercover" ["l"="4.369,-37.669", "c"=1]
 "laurenz/pgreplay" ["l"="2.922,13.514"]
-"palkan/isolator" ["l"="4.42,-37.686"]
-"ankane/pgslice" ["l"="4.545,-37.704"]
-"nevir/Bumbler" ["l"="4.317,-37.733"]
-"GeorgeKaraszi/ActiveRecordExtended" ["l"="4.467,-37.678"]
-"agola-io/agola" ["l"="2.513,13.813"]
+"palkan/isolator" ["l"="4.42,-37.686", "c"=1]
+"ankane/pgslice" ["l"="4.545,-37.704", "c"=1]
+"nevir/Bumbler" ["l"="4.317,-37.733", "c"=1]
+"GeorgeKaraszi/ActiveRecordExtended" ["l"="4.467,-37.678", "c"=1]
 "SYNwall/SYNwall" ["l"="2.54,13.828"]
 "ercole-io/ercole" ["l"="2.52,13.853"]
-"woodpecker-ci/woodpecker" ["l"="12.065,-9.284"]
 "ercole-io/ercole-agent" ["l"="2.503,13.842"]
 "sorintlab/sircles" ["l"="2.491,13.859"]
 "bleenco/abstruse" ["l"="2.425,13.853"]
 "agola-io/agola-site" ["l"="2.535,13.808"]
 "agola-io/agola-web" ["l"="2.473,13.815"]
 "sorintlab/pollon" ["l"="2.493,13.833"]
-"ovh/cds" ["l"="8.171,-8.659"]
-"antonmks/Alenka" ["l"="-15.808,-8.27"]
+"ovh/cds" ["l"="8.171,-8.659", "c"=14]
+"ucarGroup/DataLink" ["l"="-2.431,15.037", "c"=43]
+"antonmks/Alenka" ["l"="-15.808,-8.27", "c"=1915]
 "kaigai/pg_strom" ["l"="3.04,13.547"]
 "apache/madlib" ["l"="3.056,13.348"]
-"alitrack/duckdb_fdw" ["l"="3.658,13.515"]
+"alitrack/duckdb_fdw" ["l"="3.658,13.515", "c"=850]
 "ossc-db/pg_hint_plan" ["l"="2.85,13.488"]
-"BlazingDB/blazingsql" ["l"="43.911,23.653"]
-"pgspider/parquet_s3_fdw" ["l"="3.635,13.522"]
-"adjust/parquet_fdw" ["l"="3.615,13.533"]
-"CrunchyData/postgres-operator" ["l"="8.006,-9.107"]
+"BlazingDB/blazingsql" ["l"="43.911,23.653", "c"=95]
+"pgspider/parquet_s3_fdw" ["l"="3.635,13.522", "c"=850]
+"adjust/parquet_fdw" ["l"="3.615,13.533", "c"=850]
+"CrunchyData/postgres-operator" ["l"="8.006,-9.107", "c"=14]
+"gobackup/gobackup" ["l"="8.723,-5.687", "c"=278]
+"hightman/scws" ["l"="-19.087,25.195", "c"=37]
+"amutu/zhparser" ["l"="2.851,13.324"]
 "grayhemp/pgcookbook" ["l"="3.126,13.543"]
 "grayhemp/pgtoolkit" ["l"="3.071,13.549"]
+"pinterest/secor" ["l"="-0.514,17.005", "c"=398]
 "dalibo/sqlserver2pgsql" ["l"="2.91,13.556"]
 "powa-team/powa" ["l"="2.887,13.576"]
 "uptimejp/postgres-toolkit" ["l"="2.962,13.621"]
@@ -2707,18 +2987,17 @@ digraph G {
 "thestyleofme/user-behavior-analysis" ["l"="2.513,12.848"]
 "thestyleofme/spark-gmall-parent" ["l"="2.527,12.845"]
 "zhouhongfa/datax-vue-admin" ["l"="2.524,12.928"]
-"TianLangStudio/DataXServer" ["l"="2.484,12.931"]
 "Jawf/DataX-Migration" ["l"="2.507,12.925"]
 "xk11961677/skycloud-datax" ["l"="2.481,12.895"]
 "luoce/bt-ware-datasync-datax" ["l"="2.496,12.914"]
 "guohf/DataX-Masking" ["l"="2.464,12.943"]
-"WeBankFinTech/Exchangis" ["l"="-2.396,15.025"]
-"ucarGroup/DataLink" ["l"="-2.431,15.037"]
-"teeyog/IQL" ["l"="-2.449,15.06"]
+"WeBankFinTech/Exchangis" ["l"="-2.396,15.025", "c"=43]
+"teeyog/IQL" ["l"="-2.449,15.06", "c"=43]
 "eastzq/simpledatax-service" ["l"="2.462,12.902"]
 "thanodnl/pgenv" ["l"="2.867,13.39"]
 "EnterpriseDB/pg_failover_slots" ["l"="2.911,13.386"]
 "cybertec-postgresql/pg_permissions" ["l"="2.885,13.466"]
+"tdunning/t-digest" ["l"="-5.74,10.658", "c"=452]
 "xocolatl/periods" ["l"="2.833,13.312"]
 "nearform/temporal_tables" ["l"="2.81,13.308"]
 "scalegenius/pg_bitemporal" ["l"="2.849,13.28"]
@@ -2755,6 +3034,8 @@ digraph G {
 "pgsql-io/multicorn2" ["l"="3.027,13.255"]
 "atris/JDBC_FDW" ["l"="2.941,13.339"]
 "pgxn/pgxnclient" ["l"="3.053,13.244"]
+"gojek/awesome-distributed-systems" ["l"="41.807,35.735", "c"=51]
+"nilenso/postgresql-monitoring" ["l"="2.82,13.742"]
 "lesovsky/pgscv" ["l"="3.009,13.381"]
 "munakoiso/logerrors" ["l"="2.953,13.301"]
 "bdrouvot/pg_toolkit" ["l"="3.064,13.425"]
@@ -2767,6 +3048,8 @@ digraph G {
 "darold/pgtt" ["l"="2.972,13.51"]
 "EnterpriseDB/pg_catcheck" ["l"="2.953,13.523"]
 "dalibo/pitrery" ["l"="2.988,13.618"]
+"groonga/groonga" ["l"="-18.965,24.704", "c"=37]
+"pgroonga/pgroonga" ["l"="2.887,13.248"]
 "Vonng/pg" ["l"="2.656,13.382"]
 "xiongcccc/pgcheck" ["l"="2.687,13.343"]
 "digoal/pgsql_admin_script" ["l"="2.715,13.313"]
@@ -2774,7 +3057,7 @@ digraph G {
 "tangyibo/greenplum_exporter" ["l"="2.698,13.234"]
 "HaloTech-Co-Ltd/openHalo" ["l"="2.599,13.335"]
 "digoal/blog" ["l"="2.534,13.37"]
-"Vonng/adcode" ["l"="53.241,27.52"]
+"Vonng/adcode" ["l"="53.241,27.52", "c"=60]
 "postgres-cn/pgdoc-cn" ["l"="2.671,13.364"]
 "pc-study/InstallOracleshell" ["l"="2.608,13.364"]
 "CrunchyData/crunchy_check_access" ["l"="2.936,13.465"]
@@ -2790,6 +3073,7 @@ digraph G {
 "cybertec-postgresql/pg_cgroups" ["l"="2.929,13.479"]
 "lopezator/migrator" ["l"="3.073,14.137"]
 "inigohu/pubsub" ["l"="3.068,14.094"]
+"TPC-Council/HammerDB" ["l"="1.887,13.51", "c"=376]
 "laurenz/oracle_fdw" ["l"="2.864,13.463"]
 "tds-fdw/tds_fdw" ["l"="2.911,13.417"]
 "cybertec-postgresql/ora_migrator" ["l"="2.917,13.444"]
@@ -2797,14 +3081,14 @@ digraph G {
 "pgspider/jdbc_fdw" ["l"="2.91,13.361"]
 "jaiminpan/pg_jieba" ["l"="2.887,13.32"]
 "lacanoid/pgddl" ["l"="2.813,13.426"]
-"khailey-zz/ashmasters" ["l"="4.59,-4.327"]
-"mauropagano/sqld360" ["l"="4.648,-4.374"]
-"jberesni/AWR1page" ["l"="4.688,-4.401"]
-"carlos-sierra/cscripts" ["l"="4.654,-4.397"]
-"freddenis/oracle-scripts" ["l"="4.606,-4.416"]
-"sqldb360/sqldb360" ["l"="4.65,-4.432"]
+"khailey-zz/ashmasters" ["l"="4.59,-4.327", "c"=471]
+"mauropagano/sqld360" ["l"="4.648,-4.374", "c"=471]
+"jberesni/AWR1page" ["l"="4.688,-4.401", "c"=471]
+"carlos-sierra/cscripts" ["l"="4.654,-4.397", "c"=471]
+"freddenis/oracle-scripts" ["l"="4.606,-4.416", "c"=471]
+"sqldb360/sqldb360" ["l"="4.65,-4.432", "c"=471]
 "karamul/ashviewer" ["l"="3.058,13.498"]
-"xtender/xt_scripts" ["l"="4.627,-4.315"]
+"xtender/xt_scripts" ["l"="4.627,-4.315", "c"=471]
 "cwoodruff/ChinookASPNETCoreAPINTier" ["l"="3.141,13.939"]
 "cwoodruff/ChinookDatabase" ["l"="3.121,13.911"]
 "postgrespro/sr_plan" ["l"="2.945,13.497"]
@@ -2816,7 +3100,7 @@ digraph G {
 "keithf4/pg_bloat_check" ["l"="2.887,13.545"]
 "ZhengYang/odbc_fdw" ["l"="2.949,13.364"]
 "CartoDB/odbc_fdw" ["l"="2.982,13.354"]
-"mbryzek/schema-evolution-manager" ["l"="-2.037,18.972"]
+"mbryzek/schema-evolution-manager" ["l"="-2.037,18.972", "c"=38]
 "faer615/greenplum" ["l"="2.677,13.134"]
 "citusdata/postgres_vectorization_test" ["l"="3.006,13.485"]
 "credativ/elephant-shed" ["l"="3.058,13.472"]
@@ -2832,7 +3116,6 @@ digraph G {
 "maddyblue/sqlfmt" ["l"="3.027,13.969"]
 "lopezator/sqlfmt" ["l"="3.05,14.04"]
 "jackc/sqlfmt" ["l"="2.986,13.844"]
-"Liwengbin/vue-task-node" ["l"="2.365,12.79"]
 "ligo/flowml" ["l"="2.343,12.819"]
 "wyc941012/MachineLearningPlatform" ["l"="2.334,12.79"]
 "jbub/pgbouncer_exporter" ["l"="2.341,13.747"]
@@ -2844,7 +3127,7 @@ digraph G {
 "priyank-purohit/PostGUI" ["l"="2.781,13.207"]
 "mattddowney/compose-postgrest" ["l"="2.775,13.127"]
 "recmo/PostgrestSkeleton" ["l"="2.793,13.237"]
-"raphiniert-com/ra-data-postgrest" ["l"="0.373,-20.439"]
+"raphiniert-com/ra-data-postgrest" ["l"="0.373,-20.439", "c"=153]
 "calebmer/postgrest-client" ["l"="2.809,13.228"]
 "sameersbn/docker-mongodb" ["l"="2.786,13.97"]
 "csc-training/parallel-prog" ["l"="3.393,13.134"]
@@ -2859,7 +3142,6 @@ digraph G {
 "Code-Institute-Solutions/BootstrappingYourNextBigIdea-BS4" ["l"="3.247,13.995"]
 "Code-Institute-Solutions/InteractiveFrontendDevelopment-Resume" ["l"="3.268,14.018"]
 "rodrigo-brito/facility-location-gurobi" ["l"="3.401,13.87"]
-"xNok/OR_location_routing_problem_study" ["l"="3.384,13.855"]
 "cybertec-postgresql/db_migrator" ["l"="3.007,13.41"]
 "plproxy/plproxy" ["l"="2.901,13.437"]
 "Aiven-Open/pgtracer" ["l"="2.949,13.43"]
@@ -2874,134 +3156,145 @@ digraph G {
 "dedededede/datax_web_ui" ["l"="2.545,12.935"]
 "eastzq/eastzq.github.io" ["l"="2.442,12.889"]
 "ercole-io/ercole-web" ["l"="2.479,13.848"]
-"PostgREST/postgrest" ["l"="2.477,13.623"]
-"graphile/crystal" ["l"="-0.202,-20.812"]
-"dbcli/pgcli" ["l"="-13.745,-6.433"]
-"hasura/graphql-engine" ["l"="-0.067,-20.836"]
-"dhamaniasad/awesome-postgres" ["l"="2.608,13.614"]
-"metabase/metabase" ["l"="-0.997,16.11"]
-"prest/prest" ["l"="4.343,-9.021"]
-"Kong/kong" ["l"="8.42,-8.213"]
-"serverless/serverless" ["l"="-1.113,-31.489"]
-"getredash/redash" ["l"="-0.98,16.013"]
-"open-guides/og-aws" ["l"="26.878,-26.346"]
-"minimaxir/big-list-of-naughty-strings" ["l"="-16.844,-6.739"]
-"httpie/cli" ["l"="-14.057,-6.996"]
-"caddyserver/caddy" ["l"="8.6,-8.067"]
+"apache/age" ["l"="3.695,13.466", "c"=850]
+"progit/progit2-zh" ["l"="8.623,-44.972", "c"=828]
+"sosedoff/pgweb" ["l"="4.082,-8.867", "c"=0]
+"OmniDB/OmniDB" ["l"="2.627,13.802"]
+"graphile/crystal" ["l"="-0.202,-20.812", "c"=153]
+"dbcli/pgcli" ["l"="-13.745,-6.433", "c"=86]
+"metabase/metabase" ["l"="-0.997,16.11", "c"=268]
+"prest/prest" ["l"="4.343,-9.021", "c"=0]
+"Kong/kong" ["l"="8.42,-8.213", "c"=14]
+"serverless/serverless" ["l"="-1.113,-31.489", "c"=295]
+"getredash/redash" ["l"="-0.98,16.013", "c"=268]
+"open-guides/og-aws" ["l"="26.878,-26.346", "c"=32]
+"minimaxir/big-list-of-naughty-strings" ["l"="-16.844,-6.739", "c"=469]
+"httpie/cli" ["l"="-14.057,-6.996", "c"=86]
+"caddyserver/caddy" ["l"="8.6,-8.067", "c"=14]
+"okbob/pspg" ["l"="2.741,13.557"]
+"torodb/stampede" ["l"="4.55,-7.42", "c"=0]
+"microsoft/pg_paxos" ["l"="2.847,13.742"]
+"coleifer/sqlite-web" ["l"="44.884,20.537", "c"=20]
+"cweijan/vscode-database-client" ["l"="-55.502,7.081", "c"=444]
 "antares-sql/antares" ["l"="2.51,14.061"]
-"dbgate/dbgate" ["l"="2.542,14.022"]
-"beekeeper-studio/beekeeper-studio" ["l"="15.417,-10.381"]
 "antares-sql/antares-ppa" ["l"="2.484,14.087"]
-"pawelsalawa/sqlitestudio" ["l"="-49.198,10.073"]
-"HeidiSQL/HeidiSQL" ["l"="-50.781,7.265"]
-"sqlectron/sqlectron-gui" ["l"="2.618,13.981"]
+"HeidiSQL/HeidiSQL" ["l"="-50.781,7.265", "c"=386]
 "dbeaver/cloudbeaver" ["l"="2.532,13.956"]
 "ragnar-lodbrok/meow-sql" ["l"="2.466,14.121"]
-"httpie/desktop" ["l"="15.792,-10.049"]
-"laravel/pint" ["l"="-14.626,30.384"]
-"TablePlus/TablePlus-Linux" ["l"="-19.007,-1.424"]
-"mgramin/awesome-db-tools" ["l"="26.154,-26.023"]
-"holistics/dbml" ["l"="-2.057,12.68"]
-"opcodesio/log-viewer" ["l"="-14.643,30.403"]
-"tmdh/laravel-kit" ["l"="-14.599,30.489"]
+"httpie/desktop" ["l"="15.792,-10.049", "c"=198]
+"laravel/pint" ["l"="-14.626,30.384", "c"=46]
+"TablePlus/TablePlus-Linux" ["l"="-19.007,-1.424", "c"=478]
+"holistics/dbml" ["l"="-2.057,12.68", "c"=15]
+"opcodesio/log-viewer" ["l"="-14.643,30.403", "c"=46]
+"tmdh/laravel-kit" ["l"="-14.599,30.489", "c"=46]
 "toluaina/pgsync" ["l"="2.666,13.447"]
 "yzevm/sync-postgresql-with-elasticsearch-example" ["l"="2.588,13.423"]
-"ankane/pgsync" ["l"="4.515,-37.659"]
-"appbaseio/abc" ["l"="43.87,16.184"]
-"paradedb/paradedb" ["l"="3.815,13.535"]
-"PeerDB-io/peerdb" ["l"="3.77,13.569"]
-"rwynn/monstache" ["l"="0.28,-33.475"]
+"ankane/pgsync" ["l"="4.515,-37.659", "c"=1]
+"appbaseio/abc" ["l"="43.87,16.184", "c"=473]
+"paradedb/paradedb" ["l"="3.815,13.535", "c"=850]
+"PeerDB-io/peerdb" ["l"="3.77,13.569", "c"=850]
+"rwynn/monstache" ["l"="0.28,-33.475", "c"=110]
 "matthewfranglen/postgres-elasticsearch-fdw" ["l"="2.599,13.401"]
 "hpcc-systems/HPCC-Platform" ["l"="3.265,13.201"]
-"mesos/spark" ["l"="-3.257,19.842"]
+"mesos/spark" ["l"="-3.257,19.842", "c"=709]
 "csc-training/hpc-python" ["l"="3.338,13.156"]
 "hpcc-systems/ecl-ml" ["l"="3.297,13.201"]
-"hadoop-hdfs" ["l"="-2.859,14.52"]
+"hadoop-hdfs" ["l"="-2.859,14.52", "c"=43]
 "whym/wikihadoop" ["l"="3.287,13.174"]
 "madlib/archived_madlib" ["l"="3.143,13.281"]
-"tiny-craft/tiny-rdm" ["l"="3.022,-9.438"]
-"bytebase/bytebase" ["l"="15.767,-9.987"]
-"0xJacky/nginx-ui" ["l"="-62.256,15.074"]
+"ongres/stackgres" ["l"="7.866,-9.328", "c"=14]
+"tiny-craft/tiny-rdm" ["l"="3.022,-9.438", "c"=0]
+"bytebase/bytebase" ["l"="15.767,-9.987", "c"=198]
+"0xJacky/nginx-ui" ["l"="-62.256,15.074", "c"=103]
 "sqlpad/sqlpad" ["l"="2.575,13.926"]
-"1Remote/1Remote" ["l"="-48.511,12.583"]
-"dbeaver/dbeaver" ["l"="-47.995,12.599"]
-"usebruno/bruno" ["l"="15.495,-10.295"]
-"drawdb-io/drawdb" ["l"="15.806,-10.49"]
-"OmniDB/OmniDB" ["l"="2.627,13.802"]
-"actiontech/sqle" ["l"="50.011,3.176"]
-"JSQLParser/JSqlParser" ["l"="-2.973,11.917"]
-"WeiYe-Jing/datax-web" ["l"="-2.44,15.083"]
-"amir20/dozzle" ["l"="12.271,-8.919"]
-"hhyo/Archery" ["l"="9.055,-4.263"]
-"Bubka/2FAuth" ["l"="12.459,-8.85"]
-"apache/calcite" ["l"="-2.682,14.818"]
-"debezium/debezium" ["l"="-2.78,14.923"]
-"mickael-kerjean/filestash" ["l"="12.441,-9.156"]
-"lldap/lldap" ["l"="12.188,-9.045"]
+"1Remote/1Remote" ["l"="-48.511,12.583", "c"=13]
+"dbeaver/dbeaver" ["l"="-47.995,12.599", "c"=13]
+"usebruno/bruno" ["l"="15.495,-10.295", "c"=198]
+"drawdb-io/drawdb" ["l"="15.806,-10.49", "c"=198]
+"actiontech/sqle" ["l"="50.011,3.176", "c"=941]
+"JSQLParser/JSqlParser" ["l"="-2.973,11.917", "c"=15]
+"WeiYe-Jing/datax-web" ["l"="-2.44,15.083", "c"=43]
+"amir20/dozzle" ["l"="12.271,-8.919", "c"=18]
+"hhyo/Archery" ["l"="9.055,-4.263", "c"=382]
+"Bubka/2FAuth" ["l"="12.459,-8.85", "c"=18]
+"apache/calcite" ["l"="-2.682,14.818", "c"=43]
+"debezium/debezium" ["l"="-2.78,14.923", "c"=43]
+"mickael-kerjean/filestash" ["l"="12.441,-9.156", "c"=18]
+"lldap/lldap" ["l"="12.188,-9.045", "c"=18]
 "lerocha/chinook-database" ["l"="3.071,13.837"]
 "jpwhite3/northwind-SQLite3" ["l"="3.109,13.855"]
 "pthom/northwind_psql" ["l"="3.064,13.798"]
 "devrimgunduz/pagila" ["l"="2.976,13.721"]
 "morenoh149/postgresDBSamples" ["l"="3.005,13.728"]
 "lerocha/netflixdb" ["l"="3.097,13.879"]
-"microsoft/sql-server-samples" ["l"="-47.014,8.526"]
+"microsoft/sql-server-samples" ["l"="-47.014,8.526", "c"=841]
 "lorint/AdventureWorks-for-Postgres" ["l"="3.04,13.771"]
 "jOOQ/sakila" ["l"="3.017,13.794"]
-"oracle-samples/db-sample-schemas" ["l"="4.589,-4.524"]
-"datacharmer/test_db" ["l"="9.064,-4.382"]
-"nalgeon/sqlean" ["l"="5.077,-8.811"]
+"oracle-samples/db-sample-schemas" ["l"="4.589,-4.524", "c"=471]
+"datacharmer/test_db" ["l"="9.064,-4.382", "c"=382]
+"nalgeon/sqlean" ["l"="5.077,-8.811", "c"=0]
 "dalers/mywind" ["l"="3.071,13.877"]
-"JoshClose/CsvHelper" ["l"="-34.636,-1.179"]
+"JoshClose/CsvHelper" ["l"="-34.636,-1.179", "c"=8]
+"pgcentralfoundation/pgrx" ["l"="3.828,13.601", "c"=850]
+"ligurio/awesome-ci" ["l"="26.223,-26.072", "c"=32]
 "konosp/dbt-airflow-docker-compose" ["l"="3.146,13.848"]
 "konosp/dbt-on-airflow" ["l"="3.18,13.868"]
-"HVF/franchise" ["l"="-1.226,-27.006"]
-"cloudera/hue" ["l"="-2.682,14.724"]
-"pinterest/querybook" ["l"="-0.579,15.975"]
-"plotly/falcon" ["l"="-3.618,-28.762"]
-"datahub-project/datahub" ["l"="-2.583,14.853"]
-"TuiQiao/CBoard" ["l"="-2.34,15.022"]
-"cookieY/Yearning" ["l"="9.097,-4.253"]
-"airbnb/airpal" ["l"="-0.151,17.063"]
-"edp963/davinci" ["l"="-2.407,15.044"]
-"apache/zeppelin" ["l"="-2.787,14.742"]
-"duckdb/pg_duckdb" ["l"="3.751,13.547"]
-"hydradatabase/columnar" ["l"="3.784,13.54"]
-"apecloud/kubeblocks" ["l"="51.069,2.686"]
-"Mooncake-Labs/pg_mooncake" ["l"="3.761,13.525"]
-"Tencent/TBase" ["l"="0.758,14.111"]
+"HVF/franchise" ["l"="-1.226,-27.006", "c"=814]
+"cloudera/hue" ["l"="-2.682,14.724", "c"=43]
+"pinterest/querybook" ["l"="-0.579,15.975", "c"=268]
+"plotly/falcon" ["l"="-3.618,-28.762", "c"=4]
+"datahub-project/datahub" ["l"="-2.583,14.853", "c"=43]
+"TuiQiao/CBoard" ["l"="-2.34,15.022", "c"=43]
+"cookieY/Yearning" ["l"="9.097,-4.253", "c"=382]
+"airbnb/airpal" ["l"="-0.151,17.063", "c"=398]
+"edp963/davinci" ["l"="-2.407,15.044", "c"=43]
+"apache/zeppelin" ["l"="-2.787,14.742", "c"=43]
+"duckdb/pg_duckdb" ["l"="3.751,13.547", "c"=850]
+"hydradatabase/columnar" ["l"="3.784,13.54", "c"=850]
+"apecloud/kubeblocks" ["l"="51.069,2.686", "c"=85]
+"Mooncake-Labs/pg_mooncake" ["l"="3.761,13.525", "c"=850]
+"Tencent/TBase" ["l"="0.758,14.111", "c"=115]
+"xwb1989/sqlparser" ["l"="0.693,14.427", "c"=115]
 "Code-Institute-Org/python-essentials-template" ["l"="3.254,13.97"]
 "Code-Institute-Org/p3-template" ["l"="3.21,14.029"]
-"dalibo/pev2" ["l"="2.705,13.524"]
 "AlexTatiyants/pev" ["l"="2.673,13.538"]
 "mgartner/pg_flame" ["l"="2.758,13.508"]
-"pgcentralfoundation/pgrx" ["l"="3.828,13.601"]
-"okbob/pspg" ["l"="2.741,13.557"]
-"xataio/pgroll" ["l"="3.766,13.597"]
+"xataio/pgroll" ["l"="3.766,13.597", "c"=850]
+"message-db/message-db" ["l"="3.608,13.673", "c"=850]
+"aquametalabs/aquameta" ["l"="2.812,13.36"]
 "xiaoyao1999hn/datax-service" ["l"="2.456,12.863"]
 "thestyleofme/datax-admin" ["l"="2.436,12.837"]
 "lizu18xz/DataX" ["l"="2.457,12.833"]
 "fastmonkeys/stellar" ["l"="3.095,13.59"]
 "mixxorz/DSLR" ["l"="3.169,13.593"]
-"elky/django-flat-theme" ["l"="47.223,18.739"]
+"elky/django-flat-theme" ["l"="47.223,18.739", "c"=52]
 "thestyleofme/plugin-driver-parent" ["l"="2.513,12.823"]
 "thestyleofme/prestosql" ["l"="2.51,12.799"]
 "sebastianwebber/pgconfig" ["l"="2.924,13.739"]
 "sebastianwebber/pgconfig-api" ["l"="2.942,13.771"]
+"ozontech/file.d" ["l"="4.825,-8.762", "c"=0]
+"ozontech/pg_doorman" ["l"="2.979,13.138"]
+"hyrise/sql-parser" ["l"="1.821,13.489", "c"=376]
 "udacity/nd027-c3-data-lakes-with-spark" ["l"="3.16,13.778"]
 "jaycode/short_sale_volume" ["l"="3.199,13.787"]
 "aws-samples/aws-dms-archive-data" ["l"="3.267,13.815"]
+"Interana/eventsim" ["l"="0.346,16.537", "c"=1000]
 "gleu/pgdocs_fr" ["l"="3.017,13.589"]
+"sbdchd/squawk" ["l"="3.844,13.681", "c"=850]
+"sunng87/pgwire" ["l"="3.189,13.692"]
 "lesovsky/noisia" ["l"="2.893,13.48"]
 "lesovsky/postgres-commandments" ["l"="2.968,13.428"]
 "petergeoghegan/amcheck" ["l"="2.978,13.441"]
+"fergusstrange/embedded-postgres" ["l"="4.384,-8.82", "c"=0]
 "denishpatel/pg-clone-schema" ["l"="3.022,13.437"]
 "maxlapshin/mysql2postgres" ["l"="2.605,13.214"]
 "lanyrd/mysql-postgresql-converter" ["l"="2.61,13.266"]
 "hettie-d/NORM" ["l"="3.122,13.765"]
 "hettie-d/postgres_air" ["l"="3.084,13.754"]
+"ClusterLabs/pacemaker" ["l"="2.318,14.721", "c"=756]
+"compose/transporter" ["l"="0.297,-33.505", "c"=110]
 "lzlabs/pg_statement_rollback" ["l"="2.986,13.523"]
 "StarfishStorage/explain-running-query" ["l"="2.983,13.553"]
-"microsoft/pg_paxos" ["l"="2.847,13.742"]
 "nanopack/yoke" ["l"="2.786,13.786"]
 "joncrlsn/pgdiff" ["l"="2.735,13.439"]
 "eulerto/pgquarrel" ["l"="2.762,13.487"]
@@ -3019,15 +3312,13 @@ digraph G {
 "citusdata/mongo_fdw" ["l"="2.959,13.262"]
 "adjust/kafka_fdw" ["l"="2.904,13.345"]
 "ycy950519/CorsApi" ["l"="2.314,12.769"]
+"hortonworks/hive-testbench-carter-fork" ["l"="-2.955,15.027", "c"=43]
 "pgspider/griddb_fdw" ["l"="3.036,13.142"]
 "powa-team/powa-web" ["l"="2.969,13.647"]
-"spotify/postgresql-metrics" ["l"="2.876,13.684"]
 "pgMemento/pgMemento" ["l"="2.81,13.386"]
 "domgiles/swingbench-public" ["l"="3.122,13.49"]
-"pgroonga/pgroonga" ["l"="2.887,13.248"]
-"groonga/groonga" ["l"="-18.965,24.704"]
+"jackc/pglogrepl" ["l"="0.578,-20.699", "c"=153]
 "pgroonga/docker" ["l"="2.902,13.204"]
-"amutu/zhparser" ["l"="2.851,13.324"]
 "munakoiso/pg_comment_stats" ["l"="2.945,13.21"]
 "jaiminpan/pg_scws" ["l"="2.905,13.301"]
 "xk11961677/skycloud-admin-vue" ["l"="2.479,12.875"]
@@ -3043,20 +3334,26 @@ digraph G {
 "digoal/PostgreSQL_HA_with_primary_standby_2vip" ["l"="2.722,13.353"]
 "digoal/sky_postgresql_cluster" ["l"="2.701,13.303"]
 "HighgoSoftware/XLogMiner" ["l"="2.735,13.39"]
-"ChenHuajun/pha4pgsql" ["l"="0.778,14.048"]
+"ChenHuajun/pha4pgsql" ["l"="0.778,14.048", "c"=115]
+"ritzyed/ritzy" ["l"="-2.894,-29.461", "c"=4]
+"nanopack/mist" ["l"="2.807,13.863"]
+"shlomi-noach/awesome-mysql" ["l"="8.841,-4.389", "c"=382]
+"treffynnon/sqlstyle.guide" ["l"="-47.002,8.402", "c"=841]
 "petere/pguri" ["l"="3.016,13.348"]
 "johto/allas" ["l"="3.05,13.303"]
 "petere/pgemailaddr" ["l"="3.065,13.317"]
-"ankane/pghero" ["l"="4.513,-37.552"]
-"amacneil/dbmate" ["l"="4.259,-9.186"]
-"zalando/skipper" ["l"="7.378,-8.555"]
-"zalando/zmon" ["l"="7.149,-8.35"]
+"ankane/pghero" ["l"="4.513,-37.552", "c"=1]
+"p8952/bocker" ["l"="8.291,-8.447", "c"=14]
+"amacneil/dbmate" ["l"="4.259,-9.186", "c"=0]
+"pgjdbc/pgjdbc" ["l"="-2.563,12.224", "c"=15]
+"zalando/skipper" ["l"="7.378,-8.555", "c"=14]
+"zalando/zmon" ["l"="7.149,-8.35", "c"=14]
+"supabase/pg_graphql" ["l"="3.771,13.785", "c"=850]
 "compose/governor" ["l"="2.819,13.762"]
-"TritonDataCenter/manatee" ["l"="-25.002,-23.816"]
+"TritonDataCenter/manatee" ["l"="-25.002,-23.816", "c"=745]
 "ossc-db/pg_rman" ["l"="2.779,13.465"]
 "ossc-db/syncdb" ["l"="2.735,13.368"]
 "cloud-sn2/cigration" ["l"="2.701,13.397"]
-"Interana/eventsim" ["l"="0.346,16.537"]
 "ivanceras/sakila" ["l"="2.985,13.789"]
 "dtaivpp/car_company_database" ["l"="3.107,13.812"]
 "EngineerSpock/postgres-course-ru" ["l"="3.141,13.819"]
@@ -3064,52 +3361,61 @@ digraph G {
 "postgres-x2/postgres-x2" ["l"="2.761,13.367"]
 "IvorySQL/IvorySQL" ["l"="2.788,13.378"]
 "Guy-Incognito/ora2pg" ["l"="2.815,13.408"]
-"aquametalabs/aquameta" ["l"="2.812,13.36"]
-"oelmekki/pgrebase" ["l"="4.045,-7.527"]
+"DBDiff/DBDiff" ["l"="-15.667,25.284", "c"=50]
+"vitobotta/hetzner-k3s" ["l"="8.169,-9.468", "c"=14]
+"oelmekki/pgrebase" ["l"="4.045,-7.527", "c"=0]
 "df7cb/pg_dirtyread" ["l"="2.931,13.433"]
 "auxten/postgresql-parser" ["l"="3.043,13.669"]
 "jeroenrinzema/psql-wire" ["l"="3.082,13.676"]
 "rqlite/sql" ["l"="3.119,13.687"]
 "cloudproud/psql-proxy" ["l"="3.071,13.688"]
-"supabase/index_advisor" ["l"="3.726,13.606"]
-"hyrise/index_selection_evaluation" ["l"="1.858,13.672"]
-"pinterest/secor" ["l"="-0.514,17.005"]
+"supabase/index_advisor" ["l"="3.726,13.606", "c"=850]
+"hyrise/index_selection_evaluation" ["l"="1.858,13.672", "c"=376]
+"variety/variety" ["l"="0.389,-33.374", "c"=110]
+"eralchemy/eralchemy" ["l"="42.202,22.107", "c"=280]
+"trevor-vincent/awesome-high-performance-computing" ["l"="25.613,-26.684", "c"=32]
 "wal-e/wal-e" ["l"="2.717,13.706"]
-"codahale/sneaker" ["l"="10.063,-6.453"]
-"akka/alpakka-kafka" ["l"="-2.52,18.71"]
+"codahale/sneaker" ["l"="10.063,-6.453", "c"=162]
+"akka/alpakka-kafka" ["l"="-2.52,18.71", "c"=38]
 "xstevens/pg_kafka" ["l"="2.843,13.795"]
-"confluentinc/schema-registry" ["l"="-0.639,16.941"]
+"confluentinc/schema-registry" ["l"="-0.639,16.941", "c"=398]
 "sasha-alias/sqltabs" ["l"="2.786,13.74"]
 "web-pal/DBGlass" ["l"="2.714,13.886"]
+"ableev/Zabbix-in-Telegram" ["l"="9.563,-3.189", "c"=1177]
 "plv8/plv8" ["l"="2.734,13.469"]
-"gavinwahl/postgres-json-schema" ["l"="3.726,13.765"]
+"gavinwahl/postgres-json-schema" ["l"="3.726,13.765", "c"=850]
 "plv8/pljs" ["l"="2.635,13.426"]
-"graphile/worker" ["l"="-4.211,-30.427"]
-"gajus/slonik" ["l"="-4.316,-30.305"]
-"Nathaniel-Han/End-to-End-CardEst-Benchmark" ["l"="1.887,13.618"]
-"learnedsystems/BaoForPostgreSQL" ["l"="1.872,13.618"]
-"sfu-db/AreCELearnedYet" ["l"="1.904,13.625"]
-"DataManagementLab/deepdb-public" ["l"="1.89,13.634"]
-"learnedsystems/CEB" ["l"="1.897,13.625"]
-"balsa-project/balsa" ["l"="1.889,13.647"]
+"graphile/worker" ["l"="-4.211,-30.427", "c"=4]
+"gajus/slonik" ["l"="-4.316,-30.305", "c"=4]
+"nanobox-io/nanobox" ["l"="3.732,-7.877", "c"=0]
+"anse1/sqlsmith" ["l"="1.901,13.545", "c"=376]
+"Nathaniel-Han/End-to-End-CardEst-Benchmark" ["l"="1.887,13.618", "c"=376]
+"learnedsystems/BaoForPostgreSQL" ["l"="1.872,13.618", "c"=376]
+"sfu-db/AreCELearnedYet" ["l"="1.904,13.625", "c"=376]
+"DataManagementLab/deepdb-public" ["l"="1.89,13.634", "c"=376]
+"learnedsystems/CEB" ["l"="1.897,13.625", "c"=376]
+"balsa-project/balsa" ["l"="1.889,13.647", "c"=376]
 "s-hironobu/pg_tuner" ["l"="2.997,13.45"]
-"naru-project/naru" ["l"="1.904,13.613"]
-"andreaskipf/learnedcardinalities" ["l"="1.894,13.606"]
+"naru-project/naru" ["l"="1.904,13.613", "c"=376]
+"andreaskipf/learnedcardinalities" ["l"="1.894,13.606", "c"=376]
+"koct9i/ioping" ["l"="-22.303,-27.1", "c"=101]
 "Aiven-Open/pghoard" ["l"="2.749,13.728"]
-"Aiven-Open/pglookout" ["l"="-0.885,17.179"]
-"Aiven-Open/myhoard" ["l"="-0.858,17.182"]
-"aiven/aiven-client" ["l"="-0.891,17.159"]
-"rach/pome" ["l"="4.029,-7.681"]
-"spaceshuttl/visionary" ["l"="45.663,20.156"]
+"Aiven-Open/pglookout" ["l"="-0.885,17.179", "c"=398]
+"Aiven-Open/myhoard" ["l"="-0.858,17.182", "c"=398]
+"aiven/aiven-client" ["l"="-0.891,17.159", "c"=398]
+"rach/pome" ["l"="4.029,-7.681", "c"=0]
+"spaceshuttl/visionary" ["l"="45.663,20.156", "c"=20]
+"open-gpdb/gpdb" ["l"="2.9,13.181"]
+"yandex/pgmigrate" ["l"="2.854,13.447"]
+"solidsnack/GraphpostgresQL" ["l"="-0.679,-20.69", "c"=153]
 "VladimirPal/react-flux-backbone" ["l"="2.714,13.933"]
 "mic-fadeev/postglass" ["l"="2.708,13.918"]
 "2ndQuadrant/audit-trigger" ["l"="2.758,13.459"]
+"auxten/go-sqldb" ["l"="0.454,13.944", "c"=115]
 "AnatolyUss/FromMySqlToPostgreSql" ["l"="2.565,13.222"]
 "AnatolyUss/nmig" ["l"="2.542,13.237"]
 "loggi/loggibud" ["l"="3.34,13.838"]
-"jaegertracing/jaeger-clickhouse" ["l"="2.97,13.105"]
-"yandex/pgconsul" ["l"="2.959,13.127"]
-"open-gpdb/yezzey" ["l"="2.945,13.171"]
+"astronomer/airflow-dbt-demo" ["l"="0.404,15.848", "c"=1224]
 "awslabs/pg-collector" ["l"="3.007,13.565"]
 "jobinau/pgscripts" ["l"="2.99,13.568"]
 "ihanick/anydbver" ["l"="3.03,13.574"]
@@ -3117,86 +3423,94 @@ digraph G {
 "powa-team/powa-archivist" ["l"="3.005,13.669"]
 "pgexporter/pgexporter" ["l"="3.078,13.394"]
 "ardentperf/dsef" ["l"="2.694,13.331"]
+"Breeze0806/go-etl" ["l"="3.492,-9.484", "c"=0]
 "sorintlab/nbupy" ["l"="2.473,13.884"]
 "sorintlab/sorintoss-site" ["l"="2.466,13.873"]
 "ossc-db/dblink_plus" ["l"="2.734,13.339"]
 "ossc-db/pg_reorg" ["l"="2.72,13.338"]
-"shlomi-noach/awesome-mysql" ["l"="8.841,-4.389"]
-"postgres/postgres" ["l"="-19.823,-24.961"]
-"pingcap/tidb" ["l"="-19.738,-24.91"]
-"alibaba/DataX" ["l"="-3.346,11.949"]
-"ty4z2008/Qix" ["l"="50.515,28.062"]
-"Vonng/ddia" ["l"="-4.237,17.804"]
-"XiaoMi/soar" ["l"="9.075,-4.317"]
-"Meituan-Dianping/SQLAdvisor" ["l"="9.038,-4.3"]
-"alibaba/canal" ["l"="-3.203,11.745"]
-"alibaba/AliSQL" ["l"="-3.223,12.135"]
-"rootsongjc/kubernetes-handbook" ["l"="9.118,-5.464"]
+"postgres/postgres" ["l"="-19.823,-24.961", "c"=10]
+"pingcap/tidb" ["l"="-19.738,-24.91", "c"=10]
+"alibaba/DataX" ["l"="-3.346,11.949", "c"=15]
+"ty4z2008/Qix" ["l"="50.515,28.062", "c"=104]
+"Vonng/ddia" ["l"="-4.237,17.804", "c"=316]
+"XiaoMi/soar" ["l"="9.075,-4.317", "c"=382]
+"Meituan-Dianping/SQLAdvisor" ["l"="9.038,-4.3", "c"=382]
+"alibaba/canal" ["l"="-3.203,11.745", "c"=15]
+"alibaba/AliSQL" ["l"="-3.223,12.135", "c"=15]
+"rootsongjc/kubernetes-handbook" ["l"="9.118,-5.464", "c"=278]
+"themattrix/bash-concurrent" ["l"="45.789,20.261", "c"=20]
+"coroot/coroot-pg-agent" ["l"="9.997,-11.326", "c"=834]
 "CrunchyData/crunchy-containers" ["l"="2.762,13.678"]
+"Randommood/Strangeloop2015" ["l"="22.954,-26.681", "c"=28]
+"andialbrecht/sqlparse" ["l"="-2.217,14.789", "c"=43]
+"fabianlindfors/reshape" ["l"="3.785,13.667", "c"=850]
+"stripe/pg-schema-diff" ["l"="2.432,13.429"]
+"shayonj/pg-osc" ["l"="3.754,13.675", "c"=850]
+"officert/mongotron" ["l"="0.216,-33.851", "c"=110]
 "sqlectron/sqlectron-term" ["l"="2.622,14.064"]
 "sqlectron/sqlectron-core" ["l"="2.644,14.043"]
-"officert/mongotron" ["l"="0.216,-33.851"]
-"sindresorhus/awesome-electron" ["l"="41.159,8.451"]
-"railsware/upterm" ["l"="23.048,-26.77"]
-"garrylachman/ElectroCRUD" ["l"="5.599,-9.489"]
-"sosedoff/pgweb" ["l"="4.082,-8.867"]
-"vercel/hyper" ["l"="-1.007,-31.588"]
-"Paxa/postbird" ["l"="4.152,-20.745"]
-"connors/photon" ["l"="-0.478,-32.038"]
-"shayonj/pg_easy_replicate" ["l"="3.747,13.633"]
+"sindresorhus/awesome-electron" ["l"="41.159,8.451", "c"=499]
+"railsware/upterm" ["l"="23.048,-26.77", "c"=28]
+"garrylachman/ElectroCRUD" ["l"="5.599,-9.489", "c"=0]
+"vercel/hyper" ["l"="-1.007,-31.588", "c"=295]
+"connors/photon" ["l"="-0.478,-32.038", "c"=295]
+"shayonj/pg_easy_replicate" ["l"="3.747,13.633", "c"=850]
 "cybertec-postgresql/pgwatch" ["l"="2.853,13.519"]
 "destrex271/pgwatch3_rpc_server" ["l"="2.877,13.484"]
-"blastrain/vitess-sqlparser" ["l"="0.721,14.427"]
+"blastrain/vitess-sqlparser" ["l"="0.721,14.427", "c"=115]
 "CrunchyData/crunchy-proxy" ["l"="2.878,13.751"]
-"jackc/pglogrepl" ["l"="0.578,-20.699"]
-"kingluo/pgcat" ["l"="0.639,-20.723"]
-"apache/hawq" ["l"="-2.608,14.723"]
+"kingluo/pgcat" ["l"="0.639,-20.723", "c"=153]
+"redspread/spread" ["l"="3.943,-7.919", "c"=0]
+"apache/hawq" ["l"="-2.608,14.723", "c"=43]
 "apache/madlib-site" ["l"="3.104,13.326"]
 "apache/trafodion" ["l"="3.142,13.316"]
 "greenplum-db/PivotalR-archive" ["l"="3.111,13.297"]
-"greenplum-db/gporca" ["l"="1.872,13.487"]
+"greenplum-db/gporca" ["l"="1.872,13.487", "c"=376]
+"supabase/pg_jsonschema" ["l"="3.79,13.726", "c"=850]
+"supabase/supa_audit" ["l"="2.748,13.313"]
 "zhm/pg-query-parser" ["l"="3.051,13.607"]
 "zhm/node-pg-query-native" ["l"="3.102,13.622"]
 "sraoss/pgsql-ivm" ["l"="2.755,13.397"]
-"tembo-io/pg_timeseries" ["l"="3.661,13.383"]
-"supabase/pg_jsonschema" ["l"="3.79,13.726"]
-"nanopack/mist" ["l"="2.807,13.863"]
-"mailgun/godebug" ["l"="3.89,-8.305"]
-"redspread/spread" ["l"="3.943,-7.919"]
-"rakyll/gom" ["l"="3.985,-8.211"]
-"go-bootstrap/go-bootstrap" ["l"="3.854,-8.305"]
-"gernest/utron" ["l"="3.832,-8.295"]
-"alculquicondor/psqlparse" ["l"="-2.101,14.753"]
-"hyrise/sql-parser" ["l"="1.821,13.489"]
-"launchql/pgsql-parser" ["l"="-1.749,14.796"]
-"anse1/sqlsmith" ["l"="1.901,13.545"]
-"hyrise/hyrise" ["l"="1.836,13.464"]
-"pganalyze/pg_query.rs" ["l"="3.749,13.734"]
+"tembo-io/pg_timeseries" ["l"="3.661,13.383", "c"=850]
+"mailgun/godebug" ["l"="3.89,-8.305", "c"=0]
+"rakyll/gom" ["l"="3.985,-8.211", "c"=0]
+"go-bootstrap/go-bootstrap" ["l"="3.854,-8.305", "c"=0]
+"gernest/utron" ["l"="3.832,-8.295", "c"=0]
+"gosuri/uitable" ["l"="5.085,-5.619", "c"=784]
+"alculquicondor/psqlparse" ["l"="-2.101,14.753", "c"=43]
+"launchql/pgsql-parser" ["l"="-1.749,14.796", "c"=43]
+"hyrise/hyrise" ["l"="1.836,13.464", "c"=376]
+"pganalyze/pg_query.rs" ["l"="3.749,13.734", "c"=850]
 "daamien/PostgreSQL-Dashboard" ["l"="2.917,13.769"]
-"nilenso/postgresql-monitoring" ["l"="2.82,13.742"]
 "lukasmartinelli/pgclimb" ["l"="2.799,13.687"]
 "posix4e/jsoncdc" ["l"="2.498,13.532"]
 "posix4e/rpgffi" ["l"="2.535,13.552"]
-"supabase/supa_audit" ["l"="2.748,13.313"]
+"pinterest/teletraan" ["l"="3.604,-7.978", "c"=0]
+"benbjohnson/postlite" ["l"="5.074,-8.752", "c"=0]
 "lukasmartinelli/pgfutter" ["l"="2.803,13.626"]
-"cugos/dropchop" ["l"="39.149,24.087"]
-"wireservice/csvkit" ["l"="-13.546,-6.53"]
+"cugos/dropchop" ["l"="39.149,24.087", "c"=157]
+"wireservice/csvkit" ["l"="-13.546,-6.53", "c"=86]
+"Parsely/pykafka" ["l"="44.469,20.969", "c"=20]
 "IvorySQL/Ivory-www" ["l"="2.766,13.337"]
 "IvorySQL/ivory-operator" ["l"="2.778,13.338"]
 "IvorySQL/ivory-cloud" ["l"="2.775,13.35"]
-"mqz111a/virtual_human_stream" ["l"="50.812,2.941"]
-"guanchuwang/redis-bench" ["l"="50.784,2.907"]
+"mqz111a/virtual_human_stream" ["l"="50.812,2.941", "c"=85]
+"guanchuwang/redis-bench" ["l"="50.784,2.907", "c"=85]
 "gregs1104/pgbench-tools" ["l"="3.009,13.616"]
 "awslabs/pgbouncer-fast-switchover" ["l"="3.019,13.516"]
+"yandex/porto" ["l"="-44.713,26.619", "c"=1289]
 "coffeeandscripts/sqlcrush" ["l"="2.616,14.132"]
+"jcuga/golongpoll" ["l"="4.137,-7.895", "c"=0]
 "digoal/postgres_exam_lib" ["l"="2.711,13.283"]
-"xiaoboluo768/qianjinliangfang" ["l"="8.836,-4.187"]
+"xiaoboluo768/qianjinliangfang" ["l"="8.836,-4.187", "c"=382]
+"mathiasertl/fabric" ["l"="47.306,18.641", "c"=52]
+"renskiy/fabricio" ["l"="2.677,13.857"]
 "criles25/postgrest-auth" ["l"="2.834,13.17"]
 "srid/spas" ["l"="2.82,13.178"]
 "hugomrdias/postgrest-url" ["l"="2.81,13.203"]
-"supabase/pg_net" ["l"="3.76,13.834"]
+"supabase/pg_net" ["l"="3.76,13.834", "c"=850]
 "vibhorkum/pg_background" ["l"="2.859,13.404"]
-"pramsey/pgsql-ogr-fdw" ["l"="37.996,22.973"]
+"pramsey/pgsql-ogr-fdw" ["l"="37.996,22.973", "c"=914]
 "pramsey/pgsql-gzip" ["l"="2.751,13.348"]
 "postgrespro/postgres_cluster" ["l"="2.997,13.505"]
 "francs/PostgreSQL-Keepalived-HA" ["l"="2.547,13.283"]
@@ -3206,43 +3520,49 @@ digraph G {
 "pgexporter/pgexporter_ext" ["l"="3.111,13.385"]
 "heimir-sverrisson/jdbc2_fdw" ["l"="2.965,13.29"]
 "ThatianeDeboleto/JogosPython" ["l"="3.289,13.809"]
-"yugabyte/yugabyte-db" ["l"="-19.677,-24.87"]
-"neondatabase/neon" ["l"="-0.398,15.206"]
-"vitessio/vitess" ["l"="-19.75,-24.775"]
-"cockroachdb/cockroach" ["l"="-19.677,-24.808"]
-"scylladb/scylladb" ["l"="-19.658,-24.918"]
+"ytsaurus/ytsaurus" ["l"="-44.656,26.615", "c"=1289]
+"neondatabase/neon" ["l"="-0.398,15.206", "c"=729]
+"vitessio/vitess" ["l"="-19.75,-24.775", "c"=10]
+"cockroachdb/cockroach" ["l"="-19.677,-24.808", "c"=10]
+"scylladb/scylladb" ["l"="-19.658,-24.918", "c"=10]
 "saule1508/pgcluster" ["l"="2.694,13.801"]
 "seocahill/ha-postgres-docker-stack" ["l"="2.713,13.808"]
-"renskiy/fabricio" ["l"="2.677,13.857"]
 "neondatabase-labs/postgres-sample-dbs" ["l"="3.056,13.744"]
 "omniti-labs/pg_jobmon" ["l"="2.632,13.517"]
-"sbcl/sbcl" ["l"="-23.88,-21.579"]
-"CreditEaseDBA/Themis" ["l"="8.907,-4.218"]
+"sqlpage/SQLPage" ["l"="3.815,13.478", "c"=850]
+"sbcl/sbcl" ["l"="-23.88,-21.579", "c"=182]
+"Swfuse/devops-interview" ["l"="-43.574,24.432", "c"=158]
+"skaiworldwide-oss/agensgraph" ["l"="3.586,13.422", "c"=850]
+"ramnes/awesome-mongodb" ["l"="26.121,-26.045", "c"=32]
+"ondras/wwwsqldesigner" ["l"="41.892,21.868", "c"=280]
 "pgmodeler/pgmodeler" ["l"="2.654,13.638"]
-"jly8866/archer" ["l"="8.977,-4.239"]
-"myide/see" ["l"="9.011,-4.244"]
-"sunng87/pgwire" ["l"="3.189,13.692"]
-"gregrahn/join-order-benchmark" ["l"="1.876,13.578"]
-"alibaba/pilotscope" ["l"="1.889,13.66"]
+"CreditEaseDBA/Themis" ["l"="8.907,-4.218", "c"=382]
+"jly8866/archer" ["l"="8.977,-4.239", "c"=382]
+"myide/see" ["l"="9.011,-4.244", "c"=382]
+"omnigres/omnigres" ["l"="3.751,13.506", "c"=850]
+"gregrahn/join-order-benchmark" ["l"="1.876,13.578", "c"=376]
+"alibaba/pilotscope" ["l"="1.889,13.66", "c"=376]
 "tianon/docker-postgres-upgrade" ["l"="2.908,13.663"]
 "pgautoupgrade/docker-pgautoupgrade" ["l"="3.034,13.71"]
-"crazy-max/docker-fail2ban" ["l"="12.19,-8.573"]
-"open-gpdb/gpdb" ["l"="2.9,13.181"]
+"crazy-max/docker-fail2ban" ["l"="12.19,-8.573", "c"=18]
 "yandex/rdsync" ["l"="2.945,13.145"]
+"supabase/wrappers" ["l"="3.804,13.754", "c"=850]
 "NorfolkDataSci/adventure-works-postgres" ["l"="3.092,13.783"]
+"yandex/yandex-tank" ["l"="-43.653,24.709", "c"=158]
 "pgpool/pgpool2" ["l"="2.941,13.596"]
 "pgpool/pgpooladmin" ["l"="2.982,13.633"]
-"Purple-Stock/open-erp" ["l"="5.939,-20.531"]
+"Purple-Stock/open-erp" ["l"="5.939,-20.531", "c"=96]
 "pgadmin-org/pgadmin4" ["l"="2.558,13.593"]
-"okfn-brasil/querido-diario" ["l"="6.122,-20.388"]
-"thecasualcoder/lazy-connect" ["l"="41.67,35.667"]
-"gojek/ziggurat" ["l"="41.821,35.709"]
+"okfn-brasil/querido-diario" ["l"="6.122,-20.388", "c"=96]
+"thecasualcoder/lazy-connect" ["l"="41.67,35.667", "c"=51]
+"gojek/ziggurat" ["l"="41.821,35.709", "c"=51]
 "piotrl/understand-full-text-search" ["l"="2.846,13.823"]
 "CyberDem0n/bg_mon" ["l"="2.942,13.612"]
-"lesovsky/zabbix-extensions" ["l"="9.533,-3.199"]
+"lesovsky/zabbix-extensions" ["l"="9.533,-3.199", "c"=1177]
 "diogob/postgres-websockets" ["l"="2.815,13.258"]
 "ppKrauss/PostgREST-writeAPI" ["l"="2.839,13.218"]
 "frafra/postgresql2websocket" ["l"="2.851,13.19"]
+"debezium/container-images" ["l"="-0.781,16.823", "c"=398]
 "bradurani/pg-eyeballs" ["l"="2.559,13.654"]
 "tgres/tgres" ["l"="3.019,13.217"]
 "moxuedb/blog" ["l"="2.639,13.331"]
@@ -3250,31 +3570,31 @@ digraph G {
 "2ndQuadrant/pg_stat_plans" ["l"="3.068,13.629"]
 "credativ/pg_checksums" ["l"="3.044,13.429"]
 "open-gpdb/gp_relaccess_stats" ["l"="2.922,13.148"]
-"stripe/pg-schema-diff" ["l"="2.432,13.429"]
-"yandex/pgmigrate" ["l"="2.854,13.447"]
-"yandex/porto" ["l"="-44.713,26.619"]
-"sqldef/sqldef" ["l"="7.168,-40.32"]
-"kangkaisen/olap-performance" ["l"="0.51,14.076"]
-"risinglightdb/risinglight" ["l"="0.552,13.994"]
-"pingcap/tiflash" ["l"="0.619,14.122"]
+"sqldef/sqldef" ["l"="7.168,-40.32", "c"=573]
+"kangkaisen/olap-performance" ["l"="0.51,14.076", "c"=115]
+"risinglightdb/risinglight" ["l"="0.552,13.994", "c"=115]
+"pingcap/tiflash" ["l"="0.619,14.122", "c"=115]
+"supabase-community/postgres-language-server" ["l"="3.809,13.642", "c"=850]
+"pgmq/pgmq" ["l"="3.727,13.533", "c"=850]
+"schemaspy/schemaspy" ["l"="-2.263,12.416", "c"=15]
 "john-kelly/elm-postgrest" ["l"="2.748,13.193"]
 "panosoft/elm-postgres" ["l"="2.741,13.143"]
 "dalibo/temboard" ["l"="2.912,13.607"]
-"pgmq/pgmq" ["l"="3.727,13.533"]
 "efrecon/pgbackup" ["l"="3.114,13.728"]
+"sql-formatter-org/sql-formatter" ["l"="-1.955,14.819", "c"=43]
 "afiskon/pg_protobuf" ["l"="2.999,13.426"]
 "pgq/pgq" ["l"="2.968,13.372"]
-"voyagermesh/voyager" ["l"="10.412,-10.137"]
-"jetstack/kube-lego" ["l"="10.376,-10.11"]
+"voyagermesh/voyager" ["l"="10.412,-10.137", "c"=740]
+"jetstack/kube-lego" ["l"="10.376,-10.11", "c"=740]
 "mooreniemi/graph-function" ["l"="2.521,13.689"]
-"zhishutech/mysqldba" ["l"="8.881,-4.231"]
-"58daojia-dba/mysqlbinlog_flashback" ["l"="8.874,-4.198"]
-"dblucyne/dodba_tools" ["l"="8.884,-4.191"]
-"Meituan-Dianping/MyFlash" ["l"="8.934,-4.27"]
+"zhishutech/mysqldba" ["l"="8.881,-4.231", "c"=382]
+"58daojia-dba/mysqlbinlog_flashback" ["l"="8.874,-4.198", "c"=382]
+"dblucyne/dodba_tools" ["l"="8.884,-4.191", "c"=382]
+"Meituan-Dianping/MyFlash" ["l"="8.934,-4.27", "c"=382]
 "mihailShumilov/mysql2postgresql" ["l"="2.531,13.19"]
 "gitlabhq/mysql-postgresql-converter" ["l"="2.572,13.251"]
-"julien-duponchelle/python-mysql-replication" ["l"="8.962,-4.342"]
-"sgruhier/capistrano-db-tasks" ["l"="4.881,-37.523"]
+"julien-duponchelle/python-mysql-replication" ["l"="8.962,-4.342", "c"=382]
+"sgruhier/capistrano-db-tasks" ["l"="4.881,-37.523", "c"=1]
 "yandex/ch-backup" ["l"="2.98,13.076"]
 "yandex/ch-tools" ["l"="2.99,13.054"]
 "PostgREST/postgrest-docs" ["l"="2.779,13.257"]
@@ -3283,39 +3603,52 @@ digraph G {
 "igolaizola/igogpt" ["l"="3.09,14.112"]
 "ruslantalpa/postgrest-rls-example" ["l"="2.798,13.19"]
 "x4m/pg_uuid_next" ["l"="2.966,13.185"]
-"antonismand/ReJOIN" ["l"="1.903,13.657"]
+"stripe-archive/mosql" ["l"="0.366,-33.288", "c"=110]
+"strizhechenko/netutils-linux" ["l"="6.391,-4.193", "c"=725]
+"supabase/pg_replicate" ["l"="3.682,13.707", "c"=850]
+"antonismand/ReJOIN" ["l"="1.903,13.657", "c"=376]
+"mla/pg_sample" ["l"="-1.965,18.203", "c"=38]
+"adamcooke/procodile" ["l"="4.535,-37.618", "c"=1]
+"khezen/compose-postgres" ["l"="5.896,-11.846", "c"=270]
+"JesseKPhillips/USA-Constitution" ["l"="-3.722,-28.317", "c"=4]
 "lafikl/pginsight" ["l"="2.724,13.963"]
-"princejwesley/Mancy" ["l"="22.905,-26.779"]
+"princejwesley/Mancy" ["l"="22.905,-26.779", "c"=28]
 "luzhihua407/SQLines-Data" ["l"="2.653,13.17"]
 "wgliang/pgproxy" ["l"="2.901,13.809"]
 "pgadmin-org/pgagent" ["l"="2.493,13.564"]
 "pgadmin-org/pgadmin3" ["l"="2.472,13.56"]
 "ifad/chronomodel" ["l"="2.827,13.288"]
-"metosin/spec-tools" ["l"="-23.873,-20.215"]
-"psycopg/psycopg2" ["l"="44.663,20.942"]
-"MariaDB/server" ["l"="-19.888,-24.992"]
-"psycopg/psycopg" ["l"="44.71,20.999"]
-"postgis/postgis" ["l"="39.411,23.979"]
-"npgsql/npgsql" ["l"="-34.548,-1.201"]
-"encode/uvicorn" ["l"="44.717,20.93"]
+"metosin/spec-tools" ["l"="-23.873,-20.215", "c"=75]
+"xo/usql" ["l"="-13.631,-6.523", "c"=86]
+"cmu-db/ottertune" ["l"="1.819,13.555", "c"=376]
+"psycopg/psycopg2" ["l"="44.663,20.942", "c"=20]
+"MariaDB/server" ["l"="-19.888,-24.992", "c"=10]
+"psycopg/psycopg" ["l"="44.71,20.999", "c"=20]
+"postgis/postgis" ["l"="39.411,23.979", "c"=157]
+"npgsql/npgsql" ["l"="-34.548,-1.201", "c"=8]
+"encode/uvicorn" ["l"="44.717,20.93", "c"=20]
+"LappleApple/feedmereadmes" ["l"="7.079,-8.279", "c"=14]
 "cybertec-postgresql/postgres" ["l"="3.009,13.535"]
-"postgrespro/postgresql.builtin_pool" ["l"="0.766,14.06"]
+"postgrespro/postgresql.builtin_pool" ["l"="0.766,14.06", "c"=115]
+"jiayihu/pretty-algorithms" ["l"="26.004,-28.522", "c"=228]
 "jarulraj/sqlcheck" ["l"="2.725,13.505"]
-"jiayihu/pretty-algorithms" ["l"="26.004,-28.522"]
-"jarulraj/databaseology" ["l"="1.801,13.383"]
-"draftdev/startup-marketing-checklist" ["l"="-1.261,-26.944"]
+"fgmacedo/python-statemachine" ["l"="44.992,21.163", "c"=20]
+"CrunchyData/pg_parquet" ["l"="3.693,13.558", "c"=850]
+"nexsol-technologies/pgassistant" ["l"="3.675,13.582", "c"=850]
+"jarulraj/databaseology" ["l"="1.801,13.383", "c"=376]
+"draftdev/startup-marketing-checklist" ["l"="-1.261,-26.944", "c"=814]
 "HaloLab001/halo_migrate" ["l"="2.572,13.313"]
 "HaloLab001/dbms_redefinition" ["l"="2.565,13.327"]
 "HaloLab001/hmt-web" ["l"="2.557,13.314"]
-"hightman/scws" ["l"="-19.087,25.195"]
+"le0pard/postgresql_book" ["l"="-43.534,24.767", "c"=158]
 "omniti-labs/curo" ["l"="3.03,13.619"]
 "iloveitaly/audit-trigger" ["l"="2.708,13.417"]
-"kvesteri/postgresql-audit" ["l"="42.184,22.169"]
-"ligurio/awesome-ci" ["l"="26.223,-26.072"]
+"kvesteri/postgresql-audit" ["l"="42.184,22.169", "c"=280]
 "PaulRosset/previs" ["l"="2.364,13.888"]
 "open-gpdb/gp_relsizes_stats" ["l"="2.924,13.124"]
+"uber/queryparser" ["l"="-2.359,14.844", "c"=43]
 "csc-training/summerschool" ["l"="3.357,13.123"]
-"aggregateknowledge/java-hll" ["l"="-5.757,10.713"]
+"aggregateknowledge/java-hll" ["l"="-5.757,10.713", "c"=452]
 "enova/pgl_ddl_deploy" ["l"="2.895,13.374"]
 "michelp/metagration" ["l"="2.877,13.281"]
 "zhangh43/vectorize_engine" ["l"="3.013,13.463"]
@@ -3326,7 +3659,8 @@ digraph G {
 "MartinKaburu/docker-postgresql-multiple-databases" ["l"="2.262,13.727"]
 "subzerocloud/subzero-starter-kit" ["l"="2.749,13.263"]
 "subzerocloud/subzero-cli" ["l"="2.732,13.254"]
-"BemiHQ/bemi" ["l"="3.638,13.495"]
+"BemiHQ/bemi" ["l"="3.638,13.495", "c"=850]
+"microsoft/documentdb" ["l"="3.77,13.481", "c"=850]
+"pgdogdev/pgdog" ["l"="3.739,13.569", "c"=850]
 "greenplum-db/gpbackup-s3-plugin" ["l"="2.761,13.142"]
-"ozontech/pg_doorman" ["l"="2.979,13.138"]
 }

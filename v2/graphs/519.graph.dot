@@ -1,5 +1,10 @@
 digraph G {
 "sindresorhus/gulp-zip" -> "lazd/gulp-replace"
+"jonathantneal/svg4everybody" -> "w0rm/gulp-svgstore" ["e"=1]
+"jonathantneal/svg4everybody" -> "svg-sprite/svg-sprite" ["e"=1]
+"jonathantneal/svg4everybody" -> "svg-sprite/gulp-svg-sprite" ["e"=1]
+"jonathantneal/svg4everybody" -> "filamentgroup/grunticon" ["e"=1]
+"jonathantneal/svg4everybody" -> "FWeinb/grunt-svgstore" ["e"=1]
 "sindresorhus/load-grunt-tasks" -> "sindresorhus/time-grunt"
 "sindresorhus/load-grunt-tasks" -> "gruntjs/grunt-contrib-clean"
 "sindresorhus/load-grunt-tasks" -> "sindresorhus/grunt-concurrent"
@@ -15,6 +20,10 @@ digraph G {
 "sindresorhus/load-grunt-tasks" -> "gruntjs/grunt-contrib-jshint"
 "sindresorhus/load-grunt-tasks" -> "nDmitry/grunt-postcss"
 "sindresorhus/load-grunt-tasks" -> "sindresorhus/grunt-sass"
+"sindresorhus/trash" -> "sindresorhus/del" ["e"=1]
+"cssstats/cssstats" -> "svg-sprite/svg-sprite" ["e"=1]
+"olov/ng-annotate" -> "Kagami/gulp-ng-annotate" ["e"=1]
+"olov/ng-annotate" -> "miickel/gulp-angular-templatecache" ["e"=1]
 "sindresorhus/gulp-rev" -> "jamesknelson/gulp-rev-replace"
 "sindresorhus/gulp-rev" -> "jonkemp/gulp-useref"
 "sindresorhus/gulp-rev" -> "shonny-ua/gulp-rev-collector"
@@ -30,6 +39,13 @@ digraph G {
 "sindresorhus/gulp-rev" -> "jackfranklin/gulp-load-plugins"
 "sindresorhus/gulp-rev" -> "dlmanning/gulp-sass"
 "sindresorhus/gulp-rev" -> "sindresorhus/gulp-imagemin"
+"yeoman/generator-webapp" -> "taptapship/wiredep" ["e"=1]
+"filamentgroup/fixed-sticky" -> "filamentgroup/grunticon" ["e"=1]
+"chinmaymk/angular-charts" -> "rquadling/grunt-html2js" ["e"=1]
+"browserify/watchify" -> "robrich/gulp-if" ["e"=1]
+"browserify/watchify" -> "terinjokes/gulp-uglify" ["e"=1]
+"browserify/watchify" -> "adametry/gulp-eslint" ["e"=1]
+"browserify/watchify" -> "gulpjs/vinyl" ["e"=1]
 "gulpjs/glob-stream" -> "contra/glob2base"
 "terinjokes/gulp-uglify" -> "gulp-community/gulp-concat"
 "terinjokes/gulp-uglify" -> "hparra/gulp-rename"
@@ -116,6 +132,7 @@ digraph G {
 "avevlad/gulp-connect" -> "jonschlinkert/gulp-htmlmin"
 "avevlad/gulp-connect" -> "postcss/gulp-postcss"
 "avevlad/gulp-connect" -> "jackfranklin/gulp-load-plugins"
+"pattern-lab/patternlab-php" -> "filamentgroup/grunticon" ["e"=1]
 "gulp-sourcemaps/gulp-sourcemaps" -> "gulp-community/gulp-concat"
 "gulp-sourcemaps/gulp-sourcemaps" -> "terinjokes/gulp-uglify"
 "gulp-sourcemaps/gulp-sourcemaps" -> "dlmanning/gulp-sass"
@@ -131,6 +148,7 @@ digraph G {
 "gulp-sourcemaps/gulp-sourcemaps" -> "sindresorhus/gulp-imagemin"
 "gulp-sourcemaps/gulp-sourcemaps" -> "gulp-community/gulp-less"
 "gulp-sourcemaps/gulp-sourcemaps" -> "mikaelbr/gulp-notify"
+"css/csso" -> "ben-eb/gulp-csso" ["e"=1]
 "svg-sprite/svg-sprite" -> "svg-sprite/gulp-svg-sprite"
 "svg-sprite/svg-sprite" -> "jonathantneal/svg4everybody" ["e"=1]
 "svg-sprite/svg-sprite" -> "JetBrains/svg-sprite-loader" ["e"=1]
@@ -176,6 +194,10 @@ digraph G {
 "taptapship/wiredep" -> "olov/ng-annotate" ["e"=1]
 "taptapship/wiredep" -> "yeoman/generator-webapp" ["e"=1]
 "taptapship/wiredep" -> "sapegin/grunt-bower-concat"
+"rvagg/through2" -> "gulpjs/vinyl" ["e"=1]
+"rvagg/through2" -> "gulpjs/vinyl-fs" ["e"=1]
+"rvagg/through2" -> "robrich/orchestrator" ["e"=1]
+"rvagg/through2" -> "gulpjs/gulp-util" ["e"=1]
 "lazd/gulp-replace" -> "hparra/gulp-rename"
 "lazd/gulp-replace" -> "jackfranklin/gulp-load-plugins"
 "lazd/gulp-replace" -> "sindresorhus/gulp-zip"
@@ -192,6 +214,7 @@ digraph G {
 "lazd/gulp-replace" -> "scniro/gulp-clean-css"
 "lazd/gulp-replace" -> "VFK/gulp-html-replace"
 "shakyShane/gulp-svg-sprites" -> "svg-sprite/gulp-svg-sprite"
+"imagemin/imagemin" -> "sindresorhus/gulp-imagemin" ["e"=1]
 "gulp-community/gulp-livereload" -> "gulp-community/gulp-concat"
 "gulp-community/gulp-livereload" -> "sindresorhus/gulp-autoprefixer"
 "gulp-community/gulp-livereload" -> "terinjokes/gulp-uglify"
@@ -236,6 +259,8 @@ digraph G {
 "sindresorhus/time-grunt" -> "BrowserSync/grunt-browser-sync"
 "JacksonGariety/gulp-nodemon" -> "sun-zheng-an/gulp-shell"
 "JacksonGariety/gulp-nodemon" -> "gulpjs/gulp-util"
+"smcllns/css-social-buttons" -> "andismith/grunt-responsive-images" ["e"=1]
+"smcllns/css-social-buttons" -> "bbc/Imager.js" ["e"=1]
 "jaywcjlove/svgtofont" -> "nfroidure/svgicons2svgfont"
 "jaywcjlove/svgtofont" -> "fontello/svg2ttf"
 "jaywcjlove/svgtofont" -> "itgalaxy/webfont"
@@ -287,6 +312,7 @@ digraph G {
 "uncss/grunt-uncss" -> "sindresorhus/grunt-sass"
 "uncss/grunt-uncss" -> "gruntjs/grunt-contrib-imagemin"
 "uncss/grunt-uncss" -> "katiefenn/parker" ["e"=1]
+"medialize/sass.js" -> "dlmanning/gulp-sass" ["e"=1]
 "MathieuLoutre/grunt-aws-s3" -> "jpillora/grunt-aws"
 "MathieuLoutre/grunt-aws-s3" -> "gruntjs/grunt-contrib-compress"
 "dlmanning/gulp-sass" -> "terinjokes/gulp-uglify"
@@ -334,6 +360,7 @@ digraph G {
 "jonkemp/gulp-useref" -> "ck86/main-bower-files"
 "jonkemp/gulp-useref" -> "ben-eb/gulp-csso"
 "jonkemp/gulp-useref" -> "lazd/gulp-replace"
+"sindresorhus/open" -> "sindresorhus/del" ["e"=1]
 "KKBOX/CompassApp" -> "KKBOX/FireApp"
 "KKBOX/CompassApp" -> "scout-app/scout-app"
 "KKBOX/CompassApp" -> "320-susy"
@@ -356,6 +383,13 @@ digraph G {
 "shama/webpack-stream" -> "sindresorhus/gulp-autoprefixer"
 "shama/webpack-stream" -> "webpack/docs" ["e"=1]
 "shama/webpack-stream" -> "gulpjs/gulp-util"
+"tkadlec/grunt-perfbudget" -> "filamentgroup/grunticon" ["e"=1]
+"tkadlec/grunt-perfbudget" -> "uncss/grunt-uncss" ["e"=1]
+"tkadlec/grunt-perfbudget" -> "stephanmax/grunt-responsive-images-extender" ["e"=1]
+"clean-css/clean-css" -> "scniro/gulp-clean-css" ["e"=1]
+"clean-css/clean-css" -> "terinjokes/gulp-uglify" ["e"=1]
+"clean-css/clean-css" -> "dlmanning/gulp-sass" ["e"=1]
+"clean-css/clean-css" -> "sindresorhus/gulp-imagemin" ["e"=1]
 "fontello/svg2ttf" -> "nfroidure/svgicons2svgfont"
 "fontello/svg2ttf" -> "fontello/ttf2eot"
 "fontello/svg2ttf" -> "jaywcjlove/svgtofont"
@@ -394,6 +428,13 @@ digraph G {
 "twolfson/gulp.spritesmith" -> "aslansky/css-sprite"
 "twolfson/gulp.spritesmith" -> "twolfson/spritesheet-templates"
 "twolfson/gulp.spritesmith" -> "svg-sprite/svg-sprite"
+"ivogabe/gulp-typescript" -> "gulp-sourcemaps/gulp-sourcemaps" ["e"=1]
+"ivogabe/gulp-typescript" -> "gulp-community/gulp-concat" ["e"=1]
+"ivogabe/gulp-typescript" -> "babel/gulp-babel" ["e"=1]
+"ivogabe/gulp-typescript" -> "lazd/gulp-replace" ["e"=1]
+"ivogabe/gulp-typescript" -> "terinjokes/gulp-uglify" ["e"=1]
+"ivogabe/gulp-typescript" -> "dlmanning/gulp-sass" ["e"=1]
+"ivogabe/gulp-typescript" -> "sindresorhus/gulp-filter" ["e"=1]
 "sindresorhus/gulp-imagemin" -> "terinjokes/gulp-uglify"
 "sindresorhus/gulp-imagemin" -> "sindresorhus/gulp-autoprefixer"
 "sindresorhus/gulp-imagemin" -> "gulp-community/gulp-concat"
@@ -455,6 +496,8 @@ digraph G {
 "haoxins/gulp-file-include" -> "OverZealous/run-sequence"
 "haoxins/gulp-file-include" -> "hparra/gulp-rename"
 "backflip/gulp-iconfont-css" -> "nfroidure/gulp-iconfont"
+"hail2u/node-css-mqpacker" -> "postcss/gulp-postcss" ["e"=1]
+"scalyr/angular" -> "ericclemmons/grunt-angular-templates" ["e"=1]
 "sindresorhus/jshint-stylish" -> "spalger/gulp-jshint"
 "sindresorhus/jshint-stylish" -> "gruntjs/grunt-contrib-clean"
 "sindresorhus/jshint-stylish" -> "gruntjs/grunt-contrib-jshint"
@@ -465,6 +508,8 @@ digraph G {
 "sindresorhus/jshint-stylish" -> "yeoman/grunt-usemin"
 "sindresorhus/jshint-stylish" -> "hparra/gulp-rename"
 "sindresorhus/jshint-stylish" -> "sindresorhus/gulp-filter"
+"substack/node-mkdirp" -> "sindresorhus/del" ["e"=1]
+"substack/node-mkdirp" -> "OverZealous/run-sequence" ["e"=1]
 "robrich/orchestrator" -> "gulpjs/vinyl-fs"
 "robrich/orchestrator" -> "gulpjs/vinyl"
 "robrich/orchestrator" -> "shama/gaze" ["e"=1]
@@ -517,6 +562,7 @@ digraph G {
 "mikaelbr/gulp-notify" -> "spalger/gulp-jshint"
 "mikaelbr/gulp-notify" -> "gulp-community/gulp-livereload"
 "mikaelbr/gulp-notify" -> "sindresorhus/gulp-debug"
+"Igosuki/compass-mixins" -> "sindresorhus/grunt-sass" ["e"=1]
 "ben-eb/gulp-csso" -> "terinjokes/gulp-uglify"
 "ben-eb/gulp-csso" -> "sindresorhus/gulp-autoprefixer"
 "ben-eb/gulp-csso" -> "ben-eb/gulp-uncss"
@@ -537,6 +583,7 @@ digraph G {
 "bbc/Imager.js" -> "bbc/wraith" ["e"=1]
 "bbc/Imager.js" -> "gruntjs/grunt-contrib-imagemin"
 "bbc/Imager.js" -> "jonathantneal/svg4everybody" ["e"=1]
+"ghooks-org/ghooks" -> "adametry/gulp-eslint" ["e"=1]
 "OverZealous/run-sequence" -> "gulpjs/gulp-util"
 "OverZealous/run-sequence" -> "hparra/gulp-rename"
 "OverZealous/run-sequence" -> "terinjokes/gulp-uglify"
@@ -552,6 +599,10 @@ digraph G {
 "OverZealous/run-sequence" -> "gulp-sourcemaps/gulp-sourcemaps"
 "OverZealous/run-sequence" -> "sun-zheng-an/gulp-shell"
 "OverZealous/run-sequence" -> "babel/gulp-babel"
+"cognitom/symbols-for-sketch" -> "nfroidure/gulp-iconfont" ["e"=1]
+"cognitom/symbols-for-sketch" -> "backflip/gulp-iconfont-css" ["e"=1]
+"mafintosh/pump" -> "terinjokes/gulp-uglify" ["e"=1]
+"mafintosh/pump" -> "gulp-sourcemaps/gulp-sourcemaps" ["e"=1]
 "w0rm/gulp-svgstore" -> "ben-eb/gulp-svgmin"
 "w0rm/gulp-svgstore" -> "svg-sprite/gulp-svg-sprite"
 "w0rm/gulp-svgstore" -> "FWeinb/grunt-svgstore"
@@ -718,6 +769,7 @@ digraph G {
 "gulp-community/gulp-pug" -> "babel/gulp-babel"
 "gulp-community/gulp-pug" -> "postcss/gulp-postcss"
 "sindresorhus/gulp-debug" -> "tschaub/gulp-newer"
+"donpark/html2jade" -> "gulp-community/gulp-pug" ["e"=1]
 "tschaub/gulp-newer" -> "ahaurw01/gulp-remember"
 "tschaub/gulp-newer" -> "sindresorhus/gulp-debug"
 "tschaub/gulp-newer" -> "sindresorhus/gulp-changed"
@@ -838,6 +890,7 @@ digraph G {
 "coderhaoxin/pg-then" -> "coderhaoxin/storage.io"
 "coderhaoxin/pg-then" -> "coderhaoxin/indexeddb.io"
 "coderhaoxin/pg-then" -> "haoxins/hp"
+"hughsk/vinyl-source-stream" -> "hparra/gulp-rename" ["e"=1]
 "pocesar/grunt-mocha-istanbul" -> "taichi/grunt-istanbul"
 "rubenv/angular-gettext-tools" -> "gabegorelick/gulp-angular-gettext"
 "haoxins/koa-redis-cache" -> "coderhaoxin/storage.io"
@@ -867,6 +920,8 @@ digraph G {
 "haoxins/handlebars" -> "coderhaoxin/pg-then"
 "haoxins/handlebars" -> "haoxins/audio.io"
 "haoxins/goget" -> "coderhaoxin/chai"
+"EmmanuelDemey/eslint-plugin-angular" -> "ericclemmons/grunt-angular-templates" ["e"=1]
+"shouldjs/should.js" -> "sindresorhus/del" ["e"=1]
 "sindresorhus/del" -> "gulp-community/gulp-concat"
 "sindresorhus/del" -> "hparra/gulp-rename"
 "sindresorhus/del" -> "terinjokes/gulp-uglify"
@@ -882,6 +937,9 @@ digraph G {
 "sindresorhus/del" -> "robrich/gulp-if"
 "sindresorhus/del" -> "adametry/gulp-eslint"
 "sindresorhus/del" -> "avevlad/gulp-connect"
+"marquete/kibo" -> "andismith/grunt-responsive-images" ["e"=1]
+"gruntjs/grunt" -> "gruntjs/grunt-contrib-uglify" ["e"=1]
+"postcss/postcss-import" -> "postcss/gulp-postcss" ["e"=1]
 "svg-sprite/gulp-svg-sprite" -> "svg-sprite/svg-sprite"
 "svg-sprite/gulp-svg-sprite" -> "w0rm/gulp-svgstore"
 "svg-sprite/gulp-svg-sprite" -> "shakyShane/gulp-svg-sprites"
@@ -897,9 +955,23 @@ digraph G {
 "svg-sprite/gulp-svg-sprite" -> "sasstools/sass-lint" ["e"=1]
 "svg-sprite/gulp-svg-sprite" -> "JetBrains/svg-sprite-loader" ["e"=1]
 "svg-sprite/gulp-svg-sprite" -> "Hiswe/gulp-svg-symbols"
+"ResponsiveImagesCG/wp-tevko-responsive-images" -> "stephanmax/grunt-responsive-images-extender" ["e"=1]
+"babel/babelify" -> "babel/gulp-babel" ["e"=1]
+"babel/babelify" -> "terinjokes/gulp-uglify" ["e"=1]
+"babel/babelify" -> "babel/grunt-babel" ["e"=1]
+"babel/babelify" -> "gulp-sourcemaps/gulp-sourcemaps" ["e"=1]
+"una/personal-goals" -> "una/gulp-starter-env" ["e"=1]
+"filamentgroup/select-css" -> "w0rm/gulp-svgstore" ["e"=1]
+"udacity/frontend-nanodegree-mobile-portfolio" -> "andismith/grunt-responsive-images" ["e"=1]
 "gulpjs/gulp-cli" -> "gulpjs/undertaker"
+"filamentgroup/grunt-criticalcss" -> "filamentgroup/grunticon" ["e"=1]
 "schickling/gulp-webserver" -> "avevlad/gulp-connect"
 "schickling/gulp-webserver" -> "hiddentao/gulp-server-livereload"
+"sindresorhus/globby" -> "sindresorhus/del" ["e"=1]
+"GoogleChromeLabs/psi" -> "andismith/grunt-responsive-images" ["e"=1]
+"GoogleChromeLabs/psi" -> "bbc/Imager.js" ["e"=1]
+"GoogleChromeLabs/psi" -> "jrcryer/grunt-pagespeed" ["e"=1]
+"GoogleChromeLabs/psi" -> "ben-eb/gulp-uncss" ["e"=1]
 "nDmitry/grunt-postcss" -> "nDmitry/grunt-autoprefixer"
 "nDmitry/grunt-postcss" -> "sindresorhus/grunt-sass"
 "nDmitry/grunt-postcss" -> "gruntjs/grunt-contrib-sass"
@@ -915,6 +987,8 @@ digraph G {
 "nDmitry/grunt-postcss" -> "gruntjs/grunt-contrib-copy"
 "nDmitry/grunt-postcss" -> "gruntjs/grunt-contrib-clean"
 "nDmitry/grunt-postcss" -> "BrowserSync/grunt-browser-sync"
+"google/woff2" -> "nfroidure/ttf2woff2" ["e"=1]
+"google/woff2" -> "fontello/ttf2woff" ["e"=1]
 "babel/gulp-babel" -> "terinjokes/gulp-uglify"
 "babel/gulp-babel" -> "gulp-sourcemaps/gulp-sourcemaps"
 "babel/gulp-babel" -> "gulp-community/gulp-concat"
@@ -930,6 +1004,9 @@ digraph G {
 "babel/gulp-babel" -> "jackfranklin/gulp-load-plugins"
 "babel/gulp-babel" -> "scniro/gulp-clean-css"
 "babel/gulp-babel" -> "shama/webpack-stream"
+"KittyGiraudel/sass-guidelines" -> "sass/sass-site" ["e"=1]
+"borodean/postcss-assets" -> "2createStudio/postcss-sprites" ["e"=1]
+"borodean/postcss-assets" -> "postcss/gulp-postcss" ["e"=1]
 "osscafe/gulp-cheatsheet" -> "jackfranklin/gulp-load-plugins"
 "osscafe/gulp-cheatsheet" -> "kogakure/gulp-tutorial" ["e"=1]
 "osscafe/gulp-cheatsheet" -> "gulp-sourcemaps/gulp-sourcemaps"
@@ -946,6 +1023,11 @@ digraph G {
 "osscafe/gulp-cheatsheet" -> "browserify/browserify-handbook" ["e"=1]
 "osscafe/gulp-cheatsheet" -> "gulp-community/gulp-livereload"
 "una/gulp-starter-env" -> "una/svg-icon-system-boilerplate"
+"dominictarr/event-stream" -> "gulpjs/vinyl" ["e"=1]
+"dominictarr/event-stream" -> "gulpjs/gulp-util" ["e"=1]
+"dominictarr/event-stream" -> "robrich/orchestrator" ["e"=1]
+"microsoft/vscode-codicons" -> "tancredi/fantasticon" ["e"=1]
+"microsoft/vscode-codicons" -> "Workshape/icon-font-generator" ["e"=1]
 "sindresorhus/gulp-autoprefixer" -> "gulp-community/gulp-concat"
 "sindresorhus/gulp-autoprefixer" -> "terinjokes/gulp-uglify"
 "sindresorhus/gulp-autoprefixer" -> "hparra/gulp-rename"
@@ -961,6 +1043,8 @@ digraph G {
 "sindresorhus/gulp-autoprefixer" -> "sindresorhus/del"
 "sindresorhus/gulp-autoprefixer" -> "sindresorhus/gulp-changed"
 "sindresorhus/gulp-autoprefixer" -> "murphydanger/gulp-minify-css"
+"addyosmani/critical-path-css-tools" -> "stephanmax/grunt-responsive-images-extender" ["e"=1]
+"udacity/fend-office-hours" -> "JohnMav/grunt-workflow-guide" ["e"=1]
 "Hiswe/gulp-svg-symbols" -> "lukewhitehouse/svg-icon-workflow"
 "mahnunchik/gulp-responsive" -> "scalableminds/gulp-image-resize"
 "mahnunchik/gulp-responsive" -> "sindresorhus/gulp-imagemin"
@@ -994,6 +1078,7 @@ digraph G {
 "oslllo/svg-fixer" -> "nfroidure/svgicons2svgfont"
 "oslllo/svg-fixer" -> "davestewart/outliner"
 "oslllo/svg-fixer" -> "elrumordelaluz/outline-stroke"
+"addyosmani/critical-path-css-demo" -> "mahnunchik/gulp-responsive" ["e"=1]
 "postcss/gulp-postcss" -> "gulp-community/gulp-concat"
 "postcss/gulp-postcss" -> "gulp-sourcemaps/gulp-sourcemaps"
 "postcss/gulp-postcss" -> "dlmanning/gulp-sass"
@@ -1034,6 +1119,9 @@ digraph G {
 "qdsang/ttf2svg" -> "fontello/ttf2eot"
 "haoxins/httprange" -> "haoxins/glob"
 "haoxins/captcha" -> "coderhaoxin/react.mdl"
+"cssnano/cssnano" -> "postcss/gulp-postcss" ["e"=1]
+"matype/postcss-style-guide" -> "nDmitry/grunt-postcss" ["e"=1]
+"blueimp/JavaScript-Canvas-to-Blob" -> "floatdrop/gulp-plumber" ["e"=1]
 "2createStudio/postcss-sprites" -> "mixtur/webpack-spritesmith" ["e"=1]
 "2createStudio/postcss-sprites" -> "borodean/postcss-assets" ["e"=1]
 "2createStudio/postcss-sprites" -> "glebmachine/postcss-easysprites"
@@ -1043,6 +1131,9 @@ digraph G {
 "fabrik42/responsive_mockups" -> "bjankord/viewportwidth.js"
 "fabrik42/responsive_mockups" -> "edenspiekermann/a11y-toggle" ["e"=1]
 "fabrik42/responsive_mockups" -> "stephanmax/grunt-responsive-images-extender"
+"sgentle/caniuse-cmd" -> "filamentgroup/grunticon" ["e"=1]
+"JohnAlbin/normalize-scss" -> "w0rm/gulp-svgstore" ["e"=1]
+"Pestov/essential-gulp-plugins" -> "mahnunchik/gulp-responsive" ["e"=1]
 "alferov/awesome-gulp" -> "zoxon/gulp-front" ["e"=1]
 "alferov/awesome-gulp" -> "Pines-Cheng/awesome-gulp-cn" ["e"=1]
 "alferov/awesome-gulp" -> "jdrgoms/awesome-postcss" ["e"=1]
@@ -1051,7 +1142,16 @@ digraph G {
 "alferov/awesome-gulp" -> "scniro/gulp-clean-css"
 "alferov/awesome-gulp" -> "HosseinKarami/fastshell" ["e"=1]
 "alferov/awesome-gulp" -> "gulp-community/gulp-pug"
+"purplebamboo/font-carrier" -> "nfroidure/svgicons2svgfont" ["e"=1]
+"purplebamboo/font-carrier" -> "fontello/svg2ttf" ["e"=1]
 "KKBOX/FireApp" -> "KKBOX/CompassApp"
+"sasstools/sass-lint" -> "sasstools/gulp-sass-lint" ["e"=1]
+"danielguillan/bem-constructor" -> "w0rm/gulp-svgstore" ["e"=1]
+"addyosmani/basket.js" -> "uncss/grunt-uncss" ["e"=1]
+"jaicab/localFont" -> "stephanmax/grunt-responsive-images-extender" ["e"=1]
+"sass/libsass" -> "dlmanning/gulp-sass" ["e"=1]
+"sass/libsass" -> "sindresorhus/grunt-sass" ["e"=1]
+"csstools/precss" -> "postcss/gulp-postcss" ["e"=1]
 "tancredi/fantasticon" -> "Workshape/icon-font-generator"
 "tancredi/fantasticon" -> "microsoft/vscode-codicons" ["e"=1]
 "tancredi/fantasticon" -> "nfroidure/svgicons2svgfont"
@@ -1059,13 +1159,19 @@ digraph G {
 "tancredi/fantasticon" -> "oslllo/svg-fixer"
 "tancredi/fantasticon" -> "itgalaxy/webfont"
 "tancredi/fantasticon" -> "fontello/svg2ttf"
+"israelidanny/ie8linter" -> "fabrik42/responsive_mockups" ["e"=1]
 "JohnMav/grunt-workflow-guide" -> "JohnMav/gulp-start"
+"pugjs/pug-loader" -> "gulp-community/gulp-pug" ["e"=1]
 "BrowserSync/recipes" -> "postcss/gulp-postcss"
 "BrowserSync/recipes" -> "ben-eb/gulp-svgmin"
 "BrowserSync/recipes" -> "csstools/precss" ["e"=1]
 "BrowserSync/recipes" -> "shama/webpack-stream"
 "BrowserSync/recipes" -> "davidhund/styleguide-generators" ["e"=1]
 "BrowserSync/recipes" -> "Va1/browser-sync-webpack-plugin"
+"chaijs/sinon-chai" -> "OverZealous/run-sequence" ["e"=1]
+"chaijs/sinon-chai" -> "adametry/gulp-eslint" ["e"=1]
+"messageformat/messageformat" -> "gruntjs/grunt-contrib-connect" ["e"=1]
+"postcss/postcss-simple-vars" -> "postcss/gulp-postcss" ["e"=1]
 "ben-eb/gulp-cssnano" -> "gulp-community/gulp-concat"
 "ben-eb/gulp-cssnano" -> "gulp-community/gulp-less"
 "ben-eb/gulp-cssnano" -> "terinjokes/gulp-uglify"
@@ -1094,6 +1200,7 @@ digraph G {
 "haoxins/glob" -> "haoxins/httprange"
 "haoxins/glob" -> "coderhaoxin/chai"
 "napcs/node-livereload" -> "intesso/connect-livereload"
+"TrySound/postcss-inline-svg" -> "w0rm/gulp-svgstore" ["e"=1]
 "sindresorhus/grunt-shell" -> "gruntjs/grunt-contrib-clean"
 "sindresorhus/grunt-shell" -> "sindresorhus/load-grunt-tasks"
 "sindresorhus/grunt-shell" -> "sindresorhus/grunt-concurrent"
@@ -1121,8 +1228,20 @@ digraph G {
 "sindresorhus/grunt-sass" -> "gruntjs/grunt-contrib-jshint"
 "sindresorhus/grunt-sass" -> "gruntjs/grunt-contrib-uglify"
 "sindresorhus/grunt-sass" -> "sapegin/grunt-webfont"
+"JetBrains/svg-sprite-loader" -> "svg-sprite/svg-sprite" ["e"=1]
+"JetBrains/svg-sprite-loader" -> "svg-sprite/gulp-svg-sprite" ["e"=1]
+"geuis/helium-css" -> "uncss/grunt-uncss" ["e"=1]
+"geuis/helium-css" -> "ben-eb/gulp-uncss" ["e"=1]
+"mixtur/webpack-spritesmith" -> "twolfson/spritesmith" ["e"=1]
+"mixtur/webpack-spritesmith" -> "2createStudio/postcss-sprites" ["e"=1]
+"mixtur/webpack-spritesmith" -> "twolfson/gulp.spritesmith" ["e"=1]
+"Keyamoon/svgxuse" -> "svg-sprite/gulp-svg-sprite" ["e"=1]
+"Keyamoon/svgxuse" -> "svg-sprite/svg-sprite" ["e"=1]
+"Keyamoon/svgxuse" -> "w0rm/gulp-svgstore" ["e"=1]
+"macbre/phantomas" -> "stefanjudis/grunt-phantomas" ["e"=1]
 "una/svg-icon-system-boilerplate" -> "svg-sprite/gulp-svg-sprite"
 "una/svg-icon-system-boilerplate" -> "una/gulp-starter-env"
+"lucidlemon/paradeiser" -> "fabrik42/responsive_mockups" ["e"=1]
 "jmreidy/grunt-browserify" -> "babel/grunt-babel"
 "jmreidy/grunt-browserify" -> "gruntjs/grunt-contrib-clean"
 "jmreidy/grunt-browserify" -> "sindresorhus/load-grunt-tasks"
@@ -1132,6 +1251,7 @@ digraph G {
 "jmreidy/grunt-browserify" -> "gruntjs/grunt-contrib-uglify"
 "jmreidy/grunt-browserify" -> "ericclemmons/grunt-express-server"
 "jmreidy/grunt-browserify" -> "joeybaker/remapify"
+"postcss/postcss-scss" -> "postcss/gulp-postcss" ["e"=1]
 "aseemk/requireDir" -> "adametry/gulp-eslint"
 "sasstools/gulp-sass-lint" -> "juanfran/gulp-scss-lint"
 "sasstools/gulp-sass-lint" -> "sasstools/make-sass-lint-config"
@@ -1170,6 +1290,7 @@ digraph G {
 "gruntjs/grunt-contrib-watch" -> "sindresorhus/grunt-sass"
 "gruntjs/grunt-contrib-watch" -> "gruntjs/grunt-contrib-htmlmin"
 "gruntjs/grunt-contrib-watch" -> "tschaub/grunt-newer"
+"hampusborgos/country-flags" -> "svg-sprite/svg-sprite" ["e"=1]
 "twolfson/spritesmith" -> "twolfson/gulp.spritesmith"
 "twolfson/spritesmith" -> "mixtur/webpack-spritesmith" ["e"=1]
 "twolfson/spritesmith" -> "twolfson/spritesheet-templates"
@@ -1180,6 +1301,10 @@ digraph G {
 "twolfson/spritesmith" -> "murphydanger/gulp-minify-css"
 "twolfson/spritesmith" -> "sprity/sprity"
 "twolfson/spritesmith" -> "bevacqua/spritesmith-cli"
+"soenkekluth/sticky-state" -> "w0rm/gulp-svgstore" ["e"=1]
+"leungwensen/svg-icon" -> "uiwjs/icons" ["e"=1]
+"componentjs/component" -> "gulpjs/vinyl-fs" ["e"=1]
+"postcss/postcss-cli" -> "postcss/gulp-postcss" ["e"=1]
 "gruntjs/grunt-contrib-sass" -> "gruntjs/grunt-contrib-watch"
 "gruntjs/grunt-contrib-sass" -> "gruntjs/grunt-contrib-uglify"
 "gruntjs/grunt-contrib-sass" -> "gruntjs/grunt-contrib-cssmin"
@@ -1195,6 +1320,7 @@ digraph G {
 "gruntjs/grunt-contrib-sass" -> "nDmitry/grunt-postcss"
 "gruntjs/grunt-contrib-sass" -> "gruntjs/grunt-contrib-connect"
 "gruntjs/grunt-contrib-sass" -> "sindresorhus/grunt-shell"
+"kangax/html-minifier" -> "jonschlinkert/gulp-htmlmin" ["e"=1]
 "gruntjs/grunt-contrib-cssmin" -> "gruntjs/grunt-contrib-uglify"
 "gruntjs/grunt-contrib-cssmin" -> "gruntjs/grunt-contrib-concat"
 "gruntjs/grunt-contrib-cssmin" -> "gruntjs/grunt-contrib-clean"
@@ -1240,6 +1366,7 @@ digraph G {
 "twolfson/grunt-spritesmith" -> "sindresorhus/grunt-svgmin"
 "twolfson/grunt-spritesmith" -> "gruntjs/grunt-contrib-copy"
 "twolfson/grunt-spritesmith" -> "ahmednuaman/grunt-scss-lint"
+"jantimon/favicons-webpack-plugin" -> "itgalaxy/favicons" ["e"=1]
 "Workshape/icon-font-generator" -> "sunflowerdeath/webfonts-generator"
 "Workshape/icon-font-generator" -> "tancredi/fantasticon"
 "Workshape/icon-font-generator" -> "Workshape/tech-icons"
@@ -1257,6 +1384,7 @@ digraph G {
 "gruntjs/grunt-contrib-less" -> "gruntjs/grunt-contrib-htmlmin"
 "gruntjs/grunt-contrib-less" -> "gruntjs/grunt-contrib-csslint"
 "gruntjs/grunt-contrib-less" -> "less/less-plugin-clean-css"
+"rafalbromirski/sass-mediaqueries" -> "twolfson/gulp.spritesmith" ["e"=1]
 "gruntjs/grunt-contrib-compress" -> "gruntjs/grunt-contrib-clean"
 "gruntjs/grunt-contrib-compress" -> "gruntjs/grunt-contrib-copy"
 "gruntjs/grunt-contrib-compress" -> "twolfson/grunt-zip"
@@ -1318,6 +1446,7 @@ digraph G {
 "gruntjs/grunt-contrib-compass" -> "gruntjs/grunt-contrib-copy"
 "gruntjs/grunt-contrib-compass" -> "gruntjs/grunt-contrib-compress"
 "gruntjs/grunt-contrib-compass" -> "sindresorhus/load-grunt-tasks"
+"gruntjs/grunt-contrib-requirejs" -> "gruntjs/grunt-contrib-clean" ["e"=1]
 "FontCustom/fontcustom" -> "sapegin/grunt-webfont"
 "FontCustom/fontcustom" -> "nfroidure/gulp-iconfont"
 "FontCustom/fontcustom" -> "svg-sprite/svg-sprite"
@@ -1362,6 +1491,8 @@ digraph G {
 "gruntjs/grunt-contrib-connect" -> "jsoverson/grunt-open"
 "gruntjs/grunt-contrib-connect" -> "gruntjs/grunt-contrib-cssmin"
 "gruntjs/grunt-contrib-connect" -> "sindresorhus/grunt-concurrent"
+"DefinitelyTyped/tsd" -> "gulp-sourcemaps/gulp-sourcemaps" ["e"=1]
+"DefinitelyTyped/tsd" -> "taptapship/wiredep" ["e"=1]
 "gruntjs/grunt-cli" -> "gruntjs/grunt-contrib-watch"
 "gruntjs/grunt-cli" -> "gruntjs/grunt-contrib-uglify"
 "gruntjs/grunt-cli" -> "gruntjs/grunt-contrib-jshint"
@@ -1371,6 +1502,7 @@ digraph G {
 "gruntjs/grunt-cli" -> "gruntjs/grunt" ["e"=1]
 "gruntjs/grunt-cli" -> "gruntjs/grunt-contrib-sass"
 "gruntjs/grunt-cli" -> "gruntjs/grunt-contrib-cssmin"
+"ttsvetko/HTML5-Desktop-Notifications" -> "floatdrop/gulp-watch" ["e"=1]
 "gruntjs/grunt-contrib-concat" -> "gruntjs/grunt-contrib-uglify"
 "gruntjs/grunt-contrib-concat" -> "gruntjs/grunt-contrib-copy"
 "gruntjs/grunt-contrib-concat" -> "gruntjs/grunt-contrib-jshint"
@@ -1451,6 +1583,8 @@ digraph G {
 "ericclemmons/grunt-angular-templates" -> "mgol/grunt-ng-annotate" ["e"=1]
 "ericclemmons/grunt-angular-templates" -> "gruntjs/grunt-contrib-concat"
 "ericclemmons/grunt-angular-templates" -> "yeoman/grunt-usemin"
+"kornelski/giflossy" -> "kornelski/ImageAlpha" ["e"=1]
+"oklai/koala" -> "scout-app/scout-app" ["e"=1]
 "yeoman/grunt-usemin" -> "yeoman/grunt-filerev"
 "yeoman/grunt-usemin" -> "gruntjs/grunt-contrib-clean"
 "yeoman/grunt-usemin" -> "gruntjs/grunt-contrib-copy"
@@ -1466,8 +1600,12 @@ digraph G {
 "yeoman/grunt-usemin" -> "gruntjs/grunt-contrib-connect"
 "yeoman/grunt-usemin" -> "ericclemmons/grunt-angular-templates"
 "yeoman/grunt-usemin" -> "dciccale/grunt-processhtml"
+"sindresorhus/clipboardy" -> "sindresorhus/del" ["e"=1]
+"thlorenz/browserify-shim" -> "jmreidy/grunt-browserify" ["e"=1]
 "kornelski/ImageAlpha" -> "andismith/grunt-responsive-images"
 "kornelski/ImageAlpha" -> "bbc/Imager.js"
+"JamieMason/ImageOptim-CLI" -> "JamieMason/grunt-imageoptim" ["e"=1]
+"JamieMason/ImageOptim-CLI" -> "kornelski/ImageAlpha" ["e"=1]
 "jeerbl/webfonts-loader" -> "DragonsInn/fontgen-loader"
 "jeerbl/webfonts-loader" -> "sunflowerdeath/webfonts-generator"
 "jeerbl/webfonts-loader" -> "jantimon/iconfont-webpack-plugin"
@@ -1478,6 +1616,10 @@ digraph G {
 "jpillora/grunt-aws" -> "MathieuLoutre/grunt-aws-s3"
 "jpillora/grunt-aws" -> "pifantastic/grunt-s3"
 "sindresorhus/grunt-svgmin" -> "nDmitry/grunt-postcss"
+"karma-runner/karma-coverage" -> "sindresorhus/load-grunt-tasks" ["e"=1]
+"mezzoblue/csszengarden.com" -> "less/less-docs" ["e"=1]
+"uncss/uncss" -> "uncss/grunt-uncss" ["e"=1]
+"uncss/uncss" -> "ben-eb/gulp-uncss" ["e"=1]
 "sindresorhus/grunt-concurrent" -> "tschaub/grunt-newer"
 "sindresorhus/grunt-concurrent" -> "sindresorhus/load-grunt-tasks"
 "sindresorhus/grunt-concurrent" -> "sindresorhus/time-grunt"
@@ -1493,6 +1635,8 @@ digraph G {
 "sindresorhus/grunt-concurrent" -> "firstandthird/load-grunt-config"
 "sindresorhus/grunt-concurrent" -> "vkadam/grunt-jsbeautifier"
 "sindresorhus/grunt-concurrent" -> "nDmitry/grunt-postcss"
+"andyearnshaw/Intl.js" -> "babel/gulp-babel" ["e"=1]
+"alexei/sprintf.js" -> "babel/gulp-babel" ["e"=1]
 "nDmitry/grunt-autoprefixer" -> "nDmitry/grunt-postcss"
 "nDmitry/grunt-autoprefixer" -> "gruntjs/grunt-contrib-sass"
 "nDmitry/grunt-autoprefixer" -> "gruntjs/grunt-contrib-cssmin"
@@ -1508,6 +1652,7 @@ digraph G {
 "nDmitry/grunt-autoprefixer" -> "BrowserSync/grunt-browser-sync"
 "nDmitry/grunt-autoprefixer" -> "sindresorhus/time-grunt"
 "nDmitry/grunt-autoprefixer" -> "gruntjs/grunt-contrib-jshint"
+"pillarjs/hbs" -> "sindresorhus/gulp-rev" ["e"=1]
 "stephenplusplus/grunt-wiredep" -> "taptapship/wiredep"
 "stephenplusplus/grunt-wiredep" -> "sapegin/grunt-bower-concat"
 "stephenplusplus/grunt-wiredep" -> "yatskevich/grunt-bower-task"
@@ -1530,6 +1675,12 @@ digraph G {
 "fontello/ttf2woff" -> "fontello/svg2ttf"
 "sindresorhus/gulp-zip" ["l"="24.567,-30.041"]
 "lazd/gulp-replace" ["l"="24.528,-30.102"]
+"jonathantneal/svg4everybody" ["l"="22.476,-29.807", "c"=36]
+"w0rm/gulp-svgstore" ["l"="24.309,-30.155"]
+"svg-sprite/svg-sprite" ["l"="24.276,-30.183"]
+"svg-sprite/gulp-svg-sprite" ["l"="24.288,-30.132"]
+"filamentgroup/grunticon" ["l"="24.286,-30.234"]
+"FWeinb/grunt-svgstore" ["l"="24.297,-30.256"]
 "sindresorhus/load-grunt-tasks" ["l"="24.31,-30.367"]
 "sindresorhus/time-grunt" ["l"="24.295,-30.378"]
 "gruntjs/grunt-contrib-clean" ["l"="24.33,-30.368"]
@@ -1546,6 +1697,12 @@ digraph G {
 "gruntjs/grunt-contrib-jshint" ["l"="24.357,-30.351"]
 "nDmitry/grunt-postcss" ["l"="24.314,-30.328"]
 "sindresorhus/grunt-sass" ["l"="24.292,-30.34"]
+"sindresorhus/trash" ["l"="-0.847,-36.048", "c"=498]
+"sindresorhus/del" ["l"="24.514,-30.09"]
+"cssstats/cssstats" ["l"="22.583,-24.648", "c"=503]
+"olov/ng-annotate" ["l"="10.152,-23.92", "c"=183]
+"Kagami/gulp-ng-annotate" ["l"="24.612,-30.202"]
+"miickel/gulp-angular-templatecache" ["l"="24.551,-30.169"]
 "sindresorhus/gulp-rev" ["l"="24.547,-30.129"]
 "jamesknelson/gulp-rev-replace" ["l"="24.588,-30.139"]
 "jonkemp/gulp-useref" ["l"="24.533,-30.144"]
@@ -1562,6 +1719,14 @@ digraph G {
 "jackfranklin/gulp-load-plugins" ["l"="24.514,-30.112"]
 "dlmanning/gulp-sass" ["l"="24.452,-30.085"]
 "sindresorhus/gulp-imagemin" ["l"="24.418,-30.116"]
+"yeoman/generator-webapp" ["l"="9.906,-24.022", "c"=183]
+"taptapship/wiredep" ["l"="24.472,-30.196"]
+"filamentgroup/fixed-sticky" ["l"="22.482,-29.775", "c"=36]
+"chinmaymk/angular-charts" ["l"="10.095,-23.697", "c"=183]
+"rquadling/grunt-html2js" ["l"="24.482,-30.415"]
+"browserify/watchify" ["l"="0.141,-29.54", "c"=12]
+"adametry/gulp-eslint" ["l"="24.511,-30.074"]
+"gulpjs/vinyl" ["l"="24.574,-30.068"]
 "gulpjs/glob-stream" ["l"="24.64,-30.003"]
 "contra/glob2base" ["l"="24.673,-29.992"]
 "gulp-sourcemaps/gulp-sourcemaps" ["l"="24.468,-30.095"]
@@ -1571,73 +1736,66 @@ digraph G {
 "floatdrop/gulp-plumber" ["l"="24.479,-30.085"]
 "murphydanger/gulp-minify-css" ["l"="24.456,-30.142"]
 "spalger/gulp-jshint" ["l"="24.487,-30.148"]
-"sindresorhus/del" ["l"="24.514,-30.09"]
-"gulpjs/vinyl" ["l"="24.574,-30.068"]
 "gulpjs/vinyl-fs" ["l"="24.633,-30.026"]
-"rvagg/through2" ["l"="0.187,-33.59"]
+"rvagg/through2" ["l"="0.187,-33.59", "c"=110]
 "robrich/orchestrator" ["l"="24.599,-30.039"]
 "floatdrop/gulp-watch" ["l"="24.494,-30.088"]
-"dominictarr/event-stream" ["l"="0.141,-33.618"]
-"shama/gaze" ["l"="-8.585,-35.178"]
-"browserify/watchify" ["l"="0.141,-29.54"]
+"dominictarr/event-stream" ["l"="0.141,-33.618", "c"=110]
+"shama/gaze" ["l"="-8.585,-35.178", "c"=48]
 "sindresorhus/gulp-changed" ["l"="24.487,-30.074"]
 "OverZealous/lazypipe" ["l"="24.526,-30.045"]
 "gulpjs/gulp-cli" ["l"="24.733,-29.994"]
-"isaacs/node-glob" ["l"="-0.551,-35.916"]
+"isaacs/node-glob" ["l"="-0.551,-35.916", "c"=498]
 "klei/gulp-inject" ["l"="24.52,-30.161"]
 "ck86/main-bower-files" ["l"="24.513,-30.145"]
-"taptapship/wiredep" ["l"="24.472,-30.196"]
-"miickel/gulp-angular-templatecache" ["l"="24.551,-30.169"]
 "sindresorhus/gulp-filter" ["l"="24.504,-30.17"]
 "klei/gulp-angular-filesort" ["l"="24.558,-30.198"]
 "tschaub/gulp-newer" ["l"="24.496,-30.034"]
 "avevlad/gulp-connect" ["l"="24.493,-30.061"]
 "schickling/gulp-webserver" ["l"="24.477,-29.996"]
-"adametry/gulp-eslint" ["l"="24.511,-30.074"]
 "postcss/gulp-postcss" ["l"="24.424,-30.091"]
+"pattern-lab/patternlab-php" ["l"="22.532,-24.742", "c"=503]
 "gulp-community/gulp-less" ["l"="24.458,-30.068"]
 "mikaelbr/gulp-notify" ["l"="24.445,-30.097"]
-"svg-sprite/svg-sprite" ["l"="24.276,-30.183"]
-"svg-sprite/gulp-svg-sprite" ["l"="24.288,-30.132"]
-"jonathantneal/svg4everybody" ["l"="22.476,-29.807"]
-"JetBrains/svg-sprite-loader" ["l"="0.589,-26.935"]
-"Keyamoon/svgxuse" ["l"="22.541,-29.813"]
-"w0rm/gulp-svgstore" ["l"="24.309,-30.155"]
-"FWeinb/grunt-svgstore" ["l"="24.297,-30.256"]
+"css/csso" ["l"="-0.272,-31.452", "c"=295]
+"ben-eb/gulp-csso" ["l"="24.432,-30.137"]
+"JetBrains/svg-sprite-loader" ["l"="0.589,-26.935", "c"=951]
+"Keyamoon/svgxuse" ["l"="22.541,-29.813", "c"=36]
 "svg-sprite/grunt-svg-sprite" ["l"="24.258,-30.232"]
-"filamentgroup/grunticon" ["l"="24.286,-30.234"]
 "nfroidure/gulp-iconfont" ["l"="24.224,-30.145"]
-"sasstools/sass-lint" ["l"="22.451,-24.601"]
-"bramstein/fontfaceobserver" ["l"="22.503,-29.821"]
+"sasstools/sass-lint" ["l"="22.451,-24.601", "c"=503]
+"bramstein/fontfaceobserver" ["l"="22.503,-29.821", "c"=36]
 "twolfson/gulp.spritesmith" ["l"="24.391,-30.167"]
 "shakyShane/gulp-svg-sprites" ["l"="24.265,-30.147"]
-"svg/svgo" ["l"="22.205,-29.939"]
-"csstools/precss" ["l"="24.643,-29.203"]
+"svg/svgo" ["l"="22.205,-29.939", "c"=36]
+"csstools/precss" ["l"="24.643,-29.203", "c"=990]
 "stephenplusplus/grunt-wiredep" ["l"="24.343,-30.312"]
-"austinpray/asset-builder" ["l"="11.557,-35.13"]
+"austinpray/asset-builder" ["l"="11.557,-35.13", "c"=27]
 "yeoman/grunt-usemin" ["l"="24.387,-30.347"]
-"olov/ng-annotate" ["l"="10.152,-23.92"]
-"yeoman/generator-webapp" ["l"="9.906,-24.022"]
 "sapegin/grunt-bower-concat" ["l"="24.367,-30.262"]
 "grncdr/merge-stream" ["l"="24.589,-30.007"]
 "VFK/gulp-html-replace" ["l"="24.629,-30.091"]
+"imagemin/imagemin" ["l"="-0.073,-31.174", "c"=295]
 "gulp-community/gulp-livereload" ["l"="24.47,-30.061"]
 "sindresorhus/gulp-ruby-sass" ["l"="24.431,-30.063"]
-"karma-runner/gulp-karma" ["l"="-0.85,-34.077"]
+"karma-runner/gulp-karma" ["l"="-0.85,-34.077", "c"=110]
 "itgalaxy/favicons" ["l"="24.183,-30.183"]
-"jantimon/favicons-webpack-plugin" ["l"="0.592,-26.84"]
-"brunocodutra/webapp-webpack-plugin" ["l"="0.664,-26.871"]
-"luisrudge/postcss-flexbugs-fixes" ["l"="24.606,-29.231"]
+"jantimon/favicons-webpack-plugin" ["l"="0.592,-26.84", "c"=951]
+"brunocodutra/webapp-webpack-plugin" ["l"="0.664,-26.871", "c"=951]
+"luisrudge/postcss-flexbugs-fixes" ["l"="24.606,-29.231", "c"=990]
 "haydenbleasel/gulp-favicons" ["l"="24.156,-30.204"]
 "RealFaviconGenerator/gulp-real-favicon" ["l"="24.113,-30.216"]
 "gleero/grunt-favicons" ["l"="24.132,-30.198"]
-"sapegin/social-likes" ["l"="-44.056,24.91"]
-"audreyfeldroy/favicon-cheat-sheet" ["l"="22.382,-29.839"]
+"sapegin/social-likes" ["l"="-44.056,24.91", "c"=158]
+"audreyfeldroy/favicon-cheat-sheet" ["l"="22.382,-29.839", "c"=36]
 "jgable/gulp-cache" ["l"="24.405,-30.039"]
 "shootaroo/jit-grunt" ["l"="24.261,-30.375"]
 "BrowserSync/grunt-browser-sync" ["l"="24.276,-30.322"]
 "JacksonGariety/gulp-nodemon" ["l"="24.615,-30.173"]
 "sun-zheng-an/gulp-shell" ["l"="24.588,-30.203"]
+"smcllns/css-social-buttons" ["l"="21.975,-27.446", "c"=28]
+"andismith/grunt-responsive-images" ["l"="24.38,-30.297"]
+"bbc/Imager.js" ["l"="24.388,-30.28"]
 "jaywcjlove/svgtofont" ["l"="24.095,-30.097"]
 "nfroidure/svgicons2svgfont" ["l"="24.127,-30.12"]
 "fontello/svg2ttf" ["l"="24.092,-30.118"]
@@ -1646,12 +1804,12 @@ digraph G {
 "tancredi/fantasticon" ["l"="24.083,-30.073"]
 "oslllo/svg-fixer" ["l"="24.059,-30.096"]
 "less/less-docs" ["l"="24.455,-30.567"]
-"less/less.js" ["l"="-0.411,-31.837"]
+"less/less.js" ["l"="-0.411,-31.837", "c"=295]
 "less/less.github.io" ["l"="24.477,-30.586"]
 "scout-app/scout-app" ["l"="24.507,-30.643"]
 "less/less-plugin-clean-css" ["l"="24.429,-30.492"]
 "sass/sass-site" ["l"="24.445,-30.622"]
-"sass/sass" ["l"="-0.481,-31.698"]
+"sass/sass" ["l"="-0.481,-31.698", "c"=295]
 "less/less-plugin-autoprefix" ["l"="24.411,-30.47"]
 "coderhaoxin/typed-objects" ["l"="24.353,-30.02"]
 "coderhaoxin/chai" ["l"="24.347,-30.009"]
@@ -1664,48 +1822,49 @@ digraph G {
 "sindresorhus/grunt-svgmin" ["l"="24.297,-30.29"]
 "uncss/grunt-uncss" ["l"="24.337,-30.26"]
 "sapegin/grunt-webfont" ["l"="24.276,-30.269"]
-"filamentgroup/grunt-criticalcss" ["l"="22.611,-29.98"]
+"filamentgroup/grunt-criticalcss" ["l"="22.611,-29.98", "c"=36]
 "nDmitry/grunt-autoprefixer" ["l"="24.313,-30.34"]
 "Modernizr/grunt-modernizr" ["l"="24.402,-30.311"]
 "twolfson/grunt-spritesmith" ["l"="24.329,-30.278"]
 "stefanjudis/grunt-phantomas" ["l"="24.201,-30.271"]
-"uncss/uncss" ["l"="22.553,-29.939"]
+"uncss/uncss" ["l"="22.553,-29.939", "c"=36]
 "ben-eb/gulp-uncss" ["l"="24.398,-30.145"]
-"andismith/grunt-responsive-images" ["l"="24.38,-30.297"]
-"tkadlec/grunt-perfbudget" ["l"="-0.138,-29.973"]
-"bezoerb/grunt-critical" ["l"="22.592,-30.079"]
+"tkadlec/grunt-perfbudget" ["l"="-0.138,-29.973", "c"=12]
+"bezoerb/grunt-critical" ["l"="22.592,-30.079", "c"=36]
 "purifycss/grunt-purifycss" ["l"="24.326,-30.211"]
 "gruntjs/grunt-contrib-imagemin" ["l"="24.34,-30.335"]
-"katiefenn/parker" ["l"="22.488,-24.629"]
+"katiefenn/parker" ["l"="22.488,-24.629", "c"=503]
+"medialize/sass.js" ["l"="-0.219,-31.539", "c"=295]
 "MathieuLoutre/grunt-aws-s3" ["l"="24.327,-30.505"]
 "jpillora/grunt-aws" ["l"="24.324,-30.54"]
 "gruntjs/grunt-contrib-compress" ["l"="24.333,-30.411"]
 "gulp-community/gulp-pug" ["l"="24.47,-30.139"]
-"ben-eb/gulp-csso" ["l"="24.432,-30.137"]
+"sindresorhus/open" ["l"="-0.701,-35.881", "c"=498]
 "KKBOX/CompassApp" ["l"="24.528,-30.681"]
 "KKBOX/FireApp" ["l"="24.533,-30.709"]
 "320-susy" ["l"="24.558,-30.692"]
-"sporkd/compass-html5-boilerplate" ["l"="2.87,-35.311"]
-"jonikorpi/Golden-Grid-System" ["l"="3.635,-34.063"]
-"StanAngeloff/compass-magick" ["l"="2.951,-35.365"]
-"mockko/livereload" ["l"="2.875,-35.366"]
+"sporkd/compass-html5-boilerplate" ["l"="2.87,-35.311", "c"=171]
+"jonikorpi/Golden-Grid-System" ["l"="3.635,-34.063", "c"=179]
+"StanAngeloff/compass-magick" ["l"="2.951,-35.365", "c"=171]
+"mockko/livereload" ["l"="2.875,-35.366", "c"=171]
 "shama/webpack-stream" ["l"="24.541,-30.09"]
-"webpack-contrib/webpack-hot-middleware" ["l"="0.447,-26.891"]
-"webpack-contrib/extract-text-webpack-plugin" ["l"="0.471,-26.859"]
-"babel/babel-loader" ["l"="0.511,-26.881"]
-"webpack/docs" ["l"="0.481,-26.931"]
+"webpack-contrib/webpack-hot-middleware" ["l"="0.447,-26.891", "c"=951]
+"webpack-contrib/extract-text-webpack-plugin" ["l"="0.471,-26.859", "c"=951]
+"babel/babel-loader" ["l"="0.511,-26.881", "c"=951]
+"webpack/docs" ["l"="0.481,-26.931", "c"=951]
+"stephanmax/grunt-responsive-images-extender" ["l"="24.222,-30.317"]
+"clean-css/clean-css" ["l"="-0.328,-31.463", "c"=295]
 "fontello/ttf2eot" ["l"="24.022,-30.124"]
 "fontello/ttf2woff" ["l"="24.042,-30.133"]
 "sunflowerdeath/webfonts-generator" ["l"="24.137,-30.079"]
-"Kagami/gulp-ng-annotate" ["l"="24.612,-30.202"]
 "murphydanger/gulp-minify-html" ["l"="24.52,-30.191"]
 "aslansky/css-sprite" ["l"="24.368,-30.222"]
 "sprity/sprity" ["l"="24.418,-30.218"]
 "twolfson/spritesmith" ["l"="24.397,-30.226"]
-"mixtur/webpack-spritesmith" ["l"="0.64,-26.928"]
+"mixtur/webpack-spritesmith" ["l"="0.64,-26.928", "c"=951]
 "haoxins/gulp-file-include" ["l"="24.394,-30.067"]
 "twolfson/spritesheet-templates" ["l"="24.378,-30.197"]
-"imagemin/imagemin" ["l"="-0.073,-31.174"]
+"ivogabe/gulp-typescript" ["l"="0.674,-26.609", "c"=951]
 "gulp-community/gulp-cached" ["l"="24.511,-30.021"]
 "ahaurw01/gulp-remember" ["l"="24.503,-30.004"]
 "sindresorhus/gulp-size" ["l"="24.473,-30.165"]
@@ -1713,15 +1872,19 @@ digraph G {
 "haoxins/redux-action" ["l"="24.367,-30.015"]
 "haoxins/fetch.io" ["l"="24.365,-30.004"]
 "backflip/gulp-iconfont-css" ["l"="24.195,-30.133"]
+"hail2u/node-css-mqpacker" ["l"="24.634,-29.225", "c"=990]
+"scalyr/angular" ["l"="10.292,-24.012", "c"=183]
+"ericclemmons/grunt-angular-templates" ["l"="24.439,-30.388"]
 "sindresorhus/jshint-stylish" ["l"="24.428,-30.26"]
 "jscs-dev/gulp-jscs" ["l"="24.497,-30.207"]
 "yeoman/grunt-filerev" ["l"="24.387,-30.33"]
+"substack/node-mkdirp" ["l"="-0.531,-35.832", "c"=498]
 "osscafe/gulp-cheatsheet" ["l"="24.537,-30.066"]
 "gulpjs/liftoff" ["l"="24.67,-29.961"]
 "gulpjs/interpret" ["l"="24.714,-29.915"]
 "sebdeckers/grunt-rev" ["l"="24.411,-30.408"]
-"cognitom/symbols-for-sketch" ["l"="21.451,-24.585"]
-"cognitom/gulp-sketch" ["l"="21.467,-24.681"]
+"cognitom/symbols-for-sketch" ["l"="21.451,-24.585", "c"=226]
+"cognitom/gulp-sketch" ["l"="21.467,-24.681", "c"=226]
 "nfroidure/gulp-svgicons2svgfont" ["l"="24.167,-30.131"]
 "FontCustom/fontcustom" ["l"="24.231,-30.192"]
 "sasstools/gulp-sass-lint" ["l"="24.133,-30.167"]
@@ -1730,53 +1893,54 @@ digraph G {
 "conventional-changelog-archived-repos/gulp-conventional-changelog" ["l"="24.592,-30.263"]
 "stephenlacy/gulp-git" ["l"="24.582,-30.24"]
 "sindresorhus/gulp-debug" ["l"="24.469,-30.032"]
-"bbc/Imager.js" ["l"="24.388,-30.28"]
+"Igosuki/compass-mixins" ["l"="22.475,-24.452", "c"=503]
 "kornelski/ImageAlpha" ["l"="24.424,-30.295"]
-"GoogleChromeLabs/psi" ["l"="-0.138,-29.999"]
-"smcllns/css-social-buttons" ["l"="21.975,-27.446"]
-"scottjehl/picturefill" ["l"="22.398,-29.741"]
-"rain1017/quick-pomelo" ["l"="24.332,-25.071"]
-"rain1017/memdb" ["l"="24.35,-25.089"]
-"rain1017/async-lock" ["l"="24.347,-25.072"]
-"marquete/kibo" ["l"="3.449,-34.147"]
-"filamentgroup/loadCSS" ["l"="22.446,-29.811"]
-"bbc/wraith" ["l"="-2.069,-0.242"]
+"GoogleChromeLabs/psi" ["l"="-0.138,-29.999", "c"=12]
+"scottjehl/picturefill" ["l"="22.398,-29.741", "c"=36]
+"rain1017/quick-pomelo" ["l"="24.332,-25.071", "c"=898]
+"rain1017/memdb" ["l"="24.35,-25.089", "c"=898]
+"rain1017/async-lock" ["l"="24.347,-25.072", "c"=898]
+"marquete/kibo" ["l"="3.449,-34.147", "c"=179]
+"filamentgroup/loadCSS" ["l"="22.446,-29.811", "c"=36]
+"bbc/wraith" ["l"="-2.069,-0.242", "c"=224]
+"ghooks-org/ghooks" ["l"="8.969,-45.423", "c"=544]
+"mafintosh/pump" ["l"="0.24,-33.612", "c"=110]
 "ben-eb/gulp-svgmin" ["l"="24.358,-30.102"]
-"TrySound/postcss-inline-svg" ["l"="24.686,-29.25"]
-"fregante/object-fit-images" ["l"="22.492,-29.72"]
-"danielguillan/bem-constructor" ["l"="22.467,-24.517"]
-"soenkekluth/sticky-state" ["l"="-8.395,-23.913"]
+"TrySound/postcss-inline-svg" ["l"="24.686,-29.25", "c"=990]
+"fregante/object-fit-images" ["l"="22.492,-29.72", "c"=36]
+"danielguillan/bem-constructor" ["l"="22.467,-24.517", "c"=503]
+"soenkekluth/sticky-state" ["l"="-8.395,-23.913", "c"=539]
 "nib-health-funds/gulp-rev-delete-original" ["l"="24.629,-30.113"]
 "bezoerb/gulp-htmlhint" ["l"="24.544,-29.987"]
-"stephanmax/grunt-responsive-images-extender" ["l"="24.222,-30.317"]
 "JohnMav/grunt-workflow-guide" ["l"="24.446,-30.327"]
 "jrcryer/grunt-pagespeed" ["l"="24.434,-30.342"]
-"udacity/devsummit" ["l"="28.284,-26.188"]
+"udacity/devsummit" ["l"="28.284,-26.188", "c"=1286]
 "ResponsiveImagesCG/picture-element" ["l"="24.431,-30.319"]
-"udacity/fend-office-hours" ["l"="28.25,-26.129"]
-"udacity/responsive-images" ["l"="28.33,-26.109"]
+"udacity/fend-office-hours" ["l"="28.25,-26.129", "c"=1286]
+"udacity/responsive-images" ["l"="28.33,-26.109", "c"=1286]
 "JamieMason/grunt-imageoptim" ["l"="24.463,-30.316"]
 "gmetais/grunt-devperf" ["l"="24.166,-30.278"]
 "purifycss/gulp-purifycss" ["l"="24.346,-30.171"]
 "mahnunchik/gulp-responsive" ["l"="24.367,-30.149"]
-"oklai/koala" ["l"="-4.297,-33.435"]
-"kangax/html-minifier" ["l"="-0.301,-31.411"]
+"oklai/koala" ["l"="-4.297,-33.435", "c"=30]
+"kangax/html-minifier" ["l"="-0.301,-31.411", "c"=295]
 "jkphl/iconizr" ["l"="24.229,-30.242"]
 "dciccale/grunt-processhtml" ["l"="24.387,-30.394"]
 "dciccale/node-htmlprocessor" ["l"="24.411,-30.435"]
 "Wildhoney/gulp-processhtml" ["l"="24.434,-30.43"]
-"spatools/grunt-html-build" ["l"="-1.047,-34.003"]
+"spatools/grunt-html-build" ["l"="-1.047,-34.003", "c"=110]
 "outaTiME/grunt-replace" ["l"="24.378,-30.433"]
 "gulpjs/rechoir" ["l"="24.731,-29.896"]
 "stephenlacy/gulp-stylus" ["l"="24.52,-30.222"]
-"pugjs/pug-loader" ["l"="22.933,-24.331"]
+"pugjs/pug-loader" ["l"="22.933,-24.331", "c"=503]
+"donpark/html2jade" ["l"="1.906,-34.527", "c"=156]
 "rubenv/angular-gettext" ["l"="24.69,-30.215"]
 "rubenv/angular-gettext-tools" ["l"="24.73,-30.214"]
 "gabegorelick/gulp-angular-gettext" ["l"="24.724,-30.227"]
 "rubenv/grunt-angular-gettext" ["l"="24.711,-30.238"]
-"angular-translate/angular-translate" ["l"="10.149,-23.88"]
-"monospaced/angular-elastic" ["l"="10.259,-23.767"]
-"jirikavi/AngularJS-Toaster" ["l"="10.251,-23.816"]
+"angular-translate/angular-translate" ["l"="10.149,-23.88", "c"=183]
+"monospaced/angular-elastic" ["l"="10.259,-23.767", "c"=183]
+"jirikavi/AngularJS-Toaster" ["l"="10.251,-23.816", "c"=183]
 "m19c/gulp-run" ["l"="24.642,-30.242"]
 "joeybaker/remapify" ["l"="24.195,-30.397"]
 "jmm/pathmodify" ["l"="24.161,-30.417"]
@@ -1796,38 +1960,53 @@ digraph G {
 "jscs-dev/grunt-jscs" ["l"="24.083,-30.422"]
 "pghalliday/grunt-mocha-test" ["l"="24.115,-30.416"]
 "nfroidure/streamqueue" ["l"="24.608,-29.967"]
+"hughsk/vinyl-source-stream" ["l"="0.15,-29.586", "c"=12]
 "pocesar/grunt-mocha-istanbul" ["l"="24.095,-30.444"]
 "haoxins/koa-redis-cache" ["l"="24.334,-30.005"]
 "haoxins/audio.io" ["l"="24.344,-29.999"]
 "haoxins/image.io" ["l"="24.326,-29.987"]
 "koa-modules/koa-no-cache" ["l"="24.31,-29.981"]
 "haoxins/goget" ["l"="24.312,-29.996"]
+"EmmanuelDemey/eslint-plugin-angular" ["l"="10.232,-24.104", "c"=183]
+"shouldjs/should.js" ["l"="-0.078,-34.062", "c"=110]
+"gruntjs/grunt" ["l"="-0.367,-31.729", "c"=295]
+"postcss/postcss-import" ["l"="24.62,-29.195", "c"=990]
 "una/svg-icon-system-boilerplate" ["l"="24.261,-30.073"]
 "liquidlight/sass-gulp-svg-sprite" ["l"="24.253,-30.102"]
-"SC5/sc5-styleguide" ["l"="22.435,-24.687"]
+"SC5/sc5-styleguide" ["l"="22.435,-24.687", "c"=503]
 "Hiswe/gulp-svg-symbols" ["l"="24.225,-30.072"]
+"ResponsiveImagesCG/wp-tevko-responsive-images" ["l"="11.857,-35.321", "c"=27]
+"babel/babelify" ["l"="0.233,-29.522", "c"=12]
+"babel/grunt-babel" ["l"="24.28,-30.39"]
+"una/personal-goals" ["l"="46.228,18.83", "c"=52]
+"una/gulp-starter-env" ["l"="24.244,-30.036"]
+"filamentgroup/select-css" ["l"="22.601,-29.774", "c"=36]
+"udacity/frontend-nanodegree-mobile-portfolio" ["l"="28.269,-26.124", "c"=1286]
 "gulpjs/undertaker" ["l"="24.784,-29.977"]
 "hiddentao/gulp-server-livereload" ["l"="24.477,-29.944"]
+"sindresorhus/globby" ["l"="-0.698,-35.814", "c"=498]
 "gruntjs/grunt-contrib-concat" ["l"="24.363,-30.362"]
-"babel/babelify" ["l"="0.233,-29.522"]
-"kogakure/gulp-tutorial" ["l"="-40.209,14.99"]
-"vigetlabs/blendid" ["l"="22.527,-29.848"]
-"browserify/browserify-handbook" ["l"="0.335,-29.512"]
-"una/gulp-starter-env" ["l"="24.244,-30.036"]
+"google/woff2" ["l"="20.767,-0.527", "c"=557]
+"KittyGiraudel/sass-guidelines" ["l"="22.476,-24.54", "c"=503]
+"borodean/postcss-assets" ["l"="24.657,-29.226", "c"=990]
+"2createStudio/postcss-sprites" ["l"="24.477,-30.268"]
+"kogakure/gulp-tutorial" ["l"="-40.209,14.99", "c"=706]
+"vigetlabs/blendid" ["l"="22.527,-29.848", "c"=36]
+"browserify/browserify-handbook" ["l"="0.335,-29.512", "c"=12]
+"microsoft/vscode-codicons" ["l"="-55.771,6.864", "c"=444]
+"Workshape/icon-font-generator" ["l"="24.123,-30.063"]
+"addyosmani/critical-path-css-tools" ["l"="22.551,-29.974", "c"=36]
 "lukewhitehouse/svg-icon-workflow" ["l"="24.201,-30.036"]
 "scalableminds/gulp-image-resize" ["l"="24.317,-30.1"]
-"addyosmani/critical-path-css-demo" ["l"="22.574,-30.012"]
-"zellwk/mappy-breakpoints" ["l"="22.546,-24.505"]
+"addyosmani/critical-path-css-demo" ["l"="22.574,-30.012", "c"=36]
+"zellwk/mappy-breakpoints" ["l"="22.546,-24.505", "c"=503]
 "Modernizr/gulp-modernizr" ["l"="24.327,-30.122"]
-"Workshape/icon-font-generator" ["l"="24.123,-30.063"]
 "DragonsInn/fontgen-loader" ["l"="24.136,-30.041"]
 "jeerbl/webfonts-loader" ["l"="24.117,-30.025"]
 "davestewart/outliner" ["l"="24.025,-30.088"]
 "elrumordelaluz/outline-stroke" ["l"="24.001,-30.08"]
-"postcss/postcss-simple-vars" ["l"="24.618,-29.146"]
-"postcss/postcss-import" ["l"="24.62,-29.195"]
+"postcss/postcss-simple-vars" ["l"="24.618,-29.146", "c"=990]
 "gruntjs/grunt-contrib-less" ["l"="24.367,-30.394"]
-"babel/grunt-babel" ["l"="24.28,-30.39"]
 "webpack-contrib/grunt-webpack" ["l"="24.217,-30.455"]
 "sindresorhus/grunt-eslint" ["l"="24.251,-30.452"]
 "callumacrae/rev-del" ["l"="24.665,-30.121"]
@@ -1837,23 +2016,33 @@ digraph G {
 "haoxins/glob" ["l"="24.351,-29.983"]
 "haoxins/captcha" ["l"="24.314,-29.924"]
 "coderhaoxin/react.mdl" ["l"="24.324,-29.945"]
-"2createStudio/postcss-sprites" ["l"="24.477,-30.268"]
-"borodean/postcss-assets" ["l"="24.657,-29.226"]
+"cssnano/cssnano" ["l"="-0.375,-31.443", "c"=295]
+"matype/postcss-style-guide" ["l"="24.655,-29.263", "c"=990]
+"blueimp/JavaScript-Canvas-to-Blob" ["l"="-4.082,-33.617", "c"=30]
 "glebmachine/postcss-easysprites" ["l"="24.521,-30.297"]
 "fabrik42/responsive_mockups" ["l"="24.134,-30.333"]
 "bjankord/viewportwidth.js" ["l"="24.1,-30.34"]
-"edenspiekermann/a11y-toggle" ["l"="-8.424,-23.926"]
+"edenspiekermann/a11y-toggle" ["l"="-8.424,-23.926", "c"=539]
+"sgentle/caniuse-cmd" ["l"="22.566,-24.78", "c"=503]
+"JohnAlbin/normalize-scss" ["l"="22.503,-24.486", "c"=503]
+"Pestov/essential-gulp-plugins" ["l"="-44.021,24.836", "c"=158]
 "alferov/awesome-gulp" ["l"="24.434,-30.175"]
-"zoxon/gulp-front" ["l"="-44.158,24.767"]
-"Pines-Cheng/awesome-gulp-cn" ["l"="8.836,-23.577"]
-"jdrgoms/awesome-postcss" ["l"="26.011,-25.938"]
-"RichardLitt/awesome-styleguides" ["l"="26.012,-26.171"]
-"HosseinKarami/fastshell" ["l"="22.499,-24.941"]
-"microsoft/vscode-codicons" ["l"="-55.771,6.864"]
+"zoxon/gulp-front" ["l"="-44.158,24.767", "c"=158]
+"Pines-Cheng/awesome-gulp-cn" ["l"="8.836,-23.577", "c"=819]
+"jdrgoms/awesome-postcss" ["l"="26.011,-25.938", "c"=32]
+"RichardLitt/awesome-styleguides" ["l"="26.012,-26.171", "c"=32]
+"HosseinKarami/fastshell" ["l"="22.499,-24.941", "c"=503]
+"purplebamboo/font-carrier" ["l"="-4.326,-33.342", "c"=30]
+"addyosmani/basket.js" ["l"="22.469,-27.086", "c"=28]
+"jaicab/localFont" ["l"="22.492,-27.197", "c"=28]
+"sass/libsass" ["l"="-0.298,-31.559", "c"=295]
+"israelidanny/ie8linter" ["l"="22.441,-27.064", "c"=28]
 "JohnMav/gulp-start" ["l"="24.479,-30.342"]
 "BrowserSync/recipes" ["l"="24.421,-30.007"]
-"davidhund/styleguide-generators" ["l"="22.479,-24.668"]
+"davidhund/styleguide-generators" ["l"="22.479,-24.668", "c"=503]
 "Va1/browser-sync-webpack-plugin" ["l"="24.409,-29.929"]
+"chaijs/sinon-chai" ["l"="-0.367,-34.003", "c"=110]
+"messageformat/messageformat" ["l"="0.093,-28.79", "c"=12]
 "sprity/sprity-sass" ["l"="24.442,-30.232"]
 "sass/sass-spec" ["l"="24.436,-30.658"]
 "napcs/node-livereload" ["l"="24.263,-30.538"]
@@ -1861,45 +2050,61 @@ digraph G {
 "sindresorhus/grunt-shell" ["l"="24.3,-30.401"]
 "jharding/grunt-exec" ["l"="24.286,-30.454"]
 "kmiyashiro/grunt-mocha" ["l"="24.177,-30.382"]
+"geuis/helium-css" ["l"="22.582,-29.972", "c"=36]
+"macbre/phantomas" ["l"="-0.12,-29.907", "c"=12]
+"lucidlemon/paradeiser" ["l"="22.571,-27.29", "c"=28]
 "ericclemmons/grunt-express-server" ["l"="24.2,-30.361"]
+"postcss/postcss-scss" ["l"="24.669,-29.17", "c"=990]
 "aseemk/requireDir" ["l"="24.653,-30.062"]
 "juanfran/gulp-scss-lint" ["l"="24.081,-30.186"]
 "sasstools/make-sass-lint-config" ["l"="24.103,-30.175"]
 "RealFaviconGenerator/grunt-real-favicon" ["l"="24.076,-30.231"]
 "haoxins/rewrite" ["l"="24.339,-29.975"]
 "gruntjs/grunt-contrib-compass" ["l"="24.312,-30.39"]
+"hampusborgos/country-flags" ["l"="-14.574,28.167", "c"=29]
 "twolfson/layout" ["l"="24.452,-30.249"]
 "bevacqua/spritesmith-cli" ["l"="24.407,-30.249"]
+"leungwensen/svg-icon" ["l"="25.87,-26.372", "c"=32]
+"componentjs/component" ["l"="-0.213,-31.656", "c"=295]
+"postcss/postcss-cli" ["l"="24.597,-29.209", "c"=990]
 "gruntjs/grunt-contrib-csslint" ["l"="24.397,-30.375"]
-"LeaVerou/stretchy" ["l"="22.595,-27.177"]
-"sds/scss-lint" ["l"="-0.081,-31.749"]
-"pattern-lab/patternlab-php" ["l"="22.532,-24.742"]
+"LeaVerou/stretchy" ["l"="22.595,-27.177", "c"=28]
+"sds/scss-lint" ["l"="-0.081,-31.749", "c"=295]
 "ahmednuaman/grunt-scss-lint" ["l"="24.351,-30.287"]
 "Workshape/tech-icons" ["l"="24.083,-30.03"]
+"rafalbromirski/sass-mediaqueries" ["l"="22.525,-24.406", "c"=503]
 "twolfson/grunt-zip" ["l"="24.331,-30.452"]
-"clean-css/clean-css" ["l"="-0.328,-31.463"]
 "peter-vilja/gulp-clean" ["l"="24.358,-30.072"]
 "Modernizr/customizr" ["l"="24.458,-30.344"]
-"fontello/fontello" ["l"="22.242,-29.63"]
-"saeedalipoor/icono" ["l"="22.547,-27.034"]
-"trulia/hologram" ["l"="22.451,-24.677"]
+"gruntjs/grunt-contrib-requirejs" ["l"="2.225,-33.28", "c"=785]
+"fontello/fontello" ["l"="22.242,-29.63", "c"=36]
+"saeedalipoor/icono" ["l"="22.547,-27.034", "c"=28]
+"trulia/hologram" ["l"="22.451,-24.677", "c"=503]
 "itgalaxy/webfont-webpack-plugin" ["l"="24.107,-30.134"]
+"DefinitelyTyped/tsd" ["l"="0.662,-26.583", "c"=951]
 "gruntjs/grunt-cli" ["l"="24.35,-30.402"]
-"gruntjs/grunt" ["l"="-0.367,-31.729"]
+"ttsvetko/HTML5-Desktop-Notifications" ["l"="22.361,-28.535", "c"=36]
 "rquadling/bower-installer" ["l"="24.656,-30.17"]
 "yatskevich/grunt-bower-task" ["l"="24.319,-30.298"]
-"ericclemmons/grunt-angular-templates" ["l"="24.439,-30.388"]
-"rquadling/grunt-html2js" ["l"="24.482,-30.415"]
-"teerapap/grunt-protractor-runner" ["l"="-0.938,-34.02"]
-"mgol/grunt-ng-annotate" ["l"="10.076,-23.848"]
+"teerapap/grunt-protractor-runner" ["l"="-0.938,-34.02", "c"=110]
+"mgol/grunt-ng-annotate" ["l"="10.076,-23.848", "c"=183]
+"kornelski/giflossy" ["l"="-39.496,20.752", "c"=563]
+"sindresorhus/clipboardy" ["l"="-0.826,-35.834", "c"=498]
+"thlorenz/browserify-shim" ["l"="0.157,-29.562", "c"=12]
+"JamieMason/ImageOptim-CLI" ["l"="22.523,-29.91", "c"=36]
 "jantimon/iconfont-webpack-plugin" ["l"="24.088,-29.987"]
 "vusion/webfonts-generator" ["l"="24.113,-29.996"]
 "fraserxu/gulp-html2js" ["l"="24.509,-30.435"]
 "pifantastic/grunt-s3" ["l"="24.322,-30.57"]
+"karma-runner/karma-coverage" ["l"="-0.808,-34.056", "c"=110]
+"mezzoblue/csszengarden.com" ["l"="-0.258,-31.53", "c"=295]
 "iammerrick/grunt-parallel" ["l"="24.228,-30.367"]
 "ChrisWren/grunt-nodemon" ["l"="24.251,-30.424"]
 "vkadam/grunt-jsbeautifier" ["l"="24.227,-30.386"]
-"karma-runner/grunt-karma" ["l"="-0.883,-34.033"]
+"andyearnshaw/Intl.js" ["l"="0.196,-28.868", "c"=12]
+"alexei/sprintf.js" ["l"="-0.348,-35.848", "c"=498]
+"pillarjs/hbs" ["l"="0.264,-34.301", "c"=110]
+"karma-runner/grunt-karma" ["l"="-0.883,-34.033", "c"=110]
 "yeoman/grunt-bower-requirejs" ["l"="24.262,-30.302"]
 "jwvdiermen/grunt-include-source" ["l"="24.289,-30.305"]
 }

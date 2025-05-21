@@ -1,4 +1,47 @@
 digraph G {
+"questdb/questdb" -> "redpanda-data/redpanda" ["e"=1]
+"questdb/questdb" -> "neondatabase/neon" ["e"=1]
+"questdb/questdb" -> "risingwavelabs/risingwave" ["e"=1]
+"PyO3/maturin" -> "apache/arrow-rs" ["e"=1]
+"Qiskit/rustworkx" -> "sfu-db/connector-x" ["e"=1]
+"vectordotdev/vector" -> "quickwit-oss/quickwit" ["e"=1]
+"vectordotdev/vector" -> "databendlabs/databend" ["e"=1]
+"vectordotdev/vector" -> "risingwavelabs/risingwave" ["e"=1]
+"valeriansaliou/sonic" -> "quickwit-oss/quickwit" ["e"=1]
+"google/zetasql" -> "substrait-io/substrait" ["e"=1]
+"google/zetasql" -> "facebookincubator/velox" ["e"=1]
+"google/zetasql" -> "apache/datafusion" ["e"=1]
+"google/zetasql" -> "MaterializeInc/materialize" ["e"=1]
+"pingcap/talent-plan" -> "risingwavelabs/risingwave" ["e"=1]
+"cube-js/cube" -> "databendlabs/databend" ["e"=1]
+"dolthub/dolt" -> "neondatabase/neon" ["e"=1]
+"yugabyte/yugabyte-db" -> "neondatabase/neon" ["e"=1]
+"yugabyte/yugabyte-db" -> "databendlabs/databend" ["e"=1]
+"duckdb/duckdb" -> "apache/datafusion" ["e"=1]
+"duckdb/duckdb" -> "databendlabs/databend" ["e"=1]
+"trinodb/trino" -> "facebookincubator/velox" ["e"=1]
+"trinodb/trino" -> "apache/datafusion" ["e"=1]
+"cube2222/octosql" -> "roapi/roapi" ["e"=1]
+"rudderlabs/rudder-server" -> "MaterializeInc/materialize" ["e"=1]
+"sfu-db/dataprep" -> "sfu-db/connector-x" ["e"=1]
+"sfu-db/dataprep" -> "fugue-project/fugue" ["e"=1]
+"obsidiandynamics/kafdrop" -> "redpanda-data/redpanda" ["e"=1]
+"Altinity/clickhouse-operator" -> "chdb-io/chdb" ["e"=1]
+"apache/pinot" -> "apache/datafusion" ["e"=1]
+"georgia-tech-db/evadb" -> "lancedb/lance" ["e"=1]
+"vdaas/vald" -> "lancedb/lance" ["e"=1]
+"cmu-db/noisepage" -> "facebookincubator/velox" ["e"=1]
+"uber/aresdb" -> "weld-project/weld" ["e"=1]
+"sirupsen/napkin-math" -> "slatedb/slatedb" ["e"=1]
+"Snapchat/KeyDB" -> "redpanda-data/redpanda" ["e"=1]
+"erikgrinaker/toydb" -> "databendlabs/databend" ["e"=1]
+"erikgrinaker/toydb" -> "apache/datafusion" ["e"=1]
+"erikgrinaker/toydb" -> "risingwavelabs/risingwave" ["e"=1]
+"metrico/gigapipe" -> "chdb-io/chdb" ["e"=1]
+"unionai-oss/pandera" -> "fugue-project/fugue" ["e"=1]
+"delta-io/delta" -> "unitycatalog/unitycatalog" ["e"=1]
+"delta-io/delta" -> "delta-io/delta-rs" ["e"=1]
+"delta-io/delta" -> "apache/datafusion" ["e"=1]
 "ballista-compute/ballista" -> "rajasekarv/vega"
 "ballista-compute/ballista" -> "tensorbase/tensorbase"
 "ballista-compute/ballista" -> "andygrove/datafusion-archive"
@@ -23,6 +66,7 @@ digraph G {
 "constellation-rs/constellation" -> "zesterer/flume" ["e"=1]
 "constellation-rs/constellation" -> "ballista-compute/ballista"
 "constellation-rs/constellation" -> "arrayfire/arrayfire-rust" ["e"=1]
+"apache/iceberg" -> "apache/datafusion" ["e"=1]
 "dremio/gandiva" -> "dremio/dremio-oss" ["e"=1]
 "dremio/gandiva" -> "cylondata/cylon"
 "dremio/gandiva" -> "oap-project/gazelle_plugin" ["e"=1]
@@ -38,6 +82,9 @@ digraph G {
 "dremio/gandiva" -> "apache/hawq" ["e"=1]
 "dremio/gandiva" -> "intel/BDTK" ["e"=1]
 "dremio/gandiva" -> "microsoft/hyperspace" ["e"=1]
+"systeminit/si" -> "feldera/feldera" ["e"=1]
+"finos/perspective" -> "apache/datafusion" ["e"=1]
+"finos/perspective" -> "lancedb/lance" ["e"=1]
 "cswinter/LocustDB" -> "andygrove/datafusion-archive"
 "cswinter/LocustDB" -> "apache/datafusion-sqlparser-rs"
 "cswinter/LocustDB" -> "tensorbase/tensorbase"
@@ -53,6 +100,14 @@ digraph G {
 "cswinter/LocustDB" -> "MaterializeInc/materialize"
 "cswinter/LocustDB" -> "substantic/rain"
 "cswinter/LocustDB" -> "bastion-rs/bastion" ["e"=1]
+"RoaringBitmap/RoaringBitmap" -> "facebookincubator/velox" ["e"=1]
+"lindb/lindb" -> "apache/horaedb" ["e"=1]
+"toshi-search/Toshi" -> "quickwit-oss/quickwit" ["e"=1]
+"terminusdb/terminusdb" -> "vmware-archive/differential-datalog" ["e"=1]
+"terminusdb/terminusdb" -> "kuzudb/kuzu" ["e"=1]
+"pingcap/tiflash" -> "facebookincubator/velox" ["e"=1]
+"bastion-rs/bastion" -> "ballista-compute/ballista" ["e"=1]
+"bastion-rs/bastion" -> "TimelyDataflow/timely-dataflow" ["e"=1]
 "MaterializeInc/materialize" -> "TimelyDataflow/timely-dataflow"
 "MaterializeInc/materialize" -> "TimelyDataflow/differential-dataflow"
 "MaterializeInc/materialize" -> "risingwavelabs/risingwave"
@@ -68,6 +123,11 @@ digraph G {
 "MaterializeInc/materialize" -> "apache/datafusion-sqlparser-rs"
 "MaterializeInc/materialize" -> "risinglightdb/risinglight" ["e"=1]
 "MaterializeInc/materialize" -> "vectordotdev/vector" ["e"=1]
+"pyjanitor-devs/pyjanitor" -> "fugue-project/fugue" ["e"=1]
+"pyscaffold/pyscaffold" -> "fugue-project/fugue" ["e"=1]
+"lyft/presto-gateway" -> "trinodb/trino-gateway" ["e"=1]
+"lyft/presto-gateway" -> "varadaio/presto-workload-analyzer" ["e"=1]
+"lyft/presto-gateway" -> "trinodb/charts" ["e"=1]
 "timescale/tsbs" -> "influxdata/influxdb-comparisons" ["e"=1]
 "timescale/tsbs" -> "ClickHouse/ClickBench"
 "timescale/tsbs" -> "thulab/iot-benchmark"
@@ -83,6 +143,10 @@ digraph G {
 "timescale/tsbs" -> "VictoriaMetrics/prometheus-benchmark" ["e"=1]
 "timescale/tsbs" -> "GreptimeTeam/greptimedb"
 "timescale/tsbs" -> "timescale/timescaledb" ["e"=1]
+"rust-lang/polonius" -> "rust-lang/datafrog" ["e"=1]
+"akumuli/Akumuli" -> "timescale/tsbs" ["e"=1]
+"twmb/franz-go" -> "redpanda-data/redpanda" ["e"=1]
+"MicrosoftResearch/Naiad" -> "TimelyDataflow/timely-dataflow" ["e"=1]
 "egraphs-good/egg" -> "egraphs-good/egglog"
 "egraphs-good/egg" -> "uwplse/ruler"
 "egraphs-good/egg" -> "uwplse/tensat" ["e"=1]
@@ -115,6 +179,10 @@ digraph G {
 "apache/datafusion-sqlparser-rs" -> "substrait-io/substrait"
 "apache/datafusion-sqlparser-rs" -> "jorgecarleitao/arrow2"
 "apache/datafusion-sqlparser-rs" -> "risingwavelabs/risingwave"
+"liftbridge-io/liftbridge" -> "gazette/core" ["e"=1]
+"liftbridge-io/liftbridge" -> "MaterializeInc/materialize" ["e"=1]
+"sampsyo/bril" -> "egraphs-good/egg" ["e"=1]
+"capitalone/datacompy" -> "fugue-project/fugue" ["e"=1]
 "vmware-archive/differential-datalog" -> "TimelyDataflow/differential-dataflow"
 "vmware-archive/differential-datalog" -> "comnik/declarative-dataflow"
 "vmware-archive/differential-datalog" -> "rust-lang/datafrog"
@@ -130,6 +198,19 @@ digraph G {
 "vmware-archive/differential-datalog" -> "mthom/scryer-prolog" ["e"=1]
 "vmware-archive/differential-datalog" -> "replikativ/datahike" ["e"=1]
 "vmware-archive/differential-datalog" -> "egraphs-good/egglog"
+"BlazingDB/blazingsql" -> "substrait-io/substrait" ["e"=1]
+"BlazingDB/blazingsql" -> "facebookincubator/velox" ["e"=1]
+"BlazingDB/blazingsql" -> "ballista-compute/ballista" ["e"=1]
+"BlazingDB/blazingsql" -> "apache/datafusion" ["e"=1]
+"tdunning/t-digest" -> "TimelyDataflow/timely-dataflow" ["e"=1]
+"harababurel/gcsf" -> "cswinter/LocustDB" ["e"=1]
+"dermesser/leveldb-rs" -> "foyer-rs/foyer" ["e"=1]
+"zhihu/rucene" -> "rajasekarv/vega" ["e"=1]
+"zhihu/rucene" -> "tensorbase/tensorbase" ["e"=1]
+"indradb/indradb" -> "cswinter/LocustDB" ["e"=1]
+"indradb/indradb" -> "TimelyDataflow/timely-dataflow" ["e"=1]
+"influxdata/flux" -> "influxdata/influxdb_iox" ["e"=1]
+"GrammaTech/ddisasm" -> "souffle-lang/souffle" ["e"=1]
 "herbie-fp/herbie" -> "egraphs-good/egg"
 "herbie-fp/herbie" -> "uwplse/ruler"
 "herbie-fp/herbie" -> "mikeizbicki/HerbiePlugin" ["e"=1]
@@ -143,6 +224,8 @@ digraph G {
 "herbie-fp/herbie" -> "malyzajko/daisy"
 "herbie-fp/herbie" -> "JuliaSymbolics/Metatheory.jl" ["e"=1]
 "herbie-fp/herbie" -> "mikeizbicki/subhask" ["e"=1]
+"Workiva/eva" -> "vvvvalvalval/datomock" ["e"=1]
+"async-raft/async-raft" -> "tensorbase/tensorbase" ["e"=1]
 "comnik/declarative-dataflow" -> "sixthnormal/clj-3df"
 "comnik/declarative-dataflow" -> "frankmcsherry/dynamic-datalog"
 "comnik/declarative-dataflow" -> "vmware-archive/differential-datalog"
@@ -158,9 +241,12 @@ digraph G {
 "sixthnormal/clj-3df" -> "wilkerlucio/pathom" ["e"=1]
 "sixthnormal/clj-3df" -> "hodur-org/hodur-engine"
 "trinodb/docker-images" -> "trinodb/trino-docker"
+"marcboeker/go-duckdb" -> "duckdb/duckdb-rs" ["e"=1]
+"marcboeker/go-duckdb" -> "apache/arrow-adbc" ["e"=1]
 "hodur-org/hodur-engine" -> "rafd/tada"
 "hodur-org/hodur-engine" -> "sixthnormal/clj-3df"
 "hodur-org/hodur-engine" -> "threatgrid/asami" ["e"=1]
+"Fullstop000/wickdb" -> "cswinter/LocustDB" ["e"=1]
 "gazette/core" -> "estuary/flow"
 "gazette/core" -> "streamnative/oxia" ["e"=1]
 "gazette/core" -> "feldera/feldera"
@@ -215,6 +301,9 @@ digraph G {
 "ray-project/mobius" -> "ray-project/ray_beam_runner"
 "trinodb/tempto" -> "nineinchnick/trino-git"
 "soarlab/FPTaylor" -> "herbie-fp/rival"
+"pola-rs/polars" -> "apache/datafusion" ["e"=1]
+"apache/age" -> "kuzudb/kuzu" ["e"=1]
+"ploomber/ploomber" -> "fugue-project/fugue" ["e"=1]
 "infinyon/fluvio" -> "ArroyoSystems/arroyo"
 "infinyon/fluvio" -> "apache/datafusion"
 "infinyon/fluvio" -> "risingwavelabs/risingwave"
@@ -230,11 +319,23 @@ digraph G {
 "infinyon/fluvio" -> "quickwit-oss/tantivy" ["e"=1]
 "infinyon/fluvio" -> "keploy/keploy" ["e"=1]
 "infinyon/fluvio" -> "hyperium/tonic" ["e"=1]
+"provectus/kafka-ui" -> "redpanda-data/redpanda" ["e"=1]
 "fastn-stack/fastn" -> "getdozer/dozer"
 "fastn-stack/fastn" -> "fastn-stack/fastn-template"
 "fastn-stack/fastn" -> "fastn-stack/fastn.com" ["e"=1]
 "fastn-stack/fastn" -> "kulfi-project/kulfi"
 "fastn-stack/fastn" -> "fastn-stack/fastn-old"
+"cmu-db/bustub" -> "risingwavelabs/risingwave" ["e"=1]
+"cmu-db/bustub" -> "facebookincubator/velox" ["e"=1]
+"apache/calcite" -> "facebookincubator/velox" ["e"=1]
+"brimdata/super" -> "vortex-data/vortex" ["e"=1]
+"scylladb/scylladb" -> "redpanda-data/redpanda" ["e"=1]
+"apache/parquet-format" -> "facebookincubator/velox" ["e"=1]
+"sqlancer/sqlancer" -> "facebookincubator/velox" ["e"=1]
+"sqlancer/sqlancer" -> "substrait-io/substrait" ["e"=1]
+"pingcap/awesome-database-learning" -> "databendlabs/databend" ["e"=1]
+"delta-io/connectors" -> "delta-io/kafka-delta-ingest" ["e"=1]
+"delta-io/connectors" -> "delta-io/delta-rs" ["e"=1]
 "delta-io/delta-rs" -> "apache/datafusion"
 "delta-io/delta-rs" -> "apache/arrow-rs"
 "delta-io/delta-rs" -> "apache/datafusion-ballista"
@@ -250,6 +351,14 @@ digraph G {
 "delta-io/delta-rs" -> "ArroyoSystems/arroyo"
 "delta-io/delta-rs" -> "TobikoData/sqlmesh" ["e"=1]
 "delta-io/delta-rs" -> "sfu-db/connector-x"
+"yapengye/NetPlier" -> "XZ-X/PEM" ["e"=1]
+"lana-k/sqliteviz" -> "roapi/roapi" ["e"=1]
+"facebookincubator/Glean" -> "vmware-archive/differential-datalog" ["e"=1]
+"facebookincubator/Glean" -> "souffle-lang/souffle" ["e"=1]
+"memgraph/memgraph" -> "kuzudb/kuzu" ["e"=1]
+"memgraph/memgraph" -> "facebookincubator/velox" ["e"=1]
+"pgcentralfoundation/pgrx" -> "apache/datafusion" ["e"=1]
+"pgcentralfoundation/pgrx" -> "apache/datafusion-sqlparser-rs" ["e"=1]
 "TimelyDataflow/timely-dataflow" -> "TimelyDataflow/differential-dataflow"
 "TimelyDataflow/timely-dataflow" -> "MaterializeInc/materialize"
 "TimelyDataflow/timely-dataflow" -> "frankmcsherry/blog" ["e"=1]
@@ -280,6 +389,10 @@ digraph G {
 "trinodb/trino-python-client" -> "databricks/iceberg-rest-image"
 "trinodb/trino-python-client" -> "apache/iceberg-python"
 "trinodb/trino-python-client" -> "CreativeDataEU/PowerBITrinoConnector"
+"linkedin/coral" -> "facebookincubator/velox" ["e"=1]
+"linkedin/coral" -> "substrait-io/substrait" ["e"=1]
+"orchest/orchest" -> "fugue-project/fugue" ["e"=1]
+"rusty-celery/rusty-celery" -> "constellation-rs/amadeus" ["e"=1]
 "estuary/flow" -> "gazette/core"
 "estuary/flow" -> "estuary/connectors"
 "estuary/flow" -> "ConduitIO/conduit"
@@ -289,6 +402,9 @@ digraph G {
 "estuary/flow" -> "bytewax/bytewax"
 "estuary/flow" -> "JanKaul/iceberg-rust"
 "estuary/flow" -> "airbytehq/PyAirbyte" ["e"=1]
+"apache/kvrocks" -> "databendlabs/databend" ["e"=1]
+"apache/kvrocks" -> "risingwavelabs/risingwave" ["e"=1]
+"tikv/raft-engine" -> "icelake-io/icelake" ["e"=1]
 "fugue-project/fugue" -> "ibis-project/ibis" ["e"=1]
 "fugue-project/fugue" -> "Eventual-Inc/Daft"
 "fugue-project/fugue" -> "unionai-oss/pandera" ["e"=1]
@@ -304,8 +420,23 @@ digraph G {
 "fugue-project/fugue" -> "fugue-project/tutorials" ["e"=1]
 "fugue-project/fugue" -> "tobymao/sqlglot" ["e"=1]
 "fugue-project/fugue" -> "scikit-learn-contrib/MAPIE" ["e"=1]
+"NVIDIA/spark-rapids" -> "apache/datafusion-comet" ["e"=1]
+"NVIDIA/spark-rapids" -> "substrait-io/substrait" ["e"=1]
+"NVIDIA/spark-rapids" -> "facebookincubator/velox" ["e"=1]
+"NVIDIA/spark-rapids" -> "kwai/blaze" ["e"=1]
+"cluster-apps-on-docker/spark-standalone-cluster-on-docker" -> "databricks/docker-spark-iceberg" ["e"=1]
 "frankmcsherry/differential-dataflow" -> "frankmcsherry/timely-dataflow"
 "frankmcsherry/differential-dataflow" -> "comnik/declarative-dataflow"
+"datenlord/datenlord" -> "apache/horaedb" ["e"=1]
+"datenlord/datenlord" -> "tensorbase/tensorbase" ["e"=1]
+"tikv/minitrace-rust" -> "foyer-rs/foyer" ["e"=1]
+"PoloDB/PoloDB" -> "tonbo-io/tonbo" ["e"=1]
+"treeverse/lakeFS" -> "apache/datafusion" ["e"=1]
+"treeverse/lakeFS" -> "projectnessie/nessie" ["e"=1]
+"treeverse/lakeFS" -> "delta-io/delta-rs" ["e"=1]
+"apache/parquet-java" -> "facebookincubator/velox" ["e"=1]
+"facebook/CacheLib" -> "facebookincubator/velox" ["e"=1]
+"rust-rocksdb/rust-rocksdb" -> "apache/arrow-rs" ["e"=1]
 "influxdata/influxdb_iox" -> "apache/arrow-rs"
 "influxdata/influxdb_iox" -> "apache/datafusion"
 "influxdata/influxdb_iox" -> "apache/horaedb"
@@ -321,6 +452,11 @@ digraph G {
 "influxdata/influxdb_iox" -> "MaterializeInc/materialize"
 "influxdata/influxdb_iox" -> "facebookincubator/velox"
 "influxdata/influxdb_iox" -> "substrait-io/substrait"
+"shuttle-hq/synth" -> "TimelyDataflow/timely-dataflow" ["e"=1]
+"shuttle-hq/synth" -> "roapi/roapi" ["e"=1]
+"shuttle-hq/synth" -> "ballista-compute/ballista" ["e"=1]
+"redpanda-data/console" -> "redpanda-data/redpanda" ["e"=1]
+"cwida/fsst" -> "vortex-data/vortex" ["e"=1]
 "trinodb/trino-the-definitive-guide" -> "trinodb/docker-images"
 "trinodb/trino-the-definitive-guide" -> "bitsondatadev/trino-getting-started"
 "trinodb/trino-the-definitive-guide" -> "PennyAndWang/presto-the-definitive-guide-zh"
@@ -339,6 +475,10 @@ digraph G {
 "projectnessie/nessie" -> "TobikoData/sqlmesh" ["e"=1]
 "projectnessie/nessie" -> "apache/amoro" ["e"=1]
 "projectnessie/nessie" -> "databricks/docker-spark-iceberg"
+"rust-lang/portable-simd" -> "jorgecarleitao/arrow2" ["e"=1]
+"timescale/promscale" -> "timescale/tsbs" ["e"=1]
+"skytable/skytable" -> "ArroyoSystems/arroyo" ["e"=1]
+"skytable/skytable" -> "databendlabs/databend" ["e"=1]
 "kuzudb/kuzu" -> "cozodb/cozo" ["e"=1]
 "kuzudb/kuzu" -> "memgraph/memgraph" ["e"=1]
 "kuzudb/kuzu" -> "apache/age" ["e"=1]
@@ -369,6 +509,16 @@ digraph G {
 "tensorbase/tensorbase" -> "apache/horaedb"
 "tensorbase/tensorbase" -> "apache/datafusion"
 "tensorbase/tensorbase" -> "async-raft/async-raft" ["e"=1]
+"gluesql/gluesql" -> "apache/datafusion-sqlparser-rs" ["e"=1]
+"gluesql/gluesql" -> "apache/arrow-rs" ["e"=1]
+"gluesql/gluesql" -> "cswinter/LocustDB" ["e"=1]
+"gluesql/gluesql" -> "databendlabs/databend" ["e"=1]
+"gluesql/gluesql" -> "apache/datafusion" ["e"=1]
+"gluesql/gluesql" -> "tensorbase/tensorbase" ["e"=1]
+"tokio-rs/io-uring" -> "apache/arrow-rs" ["e"=1]
+"doctorn/micro-mitten" -> "rntz/datafun" ["e"=1]
+"datapane/datapane" -> "fugue-project/fugue" ["e"=1]
+"RoaringBitmap/roaring-rs" -> "tonbo-io/fusio" ["e"=1]
 "rajasekarv/vega" -> "ballista-compute/ballista"
 "rajasekarv/vega" -> "weld-project/weld"
 "rajasekarv/vega" -> "TimelyDataflow/timely-dataflow"
@@ -390,10 +540,14 @@ digraph G {
 "ekzhang/crepe" -> "frankmcsherry/dynamic-datalog"
 "ekzhang/crepe" -> "vmware-archive/differential-datalog"
 "ekzhang/crepe" -> "c-cube/datalog"
+"scalala/Scalala" -> "stanford-ppl/Delite" ["e"=1]
 "cylondata/cylon" -> "cylondata/twister2"
 "cylondata/cylon" -> "jorgecarleitao/datafusion-python"
 "cylondata/cylon" -> "dremio/gandiva"
 "cylondata/cylon" -> "UWHustle/hustle"
+"emina/rosette" -> "egraphs-good/egg" ["e"=1]
+"moka-rs/moka" -> "foyer-rs/foyer" ["e"=1]
+"traildb/traildb" -> "cswinter/LocustDB" ["e"=1]
 "oap-project/raydp" -> "ray-project/deltacat"
 "oap-project/raydp" -> "datafusion-contrib/ray-sql"
 "oap-project/raydp" -> "ray-project/mobius"
@@ -404,7 +558,11 @@ digraph G {
 "oap-project/raydp" -> "ray-project/enhancements"
 "oap-project/raydp" -> "NVIDIA/spark-rapids" ["e"=1]
 "oap-project/raydp" -> "ray-project/ray-llm" ["e"=1]
+"microsoft/hyperspace" -> "apache/datafusion-comet" ["e"=1]
+"LeonHartley/Coerce-rs" -> "constellation-rs/constellation" ["e"=1]
 "vilterp/datalog-ts" -> "frankmcsherry/dynamic-datalog"
+"uwplse/tensat" -> "uwplse/ruler" ["e"=1]
+"satanson/cpp_etudes" -> "facebookincubator/velox" ["e"=1]
 "Megum1/DFST" -> "Gwinhen/BackdoorVault"
 "Megum1/DFST" -> "Megum1/ODSCAN"
 "Megum1/DFST" -> "SolidShen/RIPPLE_official"
@@ -414,6 +572,7 @@ digraph G {
 "uwplse/ruler" -> "uwplse/szalinski"
 "jorgecarleitao/datafusion-python" -> "datafusion-contrib/datafusion-substrait"
 "jorgecarleitao/datafusion-python" -> "andygrove/substrait-rs"
+"mgaudet/CompilerJobs" -> "egraphs-good/egg" ["e"=1]
 "uwplse/szalinski" -> "yihozhang/egraph-sqlite"
 "epfldata/dblab" -> "TiarkRompf/virtualization-lms-core"
 "epfldata/dblab" -> "TiarkRompf/lms-clean"
@@ -425,6 +584,13 @@ digraph G {
 "meroxa/cli" -> "ConduitIO/conduit-connector-postgres"
 "frankmcsherry/timely-dataflow" -> "frankmcsherry/differential-dataflow"
 "bkushigian/cornelius" -> "yihozhang/egraph-sqlite"
+"ibis-project/ibis" -> "fugue-project/fugue" ["e"=1]
+"ibis-project/ibis" -> "Eventual-Inc/Daft" ["e"=1]
+"ibis-project/ibis" -> "apache/datafusion" ["e"=1]
+"ibis-project/ibis" -> "substrait-io/substrait" ["e"=1]
+"madsim-rs/madsim" -> "foyer-rs/foyer" ["e"=1]
+"flux-rs/flux" -> "egraphs-good/egg" ["e"=1]
+"flux-rs/flux" -> "egraphs-good/egglog" ["e"=1]
 "neondatabase/neon" -> "surrealdb/surrealdb" ["e"=1]
 "neondatabase/neon" -> "drizzle-team/drizzle-orm" ["e"=1]
 "neondatabase/neon" -> "risingwavelabs/risingwave"
@@ -440,6 +606,12 @@ digraph G {
 "neondatabase/neon" -> "trpc/trpc" ["e"=1]
 "neondatabase/neon" -> "vercel/turborepo" ["e"=1]
 "neondatabase/neon" -> "meilisearch/meilisearch" ["e"=1]
+"graphistry/pygraphistry" -> "kuzudb/kuzu" ["e"=1]
+"wala/WALA" -> "souffle-lang/souffle" ["e"=1]
+"tobymao/sqlglot" -> "apache/datafusion" ["e"=1]
+"bytebase/bytebase" -> "databendlabs/databend" ["e"=1]
+"juicedata/juicefs" -> "databendlabs/databend" ["e"=1]
+"juicedata/juicefs" -> "risingwavelabs/risingwave" ["e"=1]
 "redpanda-data/redpanda" -> "scylladb/scylladb" ["e"=1]
 "redpanda-data/redpanda" -> "MaterializeInc/materialize"
 "redpanda-data/redpanda" -> "risingwavelabs/risingwave"
@@ -455,6 +627,9 @@ digraph G {
 "redpanda-data/redpanda" -> "nats-io/nats-server" ["e"=1]
 "redpanda-data/redpanda" -> "temporalio/temporal" ["e"=1]
 "redpanda-data/redpanda" -> "ArroyoSystems/arroyo"
+"featureform/featureform" -> "fugue-project/fugue" ["e"=1]
+"inngest/inngest" -> "restatedev/restate" ["e"=1]
+"nhost/nhost" -> "neondatabase/neon" ["e"=1]
 "databendlabs/databend" -> "risingwavelabs/risingwave"
 "databendlabs/databend" -> "apache/datafusion"
 "databendlabs/databend" -> "apache/opendal"
@@ -470,6 +645,11 @@ digraph G {
 "databendlabs/databend" -> "apache/horaedb"
 "databendlabs/databend" -> "databendlabs/openraft" ["e"=1]
 "databendlabs/databend" -> "apache/doris" ["e"=1]
+"risinglightdb/risinglight" -> "risingwavelabs/risingwave" ["e"=1]
+"risinglightdb/risinglight" -> "databendlabs/databend" ["e"=1]
+"ray-project/kuberay" -> "oap-project/raydp" ["e"=1]
+"oceanbase/oceanbase" -> "databendlabs/databend" ["e"=1]
+"oceanbase/oceanbase" -> "risingwavelabs/risingwave" ["e"=1]
 "andygrove/how-query-engines-work" -> "apache/datafusion-ray"
 "andygrove/how-query-engines-work" -> "substrait-io/substrait-java"
 "andygrove/how-query-engines-work" -> "apache/datafusion-ballista"
@@ -478,6 +658,7 @@ digraph G {
 "andygrove/how-query-engines-work" -> "apache/iceberg-rust"
 "andygrove/how-query-engines-work" -> "sundy-li/strawboat" ["e"=1]
 "andygrove/how-query-engines-work" -> "apache/datafusion-comet"
+"benbjohnson/litestream" -> "neondatabase/neon" ["e"=1]
 "apache/datafusion" -> "apache/arrow-rs"
 "apache/datafusion" -> "apache/datafusion-ballista"
 "apache/datafusion" -> "databendlabs/databend"
@@ -549,6 +730,9 @@ digraph G {
 "spiceai/spiceai" -> "apache/datafusion-comet"
 "spiceai/spiceai" -> "paradedb/paradedb" ["e"=1]
 "spiceai/spiceai" -> "datafusion-contrib/datafusion-federation"
+"OpenLineage/OpenLineage" -> "projectnessie/nessie" ["e"=1]
+"duckdb/duckdb-wasm" -> "duckdb/duckdb-rs" ["e"=1]
+"duckdb/duckdb-wasm" -> "substrait-io/substrait" ["e"=1]
 "roapi/roapi" -> "apache/datafusion"
 "roapi/roapi" -> "apache/datafusion-ballista"
 "roapi/roapi" -> "delta-io/delta-rs"
@@ -579,6 +763,15 @@ digraph G {
 "TimelyDataflow/differential-dataflow" -> "frankmcsherry/differential-dataflow"
 "TimelyDataflow/differential-dataflow" -> "spacejam/sled" ["e"=1]
 "TimelyDataflow/differential-dataflow" -> "DataDog/glommio" ["e"=1]
+"apache/orc" -> "facebookincubator/velox" ["e"=1]
+"faust-streaming/faust" -> "bytewax/bytewax" ["e"=1]
+"faust-streaming/faust" -> "quixio/quix-streams" ["e"=1]
+"live-codes/livecodes" -> "restatedev/restate" ["e"=1]
+"multiprocessio/datastation" -> "roapi/roapi" ["e"=1]
+"linkedin/venice" -> "linkedin/openhouse" ["e"=1]
+"delta-io/delta-sharing" -> "delta-io/kafka-delta-ingest" ["e"=1]
+"delta-io/delta-sharing" -> "delta-io/delta-rs" ["e"=1]
+"delta-io/delta-sharing" -> "unitycatalog/unitycatalog" ["e"=1]
 "apache/arrow-rs" -> "apache/datafusion"
 "apache/arrow-rs" -> "apache/datafusion-ballista"
 "apache/arrow-rs" -> "apache/iceberg-rust"
@@ -594,6 +787,14 @@ digraph G {
 "apache/arrow-rs" -> "apache/horaedb"
 "apache/arrow-rs" -> "lancedb/lance"
 "apache/arrow-rs" -> "risingwavelabs/risingwave"
+"malloydata/malloy" -> "substrait-io/substrait" ["e"=1]
+"rsmpi/rsmpi" -> "constellation-rs/constellation" ["e"=1]
+"newca12/awesome-rust-formalized-reasoning" -> "s-arash/ascent" ["e"=1]
+"databendlabs/openraft" -> "databendlabs/databend" ["e"=1]
+"databendlabs/openraft" -> "apache/opendal" ["e"=1]
+"databendlabs/openraft" -> "apache/arrow-rs" ["e"=1]
+"databendlabs/openraft" -> "apache/horaedb" ["e"=1]
+"databendlabs/openraft" -> "GreptimeTeam/greptimedb" ["e"=1]
 "jamii/dida" -> "vmware-archive/differential-datalog"
 "jamii/dida" -> "jamii/imp"
 "jamii/dida" -> "comnik/declarative-dataflow"
@@ -615,8 +816,14 @@ digraph G {
 "hydro-project/hydro" -> "TimelyDataflow/timely-dataflow"
 "hydro-project/hydro" -> "exograph/exograph"
 "hydro-project/hydro" -> "tokio-rs/turmoil" ["e"=1]
+"awslabs/python-deequ" -> "fugue-project/fugue" ["e"=1]
+"tcdi/plrust" -> "apache/datafusion-sqlparser-rs" ["e"=1]
+"hora-search/hora" -> "databendlabs/databend" ["e"=1]
+"hora-search/hora" -> "ballista-compute/ballista" ["e"=1]
 "rlink-rs/rlink-rs" -> "ArroyoSystems/arroyo"
 "rlink-rs/rlink-rs" -> "apache/iceberg-rust"
+"joaoh82/rust_sqlite" -> "apache/datafusion-sqlparser-rs" ["e"=1]
+"airbnb/chronon" -> "feldera/feldera" ["e"=1]
 "cloudfuse-io/buzz-rust" -> "jorgecarleitao/datafusion-python"
 "cloudfuse-io/buzz-rust" -> "datafusion-contrib/datafusion-substrait"
 "kwai/blaze" -> "apache/datafusion-comet"
@@ -636,6 +843,11 @@ digraph G {
 "kwai/blaze" -> "apache/paimon" ["e"=1]
 "stackabletech/kafka-operator" -> "stackabletech/hive-operator"
 "stackabletech/kafka-operator" -> "stackabletech/druid-operator"
+"ApsaraDB/PolarDB-for-PostgreSQL" -> "facebookincubator/velox" ["e"=1]
+"ApsaraDB/PolarDB-for-PostgreSQL" -> "databendlabs/databend" ["e"=1]
+"EvgSkv/logica" -> "vmware-archive/differential-datalog" ["e"=1]
+"EvgSkv/logica" -> "google/mangle" ["e"=1]
+"EvgSkv/logica" -> "ekzhang/percival" ["e"=1]
 "luc-tielen/eclair-lang" -> "luc-tielen/llvm-codegen"
 "y-scope/clp" -> "THUBear-wjy/LogGrep" ["e"=1]
 "y-scope/clp" -> "y-scope/clp-ffi-py"
@@ -646,6 +858,7 @@ digraph G {
 "y-scope/clp" -> "vortex-data/vortex"
 "y-scope/clp" -> "cwida/fsst" ["e"=1]
 "y-scope/clp" -> "facebookincubator/nimble"
+"tuplex/tuplex" -> "cylondata/cylon" ["e"=1]
 "sfu-db/connector-x" -> "TobikoData/sqlmesh" ["e"=1]
 "sfu-db/connector-x" -> "delta-io/delta-rs"
 "sfu-db/connector-x" -> "lancedb/lance"
@@ -670,6 +883,8 @@ digraph G {
 "stackabletech/operator-rs" -> "stackabletech/hbase-operator"
 "stackabletech/operator-rs" -> "stackabletech/zookeeper-operator"
 "stackabletech/operator-rs" -> "stackabletech/superset-operator"
+"lnx-search/lnx" -> "quickwit-oss/quickwit" ["e"=1]
+"slingdata-io/sling-cli" -> "GlareDB/glaredb" ["e"=1]
 "jorgecarleitao/arrow2" -> "jorgecarleitao/parquet2"
 "jorgecarleitao/arrow2" -> "apache/arrow-rs"
 "jorgecarleitao/arrow2" -> "apache/datafusion-ballista"
@@ -692,10 +907,20 @@ digraph G {
 "jorgecarleitao/parquet2" -> "datafusion-contrib/datafusion-dolomite" ["e"=1]
 "jorgecarleitao/parquet2" -> "jorgecarleitao/datafusion-python"
 "jorgecarleitao/parquet2" -> "jorgecarleitao/json-deserializer"
+"ABZ-Aaron/cheat-sheets" -> "spiceai/spiceai" ["e"=1]
+"dpapathanasiou/simple-graph" -> "kuzudb/kuzu" ["e"=1]
+"jacopotagliabue/you-dont-need-a-bigger-boat" -> "fugue-project/fugue" ["e"=1]
+"modelfoxdotdev/modelfox" -> "TimelyDataflow/timely-dataflow" ["e"=1]
+"ai-eks/OpenClubhouse" -> "ballista-compute/ballista" ["e"=1]
+"oap-project/gazelle_plugin" -> "substrait-io/substrait" ["e"=1]
+"oap-project/gazelle_plugin" -> "kwai/blaze" ["e"=1]
+"LineaLabs/lineapy" -> "fugue-project/fugue" ["e"=1]
+"alitrack/duckdb_fdw" -> "Mause/duckdb-deltatable-extension" ["e"=1]
 "apache/iotdb-client-go" -> "apache/iotdb-docs"
 "apache/iotdb-client-go" -> "apache/iotdb-bin-resources"
 "apache/iotdb-client-go" -> "iotdb-lab/iotdb-rs"
 "apache/iotdb-client-go" -> "iotdb-lab/iotdb-client-rs"
+"hyperfiddle/hyperfiddle-2020" -> "sixthnormal/clj-3df" ["e"=1]
 "duckdb/duckdb-rs" -> "apache/iceberg-rust"
 "duckdb/duckdb-rs" -> "duckdb/duckdb-delta" ["e"=1]
 "duckdb/duckdb-rs" -> "jorgecarleitao/arrow2"
@@ -719,6 +944,7 @@ digraph G {
 "bitsondatadev/trino-getting-started" -> "databricks/docker-spark-iceberg"
 "bitsondatadev/trino-getting-started" -> "joshuarobinson/trino-on-k8s"
 "bitsondatadev/trino-getting-started" -> "trinodb/charts"
+"ravichugh/sketch-n-sketch" -> "rntz/datafun" ["e"=1]
 "memiiso/debezium-server-iceberg" -> "getindata/kafka-connect-iceberg-sink"
 "memiiso/debezium-server-iceberg" -> "databricks/iceberg-kafka-connect"
 "memiiso/debezium-server-iceberg" -> "databricks/docker-spark-iceberg"
@@ -780,6 +1006,39 @@ digraph G {
 "makenew/benthos-plugin" -> "razor-x/blobpack"
 "makenew/serverless-benthos" -> "razor-x/blobpack"
 "makenew/serverless-benthos" -> "makenew/benthos-plugin"
+"PRQL/prql" -> "apache/datafusion" ["e"=1]
+"PRQL/prql" -> "neondatabase/neon" ["e"=1]
+"PRQL/prql" -> "MaterializeInc/materialize" ["e"=1]
+"PRQL/prql" -> "databendlabs/databend" ["e"=1]
+"skyzh/type-exercise-in-rust" -> "foyer-rs/foyer" ["e"=1]
+"RoaringBitmap/CRoaring" -> "facebookincubator/velox" ["e"=1]
+"fractalide/fractalide" -> "andygrove/datafusion-archive" ["e"=1]
+"tikv/tikv" -> "databendlabs/databend" ["e"=1]
+"surrealdb/surrealdb" -> "neondatabase/neon" ["e"=1]
+"keploy/keploy" -> "infinyon/fluvio" ["e"=1]
+"StarRocks/starrocks" -> "databendlabs/databend" ["e"=1]
+"StarRocks/starrocks" -> "facebookincubator/velox" ["e"=1]
+"rxin/db-readings" -> "facebookincubator/velox" ["e"=1]
+"dragonflydb/dragonfly" -> "redpanda-data/redpanda" ["e"=1]
+"dragonflydb/dragonfly" -> "neondatabase/neon" ["e"=1]
+"quickwit-oss/tantivy" -> "quickwit-oss/quickwit" ["e"=1]
+"quickwit-oss/tantivy" -> "apache/datafusion" ["e"=1]
+"FerretDB/FerretDB" -> "neondatabase/neon" ["e"=1]
+"dstackai/dstack" -> "fugue-project/fugue" ["e"=1]
+"readysettech/readyset" -> "risingwavelabs/risingwave" ["e"=1]
+"readysettech/readyset" -> "neondatabase/neon" ["e"=1]
+"readysettech/readyset" -> "ArroyoSystems/arroyo" ["e"=1]
+"readysettech/readyset" -> "MaterializeInc/materialize" ["e"=1]
+"readysettech/readyset" -> "quickwit-oss/quickwit" ["e"=1]
+"readysettech/readyset" -> "databendlabs/databend" ["e"=1]
+"readysettech/readyset" -> "apache/datafusion" ["e"=1]
+"pytorch/torcharrow" -> "substrait-io/substrait" ["e"=1]
+"pytorch/torcharrow" -> "facebookincubator/velox" ["e"=1]
+"pytorch/torcharrow" -> "ibis-project/ibis-substrait" ["e"=1]
+"multiprocessio/dsq" -> "roapi/roapi" ["e"=1]
+"electric-sql/electric" -> "neondatabase/neon" ["e"=1]
+"Qovery/Replibyte" -> "quickwit-oss/quickwit" ["e"=1]
+"Qovery/Replibyte" -> "neondatabase/neon" ["e"=1]
 "apache/datafusion-ballista" -> "apache/datafusion"
 "apache/datafusion-ballista" -> "apache/datafusion-comet"
 "apache/datafusion-ballista" -> "apache/arrow-rs"
@@ -795,6 +1054,7 @@ digraph G {
 "apache/datafusion-ballista" -> "facebookincubator/velox"
 "apache/datafusion-ballista" -> "jorgecarleitao/arrow2"
 "apache/datafusion-ballista" -> "lancedb/lance"
+"ekzhang/sshx" -> "quickwit-oss/quickwit" ["e"=1]
 "Eventual-Inc/Daft" -> "lancedb/lance"
 "Eventual-Inc/Daft" -> "delta-io/delta-rs"
 "Eventual-Inc/Daft" -> "apache/datafusion-ballista"
@@ -810,6 +1070,21 @@ digraph G {
 "Eventual-Inc/Daft" -> "lakekeeper/lakekeeper"
 "Eventual-Inc/Daft" -> "marsupialtail/quokka"
 "Eventual-Inc/Daft" -> "deepseek-ai/smallpond" ["e"=1]
+"frankmcsherry/blog" -> "TimelyDataflow/timely-dataflow" ["e"=1]
+"frankmcsherry/blog" -> "TimelyDataflow/differential-dataflow" ["e"=1]
+"frankmcsherry/blog" -> "MaterializeInc/materialize" ["e"=1]
+"frankmcsherry/blog" -> "rust-lang/datafrog" ["e"=1]
+"frankmcsherry/blog" -> "vmware-archive/differential-datalog" ["e"=1]
+"frankmcsherry/blog" -> "comnik/declarative-dataflow" ["e"=1]
+"skyplane-project/skyplane" -> "datafusion-contrib/ray-sql" ["e"=1]
+"superstreamlabs/memphis" -> "redpanda-data/redpanda" ["e"=1]
+"postgresml/postgresml" -> "neondatabase/neon" ["e"=1]
+"postgresml/postgresml" -> "risingwavelabs/risingwave" ["e"=1]
+"postgresml/postgresml" -> "lancedb/lance" ["e"=1]
+"postgresml/postgresml" -> "apache/datafusion" ["e"=1]
+"postgresml/postgresml" -> "databendlabs/databend" ["e"=1]
+"ydb-platform/ydb" -> "redpanda-data/redpanda" ["e"=1]
+"ClickHouse/clickhouse-connect" -> "chdb-io/chdb" ["e"=1]
 "apache/opendal" -> "databendlabs/databend"
 "apache/opendal" -> "apache/datafusion"
 "apache/opendal" -> "apache/arrow-rs"
@@ -825,6 +1100,9 @@ digraph G {
 "apache/opendal" -> "apache/datafusion-comet"
 "apache/opendal" -> "lancedb/lance"
 "apache/opendal" -> "kwai/blaze"
+"google/rune" -> "google/mangle" ["e"=1]
+"facebook/buck2" -> "ArroyoSystems/arroyo" ["e"=1]
+"mito-ds/mito" -> "fugue-project/fugue" ["e"=1]
 "GreptimeTeam/greptimedb" -> "apache/horaedb"
 "GreptimeTeam/greptimedb" -> "databendlabs/databend"
 "GreptimeTeam/greptimedb" -> "risingwavelabs/risingwave"
@@ -840,6 +1118,7 @@ digraph G {
 "GreptimeTeam/greptimedb" -> "apache/datafusion-ballista"
 "GreptimeTeam/greptimedb" -> "erikgrinaker/toydb" ["e"=1]
 "GreptimeTeam/greptimedb" -> "bytedance/monoio" ["e"=1]
+"airlift/airlift" -> "trinodb/charts" ["e"=1]
 "risingwavelabs/risingwave" -> "databendlabs/databend"
 "risingwavelabs/risingwave" -> "apache/datafusion"
 "risingwavelabs/risingwave" -> "risinglightdb/risinglight" ["e"=1]
@@ -881,6 +1160,9 @@ digraph G {
 "GlareDB/glaredb" -> "apache/paimon-rust"
 "GlareDB/glaredb" -> "apache/datafusion-python"
 "GlareDB/glaredb" -> "apache/hudi-rs"
+"run-house/runhouse" -> "lancedb/lance" ["e"=1]
+"pingcap/ossinsight" -> "databendlabs/databend" ["e"=1]
+"pingcap/ossinsight" -> "apache/opendal" ["e"=1]
 "bytewax/bytewax" -> "quixio/quix-streams"
 "bytewax/bytewax" -> "faust-streaming/faust" ["e"=1]
 "bytewax/bytewax" -> "ArroyoSystems/arroyo"
@@ -911,6 +1193,7 @@ digraph G {
 "marsupialtail/quokka" -> "lakehq/sail"
 "marsupialtail/quokka" -> "apache/datafusion-python"
 "marsupialtail/quokka" -> "apache/datafusion-ray"
+"uptrace/uptrace" -> "quickwit-oss/quickwit" ["e"=1]
 "substrait-io/substrait" -> "apache/incubator-gluten" ["e"=1]
 "substrait-io/substrait" -> "facebookincubator/velox"
 "substrait-io/substrait" -> "apache/datafusion-ballista"
@@ -926,8 +1209,24 @@ digraph G {
 "substrait-io/substrait" -> "apache/iceberg-rust"
 "substrait-io/substrait" -> "linkedin/coral" ["e"=1]
 "substrait-io/substrait" -> "jorgecarleitao/arrow2"
+"apache/incubator-gluten" -> "facebookincubator/velox" ["e"=1]
+"apache/incubator-gluten" -> "kwai/blaze" ["e"=1]
+"apache/incubator-gluten" -> "apache/datafusion-comet" ["e"=1]
+"apache/incubator-gluten" -> "substrait-io/substrait" ["e"=1]
+"apache/incubator-gluten" -> "apache/datafusion" ["e"=1]
+"xline-kv/Xline" -> "foyer-rs/foyer" ["e"=1]
+"xline-kv/Xline" -> "tonbo-io/tonbo" ["e"=1]
 "vmware-archive/database-stream-processor" -> "vmware-archive/sql-to-dbsp-compiler"
+"apache/celeborn" -> "kwai/blaze" ["e"=1]
+"apache/celeborn" -> "apache/datafusion-comet" ["e"=1]
+"apache/celeborn" -> "facebookincubator/velox" ["e"=1]
 "substrait-io/substrait-java" -> "ibis-project/ibis-substrait"
+"stanford-futuredata/macrobase" -> "weld-project/weld" ["e"=1]
+"polarsignals/frostdb" -> "influxdata/influxdb_iox" ["e"=1]
+"jamsocket/plane" -> "feldera/feldera" ["e"=1]
+"jamsocket/plane" -> "slatedb/slatedb" ["e"=1]
+"cloudwego/volo" -> "apache/horaedb" ["e"=1]
+"avinassh/py-caskdb" -> "marsupialtail/quokka" ["e"=1]
 "apache/horaedb" -> "GreptimeTeam/greptimedb"
 "apache/horaedb" -> "cnosdb/cnosdb" ["e"=1]
 "apache/horaedb" -> "databendlabs/databend"
@@ -943,8 +1242,13 @@ digraph G {
 "apache/horaedb" -> "datenlord/datenlord" ["e"=1]
 "apache/horaedb" -> "wubx/rust-in-databend" ["e"=1]
 "apache/horaedb" -> "skyzh/mini-lsm" ["e"=1]
+"duckdb/duckdb-postgres" -> "Mause/duckdb-extension-framework" ["e"=1]
 "datafusion-contrib/datafusion-dft" -> "uwheel/datafusion-uwheel" ["e"=1]
 "datafusion-contrib/datafusion-dft" -> "datafusion-contrib/datafusion-substrait"
+"greenplum-db/gporca" -> "facebookincubator/velox" ["e"=1]
+"greenplum-db/gporca" -> "substrait-io/substrait" ["e"=1]
+"wubx/rust-in-databend" -> "databendlabs/databend" ["e"=1]
+"wubx/rust-in-databend" -> "apache/horaedb" ["e"=1]
 "ibis-project/ibis-substrait" -> "substrait-io/substrait-java"
 "ibis-project/ibis-substrait" -> "voltrondata/spark-substrait-gateway"
 "substrait-io/substrait-rs" -> "datafusion-contrib/datafusion-substrait"
@@ -978,6 +1282,8 @@ digraph G {
 "egraphs-good/egglog" -> "jameysharp/optir"
 "egraphs-good/egglog" -> "vmware-archive/differential-datalog"
 "egraphs-good/egglog" -> "ekzhang/crepe"
+"Xuanwo/backon" -> "tonbo-io/tonbo" ["e"=1]
+"Xuanwo/backon" -> "foyer-rs/foyer" ["e"=1]
 "apache/arrow-adbc" -> "apache/arrow-nanoarrow"
 "apache/arrow-adbc" -> "voltrondata/sqlflite" ["e"=1]
 "apache/arrow-adbc" -> "pacman82/arrow-odbc-py" ["e"=1]
@@ -993,6 +1299,7 @@ digraph G {
 "apache/arrow-adbc" -> "sfu-db/connector-x"
 "apache/arrow-adbc" -> "jorgecarleitao/parquet2"
 "apache/arrow-adbc" -> "voltrondata/superset-sqlalchemy-adbc-flight-sql-poc"
+"mlir-rs/melior" -> "egraphs-good/egglog" ["e"=1]
 "nineinchnick/trino-plugin-archetype" -> "nineinchnick/trino-rest"
 "ConduitIO/conduit" -> "meroxa/cli"
 "ConduitIO/conduit" -> "estuary/flow"
@@ -1085,6 +1392,12 @@ digraph G {
 "ConduitIO/conduit-connector-postgres" -> "lovromazgon/impromptu"
 "razor-x/blobpack" -> "makenew/serverless-benthos"
 "thierry-martinez/pyast" -> "makenew/serverless-benthos"
+"google/zerocopy" -> "apache/arrow-rs" ["e"=1]
+"google/zerocopy" -> "tonbo-io/tonbo" ["e"=1]
+"ByConity/ByConity" -> "facebookincubator/velox" ["e"=1]
+"awslabs/mountpoint-s3" -> "apache/opendal" ["e"=1]
+"awslabs/mountpoint-s3" -> "apache/datafusion" ["e"=1]
+"awslabs/mountpoint-s3" -> "quickwit-oss/quickwit" ["e"=1]
 "lancedb/lance" -> "lancedb/lancedb" ["e"=1]
 "lancedb/lance" -> "apache/datafusion"
 "lancedb/lance" -> "Eventual-Inc/Daft"
@@ -1100,6 +1413,13 @@ digraph G {
 "lancedb/lance" -> "kwai/blaze"
 "lancedb/lance" -> "marsupialtail/quokka"
 "lancedb/lance" -> "substrait-io/substrait"
+"cozodb/cozo" -> "kuzudb/kuzu" ["e"=1]
+"cozodb/cozo" -> "vmware-archive/differential-datalog" ["e"=1]
+"cozodb/cozo" -> "TimelyDataflow/differential-dataflow" ["e"=1]
+"cozodb/cozo" -> "GreptimeTeam/greptimedb" ["e"=1]
+"cozodb/cozo" -> "souffle-lang/souffle" ["e"=1]
+"citusdata/citus" -> "neondatabase/neon" ["e"=1]
+"ray-project/ray-educational-materials" -> "ray-project/enhancements" ["e"=1]
 "datafusion-contrib/ray-sql" -> "JanKaul/iceberg-rust"
 "datafusion-contrib/ray-sql" -> "apache/datafusion-ray"
 "datafusion-contrib/ray-sql" -> "exoshuffle/cloudsort"
@@ -1107,6 +1427,12 @@ digraph G {
 "datafusion-contrib/ray-sql" -> "apache/iceberg-rust"
 "datafusion-contrib/ray-sql" -> "apache/datafusion-python"
 "datafusion-contrib/ray-sql" -> "icelake-io/icelake"
+"griddb/griddb" -> "timescale/tsbs" ["e"=1]
+"apache/arrow" -> "apache/datafusion" ["e"=1]
+"apache/arrow" -> "facebookincubator/velox" ["e"=1]
+"apache/arrow" -> "apache/arrow-rs" ["e"=1]
+"tursodatabase/libsql" -> "neondatabase/neon" ["e"=1]
+"alibaba/havenask" -> "facebookincubator/velox" ["e"=1]
 "restatedev/restate" -> "live-codes/livecodes" ["e"=1]
 "restatedev/restate" -> "Eqraatech/Software-Engineering-In-Arabic" ["e"=1]
 "restatedev/restate" -> "inngest/inngest" ["e"=1]
@@ -1124,6 +1450,22 @@ digraph G {
 "restatedev/restate" -> "DevOpsHiveHQ/dynamic-devops-roadmap" ["e"=1]
 "apache/iotdb-tsfile-viewer" -> "yonyou-tsdb/tsfile-mt"
 "apache/iotdb-tsfile-viewer" -> "yonyou-tsdb/iotdb-toolkit"
+"apache/kudu" -> "facebookincubator/velox" ["e"=1]
+"openobserve/openobserve" -> "quickwit-oss/quickwit" ["e"=1]
+"openobserve/openobserve" -> "neondatabase/neon" ["e"=1]
+"openobserve/openobserve" -> "risingwavelabs/risingwave" ["e"=1]
+"infiniflow/infinity" -> "facebookincubator/velox" ["e"=1]
+"infiniflow/infinity" -> "databendlabs/databend" ["e"=1]
+"infiniflow/infinity" -> "GreptimeTeam/greptimedb" ["e"=1]
+"stoneatom/stonedb" -> "ClickHouse/ClickBench" ["e"=1]
+"stoneatom/stonedb" -> "apache/horaedb" ["e"=1]
+"xorbitsai/xorbits" -> "sfu-db/connector-x" ["e"=1]
+"skyzh/mini-lsm" -> "risingwavelabs/risingwave" ["e"=1]
+"skyzh/mini-lsm" -> "apache/opendal" ["e"=1]
+"skyzh/mini-lsm" -> "databendlabs/databend" ["e"=1]
+"skyzh/mini-lsm" -> "apache/datafusion" ["e"=1]
+"skyzh/mini-lsm" -> "GreptimeTeam/greptimedb" ["e"=1]
+"facebook/sapling" -> "GreptimeTeam/greptimedb" ["e"=1]
 "GiantSeaweed/DECREE" -> "Megum1/BEAGLE"
 "GiantSeaweed/DECREE" -> "XZ-X/PEM"
 "GiantSeaweed/DECREE" -> "Megum1/ODSCAN"
@@ -1148,6 +1490,16 @@ digraph G {
 "tailcallhq/tailcall" -> "paradedb/paradedb" ["e"=1]
 "tailcallhq/tailcall" -> "risingwavelabs/risingwave"
 "tailcallhq/tailcall" -> "algora-io/tv" ["e"=1]
+"pola-rs/pyo3-polars" -> "apache/datafusion-python" ["e"=1]
+"scallop-lang/scallop" -> "HarvardPL/formulog" ["e"=1]
+"TuGraph-family/tugraph-db" -> "kuzudb/kuzu" ["e"=1]
+"TuGraph-family/tugraph-db" -> "facebookincubator/velox" ["e"=1]
+"hydradatabase/columnar" -> "chdb-io/chdb" ["e"=1]
+"redpanda-data/connect" -> "redpanda-data/redpanda" ["e"=1]
+"redpanda-data/connect" -> "warpstreamlabs/bento" ["e"=1]
+"dilshod/xlsx2csv" -> "sfu-db/connector-x" ["e"=1]
+"coroot/coroot" -> "quickwit-oss/quickwit" ["e"=1]
+"ploomber/jupysql" -> "apache/arrow-adbc" ["e"=1]
 "parseablehq/parseable" -> "apache/datafusion-ballista"
 "parseablehq/parseable" -> "quickwit-oss/quickwit"
 "parseablehq/parseable" -> "ArroyoSystems/arroyo"
@@ -1163,6 +1515,12 @@ digraph G {
 "parseablehq/parseable" -> "feldera/feldera"
 "parseablehq/parseable" -> "splitgraph/seafowl"
 "parseablehq/parseable" -> "openobserve/openobserve" ["e"=1]
+"blue-yonder/turbodbc" -> "apache/arrow-adbc" ["e"=1]
+"influxdata/influxdb-comparisons" -> "timescale/tsbs" ["e"=1]
+"ubicloud/ubicloud" -> "quickwit-oss/quickwit" ["e"=1]
+"gabledata/recap" -> "splitgraph/seafowl" ["e"=1]
+"apache/uniffle" -> "kwai/blaze" ["e"=1]
+"apache/uniffle" -> "apache/datafusion-comet" ["e"=1]
 "apache/datafusion-python" -> "apache/datafusion-ray"
 "apache/datafusion-python" -> "apache/datafusion-ballista"
 "apache/datafusion-python" -> "apache/datafusion-comet"
@@ -1178,6 +1536,7 @@ digraph G {
 "apache/datafusion-python" -> "ibis-project/ibis-substrait"
 "apache/datafusion-python" -> "timvw/qv"
 "apache/datafusion-python" -> "apache/arrow-rs"
+"dflemstr/rq" -> "andygrove/datafusion-archive" ["e"=1]
 "getdozer/dozer" -> "ArroyoSystems/arroyo"
 "getdozer/dozer" -> "apache/iggy" ["e"=1]
 "getdozer/dozer" -> "fastn-stack/fastn"
@@ -1208,6 +1567,7 @@ digraph G {
 "ClickHouse/ClickBench" -> "kangkaisen/olap-performance" ["e"=1]
 "ClickHouse/ClickBench" -> "facebookincubator/velox"
 "ClickHouse/ClickBench" -> "azat/chdig" ["e"=1]
+"voltrondata/sqlflite" -> "apache/arrow-adbc" ["e"=1]
 "souffle-lang/souffle" -> "plast-lab/doop" ["e"=1]
 "souffle-lang/souffle" -> "vmware-archive/differential-datalog"
 "souffle-lang/souffle" -> "HarvardPL/formulog"
@@ -1223,6 +1583,7 @@ digraph G {
 "souffle-lang/souffle" -> "secure-software-engineering/phasar" ["e"=1]
 "souffle-lang/souffle" -> "ekzhang/crepe"
 "souffle-lang/souffle" -> "emina/rosette" ["e"=1]
+"cwida/FastLanes" -> "facebookincubator/nimble" ["e"=1]
 "google/mangle" -> "google/rune" ["e"=1]
 "google/mangle" -> "vmware-archive/differential-datalog"
 "google/mangle" -> "rust-lang/datafrog"
@@ -1238,6 +1599,13 @@ digraph G {
 "google/mangle" -> "cozodb/cozo" ["e"=1]
 "google/mangle" -> "egraphs-good/egglog"
 "google/mangle" -> "ironmansoftware/psmsi" ["e"=1]
+"zsvoboda/ngods-stocks" -> "bitsondatadev/trino-getting-started" ["e"=1]
+"zsvoboda/ngods-stocks" -> "lakekeeper/lakekeeper" ["e"=1]
+"zsvoboda/ngods-stocks" -> "starburstdata/dbt-trino" ["e"=1]
+"zsvoboda/ngods-stocks" -> "databricks/iceberg-rest-image" ["e"=1]
+"zsvoboda/ngods-stocks" -> "databricks/docker-spark-iceberg" ["e"=1]
+"zsvoboda/ngods-stocks" -> "apache/iceberg-python" ["e"=1]
+"apache/impala" -> "facebookincubator/velox" ["e"=1]
 "quixio/quix-streams" -> "bytewax/bytewax"
 "quixio/quix-streams" -> "faust-streaming/faust" ["e"=1]
 "quixio/quix-streams" -> "Paulescu/real-time-data-pipelines-in-python" ["e"=1]
@@ -1256,6 +1624,11 @@ digraph G {
 "quixio/quix-docs" -> "quixio/quix-samples"
 "quixio/quix-docs" -> "InfluxCommunity/quix-anomaly-detection-example"
 "epfldata/squid" -> "to-ithaca/libra" ["e"=1]
+"MrPowers/mack" -> "unitycatalog/unitycatalog-rs" ["e"=1]
+"losfair/mvsqlite" -> "slatedb/slatedb" ["e"=1]
+"jwills/buenavista" -> "Mause/duckdb-deltatable-extension" ["e"=1]
+"approximatelabs/sketch" -> "fugue-project/fugue" ["e"=1]
+"traas-stack/holoinsight" -> "apache/horaedb" ["e"=1]
 "apache/arrow-flight-sql-postgresql" -> "0x0L/pgeon"
 "databricks/iceberg-rest-image" -> "kevinjqliu/iceberg-rest-catalog"
 "databricks/iceberg-rest-image" -> "databricks/docker-spark-iceberg"
@@ -1264,6 +1637,8 @@ digraph G {
 "yonyou-tsdb/tsfile-mt" -> "yonyou-tsdb/iotdb-toolkit"
 "y-scope/clp-ffi-java" -> "y-scope/clp-ffi-py"
 "y-scope/clp-ffi-java" -> "y-scope/yscope-log-viewer"
+"eventql/eventql" -> "andygrove/datafusion-archive" ["e"=1]
+"eventql/eventql" -> "cswinter/LocustDB" ["e"=1]
 "datafusion-contrib/bdt" -> "timvw/qv"
 "datafusion-contrib/bdt" -> "datafusion-contrib/datafusion-dft"
 "datafusion-contrib/bdt" -> "andygrove/qpml"
@@ -1297,6 +1672,9 @@ digraph G {
 "Generative-Program-Analysis/GenSym" -> "zmw12306/ParDiff"
 "Generative-Program-Analysis/GenSym" -> "Kraks/diamond-lang"
 "starburstdata/dbt-demo" -> "starburstdata/dbt-trino-utils"
+"bloomberg/blazingmq" -> "redpanda-data/redpanda" ["e"=1]
+"SynaLinks/HybridAGI" -> "kuzudb/kuzu" ["e"=1]
+"tursodatabase/limbo" -> "neondatabase/neon" ["e"=1]
 "scala/collection-strawman" -> "epfldata/squid"
 "foyer-rs/foyer" -> "fast/fastrace" ["e"=1]
 "foyer-rs/foyer" -> "tonbo-io/tonbo"
@@ -1313,6 +1691,20 @@ digraph G {
 "foyer-rs/foyer" -> "fjall-rs/fjall" ["e"=1]
 "foyer-rs/foyer" -> "risinglightdb/sqllogictest-rs" ["e"=1]
 "foyer-rs/foyer" -> "dermesser/leveldb-rs" ["e"=1]
+"confluentinc/ksql" -> "MaterializeInc/materialize" ["e"=1]
+"gorules/zen" -> "ArroyoSystems/arroyo" ["e"=1]
+"lancedb/lancedb" -> "lancedb/lance" ["e"=1]
+"lancedb/lancedb" -> "apache/datafusion" ["e"=1]
+"lancedb/lancedb" -> "facebookincubator/velox" ["e"=1]
+"lancedb/lancedb" -> "Eventual-Inc/Daft" ["e"=1]
+"lancedb/lancedb" -> "risingwavelabs/risingwave" ["e"=1]
+"FalkorDB/FalkorDB" -> "kuzudb/kuzu" ["e"=1]
+"bytewax/awesome-public-real-time-datasets" -> "bytewax/bytewax" ["e"=1]
+"bytewax/awesome-public-real-time-datasets" -> "quixio/quix-streams" ["e"=1]
+"mit-pdos/noria" -> "TimelyDataflow/timely-dataflow" ["e"=1]
+"mit-pdos/noria" -> "MaterializeInc/materialize" ["e"=1]
+"mit-pdos/noria" -> "TimelyDataflow/differential-dataflow" ["e"=1]
+"mit-pdos/noria" -> "ballista-compute/ballista" ["e"=1]
 "apache/iceberg-python" -> "apache/iceberg-rust"
 "apache/iceberg-python" -> "lakekeeper/lakekeeper"
 "apache/iceberg-python" -> "duckdb/duckdb-iceberg" ["e"=1]
@@ -1328,6 +1720,10 @@ digraph G {
 "apache/iceberg-python" -> "databricks/iceberg-rest-image"
 "apache/iceberg-python" -> "duckdb/dbt-duckdb" ["e"=1]
 "apache/iceberg-python" -> "TobikoData/sqlmesh" ["e"=1]
+"hyperdxio/hyperdx" -> "quickwit-oss/quickwit" ["e"=1]
+"PeerDB-io/peerdb" -> "chdb-io/chdb" ["e"=1]
+"pyspark-ai/pyspark-ai" -> "apache/datafusion-comet" ["e"=1]
+"pyspark-ai/pyspark-ai" -> "unitycatalog/unitycatalog" ["e"=1]
 "ArroyoSystems/arroyo" -> "risingwavelabs/risingwave"
 "ArroyoSystems/arroyo" -> "apache/datafusion"
 "ArroyoSystems/arroyo" -> "apache/datafusion-ballista"
@@ -1343,6 +1739,7 @@ digraph G {
 "ArroyoSystems/arroyo" -> "kwai/blaze"
 "ArroyoSystems/arroyo" -> "lancedb/lance"
 "ArroyoSystems/arroyo" -> "paradedb/paradedb" ["e"=1]
+"cyclops-ui/cyclops" -> "infinyon/fluvio" ["e"=1]
 "chdb-io/chdb" -> "ClickHouse/ClickBench"
 "chdb-io/chdb" -> "TobikoData/sqlmesh" ["e"=1]
 "chdb-io/chdb" -> "GlareDB/glaredb"
@@ -1358,6 +1755,9 @@ digraph G {
 "chdb-io/chdb" -> "rilldata/rill" ["e"=1]
 "chdb-io/chdb" -> "apache/incubator-gluten" ["e"=1]
 "chdb-io/chdb" -> "ClickHouse/clickhouse-presentations" ["e"=1]
+"tensorchord/pgvecto.rs" -> "apache/iceberg-rust" ["e"=1]
+"superfly/corrosion" -> "slatedb/slatedb" ["e"=1]
+"dataflint/spark" -> "apache/datafusion-comet" ["e"=1]
 "XZ-X/PEM" -> "Megum1/BEAGLE"
 "XZ-X/PEM" -> "Megum1/ODSCAN"
 "weld-project/weld" -> "rajasekarv/vega"
@@ -1375,6 +1775,26 @@ digraph G {
 "weld-project/weld" -> "TimelyDataflow/differential-dataflow"
 "weld-project/weld" -> "apache/datafusion"
 "weld-project/weld" -> "greenplum-db/gporca" ["e"=1]
+"paradedb/paradedb" -> "apache/datafusion" ["e"=1]
+"paradedb/paradedb" -> "quickwit-oss/quickwit" ["e"=1]
+"paradedb/paradedb" -> "ArroyoSystems/arroyo" ["e"=1]
+"paradedb/paradedb" -> "neondatabase/neon" ["e"=1]
+"paradedb/paradedb" -> "risingwavelabs/risingwave" ["e"=1]
+"paradedb/paradedb" -> "databendlabs/databend" ["e"=1]
+"rivet-gg/rivet" -> "ArroyoSystems/arroyo" ["e"=1]
+"Brendan-Kirtlan/Video-Encode" -> "apache/incubator-xtable" ["e"=1]
+"xorq-labs/xorq" -> "apache/datafusion-python" ["e"=1]
+"kangkaisen/olap-performance" -> "facebookincubator/velox" ["e"=1]
+"apache/iggy" -> "ArroyoSystems/arroyo" ["e"=1]
+"apache/iggy" -> "infinyon/fluvio" ["e"=1]
+"apache/iggy" -> "tonbo-io/tonbo" ["e"=1]
+"apache/iggy" -> "risingwavelabs/risingwave" ["e"=1]
+"apache/iggy" -> "apache/arrow-rs" ["e"=1]
+"apache/iggy" -> "apache/datafusion" ["e"=1]
+"apache/gravitino" -> "apache/polaris" ["e"=1]
+"apache/gravitino" -> "kwai/blaze" ["e"=1]
+"apache/gravitino" -> "unitycatalog/unitycatalog" ["e"=1]
+"apache/gravitino" -> "apache/datafusion-comet" ["e"=1]
 "timeplus-io/proton" -> "ArroyoSystems/arroyo"
 "timeplus-io/proton" -> "risingwavelabs/risingwave"
 "timeplus-io/proton" -> "alibaba/fluss" ["e"=1]
@@ -1390,6 +1810,8 @@ digraph G {
 "timeplus-io/proton" -> "facebookincubator/velox"
 "timeplus-io/proton" -> "TobikoData/sqlmesh" ["e"=1]
 "timeplus-io/proton" -> "apache/datafusion"
+"ray-project/ray-llm" -> "oap-project/raydp" ["e"=1]
+"ray-project/ray-llm" -> "intel/llm-on-ray" ["e"=1]
 "apache/incubator-xtable" -> "apache/amoro" ["e"=1]
 "apache/incubator-xtable" -> "apache/incubator-gluten" ["e"=1]
 "apache/incubator-xtable" -> "apache/polaris"
@@ -1421,6 +1843,9 @@ digraph G {
 "feldera/feldera" -> "apache/datafusion"
 "feldera/feldera" -> "MaterializeInc/materialize"
 "feldera/feldera" -> "probably-nothing-labs/denormalized" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "Eventual-Inc/Daft" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "fugue-project/fugue" ["e"=1]
+"DAGWorks-Inc/hamilton" -> "lancedb/lance" ["e"=1]
 "databricks/iceberg-kafka-connect" -> "getindata/kafka-connect-iceberg-sink"
 "databricks/iceberg-kafka-connect" -> "databricks/iceberg-rest-image"
 "databricks/iceberg-kafka-connect" -> "memiiso/debezium-server-iceberg"
@@ -1450,6 +1875,10 @@ digraph G {
 "apache/iceberg-rust" -> "apache/opendal"
 "apache/iceberg-rust" -> "delta-io/delta-rs"
 "apache/iceberg-rust" -> "tonbo-io/tonbo"
+"duckdb/duckdb-iceberg" -> "apache/iceberg-python" ["e"=1]
+"duckdb/duckdb-iceberg" -> "lakekeeper/lakekeeper" ["e"=1]
+"duckdb/duckdb-iceberg" -> "Mause/duckdb-deltatable-extension" ["e"=1]
+"duckdb/duckdb-iceberg" -> "awslabs/s3-tables-catalog" ["e"=1]
 "delta-io/delta-kernel-rs" -> "duckdb/duckdb-delta" ["e"=1]
 "delta-io/delta-kernel-rs" -> "unitycatalog/unitycatalog-rs"
 "delta-io/delta-kernel-rs" -> "delta-incubator/delta-dotnet" ["e"=1]
@@ -1458,9 +1887,27 @@ digraph G {
 "delta-io/delta-kernel-rs" -> "apache/hudi-rs"
 "delta-io/delta-kernel-rs" -> "duckdb/uc_catalog" ["e"=1]
 "delta-io/delta-kernel-rs" -> "delta-io/delta-rs"
+"uwdb/Cosette" -> "souffle-lang/souffle" ["e"=1]
+"uwdb/Cosette" -> "rntz/datafun" ["e"=1]
+"ddotta/awesome-polars" -> "apache/datafusion-python" ["e"=1]
 "InfluxCommunity/quix-anomaly-detection-example" -> "quixio/quix-docs"
+"apache/iceberg-go" -> "databricks/iceberg-kafka-connect" ["e"=1]
+"apache/iceberg-go" -> "lakekeeper/lakekeeper" ["e"=1]
+"apache/iceberg-go" -> "apache/iceberg-python" ["e"=1]
+"scratchdata/scratchdata" -> "chdb-io/chdb" ["e"=1]
+"rockset/rocksdb-cloud" -> "facebookincubator/velox" ["e"=1]
+"apache/paimon-webui" -> "apache/paimon-rust" ["e"=1]
+"cedar-policy/cedar" -> "hydro-project/hydro" ["e"=1]
+"compio-rs/compio" -> "foyer-rs/foyer" ["e"=1]
+"compio-rs/compio" -> "tonbo-io/fusio" ["e"=1]
+"compio-rs/compio" -> "tonbo-io/tonbo" ["e"=1]
+"lancedb/vectordb-recipes" -> "lancedb/lance" ["e"=1]
 "TiarkRompf/lms-clean" -> "Kraks/sai"
+"crabml/crabml" -> "rewrite-bigdata-in-rust/RBIR" ["e"=1]
 "egraphs-good/eggcc" -> "jameysharp/optir"
+"KipData/KiteSQL" -> "tonbo-io/tonbo" ["e"=1]
+"KipData/KiteSQL" -> "tonbo-io/fusio" ["e"=1]
+"KipData/KiteSQL" -> "apache/paimon-rust" ["e"=1]
 "ConduitIO/bwlimit" -> "meroxa/turbine-go"
 "ConduitIO/bwlimit" -> "meroxa/turbine-js"
 "ConduitIO/bwlimit" -> "meroxa/turbine-py"
@@ -1479,6 +1926,8 @@ digraph G {
 "icelake-io/icelake" -> "apache/iceberg-rust"
 "icelake-io/icelake" -> "apache/paimon-rust"
 "cwida/duckpgq-extension" -> "cwida/duckdb-pgq"
+"maxi-k/btrblocks" -> "vortex-data/vortex" ["e"=1]
+"maxi-k/btrblocks" -> "facebookincubator/nimble" ["e"=1]
 "y-scope/yscope-log-viewer" -> "y-scope/clp-ffi-py"
 "y-scope/yscope-log-viewer" -> "y-scope/clp-ffi-java"
 "apache/iotdb-client-csharp" -> "apache/iotdb-docs"
@@ -1489,6 +1938,16 @@ digraph G {
 "apache/iotdb-docs" -> "apache/iotdb-client-csharp"
 "y-scope/clp-ffi-py" -> "y-scope/clp-ffi-java"
 "qingkaishi/netlifter" -> "zmw12306/ParDiff"
+"cbh123/narrator" -> "apache/incubator-xtable" ["e"=1]
+"disler/multi-agent-postgres-data-analytics" -> "apache/incubator-xtable" ["e"=1]
+"electric-sql/pglite" -> "neondatabase/neon" ["e"=1]
+"get-convex/convex-backend" -> "neondatabase/neon" ["e"=1]
+"Eqraatech/Software-Engineering-In-Arabic" -> "restatedev/restate" ["e"=1]
+"mthom/scryer-prolog" -> "vmware-archive/differential-datalog" ["e"=1]
+"fireducks-dev/fireducks" -> "Eventual-Inc/Daft" ["e"=1]
+"DevOpsHiveHQ/dynamic-devops-roadmap" -> "restatedev/restate" ["e"=1]
+"siglens/siglens" -> "quickwit-oss/quickwit" ["e"=1]
+"siglens/siglens" -> "GreptimeTeam/greptimedb" ["e"=1]
 "Megum1/ODSCAN" -> "Megum1/BEAGLE"
 "SolidShen/RIPPLE_official" -> "Megum1/BEAGLE"
 "SolidShen/RIPPLE_official" -> "PurduePAML/DBS"
@@ -1496,7 +1955,9 @@ digraph G {
 "KaiyuanZh/OrthogLinearBackdoor" -> "Megum1/BEAGLE"
 "KaiyuanZh/OrthogLinearBackdoor" -> "Megum1/LOTUS"
 "KaiyuanZh/OrthogLinearBackdoor" -> "XZ-X/PEM"
+"Alluxio/alluxio" -> "facebookincubator/velox" ["e"=1]
 "Megum1/LOTUS" -> "Megum1/UNIT"
+"rpbouman/huey" -> "GlareDB/glaredb" ["e"=1]
 "vortex-data/vortex" -> "maxi-k/btrblocks" ["e"=1]
 "vortex-data/vortex" -> "slatedb/slatedb"
 "vortex-data/vortex" -> "facebookincubator/nimble"
@@ -1527,6 +1988,12 @@ digraph G {
 "Netflix/maestro" -> "TobikoData/sqlmesh" ["e"=1]
 "Netflix/maestro" -> "apache/iceberg" ["e"=1]
 "Netflix/maestro" -> "apache/datafusion"
+"cmu-db/optd-original" -> "apache/iceberg-rust" ["e"=1]
+"cmu-db/optd-original" -> "arrow-udf/arrow-udf" ["e"=1]
+"cmu-db/optd-original" -> "foyer-rs/foyer" ["e"=1]
+"cmu-db/optd-original" -> "tonbo-io/tonbo" ["e"=1]
+"cmu-db/optd-original" -> "apache/datafusion-ray" ["e"=1]
+"cmu-db/optd-original" -> "apache/datafusion-comet" ["e"=1]
 "slatedb/slatedb" -> "tonbo-io/tonbo"
 "slatedb/slatedb" -> "foyer-rs/foyer"
 "slatedb/slatedb" -> "vortex-data/vortex"
@@ -1542,6 +2009,7 @@ digraph G {
 "slatedb/slatedb" -> "lakekeeper/lakekeeper"
 "slatedb/slatedb" -> "apache/datafusion-comet"
 "slatedb/slatedb" -> "apache/arrow-rs"
+"Paulescu/real-time-data-pipelines-in-python" -> "quixio/quix-streams" ["e"=1]
 "lakekeeper/lakekeeper" -> "apache/iceberg-rust"
 "lakekeeper/lakekeeper" -> "apache/iceberg-python"
 "lakekeeper/lakekeeper" -> "apache/polaris"
@@ -1567,6 +2035,16 @@ digraph G {
 "linkedin/openhouse" -> "apache/datafusion-comet"
 "linkedin/openhouse" -> "apache/polaris"
 "linkedin/openhouse" -> "ray-project/deltacat"
+"cloudflare/foundations" -> "vortex-data/vortex" ["e"=1]
+"xephonhq/awesome-time-series-database" -> "timescale/tsbs" ["e"=1]
+"superlinked/superlinked" -> "bytewax/bytewax" ["e"=1]
+"fjall-rs/fjall" -> "tonbo-io/tonbo" ["e"=1]
+"fjall-rs/fjall" -> "foyer-rs/foyer" ["e"=1]
+"fjall-rs/fjall" -> "slatedb/slatedb" ["e"=1]
+"lonng/db-papers" -> "XiangpengHao/liquid-cache" ["e"=1]
+"vega/falcon" -> "substrait-io/substrait" ["e"=1]
+"vega/falcon" -> "cylondata/cylon" ["e"=1]
+"SeekStorm/SeekStorm" -> "vortex-data/vortex" ["e"=1]
 "apache/datafusion-comet" -> "kwai/blaze"
 "apache/datafusion-comet" -> "apache/incubator-gluten" ["e"=1]
 "apache/datafusion-comet" -> "apache/datafusion-ballista"
@@ -1603,6 +2081,7 @@ digraph G {
 "andygrove/datafusion-archive" -> "tower-rs/tower-grpc" ["e"=1]
 "andygrove/datafusion-archive" -> "magnet/metered-rs" ["e"=1]
 "andygrove/datafusion-archive" -> "tokio-rs/tokio-proto" ["e"=1]
+"turbolytics/sql-flow" -> "apache/datafusion-python" ["e"=1]
 "lakehq/sail" -> "apache/datafusion-comet"
 "lakehq/sail" -> "lakekeeper/lakekeeper"
 "lakehq/sail" -> "vortex-data/vortex"
@@ -1647,11 +2126,19 @@ digraph G {
 "datafusion-contrib/datafusion-table-providers" -> "datafusion-contrib/datafusion-federation"
 "arrow-udf/arrow-udf" -> "datafusion-contrib/datafusion-substrait"
 "arrow-udf/arrow-udf" -> "risingwavelabs/jsonbb"
+"plast-lab/doop" -> "souffle-lang/souffle" ["e"=1]
 "apache/iotdb-extras" -> "apache/iotdb-docs"
 "stackabletech/trino-lb" -> "stackabletech/opa-operator"
 "zmw12306/ParDiff" -> "qingkaishi/netlifter"
+"ziansu/codeart" -> "Gwinhen/MOTH" ["e"=1]
 "LeiRui/visual-fidelity-bench" -> "apache/iotdb-docs"
 "lovromazgon/impromptu" -> "ConduitIO/conduit-connector-postgres"
+"timescale/timescaledb" -> "neondatabase/neon" ["e"=1]
+"TileDB-Inc/TileDB" -> "substrait-io/substrait" ["e"=1]
+"TileDB-Inc/TileDB" -> "facebookincubator/velox" ["e"=1]
+"TileDB-Inc/TileDB" -> "ballista-compute/ballista" ["e"=1]
+"raga-ai-hub/RagaAI-Catalyst" -> "timeplus-io/proton" ["e"=1]
+"alibaba/fluss" -> "kwai/blaze" ["e"=1]
 "ZhangZhuoSJTU/LINT" -> "SolidShen/BAIT"
 "SolidShen/BAIT" -> "ZhangZhuoSJTU/LINT"
 "SolidShen/BAIT" -> "XZ-X/PEM"
@@ -1659,6 +2146,7 @@ digraph G {
 "SolidShen/BAIT" -> "Megum1/BEAGLE"
 "SolidShen/BAIT" -> "SolidShen/RIPPLE_official"
 "MarkGHX/BiScope" -> "Megum1/ODSCAN"
+"cloudflare/trie-hard" -> "XiangpengHao/liquid-cache" ["e"=1]
 "apache/polaris" -> "lakekeeper/lakekeeper"
 "apache/polaris" -> "unitycatalog/unitycatalog"
 "apache/polaris" -> "projectnessie/nessie"
@@ -1674,6 +2162,12 @@ digraph G {
 "apache/polaris" -> "apache/celeborn" ["e"=1]
 "apache/polaris" -> "Eventual-Inc/Daft"
 "apache/polaris" -> "databricks/iceberg-kafka-connect"
+"Mooncake-Labs/pg_mooncake" -> "slatedb/slatedb" ["e"=1]
+"Mooncake-Labs/pg_mooncake" -> "feldera/feldera" ["e"=1]
+"python-streamz/streamz" -> "bytewax/bytewax" ["e"=1]
+"wesql/wesql" -> "slatedb/slatedb" ["e"=1]
+"drasi-project/drasi-platform" -> "vortex-data/vortex" ["e"=1]
+"BemiHQ/BemiDB" -> "slatedb/slatedb" ["e"=1]
 "unitycatalog/unitycatalog" -> "apache/polaris"
 "unitycatalog/unitycatalog" -> "delta-io/delta" ["e"=1]
 "unitycatalog/unitycatalog" -> "apache/datafusion-comet"
@@ -1689,6 +2183,9 @@ digraph G {
 "unitycatalog/unitycatalog" -> "projectnessie/nessie"
 "unitycatalog/unitycatalog" -> "apache/amoro" ["e"=1]
 "unitycatalog/unitycatalog" -> "facebookincubator/velox"
+"LucaCanali/sparkMeasure" -> "apache/datafusion-comet" ["e"=1]
+"CoNarrative/precept" -> "sixthnormal/clj-3df" ["e"=1]
+"hyrise/hyrise" -> "facebookincubator/velox" ["e"=1]
 "warpstreamlabs/bento" -> "redpanda-data/connect" ["e"=1]
 "warpstreamlabs/bento" -> "redpanda-data/benthos"
 "warpstreamlabs/bento" -> "apache/iceberg-go" ["e"=1]
@@ -1704,8 +2201,13 @@ digraph G {
 "warpstreamlabs/bento" -> "lakekeeper/lakekeeper"
 "warpstreamlabs/bento" -> "estuary/flow"
 "warpstreamlabs/bento" -> "turbolytics/sql-flow" ["e"=1]
+"orbitinghail/graft" -> "feldera/feldera" ["e"=1]
+"orbitinghail/graft" -> "slatedb/slatedb" ["e"=1]
 "redpanda-data/benthos" -> "warpstreamlabs/bento"
 "redpanda-data/benthos" -> "redpanda-data/redpanda-connect-plugin-example"
+"duckdb/duckdb-delta" -> "delta-io/delta-kernel-rs" ["e"=1]
+"duckdb/duckdb-delta" -> "Mause/duckdb-deltatable-extension" ["e"=1]
+"spacejam/tla-rust" -> "TimelyDataflow/timely-dataflow" ["e"=1]
 "tonbo-io/tonbo" -> "tonbo-io/fusio"
 "tonbo-io/tonbo" -> "slatedb/slatedb"
 "tonbo-io/tonbo" -> "foyer-rs/foyer"
@@ -1721,6 +2223,12 @@ digraph G {
 "tonbo-io/tonbo" -> "systemxlabs/bustubx" ["e"=1]
 "tonbo-io/tonbo" -> "risinglightdb/risinglight" ["e"=1]
 "tonbo-io/tonbo" -> "fast/fastrace" ["e"=1]
+"fast/fastrace" -> "foyer-rs/foyer" ["e"=1]
+"fast/fastrace" -> "fast/logforth" ["e"=1]
+"fast/fastrace" -> "tonbo-io/tonbo" ["e"=1]
+"fast/fastrace" -> "tonbo-io/fusio" ["e"=1]
+"eakmanrq/sqlframe" -> "apache/arrow-adbc" ["e"=1]
+"eakmanrq/sqlframe" -> "apache/datafusion-python" ["e"=1]
 "kevinjqliu/iceberg-rest-catalog" -> "databricks/iceberg-rest-image"
 "awslabs/s3-tables-catalog" -> "awslabs/analytics-accelerator-s3"
 "TiarkRompf/virtualization-lms-core" -> "stanford-ppl/Delite"
@@ -1772,108 +2280,187 @@ digraph G {
 "tisonkun/morax" -> "apache/paimon-rust"
 "PurCL/ProSec" -> "SolidShen/RIPPLE_official"
 "Megum1/UNIT" -> "Megum1/LOTUS"
+"geldata/gel" -> "neondatabase/neon" ["e"=1]
+"manticoresoftware/manticoresearch" -> "quickwit-oss/quickwit" ["e"=1]
+"manticoresoftware/manticoresearch" -> "redpanda-data/redpanda" ["e"=1]
 "XiangpengHao/liquid-cache" -> "XiangpengHao/seen"
 "XiangpengHao/liquid-cache" -> "XiangpengHao/parquet-viewer"
+"deepseek-ai/smallpond" -> "Eventual-Inc/Daft" ["e"=1]
+"deepseek-ai/smallpond" -> "apache/datafusion" ["e"=1]
+"deepseek-ai/smallpond" -> "facebookincubator/velox" ["e"=1]
+"deepseek-ai/smallpond" -> "lancedb/lance" ["e"=1]
+"deepseek-ai/smallpond" -> "unitycatalog/unitycatalog" ["e"=1]
+"dremio/dremio-oss" -> "projectnessie/nessie" ["e"=1]
+"dremio/dremio-oss" -> "dremio/gandiva" ["e"=1]
+"dremio/dremio-oss" -> "substrait-io/substrait" ["e"=1]
+"dremio/dremio-oss" -> "apache/polaris" ["e"=1]
+"heavyai/heavydb" -> "facebookincubator/velox" ["e"=1]
+"heavyai/heavydb" -> "weld-project/weld" ["e"=1]
 "malyzajko/daisy" -> "soarlab/FPTaylor"
 "malyzajko/daisy" -> "arnabd88/Satire"
 "malyzajko/daisy" -> "malyzajko/rosa"
+"pgdogdev/pgdog" -> "vortex-data/vortex" ["e"=1]
+"pgdogdev/pgdog" -> "slatedb/slatedb" ["e"=1]
+"skyzh/tiny-llm" -> "foyer-rs/foyer" ["e"=1]
 "cylondata/twister2" -> "DSC-SPIDAL/twister2"
+"arkflow-rs/arkflow" -> "lakehq/sail" ["e"=1]
+"arkflow-rs/arkflow" -> "hydro-project/hydro" ["e"=1]
 "Provisdom/spectomic" -> "vvvvalvalval/datalog-rules"
 "antinomyhq/forge" -> "tailcallhq/tailcallhq.github.io"
 "apache/iotdb-mcp-server" -> "LeiRui/visual-fidelity-bench"
+"questdb/questdb" ["l"="-19.465,-24.703", "c"=10]
+"redpanda-data/redpanda" ["l"="-0.489,15.138"]
+"neondatabase/neon" ["l"="-0.398,15.206"]
+"risingwavelabs/risingwave" ["l"="-0.43,15.075"]
+"PyO3/maturin" ["l"="44.879,21.055", "c"=20]
+"apache/arrow-rs" ["l"="-0.432,14.97"]
+"Qiskit/rustworkx" ["l"="21.113,17.361", "c"=237]
+"sfu-db/connector-x" ["l"="-0.449,14.875"]
+"vectordotdev/vector" ["l"="8.404,-8.715", "c"=14]
+"quickwit-oss/quickwit" ["l"="-0.393,15.137"]
+"databendlabs/databend" ["l"="-0.454,15.044"]
+"valeriansaliou/sonic" ["l"="-9.846,-5.748", "c"=5]
+"google/zetasql" ["l"="1.907,13.449", "c"=376]
+"substrait-io/substrait" ["l"="-0.428,14.907"]
+"facebookincubator/velox" ["l"="-0.461,14.957"]
+"apache/datafusion" ["l"="-0.445,14.993"]
+"MaterializeInc/materialize" ["l"="-0.498,15.038"]
+"pingcap/talent-plan" ["l"="0.602,13.812", "c"=115]
+"cube-js/cube" ["l"="-0.9,15.994", "c"=268]
+"dolthub/dolt" ["l"="4.562,-8.979", "c"=0]
+"yugabyte/yugabyte-db" ["l"="-19.677,-24.87", "c"=10]
+"duckdb/duckdb" ["l"="-19.45,-24.831", "c"=10]
+"trinodb/trino" ["l"="-2.737,14.868", "c"=43]
+"cube2222/octosql" ["l"="-13.482,-6.53", "c"=86]
+"roapi/roapi" ["l"="-0.404,14.964"]
+"rudderlabs/rudder-server" ["l"="16.128,-10.485", "c"=198]
+"sfu-db/dataprep" ["l"="45.237,26.208", "c"=68]
+"fugue-project/fugue" ["l"="-0.414,14.815"]
+"obsidiandynamics/kafdrop" ["l"="-0.636,17.076", "c"=398]
+"Altinity/clickhouse-operator" ["l"="1.19,-9.223", "c"=1144]
+"chdb-io/chdb" ["l"="-0.488,14.919"]
+"apache/pinot" ["l"="-2.709,14.746", "c"=43]
+"georgia-tech-db/evadb" ["l"="41.314,-4.007", "c"=146]
+"lancedb/lance" ["l"="-0.447,14.924"]
+"vdaas/vald" ["l"="-1.146,3.98", "c"=576]
+"cmu-db/noisepage" ["l"="1.846,13.489", "c"=376]
+"uber/aresdb" ["l"="1.962,13.497", "c"=376]
+"weld-project/weld" ["l"="-0.591,15.005"]
+"sirupsen/napkin-math" ["l"="0.691,13.69", "c"=115]
+"slatedb/slatedb" ["l"="-0.337,14.955"]
+"Snapchat/KeyDB" ["l"="-19.694,-24.737", "c"=10]
+"erikgrinaker/toydb" ["l"="0.558,13.859", "c"=115]
+"metrico/gigapipe" ["l"="1.245,-9.224", "c"=1144]
+"unionai-oss/pandera" ["l"="45.28,26.057", "c"=68]
+"delta-io/delta" ["l"="-2.713,14.82", "c"=43]
+"unitycatalog/unitycatalog" ["l"="-0.295,14.926"]
+"delta-io/delta-rs" ["l"="-0.401,14.897"]
 "ballista-compute/ballista" ["l"="-0.551,14.985"]
 "rajasekarv/vega" ["l"="-0.553,14.952"]
 "tensorbase/tensorbase" ["l"="-0.526,14.961"]
 "andygrove/datafusion-archive" ["l"="-0.622,14.986"]
-"apache/datafusion" ["l"="-0.445,14.993"]
-"bastion-rs/bastion" ["l"="-10.127,-6.295"]
-"weld-project/weld" ["l"="-0.591,15.005"]
+"bastion-rs/bastion" ["l"="-10.127,-6.295", "c"=5]
 "TimelyDataflow/timely-dataflow" ["l"="-0.546,15.034"]
 "jorgecarleitao/arrow2" ["l"="-0.473,14.897"]
 "TimelyDataflow/differential-dataflow" ["l"="-0.581,15.083"]
 "constellation-rs/amadeus" ["l"="-0.612,14.946"]
-"apache/arrow-rs" ["l"="-0.432,14.97"]
 "apache/datafusion-ballista" ["l"="-0.408,14.94"]
 "influxdata/influxdb_iox" ["l"="-0.473,14.997"]
 "apache/datafusion-sqlparser-rs" ["l"="-0.505,14.994"]
-"mit-pdos/noria" ["l"="-9.983,-6.127"]
+"mit-pdos/noria" ["l"="-9.983,-6.127", "c"=5]
 "constellation-rs/constellation" ["l"="-0.661,14.941"]
-"LeonHartley/Coerce-rs" ["l"="-10.31,-6.417"]
+"LeonHartley/Coerce-rs" ["l"="-10.31,-6.417", "c"=5]
 "alecmocatta/amadeus" ["l"="-0.656,14.92"]
-"riker-rs/riker" ["l"="-10.266,-6.334"]
-"async-raft/async-raft" ["l"="-10.276,-6.369"]
-"zesterer/flume" ["l"="-10.065,-6.33"]
-"arrayfire/arrayfire-rust" ["l"="-8.207,-4.463"]
+"riker-rs/riker" ["l"="-10.266,-6.334", "c"=5]
+"async-raft/async-raft" ["l"="-10.276,-6.369", "c"=5]
+"zesterer/flume" ["l"="-10.065,-6.33", "c"=5]
+"arrayfire/arrayfire-rust" ["l"="-8.207,-4.463", "c"=407]
+"apache/iceberg" ["l"="-2.686,14.864", "c"=43]
 "dremio/gandiva" ["l"="-0.625,14.908"]
-"dremio/dremio-oss" ["l"="-2.641,14.841"]
+"dremio/dremio-oss" ["l"="-2.641,14.841", "c"=43]
 "cylondata/cylon" ["l"="-0.642,14.84"]
-"oap-project/gazelle_plugin" ["l"="-2.488,14.911"]
-"substrait-io/substrait" ["l"="-0.428,14.907"]
+"oap-project/gazelle_plugin" ["l"="-2.488,14.911", "c"=43]
 "TiarkRompf/virtualization-lms-core" ["l"="-0.858,14.826"]
-"xhochy/fletcher" ["l"="43.981,23.901"]
-"TimoKersten/db-engine-paradigms" ["l"="1.867,13.441"]
-"abs-tudelft/fletcher" ["l"="31.706,-3.41"]
-"airlift/slice" ["l"="-5.597,10.64"]
+"xhochy/fletcher" ["l"="43.981,23.901", "c"=95]
+"TimoKersten/db-engine-paradigms" ["l"="1.867,13.441", "c"=376]
+"abs-tudelft/fletcher" ["l"="31.706,-3.41", "c"=188]
+"airlift/slice" ["l"="-5.597,10.64", "c"=452]
 "substrait-io/substrait-java" ["l"="-0.507,14.874"]
-"apache/hawq" ["l"="-2.608,14.723"]
-"intel/BDTK" ["l"="1.937,13.362"]
-"microsoft/hyperspace" ["l"="-2.449,14.852"]
+"apache/hawq" ["l"="-2.608,14.723", "c"=43]
+"intel/BDTK" ["l"="1.937,13.362", "c"=376]
+"microsoft/hyperspace" ["l"="-2.449,14.852", "c"=43]
+"systeminit/si" ["l"="7.47,-9.313", "c"=14]
+"feldera/feldera" ["l"="-0.407,14.989"]
+"finos/perspective" ["l"="-0.633,15.751", "c"=268]
 "cswinter/LocustDB" ["l"="-0.597,14.974"]
-"Fullstop000/wickdb" ["l"="0.576,14.097"]
-"indradb/indradb" ["l"="-10.13,-6.219"]
-"tikv/agatedb" ["l"="0.615,14.071"]
-"gluesql/gluesql" ["l"="-10.17,-6.372"]
-"photondb/photondb" ["l"="0.566,14.052"]
-"spacejam/sled" ["l"="-9.984,-6.161"]
-"PumpkinDB/PumpkinDB" ["l"="-9.956,-5.842"]
-"MaterializeInc/materialize" ["l"="-0.498,15.038"]
+"Fullstop000/wickdb" ["l"="0.576,14.097", "c"=115]
+"indradb/indradb" ["l"="-10.13,-6.219", "c"=5]
+"tikv/agatedb" ["l"="0.615,14.071", "c"=115]
+"gluesql/gluesql" ["l"="-10.17,-6.372", "c"=5]
+"photondb/photondb" ["l"="0.566,14.052", "c"=115]
+"spacejam/sled" ["l"="-9.984,-6.161", "c"=5]
+"PumpkinDB/PumpkinDB" ["l"="-9.956,-5.842", "c"=5]
 "substantic/rain" ["l"="-0.668,14.974"]
-"risingwavelabs/risingwave" ["l"="-0.43,15.075"]
-"databendlabs/databend" ["l"="-0.454,15.044"]
-"facebookincubator/velox" ["l"="-0.461,14.957"]
+"RoaringBitmap/RoaringBitmap" ["l"="-5.661,10.624", "c"=452]
+"lindb/lindb" ["l"="3.957,-8.319", "c"=0]
+"apache/horaedb" ["l"="-0.411,15.041"]
+"toshi-search/Toshi" ["l"="-10.075,-6.082", "c"=5]
+"terminusdb/terminusdb" ["l"="-2.078,-41.399", "c"=963]
+"vmware-archive/differential-datalog" ["l"="-0.624,15.167"]
+"kuzudb/kuzu" ["l"="-0.549,14.879"]
+"pingcap/tiflash" ["l"="0.619,14.122", "c"=115]
 "ArroyoSystems/arroyo" ["l"="-0.424,15.013"]
-"redpanda-data/redpanda" ["l"="-0.489,15.138"]
-"risinglightdb/risinglight" ["l"="0.552,13.994"]
-"vectordotdev/vector" ["l"="8.404,-8.715"]
+"risinglightdb/risinglight" ["l"="0.552,13.994", "c"=115]
+"pyjanitor-devs/pyjanitor" ["l"="45.231,26.285", "c"=68]
+"pyscaffold/pyscaffold" ["l"="45.305,21.01", "c"=20]
+"lyft/presto-gateway" ["l"="-2.391,14.809", "c"=43]
+"trinodb/trino-gateway" ["l"="-0.05,14.834"]
+"varadaio/presto-workload-analyzer" ["l"="-0.004,14.838"]
+"trinodb/charts" ["l"="-0.103,14.789"]
 "timescale/tsbs" ["l"="-0.301,15.089"]
-"influxdata/influxdb-comparisons" ["l"="4.364,-6.891"]
+"influxdata/influxdb-comparisons" ["l"="4.364,-6.891", "c"=0]
 "ClickHouse/ClickBench" ["l"="-0.37,14.979"]
 "thulab/iot-benchmark" ["l"="-0.142,15.246"]
-"timescale/pg_prometheus" ["l"="9.814,-10.362"]
-"timescale/docs.timescale.com-content" ["l"="9.827,-10.341"]
-"timescale/promscale" ["l"="9.702,-10.396"]
-"m3db/m3" ["l"="8.246,-8.89"]
-"akumuli/Akumuli" ["l"="4.371,-7.607"]
-"facebookarchive/beringei" ["l"="0.986,14.038"]
-"timescale/timescaledb-tune" ["l"="9.807,-10.309"]
-"timescale/timescaledb-toolkit" ["l"="9.79,-10.327"]
-"VictoriaMetrics/prometheus-benchmark" ["l"="9.65,-10.325"]
+"timescale/pg_prometheus" ["l"="9.814,-10.362", "c"=484]
+"timescale/docs.timescale.com-content" ["l"="9.827,-10.341", "c"=484]
+"timescale/promscale" ["l"="9.702,-10.396", "c"=484]
+"m3db/m3" ["l"="8.246,-8.89", "c"=14]
+"akumuli/Akumuli" ["l"="4.371,-7.607", "c"=0]
+"facebookarchive/beringei" ["l"="0.986,14.038", "c"=115]
+"timescale/timescaledb-tune" ["l"="9.807,-10.309", "c"=484]
+"timescale/timescaledb-toolkit" ["l"="9.79,-10.327", "c"=484]
+"VictoriaMetrics/prometheus-benchmark" ["l"="9.65,-10.325", "c"=484]
 "GreptimeTeam/greptimedb" ["l"="-0.383,15.072"]
-"timescale/timescaledb" ["l"="-19.599,-24.74"]
+"timescale/timescaledb" ["l"="-19.599,-24.74", "c"=10]
+"rust-lang/polonius" ["l"="-9.716,-6.33", "c"=5]
+"rust-lang/datafrog" ["l"="-0.653,15.198"]
+"twmb/franz-go" ["l"="4.066,-8.892", "c"=0]
+"MicrosoftResearch/Naiad" ["l"="51.384,15.441", "c"=1231]
 "egraphs-good/egg" ["l"="-0.663,15.362"]
 "egraphs-good/egglog" ["l"="-0.635,15.286"]
 "uwplse/ruler" ["l"="-0.634,15.379"]
-"uwplse/tensat" ["l"="37.029,1.186"]
+"uwplse/tensat" ["l"="37.029,1.186", "c"=112]
 "philzook58/awesome-egraphs" ["l"="-0.645,15.325"]
-"emina/rosette" ["l"="-22.288,-19.326"]
-"flux-rs/flux" ["l"="-9.699,-6.524"]
-"JuliaSymbolics/Metatheory.jl" ["l"="21.963,16.862"]
-"cvc5/cvc5" ["l"="-22.373,-19.254"]
-"creusot-rs/creusot" ["l"="-9.712,-6.557"]
-"rust-lang/chalk" ["l"="-9.737,-6.348"]
-"mlir-rs/melior" ["l"="37.236,1.081"]
-"yallop/effects-bibliography" ["l"="-22.027,-20.189"]
+"emina/rosette" ["l"="-22.288,-19.326", "c"=392]
+"flux-rs/flux" ["l"="-9.699,-6.524", "c"=5]
+"JuliaSymbolics/Metatheory.jl" ["l"="21.963,16.862", "c"=77]
+"cvc5/cvc5" ["l"="-22.373,-19.254", "c"=392]
+"creusot-rs/creusot" ["l"="-9.712,-6.557", "c"=5]
+"rust-lang/chalk" ["l"="-9.737,-6.348", "c"=5]
+"mlir-rs/melior" ["l"="37.236,1.081", "c"=112]
+"yallop/effects-bibliography" ["l"="-22.027,-20.189", "c"=447]
 "herbie-fp/herbie" ["l"="-0.676,15.406"]
-"viperproject/prusti-dev" ["l"="-9.757,-6.512"]
+"viperproject/prusti-dev" ["l"="-9.757,-6.512", "c"=5]
 "Kraks/sai" ["l"="-1.002,14.813"]
 "TiarkRompf/lms-clean" ["l"="-0.946,14.823"]
 "Kraks/diamond-lang" ["l"="-1.04,14.807"]
-"tikv/raft-rs" ["l"="-10.14,-6.258"]
-"erikgrinaker/toydb" ["l"="0.558,13.859"]
+"tikv/raft-rs" ["l"="-10.14,-6.258", "c"=5]
 "apache/opendal" ["l"="-0.387,15.011"]
-"vmware-archive/differential-datalog" ["l"="-0.624,15.167"]
+"liftbridge-io/liftbridge" ["l"="4.411,-8.756", "c"=0]
+"gazette/core" ["l"="-0.36,14.764"]
+"sampsyo/bril" ["l"="-22.188,-18.58", "c"=763]
+"capitalone/datacompy" ["l"="-0.711,15.919", "c"=268]
 "comnik/declarative-dataflow" ["l"="-0.683,15.161"]
-"rust-lang/datafrog" ["l"="-0.653,15.198"]
 "souffle-lang/souffle" ["l"="-0.631,15.245"]
 "jamii/dida" ["l"="-0.663,15.141"]
 "rntz/datafun" ["l"="-0.629,15.215"]
@@ -1882,39 +2469,48 @@ digraph G {
 "vmware-archive/database-stream-processor" ["l"="-0.554,15.123"]
 "frankmcsherry/differential-dataflow" ["l"="-0.659,15.12"]
 "ekzhang/crepe" ["l"="-0.653,15.23"]
-"mthom/scryer-prolog" ["l"="-2.018,-41.423"]
-"replikativ/datahike" ["l"="-23.935,-20.326"]
-"mikeizbicki/HerbiePlugin" ["l"="-20.54,-19.924"]
+"mthom/scryer-prolog" ["l"="-2.018,-41.423", "c"=963]
+"replikativ/datahike" ["l"="-23.935,-20.326", "c"=75]
+"BlazingDB/blazingsql" ["l"="43.911,23.653", "c"=95]
+"tdunning/t-digest" ["l"="-5.74,10.658", "c"=452]
+"harababurel/gcsf" ["l"="-13.9,-6.322", "c"=86]
+"dermesser/leveldb-rs" ["l"="0.548,14.097", "c"=115]
+"foyer-rs/foyer" ["l"="-0.305,14.981"]
+"zhihu/rucene" ["l"="-10.082,-6.129", "c"=5]
+"influxdata/flux" ["l"="4.431,-7.016", "c"=0]
+"GrammaTech/ddisasm" ["l"="-41.418,-36.088", "c"=91]
+"mikeizbicki/HerbiePlugin" ["l"="-20.54,-19.924", "c"=118]
 "uwplse/herbgrind" ["l"="-0.716,15.428"]
 "FPBench/FPBench" ["l"="-0.666,15.443"]
 "herbie-fp/odyssey" ["l"="-0.689,15.432"]
-"AndrasKovacs/elaboration-zoo" ["l"="-22.035,-20.2"]
+"AndrasKovacs/elaboration-zoo" ["l"="-22.035,-20.2", "c"=447]
 "soarlab/FPTaylor" ["l"="-0.702,15.448"]
 "malyzajko/daisy" ["l"="-0.688,15.462"]
-"mikeizbicki/subhask" ["l"="-20.658,-20.039"]
+"mikeizbicki/subhask" ["l"="-20.658,-20.039", "c"=118]
+"Workiva/eva" ["l"="-23.938,-20.181", "c"=75]
+"vvvvalvalval/datomock" ["l"="-0.875,15.213"]
 "Kixiron/ddshow" ["l"="-0.714,15.139"]
 "vvvvalvalval/datofu" ["l"="-0.836,15.217"]
 "hodur-org/hodur-engine" ["l"="-0.754,15.161"]
-"hyperfiddle/hyperfiddle-2020" ["l"="-23.962,-20.205"]
-"CoNarrative/precept" ["l"="-23.796,-20.177"]
-"wilkerlucio/pathom" ["l"="-23.979,-20.219"]
+"hyperfiddle/hyperfiddle-2020" ["l"="-23.962,-20.205", "c"=75]
+"CoNarrative/precept" ["l"="-23.796,-20.177", "c"=75]
+"wilkerlucio/pathom" ["l"="-23.979,-20.219", "c"=75]
 "trinodb/docker-images" ["l"="-0.026,14.775"]
 "trinodb/trino-docker" ["l"="0.003,14.766"]
+"marcboeker/go-duckdb" ["l"="4.449,-8.3", "c"=0]
+"duckdb/duckdb-rs" ["l"="-0.422,14.846"]
+"apache/arrow-adbc" ["l"="-0.448,14.805"]
 "rafd/tada" ["l"="-0.799,15.163"]
-"threatgrid/asami" ["l"="-24.014,-20.245"]
-"gazette/core" ["l"="-0.36,14.764"]
+"threatgrid/asami" ["l"="-24.014,-20.245", "c"=75]
 "estuary/flow" ["l"="-0.339,14.786"]
-"streamnative/oxia" ["l"="-2.851,11.075"]
-"feldera/feldera" ["l"="-0.407,14.989"]
-"liftbridge-io/liftbridge" ["l"="4.411,-8.756"]
+"streamnative/oxia" ["l"="-2.851,11.075", "c"=15]
 "estuary/connectors" ["l"="-0.34,14.738"]
 "s-arash/ascent" ["l"="-0.662,15.256"]
 "HarvardPL/formulog" ["l"="-0.666,15.276"]
 "c-cube/datalog" ["l"="-0.673,15.223"]
-"rust-lang/polonius" ["l"="-9.716,-6.33"]
-"salsa-rs/salsa" ["l"="-9.733,-6.412"]
+"salsa-rs/salsa" ["l"="-9.733,-6.412", "c"=5]
 "luc-tielen/eclair-lang" ["l"="-0.754,15.23"]
-"jix/varisat" ["l"="-22.291,-19.262"]
+"jix/varisat" ["l"="-22.291,-19.262", "c"=392]
 "thulab/iotdb-jdbc" ["l"="-0.062,15.245"]
 "jixuan1989/init_ec2" ["l"="-0.072,15.258"]
 "apache/tsfile" ["l"="-0.112,15.286"]
@@ -1922,14 +2518,13 @@ digraph G {
 "apache/iotdb-bin-resources" ["l"="-0.125,15.279"]
 "apache/iotdb-docs" ["l"="-0.105,15.278"]
 "thulab/tsfile" ["l"="-0.091,15.245"]
-"fff-rs/juice" ["l"="-8.242,-4.434"]
-"kvark/copyless" ["l"="-9.814,-6.309"]
+"fff-rs/juice" ["l"="-8.242,-4.434", "c"=407]
+"kvark/copyless" ["l"="-9.814,-6.309", "c"=5]
 "Diggsey/query_interface" ["l"="-0.723,14.972"]
-"charles-r-earp/autograph" ["l"="-8.32,-4.458"]
-"cda-group/arcon" ["l"="45.274,25.349"]
+"charles-r-earp/autograph" ["l"="-8.32,-4.458", "c"=407]
+"cda-group/arcon" ["l"="45.274,25.349", "c"=68]
 "snowlift/trino-storage" ["l"="-0.055,14.804"]
 "nineinchnick/trino-rest" ["l"="-0.03,14.793"]
-"trinodb/trino-gateway" ["l"="-0.05,14.834"]
 "nineinchnick/trino-plugin-archetype" ["l"="-0.016,14.794"]
 "starburstdata/dbt-trino" ["l"="-0.085,14.793"]
 "mtnygard/datoms-say-what" ["l"="-0.896,15.276"]
@@ -1945,112 +2540,139 @@ digraph G {
 "ray-project/ray_beam_runner" ["l"="-0.249,14.683"]
 "trinodb/tempto" ["l"="-0.041,14.85"]
 "herbie-fp/rival" ["l"="-0.722,15.47"]
+"pola-rs/polars" ["l"="44.645,20.67", "c"=20]
+"apache/age" ["l"="3.695,13.466", "c"=850]
+"ploomber/ploomber" ["l"="45.257,25.982", "c"=68]
 "infinyon/fluvio" ["l"="-0.49,15.086"]
-"apache/iggy" ["l"="-10.134,-6.419"]
-"quickwit-oss/quickwit" ["l"="-0.393,15.137"]
-"tracel-ai/burn" ["l"="-8.427,-4.429"]
-"spinframework/spin" ["l"="-8.104,-7.9"]
-"bytedance/monoio" ["l"="-10.104,-6.257"]
-"quickwit-oss/tantivy" ["l"="-10.004,-6.013"]
-"keploy/keploy" ["l"="15.429,-9.865"]
-"hyperium/tonic" ["l"="-9.933,-6.021"]
+"apache/iggy" ["l"="-10.134,-6.419", "c"=5]
+"tracel-ai/burn" ["l"="-8.427,-4.429", "c"=407]
+"spinframework/spin" ["l"="-8.104,-7.9", "c"=691]
+"bytedance/monoio" ["l"="-10.104,-6.257", "c"=5]
+"quickwit-oss/tantivy" ["l"="-10.004,-6.013", "c"=5]
+"keploy/keploy" ["l"="15.429,-9.865", "c"=198]
+"hyperium/tonic" ["l"="-9.933,-6.021", "c"=5]
+"provectus/kafka-ui" ["l"="-0.659,17.124", "c"=398]
 "fastn-stack/fastn" ["l"="-0.24,15.086"]
 "getdozer/dozer" ["l"="-0.353,15.016"]
 "fastn-stack/fastn-template" ["l"="-0.201,15.097"]
-"fastn-stack/fastn.com" ["l"="-14.87,-10.659"]
+"fastn-stack/fastn.com" ["l"="-14.87,-10.659", "c"=34]
 "kulfi-project/kulfi" ["l"="-0.183,15.12"]
 "fastn-stack/fastn-old" ["l"="-0.213,15.112"]
-"delta-io/delta-rs" ["l"="-0.401,14.897"]
-"apache/iceberg-rust" ["l"="-0.36,14.904"]
+"cmu-db/bustub" ["l"="0.548,13.892", "c"=115]
+"apache/calcite" ["l"="-2.682,14.818", "c"=43]
+"brimdata/super" ["l"="-42.512,-31.237", "c"=1107]
+"vortex-data/vortex" ["l"="-0.315,14.946"]
+"scylladb/scylladb" ["l"="-19.658,-24.918", "c"=10]
+"apache/parquet-format" ["l"="-2.648,14.805", "c"=43]
+"sqlancer/sqlancer" ["l"="1.924,13.522", "c"=376]
+"pingcap/awesome-database-learning" ["l"="0.619,13.883", "c"=115]
+"delta-io/connectors" ["l"="-1.669,17.538", "c"=1046]
 "delta-io/kafka-delta-ingest" ["l"="-0.327,14.863"]
-"delta-io/delta" ["l"="-2.713,14.82"]
+"apache/iceberg-rust" ["l"="-0.36,14.904"]
 "Eventual-Inc/Daft" ["l"="-0.373,14.881"]
-"lancedb/lance" ["l"="-0.447,14.924"]
-"unitycatalog/unitycatalog" ["l"="-0.295,14.926"]
 "apache/datafusion-comet" ["l"="-0.373,14.918"]
 "delta-io/delta-kernel-rs" ["l"="-0.366,14.845"]
-"delta-io/delta-sharing" ["l"="-1.665,17.562"]
-"TobikoData/sqlmesh" ["l"="-0.528,15.96"]
-"sfu-db/connector-x" ["l"="-0.449,14.875"]
-"frankmcsherry/blog" ["l"="50.757,1.077"]
-"crossbeam-rs/crossbeam" ["l"="-9.92,-6.133"]
-"rayon-rs/rayon" ["l"="-9.835,-6.033"]
+"delta-io/delta-sharing" ["l"="-1.665,17.562", "c"=1046]
+"TobikoData/sqlmesh" ["l"="-0.528,15.96", "c"=268]
+"yapengye/NetPlier" ["l"="-41.709,-36.198", "c"=91]
+"XZ-X/PEM" ["l"="-1.303,14.759"]
+"lana-k/sqliteviz" ["l"="5.135,-8.842", "c"=0]
+"facebookincubator/Glean" ["l"="-20.526,-20.19", "c"=118]
+"memgraph/memgraph" ["l"="9.547,-3.727", "c"=382]
+"pgcentralfoundation/pgrx" ["l"="3.828,13.601", "c"=850]
+"frankmcsherry/blog" ["l"="50.757,1.077", "c"=750]
+"crossbeam-rs/crossbeam" ["l"="-9.92,-6.133", "c"=5]
+"rayon-rs/rayon" ["l"="-9.835,-6.033", "c"=5]
 "trinodb/trino-python-client" ["l"="-0.077,14.824"]
 "starburstdata/metabase-driver" ["l"="-0.061,14.786"]
 "trinodb/trino-go-client" ["l"="-0.033,14.82"]
-"trinodb/charts" ["l"="-0.103,14.789"]
-"lyft/presto-gateway" ["l"="-2.391,14.809"]
 "trinodb/trino.io" ["l"="-0.054,14.867"]
 "dungdm93/sqlalchemy-trino" ["l"="-0.072,14.853"]
 "databricks/iceberg-rest-image" ["l"="-0.162,14.842"]
 "apache/iceberg-python" ["l"="-0.245,14.864"]
 "CreativeDataEU/PowerBITrinoConnector" ["l"="-0.011,14.813"]
+"linkedin/coral" ["l"="-2.485,14.89", "c"=43]
+"orchest/orchest" ["l"="45.2,26.015", "c"=68]
+"rusty-celery/rusty-celery" ["l"="-10.348,-6.307", "c"=5]
 "ConduitIO/conduit" ["l"="-0.325,14.7"]
 "memiiso/debezium-server-iceberg" ["l"="-0.217,14.807"]
-"meltano/meltano" ["l"="-0.542,15.98"]
+"meltano/meltano" ["l"="-0.542,15.98", "c"=268]
 "bytewax/bytewax" ["l"="-0.452,14.845"]
 "JanKaul/iceberg-rust" ["l"="-0.352,14.834"]
-"airbytehq/PyAirbyte" ["l"="44.746,16.124"]
-"fugue-project/fugue" ["l"="-0.414,14.815"]
-"ibis-project/ibis" ["l"="-0.598,15.874"]
-"unionai-oss/pandera" ["l"="45.28,26.057"]
-"whylabs/whylogs" ["l"="4.097,13.612"]
-"Nixtla/statsforecast" ["l"="45.4,26.325"]
-"ploomber/ploomber" ["l"="45.257,25.982"]
-"narwhals-dev/narwhals" ["l"="43.621,26.313"]
+"airbytehq/PyAirbyte" ["l"="44.746,16.124", "c"=213]
+"apache/kvrocks" ["l"="0.861,14.152", "c"=115]
+"tikv/raft-engine" ["l"="0.639,14.116", "c"=115]
+"icelake-io/icelake" ["l"="-0.32,14.845"]
+"ibis-project/ibis" ["l"="-0.598,15.874", "c"=268]
+"whylabs/whylogs" ["l"="4.097,13.612", "c"=850]
+"Nixtla/statsforecast" ["l"="45.4,26.325", "c"=68]
+"narwhals-dev/narwhals" ["l"="43.621,26.313", "c"=1179]
 "marsupialtail/quokka" ["l"="-0.388,14.841"]
-"sodadata/soda-core" ["l"="-0.588,16.025"]
-"fugue-project/tutorials" ["l"="-44.546,6.597"]
-"tobymao/sqlglot" ["l"="-0.616,15.933"]
-"scikit-learn-contrib/MAPIE" ["l"="45.278,26.362"]
+"sodadata/soda-core" ["l"="-0.588,16.025", "c"=268]
+"fugue-project/tutorials" ["l"="-44.546,6.597", "c"=1131]
+"tobymao/sqlglot" ["l"="-0.616,15.933", "c"=268]
+"scikit-learn-contrib/MAPIE" ["l"="45.278,26.362", "c"=68]
+"NVIDIA/spark-rapids" ["l"="-2.398,14.886", "c"=43]
+"kwai/blaze" ["l"="-0.428,14.941"]
+"cluster-apps-on-docker/spark-standalone-cluster-on-docker" ["l"="-2.954,17.119", "c"=455]
+"databricks/docker-spark-iceberg" ["l"="-0.163,14.818"]
 "frankmcsherry/timely-dataflow" ["l"="-0.688,15.101"]
-"apache/horaedb" ["l"="-0.411,15.041"]
-"influxdata/flux" ["l"="4.431,-7.016"]
-"DataDog/glommio" ["l"="-10.076,-6.354"]
+"datenlord/datenlord" ["l"="0.581,14.067", "c"=115]
+"tikv/minitrace-rust" ["l"="-10.216,-6.512", "c"=5]
+"PoloDB/PoloDB" ["l"="-10.287,-6.347", "c"=5]
+"tonbo-io/tonbo" ["l"="-0.33,14.977"]
+"treeverse/lakeFS" ["l"="-0.694,16.093", "c"=268]
+"projectnessie/nessie" ["l"="-0.275,14.867"]
+"apache/parquet-java" ["l"="-2.662,14.786", "c"=43]
+"facebook/CacheLib" ["l"="0.887,14.104", "c"=115]
+"rust-rocksdb/rust-rocksdb" ["l"="-10.163,-6.284", "c"=5]
+"DataDog/glommio" ["l"="-10.076,-6.354", "c"=5]
+"shuttle-hq/synth" ["l"="-10.114,-6.327", "c"=5]
+"redpanda-data/console" ["l"="-0.701,17.097", "c"=398]
+"cwida/fsst" ["l"="1.823,13.39", "c"=376]
 "trinodb/trino-the-definitive-guide" ["l"="-0.04,14.741"]
 "bitsondatadev/trino-getting-started" ["l"="-0.091,14.763"]
 "PennyAndWang/presto-the-definitive-guide-zh" ["l"="-0.011,14.722"]
-"projectnessie/nessie" ["l"="-0.275,14.867"]
 "apache/polaris" ["l"="-0.261,14.901"]
 "lakekeeper/lakekeeper" ["l"="-0.309,14.879"]
-"apache/iceberg" ["l"="-2.686,14.864"]
-"linkedin/coral" ["l"="-2.485,14.89"]
 "apache/incubator-xtable" ["l"="-0.284,14.892"]
-"OpenLineage/OpenLineage" ["l"="-2.41,14.766"]
-"apache/gravitino" ["l"="-2.568,14.952"]
-"apache/amoro" ["l"="-2.525,14.996"]
-"databricks/docker-spark-iceberg" ["l"="-0.163,14.818"]
-"kuzudb/kuzu" ["l"="-0.549,14.879"]
-"cozodb/cozo" ["l"="-24.01,-20.476"]
-"memgraph/memgraph" ["l"="9.547,-3.727"]
-"apache/age" ["l"="3.695,13.466"]
-"oxigraph/oxigraph" ["l"="-1.827,-42.013"]
-"lancedb/lancedb" ["l"="40.692,0.686"]
-"FalkorDB/FalkorDB" ["l"="9.475,-3.696"]
-"dpapathanasiou/simple-graph" ["l"="5.322,-8.853"]
+"OpenLineage/OpenLineage" ["l"="-2.41,14.766", "c"=43]
+"apache/gravitino" ["l"="-2.568,14.952", "c"=43]
+"apache/amoro" ["l"="-2.525,14.996", "c"=43]
+"rust-lang/portable-simd" ["l"="-9.808,-6.419", "c"=5]
+"skytable/skytable" ["l"="-10.268,-6.309", "c"=5]
+"cozodb/cozo" ["l"="-24.01,-20.476", "c"=75]
+"oxigraph/oxigraph" ["l"="-1.827,-42.013", "c"=456]
+"lancedb/lancedb" ["l"="40.692,0.686", "c"=7]
+"FalkorDB/FalkorDB" ["l"="9.475,-3.696", "c"=382]
+"dpapathanasiou/simple-graph" ["l"="5.322,-8.853", "c"=0]
 "kuzudb/explorer" ["l"="-0.595,14.852"]
-"chdb-io/chdb" ["l"="-0.488,14.919"]
-"TuGraph-family/tugraph-db" ["l"="51.648,15.298"]
+"TuGraph-family/tugraph-db" ["l"="51.648,15.298", "c"=1231]
 "cwida/duckpgq-extension" ["l"="-0.627,14.807"]
-"huachaohuang/ekv" ["l"="0.595,14.083"]
-"pingcap/tiflash" ["l"="0.619,14.122"]
-"datenlord/datenlord" ["l"="0.581,14.067"]
-"zhihu/rucene" ["l"="-10.082,-6.129"]
-"apache/incubator-gluten" ["l"="-2.532,14.908"]
+"huachaohuang/ekv" ["l"="0.595,14.083", "c"=115]
+"tokio-rs/io-uring" ["l"="-10.09,-6.368", "c"=5]
+"doctorn/micro-mitten" ["l"="-21.946,-20.36", "c"=447]
+"datapane/datapane" ["l"="-0.575,15.725", "c"=268]
+"RoaringBitmap/roaring-rs" ["l"="-10.127,-6.546", "c"=5]
+"tonbo-io/fusio" ["l"="-0.315,15.008"]
+"apache/incubator-gluten" ["l"="-2.532,14.908", "c"=43]
 "rlink-rs/rlink-rs" ["l"="-0.517,14.922"]
-"kwai/blaze" ["l"="-0.428,14.941"]
+"scalala/Scalala" ["l"="-3.348,19.798", "c"=709]
+"stanford-ppl/Delite" ["l"="-0.882,14.786"]
 "cylondata/twister2" ["l"="-0.693,14.812"]
 "jorgecarleitao/datafusion-python" ["l"="-0.53,14.787"]
 "UWHustle/hustle" ["l"="-0.68,14.833"]
+"moka-rs/moka" ["l"="-10.078,-6.406", "c"=5]
+"traildb/traildb" ["l"="4.412,-7.559", "c"=0]
 "oap-project/raydp" ["l"="-0.286,14.69"]
 "ray-project/deltacat" ["l"="-0.265,14.739"]
 "datafusion-contrib/ray-sql" ["l"="-0.366,14.807"]
-"ray-project/kuberay" ["l"="45.237,25.683"]
+"ray-project/kuberay" ["l"="45.237,25.683", "c"=68]
 "intel/llm-on-ray" ["l"="-0.269,14.63"]
 "ray-project/enhancements" ["l"="-0.261,14.697"]
-"NVIDIA/spark-rapids" ["l"="-2.398,14.886"]
-"ray-project/ray-llm" ["l"="38.924,-0.567"]
+"ray-project/ray-llm" ["l"="38.924,-0.567", "c"=39]
 "vilterp/datalog-ts" ["l"="-0.737,15.254"]
+"satanson/cpp_etudes" ["l"="0.498,14.041", "c"=115]
 "Megum1/DFST" ["l"="-1.335,14.726"]
 "Gwinhen/BackdoorVault" ["l"="-1.351,14.708"]
 "Megum1/ODSCAN" ["l"="-1.315,14.748"]
@@ -2061,6 +2683,7 @@ digraph G {
 "uwplse/szalinski" ["l"="-0.614,15.412"]
 "datafusion-contrib/datafusion-substrait" ["l"="-0.527,14.73"]
 "andygrove/substrait-rs" ["l"="-0.533,14.755"]
+"mgaudet/CompilerJobs" ["l"="-22.171,-18.601", "c"=763]
 "yihozhang/egraph-sqlite" ["l"="-0.61,15.433"]
 "epfldata/dblab" ["l"="-0.9,14.833"]
 "epfldata/sc-public" ["l"="-0.921,14.848"]
@@ -2069,86 +2692,97 @@ digraph G {
 "meroxa/turbine-py" ["l"="-0.325,14.627"]
 "lovromazgon/impromptu" ["l"="-0.332,14.608"]
 "ConduitIO/conduit-connector-postgres" ["l"="-0.346,14.608"]
-"neondatabase/neon" ["l"="-0.398,15.206"]
-"surrealdb/surrealdb" ["l"="-9.359,-5.831"]
-"drizzle-team/drizzle-orm" ["l"="-3.983,-30.004"]
-"tursodatabase/libsql" ["l"="-9.196,-5.852"]
-"openobserve/openobserve" ["l"="15.867,-10.114"]
-"honojs/hono" ["l"="-4.045,-29.977"]
-"duckdb/duckdb" ["l"="-19.45,-24.831"]
-"paradedb/paradedb" ["l"="3.815,13.535"]
-"trpc/trpc" ["l"="-3.957,-29.841"]
-"vercel/turborepo" ["l"="-4.038,-29.805"]
-"meilisearch/meilisearch" ["l"="15.459,-10.453"]
-"scylladb/scylladb" ["l"="-19.658,-24.918"]
-"scylladb/seastar" ["l"="-19.736,-25.436"]
-"redpanda-data/connect" ["l"="4.119,-8.987"]
-"dragonflydb/dragonfly" ["l"="-19.519,-24.771"]
-"redpanda-data/console" ["l"="-0.701,17.097"]
-"nats-io/nats-server" ["l"="4.024,-9.015"]
-"temporalio/temporal" ["l"="4.045,-9.288"]
-"tikv/tikv" ["l"="-19.76,-24.861"]
-"StarRocks/starrocks" ["l"="-2.733,14.959"]
-"databendlabs/openraft" ["l"="0.586,14.035"]
-"apache/doris" ["l"="-2.713,14.912"]
+"madsim-rs/madsim" ["l"="0.598,14.016", "c"=115]
+"surrealdb/surrealdb" ["l"="-9.359,-5.831", "c"=5]
+"drizzle-team/drizzle-orm" ["l"="-3.983,-30.004", "c"=4]
+"tursodatabase/libsql" ["l"="-9.196,-5.852", "c"=5]
+"openobserve/openobserve" ["l"="15.867,-10.114", "c"=198]
+"honojs/hono" ["l"="-4.045,-29.977", "c"=4]
+"paradedb/paradedb" ["l"="3.815,13.535", "c"=850]
+"trpc/trpc" ["l"="-3.957,-29.841", "c"=4]
+"vercel/turborepo" ["l"="-4.038,-29.805", "c"=4]
+"meilisearch/meilisearch" ["l"="15.459,-10.453", "c"=198]
+"graphistry/pygraphistry" ["l"="51.426,15.92", "c"=1152]
+"wala/WALA" ["l"="36.152,-0.82", "c"=1188]
+"bytebase/bytebase" ["l"="15.767,-9.987", "c"=198]
+"juicedata/juicefs" ["l"="-19.899,-24.788", "c"=10]
+"scylladb/seastar" ["l"="-19.736,-25.436", "c"=10]
+"redpanda-data/connect" ["l"="4.119,-8.987", "c"=0]
+"dragonflydb/dragonfly" ["l"="-19.519,-24.771", "c"=10]
+"nats-io/nats-server" ["l"="4.024,-9.015", "c"=0]
+"temporalio/temporal" ["l"="4.045,-9.288", "c"=0]
+"featureform/featureform" ["l"="45.247,25.899", "c"=68]
+"inngest/inngest" ["l"="16.213,-10.107", "c"=198]
+"restatedev/restate" ["l"="-0.301,15.041"]
+"nhost/nhost" ["l"="15.667,-10.224", "c"=198]
+"tikv/tikv" ["l"="-19.76,-24.861", "c"=10]
+"StarRocks/starrocks" ["l"="-2.733,14.959", "c"=43]
+"databendlabs/openraft" ["l"="0.586,14.035", "c"=115]
+"apache/doris" ["l"="-2.713,14.912", "c"=43]
+"oceanbase/oceanbase" ["l"="0.646,14.009", "c"=115]
 "andygrove/how-query-engines-work" ["l"="-0.417,14.872"]
 "apache/datafusion-ray" ["l"="-0.354,14.864"]
-"sundy-li/strawboat" ["l"="0.399,14.213"]
-"apache/arrow" ["l"="-2.865,14.862"]
+"sundy-li/strawboat" ["l"="0.399,14.213", "c"=115]
+"benbjohnson/litestream" ["l"="4.715,-8.844", "c"=0]
+"apache/arrow" ["l"="-2.865,14.862", "c"=43]
 "ZhangZhuoSJTU/StochFuzz" ["l"="-1.243,14.768"]
-"XZ-X/PEM" ["l"="-1.303,14.759"]
 "qingkaishi/netlifter" ["l"="-1.179,14.779"]
-"apache/celeborn" ["l"="-2.551,14.937"]
-"apache/calcite" ["l"="-2.682,14.818"]
-"apache/paimon" ["l"="-2.597,14.986"]
-"cmu-db/noisepage" ["l"="1.846,13.489"]
-"valeriansaliou/sonic" ["l"="-9.846,-5.748"]
-"toshi-search/Toshi" ["l"="-10.075,-6.082"]
-"launchbadge/sqlx" ["l"="-9.837,-5.966"]
-"delta-io/connectors" ["l"="-1.669,17.538"]
+"apache/celeborn" ["l"="-2.551,14.937", "c"=43]
+"apache/paimon" ["l"="-2.597,14.986", "c"=43]
+"launchbadge/sqlx" ["l"="-9.837,-5.966", "c"=5]
 "databricks/iceberg-kafka-connect" ["l"="-0.214,14.831"]
 "Mause/duckdb-deltatable-extension" ["l"="-0.393,14.798"]
 "spiceai/spiceai" ["l"="-0.363,14.942"]
 "GlareDB/glaredb" ["l"="-0.344,14.914"]
-"roadwy/RIP" ["l"="-47.184,-32.506"]
-"bruin-data/ingestr" ["l"="3.854,12.946"]
-"restatedev/restate" ["l"="-0.301,15.041"]
+"roadwy/RIP" ["l"="-47.184,-32.506", "c"=41]
+"bruin-data/ingestr" ["l"="3.854,12.946", "c"=1258]
 "lakehq/sail" ["l"="-0.342,14.893"]
 "datafusion-contrib/datafusion-federation" ["l"="-0.332,14.83"]
-"roapi/roapi" ["l"="-0.404,14.964"]
-"PRQL/prql" ["l"="-0.677,15.804"]
+"duckdb/duckdb-wasm" ["l"="-0.384,15.852", "c"=268]
+"PRQL/prql" ["l"="-0.677,15.804", "c"=268]
+"apache/orc" ["l"="-2.581,14.785", "c"=43]
+"faust-streaming/faust" ["l"="44.648,21.143", "c"=20]
+"quixio/quix-streams" ["l"="-0.51,14.833"]
+"live-codes/livecodes" ["l"="31.17,-28.832", "c"=570]
+"multiprocessio/datastation" ["l"="-13.417,-6.534", "c"=86]
+"linkedin/venice" ["l"="-0.133,16.032", "c"=268]
+"linkedin/openhouse" ["l"="-0.249,14.84"]
+"malloydata/malloy" ["l"="-0.539,15.931", "c"=268]
+"rsmpi/rsmpi" ["l"="-8.213,-4.359", "c"=407]
+"newca12/awesome-rust-formalized-reasoning" ["l"="-9.628,-6.654", "c"=5]
 "jamii/imp" ["l"="-0.713,15.118"]
 "ekzhang/percival" ["l"="-0.72,15.191"]
 "hydro-project/hydro" ["l"="-0.458,15.105"]
-"tonbo-io/tonbo" ["l"="-0.33,14.977"]
-"haraldng/omnipaxos" ["l"="0.625,14.171"]
-"dragostis/chili" ["l"="-10.082,-6.617"]
-"tonbo-io/fusio" ["l"="-0.315,15.008"]
-"foyer-rs/foyer" ["l"="-0.305,14.981"]
+"haraldng/omnipaxos" ["l"="0.625,14.171", "c"=115]
+"dragostis/chili" ["l"="-10.082,-6.617", "c"=5]
 "exograph/exograph" ["l"="-0.479,15.209"]
-"tokio-rs/turmoil" ["l"="-10.051,-6.6"]
+"tokio-rs/turmoil" ["l"="-10.051,-6.6", "c"=5]
+"awslabs/python-deequ" ["l"="-1.716,17.546", "c"=1046]
+"tcdi/plrust" ["l"="3.798,13.699", "c"=850]
+"hora-search/hora" ["l"="-8.412,-4.23", "c"=407]
+"joaoh82/rust_sqlite" ["l"="-10.231,-6.396", "c"=5]
+"airbnb/chronon" ["l"="-0.126,16.077", "c"=268]
 "cloudfuse-io/buzz-rust" ["l"="-0.563,14.738"]
-"apache/uniffle" ["l"="-2.547,14.963"]
-"alibaba/fluss" ["l"="-2.566,15.042"]
+"apache/uniffle" ["l"="-2.547,14.963", "c"=43]
+"alibaba/fluss" ["l"="-2.566,15.042", "c"=43]
 "stackabletech/kafka-operator" ["l"="0.282,14.82"]
 "stackabletech/hive-operator" ["l"="0.255,14.805"]
 "stackabletech/druid-operator" ["l"="0.264,14.807"]
+"ApsaraDB/PolarDB-for-PostgreSQL" ["l"="0.708,14.09", "c"=115]
+"EvgSkv/logica" ["l"="-2.025,-41.389", "c"=963]
+"google/mangle" ["l"="-0.69,15.243"]
 "luc-tielen/llvm-codegen" ["l"="-0.79,15.249"]
 "y-scope/clp" ["l"="-0.227,14.953"]
-"THUBear-wjy/LogGrep" ["l"="52.158,14.883"]
+"THUBear-wjy/LogGrep" ["l"="52.158,14.883", "c"=1096]
 "y-scope/clp-ffi-py" ["l"="-0.193,14.966"]
 "y-scope/yscope-log-viewer" ["l"="-0.181,14.96"]
-"THUBear-wjy/LogReducer" ["l"="52.134,14.882"]
+"THUBear-wjy/LogReducer" ["l"="52.134,14.882", "c"=1096]
 "y-scope/clp-ffi-java" ["l"="-0.193,14.952"]
-"slatedb/slatedb" ["l"="-0.337,14.955"]
-"vortex-data/vortex" ["l"="-0.315,14.946"]
-"cwida/fsst" ["l"="1.823,13.39"]
 "facebookincubator/nimble" ["l"="-0.327,14.922"]
-"apache/arrow-adbc" ["l"="-0.448,14.805"]
+"tuplex/tuplex" ["l"="5.771,-19.64", "c"=96]
 "apache/datafusion-python" ["l"="-0.39,14.861"]
-"sfu-db/dataprep" ["l"="45.237,26.208"]
-"dlt-hub/dlt" ["l"="-0.565,15.95"]
-"abstractqqq/polars_ds_extension" ["l"="43.621,26.342"]
+"dlt-hub/dlt" ["l"="-0.565,15.95", "c"=268]
+"abstractqqq/polars_ds_extension" ["l"="43.621,26.342", "c"=1179]
 "stackabletech/operator-rs" ["l"="0.258,14.789"]
 "stackabletech/airflow-operator" ["l"="0.237,14.789"]
 "stackabletech/nifi-operator" ["l"="0.242,14.805"]
@@ -2157,34 +2791,40 @@ digraph G {
 "stackabletech/hbase-operator" ["l"="0.254,14.812"]
 "stackabletech/zookeeper-operator" ["l"="0.266,14.816"]
 "stackabletech/superset-operator" ["l"="0.247,14.797"]
+"lnx-search/lnx" ["l"="-10.255,-6.267", "c"=5]
+"slingdata-io/sling-cli" ["l"="-0.406,15.953", "c"=268]
 "jorgecarleitao/parquet2" ["l"="-0.492,14.8"]
-"duckdb/duckdb-rs" ["l"="-0.422,14.846"]
 "timvw/qv" ["l"="-0.431,14.774"]
 "jorgecarleitao/arrowdantic" ["l"="-0.51,14.779"]
 "chmp/serde_arrow" ["l"="-0.478,14.831"]
 "DataEngineeringLabs/arrow2-convert" ["l"="-0.481,14.778"]
 "DataEngineeringLabs/orc-format" ["l"="-0.505,14.763"]
-"datafusion-contrib/datafusion-dolomite" ["l"="0.3,14.399"]
+"datafusion-contrib/datafusion-dolomite" ["l"="0.3,14.399", "c"=115]
 "jorgecarleitao/json-deserializer" ["l"="-0.51,14.72"]
+"ABZ-Aaron/cheat-sheets" ["l"="38.53,3.109", "c"=54]
+"jacopotagliabue/you-dont-need-a-bigger-boat" ["l"="44.944,25.683", "c"=68]
+"modelfoxdotdev/modelfox" ["l"="-8.312,-4.483", "c"=407]
+"ai-eks/OpenClubhouse" ["l"="-9.142,14.084", "c"=105]
+"LineaLabs/lineapy" ["l"="40.628,-2.6", "c"=146]
+"alitrack/duckdb_fdw" ["l"="3.658,13.515", "c"=850]
 "apache/iotdb-client-go" ["l"="-0.129,15.301"]
 "iotdb-lab/iotdb-rs" ["l"="-0.119,15.316"]
 "iotdb-lab/iotdb-client-rs" ["l"="-0.135,15.324"]
-"duckdb/duckdb-delta" ["l"="-0.233,15.883"]
+"duckdb/duckdb-delta" ["l"="-0.233,15.883", "c"=268]
 "Mause/duckdb-extension-framework" ["l"="-0.413,14.786"]
-"duckdb/community-extensions" ["l"="-0.262,15.851"]
+"duckdb/community-extensions" ["l"="-0.262,15.851", "c"=268]
 "arempter/hive-metastore-docker" ["l"="-0.075,14.709"]
 "bitsondatadev/hive-metastore" ["l"="-0.126,14.782"]
-"zsvoboda/ngods-stocks" ["l"="-0.347,15.943"]
+"zsvoboda/ngods-stocks" ["l"="-0.347,15.943", "c"=268]
 "joshuarobinson/trino-on-k8s" ["l"="-0.054,14.719"]
+"ravichugh/sketch-n-sketch" ["l"="-5.059,-41.84", "c"=333]
 "getindata/kafka-connect-iceberg-sink" ["l"="-0.193,14.807"]
-"linkedin/openhouse" ["l"="-0.249,14.84"]
 "PurduePAML/Machine-Learning-Security-Seminar" ["l"="-1.194,14.764"]
 "iotdb-lab/iotdb-cli" ["l"="-0.102,15.325"]
 "JulianFeinauer/iotdb-operator" ["l"="-0.111,15.334"]
 "loveher147/iotdb-admin" ["l"="-0.074,15.317"]
 "amzn/amazon-ray" ["l"="-0.224,14.694"]
 "awslabs/s3-tables-catalog" ["l"="-0.208,14.752"]
-"varadaio/presto-workload-analyzer" ["l"="-0.004,14.838"]
 "jefflester/minitrino" ["l"="0.034,14.837"]
 "stackabletech/trino-opa-authorizer" ["l"="0.021,14.852"]
 "valeriano-manassero/helm-charts" ["l"="-0.112,14.75"]
@@ -2199,50 +2839,81 @@ digraph G {
 "stackabletech/opa-operator" ["l"="0.184,14.815"]
 "makenew/serverless-benthos" ["l"="-0.147,14.552"]
 "razor-x/blobpack" ["l"="-0.135,14.554"]
-"deepseek-ai/smallpond" ["l"="39.168,-0.625"]
-"skyzh/mini-lsm" ["l"="0.52,13.917"]
+"skyzh/type-exercise-in-rust" ["l"="0.5,13.99", "c"=115]
+"RoaringBitmap/CRoaring" ["l"="-19.502,-26.098", "c"=10]
+"fractalide/fractalide" ["l"="-10.032,-5.748", "c"=5]
+"rxin/db-readings" ["l"="0.676,13.823", "c"=115]
+"FerretDB/FerretDB" ["l"="4.392,-8.942", "c"=0]
+"dstackai/dstack" ["l"="-44.343,6.582", "c"=1131]
+"readysettech/readyset" ["l"="3.856,13.564", "c"=850]
+"pytorch/torcharrow" ["l"="21.555,14.161", "c"=267]
+"ibis-project/ibis-substrait" ["l"="-0.485,14.857"]
+"multiprocessio/dsq" ["l"="-13.439,-6.605", "c"=86]
+"electric-sql/electric" ["l"="-6.376,-28.381", "c"=793]
+"Qovery/Replibyte" ["l"="3.869,13.656", "c"=850]
+"ekzhang/sshx" ["l"="-13.296,-7.21", "c"=86]
+"deepseek-ai/smallpond" ["l"="39.168,-0.625", "c"=39]
+"skyplane-project/skyplane" ["l"="7.338,-10.951", "c"=515]
+"superstreamlabs/memphis" ["l"="4.071,-9.354", "c"=0]
+"postgresml/postgresml" ["l"="3.858,13.499", "c"=850]
+"ydb-platform/ydb" ["l"="-44.617,26.624", "c"=1289]
+"ClickHouse/clickhouse-connect" ["l"="1.248,-9.342", "c"=1144]
+"skyzh/mini-lsm" ["l"="0.52,13.917", "c"=115]
+"google/rune" ["l"="-22.658,-21.665", "c"=474]
+"facebook/buck2" ["l"="-9.774,-6.305", "c"=5]
+"mito-ds/mito" ["l"="40.598,-2.568", "c"=146]
+"airlift/airlift" ["l"="-2.367,14.826", "c"=43]
 "stackabletech/spark-k8s-operator" ["l"="0.244,14.822"]
 "stackabletech/trino-operator" ["l"="0.227,14.804"]
-"cmu-db/optd-original" ["l"="0.479,14.041"]
+"cmu-db/optd-original" ["l"="0.479,14.041", "c"=115]
 "splitgraph/seafowl" ["l"="-0.342,14.852"]
-"rpbouman/huey" ["l"="-0.323,15.877"]
+"rpbouman/huey" ["l"="-0.323,15.877", "c"=268]
 "tansu-io/tansu" ["l"="-0.293,14.835"]
 "apache/paimon-rust" ["l"="-0.308,14.9"]
 "apache/hudi-rs" ["l"="-0.34,14.875"]
-"quixio/quix-streams" ["l"="-0.51,14.833"]
-"faust-streaming/faust" ["l"="44.648,21.143"]
-"ag2ai/faststream" ["l"="44.849,21.156"]
-"bytewax/awesome-public-real-time-datasets" ["l"="0.271,16.512"]
-"python-streamz/streamz" ["l"="43.796,23.843"]
-"eakmanrq/sqlframe" ["l"="-0.324,15.927"]
-"ibis-project/ibis-substrait" ["l"="-0.485,14.857"]
+"run-house/runhouse" ["l"="21.468,14.193", "c"=267]
+"pingcap/ossinsight" ["l"="0.548,14.174", "c"=115]
+"ag2ai/faststream" ["l"="44.849,21.156", "c"=20]
+"bytewax/awesome-public-real-time-datasets" ["l"="0.271,16.512", "c"=1000]
+"python-streamz/streamz" ["l"="43.796,23.843", "c"=95]
+"eakmanrq/sqlframe" ["l"="-0.324,15.927", "c"=268]
+"uptrace/uptrace" ["l"="9.947,-11.436", "c"=834]
+"xline-kv/Xline" ["l"="0.555,14.071", "c"=115]
 "vmware-archive/sql-to-dbsp-compiler" ["l"="-0.568,15.148"]
-"cnosdb/cnosdb" ["l"="-54.84,-13.758"]
-"wubx/rust-in-databend" ["l"="0.542,14.039"]
+"stanford-futuredata/macrobase" ["l"="-2.688,17.376", "c"=455]
+"polarsignals/frostdb" ["l"="4.328,-8.366", "c"=0]
+"jamsocket/plane" ["l"="-6.501,-28.37", "c"=793]
+"cloudwego/volo" ["l"="-10.253,-6.083", "c"=5]
+"avinassh/py-caskdb" ["l"="0.575,13.767", "c"=115]
+"cnosdb/cnosdb" ["l"="-54.84,-13.758", "c"=219]
+"wubx/rust-in-databend" ["l"="0.542,14.039", "c"=115]
+"duckdb/duckdb-postgres" ["l"="-0.243,15.84", "c"=268]
 "datafusion-contrib/datafusion-dft" ["l"="-0.405,14.77"]
-"uwheel/datafusion-uwheel" ["l"="45.275,25.265"]
+"uwheel/datafusion-uwheel" ["l"="45.275,25.265", "c"=68]
+"greenplum-db/gporca" ["l"="1.872,13.487", "c"=376]
 "voltrondata/spark-substrait-gateway" ["l"="-0.533,14.841"]
 "substrait-io/substrait-rs" ["l"="-0.56,14.697"]
 "datafusion-contrib/bdt" ["l"="-0.422,14.722"]
 "PRQL/prql-query" ["l"="-0.449,14.701"]
 "langston-barrett/treeedb" ["l"="-0.702,15.289"]
-"GaloisInc/yapall" ["l"="-21.928,-18.466"]
-"GaloisInc/cclyzerpp" ["l"="-21.967,-18.489"]
+"GaloisInc/yapall" ["l"="-21.928,-18.466", "c"=763]
+"GaloisInc/cclyzerpp" ["l"="-21.967,-18.489", "c"=763]
 "yonyou-tsdb/iotdb-toolkit" ["l"="-0.094,15.343"]
 "yonyou-tsdb/tsfile-mt" ["l"="-0.078,15.343"]
 "egraphs-good/eggcc" ["l"="-0.618,15.325"]
 "egraphs-good/egglog-python" ["l"="-0.668,15.319"]
+"Xuanwo/backon" ["l"="-10.147,-6.505", "c"=5]
 "apache/arrow-nanoarrow" ["l"="-0.461,14.749"]
-"voltrondata/sqlflite" ["l"="-0.246,15.92"]
-"pacman82/arrow-odbc-py" ["l"="-10.873,-6.079"]
+"voltrondata/sqlflite" ["l"="-0.246,15.92", "c"=268]
+"pacman82/arrow-odbc-py" ["l"="-10.873,-6.079", "c"=5]
 "apache/arrow-flight-sql-postgresql" ["l"="-0.502,14.686"]
-"pacman82/arrow-odbc" ["l"="-10.832,-6.088"]
+"pacman82/arrow-odbc" ["l"="-10.832,-6.088", "c"=5]
 "apache/arrow-cookbook" ["l"="-0.476,14.734"]
 "voltrondata/superset-sqlalchemy-adbc-flight-sql-poc" ["l"="-0.464,14.768"]
 "meroxa/turbine-js" ["l"="-0.326,14.649"]
 "ConduitIO/bwlimit" ["l"="-0.313,14.65"]
-"apache/iceberg-go" ["l"="4.357,-8.138"]
-"gabledata/recap" ["l"="-0.249,16.009"]
+"apache/iceberg-go" ["l"="4.357,-8.138", "c"=0]
+"gabledata/recap" ["l"="-0.249,16.009", "c"=268]
 "danthelion/trino-minio-iceberg-example" ["l"="-0.13,14.809"]
 "mrn-aglic/apache-iceberg-data-exploration" ["l"="-0.133,14.829"]
 "developer-advocacy-dremio/quick-guides-from-dremio" ["l"="-0.146,14.779"]
@@ -2250,8 +2921,8 @@ digraph G {
 "benthosdev/vscode-benthos" ["l"="-0.105,14.513"]
 "Shimmur/benthos-stream-ui" ["l"="-0.123,14.506"]
 "nwf/dyna" ["l"="-0.591,15.256"]
-"wilbowma/cur" ["l"="-22.069,-20.27"]
-"RedPRL/redtt" ["l"="-22.031,-20.139"]
+"wilbowma/cur" ["l"="-22.069,-20.27", "c"=447]
+"RedPRL/redtt" ["l"="-22.031,-20.139", "c"=447]
 "datafusion-contrib/datafusion-objectstore-s3" ["l"="-0.532,14.682"]
 "stackabletech/hdfs-operator" ["l"="0.258,14.826"]
 "quixio/quix-samples" ["l"="-0.566,14.805"]
@@ -2264,167 +2935,225 @@ digraph G {
 "DataEngineeringLabs/arrow-format" ["l"="-0.544,14.719"]
 "datafusion-contrib/datafusion-objectstore-hdfs" ["l"="-0.506,14.587"]
 "thierry-martinez/pyast" ["l"="-0.152,14.53"]
+"google/zerocopy" ["l"="-9.987,-6.392", "c"=5]
+"ByConity/ByConity" ["l"="51.226,2.716", "c"=85]
+"awslabs/mountpoint-s3" ["l"="8.193,-8.542", "c"=14]
+"citusdata/citus" ["l"="2.616,13.667", "c"=257]
+"ray-project/ray-educational-materials" ["l"="60.095,23.645", "c"=235]
 "exoshuffle/cloudsort" ["l"="-0.37,14.735"]
-"icelake-io/icelake" ["l"="-0.32,14.845"]
-"live-codes/livecodes" ["l"="31.17,-28.832"]
-"Eqraatech/Software-Engineering-In-Arabic" ["l"="31.232,-28.841"]
-"inngest/inngest" ["l"="16.213,-10.107"]
-"hatchet-dev/hatchet" ["l"="16.196,-10.328"]
-"pgmq/pgmq" ["l"="3.727,13.533"]
-"xataio/pgroll" ["l"="3.766,13.597"]
+"griddb/griddb" ["l"="-19.65,-24.757", "c"=10]
+"alibaba/havenask" ["l"="-18.58,-28.332", "c"=62]
+"Eqraatech/Software-Engineering-In-Arabic" ["l"="31.232,-28.841", "c"=570]
+"hatchet-dev/hatchet" ["l"="16.196,-10.328", "c"=198]
+"pgmq/pgmq" ["l"="3.727,13.533", "c"=850]
+"xataio/pgroll" ["l"="3.766,13.597", "c"=850]
 "restatedev/examples" ["l"="-0.24,15.057"]
-"DevOpsHiveHQ/dynamic-devops-roadmap" ["l"="31.239,-28.865"]
+"DevOpsHiveHQ/dynamic-devops-roadmap" ["l"="31.239,-28.865", "c"=570]
 "apache/iotdb-tsfile-viewer" ["l"="-0.088,15.325"]
+"apache/kudu" ["l"="-2.635,14.708", "c"=43]
+"infiniflow/infinity" ["l"="40.691,0.241", "c"=7]
+"stoneatom/stonedb" ["l"="0.646,14.094", "c"=115]
+"xorbitsai/xorbits" ["l"="45.138,25.975", "c"=68]
+"facebook/sapling" ["l"="-9.717,-6.151", "c"=5]
 "GiantSeaweed/DECREE" ["l"="-1.324,14.768"]
 "Megum1/LOTUS" ["l"="-1.324,14.789"]
 "tailcallhq/tailcall" ["l"="-0.316,15.126"]
 "antinomyhq/forge" ["l"="-0.272,15.185"]
 "tailcallhq/graphql-benchmarks" ["l"="-0.274,15.154"]
 "tailcallhq/tailcallhq.github.io" ["l"="-0.291,15.17"]
-"zio/zio-http" ["l"="-2.522,18.992"]
-"wundergraph/cosmo" ["l"="4.036,-9.768"]
-"golemcloud/golem" ["l"="-2.502,19.141"]
-"devflowinc/trieve" ["l"="-44.4,6.551"]
+"zio/zio-http" ["l"="-2.522,18.992", "c"=38]
+"wundergraph/cosmo" ["l"="4.036,-9.768", "c"=0]
+"golemcloud/golem" ["l"="-2.502,19.141", "c"=38]
+"devflowinc/trieve" ["l"="-44.4,6.551", "c"=1131]
 "parseablehq/parseable" ["l"="-0.357,15.044"]
-"shuttle-hq/shuttle" ["l"="-9.705,-5.982"]
-"algora-io/tv" ["l"="4.387,14.917"]
-"metrico/gigapipe" ["l"="1.245,-9.224"]
+"shuttle-hq/shuttle" ["l"="-9.705,-5.982", "c"=5]
+"algora-io/tv" ["l"="4.387,14.917", "c"=44]
+"pola-rs/pyo3-polars" ["l"="43.608,26.363", "c"=1179]
+"scallop-lang/scallop" ["l"="-1.762,-41.504", "c"=963]
+"hydradatabase/columnar" ["l"="3.784,13.54", "c"=850]
+"warpstreamlabs/bento" ["l"="-0.292,14.786"]
+"dilshod/xlsx2csv" ["l"="-13.478,-6.495", "c"=86]
+"coroot/coroot" ["l"="7.733,-9.059", "c"=14]
+"ploomber/jupysql" ["l"="-0.332,15.829", "c"=268]
 "parseablehq/console" ["l"="-0.33,15.081"]
+"blue-yonder/turbodbc" ["l"="43.884,23.903", "c"=95]
+"ubicloud/ubicloud" ["l"="16.115,-10.309", "c"=198]
 "datafusion-contrib/datafusion-table-providers" ["l"="-0.346,14.818"]
-"xorq-labs/xorq" ["l"="-0.236,15.952"]
-"pola-rs/pyo3-polars" ["l"="43.608,26.363"]
-"ClickHouse/JSONBench" ["l"="1.068,-9.103"]
-"ByConity/ByConity" ["l"="51.226,2.716"]
-"ClickHouse/clickhouse-presentations" ["l"="1.17,-9.276"]
-"stoneatom/stonedb" ["l"="0.646,14.094"]
-"sqlancer/sqlancer" ["l"="1.924,13.522"]
-"cmu-db/benchbase" ["l"="1.846,13.518"]
-"kangkaisen/olap-performance" ["l"="0.51,14.076"]
-"azat/chdig" ["l"="1.045,-9.055"]
-"plast-lab/doop" ["l"="36.166,-0.802"]
+"xorq-labs/xorq" ["l"="-0.236,15.952", "c"=268]
+"dflemstr/rq" ["l"="-13.466,-6.568", "c"=86]
+"ClickHouse/JSONBench" ["l"="1.068,-9.103", "c"=1144]
+"ClickHouse/clickhouse-presentations" ["l"="1.17,-9.276", "c"=1144]
+"cmu-db/benchbase" ["l"="1.846,13.518", "c"=376]
+"kangkaisen/olap-performance" ["l"="0.51,14.076", "c"=115]
+"azat/chdig" ["l"="1.045,-9.055", "c"=1144]
+"plast-lab/doop" ["l"="36.166,-0.802", "c"=1188]
 "oracle/souffle" ["l"="-0.597,15.295"]
-"GrammaTech/ddisasm" ["l"="-41.418,-36.088"]
-"SVF-tools/SVF" ["l"="-22.087,-18.503"]
-"wala/WALA" ["l"="36.152,-0.82"]
-"secure-software-engineering/phasar" ["l"="-22.077,-18.53"]
-"google/mangle" ["l"="-0.69,15.243"]
-"google/rune" ["l"="-22.658,-21.665"]
-"EvgSkv/logica" ["l"="-2.025,-41.389"]
-"SHI-Labs/Versatile-Diffusion" ["l"="33.385,31.435"]
-"ichiban/prolog" ["l"="-1.981,-41.426"]
-"trealla-prolog/trealla" ["l"="-1.981,-41.456"]
-"ironmansoftware/psmsi" ["l"="-48.079,7.252"]
-"Paulescu/real-time-data-pipelines-in-python" ["l"="48.049,26.675"]
-"fmind/mlops-python-package" ["l"="41.272,0.666"]
+"SVF-tools/SVF" ["l"="-22.087,-18.503", "c"=763]
+"secure-software-engineering/phasar" ["l"="-22.077,-18.53", "c"=763]
+"cwida/FastLanes" ["l"="1.875,13.356", "c"=376]
+"SHI-Labs/Versatile-Diffusion" ["l"="33.385,31.435", "c"=109]
+"ichiban/prolog" ["l"="-1.981,-41.426", "c"=963]
+"trealla-prolog/trealla" ["l"="-1.981,-41.456", "c"=963]
+"ironmansoftware/psmsi" ["l"="-48.079,7.252", "c"=311]
+"apache/impala" ["l"="-2.661,14.686", "c"=43]
+"Paulescu/real-time-data-pipelines-in-python" ["l"="48.049,26.675", "c"=323]
+"fmind/mlops-python-package" ["l"="41.272,0.666", "c"=7]
 "quixio/simple-kafka-python" ["l"="-0.559,14.785"]
 "timeplus-io/proton" ["l"="-0.49,14.967"]
-"google/temporian" ["l"="43.696,26.246"]
+"google/temporian" ["l"="43.696,26.246", "c"=1179]
 "InfluxCommunity/quix-anomaly-detection-example" ["l"="-0.539,14.808"]
-"taskiq-python/taskiq" ["l"="44.812,21.18"]
+"taskiq-python/taskiq" ["l"="44.812,21.18", "c"=20]
 "epfldata/squid" ["l"="-0.923,14.8"]
-"to-ithaca/libra" ["l"="-2.843,18.868"]
+"to-ithaca/libra" ["l"="-2.843,18.868", "c"=38]
+"MrPowers/mack" ["l"="-1.714,17.581", "c"=1046]
+"unitycatalog/unitycatalog-rs" ["l"="-0.38,14.779"]
+"losfair/mvsqlite" ["l"="5.148,-8.707", "c"=0]
+"jwills/buenavista" ["l"="-0.294,15.928", "c"=268]
+"approximatelabs/sketch" ["l"="45.122,26.269", "c"=68]
+"traas-stack/holoinsight" ["l"="8.171,-9.888", "c"=14]
 "0x0L/pgeon" ["l"="-0.524,14.652"]
 "kevinjqliu/iceberg-rest-catalog" ["l"="-0.211,14.856"]
+"eventql/eventql" ["l"="4.432,-7.593", "c"=0]
 "andygrove/qpml" ["l"="-0.424,14.675"]
 "oliverdaff/iceberg-rs" ["l"="-0.318,14.809"]
 "nooberfsh/prusto" ["l"="-0.323,14.767"]
-"vvvvalvalval/datomock" ["l"="-0.875,15.213"]
 "adriangb/pgpq" ["l"="-0.533,14.62"]
 "kristianmandrup/datascript-tutorial" ["l"="-0.948,15.279"]
 "Provisdom/spectomic" ["l"="-0.911,15.246"]
-"metasoarous/datsync" ["l"="-23.708,-20.113"]
+"metasoarous/datsync" ["l"="-23.708,-20.113", "c"=75]
 "petablox/petablox" ["l"="-0.577,15.324"]
 "exoshuffle/raysort" ["l"="-0.371,14.701"]
 "cwida/duckdb-pgq" ["l"="-0.665,14.774"]
 "gropaul/hostFS" ["l"="-0.688,14.755"]
 "Generative-Program-Analysis/GenSym" ["l"="-1.07,14.8"]
 "zmw12306/ParDiff" ["l"="-1.14,14.786"]
+"bloomberg/blazingmq" ["l"="-19.609,-26.302", "c"=10]
+"SynaLinks/HybridAGI" ["l"="41.242,0.798", "c"=7]
+"tursodatabase/limbo" ["l"="-9.462,-5.959", "c"=5]
 "scala/collection-strawman" ["l"="-0.964,14.776"]
-"fast/fastrace" ["l"="-10.168,-6.506"]
-"madsim-rs/madsim" ["l"="0.598,14.016"]
-"compio-rs/compio" ["l"="-10.161,-6.419"]
+"fast/fastrace" ["l"="-10.168,-6.506", "c"=5]
+"compio-rs/compio" ["l"="-10.161,-6.419", "c"=5]
 "XiangpengHao/liquid-cache" ["l"="-0.269,14.837"]
-"xline-kv/Xline" ["l"="0.555,14.071"]
-"fjall-rs/fjall" ["l"="-10.157,-6.548"]
-"risinglightdb/sqllogictest-rs" ["l"="0.507,14.093"]
-"dermesser/leveldb-rs" ["l"="0.548,14.097"]
-"duckdb/duckdb-iceberg" ["l"="-0.284,15.89"]
-"duckdb/dbt-duckdb" ["l"="-0.426,15.942"]
-"duckdb/pg_duckdb" ["l"="3.751,13.547"]
-"OpenGithubs/github-newly-rank" ["l"="-53.001,-11.916"]
-"PeerDB-io/peerdb" ["l"="3.77,13.569"]
-"hydradatabase/columnar" ["l"="3.784,13.54"]
-"bestaone/sams" ["l"="-52.943,-11.995"]
-"rilldata/rill" ["l"="-0.487,15.908"]
-"rust-ndarray/ndarray" ["l"="-8.281,-4.387"]
-"heavyai/heavydb" ["l"="1.852,13.548"]
-"cmu-db/peloton" ["l"="1.808,13.463"]
-"greenplum-db/gporca" ["l"="1.872,13.487"]
-"apache/hudi" ["l"="-2.655,14.877"]
+"fjall-rs/fjall" ["l"="-10.157,-6.548", "c"=5]
+"risinglightdb/sqllogictest-rs" ["l"="0.507,14.093", "c"=115]
+"confluentinc/ksql" ["l"="-0.612,16.93", "c"=398]
+"gorules/zen" ["l"="-0.836,-28.075", "c"=12]
+"duckdb/duckdb-iceberg" ["l"="-0.284,15.89", "c"=268]
+"duckdb/dbt-duckdb" ["l"="-0.426,15.942", "c"=268]
+"hyperdxio/hyperdx" ["l"="16.035,-10.259", "c"=198]
+"PeerDB-io/peerdb" ["l"="3.77,13.569", "c"=850]
+"pyspark-ai/pyspark-ai" ["l"="-1.69,17.587", "c"=1046]
+"cyclops-ui/cyclops" ["l"="15.618,-9.886", "c"=198]
+"duckdb/pg_duckdb" ["l"="3.751,13.547", "c"=850]
+"OpenGithubs/github-newly-rank" ["l"="-53.001,-11.916", "c"=400]
+"bestaone/sams" ["l"="-52.943,-11.995", "c"=400]
+"rilldata/rill" ["l"="-0.487,15.908", "c"=268]
+"tensorchord/pgvecto.rs" ["l"="3.93,13.419", "c"=850]
+"superfly/corrosion" ["l"="5.314,-8.696", "c"=0]
+"dataflint/spark" ["l"="-2.394,14.733", "c"=43]
+"rust-ndarray/ndarray" ["l"="-8.281,-4.387", "c"=407]
+"heavyai/heavydb" ["l"="1.852,13.548", "c"=376]
+"cmu-db/peloton" ["l"="1.808,13.463", "c"=376]
+"rivet-gg/rivet" ["l"="41.161,1.386", "c"=7]
+"Brendan-Kirtlan/Video-Encode" ["l"="48.471,29.984", "c"=191]
+"apache/hudi" ["l"="-2.655,14.877", "c"=43]
 "jimpil/duratom" ["l"="-0.958,15.241"]
-"probably-nothing-labs/denormalized" ["l"="3.62,13.728"]
+"probably-nothing-labs/denormalized" ["l"="3.62,13.728", "c"=850]
+"DAGWorks-Inc/hamilton" ["l"="41.119,1.137", "c"=7]
 "Wuerike/kafka-iceberg-streaming" ["l"="-0.183,14.833"]
 "projectnessie/iceberg-catalog-migrator" ["l"="-0.179,14.785"]
-"unitycatalog/unitycatalog-rs" ["l"="-0.38,14.779"]
-"delta-incubator/delta-dotnet" ["l"="-34.813,-0.461"]
-"apache/arrow-rs-object-store" ["l"="40.425,25.41"]
-"duckdb/uc_catalog" ["l"="-0.194,15.878"]
+"delta-incubator/delta-dotnet" ["l"="-34.813,-0.461", "c"=8]
+"apache/arrow-rs-object-store" ["l"="40.425,25.41", "c"=420]
+"duckdb/uc_catalog" ["l"="-0.194,15.878", "c"=268]
+"uwdb/Cosette" ["l"="-22.081,-19.425", "c"=392]
+"ddotta/awesome-polars" ["l"="43.639,26.333", "c"=1179]
+"scratchdata/scratchdata" ["l"="3.89,13.539", "c"=850]
+"rockset/rocksdb-cloud" ["l"="0.727,14.107", "c"=115]
+"apache/paimon-webui" ["l"="-2.573,15.142", "c"=43]
+"cedar-policy/cedar" ["l"="45.122,25.081", "c"=68]
+"lancedb/vectordb-recipes" ["l"="40.893,0.987", "c"=7]
+"crabml/crabml" ["l"="-8.876,-4.449", "c"=407]
+"rewrite-bigdata-in-rust/RBIR" ["l"="-0.306,14.86"]
+"KipData/KiteSQL" ["l"="0.521,14.063", "c"=115]
 "MaibornWolff/SecObserve" ["l"="0.291,14.804"]
 "stackabletech/trino-lb" ["l"="0.074,14.824"]
 "DragonPomelo/trino-opa-example" ["l"="-0.02,14.86"]
+"maxi-k/btrblocks" ["l"="1.876,13.38", "c"=376]
 "apache/iotdb-client-csharp" ["l"="-0.091,15.295"]
 "apache/iotdb-extras" ["l"="-0.091,15.284"]
+"cbh123/narrator" ["l"="40.668,0.391", "c"=7]
+"disler/multi-agent-postgres-data-analytics" ["l"="41.316,0.639", "c"=7]
+"electric-sql/pglite" ["l"="-4.143,-30.186", "c"=4]
+"get-convex/convex-backend" ["l"="-3.791,-30.303", "c"=4]
+"fireducks-dev/fireducks" ["l"="43.7,26.289", "c"=1179]
+"siglens/siglens" ["l"="4.414,-9.064", "c"=0]
 "KaiyuanZh/OrthogLinearBackdoor" ["l"="-1.31,14.771"]
+"Alluxio/alluxio" ["l"="-2.726,14.775", "c"=43]
 "Megum1/UNIT" ["l"="-1.331,14.804"]
-"maxi-k/btrblocks" ["l"="1.876,13.38"]
-"cwida/FastLanes" ["l"="1.875,13.356"]
-"spiraldb/fsst" ["l"="1.892,13.326"]
+"spiraldb/fsst" ["l"="1.892,13.326", "c"=376]
 "Netflix/maestro" ["l"="-0.23,15.004"]
-"taubyte/tau" ["l"="16.281,-10.352"]
-"quarylabs/quary" ["l"="3.779,12.993"]
-"mesop-dev/mesop" ["l"="40.915,0.396"]
-"ssoready/ssoready" ["l"="3.763,12.914"]
-"kestra-io/kestra" ["l"="15.832,-10.248"]
-"AutoMQ/automq" ["l"="-55.366,-13.118"]
-"rewrite-bigdata-in-rust/RBIR" ["l"="-0.306,14.86"]
-"sunchao/parquet-rs" ["l"="-2.809,14.712"]
-"AdamNiederer/faster" ["l"="-9.844,-6.171"]
-"vmware-archive/haret" ["l"="-8.036,-6.758"]
-"crossbeam-rs/crossbeam-channel" ["l"="-7.942,-6.622"]
-"tower-rs/tower-grpc" ["l"="-10.022,-6.03"]
-"magnet/metered-rs" ["l"="-23.38,6.322"]
-"tokio-rs/tokio-proto" ["l"="-9.971,-5.942"]
-"sjrusso8/spark-connect-rs" ["l"="-0.281,14.815"]
+"taubyte/tau" ["l"="16.281,-10.352", "c"=198]
+"quarylabs/quary" ["l"="3.779,12.993", "c"=1258]
+"mesop-dev/mesop" ["l"="40.915,0.396", "c"=7]
+"ssoready/ssoready" ["l"="3.763,12.914", "c"=1258]
+"kestra-io/kestra" ["l"="15.832,-10.248", "c"=198]
+"AutoMQ/automq" ["l"="-55.366,-13.118", "c"=910]
 "arrow-udf/arrow-udf" ["l"="-0.576,14.676"]
+"cloudflare/foundations" ["l"="-10.161,-6.478", "c"=5]
+"xephonhq/awesome-time-series-database" ["l"="44.989,24.191", "c"=166]
+"superlinked/superlinked" ["l"="41.236,0.737", "c"=7]
+"lonng/db-papers" ["l"="0.273,14.137", "c"=115]
+"vega/falcon" ["l"="-5.351,-41.669", "c"=333]
+"SeekStorm/SeekStorm" ["l"="16.497,-10.328", "c"=198]
+"sunchao/parquet-rs" ["l"="-2.809,14.712", "c"=43]
+"AdamNiederer/faster" ["l"="-9.844,-6.171", "c"=5]
+"vmware-archive/haret" ["l"="-8.036,-6.758", "c"=1034]
+"crossbeam-rs/crossbeam-channel" ["l"="-7.942,-6.622", "c"=1034]
+"tower-rs/tower-grpc" ["l"="-10.022,-6.03", "c"=5]
+"magnet/metered-rs" ["l"="-23.38,6.322", "c"=1054]
+"tokio-rs/tokio-proto" ["l"="-9.971,-5.942", "c"=5]
+"turbolytics/sql-flow" ["l"="-0.267,15.874", "c"=268]
+"sjrusso8/spark-connect-rs" ["l"="-0.281,14.815"]
 "risingwavelabs/jsonbb" ["l"="-0.595,14.652"]
+"ziansu/codeart" ["l"="-43.556,-36.902", "c"=306]
+"TileDB-Inc/TileDB" ["l"="41.329,37.873", "c"=141]
+"raga-ai-hub/RagaAI-Catalyst" ["l"="15.298,-9.623", "c"=198]
 "ZhangZhuoSJTU/LINT" ["l"="-1.354,14.772"]
 "SolidShen/BAIT" ["l"="-1.337,14.763"]
 "MarkGHX/BiScope" ["l"="-1.301,14.73"]
-"warpstreamlabs/bento" ["l"="-0.292,14.786"]
+"cloudflare/trie-hard" ["l"="-10.212,-6.643", "c"=5]
+"Mooncake-Labs/pg_mooncake" ["l"="3.761,13.525", "c"=850]
+"wesql/wesql" ["l"="-10.758,-5.648", "c"=5]
+"drasi-project/drasi-platform" ["l"="40.289,5.866", "c"=1506]
+"BemiHQ/BemiDB" ["l"="3.71,13.55", "c"=850]
+"LucaCanali/sparkMeasure" ["l"="-2.432,14.794", "c"=43]
+"hyrise/hyrise" ["l"="1.836,13.464", "c"=376]
 "redpanda-data/benthos" ["l"="-0.238,14.716"]
-"sequinstream/sequin" ["l"="4.361,14.91"]
-"EchoVault/SugarDB" ["l"="4.888,-9.478"]
-"wesql/wesql" ["l"="-10.758,-5.648"]
-"polarsignals/frostdb" ["l"="4.328,-8.366"]
-"turbolytics/sql-flow" ["l"="-0.267,15.874"]
-"KipData/KiteSQL" ["l"="0.521,14.063"]
-"systemxlabs/bustubx" ["l"="0.486,14.097"]
+"sequinstream/sequin" ["l"="4.361,14.91", "c"=44]
+"EchoVault/SugarDB" ["l"="4.888,-9.478", "c"=0]
+"orbitinghail/graft" ["l"="-6.448,-28.281", "c"=793]
+"spacejam/tla-rust" ["l"="0.866,13.644", "c"=115]
+"systemxlabs/bustubx" ["l"="0.486,14.097", "c"=115]
+"fast/logforth" ["l"="-0.17,14.911"]
 "awslabs/analytics-accelerator-s3" ["l"="-0.181,14.723"]
-"stanford-ppl/Delite" ["l"="-0.882,14.786"]
 "scala-lms/tutorials" ["l"="-0.852,14.797"]
 "stanford-ppl/hyperdsl" ["l"="-0.897,14.752"]
 "TiarkRompf/scala-virtualized" ["l"="-0.91,14.77"]
 "stanford-ppl/Forge" ["l"="-0.875,14.759"]
 "XiangpengHao/parquet-viewer" ["l"="-0.242,14.789"]
-"moonrepo/schematic" ["l"="-9.116,-6.313"]
+"moonrepo/schematic" ["l"="-9.116,-6.313", "c"=5]
 "tisonkun/morax" ["l"="-0.208,14.909"]
-"fast/logforth" ["l"="-0.17,14.911"]
 "cratesland/cronexpr" ["l"="-0.105,14.938"]
 "scopedb/percas" ["l"="-0.145,14.926"]
 "PurCL/ProSec" ["l"="-1.368,14.746"]
+"geldata/gel" ["l"="44.385,20.813", "c"=20]
+"manticoresoftware/manticoresearch" ["l"="15.487,-10.192", "c"=198]
 "XiangpengHao/seen" ["l"="-0.244,14.809"]
 "arnabd88/Satire" ["l"="-0.682,15.488"]
 "malyzajko/rosa" ["l"="-0.7,15.489"]
+"pgdogdev/pgdog" ["l"="3.739,13.569", "c"=850]
+"skyzh/tiny-llm" ["l"="0.462,14.019", "c"=115]
 "DSC-SPIDAL/twister2" ["l"="-0.717,14.801"]
+"arkflow-rs/arkflow" ["l"="-12.789,-7.161", "c"=86]
 "apache/iotdb-mcp-server" ["l"="-0.054,15.293"]
 }

@@ -1,4 +1,5 @@
 digraph G {
+"efficient/cuckoofilter" -> "mavam/libbf" ["e"=1]
 "Martinsos/edlib" -> "mengyao/Complete-Striped-Smith-Waterman-Library"
 "Martinsos/edlib" -> "lh3/ksw2"
 "Martinsos/edlib" -> "smarco/WFA2-lib"
@@ -14,7 +15,12 @@ digraph G {
 "Martinsos/edlib" -> "lh3/kmer-cnt"
 "Martinsos/edlib" -> "lh3/minigraph" ["e"=1]
 "Martinsos/edlib" -> "GFA-spec/GFA-spec" ["e"=1]
+"chaimleib/intervaltree" -> "rust-bio/rust-htslib" ["e"=1]
+"chaimleib/intervaltree" -> "vsbuffalo/granges" ["e"=1]
+"chaimleib/intervaltree" -> "ekg/intervaltree" ["e"=1]
+"chaimleib/intervaltree" -> "zaeleus/noodles" ["e"=1]
 "lh3/cgranges" -> "lh3/ksw2"
+"apache/datasketches-cpp" -> "dnbaker/sketch" ["e"=1]
 "zaeleus/noodles" -> "rust-bio/rust-htslib"
 "zaeleus/noodles" -> "rust-bio/rust-bio" ["e"=1]
 "zaeleus/noodles" -> "onecodex/needletail"
@@ -31,19 +37,27 @@ digraph G {
 "zaeleus/noodles" -> "vsbuffalo/scidataflow"
 "zaeleus/noodles" -> "jguhlin/minimap2-rs"
 "10XGenomics/rust-boomphf" -> "10XGenomics/rust-debruijn"
+"tlk00/BitMagic" -> "rizkg/BBHash" ["e"=1]
+"tlk00/BitMagic" -> "bingmann/cobs" ["e"=1]
+"tlk00/BitMagic" -> "jermp/data_compression_course" ["e"=1]
+"grailbio/reflow" -> "onecodex/needletail" ["e"=1]
+"rossanoventurini/CompetitiveProgramming" -> "rossanoventurini/qwt" ["e"=1]
 "yangao07/abPOA" -> "rvaser/spoa"
 "yangao07/abPOA" -> "lh3/gwfa"
 "yangao07/abPOA" -> "smarco/WFA2-lib"
 "yangao07/abPOA" -> "broadinstitute/poasta"
+"wangyi-fudan/wyhash" -> "rizkg/BBHash" ["e"=1]
 "mavam/libbf" -> "ArashPartow/bloom"
 "mavam/libbf" -> "dnbaker/sketch"
 "mavam/libbf" -> "rizkg/BBHash"
 "mavam/libbf" -> "bitly/dablooms"
 "mavam/libbf" -> "rob-p/FQFeeder"
 "robertaboukhalil/fastq.bio" -> "biowasm/aioli"
+"seq-lang/seq" -> "smarco/WFA-paper" ["e"=1]
 "ArashPartow/bloom" -> "mavam/libbf"
 "ArashPartow/bloom" -> "bitly/dablooms"
 "ArashPartow/bloom" -> "jvirkki/libbloom"
+"pyranges/pyranges" -> "jackh726/bigtools" ["e"=1]
 "jackh726/bigtools" -> "vsbuffalo/granges"
 "jackh726/bigtools" -> "quinlan-lab/bedder-rs"
 "jackh726/bigtools" -> "noamteyssier/bedrs"
@@ -55,6 +69,12 @@ digraph G {
 "IvanPinezhaninov/IntervalTree" -> "5cript/interval-tree"
 "lh3/pre-pe" -> "rob-p/BooM"
 "bingmann/cobs" -> "rob-p/BooM"
+"rust-bio/rust-bio" -> "zaeleus/noodles" ["e"=1]
+"rust-bio/rust-bio" -> "rust-bio/rust-htslib" ["e"=1]
+"rust-bio/rust-bio" -> "rust-bio/rust-bio-tools" ["e"=1]
+"rust-bio/rust-bio" -> "seqan/seqan" ["e"=1]
+"rust-bio/rust-bio" -> "seqan/seqan3" ["e"=1]
+"rust-bio/rust-bio" -> "onecodex/needletail" ["e"=1]
 "bacpop/ggCaller" -> "bacpop/ska.rust"
 "bacpop/ggCaller" -> "mbhall88/lrge"
 "COMBINE-lab/alevin-fry" -> "COMBINE-lab/simpleaf"
@@ -89,6 +109,7 @@ digraph G {
 "ekg/intervaltree" -> "IvanPinezhaninov/IntervalTree"
 "ekg/intervaltree" -> "5cript/interval-tree"
 "ekg/intervaltree" -> "lh3/cgranges"
+"pachterlab/ffq" -> "vsbuffalo/scidataflow" ["e"=1]
 "NVlabs/nvbio" -> "NVlabs/nvbio-gpl"
 "NVlabs/nvbio" -> "seqan/seqan"
 "NVlabs/nvbio" -> "lh3/ksw2"
@@ -107,6 +128,8 @@ digraph G {
 "Daniel-Liu-c0deb0t/cute-nucleotides" -> "Kmer-File-Format/kff-reference"
 "GATB/bcalm" -> "GATB/gatb-core"
 "GATB/bcalm" -> "COMBINE-lab/cuttlefish"
+"flekschas/jupyter-scatter" -> "jackh726/bigtools" ["e"=1]
+"bebop/poly" -> "biowasm/biowasm" ["e"=1]
 "wahern/phf" -> "ot/emphf"
 "biowasm/biowasm" -> "biowasm/aioli"
 "biowasm/biowasm" -> "onecodex/needletail"
@@ -116,6 +139,7 @@ digraph G {
 "GATB/gatb-core" -> "GATB/bcalm"
 "lh3/biofast" -> "onecodex/needletail"
 "lh3/biofast" -> "Daniel-Liu-c0deb0t/block-aligner"
+"armon/bloomd" -> "bitly/dablooms" ["e"=1]
 "google/deepconsensus" -> "google/best"
 "google/deepconsensus" -> "kishwarshafin/pepper" ["e"=1]
 "google/deepconsensus" -> "weberlab-hhu/Helixer" ["e"=1]
@@ -128,6 +152,7 @@ digraph G {
 "jeffdaily/parasail" -> "ocxtal/libgaba"
 "jeffdaily/parasail" -> "Martinsos/edlib"
 "jeffdaily/parasail" -> "walaj/SeqLib"
+"thrill/thrill" -> "bingmann/cobs" ["e"=1]
 "jermp/pthash" -> "roberto-trani/mphf_benchmark"
 "jermp/pthash" -> "jermp/lphash"
 "jermp/pthash" -> "jermp/sshash"
@@ -175,6 +200,8 @@ digraph G {
 "jltsiren/gbwt-rs" -> "jltsiren/simple-sds"
 "mrvollger/rustybam" -> "noamteyssier/bedrs"
 "mrvollger/rustybam" -> "noamteyssier/gia"
+"sstadick/gzp" -> "jguhlin/minimap2-rs" ["e"=1]
+"Homebrew/homebrew-science" -> "seqan/seqan" ["e"=1]
 "RagnarGrootKoerkamp/astar-pairwise-aligner" -> "Daniel-Liu-c0deb0t/block-aligner"
 "RagnarGrootKoerkamp/astar-pairwise-aligner" -> "broadinstitute/poasta"
 "RagnarGrootKoerkamp/astar-pairwise-aligner" -> "smarco/WFA2-lib"
@@ -182,6 +209,7 @@ digraph G {
 "RagnarGrootKoerkamp/astar-pairwise-aligner" -> "rchikhi/rust-alignbench"
 "RagnarGrootKoerkamp/astar-pairwise-aligner" -> "ekimb/rust-mdbg"
 "RagnarGrootKoerkamp/astar-pairwise-aligner" -> "pairwise-alignment/pa-bench"
+"RILAB/statements" -> "vsbuffalo/scidataflow" ["e"=1]
 "kampersanda/sucds" -> "rossanoventurini/qwt"
 "refresh-bio/agc" -> "GeneDx/pgr-tk" ["e"=1]
 "jermp/sshash" -> "jermp/lphash"
@@ -198,6 +226,7 @@ digraph G {
 "rizkg/BBHash" -> "lh3/ksw2"
 "rizkg/BBHash" -> "jermp/lphash"
 "rizkg/BBHash" -> "splatlab/squeakr"
+"insitro/redun" -> "zaeleus/noodles" ["e"=1]
 "jermp/data_compression_course" -> "ot/succinct" ["e"=1]
 "jermp/data_compression_course" -> "Daniel-Liu-c0deb0t/block-aligner"
 "jermp/data_compression_course" -> "jermp/fulgor"
@@ -211,6 +240,7 @@ digraph G {
 "jermp/data_compression_course" -> "jltsiren/simple-sds"
 "jermp/data_compression_course" -> "jermp/sshash"
 "jermp/data_compression_course" -> "kampersanda/sucds"
+"SnellerInc/sneller" -> "jermp/data_compression_course" ["e"=1]
 "lh3/gwfa" -> "lh3/lv89"
 "lh3/lv89" -> "lh3/gwfa"
 "lh3/lv89" -> "jeizenga/wfalm"
@@ -242,12 +272,15 @@ digraph G {
 "rvaser/spoa" -> "lh3/ksw2"
 "jermp/lphash" -> "Malfoy/Blight"
 "tlemane/kmindex" -> "tlemane/kmtricks"
+"mxmlnkn/rapidgzip" -> "smarco/WFA2-lib" ["e"=1]
+"mxmlnkn/rapidgzip" -> "jermp/fulgor" ["e"=1]
 "google/best" -> "ekimb/mapquik"
 "noamteyssier/bedrs" -> "noamteyssier/gia"
 "noamteyssier/bedrs" -> "mrvollger/rustybam"
 "bacpop/ska.rust" -> "bacpop/ggCaller"
 "rchikhi/rust-alignbench" -> "broadinstitute/poasta"
 "pairwise-alignment/pa-bench" -> "rchikhi/rust-alignbench"
+"ogxd/gxhash" -> "vigna/epserde-rs" ["e"=1]
 "seqan/seqan" -> "seqan/seqan3"
 "seqan/seqan" -> "walaj/SeqLib"
 "seqan/seqan" -> "pezmaster31/bamtools" ["e"=1]
@@ -263,6 +296,8 @@ digraph G {
 "seqan/seqan" -> "rvaser/spoa"
 "seqan/seqan" -> "rust-bio/rust-bio" ["e"=1]
 "seqan/seqan" -> "bedops/bedops" ["e"=1]
+"pezmaster31/bamtools" -> "walaj/SeqLib" ["e"=1]
+"pezmaster31/bamtools" -> "seqan/seqan" ["e"=1]
 "quinlan-lab/bedder-rs" -> "vsbuffalo/granges"
 "quinlan-lab/bedder-rs" -> "jackh726/bigtools"
 "quinlan-lab/bedder-rs" -> "noamteyssier/bedrs"
@@ -270,6 +305,8 @@ digraph G {
 "iqbal-lab-org/pandora" -> "bacpop/ggCaller"
 "vigna/sux-rs" -> "vigna/webgraph-rs"
 "vigna/sux-rs" -> "rossanoventurini/qwt"
+"open2c/bioframe" -> "jackh726/bigtools" ["e"=1]
+"open2c/bioframe" -> "abdenlab/oxbow" ["e"=1]
 "vsbuffalo/scidataflow" -> "vsbuffalo/granges"
 "rust-bio/rust-bio-tools" -> "rust-bio/rust-htslib"
 "rust-bio/rust-bio-tools" -> "rust-bio/rust-bio-types"
@@ -284,6 +321,7 @@ digraph G {
 "rob-p/FQFeeder" -> "medvedevgroup/UST"
 "thegenemyers/FASTGA" -> "lh3/ropebwt3"
 "thegenemyers/FASTGA" -> "mbhall88/lrge"
+"walaj/svaba" -> "walaj/SeqLib" ["e"=1]
 "aseyboldt/fastq-rs" -> "markschl/seq_io"
 "ratschlab/metagraph" -> "Malfoy/Blight"
 "Cydhra/vers" -> "kampersanda/sucds"
@@ -299,13 +337,21 @@ digraph G {
 "vigna/epserde-rs" -> "RagnarGrootKoerkamp/PtrHash"
 "noamteyssier/gia" -> "noamteyssier/bedrs"
 "noamteyssier/gia" -> "mrvollger/rustybam"
+"Baqend/Orestes-Bloomfilter" -> "bitly/dablooms" ["e"=1]
 "imartayan/CBL" -> "OndrejSladky/fmsi"
+"vikshiv/mumemto" -> "mohsenzakeri/Movi" ["e"=1]
+"kimwalisch/libpopcnt" -> "rob-p/FQFeeder" ["e"=1]
+"ocxtal/minialign" -> "ocxtal/libgaba" ["e"=1]
+"jmschrei/tangermeme" -> "vsbuffalo/granges" ["e"=1]
 "vsbuffalo/granges" -> "quinlan-lab/bedder-rs"
 "vsbuffalo/granges" -> "jackh726/bigtools"
 "vsbuffalo/granges" -> "mrvollger/rustybam"
 "vsbuffalo/granges" -> "38/d4-format"
 "vsbuffalo/granges" -> "noamteyssier/bedrs"
+"attractivechaos/kann" -> "GATB/gatb-core" ["e"=1]
+"attractivechaos/kann" -> "smarco/WFA-paper" ["e"=1]
 "5cript/interval-tree" -> "IvanPinezhaninov/IntervalTree"
+"simongog/sdsl-lite" -> "seqan/seqan" ["e"=1]
 "onecodex/needletail" -> "jguhlin/minimap2-rs"
 "onecodex/needletail" -> "luizirber/niffler"
 "onecodex/needletail" -> "lskatz/fasten"
@@ -313,34 +359,42 @@ digraph G {
 "onecodex/needletail" -> "rust-bio/rust-htslib"
 "onecodex/needletail" -> "10XGenomics/rust-debruijn"
 "onecodex/needletail" -> "markschl/seq_io"
+"jaybaird/python-bloomfilter" -> "bitly/dablooms" ["e"=1]
 "10XGenomics/rust-debruijn" -> "Malfoy/Blight"
 "lh3/ksw2" -> "ocxtal/libgaba"
 "lh3/ksw2" -> "jeffdaily/parasail"
 "lh3/ksw2" -> "isovic/raptor"
+"maickrau/GraphAligner" -> "refresh-bio/agc" ["e"=1]
 "markschl/seq_io" -> "aseyboldt/fastq-rs"
+"efficient/cuckoofilter" ["l"="1.703,13.329", "c"=376]
+"mavam/libbf" ["l"="39.402,37.82"]
 "Martinsos/edlib" ["l"="39.643,37.733"]
 "mengyao/Complete-Striped-Smith-Waterman-Library" ["l"="39.633,37.719"]
 "lh3/ksw2" ["l"="39.617,37.74"]
 "smarco/WFA2-lib" ["l"="39.601,37.693"]
-"maickrau/GraphAligner" ["l"="40.618,38.606"]
+"maickrau/GraphAligner" ["l"="40.618,38.606", "c"=290]
 "jeffdaily/parasail" ["l"="39.643,37.71"]
 "seqan/seqan3" ["l"="39.661,37.722"]
 "rvaser/spoa" ["l"="39.614,37.721"]
 "seqan/seqan" ["l"="39.661,37.743"]
 "walaj/SeqLib" ["l"="39.685,37.743"]
-"fritzsedlazeck/Sniffles" ["l"="40.8,37.481"]
+"fritzsedlazeck/Sniffles" ["l"="40.8,37.481", "c"=141]
 "lh3/cgranges" ["l"="39.702,37.728"]
 "smarco/WFA-paper" ["l"="39.616,37.702"]
 "lh3/kmer-cnt" ["l"="39.631,37.756"]
-"lh3/minigraph" ["l"="40.585,38.612"]
-"GFA-spec/GFA-spec" ["l"="40.631,38.62"]
-"zaeleus/noodles" ["l"="39.489,37.551"]
+"lh3/minigraph" ["l"="40.585,38.612", "c"=290]
+"GFA-spec/GFA-spec" ["l"="40.631,38.62", "c"=290]
+"chaimleib/intervaltree" ["l"="40.899,37.361", "c"=141]
 "rust-bio/rust-htslib" ["l"="39.492,37.577"]
-"rust-bio/rust-bio" ["l"="40.807,37.312"]
+"vsbuffalo/granges" ["l"="39.474,37.545"]
+"ekg/intervaltree" ["l"="39.763,37.703"]
+"zaeleus/noodles" ["l"="39.489,37.551"]
+"apache/datasketches-cpp" ["l"="-5.764,10.77", "c"=452]
+"dnbaker/sketch" ["l"="39.457,37.805"]
+"rust-bio/rust-bio" ["l"="40.807,37.312", "c"=141]
 "onecodex/needletail" ["l"="39.532,37.585"]
 "jackh726/bigtools" ["l"="39.48,37.53"]
 "rust-bio/rust-bio-tools" ["l"="39.509,37.559"]
-"vsbuffalo/granges" ["l"="39.474,37.545"]
 "38/d4-format" ["l"="39.468,37.559"]
 "wheretrue/biobear" ["l"="39.487,37.511"]
 "google/best" ["l"="39.436,37.545"]
@@ -352,18 +406,25 @@ digraph G {
 "jguhlin/minimap2-rs" ["l"="39.512,37.595"]
 "10XGenomics/rust-boomphf" ["l"="39.446,37.629"]
 "10XGenomics/rust-debruijn" ["l"="39.482,37.629"]
+"tlk00/BitMagic" ["l"="-19.305,-26.224", "c"=10]
+"rizkg/BBHash" ["l"="39.446,37.762"]
+"bingmann/cobs" ["l"="39.471,37.776"]
+"jermp/data_compression_course" ["l"="39.508,37.761"]
+"grailbio/reflow" ["l"="3.468,-9.566", "c"=0]
+"rossanoventurini/CompetitiveProgramming" ["l"="30.407,-27.951", "c"=273]
+"rossanoventurini/qwt" ["l"="39.501,37.877"]
 "yangao07/abPOA" ["l"="39.596,37.704"]
 "lh3/gwfa" ["l"="39.62,37.676"]
 "broadinstitute/poasta" ["l"="39.573,37.675"]
-"mavam/libbf" ["l"="39.402,37.82"]
+"wangyi-fudan/wyhash" ["l"="-19.624,-26.067", "c"=10]
 "ArashPartow/bloom" ["l"="39.365,37.835"]
-"dnbaker/sketch" ["l"="39.457,37.805"]
-"rizkg/BBHash" ["l"="39.446,37.762"]
 "bitly/dablooms" ["l"="39.382,37.851"]
 "rob-p/FQFeeder" ["l"="39.406,37.793"]
 "robertaboukhalil/fastq.bio" ["l"="39.631,37.475"]
 "biowasm/aioli" ["l"="39.613,37.499"]
+"seq-lang/seq" ["l"="40.852,37.326", "c"=141]
 "jvirkki/libbloom" ["l"="39.345,37.863"]
+"pyranges/pyranges" ["l"="40.903,37.292", "c"=141]
 "pmelsted/bifrost" ["l"="39.695,37.704"]
 "iqbal-lab-org/pandora" ["l"="39.779,37.729"]
 "GATB/gatb-core" ["l"="39.686,37.662"]
@@ -371,7 +432,6 @@ digraph G {
 "5cript/interval-tree" ["l"="39.797,37.696"]
 "lh3/pre-pe" ["l"="39.433,37.801"]
 "rob-p/BooM" ["l"="39.447,37.784"]
-"bingmann/cobs" ["l"="39.471,37.776"]
 "bacpop/ggCaller" ["l"="39.838,37.739"]
 "bacpop/ska.rust" ["l"="39.854,37.752"]
 "mbhall88/lrge" ["l"="39.884,37.74"]
@@ -380,7 +440,7 @@ digraph G {
 "COMBINE-lab/terminus" ["l"="39.386,37.592"]
 "kamimrcht/REINDEER" ["l"="39.633,37.79"]
 "Daniel-Liu-c0deb0t/block-aligner" ["l"="39.552,37.676"]
-"waveygang/wfmash" ["l"="40.646,38.561"]
+"waveygang/wfmash" ["l"="40.646,38.561", "c"=290]
 "lh3/miniwfa" ["l"="39.574,37.71"]
 "refresh-bio/agc" ["l"="39.567,37.727"]
 "ekimb/rust-mdbg" ["l"="39.587,37.667"]
@@ -388,10 +448,10 @@ digraph G {
 "jeffdaily/parasail-python" ["l"="39.645,37.693"]
 "ocxtal/libgaba" ["l"="39.661,37.708"]
 "vishnubob/ssw" ["l"="39.669,37.692"]
-"thegenemyers/DALIGNER" ["l"="40.753,38.666"]
-"lh3/minimap" ["l"="40.728,38.686"]
-"samtools/htslib" ["l"="40.787,37.408"]
-"ekg/intervaltree" ["l"="39.763,37.703"]
+"thegenemyers/DALIGNER" ["l"="40.753,38.666", "c"=290]
+"lh3/minimap" ["l"="40.728,38.686", "c"=290]
+"samtools/htslib" ["l"="40.787,37.408", "c"=141]
+"pachterlab/ffq" ["l"="40.888,37.239", "c"=141]
 "NVlabs/nvbio" ["l"="39.655,37.767"]
 "NVlabs/nvbio-gpl" ["l"="39.672,37.79"]
 "algbio/ggcat" ["l"="39.506,37.686"]
@@ -407,13 +467,17 @@ digraph G {
 "RagnarGrootKoerkamp/minimizers" ["l"="39.516,37.732"]
 "dcjones/coitrees" ["l"="39.553,37.755"]
 "GATB/bcalm" ["l"="39.657,37.645"]
+"flekschas/jupyter-scatter" ["l"="43.412,24.468", "c"=95]
+"bebop/poly" ["l"="41.103,37.647", "c"=141]
+"biowasm/biowasm" ["l"="39.586,37.531"]
 "wahern/phf" ["l"="39.37,37.758"]
 "ot/emphf" ["l"="39.325,37.757"]
-"biowasm/biowasm" ["l"="39.586,37.531"]
 "lh3/biofast" ["l"="39.538,37.62"]
+"armon/bloomd" ["l"="4.119,-7.601", "c"=0]
 "google/deepconsensus" ["l"="39.385,37.527"]
-"kishwarshafin/pepper" ["l"="40.838,37.49"]
-"weberlab-hhu/Helixer" ["l"="40.616,38.508"]
+"kishwarshafin/pepper" ["l"="40.838,37.49", "c"=141]
+"weberlab-hhu/Helixer" ["l"="40.616,38.508", "c"=290]
+"thrill/thrill" ["l"="-19.977,-26.444", "c"=10]
 "jermp/pthash" ["l"="39.441,37.732"]
 "roberto-trani/mphf_benchmark" ["l"="39.416,37.716"]
 "jermp/sshash" ["l"="39.474,37.736"]
@@ -422,43 +486,50 @@ digraph G {
 "markschl/seq_io" ["l"="39.55,37.573"]
 "quim0/WFA-GPU" ["l"="39.611,37.665"]
 "smarco/BiWFA-paper" ["l"="39.569,37.693"]
-"walaj/svaba" ["l"="40.732,37.526"]
+"walaj/svaba" ["l"="40.732,37.526", "c"=141]
 "walaj/VariantBam" ["l"="39.719,37.766"]
-"nygenome/lancet" ["l"="40.582,37.535"]
+"nygenome/lancet" ["l"="40.582,37.535", "c"=141]
 "jltsiren/simple-sds" ["l"="39.464,37.753"]
 "jltsiren/gbwt-rs" ["l"="39.434,37.747"]
 "chfi/rs-wfa" ["l"="39.409,37.737"]
 "noamteyssier/gia" ["l"="39.531,37.555"]
+"sstadick/gzp" ["l"="-16.588,-8.37", "c"=1915]
+"Homebrew/homebrew-science" ["l"="40.814,37.551", "c"=141]
 "rchikhi/rust-alignbench" ["l"="39.57,37.656"]
 "pairwise-alignment/pa-bench" ["l"="39.567,37.635"]
+"RILAB/statements" ["l"="40.387,38.529", "c"=290]
 "kampersanda/sucds" ["l"="39.515,37.85"]
-"rossanoventurini/qwt" ["l"="39.501,37.877"]
-"GeneDx/pgr-tk" ["l"="40.67,38.595"]
+"GeneDx/pgr-tk" ["l"="40.67,38.595", "c"=290]
 "beling/bsuccinct-rs" ["l"="39.546,37.871"]
 "rust-seq/minimizer-iter" ["l"="39.566,37.887"]
-"xxsds/DYNAMIC" ["l"="-39.348,21.298"]
+"xxsds/DYNAMIC" ["l"="-39.348,21.298", "c"=563]
 "splatlab/mantis" ["l"="39.416,37.775"]
 "splatlab/squeakr" ["l"="39.404,37.757"]
-"jermp/data_compression_course" ["l"="39.508,37.761"]
-"ot/succinct" ["l"="54.379,26.08"]
+"insitro/redun" ["l"="41.011,37.258", "c"=141]
+"ot/succinct" ["l"="54.379,26.08", "c"=439]
 "mohsenzakeri/Movi" ["l"="39.502,37.78"]
 "imartayan/CBL" ["l"="39.505,37.796"]
+"SnellerInc/sneller" ["l"="4.053,-7.971", "c"=0]
 "lh3/lv89" ["l"="39.63,37.651"]
 "jeizenga/wfalm" ["l"="39.637,37.628"]
 "zvelo/cmph" ["l"="39.29,37.757"]
 "rchikhi/benchmphf" ["l"="39.267,37.758"]
-"armon/bloomd" ["l"="4.119,-7.601"]
-"xxsds/sdsl-lite" ["l"="-39.329,21.272"]
-"pezmaster31/bamtools" ["l"="40.784,37.438"]
-"marbl/Winnowmap" ["l"="40.844,37.503"]
-"marbl/MashMap" ["l"="40.689,38.589"]
+"xxsds/sdsl-lite" ["l"="-39.329,21.272", "c"=563]
+"pezmaster31/bamtools" ["l"="40.784,37.438", "c"=141]
+"marbl/Winnowmap" ["l"="40.844,37.503", "c"=141]
+"marbl/MashMap" ["l"="40.689,38.589", "c"=290]
+"mxmlnkn/rapidgzip" ["l"="-39.03,21.422", "c"=563]
 "ekimb/mapquik" ["l"="39.414,37.522"]
-"biod/sambamba" ["l"="40.737,37.435"]
-"Illumina/strelka" ["l"="40.682,37.488"]
-"bedops/bedops" ["l"="40.82,37.412"]
+"ogxd/gxhash" ["l"="-10.075,-6.589", "c"=5]
+"vigna/epserde-rs" ["l"="39.489,37.937"]
+"biod/sambamba" ["l"="40.737,37.435", "c"=141]
+"Illumina/strelka" ["l"="40.682,37.488", "c"=141]
+"bedops/bedops" ["l"="40.82,37.412", "c"=141]
 "iqbal-lab-org/make_prg" ["l"="39.798,37.74"]
 "vigna/sux-rs" ["l"="39.495,37.902"]
 "vigna/webgraph-rs" ["l"="39.487,37.919"]
+"open2c/bioframe" ["l"="40.993,37.208", "c"=141]
+"abdenlab/oxbow" ["l"="39.481,37.482"]
 "rust-bio/rust-bio-types" ["l"="39.538,37.536"]
 "medvedevgroup/UST" ["l"="39.377,37.794"]
 "thegenemyers/FASTGA" ["l"="39.92,37.745"]
@@ -467,11 +538,17 @@ digraph G {
 "ratschlab/metagraph" ["l"="39.433,37.668"]
 "Cydhra/vers" ["l"="39.518,37.888"]
 "ajalab/fm-index" ["l"="39.531,37.908"]
-"abdenlab/oxbow" ["l"="39.481,37.482"]
-"vigna/epserde-rs" ["l"="39.489,37.937"]
 "RagnarGrootKoerkamp/PtrHash" ["l"="39.485,37.959"]
+"Baqend/Orestes-Bloomfilter" ["l"="9.26,-3.781", "c"=382]
 "OndrejSladky/fmsi" ["l"="39.504,37.815"]
+"vikshiv/mumemto" ["l"="39.873,38.339", "c"=566]
+"kimwalisch/libpopcnt" ["l"="-19.334,-26.259", "c"=10]
+"ocxtal/minialign" ["l"="40.761,38.694", "c"=290]
+"jmschrei/tangermeme" ["l"="24.6,13.632", "c"=281]
+"attractivechaos/kann" ["l"="-22.311,-25.958", "c"=101]
+"simongog/sdsl-lite" ["l"="-19.607,-26.186", "c"=10]
 "luizirber/niffler" ["l"="39.562,37.557"]
 "lskatz/fasten" ["l"="39.567,37.591"]
+"jaybaird/python-bloomfilter" ["l"="48.735,23.251", "c"=125]
 "isovic/raptor" ["l"="39.603,37.771"]
 }

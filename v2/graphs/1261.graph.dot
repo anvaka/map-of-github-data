@@ -7,6 +7,8 @@ digraph G {
 "igorantolic/ai-esp32-rotary-encoder" -> "soligen2010/encoder"
 "igorantolic/ai-esp32-rotary-encoder" -> "DavidAntliff/esp32-rotary-encoder"
 "DavidAntliff/esp32-rotary-encoder" -> "DavidAntliff/esp32-rotary-encoder-example"
+"rocketscream/Low-Power" -> "GreyGnome/EnableInterrupt" ["e"=1]
+"moononournation/Arduino_GFX" -> "LennartHennigs/Button2" ["e"=1]
 "LennartHennigs/Button2" -> "LennartHennigs/ESPRotary"
 "LennartHennigs/Button2" -> "mathertel/OneButton"
 "LennartHennigs/Button2" -> "evert-arias/EasyButton"
@@ -34,10 +36,20 @@ digraph G {
 "madhephaestus/ESP32Encoder" -> "PaulStoffregen/Encoder"
 "madhephaestus/ESP32Encoder" -> "hideakitai/ESP32DMASPI"
 "madhephaestus/ESP32Encoder" -> "khoih-prog/ESP32TimerInterrupt" ["e"=1]
+"avishorp/TM1637" -> "PaulStoffregen/TimerOne" ["e"=1]
+"nopnop2002/esp-idf-ssd1306" -> "DavidAntliff/esp32-rotary-encoder" ["e"=1]
+"arduino/ArduinoCore-avr" -> "feilipu/Arduino_FreeRTOS_Library" ["e"=1]
+"robsoncouto/arduino-songs" -> "mathertel/OneButton" ["e"=1]
+"robsoncouto/arduino-songs" -> "neu-rah/ArduinoMenu" ["e"=1]
 "arduino-cmake/Arduino-CMake-NG" -> "a9183756-gh/Arduino-CMake-Toolchain"
 "arduino-cmake/Arduino-CMake-NG" -> "queezythegreat/arduino-cmake"
 "arduino-cmake/Arduino-CMake-NG" -> "arduino-cmake/arduino-cmake"
+"agucova/awesome-esp" -> "Lembed/Awesome-arduino" ["e"=1]
+"Xinyuan-LilyGO/TTGO-T-Display" -> "LennartHennigs/Button2" ["e"=1]
+"Xinyuan-LilyGO/TTGO-T-Display" -> "neu-rah/ArduinoMenu" ["e"=1]
+"felias-fogg/SoftI2CMaster" -> "PaulStoffregen/TimerOne" ["e"=1]
 "mkleemann/cmake-avr" -> "feilipu/avrfreertos"
+"r-lyeh-archived/fsm" -> "jonblack/arduino-fsm" ["e"=1]
 "queezythegreat/arduino-cmake" -> "francoiscampbell/CLionArduinoPlugin"
 "queezythegreat/arduino-cmake" -> "arduino-cmake/Arduino-CMake-NG"
 "queezythegreat/arduino-cmake" -> "a9183756-gh/Arduino-CMake-Toolchain"
@@ -62,6 +74,11 @@ digraph G {
 "bxparks/AUnit" -> "mmurdoch/arduinounit"
 "bxparks/AUnit" -> "Arduino-CI/arduino_ci"
 "bxparks/AUnit" -> "ikeyasu/arduino-mock"
+"ayushsharma82/ESP-DASH" -> "mathertel/OneButton" ["e"=1]
+"ayushsharma82/ESP-DASH" -> "arkhipenko/TaskScheduler" ["e"=1]
+"s00500/ESPUI" -> "arkhipenko/TaskScheduler" ["e"=1]
+"s00500/ESPUI" -> "mathertel/OneButton" ["e"=1]
+"ayushsharma82/ElegantOTA" -> "mathertel/OneButton" ["e"=1]
 "ropg/ezTime" -> "bxparks/AceTime"
 "ropg/ezTime" -> "khoih-prog/ESP32TimerInterrupt" ["e"=1]
 "ropg/ezTime" -> "JoaoLopesF/RemoteDebug" ["e"=1]
@@ -132,6 +149,7 @@ digraph G {
 "evert-arias/EasyButton" -> "ayushsharma82/ESP-DASH" ["e"=1]
 "evert-arias/EasyButton" -> "thomasfredericks/Bounce2"
 "erropix/ESP32_AnalogWrite" -> "RoboticsBrno/ServoESP32"
+"gilmaimon/ArduinoWebsockets" -> "mathertel/OneButton" ["e"=1]
 "Arduino-CI/arduino_ci" -> "adafruit/ci-arduino"
 "Arduino-CI/arduino_ci" -> "per1234/arduino-ci-script"
 "Arduino-CI/arduino_ci" -> "mmurdoch/arduinounit"
@@ -182,6 +200,8 @@ digraph G {
 "DiegoPaezA/ESP32-freeRTOS" -> "espressif/ESP31_RTOS_SDK" ["e"=1]
 "DiegoPaezA/ESP32-freeRTOS" -> "Inteform/esp32-lora-library" ["e"=1]
 "DiegoPaezA/ESP32-freeRTOS" -> "FreeRTOS/FreeRTOS-Kernel-Book" ["e"=1]
+"BojanJurca/Esp32_oscilloscope" -> "madhephaestus/ESP32Encoder" ["e"=1]
+"RobTillaart/Arduino" -> "neu-rah/ArduinoMenu" ["e"=1]
 "greiman/FreeRTOS-Arduino" -> "feilipu/Arduino_FreeRTOS_Library"
 "greiman/FreeRTOS-Arduino" -> "ExploreEmbedded/Arduino_FreeRTOS"
 "greiman/FreeRTOS-Arduino" -> "greiman/NilRTOS-Arduino"
@@ -190,6 +210,11 @@ digraph G {
 "greiman/FreeRTOS-Arduino" -> "PeterVranken/RTuinOS"
 "sciguy14/Arduino-Tutorial-Series" -> "sciguy14/Exploring-Arduino-1st-Edition"
 "sciguy14/Arduino-Tutorial-Series" -> "sciguy14/Eagle-Tutorial-Series"
+"greiman/SdFat" -> "greiman/SSD1306Ascii" ["e"=1]
+"lexus2k/lcdgfx" -> "VasilKalchev/LiquidMenu" ["e"=1]
+"256dpi/arduino-mqtt" -> "arkhipenko/TaskScheduler" ["e"=1]
+"br3ttb/Arduino-PID-Library" -> "PaulStoffregen/Encoder" ["e"=1]
+"br3ttb/Arduino-PID-Library" -> "ivanseidel/ArduinoThread" ["e"=1]
 "neu-rah/ArduinoMenu" -> "jonblack/arduino-menusystem"
 "neu-rah/ArduinoMenu" -> "VasilKalchev/LiquidMenu"
 "neu-rah/ArduinoMenu" -> "TcMenu/tcMenu"
@@ -213,13 +238,22 @@ digraph G {
 "ladislas/Bare-Arduino-Project" -> "UECIDE/UECIDE"
 "ladislas/Bare-Arduino-Project" -> "mmurdoch/arduinounit"
 "ladislas/Bare-Arduino-Project" -> "maniacbug/StandardCplusplus"
+"PaulStoffregen/OneWire" -> "PaulStoffregen/TimerOne" ["e"=1]
+"PaulStoffregen/OneWire" -> "thijse/Arduino-EEPROMEx" ["e"=1]
+"PaulStoffregen/OneWire" -> "greiman/SSD1306Ascii" ["e"=1]
 "GreyGnome/PinChangeInt" -> "GreyGnome/EnableInterrupt"
 "GreyGnome/PinChangeInt" -> "NicoHood/PinChangeInterrupt"
+"arduino/arduino-pro-ide" -> "arkhipenko/TaskScheduler" ["e"=1]
+"arduino/arduino-pro-ide" -> "neu-rah/ArduinoMenu" ["e"=1]
+"arduino/arduino-pro-ide" -> "VasilKalchev/LiquidMenu" ["e"=1]
+"arduino/arduino-pro-ide" -> "feilipu/Arduino_FreeRTOS_Library" ["e"=1]
 "NicoHood/PinChangeInterrupt" -> "GreyGnome/PinChangeInt"
 "NicoHood/PinChangeInterrupt" -> "GreyGnome/EnableInterrupt"
 "NicoHood/PinChangeInterrupt" -> "NicoHood/IRLremote" ["e"=1]
 "NicoHood/PinChangeInterrupt" -> "thijse/Arduino-EEPROMEx"
 "forntoh/LcdMenu" -> "VasilKalchev/LiquidMenu"
+"amperka/ino" -> "queezythegreat/arduino-cmake" ["e"=1]
+"h2zero/NimBLE-Arduino" -> "arkhipenko/TaskScheduler" ["e"=1]
 "PaulStoffregen/TimerOne" -> "PaulStoffregen/TimerThree"
 "PaulStoffregen/TimerOne" -> "0xPIT/encoder"
 "PaulStoffregen/TimerOne" -> "PaulStoffregen/Encoder"
@@ -228,6 +262,7 @@ digraph G {
 "PaulStoffregen/TimerOne" -> "NicoHood/PinChangeInterrupt"
 "PaulStoffregen/TimerOne" -> "PaulStoffregen/OneWire" ["e"=1]
 "PaulStoffregen/TimerOne" -> "sensorium/Mozzi" ["e"=1]
+"damellis/attiny" -> "thijse/Arduino-EEPROMEx" ["e"=1]
 "heliosproj/HeliOS" -> "feilipu/Arduino_FreeRTOS_Library"
 "mathertel/Radio" -> "andykarpov/TEA5767"
 "mathertel/Radio" -> "pu2clr/RDA5807"
@@ -235,6 +270,7 @@ digraph G {
 "mathertel/Radio" -> "sparkfun/Si4703_FM_Tuner_Evaluation_Board"
 "mathertel/Radio" -> "sparkfun/SparkFun_Si4703_Arduino_Library"
 "ArduinoGetStarted/button" -> "ArduinoGetStarted/output"
+"PaulStoffregen/AltSoftSerial" -> "GreyGnome/EnableInterrupt" ["e"=1]
 "GreyGnome/EnableInterrupt" -> "GreyGnome/PinChangeInt"
 "GreyGnome/EnableInterrupt" -> "NicoHood/PinChangeInterrupt"
 "GreyGnome/EnableInterrupt" -> "PaulStoffregen/AltSoftSerial" ["e"=1]
@@ -242,6 +278,7 @@ digraph G {
 "GreyGnome/EnableInterrupt" -> "rambo/TinyWire" ["e"=1]
 "GreyGnome/EnableInterrupt" -> "rocketscream/Low-Power" ["e"=1]
 "GreyGnome/EnableInterrupt" -> "PaulStoffregen/Encoder"
+"tardate/LittleArduinoProjects" -> "greiman/SSD1306Ascii" ["e"=1]
 "a9183756-gh/Arduino-CMake-Toolchain" -> "arduino-cmake/Arduino-CMake-NG"
 "pu2clr/RDA5807" -> "pu2clr/SI4844"
 "pu2clr/RDA5807" -> "pu2clr/SI470X"
@@ -253,6 +290,9 @@ digraph G {
 "TcMenu/TaskManagerIO" -> "TcMenu/tcMenuLib"
 "ikeyasu/arduino-mock" -> "ikeyasu/arduino-gmock-sample"
 "ikeyasu/arduino-mock" -> "balp/arduino-mock"
+"sudar/Arduino-Makefile" -> "ladislas/Bare-Arduino-Project" ["e"=1]
+"sudar/Arduino-Makefile" -> "queezythegreat/arduino-cmake" ["e"=1]
+"sudar/Arduino-Makefile" -> "mmurdoch/arduinounit" ["e"=1]
 "PaulStoffregen/Encoder" -> "mathertel/RotaryEncoder"
 "PaulStoffregen/Encoder" -> "PaulStoffregen/TimerOne"
 "PaulStoffregen/Encoder" -> "0xPIT/encoder"
@@ -291,12 +331,19 @@ digraph G {
 "ShawnHymel/introduction-to-rtos" -> "feilipu/Arduino_FreeRTOS_Library"
 "ShawnHymel/introduction-to-rtos" -> "klonyyy/MCUViewer" ["e"=1]
 "ShawnHymel/introduction-to-rtos" -> "cpq/embedded-network-programming-guide" ["e"=1]
+"blackout314/awesome-raspberry-pi" -> "Lembed/Awesome-arduino" ["e"=1]
+"sui77/rc-switch" -> "mathertel/OneButton" ["e"=1]
 "ShawnHymel/computer-vision-with-embedded-machine-learning" -> "ShawnHymel/ei-keyword-spotting"
 "ShawnHymel/computer-vision-with-embedded-machine-learning" -> "edgeimpulse/linux-sdk-python"
 "ShawnHymel/computer-vision-with-embedded-machine-learning" -> "ShawnHymel/tinyml-example-anomaly-detection" ["e"=1]
 "JChristensen/Timer" -> "PaulStoffregen/TimeAlarms" ["e"=1]
 "JChristensen/Timer" -> "JChristensen/JC_Button"
 "JChristensen/Timer" -> "contrem/arduino-timer"
+"bportaluri/WiFiEsp" -> "feilipu/Arduino_FreeRTOS_Library" ["e"=1]
+"olikraus/u8glib" -> "greiman/SSD1306Ascii" ["e"=1]
+"olikraus/u8glib" -> "neu-rah/ArduinoMenu" ["e"=1]
+"fdebrabander/Arduino-LiquidCrystal-I2C-library" -> "PaulStoffregen/TimerOne" ["e"=1]
+"fdebrabander/Arduino-LiquidCrystal-I2C-library" -> "VasilKalchev/LiquidMenu" ["e"=1]
 "maniacbug/StandardCplusplus" -> "mike-matera/ArduinoSTL"
 "maniacbug/StandardCplusplus" -> "vancegroup/arduino-boost"
 "maniacbug/StandardCplusplus" -> "ivanseidel/ArduinoThread"
@@ -307,6 +354,8 @@ digraph G {
 "maniacbug/StandardCplusplus" -> "AndreiDegtiarev/AWind"
 "maniacbug/StandardCplusplus" -> "me-no-dev/EspExceptionDecoder" ["e"=1]
 "maniacbug/StandardCplusplus" -> "queezythegreat/arduino-cmake"
+"JChristensen/Timezone" -> "JChristensen/JC_Button" ["e"=1]
+"arduino/arduino-builder" -> "adafruit/ci-arduino" ["e"=1]
 "adafruit/ci-arduino" -> "Arduino-CI/arduino_ci"
 "JChristensen/JC_Button" -> "bxparks/AceButton"
 "JChristensen/JC_Button" -> "mathertel/OneButton"
@@ -325,6 +374,8 @@ digraph G {
 "JChristensen/JC_Button" -> "JChristensen/DS3232RTC" ["e"=1]
 "andykarpov/TEA5767" -> "mroger/TEA5767"
 "hideakitai/ESP32SPISlave" -> "hideakitai/ESP32DMASPI"
+"olikraus/ucglib" -> "Jomelo/LCDMenuLib" ["e"=1]
+"buserror/simavr" -> "mkleemann/cmake-avr" ["e"=1]
 "feilipu/Arduino_FreeRTOS_Library" -> "feilipu/avrfreertos"
 "feilipu/Arduino_FreeRTOS_Library" -> "greiman/FreeRTOS-Arduino"
 "feilipu/Arduino_FreeRTOS_Library" -> "arkhipenko/TaskScheduler"
@@ -375,7 +426,12 @@ digraph G {
 "arkhipenko/TaskScheduler" -> "stm32duino/Arduino_Core_STM32" ["e"=1]
 "arkhipenko/TaskScheduler" -> "me-no-dev/ESPAsyncWebServer" ["e"=1]
 "arkhipenko/TaskScheduler" -> "ivanseidel/ArduinoThread"
+"plerup/espsoftwareserial" -> "mathertel/OneButton" ["e"=1]
+"laurb9/StepperDriver" -> "contrem/arduino-timer" ["e"=1]
+"olikraus/U8g2_Arduino" -> "greiman/SSD1306Ascii" ["e"=1]
+"olikraus/U8g2_Arduino" -> "bxparks/AceButton" ["e"=1]
 "ShawnHymel/introduction-to-fpga" -> "ShawnHymel/introduction-to-rtos"
+"nickgammon/arduino_sketches" -> "GreyGnome/EnableInterrupt" ["e"=1]
 "tinkerspy/Automaton" -> "jonblack/arduino-fsm"
 "tinkerspy/Automaton" -> "tinkerspy/Automaton-Machine-Editor"
 "tinkerspy/Automaton" -> "tinkerspy/Automaton-Esp8266"
@@ -387,12 +443,21 @@ digraph G {
 "feilipu/miniAVRfreeRTOS" -> "feilipu/avrfreertos"
 "KrisKasprzak/Adafruit_ILI9341_Menu" -> "KrisKasprzak/ILI9341_t3_Menu"
 "KrisKasprzak/ILI9341_t3_Menu" -> "KrisKasprzak/Adafruit_ILI9341_Menu"
+"javl/image2cpp" -> "LennartHennigs/Button2" ["e"=1]
+"me-no-dev/EspExceptionDecoder" -> "arkhipenko/TaskScheduler" ["e"=1]
 "upiir/arduino_oled_menu" -> "KrisKasprzak/ILI9341_t3_Menu"
 "upiir/arduino_oled_menu" -> "qery/qMenuSystem"
 "francoiscampbell/arduino-cmake" -> "francoiscampbell/CLionArduinoPlugin"
 "vancegroup/arduino-boost" -> "rpavlik/StandardCplusplus"
+"jameswalmsley/RaspberryPi-FreeRTOS" -> "greiman/FreeRTOS-Arduino" ["e"=1]
+"TMRh20/TMRpcm" -> "mathertel/Radio" ["e"=1]
+"JoaoLopesF/RemoteDebug" -> "arkhipenko/TaskScheduler" ["e"=1]
+"JoaoLopesF/RemoteDebug" -> "ropg/ezTime" ["e"=1]
 "mikaelpatel/Cosa" -> "mikaelpatel/Arduino-Scheduler"
 "mikaelpatel/Cosa" -> "jfpoilpret/fast-arduino-lib"
+"Robot-Will/Stino" -> "JChristensen/Timer" ["e"=1]
+"Robot-Will/Stino" -> "ivanseidel/ArduinoThread" ["e"=1]
+"ImpulseAdventure/GUIslice" -> "neu-rah/ArduinoMenu" ["e"=1]
 "0xPIT/encoder" -> "PaulStoffregen/TimerOne"
 "0xPIT/encoder" -> "brianlow/Rotary"
 "0xPIT/encoder" -> "neu-rah/ArduinoMenu"
@@ -419,6 +484,9 @@ digraph G {
 "mike-matera/ArduinoSTL" -> "maniacbug/StandardCplusplus"
 "mike-matera/ArduinoSTL" -> "andysworkshop/avr-stl"
 "mike-matera/ArduinoSTL" -> "vancegroup/stlport-avr"
+"vshymanskyy/TinyGSM" -> "arkhipenko/TaskScheduler" ["e"=1]
+"maxritter/diy-thermocam" -> "GreyGnome/EnableInterrupt" ["e"=1]
+"gmag11/painlessMesh" -> "arkhipenko/TaskScheduler" ["e"=1]
 "brianlow/Rotary" -> "mathertel/RotaryEncoder"
 "brianlow/Rotary" -> "0xPIT/encoder"
 "brianlow/Rotary" -> "buxtronix/arduino"
@@ -427,8 +495,16 @@ digraph G {
 "mmurdoch/arduinounit" -> "bxparks/AUnit"
 "mmurdoch/arduinounit" -> "Arduino-CI/arduino_ci"
 "mmurdoch/arduinounit" -> "IronSavior/dsm2_tx"
+"datacute/Tiny4kOLED" -> "greiman/SSD1306Ascii" ["e"=1]
+"JChristensen/DS3232RTC" -> "thomasfredericks/Bounce2" ["e"=1]
+"JChristensen/DS3232RTC" -> "VasilKalchev/LiquidMenu" ["e"=1]
+"JChristensen/DS3232RTC" -> "JChristensen/JC_Button" ["e"=1]
+"ricmoo/QRCode" -> "neu-rah/ArduinoMenu" ["e"=1]
 "jkb-git/ESP32Servo" -> "RoboticsBrno/ServoESP32"
 "jkb-git/ESP32Servo" -> "madhephaestus/ESP32Servo"
+"adafruit/Adafruit_SSD1306" -> "greiman/SSD1306Ascii" ["e"=1]
+"lexus2k/ssd1306" -> "greiman/SSD1306Ascii" ["e"=1]
+"lexus2k/ssd1306" -> "neu-rah/ArduinoMenu" ["e"=1]
 "ivanseidel/ArduinoThread" -> "ivanseidel/ArduinoSensors"
 "ivanseidel/ArduinoThread" -> "feilipu/Arduino_FreeRTOS_Library"
 "ivanseidel/ArduinoThread" -> "ivanseidel/LinkedList"
@@ -462,26 +538,28 @@ digraph G {
 "madhephaestus/ESP32Encoder" ["l"="-13.182,-42.206"]
 "LennartHennigs/ESPRotary" ["l"="-13.215,-42.259"]
 "RoboticsBrno/ServoESP32" ["l"="-13.063,-42.241"]
-"adafruit/Adafruit_ImageReader" ["l"="-13.672,-41.736"]
+"adafruit/Adafruit_ImageReader" ["l"="-13.672,-41.736", "c"=812]
 "PaulStoffregen/Encoder" ["l"="-13.226,-42.224"]
 "soligen2010/encoder" ["l"="-13.198,-42.228"]
 "DavidAntliff/esp32-rotary-encoder" ["l"="-13.121,-42.245"]
 "DavidAntliff/esp32-rotary-encoder-example" ["l"="-13.1,-42.25"]
+"rocketscream/Low-Power" ["l"="-13.968,-42.276", "c"=820]
+"GreyGnome/EnableInterrupt" ["l"="-13.202,-42.181"]
+"moononournation/Arduino_GFX" ["l"="-15.631,-42.209", "c"=387]
 "LennartHennigs/Button2" ["l"="-13.281,-42.256"]
 "mathertel/OneButton" ["l"="-13.288,-42.227"]
 "evert-arias/EasyButton" ["l"="-13.278,-42.269"]
 "bxparks/AceButton" ["l"="-13.249,-42.272"]
 "thomasfredericks/Bounce2" ["l"="-13.288,-42.243"]
 "JChristensen/JC_Button" ["l"="-13.263,-42.261"]
-"LennartHennigs/ESPTelnet" ["l"="-13.853,-40.794"]
+"LennartHennigs/ESPTelnet" ["l"="-13.853,-40.794", "c"=645]
 "neu-rah/ArduinoMenu" ["l"="-13.312,-42.245"]
 "greiman/SSD1306Ascii" ["l"="-13.304,-42.262"]
-"Xinyuan-LilyGO/TTGO-T-Display" ["l"="-15.376,-40.829"]
+"Xinyuan-LilyGO/TTGO-T-Display" ["l"="-15.376,-40.829", "c"=210]
 "Spirik/GEM" ["l"="-13.304,-42.279"]
 "LennartHennigs/SimpleFSM" ["l"="-13.354,-42.257"]
-"moononournation/Arduino_GFX" ["l"="-15.631,-42.209"]
-"lexus2k/lcdgfx" ["l"="-14.172,-42.154"]
-"ayushsharma82/AsyncElegantOTA" ["l"="-13.918,-40.773"]
+"lexus2k/lcdgfx" ["l"="-14.172,-42.154", "c"=820]
+"ayushsharma82/AsyncElegantOTA" ["l"="-13.918,-40.773", "c"=645]
 "TcMenu/tcMenu" ["l"="-13.338,-42.292"]
 "TcMenu/tcMenuLib" ["l"="-13.366,-42.312"]
 "TcMenu/IoAbstraction" ["l"="-13.344,-42.309"]
@@ -490,24 +568,35 @@ digraph G {
 "TcMenu/TaskManagerIO" ["l"="-13.368,-42.328"]
 "Jomelo/LCDMenuLib2" ["l"="-13.345,-42.273"]
 "hideakitai/ESP32DMASPI" ["l"="-13.176,-42.13"]
-"khoih-prog/ESP32TimerInterrupt" ["l"="-13.938,-40.823"]
+"khoih-prog/ESP32TimerInterrupt" ["l"="-13.938,-40.823", "c"=645]
+"avishorp/TM1637" ["l"="-13.67,-41.571", "c"=812]
+"PaulStoffregen/TimerOne" ["l"="-13.261,-42.211"]
+"nopnop2002/esp-idf-ssd1306" ["l"="-15.892,-42.333", "c"=387]
+"arduino/ArduinoCore-avr" ["l"="-15.221,-40.861", "c"=210]
+"feilipu/Arduino_FreeRTOS_Library" ["l"="-13.325,-42.135"]
+"robsoncouto/arduino-songs" ["l"="-15.195,-40.808", "c"=210]
 "arduino-cmake/Arduino-CMake-NG" ["l"="-13.541,-42.106"]
 "a9183756-gh/Arduino-CMake-Toolchain" ["l"="-13.562,-42.11"]
 "queezythegreat/arduino-cmake" ["l"="-13.507,-42.096"]
 "arduino-cmake/arduino-cmake" ["l"="-13.552,-42.092"]
+"agucova/awesome-esp" ["l"="-13.884,-40.85", "c"=645]
+"Lembed/Awesome-arduino" ["l"="-13.354,-42.225"]
+"felias-fogg/SoftI2CMaster" ["l"="-14.215,-42.23", "c"=820]
 "mkleemann/cmake-avr" ["l"="-13.42,-42.098"]
 "feilipu/avrfreertos" ["l"="-13.376,-42.111"]
+"r-lyeh-archived/fsm" ["l"="-20.384,-26.373", "c"=10]
+"jonblack/arduino-fsm" ["l"="-13.402,-42.262"]
 "francoiscampbell/CLionArduinoPlugin" ["l"="-13.531,-42.073"]
 "francoiscampbell/arduino-cmake" ["l"="-13.549,-42.074"]
-"sudar/Arduino-Makefile" ["l"="-14.026,-42.299"]
-"amperka/ino" ["l"="-13.958,-42.357"]
+"sudar/Arduino-Makefile" ["l"="-14.026,-42.299", "c"=820]
+"amperka/ino" ["l"="-13.958,-42.357", "c"=820]
 "altexdim/arduino-cmake" ["l"="-13.532,-42.09"]
 "ladislas/Bare-Arduino-Project" ["l"="-13.498,-42.064"]
 "mikaelpatel/Cosa" ["l"="-13.45,-42.098"]
 "maniacbug/StandardCplusplus" ["l"="-13.468,-42.14"]
 "contrem/arduino-timer" ["l"="-13.277,-42.291"]
 "khoih-prog/TimerInterrupt" ["l"="-13.266,-42.344"]
-"rlogiacco/CircularBuffer" ["l"="-17.635,-42.39"]
+"rlogiacco/CircularBuffer" ["l"="-17.635,-42.39", "c"=55]
 "brunocalou/Timer" ["l"="-13.281,-42.329"]
 "bxparks/AUnit" ["l"="-13.587,-41.97"]
 "bxparks/EpoxyDuino" ["l"="-13.61,-41.959"]
@@ -515,40 +604,40 @@ digraph G {
 "mmurdoch/arduinounit" ["l"="-13.558,-41.995"]
 "Arduino-CI/arduino_ci" ["l"="-13.559,-41.967"]
 "ikeyasu/arduino-mock" ["l"="-13.61,-41.939"]
+"ayushsharma82/ESP-DASH" ["l"="-13.899,-40.762", "c"=645]
+"arkhipenko/TaskScheduler" ["l"="-13.32,-42.185"]
+"s00500/ESPUI" ["l"="-13.908,-40.803", "c"=645]
+"ayushsharma82/ElegantOTA" ["l"="-13.895,-40.79", "c"=645]
 "ropg/ezTime" ["l"="-13.246,-42.299"]
 "bxparks/AceTime" ["l"="-13.22,-42.311"]
-"JoaoLopesF/RemoteDebug" ["l"="-13.892,-40.742"]
-"SensorsIot/NTPtimeESP" ["l"="-13.641,-41.613"]
+"JoaoLopesF/RemoteDebug" ["l"="-13.892,-40.742", "c"=645]
+"SensorsIot/NTPtimeESP" ["l"="-13.641,-41.613", "c"=812]
 "jandelgado/jled" ["l"="-13.232,-42.285"]
 "bxparks/AceRoutine" ["l"="-13.188,-42.297"]
-"adafruit/Adafruit_SPIFlash" ["l"="-14.801,-40.949"]
-"JoaoLopesF/SerialDebug" ["l"="-13.82,-40.767"]
+"adafruit/Adafruit_SPIFlash" ["l"="-14.801,-40.949", "c"=210]
+"JoaoLopesF/SerialDebug" ["l"="-13.82,-40.767", "c"=645]
 "buxtronix/arduino" ["l"="-13.192,-42.261"]
 "brianlow/Rotary" ["l"="-13.21,-42.244"]
 "MajicDesigns/MD_REncoder" ["l"="-13.157,-42.273"]
 "0xPIT/encoder" ["l"="-13.256,-42.245"]
 "mathertel/RotaryEncoder" ["l"="-13.233,-42.246"]
-"ayushsharma82/ESP-DASH" ["l"="-13.899,-40.762"]
-"arkhipenko/TaskScheduler" ["l"="-13.32,-42.185"]
-"kitesurfer1404/WS2812FX" ["l"="-16.497,-41.416"]
-"ayushsharma82/ElegantOTA" ["l"="-13.895,-40.79"]
-"plerup/espsoftwareserial" ["l"="-13.928,-40.698"]
-"s00500/ESPUI" ["l"="-13.908,-40.803"]
-"PaulStoffregen/TimerOne" ["l"="-13.261,-42.211"]
+"kitesurfer1404/WS2812FX" ["l"="-16.497,-41.416", "c"=742]
+"plerup/espsoftwareserial" ["l"="-13.928,-40.698", "c"=645]
 "mathertel/Radio" ["l"="-13.12,-42.318"]
 "madhephaestus/ESP32Servo" ["l"="-13.019,-42.252"]
 "jkb-git/ESP32Servo" ["l"="-13.04,-42.252"]
 "Jomelo/LCDMenuLib" ["l"="-13.362,-42.29"]
 "evert-arias/EasyBuzzer" ["l"="-13.253,-42.23"]
-"Hieromon/PageBuilder" ["l"="-13.874,-40.756"]
+"Hieromon/PageBuilder" ["l"="-13.874,-40.756", "c"=645]
 "erropix/ESP32_AnalogWrite" ["l"="-13.022,-42.225"]
+"gilmaimon/ArduinoWebsockets" ["l"="-13.861,-40.699", "c"=645]
 "adafruit/ci-arduino" ["l"="-13.558,-41.945"]
 "per1234/arduino-ci-script" ["l"="-13.536,-41.957"]
 "ArminJo/ServoEasing" ["l"="-13.142,-42.22"]
-"stack-chan/m5stack-avatar" ["l"="-15.387,-42.307"]
+"stack-chan/m5stack-avatar" ["l"="-15.387,-42.307", "c"=387]
 "todbot/ServoEaser" ["l"="-13.079,-42.194"]
-"JChristensen/DS3232RTC" ["l"="-13.808,-41.638"]
-"PaulStoffregen/Time" ["l"="-13.772,-41.624"]
+"JChristensen/DS3232RTC" ["l"="-13.808,-41.638", "c"=812]
+"PaulStoffregen/Time" ["l"="-13.772,-41.624", "c"=812]
 "ArduinoGetStarted/button" ["l"="-13.371,-42.269"]
 "tinkerspy/Automaton" ["l"="-13.372,-42.242"]
 "ivanseidel/LinkedList" ["l"="-13.42,-42.171"]
@@ -560,42 +649,47 @@ digraph G {
 "ivanseidel/EasyFly" ["l"="-13.399,-42.141"]
 "netlabtoolkit/VarSpeedServo" ["l"="-13.03,-42.174"]
 "nabontra/ServoTimer2" ["l"="-13.002,-42.163"]
-"jonblack/arduino-fsm" ["l"="-13.402,-42.262"]
 "JRVeale/function-fsm" ["l"="-13.43,-42.28"]
 "balp/arduino-mock" ["l"="-13.613,-41.923"]
 "DiegoPaezA/ESP32-freeRTOS" ["l"="-13.219,-42.085"]
 "ShawnHymel/introduction-to-rtos" ["l"="-13.271,-42.079"]
-"espressif/esp-bsp" ["l"="-15.865,-42.404"]
-"Mair/esp32-course" ["l"="-15.852,-42.339"]
-"espressif/ESP31_RTOS_SDK" ["l"="-14.984,-41.068"]
-"Inteform/esp32-lora-library" ["l"="54.492,6.453"]
-"FreeRTOS/FreeRTOS-Kernel-Book" ["l"="-17.838,-43.278"]
+"espressif/esp-bsp" ["l"="-15.865,-42.404", "c"=387]
+"Mair/esp32-course" ["l"="-15.852,-42.339", "c"=387]
+"espressif/ESP31_RTOS_SDK" ["l"="-14.984,-41.068", "c"=210]
+"Inteform/esp32-lora-library" ["l"="54.492,6.453", "c"=644]
+"FreeRTOS/FreeRTOS-Kernel-Book" ["l"="-17.838,-43.278", "c"=55]
+"BojanJurca/Esp32_oscilloscope" ["l"="-19.515,-42.796", "c"=856]
+"RobTillaart/Arduino" ["l"="-15.378,-40.997", "c"=210]
 "greiman/FreeRTOS-Arduino" ["l"="-13.29,-42.116"]
-"feilipu/Arduino_FreeRTOS_Library" ["l"="-13.325,-42.135"]
 "ExploreEmbedded/Arduino_FreeRTOS" ["l"="-13.3,-42.097"]
 "greiman/NilRTOS-Arduino" ["l"="-13.267,-42.101"]
-"greiman/ChibiOS-Arduino" ["l"="37.049,5.602"]
-"jameswalmsley/RaspberryPi-FreeRTOS" ["l"="43.105,7.739"]
+"greiman/ChibiOS-Arduino" ["l"="37.049,5.602", "c"=494]
+"jameswalmsley/RaspberryPi-FreeRTOS" ["l"="43.105,7.739", "c"=818]
 "PeterVranken/RTuinOS" ["l"="-13.254,-42.114"]
 "sciguy14/Arduino-Tutorial-Series" ["l"="-13.45,-42.238"]
 "sciguy14/Exploring-Arduino-1st-Edition" ["l"="-13.488,-42.236"]
 "sciguy14/Eagle-Tutorial-Series" ["l"="-13.488,-42.257"]
-"ImpulseAdventure/GUIslice" ["l"="-15.567,-42.317"]
-"lexus2k/ssd1306" ["l"="-14.149,-42.177"]
-"Bodmer/TFT_eSPI" ["l"="-15.328,-40.9"]
-"olikraus/u8glib" ["l"="-13.658,-41.641"]
+"greiman/SdFat" ["l"="-13.811,-41.71", "c"=812]
+"256dpi/arduino-mqtt" ["l"="-13.87,-40.672", "c"=645]
+"br3ttb/Arduino-PID-Library" ["l"="57.626,10.649", "c"=821]
+"ImpulseAdventure/GUIslice" ["l"="-15.567,-42.317", "c"=387]
+"lexus2k/ssd1306" ["l"="-14.149,-42.177", "c"=820]
+"Bodmer/TFT_eSPI" ["l"="-15.328,-40.9", "c"=210]
+"olikraus/u8glib" ["l"="-13.658,-41.641", "c"=812]
 "leka/moti" ["l"="-13.49,-42.041"]
-"osx-cross/homebrew-avr" ["l"="-14.209,-42.348"]
+"osx-cross/homebrew-avr" ["l"="-14.209,-42.348", "c"=820]
 "UECIDE/UECIDE" ["l"="-13.514,-42.038"]
-"GreyGnome/PinChangeInt" ["l"="-13.21,-42.16"]
-"GreyGnome/EnableInterrupt" ["l"="-13.202,-42.181"]
-"NicoHood/PinChangeInterrupt" ["l"="-13.236,-42.177"]
-"NicoHood/IRLremote" ["l"="2.974,-5.095"]
+"PaulStoffregen/OneWire" ["l"="-13.785,-41.552", "c"=812]
 "thijse/Arduino-EEPROMEx" ["l"="-13.311,-42.214"]
+"GreyGnome/PinChangeInt" ["l"="-13.21,-42.16"]
+"NicoHood/PinChangeInterrupt" ["l"="-13.236,-42.177"]
+"arduino/arduino-pro-ide" ["l"="-15.201,-40.877", "c"=210]
+"NicoHood/IRLremote" ["l"="2.974,-5.095", "c"=472]
 "forntoh/LcdMenu" ["l"="-13.324,-42.322"]
+"h2zero/NimBLE-Arduino" ["l"="-15.801,-42.189", "c"=387]
 "PaulStoffregen/TimerThree" ["l"="-13.263,-42.187"]
-"PaulStoffregen/OneWire" ["l"="-13.785,-41.552"]
-"sensorium/Mozzi" ["l"="37.145,6.051"]
+"sensorium/Mozzi" ["l"="37.145,6.051", "c"=494]
+"damellis/attiny" ["l"="-14.029,-42.244", "c"=820]
 "heliosproj/HeliOS" ["l"="-13.334,-42.1"]
 "andykarpov/TEA5767" ["l"="-13.106,-42.351"]
 "pu2clr/RDA5807" ["l"="-13.064,-42.347"]
@@ -603,86 +697,93 @@ digraph G {
 "sparkfun/Si4703_FM_Tuner_Evaluation_Board" ["l"="-13.087,-42.314"]
 "sparkfun/SparkFun_Si4703_Arduino_Library" ["l"="-13.123,-42.337"]
 "ArduinoGetStarted/output" ["l"="-13.398,-42.284"]
-"PaulStoffregen/AltSoftSerial" ["l"="-13.846,-41.72"]
+"PaulStoffregen/AltSoftSerial" ["l"="-13.846,-41.72", "c"=812]
 "mmarchetti/DirectIO" ["l"="-13.157,-42.162"]
-"rambo/TinyWire" ["l"="-14.081,-42.205"]
-"rocketscream/Low-Power" ["l"="-13.968,-42.276"]
+"rambo/TinyWire" ["l"="-14.081,-42.205", "c"=820]
+"tardate/LittleArduinoProjects" ["l"="-14.061,-42.224", "c"=820]
 "pu2clr/SI4844" ["l"="-13.04,-42.368"]
 "pu2clr/SI470X" ["l"="-13.037,-42.349"]
 "hideakitai/ESP32SPISlave" ["l"="-13.155,-42.116"]
 "pu2clr/AKC695X" ["l"="-13.022,-42.381"]
 "pstolarz/CoopThreads" ["l"="-13.39,-42.349"]
 "ikeyasu/arduino-gmock-sample" ["l"="-13.631,-41.932"]
-"br3ttb/Arduino-PID-Library" ["l"="57.626,10.649"]
-"PaulStoffregen/cores" ["l"="37.124,5.708"]
-"luni64/TeensyStep" ["l"="-20.111,-43.89"]
-"tttapa/MIDI_controller" ["l"="37.018,6.052"]
-"datacute/Tiny4kOLED" ["l"="-14.129,-42.213"]
-"adafruit/Adafruit_SSD1306" ["l"="-13.717,-41.576"]
-"olikraus/U8g2_Arduino" ["l"="-13.602,-41.674"]
-"ThingPulse/esp8266-oled-ssd1306" ["l"="-15.325,-40.989"]
-"greiman/SdFat" ["l"="-13.811,-41.71"]
-"sumotoy/SSD_13XX" ["l"="-13.607,-41.783"]
-"bitbank2/ss_oled" ["l"="-15.555,-41.994"]
-"MCUdude/MiniCore" ["l"="-14.05,-42.286"]
-"technoblogy/tiny-i2c" ["l"="-14.175,-42.189"]
+"PaulStoffregen/cores" ["l"="37.124,5.708", "c"=494]
+"luni64/TeensyStep" ["l"="-20.111,-43.89", "c"=624]
+"tttapa/MIDI_controller" ["l"="37.018,6.052", "c"=494]
+"datacute/Tiny4kOLED" ["l"="-14.129,-42.213", "c"=820]
+"adafruit/Adafruit_SSD1306" ["l"="-13.717,-41.576", "c"=812]
+"olikraus/U8g2_Arduino" ["l"="-13.602,-41.674", "c"=812]
+"ThingPulse/esp8266-oled-ssd1306" ["l"="-15.325,-40.989", "c"=210]
+"sumotoy/SSD_13XX" ["l"="-13.607,-41.783", "c"=812]
+"bitbank2/ss_oled" ["l"="-15.555,-41.994", "c"=387]
+"MCUdude/MiniCore" ["l"="-14.05,-42.286", "c"=820]
+"technoblogy/tiny-i2c" ["l"="-14.175,-42.189", "c"=820]
 "ShawnHymel/introduction-to-fpga" ["l"="-13.27,-42.054"]
-"ShawnHymel/tinyml-example-anomaly-detection" ["l"="-16.058,-42.467"]
+"ShawnHymel/tinyml-example-anomaly-detection" ["l"="-16.058,-42.467", "c"=387]
 "ShawnHymel/ei-keyword-spotting" ["l"="-13.247,-42.03"]
-"klonyyy/MCUViewer" ["l"="-17.821,-43.04"]
-"cpq/embedded-network-programming-guide" ["l"="-17.946,-42.95"]
+"klonyyy/MCUViewer" ["l"="-17.821,-43.04", "c"=55]
+"cpq/embedded-network-programming-guide" ["l"="-17.946,-42.95", "c"=55]
+"blackout314/awesome-raspberry-pi" ["l"="25.634,-26.163", "c"=32]
+"sui77/rc-switch" ["l"="-15.313,-41.153", "c"=210]
 "ShawnHymel/computer-vision-with-embedded-machine-learning" ["l"="-13.233,-41.997"]
 "edgeimpulse/linux-sdk-python" ["l"="-13.225,-41.976"]
 "JChristensen/Timer" ["l"="-13.25,-42.323"]
-"PaulStoffregen/TimeAlarms" ["l"="-13.795,-41.658"]
+"PaulStoffregen/TimeAlarms" ["l"="-13.795,-41.658", "c"=812]
+"bportaluri/WiFiEsp" ["l"="-15.007,-41.099", "c"=210]
+"fdebrabander/Arduino-LiquidCrystal-I2C-library" ["l"="-13.723,-41.543", "c"=812]
 "mike-matera/ArduinoSTL" ["l"="-13.508,-42.139"]
 "vancegroup/arduino-boost" ["l"="-13.527,-42.159"]
 "andysworkshop/avr-stl" ["l"="-13.493,-42.125"]
 "zacsketches/Arduino_Vector" ["l"="-13.474,-42.162"]
 "vancegroup/stlport-avr" ["l"="-13.494,-42.152"]
 "AndreiDegtiarev/AWind" ["l"="-13.5,-42.169"]
-"me-no-dev/EspExceptionDecoder" ["l"="-13.956,-40.702"]
-"JChristensen/Timezone" ["l"="-13.774,-41.653"]
-"PowerBroker2/DFPlayerMini_Fast" ["l"="-15.829,-38.768"]
+"me-no-dev/EspExceptionDecoder" ["l"="-13.956,-40.702", "c"=645]
+"JChristensen/Timezone" ["l"="-13.774,-41.653", "c"=812]
+"arduino/arduino-builder" ["l"="-20.152,-42.977", "c"=856]
+"PowerBroker2/DFPlayerMini_Fast" ["l"="-15.829,-38.768", "c"=64]
 "mroger/TEA5767" ["l"="-13.097,-42.372"]
+"olikraus/ucglib" ["l"="-13.636,-41.712", "c"=812]
+"buserror/simavr" ["l"="-14.115,-42.25", "c"=820]
 "feilipu/miniAVRfreeRTOS" ["l"="-13.355,-42.117"]
-"stm32duino/STM32FreeRTOS" ["l"="-14.836,-40.909"]
-"Optiboot/optiboot" ["l"="-14.029,-42.276"]
-"rogerclarkmelbourne/Arduino_STM32" ["l"="-17.634,-42.961"]
-"platformio/platform-ststm32" ["l"="-14.936,-40.907"]
-"arduino/ArduinoCore-avr" ["l"="-15.221,-40.861"]
-"stm32duino/Arduino_Core_STM32" ["l"="-17.593,-42.96"]
+"stm32duino/STM32FreeRTOS" ["l"="-14.836,-40.909", "c"=210]
+"Optiboot/optiboot" ["l"="-14.029,-42.276", "c"=820]
+"rogerclarkmelbourne/Arduino_STM32" ["l"="-17.634,-42.961", "c"=55]
+"platformio/platform-ststm32" ["l"="-14.936,-40.907", "c"=210]
+"stm32duino/Arduino_Core_STM32" ["l"="-17.593,-42.96", "c"=55]
 "DavidAndrews/Arduino_LCD_Menu" ["l"="-13.305,-42.314"]
 "qery/qMenuSystem" ["l"="-13.311,-42.365"]
-"Lembed/Awesome-arduino" ["l"="-13.354,-42.225"]
-"blackout314/awesome-raspberry-pi" ["l"="25.634,-26.163"]
-"agucova/awesome-esp" ["l"="-13.884,-40.85"]
-"ajaymnk/open-electronics" ["l"="25.853,-26.594"]
-"SolidSoils/Arduino" ["l"="-15.671,-40.907"]
+"ajaymnk/open-electronics" ["l"="25.853,-26.594", "c"=32]
+"SolidSoils/Arduino" ["l"="-15.671,-40.907", "c"=210]
 "m8/awesome-arduino" ["l"="-13.392,-42.215"]
-"ibaaj/awesome-OpenSourcePhotography" ["l"="25.93,-26.185"]
-"erichs/awesome-awesome" ["l"="25.848,-26.097"]
-"gmag11/painlessMesh" ["l"="-13.804,-40.659"]
-"256dpi/arduino-mqtt" ["l"="-13.87,-40.672"]
-"marvinroger/async-mqtt-client" ["l"="-13.915,-40.713"]
-"vshymanskyy/TinyGSM" ["l"="-15.391,-40.924"]
-"ayushsharma82/WebSerial" ["l"="-13.882,-40.773"]
-"me-no-dev/ESPAsyncWebServer" ["l"="-15.3,-40.961"]
+"ibaaj/awesome-OpenSourcePhotography" ["l"="25.93,-26.185", "c"=32]
+"erichs/awesome-awesome" ["l"="25.848,-26.097", "c"=32]
+"gmag11/painlessMesh" ["l"="-13.804,-40.659", "c"=645]
+"marvinroger/async-mqtt-client" ["l"="-13.915,-40.713", "c"=645]
+"vshymanskyy/TinyGSM" ["l"="-15.391,-40.924", "c"=210]
+"ayushsharma82/WebSerial" ["l"="-13.882,-40.773", "c"=645]
+"me-no-dev/ESPAsyncWebServer" ["l"="-15.3,-40.961", "c"=210]
+"laurb9/StepperDriver" ["l"="-20.135,-43.904", "c"=624]
+"nickgammon/arduino_sketches" ["l"="-14,-42.267", "c"=820]
 "tinkerspy/Automaton-Machine-Editor" ["l"="-13.4,-42.243"]
 "tinkerspy/Automaton-Esp8266" ["l"="-13.406,-42.234"]
 "jrullan/StateMachine" ["l"="-13.432,-42.257"]
 "KrisKasprzak/Adafruit_ILI9341_Menu" ["l"="-13.327,-42.45"]
 "KrisKasprzak/ILI9341_t3_Menu" ["l"="-13.324,-42.436"]
+"javl/image2cpp" ["l"="-18,-43.874", "c"=55]
 "upiir/arduino_oled_menu" ["l"="-13.318,-42.41"]
 "rpavlik/StandardCplusplus" ["l"="-13.552,-42.166"]
+"TMRh20/TMRpcm" ["l"="-13.903,-42.215", "c"=820]
 "mikaelpatel/Arduino-Scheduler" ["l"="-13.433,-42.061"]
 "jfpoilpret/fast-arduino-lib" ["l"="-13.454,-42.075"]
+"Robot-Will/Stino" ["l"="-13.928,-42.335", "c"=820]
 "0xPIT/menu" ["l"="-13.233,-42.206"]
-"0xPIT/reflowOvenController" ["l"="-18.995,-41.866"]
+"0xPIT/reflowOvenController" ["l"="-18.995,-41.866", "c"=604]
 "MajicDesigns/MD_Menu" ["l"="-13.339,-42.333"]
+"maxritter/diy-thermocam" ["l"="-18.568,-43.064", "c"=55]
 "gfvalvo/NewEncoder" ["l"="-13.162,-42.254"]
 "IronSavior/dsm2_tx" ["l"="-13.589,-42.002"]
-"adafruit/Adafruit_Sensor" ["l"="-13.812,-41.575"]
-"bblanchon/ArduinoJson" ["l"="-15.29,-40.988"]
+"ricmoo/QRCode" ["l"="-19.855,-27.715", "c"=107]
+"adafruit/Adafruit_Sensor" ["l"="-13.812,-41.575", "c"=812]
+"bblanchon/ArduinoJson" ["l"="-15.29,-40.988", "c"=210]
 "bhagman/SoftPWM" ["l"="-13.195,-42.321"]
 }

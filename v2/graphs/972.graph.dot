@@ -1,6 +1,8 @@
 digraph G {
 "ktechlab/ktechlab" -> "Qucs/qucs"
 "ktechlab/ktechlab" -> "drahnr/oregano"
+"KiCad/kicad-source-mirror" -> "Qucs/qucs" ["e"=1]
+"KiCad/kicad-source-mirror" -> "ra3xdh/qucs_s" ["e"=1]
 "ALIGN-analoglayout/ALIGN-public" -> "magical-eda/MAGICAL" ["e"=1]
 "ALIGN-analoglayout/ALIGN-public" -> "ucb-art/BAG_framework"
 "ALIGN-analoglayout/ALIGN-public" -> "idea-fasoc/OpenFASOC"
@@ -16,7 +18,18 @@ digraph G {
 "ALIGN-analoglayout/ALIGN-public" -> "patrickschulz/openPCells" ["e"=1]
 "ALIGN-analoglayout/ALIGN-public" -> "RTimothyEdwards/netgen"
 "ALIGN-analoglayout/ALIGN-public" -> "purdue-onchip/gds2Para" ["e"=1]
+"thliebig/openEMS-Project" -> "Qucs/qucs" ["e"=1]
+"magical-eda/MAGICAL" -> "ALIGN-analoglayout/ALIGN-public" ["e"=1]
+"magical-eda/MAGICAL" -> "ucb-art/BAG_framework" ["e"=1]
+"magical-eda/MAGICAL" -> "ucb-art/BAG2_cds_ff_mpt" ["e"=1]
+"karlrupp/microprocessor-trend-data" -> "The-OpenROAD-Project/asap7-old" ["e"=1]
+"tilk/digitaljs" -> "circuitsim/circuit-simulator" ["e"=1]
+"zachjs/sv2v" -> "VLSIDA/OpenRAM" ["e"=1]
 "ucb-art/BAG2_cds_ff_mpt" -> "ucb-art/BAG_framework"
+"lnis-uofu/OpenFPGA" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
+"lnis-uofu/OpenFPGA" -> "VLSIDA/OpenRAM" ["e"=1]
+"lnis-uofu/OpenFPGA" -> "siliconcompiler/siliconcompiler" ["e"=1]
+"The-OpenROAD-Project/TritonCTS" -> "The-OpenROAD-Project/TritonSizer" ["e"=1]
 "Qucs/qucs" -> "ra3xdh/qucs_s"
 "Qucs/qucs" -> "Xyce/Xyce"
 "Qucs/qucs" -> "Qucs/ADMS"
@@ -32,6 +45,14 @@ digraph G {
 "Qucs/qucs" -> "easyw/RF-tools-KiCAD" ["e"=1]
 "Qucs/qucs" -> "thomaslepoix/Qucs-RFlayout" ["e"=1]
 "Qucs/qucs" -> "KLayout/klayout"
+"berkeley-abc/abc" -> "The-OpenROAD-Project/OpenSTA" ["e"=1]
+"berkeley-abc/abc" -> "The-OpenROAD-Project/OpenROAD" ["e"=1]
+"berkeley-abc/abc" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
+"berkeley-abc/abc" -> "The-OpenROAD-Project/OpenROAD-flow-scripts" ["e"=1]
+"bespoke-silicon-group/basejump_stl" -> "VLSIDA/OpenRAM" ["e"=1]
+"pulp-platform/common_cells" -> "VLSIDA/OpenRAM" ["e"=1]
+"limbo018/DREAMPlace" -> "The-OpenROAD-Project/OpenROAD" ["e"=1]
+"acmbpdc/openlib.cs" -> "rajesh-s/computer-architecture-and-systems-resources" ["e"=1]
 "gmagno/spyci" -> "ashwith/pyMOSChar"
 "gmagno/spyci" -> "efabless/cace"
 "RTimothyEdwards/netgen" -> "RTimothyEdwards/qrouter"
@@ -54,6 +75,8 @@ digraph G {
 "PySpice-org/PySpice" -> "idea-fasoc/OpenFASOC"
 "PySpice-org/PySpice" -> "IHP-GmbH/IHP-Open-PDK"
 "PySpice-org/PySpice" -> "ra3xdh/qucs_s"
+"simupy/simupy" -> "PySpice-org/PySpice" ["e"=1]
+"olofk/edalize" -> "siliconcompiler/siliconcompiler" ["e"=1]
 "kunalg123/vsdflow" -> "nickson-jose/vsdstdcelldesign"
 "kunalg123/vsdflow" -> "lakshmi-sathi/avsdpll_1v8"
 "kunalg123/vsdflow" -> "nickson-jose/openlane_build_script"
@@ -161,6 +184,8 @@ digraph G {
 "The-OpenROAD-Project/OpenSTA" -> "RTimothyEdwards/qflow"
 "The-OpenROAD-Project/OpenSTA" -> "chipsalliance/Surelog" ["e"=1]
 "The-OpenROAD-Project/OpenSTA" -> "lsils/mockturtle" ["e"=1]
+"chipsalliance/f4pga" -> "idea-fasoc/OpenFASOC" ["e"=1]
+"chipsalliance/f4pga" -> "hdl/conda-eda" ["e"=1]
 "muhammadaldacher/Modeling-of-10-bit-Pipeline-ADC-and-10-bit-DAC" -> "muhammadaldacher/Modeling-of-4-bit-Flash-ADC-and-4-bit-DAC"
 "muhammadaldacher/Layout-Design-of-an-8x8-SRAM-array" -> "MediniAradhya/A-VLSI-SRAM-8x2-Array-in-Cadence-Virtuoso"
 "muhammadaldacher/Layout-Design-of-an-8x8-SRAM-array" -> "muhammadaldacher/Analog-Design-of-1.5-bit-Pipeline-ADC-And-Boosted-OpAmp"
@@ -185,11 +210,13 @@ digraph G {
 "Qucs/ADMS" -> "pascalkuthe/OpenVAF"
 "Qucs/ADMS" -> "Qucs/qucsator"
 "Qucs/ADMS" -> "analogdevicesinc/vampyre"
+"nunobrum/PyLTSpice" -> "PySpice-org/PySpice" ["e"=1]
 "sunmagnetics/RSFQlib" -> "JoeyDelp/JoSIM"
 "matthschw/ml2tikz" -> "electronics-and-drives/SPAM"
 "atait/klayout-gadgets" -> "usnistgov/SOEN-PDK"
 "electronics-and-drives/SPAM" -> "matthschw/ml2tikz"
 "usnistgov/SOEN-PDK" -> "flaport/condalayout"
+"heitzmann/gdstk" -> "KLayout/klayout" ["e"=1]
 "rajesh-s/computer-architecture-and-systems-resources" -> "drom/awesome-hdl" ["e"=1]
 "rajesh-s/computer-architecture-and-systems-resources" -> "digital-design-hq/Digital-Resources"
 "rajesh-s/computer-architecture-and-systems-resources" -> "ben-marshall/awesome-open-hardware-verification" ["e"=1]
@@ -220,6 +247,7 @@ digraph G {
 "google/skywater-pdk" -> "verilator/verilator" ["e"=1]
 "google/skywater-pdk" -> "olofk/fusesoc" ["e"=1]
 "google/skywater-pdk" -> "lnis-uofu/OpenFPGA" ["e"=1]
+"CMU-HKN/CMU-ECE-CS-Guide" -> "rajesh-s/computer-architecture-and-systems-resources" ["e"=1]
 "The-OpenROAD-Project/OpenROAD" -> "The-OpenROAD-Project/OpenLane"
 "The-OpenROAD-Project/OpenROAD" -> "The-OpenROAD-Project/OpenROAD-flow-scripts"
 "The-OpenROAD-Project/OpenROAD" -> "google/skywater-pdk"
@@ -235,6 +263,7 @@ digraph G {
 "The-OpenROAD-Project/OpenROAD" -> "ucb-bar/chipyard" ["e"=1]
 "The-OpenROAD-Project/OpenROAD" -> "RTimothyEdwards/magic"
 "The-OpenROAD-Project/OpenROAD" -> "The-OpenROAD-Project/RePlAce" ["e"=1]
+"amaranth-lang/amaranth" -> "siliconcompiler/siliconcompiler" ["e"=1]
 "yrrapt/amsat_txrx_ic" -> "yrrapt/caravel_amsat_txrx_ic"
 "yrrapt/amsat_txrx_ic" -> "StefanSchippers/xschem_sky130"
 "The-OpenROAD-Project/OpenROAD-flow-scripts" -> "The-OpenROAD-Project/OpenROAD"
@@ -252,6 +281,7 @@ digraph G {
 "The-OpenROAD-Project/OpenROAD-flow-scripts" -> "OSCC-Project/iEDA" ["e"=1]
 "The-OpenROAD-Project/OpenROAD-flow-scripts" -> "siliconcompiler/siliconcompiler"
 "The-OpenROAD-Project/OpenROAD-flow-scripts" -> "circuitnet/CircuitNet" ["e"=1]
+"manjunath5496/Embedded-Systems-Books" -> "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" ["e"=1]
 "The-OpenROAD-Project/OpenLane" -> "The-OpenROAD-Project/OpenROAD"
 "The-OpenROAD-Project/OpenLane" -> "google/skywater-pdk"
 "The-OpenROAD-Project/OpenLane" -> "VLSIDA/OpenRAM"
@@ -282,6 +312,7 @@ digraph G {
 "StefanSchippers/xschem" -> "efabless/openlane2"
 "StefanSchippers/xschem" -> "gmagno/spyci"
 "StefanSchippers/xschem" -> "bmurmann/EE628"
+"blackhole89/notekit" -> "pfalstad/circuitjs1" ["e"=1]
 "unihd-cag/skillbridge" -> "unnir/CadenceSKILL-Python"
 "unihd-cag/skillbridge" -> "ebecheto/Skill"
 "unihd-cag/skillbridge" -> "cdsgit/cdsgit"
@@ -292,6 +323,9 @@ digraph G {
 "unihd-cag/skillbridge" -> "KenKundert/psf_utils"
 "unihd-cag/skillbridge" -> "electronics-and-drives/SPAM"
 "unihd-cag/skillbridge" -> "MatthewLoveQUB/SKILL_Tools"
+"google/xls" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
+"Artoriuz/OSEE" -> "rajesh-s/computer-architecture-and-systems-resources" ["e"=1]
+"gdsfactory/ubc" -> "flaport/condalayout" ["e"=1]
 "RTimothyEdwards/open_pdks" -> "RTimothyEdwards/magic"
 "RTimothyEdwards/open_pdks" -> "RTimothyEdwards/netgen"
 "RTimothyEdwards/open_pdks" -> "IHP-GmbH/IHP-Open-PDK"
@@ -307,8 +341,10 @@ digraph G {
 "RTimothyEdwards/open_pdks" -> "VLSIDA/OpenRAM"
 "RTimothyEdwards/open_pdks" -> "The-OpenROAD-Project/OpenROAD-flow-scripts"
 "RTimothyEdwards/open_pdks" -> "StefanSchippers/xschem_sky130"
+"gdsfactory/gdsfactory" -> "KLayout/klayout" ["e"=1]
 "kazuhikoarase/simcirjs" -> "circuitsim/circuit-simulator"
 "kazuhikoarase/simcirjs" -> "zupolgec/circuit-simulator"
+"stnolting/neorv32" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
 "hdl/conda-eda" -> "flaport/condalayout"
 "hdl/conda-eda" -> "gdsfactory/skywater130"
 "hdl/conda-eda" -> "gdsfactory/ubc" ["e"=1]
@@ -333,6 +369,8 @@ digraph G {
 "Qucs/qucs-help" -> "Qucs/gnucsator"
 "Qucs/qucsator" -> "Qucs/gnucsator"
 "praharshapm/vsdmixedsignalflow" -> "nickson-jose/vsdstdcelldesign"
+"YosysHQ/oss-cad-suite-build" -> "siliconcompiler/siliconcompiler" ["e"=1]
+"YosysHQ/oss-cad-suite-build" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
 "abdelazeem201/ASIC-Design-Roadmap" -> "m3y54m/FPGA-ASIC-Roadmap"
 "abdelazeem201/ASIC-Design-Roadmap" -> "arm-university/VLSI-Fundamentals-Education-Kit"
 "abdelazeem201/ASIC-Design-Roadmap" -> "abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" ["e"=1]
@@ -364,9 +402,21 @@ digraph G {
 "arm-university/Rapid-Embedded-Education-Kit" -> "arm-university/Internet-of-Things-Education-Kit"
 "arm-university/Rapid-Embedded-Education-Kit" -> "arm-university/Introduction-to-Computer-Architecture-Education-Kit"
 "arm-university/Rapid-Embedded-Education-Kit" -> "arm-university/Graphical-Micro-Architecture-Simulator"
+"scikit-rf/scikit-rf" -> "Qucs/qucs" ["e"=1]
+"scikit-rf/scikit-rf" -> "Xyce/Xyce" ["e"=1]
+"thliebig/openEMS" -> "Qucs/qucs" ["e"=1]
+"heitzmann/gdspy" -> "KLayout/klayout" ["e"=1]
 "ncsu-eda/FreePDK3" -> "mflowgen/freepdk-45nm"
 "ncsu-eda/FreePDK3" -> "The-OpenROAD-Project/asap7-old"
+"LibrePCB/LibrePCB" -> "ra3xdh/qucs_s" ["e"=1]
+"LibrePCB/LibrePCB" -> "Qucs/qucs" ["e"=1]
+"verilog-to-routing/vtr-verilog-to-routing" -> "The-OpenROAD-Project/OpenROAD" ["e"=1]
+"verilog-to-routing/vtr-verilog-to-routing" -> "The-OpenROAD-Project/OpenSTA" ["e"=1]
+"verilog-to-routing/vtr-verilog-to-routing" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
 "ngspice/ngspice" -> "johnkustin/bandgapReferenceCircuit"
+"sudhamshu091/32-Verilog-Mini-Projects" -> "abdelazeem201/ASIC-Design-Roadmap" ["e"=1]
+"mikeroyal/RISC-V-Guide" -> "mattvenn/awesome-opensource-asic-resources" ["e"=1]
+"mikeroyal/RISC-V-Guide" -> "arm-university/VLSI-Fundamentals-Education-Kit" ["e"=1]
 "idea-fasoc/OpenFASOC" -> "RTimothyEdwards/open_pdks"
 "idea-fasoc/OpenFASOC" -> "sscs-ose/sscs-ose-code-a-chip.github.io"
 "idea-fasoc/OpenFASOC" -> "google/gf180mcu-pdk"
@@ -411,6 +461,8 @@ digraph G {
 "muhammadaldacher/Analog-Design-of-Asynchronous-SAR-ADC" -> "muhammadaldacher/Modeling-of-10-bit-Pipeline-ADC-and-10-bit-DAC"
 "muhammadaldacher/Analog-Design-of-Asynchronous-SAR-ADC" -> "muhammadaldacher/Analog-Design-of-Bootstrapped-Switch"
 "muhammadaldacher/Analog-Design-of-Asynchronous-SAR-ADC" -> "bmurmann/Book-on-gm-ID-design"
+"abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" -> "abdelazeem201/Design-and-ASIC-Implementation-of-32-Point-FFT-Processor" ["e"=1]
+"YosysHQ/arachne-pnr" -> "rubund/graywolf" ["e"=1]
 "bluecmd/learn-sky130" -> "StefanSchippers/xschem_sky130"
 "bluecmd/learn-sky130" -> "westonb/sky130-analog"
 "bluecmd/learn-sky130" -> "laurentc2/SKY130_for_KLayout"
@@ -419,6 +471,7 @@ digraph G {
 "lakshmi-sathi/avsdpll_1v8" -> "praharshapm/vsdmixedsignalflow"
 "lakshmi-sathi/avsdpll_1v8" -> "nickson-jose/vsdstdcelldesign"
 "lakshmi-sathi/avsdpll_1v8" -> "bluecmd/learn-sky130"
+"stevehoover/LF-Building-a-RISC-V-CPU-Core" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
 "efabless/chipignite-resources" -> "s-holst/GDS2WebGL" ["e"=1]
 "dan-fritchman/Layout21" -> "Vlsir/Vlsir"
 "dan-fritchman/Layout21" -> "Vlsir/Hdl21Schematics"
@@ -439,6 +492,8 @@ digraph G {
 "siliconcompiler/siliconcompiler" -> "chipsalliance/UHDM" ["e"=1]
 "siliconcompiler/siliconcompiler" -> "pulp-platform/common_cells" ["e"=1]
 "siliconcompiler/siliconcompiler" -> "zachjs/sv2v" ["e"=1]
+"os-fpga/open-source-fpga-resource" -> "mattvenn/awesome-opensource-asic-resources" ["e"=1]
+"os-fpga/open-source-fpga-resource" -> "siliconcompiler/siliconcompiler" ["e"=1]
 "arm-university/Digital-Signal-Processing-Education-Kit" -> "arm-university/Real-Time-Operating-Systems-Design-And-Programming-Education-Kit"
 "arm-university/Digital-Signal-Processing-Education-Kit" -> "arm-university/Efficient-Embedded-Systems-Design-Education-Kit"
 "arm-university/Digital-Signal-Processing-Education-Kit" -> "arm-university/Embedded-Linux-Education-Kit"
@@ -468,6 +523,9 @@ digraph G {
 "efabless/OpenLane" -> "efabless/foss-asic-tools"
 "efabless/OpenLane" -> "nickson-jose/vsdstdcelldesign"
 "efabless/OpenLane" -> "nickson-jose/openlane_build_script"
+"OpenTimer/OpenTimer" -> "The-OpenROAD-Project/OpenSTA" ["e"=1]
+"OpenTimer/OpenTimer" -> "The-OpenROAD-Project/OpenROAD" ["e"=1]
+"OpenTimer/OpenTimer" -> "VLSIDA/OpenRAM" ["e"=1]
 "ShonTaware/SRAM_SKY130" -> "vsdip/vsdsram_sky130"
 "cdsgit/cdsgit" -> "ebecheto/Skill"
 "cdsgit/cdsgit" -> "unihd-cag/skillbridge"
@@ -483,6 +541,7 @@ digraph G {
 "cdsgit/cdsgit" -> "matthschw/ml2tikz"
 "efabless/caravel_mpw-one" -> "efabless/mpw_precheck"
 "efabless/caravel_mpw-one" -> "efabless/caravel_user_project"
+"eelab-dev/EEcircuit" -> "dreoilin/pygmid" ["e"=1]
 "StefanSchippers/xschem_sky130" -> "bluecmd/learn-sky130"
 "AUCOHL/DFFRAM" -> "AUCOHL/Fault"
 "AUCOHL/DFFRAM" -> "AUCOHL/Lighter"
@@ -493,6 +552,7 @@ digraph G {
 "vsdip/vsdsram_sky130" -> "vsdip/avsddac_3v3_sky130_v2"
 "ananthchellappa/SKILL" -> "matthschw/ml2tikz"
 "ananthchellappa/SKILL" -> "ebecheto/Skill"
+"delftopenhardware/awesome-open-hardware" -> "aolofsson/awesome-opensource-hardware" ["e"=1]
 "aolofsson/awesome-opensource-hardware" -> "aolofsson/awesome-semiconductor-startups"
 "aolofsson/awesome-opensource-hardware" -> "aolofsson/awesome-opensource-hardware-repos"
 "aolofsson/awesome-opensource-hardware" -> "siliconcompiler/siliconcompiler"
@@ -508,6 +568,9 @@ digraph G {
 "aolofsson/awesome-opensource-hardware" -> "olofk/serv" ["e"=1]
 "aolofsson/awesome-opensource-hardware" -> "olofk/edalize" ["e"=1]
 "aolofsson/awesome-opensource-hardware" -> "BrunoLevy/learn-fpga" ["e"=1]
+"google-research/circuit_training" -> "The-OpenROAD-Project/OpenROAD" ["e"=1]
+"google-research/circuit_training" -> "ALIGN-analoglayout/ALIGN-public" ["e"=1]
+"google-research/circuit_training" -> "siliconcompiler/siliconcompiler" ["e"=1]
 "arm-university/Introduction-to-Computer-Architecture-Education-Kit" -> "arm-university/Introduction-to-SoC-Design-Education-Kit"
 "arm-university/Introduction-to-Computer-Architecture-Education-Kit" -> "arm-university/Advanced-System-on-Chip-Design-Education-Kit"
 "arm-university/Introduction-to-Computer-Architecture-Education-Kit" -> "arm-university/VLSI-Fundamentals-Education-Kit"
@@ -664,6 +727,7 @@ digraph G {
 "IHP-GmbH/IHP-Open-PDK" -> "efabless/caravel"
 "IHP-GmbH/IHP-Open-PDK" -> "siliconcompiler/siliconcompiler"
 "IHP-GmbH/IHP-Open-PDK" -> "bmurmann/Book-on-MOS-stages"
+"OSCC-Project/iEDA" -> "The-OpenROAD-Project/OpenROAD-flow-scripts" ["e"=1]
 "ebecheto/Skill" -> "unnir/CadenceSKILL-Python"
 "ebecheto/Skill" -> "cdsgit/cdsgit"
 "ebecheto/Skill" -> "unihd-cag/skillbridge"
@@ -796,6 +860,9 @@ digraph G {
 "jaijeet/VAPP" -> "jaijeet/MAPP"
 "google/globalfoundries-pdks" -> "google/globalfoundries-pdk-libs-gf180mcu_fd_pr"
 "dreoilin/pygmid" -> "medwatt/gmid"
+"hneemann/Digital" -> "sharpie7/circuitjs1" ["e"=1]
+"m3y54m/Embedded-Engineering-Roadmap" -> "m3y54m/FPGA-ASIC-Roadmap" ["e"=1]
+"devbisme/skidl" -> "PySpice-org/PySpice" ["e"=1]
 "m3y54m/FPGA-ASIC-Roadmap" -> "abdelazeem201/ASIC-Design-Roadmap"
 "m3y54m/FPGA-ASIC-Roadmap" -> "m3y54m/Embedded-Engineering-Roadmap" ["e"=1]
 "m3y54m/FPGA-ASIC-Roadmap" -> "arm-university/VLSI-Fundamentals-Education-Kit"
@@ -817,11 +884,16 @@ digraph G {
 "pfalstad/circuitjs1" -> "fritzing/fritzing-app" ["e"=1]
 "pfalstad/circuitjs1" -> "pfalstad/ripplegl"
 "pfalstad/circuitjs1" -> "ricktu288/ray-optics" ["e"=1]
+"kahypar/kahypar" -> "NTU-LaDS-II/FAN_ATPG" ["e"=1]
 "arm-university/Digital-Signal-Processing-using-Arm-Cortex-M-based-Microcontrollers" -> "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers"
 "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" -> "arm-university/Digital-Signal-Processing-using-Arm-Cortex-M-based-Microcontrollers"
 "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" -> "arm-university/Fundamentals-of-System-on-Chip-Design-on-Arm-Cortex-M-Microcontrollers"
 "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" -> "arm-university/Efficient-Embedded-Systems-Design-Education-Kit"
 "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" -> "arm-university/Real-Time-Operating-Systems-Design-And-Programming-Education-Kit"
+"YosysHQ/yosys" -> "The-OpenROAD-Project/OpenROAD" ["e"=1]
+"YosysHQ/yosys" -> "The-OpenROAD-Project/OpenLane" ["e"=1]
+"YosysHQ/yosys" -> "google/skywater-pdk" ["e"=1]
+"riscv/learn" -> "aolofsson/awesome-opensource-hardware" ["e"=1]
 "VLSIDA/OpenRAM" -> "The-OpenROAD-Project/OpenLane"
 "VLSIDA/OpenRAM" -> "RTimothyEdwards/magic"
 "VLSIDA/OpenRAM" -> "google/skywater-pdk"
@@ -848,6 +920,10 @@ digraph G {
 "bmurmann/EE628" -> "medwatt/gmid"
 "bmurmann/EE628" -> "johnkustin/bandgapReferenceCircuit"
 "bmurmann/EE628" -> "dreoilin/pygmid"
+"circuitikz/circuitikz" -> "mph-/lcapy" ["e"=1]
+"circuitikz/circuitikz" -> "Qucs/ADMS" ["e"=1]
+"circuitikz/circuitikz" -> "PySpice-org/PySpice" ["e"=1]
+"open-logic/open-logic" -> "iic-jku/IIC-OSIC-TOOLS" ["e"=1]
 "unnir/CadenceSKILL-Python" -> "ebecheto/Skill"
 "unnir/CadenceSKILL-Python" -> "MatthewLoveQUB/SKILL_Tools"
 "unnir/CadenceSKILL-Python" -> "unihd-cag/skillbridge"
@@ -859,6 +935,7 @@ digraph G {
 "unnir/CadenceSKILL-Python" -> "benvarkey/JuVi"
 "pfalstad/ripplegl" -> "pfalstad/ray-optics"
 "drahnr/oregano" -> "imr/ngspice"
+"drom/awesome-hdl" -> "aolofsson/awesome-opensource-hardware" ["e"=1]
 "KLayout/klayout" -> "heitzmann/gdstk" ["e"=1]
 "KLayout/klayout" -> "gdsfactory/gdsfactory" ["e"=1]
 "KLayout/klayout" -> "heitzmann/gdspy" ["e"=1]
@@ -874,11 +951,17 @@ digraph G {
 "KLayout/klayout" -> "IHP-GmbH/IHP-Open-PDK"
 "KLayout/klayout" -> "Xyce/Xyce"
 "KLayout/klayout" -> "google/skywater-pdk"
+"pymtl/pymtl3" -> "mflowgen/mflowgen" ["e"=1]
+"horizon-eda/horizon" -> "ra3xdh/qucs_s" ["e"=1]
 "iic-jku/analog-circuit-design" -> "dreoilin/pygmid"
 "iic-jku/analog-circuit-design" -> "iic-jku/Circuit-Designers-Etiquette"
 "iic-jku/analog-circuit-design" -> "bmurmann/EE628"
 "iic-jku/analog-circuit-design" -> "TinyTapeout/xschem-viewer"
+"OpenCircuits/OpenCircuits" -> "circuitsim/circuit-simulator" ["e"=1]
 "arm-university/Embedded-Systems-Fundamentals" -> "arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers"
+"trilomix/GDS3D" -> "idea-fasoc/OpenFASOC" ["e"=1]
+"trilomix/GDS3D" -> "efabless/openlane2" ["e"=1]
+"trilomix/GDS3D" -> "AUCOHL/DFFRAM" ["e"=1]
 "ra3xdh/qucs_s" -> "Qucs/qucs"
 "ra3xdh/qucs_s" -> "Xyce/Xyce"
 "ra3xdh/qucs_s" -> "StefanSchippers/xschem"
@@ -905,35 +988,55 @@ digraph G {
 "ktechlab/ktechlab" ["l"="33.005,-4.458"]
 "Qucs/qucs" ["l"="32.991,-4.506"]
 "drahnr/oregano" ["l"="33.015,-4.489"]
+"KiCad/kicad-source-mirror" ["l"="-19.009,-41.547", "c"=604]
+"ra3xdh/qucs_s" ["l"="32.957,-4.524"]
 "ALIGN-analoglayout/ALIGN-public" ["l"="32.896,-4.602"]
-"magical-eda/MAGICAL" ["l"="32.966,-5.605"]
+"magical-eda/MAGICAL" ["l"="32.966,-5.605", "c"=830]
 "ucb-art/BAG_framework" ["l"="32.906,-4.688"]
 "idea-fasoc/OpenFASOC" ["l"="32.877,-4.599"]
 "IHP-GmbH/IHP-Open-PDK" ["l"="32.876,-4.58"]
 "StefanSchippers/xschem" ["l"="32.893,-4.569"]
-"ALIGN-analoglayout/AnalogDetailedRouter" ["l"="32.925,-5.647"]
+"ALIGN-analoglayout/AnalogDetailedRouter" ["l"="32.925,-5.647", "c"=830]
 "iic-jku/IIC-OSIC-TOOLS" ["l"="32.863,-4.589"]
 "RTimothyEdwards/open_pdks" ["l"="32.86,-4.568"]
 "dan-fritchman/Hdl21" ["l"="32.917,-4.657"]
 "Xyce/Xyce" ["l"="32.934,-4.548"]
-"The-OpenROAD-Project/RePlAce" ["l"="32.983,-5.548"]
-"circuitnet/CircuitNet" ["l"="33.04,-5.565"]
-"patrickschulz/openPCells" ["l"="33.696,-4.768"]
+"The-OpenROAD-Project/RePlAce" ["l"="32.983,-5.548", "c"=830]
+"circuitnet/CircuitNet" ["l"="33.04,-5.565", "c"=830]
+"patrickschulz/openPCells" ["l"="33.696,-4.768", "c"=661]
 "RTimothyEdwards/netgen" ["l"="32.885,-4.528"]
-"purdue-onchip/gds2Para" ["l"="33.634,-4.81"]
+"purdue-onchip/gds2Para" ["l"="33.634,-4.81", "c"=661]
+"thliebig/openEMS-Project" ["l"="33.474,-4.936", "c"=661]
 "ucb-art/BAG2_cds_ff_mpt" ["l"="32.902,-4.718"]
-"ra3xdh/qucs_s" ["l"="32.957,-4.524"]
+"karlrupp/microprocessor-trend-data" ["l"="63.28,-1.292", "c"=175]
+"The-OpenROAD-Project/asap7-old" ["l"="32.859,-4.716"]
+"tilk/digitaljs" ["l"="31.761,-28.369", "c"=1078]
+"circuitsim/circuit-simulator" ["l"="33.066,-4.449"]
+"zachjs/sv2v" ["l"="32.93,-3.621", "c"=180]
+"VLSIDA/OpenRAM" ["l"="32.808,-4.559"]
+"lnis-uofu/OpenFPGA" ["l"="32.92,-3.748", "c"=180]
+"The-OpenROAD-Project/OpenLane" ["l"="32.829,-4.559"]
+"siliconcompiler/siliconcompiler" ["l"="32.799,-4.585"]
+"The-OpenROAD-Project/TritonCTS" ["l"="32.89,-5.568", "c"=830]
+"The-OpenROAD-Project/TritonSizer" ["l"="33.049,-4.353"]
 "Qucs/ADMS" ["l"="33.004,-4.524"]
 "imr/ngspice" ["l"="32.977,-4.531"]
-"scikit-rf/scikit-rf" ["l"="33.453,-4.912"]
-"thliebig/openEMS-Project" ["l"="33.474,-4.936"]
-"thliebig/openEMS" ["l"="33.484,-4.907"]
+"scikit-rf/scikit-rf" ["l"="33.453,-4.912", "c"=661]
+"thliebig/openEMS" ["l"="33.484,-4.907", "c"=661]
 "PySpice-org/PySpice" ["l"="32.954,-4.559"]
-"KiCad/kicad-source-mirror" ["l"="-19.009,-41.547"]
 "ahkab/ahkab" ["l"="33.021,-4.532"]
-"easyw/RF-tools-KiCAD" ["l"="-18.979,-41.617"]
-"thomaslepoix/Qucs-RFlayout" ["l"="33.487,-4.963"]
+"easyw/RF-tools-KiCAD" ["l"="-18.979,-41.617", "c"=604]
+"thomaslepoix/Qucs-RFlayout" ["l"="33.487,-4.963", "c"=661]
 "KLayout/klayout" ["l"="32.896,-4.541"]
+"berkeley-abc/abc" ["l"="33.043,-5.634", "c"=830]
+"The-OpenROAD-Project/OpenSTA" ["l"="32.801,-4.51"]
+"The-OpenROAD-Project/OpenROAD" ["l"="32.792,-4.535"]
+"The-OpenROAD-Project/OpenROAD-flow-scripts" ["l"="32.829,-4.541"]
+"bespoke-silicon-group/basejump_stl" ["l"="32.907,-3.588", "c"=180]
+"pulp-platform/common_cells" ["l"="31.746,-3.764", "c"=188]
+"limbo018/DREAMPlace" ["l"="33.007,-5.56", "c"=830]
+"acmbpdc/openlib.cs" ["l"="26.274,-25.814", "c"=32]
+"rajesh-s/computer-architecture-and-systems-resources" ["l"="32.74,-4.634"]
 "gmagno/spyci" ["l"="32.965,-4.607"]
 "ashwith/pyMOSChar" ["l"="32.964,-4.623"]
 "efabless/cace" ["l"="32.936,-4.636"]
@@ -942,16 +1045,15 @@ digraph G {
 "RTimothyEdwards/XCircuit" ["l"="32.858,-4.524"]
 "efabless/mpw_precheck" ["l"="32.892,-4.489"]
 "ngspice/ngspice" ["l"="32.997,-4.619"]
-"devbisme/skidl" ["l"="-18.989,-41.572"]
+"devbisme/skidl" ["l"="-18.989,-41.572", "c"=604]
+"simupy/simupy" ["l"="62.418,34.835", "c"=405]
+"olofk/edalize" ["l"="32.923,-3.679", "c"=180]
 "kunalg123/vsdflow" ["l"="32.828,-4.422"]
 "nickson-jose/vsdstdcelldesign" ["l"="32.836,-4.391"]
 "lakshmi-sathi/avsdpll_1v8" ["l"="32.804,-4.383"]
 "nickson-jose/openlane_build_script" ["l"="32.848,-4.441"]
 "RTimothyEdwards/qflow" ["l"="32.833,-4.508"]
-"VLSIDA/OpenRAM" ["l"="32.808,-4.559"]
-"The-OpenROAD-Project/OpenLane" ["l"="32.829,-4.559"]
 "google/skywater-pdk" ["l"="32.825,-4.588"]
-"The-OpenROAD-Project/OpenROAD" ["l"="32.792,-4.535"]
 "google/gf180mcu-pdk" ["l"="32.859,-4.614"]
 "wrcad/xictools" ["l"="33.05,-4.668"]
 "JoeyDelp/JoSIM" ["l"="33.096,-4.699"]
@@ -960,13 +1062,12 @@ digraph G {
 "Isotel/mixedsim" ["l"="33.004,-4.569"]
 "mph-/lcapy" ["l"="33.049,-4.555"]
 "mph-/lcapy-gui" ["l"="33.082,-4.561"]
-"ckuhlmann/lt2circuitikz" ["l"="-4.522,21.639"]
+"ckuhlmann/lt2circuitikz" ["l"="-4.522,21.639", "c"=276]
 "Lenty/SLiCAP_python" ["l"="33.101,-4.573"]
-"circuitikz/circuitikz" ["l"="-4.514,21.706"]
+"circuitikz/circuitikz" ["l"="-4.514,21.706", "c"=276]
 "giaccone/SpicePy" ["l"="33.073,-4.532"]
 "zupolgec/circuit-simulator" ["l"="33.053,-4.472"]
 "ggventurini/python-deltasigma" ["l"="33.001,-4.595"]
-"circuitsim/circuit-simulator" ["l"="33.066,-4.449"]
 "ignamv/ngspyce" ["l"="33.025,-4.593"]
 "efabless/raven-picorv32" ["l"="32.951,-4.593"]
 "mballance/clusterv-soc" ["l"="32.998,-4.637"]
@@ -991,27 +1092,23 @@ digraph G {
 "sharpie7/circuitjs1" ["l"="33.097,-4.455"]
 "pfalstad/circuitjs1" ["l"="33.101,-4.493"]
 "rubund/graywolf" ["l"="32.818,-4.475"]
-"lnis-uofu/SOFA" ["l"="32.992,-3.795"]
-"The-OpenROAD-Project/OpenSTA" ["l"="32.801,-4.51"]
-"The-OpenROAD-Project/OpenROAD-flow" ["l"="32.841,-5.602"]
+"lnis-uofu/SOFA" ["l"="32.992,-3.795", "c"=180]
+"The-OpenROAD-Project/OpenROAD-flow" ["l"="32.841,-5.602", "c"=830]
 "ashwith/ngspicepy" ["l"="33.049,-4.613"]
-"OpenTimer/OpenTimer" ["l"="32.997,-5.589"]
-"The-OpenROAD-Project/OpenROAD-flow-scripts" ["l"="32.829,-4.541"]
-"berkeley-abc/abc" ["l"="33.043,-5.634"]
-"verilog-to-routing/vtr-verilog-to-routing" ["l"="32.915,-3.723"]
-"The-OpenROAD-Project/OpenDB" ["l"="32.914,-5.574"]
-"limbo018/DREAMPlace" ["l"="33.007,-5.56"]
+"OpenTimer/OpenTimer" ["l"="32.997,-5.589", "c"=830]
+"verilog-to-routing/vtr-verilog-to-routing" ["l"="32.915,-3.723", "c"=180]
+"The-OpenROAD-Project/OpenDB" ["l"="32.914,-5.574", "c"=830]
 "parallaxsw/OpenSTA" ["l"="32.763,-4.476"]
-"olofk/edalize" ["l"="32.923,-3.679"]
-"chipsalliance/Surelog" ["l"="32.948,-3.598"]
-"lsils/mockturtle" ["l"="33.085,-5.661"]
+"chipsalliance/Surelog" ["l"="32.948,-3.598", "c"=180]
+"lsils/mockturtle" ["l"="33.085,-5.661", "c"=830]
+"chipsalliance/f4pga" ["l"="32.947,-3.748", "c"=180]
+"hdl/conda-eda" ["l"="32.938,-4.719"]
 "muhammadaldacher/Modeling-of-10-bit-Pipeline-ADC-and-10-bit-DAC" ["l"="32.931,-4.418"]
 "muhammadaldacher/Modeling-of-4-bit-Flash-ADC-and-4-bit-DAC" ["l"="32.941,-4.4"]
 "muhammadaldacher/Layout-Design-of-an-8x8-SRAM-array" ["l"="32.96,-4.411"]
 "MediniAradhya/A-VLSI-SRAM-8x2-Array-in-Cadence-Virtuoso" ["l"="32.967,-4.383"]
-"The-OpenROAD-Project/TritonSizer" ["l"="33.049,-4.353"]
 "Qucs/qucs-help" ["l"="33.042,-4.38"]
-"The-OpenROAD-Project-Attic/FastRoute" ["l"="32.928,-5.56"]
+"The-OpenROAD-Project-Attic/FastRoute" ["l"="32.928,-5.56", "c"=830]
 "zlijingtao/Digital-Calibration-of-SAR-ADC" ["l"="32.916,-4.426"]
 "NeuroFan/Algorithmic-SAR-ADC-simulation-files" ["l"="32.911,-4.391"]
 "muhammadaldacher/Analog-Design-of-Asynchronous-SAR-ADC" ["l"="32.934,-4.469"]
@@ -1024,44 +1121,47 @@ digraph G {
 "muhammadaldacher/Analog-design-of-10-GbaseKR-high-speed-serial-link-transceiver-in-65-nm-CMOS" ["l"="32.943,-4.436"]
 "Qucs/qucsator" ["l"="33.028,-4.455"]
 "analogdevicesinc/vampyre" ["l"="33.026,-4.551"]
+"nunobrum/PyLTSpice" ["l"="-4.4,21.087", "c"=276]
 "matthschw/ml2tikz" ["l"="33.014,-5.016"]
 "electronics-and-drives/SPAM" ["l"="33.031,-5.018"]
 "atait/klayout-gadgets" ["l"="33.006,-4.79"]
 "usnistgov/SOEN-PDK" ["l"="32.991,-4.77"]
 "flaport/condalayout" ["l"="32.967,-4.742"]
-"rajesh-s/computer-architecture-and-systems-resources" ["l"="32.74,-4.634"]
-"drom/awesome-hdl" ["l"="32.888,-3.608"]
+"heitzmann/gdstk" ["l"="33.563,-4.793", "c"=661]
+"drom/awesome-hdl" ["l"="32.888,-3.608", "c"=180]
 "digital-design-hq/Digital-Resources" ["l"="32.7,-4.613"]
-"ben-marshall/awesome-open-hardware-verification" ["l"="32.928,-3.587"]
-"PrincetonUniversity/openpiton" ["l"="31.767,-3.811"]
-"HewlettPackard/cacti" ["l"="31.062,-2.902"]
+"ben-marshall/awesome-open-hardware-verification" ["l"="32.928,-3.587", "c"=180]
+"PrincetonUniversity/openpiton" ["l"="31.767,-3.811", "c"=188]
+"HewlettPackard/cacti" ["l"="31.062,-2.902", "c"=1037]
 "aolofsson/awesome-semiconductor-startups" ["l"="32.804,-4.614"]
-"ChampSim/ChampSim" ["l"="31.123,-2.938"]
+"ChampSim/ChampSim" ["l"="31.123,-2.938", "c"=1037]
 "aolofsson/awesome-opensource-hardware" ["l"="32.767,-4.6"]
-"black-parrot/black-parrot" ["l"="31.766,-3.754"]
-"bespoke-silicon-group/basejump_stl" ["l"="32.907,-3.588"]
-"rsd-devel/rsd" ["l"="31.794,-3.775"]
+"black-parrot/black-parrot" ["l"="31.766,-3.754", "c"=188]
+"rsd-devel/rsd" ["l"="31.794,-3.775", "c"=188]
 "mattvenn/awesome-opensource-asic-resources" ["l"="32.812,-4.626"]
-"dalance/sv-parser" ["l"="32.951,-3.57"]
+"dalance/sv-parser" ["l"="32.951,-3.57", "c"=180]
 "arm-university/Introduction-to-Computer-Architecture-Education-Kit" ["l"="32.683,-4.74"]
-"YosysHQ/yosys" ["l"="32.874,-3.721"]
-"siliconcompiler/siliconcompiler" ["l"="32.799,-4.585"]
-"YosysHQ/picorv32" ["l"="31.856,-3.819"]
-"enjoy-digital/litex" ["l"="32.833,-3.764"]
-"chipsalliance/verible" ["l"="32.913,-3.625"]
-"verilator/verilator" ["l"="32.845,-3.656"]
-"olofk/fusesoc" ["l"="32.897,-3.71"]
-"lnis-uofu/OpenFPGA" ["l"="32.92,-3.748"]
-"ucb-bar/chipyard" ["l"="31.795,-3.901"]
+"YosysHQ/yosys" ["l"="32.874,-3.721", "c"=180]
+"YosysHQ/picorv32" ["l"="31.856,-3.819", "c"=188]
+"enjoy-digital/litex" ["l"="32.833,-3.764", "c"=180]
+"chipsalliance/verible" ["l"="32.913,-3.625", "c"=180]
+"verilator/verilator" ["l"="32.845,-3.656", "c"=180]
+"olofk/fusesoc" ["l"="32.897,-3.71", "c"=180]
+"CMU-HKN/CMU-ECE-CS-Guide" ["l"="31.894,-26.089", "c"=531]
+"ucb-bar/chipyard" ["l"="31.795,-3.901", "c"=188]
+"amaranth-lang/amaranth" ["l"="32.867,-3.779", "c"=180]
 "yrrapt/amsat_txrx_ic" ["l"="32.801,-4.409"]
 "yrrapt/caravel_amsat_txrx_ic" ["l"="32.778,-4.381"]
 "StefanSchippers/xschem_sky130" ["l"="32.835,-4.48"]
 "efabless/openlane2" ["l"="32.846,-4.6"]
-"TILOS-AI-Institute/MacroPlacement" ["l"="33.036,-5.544"]
-"OSCC-Project/iEDA" ["l"="33.044,-5.584"]
-"lowRISC/ibex" ["l"="31.812,-3.799"]
+"TILOS-AI-Institute/MacroPlacement" ["l"="33.036,-5.544", "c"=830]
+"OSCC-Project/iEDA" ["l"="33.044,-5.584", "c"=830]
+"manjunath5496/Embedded-Systems-Books" ["l"="-18.015,-42.824", "c"=55]
+"arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" ["l"="32.653,-4.795"]
+"lowRISC/ibex" ["l"="31.812,-3.799", "c"=188]
 "sscs-ose/sscs-ose-code-a-chip.github.io" ["l"="32.877,-4.613"]
 "bmurmann/EE628" ["l"="32.906,-4.61"]
+"blackhole89/notekit" ["l"="2.341,-5.433", "c"=472]
 "unihd-cag/skillbridge" ["l"="33.015,-4.992"]
 "cdsgit/cdsgit" ["l"="32.989,-4.973"]
 "cascode-labs/virtue" ["l"="33.042,-5.008"]
@@ -1069,40 +1169,43 @@ digraph G {
 "cdsdm/cdsdm" ["l"="33.005,-4.979"]
 "KenKundert/psf_utils" ["l"="33.026,-4.976"]
 "MatthewLoveQUB/SKILL_Tools" ["l"="32.984,-5.01"]
+"google/xls" ["l"="32.934,-3.7", "c"=180]
+"Artoriuz/OSEE" ["l"="25.53,-26.909", "c"=32]
+"gdsfactory/ubc" ["l"="33.518,-4.773", "c"=661]
 "efabless/volare" ["l"="32.889,-4.624"]
 "efabless/caravel_user_project" ["l"="32.87,-4.52"]
+"gdsfactory/gdsfactory" ["l"="33.516,-4.811", "c"=661]
 "kazuhikoarase/simcirjs" ["l"="33.074,-4.421"]
-"hdl/conda-eda" ["l"="32.938,-4.719"]
+"stnolting/neorv32" ["l"="31.883,-3.747", "c"=188]
 "gdsfactory/skywater130" ["l"="32.921,-4.709"]
-"gdsfactory/ubc" ["l"="33.518,-4.773"]
 "T-K-233/RISC-V-Single-Cycle-CPU" ["l"="32.797,-4.698"]
 "fengqzHD/gmIdNeoKit" ["l"="32.987,-4.651"]
 "SLiCAP/SLiCAP_python" ["l"="33.128,-4.583"]
 "mflowgen/mflowgen" ["l"="32.826,-4.643"]
 "mflowgen/freepdk-45nm" ["l"="32.832,-4.71"]
-"pymtl/pymtl3" ["l"="32.863,-3.533"]
-"ucb-bar/hammer" ["l"="31.74,-3.999"]
+"pymtl/pymtl3" ["l"="32.863,-3.533", "c"=180]
+"ucb-bar/hammer" ["l"="31.74,-3.999", "c"=188]
 "praharshapm/vsdmixedsignalflow" ["l"="32.824,-4.369"]
 "AngeloJacobo/OpenLANE-Sky130-Physical-Design-Workshop" ["l"="32.842,-4.354"]
 "ncsu-eda/FreePDK3" ["l"="32.842,-4.742"]
-"The-OpenROAD-Project/asap7-old" ["l"="32.859,-4.716"]
 "baichen318/FreePDK45" ["l"="32.816,-4.744"]
 "Qucs/gnucsator" ["l"="33.036,-4.405"]
+"YosysHQ/oss-cad-suite-build" ["l"="32.871,-3.752", "c"=180]
 "abdelazeem201/ASIC-Design-Roadmap" ["l"="32.693,-4.657"]
 "m3y54m/FPGA-ASIC-Roadmap" ["l"="32.662,-4.667"]
 "arm-university/VLSI-Fundamentals-Education-Kit" ["l"="32.704,-4.702"]
-"abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" ["l"="31.972,-2.783"]
+"abdelazeem201/Systolic-array-implementation-in-RTL-for-TPU" ["l"="31.972,-2.783", "c"=212]
 "abdelazeem201/Design-and-ASIC-Implementation-of-32-Point-FFT-Processor" ["l"="32.649,-4.637"]
 "amradel2020/vlsi_linkedin_index" ["l"="32.672,-4.638"]
-"sudhamshu091/32-Verilog-Mini-Projects" ["l"="32.874,-2.71"]
-"hneemann/Digital" ["l"="32.025,-3.737"]
-"logisim-evolution/logisim-evolution" ["l"="31.975,-3.757"]
+"sudhamshu091/32-Verilog-Mini-Projects" ["l"="32.874,-2.71", "c"=561]
+"hneemann/Digital" ["l"="32.025,-3.737", "c"=188]
+"logisim-evolution/logisim-evolution" ["l"="31.975,-3.757", "c"=188]
 "hausen/circuit-simulator" ["l"="33.141,-4.48"]
-"wokwi/avr8js" ["l"="-17.431,-43.786"]
-"FPGAwars/icestudio" ["l"="32.91,-3.859"]
-"fritzing/fritzing-app" ["l"="-15.216,-40.942"]
-"steveicarus/iverilog" ["l"="32.879,-3.662"]
-"LibrePCB/LibrePCB" ["l"="-18.943,-41.546"]
+"wokwi/avr8js" ["l"="-17.431,-43.786", "c"=55]
+"FPGAwars/icestudio" ["l"="32.91,-3.859", "c"=180]
+"fritzing/fritzing-app" ["l"="-15.216,-40.942", "c"=210]
+"steveicarus/iverilog" ["l"="32.879,-3.662", "c"=180]
+"LibrePCB/LibrePCB" ["l"="-18.943,-41.546", "c"=604]
 "arm-university/Rapid-Embedded-Education-Kit" ["l"="32.672,-4.766"]
 "arm-university/Real-Time-Operating-Systems-Design-And-Programming-Education-Kit" ["l"="32.651,-4.767"]
 "arm-university/Introduction-to-SoC-Design-Education-Kit" ["l"="32.668,-4.742"]
@@ -1112,31 +1215,34 @@ digraph G {
 "arm-university/Digital-Signal-Processing-Education-Kit" ["l"="32.661,-4.757"]
 "arm-university/Internet-of-Things-Education-Kit" ["l"="32.641,-4.759"]
 "arm-university/Graphical-Micro-Architecture-Simulator" ["l"="32.7,-4.764"]
+"heitzmann/gdspy" ["l"="33.546,-4.793", "c"=661]
 "johnkustin/bandgapReferenceCircuit" ["l"="32.964,-4.638"]
+"mikeroyal/RISC-V-Guide" ["l"="31.795,-3.689", "c"=188]
 "sscs-ose/sscs-ose-chipathon.github.io" ["l"="32.879,-4.63"]
 "google/sky90fd-pdk" ["l"="32.865,-4.631"]
 "chipsalliance/silicon-notebooks" ["l"="32.893,-4.65"]
 "xiaoboost/circuit-simulator" ["l"="33.097,-4.398"]
-"lsils/benchmarks" ["l"="33.078,-5.646"]
+"lsils/benchmarks" ["l"="33.078,-5.646", "c"=830]
 "The-OpenROAD-Project/asap5" ["l"="32.865,-4.754"]
 "C-Aniruddh/8bit_sar_adc" ["l"="32.927,-4.441"]
 "bmurmann/ADC-survey" ["l"="32.923,-4.569"]
 "UAH-IC-Design-Team/sky130-10-bit-SAR-ADC" ["l"="32.945,-4.449"]
 "muhammadaldacher/Analog-Design-of-Bootstrapped-Switch" ["l"="32.914,-4.449"]
 "bmurmann/Book-on-gm-ID-design" ["l"="32.934,-4.58"]
+"YosysHQ/arachne-pnr" ["l"="32.921,-3.829", "c"=180]
 "bluecmd/learn-sky130" ["l"="32.795,-4.431"]
 "westonb/sky130-analog" ["l"="32.77,-4.417"]
 "laurentc2/SKY130_for_KLayout" ["l"="32.754,-4.395"]
 "vsdip/vsdsram_sky130" ["l"="32.781,-4.332"]
+"stevehoover/LF-Building-a-RISC-V-CPU-Core" ["l"="31.768,-3.634", "c"=188]
 "efabless/chipignite-resources" ["l"="32.819,-4.664"]
-"s-holst/GDS2WebGL" ["l"="33.696,-4.816"]
+"s-holst/GDS2WebGL" ["l"="33.696,-4.816", "c"=661]
 "dan-fritchman/Layout21" ["l"="32.955,-4.713"]
 "Vlsir/Vlsir" ["l"="32.928,-4.677"]
 "Vlsir/Hdl21Schematics" ["l"="32.944,-4.691"]
-"MikePopoloski/slang" ["l"="32.935,-3.605"]
-"chipsalliance/UHDM" ["l"="32.959,-3.618"]
-"pulp-platform/common_cells" ["l"="31.746,-3.764"]
-"zachjs/sv2v" ["l"="32.93,-3.621"]
+"MikePopoloski/slang" ["l"="32.935,-3.605", "c"=180]
+"chipsalliance/UHDM" ["l"="32.959,-3.618", "c"=180]
+"os-fpga/open-source-fpga-resource" ["l"="32.94,-3.728", "c"=180]
 "arm-university/Digital-Signal-Processing-using-Arm-Cortex-M-based-Microcontrollers" ["l"="32.632,-4.795"]
 "arm-university/Introduction-to-Robotic-Systems-Education-Kit" ["l"="32.628,-4.771"]
 "efabless/caravel_mpw-one" ["l"="32.88,-4.469"]
@@ -1147,22 +1253,24 @@ digraph G {
 "jonpry/Pill" ["l"="32.955,-4.972"]
 "curtisma/VirtuosoToolboxMatlab" ["l"="32.974,-4.951"]
 "mdmfernandes/socad" ["l"="32.968,-4.993"]
+"eelab-dev/EEcircuit" ["l"="-17.413,-43.841", "c"=55]
 "antonblanchard/vlsiffra" ["l"="32.672,-4.517"]
 "benvarkey/JuVi" ["l"="32.999,-4.956"]
 "henjo/pycds" ["l"="33.012,-4.965"]
 "efabless/caravel_user_project_analog" ["l"="32.73,-4.373"]
 "mabrains/caravel_user_project_ldo" ["l"="33.019,-4.661"]
 "vsdip/avsddac_3v3_sky130_v2" ["l"="32.763,-4.316"]
+"delftopenhardware/awesome-open-hardware" ["l"="25.868,-26.519", "c"=32]
 "aolofsson/awesome-opensource-hardware-repos" ["l"="32.771,-4.636"]
-"aolofsson/oh" ["l"="32.787,-2.644"]
-"pulp-platform/axi" ["l"="32.794,-2.622"]
-"olofk/serv" ["l"="31.836,-3.751"]
-"BrunoLevy/learn-fpga" ["l"="32.819,-3.805"]
+"aolofsson/oh" ["l"="32.787,-2.644", "c"=561]
+"pulp-platform/axi" ["l"="32.794,-2.622", "c"=561]
+"olofk/serv" ["l"="31.836,-3.751", "c"=188]
+"BrunoLevy/learn-fpga" ["l"="32.819,-3.805", "c"=180]
+"google-research/circuit_training" ["l"="33.02,-5.578", "c"=830]
 "arm-university/Fundamentals-of-System-on-Chip-Design-on-Arm-Cortex-M-Microcontrollers" ["l"="32.678,-4.78"]
-"arm-university/A-Beginners-Guide-to-Designing-Embedded-System-Applications-on-Arm-Cortex-M-Microcontrollers" ["l"="32.653,-4.795"]
 "arm-university/Graphics-and-Mobile-Gaming-Education-Kit" ["l"="32.652,-4.725"]
 "arm-university/System-on-Chip-Design-with-Arm-Cortex-M-Processors" ["l"="32.696,-4.78"]
-"rggen/rggen" ["l"="32.964,-3.535"]
+"rggen/rggen" ["l"="32.964,-3.535", "c"=180]
 "getinstachip/vpm" ["l"="32.767,-4.671"]
 "raulbehl/100DaysOfRTL" ["l"="32.713,-4.674"]
 "D-curs-D/Inverter-design-and-analysis-using-sky130pdk" ["l"="32.628,-4.684"]
@@ -1176,7 +1284,7 @@ digraph G {
 "mfilmer/skill" ["l"="33.011,-5.037"]
 "Ummidichandrika/100-Days-of-RTL" ["l"="32.658,-4.694"]
 "ekb0412/100DaysofRTL" ["l"="32.678,-4.694"]
-"raysalemi/Python4RTLVerification" ["l"="32.998,-3.515"]
+"raysalemi/Python4RTLVerification" ["l"="32.998,-3.515", "c"=180]
 "wulffern/aic2023" ["l"="32.962,-4.579"]
 "NTU-LaDS-II/FAN_ATPG" ["l"="32.61,-4.456"]
 "google/open-source-pdks" ["l"="32.863,-4.653"]
@@ -1193,24 +1301,26 @@ digraph G {
 "jaijeet/VAPP" ["l"="33.082,-4.589"]
 "KOTHAVANI/100-Days-of-RTL-code" ["l"="32.611,-4.701"]
 "ShashankSirohiya/100DaysOfRtl" ["l"="32.628,-4.708"]
-"m3y54m/Embedded-Engineering-Roadmap" ["l"="-17.915,-42.894"]
-"laforest/FPGADesignElements" ["l"="32.798,-3.758"]
+"m3y54m/Embedded-Engineering-Roadmap" ["l"="-17.915,-42.894", "c"=55]
+"laforest/FPGADesignElements" ["l"="32.798,-3.758", "c"=180]
 "GGBRW/BOOLR" ["l"="33.206,-4.418"]
-"openscopeproject/InteractiveHtmlBom" ["l"="-18.951,-41.662"]
-"blackhole89/notekit" ["l"="2.341,-5.433"]
+"openscopeproject/InteractiveHtmlBom" ["l"="-18.951,-41.662", "c"=604]
 "pfalstad/ripplegl" ["l"="33.158,-4.513"]
-"ricktu288/ray-optics" ["l"="33.931,-4.707"]
+"ricktu288/ray-optics" ["l"="33.931,-4.707", "c"=769]
+"kahypar/kahypar" ["l"="33.012,-5.492", "c"=830]
+"riscv/learn" ["l"="31.783,-3.731", "c"=188]
+"open-logic/open-logic" ["l"="32.991,-3.707", "c"=180]
 "pfalstad/ray-optics" ["l"="33.185,-4.518"]
-"heitzmann/gdstk" ["l"="33.563,-4.793"]
-"gdsfactory/gdsfactory" ["l"="33.516,-4.811"]
-"heitzmann/gdspy" ["l"="33.546,-4.793"]
-"joamatab/awesome_photonics" ["l"="33.505,-4.793"]
-"SiEPIC/SiEPIC-Tools" ["l"="33.522,-4.787"]
-"SiEPIC/SiEPIC_EBeam_PDK" ["l"="33.531,-4.799"]
+"joamatab/awesome_photonics" ["l"="33.505,-4.793", "c"=661]
+"SiEPIC/SiEPIC-Tools" ["l"="33.522,-4.787", "c"=661]
+"SiEPIC/SiEPIC_EBeam_PDK" ["l"="33.531,-4.799", "c"=661]
+"horizon-eda/horizon" ["l"="-18.934,-41.573", "c"=604]
 "iic-jku/Circuit-Designers-Etiquette" ["l"="32.951,-4.669"]
 "TinyTapeout/xschem-viewer" ["l"="32.941,-4.66"]
+"OpenCircuits/OpenCircuits" ["l"="31.711,-28.333", "c"=1078]
 "arm-university/Embedded-Systems-Fundamentals" ["l"="32.631,-4.836"]
-"jankae/LibreVNA" ["l"="52.932,6.165"]
+"trilomix/GDS3D" ["l"="33.665,-4.794", "c"=661]
+"jankae/LibreVNA" ["l"="52.932,6.165", "c"=701]
 "xeniacjen/atpg" ["l"="32.627,-4.442"]
 "ucdrstdenis/cdsAsync" ["l"="33.032,-5.044"]
 }

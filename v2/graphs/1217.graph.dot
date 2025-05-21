@@ -29,9 +29,11 @@ digraph G {
 "Netflix/genie" -> "Netflix/governator"
 "Netflix/genie" -> "apache/gobblin" ["e"=1]
 "Netflix/genie" -> "apache/drill" ["e"=1]
+"pravega/zookeeper-operator" -> "instaclustr/cassandra-operator" ["e"=1]
 "ToastShaman/dropwizard-auth-jwt" -> "remmelt/dropwizard-oauth2-provider"
 "ToastShaman/dropwizard-auth-jwt" -> "LivePersonInc/dropwizard-websockets"
 "ToastShaman/dropwizard-auth-jwt" -> "dhatim/dropwizard-jwt-cookie-authentication"
+"soundcloud/roshi" -> "Netflix/dynomite" ["e"=1]
 "Netflix/dynomite" -> "twitter/twemproxy" ["e"=1]
 "Netflix/dynomite" -> "Netflix/EVCache"
 "Netflix/dynomite" -> "yinqiwen/ardb" ["e"=1]
@@ -47,6 +49,7 @@ digraph G {
 "Netflix/dynomite" -> "linkerd/linkerd" ["e"=1]
 "Netflix/dynomite" -> "antirez/disque" ["e"=1]
 "Netflix/dynomite" -> "scylladb/scylladb" ["e"=1]
+"nicolasff/webdis" -> "Netflix/dynomite" ["e"=1]
 "Impetus/kundera" -> "Netflix/astyanax"
 "Impetus/kundera" -> "apache/cassandra-java-driver"
 "Impetus/kundera" -> "hector-client/hector"
@@ -61,10 +64,24 @@ digraph G {
 "Impetus/kundera" -> "Huawei-Hadoop/hindex" ["e"=1]
 "sebgiroux/Cassandra-Cluster-Admin" -> "thobbs/phpcassa"
 "sebgiroux/Cassandra-Cluster-Admin" -> "skeletor"
+"Teevity/ice" -> "Netflix/asgard" ["e"=1]
+"Netflix/concurrency-limits" -> "Netflix/archaius" ["e"=1]
+"Netflix/concurrency-limits" -> "Netflix/hollow" ["e"=1]
+"Netflix/titus" -> "Netflix/titus-control-plane" ["e"=1]
+"Netflix/titus" -> "Netflix/titus-executor" ["e"=1]
+"Netflix/titus" -> "Netflix/EVCache" ["e"=1]
+"Netflix/titus" -> "Netflix/titus-api-definitions" ["e"=1]
+"akumuli/Akumuli" -> "kairosdb/kairosdb" ["e"=1]
 "rax-maas/blueflood" -> "kairosdb/kairosdb"
 "rax-maas/blueflood" -> "square/metrics"
+"facebook/mcrouter" -> "Netflix/dynomite" ["e"=1]
+"facebook/mcrouter" -> "Netflix/EVCache" ["e"=1]
 "federecio/dropwizard-swagger" -> "smoketurner/dropwizard-swagger"
 "federecio/dropwizard-swagger" -> "HubSpot/dropwizard-guice"
+"ReactiveX/RxNetty" -> "Netflix/karyon" ["e"=1]
+"ReactiveX/RxNetty" -> "Netflix/archaius" ["e"=1]
+"ReactiveX/RxNetty" -> "Netflix/governator" ["e"=1]
+"ReactiveX/RxNetty" -> "Netflix/servo" ["e"=1]
 "Netflix/mantis" -> "Netflix/spectator"
 "Netflix/mantis" -> "Netflix/hollow"
 "Netflix/mantis" -> "Netflix/EVCache"
@@ -82,6 +99,7 @@ digraph G {
 "Netflix/mantis" -> "apache/pinot" ["e"=1]
 "square/kochiku" -> "square/kochiku-worker"
 "square/kochiku" -> "square/p2"
+"jzachr/goldenorb" -> "riptano/brisk" ["e"=1]
 "yammer/tenacity" -> "yammer/breakerbox"
 "yammer/tenacity" -> "chbatey/dropwizard-hystrix"
 "yammer/tenacity" -> "chbatey/integration-points-example"
@@ -93,10 +111,12 @@ digraph G {
 "Netflix/aegisthus" -> "fullcontact/hadoop-sstable"
 "Netflix/aegisthus" -> "Netflix/dyno"
 "Netflix/aegisthus" -> "Netflix/genie"
+"worstcase/blockade" -> "xedin/sasi" ["e"=1]
 "datastax/cpp-driver" -> "datastax/php-driver"
 "ntk148v/lets-go" -> "ntk148v/awesome-stars"
 "ntk148v/lets-go" -> "ntk148v/til"
 "ntk148v/lets-go" -> "vCloud-DFTBA/san_exporter"
+"Netflix/iceberg" -> "Netflix/genie" ["e"=1]
 "BrianGallew/cassandra_range_repair" -> "BrianGallew/cassandra_tools"
 "BrianGallew/cassandra_range_repair" -> "pauloricardomg/cassandra-list-subranges"
 "BrianGallew/cassandra_range_repair" -> "JeremyGrosser/tablesnap"
@@ -205,7 +225,16 @@ digraph G {
 "Shimi/cascal" -> "shorrockin/cascal"
 "ntk148v/prompose" -> "vCloud-DFTBA/faythe"
 "ntk148v/prompose" -> "HPCC-Cloud-Computing/hpcc-know-how"
+"databricks/spark-csv" -> "apache/cassandra-spark-connector" ["e"=1]
 "huluwaservice/webapp" -> "luyencode/cpp-solutions"
+"Netflix/curator" -> "Netflix/astyanax" ["e"=1]
+"Netflix/curator" -> "Netflix/servo" ["e"=1]
+"Netflix/curator" -> "Netflix/archaius" ["e"=1]
+"spark-jobserver/spark-jobserver" -> "apache/cassandra-spark-connector" ["e"=1]
+"jmxtrans/jmxtrans" -> "Netflix/servo" ["e"=1]
+"spring-projects/spring-data-cassandra" -> "apache/cassandra-java-driver" ["e"=1]
+"spring-projects/spring-data-cassandra" -> "jsevellec/cassandra-unit" ["e"=1]
+"LinkedInAttic/datafu" -> "jeromatron/pygmalion" ["e"=1]
 "Netflix/atlas" -> "Netflix/vector" ["e"=1]
 "Netflix/atlas" -> "Netflix/spectator"
 "Netflix/atlas" -> "facebookarchive/beringei" ["e"=1]
@@ -221,6 +250,8 @@ digraph G {
 "Netflix/atlas" -> "akka/alpakka-kafka" ["e"=1]
 "Netflix/atlas" -> "Netflix/hollow"
 "Netflix/atlas" -> "typelevel/fs2" ["e"=1]
+"killrweather/killrweather" -> "apache/cassandra-spark-connector" ["e"=1]
+"killrweather/killrweather" -> "apache/cassandra-ccm" ["e"=1]
 "Netflix/servo" -> "Netflix/spectator"
 "Netflix/servo" -> "Netflix/archaius"
 "Netflix/servo" -> "Netflix/governator"
@@ -236,6 +267,7 @@ digraph G {
 "Netflix/servo" -> "Netflix/asgard"
 "Netflix/servo" -> "Netflix/vector" ["e"=1]
 "Netflix/servo" -> "Netflix/atlas"
+"databricks/spark-avro" -> "apache/cassandra-spark-connector" ["e"=1]
 "Netflix/Prana" -> "Netflix/karyon"
 "Netflix/Prana" -> "Netflix/governator"
 "Netflix/Prana" -> "Netflix/Fenzo" ["e"=1]
@@ -308,11 +340,14 @@ digraph G {
 "datastax/nodejs-driver" -> "datastax/ruby-driver"
 "datastax/nodejs-driver" -> "datastax/cpp-driver"
 "datastax/nodejs-driver" -> "apache/cassandra-ccm"
+"filodb/FiloDB" -> "apache/cassandra-spark-connector" ["e"=1]
 "twissandra/twissandra" -> "r4fek/django-cassandra-engine"
 "twissandra/twissandra" -> "pycassa/pycassa"
 "twissandra/twissandra" -> "lazyboy"
 "twissandra/twissandra" -> "vaterlaus/django_cassandra_backend"
 "twissandra/twissandra" -> "tjake/Solandra"
+"gocassa/gocassa" -> "chrusty/ctop" ["e"=1]
+"gocassa/gocassa" -> "apache/cassandra-gocql-driver" ["e"=1]
 "dunghm98/web-for-crush" -> "zukahai/confess-crush"
 "hocchudong/git-github-for-sysadmin" -> "hocchudong/ghichep-docker"
 "hocchudong/git-github-for-sysadmin" -> "hocchudong/ghichep-kubernetes"
@@ -396,6 +431,7 @@ digraph G {
 "r4fek/django-cassandra-engine" -> "django-nonrel/mongodb-engine" ["e"=1]
 "r4fek/django-cassandra-engine" -> "fengsp/django-grpc-framework" ["e"=1]
 "r4fek/django-cassandra-engine" -> "scylladb/python-driver"
+"Netflix-Skunkworks/sketchy" -> "Netflix/Raigad" ["e"=1]
 "spotify/cassandra-reaper" -> "thelastpickle/cassandra-reaper"
 "spotify/cassandra-reaper" -> "tolbertam/sstable-tools"
 "spotify/cassandra-reaper" -> "spotify/cassandra-opstools"
@@ -413,6 +449,7 @@ digraph G {
 "Yelp/pyleus" -> "pystorm/pystorm"
 "Yelp/pyleus" -> "pystorm/streamparse"
 "Yelp/pyleus" -> "AirSage/Petrel"
+"sebbrudzinski/Open-LaTeX-Studio" -> "dropwizard-jobs/dropwizard-jobs" ["e"=1]
 "Netflix/astyanax" -> "Netflix/Priam"
 "Netflix/astyanax" -> "apache/cassandra-java-driver"
 "Netflix/astyanax" -> "hector-client/hector"
@@ -442,6 +479,7 @@ digraph G {
 "datastax/cass-operator" -> "datastax/zdm-proxy"
 "datastax/cass-operator" -> "datastax/cql-proxy"
 "datastax/graph-book" -> "nosqlbench/nosqlbench"
+"paukiatwee/budgetapp" -> "knowm/XDropWizard" ["e"=1]
 "Netflix/msl" -> "Netflix/spectator"
 "Netflix/msl" -> "Netflix/NfWebCrypto"
 "benjamin-bader/droptools" -> "reines/dropwizard-debpkg-maven-plugin"
@@ -477,8 +515,13 @@ digraph G {
 "Netflix/inviso" -> "Netflix/aegisthus"
 "Netflix/inviso" -> "Netflix/dyno"
 "datastax/cassandra-data-apis" -> "datastax/go-cassandra-native-protocol"
+"twitter/twemproxy" -> "Netflix/dynomite" ["e"=1]
 "Netflix/nf-data-explorer" -> "datastax/cass-operator"
 "Netflix/nf-data-explorer" -> "HadesArchitect/GrafanaCassandraDatasource"
+"Netflix/vector" -> "Netflix/atlas" ["e"=1]
+"Netflix/vector" -> "Netflix/servo" ["e"=1]
+"Netflix/vector" -> "Netflix/dynomite" ["e"=1]
+"square/keywhiz" -> "square/keywhiz-fs" ["e"=1]
 "gianlucaborello/cassandradump" -> "tbarbugli/cassandra_snapshotter"
 "gianlucaborello/cassandradump" -> "JeremyGrosser/tablesnap"
 "gianlucaborello/cassandradump" -> "masumsoft/cassandra-exporter"
@@ -497,6 +540,8 @@ digraph G {
 "tjake/Solandra" -> "cloudera/crunch" ["e"=1]
 "tjake/Solandra" -> "LinkedInAttic/sensei" ["e"=1]
 "tjake/Solandra" -> "Impetus/kundera"
+"swagger-api/swagger-samples" -> "smoketurner/dropwizard-swagger" ["e"=1]
+"swagger-api/swagger-samples" -> "federecio/dropwizard-swagger" ["e"=1]
 "datastaxdevs/workshop-graphql-netflix" -> "datastaxdevs/appdev-week1-todolist"
 "datastaxdevs/workshop-graphql-netflix" -> "datastaxdevs/workshop-intro-to-cassandra"
 "datastaxdevs/workshop-graphql-netflix" -> "datastaxdevs/react-basics"
@@ -515,6 +560,8 @@ digraph G {
 "masumsoft/express-cassandra" -> "datastax/nodejs-driver"
 "masumsoft/express-cassandra" -> "ifaim/nestjs-express-cassandra"
 "mjpearson/Pandra" -> "hoan/phpcassa"
+"square/certstrap" -> "square/keywhiz-fs" ["e"=1]
+"twitter/cassovary" -> "twitter-archive/cassie" ["e"=1]
 "vCloud-DFTBA/san_exporter" -> "vCloud-DFTBA/faythe"
 "vCloud-DFTBA/san_exporter" -> "datle1/autopass"
 "hocchudong/ghichep-docker" -> "hocchudong/ghichep-kubernetes"
@@ -533,6 +580,7 @@ digraph G {
 "brianmhess/cassandra-loader" -> "datastax/spark-cassandra-stress"
 "brianmhess/cassandra-loader" -> "Netflix/Priam"
 "brianmhess/cassandra-loader" -> "TargetHolding/pyspark-cassandra"
+"Netflix/Fenzo" -> "Netflix/Prana" ["e"=1]
 "datastax-labs/astra-cli" -> "datastax/cql-proxy"
 "datastax-labs/astra-cli" -> "kaskada-ai/kaskada"
 "datastax-labs/astra-cli" -> "CassioML/cassio"
@@ -543,14 +591,19 @@ digraph G {
 "datastax/cql-proxy" -> "kaskada-ai/kaskada"
 "datastax/cql-proxy" -> "datastax/zdm-proxy"
 "datastax/cql-proxy" -> "CassioML/cassio"
+"Netflix/rend" -> "Netflix/EVCache" ["e"=1]
+"Netflix/rend" -> "Netflix/dynomite" ["e"=1]
 "datastaxdevs/workshop-introduction-to-nosql" -> "datastaxdevs/workshop-intro-to-cassandra"
 "datastaxdevs/workshop-introduction-to-nosql" -> "datastaxdevs/appdev-week1-todolist"
 "datastaxdevs/workshop-introduction-to-nosql" -> "datastaxdevs/workshop-social-media-tiktok"
 "datastaxdevs/workshop-introduction-to-nosql" -> "DataStax-Academy/workshop-cassandra-certification"
 "datastaxdevs/workshop-introduction-to-nosql" -> "datastaxdevs/workshop-graphql-netflix"
+"mongodb/mongo-spark" -> "apache/cassandra-spark-connector" ["e"=1]
 "Contrast-Security-OSS/cassandra-migration" -> "smartcat-labs/cassandra-migration-tool-java"
 "Contrast-Security-OSS/cassandra-migration" -> "hhandoko/cassandra-migration"
 "hocchudong/ghichep-ELK" -> "hocchudong/thuoclaoping"
+"spotify/heroic" -> "kairosdb/kairosdb" ["e"=1]
+"spotify/heroic" -> "Netflix/atlas" ["e"=1]
 "DataStax-Academy/workshop-cassandra-certification" -> "datastaxdevs/workshop-intro-to-cassandra"
 "DataStax-Academy/workshop-cassandra-certification" -> "datastaxdevs/workshop-k8ssandra"
 "DataStax-Academy/workshop-cassandra-certification" -> "DataStax-Academy/kubecon2020"
@@ -611,6 +664,8 @@ digraph G {
 "zukahai/confess-crush" -> "namndwebdev/tang-crush"
 "zukahai/confess-crush" -> "luyencode/cpp-solutions"
 "zukahai/confess-crush" -> "zukahai/box-love"
+"square/shift" -> "square/kochiku" ["e"=1]
+"eleme/corvus" -> "Netflix/dynomite" ["e"=1]
 "Netflix/archaius" -> "Netflix/ribbon" ["e"=1]
 "Netflix/archaius" -> "Netflix/servo"
 "Netflix/archaius" -> "Netflix/governator"
@@ -641,6 +696,7 @@ digraph G {
 "strapdata/elassandra" -> "filodb/FiloDB" ["e"=1]
 "strapdata/elassandra" -> "brianmhess/cassandra-loader"
 "strapdata/elassandra" -> "Netflix/astyanax"
+"RedisLabs/spark-redis" -> "apache/cassandra-spark-connector" ["e"=1]
 "smoketurner/dropwizard-swagger" -> "federecio/dropwizard-swagger"
 "smoketurner/dropwizard-swagger" -> "knowm/dropwizard-sundial"
 "smoketurner/dropwizard-swagger" -> "xvik/dropwizard-guicey"
@@ -656,6 +712,13 @@ digraph G {
 "smoketurner/dropwizard-swagger" -> "knowm/XDropWizard"
 "pycassa/pycassa" -> "lazyboy"
 "pycassa/pycassa" -> "vaterlaus/django_cassandra_backend"
+"MongoEngine/django-mongoengine" -> "r4fek/django-cassandra-engine" ["e"=1]
+"cloudavail/aws-missing-tools" -> "Netflix/asgard" ["e"=1]
+"Parsely/pykafka" -> "pystorm/streamparse" ["e"=1]
+"Parsely/pykafka" -> "wintoncode/winton-kafka-streams" ["e"=1]
+"Parsely/pykafka" -> "datastax/python-driver" ["e"=1]
+"twitter/pelikan" -> "Netflix/dynomite" ["e"=1]
+"kagkarlsson/db-scheduler" -> "knowm/Sundial" ["e"=1]
 "Netflix/governator" -> "Netflix/karyon"
 "Netflix/governator" -> "Netflix/archaius"
 "Netflix/governator" -> "Netflix/servo"
@@ -707,6 +770,7 @@ digraph G {
 "datastaxdevs/workshop-intro-to-graphql" -> "datastaxdevs/react-basics"
 "HubSpot/dropwizard-guicier" -> "jhaber/dropwizard-guicier-example"
 "jhaber/dropwizard-guicier-example" -> "HubSpot/dropwizard-guicier"
+"griddb/griddb" -> "kairosdb/kairosdb" ["e"=1]
 "apache/cassandra-gocql-driver" -> "scylladb/gocqlx" ["e"=1]
 "apache/cassandra-gocql-driver" -> "gocassa/gocassa" ["e"=1]
 "apache/cassandra-gocql-driver" -> "nats-io/nats.go" ["e"=1]
@@ -722,9 +786,17 @@ digraph G {
 "apache/cassandra-gocql-driver" -> "Masterminds/glide" ["e"=1]
 "apache/cassandra-gocql-driver" -> "scylladb/scylladb" ["e"=1]
 "apache/cassandra-gocql-driver" -> "golang/protobuf" ["e"=1]
+"Netflix/metacat" -> "Netflix/genie" ["e"=1]
+"Netflix/vizceral" -> "Netflix/atlas" ["e"=1]
+"Netflix/vizceral" -> "Netflix/EVCache" ["e"=1]
 "hoan/phpcassa" -> "mjpearson/Pandra"
+"nats-io/nats-streaming-server" -> "apache/cassandra-gocql-driver" ["e"=1]
+"airlift/airline" -> "Netflix/governator" ["e"=1]
+"twitter/elephant-bird" -> "riptano/brisk" ["e"=1]
+"twitter/elephant-bird" -> "jeromatron/pygmalion" ["e"=1]
 "datastax/zdm-proxy-automation" -> "datastax/zdm-proxy"
 "datastax/zdm-proxy" -> "datastax/zdm-proxy-automation"
+"j-easy/easy-batch" -> "Coreoz/Wisp" ["e"=1]
 "kennedyoliveira/standalone-hystrix-dashboard" -> "Netflix-Skunkworks/hystrix-dashboard"
 "hector-client/hector" -> "s7/scale7-pelops"
 "hector-client/hector" -> "zznate/hector-examples"
@@ -756,6 +828,9 @@ digraph G {
 "apache/cassandra-java-driver" -> "kairosdb/kairosdb"
 "apache/cassandra-java-driver" -> "outworkers/phantom" ["e"=1]
 "apache/cassandra-java-driver" -> "datastax/nodejs-driver"
+"tjake/Jlama" -> "datastax/jvector" ["e"=1]
+"tjake/Jlama" -> "kaskada-ai/kaskada" ["e"=1]
+"tjake/Jlama" -> "datastax/cql-proxy" ["e"=1]
 "LangStream/langstream" -> "CassioML/cassio"
 "LangStream/langstream" -> "kaskada-ai/kaskada"
 "LangStream/langstream" -> "datastax/ragstack-ai"
@@ -770,6 +845,7 @@ digraph G {
 "LangStream/langstream" -> "diennea/bookkeeper-visual-manager" ["e"=1]
 "LangStream/langstream" -> "datastax/SwiftieGPT"
 "LangStream/langstream" -> "diennea/carapaceproxy" ["e"=1]
+"linkedin/rest.li" -> "Netflix/archaius" ["e"=1]
 "datastax/jvector" -> "kaskada-ai/kaskada"
 "datastax/jvector" -> "CassioML/cassio"
 "datastax/jvector" -> "LangStream/langstream"
@@ -785,6 +861,7 @@ digraph G {
 "datastax/jvector" -> "mukel/llama3.java" ["e"=1]
 "datastax/jvector" -> "BrokkAi/brokk"
 "datastax/jvector" -> "arc53/DocsGPT" ["e"=1]
+"apache/lucene-solr" -> "tjake/Solandra" ["e"=1]
 "kaskada-ai/kaskada" -> "datastax/cql-proxy"
 "kaskada-ai/kaskada" -> "datastax-labs/astra-cli"
 "kaskada-ai/kaskada" -> "CassioML/cassio"
@@ -817,6 +894,8 @@ digraph G {
 "dropwizard-jobs/dropwizard-jobs" -> "HubSpot/dropwizard-guice"
 "dropwizard-jobs/dropwizard-jobs" -> "xvik/dropwizard-guicey"
 "dropwizard-jobs/dropwizard-jobs" -> "smoketurner/dropwizard-swagger"
+"etsy/411" -> "salesforce/Argus" ["e"=1]
+"mokies/ratelimitj" -> "xvik/dropwizard-guicey" ["e"=1]
 "CassioML/cassio" -> "datastax/zdm-proxy"
 "CassioML/cassio" -> "datastax/ragstack-ai"
 "CassioML/cassio" -> "kaskada-ai/kaskada"
@@ -839,6 +918,7 @@ digraph G {
 "Coreoz/Wisp" -> "knowm/Sundial"
 "jaredstehler/dropwizard-quartz" -> "jaredstehler/dropwizard-guice"
 "HPCC-Cloud-Computing/hpcc-know-how" -> "vCloud-DFTBA/faythe"
+"facebookarchive/beringei" -> "Netflix/atlas" ["e"=1]
 "Netflix/Turbine" -> "Netflix/archaius"
 "Netflix/Turbine" -> "Netflix/ribbon" ["e"=1]
 "Netflix/Turbine" -> "Netflix/karyon"
@@ -851,8 +931,14 @@ digraph G {
 "Netflix/Turbine" -> "fabric8io/kubeflix" ["e"=1]
 "Netflix/Turbine" -> "Netflix/netflix-commons"
 "Netflix/Turbine" -> "Netflix/blitz4j"
+"bulldog2011/bigqueue" -> "Netflix/suro" ["e"=1]
 "instaclustr/cassandra-sstable-tools" -> "tolbertam/sstable-tools"
 "instaclustr/cassandra-sstable-tools" -> "instaclustr/esop"
+"transitive-bullshit/OpenOpenAI" -> "datastax/astra-assistants-api" ["e"=1]
+"Netflix/ribbon" -> "Netflix/archaius" ["e"=1]
+"Netflix/ribbon" -> "Netflix/Turbine" ["e"=1]
+"cloudera/flume" -> "tjake/Solandra" ["e"=1]
+"mukel/llama3.java" -> "datastax/jvector" ["e"=1]
 "thelastpickle/cassandra-reaper" -> "thelastpickle/cassandra-medusa"
 "thelastpickle/cassandra-reaper" -> "spotify/cassandra-reaper"
 "thelastpickle/cassandra-reaper" -> "spotify/cstar"
@@ -883,6 +969,7 @@ digraph G {
 "Netflix/hollow" -> "Netflix/Priam"
 "Netflix/hollow" -> "odnoklassniki/one-nio" ["e"=1]
 "Netflix/hollow" -> "snazy/ohc" ["e"=1]
+"MLT-OSS/open-assistant-api" -> "datastax/astra-assistants-api" ["e"=1]
 "datastax/ragstack-ai" -> "CassioML/cassio"
 "datastax/ragstack-ai" -> "kaskada-ai/kaskada"
 "datastax/ragstack-ai" -> "datastax/SwiftieGPT"
@@ -922,6 +1009,7 @@ digraph G {
 "Netflix/EVCache" -> "Netflix/mantis"
 "hocchudong/thuctap012017" -> "hocchudong/ghichep-kubernetes"
 "hocchudong/thuctap012017" -> "hocchudong/ghichep-python"
+"OpenTSDB/opentsdb" -> "kairosdb/kairosdb" ["e"=1]
 "hocchudong/ghichep-kubernetes" -> "hocchudong/ghichep-docker"
 "hocchudong/ghichep-kubernetes" -> "hocchudong/ghichep-nginx"
 "hocchudong/ghichep-kubernetes" -> "hocchudong/thuoclaoping"
@@ -969,6 +1057,7 @@ digraph G {
 "Netflix/netflix-graph" -> "Netflix/blitz4j"
 "Netflix/netflix-graph" -> "Netflix/suro"
 "Netflix/netflix-graph" -> "Netflix/Cloud-Prize"
+"twitter-archive/ostrich" -> "twitter-archive/cassie" ["e"=1]
 "Netflix/suro" -> "Netflix/blitz4j"
 "Netflix/suro" -> "Netflix/servo"
 "Netflix/suro" -> "Netflix/aegisthus"
@@ -1012,10 +1101,19 @@ digraph G {
 "Netflix/recipes-rss" -> "cfregly/fluxcapacitor"
 "Netflix/recipes-rss" -> "Netflix/karyon"
 "BrokkAi/brokk" -> "CassioML/cassio"
+"OpenNMS/opennms" -> "OpenNMS/newts" ["e"=1]
+"yinqiwen/ardb" -> "Netflix/dynomite" ["e"=1]
 "thobbs/phpcassa" -> "kallaspriit/Cassandra-PHP-Client-Library"
 "thobbs/phpcassa" -> "julesbravo/Zend_Cassandra"
 "thobbs/phpcassa" -> "mjpearson/Pandra"
 "thobbs/phpcassa" -> "sebgiroux/Cassandra-Cluster-Admin"
+"crate/crate" -> "kairosdb/kairosdb" ["e"=1]
+"django-nonrel/mongodb-engine" -> "r4fek/django-cassandra-engine" ["e"=1]
+"scylladb/gocqlx" -> "apache/cassandra-gocql-driver" ["e"=1]
+"scylladb/gocqlx" -> "thelastpickle/cassandra-reaper" ["e"=1]
+"Anant/awesome-cassandra" -> "thelastpickle/tlp-stress" ["e"=1]
+"Anant/awesome-cassandra" -> "thelastpickle/cassandra-medusa" ["e"=1]
+"Anant/awesome-cassandra" -> "thelastpickle/cassandra-reaper" ["e"=1]
 "apache/cassandra-ccm" ["l"="-1.411,18.48"]
 "apache/cassandra-java-driver" ["l"="-1.446,18.452"]
 "Netflix/Priam" ["l"="-1.408,18.408"]
@@ -1026,14 +1124,14 @@ digraph G {
 "datastax/python-driver" ["l"="-1.469,18.49"]
 "tolbertam/sstable-tools" ["l"="-1.335,18.546"]
 "JeremyGrosser/tablesnap" ["l"="-1.352,18.491"]
-"killrweather/killrweather" ["l"="-2.573,17.047"]
-"filodb/FiloDB" ["l"="-2.542,17.11"]
+"killrweather/killrweather" ["l"="-2.573,17.047", "c"=455]
+"filodb/FiloDB" ["l"="-2.542,17.11", "c"=455]
 "jsevellec/cassandra-unit" ["l"="-1.421,18.506"]
 "gianlucaborello/cassandradump" ["l"="-1.34,18.464"]
-"Anant/awesome-cassandra" ["l"="-2.635,-42.07"]
+"Anant/awesome-cassandra" ["l"="-2.635,-42.07", "c"=613]
 "scassandra/scassandra-server" ["l"="-1.401,18.521"]
 "Netflix/genie" ["l"="-1.435,18.312"]
-"Netflix/metacat" ["l"="-2.485,14.833"]
+"Netflix/metacat" ["l"="-2.485,14.833", "c"=43]
 "Netflix/inviso" ["l"="-1.492,18.331"]
 "Netflix/aegisthus" ["l"="-1.471,18.331"]
 "Netflix/Lipstick" ["l"="-1.485,18.315"]
@@ -1042,64 +1140,80 @@ digraph G {
 "Netflix/atlas" ["l"="-1.391,18.272"]
 "Netflix/EVCache" ["l"="-1.394,18.326"]
 "Netflix/spectator" ["l"="-1.417,18.295"]
-"Netflix/iceberg" ["l"="-2.465,14.815"]
+"Netflix/iceberg" ["l"="-2.465,14.815", "c"=43]
 "Netflix/hollow" ["l"="-1.383,18.301"]
 "Netflix/governator" ["l"="-1.435,18.257"]
-"apache/gobblin" ["l"="-2.587,14.686"]
-"apache/drill" ["l"="-2.649,14.729"]
+"apache/gobblin" ["l"="-2.587,14.686", "c"=43]
+"apache/drill" ["l"="-2.649,14.729", "c"=43]
+"pravega/zookeeper-operator" ["l"="-2.079,8.817", "c"=1024]
+"instaclustr/cassandra-operator" ["l"="-1.337,18.629"]
 "ToastShaman/dropwizard-auth-jwt" ["l"="-1.296,17.994"]
 "remmelt/dropwizard-oauth2-provider" ["l"="-1.309,17.962"]
 "LivePersonInc/dropwizard-websockets" ["l"="-1.271,17.979"]
 "dhatim/dropwizard-jwt-cookie-authentication" ["l"="-1.288,17.959"]
+"soundcloud/roshi" ["l"="-6.542,-28.581", "c"=793]
 "Netflix/dynomite" ["l"="-1.349,18.249"]
-"twitter/twemproxy" ["l"="-3.224,12.312"]
-"yinqiwen/ardb" ["l"="0.915,14.206"]
+"twitter/twemproxy" ["l"="-3.224,12.312", "c"=15]
+"yinqiwen/ardb" ["l"="0.915,14.206", "c"=115]
 "Netflix/dyno" ["l"="-1.451,18.331"]
-"facebook/mcrouter" ["l"="1.112,13.998"]
+"facebook/mcrouter" ["l"="1.112,13.998", "c"=115]
 "Netflix/dyno-queues" ["l"="-1.295,18.208"]
-"soundcloud/roshi" ["l"="-6.542,-28.581"]
-"ledisdb/ledisdb" ["l"="3.923,-8.337"]
-"Netflix/vector" ["l"="6.97,-6.098"]
-"eleme/corvus" ["l"="9.116,-4.019"]
-"linkerd/linkerd" ["l"="8.178,-8.582"]
-"antirez/disque" ["l"="3.533,-8.348"]
-"scylladb/scylladb" ["l"="-19.658,-24.918"]
+"ledisdb/ledisdb" ["l"="3.923,-8.337", "c"=0]
+"Netflix/vector" ["l"="6.97,-6.098", "c"=335]
+"eleme/corvus" ["l"="9.116,-4.019", "c"=382]
+"linkerd/linkerd" ["l"="8.178,-8.582", "c"=14]
+"antirez/disque" ["l"="3.533,-8.348", "c"=0]
+"scylladb/scylladb" ["l"="-19.658,-24.918", "c"=10]
+"nicolasff/webdis" ["l"="2.797,-35.669", "c"=171]
 "Impetus/kundera" ["l"="-1.485,18.433"]
 "hector-client/hector" ["l"="-1.532,18.391"]
 "doanduyhai/Achilles" ["l"="-1.485,18.461"]
 "tjake/Solandra" ["l"="-1.553,18.409"]
-"spring-projects/spring-data-cassandra" ["l"="-4.91,9.178"]
+"spring-projects/spring-data-cassandra" ["l"="-4.91,9.178", "c"=703]
 "s7/scale7-pelops" ["l"="-1.519,18.413"]
 "strapdata/elassandra" ["l"="-1.437,18.472"]
-"Stratio/cassandra-lucene-index" ["l"="-2.15,17.07"]
-"Huawei-Hadoop/hindex" ["l"="-2.44,16.845"]
+"Stratio/cassandra-lucene-index" ["l"="-2.15,17.07", "c"=455]
+"Huawei-Hadoop/hindex" ["l"="-2.44,16.845", "c"=455]
 "sebgiroux/Cassandra-Cluster-Admin" ["l"="-1.707,18.498"]
 "thobbs/phpcassa" ["l"="-1.71,18.538"]
 "skeletor" ["l"="-1.665,18.439"]
-"rax-maas/blueflood" ["l"="-1.315,18.293"]
+"Teevity/ice" ["l"="10.128,-6.39", "c"=162]
+"Netflix/asgard" ["l"="-1.516,18.278"]
+"Netflix/concurrency-limits" ["l"="-2.66,11.921", "c"=15]
+"Netflix/titus" ["l"="7.866,-8.615", "c"=14]
+"Netflix/titus-control-plane" ["l"="-1.235,18.277"]
+"Netflix/titus-executor" ["l"="-1.203,18.256"]
+"Netflix/titus-api-definitions" ["l"="-1.193,18.276"]
+"akumuli/Akumuli" ["l"="4.371,-7.607", "c"=0]
 "kairosdb/kairosdb" ["l"="-1.343,18.4"]
+"rax-maas/blueflood" ["l"="-1.315,18.293"]
 "square/metrics" ["l"="-1.391,18.114"]
 "federecio/dropwizard-swagger" ["l"="-1.283,18.04"]
 "smoketurner/dropwizard-swagger" ["l"="-1.261,18.017"]
 "HubSpot/dropwizard-guice" ["l"="-1.308,18.074"]
+"ReactiveX/RxNetty" ["l"="-2.639,12.19", "c"=15]
+"Netflix/karyon" ["l"="-1.488,18.282"]
+"Netflix/servo" ["l"="-1.468,18.266"]
 "Netflix/mantis" ["l"="-1.347,18.32"]
-"Netflix/dgs-framework" ["l"="-2.181,11.688"]
+"Netflix/dgs-framework" ["l"="-2.181,11.688", "c"=15]
 "Netflix/mantis-ui" ["l"="-1.3,18.323"]
-"spotify/scio" ["l"="-2.787,18.552"]
-"m3db/m3" ["l"="8.246,-8.89"]
-"uber/uReplicator" ["l"="-0.569,16.994"]
-"Netflix/titus-control-plane" ["l"="-1.235,18.277"]
-"spotify/big-data-rosetta-code" ["l"="-2.887,18.437"]
-"apache/pinot" ["l"="-2.709,14.746"]
+"spotify/scio" ["l"="-2.787,18.552", "c"=38]
+"m3db/m3" ["l"="8.246,-8.89", "c"=14]
+"uber/uReplicator" ["l"="-0.569,16.994", "c"=398]
+"spotify/big-data-rosetta-code" ["l"="-2.887,18.437", "c"=38]
+"apache/pinot" ["l"="-2.709,14.746", "c"=43]
 "square/kochiku" ["l"="-1.448,17.97"]
 "square/kochiku-worker" ["l"="-1.468,17.956"]
 "square/p2" ["l"="-1.42,18.037"]
+"jzachr/goldenorb" ["l"="-3.178,19.82", "c"=709]
+"riptano/brisk" ["l"="-1.59,18.402"]
 "yammer/tenacity" ["l"="-1.35,18.012"]
 "yammer/breakerbox" ["l"="-1.361,17.975"]
 "chbatey/dropwizard-hystrix" ["l"="-1.37,17.997"]
 "chbatey/integration-points-example" ["l"="-1.349,17.99"]
-"Netflix/karyon" ["l"="-1.488,18.282"]
 "fullcontact/hadoop-sstable" ["l"="-1.507,18.35"]
+"worstcase/blockade" ["l"="0.935,13.734", "c"=115]
+"xedin/sasi" ["l"="-1.37,18.503"]
 "datastax/cpp-driver" ["l"="-1.568,18.56"]
 "datastax/php-driver" ["l"="-1.624,18.576"]
 "ntk148v/lets-go" ["l"="-1.281,19.476"]
@@ -1120,11 +1234,11 @@ digraph G {
 "kennedyoliveira/standalone-hystrix-dashboard" ["l"="-1.471,18.169"]
 "r4fek/django-cassandra-engine" ["l"="-1.554,18.482"]
 "apache/cassandra-gocql-driver" ["l"="-1.482,18.539"]
-"dpkp/kafka-python" ["l"="44.486,20.934"]
+"dpkp/kafka-python" ["l"="44.486,20.934", "c"=20]
 "datastax/nodejs-driver" ["l"="-1.517,18.517"]
-"apache/cassandra" ["l"="-2.845,14.661"]
+"apache/cassandra" ["l"="-2.845,14.661", "c"=43]
 "TargetHolding/pyspark-cassandra" ["l"="-1.405,18.455"]
-"confluentinc/confluent-kafka-python" ["l"="44.5,21.038"]
+"confluentinc/confluent-kafka-python" ["l"="44.5,21.038", "c"=20]
 "cqlengine/cqlengine" ["l"="-1.522,18.484"]
 "knowm/Sundial" ["l"="-1.193,17.974"]
 "knowm/dropwizard-sundial" ["l"="-1.227,17.998"]
@@ -1140,25 +1254,24 @@ digraph G {
 "kallaspriit/Cassandra-PHP-Client-Library" ["l"="-1.731,18.553"]
 "mjpearson/Pandra" ["l"="-1.751,18.551"]
 "pystorm/streamparse" ["l"="-1.228,18.443"]
-"Parsely/pykafka" ["l"="44.469,20.969"]
+"Parsely/pykafka" ["l"="44.469,20.969", "c"=20]
 "pystorm/pystorm" ["l"="-1.177,18.439"]
 "Yelp/pyleus" ["l"="-1.194,18.425"]
 "AirSage/Petrel" ["l"="-1.184,18.406"]
-"Eyepea/API-Hour" ["l"="45.182,20.756"]
-"tensorflow/skflow" ["l"="47.865,28.864"]
-"istresearch/scrapy-cluster" ["l"="48.723,23.308"]
+"Eyepea/API-Hour" ["l"="45.182,20.756", "c"=20]
+"tensorflow/skflow" ["l"="47.865,28.864", "c"=89]
+"istresearch/scrapy-cluster" ["l"="48.723,23.308", "c"=125]
 "wintoncode/winton-kafka-streams" ["l"="-1.145,18.44"]
-"rabbitmq/internals" ["l"="22.936,-26.585"]
-"lensacom/sparkit-learn" ["l"="-2.726,17.041"]
-"robinhood/faust" ["l"="44.748,20.934"]
-"wrobstory/vincent" ["l"="43.679,23.915"]
+"rabbitmq/internals" ["l"="22.936,-26.585", "c"=28]
+"lensacom/sparkit-learn" ["l"="-2.726,17.041", "c"=455]
+"robinhood/faust" ["l"="44.748,20.934", "c"=20]
+"wrobstory/vincent" ["l"="43.679,23.915", "c"=95]
 "instaclustr/cassandra-ldap" ["l"="-1.295,18.632"]
 "instaclustr/icarus" ["l"="-1.279,18.62"]
 "zegelin/cassandra-exporter" ["l"="-1.327,18.608"]
-"Ericsson/ecaudit" ["l"="-2.627,-42.109"]
+"Ericsson/ecaudit" ["l"="-2.627,-42.109", "c"=613]
 "Orange-OpenSource/casskop" ["l"="-1.337,18.654"]
 "datastax/cass-operator" ["l"="-1.366,18.676"]
-"instaclustr/cassandra-operator" ["l"="-1.337,18.629"]
 "instaclustr/esop" ["l"="-1.302,18.605"]
 "instaclustr/cassandra-ttl-remover" ["l"="-1.312,18.65"]
 "MySocialApp/kubernetes-helm-chart-cassandra" ["l"="-1.296,18.654"]
@@ -1167,17 +1280,14 @@ digraph G {
 "hocchudong/ghichep-ELK" ["l"="-1.289,19.385"]
 "hocchudong/ghichep-python" ["l"="-1.303,19.387"]
 "scylladb/python-driver" ["l"="-1.6,18.494"]
-"scylladb/scylla-manager" ["l"="-11,-5.921"]
+"scylladb/scylla-manager" ["l"="-11,-5.921", "c"=5]
 "jeromatron/pygmalion" ["l"="-1.644,18.416"]
-"riptano/brisk" ["l"="-1.59,18.402"]
-"cloudian/logprocessing" ["l"="-3.219,19.854"]
+"cloudian/logprocessing" ["l"="-3.219,19.854", "c"=709]
 "aspyker/acmeair-netflix" ["l"="-1.597,18.218"]
 "Netflix-Skunkworks/zerotocloud" ["l"="-1.591,18.235"]
 "comeara/pillar" ["l"="-1.113,18.592"]
 "inoio/sbt-pillar-plugin" ["l"="-1.089,18.586"]
 "Contrast-Security-OSS/cassandra-migration" ["l"="-1.152,18.586"]
-"Netflix/titus-executor" ["l"="-1.203,18.256"]
-"Netflix/titus-api-definitions" ["l"="-1.193,18.276"]
 "dropwizard/dropwizard-elasticsearch" ["l"="-1.276,18.002"]
 "dropwizard/dropwizard-java8" ["l"="-1.293,18.025"]
 "instaclustr/instarepair" ["l"="-1.275,18.607"]
@@ -1195,24 +1305,26 @@ digraph G {
 "Shimi/cascal" ["l"="-1.651,18.393"]
 "shorrockin/cascal" ["l"="-1.678,18.394"]
 "HPCC-Cloud-Computing/hpcc-know-how" ["l"="-1.232,19.492"]
+"databricks/spark-csv" ["l"="-2.61,17.064", "c"=455]
 "huluwaservice/webapp" ["l"="-1.323,19.261"]
 "luyencode/cpp-solutions" ["l"="-1.299,19.243"]
-"facebookarchive/beringei" ["l"="0.986,14.038"]
-"Netflix/servo" ["l"="-1.468,18.266"]
+"Netflix/curator" ["l"="-3.173,12.117", "c"=15]
+"spark-jobserver/spark-jobserver" ["l"="-2.598,17.047", "c"=455]
+"jmxtrans/jmxtrans" ["l"="-0.503,17.082", "c"=398]
+"LinkedInAttic/datafu" ["l"="-3.175,19.862", "c"=709]
+"facebookarchive/beringei" ["l"="0.986,14.038", "c"=115]
 "Netflix/edda" ["l"="-1.398,18.366"]
-"Netflix/ribbon" ["l"="-2.799,11.851"]
-"spinnaker/spinnaker" ["l"="8.128,-8.559"]
-"Netflix/vizceral" ["l"="8.171,-8.359"]
-"akka/alpakka-kafka" ["l"="-2.52,18.71"]
-"typelevel/fs2" ["l"="-2.658,18.705"]
+"Netflix/ribbon" ["l"="-2.799,11.851", "c"=15]
+"spinnaker/spinnaker" ["l"="8.128,-8.559", "c"=14]
+"Netflix/vizceral" ["l"="8.171,-8.359", "c"=14]
+"akka/alpakka-kafka" ["l"="-2.52,18.71", "c"=38]
+"typelevel/fs2" ["l"="-2.658,18.705", "c"=38]
 "Netflix/blitz4j" ["l"="-1.495,18.234"]
 "cfregly/fluxcapacitor" ["l"="-1.52,18.25"]
-"Netflix/curator" ["l"="-3.173,12.117"]
 "Netflix/Turbine" ["l"="-1.471,18.235"]
-"ReactiveX/RxNetty" ["l"="-2.639,12.19"]
-"Netflix/asgard" ["l"="-1.516,18.278"]
+"databricks/spark-avro" ["l"="-2.564,16.976", "c"=455]
 "Netflix/Prana" ["l"="-1.468,18.295"]
-"Netflix/Fenzo" ["l"="6.427,-13.237"]
+"Netflix/Fenzo" ["l"="6.427,-13.237", "c"=837]
 "datastaxdevs/workshop-intro-to-cassandra" ["l"="-1.34,18.905"]
 "DataStax-Academy/workshop-cassandra-certification" ["l"="-1.344,18.874"]
 "datastaxdevs/workshop-introduction-to-nosql" ["l"="-1.335,18.934"]
@@ -1226,37 +1338,36 @@ digraph G {
 "nosqlbench/nosqlbench" ["l"="-1.38,18.697"]
 "ansible-collections/community.cassandra" ["l"="-1.36,18.632"]
 "k8ssandra/cass-operator" ["l"="-1.384,18.654"]
-"spark-jobserver/spark-jobserver" ["l"="-2.598,17.047"]
-"spark-notebook/spark-notebook" ["l"="-2.647,17.062"]
-"holdenk/spark-testing-base" ["l"="-2.654,17.026"]
-"outworkers/phantom" ["l"="-17.335,-9.236"]
-"databricks/spark-avro" ["l"="-2.564,16.976"]
-"databricks/spark-csv" ["l"="-2.61,17.064"]
-"RedisLabs/spark-redis" ["l"="-2.566,17.014"]
+"spark-notebook/spark-notebook" ["l"="-2.647,17.062", "c"=455]
+"holdenk/spark-testing-base" ["l"="-2.654,17.026", "c"=455]
+"outworkers/phantom" ["l"="-17.335,-9.236", "c"=1323]
+"RedisLabs/spark-redis" ["l"="-2.566,17.014", "c"=455]
 "jsevellec/cassandra-unit-examples" ["l"="-1.425,18.543"]
 "gatling-cql/GatlingCql" ["l"="-1.371,18.53"]
 "HadesArchitect/GrafanaCassandraDatasource" ["l"="-1.322,18.683"]
-"datastax/starlight-for-rabbitmq" ["l"="-2.844,11.002"]
-"datastax/reactive-pulsar" ["l"="-2.863,10.988"]
+"datastax/starlight-for-rabbitmq" ["l"="-2.844,11.002", "c"=15]
+"datastax/reactive-pulsar" ["l"="-2.863,10.988", "c"=15]
 "datastax/fallout" ["l"="-1.343,18.687"]
 "masumsoft/express-cassandra" ["l"="-1.566,18.53"]
 "kiril-me/cassandrom" ["l"="-1.54,18.545"]
-"SOHU-Co/kafka-node" ["l"="-0.327,-33.969"]
+"SOHU-Co/kafka-node" ["l"="-0.327,-33.969", "c"=110]
 "3logic/apollo-cassandra" ["l"="-1.53,18.562"]
-"amqp-node/amqplib" ["l"="-0.282,-33.969"]
-"Blizzard/node-rdkafka" ["l"="-0.442,-33.892"]
+"amqp-node/amqplib" ["l"="-0.282,-33.969", "c"=110]
+"Blizzard/node-rdkafka" ["l"="-0.442,-33.892", "c"=110]
 "datastax/ruby-driver" ["l"="-1.622,18.53"]
 "twissandra/twissandra" ["l"="-1.595,18.457"]
 "pycassa/pycassa" ["l"="-1.615,18.434"]
 "lazyboy" ["l"="-1.635,18.448"]
 "vaterlaus/django_cassandra_backend" ["l"="-1.628,18.461"]
+"gocassa/gocassa" ["l"="40.025,24.008", "c"=157]
+"chrusty/ctop" ["l"="-1.316,18.498"]
 "dunghm98/web-for-crush" ["l"="-1.269,19.16"]
 "zukahai/confess-crush" ["l"="-1.303,19.155"]
 "hocchudong/git-github-for-sysadmin" ["l"="-1.291,19.324"]
 "hocchudong/ghichep-docker" ["l"="-1.286,19.363"]
 "hocchudong/ghichep-kubernetes" ["l"="-1.299,19.372"]
 "nhanhoadocs/thuctapsinh" ["l"="-1.264,19.314"]
-"tmsanghoclaptrinh/tmsang-hoc-thuat-toan" ["l"="-0.508,9.425"]
+"tmsanghoclaptrinh/tmsang-hoc-thuat-toan" ["l"="-0.508,9.425", "c"=320]
 "Netflix/Raigad" ["l"="-1.432,18.343"]
 "Netflix/iep" ["l"="-1.448,18.226"]
 "Netflix/msl" ["l"="-1.4,18.211"]
@@ -1284,21 +1395,23 @@ digraph G {
 "datastaxdevs/learningpath-docker" ["l"="-1.312,18.815"]
 "datastaxdevs/workshop-microservices-java" ["l"="-1.364,18.836"]
 "datastax/graph-book" ["l"="-1.346,18.766"]
-"spring-petclinic/spring-petclinic-reactive" ["l"="25.683,-30.588"]
+"spring-petclinic/spring-petclinic-reactive" ["l"="25.683,-30.588", "c"=176]
 "r4fek/django-scylla" ["l"="-1.578,18.491"]
-"django-nonrel/mongodb-engine" ["l"="46.875,18.695"]
-"fengsp/django-grpc-framework" ["l"="44.619,21.57"]
+"django-nonrel/mongodb-engine" ["l"="46.875,18.695", "c"=52]
+"fengsp/django-grpc-framework" ["l"="44.619,21.57", "c"=20]
+"Netflix-Skunkworks/sketchy" ["l"="-42.932,-33.524", "c"=79]
 "spotify/cassandra-opstools" ["l"="-1.289,18.554"]
-"chrusty/ctop" ["l"="-1.316,18.498"]
 "spodkowinski/cassandra-reaper-ui" ["l"="-1.299,18.526"]
 "brianmhess/cassandra-count" ["l"="-1.329,18.484"]
 "smartcat-labs/cassandra-diagnostics" ["l"="-1.278,18.542"]
 "Knewton/cassandra-toolbox" ["l"="-1.293,18.511"]
 "duoshuo/php-cassandra" ["l"="-1.663,18.611"]
 "evseevnn-zz/php-cassandra-binary" ["l"="-1.646,18.601"]
+"sebbrudzinski/Open-LaTeX-Studio" ["l"="31.991,-22.689", "c"=358]
 "twitter-archive/cassie" ["l"="-1.61,18.391"]
 "datastaxdevs/workshop-k8ssandra" ["l"="-1.356,18.782"]
-"DataStax-Examples/spring-k8s-cassandra-microservices" ["l"="25.638,-30.558"]
+"DataStax-Examples/spring-k8s-cassandra-microservices" ["l"="25.638,-30.558", "c"=176]
+"paukiatwee/budgetapp" ["l"="13.076,-8.605", "c"=18]
 "Netflix/NfWebCrypto" ["l"="-1.404,18.165"]
 "benjamin-bader/droptools" ["l"="-1.325,18.033"]
 "reines/dropwizard-debpkg-maven-plugin" ["l"="-1.326,18.004"]
@@ -1313,86 +1426,99 @@ digraph G {
 "cequel/cequel" ["l"="-1.663,18.537"]
 "datastax/go-cassandra-native-protocol" ["l"="-1.493,18.699"]
 "Netflix/nf-data-explorer" ["l"="-1.296,18.71"]
+"square/keywhiz" ["l"="10.093,-6.484", "c"=162]
+"square/keywhiz-fs" ["l"="-1.466,18.033"]
 "masumsoft/cassandra-exporter" ["l"="-1.298,18.464"]
 "namndwebdev/tang-crush" ["l"="-1.316,19.043"]
 "datastaxdevs/workshop-graphql-netflix" ["l"="-1.327,18.969"]
 "suguru/cassandra-webconsole" ["l"="-1.58,18.422"]
-"cloudera/flume" ["l"="-3.219,19.876"]
-"nathanmarz/cascalog" ["l"="-23.558,-20.429"]
-"infochimps-labs/ironfan" ["l"="2.812,-35.849"]
-"LinkedInAttic/indextank-engine" ["l"="-3.209,19.997"]
-"cloudera/crunch" ["l"="-3.199,19.824"]
-"LinkedInAttic/sensei" ["l"="-3.178,19.967"]
+"cloudera/flume" ["l"="-3.219,19.876", "c"=709]
+"nathanmarz/cascalog" ["l"="-23.558,-20.429", "c"=75]
+"infochimps-labs/ironfan" ["l"="2.812,-35.849", "c"=171]
+"LinkedInAttic/indextank-engine" ["l"="-3.209,19.997", "c"=709]
+"cloudera/crunch" ["l"="-3.199,19.824", "c"=709]
+"LinkedInAttic/sensei" ["l"="-3.178,19.967", "c"=709]
+"swagger-api/swagger-samples" ["l"="-4.898,8.12", "c"=432]
 "datastaxdevs/appdev-week1-todolist" ["l"="-1.352,18.976"]
 "datastaxdevs/react-basics" ["l"="-1.336,18.992"]
 "datastaxdevs/workshop-social-media-tiktok" ["l"="-1.356,18.958"]
-"fit2cloud/riskscanner" ["l"="19.076,12.981"]
+"fit2cloud/riskscanner" ["l"="19.076,12.981", "c"=1113]
 "datastaxdevs/workshop-intro-to-graphql" ["l"="-1.312,18.998"]
 "DataStax-Academy/workshop-crud-with-python-and-node" ["l"="-1.296,18.973"]
 "datastaxdevs/workshop-spring-reactive" ["l"="-1.356,19.005"]
-"cube0x0/CVE-2021-1675" ["l"="-46.934,-32.237"]
-"OpenPPL/ppl.nn" ["l"="37.036,0.833"]
-"IntersectMBO/plutus" ["l"="-19.7,7.398"]
+"cube0x0/CVE-2021-1675" ["l"="-46.934,-32.237", "c"=41]
+"OpenPPL/ppl.nn" ["l"="37.036,0.833", "c"=112]
+"IntersectMBO/plutus" ["l"="-19.7,7.398", "c"=765]
 "ifaim/nestjs-express-cassandra" ["l"="-1.598,18.547"]
 "hoan/phpcassa" ["l"="-1.773,18.557"]
+"square/certstrap" ["l"="8.491,-8.968", "c"=14]
+"twitter/cassovary" ["l"="-2.831,18.685", "c"=38]
 "hocchudong/ghichep-nginx" ["l"="-1.298,19.397"]
 "hocchudong/openstack-tools" ["l"="-1.259,19.363"]
 "hocchudong/ghichep-prometheus" ["l"="-1.308,19.353"]
-"xedin/sasi" ["l"="-1.37,18.503"]
 "datastax/spark-cassandra-stress" ["l"="-1.377,18.445"]
+"Netflix/rend" ["l"="4.051,-8.174", "c"=0]
+"mongodb/mongo-spark" ["l"="-2.464,16.998", "c"=455]
 "smartcat-labs/cassandra-migration-tool-java" ["l"="-1.217,18.566"]
 "hhandoko/cassandra-migration" ["l"="-1.081,18.613"]
+"spotify/heroic" ["l"="-2.257,12.157", "c"=15]
 "DataStax-Academy/kubecon2020" ["l"="-1.373,18.886"]
 "datastaxdevs/workshop-spring-data-cassandra" ["l"="-1.374,19.025"]
 "BedrockStreaming/CassandraBundle" ["l"="-1.659,18.582"]
-"he4rt/scylladb-php-driver" ["l"="5.386,-20.659"]
+"he4rt/scylladb-php-driver" ["l"="5.386,-20.659", "c"=96]
 "Orange-OpenSource/YACassandraPDO" ["l"="-1.625,18.607"]
 "michaelklishin/cassandra-chef-cookbook" ["l"="-1.241,18.584"]
 "target/dse-cookbook" ["l"="-1.215,18.603"]
-"square/keywhiz-fs" ["l"="-1.466,18.033"]
 "smoketurner/dropwizard-consul" ["l"="-1.213,18.025"]
 "composable-systems/dropwizard-cassandra" ["l"="-1.186,18.572"]
 "andrewrothstein/ansible-cassandra" ["l"="-1.293,18.445"]
 "quocdinhit97/YTB-youtube-2021-totinh-part-2" ["l"="-1.336,19.151"]
 "quocdinhit97/YTB-youtube-2021-totinh-part-1" ["l"="-1.327,19.177"]
 "zukahai/box-love" ["l"="-1.296,19.187"]
-"Netflix/eureka" ["l"="-2.939,11.817"]
-"Netflix/zuul" ["l"="-2.892,11.815"]
-"Netflix/Hystrix" ["l"="-2.89,11.909"]
-"dropwizard/metrics" ["l"="-2.854,12.064"]
-"openzipkin/brave" ["l"="-2.941,12.152"]
-"spring-cloud/spring-cloud-netflix" ["l"="-2.814,11.82"]
+"square/shift" ["l"="8.837,-4.426", "c"=382]
+"Netflix/eureka" ["l"="-2.939,11.817", "c"=15]
+"Netflix/zuul" ["l"="-2.892,11.815", "c"=15]
+"Netflix/Hystrix" ["l"="-2.89,11.909", "c"=15]
+"dropwizard/metrics" ["l"="-2.854,12.064", "c"=15]
+"openzipkin/brave" ["l"="-2.941,12.152", "c"=15]
+"spring-cloud/spring-cloud-netflix" ["l"="-2.814,11.82", "c"=15]
 "gini/dropwizard-gelf" ["l"="-1.248,17.99"]
 "smoketurner/dropwizard-zipkin" ["l"="-1.242,17.973"]
+"MongoEngine/django-mongoengine" ["l"="47.009,18.616", "c"=52]
+"cloudavail/aws-missing-tools" ["l"="10.144,-6.421", "c"=162]
+"twitter/pelikan" ["l"="1.131,14.059", "c"=115]
+"kagkarlsson/db-scheduler" ["l"="-2.365,12.034", "c"=15]
 "gwizard/gwizard" ["l"="-1.353,18.156"]
 "Squarespace/jersey2-guice" ["l"="-1.373,18.153"]
 "Netflix/aws-autoscaling" ["l"="-1.573,18.203"]
-"Teevity/ice" ["l"="10.128,-6.39"]
 "Netflix/aminator" ["l"="-1.513,18.312"]
-"Netflix/SimianArmy" ["l"="8.24,-8.39"]
-"cloudavail/aws-missing-tools" ["l"="10.144,-6.421"]
-"townsfolk/gradle-templates" ["l"="-1.794,12.74"]
+"Netflix/SimianArmy" ["l"="8.24,-8.39", "c"=14]
+"townsfolk/gradle-templates" ["l"="-1.794,12.74", "c"=15]
 "protectwise/cassandra-util" ["l"="-1.298,18.57"]
 "salesforce/Argus" ["l"="-1.258,18.404"]
 "salesforce/refocus" ["l"="-1.194,18.455"]
-"zalando/zmon" ["l"="7.149,-8.35"]
+"zalando/zmon" ["l"="7.149,-8.35", "c"=14]
 "salesforce/python-argusclient" ["l"="-1.231,18.394"]
 "VergeOps/k8s-rvstore" ["l"="-1.223,18.378"]
 "awesome-astra/docs" ["l"="-1.401,18.781"]
 "datastaxdevs/awesome-astra" ["l"="-1.404,18.808"]
 "jhaber/dropwizard-guicier-example" ["l"="-1.251,18.093"]
-"scylladb/gocqlx" ["l"="-10.962,-5.91"]
-"gocassa/gocassa" ["l"="40.025,24.008"]
-"nats-io/nats.go" ["l"="4.124,-8.893"]
-"IBM/sarama" ["l"="3.715,-8.794"]
-"scylladb/gocql" ["l"="-10.993,-5.894"]
-"lib/pq" ["l"="3.815,-8.997"]
-"tools/godep" ["l"="3.78,-8.505"]
-"mattes/migrate" ["l"="3.951,-8.565"]
-"olivere/elastic" ["l"="3.591,-8.727"]
-"streadway/amqp" ["l"="3.62,-8.811"]
-"Masterminds/glide" ["l"="3.811,-8.589"]
-"golang/protobuf" ["l"="3.735,-8.823"]
+"griddb/griddb" ["l"="-19.65,-24.757", "c"=10]
+"scylladb/gocqlx" ["l"="-10.962,-5.91", "c"=5]
+"nats-io/nats.go" ["l"="4.124,-8.893", "c"=0]
+"IBM/sarama" ["l"="3.715,-8.794", "c"=0]
+"scylladb/gocql" ["l"="-10.993,-5.894", "c"=5]
+"lib/pq" ["l"="3.815,-8.997", "c"=0]
+"tools/godep" ["l"="3.78,-8.505", "c"=0]
+"mattes/migrate" ["l"="3.951,-8.565", "c"=0]
+"olivere/elastic" ["l"="3.591,-8.727", "c"=0]
+"streadway/amqp" ["l"="3.62,-8.811", "c"=0]
+"Masterminds/glide" ["l"="3.811,-8.589", "c"=0]
+"golang/protobuf" ["l"="3.735,-8.823", "c"=0]
+"nats-io/nats-streaming-server" ["l"="4.516,-8.799", "c"=0]
+"airlift/airline" ["l"="-2.419,12.242", "c"=15]
+"twitter/elephant-bird" ["l"="-3.135,19.867", "c"=709]
+"j-easy/easy-batch" ["l"="-2.651,11.824", "c"=15]
 "prezi/reddalert" ["l"="-1.363,18.369"]
 "patka/cassandra-migration" ["l"="-1.02,18.632"]
 "liquibase/liquibase-cassandra" ["l"="-1.01,18.662"]
@@ -1401,58 +1527,64 @@ digraph G {
 "datastax/astra-cli" ["l"="-1.449,18.734"]
 "datastax/SwiftieGPT" ["l"="-1.461,18.721"]
 "Netflix/netflix-commons" ["l"="-1.482,18.207"]
+"tjake/Jlama" ["l"="45.934,2.26", "c"=574]
 "datastax/astra-assistants-api" ["l"="-1.405,18.748"]
-"diennea/bookkeeper-visual-manager" ["l"="-2.823,11.148"]
-"diennea/carapaceproxy" ["l"="-2.809,11.159"]
-"tjake/Jlama" ["l"="45.934,2.26"]
-"mukel/llama3.java" ["l"="45.993,2.231"]
+"diennea/bookkeeper-visual-manager" ["l"="-2.823,11.148", "c"=15]
+"diennea/carapaceproxy" ["l"="-2.809,11.159", "c"=15]
+"linkedin/rest.li" ["l"="-2.648,14.535", "c"=43]
+"mukel/llama3.java" ["l"="45.993,2.231", "c"=574]
 "BrokkAi/brokk" ["l"="-1.446,18.777"]
-"arc53/DocsGPT" ["l"="40.331,0.173"]
+"arc53/DocsGPT" ["l"="40.331,0.173", "c"=7]
+"apache/lucene-solr" ["l"="-2.862,14.586", "c"=43]
 "jaredstehler/dropwizard-guice" ["l"="-1.288,18.076"]
 "eliast/dropwizard-guice-example" ["l"="-1.293,18.093"]
 "oregami/dropwizard-guice-jpa-seed" ["l"="-1.336,18.07"]
 "palominolabs/metrics-guice" ["l"="-1.316,18.097"]
 "bazaarvoice/dropwizard-configurable-assets-bundle" ["l"="-1.323,18.056"]
 "jaredstehler/dropwizard-quartz" ["l"="-1.283,18.06"]
+"etsy/411" ["l"="-3.608,8.837", "c"=540]
+"mokies/ratelimitj" ["l"="-2.674,11.838", "c"=15]
 "Netflix/ndbench" ["l"="-1.266,18.495"]
 "bangoc/IT4853" ["l"="-1.218,19.508"]
 "doanduyhai/killrchat" ["l"="-1.529,18.455"]
 "salesforce/pyplyn" ["l"="-1.164,18.467"]
 "salesforce/refocus-ldk" ["l"="-1.177,18.475"]
 "Netflix/zeno" ["l"="-1.524,18.219"]
-"Netflix-Skunkworks/gcviz" ["l"="-43.075,-33.599"]
-"fabric8io/kubeflix" ["l"="-2.325,11.569"]
-"Netflix/concurrency-limits" ["l"="-2.66,11.921"]
+"Netflix-Skunkworks/gcviz" ["l"="-43.075,-33.599", "c"=79]
+"fabric8io/kubeflix" ["l"="-2.325,11.569", "c"=15]
+"bulldog2011/bigqueue" ["l"="-5.558,10.728", "c"=452]
+"transitive-bullshit/OpenOpenAI" ["l"="40.971,-3.424", "c"=146]
 "Netflix/hollow-reference-implementation" ["l"="-1.339,18.285"]
-"aeron-io/agrona" ["l"="-5.522,10.555"]
-"JCTools/JCTools" ["l"="-5.54,10.54"]
-"atomix/atomix" ["l"="-5.519,10.695"]
-"odnoklassniki/one-nio" ["l"="-5.577,10.502"]
-"snazy/ohc" ["l"="-5.532,10.614"]
+"aeron-io/agrona" ["l"="-5.522,10.555", "c"=452]
+"JCTools/JCTools" ["l"="-5.54,10.54", "c"=452]
+"atomix/atomix" ["l"="-5.519,10.695", "c"=452]
+"odnoklassniki/one-nio" ["l"="-5.577,10.502", "c"=452]
+"snazy/ohc" ["l"="-5.532,10.614", "c"=452]
+"MLT-OSS/open-assistant-api" ["l"="40.946,-3.355", "c"=146]
 "datastax/cassandra-data-migrator" ["l"="-1.417,18.788"]
-"Netflix/rend" ["l"="4.051,-8.174"]
 "hocchudong/thuctap012017" ["l"="-1.327,19.392"]
+"OpenTSDB/opentsdb" ["l"="-2.73,14.598", "c"=43]
 "lamth/tailieu-Docker" ["l"="-1.312,19.415"]
 "hocchudong/ghichep-glusterFS" ["l"="-1.296,19.42"]
 "Answers4AWS/netflixoss-ansible" ["l"="-1.585,18.307"]
-"Netflix/security_monkey" ["l"="11.204,-4.761"]
+"Netflix/security_monkey" ["l"="11.204,-4.761", "c"=147]
 "aminator-plugins/ansible-provisioner" ["l"="-1.546,18.316"]
-"cloudtools/troposphere" ["l"="10.126,-6.325"]
-"Netflix/bless" ["l"="10.134,-6.458"]
-"cloudtools/stacker" ["l"="10.815,-4.735"]
-"OpenTSDB/opentsdb" ["l"="-2.73,14.598"]
-"spotify/heroic" ["l"="-2.257,12.157"]
+"cloudtools/troposphere" ["l"="10.126,-6.325", "c"=162]
+"Netflix/bless" ["l"="10.134,-6.458", "c"=162]
+"cloudtools/stacker" ["l"="10.815,-4.735", "c"=147]
 "kairosdb/kairosdb-client" ["l"="-1.292,18.371"]
 "OpenNMS/newts" ["l"="-1.298,18.398"]
-"pyr/cyanite" ["l"="4.089,-7.108"]
-"mozilla-services/heka" ["l"="3.837,-8.01"]
-"akumuli/Akumuli" ["l"="4.371,-7.607"]
-"BTrDB/btrdb-server" ["l"="4.231,-7.856"]
+"pyr/cyanite" ["l"="4.089,-7.108", "c"=0]
+"mozilla-services/heka" ["l"="3.837,-8.01", "c"=0]
+"BTrDB/btrdb-server" ["l"="4.231,-7.856", "c"=0]
 "Netflix/netflix-graph" ["l"="-1.513,18.202"]
 "Netflix/Cloud-Prize" ["l"="-1.533,18.169"]
+"twitter-archive/ostrich" ["l"="-3.359,19.867", "c"=709]
 "Netflix/recipes-rss" ["l"="-1.543,18.266"]
 "viafoura/buri" ["l"="-1.547,18.222"]
-"s7/scale7-cages" ["l"="-3.081,20.011"]
+"s7/scale7-cages" ["l"="-3.081,20.011", "c"=709]
 "grafana/kairosdb-datasource" ["l"="-1.259,18.355"]
+"OpenNMS/opennms" ["l"="6.38,-2.854", "c"=225]
 "julesbravo/Zend_Cassandra" ["l"="-1.737,18.531"]
+"crate/crate" ["l"="-2.705,14.631", "c"=43]
 }

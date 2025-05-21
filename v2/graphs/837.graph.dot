@@ -11,9 +11,17 @@ digraph G {
 "jenkinsci/mesos-plugin" -> "mesosphere/kubernetes-mesos"
 "jenkinsci/mesos-plugin" -> "shoenig/marathonctl"
 "jenkinsci/mesos-plugin" -> "mesos/mesos_exporter"
+"kudobuilder/kudo" -> "mesosphere/dcos-commons" ["e"=1]
+"etsy/morgue" -> "Capgemini/Apollo" ["e"=1]
+"ClusterHQ/flocker" -> "mantl/mantl" ["e"=1]
+"apache/mesos" -> "d2iq-archive/marathon" ["e"=1]
+"apache/mesos" -> "dcos/dcos" ["e"=1]
+"apache/mesos" -> "mesos/chronos" ["e"=1]
+"docker-archive/classicswarm" -> "d2iq-archive/marathon" ["e"=1]
 "AnsibleShipyard/ansible-mesos" -> "AnsibleShipyard/ansible-marathon"
 "AnsibleShipyard/ansible-mesos" -> "AnsibleShipyard/ansible-zookeeper"
 "AnsibleShipyard/ansible-mesos" -> "mhamrah/ansible-mesos-playbook"
+"facebookarchive/webscalesql-5.6" -> "twitter-archive/mysos" ["e"=1]
 "d2iq-archive/marathon" -> "apache/mesos" ["e"=1]
 "d2iq-archive/marathon" -> "mesos/chronos"
 "d2iq-archive/marathon" -> "dcos/dcos"
@@ -29,7 +37,15 @@ digraph G {
 "d2iq-archive/marathon" -> "Netflix/Fenzo"
 "d2iq-archive/marathon" -> "rkt/rkt" ["e"=1]
 "d2iq-archive/marathon" -> "mesosphere/marathon-ui"
+"deis/deis" -> "d2iq-archive/marathon" ["e"=1]
+"deis/deis" -> "mantl/mantl" ["e"=1]
+"docker-archive/libcontainer" -> "mesosphere/mesos-dns" ["e"=1]
+"facebookarchive/bistro" -> "mesos/chronos" ["e"=1]
+"jamesrwhite/minicron" -> "mesos/chronos" ["e"=1]
+"vulcand/vulcand" -> "mantl/mantl" ["e"=1]
 "mesosphere/mesos" -> "mesosphere/dcos"
+"flynn/flynn" -> "mantl/mantl" ["e"=1]
+"HubSpot/BuckyClient" -> "HubSpot/Singularity" ["e"=1]
 "mesos/mesos-go" -> "mesosphere/mesos-dns"
 "mesos/mesos-go" -> "mesosphere/RENDLER"
 "mesos/mesos-go" -> "Dataman-Cloud/swan"
@@ -66,11 +82,13 @@ digraph G {
 "HubSpot/Singularity" -> "ContainerSolutions/minimesos"
 "HubSpot/Singularity" -> "apache/aurora"
 "HubSpot/Singularity" -> "magneticio/vamp"
+"haproxy-unofficial-obsolete-mirrors/haproxy" -> "d2iq-archive/marathon" ["e"=1]
 "thefactory/marathon-python" -> "mesosphere/marathon-autoscale"
 "thefactory/marathon-python" -> "shoenig/marathonctl"
 "thefactory/marathon-python" -> "QubitProducts/bamboo"
 "thefactory/marathon-python" -> "mesosphere/marathon-lb-autoscale"
 "thefactory/marathon-python" -> "mesosphere-backup/mesos-framework-tutorial"
+"Kong/insomnia-mockbin" -> "mantl/mantl" ["e"=1]
 "apache/aurora" -> "tellapart/aurproxy"
 "apache/aurora" -> "Netflix/Fenzo"
 "apache/aurora" -> "apache/aurora-packaging"
@@ -143,6 +161,13 @@ digraph G {
 "QubitProducts/bamboo" -> "mesosphere-backup/mesos-cli"
 "QubitProducts/bamboo" -> "mesosphere-backup/minuteman"
 "QubitProducts/bamboo" -> "everpeace/vagrant-mesos"
+"spotify/helios" -> "QubitProducts/bamboo" ["e"=1]
+"spotify/helios" -> "Capgemini/Apollo" ["e"=1]
+"gliderlabs/registrator" -> "mantl/mantl" ["e"=1]
+"jwilder/docker-squash" -> "mantl/mantl" ["e"=1]
+"etsy/opsweekly" -> "Capgemini/Apollo" ["e"=1]
+"AcalephStorage/consul-alerts" -> "mantl/mantl" ["e"=1]
+"AcalephStorage/consul-alerts" -> "Capgemini/Apollo" ["e"=1]
 "d2iq-archive/universe" -> "mesosphere/dcos-commons"
 "d2iq-archive/universe" -> "mesosphere/marathon-autoscale"
 "d2iq-archive/universe" -> "mesosphere/mesos-dns"
@@ -158,6 +183,8 @@ digraph G {
 "d2iq-archive/universe" -> "dcos/dcos-cli"
 "d2iq-archive/universe" -> "dcos/dcos"
 "d2iq-archive/universe" -> "mesosphere/marathon-lb-autoscale"
+"chadoe/docker-cleanup-volumes" -> "mantl/mantl" ["e"=1]
+"weaveworks/weave" -> "mantl/mantl" ["e"=1]
 "dharmeshkakadia/awesome-mesos" -> "mesosphere/mesos-dns"
 "dharmeshkakadia/awesome-mesos" -> "Dataman-Cloud/swan"
 "dharmeshkakadia/awesome-mesos" -> "mesos/mr-redis"
@@ -173,6 +200,8 @@ digraph G {
 "dharmeshkakadia/awesome-mesos" -> "mesos/myriad"
 "dharmeshkakadia/awesome-mesos" -> "ContainerSolutions/minimesos"
 "dharmeshkakadia/awesome-mesos" -> "shoenig/marathonctl"
+"projectcalico/calicoctl" -> "mantl/mesos-consul" ["e"=1]
+"projectcalico/calicoctl" -> "mesosphere/mesos-dns" ["e"=1]
 "mesosphere-backup/hdfs-deprecated" -> "mesosphere-backup/cassandra-mesos-deprecated"
 "mesosphere-backup/hdfs-deprecated" -> "mesos/kafka"
 "mesosphere-backup/hdfs-deprecated" -> "mesosphere-backup/mesos-cli"
@@ -183,6 +212,9 @@ digraph G {
 "mesosphere-backup/hdfs-deprecated" -> "mesos/elasticsearch"
 "mesos/storm" -> "mesos/hadoop"
 "mesos/storm" -> "obaidsalikeen/storm-marathon"
+"gliderlabs/docker-consul" -> "mantl/mantl" ["e"=1]
+"gliderlabs/docker-consul" -> "QubitProducts/bamboo" ["e"=1]
+"Netflix/Prana" -> "Netflix/Fenzo" ["e"=1]
 "HubSpot/Rosetta" -> "HubSpot/Blazar-Archive"
 "mesosphere/kubernetes-mesos" -> "mesosphere/mesos-dns"
 "mesosphere/kubernetes-mesos" -> "QubitProducts/bamboo"
@@ -214,9 +246,17 @@ digraph G {
 "mantl/mantl" -> "vulcand/vulcand" ["e"=1]
 "mantl/mantl" -> "AcalephStorage/consul-alerts" ["e"=1]
 "mantl/mantl" -> "HubSpot/Singularity"
+"newrelic/centurion" -> "QubitProducts/bamboo" ["e"=1]
+"paz-sh/paz" -> "mantl/mantl" ["e"=1]
+"TritonDataCenter/triton" -> "mesosphere/kubernetes-mesos" ["e"=1]
+"klen/graphite-beacon" -> "Capgemini/Apollo" ["e"=1]
+"klen/graphite-beacon" -> "mantl/mesos-consul" ["e"=1]
 "amazon-archives/ecs-mesos-scheduler-driver" -> "mesosphere-backup/hdfs-deprecated"
 "amazon-archives/ecs-mesos-scheduler-driver" -> "mesosphere/elasticsearch-mesos"
 "amazon-archives/ecs-mesos-scheduler-driver" -> "mesosphere/mesos-dns"
+"progrium/bashstyle" -> "mantl/mantl" ["e"=1]
+"HubSpot/jinjava" -> "HubSpot/Rosetta" ["e"=1]
+"projectcalico/felix" -> "mesosphere/mesos-dns" ["e"=1]
 "mesosphere/mesos-dns" -> "mesosphere/marathon-lb"
 "mesosphere/mesos-dns" -> "mesosphere-backup/cassandra-mesos-deprecated"
 "mesosphere/mesos-dns" -> "mesos/mesos-go"
@@ -247,7 +287,14 @@ digraph G {
 "adrianco/spigo" -> "magneticio/vamp"
 "adrianco/spigo" -> "rakyll/gom" ["e"=1]
 "adrianco/spigo" -> "pact-foundation/pact-jvm" ["e"=1]
+"Netflix/spectator" -> "Netflix/Fenzo" ["e"=1]
+"allegro/tipboard" -> "Capgemini/Apollo" ["e"=1]
+"cloudfoundry-attic/lattice-release" -> "mesosphere/mesos-dns" ["e"=1]
+"cloudfoundry-attic/lattice-release" -> "mesos/myriad" ["e"=1]
+"cloudfoundry-attic/lattice-release" -> "mantl/mantl" ["e"=1]
 "CenturyLinkLabs/dray" -> "microscaling/imagelayers-graph"
+"micahhausler/container-transform" -> "mantl/mantl" ["e"=1]
+"pires/kubernetes-vagrant-coreos-cluster" -> "everpeace/vagrant-mesos" ["e"=1]
 "AnsibleShipyard/ansible-zookeeper" -> "AnsibleShipyard/ansible-mesos"
 "AnsibleShipyard/ansible-zookeeper" -> "AnsibleShipyard/ansible-marathon"
 "sekka1/mesosphere-docker" -> "everpeace/vagrant-mesos"
@@ -293,6 +340,11 @@ digraph G {
 "gambol99/docker-logistics" -> "gambol99/embassy"
 "rayrod2030/collectd-mesos" -> "signalfx/collectd-zookeeper"
 "mesosphere/tweeter" -> "mesosphere/cd-demo"
+"jenkinsci/docker-workflow-plugin" -> "jenkinsci/mesos-plugin" ["e"=1]
+"rexray/rexray" -> "mesosphere/mesos-dns" ["e"=1]
+"rexray/rexray" -> "thecodeteam/mesos-module-dvdi" ["e"=1]
+"rexray/rexray" -> "mesosphere/marathon-lb" ["e"=1]
+"Netflix/vector" -> "mantl/mantl" ["e"=1]
 "mesos/elasticsearch" -> "mesos/logstash"
 "mesos/elasticsearch" -> "ContainerSolutions/minimesos"
 "mesos/elasticsearch" -> "mesosphere-backup/cassandra-mesos-deprecated"
@@ -323,10 +375,21 @@ digraph G {
 "ContainerSolutions/minimesos" -> "jenkinsci/mesos-plugin"
 "ContainerSolutions/minimesos" -> "mesosphere/mesosaurus"
 "ContainerSolutions/minimesos" -> "CiscoCloud/marathon-consul"
+"hygieia/hygieia" -> "mantl/mantl" ["e"=1]
+"kontena/kontena" -> "magneticio/vamp" ["e"=1]
+"square/keywhiz" -> "mantl/mantl" ["e"=1]
+"machyve/xhyve" -> "mantl/mantl" ["e"=1]
+"soabase/exhibitor" -> "mantl/mesos-consul" ["e"=1]
+"soabase/exhibitor" -> "QubitProducts/bamboo" ["e"=1]
+"soabase/exhibitor" -> "mesosphere/mesos-dns" ["e"=1]
+"soabase/exhibitor" -> "mesos/kafka" ["e"=1]
+"soabase/exhibitor" -> "Netflix/Fenzo" ["e"=1]
+"soabase/exhibitor" -> "mesosphere/marathon-lb" ["e"=1]
 "mesosphere/marathon-ui" -> "dcos/dcos-ui"
 "mesosphere/marathon-ui" -> "mesosphere-backup/cassandra-mesos-deprecated"
 "mesosphere/marathon-ui" -> "mesosphere/mesos-dns"
 "mesosphere/marathon-ui" -> "mesosphere/marathon-autoscale"
+"hashicorp/otto" -> "mantl/mantl" ["e"=1]
 "gambol99/go-marathon" -> "gambol99/embassy"
 "gambol99/go-marathon" -> "gambol99/config-fs"
 "gambol99/go-marathon" -> "gambol99/docker-logistics"
@@ -348,6 +411,8 @@ digraph G {
 "Capgemini/Apollo" -> "Capgemini/kubeform" ["e"=1]
 "Capgemini/Apollo" -> "everpeace/vagrant-mesos"
 "Capgemini/Apollo" -> "HubSpot/Singularity"
+"remind101/empire" -> "mantl/mantl" ["e"=1]
+"remind101/empire" -> "Yelp/paasta" ["e"=1]
 "mantl/mesos-consul" -> "CiscoCloud/marathon-consul"
 "mantl/mesos-consul" -> "mesosphere/mesos-dns"
 "mantl/mesos-consul" -> "Capgemini/mesos-ui"
@@ -363,6 +428,7 @@ digraph G {
 "mantl/mesos-consul" -> "martensson/nixy"
 "mantl/mesos-consul" -> "eremetic-framework/eremetic"
 "mantl/mesos-consul" -> "HubSpot/Singularity"
+"google/mr4c" -> "twitter-archive/mysos" ["e"=1]
 "twitter-archive/mysos" -> "apache/incubator-retired-cotton"
 "twitter-archive/mysos" -> "mesosphere/mesos-dns"
 "twitter-archive/mysos" -> "yahoo/mysql_perf_analyzer" ["e"=1]
@@ -378,6 +444,7 @@ digraph G {
 "twitter-archive/mysos" -> "Intel-bigdata/ceph-mesos"
 "twitter-archive/mysos" -> "mesos/mesos-go"
 "twitter-archive/mysos" -> "mesos/elasticsearch"
+"distribworks/dkron" -> "mesos/chronos" ["e"=1]
 "mesos/kafka" -> "mesos/elasticsearch"
 "mesos/kafka" -> "mesosphere-backup/hdfs-deprecated"
 "mesos/kafka" -> "mantl/mesos-consul"
@@ -393,6 +460,7 @@ digraph G {
 "mesos/kafka" -> "mesos/hadoop"
 "mesos/kafka" -> "dharmeshkakadia/awesome-mesos"
 "mesos/kafka" -> "Capgemini/mesos-ui"
+"ajvb/kala" -> "mesos/chronos" ["e"=1]
 "Netflix/Fenzo" -> "ContainerSolutions/minimesos"
 "Netflix/Fenzo" -> "HubSpot/Singularity"
 "Netflix/Fenzo" -> "mesos/mesos-go"
@@ -410,6 +478,7 @@ digraph G {
 "Netflix/Fenzo" -> "mesos/chronos"
 "mesos/logstash" -> "mesos/kibana"
 "mesos/logstash" -> "mesos/elasticsearch"
+"yahoo/mysql_perf_analyzer" -> "twitter-archive/mysos" ["e"=1]
 "CiscoCloud/haproxy-consul" -> "mantl/mesos-consul"
 "CiscoCloud/haproxy-consul" -> "CiscoCloud/nginx-consul"
 "CiscoCloud/nginx-consul" -> "CiscoCloud/docker-consul-template"
@@ -417,6 +486,7 @@ digraph G {
 "CiscoCloud/marathon-consul" -> "rayrod2030/collectd-mesos"
 "CiscoCloud/marathon-consul" -> "allegro/marathon-consul" ["e"=1]
 "mesosphere/serenity" -> "blue-yonder/mesos-threshold-oversubscription"
+"ricardobcl/Dotted-Version-Vectors" -> "dcos/lashup" ["e"=1]
 "tellapart/aurproxy" -> "benley/aurora-jobhopper"
 "tellapart/aurproxy" -> "apache/aurora-packaging"
 "tellapart/aurproxy" -> "tommyulfsparre/aurora_exporter"
@@ -438,14 +508,17 @@ digraph G {
 "twosigma/satellite" -> "mesosphere/net-modules"
 "twosigma/satellite" -> "cloudflare/complainer"
 "twosigma/satellite" -> "clojusc/mesomatic"
+"codetainerapp/codetainer" -> "gambol99/go-marathon" ["e"=1]
 "d2iq-archive/reactjs-components" -> "dcos/dcos-ui"
 "d2iq-archive/reactjs-components" -> "mesosphere/cnvs"
 "microscaling/imagelayers" -> "microscaling/imagelayers-graph"
+"mantl/consul-cli" -> "mantl/mesos-consul" ["e"=1]
 "mesosphere-backup/etcd-mesos" -> "mesos/kibana"
 "Dataman-Cloud/Mesos-CN" -> "Dataman-Cloud/OpenDockerFile"
 "HubSpot/Blazar-Archive" -> "HubSpot/Rosetta"
 "HubSpot/Blazar-Archive" -> "HubSpot/Baragon"
 "microscaling/imagelayers-graph" -> "microscaling/imagelayers"
+"amplab/keystone" -> "mesos/myriad" ["e"=1]
 "lebauce/docker-collectd-plugin" -> "bobrik/collectd-docker"
 "HubSpot/general-store" -> "HubSpot/Blazar-Archive"
 "HubSpot/general-store" -> "HubSpot/Rosetta"
@@ -459,6 +532,7 @@ digraph G {
 "steveniemitz/scales" -> "benley/aurora-jobhopper"
 "tommyulfsparre/aurora_exporter" -> "rafikk/nix-aurora"
 "mesosphere/dcos-spark" -> "mesosphere/edgerouter"
+"TomasTomecek/sen" -> "Yelp/paasta" ["e"=1]
 "Capgemini/mesos-ui" -> "mantl/mesos-consul"
 "Capgemini/mesos-ui" -> "martensson/nixy"
 "Capgemini/mesos-ui" -> "twosigma/satellite"
@@ -474,6 +548,10 @@ digraph G {
 "Capgemini/mesos-ui" -> "mesosphere/mesos-dns"
 "Capgemini/mesos-ui" -> "ContainX/marathon-ldap"
 "Capgemini/mesos-ui" -> "Capgemini/Apollo"
+"twitter-archive/diffy" -> "mantl/mantl" ["e"=1]
+"linkerd/linkerd" -> "d2iq-archive/marathon" ["e"=1]
+"TritonDataCenter/containerpilot" -> "mantl/mantl" ["e"=1]
+"burnettk/delete-docker-registry-image" -> "QubitProducts/bamboo" ["e"=1]
 "mesosphere/marathon-lb" -> "mesosphere/mesos-dns"
 "mesosphere/marathon-lb" -> "mesosphere/marathon-autoscale"
 "mesosphere/marathon-lb" -> "QubitProducts/bamboo"
@@ -489,11 +567,18 @@ digraph G {
 "mesosphere/marathon-lb" -> "mesosphere/marathon-lb-autoscale"
 "mesosphere/marathon-lb" -> "martensson/nixy"
 "mesosphere/marathon-lb" -> "dcos/metronome"
+"allegro/marathon-consul" -> "CiscoCloud/marathon-consul" ["e"=1]
+"allegro/marathon-consul" -> "mantl/mesos-consul" ["e"=1]
+"allegro/marathon-consul" -> "mesosphere/marathon-autoscale" ["e"=1]
+"allegro/marathon-consul" -> "thecodeteam/mesos-module-dvdi" ["e"=1]
+"fabiolb/fabio" -> "mantl/mantl" ["e"=1]
+"apache/libcloud" -> "mantl/mesos-consul" ["e"=1]
 "microscaling/microscaling" -> "microscaling/microbadger"
 "microscaling/microscaling" -> "mesosphere/marathon-autoscale"
 "mesos/mr-redis" -> "mesos/logstash"
 "mesos/mr-redis" -> "martensson/nixy"
 "mesos/mr-redis" -> "cloudflare/complainer"
+"iron-io/dockers" -> "mantl/mantl" ["e"=1]
 "twosigma/Cook" -> "twosigma/waiter"
 "twosigma/Cook" -> "eremetic-framework/eremetic"
 "twosigma/Cook" -> "mesosphere-backup/mesos-framework-tutorial"
@@ -508,6 +593,10 @@ digraph G {
 "twosigma/Cook" -> "mesosphere/mesos-dns"
 "twosigma/Cook" -> "Devatoria/go-mesos-executor"
 "twosigma/Cook" -> "mesos/kafka"
+"coreos/torus" -> "etcd-io/zetcd" ["e"=1]
+"thecodeteam/libstorage" -> "thecodeteam/mesos-module-dvdi" ["e"=1]
+"louketo/louketo-proxy" -> "gambol99/go-marathon" ["e"=1]
+"mefellows/muxy" -> "Capgemini/Apollo" ["e"=1]
 "Yelp/paasta" -> "Yelp/Tron"
 "Yelp/paasta" -> "Capgemini/Apollo"
 "Yelp/paasta" -> "remind101/empire" ["e"=1]
@@ -523,7 +612,13 @@ digraph G {
 "Yelp/paasta" -> "Yelp/elastalert" ["e"=1]
 "Yelp/paasta" -> "mesosphere/mesos-dns"
 "Yelp/paasta" -> "convox/rack" ["e"=1]
+"redbooth/gockerize" -> "CenturyLinkLabs/dray" ["e"=1]
+"statsite/statsite" -> "mantl/mesos-consul" ["e"=1]
+"convox/rack" -> "Yelp/paasta" ["e"=1]
+"convox/rack" -> "mantl/mantl" ["e"=1]
+"pinterest/teletraan" -> "mantl/mantl" ["e"=1]
 "thecodeteam/mesos-module-dvdi" -> "rexray/dvdcli"
+"Netflix/governator" -> "Netflix/Fenzo" ["e"=1]
 "dcos/cosmos" -> "dcos/adminrouter"
 "dcos/cosmos" -> "dcos/dcos-oauth"
 "dcos/cosmos" -> "dcos/dcos-go"
@@ -587,6 +682,7 @@ digraph G {
 "dcos/dcos" -> "mesosphere-backup/dcos-docker"
 "mesosphere-backup/dcos-cassandra-service" -> "mesosphere/dcos-kafka-service"
 "mesosphere-backup/dcos-cassandra-service" -> "mesosphere/dcos"
+"docker-archive/dockercloud-haproxy" -> "CiscoCloud/haproxy-consul" ["e"=1]
 "dcos/lashup" -> "mesosphere-backup/spartan"
 "dcos/lashup" -> "mesosphere-backup/minuteman"
 "mesosphere-backup/minuteman" -> "dcos/lashup"
@@ -647,6 +743,13 @@ digraph G {
 "mesosphere-backup/dcos-signal-01" -> "dcos/3dt"
 "mesosphere-backup/spartan" -> "dcos/telemetry-net"
 "dcos/telemetry-net" -> "dcos/3dt"
+"segmentio/stack" -> "mantl/mantl" ["e"=1]
+"Dataman-Cloud/crane" -> "Dataman-Cloud/swan" ["e"=1]
+"Dataman-Cloud/crane" -> "QubitProducts/bamboo" ["e"=1]
+"Yelp/undebt" -> "Yelp/paasta" ["e"=1]
+"mozilla-services/heka" -> "mantl/mantl" ["e"=1]
+"airbnb/synapse" -> "mantl/mantl" ["e"=1]
+"airbnb/synapse" -> "Yelp/paasta" ["e"=1]
 "mesosphere/dcos-commons" -> "mesosphere-backup/dcos-metrics"
 "mesosphere/dcos-commons" -> "d2iq-archive/universe"
 "mesosphere/dcos-commons" -> "mesosphere/dcos-kafka-service"
@@ -676,6 +779,8 @@ digraph G {
 "etcd-io/zetcd" -> "Intel-bigdata/ceph-mesos"
 "etcd-io/zetcd" -> "camsas/firmament" ["e"=1]
 "etcd-io/zetcd" -> "mesosphere/mesos-dns"
+"weibocom/opendcp" -> "Dataman-Cloud/swan" ["e"=1]
+"caicloud/cyclone" -> "Dataman-Cloud/swan" ["e"=1]
 "Dataman-Cloud/swan" -> "Dataman-Cloud/crane" ["e"=1]
 "Dataman-Cloud/swan" -> "mesos/mesos-go"
 "Dataman-Cloud/swan" -> "dharmeshkakadia/awesome-mesos"
@@ -692,6 +797,7 @@ digraph G {
 "dcos/examples" -> "mesosphere/dcos-commons"
 "dcos/examples" -> "mesosphere-backup/training"
 "dcos/examples" -> "mesosphere/marathon-autoscale"
+"blox/blox" -> "amazon-archives/ecs-mesos-scheduler-driver" ["e"=1]
 "gambol99/vault-lego" -> "gambol99/config-fs"
 "gambol99/vault-lego" -> "gambol99/docker-logistics"
 "mesos/chronos" -> "d2iq-archive/marathon"
@@ -709,8 +815,12 @@ digraph G {
 "mesos/chronos" -> "mesosphere/kubernetes-mesos"
 "mesos/chronos" -> "linkerd/linkerd" ["e"=1]
 "mesos/chronos" -> "apache/aurora"
+"mitchellh/vagrant-aws" -> "everpeace/vagrant-mesos" ["e"=1]
+"mitchellh/vagrant-aws" -> "mantl/mantl" ["e"=1]
+"Netflix/karyon" -> "Netflix/Fenzo" ["e"=1]
 "paypal/dce-go" -> "paypal/gorealis"
 "paypal/dce-go" -> "apache/aurora-packaging"
+"Yelp/mrjob" -> "Yelp/paasta" ["e"=1]
 "Devatoria/go-mesos-executor" -> "schibsted/mesos2iam" ["e"=1]
 "jenkinsci/mesos-plugin" ["l"="6.428,-13.185"]
 "mesosphere/dcos-jenkins-service" ["l"="6.518,-13.167"]
@@ -725,26 +835,40 @@ digraph G {
 "mesosphere/kubernetes-mesos" ["l"="6.417,-13.161"]
 "shoenig/marathonctl" ["l"="6.444,-13.218"]
 "mesos/mesos_exporter" ["l"="6.341,-13.236"]
+"kudobuilder/kudo" ["l"="7.737,-9.153", "c"=14]
+"mesosphere/dcos-commons" ["l"="6.491,-13.093"]
+"etsy/morgue" ["l"="11.064,-8.658", "c"=18]
+"Capgemini/Apollo" ["l"="6.455,-13.26"]
+"ClusterHQ/flocker" ["l"="5.982,-12.372", "c"=270]
+"mantl/mantl" ["l"="6.501,-13.244"]
+"apache/mesos" ["l"="9.015,-8.303", "c"=14]
+"d2iq-archive/marathon" ["l"="6.475,-13.187"]
+"dcos/dcos" ["l"="6.485,-13.145"]
+"mesos/chronos" ["l"="6.475,-13.219"]
+"docker-archive/classicswarm" ["l"="5.93,-12.423", "c"=270]
 "AnsibleShipyard/ansible-mesos" ["l"="6.556,-13.24"]
 "AnsibleShipyard/ansible-marathon" ["l"="6.579,-13.256"]
 "AnsibleShipyard/ansible-zookeeper" ["l"="6.597,-13.254"]
 "mhamrah/ansible-mesos-playbook" ["l"="6.593,-13.225"]
-"d2iq-archive/marathon" ["l"="6.475,-13.187"]
-"apache/mesos" ["l"="9.015,-8.303"]
-"mesos/chronos" ["l"="6.475,-13.219"]
-"dcos/dcos" ["l"="6.485,-13.145"]
+"facebookarchive/webscalesql-5.6" ["l"="8.789,-4.249", "c"=382]
+"twitter-archive/mysos" ["l"="6.393,-13.245"]
 "mesosphere/marathon-lb" ["l"="6.431,-13.171"]
 "mesosphere/mesos-dns" ["l"="6.414,-13.196"]
 "QubitProducts/bamboo" ["l"="6.434,-13.202"]
-"mantl/mantl" ["l"="6.501,-13.244"]
-"docker-archive/classicswarm" ["l"="5.93,-12.423"]
-"gliderlabs/registrator" ["l"="5.974,-12.323"]
-"linkerd/linkerd" ["l"="8.178,-8.582"]
-"ClusterHQ/flocker" ["l"="5.982,-12.372"]
-"rkt/rkt" ["l"="5.819,-12.402"]
+"gliderlabs/registrator" ["l"="5.974,-12.323", "c"=270]
+"linkerd/linkerd" ["l"="8.178,-8.582", "c"=14]
+"rkt/rkt" ["l"="5.819,-12.402", "c"=270]
 "mesosphere/marathon-ui" ["l"="6.431,-13.135"]
+"deis/deis" ["l"="5.847,-12.428", "c"=270]
+"docker-archive/libcontainer" ["l"="5.897,-12.507", "c"=270]
+"facebookarchive/bistro" ["l"="7.255,-4.589", "c"=491]
+"jamesrwhite/minicron" ["l"="4.593,-37.559", "c"=1]
+"vulcand/vulcand" ["l"="3.868,-8.166", "c"=0]
 "mesosphere/mesos" ["l"="6.499,-13.064"]
 "mesosphere/dcos" ["l"="6.523,-13.063"]
+"flynn/flynn" ["l"="5.767,-12.405", "c"=270]
+"HubSpot/BuckyClient" ["l"="-0.175,-29.987", "c"=12]
+"HubSpot/Singularity" ["l"="6.424,-13.263"]
 "mesos/mesos-go" ["l"="6.385,-13.23"]
 "mesosphere/RENDLER" ["l"="6.383,-13.207"]
 "Dataman-Cloud/swan" ["l"="6.353,-13.259"]
@@ -760,14 +884,15 @@ digraph G {
 "mesosphere-backup/hdfs-deprecated" ["l"="6.375,-13.16"]
 "d2iq-archive/mesos-deb-packaging" ["l"="6.366,-13.168"]
 "mesosphere-backup/mesos-cli" ["l"="6.392,-13.175"]
-"HubSpot/Singularity" ["l"="6.424,-13.263"]
 "HubSpot/Baragon" ["l"="6.414,-13.331"]
 "HubSpot/Blazar-Archive" ["l"="6.404,-13.349"]
 "HubSpot/Rosetta" ["l"="6.402,-13.367"]
 "twosigma/Cook" ["l"="6.359,-13.238"]
 "apache/aurora" ["l"="6.423,-13.295"]
 "magneticio/vamp" ["l"="6.447,-13.238"]
+"haproxy-unofficial-obsolete-mirrors/haproxy" ["l"="6.107,-4.769", "c"=749]
 "thefactory/marathon-python" ["l"="6.448,-13.179"]
+"Kong/insomnia-mockbin" ["l"="-20.549,-21.2", "c"=245]
 "tellapart/aurproxy" ["l"="6.453,-13.387"]
 "apache/aurora-packaging" ["l"="6.447,-13.356"]
 "mohitsoni/compose-executor" ["l"="6.441,-13.335"]
@@ -790,7 +915,7 @@ digraph G {
 "ahunnargikar/vagrant-mesos" ["l"="6.553,-13.204"]
 "mesosphere/dcos-kubernetes-quickstart" ["l"="6.553,-13.082"]
 "dcos/examples" ["l"="6.515,-13.088"]
-"TechnionYP5779/team4" ["l"="8.499,-43.989"]
+"TechnionYP5779/team4" ["l"="8.499,-43.989", "c"=1059]
 "mesosphere-backup/terraform-dcos" ["l"="6.526,-13.017"]
 "mesosphere-backup/tf_dcos_core" ["l"="6.545,-12.984"]
 "mdsol/marathon_cookbook" ["l"="6.579,-13.161"]
@@ -798,40 +923,54 @@ digraph G {
 "martensson/nixy" ["l"="6.365,-13.222"]
 "twosigma/satellite" ["l"="6.389,-13.189"]
 "mesosphere-backup/minuteman" ["l"="6.437,-13.106"]
+"spotify/helios" ["l"="-2.311,12.05", "c"=15]
+"jwilder/docker-squash" ["l"="5.964,-12.269", "c"=270]
+"etsy/opsweekly" ["l"="11.138,-8.671", "c"=18]
+"AcalephStorage/consul-alerts" ["l"="7.085,-12.93", "c"=666]
 "d2iq-archive/universe" ["l"="6.447,-13.129"]
-"mesosphere/dcos-commons" ["l"="6.491,-13.093"]
 "mesosphere/multiverse" ["l"="6.409,-13.127"]
 "mesosphere-backup/dcos-metrics" ["l"="6.468,-13.092"]
 "mesosphere-backup/dcos-docker" ["l"="6.481,-13.081"]
 "Intel-bigdata/ceph-mesos" ["l"="6.338,-13.178"]
+"chadoe/docker-cleanup-volumes" ["l"="6.023,-12.331", "c"=270]
+"weaveworks/weave" ["l"="5.891,-12.365", "c"=270]
 "mesos/myriad" ["l"="6.339,-13.194"]
+"projectcalico/calicoctl" ["l"="8.562,-9.35", "c"=14]
 "mesosphere/dcos-spark" ["l"="6.341,-13.109"]
 "amazon-archives/ecs-mesos-scheduler-driver" ["l"="6.365,-13.14"]
 "CiscoCloud/exhibitor-mesos-framework" ["l"="6.336,-13.151"]
 "obaidsalikeen/storm-marathon" ["l"="6.29,-13.12"]
+"gliderlabs/docker-consul" ["l"="7.153,-12.966", "c"=666]
+"Netflix/Prana" ["l"="-1.468,18.295", "c"=1217]
 "kubernetes-retired/kube-mesos-framework" ["l"="6.368,-13.087"]
-"Capgemini/Apollo" ["l"="6.455,-13.26"]
-"fabiolb/fabio" ["l"="3.763,-8.265"]
-"remind101/empire" ["l"="10.036,-6.411"]
-"weaveworks/weave" ["l"="5.891,-12.365"]
-"hashicorp/consul-template" ["l"="7.119,-12.937"]
-"projectcalico/felix" ["l"="8.576,-9.399"]
-"vulcand/vulcand" ["l"="3.868,-8.166"]
-"AcalephStorage/consul-alerts" ["l"="7.085,-12.93"]
+"fabiolb/fabio" ["l"="3.763,-8.265", "c"=0]
+"remind101/empire" ["l"="10.036,-6.411", "c"=162]
+"hashicorp/consul-template" ["l"="7.119,-12.937", "c"=666]
+"projectcalico/felix" ["l"="8.576,-9.399", "c"=14]
+"newrelic/centurion" ["l"="6.317,-12.572", "c"=270]
+"paz-sh/paz" ["l"="6.27,-12.73", "c"=270]
+"TritonDataCenter/triton" ["l"="-24.962,-23.768", "c"=745]
+"klen/graphite-beacon" ["l"="4.163,-7.324", "c"=0]
 "mesosphere/elasticsearch-mesos" ["l"="6.36,-13.117"]
+"progrium/bashstyle" ["l"="-14.301,-6.208", "c"=86]
+"HubSpot/jinjava" ["l"="-2.286,11.876", "c"=15]
 "mesosphere/net-modules" ["l"="6.353,-13.161"]
 "adrianco/spigo" ["l"="6.464,-13.291"]
-"codahale/metrics" ["l"="4.449,-7.701"]
+"codahale/metrics" ["l"="4.449,-7.701", "c"=0]
 "adrianco/d3grow" ["l"="6.485,-13.329"]
-"sourcegraph/appdash" ["l"="3.889,-8.232"]
-"pact-foundation/pact-ruby" ["l"="4.773,-37.705"]
-"monzo/phosphor" ["l"="10.86,-8.789"]
-"intelsdi-x/snap" ["l"="3.96,-8.03"]
-"cloudfoundry-attic/lattice-release" ["l"="7.961,-13.71"]
-"rakyll/gom" ["l"="3.985,-8.211"]
-"pact-foundation/pact-jvm" ["l"="5.078,-37.918"]
+"sourcegraph/appdash" ["l"="3.889,-8.232", "c"=0]
+"pact-foundation/pact-ruby" ["l"="4.773,-37.705", "c"=1]
+"monzo/phosphor" ["l"="10.86,-8.789", "c"=18]
+"intelsdi-x/snap" ["l"="3.96,-8.03", "c"=0]
+"cloudfoundry-attic/lattice-release" ["l"="7.961,-13.71", "c"=507]
+"rakyll/gom" ["l"="3.985,-8.211", "c"=0]
+"pact-foundation/pact-jvm" ["l"="5.078,-37.918", "c"=1]
+"Netflix/spectator" ["l"="-1.417,18.295", "c"=1217]
+"allegro/tipboard" ["l"="11.398,-8.932", "c"=18]
 "CenturyLinkLabs/dray" ["l"="6.505,-13.343"]
 "microscaling/imagelayers-graph" ["l"="6.546,-13.412"]
+"micahhausler/container-transform" ["l"="10.716,-5.011", "c"=147]
+"pires/kubernetes-vagrant-coreos-cluster" ["l"="10.252,-10.133", "c"=740]
 "mesosphere-backup/docker-containers" ["l"="6.58,-13.138"]
 "ContainerSolutions/terraform-mesos" ["l"="6.645,-13.194"]
 "ContainerSolutions/cd_demo" ["l"="6.634,-13.169"]
@@ -843,7 +982,7 @@ digraph G {
 "outbrain/zookeepercli" ["l"="6.321,-13.113"]
 "go-zkcli/zkcli" ["l"="6.278,-13.085"]
 "VoltFramework/volt" ["l"="6.277,-13.178"]
-"cdapio/tephra" ["l"="-4.035,12.417"]
+"cdapio/tephra" ["l"="-4.035,12.417", "c"=15]
 "apache/incubator-myriad" ["l"="6.251,-13.209"]
 "mesosphere/tachyon-mesos" ["l"="6.297,-13.186"]
 "gambol99/embassy" ["l"="6.335,-13.324"]
@@ -855,23 +994,34 @@ digraph G {
 "signalfx/collectd-zookeeper" ["l"="6.308,-13.328"]
 "mesosphere/tweeter" ["l"="6.645,-12.986"]
 "mesosphere/cd-demo" ["l"="6.618,-13.008"]
+"jenkinsci/docker-workflow-plugin" ["l"="5.318,-4.593", "c"=767]
+"rexray/rexray" ["l"="6.151,-12.355", "c"=270]
 "thecodeteam/mesos-module-dvdi" ["l"="6.356,-13.18"]
+"Netflix/vector" ["l"="6.97,-6.098", "c"=335]
 "mesosphere/mesosaurus" ["l"="6.404,-13.277"]
 "CiscoCloud/marathon-consul" ["l"="6.383,-13.267"]
+"hygieia/hygieia" ["l"="8.171,-8.429", "c"=14]
+"kontena/kontena" ["l"="4.717,-37.64", "c"=1]
+"square/keywhiz" ["l"="10.093,-6.484", "c"=162]
+"machyve/xhyve" ["l"="6.094,-12.326", "c"=270]
+"soabase/exhibitor" ["l"="-0.503,17.029", "c"=398]
+"hashicorp/otto" ["l"="3.72,-8.094", "c"=0]
 "Yelp/paasta" ["l"="6.512,-13.294"]
-"socketplane/socketplane" ["l"="6.078,-12.587"]
-"twitter-archive/mysos" ["l"="6.393,-13.245"]
-"Capgemini/kubeform" ["l"="10.288,-10.061"]
-"allegro/marathon-consul" ["l"="24.465,-31.253"]
+"socketplane/socketplane" ["l"="6.078,-12.587", "c"=270]
+"Capgemini/kubeform" ["l"="10.288,-10.061", "c"=740]
+"allegro/marathon-consul" ["l"="24.465,-31.253", "c"=304]
 "CiscoCloud/haproxy-consul" ["l"="6.37,-13.317"]
-"yahoo/mysql_perf_analyzer" ["l"="8.846,-4.273"]
-"liudong1983/mybus" ["l"="8.857,-4.118"]
-"facebookarchive/webscalesql-5.6" ["l"="8.789,-4.249"]
-"Netflix/Prana" ["l"="-1.468,18.295"]
+"google/mr4c" ["l"="57.677,23.465", "c"=161]
+"yahoo/mysql_perf_analyzer" ["l"="8.846,-4.273", "c"=382]
+"liudong1983/mybus" ["l"="8.857,-4.118", "c"=382]
+"distribworks/dkron" ["l"="3.658,-8.518", "c"=0]
+"ajvb/kala" ["l"="3.793,-8.362", "c"=0]
 "CiscoCloud/nginx-consul" ["l"="6.335,-13.371"]
 "CiscoCloud/docker-consul-template" ["l"="6.318,-13.396"]
 "mesosphere/serenity" ["l"="6.284,-13.2"]
 "blue-yonder/mesos-threshold-oversubscription" ["l"="6.25,-13.189"]
+"ricardobcl/Dotted-Version-Vectors" ["l"="3.222,15.534", "c"=223]
+"dcos/lashup" ["l"="6.404,-13.051"]
 "benley/aurora-jobhopper" ["l"="6.453,-13.437"]
 "tommyulfsparre/aurora_exporter" ["l"="6.47,-13.42"]
 "magneticio/vamp-docker-images" ["l"="6.487,-13.273"]
@@ -880,12 +1030,15 @@ digraph G {
 "ContainX/marathon-ldap" ["l"="6.39,-13.313"]
 "cloudflare/complainer" ["l"="6.318,-13.182"]
 "clojusc/mesomatic" ["l"="6.324,-13.209"]
+"codetainerapp/codetainer" ["l"="3.909,-7.912", "c"=0]
 "d2iq-archive/reactjs-components" ["l"="6.478,-13.026"]
 "mesosphere/cnvs" ["l"="6.461,-13.02"]
 "microscaling/imagelayers" ["l"="6.566,-13.438"]
+"mantl/consul-cli" ["l"="7.028,-12.951", "c"=666]
 "mesosphere-backup/etcd-mesos" ["l"="6.341,-13.081"]
 "Dataman-Cloud/Mesos-CN" ["l"="6.275,-13.309"]
 "Dataman-Cloud/OpenDockerFile" ["l"="6.248,-13.331"]
+"amplab/keystone" ["l"="-2.658,17.203", "c"=455]
 "lebauce/docker-collectd-plugin" ["l"="6.308,-12.998"]
 "bobrik/collectd-docker" ["l"="6.319,-13.03"]
 "HubSpot/general-store" ["l"="6.393,-13.403"]
@@ -894,20 +1047,35 @@ digraph G {
 "steveniemitz/scales" ["l"="6.454,-13.47"]
 "rafikk/nix-aurora" ["l"="6.478,-13.438"]
 "mesosphere/edgerouter" ["l"="6.314,-13.082"]
+"TomasTomecek/sen" ["l"="6.2,-12.518", "c"=270]
+"twitter-archive/diffy" ["l"="3.562,-8.117", "c"=0]
+"TritonDataCenter/containerpilot" ["l"="-24.916,-23.774", "c"=745]
+"burnettk/delete-docker-registry-image" ["l"="6.022,-12.442", "c"=270]
 "dcos/metronome" ["l"="6.346,-13.22"]
+"apache/libcloud" ["l"="1.381,15.064", "c"=857]
 "microscaling/microbadger" ["l"="6.363,-13.031"]
+"iron-io/dockers" ["l"="6.032,-12.291", "c"=270]
 "twosigma/waiter" ["l"="6.285,-13.273"]
 "Devatoria/go-mesos-executor" ["l"="6.336,-13.27"]
+"coreos/torus" ["l"="3.94,-8.089", "c"=0]
+"etcd-io/zetcd" ["l"="6.308,-13.229"]
+"thecodeteam/libstorage" ["l"="6.267,-12.385", "c"=270]
+"louketo/louketo-proxy" ["l"="0.924,-35.99", "c"=1170]
+"mefellows/muxy" ["l"="4.137,-8.004", "c"=0]
 "Yelp/Tron" ["l"="6.582,-13.32"]
-"Yelp/love" ["l"="45.036,21.424"]
+"Yelp/love" ["l"="45.036,21.424", "c"=20]
 "Yelp/clusterman" ["l"="6.566,-13.354"]
-"Yelp/undebt" ["l"="45.305,20.808"]
-"chriskuehl/fluffy" ["l"="45.266,21.449"]
-"helm/helm-classic" ["l"="10.178,-10.088"]
-"airbnb/synapse" ["l"="-0.266,17.227"]
-"Yelp/elastalert" ["l"="-3.649,8.885"]
-"convox/rack" ["l"="10.035,-6.349"]
+"Yelp/undebt" ["l"="45.305,20.808", "c"=20]
+"chriskuehl/fluffy" ["l"="45.266,21.449", "c"=20]
+"helm/helm-classic" ["l"="10.178,-10.088", "c"=740]
+"airbnb/synapse" ["l"="-0.266,17.227", "c"=398]
+"Yelp/elastalert" ["l"="-3.649,8.885", "c"=540]
+"convox/rack" ["l"="10.035,-6.349", "c"=162]
+"redbooth/gockerize" ["l"="3.937,-8.126", "c"=0]
+"statsite/statsite" ["l"="4.072,-7.617", "c"=0]
+"pinterest/teletraan" ["l"="3.604,-7.978", "c"=0]
 "rexray/dvdcli" ["l"="6.291,-13.154"]
+"Netflix/governator" ["l"="-1.435,18.257", "c"=1217]
 "dcos/dcos-oauth" ["l"="6.43,-13.049"]
 "dcos/dcos-go" ["l"="6.463,-13.04"]
 "mesosphere/dcos-vagrant-box" ["l"="6.539,-13.1"]
@@ -919,8 +1087,8 @@ digraph G {
 "avast/marathon-vault-plugin" ["l"="6.319,-13.254"]
 "mesosphere-backup/dcos-cassandra-service" ["l"="6.543,-13.045"]
 "mesosphere/dcos-kafka-service" ["l"="6.538,-13.066"]
-"dcos/lashup" ["l"="6.404,-13.051"]
-"norton-archive/lets" ["l"="3.481,15.41"]
+"docker-archive/dockercloud-haproxy" ["l"="6.21,-12.405", "c"=270]
+"norton-archive/lets" ["l"="3.481,15.41", "c"=223]
 "dcos/demos" ["l"="6.515,-13.049"]
 "dcos/exhibitor" ["l"="6.419,-12.976"]
 "dcos/dcos-installer-ui" ["l"="6.423,-13.005"]
@@ -932,20 +1100,24 @@ digraph G {
 "dcos/shakedown" ["l"="6.481,-13.055"]
 "dcos/community" ["l"="6.451,-12.997"]
 "dcos/telemetry-net" ["l"="6.409,-13.027"]
+"segmentio/stack" ["l"="10.221,-6.277", "c"=162]
+"Dataman-Cloud/crane" ["l"="9.004,-6.095", "c"=278]
+"mozilla-services/heka" ["l"="3.837,-8.01", "c"=0]
 "aurora-scheduler/scheduler" ["l"="6.436,-13.407"]
-"etcd-io/zetcd" ["l"="6.308,-13.229"]
-"coreos/torus" ["l"="3.94,-8.089"]
-"coreos/etcd-operator" ["l"="8.122,-9.171"]
+"coreos/etcd-operator" ["l"="8.122,-9.171", "c"=14]
 "etcd-io/dbtester" ["l"="6.219,-13.248"]
-"samuel/go-zookeeper" ["l"="3.611,-8.495"]
-"krallistic/kafka-operator" ["l"="10.524,-10.141"]
-"kobolog/gorb" ["l"="3.818,-8.03"]
-"projectcalico/canal" ["l"="8.457,-9.376"]
-"camsas/firmament" ["l"="63.177,-12.471"]
-"Dataman-Cloud/crane" ["l"="9.004,-6.095"]
+"samuel/go-zookeeper" ["l"="3.611,-8.495", "c"=0]
+"krallistic/kafka-operator" ["l"="10.524,-10.141", "c"=740]
+"kobolog/gorb" ["l"="3.818,-8.03", "c"=0]
+"projectcalico/canal" ["l"="8.457,-9.376", "c"=14]
+"camsas/firmament" ["l"="63.177,-12.471", "c"=1127]
+"weibocom/opendcp" ["l"="-4.028,12.819", "c"=15]
+"caicloud/cyclone" ["l"="8.06,-9.916", "c"=14]
 "derekchiang/Mesos-Bitcoin-Miner" ["l"="6.3,-13.306"]
-"ajvb/kala" ["l"="3.793,-8.362"]
-"distribworks/dkron" ["l"="3.658,-8.518"]
-"azkaban/azkaban" ["l"="-2.634,14.766"]
-"schibsted/mesos2iam" ["l"="45.58,19.817"]
+"blox/blox" ["l"="10.718,-5.041", "c"=147]
+"azkaban/azkaban" ["l"="-2.634,14.766", "c"=43]
+"mitchellh/vagrant-aws" ["l"="11.539,-34.933", "c"=27]
+"Netflix/karyon" ["l"="-1.488,18.282", "c"=1217]
+"Yelp/mrjob" ["l"="-3.093,19.892", "c"=709]
+"schibsted/mesos2iam" ["l"="45.58,19.817", "c"=20]
 }

@@ -1,4 +1,8 @@
 digraph G {
+"flann-lib/flann" -> "FALCONN-LIB/FALCONN" ["e"=1]
+"flann-lib/flann" -> "nmslib/nmslib" ["e"=1]
+"google/robotstxt" -> "microsoft/SPTAG" ["e"=1]
+"rapidsai/cugraph" -> "rapidsai/raft" ["e"=1]
 "vdaas/vald" -> "yahoojapan/NGT"
 "vdaas/vald" -> "vearch/vearch"
 "vdaas/vald" -> "currentslab/awesome-vector-search"
@@ -29,6 +33,7 @@ digraph G {
 "nmslib/nmslib" -> "flann-lib/flann" ["e"=1]
 "nmslib/nmslib" -> "microsoft/DiskANN"
 "nmslib/nmslib" -> "srendle/libfm" ["e"=1]
+"cubefs/cubefs" -> "vearch/vearch" ["e"=1]
 "matsui528/faiss_tips" -> "matsui528/nanopq"
 "matsui528/faiss_tips" -> "harsha-simhadri/big-ann-benchmarks"
 "matsui528/faiss_tips" -> "criteo/autofaiss" ["e"=1]
@@ -59,6 +64,15 @@ digraph G {
 "microsoft/SPTAG" -> "tensorflow/ranking" ["e"=1]
 "microsoft/SPTAG" -> "FALCONN-LIB/FALCONN"
 "microsoft/SPTAG" -> "facebookresearch/dlrm" ["e"=1]
+"pisa-engine/pisa" -> "TusKANNy/seismic" ["e"=1]
+"lmcinnes/pynndescent" -> "yahoojapan/NGT" ["e"=1]
+"lmcinnes/pynndescent" -> "aaalgo/kgraph" ["e"=1]
+"lmcinnes/pynndescent" -> "erikbern/ann-benchmarks" ["e"=1]
+"lmcinnes/pynndescent" -> "ZJULearning/efanna" ["e"=1]
+"lmcinnes/pynndescent" -> "ZJULearning/nsg" ["e"=1]
+"lmcinnes/pynndescent" -> "harsha-simhadri/big-ann-benchmarks" ["e"=1]
+"lmcinnes/pynndescent" -> "nmslib/nmslib" ["e"=1]
+"microsoft/BlingFire" -> "microsoft/SPTAG" ["e"=1]
 "yanyiwu/simhash" -> "1e0ng/simhash"
 "yanyiwu/simhash" -> "yanyiwu/cppjieba" ["e"=1]
 "yanyiwu/simhash" -> "yanyiwu/simhash_server"
@@ -89,6 +103,9 @@ digraph G {
 "rapidsai/raft" -> "intel/ScalableVectorSearch"
 "rapidsai/raft" -> "gaoj0017/RaBitQ"
 "rapidsai/raft" -> "NVIDIA/cccl" ["e"=1]
+"rapidsai/rmm" -> "rapidsai/raft" ["e"=1]
+"rapidsai/rmm" -> "rapidsai/cuvs" ["e"=1]
+"jelmerk/hnswlib" -> "ZJULearning/nsg" ["e"=1]
 "vearch/vearch" -> "nmslib/hnswlib"
 "vearch/vearch" -> "cubefs/cubefs" ["e"=1]
 "vearch/vearch" -> "erikbern/ann-benchmarks"
@@ -104,6 +121,7 @@ digraph G {
 "vearch/vearch" -> "liqima/faiss_note"
 "vearch/vearch" -> "ZJULearning/nsg"
 "vearch/vearch" -> "opendistro-for-elasticsearch/k-NN" ["e"=1]
+"IAdmireu/ChineseSTS" -> "zyymax/text-similarity" ["e"=1]
 "facebookresearch/spreadingvectors" -> "stanis-morozov/unq"
 "facebookresearch/spreadingvectors" -> "dbaranchuk/ivf-hnsw"
 "facebookresearch/spreadingvectors" -> "efficient/faiss-learned-termination"
@@ -114,6 +132,8 @@ digraph G {
 "facebookresearch/spreadingvectors" -> "stanis-morozov/ip-nsw"
 "facebookresearch/spreadingvectors" -> "technicolor-research/faiss-quickeradc"
 "facebookresearch/spreadingvectors" -> "facebookresearch/multigrain" ["e"=1]
+"yanyiwu/cppjieba" -> "yanyiwu/simhash" ["e"=1]
+"yanyiwu/cppjieba" -> "yanyiwu/limonp" ["e"=1]
 "DwangoMediaVillage/pqkmeans" -> "matsui528/rii"
 "DwangoMediaVillage/pqkmeans" -> "matsui528/nanopq"
 "kakao/n2" -> "kakao/buffalo" ["e"=1]
@@ -214,6 +234,7 @@ digraph G {
 "matsui528/nanopq" -> "dbaranchuk/nns-meets-deep-rl"
 "matsui528/nanopq" -> "stanis-morozov/unq"
 "matsui528/nanopq" -> "una-dinosauria/Rayuela.jl"
+"jd-opensource/joyqueue" -> "vearch/vearch" ["e"=1]
 "HuangQiang/H2_ALSH" -> "HuangQiang/lccs-lsh"
 "HuangQiang/H2_ALSH" -> "HuangQiang/P2HNNS"
 "HuangQiang/H2_ALSH" -> "HuangQiang/QALSH_Mem"
@@ -280,6 +301,11 @@ digraph G {
 "microsoft/DiskANN" -> "gaoj0017/RaBitQ"
 "microsoft/DiskANN" -> "zilliztech/starling"
 "microsoft/DiskANN" -> "antgroup/vsag"
+"ashvardanian/StringZilla" -> "unum-cloud/usearch" ["e"=1]
+"ashvardanian/StringZilla" -> "unum-cloud/ucall" ["e"=1]
+"cmuparlay/parlaylib" -> "cmuparlay/ParlayANN" ["e"=1]
+"metarank/metarank" -> "currentslab/awesome-vector-search" ["e"=1]
+"NVIDIA/cuCollections" -> "rapidsai/raft" ["e"=1]
 "ChunelFeng/caiss" -> "ChunelFeng/CGraph" ["e"=1]
 "ChunelFeng/caiss" -> "whenever5225/GraphANNS"
 "ChunelFeng/caiss" -> "liqima/faiss_note"
@@ -288,6 +314,9 @@ digraph G {
 "ChunelFeng/caiss" -> "vearch/vearch"
 "ChunelFeng/caiss" -> "layerism/brpc_faiss_server"
 "ChunelFeng/caiss" -> "ZhuiyiTechnology/pretrained-models" ["e"=1]
+"kakao/buffalo" -> "kakao/n2" ["e"=1]
+"ronaldo8210/brpc_source_code_analysis" -> "layerism/brpc_faiss_server" ["e"=1]
+"frutik/awesome-search" -> "currentslab/awesome-vector-search" ["e"=1]
 "Lsyhprum/WEAVESS" -> "jalvarm/hcnng"
 "Lsyhprum/WEAVESS" -> "matchyc/RoarGraph"
 "Lsyhprum/WEAVESS" -> "intel/ScalableVectorSearch"
@@ -316,6 +345,7 @@ digraph G {
 "arctern-io/arctern" -> "milvus-io/milvus.io"
 "arctern-io/arctern" -> "milvus-io/pymilvus-orm"
 "arctern-io/arctern" -> "milvus-io/milvus-insight"
+"tdebatty/java-LSH" -> "guoziqingbupt/Locality-sensitive-hashing" ["e"=1]
 "zilliztech/phantoscope" -> "arctern-io/arctern"
 "zilliztech/phantoscope" -> "milvus-io/milvus.io"
 "zilliztech/phantoscope" -> "ReigenAraka/k8s-course"
@@ -366,6 +396,8 @@ digraph G {
 "HuangQiang/lccs-lsh" -> "HuangQiang/H2_ALSH"
 "HuangQiang/lccs-lsh" -> "HuangQiang/QALSH_Mem"
 "HuangQiang/lccs-lsh" -> "HuangQiang/QALSH"
+"towhee-io/towhee" -> "milvus-io/bootcamp" ["e"=1]
+"towhee-io/towhee" -> "towhee-io/examples" ["e"=1]
 "erikbern/ann-benchmarks" -> "nmslib/nmslib"
 "erikbern/ann-benchmarks" -> "nmslib/hnswlib"
 "erikbern/ann-benchmarks" -> "spotify/annoy" ["e"=1]
@@ -381,6 +413,11 @@ digraph G {
 "erikbern/ann-benchmarks" -> "aaalgo/kgraph"
 "erikbern/ann-benchmarks" -> "alibaba/x-deeplearning" ["e"=1]
 "erikbern/ann-benchmarks" -> "milvus-io/milvus" ["e"=1]
+"criteo/autofaiss" -> "facebookresearch/distributed-faiss" ["e"=1]
+"criteo/autofaiss" -> "matsui528/faiss_tips" ["e"=1]
+"criteo/autofaiss" -> "currentslab/awesome-vector-search" ["e"=1]
+"ChenghaoMou/text-dedup" -> "ekzhu/datasketch" ["e"=1]
+"google-research/deduplicate-text-datasets" -> "ekzhu/datasketch" ["e"=1]
 "ekzhu/datasketch" -> "google-research/deduplicate-text-datasets" ["e"=1]
 "ekzhu/datasketch" -> "kayzhu/LSHash"
 "ekzhu/datasketch" -> "FALCONN-LIB/FALCONN"
@@ -411,6 +448,7 @@ digraph G {
 "harsha-simhadri/big-ann-benchmarks" -> "zilliztech/knowhere"
 "harsha-simhadri/big-ann-benchmarks" -> "qdrant/vector-db-benchmark"
 "harsha-simhadri/big-ann-benchmarks" -> "zilliztech/pyglass"
+"qdrant/qdrant-client" -> "qdrant/vector-db-benchmark" ["e"=1]
 "currentslab/awesome-vector-search" -> "dangkhoasdc/awesome-vector-database"
 "currentslab/awesome-vector-search" -> "zilliztech/feder"
 "currentslab/awesome-vector-search" -> "microsoft/DiskANN"
@@ -450,6 +488,7 @@ digraph G {
 "sunbelbd/song" -> "cgtuebingen/ggnn"
 "sunbelbd/song" -> "yuyuanhang/GANNS"
 "sunbelbd/song" -> "js1010/cuhnsw"
+"carlescere/scheduler" -> "msempere/golarm" ["e"=1]
 "milvus-io/milvus_cli" -> "milvus-io/milvus.io"
 "milvus-io/milvus_cli" -> "milvus-io/milvus-operator"
 "milvus-io/milvus_cli" -> "milvus-io/milvus-insight"
@@ -484,6 +523,7 @@ digraph G {
 "Kejing-Lu/hvs" -> "csypeng/LAN"
 "HuangQiang/P2HNNS" -> "HuangQiang/lccs-lsh"
 "HuangQiang/P2HNNS" -> "HuangQiang/BC-Tree"
+"facebookresearch/Sphere" -> "facebookresearch/distributed-faiss" ["e"=1]
 "zilliztech/milvus_cli" -> "milvus-io/milvus_cli"
 "zilliztech/milvus_cli" -> "milvus-io/birdwatcher"
 "zilliztech/feder" -> "milvus-io/knowhere"
@@ -501,6 +541,8 @@ digraph G {
 "zilliztech/feder" -> "zilliztech/akcio"
 "zilliztech/feder" -> "zilliztech/awesome-milvus"
 "zilliztech/feder" -> "zilliztech/milvus_cli"
+"kakao/recoteam" -> "kakao/n2" ["e"=1]
+"taozhijiang/chinese_correct_wsd" -> "fssqawj/SentenceSim" ["e"=1]
 "towhee-io/examples" -> "milvus-io/bootcamp"
 "towhee-io/examples" -> "towhee-io/towhee" ["e"=1]
 "towhee-io/examples" -> "zilliztech/attu"
@@ -508,6 +550,8 @@ digraph G {
 "towhee-io/examples" -> "zilliztech/feder"
 "towhee-io/examples" -> "yangjianxin1/CLIP-Chinese" ["e"=1]
 "towhee-io/examples" -> "zilliztech/akcio"
+"dedupeio/dedupe" -> "ekzhu/datasketch" ["e"=1]
+"qdrant/awesome-metric-learning" -> "qdrant/vector-db-benchmark" ["e"=1]
 "zilliztech/attu" -> "milvus-io/pymilvus" ["e"=1]
 "zilliztech/attu" -> "zilliztech/milvus-backup"
 "zilliztech/attu" -> "milvus-io/milvus-sdk-java" ["e"=1]
@@ -524,6 +568,8 @@ digraph G {
 "zilliztech/attu" -> "milvus-io/milvus-sdk-node"
 "zilliztech/attu" -> "zilliztech/GPTCache" ["e"=1]
 "msempere/golarm" -> "msempere/remotgo"
+"cirospaciari/socketify.py" -> "unum-cloud/ucall" ["e"=1]
+"wfrest/wfrest" -> "yanyiwu/simhash" ["e"=1]
 "yahoo/lopq" -> "matsui528/nanopq"
 "yahoo/lopq" -> "cgtuebingen/Product-Quantization-Tree"
 "yahoo/lopq" -> "arbabenko/MultiIndex"
@@ -628,6 +674,13 @@ digraph G {
 "unum-cloud/ustore" -> "unum-cloud/ucset"
 "unum-cloud/ustore" -> "unum-cloud/udisk"
 "unum-cloud/ustore" -> "cpp-armenia/meetings"
+"alibaba/havenask" -> "alibaba/proxima" ["e"=1]
+"alibaba/havenask" -> "vearch/vearch" ["e"=1]
+"facebookresearch/pysparnn" -> "pixelogik/NearPy" ["e"=1]
+"facebookresearch/pysparnn" -> "ryanrhymes/panns" ["e"=1]
+"facebookresearch/pysparnn" -> "nmslib/nmslib" ["e"=1]
+"facebookresearch/pysparnn" -> "FALCONN-LIB/FALCONN" ["e"=1]
+"facebookresearch/pysparnn" -> "yahoo/lopq" ["e"=1]
 "unum-cloud/ucall" -> "unum-cloud/ustore"
 "unum-cloud/ucall" -> "unum-cloud/usearch"
 "unum-cloud/ucall" -> "unum-cloud/uform"
@@ -643,6 +696,9 @@ digraph G {
 "unum-cloud/ucall" -> "ag2ai/faststream" ["e"=1]
 "unum-cloud/ucall" -> "Neoteroi/BlackSheep" ["e"=1]
 "unum-cloud/ucall" -> "alexdelorenzo/aiopath" ["e"=1]
+"asg017/sqlite-vss" -> "unum-cloud/usearch" ["e"=1]
+"asg017/sqlite-vss" -> "microsoft/DiskANN" ["e"=1]
+"asg017/sqlite-vss" -> "luojinlongjjj/android-faiss" ["e"=1]
 "Jacyhust/LSH-APG" -> "IntelLabs/VectorSearchDatasets"
 "Jacyhust/LSH-APG" -> "matchyc/RoarGraph"
 "esteininger/vector-search" -> "mongodb-developer/liberate-data"
@@ -724,6 +780,10 @@ digraph G {
 "unum-cloud/uform" -> "DRSY/MoTIS" ["e"=1]
 "unum-cloud/uform" -> "rom1504/clip-retrieval" ["e"=1]
 "unum-cloud/uform" -> "microsoft/X-Decoder" ["e"=1]
+"spotify/voyager" -> "unum-cloud/usearch" ["e"=1]
+"spotify/voyager" -> "nmslib/hnswlib" ["e"=1]
+"spotify/voyager" -> "microsoft/DiskANN" ["e"=1]
+"spotify/voyager" -> "currentslab/awesome-vector-search" ["e"=1]
 "vespa-engine/vespa" -> "weaviate/weaviate" ["e"=1]
 "vespa-engine/vespa" -> "vespa-engine/sample-apps"
 "vespa-engine/vespa" -> "quickwit-oss/tantivy" ["e"=1]
@@ -739,6 +799,11 @@ digraph G {
 "vespa-engine/vespa" -> "scylladb/scylladb" ["e"=1]
 "vespa-engine/vespa" -> "stanford-futuredata/ColBERT" ["e"=1]
 "vespa-engine/vespa" -> "facebookresearch/faiss" ["e"=1]
+"lferry007/LargeVis" -> "ZJULearning/efanna" ["e"=1]
+"lferry007/LargeVis" -> "yahoo/lopq" ["e"=1]
+"neondatabase-labs/pg_embedding" -> "dbaranchuk/ivf-hnsw" ["e"=1]
+"tensorchord/pgvecto.rs" -> "microsoft/DiskANN" ["e"=1]
+"tensorchord/pgvecto.rs" -> "intel/ScalableVectorSearch" ["e"=1]
 "kayzhu/LSHash" -> "FALCONN-LIB/FALCONN"
 "kayzhu/LSHash" -> "pixelogik/NearPy"
 "kayzhu/LSHash" -> "guoziqingbupt/Locality-sensitive-hashing"
@@ -754,6 +819,7 @@ digraph G {
 "kayzhu/LSHash" -> "embr/lsh"
 "kayzhu/LSHash" -> "thulab/DeepHash" ["e"=1]
 "kayzhu/LSHash" -> "ZJULearning/SSG"
+"ZachNagengast/similarity-search-kit" -> "ashvardanian/SwiftSemanticSearch" ["e"=1]
 "cmuparlay/ParlayANN" -> "intel/ScalableVectorSearch"
 "cmuparlay/ParlayANN" -> "JoshEngels/RangeFilteredANN"
 "cmuparlay/ParlayANN" -> "zilliztech/starling"
@@ -784,9 +850,22 @@ digraph G {
 "unum-cloud/usearch" -> "currentslab/awesome-vector-search"
 "unum-cloud/usearch" -> "asg017/sqlite-vec" ["e"=1]
 "unum-cloud/usearch" -> "erikbern/ann-benchmarks"
+"lanterndata/lantern" -> "unum-cloud/usearch" ["e"=1]
+"timescale/pgvectorscale" -> "microsoft/DiskANN" ["e"=1]
+"dgarnitz/vectorflow" -> "qdrant/vector-db-benchmark" ["e"=1]
 "mileszim/awesome-vector-database" -> "dangkhoasdc/awesome-vector-database"
 "milvus-io/milvus-storage" -> "zilliztech/awesome-milvus"
 "alibaba/nann" -> "lqshanshuo/huowuxuanfeng"
+"ashvardanian/SimSIMD" -> "unum-cloud/usearch" ["e"=1]
+"ashvardanian/SimSIMD" -> "unum-cloud/ucall" ["e"=1]
+"ashvardanian/SimSIMD" -> "harsha-simhadri/big-ann-benchmarks" ["e"=1]
+"ashvardanian/SimSIMD" -> "unum-cloud/ustore" ["e"=1]
+"ashvardanian/SimSIMD" -> "microsoft/DiskANN" ["e"=1]
+"ashvardanian/SimSIMD" -> "cmuparlay/ParlayANN" ["e"=1]
+"ashvardanian/SimSIMD" -> "gaoj0017/RaBitQ" ["e"=1]
+"ashvardanian/SimSIMD" -> "rapidsai/raft" ["e"=1]
+"ashvardanian/SimSIMD" -> "intel/ScalableVectorSearch" ["e"=1]
+"artistas/laravel-pagseguro" -> "Potelo/GuPayment" ["e"=1]
 "yahoojapan/NGT" -> "ZJULearning/nsg"
 "yahoojapan/NGT" -> "erikbern/ann-benchmarks"
 "yahoojapan/NGT" -> "vdaas/vald"
@@ -916,6 +995,7 @@ digraph G {
 "rutgers-db/SeRF" -> "CaucherWang/Steiner-hardness"
 "rutgers-db/SeRF" -> "YuexuanXu7/iRangeGraph"
 "go2starr/lshhdc" -> "rahularora/MinHash"
+"Anush008/fastembed-rs" -> "milvus-io/milvus-sdk-rust" ["e"=1]
 "zilliztech/milvus-operator" -> "milvus-io/milvus-operator"
 "Catoverflow/VBASE-artifacts" -> "microsoft/MSVBASE"
 "zilliztech/milvus-cdc" -> "zilliztech/milvus-migration"
@@ -926,6 +1006,8 @@ digraph G {
 "microsoft/MSVBASE" -> "cmuparlay/ParlayANN"
 "microsoft/MSVBASE" -> "intel/ScalableVectorSearch"
 "microsoft/MSVBASE" -> "guestrin-lab/ACORN"
+"asg017/sqlite-vec" -> "unum-cloud/usearch" ["e"=1]
+"datawhalechina/what-is-vs" -> "zilliztech/starling" ["e"=1]
 "wxywb/history_rag" -> "BushJiang/searchPoems"
 "wxywb/history_rag" -> "BushJiang/LuXunWorks"
 "wxywb/history_rag" -> "BinNong/meet-libai" ["e"=1]
@@ -941,6 +1023,7 @@ digraph G {
 "wxywb/history_rag" -> "FlagOpen/FlagEmbedding" ["e"=1]
 "wxywb/history_rag" -> "InternLM/HuixiangDou" ["e"=1]
 "wxywb/history_rag" -> "IDEA-FinAI/ToG" ["e"=1]
+"baidu/babylon" -> "baidu/puck" ["e"=1]
 "gaoj0017/RaBitQ" -> "VectorDB-NTU/Extended-RaBitQ"
 "gaoj0017/RaBitQ" -> "gouyt13/SymphonyQG"
 "gaoj0017/RaBitQ" -> "gaoj0017/ADSampling"
@@ -973,6 +1056,7 @@ digraph G {
 "matchyc/vector-search-papers" -> "efficient/faiss-learned-termination"
 "matchyc/vector-search-papers" -> "dangkhoasdc/awesome-vector-database"
 "matchyc/vector-search-papers" -> "gaoj0017/RaBitQ"
+"Scale3-Labs/langtrace" -> "myscale/myscale-telemetry" ["e"=1]
 "myscale/MyScaleDB" -> "myscale/vector-db-benchmark"
 "myscale/MyScaleDB" -> "myscale/myscale-telemetry"
 "myscale/MyScaleDB" -> "myscale/tantivy-search"
@@ -998,6 +1082,8 @@ digraph G {
 "matchyc/RoarGraph" -> "matchyc/mysteryann"
 "matchyc/RoarGraph" -> "zilliztech/starling"
 "zilliztech/Retriever-for-GPTs" -> "zilliztech/awesome-milvus"
+"lightonai/pylate" -> "TusKANNy/seismic" ["e"=1]
+"jaybaird/python-bloomfilter" -> "1e0ng/simhash" ["e"=1]
 "antgroup/vsag" -> "gaoj0017/RaBitQ"
 "antgroup/vsag" -> "cmuparlay/ParlayANN"
 "antgroup/vsag" -> "matchyc/vector-search-papers"
@@ -1027,6 +1113,9 @@ digraph G {
 "BushJiang/searchPoems" -> "BushJiang/LuXunWorks"
 "aclisp/hiredispool" -> "msempere/redispool"
 "zilliztech/vts" -> "zilliztech/milvus-cdc"
+"spotify/annoy" -> "erikbern/ann-benchmarks" ["e"=1]
+"spotify/annoy" -> "nmslib/nmslib" ["e"=1]
+"spotify/annoy" -> "nmslib/hnswlib" ["e"=1]
 "nmslib/hnswlib" -> "nmslib/nmslib"
 "nmslib/hnswlib" -> "erikbern/ann-benchmarks"
 "nmslib/hnswlib" -> "microsoft/DiskANN"
@@ -1042,6 +1131,8 @@ digraph G {
 "nmslib/hnswlib" -> "UKPLab/sentence-transformers" ["e"=1]
 "nmslib/hnswlib" -> "rapidsai/raft"
 "nmslib/hnswlib" -> "alibaba/euler" ["e"=1]
+"piskvorky/bounter" -> "ekzhu/SetSimilaritySearch" ["e"=1]
+"facebookresearch/StarSpace" -> "nmslib/nmslib" ["e"=1]
 "sing1ee/simhash-java" -> "xlturing/Simhash4J"
 "sing1ee/simhash-java" -> "CreekLou/simhash"
 "lunchclass/bacardi" -> "lunchclass/absolute"
@@ -1080,83 +1171,91 @@ digraph G {
 "dbaranchuk/ivf-hnsw" -> "ZJULearning/nsg"
 "dbaranchuk/ivf-hnsw" -> "technicolor-research/pq-fast-scan"
 "hellozting/CompositeQuantization" -> "arbabenko/Quantizations"
+"flann-lib/flann" ["l"="59.242,10.96", "c"=87]
+"FALCONN-LIB/FALCONN" ["l"="-1.094,4.057"]
+"nmslib/nmslib" ["l"="-1.068,4.042"]
+"google/robotstxt" ["l"="-3.869,-28.28", "c"=4]
+"microsoft/SPTAG" ["l"="-1.03,4.036"]
+"rapidsai/cugraph" ["l"="43.927,23.625", "c"=95]
+"rapidsai/raft" ["l"="-1.044,3.934"]
 "vdaas/vald" ["l"="-1.146,3.98"]
 "yahoojapan/NGT" ["l"="-1.075,3.992"]
 "vearch/vearch" ["l"="-1.006,3.984"]
 "currentslab/awesome-vector-search" ["l"="-1.148,3.943"]
 "vespa-engine/vespa" ["l"="-1.243,4.042"]
 "harsha-simhadri/big-ann-benchmarks" ["l"="-1.08,3.929"]
-"weaviate/weaviate" ["l"="40.579,0.593"]
+"weaviate/weaviate" ["l"="40.579,0.593", "c"=7]
 "microsoft/DiskANN" ["l"="-1.061,3.956"]
 "erikbern/ann-benchmarks" ["l"="-1.101,4.009"]
-"opendistro-for-elasticsearch/k-NN" ["l"="-2.531,8.795"]
+"opendistro-for-elasticsearch/k-NN" ["l"="-2.531,8.795", "c"=1024]
 "unum-cloud/usearch" ["l"="-1.175,4.057"]
 "yahoojapan/ngtd" ["l"="-1.202,3.999"]
 "facebookresearch/distributed-faiss" ["l"="-1.192,3.951"]
 "zilliztech/feder" ["l"="-1.115,3.814"]
-"lancedb/lance" ["l"="-0.447,14.924"]
+"lancedb/lance" ["l"="-0.447,14.924", "c"=729]
 "cmuparlay/ParlayANN" ["l"="-1.071,3.913"]
-"nmslib/nmslib" ["l"="-1.068,4.042"]
 "nmslib/hnswlib" ["l"="-1.047,4.004"]
-"FALCONN-LIB/FALCONN" ["l"="-1.094,4.057"]
-"spotify/annoy" ["l"="53.031,25.889"]
-"facebookresearch/faiss" ["l"="53.099,26.041"]
-"facebookresearch/StarSpace" ["l"="52.979,25.615"]
-"microsoft/SPTAG" ["l"="-1.03,4.036"]
+"spotify/annoy" ["l"="53.031,25.889", "c"=172]
+"facebookresearch/faiss" ["l"="53.099,26.041", "c"=172]
+"facebookresearch/StarSpace" ["l"="52.979,25.615", "c"=172]
 "ZJULearning/nsg" ["l"="-1.084,3.971"]
 "aaalgo/kgraph" ["l"="-1.107,3.982"]
-"benfred/implicit" ["l"="59.45,23.761"]
-"tensorflow/ranking" ["l"="58.143,23.462"]
-"flann-lib/flann" ["l"="59.242,10.96"]
-"srendle/libfm" ["l"="57.973,23.42"]
+"benfred/implicit" ["l"="59.45,23.761", "c"=235]
+"tensorflow/ranking" ["l"="58.143,23.462", "c"=161]
+"srendle/libfm" ["l"="57.973,23.42", "c"=161]
+"cubefs/cubefs" ["l"="8.243,-9.139", "c"=14]
 "matsui528/faiss_tips" ["l"="-1.166,3.916"]
 "matsui528/nanopq" ["l"="-1.204,3.932"]
-"criteo/autofaiss" ["l"="49.039,30.413"]
-"staoxiao/LibVQ" ["l"="54.38,25.722"]
+"criteo/autofaiss" ["l"="49.039,30.413", "c"=191]
+"staoxiao/LibVQ" ["l"="54.38,25.722", "c"=439]
 "DwangoMediaVillage/pqkmeans" ["l"="-1.228,3.932"]
 "matsui528/annbench" ["l"="-1.223,3.868"]
 "matsui528/rii" ["l"="-1.219,3.899"]
 "zilliztech/pyglass" ["l"="-1.082,3.905"]
 "yahoo/lopq" ["l"="-1.186,3.98"]
 "matsui528/pqtable" ["l"="-1.189,3.903"]
-"alibaba/x-deeplearning" ["l"="58.105,23.45"]
-"facebookresearch/dlrm" ["l"="58.171,23.492"]
+"alibaba/x-deeplearning" ["l"="58.105,23.45", "c"=161]
+"facebookresearch/dlrm" ["l"="58.171,23.492", "c"=161]
+"pisa-engine/pisa" ["l"="54.521,25.837", "c"=439]
+"TusKANNy/seismic" ["l"="-0.909,3.882"]
+"lmcinnes/pynndescent" ["l"="45.083,26.273", "c"=68]
+"ZJULearning/efanna" ["l"="-1.115,3.964"]
+"microsoft/BlingFire" ["l"="52.887,25.655", "c"=172]
 "yanyiwu/simhash" ["l"="-1.019,4.33"]
 "1e0ng/simhash" ["l"="-1.054,4.247"]
-"yanyiwu/cppjieba" ["l"="53.101,27.369"]
+"yanyiwu/cppjieba" ["l"="53.101,27.369", "c"=60]
 "yanyiwu/simhash_server" ["l"="-1.027,4.367"]
 "sing1ee/simhash-java" ["l"="-1,4.394"]
 "seomoz/simhash-py" ["l"="-1.033,4.289"]
-"wfrest/wfrest" ["l"="-18.316,-28.311"]
+"wfrest/wfrest" ["l"="-18.316,-28.311", "c"=62]
 "zyymax/text-similarity" ["l"="-1.063,4.347"]
 "yanyiwu/limonp" ["l"="-0.963,4.368"]
 "yanyiwu/gosimhash" ["l"="-0.976,4.31"]
 "xlturing/Simhash4J" ["l"="-0.999,4.371"]
-"baidu/Familia" ["l"="53.309,27.373"]
+"baidu/Familia" ["l"="53.309,27.373", "c"=60]
 "seomoz/simhash-cpp" ["l"="-1.053,4.305"]
-"2shou/TextGrocery" ["l"="53.319,27.431"]
-"largelymfs/topical_word_embeddings" ["l"="53.25,26.301"]
-"jannson/yaha" ["l"="53.34,27.588"]
-"rapidsai/raft" ["l"="-1.044,3.934"]
+"2shou/TextGrocery" ["l"="53.319,27.431", "c"=60]
+"largelymfs/topical_word_embeddings" ["l"="53.25,26.301", "c"=993]
+"jannson/yaha" ["l"="53.34,27.588", "c"=60]
 "rapidsai/cuvs" ["l"="-1.024,3.898"]
-"rapidsai/rmm" ["l"="36.687,1.012"]
-"NVIDIA/cuCollections" ["l"="36.669,0.998"]
+"rapidsai/rmm" ["l"="36.687,1.012", "c"=112]
+"NVIDIA/cuCollections" ["l"="36.669,0.998", "c"=112]
 "milvus-io/knowhere" ["l"="-1.08,3.83"]
 "zilliztech/knowhere" ["l"="-1.071,3.869"]
 "baidu/puck" ["l"="-1.041,3.912"]
 "cgtuebingen/ggnn" ["l"="-1.063,3.932"]
-"NVIDIA/cub" ["l"="36.72,0.942"]
-"rapidsai/cugraph" ["l"="43.927,23.625"]
+"NVIDIA/cub" ["l"="36.72,0.942", "c"=112]
 "intel/ScalableVectorSearch" ["l"="-1.064,3.898"]
 "gaoj0017/RaBitQ" ["l"="-1.056,3.891"]
-"NVIDIA/cccl" ["l"="36.699,0.959"]
-"cubefs/cubefs" ["l"="8.243,-9.139"]
+"NVIDIA/cccl" ["l"="36.699,0.959", "c"=112]
+"jelmerk/hnswlib" ["l"="-2.407,17.9", "c"=455]
 "vearch/gamma" ["l"="-0.939,4.001"]
-"alibaba/havenask" ["l"="-18.58,-28.332"]
+"alibaba/havenask" ["l"="-18.58,-28.332", "c"=62]
 "alibaba/proxima" ["l"="-1.021,3.924"]
 "awa-ai/awadb" ["l"="-0.946,4.026"]
-"jd-opensource/joyqueue" ["l"="-5.045,13.349"]
+"jd-opensource/joyqueue" ["l"="-5.045,13.349", "c"=698]
 "liqima/faiss_note" ["l"="-0.878,4.015"]
+"IAdmireu/ChineseSTS" ["l"="53.363,27.356", "c"=60]
 "facebookresearch/spreadingvectors" ["l"="-1.139,3.908"]
 "stanis-morozov/unq" ["l"="-1.189,3.916"]
 "dbaranchuk/ivf-hnsw" ["l"="-1.121,3.94"]
@@ -1166,31 +1265,29 @@ digraph G {
 "technicolor-research/pq-fast-scan" ["l"="-1.145,3.923"]
 "stanis-morozov/ip-nsw" ["l"="-1.09,3.919"]
 "technicolor-research/faiss-quickeradc" ["l"="-1.114,3.913"]
-"facebookresearch/multigrain" ["l"="58.052,9.031"]
+"facebookresearch/multigrain" ["l"="58.052,9.031", "c"=744]
 "kakao/n2" ["l"="-1.097,3.934"]
-"kakao/buffalo" ["l"="-5.014,-23.153"]
-"kakao/recoteam" ["l"="-5.017,-23.276"]
-"ZJULearning/efanna" ["l"="-1.115,3.964"]
-"kakao-arena/shopping-classification" ["l"="-3.372,-21.257"]
+"kakao/buffalo" ["l"="-5.014,-23.153", "c"=164]
+"kakao/recoteam" ["l"="-5.017,-23.276", "c"=164]
+"kakao-arena/shopping-classification" ["l"="-3.372,-21.257", "c"=256]
 "lunchclass/bacardi" ["l"="-1.033,3.82"]
-"kakao/s2graph" ["l"="-19.247,-23.947"]
-"corona10/fuego" ["l"="1.418,-7.617"]
+"kakao/s2graph" ["l"="-19.247,-23.947", "c"=10]
+"corona10/fuego" ["l"="1.418,-7.617", "c"=670]
 "lunchclass/absolute" ["l"="-1.048,3.833"]
 "ekzhu/SetSimilaritySearch" ["l"="-0.983,4.193"]
 "ekzhu/go-set-similarity-search" ["l"="-0.953,4.21"]
 "scrapinghub/python-simhash" ["l"="-1.067,4.281"]
 "ekzhu/datasketch" ["l"="-1.065,4.144"]
 "kayzhu/LSHash" ["l"="-1.097,4.121"]
-"jaybaird/python-bloomfilter" ["l"="48.735,23.251"]
+"jaybaird/python-bloomfilter" ["l"="48.735,23.251", "c"=125]
 "mfonda/simhash" ["l"="-0.987,4.279"]
 "memosstilvi/simhash" ["l"="-1.102,4.312"]
-"kpu/kenlm" ["l"="35.58,2.371"]
-"bigscience-workshop/data-preparation" ["l"="38.512,-0.604"]
-"HIT-SCIR/pyltp" ["l"="53.275,27.392"]
+"kpu/kenlm" ["l"="35.58,2.371", "c"=308]
+"bigscience-workshop/data-preparation" ["l"="38.512,-0.604", "c"=39]
+"HIT-SCIR/pyltp" ["l"="53.275,27.392", "c"=60]
 "xiaoran-2/TextSimilarity" ["l"="-1.08,4.378"]
-"PengboLiu/Doc2Vec-Document-Similarity" ["l"="53.313,27.478"]
+"PengboLiu/Doc2Vec-Document-Similarity" ["l"="53.313,27.478", "c"=60]
 "HuangFJ/text-similarity" ["l"="-1.067,4.409"]
-"IAdmireu/ChineseSTS" ["l"="53.363,27.356"]
 "yanyiwu/practice" ["l"="-0.935,4.397"]
 "ZJULearning/SSG" ["l"="-1.09,3.951"]
 "ZJULearning/efanna_graph" ["l"="-1.08,3.946"]
@@ -1200,8 +1297,8 @@ digraph G {
 "jobergum/dense-vector-ranking-performance" ["l"="-1.387,4.055"]
 "vespa-engine/pyvespa" ["l"="-1.374,4.098"]
 "spotify/vispana" ["l"="-1.373,4.067"]
-"sebastian-hofstaetter/teaching" ["l"="54.539,25.719"]
-"querqy/chorus" ["l"="-2.328,8.872"]
+"sebastian-hofstaetter/teaching" ["l"="54.539,25.719", "c"=439]
+"querqy/chorus" ["l"="-2.328,8.872", "c"=1024]
 "coolhok/faiss-learning" ["l"="-0.85,4.015"]
 "plippe/faiss-web-service" ["l"="-0.836,4.029"]
 "layerism/brpc_faiss_server" ["l"="-0.844,3.997"]
@@ -1242,21 +1339,27 @@ digraph G {
 "HuangQiang/QALSH" ["l"="-0.928,3.868"]
 "milvus-io/bootcamp" ["l"="-1.145,3.821"]
 "towhee-io/examples" ["l"="-1.152,3.777"]
-"milvus-io/pymilvus" ["l"="-1.05,2.954"]
-"towhee-io/towhee" ["l"="51.151,2.702"]
+"milvus-io/pymilvus" ["l"="-1.05,2.954", "c"=258]
+"towhee-io/towhee" ["l"="51.151,2.702", "c"=85]
 "zilliztech/attu" ["l"="-1.175,3.793"]
-"milvus-io/milvus" ["l"="40.363,0.485"]
-"milvus-io/milvus-sdk-java" ["l"="-1.065,2.932"]
+"milvus-io/milvus" ["l"="40.363,0.485", "c"=7]
+"milvus-io/milvus-sdk-java" ["l"="-1.065,2.932", "c"=258]
 "zilliztech/phantoscope" ["l"="-1.155,3.734"]
 "zilliztech/VectorDBBench" ["l"="-1.092,3.859"]
-"milvus-io/milvus-sdk-go" ["l"="-1.055,2.921"]
-"milvus-io/web-content" ["l"="-1.049,2.903"]
+"milvus-io/milvus-sdk-go" ["l"="-1.055,2.921", "c"=258]
+"milvus-io/web-content" ["l"="-1.049,2.903", "c"=258]
 "milvus-io/milvus-tools" ["l"="-1.102,3.748"]
 "zilliztech/starling" ["l"="-1.053,3.9"]
 "antgroup/vsag" ["l"="-1.056,3.876"]
-"ChunelFeng/CGraph" ["l"="-18.429,-28.228"]
-"pluto-junzeng/CNSD" ["l"="53.357,26.994"]
-"ZhuiyiTechnology/pretrained-models" ["l"="53.417,27.189"]
+"ashvardanian/StringZilla" ["l"="-19.695,-26.125", "c"=10]
+"unum-cloud/ucall" ["l"="-1.226,4.117"]
+"cmuparlay/parlaylib" ["l"="51.435,15.347", "c"=1231]
+"metarank/metarank" ["l"="-2.405,8.868", "c"=1024]
+"ChunelFeng/CGraph" ["l"="-18.429,-28.228", "c"=62]
+"pluto-junzeng/CNSD" ["l"="53.357,26.994", "c"=60]
+"ZhuiyiTechnology/pretrained-models" ["l"="53.417,27.189", "c"=60]
+"ronaldo8210/brpc_source_code_analysis" ["l"="-18.454,-28.33", "c"=62]
+"frutik/awesome-search" ["l"="-2.368,8.851", "c"=1024]
 "Lsyhprum/WEAVESS" ["l"="-1.098,3.898"]
 "matchyc/RoarGraph" ["l"="-1.043,3.871"]
 "ryanrhymes/panns" ["l"="-1.136,4.026"]
@@ -1270,6 +1373,8 @@ digraph G {
 "js1010/cuhnsw" ["l"="-1.004,3.919"]
 "arctern-io/arctern" ["l"="-1.145,3.749"]
 "milvus-io/birdwatcher" ["l"="-1.116,3.794"]
+"tdebatty/java-LSH" ["l"="-2.182,17.52", "c"=455]
+"guoziqingbupt/Locality-sensitive-hashing" ["l"="-1.116,4.115"]
 "ReigenAraka/k8s-course" ["l"="-1.165,3.688"]
 "zilliz-bootcamp/video_analysis" ["l"="-1.173,3.701"]
 "Kejing-Lu/hvs" ["l"="-1.145,3.888"]
@@ -1286,21 +1391,23 @@ digraph G {
 "Shekhale/gbnns_dim_red" ["l"="-1.165,3.961"]
 "milvus-io/ann-benchmarks" ["l"="-1.175,3.663"]
 "csypeng/LAN" ["l"="-1.166,3.878"]
-"google-research/deduplicate-text-datasets" ["l"="38.55,-0.567"]
-"ChenghaoMou/text-dedup" ["l"="38.537,-0.59"]
-"facebookresearch/cc_net" ["l"="38.527,-0.625"]
-"huggingface/datatrove" ["l"="38.609,-0.53"]
+"ChenghaoMou/text-dedup" ["l"="38.537,-0.59", "c"=39]
+"google-research/deduplicate-text-datasets" ["l"="38.55,-0.567", "c"=39]
+"facebookresearch/cc_net" ["l"="38.527,-0.625", "c"=39]
+"huggingface/datatrove" ["l"="38.609,-0.53", "c"=39]
 "src-d/minhashcuda" ["l"="-1.03,4.182"]
-"dedupeio/dedupe" ["l"="52.453,26.07"]
+"dedupeio/dedupe" ["l"="52.453,26.07", "c"=172]
 "JoshEngels/RangeFilteredANN" ["l"="-1.053,3.922"]
 "qdrant/vector-db-benchmark" ["l"="-1.063,3.852"]
+"qdrant/qdrant-client" ["l"="40.828,1.128", "c"=7]
 "dangkhoasdc/awesome-vector-database" ["l"="-1.087,3.878"]
 "edoliberty/vector-search-class-notes" ["l"="-1.125,3.847"]
-"frutik/awesome-search" ["l"="-2.368,8.851"]
 "esteininger/vector-search" ["l"="-1.26,3.885"]
 "mileszim/awesome-vector-database" ["l"="-1.135,3.876"]
 "matchyc/vector-search-papers" ["l"="-1.068,3.886"]
 "go2starr/lshhdc" ["l"="-1.119,4.236"]
+"carlescere/scheduler" ["l"="3.733,-8.243", "c"=0]
+"msempere/golarm" ["l"="-1.138,4.4"]
 "lyst/rpforest" ["l"="-1.175,4.016"]
 "una-dinosauria/local-search-quantization" ["l"="-1.27,3.926"]
 "hellozting/CompositeQuantization" ["l"="-1.299,3.965"]
@@ -1311,26 +1418,29 @@ digraph G {
 "zilliztech/milvus-migration" ["l"="-1.09,3.717"]
 "DBAIWangGroup/SRS" ["l"="-0.982,3.916"]
 "HuangQiang/BC-Tree" ["l"="-0.914,3.841"]
+"facebookresearch/Sphere" ["l"="37.109,-2.713", "c"=797]
 "zilliztech/milvus_cli" ["l"="-1.132,3.784"]
 "milvus-io/milvus-lite" ["l"="-1.088,3.797"]
 "zilliztech/milvus-backup" ["l"="-1.101,3.784"]
 "zilliztech/akcio" ["l"="-1.081,3.769"]
-"yangjianxin1/CLIP-Chinese" ["l"="50.06,30.469"]
-"xorbitsai/inference" ["l"="40.614,0.018"]
-"zilliztech/deep-searcher" ["l"="41.204,0.047"]
-"FlagOpen/FlagEmbedding" ["l"="38.963,-1.98"]
-"zilliztech/GPTCache" ["l"="41.249,-3.826"]
-"msempere/golarm" ["l"="-1.138,4.4"]
+"taozhijiang/chinese_correct_wsd" ["l"="53.546,27.47", "c"=60]
+"fssqawj/SentenceSim" ["l"="-1.07,4.477"]
+"yangjianxin1/CLIP-Chinese" ["l"="50.06,30.469", "c"=83]
+"qdrant/awesome-metric-learning" ["l"="-44.361,26.263", "c"=551]
+"xorbitsai/inference" ["l"="40.614,0.018", "c"=7]
+"zilliztech/deep-searcher" ["l"="41.204,0.047", "c"=7]
+"FlagOpen/FlagEmbedding" ["l"="38.963,-1.98", "c"=202]
+"zilliztech/GPTCache" ["l"="41.249,-3.826", "c"=146]
+"cirospaciari/socketify.py" ["l"="44.842,21.181", "c"=20]
 "cgtuebingen/Product-Quantization-Tree" ["l"="-1.26,3.961"]
 "arbabenko/MultiIndex" ["l"="-1.26,3.985"]
 "arbabenko/GNOIMI" ["l"="-1.278,3.978"]
-"willard-yuan/hashing-baseline-for-image-retrieval" ["l"="58.033,9.177"]
-"thuml/HashNet" ["l"="57.998,9.212"]
-"kevinlin311tw/caffe-cvprw15" ["l"="58.08,9.189"]
+"willard-yuan/hashing-baseline-for-image-retrieval" ["l"="58.033,9.177", "c"=744]
+"thuml/HashNet" ["l"="57.998,9.212", "c"=744]
+"kevinlin311tw/caffe-cvprw15" ["l"="58.08,9.189", "c"=744]
 "seomoz/simhash-db-py" ["l"="-1.004,4.299"]
 "alibaba/nann" ["l"="-0.931,3.923"]
 "milvus-io/milvus-proto" ["l"="-1.058,3.784"]
-"guoziqingbupt/Locality-sensitive-hashing" ["l"="-1.116,4.115"]
 "milvus-io/milvus-model" ["l"="-1.054,3.753"]
 "qdrant/ann-filtering-benchmark-datasets" ["l"="-1.014,3.859"]
 "rutgers-db/SeRF" ["l"="-1.038,3.898"]
@@ -1342,26 +1452,24 @@ digraph G {
 "zilliztech/Retriever-for-GPTs" ["l"="-1.036,3.76"]
 "milvus-io/milvus-storage" ["l"="-1.031,3.748"]
 "unum-cloud/ustore" ["l"="-1.254,4.118"]
-"unum-cloud/ucall" ["l"="-1.226,4.117"]
 "unum-cloud/uform" ["l"="-1.226,4.146"]
 "unum-cloud/udisk" ["l"="-1.299,4.146"]
 "cpp-armenia/meetings" ["l"="-1.287,4.124"]
-"cirospaciari/socketify.py" ["l"="44.842,21.181"]
-"ashvardanian/SimSIMD" ["l"="-19.582,-26.14"]
-"jcrist/msgspec" ["l"="44.927,21.124"]
-"ashvardanian/StringZilla" ["l"="-19.695,-26.125"]
-"emmett-framework/granian" ["l"="44.862,21.129"]
-"ariebovenberg/whenever" ["l"="44.988,21.201"]
-"ag2ai/faststream" ["l"="44.849,21.156"]
-"Neoteroi/BlackSheep" ["l"="44.802,21.104"]
-"alexdelorenzo/aiopath" ["l"="44.86,21.386"]
+"facebookresearch/pysparnn" ["l"="53.078,25.671", "c"=172]
+"ashvardanian/SimSIMD" ["l"="-19.582,-26.14", "c"=10]
+"jcrist/msgspec" ["l"="44.927,21.124", "c"=20]
+"emmett-framework/granian" ["l"="44.862,21.129", "c"=20]
+"ariebovenberg/whenever" ["l"="44.988,21.201", "c"=20]
+"ag2ai/faststream" ["l"="44.849,21.156", "c"=20]
+"Neoteroi/BlackSheep" ["l"="44.802,21.104", "c"=20]
+"alexdelorenzo/aiopath" ["l"="44.86,21.386", "c"=20]
+"asg017/sqlite-vss" ["l"="40.628,0.963", "c"=7]
 "Jacyhust/LSH-APG" ["l"="-1.053,3.859"]
 "IntelLabs/VectorSearchDatasets" ["l"="-1.041,3.847"]
 "mongodb-developer/liberate-data" ["l"="-1.289,3.872"]
 "microsoft/MSVBASE" ["l"="-1.084,3.891"]
 "myscale/vector-db-benchmark" ["l"="-1.003,3.799"]
 "ejaasaari/mrpt-comparison" ["l"="-1.193,4.025"]
-"fssqawj/SentenceSim" ["l"="-1.07,4.477"]
 "Escavador/vespa-php" ["l"="-1.457,4.1"]
 "zilliztech/milvus-cdc" ["l"="-1.081,3.731"]
 "zilliztech/milvus-helm" ["l"="-1.101,3.732"]
@@ -1371,32 +1479,36 @@ digraph G {
 "WPJiang/HWTL_SDU-ANNS" ["l"="-1.021,3.847"]
 "VectorDB-NTU/Extended-RaBitQ" ["l"="-1.041,3.859"]
 "RAIVNLab/AdANNS" ["l"="-0.978,3.851"]
-"monatis/clip.cpp" ["l"="40.193,1.16"]
+"monatis/clip.cpp" ["l"="40.193,1.16", "c"=7]
 "ashvardanian/SwiftSemanticSearch" ["l"="-1.251,4.196"]
-"DRSY/MoTIS" ["l"="57.111,29.409"]
-"rom1504/clip-retrieval" ["l"="49.021,30.321"]
-"microsoft/X-Decoder" ["l"="48.821,30.224"]
-"quickwit-oss/tantivy" ["l"="-10.004,-6.013"]
-"o19s/elasticsearch-learning-to-rank" ["l"="-2.391,8.813"]
-"qdrant/qdrant" ["l"="40.485,0.649"]
-"apache/pinot" ["l"="-2.709,14.746"]
-"lancedb/lancedb" ["l"="40.692,0.686"]
-"apache/lucene-solr" ["l"="-2.862,14.586"]
-"scylladb/scylladb" ["l"="-19.658,-24.918"]
-"stanford-futuredata/ColBERT" ["l"="54.569,25.629"]
+"DRSY/MoTIS" ["l"="57.111,29.409", "c"=1082]
+"rom1504/clip-retrieval" ["l"="49.021,30.321", "c"=191]
+"microsoft/X-Decoder" ["l"="48.821,30.224", "c"=191]
+"spotify/voyager" ["l"="41.19,0.965", "c"=7]
+"quickwit-oss/tantivy" ["l"="-10.004,-6.013", "c"=5]
+"o19s/elasticsearch-learning-to-rank" ["l"="-2.391,8.813", "c"=1024]
+"qdrant/qdrant" ["l"="40.485,0.649", "c"=7]
+"apache/pinot" ["l"="-2.709,14.746", "c"=43]
+"lancedb/lancedb" ["l"="40.692,0.686", "c"=7]
+"apache/lucene-solr" ["l"="-2.862,14.586", "c"=43]
+"scylladb/scylladb" ["l"="-19.658,-24.918", "c"=10]
+"stanford-futuredata/ColBERT" ["l"="54.569,25.629", "c"=439]
+"lferry007/LargeVis" ["l"="44.938,26.231", "c"=68]
+"neondatabase-labs/pg_embedding" ["l"="4.018,13.347", "c"=850]
+"tensorchord/pgvecto.rs" ["l"="3.93,13.419", "c"=850]
 "brandonrobertz/SparseLSH" ["l"="-1.139,4.114"]
 "loretoparisi/lshash" ["l"="-1.07,4.176"]
-"tdebatty/java-LSH" ["l"="-2.182,17.52"]
-"thulab/DeepHash" ["l"="58.009,9.195"]
+"thulab/DeepHash" ["l"="58.009,9.195", "c"=744]
+"ZachNagengast/similarity-search-kit" ["l"="27.476,-21.157", "c"=577]
 "SimoneZeng/awesome-vector-ANN-search-papers" ["l"="-1.036,3.875"]
 "guestrin-lab/ACORN" ["l"="-1.058,3.908"]
 "Visual-Computing/DynamicExplorationGraph" ["l"="-1.009,3.889"]
-"spotify/voyager" ["l"="41.19,0.965"]
-"asg017/sqlite-vss" ["l"="40.628,0.963"]
-"lanterndata/lantern" ["l"="3.719,13.045"]
-"asg017/sqlite-vec" ["l"="40.688,0.739"]
+"lanterndata/lantern" ["l"="3.719,13.045", "c"=1258]
+"asg017/sqlite-vec" ["l"="40.688,0.739", "c"=7]
+"timescale/pgvectorscale" ["l"="3.895,13.427", "c"=850]
+"dgarnitz/vectorflow" ["l"="41.072,0.947", "c"=7]
 "lqshanshuo/huowuxuanfeng" ["l"="-0.901,3.92"]
-"lmcinnes/pynndescent" ["l"="45.083,26.273"]
+"artistas/laravel-pagseguro" ["l"="7.094,-21.33", "c"=829]
 "zilliztech/kafka-connect-milvus" ["l"="-1.057,3.726"]
 "cwida/PDX" ["l"="-1.065,3.818"]
 "matchyc/mysteryann" ["l"="-1.017,3.874"]
@@ -1406,33 +1518,37 @@ digraph G {
 "Catoverflow/VBASE-artifacts" ["l"="-1.107,3.879"]
 "zilliztech/woodpecker" ["l"="-1.098,3.67"]
 "YuexuanXu7/iRangeGraph" ["l"="-1.027,3.912"]
+"Anush008/fastembed-rs" ["l"="-8.675,-4.415", "c"=407]
 "zilliztech/vts" ["l"="-1.068,3.698"]
+"datawhalechina/what-is-vs" ["l"="51.115,27.666", "c"=104]
 "wxywb/history_rag" ["l"="-1.183,3.751"]
 "BushJiang/searchPoems" ["l"="-1.213,3.709"]
 "BushJiang/LuXunWorks" ["l"="-1.223,3.724"]
-"BinNong/meet-libai" ["l"="41.431,0.781"]
-"liwenju0/cutword" ["l"="38.197,-1.429"]
-"thinkany-ai/rag-search" ["l"="45.375,-0.823"]
-"netease-youdao/QAnything" ["l"="40.678,-0.023"]
-"KylinMountain/graphrag-server" ["l"="41.425,0.731"]
-"gomate-community/TrustRAG" ["l"="-54.155,-12.521"]
-"InternLM/HuixiangDou" ["l"="38.823,-1.869"]
-"IDEA-FinAI/ToG" ["l"="53.832,15.245"]
-"rapidsai/kvikio" ["l"="1.765,14.51"]
-"TusKANNy/seismic" ["l"="-0.909,3.882"]
-"myscale/MyScaleDB" ["l"="-0.976,3.807"]
+"BinNong/meet-libai" ["l"="41.431,0.781", "c"=7]
+"liwenju0/cutword" ["l"="38.197,-1.429", "c"=1218]
+"thinkany-ai/rag-search" ["l"="45.375,-0.823", "c"=222]
+"netease-youdao/QAnything" ["l"="40.678,-0.023", "c"=7]
+"KylinMountain/graphrag-server" ["l"="41.425,0.731", "c"=7]
+"gomate-community/TrustRAG" ["l"="-54.155,-12.521", "c"=252]
+"InternLM/HuixiangDou" ["l"="38.823,-1.869", "c"=202]
+"IDEA-FinAI/ToG" ["l"="53.832,15.245", "c"=504]
+"baidu/babylon" ["l"="-18.527,-28.267", "c"=62]
+"rapidsai/kvikio" ["l"="1.765,14.51", "c"=572]
+"Scale3-Labs/langtrace" ["l"="41.007,0.607", "c"=7]
 "myscale/myscale-telemetry" ["l"="-0.939,3.776"]
+"myscale/MyScaleDB" ["l"="-0.976,3.807"]
 "tiannuo-yang/VDTuner" ["l"="-0.987,3.872"]
 "KGLab-HDU/TKDE-under-review-Native-Hybrid-Queries-via-ANNS" ["l"="-0.992,3.93"]
 "TusKANNy/kannolo" ["l"="-0.875,3.872"]
+"lightonai/pylate" ["l"="41.253,0.965", "c"=7]
 "kemingy/rabitq" ["l"="-1.021,3.835"]
 "ZJU-DAILY/HNSW-Flash" ["l"="-1,3.85"]
 "aclisp/hiredispool" ["l"="-1.183,4.416"]
-"UKPLab/sentence-transformers" ["l"="52.909,25.852"]
-"alibaba/euler" ["l"="52.987,16.127"]
+"UKPLab/sentence-transformers" ["l"="52.909,25.852", "c"=172]
+"alibaba/euler" ["l"="52.987,16.127", "c"=100]
+"piskvorky/bounter" ["l"="45.454,20.757", "c"=20]
 "CreekLou/simhash" ["l"="-0.99,4.428"]
 "triplebanana/triple_banana" ["l"="-1.012,3.779"]
-"facebookresearch/pysparnn" ["l"="53.078,25.671"]
 "zilliztech/mcp-server-milvus" ["l"="-1.095,3.626"]
-"andrusha97/online-hnsw" ["l"="-8.428,-4.014"]
+"andrusha97/online-hnsw" ["l"="-8.428,-4.014", "c"=407]
 }

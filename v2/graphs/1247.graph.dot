@@ -1,4 +1,5 @@
 digraph G {
+"wvengen/proguard-maven-plugin" -> "graalvm/native-build-tools" ["e"=1]
 "py4j/py4j" -> "jpype-project/jpype"
 "py4j/py4j" -> "ninia/jep"
 "py4j/py4j" -> "kivy/pyjnius" ["e"=1]
@@ -14,6 +15,8 @@ digraph G {
 "py4j/py4j" -> "delta-io/delta-sharing" ["e"=1]
 "py4j/py4j" -> "databricks/spark-perf" ["e"=1]
 "py4j/py4j" -> "jupyter-incubator/sparkmagic" ["e"=1]
+"mozilla/rhino" -> "oracle/graaljs" ["e"=1]
+"mozilla/rhino" -> "openjdk/nashorn" ["e"=1]
 "baztian/jaydebeapi" -> "jpype-project/jpype"
 "baztian/jaydebeapi" -> "laughingman7743/PyAthenaJDBC" ["e"=1]
 "baztian/jaydebeapi" -> "ibmdb/python-ibmdb"
@@ -32,6 +35,9 @@ digraph G {
 "oracle/graaljs" -> "wizawu/tyrian"
 "oracle/graaljs" -> "javadelight/delight-nashorn-sandbox"
 "oracle/graaljs" -> "graalvm/sulong"
+"dflib/dflib" -> "tginsberg/gatherers4j" ["e"=1]
+"opencpu/opencpu" -> "s-u/Rserve" ["e"=1]
+"jneen/balls" -> "dynjs/dynjs" ["e"=1]
 "ninia/jep" -> "bcdev/jpy"
 "ninia/jep" -> "py4j/py4j"
 "ninia/jep" -> "scalapy/scalapy" ["e"=1]
@@ -49,6 +55,7 @@ digraph G {
 "ninia/jep" -> "deepjavalibrary/djl" ["e"=1]
 "Stewori/JyNI" -> "bcdev/jpy"
 "Stewori/JyNI" -> "Stewori/pytypes" ["e"=1]
+"reactiverse/es4x" -> "oracle/graaljs" ["e"=1]
 "bcdev/jpy" -> "bcdev/jzarr"
 "bcdev/jpy" -> "forman/extendit"
 "bcdev/jpy" -> "Stewori/JyNI"
@@ -63,6 +70,7 @@ digraph G {
 "rexyai/RestRserve" -> "r-lib/httr2" ["e"=1]
 "rexyai/RestRserve" -> "rstudio/promises" ["e"=1]
 "rexyai/RestRserve" -> "JosiahParry/valve" ["e"=1]
+"hpyproject/hpy" -> "oracle/graalpython" ["e"=1]
 "oracle/graalpython" -> "oracle/graaljs"
 "oracle/graalpython" -> "jython/jython3"
 "oracle/graalpython" -> "oracle/fastr"
@@ -89,6 +97,8 @@ digraph G {
 "jnode/jnode" -> "LoboEvolution/LoboEvolution"
 "jnode/jnode" -> "waldheinz/fat32-lib"
 "qmx/jitescript" -> "headius/bitescript"
+"beehive-lab/TornadoVM" -> "NVIDIA/grcuda" ["e"=1]
+"beehive-lab/TornadoVM" -> "neomatrix369/awesome-graal" ["e"=1]
 "s-u/Rserve" -> "rexyai/RestRserve"
 "s-u/Rserve" -> "s-u/REngine"
 "s-u/Rserve" -> "s-u/rJava"
@@ -97,6 +107,7 @@ digraph G {
 "s-u/Rserve" -> "ixpantia/faucet" ["e"=1]
 "s-u/Rserve" -> "ambiorix-web/ambiorix" ["e"=1]
 "s-u/Rserve" -> "s-u/FastRWeb"
+"ObjectLayout/ObjectLayout" -> "graalvm/graal-core" ["e"=1]
 "graalvm/graalvm-demos" -> "graalvm/native-build-tools"
 "graalvm/graalvm-demos" -> "neomatrix369/awesome-graal"
 "graalvm/graalvm-demos" -> "graalvm/mx"
@@ -125,12 +136,16 @@ digraph G {
 "apigee/apigee-deploy-maven-plugin" -> "apigeecs/apigee-migrate-tool"
 "smarr/ReBench" -> "smarr/SOMns"
 "smarr/ReBench" -> "smarr/ReBenchDB"
+"xcube-dev/xcube" -> "bcdev/zappend" ["e"=1]
+"xcube-dev/xcube" -> "bcdev/jzarr" ["e"=1]
+"xcube-dev/xcube" -> "forman/extendit" ["e"=1]
 "nodyn/jvm-npm" -> "malaporte/nashorn-commonjs-modules"
 "nodyn/jvm-npm" -> "walterhiggins/commonjs-modules-javax-script"
 "nodyn/jvm-npm" -> "nodyn/nodyn"
 "nodyn/jvm-npm" -> "provegard/nashorn-require"
 "sidd-harth/apigee-cicd" -> "apigeecs/apigee-migrate-tool"
 "graalvm/graal-js-jdk11-maven-demo" -> "javadelight/delight-graaljs-sandbox"
+"wind2412/wind_jvm" -> "JikesRVM/JikesRVM" ["e"=1]
 "aliceinapiland/virtual-apijam" -> "aliceinapiland/AdvancedVirtualAPIJam"
 "bcdev/jzarr" -> "forman/extendit"
 "bcdev/jzarr" -> "bcdev/zappend"
@@ -140,6 +155,14 @@ digraph G {
 "graalvm/graal-jvmci-8" -> "graalvm/labs-openjdk-11"
 "apichick/apigee-dev-training" -> "g-lalevee/apigee-cicd"
 "LoboEvolution/LoboEvolution" -> "lobobrowser/LoboBrowser"
+"graalvm/graalvm-ce-builds" -> "graalvm/native-build-tools" ["e"=1]
+"graalvm/graalvm-ce-builds" -> "graalvm/graalvm-demos" ["e"=1]
+"graalvm/graalvm-ce-builds" -> "graalvm/container" ["e"=1]
+"graalvm/graalvm-ce-builds" -> "graalvm/graalvm-ce-dev-builds" ["e"=1]
+"graalvm/graalvm-ce-builds" -> "oracle/graalvm-reachability-metadata" ["e"=1]
+"graalvm/graalvm-ce-builds" -> "oracle/graaljs" ["e"=1]
+"hollingsworthd/jBrowserDriver" -> "gngrOrg/gngr" ["e"=1]
+"zxh0/jvm.go" -> "cloudsec/ajvm" ["e"=1]
 "jython/jython" -> "jython/jython3"
 "jython/jython" -> "jython/frozen-mirror"
 "jython/jython" -> "oracle/graalpython"
@@ -155,6 +178,8 @@ digraph G {
 "jython/jython" -> "openjdk/nashorn"
 "jython/jython" -> "beanshell/beanshell" ["e"=1]
 "jython/jython" -> "pypy/pypy" ["e"=1]
+"IntelLabs/RiverTrail" -> "dynjs/dynjs" ["e"=1]
+"Hakky54/sslcontext-kickstart" -> "tginsberg/gatherers4j" ["e"=1]
 "r-hub/r-minimal" -> "rexyai/RestRserve"
 "r-hub/r-minimal" -> "datasketch/shinypanels"
 "MPh-py/MPh" -> "fellobos/cmphy"
@@ -168,6 +193,8 @@ digraph G {
 "apigee/apigeetool-node" -> "anil614sagar/openapi2apigee"
 "apigee/apigeetool-node" -> "apigeecs/apigee-migrate-tool"
 "apigee/apigeetool-node" -> "apigee/apigee-config-maven-plugin"
+"nurv/BicaVM" -> "dynjs/dynjs" ["e"=1]
+"eclipsesource/J2V8" -> "oracle/graaljs" ["e"=1]
 "jython/frozen-mirror" -> "jython/jython3"
 "jython/frozen-mirror" -> "Stewori/JyNI"
 "jython/frozen-mirror" -> "jython/jython"
@@ -209,9 +236,16 @@ digraph G {
 "apigeecs/apigee-deploy-grunt-plugin" -> "dzuluaga/generator-apigee-deploy-grunt-api"
 "OracleLabs/GraalVM" -> "OracleLabs/Truffle"
 "DeLaGuardo/setup-graalvm" -> "rinx/setup-graalvm-ce"
+"cincheo/jsweet" -> "wizawu/tyrian" ["e"=1]
+"kcuilla/reactablefmtr" -> "datasketch/shinypanels" ["e"=1]
+"pyston/pyston" -> "oracle/graalpython" ["e"=1]
+"joeferner/node-java" -> "apigee/trireme" ["e"=1]
+"joeferner/node-java" -> "nodyn/nodyn" ["e"=1]
 "openjdk/nashorn" -> "oracle/graaljs"
 "openjdk/nashorn" -> "nodyn/jvm-npm"
 "openjdk/nashorn" -> "malaporte/nashorn-commonjs-modules"
+"chrisseaton/rhizome" -> "Shopify/seafoam" ["e"=1]
+"winterbe/spring-react-example" -> "nodyn/jvm-npm" ["e"=1]
 "ibmdb/python-ibmdb" -> "ibmdb/python-ibmdbsa"
 "ibmdb/python-ibmdb" -> "DB2-Samples/db2jupyter"
 "ibmdb/python-ibmdb" -> "ibmdb/python-ibmdb-django"
@@ -221,6 +255,7 @@ digraph G {
 "ibmdb/python-ibmdb" -> "ibmdb/go_ibm_db" ["e"=1]
 "ibmdb/python-ibmdb" -> "IBM/ibmi-oss-examples" ["e"=1]
 "ibmdb/python-ibmdb" -> "baztian/jaydebeapi"
+"jonatan-ivanov/local-services" -> "oracle/graalvm-reachability-metadata" ["e"=1]
 "jython/jython3" -> "jython/frozen-mirror"
 "jython/jython3" -> "jython/jython"
 "jython/jython3" -> "jython/book"
@@ -233,6 +268,9 @@ digraph G {
 "davidar/lljvm" -> "hyc/lljvm"
 "davidar/lljvm" -> "bedatadriven/gcc-bridge-example"
 "davidar/lljvm" -> "amishne/llvm-ir-editor"
+"caoccao/Javet" -> "oracle/graaljs" ["e"=1]
+"caoccao/Javet" -> "openjdk/nashorn" ["e"=1]
+"caoccao/Javet" -> "apigee/trireme" ["e"=1]
 "graalvm/native-build-tools" -> "oracle/graalvm-reachability-metadata"
 "graalvm/native-build-tools" -> "graalvm/setup-graalvm"
 "graalvm/native-build-tools" -> "graalvm/graalvm-demos"
@@ -270,6 +308,11 @@ digraph G {
 "apigee/apigee-management-api-postman" -> "apigee/apigee-deploy-maven-plugin"
 "apigee/apigee-management-api-postman" -> "apigee/apigeelint"
 "apigee/apigee-management-api-postman" -> "sidd-harth/apigee-cicd"
+"dselivanov/text2vec" -> "dselivanov/rsparse" ["e"=1]
+"ReadyTalk/avian" -> "graalvm/sulong" ["e"=1]
+"ReadyTalk/avian" -> "kaffe/kaffe" ["e"=1]
+"ReadyTalk/avian" -> "jnode/jnode" ["e"=1]
+"ReadyTalk/avian" -> "davidar/lljvm" ["e"=1]
 "smarr/are-we-fast-yet" -> "mikehearn/nodejvm"
 "nodyn/nodyn" -> "dynjs/dynjs"
 "nodyn/nodyn" -> "nodyn/jvm-npm"
@@ -316,6 +359,9 @@ digraph G {
 "javadelight/delight-rhino-sandbox" -> "javadelight/delight-graaljs-sandbox"
 "anil614sagar/openapi2apigee" -> "anil614sagar/apigee2openapi"
 "anil614sagar/openapi2apigee" -> "apigeecs/apigee-apimocker"
+"kivy/pyjnius" -> "jpype-project/jpype" ["e"=1]
+"kivy/pyjnius" -> "py4j/py4j" ["e"=1]
+"kivy/pyjnius" -> "ninia/jep" ["e"=1]
 "jpype-project/jpype" -> "py4j/py4j"
 "jpype-project/jpype" -> "kivy/pyjnius" ["e"=1]
 "jpype-project/jpype" -> "baztian/jaydebeapi"
@@ -332,9 +378,12 @@ digraph G {
 "GoogleCloudPlatform/apigee-samples" -> "apigee/devrel"
 "GoogleCloudPlatform/apigee-samples" -> "apigee/terraform-modules"
 "GoogleCloudPlatform/apigee-samples" -> "apigee/apigeecli"
+"eclipse-omr/omr" -> "graalvm/sulong" ["e"=1]
+"eclipse-omr/omr" -> "JikesRVM/JikesRVM" ["e"=1]
 "graalvm/mx" -> "graalvm/openjdk8-jvmci-builder"
 "graalvm/mx" -> "graalvm/graal-jvmci-8"
 "graalvm/mx" -> "graalvm/labs-openjdk-11"
+"ringo/ringojs" -> "dynjs/dynjs" ["e"=1]
 "oracle/graalvm-reachability-metadata" -> "graalvm/native-build-tools"
 "oracle/graalvm-reachability-metadata" -> "dashaun/paketo-arm64"
 "oracle/graalvm-reachability-metadata" -> "graalvm/graalvm-demos"
@@ -380,9 +429,15 @@ digraph G {
 "apigee/apigeelint" -> "anil614sagar/openapi2apigee"
 "apigee/apigeelint" -> "anil614sagar/apigee2openapi"
 "apigee/apigeelint" -> "apigee/api-platform-samples"
+"shinh/elvm" -> "davidar/lljvm" ["e"=1]
+"Stewori/pytypes" -> "Stewori/JyNI" ["e"=1]
+"dylibso/chicory" -> "oracle/graalvm-reachability-metadata" ["e"=1]
 "securesystemslab/zippy" -> "eregon/mozart-graal"
 "DinoChiesa/Apigee-Edge-OIDC-Demonstration" -> "apigeecs/apigee-apimocker"
 "DinoChiesa/Apigee-Edge-OIDC-Demonstration" -> "zeekhoo-okta/generator-okta-oidc-apigee"
+"s-macke/jor1k" -> "ianopolous/JPC" ["e"=1]
+"pypy/pypy" -> "oracle/graalpython" ["e"=1]
+"mukel/llama3.java" -> "oracle/graalvm-reachability-metadata" ["e"=1]
 "bedatadriven/renjin" -> "yannrichet/rsession"
 "bedatadriven/renjin" -> "allr/purdue-fastr"
 "bedatadriven/renjin" -> "s-u/Rserve"
@@ -432,33 +487,35 @@ digraph G {
 "dselivanov/rsparse" -> "dselivanov/FTRL"
 "dselivanov/rsparse" -> "rexyai/RestRserve"
 "dselivanov/rsparse" -> "dselivanov/mlapi"
+"wvengen/proguard-maven-plugin" ["l"="-34.597,-12.53", "c"=535]
+"graalvm/native-build-tools" ["l"="-2.063,10.577"]
 "py4j/py4j" ["l"="-1.896,10.62"]
 "jpype-project/jpype" ["l"="-1.89,10.656"]
 "ninia/jep" ["l"="-1.92,10.645"]
-"kivy/pyjnius" ["l"="41.714,20.764"]
+"kivy/pyjnius" ["l"="41.714,20.764", "c"=1040]
 "bcdev/jpy" ["l"="-1.923,10.684"]
 "jython/frozen-mirror" ["l"="-1.948,10.637"]
 "oracle/graalpython" ["l"="-1.942,10.546"]
-"almond-sh/almond" ["l"="-2.79,18.698"]
+"almond-sh/almond" ["l"="-2.79,18.698", "c"=38]
 "jython/jython" ["l"="-1.928,10.594"]
-"fommil/netlib-java" ["l"="-2.444,17.266"]
-"apache/incubator-livy" ["l"="-2.557,17.074"]
+"fommil/netlib-java" ["l"="-2.444,17.266", "c"=455]
+"apache/incubator-livy" ["l"="-2.557,17.074", "c"=455]
 "LeeKamentsky/python-javabridge" ["l"="-1.854,10.641"]
-"databricks/tensorframes" ["l"="-2.607,17.167"]
-"delta-io/delta-sharing" ["l"="-1.665,17.562"]
-"databricks/spark-perf" ["l"="-2.486,14.764"]
-"jupyter-incubator/sparkmagic" ["l"="-2.639,17.119"]
-"baztian/jaydebeapi" ["l"="-1.864,10.733"]
-"laughingman7743/PyAthenaJDBC" ["l"="11.654,-2.758"]
-"ibmdb/python-ibmdb" ["l"="-1.846,10.791"]
+"databricks/tensorframes" ["l"="-2.607,17.167", "c"=455]
+"delta-io/delta-sharing" ["l"="-1.665,17.562", "c"=1046]
+"databricks/spark-perf" ["l"="-2.486,14.764", "c"=43]
+"jupyter-incubator/sparkmagic" ["l"="-2.639,17.119", "c"=455]
+"mozilla/rhino" ["l"="56.987,-12.169", "c"=216]
 "oracle/graaljs" ["l"="-1.968,10.447"]
 "openjdk/nashorn" ["l"="-1.991,10.404"]
-"reactiverse/es4x" ["l"="-5.25,11.704"]
+"baztian/jaydebeapi" ["l"="-1.864,10.733"]
+"laughingman7743/PyAthenaJDBC" ["l"="11.654,-2.758", "c"=873]
+"ibmdb/python-ibmdb" ["l"="-1.846,10.791"]
+"reactiverse/es4x" ["l"="-5.25,11.704", "c"=928]
 "graalvm/simplelanguage" ["l"="-1.975,10.486"]
-"eclipsesource/J2V8" ["l"="57.058,-12.098"]
-"mozilla/rhino" ["l"="56.987,-12.169"]
-"oracle/graal" ["l"="-2.649,11.987"]
-"caoccao/Javet" ["l"="56.898,-12.143"]
+"eclipsesource/J2V8" ["l"="57.058,-12.098", "c"=216]
+"oracle/graal" ["l"="-2.649,11.987", "c"=15]
+"caoccao/Javet" ["l"="56.898,-12.143", "c"=216]
 "oracle/fastr" ["l"="-1.915,10.443"]
 "graalvm/graal-js-jdk11-maven-demo" ["l"="-1.969,10.38"]
 "graalvm/mx" ["l"="-1.959,10.496"]
@@ -466,35 +523,40 @@ digraph G {
 "wizawu/tyrian" ["l"="-1.94,10.401"]
 "javadelight/delight-nashorn-sandbox" ["l"="-1.993,10.361"]
 "graalvm/sulong" ["l"="-1.935,10.475"]
-"scalapy/scalapy" ["l"="-2.721,18.848"]
+"dflib/dflib" ["l"="-5.215,10.781", "c"=452]
+"tginsberg/gatherers4j" ["l"="-2.148,10.56"]
+"opencpu/opencpu" ["l"="40.524,35.238", "c"=51]
+"s-u/Rserve" ["l"="-1.808,10.364"]
+"jneen/balls" ["l"="2.532,-35.662", "c"=171]
+"dynjs/dynjs" ["l"="-2.094,10.168"]
+"scalapy/scalapy" ["l"="-2.721,18.848", "c"=38]
 "Stewori/JyNI" ["l"="-1.94,10.666"]
 "jpy-consortium/jpy" ["l"="-1.903,10.695"]
-"tensorflow/java" ["l"="-5.748,15.333"]
-"eaplatanios/tensorflow_scala" ["l"="-2.795,18.718"]
-"vegas-viz/Vegas" ["l"="-2.829,18.736"]
-"deeplearning4j/nd4j" ["l"="-5.295,10.622"]
-"bytedeco/javacpp" ["l"="-5.456,10.65"]
-"deepjavalibrary/djl" ["l"="45.833,2.384"]
-"Stewori/pytypes" ["l"="45.149,21.359"]
+"tensorflow/java" ["l"="-5.748,15.333", "c"=1161]
+"eaplatanios/tensorflow_scala" ["l"="-2.795,18.718", "c"=38]
+"vegas-viz/Vegas" ["l"="-2.829,18.736", "c"=38]
+"deeplearning4j/nd4j" ["l"="-5.295,10.622", "c"=452]
+"bytedeco/javacpp" ["l"="-5.456,10.65", "c"=452]
+"deepjavalibrary/djl" ["l"="45.833,2.384", "c"=574]
+"Stewori/pytypes" ["l"="45.149,21.359", "c"=20]
 "bcdev/jzarr" ["l"="-1.944,10.709"]
 "forman/extendit" ["l"="-1.938,10.722"]
 "bcdev/zappend" ["l"="-1.923,10.72"]
-"xcube-dev/xcube" ["l"="40.587,25.41"]
+"xcube-dev/xcube" ["l"="40.587,25.41", "c"=420]
 "rexyai/RestRserve" ["l"="-1.744,10.334"]
-"s-u/Rserve" ["l"="-1.808,10.364"]
 "dselivanov/rsparse" ["l"="-1.696,10.329"]
-"ambiorix-web/ambiorix" ["l"="42.452,35.484"]
+"ambiorix-web/ambiorix" ["l"="42.452,35.484", "c"=849]
 "r-hub/r-minimal" ["l"="-1.73,10.304"]
-"r-lib/httr2" ["l"="40.601,35.243"]
-"rstudio/promises" ["l"="40.519,35.155"]
-"JosiahParry/valve" ["l"="40.725,35.177"]
+"r-lib/httr2" ["l"="40.601,35.243", "c"=51]
+"rstudio/promises" ["l"="40.519,35.155", "c"=51]
+"JosiahParry/valve" ["l"="40.725,35.177", "c"=51]
+"hpyproject/hpy" ["l"="45.176,21.118", "c"=20]
 "jython/jython3" ["l"="-1.948,10.61"]
-"hpyproject/hpy" ["l"="45.176,21.118"]
 "securesystemslab/zippy" ["l"="-1.887,10.552"]
 "neomatrix369/awesome-graal" ["l"="-1.937,10.506"]
-"beehive-lab/TornadoVM" ["l"="-5.873,10.423"]
-"mypyc/mypyc" ["l"="45.125,21.094"]
-"pypy/pypy" ["l"="45.164,21.164"]
+"beehive-lab/TornadoVM" ["l"="-5.873,10.423", "c"=452]
+"mypyc/mypyc" ["l"="45.125,21.094", "c"=20]
+"pypy/pypy" ["l"="45.164,21.164", "c"=20]
 "kaffe/kaffe" ["l"="-2.101,10.421"]
 "jatovm/jato" ["l"="-2.144,10.435"]
 "JikesRVM/JikesRVM" ["l"="-2.083,10.382"]
@@ -508,22 +570,24 @@ digraph G {
 "waldheinz/fat32-lib" ["l"="-2.154,10.348"]
 "qmx/jitescript" ["l"="-2.144,10.164"]
 "headius/bitescript" ["l"="-2.169,10.157"]
+"NVIDIA/grcuda" ["l"="-1.87,10.525"]
 "s-u/REngine" ["l"="-1.781,10.373"]
 "s-u/rJava" ["l"="-1.808,10.387"]
-"rstudio/httpuv" ["l"="40.416,35.113"]
-"yihui/servr" ["l"="42.319,35.595"]
-"ixpantia/faucet" ["l"="40.778,35.093"]
+"rstudio/httpuv" ["l"="40.416,35.113", "c"=51]
+"yihui/servr" ["l"="42.319,35.595", "c"=849]
+"ixpantia/faucet" ["l"="40.778,35.093", "c"=51]
 "s-u/FastRWeb" ["l"="-1.789,10.341"]
-"graalvm/native-build-tools" ["l"="-2.063,10.577"]
+"ObjectLayout/ObjectLayout" ["l"="-5.646,10.423", "c"=452]
+"graalvm/graal-core" ["l"="-1.915,10.492"]
 "oracle/graalvm-reachability-metadata" ["l"="-2.084,10.555"]
 "graalvm/graalvm-ce-dev-builds" ["l"="-2.043,10.534"]
-"graalvm/graalvm-ce-builds" ["l"="-2.623,11.923"]
+"graalvm/graalvm-ce-builds" ["l"="-2.623,11.923", "c"=15]
 "jonashackt/spring-boot-graalvm" ["l"="-2.03,10.562"]
 "graalvm/labs-openjdk-11" ["l"="-1.948,10.524"]
 "graalvm/container" ["l"="-2.06,10.513"]
 "graalvm/graalvm-ten-things" ["l"="-2.02,10.589"]
-"spring-attic/spring-native" ["l"="-2.451,11.895"]
-"aws-samples/serverless-graalvm-demo" ["l"="-5.348,9.491"]
+"spring-attic/spring-native" ["l"="-2.451,11.895", "c"=15]
+"aws-samples/serverless-graalvm-demo" ["l"="-5.348,9.491", "c"=703]
 "s-u/RJDBC" ["l"="-1.775,10.403"]
 "ibmdb/node-ibm_db" ["l"="-1.863,10.828"]
 "tryggingamidstodin/node-jt400" ["l"="-1.869,10.861"]
@@ -543,6 +607,7 @@ digraph G {
 "nodyn/nodyn" ["l"="-2.052,10.192"]
 "provegard/nashorn-require" ["l"="-2.018,10.28"]
 "javadelight/delight-graaljs-sandbox" ["l"="-1.975,10.348"]
+"wind2412/wind_jvm" ["l"="-3.201,11.194", "c"=15]
 "aliceinapiland/virtual-apijam" ["l"="-1.945,9.879"]
 "aliceinapiland/AdvancedVirtualAPIJam" ["l"="-1.962,9.9"]
 "javadelight/delight-rhino-sandbox" ["l"="-1.988,10.333"]
@@ -551,24 +616,28 @@ digraph G {
 "apichick/apigee-dev-training" ["l"="-2.091,9.913"]
 "g-lalevee/apigee-cicd" ["l"="-2.097,9.93"]
 "lobobrowser/LoboBrowser" ["l"="-2.23,10.298"]
+"hollingsworthd/jBrowserDriver" ["l"="-1.944,-0.389", "c"=224]
+"gngrOrg/gngr" ["l"="-2.256,10.333"]
+"zxh0/jvm.go" ["l"="-3.06,11.667", "c"=15]
 "jython/jython-bad-history" ["l"="-1.972,10.624"]
-"IronLanguages/ironpython3" ["l"="-34.876,-1.369"]
-"openjdk/jfx" ["l"="0.162,10.068"]
+"IronLanguages/ironpython3" ["l"="-34.876,-1.369", "c"=8]
+"openjdk/jfx" ["l"="0.162,10.068", "c"=220]
 "jython/book" ["l"="-1.965,10.594"]
-"luaj/luaj" ["l"="56.742,-12.359"]
-"beanshell/beanshell" ["l"="-50.756,11.877"]
+"luaj/luaj" ["l"="56.742,-12.359", "c"=216]
+"beanshell/beanshell" ["l"="-50.756,11.877", "c"=974]
+"IntelLabs/RiverTrail" ["l"="2.099,-34.349", "c"=156]
+"Hakky54/sslcontext-kickstart" ["l"="-2.357,9.506", "c"=878]
 "datasketch/shinypanels" ["l"="-1.716,10.273"]
 "MPh-py/MPh" ["l"="-1.815,10.69"]
 "fellobos/cmphy" ["l"="-1.781,10.69"]
-"deng-cy/deep_learning_topology_opt" ["l"="62.679,-1.23"]
+"deng-cy/deep_learning_topology_opt" ["l"="62.679,-1.23", "c"=175]
 "Hahany/comsol" ["l"="-1.789,10.715"]
-"ethz-pes/AI-mag" ["l"="-4.471,21.417"]
+"ethz-pes/AI-mag" ["l"="-4.471,21.417", "c"=276]
 "DinoChiesa/EdgeTools" ["l"="-2.027,9.997"]
 "DinoChiesa/apigee-edge-js" ["l"="-2.025,9.981"]
 "anil614sagar/openapi2apigee" ["l"="-2.077,9.974"]
-"NVIDIA/grcuda" ["l"="-1.87,10.525"]
+"nurv/BicaVM" ["l"="2.212,-34.304", "c"=156]
 "mikehearn/nodejvm" ["l"="-1.799,10.539"]
-"dynjs/dynjs" ["l"="-2.094,10.168"]
 "szegedi/dynalink" ["l"="-2.121,10.14"]
 "ThreeTen/threeten" ["l"="-2.091,10.133"]
 "apickli/apickli" ["l"="-2.066,9.939"]
@@ -580,7 +649,6 @@ digraph G {
 "apigee/terraform-modules" ["l"="-2.101,9.945"]
 "apigee/ahr" ["l"="-2.115,9.953"]
 "srinandan/apigeecli" ["l"="-2.064,9.918"]
-"gngrOrg/gngr" ["l"="-2.256,10.333"]
 "philborlin/CSSBox" ["l"="-2.285,10.334"]
 "dzuluaga/apigee-tutorials" ["l"="-2.105,10.011"]
 "apigeecs/apigee-deploy-grunt-plugin" ["l"="-2.139,10.013"]
@@ -591,14 +659,23 @@ digraph G {
 "OracleLabs/Truffle" ["l"="-1.896,10.476"]
 "DeLaGuardo/setup-graalvm" ["l"="-2.117,10.649"]
 "rinx/setup-graalvm-ce" ["l"="-2.134,10.67"]
+"cincheo/jsweet" ["l"="-11.323,4.993", "c"=983]
+"kcuilla/reactablefmtr" ["l"="42.537,35.376", "c"=849]
+"pyston/pyston" ["l"="45.111,21.047", "c"=20]
+"joeferner/node-java" ["l"="-11.16,4.947", "c"=983]
+"apigee/trireme" ["l"="-2.042,10.145"]
+"chrisseaton/rhizome" ["l"="4.033,-37.612", "c"=1]
+"Shopify/seafoam" ["l"="-2.002,10.474"]
+"winterbe/spring-react-example" ["l"="25.648,-30.523", "c"=176]
 "ibmdb/python-ibmdbsa" ["l"="-1.808,10.798"]
 "DB2-Samples/db2jupyter" ["l"="-1.843,10.816"]
 "ibmdb/python-ibmdb-django" ["l"="-1.822,10.78"]
 "IBM/db2-python" ["l"="-1.826,10.828"]
 "IBM/sqlalchemy-ibmi" ["l"="-1.823,10.808"]
-"ibmdb/go_ibm_db" ["l"="3.268,-9.348"]
-"IBM/ibmi-oss-examples" ["l"="55.426,-12.598"]
-"jython/jython.github.io" ["l"="-18.985,-25.792"]
+"ibmdb/go_ibm_db" ["l"="3.268,-9.348", "c"=0]
+"IBM/ibmi-oss-examples" ["l"="55.426,-12.598", "c"=25]
+"jonatan-ivanov/local-services" ["l"="-2.026,11.82", "c"=15]
+"jython/jython.github.io" ["l"="-18.985,-25.792", "c"=10]
 "davidar/jasmin" ["l"="-1.921,10.251"]
 "davidar/lljvm" ["l"="-1.94,10.297"]
 "maropu/lljvm-translator" ["l"="-1.907,10.28"]
@@ -608,45 +685,49 @@ digraph G {
 "graalvm/setup-graalvm" ["l"="-2.091,10.616"]
 "cesquivias/mumbler" ["l"="-2.03,10.481"]
 "skinny85/graalvm-truffle-tutorial" ["l"="-2.009,10.495"]
-"graalvm/graal-core" ["l"="-1.915,10.492"]
 "graalvm/simpletool" ["l"="-2,10.457"]
-"flight-recorder/health-report" ["l"="-5.668,10.335"]
-"hpi-swa/trufflesqueak" ["l"="-21.847,-21.664"]
+"flight-recorder/health-report" ["l"="-5.668,10.335", "c"=452]
+"hpi-swa/trufflesqueak" ["l"="-21.847,-21.664", "c"=474]
 "apigee/edge-gcp" ["l"="-2.027,9.93"]
 "apigeecs/apigee-apimocker" ["l"="-2.08,9.927"]
 "dashaun/paketo-arm64" ["l"="-2.127,10.585"]
 "dmikusa/paketo-arm64" ["l"="-2.152,10.603"]
-"wind2412/wind_jvm" ["l"="-3.201,11.194"]
 "apigee/apigee-proxy-coverage" ["l"="-2.032,9.913"]
+"dselivanov/text2vec" ["l"="40.364,35.443", "c"=51]
+"ReadyTalk/avian" ["l"="-11.254,5.072", "c"=983]
 "smarr/are-we-fast-yet" ["l"="-1.748,10.548"]
-"apigee/trireme" ["l"="-2.042,10.145"]
 "graalvm/graalvm" ["l"="-1.891,10.489"]
 "eregon/mozart-graal" ["l"="-1.9,10.517"]
 "roscopeco/jasm" ["l"="-1.9,10.207"]
-"r-lib/coro" ["l"="40.835,35.188"]
-"extendr/extendr" ["l"="40.666,35.218"]
+"r-lib/coro" ["l"="40.835,35.188", "c"=51]
+"extendr/extendr" ["l"="40.666,35.218", "c"=51]
 "graalvm/fastr-examples" ["l"="-1.908,10.467"]
-"DiskFrame/disk.frame" ["l"="40.596,35.307"]
+"DiskFrame/disk.frame" ["l"="40.596,35.307", "c"=51]
 "kalibera/rchk" ["l"="-1.876,10.425"]
-"fstpackage/fst" ["l"="40.557,35.309"]
-"r-lib/memoise" ["l"="40.534,35.168"]
+"fstpackage/fst" ["l"="40.557,35.309", "c"=51]
+"r-lib/memoise" ["l"="40.534,35.168", "c"=51]
 "bedatadriven/renjin" ["l"="-1.871,10.364"]
-"r-lib/rlang" ["l"="40.509,35.276"]
-"r-lib/cpp11" ["l"="40.589,35.204"]
-"nstrayer/shinysense" ["l"="42.327,35.477"]
+"r-lib/rlang" ["l"="40.509,35.276", "c"=51]
+"r-lib/cpp11" ["l"="40.589,35.204", "c"=51]
+"nstrayer/shinysense" ["l"="42.327,35.477", "c"=849]
 "h0MER247/jPC" ["l"="-2.084,10.306"]
 "anil614sagar/apigee2openapi" ["l"="-2.081,9.994"]
 "tcalmant/jpype-py3" ["l"="-1.863,10.68"]
-"tginsberg/gatherers4j" ["l"="-2.148,10.56"]
+"eclipse-omr/omr" ["l"="-0.637,9.199", "c"=320]
+"ringo/ringojs" ["l"="56.843,-11.967", "c"=216]
 "spring-tips/spring-boot-3-aot" ["l"="-2.121,10.545"]
 "mhahsler/recommenderlab" ["l"="-1.648,10.327"]
 "apigee/apijam" ["l"="-2.025,9.96"]
+"shinh/elvm" ["l"="-21.992,-23.353", "c"=496]
+"dylibso/chicory" ["l"="-11.258,4.915", "c"=983]
 "DinoChiesa/Apigee-Edge-OIDC-Demonstration" ["l"="-2.097,9.891"]
 "zeekhoo-okta/generator-okta-oidc-apigee" ["l"="-2.107,9.87"]
+"s-macke/jor1k" ["l"="-0.439,-36.597", "c"=498]
+"mukel/llama3.java" ["l"="45.993,2.231", "c"=574]
 "yannrichet/rsession" ["l"="-1.843,10.348"]
 "allr/purdue-fastr" ["l"="-1.846,10.378"]
 "jbytecode/rcaller" ["l"="-1.871,10.325"]
-"r-lib/R6" ["l"="40.511,35.217"]
+"r-lib/R6" ["l"="40.511,35.217", "c"=51]
 "Alipsa/ride" ["l"="-1.889,10.345"]
 "bedatadriven/renjin-docs" ["l"="-1.862,10.343"]
 "radfordneal/pqR" ["l"="-1.843,10.32"]
@@ -658,7 +739,6 @@ digraph G {
 "while/FTRLProximal" ["l"="-1.653,10.284"]
 "apigee/apigee-partner-se-bootcamp" ["l"="-1.995,9.988"]
 "beehive-lab/MaxSim" ["l"="-2.064,10.447"]
-"Shopify/seafoam" ["l"="-2.002,10.474"]
 "rmistry75/devjam3" ["l"="-1.985,9.925"]
 "arodchen/MaxSim" ["l"="-2.087,10.457"]
 "dselivanov/mlapi" ["l"="-1.674,10.35"]

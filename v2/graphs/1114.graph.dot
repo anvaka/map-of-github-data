@@ -1,4 +1,6 @@
 digraph G {
+"rpardini/docker-registry-proxy" -> "democratic-csi/democratic-csi" ["e"=1]
+"metal3-io/baremetal-operator" -> "siderolabs/sidero" ["e"=1]
 "PyratLabs/ansible-role-k3s" -> "k3s-io/k3s-ansible"
 "PyratLabs/ansible-role-k3s" -> "onedr0p/cluster-template"
 "PyratLabs/ansible-role-k3s" -> "onedr0p/home-ops"
@@ -32,7 +34,13 @@ digraph G {
 "postfinance/kubenurse" -> "postfinance/kubelet-csr-approver"
 "postfinance/kubenurse" -> "postfinance/kubectl-sudo"
 "siderolabs/bldr" -> "siderolabs/pkgs"
+"githubixx/ansible-role-wireguard" -> "PyratLabs/ansible-role-k3s" ["e"=1]
 "kontena/kubelet-rubber-stamp" -> "postfinance/kubelet-csr-approver"
+"pabloromeo/clusterplex" -> "bjw-s-labs/helm-charts" ["e"=1]
+"pabloromeo/clusterplex" -> "toboshii/hajimari" ["e"=1]
+"pabloromeo/clusterplex" -> "onedr0p/containers" ["e"=1]
+"eko/pihole-exporter" -> "MoJo2600/pihole-kubernetes" ["e"=1]
+"alexellis/k8s-on-raspbian" -> "carlosedp/cluster-monitoring" ["e"=1]
 "carlosedp/cluster-monitoring" -> "MoJo2600/pihole-kubernetes"
 "carlosedp/cluster-monitoring" -> "k3s-io/k3s-ansible"
 "carlosedp/cluster-monitoring" -> "geerlingguy/turing-pi-cluster"
@@ -48,6 +56,8 @@ digraph G {
 "carlosedp/cluster-monitoring" -> "PyratLabs/ansible-role-k3s"
 "carlosedp/cluster-monitoring" -> "alexellis/arkade" ["e"=1]
 "carlosedp/cluster-monitoring" -> "geerlingguy/ansible-for-kubernetes" ["e"=1]
+"zimmertr/TJs-Kubernetes-Service" -> "kubebn/talos-proxmox-kaas" ["e"=1]
+"zimmertr/TJs-Kubernetes-Service" -> "k8s-at-home/awesome-home-kubernetes" ["e"=1]
 "nmaupu/freenas-provisioner" -> "travisghansen/freenas-iscsi-provisioner"
 "billimek/k8s-gitops" -> "bjw-s-labs/home-ops"
 "billimek/k8s-gitops" -> "carpenike/k8s-gitops"
@@ -64,7 +74,11 @@ digraph G {
 "billimek/k8s-gitops" -> "anthr76/infra"
 "billimek/k8s-gitops" -> "bjw-s-labs/helm-charts"
 "billimek/k8s-gitops" -> "samip5/k8s-cluster"
+"piraeusdatastore/piraeus-operator" -> "cozystack/talos-bootstrap" ["e"=1]
+"geerlingguy/ansible-for-kubernetes" -> "k3s-io/k3s-ansible" ["e"=1]
 "billimek/billimek-charts" -> "onedr0p/k3s-homeops-ansible"
+"brancz/kube-rbac-proxy" -> "postfinance/kubelet-csr-approver" ["e"=1]
+"kubernetes-sigs/image-builder" -> "ionos-cloud/cluster-api-provider-proxmox" ["e"=1]
 "siderolabs/pkgs" -> "siderolabs/tools"
 "wrmilling/k3s-gitops" -> "carpenike/k8s-gitops"
 "wrmilling/k3s-gitops" -> "haraldkoch/kochhaus-home"
@@ -96,7 +110,12 @@ digraph G {
 "brettinternet/homeops" -> "carpenike/k8s-gitops"
 "brettinternet/homeops" -> "coolguy1771/home-ops"
 "brettinternet/homeops" -> "JJGadgets/Biohazard"
+"0xERR0R/blocky" -> "onedr0p/home-ops" ["e"=1]
 "siderolabs/kubelet" -> "onedr0p/charts-mirror"
+"tinkerbell/tink" -> "siderolabs/sidero" ["e"=1]
+"alexellis/k3sup" -> "k3s-io/k3s-ansible" ["e"=1]
+"alexellis/k3sup" -> "onedr0p/home-ops" ["e"=1]
+"alexellis/k3sup" -> "onedr0p/cluster-template" ["e"=1]
 "k3s-io/k3s-ansible" -> "techno-tim/k3s-ansible" ["e"=1]
 "k3s-io/k3s-ansible" -> "PyratLabs/ansible-role-k3s"
 "k3s-io/k3s-ansible" -> "carlosedp/cluster-monitoring"
@@ -112,6 +131,13 @@ digraph G {
 "k3s-io/k3s-ansible" -> "k3s-io/k3s" ["e"=1]
 "k3s-io/k3s-ansible" -> "k3d-io/k3d" ["e"=1]
 "k3s-io/k3s-ansible" -> "bpg/terraform-provider-proxmox" ["e"=1]
+"techno-tim/techno-tim.github.io" -> "onedr0p/cluster-template" ["e"=1]
+"khuedoan/homelab" -> "onedr0p/home-ops" ["e"=1]
+"khuedoan/homelab" -> "onedr0p/cluster-template" ["e"=1]
+"khuedoan/homelab" -> "toboshii/hajimari" ["e"=1]
+"khuedoan/homelab" -> "k8s-at-home/awesome-home-kubernetes" ["e"=1]
+"khuedoan/homelab" -> "k8s-at-home/charts" ["e"=1]
+"kubernetes-csi/csi-driver-smb" -> "democratic-csi/democratic-csi" ["e"=1]
 "onedr0p/home-ops" -> "onedr0p/cluster-template"
 "onedr0p/home-ops" -> "bjw-s-labs/home-ops"
 "onedr0p/home-ops" -> "billimek/k8s-gitops"
@@ -142,6 +168,7 @@ digraph G {
 "democratic-csi/democratic-csi" -> "onedr0p/cluster-template"
 "democratic-csi/democratic-csi" -> "bjw-s-labs/home-ops"
 "democratic-csi/democratic-csi" -> "hpe-storage/truenas-csp"
+"paultyng/terraform-provider-unifi" -> "kashalls/external-dns-unifi-webhook" ["e"=1]
 "openllb/hlb" -> "siderolabs/bldr"
 "k8s-at-home/charts" -> "k8s-at-home/awesome-home-kubernetes"
 "k8s-at-home/charts" -> "bjw-s-labs/helm-charts"
@@ -158,6 +185,11 @@ digraph G {
 "k8s-at-home/charts" -> "k8s-at-home/container-images"
 "k8s-at-home/charts" -> "truecharts/public" ["e"=1]
 "k8s-at-home/charts" -> "k3s-io/k3s-ansible"
+"traefik/traefik-helm-chart" -> "democratic-csi/democratic-csi" ["e"=1]
+"openebs/zfs-localpv" -> "democratic-csi/democratic-csi" ["e"=1]
+"alexellis/awesome-baremetal" -> "onedr0p/cluster-template" ["e"=1]
+"rancher/system-upgrade-controller" -> "democratic-csi/democratic-csi" ["e"=1]
+"rancher/system-upgrade-controller" -> "k8s-at-home/charts" ["e"=1]
 "xunholy/k8s-gitops" -> "carpenike/k8s-gitops"
 "xunholy/k8s-gitops" -> "billimek/k8s-gitops"
 "xunholy/k8s-gitops" -> "bjw-s-labs/home-ops"
@@ -179,6 +211,11 @@ digraph G {
 "ori-edge/k8s_gateway" -> "allenporter/flux-local"
 "ori-edge/k8s_gateway" -> "siderolabs/awesome-talos"
 "ori-edge/k8s_gateway" -> "bjw-s-labs/helm-charts"
+"tarampampam/error-pages" -> "toboshii/hajimari" ["e"=1]
+"tarampampam/error-pages" -> "bjw-s-labs/helm-charts" ["e"=1]
+"tarampampam/error-pages" -> "bjw-s-labs/home-ops" ["e"=1]
+"onedr0p/exportarr" -> "onedr0p/containers" ["e"=1]
+"onedr0p/exportarr" -> "bjw-s-labs/helm-charts" ["e"=1]
 "bjw-s-labs/home-ops" -> "onedr0p/home-ops"
 "bjw-s-labs/home-ops" -> "billimek/k8s-gitops"
 "bjw-s-labs/home-ops" -> "bjw-s-labs/helm-charts"
@@ -209,6 +246,7 @@ digraph G {
 "siderolabs/sidero" -> "budimanjojo/talhelper"
 "siderolabs/sidero" -> "talos-systems/arges"
 "siderolabs/sidero" -> "cozystack/talm"
+"nextcloud/helm" -> "democratic-csi/democratic-csi" ["e"=1]
 "colin-mccarthy/k3s-pi-hole" -> "ivanmorenoj/k3s-pihole-wireguard"
 "siderolabs/cluster-api-bootstrap-provider-talos" -> "siderolabs/cluster-api-control-plane-provider-talos"
 "carpenike/k8s-gitops" -> "auricom/home-ops"
@@ -232,6 +270,7 @@ digraph G {
 "squat/generic-device-plugin" -> "kashalls/external-dns-unifi-webhook"
 "squat/generic-device-plugin" -> "gabe565/charts"
 "squat/generic-device-plugin" -> "kashalls/kromgo"
+"dy2k/proxmox-kubernetes" -> "NatiSayada/k3s-proxmox-terraform-ansible" ["e"=1]
 "siderolabs/cluster-api-control-plane-provider-talos" -> "siderolabs/cluster-api-bootstrap-provider-talos"
 "blackjid/home-ops" -> "h3mmy/bloopySphere"
 "blackjid/home-ops" -> "haraldkoch/kochhaus-home"
@@ -249,6 +288,23 @@ digraph G {
 "kubealex/k8s-mediaserver-operator" -> "kubealex/libvirt-k8s-provisioner" ["e"=1]
 "kubealex/k8s-mediaserver-operator" -> "onedr0p/containers"
 "kubealex/k8s-mediaserver-operator" -> "k8s-at-home/awesome-home-kubernetes"
+"techno-tim/launchpad" -> "onedr0p/cluster-template" ["e"=1]
+"techno-tim/launchpad" -> "onedr0p/home-ops" ["e"=1]
+"geerlingguy/kubernetes-101" -> "geerlingguy/turing-pi-cluster" ["e"=1]
+"geerlingguy/kubernetes-101" -> "k3s-io/k3s-ansible" ["e"=1]
+"backube/volsync" -> "allenporter/flux-local" ["e"=1]
+"backube/volsync" -> "whazor/k8s-at-home-search" ["e"=1]
+"backube/volsync" -> "bjw-s-labs/helm-charts" ["e"=1]
+"backube/volsync" -> "kashalls/kromgo" ["e"=1]
+"backube/volsync" -> "szinn/k8s-homelab" ["e"=1]
+"backube/volsync" -> "onedr0p/containers" ["e"=1]
+"backube/volsync" -> "onedr0p/cluster-template" ["e"=1]
+"backube/volsync" -> "joryirving/home-ops" ["e"=1]
+"backube/volsync" -> "onedr0p/home-ops" ["e"=1]
+"backube/volsync" -> "truxnell/home-cluster" ["e"=1]
+"erebe/personal-server" -> "onedr0p/home-ops" ["e"=1]
+"erebe/personal-server" -> "onedr0p/cluster-template" ["e"=1]
+"erebe/personal-server" -> "k8s-at-home/charts" ["e"=1]
 "auricom/home-ops" -> "haraldkoch/kochhaus-home"
 "auricom/home-ops" -> "h3mmy/bloopySphere"
 "auricom/home-ops" -> "joryirving/home-ops"
@@ -279,6 +335,12 @@ digraph G {
 "onedr0p/cluster-template" -> "whazor/k8s-at-home-search"
 "onedr0p/cluster-template" -> "auricom/home-ops"
 "onedr0p/cluster-template" -> "backube/volsync" ["e"=1]
+"lablabs/ansible-role-rke2" -> "axivo/k3s-cluster" ["e"=1]
+"lablabs/ansible-role-rke2" -> "PyratLabs/ansible-role-k3s" ["e"=1]
+"geerlingguy/raspberry-pi-dramble" -> "carlosedp/cluster-monitoring" ["e"=1]
+"geerlingguy/raspberry-pi-dramble" -> "k3s-io/k3s-ansible" ["e"=1]
+"geerlingguy/raspberry-pi-dramble" -> "geerlingguy/turing-pi-cluster" ["e"=1]
+"bluxmit/alnoda-workspaces" -> "onedr0p/cluster-template" ["e"=1]
 "toboshii/hajimari" -> "whazor/k8s-at-home-search"
 "toboshii/hajimari" -> "bjw-s-labs/helm-charts"
 "toboshii/hajimari" -> "bjw-s-labs/home-ops"
@@ -294,6 +356,13 @@ digraph G {
 "toboshii/hajimari" -> "backube/volsync" ["e"=1]
 "toboshii/hajimari" -> "angelnu/k8s-gitops"
 "toboshii/hajimari" -> "billimek/k8s-gitops"
+"truecharts/public" -> "k8s-at-home/charts" ["e"=1]
+"truecharts/public" -> "bjw-s-labs/helm-charts" ["e"=1]
+"truecharts/public" -> "bjw-s-labs/home-ops" ["e"=1]
+"truecharts/public" -> "onedr0p/cluster-template" ["e"=1]
+"truecharts/public" -> "onedr0p/home-ops" ["e"=1]
+"fluxcd/flux2-kustomize-helm-example" -> "onedr0p/cluster-template" ["e"=1]
+"fluxcd/flux2-kustomize-helm-example" -> "xunholy/k8s-gitops" ["e"=1]
 "ivanmorenoj/k3s-pihole-wireguard" -> "colin-mccarthy/k3s-pi-hole"
 "k8s-at-home/awesome-home-kubernetes" -> "k8s-at-home/charts"
 "k8s-at-home/awesome-home-kubernetes" -> "billimek/k8s-gitops"
@@ -313,9 +382,12 @@ digraph G {
 "coolguy1771/home-ops" -> "haraldkoch/kochhaus-home"
 "coolguy1771/home-ops" -> "snoopy82481/home_cluster"
 "coolguy1771/home-ops" -> "jfroy/flatops"
+"syself/cluster-api-provider-hetzner" -> "ionos-cloud/cluster-api-provider-proxmox" ["e"=1]
+"syself/cluster-api-provider-hetzner" -> "siderolabs/cluster-api-bootstrap-provider-talos" ["e"=1]
 "k8s-at-home/container-images" -> "anthr76/infra"
 "k8s-at-home/container-images" -> "dirtycajunrice/gitops"
 "k8s-at-home/container-images" -> "carpenike/k8s-gitops"
+"BeryJu/korb" -> "cozystack/talm" ["e"=1]
 "ahgraber/homelab-gitops-k3s" -> "blackjid/home-ops"
 "ricsanfre/pi-cluster" -> "vehagn/homelab"
 "ricsanfre/pi-cluster" -> "auricom/home-ops"
@@ -487,6 +559,18 @@ digraph G {
 "vehagn/homelab" -> "sergelogvinov/terraform-talos"
 "vehagn/homelab" -> "axivo/k3s-cluster"
 "vehagn/homelab" -> "larivierec/home-cluster"
+"techno-tim/k3s-ansible" -> "k3s-io/k3s-ansible" ["e"=1]
+"techno-tim/k3s-ansible" -> "onedr0p/cluster-template" ["e"=1]
+"techno-tim/k3s-ansible" -> "onedr0p/home-ops" ["e"=1]
+"techno-tim/k3s-ansible" -> "PyratLabs/ansible-role-k3s" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "sergelogvinov/proxmox-csi-plugin" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "sergelogvinov/proxmox-cloud-controller-manager" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "siderolabs/terraform-provider-talos" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "onedr0p/cluster-template" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "k3s-io/k3s-ansible" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "ionos-cloud/cluster-api-provider-proxmox" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "roeldev/iac-talos-cluster" ["e"=1]
+"bpg/terraform-provider-proxmox" -> "jedrw/kproximate" ["e"=1]
 "whazor/k8s-at-home-search" -> "kashalls/kromgo"
 "whazor/k8s-at-home-search" -> "bjw-s-labs/home-ops"
 "whazor/k8s-at-home-search" -> "joryirving/home-ops"
@@ -502,6 +586,8 @@ digraph G {
 "whazor/k8s-at-home-search" -> "toboshii/hajimari"
 "whazor/k8s-at-home-search" -> "auricom/home-ops"
 "whazor/k8s-at-home-search" -> "xunholy/k8s-gitops"
+"munnerz/kube-plex" -> "k8s-at-home/charts" ["e"=1]
+"munnerz/kube-plex" -> "onedr0p/home-ops" ["e"=1]
 "budimanjojo/talhelper" -> "truxnell/home-cluster"
 "budimanjojo/talhelper" -> "bjw-s-labs/home-ops"
 "budimanjojo/talhelper" -> "buroa/k8s-gitops"
@@ -527,6 +613,7 @@ digraph G {
 "adyanth/cloudflare-operator" -> "BojanZelic/cloudflare-zero-trust-operator"
 "adyanth/cloudflare-operator" -> "pl4nty/cloudflare-kubernetes-gateway"
 "adyanth/cloudflare-operator" -> "cozystack/talm"
+"SynologyOpenSource/synology-csi" -> "democratic-csi/democratic-csi" ["e"=1]
 "ahinko/home-ops" -> "szinn/k8s-homelab"
 "ahinko/home-ops" -> "haraldkoch/kochhaus-home"
 "ahinko/home-ops" -> "budimanjojo/home-cluster"
@@ -542,7 +629,11 @@ digraph G {
 "ahinko/home-ops" -> "toboshii/home-ops"
 "ahinko/home-ops" -> "h3mmy/bloopySphere"
 "ahinko/home-ops" -> "rafaribe/home-ops"
+"jodevsa/wireguard-operator" -> "carpenike/k8s-gitops" ["e"=1]
+"jodevsa/wireguard-operator" -> "xunholy/k8s-gitops" ["e"=1]
+"datreeio/CRDs-catalog" -> "allenporter/flux-local" ["e"=1]
 "siderolabs/contrib" -> "sergelogvinov/terraform-talos"
+"smartxworks/virtink" -> "siderolabs/sidero" ["e"=1]
 "NatiSayada/k3s-proxmox-terraform-ansible" -> "fvumbaca/terraform-proxmox-k3s"
 "postfinance/kubelet-csr-approver" -> "kontena/kubelet-rubber-stamp"
 "postfinance/kubelet-csr-approver" -> "alex1989hu/kubelet-serving-cert-approver"
@@ -609,6 +700,9 @@ digraph G {
 "ehlesp/smallab-k8s-pve-guide" -> "buroa/k8s-gitops"
 "ehlesp/smallab-k8s-pve-guide" -> "zimmertr/TJs-Kubernetes-Service" ["e"=1]
 "ehlesp/smallab-k8s-pve-guide" -> "lisenet/kubernetes-homelab"
+"geerlingguy/pi-cluster" -> "geerlingguy/turing-pi-cluster" ["e"=1]
+"mariadb-operator/mariadb-operator" -> "democratic-csi/democratic-csi" ["e"=1]
+"mariadb-operator/mariadb-operator" -> "bjw-s-labs/helm-charts" ["e"=1]
 "bjw-s-labs/helm-charts" -> "bjw-s-labs/home-ops"
 "bjw-s-labs/helm-charts" -> "onedr0p/home-ops"
 "bjw-s-labs/helm-charts" -> "k8s-at-home/charts"
@@ -708,11 +802,14 @@ digraph G {
 "kubebn/talos-proxmox-kaas" -> "ahgraber/homelab-gitops-k3s"
 "kubebn/talos-proxmox-kaas" -> "siderolabs/contrib"
 "kubebn/talos-proxmox-kaas" -> "budimanjojo/talhelper"
+"TechSquidTV/UltimateHomeServer" -> "kubealex/k8s-mediaserver-operator" ["e"=1]
 "STRRL/cloudflare-tunnel-ingress-controller" -> "adyanth/cloudflare-operator"
 "STRRL/cloudflare-tunnel-ingress-controller" -> "pl4nty/cloudflare-kubernetes-gateway"
 "STRRL/cloudflare-tunnel-ingress-controller" -> "gianlucam76/k8s-cleaner" ["e"=1]
 "STRRL/cloudflare-tunnel-ingress-controller" -> "Herm-Studio/StakeVladDracula" ["e"=1]
 "STRRL/cloudflare-tunnel-ingress-controller" -> "lewangdev/faster-whisper-youtube" ["e"=1]
+"mischavandenburg/dotfiles" -> "mischavandenburg/homelab" ["e"=1]
+"mischavandenburg/dotfiles" -> "mischavandenburg/kubecraft" ["e"=1]
 "sergelogvinov/proxmox-cloud-controller-manager" -> "sergelogvinov/proxmox-csi-plugin"
 "sergelogvinov/proxmox-cloud-controller-manager" -> "CRASH-Tech/proxmox-operator"
 "sergelogvinov/proxmox-cloud-controller-manager" -> "siderolabs/talos-cloud-controller-manager"
@@ -759,9 +856,13 @@ digraph G {
 "alperencelik/kubemox" -> "CRASH-Tech/proxmox-operator"
 "siderolabs/image-factory" -> "siderolabs/extensions"
 "drag0n141/home-ops" -> "jfroy/flatops"
+"sidpalas/devops-directive-kubernetes-course" -> "mischavandenburg/homelab" ["e"=1]
 "christensenjairus/ClusterCreator" -> "roeldev/iac-talos-cluster"
 "axivo/k3s-cluster" -> "axivo/k3s-cluster"
 "axivo/k3s-cluster" -> "vehagn/homelab"
+"cozystack/cozystack" -> "cozystack/talm" ["e"=1]
+"cozystack/cozystack" -> "cozystack/talos-bootstrap" ["e"=1]
+"cozystack/cozystack" -> "sergelogvinov/proxmox-csi-plugin" ["e"=1]
 "mischavandenburg/homelab" -> "mischavandenburg/dotfiles" ["e"=1]
 "mischavandenburg/homelab" -> "mischavandenburg/kubecraft"
 "mischavandenburg/homelab" -> "vehagn/homelab"
@@ -779,6 +880,19 @@ digraph G {
 "ionos-cloud/cluster-api-provider-proxmox" -> "k3s-io/cluster-api-k3s" ["e"=1]
 "ionos-cloud/cluster-api-provider-proxmox" -> "kubernetes-sigs/cluster-api-provider-kubevirt" ["e"=1]
 "cozystack/talos-bootstrap" -> "cozystack/talm"
+"gimlet-io/capacitor" -> "allenporter/flux-local" ["e"=1]
+"gimlet-io/capacitor" -> "szinn/k8s-homelab" ["e"=1]
+"gimlet-io/capacitor" -> "bjw-s-labs/home-ops" ["e"=1]
+"siderolabs/omni" -> "budimanjojo/talhelper" ["e"=1]
+"siderolabs/omni" -> "cozystack/talm" ["e"=1]
+"siderolabs/omni" -> "siderolabs/extensions" ["e"=1]
+"siderolabs/omni" -> "siderolabs/awesome-talos" ["e"=1]
+"siderolabs/omni" -> "siderolabs/sidero" ["e"=1]
+"siderolabs/omni" -> "buroa/k8s-gitops" ["e"=1]
+"siderolabs/omni" -> "joryirving/home-ops" ["e"=1]
+"siderolabs/omni" -> "haraldkoch/kochhaus-home" ["e"=1]
+"siderolabs/omni" -> "ionos-cloud/cluster-api-provider-proxmox" ["e"=1]
+"siderolabs/omni" -> "onedr0p/cluster-template" ["e"=1]
 "cozystack/talm" -> "cozystack/talos-bootstrap"
 "cozystack/talm" -> "budimanjojo/talhelper"
 "cozystack/talm" -> "siderolabs/awesome-talos"
@@ -829,6 +943,10 @@ digraph G {
 "bjw-s-labs/nix-config" -> "bjw-s/renovate-config"
 "gavinmcfall/home-ops" -> "jfroy/flatops"
 "jfroy/flatops" -> "gavinmcfall/home-ops"
+"gyptazy/ProxLB" -> "ionos-cloud/cluster-api-provider-proxmox" ["e"=1]
+"Telmate/terraform-provider-proxmox" -> "k3s-io/k3s-ansible" ["e"=1]
+"Telmate/terraform-provider-proxmox" -> "onedr0p/cluster-template" ["e"=1]
+"controlplaneio-fluxcd/flux-operator" -> "allenporter/flux-local" ["e"=1]
 "kashalls/external-dns-unifi-webhook" -> "joryirving/home-ops"
 "kashalls/external-dns-unifi-webhook" -> "kashalls/kromgo"
 "kashalls/external-dns-unifi-webhook" -> "budimanjojo/talhelper"
@@ -844,49 +962,59 @@ digraph G {
 "kashalls/external-dns-unifi-webhook" -> "truxnell/home-cluster"
 "kashalls/external-dns-unifi-webhook" -> "home-operations/charts-mirror"
 "kashalls/external-dns-unifi-webhook" -> "szinn/nix-config"
+"geek-cookbook/geek-cookbook" -> "onedr0p/cluster-template" ["e"=1]
+"geek-cookbook/geek-cookbook" -> "onedr0p/home-ops" ["e"=1]
 "jfroy/tnu" -> "onedr0p/charts-mirror"
 "home-operations/charts-mirror" -> "home-operations/containers"
 "home-operations/charts-mirror" -> "onedr0p/charts-mirror"
 "home-operations/charts-mirror" -> "k8s-gateway/k8s_gateway"
+"rpardini/docker-registry-proxy" ["l"="7.738,-9.182", "c"=14]
+"democratic-csi/democratic-csi" ["l"="9.309,-12.22"]
+"metal3-io/baremetal-operator" ["l"="9.995,-12.575", "c"=1195]
+"siderolabs/sidero" ["l"="9.264,-12.03"]
 "PyratLabs/ansible-role-k3s" ["l"="9.292,-12.248"]
 "k3s-io/k3s-ansible" ["l"="9.314,-12.296"]
 "onedr0p/cluster-template" ["l"="9.25,-12.245"]
 "onedr0p/home-ops" ["l"="9.274,-12.237"]
 "billimek/k8s-gitops" ["l"="9.253,-12.22"]
-"techno-tim/k3s-ansible" ["l"="12.074,-8.979"]
+"techno-tim/k3s-ansible" ["l"="12.074,-8.979", "c"=18]
 "k8s-at-home/charts" ["l"="9.258,-12.271"]
 "bjw-s-labs/helm-charts" ["l"="9.237,-12.224"]
 "toboshii/hajimari" ["l"="9.278,-12.208"]
 "bjw-s-labs/home-ops" ["l"="9.247,-12.205"]
-"democratic-csi/democratic-csi" ["l"="9.309,-12.22"]
 "toboshii/home-ops" ["l"="9.27,-12.186"]
 "k8s-at-home/awesome-home-kubernetes" ["l"="9.22,-12.235"]
-"kubereboot/kured" ["l"="7.689,-9.089"]
+"kubereboot/kured" ["l"="7.689,-9.089", "c"=14]
 "budimanjojo/talhelper" ["l"="9.253,-12.143"]
 "xunholy/k8s-gitops" ["l"="9.258,-12.199"]
 "MoJo2600/pihole-kubernetes" ["l"="9.28,-12.298"]
 "carlosedp/cluster-monitoring" ["l"="9.291,-12.327"]
 "colin-mccarthy/k3s-pi-hole" ["l"="9.336,-12.356"]
 "onedr0p/containers" ["l"="9.227,-12.21"]
-"eko/pihole-exporter" ["l"="-51.492,13.346"]
+"eko/pihole-exporter" ["l"="-51.492,13.346", "c"=200]
 "geerlingguy/turing-pi-cluster" ["l"="9.273,-12.352"]
-"munnerz/kube-plex" ["l"="12.591,-6.599"]
+"munnerz/kube-plex" ["l"="12.591,-6.599", "c"=67]
 "billimek/billimek-charts" ["l"="9.307,-12.381"]
-"rancher/system-upgrade-controller" ["l"="7.789,-9.196"]
+"rancher/system-upgrade-controller" ["l"="7.789,-9.196", "c"=14]
 "postfinance/kubenurse" ["l"="9.421,-11.801"]
 "postfinance/kubelet-csr-approver" ["l"="9.383,-11.851"]
 "postfinance/kubectl-sudo" ["l"="9.443,-11.768"]
 "siderolabs/bldr" ["l"="9.309,-11.907"]
 "siderolabs/pkgs" ["l"="9.3,-11.958"]
+"githubixx/ansible-role-wireguard" ["l"="11.595,-9.267", "c"=18]
 "kontena/kubelet-rubber-stamp" ["l"="9.409,-11.849"]
-"carlosedp/kubernetes-arm" ["l"="54.419,32.069"]
-"alexellis/k3sup" ["l"="7.84,-8.804"]
-"geerlingguy/raspberry-pi-dramble" ["l"="7.904,-12.701"]
-"inlets/inlets-operator" ["l"="7.632,-8.785"]
+"pabloromeo/clusterplex" ["l"="12.542,-6.499", "c"=67]
+"alexellis/k8s-on-raspbian" ["l"="7.694,-8.429", "c"=14]
+"carlosedp/kubernetes-arm" ["l"="54.419,32.069", "c"=780]
+"alexellis/k3sup" ["l"="7.84,-8.804", "c"=14]
+"geerlingguy/raspberry-pi-dramble" ["l"="7.904,-12.701", "c"=739]
+"inlets/inlets-operator" ["l"="7.632,-8.785", "c"=14]
 "jessestuart/tiller-multiarch" ["l"="9.28,-12.384"]
 "carlosedp/docker-arm_exporter" ["l"="9.309,-12.357"]
-"alexellis/arkade" ["l"="7.682,-8.788"]
-"geerlingguy/ansible-for-kubernetes" ["l"="7.852,-12.86"]
+"alexellis/arkade" ["l"="7.682,-8.788", "c"=14]
+"geerlingguy/ansible-for-kubernetes" ["l"="7.852,-12.86", "c"=739]
+"zimmertr/TJs-Kubernetes-Service" ["l"="9.77,-11.949", "c"=1246]
+"kubebn/talos-proxmox-kaas" ["l"="9.329,-12.107"]
 "nmaupu/freenas-provisioner" ["l"="9.393,-12.26"]
 "travisghansen/freenas-iscsi-provisioner" ["l"="9.427,-12.276"]
 "carpenike/k8s-gitops" ["l"="9.237,-12.186"]
@@ -897,7 +1025,12 @@ digraph G {
 "angelnu/k8s-gitops" ["l"="9.249,-12.184"]
 "anthr76/infra" ["l"="9.226,-12.197"]
 "samip5/k8s-cluster" ["l"="9.234,-12.156"]
+"piraeusdatastore/piraeus-operator" ["l"="7.74,-9.606", "c"=14]
+"cozystack/talos-bootstrap" ["l"="9.224,-12.007"]
 "onedr0p/k3s-homeops-ansible" ["l"="9.315,-12.418"]
+"brancz/kube-rbac-proxy" ["l"="7.9,-9.237", "c"=14]
+"kubernetes-sigs/image-builder" ["l"="9.937,-12.593", "c"=1195]
+"ionos-cloud/cluster-api-provider-proxmox" ["l"="9.342,-12.032"]
 "siderolabs/tools" ["l"="9.295,-11.935"]
 "haraldkoch/kochhaus-home" ["l"="9.246,-12.154"]
 "szinn/k8s-homelab" ["l"="9.256,-12.162"]
@@ -915,42 +1048,50 @@ digraph G {
 "larivierec/home-cluster" ["l"="9.24,-12.144"]
 "coolguy1771/home-ops" ["l"="9.27,-12.123"]
 "JJGadgets/Biohazard" ["l"="9.214,-12.136"]
+"0xERR0R/blocky" ["l"="12.238,-9.058", "c"=18]
 "siderolabs/kubelet" ["l"="9.118,-12.131"]
 "onedr0p/charts-mirror" ["l"="9.155,-12.138"]
-"kube-vip/kube-vip" ["l"="7.934,-9.107"]
-"longhorn/longhorn" ["l"="8.039,-8.929"]
-"Telmate/terraform-provider-proxmox" ["l"="9.796,-12.009"]
-"rancher/k3os" ["l"="7.914,-8.867"]
-"k3s-io/k3s" ["l"="8.155,-8.614"]
-"k3d-io/k3d" ["l"="7.88,-8.792"]
-"bpg/terraform-provider-proxmox" ["l"="9.825,-12.023"]
-"khuedoan/homelab" ["l"="12.15,-9.052"]
-"SynologyOpenSource/synology-csi" ["l"="8.183,-9.198"]
+"tinkerbell/tink" ["l"="3.655,-7.04", "c"=0]
+"kube-vip/kube-vip" ["l"="7.934,-9.107", "c"=14]
+"longhorn/longhorn" ["l"="8.039,-8.929", "c"=14]
+"Telmate/terraform-provider-proxmox" ["l"="9.796,-12.009", "c"=1246]
+"rancher/k3os" ["l"="7.914,-8.867", "c"=14]
+"k3s-io/k3s" ["l"="8.155,-8.614", "c"=14]
+"k3d-io/k3d" ["l"="7.88,-8.792", "c"=14]
+"bpg/terraform-provider-proxmox" ["l"="9.825,-12.023", "c"=1246]
+"techno-tim/techno-tim.github.io" ["l"="12.099,-8.904", "c"=18]
+"khuedoan/homelab" ["l"="12.15,-9.052", "c"=18]
+"kubernetes-csi/csi-driver-smb" ["l"="8.182,-9.313", "c"=14]
+"SynologyOpenSource/synology-csi" ["l"="8.183,-9.198", "c"=14]
 "fenio/k8s-truenas" ["l"="9.356,-12.252"]
-"backube/volsync" ["l"="7.523,-9.255"]
+"backube/volsync" ["l"="7.523,-9.255", "c"=14]
 "sergelogvinov/proxmox-csi-plugin" ["l"="9.319,-12.09"]
 "kashalls/external-dns-unifi-webhook" ["l"="9.206,-12.149"]
 "hpe-storage/truenas-csp" ["l"="9.372,-12.235"]
+"paultyng/terraform-provider-unifi" ["l"="-16.816,-39.755", "c"=1198]
 "openllb/hlb" ["l"="9.317,-11.872"]
 "k8s-at-home/library-charts" ["l"="9.197,-12.276"]
 "k8s-at-home/container-images" ["l"="9.196,-12.24"]
-"truecharts/public" ["l"="-25.879,-23.339"]
+"truecharts/public" ["l"="-25.879,-23.339", "c"=1142]
+"traefik/traefik-helm-chart" ["l"="7.971,-9.087", "c"=14]
+"openebs/zfs-localpv" ["l"="7.388,-9.531", "c"=14]
+"alexellis/awesome-baremetal" ["l"="3.649,-7.16", "c"=0]
 "ori-edge/k8s_gateway" ["l"="9.206,-12.12"]
 "k8s-gateway/k8s_gateway" ["l"="9.168,-12.116"]
 "allenporter/flux-local" ["l"="9.193,-12.156"]
 "siderolabs/awesome-talos" ["l"="9.236,-12.088"]
+"tarampampam/error-pages" ["l"="12.006,-8.728", "c"=18]
+"onedr0p/exportarr" ["l"="12.451,-6.375", "c"=67]
 "aenix-io/kubefarm" ["l"="9.159,-11.955"]
 "aenix-io/kubernetes-in-kubernetes" ["l"="9.131,-11.933"]
-"cozystack/talos-bootstrap" ["l"="9.224,-12.007"]
-"geerlingguy/turing-pi-2-cluster" ["l"="7.838,-12.698"]
-"siderolabs/sidero" ["l"="9.264,-12.03"]
+"geerlingguy/turing-pi-2-cluster" ["l"="7.838,-12.698", "c"=739]
 "siderolabs/cluster-api-bootstrap-provider-talos" ["l"="9.302,-12.023"]
 "siderolabs/extensions" ["l"="9.311,-11.987"]
-"siderolabs/omni" ["l"="7.571,-9.238"]
+"siderolabs/omni" ["l"="7.571,-9.238", "c"=14]
 "siderolabs/theila" ["l"="9.261,-11.987"]
-"metal3-io/baremetal-operator" ["l"="9.995,-12.575"]
 "talos-systems/arges" ["l"="9.25,-12.003"]
 "cozystack/talm" ["l"="9.278,-12.051"]
+"nextcloud/helm" ["l"="40.892,3.113", "c"=559]
 "ivanmorenoj/k3s-pihole-wireguard" ["l"="9.356,-12.379"]
 "siderolabs/cluster-api-control-plane-provider-talos" ["l"="9.334,-12.005"]
 "Diaoul/home-ops" ["l"="9.205,-12.186"]
@@ -959,20 +1100,30 @@ digraph G {
 "squat/generic-device-plugin" ["l"="9.135,-12.167"]
 "gabe565/charts" ["l"="9.135,-12.213"]
 "kashalls/kromgo" ["l"="9.193,-12.14"]
+"dy2k/proxmox-kubernetes" ["l"="9.732,-11.951", "c"=1246]
+"NatiSayada/k3s-proxmox-terraform-ansible" ["l"="9.175,-12.249"]
 "blackjid/homelab-infra" ["l"="9.163,-12.177"]
 "kubealex/k8s-mediaserver-operator" ["l"="9.22,-12.27"]
-"TechSquidTV/UltimateHomeServer" ["l"="12.296,-8.557"]
-"kubealex/libvirt-k8s-provisioner" ["l"="8.483,-12.591"]
+"TechSquidTV/UltimateHomeServer" ["l"="12.296,-8.557", "c"=18]
+"kubealex/libvirt-k8s-provisioner" ["l"="8.483,-12.591", "c"=600]
+"techno-tim/launchpad" ["l"="12.079,-8.915", "c"=18]
+"geerlingguy/kubernetes-101" ["l"="7.875,-12.8", "c"=739]
+"erebe/personal-server" ["l"="7.682,-8.586", "c"=14]
+"lablabs/ansible-role-rke2" ["l"="7.826,-9.15", "c"=14]
+"axivo/k3s-cluster" ["l"="9.338,-12.156"]
+"bluxmit/alnoda-workspaces" ["l"="12.14,-8.72", "c"=18]
+"fluxcd/flux2-kustomize-helm-example" ["l"="7.534,-9.269", "c"=14]
 "snoopy82481/home_cluster" ["l"="9.345,-12.125"]
 "jfroy/flatops" ["l"="9.217,-12.105"]
+"syself/cluster-api-provider-hetzner" ["l"="8.073,-9.501", "c"=14]
+"BeryJu/korb" ["l"="7.458,-9.223", "c"=14]
 "ahgraber/homelab-gitops-k3s" ["l"="9.297,-12.13"]
 "ricsanfre/pi-cluster" ["l"="9.297,-12.181"]
 "vehagn/homelab" ["l"="9.319,-12.149"]
 "Michaelpalacce/HomeLab" ["l"="9.37,-12.201"]
-"axivo/k3s-cluster" ["l"="9.338,-12.156"]
 "lisenet/kubernetes-homelab" ["l"="9.355,-12.173"]
 "lisenet/homelab-ansible" ["l"="9.406,-12.174"]
-"lisenet/RHCA-study-notes" ["l"="-15.364,-5.824"]
+"lisenet/RHCA-study-notes" ["l"="-15.364,-5.824", "c"=86]
 "danmanners/homelab-kube-cluster" ["l"="9.267,-12.172"]
 "0dragosh/homelab" ["l"="9.271,-12.161"]
 "dfroberg/cluster" ["l"="9.396,-12.125"]
@@ -982,20 +1133,23 @@ digraph G {
 "sergelogvinov/terraform-talos" ["l"="9.335,-12.075"]
 "siderolabs/contrib" ["l"="9.312,-12.064"]
 "rgl/terraform-proxmox-talos" ["l"="9.37,-12.084"]
-"kubebn/talos-proxmox-kaas" ["l"="9.329,-12.107"]
 "roeldev/iac-talos-cluster" ["l"="9.348,-12.098"]
 "sergelogvinov/proxmox-cloud-controller-manager" ["l"="9.336,-12.059"]
 "siderolabs/talos-cloud-controller-manager" ["l"="9.324,-12.039"]
 "Naman1997/simple-talos-cluster" ["l"="9.362,-12.098"]
-"pulumiverse/pulumi-talos" ["l"="39.349,22.835"]
+"pulumiverse/pulumi-talos" ["l"="39.349,22.835", "c"=1091]
+"siderolabs/terraform-provider-talos" ["l"="9.275,-12.076"]
+"jedrw/kproximate" ["l"="9.359,-12.055"]
 "home-operations/containers" ["l"="9.196,-12.169"]
 "adyanth/cloudflare-operator" ["l"="9.234,-11.918"]
 "STRRL/cloudflare-tunnel-ingress-controller" ["l"="9.234,-11.869"]
-"cloudflare/argo-tunnel-examples" ["l"="-5.071,-27.851"]
+"cloudflare/argo-tunnel-examples" ["l"="-5.071,-27.851", "c"=688]
 "BojanZelic/cloudflare-zero-trust-operator" ["l"="9.203,-11.908"]
 "pl4nty/cloudflare-kubernetes-gateway" ["l"="9.206,-11.878"]
 "rafaribe/home-ops" ["l"="9.264,-12.102"]
-"NatiSayada/k3s-proxmox-terraform-ansible" ["l"="9.175,-12.249"]
+"jodevsa/wireguard-operator" ["l"="7.534,-9.322", "c"=14]
+"datreeio/CRDs-catalog" ["l"="7.392,-9.194", "c"=14]
+"smartxworks/virtink" ["l"="8.158,-9.427", "c"=14]
 "fvumbaca/terraform-proxmox-k3s" ["l"="9.124,-12.267"]
 "siderolabs/talos-backup" ["l"="9.335,-11.936"]
 "drag0n141/home-ops" ["l"="9.232,-12.104"]
@@ -1003,13 +1157,12 @@ digraph G {
 "uhthomas/automata" ["l"="9.183,-12.088"]
 "gavinmcfall/home-ops" ["l"="9.192,-12.116"]
 "ehlesp/smallab-k8s-pve-guide" ["l"="9.321,-12.191"]
-"Corsinvest/awesome-proxmox-ve" ["l"="9.693,-12.056"]
-"techno-tim/launchpad" ["l"="12.079,-8.915"]
-"zimmertr/TJs-Kubernetes-Service" ["l"="9.77,-11.949"]
-"siderolabs/terraform-provider-talos" ["l"="9.275,-12.076"]
+"Corsinvest/awesome-proxmox-ve" ["l"="9.693,-12.056", "c"=1246]
+"geerlingguy/pi-cluster" ["l"="7.806,-12.665", "c"=739]
+"mariadb-operator/mariadb-operator" ["l"="7.87,-9.364", "c"=14]
 "CRASH-Tech/proxmox-operator" ["l"="9.361,-12.075"]
 "alperencelik/kubemox" ["l"="9.39,-12.062"]
-"controlplaneio-fluxcd/flux-operator" ["l"="7.45,-9.287"]
+"controlplaneio-fluxcd/flux-operator" ["l"="7.45,-9.287", "c"=14]
 "jfroy/tnu" ["l"="9.179,-12.111"]
 "gruberdev/homelab" ["l"="9.292,-12.152"]
 "gruberdev/local-gitops" ["l"="9.363,-12.141"]
@@ -1020,27 +1173,28 @@ digraph G {
 "allenporter/home-assistant-openid-auth-provider" ["l"="9.112,-12.061"]
 "bjw-s-labs/container-images" ["l"="9.151,-12.154"]
 "bjw-s/renovate-config" ["l"="9.135,-12.137"]
-"gianlucam76/k8s-cleaner" ["l"="7.433,-9.22"]
-"Herm-Studio/StakeVladDracula" ["l"="45.523,0.408"]
-"lewangdev/faster-whisper-youtube" ["l"="45.288,-1.841"]
+"gianlucam76/k8s-cleaner" ["l"="7.433,-9.22", "c"=14]
+"Herm-Studio/StakeVladDracula" ["l"="45.523,0.408", "c"=99]
+"lewangdev/faster-whisper-youtube" ["l"="45.288,-1.841", "c"=410]
+"mischavandenburg/dotfiles" ["l"="-12.979,-9.686", "c"=21]
+"mischavandenburg/homelab" ["l"="9.236,-12.295"]
+"mischavandenburg/kubecraft" ["l"="9.214,-12.332"]
 "Randsw/proxmox-capi-talos" ["l"="9.368,-12.037"]
-"jedrw/kproximate" ["l"="9.359,-12.055"]
-"ionos-cloud/cluster-api-provider-proxmox" ["l"="9.342,-12.032"]
 "home-operations/charts-mirror" ["l"="9.175,-12.149"]
 "k8s-proxmox/cluster-api-provider-proxmox" ["l"="9.366,-12.011"]
 "k8s-proxmox/cloud-provider-proxmox" ["l"="9.389,-11.991"]
+"sidpalas/devops-directive-kubernetes-course" ["l"="29.34,-25.021", "c"=530]
 "christensenjairus/ClusterCreator" ["l"="9.42,-12.091"]
-"mischavandenburg/homelab" ["l"="9.236,-12.295"]
-"mischavandenburg/dotfiles" ["l"="-12.979,-9.686"]
-"mischavandenburg/kubecraft" ["l"="9.214,-12.332"]
+"cozystack/cozystack" ["l"="7.551,-9.299", "c"=14]
 "dreamsofautonomy/homelab" ["l"="9.2,-12.361"]
-"clastix/cluster-api-control-plane-provider-kamaji" ["l"="9.976,-12.654"]
-"kubernetes-sigs/cluster-api-ipam-provider-in-cluster" ["l"="9.908,-12.518"]
-"kubernetes-sigs/image-builder" ["l"="9.937,-12.593"]
-"k3s-io/cluster-api-k3s" ["l"="7.557,-9.441"]
-"kubernetes-sigs/cluster-api-provider-kubevirt" ["l"="9.998,-12.629"]
-"cozystack/cozystack" ["l"="7.551,-9.299"]
+"clastix/cluster-api-control-plane-provider-kamaji" ["l"="9.976,-12.654", "c"=1195]
+"kubernetes-sigs/cluster-api-ipam-provider-in-cluster" ["l"="9.908,-12.518", "c"=1195]
+"k3s-io/cluster-api-k3s" ["l"="7.557,-9.441", "c"=14]
+"kubernetes-sigs/cluster-api-provider-kubevirt" ["l"="9.998,-12.629", "c"=1195]
+"gimlet-io/capacitor" ["l"="7.502,-9.262", "c"=14]
 "truxnell/nix-config" ["l"="9.135,-12.116"]
 "szinn/nix-config" ["l"="9.158,-12.125"]
 "onedr0p/home-service" ["l"="9.103,-12.104"]
+"gyptazy/ProxLB" ["l"="9.708,-12.1", "c"=1246]
+"geek-cookbook/geek-cookbook" ["l"="12.054,-8.822", "c"=18]
 }

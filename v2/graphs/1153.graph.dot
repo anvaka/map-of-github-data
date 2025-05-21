@@ -1,4 +1,5 @@
 digraph G {
+"onnx/models" -> "openvinotoolkit/open_model_zoo" ["e"=1]
 "intel/ai-reference-models" -> "intel/nauta"
 "intel/ai-reference-models" -> "openvinotoolkit/model_server"
 "intel/ai-reference-models" -> "intel/intel-extension-for-pytorch"
@@ -36,6 +37,8 @@ digraph G {
 "openvinotoolkit/openvino" -> "triton-lang/triton" ["e"=1]
 "openvinotoolkit/openvino" -> "NVIDIA/TensorRT-LLM" ["e"=1]
 "openvinotoolkit/openvino" -> "openvinotoolkit/model_server"
+"microsoft/onnxruntime" -> "openvinotoolkit/openvino" ["e"=1]
+"dabasajay/Image-Caption-Generator" -> "OpenVisualCloud/Smart-City-Sample" ["e"=1]
 "openvinotoolkit/open_model_zoo" -> "openvinotoolkit/openvino"
 "openvinotoolkit/open_model_zoo" -> "open-edge-platform/training_extensions"
 "openvinotoolkit/open_model_zoo" -> "openvinotoolkit/openvino_notebooks"
@@ -58,12 +61,18 @@ digraph G {
 "intel/ros2_openvino_toolkit" -> "intel/ros2_intel_realsense"
 "intel/robot_devkit" -> "intel/ros2_object_analytics"
 "intel/robot_devkit" -> "ApexAI/performance_test" ["e"=1]
+"arunponnusamy/object-detection-opencv" -> "PINTO0309/OpenVINO-YoloV3" ["e"=1]
+"corbindavenport/creative-cloud-linux" -> "doctormo/GimpPs" ["e"=1]
 "gudovskiy/yoloNCS" -> "duangenquan/YoloV2NCS"
 "gudovskiy/yoloNCS" -> "movidius/ncappzoo"
 "gudovskiy/yoloNCS" -> "intel/ros_intel_movidius_ncs"
 "gudovskiy/yoloNCS" -> "movidius/ncsdk"
 "gudovskiy/yoloNCS" -> "leehaesung/YOLO-Powered_Robot_Vision" ["e"=1]
 "gudovskiy/yoloNCS" -> "ardamavi/Intel-Movidius-NCS-Keras"
+"microsoft/DirectML" -> "intel/intel-extension-for-pytorch" ["e"=1]
+"chunying/gaminganywhere" -> "OpenVisualCloud/Cloud-Gaming-Windows-Sample" ["e"=1]
+"madhawav/YOLO3-4-Py" -> "PINTO0309/OpenVINO-YoloV3" ["e"=1]
+"mystic123/tensorflow-yolo-v3" -> "PINTO0309/OpenVINO-YoloV3" ["e"=1]
 "bootchk/resynthesizer" -> "kritiksoman/GIMP-ML"
 "bootchk/resynthesizer" -> "alessandrofrancesconi/gimp-plugin-bimp"
 "bootchk/resynthesizer" -> "pixlsus/registry.gimp.org_static"
@@ -79,6 +88,7 @@ digraph G {
 "bootchk/resynthesizer" -> "NatronGitHub/Natron" ["e"=1]
 "bootchk/resynthesizer" -> "slowmoVideo/slowmoVideo" ["e"=1]
 "bootchk/resynthesizer" -> "kmkolasinski/AwesomeBump" ["e"=1]
+"irobot-ros/ros2-performance" -> "intel/robot_devkit" ["e"=1]
 "intel/ros2_intel_realsense" -> "jdgalviss/realsense_ros2"
 "intel/ros2_intel_realsense" -> "intel/robot_devkit"
 "intel/ros2_intel_realsense" -> "intel/ros2_object_analytics"
@@ -126,6 +136,7 @@ digraph G {
 "intel-iot-devkit/smart-video-workshop" -> "intel/Edge-Analytics-FaaS"
 "intel-iot-devkit/smart-video-workshop" -> "david-drew/OpenVINO-Custom-Layers"
 "intel-iot-devkit/smart-video-workshop" -> "intel-iot-devkit/sample-videos"
+"dusty-nv/jetbot_ros" -> "jdgalviss/jetbot-ros2" ["e"=1]
 "incluit/OpenVino-For-SmartCity" -> "incluit/OpenVino-Driver-Behaviour"
 "incluit/OpenVino-For-SmartCity" -> "intel-iot-devkit/inference-tutorials-generic"
 "incluit/OpenVino-For-SmartCity" -> "intel-iot-devkit/smart-video-workshop"
@@ -148,6 +159,7 @@ digraph G {
 "intel/nauta" -> "IntelAI/experiments"
 "intel/nauta" -> "IntelAI/vck"
 "intel/nauta" -> "NervanaSystems/ngraph" ["e"=1]
+"OpenVisualCloud/SVT-HEVC" -> "OpenVisualCloud/Dockerfiles" ["e"=1]
 "dlstreamer/dlstreamer" -> "dlstreamer/pipeline-server"
 "dlstreamer/dlstreamer" -> "openvinotoolkit/model_server"
 "dlstreamer/dlstreamer" -> "intel-iot-devkit/smart-video-workshop"
@@ -163,6 +175,7 @@ digraph G {
 "dlstreamer/dlstreamer" -> "intel-iot-devkit/concurrent-video-analytic-pipeline-optimization-sample-l"
 "dlstreamer/dlstreamer" -> "NVIDIA-AI-IOT/deepstream_python_apps" ["e"=1]
 "dlstreamer/dlstreamer" -> "VCDP/FFmpeg-patch"
+"nnstreamer/nnstreamer" -> "dlstreamer/dlstreamer" ["e"=1]
 "FIWARE/catalogue" -> "FIWARE/tutorials.Step-by-Step"
 "FIWARE/catalogue" -> "orchestracities/ngsi-timeseries-api"
 "FIWARE/catalogue" -> "FIWARE/context.Orion-LD"
@@ -178,11 +191,13 @@ digraph G {
 "FIWARE/catalogue" -> "telefonicaid/iotagent-node-lib"
 "FIWARE/catalogue" -> "FIWARE-Ops/docs.academy"
 "FIWARE/catalogue" -> "ging/fiware-draco"
+"rbonghi/jetson_easy" -> "gbr1/upboard_ros" ["e"=1]
 "gbr1/erwhi-hedgehog" -> "gbr1/erwhi-hedgehog-ros"
 "gbr1/ros_openvino" -> "gbr1/upboard_ros"
 "gbr1/ros_openvino" -> "songshan0321/ros_vino"
 "gbr1/ros_openvino" -> "gbr1/erwhi-hedgehog"
 "gbr1/upboard_ros" -> "gbr1/ros_openvino"
+"aferrero2707/PhotoFlow" -> "GreycLab/gmic-community" ["e"=1]
 "openvinotoolkit/model_server" -> "intel/inference-model-manager"
 "openvinotoolkit/model_server" -> "intel/nauta"
 "openvinotoolkit/model_server" -> "dlstreamer/dlstreamer"
@@ -208,6 +223,7 @@ digraph G {
 "PINTO0309/MobileNet-SSD-RealSense" -> "leswright1977/RPi3_NCS2"
 "PINTO0309/MobileNet-SSD-RealSense" -> "Ghustwb/MobileNet-SSD-TensorRT" ["e"=1]
 "PINTO0309/MobileNet-SSD-RealSense" -> "intel/ros_openvino_toolkit"
+"Cloudslab/iFogSim1" -> "smartfog/fogflow" ["e"=1]
 "PINTO0309/OpenVINO-YoloV3" -> "mystic123/tensorflow-yolo-v3" ["e"=1]
 "PINTO0309/OpenVINO-YoloV3" -> "TNTWEN/OpenVINO-YOLOV4"
 "PINTO0309/OpenVINO-YoloV3" -> "PINTO0309/MobileNet-SSD-RealSense"
@@ -278,6 +294,7 @@ digraph G {
 "dlstreamer/pipeline-server" -> "OpenVisualCloud/Smart-City-Sample"
 "PINTO0309/MobileNet-SSD" -> "PINTO0309/MobileNet-SSDLite-RealSense-TF"
 "PINTO0309/MobileNet-SSD" -> "PINTO0309/MobileNet-SSD-RealSense"
+"intel/intel-device-plugins-for-kubernetes" -> "OpenVisualCloud/Dockerfiles" ["e"=1]
 "intel/ros2_object_analytics" -> "intel/robot_devkit"
 "intel/ros2_object_analytics" -> "intel/ros2_openvino_toolkit"
 "intel/ros2_object_analytics" -> "intel/ros_object_analytics"
@@ -308,6 +325,7 @@ digraph G {
 "VCDP/FFmpeg-patch" -> "OpenVisualCloud/VCAC-SW"
 "telefonicaid/fiware-cygnus" -> "telefonicaid/fiware-sth-comet"
 "telefonicaid/fiware-cygnus" -> "telefonicaid/fiware-orion"
+"Diolinux/PhotoGIMP" -> "doctormo/GimpPs" ["e"=1]
 "kritiksoman/GIMP-ML" -> "intel/openvino-ai-plugins-gimp"
 "kritiksoman/GIMP-ML" -> "bootchk/resynthesizer"
 "kritiksoman/GIMP-ML" -> "blueturtleai/gimp-stable-diffusion"
@@ -323,9 +341,11 @@ digraph G {
 "kritiksoman/GIMP-ML" -> "kamilburda/gimp-export-layers"
 "kritiksoman/GIMP-ML" -> "thndrbrrr/gimp-stable-boy"
 "kritiksoman/GIMP-ML" -> "csjliang/LPTN" ["e"=1]
+"PINTO0309/PINTO_model_zoo" -> "openvinotoolkit/open_model_zoo" ["e"=1]
 "telefonicaid/iotagent-node-lib" -> "telefonicaid/iotagent-ul"
 "telefonicaid/iotagent-node-lib" -> "telefonicaid/iotagent-json"
 "manu12121999/RemoveBG-GIMP" -> "manu12121999/GIMP-Background-Remover"
+"onepanelio/onepanel" -> "open-edge-platform/datumaro" ["e"=1]
 "open-edge-platform/datumaro" -> "open-edge-platform/geti-sdk"
 "open-edge-platform/datumaro" -> "open-edge-platform/geti"
 "open-edge-platform/datumaro" -> "open-edge-platform/orch-library"
@@ -390,6 +410,11 @@ digraph G {
 "openvinotoolkit/nncf" -> "IntelLabs/distiller" ["e"=1]
 "openvinotoolkit/nncf" -> "666DZY666/micronet" ["e"=1]
 "openvinotoolkit/nncf" -> "megvii-research/FQ-ViT" ["e"=1]
+"quic/aimet" -> "openvinotoolkit/nncf" ["e"=1]
+"quic/aimet" -> "intel/neural-compressor" ["e"=1]
+"theAIGuysCode/yolov4-custom-functions" -> "TNTWEN/OpenVINO-YOLOV4" ["e"=1]
+"microsoft/Olive" -> "intel/neural-compressor" ["e"=1]
+"microsoft/Olive" -> "intel/intel-extension-for-pytorch" ["e"=1]
 "introlab/find-object" -> "intel/ros_object_analytics"
 "introlab/find-object" -> "andyzeng/apc-vision-toolbox" ["e"=1]
 "introlab/find-object" -> "introlab/rtabmap_ros" ["e"=1]
@@ -401,6 +426,8 @@ digraph G {
 "introlab/find-object" -> "pirobot/rbx1" ["e"=1]
 "introlab/find-object" -> "ros/executive_smach" ["e"=1]
 "introlab/find-object" -> "ros-perception/vision_opencv" ["e"=1]
+"intel/pti-gpu" -> "intel/xpumanager" ["e"=1]
+"intel/pti-gpu" -> "intel/torch-ccl" ["e"=1]
 "FIWARE/tutorials.NGSI-LD" -> "aws-samples/aws-stf"
 "rushitjasani/Wikipedia-Search-Engine" -> "olalakul/Web-Server-Log-Analysis-PySpark"
 "smart-data-models/SmartCities" -> "smart-data-models/SmartEnergy"
@@ -416,6 +443,9 @@ digraph G {
 "kamilburda/gimp-export-layers" -> "c-koi/gmic-qt"
 "kamilburda/gimp-export-layers" -> "aferrero2707/gimp-appimage" ["e"=1]
 "kamilburda/gimp-export-layers" -> "kritiksoman/GIMP-ML"
+"oneapi-src/oneAPI-samples" -> "intel/ai-reference-models" ["e"=1]
+"oneapi-src/oneAPI-samples" -> "intel/intel-extension-for-pytorch" ["e"=1]
+"yehengchen/Object-Grasp-Detection-ROS" -> "intel/ros2_grasp_library" ["e"=1]
 "intel/torch-ccl" -> "uxlfoundation/oneCCL" ["e"=1]
 "intel/torch-ccl" -> "intel/ideep"
 "intel/torch-ccl" -> "intel/intel-extension-for-deepspeed"
@@ -426,8 +456,10 @@ digraph G {
 "Atharvak19/Big-Data-Medicare-Fraud-Detection" -> "ymericson/big-data-streets"
 "GoogleCloudPlatform/df-ml-anomaly-detection" -> "noi-techpark/big-data-for-tourism"
 "TNTWEN/OpenVINO-YOLO-Automatic-Generation" -> "TNTWEN/Pruned-OpenVINO-YOLO"
+"oneapi-src/level-zero" -> "openvinotoolkit/npu_compiler" ["e"=1]
 "ros-industrial/easy_perception_deployment" -> "ros-industrial/easy_manipulation_deployment"
 "ros-industrial/easy_manipulation_deployment" -> "ros-industrial/easy_perception_deployment"
+"uxlfoundation/oneCCL" -> "intel/torch-ccl" ["e"=1]
 "HabanaAI/Model-References" -> "huggingface/optimum-habana"
 "HabanaAI/Model-References" -> "HabanaAI/DeepSpeed"
 "HabanaAI/Model-References" -> "HabanaAI/vllm-fork"
@@ -450,6 +482,10 @@ digraph G {
 "openvinotoolkit/openvino_notebooks" -> "roboflow/notebooks" ["e"=1]
 "openvinotoolkit/openvino_notebooks" -> "PINTO0309/PINTO_model_zoo" ["e"=1]
 "openvinotoolkit/openvino_notebooks" -> "openvinotoolkit/awesome-openvino" ["e"=1]
+"neuralmagic/sparseml" -> "intel/neural-compressor" ["e"=1]
+"pnggroup/libpng" -> "GreycLab/CImg" ["e"=1]
+"rh12503/triangula" -> "openvinotoolkit/openvino_notebooks" ["e"=1]
+"ermig1979/Simd" -> "GreycLab/CImg" ["e"=1]
 "dtschump/gmic" -> "dtschump/gmic-minimal"
 "alessandrofrancesconi/gimp-plugin-bimp" -> "bootchk/resynthesizer"
 "alessandrofrancesconi/gimp-plugin-bimp" -> "kamilburda/gimp-export-layers"
@@ -466,6 +502,9 @@ digraph G {
 "alessandrofrancesconi/gimp-plugin-bimp" -> "BenjaminSauder/EdgeFlow" ["e"=1]
 "alessandrofrancesconi/gimp-plugin-bimp" -> "intel/openvino-ai-plugins-gimp"
 "alessandrofrancesconi/gimp-plugin-bimp" -> "carlobaldassi/gimp-lqr-plugin"
+"neuralmagic/deepsparse" -> "intel/neural-compressor" ["e"=1]
+"huggingface/dataset-viewer" -> "huggingface/optimum-habana" ["e"=1]
+"huggingface/optimum" -> "intel/neural-compressor" ["e"=1]
 "ros-industrial/ros2_i_training" -> "ros-industrial/easy_perception_deployment"
 "ros-industrial/ros2_i_training" -> "fmrico/ros_to_ros2_talk_examples"
 "ros-industrial/ros2_i_training" -> "ros-industrial/easy_manipulation_deployment"
@@ -493,6 +532,7 @@ digraph G {
 "GreycLab/gmic-community" -> "dtschump/gmic"
 "jdgalviss/jetbot-ros2" -> "jdgalviss/realsense_ros2"
 "jdgalviss/jetbot-ros2" -> "jdgalviss/autonomous_mobile_robot"
+"fb029ed/yolov5_cpp_openvino" -> "Chen-MingChang/pytorch_YOLO_OpenVINO_demo" ["e"=1]
 "intel/drivers.gpu.control-library" -> "JamesCJ60/Intel-ARC-Game-Enhancer"
 "HabanaAI/SynapseAI_Core" -> "HabanaAI/Habana_Custom_Kernel"
 "ymericson/big-data-streets" -> "Atharvak19/Big-Data-Medicare-Fraud-Detection"
@@ -500,6 +540,8 @@ digraph G {
 "telefonicaid/fiware-sth-comet" -> "ging/fiware-draco"
 "TNTWEN/Pruned-OpenVINO-YOLO" -> "TNTWEN/OpenVINO-YOLO-Automatic-Generation"
 "telefonicaid/iotagent-json" -> "telefonicaid/iotagent-node-lib"
+"amd/OpenCL-caffe" -> "01org/caffe" ["e"=1]
+"alibaba/TinyNeuralNetwork" -> "openvinotoolkit/nncf" ["e"=1]
 "doctormo/GimpPs" -> "draekko/gimp-cc-themes"
 "doctormo/GimpPs" -> "Diolinux/PhotoGIMP" ["e"=1]
 "doctormo/GimpPs" -> "BenShoeman/gimp-photoshop-profile"
@@ -515,6 +557,7 @@ digraph G {
 "doctormo/GimpPs" -> "PapirusDevelopmentTeam/arc-kde" ["e"=1]
 "doctormo/GimpPs" -> "kritiksoman/GIMP-ML"
 "doctormo/GimpPs" -> "b4j4/indicator-kdeconnect" ["e"=1]
+"insight-platform/Savant" -> "dlstreamer/dlstreamer" ["e"=1]
 "GNOME/gegl" -> "GNOME/babl"
 "intel/xpumanager" -> "intel/xetla" ["e"=1]
 "intel/xpumanager" -> "intel/igsc"
@@ -548,13 +591,24 @@ digraph G {
 "huggingface/optimum-habana" -> "huggingface/optimum-graphcore"
 "huggingface/optimum-habana" -> "intel/intel-extension-for-deepspeed"
 "olalakul/Web-Server-Log-Analysis-PySpark" -> "ttracx/project-cyberitis"
+"uxlfoundation/oneDNN" -> "intel/intel-extension-for-pytorch" ["e"=1]
+"uxlfoundation/oneDNN" -> "openvinotoolkit/openvino" ["e"=1]
+"sddebz/stable-diffusion-krita-plugin" -> "blueturtleai/gimp-stable-diffusion" ["e"=1]
 "intel/linux-npu-driver" -> "openvinotoolkit/npu_compiler"
 "intel/linux-npu-driver" -> "intel/intel-npu-acceleration-library"
 "intel/linux-npu-driver" -> "openvinotoolkit/openvino.genai"
 "intel/linux-npu-driver" -> "huggingface/optimum-intel"
+"nousr/koi" -> "blueturtleai/gimp-stable-diffusion" ["e"=1]
+"samjabrahams/tensorflow-on-raspberry-pi" -> "movidius/ncsdk" ["e"=1]
+"bes-dev/stable_diffusion.openvino" -> "openvinotoolkit/stable-diffusion-webui" ["e"=1]
+"bes-dev/stable_diffusion.openvino" -> "huggingface/optimum-intel" ["e"=1]
+"bes-dev/stable_diffusion.openvino" -> "intel/openvino-ai-plugins-gimp" ["e"=1]
+"bes-dev/stable_diffusion.openvino" -> "openvinotoolkit/openvino_notebooks" ["e"=1]
+"Haidra-Org/AI-Horde" -> "blueturtleai/gimp-stable-diffusion" ["e"=1]
 "thndrbrrr/gimp-stable-boy" -> "blueturtleai/gimp-stable-diffusion"
 "thndrbrrr/gimp-stable-boy" -> "ArtBIT/stable-gimpfusion"
 "thndrbrrr/gimp-stable-boy" -> "intel/openvino-ai-plugins-gimp"
+"opencv/opencv_extra" -> "openvinotoolkit/open_model_zoo" ["e"=1]
 "intel/intel-extension-for-tensorflow" -> "intel/intel-extension-for-openxla"
 "intel/intel-extension-for-tensorflow" -> "intel/intel-extension-for-pytorch"
 "intel/intel-extension-for-tensorflow" -> "Intel-tensorflow/tensorflow"
@@ -629,8 +683,11 @@ digraph G {
 "rahulunair/stable_diffusion_arc" -> "jbaboval/stable-diffusion-webui"
 "jbaboval/stable-diffusion-webui" -> "Aloereed/stable-diffusion-webui-ipex-arc"
 "telefonicaid/iotagent-ul" -> "telefonicaid/iotagent-node-lib"
+"intel/openvino-plugins-ai-audacity" -> "intel/openvino-ai-plugins-gimp" ["e"=1]
+"intel/ipex-llm" -> "intel/intel-extension-for-pytorch" ["e"=1]
 "ArtBIT/stable-gimpfusion" -> "manu12121999/GIMP-Background-Remover"
 "ArtBIT/stable-gimpfusion" -> "thndrbrrr/gimp-stable-boy"
+"menloresearch/awesome-local-ai" -> "intel/intel-extension-for-transformers" ["e"=1]
 "Solaris17/ARC-Firmware-Tool" -> "Solaris17/Arc-Firmware"
 "openvinotoolkit/stable-diffusion-webui" -> "jbaboval/stable-diffusion-webui"
 "openvinotoolkit/stable-diffusion-webui" -> "Aloereed/stable-diffusion-webui-arc-directml"
@@ -681,8 +738,15 @@ digraph G {
 "openvinotoolkit/openvino.genai" -> "OpenVINO-dev-contest/llama2.openvino"
 "openvinotoolkit/openvino.genai" -> "openvinotoolkit/openvino_build_deploy"
 "openvinotoolkit/openvino.genai" -> "openvinotoolkit/openvino_notebooks"
+"dvmazur/mixtral-offloading" -> "intel/intel-extension-for-transformers" ["e"=1]
 "mattcurf/ollama-intel-gpu" -> "eleiton/ollama-intel-arc"
+"b4rtaz/distributed-llama" -> "intel/intel-extension-for-transformers" ["e"=1]
+"b4rtaz/distributed-llama" -> "intel/neural-speed" ["e"=1]
 "Solaris17/Arc-Firmware" -> "Solaris17/ARC-Firmware-Tool"
+"rupeshs/fastsdcpu" -> "huggingface/optimum-intel" ["e"=1]
+"microsoft/onnxruntime-genai" -> "openvinotoolkit/openvino.genai" ["e"=1]
+"microsoft/onnxruntime-genai" -> "huggingface/optimum-intel" ["e"=1]
+"microsoft/onnxruntime-genai" -> "intel/intel-npu-acceleration-library" ["e"=1]
 "opea-project/GenAIComps" -> "opea-project/GenAIExamples"
 "opea-project/GenAIComps" -> "opea-project/GenAIEval"
 "opea-project/GenAIComps" -> "opea-project/GenAIInfra"
@@ -703,6 +767,8 @@ digraph G {
 "intel/intel-npu-acceleration-library" -> "spcl/pymlir" ["e"=1]
 "intel/intel-npu-acceleration-library" -> "Xilinx/llvm-aie" ["e"=1]
 "intel/intel-npu-acceleration-library" -> "intel/auto-round" ["e"=1]
+"digitalbrain79/darknet-nnpack" -> "duangenquan/YoloV2NCS" ["e"=1]
+"digitalbrain79/darknet-nnpack" -> "gudovskiy/yoloNCS" ["e"=1]
 "Yash-Kavaiya/GenAI-Projects" -> "opea-project/GenAIExamples"
 "opea-project/GenAIExamples" -> "opea-project/GenAIComps"
 "opea-project/GenAIExamples" -> "Yash-Kavaiya/GenAI-Projects"
@@ -720,6 +786,10 @@ digraph G {
 "intel/neural-speed" -> "huggingface/optimum-intel"
 "intel/neural-speed" -> "huggingface/optimum-habana"
 "intel/neural-speed" -> "intel/intel-xpu-backend-for-triton" ["e"=1]
+"intel/auto-round" -> "intel/neural-speed" ["e"=1]
+"intel/auto-round" -> "huggingface/optimum-intel" ["e"=1]
+"intel/auto-round" -> "intel/intel-extension-for-transformers" ["e"=1]
+"intel/auto-round" -> "intel/neural-compressor" ["e"=1]
 "opea-project/GenAIEval" -> "opea-project/GenAIInfra"
 "opea-project/GenAIEval" -> "opea-project/docs"
 "opea-project/GenAIEval" -> "opea-project/GenAIComps"
@@ -735,6 +805,7 @@ digraph G {
 "HabanaAI/vllm-fork" -> "HabanaAI/DeepSpeed"
 "intel/fastgo" -> "intel/ixl-go"
 "HabanaAI/Megatron-DeepSpeed" -> "HabanaAI/DeepSpeed"
+"IntelLabs/RAG-FiT" -> "opea-project/GenAIComps" ["e"=1]
 "intel/AI-Playground" -> "openvinotoolkit/openvino.genai"
 "intel/AI-Playground" -> "huggingface/optimum-intel"
 "intel/AI-Playground" -> "mattcurf/ollama-intel-gpu"
@@ -748,8 +819,14 @@ digraph G {
 "intel/AI-Playground" -> "oneapi-src/SYCLomatic" ["e"=1]
 "intel/AI-Playground" -> "Disty0/ipex_to_cuda"
 "intel/AI-Playground" -> "IGCIT/Intel-GPU-Community-Issue-Tracker-IGCIT"
+"google/aiyprojects-raspbian" -> "movidius/ncappzoo" ["e"=1]
 "c-koi/gmic-qt" -> "GreycLab/gmic"
 "c-koi/gmic-qt" -> "c-koi/zart"
+"intel/clDNN" -> "01org/caffe" ["e"=1]
+"ryouchinsa/Rectlabel-support" -> "open-edge-platform/datumaro" ["e"=1]
+"mostlygeek/llama-swap" -> "SearchSavior/OpenArc" ["e"=1]
+"Intel-Media-SDK/MediaSDK" -> "dlstreamer/dlstreamer" ["e"=1]
+"RobotWebTools/ros2-web-bridge" -> "intel/ros2_object_analytics" ["e"=1]
 "orchestracities/ngsi-timeseries-api" -> "ScorpioBroker/ScorpioBroker"
 "orchestracities/ngsi-timeseries-api" -> "ging/fiware-draco"
 "movidius/ncappzoo" -> "movidius/ncsdk"
@@ -782,8 +859,15 @@ digraph G {
 "open-edge-platform/geti" -> "open-edge-platform/app-orch-tenant-controller"
 "open-edge-platform/geti" -> "open-edge-platform/cluster-manager"
 "open-edge-platform/geti" -> "open-edge-platform/cluster-tests"
+"lhelontra/tensorflow-on-arm" -> "movidius/ncsdk" ["e"=1]
+"lhelontra/tensorflow-on-arm" -> "PINTO0309/OpenVINO-YoloV3" ["e"=1]
+"lhelontra/tensorflow-on-arm" -> "movidius/ncappzoo" ["e"=1]
+"NervanaSystems/ngraph" -> "intel/nauta" ["e"=1]
+"ExamProCo/free-genai-bootcamp-2025" -> "opea-project/GenAIComps" ["e"=1]
 "intel/ideep" -> "intel/torch-ccl"
 "Team-HSP/Recommendation-System-Hadoop" -> "fareespatel/E-Commerce-Datawarehouse-implementation"
+"onnx/models" ["l"="50.143,29.815", "c"=83]
+"openvinotoolkit/open_model_zoo" ["l"="64.208,-2.607"]
 "intel/ai-reference-models" ["l"="64.218,-2.477"]
 "intel/nauta" ["l"="64.259,-2.508"]
 "openvinotoolkit/model_server" ["l"="64.226,-2.562"]
@@ -791,14 +875,14 @@ digraph G {
 "intel/intel-extension-for-tensorflow" ["l"="64.209,-2.436"]
 "intel/inference-model-manager" ["l"="64.236,-2.518"]
 "intel/neural-compressor" ["l"="64.182,-2.465"]
-"intel/intel-xpu-backend-for-triton" ["l"="37.166,1.139"]
+"intel/intel-xpu-backend-for-triton" ["l"="37.166,1.139", "c"=112]
 "Intel-tensorflow/tensorflow" ["l"="64.245,-2.447"]
-"uxlfoundation/oneCCL" ["l"="64.165,-1.916"]
-"oneapi-src/oneAPI-samples" ["l"="64.161,-1.972"]
-"intel/pti-gpu" ["l"="64.172,-1.99"]
-"NervanaSystems/ngraph" ["l"="37.206,0.889"]
+"uxlfoundation/oneCCL" ["l"="64.165,-1.916", "c"=477]
+"oneapi-src/oneAPI-samples" ["l"="64.161,-1.972", "c"=477]
+"intel/pti-gpu" ["l"="64.172,-1.99", "c"=477]
+"NervanaSystems/ngraph" ["l"="37.206,0.889", "c"=112]
 "intel/torch-ccl" ["l"="64.215,-2.409"]
-"uxlfoundation/oneDNN" ["l"="37.195,0.838"]
+"uxlfoundation/oneDNN" ["l"="37.195,0.838", "c"=112]
 "intel/intel-extension-for-transformers" ["l"="64.161,-2.417"]
 "intel/ros_openvino_toolkit" ["l"="64.32,-2.76"]
 "intel/ros2_openvino_toolkit" ["l"="64.345,-2.777"]
@@ -809,38 +893,46 @@ digraph G {
 "intel/robot_devkit" ["l"="64.341,-2.798"]
 "songshan0321/ros_vino" ["l"="64.309,-2.797"]
 "openvinotoolkit/openvino" ["l"="64.163,-2.572"]
-"openvinotoolkit/open_model_zoo" ["l"="64.208,-2.607"]
 "openvinotoolkit/openvino_notebooks" ["l"="64.178,-2.53"]
-"NVIDIA/TensorRT" ["l"="50.264,29.769"]
-"apache/tvm" ["l"="50.13,29.773"]
-"microsoft/onnxruntime" ["l"="50.173,29.746"]
-"Tencent/ncnn" ["l"="50.241,29.805"]
+"NVIDIA/TensorRT" ["l"="50.264,29.769", "c"=83]
+"apache/tvm" ["l"="50.13,29.773", "c"=83]
+"microsoft/onnxruntime" ["l"="50.173,29.746", "c"=83]
+"Tencent/ncnn" ["l"="50.241,29.805", "c"=83]
 "openvinotoolkit/nncf" ["l"="64.144,-2.528"]
-"alibaba/MNN" ["l"="50.189,29.806"]
-"daquexian/onnx-simplifier" ["l"="50.2,29.876"]
-"triton-inference-server/server" ["l"="39.002,-0.74"]
+"alibaba/MNN" ["l"="50.189,29.806", "c"=83]
+"daquexian/onnx-simplifier" ["l"="50.2,29.876", "c"=83]
+"triton-inference-server/server" ["l"="39.002,-0.74", "c"=39]
 "open-edge-platform/training_extensions" ["l"="64.163,-2.62"]
-"triton-lang/triton" ["l"="38.919,-0.703"]
-"NVIDIA/TensorRT-LLM" ["l"="38.92,-0.621"]
-"PINTO0309/PINTO_model_zoo" ["l"="49.966,29.931"]
-"nwojke/deep_sort" ["l"="54.589,32.604"]
+"triton-lang/triton" ["l"="38.919,-0.703", "c"=39]
+"NVIDIA/TensorRT-LLM" ["l"="38.92,-0.621", "c"=39]
+"dabasajay/Image-Caption-Generator" ["l"="48.514,31.783", "c"=300]
+"OpenVisualCloud/Smart-City-Sample" ["l"="64.426,-2.563"]
+"PINTO0309/PINTO_model_zoo" ["l"="49.966,29.931", "c"=83]
+"nwojke/deep_sort" ["l"="54.589,32.604", "c"=279]
 "PINTO0309/OpenVINO-YoloV3" ["l"="64.228,-2.661"]
-"onnx/models" ["l"="50.143,29.815"]
-"chuanqi305/MobileNet-SSD" ["l"="51.709,33.321"]
-"RangiLyu/nanodet" ["l"="50.401,29.946"]
-"ShiqiYu/libfacedetection" ["l"="33.457,29.3"]
-"kpzhang93/MTCNN_face_detection_alignment" ["l"="33.233,29.258"]
-"Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB" ["l"="33.454,29.248"]
-"weiliu89/caffe" ["l"="50.506,33.094"]
+"chuanqi305/MobileNet-SSD" ["l"="51.709,33.321", "c"=354]
+"RangiLyu/nanodet" ["l"="50.401,29.946", "c"=83]
+"ShiqiYu/libfacedetection" ["l"="33.457,29.3", "c"=57]
+"kpzhang93/MTCNN_face_detection_alignment" ["l"="33.233,29.258", "c"=57]
+"Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB" ["l"="33.454,29.248", "c"=57]
+"weiliu89/caffe" ["l"="50.506,33.094", "c"=314]
 "intel/ros2_grasp_library" ["l"="64.378,-2.824"]
 "intel/ros2_intel_realsense" ["l"="64.348,-2.824"]
-"ApexAI/performance_test" ["l"="59.363,12.753"]
+"ApexAI/performance_test" ["l"="59.363,12.753", "c"=299]
+"arunponnusamy/object-detection-opencv" ["l"="32.809,29.37", "c"=57]
+"corbindavenport/creative-cloud-linux" ["l"="-14.265,-0.679", "c"=152]
+"doctormo/GimpPs" ["l"="63.886,-2.28"]
 "gudovskiy/yoloNCS" ["l"="64.297,-2.74"]
 "duangenquan/YoloV2NCS" ["l"="64.282,-2.758"]
 "movidius/ncappzoo" ["l"="64.258,-2.707"]
 "movidius/ncsdk" ["l"="64.286,-2.722"]
-"leehaesung/YOLO-Powered_Robot_Vision" ["l"="50.182,33.011"]
+"leehaesung/YOLO-Powered_Robot_Vision" ["l"="50.182,33.011", "c"=314]
 "ardamavi/Intel-Movidius-NCS-Keras" ["l"="64.272,-2.743"]
+"microsoft/DirectML" ["l"="-23.409,-27.774", "c"=26]
+"chunying/gaminganywhere" ["l"="8.046,-3.394", "c"=1106]
+"OpenVisualCloud/Cloud-Gaming-Windows-Sample" ["l"="64.396,-2.475"]
+"madhawav/YOLO3-4-Py" ["l"="50.494,32.883", "c"=314]
+"mystic123/tensorflow-yolo-v3" ["l"="50.405,32.966", "c"=314]
 "bootchk/resynthesizer" ["l"="63.883,-2.349"]
 "kritiksoman/GIMP-ML" ["l"="63.922,-2.338"]
 "alessandrofrancesconi/gimp-plugin-bimp" ["l"="63.885,-2.319"]
@@ -850,28 +942,27 @@ digraph G {
 "GreycLab/gmic" ["l"="63.829,-2.308"]
 "akkana/gimp-plugins" ["l"="63.902,-2.305"]
 "hejiann/beautify" ["l"="63.852,-2.365"]
-"Diolinux/PhotoGIMP" ["l"="-14.307,-0.895"]
+"Diolinux/PhotoGIMP" ["l"="-14.307,-0.895", "c"=152]
 "c-koi/gmic-qt" ["l"="63.821,-2.328"]
 "blueturtleai/gimp-stable-diffusion" ["l"="63.936,-2.372"]
-"doctormo/GimpPs" ["l"="63.886,-2.28"]
-"NatronGitHub/Natron" ["l"="-32.895,-29.319"]
-"slowmoVideo/slowmoVideo" ["l"="-32.877,-27.469"]
-"kmkolasinski/AwesomeBump" ["l"="-32.71,-27.669"]
+"NatronGitHub/Natron" ["l"="-32.895,-29.319", "c"=1012]
+"slowmoVideo/slowmoVideo" ["l"="-32.877,-27.469", "c"=185]
+"kmkolasinski/AwesomeBump" ["l"="-32.71,-27.669", "c"=185]
+"irobot-ros/ros2-performance" ["l"="59.312,12.732", "c"=299]
 "jdgalviss/realsense_ros2" ["l"="64.351,-2.883"]
-"lhelontra/tensorflow-on-arm" ["l"="50.157,32.849"]
-"intel/caffe" ["l"="51.559,33.341"]
-"samjabrahams/tensorflow-on-raspberry-pi" ["l"="50.292,32.99"]
-"shicai/MobileNet-Caffe" ["l"="51.674,33.332"]
-"mystic123/tensorflow-yolo-v3" ["l"="50.405,32.966"]
+"lhelontra/tensorflow-on-arm" ["l"="50.157,32.849", "c"=314]
+"intel/caffe" ["l"="51.559,33.341", "c"=354]
+"samjabrahams/tensorflow-on-raspberry-pi" ["l"="50.292,32.99", "c"=314]
+"shicai/MobileNet-Caffe" ["l"="51.674,33.332", "c"=354]
 "acharroux/Movidius-On-MacOS" ["l"="64.256,-2.751"]
 "open-edge-platform/datumaro" ["l"="64.112,-2.655"]
 "open-edge-platform/geti-sdk" ["l"="64.096,-2.625"]
 "open-edge-platform/geti" ["l"="64.083,-2.637"]
-"Daniil-Osokin/lightweight-human-pose-estimation.pytorch" ["l"="31.748,28.134"]
-"YonghaoHe/LFFD-A-Light-and-Fast-Face-Detector-for-Edge-Devices" ["l"="33.41,29.211"]
+"Daniil-Osokin/lightweight-human-pose-estimation.pytorch" ["l"="31.748,28.134", "c"=352]
+"YonghaoHe/LFFD-A-Light-and-Fast-Face-Detector-for-Edge-Devices" ["l"="33.41,29.211", "c"=57]
 "open-edge-platform/model_api" ["l"="64.136,-2.651"]
-"lyl8213/Plate_Recognition-LPRnet" ["l"="34.115,30.063"]
-"Lam1360/YOLOv3-model-pruning" ["l"="52.792,33.375"]
+"lyl8213/Plate_Recognition-LPRnet" ["l"="34.115,30.063", "c"=892]
+"Lam1360/YOLOv3-model-pruning" ["l"="52.792,33.375", "c"=271]
 "open-edge-platform/orch-library" ["l"="64.121,-2.635"]
 "open-edge-platform/infra-charts" ["l"="64.116,-2.625"]
 "intel-iot-devkit/smart-video-workshop" ["l"="64.31,-2.638"]
@@ -880,11 +971,13 @@ digraph G {
 "incluit/OpenVino-Driver-Behaviour" ["l"="64.276,-2.658"]
 "incluit/OpenVino-For-SmartCity" ["l"="64.286,-2.635"]
 "intel-iot-devkit/concurrent-video-analytic-pipeline-optimization-sample-l" ["l"="64.337,-2.607"]
-"udacity/nd131-openvino-fundamentals-project-starter" ["l"="48.9,27.722"]
-"intel-iot-devkit/people-counter-python" ["l"="48.905,27.741"]
+"udacity/nd131-openvino-fundamentals-project-starter" ["l"="48.9,27.722", "c"=1018]
+"intel-iot-devkit/people-counter-python" ["l"="48.905,27.741", "c"=1018]
 "intel/Edge-Analytics-FaaS" ["l"="64.334,-2.659"]
 "david-drew/OpenVINO-Custom-Layers" ["l"="64.362,-2.649"]
 "intel-iot-devkit/sample-videos" ["l"="64.31,-2.608"]
+"dusty-nv/jetbot_ros" ["l"="53.201,32.406", "c"=251]
+"jdgalviss/jetbot-ros2" ["l"="64.354,-2.933"]
 "intel-iot-devkit/inference-tutorials-generic" ["l"="64.266,-2.63"]
 "smart-data-models/data-models" ["l"="64.66,-2.546"]
 "FIWARE/data-models" ["l"="64.686,-2.562"]
@@ -901,16 +994,16 @@ digraph G {
 "IntelAI/mlt" ["l"="64.296,-2.477"]
 "IntelAI/experiments" ["l"="64.284,-2.492"]
 "IntelAI/vck" ["l"="64.3,-2.504"]
-"dlstreamer/pipeline-server" ["l"="64.347,-2.572"]
-"GStreamer/gstreamer-vaapi" ["l"="63.541,-13.808"]
-"GStreamer/gst-python" ["l"="63.496,-13.833"]
-"OpenVisualCloud/Smart-City-Sample" ["l"="64.426,-2.563"]
+"OpenVisualCloud/SVT-HEVC" ["l"="-38.214,20.798", "c"=853]
 "OpenVisualCloud/Dockerfiles" ["l"="64.396,-2.545"]
-"Intel-Media-SDK/MediaSDK" ["l"="64.357,-1.901"]
-"prominenceai/deepstream-services-library" ["l"="53.156,32.565"]
-"matthew1000/gstreamer-cheat-sheet" ["l"="63.408,-13.805"]
-"nnstreamer/nnstreamer" ["l"="-18.394,-43.042"]
-"NVIDIA-AI-IOT/deepstream_python_apps" ["l"="53.226,32.552"]
+"dlstreamer/pipeline-server" ["l"="64.347,-2.572"]
+"GStreamer/gstreamer-vaapi" ["l"="63.541,-13.808", "c"=524]
+"GStreamer/gst-python" ["l"="63.496,-13.833", "c"=524]
+"Intel-Media-SDK/MediaSDK" ["l"="64.357,-1.901", "c"=477]
+"prominenceai/deepstream-services-library" ["l"="53.156,32.565", "c"=251]
+"matthew1000/gstreamer-cheat-sheet" ["l"="63.408,-13.805", "c"=524]
+"nnstreamer/nnstreamer" ["l"="-18.394,-43.042", "c"=55]
+"NVIDIA-AI-IOT/deepstream_python_apps" ["l"="53.226,32.552", "c"=251]
 "VCDP/FFmpeg-patch" ["l"="64.364,-2.538"]
 "orchestracities/ngsi-timeseries-api" ["l"="64.693,-2.532"]
 "FIWARE/specifications" ["l"="64.703,-2.58"]
@@ -920,25 +1013,29 @@ digraph G {
 "telefonicaid/iotagent-node-lib" ["l"="64.717,-2.512"]
 "FIWARE-Ops/docs.academy" ["l"="64.687,-2.581"]
 "ging/fiware-draco" ["l"="64.724,-2.549"]
+"rbonghi/jetson_easy" ["l"="53.118,32.4", "c"=251]
+"gbr1/upboard_ros" ["l"="64.292,-2.841"]
 "gbr1/erwhi-hedgehog" ["l"="64.294,-2.86"]
 "gbr1/erwhi-hedgehog-ros" ["l"="64.29,-2.88"]
-"gbr1/upboard_ros" ["l"="64.292,-2.841"]
+"aferrero2707/PhotoFlow" ["l"="-32.91,-28.981", "c"=1012]
+"GreycLab/gmic-community" ["l"="63.774,-2.318"]
 "openvinotoolkit/openvino.genai" ["l"="64.097,-2.484"]
 "huggingface/optimum-intel" ["l"="64.107,-2.454"]
 "openvinotoolkit/operator" ["l"="64.256,-2.56"]
-"openvinotoolkit/awesome-openvino" ["l"="25.615,-26.634"]
+"openvinotoolkit/awesome-openvino" ["l"="25.615,-26.634", "c"=32]
 "smartfog/fogflow" ["l"="64.704,-2.471"]
 "PINTO0309/MobileNet-SSD-RealSense" ["l"="64.233,-2.726"]
 "PINTO0309/MobileNet-SSD" ["l"="64.229,-2.751"]
 "PINTO0309/MobileNet-SSDLite-RealSense-TF" ["l"="64.224,-2.773"]
 "PINTO0309/OpenVINO-EmotionRecognition" ["l"="64.216,-2.698"]
 "leswright1977/RPi3_NCS2" ["l"="64.204,-2.76"]
-"Ghustwb/MobileNet-SSD-TensorRT" ["l"="53.014,32.637"]
+"Ghustwb/MobileNet-SSD-TensorRT" ["l"="53.014,32.637", "c"=251]
+"Cloudslab/iFogSim1" ["l"="63.13,-12.72", "c"=1127]
 "TNTWEN/OpenVINO-YOLOV4" ["l"="64.184,-2.715"]
-"lewes6369/TensorRT-Yolov3" ["l"="51.677,33.235"]
-"Qidian213/deep_sort_yolov3" ["l"="54.588,32.67"]
-"coldlarry/YOLOv3-complete-pruning" ["l"="52.809,33.362"]
-"wizyoung/YOLOv3_TensorFlow" ["l"="50.419,32.928"]
+"lewes6369/TensorRT-Yolov3" ["l"="51.677,33.235", "c"=354]
+"Qidian213/deep_sort_yolov3" ["l"="54.588,32.67", "c"=279]
+"coldlarry/YOLOv3-complete-pruning" ["l"="52.809,33.362", "c"=271]
+"wizyoung/YOLOv3_TensorFlow" ["l"="50.419,32.928", "c"=314]
 "intel/ros_opencl_caffe" ["l"="64.371,-2.756"]
 "intel/ros2_intel_movidius_ncs" ["l"="64.355,-2.729"]
 "Orange-OpenSource/python-ngsild-client" ["l"="64.654,-2.504"]
@@ -950,14 +1047,15 @@ digraph G {
 "fareespatel/E-Commerce-Datawarehouse-implementation" ["l"="64.466,-2.539"]
 "noi-techpark/big-data-for-tourism" ["l"="64.462,-2.59"]
 "Team-HSP/Recommendation-System-Hadoop" ["l"="64.453,-2.555"]
-"wg-perception/people" ["l"="61.638,13.743"]
+"wg-perception/people" ["l"="61.638,13.743", "c"=313]
 "IntelRealSense/realsense_samples_ros" ["l"="64.409,-2.816"]
 "introlab/find-object" ["l"="64.419,-2.784"]
-"strands-project/strands_perception_people" ["l"="61.655,13.799"]
-"atenpas/gpd" ["l"="60.223,15.775"]
+"strands-project/strands_perception_people" ["l"="61.655,13.799", "c"=313]
+"atenpas/gpd" ["l"="60.223,15.775", "c"=1042]
 "ros-industrial/easy_manipulation_deployment" ["l"="64.422,-2.877"]
 "FIWARE/tutorials.Time-Series-Data" ["l"="64.741,-2.594"]
 "FIWARE/tutorials.PEP-Proxy" ["l"="64.748,-2.614"]
+"intel/intel-device-plugins-for-kubernetes" ["l"="8.305,-9.503", "c"=14]
 "FIWARE/tutorials.IoT-over-MQTT" ["l"="64.775,-2.61"]
 "FIWARE/tutorials.IoT-Agent" ["l"="64.796,-2.621"]
 "stongey/PhotoRestore" ["l"="63.988,-2.311"]
@@ -965,15 +1063,15 @@ digraph G {
 "OpenVisualCloud/Video-Conferencing-Sample" ["l"="64.405,-2.513"]
 "molpopgen/gimp_scripts" ["l"="63.825,-2.409"]
 "OpenVisualCloud/CDN-Transcode-Sample" ["l"="64.432,-2.516"]
-"OpenVisualCloud/Cloud-Gaming-Windows-Sample" ["l"="64.396,-2.475"]
 "OpenVisualCloud/VCAC-SW" ["l"="64.379,-2.502"]
 "UserUnknownFactor/GIMP3-ML" ["l"="63.937,-2.298"]
 "manu12121999/RemoveBG-GIMP" ["l"="63.96,-2.311"]
 "ArtBIT/stable-gimpfusion" ["l"="63.961,-2.361"]
-"MaurycyLiebner/enve" ["l"="-32.938,-29.381"]
-"google-research/maxim" ["l"="-34.958,21.381"]
+"MaurycyLiebner/enve" ["l"="-32.938,-29.381", "c"=1012]
+"google-research/maxim" ["l"="-34.958,21.381", "c"=127]
 "thndrbrrr/gimp-stable-boy" ["l"="63.958,-2.38"]
-"csjliang/LPTN" ["l"="-33.552,23.012"]
+"csjliang/LPTN" ["l"="-33.552,23.012", "c"=616]
+"onepanelio/onepanel" ["l"="7.69,-9.96", "c"=14]
 "open-edge-platform/infra-core" ["l"="64.07,-2.647"]
 "open-edge-platform/edge-ai-libraries" ["l"="64.075,-2.659"]
 "open-edge-platform/cluster-api-provider-intel" ["l"="64.093,-2.649"]
@@ -985,43 +1083,47 @@ digraph G {
 "open-edge-platform/edge-ai-suites" ["l"="64.092,-2.676"]
 "stellio-hub/stellio-context-broker" ["l"="64.679,-2.484"]
 "intel/intel-npu-acceleration-library" ["l"="64.076,-2.433"]
-"intel/ipex-llm" ["l"="-2.505,17.132"]
+"intel/ipex-llm" ["l"="-2.505,17.132", "c"=455]
 "intel/AI-Playground" ["l"="64.028,-2.474"]
 "intel/xFasterTransformer" ["l"="64.192,-2.413"]
-"intel/llvm" ["l"="64.202,-1.989"]
-"mit-han-lab/smoothquant" ["l"="38.848,-0.318"]
-"quic/aimet" ["l"="52.582,33.376"]
-"OpenPPL/ppq" ["l"="52.571,33.354"]
-"Efficient-ML/Awesome-Model-Quantization" ["l"="52.603,33.399"]
-"IST-DASLab/gptq" ["l"="38.814,-0.37"]
-"ModelTC/MQBench" ["l"="52.551,33.403"]
-"mit-han-lab/llm-awq" ["l"="38.87,-0.434"]
-"huggingface/optimum" ["l"="38.709,-0.64"]
-"bitsandbytes-foundation/bitsandbytes" ["l"="38.792,-0.631"]
-"VainF/Torch-Pruning" ["l"="52.647,33.355"]
-"Zhen-Dong/HAWQ" ["l"="52.575,33.451"]
+"intel/llvm" ["l"="64.202,-1.989", "c"=477]
+"mit-han-lab/smoothquant" ["l"="38.848,-0.318", "c"=39]
+"quic/aimet" ["l"="52.582,33.376", "c"=271]
+"OpenPPL/ppq" ["l"="52.571,33.354", "c"=271]
+"Efficient-ML/Awesome-Model-Quantization" ["l"="52.603,33.399", "c"=271]
+"IST-DASLab/gptq" ["l"="38.814,-0.37", "c"=39]
+"ModelTC/MQBench" ["l"="52.551,33.403", "c"=271]
+"mit-han-lab/llm-awq" ["l"="38.87,-0.434", "c"=39]
+"huggingface/optimum" ["l"="38.709,-0.64", "c"=39]
+"bitsandbytes-foundation/bitsandbytes" ["l"="38.792,-0.631", "c"=39]
+"VainF/Torch-Pruning" ["l"="52.647,33.355", "c"=271]
+"Zhen-Dong/HAWQ" ["l"="52.575,33.451", "c"=271]
 "openvinotoolkit/openvino_contrib" ["l"="64.095,-2.513"]
-"jakc4103/DFQ" ["l"="52.547,33.437"]
-"deepglint/EasyQuant" ["l"="52.568,33.435"]
-"IntelLabs/distiller" ["l"="52.71,33.427"]
-"666DZY666/micronet" ["l"="52.669,33.387"]
-"megvii-research/FQ-ViT" ["l"="52.531,33.421"]
-"andyzeng/apc-vision-toolbox" ["l"="59.223,15.689"]
-"introlab/rtabmap_ros" ["l"="60.336,12.579"]
-"paulbovbel/frontier_exploration" ["l"="61.513,13.66"]
-"srv/viso2" ["l"="59.571,10.928"]
-"pal-robotics/aruco_ros" ["l"="60.8,11.741"]
-"OctoMap/octomap_mapping" ["l"="60.421,13.675"]
-"pirobot/rbx1" ["l"="60.2,12.528"]
-"ros/executive_smach" ["l"="59.177,12.843"]
-"ros-perception/vision_opencv" ["l"="60.348,12.529"]
+"jakc4103/DFQ" ["l"="52.547,33.437", "c"=271]
+"deepglint/EasyQuant" ["l"="52.568,33.435", "c"=271]
+"IntelLabs/distiller" ["l"="52.71,33.427", "c"=271]
+"666DZY666/micronet" ["l"="52.669,33.387", "c"=271]
+"megvii-research/FQ-ViT" ["l"="52.531,33.421", "c"=271]
+"theAIGuysCode/yolov4-custom-functions" ["l"="54.714,32.577", "c"=279]
+"microsoft/Olive" ["l"="-44.227,6.132", "c"=1131]
+"andyzeng/apc-vision-toolbox" ["l"="59.223,15.689", "c"=536]
+"introlab/rtabmap_ros" ["l"="60.336,12.579", "c"=286]
+"paulbovbel/frontier_exploration" ["l"="61.513,13.66", "c"=313]
+"srv/viso2" ["l"="59.571,10.928", "c"=87]
+"pal-robotics/aruco_ros" ["l"="60.8,11.741", "c"=632]
+"OctoMap/octomap_mapping" ["l"="60.421,13.675", "c"=334]
+"pirobot/rbx1" ["l"="60.2,12.528", "c"=286]
+"ros/executive_smach" ["l"="59.177,12.843", "c"=299]
+"ros-perception/vision_opencv" ["l"="60.348,12.529", "c"=286]
+"intel/xpumanager" ["l"="63.973,-2.549"]
 "aws-samples/aws-stf" ["l"="64.626,-2.509"]
 "rushitjasani/Wikipedia-Search-Engine" ["l"="64.494,-2.56"]
 "smart-data-models/SmartEnergy" ["l"="64.588,-2.525"]
-"Azure/opendigitaltwins-smartcities" ["l"="-17.978,-41.718"]
+"Azure/opendigitaltwins-smartcities" ["l"="-17.978,-41.718", "c"=1009]
 "kamilburda/batcher" ["l"="63.841,-2.341"]
 "linux-source-tools/gimp-plugin-vtf" ["l"="63.811,-2.353"]
-"aferrero2707/gimp-appimage" ["l"="-13.766,-0.75"]
+"aferrero2707/gimp-appimage" ["l"="-13.766,-0.75", "c"=152]
+"yehengchen/Object-Grasp-Detection-ROS" ["l"="60.221,15.705", "c"=1042]
 "intel/ideep" ["l"="64.248,-2.382"]
 "intel/intel-extension-for-deepspeed" ["l"="64.175,-2.369"]
 "TNTWEN/OpenVINO-YOLO-Automatic-Generation" ["l"="64.168,-2.74"]
@@ -1030,6 +1132,8 @@ digraph G {
 "Atharvak19/Big-Data-Medicare-Fraud-Detection" ["l"="64.513,-2.502"]
 "ymericson/big-data-streets" ["l"="64.496,-2.516"]
 "GoogleCloudPlatform/df-ml-anomaly-detection" ["l"="64.496,-2.611"]
+"oneapi-src/level-zero" ["l"="64.182,-1.977", "c"=477]
+"openvinotoolkit/npu_compiler" ["l"="64.055,-2.443"]
 "ros-industrial/easy_perception_deployment" ["l"="64.438,-2.896"]
 "HabanaAI/Model-References" ["l"="64.103,-2.335"]
 "huggingface/optimum-habana" ["l"="64.106,-2.366"]
@@ -1039,129 +1143,147 @@ digraph G {
 "HabanaAI/Gaudi-tutorials" ["l"="64.116,-2.318"]
 "HabanaAI/Setup_and_Install" ["l"="64.113,-2.294"]
 "jdgalviss/autonomous_mobile_robot" ["l"="64.355,-2.961"]
-"jdgalviss/jetbot-ros2" ["l"="64.354,-2.933"]
-"open-edge-platform/anomalib" ["l"="53.273,14.119"]
-"bes-dev/stable_diffusion.openvino" ["l"="32.049,32.062"]
+"open-edge-platform/anomalib" ["l"="53.273,14.119", "c"=669]
+"bes-dev/stable_diffusion.openvino" ["l"="32.049,32.062", "c"=88]
 "openvinotoolkit/openvino_build_deploy" ["l"="64.123,-2.506"]
-"roboflow/notebooks" ["l"="47.729,26.311"]
+"roboflow/notebooks" ["l"="47.729,26.311", "c"=323]
+"neuralmagic/sparseml" ["l"="38.699,-0.407", "c"=39]
+"pnggroup/libpng" ["l"="-19.37,-25.594", "c"=10]
+"GreycLab/CImg" ["l"="63.787,-2.251"]
+"rh12503/triangula" ["l"="44.805,26.066", "c"=68]
+"ermig1979/Simd" ["l"="-19.57,-26.205", "c"=10]
 "dtschump/gmic" ["l"="63.72,-2.319"]
 "dtschump/gmic-minimal" ["l"="63.689,-2.317"]
 "draekko/gimp-cc-themes" ["l"="63.865,-2.256"]
-"mifth/mifthtools" ["l"="-32.829,-27.664"]
-"specoolar/Blender-BakeLab2" ["l"="-32.944,-27.655"]
-"danielenger/Principled-Baker" ["l"="-32.91,-27.618"]
-"egtwobits/mesh_mesh_align_plus" ["l"="-32.846,-27.647"]
-"BenjaminSauder/EdgeFlow" ["l"="-32.815,-27.69"]
+"mifth/mifthtools" ["l"="-32.829,-27.664", "c"=185]
+"specoolar/Blender-BakeLab2" ["l"="-32.944,-27.655", "c"=185]
+"danielenger/Principled-Baker" ["l"="-32.91,-27.618", "c"=185]
+"egtwobits/mesh_mesh_align_plus" ["l"="-32.846,-27.647", "c"=185]
+"BenjaminSauder/EdgeFlow" ["l"="-32.815,-27.69", "c"=185]
 "carlobaldassi/gimp-lqr-plugin" ["l"="63.914,-2.27"]
+"neuralmagic/deepsparse" ["l"="38.731,-0.469", "c"=39]
+"huggingface/dataset-viewer" ["l"="38.54,-0.924", "c"=39]
 "ros-industrial/ros2_i_training" ["l"="64.453,-2.916"]
 "fmrico/ros_to_ros2_talk_examples" ["l"="64.473,-2.942"]
-"GreycLab/CImg" ["l"="63.787,-2.251"]
-"ermig1979/Simd" ["l"="-19.57,-26.205"]
-"syoyo/tinyexr" ["l"="-24.684,-27.904"]
-"AcademySoftwareFoundation/OpenImageIO" ["l"="-31.264,-27.4"]
-"pnggroup/libpng" ["l"="-19.37,-25.594"]
-"p-ranav/awesome-hpp" ["l"="-19.953,-26.007"]
-"liuliu/ccv" ["l"="-31.562,-35.605"]
-"tiny-dnn/tiny-dnn" ["l"="47.785,29.128"]
-"cnjinhao/nana" ["l"="-21.446,-27.359"]
-"lvandeve/lodepng" ["l"="-22.043,-25.696"]
-"fraillt/bitsery" ["l"="-19.967,-26.082"]
-"svgpp/svgpp" ["l"="-22.455,-25.54"]
-"blend2d/blend2d" ["l"="-22.381,-25.575"]
-"libjpeg-turbo/libjpeg-turbo" ["l"="-38.084,20.879"]
-"USCiLab/cereal" ["l"="-19.923,-25.873"]
+"syoyo/tinyexr" ["l"="-24.684,-27.904", "c"=145]
+"AcademySoftwareFoundation/OpenImageIO" ["l"="-31.264,-27.4", "c"=194]
+"p-ranav/awesome-hpp" ["l"="-19.953,-26.007", "c"=10]
+"liuliu/ccv" ["l"="-31.562,-35.605", "c"=272]
+"tiny-dnn/tiny-dnn" ["l"="47.785,29.128", "c"=89]
+"cnjinhao/nana" ["l"="-21.446,-27.359", "c"=730]
+"lvandeve/lodepng" ["l"="-22.043,-25.696", "c"=101]
+"fraillt/bitsery" ["l"="-19.967,-26.082", "c"=10]
+"svgpp/svgpp" ["l"="-22.455,-25.54", "c"=101]
+"blend2d/blend2d" ["l"="-22.381,-25.575", "c"=101]
+"libjpeg-turbo/libjpeg-turbo" ["l"="-38.084,20.879", "c"=853]
+"USCiLab/cereal" ["l"="-19.923,-25.873", "c"=10]
 "openvinotoolkit/openvino_tokenizers" ["l"="64.082,-2.492"]
 "IGCIT/Intel-GPU-Community-Issue-Tracker-IGCIT" ["l"="63.936,-2.518"]
 "Solaris17/ARC-Firmware-Tool" ["l"="63.889,-2.538"]
 "paulober/ArcticControl" ["l"="63.91,-2.519"]
 "JamesCJ60/Intel-ARC-Game-Enhancer" ["l"="63.922,-2.545"]
-"GreycLab/gmic-community" ["l"="63.774,-2.318"]
+"fb029ed/yolov5_cpp_openvino" ["l"="53.461,32.81", "c"=251]
 "intel/drivers.gpu.control-library" ["l"="63.934,-2.564"]
 "HabanaAI/Habana_Custom_Kernel" ["l"="64.069,-2.291"]
+"amd/OpenCL-caffe" ["l"="64.359,-2.01", "c"=477]
+"01org/caffe" ["l"="64.411,-2.741"]
+"alibaba/TinyNeuralNetwork" ["l"="49.836,29.971", "c"=83]
 "BenShoeman/gimp-photoshop-profile" ["l"="63.892,-2.239"]
-"keeferrourke/la-capitaine-icon-theme" ["l"="-16.264,-0.011"]
-"Manuel-Kehl/elementaryPlus" ["l"="-18.796,-1.362"]
-"glimpse-editor/Glimpse" ["l"="-48.558,1.091"]
-"bilelmoussaoui/Hardcode-Tray" ["l"="-16.328,0.026"]
-"adapta-project/adapta-gtk-theme" ["l"="-16.347,-0.018"]
-"hectorm/elementary-dropbox" ["l"="-18.802,-1.342"]
-"horst3180/arc-firefox-theme" ["l"="-16.375,-0.061"]
-"PapirusDevelopmentTeam/arc-kde" ["l"="-16.325,0.054"]
-"b4j4/indicator-kdeconnect" ["l"="-17.46,-1.27"]
+"keeferrourke/la-capitaine-icon-theme" ["l"="-16.264,-0.011", "c"=339]
+"Manuel-Kehl/elementaryPlus" ["l"="-18.796,-1.362", "c"=478]
+"glimpse-editor/Glimpse" ["l"="-48.558,1.091", "c"=475]
+"bilelmoussaoui/Hardcode-Tray" ["l"="-16.328,0.026", "c"=339]
+"adapta-project/adapta-gtk-theme" ["l"="-16.347,-0.018", "c"=339]
+"hectorm/elementary-dropbox" ["l"="-18.802,-1.342", "c"=478]
+"horst3180/arc-firefox-theme" ["l"="-16.375,-0.061", "c"=339]
+"PapirusDevelopmentTeam/arc-kde" ["l"="-16.325,0.054", "c"=339]
+"b4j4/indicator-kdeconnect" ["l"="-17.46,-1.27", "c"=813]
+"insight-platform/Savant" ["l"="53.084,32.532", "c"=251]
 "GNOME/gegl" ["l"="63.778,-2.291"]
 "GNOME/babl" ["l"="63.749,-2.284"]
-"intel/xpumanager" ["l"="63.973,-2.549"]
-"intel/xetla" ["l"="37.191,1.166"]
+"intel/xetla" ["l"="37.191,1.166", "c"=112]
 "intel/igsc" ["l"="63.953,-2.583"]
 "intel/ai-workflows" ["l"="63.97,-2.573"]
 "intel/neural-speed" ["l"="64.119,-2.404"]
 "intel/linux-npu-driver" ["l"="64.076,-2.458"]
-"intel/auto-round" ["l"="38.638,-0.202"]
+"intel/auto-round" ["l"="38.638,-0.202", "c"=39]
 "opea-project/GenAIComps" ["l"="64.124,-2.362"]
-"openvinotoolkit/npu_compiler" ["l"="64.055,-2.443"]
 "huggingface/tgi-gaudi" ["l"="64.09,-2.393"]
 "OpenVINO-dev-contest/llama2.openvino" ["l"="64.073,-2.478"]
-"01org/caffe" ["l"="64.411,-2.741"]
 "huggingface/optimum-graphcore" ["l"="64.093,-2.304"]
 "ttracx/project-cyberitis" ["l"="64.489,-2.577"]
+"sddebz/stable-diffusion-krita-plugin" ["l"="31.904,31.978", "c"=88]
+"nousr/koi" ["l"="31.906,32.008", "c"=88]
+"openvinotoolkit/stable-diffusion-webui" ["l"="64.001,-2.455"]
+"Haidra-Org/AI-Horde" ["l"="42.918,-2.01", "c"=1097]
+"opencv/opencv_extra" ["l"="59.382,10.894", "c"=87]
 "intel/intel-extension-for-openxla" ["l"="64.25,-2.416"]
-"codeplaysoftware/cutlass-sycl" ["l"="37.179,1.181"]
+"codeplaysoftware/cutlass-sycl" ["l"="37.179,1.181", "c"=112]
 "open-edge-platform/trusted-compute" ["l"="64.077,-2.613"]
 "open-edge-platform/cluster-manager" ["l"="64.066,-2.618"]
 "open-edge-platform/edge-microvisor-toolkit" ["l"="64.056,-2.664"]
 "open-edge-platform/o11y-tenant-controller" ["l"="64.062,-2.63"]
-"flashinfer-ai/flashinfer" ["l"="38.975,-0.486"]
-"casper-hansen/AutoAWQ" ["l"="38.845,-0.427"]
-"deepspeedai/DeepSpeed-MII" ["l"="38.873,-0.556"]
-"SJTU-IPADS/PowerInfer" ["l"="38.998,-0.659"]
-"AutoGPTQ/AutoGPTQ" ["l"="38.79,-0.529"]
+"flashinfer-ai/flashinfer" ["l"="38.975,-0.486", "c"=39]
+"casper-hansen/AutoAWQ" ["l"="38.845,-0.427", "c"=39]
+"deepspeedai/DeepSpeed-MII" ["l"="38.873,-0.556", "c"=39]
+"SJTU-IPADS/PowerInfer" ["l"="38.998,-0.659", "c"=39]
+"AutoGPTQ/AutoGPTQ" ["l"="38.79,-0.529", "c"=39]
 "opea-project/GenAIExamples" ["l"="64.143,-2.368"]
-"microsoft/T-MAC" ["l"="38.909,-0.291"]
-"intel/openvino-plugins-ai-audacity" ["l"="36.807,4.121"]
+"microsoft/T-MAC" ["l"="38.909,-0.291", "c"=39]
+"intel/openvino-plugins-ai-audacity" ["l"="36.807,4.121", "c"=128]
 "intel/openvino-plugins-for-obs-studio" ["l"="63.958,-2.419"]
-"openvinotoolkit/stable-diffusion-webui" ["l"="64.001,-2.455"]
-"nousr/koi" ["l"="31.906,32.008"]
-"sddebz/stable-diffusion-krita-plugin" ["l"="31.904,31.978"]
 "blueturtleai/krita-stable-diffusion" ["l"="63.913,-2.4"]
-"ZeldaFan0225/AI_Horde_Discord" ["l"="43.018,-2.077"]
+"ZeldaFan0225/AI_Horde_Discord" ["l"="43.018,-2.077", "c"=1097]
 "rahulunair/stable_diffusion_arc" ["l"="63.933,-2.471"]
 "Aloereed/stable-diffusion-webui-arc-directml" ["l"="63.96,-2.474"]
 "jbaboval/stable-diffusion-webui" ["l"="63.957,-2.454"]
 "Aloereed/stable-diffusion-webui-ipex-arc" ["l"="63.974,-2.461"]
+"menloresearch/awesome-local-ai" ["l"="41.042,0.594", "c"=7]
 "Solaris17/Arc-Firmware" ["l"="63.869,-2.547"]
 "Nuullll/ipex-sd-docker-for-arc-gpu" ["l"="63.987,-2.475"]
-"modelscope/dash-infer" ["l"="38.841,-1.722"]
+"modelscope/dash-infer" ["l"="38.841,-1.722", "c"=202]
 "intel/fastgo" ["l"="64.218,-2.366"]
-"AlibabaPAI/llumnix" ["l"="39.053,-0.433"]
-"alibaba/rtp-llm" ["l"="39.011,-0.464"]
-"LLMServe/DistServe" ["l"="39.035,-0.434"]
-"efeslab/Nanoflow" ["l"="39.005,-0.418"]
+"AlibabaPAI/llumnix" ["l"="39.053,-0.433", "c"=39]
+"alibaba/rtp-llm" ["l"="39.011,-0.464", "c"=39]
+"LLMServe/DistServe" ["l"="39.035,-0.434", "c"=39]
+"efeslab/Nanoflow" ["l"="39.005,-0.418", "c"=39]
 "intel/accelerator-solution-zoo" ["l"="64.212,-2.383"]
-"mit-han-lab/Quest" ["l"="38.991,-0.289"]
-"galeselee/Awesome_LLM_System-PaperList" ["l"="39.07,-0.403"]
-"microsoft/sarathi-serve" ["l"="39.05,-0.392"]
+"mit-han-lab/Quest" ["l"="38.991,-0.289", "c"=39]
+"galeselee/Awesome_LLM_System-PaperList" ["l"="39.07,-0.403", "c"=39]
+"microsoft/sarathi-serve" ["l"="39.05,-0.392", "c"=39]
 "open-edge-platform/o11y-sre-exporter" ["l"="64.137,-2.682"]
 "c-koi/zart" ["l"="63.805,-2.305"]
 "HabanaAI/Megatron-DeepSpeed" ["l"="64.062,-2.328"]
 "slyalin/openvino_devtools" ["l"="64.07,-2.504"]
-"openvinotoolkit/workbench" ["l"="34.316,30.359"]
+"openvinotoolkit/workbench" ["l"="34.316,30.359", "c"=892]
+"dvmazur/mixtral-offloading" ["l"="38.805,-0.477", "c"=39]
 "mattcurf/ollama-intel-gpu" ["l"="63.983,-2.512"]
 "eleiton/ollama-intel-arc" ["l"="63.96,-2.528"]
+"b4rtaz/distributed-llama" ["l"="40.719,0.628", "c"=7]
+"rupeshs/fastsdcpu" ["l"="40.224,0.963", "c"=7]
+"microsoft/onnxruntime-genai" ["l"="-44.231,6.165", "c"=1131]
 "opea-project/GenAIEval" ["l"="64.133,-2.341"]
 "opea-project/GenAIInfra" ["l"="64.143,-2.328"]
 "opea-project/docs" ["l"="64.15,-2.341"]
-"oneapi-src/SYCLomatic" ["l"="64.135,-1.986"]
-"oneapi-src/level-zero" ["l"="64.182,-1.977"]
-"amd/RyzenAI-SW" ["l"="31.734,-2.509"]
-"spcl/pymlir" ["l"="37.199,1.073"]
-"Xilinx/llvm-aie" ["l"="31.706,-2.482"]
+"oneapi-src/SYCLomatic" ["l"="64.135,-1.986", "c"=477]
+"amd/RyzenAI-SW" ["l"="31.734,-2.509", "c"=212]
+"spcl/pymlir" ["l"="37.199,1.073", "c"=112]
+"Xilinx/llvm-aie" ["l"="31.706,-2.482", "c"=212]
+"digitalbrain79/darknet-nnpack" ["l"="51.657,33.164", "c"=354]
 "Yash-Kavaiya/GenAI-Projects" ["l"="64.168,-2.342"]
 "opea-project/GenAIStudio" ["l"="64.157,-2.294"]
 "intel/ixl-go" ["l"="64.232,-2.342"]
+"IntelLabs/RAG-FiT" ["l"="41.337,0.637", "c"=7]
 "SearchSavior/OpenArc" ["l"="64.018,-2.518"]
-"intel/xess" ["l"="-23.103,-27.696"]
+"intel/xess" ["l"="-23.103,-27.696", "c"=26]
 "Disty0/ipex_to_cuda" ["l"="64.009,-2.492"]
+"google/aiyprojects-raspbian" ["l"="35.613,1.402", "c"=1086]
+"intel/clDNN" ["l"="64.228,-2.093", "c"=477]
+"ryouchinsa/Rectlabel-support" ["l"="50.223,29.368", "c"=83]
+"mostlygeek/llama-swap" ["l"="42.811,1.652", "c"=952]
+"RobotWebTools/ros2-web-bridge" ["l"="59.096,12.552", "c"=299]
 "ihere1/movidius-face" ["l"="64.299,-2.693"]
 "open-edge-platform/cluster-connect-gateway" ["l"="64.045,-2.652"]
 "open-edge-platform/cluster-tests" ["l"="64.045,-2.638"]
+"ExamProCo/free-genai-bootcamp-2025" ["l"="29.032,-25.365", "c"=530]
 }

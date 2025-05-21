@@ -80,6 +80,9 @@ digraph G {
 "FlUxIuS/V2GInjector" -> "ChargePoint/wireshark-v2g"
 "FlUxIuS/V2GInjector" -> "devolo/dlan-greenphy-sdk"
 "FlUxIuS/V2GInjector" -> "SwitchEV/RISE-V2G"
+"joshwardell/model3dbc" -> "damienmaguire/Tesla-Model-3-Battery-BMS" ["e"=1]
+"joshwardell/model3dbc" -> "damienmaguire/Tesla-Model-3-Charger" ["e"=1]
+"Lunars/tesla" -> "damienmaguire/Tesla-Model-3-Charger" ["e"=1]
 "ZeMorfe/nodejs_ocpp16_client" -> "mikuso/ocpp-rpc"
 "JavaIsJavaScript/OCPP-1.6-CP-Simulator" -> "JavaIsJavaScript/OCPP-2.0-CP-Simulator"
 "ShellRechargeSolutionsEU/docile-charge-point" -> "IHomer/scala-ocpp"
@@ -117,6 +120,8 @@ digraph G {
 "mliras/OCPP_Server" -> "Millisman/Small-OCPP-1.6"
 "elupus/nibeuplink" -> "yozik04/nibe_downlink"
 "Tom-evnut/OutlanderPHEVBMS" -> "damienmaguire/Outlander-PHEV"
+"evcc-io/evcc" -> "steve-community/steve" ["e"=1]
+"evcc-io/evcc" -> "dalathegreat/Battery-Emulator" ["e"=1]
 "matth-x/MicroOcpp" -> "matth-x/MicroOcppSimulator"
 "matth-x/MicroOcpp" -> "mobilityhouse/ocpp"
 "matth-x/MicroOcpp" -> "steve-community/steve"
@@ -221,6 +226,8 @@ digraph G {
 "lbbrhzn/ocpp" -> "evcc-io/hassio-addon" ["e"=1]
 "lbbrhzn/ocpp" -> "ChargeTimeEU/Java-OCA-OCPP"
 "lbbrhzn/ocpp" -> "juherr/awesome-ev-charging"
+"flobz/psa_car_controller" -> "lbbrhzn/ocpp" ["e"=1]
+"psvanstrom/esphome-p1reader" -> "anerdins/nibepi" ["e"=1]
 "damienmaguire/Stm32-vcu" -> "uhi22/ccs32clara"
 "damienmaguire/Stm32-vcu" -> "jsphuebner/stm32-car"
 "damienmaguire/Stm32-vcu" -> "damienmaguire/Nissan-Leaf-Inverter-Controller"
@@ -249,6 +256,7 @@ digraph G {
 "damienmaguire/Tesla-Model-3-Charge-Port-Controller" -> "mdrobnak/cpcontrol-redacted"
 "mdrobnak/cpcontrol-redacted" -> "damienmaguire/Tesla-Model-3-Charge-Port-Controller"
 "shaurya101/BMS" -> "DaveBlackH/NissanLeafBMS"
+"jonkpirateboy/Pass-fur-alle" -> "anerdins/nibepi" ["e"=1]
 "SAP/e-mobility-charging-stations-simulator" -> "matth-x/MicroOcppSimulator"
 "SAP/e-mobility-charging-stations-simulator" -> "victormunoz/OCPP-1.6-Chargebox-Simulator"
 "SAP/e-mobility-charging-stations-simulator" -> "sap-labs-france/ev-server"
@@ -312,6 +320,7 @@ digraph G {
 "EcoG-io/pyslac" -> "EVerest/cbexigen"
 "yozik04/nibe" -> "yozik04/nibe-mqtt"
 "yozik04/nibe" -> "elupus/esphome-nibe"
+"davidusb-geek/emhass" -> "lbbrhzn/ocpp" ["e"=1]
 "EVerest/everest-core" -> "EVerest/EVerest"
 "EVerest/everest-core" -> "EVerest/everest-framework"
 "EVerest/everest-core" -> "EVerest/libocpp"
@@ -498,6 +507,7 @@ digraph G {
 "EVerest/libcbv2g" -> "EVerest/cbexigen"
 "SmartEVSE/ESP32-PLC" -> "uhi22/ccs32berta"
 "uhi22/ccs32berta" -> "SmartEVSE/ESP32-PLC"
+"OpenEMS/openems" -> "steve-community/steve" ["e"=1]
 "qca/open-plc-utils" -> "qca/qca7000"
 "qca/open-plc-utils" -> "SwitchEV/RISE-V2G"
 "qca/open-plc-utils" -> "Martin-P/OpenV2G"
@@ -543,8 +553,10 @@ digraph G {
 "sap-labs-france/ev-server" -> "matth-x/MicroOcpp"
 "sap-labs-france/ev-server" -> "thoughtworks/maeve-csms"
 "sap-labs-france/ev-server" -> "aws-solutions-library-samples/guidance-for-modernizing-electric-vehicle-charging-on-aws"
+"collin80/TeslaBMS" -> "Tom-evnut/TeslaBMSV2" ["e"=1]
 "slezoric/ISO15118-car-charging" -> "rcuquemelle/ISO15118_4_TestEnv"
 "slezoric/ISO15118-car-charging" -> "Ecognize/openv2g"
+"openvehicles/Open-Vehicle-Monitoring-System-3" -> "dalathegreat/leaf_can_bus_messages" ["e"=1]
 "damienmaguire/Tesla-Drive-Unit" -> "damienmaguire/Tesla-Front-Drive-Unit"
 "damienmaguire/Tesla-Drive-Unit" -> "damienmaguire/Tesla-Charger"
 "damienmaguire/Tesla-Drive-Unit" -> "jsphuebner/stm32-sine"
@@ -616,7 +628,7 @@ digraph G {
 "damienmaguire/Tesla-Charger" ["l"="-12.797,18.838"]
 "damienmaguire/Tesla-Front-Drive-Unit" ["l"="-12.804,18.854"]
 "dimecho/Open-Inverter-WebInterface" ["l"="-12.776,18.823"]
-"osannolik/MotCtrl" ["l"="25.79,-26.661"]
+"osannolik/MotCtrl" ["l"="25.79,-26.661", "c"=32]
 "hubject/oicp" ["l"="-12.767,18.536"]
 "hubject/opcp" ["l"="-12.778,18.568"]
 "e-clearing-net/OCHP" ["l"="-12.787,18.536"]
@@ -626,11 +638,14 @@ digraph G {
 "ChargePoint/wireshark-v2g" ["l"="-12.786,18.648"]
 "devolo/dlan-greenphy-sdk" ["l"="-12.804,18.649"]
 "SwitchEV/RISE-V2G" ["l"="-12.773,18.602"]
+"joshwardell/model3dbc" ["l"="-14.967,-23.542", "c"=1145]
+"damienmaguire/Tesla-Model-3-Battery-BMS" ["l"="-12.822,18.889"]
+"damienmaguire/Tesla-Model-3-Charger" ["l"="-12.808,18.88"]
+"Lunars/tesla" ["l"="-14.938,-23.553", "c"=1145]
 "mikuso/ocpp-rpc" ["l"="-12.678,18.512"]
 "IHomer/scala-ocpp" ["l"="-12.689,18.506"]
 "damienmaguire/Tesla-Model-3-Drive-Unit" ["l"="-12.841,18.884"]
 "damienmaguire/Tesla-Model-3-Charge-Port-Controller" ["l"="-12.825,18.854"]
-"damienmaguire/Tesla-Model-3-Battery-BMS" ["l"="-12.822,18.889"]
 "evbox/station-simulator" ["l"="-12.638,18.488"]
 "FlUxIuS/HomePlugPWN" ["l"="-12.861,18.642"]
 "sogeti-esec-lab/HomePlugPWN" ["l"="-12.855,18.626"]
@@ -643,13 +658,14 @@ digraph G {
 "mliras/OCPP_Server" ["l"="-12.601,18.631"]
 "Tom-evnut/TeslaBMSV2" ["l"="-13.019,18.693"]
 "Tom-evnut/BMWPhevBMS" ["l"="-13.014,18.676"]
-"damienmaguire/Tesla-Model-3-Charger" ["l"="-12.808,18.88"]
 "geynis/v2g-ws-dissectors" ["l"="-12.838,18.649"]
 "Millisman/Small-OCPP-1.6" ["l"="-12.624,18.619"]
 "elupus/nibeuplink" ["l"="-13.167,18.721"]
 "yozik04/nibe_downlink" ["l"="-13.177,18.733"]
 "Tom-evnut/OutlanderPHEVBMS" ["l"="-12.777,18.779"]
 "damienmaguire/Outlander-PHEV" ["l"="-12.801,18.776"]
+"evcc-io/evcc" ["l"="-12.51,19.462", "c"=1678]
+"dalathegreat/Battery-Emulator" ["l"="-12.94,18.717"]
 "c-jimenez/open-ocpp" ["l"="-12.664,18.586"]
 "apostoldevel/ocpp-cs" ["l"="-12.652,18.578"]
 "parikshittyagi/ocppClientJ1.6" ["l"="-12.647,18.621"]
@@ -672,7 +688,7 @@ digraph G {
 "jsphuebner/stm32-car" ["l"="-12.864,18.763"]
 "dalathegreat/EV-CANlogs" ["l"="-12.851,18.737"]
 "dalathegreat/Nissan-LEAF-Battery-Upgrade" ["l"="-12.923,18.776"]
-"openvehicles/Open-Vehicle-Monitoring-System-3" ["l"="-14.502,-24.223"]
+"openvehicles/Open-Vehicle-Monitoring-System-3" ["l"="-14.502,-24.223", "c"=236]
 "lincomatic/LeafCAN" ["l"="-12.946,18.754"]
 "DaveBlackH/NissanLeafBMS" ["l"="-12.93,18.793"]
 "Isaac96/CHAdeMOSoftware" ["l"="-12.787,18.719"]
@@ -691,8 +707,10 @@ digraph G {
 "OpenChargingCloud/WWCP_OCPP" ["l"="-12.615,18.552"]
 "citrineos/citrineos" ["l"="-12.693,18.598"]
 "vnbaaij/OCPP.NET" ["l"="-12.638,18.541"]
-"davidusb-geek/emhass" ["l"="-15.94,-38.038"]
-"evcc-io/hassio-addon" ["l"="-12.477,19.505"]
+"davidusb-geek/emhass" ["l"="-15.94,-38.038", "c"=1238]
+"evcc-io/hassio-addon" ["l"="-12.477,19.505", "c"=1678]
+"flobz/psa_car_controller" ["l"="-14.808,-24.863", "c"=2259]
+"psvanstrom/esphome-p1reader" ["l"="-15.771,-37.853", "c"=1238]
 "uhi22/ccs32clara" ["l"="-12.828,18.691"]
 "uhi22/foccci" ["l"="-12.842,18.716"]
 "damienmaguire/BMW-i3-CCS" ["l"="-12.847,18.803"]
@@ -706,6 +724,7 @@ digraph G {
 "codelabsab/ocpp-csms-server" ["l"="-12.76,18.49"]
 "mdrobnak/cpcontrol-redacted" ["l"="-12.839,18.864"]
 "shaurya101/BMS" ["l"="-12.946,18.813"]
+"jonkpirateboy/Pass-fur-alle" ["l"="-32.122,-36.466", "c"=1115]
 "solidstudiosh/ocpp-virtual-charge-point" ["l"="-12.6,18.533"]
 "uhi22/pyPLC" ["l"="-12.815,18.67"]
 "EVerest/cbexigen" ["l"="-12.743,18.642"]
@@ -726,7 +745,7 @@ digraph G {
 "v-bodnar/ocpp-server" ["l"="-12.72,18.5"]
 "uhi22/ccs32" ["l"="-12.844,18.691"]
 "uhi22/ccs32berta" ["l"="-12.838,18.678"]
-"SmartEVSE/SmartEVSE-3" ["l"="-12.557,19.864"]
+"SmartEVSE/SmartEVSE-3" ["l"="-12.557,19.864", "c"=1678]
 "qca/open-plc-utils" ["l"="-12.822,18.631"]
 "joshperry/carwings" ["l"="-12.99,18.876"]
 "glynhudson/leaf-python-mqtt" ["l"="-12.997,18.936"]
@@ -739,23 +758,23 @@ digraph G {
 "damienmaguire/Inverter" ["l"="-12.754,18.837"]
 "EVerest/libcbv2g" ["l"="-12.733,18.666"]
 "PionixPublic/yeti-firmware" ["l"="-12.715,18.661"]
-"dalathegreat/Battery-Emulator" ["l"="-12.94,18.717"]
-"evcc-io/evcc" ["l"="-12.51,19.462"]
-"stuartpittaway/diyBMSv4" ["l"="-21.111,-43.517"]
-"Uksa007/esphome-jk-bms-can" ["l"="-12.642,19.118"]
-"Louisvdw/dbus-serialbattery" ["l"="-12.625,19.219"]
-"MagnusThome/RejsaCAN-ESP32" ["l"="-14.478,-24.329"]
-"ai-republic/bms-to-inverter" ["l"="-12.71,19.133"]
-"fl4p/batmon-ha" ["l"="-12.612,19.104"]
+"stuartpittaway/diyBMSv4" ["l"="-21.111,-43.517", "c"=1197]
+"Uksa007/esphome-jk-bms-can" ["l"="-12.642,19.118", "c"=1678]
+"Louisvdw/dbus-serialbattery" ["l"="-12.625,19.219", "c"=1678]
+"MagnusThome/RejsaCAN-ESP32" ["l"="-14.478,-24.329", "c"=236]
+"ai-republic/bms-to-inverter" ["l"="-12.71,19.133", "c"=1678]
+"fl4p/batmon-ha" ["l"="-12.612,19.104", "c"=1678]
 "NismoBoy34/Esp32LeafInverterBridge" ["l"="-12.95,18.793"]
 "ScottHelme/AlexaNissanLeaf" ["l"="-12.961,18.831"]
 "solidstudiosh/ocpi-schema" ["l"="-12.57,18.527"]
 "SmartEVSE/ESP32-PLC" ["l"="-12.861,18.68"]
+"OpenEMS/openems" ["l"="-12.548,19.438", "c"=1678]
 "ffainelli/faifa" ["l"="-12.861,18.605"]
 "Sevenstax/FreeV2G" ["l"="-12.875,18.623"]
 "citrineos/citrineos-operator-ui" ["l"="-12.686,18.617"]
 "monta-app/ocpp-emulator" ["l"="-12.73,18.549"]
 "sosergio/ocpp-charge-point-system" ["l"="-12.652,18.435"]
 "EVerest/logfiles" ["l"="-12.801,18.57"]
+"collin80/TeslaBMS" ["l"="-21.057,-43.501", "c"=1197]
 "cblach/nikola-v2gstack" ["l"="-12.81,18.583"]
 }

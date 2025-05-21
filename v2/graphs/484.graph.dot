@@ -1,4 +1,18 @@
 digraph G {
+"grafana/loki" -> "prometheus/node_exporter" ["e"=1]
+"elasticsearch-dump/elasticsearch-dump" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"mvisonneau/gitlab-ci-pipelines-exporter" -> "prymitive/karma" ["e"=1]
+"mvisonneau/gitlab-ci-pipelines-exporter" -> "enix/x509-certificate-exporter" ["e"=1]
+"open-telemetry/opentelemetry-java" -> "prometheus/client_java" ["e"=1]
+"VictoriaMetrics/VictoriaMetrics" -> "prometheus/node_exporter" ["e"=1]
+"VictoriaMetrics/VictoriaMetrics" -> "prometheus/alertmanager" ["e"=1]
+"samber/awesome-prometheus-alerts" -> "prymitive/karma" ["e"=1]
+"samber/awesome-prometheus-alerts" -> "prometheus/blackbox_exporter" ["e"=1]
+"samber/awesome-prometheus-alerts" -> "prometheus/alertmanager" ["e"=1]
+"samber/awesome-prometheus-alerts" -> "prometheus/node_exporter" ["e"=1]
+"tchiotludo/akhq" -> "danielqsj/kafka_exporter" ["e"=1]
+"haproxy/haproxy" -> "prometheus/node_exporter" ["e"=1]
+"elastic/curator" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
 "ribbybibby/ssl_exporter" -> "enix/x509-certificate-exporter"
 "ribbybibby/ssl_exporter" -> "joe-elliott/cert-exporter"
 "ribbybibby/ssl_exporter" -> "amimof/node-cert-exporter"
@@ -59,6 +73,8 @@ digraph G {
 "trickstercache/trickster" -> "pyrra-dev/pyrra"
 "trickstercache/trickster" -> "AICoE/prometheus-anomaly-detector"
 "trickstercache/trickster" -> "prometheus/OpenMetrics" ["e"=1]
+"etsy/morgue" -> "cloudflare/unsee" ["e"=1]
+"kube-logging/logging-operator" -> "pyrra-dev/pyrra" ["e"=1]
 "prymitive/karma" -> "samber/awesome-prometheus-alerts" ["e"=1]
 "prymitive/karma" -> "jacksontj/promxy"
 "prymitive/karma" -> "slok/sloth" ["e"=1]
@@ -74,6 +90,31 @@ digraph G {
 "prymitive/karma" -> "cortexproject/cortex" ["e"=1]
 "prymitive/karma" -> "line/promgen"
 "prymitive/karma" -> "kubernetes-monitoring/kubernetes-mixin" ["e"=1]
+"slok/grafterm" -> "trickstercache/trickster" ["e"=1]
+"slok/grafterm" -> "prometheus-community/avalanche" ["e"=1]
+"target/goalert" -> "prymitive/karma" ["e"=1]
+"target/goalert" -> "google/mtail" ["e"=1]
+"target/goalert" -> "cloudflare/pint" ["e"=1]
+"target/goalert" -> "pyrra-dev/pyrra" ["e"=1]
+"cloudalchemy/ansible-prometheus" -> "William-Yeh/ansible-prometheus" ["e"=1]
+"cloudalchemy/ansible-prometheus" -> "prometheus/blackbox_exporter" ["e"=1]
+"cloudalchemy/ansible-node-exporter" -> "metalmatze/alertmanager-bot" ["e"=1]
+"vitabaks/autobase" -> "prometheus-community/postgres_exporter" ["e"=1]
+"thanos-io/thanos" -> "prometheus/alertmanager" ["e"=1]
+"mbrt/gmailctl" -> "google/mtail" ["e"=1]
+"ipmitool/ipmitool" -> "prometheus-community/ipmi_exporter" ["e"=1]
+"librenms/librenms" -> "prometheus/snmp_exporter" ["e"=1]
+"bosun-monitor/bosun" -> "alerta/alerta" ["e"=1]
+"tair-opensource/RedisShake" -> "oliver006/redis_exporter" ["e"=1]
+"alibaba/MongoShake" -> "percona/mongodb_exporter" ["e"=1]
+"linkedin/cruise-control" -> "danielqsj/kafka_exporter" ["e"=1]
+"linkedin/cruise-control" -> "prometheus/jmx_exporter" ["e"=1]
+"parca-dev/parca" -> "pyrra-dev/pyrra" ["e"=1]
+"influxdata/influxdb-java" -> "prometheus/client_java" ["e"=1]
+"systeminit/si" -> "perses/perses" ["e"=1]
+"prometheus-pve/prometheus-pve-exporter" -> "prometheus/blackbox_exporter" ["e"=1]
+"prometheus-pve/prometheus-pve-exporter" -> "prometheus-community/smartctl_exporter" ["e"=1]
+"prometheus-pve/prometheus-pve-exporter" -> "MindFlavor/prometheus_wireguard_exporter" ["e"=1]
 "prometheus-community/ipmi_exporter" -> "prometheus/snmp_exporter"
 "prometheus-community/ipmi_exporter" -> "prometheus-community/bind_exporter"
 "prometheus-community/ipmi_exporter" -> "pryorda/vmware_exporter" ["e"=1]
@@ -89,6 +130,8 @@ digraph G {
 "prometheus-community/ipmi_exporter" -> "Lusitaniae/apache_exporter"
 "prometheus-community/ipmi_exporter" -> "czerwonk/ping_exporter"
 "prometheus-community/ipmi_exporter" -> "gebn/bmc_exporter" ["e"=1]
+"open-telemetry/opentelemetry-python" -> "prometheus/client_python" ["e"=1]
+"timonwong/prometheus-webhook-dingtalk" -> "oliver006/redis_exporter" ["e"=1]
 "joe-elliott/cert-exporter" -> "enix/x509-certificate-exporter"
 "joe-elliott/cert-exporter" -> "ribbybibby/ssl_exporter"
 "joe-elliott/cert-exporter" -> "amimof/node-cert-exporter"
@@ -107,12 +150,15 @@ digraph G {
 "enix/x509-certificate-exporter" -> "kubepug/kubepug" ["e"=1]
 "enix/x509-certificate-exporter" -> "prymitive/karma"
 "enix/x509-certificate-exporter" -> "FairwindsOps/rbac-manager" ["e"=1]
+"elastic/cloud-on-k8s" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
 "VictoriaMetrics/metrics" -> "VictoriaMetrics/metricsql"
 "VictoriaMetrics/metrics" -> "VictoriaMetrics/operator"
 "VictoriaMetrics/metrics" -> "VictoriaMetrics/victoriametrics-datasource"
 "VictoriaMetrics/metrics" -> "valyala/gozstd" ["e"=1]
 "VictoriaMetrics/metrics" -> "VictoriaMetrics/victorialogs-datasource"
 "VictoriaMetrics/metrics" -> "VictoriaMetrics/prometheus-benchmark"
+"cncf/tag-app-delivery" -> "cncf/tag-observability" ["e"=1]
+"hopsoft/docker-graphite-statsd" -> "grafana-wizzy/wizzy" ["e"=1]
 "czerwonk/ping_exporter" -> "digineo/go-ping"
 "czerwonk/ping_exporter" -> "SuperQ/smokeping_prober"
 "czerwonk/ping_exporter" -> "syepes/network_exporter"
@@ -129,9 +175,11 @@ digraph G {
 "czerwonk/ping_exporter" -> "czerwonk/atlas_exporter" ["e"=1]
 "czerwonk/ping_exporter" -> "knightss27/grafana-network-weathermap"
 "alerta/zabbix-alerta" -> "alerta/angular-alerta-webui"
+"influxdata/influxdb-python" -> "prometheus/client_python" ["e"=1]
 "4n4nd/prometheus-api-client-python" -> "AICoE/prometheus-anomaly-detector"
 "4n4nd/prometheus-api-client-python" -> "operate-first/operate-first.github.io-old"
 "4n4nd/prometheus-api-client-python" -> "aicoe-aiops/ocp-ci-analysis"
+"vmware-archive/kube-prod-runtime" -> "prymitive/karma" ["e"=1]
 "algenty/grafana-flowcharting" -> "algenty/flowcharting-repository"
 "algenty/grafana-flowcharting" -> "jdbranham/grafana-diagram"
 "algenty/grafana-flowcharting" -> "andymchugh/andrewbmchugh-flow-panel"
@@ -147,6 +195,7 @@ digraph G {
 "algenty/grafana-flowcharting" -> "eNMS-automation/eNMS" ["e"=1]
 "algenty/grafana-flowcharting" -> "grafana/grafonnet-lib" ["e"=1]
 "algenty/grafana-flowcharting" -> "flant/grafana-statusmap" ["e"=1]
+"cloudworkz/kube-eagle" -> "trickstercache/trickster" ["e"=1]
 "prometheus/jmx_exporter" -> "danielqsj/kafka_exporter"
 "prometheus/jmx_exporter" -> "prometheus-community/elasticsearch_exporter"
 "prometheus/jmx_exporter" -> "prometheus/client_java"
@@ -190,6 +239,20 @@ digraph G {
 "nghialv/promviz" -> "prometheus-junkyard/tsdb" ["e"=1]
 "nghialv/promviz" -> "pipe-cd/pipecd" ["e"=1]
 "nghialv/promviz" -> "line/promgen"
+"timescale/tsbs" -> "timescale/pg_prometheus" ["e"=1]
+"timescale/tsbs" -> "timescale/docs.timescale.com-content" ["e"=1]
+"timescale/tsbs" -> "timescale/promscale" ["e"=1]
+"timescale/tsbs" -> "timescale/timescaledb-tune" ["e"=1]
+"timescale/tsbs" -> "timescale/timescaledb-toolkit" ["e"=1]
+"timescale/tsbs" -> "VictoriaMetrics/prometheus-benchmark" ["e"=1]
+"AICoE/log-anomaly-detector" -> "AICoE/prometheus-anomaly-detector" ["e"=1]
+"grafana/jsonnet-libs" -> "grafana/dashboard-linter" ["e"=1]
+"ansible-community/awesome-ansible" -> "warpnet/awesome-prometheus" ["e"=1]
+"emberstack/kubernetes-reflector" -> "enix/kube-image-keeper" ["e"=1]
+"grafana/grafonnet-lib" -> "weaveworks/grafanalib" ["e"=1]
+"grafana/grafonnet-lib" -> "uber/grafana-dash-gen" ["e"=1]
+"grafana/grafonnet-lib" -> "prymitive/karma" ["e"=1]
+"grafana/grafonnet-lib" -> "trickstercache/trickster" ["e"=1]
 "prometheus/statsd_exporter" -> "prometheus/consul_exporter"
 "prometheus/statsd_exporter" -> "prometheus/graphite_exporter"
 "prometheus/statsd_exporter" -> "prometheus/memcached_exporter"
@@ -225,6 +288,11 @@ digraph G {
 "simPod/GrafanaJsonDatasource" -> "grafana/simple-json-datasource"
 "simPod/GrafanaJsonDatasource" -> "grafana/grafana-json-datasource"
 "simPod/GrafanaJsonDatasource" -> "grafana/grafana-infinity-datasource"
+"arachnys/cabot" -> "alerta/alerta" ["e"=1]
+"cdwv/awesome-helm" -> "warpnet/awesome-prometheus" ["e"=1]
+"open-telemetry/community" -> "cncf/tag-observability" ["e"=1]
+"pgbackrest/pgbackrest" -> "prometheus-community/postgres_exporter" ["e"=1]
+"kdeldycke/awesome-iam" -> "warpnet/awesome-prometheus" ["e"=1]
 "danielqsj/kafka_exporter" -> "prometheus/jmx_exporter"
 "danielqsj/kafka_exporter" -> "prometheus-community/elasticsearch_exporter"
 "danielqsj/kafka_exporter" -> "oliver006/redis_exporter"
@@ -268,14 +336,19 @@ digraph G {
 "prometheus/pushgateway" -> "prometheus-community/elasticsearch_exporter"
 "prometheus/pushgateway" -> "prometheus/snmp_exporter"
 "prometheus/pushgateway" -> "prometheus-community/postgres_exporter"
+"rycus86/prometheus_flask_exporter" -> "prometheus/client_python" ["e"=1]
 "idealista/prom2teams" -> "prometheus-msteams/prometheus-msteams"
+"renatomefi/php-fpm-healthcheck" -> "hipages/php-fpm_exporter" ["e"=1]
 "alerta/alerta-webui" -> "alerta/docker-alerta"
 "alerta/alerta-webui" -> "alerta/alerta-contrib"
+"eko/pihole-exporter" -> "xperimental/nextcloud-exporter" ["e"=1]
+"eko/pihole-exporter" -> "MindFlavor/prometheus_wireguard_exporter" ["e"=1]
 "nmnellis/vistio" -> "nicholasjackson/mtls-go-example"
 "nmnellis/vistio" -> "nghialv/promviz"
 "nmnellis/vistio" -> "kinvolk/service-mesh-benchmark" ["e"=1]
 "caarlos0/domain_exporter" -> "shift/domain_exporter"
 "caarlos0/domain_exporter" -> "inCaller/prometheus_bot"
+"stakater/IngressMonitorController" -> "pyrra-dev/pyrra" ["e"=1]
 "hastic-zzz/hastic-server" -> "hastic-zzz/hastic-grafana-app"
 "hastic-zzz/hastic-server" -> "CorpGlory/grafana-progress-list"
 "hastic-zzz/hastic-server" -> "hastic/hastic"
@@ -286,10 +359,24 @@ digraph G {
 "hastic-zzz/hastic-grafana-app" -> "hastic-zzz/analytics"
 "hastic-zzz/hastic-grafana-app" -> "chartwerk/grafana-chartwerk-app"
 "hastic-zzz/hastic-grafana-app" -> "hastic/hastic"
+"grafana/grafana-operator" -> "pyrra-dev/pyrra" ["e"=1]
+"grafana/grafana-operator" -> "VictoriaMetrics/operator" ["e"=1]
+"prometheus-community/yet-another-cloudwatch-exporter" -> "pyrra-dev/pyrra" ["e"=1]
+"prometheus-community/yet-another-cloudwatch-exporter" -> "cloudflare/pint" ["e"=1]
+"prometheus-community/yet-another-cloudwatch-exporter" -> "prymitive/karma" ["e"=1]
+"prometheus-community/yet-another-cloudwatch-exporter" -> "jacksontj/promxy" ["e"=1]
+"hashicorp/consul-k8s" -> "prometheus/consul_exporter" ["e"=1]
+"nickbabcock/OhmGraphite" -> "prometheus-community/windows_exporter" ["e"=1]
+"line/centraldogma" -> "line/promgen" ["e"=1]
+"monzo/response" -> "pyrra-dev/pyrra" ["e"=1]
+"monzo/response" -> "prymitive/karma" ["e"=1]
 "CorpGlory/grafana-plugin-template-webpack" -> "CorpGlory/grafana-progress-list"
 "CorpGlory/grafana-plugin-template-webpack" -> "CorpGlory/types-grafana"
 "CorpGlory/grafana-plugin-template-webpack" -> "CorpGlory/grafana-plugin-template-webpack-typescript"
 "CorpGlory/grafana-plugin-template-webpack" -> "CorpGlory/csv2influx"
+"haproxytech/kubernetes-ingress" -> "prometheus/haproxy_exporter" ["e"=1]
+"nshttpd/mikrotik-exporter" -> "prometheus/snmp_exporter" ["e"=1]
+"nshttpd/mikrotik-exporter" -> "metalmatze/alertmanager-bot" ["e"=1]
 "GlobalNOC/globalnoc-networkmap-panel" -> "rhicks/bgp-dashboard" ["e"=1]
 "GlobalNOC/globalnoc-networkmap-panel" -> "GlobalNOC/globalnoc-worldview-panel"
 "GlobalNOC/globalnoc-networkmap-panel" -> "atosorigin/grafana-weathermap-panel"
@@ -312,6 +399,7 @@ digraph G {
 "trustpilot/beat-exporter" -> "trustpilot/node-trustpilot"
 "trustpilot/beat-exporter" -> "trustpilot/dockerlogger"
 "trustpilot/beat-exporter" -> "BonnierNews/logstash_exporter"
+"operator-framework/getting-started" -> "nmnellis/vistio" ["e"=1]
 "SuperQ/smokeping_prober" -> "czerwonk/ping_exporter"
 "SuperQ/smokeping_prober" -> "neptune-networks/flow-exporter" ["e"=1]
 "SuperQ/smokeping_prober" -> "prometheus-community/bind_exporter"
@@ -337,6 +425,13 @@ digraph G {
 "observatorium/thanos-receive-controller" -> "nicolastakashi/prom-analytics-proxy"
 "observatorium/thanos-receive-controller" -> "thanos-io/promql-engine"
 "observatorium/thanos-receive-controller" -> "dsayan154/thanos-receiver-demo"
+"seglo/kafka-lag-exporter" -> "danielqsj/kafka_exporter" ["e"=1]
+"pryorda/vmware_exporter" -> "prometheus-community/ipmi_exporter" ["e"=1]
+"pryorda/vmware_exporter" -> "prometheus/snmp_exporter" ["e"=1]
+"pryorda/vmware_exporter" -> "mrlhansen/idrac_exporter" ["e"=1]
+"pryorda/vmware_exporter" -> "prometheus-community/windows_exporter" ["e"=1]
+"pryorda/vmware_exporter" -> "ribbybibby/ssl_exporter" ["e"=1]
+"pryorda/vmware_exporter" -> "prometheus/blackbox_exporter" ["e"=1]
 "free/sql_exporter" -> "justwatchcom/sql_exporter"
 "free/sql_exporter" -> "burningalchemist/sql_exporter"
 "free/sql_exporter" -> "albertodonato/query-exporter"
@@ -354,6 +449,8 @@ digraph G {
 "free/sql_exporter" -> "ricoberger/script_exporter"
 "danielfm/prometheus-for-developers" -> "open-fresh/bomb-squad"
 "danielfm/prometheus-for-developers" -> "infinityworks/prometheus-example-queries"
+"redpanda-data/kminion" -> "danielqsj/kafka_exporter" ["e"=1]
+"redpanda-data/kminion" -> "prometheus/jmx_exporter" ["e"=1]
 "nginx/nginx-prometheus-exporter" -> "martin-helmich/prometheus-nginxlog-exporter"
 "nginx/nginx-prometheus-exporter" -> "prometheus/mysqld_exporter"
 "nginx/nginx-prometheus-exporter" -> "sysulq/nginx-vts-exporter"
@@ -369,13 +466,20 @@ digraph G {
 "nginx/nginx-prometheus-exporter" -> "hipages/php-fpm_exporter"
 "nginx/nginx-prometheus-exporter" -> "prometheus/snmp_exporter"
 "nginx/nginx-prometheus-exporter" -> "nginx/kubernetes-ingress" ["e"=1]
+"starsliao/Prometheus" -> "percona/grafana-dashboards" ["e"=1]
+"starsliao/Prometheus" -> "oliver006/redis_exporter" ["e"=1]
+"starsliao/Prometheus" -> "prometheus/mysqld_exporter" ["e"=1]
+"starsliao/Prometheus" -> "prometheus-community/windows_exporter" ["e"=1]
 "micha37-martins/S.M.A.R.T-disk-monitoring-for-Prometheus" -> "matusnovak/prometheus-smartctl"
+"cloudnativedevops/demo" -> "OpenSLO/OpenSLO" ["e"=1]
 "prometheus-community/jiralert" -> "prymitive/kthxbye"
 "prometheus-community/jiralert" -> "fabxc/jiralerts"
 "prometheus-community/jiralert" -> "camptocamp/grafana-prometheus-alertmanager-datasource"
 "prometheus-community/jiralert" -> "cloudflare/alertmanager2es"
 "prometheus-community/jiralert" -> "prometheus/nagios_plugins"
 "prometheus-community/jiralert" -> "weaveworks/prom-aggregation-gateway"
+"retroryan/istio-workshop" -> "nmnellis/vistio" ["e"=1]
+"tatsushid/go-fastping" -> "digineo/go-ping" ["e"=1]
 "prometheus-msteams/prometheus-msteams" -> "idealista/prom2teams"
 "prometheus-msteams/prometheus-msteams" -> "prymitive/karma"
 "prometheus-msteams/prometheus-msteams" -> "tomkerkhove/promitor" ["e"=1]
@@ -403,6 +507,7 @@ digraph G {
 "prometheus-community/avalanche" -> "prometheus-community/promql-langserver"
 "nicholasjackson/mtls-go-example" -> "nmnellis/vistio"
 "digineo/go-ping" -> "czerwonk/ping_exporter"
+"brancz/kube-rbac-proxy" -> "prometheus-community/prom-label-proxy" ["e"=1]
 "danilochilene/Pyora" -> "ikzelf/zbxora"
 "danilochilene/Pyora" -> "netrusov/ZabbixDBA"
 "danilochilene/Pyora" -> "Lelik13a/Zabbix-PyOra-ActiveCheck"
@@ -440,6 +545,8 @@ digraph G {
 "seanlaff/simple-streaming-datasource" -> "CorpGlory/types-grafana"
 "google/prometheus-slo-burn-example" -> "google/slo-generator"
 "algenty/flowcharting-repository" -> "algenty/grafana-flowcharting"
+"oracle-terraform-modules/terraform-oci-oke" -> "oracle/oracle-db-appdev-monitoring" ["e"=1]
+"maxandersen/internet-monitoring" -> "vegasbrianc/github-monitoring" ["e"=1]
 "CorpGlory/grafana-multibar-graph-panel" -> "CorpGlory/grafana-progress-list"
 "CorpGlory/grafana-multibar-graph-panel" -> "michaeldmoore/michaeldmoore-multistat-panel"
 "floyd871/prometheus_oracle_exporter" -> "iamseth/oracledb_exporter"
@@ -482,6 +589,8 @@ digraph G {
 "squadcastHQ/awesome-sre-tools" -> "squadcastHQ/alchemy-ui"
 "trustpilot/ilenia" -> "trustpilot/skift"
 "squadcastHQ/alchemy-ui" -> "roshan8/shielded-secrets"
+"pycontribs/jira" -> "prometheus/client_python" ["e"=1]
+"google/cadvisor" -> "prometheus/node_exporter" ["e"=1]
 "prometheus-community/node-exporter-textfile-collector-scripts" -> "prometheus-community/smartctl_exporter"
 "prometheus-community/node-exporter-textfile-collector-scripts" -> "prymitive/kthxbye"
 "prometheus-community/node-exporter-textfile-collector-scripts" -> "prometheus-community/ipmi_exporter"
@@ -506,16 +615,39 @@ digraph G {
 "prometheus-community/smartctl_exporter" -> "cloudandheat/prometheus_smart_exporter"
 "prometheus-community/smartctl_exporter" -> "mrlhansen/idrac_exporter"
 "prymitive/kthxbye" -> "o11ydev/oy-toolkit"
+"sentry-kubernetes/charts" -> "hipages/php-fpm_exporter" ["e"=1]
+"grafana/grizzly" -> "grafana/dashboard-linter" ["e"=1]
+"grafana/grizzly" -> "pyrra-dev/pyrra" ["e"=1]
+"grafana/grizzly" -> "grafana/promql-anomaly-detection" ["e"=1]
+"grafana/grizzly" -> "cloudflare/pint" ["e"=1]
+"logstash-plugins/logstash-patterns-core" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"logstash-plugins/logstash-patterns-core" -> "prometheus/jmx_exporter" ["e"=1]
+"yahoo/kubectl-flame" -> "pyrra-dev/pyrra" ["e"=1]
+"OT-CONTAINER-KIT/redis-operator" -> "oliver006/redis_exporter" ["e"=1]
+"GoogleCloudPlatform/monitoring-dashboard-samples" -> "google/slo-generator" ["e"=1]
+"jmxtrans/jmxtrans" -> "prometheus/jmx_exporter" ["e"=1]
+"jertel/elastalert2" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"yolossn/Prometheus-Basics" -> "danielfm/prometheus-for-developers" ["e"=1]
+"yolossn/Prometheus-Basics" -> "trickstercache/trickster" ["e"=1]
+"yolossn/Prometheus-Basics" -> "warpnet/awesome-prometheus" ["e"=1]
 "grafana/grafana-plugin-examples" -> "grafana/plugin-tools"
 "grafana/grafana-plugin-examples" -> "grafana/grafana-plugin-sdk-go"
 "grafana/grafana-plugin-examples" -> "grafana/plugin-validator"
+"grafana/agent" -> "pyrra-dev/pyrra" ["e"=1]
+"grafana/agent" -> "prometheus-community/avalanche" ["e"=1]
+"mongodb/mongodb-kubernetes-operator" -> "percona/mongodb_exporter" ["e"=1]
+"open-telemetry/opentelemetry-java-instrumentation" -> "prometheus/client_java" ["e"=1]
 "topolvm/pvc-autoresizer" -> "DevOps-Nirvana/Kubernetes-Volume-Autoscaler"
+"pires/kubernetes-elasticsearch-cluster" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
 "timescale/tobs" -> "timescale/promscale"
 "timescale/tobs" -> "timescale/helm-charts"
 "timescale/tobs" -> "timescale/timescaledb-toolkit"
 "timescale/tobs" -> "jetstack/version-checker" ["e"=1]
 "timescale/tobs" -> "timescale/promscale_extension"
 "timescale/tobs" -> "weaveworks-experiments/kspan" ["e"=1]
+"pipe-cd/pipecd" -> "lotusload/lotus" ["e"=1]
+"mercari/production-readiness-checklist" -> "OpenSLO/OpenSLO" ["e"=1]
+"openebs/zfs-localpv" -> "pdf/zfs_exporter" ["e"=1]
 "google/mtail" -> "fstab/grok_exporter"
 "google/mtail" -> "cortexproject/cortex" ["e"=1]
 "google/mtail" -> "ncabatoff/process-exporter"
@@ -566,7 +698,19 @@ digraph G {
 "timescale/promscale" -> "prometheus-community/avalanche"
 "timescale/promscale" -> "trickstercache/trickster"
 "timescale/promscale" -> "timescale/tsbs" ["e"=1]
+"line/decaton" -> "line/promgen" ["e"=1]
 "HON95/prometheus-nut-exporter" -> "DRuggeri/nut_exporter"
+"debops/debops-tools" -> "William-Yeh/ansible-prometheus" ["e"=1]
+"lyft/clutch" -> "OpenSLO/OpenSLO" ["e"=1]
+"evryfs/github-actions-runner-operator" -> "promhippie/github_exporter" ["e"=1]
+"dora-team/fourkeys" -> "OpenSLO/OpenSLO" ["e"=1]
+"oetiker/SmokePing" -> "SuperQ/smokeping_prober" ["e"=1]
+"trallnag/prometheus-fastapi-instrumentator" -> "prometheus/client_python" ["e"=1]
+"ustream/openduty" -> "alerta/alerta" ["e"=1]
+"K-Phoen/grabana" -> "grafana-tools/sdk" ["e"=1]
+"K-Phoen/grabana" -> "observatorium/thanos-receive-controller" ["e"=1]
+"K-Phoen/grabana" -> "grafana/dashboard-linter" ["e"=1]
+"K-Phoen/grabana" -> "prometheus-community/prom-label-proxy" ["e"=1]
 "grafana/grafana-plugin-sdk-go" -> "grafana/plugin-tools"
 "grafana/grafana-plugin-sdk-go" -> "grafana/grafana-openapi-client-go"
 "grafana/grafana-plugin-sdk-go" -> "grafana/grafana-plugin-examples"
@@ -576,6 +720,8 @@ digraph G {
 "VictoriaMetrics/helm-charts" -> "VictoriaMetrics/victoriametrics-datasource"
 "VictoriaMetrics/helm-charts" -> "VictoriaMetrics/prometheus-benchmark"
 "VictoriaMetrics/helm-charts" -> "grafana/helm-charts" ["e"=1]
+"fluent/helm-charts" -> "VictoriaMetrics/helm-charts" ["e"=1]
+"hashicorp/consul-replicate" -> "prometheus/consul_exporter" ["e"=1]
 "matusnovak/prometheus-smartctl" -> "prometheus-community/smartctl_exporter"
 "matusnovak/prometheus-smartctl" -> "PhilipMay/smart-prom-next"
 "matusnovak/prometheus-smartctl" -> "micha37-martins/S.M.A.R.T-disk-monitoring-for-Prometheus"
@@ -593,6 +739,7 @@ digraph G {
 "grafana/github-datasource" -> "grafana/faro" ["e"=1]
 "grafana/github-datasource" -> "grafana/plugin-validator"
 "grafana/github-datasource" -> "promhippie/github_exporter"
+"prometheus/procfs" -> "ncabatoff/process-exporter" ["e"=1]
 "cncf/tag-observability" -> "observatorium/observatorium"
 "cncf/tag-observability" -> "OpenSLO/OpenSLO"
 "cncf/tag-observability" -> "cncf/tag-app-delivery" ["e"=1]
@@ -642,6 +789,14 @@ digraph G {
 "timescale/helm-charts" -> "timescale/timescaledb-docker-ha"
 "timescale/helm-charts" -> "timescale/timescaledb-tune"
 "VictoriaMetrics/metricsql" -> "VictoriaMetrics/prometheus-benchmark"
+"prometheus/cloudwatch_exporter" -> "cloudflare/unsee" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "prometheus/consul_exporter" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "prometheus/blackbox_exporter" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "prometheus/pushgateway" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "fstab/grok_exporter" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "prometheus/alertmanager" ["e"=1]
+"prometheus/cloudwatch_exporter" -> "vvanholl/elasticsearch-prometheus-exporter" ["e"=1]
 "grafana/grafana-json-datasource" -> "simPod/GrafanaJsonDatasource"
 "grafana/grafana-json-datasource" -> "grafana/grafana-infinity-datasource"
 "chartwerk/grafana-chartwerk-app" -> "hastic-zzz/analytics"
@@ -686,6 +841,8 @@ digraph G {
 "last9/timescaledb-metrics" -> "last9/iox-registry"
 "last9/timescaledb-metrics" -> "last9/tfstate"
 "grafana/plugin-validator" -> "grafana/plugin-workflows"
+"akpw/mktxp" -> "prometheus/snmp_exporter" ["e"=1]
+"akpw/mktxp" -> "DRuggeri/nut_exporter" ["e"=1]
 "timescale/timescaledb-toolkit" -> "timescale/docs"
 "timescale/timescaledb-toolkit" -> "timescale/timescaledb-tune"
 "timescale/timescaledb-toolkit" -> "timescale/timescaledb-docker-ha"
@@ -709,6 +866,27 @@ digraph G {
 "kbudde/rabbitmq_exporter" -> "dcu/mongodb_exporter"
 "kbudde/rabbitmq_exporter" -> "prometheus/snmp_exporter"
 "kbudde/rabbitmq_exporter" -> "bakins/php-fpm-exporter"
+"utkuozdemir/nvidia_gpu_exporter" -> "prometheus-community/windows_exporter" ["e"=1]
+"utkuozdemir/nvidia_gpu_exporter" -> "ncabatoff/process-exporter" ["e"=1]
+"utkuozdemir/nvidia_gpu_exporter" -> "prometheus/snmp_exporter" ["e"=1]
+"geerlingguy/internet-monitoring" -> "vegasbrianc/github-monitoring" ["e"=1]
+"korfuri/django-prometheus" -> "prometheus/client_python" ["e"=1]
+"influxdata/telegraf" -> "prometheus/node_exporter" ["e"=1]
+"opensearch-project/OpenSearch-Dashboards" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"linkedin/Burrow" -> "danielqsj/kafka_exporter" ["e"=1]
+"linkedin/Burrow" -> "prometheus/jmx_exporter" ["e"=1]
+"zalando/spilo" -> "prometheus-community/postgres_exporter" ["e"=1]
+"patroni/patroni" -> "prometheus-community/postgres_exporter" ["e"=1]
+"vozlt/nginx-module-vts" -> "sysulq/nginx-vts-exporter" ["e"=1]
+"vozlt/nginx-module-vts" -> "nginx/nginx-prometheus-exporter" ["e"=1]
+"vozlt/nginx-module-vts" -> "martin-helmich/prometheus-nginxlog-exporter" ["e"=1]
+"vozlt/nginx-module-vts" -> "oliver006/redis_exporter" ["e"=1]
+"slok/sloth" -> "pyrra-dev/pyrra" ["e"=1]
+"slok/sloth" -> "OpenSLO/OpenSLO" ["e"=1]
+"slok/sloth" -> "prymitive/karma" ["e"=1]
+"slok/sloth" -> "google/slo-generator" ["e"=1]
+"slok/sloth" -> "cloudflare/pint" ["e"=1]
+"slok/sloth" -> "perses/perses" ["e"=1]
 "pyrra-dev/pyrra" -> "slok/sloth" ["e"=1]
 "pyrra-dev/pyrra" -> "OpenSLO/OpenSLO"
 "pyrra-dev/pyrra" -> "cloudflare/pint"
@@ -724,6 +902,7 @@ digraph G {
 "pyrra-dev/pyrra" -> "observatorium/observatorium"
 "pyrra-dev/pyrra" -> "robusta-dev/krr" ["e"=1]
 "pyrra-dev/pyrra" -> "kube-logging/logging-operator" ["e"=1]
+"fabric8io/kubernetes-client" -> "prometheus/client_java" ["e"=1]
 "prometheus/snmp_exporter" -> "prometheus/blackbox_exporter"
 "prometheus/snmp_exporter" -> "prometheus-community/ipmi_exporter"
 "prometheus/snmp_exporter" -> "prometheus/alertmanager"
@@ -739,6 +918,7 @@ digraph G {
 "prometheus/snmp_exporter" -> "prometheus-community/elasticsearch_exporter"
 "prometheus/snmp_exporter" -> "prometheus-community/postgres_exporter"
 "prometheus/snmp_exporter" -> "oliver006/redis_exporter"
+"grafana/grafana-zabbix" -> "percona/grafana-dashboards" ["e"=1]
 "perses/perses" -> "pyrra-dev/pyrra"
 "perses/perses" -> "slok/sloth" ["e"=1]
 "perses/perses" -> "prometheus/promlens"
@@ -754,6 +934,9 @@ digraph G {
 "perses/perses" -> "nicolastakashi/prom-analytics-proxy"
 "perses/perses" -> "prometheus-community/prom-label-proxy"
 "perses/perses" -> "polarsignals/frostdb" ["e"=1]
+"trinib/AdGuard-WireGuard-Unbound-DNScrypt" -> "ar51an/unbound-redis" ["e"=1]
+"medcl/esm" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"grafana/metrictank" -> "grafana/grafana-plugin-repository" ["e"=1]
 "prometheus/client_python" -> "korfuri/django-prometheus" ["e"=1]
 "prometheus/client_python" -> "prometheus/pushgateway"
 "prometheus/client_python" -> "prometheus/blackbox_exporter"
@@ -844,6 +1027,11 @@ digraph G {
 "alerta/alerta" -> "bosun-monitor/bosun" ["e"=1]
 "alerta/alerta" -> "line/promgen"
 "alerta/alerta" -> "trickstercache/trickster"
+"tkestack/kvass" -> "thanos-io/kube-thanos" ["e"=1]
+"elastic/ansible-elasticsearch" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"weaveworks-experiments/kspan" -> "prometheus-community/promql-langserver" ["e"=1]
+"weaveworks-experiments/kspan" -> "pyrra-dev/pyrra" ["e"=1]
+"sgerrand/alpine-pkg-glibc" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
 "prometheus/mysqld_exporter" -> "oliver006/redis_exporter"
 "prometheus/mysqld_exporter" -> "percona/grafana-dashboards"
 "prometheus/mysqld_exporter" -> "prometheus/node_exporter"
@@ -859,6 +1047,11 @@ digraph G {
 "prometheus/mysqld_exporter" -> "prometheus/snmp_exporter"
 "prometheus/mysqld_exporter" -> "danielqsj/kafka_exporter"
 "prometheus/mysqld_exporter" -> "prometheus-community/windows_exporter"
+"opstrace/opstrace" -> "OpenSLO/oslo" ["e"=1]
+"infrahq/infra" -> "pyrra-dev/pyrra" ["e"=1]
+"equinix-labs/otel-cli" -> "OpenSLO/OpenSLO" ["e"=1]
+"brandonwamboldt/varnish-dashboard" -> "jonnenauha/prometheus_varnish_exporter" ["e"=1]
+"databand-ai/airflow-dashboards" -> "prometheus/statsd_exporter" ["e"=1]
 "esnet/gdg" -> "ysde/grafana-backup-tool"
 "nobl9/sloctl" -> "nobl9/nobl9-backstage-plugin"
 "nobl9/sloctl" -> "nobl9/terraform-provider-nobl9"
@@ -899,6 +1092,9 @@ digraph G {
 "dcu/mongodb_exporter" -> "sysulq/nginx-vts-exporter"
 "dcu/mongodb_exporter" -> "prometheus/consul_exporter"
 "dcu/mongodb_exporter" -> "prometheus/haproxy_exporter"
+"parca-dev/parca-agent" -> "thanos-io/promql-engine" ["e"=1]
+"parca-dev/parca-agent" -> "thanos-io/objstore" ["e"=1]
+"parca-dev/parca-agent" -> "observatorium/observatorium" ["e"=1]
 "m110/grafcli" -> "grafana/grafana-tools"
 "netrusov/ZabbixDBA" -> "sergiotocalini/zabora"
 "netrusov/ZabbixDBA" -> "ikzelf/zbxora"
@@ -935,6 +1131,15 @@ digraph G {
 "enix/san-iscsi-csi" -> "enix/routeros-rest-exporter"
 "prometheus/compliance" -> "thanos-io/promql-engine"
 "grafana/plugin-workflows" -> "grafana/plugin-validator"
+"vegasbrianc/prometheus" -> "prometheus/blackbox_exporter" ["e"=1]
+"vegasbrianc/prometheus" -> "prometheus/node_exporter" ["e"=1]
+"vegasbrianc/prometheus" -> "prometheus/alertmanager" ["e"=1]
+"vegasbrianc/prometheus" -> "percona/grafana-dashboards" ["e"=1]
+"sivasamyk/logtrail" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"purpleidea/mgmt" -> "google/mtail" ["e"=1]
+"sorintlab/stolon" -> "prometheus-community/postgres_exporter" ["e"=1]
+"ghostunnel/ghostunnel" -> "trickstercache/trickster" ["e"=1]
+"ghostunnel/ghostunnel" -> "google/mtail" ["e"=1]
 "ikzelf/zbxora" -> "den-is/zbx_oracle_odbc"
 "prometheus/blackbox_exporter" -> "prometheus/node_exporter"
 "prometheus/blackbox_exporter" -> "prometheus/alertmanager"
@@ -951,6 +1156,10 @@ digraph G {
 "prometheus/blackbox_exporter" -> "prometheus/jmx_exporter"
 "prometheus/blackbox_exporter" -> "prometheus-operator/kube-prometheus" ["e"=1]
 "prometheus/blackbox_exporter" -> "thanos-io/thanos" ["e"=1]
+"grafana/oncall" -> "prymitive/karma" ["e"=1]
+"grafana/oncall" -> "pyrra-dev/pyrra" ["e"=1]
+"grafana/oncall" -> "prometheus/blackbox_exporter" ["e"=1]
+"sustainable-computing-io/kepler" -> "perses/perses" ["e"=1]
 "Lusitaniae/apache_exporter" -> "prometheus/haproxy_exporter"
 "Lusitaniae/apache_exporter" -> "prometheus-community/bind_exporter"
 "Lusitaniae/apache_exporter" -> "prometheus/memcached_exporter"
@@ -961,6 +1170,11 @@ digraph G {
 "Lusitaniae/apache_exporter" -> "prometheus/influxdb_exporter"
 "Lusitaniae/apache_exporter" -> "boynux/squid-exporter"
 "Lusitaniae/apache_exporter" -> "prometheus-community/ipmi_exporter"
+"elastic/rally" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"influxdata/kapacitor" -> "alerta/alerta" ["e"=1]
+"opentracing/opentracing-java" -> "prometheus/client_java" ["e"=1]
+"oracle/python-oracledb" -> "oracle/oracle-database-operator" ["e"=1]
+"oracle/python-oracledb" -> "oracle/oracle-db-appdev-monitoring" ["e"=1]
 "prometheus-community/postgres_exporter" -> "oliver006/redis_exporter"
 "prometheus-community/postgres_exporter" -> "prometheus/blackbox_exporter"
 "prometheus-community/postgres_exporter" -> "prometheus/mysqld_exporter"
@@ -981,16 +1195,32 @@ digraph G {
 "oracle/oracle-db-appdev-monitoring" -> "oracle/okafka"
 "oracle/oracle-db-appdev-monitoring" -> "oracle-terraform-modules/terraform-oci-oke" ["e"=1]
 "oracle/oracle-database-operator" -> "oracle/oracle-db-appdev-monitoring"
+"sonatype/nexus-public" -> "prometheus/node_exporter" ["e"=1]
 "grafana/dashboard-linter" -> "FUSAKLA/promruval"
 "grafana/dashboard-linter" -> "prometheus-community/avalanche"
 "grafana/dashboard-linter" -> "grafana/grizzly" ["e"=1]
 "grafana/dashboard-linter" -> "observatorium/observatorium"
+"polarsignals/frostdb" -> "thanos-io/promql-engine" ["e"=1]
+"polarsignals/frostdb" -> "pyrra-dev/pyrra" ["e"=1]
+"polarsignals/frostdb" -> "thanos-io/objstore" ["e"=1]
+"polarsignals/frostdb" -> "prometheus/promlens" ["e"=1]
+"ycd/dstp" -> "pyrra-dev/pyrra" ["e"=1]
+"ycd/dstp" -> "roshan8/slo-tracker" ["e"=1]
 "braedon/prometheus-es-exporter" -> "lovoo/jenkins_exporter"
+"grafana/phlare" -> "pyrra-dev/pyrra" ["e"=1]
+"grafana/phlare" -> "cloudflare/pint" ["e"=1]
+"grafana/phlare" -> "perses/perses" ["e"=1]
 "cloudprober/cloudprober" -> "google/cloudprober"
 "prometheus-community/bind_exporter" -> "prometheus-community/ipmi_exporter"
 "prometheus-community/bind_exporter" -> "Lusitaniae/apache_exporter"
 "prometheus-community/bind_exporter" -> "kumina/postfix_exporter"
 "prometheus-community/bind_exporter" -> "prometheus/haproxy_exporter"
+"digitalocean/ceph_exporter" -> "prometheus/haproxy_exporter" ["e"=1]
+"digitalocean/ceph_exporter" -> "prometheus-community/ipmi_exporter" ["e"=1]
+"myENA/consul-backinator" -> "prometheus/consul_exporter" ["e"=1]
+"kubeshop/tracetest" -> "OpenSLO/OpenSLO" ["e"=1]
+"kubeshop/tracetest" -> "pyrra-dev/pyrra" ["e"=1]
+"kubeshop/tracetest" -> "cncf/tag-observability" ["e"=1]
 "chop-dbhi/prometheus-sql" -> "chop-dbhi/sql-agent"
 "chop-dbhi/prometheus-sql" -> "justwatchcom/sql_exporter"
 "grafana/simple-json-datasource" -> "simPod/GrafanaJsonDatasource"
@@ -1042,6 +1272,8 @@ digraph G {
 "percona/grafana-dashboards" -> "yoshinorim/mha4mysql-manager" ["e"=1]
 "percona/grafana-dashboards" -> "Neeky/mysqltools" ["e"=1]
 "percona/grafana-dashboards" -> "feiyu563/PrometheusAlert" ["e"=1]
+"resmoio/kubernetes-event-exporter" -> "max-rocket-internet/k8s-event-logger" ["e"=1]
+"lmenezes/cerebro" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
 "percona/mongodb_exporter" -> "dcu/mongodb_exporter"
 "percona/mongodb_exporter" -> "oliver006/redis_exporter"
 "percona/mongodb_exporter" -> "prometheus/mysqld_exporter"
@@ -1060,7 +1292,11 @@ digraph G {
 "deadtrickster/prometheus_rabbitmq_exporter" -> "kbudde/rabbitmq_exporter"
 "deadtrickster/prometheus_rabbitmq_exporter" -> "rabbitmq/rabbitmq-prometheus"
 "deadtrickster/prometheus_rabbitmq_exporter" -> "Ayanda-D/rabbitmq-queue-master-balancer"
+"kubernetes/kube-state-metrics" -> "prometheus/node_exporter" ["e"=1]
+"kubernetes/kube-state-metrics" -> "prometheus/blackbox_exporter" ["e"=1]
 "enix/routeros-rest-exporter" -> "enix/san-iscsi-csi"
+"dpkp/kafka-python" -> "prometheus/client_python" ["e"=1]
+"go-ping/ping" -> "digineo/go-ping" ["e"=1]
 "inCaller/prometheus_bot" -> "metalmatze/alertmanager-bot"
 "inCaller/prometheus_bot" -> "slok/alertgram" ["e"=1]
 "inCaller/prometheus_bot" -> "caarlos0/domain_exporter"
@@ -1068,6 +1304,8 @@ digraph G {
 "inCaller/prometheus_bot" -> "nopp/alertmanager-webhook-telegram-python"
 "inCaller/prometheus_bot" -> "prometheus-community/jiralert"
 "inCaller/prometheus_bot" -> "cloudflare/unsee"
+"Netflix/vizceral" -> "nghialv/promviz" ["e"=1]
+"Netflix/vizceral" -> "nmnellis/vistio" ["e"=1]
 "ysde/grafana-backup-tool" -> "esnet/gdg"
 "ysde/grafana-backup-tool" -> "grafana-wizzy/wizzy"
 "ysde/grafana-backup-tool" -> "prymitive/karma"
@@ -1083,6 +1321,12 @@ digraph G {
 "ysde/grafana-backup-tool" -> "prometheus-community/node-exporter-textfile-collector-scripts"
 "ysde/grafana-backup-tool" -> "ricoberger/script_exporter"
 "ysde/grafana-backup-tool" -> "prometheus/cloudwatch_exporter" ["e"=1]
+"rueckstiess/mtools" -> "percona/mongodb_exporter" ["e"=1]
+"knyar/nginx-lua-prometheus" -> "sysulq/nginx-vts-exporter" ["e"=1]
+"knyar/nginx-lua-prometheus" -> "martin-helmich/prometheus-nginxlog-exporter" ["e"=1]
+"knyar/nginx-lua-prometheus" -> "nginx/nginx-prometheus-exporter" ["e"=1]
+"knyar/nginx-lua-prometheus" -> "oliver006/redis_exporter" ["e"=1]
+"knyar/nginx-lua-prometheus" -> "sysulq/nginx-prometheus-metrics" ["e"=1]
 "prometheus/promlens" -> "cloudflare/pint"
 "prometheus/promlens" -> "FUSAKLA/promruval"
 "prometheus/promlens" -> "prometheus-community/avalanche"
@@ -1098,6 +1342,7 @@ digraph G {
 "prometheus/promlens" -> "polarsignals/frostdb" ["e"=1]
 "prometheus/promlens" -> "nicolastakashi/prom-analytics-proxy"
 "prometheus/promlens" -> "VictoriaMetrics/metricsql"
+"stripe/veneur" -> "trickstercache/trickster" ["e"=1]
 "ar51an/unbound-dashboard" -> "ar51an/unbound-redis"
 "ar51an/unbound-dashboard" -> "ar51an/unbound-exporter"
 "ar51an/unbound-dashboard" -> "letsencrypt/unbound_exporter"
@@ -1106,6 +1351,7 @@ digraph G {
 "grafana/worldmap-panel" -> "NatelEnergy/grafana-plotly-panel"
 "FUSAKLA/autograf" -> "FUSAKLA/promruval"
 "FUSAKLA/autograf" -> "nicolastakashi/prom-analytics-proxy"
+"grafana/grafonnet" -> "cloudflare/pint" ["e"=1]
 "prometheus-community/json_exporter" -> "adhocteam/script_exporter"
 "prometheus-community/json_exporter" -> "fstab/grok_exporter"
 "prometheus-community/json_exporter" -> "ncabatoff/process-exporter"
@@ -1121,6 +1367,7 @@ digraph G {
 "prometheus-community/json_exporter" -> "weaveworks/prom-aggregation-gateway"
 "prometheus-community/json_exporter" -> "prometheus-community/bind_exporter"
 "prometheus-community/json_exporter" -> "czerwonk/ping_exporter"
+"k8spacket/k8spacket" -> "pyrra-dev/pyrra" ["e"=1]
 "meln5674/grafana-mongodb-community-plugin" -> "JamesOsgood/mongodb-grafana"
 "hashicorp-forge/hermes" -> "hashicorp/design-system" ["e"=1]
 "hashicorp-forge/hermes" -> "google/yamlfmt" ["e"=1]
@@ -1135,6 +1382,7 @@ digraph G {
 "hashicorp-forge/hermes" -> "pyrra-dev/pyrra"
 "hashicorp-forge/hermes" -> "grafana/oncall" ["e"=1]
 "hashicorp-forge/hermes" -> "minamijoyo/tfupdate" ["e"=1]
+"gosnmp/gosnmp" -> "prometheus/snmp_exporter" ["e"=1]
 "VolkovLabs/business-charts" -> "VolkovLabs/business-variable"
 "VolkovLabs/business-charts" -> "Billiballa/bilibala-echarts-panel"
 "VolkovLabs/business-charts" -> "VolkovLabs/business-forms"
@@ -1158,6 +1406,9 @@ digraph G {
 "ar51an/unbound-redis" -> "ar51an/unbound-dashboard"
 "ar51an/unbound-redis" -> "ar51an/unbound-exporter"
 "jonnenauha/prometheus_varnish_exporter" -> "stuartnelson3/passenger_exporter"
+"percona/pmm" -> "percona/mongodb_exporter" ["e"=1]
+"percona/pmm" -> "percona/grafana-dashboards" ["e"=1]
+"prometheus-community/ansible" -> "prometheus-community/systemd_exporter" ["e"=1]
 "fstab/grok_exporter" -> "google/mtail"
 "fstab/grok_exporter" -> "ncabatoff/process-exporter"
 "fstab/grok_exporter" -> "prometheus-community/node-exporter-textfile-collector-scripts"
@@ -1182,8 +1433,12 @@ digraph G {
 "prometheus/memcached_exporter" -> "prometheus/haproxy_exporter"
 "imgix/prometheus-am-executor" -> "open-fresh/bomb-squad"
 "imgix/prometheus-am-executor" -> "ricoberger/script_exporter"
+"jenkinsci/prometheus-plugin" -> "lovoo/jenkins_exporter" ["e"=1]
 "trustpilot/node-eslint-config" -> "trustpilot/node-token-substitute"
 "last9/last9-integrations" -> "last9/iox-registry"
+"m3db/m3" -> "trickstercache/trickster" ["e"=1]
+"m3db/m3" -> "google/mtail" ["e"=1]
+"m3db/m3" -> "jacksontj/promxy" ["e"=1]
 "line/promgen" -> "line/decaton" ["e"=1]
 "line/promgen" -> "cloudflare/unsee"
 "line/promgen" -> "prymitive/karma"
@@ -1199,6 +1454,20 @@ digraph G {
 "line/promgen" -> "prometheus/OpenMetrics" ["e"=1]
 "line/promgen" -> "knyar/nginx-lua-prometheus" ["e"=1]
 "line/promgen" -> "imgix/prometheus-am-executor"
+"prometheus/prometheus" -> "prometheus/node_exporter" ["e"=1]
+"stefanprodan/dockprom" -> "prometheus/node_exporter" ["e"=1]
+"stefanprodan/dockprom" -> "prometheus/alertmanager" ["e"=1]
+"prometheus-operator/prometheus-operator" -> "prometheus/alertmanager" ["e"=1]
+"tencentyun/qcloud-documents" -> "prometheus/jmx_exporter" ["e"=1]
+"requilence/integram" -> "metalmatze/alertmanager-bot" ["e"=1]
+"requilence/integram" -> "inCaller/prometheus_bot" ["e"=1]
+"Lissy93/AdGuardian-Term" -> "ar51an/unbound-dashboard" ["e"=1]
+"uschtwill/docker_monitoring_logging_alerting" -> "alerta/prometheus-config" ["e"=1]
+"monitoringartist/grafana-aws-cloudwatch-dashboards" -> "percona/grafana-dashboards" ["e"=1]
+"StackExchange/dnscontrol" -> "google/mtail" ["e"=1]
+"cortexproject/cortex" -> "trickstercache/trickster" ["e"=1]
+"cortexproject/cortex" -> "prometheus/alertmanager" ["e"=1]
+"grafana/docker-otel-lgtm" -> "perses/perses" ["e"=1]
 "iamseth/oracledb_exporter" -> "floyd871/prometheus_oracle_exporter"
 "iamseth/oracledb_exporter" -> "oracle/oracle-db-appdev-monitoring"
 "iamseth/oracledb_exporter" -> "prometheus/mysqld_exporter"
@@ -1212,6 +1481,8 @@ digraph G {
 "iamseth/oracledb_exporter" -> "apache/rocketmq-exporter" ["e"=1]
 "iamseth/oracledb_exporter" -> "ikzelf/zbxdb"
 "iamseth/oracledb_exporter" -> "oraclesean/oracle" ["e"=1]
+"grafana/beyla" -> "pyrra-dev/pyrra" ["e"=1]
+"timescale/pgvectorscale" -> "timescale/timescaledb-toolkit" ["e"=1]
 "prometheus-community/windows_exporter" -> "prometheus/node_exporter"
 "prometheus-community/windows_exporter" -> "prometheus/snmp_exporter"
 "prometheus-community/windows_exporter" -> "prometheus/blackbox_exporter"
@@ -1237,6 +1508,7 @@ digraph G {
 "vvanholl/elasticsearch-prometheus-exporter" -> "medcl/infini-gateway" ["e"=1]
 "vvanholl/elasticsearch-prometheus-exporter" -> "lovoo/jenkins_exporter"
 "vvanholl/elasticsearch-prometheus-exporter" -> "prometheus/haproxy_exporter"
+"apache/trafficcontrol" -> "trickstercache/trickster" ["e"=1]
 "jdbranham/grafana-diagram" -> "algenty/grafana-flowcharting"
 "jdbranham/grafana-diagram" -> "GlobalNOC/globalnoc-networkmap-panel"
 "jdbranham/grafana-diagram" -> "NatelEnergy/grafana-plotly-panel"
@@ -1245,12 +1517,14 @@ digraph G {
 "jdbranham/grafana-diagram" -> "CorpGlory/grafana-progress-list"
 "jdbranham/grafana-diagram" -> "ryantxu/ajax-panel"
 "jdbranham/grafana-diagram" -> "simPod/GrafanaJsonDatasource"
+"influxdata/chronograf" -> "alerta/alerta" ["e"=1]
 "githubexporter/github-exporter" -> "Labbs/github-actions-exporter"
 "githubexporter/github-exporter" -> "promhippie/github_exporter"
 "githubexporter/github-exporter" -> "vegasbrianc/github-monitoring"
 "githubexporter/github-exporter" -> "infinityworks/docker-hub-exporter"
 "githubexporter/github-exporter" -> "jamesread/prometheus-gmail-exporter"
 "githubexporter/github-exporter" -> "metalmatze/digitalocean_exporter"
+"yyyar/gobetween" -> "trickstercache/trickster" ["e"=1]
 "IzakMarais/reporter" -> "divinity666/ruby-grafana-reporter"
 "IzakMarais/reporter" -> "grafana/grafana-image-renderer"
 "IzakMarais/reporter" -> "algenty/grafana-flowcharting"
@@ -1296,6 +1570,7 @@ digraph G {
 "ncabatoff/process-exporter" -> "samber/awesome-prometheus-alerts" ["e"=1]
 "ncabatoff/process-exporter" -> "kubernetes/kube-state-metrics" ["e"=1]
 "ncabatoff/process-exporter" -> "sysulq/nginx-vts-exporter"
+"jimmidyson/configmap-reload" -> "jacksontj/promxy" ["e"=1]
 "QubitProducts/exporter_exporter" -> "syepes/network_exporter"
 "QubitProducts/exporter_exporter" -> "amimof/node-cert-exporter"
 "QubitProducts/exporter_exporter" -> "prometheus-community/PushProx"
@@ -1344,6 +1619,9 @@ digraph G {
 "warpnet/awesome-prometheus" -> "Friz-zy/awesome-linux-containers" ["e"=1]
 "warpnet/awesome-prometheus" -> "kubernetes-monitoring/kubernetes-mixin" ["e"=1]
 "warpnet/awesome-prometheus" -> "cloudflare/pint"
+"prometheus/client_golang" -> "prometheus/alertmanager" ["e"=1]
+"prometheus/client_golang" -> "prometheus/node_exporter" ["e"=1]
+"kubernetes-client/python" -> "prometheus/client_python" ["e"=1]
 "metalmatze/alertmanager-bot" -> "inCaller/prometheus_bot"
 "metalmatze/alertmanager-bot" -> "prymitive/karma"
 "metalmatze/alertmanager-bot" -> "prometheus-community/node-exporter-textfile-collector-scripts"
@@ -1374,6 +1652,8 @@ digraph G {
 "prometheus/client_java" -> "yunlzheng/prometheus-book" ["e"=1]
 "prometheus/client_java" -> "oliver006/redis_exporter"
 "prometheus/client_java" -> "prometheus/mysqld_exporter"
+"siglens/siglens" -> "perses/perses" ["e"=1]
+"andrey-pohilko/registry-cli" -> "metalmatze/alertmanager-bot" ["e"=1]
 "infinityworks/prometheus-example-queries" -> "cloudflare/unsee"
 "infinityworks/prometheus-example-queries" -> "warpnet/awesome-prometheus"
 "infinityworks/prometheus-example-queries" -> "fstab/grok_exporter"
@@ -1389,7 +1669,10 @@ digraph G {
 "infinityworks/prometheus-example-queries" -> "knyar/nginx-lua-prometheus" ["e"=1]
 "infinityworks/prometheus-example-queries" -> "stefanprodan/k8s-prom-hpa" ["e"=1]
 "infinityworks/prometheus-example-queries" -> "giantswarm/prometheus" ["e"=1]
+"grafana/logs-drilldown" -> "nicolastakashi/prom-analytics-proxy" ["e"=1]
+"grafana/logs-drilldown" -> "FUSAKLA/promruval" ["e"=1]
 "BonnierNews/logstash_exporter" -> "sequra/logstash_exporter"
+"oklog/oklog" -> "google/mtail" ["e"=1]
 "sysulq/nginx-vts-exporter" -> "vozlt/nginx-module-vts" ["e"=1]
 "sysulq/nginx-vts-exporter" -> "knyar/nginx-lua-prometheus" ["e"=1]
 "sysulq/nginx-vts-exporter" -> "sysulq/nginx-prometheus-metrics"
@@ -1405,12 +1688,15 @@ digraph G {
 "sysulq/nginx-vts-exporter" -> "prometheus/mysqld_exporter"
 "sysulq/nginx-vts-exporter" -> "prometheus-community/elasticsearch_exporter"
 "sysulq/nginx-vts-exporter" -> "hipages/php-fpm_exporter"
+"nickjj/ansible-docker" -> "inCaller/prometheus_bot" ["e"=1]
+"grafana/alloy" -> "pyrra-dev/pyrra" ["e"=1]
 "grafana-wizzy/wizzy" -> "ysde/grafana-backup-tool"
 "grafana-wizzy/wizzy" -> "camptocamp/grafana-prometheus-alertmanager-datasource"
 "grafana-wizzy/wizzy" -> "m110/grafcli"
 "grafana-wizzy/wizzy" -> "weaveworks/grafanalib"
 "grafana-wizzy/wizzy" -> "uber/grafana-dash-gen"
 "grafana-wizzy/wizzy" -> "trickstercache/trickster"
+"upmc-enterprises/elasticsearch-operator" -> "vvanholl/elasticsearch-prometheus-exporter" ["e"=1]
 "nobl9/nobl9-backstage-plugin" -> "nobl9/terraform-provider-nobl9"
 "nobl9/nobl9-backstage-plugin" -> "nobl9/nobl9-go"
 "nobl9/nobl9-backstage-plugin" -> "nobl9/sloctl"
@@ -1478,6 +1764,9 @@ digraph G {
 "thanos-community/thanos-operator" -> "polarsignals/profile-exporter"
 "thanos-community/thanos-operator" -> "thanos-community/thanos-promql-connector"
 "satyajeetjadhav/tiptap-emoji-picker" -> "last9/last9-integrations"
+"micrometer-metrics/micrometer" -> "prometheus/client_java" ["e"=1]
+"denji/nginx-tuning" -> "nginx/nginx-prometheus-exporter" ["e"=1]
+"1046102779/prometheus" -> "percona/grafana-dashboards" ["e"=1]
 "rfmoz/grafana-dashboards" -> "percona/grafana-dashboards"
 "rfmoz/grafana-dashboards" -> "prometheus/node_exporter"
 "rfmoz/grafana-dashboards" -> "prometheus/mysqld_exporter"
@@ -1493,6 +1782,7 @@ digraph G {
 "rfmoz/grafana-dashboards" -> "cloudalchemy/ansible-node-exporter" ["e"=1]
 "rfmoz/grafana-dashboards" -> "dotdc/grafana-dashboards-kubernetes" ["e"=1]
 "rfmoz/grafana-dashboards" -> "ncabatoff/process-exporter"
+"pgadmin-org/pgadmin4" -> "prometheus-community/postgres_exporter" ["e"=1]
 "albertodonato/query-exporter" -> "free/sql_exporter"
 "albertodonato/query-exporter" -> "justwatchcom/sql_exporter"
 "albertodonato/query-exporter" -> "burningalchemist/sql_exporter"
@@ -1515,10 +1805,16 @@ digraph G {
 "cloudflare/unsee" -> "voyagermesh/voyager" ["e"=1]
 "cloudflare/unsee" -> "prymitive/kthxbye"
 "xperimental/nextcloud-exporter" -> "theCalcaholic/ncp-monitoring-dashboard"
+"octodns/octodns" -> "alerta/alerta" ["e"=1]
+"octodns/octodns" -> "google/mtail" ["e"=1]
+"uken/fluent-plugin-elasticsearch" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"spinnaker/kayenta" -> "cloudflare/unsee" ["e"=1]
+"robusta-dev/holmesgpt" -> "pyrra-dev/pyrra" ["e"=1]
 "nobl9/govy" -> "nobl9/nobl9-go"
 "nobl9/govy" -> "nobl9/terraform-provider-nobl9"
 "nobl9/govy" -> "nobl9/nobl9-backstage-plugin"
 "nobl9/govy" -> "nobl9/sloctl"
+"jcmoraisjr/haproxy-ingress" -> "prometheus/haproxy_exporter" ["e"=1]
 "grafana/promql-anomaly-detection" -> "FUSAKLA/promruval"
 "peardeck/prometheus-user-metrics" -> "weaveworks/promjs"
 "justwatchcom/sql_exporter" -> "free/sql_exporter"
@@ -1597,16 +1893,29 @@ digraph G {
 "prometheus/node_exporter" -> "oliver006/redis_exporter"
 "prometheus/node_exporter" -> "thanos-io/thanos" ["e"=1]
 "prometheus/node_exporter" -> "prometheus-operator/kube-prometheus" ["e"=1]
+"wal-g/wal-g" -> "prometheus-community/postgres_exporter" ["e"=1]
 "timescale/prometheus-postgresql-adapter" -> "timescale/pg_prometheus"
 "timescale/prometheus-postgresql-adapter" -> "iobeam/iobeam"
 "timescale/prometheus-postgresql-adapter" -> "iobeam/sample-android-wifi-rssi"
+"kubernetes-client/java" -> "prometheus/client_java" ["e"=1]
+"box/box-ui-elements" -> "prymitive/karma" ["e"=1]
+"rootsongjc/awesome-cloud-native" -> "warpnet/awesome-prometheus" ["e"=1]
+"prometheus/OpenMetrics" -> "trickstercache/trickster" ["e"=1]
+"prometheus/OpenMetrics" -> "prometheus/blackbox_exporter" ["e"=1]
+"prometheus/OpenMetrics" -> "google/mtail" ["e"=1]
+"prometheus/OpenMetrics" -> "line/promgen" ["e"=1]
+"prometheus/OpenMetrics" -> "prometheus/alertmanager" ["e"=1]
 "timescale/timescaledb-docker" -> "timescale/timescaledb-docker-ha"
 "timescale/timescaledb-docker" -> "timescale/helm-charts"
 "timescale/timescaledb-docker" -> "timescale/timescaledb-tune"
 "timescale/timescaledb-docker" -> "timescale/timescaledb-parallel-copy"
 "timescale/timescaledb-docker" -> "timescale/timescaledb-toolkit"
+"dastergon/postmortem-templates" -> "OpenSLO/OpenSLO" ["e"=1]
+"dastergon/postmortem-templates" -> "pyrra-dev/pyrra" ["e"=1]
+"cars10/elasticvue" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
 "bakins/php-fpm-exporter" -> "hipages/php-fpm_exporter"
 "bakins/php-fpm-exporter" -> "Lusitaniae/phpfpm_exporter"
+"songjiayang/prometheus_practice" -> "line/promgen" ["e"=1]
 "prometheus-community/PushProx" -> "pambrose/prometheus-proxy"
 "prometheus-community/PushProx" -> "QubitProducts/exporter_exporter"
 "prometheus-community/PushProx" -> "prometheus-community/ipmi_exporter"
@@ -1636,6 +1945,8 @@ digraph G {
 "google/cloudprober" -> "census-instrumentation/opencensus-go" ["e"=1]
 "google/cloudprober" -> "GoogleCloudPlatform/govanityurls" ["e"=1]
 "google/cloudprober" -> "google/stenographer" ["e"=1]
+"vmware-archive/cabin" -> "nmnellis/vistio" ["e"=1]
+"stefanprodan/swarmprom" -> "cloudflare/unsee" ["e"=1]
 "GoshPosh/grafana-meta-queries" -> "AutohomeCorp/autohome-compareQueries-datasource"
 "GoshPosh/grafana-meta-queries" -> "CorpGlory/grafana-progress-list"
 "timescale/timescaledb-parallel-copy" -> "timescale/timescaledb-tune"
@@ -1651,8 +1962,12 @@ digraph G {
 "camptocamp/grafana-prometheus-alertmanager-datasource" -> "monitoring-mixins/docs" ["e"=1]
 "camptocamp/grafana-prometheus-alertmanager-datasource" -> "QubitProducts/exporter_exporter"
 "awaragi/prometheus-mssql-exporter" -> "free/sql_exporter"
+"someone1/zfsbackup-go" -> "pdf/zfs_exporter" ["e"=1]
 "CorpGlory/grafana-progress-list" -> "CorpGlory/grafana-plugin-template-webpack"
 "michaeldmoore/michaeldmoore-multistat-panel" -> "CorpGlory/grafana-progress-list"
+"grafana/terraform-provider-grafana" -> "grafana/grafana-openapi-client-go" ["e"=1]
+"grafana/terraform-provider-grafana" -> "grafana/dashboard-linter" ["e"=1]
+"grafana/terraform-provider-grafana" -> "prometheus-community/prom-label-proxy" ["e"=1]
 "prometheus-community/parquet-common" -> "cloudflare/parquet-tsdb-poc"
 "timescale/benchmark-postgres" -> "timescale/homebrew-tap"
 "timescale/benchmark-postgres" -> "iobeam/iobeam"
@@ -1666,8 +1981,24 @@ digraph G {
 "timescale/pg_prometheus" -> "timescale/homebrew-tap"
 "cloudflare/parquet-tsdb-poc" -> "prometheus-community/parquet-common"
 "cloudflare/parquet-tsdb-poc" -> "sinkingpoint/onotify"
-"ribbybibby/ssl_exporter" ["l"="9.583,-10.592"]
+"grafana/loki" ["l"="8.403,-8.551", "c"=14]
+"prometheus/node_exporter" ["l"="9.389,-10.753"]
+"elasticsearch-dump/elasticsearch-dump" ["l"="-3.686,8.865", "c"=540]
+"prometheus-community/elasticsearch_exporter" ["l"="9.375,-10.65"]
+"mvisonneau/gitlab-ci-pipelines-exporter" ["l"="7.486,-8.863", "c"=14]
+"prymitive/karma" ["l"="9.576,-10.532"]
 "enix/x509-certificate-exporter" ["l"="9.662,-10.494"]
+"open-telemetry/opentelemetry-java" ["l"="9.875,-11.557", "c"=834]
+"prometheus/client_java" ["l"="9.351,-10.781"]
+"VictoriaMetrics/VictoriaMetrics" ["l"="8.342,-8.73", "c"=14]
+"prometheus/alertmanager" ["l"="9.423,-10.724"]
+"samber/awesome-prometheus-alerts" ["l"="8.013,-8.894", "c"=14]
+"prometheus/blackbox_exporter" ["l"="9.438,-10.675"]
+"tchiotludo/akhq" ["l"="-0.684,17.052", "c"=398]
+"danielqsj/kafka_exporter" ["l"="9.322,-10.721"]
+"haproxy/haproxy" ["l"="8.501,-8.797", "c"=14]
+"elastic/curator" ["l"="-3.71,8.933", "c"=540]
+"ribbybibby/ssl_exporter" ["l"="9.583,-10.592"]
 "joe-elliott/cert-exporter" ["l"="9.65,-10.554"]
 "amimof/node-cert-exporter" ["l"="9.626,-10.601"]
 "prometheus-community/node-exporter-textfile-collector-scripts" ["l"="9.548,-10.615"]
@@ -1675,11 +2006,9 @@ digraph G {
 "QubitProducts/exporter_exporter" ["l"="9.535,-10.594"]
 "caarlos0/domain_exporter" ["l"="9.621,-10.628"]
 "czerwonk/ping_exporter" ["l"="9.54,-10.671"]
-"prymitive/karma" ["l"="9.576,-10.532"]
 "ncabatoff/process-exporter" ["l"="9.421,-10.649"]
 "prometheus-community/jiralert" ["l"="9.555,-10.571"]
-"pryorda/vmware_exporter" ["l"="-49.955,6.873"]
-"prometheus/blackbox_exporter" ["l"="9.438,-10.675"]
+"pryorda/vmware_exporter" ["l"="-49.955,6.873", "c"=1172]
 "syepes/network_exporter" ["l"="9.563,-10.629"]
 "jacksontj/promxy" ["l"="9.594,-10.494"]
 "trickstercache/trickster" ["l"="9.633,-10.527"]
@@ -1687,78 +2016,109 @@ digraph G {
 "cloudflare/pint" ["l"="9.596,-10.448"]
 "line/promgen" ["l"="9.594,-10.56"]
 "VictoriaMetrics/operator" ["l"="9.677,-10.363"]
-"VictoriaMetrics/VictoriaMetrics" ["l"="8.342,-8.73"]
-"cortexproject/cortex" ["l"="8.137,-8.886"]
-"slok/sloth" ["l"="7.55,-9.093"]
+"cortexproject/cortex" ["l"="8.137,-8.886", "c"=14]
+"slok/sloth" ["l"="7.55,-9.093", "c"=14]
 "prometheus-community/prom-label-proxy" ["l"="9.545,-10.454"]
 "AICoE/prometheus-anomaly-detector" ["l"="9.627,-10.459"]
 "prometheus/promlens" ["l"="9.603,-10.42"]
 "timescale/promscale" ["l"="9.702,-10.396"]
 "prometheus-community/PushProx" ["l"="9.522,-10.573"]
-"prometheus/alertmanager" ["l"="9.423,-10.724"]
-"prometheus/node_exporter" ["l"="9.389,-10.753"]
-"prometheus-operator/prometheus-operator" ["l"="8.094,-8.909"]
-"prometheus/prometheus" ["l"="8.507,-8.355"]
+"prometheus-operator/prometheus-operator" ["l"="8.094,-8.909", "c"=14]
+"prometheus/prometheus" ["l"="8.507,-8.355", "c"=14]
 "prometheus/pushgateway" ["l"="9.377,-10.714"]
-"kubernetes/kube-state-metrics" ["l"="8.039,-8.981"]
-"prometheus/client_golang" ["l"="3.744,-8.783"]
+"kubernetes/kube-state-metrics" ["l"="8.039,-8.981", "c"=14]
+"prometheus/client_golang" ["l"="3.744,-8.783", "c"=0]
 "prometheus/mysqld_exporter" ["l"="9.358,-10.671"]
-"grafana/loki" ["l"="8.403,-8.551"]
-"thanos-io/thanos" ["l"="8.256,-8.733"]
-"samber/awesome-prometheus-alerts" ["l"="8.013,-8.894"]
-"prometheus-operator/kube-prometheus" ["l"="8.063,-8.959"]
+"thanos-io/thanos" ["l"="8.256,-8.733", "c"=14]
+"prometheus-operator/kube-prometheus" ["l"="8.063,-8.959", "c"=14]
 "oliver006/redis_exporter" ["l"="9.345,-10.692"]
-"google/cadvisor" ["l"="8.312,-8.641"]
+"google/cadvisor" ["l"="8.312,-8.641", "c"=14]
 "cloudflare/unsee" ["l"="9.57,-10.558"]
-"kuberhealthy/kuberhealthy" ["l"="7.649,-9.073"]
-"m3db/m3" ["l"="8.246,-8.89"]
+"kuberhealthy/kuberhealthy" ["l"="7.649,-9.073", "c"=14]
+"m3db/m3" ["l"="8.246,-8.89", "c"=14]
 "google/mtail" ["l"="9.532,-10.636"]
-"kubernetes/node-problem-detector" ["l"="7.898,-9.133"]
+"kubernetes/node-problem-detector" ["l"="7.898,-9.133", "c"=14]
 "weaveworks/grafanalib" ["l"="9.705,-10.633"]
-"prometheus/OpenMetrics" ["l"="8.135,-8.954"]
+"prometheus/OpenMetrics" ["l"="8.135,-8.954", "c"=14]
+"etsy/morgue" ["l"="11.064,-8.658", "c"=18]
+"kube-logging/logging-operator" ["l"="7.733,-9.283", "c"=14]
 "prymitive/kthxbye" ["l"="9.539,-10.537"]
-"dotnet/docs.es-es" ["l"="63.107,-1.291"]
+"dotnet/docs.es-es" ["l"="63.107,-1.291", "c"=175]
 "metalmatze/alertmanager-bot" ["l"="9.559,-10.592"]
-"kubernetes-monitoring/kubernetes-mixin" ["l"="7.864,-9.048"]
+"kubernetes-monitoring/kubernetes-mixin" ["l"="7.864,-9.048", "c"=14]
+"slok/grafterm" ["l"="4.868,-5.43", "c"=784]
+"prometheus-community/avalanche" ["l"="9.587,-10.399"]
+"target/goalert" ["l"="11.295,-8.783", "c"=18]
+"cloudalchemy/ansible-prometheus" ["l"="7.973,-13.003", "c"=739]
+"William-Yeh/ansible-prometheus" ["l"="9.18,-10.739"]
+"cloudalchemy/ansible-node-exporter" ["l"="8.004,-13.01", "c"=739]
+"vitabaks/autobase" ["l"="2.789,13.654", "c"=257]
+"prometheus-community/postgres_exporter" ["l"="9.382,-10.678"]
+"mbrt/gmailctl" ["l"="55.056,-15.491", "c"=25]
+"ipmitool/ipmitool" ["l"="-40.739,-34.036", "c"=360]
 "prometheus-community/ipmi_exporter" ["l"="9.495,-10.651"]
+"librenms/librenms" ["l"="6.283,-2.839", "c"=225]
 "prometheus/snmp_exporter" ["l"="9.402,-10.658"]
-"prometheus-community/bind_exporter" ["l"="9.458,-10.645"]
+"bosun-monitor/bosun" ["l"="3.937,-7.836", "c"=0]
+"alerta/alerta" ["l"="9.698,-10.579"]
+"tair-opensource/RedisShake" ["l"="9.094,-4.129", "c"=382]
+"alibaba/MongoShake" ["l"="9,-4.187", "c"=382]
+"percona/mongodb_exporter" ["l"="9.328,-10.651"]
+"linkedin/cruise-control" ["l"="-0.622,17.033", "c"=398]
+"prometheus/jmx_exporter" ["l"="9.352,-10.731"]
+"parca-dev/parca" ["l"="7.277,-6.347", "c"=335]
+"influxdata/influxdb-java" ["l"="4.419,-6.888", "c"=0]
+"systeminit/si" ["l"="7.47,-9.313", "c"=14]
+"perses/perses" ["l"="9.611,-10.398"]
+"prometheus-pve/prometheus-pve-exporter" ["l"="9.788,-12.04", "c"=1246]
 "prometheus-community/smartctl_exporter" ["l"="9.572,-10.686"]
-"digitalocean/ceph_exporter" ["l"="2.354,14.885"]
-"czerwonk/junos_exporter" ["l"="6.283,-4.261"]
+"MindFlavor/prometheus_wireguard_exporter" ["l"="9.556,-10.762"]
+"prometheus-community/bind_exporter" ["l"="9.458,-10.645"]
+"digitalocean/ceph_exporter" ["l"="2.354,14.885", "c"=756]
+"czerwonk/junos_exporter" ["l"="6.283,-4.261", "c"=725]
 "DRuggeri/nut_exporter" ["l"="9.584,-10.764"]
 "treydock/ssh_exporter" ["l"="9.495,-10.721"]
-"Tinkoff/libvirt-exporter" ["l"="1.123,14.977"]
+"Tinkoff/libvirt-exporter" ["l"="1.123,14.977", "c"=857]
 "Lusitaniae/apache_exporter" ["l"="9.379,-10.61"]
-"gebn/bmc_exporter" ["l"="3.664,-6.662"]
+"gebn/bmc_exporter" ["l"="3.664,-6.662", "c"=0]
+"open-telemetry/opentelemetry-python" ["l"="9.847,-11.51", "c"=834]
+"prometheus/client_python" ["l"="9.315,-10.762"]
+"timonwong/prometheus-webhook-dingtalk" ["l"="8.897,-5.61", "c"=278]
 "enix/kube-image-keeper" ["l"="9.746,-10.466"]
 "enix/helm-charts" ["l"="9.711,-10.466"]
 "enix/san-iscsi-csi" ["l"="9.718,-10.477"]
-"BeryJu/korb" ["l"="7.458,-9.223"]
-"int128/kubelogin" ["l"="7.677,-9.066"]
-"FairwindsOps/pluto" ["l"="7.568,-9.064"]
-"emberstack/kubernetes-reflector" ["l"="7.588,-9.174"]
-"config-syncer/config-syncer" ["l"="7.568,-9.345"]
-"kubepug/kubepug" ["l"="7.534,-9.065"]
-"FairwindsOps/rbac-manager" ["l"="7.541,-9.041"]
+"BeryJu/korb" ["l"="7.458,-9.223", "c"=14]
+"int128/kubelogin" ["l"="7.677,-9.066", "c"=14]
+"FairwindsOps/pluto" ["l"="7.568,-9.064", "c"=14]
+"emberstack/kubernetes-reflector" ["l"="7.588,-9.174", "c"=14]
+"config-syncer/config-syncer" ["l"="7.568,-9.345", "c"=14]
+"kubepug/kubepug" ["l"="7.534,-9.065", "c"=14]
+"FairwindsOps/rbac-manager" ["l"="7.541,-9.041", "c"=14]
+"elastic/cloud-on-k8s" ["l"="8.025,-9.075", "c"=14]
 "VictoriaMetrics/metrics" ["l"="9.686,-10.318"]
 "VictoriaMetrics/metricsql" ["l"="9.658,-10.345"]
 "VictoriaMetrics/victoriametrics-datasource" ["l"="9.711,-10.304"]
-"valyala/gozstd" ["l"="3.869,-8.059"]
+"valyala/gozstd" ["l"="3.869,-8.059", "c"=0]
 "VictoriaMetrics/victorialogs-datasource" ["l"="9.715,-10.325"]
 "VictoriaMetrics/prometheus-benchmark" ["l"="9.65,-10.325"]
+"cncf/tag-app-delivery" ["l"="7.653,-9.322", "c"=14]
+"cncf/tag-observability" ["l"="9.603,-10.357"]
+"hopsoft/docker-graphite-statsd" ["l"="4.293,-7.149", "c"=0]
+"grafana-wizzy/wizzy" ["l"="9.728,-10.618"]
 "digineo/go-ping" ["l"="9.557,-10.716"]
 "SuperQ/smokeping_prober" ["l"="9.512,-10.67"]
 "knsd/ping-exporter" ["l"="9.545,-10.732"]
 "frankiexyz/ping-exporter" ["l"="9.526,-10.739"]
 "nlamirault/speedtest_exporter" ["l"="9.522,-10.711"]
-"czerwonk/atlas_exporter" ["l"="6.222,-4.296"]
+"czerwonk/atlas_exporter" ["l"="6.222,-4.296", "c"=725]
 "knightss27/grafana-network-weathermap" ["l"="9.672,-10.748"]
 "alerta/zabbix-alerta" ["l"="9.777,-10.589"]
 "alerta/angular-alerta-webui" ["l"="9.766,-10.571"]
+"influxdata/influxdb-python" ["l"="4.388,-7.007", "c"=0]
 "4n4nd/prometheus-api-client-python" ["l"="9.716,-10.434"]
 "operate-first/operate-first.github.io-old" ["l"="9.789,-10.423"]
 "aicoe-aiops/ocp-ci-analysis" ["l"="9.753,-10.42"]
+"vmware-archive/kube-prod-runtime" ["l"="63.109,-1.244", "c"=175]
 "algenty/grafana-flowcharting" ["l"="9.808,-10.72"]
 "algenty/flowcharting-repository" ["l"="9.845,-10.706"]
 "jdbranham/grafana-diagram" ["l"="9.85,-10.76"]
@@ -1766,46 +2126,52 @@ digraph G {
 "yesoreyeram/yesoreyeram-boomtable-panel" ["l"="9.886,-10.762"]
 "GlobalNOC/globalnoc-networkmap-panel" ["l"="9.793,-10.77"]
 "IzakMarais/reporter" ["l"="9.746,-10.716"]
-"netenglabs/suzieq" ["l"="6.092,-2.929"]
+"netenglabs/suzieq" ["l"="6.092,-2.929", "c"=225]
 "Billiballa/bilibala-echarts-panel" ["l"="9.851,-10.805"]
 "NatelEnergy/grafana-discrete-panel" ["l"="9.888,-10.788"]
-"nttgin/BGPalerter" ["l"="6.215,-4.175"]
-"alerta/alerta" ["l"="9.698,-10.579"]
-"eNMS-automation/eNMS" ["l"="6.144,-2.925"]
-"grafana/grafonnet-lib" ["l"="9.593,-11.357"]
-"flant/grafana-statusmap" ["l"="7.307,-9.378"]
-"prometheus/jmx_exporter" ["l"="9.352,-10.731"]
-"danielqsj/kafka_exporter" ["l"="9.322,-10.721"]
-"prometheus-community/elasticsearch_exporter" ["l"="9.375,-10.65"]
-"prometheus/client_java" ["l"="9.351,-10.781"]
-"jmxtrans/jmxtrans" ["l"="-0.503,17.082"]
-"linkedin/Burrow" ["l"="-0.615,17.009"]
-"yahoo/CMAK" ["l"="-0.571,17.07"]
+"nttgin/BGPalerter" ["l"="6.215,-4.175", "c"=725]
+"eNMS-automation/eNMS" ["l"="6.144,-2.925", "c"=225]
+"grafana/grafonnet-lib" ["l"="9.593,-11.357", "c"=834]
+"flant/grafana-statusmap" ["l"="7.307,-9.378", "c"=14]
+"cloudworkz/kube-eagle" ["l"="7.628,-9.066", "c"=14]
+"jmxtrans/jmxtrans" ["l"="-0.503,17.082", "c"=398]
+"linkedin/Burrow" ["l"="-0.615,17.009", "c"=398]
+"yahoo/CMAK" ["l"="-0.571,17.07", "c"=398]
 "thanos-io/kube-thanos" ["l"="9.515,-10.433"]
 "observatorium/observatorium" ["l"="9.56,-10.395"]
-"banzaicloud/thanos-operator" ["l"="7.67,-9.49"]
-"tkestack/kvass" ["l"="8.023,-9.381"]
-"kubesphere/notification-manager" ["l"="8.161,-9.371"]
+"banzaicloud/thanos-operator" ["l"="7.67,-9.49", "c"=14]
+"tkestack/kvass" ["l"="8.023,-9.381", "c"=14]
+"kubesphere/notification-manager" ["l"="8.161,-9.371", "c"=14]
 "observatorium/thanos-receive-controller" ["l"="9.58,-10.37"]
-"prometheus-community/avalanche" ["l"="9.587,-10.399"]
 "mingrammer/flog" ["l"="9.514,-10.813"]
 "kiritbasu/Fake-Apache-Log-Generator" ["l"="9.522,-10.863"]
-"brianvoe/gofakeit" ["l"="4.092,-8.898"]
+"brianvoe/gofakeit" ["l"="4.092,-8.898", "c"=0]
 "WuerthPhoenix/log-generator" ["l"="9.501,-10.845"]
 "fstab/grok_exporter" ["l"="9.501,-10.583"]
-"fluent/fluent-operator" ["l"="8.115,-9.301"]
+"fluent/fluent-operator" ["l"="8.115,-9.301", "c"=14]
 "DevOps-Nirvana/Kubernetes-Volume-Autoscaler" ["l"="9.522,-10.931"]
-"kubevious/kubevious" ["l"="7.558,-8.994"]
-"grafana/mimir" ["l"="9.784,-11.39"]
+"kubevious/kubevious" ["l"="7.558,-8.994", "c"=14]
+"grafana/mimir" ["l"="9.784,-11.39", "c"=834]
 "chentex/random-logger" ["l"="9.499,-10.88"]
 "nghialv/promviz" ["l"="9.73,-10.512"]
 "mj-hd/promviz-front" ["l"="9.772,-10.498"]
 "nmnellis/vistio" ["l"="9.82,-10.501"]
-"Netflix/vizceral" ["l"="8.171,-8.359"]
+"Netflix/vizceral" ["l"="8.171,-8.359", "c"=14]
 "lotusload/lotus" ["l"="9.787,-10.484"]
-"voyagermesh/voyager" ["l"="10.412,-10.137"]
-"prometheus-junkyard/tsdb" ["l"="4.163,-7.917"]
-"pipe-cd/pipecd" ["l"="7.088,-40.33"]
+"voyagermesh/voyager" ["l"="10.412,-10.137", "c"=740]
+"prometheus-junkyard/tsdb" ["l"="4.163,-7.917", "c"=0]
+"pipe-cd/pipecd" ["l"="7.088,-40.33", "c"=573]
+"timescale/tsbs" ["l"="-0.301,15.089", "c"=729]
+"timescale/pg_prometheus" ["l"="9.814,-10.362"]
+"timescale/docs.timescale.com-content" ["l"="9.827,-10.341"]
+"timescale/timescaledb-tune" ["l"="9.807,-10.309"]
+"timescale/timescaledb-toolkit" ["l"="9.79,-10.327"]
+"AICoE/log-anomaly-detector" ["l"="51.997,14.938", "c"=1096]
+"grafana/jsonnet-libs" ["l"="9.57,-11.351", "c"=834]
+"grafana/dashboard-linter" ["l"="9.618,-10.376"]
+"ansible-community/awesome-ansible" ["l"="8.618,-12.298", "c"=600]
+"warpnet/awesome-prometheus" ["l"="9.545,-10.48"]
+"uber/grafana-dash-gen" ["l"="9.786,-10.635"]
 "prometheus/statsd_exporter" ["l"="9.382,-10.585"]
 "prometheus/consul_exporter" ["l"="9.325,-10.553"]
 "prometheus/graphite_exporter" ["l"="9.346,-10.529"]
@@ -1813,15 +2179,13 @@ digraph G {
 "prometheus/haproxy_exporter" ["l"="9.362,-10.592"]
 "prometheus/influxdb_exporter" ["l"="9.37,-10.554"]
 "weaveworks/prom-aggregation-gateway" ["l"="9.472,-10.509"]
-"databand-ai/airflow-dashboards" ["l"="0.36,15.874"]
-"epoch8/airflow-exporter" ["l"="0.342,15.912"]
-"prometheus/client_python" ["l"="9.315,-10.762"]
-"prometheus/cloudwatch_exporter" ["l"="7.754,-9.289"]
+"databand-ai/airflow-dashboards" ["l"="0.36,15.874", "c"=1224]
+"epoch8/airflow-exporter" ["l"="0.342,15.912", "c"=1224]
+"prometheus/cloudwatch_exporter" ["l"="7.754,-9.289", "c"=14]
 "yesoreyeram/yesoreyeram-boomsummary-panel" ["l"="9.91,-10.789"]
 "michaeldmoore/michaeldmoore-multistat-panel" ["l"="9.942,-10.799"]
 "nfrumkin/forecast-prometheus" ["l"="9.665,-10.441"]
 "AICoE/prometheus-data-science" ["l"="9.668,-10.423"]
-"AICoE/log-anomaly-detector" ["l"="51.997,14.938"]
 "FUSAKLA/promruval" ["l"="9.592,-10.378"]
 "grafana/promql-anomaly-detection" ["l"="9.65,-10.398"]
 "imgix/prometheus-am-executor" ["l"="9.609,-10.539"]
@@ -1829,31 +2193,39 @@ digraph G {
 "grafana/simple-json-datasource" ["l"="9.712,-10.798"]
 "grafana/grafana-json-datasource" ["l"="9.702,-10.713"]
 "grafana/grafana-infinity-datasource" ["l"="9.669,-10.66"]
-"seglo/kafka-lag-exporter" ["l"="-0.773,16.961"]
-"redpanda-data/kminion" ["l"="-0.737,17.013"]
-"smartloli/EFAK" ["l"="-0.558,17.131"]
-"strimzi/strimzi-kafka-operator" ["l"="7.969,-9.058"]
+"arachnys/cabot" ["l"="11.568,-8.779", "c"=18]
+"cdwv/awesome-helm" ["l"="7.672,-9.108", "c"=14]
+"open-telemetry/community" ["l"="9.828,-11.546", "c"=834]
+"pgbackrest/pgbackrest" ["l"="2.732,13.629", "c"=257]
+"kdeldycke/awesome-iam" ["l"="26.144,-26.341", "c"=32]
+"seglo/kafka-lag-exporter" ["l"="-0.773,16.961", "c"=398]
+"redpanda-data/kminion" ["l"="-0.737,17.013", "c"=398]
+"smartloli/EFAK" ["l"="-0.558,17.131", "c"=398]
+"strimzi/strimzi-kafka-operator" ["l"="7.969,-9.058", "c"=14]
 "prometheus-community/systemd_exporter" ["l"="9.583,-10.631"]
 "prometheus/exporter-toolkit" ["l"="9.555,-10.523"]
-"MindFlavor/prometheus_wireguard_exporter" ["l"="9.556,-10.762"]
 "mdlayher/wireguard_exporter" ["l"="9.557,-10.819"]
 "google/dnsmasq_exporter" ["l"="9.586,-10.821"]
 "kbknapp/wireguard_exporter" ["l"="9.566,-10.796"]
 "metalmatze/transmission-exporter" ["l"="9.562,-10.846"]
 "foomo/pagespeed_exporter" ["l"="9.611,-10.835"]
-"jodevsa/wireguard-operator" ["l"="7.534,-9.322"]
+"jodevsa/wireguard-operator" ["l"="7.534,-9.322", "c"=14]
 "xperimental/nextcloud-exporter" ["l"="9.592,-10.87"]
 "jamesread/prometheus-gmail-exporter" ["l"="9.474,-10.631"]
-"prometheus-community/postgres_exporter" ["l"="9.382,-10.678"]
+"rycus86/prometheus_flask_exporter" ["l"="42.218,21.971", "c"=280]
 "idealista/prom2teams" ["l"="9.669,-10.47"]
 "prometheus-msteams/prometheus-msteams" ["l"="9.62,-10.501"]
+"renatomefi/php-fpm-healthcheck" ["l"="-15.757,25.826", "c"=50]
+"hipages/php-fpm_exporter" ["l"="9.321,-10.614"]
 "alerta/alerta-webui" ["l"="9.75,-10.589"]
 "alerta/docker-alerta" ["l"="9.726,-10.589"]
 "alerta/alerta-contrib" ["l"="9.735,-10.569"]
+"eko/pihole-exporter" ["l"="-51.492,13.346", "c"=200]
 "nicholasjackson/mtls-go-example" ["l"="9.861,-10.497"]
-"kinvolk/service-mesh-benchmark" ["l"="8.511,-9.229"]
+"kinvolk/service-mesh-benchmark" ["l"="8.511,-9.229", "c"=14]
 "shift/domain_exporter" ["l"="9.641,-10.664"]
 "inCaller/prometheus_bot" ["l"="9.611,-10.586"]
+"stakater/IngressMonitorController" ["l"="7.48,-9.082", "c"=14]
 "hastic-zzz/hastic-server" ["l"="10.027,-10.805"]
 "hastic-zzz/hastic-grafana-app" ["l"="9.994,-10.792"]
 "CorpGlory/grafana-progress-list" ["l"="9.967,-10.813"]
@@ -1861,18 +2233,25 @@ digraph G {
 "CorpGlory/grafana-data-exporter" ["l"="10.076,-10.813"]
 "chartwerk/grafana-chartwerk-app" ["l"="10.021,-10.781"]
 "hastic-zzz/analytics" ["l"="10.008,-10.77"]
+"grafana/grafana-operator" ["l"="7.88,-9.203", "c"=14]
+"prometheus-community/yet-another-cloudwatch-exporter" ["l"="7.711,-9.241", "c"=14]
+"hashicorp/consul-k8s" ["l"="7.094,-12.835", "c"=666]
+"nickbabcock/OhmGraphite" ["l"="7.155,-11.467", "c"=515]
+"prometheus-community/windows_exporter" ["l"="9.407,-10.693"]
+"line/centraldogma" ["l"="22.089,2.418", "c"=208]
+"monzo/response" ["l"="11.053,-8.741", "c"=18]
 "CorpGlory/grafana-plugin-template-webpack" ["l"="10.01,-10.838"]
 "CorpGlory/types-grafana" ["l"="10.062,-10.862"]
 "CorpGlory/grafana-plugin-template-webpack-typescript" ["l"="10.025,-10.855"]
 "CorpGlory/csv2influx" ["l"="10.035,-10.842"]
-"rhicks/bgp-dashboard" ["l"="6.225,-4.189"]
+"haproxytech/kubernetes-ingress" ["l"="8.488,-9.196", "c"=14]
+"nshttpd/mikrotik-exporter" ["l"="-65.292,16.655", "c"=967]
+"rhicks/bgp-dashboard" ["l"="6.225,-4.189", "c"=725]
 "GlobalNOC/globalnoc-worldview-panel" ["l"="9.818,-10.785"]
 "atosorigin/grafana-weathermap-panel" ["l"="9.803,-10.798"]
-"hipages/php-fpm_exporter" ["l"="9.321,-10.614"]
 "bakins/php-fpm-exporter" ["l"="9.275,-10.622"]
 "Lusitaniae/phpfpm_exporter" ["l"="9.298,-10.605"]
-"renatomefi/php-fpm-healthcheck" ["l"="-15.757,25.826"]
-"PromPHP/prometheus_client_php" ["l"="-13.662,26.16"]
+"PromPHP/prometheus_client_php" ["l"="-13.662,26.16", "c"=111]
 "nginx/nginx-prometheus-exporter" ["l"="9.353,-10.639"]
 "sysulq/nginx-vts-exporter" ["l"="9.353,-10.614"]
 "jonnenauha/prometheus_varnish_exporter" ["l"="9.253,-10.611"]
@@ -1885,16 +2264,18 @@ digraph G {
 "trustpilot/node-trustpilot" ["l"="8.945,-10.575"]
 "trustpilot/dockerlogger" ["l"="8.931,-10.576"]
 "BonnierNews/logstash_exporter" ["l"="9.172,-10.558"]
-"neptune-networks/flow-exporter" ["l"="6.277,-4.212"]
-"akvorado/akvorado" ["l"="6.245,-4.166"]
-"thatmattlove/hyperglass" ["l"="6.194,-4.179"]
+"operator-framework/getting-started" ["l"="7.954,-9.522", "c"=14]
+"neptune-networks/flow-exporter" ["l"="6.277,-4.212", "c"=725]
+"akvorado/akvorado" ["l"="6.245,-4.166", "c"=725]
+"thatmattlove/hyperglass" ["l"="6.194,-4.179", "c"=725]
 "letsencrypt/unbound_exporter" ["l"="9.453,-10.873"]
-"oetiker/SmokePing" ["l"="6.434,-2.626"]
+"oetiker/SmokePing" ["l"="6.434,-2.626", "c"=225]
 "observatorium/api" ["l"="9.515,-10.362"]
 "rhobs/configuration" ["l"="9.526,-10.378"]
 "nicolastakashi/prom-analytics-proxy" ["l"="9.57,-10.376"]
 "thanos-io/promql-engine" ["l"="9.61,-10.334"]
 "dsayan154/thanos-receiver-demo" ["l"="9.587,-10.324"]
+"mrlhansen/idrac_exporter" ["l"="9.62,-10.688"]
 "free/sql_exporter" ["l"="9.423,-10.578"]
 "justwatchcom/sql_exporter" ["l"="9.44,-10.514"]
 "burningalchemist/sql_exporter" ["l"="9.463,-10.54"]
@@ -1902,29 +2283,32 @@ digraph G {
 "awaragi/prometheus-mssql-exporter" ["l"="9.416,-10.539"]
 "iamseth/oracledb_exporter" ["l"="9.274,-10.589"]
 "chop-dbhi/prometheus-sql" ["l"="9.404,-10.505"]
-"prometheus-community/windows_exporter" ["l"="9.407,-10.693"]
 "dcu/mongodb_exporter" ["l"="9.342,-10.583"]
 "ricoberger/script_exporter" ["l"="9.594,-10.611"]
 "danielfm/prometheus-for-developers" ["l"="9.506,-10.487"]
 "open-fresh/bomb-squad" ["l"="9.566,-10.5"]
 "infinityworks/prometheus-example-queries" ["l"="9.515,-10.536"]
-"vozlt/nginx-module-vts" ["l"="-20.732,-21.695"]
-"knyar/nginx-lua-prometheus" ["l"="-20.688,-21.611"]
-"percona/mongodb_exporter" ["l"="9.328,-10.651"]
-"nginx/kubernetes-ingress" ["l"="8.169,-8.905"]
+"vozlt/nginx-module-vts" ["l"="-20.732,-21.695", "c"=245]
+"knyar/nginx-lua-prometheus" ["l"="-20.688,-21.611", "c"=245]
+"nginx/kubernetes-ingress" ["l"="8.169,-8.905", "c"=14]
+"starsliao/Prometheus" ["l"="8.872,-5.573", "c"=278]
+"percona/grafana-dashboards" ["l"="9.304,-10.692"]
 "micha37-martins/S.M.A.R.T-disk-monitoring-for-Prometheus" ["l"="9.616,-10.724"]
 "matusnovak/prometheus-smartctl" ["l"="9.597,-10.706"]
+"cloudnativedevops/demo" ["l"="29.035,-23.919", "c"=658]
+"OpenSLO/OpenSLO" ["l"="9.56,-10.309"]
 "fabxc/jiralerts" ["l"="9.617,-10.564"]
 "cloudflare/alertmanager2es" ["l"="9.54,-10.554"]
 "prometheus/nagios_plugins" ["l"="9.637,-10.579"]
-"tomkerkhove/promitor" ["l"="11.063,-11.62"]
-"cloudalchemy/ansible-node-exporter" ["l"="8.004,-13.01"]
+"retroryan/istio-workshop" ["l"="29.336,-23.284", "c"=879]
+"tatsushid/go-fastping" ["l"="3.373,-8.205", "c"=0]
+"tomkerkhove/promitor" ["l"="11.063,-11.62", "c"=431]
 "grafana/grafana-image-renderer" ["l"="9.777,-10.746"]
-"Icinga/icingadb" ["l"="9.219,-11.235"]
-"grafana/dashboard-linter" ["l"="9.618,-10.376"]
-"grafana/cortex-tools" ["l"="-1.101,-33.611"]
+"Icinga/icingadb" ["l"="9.219,-11.235", "c"=1174]
+"grafana/cortex-tools" ["l"="-1.101,-33.611", "c"=110]
 "chronosphereio/high-cardinality-analyzer" ["l"="9.545,-10.373"]
 "prometheus-community/promql-langserver" ["l"="9.495,-10.334"]
+"brancz/kube-rbac-proxy" ["l"="7.9,-9.237", "c"=14]
 "danilochilene/Pyora" ["l"="9.022,-10.465"]
 "ikzelf/zbxora" ["l"="9.066,-10.491"]
 "netrusov/ZabbixDBA" ["l"="9.044,-10.481"]
@@ -1940,10 +2324,8 @@ digraph G {
 "oracle/oci-grafana-logs" ["l"="9.162,-10.592"]
 "adhocteam/script_exporter" ["l"="9.57,-10.657"]
 "gree-gorey/bash-exporter" ["l"="9.613,-10.663"]
-"galexrt/dellhw_exporter" ["l"="2.433,14.824"]
-"mrlhansen/idrac_exporter" ["l"="9.62,-10.688"]
-"brancz/kube-rbac-proxy" ["l"="7.9,-9.237"]
-"authzed/prom-authzed-proxy" ["l"="7.496,-10.385"]
+"galexrt/dellhw_exporter" ["l"="2.433,14.824", "c"=756]
+"authzed/prom-authzed-proxy" ["l"="7.496,-10.385", "c"=14]
 "hoffie/prometheus-filter-proxy" ["l"="9.528,-10.41"]
 "cherti/PromAuthProxy" ["l"="9.506,-10.406"]
 "AICoE/prometheus-anomaly-detector-legacy" ["l"="9.692,-10.43"]
@@ -1954,20 +2336,21 @@ digraph G {
 "seanlaff/simple-streaming-datasource" ["l"="10.107,-10.883"]
 "google/prometheus-slo-burn-example" ["l"="9.516,-10.311"]
 "google/slo-generator" ["l"="9.552,-10.345"]
+"oracle-terraform-modules/terraform-oci-oke" ["l"="4.648,-4.683", "c"=471]
+"oracle/oracle-db-appdev-monitoring" ["l"="9.209,-10.551"]
+"maxandersen/internet-monitoring" ["l"="8,-12.706", "c"=739]
+"vegasbrianc/github-monitoring" ["l"="9.295,-10.413"]
 "CorpGlory/grafana-multibar-graph-panel" ["l"="9.964,-10.831"]
 "floyd871/prometheus_oracle_exporter" ["l"="9.231,-10.579"]
 "ilgizar/ilgizar-candlestick-panel" ["l"="9.933,-10.891"]
 "NatelEnergy/grafana-plotly-panel" ["l"="9.899,-10.837"]
-"timescale/timescaledb-tune" ["l"="9.807,-10.309"]
 "timescale/timescaledb-parallel-copy" ["l"="9.81,-10.286"]
-"timescale/timescaledb-toolkit" ["l"="9.79,-10.327"]
 "timescale/timescaledb-docker" ["l"="9.789,-10.278"]
 "timescale/helm-charts" ["l"="9.767,-10.318"]
 "timescale/outflux" ["l"="9.862,-10.279"]
 "adambaumeister/goflow" ["l"="9.84,-10.265"]
 "timescale/timescaledb-docker-ha" ["l"="9.78,-10.296"]
 "timescale/docs" ["l"="9.834,-10.303"]
-"timescale/docs.timescale.com-content" ["l"="9.827,-10.341"]
 "IBM/varnish-operator" ["l"="9.152,-10.633"]
 "heiyhia/grafana-echarts-panel" ["l"="9.862,-10.831"]
 "trustpilot/principles" ["l"="8.924,-10.553"]
@@ -1975,10 +2358,9 @@ digraph G {
 "trustpilot/node-eslint-config" ["l"="8.918,-10.572"]
 "trustpilot/ilenia" ["l"="8.903,-10.536"]
 "pdf/zfs_exporter" ["l"="9.597,-10.743"]
-"openebs/zfs-localpv" ["l"="7.388,-9.531"]
+"openebs/zfs-localpv" ["l"="7.388,-9.531", "c"=14]
 "alerta/prometheus-config" ["l"="9.668,-10.58"]
 "timescale/homebrew-tap" ["l"="9.848,-10.346"]
-"timescale/pg_prometheus" ["l"="9.814,-10.362"]
 "iobeam/iobeam" ["l"="9.847,-10.364"]
 "iobeam/sample-android-wifi-rssi" ["l"="9.838,-10.36"]
 "sequra/logstash_exporter" ["l"="9.141,-10.56"]
@@ -1991,65 +2373,85 @@ digraph G {
 "squadcastHQ/awesome-sre-tools" ["l"="9.546,-10.164"]
 "squadcastHQ/alchemy-ui" ["l"="9.548,-10.208"]
 "roshan8/shielded-secrets" ["l"="9.553,-10.223"]
-"monitoring-mixins/docs" ["l"="9.495,-11.412"]
+"pycontribs/jira" ["l"="6.926,-8.628", "c"=14]
+"monitoring-mixins/docs" ["l"="9.495,-11.412", "c"=834]
 "cloudandheat/prometheus_smart_exporter" ["l"="9.58,-10.729"]
 "o11ydev/oy-toolkit" ["l"="9.455,-10.422"]
+"sentry-kubernetes/charts" ["l"="7.684,-9.194", "c"=14]
+"grafana/grizzly" ["l"="9.624,-11.34", "c"=834]
+"logstash-plugins/logstash-patterns-core" ["l"="-3.755,8.923", "c"=540]
+"yahoo/kubectl-flame" ["l"="7.794,-9.15", "c"=14]
+"OT-CONTAINER-KIT/redis-operator" ["l"="8.115,-9.374", "c"=14]
+"GoogleCloudPlatform/monitoring-dashboard-samples" ["l"="45.041,16.46", "c"=213]
+"jertel/elastalert2" ["l"="-3.565,8.823", "c"=540]
+"yolossn/Prometheus-Basics" ["l"="4.381,-9.06", "c"=0]
 "grafana/grafana-plugin-examples" ["l"="9.485,-10.441"]
 "grafana/plugin-tools" ["l"="9.463,-10.392"]
 "grafana/grafana-plugin-sdk-go" ["l"="9.44,-10.381"]
 "grafana/plugin-validator" ["l"="9.431,-10.412"]
+"grafana/agent" ["l"="9.723,-11.357", "c"=834]
+"mongodb/mongodb-kubernetes-operator" ["l"="8.071,-9.279", "c"=14]
+"open-telemetry/opentelemetry-java-instrumentation" ["l"="9.842,-11.565", "c"=834]
 "topolvm/pvc-autoresizer" ["l"="9.525,-10.972"]
+"pires/kubernetes-elasticsearch-cluster" ["l"="8.175,-9.04", "c"=14]
 "timescale/tobs" ["l"="9.755,-10.356"]
-"jetstack/version-checker" ["l"="7.463,-9.094"]
+"jetstack/version-checker" ["l"="7.463,-9.094", "c"=14]
 "timescale/promscale_extension" ["l"="9.739,-10.378"]
-"weaveworks-experiments/kspan" ["l"="7.655,-9.124"]
-"goss-org/goss" ["l"="8.512,-12.343"]
-"google/gops" ["l"="3.953,-8.585"]
-"oklog/oklog" ["l"="4.042,-8.321"]
-"kelseyhightower/confd" ["l"="5.877,-12.294"]
+"weaveworks-experiments/kspan" ["l"="7.655,-9.124", "c"=14]
+"mercari/production-readiness-checklist" ["l"="7.147,-40.337", "c"=573]
+"goss-org/goss" ["l"="8.512,-12.343", "c"=600]
+"google/gops" ["l"="3.953,-8.585", "c"=0]
+"oklog/oklog" ["l"="4.042,-8.321", "c"=0]
+"kelseyhightower/confd" ["l"="5.877,-12.294", "c"=270]
 "HON95/prometheus-nut-exporter" ["l"="9.609,-10.794"]
-"DRuggeri/netgear_exporter" ["l"="7.25,-11.613"]
+"DRuggeri/netgear_exporter" ["l"="7.25,-11.613", "c"=515]
 "prometheus-community/json_exporter" ["l"="9.495,-10.603"]
 "ysde/grafana-backup-tool" ["l"="9.658,-10.619"]
-"grafana/beyla" ["l"="9.81,-11.362"]
+"grafana/beyla" ["l"="9.81,-11.362", "c"=834]
 "esnet/gdg" ["l"="9.696,-10.671"]
 "grafana/grafana-csv-datasource" ["l"="9.677,-10.707"]
-"grafana/terraform-provider-grafana" ["l"="10.36,-5.829"]
+"grafana/terraform-provider-grafana" ["l"="10.36,-5.829", "c"=162]
 "VolkovLabs/business-forms" ["l"="9.757,-10.777"]
-"grafana/grizzly" ["l"="9.624,-11.34"]
 "timescale/prometheus-postgresql-adapter" ["l"="9.811,-10.384"]
-"timescale/tsbs" ["l"="-0.301,15.089"]
+"line/decaton" ["l"="22.108,2.408", "c"=208]
+"debops/debops-tools" ["l"="8.564,-12.432", "c"=600]
+"lyft/clutch" ["l"="7.684,-9.125", "c"=14]
+"evryfs/github-actions-runner-operator" ["l"="8.203,-45.547", "c"=544]
+"promhippie/github_exporter" ["l"="9.362,-10.416"]
+"dora-team/fourkeys" ["l"="10.549,-6.228", "c"=162]
+"trallnag/prometheus-fastapi-instrumentator" ["l"="42.854,19.618", "c"=529]
+"ustream/openduty" ["l"="11.288,-8.712", "c"=18]
+"K-Phoen/grabana" ["l"="9.579,-11.268", "c"=834]
+"grafana-tools/sdk" ["l"="9.876,-10.628"]
 "grafana/grafana-openapi-client-go" ["l"="9.406,-10.314"]
 "VictoriaMetrics/helm-charts" ["l"="9.701,-10.278"]
 "VictoriaMetrics/ansible-playbooks" ["l"="9.75,-10.179"]
-"grafana/helm-charts" ["l"="7.9,-9.079"]
+"grafana/helm-charts" ["l"="7.9,-9.079", "c"=14]
+"fluent/helm-charts" ["l"="8.105,-9.159", "c"=14]
+"hashicorp/consul-replicate" ["l"="7.069,-12.95", "c"=666]
 "PhilipMay/smart-prom-next" ["l"="9.627,-10.741"]
 "mgumz/mtr-exporter" ["l"="9.59,-10.671"]
 "grafana/github-datasource" ["l"="9.406,-10.441"]
 "grafana/grafana-plugin-repository" ["l"="9.592,-10.649"]
 "grafana/plugin-workflows" ["l"="9.41,-10.412"]
 "Labbs/github-actions-exporter" ["l"="9.343,-10.399"]
-"grafana/faro" ["l"="9.745,-11.261"]
-"promhippie/github_exporter" ["l"="9.362,-10.416"]
-"cncf/tag-observability" ["l"="9.603,-10.357"]
-"OpenSLO/OpenSLO" ["l"="9.56,-10.309"]
-"cncf/tag-app-delivery" ["l"="7.653,-9.322"]
-"open-telemetry/community" ["l"="9.828,-11.546"]
-"grafana/phlare" ["l"="9.759,-11.335"]
-"perses/perses" ["l"="9.611,-10.398"]
+"grafana/faro" ["l"="9.745,-11.261", "c"=834]
+"prometheus/procfs" ["l"="3.987,-8.079", "c"=0]
+"grafana/phlare" ["l"="9.759,-11.335", "c"=834]
 "githubexporter/github-exporter" ["l"="9.332,-10.44"]
 "cpanato/github_actions_exporter" ["l"="9.324,-10.362"]
 "self-actuated/actions-usage" ["l"="9.297,-10.349"]
 "prometheus/docs" ["l"="9.404,-10.624"]
-"prometheus/common" ["l"="4.112,-7.919"]
-"prometheus/promu" ["l"="4.14,-7.85"]
-"prometheus/client_model" ["l"="4.096,-7.879"]
+"prometheus/common" ["l"="4.112,-7.919", "c"=0]
+"prometheus/promu" ["l"="4.14,-7.85", "c"=0]
+"prometheus/client_model" ["l"="4.096,-7.879", "c"=0]
 "griggheo/ansible-prometheus" ["l"="9.258,-10.692"]
-"prometheus/golang-builder" ["l"="4.143,-7.815"]
+"prometheus/golang-builder" ["l"="4.143,-7.815", "c"=0]
 "operate-first/apps" ["l"="9.845,-10.417"]
 "operate-first/support" ["l"="9.875,-10.415"]
 "AutohomeCorp/autohome-compareQueries-datasource" ["l"="10.049,-10.924"]
 "AutohomeCorp/graph-compare-panel" ["l"="10.069,-10.949"]
+"vvanholl/elasticsearch-prometheus-exporter" ["l"="9.304,-10.557"]
 "SiemaApplications-attic/mongodb-grafana" ["l"="9.79,-10.949"]
 "prometheus-community/vscode-promql" ["l"="9.461,-10.303"]
 "balerter/balerter" ["l"="9.813,-10.063"]
@@ -2057,8 +2459,8 @@ digraph G {
 "cristalhq/sqlmetrics" ["l"="9.83,-10.031"]
 "roshan8/slo-tracker" ["l"="9.546,-10.272"]
 "seznam/slo-exporter" ["l"="9.54,-10.327"]
-"terraform-google-modules/terraform-google-slo" ["l"="45.129,16.497"]
-"steve-mt/awesome-slo" ["l"="29.368,-24.57"]
+"terraform-google-modules/terraform-google-slo" ["l"="45.129,16.497", "c"=213]
+"steve-mt/awesome-slo" ["l"="29.368,-24.57", "c"=530]
 "OpenSLO/oslo" ["l"="9.523,-10.272"]
 "svartalf/unbound-telemetry" ["l"="9.444,-10.904"]
 "globocom/slo-generator" ["l"="9.489,-10.281"]
@@ -2076,58 +2478,62 @@ digraph G {
 "sagarrakshe/nomad-dtree" ["l"="9.487,-10.002"]
 "last9/tfstate" ["l"="9.497,-10.017"]
 "last9/iox-registry" ["l"="9.492,-10.056"]
+"akpw/mktxp" ["l"="-65.317,16.648", "c"=967]
 "timescale/timescaledb-extras" ["l"="9.844,-10.32"]
-"timescale/pgspot" ["l"="3.91,13.364"]
+"timescale/pgspot" ["l"="3.91,13.364", "c"=850]
 "kbudde/rabbitmq_exporter" ["l"="9.309,-10.645"]
 "deadtrickster/prometheus_rabbitmq_exporter" ["l"="9.227,-10.677"]
 "rabbitmq/rabbitmq-prometheus" ["l"="9.22,-10.654"]
-"parca-dev/parca" ["l"="7.277,-6.347"]
-"polarsignals/frostdb" ["l"="4.328,-8.366"]
-"robusta-dev/krr" ["l"="7.568,-9.093"]
-"kube-logging/logging-operator" ["l"="7.733,-9.283"]
-"gosnmp/gosnmp" ["l"="3.389,-8.362"]
-"librenms/librenms" ["l"="6.283,-2.839"]
-"stefanprodan/timoni" ["l"="7.582,-9.192"]
-"kcp-dev/kcp" ["l"="7.721,-9.196"]
-"sustainable-computing-io/kepler" ["l"="-11.663,16.98"]
-"korfuri/django-prometheus" ["l"="47.335,18.364"]
-"kubernetes-client/python" ["l"="8.071,-8.884"]
-"trallnag/prometheus-fastapi-instrumentator" ["l"="42.854,19.618"]
-"dpkp/kafka-python" ["l"="44.486,20.934"]
-"rycus86/prometheus_flask_exporter" ["l"="42.218,21.971"]
-"tair-opensource/RedisShake" ["l"="9.094,-4.129"]
-"percona/grafana-dashboards" ["l"="9.304,-10.692"]
-"vvanholl/elasticsearch-prometheus-exporter" ["l"="9.304,-10.557"]
-"elastic/rally" ["l"="-3.675,8.923"]
-"elastic/cloud-on-k8s" ["l"="8.025,-9.075"]
-"lmenezes/cerebro" ["l"="-3.714,8.849"]
-"kubeshop/tracetest" ["l"="7.419,-9.121"]
-"open-policy-agent/conftest" ["l"="7.662,-8.954"]
-"equinix-labs/otel-cli" ["l"="9.723,-11.574"]
-"FairwindsOps/polaris" ["l"="7.605,-8.975"]
+"utkuozdemir/nvidia_gpu_exporter" ["l"="7.241,-11.435", "c"=515]
+"geerlingguy/internet-monitoring" ["l"="7.964,-12.681", "c"=739]
+"korfuri/django-prometheus" ["l"="47.335,18.364", "c"=52]
+"influxdata/telegraf" ["l"="8.579,-8.5", "c"=14]
+"opensearch-project/OpenSearch-Dashboards" ["l"="-2.737,8.777", "c"=1024]
+"zalando/spilo" ["l"="2.764,13.703", "c"=257]
+"patroni/patroni" ["l"="2.688,13.666", "c"=257]
+"polarsignals/frostdb" ["l"="4.328,-8.366", "c"=0]
+"robusta-dev/krr" ["l"="7.568,-9.093", "c"=14]
+"fabric8io/kubernetes-client" ["l"="-2.372,11.734", "c"=15]
+"gosnmp/gosnmp" ["l"="3.389,-8.362", "c"=0]
+"grafana/grafana-zabbix" ["l"="9.622,-3.166", "c"=1177]
+"stefanprodan/timoni" ["l"="7.582,-9.192", "c"=14]
+"kcp-dev/kcp" ["l"="7.721,-9.196", "c"=14]
+"sustainable-computing-io/kepler" ["l"="-11.663,16.98", "c"=978]
+"trinib/AdGuard-WireGuard-Unbound-DNScrypt" ["l"="-51.479,13.194", "c"=200]
+"ar51an/unbound-redis" ["l"="9.417,-10.97"]
+"medcl/esm" ["l"="-3.72,8.793", "c"=540]
+"grafana/metrictank" ["l"="4.085,-7.206", "c"=0]
+"kubernetes-client/python" ["l"="8.071,-8.884", "c"=14]
+"dpkp/kafka-python" ["l"="44.486,20.934", "c"=20]
+"elastic/rally" ["l"="-3.675,8.923", "c"=540]
+"lmenezes/cerebro" ["l"="-3.714,8.849", "c"=540]
+"kubeshop/tracetest" ["l"="7.419,-9.121", "c"=14]
+"open-policy-agent/conftest" ["l"="7.662,-8.954", "c"=14]
+"equinix-labs/otel-cli" ["l"="9.723,-11.574", "c"=834]
+"FairwindsOps/polaris" ["l"="7.605,-8.975", "c"=14]
 "nobl9/sloctl" ["l"="9.525,-10.23"]
 "nobl9/ekg" ["l"="9.518,-10.242"]
-"terraform-compliance/cli" ["l"="10.446,-6.148"]
-"yannh/kubeconform" ["l"="7.588,-9.085"]
-"arachnys/cabot" ["l"="11.568,-8.779"]
-"influxdata/kapacitor" ["l"="4.236,-7.301"]
-"ustream/openduty" ["l"="11.288,-8.712"]
-"bosun-monitor/bosun" ["l"="3.937,-7.836"]
+"terraform-compliance/cli" ["l"="10.446,-6.148", "c"=162]
+"yannh/kubeconform" ["l"="7.588,-9.085", "c"=14]
+"influxdata/kapacitor" ["l"="4.236,-7.301", "c"=0]
+"elastic/ansible-elasticsearch" ["l"="-3.729,9.017", "c"=540]
+"sgerrand/alpine-pkg-glibc" ["l"="5.812,-12.111", "c"=270]
+"opstrace/opstrace" ["l"="7.616,-9.18", "c"=14]
+"infrahq/infra" ["l"="7.531,-9.146", "c"=14]
+"brandonwamboldt/varnish-dashboard" ["l"="-20.399,-22.061", "c"=245]
 "nobl9/nobl9-backstage-plugin" ["l"="9.522,-10.214"]
 "nobl9/terraform-provider-nobl9" ["l"="9.518,-10.201"]
 "nobl9/nobl9-go" ["l"="9.509,-10.219"]
 "nobl9/govy" ["l"="9.505,-10.21"]
 "last9/slo-computer" ["l"="9.509,-10.098"]
-"myENA/consul-backinator" ["l"="7.021,-12.927"]
-"mantl/consul-cli" ["l"="7.028,-12.951"]
+"myENA/consul-backinator" ["l"="7.021,-12.927", "c"=666]
+"mantl/consul-cli" ["l"="7.028,-12.951", "c"=666]
 "prometheus/collectd_exporter" ["l"="9.315,-10.516"]
-"hashicorp/consul-replicate" ["l"="7.069,-12.95"]
 "lovoo/jenkins_exporter" ["l"="9.257,-10.532"]
-"uber/grafana-dash-gen" ["l"="9.786,-10.635"]
 "jakubplichta/grafana-dashboard-builder" ["l"="9.842,-10.645"]
-"grafana-wizzy/wizzy" ["l"="9.728,-10.618"]
-"grafana-tools/sdk" ["l"="9.876,-10.628"]
 "raffis/mongodb-query-exporter" ["l"="9.268,-10.557"]
+"parca-dev/parca-agent" ["l"="7.287,-6.271", "c"=335]
+"thanos-io/objstore" ["l"="9.611,-10.293"]
 "m110/grafcli" ["l"="9.818,-10.607"]
 "grafana/grafana-tools" ["l"="9.85,-10.599"]
 "sergiotocalini/zabora" ["l"="9.074,-10.508"]
@@ -2143,23 +2549,27 @@ digraph G {
 "last9/openmetrics-registry" ["l"="9.505,-10.052"]
 "last9/last9-mcp-server" ["l"="9.522,-10.084"]
 "FUSAKLA/autograf" ["l"="9.579,-10.345"]
-"William-Yeh/ansible-prometheus" ["l"="9.18,-10.739"]
 "iobeam/coreos-kubernetes" ["l"="9.878,-10.369"]
 "prometheus/compliance" ["l"="9.634,-10.296"]
+"vegasbrianc/prometheus" ["l"="6.156,-12.14", "c"=270]
+"sivasamyk/logtrail" ["l"="-3.591,8.874", "c"=540]
+"purpleidea/mgmt" ["l"="8.475,-12.399", "c"=600]
+"sorintlab/stolon" ["l"="2.684,13.731", "c"=257]
+"ghostunnel/ghostunnel" ["l"="8.525,-8.961", "c"=14]
 "den-is/zbx_oracle_odbc" ["l"="9.042,-10.502"]
-"ExpressenAB/bigip_exporter" ["l"="2.718,-7.614"]
+"grafana/oncall" ["l"="9.793,-11.33", "c"=834]
+"ExpressenAB/bigip_exporter" ["l"="2.718,-7.614", "c"=0]
 "boynux/squid-exporter" ["l"="9.301,-10.58"]
-"patroni/patroni" ["l"="2.688,13.666"]
-"pgbackrest/pgbackrest" ["l"="2.732,13.629"]
-"cybertec-postgresql/pgwatch2" ["l"="2.792,13.597"]
-"lesovsky/pgcenter" ["l"="2.809,13.574"]
-"wal-g/wal-g" ["l"="2.732,13.674"]
-"zalando/postgres-operator" ["l"="7.982,-9.153"]
-"sorintlab/stolon" ["l"="2.684,13.731"]
-"oracle/oracle-db-appdev-monitoring" ["l"="9.209,-10.551"]
+"opentracing/opentracing-java" ["l"="-2.938,12.243", "c"=15]
+"oracle/python-oracledb" ["l"="4.545,-4.603", "c"=471]
 "oracle/oracle-database-operator" ["l"="9.172,-10.533"]
+"cybertec-postgresql/pgwatch2" ["l"="2.792,13.597", "c"=257]
+"lesovsky/pgcenter" ["l"="2.809,13.574", "c"=257]
+"wal-g/wal-g" ["l"="2.732,13.674", "c"=257]
+"zalando/postgres-operator" ["l"="7.982,-9.153", "c"=14]
 "oracle/okafka" ["l"="9.186,-10.519"]
-"oracle-terraform-modules/terraform-oci-oke" ["l"="4.648,-4.683"]
+"sonatype/nexus-public" ["l"="-2.005,11.512", "c"=15]
+"ycd/dstp" ["l"="7.181,-9.184", "c"=14]
 "braedon/prometheus-es-exporter" ["l"="9.229,-10.512"]
 "cloudprober/cloudprober" ["l"="9.772,-10.532"]
 "google/cloudprober" ["l"="9.705,-10.54"]
@@ -2167,112 +2577,120 @@ digraph G {
 "chop-dbhi/sql-agent" ["l"="9.376,-10.477"]
 "grafana/piechart-panel" ["l"="9.801,-10.869"]
 "grafana/clock-panel" ["l"="9.701,-10.848"]
-"thanos-io/objstore" ["l"="9.611,-10.293"]
 "VolkovLabs/business-variable" ["l"="9.787,-10.816"]
 "grafana/grafana-api-golang-client" ["l"="9.382,-10.27"]
 "ikzelf/zbxdb" ["l"="9.124,-10.522"]
 "smartmarmot/DBforBIX" ["l"="9.097,-10.504"]
 "m3dbx/promremotebench" ["l"="9.661,-10.285"]
 "hastic/hastic-server" ["l"="10.068,-10.777"]
-"starsliao/Prometheus" ["l"="8.872,-5.573"]
-"yunlzheng/prometheus-book" ["l"="9.014,-5.58"]
-"danfengcao/binlog2sql" ["l"="9,-4.297"]
-"openark/orchestrator" ["l"="8.949,-4.365"]
-"yoshinorim/mha4mysql-manager" ["l"="8.928,-4.306"]
-"Neeky/mysqltools" ["l"="8.932,-4.253"]
-"feiyu563/PrometheusAlert" ["l"="8.924,-5.604"]
-"alibaba/MongoShake" ["l"="9,-4.187"]
-"rueckstiess/mtools" ["l"="0.44,-33.401"]
-"Percona-Lab/mongodb_consistent_backup" ["l"="8.325,-9.957"]
-"percona/pmm" ["l"="8.179,-9.694"]
-"percona/percona-backup-mongodb" ["l"="8.241,-9.788"]
+"yunlzheng/prometheus-book" ["l"="9.014,-5.58", "c"=278]
+"danfengcao/binlog2sql" ["l"="9,-4.297", "c"=382]
+"openark/orchestrator" ["l"="8.949,-4.365", "c"=382]
+"yoshinorim/mha4mysql-manager" ["l"="8.928,-4.306", "c"=382]
+"Neeky/mysqltools" ["l"="8.932,-4.253", "c"=382]
+"feiyu563/PrometheusAlert" ["l"="8.924,-5.604", "c"=278]
+"resmoio/kubernetes-event-exporter" ["l"="7.659,-9.139", "c"=14]
+"max-rocket-internet/k8s-event-logger" ["l"="9.818,-10.448"]
+"rueckstiess/mtools" ["l"="0.44,-33.401", "c"=110]
+"Percona-Lab/mongodb_consistent_backup" ["l"="8.325,-9.957", "c"=14]
+"percona/pmm" ["l"="8.179,-9.694", "c"=14]
+"percona/percona-backup-mongodb" ["l"="8.241,-9.788", "c"=14]
 "Ayanda-D/rabbitmq-queue-master-balancer" ["l"="9.178,-10.689"]
-"slok/alertgram" ["l"="-19.422,-19.619"]
+"go-ping/ping" ["l"="3.515,-8.278", "c"=0]
+"slok/alertgram" ["l"="-19.422,-19.619", "c"=132]
 "nopp/alertmanager-webhook-telegram-python" ["l"="9.641,-10.638"]
 "hagen1778/grafana-import-export" ["l"="9.736,-10.66"]
-"cloudalchemy/ansible-grafana" ["l"="7.976,-12.974"]
+"cloudalchemy/ansible-grafana" ["l"="7.976,-12.974", "c"=739]
 "pambrose/prometheus-proxy" ["l"="9.575,-10.61"]
+"sysulq/nginx-prometheus-metrics" ["l"="9.263,-10.642"]
+"stripe/veneur" ["l"="8.168,-9.009", "c"=14]
 "ar51an/unbound-dashboard" ["l"="9.433,-10.937"]
-"ar51an/unbound-redis" ["l"="9.417,-10.97"]
 "ar51an/unbound-exporter" ["l"="9.436,-10.969"]
 "grafana/worldmap-panel" ["l"="9.869,-10.898"]
 "alexandrainst/alexandra-trackmap-panel" ["l"="9.885,-10.937"]
+"grafana/grafonnet" ["l"="9.609,-11.303", "c"=834]
 "catawiki/json_exporter" ["l"="9.47,-10.578"]
+"k8spacket/k8spacket" ["l"="7.544,-9.166", "c"=14]
 "hashicorp-forge/hermes" ["l"="9.584,-10.253"]
-"hashicorp/design-system" ["l"="1.813,-31.917"]
-"google/yamlfmt" ["l"="7.129,-40.315"]
-"hashicorp/waypoint" ["l"="10.484,-6.387"]
-"ServiceWeaver/weaver" ["l"="4.144,-9.033"]
-"runfinch/finch" ["l"="7.983,-8.967"]
-"opencost/opencost" ["l"="7.652,-9.008"]
-"k1LoW/tbls" ["l"="4.425,-9.109"]
-"hashicorp/damon" ["l"="6.977,-13.066"]
-"grafana/oncall" ["l"="9.793,-11.33"]
-"minamijoyo/tfupdate" ["l"="10.5,-6.019"]
+"hashicorp/design-system" ["l"="1.813,-31.917", "c"=381]
+"google/yamlfmt" ["l"="7.129,-40.315", "c"=573]
+"hashicorp/waypoint" ["l"="10.484,-6.387", "c"=162]
+"ServiceWeaver/weaver" ["l"="4.144,-9.033", "c"=0]
+"runfinch/finch" ["l"="7.983,-8.967", "c"=14]
+"opencost/opencost" ["l"="7.652,-9.008", "c"=14]
+"k1LoW/tbls" ["l"="4.425,-9.109", "c"=0]
+"hashicorp/damon" ["l"="6.977,-13.066", "c"=666]
+"minamijoyo/tfupdate" ["l"="10.5,-6.019", "c"=162]
 "VolkovLabs/business-charts" ["l"="9.82,-10.821"]
 "VolkovLabs/business-text" ["l"="9.84,-10.86"]
 "cloudflare/parquet-tsdb-poc" ["l"="9.626,-10.249"]
 "pedro-stanaka/prom-scrape-analyzer" ["l"="9.6,-10.313"]
-"che-incubator/kubernetes-image-puller" ["l"="7.399,-9.248"]
-"gianlucam76/k8s-cleaner" ["l"="7.433,-9.22"]
-"max-rocket-internet/k8s-event-logger" ["l"="9.818,-10.448"]
+"che-incubator/kubernetes-image-puller" ["l"="7.399,-9.248", "c"=14]
+"gianlucam76/k8s-cleaner" ["l"="7.433,-9.22", "c"=14]
 "stuartnelson3/passenger_exporter" ["l"="9.214,-10.604"]
-"cloudflare/ebpf_exporter" ["l"="7.177,-6.243"]
-"line/decaton" ["l"="22.108,2.408"]
-"line/centraldogma" ["l"="22.089,2.418"]
-"songjiayang/prometheus_practice" ["l"="8.981,-5.642"]
-"aylei/aliyun-exporter" ["l"="8.836,-5.549"]
-"oracle/weblogic-monitoring-exporter" ["l"="4.616,-4.837"]
-"tanelpoder/tpt-oracle" ["l"="4.599,-4.47"]
-"apache/rocketmq-exporter" ["l"="-3.084,11.466"]
-"oraclesean/oracle" ["l"="4.543,-4.421"]
-"prometheus-net/prometheus-net" ["l"="-34.47,-1.13"]
-"upmc-enterprises/elasticsearch-operator" ["l"="10.476,-10.127"]
+"prometheus-community/ansible" ["l"="8.034,-13.04", "c"=739]
+"cloudflare/ebpf_exporter" ["l"="7.177,-6.243", "c"=335]
+"jenkinsci/prometheus-plugin" ["l"="10.197,-4.542", "c"=147]
+"songjiayang/prometheus_practice" ["l"="8.981,-5.642", "c"=278]
+"stefanprodan/dockprom" ["l"="6.149,-12.053", "c"=270]
+"tencentyun/qcloud-documents" ["l"="9.079,-5.576", "c"=278]
+"requilence/integram" ["l"="-43.81,16.473", "c"=919]
+"Lissy93/AdGuardian-Term" ["l"="12.296,-8.723", "c"=18]
+"uschtwill/docker_monitoring_logging_alerting" ["l"="6.24,-12.175", "c"=270]
+"monitoringartist/grafana-aws-cloudwatch-dashboards" ["l"="7.733,-9.311", "c"=14]
+"StackExchange/dnscontrol" ["l"="8.716,-8.908", "c"=14]
+"grafana/docker-otel-lgtm" ["l"="9.746,-11.376", "c"=834]
+"aylei/aliyun-exporter" ["l"="8.836,-5.549", "c"=278]
+"oracle/weblogic-monitoring-exporter" ["l"="4.616,-4.837", "c"=471]
+"tanelpoder/tpt-oracle" ["l"="4.599,-4.47", "c"=471]
+"apache/rocketmq-exporter" ["l"="-3.084,11.466", "c"=15]
+"oraclesean/oracle" ["l"="4.543,-4.421", "c"=471]
+"timescale/pgvectorscale" ["l"="3.895,13.427", "c"=850]
+"prometheus-net/prometheus-net" ["l"="-34.47,-1.13", "c"=8]
+"upmc-enterprises/elasticsearch-operator" ["l"="10.476,-10.127", "c"=740]
 "pjhampton/kibana-prometheus-exporter" ["l"="9.261,-10.497"]
-"elastic/rally-tracks" ["l"="-3.615,8.975"]
-"medcl/infini-gateway" ["l"="-3.758,8.643"]
+"elastic/rally-tracks" ["l"="-3.615,8.975", "c"=540]
+"medcl/infini-gateway" ["l"="-3.758,8.643", "c"=540]
+"apache/trafficcontrol" ["l"="-20.561,-21.857", "c"=245]
 "Vonage/Grafana_Status_panel" ["l"="9.91,-10.767"]
 "ryantxu/ajax-panel" ["l"="9.906,-10.734"]
-"vegasbrianc/github-monitoring" ["l"="9.295,-10.413"]
+"influxdata/chronograf" ["l"="4.404,-7.036", "c"=0]
 "metalmatze/digitalocean_exporter" ["l"="9.271,-10.395"]
+"yyyar/gobetween" ["l"="3.804,-8.194", "c"=0]
 "divinity666/ruby-grafana-reporter" ["l"="9.779,-10.718"]
 "mahendrapaipuri/grafana-dashboard-reporter-app" ["l"="9.75,-10.756"]
 "Isma399/grafana_mail" ["l"="9.78,-10.696"]
-"grafana/grafana-zabbix" ["l"="9.622,-3.166"]
-"influxdata/influxdb-relay" ["l"="4.357,-7.007"]
+"influxdata/influxdb-relay" ["l"="4.357,-7.007", "c"=0]
 "songjiayang/nginx-log-exporter" ["l"="9.392,-10.533"]
+"jimmidyson/configmap-reload" ["l"="7.852,-9.152", "c"=14]
 "VolkovLabs/business-table" ["l"="9.794,-10.838"]
 "PacktPublishing/Mastering-Prometheus" ["l"="9.375,-10.314"]
 "last9/openapm-ruby" ["l"="9.532,-10.057"]
 "linode-obs/sloth" ["l"="9.359,-10.321"]
 "open-telemetry/otel-arrow" ["l"="9.631,-10.191"]
 "trustpilot/node-winston-trustpilot" ["l"="8.898,-10.592"]
-"warpnet/awesome-prometheus" ["l"="9.545,-10.48"]
-"shuaibiyy/awesome-tf" ["l"="10.46,-6.236"]
-"ansible-community/awesome-ansible" ["l"="8.618,-12.298"]
-"dastergon/awesome-sre" ["l"="29.18,-24.697"]
-"moul/awesome-ssh" ["l"="26.111,-26.128"]
-"SquadcastHub/awesome-sre-tools" ["l"="29.221,-24.664"]
-"akuity/awesome-argo" ["l"="7.609,-9.268"]
-"cdwv/awesome-helm" ["l"="7.672,-9.108"]
-"Friz-zy/awesome-linux-containers" ["l"="26.048,-26.133"]
-"nshttpd/mikrotik-exporter" ["l"="-65.292,16.655"]
-"micrometer-metrics/micrometer" ["l"="-2.572,11.984"]
-"opentracing/opentracing-java" ["l"="-2.938,12.243"]
-"openzipkin/brave" ["l"="-2.941,12.152"]
-"dropwizard/metrics" ["l"="-2.854,12.064"]
-"kubernetes-client/java" ["l"="-2.443,11.744"]
-"open-telemetry/opentelemetry-java" ["l"="9.875,-11.557"]
-"fabric8io/kubernetes-client" ["l"="-2.372,11.734"]
-"grafana/jsonnet-libs" ["l"="9.57,-11.351"]
+"shuaibiyy/awesome-tf" ["l"="10.46,-6.236", "c"=162]
+"dastergon/awesome-sre" ["l"="29.18,-24.697", "c"=530]
+"moul/awesome-ssh" ["l"="26.111,-26.128", "c"=32]
+"SquadcastHub/awesome-sre-tools" ["l"="29.221,-24.664", "c"=530]
+"akuity/awesome-argo" ["l"="7.609,-9.268", "c"=14]
+"Friz-zy/awesome-linux-containers" ["l"="26.048,-26.133", "c"=32]
+"micrometer-metrics/micrometer" ["l"="-2.572,11.984", "c"=15]
+"openzipkin/brave" ["l"="-2.941,12.152", "c"=15]
+"dropwizard/metrics" ["l"="-2.854,12.064", "c"=15]
+"kubernetes-client/java" ["l"="-2.443,11.744", "c"=15]
+"siglens/siglens" ["l"="4.414,-9.064", "c"=0]
+"andrey-pohilko/registry-cli" ["l"="5.992,-12.549", "c"=270]
 "roidelapluie/prometheus-timezone-holidays" ["l"="9.481,-10.486"]
-"stefanprodan/k8s-prom-hpa" ["l"="7.903,-9.159"]
-"giantswarm/prometheus" ["l"="8.016,-8.97"]
-"sysulq/nginx-prometheus-metrics" ["l"="9.263,-10.642"]
-"instrumenta/kubeval" ["l"="7.684,-8.938"]
-"gruntwork-io/terratest" ["l"="10.402,-6.248"]
-"djenriquez/vault-ui" ["l"="7.127,-12.875"]
-"pulumi/kubespy" ["l"="7.662,-8.897"]
+"stefanprodan/k8s-prom-hpa" ["l"="7.903,-9.159", "c"=14]
+"giantswarm/prometheus" ["l"="8.016,-8.97", "c"=14]
+"grafana/logs-drilldown" ["l"="9.75,-11.279", "c"=834]
+"nickjj/ansible-docker" ["l"="7.939,-13.007", "c"=739]
+"grafana/alloy" ["l"="9.773,-11.362", "c"=834]
+"instrumenta/kubeval" ["l"="7.684,-8.938", "c"=14]
+"gruntwork-io/terratest" ["l"="10.402,-6.248", "c"=162]
+"djenriquez/vault-ui" ["l"="7.127,-12.875", "c"=666]
+"pulumi/kubespy" ["l"="7.662,-8.897", "c"=14]
 "leijurv/transmission-exporter" ["l"="9.563,-10.88"]
 "trustpilot/nuget-authenticated-encryption" ["l"="8.918,-10.586"]
 "jannickj/ZensibleMongo" ["l"="8.903,-10.608"]
@@ -2283,10 +2701,17 @@ digraph G {
 "SquadcastHub/terraform-provider-squadcast" ["l"="9.559,-10.194"]
 "thanos-community/thanos-operator" ["l"="9.655,-10.211"]
 "satyajeetjadhav/tiptap-emoji-picker" ["l"="9.526,-10.038"]
+"denji/nginx-tuning" ["l"="-20.82,-21.808", "c"=245]
+"1046102779/prometheus" ["l"="9.012,-5.635", "c"=278]
 "rfmoz/grafana-dashboards" ["l"="9.438,-10.628"]
-"eko/pihole-exporter" ["l"="-51.492,13.346"]
-"dotdc/grafana-dashboards-kubernetes" ["l"="7.625,-9.047"]
+"dotdc/grafana-dashboards-kubernetes" ["l"="7.625,-9.047", "c"=14]
+"pgadmin-org/pgadmin4" ["l"="2.558,13.593", "c"=257]
 "theCalcaholic/ncp-monitoring-dashboard" ["l"="9.603,-10.904"]
+"octodns/octodns" ["l"="8.553,-8.922", "c"=14]
+"uken/fluent-plugin-elasticsearch" ["l"="11.939,-2.21", "c"=873]
+"spinnaker/kayenta" ["l"="7.56,-8.705", "c"=14]
+"robusta-dev/holmesgpt" ["l"="7.424,-9.266", "c"=14]
+"jcmoraisjr/haproxy-ingress" ["l"="8.131,-9.111", "c"=14]
 "tomtom-international/alertmanager-webhook-logger" ["l"="9.532,-10.519"]
 "sloev/python-lambdarest" ["l"="8.907,-10.579"]
 "trustpilot/python-cireqs" ["l"="8.877,-10.572"]
@@ -2294,16 +2719,23 @@ digraph G {
 "ae3e/ae3e-plotly-panel" ["l"="9.93,-10.86"]
 "MartinMouritzen/segment-chromeextension" ["l"="8.876,-10.553"]
 "sinkingpoint/onotify" ["l"="9.617,-10.271"]
-"kubernetes/ingress-nginx" ["l"="8.173,-8.783"]
-"jsonnet-bundler/jsonnet-bundler" ["l"="9.557,-11.333"]
+"kubernetes/ingress-nginx" ["l"="8.173,-8.783", "c"=14]
+"box/box-ui-elements" ["l"="63.092,-1.271", "c"=175]
+"rootsongjc/awesome-cloud-native" ["l"="7.959,-9.334", "c"=14]
+"dastergon/postmortem-templates" ["l"="11.057,-8.696", "c"=18]
+"cars10/elasticvue" ["l"="-3.682,8.822", "c"=540]
+"jsonnet-bundler/jsonnet-bundler" ["l"="9.557,-11.333", "c"=834]
 "google/marmot" ["l"="9.803,-10.546"]
-"GoogleCloudPlatform/metacontroller" ["l"="10.419,-10.193"]
-"google/netstack" ["l"="3.855,-8.195"]
-"stripe/skycfg" ["l"="6.732,-8.9"]
-"census-instrumentation/opencensus-go" ["l"="3.906,-8.572"]
-"GoogleCloudPlatform/govanityurls" ["l"="3.342,-8.049"]
-"google/stenographer" ["l"="-43.122,-32.003"]
+"GoogleCloudPlatform/metacontroller" ["l"="10.419,-10.193", "c"=740]
+"google/netstack" ["l"="3.855,-8.195", "c"=0]
+"stripe/skycfg" ["l"="6.732,-8.9", "c"=14]
+"census-instrumentation/opencensus-go" ["l"="3.906,-8.572", "c"=0]
+"GoogleCloudPlatform/govanityurls" ["l"="3.342,-8.049", "c"=0]
+"google/stenographer" ["l"="-43.122,-32.003", "c"=143]
+"vmware-archive/cabin" ["l"="-1.911,11.023", "c"=15]
+"stefanprodan/swarmprom" ["l"="6.251,-12.221", "c"=270]
 "GoshPosh/grafana-meta-queries" ["l"="10.017,-10.884"]
+"someone1/zfsbackup-go" ["l"="-25.726,-23.624", "c"=1142]
 "prometheus-community/parquet-common" ["l"="9.63,-10.228"]
 "timescale/benchmark-postgres" ["l"="9.868,-10.353"]
 }

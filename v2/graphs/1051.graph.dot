@@ -1,5 +1,9 @@
 digraph G {
+"umanovskis/baremetal-arm" -> "NienfengYao/armv8-bare-metal" ["e"=1]
 "HexHive/ShadowStack" -> "vusec/memsentry"
+"weaveworks/ignite" -> "firecracker-microvm/firectl" ["e"=1]
+"weaveworks/ignite" -> "liquidmetal-dev/flintlock" ["e"=1]
+"weaveworks/ignite" -> "innobead/kubefire" ["e"=1]
 "xvisor/xvisor" -> "bao-project/bao-hypervisor"
 "xvisor/xvisor" -> "avpatel/xvisor-next"
 "xvisor/xvisor" -> "minosproject/minos"
@@ -15,6 +19,7 @@ digraph G {
 "xvisor/xvisor" -> "minosproject/minos2"
 "xvisor/xvisor" -> "projectacrn/acrn-kernel"
 "xvisor/xvisor" -> "asamy/ksm" ["e"=1]
+"ARM-software/arm-trusted-firmware" -> "projectacrn/acrn-hypervisor" ["e"=1]
 "siemens/jailhouse" -> "projectacrn/acrn-hypervisor"
 "siemens/jailhouse" -> "xvisor/xvisor"
 "siemens/jailhouse" -> "bao-project/bao-hypervisor"
@@ -50,6 +55,16 @@ digraph G {
 "projectacrn/acrn-hypervisor" -> "kvmtool/kvmtool"
 "projectacrn/acrn-hypervisor" -> "OpenAMP/open-amp" ["e"=1]
 "projectacrn/acrn-hypervisor" -> "seL4/seL4"
+"rust-osdev/uefi-rs" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"dynup/kpatch" -> "kvmtool/kvmtool" ["e"=1]
+"yifengyou/learn-kvm" -> "kvmtool/kvmtool" ["e"=1]
+"yifengyou/learn-kvm" -> "Jessicahust/KVM" ["e"=1]
+"yifengyou/learn-kvm" -> "dpw/kvm-hello-world" ["e"=1]
+"yifengyou/learn-kvm" -> "GiantVM/doc" ["e"=1]
+"fishinabarrel/linux-kernel-module-rust" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"cloud-hypervisor/cloud-hypervisor" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"cloud-hypervisor/cloud-hypervisor" -> "rust-vmm/community" ["e"=1]
+"cloud-hypervisor/cloud-hypervisor" -> "kvmtool/kvmtool" ["e"=1]
 "david942j/kvm-kernel-example" -> "dpw/kvm-hello-world"
 "david942j/kvm-kernel-example" -> "soulxu/kvmsample"
 "david942j/kvm-kernel-example" -> "kvmtool/kvmtool"
@@ -58,6 +73,7 @@ digraph G {
 "david942j/kvm-kernel-example" -> "WinMin/awesome-vm-exploit" ["e"=1]
 "david942j/kvm-kernel-example" -> "project-dune/dune"
 "david942j/kvm-kernel-example" -> "shift-crops/EscapeMe" ["e"=1]
+"superfly/flyctl" -> "superfly/init-snapshot" ["e"=1]
 "cloud-hypervisor/rust-hypervisor-firmware" -> "rust-vmm/vm-virtio"
 "cloud-hypervisor/rust-hypervisor-firmware" -> "rust-vmm/vm-memory"
 "cloud-hypervisor/rust-hypervisor-firmware" -> "rust-vmm/vmm-reference"
@@ -86,14 +102,33 @@ digraph G {
 "rust-vmm/community" -> "rust-vmm/vhost"
 "rust-vmm/community" -> "oasis-tcs/virtio-spec"
 "rust-vmm/community" -> "project-dune/dune"
+"firecracker-microvm/firecracker-containerd" -> "firecracker-microvm/firecracker-go-sdk" ["e"=1]
+"firecracker-microvm/firecracker-containerd" -> "firecracker-microvm/firectl" ["e"=1]
+"firecracker-microvm/firecracker-containerd" -> "liquidmetal-dev/flintlock" ["e"=1]
+"firecracker-microvm/firecracker-containerd" -> "firecracker-microvm/firecracker-demo" ["e"=1]
+"f9micro/f9-kernel" -> "jserv/codezero" ["e"=1]
+"f9micro/f9-kernel" -> "TUD-OS/M3" ["e"=1]
+"crash-utility/crash" -> "kvmtool/kvmtool" ["e"=1]
+"BiscuitOS/BiscuitOS" -> "GiantVM/doc" ["e"=1]
 "NienfengYao/armv8-bare-metal" -> "freedomtan/aarch64-bare-metal-qemu"
 "NienfengYao/armv8-bare-metal" -> "jserv/armv8-hello"
+"hermit-os/kernel" -> "hermit-os/uhyve" ["e"=1]
+"hermit-os/kernel" -> "hermit-os/loader" ["e"=1]
+"weaveworks/footloose" -> "innobead/kubefire" ["e"=1]
 "siemens/jailhouse-images" -> "siemens/freertos-cell"
 "siemens/jailhouse-images" -> "rntmancuso/jailhouse-rt"
 "firecracker-microvm/firecracker-go-sdk" -> "firecracker-microvm/firectl"
 "firecracker-microvm/firecracker-go-sdk" -> "firecracker-microvm/firecracker-containerd" ["e"=1]
 "firecracker-microvm/firecracker-go-sdk" -> "firecracker-microvm/firecracker-demo"
 "firecracker-microvm/firecracker-go-sdk" -> "alexellis/firecracker-init-lab"
+"fuchsia-mirror/zircon" -> "seL4/seL4" ["e"=1]
+"gamozolabs/orange_slice" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"intel/nemu" -> "kvmtool/kvmtool" ["e"=1]
+"intel/nemu" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"intel/nemu" -> "siemens/jailhouse" ["e"=1]
+"intel/nemu" -> "dpw/kvm-hello-world" ["e"=1]
+"intel/nemu" -> "projectacrn/acrn-hypervisor" ["e"=1]
+"unikernelLinux/ukl" -> "project-dune/dune" ["e"=1]
 "rust-vmm/vm-memory" -> "rust-vmm/kvm"
 "rust-vmm/vm-memory" -> "rust-vmm/vm-virtio"
 "rust-vmm/vm-memory" -> "rust-vmm/vmm-sys-util"
@@ -137,6 +172,7 @@ digraph G {
 "oasis-tcs/virtio-spec" -> "rust-vmm/vm-virtio"
 "oasis-tcs/virtio-spec" -> "rust-vmm/vhost"
 "oasis-tcs/virtio-spec" -> "rivosinc/salus"
+"cetic/unikernels" -> "rust-vmm/community" ["e"=1]
 "moratorium08/osmium" -> "diodesign/diosix"
 "moratorium08/osmium" -> "hitohira/yokyo"
 "rust-vmm/linux-loader" -> "rust-vmm/vm-memory"
@@ -191,6 +227,7 @@ digraph G {
 "rust-vmm/vhost" -> "rust-vmm/linux-loader"
 "rust-vmm/vhost" -> "rust-vmm/vm-memory"
 "rust-vmm/vhost" -> "rust-vmm/vm-device"
+"Remco123/CactusOS" -> "posnk/posnk" ["e"=1]
 "projectacrn/acrn-kernel" -> "projectacrn/acrn-hypervisor"
 "projectacrn/acrn-kernel" -> "projectacrn/acrn-unit-test"
 "projectacrn/acrn-kernel" -> "projectacrn/projectacrn.github.io"
@@ -217,6 +254,17 @@ digraph G {
 "projectacrn/acrn-unit-test" -> "projectacrn/acrn-edk2"
 "genodelabs/genodians.org" -> "genodelabs/goa"
 "hitohira/yokyo" -> "tomabou/cpu_core"
+"sgmarz/osblog" -> "moratorium08/osmium" ["e"=1]
+"sgmarz/osblog" -> "diodesign/diosix" ["e"=1]
+"sgmarz/osblog" -> "mit-pdos/RVirt" ["e"=1]
+"joaomlourenco/novathesis" -> "bao-project/bao-hypervisor" ["e"=1]
+"rcore-os/virtio-drivers" -> "rust-vmm/vm-virtio" ["e"=1]
+"rcore-os/virtio-drivers" -> "KuangjuX/hypercraft" ["e"=1]
+"rcore-os/virtio-drivers" -> "rust-vmm/vhost" ["e"=1]
+"rcore-os/virtio-drivers" -> "syswonder/hvisor" ["e"=1]
+"vhive-serverless/vHive" -> "firecracker-microvm/firecracker-demo" ["e"=1]
+"OP-TEE/optee_os" -> "siemens/jailhouse" ["e"=1]
+"Stichting-MINIX-Research-Foundation/minix" -> "seL4/seL4" ["e"=1]
 "seL4/seL4" -> "seL4/l4v" ["e"=1]
 "seL4/seL4" -> "Stichting-MINIX-Research-Foundation/minix" ["e"=1]
 "seL4/seL4" -> "AbsInt/CompCert" ["e"=1]
@@ -247,13 +295,26 @@ digraph G {
 "bao-project/bao-hypervisor" -> "mit-pdos/RVirt"
 "bao-project/bao-hypervisor" -> "hex-five/multizone-linux"
 "bao-project/bao-hypervisor" -> "zero-day-labs/riscv-aia" ["e"=1]
+"skyzh/core-os-riscv" -> "moratorium08/osmium" ["e"=1]
+"hermit-os/hermit-rs" -> "hermit-os/uhyve" ["e"=1]
+"seL4/l4v" -> "seL4/seL4" ["e"=1]
+"containers/libkrun" -> "rust-vmm/vm-memory" ["e"=1]
+"containers/libkrun" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"containers/libkrun" -> "rust-vmm/kvm" ["e"=1]
+"containers/libkrun" -> "rust-vmm/community" ["e"=1]
 "thepowersgang/acess2" -> "posnk/posnk"
 "thepowersgang/acess2" -> "dbittman/seakernel"
 "shuveb/sparkler" -> "marcov/firecracker-initrd"
+"mit-pdos/xv6-riscv-book" -> "mit-pdos/RVirt" ["e"=1]
 "l4ka/pistachio" -> "l4ka/hazelnut"
 "l4ka/pistachio" -> "kernkonzept/fiasco"
 "l4ka/pistachio" -> "l4ka/idl4"
 "l4ka/pistachio" -> "udosteinberg/NOVA"
+"Penglai-Enclave/Penglai-Enclave-sPMP" -> "rivosinc/salus" ["e"=1]
+"minix3/minix" -> "l4ka/pistachio" ["e"=1]
+"OpenAMP/open-amp" -> "siemens/jailhouse" ["e"=1]
+"takahirox/riscv-rust" -> "mit-pdos/RVirt" ["e"=1]
+"takahirox/riscv-rust" -> "diodesign/diosix" ["e"=1]
 "minosproject/minos" -> "minosproject/minos2"
 "minosproject/minos" -> "xvisor/xvisor"
 "minosproject/minos" -> "bao-project/bao-hypervisor"
@@ -270,6 +331,7 @@ digraph G {
 "rust-vmm/vmm-reference" -> "hermit-os/uhyve"
 "innobead/kubefire" -> "liquidmetal-dev/flintlock"
 "innobead/kubefire" -> "firecracker-microvm/firectl"
+"Roblox/nomad-driver-containerd" -> "cneira/firecracker-task-driver" ["e"=1]
 "houcheng/xv6-armv7" -> "sudharson14/xv6-OS-for-arm-v8"
 "hedayati/hodor" -> "vusec/memsentry"
 "projectacrn/acrn-libvirt" -> "projectacrn/acrn-edk2"
@@ -305,6 +367,10 @@ digraph G {
 "bao-project/bao-demos" -> "bao-project/bao-helloworld"
 "bao-project/bao-demos" -> "zero-day-labs/cheri-cva6"
 "bao-project/bao-demos" -> "zero-day-labs/riscv-iommu-demo" ["e"=1]
+"libvirt/libvirt" -> "kvmtool/kvmtool" ["e"=1]
+"littlekernel/lk" -> "seL4/seL4" ["e"=1]
+"littlekernel/lk" -> "projectacrn/acrn-hypervisor" ["e"=1]
+"littlekernel/lk" -> "siemens/jailhouse" ["e"=1]
 "liquidmetal-dev/flintlock" -> "liquidmetal-dev/cluster-api-provider-microvm" ["e"=1]
 "liquidmetal-dev/flintlock" -> "firecracker-microvm/firectl"
 "liquidmetal-dev/flintlock" -> "alexellis/firecracker-init-lab"
@@ -323,6 +389,8 @@ digraph G {
 "Jessicahust/KVM" -> "GiantVM/KVM-Annotation"
 "Jessicahust/KVM" -> "yifengyou/learn-kvm" ["e"=1]
 "superfly/init-snapshot" -> "combust-labs/firebuild"
+"dzavalishin/phantomuserland" -> "genodelabs/genode" ["e"=1]
+"bonzini/qboot" -> "kvmtool/kvmtool" ["e"=1]
 "udosteinberg/NOVA" -> "kernkonzept/fiasco"
 "udosteinberg/NOVA" -> "genodelabs/genode"
 "udosteinberg/NOVA" -> "TUD-OS/NUL"
@@ -333,6 +401,7 @@ digraph G {
 "udosteinberg/NOVA" -> "l4ka/pistachio"
 "udosteinberg/NOVA" -> "TUD-OS/NRE"
 "udosteinberg/NOVA" -> "seL4/seL4_libs" ["e"=1]
+"containers/krunvm" -> "firecracker-microvm/firecracker-go-sdk" ["e"=1]
 "quic/gunyah-hypervisor" -> "minosproject/minos"
 "quic/gunyah-hypervisor" -> "quic/gunyah-resource-manager"
 "quic/gunyah-hypervisor" -> "xvisor/xvisor"
@@ -350,6 +419,8 @@ digraph G {
 "quic/gunyah-hypervisor" -> "siemens/jailhouse"
 "Jessicahust/books" -> "Jessicahust/free-programming-books-zh_CN"
 "freedomtan/aarch64-bare-metal-qemu" -> "NienfengYao/armv8-bare-metal"
+"QuarkContainer/Quark" -> "project-dune/dune" ["e"=1]
+"FDUCSLG/ICS-2021Spring-FDU" -> "SunflowerAries/ICS-Spring20-Fudan" ["e"=1]
 "combust-labs/firebuild" -> "marcov/firecracker-initrd"
 "nestedkernel/PerspicuOS" -> "vusec/memsentry"
 "quic/gunyah-resource-manager" -> "quic/gunyah-c-runtime"
@@ -366,6 +437,8 @@ digraph G {
 "soulxu/kvmsample" -> "dpw/kvm-hello-world"
 "soulxu/kvmsample" -> "kvmtool/kvmtool"
 "soulxu/kvmsample" -> "david942j/kvm-kernel-example"
+"rust-osdev/x86_64" -> "hermit-os/uhyve" ["e"=1]
+"rust-osdev/x86_64" -> "rust-vmm/vm-memory" ["e"=1]
 "alexellis/firecracker-init-lab" -> "liquidmetal-dev/flintlock"
 "alexellis/firecracker-init-lab" -> "superfly/init-snapshot"
 "alexellis/firecracker-init-lab" -> "firecracker-microvm/firecracker-go-sdk"
@@ -392,11 +465,15 @@ digraph G {
 "kvmtool/kvmtool" -> "rust-vmm/kvm"
 "kvmtool/kvmtool" -> "project-dune/dune"
 "kvmtool/kvmtool" -> "intel/nemu" ["e"=1]
+"0voice/Introduce_to_virtualization" -> "kvmtool/kvmtool" ["e"=1]
+"0voice/Introduce_to_virtualization" -> "Jessicahust/KVM" ["e"=1]
+"0voice/Introduce_to_virtualization" -> "projectacrn/acrn-hypervisor" ["e"=1]
 "diodesign/diosix" -> "mit-pdos/RVirt"
 "diodesign/diosix" -> "rivosinc/salus"
 "minosproject/minos2" -> "minosproject/minos"
 "riscv-admin/trusted-computing" -> "riscv-admin/security"
 "riscv-admin/trusted-computing" -> "riscv-admin/iopmp"
+"RTEMS/rtems" -> "siemens/jailhouse" ["e"=1]
 "seL4/microkit" -> "lucypa/sDDF"
 "seL4/microkit" -> "au-ts/lionsos"
 "seL4/microkit" -> "au-ts/libvmm"
@@ -443,10 +520,13 @@ digraph G {
 "AmbiML/sparrow-kata-full" -> "AmbiML/sparrow-kernel"
 "AmbiML/sparrow-kata-full" -> "AmbiML/sparrow-manifest"
 "AmbiML/sparrow-cantrip-full" -> "AmbiML/sparrow-kata-full"
+"equation314/RVM-Tutorial" -> "KuangjuX/hypocaust" ["e"=1]
+"ix-project/ix" -> "ix-project/dune" ["e"=1]
 "TUD-OS/M3" -> "Nils-TUD/Escape"
 "rivosinc/salus" -> "riscv-non-isa/riscv-ap-tee"
 "KuangjuX/hypocaust" -> "KuangjuX/hypocaust-2"
 "KuangjuX/hypocaust" -> "stemnic/rustyvisor"
+"fuchsia-mirror/magenta" -> "seL4/seL4" ["e"=1]
 "dpw/kvm-hello-world" -> "kvmtool/kvmtool"
 "dpw/kvm-hello-world" -> "soulxu/kvmsample"
 "dpw/kvm-hello-world" -> "david942j/kvm-kernel-example"
@@ -462,10 +542,18 @@ digraph G {
 "dpw/kvm-hello-world" -> "Solo5/solo5" ["e"=1]
 "dpw/kvm-hello-world" -> "Wenzel/awesome-virtualization" ["e"=1]
 "dpw/kvm-hello-world" -> "rust-vmm/vm-memory"
+"superfly/corrosion" -> "valyentdev/ravel" ["e"=1]
 "syswonder/hvisor" -> "syswonder/hvisor-tool"
 "syswonder/hvisor" -> "arceos-hypervisor/axvisor"
 "syswonder/hvisor" -> "syswonder/ruxos"
 "syswonder/hvisor" -> "KuangjuX/hypocaust-2"
+"freelancer-leon/notes" -> "GiantVM/doc" ["e"=1]
+"intel/gvt-linux" -> "projectacrn/acrn-kernel" ["e"=1]
+"intel/gvt-linux" -> "projectacrn/acrn-hypervisor" ["e"=1]
+"intel/gvt-linux" -> "GiantVM/KVM-Annotation" ["e"=1]
+"asamy/ksm" -> "project-dune/dune" ["e"=1]
+"arceos-org/arceos" -> "syswonder/ruxos" ["e"=1]
+"arceos-org/arceos" -> "syswonder/hvisor" ["e"=1]
 "syswonder/ruxos" -> "syswonder/hvisor"
 "syswonder/ruxos" -> "syswonder/hvisor-tool"
 "seL4/rust-sel4" -> "seL4/microkit"
@@ -478,6 +566,10 @@ digraph G {
 "au-ts/lionsos" -> "au-ts/libvmm"
 "TUD-OS/NRE" -> "TUD-OS/NUL"
 "KuangjuX/hypercraft" -> "KuangjuX/hypocaust-2"
+"cloudius-systems/osv" -> "seL4/seL4" ["e"=1]
+"microsoft/openvmm" -> "cloud-hypervisor/rust-hypervisor-firmware" ["e"=1]
+"microsoft/openvmm" -> "rust-vmm/community" ["e"=1]
+"BUPT-OS/RROS" -> "au-ts/lionsos" ["e"=1]
 "dbittman/seakernel" -> "thepowersgang/acess2"
 "dbittman/seakernel" -> "dbittman/seakernel-refactor"
 "Nils-TUD/Escape" -> "TUD-OS/M3"
@@ -486,6 +578,7 @@ digraph G {
 "Nils-TUD/Escape" -> "doug65536/dgos" ["e"=1]
 "GiantVM/doc" -> "GiantVM/KVM-Annotation"
 "arceos-hypervisor/2024-virtualization-campus" -> "arceos-hypervisor/axvisor"
+"bootlin/elixir" -> "kvmtool/kvmtool" ["e"=1]
 "vusec/memsentry" -> "hedayati/hodor"
 "vusec/memsentry" -> "HexHive/ShadowStack"
 "vusec/memsentry" -> "nestedkernel/PerspicuOS"
@@ -504,8 +597,14 @@ digraph G {
 "GiantVM/KVM-Annotation" -> "GiantVM/doc"
 "zero-day-labs/cheri-cva6" -> "hex-five/multizone-linux"
 "arceos-hypervisor/axvisor" -> "arceos-org/oscamp"
+"umanovskis/baremetal-arm" ["l"="-17.937,-43.043", "c"=55]
+"NienfengYao/armv8-bare-metal" ["l"="-25.06,-22.483"]
 "HexHive/ShadowStack" ["l"="-25.057,-22.158"]
 "vusec/memsentry" ["l"="-25.071,-22.179"]
+"weaveworks/ignite" ["l"="8.078,-9.038", "c"=14]
+"firecracker-microvm/firectl" ["l"="-25.405,-22.243"]
+"liquidmetal-dev/flintlock" ["l"="-25.437,-22.235"]
+"innobead/kubefire" ["l"="-25.441,-22.266"]
 "xvisor/xvisor" ["l"="-25.032,-22.361"]
 "bao-project/bao-hypervisor" ["l"="-25.088,-22.391"]
 "avpatel/xvisor-next" ["l"="-25.019,-22.316"]
@@ -515,17 +614,18 @@ digraph G {
 "xen-project/xen" ["l"="-25.084,-22.339"]
 "quic/gunyah-hypervisor" ["l"="-25.069,-22.352"]
 "udosteinberg/NOVA" ["l"="-24.951,-22.336"]
-"Bareflank/hypervisor" ["l"="-43.009,-35.249"]
+"Bareflank/hypervisor" ["l"="-43.009,-35.249", "c"=40]
 "kvmtool/kvmtool" ["l"="-25.108,-22.298"]
 "siemens/freertos-cell" ["l"="-25.003,-22.331"]
 "minos-project/minos-hypervisor" ["l"="-25.016,-22.404"]
 "minosproject/minos2" ["l"="-25.032,-22.387"]
 "projectacrn/acrn-kernel" ["l"="-25.039,-22.413"]
-"asamy/ksm" ["l"="-42.969,-35.251"]
+"asamy/ksm" ["l"="-42.969,-35.251", "c"=40]
+"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254", "c"=55]
 "siemens/jailhouse-images" ["l"="-25.002,-22.31"]
-"evidence/erika3" ["l"="-14.79,-24.167"]
-"OP-TEE/optee_os" ["l"="-16.582,-42.151"]
-"OpenAMP/open-amp" ["l"="-17.857,-43.183"]
+"evidence/erika3" ["l"="-14.79,-24.167", "c"=236]
+"OP-TEE/optee_os" ["l"="-16.582,-42.151", "c"=621]
+"OpenAMP/open-amp" ["l"="-17.857,-43.183", "c"=55]
 "seL4/seL4" ["l"="-24.969,-22.405"]
 "project-dune/dune" ["l"="-25.103,-22.253"]
 "hex-five/multizone-sdk" ["l"="-25.093,-22.445"]
@@ -534,69 +634,82 @@ digraph G {
 "zero-day-labs/cheri-cva6" ["l"="-25.097,-22.42"]
 "hex-five/multizone-api" ["l"="-25.081,-22.462"]
 "hex-five/multizone-sdk-arm" ["l"="-25.106,-22.454"]
-"cloud-hypervisor/cloud-hypervisor" ["l"="8.341,-9.152"]
+"cloud-hypervisor/cloud-hypervisor" ["l"="8.341,-9.152", "c"=14]
 "cloud-hypervisor/rust-hypervisor-firmware" ["l"="-25.179,-22.328"]
-"Wenzel/awesome-virtualization" ["l"="-42.983,-35.234"]
-"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254"]
-"david942j/kvm-kernel-example" ["l"="-25.087,-22.269"]
+"Wenzel/awesome-virtualization" ["l"="-42.983,-35.234", "c"=40]
+"rust-osdev/uefi-rs" ["l"="-25.093,-22.772", "c"=1180]
+"dynup/kpatch" ["l"="6.975,-6.295", "c"=335]
+"yifengyou/learn-kvm" ["l"="7.164,-6.446", "c"=335]
+"Jessicahust/KVM" ["l"="-25.057,-22.238"]
 "dpw/kvm-hello-world" ["l"="-25.127,-22.266"]
+"GiantVM/doc" ["l"="-25.08,-22.234"]
+"fishinabarrel/linux-kernel-module-rust" ["l"="-9.634,-6.172", "c"=5]
+"rust-vmm/community" ["l"="-25.174,-22.282"]
+"david942j/kvm-kernel-example" ["l"="-25.087,-22.269"]
 "soulxu/kvmsample" ["l"="-25.106,-22.276"]
-"0xKira/qemu-vm-escape" ["l"="-41.394,-36.495"]
-"david942j/ctf-writeups" ["l"="-45.027,-34.718"]
-"WinMin/awesome-vm-exploit" ["l"="-41.393,-36.427"]
-"shift-crops/EscapeMe" ["l"="-44.948,-34.795"]
+"0xKira/qemu-vm-escape" ["l"="-41.394,-36.495", "c"=91]
+"david942j/ctf-writeups" ["l"="-45.027,-34.718", "c"=282]
+"WinMin/awesome-vm-exploit" ["l"="-41.393,-36.427", "c"=91]
+"shift-crops/EscapeMe" ["l"="-44.948,-34.795", "c"=282]
+"superfly/flyctl" ["l"="5.468,-8.658", "c"=0]
+"superfly/init-snapshot" ["l"="-25.399,-22.179"]
 "rust-vmm/vm-virtio" ["l"="-25.192,-22.295"]
 "rust-vmm/vm-memory" ["l"="-25.176,-22.301"]
 "rust-vmm/vmm-reference" ["l"="-25.209,-22.303"]
-"rust-vmm/community" ["l"="-25.174,-22.282"]
 "rust-vmm/kvm" ["l"="-25.217,-22.29"]
 "rust-vmm/linux-loader" ["l"="-25.199,-22.281"]
-"gamozolabs/orange_slice" ["l"="-43.2,-35.136"]
+"gamozolabs/orange_slice" ["l"="-43.2,-35.136", "c"=40]
 "mit-pdos/RVirt" ["l"="-25.155,-22.365"]
 "rust-vmm/kvm-bindings" ["l"="-25.217,-22.318"]
-"intel/nemu" ["l"="8.505,-9.283"]
+"intel/nemu" ["l"="8.505,-9.283", "c"=14]
 "hermit-os/uhyve" ["l"="-25.195,-22.314"]
-"cyberus-technology/hedron" ["l"="40.523,-0.755"]
-"rcore-os/virtio-drivers" ["l"="-9.576,-8.783"]
+"cyberus-technology/hedron" ["l"="40.523,-0.755", "c"=7]
+"rcore-os/virtio-drivers" ["l"="-9.576,-8.783", "c"=871]
 "diodesign/diosix" ["l"="-25.199,-22.379"]
 "rust-vmm/vmm-sys-util" ["l"="-25.215,-22.276"]
 "rust-vmm/vm-device" ["l"="-25.209,-22.249"]
 "rust-vmm/vhost" ["l"="-25.185,-22.266"]
 "oasis-tcs/virtio-spec" ["l"="-25.147,-22.312"]
-"NienfengYao/armv8-bare-metal" ["l"="-25.06,-22.483"]
+"firecracker-microvm/firecracker-containerd" ["l"="8.256,-9.104", "c"=14]
+"firecracker-microvm/firecracker-go-sdk" ["l"="-25.382,-22.249"]
+"firecracker-microvm/firecracker-demo" ["l"="-25.338,-22.251"]
+"f9micro/f9-kernel" ["l"="-22.284,-23.42", "c"=496]
+"jserv/codezero" ["l"="-24.804,-22.336"]
+"TUD-OS/M3" ["l"="-24.884,-22.31"]
+"crash-utility/crash" ["l"="6.958,-6.258", "c"=335]
+"BiscuitOS/BiscuitOS" ["l"="6.913,-6.391", "c"=335]
 "freedomtan/aarch64-bare-metal-qemu" ["l"="-25.053,-22.51"]
 "jserv/armv8-hello" ["l"="-25.079,-22.517"]
+"hermit-os/kernel" ["l"="-25.093,-22.809", "c"=1180]
+"hermit-os/loader" ["l"="-25.191,-22.247"]
+"weaveworks/footloose" ["l"="7.648,-8.939", "c"=14]
 "rntmancuso/jailhouse-rt" ["l"="-24.988,-22.286"]
-"firecracker-microvm/firecracker-go-sdk" ["l"="-25.382,-22.249"]
-"firecracker-microvm/firectl" ["l"="-25.405,-22.243"]
-"firecracker-microvm/firecracker-containerd" ["l"="8.256,-9.104"]
-"firecracker-microvm/firecracker-demo" ["l"="-25.338,-22.251"]
 "alexellis/firecracker-init-lab" ["l"="-25.415,-22.215"]
+"fuchsia-mirror/zircon" ["l"="-17.414,-43.468", "c"=55]
+"unikernelLinux/ukl" ["l"="-25.239,-22.93", "c"=1180]
 "rust-vmm/rust-vmm-ci" ["l"="-25.208,-22.264"]
 "kernkonzept/l4re-core" ["l"="-24.924,-22.337"]
 "kernkonzept/fiasco" ["l"="-24.918,-22.32"]
 "KuangjuX/hypocaust" ["l"="-25.165,-22.399"]
 "KuangjuX/hypocaust-2" ["l"="-25.145,-22.408"]
-"rcore-os/RVM" ["l"="-9.652,-8.79"]
+"rcore-os/RVM" ["l"="-9.652,-8.79", "c"=871]
 "tzvisor/ltzvisor" ["l"="-25.081,-22.421"]
-"liquidmetal-dev/flintlock" ["l"="-25.437,-22.235"]
 "cneira/firecracker-task-driver" ["l"="-25.371,-22.227"]
-"weaveworks/ignite" ["l"="8.078,-9.038"]
 "bkleiner/ubuntu-firecracker" ["l"="-25.439,-22.205"]
-"innobead/kubefire" ["l"="-25.441,-22.266"]
 "combust-labs/firebuild" ["l"="-25.385,-22.217"]
 "rivosinc/salus" ["l"="-25.22,-22.36"]
+"cetic/unikernels" ["l"="-25.217,-22.892", "c"=1180]
 "moratorium08/osmium" ["l"="-25.243,-22.422"]
 "hitohira/yokyo" ["l"="-25.266,-22.446"]
 "shuveb/sparkler" ["l"="-25.329,-22.218"]
-"vhive-serverless/vHive" ["l"="63.379,-12.534"]
+"vhive-serverless/vHive" ["l"="63.379,-12.534", "c"=1127]
 "marcov/firecracker-initrd" ["l"="-25.351,-22.224"]
 "rust-vmm/rust-vmm-container" ["l"="-25.239,-22.274"]
 "sashalevin/uvirtio" ["l"="-25.237,-22.303"]
-"hermit-os/loader" ["l"="-25.191,-22.247"]
-"hermit-os/kernel" ["l"="-25.093,-22.809"]
-"hermit-os/hermit-rs" ["l"="-25.13,-22.83"]
+"hermit-os/hermit-rs" ["l"="-25.13,-22.83", "c"=1180]
 "rust-vmm/vhost-user-backend" ["l"="-25.206,-22.224"]
+"Remco123/CactusOS" ["l"="-23.901,-23.265", "c"=349]
+"posnk/posnk" ["l"="-24.754,-22.252"]
 "projectacrn/acrn-unit-test" ["l"="-25.037,-22.447"]
 "projectacrn/projectacrn.github.io" ["l"="-25.025,-22.445"]
 "tomabou/cpu_core" ["l"="-25.278,-22.459"]
@@ -605,31 +718,38 @@ digraph G {
 "projectacrn/acrn-edk2" ["l"="-25.025,-22.468"]
 "rust-vmm/vfio-ioctls" ["l"="-25.24,-22.251"]
 "rust-vmm/event-manager" ["l"="-25.23,-22.238"]
-"jserv/codezero" ["l"="-24.804,-22.336"]
 "l4ka/hazelnut" ["l"="-24.843,-22.336"]
 "genodelabs/genodians.org" ["l"="-24.836,-22.415"]
 "genodelabs/goa" ["l"="-24.848,-22.424"]
-"seL4/l4v" ["l"="-22.22,-19.361"]
-"Stichting-MINIX-Research-Foundation/minix" ["l"="-23.822,-23.06"]
-"AbsInt/CompCert" ["l"="-22.241,-19.409"]
-"littlekernel/lk" ["l"="-17.638,-43.305"]
-"genodelabs/genode" ["l"="-24.917,-22.365"]
-"HelenOS/helenos" ["l"="-23.789,-23.175"]
-"managarm/managarm" ["l"="-23.808,-23.176"]
-"redox-os/redox" ["l"="-9.77,-5.645"]
-"tock/tock" ["l"="-8.345,-5.736"]
-"AmbiML/sparrow-manifest" ["l"="-24.931,-22.489"]
-"mit-pdos/xv6-public" ["l"="-6.733,19.579"]
-"f9micro/f9-kernel" ["l"="-22.284,-23.42"]
-"bao-project/bao-demos" ["l"="-25.115,-22.42"]
+"sgmarz/osblog" ["l"="-25.076,-22.733", "c"=1180]
+"joaomlourenco/novathesis" ["l"="-0.712,3.282", "c"=258]
+"KuangjuX/hypercraft" ["l"="-25.161,-22.429"]
 "syswonder/hvisor" ["l"="-25.124,-22.437"]
-"zero-day-labs/riscv-aia" ["l"="31.493,-3.822"]
+"Stichting-MINIX-Research-Foundation/minix" ["l"="-23.822,-23.06", "c"=349]
+"seL4/l4v" ["l"="-22.22,-19.361", "c"=392]
+"AbsInt/CompCert" ["l"="-22.241,-19.409", "c"=392]
+"littlekernel/lk" ["l"="-17.638,-43.305", "c"=55]
+"genodelabs/genode" ["l"="-24.917,-22.365"]
+"HelenOS/helenos" ["l"="-23.789,-23.175", "c"=349]
+"managarm/managarm" ["l"="-23.808,-23.176", "c"=349]
+"redox-os/redox" ["l"="-9.77,-5.645", "c"=5]
+"tock/tock" ["l"="-8.345,-5.736", "c"=384]
+"AmbiML/sparrow-manifest" ["l"="-24.931,-22.489"]
+"mit-pdos/xv6-public" ["l"="-6.733,19.579", "c"=637]
+"bao-project/bao-demos" ["l"="-25.115,-22.42"]
+"zero-day-labs/riscv-aia" ["l"="31.493,-3.822", "c"=188]
+"skyzh/core-os-riscv" ["l"="-9.582,-8.686", "c"=871]
+"containers/libkrun" ["l"="-17.033,-2.698", "c"=772]
 "thepowersgang/acess2" ["l"="-24.779,-22.266"]
-"posnk/posnk" ["l"="-24.754,-22.252"]
 "dbittman/seakernel" ["l"="-24.804,-22.283"]
+"mit-pdos/xv6-riscv-book" ["l"="-6.671,19.663", "c"=637]
 "l4ka/pistachio" ["l"="-24.897,-22.337"]
 "l4ka/idl4" ["l"="-24.872,-22.337"]
+"Penglai-Enclave/Penglai-Enclave-sPMP" ["l"="-16.555,-42.18", "c"=621]
+"minix3/minix" ["l"="-23.826,-22.974", "c"=349]
+"takahirox/riscv-rust" ["l"="-22.411,-23.25", "c"=496]
 "sudharson14/xv6-OS-for-arm-v8" ["l"="-24.979,-22.45"]
+"Roblox/nomad-driver-containerd" ["l"="7.001,-13.064", "c"=666]
 "houcheng/xv6-armv7" ["l"="-24.978,-22.47"]
 "hedayati/hodor" ["l"="-25.052,-22.172"]
 "projectacrn/acrn-libvirt" ["l"="-25.018,-22.491"]
@@ -643,48 +763,51 @@ digraph G {
 "bao-project/bao-helloworld" ["l"="-25.121,-22.45"]
 "rust-vmm/vfio-bindings" ["l"="-25.259,-22.239"]
 "genodelabs/genode-world" ["l"="-24.862,-22.4"]
-"aros-development-team/AROS" ["l"="-20.979,-46.553"]
-"dsciitpatna/Shabd" ["l"="-13.507,-6.995"]
+"aros-development-team/AROS" ["l"="-20.979,-46.553", "c"=528]
+"dsciitpatna/Shabd" ["l"="-13.507,-6.995", "c"=86]
 "Nils-TUD/Escape" ["l"="-24.855,-22.311"]
 "cl91/NeptuneOS" ["l"="-24.852,-22.371"]
-"sorpaas/rux" ["l"="-25.032,-22.83"]
+"sorpaas/rux" ["l"="-25.032,-22.83", "c"=1180]
 "genodelabs/linux_drivers" ["l"="-24.894,-22.382"]
-"zero-day-labs/riscv-iommu-demo" ["l"="31.469,-3.83"]
-"liquidmetal-dev/cluster-api-provider-microvm" ["l"="10.027,-12.661"]
+"zero-day-labs/riscv-iommu-demo" ["l"="31.469,-3.83", "c"=188]
+"libvirt/libvirt" ["l"="8.952,-9.006", "c"=14]
+"liquidmetal-dev/cluster-api-provider-microvm" ["l"="10.027,-12.661", "c"=1195]
 "valyentdev/ravel" ["l"="-25.475,-22.214"]
-"infracloudio/awesome-microvm" ["l"="-4.069,-28.211"]
-"e2b-dev/infra" ["l"="41.439,0.468"]
+"infracloudio/awesome-microvm" ["l"="-4.069,-28.211", "c"=4]
+"e2b-dev/infra" ["l"="41.439,0.468", "c"=7]
 "GiantVM/Book" ["l"="-25.032,-22.222"]
-"Jessicahust/KVM" ["l"="-25.057,-22.238"]
 "Jessicahust/free-programming-books-zh_CN" ["l"="-25.018,-22.194"]
 "GiantVM/KVM-Annotation" ["l"="-25.063,-22.214"]
-"yifengyou/learn-kvm" ["l"="7.164,-6.446"]
-"superfly/init-snapshot" ["l"="-25.399,-22.179"]
+"dzavalishin/phantomuserland" ["l"="-23.833,-23.11", "c"=349]
+"bonzini/qboot" ["l"="8.687,-9.352", "c"=14]
 "TUD-OS/NUL" ["l"="-24.94,-22.297"]
-"TUD-OS/M3" ["l"="-24.884,-22.31"]
 "TUD-OS/NRE" ["l"="-24.948,-22.31"]
-"seL4/seL4_libs" ["l"="-22.532,-19.345"]
+"seL4/seL4_libs" ["l"="-22.532,-19.345", "c"=392]
+"containers/krunvm" ["l"="-17.03,-2.738", "c"=772]
 "quic/gunyah-resource-manager" ["l"="-25.104,-22.371"]
 "quic/gunyah-support-scripts" ["l"="-25.088,-22.369"]
 "quic/gunyah-c-runtime" ["l"="-25.097,-22.36"]
-"garasubo/T-Visor" ["l"="4.463,-39.88"]
+"garasubo/T-Visor" ["l"="4.463,-39.88", "c"=1133]
 "au-ts/lionsos" ["l"="-25.104,-22.213"]
 "google/aarch64-esr-decoder" ["l"="-25.053,-22.307"]
 "google/crosvm" ["l"="-25.12,-22.344"]
 "Jessicahust/books" ["l"="-24.989,-22.16"]
+"QuarkContainer/Quark" ["l"="8.263,-9.525", "c"=14]
+"FDUCSLG/ICS-2021Spring-FDU" ["l"="33.441,-2.927", "c"=2793]
 "nestedkernel/PerspicuOS" ["l"="-25.076,-22.154"]
 "evidence/linux-jailhouse-jetson" ["l"="-24.981,-22.312"]
 "GitOfCharlie/chcore-lab" ["l"="-24.876,-22.468"]
+"rust-osdev/x86_64" ["l"="-25.072,-22.758", "c"=1180]
 "apocas/firecrackerode" ["l"="-25.43,-22.184"]
-"mewz-project/wasker" ["l"="4.478,-39.93"]
-"RIKEN-RCCS/MilvusVisor" ["l"="4.508,-39.901"]
-"mewz-project/mewz" ["l"="4.518,-39.921"]
-"ChinaLinuxKernel/CLK" ["l"="6.944,-6.374"]
-"GiantVM/doc" ["l"="-25.08,-22.234"]
-"crash-utility/crash" ["l"="6.958,-6.258"]
+"mewz-project/wasker" ["l"="4.478,-39.93", "c"=1133]
+"RIKEN-RCCS/MilvusVisor" ["l"="4.508,-39.901", "c"=1133]
+"mewz-project/mewz" ["l"="4.518,-39.921", "c"=1133]
+"ChinaLinuxKernel/CLK" ["l"="6.944,-6.374", "c"=335]
+"0voice/Introduce_to_virtualization" ["l"="7.195,-6.442", "c"=335]
 "riscv-admin/trusted-computing" ["l"="-25.304,-22.396"]
 "riscv-admin/security" ["l"="-25.32,-22.413"]
 "riscv-admin/iopmp" ["l"="-25.327,-22.398"]
+"RTEMS/rtems" ["l"="-17.808,-43.188", "c"=55]
 "seL4/microkit" ["l"="-25.117,-22.167"]
 "lucypa/sDDF" ["l"="-25.134,-22.146"]
 "au-ts/libvmm" ["l"="-25.123,-22.186"]
@@ -693,37 +816,45 @@ digraph G {
 "nfeske/genode-manual" ["l"="-24.829,-22.4"]
 "AmbiML/sparrow-kata" ["l"="-24.933,-22.526"]
 "AmbiML/sparrow-kata-full" ["l"="-24.906,-22.521"]
-"KVM-VMI/kvm-vmi" ["l"="-43.195,-35.21"]
-"libvmi/libvmi" ["l"="-43.142,-35.219"]
-"AMDESE/AMDSEV" ["l"="-16.752,-42.151"]
+"KVM-VMI/kvm-vmi" ["l"="-43.195,-35.21", "c"=40]
+"libvmi/libvmi" ["l"="-43.142,-35.219", "c"=40]
+"AMDESE/AMDSEV" ["l"="-16.752,-42.151", "c"=621]
 "AmbiML/sparrow-cantrip-full" ["l"="-24.91,-22.539"]
-"model-checking/kani" ["l"="-9.804,-6.503"]
-"Rust-for-Linux/linux" ["l"="-9.686,-6.103"]
-"theseus-os/Theseus" ["l"="-25.048,-22.809"]
-"tandasat/Hypervisor-101-in-Rust" ["l"="-43.054,-35.276"]
-"sslab-gatech/Rudra" ["l"="-9.737,-6.477"]
-"oxidecomputer/hubris" ["l"="-8.307,-5.7"]
-"arceos-org/arceos" ["l"="-9.583,-8.811"]
-"lowRISC/opentitan" ["l"="31.861,-3.775"]
-"deviceplug/btleplug" ["l"="-8.104,-5.807"]
+"model-checking/kani" ["l"="-9.804,-6.503", "c"=5]
+"Rust-for-Linux/linux" ["l"="-9.686,-6.103", "c"=5]
+"theseus-os/Theseus" ["l"="-25.048,-22.809", "c"=1180]
+"tandasat/Hypervisor-101-in-Rust" ["l"="-43.054,-35.276", "c"=40]
+"sslab-gatech/Rudra" ["l"="-9.737,-6.477", "c"=5]
+"oxidecomputer/hubris" ["l"="-8.307,-5.7", "c"=384]
+"arceos-org/arceos" ["l"="-9.583,-8.811", "c"=871]
+"lowRISC/opentitan" ["l"="31.861,-3.775", "c"=188]
+"deviceplug/btleplug" ["l"="-8.104,-5.807", "c"=384]
 "AmbiML/sparrow-kernel" ["l"="-24.882,-22.543"]
+"equation314/RVM-Tutorial" ["l"="-9.639,-8.804", "c"=871]
+"ix-project/ix" ["l"="1.356,14.019", "c"=115]
+"ix-project/dune" ["l"="-25.125,-22.226"]
 "stemnic/rustyvisor" ["l"="-25.172,-22.416"]
-"ionescu007/SimpleVisor" ["l"="-42.989,-35.257"]
-"Solo5/solo5" ["l"="-25.256,-22.892"]
+"fuchsia-mirror/magenta" ["l"="-17.492,-43.427", "c"=55]
+"ionescu007/SimpleVisor" ["l"="-42.989,-35.257", "c"=40]
+"Solo5/solo5" ["l"="-25.256,-22.892", "c"=1180]
+"superfly/corrosion" ["l"="5.314,-8.696", "c"=0]
 "syswonder/hvisor-tool" ["l"="-25.13,-22.463"]
 "arceos-hypervisor/axvisor" ["l"="-25.147,-22.481"]
 "syswonder/ruxos" ["l"="-25.147,-22.457"]
+"freelancer-leon/notes" ["l"="-6.007,17.93", "c"=779]
+"intel/gvt-linux" ["l"="-14.206,-1.454", "c"=152]
 "seL4/rust-sel4" ["l"="-25.12,-22.123"]
-"KuangjuX/hypercraft" ["l"="-25.161,-22.429"]
 "au-ts/sddf" ["l"="-25.098,-22.186"]
+"cloudius-systems/osv" ["l"="-25.242,-22.839", "c"=1180]
+"microsoft/openvmm" ["l"="-43.148,-35.273", "c"=40]
+"BUPT-OS/RROS" ["l"="-4.972,19.185", "c"=564]
 "dbittman/seakernel-refactor" ["l"="-24.779,-22.289"]
-"dennis95/dennix" ["l"="-23.812,-23.266"]
-"doug65536/dgos" ["l"="-23.754,-23.353"]
+"dennis95/dennix" ["l"="-23.812,-23.266", "c"=349]
+"doug65536/dgos" ["l"="-23.754,-23.353", "c"=349]
 "arceos-hypervisor/2024-virtualization-campus" ["l"="-25.166,-22.505"]
-"ix-project/dune" ["l"="-25.125,-22.226"]
-"intel/tdx" ["l"="-16.735,-42.15"]
-"ix-project/ix" ["l"="1.356,14.019"]
-"HyperEnclave/atc22-ae" ["l"="-16.659,-42.114"]
+"bootlin/elixir" ["l"="-45.181,-34.691", "c"=282]
+"intel/tdx" ["l"="-16.735,-42.15", "c"=621]
+"HyperEnclave/atc22-ae" ["l"="-16.659,-42.114", "c"=621]
 "valyentdev/valyent" ["l"="-25.514,-22.224"]
 "valyentdev/ikto" ["l"="-25.51,-22.2"]
 "valyentdev/raveld" ["l"="-25.49,-22.189"]

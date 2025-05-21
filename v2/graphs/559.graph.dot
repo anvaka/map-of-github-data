@@ -1,4 +1,5 @@
 digraph G {
+"k8up-io/k8up" -> "nextcloud/helm" ["e"=1]
 "nextcloud/helm" -> "immich-app/immich-charts"
 "nextcloud/helm" -> "k8up-io/k8up" ["e"=1]
 "nextcloud/helm" -> "jellyfin/jellyfin-helm"
@@ -6,10 +7,25 @@ digraph G {
 "nextcloud/helm" -> "democratic-csi/democratic-csi" ["e"=1]
 "nextcloud/helm" -> "p80n/photoprism-helm"
 "nextcloud/helm" -> "open-webui/helm-charts"
+"searxng/searxng-docker" -> "open-webui/pipelines" ["e"=1]
+"qdrant/qdrant-client" -> "qdrant/mcp-server-qdrant" ["e"=1]
+"coddingtonbear/obsidian-local-rest-api" -> "MarkusPfundstein/mcp-obsidian" ["e"=1]
+"coddingtonbear/obsidian-local-rest-api" -> "smithery-ai/mcp-obsidian" ["e"=1]
+"mariocandela/beelzebub" -> "f/mcptools" ["e"=1]
+"SynologyOpenSource/synology-csi" -> "otwld/ollama-helm" ["e"=1]
+"stravo1/obsidian-gdrive-sync" -> "MarkusPfundstein/mcp-obsidian" ["e"=1]
+"different-ai/note-companion" -> "MarkusPfundstein/mcp-obsidian" ["e"=1]
+"win4r/AISuperDomain" -> "open-webui/mcpo" ["e"=1]
+"Mintplex-Labs/vector-admin" -> "open-webui/pipelines" ["e"=1]
+"szczyglis-dev/py-gpt" -> "nbonamy/witsy" ["e"=1]
+"weaviate/recipes" -> "weaviate/mcp-server-weaviate" ["e"=1]
 "tavily-ai/tavily-python" -> "tavily-ai/tavily-mcp"
 "tavily-ai/tavily-python" -> "tavily-ai/tavily-js"
 "tavily-ai/tavily-python" -> "alonlavian/RAGent" ["e"=1]
+"Woolverine94/biniou" -> "EtiennePerot/safe-code-execution" ["e"=1]
 "amidabuddha/console-chat-gpt" -> "3choff/mcp-chatbot"
+"refly-ai/refly" -> "nanbingxyz/5ire" ["e"=1]
+"tinyfish-io/agentql" -> "supercorp-ai/superinterface" ["e"=1]
 "open-webui/docs" -> "open-webui/extension"
 "open-webui/docs" -> "open-webui/pipelines"
 "open-webui/docs" -> "open-webui/openapi-servers"
@@ -24,6 +40,7 @@ digraph G {
 "open-webui/docs" -> "open-webui/mcpo"
 "open-webui/docs" -> "open-webui/llama-cpp-runner"
 "open-webui/docs" -> "atgehrhardt/Cerebro-OpenWebUI-Package-Manager"
+"neo4j/neo4j-graphrag-python" -> "neo4j-contrib/mcp-neo4j" ["e"=1]
 "nanbingxyz/5ire" -> "daodao97/chatmcp"
 "nanbingxyz/5ire" -> "punkpeye/awesome-mcp-clients"
 "nanbingxyz/5ire" -> "lastmile-ai/mcp-agent" ["e"=1]
@@ -39,11 +56,19 @@ digraph G {
 "nanbingxyz/5ire" -> "OpenAgentPlatform/Dive"
 "nanbingxyz/5ire" -> "CherryHQ/cherry-studio" ["e"=1]
 "nanbingxyz/5ire" -> "nanbingxyz/mcpsvr"
+"firebase/genkit" -> "nanbingxyz/5ire" ["e"=1]
+"ggozad/oterm" -> "patruff/ollama-mcp-bridge" ["e"=1]
+"ggozad/oterm" -> "chrishayuk/mcp-cli" ["e"=1]
+"ggozad/oterm" -> "adhikasp/mcp-client-cli" ["e"=1]
+"mythrantic/ollama-docker" -> "open-webui/pipelines" ["e"=1]
 "trendy-design/llmchat" -> "ibelick/zola" ["e"=1]
 "trendy-design/llmchat" -> "ask0ldd/OsspitaUI"
 "trendy-design/llmchat" -> "MindWorkAI/AI-Studio"
 "trendy-design/llmchat" -> "nbonamy/witsy"
 "trendy-design/llmchat" -> "datvodinh/rag-chatbot" ["e"=1]
+"LibreChat-AI/librechat.ai" -> "acehoss/mcp-gateway" ["e"=1]
+"matatonic/openedai-speech" -> "open-webui/pipelines" ["e"=1]
+"matatonic/openedai-speech" -> "open-webui/openapi-servers" ["e"=1]
 "nbonamy/witsy" -> "nanbingxyz/5ire"
 "nbonamy/witsy" -> "echohive42/AI-reads-books-page-by-page" ["e"=1]
 "nbonamy/witsy" -> "daodao97/chatmcp"
@@ -74,8 +99,12 @@ digraph G {
 "cyberchitta/llm-context.py" -> "SDGLBL/mcp-claude-code"
 "otwld/ollama-helm" -> "open-webui/helm-charts"
 "open-webui/assistant" -> "open-webui/cookbook"
+"chatmcp/mcp-server-chatsum" -> "daodao97/chatmcp" ["e"=1]
 "smithery-ai/sdk" -> "smithery-ai/cli"
 "smithery-ai/sdk" -> "letta-ai/letta-node"
+"modelcontextprotocol/typescript-sdk" -> "modelcontextprotocol/inspector" ["e"=1]
+"modelcontextprotocol/typescript-sdk" -> "punkpeye/fastmcp" ["e"=1]
+"togethercomputer/together-cookbook" -> "togethercomputer/open_deep_research" ["e"=1]
 "sooperset/mcp-atlassian" -> "modelcontextprotocol/inspector"
 "sooperset/mcp-atlassian" -> "GLips/Figma-Context-MCP" ["e"=1]
 "sooperset/mcp-atlassian" -> "janwilmake/openapi-mcp-server"
@@ -106,6 +135,14 @@ digraph G {
 "modelcontextprotocol/inspector" -> "sparfenyuk/mcp-proxy"
 "modelcontextprotocol/inspector" -> "mendableai/firecrawl-mcp-server" ["e"=1]
 "modelcontextprotocol/inspector" -> "modelcontextprotocol/docs"
+"browserbase/mcp-server-browserbase" -> "Saik0s/mcp-browser-use" ["e"=1]
+"browserbase/mcp-server-browserbase" -> "co-browser/browser-use-mcp-server" ["e"=1]
+"browserbase/mcp-server-browserbase" -> "graphlit/graphlit-mcp-server" ["e"=1]
+"browserbase/mcp-server-browserbase" -> "qdrant/mcp-server-qdrant" ["e"=1]
+"browserbase/mcp-server-browserbase" -> "daodao97/chatmcp" ["e"=1]
+"mark3labs/mcp-go" -> "mark3labs/mcphost" ["e"=1]
+"wonderwhy-er/DesktopCommanderMCP" -> "anaisbetts/mcp-installer" ["e"=1]
+"katanemo/archgw" -> "SecretiveShell/MCP-Bridge" ["e"=1]
 "basicmachines-co/basic-memory" -> "zcaceres/markdownify-mcp" ["e"=1]
 "basicmachines-co/basic-memory" -> "StevenStavrakis/obsidian-mcp"
 "basicmachines-co/basic-memory" -> "smithery-ai/mcp-obsidian"
@@ -127,6 +164,7 @@ digraph G {
 "SimonB97/win-cli-mcp-server" -> "MladenSU/cli-mcp-server"
 "SimonB97/win-cli-mcp-server" -> "GongRzhe/terminal-controller-mcp"
 "SimonB97/win-cli-mcp-server" -> "pskill9/website-downloader"
+"travisvn/openai-edge-tts" -> "open-webui/desktop" ["e"=1]
 "adhikasp/mcp-client-cli" -> "3choff/mcp-chatbot"
 "adhikasp/mcp-client-cli" -> "chrishayuk/mcp-cli"
 "adhikasp/mcp-client-cli" -> "amidabuddha/console-chat-gpt"
@@ -142,6 +180,9 @@ digraph G {
 "adhikasp/mcp-client-cli" -> "cyberchitta/llm-context.py"
 "adhikasp/mcp-client-cli" -> "Jeamee/MCPHub-Desktop"
 "adhikasp/mcp-client-cli" -> "zueai/mcp-manager"
+"av/harbor" -> "OpenAgentPlatform/Dive" ["e"=1]
+"av/harbor" -> "open-webui/pipelines" ["e"=1]
+"av/harbor" -> "EtiennePerot/safe-code-execution" ["e"=1]
 "SecretiveShell/MCP-Bridge" -> "bartolli/mcp-llm-bridge"
 "SecretiveShell/MCP-Bridge" -> "cyanheads/atlas-mcp-server"
 "SecretiveShell/MCP-Bridge" -> "metatool-ai/metatool-app"
@@ -187,6 +228,32 @@ digraph G {
 "chrishayuk/mcp-cli" -> "CopilotKit/open-mcp-client"
 "chrishayuk/mcp-cli" -> "nanbingxyz/5ire"
 "chrishayuk/mcp-cli" -> "modelcontextprotocol/inspector"
+"rusiaaman/wcgw" -> "Automata-Labs-team/code-sandbox-mcp" ["e"=1]
+"rusiaaman/wcgw" -> "jasonjmcghee/claude-debugs-for-you" ["e"=1]
+"rusiaaman/wcgw" -> "SDGLBL/mcp-claude-code" ["e"=1]
+"rusiaaman/wcgw" -> "QuantGeekDev/docker-mcp" ["e"=1]
+"rusiaaman/wcgw" -> "mzxrai/mcp-webresearch" ["e"=1]
+"rusiaaman/wcgw" -> "michaellatman/mcp-get" ["e"=1]
+"rusiaaman/wcgw" -> "recursechat/mcp-server-apple-shortcuts" ["e"=1]
+"rusiaaman/wcgw" -> "SecretiveShell/MCP-Bridge" ["e"=1]
+"rusiaaman/wcgw" -> "zueai/mcp-manager" ["e"=1]
+"rusiaaman/wcgw" -> "vivekVells/mcp-pandoc" ["e"=1]
+"mendableai/firecrawl-mcp-server" -> "modelcontextprotocol/inspector" ["e"=1]
+"glowingjade/obsidian-smart-composer" -> "MarkusPfundstein/mcp-obsidian" ["e"=1]
+"glowingjade/obsidian-smart-composer" -> "smithery-ai/mcp-obsidian" ["e"=1]
+"swark-io/swark" -> "farshed/sage" ["e"=1]
+"appcypher/awesome-mcp-servers" -> "wong2/awesome-mcp-servers" ["e"=1]
+"appcypher/awesome-mcp-servers" -> "anaisbetts/mcp-installer" ["e"=1]
+"appcypher/awesome-mcp-servers" -> "punkpeye/awesome-mcp-clients" ["e"=1]
+"appcypher/awesome-mcp-servers" -> "modelcontextprotocol/inspector" ["e"=1]
+"modelcontextprotocol/modelcontextprotocol" -> "modelcontextprotocol/inspector" ["e"=1]
+"modelcontextprotocol/modelcontextprotocol" -> "modelcontextprotocol/docs" ["e"=1]
+"modelcontextprotocol/modelcontextprotocol" -> "open-webui/mcpo" ["e"=1]
+"modelcontextprotocol/modelcontextprotocol" -> "punkpeye/awesome-mcp-clients" ["e"=1]
+"modelcontextprotocol/modelcontextprotocol" -> "punkpeye/fastmcp" ["e"=1]
+"win4r/GraphRAG4OpenWebUI" -> "open-webui/pipelines" ["e"=1]
+"win4r/GraphRAG4OpenWebUI" -> "EtiennePerot/safe-code-execution" ["e"=1]
+"win4r/GraphRAG4OpenWebUI" -> "MartianInGreen/OpenWebUI-Tools" ["e"=1]
 "MarkusPfundstein/mcp-obsidian" -> "smithery-ai/mcp-obsidian"
 "MarkusPfundstein/mcp-obsidian" -> "coddingtonbear/obsidian-local-rest-api" ["e"=1]
 "MarkusPfundstein/mcp-obsidian" -> "StevenStavrakis/obsidian-mcp"
@@ -206,6 +273,8 @@ digraph G {
 "wong2/mcp-cli" -> "SecretiveShell/MCP-Bridge"
 "wong2/mcp-cli" -> "SimonB97/win-cli-mcp-server"
 "wong2/mcp-cli" -> "supercorp-ai/supergateway"
+"theJayTea/WritingTools" -> "nbonamy/witsy" ["e"=1]
+"egoist/chatwise-releases" -> "daodao97/chatmcp" ["e"=1]
 "reading-plus-ai/mcp-server-data-exploration" -> "pskill9/website-downloader"
 "reading-plus-ai/mcp-server-data-exploration" -> "ChronulusAI/chronulus-mcp"
 "reading-plus-ai/mcp-server-data-exploration" -> "vivekVells/mcp-pandoc"
@@ -235,6 +304,7 @@ digraph G {
 "QuantGeekDev/docker-mcp" -> "vivekVells/mcp-pandoc"
 "QuantGeekDev/docker-mcp" -> "recursechat/mcp-server-apple-shortcuts"
 "QuantGeekDev/docker-mcp" -> "reading-plus-ai/mcp-server-data-exploration"
+"Nutlope/napkins" -> "Nutlope/self.so" ["e"=1]
 "varunneal/spotify-mcp" -> "ZubeidHendricks/youtube-mcp-server"
 "varunneal/spotify-mcp" -> "ckreiling/mcp-server-docker"
 "varunneal/spotify-mcp" -> "GongRzhe/Gmail-MCP-Server"
@@ -288,6 +358,7 @@ digraph G {
 "blazickjp/arxiv-mcp-server" -> "HKUDS/Auto-Deep-Research" ["e"=1]
 "blazickjp/arxiv-mcp-server" -> "ZongqianLi/ReasonGraph" ["e"=1]
 "ccabanillas/notion-mcp" -> "suekou/mcp-notion-server"
+"VariantConst/OpenWebUI-Monitor" -> "MartianInGreen/OpenWebUI-Tools" ["e"=1]
 "suekou/mcp-notion-server" -> "makenotion/notion-mcp-server" ["e"=1]
 "suekou/mcp-notion-server" -> "ccabanillas/notion-mcp"
 "suekou/mcp-notion-server" -> "danhilse/notion_mcp"
@@ -306,6 +377,12 @@ digraph G {
 "Automata-Labs-team/MCP-Server-Playwright" -> "blackwhite084/playwright-plus-python-mcp"
 "Automata-Labs-team/MCP-Server-Playwright" -> "kimtaeyoon83/mcp-server-youtube-transcript"
 "Automata-Labs-team/MCP-Server-Playwright" -> "g0t4/mcp-server-commands"
+"stripe/agent-toolkit" -> "ZubeidHendricks/youtube-mcp-server" ["e"=1]
+"FutureClubNL/RAGMeUp" -> "open-webui/openapi-servers" ["e"=1]
+"chatmcp/mcpso" -> "wong2/awesome-mcp-servers" ["e"=1]
+"chatmcp/mcpso" -> "anaisbetts/mcp-installer" ["e"=1]
+"cloudflare/mcp-server-cloudflare" -> "modelcontextprotocol/inspector" ["e"=1]
+"cloudflare/mcp-server-cloudflare" -> "punkpeye/fastmcp" ["e"=1]
 "anaisbetts/mcp-youtube" -> "anaisbetts/mcp-installer"
 "anaisbetts/mcp-youtube" -> "ZubeidHendricks/youtube-mcp-server"
 "anaisbetts/mcp-youtube" -> "kimtaeyoon83/mcp-server-youtube-transcript"
@@ -380,9 +457,11 @@ digraph G {
 "smithery-ai/mcp-obsidian" -> "exa-labs/exa-mcp-server" ["e"=1]
 "smithery-ai/mcp-obsidian" -> "adityak74/mcp-scholarly"
 "neo4j-contrib/mcp-neo4j" -> "cyanheads/atlas-mcp-server"
+"strowk/mcp-k8s-go" -> "mark3labs/mcp-filesystem-server" ["e"=1]
 "g0t4/mcp-server-commands" -> "MladenSU/cli-mcp-server"
 "g0t4/mcp-server-commands" -> "tumf/mcp-shell-server"
 "NormVg/kraken" -> "shhivv/flowplane"
+"robertpiosik/CodeWebChat" -> "OpenAgentPlatform/Dive" ["e"=1]
 "AI-QL/chat-mcp" -> "bazinga012/mcp_code_executor"
 "AI-QL/chat-mcp" -> "AI-QL/chat-ui"
 "AI-QL/chat-mcp" -> "Automata-Labs-team/code-sandbox-mcp"
@@ -418,6 +497,7 @@ digraph G {
 "evalstate/mcp-hfspace" -> "pierrebrunelle/mcp-server-openai"
 "evalstate/mcp-hfspace" -> "vivekVells/mcp-pandoc"
 "evalstate/mcp-hfspace" -> "cyberchitta/llm-context.py"
+"kiliczsh/mcp-mongo-server" -> "QuantGeekDev/docker-mcp" ["e"=1]
 "MarkusPfundstein/mcp-gsuite" -> "GongRzhe/Gmail-MCP-Server"
 "MarkusPfundstein/mcp-gsuite" -> "ZilongXue/claude-post"
 "MarkusPfundstein/mcp-gsuite" -> "janwilmake/openapi-mcp-server"
@@ -444,6 +524,8 @@ digraph G {
 "atgehrhardt/Cerebro-OpenWebUI-Package-Manager" -> "open-webui/community-platform"
 "open-webui/community-platform" -> "open-webui/llama-cpp-runner"
 "open-webui/community-platform" -> "open-webui/scripts"
+"LearningCircuit/local-deep-research" -> "OpenAgentPlatform/Dive" ["e"=1]
+"LaurieWired/GhidraMCP" -> "nanbingxyz/5ire" ["e"=1]
 "Nutlope/self.so" -> "unbody-io/unbody"
 "Nutlope/self.so" -> "jasonppy/VoiceStar"
 "Nutlope/self.so" -> "f/mcptools"
@@ -454,9 +536,23 @@ digraph G {
 "Nutlope/self.so" -> "Nutlope/loras-dev" ["e"=1]
 "Nutlope/self.so" -> "upstash/rag-chat-component" ["e"=1]
 "Nutlope/self.so" -> "pogjester/company-research-agent" ["e"=1]
+"martin226/vibe-draw" -> "CopilotKit/open-mcp-client" ["e"=1]
+"going-doer/Paper2Code" -> "blazickjp/arxiv-mcp-server" ["e"=1]
+"langchain-ai/langchain-mcp-adapters" -> "modelcontextprotocol/inspector" ["e"=1]
+"Dhravya/apple-mcp" -> "recursechat/mcp-server-apple-shortcuts" ["e"=1]
+"Dhravya/apple-mcp" -> "anaisbetts/mcp-installer" ["e"=1]
+"lastmile-ai/mcp-agent" -> "evalstate/fast-agent" ["e"=1]
+"lastmile-ai/mcp-agent" -> "nanbingxyz/5ire" ["e"=1]
+"lastmile-ai/mcp-agent" -> "punkpeye/awesome-mcp-clients" ["e"=1]
+"lastmile-ai/mcp-agent" -> "modelcontextprotocol/inspector" ["e"=1]
+"Doriandarko/RAT-retrieval-augmented-thinking" -> "cognitivecomputations/dolphin-mcp" ["e"=1]
+"Doriandarko/RAT-retrieval-augmented-thinking" -> "togethercomputer/open_deep_research" ["e"=1]
+"oraios/serena" -> "OpenAgentPlatform/Dive" ["e"=1]
+"oraios/serena" -> "metatool-ai/metatool-app" ["e"=1]
 "benborla/mcp-server-mysql" -> "designcomputer/mysql_mcp_server"
 "benborla/mcp-server-mysql" -> "bytebase/dbhub"
 "benborla/mcp-server-mysql" -> "v-3/notion-server"
+"convergence-ai/proxy-lite" -> "Saik0s/mcp-browser-use" ["e"=1]
 "bytebase/dbhub" -> "runekaagaard/mcp-alchemy"
 "bytebase/dbhub" -> "benborla/mcp-server-mysql"
 "bytebase/dbhub" -> "FreePeak/db-mcp-server"
@@ -475,7 +571,16 @@ digraph G {
 "punkpeye/awesome-mcp-clients" -> "modelcontextprotocol/typescript-sdk" ["e"=1]
 "punkpeye/awesome-mcp-clients" -> "punkpeye/fastmcp"
 "punkpeye/awesome-mcp-clients" -> "executeautomation/mcp-playwright" ["e"=1]
+"RPG-fan/Cline-Recursive-Chain-of-Thought-System-CRCT-" -> "cognitivecomputations/dolphin-mcp" ["e"=1]
+"Fosowl/agenticSeek" -> "OpenAgentPlatform/Dive" ["e"=1]
+"nerding-io/n8n-nodes-mcp" -> "CopilotKit/open-mcp-client" ["e"=1]
+"modelcontextprotocol/java-sdk" -> "modelcontextprotocol/inspector" ["e"=1]
 "TencentEdgeOne/edgeone-pages-mcp" -> "Azure-Samples/azure-postgresql-mcp"
+"idosal/git-mcp" -> "CopilotKit/open-mcp-client" ["e"=1]
+"idosal/git-mcp" -> "f/mcptools" ["e"=1]
+"browser-use/macOS-use" -> "Saik0s/mcp-browser-use" ["e"=1]
+"signerlabs/Klee" -> "OpenAgentPlatform/Dive" ["e"=1]
+"ibelick/prompt-kit" -> "ChatTeach/Awesome-AI-Agents" ["e"=1]
 "f/mcptools" -> "unbody-io/unbody"
 "f/mcptools" -> "jasonppy/VoiceStar"
 "f/mcptools" -> "letta-ai/agent-file"
@@ -484,6 +589,8 @@ digraph G {
 "f/mcptools" -> "Vexa-ai/vexa" ["e"=1]
 "f/mcptools" -> "attentionmech/mav" ["e"=1]
 "f/mcptools" -> "langwatch/scenario" ["e"=1]
+"ibelick/zola" -> "Nutlope/self.so" ["e"=1]
+"makenotion/notion-mcp-server" -> "suekou/mcp-notion-server" ["e"=1]
 "tavily-ai/tavily-mcp" -> "DaInfernalCoder/perplexity-mcp" ["e"=1]
 "tavily-ai/tavily-mcp" -> "fatwang2/search1api-mcp"
 "tavily-ai/tavily-mcp" -> "tavily-ai/tavily-python"
@@ -492,6 +599,13 @@ digraph G {
 "tavily-ai/tavily-mcp" -> "Toolbase-AI/toolbase"
 "tavily-ai/tavily-mcp" -> "zcaceres/fetch-mcp"
 "tavily-ai/tavily-mcp" -> "ZubeidHendricks/youtube-mcp-server"
+"ppl-ai/modelcontextprotocol" -> "qdrant/mcp-server-qdrant" ["e"=1]
+"ppl-ai/modelcontextprotocol" -> "tavily-ai/tavily-mcp" ["e"=1]
+"ppl-ai/modelcontextprotocol" -> "smithery-ai/mcp-obsidian" ["e"=1]
+"ppl-ai/modelcontextprotocol" -> "Saik0s/mcp-browser-use" ["e"=1]
+"ppl-ai/modelcontextprotocol" -> "ckreiling/mcp-server-docker" ["e"=1]
+"21st-dev/magic-mcp" -> "CopilotKit/open-mcp-client" ["e"=1]
+"21st-dev/magic-mcp" -> "anaisbetts/mcp-installer" ["e"=1]
 "patruff/ollama-mcp-bridge" -> "bartolli/mcp-llm-bridge"
 "patruff/ollama-mcp-bridge" -> "chrishayuk/mcp-cli"
 "patruff/ollama-mcp-bridge" -> "SecretiveShell/MCP-Bridge"
@@ -504,6 +618,8 @@ digraph G {
 "patruff/ollama-mcp-bridge" -> "OpenAgentPlatform/Dive"
 "patruff/ollama-mcp-bridge" -> "zcaceres/markdownify-mcp" ["e"=1]
 "patruff/ollama-mcp-bridge" -> "NightTrek/Ollama-mcp"
+"aaddrick/claude-desktop-debian" -> "SecretiveShell/MCP-Bridge" ["e"=1]
+"aaddrick/claude-desktop-debian" -> "chrishayuk/mcp-cli" ["e"=1]
 "jasonppy/VoiceStar" -> "unbody-io/unbody"
 "jasonppy/VoiceStar" -> "gwh22/UniVoice"
 "jasonppy/VoiceStar" -> "f/mcptools"
@@ -553,6 +669,28 @@ digraph G {
 "punkpeye/fastmcp" -> "CopilotKit/open-mcp-client"
 "punkpeye/fastmcp" -> "punkpeye/awesome-mcp-clients"
 "punkpeye/fastmcp" -> "punkpeye/mcp-proxy"
+"jlandure/alpine-chrome" -> "bytebot-ai/bytebot" ["e"=1]
+"langmanus/langmanus-web" -> "CopilotKit/open-mcp-client" ["e"=1]
+"ezyang/codemcp" -> "sparfenyuk/mcp-proxy" ["e"=1]
+"ezyang/codemcp" -> "SecretiveShell/MCP-Bridge" ["e"=1]
+"srbhptl39/MCP-SuperAssistant" -> "OpenAgentPlatform/Dive" ["e"=1]
+"zcaceres/markdownify-mcp" -> "reading-plus-ai/mcp-server-data-exploration" ["e"=1]
+"zcaceres/markdownify-mcp" -> "basicmachines-co/basic-memory" ["e"=1]
+"zcaceres/markdownify-mcp" -> "blazickjp/arxiv-mcp-server" ["e"=1]
+"zcaceres/markdownify-mcp" -> "haris-musa/excel-mcp-server" ["e"=1]
+"zcaceres/markdownify-mcp" -> "vivekVells/mcp-pandoc" ["e"=1]
+"zcaceres/markdownify-mcp" -> "zcaceres/fetch-mcp" ["e"=1]
+"zcaceres/markdownify-mcp" -> "pskill9/website-downloader" ["e"=1]
+"zcaceres/markdownify-mcp" -> "smithery-ai/mcp-obsidian" ["e"=1]
+"fagenorn/handcrafted-persona-engine" -> "OpenAgentPlatform/Dive" ["e"=1]
+"alexander-zuev/supabase-mcp-server" -> "ckreiling/mcp-server-docker" ["e"=1]
+"alexander-zuev/supabase-mcp-server" -> "QuantGeekDev/docker-mcp" ["e"=1]
+"alexander-zuev/supabase-mcp-server" -> "graphlit/graphlit-mcp-server" ["e"=1]
+"snagasuri/deebo-prototype" -> "Jacck/mcp-reasoner" ["e"=1]
+"snagasuri/deebo-prototype" -> "adhikasp/mcp-git-ingest" ["e"=1]
+"elevenlabs/elevenlabs-mcp" -> "ckreiling/mcp-server-docker" ["e"=1]
+"elevenlabs/elevenlabs-mcp" -> "MiniMax-AI/MiniMax-MCP" ["e"=1]
+"elevenlabs/elevenlabs-mcp" -> "basicmachines-co/basic-memory" ["e"=1]
 "StevenStavrakis/obsidian-mcp" -> "smithery-ai/mcp-obsidian"
 "StevenStavrakis/obsidian-mcp" -> "MarkusPfundstein/mcp-obsidian"
 "StevenStavrakis/obsidian-mcp" -> "cyanheads/obsidian-mcp-server"
@@ -562,6 +700,8 @@ digraph G {
 "StevenStavrakis/obsidian-mcp" -> "GongRzhe/Gmail-MCP-Server"
 "StevenStavrakis/obsidian-mcp" -> "vivekVells/mcp-pandoc"
 "StevenStavrakis/obsidian-mcp" -> "adityak74/mcp-scholarly"
+"ThinkInAIXYZ/deepchat" -> "nanbingxyz/5ire" ["e"=1]
+"ThinkInAIXYZ/deepchat" -> "daodao97/chatmcp" ["e"=1]
 "supercorp-ai/supergateway" -> "sparfenyuk/mcp-proxy"
 "supercorp-ai/supergateway" -> "wong2/mcp-cli"
 "supercorp-ai/supergateway" -> "acehoss/mcp-gateway"
@@ -577,7 +717,14 @@ digraph G {
 "supercorp-ai/supergateway" -> "punkpeye/mcp-proxy"
 "supercorp-ai/supergateway" -> "chrishayuk/mcp-cli"
 "supercorp-ai/supergateway" -> "EvalsOne/MCP-connect"
+"cyberagiinc/DevDocs" -> "basicmachines-co/basic-memory" ["e"=1]
+"cyberagiinc/DevDocs" -> "nanbingxyz/5ire" ["e"=1]
 "FreePeak/db-mcp-server" -> "FreePeak/cortex"
+"Dicklesworthstone/your-source-to-prompt.html" -> "farshed/sage" ["e"=1]
+"Flux159/mcp-server-kubernetes" -> "ckreiling/mcp-server-docker" ["e"=1]
+"AgentDeskAI/browser-tools-mcp" -> "modelcontextprotocol/inspector" ["e"=1]
+"pogjester/company-research-agent" -> "haris-musa/excel-mcp-server" ["e"=1]
+"pogjester/company-research-agent" -> "tavily-ai/tavily-mcp" ["e"=1]
 "recursechat/mcp-server-apple-shortcuts" -> "pskill9/website-downloader"
 "zcaceres/fetch-mcp" -> "vivekVells/mcp-pandoc"
 "zcaceres/fetch-mcp" -> "Automata-Labs-team/code-sandbox-mcp"
@@ -602,10 +749,12 @@ digraph G {
 "nspady/google-calendar-mcp" -> "GongRzhe/Gmail-MCP-Server"
 "nspady/google-calendar-mcp" -> "v-3/google-calendar"
 "nspady/google-calendar-mcp" -> "MarkusPfundstein/mcp-gsuite"
+"belastrittmatter/Framely" -> "steel-dev/surf.new" ["e"=1]
 "luohy15/y-gui" -> "luohy15/y-cli"
 "cognitivecomputations/dolphin-mcp" -> "adhikasp/mcp-client-cli"
 "cognitivecomputations/dolphin-mcp" -> "Doriandarko/RAT-retrieval-augmented-thinking" ["e"=1]
 "cognitivecomputations/dolphin-mcp" -> "3choff/mcp-chatbot"
+"BrowserMCP/mcp" -> "OpenAgentPlatform/Dive" ["e"=1]
 "sparfenyuk/mcp-proxy" -> "supercorp-ai/supergateway"
 "sparfenyuk/mcp-proxy" -> "EvalsOne/MCP-connect"
 "sparfenyuk/mcp-proxy" -> "janwilmake/openapi-mcp-server"
@@ -637,6 +786,9 @@ digraph G {
 "haris-musa/excel-mcp-server" -> "mark3labs/mcp-filesystem-server"
 "haris-musa/excel-mcp-server" -> "anaisbetts/mcp-installer"
 "ssut/Remote-MCP" -> "EvalsOne/MCP-connect"
+"BigSweetPotatoStudio/HyperChat" -> "daodao97/chatmcp" ["e"=1]
+"BigSweetPotatoStudio/HyperChat" -> "SecretiveShell/MCP-Bridge" ["e"=1]
+"BigSweetPotatoStudio/HyperChat" -> "BigUncle/MCP-Server-Unified-Deployment" ["e"=1]
 "CopilotKit/open-mcp-client" -> "daodao97/chatmcp"
 "CopilotKit/open-mcp-client" -> "modelcontextprotocol/inspector"
 "CopilotKit/open-mcp-client" -> "punkpeye/awesome-mcp-clients"
@@ -654,6 +806,12 @@ digraph G {
 "CopilotKit/open-mcp-client" -> "langchain-ai/agent-chat-ui" ["e"=1]
 "adityak74/mcp-scholarly" -> "vivekVells/mcp-pandoc"
 "adityak74/mcp-scholarly" -> "openags/paper-search-mcp"
+"nickbaumann98/cline_docs" -> "cyanheads/atlas-mcp-server" ["e"=1]
+"metorial/mcp-containers" -> "TBXark/mcp-proxy" ["e"=1]
+"metorial/mcp-containers" -> "FradSer/mcp-server-mas-sequential-thinking" ["e"=1]
+"badboysm890/ClaraVerse" -> "OpenAgentPlatform/Dive" ["e"=1]
+"syedazharmbnr1/claude-chatgpt-mcp" -> "basicmachines-co/basic-memory" ["e"=1]
+"syedazharmbnr1/claude-chatgpt-mcp" -> "SimonB97/win-cli-mcp-server" ["e"=1]
 "open-webui/mcpo" -> "open-webui/openapi-servers"
 "open-webui/mcpo" -> "open-webui/pipelines"
 "open-webui/mcpo" -> "SecretiveShell/MCP-Bridge"
@@ -707,7 +865,10 @@ digraph G {
 "modelcontextprotocol/quickstart-resources" -> "modelcontextprotocol/create-typescript-server"
 "modelcontextprotocol/quickstart-resources" -> "modelcontextprotocol/.github"
 "modelcontextprotocol/quickstart-resources" -> "emarco177/mcp-crash-course"
+"esxr/langgraph-mcp" -> "janwilmake/openapi-mcp-server" ["e"=1]
+"Lex-au/Orpheus-FastAPI" -> "open-webui/openapi-servers" ["e"=1]
 "negokaz/excel-mcp-server" -> "haris-musa/excel-mcp-server"
+"MobinX/awesome-mcp-list" -> "OpenAgentPlatform/Dive" ["e"=1]
 "metatool-ai/metatool-app" -> "metatool-ai/mcp-server-metamcp"
 "metatool-ai/metatool-app" -> "wegotdocs/open-mcp"
 "metatool-ai/metatool-app" -> "SecretiveShell/MCP-Bridge"
@@ -765,6 +926,12 @@ digraph G {
 "graphlit/graphlit-mcp-server" -> "adhikasp/mcp-git-ingest"
 "graphlit/graphlit-mcp-server" -> "co-browser/browser-use-mcp-server"
 "graphlit/graphlit-mcp-server" -> "comet-ml/opik-mcp"
+"leonardsellem/n8n-mcp-server" -> "ZubeidHendricks/youtube-mcp-server" ["e"=1]
+"leonardsellem/n8n-mcp-server" -> "vivekVells/mcp-pandoc" ["e"=1]
+"leonardsellem/n8n-mcp-server" -> "ckreiling/mcp-server-docker" ["e"=1]
+"jae-jae/fetcher-mcp" -> "basicmachines-co/basic-memory" ["e"=1]
+"grafana/mcp-grafana" -> "mark3labs/mcp-filesystem-server" ["e"=1]
+"grafana/mcp-grafana" -> "mark3labs/mcphost" ["e"=1]
 "steel-dev/surf.new" -> "steel-dev/steel-mcp-server"
 "steel-dev/surf.new" -> "ChatTeach/Awesome-AI-Agents"
 "steel-dev/surf.new" -> "wegotdocs/open-mcp"
@@ -784,13 +951,20 @@ digraph G {
 "adhikasp/mcp-git-ingest" -> "cyberchitta/llm-context.py"
 "adhikasp/mcp-git-ingest" -> "graphlit/graphlit-mcp-server"
 "adhikasp/mcp-git-ingest" -> "hannesrudolph/mcp-ragdocs"
+"ThinkInAIXYZ/go-mcp" -> "mark3labs/mcphost" ["e"=1]
+"mario-andreschak/FLUJO" -> "metatool-ai/metatool-app" ["e"=1]
+"mario-andreschak/FLUJO" -> "OpenAgentPlatform/Dive" ["e"=1]
+"mario-andreschak/FLUJO" -> "Ejb503/multimodal-mcp-client" ["e"=1]
+"mario-andreschak/FLUJO" -> "Toolbase-AI/toolbase" ["e"=1]
 "open-strategy-partners/osp_marketing_tools" -> "YuChenSSR/mindmap-mcp-server"
 "Ejb503/multimodal-mcp-client" -> "cyanheads/atlas-mcp-server"
 "MladenSU/cli-mcp-server" -> "g0t4/mcp-server-commands"
 "MladenSU/cli-mcp-server" -> "tumf/mcp-shell-server"
 "runekaagaard/mcp-alchemy" -> "TheRaLabs/legion-mcp"
 "pskill9/web-search" -> "pskill9/website-downloader"
+"apify/actors-mcp-server" -> "pskill9/website-downloader" ["e"=1]
 "openags/paper-search-mcp" -> "JackKuo666/PubMed-MCP-Server"
+"automation-ai-labs/mcp-link" -> "YuChenSSR/mindmap-mcp-server" ["e"=1]
 "ZubeidHendricks/youtube-mcp-server" -> "vidhupv/x-mcp"
 "ZubeidHendricks/youtube-mcp-server" -> "carterlasalle/mac_messages_mcp"
 "ZubeidHendricks/youtube-mcp-server" -> "v-3/google-calendar"
@@ -799,11 +973,13 @@ digraph G {
 "wegotdocs/open-mcp" -> "ChatTeach/Awesome-AI-Agents"
 "wegotdocs/open-mcp" -> "metatool-ai/metatool-app"
 "wegotdocs/open-mcp" -> "Nutlope/deep-research"
+"philschmid/gemini-samples" -> "datalayer/jupyter-mcp-server" ["e"=1]
 "doobidoo/mcp-memory-service" -> "shaneholloman/mcp-knowledge-graph"
 "YuChenSSR/mindmap-mcp-server" -> "vivekVells/mcp-pandoc"
 "YuChenSSR/mindmap-mcp-server" -> "pskill9/website-downloader"
 "YuChenSSR/mindmap-mcp-server" -> "Jktfe/serveMyAPI"
 "chroma-core/chroma-mcp" -> "bazinga012/mcp_code_executor"
+"kleneway/awesome-cursor-mpc-server" -> "vivekVells/mcp-pandoc" ["e"=1]
 "jasonjmcghee/claude-debugs-for-you" -> "lamemind/mcp-server-multiverse"
 "jasonjmcghee/claude-debugs-for-you" -> "SDGLBL/mcp-claude-code"
 "jasonjmcghee/claude-debugs-for-you" -> "jasonjmcghee/WebMCP"
@@ -840,6 +1016,7 @@ digraph G {
 "JetBrains/mcp-jetbrains" -> "modelcontextprotocol/kotlin-sdk" ["e"=1]
 "JetBrains/mcp-jetbrains" -> "anaisbetts/mcp-installer"
 "JetBrains/mcp-jetbrains" -> "SimonB97/win-cli-mcp-server"
+"mcp-ecosystem/mcp-gateway" -> "TBXark/mcp-proxy" ["e"=1]
 "carterlasalle/mac_messages_mcp" -> "hannesrudolph/imessage-query-fastmcp-mcp-server"
 "TBXark/mcp-proxy" -> "BigUncle/MCP-Server-Unified-Deployment"
 "v-3/discordmcp" -> "AVIMBU/slack-mcp-server"
@@ -858,7 +1035,9 @@ digraph G {
 "vivekVells/mcp-pandoc" -> "ZilongXue/claude-post"
 "SDGLBL/mcp-claude-code" -> "vivekVells/mcp-pandoc"
 "FradSer/mcp-server-mas-sequential-thinking" -> "Leghis/Smart-Thinking"
+"atineiatte/deep-research-at-home" -> "open-webui/openapi-servers" ["e"=1]
 "EvalsOne/MCP-connect" -> "ssut/Remote-MCP"
+"Michaelzag/RooCode-Tips-Tricks" -> "hannesrudolph/mcp-ragdocs" ["e"=1]
 "OpenAgentPlatform/dive-mcp-host" -> "Funmula-Corp/BigGo-MCP-Server"
 "sirmews/mcp-pinecone" -> "okooo5km/memory-mcp-server"
 "n1kozor/OpenWebUISimpleDesktop" -> "reecelikesramen/open-webui-desktop"
@@ -900,109 +1079,147 @@ digraph G {
 "open-webui/bot" -> "open-webui/desktop"
 "taylorwilsdon/open-webui-tools" -> "open-webui/scripts"
 "open-webui/scripts" -> "taylorwilsdon/open-webui-tools"
+"k8up-io/k8up" ["l"="7.554,-9.272", "c"=14]
 "nextcloud/helm" ["l"="40.892,3.113"]
 "immich-app/immich-charts" ["l"="40.849,3.137"]
-"k8up-io/k8up" ["l"="7.554,-9.272"]
 "jellyfin/jellyfin-helm" ["l"="40.858,3.11"]
-"nextcloud/notify_push" ["l"="11.845,-12.246"]
-"democratic-csi/democratic-csi" ["l"="9.309,-12.22"]
+"nextcloud/notify_push" ["l"="11.845,-12.246", "c"=705]
+"democratic-csi/democratic-csi" ["l"="9.309,-12.22", "c"=1114]
 "p80n/photoprism-helm" ["l"="40.867,3.089"]
 "open-webui/helm-charts" ["l"="41,3.106"]
+"searxng/searxng-docker" ["l"="-53.468,11.014", "c"=710]
+"open-webui/pipelines" ["l"="41.081,3.103"]
+"qdrant/qdrant-client" ["l"="40.828,1.128", "c"=7]
+"qdrant/mcp-server-qdrant" ["l"="41.411,3.127"]
+"coddingtonbear/obsidian-local-rest-api" ["l"="-35.263,17.219", "c"=80]
+"MarkusPfundstein/mcp-obsidian" ["l"="41.408,3.072"]
+"smithery-ai/mcp-obsidian" ["l"="41.439,3.042"]
+"mariocandela/beelzebub" ["l"="-41.944,-33.318", "c"=79]
+"f/mcptools" ["l"="41.113,3.005"]
+"SynologyOpenSource/synology-csi" ["l"="8.183,-9.198", "c"=14]
+"otwld/ollama-helm" ["l"="40.954,3.127"]
+"stravo1/obsidian-gdrive-sync" ["l"="43.529,15.717", "c"=473]
+"different-ai/note-companion" ["l"="-35.167,17.127", "c"=80]
+"win4r/AISuperDomain" ["l"="45.588,0.498", "c"=99]
+"open-webui/mcpo" ["l"="41.14,3.069"]
+"Mintplex-Labs/vector-admin" ["l"="40.939,0.523", "c"=7]
+"szczyglis-dev/py-gpt" ["l"="40.003,-1.888", "c"=1006]
+"nbonamy/witsy" ["l"="41.198,3.219"]
+"weaviate/recipes" ["l"="41.381,0.736", "c"=7]
+"weaviate/mcp-server-weaviate" ["l"="41.421,3.203"]
 "tavily-ai/tavily-python" ["l"="41.577,2.857"]
 "tavily-ai/tavily-mcp" ["l"="41.527,2.912"]
 "tavily-ai/tavily-js" ["l"="41.601,2.827"]
-"alonlavian/RAGent" ["l"="41.555,0.435"]
+"alonlavian/RAGent" ["l"="41.555,0.435", "c"=7]
+"Woolverine94/biniou" ["l"="42.879,1.708", "c"=952]
+"EtiennePerot/safe-code-execution" ["l"="41.041,3.113"]
 "amidabuddha/console-chat-gpt" ["l"="41.276,3.015"]
 "3choff/mcp-chatbot" ["l"="41.276,3.036"]
+"refly-ai/refly" ["l"="41.277,-0.057", "c"=7]
+"nanbingxyz/5ire" ["l"="41.191,3.176"]
+"tinyfish-io/agentql" ["l"="41.516,0.32", "c"=7]
+"supercorp-ai/superinterface" ["l"="41.31,3.242"]
 "open-webui/docs" ["l"="41.051,3.076"]
 "open-webui/extension" ["l"="41.031,3.075"]
-"open-webui/pipelines" ["l"="41.081,3.103"]
 "open-webui/openapi-servers" ["l"="41.09,3.083"]
 "open-webui/bot" ["l"="41.035,3.09"]
 "open-webui/desktop" ["l"="41.049,3.094"]
 "MartianInGreen/OpenWebUI-Tools" ["l"="41.014,3.089"]
 "open-webui/cookbook" ["l"="41.017,3.101"]
 "Haervwe/open-webui-tools" ["l"="41.068,3.062"]
-"VariantConst/OpenWebUI-Monitor" ["l"="45.647,0.498"]
-"EtiennePerot/safe-code-execution" ["l"="41.041,3.113"]
-"open-webui/mcpo" ["l"="41.14,3.069"]
+"VariantConst/OpenWebUI-Monitor" ["l"="45.647,0.498", "c"=99]
 "open-webui/llama-cpp-runner" ["l"="41.018,3.056"]
 "atgehrhardt/Cerebro-OpenWebUI-Package-Manager" ["l"="41.015,3.076"]
-"nanbingxyz/5ire" ["l"="41.191,3.176"]
+"neo4j/neo4j-graphrag-python" ["l"="41.408,0.696", "c"=7]
+"neo4j-contrib/mcp-neo4j" ["l"="41.388,3.137"]
 "daodao97/chatmcp" ["l"="41.228,3.164"]
 "punkpeye/awesome-mcp-clients" ["l"="41.248,3.14"]
-"lastmile-ai/mcp-agent" ["l"="41.276,-0.004"]
-"ThinkInAIXYZ/deepchat" ["l"="41.211,-0.299"]
-"refly-ai/refly" ["l"="41.277,-0.057"]
+"lastmile-ai/mcp-agent" ["l"="41.276,-0.004", "c"=7]
+"ThinkInAIXYZ/deepchat" ["l"="41.211,-0.299", "c"=7]
 "CopilotKit/open-mcp-client" ["l"="41.208,3.14"]
-"nbonamy/witsy" ["l"="41.198,3.219"]
-"NitroRCr/AIaW" ["l"="45.671,0.511"]
-"LaurieWired/GhidraMCP" ["l"="-42.76,-36.862"]
+"NitroRCr/AIaW" ["l"="45.671,0.511", "c"=99]
+"LaurieWired/GhidraMCP" ["l"="-42.76,-36.862", "c"=306]
 "modelcontextprotocol/inspector" ["l"="41.242,3.11"]
-"jlowin/fastmcp" ["l"="41.177,-0.054"]
+"jlowin/fastmcp" ["l"="41.177,-0.054", "c"=7]
 "evalstate/fast-agent" ["l"="41.21,3.116"]
 "OpenAgentPlatform/Dive" ["l"="41.235,3.193"]
-"CherryHQ/cherry-studio" ["l"="40.815,-0.367"]
+"CherryHQ/cherry-studio" ["l"="40.815,-0.367", "c"=7]
 "nanbingxyz/mcpsvr" ["l"="41.15,3.225"]
+"firebase/genkit" ["l"="4.085,-9.611", "c"=0]
+"ggozad/oterm" ["l"="41.66,0.099", "c"=7]
+"patruff/ollama-mcp-bridge" ["l"="41.279,3.179"]
+"chrishayuk/mcp-cli" ["l"="41.288,3.13"]
+"adhikasp/mcp-client-cli" ["l"="41.289,3.082"]
+"mythrantic/ollama-docker" ["l"="41.517,0.034", "c"=7]
 "trendy-design/llmchat" ["l"="41.187,3.312"]
-"ibelick/zola" ["l"="-2.96,-31.281"]
+"ibelick/zola" ["l"="-2.96,-31.281", "c"=423]
 "ask0ldd/OsspitaUI" ["l"="41.161,3.352"]
 "MindWorkAI/AI-Studio" ["l"="41.185,3.376"]
-"datvodinh/rag-chatbot" ["l"="42.054,0.058"]
-"echohive42/AI-reads-books-page-by-page" ["l"="41.425,0.189"]
+"datvodinh/rag-chatbot" ["l"="42.054,0.058", "c"=7]
+"LibreChat-AI/librechat.ai" ["l"="15.659,-11.065", "c"=198]
+"acehoss/mcp-gateway" ["l"="41.227,3.079"]
+"matatonic/openedai-speech" ["l"="38.659,1.629", "c"=54]
+"echohive42/AI-reads-books-page-by-page" ["l"="41.425,0.189", "c"=7]
 "farshed/sage" ["l"="41.171,3.276"]
-"13point5/gemini-cursor" ["l"="41.577,0.152"]
-"trycua/acu" ["l"="41.438,0.199"]
+"13point5/gemini-cursor" ["l"="41.577,0.152", "c"=7]
+"trycua/acu" ["l"="41.438,0.199", "c"=7]
 "groq/groq-desktop-beta" ["l"="41.134,3.291"]
 "SecretiveShell/MCP-Bridge" ["l"="41.263,3.097"]
-"theJayTea/WritingTools" ["l"="42.777,1.679"]
-"imanoop7/Ollama-OCR" ["l"="41.431,0.247"]
-"e2b-dev/open-computer-use" ["l"="41.428,0.224"]
-"otwld/ollama-helm" ["l"="40.954,3.127"]
+"theJayTea/WritingTools" ["l"="42.777,1.679", "c"=952]
+"imanoop7/Ollama-OCR" ["l"="41.431,0.247", "c"=7]
+"e2b-dev/open-computer-use" ["l"="41.428,0.224", "c"=7]
 "open-webui/scripts" ["l"="40.994,3.079"]
 "tjbck/learn" ["l"="41.013,3.128"]
 "open-webui/assistant" ["l"="40.994,3.123"]
-"supercorp-ai/superinterface" ["l"="41.31,3.242"]
 "supercorp-ai/supercompat" ["l"="41.309,3.294"]
 "supercorp-ai/superargs" ["l"="41.323,3.277"]
 "cyberchitta/llm-context.py" ["l"="41.39,3.055"]
 "vivekVells/mcp-pandoc" ["l"="41.452,3.058"]
 "cyanheads/atlas-mcp-server" ["l"="41.375,3.038"]
 "SDGLBL/mcp-claude-code" ["l"="41.438,3.022"]
+"chatmcp/mcp-server-chatsum" ["l"="45.516,-0.527", "c"=222]
 "smithery-ai/sdk" ["l"="41.382,3.232"]
 "smithery-ai/cli" ["l"="41.394,3.28"]
 "letta-ai/letta-node" ["l"="41.38,3.26"]
+"modelcontextprotocol/typescript-sdk" ["l"="41.004,0.109", "c"=7]
+"punkpeye/fastmcp" ["l"="41.316,3.131"]
+"togethercomputer/together-cookbook" ["l"="41.392,0.581", "c"=7]
+"togethercomputer/open_deep_research" ["l"="41.234,2.779"]
 "sooperset/mcp-atlassian" ["l"="41.35,3.053"]
-"GLips/Figma-Context-MCP" ["l"="41.231,-0.228"]
+"GLips/Figma-Context-MCP" ["l"="41.231,-0.228", "c"=7]
 "janwilmake/openapi-mcp-server" ["l"="41.36,3.08"]
 "sooperset/mcp-client-slackbot" ["l"="41.334,2.997"]
-"zcaceres/markdownify-mcp" ["l"="41.51,-0.024"]
+"zcaceres/markdownify-mcp" ["l"="41.51,-0.024", "c"=7]
 "GongRzhe/Gmail-MCP-Server" ["l"="41.465,3.049"]
-"appcypher/awesome-mcp-servers" ["l"="41.371,-0.179"]
+"appcypher/awesome-mcp-servers" ["l"="41.371,-0.179", "c"=7]
 "ckreiling/mcp-server-docker" ["l"="41.472,3.021"]
-"smithery-ai/mcp-obsidian" ["l"="41.439,3.042"]
 "JetBrains/mcp-jetbrains" ["l"="41.373,3.001"]
 "supercorp-ai/supergateway" ["l"="41.289,3.099"]
-"punkpeye/fastmcp" ["l"="41.316,3.131"]
-"MarkusPfundstein/mcp-obsidian" ["l"="41.408,3.072"]
-"modelcontextprotocol/typescript-sdk" ["l"="41.004,0.109"]
-"modelcontextprotocol/modelcontextprotocol" ["l"="41.16,-0.149"]
-"modelcontextprotocol/python-sdk" ["l"="41.051,0.055"]
-"langchain-ai/langchain-mcp-adapters" ["l"="41.412,0.259"]
+"modelcontextprotocol/modelcontextprotocol" ["l"="41.16,-0.149", "c"=7]
+"modelcontextprotocol/python-sdk" ["l"="41.051,0.055", "c"=7]
+"langchain-ai/langchain-mcp-adapters" ["l"="41.412,0.259", "c"=7]
 "anaisbetts/mcp-installer" ["l"="41.381,3.09"]
 "sparfenyuk/mcp-proxy" ["l"="41.252,3.065"]
-"mendableai/firecrawl-mcp-server" ["l"="41.395,-0.13"]
+"mendableai/firecrawl-mcp-server" ["l"="41.395,-0.13", "c"=7]
 "modelcontextprotocol/docs" ["l"="41.124,3.191"]
+"browserbase/mcp-server-browserbase" ["l"="41.428,-0.094", "c"=7]
+"Saik0s/mcp-browser-use" ["l"="41.394,2.926"]
+"co-browser/browser-use-mcp-server" ["l"="41.424,2.927"]
+"graphlit/graphlit-mcp-server" ["l"="41.411,2.96"]
+"mark3labs/mcp-go" ["l"="41.297,-0.288", "c"=7]
+"mark3labs/mcphost" ["l"="41.279,3.152"]
+"wonderwhy-er/DesktopCommanderMCP" ["l"="41.354,-0.094", "c"=7]
+"katanemo/archgw" ["l"="41.205,0.36", "c"=7]
 "basicmachines-co/basic-memory" ["l"="41.502,3.007"]
 "StevenStavrakis/obsidian-mcp" ["l"="41.455,3.029"]
 "doobidoo/mcp-memory-service" ["l"="41.609,2.953"]
 "evalstate/mcp-hfspace" ["l"="41.426,3.062"]
-"jae-jae/fetcher-mcp" ["l"="45.782,0.461"]
+"jae-jae/fetcher-mcp" ["l"="45.782,0.461", "c"=99]
 "reading-plus-ai/mcp-server-data-exploration" ["l"="41.493,3.076"]
-"leonardsellem/n8n-mcp-server" ["l"="41.638,-0.257"]
+"leonardsellem/n8n-mcp-server" ["l"="41.638,-0.257", "c"=7]
 "FradSer/mcp-server-mas-sequential-thinking" ["l"="41.564,2.951"]
-"syedazharmbnr1/claude-chatgpt-mcp" ["l"="41.55,-0.082"]
-"jezweb/roo-commander" ["l"="42.075,2.209"]
+"syedazharmbnr1/claude-chatgpt-mcp" ["l"="41.55,-0.082", "c"=7]
+"jezweb/roo-commander" ["l"="42.075,2.209", "c"=1083]
 "adhikasp/mcp-twikit" ["l"="41.547,2.973"]
 "SimonB97/win-cli-mcp-server" ["l"="41.453,3.084"]
 "pyroprompts/any-chat-completions-mcp" ["l"="41.422,3.036"]
@@ -1010,8 +1227,7 @@ digraph G {
 "MladenSU/cli-mcp-server" ["l"="41.483,3.169"]
 "GongRzhe/terminal-controller-mcp" ["l"="41.497,3.125"]
 "pskill9/website-downloader" ["l"="41.477,3.072"]
-"adhikasp/mcp-client-cli" ["l"="41.289,3.082"]
-"chrishayuk/mcp-cli" ["l"="41.288,3.13"]
+"travisvn/openai-edge-tts" ["l"="38.509,1.614", "c"=54]
 "cognitivecomputations/dolphin-mcp" ["l"="41.289,3.059"]
 "luohy15/y-cli" ["l"="41.288,2.975"]
 "wong2/mcp-cli" ["l"="41.319,3.099"]
@@ -1020,45 +1236,48 @@ digraph G {
 "EvalsOne/MCP-connect" ["l"="41.255,3.045"]
 "Jeamee/MCPHub-Desktop" ["l"="41.347,3.101"]
 "zueai/mcp-manager" ["l"="41.414,3.107"]
+"av/harbor" ["l"="42.789,1.712", "c"=952]
 "bartolli/mcp-llm-bridge" ["l"="41.299,3.162"]
 "metatool-ai/metatool-app" ["l"="41.263,2.977"]
-"acehoss/mcp-gateway" ["l"="41.227,3.079"]
 "lightconetech/mcp-gateway" ["l"="41.227,3.06"]
 "hannesrudolph/mcp-ragdocs" ["l"="41.405,3.092"]
 "wong2/awesome-mcp-servers" ["l"="41.371,3.111"]
-"chatmcp/mcpso" ["l"="45.349,-0.723"]
+"chatmcp/mcpso" ["l"="45.349,-0.723", "c"=222]
 "mzxrai/mcp-webresearch" ["l"="41.475,3.114"]
 "QuantGeekDev/docker-mcp" ["l"="41.48,3.06"]
 "anaisbetts/mcp-youtube" ["l"="41.428,3.082"]
-"exa-labs/exa-mcp-server" ["l"="41.442,0.01"]
+"exa-labs/exa-mcp-server" ["l"="41.442,0.01", "c"=7]
 "joshrutkowski/applescript-mcp" ["l"="41.373,3.154"]
-"mark3labs/mcphost" ["l"="41.279,3.152"]
-"patruff/ollama-mcp-bridge" ["l"="41.279,3.179"]
-"coddingtonbear/obsidian-local-rest-api" ["l"="-35.263,17.219"]
+"rusiaaman/wcgw" ["l"="42.09,2.331", "c"=1083]
+"Automata-Labs-team/code-sandbox-mcp" ["l"="41.486,2.923"]
+"jasonjmcghee/claude-debugs-for-you" ["l"="41.405,3.014"]
+"recursechat/mcp-server-apple-shortcuts" ["l"="41.528,3.086"]
+"glowingjade/obsidian-smart-composer" ["l"="-35.192,17.132", "c"=80]
+"swark-io/swark" ["l"="41.456,0.235", "c"=7]
+"win4r/GraphRAG4OpenWebUI" ["l"="41.423,0.705", "c"=7]
 "jacksteamdev/obsidian-mcp-tools" ["l"="41.424,2.995"]
 "cyanheads/obsidian-mcp-server" ["l"="41.425,3.015"]
 "suekou/mcp-notion-server" ["l"="41.439,3.121"]
 "MarkusPfundstein/mcp-gsuite" ["l"="41.441,3.094"]
-"qdrant/mcp-server-qdrant" ["l"="41.411,3.127"]
 "wong2/litemcp" ["l"="41.336,3.114"]
+"egoist/chatwise-releases" ["l"="45.619,0.415", "c"=99]
 "ChronulusAI/chronulus-mcp" ["l"="41.554,3.094"]
 "YuChenSSR/mindmap-mcp-server" ["l"="41.514,3.065"]
 "haris-musa/excel-mcp-server" ["l"="41.506,3.099"]
 "reading-plus-ai/mcp-server-deep-research" ["l"="41.551,3.075"]
 "CheMiguel23/MemoryMesh" ["l"="41.526,3.125"]
-"jasonjmcghee/claude-debugs-for-you" ["l"="41.405,3.014"]
-"recursechat/mcp-server-apple-shortcuts" ["l"="41.528,3.086"]
 "sammcj/mcp-package-version" ["l"="41.499,3.056"]
 "modelcontextprotocol/create-python-server" ["l"="41.085,3.209"]
 "modelcontextprotocol/create-typescript-server" ["l"="41.066,3.22"]
 "modelcontextprotocol/quickstart-resources" ["l"="41.089,3.234"]
 "modelcontextprotocol/.github" ["l"="41.106,3.217"]
 "blascerecer/open-webui" ["l"="41.052,3.041"]
+"Nutlope/napkins" ["l"="41.374,0.369", "c"=7]
+"Nutlope/self.so" ["l"="41.102,3.026"]
 "varunneal/spotify-mcp" ["l"="41.479,3"]
 "ZubeidHendricks/youtube-mcp-server" ["l"="41.456,2.99"]
-"Flux159/mcp-server-kubernetes" ["l"="9.706,-11.118"]
+"Flux159/mcp-server-kubernetes" ["l"="9.706,-11.118", "c"=834]
 "DMontgomery40/deepseek-mcp-server" ["l"="41.574,2.987"]
-"Automata-Labs-team/code-sandbox-mcp" ["l"="41.486,2.923"]
 "AI-QL/chat-mcp" ["l"="41.499,2.906"]
 "e2b-dev/mcp-server" ["l"="41.521,2.95"]
 "admica/FileScopeMCP" ["l"="41.446,3.001"]
@@ -1071,183 +1290,201 @@ digraph G {
 "mcp-get/community-servers" ["l"="41.309,3.012"]
 "ssut/Remote-MCP" ["l"="41.256,3.018"]
 "dkmaker/mcp-rest-api" ["l"="41.32,3.028"]
-"rectalogic/langchain-mcp" ["l"="42.224,2.209"]
+"rectalogic/langchain-mcp" ["l"="42.224,2.209", "c"=1083]
 "adamwattis/mcp-proxy-server" ["l"="41.253,2.929"]
 "metatool-ai/mcp-server-metamcp" ["l"="41.249,2.949"]
 "blazickjp/arxiv-mcp-server" ["l"="41.519,3.042"]
 "adityak74/mcp-scholarly" ["l"="41.493,3.031"]
 "andybrandt/mcp-simple-arxiv" ["l"="41.574,3.028"]
 "kaliaboi/mcp-zotero" ["l"="41.605,3.025"]
-"u14app/deep-research" ["l"="45.674,0.566"]
-"HKUDS/Auto-Deep-Research" ["l"="51.129,2.925"]
-"ZongqianLi/ReasonGraph" ["l"="45.54,-0.368"]
+"u14app/deep-research" ["l"="45.674,0.566", "c"=99]
+"HKUDS/Auto-Deep-Research" ["l"="51.129,2.925", "c"=85]
+"ZongqianLi/ReasonGraph" ["l"="45.54,-0.368", "c"=222]
 "ccabanillas/notion-mcp" ["l"="41.455,3.167"]
-"makenotion/notion-mcp-server" ["l"="41.368,-0.15"]
+"makenotion/notion-mcp-server" ["l"="41.368,-0.15", "c"=7]
 "danhilse/notion_mcp" ["l"="41.507,3.162"]
 "v-3/notion-server" ["l"="41.56,3.179"]
 "awkoy/notion-mcp-server" ["l"="41.453,3.195"]
-"ppl-ai/modelcontextprotocol" ["l"="41.463,-0.113"]
+"ppl-ai/modelcontextprotocol" ["l"="41.463,-0.113", "c"=7]
 "kimtaeyoon83/mcp-server-youtube-transcript" ["l"="41.459,3.11"]
 "Automata-Labs-team/MCP-Server-Playwright" ["l"="41.482,3.189"]
 "blackwhite084/playwright-plus-python-mcp" ["l"="41.496,3.229"]
 "g0t4/mcp-server-commands" ["l"="41.504,3.184"]
+"stripe/agent-toolkit" ["l"="41.46,-0.149", "c"=7]
+"FutureClubNL/RAGMeUp" ["l"="41.375,0.546", "c"=7]
+"cloudflare/mcp-server-cloudflare" ["l"="41.411,-0.081", "c"=7]
 "pierrebrunelle/mcp-server-openai" ["l"="41.411,3.05"]
 "tanigami/mcp-server-perplexity" ["l"="41.456,3.144"]
-"matatonic/openedai-speech" ["l"="38.659,1.629"]
-"av/harbor" ["l"="42.789,1.712"]
-"win4r/GraphRAG4OpenWebUI" ["l"="41.423,0.705"]
 "JordanNanos/example-pipelines" ["l"="41.064,3.128"]
-"mintlify/docs" ["l"="-3.241,-30.36"]
-"wonderwhy-er/DesktopCommanderMCP" ["l"="41.354,-0.094"]
+"mintlify/docs" ["l"="-3.241,-30.36", "c"=4]
 "PublikPrinciple/obsidian-mcp-rest" ["l"="41.469,2.975"]
-"neo4j-contrib/mcp-neo4j" ["l"="41.388,3.137"]
+"strowk/mcp-k8s-go" ["l"="9.684,-11.143", "c"=834]
+"mark3labs/mcp-filesystem-server" ["l"="41.434,3.154"]
 "tumf/mcp-shell-server" ["l"="41.504,3.203"]
 "NormVg/kraken" ["l"="41.098,2.781"]
 "shhivv/flowplane" ["l"="41.081,2.764"]
+"robertpiosik/CodeWebChat" ["l"="45.628,-0.33", "c"=222]
 "bazinga012/mcp_code_executor" ["l"="41.482,2.882"]
 "AI-QL/chat-ui" ["l"="41.511,2.864"]
-"mark3labs/mcp-filesystem-server" ["l"="41.434,3.154"]
-"strowk/mcp-k8s-go" ["l"="9.684,-11.143"]
 "qpd-v/mcp-ragdocs" ["l"="41.534,3.155"]
 "qpd-v/mcp-DEEPwebresearch" ["l"="41.533,3.198"]
 "BrainDriveAI/openwebui-pipelines" ["l"="40.981,3.086"]
 "sirmews/mcp-pinecone" ["l"="41.441,3.232"]
-"weaviate/mcp-server-weaviate" ["l"="41.421,3.203"]
 "qdrant/workshop-ultimate-hybrid-search" ["l"="41.414,3.165"]
-"coleam00/mcp-mem0" ["l"="41.503,-0.071"]
+"coleam00/mcp-mem0" ["l"="41.503,-0.071", "c"=7]
+"kiliczsh/mcp-mongo-server" ["l"="-15.518,8.821", "c"=1204]
 "ZilongXue/claude-post" ["l"="41.462,3.075"]
 "zcaceres/gtasks-mcp" ["l"="41.482,3.142"]
 "nspady/google-calendar-mcp" ["l"="41.476,3.089"]
 "vidhupv/x-mcp" ["l"="41.485,2.956"]
-"EnesCinr/twitter-mcp" ["l"="42.412,0.517"]
+"EnesCinr/twitter-mcp" ["l"="42.412,0.517", "c"=7]
 "karaketir16/openwebui-langfuse" ["l"="40.963,3.09"]
 "open-webui/community-platform" ["l"="41,3.06"]
-"Nutlope/self.so" ["l"="41.102,3.026"]
+"LearningCircuit/local-deep-research" ["l"="41.34,0.043", "c"=7]
 "unbody-io/unbody" ["l"="41.086,3.009"]
 "jasonppy/VoiceStar" ["l"="41.073,2.988"]
-"f/mcptools" ["l"="41.113,3.005"]
 "letta-ai/agent-file" ["l"="41.096,2.988"]
-"Nutlope/napkins" ["l"="41.374,0.369"]
-"Nutlope/loras-dev" ["l"="41.46,0.281"]
-"upstash/rag-chat-component" ["l"="23.131,-30.039"]
-"pogjester/company-research-agent" ["l"="45.709,-0.424"]
+"Nutlope/loras-dev" ["l"="41.46,0.281", "c"=7]
+"upstash/rag-chat-component" ["l"="23.131,-30.039", "c"=36]
+"pogjester/company-research-agent" ["l"="45.709,-0.424", "c"=222]
+"martin226/vibe-draw" ["l"="41.415,-0.041", "c"=7]
+"going-doer/Paper2Code" ["l"="41.346,0.262", "c"=7]
+"Dhravya/apple-mcp" ["l"="41.552,-0.025", "c"=7]
+"Doriandarko/RAT-retrieval-augmented-thinking" ["l"="41.45,0.157", "c"=7]
+"oraios/serena" ["l"="42.079,2.299", "c"=1083]
+"convergence-ai/proxy-lite" ["l"="41.463,0.091", "c"=7]
 "FreePeak/db-mcp-server" ["l"="41.724,3.212"]
-"punkpeye/awesome-mcp-servers" ["l"="40.91,-0.237"]
-"mcp-use/mcp-use" ["l"="41.354,0.146"]
-"executeautomation/mcp-playwright" ["l"="41.312,-0.146"]
+"punkpeye/awesome-mcp-servers" ["l"="40.91,-0.237", "c"=7]
+"mcp-use/mcp-use" ["l"="41.354,0.146", "c"=7]
+"executeautomation/mcp-playwright" ["l"="41.312,-0.146", "c"=7]
+"RPG-fan/Cline-Recursive-Chain-of-Thought-System-CRCT-" ["l"="42.095,2.267", "c"=1083]
+"Fosowl/agenticSeek" ["l"="41.361,0.028", "c"=7]
+"nerding-io/n8n-nodes-mcp" ["l"="41.503,-0.115", "c"=7]
+"modelcontextprotocol/java-sdk" ["l"="45.924,2.285", "c"=574]
 "TencentEdgeOne/edgeone-pages-mcp" ["l"="41.391,2.818"]
 "Azure-Samples/azure-postgresql-mcp" ["l"="41.388,2.794"]
-"Vexa-ai/vexa" ["l"="16.6,-10.09"]
-"attentionmech/mav" ["l"="16.646,-10.087"]
-"langwatch/scenario" ["l"="16.684,-10.101"]
-"DaInfernalCoder/perplexity-mcp" ["l"="42.141,2.27"]
+"idosal/git-mcp" ["l"="41.429,-0.006", "c"=7]
+"browser-use/macOS-use" ["l"="41.487,0.094", "c"=7]
+"signerlabs/Klee" ["l"="42.668,1.852", "c"=952]
+"ibelick/prompt-kit" ["l"="-2.995,-31.298", "c"=423]
+"ChatTeach/Awesome-AI-Agents" ["l"="41.232,2.91"]
+"Vexa-ai/vexa" ["l"="16.6,-10.09", "c"=198]
+"attentionmech/mav" ["l"="16.646,-10.087", "c"=198]
+"langwatch/scenario" ["l"="16.684,-10.101", "c"=198]
+"DaInfernalCoder/perplexity-mcp" ["l"="42.141,2.27", "c"=1083]
 "fatwang2/search1api-mcp" ["l"="41.543,2.864"]
 "tavily-ai/tavily-crawl-beta-test" ["l"="41.545,2.891"]
 "Toolbase-AI/toolbase" ["l"="41.572,2.892"]
 "zcaceres/fetch-mcp" ["l"="41.463,2.93"]
+"21st-dev/magic-mcp" ["l"="41.412,-0.157", "c"=7]
 "rawveg/ollama-mcp" ["l"="41.285,3.229"]
-"ggozad/oterm" ["l"="41.66,0.099"]
 "robdodson/ollama-mcp-db" ["l"="41.268,3.222"]
 "NightTrek/Ollama-mcp" ["l"="41.27,3.251"]
+"aaddrick/claude-desktop-debian" ["l"="42.051,2.481", "c"=1083]
 "gwh22/UniVoice" ["l"="41.042,2.961"]
-"BigSweetPotatoStudio/HyperChat" ["l"="45.738,0.52"]
-"chatmcp/mcp-server-chatsum" ["l"="45.516,-0.527"]
-"october-coder/api-check" ["l"="45.633,0.544"]
-"QuantGeekDev/mcp-framework" ["l"="42.307,0.465"]
+"BigSweetPotatoStudio/HyperChat" ["l"="45.738,0.52", "c"=99]
+"october-coder/api-check" ["l"="45.633,0.544", "c"=99]
+"QuantGeekDev/mcp-framework" ["l"="42.307,0.465", "c"=7]
 "zcaceres/easy-mcp" ["l"="41.329,3.208"]
-"cloudflare/mcp-server-cloudflare" ["l"="41.411,-0.081"]
 "punkpeye/mcp-client" ["l"="41.33,3.182"]
 "punkpeye/mcp-proxy" ["l"="41.272,3.075"]
+"jlandure/alpine-chrome" ["l"="3.435,-9.186", "c"=0]
+"bytebot-ai/bytebot" ["l"="41.133,2.806"]
+"langmanus/langmanus-web" ["l"="41.547,-0.108", "c"=7]
+"ezyang/codemcp" ["l"="42.072,2.343", "c"=1083]
+"srbhptl39/MCP-SuperAssistant" ["l"="42.015,2.263", "c"=1083]
+"fagenorn/handcrafted-persona-engine" ["l"="27.92,-21.082", "c"=577]
+"alexander-zuev/supabase-mcp-server" ["l"="41.483,-0.137", "c"=7]
+"snagasuri/deebo-prototype" ["l"="42.066,2.279", "c"=1083]
+"Jacck/mcp-reasoner" ["l"="41.35,2.966"]
+"adhikasp/mcp-git-ingest" ["l"="41.402,3.029"]
+"elevenlabs/elevenlabs-mcp" ["l"="41.435,-0.115", "c"=7]
+"MiniMax-AI/MiniMax-MCP" ["l"="41.394,2.743"]
+"cyberagiinc/DevDocs" ["l"="42.044,2.262", "c"=1083]
 "FreePeak/cortex" ["l"="41.748,3.209"]
-"Saik0s/mcp-browser-use" ["l"="41.394,2.926"]
+"Dicklesworthstone/your-source-to-prompt.html" ["l"="41.528,0.244", "c"=7]
+"AgentDeskAI/browser-tools-mcp" ["l"="41.287,-0.177", "c"=7]
 "tumf/mcp-text-editor" ["l"="41.468,2.869"]
 "delano/postman-mcp-server" ["l"="41.441,2.961"]
-"co-browser/browser-use-mcp-server" ["l"="41.424,2.927"]
-"browserbase/mcp-server-browserbase" ["l"="41.428,-0.094"]
-"browser-use/macOS-use" ["l"="41.487,0.094"]
-"graphlit/graphlit-mcp-server" ["l"="41.411,2.96"]
 "carterlasalle/mac_messages_mcp" ["l"="41.448,2.909"]
 "v-3/google-calendar" ["l"="41.482,3.036"]
+"belastrittmatter/Framely" ["l"="16.491,-10.208", "c"=198]
+"steel-dev/surf.new" ["l"="41.221,2.862"]
 "luohy15/y-gui" ["l"="41.288,2.937"]
-"Doriandarko/RAT-retrieval-augmented-thinking" ["l"="41.45,0.157"]
+"BrowserMCP/mcp" ["l"="41.467,-0.041", "c"=7]
 "TBXark/mcp-proxy" ["l"="41.2,2.987"]
 "sidharthrajaram/mcp-sse" ["l"="41.19,3.022"]
-"chatmcp/mcprouter" ["l"="-42.546,16.219"]
+"chatmcp/mcprouter" ["l"="-42.546,16.219", "c"=1162]
 "boilingdata/mcp-server-and-gw" ["l"="41.219,3.022"]
 "negokaz/excel-mcp-server" ["l"="41.551,3.121"]
-"cr7258/elasticsearch-mcp-server" ["l"="-2.28,8.599"]
-"21st-dev/magic-mcp" ["l"="41.412,-0.157"]
-"langchain-ai/agent-chat-ui" ["l"="41.5,0.362"]
+"cr7258/elasticsearch-mcp-server" ["l"="-2.28,8.599", "c"=1024]
+"BigUncle/MCP-Server-Unified-Deployment" ["l"="41.178,2.958"]
+"langchain-ai/agent-chat-ui" ["l"="41.5,0.362", "c"=7]
 "openags/paper-search-mcp" ["l"="41.551,3.011"]
-"tadata-org/fastapi_mcp" ["l"="41.259,0.079"]
+"nickbaumann98/cline_docs" ["l"="42.093,2.249", "c"=1083]
+"metorial/mcp-containers" ["l"="45.656,-0.303", "c"=222]
+"badboysm890/ClaraVerse" ["l"="42.698,1.804", "c"=952]
+"tadata-org/fastapi_mcp" ["l"="41.259,0.079", "c"=7]
 "cline/mcp-marketplace" ["l"="41.395,3.181"]
-"adhikasp/mcp-git-ingest" ["l"="41.402,3.029"]
 "jasonsum/gmail-mcp-server" ["l"="41.523,3.016"]
-"bytebot-ai/bytebot" ["l"="41.133,2.806"]
 "agentrpc/agentrpc" ["l"="41.188,2.885"]
 "r488it/claude_hands" ["l"="41.126,2.764"]
-"mark3labs/mcp-go" ["l"="41.297,-0.288"]
-"metoro-io/mcp-golang" ["l"="-3.957,24.053"]
-"ThinkInAIXYZ/go-mcp" ["l"="41.283,-0.378"]
-"grafana/mcp-grafana" ["l"="9.747,-11.23"]
+"metoro-io/mcp-golang" ["l"="-3.957,24.053", "c"=827]
+"ThinkInAIXYZ/go-mcp" ["l"="41.283,-0.378", "c"=7]
+"grafana/mcp-grafana" ["l"="9.747,-11.23", "c"=834]
 "emarco177/mcp-crash-course" ["l"="41.069,3.26"]
+"esxr/langgraph-mcp" ["l"="41.526,0.342", "c"=7]
+"Lex-au/Orpheus-FastAPI" ["l"="27.852,-21.114", "c"=577]
+"MobinX/awesome-mcp-list" ["l"="45.677,-0.373", "c"=222]
 "wegotdocs/open-mcp" ["l"="41.248,2.9"]
-"ChatTeach/Awesome-AI-Agents" ["l"="41.232,2.91"]
 "aindreyway/mcp-codex-keeper" ["l"="41.314,2.983"]
 "kazuph/mcp-taskmanager" ["l"="41.225,2.944"]
 "crystaldba/postgres-mcp" ["l"="41.767,3.236"]
 "crystaldba/crystaldba" ["l"="41.791,3.249"]
-"MiniMax-AI/MiniMax-MCP" ["l"="41.394,2.743"]
 "PsychArch/minimax-mcp-tools" ["l"="41.407,2.711"]
 "MiniMax-AI/MiniMax-MCP-JS" ["l"="41.381,2.714"]
-"esxr/langgraph-mcp" ["l"="41.526,0.342"]
 "janwilmake/openapisearch" ["l"="41.353,3.152"]
 "lamemind/mcp-server-multiverse" ["l"="41.365,3.022"]
 "dcolley/swagger-mcp" ["l"="41.34,3.025"]
-"oraios/serena" ["l"="42.079,2.299"]
-"mario-andreschak/FLUJO" ["l"="42.113,2.287"]
-"badboysm890/ClaraVerse" ["l"="42.698,1.804"]
-"LearningCircuit/local-deep-research" ["l"="41.34,0.043"]
-"srbhptl39/MCP-SuperAssistant" ["l"="42.015,2.263"]
-"snagasuri/deebo-prototype" ["l"="42.066,2.279"]
-"rusiaaman/wcgw" ["l"="42.09,2.331"]
-"morphik-org/morphik-core" ["l"="41.377,0.238"]
+"mario-andreschak/FLUJO" ["l"="42.113,2.287", "c"=1083]
+"morphik-org/morphik-core" ["l"="41.377,0.238", "c"=7]
 "OpenAgentPlatform/dive-mcp-host" ["l"="41.231,3.246"]
 "letta-ai/letta-chatbot-example" ["l"="41.078,2.95"]
 "comet-ml/opik-mcp" ["l"="41.39,2.899"]
-"steel-dev/surf.new" ["l"="41.221,2.862"]
 "steel-dev/steel-mcp-server" ["l"="41.205,2.834"]
 "emgeee/mcp-ollama" ["l"="41.269,3.284"]
 "reecelikesramen/open-webui-desktop" ["l"="40.997,3.043"]
 "open-strategy-partners/osp_marketing_tools" ["l"="41.584,3.072"]
 "TheRaLabs/legion-mcp" ["l"="41.694,3.147"]
 "pskill9/web-search" ["l"="41.555,3.052"]
+"apify/actors-mcp-server" ["l"="47.614,21.792", "c"=192]
 "JackKuo666/PubMed-MCP-Server" ["l"="41.584,3.007"]
+"automation-ai-labs/mcp-link" ["l"="46.197,-0.738", "c"=542]
 "Nutlope/deep-research" ["l"="41.242,2.828"]
+"philschmid/gemini-samples" ["l"="41.486,0.34", "c"=7]
+"datalayer/jupyter-mcp-server" ["l"="41.428,2.892"]
 "shaneholloman/mcp-knowledge-graph" ["l"="41.659,2.93"]
 "Jktfe/serveMyAPI" ["l"="41.578,3.053"]
 "chroma-core/chroma-mcp" ["l"="41.493,2.827"]
+"kleneway/awesome-cursor-mpc-server" ["l"="42.192,2.198", "c"=1083]
 "jasonjmcghee/WebMCP" ["l"="41.388,2.973"]
 "taylorwilsdon/llm-context-limits" ["l"="41.098,3.127"]
-"atineiatte/deep-research-at-home" ["l"="42.706,1.76"]
-"Lex-au/Orpheus-FastAPI" ["l"="27.852,-21.114"]
-"datalayer/jupyter-mcp-server" ["l"="41.428,2.892"]
+"atineiatte/deep-research-at-home" ["l"="42.706,1.76", "c"=952]
 "jjsantos01/jupyter-notebook-mcp" ["l"="41.422,2.849"]
 "groq/compound-mcp-server" ["l"="41.11,3.322"]
 "JetBrains/mcp-server-plugin" ["l"="41.351,2.94"]
-"modelcontextprotocol/kotlin-sdk" ["l"="54.6,-14.02"]
+"modelcontextprotocol/kotlin-sdk" ["l"="54.6,-14.02", "c"=25]
+"mcp-ecosystem/mcp-gateway" ["l"="46.265,-0.773", "c"=542]
 "hannesrudolph/imessage-query-fastmcp-mcp-server" ["l"="41.445,2.864"]
-"BigUncle/MCP-Server-Unified-Deployment" ["l"="41.178,2.958"]
 "v-3/discordmcp" ["l"="41.592,3.215"]
 "AVIMBU/slack-mcp-server" ["l"="41.58,3.202"]
-"togethercomputer/open_deep_research" ["l"="41.234,2.779"]
 "Leghis/Smart-Thinking" ["l"="41.588,2.93"]
+"Michaelzag/RooCode-Tips-Tricks" ["l"="42.058,2.209", "c"=1083]
 "Funmula-Corp/BigGo-MCP-Server" ["l"="41.229,3.274"]
 "okooo5km/memory-mcp-server" ["l"="41.451,3.264"]
 "n1kozor/OpenWebUISimpleDesktop" ["l"="40.977,3.028"]
 "groq/groq-changelog" ["l"="41.098,3.338"]
 "ferrislucas/iterm-mcp" ["l"="41.616,3.089"]
-"Jacck/mcp-reasoner" ["l"="41.35,2.966"]
 "flyfox666/mcpo_docker_use" ["l"="40.956,3.062"]
 "petiky/mcp-manager" ["l"="41.429,3.176"]
 "apinetwork/piapi-mcp-server" ["l"="41.622,3.05"]

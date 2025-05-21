@@ -1,4 +1,14 @@
 digraph G {
+"geerlingguy/mac-dev-playbook" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"geerlingguy/mac-dev-playbook" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
+"geerlingguy/mac-dev-playbook" -> "ansible/ansible-lint" ["e"=1]
+"geerlingguy/mac-dev-playbook" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"geerlingguy/mac-dev-playbook" -> "ansible/awx" ["e"=1]
+"geerlingguy/mac-dev-playbook" -> "ansible/molecule" ["e"=1]
+"StackStorm/st2" -> "rundeck/rundeck" ["e"=1]
+"StackStorm/st2" -> "ansible/awx" ["e"=1]
+"nginx/ansible-role-nginx" -> "ansible-collections/community.general" ["e"=1]
+"nginx/ansible-role-nginx" -> "robertdebock/ansible-role-bootstrap" ["e"=1]
 "ansible/ansible-lint" -> "ansible/molecule"
 "ansible/ansible-lint" -> "ansible/awx"
 "ansible/ansible-lint" -> "ansible-community/ara"
@@ -14,6 +24,8 @@ digraph G {
 "ansible/ansible-lint" -> "pearofducks/ansible-vim"
 "ansible/ansible-lint" -> "terraform-linters/tflint" ["e"=1]
 "ansible/ansible-lint" -> "semaphoreui/semaphore"
+"chassing/linux-sysadmin-interview-questions" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"shellspec/shellspec" -> "sstephenson/bats" ["e"=1]
 "ansible/workshops" -> "ansible/lightbulb"
 "ansible/workshops" -> "ansible/test-playbooks"
 "ansible/workshops" -> "redhat-cop/infra.aap_configuration"
@@ -29,6 +41,7 @@ digraph G {
 "ansible/workshops" -> "geerlingguy/ansible-for-devops"
 "ansible/workshops" -> "napalm-automation/napalm" ["e"=1]
 "ansible/workshops" -> "ansible/ansible-builder"
+"trimstray/the-practical-linux-hardening-guide" -> "dev-sec/ansible-collection-hardening" ["e"=1]
 "jordansissel/fpm" -> "goreleaser/nfpm"
 "jordansissel/fpm" -> "goss-org/goss"
 "jordansissel/fpm" -> "aptly-dev/aptly"
@@ -59,6 +72,10 @@ digraph G {
 "aptly-dev/aptly" -> "rcrowley/freight"
 "aptly-dev/aptly" -> "astraw/stdeb" ["e"=1]
 "aptly-dev/aptly" -> "debops/debops-tools"
+"spotify/dh-virtualenv" -> "aptly-dev/aptly" ["e"=1]
+"spotify/dh-virtualenv" -> "jordansissel/fpm" ["e"=1]
+"josenk/terraform-provider-esxi" -> "dmacvicar/terraform-provider-libvirt" ["e"=1]
+"cloudalchemy/ansible-prometheus" -> "fboender/ansible-cmdb" ["e"=1]
 "geerlingguy/ansible-for-devops" -> "ansible/ansible-examples"
 "geerlingguy/ansible-for-devops" -> "geerlingguy/ansible-vagrant-examples"
 "geerlingguy/ansible-for-devops" -> "ansible/awx"
@@ -74,6 +91,8 @@ digraph G {
 "geerlingguy/ansible-for-devops" -> "dastergon/awesome-sre" ["e"=1]
 "geerlingguy/ansible-for-devops" -> "kelseyhightower/kubernetes-the-hard-way" ["e"=1]
 "geerlingguy/ansible-for-devops" -> "leucos/ansible-tuto"
+"cockpit-project/cockpit" -> "semaphoreui/semaphore" ["e"=1]
+"cockpit-project/cockpit" -> "ansible/awx" ["e"=1]
 "pixelb/ps_mem" -> "pixelb/scripts"
 "pixelb/ps_mem" -> "rlerdorf/opcache-status" ["e"=1]
 "pixelb/ps_mem" -> "major/MySQLTuner-perl" ["e"=1]
@@ -89,12 +108,35 @@ digraph G {
 "pixelb/ps_mem" -> "cloudflare/sslconfig" ["e"=1]
 "pixelb/ps_mem" -> "nbs-system/naxsi" ["e"=1]
 "pixelb/ps_mem" -> "ansible/molecule"
+"ComplianceAsCode/content" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"ComplianceAsCode/content" -> "inspec/inspec" ["e"=1]
+"ComplianceAsCode/content" -> "ansible/ansible-lockdown" ["e"=1]
+"ComplianceAsCode/content" -> "ansible/workshops" ["e"=1]
+"StackExchange/blackbox" -> "goss-org/goss" ["e"=1]
+"StackExchange/blackbox" -> "sstephenson/bats" ["e"=1]
+"StackExchange/blackbox" -> "jordansissel/fpm" ["e"=1]
+"concourse/concourse" -> "goss-org/goss" ["e"=1]
+"tianon/gosu" -> "goss-org/goss" ["e"=1]
 "linux-system-roles/logging" -> "linux-system-roles/ssh"
 "linux-system-roles/logging" -> "linux-system-roles/ha_cluster"
+"ekalinin/Dockerfile.vim" -> "pearofducks/ansible-vim" ["e"=1]
+"rootusercop/Free-DevOps-Books-1" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"turnbullpress/dockerbook-code" -> "lorin/ansiblebook" ["e"=1]
+"jenkinsci/configuration-as-code-plugin" -> "goss-org/goss" ["e"=1]
+"torfsen/python-systemd-tutorial" -> "debops/debops-tools" ["e"=1]
+"freeipa/ansible-freeipa" -> "ansible/molecule" ["e"=1]
+"freeipa/ansible-freeipa" -> "redhat-cop/infra.aap_configuration" ["e"=1]
+"freeipa/ansible-freeipa" -> "ansible-community/ara" ["e"=1]
+"GoogleContainerTools/container-structure-test" -> "goss-org/goss" ["e"=1]
 "Azure-Samples/ansible-playbooks" -> "microsoft/AnsibleLabs"
 "Azure-Samples/ansible-playbooks" -> "Azure/azure_modules"
 "Azure-Samples/ansible-playbooks" -> "ansible-collections/azure"
 "Azure-Samples/ansible-playbooks" -> "Azure/azure_preview_modules"
+"taverntesting/tavern" -> "pytest-dev/pytest-testinfra" ["e"=1]
+"vmware/pyvmomi" -> "ansible-collections/community.vmware" ["e"=1]
+"vmware/pyvmomi" -> "fboender/ansible-cmdb" ["e"=1]
+"roxy-wi/roxy-wi" -> "semaphoreui/semaphore" ["e"=1]
+"getblocklab/block-lab" -> "ansible/galaxy" ["e"=1]
 "haidaraM/ansible-playbook-grapher" -> "willthames/ansible-inventory-grapher"
 "haidaraM/ansible-playbook-grapher" -> "ansible-community/ara"
 "haidaraM/ansible-playbook-grapher" -> "ansible-community/awesome-ansible"
@@ -110,11 +152,19 @@ digraph G {
 "haidaraM/ansible-playbook-grapher" -> "ansible/ansible-builder"
 "haidaraM/ansible-playbook-grapher" -> "ansible/event-driven-ansible"
 "haidaraM/ansible-playbook-grapher" -> "cidrblock/td4a" ["e"=1]
+"glauth/glauth" -> "goreleaser/nfpm" ["e"=1]
+"bats-core/bats-core" -> "sstephenson/bats" ["e"=1]
+"bats-core/bats-core" -> "ansible/molecule" ["e"=1]
+"bats-core/bats-core" -> "goss-org/goss" ["e"=1]
+"jtesta/ssh-audit" -> "dev-sec/ansible-collection-hardening" ["e"=1]
 "do-community/ansible-playbooks" -> "adithyakhamithkar/ansible-playbooks"
 "do-community/ansible-playbooks" -> "nickjj/ansible-docker" ["e"=1]
 "do-community/ansible-playbooks" -> "do-community/ansible-laravel-demo"
 "do-community/ansible-playbooks" -> "Azure-Samples/ansible-playbooks"
 "do-community/ansible-playbooks" -> "microsoft/AnsibleLabs"
+"dell/dellemc-openmanage-ansible-modules" -> "ansible-collections/vmware.vmware_rest" ["e"=1]
+"dell/dellemc-openmanage-ansible-modules" -> "ansible-collections/community.vmware" ["e"=1]
+"trimstray/linux-hardening-checklist" -> "dev-sec/ansible-collection-hardening" ["e"=1]
 "debops/debops" -> "ansible-community/ara"
 "debops/debops" -> "dev-sec/ansible-collection-hardening"
 "debops/debops" -> "ansible/molecule"
@@ -130,6 +180,7 @@ digraph G {
 "debops/debops" -> "aptly-dev/aptly"
 "debops/debops" -> "ansible/ansible-lint"
 "debops/debops" -> "pytest-dev/pytest-testinfra"
+"vyos/vyos-1x" -> "vyos/vyos.vyos" ["e"=1]
 "Artemmkin/infrastructure-as-code-tutorial" -> "scottslowe/learning-tools"
 "Artemmkin/infrastructure-as-code-tutorial" -> "turkenh/ansible-interactive-tutorial"
 "Artemmkin/infrastructure-as-code-tutorial" -> "Artemmkin/infrastructure-as-code-example"
@@ -145,6 +196,8 @@ digraph G {
 "Artemmkin/infrastructure-as-code-tutorial" -> "dastergon/awesome-sre" ["e"=1]
 "Artemmkin/infrastructure-as-code-tutorial" -> "ansible/molecule"
 "Artemmkin/infrastructure-as-code-tutorial" -> "chassing/linux-sysadmin-interview-questions" ["e"=1]
+"geerlingguy/ansible-role-jenkins" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
+"mizzy/specinfra" -> "mizzy/serverspec" ["e"=1]
 "chase/vim-ansible-yaml" -> "pearofducks/ansible-vim"
 "chase/vim-ansible-yaml" -> "MicahElliott/Rocannon"
 "chase/vim-ansible-yaml" -> "stephpy/vim-yaml"
@@ -166,6 +219,7 @@ digraph G {
 "ansible-community/awesome-ansible" -> "ansible/molecule"
 "ansible-community/awesome-ansible" -> "omerbsezer/Fast-Ansible" ["e"=1]
 "rundeck/docs" -> "rundeck/rundeck-cli"
+"pomerium/pomerium" -> "goss-org/goss" ["e"=1]
 "turkenh/ansible-interactive-tutorial" -> "leucos/ansible-tuto"
 "turkenh/ansible-interactive-tutorial" -> "Artemmkin/infrastructure-as-code-tutorial"
 "turkenh/ansible-interactive-tutorial" -> "geerlingguy/ansible-vagrant-examples"
@@ -196,11 +250,17 @@ digraph G {
 "geerlingguy/ansible-vagrant-examples" -> "geerlingguy/packer-boxes" ["e"=1]
 "geerlingguy/ansible-vagrant-examples" -> "ansible/ansible-lint"
 "geerlingguy/ansible-vagrant-examples" -> "ansistrano/deploy" ["e"=1]
+"firehol/firehol" -> "debops/debops-tools" ["e"=1]
+"emre/storm" -> "fboender/ansible-cmdb" ["e"=1]
+"kimchi-project/kimchi" -> "dmacvicar/terraform-provider-libvirt" ["e"=1]
+"ninjaaron/replacing-bash-scripting-with-python" -> "enginyoyen/ansible-best-practises" ["e"=1]
 "jordansissel/pleaserun" -> "jordansissel/fpm"
 "jordansissel/pleaserun" -> "ripienaar/puppet-reportprint" ["e"=1]
 "jordansissel/pleaserun" -> "amscanne/huptime" ["e"=1]
 "jordansissel/pleaserun" -> "elastic/logstash-forwarder" ["e"=1]
 "jordansissel/pleaserun" -> "asteris-llc/converge"
+"itamae-kitchen/itamae" -> "mizzy/serverspec" ["e"=1]
+"icholy/ttygif" -> "sstephenson/bats" ["e"=1]
 "pulp/pulpcore" -> "pulp/pulp-oci-images"
 "pulp/pulpcore" -> "pulp/pulp_rpm" ["e"=1]
 "pulp/pulpcore" -> "pulp/pulp_ansible"
@@ -224,6 +284,8 @@ digraph G {
 "goreleaser/nfpm" -> "Zxilly/go-size-analyzer" ["e"=1]
 "goreleaser/nfpm" -> "h2non/filetype" ["e"=1]
 "goreleaser/nfpm" -> "dominikh/go-tools" ["e"=1]
+"angstwad/docker.ubuntu" -> "ansible/ansible-docker-base" ["e"=1]
+"Fmstrat/diy-ipmi" -> "dmacvicar/terraform-provider-libvirt" ["e"=1]
 "ansible-community/ansible-bender" -> "ansible-community/ara"
 "ansible-community/ansible-bender" -> "containers/ansible-podman-collections" ["e"=1]
 "ansible-community/ansible-bender" -> "ansible/ansible-container"
@@ -238,7 +300,10 @@ digraph G {
 "ansible-community/ansible-bender" -> "mitogen-hq/mitogen"
 "ansible-community/ansible-bender" -> "ansibleplaybookbundle/ansible-playbook-bundle" ["e"=1]
 "ansible-community/ansible-bender" -> "ansible/galaxy_ng"
+"kadalu/kadalu" -> "glific/glific" ["e"=1]
+"kadalu/kadalu" -> "adithyakhamithkar/ansible-playbooks" ["e"=1]
 "volanja/ansible_spec" -> "volanja/ansible-sample-tdd"
+"justjanne/powerline-go" -> "goss-org/goss" ["e"=1]
 "robertdebock/ansible-role-bootstrap" -> "robertdebock/ansible-role-update"
 "robertdebock/ansible-role-bootstrap" -> "robertdebock/ansible-role-users"
 "robertdebock/ansible-role-bootstrap" -> "robertdebock/ansible-role-core_dependencies"
@@ -250,6 +315,7 @@ digraph G {
 "rcrowley/freight" -> "rcrowley/debra"
 "rcrowley/freight" -> "freight-team/freight"
 "rcrowley/freight" -> "kumina/puppet-generic"
+"apenella/go-ansible" -> "ansible/ansible-runner" ["e"=1]
 "dominis/ansible-shell" -> "willthames/ansible-inventory-grapher"
 "dominis/ansible-shell" -> "abhishekkr/ansible-dashr"
 "dominis/ansible-shell" -> "nickjj/ansigenome"
@@ -257,6 +323,7 @@ digraph G {
 "dominis/ansible-shell" -> "pgolm/ansible-inventory-manager"
 "dominis/ansible-shell" -> "alaxli/ansible_ui" ["e"=1]
 "dominis/ansible-shell" -> "ansible-provisioning/ansible-provisioning"
+"ceph/ceph-ansible" -> "fboender/ansible-cmdb" ["e"=1]
 "ansible/ansible-lint-action" -> "ansible/ansible-builder"
 "ansible/ansible-lint-action" -> "ansible/vscode-ansible"
 "ansible/ansible-lint-action" -> "robertdebock/pre-commit"
@@ -277,6 +344,7 @@ digraph G {
 "ansible/ansible-runner" -> "mitogen-hq/mitogen"
 "ansible/ansible-runner" -> "ansible/eda-server"
 "ansible/ansible-runner" -> "ansible/galaxy"
+"bridgetkromhout/devops-against-humanity" -> "ansible/molecule" ["e"=1]
 "lorin/ansible-quickref" -> "lorin/ansiblebook"
 "lorin/ansible-quickref" -> "ansiblebook/ansiblebook"
 "lorin/ansible-quickref" -> "dominis/ansible-shell"
@@ -295,6 +363,7 @@ digraph G {
 "ColoredCow/portal" -> "ColoredCow/resources"
 "ColoredCow/portal" -> "ColoredCow/api-connector-wordpress"
 "ColoredCow/portal" -> "ColoredCow/SesPress"
+"ianmiell/shutit" -> "purpleidea/mgmt" ["e"=1]
 "willthames/ansible-inventory-grapher" -> "haidaraM/ansible-playbook-grapher"
 "willthames/ansible-inventory-grapher" -> "nickjj/ansigenome"
 "willthames/ansible-inventory-grapher" -> "willthames/ansible-review"
@@ -304,8 +373,16 @@ digraph G {
 "willthames/ansible-inventory-grapher" -> "cidrblock/td4a" ["e"=1]
 "willthames/ansible-inventory-grapher" -> "jdauphant/awesome-ansible"
 "willthames/ansible-inventory-grapher" -> "groupon/ansible-silo"
+"containers/udica" -> "linux-system-roles/selinux" ["e"=1]
+"OpenSCAP/openscap" -> "inspec/inspec" ["e"=1]
+"upserve/docker-api" -> "mizzy/serverspec" ["e"=1]
 "Azure/azure_preview_modules" -> "Azure/azure_modules"
+"major/cis-rhel-ansible" -> "ansible/ansible-lockdown" ["e"=1]
+"major/cis-rhel-ansible" -> "ansible-provisioning/ansible-provisioning" ["e"=1]
+"jborean93/packer-windoze" -> "jborean93/ansible-windows" ["e"=1]
 "thegeeklab/ansible-later" -> "thegeeklab/ansible-doctor"
+"dev-sec/linux-baseline" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"dev-sec/linux-baseline" -> "inspec/inspec" ["e"=1]
 "jlafon/ansible-profile" -> "groupon/ansible-silo"
 "jlafon/ansible-profile" -> "ginsys/ansible-plugins"
 "jlafon/ansible-profile" -> "nickjj/ansigenome"
@@ -318,14 +395,19 @@ digraph G {
 "ansible/tower-cli" -> "oVirt/ovirt-ansible" ["e"=1]
 "ansible/tower-cli" -> "geerlingguy/awx-container" ["e"=1]
 "ansible/tower-cli" -> "n0ts/ansible-human_log"
+"vmware/pyvmomi-community-samples" -> "ansible-collections/community.vmware" ["e"=1]
 "ColoredCow/laravel-gsuite" -> "ColoredCow/api-connector-wordpress"
 "ColoredCow/laravel-gsuite" -> "ColoredCow/SesPress"
 "ColoredCow/laravel-gsuite" -> "ColoredCow/resources"
+"geerlingguy/ansible-for-kubernetes" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"geerlingguy/ansible-for-kubernetes" -> "ansible-collections/community.kubernetes" ["e"=1]
+"geerlingguy/ansible-for-kubernetes" -> "ndom91/AnsibleFest2020-Slides" ["e"=1]
 "ansible/ansible-runner-service" -> "ansible/ansible-runner"
 "jborean93/ansible-windows" -> "ansible-collections/ansible.windows"
 "jborean93/ansible-windows" -> "oatakan/windows-ansible-example"
 "jborean93/ansible-windows" -> "ansible-collections/community.windows"
 "jborean93/ansible-windows" -> "crombeen/ansible"
+"test-kitchen/kitchen-docker" -> "neillturner/kitchen-ansible" ["e"=1]
 "robertdebock/ansible-role-users" -> "robertdebock/ansible-role-locale"
 "robertdebock/ansible-role-users" -> "robertdebock/ansible-role-common"
 "robertdebock/ansible-role-users" -> "robertdebock/ansible-role-python_pip"
@@ -381,6 +463,19 @@ digraph G {
 "robertdebock/ansible-role-locale" -> "robertdebock/ansible-role-common"
 "robertdebock/ansible-role-common" -> "robertdebock/ansible-role-environment"
 "robertdebock/ansible-role-common" -> "robertdebock/ansible-role-python_pip"
+"lsyncd/lsyncd" -> "ansible/awx" ["e"=1]
+"lsyncd/lsyncd" -> "semaphoreui/semaphore" ["e"=1]
+"bpkg/bpkg" -> "sstephenson/bats" ["e"=1]
+"adnanh/webhook" -> "semaphoreui/semaphore" ["e"=1]
+"adnanh/webhook" -> "goss-org/goss" ["e"=1]
+"wmariuss/awesome-devops" -> "ansible-community/awesome-ansible" ["e"=1]
+"adammck/terraform-inventory" -> "ansible/molecule" ["e"=1]
+"adammck/terraform-inventory" -> "goss-org/goss" ["e"=1]
+"hashivim/vim-terraform" -> "pearofducks/ansible-vim" ["e"=1]
+"pyinfra-dev/pyinfra" -> "pytest-dev/pytest-testinfra" ["e"=1]
+"niieani/bash-oo-framework" -> "sstephenson/bats" ["e"=1]
+"in28minutes/devops-master-class" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"jenkinsci/docker" -> "ansible/ansible-examples" ["e"=1]
 "semaphoreui/semaphore" -> "ansible/awx"
 "semaphoreui/semaphore" -> "netbox-community/netbox" ["e"=1]
 "semaphoreui/semaphore" -> "kubernetes-sigs/kubespray" ["e"=1]
@@ -396,6 +491,12 @@ digraph G {
 "semaphoreui/semaphore" -> "louislam/dockge" ["e"=1]
 "semaphoreui/semaphore" -> "goharbor/harbor" ["e"=1]
 "semaphoreui/semaphore" -> "ansible/ansible-lint"
+"theforeman/foreman" -> "ansible/awx" ["e"=1]
+"cobbler/cobbler" -> "fboender/ansible-cmdb" ["e"=1]
+"jwilder/dockerize" -> "goss-org/goss" ["e"=1]
+"jwilder/dockerize" -> "sstephenson/bats" ["e"=1]
+"adrienverge/openfortivpn" -> "ansible/awx" ["e"=1]
+"adrienverge/openfortivpn" -> "semaphoreui/semaphore" ["e"=1]
 "ansible/lightbulb" -> "ansible/ansible-lockdown"
 "ansible/lightbulb" -> "redhat-cop/agnosticd" ["e"=1]
 "ansible/lightbulb" -> "ansible/community"
@@ -411,12 +512,16 @@ digraph G {
 "ansible/lightbulb" -> "openshift/openshift-ansible" ["e"=1]
 "ansible/lightbulb" -> "mgmt-sa-tiger-team/skylight"
 "ansible/lightbulb" -> "RedHatWorkshops/openshiftv3-workshop" ["e"=1]
+"sferik/t-ruby" -> "sstephenson/bats" ["e"=1]
 "Stifler6996/apt-mirror" -> "apt-mirror/apt-mirror"
 "fortinet-ansible-dev/ansible-galaxy-fortios-collection" -> "napalm-automation-community/napalm-fortios"
+"dotless-de/vagrant-vbguest" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
+"spotify/docker-gc" -> "goss-org/goss" ["e"=1]
 "ansible-collections/azure" -> "Azure-Samples/ansible-playbooks"
 "ansible-collections/azure" -> "PaloAltoNetworks/azure"
 "ansible-collections/azure" -> "ansible-collections/ansible.windows"
 "ansible-collections/azure" -> "Azure/azure_preview_modules"
+"Tikam02/DevOps-Guide" -> "geerlingguy/ansible-for-devops" ["e"=1]
 "ansible-collections/cisco.iosxr" -> "ansible-collections/cisco.nxos"
 "ansible-collections/cisco.iosxr" -> "ansible-collections/cisco.ios"
 "ansible-collections/cisco.iosxr" -> "ansible-collections/ansible.netcommon"
@@ -465,6 +570,8 @@ digraph G {
 "ansible/ansible-lockdown" -> "MindPointGroup/ansible-vmware-provisioning" ["e"=1]
 "ansible/ansible-lockdown" -> "major/cis-rhel-ansible" ["e"=1]
 "ansible/ansible-lockdown" -> "nickjj/ansigenome"
+"CiscoDevNet/cml-community" -> "CiscoDevNet/ansible-aci" ["e"=1]
+"sensu/sensu" -> "mizzy/serverspec" ["e"=1]
 "ansible-collections/community.crypto" -> "ansible-collections/community.dns"
 "ansible-collections/community.crypto" -> "ansible-collections/ansible.posix"
 "ansible-collections/community.crypto" -> "ansible-collections/community.mysql"
@@ -529,8 +636,13 @@ digraph G {
 "ansible/awx-operator" -> "ansible-collections/community.vmware"
 "ansible/awx-operator" -> "ansible/event-driven-ansible"
 "ansible/awx-operator" -> "ansible-collections/community.general"
+"ekalinin/github-markdown-toc" -> "sstephenson/bats" ["e"=1]
+"emcrisostomo/fswatch" -> "sstephenson/bats" ["e"=1]
+"google/mtail" -> "goss-org/goss" ["e"=1]
 "napalm-automation-community/napalm-huawei-vrp" -> "napalm-automation-community/napalm-ce"
 "napalm-automation-community/napalm-huawei-vrp" -> "napalm-automation-community/napalm-fortios"
+"okd-project/okd" -> "ansible/awx-operator" ["e"=1]
+"openstack/openstack-ansible" -> "ansible/ansible-container" ["e"=1]
 "CiscoDevNet/ansible-aci" -> "CiscoDevNet/ansible-mso"
 "CiscoDevNet/ansible-aci" -> "CiscoDevNet/terraform-provider-aci"
 "CiscoDevNet/ansible-aci" -> "ansible-collections/cisco.nxos"
@@ -542,6 +654,8 @@ digraph G {
 "CiscoDevNet/ansible-aci" -> "automateyournetwork/ACEye" ["e"=1]
 "CiscoDevNet/ansible-aci" -> "ansible-collections/cisco.iosxr"
 "CiscoDevNet/ansible-aci" -> "CiscoDevNet/ansible-dcnm"
+"datacenter/acitoolkit" -> "CiscoDevNet/ansible-aci" ["e"=1]
+"datacenter/acitoolkit" -> "CiscoDevNet/aci-learning-labs-code-samples" ["e"=1]
 "kubealex/libvirt-k8s-provisioner" -> "kubealex/libvirt-ocp4-provisioner"
 "kubealex/libvirt-k8s-provisioner" -> "MusicDin/kubitect"
 "kubealex/libvirt-k8s-provisioner" -> "jamonation/terraform-libvirt-k8s-lab"
@@ -560,12 +674,21 @@ digraph G {
 "debops/debops-tools" -> "ansible/molecule"
 "debops/debops-tools" -> "sovereign/sovereign" ["e"=1]
 "debops/debops-tools" -> "enginyoyen/ansible-best-practises"
+"progrium/bashstyle" -> "sstephenson/bats" ["e"=1]
+"CentOS/CentOS-Dockerfiles" -> "ansible/ansible-container" ["e"=1]
+"CentOS/CentOS-Dockerfiles" -> "ansible/ansible-examples" ["e"=1]
 "debops/debops-playbooks" -> "debops/debops-tools"
 "debops/debops-playbooks" -> "nickjj/ansigenome"
 "debops/debops-playbooks" -> "debops/ansible-pki"
+"ansistrano/deploy" -> "ansible/ansible-container" ["e"=1]
+"ansistrano/deploy" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
 "ansible-collections/collection_template" -> "ansible-collections/news-for-maintainers"
 "MayaraCloud/apt-transport-s3" -> "krobertson/deb-s3"
 "MayaraCloud/apt-transport-s3" -> "deb-s3/deb-s3"
+"ansible-collections/community.zabbix" -> "ansible-collections/community.vmware" ["e"=1]
+"ansible-collections/community.zabbix" -> "ansible-collections/vmware.vmware_rest" ["e"=1]
+"ansible-collections/community.zabbix" -> "ansible-collections/community.postgresql" ["e"=1]
+"ansible-collections/community.zabbix" -> "ansible-collections/community.crypto" ["e"=1]
 "ansible/ansible-builder" -> "ansible/ansible-navigator"
 "ansible/ansible-builder" -> "ansible/event-driven-ansible"
 "ansible/ansible-builder" -> "ansible/ansible-runner"
@@ -612,6 +735,7 @@ digraph G {
 "ansible-collections/ansible.posix" -> "ansible-collections/ansible.netcommon"
 "ansible-collections/ansible.posix" -> "ansible-collections/community.mysql"
 "ansible-collections/ansible.posix" -> "ansible-collections/community.dns"
+"pupilfirst/pupilfirst" -> "glific/glific" ["e"=1]
 "ansible-collections/ansible.windows" -> "ansible-collections/community.windows"
 "ansible-collections/ansible.windows" -> "ansible-collections/microsoft.ad"
 "ansible-collections/ansible.windows" -> "jborean93/ansible-windows"
@@ -620,6 +744,7 @@ digraph G {
 "ansible-collections/ansible.windows" -> "ansible-collections/overview"
 "ansible-collections/community.grafana" -> "ansible-collections/community.mysql"
 "ansible-collections/community.grafana" -> "ansible-collections/community.dns"
+"thomvaill/tads-boilerplate" -> "jdauphant/awesome-ansible" ["e"=1]
 "yankurniawan/ansible-for-aws" -> "glenjarvis/ansible-hands-on"
 "ansible-collections/junipernetworks.junos" -> "ansible-collections/ansible.netcommon"
 "ansible-collections/junipernetworks.junos" -> "ansible-collections/arista.eos" ["e"=1]
@@ -648,6 +773,7 @@ digraph G {
 "ansible/product-demos" -> "redhat-cop/automation-good-practices"
 "ansible/product-demos" -> "ansible/ansible-builder"
 "ansible/product-demos" -> "redhat-partner-tech/automated-smart-management"
+"CiscoDevNet/coding-skills-sample-code" -> "CiscoDevNet/aci-learning-labs-code-samples" ["e"=1]
 "redhat-cop/infra.aap_configuration" -> "redhat-cop/aap_utilities"
 "redhat-cop/infra.aap_configuration" -> "redhat-cop/ee_utilities"
 "redhat-cop/infra.aap_configuration" -> "redhat-cop/automation-good-practices"
@@ -781,6 +907,21 @@ digraph G {
 "CiscoDevNet/ansible-mso" -> "CiscoDevNet/ansible-aci"
 "robertdebock/ansible-role-core_dependencies" -> "robertdebock/ansible-role-hashicorp"
 "linux-system-roles/kernel_settings" -> "linux-system-roles/ha_cluster"
+"just-containers/s6-overlay" -> "goss-org/goss" ["e"=1]
+"github/scripts-to-rule-them-all" -> "sstephenson/bats" ["e"=1]
+"ansible/ansible" -> "ansible/awx" ["e"=1]
+"ansible/ansible" -> "ansible/ansible-examples" ["e"=1]
+"gravitational/teleport" -> "semaphoreui/semaphore" ["e"=1]
+"antonputra/tutorials" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"hygieia/hygieia" -> "goss-org/goss" ["e"=1]
+"hygieia/hygieia" -> "inspec/inspec" ["e"=1]
+"healthchecks/healthchecks" -> "semaphoreui/semaphore" ["e"=1]
+"kubealex/k8s-mediaserver-operator" -> "kubealex/libvirt-k8s-provisioner" ["e"=1]
+"docker/docker-bench-security" -> "goss-org/goss" ["e"=1]
+"ChristianLempa/boilerplates" -> "semaphoreui/semaphore" ["e"=1]
+"rocky-linux/rocky" -> "ansible/awx" ["e"=1]
+"rear/rear" -> "ansible-community/ara" ["e"=1]
+"phpipam/phpipam" -> "ansible/awx" ["e"=1]
 "dev-sec/ansible-collection-hardening" -> "dev-sec/ansible-ssh-hardening" ["e"=1]
 "dev-sec/ansible-collection-hardening" -> "dev-sec/linux-baseline" ["e"=1]
 "dev-sec/ansible-collection-hardening" -> "ansible/molecule"
@@ -796,6 +937,9 @@ digraph G {
 "dev-sec/ansible-collection-hardening" -> "semaphoreui/semaphore"
 "dev-sec/ansible-collection-hardening" -> "fboender/ansible-cmdb"
 "dev-sec/ansible-collection-hardening" -> "goss-org/goss"
+"habitat-sh/habitat" -> "inspec/inspec" ["e"=1]
+"habitat-sh/habitat" -> "mizzy/serverspec" ["e"=1]
+"geerlingguy/kubernetes-101" -> "geerlingguy/ansible-for-devops" ["e"=1]
 "fboender/ansible-cmdb" -> "voilet/cmdb" ["e"=1]
 "fboender/ansible-cmdb" -> "ansible-community/ara"
 "fboender/ansible-cmdb" -> "welliamcao/OpsManage" ["e"=1]
@@ -826,6 +970,9 @@ digraph G {
 "ansible/ansible-navigator" -> "ansible/galaxy_ng"
 "ansible/ansible-navigator" -> "ansible/eda-server"
 "ansible/ansible-navigator" -> "ansible-collections/overview"
+"chef/bento" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
+"chef/bento" -> "inspec/inspec" ["e"=1]
+"geerlingguy/macos-virtualbox-vm" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
 "redhat-cop/automation-good-practices" -> "redhat-cop/infra.aap_configuration"
 "redhat-cop/automation-good-practices" -> "redhat-cop/ee_utilities"
 "redhat-cop/automation-good-practices" -> "redhat-cop/aap_utilities"
@@ -871,6 +1018,15 @@ digraph G {
 "pytest-dev/pytest-testinfra" -> "mitogen-hq/mitogen"
 "pytest-dev/pytest-testinfra" -> "terraform-compliance/cli" ["e"=1]
 "pytest-dev/pytest-testinfra" -> "dtan4/terraforming" ["e"=1]
+"geerlingguy/internet-pi" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"kkrishguptaa/reseter.css" -> "adithyakhamithkar/ansible-playbooks" ["e"=1]
+"kkrishguptaa/reseter.css" -> "glific/glific" ["e"=1]
+"kward/shunit2" -> "sstephenson/bats" ["e"=1]
+"k1LoW/awspec" -> "mizzy/serverspec" ["e"=1]
+"k1LoW/awspec" -> "goss-org/goss" ["e"=1]
+"k1LoW/awspec" -> "inspec/inspec" ["e"=1]
+"k1LoW/awspec" -> "volanja/ansible_spec" ["e"=1]
+"hvac/hvac" -> "ansible/molecule" ["e"=1]
 "kurokobo/awx-on-k3s" -> "ansible/awx-operator"
 "kurokobo/awx-on-k3s" -> "HewlettPackard/squest"
 "kurokobo/awx-on-k3s" -> "ansible/awx-ee"
@@ -886,6 +1042,8 @@ digraph G {
 "kurokobo/awx-on-k3s" -> "redhat-cop/automation-good-practices"
 "kurokobo/awx-on-k3s" -> "haidaraM/ansible-playbook-grapher"
 "kurokobo/awx-on-k3s" -> "jetporch/jetporch"
+"elastic/ansible-elasticsearch" -> "fboender/ansible-cmdb" ["e"=1]
+"elastic/ansible-elasticsearch" -> "ansible/ansible-lint" ["e"=1]
 "enginyoyen/ansible-best-practises" -> "jdauphant/awesome-ansible"
 "enginyoyen/ansible-best-practises" -> "dev-sec/ansible-ssh-hardening" ["e"=1]
 "enginyoyen/ansible-best-practises" -> "nickjj/ansigenome"
@@ -920,6 +1078,7 @@ digraph G {
 "sstephenson/bats" -> "gruntwork-io/terratest" ["e"=1]
 "sstephenson/bats" -> "dtan4/terraforming" ["e"=1]
 "sstephenson/bats" -> "ansible/molecule"
+"geerlingguy/raspberry-pi-dramble" -> "geerlingguy/ansible-for-devops" ["e"=1]
 "scottslowe/learning-tools" -> "geerlingguy/ansible-vagrant-examples"
 "scottslowe/learning-tools" -> "Artemmkin/infrastructure-as-code-tutorial"
 "scottslowe/learning-tools" -> "leucos/ansible-tuto"
@@ -935,6 +1094,12 @@ digraph G {
 "scottslowe/learning-tools" -> "hobby-kube/guide" ["e"=1]
 "scottslowe/learning-tools" -> "openstack/openstack-ansible" ["e"=1]
 "scottslowe/learning-tools" -> "ansible-community/ara"
+"bluxmit/alnoda-workspaces" -> "haidaraM/ansible-playbook-grapher" ["e"=1]
+"pressly/sup" -> "goss-org/goss" ["e"=1]
+"chef/omnibus" -> "mizzy/serverspec" ["e"=1]
+"go-jira/jira" -> "goss-org/goss" ["e"=1]
+"gauntlt/gauntlt" -> "inspec/inspec" ["e"=1]
+"maxfields2000/dockerjenkins_tutorial" -> "ansible/ansible-container" ["e"=1]
 "ansible-collections/community.docker" -> "ansible-collections/ansible.posix"
 "ansible-collections/community.docker" -> "ansible-collections/community.dns"
 "ansible-collections/community.docker" -> "ansible-collections/community.postgresql"
@@ -955,15 +1120,20 @@ digraph G {
 "ansible/vscode-ansible" -> "ansible-community/toolset"
 "ansible/vscode-ansible" -> "ansible/ansible-dev-environment"
 "ansible/vscode-ansible" -> "redhat-cop/infra.aap_configuration"
+"ilikenwf/apt-fast" -> "aptly-dev/aptly" ["e"=1]
+"BMDan/tuning-primer.sh" -> "richardforth/apache2buddy" ["e"=1]
 "manicminer/ansible-auto-scaling-tutorial" -> "yankurniawan/ansible-for-aws"
 "manicminer/ansible-auto-scaling-tutorial" -> "electroniceagle/ansible-dc-ec2-tutorial"
 "dellis23/ansible-toolkit" -> "abhishekkr/ansible-dashr"
+"dev-sec/ansible-ssh-hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
 "HewlettPackard/squest" -> "HewlettPackard/monkeyble"
 "HewlettPackard/squest" -> "kurokobo/awx-on-k3s"
 "HewlettPackard/squest" -> "ansible/eda-server"
 "HewlettPackard/squest" -> "ansible/pinakes"
 "HewlettPackard/squest" -> "jseguillon/caradoc"
 "HewlettPackard/squest" -> "ansible/event-driven-ansible"
+"mantl/terraform.py" -> "lorin/ansible-quickref" ["e"=1]
+"konstruktoid/hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
 "lorin/ansiblebook" -> "ansiblebook/ansiblebook"
 "lorin/ansiblebook" -> "lorin/ansible-quickref"
 "lorin/ansiblebook" -> "ansible/ansible-docker-base"
@@ -972,8 +1142,11 @@ digraph G {
 "ansible/ansible-language-server" -> "yaegassy/coc-ansible"
 "ansible/ansible-language-server" -> "ansible/ansible-navigator"
 "ansible/ansible-language-server" -> "ansible/ansible-compat"
+"William-Yeh/docker-ansible" -> "ansible/ansible-docker-base" ["e"=1]
 "ansible-collections/kubernetes.core" -> "ansible-collections/community.kubernetes"
 "ansible-collections/kubernetes.core" -> "openshift/community.okd"
+"jhaals/ansible-vault" -> "neillturner/kitchen-ansible" ["e"=1]
+"chef-boneyard/devops-kungfu" -> "inspec/inspec" ["e"=1]
 "jdauphant/awesome-ansible" -> "ansible-community/awesome-ansible"
 "jdauphant/awesome-ansible" -> "fboender/ansible-cmdb"
 "jdauphant/awesome-ansible" -> "nickjj/ansigenome"
@@ -1005,6 +1178,9 @@ digraph G {
 "wangcongxing/NetOpsBase" -> "luffycjf/network_build_automation"
 "ansible/pinakes" -> "ansible/galaxy_collection"
 "linux-system-roles/crypto_policies" -> "linux-system-roles/metrics"
+"thoughtworks/talisman" -> "inspec/inspec" ["e"=1]
+"jenkinsci/pipeline-examples" -> "ansible/ansible-examples" ["e"=1]
+"vyos/vyos-build" -> "vyos/vyos.vyos" ["e"=1]
 "purpleidea/mgmt" -> "goss-org/goss"
 "purpleidea/mgmt" -> "fabiolb/fabio" ["e"=1]
 "purpleidea/mgmt" -> "pytest-dev/pytest-testinfra"
@@ -1020,6 +1196,9 @@ digraph G {
 "purpleidea/mgmt" -> "goreleaser/nfpm"
 "purpleidea/mgmt" -> "mitogen-hq/mitogen"
 "purpleidea/mgmt" -> "ansible/ansible-container"
+"netbootxyz/netboot.xyz" -> "semaphoreui/semaphore" ["e"=1]
+"grammarly/rocker" -> "goss-org/goss" ["e"=1]
+"allegro/ralph" -> "fboender/ansible-cmdb" ["e"=1]
 "goss-org/goss" -> "pytest-dev/pytest-testinfra"
 "goss-org/goss" -> "ansible/molecule"
 "goss-org/goss" -> "gruntwork-io/terratest" ["e"=1]
@@ -1050,6 +1229,16 @@ digraph G {
 "ansible/molecule" -> "ansible/ansible-runner"
 "ansible/molecule" -> "gruntwork-io/terragrunt" ["e"=1]
 "ansible/molecule" -> "geerlingguy/ansible-for-devops"
+"adrienverge/yamllint" -> "ansible/ansible-lint" ["e"=1]
+"adrienverge/yamllint" -> "ansible/molecule" ["e"=1]
+"OpenVPN/easy-rsa" -> "ansible/ansible-examples" ["e"=1]
+"theZiz/aha" -> "pixelb/scripts" ["e"=1]
+"megastep/makeself" -> "jordansissel/fpm" ["e"=1]
+"ansible-lockdown/RHEL7-CIS" -> "ansible/ansible-lockdown" ["e"=1]
+"AcalephStorage/awesome-devops" -> "jdauphant/awesome-ansible" ["e"=1]
+"fabiolb/fabio" -> "goss-org/goss" ["e"=1]
+"apache/libcloud" -> "ansible/ansible-container" ["e"=1]
+"thefinn93/ansible-letsencrypt" -> "ansible/ansible-docker-base" ["e"=1]
 "pearofducks/ansible-vim" -> "chase/vim-ansible-yaml"
 "pearofducks/ansible-vim" -> "ansible/ansible-language-server"
 "pearofducks/ansible-vim" -> "ansible/ansible-lint"
@@ -1080,8 +1269,17 @@ digraph G {
 "inspec/inspec" -> "dev-sec/cis-docker-benchmark" ["e"=1]
 "inspec/inspec" -> "terraform-compliance/cli" ["e"=1]
 "inspec/inspec" -> "aquasecurity/kube-bench" ["e"=1]
+"afonsof/jenkins-material-theme" -> "ansible/ansible-container" ["e"=1]
+"errbotio/errbot" -> "pytest-dev/pytest-testinfra" ["e"=1]
+"errbotio/errbot" -> "goss-org/goss" ["e"=1]
+"iongion/container-desktop" -> "redhat-cop/infra.aap_configuration" ["e"=1]
+"test-kitchen/test-kitchen" -> "neillturner/kitchen-ansible" ["e"=1]
+"test-kitchen/test-kitchen" -> "mizzy/serverspec" ["e"=1]
+"test-kitchen/test-kitchen" -> "inspec/inspec" ["e"=1]
+"test-kitchen/test-kitchen" -> "pytest-dev/pytest-testinfra" ["e"=1]
 "ansible-community/molecule-plugins" -> "ansible-community/molecule-vagrant"
 "ansible-community/molecule-plugins" -> "pulp/pulp_ansible"
+"joubertredrat/awesome-devops" -> "jdauphant/awesome-ansible" ["e"=1]
 "ansible/ansible-rulebook" -> "ansible/event-driven-ansible"
 "ansible/ansible-rulebook" -> "ansible/eda-server"
 "ansible/ansible-rulebook" -> "ansible/eda-server-operator"
@@ -1114,6 +1312,8 @@ digraph G {
 "AlexNabokikh/windows-playbook" -> "ansible-collections/ansible.windows"
 "AlexNabokikh/windows-playbook" -> "oatakan/windows-ansible-example"
 "sebn/ansible-roles-graph" -> "aspiers/ansible-viz"
+"netbox-community/netbox" -> "ansible/awx" ["e"=1]
+"netbox-community/netbox" -> "semaphoreui/semaphore" ["e"=1]
 "ansible/community" -> "ansible-collections/overview"
 "ansible/community" -> "ansible/lightbulb"
 "ansible/community" -> "ansible-collections/community.general"
@@ -1129,6 +1329,9 @@ digraph G {
 "ansible/community" -> "ansible-community/ansible-build-data"
 "ansible/community" -> "ansible/tower-cli"
 "ansible/community" -> "ansible-community/ara"
+"docker/labs" -> "ansible/ansible-examples" ["e"=1]
+"mozilla/ssh_scan" -> "nickjj/ansigenome" ["e"=1]
+"bugy/script-server" -> "rundeck/rundeck" ["e"=1]
 "richardforth/apache2buddy" -> "pksteyn/php-fpmpal"
 "richardforth/apache2buddy" -> "amnuts/opcache-gui" ["e"=1]
 "dmacvicar/terraform-provider-libvirt" -> "vagrant-libvirt/vagrant-libvirt" ["e"=1]
@@ -1146,6 +1349,14 @@ digraph G {
 "dmacvicar/terraform-provider-libvirt" -> "metallb/metallb" ["e"=1]
 "dmacvicar/terraform-provider-libvirt" -> "jakobadam/packer-qemu-templates" ["e"=1]
 "dmacvicar/terraform-provider-libvirt" -> "mitogen-hq/mitogen"
+"gruntwork-io/terratest" -> "goss-org/goss" ["e"=1]
+"ovh/debian-cis" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"passbolt/passbolt_api" -> "semaphoreui/semaphore" ["e"=1]
+"alexei-led/pumba" -> "goss-org/goss" ["e"=1]
+"omerbsezer/Fast-Ansible" -> "ansible-community/awesome-ansible" ["e"=1]
+"digitalocean/go-libvirt" -> "dmacvicar/terraform-provider-libvirt" ["e"=1]
+"vmware/vsphere-automation-sdk-python" -> "ansible-collections/community.vmware" ["e"=1]
+"jpmens/jo" -> "sstephenson/bats" ["e"=1]
 "willthames/ansible-review" -> "willthames/ansible-inventory-grapher"
 "willthames/ansible-review" -> "nickjj/ansigenome"
 "crombeen/ansible" -> "juju4/ansible-harden-windows" ["e"=1]
@@ -1153,6 +1364,8 @@ digraph G {
 "crombeen/ansible" -> "rgl/windows-domain-controller-vagrant" ["e"=1]
 "crombeen/ansible" -> "ansible-collections/ansible.windows"
 "crombeen/ansible" -> "jborean93/ansible-windows"
+"avleen/bashttpd" -> "sstephenson/bats" ["e"=1]
+"sobolevn/git-secret" -> "sstephenson/bats" ["e"=1]
 "ansible/ansible-container" -> "ansible/molecule"
 "ansible/ansible-container" -> "ansible/ansible-modules-extras"
 "ansible/ansible-container" -> "ansible/ansible-modules-core"
@@ -1168,11 +1381,26 @@ digraph G {
 "ansible/ansible-container" -> "openshift/openshift-ansible" ["e"=1]
 "ansible/ansible-container" -> "ansible/awx"
 "ansible/ansible-container" -> "geerlingguy/ansible-vagrant-examples"
+"dev-sec/cis-docker-benchmark" -> "inspec/inspec" ["e"=1]
 "PaloAltoNetworks/azure" -> "PaloAltoNetworks/terraform-templates" ["e"=1]
 "HewlettPackard/monkeyble" -> "jseguillon/caradoc"
+"rundeck-plugins/ansible-plugin" -> "rundeck/rundeck" ["e"=1]
 "ansible/eda-server-operator" -> "ansible/eda-server"
+"TerryHowe/ansible-modules-hashivault" -> "ansible-community/ara" ["e"=1]
 "freight-team/freight" -> "rcrowley/freight"
+"jonmorehouse/terraform-provisioner-ansible" -> "neillturner/kitchen-ansible" ["e"=1]
+"railsmachine/rump" -> "kumina/puppet-generic" ["e"=1]
 "jseguillon/caradoc" -> "HewlettPackard/monkeyble"
+"Graylog2/graylog2-server" -> "ansible/awx" ["e"=1]
+"zabbix/zabbix-docker" -> "ansible/awx" ["e"=1]
+"opsschool/curriculum" -> "ansible/ansible-modules-extras" ["e"=1]
+"ansible-lockdown/RHEL7-STIG" -> "ansible/ansible-lockdown" ["e"=1]
+"apenwarr/sshuttle" -> "jordansissel/fpm" ["e"=1]
+"StackExchange/dnscontrol" -> "goss-org/goss" ["e"=1]
+"riemers/ansible-gitlab-runner" -> "thegeeklab/ansible-doctor" ["e"=1]
+"riemers/ansible-gitlab-runner" -> "pulp/pulp_ansible" ["e"=1]
+"minishift/minishift" -> "ansible/ansible-container" ["e"=1]
+"mitchellkrogza/apache-ultimate-bad-bot-blocker" -> "richardforth/apache2buddy" ["e"=1]
 "mitogen-hq/mitogen" -> "ansible-community/ara"
 "mitogen-hq/mitogen" -> "ansible/molecule"
 "mitogen-hq/mitogen" -> "ansible/ansible-lint"
@@ -1203,6 +1431,12 @@ digraph G {
 "ansible-community/ara" -> "ansible/ansible-container"
 "ansible-community/ara" -> "ansible-community/ansible-bender"
 "ansible-community/ara" -> "dmsimard/ara-archive"
+"ghik/kubernetes-the-harder-way" -> "kubealex/libvirt-k8s-provisioner" ["e"=1]
+"bitnami/minideb" -> "pytest-dev/pytest-testinfra" ["e"=1]
+"voilet/cmdb" -> "fboender/ansible-cmdb" ["e"=1]
+"newcontext-oss/kitchen-terraform" -> "inspec/inspec" ["e"=1]
+"newcontext-oss/kitchen-terraform" -> "goss-org/goss" ["e"=1]
+"Techtonica/curriculum" -> "ansible/galaxy" ["e"=1]
 "jetporch/jetporch" -> "jetporch/jetporch_examples"
 "jetporch/jetporch" -> "jetporch/jeti"
 "jetporch/jetporch" -> "ansible/event-driven-ansible"
@@ -1218,15 +1452,33 @@ digraph G {
 "ansible/ansible-dev-tools" -> "ansible/ansible-dev-environment"
 "DalgoT4D/webapp" -> "DalgoT4D/DDP_backend"
 "jetporch/jetporch_examples" -> "jetporch/jeti"
+"AGWA/git-crypt" -> "sstephenson/bats" ["e"=1]
+"warpnet/awesome-prometheus" -> "ansible-community/awesome-ansible" ["e"=1]
+"bitly/oauth2_proxy" -> "goss-org/goss" ["e"=1]
 "HuaweiSwitch/CloudEngine-Ansible" -> "napalm-automation-community/napalm-huawei-vrp"
 "HuaweiSwitch/CloudEngine-Ansible" -> "luffycjf/auto_config_switch_router"
+"buildbot/buildbot" -> "pytest-dev/pytest-testinfra" ["e"=1]
 "node-ci/nci-ansible-ui" -> "node-ci/nci"
 "node-ci/nci-ansible-ui" -> "vstconsulting/polemarch"
 "apt-mirror/apt-mirror" -> "Stifler6996/apt-mirror"
 "apt-mirror/apt-mirror" -> "sir-xw/apt-mirror-python"
+"Caiyeon/goldfish" -> "goss-org/goss" ["e"=1]
+"nickjj/ansible-docker" -> "do-community/ansible-playbooks" ["e"=1]
+"nickjj/ansible-docker" -> "enginyoyen/ansible-best-practises" ["e"=1]
+"redhat-cop/agnosticd" -> "redhat-cop/infra.aap_configuration" ["e"=1]
 "ansiblebook/ansiblebook" -> "lorin/ansiblebook"
 "ansiblebook/ansiblebook" -> "lorin/ansible-quickref"
+"konstruktoid/ansible-role-hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"HariSekhon/Nagios-Plugins" -> "fboender/ansible-cmdb" ["e"=1]
+"vscode-shellcheck/vscode-shellcheck" -> "ansible/vscode-ansible" ["e"=1]
+"weaveworks/grafanalib" -> "goss-org/goss" ["e"=1]
+"patrickdlee/vagrant-examples" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
 "pixelb/scripts" -> "pixelb/ps_mem"
+"a2o/snoopy" -> "fboender/ansible-cmdb" ["e"=1]
+"test-kitchen/kitchen-vagrant" -> "neillturner/kitchen-ansible" ["e"=1]
+"BretFisher/udemy-docker-mastery" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"yandex/gixy" -> "goss-org/goss" ["e"=1]
+"hashicorp/packer" -> "ansible/awx" ["e"=1]
 "leucos/ansible-tuto" -> "turkenh/ansible-interactive-tutorial"
 "leucos/ansible-tuto" -> "geerlingguy/ansible-vagrant-examples"
 "leucos/ansible-tuto" -> "geerlingguy/ansible-for-devops"
@@ -1242,6 +1494,8 @@ digraph G {
 "leucos/ansible-tuto" -> "lorin/ansible-quickref"
 "leucos/ansible-tuto" -> "fboender/ansible-cmdb"
 "leucos/ansible-tuto" -> "freetonik/ansible-tuto-rus"
+"geerlingguy/ansible-role-docker" -> "geerlingguy/ansible-for-devops" ["e"=1]
+"geerlingguy/ansible-role-docker" -> "ansible/ansible-lint" ["e"=1]
 "ansible/ansible-examples" -> "geerlingguy/ansible-for-devops"
 "ansible/ansible-examples" -> "ansible/ansible" ["e"=1]
 "ansible/ansible-examples" -> "ansible/awx"
@@ -1257,6 +1511,10 @@ digraph G {
 "ansible/ansible-examples" -> "kubernetes/kops" ["e"=1]
 "ansible/ansible-examples" -> "helm/helm" ["e"=1]
 "ansible/ansible-examples" -> "kubernetes/ingress-nginx" ["e"=1]
+"redhat-cop/infra-ansible" -> "redhat-cop/infra.aap_configuration" ["e"=1]
+"lework/Ansible-roles" -> "fboender/ansible-cmdb" ["e"=1]
+"lework/Ansible-roles" -> "adithyakhamithkar/ansible-playbooks" ["e"=1]
+"knqyf263/pet" -> "goss-org/goss" ["e"=1]
 "mizzy/serverspec" -> "mizzy/specinfra" ["e"=1]
 "mizzy/serverspec" -> "itamae-kitchen/itamae" ["e"=1]
 "mizzy/serverspec" -> "test-kitchen/test-kitchen" ["e"=1]
@@ -1275,6 +1533,14 @@ digraph G {
 "krobertson/deb-s3" -> "MayaraCloud/apt-transport-s3"
 "krobertson/deb-s3" -> "deb-s3/deb-s3"
 "krobertson/deb-s3" -> "crohr/rpm-s3"
+"joedicastro/vps-comparison" -> "scottslowe/learning-tools" ["e"=1]
+"Telmate/terraform-provider-proxmox" -> "dmacvicar/terraform-provider-libvirt" ["e"=1]
+"mitchellh/vagrant-aws" -> "geerlingguy/ansible-vagrant-examples" ["e"=1]
+"kvz/bash3boilerplate" -> "sstephenson/bats" ["e"=1]
+"gdraheim/docker-systemctl-replacement" -> "ansible/molecule" ["e"=1]
+"gdraheim/docker-systemctl-replacement" -> "mitogen-hq/mitogen" ["e"=1]
+"octodns/octodns" -> "goss-org/goss" ["e"=1]
+"octodns/octodns" -> "pytest-dev/pytest-testinfra" ["e"=1]
 "rundeck/rundeck" -> "semaphoreui/semaphore"
 "rundeck/rundeck" -> "ansible/awx"
 "rundeck/rundeck" -> "StackStorm/st2" ["e"=1]
@@ -1311,6 +1577,7 @@ digraph G {
 "linux-system-roles/timesync" -> "linux-system-roles/selinux"
 "linux-system-roles/kdump" -> "linux-system-roles/tuned"
 "linux-system-roles/test-harness" -> "linux-system-roles/tuned"
+"vmware/terraform-provider-vsphere" -> "ansible-collections/community.vmware" ["e"=1]
 "ansible/awx" -> "semaphoreui/semaphore"
 "ansible/awx" -> "ansible/ansible" ["e"=1]
 "ansible/awx" -> "ansible/molecule"
@@ -1326,7 +1593,20 @@ digraph G {
 "ansible/awx" -> "helm/helm" ["e"=1]
 "ansible/awx" -> "grafana/loki" ["e"=1]
 "ansible/awx" -> "ansible-community/ara"
+"openstack/ansible-hardening" -> "ansible/ansible-lockdown" ["e"=1]
+"openstack/ansible-hardening" -> "dev-sec/ansible-collection-hardening" ["e"=1]
+"openstack/ansible-hardening" -> "debops/debops-playbooks" ["e"=1]
+"openstack/ansible-hardening" -> "nickjj/ansigenome" ["e"=1]
+"vagrant-libvirt/vagrant-libvirt" -> "dmacvicar/terraform-provider-libvirt" ["e"=1]
+"vagrant-libvirt/vagrant-libvirt" -> "ansible/molecule" ["e"=1]
+"vagrant-libvirt/vagrant-libvirt" -> "ansible/ansible-lint" ["e"=1]
+"dthree/addict" -> "nickjj/ansigenome" ["e"=1]
+"GoogleContainerTools/container-diff" -> "goss-org/goss" ["e"=1]
 "siderolabs/conform" -> "goreleaser/chglog"
+"kairen/kubeadm-ansible" -> "kubealex/libvirt-k8s-provisioner" ["e"=1]
+"amnuts/opcache-gui" -> "richardforth/apache2buddy" ["e"=1]
+"redhat-developer/vscode-yaml" -> "ansible/vscode-ansible" ["e"=1]
+"redhat-developer/yaml-language-server" -> "ansible/ansible-language-server" ["e"=1]
 "vstconsulting/polemarch" -> "vstconsulting/vstutils"
 "vstconsulting/polemarch" -> "node-ci/nci-ansible-ui"
 "vstconsulting/polemarch" -> "ansible-community/ara"
@@ -1337,90 +1617,123 @@ digraph G {
 "vstconsulting/polemarch" -> "mmumshad/ansible-playable" ["e"=1]
 "vstconsulting/polemarch" -> "cloudfirst/PromAnsible" ["e"=1]
 "vstconsulting/polemarch" -> "ansible-collections/community.zabbix" ["e"=1]
+"geerlingguy/ansible-role-pip" -> "robertdebock/ansible-role-update" ["e"=1]
 "linux-system-roles/firewall" -> "linux-system-roles/crypto_policies"
 "oatakan/windows-ansible-example" -> "oatakan/ansible-role-windows_template_build"
+"smarkets/marge-bot" -> "nickjj/ansigenome" ["e"=1]
 "linux-system-roles/template" -> "linux-system-roles/metrics"
 "rundeck/terraform-provider-rundeck" -> "rundeck/go-rundeck"
+"geerlingguy/mac-dev-playbook" ["l"="7.855,-12.749", "c"=739]
+"geerlingguy/ansible-for-devops" ["l"="8.7,-12.345"]
+"geerlingguy/ansible-vagrant-examples" ["l"="8.679,-12.407"]
 "ansible/ansible-lint" ["l"="8.621,-12.332"]
-"ansible/molecule" ["l"="8.594,-12.34"]
+"dev-sec/ansible-collection-hardening" ["l"="8.651,-12.339"]
 "ansible/awx" ["l"="8.666,-12.296"]
+"ansible/molecule" ["l"="8.594,-12.34"]
+"StackStorm/st2" ["l"="8.806,-8.352", "c"=14]
+"rundeck/rundeck" ["l"="8.754,-12.27"]
+"nginx/ansible-role-nginx" ["l"="7.923,-12.985", "c"=739]
+"ansible-collections/community.general" ["l"="8.67,-12.176"]
+"robertdebock/ansible-role-bootstrap" ["l"="8.578,-11.919"]
 "ansible-community/ara" ["l"="8.591,-12.361"]
 "pytest-dev/pytest-testinfra" ["l"="8.527,-12.368"]
-"adrienverge/yamllint" ["l"="7.56,-8.782"]
+"adrienverge/yamllint" ["l"="7.56,-8.782", "c"=14]
 "fboender/ansible-cmdb" ["l"="8.646,-12.367"]
-"dev-sec/ansible-collection-hardening" ["l"="8.651,-12.339"]
 "ansible/ansible-container" ["l"="8.57,-12.372"]
 "goss-org/goss" ["l"="8.512,-12.343"]
 "mitogen-hq/mitogen" ["l"="8.557,-12.338"]
 "ansible/ansible-examples" ["l"="8.741,-12.376"]
-"ansible-collections/community.general" ["l"="8.67,-12.176"]
 "pearofducks/ansible-vim" ["l"="8.615,-12.368"]
-"terraform-linters/tflint" ["l"="10.43,-6.201"]
+"terraform-linters/tflint" ["l"="10.43,-6.201", "c"=162]
 "semaphoreui/semaphore" ["l"="8.73,-12.317"]
+"chassing/linux-sysadmin-interview-questions" ["l"="29.118,-24.626", "c"=530]
+"shellspec/shellspec" ["l"="-14.076,-6.249", "c"=86]
+"sstephenson/bats" ["l"="8.403,-12.357"]
 "ansible/workshops" ["l"="8.636,-12.256"]
 "ansible/lightbulb" ["l"="8.59,-12.306"]
 "ansible/test-playbooks" ["l"="8.658,-12.216"]
 "redhat-cop/infra.aap_configuration" ["l"="8.601,-12.158"]
-"redhat-cop/agnosticd" ["l"="10.584,-11.449"]
+"redhat-cop/agnosticd" ["l"="10.584,-11.449", "c"=431]
 "ansible/ansible-navigator" ["l"="8.595,-12.18"]
 "ansible-community/awesome-ansible" ["l"="8.618,-12.298"]
 "ansible/product-demos" ["l"="8.615,-12.126"]
 "redhat-cop/automation-good-practices" ["l"="8.597,-12.141"]
-"geerlingguy/ansible-for-devops" ["l"="8.7,-12.345"]
-"napalm-automation/napalm" ["l"="6.153,-2.967"]
+"napalm-automation/napalm" ["l"="6.153,-2.967", "c"=225]
 "ansible/ansible-builder" ["l"="8.624,-12.162"]
+"trimstray/the-practical-linux-hardening-guide" ["l"="-14.079,-6.44", "c"=86]
 "jordansissel/fpm" ["l"="8.4,-12.414"]
 "goreleaser/nfpm" ["l"="8.387,-12.472"]
 "aptly-dev/aptly" ["l"="8.461,-12.439"]
-"sstephenson/bats" ["l"="8.403,-12.357"]
-"statsd/statsd" ["l"="8.736,-8.412"]
-"koalaman/shellcheck" ["l"="-13.954,-6.871"]
-"cloudflare/cfssl" ["l"="8.397,-8.872"]
-"kelseyhightower/confd" ["l"="5.877,-12.294"]
+"statsd/statsd" ["l"="8.736,-8.412", "c"=14]
+"koalaman/shellcheck" ["l"="-13.954,-6.871", "c"=86]
+"cloudflare/cfssl" ["l"="8.397,-8.872", "c"=14]
+"kelseyhightower/confd" ["l"="5.877,-12.294", "c"=270]
 "jordansissel/pleaserun" ["l"="8.309,-12.417"]
-"rkt/rkt" ["l"="5.819,-12.402"]
-"apenwarr/sshuttle" ["l"="-45.49,-32.364"]
-"hashicorp/packer" ["l"="8.511,-8.523"]
-"saltstack/salt" ["l"="8.794,-8.296"]
+"rkt/rkt" ["l"="5.819,-12.402", "c"=270]
+"apenwarr/sshuttle" ["l"="-45.49,-32.364", "c"=53]
+"hashicorp/packer" ["l"="8.511,-8.523", "c"=14]
+"saltstack/salt" ["l"="8.794,-8.296", "c"=14]
 "apt-mirror/apt-mirror" ["l"="8.374,-12.537"]
-"spotify/dh-virtualenv" ["l"="45.205,20.858"]
+"spotify/dh-virtualenv" ["l"="45.205,20.858", "c"=20]
 "krobertson/deb-s3" ["l"="8.309,-12.493"]
-"smallstep/certificates" ["l"="8.47,-8.891"]
+"smallstep/certificates" ["l"="8.47,-8.891", "c"=14]
 "mizzy/serverspec" ["l"="8.463,-12.354"]
 "rcrowley/freight" ["l"="8.414,-12.563"]
-"astraw/stdeb" ["l"="45.381,20.768"]
+"astraw/stdeb" ["l"="45.381,20.768", "c"=20]
 "debops/debops-tools" ["l"="8.564,-12.432"]
-"geerlingguy/ansible-vagrant-examples" ["l"="8.679,-12.407"]
-"geerlingguy/mac-dev-playbook" ["l"="7.855,-12.749"]
-"ansible/ansible" ["l"="8.653,-8.318"]
-"kubernetes-sigs/kubespray" ["l"="8.139,-8.73"]
-"geerlingguy/ansible-for-kubernetes" ["l"="7.852,-12.86"]
-"geerlingguy/ansible-role-docker" ["l"="7.896,-12.912"]
-"dastergon/awesome-sre" ["l"="29.18,-24.697"]
-"kelseyhightower/kubernetes-the-hard-way" ["l"="8.077,-8.409"]
+"josenk/terraform-provider-esxi" ["l"="-49.186,6.423", "c"=959]
+"dmacvicar/terraform-provider-libvirt" ["l"="8.519,-12.473"]
+"cloudalchemy/ansible-prometheus" ["l"="7.973,-13.003", "c"=739]
+"ansible/ansible" ["l"="8.653,-8.318", "c"=14]
+"kubernetes-sigs/kubespray" ["l"="8.139,-8.73", "c"=14]
+"geerlingguy/ansible-for-kubernetes" ["l"="7.852,-12.86", "c"=739]
+"geerlingguy/ansible-role-docker" ["l"="7.896,-12.912", "c"=739]
+"dastergon/awesome-sre" ["l"="29.18,-24.697", "c"=530]
+"kelseyhightower/kubernetes-the-hard-way" ["l"="8.077,-8.409", "c"=14]
 "leucos/ansible-tuto" ["l"="8.712,-12.397"]
+"cockpit-project/cockpit" ["l"="12.211,-9.335", "c"=18]
 "pixelb/ps_mem" ["l"="8.438,-12.256"]
 "pixelb/scripts" ["l"="8.385,-12.224"]
-"rlerdorf/opcache-status" ["l"="-16.004,25.899"]
-"major/MySQLTuner-perl" ["l"="8.934,-4.512"]
-"oerdnj/deb.sury.org" ["l"="-15.848,25.887"]
-"mitchellkrogza/apache-ultimate-bad-bot-blocker" ["l"="12.133,-34.143"]
-"amnuts/opcache-gui" ["l"="-16.014,25.869"]
-"monitoringartist/zabbix-community-repos" ["l"="9.6,-3.19"]
-"dj-wasabi/ansible-zabbix-server" ["l"="9.526,-3.133"]
-"phpsysinfo/phpsysinfo" ["l"="6.649,-2.356"]
+"rlerdorf/opcache-status" ["l"="-16.004,25.899", "c"=50]
+"major/MySQLTuner-perl" ["l"="8.934,-4.512", "c"=382]
+"oerdnj/deb.sury.org" ["l"="-15.848,25.887", "c"=50]
+"mitchellkrogza/apache-ultimate-bad-bot-blocker" ["l"="12.133,-34.143", "c"=906]
+"amnuts/opcache-gui" ["l"="-16.014,25.869", "c"=50]
+"monitoringartist/zabbix-community-repos" ["l"="9.6,-3.19", "c"=1177]
+"dj-wasabi/ansible-zabbix-server" ["l"="9.526,-3.133", "c"=1177]
+"phpsysinfo/phpsysinfo" ["l"="6.649,-2.356", "c"=225]
 "richardforth/apache2buddy" ["l"="8.334,-12.21"]
-"strizhechenko/netutils-linux" ["l"="6.391,-4.193"]
-"cloudflare/sslconfig" ["l"="-20.69,-21.834"]
-"nbs-system/naxsi" ["l"="-20.847,-21.651"]
+"strizhechenko/netutils-linux" ["l"="6.391,-4.193", "c"=725]
+"cloudflare/sslconfig" ["l"="-20.69,-21.834", "c"=245]
+"nbs-system/naxsi" ["l"="-20.847,-21.651", "c"=245]
+"ComplianceAsCode/content" ["l"="8.527,-12.967", "c"=1228]
+"inspec/inspec" ["l"="8.492,-12.311"]
+"ansible/ansible-lockdown" ["l"="8.584,-12.404"]
+"StackExchange/blackbox" ["l"="10.211,-6.508", "c"=162]
+"concourse/concourse" ["l"="8.095,-8.587", "c"=14]
+"tianon/gosu" ["l"="5.908,-12.175", "c"=270]
 "linux-system-roles/logging" ["l"="8.509,-11.934"]
 "linux-system-roles/ssh" ["l"="8.486,-11.916"]
 "linux-system-roles/ha_cluster" ["l"="8.465,-11.891"]
+"ekalinin/Dockerfile.vim" ["l"="10.26,-5.948", "c"=162]
+"rootusercop/Free-DevOps-Books-1" ["l"="29.122,-24.85", "c"=530]
+"turnbullpress/dockerbook-code" ["l"="-5.686,12.275", "c"=619]
+"lorin/ansiblebook" ["l"="8.648,-12.491"]
+"jenkinsci/configuration-as-code-plugin" ["l"="5.357,-4.492", "c"=767]
+"torfsen/python-systemd-tutorial" ["l"="45.252,20.893", "c"=20]
+"freeipa/ansible-freeipa" ["l"="9.493,-8.554", "c"=14]
+"GoogleContainerTools/container-structure-test" ["l"="7.75,-8.797", "c"=14]
 "Azure-Samples/ansible-playbooks" ["l"="8.903,-12.31"]
 "microsoft/AnsibleLabs" ["l"="8.928,-12.328"]
 "Azure/azure_modules" ["l"="8.936,-12.296"]
 "ansible-collections/azure" ["l"="8.887,-12.257"]
 "Azure/azure_preview_modules" ["l"="8.918,-12.281"]
+"taverntesting/tavern" ["l"="45.455,19.217", "c"=1169]
+"vmware/pyvmomi" ["l"="-49.988,6.907", "c"=1172]
+"ansible-collections/community.vmware" ["l"="8.686,-12.153"]
+"roxy-wi/roxy-wi" ["l"="9.181,-8.988", "c"=14]
+"getblocklab/block-lab" ["l"="11.782,-35.477", "c"=27]
+"ansible/galaxy" ["l"="8.549,-12.289"]
 "haidaraM/ansible-playbook-grapher" ["l"="8.591,-12.28"]
 "willthames/ansible-inventory-grapher" ["l"="8.605,-12.411"]
 "jdauphant/awesome-ansible" ["l"="8.621,-12.388"]
@@ -1429,82 +1742,101 @@ digraph G {
 "ansible/vscode-ansible" ["l"="8.639,-12.128"]
 "HewlettPackard/monkeyble" ["l"="8.509,-12.212"]
 "ansible/event-driven-ansible" ["l"="8.57,-12.162"]
-"cidrblock/td4a" ["l"="6.174,-3.016"]
+"cidrblock/td4a" ["l"="6.174,-3.016", "c"=225]
+"glauth/glauth" ["l"="8.801,-8.778", "c"=14]
+"bats-core/bats-core" ["l"="-14.039,-6.396", "c"=86]
+"jtesta/ssh-audit" ["l"="-45.228,-32.091", "c"=53]
 "do-community/ansible-playbooks" ["l"="8.909,-12.358"]
 "adithyakhamithkar/ansible-playbooks" ["l"="8.826,-12.375"]
-"nickjj/ansible-docker" ["l"="7.939,-13.007"]
+"nickjj/ansible-docker" ["l"="7.939,-13.007", "c"=739]
 "do-community/ansible-laravel-demo" ["l"="8.985,-12.356"]
+"dell/dellemc-openmanage-ansible-modules" ["l"="-40.916,-34.178", "c"=360]
+"ansible-collections/vmware.vmware_rest" ["l"="8.717,-12.148"]
+"trimstray/linux-hardening-checklist" ["l"="-14.217,-6.416", "c"=86]
 "debops/debops" ["l"="8.567,-12.4"]
 "debops/debops-playbooks" ["l"="8.653,-12.466"]
-"dev-sec/ansible-ssh-hardening" ["l"="8.479,-12.834"]
-"dmacvicar/terraform-provider-libvirt" ["l"="8.519,-12.473"]
+"dev-sec/ansible-ssh-hardening" ["l"="8.479,-12.834", "c"=1228]
+"vyos/vyos-1x" ["l"="6.14,-3.949", "c"=725]
+"vyos/vyos.vyos" ["l"="8.778,-12.092"]
 "Artemmkin/infrastructure-as-code-tutorial" ["l"="8.713,-12.433"]
 "scottslowe/learning-tools" ["l"="8.682,-12.44"]
 "turkenh/ansible-interactive-tutorial" ["l"="8.693,-12.381"]
 "Artemmkin/infrastructure-as-code-example" ["l"="8.764,-12.479"]
-"shuaibiyy/awesome-tf" ["l"="10.46,-6.236"]
+"shuaibiyy/awesome-tf" ["l"="10.46,-6.236", "c"=162]
 "enginyoyen/ansible-best-practises" ["l"="8.655,-12.393"]
-"adammck/terraform-inventory" ["l"="10.277,-6.189"]
-"hobby-kube/guide" ["l"="7.828,-8.627"]
-"chassing/linux-sysadmin-interview-questions" ["l"="29.118,-24.626"]
+"adammck/terraform-inventory" ["l"="10.277,-6.189", "c"=162]
+"hobby-kube/guide" ["l"="7.828,-8.627", "c"=14]
+"geerlingguy/ansible-role-jenkins" ["l"="7.892,-12.985", "c"=739]
+"mizzy/specinfra" ["l"="6.213,-38.394", "c"=617]
 "chase/vim-ansible-yaml" ["l"="8.625,-12.489"]
 "MicahElliott/Rocannon" ["l"="8.635,-12.565"]
 "stephpy/vim-yaml" ["l"="8.658,-12.585"]
 "jlafon/ansible-profile" ["l"="8.578,-12.494"]
-"warpnet/awesome-prometheus" ["l"="9.545,-10.48"]
-"moul/awesome-ssh" ["l"="26.111,-26.128"]
-"wmariuss/awesome-devops" ["l"="29.231,-24.771"]
-"omerbsezer/Fast-Ansible" ["l"="29.143,-24.901"]
+"warpnet/awesome-prometheus" ["l"="9.545,-10.48", "c"=484]
+"moul/awesome-ssh" ["l"="26.111,-26.128", "c"=32]
+"wmariuss/awesome-devops" ["l"="29.231,-24.771", "c"=530]
+"omerbsezer/Fast-Ansible" ["l"="29.143,-24.901", "c"=530]
 "rundeck/docs" ["l"="8.893,-12.21"]
 "rundeck/rundeck-cli" ["l"="8.865,-12.221"]
-"eon01/kubernetes-workshop" ["l"="7.73,-8.642"]
-"gravitational/workshop" ["l"="7.992,-8.67"]
-"Leo-G/Data-Science-Wiki" ["l"="47.96,28.242"]
-"chef/bento" ["l"="-49.169,6.567"]
-"geerlingguy/ansible-role-security" ["l"="7.867,-12.919"]
-"geerlingguy/ansible-role-jenkins" ["l"="7.892,-12.985"]
-"geerlingguy/packer-boxes" ["l"="-49.181,6.519"]
-"ansistrano/deploy" ["l"="-16.161,25.883"]
-"ripienaar/puppet-reportprint" ["l"="1.537,-31.54"]
-"amscanne/huptime" ["l"="45.356,20.601"]
-"elastic/logstash-forwarder" ["l"="-3.816,9.028"]
+"pomerium/pomerium" ["l"="8.327,-8.893", "c"=14]
+"eon01/kubernetes-workshop" ["l"="7.73,-8.642", "c"=14]
+"gravitational/workshop" ["l"="7.992,-8.67", "c"=14]
+"Leo-G/Data-Science-Wiki" ["l"="47.96,28.242", "c"=89]
+"chef/bento" ["l"="-49.169,6.567", "c"=959]
+"geerlingguy/ansible-role-security" ["l"="7.867,-12.919", "c"=739]
+"geerlingguy/packer-boxes" ["l"="-49.181,6.519", "c"=959]
+"ansistrano/deploy" ["l"="-16.161,25.883", "c"=50]
+"firehol/firehol" ["l"="-43.042,-32.202", "c"=143]
+"emre/storm" ["l"="-14.839,-11.838", "c"=1047]
+"kimchi-project/kimchi" ["l"="9.3,-8.933", "c"=14]
+"ninjaaron/replacing-bash-scripting-with-python" ["l"="44.951,20.418", "c"=20]
+"ripienaar/puppet-reportprint" ["l"="1.537,-31.54", "c"=997]
+"amscanne/huptime" ["l"="45.356,20.601", "c"=20]
+"elastic/logstash-forwarder" ["l"="-3.816,9.028", "c"=540]
 "asteris-llc/converge" ["l"="8.247,-12.421"]
+"itamae-kitchen/itamae" ["l"="6.148,-38.447", "c"=617]
+"icholy/ttygif" ["l"="22.831,-26.458", "c"=28]
 "pulp/pulpcore" ["l"="8.656,-11.857"]
 "pulp/pulp-oci-images" ["l"="8.659,-11.828"]
-"pulp/pulp_rpm" ["l"="15.053,-11.28"]
+"pulp/pulp_rpm" ["l"="15.053,-11.28", "c"=855]
 "pulp/pulp_ansible" ["l"="8.632,-11.955"]
 "pulp/pulp-ui" ["l"="8.682,-11.847"]
 "pulp/pulp_container" ["l"="8.642,-11.898"]
 "pulp/pulp-cli" ["l"="8.685,-11.829"]
 "pulp/pulp_installer" ["l"="8.641,-11.821"]
 "pulp/pulp-operator" ["l"="8.67,-11.808"]
-"goreleaser/goreleaser" ["l"="4.049,-8.931"]
-"shurcooL/vfsgen" ["l"="3.99,-8.357"]
-"gokrazy/gokrazy" ["l"="-16.248,-45.838"]
-"AlecAivazis/survey" ["l"="5.097,-5.438"]
-"src-d/go-git" ["l"="4.011,-8.553"]
-"google/renameio" ["l"="-52.29,7.79"]
-"vbauerster/mpb" ["l"="5.094,-5.512"]
+"goreleaser/goreleaser" ["l"="4.049,-8.931", "c"=0]
+"shurcooL/vfsgen" ["l"="3.99,-8.357", "c"=0]
+"gokrazy/gokrazy" ["l"="-16.248,-45.838", "c"=1284]
+"AlecAivazis/survey" ["l"="5.097,-5.438", "c"=784]
+"src-d/go-git" ["l"="4.011,-8.553", "c"=0]
+"google/renameio" ["l"="-52.29,7.79", "c"=682]
+"vbauerster/mpb" ["l"="5.094,-5.512", "c"=784]
 "goreleaser/chglog" ["l"="8.299,-12.552"]
-"goreleaser/goreleaser-action" ["l"="4.528,-8.739"]
+"goreleaser/goreleaser-action" ["l"="4.528,-8.739", "c"=0]
 "purpleidea/mgmt" ["l"="8.475,-12.399"]
-"caddyserver/certmagic" ["l"="4.008,-8.676"]
-"Zxilly/go-size-analyzer" ["l"="4.358,-8.75"]
-"h2non/filetype" ["l"="3.847,-8.634"]
-"dominikh/go-tools" ["l"="4.116,-8.669"]
+"caddyserver/certmagic" ["l"="4.008,-8.676", "c"=0]
+"Zxilly/go-size-analyzer" ["l"="4.358,-8.75", "c"=0]
+"h2non/filetype" ["l"="3.847,-8.634", "c"=0]
+"dominikh/go-tools" ["l"="4.116,-8.669", "c"=0]
+"angstwad/docker.ubuntu" ["l"="7.888,-13.147", "c"=739]
+"ansible/ansible-docker-base" ["l"="8.629,-12.533"]
+"Fmstrat/diy-ipmi" ["l"="12.824,-9.433", "c"=18]
 "ansible-community/ansible-bender" ["l"="8.57,-12.295"]
-"containers/ansible-podman-collections" ["l"="8.638,-9.019"]
-"ikke-t/podman-container-systemd" ["l"="8.712,-9.038"]
-"user-cont/colin" ["l"="-17.505,-2.988"]
+"containers/ansible-podman-collections" ["l"="8.638,-9.019", "c"=14]
+"ikke-t/podman-container-systemd" ["l"="8.712,-9.038", "c"=14]
+"user-cont/colin" ["l"="-17.505,-2.988", "c"=2006]
 "ansible-collections/overview" ["l"="8.652,-12.153"]
 "ansible/mazer" ["l"="8.516,-12.267"]
-"containers/buildah" ["l"="8.171,-8.818"]
+"containers/buildah" ["l"="8.171,-8.818", "c"=14]
 "ansible/ansible-runner-service" ["l"="8.54,-12.239"]
-"ansibleplaybookbundle/ansible-playbook-bundle" ["l"="8.047,-13.859"]
+"ansibleplaybookbundle/ansible-playbook-bundle" ["l"="8.047,-13.859", "c"=507]
 "ansible/galaxy_ng" ["l"="8.58,-12.147"]
+"kadalu/kadalu" ["l"="8.47,-8.834", "c"=14]
+"glific/glific" ["l"="8.958,-12.418"]
 "volanja/ansible_spec" ["l"="8.373,-12.324"]
 "volanja/ansible-sample-tdd" ["l"="8.317,-12.316"]
-"robertdebock/ansible-role-bootstrap" ["l"="8.578,-11.919"]
+"justjanne/powerline-go" ["l"="4.198,-8.795", "c"=0]
 "robertdebock/ansible-role-update" ["l"="8.563,-11.841"]
 "robertdebock/ansible-role-users" ["l"="8.55,-11.835"]
 "robertdebock/ansible-role-core_dependencies" ["l"="8.549,-11.994"]
@@ -1517,45 +1849,57 @@ digraph G {
 "rcrowley/debra" ["l"="8.418,-12.595"]
 "freight-team/freight" ["l"="8.394,-12.588"]
 "kumina/puppet-generic" ["l"="8.398,-12.608"]
+"apenella/go-ansible" ["l"="7.962,-9.434", "c"=14]
+"ansible/ansible-runner" ["l"="8.581,-12.242"]
 "dominis/ansible-shell" ["l"="8.605,-12.478"]
 "abhishekkr/ansible-dashr" ["l"="8.604,-12.587"]
 "lorin/ansible-quickref" ["l"="8.632,-12.446"]
 "pgolm/ansible-inventory-manager" ["l"="8.597,-12.536"]
-"alaxli/ansible_ui" ["l"="9.12,-5.892"]
+"alaxli/ansible_ui" ["l"="9.12,-5.892", "c"=278]
 "ansible-provisioning/ansible-provisioning" ["l"="8.6,-12.502"]
+"ceph/ceph-ansible" ["l"="2.335,14.921", "c"=756]
 "ansible/ansible-lint-action" ["l"="8.636,-12.079"]
 "ndom91/AnsibleFest2020-Slides" ["l"="8.636,-12.026"]
-"ansible/ansible-runner" ["l"="8.581,-12.242"]
 "ansible/awx-operator" ["l"="8.609,-12.205"]
 "ansible/receptor" ["l"="8.58,-12.173"]
 "ansible/pytest-ansible" ["l"="8.583,-12.22"]
 "ansible/eda-server" ["l"="8.549,-12.18"]
-"ansible/galaxy" ["l"="8.549,-12.289"]
-"lorin/ansiblebook" ["l"="8.648,-12.491"]
+"bridgetkromhout/devops-against-humanity" ["l"="22.817,-26.557", "c"=28]
 "ansiblebook/ansiblebook" ["l"="8.665,-12.52"]
 "ansible/ansible-modules-extras" ["l"="8.615,-12.43"]
 "ansible/ansible-modules-core" ["l"="8.638,-12.419"]
-"mantl/terraform.py" ["l"="10.202,-6.162"]
+"mantl/terraform.py" ["l"="10.202,-6.162", "c"=162]
 "ColoredCow/portal" ["l"="9.055,-12.43"]
 "ColoredCow/resources" ["l"="9.016,-12.43"]
 "ColoredCow/api-connector-wordpress" ["l"="9.04,-12.439"]
 "ColoredCow/SesPress" ["l"="9.055,-12.45"]
+"ianmiell/shutit" ["l"="45.239,20.552", "c"=20]
 "willthames/ansible-review" ["l"="8.595,-12.453"]
 "groupon/ansible-silo" ["l"="8.575,-12.464"]
+"containers/udica" ["l"="-17.563,-2.513", "c"=2006]
+"linux-system-roles/selinux" ["l"="8.546,-11.932"]
+"OpenSCAP/openscap" ["l"="8.48,-13.03", "c"=1228]
+"upserve/docker-api" ["l"="4.27,-37.484", "c"=1]
+"major/cis-rhel-ansible" ["l"="8.527,-12.914", "c"=1228]
+"jborean93/packer-windoze" ["l"="-49.097,6.569", "c"=959]
+"jborean93/ansible-windows" ["l"="8.777,-12.183"]
 "thegeeklab/ansible-later" ["l"="8.452,-12.104"]
+"dev-sec/linux-baseline" ["l"="8.5,-12.779", "c"=1228]
 "ginsys/ansible-plugins" ["l"="8.563,-12.566"]
 "n0ts/ansible-human_log" ["l"="8.556,-12.479"]
 "ansible/tower-cli" ["l"="8.598,-12.392"]
-"ansible/ansible-lockdown" ["l"="8.584,-12.404"]
 "ansible/test-network-modules" ["l"="8.651,-12.439"]
-"oVirt/ovirt-ansible" ["l"="9.614,-8.816"]
-"geerlingguy/awx-container" ["l"="7.709,-13.043"]
+"oVirt/ovirt-ansible" ["l"="9.614,-8.816", "c"=14]
+"geerlingguy/awx-container" ["l"="7.709,-13.043", "c"=739]
+"vmware/pyvmomi-community-samples" ["l"="-49.974,6.928", "c"=1172]
 "ColoredCow/laravel-gsuite" ["l"="9.036,-12.453"]
-"jborean93/ansible-windows" ["l"="8.777,-12.183"]
+"ansible-collections/community.kubernetes" ["l"="8.72,-12.098"]
 "ansible-collections/ansible.windows" ["l"="8.741,-12.169"]
 "oatakan/windows-ansible-example" ["l"="8.839,-12.163"]
 "ansible-collections/community.windows" ["l"="8.72,-12.167"]
 "crombeen/ansible" ["l"="8.748,-12.22"]
+"test-kitchen/kitchen-docker" ["l"="9.117,-12.882", "c"=1111]
+"neillturner/kitchen-ansible" ["l"="8.446,-12.332"]
 "robertdebock/ansible-role-locale" ["l"="8.549,-11.814"]
 "robertdebock/ansible-role-common" ["l"="8.529,-11.823"]
 "robertdebock/ansible-role-python_pip" ["l"="8.537,-11.816"]
@@ -1589,131 +1933,149 @@ digraph G {
 "HuaweiSwitch/CloudEngine-Ansible" ["l"="8.987,-11.828"]
 "luffycjf/network_build_automation" ["l"="9.035,-11.76"]
 "robertdebock/ansible-role-environment" ["l"="8.516,-11.811"]
-"netbox-community/netbox" ["l"="6.275,-2.905"]
-"gravitational/teleport" ["l"="8.359,-8.663"]
-"rundeck/rundeck" ["l"="8.754,-12.27"]
-"netbirdio/netbird" ["l"="12.227,-9.184"]
-"authelia/authelia" ["l"="12.218,-9.231"]
-"louislam/dockge" ["l"="12.364,-9.049"]
-"goharbor/harbor" ["l"="8.366,-8.597"]
+"lsyncd/lsyncd" ["l"="14.29,-11.446", "c"=855]
+"bpkg/bpkg" ["l"="-14.179,-6.272", "c"=86]
+"adnanh/webhook" ["l"="12.609,-9.304", "c"=18]
+"hashivim/vim-terraform" ["l"="10.345,-6.022", "c"=162]
+"pyinfra-dev/pyinfra" ["l"="44.891,21.02", "c"=20]
+"niieani/bash-oo-framework" ["l"="-13.999,-6.477", "c"=86]
+"in28minutes/devops-master-class" ["l"="25.702,-30.028", "c"=768]
+"jenkinsci/docker" ["l"="5.433,-4.478", "c"=767]
+"netbox-community/netbox" ["l"="6.275,-2.905", "c"=225]
+"gravitational/teleport" ["l"="8.359,-8.663", "c"=14]
+"netbirdio/netbird" ["l"="12.227,-9.184", "c"=18]
+"authelia/authelia" ["l"="12.218,-9.231", "c"=18]
+"louislam/dockge" ["l"="12.364,-9.049", "c"=18]
+"goharbor/harbor" ["l"="8.366,-8.597", "c"=14]
+"theforeman/foreman" ["l"="14.92,-11.374", "c"=855]
+"cobbler/cobbler" ["l"="1.254,15.036", "c"=857]
+"jwilder/dockerize" ["l"="5.995,-12.162", "c"=270]
+"adrienverge/openfortivpn" ["l"="-45.008,13.646", "c"=42]
 "ansible/community" ["l"="8.636,-12.213"]
-"redhat-cop/openshift-playbooks" ["l"="10.625,-11.427"]
-"ramrexx/CloudForms_Essentials" ["l"="-21.912,11.378"]
-"openshift/openshift-ansible-contrib" ["l"="10.611,-11.415"]
+"redhat-cop/openshift-playbooks" ["l"="10.625,-11.427", "c"=431]
+"ramrexx/CloudForms_Essentials" ["l"="-21.912,11.378", "c"=22]
+"openshift/openshift-ansible-contrib" ["l"="10.611,-11.415", "c"=431]
 "redhat-cop/automate-tower-ha-dr" ["l"="8.602,-12.231"]
-"redhat-cop/openshift-toolkit" ["l"="10.605,-11.452"]
-"ansible-lockdown/RHEL7-STIG" ["l"="8.598,-12.963"]
-"openshift/openshift-ansible" ["l"="10.56,-11.413"]
+"redhat-cop/openshift-toolkit" ["l"="10.605,-11.452", "c"=431]
+"ansible-lockdown/RHEL7-STIG" ["l"="8.598,-12.963", "c"=1228]
+"openshift/openshift-ansible" ["l"="10.56,-11.413", "c"=431]
 "mgmt-sa-tiger-team/skylight" ["l"="8.543,-12.263"]
-"RedHatWorkshops/openshiftv3-workshop" ["l"="10.642,-11.438"]
+"RedHatWorkshops/openshiftv3-workshop" ["l"="10.642,-11.438", "c"=431]
+"sferik/t-ruby" ["l"="-14.156,-3.214", "c"=71]
 "Stifler6996/apt-mirror" ["l"="8.346,-12.565"]
 "fortinet-ansible-dev/ansible-galaxy-fortios-collection" ["l"="8.846,-11.983"]
 "napalm-automation-community/napalm-fortios" ["l"="8.901,-11.925"]
+"dotless-de/vagrant-vbguest" ["l"="11.514,-34.959", "c"=27]
+"spotify/docker-gc" ["l"="6.002,-12.244", "c"=270]
 "PaloAltoNetworks/azure" ["l"="8.941,-12.246"]
+"Tikam02/DevOps-Guide" ["l"="29.088,-24.732", "c"=530]
 "ansible-collections/cisco.iosxr" ["l"="8.757,-12.086"]
 "ansible-collections/cisco.nxos" ["l"="8.743,-12.08"]
 "ansible-collections/cisco.ios" ["l"="8.767,-12.066"]
 "ansible-collections/ansible.netcommon" ["l"="8.7,-12.104"]
 "ansible-collections/cisco.asa" ["l"="8.798,-12.068"]
-"openstack/openstack-ansible" ["l"="1.271,15.077"]
+"openstack/openstack-ansible" ["l"="1.271,15.077", "c"=857]
 "ansible-community/antsibull-build" ["l"="8.661,-12.194"]
 "robertdebock/ansible-generator" ["l"="8.547,-12.073"]
 "andresbott/ansible-autodoc" ["l"="8.429,-12.106"]
 "murphypetercl/ansible-mdgen" ["l"="8.441,-12.126"]
-"ansible-lockdown/RHEL7-CIS" ["l"="8.612,-12.927"]
-"ansible-lockdown/RHEL6-STIG" ["l"="8.575,-12.967"]
-"juliedavila/STIGMA" ["l"="8.563,-13.001"]
-"openstack/ansible-hardening" ["l"="8.553,-12.923"]
-"openstack-archive/openstack-ansible-security" ["l"="8.519,-12.891"]
-"Icinga/ansible-playbooks" ["l"="9.148,-11.27"]
-"MindPointGroup/ansible-vmware-provisioning" ["l"="8.626,-12.975"]
-"major/cis-rhel-ansible" ["l"="8.527,-12.914"]
+"ansible-lockdown/RHEL7-CIS" ["l"="8.612,-12.927", "c"=1228]
+"ansible-lockdown/RHEL6-STIG" ["l"="8.575,-12.967", "c"=1228]
+"juliedavila/STIGMA" ["l"="8.563,-13.001", "c"=1228]
+"openstack/ansible-hardening" ["l"="8.553,-12.923", "c"=1228]
+"openstack-archive/openstack-ansible-security" ["l"="8.519,-12.891", "c"=1228]
+"Icinga/ansible-playbooks" ["l"="9.148,-11.27", "c"=1174]
+"MindPointGroup/ansible-vmware-provisioning" ["l"="8.626,-12.975", "c"=1228]
+"CiscoDevNet/cml-community" ["l"="6.035,-3.149", "c"=225]
+"sensu/sensu" ["l"="3.039,-35.926", "c"=171]
 "ansible-collections/community.crypto" ["l"="8.678,-12.104"]
 "ansible-collections/community.dns" ["l"="8.689,-12.052"]
 "ansible-collections/ansible.posix" ["l"="8.685,-12.086"]
 "ansible-collections/community.mysql" ["l"="8.69,-12.065"]
-"ansible/ansible-docker-base" ["l"="8.629,-12.533"]
-"getblocklab/block-lab" ["l"="11.782,-35.477"]
 "ansible/ansibullbot" ["l"="8.475,-12.238"]
-"neillturner/kitchen-ansible" ["l"="8.446,-12.332"]
-"Techtonica/curriculum" ["l"="26.151,-25.11"]
-"ansible-collections/vmware.vmware_rest" ["l"="8.717,-12.148"]
-"ansible-collections/community.vmware" ["l"="8.686,-12.153"]
+"Techtonica/curriculum" ["l"="26.151,-25.11", "c"=32]
 "vmware/ansible-vsphere-gos-validation" ["l"="8.747,-12.144"]
-"vmware/vsphere-automation-sdk-python" ["l"="-50.025,6.907"]
-"vmware/ansible-for-nsxt" ["l"="-50.127,6.866"]
-"ansible-collections/community.zabbix" ["l"="9.556,-3.138"]
-"vmware/terraform-provider-vsphere" ["l"="-49.205,6.437"]
+"vmware/vsphere-automation-sdk-python" ["l"="-50.025,6.907", "c"=1172]
+"vmware/ansible-for-nsxt" ["l"="-50.127,6.866", "c"=1172]
+"ansible-collections/community.zabbix" ["l"="9.556,-3.138", "c"=1177]
+"vmware/terraform-provider-vsphere" ["l"="-49.205,6.437", "c"=959]
 "ansible-collections/community.network" ["l"="8.716,-12.117"]
-"vmware/terraform-provider-vcd" ["l"="-50.206,6.954"]
-"vmware/dscr-for-vmware" ["l"="-50.013,6.843"]
+"vmware/terraform-provider-vcd" ["l"="-50.206,6.954", "c"=1172]
+"vmware/dscr-for-vmware" ["l"="-50.013,6.843", "c"=1172]
 "ansible-collections/ansible.utils" ["l"="8.703,-12.084"]
 "kurokobo/awx-on-k3s" ["l"="8.57,-12.187"]
 "ansible/awx-ee" ["l"="8.608,-12.171"]
 "ansible-community/awx-operator-helm" ["l"="8.549,-12.209"]
-"okd-project/okd" ["l"="10.49,-11.411"]
+"okd-project/okd" ["l"="10.49,-11.411", "c"=431]
+"ekalinin/github-markdown-toc" ["l"="-0.712,-30.781", "c"=295]
+"emcrisostomo/fswatch" ["l"="26.562,-23.002", "c"=63]
+"google/mtail" ["l"="9.532,-10.636", "c"=484]
 "CiscoDevNet/ansible-mso" ["l"="8.802,-12.03"]
 "CiscoDevNet/aci-learning-labs-code-samples" ["l"="8.828,-12.047"]
-"CiscoTestAutomation/genielibs" ["l"="6,-3.016"]
-"automateyournetwork/ACEye" ["l"="5.74,-3.144"]
+"CiscoTestAutomation/genielibs" ["l"="6,-3.016", "c"=225]
+"automateyournetwork/ACEye" ["l"="5.74,-3.144", "c"=225]
 "CiscoDevNet/ansible-dcnm" ["l"="8.807,-12.007"]
+"datacenter/acitoolkit" ["l"="6.017,-3.231", "c"=225]
 "kubealex/libvirt-k8s-provisioner" ["l"="8.483,-12.591"]
 "kubealex/libvirt-ocp4-provisioner" ["l"="8.469,-12.646"]
 "MusicDin/kubitect" ["l"="8.489,-12.552"]
 "jamonation/terraform-libvirt-k8s-lab" ["l"="8.476,-12.619"]
 "nickjj/rolespec" ["l"="8.513,-12.407"]
-"fgrehm/vagrant-lxc" ["l"="11.392,-34.943"]
-"ClusterHQ/flocker" ["l"="5.982,-12.372"]
-"William-Yeh/ansible-prometheus" ["l"="9.18,-10.739"]
-"sovereign/sovereign" ["l"="15.447,-8.196"]
+"fgrehm/vagrant-lxc" ["l"="11.392,-34.943", "c"=27]
+"ClusterHQ/flocker" ["l"="5.982,-12.372", "c"=270]
+"William-Yeh/ansible-prometheus" ["l"="9.18,-10.739", "c"=484]
+"sovereign/sovereign" ["l"="15.447,-8.196", "c"=555]
+"progrium/bashstyle" ["l"="-14.301,-6.208", "c"=86]
+"CentOS/CentOS-Dockerfiles" ["l"="5.622,-12.124", "c"=270]
 "debops/ansible-pki" ["l"="8.695,-12.526"]
 "ansible-collections/collection_template" ["l"="8.612,-12.077"]
 "ansible-collections/news-for-maintainers" ["l"="8.598,-12.034"]
 "MayaraCloud/apt-transport-s3" ["l"="8.275,-12.494"]
 "deb-s3/deb-s3" ["l"="8.252,-12.504"]
+"ansible-collections/community.postgresql" ["l"="8.683,-12.033"]
 "ansible/creator-ee" ["l"="8.594,-12.123"]
 "larastudio/stedding" ["l"="9.036,-12.354"]
 "ansible-collections/junipernetworks.junos" ["l"="8.727,-12.07"]
-"ansible-collections/arista.eos" ["l"="5.8,-2.87"]
+"ansible-collections/arista.eos" ["l"="5.8,-2.87", "c"=225]
 "ansible-community/molecule-vagrant" ["l"="8.686,-11.926"]
 "ansible-community/molecule-docker" ["l"="8.686,-11.973"]
 "ansible-community/molecule-plugins" ["l"="8.661,-11.921"]
 "ansible-community/molecule-podman" ["l"="8.704,-11.941"]
 "ansible-collections/community.docker" ["l"="8.666,-12.068"]
+"pupilfirst/pupilfirst" ["l"="46.049,17.971", "c"=1976]
 "ansible-collections/microsoft.ad" ["l"="8.765,-12.156"]
-"ansible-lockdown/Windows-2019-CIS" ["l"="8.663,-12.928"]
+"ansible-lockdown/Windows-2019-CIS" ["l"="8.663,-12.928", "c"=1228]
 "ansible-collections/community.grafana" ["l"="8.713,-12.045"]
+"thomvaill/tads-boilerplate" ["l"="6.363,-12.207", "c"=270]
 "yankurniawan/ansible-for-aws" ["l"="8.914,-12.458"]
 "glenjarvis/ansible-hands-on" ["l"="8.937,-12.483"]
-"ansible-network/cisco_ios" ["l"="6.341,-3.074"]
-"colin-mccarthy/ansible-playbooks-for-cisco-ios" ["l"="6.32,-3.092"]
-"CiscoTestAutomation/genieparser" ["l"="6.039,-2.965"]
-"netbox-community/ansible_modules" ["l"="6.136,-2.752"]
-"vyos/vyos.vyos" ["l"="8.778,-12.092"]
-"PaloAltoNetworks/pan-os-ansible" ["l"="-44.987,13.853"]
+"ansible-network/cisco_ios" ["l"="6.341,-3.074", "c"=225]
+"colin-mccarthy/ansible-playbooks-for-cisco-ios" ["l"="6.32,-3.092", "c"=225]
+"CiscoTestAutomation/genieparser" ["l"="6.039,-2.965", "c"=225]
+"netbox-community/ansible_modules" ["l"="6.136,-2.752", "c"=225]
+"PaloAltoNetworks/pan-os-ansible" ["l"="-44.987,13.853", "c"=42]
 "ansible/instruqt" ["l"="8.601,-12.101"]
 "cloin/ee-builds" ["l"="8.588,-12.065"]
 "ansible-content-lab/cloud-deploy" ["l"="8.594,-12.081"]
 "kubealex/event-driven-automation" ["l"="8.604,-12.059"]
 "redhat-partner-tech/automated-smart-management" ["l"="8.629,-12.102"]
+"CiscoDevNet/coding-skills-sample-code" ["l"="6.054,-3.161", "c"=225]
 "redhat-cop/aap_utilities" ["l"="8.567,-12.138"]
 "redhat-cop/ee_utilities" ["l"="8.57,-12.122"]
 "redhat-cop/aap_configuration_template" ["l"="8.581,-12.128"]
 "ansible/galaxy_collection" ["l"="8.556,-12.131"]
-"redhat-cop/infra-ansible" ["l"="10.614,-11.477"]
+"redhat-cop/infra-ansible" ["l"="10.614,-11.477", "c"=431]
 "samdoran/ansible-role-pgsql-replication" ["l"="8.567,-12.092"]
-"ansible-collections/community.kubernetes" ["l"="8.72,-12.098"]
 "ansible-collections/kubernetes.core" ["l"="8.746,-12.055"]
 "ansible-collections/community.aws" ["l"="8.76,-12.109"]
 "ansible/pinakes" ["l"="8.536,-12.145"]
 "ansible/receptor-collection" ["l"="8.539,-12.173"]
-"test-kitchen/test-kitchen" ["l"="9.12,-12.923"]
-"test-kitchen/kitchen-docker" ["l"="9.117,-12.882"]
-"test-kitchen/kitchen-vagrant" ["l"="9.145,-12.894"]
+"test-kitchen/test-kitchen" ["l"="9.12,-12.923", "c"=1111]
+"test-kitchen/kitchen-vagrant" ["l"="9.145,-12.894", "c"=1111]
 "nylas/ansible-test" ["l"="8.36,-12.293"]
 "ahelal/kitchen-ansiblepush" ["l"="8.418,-12.299"]
-"jhaals/ansible-vault" ["l"="7.151,-12.845"]
-"newcontext-oss/kitchen-terraform" ["l"="10.365,-6.139"]
+"jhaals/ansible-vault" ["l"="7.151,-12.845", "c"=666]
+"newcontext-oss/kitchen-terraform" ["l"="10.365,-6.139", "c"=162]
 "vincentbernat/serverspec-example" ["l"="8.394,-12.295"]
 "neillturner/kitchen-verifier-serverspec" ["l"="8.407,-12.313"]
 "benko/ocp4-lab-deployment" ["l"="8.463,-12.673"]
@@ -1721,7 +2083,6 @@ digraph G {
 "ansible-collections/amazon.aws" ["l"="8.733,-12.13"]
 "ansible-collections/community.libvirt" ["l"="8.692,-12.015"]
 "ansible-community/molecule-libvirt" ["l"="8.724,-11.914"]
-"glific/glific" ["l"="8.958,-12.418"]
 "glific/glific-frontend" ["l"="8.989,-12.421"]
 "DalgoT4D/webapp" ["l"="8.985,-12.443"]
 "ansible/ansible-hub-ui" ["l"="8.523,-12.087"]
@@ -1730,139 +2091,209 @@ digraph G {
 "ansible/tox-ansible" ["l"="8.619,-12.142"]
 "ansible/ansible-compat" ["l"="8.653,-12.09"]
 "lxhunter/ansible-filter-plugins" ["l"="8.56,-12.526"]
-"ansible-collections/community.postgresql" ["l"="8.683,-12.033"]
 "ansible-collections/community.rabbitmq" ["l"="8.706,-12.025"]
 "robertdebock/ansible-role-hashicorp" ["l"="8.529,-11.994"]
 "linux-system-roles/kernel_settings" ["l"="8.463,-11.872"]
-"dev-sec/linux-baseline" ["l"="8.5,-12.779"]
-"inspec/inspec" ["l"="8.492,-12.311"]
-"ComplianceAsCode/content" ["l"="8.527,-12.967"]
-"CISOfy/lynis" ["l"="-48.068,-30.608"]
-"konstruktoid/ansible-role-hardening" ["l"="8.594,-12.881"]
-"voilet/cmdb" ["l"="9.039,-5.786"]
-"welliamcao/OpsManage" ["l"="8.965,-5.694"]
-"guohongze/adminset" ["l"="8.978,-5.718"]
-"allegro/ralph" ["l"="9.019,-5.717"]
-"TencentBlueKing/bk-cmdb" ["l"="8.951,-5.593"]
-"elastic/ansible-elasticsearch" ["l"="-3.729,9.017"]
-"roncoo/roncoo-cmdb" ["l"="9.046,-5.831"]
+"just-containers/s6-overlay" ["l"="5.874,-12.14", "c"=270]
+"github/scripts-to-rule-them-all" ["l"="4.279,-37.503", "c"=1]
+"antonputra/tutorials" ["l"="29.334,-23.929", "c"=658]
+"hygieia/hygieia" ["l"="8.171,-8.429", "c"=14]
+"healthchecks/healthchecks" ["l"="12.054,-9.042", "c"=18]
+"kubealex/k8s-mediaserver-operator" ["l"="9.22,-12.27", "c"=1114]
+"docker/docker-bench-security" ["l"="7.745,-8.545", "c"=14]
+"ChristianLempa/boilerplates" ["l"="12.125,-8.986", "c"=18]
+"rocky-linux/rocky" ["l"="8.463,-8.569", "c"=14]
+"rear/rear" ["l"="14.697,-11.389", "c"=855]
+"phpipam/phpipam" ["l"="6.316,-2.854", "c"=225]
+"CISOfy/lynis" ["l"="-48.068,-30.608", "c"=11]
+"konstruktoid/ansible-role-hardening" ["l"="8.594,-12.881", "c"=1228]
+"habitat-sh/habitat" ["l"="-10.042,-5.827", "c"=5]
+"geerlingguy/kubernetes-101" ["l"="7.875,-12.8", "c"=739]
+"voilet/cmdb" ["l"="9.039,-5.786", "c"=278]
+"welliamcao/OpsManage" ["l"="8.965,-5.694", "c"=278]
+"guohongze/adminset" ["l"="8.978,-5.718", "c"=278]
+"allegro/ralph" ["l"="9.019,-5.717", "c"=278]
+"TencentBlueKing/bk-cmdb" ["l"="8.951,-5.593", "c"=278]
+"elastic/ansible-elasticsearch" ["l"="-3.729,9.017", "c"=540]
+"roncoo/roncoo-cmdb" ["l"="9.046,-5.831", "c"=278]
 "ansible/ansible-language-server" ["l"="8.641,-12.187"]
 "ansible/ansible-creator" ["l"="8.583,-12.108"]
 "ansible-collections/servicenow.itsm" ["l"="8.507,-12.151"]
+"geerlingguy/macos-virtualbox-vm" ["l"="25.808,-21.242", "c"=207]
 "redhat-cop/infra.leapp" ["l"="8.549,-12.09"]
 "PacktPublishing/Demystifying-Ansible-Automation-Platform" ["l"="8.575,-12.079"]
-"lework/Ansible-roles" ["l"="8.934,-5.649"]
-"kadalu/kadalu" ["l"="8.47,-8.834"]
+"lework/Ansible-roles" ["l"="8.934,-5.649", "c"=278]
 "lvancrayelynghe/ansible-ubuntu" ["l"="8.883,-12.408"]
-"SecurityFTW/cs-suite" ["l"="11.246,-4.678"]
-"composewell/streamly" ["l"="-20.724,-20.119"]
-"geerlingguy/ansible-role-php" ["l"="7.843,-13.005"]
-"pupilfirst/pupilfirst" ["l"="46.049,17.971"]
-"gruntwork-io/terratest" ["l"="10.402,-6.248"]
-"k1LoW/awspec" ["l"="10.324,-6.172"]
-"terraform-compliance/cli" ["l"="10.446,-6.148"]
-"dtan4/terraforming" ["l"="10.301,-6.258"]
+"SecurityFTW/cs-suite" ["l"="11.246,-4.678", "c"=147]
+"composewell/streamly" ["l"="-20.724,-20.119", "c"=118]
+"geerlingguy/ansible-role-php" ["l"="7.843,-13.005", "c"=739]
+"gruntwork-io/terratest" ["l"="10.402,-6.248", "c"=162]
+"k1LoW/awspec" ["l"="10.324,-6.172", "c"=162]
+"terraform-compliance/cli" ["l"="10.446,-6.148", "c"=162]
+"dtan4/terraforming" ["l"="10.301,-6.258", "c"=162]
+"geerlingguy/internet-pi" ["l"="7.939,-12.723", "c"=739]
+"kkrishguptaa/reseter.css" ["l"="22.836,-29.792", "c"=36]
+"kward/shunit2" ["l"="-14.1,-6.318", "c"=86]
+"hvac/hvac" ["l"="7.07,-12.85", "c"=666]
 "HewlettPackard/squest" ["l"="8.517,-12.177"]
-"fitbeard/awx-without-k8s" ["l"="15.11,-11.58"]
-"vmware/packer-examples-for-vsphere" ["l"="-49.183,6.472"]
+"fitbeard/awx-without-k8s" ["l"="15.11,-11.58", "c"=855]
+"vmware/packer-examples-for-vsphere" ["l"="-49.183,6.472", "c"=959]
 "jetporch/jetporch" ["l"="8.53,-12.115"]
-"DavidWittman/ansible-redis" ["l"="7.908,-13.034"]
-"bats-core/bats-core" ["l"="-14.039,-6.396"]
-"kward/shunit2" ["l"="-14.1,-6.318"]
-"niieani/bash-oo-framework" ["l"="-13.999,-6.477"]
-"Yelp/dumb-init" ["l"="5.942,-12.151"]
-"spotify/docker-gc" ["l"="6.002,-12.244"]
-"quay/clair" ["l"="7.794,-8.649"]
-"docker/docker-bench-security" ["l"="7.745,-8.545"]
-"vagrant-libvirt/vagrant-libvirt" ["l"="-49.251,6.598"]
-"purpleidea/oh-my-vagrant" ["l"="11.561,-34.823"]
+"DavidWittman/ansible-redis" ["l"="7.908,-13.034", "c"=739]
+"Yelp/dumb-init" ["l"="5.942,-12.151", "c"=270]
+"quay/clair" ["l"="7.794,-8.649", "c"=14]
+"geerlingguy/raspberry-pi-dramble" ["l"="7.904,-12.701", "c"=739]
+"vagrant-libvirt/vagrant-libvirt" ["l"="-49.251,6.598", "c"=959]
+"purpleidea/oh-my-vagrant" ["l"="11.561,-34.823", "c"=27]
+"bluxmit/alnoda-workspaces" ["l"="12.14,-8.72", "c"=18]
+"pressly/sup" ["l"="3.96,-8.288", "c"=0]
+"chef/omnibus" ["l"="9.101,-12.859", "c"=1111]
+"go-jira/jira" ["l"="7.071,-8.638", "c"=14]
+"gauntlt/gauntlt" ["l"="28.323,-23.855", "c"=895]
+"maxfields2000/dockerjenkins_tutorial" ["l"="5.337,-4.561", "c"=767]
 "ansible/schemas" ["l"="8.655,-12.104"]
 "ansible/ansible-dev-tools" ["l"="8.624,-12.058"]
 "ansible-community/toolset" ["l"="8.648,-12.051"]
 "ansible/ansible-dev-environment" ["l"="8.618,-12.091"]
+"ilikenwf/apt-fast" ["l"="-14.494,-1.084", "c"=152]
+"BMDan/tuning-primer.sh" ["l"="8.884,-4.516", "c"=382]
 "manicminer/ansible-auto-scaling-tutorial" ["l"="8.965,-12.507"]
 "electroniceagle/ansible-dc-ec2-tutorial" ["l"="8.991,-12.529"]
 "dellis23/ansible-toolkit" ["l"="8.605,-12.645"]
 "jseguillon/caradoc" ["l"="8.485,-12.189"]
+"konstruktoid/hardening" ["l"="8.59,-12.844", "c"=1228]
 "yaegassy/coc-ansible" ["l"="8.665,-12.252"]
+"William-Yeh/docker-ansible" ["l"="8.358,-12.823", "c"=1228]
 "openshift/community.okd" ["l"="8.771,-12.012"]
+"chef-boneyard/devops-kungfu" ["l"="9.088,-12.94", "c"=1111]
 "ansible-community/ansible.content_builder" ["l"="8.566,-12.062"]
 "wangcongxing/NetOpsBase" ["l"="9.049,-11.743"]
 "linux-system-roles/crypto_policies" ["l"="8.497,-11.959"]
-"fabiolb/fabio" ["l"="3.763,-8.265"]
-"google/mtail" ["l"="9.532,-10.636"]
-"camptocamp/terraboard" ["l"="10.43,-6.162"]
-"weaveworks/ignite" ["l"="8.078,-9.038"]
-"open-policy-agent/conftest" ["l"="7.662,-8.954"]
-"gruntwork-io/terragrunt" ["l"="10.394,-6.276"]
-"GoogleContainerTools/container-structure-test" ["l"="7.75,-8.797"]
-"terraform-docs/terraform-docs" ["l"="10.45,-6.208"]
-"Glench/Vim-Jinja2-Syntax" ["l"="9.617,-5.913"]
-"hashivim/vim-terraform" ["l"="10.345,-6.022"]
-"TerryHowe/ansible-modules-hashivault" ["l"="7.153,-12.868"]
-"chefspec/chefspec" ["l"="9.135,-12.881"]
-"cloud-custodian/cloud-custodian" ["l"="10.27,-6.351"]
-"dev-sec/cis-docker-benchmark" ["l"="8.5,-12.717"]
-"aquasecurity/kube-bench" ["l"="7.701,-8.809"]
+"thoughtworks/talisman" ["l"="11.121,-11.804", "c"=431]
+"jenkinsci/pipeline-examples" ["l"="5.342,-4.465", "c"=767]
+"vyos/vyos-build" ["l"="6.165,-4.014", "c"=725]
+"fabiolb/fabio" ["l"="3.763,-8.265", "c"=0]
+"camptocamp/terraboard" ["l"="10.43,-6.162", "c"=162]
+"weaveworks/ignite" ["l"="8.078,-9.038", "c"=14]
+"netbootxyz/netboot.xyz" ["l"="12.281,-9.163", "c"=18]
+"grammarly/rocker" ["l"="5.845,-12.33", "c"=270]
+"open-policy-agent/conftest" ["l"="7.662,-8.954", "c"=14]
+"gruntwork-io/terragrunt" ["l"="10.394,-6.276", "c"=162]
+"terraform-docs/terraform-docs" ["l"="10.45,-6.208", "c"=162]
+"OpenVPN/easy-rsa" ["l"="-43.136,13.174", "c"=866]
+"theZiz/aha" ["l"="-11.862,-3.656", "c"=964]
+"megastep/makeself" ["l"="-14.219,-6.258", "c"=86]
+"AcalephStorage/awesome-devops" ["l"="29.273,-24.755", "c"=530]
+"apache/libcloud" ["l"="1.381,15.064", "c"=857]
+"thefinn93/ansible-letsencrypt" ["l"="7.895,-13.081", "c"=739]
+"Glench/Vim-Jinja2-Syntax" ["l"="9.617,-5.913", "c"=278]
+"TerryHowe/ansible-modules-hashivault" ["l"="7.153,-12.868", "c"=666]
+"chefspec/chefspec" ["l"="9.135,-12.881", "c"=1111]
+"cloud-custodian/cloud-custodian" ["l"="10.27,-6.351", "c"=162]
+"dev-sec/cis-docker-benchmark" ["l"="8.5,-12.717", "c"=1228]
+"aquasecurity/kube-bench" ["l"="7.701,-8.809", "c"=14]
+"afonsof/jenkins-material-theme" ["l"="5.415,-4.526", "c"=767]
+"errbotio/errbot" ["l"="44.706,20.856", "c"=20]
+"iongion/container-desktop" ["l"="8.498,-8.73", "c"=14]
+"joubertredrat/awesome-devops" ["l"="29.332,-24.78", "c"=530]
 "ansible/eda-server-operator" ["l"="8.53,-12.162"]
 "ansible/eda-server-prototype" ["l"="8.523,-12.14"]
 "AlexNabokikh/windows-playbook" ["l"="8.832,-12.137"]
 "AlexNabokikh/ubuntu-playbook" ["l"="8.866,-12.12"]
-"datacenter/aci-ansible" ["l"="6.008,-3.318"]
-"napalm-automation/napalm-ansible" ["l"="6.201,-3.061"]
+"datacenter/aci-ansible" ["l"="6.008,-3.318", "c"=225]
+"napalm-automation/napalm-ansible" ["l"="6.201,-3.061", "c"=225]
 "ansible-community/ansible-build-data" ["l"="8.672,-12.138"]
+"docker/labs" ["l"="8.063,-8.353", "c"=14]
+"mozilla/ssh_scan" ["l"="9.438,-9.129", "c"=14]
+"bugy/script-server" ["l"="12.455,-8.978", "c"=18]
 "pksteyn/php-fpmpal" ["l"="8.295,-12.194"]
-"Telmate/terraform-provider-proxmox" ["l"="9.796,-12.009"]
-"digitalocean/go-libvirt" ["l"="3.521,-7.915"]
+"Telmate/terraform-provider-proxmox" ["l"="9.796,-12.009", "c"=1246]
+"digitalocean/go-libvirt" ["l"="3.521,-7.915", "c"=0]
 "fabianlee/terraform-libvirt-ubuntu-examples" ["l"="8.486,-12.518"]
-"kubevirt/kubevirt" ["l"="8.188,-9.078"]
-"bpg/terraform-provider-proxmox" ["l"="9.825,-12.023"]
-"giovtorres/kvm-install-vm" ["l"="-49.41,6.513"]
-"poseidon/matchbox" ["l"="10.266,-10.108"]
-"metallb/metallb" ["l"="8.104,-8.968"]
-"jakobadam/packer-qemu-templates" ["l"="-49.202,6.54"]
-"juju4/ansible-harden-windows" ["l"="8.507,-12.811"]
-"rgl/windows-domain-controller-vagrant" ["l"="-49.176,6.626"]
-"PaloAltoNetworks/terraform-templates" ["l"="-44.912,13.82"]
+"kubevirt/kubevirt" ["l"="8.188,-9.078", "c"=14]
+"bpg/terraform-provider-proxmox" ["l"="9.825,-12.023", "c"=1246]
+"giovtorres/kvm-install-vm" ["l"="-49.41,6.513", "c"=959]
+"poseidon/matchbox" ["l"="10.266,-10.108", "c"=740]
+"metallb/metallb" ["l"="8.104,-8.968", "c"=14]
+"jakobadam/packer-qemu-templates" ["l"="-49.202,6.54", "c"=959]
+"ovh/debian-cis" ["l"="8.551,-12.865", "c"=1228]
+"passbolt/passbolt_api" ["l"="-51.788,7.164", "c"=682]
+"alexei-led/pumba" ["l"="7.768,-8.818", "c"=14]
+"jpmens/jo" ["l"="-13.58,-6.622", "c"=86]
+"juju4/ansible-harden-windows" ["l"="8.507,-12.811", "c"=1228]
+"rgl/windows-domain-controller-vagrant" ["l"="-49.176,6.626", "c"=959]
+"avleen/bashttpd" ["l"="-49.122,1.295", "c"=475]
+"sobolevn/git-secret" ["l"="10.28,-6.52", "c"=162]
+"PaloAltoNetworks/terraform-templates" ["l"="-44.912,13.82", "c"=42]
+"rundeck-plugins/ansible-plugin" ["l"="7.238,-12.849", "c"=666]
+"jonmorehouse/terraform-provisioner-ansible" ["l"="10.175,-6.16", "c"=162]
+"railsmachine/rump" ["l"="1.493,-31.581", "c"=997]
+"Graylog2/graylog2-server" ["l"="8.675,-8.52", "c"=14]
+"zabbix/zabbix-docker" ["l"="9.624,-3.136", "c"=1177]
+"opsschool/curriculum" ["l"="29.095,-24.562", "c"=530]
+"StackExchange/dnscontrol" ["l"="8.716,-8.908", "c"=14]
+"riemers/ansible-gitlab-runner" ["l"="7.956,-13.057", "c"=739]
+"minishift/minishift" ["l"="10.544,-11.372", "c"=431]
 "dmsimard/ara-archive" ["l"="8.523,-12.433"]
+"ghik/kubernetes-the-harder-way" ["l"="29.319,-25.055", "c"=530]
+"bitnami/minideb" ["l"="5.948,-11.921", "c"=270]
 "jetporch/jetporch_examples" ["l"="8.492,-12.091"]
 "jetporch/jeti" ["l"="8.5,-12.077"]
 "ansible-provisioning/workshop-provisioning" ["l"="8.595,-12.556"]
 "DalgoT4D/DDP_backend" ["l"="9.001,-12.457"]
 "rundeck/terraform-provider-rundeck" ["l"="8.917,-12.201"]
+"AGWA/git-crypt" ["l"="10.259,-6.591", "c"=162]
+"bitly/oauth2_proxy" ["l"="8.207,-8.879", "c"=14]
+"buildbot/buildbot" ["l"="44.527,20.742", "c"=20]
 "node-ci/nci-ansible-ui" ["l"="8.761,-12.556"]
 "node-ci/nci" ["l"="8.791,-12.603"]
 "vstconsulting/polemarch" ["l"="8.721,-12.497"]
 "sir-xw/apt-mirror-python" ["l"="8.367,-12.565"]
+"Caiyeon/goldfish" ["l"="7.102,-12.887", "c"=666]
+"HariSekhon/Nagios-Plugins" ["l"="9.145,-11.192", "c"=1174]
+"vscode-shellcheck/vscode-shellcheck" ["l"="-55.625,7.338", "c"=444]
+"weaveworks/grafanalib" ["l"="9.705,-10.633", "c"=484]
+"patrickdlee/vagrant-examples" ["l"="11.565,-34.906", "c"=27]
+"a2o/snoopy" ["l"="7.567,-6.371", "c"=335]
+"BretFisher/udemy-docker-mastery" ["l"="6.199,-12.02", "c"=270]
+"yandex/gixy" ["l"="-20.871,-21.776", "c"=245]
 "freetonik/ansible-tuto-rus" ["l"="8.792,-12.451"]
-"helm/charts" ["l"="8.061,-8.74"]
-"kubernetes/examples" ["l"="8.205,-8.803"]
-"kubernetes/kops" ["l"="8.054,-8.695"]
-"helm/helm" ["l"="8.212,-8.631"]
-"kubernetes/ingress-nginx" ["l"="8.173,-8.783"]
-"mizzy/specinfra" ["l"="6.213,-38.394"]
-"itamae-kitchen/itamae" ["l"="6.148,-38.447"]
-"ryotarai/infrataster" ["l"="6.241,-38.351"]
+"helm/charts" ["l"="8.061,-8.74", "c"=14]
+"kubernetes/examples" ["l"="8.205,-8.803", "c"=14]
+"kubernetes/kops" ["l"="8.054,-8.695", "c"=14]
+"helm/helm" ["l"="8.212,-8.631", "c"=14]
+"kubernetes/ingress-nginx" ["l"="8.173,-8.783", "c"=14]
+"knqyf263/pet" ["l"="-13.733,-6.588", "c"=86]
+"ryotarai/infrataster" ["l"="6.241,-38.351", "c"=617]
 "crohr/rpm-s3" ["l"="8.276,-12.523"]
-"StackStorm/st2" ["l"="8.806,-8.352"]
-"rundeck-plugins/ansible-plugin" ["l"="7.238,-12.849"]
-"spinnaker/spinnaker" ["l"="8.128,-8.559"]
-"runatlantis/atlantis" ["l"="10.447,-6.287"]
-"rancher/rancher" ["l"="8.266,-8.584"]
+"joedicastro/vps-comparison" ["l"="23.504,-27.135", "c"=28]
+"mitchellh/vagrant-aws" ["l"="11.539,-34.933", "c"=27]
+"kvz/bash3boilerplate" ["l"="-14.217,-6.339", "c"=86]
+"gdraheim/docker-systemctl-replacement" ["l"="-49.364,7.75", "c"=937]
+"octodns/octodns" ["l"="8.553,-8.922", "c"=14]
+"spinnaker/spinnaker" ["l"="8.128,-8.559", "c"=14]
+"runatlantis/atlantis" ["l"="10.447,-6.287", "c"=162]
+"rancher/rancher" ["l"="8.266,-8.584", "c"=14]
 "lasselehtinen/barn" ["l"="9.077,-12.354"]
-"linux-system-roles/selinux" ["l"="8.546,-11.932"]
 "linux-system-roles/kdump" ["l"="8.563,-11.945"]
 "linux-system-roles/firewall" ["l"="8.513,-11.976"]
 "linux-system-roles/linux-system-roles.github.io" ["l"="8.537,-11.898"]
 "linux-system-roles/tuned" ["l"="8.549,-11.915"]
 "linux-system-roles/test-harness" ["l"="8.53,-11.912"]
-"grafana/loki" ["l"="8.403,-8.551"]
+"grafana/loki" ["l"="8.403,-8.551", "c"=14]
+"dthree/addict" ["l"="-1.392,-26.826", "c"=814]
+"GoogleContainerTools/container-diff" ["l"="7.801,-8.764", "c"=14]
 "siderolabs/conform" ["l"="8.251,-12.599"]
+"kairen/kubeadm-ansible" ["l"="7.729,-12.853", "c"=739]
+"redhat-developer/vscode-yaml" ["l"="-55.671,7.231", "c"=444]
+"redhat-developer/yaml-language-server" ["l"="-12.714,-9.856", "c"=21]
 "vstconsulting/vstutils" ["l"="8.753,-12.527"]
-"MrMEEE/awx-build" ["l"="15.059,-11.537"]
-"Tinkoff/Nginx-builder" ["l"="-20.899,-22.201"]
-"mmumshad/ansible-playable" ["l"="29.368,-24.207"]
-"cloudfirst/PromAnsible" ["l"="9.111,-5.869"]
+"MrMEEE/awx-build" ["l"="15.059,-11.537", "c"=855]
+"Tinkoff/Nginx-builder" ["l"="-20.899,-22.201", "c"=245]
+"mmumshad/ansible-playable" ["l"="29.368,-24.207", "c"=658]
+"cloudfirst/PromAnsible" ["l"="9.111,-5.869", "c"=278]
+"geerlingguy/ansible-role-pip" ["l"="7.852,-12.906", "c"=739]
 "oatakan/ansible-role-windows_template_build" ["l"="8.869,-12.155"]
+"smarkets/marge-bot" ["l"="7.313,-8.741", "c"=14]
 "rundeck/go-rundeck" ["l"="8.941,-12.191"]
 }

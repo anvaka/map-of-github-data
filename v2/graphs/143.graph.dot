@@ -14,6 +14,7 @@ digraph G {
 "hasherezade/pe-sieve" -> "odzhan/injection" ["e"=1]
 "hasherezade/pe-sieve" -> "mandiant/capa"
 "hasherezade/pe-sieve" -> "mandiant/speakeasy"
+"greenbone/openvas-scanner" -> "VirusTotal/yara" ["e"=1]
 "kevthehermit/PasteHunter" -> "certsocietegenerale/fame"
 "kevthehermit/PasteHunter" -> "eth0izzle/bucket-stream" ["e"=1]
 "kevthehermit/PasteHunter" -> "Neo23x0/signature-base"
@@ -29,6 +30,18 @@ digraph G {
 "kevthehermit/PasteHunter" -> "Yara-Rules/rules"
 "kevthehermit/PasteHunter" -> "eset/malware-ioc"
 "kevthehermit/PasteHunter" -> "ThreatHuntingProject/ThreatHunting" ["e"=1]
+"netsniff-ng/netsniff-ng" -> "google/stenographer" ["e"=1]
+"Velocidex/velociraptor" -> "Neo23x0/Loki" ["e"=1]
+"volatilityfoundation/volatility" -> "VirusTotal/yara" ["e"=1]
+"volatilityfoundation/volatility" -> "mandiant/flare-vm" ["e"=1]
+"volatilityfoundation/volatility" -> "Yara-Rules/rules" ["e"=1]
+"InQuest/ThreatIngestor" -> "eset/malware-ioc" ["e"=1]
+"InQuest/ThreatIngestor" -> "ciscocsirt/GOSINT" ["e"=1]
+"InQuest/ThreatIngestor" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"InQuest/ThreatIngestor" -> "reversinglabs/reversinglabs-yara-rules" ["e"=1]
+"InQuest/ThreatIngestor" -> "armbues/ioc_parser" ["e"=1]
+"InQuest/ThreatIngestor" -> "pan-unit42/iocs" ["e"=1]
+"InQuest/ThreatIngestor" -> "InQuest/yara-rules" ["e"=1]
 "rrenaud/Gibberish-Detector" -> "phunterlau/dga_classifier"
 "rrenaud/Gibberish-Detector" -> "casics/nostril"
 "rrenaud/Gibberish-Detector" -> "domanchi/gibberish-detector"
@@ -36,6 +49,28 @@ digraph G {
 "rrenaud/Gibberish-Detector" -> "paypal/Gibberish-Detector-Java"
 "rrenaud/Gibberish-Detector" -> "baderj/domain_generation_algorithms"
 "rrenaud/Gibberish-Detector" -> "buggedcom/Gibberish-Detector-PHP"
+"NextronSystems/APTSimulator" -> "Neo23x0/Loki" ["e"=1]
+"NextronSystems/APTSimulator" -> "Neo23x0/signature-base" ["e"=1]
+"mandiant/commando-vm" -> "mandiant/flare-vm" ["e"=1]
+"volatilityfoundation/volatility3" -> "mandiant/flare-vm" ["e"=1]
+"volatilityfoundation/volatility3" -> "VirusTotal/yara" ["e"=1]
+"volatilityfoundation/volatility3" -> "mandiant/capa" ["e"=1]
+"volatilityfoundation/volatility3" -> "kevoreilly/CAPEv2" ["e"=1]
+"alexandreborges/malwoverview" -> "mandiant/capa" ["e"=1]
+"alexandreborges/malwoverview" -> "jstrosch/malware-samples" ["e"=1]
+"alexandreborges/malwoverview" -> "Neo23x0/signature-base" ["e"=1]
+"alexandreborges/malwoverview" -> "Neo23x0/Loki" ["e"=1]
+"google/rekall" -> "Yara-Rules/rules" ["e"=1]
+"google/rekall" -> "mandiant/flare-floss" ["e"=1]
+"mozilla/MozDef" -> "Netflix/Fido" ["e"=1]
+"ytisf/theZoo" -> "mandiant/flare-vm" ["e"=1]
+"ytisf/theZoo" -> "Yara-Rules/rules" ["e"=1]
+"ytisf/theZoo" -> "VirusTotal/yara" ["e"=1]
+"OpenCTI-Platform/opencti" -> "VirusTotal/yara" ["e"=1]
+"OpenCTI-Platform/opencti" -> "Neo23x0/Loki" ["e"=1]
+"OpenCTI-Platform/connectors" -> "Neo23x0/yarAnalyzer" ["e"=1]
+"Patrowl/PatrowlManager" -> "certtools/intelmq" ["e"=1]
+"Patrowl/PatrowlManager" -> "CIRCL/AIL-framework" ["e"=1]
 "Netflix/Fido" -> "certsocietegenerale/FIR" ["e"=1]
 "Netflix/Fido" -> "DefensePointSecurity/threat_note"
 "Netflix/Fido" -> "mlsecproject/combine"
@@ -66,6 +101,14 @@ digraph G {
 "advanced-threat-research/Yara-Rules" -> "pan-unit42/iocs"
 "advanced-threat-research/Yara-Rules" -> "StrangerealIntel/CyberThreatIntel"
 "advanced-threat-research/Yara-Rules" -> "mandiant/capa-rules"
+"rfxn/linux-malware-detect" -> "tomchop/malcom" ["e"=1]
+"rfxn/linux-malware-detect" -> "Neo23x0/Loki" ["e"=1]
+"rfxn/linux-malware-detect" -> "monnappa22/Limon" ["e"=1]
+"rfxn/linux-malware-detect" -> "mikesxrs/Open-Source-YARA-rules" ["e"=1]
+"rfxn/linux-malware-detect" -> "Neo23x0/signature-base" ["e"=1]
+"rfxn/linux-malware-detect" -> "viper-framework/viper" ["e"=1]
+"rfxn/linux-malware-detect" -> "Yara-Rules/rules" ["e"=1]
+"ossec/ossec-hids" -> "VirusTotal/yara" ["e"=1]
 "trendmicro/tlsh" -> "ssdeep-project/ssdeep"
 "trendmicro/tlsh" -> "sdhash/sdhash"
 "trendmicro/tlsh" -> "trendmicro/telfhash"
@@ -96,9 +139,17 @@ digraph G {
 "hasherezade/hollows_hunter" -> "Mr-Un1k0d3r/EDRs" ["e"=1]
 "hasherezade/hollows_hunter" -> "monoxgas/sRDI" ["e"=1]
 "hasherezade/hollows_hunter" -> "jthuraisamy/SysWhispers2" ["e"=1]
+"0xZ0F/Z0FCourse_ReverseEngineering" -> "hasherezade/malware_training_vol1" ["e"=1]
+"0xZ0F/Z0FCourse_ReverseEngineering" -> "mandiant/flare-vm" ["e"=1]
+"0xZ0F/Z0FCourse_ReverseEngineering" -> "malrev/ABD" ["e"=1]
+"x0rz/phishing_catcher" -> "CIRCL/AIL-framework" ["e"=1]
+"x0rz/phishing_catcher" -> "kevthehermit/PasteHunter" ["e"=1]
+"eth0izzle/bucket-stream" -> "kevthehermit/PasteHunter" ["e"=1]
 "OALabs/findyara-ida" -> "hyuunnn/Hyara"
 "OALabs/findyara-ida" -> "OALabs/hexcopy-ida"
 "OALabs/findyara-ida" -> "RolfRolles/IDBs" ["e"=1]
+"WithSecureLabs/python-exe-unpacker" -> "pan-unit42/public_tools" ["e"=1]
+"WithSecureLabs/python-exe-unpacker" -> "Neo23x0/yarGen" ["e"=1]
 "CERT-Polska/mwdb-core" -> "CERT-Polska/karton"
 "CERT-Polska/mwdb-core" -> "CERT-Polska/malduck"
 "CERT-Polska/mwdb-core" -> "CERT-Polska/mquery"
@@ -161,6 +212,8 @@ digraph G {
 "rieck/malheur" -> "Neo23x0/DLLRunner"
 "rieck/malheur" -> "malwaremusings/unpacker"
 "rieck/malheur" -> "sroberts/malwarehouse"
+"hasherezade/libpeconv" -> "hasherezade/hollows_hunter" ["e"=1]
+"hasherezade/libpeconv" -> "hasherezade/tiny_tracer" ["e"=1]
 "viper-framework/viper" -> "krmaxwell/maltrieve"
 "viper-framework/viper" -> "crits/crits"
 "viper-framework/viper" -> "certsocietegenerale/fame"
@@ -225,6 +278,7 @@ digraph G {
 "unipacker/unipacker" -> "can1357/NoVmp" ["e"=1]
 "unipacker/unipacker" -> "packing-box/awesome-executable-packing"
 "unipacker/unipacker" -> "fr0gger/awesome-ida-x64-olly-plugin" ["e"=1]
+"ashemery/exploitation-course" -> "hasherezade/malware_training_vol1" ["e"=1]
 "eset/malware-ioc" -> "Neo23x0/signature-base"
 "eset/malware-ioc" -> "reversinglabs/reversinglabs-yara-rules"
 "eset/malware-ioc" -> "advanced-threat-research/Yara-Rules"
@@ -240,6 +294,13 @@ digraph G {
 "eset/malware-ioc" -> "blackorbird/APT_REPORT"
 "eset/malware-ioc" -> "NextronSystems/APTSimulator" ["e"=1]
 "eset/malware-ioc" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections"
+"mattnotmax/cyberchef-recipes" -> "DidierStevens/DidierStevensSuite" ["e"=1]
+"secureworks/dalton" -> "certsocietegenerale/fame" ["e"=1]
+"secureworks/dalton" -> "google/stenographer" ["e"=1]
+"google/grr" -> "Neo23x0/Loki" ["e"=1]
+"elastic/ember" -> "guelfoweb/peframe" ["e"=1]
+"SamuelTulach/VirusTotalUploader" -> "VirusTotal/vt-cli" ["e"=1]
+"SamuelTulach/VirusTotalUploader" -> "VirusTotal/qt-virustotal-uploader" ["e"=1]
 "pan-unit42/playbook_viewer" -> "pan-unit42/iocs"
 "pan-unit42/playbook_viewer" -> "pan-unit42/public_tools"
 "0x4143/malware-gems" -> "hasherezade/malware_training_vol1"
@@ -257,6 +318,7 @@ digraph G {
 "0x4143/malware-gems" -> "hasherezade/hollows_hunter"
 "0x4143/malware-gems" -> "mattnotmax/cyberchef-recipes" ["e"=1]
 "0x4143/malware-gems" -> "mandiant/speakeasy"
+"Security-Onion-Solutions/securityonion" -> "mandiant/flare-vm" ["e"=1]
 "hasherezade/tiny_tracer" -> "mrexodia/dumpulator"
 "hasherezade/tiny_tracer" -> "mandiant/speakeasy"
 "hasherezade/tiny_tracer" -> "hasherezade/hollows_hunter"
@@ -272,6 +334,8 @@ digraph G {
 "hasherezade/tiny_tracer" -> "everdox/InfinityHook" ["e"=1]
 "hasherezade/tiny_tracer" -> "gaasedelen/tenet" ["e"=1]
 "hasherezade/tiny_tracer" -> "iPower/KasperskyHook" ["e"=1]
+"emposha/PHP-Shell-Detector" -> "Tencent/HaboMalHunter" ["e"=1]
+"angea/pocorgtfo" -> "hasherezade/malware_training_vol1" ["e"=1]
 "CERT-Polska/mquery" -> "CERT-Polska/ursadb"
 "CERT-Polska/mquery" -> "CERT-Polska/mwdb-core"
 "CERT-Polska/mquery" -> "fox-it/mkYARA"
@@ -281,6 +345,7 @@ digraph G {
 "CERT-Polska/mquery" -> "mbrengel/yarix"
 "CERT-Polska/mquery" -> "google/vxsig"
 "CERT-Polska/mquery" -> "ctxis/CAPE"
+"JPCERTCC/SysmonSearch" -> "JPCERTCC/MalConfScan" ["e"=1]
 "blackorbird/APT_REPORT" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections"
 "blackorbird/APT_REPORT" -> "RedDrip7/APT_Digital_Weapon"
 "blackorbird/APT_REPORT" -> "StrangerealIntel/CyberThreatIntel"
@@ -306,11 +371,35 @@ digraph G {
 "JPCERTCC/MalConfScan" -> "kevthehermit/RATDecoders"
 "JPCERTCC/MalConfScan" -> "dod-cyber-crime-center/DC3-MWCP"
 "JPCERTCC/MalConfScan" -> "bartblaze/Yara-rules"
+"theevilbit/injection" -> "hasherezade/tiny_tracer" ["e"=1]
+"mandiant/gocrack" -> "mandiant/flare-fakenet-ng" ["e"=1]
+"file/file" -> "ssdeep-project/ssdeep" ["e"=1]
 "Neo23x0/vti-dorks" -> "Neo23x0/munin"
 "Neo23x0/vti-dorks" -> "target/halogen"
+"herrbischoff/country-ip-blocks" -> "firehol/blocklist-ipsets" ["e"=1]
+"ufrisk/MemProcFS" -> "mandiant/capa" ["e"=1]
+"TeamMsgExtractor/msg-extractor" -> "ctxis/CAPE" ["e"=1]
+"TeamMsgExtractor/msg-extractor" -> "decalage2/ViperMonkey" ["e"=1]
+"TeamMsgExtractor/msg-extractor" -> "DefensePointSecurity/threat_note" ["e"=1]
+"TeamMsgExtractor/msg-extractor" -> "PUNCH-Cyber/stoq" ["e"=1]
+"TeamMsgExtractor/msg-extractor" -> "spender-sandbox/cuckoo-modified" ["e"=1]
+"hasherezade/dll_to_exe" -> "hasherezade/mal_unpack" ["e"=1]
+"hasherezade/dll_to_exe" -> "hasherezade/hollows_hunter" ["e"=1]
+"horsicq/Nauz-File-Detector" -> "hasherezade/pe-bear-releases" ["e"=1]
+"maddiestone/AndroidAppRE" -> "malrev/ABD" ["e"=1]
+"secynic/ipwhois" -> "1aN0rmus/TekDefense-Automater" ["e"=1]
+"target/strelka" -> "lmco/laikaboss" ["e"=1]
+"target/strelka" -> "EmersonElectricCo/fsf" ["e"=1]
+"target/strelka" -> "maliceio/malice" ["e"=1]
+"teamdfir/sift" -> "aboutsecurity/rastrea2r" ["e"=1]
+"StamusNetworks/SELKS" -> "rocknsm/rock" ["e"=1]
 "Silent-voice/DGA-Domain-Predict" -> "Chauncy-lab/Deep-learning-of-DGA"
 "Silent-voice/DGA-Domain-Predict" -> "roreagan/DeepDGA"
 "Silent-voice/DGA-Domain-Predict" -> "skydownacai/DGA-Domain-Detection"
+"Te-k/harpoon" -> "certtools/intelmq" ["e"=1]
+"Te-k/harpoon" -> "CIRCL/AIL-framework" ["e"=1]
+"Te-k/harpoon" -> "crits/crits" ["e"=1]
+"Te-k/harpoon" -> "ciscocsirt/GOSINT" ["e"=1]
 "toolswatch/vFeed" -> "cve-search/cve-search" ["e"=1]
 "toolswatch/vFeed" -> "vfeedio/pyvfeed"
 "toolswatch/vFeed" -> "certtools/intelmq"
@@ -356,6 +445,10 @@ digraph G {
 "kbandla/APTnotes" -> "Neo23x0/Loki"
 "kbandla/APTnotes" -> "EmpireProject/Empire" ["e"=1]
 "kbandla/APTnotes" -> "ThreatHuntingProject/ThreatHunting" ["e"=1]
+"jaegeral/security-apis" -> "DefensePointSecurity/threat_note" ["e"=1]
+"jaegeral/security-apis" -> "Lookyloo/lookyloo" ["e"=1]
+"jaegeral/security-apis" -> "certtools/intelmq" ["e"=1]
+"trailofbits/pe-parse" -> "JusticeRage/Manalyze" ["e"=1]
 "struppigel/PortEx" -> "struppigel/PortexAnalyzerGUI"
 "struppigel/PortEx" -> "rieck/malheur"
 "struppigel/PortEx" -> "malwaremusings/unpacker"
@@ -375,6 +468,10 @@ digraph G {
 "1aN0rmus/TekDefense-Automater" -> "automatingosint/osint_public" ["e"=1]
 "1aN0rmus/TekDefense-Automater" -> "jonschipp/mal-dnssearch" ["e"=1]
 "1aN0rmus/TekDefense-Automater" -> "QTek/QRadio"
+"foospidy/HoneyPy" -> "secureworks/dcept" ["e"=1]
+"foospidy/HoneyPy" -> "DefensePointSecurity/threat_note" ["e"=1]
+"gamelinux/passivedns" -> "DefensePointSecurity/threat_note" ["e"=1]
+"gamelinux/passivedns" -> "crits/crits" ["e"=1]
 "firehol/firehol" -> "firehol/blocklist-ipsets"
 "firehol/firehol" -> "firehol/iprange"
 "firehol/firehol" -> "trick77/ipset-blacklist"
@@ -392,6 +489,15 @@ digraph G {
 "firehol/firehol" -> "LibreQoE/LibreQoS" ["e"=1]
 "MalwareCantFly/Vba2Graph" -> "d00rt/emotet_research"
 "MalwareCantFly/Vba2Graph" -> "fox-it/mkYARA"
+"InQuest/iocextract" -> "armbues/ioc_parser" ["e"=1]
+"InQuest/iocextract" -> "sroberts/cacador" ["e"=1]
+"InQuest/iocextract" -> "reversinglabs/reversinglabs-yara-rules" ["e"=1]
+"InQuest/iocextract" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"InQuest/iocextract" -> "StrangerealIntel/CyberThreatIntel" ["e"=1]
+"InQuest/iocextract" -> "eset/malware-ioc" ["e"=1]
+"InQuest/iocextract" -> "sroberts/jager" ["e"=1]
+"InQuest/iocextract" -> "ciscocsirt/GOSINT" ["e"=1]
+"InQuest/iocextract" -> "Neo23x0/vti-dorks" ["e"=1]
 "csirtgadgets/massive-octo-spice" -> "csirtgadgets/bearded-avenger"
 "csirtgadgets/massive-octo-spice" -> "DefensePointSecurity/threat_note"
 "csirtgadgets/massive-octo-spice" -> "mlsecproject/combine"
@@ -400,6 +506,8 @@ digraph G {
 "csirtgadgets/massive-octo-spice" -> "Yelp/threat_intel"
 "csirtgadgets/massive-octo-spice" -> "michalpurzynski/bro-gramming" ["e"=1]
 "csirtgadgets/massive-octo-spice" -> "jpsenior/threataggregator"
+"mitre-attack/bzar" -> "Neo23x0/Fenrir" ["e"=1]
+"AmnestyTech/investigations" -> "eset/malware-ioc" ["e"=1]
 "VirusTotal/vt-py" -> "VirusTotal/vt-cli"
 "VirusTotal/vt-py" -> "VirusTotal/vt-go"
 "VirusTotal/vt-py" -> "VirusTotal/yara-python"
@@ -491,9 +599,27 @@ digraph G {
 "VirusTotal/vt-cli" -> "Rurik/Noriben"
 "VirusTotal/vt-cli" -> "cyberdefenders/email-header-analyzer" ["e"=1]
 "VirusTotal/vt-cli" -> "Neo23x0/yarGen"
+"pe3zx/my-infosec-awesome" -> "hasherezade/malware_training_vol1" ["e"=1]
+"InQuest/malware-samples" -> "jstrosch/malware-samples" ["e"=1]
+"InQuest/malware-samples" -> "InQuest/yara-rules" ["e"=1]
+"InQuest/malware-samples" -> "JusticeRage/Manalyze" ["e"=1]
+"InQuest/malware-samples" -> "Rurik/Noriben" ["e"=1]
+"InQuest/malware-samples" -> "eset/malware-ioc" ["e"=1]
+"InQuest/malware-samples" -> "ctxis/CAPE" ["e"=1]
+"InQuest/malware-samples" -> "certsocietegenerale/fame" ["e"=1]
+"InQuest/malware-samples" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"mozilla/mig" -> "refractionPOINT/limacharlie" ["e"=1]
+"mozilla/mig" -> "Netflix/Fido" ["e"=1]
+"mozilla/mig" -> "lmco/laikaboss" ["e"=1]
 "joxeankoret/multiav" -> "PlagueScanner/PlagueScanner"
 "joxeankoret/multiav" -> "quarkslab/irma"
+"misterch0c/what_is_this_c2" -> "google/vxsig" ["e"=1]
+"jekyc/wig" -> "omriher/CapTipper" ["e"=1]
+"mstfknn/malware-sample-library" -> "jstrosch/malware-samples" ["e"=1]
+"MISP/PyMISP" -> "certtools/intelmq" ["e"=1]
+"hanul93/kicomav" -> "joxeankoret/pyew" ["e"=1]
 "Bw3ll/JOP_ROCKET" -> "Bw3ll/ROP_ROCKET"
+"cisagov/Malcolm" -> "idaholab/Malcolm" ["e"=1]
 "mandiant/ioc_writer" -> "fireeye/OpenIOC_1.1"
 "mandiant/ioc_writer" -> "mandiant/iocs"
 "mandiant/ioc_writer" -> "mandiant/Reversing"
@@ -503,12 +629,14 @@ digraph G {
 "mandiant/ioc_writer" -> "YahooArchive/PyIOCe"
 "boundary/wireshark" -> "Neo23x0/yarAnalyzer"
 "boundary/wireshark" -> "jymcheong/SysmonResources"
+"mandiant/flare-emu" -> "mandiant/speakeasy" ["e"=1]
 "saferwall/saferwall" -> "CERT-Polska/drakvuf-sandbox"
 "saferwall/saferwall" -> "saferwall/pe"
 "saferwall/saferwall" -> "cert-ee/cuckoo3"
 "saferwall/saferwall" -> "ayoubfaouzi/windows-exploitation" ["e"=1]
 "saferwall/saferwall" -> "tklengyel/drakvuf" ["e"=1]
 "saferwall/saferwall" -> "CERT-Polska/malduck"
+"microsoft/ProcDump-for-Linux" -> "Yara-Rules/rules" ["e"=1]
 "endgameinc/xori" -> "endgameinc/RTA" ["e"=1]
 "endgameinc/xori" -> "felixweyne/imaginaryC2"
 "endgameinc/xori" -> "danielplohmann/smda"
@@ -530,6 +658,9 @@ digraph G {
 "sophoslabs/IoCs" -> "InQuest/yara-rules"
 "sophoslabs/IoCs" -> "netskopeoss/NetskopeThreatLabsIOCs"
 "sophoslabs/IoCs" -> "mthcht/ThreatHunting-Keywords" ["e"=1]
+"AlienVault-Labs/AlienVaultLabs" -> "spender-sandbox/cuckoo-modified" ["e"=1]
+"AlienVault-Labs/AlienVaultLabs" -> "citizenlab/malware-signatures" ["e"=1]
+"AlienVault-Labs/AlienVaultLabs" -> "EmersonElectricCo/fsf" ["e"=1]
 "OpenSOC/opensoc-ui" -> "OpenSOC/opensoc-streaming"
 "OpenSOC/opensoc-ui" -> "OpenSOC/opensoc-vagrant"
 "carbonblack/cbfeeds" -> "carbonblack/cb-event-forwarder"
@@ -549,6 +680,7 @@ digraph G {
 "OALabs/BlobRunner" -> "OALabs/hashdb"
 "OALabs/BlobRunner" -> "JPCERTCC/aa-tools"
 "OALabs/BlobRunner" -> "Cisco-Talos/DynDataResolver" ["e"=1]
+"rndinfosecguy/Scavenger" -> "kahunalu/pwnbin" ["e"=1]
 "avast/ioc" -> "sophoslabs/IoCs"
 "avast/ioc" -> "RedDrip7/APT_Digital_Weapon"
 "avast/ioc" -> "SEKOIA-IO/Community"
@@ -578,6 +710,12 @@ digraph G {
 "danielplohmann/smda" -> "fkie-cad/dewolf" ["e"=1]
 "mlsecproject/tiq-test" -> "mlsecproject/combine"
 "mlsecproject/tiq-test" -> "jpsenior/threataggregator"
+"snovvcrash/usbrip" -> "decalage2/oletools" ["e"=1]
+"vz-risk/VCDB" -> "mlsecproject/combine" ["e"=1]
+"vz-risk/VCDB" -> "aptnotes/data" ["e"=1]
+"vz-risk/VCDB" -> "DefensePointSecurity/threat_note" ["e"=1]
+"mindedsecurity/JStillery" -> "HynekPetrak/malware-jail" ["e"=1]
+"mindedsecurity/JStillery" -> "decalage2/ViperMonkey" ["e"=1]
 "Hestat/lw-yara" -> "Hestat/blazescan"
 "Hestat/lw-yara" -> "codewatchorg/Burp-Yara-Rules"
 "Hestat/lw-yara" -> "kevthehermit/YaraRules"
@@ -587,6 +725,8 @@ digraph G {
 "blacktop/malice" -> "lolnate/vt-hunter"
 "blacktop/malice" -> "r3comp1le/VT-Hunter"
 "citizenlab/bluecoat-investigations" -> "citizenlab/spyware-scan"
+"cyber-research/APTMalware" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"cldrn/nmap-nse-scripts" -> "glennzw/shodan-hq-nse" ["e"=1]
 "hyuunnn/Hyara" -> "OALabs/findyara-ida"
 "hyuunnn/Hyara" -> "fox-it/mkYARA"
 "Neo23x0/munin" -> "Neo23x0/signature-base"
@@ -604,6 +744,10 @@ digraph G {
 "Neo23x0/munin" -> "MHaggis/sysmon-dfir" ["e"=1]
 "Neo23x0/munin" -> "sbousseaden/EVTX-ATTACK-SAMPLES" ["e"=1]
 "Neo23x0/munin" -> "KasperskyLab/klara"
+"R3MRUM/PSDecode" -> "decalage2/ViperMonkey" ["e"=1]
+"R3MRUM/PSDecode" -> "DissectMalware/XLMMacroDeobfuscator" ["e"=1]
+"R3MRUM/PSDecode" -> "Neo23x0/vti-dorks" ["e"=1]
+"R3MRUM/PSDecode" -> "CERT-Polska/malduck" ["e"=1]
 "InQuest/yara-rules" -> "advanced-threat-research/Yara-Rules"
 "InQuest/yara-rules" -> "reversinglabs/reversinglabs-yara-rules"
 "InQuest/yara-rules" -> "bartblaze/Yara-rules"
@@ -620,6 +764,7 @@ digraph G {
 "InQuest/yara-rules" -> "Neo23x0/signature-base"
 "InQuest/yara-rules" -> "deadbits/yara-rules"
 "felixweyne/ProcessSpawnControl" -> "felixweyne/imaginaryC2"
+"Mixaill/FakePDB" -> "mrexodia/dumpulator" ["e"=1]
 "hasherezade/mal_unpack" -> "hasherezade/hollows_hunter"
 "hasherezade/mal_unpack" -> "hasherezade/tiny_tracer"
 "hasherezade/mal_unpack" -> "hasherezade/mal_unpack_drv"
@@ -654,6 +799,8 @@ digraph G {
 "SuperCowPowers/data_hacking" -> "P1kachu/v0lt"
 "deadbits/yara-rules" -> "prolsen/yara-rules"
 "casics/nostril" -> "rrenaud/Gibberish-Detector"
+"RicBent/Classy" -> "OALabs/hashdb-ida" ["e"=1]
+"jg-fisher/botnet" -> "boreq/botnet" ["e"=1]
 "danielpoliakov/lisa" -> "detuxsandbox/detux"
 "danielpoliakov/lisa" -> "mandiant/capa-rules"
 "danielpoliakov/lisa" -> "monnappa22/Limon"
@@ -674,6 +821,7 @@ digraph G {
 "conix-security/zer0m0n" -> "cuckoosandbox/community"
 "conix-security/zer0m0n" -> "buguroo/cuckooautoinstall"
 "401trg/detections" -> "401trg/utilities"
+"citizenlab/test-lists" -> "citizenlab/malware-indicators" ["e"=1]
 "endgameinc/binarypig" -> "Blueliv/yaraQA"
 "BoneLee/dns_tunnel_dectect_with_CNN" -> "irvinhomem/TunnelFeatureExtractor"
 "BoneLee/dns_tunnel_dectect_with_CNN" -> "BoneLee/pcap_to_txt"
@@ -684,6 +832,8 @@ digraph G {
 "citizenlab/malware-signatures" -> "1aN0rmus/Yara"
 "citizenlab/malware-signatures" -> "sysforensics/YaraRules"
 "citizenlab/malware-signatures" -> "arbor/yara"
+"drb-ra/C2IntelFeeds" -> "sophoslabs/IoCs" ["e"=1]
+"drb-ra/C2IntelFeeds" -> "pan-unit42/iocs" ["e"=1]
 "fireeye/OpenIOC_1.1" -> "mandiant/ioc_writer"
 "fxb-cocacoding/yara-signator" -> "malpedia/signator-rules"
 "fxb-cocacoding/yara-signator" -> "danielplohmann/smda"
@@ -705,6 +855,7 @@ digraph G {
 "avast/yaracpp" -> "avast-tl/fileformat"
 "avast/yaracpp" -> "avast-tl/fnc-patterns"
 "AlienVault-OTX/yabin" -> "SupportIntelligence/Icewater"
+"google/grr-doc" -> "sandialabs/scot" ["e"=1]
 "felixweyne/imaginaryC2" -> "hasherezade/malware_analysis"
 "felixweyne/imaginaryC2" -> "felixweyne/ProcessSpawnControl"
 "felixweyne/imaginaryC2" -> "silence-is-best/c2db" ["e"=1]
@@ -742,6 +893,7 @@ digraph G {
 "malrev/ABD" -> "ghidraninja/ghidra_scripts" ["e"=1]
 "malrev/ABD" -> "0xricksanchez/paper_collection" ["e"=1]
 "malrev/ABD" -> "RPISEC/MBE" ["e"=1]
+"FULLSHADE/WindowsExploitationResources" -> "hasherezade/malware_training_vol1" ["e"=1]
 "mandiant/speakeasy" -> "mrexodia/dumpulator"
 "mandiant/speakeasy" -> "hasherezade/tiny_tracer"
 "mandiant/speakeasy" -> "mandiant/flare-emu" ["e"=1]
@@ -757,6 +909,8 @@ digraph G {
 "mandiant/speakeasy" -> "HyperDbg/HyperDbg" ["e"=1]
 "mandiant/speakeasy" -> "OALabs/BlobRunner"
 "mandiant/speakeasy" -> "0xnobody/vmpdump" ["e"=1]
+"osquery/osquery" -> "VirusTotal/yara" ["e"=1]
+"disposable-email-domains/disposable-email-domains" -> "firehol/blocklist-ipsets" ["e"=1]
 "stamparm/maltrail" -> "MISP/MISP" ["e"=1]
 "stamparm/maltrail" -> "hslatman/awesome-threat-intelligence" ["e"=1]
 "stamparm/maltrail" -> "stamparm/ipsum"
@@ -772,6 +926,16 @@ digraph G {
 "stamparm/maltrail" -> "kbandla/APTnotes"
 "stamparm/maltrail" -> "VirusTotal/yara"
 "stamparm/maltrail" -> "firehol/blocklist-ipsets"
+"zrax/pycdc" -> "mandiant/flare-floss" ["e"=1]
+"Yelp/osxcollector" -> "DefensePointSecurity/threat_note" ["e"=1]
+"cuckoosandbox/cuckoo" -> "VirusTotal/yara" ["e"=1]
+"cuckoosandbox/cuckoo" -> "Yara-Rules/rules" ["e"=1]
+"cuckoosandbox/cuckoo" -> "Neo23x0/Loki" ["e"=1]
+"cuckoosandbox/cuckoo" -> "kevoreilly/CAPEv2" ["e"=1]
+"cuckoosandbox/cuckoo" -> "mandiant/flare-floss" ["e"=1]
+"snort3/snort3" -> "VirusTotal/yara" ["e"=1]
+"stuxnet999/MemLabs" -> "jstrosch/malware-samples" ["e"=1]
+"thalesgroup-cert/Watcher" -> "certtools/intelmq" ["e"=1]
 "Neo23x0/Loki" -> "Neo23x0/yarGen"
 "Neo23x0/Loki" -> "Neo23x0/signature-base"
 "Neo23x0/Loki" -> "Neo23x0/Fenrir"
@@ -787,6 +951,9 @@ digraph G {
 "Neo23x0/Loki" -> "sbousseaden/EVTX-ATTACK-SAMPLES" ["e"=1]
 "Neo23x0/Loki" -> "meirwah/awesome-incident-response" ["e"=1]
 "Neo23x0/Loki" -> "certsocietegenerale/FIR" ["e"=1]
+"504ensicsLabs/LiME" -> "Neo23x0/Loki" ["e"=1]
+"pwnlandia/mhn" -> "viper-framework/viper" ["e"=1]
+"Netflix-Skunkworks/Scumblr" -> "Netflix/Fido" ["e"=1]
 "mandiant/capa" -> "mandiant/flare-floss"
 "mandiant/capa" -> "mandiant/flare-vm"
 "mandiant/capa" -> "kevoreilly/CAPEv2"
@@ -802,12 +969,38 @@ digraph G {
 "mandiant/capa" -> "Neo23x0/yarGen"
 "mandiant/capa" -> "ayoubfaouzi/al-khaser" ["e"=1]
 "mandiant/capa" -> "Yamato-Security/hayabusa" ["e"=1]
+"desaster/kippo" -> "viper-framework/viper" ["e"=1]
+"desaster/kippo" -> "secureworks/dcept" ["e"=1]
+"threatland/TL-BOTS" -> "ifding/iot-malware" ["e"=1]
+"center-for-threat-informed-defense/adversary_emulation_library" -> "Neo23x0/Loki" ["e"=1]
+"center-for-threat-informed-defense/adversary_emulation_library" -> "Neo23x0/Fenrir" ["e"=1]
+"center-for-threat-informed-defense/adversary_emulation_library" -> "Neo23x0/yarGen" ["e"=1]
+"t4d/PhishingKit-Yara-Rules" -> "intezer/yara-rules" ["e"=1]
+"vivisect/vivisect" -> "mandiant/flare-floss" ["e"=1]
+"vivisect/vivisect" -> "mandiant/capa-rules" ["e"=1]
+"vivisect/vivisect" -> "mandiant/speakeasy" ["e"=1]
+"horsicq/Detect-It-Easy" -> "mandiant/flare-vm" ["e"=1]
+"horsicq/Detect-It-Easy" -> "mandiant/capa" ["e"=1]
+"horsicq/Detect-It-Easy" -> "VirusTotal/yara" ["e"=1]
+"horsicq/Detect-It-Easy" -> "mandiant/flare-floss" ["e"=1]
+"horsicq/Detect-It-Easy" -> "hasherezade/pe-bear" ["e"=1]
+"mytechnotalent/Reverse-Engineering" -> "mandiant/flare-vm" ["e"=1]
+"phin3has/mailoney" -> "aplura/Tango" ["e"=1]
+"ant4g0nist/lisa.py" -> "omriher/CapTipper" ["e"=1]
+"Da2dalus/The-MALWARE-Repo" -> "jstrosch/malware-samples" ["e"=1]
 "buguroo/cuckooautoinstall" -> "hatching/vmcloak"
 "buguroo/cuckooautoinstall" -> "da667/AutoMISP"
 "buguroo/cuckooautoinstall" -> "rodionovd/cuckoo-osx-analyzer"
 "buguroo/cuckooautoinstall" -> "spender-sandbox/cuckoo-modified"
+"horsicq/DIE-engine" -> "hasherezade/pe-bear-releases" ["e"=1]
 "cvandeplas/ELK-forensics" -> "TravisFSmith/MyBroElk"
 "cvandeplas/ELK-forensics" -> "Tripwire/TARDIS"
+"USArmyResearchLab/Dshell" -> "Neo23x0/Loki" ["e"=1]
+"USArmyResearchLab/Dshell" -> "kbandla/APTnotes" ["e"=1]
+"ivre/ivre" -> "stamparm/maltrail" ["e"=1]
+"ivre/ivre" -> "Neo23x0/Loki" ["e"=1]
+"thainnos/LICSTER" -> "cutaway-security/ICSPcapViz" ["e"=1]
+"telekom-security/tpotce" -> "mandiant/flare-vm" ["e"=1]
 "mandiant/stringsifter" -> "mandiant/capa-rules"
 "mandiant/stringsifter" -> "mandiant/speakeasy"
 "mandiant/stringsifter" -> "mandiant/flare-floss"
@@ -836,6 +1029,11 @@ digraph G {
 "jstrosch/malware-samples" -> "eset/malware-ioc"
 "jstrosch/malware-samples" -> "reversinglabs/reversinglabs-yara-rules"
 "jstrosch/malware-samples" -> "RPISEC/Malware" ["e"=1]
+"blackberry/pe_tree" -> "mandiant/speakeasy" ["e"=1]
+"blackberry/pe_tree" -> "reversinglabs/reversinglabs-yara-rules" ["e"=1]
+"blackberry/pe_tree" -> "CERT-Polska/drakvuf-sandbox" ["e"=1]
+"blackberry/pe_tree" -> "malrev/ABD" ["e"=1]
+"blackberry/pe_tree" -> "DissectMalware/XLMMacroDeobfuscator" ["e"=1]
 "CIRCL/AIL-framework" -> "ail-project/ail-framework" ["e"=1]
 "CIRCL/AIL-framework" -> "certsocietegenerale/fame"
 "CIRCL/AIL-framework" -> "certtools/intelmq"
@@ -896,6 +1094,10 @@ digraph G {
 "kevoreilly/CAPEv2" -> "cuckoosandbox/cuckoo" ["e"=1]
 "kevoreilly/CAPEv2" -> "Velocidex/velociraptor" ["e"=1]
 "kevoreilly/CAPEv2" -> "hasherezade/hollows_hunter"
+"salesforce/jarm" -> "CERT-Polska/mquery" ["e"=1]
+"salesforce/jarm" -> "ctxis/CAPE" ["e"=1]
+"salesforce/jarm" -> "eset/malware-ioc" ["e"=1]
+"salesforce/jarm" -> "Neo23x0/signature-base" ["e"=1]
 "syphon1c/Threatelligence" -> "Yelp/threat_intel"
 "OpenSOC/opensoc-streaming" -> "OpenSOC/opensoc-ui"
 "OpenSOC/opensoc-streaming" -> "OpenSOC/opensoc-vagrant"
@@ -915,6 +1117,20 @@ digraph G {
 "google/stenographer" -> "tomchop/malcom"
 "google/stenographer" -> "activecm/rita-legacy" ["e"=1]
 "google/stenographer" -> "armbues/ioc_parser"
+"bitdefender/bddisasm" -> "hasherezade/tiny_tracer" ["e"=1]
+"CYB3RMX/Qu1cksc0pe" -> "kevoreilly/CAPEv2" ["e"=1]
+"CYB3RMX/Qu1cksc0pe" -> "CERT-Polska/drakvuf-sandbox" ["e"=1]
+"CYB3RMX/Qu1cksc0pe" -> "hasherezade/hollows_hunter" ["e"=1]
+"CYB3RMX/Qu1cksc0pe" -> "mandiant/capa" ["e"=1]
+"CYB3RMX/Qu1cksc0pe" -> "jstrosch/malware-samples" ["e"=1]
+"CYB3RMX/Qu1cksc0pe" -> "cert-ee/cuckoo3" ["e"=1]
+"0x90n/InfoSec-Black-Friday" -> "mandiant/flare-vm" ["e"=1]
+"mandiant/ThreatPursuit-VM" -> "mandiant/flare-vm" ["e"=1]
+"mandiant/ThreatPursuit-VM" -> "reversinglabs/reversinglabs-yara-rules" ["e"=1]
+"evilcos/papers" -> "kbandla/APTnotes" ["e"=1]
+"microsoft/ProcMon-for-Linux" -> "mandiant/capa" ["e"=1]
+"microsoft/ProcMon-for-Linux" -> "hasherezade/hollows_hunter" ["e"=1]
+"microsoft/ProcMon-for-Linux" -> "mandiant/flare-vm" ["e"=1]
 "pan-unit42/public_tools" -> "pan-unit42/iocs"
 "pan-unit42/public_tools" -> "pan-unit42/playbook_viewer"
 "pan-unit42/public_tools" -> "kevthehermit/RATDecoders"
@@ -930,6 +1146,7 @@ digraph G {
 "pan-unit42/public_tools" -> "JPCERTCC/MalConfScan"
 "pan-unit42/public_tools" -> "Neo23x0/signature-base"
 "pan-unit42/public_tools" -> "KasperskyLab/klara"
+"horsicq/XPEViewer" -> "hasherezade/pe-bear" ["e"=1]
 "CERT-Polska/drakvuf-sandbox" -> "tklengyel/drakvuf" ["e"=1]
 "CERT-Polska/drakvuf-sandbox" -> "cert-ee/cuckoo3"
 "CERT-Polska/drakvuf-sandbox" -> "kevoreilly/CAPEv2"
@@ -960,6 +1177,7 @@ digraph G {
 "DissectMalware/XLMMacroDeobfuscator" -> "hasherezade/hollows_hunter"
 "DissectMalware/XLMMacroDeobfuscator" -> "CERT-Polska/mquery"
 "DissectMalware/XLMMacroDeobfuscator" -> "Apr4h/CobaltStrikeScan" ["e"=1]
+"ail-project/ail-framework" -> "CIRCL/AIL-framework" ["e"=1]
 "Chauncy-lab/Deep-learning-of-DGA" -> "skydownacai/DGA-Domain-Detection"
 "Chauncy-lab/Deep-learning-of-DGA" -> "Silent-voice/DGA-Domain-Predict"
 "Chauncy-lab/Deep-learning-of-DGA" -> "roreagan/DeepDGA"
@@ -978,6 +1196,7 @@ digraph G {
 "omriher/CapTipper" -> "viper-framework/viper"
 "omriher/CapTipper" -> "spender-sandbox/cuckoo-modified"
 "omriher/CapTipper" -> "Dynetics/Malfunction"
+"sapics/ip-location-db" -> "firehol/blocklist-ipsets" ["e"=1]
 "MBCProject/mbc-markdown" -> "mandiant/capa-rules"
 "MBCProject/mbc-markdown" -> "binref/refinery"
 "MBCProject/mbc-markdown" -> "CERT-Polska/drakvuf-sandbox"
@@ -987,6 +1206,10 @@ digraph G {
 "MBCProject/mbc-markdown" -> "mandiant/capa"
 "MBCProject/mbc-markdown" -> "Neo23x0/yarGen"
 "MBCProject/mbc-markdown" -> "HuskyHacks/PMAT-labs" ["e"=1]
+"volatilityfoundation/community" -> "MITRECND/chopshop" ["e"=1]
+"indetectables-net/toolkit" -> "Dump-GUY/Malware-analysis-and-Reverse-engineering" ["e"=1]
+"nsacyber/Mitigating-Web-Shells" -> "Neo23x0/signature-base" ["e"=1]
+"nsacyber/Mitigating-Web-Shells" -> "advanced-threat-research/Yara-Rules" ["e"=1]
 "BayshoreNetworks/yextend" -> "citizenlab/malware-signatures"
 "BayshoreNetworks/yextend" -> "kevthehermit/YaraPcap"
 "BayshoreNetworks/yextend" -> "godaddy/procfilter"
@@ -1010,6 +1233,8 @@ digraph G {
 "certtools/intelmq" -> "TheHive-Project/TheHive" ["e"=1]
 "certtools/intelmq" -> "HurricaneLabs/machinae"
 "certtools/intelmq" -> "TheHive-Project/Cortex" ["e"=1]
+"hasherezade/bearparser" -> "hasherezade/pe-bear-releases" ["e"=1]
+"hasherezade/bearparser" -> "hasherezade/malware_analysis" ["e"=1]
 "idaholab/Malcolm" -> "cisagov/Malcolm" ["e"=1]
 "idaholab/Malcolm" -> "cutaway-security/ICSPcapViz"
 "idaholab/Malcolm" -> "idaholab/STIG"
@@ -1026,6 +1251,7 @@ digraph G {
 "botherder/detekt" -> "krmaxwell/maltrieve"
 "botherder/detekt" -> "botherder/targetedthreats"
 "botherder/detekt" -> "JamesHabben/evolve" ["e"=1]
+"PhantomInsights/mexican-government-report" -> "mandiant/stringsifter" ["e"=1]
 "OpenRCE/Malware-Analysis-Training" -> "malrev/ABD"
 "OpenRCE/Malware-Analysis-Training" -> "ckane/CS7038-Malware-Analysis"
 "OpenRCE/Malware-Analysis-Training" -> "hasherezade/malware_training_vol1"
@@ -1041,6 +1267,7 @@ digraph G {
 "OpenRCE/Malware-Analysis-Training" -> "BankSecurity/Red_Team" ["e"=1]
 "OpenRCE/Malware-Analysis-Training" -> "jstrosch/malware-samples"
 "OpenRCE/Malware-Analysis-Training" -> "michalmalik/linux-re-101" ["e"=1]
+"ANSSI-FR/AD-control-paths" -> "ANSSI-FR/polichombr" ["e"=1]
 "CybercentreCanada/assemblyline-base" -> "CybercentreCanada/assemblyline-core"
 "CybercentreCanada/assemblyline-base" -> "CybercentreCanada/assemblyline-ui"
 "CybercentreCanada/assemblyline-base" -> "CybercentreCanada/assemblyline-service-cuckoo"
@@ -1080,6 +1307,7 @@ digraph G {
 "aplura/Tango" -> "Tripwire/TARDIS"
 "aplura/Tango" -> "michael-yip/MaltegoVT"
 "aplura/Tango" -> "omriher/CapTipper"
+"forrest-orr/moneta" -> "hasherezade/hollows_hunter" ["e"=1]
 "CybercentreCanada/assemblyline-v4-service" -> "CybercentreCanada/assemblyline-service-deobfuscripter"
 "CybercentreCanada/assemblyline-v4-service" -> "CybercentreCanada/assemblyline-core"
 "CybercentreCanada/assemblyline-v4-service" -> "CybercentreCanada/assemblyline-ui"
@@ -1092,6 +1320,7 @@ digraph G {
 "OpenSOC/opensoc" -> "eclecticiq/OpenTAXII" ["e"=1]
 "OpenSOC/opensoc" -> "Invoke-IR/ACE" ["e"=1]
 "OpenSOC/opensoc" -> "mitre/multiscanner"
+"hukkelas/DeepPrivacy" -> "mandiant/stringsifter" ["e"=1]
 "EFForg/yaya" -> "Neo23x0/Fenrir"
 "EFForg/yaya" -> "Neo23x0/yarAnalyzer"
 "EFForg/yaya" -> "hillu/go-yara"
@@ -1110,6 +1339,9 @@ digraph G {
 "andrewaeva/DGA" -> "roreagan/DeepDGA"
 "andrewaeva/DGA" -> "fanci-dga-detection/fanci"
 "andrewaeva/DGA" -> "hmaccelerate/DGA_Detection"
+"Sentinel-One/CobaltStrikeParser" -> "DissectMalware/XLMMacroDeobfuscator" ["e"=1]
+"Sentinel-One/CobaltStrikeParser" -> "OALabs/BlobRunner" ["e"=1]
+"dotcppfile/DAws" -> "omriher/CapTipper" ["e"=1]
 "d00rt/emotet_network_protocol" -> "d00rt/emotet_research"
 "certtools/intelmq-manager" -> "certtools/intelmq"
 "certtools/intelmq-manager" -> "certtools/intelmq-tutorial"
@@ -1128,6 +1360,10 @@ digraph G {
 "StrangerealIntel/CyberThreatIntel" -> "aptnotes/data"
 "StrangerealIntel/CyberThreatIntel" -> "sbousseaden/EVTX-ATTACK-SAMPLES" ["e"=1]
 "StrangerealIntel/CyberThreatIntel" -> "JPCERTCC/MalConfScan"
+"model-zoo/shift-ctrl-f" -> "mandiant/speakeasy" ["e"=1]
+"Netflix-Skunkworks/sketchy" -> "Netflix/Fido" ["e"=1]
+"Netflix-Skunkworks/sketchy" -> "DefensePointSecurity/threat_note" ["e"=1]
+"Netflix-Skunkworks/sketchy" -> "armbues/ioc_parser" ["e"=1]
 "bartblaze/Yara-rules" -> "reversinglabs/reversinglabs-yara-rules"
 "bartblaze/Yara-rules" -> "advanced-threat-research/Yara-Rules"
 "bartblaze/Yara-rules" -> "InQuest/yara-rules"
@@ -1150,6 +1386,7 @@ digraph G {
 "CERT-Polska/karton" -> "W3ndige/aurora"
 "CERT-Polska/karton" -> "MITRECND/malchive"
 "CERT-Polska/karton" -> "danielplohmann/apiscout"
+"x64dbg/Scripts" -> "hasherezade/mal_unpack" ["e"=1]
 "mandiant/capa-rules" -> "MBCProject/mbc-markdown"
 "mandiant/capa-rules" -> "mandiant/capa"
 "mandiant/capa-rules" -> "mandiant/stringsifter"
@@ -1167,9 +1404,18 @@ digraph G {
 "mandiant/capa-rules" -> "binref/refinery"
 "quarkslab/irma" -> "brad-sp/cuckoo-modified"
 "quarkslab/irma" -> "davidoren/CuckooSploit"
+"obsidianforensics/unfurl" -> "Lookyloo/lookyloo" ["e"=1]
+"ZENALC/algobot" -> "hasherezade/malware_training_vol1" ["e"=1]
 "redcanaryco/chain-reactor" -> "redcanaryco/surveyor"
 "d4rksystem/VBoxCloak" -> "d4rksystem/VMwareCloak"
 "d4rksystem/VBoxCloak" -> "advanced-threat-research/DotDumper"
+"tklengyel/drakvuf" -> "CERT-Polska/drakvuf-sandbox" ["e"=1]
+"tklengyel/drakvuf" -> "ctxis/CAPE" ["e"=1]
+"tklengyel/drakvuf" -> "JusticeRage/Manalyze" ["e"=1]
+"tklengyel/drakvuf" -> "mandiant/speakeasy" ["e"=1]
+"tklengyel/drakvuf" -> "spender-sandbox/cuckoo-modified" ["e"=1]
+"tklengyel/drakvuf" -> "Rurik/Noriben" ["e"=1]
+"tklengyel/drakvuf" -> "hatching/vmcloak" ["e"=1]
 "cuckoosandbox/monitor" -> "cuckoosandbox/community"
 "cuckoosandbox/monitor" -> "conix-security/zer0m0n"
 "cuckoosandbox/monitor" -> "spender-sandbox/cuckoo-modified"
@@ -1196,9 +1442,11 @@ digraph G {
 "brad-sp/cuckoo-modified" -> "honeynet/cuckooml"
 "brad-sp/cuckoo-modified" -> "cuckoosandbox/community"
 "brad-sp/cuckoo-modified" -> "krmaxwell/maltrieve"
+"sophos/yaraml_rules" -> "Neo23x0/YARA-Performance-Guidelines" ["e"=1]
 "ditekshen/detection" -> "InQuest/yara-rules-vt"
 "ditekshen/detection" -> "bartblaze/Yara-rules"
 "ditekshen/detection" -> "splunk/twinclams"
+"build-cpp/cmkr" -> "mrexodia/dumpulator" ["e"=1]
 "citizenlab/malware-indicators" -> "citizenlab/malware-signatures"
 "citizenlab/malware-indicators" -> "botherder/targetedthreats"
 "citizenlab/malware-indicators" -> "stephenbrannon/IOCextractor"
@@ -1253,6 +1501,7 @@ digraph G {
 "CheckPointSW/Evasions" -> "CheckPointSW/InviZzzible"
 "CheckPointSW/Evasions" -> "CheckPointSW/Anti-Debug-DB"
 "boreq/botnet" -> "jpdias/botnet-lab"
+"silence-is-best/c2db" -> "d00rt/emotet_network_protocol" ["e"=1]
 "sandialabs/scot" -> "refractionPOINT/limacharlie"
 "sandialabs/scot" -> "DefensePointSecurity/threat_note"
 "sandialabs/scot" -> "jzadeh/aktaion" ["e"=1]
@@ -1288,8 +1537,23 @@ digraph G {
 "CybercentreCanada/assemblyline-ui" -> "CybercentreCanada/assemblyline-service-deobfuscripter"
 "CybercentreCanada/assemblyline-ui" -> "CybercentreCanada/assemblyline-ui-frontend"
 "CybercentreCanada/assemblyline-service-deobfuscripter" -> "CybercentreCanada/assemblyline-v4-service"
+"vxunderground/MalwareSourceCode" -> "mandiant/flare-vm" ["e"=1]
+"vxunderground/VXUG-Papers" -> "hasherezade/malware_training_vol1" ["e"=1]
+"thinkst/canarytokens" -> "DidierStevens/DidierStevensSuite" ["e"=1]
+"thinkst/canarytokens" -> "secureworks/dcept" ["e"=1]
+"simsong/tcpflow" -> "tomchop/malcom" ["e"=1]
+"simsong/tcpflow" -> "omriher/CapTipper" ["e"=1]
+"microsoft/CyberBattleSim" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections" ["e"=1]
+"rshipp/awesome-malware-analysis" -> "mandiant/flare-vm" ["e"=1]
+"Security-Onion-Solutions/security-onion" -> "Neo23x0/Loki" ["e"=1]
+"acaudwell/Gource" -> "acaudwell/Logstalgia" ["e"=1]
+"mentebinaria/readpe" -> "c3rb3ru5d3d53c/binlex" ["e"=1]
 "TUCTF/Tools" -> "truongkma/ctf-tools"
 "TUCTF/Tools" -> "P1kachu/v0lt"
+"mentebinaria/retoolkit" -> "mandiant/flare-vm" ["e"=1]
+"mentebinaria/retoolkit" -> "hasherezade/malware_training_vol1" ["e"=1]
+"mentebinaria/retoolkit" -> "mandiant/capa" ["e"=1]
+"corkami/pics" -> "mandiant/flare-vm" ["e"=1]
 "hasherezade/malware_training_vol1" -> "hasherezade/hollows_hunter"
 "hasherezade/malware_training_vol1" -> "FULLSHADE/WindowsExploitationResources" ["e"=1]
 "hasherezade/malware_training_vol1" -> "jstrosch/malware-samples"
@@ -1305,6 +1569,13 @@ digraph G {
 "hasherezade/malware_training_vol1" -> "mandiant/capa"
 "hasherezade/malware_training_vol1" -> "mentebinaria/retoolkit" ["e"=1]
 "hasherezade/malware_training_vol1" -> "mandiant/speakeasy"
+"Devtown-India/PYTHON-AND-DATA-ANALYTICS-7-DAYS" -> "hasherezade/malware_training_vol1" ["e"=1]
+"evilbuffer/malware-and-exploitdev-resources" -> "Dump-GUY/Malware-analysis-and-Reverse-engineering" ["e"=1]
+"idanr1986/cuckoo-droid" -> "spender-sandbox/cuckoo-modified" ["e"=1]
+"idanr1986/cuckoo-droid" -> "brad-sp/cuckoo-modified" ["e"=1]
+"idanr1986/cuckoo-droid" -> "therealdreg/anticuckoo" ["e"=1]
+"idanr1986/cuckoo-droid" -> "davidoren/CuckooSploit" ["e"=1]
+"idanr1986/cuckoo-droid" -> "monnappa22/Limon" ["e"=1]
 "blacktop/docker-cuckoo" -> "spender-sandbox/cuckoo-modified"
 "blacktop/docker-cuckoo" -> "cuckoosandbox/community"
 "blacktop/docker-cuckoo" -> "cuckoosandbox/monitor"
@@ -1363,6 +1634,10 @@ digraph G {
 "firehol/blocklist-ipsets" -> "elceef/dnstwist" ["e"=1]
 "firehol/blocklist-ipsets" -> "firehol/iprange"
 "firehol/blocklist-ipsets" -> "pwnlandia/mhn" ["e"=1]
+"certsocietegenerale/FIR" -> "certsocietegenerale/fame" ["e"=1]
+"certsocietegenerale/FIR" -> "DefensePointSecurity/threat_note" ["e"=1]
+"certsocietegenerale/FIR" -> "Neo23x0/Loki" ["e"=1]
+"certsocietegenerale/FIR" -> "crits/crits" ["e"=1]
 "mitre/multiscanner" -> "maliceio/malice"
 "mitre/multiscanner" -> "certsocietegenerale/fame"
 "mitre/multiscanner" -> "MITRECND/chopshop"
@@ -1405,6 +1680,18 @@ digraph G {
 "buffer/thug" -> "mushorg/snare" ["e"=1]
 "buffer/thug" -> "ciscocsirt/malspider"
 "buffer/thug" -> "mlsecproject/combine"
+"mandiant/red_team_tool_countermeasures" -> "mandiant/sunburst_countermeasures" ["e"=1]
+"mandiant/red_team_tool_countermeasures" -> "Yara-Rules/rules" ["e"=1]
+"mandiant/red_team_tool_countermeasures" -> "mandiant/capa" ["e"=1]
+"mandiant/red_team_tool_countermeasures" -> "Neo23x0/signature-base" ["e"=1]
+"mandiant/red_team_tool_countermeasures" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"KasperskyLab/TinyCheck" -> "jstrosch/malware-samples" ["e"=1]
+"sophos/SOREL-20M" -> "mandiant/sunburst_countermeasures" ["e"=1]
+"hfiref0x/VBoxHardenedLoader" -> "nsmfoo/antivmdetection" ["e"=1]
+"hfiref0x/VBoxHardenedLoader" -> "hatching/vmcloak" ["e"=1]
+"hfiref0x/VBoxHardenedLoader" -> "hfiref0x/VMDE" ["e"=1]
+"hfiref0x/VBoxHardenedLoader" -> "Rurik/Noriben" ["e"=1]
+"hfiref0x/VBoxHardenedLoader" -> "AlicanAkyol/sems" ["e"=1]
 "c3rb3ru5d3d53c/binlex" -> "c3rb3ru5d3d53c/mwcfg"
 "c3rb3ru5d3d53c/binlex" -> "CERT-Polska/malduck"
 "c3rb3ru5d3d53c/binlex" -> "CERT-Polska/karton"
@@ -1414,6 +1701,7 @@ digraph G {
 "c3rb3ru5d3d53c/binlex" -> "OALabs/Lab-Notes"
 "c3rb3ru5d3d53c/binlex" -> "CERT-Polska/mquery"
 "c3rb3ru5d3d53c/binlex" -> "hasherezade/tiny_tracer"
+"BinaryDefense/artillery" -> "secureworks/dcept" ["e"=1]
 "DidierStevens/DidierStevensSuite" -> "decalage2/oletools"
 "DidierStevens/DidierStevensSuite" -> "decalage2/ViperMonkey"
 "DidierStevens/DidierStevensSuite" -> "Neo23x0/Loki"
@@ -1429,6 +1717,11 @@ digraph G {
 "DidierStevens/DidierStevensSuite" -> "google/timesketch" ["e"=1]
 "DidierStevens/DidierStevensSuite" -> "alexandreborges/malwoverview" ["e"=1]
 "DidierStevens/DidierStevensSuite" -> "mandiant/flare-fakenet-ng"
+"fastfire/deepdarkCTI" -> "blackorbird/APT_REPORT" ["e"=1]
+"fastfire/deepdarkCTI" -> "mandiant/flare-vm" ["e"=1]
+"dripcap/dripcap" -> "secrary/SSMA" ["e"=1]
+"dripcap/dripcap" -> "omriher/CapTipper" ["e"=1]
+"MalwareSamples/Malware-Feed" -> "jstrosch/malware-samples" ["e"=1]
 "RedSiege/Just-Metadata" -> "RedSiege/WMIOps" ["e"=1]
 "RedSiege/Just-Metadata" -> "DefensePointSecurity/threat_note"
 "RedSiege/Just-Metadata" -> "armbues/ioc_parser"
@@ -1475,6 +1768,11 @@ digraph G {
 "lmco/laikaboss" -> "dod-cyber-crime-center/DC3-MWCP"
 "lmco/laikaboss" -> "CrowdStrike/cs-bro" ["e"=1]
 "lmco/laikaboss" -> "spender-sandbox/cuckoo-modified"
+"radareorg/iaito" -> "mrexodia/dumpulator" ["e"=1]
+"erocarrera/pefile" -> "mandiant/flare-floss" ["e"=1]
+"erocarrera/pefile" -> "Neo23x0/yarGen" ["e"=1]
+"erocarrera/pefile" -> "Rurik/Noriben" ["e"=1]
+"erocarrera/pefile" -> "Yara-Rules/rules" ["e"=1]
 "SEKOIA-IO/Community" -> "JPCERTCC/jpcert-yara"
 "HurricaneLabs/machinae" -> "1aN0rmus/TekDefense-Automater"
 "HurricaneLabs/machinae" -> "DefensePointSecurity/threat_note"
@@ -1491,6 +1789,16 @@ digraph G {
 "HurricaneLabs/machinae" -> "ciscocsirt/malspider"
 "HurricaneLabs/machinae" -> "spender-sandbox/cuckoo-modified"
 "HurricaneLabs/machinae" -> "jpsenior/threataggregator"
+"Tripwire/tripwire-open-source" -> "Tripwire/TARDIS" ["e"=1]
+"0xDanielLopez/TweetFeed" -> "volexity/threat-intel" ["e"=1]
+"0xDanielLopez/TweetFeed" -> "eset/malware-ioc" ["e"=1]
+"0xDanielLopez/TweetFeed" -> "avast/ioc" ["e"=1]
+"timb-machine/linux-malware" -> "jstrosch/malware-samples" ["e"=1]
+"timb-machine/linux-malware" -> "hasherezade/malware_training_vol1" ["e"=1]
+"timb-machine/linux-malware" -> "mandiant/speakeasy" ["e"=1]
+"timb-machine/linux-malware" -> "c3rb3ru5d3d53c/binlex" ["e"=1]
+"mrphrazer/obfuscation_detection" -> "mrexodia/dumpulator" ["e"=1]
+"mrphrazer/obfuscation_detection" -> "OALabs/hashdb" ["e"=1]
 "CybercentreCanada/assemblyline" -> "CybercentreCanada/assemblyline4_docs"
 "CybercentreCanada/assemblyline" -> "CybercentreCanada/assemblyline-base"
 "CybercentreCanada/assemblyline" -> "CERT-Polska/mwdb-core"
@@ -1511,6 +1819,10 @@ digraph G {
 "armbues/ioc_parser" -> "pun1sh3r/iocminion"
 "armbues/ioc_parser" -> "PaloAltoNetworks/ioc-parser"
 "armbues/ioc_parser" -> "certtools/intelmq"
+"automatingosint/osint_public" -> "1aN0rmus/TekDefense-Automater" ["e"=1]
+"DigitalRuby/IPBan" -> "firehol/blocklist-ipsets" ["e"=1]
+"NationalSecurityAgency/SIMP" -> "Netflix/Fido" ["e"=1]
+"androidmalware/android_hid" -> "hasherezade/malware_training_vol1" ["e"=1]
 "dod-cyber-crime-center/DC3-MWCP" -> "maltelligence/maltelligence"
 "dod-cyber-crime-center/DC3-MWCP" -> "dod-cyber-crime-center/kordesii"
 "dod-cyber-crime-center/DC3-MWCP" -> "strozfriedberg/ntfs-linker" ["e"=1]
@@ -1518,6 +1830,8 @@ digraph G {
 "dod-cyber-crime-center/DC3-MWCP" -> "JamesHabben/evolve" ["e"=1]
 "dod-cyber-crime-center/DC3-MWCP" -> "fxb-cocacoding/yara-signator"
 "dod-cyber-crime-center/DC3-MWCP" -> "kevthehermit/RATDecoders"
+"X4BNet/lists_vpn" -> "stamparm/ipsum" ["e"=1]
+"ElevenPaths/EvilFOCA" -> "omriher/CapTipper" ["e"=1]
 "pr701/dp701" -> "mrexodia/dumpulator"
 "pr701/dp701" -> "ioncodes/long_night"
 "Fudge/gltail" -> "Fudge/gltrail"
@@ -1536,6 +1850,9 @@ digraph G {
 "pan-unit42/iocs" -> "armbues/ioc_parser"
 "pan-unit42/iocs" -> "SupportIntelligence/Icewater"
 "pan-unit42/iocs" -> "blackorbird/APT_REPORT"
+"mushorg/snare" -> "buffer/thug" ["e"=1]
+"oskarsve/ms-teams-rce" -> "mubix/solarflare" ["e"=1]
+"Neo23x0/Raccine" -> "Neo23x0/munin" ["e"=1]
 "mubix/solarflare" -> "RedDrip7/SunBurst_DGA_Decode"
 "joxeankoret/pyew" -> "hiddenillusion/AnalyzePE"
 "joxeankoret/pyew" -> "guelfoweb/peframe"
@@ -1544,6 +1861,8 @@ digraph G {
 "joxeankoret/pyew" -> "Dynetics/Malfunction"
 "joxeankoret/pyew" -> "mtivadar/qiew"
 "AlienVault-OTX/OTX-Apps-TAXII" -> "AlienVault-OTX/OTX-Apps-Bro-IDS"
+"executemalware/Malware-IOCs" -> "sophoslabs/IoCs" ["e"=1]
+"executemalware/Malware-IOCs" -> "pan-unit42/tweets" ["e"=1]
 "Dump-GUY/Malware-analysis-and-Reverse-engineering" -> "hasherezade/malware_training_vol1"
 "Dump-GUY/Malware-analysis-and-Reverse-engineering" -> "mrexodia/dumpulator"
 "Dump-GUY/Malware-analysis-and-Reverse-engineering" -> "jstrosch/malware-samples"
@@ -1562,6 +1881,8 @@ digraph G {
 "RedDrip7/SunBurst_DGA_Decode" -> "bambenek/research"
 "RedDrip7/SunBurst_DGA_Decode" -> "mandiant/sunburst_countermeasures"
 "RedDrip7/SunBurst_DGA_Decode" -> "mubix/solarflare"
+"publicsuffix/list" -> "firehol/blocklist-ipsets" ["e"=1]
+"AsuharietYgvar/AppleNeuralHash2ONNX" -> "facebook/ThreatExchange" ["e"=1]
 "mandiant/sunburst_countermeasures" -> "mandiant/red_team_tool_countermeasures" ["e"=1]
 "mandiant/sunburst_countermeasures" -> "bambenek/research"
 "mandiant/sunburst_countermeasures" -> "RedDrip7/SunBurst_DGA_Decode"
@@ -1573,10 +1894,14 @@ digraph G {
 "mandiant/sunburst_countermeasures" -> "pan-unit42/iocs"
 "mandiant/sunburst_countermeasures" -> "reversinglabs/reversinglabs-yara-rules"
 "mandiant/sunburst_countermeasures" -> "eanmeyer/SolarwindsVulnerablityInfo"
+"byt3bl33d3r/gcat" -> "RedSiege/Just-Metadata" ["e"=1]
 "OpenSOC/opensoc-vagrant" -> "grutz/bro"
 "P1kachu/v0lt" -> "TUCTF/Tools"
 "P1kachu/v0lt" -> "truongkma/ctf-tools"
 "P1kachu/v0lt" -> "CaledoniaProject/jenkins-cli-exploit" ["e"=1]
+"farhan3/py-botnet" -> "jpdias/botnet-lab" ["e"=1]
+"mthenw/frontail" -> "sevdokimov/log-viewer" ["e"=1]
+"OffensivePython/Nscan" -> "omriher/CapTipper" ["e"=1]
 "Yelp/threat_intel" -> "midnightslacker/threat_intel"
 "Yelp/threat_intel" -> "syphon1c/Threatelligence"
 "Yelp/threat_intel" -> "exp0se/harbinger"
@@ -1589,6 +1914,10 @@ digraph G {
 "Yelp/threat_intel" -> "QTek/QRadio"
 "Yelp/threat_intel" -> "slupers/ThreatIntel"
 "Yelp/threat_intel" -> "HurricaneLabs/machinae"
+"jvoisin/php-malware-finder" -> "Neo23x0/Loki" ["e"=1]
+"phaethon/kamene" -> "omriher/CapTipper" ["e"=1]
+"gaih/introduction-to-machine-learning-archived" -> "hasherezade/malware_training_vol1" ["e"=1]
+"ALSchwalm/foresight" -> "Dynetics/Malfunction" ["e"=1]
 "nsmfoo/antivmdetection" -> "hfiref0x/VBoxHardenedLoader" ["e"=1]
 "nsmfoo/antivmdetection" -> "hatching/vmcloak"
 "nsmfoo/antivmdetection" -> "spender-sandbox/cuckoo-modified"
@@ -1604,7 +1933,10 @@ digraph G {
 "nsmfoo/antivmdetection" -> "hasherezade/demos" ["e"=1]
 "nsmfoo/antivmdetection" -> "therealdreg/anticuckoo"
 "nsmfoo/antivmdetection" -> "secrary/makin" ["e"=1]
+"vxunderground/VX-API" -> "hasherezade/malware_training_vol1" ["e"=1]
 "citizenlab/spyware-scan" -> "citizenlab/bluecoat-investigations"
+"vertexproject/synapse" -> "PUNCH-Cyber/stoq" ["e"=1]
+"vertexproject/synapse" -> "CERT-Polska/mquery" ["e"=1]
 "volexity/threat-intel" -> "reversinglabs/reversinglabs-yara-rules"
 "volexity/threat-intel" -> "YARAHQ/yara-forge"
 "volexity/threat-intel" -> "google/dfiq" ["e"=1]
@@ -1619,6 +1951,10 @@ digraph G {
 "BromiumLabs/PackerAttacker" -> "mandiant/flare-dbg"
 "BromiumLabs/PackerAttacker" -> "brad-sp/cuckoo-modified"
 "BromiumLabs/PackerAttacker" -> "crackinglandia/pype32"
+"n1nj4sec/memorpy" -> "n1nj4sec/mimipy" ["e"=1]
+"n1nj4sec/memorpy" -> "n1nj4sec/pr0cks-py" ["e"=1]
+"n1nj4sec/memorpy" -> "Dynetics/Malfunction" ["e"=1]
+"n1nj4sec/memorpy" -> "WithSecureOpenSource/see" ["e"=1]
 "d4rksystem/VMwareCloak" -> "d4rksystem/VBoxCloak"
 "gawen/virustotal" -> "adrianherrera/virustotal"
 "michael-yip/MaltegoVT" -> "brianwarehime/Threat_note-Maltego"
@@ -1639,6 +1975,7 @@ digraph G {
 "Neo23x0/yarAnalyzer" -> "BayshoreNetworks/yextend"
 "Neo23x0/yarAnalyzer" -> "mikesxrs/Open-Source-YARA-rules"
 "Neo23x0/yarAnalyzer" -> "AlienVault-OTX/yabin"
+"StrangerealIntel/EternalLiberty" -> "StrangerealIntel/DailyIOC" ["e"=1]
 "Neo23x0/YARA-Performance-Guidelines" -> "100DaysofYARA/2023"
 "Neo23x0/YARA-Performance-Guidelines" -> "RussianPanda95/Yara-Rules"
 "OALabs/Lab-Notes" -> "OALabs/hashdb-ida"
@@ -1686,6 +2023,21 @@ digraph G {
 "abhinavbom/Yara-Rules" -> "Koodous/Yara-Ruleset"
 "abhinavbom/Snort-Rules" -> "abhinavbom/Yara-Rules"
 "carbonblack/cb-integration" -> "vmware-archive/cb-reporting"
+"mandiant/GoReSym" -> "mrexodia/dumpulator" ["e"=1]
+"mandiant/GoReSym" -> "mandiant/speakeasy" ["e"=1]
+"mandiant/GoReSym" -> "OALabs/hashdb-ida" ["e"=1]
+"mandiant/GoReSym" -> "binref/refinery" ["e"=1]
+"mandiant/GoReSym" -> "c3rb3ru5d3d53c/binlex" ["e"=1]
+"qpdf/qpdf" -> "jesparza/peepdf" ["e"=1]
+"arkime/arkime" -> "stamparm/maltrail" ["e"=1]
+"DinoTools/dionaea" -> "buffer/thug" ["e"=1]
+"nolze/msoffcrypto-tool" -> "decalage2/ViperMonkey" ["e"=1]
+"nolze/msoffcrypto-tool" -> "fox-it/mkYARA" ["e"=1]
+"muchdogesec/awesome_threat_intel_blogs" -> "volexity/threat-intel" ["e"=1]
+"zeek/zeek" -> "VirusTotal/yara" ["e"=1]
+"ayoubfaouzi/al-khaser" -> "hasherezade/pe-sieve" ["e"=1]
+"curated-intel/Ukraine-Cyber-Operations" -> "blackorbird/APT_REPORT" ["e"=1]
+"curated-intel/Ukraine-Cyber-Operations" -> "reversinglabs/reversinglabs-yara-rules" ["e"=1]
 "mak/ekdeco" -> "ministryofpromise/tlp"
 "spender-sandbox/cuckoo-modified" -> "brad-sp/cuckoo-modified"
 "spender-sandbox/cuckoo-modified" -> "hatching/vmcloak"
@@ -1702,6 +2054,20 @@ digraph G {
 "spender-sandbox/cuckoo-modified" -> "davidoren/CuckooSploit"
 "spender-sandbox/cuckoo-modified" -> "crits/crits"
 "spender-sandbox/cuckoo-modified" -> "viper-framework/viper"
+"yeti-platform/yeti" -> "certsocietegenerale/fame" ["e"=1]
+"yeti-platform/yeti" -> "certtools/intelmq" ["e"=1]
+"yeti-platform/yeti" -> "crits/crits" ["e"=1]
+"a0rtega/pafish" -> "mandiant/flare-floss" ["e"=1]
+"a0rtega/pafish" -> "nsmfoo/antivmdetection" ["e"=1]
+"a0rtega/pafish" -> "Yara-Rules/rules" ["e"=1]
+"a0rtega/pafish" -> "mandiant/flare-vm" ["e"=1]
+"a0rtega/pafish" -> "mandiant/capa" ["e"=1]
+"a0rtega/pafish" -> "mandiant/flare-fakenet-ng" ["e"=1]
+"a0rtega/pafish" -> "decalage2/ViperMonkey" ["e"=1]
+"a0rtega/pafish" -> "hasherezade/pe-sieve" ["e"=1]
+"RPISEC/Malware" -> "mandiant/flare-floss" ["e"=1]
+"RPISEC/Malware" -> "mandiant/flare-vm" ["e"=1]
+"RPISEC/Malware" -> "Yara-Rules/rules" ["e"=1]
 "packing-box/awesome-executable-packing" -> "mrexodia/dumpulator"
 "packing-box/awesome-executable-packing" -> "unipacker/unipacker"
 "packing-box/awesome-executable-packing" -> "frank2/packer-tutorial" ["e"=1]
@@ -1718,6 +2084,9 @@ digraph G {
 "packing-box/awesome-executable-packing" -> "wavestone-cdt/EDRSandblast" ["e"=1]
 "packing-box/awesome-executable-packing" -> "EgeBalci/amber" ["e"=1]
 "Tripwire/TARDIS" -> "TravisFSmith/MyBroElk"
+"SekoiaLab/Fastir_Collector" -> "DefensePointSecurity/threat_note" ["e"=1]
+"SekoiaLab/Fastir_Collector" -> "refractionPOINT/limacharlie" ["e"=1]
+"SekoiaLab/Fastir_Collector" -> "tomchop/malcom" ["e"=1]
 "rocknsm/rock" -> "CrowdStrike/cs-bro" ["e"=1]
 "rocknsm/rock" -> "EmersonElectricCo/fsf"
 "rocknsm/rock" -> "capesstack/capes"
@@ -1734,6 +2103,13 @@ digraph G {
 "rocknsm/rock" -> "Tripwire/TARDIS"
 "rocknsm/rock" -> "JustinAzoff/bro_scripts" ["e"=1]
 "stephenbrannon/IOCextractor" -> "pun1sh3r/iocminion"
+"hslatman/awesome-threat-intelligence" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections" ["e"=1]
+"hslatman/awesome-threat-intelligence" -> "Yara-Rules/rules" ["e"=1]
+"HuskyHacks/PMAT-labs" -> "mikesiko/PracticalMalwareAnalysis-Labs" ["e"=1]
+"HuskyHacks/PMAT-labs" -> "jstrosch/malware-samples" ["e"=1]
+"HuskyHacks/PMAT-labs" -> "mandiant/flare-vm" ["e"=1]
+"HuskyHacks/PMAT-labs" -> "MBCProject/mbc-markdown" ["e"=1]
+"HuskyHacks/PMAT-labs" -> "jstrosch/learning-malware-analysis" ["e"=1]
 "truongkma/ctf-tools" -> "TUCTF/Tools"
 "truongkma/ctf-tools" -> "P1kachu/v0lt"
 "truongkma/ctf-tools" -> "zardus/ctf-tools" ["e"=1]
@@ -1743,8 +2119,16 @@ digraph G {
 "AlienVault-OTX/ApiV2" -> "Ptr32Void/OSTrICa"
 "AlienVault-OTX/ApiV2" -> "keithjjones/fileintel"
 "AlienVault-OTX/ApiV2" -> "keithjjones/hostintel"
+"mytechnotalent/Hacking-Windows" -> "hasherezade/malware_training_vol1" ["e"=1]
+"mytechnotalent/Hacking-Windows" -> "packing-box/awesome-executable-packing" ["e"=1]
 "Cisco-Talos/IOCs" -> "ThreatLabz/iocs"
+"cryptwareapps/Malware-Database" -> "ifding/iot-malware" ["e"=1]
 "danielplohmann/mcrit" -> "danielplohmann/docker-mcrit"
+"elastic/protections-artifacts" -> "Neo23x0/signature-base" ["e"=1]
+"elastic/protections-artifacts" -> "reversinglabs/reversinglabs-yara-rules" ["e"=1]
+"kbandla/dpkt" -> "omriher/CapTipper" ["e"=1]
+"rootkit-io/awesome-malware-development" -> "jstrosch/malware-samples" ["e"=1]
+"Xyl2k/TSA-Travel-Sentry-master-keys" -> "mandatoryprogrammer/NorthKoreaDNSLeak" ["e"=1]
 "WithSecureOpenSource/see" -> "rieck/malheur"
 "WithSecureOpenSource/see" -> "HynekPetrak/malware-jail"
 "WithSecureOpenSource/see" -> "brad-sp/cuckoo-modified"
@@ -1760,6 +2144,11 @@ digraph G {
 "WithSecureOpenSource/see" -> "KoreLogicSecurity/mastiff"
 "WithSecureOpenSource/see" -> "spender-sandbox/cuckoo-modified"
 "WithSecureOpenSource/see" -> "cseagle/fREedom" ["e"=1]
+"mschwager/dhcpwn" -> "WithSecureOpenSource/see" ["e"=1]
+"cve-search/cve-search" -> "toolswatch/vFeed" ["e"=1]
+"cve-search/cve-search" -> "CIRCL/AIL-framework" ["e"=1]
+"gfoss/PSRecon" -> "secureworks/dcept" ["e"=1]
+"herumi/msoffice" -> "joesecurity/pafishmacro" ["e"=1]
 "maliceio/malice" -> "certsocietegenerale/fame"
 "maliceio/malice" -> "mitre/multiscanner"
 "maliceio/malice" -> "redhuntlabs/RedHunt-OS" ["e"=1]
@@ -1792,6 +2181,8 @@ digraph G {
 "Neo23x0/Fenrir" -> "DefensePointSecurity/threat_note"
 "spender-sandbox/community-modified" -> "spender-sandbox/cuckoomon-modified"
 "spender-sandbox/community-modified" -> "brad-sp/community-modified"
+"yahoo/gryffin" -> "omriher/CapTipper" ["e"=1]
+"hypsurus/weeman" -> "Dynetics/Malfunction" ["e"=1]
 "doomedraven/VirusTotalApi" -> "blacktop/virustotal-api"
 "doomedraven/VirusTotalApi" -> "Xen0ph0n/VirusTotal_API_Tool"
 "doomedraven/VirusTotalApi" -> "gawen/virustotal"
@@ -1824,6 +2215,9 @@ digraph G {
 "monnappa22/Limon" -> "0x71/cuckoo-linux"
 "monnappa22/Limon" -> "Neo23x0/DLLRunner"
 "monnappa22/Limon" -> "cuckoosandbox/community"
+"tmpout/awesome-elf" -> "binref/refinery" ["e"=1]
+"tmpout/awesome-elf" -> "CERT-Polska/malduck" ["e"=1]
+"tmpout/awesome-elf" -> "MBCProject/mbc-markdown" ["e"=1]
 "acaudwell/Logstalgia" -> "acaudwell/Gource" ["e"=1]
 "acaudwell/Logstalgia" -> "Fudge/gltail"
 "acaudwell/Logstalgia" -> "omriher/CapTipper"
@@ -1846,6 +2240,9 @@ digraph G {
 "JusticeRage/Manalyze" -> "SekoiaLab/Fastir_Collector" ["e"=1]
 "JusticeRage/Manalyze" -> "ANSSI-FR/polichombr"
 "JusticeRage/Manalyze" -> "viper-framework/viper"
+"SentineLabs/AlphaGolang" -> "hexfati/SharpDllLoader" ["e"=1]
+"SentineLabs/AlphaGolang" -> "mrexodia/dumpulator" ["e"=1]
+"SentineLabs/AlphaGolang" -> "OALabs/hashdb-ida" ["e"=1]
 "baderj/domain_generation_algorithms" -> "endgameinc/dga_predict"
 "baderj/domain_generation_algorithms" -> "andrewaeva/DGA"
 "baderj/domain_generation_algorithms" -> "360netlab/DGA"
@@ -1890,6 +2287,7 @@ digraph G {
 "pandora-analysis/pandora" -> "adulau/mmdb-server"
 "pandora-analysis/pandora" -> "dbarzin/pandora-box"
 "pandora-analysis/pandora" -> "MISP/misp-stix"
+"dellis23/ispy" -> "WithSecureOpenSource/see" ["e"=1]
 "VirusTotal/yara-python" -> "VirusTotal/yara"
 "VirusTotal/yara-python" -> "Neo23x0/yarGen"
 "VirusTotal/yara-python" -> "Yara-Rules/rules"
@@ -1905,6 +2303,10 @@ digraph G {
 "VirusTotal/yara-python" -> "plyara/plyara" ["e"=1]
 "VirusTotal/yara-python" -> "Neo23x0/Fenrir"
 "VirusTotal/yara-python" -> "PUNCH-Cyber/YaraGuardian"
+"misterch0c/malSploitBase" -> "krmaxwell/maltrieve" ["e"=1]
+"misterch0c/malSploitBase" -> "rieck/malheur" ["e"=1]
+"TravisFSmith/SweetSecurity" -> "sandialabs/scot" ["e"=1]
+"TravisFSmith/SweetSecurity" -> "crits/crits" ["e"=1]
 "Open-Network-Insight/open-network-insight" -> "Open-Network-Insight/oni-docs"
 "Open-Network-Insight/open-network-insight" -> "apache/incubator-spot"
 "Open-Network-Insight/open-network-insight" -> "Open-Network-Insight/oni-demo"
@@ -1914,6 +2316,8 @@ digraph G {
 "PUNCH-Cyber/stoq" -> "PUNCH-Cyber/YaraGuardian"
 "PUNCH-Cyber/stoq" -> "lmco/laikaboss"
 "PUNCH-Cyber/stoq" -> "certsocietegenerale/fame"
+"kootenpv/gittyleaks" -> "boundary/wireshark" ["e"=1]
+"kootenpv/gittyleaks" -> "Neo23x0/yarAnalyzer" ["e"=1]
 "EmersonElectricCo/fsf" -> "EmersonElectricCo/boomerang"
 "EmersonElectricCo/fsf" -> "lmco/laikaboss"
 "EmersonElectricCo/fsf" -> "rocknsm/rock"
@@ -1963,6 +2367,7 @@ digraph G {
 "AlicanAkyol/sems" -> "ExpLife0011/anti-anti-vm-detection-dll-1"
 "AlicanAkyol/sems" -> "CheckPointSW/InviZzzible"
 "abusesa/abusehelper" -> "abusesa/idiokit"
+"LifeForm-Labs/lobotomy" -> "BromiumLabs/PackerAttacker" ["e"=1]
 "DefensePointSecurity/threat_note" -> "armbues/ioc_parser"
 "DefensePointSecurity/threat_note" -> "mlsecproject/combine"
 "DefensePointSecurity/threat_note" -> "csirtgadgets/massive-octo-spice"
@@ -1978,8 +2383,11 @@ digraph G {
 "DefensePointSecurity/threat_note" -> "sroberts/cacador"
 "DefensePointSecurity/threat_note" -> "MITRECND/chopshop"
 "DefensePointSecurity/threat_note" -> "certsocietegenerale/fame"
+"PaulSec/twittor" -> "RedSiege/Just-Metadata" ["e"=1]
+"PaulSec/twittor" -> "tomchop/malcom" ["e"=1]
 "mandiant/dncil" -> "malwarefrank/dnfile"
 "mandiant/dncil" -> "WithSecureLabs/GarbageMan"
+"mandiant/ShimCacheParser" -> "mandiant/ioc_writer" ["e"=1]
 "pan-unit42/dotnetfile" -> "WithSecureLabs/GarbageMan"
 "vmware-archive/cb-reporting" -> "carbonblack/cb-integration"
 "kahunalu/pwnbin" -> "jordan-wright/dumpmon"
@@ -2003,6 +2411,7 @@ digraph G {
 "malpedia/signator-rules" -> "The-DFIR-Report/Yara-Rules" ["e"=1]
 "0xd34db33f/gfyp" -> "r3comp1le/VT-Hunter"
 "malwaremusings/unpacker" -> "BromiumLabs/PackerAttacker"
+"jacob-baines/elfparser" -> "detuxsandbox/detux" ["e"=1]
 "Phat3/PINdemonium" -> "necst/arancino"
 "Phat3/PINdemonium" -> "BromiumLabs/PackerAttacker"
 "r3comp1le/VT-Hunter" -> "pierre427/es_email_intel"
@@ -2042,6 +2451,11 @@ digraph G {
 "hasherezade/pe-bear" -> "hasherezade/tiny_tracer"
 "hasherezade/pe-bear" -> "Idov31/Nidhogg" ["e"=1]
 "hasherezade/pe-bear" -> "hasherezade/malware_training_vol1"
+"HexRaysSA/goomba" -> "mrexodia/dumpulator" ["e"=1]
+"Cisco-Talos/clamav" -> "VirusTotal/yara" ["e"=1]
+"Cisco-Talos/clamav" -> "Yara-Rules/rules" ["e"=1]
+"Cisco-Talos/clamav" -> "mandiant/capa" ["e"=1]
+"HACKE-RC/awesome-reversing" -> "jstrosch/learning-reverse-engineering" ["e"=1]
 "mandiant/flare-floss" -> "mandiant/capa"
 "mandiant/flare-floss" -> "mandiant/flare-fakenet-ng"
 "mandiant/flare-floss" -> "mandiant/flare-vm"
@@ -2102,6 +2516,7 @@ digraph G {
 "decalage2/oletools" -> "outflanknl/EvilClippy" ["e"=1]
 "decalage2/oletools" -> "kevoreilly/CAPEv2"
 "decalage2/oletools" -> "alexandreborges/malwoverview" ["e"=1]
+"google/vsaq" -> "lmco/laikaboss" ["e"=1]
 "carbonblack/cbapi-python" -> "vmware-archive/cbapi"
 "carbonblack/cbapi-python" -> "carbonblack/cb-event-forwarder"
 "carbonblack/cbapi-python" -> "carbonblack/cbfeeds"
@@ -2114,6 +2529,10 @@ digraph G {
 "carbonblack/cbapi-python" -> "carbonblack/cb-yara-connector"
 "carbonblack/cbapi-python" -> "opensourcesec/Forager"
 "carbonblack/cbapi-python" -> "carbonblack/community"
+"rabbitstack/fibratus" -> "mandiant/flare-floss" ["e"=1]
+"rabbitstack/fibratus" -> "hasherezade/tiny_tracer" ["e"=1]
+"rabbitstack/fibratus" -> "mandiant/capa" ["e"=1]
+"rabbitstack/fibratus" -> "hasherezade/hollows_hunter" ["e"=1]
 "aptnotes/data" -> "kbandla/APTnotes"
 "aptnotes/data" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections"
 "aptnotes/data" -> "armbues/ioc_parser"
@@ -2139,9 +2558,33 @@ digraph G {
 "MITRECND/chopshop" -> "MITRECND/WhoDat"
 "MITRECND/chopshop" -> "armbues/ioc_parser"
 "MITRECND/chopshop" -> "crits/crits"
+"CERT-Polska/Artemis" -> "CERT-Polska/karton" ["e"=1]
+"CERT-Polska/Artemis" -> "certtools/intelmq" ["e"=1]
+"RamadhanAmizudin/malware" -> "jstrosch/malware-samples" ["e"=1]
+"gbrindisi/malware" -> "hasherezade/malware_analysis" ["e"=1]
+"gbrindisi/malware" -> "JPCERTCC/aa-tools" ["e"=1]
+"bulwarkid/virtual-fido" -> "hasherezade/pe-bear" ["e"=1]
+"MISP/misp-galaxy" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"MISP/misp-galaxy" -> "pan-unit42/iocs" ["e"=1]
+"MISP/misp-galaxy" -> "certtools/intelmq" ["e"=1]
+"MISP/misp-galaxy" -> "StrangerealIntel/CyberThreatIntel" ["e"=1]
+"MISP/misp-galaxy" -> "armbues/ioc_parser" ["e"=1]
+"MISP/misp-galaxy" -> "Neo23x0/signature-base" ["e"=1]
+"MISP/misp-galaxy" -> "KasperskyLab/klara" ["e"=1]
+"ptresearch/AttackDetection" -> "Tencent/HaboMalHunter" ["e"=1]
+"sensepost/DET" -> "DefensePointSecurity/threat_note" ["e"=1]
+"sensepost/DET" -> "lmco/laikaboss" ["e"=1]
+"kolide/kolide-archive" -> "refractionPOINT/limacharlie" ["e"=1]
 "ThreatLabz/iocs" -> "HarfangLab/iocs"
 "ThreatLabz/iocs" -> "ThreatLabz/tools"
+"ThreatLabz/ransomware_notes" -> "ThreatLabz/iocs" ["e"=1]
+"chronicle/GCTI" -> "volexity/threat-intel" ["e"=1]
+"fr0gger/Awesome_Malware_Techniques" -> "jstrosch/learning-reverse-engineering" ["e"=1]
 "sroberts/cacador" -> "sroberts/jager"
+"OISF/suricata" -> "VirusTotal/yara" ["e"=1]
+"MISP/misp-warninglists" -> "certtools/intelmq" ["e"=1]
+"MISP/misp-warninglists" -> "armbues/ioc_parser" ["e"=1]
+"certsocietegenerale/IRM-deprecated" -> "certsocietegenerale/fame" ["e"=1]
 "detuxsandbox/detux" -> "monnappa22/Limon"
 "detuxsandbox/detux" -> "danielpoliakov/lisa"
 "detuxsandbox/detux" -> "ifding/iot-malware"
@@ -2191,10 +2634,12 @@ digraph G {
 "GoSecure/malboxes" -> "yeti-platform/yeti" ["e"=1]
 "GoSecure/malboxes" -> "ctxis/CAPE"
 "GoSecure/malboxes" -> "viper-framework/viper"
+"mwielgoszewski/doorman" -> "DefensePointSecurity/threat_note" ["e"=1]
 "DavidJBianco/Clearcut" -> "Soinull/assimilate"
 "DavidJBianco/Clearcut" -> "ThreatHuntingProject/hunter"
 "100DaysofYARA/2023" -> "100DaysofYARA/2022"
 "100DaysofYARA/2023" -> "100DaysofYARA/2024"
+"kevthehermit/VolUtility" -> "aboutsecurity/rastrea2r" ["e"=1]
 "secureworks/dcept" -> "DefensePointSecurity/threat_note"
 "secureworks/dcept" -> "SMAPPER/MimikatzHoneyToken" ["e"=1]
 "secureworks/dcept" -> "gfoss/PSRecon" ["e"=1]
@@ -2207,6 +2652,8 @@ digraph G {
 "secureworks/dcept" -> "aplura/Tango"
 "secureworks/dcept" -> "foospidy/HoneyPy" ["e"=1]
 "secureworks/dcept" -> "lmco/laikaboss"
+"Pepitoh/VBad" -> "bontchev/pcodedmp" ["e"=1]
+"Pepitoh/VBad" -> "joesecurity/pafishmacro" ["e"=1]
 "ciscocsirt/malspider" -> "ciscocsirt/GOSINT"
 "ciscocsirt/malspider" -> "ciscocsirt/netsarlacc"
 "ciscocsirt/malspider" -> "lmco/laikaboss"
@@ -2232,6 +2679,8 @@ digraph G {
 "cuckoosandbox/community" -> "cuckoosandbox/dragon"
 "cuckoosandbox/community" -> "honeynet/cuckooml"
 "cuckoosandbox/community" -> "ctxis/CAPE"
+"CrowdStrike/falcon-orchestrator" -> "opensourcesec/CIRTKit" ["e"=1]
+"CrowdStrike/falcon-orchestrator" -> "aboutsecurity/rastrea2r" ["e"=1]
 "OALabs/uwudbg-theme" -> "OALabs/trashdbg"
 "OALabs/uwudbg-theme" -> "OALabs/flare-vm"
 "struppigel/PortexAnalyzerGUI" -> "horsicq/XDecompiler"
@@ -2281,6 +2730,11 @@ digraph G {
 "hasherezade/pe-bear-releases" -> "DissectMalware/XLMMacroDeobfuscator"
 "hasherezade/pe-bear-releases" -> "horsicq/xntsv" ["e"=1]
 "hasherezade/pe-bear-releases" -> "therealdreg/DbgChild" ["e"=1]
+"hasherezade/demos" -> "hasherezade/malware_analysis" ["e"=1]
+"mitchellkrogza/nginx-ultimate-bad-bot-blocker" -> "firehol/blocklist-ipsets" ["e"=1]
+"mitchellkrogza/nginx-ultimate-bad-bot-blocker" -> "stamparm/ipsum" ["e"=1]
+"malfunkt/hyperfox" -> "omriher/CapTipper" ["e"=1]
+"deresz/funcap" -> "danielplohmann/apiscout" ["e"=1]
 "Ptr32Void/OSTrICa" -> "ciscocsirt/GOSINT"
 "Ptr32Void/OSTrICa" -> "DefensePointSecurity/threat_note"
 "Ptr32Void/OSTrICa" -> "crits/crits"
@@ -2320,6 +2774,7 @@ digraph G {
 "decalage2/ViperMonkey" -> "Neo23x0/signature-base"
 "decalage2/ViperMonkey" -> "viper-framework/viper"
 "decalage2/ViperMonkey" -> "mandiant/flare-floss"
+"kunai-project/kunai" -> "VirusTotal/yara-x" ["e"=1]
 "bontchev/pcodedmp" -> "Big5-sec/pcode2code"
 "bontchev/pcodedmp" -> "kirk-sayre-work/VBASeismograph"
 "bontchev/pcodedmp" -> "decalage2/ViperMonkey"
@@ -2328,6 +2783,7 @@ digraph G {
 "bontchev/pcodedmp" -> "outflanknl/Excel4-DCOM" ["e"=1]
 "bontchev/pcodedmp" -> "decalage2/oletools"
 "bontchev/pcodedmp" -> "itm4n/VBA-RunPE" ["e"=1]
+"mitchellkrogza/apache-ultimate-bad-bot-blocker" -> "firehol/blocklist-ipsets" ["e"=1]
 "godaddy/procfilter" -> "aboutsecurity/rastrea2r"
 "godaddy/procfilter" -> "ANSSI-FR/polichombr"
 "godaddy/procfilter" -> "OALabs/frida-extract"
@@ -2360,6 +2816,8 @@ digraph G {
 "ctxis/CAPE" -> "kevthehermit/RATDecoders"
 "ctxis/CAPE" -> "JusticeRage/Manalyze"
 "ctxis/CAPE" -> "orlikoski/Skadi" ["e"=1]
+"mushorg/glastopf" -> "buffer/thug" ["e"=1]
+"mushorg/glastopf" -> "Ptr32Void/OSTrICa" ["e"=1]
 "ANSSI-FR/polichombr" -> "PUNCH-Cyber/YaraGuardian"
 "ANSSI-FR/polichombr" -> "godaddy/procfilter"
 "ANSSI-FR/polichombr" -> "Cisco-Talos/ROPMEMU" ["e"=1]
@@ -2369,6 +2827,8 @@ digraph G {
 "tehsyntx/loffice" -> "mak/ekdeco"
 "cvandeplas/pystemon" -> "xme/pastemon"
 "cvandeplas/pystemon" -> "CIRCL/AIL-framework"
+"dropbox/securitybot" -> "DefensePointSecurity/threat_note" ["e"=1]
+"dropbox/securitybot" -> "Netflix/Fido" ["e"=1]
 "CapacitorSet/box-js" -> "HynekPetrak/malware-jail"
 "CapacitorSet/box-js" -> "decalage2/ViperMonkey"
 "CapacitorSet/box-js" -> "buffer/thug"
@@ -2390,6 +2850,17 @@ digraph G {
 "360netlab/DGA" -> "phunterlau/dga_classifier"
 "360netlab/DGA" -> "exp0se/dga_detector"
 "360netlab/DGA" -> "fanci-dga-detection/fanci"
+"riusksk/vul_war" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
+"etsy/411" -> "rocknsm/rock" ["e"=1]
+"PaloAltoNetworks/minemeld" -> "PUNCH-Cyber/stoq" ["e"=1]
+"PaloAltoNetworks/minemeld" -> "mlsecproject/combine" ["e"=1]
+"biggiesmallsAG/nightHawkResponse" -> "DefensePointSecurity/threat_note" ["e"=1]
+"biggiesmallsAG/nightHawkResponse" -> "GoSecure/malboxes" ["e"=1]
+"biggiesmallsAG/nightHawkResponse" -> "Ptr32Void/OSTrICa" ["e"=1]
+"biggiesmallsAG/nightHawkResponse" -> "spender-sandbox/cuckoo-modified" ["e"=1]
+"malicialab/avclass" -> "necst/arancino" ["e"=1]
+"malicialab/avclass" -> "rieck/malheur" ["e"=1]
+"malicialab/avclass" -> "ctxis/CAPE" ["e"=1]
 "mandatoryprogrammer/TLDR" -> "mandatoryprogrammer/NorthKoreaDNSLeak"
 "mandatoryprogrammer/TLDR" -> "mandatoryprogrammer/RussiaDNSLeak"
 "mandatoryprogrammer/TLDR" -> "pzb/TLDs"
@@ -2399,6 +2870,8 @@ digraph G {
 "Bw3ll/ROP_ROCKET" -> "Bw3ll/sharem"
 "Bw3ll/ROP_ROCKET" -> "Bw3ll/ShellWasp"
 "joesecurity/pafishmacro" -> "HynekPetrak/malware-jail"
+"dchad/malware-detection" -> "honeynet/cuckooml" ["e"=1]
+"dchad/malware-detection" -> "rieck/malheur" ["e"=1]
 "ThreatHuntingProject/hunter" -> "ThreatHuntingProject/ThreatHunting" ["e"=1]
 "ThreatHuntingProject/hunter" -> "DavidJBianco/Clearcut"
 "mandiant/Reversing" -> "mandiant/AuditParser"
@@ -2415,6 +2888,7 @@ digraph G {
 "botherder/targetedthreats" -> "citizenlab/malware-indicators"
 "pzb/TLDs" -> "thejefflarson/government-domains"
 "irvinhomem/TunnelFeatureExtractor" -> "b0bac/DNSTunnelDetectTools"
+"wtsxDev/reverse-engineering" -> "mandiant/flare-vm" ["e"=1]
 "VirusTotal/yara" -> "Yara-Rules/rules"
 "VirusTotal/yara" -> "Neo23x0/Loki"
 "VirusTotal/yara" -> "InQuest/awesome-yara"
@@ -2451,6 +2925,17 @@ digraph G {
 "krmaxwell/maltrieve" -> "brad-sp/cuckoo-modified"
 "krmaxwell/maltrieve" -> "robbyFux/Ragpicker"
 "krmaxwell/maltrieve" -> "Xen0ph0n/YaraGenerator"
+"SigmaHQ/sigma" -> "Yara-Rules/rules" ["e"=1]
+"TheHive-Project/TheHive" -> "Neo23x0/Loki" ["e"=1]
+"archercreat/titan" -> "mrexodia/dumpulator" ["e"=1]
+"sroberts/awesome-iocs" -> "eset/malware-ioc" ["e"=1]
+"sroberts/awesome-iocs" -> "mandiant/iocs" ["e"=1]
+"sroberts/awesome-iocs" -> "pan-unit42/iocs" ["e"=1]
+"sroberts/awesome-iocs" -> "DefensePointSecurity/threat_note" ["e"=1]
+"wtsxDev/Malware-Analysis" -> "GoSecure/malboxes" ["e"=1]
+"Aorimn/dislocker" -> "DidierStevens/DidierStevensSuite" ["e"=1]
+"wtsxDev/Machine-Learning-for-Cyber-Security" -> "SuperCowPowers/data_hacking" ["e"=1]
+"wtsxDev/Machine-Learning-for-Cyber-Security" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections" ["e"=1]
 "Phype/telnet-iot-honeypot" -> "stamparm/hontel"
 "Phype/telnet-iot-honeypot" -> "ifding/iot-malware"
 "Phype/telnet-iot-honeypot" -> "detuxsandbox/detux"
@@ -2461,6 +2946,14 @@ digraph G {
 "Phype/telnet-iot-honeypot" -> "boreq/botnet"
 "YARAHQ/yara-forge" -> "100DaysofYARA/2024"
 "YARAHQ/yara-forge" -> "bartblaze/Yara-rules"
+"vz-risk/veris" -> "crits/crits" ["e"=1]
+"vz-risk/veris" -> "DefensePointSecurity/threat_note" ["e"=1]
+"vz-risk/veris" -> "refractionPOINT/limacharlie" ["e"=1]
+"TheHive-Project/Cortex" -> "Neo23x0/signature-base" ["e"=1]
+"TheHive-Project/Cortex" -> "CIRCL/AIL-framework" ["e"=1]
+"cr-marcstevens/sha1collisiondetection" -> "mandatoryprogrammer/NorthKoreaDNSLeak" ["e"=1]
+"dirtbags/pcapdb" -> "sandialabs/scot" ["e"=1]
+"a2o/snoopy" -> "Tencent/HaboMalHunter" ["e"=1]
 "Tencent/HaboMalHunter" -> "monnappa22/Limon"
 "Tencent/HaboMalHunter" -> "detuxsandbox/detux"
 "Tencent/HaboMalHunter" -> "ptresearch/AttackDetection" ["e"=1]
@@ -2476,6 +2969,7 @@ digraph G {
 "Tencent/HaboMalHunter" -> "he1m4n6a/findWebshell" ["e"=1]
 "Tencent/HaboMalHunter" -> "opensec-cn/kunpeng" ["e"=1]
 "Tencent/HaboMalHunter" -> "creditease-sec/insight" ["e"=1]
+"faizann24/Using-machine-learning-to-detect-malicious-URLs" -> "SuperCowPowers/data_hacking" ["e"=1]
 "100DaysofYARA/2024" -> "100DaysofYARA/2023"
 "100DaysofYARA/2024" -> "100DaysofYARA/2022"
 "endgameinc/dga_predict" -> "phunterlau/dga_classifier"
@@ -2493,6 +2987,10 @@ digraph G {
 "endgameinc/dga_predict" -> "akafengfeng/AI-Security" ["e"=1]
 "endgameinc/dga_predict" -> "hmaccelerate/DGA_Detection"
 "endgameinc/dga_predict" -> "fanci-dga-detection/fanci"
+"marcoramilli/MalwareTrainingSets" -> "rieck/malheur" ["e"=1]
+"TheHive-Project/Hippocampe" -> "csirtgadgets/bearded-avenger" ["e"=1]
+"x64dbg/x64dbgida" -> "OALabs/hashdb-ida" ["e"=1]
+"x64dbg/x64dbgida" -> "mrexodia/dumpulator" ["e"=1]
 "jstrosch/sclauncher" -> "jstrosch/FLARE-VM-configs"
 "P3t3rp4rk3r/Threat_Intelligence" -> "abhinavbom/Threat-Intelligence-Hunter"
 "phage-nz/ph0neutria" -> "phage-nz/infosec-bazaar"
@@ -2506,8 +3004,15 @@ digraph G {
 "PUNCH-Cyber/YaraGuardian" -> "mikesxrs/Open-Source-YARA-rules"
 "Cymmetria/MTPot" -> "Cymmetria/StrutsHoneypot"
 "Cymmetria/MTPot" -> "stamparm/hontel"
+"pandazheng/Threat-Intelligence-Analyst" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
 "eSentire/iocs" -> "HarfangLab/iocs"
 "hiddenillusion/yara-goodies" -> "0pc0deFR/YaraRules"
+"momo5502/sogen" -> "hasherezade/tiny_tracer" ["e"=1]
+"MISP/MISP" -> "Yara-Rules/rules" ["e"=1]
+"MISP/MISP" -> "Neo23x0/Loki" ["e"=1]
+"MISP/MISP" -> "VirusTotal/yara" ["e"=1]
+"MISP/MISP" -> "Neo23x0/signature-base" ["e"=1]
+"SwiftOnSecurity/sysmon-config" -> "Neo23x0/Loki" ["e"=1]
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" -> "blackorbird/APT_REPORT"
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" -> "aptnotes/data"
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" -> "kbandla/APTnotes"
@@ -2523,6 +3028,8 @@ digraph G {
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" -> "eset/malware-ioc"
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" -> "StrangerealIntel/CyberThreatIntel"
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" -> "rshipp/awesome-malware-analysis" ["e"=1]
+"fabrimagic72/malware-samples" -> "jstrosch/malware-samples" ["e"=1]
+"m4b/bingrep" -> "GoSecure/malboxes" ["e"=1]
 "mikesiko/PracticalMalwareAnalysis-Labs" -> "HuskyHacks/PMAT-labs" ["e"=1]
 "mikesiko/PracticalMalwareAnalysis-Labs" -> "RPISEC/Malware" ["e"=1]
 "mikesiko/PracticalMalwareAnalysis-Labs" -> "mandiant/flare-vm"
@@ -2538,6 +3045,11 @@ digraph G {
 "mikesiko/PracticalMalwareAnalysis-Labs" -> "kevoreilly/CAPEv2"
 "mikesiko/PracticalMalwareAnalysis-Labs" -> "rshipp/awesome-malware-analysis" ["e"=1]
 "mikesiko/PracticalMalwareAnalysis-Labs" -> "RPISEC/MBE" ["e"=1]
+"13o-bbr-bbq/machine_learning_security" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections" ["e"=1]
+"honeytrap/honeytrap" -> "buffer/thug" ["e"=1]
+"honeytrap/honeytrap" -> "certtools/intelmq" ["e"=1]
+"unfetter-discover/unfetter" -> "DefensePointSecurity/threat_note" ["e"=1]
+"unfetter-discover/unfetter" -> "mitre/multiscanner" ["e"=1]
 "certsocietegenerale/fame" -> "yeti-platform/yeti" ["e"=1]
 "certsocietegenerale/fame" -> "certsocietegenerale/FIR" ["e"=1]
 "certsocietegenerale/fame" -> "Rurik/Noriben"
@@ -2565,7 +3077,10 @@ digraph G {
 "cyphonmdr/cyphon" -> "tcstool/Fireaway"
 "cyphonmdr/cyphon" -> "certtools/intelmq"
 "cyphonmdr/cyphon" -> "CrowdStrike/falcon-orchestrator" ["e"=1]
+"oasis-open/cti-python-stix2" -> "STIXProject/python-stix" ["e"=1]
 "Cymmetria/StrutsHoneypot" -> "Cymmetria/MTPot"
+"SuperCowPowers/zat" -> "ThreatHuntingProject/hunter" ["e"=1]
+"SuperCowPowers/zat" -> "PUNCH-Cyber/stoq" ["e"=1]
 "jeromesegura/EKFiddle" -> "ctxis/CAPE"
 "jeromesegura/EKFiddle" -> "JPCERTCC/MalConfScan"
 "jeromesegura/EKFiddle" -> "decalage2/ViperMonkey"
@@ -2574,6 +3089,7 @@ digraph G {
 "jeromesegura/EKFiddle" -> "SupportIntelligence/Icewater"
 "jeromesegura/EKFiddle" -> "misterch0c/what_is_this_c2" ["e"=1]
 "jeromesegura/EKFiddle" -> "pan-unit42/iocs"
+"manwhoami/Bella" -> "GoSecure/malboxes" ["e"=1]
 "STIXProject/python-stix" -> "CybOXProject/python-cybox"
 "STIXProject/python-stix" -> "STIXProject/stix-viz" ["e"=1]
 "STIXProject/python-stix" -> "TAXIIProject/libtaxii"
@@ -2611,6 +3127,9 @@ digraph G {
 "mandiant/flare-vm" -> "clong/DetectionLab" ["e"=1]
 "mandiant/flare-vm" -> "VirusTotal/yara"
 "mandiant/flare-vm" -> "OTRF/ThreatHunter-Playbook" ["e"=1]
+"LaurieWired/GhidraMCP" -> "mandiant/flare-vm" ["e"=1]
+"LaurieWired/GhidraMCP" -> "mandiant/capa" ["e"=1]
+"mkubecek/vmware-host-modules" -> "mandiant/flare-vm" ["e"=1]
 "Lookyloo/lookyloo" -> "certsocietegenerale/fame"
 "Lookyloo/lookyloo" -> "pandora-analysis/pandora"
 "Lookyloo/lookyloo" -> "certtools/intelmq"
@@ -2620,6 +3139,10 @@ digraph G {
 "Lookyloo/lookyloo" -> "CIRCL/AIL-framework"
 "Lookyloo/lookyloo" -> "t4d/PhishingKitHunter" ["e"=1]
 "Lookyloo/lookyloo" -> "olafhartong/sysmon-cheatsheet" ["e"=1]
+"mitre/cti" -> "CyberMonitor/APT_CyberCriminal_Campagin_Collections" ["e"=1]
+"Cisco-Talos/pyrebox" -> "decalage2/ViperMonkey" ["e"=1]
+"Cisco-Talos/pyrebox" -> "mandiant/flare-floss" ["e"=1]
+"Cisco-Talos/pyrebox" -> "Rurik/Noriben" ["e"=1]
 "Rurik/Noriben" -> "certsocietegenerale/fame"
 "Rurik/Noriben" -> "ctxis/CAPE"
 "Rurik/Noriben" -> "GoSecure/malboxes"
@@ -2642,9 +3165,14 @@ digraph G {
 "Xen0ph0n/YaraGenerator" -> "sysforensics/YaraRules"
 "Xen0ph0n/YaraGenerator" -> "AlienVault-OTX/yabin"
 "Xen0ph0n/YaraGenerator" -> "kevthehermit/YaraRules"
+"HynekPetrak/javascript-malware-collection" -> "HynekPetrak/malware-jail" ["e"=1]
+"HynekPetrak/javascript-malware-collection" -> "jstrosch/malware-samples" ["e"=1]
+"Snorby/snorby" -> "Netflix/Fido" ["e"=1]
+"Snorby/snorby" -> "omriher/CapTipper" ["e"=1]
 "chrissanders/packets" -> "Soinull/assimilate"
 "chrissanders/packets" -> "ThreatHuntingProject/ThreatHunting" ["e"=1]
 "chrissanders/packets" -> "401trg/detections"
+"google/cloudprober" -> "google/stenographer" ["e"=1]
 "ssdeep-project/ssdeep" -> "trendmicro/tlsh"
 "ssdeep-project/ssdeep" -> "DinoTools/python-ssdeep"
 "ssdeep-project/ssdeep" -> "glaslos/ssdeep"
@@ -2677,6 +3205,9 @@ digraph G {
 "ifding/iot-malware" -> "nsslabcuus/Malware"
 "ifding/iot-malware" -> "danielpoliakov/lisa"
 "ifding/iot-malware" -> "malicialab/avclass" ["e"=1]
+"m0n0ph1/Malware-Collection" -> "felixweyne/imaginaryC2" ["e"=1]
+"salesforce/ja3" -> "Neo23x0/signature-base" ["e"=1]
+"vitaly-kamluk/bitscout" -> "JPCERTCC/MalConfScan" ["e"=1]
 "0xAnalyst/CB-Threat-Hunting" -> "MHaggis/CBR-Queries"
 "SupportIntelligence/Icewater" -> "AlienVault-OTX/yabin"
 "SupportIntelligence/Icewater" -> "citizenlab/malware-signatures"
@@ -2689,31 +3220,35 @@ digraph G {
 "SupportIntelligence/Icewater" -> "sroberts/cacador"
 "Xen0ph0n/VirusTotal_API_Tool" -> "doomedraven/VirusTotalApi"
 "Xen0ph0n/VirusTotal_API_Tool" -> "blacktop/virustotal-api"
+"googleprojectzero/functionsimsearch" -> "google/vxsig" ["e"=1]
+"NewBee119/threat-intelligence" -> "RedDrip7/APT_Digital_Weapon" ["e"=1]
 "Cisco-Talos/BASS" -> "google/vxsig"
 "cuckoosandbox/dragon" -> "cuckoosandbox/cuckoomon"
 "mnemonic-no/grafeo" -> "S03D4-164/Hiryu"
 "slupers/ThreatIntel" -> "pierre427/feed_fetchers"
 "hasherezade/pe-sieve" ["l"="-42.659,-32.182"]
 "hasherezade/hollows_hunter" ["l"="-42.696,-32.14"]
-"ayoubfaouzi/al-khaser" ["l"="-42.813,-35.216"]
-"hasherezade/pe_to_shellcode" ["l"="-47.16,-32.534"]
-"hasherezade/libpeconv" ["l"="-42.782,-35.186"]
-"everdox/InfinityHook" ["l"="-42.852,-35.241"]
+"ayoubfaouzi/al-khaser" ["l"="-42.813,-35.216", "c"=40]
+"hasherezade/pe_to_shellcode" ["l"="-47.16,-32.534", "c"=41]
+"hasherezade/libpeconv" ["l"="-42.782,-35.186", "c"=40]
+"everdox/InfinityHook" ["l"="-42.852,-35.241", "c"=40]
 "mandiant/flare-floss" ["l"="-42.796,-32.094"]
 "hasherezade/pe-bear" ["l"="-42.691,-32.19"]
-"monoxgas/sRDI" ["l"="-47.134,-32.525"]
-"TheWover/donut" ["l"="-47.123,-32.503"]
+"monoxgas/sRDI" ["l"="-47.134,-32.525", "c"=41]
+"TheWover/donut" ["l"="-47.123,-32.503", "c"=41]
 "hasherezade/mal_unpack" ["l"="-42.66,-32.115"]
-"mrexodia/TitanHide" ["l"="-42.802,-35.258"]
-"DarthTon/Blackbone" ["l"="-42.801,-35.274"]
-"odzhan/injection" ["l"="-47.172,-32.565"]
+"mrexodia/TitanHide" ["l"="-42.802,-35.258", "c"=40]
+"DarthTon/Blackbone" ["l"="-42.801,-35.274", "c"=40]
+"odzhan/injection" ["l"="-47.172,-32.565", "c"=41]
 "mandiant/capa" ["l"="-42.777,-32.124"]
 "mandiant/speakeasy" ["l"="-42.7,-32.106"]
+"greenbone/openvas-scanner" ["l"="-48.134,-30.557", "c"=11]
+"VirusTotal/yara" ["l"="-42.874,-32.151"]
 "kevthehermit/PasteHunter" ["l"="-42.945,-32.028"]
 "certsocietegenerale/fame" ["l"="-42.968,-31.986"]
-"eth0izzle/bucket-stream" ["l"="-47.547,-30.299"]
+"eth0izzle/bucket-stream" ["l"="-47.547,-30.299", "c"=11]
 "Neo23x0/signature-base" ["l"="-42.867,-32.047"]
-"assetnote/commonspeak2" ["l"="-47.487,-30.169"]
+"assetnote/commonspeak2" ["l"="-47.487,-30.169", "c"=11]
 "Neo23x0/yarGen" ["l"="-42.843,-32.026"]
 "maliceio/malice" ["l"="-42.928,-32.006"]
 "CIRCL/AIL-framework" ["l"="-43.077,-32.029"]
@@ -2724,7 +3259,18 @@ digraph G {
 "Neo23x0/Loki" ["l"="-42.879,-32.075"]
 "Yara-Rules/rules" ["l"="-42.873,-32.106"]
 "eset/malware-ioc" ["l"="-42.898,-32.035"]
-"ThreatHuntingProject/ThreatHunting" ["l"="-42.472,-33.199"]
+"ThreatHuntingProject/ThreatHunting" ["l"="-42.472,-33.199", "c"=79]
+"netsniff-ng/netsniff-ng" ["l"="6.296,-5.057", "c"=749]
+"google/stenographer" ["l"="-43.122,-32.003"]
+"Velocidex/velociraptor" ["l"="-42.438,-33.277", "c"=79]
+"volatilityfoundation/volatility" ["l"="-42.764,-33.33", "c"=79]
+"mandiant/flare-vm" ["l"="-42.816,-32.164"]
+"InQuest/ThreatIngestor" ["l"="-42.427,-33.373", "c"=79]
+"RedDrip7/APT_Digital_Weapon" ["l"="-42.897,-32.008"]
+"reversinglabs/reversinglabs-yara-rules" ["l"="-42.788,-32.017"]
+"armbues/ioc_parser" ["l"="-43.02,-31.963"]
+"pan-unit42/iocs" ["l"="-42.896,-31.972"]
+"InQuest/yara-rules" ["l"="-42.781,-31.943"]
 "rrenaud/Gibberish-Detector" ["l"="-43.078,-31.697"]
 "phunterlau/dga_classifier" ["l"="-43.063,-31.737"]
 "casics/nostril" ["l"="-43.071,-31.657"]
@@ -2733,44 +3279,58 @@ digraph G {
 "paypal/Gibberish-Detector-Java" ["l"="-43.094,-31.67"]
 "baderj/domain_generation_algorithms" ["l"="-43.02,-31.832"]
 "buggedcom/Gibberish-Detector-PHP" ["l"="-43.095,-31.652"]
+"NextronSystems/APTSimulator" ["l"="-42.489,-33.213", "c"=79]
+"mandiant/commando-vm" ["l"="-45.168,-32.201", "c"=53]
+"volatilityfoundation/volatility3" ["l"="-41.052,-32.562", "c"=289]
+"kevoreilly/CAPEv2" ["l"="-42.769,-32.065"]
+"alexandreborges/malwoverview" ["l"="-42.375,-33.285", "c"=79]
+"jstrosch/malware-samples" ["l"="-42.728,-32.197"]
+"google/rekall" ["l"="-42.689,-33.314", "c"=79]
+"mozilla/MozDef" ["l"="-42.709,-33.394", "c"=79]
 "Netflix/Fido" ["l"="-43.067,-31.98"]
-"certsocietegenerale/FIR" ["l"="-42.546,-33.308"]
+"ytisf/theZoo" ["l"="-45.136,-32.404", "c"=53]
+"OpenCTI-Platform/opencti" ["l"="-42.526,-33.366", "c"=79]
+"OpenCTI-Platform/connectors" ["l"="-42.655,-33.397", "c"=79]
+"Neo23x0/yarAnalyzer" ["l"="-42.825,-31.934"]
+"Patrowl/PatrowlManager" ["l"="-42.413,-33.418", "c"=79]
+"certtools/intelmq" ["l"="-43.094,-31.998"]
+"certsocietegenerale/FIR" ["l"="-42.546,-33.308", "c"=79]
 "DefensePointSecurity/threat_note" ["l"="-43.03,-31.956"]
 "mlsecproject/combine" ["l"="-43.091,-31.948"]
-"davehull/Kansa" ["l"="-42.498,-33.2"]
+"davehull/Kansa" ["l"="-42.498,-33.2", "c"=79]
 "lmco/laikaboss" ["l"="-43.022,-31.982"]
 "crits/crits" ["l"="-43.043,-31.97"]
-"Netflix-Skunkworks/Scumblr" ["l"="-42.781,-33.452"]
-"Invoke-IR/PowerForensics" ["l"="-41.158,-32.412"]
-"mozilla/mig" ["l"="-42.746,-33.419"]
+"Netflix-Skunkworks/Scumblr" ["l"="-42.781,-33.452", "c"=79]
+"Invoke-IR/PowerForensics" ["l"="-41.158,-32.412", "c"=289]
+"mozilla/mig" ["l"="-42.746,-33.419", "c"=79]
 "csirtgadgets/massive-octo-spice" ["l"="-43.107,-31.958"]
-"mozilla/MozDef" ["l"="-42.709,-33.394"]
-"google/grr" ["l"="-42.635,-33.347"]
+"google/grr" ["l"="-42.635,-33.347", "c"=79]
 "refractionPOINT/limacharlie" ["l"="-43.03,-31.903"]
 "hrbrmstr/pewpew" ["l"="-43.035,-31.999"]
 "advanced-threat-research/Yara-Rules" ["l"="-42.805,-31.991"]
-"reversinglabs/reversinglabs-yara-rules" ["l"="-42.788,-32.017"]
-"InQuest/yara-rules" ["l"="-42.781,-31.943"]
 "bartblaze/Yara-rules" ["l"="-42.745,-31.957"]
 "StrangerealIntel/DailyIOC" ["l"="-42.794,-31.979"]
 "JPCERTCC/MalConfScan" ["l"="-42.788,-31.994"]
 "intezer/yara-rules" ["l"="-42.765,-31.956"]
 "mikesxrs/Open-Source-YARA-rules" ["l"="-42.812,-31.966"]
-"advanced-threat-research/IOCs" ["l"="-46.757,-34.08"]
+"advanced-threat-research/IOCs" ["l"="-46.757,-34.08", "c"=204]
 "sophoslabs/IoCs" ["l"="-42.798,-31.958"]
-"pan-unit42/iocs" ["l"="-42.896,-31.972"]
 "StrangerealIntel/CyberThreatIntel" ["l"="-42.826,-32.039"]
 "mandiant/capa-rules" ["l"="-42.717,-32.044"]
+"rfxn/linux-malware-detect" ["l"="-45.561,-29.938", "c"=3]
+"tomchop/malcom" ["l"="-42.998,-32.002"]
+"monnappa22/Limon" ["l"="-42.819,-31.838"]
+"ossec/ossec-hids" ["l"="-42.746,-33.394", "c"=79]
 "trendmicro/tlsh" ["l"="-42.782,-31.895"]
 "ssdeep-project/ssdeep" ["l"="-42.747,-31.92"]
 "sdhash/sdhash" ["l"="-42.731,-31.861"]
 "trendmicro/telfhash" ["l"="-42.733,-31.837"]
 "glaslos/tlsh" ["l"="-42.708,-31.843"]
-"malicialab/avclass" ["l"="-41.972,-31.783"]
+"malicialab/avclass" ["l"="-41.972,-31.783", "c"=755]
 "DinoTools/python-ssdeep" ["l"="-42.718,-31.874"]
 "JusticeRage/Manalyze" ["l"="-42.869,-31.952"]
 "PUNCH-Cyber/YaraGuardian" ["l"="-42.873,-31.938"]
-"tklengyel/drakvuf" ["l"="-43.043,-36.817"]
+"tklengyel/drakvuf" ["l"="-43.043,-36.817", "c"=306]
 "fxb-cocacoding/yara-signator" ["l"="-42.703,-31.966"]
 "diffeo/py-nilsimsa" ["l"="-42.751,-31.85"]
 "ANSSI-FR/polichombr" ["l"="-42.852,-31.899"]
@@ -2778,15 +3338,20 @@ digraph G {
 "rieck/malheur" ["l"="-42.853,-31.862"]
 "hasherezade/tiny_tracer" ["l"="-42.636,-32.141"]
 "hasherezade/malware_training_vol1" ["l"="-42.723,-32.173"]
-"jthuraisamy/SysWhispers" ["l"="-47.147,-32.511"]
-"forrest-orr/moneta" ["l"="-47.29,-32.469"]
+"jthuraisamy/SysWhispers" ["l"="-47.147,-32.511", "c"=41]
+"forrest-orr/moneta" ["l"="-47.29,-32.469", "c"=41]
 "hasherezade/pe-bear-releases" ["l"="-42.659,-32.139"]
-"Mr-Un1k0d3r/EDRs" ["l"="-47.178,-32.478"]
-"jthuraisamy/SysWhispers2" ["l"="-47.161,-32.493"]
+"Mr-Un1k0d3r/EDRs" ["l"="-47.178,-32.478", "c"=41]
+"jthuraisamy/SysWhispers2" ["l"="-47.161,-32.493", "c"=41]
+"0xZ0F/Z0FCourse_ReverseEngineering" ["l"="-44.108,-33.964", "c"=865]
+"malrev/ABD" ["l"="-42.71,-32.221"]
+"x0rz/phishing_catcher" ["l"="-42.234,-33.444", "c"=79]
 "OALabs/findyara-ida" ["l"="-42.562,-32.097"]
 "hyuunnn/Hyara" ["l"="-42.564,-32.07"]
 "OALabs/hexcopy-ida" ["l"="-42.548,-32.134"]
-"RolfRolles/IDBs" ["l"="-43.179,-37.234"]
+"RolfRolles/IDBs" ["l"="-43.179,-37.234", "c"=306]
+"WithSecureLabs/python-exe-unpacker" ["l"="-42.739,-37.108", "c"=306]
+"pan-unit42/public_tools" ["l"="-42.883,-31.985"]
 "CERT-Polska/mwdb-core" ["l"="-42.595,-32.027"]
 "CERT-Polska/karton" ["l"="-42.588,-32.044"]
 "CERT-Polska/malduck" ["l"="-42.64,-32.048"]
@@ -2798,19 +3363,18 @@ digraph G {
 "fox-it/mkYARA" ["l"="-42.625,-32.036"]
 "felixweyne/imaginaryC2" ["l"="-42.562,-31.992"]
 "ctxis/CAPE" ["l"="-42.837,-31.958"]
-"RedDrip7/APT_Digital_Weapon" ["l"="-42.897,-32.008"]
 "Rurik/Noriben" ["l"="-42.863,-31.982"]
 "decalage2/ViperMonkey" ["l"="-42.845,-31.994"]
-"redhuntlabs/RedHunt-OS" ["l"="-42.538,-33.216"]
+"redhuntlabs/RedHunt-OS" ["l"="-42.538,-33.216", "c"=79]
 "OALabs/BlobRunner" ["l"="-42.676,-32.092"]
 "guelfoweb/peframe" ["l"="-42.893,-31.889"]
 "joxeankoret/pyew" ["l"="-42.918,-31.827"]
 "hiddenillusion/AnalyzePE" ["l"="-42.921,-31.79"]
-"SekoiaLab/Fastir_Collector" ["l"="-41.171,-32.426"]
+"SekoiaLab/Fastir_Collector" ["l"="-41.171,-32.426", "c"=289]
 "davidoren/CuckooSploit" ["l"="-42.884,-31.833"]
 "spender-sandbox/cuckoo-modified" ["l"="-42.915,-31.895"]
 "KoreLogicSecurity/mastiff" ["l"="-42.88,-31.818"]
-"woanware/usbdeviceforensics" ["l"="-41.269,-32.36"]
+"woanware/usbdeviceforensics" ["l"="-41.269,-32.36", "c"=289]
 "hatching/vmcloak" ["l"="-42.863,-31.881"]
 "nsmfoo/antivmdetection" ["l"="-42.82,-31.907"]
 "buguroo/cuckooautoinstall" ["l"="-42.898,-31.831"]
@@ -2822,25 +3386,22 @@ digraph G {
 "cert-ee/cuckoo3" ["l"="-42.716,-31.997"]
 "therealdreg/anticuckoo" ["l"="-42.83,-31.856"]
 "blacktop/docker-cuckoo" ["l"="-42.867,-31.844"]
-"ocatak-zz/malware_api_class" ["l"="-42.027,-31.503"]
+"ocatak-zz/malware_api_class" ["l"="-42.027,-31.503", "c"=755]
 "detuxsandbox/detux" ["l"="-42.728,-31.811"]
 "Neo23x0/DLLRunner" ["l"="-42.835,-31.824"]
 "malwaremusings/unpacker" ["l"="-42.774,-31.87"]
 "sroberts/malwarehouse" ["l"="-42.816,-31.783"]
-"tomchop/malcom" ["l"="-42.998,-32.002"]
 "MITRECND/chopshop" ["l"="-42.995,-31.98"]
-"armbues/ioc_parser" ["l"="-43.02,-31.963"]
 "omriher/CapTipper" ["l"="-42.986,-31.938"]
 "mitre/multiscanner" ["l"="-42.974,-31.952"]
 "mlsecproject/tiq-test" ["l"="-43.141,-31.921"]
 "Yelp/threat_intel" ["l"="-43.151,-31.939"]
 "syphon1c/Threatelligence" ["l"="-43.165,-31.917"]
-"certtools/intelmq" ["l"="-43.094,-31.998"]
 "HurricaneLabs/machinae" ["l"="-43.076,-31.944"]
 "Ptr32Void/OSTrICa" ["l"="-43.091,-31.933"]
 "mandiant/iocs" ["l"="-42.996,-31.963"]
 "opensourcesec/Forager" ["l"="-43.273,-31.863"]
-"yeti-platform/yeti" ["l"="-42.438,-33.324"]
+"yeti-platform/yeti" ["l"="-42.438,-33.324", "c"=79]
 "crits/crits_services" ["l"="-43.097,-32.048"]
 "crits/mcrits" ["l"="-43.131,-32.087"]
 "crits/pycrits" ["l"="-43.117,-32.077"]
@@ -2849,120 +3410,150 @@ digraph G {
 "unipacker/unipacker" ["l"="-42.608,-32.088"]
 "danielplohmann/smda" ["l"="-42.591,-31.993"]
 "carbonblack/binee" ["l"="-42.562,-32.117"]
-"CheckPointSW/Karta" ["l"="-43.049,-36.938"]
-"secrary/idenLib" ["l"="-42.629,-35.105"]
-"hzqst/unicorn_pe" ["l"="-42.822,-35.266"]
-"a1ext/auto_re" ["l"="-43.065,-36.932"]
-"ioncodes/idacode" ["l"="-43.048,-36.969"]
-"alexhude/uEmu" ["l"="-43.036,-36.922"]
-"ThunderCls/xAnalyzer" ["l"="-42.633,-35.184"]
-"can1357/NoVmp" ["l"="-42.777,-35.281"]
+"CheckPointSW/Karta" ["l"="-43.049,-36.938", "c"=306]
+"secrary/idenLib" ["l"="-42.629,-35.105", "c"=40]
+"hzqst/unicorn_pe" ["l"="-42.822,-35.266", "c"=40]
+"a1ext/auto_re" ["l"="-43.065,-36.932", "c"=306]
+"ioncodes/idacode" ["l"="-43.048,-36.969", "c"=306]
+"alexhude/uEmu" ["l"="-43.036,-36.922", "c"=306]
+"ThunderCls/xAnalyzer" ["l"="-42.633,-35.184", "c"=40]
+"can1357/NoVmp" ["l"="-42.777,-35.281", "c"=40]
 "packing-box/awesome-executable-packing" ["l"="-42.605,-32.167"]
-"fr0gger/awesome-ida-x64-olly-plugin" ["l"="-42.988,-36.873"]
+"fr0gger/awesome-ida-x64-olly-plugin" ["l"="-42.988,-36.873", "c"=306]
+"ashemery/exploitation-course" ["l"="-45.46,-31.806", "c"=53]
 "aptnotes/data" ["l"="-42.974,-32.044"]
-"sroberts/awesome-iocs" ["l"="-42.454,-33.296"]
+"sroberts/awesome-iocs" ["l"="-42.454,-33.296", "c"=79]
 "eset/malware-research" ["l"="-42.907,-32.103"]
 "blackorbird/APT_REPORT" ["l"="-42.928,-32.056"]
-"NextronSystems/APTSimulator" ["l"="-42.489,-33.213"]
 "CyberMonitor/APT_CyberCriminal_Campagin_Collections" ["l"="-42.934,-32.087"]
+"mattnotmax/cyberchef-recipes" ["l"="-42.404,-33.241", "c"=79]
+"DidierStevens/DidierStevensSuite" ["l"="-42.843,-32.089"]
+"secureworks/dalton" ["l"="-42.593,-31.291", "c"=1107]
+"elastic/ember" ["l"="-41.941,-31.771", "c"=755]
+"SamuelTulach/VirusTotalUploader" ["l"="-49.749,9.837", "c"=59]
+"VirusTotal/vt-cli" ["l"="-42.738,-31.937"]
+"VirusTotal/qt-virustotal-uploader" ["l"="-42.615,-31.908"]
 "pan-unit42/playbook_viewer" ["l"="-42.908,-31.991"]
-"pan-unit42/public_tools" ["l"="-42.883,-31.985"]
 "0x4143/malware-gems" ["l"="-42.73,-32.146"]
-"jstrosch/malware-samples" ["l"="-42.728,-32.197"]
 "Dump-GUY/Malware-analysis-and-Reverse-engineering" ["l"="-42.677,-32.155"]
-"rootkit-io/awesome-malware-development" ["l"="-47.341,-32.537"]
-"FULLSHADE/WindowsExploitationResources" ["l"="-47.226,-32.592"]
-"alexandreborges/malwoverview" ["l"="-42.375,-33.285"]
+"rootkit-io/awesome-malware-development" ["l"="-47.341,-32.537", "c"=41]
+"FULLSHADE/WindowsExploitationResources" ["l"="-47.226,-32.592", "c"=41]
 "DissectMalware/XLMMacroDeobfuscator" ["l"="-42.734,-32.07"]
-"ethereal-vx/Antivirus-Artifacts" ["l"="-47.168,-32.456"]
-"stuxnet999/MemLabs" ["l"="-42.404,-33.315"]
-"mattnotmax/cyberchef-recipes" ["l"="-42.404,-33.241"]
+"ethereal-vx/Antivirus-Artifacts" ["l"="-47.168,-32.456", "c"=41]
+"stuxnet999/MemLabs" ["l"="-42.404,-33.315", "c"=79]
+"Security-Onion-Solutions/securityonion" ["l"="-42.633,-33.292", "c"=79]
 "mrexodia/dumpulator" ["l"="-42.611,-32.124"]
-"0xnobody/vmpdump" ["l"="-41.512,-34.338"]
-"HyperDbg/HyperDbg" ["l"="-42.893,-35.261"]
-"JKornev/hidden" ["l"="-42.857,-35.259"]
-"weak1337/Alcatraz" ["l"="-42.808,-35.424"]
-"gaasedelen/tenet" ["l"="-43.002,-36.939"]
-"iPower/KasperskyHook" ["l"="-42.877,-35.317"]
+"0xnobody/vmpdump" ["l"="-41.512,-34.338", "c"=773]
+"HyperDbg/HyperDbg" ["l"="-42.893,-35.261", "c"=40]
+"JKornev/hidden" ["l"="-42.857,-35.259", "c"=40]
+"weak1337/Alcatraz" ["l"="-42.808,-35.424", "c"=40]
+"gaasedelen/tenet" ["l"="-43.002,-36.939", "c"=306]
+"iPower/KasperskyHook" ["l"="-42.877,-35.317", "c"=40]
+"emposha/PHP-Shell-Detector" ["l"="-45.281,-29.833", "c"=3]
+"Tencent/HaboMalHunter" ["l"="-42.771,-31.83"]
+"angea/pocorgtfo" ["l"="-45.329,-34.604", "c"=282]
 "CERT-Polska/ursadb" ["l"="-42.652,-32.027"]
 "mbrengel/yarix" ["l"="-42.605,-32.008"]
 "google/vxsig" ["l"="-42.643,-31.981"]
+"JPCERTCC/SysmonSearch" ["l"="-42.6,-33.112", "c"=79]
 "kbandla/APTnotes" ["l"="-42.975,-32.101"]
-"OTRF/ThreatHunter-Playbook" ["l"="-42.475,-33.232"]
-"sbousseaden/EVTX-ATTACK-SAMPLES" ["l"="-42.428,-33.182"]
-"tsale/EDR-Telemetry" ["l"="-42.229,-33.193"]
-"fastfire/deepdarkCTI" ["l"="-42.298,-33.365"]
-"rabobank-cdc/DeTTECT" ["l"="-42.467,-33.182"]
-"JPCERTCC/SysmonSearch" ["l"="-42.6,-33.112"]
+"OTRF/ThreatHunter-Playbook" ["l"="-42.475,-33.232", "c"=79]
+"sbousseaden/EVTX-ATTACK-SAMPLES" ["l"="-42.428,-33.182", "c"=79]
+"tsale/EDR-Telemetry" ["l"="-42.229,-33.193", "c"=79]
+"fastfire/deepdarkCTI" ["l"="-42.298,-33.365", "c"=79]
+"rabobank-cdc/DeTTECT" ["l"="-42.467,-33.182", "c"=79]
 "JPCERTCC/MalConfScan-with-Cuckoo" ["l"="-42.711,-31.933"]
 "dod-cyber-crime-center/DC3-MWCP" ["l"="-42.937,-31.962"]
+"theevilbit/injection" ["l"="-47.094,-32.563", "c"=41]
+"mandiant/gocrack" ["l"="-47.327,-34.236", "c"=204]
+"mandiant/flare-fakenet-ng" ["l"="-42.84,-32.062"]
+"file/file" ["l"="9.527,-8.103", "c"=14]
 "Neo23x0/vti-dorks" ["l"="-42.716,-31.951"]
 "Neo23x0/munin" ["l"="-42.808,-32.008"]
 "target/halogen" ["l"="-42.621,-31.886"]
+"herrbischoff/country-ip-blocks" ["l"="-65.253,15.983", "c"=967]
+"firehol/blocklist-ipsets" ["l"="-42.979,-32.223"]
+"ufrisk/MemProcFS" ["l"="-44.68,-36.431", "c"=880]
+"TeamMsgExtractor/msg-extractor" ["l"="-40.965,-32.429", "c"=289]
+"PUNCH-Cyber/stoq" ["l"="-43.005,-31.944"]
+"hasherezade/dll_to_exe" ["l"="-42.725,-35.088", "c"=40]
+"horsicq/Nauz-File-Detector" ["l"="-42.638,-35.139", "c"=40]
+"maddiestone/AndroidAppRE" ["l"="56.377,-10.95", "c"=24]
+"secynic/ipwhois" ["l"="5.872,-4.363", "c"=725]
+"1aN0rmus/TekDefense-Automater" ["l"="-43.087,-31.966"]
+"target/strelka" ["l"="-42.43,-33.237", "c"=79]
+"EmersonElectricCo/fsf" ["l"="-43.1,-32.017"]
+"teamdfir/sift" ["l"="-41.093,-32.406", "c"=289]
+"aboutsecurity/rastrea2r" ["l"="-43.114,-31.926"]
+"StamusNetworks/SELKS" ["l"="-42.653,-31.24", "c"=1107]
+"rocknsm/rock" ["l"="-43.165,-32.004"]
 "Silent-voice/DGA-Domain-Predict" ["l"="-43.103,-31.739"]
 "Chauncy-lab/Deep-learning-of-DGA" ["l"="-43.093,-31.764"]
 "roreagan/DeepDGA" ["l"="-43.091,-31.743"]
 "skydownacai/DGA-Domain-Detection" ["l"="-43.122,-31.744"]
+"Te-k/harpoon" ["l"="-42.475,-33.334", "c"=79]
 "toolswatch/vFeed" ["l"="-43.125,-31.967"]
-"cve-search/cve-search" ["l"="8.348,-11.517"]
+"cve-search/cve-search" ["l"="8.348,-11.517", "c"=285]
 "vfeedio/pyvfeed" ["l"="-43.206,-31.938"]
-"mitre/cti" ["l"="-42.562,-33.188"]
-"seccubus/seccubus" ["l"="-47.095,-34.445"]
-"NorthernSec/CVE-Scan" ["l"="8.394,-11.546"]
-"yampelo/beagle" ["l"="-42.394,-33.209"]
-"ForensicArtifacts/artifacts" ["l"="-41.147,-32.485"]
-"hslatman/awesome-threat-intelligence" ["l"="-42.481,-33.413"]
-"rshipp/awesome-malware-analysis" ["l"="-44.177,-33.857"]
-"l3m0n/pentest_study" ["l"="-44.808,-29.81"]
-"meirwah/awesome-incident-response" ["l"="-42.489,-33.366"]
-"MISP/MISP" ["l"="-42.567,-33.365"]
-"EmpireProject/Empire" ["l"="-45.015,-32.204"]
+"mitre/cti" ["l"="-42.562,-33.188", "c"=79]
+"seccubus/seccubus" ["l"="-47.095,-34.445", "c"=204]
+"NorthernSec/CVE-Scan" ["l"="8.394,-11.546", "c"=285]
+"yampelo/beagle" ["l"="-42.394,-33.209", "c"=79]
+"ForensicArtifacts/artifacts" ["l"="-41.147,-32.485", "c"=289]
+"hslatman/awesome-threat-intelligence" ["l"="-42.481,-33.413", "c"=79]
+"rshipp/awesome-malware-analysis" ["l"="-44.177,-33.857", "c"=865]
+"l3m0n/pentest_study" ["l"="-44.808,-29.81", "c"=3]
+"meirwah/awesome-incident-response" ["l"="-42.489,-33.366", "c"=79]
+"MISP/MISP" ["l"="-42.567,-33.365", "c"=79]
+"EmpireProject/Empire" ["l"="-45.015,-32.204", "c"=53]
+"jaegeral/security-apis" ["l"="-42.523,-33.284", "c"=79]
+"Lookyloo/lookyloo" ["l"="-43.152,-32.046"]
+"trailofbits/pe-parse" ["l"="-42.88,-35.185", "c"=40]
 "struppigel/PortEx" ["l"="-42.75,-31.879"]
 "struppigel/PortexAnalyzerGUI" ["l"="-42.638,-31.809"]
 "CheckPointSW/InviZzzible" ["l"="-42.789,-31.844"]
 "hasherezade/malware_analysis" ["l"="-42.567,-31.945"]
-"1aN0rmus/TekDefense-Automater" ["l"="-43.087,-31.966"]
 "exp0se/harbinger" ["l"="-43.156,-31.962"]
 "aplura/Tango" ["l"="-43.073,-31.956"]
-"automatingosint/osint_public" ["l"="-46.97,-28.131"]
-"jonschipp/mal-dnssearch" ["l"="-42.33,-31.348"]
+"automatingosint/osint_public" ["l"="-46.97,-28.131", "c"=97]
+"jonschipp/mal-dnssearch" ["l"="-42.33,-31.348", "c"=1107]
 "QTek/QRadio" ["l"="-43.176,-31.976"]
+"foospidy/HoneyPy" ["l"="-42.695,-33.697", "c"=79]
+"secureworks/dcept" ["l"="-43.008,-31.911"]
+"gamelinux/passivedns" ["l"="-42.716,-33.419", "c"=79]
 "firehol/firehol" ["l"="-43.042,-32.202"]
-"firehol/blocklist-ipsets" ["l"="-42.979,-32.223"]
 "firehol/iprange" ["l"="-43.009,-32.261"]
 "trick77/ipset-blacklist" ["l"="-43.035,-32.254"]
-"pavel-odintsov/fastnetmon" ["l"="6.26,-4.107"]
+"pavel-odintsov/fastnetmon" ["l"="6.26,-4.107", "c"=725]
 "stamparm/maltrail" ["l"="-42.952,-32.177"]
-"debops/debops-tools" ["l"="8.564,-12.432"]
-"trimstray/iptables-essentials" ["l"="-14.253,-6.392"]
+"debops/debops-tools" ["l"="8.564,-12.432", "c"=600]
+"trimstray/iptables-essentials" ["l"="-14.253,-6.392", "c"=86]
 "stamparm/ipsum" ["l"="-42.999,-32.193"]
-"rspamd/rspamd" ["l"="15.61,-8.102"]
+"rspamd/rspamd" ["l"="15.61,-8.102", "c"=555]
 "firehol/packages" ["l"="-43.08,-32.22"]
-"BIRD/bird" ["l"="6.301,-4.78"]
-"kimchi-project/kimchi" ["l"="9.3,-8.933"]
-"aabc/ipt-netflow" ["l"="6.364,-4.157"]
-"LibreQoE/LibreQoS" ["l"="6.189,-4.157"]
+"BIRD/bird" ["l"="6.301,-4.78", "c"=749]
+"kimchi-project/kimchi" ["l"="9.3,-8.933", "c"=14]
+"aabc/ipt-netflow" ["l"="6.364,-4.157", "c"=725]
+"LibreQoE/LibreQoS" ["l"="6.189,-4.157", "c"=725]
 "MalwareCantFly/Vba2Graph" ["l"="-42.666,-31.969"]
 "d00rt/emotet_research" ["l"="-42.592,-31.957"]
+"InQuest/iocextract" ["l"="-42.384,-33.4", "c"=79]
 "csirtgadgets/bearded-avenger" ["l"="-43.172,-31.934"]
-"michalpurzynski/bro-gramming" ["l"="-42.448,-31.321"]
+"michalpurzynski/bro-gramming" ["l"="-42.448,-31.321", "c"=1107]
 "jpsenior/threataggregator" ["l"="-43.129,-31.937"]
+"mitre-attack/bzar" ["l"="-42.499,-33.174", "c"=79]
+"Neo23x0/Fenrir" ["l"="-42.862,-32.008"]
+"AmnestyTech/investigations" ["l"="-46.651,-32.145", "c"=41]
 "VirusTotal/vt-py" ["l"="-42.69,-31.946"]
-"VirusTotal/vt-cli" ["l"="-42.738,-31.937"]
 "VirusTotal/vt-go" ["l"="-42.659,-31.928"]
 "VirusTotal/yara-python" ["l"="-42.836,-31.976"]
 "traceflow/virustotal3" ["l"="-42.633,-31.921"]
-"VirusTotal/qt-virustotal-uploader" ["l"="-42.615,-31.908"]
-"elastic/ember" ["l"="-41.941,-31.771"]
 "strontic/xcyclopedia" ["l"="-42.53,-31.907"]
-"mitre-attack/mitreattack-python" ["l"="-42.567,-33.106"]
+"mitre-attack/mitreattack-python" ["l"="-42.567,-33.106", "c"=79]
 "InQuest/awesome-yara" ["l"="-42.84,-32.119"]
-"VirusTotal/yara" ["l"="-42.874,-32.151"]
-"SigmaHQ/sigma" ["l"="-42.495,-33.282"]
-"0x4D31/awesome-threat-detection" ["l"="-42.426,-33.296"]
-"SwiftOnSecurity/sysmon-config" ["l"="-42.515,-33.215"]
-"mandiant/flare-vm" ["l"="-42.816,-32.164"]
-"mandiant/flare-fakenet-ng" ["l"="-42.84,-32.062"]
+"SigmaHQ/sigma" ["l"="-42.495,-33.282", "c"=79]
+"0x4D31/awesome-threat-detection" ["l"="-42.426,-33.296", "c"=79]
+"SwiftOnSecurity/sysmon-config" ["l"="-42.515,-33.215", "c"=79]
 "carbonblack/tau-tools" ["l"="-43.488,-31.804"]
 "carbonblack/cbapi-python" ["l"="-43.456,-31.822"]
 "MHaggis/CBR-Queries" ["l"="-43.519,-31.811"]
@@ -2971,48 +3562,56 @@ digraph G {
 "r3comp1le/VT-Hunter" ["l"="-43.168,-31.804"]
 "leshniak/nft-blacklist" ["l"="-43.049,-32.279"]
 "ilikenwf/pg2ipset" ["l"="-43.047,-32.305"]
-"mitchellkrogza/nginx-ultimate-bad-bot-blocker" ["l"="12.152,-34.091"]
-"rfxn/linux-malware-detect" ["l"="-45.561,-29.938"]
+"mitchellkrogza/nginx-ultimate-bad-bot-blocker" ["l"="12.152,-34.091", "c"=906]
 "kravietz/blacklist-scripts" ["l"="-43.076,-32.299"]
-"extremeshok/clamav-unofficial-sigs" ["l"="-45.671,-29.976"]
+"extremeshok/clamav-unofficial-sigs" ["l"="-45.671,-29.976", "c"=3]
 "dannysheehan/iptables-ipset-blacklists" ["l"="-43.064,-32.276"]
 "joe-at-startupmedia/ipset-blacklist-firewalld" ["l"="-43.035,-32.288"]
-"maravento/blackweb" ["l"="-51.6,12.795"]
-"myvesta/vesta" ["l"="12.061,-33.991"]
-"WaterByWind/edgeos-bl-mgmt" ["l"="-16.772,-39.694"]
-"Neo23x0/yarAnalyzer" ["l"="-42.825,-31.934"]
-"Neo23x0/Fenrir" ["l"="-42.862,-32.008"]
+"maravento/blackweb" ["l"="-51.6,12.795", "c"=200]
+"myvesta/vesta" ["l"="12.061,-33.991", "c"=906]
+"WaterByWind/edgeos-bl-mgmt" ["l"="-16.772,-39.694", "c"=1198]
 "Xen0ph0n/YaraGenerator" ["l"="-42.886,-31.929"]
-"kevoreilly/CAPEv2" ["l"="-42.769,-32.065"]
 "decalage2/oletools" ["l"="-42.815,-32.073"]
 "doomedraven/VirusTotalApi" ["l"="-42.595,-31.764"]
-"SamuelTulach/VirusTotalUploader" ["l"="-49.749,9.837"]
-"cyberdefenders/email-header-analyzer" ["l"="-42.299,-33.216"]
+"cyberdefenders/email-header-analyzer" ["l"="-42.299,-33.216", "c"=79]
+"pe3zx/my-infosec-awesome" ["l"="-42.37,-33.259", "c"=79]
+"InQuest/malware-samples" ["l"="-47.193,-24.38", "c"=955]
 "joxeankoret/multiav" ["l"="-42.955,-31.679"]
 "PlagueScanner/PlagueScanner" ["l"="-42.961,-31.641"]
+"misterch0c/what_is_this_c2" ["l"="-46.561,-23.594", "c"=338]
+"jekyc/wig" ["l"="-47.229,-34.449", "c"=204]
+"mstfknn/malware-sample-library" ["l"="-47.218,-24.372", "c"=955]
+"MISP/PyMISP" ["l"="-42.58,-33.391", "c"=79]
+"hanul93/kicomav" ["l"="26.28,-20.329", "c"=207]
 "Bw3ll/JOP_ROCKET" ["l"="-42.384,-32.194"]
 "Bw3ll/ROP_ROCKET" ["l"="-42.412,-32.176"]
+"cisagov/Malcolm" ["l"="-42.407,-33.28", "c"=79]
+"idaholab/Malcolm" ["l"="-42.336,-32.052"]
 "mandiant/ioc_writer" ["l"="-43.069,-31.909"]
 "fireeye/OpenIOC_1.1" ["l"="-43.053,-31.895"]
 "mandiant/Reversing" ["l"="-43.135,-31.877"]
 "mandiant/AuditParser" ["l"="-43.148,-31.867"]
-"mandiant/ShimCacheParser" ["l"="-41.243,-32.416"]
+"mandiant/ShimCacheParser" ["l"="-41.243,-32.416", "c"=289]
 "YahooArchive/PyIOCe" ["l"="-43.112,-31.878"]
 "boundary/wireshark" ["l"="-42.755,-31.811"]
 "jymcheong/SysmonResources" ["l"="-42.762,-31.786"]
+"mandiant/flare-emu" ["l"="-43.032,-36.962", "c"=306]
 "saferwall/saferwall" ["l"="-42.626,-32.017"]
 "saferwall/pe" ["l"="-42.489,-32.022"]
-"ayoubfaouzi/windows-exploitation" ["l"="-41.737,-36.595"]
+"ayoubfaouzi/windows-exploitation" ["l"="-41.737,-36.595", "c"=91]
+"microsoft/ProcDump-for-Linux" ["l"="-42.693,-36.754", "c"=306]
 "endgameinc/xori" ["l"="-42.513,-31.972"]
-"endgameinc/RTA" ["l"="-42.556,-33.163"]
-"drb-ra/C2IntelFeeds" ["l"="-42.146,-33.256"]
+"endgameinc/RTA" ["l"="-42.556,-33.163", "c"=79]
+"drb-ra/C2IntelFeeds" ["l"="-42.146,-33.256", "c"=79]
 "avast/ioc" ["l"="-42.799,-31.941"]
-"executemalware/Malware-IOCs" ["l"="-42.175,-33.256"]
+"executemalware/Malware-IOCs" ["l"="-42.175,-33.256", "c"=79]
 "Cisco-Talos/IOCs" ["l"="-42.718,-31.784"]
 "pan-unit42/tweets" ["l"="-42.809,-31.925"]
 "volexity/threat-intel" ["l"="-42.737,-31.988"]
 "netskopeoss/NetskopeThreatLabsIOCs" ["l"="-42.771,-31.921"]
-"mthcht/ThreatHunting-Keywords" ["l"="-42.182,-33.165"]
+"mthcht/ThreatHunting-Keywords" ["l"="-42.182,-33.165", "c"=79]
+"AlienVault-Labs/AlienVaultLabs" ["l"="-42.756,-33.471", "c"=79]
+"citizenlab/malware-signatures" ["l"="-42.877,-31.913"]
 "OpenSOC/opensoc-ui" ["l"="-43.271,-32.032"]
 "OpenSOC/opensoc-streaming" ["l"="-43.253,-32.022"]
 "OpenSOC/opensoc-vagrant" ["l"="-43.273,-32.018"]
@@ -3020,16 +3619,18 @@ digraph G {
 "carbonblack/cb-event-forwarder" ["l"="-43.497,-31.838"]
 "carbonblack/community" ["l"="-43.463,-31.843"]
 "OALabs/hashdb-ida" ["l"="-42.598,-32.142"]
-"Sentinel-One/CobaltStrikeParser" ["l"="-42.264,-33.031"]
-"a1ext/labeless" ["l"="-42.57,-35.1"]
-"hasherezade/ida_ifl" ["l"="-43.143,-36.952"]
+"Sentinel-One/CobaltStrikeParser" ["l"="-42.264,-33.031", "c"=79]
+"a1ext/labeless" ["l"="-42.57,-35.1", "c"=40]
+"hasherezade/ida_ifl" ["l"="-43.143,-36.952", "c"=306]
 "OALabs/hashdb" ["l"="-42.57,-32.149"]
 "JPCERTCC/aa-tools" ["l"="-42.788,-32.051"]
-"Cisco-Talos/DynDataResolver" ["l"="-42.545,-35.069"]
+"Cisco-Talos/DynDataResolver" ["l"="-42.545,-35.069", "c"=40]
+"rndinfosecguy/Scavenger" ["l"="-46.934,-28.068", "c"=97]
+"kahunalu/pwnbin" ["l"="-43.253,-32.218"]
 "SEKOIA-IO/Community" ["l"="-42.696,-31.826"]
-"CriticalPathSecurity/Zeek-Intelligence-Feeds" ["l"="-42.224,-33.272"]
+"CriticalPathSecurity/Zeek-Intelligence-Feeds" ["l"="-42.224,-33.272", "c"=79]
 "hpthreatresearch/iocs" ["l"="-42.788,-31.916"]
-"elastic/protections-artifacts" ["l"="-42.282,-33.136"]
+"elastic/protections-artifacts" ["l"="-42.282,-33.136", "c"=79]
 "c3rb3ru5d3d53c/mwcfg" ["l"="-42.543,-32.079"]
 "OALabs/Lab-Notes" ["l"="-42.585,-32.121"]
 "danielplohmann/idascope" ["l"="-42.571,-32.017"]
@@ -3038,7 +3639,11 @@ digraph G {
 "redcanaryco/redcanary-response-utils" ["l"="-43.528,-31.756"]
 "redcanaryco/surveyor" ["l"="-43.521,-31.78"]
 "danielplohmann/mcrit" ["l"="-42.511,-31.999"]
-"fkie-cad/dewolf" ["l"="-43.252,-36.803"]
+"fkie-cad/dewolf" ["l"="-43.252,-36.803", "c"=306]
+"snovvcrash/usbrip" ["l"="-41.198,-32.471", "c"=289]
+"vz-risk/VCDB" ["l"="-42.63,-33.176", "c"=79]
+"mindedsecurity/JStillery" ["l"="47.036,21.715", "c"=192]
+"HynekPetrak/malware-jail" ["l"="-42.883,-31.874"]
 "Hestat/lw-yara" ["l"="-42.886,-31.725"]
 "Hestat/blazescan" ["l"="-42.891,-31.696"]
 "codewatchorg/Burp-Yara-Rules" ["l"="-42.891,-31.676"]
@@ -3047,7 +3652,11 @@ digraph G {
 "lolnate/vt-hunter" ["l"="-43.209,-31.767"]
 "citizenlab/bluecoat-investigations" ["l"="-43.057,-31.849"]
 "citizenlab/spyware-scan" ["l"="-43.042,-31.864"]
-"MHaggis/sysmon-dfir" ["l"="-42.518,-33.135"]
+"cyber-research/APTMalware" ["l"="-41.843,-31.778", "c"=755]
+"cldrn/nmap-nse-scripts" ["l"="-47.779,-30.552", "c"=11]
+"glennzw/shodan-hq-nse" ["l"="-43.29,-32.254"]
+"MHaggis/sysmon-dfir" ["l"="-42.518,-33.135", "c"=79]
+"R3MRUM/PSDecode" ["l"="-41.303,-32.473", "c"=289]
 "SupportIntelligence/Icewater" ["l"="-42.901,-31.937"]
 "Xumeiquer/yara-forensics" ["l"="-42.713,-31.913"]
 "Neo23x0/YARA-Performance-Guidelines" ["l"="-42.673,-31.908"]
@@ -3055,27 +3664,28 @@ digraph G {
 "jeFF0Falltrades/YARA-Signatures" ["l"="-42.679,-31.843"]
 "deadbits/yara-rules" ["l"="-42.716,-31.891"]
 "felixweyne/ProcessSpawnControl" ["l"="-42.55,-32.048"]
+"Mixaill/FakePDB" ["l"="-42.83,-35.302", "c"=40]
 "hasherezade/mal_unpack_drv" ["l"="-42.605,-32.196"]
 "hasherezade/funky_malware_formats" ["l"="-42.578,-32.182"]
-"hasherezade/dll_to_exe" ["l"="-42.725,-35.088"]
-"x64dbg/Scripts" ["l"="-42.653,-35.181"]
+"x64dbg/Scripts" ["l"="-42.653,-35.181", "c"=40]
 "Cisco-Talos/BASS" ["l"="-42.633,-31.96"]
 "SuperCowPowers/data_hacking" ["l"="-43.091,-31.811"]
-"exploitprotocol/mobile-security-wiki" ["l"="-43.003,-30.555"]
-"luyg24/IT_security" ["l"="-42.983,-30.521"]
-"faizann24/Using-machine-learning-to-detect-malicious-URLs" ["l"="-45.736,-29.43"]
-"wtsxDev/Machine-Learning-for-Cyber-Security" ["l"="-43.963,-33.668"]
+"exploitprotocol/mobile-security-wiki" ["l"="-43.003,-30.555", "c"=787]
+"luyg24/IT_security" ["l"="-42.983,-30.521", "c"=787]
+"faizann24/Using-machine-learning-to-detect-malicious-URLs" ["l"="-45.736,-29.43", "c"=3]
+"wtsxDev/Machine-Learning-for-Cyber-Security" ["l"="-43.963,-33.668", "c"=865]
 "DavidJBianco/Clearcut" ["l"="-43.195,-31.667"]
-"brianwrf/hackUtils" ["l"="-43.01,-30.448"]
+"brianwrf/hackUtils" ["l"="-43.01,-30.448", "c"=787]
 "andrewaeva/DGA" ["l"="-43.066,-31.764"]
-"80vul/phpcodz" ["l"="-43.011,-30.473"]
-"SuperCowPowers/zat" ["l"="-42.489,-31.306"]
+"80vul/phpcodz" ["l"="-43.011,-30.473", "c"=787]
+"SuperCowPowers/zat" ["l"="-42.489,-31.306", "c"=1107]
 "P1kachu/v0lt" ["l"="-43.241,-31.704"]
 "prolsen/yara-rules" ["l"="-42.69,-31.87"]
+"RicBent/Classy" ["l"="-43.133,-37.009", "c"=306]
+"jg-fisher/botnet" ["l"="-45.252,-25.074", "c"=724]
+"boreq/botnet" ["l"="-42.632,-31.67"]
 "danielpoliakov/lisa" ["l"="-42.735,-31.897"]
-"monnappa22/Limon" ["l"="-42.819,-31.838"]
 "ifding/iot-malware" ["l"="-42.687,-31.786"]
-"Tencent/HaboMalHunter" ["l"="-42.771,-31.83"]
 "blacktop/virustotal-api" ["l"="-42.555,-31.738"]
 "gawen/virustotal" ["l"="-42.538,-31.714"]
 "Xen0ph0n/VirusTotal_API_Tool" ["l"="-42.577,-31.733"]
@@ -3085,14 +3695,14 @@ digraph G {
 "angelkillah/zer0m0n" ["l"="-42.82,-31.802"]
 "401trg/detections" ["l"="-43.308,-31.528"]
 "401trg/utilities" ["l"="-43.325,-31.509"]
+"citizenlab/test-lists" ["l"="-46.485,13.296", "c"=42]
+"citizenlab/malware-indicators" ["l"="-42.986,-31.917"]
 "endgameinc/binarypig" ["l"="-42.86,-31.734"]
 "Blueliv/yaraQA" ["l"="-42.866,-31.785"]
 "BoneLee/dns_tunnel_dectect_with_CNN" ["l"="-43.124,-31.65"]
 "irvinhomem/TunnelFeatureExtractor" ["l"="-43.145,-31.592"]
 "BoneLee/pcap_to_txt" ["l"="-43.134,-31.626"]
 "Yuren-Zhong/DeepDGA" ["l"="-43.078,-31.734"]
-"citizenlab/malware-signatures" ["l"="-42.877,-31.913"]
-"citizenlab/malware-indicators" ["l"="-42.986,-31.917"]
 "x64dbg/yarasigs" ["l"="-42.845,-31.916"]
 "1aN0rmus/Yara" ["l"="-42.877,-31.896"]
 "sysforensics/YaraRules" ["l"="-42.904,-31.88"]
@@ -3110,8 +3720,10 @@ digraph G {
 "avast/yaracpp" ["l"="-42.388,-31.988"]
 "avast/retdec-regression-tests-framework" ["l"="-42.407,-31.988"]
 "AlienVault-OTX/yabin" ["l"="-42.898,-31.909"]
-"silence-is-best/c2db" ["l"="-46.587,-23.569"]
-"fboldewin/COM-Code-Helper" ["l"="-43.177,-37.164"]
+"google/grr-doc" ["l"="9.201,-9.413", "c"=14]
+"sandialabs/scot" ["l"="-43.101,-31.976"]
+"silence-is-best/c2db" ["l"="-46.587,-23.569", "c"=338]
+"fboldewin/COM-Code-Helper" ["l"="-43.177,-37.164", "c"=306]
 "Phoul/yara_rules" ["l"="-42.959,-31.821"]
 "0pc0deFR/YaraRules" ["l"="-43.003,-31.813"]
 "sroberts/peid4yara" ["l"="-42.959,-31.834"]
@@ -3124,142 +3736,171 @@ digraph G {
 "mannirulz/BotDAD" ["l"="-43.171,-31.521"]
 "b0bac/DNSTunnelDetectTools" ["l"="-43.151,-31.575"]
 "jeFF0Falltrades/IoCs" ["l"="-42.656,-31.818"]
-"malrev/ABD" ["l"="-42.71,-32.221"]
 "OpenRCE/Malware-Analysis-Training" ["l"="-42.755,-32.201"]
-"hugsy/defcon_27_windbg_workshop" ["l"="-43.067,-35.113"]
-"gaasedelen/lighthouse" ["l"="-42.97,-36.856"]
-"cea-sec/miasm" ["l"="-42.92,-36.836"]
-"inforion/idapython-cheatsheet" ["l"="-43.087,-36.965"]
-"airbus-seclab/bincat" ["l"="-43.009,-36.875"]
-"JonathanSalwan/Tigress_protection" ["l"="-43.033,-36.853"]
-"qilingframework/qiling" ["l"="-42.879,-36.826"]
-"hacksysteam/HackSysExtremeVulnerableDriver" ["l"="-42.93,-35.118"]
-"ghidraninja/ghidra_scripts" ["l"="-41.49,-37.61"]
-"0xricksanchez/paper_collection" ["l"="-41.557,-36.203"]
-"RPISEC/MBE" ["l"="-45.185,-34.508"]
-"mandiant/flare-emu" ["l"="-43.032,-36.962"]
-"bootleg/ret-sync" ["l"="-42.941,-36.905"]
-"arkime/arkime" ["l"="-42.65,-33.375"]
-"paralax/awesome-honeypots" ["l"="-44.172,-33.821"]
-"TheHive-Project/TheHive" ["l"="-42.535,-33.325"]
-"WithSecureLabs/chainsaw" ["l"="-42.339,-33.258"]
-"Yamato-Security/hayabusa" ["l"="-42.285,-33.259"]
+"hugsy/defcon_27_windbg_workshop" ["l"="-43.067,-35.113", "c"=40]
+"gaasedelen/lighthouse" ["l"="-42.97,-36.856", "c"=306]
+"cea-sec/miasm" ["l"="-42.92,-36.836", "c"=306]
+"inforion/idapython-cheatsheet" ["l"="-43.087,-36.965", "c"=306]
+"airbus-seclab/bincat" ["l"="-43.009,-36.875", "c"=306]
+"JonathanSalwan/Tigress_protection" ["l"="-43.033,-36.853", "c"=306]
+"qilingframework/qiling" ["l"="-42.879,-36.826", "c"=306]
+"hacksysteam/HackSysExtremeVulnerableDriver" ["l"="-42.93,-35.118", "c"=40]
+"ghidraninja/ghidra_scripts" ["l"="-41.49,-37.61", "c"=610]
+"0xricksanchez/paper_collection" ["l"="-41.557,-36.203", "c"=91]
+"RPISEC/MBE" ["l"="-45.185,-34.508", "c"=282]
+"bootleg/ret-sync" ["l"="-42.941,-36.905", "c"=306]
+"osquery/osquery" ["l"="-42.791,-33.414", "c"=79]
+"disposable-email-domains/disposable-email-domains" ["l"="26.534,-24.875", "c"=32]
+"arkime/arkime" ["l"="-42.65,-33.375", "c"=79]
+"paralax/awesome-honeypots" ["l"="-44.172,-33.821", "c"=865]
+"zrax/pycdc" ["l"="-42.775,-37.11", "c"=306]
+"Yelp/osxcollector" ["l"="26.036,-21.194", "c"=207]
+"cuckoosandbox/cuckoo" ["l"="-42.693,-33.434", "c"=79]
+"snort3/snort3" ["l"="-42.817,-33.373", "c"=79]
+"thalesgroup-cert/Watcher" ["l"="-42.345,-33.305", "c"=79]
+"TheHive-Project/TheHive" ["l"="-42.535,-33.325", "c"=79]
+"504ensicsLabs/LiME" ["l"="-41.073,-32.494", "c"=289]
+"pwnlandia/mhn" ["l"="-42.658,-33.505", "c"=79]
+"WithSecureLabs/chainsaw" ["l"="-42.339,-33.258", "c"=79]
+"Yamato-Security/hayabusa" ["l"="-42.285,-33.259", "c"=79]
+"desaster/kippo" ["l"="-42.695,-33.622", "c"=79]
+"threatland/TL-BOTS" ["l"="-46.215,-23.78", "c"=338]
+"center-for-threat-informed-defense/adversary_emulation_library" ["l"="-42.477,-33.165", "c"=79]
+"t4d/PhishingKit-Yara-Rules" ["l"="-42.118,-33.436", "c"=79]
+"vivisect/vivisect" ["l"="-43.033,-36.872", "c"=306]
+"horsicq/Detect-It-Easy" ["l"="-42.684,-35.118", "c"=40]
+"mytechnotalent/Reverse-Engineering" ["l"="-44.201,-33.949", "c"=865]
+"phin3has/mailoney" ["l"="-42.715,-33.693", "c"=79]
+"ant4g0nist/lisa.py" ["l"="-42.936,-37.098", "c"=306]
+"Da2dalus/The-MALWARE-Repo" ["l"="-47.173,-24.351", "c"=955]
 "da667/AutoMISP" ["l"="-42.906,-31.769"]
 "rodionovd/cuckoo-osx-analyzer" ["l"="-42.924,-31.764"]
+"horsicq/DIE-engine" ["l"="-42.68,-35.18", "c"=40]
 "cvandeplas/ELK-forensics" ["l"="-43.29,-31.976"]
 "TravisFSmith/MyBroElk" ["l"="-43.261,-31.978"]
 "Tripwire/TARDIS" ["l"="-43.219,-31.976"]
+"USArmyResearchLab/Dshell" ["l"="-42.72,-33.286", "c"=79]
+"ivre/ivre" ["l"="-47.881,-30.503", "c"=11]
+"thainnos/LICSTER" ["l"="-42.437,-33.655", "c"=79]
+"cutaway-security/ICSPcapViz" ["l"="-42.3,-32.065"]
+"telekom-security/tpotce" ["l"="-42.577,-33.454", "c"=79]
 "mandiant/stringsifter" ["l"="-42.725,-32.085"]
-"PhantomInsights/mexican-government-report" ["l"="-51.155,10.421"]
+"PhantomInsights/mexican-government-report" ["l"="-51.155,10.421", "c"=19]
 "MBCProject/mbc-markdown" ["l"="-42.691,-32.053"]
-"OTRF/Security-Datasets" ["l"="-42.462,-33.157"]
+"OTRF/Security-Datasets" ["l"="-42.462,-33.157", "c"=79]
 "jstrosch/learning-malware-analysis" ["l"="-42.682,-32.249"]
-"InQuest/malware-samples" ["l"="-47.193,-24.38"]
-"fabrimagic72/malware-samples" ["l"="-47.209,-24.354"]
+"fabrimagic72/malware-samples" ["l"="-47.209,-24.354", "c"=955]
 "jstrosch/learning-reverse-engineering" ["l"="-42.703,-32.27"]
-"HuskyHacks/PMAT-labs" ["l"="-45.106,-31.679"]
-"RPISEC/Malware" ["l"="-44.078,-33.93"]
-"ail-project/ail-framework" ["l"="-42.233,-33.301"]
-"TheHive-Project/Cortex" ["l"="-42.458,-33.344"]
-"atc-project/atomic-threat-coverage" ["l"="-42.494,-33.158"]
-"certsocietegenerale/IRM-deprecated" ["l"="-42.471,-33.213"]
+"HuskyHacks/PMAT-labs" ["l"="-45.106,-31.679", "c"=53]
+"RPISEC/Malware" ["l"="-44.078,-33.93", "c"=865]
+"blackberry/pe_tree" ["l"="-42.962,-36.876", "c"=306]
+"ail-project/ail-framework" ["l"="-42.233,-33.301", "c"=79]
+"TheHive-Project/Cortex" ["l"="-42.458,-33.344", "c"=79]
+"atc-project/atomic-threat-coverage" ["l"="-42.494,-33.158", "c"=79]
+"certsocietegenerale/IRM-deprecated" ["l"="-42.471,-33.213", "c"=79]
 "ciscocsirt/malspider" ["l"="-43.052,-31.945"]
 "MatthewClarkMay/geoip-attack-map" ["l"="-43.101,-32.106"]
 "RedSiege/Just-Metadata" ["l"="-43.08,-31.921"]
-"DanMcInerney/net-creds" ["l"="-44.975,-32.264"]
+"DanMcInerney/net-creds" ["l"="-44.975,-32.264", "c"=53]
 "jstrosch/sclauncher" ["l"="-42.65,-32.322"]
-"Bert-JanP/Incident-Response-Powershell" ["l"="-42.153,-33.155"]
-"cyb3rmik3/MDE-DFIR-Resources" ["l"="-42.165,-33.135"]
-"cyb3rfox/Aurora-Incident-Response" ["l"="-42.326,-33.221"]
+"Bert-JanP/Incident-Response-Powershell" ["l"="-42.153,-33.155", "c"=79]
+"cyb3rmik3/MDE-DFIR-Resources" ["l"="-42.165,-33.135", "c"=79]
+"cyb3rfox/Aurora-Incident-Response" ["l"="-42.326,-33.221", "c"=79]
 "securisec/chepy" ["l"="-42.643,-32.093"]
 "binref/refinery" ["l"="-42.628,-32.065"]
-"davidpany/WMI_Forensics" ["l"="-41.194,-32.434"]
+"davidpany/WMI_Forensics" ["l"="-41.194,-32.434", "c"=289]
 "EFForg/yaya" ["l"="-42.745,-31.973"]
-"R3MRUM/PSDecode" ["l"="-41.303,-32.473"]
-"cuckoosandbox/cuckoo" ["l"="-42.693,-33.434"]
-"Velocidex/velociraptor" ["l"="-42.438,-33.277"]
+"salesforce/jarm" ["l"="-42.335,-33.069", "c"=79]
 "OpenSOC/opensoc" ["l"="-43.213,-32.012"]
-"google/stenographer" ["l"="-43.122,-32.003"]
-"rocknsm/rock" ["l"="-43.165,-32.004"]
-"EmersonElectricCo/fsf" ["l"="-43.1,-32.017"]
-"target/strelka" ["l"="-42.43,-33.237"]
-"google/rekall" ["l"="-42.689,-33.314"]
-"activecm/rita-legacy" ["l"="-42.533,-33.245"]
+"activecm/rita-legacy" ["l"="-42.533,-33.245", "c"=79]
+"bitdefender/bddisasm" ["l"="-43.009,-35.291", "c"=40]
+"CYB3RMX/Qu1cksc0pe" ["l"="-42.182,-33.309", "c"=79]
+"0x90n/InfoSec-Black-Friday" ["l"="-45.3,-31.848", "c"=53]
+"mandiant/ThreatPursuit-VM" ["l"="-42.411,-33.218", "c"=79]
+"evilcos/papers" ["l"="-44.965,-29.846", "c"=3]
+"microsoft/ProcMon-for-Linux" ["l"="-42.75,-36.78", "c"=306]
+"horsicq/XPEViewer" ["l"="-42.679,-35.15", "c"=40]
 "bontchev/pcodedmp" ["l"="-42.764,-32.03"]
 "Big5-sec/pcode2code" ["l"="-42.738,-32.047"]
-"Apr4h/CobaltStrikeScan" ["l"="-42.264,-32.999"]
+"Apr4h/CobaltStrikeScan" ["l"="-42.264,-32.999", "c"=79]
 "buffer/thug" ["l"="-42.958,-31.937"]
-"secureworks/dcept" ["l"="-43.008,-31.911"]
 "GoSecure/malboxes" ["l"="-42.917,-31.949"]
+"sapics/ip-location-db" ["l"="-65.402,16.004", "c"=967]
 "MAECProject/schemas" ["l"="-42.656,-32.069"]
 "YARAHQ/yara-forge" ["l"="-42.696,-31.981"]
+"volatilityfoundation/community" ["l"="-41.076,-32.315", "c"=289]
+"indetectables-net/toolkit" ["l"="-1.529,0.049", "c"=224]
+"nsacyber/Mitigating-Web-Shells" ["l"="-42.468,-33.057", "c"=79]
 "BayshoreNetworks/yextend" ["l"="-42.825,-31.889"]
 "kevthehermit/YaraPcap" ["l"="-42.799,-31.881"]
 "godaddy/procfilter" ["l"="-42.938,-31.877"]
 "RamadhanAmizudin/python-icap-yara" ["l"="-42.799,-31.826"]
 "sevdokimov/log-viewer" ["l"="-42.734,-31.687"]
-"funoverip/mcafee-sitelist-pwd-decryption" ["l"="-45.768,-32.261"]
-"keydet89/RegRipper3.0" ["l"="-41.161,-32.503"]
+"funoverip/mcafee-sitelist-pwd-decryption" ["l"="-45.768,-32.261", "c"=53]
+"keydet89/RegRipper3.0" ["l"="-41.161,-32.503", "c"=289]
 "certtools/intelmq-manager" ["l"="-43.145,-32.024"]
-"MISP/PyMISP" ["l"="-42.58,-33.391"]
 "abusesa/abusehelper" ["l"="-43.19,-32.052"]
-"idaholab/Malcolm" ["l"="-42.336,-32.052"]
-"cisagov/Malcolm" ["l"="-42.407,-33.28"]
-"cutaway-security/ICSPcapViz" ["l"="-42.3,-32.065"]
+"hasherezade/bearparser" ["l"="-42.836,-35.09", "c"=40]
 "idaholab/STIG" ["l"="-42.286,-32.047"]
 "JPCERTCC/EmoCheck" ["l"="-42.734,-32.014"]
-"ffftp/ffftp" ["l"="6.105,-40.053"]
+"ffftp/ffftp" ["l"="6.105,-40.053", "c"=154]
 "StrangerealIntel/Orion" ["l"="-42.755,-32"]
 "d00rt/emotet_protection_tools" ["l"="-42.69,-32.003"]
 "botherder/detekt" ["l"="-43.076,-31.833"]
 "0xPoly/Hacking-Team-Sweeper" ["l"="-43.127,-31.789"]
 "botherder/targetedthreats" ["l"="-43.088,-31.869"]
-"JamesHabben/evolve" ["l"="-41.118,-32.359"]
+"JamesHabben/evolve" ["l"="-41.118,-32.359", "c"=289]
 "ckane/CS7038-Malware-Analysis" ["l"="-42.755,-32.248"]
-"yeyintminthuhtut/Awesome-Advanced-Windows-Exploitation-References" ["l"="-41.448,-36.437"]
-"SpecterOps/at-ps" ["l"="-45.296,-32.04"]
-"nnamon/linux-exploitation-course" ["l"="-45.083,-34.604"]
-"tylerha97/awesome-reversing" ["l"="-44.098,-33.88"]
-"BankSecurity/Red_Team" ["l"="-45.263,-31.908"]
-"michalmalik/linux-re-101" ["l"="-45.086,-34.558"]
+"yeyintminthuhtut/Awesome-Advanced-Windows-Exploitation-References" ["l"="-41.448,-36.437", "c"=91]
+"SpecterOps/at-ps" ["l"="-45.296,-32.04", "c"=53]
+"nnamon/linux-exploitation-course" ["l"="-45.083,-34.604", "c"=282]
+"tylerha97/awesome-reversing" ["l"="-44.098,-33.88", "c"=865]
+"BankSecurity/Red_Team" ["l"="-45.263,-31.908", "c"=53]
+"michalmalik/linux-re-101" ["l"="-45.086,-34.558", "c"=282]
+"ANSSI-FR/AD-control-paths" ["l"="-40.901,-32.451", "c"=289]
 "CybercentreCanada/assemblyline-base" ["l"="-42.381,-32.088"]
 "CybercentreCanada/assemblyline-core" ["l"="-42.346,-32.1"]
 "CybercentreCanada/assemblyline-ui" ["l"="-42.354,-32.088"]
 "CybercentreCanada/assemblyline-service-cuckoo" ["l"="-42.363,-32.111"]
 "CybercentreCanada/assemblyline-ui-frontend" ["l"="-42.364,-32.099"]
-"mandiant/GoReSym" ["l"="-42.931,-37.043"]
+"mandiant/GoReSym" ["l"="-42.931,-37.043", "c"=306]
 "Bw3ll/sharem" ["l"="-42.452,-32.149"]
 "VirusTotal/yara-x" ["l"="-42.643,-32"]
 "advanced-threat-research/DotDumper" ["l"="-42.48,-31.923"]
-"AndrewRathbun/DFIRArtifactMuseum" ["l"="-41.084,-32.515"]
-"wagga40/Zircolite" ["l"="-42.289,-33.205"]
+"AndrewRathbun/DFIRArtifactMuseum" ["l"="-41.084,-32.515", "c"=289]
+"wagga40/Zircolite" ["l"="-42.289,-33.205", "c"=79]
 "micheloosterhof/kippo" ["l"="-43.152,-31.98"]
 "michael-yip/MaltegoVT" ["l"="-43.127,-31.909"]
 "CybercentreCanada/assemblyline-v4-service" ["l"="-42.333,-32.093"]
 "CybercentreCanada/assemblyline-service-deobfuscripter" ["l"="-42.324,-32.103"]
 "apache/metron" ["l"="-43.261,-32.059"]
-"eclecticiq/OpenTAXII" ["l"="-42.766,-33.148"]
-"Invoke-IR/ACE" ["l"="-41.178,-32.337"]
+"eclecticiq/OpenTAXII" ["l"="-42.766,-33.148", "c"=79]
+"Invoke-IR/ACE" ["l"="-41.178,-32.337", "c"=289]
+"hukkelas/DeepPrivacy" ["l"="-51.286,10.376", "c"=19]
 "hillu/go-yara" ["l"="-42.643,-31.901"]
-"fr0gger/Awesome_Malware_Techniques" ["l"="-47.446,-32.517"]
-"DebugPrivilege/InsightEngineering" ["l"="-47.507,-32.514"]
+"fr0gger/Awesome_Malware_Techniques" ["l"="-47.446,-32.517", "c"=41]
+"DebugPrivilege/InsightEngineering" ["l"="-47.507,-32.514", "c"=41]
 "pchaigno/dga-collection" ["l"="-43.056,-31.778"]
 "360netlab/DGA" ["l"="-43.046,-31.76"]
 "exp0se/dga_detector" ["l"="-43.071,-31.78"]
 "philarkwright/DGA-Detection" ["l"="-43.098,-31.754"]
 "fanci-dga-detection/fanci" ["l"="-43.047,-31.739"]
 "hmaccelerate/DGA_Detection" ["l"="-43.09,-31.726"]
+"dotcppfile/DAws" ["l"="-43.16,-30.461", "c"=787]
 "certtools/intelmq-tutorial" ["l"="-43.179,-32.036"]
-"Cherishao/APT-Sample" ["l"="-41.789,-31.794"]
+"Cherishao/APT-Sample" ["l"="-41.789,-31.794", "c"=755]
 "sapphirex00/Threat-Hunting" ["l"="-42.751,-32.101"]
-"StrangerealIntel/EternalLiberty" ["l"="-42.033,-33.247"]
+"StrangerealIntel/EternalLiberty" ["l"="-42.033,-33.247", "c"=79]
+"model-zoo/shift-ctrl-f" ["l"="-13.32,-6.019", "c"=86]
+"Netflix-Skunkworks/sketchy" ["l"="-42.932,-33.524", "c"=79]
 "ditekshen/detection" ["l"="-42.68,-31.927"]
 "sbousseaden/YaraHunts" ["l"="-42.693,-31.913"]
 "strontic/strontic.github.io" ["l"="-42.483,-31.887"]
 "CERT-Polska/karton-playground" ["l"="-42.521,-32.065"]
 "MITRECND/malchive" ["l"="-42.516,-32.05"]
 "mandiant/capa-testfiles" ["l"="-42.669,-32.054"]
-"vivisect/vivisect" ["l"="-43.033,-36.872"]
+"obsidianforensics/unfurl" ["l"="-41.125,-32.516", "c"=289]
+"ZENALC/algobot" ["l"="-47.231,-25.498", "c"=70]
 "redcanaryco/chain-reactor" ["l"="-43.565,-31.773"]
 "d4rksystem/VBoxCloak" ["l"="-42.568,-31.861"]
 "d4rksystem/VMwareCloak" ["l"="-42.516,-31.83"]
@@ -3268,29 +3909,27 @@ digraph G {
 "markuskont/go-sigma-rule-engine" ["l"="-42.492,-31.851"]
 "brad-sp/cuckoomon-modified" ["l"="-42.941,-31.796"]
 "brad-sp/community-modified" ["l"="-42.944,-31.81"]
-"KillerInstinct/cuckoo-modified" ["l"="-41.096,-32.306"]
-"H2Cyber/VolDiff" ["l"="-41.113,-32.317"]
+"KillerInstinct/cuckoo-modified" ["l"="-41.096,-32.306", "c"=289]
+"H2Cyber/VolDiff" ["l"="-41.113,-32.317", "c"=289]
 "BromiumLabs/PackerAttacker" ["l"="-42.85,-31.786"]
 "honeynet/cuckooml" ["l"="-42.889,-31.783"]
+"sophos/yaraml_rules" ["l"="-41.879,-31.809", "c"=755]
 "InQuest/yara-rules-vt" ["l"="-42.64,-31.877"]
 "splunk/twinclams" ["l"="-42.656,-31.889"]
+"build-cpp/cmkr" ["l"="-41.578,-34.421", "c"=773]
 "stephenbrannon/IOCextractor" ["l"="-43.056,-31.929"]
 "Elemental-attack/Elemental" ["l"="-42.614,-31.826"]
-"sbousseaden/Slides" ["l"="-42.495,-33.101"]
-"cyber-research/APTMalware" ["l"="-41.843,-31.778"]
-"MISP/misp-galaxy" ["l"="-42.56,-33.402"]
-"pandazheng/Threat-Intelligence-Analyst" ["l"="-44.899,-29.424"]
-"InQuest/iocextract" ["l"="-42.384,-33.4"]
-"0x783kb/Security-Operation-Book" ["l"="-44.743,-29.564"]
-"Te-k/cobaltstrike" ["l"="-42.203,-32.872"]
+"sbousseaden/Slides" ["l"="-42.495,-33.101", "c"=79]
+"MISP/misp-galaxy" ["l"="-42.56,-33.402", "c"=79]
+"pandazheng/Threat-Intelligence-Analyst" ["l"="-44.899,-29.424", "c"=3]
+"0x783kb/Security-Operation-Book" ["l"="-44.743,-29.564", "c"=3]
+"Te-k/cobaltstrike" ["l"="-42.203,-32.872", "c"=79]
 "CheckPointSW/Evasions" ["l"="-42.747,-31.762"]
 "CheckPointSW/Anti-Debug-DB" ["l"="-42.724,-31.724"]
-"boreq/botnet" ["l"="-42.632,-31.67"]
 "jpdias/botnet-lab" ["l"="-42.628,-31.652"]
-"sandialabs/scot" ["l"="-43.101,-31.976"]
-"jzadeh/aktaion" ["l"="-47.052,-34.323"]
-"videlanicolas/assimilator" ["l"="-47.012,-34.264"]
-"TheHive-Project/Hippocampe" ["l"="-42.448,-33.418"]
+"jzadeh/aktaion" ["l"="-47.052,-34.323", "c"=204]
+"videlanicolas/assimilator" ["l"="-47.012,-34.264", "c"=204]
+"TheHive-Project/Hippocampe" ["l"="-42.448,-33.418", "c"=79]
 "VirusTotal/c-vtapi" ["l"="-42.547,-31.884"]
 "carbonblack/cbc-binary-toolkit" ["l"="-43.481,-31.768"]
 "Northern-Lights/yara-parser" ["l"="-42.601,-31.86"]
@@ -3300,90 +3939,126 @@ digraph G {
 "slupers/ThreatIntel" ["l"="-43.212,-31.922"]
 "CybercentreCanada/assemblyline_client" ["l"="-42.402,-32.071"]
 "CybercentreCanada/assemblyline-docker-compose" ["l"="-42.3,-32.112"]
+"vxunderground/MalwareSourceCode" ["l"="-45.269,-32.354", "c"=53]
+"vxunderground/VXUG-Papers" ["l"="-47.255,-32.481", "c"=41]
+"thinkst/canarytokens" ["l"="-42.509,-33.341", "c"=79]
+"simsong/tcpflow" ["l"="6.352,-5.005", "c"=749]
+"microsoft/CyberBattleSim" ["l"="-42.438,-33.075", "c"=79]
+"Security-Onion-Solutions/security-onion" ["l"="-42.63,-33.317", "c"=79]
+"acaudwell/Gource" ["l"="-13.884,-6.936", "c"=86]
+"acaudwell/Logstalgia" ["l"="-43.12,-31.849"]
+"mentebinaria/readpe" ["l"="5.455,-21.191", "c"=96]
 "TUCTF/Tools" ["l"="-43.268,-31.685"]
 "truongkma/ctf-tools" ["l"="-43.29,-31.67"]
-"vxunderground/VX-API" ["l"="-47.269,-32.502"]
-"mentebinaria/retoolkit" ["l"="-1.547,-0.107"]
-"HynekPetrak/malware-jail" ["l"="-42.883,-31.874"]
-"idanr1986/cuckoo-droid" ["l"="56.601,-11.041"]
+"mentebinaria/retoolkit" ["l"="-1.547,-0.107", "c"=224]
+"corkami/pics" ["l"="-45.396,-34.508", "c"=282]
+"vxunderground/VX-API" ["l"="-47.269,-32.502", "c"=41]
+"Devtown-India/PYTHON-AND-DATA-ANALYTICS-7-DAYS" ["l"="-47.268,-25.391", "c"=70]
+"evilbuffer/malware-and-exploitdev-resources" ["l"="-47.277,-32.606", "c"=41]
+"idanr1986/cuckoo-droid" ["l"="56.601,-11.041", "c"=24]
 "jesparza/peepdf" ["l"="-42.883,-32.023"]
-"DidierStevens/DidierStevensSuite" ["l"="-42.843,-32.089"]
-"keydet89/RegRipper2.8" ["l"="-41.218,-32.448"]
-"Cisco-Talos/pyrebox" ["l"="-43.011,-36.831"]
-"notracking/hosts-blocklists" ["l"="-51.437,13.071"]
-"elceef/dnstwist" ["l"="-42.358,-33.424"]
-"pwnlandia/mhn" ["l"="-42.658,-33.505"]
-"kolide/kolide-archive" ["l"="-42.855,-33.214"]
-"PUNCH-Cyber/stoq" ["l"="-43.005,-31.944"]
-"egaus/MaliciousMacroBot" ["l"="-41.303,-36.996"]
+"keydet89/RegRipper2.8" ["l"="-41.218,-32.448", "c"=289]
+"Cisco-Talos/pyrebox" ["l"="-43.011,-36.831", "c"=306]
+"notracking/hosts-blocklists" ["l"="-51.437,13.071", "c"=200]
+"elceef/dnstwist" ["l"="-42.358,-33.424", "c"=79]
+"kolide/kolide-archive" ["l"="-42.855,-33.214", "c"=79]
+"egaus/MaliciousMacroBot" ["l"="-41.303,-36.996", "c"=91]
 "AlienVault-OTX/OTX-Python-SDK" ["l"="-43.178,-31.951"]
 "AlienVault-OTX/OTX-Apps-Bro-IDS" ["l"="-43.263,-31.935"]
 "AlienVault-OTX/ApiV2" ["l"="-43.21,-31.956"]
 "AlienVault-OTX/OTX-Apps-TAXII" ["l"="-43.241,-31.938"]
 "STIXProject/python-stix" ["l"="-43.298,-31.955"]
 "keithjjones/fileintel" ["l"="-43.24,-31.967"]
-"DinoTools/dionaea" ["l"="-42.679,-33.641"]
+"DinoTools/dionaea" ["l"="-42.679,-33.641", "c"=79]
 "CapacitorSet/box-js" ["l"="-42.853,-31.933"]
 "svent/jsdetox" ["l"="-42.934,-31.897"]
-"mushorg/snare" ["l"="-42.684,-33.673"]
-"log2timeline/plaso" ["l"="-41.138,-32.5"]
-"google/timesketch" ["l"="-41.108,-32.482"]
-"RedSiege/WMIOps" ["l"="-47.442,-34.404"]
-"RedSiege/Egress-Assess" ["l"="-47.482,-34.399"]
-"byt3bl33d3r/gcat" ["l"="-47.312,-34.379"]
-"sensepost/DET" ["l"="-47.374,-34.39"]
-"PaulSec/twittor" ["l"="-47.29,-34.401"]
+"mushorg/snare" ["l"="-42.684,-33.673", "c"=79]
+"mandiant/red_team_tool_countermeasures" ["l"="-42.38,-33.194", "c"=79]
+"mandiant/sunburst_countermeasures" ["l"="-42.917,-31.917"]
+"KasperskyLab/TinyCheck" ["l"="-42.35,-33.33", "c"=79]
+"sophos/SOREL-20M" ["l"="-41.913,-31.782", "c"=755]
+"hfiref0x/VBoxHardenedLoader" ["l"="-42.847,-35.309", "c"=40]
+"hfiref0x/VMDE" ["l"="-42.799,-31.808"]
+"AlicanAkyol/sems" ["l"="-42.812,-31.86"]
+"BinaryDefense/artillery" ["l"="-47.226,-34.678", "c"=204]
+"log2timeline/plaso" ["l"="-41.138,-32.5", "c"=289]
+"google/timesketch" ["l"="-41.108,-32.482", "c"=289]
+"dripcap/dripcap" ["l"="4.84,-39.931", "c"=1133]
+"secrary/SSMA" ["l"="-42.993,-31.885"]
+"MalwareSamples/Malware-Feed" ["l"="-47.209,-24.423", "c"=955]
+"RedSiege/WMIOps" ["l"="-47.442,-34.404", "c"=204]
+"RedSiege/Egress-Assess" ["l"="-47.482,-34.399", "c"=204]
+"byt3bl33d3r/gcat" ["l"="-47.312,-34.379", "c"=204]
+"sensepost/DET" ["l"="-47.374,-34.39", "c"=204]
+"PaulSec/twittor" ["l"="-47.29,-34.401", "c"=204]
 "ministryofpromise/tlp" ["l"="-43.08,-31.899"]
-"BinaryDefense/goatrider" ["l"="-47.226,-34.708"]
+"BinaryDefense/goatrider" ["l"="-47.226,-34.708", "c"=204]
 "facebook/ThreatExchange" ["l"="-43.06,-32.004"]
-"facebookresearch/videoalignment" ["l"="57.863,9.07"]
-"Yelp/osxcollector" ["l"="26.036,-21.194"]
-"airbnb/binaryalert" ["l"="-0.08,17.127"]
+"facebookresearch/videoalignment" ["l"="57.863,9.07", "c"=744]
+"airbnb/binaryalert" ["l"="-0.08,17.127", "c"=398]
 "vmware-archive/tic" ["l"="-43.558,-31.869"]
 "lmco/vortex-ids" ["l"="-43.09,-32.085"]
-"CrowdStrike/cs-bro" ["l"="-42.448,-31.332"]
+"CrowdStrike/cs-bro" ["l"="-42.448,-31.332", "c"=1107]
+"radareorg/iaito" ["l"="-42.95,-36.651", "c"=306]
+"erocarrera/pefile" ["l"="-43.016,-36.775", "c"=306]
 "JPCERTCC/jpcert-yara" ["l"="-42.657,-31.774"]
 "abhinavbom/Threat-Intelligence-Hunter" ["l"="-43.185,-31.892"]
+"Tripwire/tripwire-open-source" ["l"="-42.832,-33.33", "c"=79]
+"0xDanielLopez/TweetFeed" ["l"="-42.192,-33.346", "c"=79]
+"timb-machine/linux-malware" ["l"="-4.292,-21.225", "c"=256]
+"mrphrazer/obfuscation_detection" ["l"="-42.897,-36.962", "c"=306]
 "CybercentreCanada/assemblyline4_docs" ["l"="-42.433,-32.063"]
 "CybercentreCanada/CCCS-Yara" ["l"="-42.411,-32.048"]
 "pun1sh3r/iocminion" ["l"="-43.054,-31.915"]
 "PaloAltoNetworks/ioc-parser" ["l"="-43.101,-31.91"]
+"DigitalRuby/IPBan" ["l"="-48.299,12.351", "c"=13]
+"NationalSecurityAgency/SIMP" ["l"="-42.62,-32.971", "c"=79]
+"androidmalware/android_hid" ["l"="-47.138,-25.726", "c"=70]
 "maltelligence/maltelligence" ["l"="-42.978,-31.899"]
 "dod-cyber-crime-center/kordesii" ["l"="-42.938,-31.934"]
-"strozfriedberg/ntfs-linker" ["l"="-41.202,-32.343"]
+"strozfriedberg/ntfs-linker" ["l"="-41.202,-32.343", "c"=289]
+"X4BNet/lists_vpn" ["l"="-65.297,15.903", "c"=967]
+"ElevenPaths/EvilFOCA" ["l"="-47.218,-34.419", "c"=204]
 "pr701/dp701" ["l"="-42.503,-32.197"]
 "ioncodes/long_night" ["l"="-42.452,-32.226"]
 "Fudge/gltail" ["l"="-43.176,-31.771"]
 "Fudge/gltrail" ["l"="-43.193,-31.744"]
+"oskarsve/ms-teams-rce" ["l"="-47.285,-29.973", "c"=11]
 "mubix/solarflare" ["l"="-42.995,-31.767"]
+"Neo23x0/Raccine" ["l"="-42.404,-33.154", "c"=79]
 "RedDrip7/SunBurst_DGA_Decode" ["l"="-42.975,-31.828"]
 "urule99/jsunpack-n" ["l"="-42.962,-31.805"]
 "honeynet/phoneyc" ["l"="-42.944,-31.777"]
 "mtivadar/qiew" ["l"="-42.941,-31.739"]
-"evilbuffer/malware-and-exploitdev-resources" ["l"="-47.277,-32.606"]
-"SpiderLabs/malware-analysis" ["l"="26.018,-20.552"]
+"SpiderLabs/malware-analysis" ["l"="26.018,-20.552", "c"=207]
 "bambenek/research" ["l"="-42.972,-31.855"]
-"mandiant/sunburst_countermeasures" ["l"="-42.917,-31.917"]
-"mandiant/red_team_tool_countermeasures" ["l"="-42.38,-33.194"]
-"sophos/SOREL-20M" ["l"="-41.913,-31.782"]
-"mandiant/ThreatPursuit-VM" ["l"="-42.411,-33.218"]
+"publicsuffix/list" ["l"="5.836,-4.451", "c"=725]
+"AsuharietYgvar/AppleNeuralHash2ONNX" ["l"="-13.665,-5.584", "c"=86]
 "mattermost/xml-roundtrip-validator" ["l"="-42.957,-31.864"]
 "eanmeyer/SolarwindsVulnerablityInfo" ["l"="-42.958,-31.88"]
 "grutz/bro" ["l"="-43.307,-32.023"]
-"CaledoniaProject/jenkins-cli-exploit" ["l"="-43.001,-30.51"]
-"aboutsecurity/rastrea2r" ["l"="-43.114,-31.926"]
-"hfiref0x/VBoxHardenedLoader" ["l"="-42.847,-35.309"]
-"a0rtega/pafish" ["l"="-42.941,-35.21"]
-"AlicanAkyol/sems" ["l"="-42.812,-31.86"]
-"hasherezade/demos" ["l"="-42.777,-35.084"]
-"secrary/makin" ["l"="-42.781,-35.214"]
-"google/dfiq" ["l"="-41.049,-32.467"]
-"dlcowen/sansfor509" ["l"="-42.091,-33.114"]
-"hfiref0x/VMDE" ["l"="-42.799,-31.808"]
+"CaledoniaProject/jenkins-cli-exploit" ["l"="-43.001,-30.51", "c"=787]
+"farhan3/py-botnet" ["l"="-45.238,-25.016", "c"=724]
+"mthenw/frontail" ["l"="-15.54,-41.685", "c"=210]
+"OffensivePython/Nscan" ["l"="-43.079,-30.473", "c"=787]
+"jvoisin/php-malware-finder" ["l"="-45.416,-29.878", "c"=3]
+"phaethon/kamene" ["l"="-40.33,-32.978", "c"=903]
+"gaih/introduction-to-machine-learning-archived" ["l"="29.804,-21.436", "c"=233]
+"ALSchwalm/foresight" ["l"="-46.938,-31.126", "c"=11]
+"a0rtega/pafish" ["l"="-42.941,-35.21", "c"=40]
+"hasherezade/demos" ["l"="-42.777,-35.084", "c"=40]
+"secrary/makin" ["l"="-42.781,-35.214", "c"=40]
+"vertexproject/synapse" ["l"="-43.178,-36.669", "c"=306]
+"google/dfiq" ["l"="-41.049,-32.467", "c"=289]
+"dlcowen/sansfor509" ["l"="-42.091,-33.114", "c"=79]
 "saferwall/elf" ["l"="-42.442,-32.023"]
 "Phat3/PINdemonium" ["l"="-42.853,-31.704"]
 "mandiant/flare-dbg" ["l"="-42.816,-31.71"]
 "crackinglandia/pype32" ["l"="-42.833,-31.733"]
+"n1nj4sec/memorpy" ["l"="-47.33,-34.448", "c"=204]
+"n1nj4sec/mimipy" ["l"="-42.828,-31.602"]
+"n1nj4sec/pr0cks-py" ["l"="-42.843,-31.663"]
+"WithSecureOpenSource/see" ["l"="-42.883,-31.852"]
 "adrianherrera/virustotal" ["l"="-42.506,-31.685"]
 "brianwarehime/Threat_note-Maltego" ["l"="-43.158,-31.893"]
 "OALabs/research" ["l"="-42.534,-32.176"]
@@ -3406,88 +4081,101 @@ digraph G {
 "abhinavbom/Yara-Rules" ["l"="-43.164,-31.832"]
 "abhinavbom/Snort-Rules" ["l"="-43.192,-31.811"]
 "vmware-archive/cb-reporting" ["l"="-43.492,-31.822"]
+"qpdf/qpdf" ["l"="-19.029,-25.849", "c"=10]
+"nolze/msoffcrypto-tool" ["l"="-41.313,-36.731", "c"=91]
+"muchdogesec/awesome_threat_intel_blogs" ["l"="-42.121,-33.178", "c"=79]
+"zeek/zeek" ["l"="-42.689,-33.369", "c"=79]
+"curated-intel/Ukraine-Cyber-Operations" ["l"="-44.688,24.993", "c"=158]
 "spender-sandbox/community-modified" ["l"="-42.944,-31.838"]
 "spender-sandbox/cuckoomon-modified" ["l"="-42.942,-31.852"]
-"frank2/packer-tutorial" ["l"="-47.911,-32.291"]
-"gmh5225/awesome-llvm-security" ["l"="-41.641,-34.529"]
-"JonathanSalwan/VMProtect-devirtualization" ["l"="-41.534,-34.359"]
-"phra/PEzor" ["l"="-47.124,-32.481"]
-"wavestone-cdt/EDRSandblast" ["l"="-47.252,-32.451"]
-"EgeBalci/amber" ["l"="-47.188,-32.447"]
+"frank2/packer-tutorial" ["l"="-47.911,-32.291", "c"=41]
+"gmh5225/awesome-llvm-security" ["l"="-41.641,-34.529", "c"=773]
+"JonathanSalwan/VMProtect-devirtualization" ["l"="-41.534,-34.359", "c"=773]
+"phra/PEzor" ["l"="-47.124,-32.481", "c"=41]
+"wavestone-cdt/EDRSandblast" ["l"="-47.252,-32.451", "c"=41]
+"EgeBalci/amber" ["l"="-47.188,-32.447", "c"=41]
 "capesstack/capes" ["l"="-43.22,-32.035"]
 "rocknsm/rock-dashboards" ["l"="-43.202,-32.032"]
-"philhagen/sof-elk" ["l"="-42.506,-33.233"]
-"orlikoski/Skadi" ["l"="-41.181,-32.459"]
-"JustinAzoff/bro_scripts" ["l"="-42.413,-31.344"]
-"zardus/ctf-tools" ["l"="-45.175,-34.46"]
-"VulnHub/ctf-writeups" ["l"="-45.066,-34.529"]
+"philhagen/sof-elk" ["l"="-42.506,-33.233", "c"=79]
+"orlikoski/Skadi" ["l"="-41.181,-32.459", "c"=289]
+"JustinAzoff/bro_scripts" ["l"="-42.413,-31.344", "c"=1107]
+"mikesiko/PracticalMalwareAnalysis-Labs" ["l"="-42.789,-32.2"]
+"zardus/ctf-tools" ["l"="-45.175,-34.46", "c"=282]
+"VulnHub/ctf-writeups" ["l"="-45.066,-34.529", "c"=282]
 "keithjjones/hostintel" ["l"="-43.285,-31.999"]
+"mytechnotalent/Hacking-Windows" ["l"="-49.827,10.897", "c"=59]
 "ThreatLabz/iocs" ["l"="-42.686,-31.679"]
+"cryptwareapps/Malware-Database" ["l"="-47.165,-24.429", "c"=955]
 "danielplohmann/docker-mcrit" ["l"="-42.477,-31.996"]
-"WithSecureOpenSource/see" ["l"="-42.883,-31.852"]
-"dellis23/ispy" ["l"="45.308,20.553"]
+"kbandla/dpkt" ["l"="-40.282,-32.997", "c"=903]
+"Xyl2k/TSA-Travel-Sentry-master-keys" ["l"="54.849,2.631", "c"=954]
+"mandatoryprogrammer/NorthKoreaDNSLeak" ["l"="-43.233,-31.873"]
+"dellis23/ispy" ["l"="45.308,20.553", "c"=20]
 "PyAna/PyAna" ["l"="-42.903,-31.743"]
-"ynvb/DIE" ["l"="-43.05,-36.956"]
-"Vector35/deprecated-binaryninja-python" ["l"="-42.961,-36.996"]
-"cseagle/fREedom" ["l"="-43.009,-37.104"]
-"center-for-threat-informed-defense/adversary_emulation_library" ["l"="-42.477,-33.165"]
-"rastrea2r/rastrea2r" ["l"="-46.781,-34.118"]
-"mitre-attack/bzar" ["l"="-42.499,-33.174"]
+"ynvb/DIE" ["l"="-43.05,-36.956", "c"=306]
+"Vector35/deprecated-binaryninja-python" ["l"="-42.961,-36.996", "c"=306]
+"cseagle/fREedom" ["l"="-43.009,-37.104", "c"=306]
+"mschwager/dhcpwn" ["l"="-47.292,-34.511", "c"=204]
+"gfoss/PSRecon" ["l"="-41.175,-32.38", "c"=289]
+"herumi/msoffice" ["l"="-41.31,-36.798", "c"=91]
+"joesecurity/pafishmacro" ["l"="-42.896,-31.802"]
+"rastrea2r/rastrea2r" ["l"="-46.781,-34.118", "c"=204]
+"yahoo/gryffin" ["l"="3.716,-7.976", "c"=0]
+"hypsurus/weeman" ["l"="-47.208,-34.483", "c"=204]
 "diogo-fernan/malsub" ["l"="-42.506,-31.73"]
 "apache/incubator-spot" ["l"="-43.328,-32.076"]
-"ptresearch/AttackDetection" ["l"="-44.842,-29.571"]
-"apache/eagle" ["l"="-2.455,14.982"]
-"creditease-sec/insight" ["l"="-44.894,-29.699"]
-"unfetter-discover/unfetter-analytic" ["l"="-42.597,-33.013"]
+"ptresearch/AttackDetection" ["l"="-44.842,-29.571", "c"=3]
+"apache/eagle" ["l"="-2.455,14.982", "c"=43]
+"creditease-sec/insight" ["l"="-44.894,-29.699", "c"=3]
+"unfetter-discover/unfetter-analytic" ["l"="-42.597,-33.013", "c"=79]
 "cyphonmdr/cyphon" ["l"="-43.181,-32.079"]
-"Cyb3rWard0g/HELK" ["l"="-42.518,-33.263"]
+"Cyb3rWard0g/HELK" ["l"="-42.518,-33.263", "c"=79]
 "merces/aleph" ["l"="-42.786,-31.756"]
 "0x71/cuckoo-linux" ["l"="-42.792,-31.783"]
-"acaudwell/Logstalgia" ["l"="-43.12,-31.849"]
-"acaudwell/Gource" ["l"="-13.884,-6.936"]
+"tmpout/awesome-elf" ["l"="-45.351,-34.801", "c"=282]
 "fcsonline/nodestalgia" ["l"="-43.146,-31.827"]
+"SentineLabs/AlphaGolang" ["l"="-42.974,-37.039", "c"=306]
+"hexfati/SharpDllLoader" ["l"="-42.422,-31.898"]
 "pandora-analysis/pandora" ["l"="-43.319,-32.053"]
 "adulau/mmdb-server" ["l"="-43.386,-32.063"]
 "dbarzin/pandora-box" ["l"="-43.353,-32.064"]
 "MISP/misp-stix" ["l"="-43.362,-32.047"]
-"plyara/plyara" ["l"="-43.152,-36.587"]
+"plyara/plyara" ["l"="-43.152,-36.587", "c"=306]
+"misterch0c/malSploitBase" ["l"="-46.539,-23.56", "c"=338]
+"TravisFSmith/SweetSecurity" ["l"="-44.754,-32.615", "c"=53]
 "Open-Network-Insight/open-network-insight" ["l"="-43.379,-32.103"]
 "Open-Network-Insight/oni-docs" ["l"="-43.395,-32.124"]
 "Open-Network-Insight/oni-demo" ["l"="-43.407,-32.104"]
 "Open-Network-Insight/oni-ml" ["l"="-43.407,-32.116"]
 "PUNCH-Cyber/stoq-plugins-public" ["l"="-43.037,-31.88"]
+"kootenpv/gittyleaks" ["l"="-47.492,-30.246", "c"=11]
 "EmersonElectricCo/boomerang" ["l"="-43.124,-32.053"]
 "rocknsm/docket" ["l"="-43.137,-32.067"]
-"phirelight/bro-scripts" ["l"="-42.466,-31.331"]
-"archercreat/titan" ["l"="-41.564,-34.38"]
-"HexRaysSA/goomba" ["l"="-43.06,-36.983"]
-"can1357/NtRays" ["l"="-41.612,-34.438"]
-"NaC-L/Mergen" ["l"="-41.575,-34.394"]
-"wallds/NoVmpy" ["l"="-41.539,-34.387"]
-"airbus-cert/ttddbg" ["l"="-43.091,-37.024"]
-"joesecurity/pafishmacro" ["l"="-42.896,-31.802"]
-"HynekPetrak/javascript-malware-collection" ["l"="-47.159,-24.38"]
+"phirelight/bro-scripts" ["l"="-42.466,-31.331", "c"=1107]
+"archercreat/titan" ["l"="-41.564,-34.38", "c"=773]
+"HexRaysSA/goomba" ["l"="-43.06,-36.983", "c"=306]
+"can1357/NtRays" ["l"="-41.612,-34.438", "c"=773]
+"NaC-L/Mergen" ["l"="-41.575,-34.394", "c"=773]
+"wallds/NoVmpy" ["l"="-41.539,-34.387", "c"=773]
+"airbus-cert/ttddbg" ["l"="-43.091,-37.024", "c"=306]
+"HynekPetrak/javascript-malware-collection" ["l"="-47.159,-24.38", "c"=955]
 "mrpapercut/wscript" ["l"="-42.873,-31.798"]
 "Tigzy/malware-repo" ["l"="-42.874,-31.771"]
 "ExpLife0011/anti-anti-vm-detection-dll-1" ["l"="-42.781,-31.808"]
 "abusesa/idiokit" ["l"="-43.213,-32.065"]
+"LifeForm-Labs/lobotomy" ["l"="56.713,-11.068", "c"=24]
 "mandiant/dncil" ["l"="-42.361,-31.89"]
 "malwarefrank/dnfile" ["l"="-42.329,-31.877"]
 "WithSecureLabs/GarbageMan" ["l"="-42.296,-31.874"]
 "pan-unit42/dotnetfile" ["l"="-42.256,-31.864"]
-"kahunalu/pwnbin" ["l"="-43.253,-32.218"]
 "jordan-wright/dumpmon" ["l"="-43.209,-32.169"]
-"rndinfosecguy/Scavenger" ["l"="-46.934,-28.068"]
-"glennzw/shodan-hq-nse" ["l"="-43.29,-32.254"]
-"RicBent/Classy" ["l"="-43.133,-37.009"]
 "OALabs/uwudbg-theme" ["l"="-42.489,-32.235"]
-"n1nj4sec/pr0cks-py" ["l"="-42.843,-31.663"]
-"n1nj4sec/mimipy" ["l"="-42.828,-31.602"]
 "n1nj4sec/pymemimporter" ["l"="-42.828,-31.623"]
 "jwowillo/mancalai" ["l"="-42.93,-31.849"]
 "AuburnACM/auacm" ["l"="-42.931,-31.838"]
-"The-DFIR-Report/Yara-Rules" ["l"="-42.168,-32.955"]
+"The-DFIR-Report/Yara-Rules" ["l"="-42.168,-32.955", "c"=79]
 "0xd34db33f/gfyp" ["l"="-43.215,-31.79"]
+"jacob-baines/elfparser" ["l"="-42.53,-36.635", "c"=306]
 "necst/arancino" ["l"="-42.867,-31.632"]
 "pierre427/es_email_intel" ["l"="-43.19,-31.791"]
 "giangm9/CrawlerAndValidator" ["l"="-43.189,-31.968"]
@@ -3501,41 +4189,51 @@ digraph G {
 "cuckoosandbox/dragon" ["l"="-42.835,-31.762"]
 "hatching/sflock" ["l"="-42.799,-31.738"]
 "fireeye/RProxy" ["l"="-43.175,-31.854"]
-"horsicq/Detect-It-Easy" ["l"="-42.684,-35.118"]
-"HavocFramework/Havoc" ["l"="-45.385,-32.095"]
-"Idov31/Nidhogg" ["l"="-47.328,-32.503"]
-"mandiant/flare-ida" ["l"="-42.974,-36.911"]
+"HavocFramework/Havoc" ["l"="-45.385,-32.095", "c"=53]
+"Idov31/Nidhogg" ["l"="-47.328,-32.503", "c"=41]
+"Cisco-Talos/clamav" ["l"="-42.881,-33.433", "c"=79]
+"HACKE-RC/awesome-reversing" ["l"="-47.483,-32.574", "c"=41]
+"mandiant/flare-ida" ["l"="-42.974,-36.911", "c"=306]
 "poddmo/ufw-blocklist" ["l"="-43.06,-32.236"]
-"Bert-JanP/Open-Source-Threat-Intel-Feeds" ["l"="-42.159,-33.199"]
-"borestad/blocklist-abuseipdb" ["l"="-43.175,-33.182"]
-"Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist" ["l"="-51.401,13.059"]
-"MISP/misp-warninglists" ["l"="-42.519,-33.404"]
-"stamparm/blackbook" ["l"="-51.226,12.948"]
-"stamparm/DSVW" ["l"="-43.021,-30.329"]
-"olafhartong/sysmon-modular" ["l"="-42.45,-33.176"]
-"LOLBAS-Project/LOLBAS" ["l"="-45.171,-32.156"]
-"outflanknl/EvilClippy" ["l"="-46.998,-32.571"]
+"Bert-JanP/Open-Source-Threat-Intel-Feeds" ["l"="-42.159,-33.199", "c"=79]
+"borestad/blocklist-abuseipdb" ["l"="-43.175,-33.182", "c"=79]
+"Ultimate-Hosts-Blacklist/Ultimate.Hosts.Blacklist" ["l"="-51.401,13.059", "c"=200]
+"MISP/misp-warninglists" ["l"="-42.519,-33.404", "c"=79]
+"stamparm/blackbook" ["l"="-51.226,12.948", "c"=200]
+"stamparm/DSVW" ["l"="-43.021,-30.329", "c"=787]
+"olafhartong/sysmon-modular" ["l"="-42.45,-33.176", "c"=79]
+"LOLBAS-Project/LOLBAS" ["l"="-45.171,-32.156", "c"=53]
+"outflanknl/EvilClippy" ["l"="-46.998,-32.571", "c"=41]
+"google/vsaq" ["l"="28.3,-23.832", "c"=895]
 "ctxis/cbrcli" ["l"="-43.458,-31.798"]
 "carbonblack/cb-yara-connector" ["l"="-43.441,-31.802"]
+"rabbitstack/fibratus" ["l"="-42.959,-35.125", "c"=40]
 "aptnotes/tools" ["l"="-43.029,-32.097"]
 "MITRECND/yaraprocessor" ["l"="-43.032,-32.039"]
 "MITRECND/WhoDat" ["l"="-43.044,-32.061"]
+"CERT-Polska/Artemis" ["l"="-48.194,-29.148", "c"=11]
+"RamadhanAmizudin/malware" ["l"="-47.224,-24.334", "c"=955]
+"gbrindisi/malware" ["l"="-47.251,-24.312", "c"=955]
+"bulwarkid/virtual-fido" ["l"="55.968,3.713", "c"=931]
 "HarfangLab/iocs" ["l"="-42.667,-31.621"]
 "ThreatLabz/tools" ["l"="-42.682,-31.643"]
+"ThreatLabz/ransomware_notes" ["l"="-42.101,-33.318", "c"=79]
+"chronicle/GCTI" ["l"="-42.179,-33.211", "c"=79]
+"OISF/suricata" ["l"="-42.763,-33.365", "c"=79]
 "avast/yarang" ["l"="-42.577,-31.975"]
-"invictus-ir/Microsoft-Extractor-Suite" ["l"="-42.179,-33.149"]
-"biggiesmallsAG/nightHawkResponse" ["l"="-41.145,-32.375"]
-"secrary/SSMA" ["l"="-42.993,-31.885"]
+"invictus-ir/Microsoft-Extractor-Suite" ["l"="-42.179,-33.149", "c"=79]
+"biggiesmallsAG/nightHawkResponse" ["l"="-41.145,-32.375", "c"=289]
+"mwielgoszewski/doorman" ["l"="-42.787,-33.195", "c"=79]
 "Soinull/assimilate" ["l"="-43.233,-31.62"]
 "ThreatHuntingProject/hunter" ["l"="-43.209,-31.639"]
 "100DaysofYARA/2022" ["l"="-42.594,-31.932"]
 "100DaysofYARA/2024" ["l"="-42.616,-31.95"]
-"SMAPPER/MimikatzHoneyToken" ["l"="-42.457,-32.928"]
-"gfoss/PSRecon" ["l"="-41.175,-32.38"]
-"hvqzao/foolav" ["l"="-47.317,-34.547"]
-"foospidy/HoneyPy" ["l"="-42.695,-33.697"]
+"kevthehermit/VolUtility" ["l"="-41.1,-32.354", "c"=289]
+"SMAPPER/MimikatzHoneyToken" ["l"="-42.457,-32.928", "c"=79]
+"hvqzao/foolav" ["l"="-47.317,-34.547", "c"=204]
+"Pepitoh/VBad" ["l"="-47.479,-34.283", "c"=204]
 "ciscocsirt/netsarlacc" ["l"="-43.128,-31.896"]
-"hexfati/SharpDllLoader" ["l"="-42.422,-31.898"]
+"CrowdStrike/falcon-orchestrator" ["l"="-41.152,-32.339", "c"=289]
 "OALabs/trashdbg" ["l"="-42.463,-32.256"]
 "OALabs/flare-vm" ["l"="-42.48,-32.259"]
 "horsicq/XDecompiler" ["l"="-42.608,-31.796"]
@@ -3546,104 +4244,119 @@ digraph G {
 "flotwig/zone-walks" ["l"="-43.372,-31.781"]
 "jstrosch/subcrawl" ["l"="-42.622,-32.385"]
 "jstrosch/FLARE-VM-configs" ["l"="-42.635,-32.358"]
-"hasherezade/bearparser" ["l"="-42.836,-35.09"]
-"horsicq/Nauz-File-Detector" ["l"="-42.638,-35.139"]
-"horsicq/xntsv" ["l"="-42.649,-35.119"]
-"therealdreg/DbgChild" ["l"="-42.567,-35.123"]
-"mandatoryprogrammer/NorthKoreaDNSLeak" ["l"="-43.233,-31.873"]
+"horsicq/xntsv" ["l"="-42.649,-35.119", "c"=40]
+"therealdreg/DbgChild" ["l"="-42.567,-35.123", "c"=40]
+"malfunkt/hyperfox" ["l"="3.763,-7.976", "c"=0]
+"deresz/funcap" ["l"="-43.104,-36.983", "c"=306]
 "mandatoryprogrammer/TLDR" ["l"="-43.317,-31.83"]
-"mandatoryprogrammer/JudasDNS" ["l"="-47.166,-34.435"]
-"Xyl2k/TSA-Travel-Sentry-master-keys" ["l"="54.849,2.631"]
+"mandatoryprogrammer/JudasDNS" ["l"="-47.166,-34.435", "c"=204]
 "mandatoryprogrammer/RussiaDNSLeak" ["l"="-43.287,-31.832"]
-"defaultnamehere/zzzzz" ["l"="22.914,-26.601"]
-"manwhoami/Bella" ["l"="-47.382,-34.439"]
-"mushorg/glastopf" ["l"="-42.698,-33.651"]
+"defaultnamehere/zzzzz" ["l"="22.914,-26.601", "c"=28]
+"manwhoami/Bella" ["l"="-47.382,-34.439", "c"=204]
+"mushorg/glastopf" ["l"="-42.698,-33.651", "c"=79]
 "nknetobserver/nknetobserver.github.io" ["l"="-43.301,-31.868"]
-"evilsocket/bettercap" ["l"="-44.845,-32.49"]
-"s-rah/onionscan" ["l"="-47.025,-28.203"]
-"desaster/kippo" ["l"="-42.695,-33.622"]
+"evilsocket/bettercap" ["l"="-44.845,-32.49", "c"=53]
+"s-rah/onionscan" ["l"="-47.025,-28.203", "c"=97]
+"kunai-project/kunai" ["l"="-42.163,-33.273", "c"=79]
 "kirk-sayre-work/VBASeismograph" ["l"="-42.704,-32.069"]
-"Pepitoh/VBad" ["l"="-47.479,-34.283"]
-"outflanknl/Excel4-DCOM" ["l"="-46.651,-32.571"]
-"itm4n/VBA-RunPE" ["l"="-46.92,-32.498"]
+"outflanknl/Excel4-DCOM" ["l"="-46.651,-32.571", "c"=41]
+"itm4n/VBA-RunPE" ["l"="-46.92,-32.498", "c"=41]
+"mitchellkrogza/apache-ultimate-bad-bot-blocker" ["l"="12.133,-34.143", "c"=906]
 "OALabs/frida-extract" ["l"="-42.985,-31.795"]
-"mkorman90/VolatilityBot" ["l"="-41.1,-32.332"]
+"mkorman90/VolatilityBot" ["l"="-41.1,-32.332", "c"=289]
 "cloudtracer/ThreatPinchLookup" ["l"="-43.198,-31.836"]
-"Cisco-Talos/ROPMEMU" ["l"="-42.964,-37.102"]
-"ANSSI-FR/AD-control-paths" ["l"="-40.901,-32.451"]
-"DGA-MI-SSI/YaCo" ["l"="-43.164,-36.907"]
+"Cisco-Talos/ROPMEMU" ["l"="-42.964,-37.102", "c"=306]
+"DGA-MI-SSI/YaCo" ["l"="-43.164,-36.907", "c"=306]
 "tehsyntx/loffice" ["l"="-42.976,-31.874"]
 "cvandeplas/pystemon" ["l"="-43.186,-32.137"]
+"dropbox/securitybot" ["l"="-42.839,-33.295", "c"=79]
 "360netlab/flint" ["l"="-43.036,-31.704"]
+"riusksk/vul_war" ["l"="-45.083,-29.944", "c"=3]
+"etsy/411" ["l"="-3.608,8.837", "c"=540]
+"PaloAltoNetworks/minemeld" ["l"="-44.937,13.851", "c"=42]
 "pzb/TLDs" ["l"="-43.363,-31.819"]
+"dchad/malware-detection" ["l"="-41.981,-31.712", "c"=755]
 "nheijmans/malzoo" ["l"="-43.046,-31.825"]
 "phage-nz/ph0neutria" ["l"="-42.995,-31.846"]
-"jasonish/py-idstools" ["l"="-42.658,-31.28"]
+"jasonish/py-idstools" ["l"="-42.658,-31.28", "c"=1107]
 "1hub/dotnet-heapview" ["l"="-42.538,-31.772"]
 "thejefflarson/government-domains" ["l"="-43.387,-31.81"]
-"volatilityfoundation/volatility" ["l"="-42.764,-33.33"]
-"PowerShellMafia/PowerSploit" ["l"="-45.048,-32.194"]
-"SpecterOps/BloodHound-Legacy" ["l"="-45.136,-32.18"]
-"mikesiko/PracticalMalwareAnalysis-Labs" ["l"="-42.789,-32.2"]
+"wtsxDev/reverse-engineering" ["l"="-44.142,-33.929", "c"=865]
+"PowerShellMafia/PowerSploit" ["l"="-45.048,-32.194", "c"=53]
+"SpecterOps/BloodHound-Legacy" ["l"="-45.136,-32.18", "c"=53]
 "0day1day/mwcrawler" ["l"="-43.008,-31.866"]
 "robbyFux/Ragpicker" ["l"="-43.025,-31.857"]
-"mushorg/glutton" ["l"="-42.705,-33.713"]
-"anouarbensaad/honeypot-iot" ["l"="-47.678,-30.659"]
-"ysrc/GourdScanV2" ["l"="-43.034,-30.37"]
-"chaitin/cloudwalker" ["l"="-45.022,-29.726"]
-"SparkSharly/Sharly" ["l"="-45.393,-29.518"]
-"nanshihui/Scan-T" ["l"="-43.015,-30.376"]
-"ysrc/yulong-hids-archived" ["l"="-44.848,-29.67"]
-"he1m4n6a/findWebshell" ["l"="-45.198,-29.81"]
-"opensec-cn/kunpeng" ["l"="-44.841,-29.688"]
-"akafengfeng/AI-Security" ["l"="-39.994,-32.959"]
+"wtsxDev/Malware-Analysis" ["l"="-43.13,-36.474", "c"=306]
+"Aorimn/dislocker" ["l"="-41.223,-32.499", "c"=289]
+"mushorg/glutton" ["l"="-42.705,-33.713", "c"=79]
+"anouarbensaad/honeypot-iot" ["l"="-47.678,-30.659", "c"=11]
+"vz-risk/veris" ["l"="-42.58,-33.215", "c"=79]
+"cr-marcstevens/sha1collisiondetection" ["l"="23.749,-27.486", "c"=28]
+"dirtbags/pcapdb" ["l"="-47.038,-34.283", "c"=204]
+"a2o/snoopy" ["l"="7.567,-6.371", "c"=335]
+"ysrc/GourdScanV2" ["l"="-43.034,-30.37", "c"=787]
+"chaitin/cloudwalker" ["l"="-45.022,-29.726", "c"=3]
+"SparkSharly/Sharly" ["l"="-45.393,-29.518", "c"=3]
+"nanshihui/Scan-T" ["l"="-43.015,-30.376", "c"=787]
+"ysrc/yulong-hids-archived" ["l"="-44.848,-29.67", "c"=3]
+"he1m4n6a/findWebshell" ["l"="-45.198,-29.81", "c"=3]
+"opensec-cn/kunpeng" ["l"="-44.841,-29.688", "c"=3]
+"akafengfeng/AI-Security" ["l"="-39.994,-32.959", "c"=903]
+"marcoramilli/MalwareTrainingSets" ["l"="-41.971,-31.681", "c"=755]
+"x64dbg/x64dbgida" ["l"="-42.598,-35.139", "c"=40]
 "P3t3rp4rk3r/Threat_Intelligence" ["l"="-43.273,-31.893"]
 "phage-nz/infosec-bazaar" ["l"="-43.027,-31.801"]
-"codexgigassys/codex-backend" ["l"="-41.306,-36.949"]
+"codexgigassys/codex-backend" ["l"="-41.306,-36.949", "c"=91]
 "glaslos/ssdeep" ["l"="-42.694,-31.856"]
 "rapid7/Rapid7-Labs" ["l"="-42.649,-31.59"]
 "Cymmetria/StrutsHoneypot" ["l"="-42.579,-31.627"]
 "eSentire/iocs" ["l"="-42.67,-31.594"]
 "hiddenillusion/yara-goodies" ["l"="-43.019,-31.78"]
+"momo5502/sogen" ["l"="-41.608,-34.333", "c"=773]
+"m4b/bingrep" ["l"="-46.967,-34.335", "c"=204]
 "SafeEval/practical-malware-analysis" ["l"="-42.806,-32.282"]
+"13o-bbr-bbq/machine_learning_security" ["l"="-43.868,-33.67", "c"=865]
+"honeytrap/honeytrap" ["l"="-42.648,-33.597", "c"=79]
+"unfetter-discover/unfetter" ["l"="-42.566,-33.066", "c"=79]
 "certsocietegenerale/fame_modules" ["l"="-43.01,-32.04"]
 "lmco/dart" ["l"="-43.135,-32.151"]
 "cyphonmdr/cyphondock" ["l"="-43.215,-32.111"]
 "cyphonmdr/cyclops" ["l"="-43.22,-32.098"]
-"pe3zx/mthc" ["l"="-42.36,-33.391"]
-"TheHive-Project/TheHiveDocs" ["l"="-42.461,-33.389"]
+"pe3zx/mthc" ["l"="-42.36,-33.391", "c"=79]
+"TheHive-Project/TheHiveDocs" ["l"="-42.461,-33.389", "c"=79]
 "tcstool/Fireaway" ["l"="-43.257,-32.124"]
-"CrowdStrike/falcon-orchestrator" ["l"="-41.152,-32.339"]
+"oasis-open/cti-python-stix2" ["l"="-42.685,-33.15", "c"=79]
 "jeromesegura/EKFiddle" ["l"="-42.774,-31.973"]
-"misterch0c/what_is_this_c2" ["l"="-46.561,-23.594"]
 "CybOXProject/python-cybox" ["l"="-43.345,-31.966"]
-"STIXProject/stix-viz" ["l"="-42.937,-33.329"]
+"STIXProject/stix-viz" ["l"="-42.937,-33.329", "c"=79]
 "TAXIIProject/libtaxii" ["l"="-43.352,-31.946"]
-"oasis-open/cti-python-stix2" ["l"="-42.685,-33.15"]
 "STIXProject/stix-validator" ["l"="-43.331,-31.951"]
-"oasis-open/cti-taxii-client" ["l"="-42.742,-33.123"]
+"oasis-open/cti-taxii-client" ["l"="-42.742,-33.123", "c"=79]
 "ciscocsirt/PW3Query" ["l"="-43.165,-31.878"]
-"Comsecuris/ida_strcluster" ["l"="-43.191,-36.947"]
+"Comsecuris/ida_strcluster" ["l"="-43.191,-36.947", "c"=306]
 "matthoffman/degas" ["l"="-43.129,-31.726"]
 "fr0gger/Yara-Unprotect" ["l"="-42.674,-31.885"]
 "necst/automated-arancino" ["l"="-42.864,-31.606"]
 "season-lab/sok-dbi-security" ["l"="-42.88,-31.604"]
-"mandiant/commando-vm" ["l"="-45.168,-32.201"]
-"fortra/impacket" ["l"="-45.08,-32.176"]
-"ytisf/theZoo" ["l"="-45.136,-32.404"]
-"clong/DetectionLab" ["l"="-42.477,-33.257"]
-"Lookyloo/lookyloo" ["l"="-43.152,-32.046"]
-"obsidianforensics/unfurl" ["l"="-41.125,-32.516"]
-"t4d/PhishingKitHunter" ["l"="-42.117,-33.496"]
-"olafhartong/sysmon-cheatsheet" ["l"="-42.392,-33.135"]
+"fortra/impacket" ["l"="-45.08,-32.176", "c"=53]
+"clong/DetectionLab" ["l"="-42.477,-33.257", "c"=79]
+"LaurieWired/GhidraMCP" ["l"="-42.76,-36.862", "c"=306]
+"mkubecek/vmware-host-modules" ["l"="-14.076,-1.31", "c"=152]
+"t4d/PhishingKitHunter" ["l"="-42.117,-33.496", "c"=79]
+"olafhartong/sysmon-cheatsheet" ["l"="-42.392,-33.135", "c"=79]
+"Snorby/snorby" ["l"="-42.712,-31.32", "c"=1107]
 "chrissanders/packets" ["l"="-43.281,-31.561"]
+"google/cloudprober" ["l"="9.705,-10.54", "c"=484]
 "JPCERTCC/impfuzzy" ["l"="-42.674,-31.868"]
-"erocarrera/pefile" ["l"="-43.016,-36.775"]
-"InQuest/ThreatIngestor" ["l"="-42.427,-33.373"]
-"pathetiq/BurpSmartBuster" ["l"="-47.11,-34.31"]
+"pathetiq/BurpSmartBuster" ["l"="-47.11,-34.31", "c"=204]
 "nsslabcuus/Malware" ["l"="-42.663,-31.745"]
+"m0n0ph1/Malware-Collection" ["l"="-47.292,-24.303", "c"=955]
+"salesforce/ja3" ["l"="-42.505,-33.305", "c"=79]
+"vitaly-kamluk/bitscout" ["l"="-41.162,-32.44", "c"=289]
 "0xAnalyst/CB-Threat-Hunting" ["l"="-43.566,-31.814"]
 "S03D4-164/Hiryu" ["l"="-42.947,-31.824"]
+"googleprojectzero/functionsimsearch" ["l"="-43.238,-36.926", "c"=306]
+"NewBee119/threat-intelligence" ["l"="-44.775,-29.543", "c"=3]
 "mnemonic-no/grafeo" ["l"="-42.971,-31.743"]
 "pierre427/feed_fetchers" ["l"="-43.243,-31.915"]
 }

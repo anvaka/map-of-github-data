@@ -1,4 +1,6 @@
 digraph G {
+"mapbox/shp-write" -> "Esri/arcgis-to-geojson-utils" ["e"=1]
+"placemark/togeojson" -> "terraformer-js/terraformer" ["e"=1]
 "Esri/esri-leaflet" -> "Esri/jsapi-resources"
 "Esri/esri-leaflet" -> "Esri/arcgis-js-api"
 "Esri/esri-leaflet" -> "Esri/bootstrap-map-js"
@@ -55,6 +57,7 @@ digraph G {
 "Esri/ArcREST" -> "Esri/portalpy"
 "Esri/ArcREST" -> "Esri/calcite-maps"
 "Esri/ArcREST" -> "Esri/arcgis-cookbook"
+"opengeos/WhiteboxTools-ArcGIS" -> "Esri/deep-learning-frameworks" ["e"=1]
 "Esri/developer-support" -> "Esri/geodev-hackerlabs"
 "Esri/developer-support" -> "Esri/arcgis-cookbook"
 "Esri/developer-support" -> "Esri/ArcREST"
@@ -70,6 +73,7 @@ digraph G {
 "Esri/developer-support" -> "Esri/ago-tools"
 "Esri/developer-support" -> "AlexArcPy/python-for-gis-progression-path" ["e"=1]
 "Esri/developer-support" -> "Esri/raster-functions"
+"petedannemann/gis-programming-roadmap" -> "Esri/awesome-arcgis-developers" ["e"=1]
 "Esri/jsapi-resources" -> "Esri/arcgis-js-api"
 "Esri/jsapi-resources" -> "Esri/esri-loader"
 "Esri/jsapi-resources" -> "Esri/arcgis-rest-js"
@@ -100,10 +104,14 @@ digraph G {
 "Esri/resource-proxy" -> "Esri/dojo-bootstrap-map-js"
 "Esri/resource-proxy" -> "Esri/i3s-spec" ["e"=1]
 "Esri/resource-proxy" -> "Esri/offline-editor-js"
+"Azure/pixel_level_land_classification" -> "Esri/raster-deep-learning" ["e"=1]
+"microsoft/USBuildingFootprints" -> "Esri/arcgis-python-api" ["e"=1]
 "Esri/ago-admin-wiki" -> "Esri/ago-tools"
 "Esri/ago-admin-wiki" -> "Esri/ArcREST"
 "Esri/ago-admin-wiki" -> "Esri/portalpy"
 "Esri/portalpy" -> "Esri/ago-tools"
+"Esri/arcgis-runtime-samples-android" -> "Esri/terraformer" ["e"=1]
+"Esri/arcgis-runtime-samples-android" -> "Esri/jsapi-resources" ["e"=1]
 "Esri/arcade-expressions" -> "Esri/arcgis-cookbook"
 "Esri/arcade-expressions" -> "Esri/field-maps-scripts"
 "Esri/arcade-expressions" -> "Esri/collector-tools"
@@ -119,6 +127,9 @@ digraph G {
 "Esri/arcade-expressions" -> "Esri/generator-esri-appbuilder-js"
 "Esri/arcade-expressions" -> "Esri/ArcREST"
 "Esri/arcade-expressions" -> "Esri/Geospatial-Center-Code"
+"concretecms/concretecms" -> "Esri/arcgis-rest-js" ["e"=1]
+"openaddresses/pyesridump" -> "koopjs/koop" ["e"=1]
+"bmcbride/bootleaf" -> "Esri/calcite-maps" ["e"=1]
 "Esri/solutions-geoprocessing-toolbox" -> "Esri/raster-functions"
 "Esri/solutions-geoprocessing-toolbox" -> "Esri/military-tools-geoprocessing-toolbox" ["e"=1]
 "Esri/arcgis-maps-sdk-dotnet-toolkit" -> "Esri/arcgis-maps-sdk-dotnet-samples"
@@ -226,6 +237,7 @@ digraph G {
 "Esri/deep-learning-frameworks" -> "R-ArcGIS/R-Bridge-Tutorial-Notebooks"
 "Esri/deep-learning-frameworks" -> "Esri/arcgis-osm-editor"
 "Esri/deep-learning-frameworks" -> "opengeos/Awesome-GEE" ["e"=1]
+"joewdavies/awesome-frontend-gis" -> "Esri/awesome-arcgis-developers" ["e"=1]
 "Esri/generator-esri-appbuilder-js" -> "Esri/esri-wab-build"
 "Esri/generator-esri-appbuilder-js" -> "Esri/solutions-webappbuilder-widgets"
 "Esri/generator-esri-appbuilder-js" -> "Esri/arcgis-js-cli"
@@ -236,6 +248,8 @@ digraph G {
 "Esri/generator-esri-appbuilder-js" -> "Esri/developer-support"
 "Esri/generator-esri-appbuilder-js" -> "Esri/angular-esri-map"
 "Esri/generator-esri-appbuilder-js" -> "tomwayson/web-appbuilder-bootstrap"
+"kartena/Proj4Leaflet" -> "perliedman/reproject" ["e"=1]
+"tannerjt/AGStoShapefile" -> "Esri/ArcREST" ["e"=1]
 "Esri/arcgis-experience-builder-sdk-resources" -> "AdriSolid/wab-custom-widgets"
 "Esri/solutions-webappbuilder-widgets" -> "Esri/generator-esri-appbuilder-js"
 "Esri/solutions-webappbuilder-widgets" -> "Esri/arcgis-webappbuilder-widgets-themes"
@@ -265,6 +279,7 @@ digraph G {
 "Esri/angular-esri-map" -> "Esri/developer-support"
 "Esri/angular-esri-map" -> "tomwayson/angular2-esri-example"
 "Esri/angular-esri-map" -> "tomwayson/angular-esri-loader"
+"BruTile/BruTile" -> "Esri/arcgis-maps-sdk-dotnet-toolkit" ["e"=1]
 "jfgodoy/knex-postgis" -> "koopjs/FeatureServer"
 "jfgodoy/knex-postgis" -> "ghengeveld/graphql-geojson"
 "Esri/calcite-web" -> "Esri/calcite-bootstrap"
@@ -396,6 +411,9 @@ digraph G {
 "Esri/arcgis-js-api" -> "Esri/resource-proxy"
 "Esri/arcgis-js-api" -> "Esri/react-arcgis"
 "Esri/arcgis-js-api" -> "odoe/generator-arcgis-js-app"
+"wandergis/arcgis-echarts3" -> "Esri/esri-loader" ["e"=1]
+"wandergis/arcgis-echarts3" -> "nickcam/FlareClusterLayer" ["e"=1]
+"SharpMap/SharpMap" -> "Esri/arcgis-maps-sdk-dotnet-samples" ["e"=1]
 "Esri/calcite-maps" -> "Esri/cedar"
 "Esri/calcite-maps" -> "Esri/bootstrap-map-js"
 "Esri/calcite-maps" -> "Esri/calcite-web"
@@ -452,6 +470,7 @@ digraph G {
 "Robert-W/esri-redux" -> "Robert-W/esri-flux-react"
 "Robert-W/esri-redux" -> "lobsteropteryx/esri-webpack-typescript"
 "Robert-W/esri-redux" -> "tomwayson/esri-react-router-example"
+"ArcBruTile/ArcBruTile" -> "Esri/arcobjects-sdk-community-samples" ["e"=1]
 "tomwayson/angular2-esri-example" -> "jwasilgeo/angular2-esri-playground"
 "tomwayson/angular2-esri-example" -> "tomwayson/angular-esri-loader"
 "tomwayson/angular2-esri-example" -> "jwerts/angular2-esri-play"
@@ -511,6 +530,7 @@ digraph G {
 "Esri/esri-loader" -> "Esri/feedback-js-api-next"
 "Esri/esri-loader" -> "tomwayson/esri-vue-cli-example"
 "Esri/esri-loader" -> "tomwayson/angular-esri-loader"
+"judero01col/GMap.NET" -> "Esri/arcgis-maps-sdk-dotnet-samples" ["e"=1]
 "Esri/quickstart-map-js" -> "Esri/bootstrap-map-js"
 "Esri/quickstart-map-js" -> "Esri/dojo-bootstrap-map-js"
 "Esri/quickstart-map-js" -> "Esri/calcite-maps"
@@ -518,6 +538,8 @@ digraph G {
 "Esri/quickstart-map-js" -> "Esri/geojson-layer-js"
 "Esri/quickstart-map-js" -> "Esri/developer-support"
 "Esri/quickstart-map-js" -> "ekenes/esri-js-samples"
+"Esri/geometry-api-java" -> "Esri/terraformer" ["e"=1]
+"Esri/geometry-api-java" -> "Esri/resource-proxy" ["e"=1]
 "Esri/ago-assistant" -> "Esri/ArcREST"
 "Esri/ago-assistant" -> "Esri/ago-tools"
 "Esri/ago-assistant" -> "Esri/solutions-webappbuilder-widgets"
@@ -528,6 +550,7 @@ digraph G {
 "tomwayson/esri-react-router-example" -> "davetimmins/create-react-app-esri-loader"
 "davetimmins/create-react-app-esri-loader" -> "davetimmins/create-react-app-arcgis"
 "davetimmins/create-react-app-esri-loader" -> "tomwayson/esri-react-router-example"
+"zalando/zally" -> "Esri/arcgis-rest-js" ["e"=1]
 "sarahbellum/Canvas-Flowmap-Layer" -> "jwasilgeo/Leaflet.Canvas-Flowmap-Layer" ["e"=1]
 "sarahbellum/Canvas-Flowmap-Layer" -> "tomwayson/esri-rollup-example"
 "sarahbellum/Canvas-Flowmap-Layer" -> "Esri/geotour-js"
@@ -554,6 +577,10 @@ digraph G {
 "cmv/cmv-app" -> "cmndrbensisko/LocalLayer"
 "cmv/cmv-app" -> "roemhildtg/cmv-widgets"
 "cmv/cmv-app" -> "Esri/developer-support"
+"Esri/gis-tools-for-hadoop" -> "Esri/arcgis-cookbook" ["e"=1]
+"Esri/gis-tools-for-hadoop" -> "Esri/raster-functions" ["e"=1]
+"Esri/gis-tools-for-hadoop" -> "Esri/terraformer" ["e"=1]
+"wavded/js-shapefile-to-geojson" -> "Esri/geojson-utils" ["e"=1]
 "Esri/ago-tools" -> "Esri/portalpy"
 "Esri/ago-tools" -> "ecaldwell/portal-admin-examples"
 "Esri/ago-tools" -> "Esri/ago-admin-wiki"
@@ -590,12 +617,14 @@ digraph G {
 "Esri/react-arcgis" -> "davetimmins/esri-loader-react"
 "Esri/react-arcgis" -> "tomwayson/create-arcgis-app"
 "Esri/react-arcgis" -> "Esri/resource-proxy"
+"jwasilgeo/Leaflet.Canvas-Flowmap-Layer" -> "sarahbellum/Canvas-Flowmap-Layer" ["e"=1]
 "Esri/gis-stat-analysis-py-tutor" -> "Esri/PySAL-ArcGIS-Toolbox"
 "Esri/mdcs-py" -> "Esri/OptimizeRasters"
 "Esri/mdcs-py" -> "Esri/WAB-Image-Services-Widgets"
 "Esri/mdcs-py" -> "Esri/oriented-imagery"
 "cmv/cmv-calcite-maps" -> "cmv/cmv-app-dojo-builder"
 "Esri/dojo-bootstrap-map-js" -> "Esri/arcgis-dijit-sample-js"
+"axismaps/colorbrewer" -> "Esri/terraformer" ["e"=1]
 "Wildsong/docker-arcgis-enterprise" -> "mraad/docker-arcgis"
 "Wildsong/docker-arcgis-enterprise" -> "xzdbd/dockerfiles"
 "Wildsong/docker-arcgis-enterprise" -> "warpedgeoid/arcgisdocker"
@@ -616,23 +645,29 @@ digraph G {
 "Esri/arcgis-rest-js" -> "Esri/solutions-webappbuilder-widgets"
 "Esri/arcgis-rest-js" -> "Esri/generator-esri-appbuilder-js"
 "Esri/arcgis-rest-js" -> "koopjs/koop"
+"exercism/website-copy" -> "Esri/arcgis-rest-js" ["e"=1]
 "OpenNTF/dojo-webpack-plugin" -> "OpenNTF/dojo-webpack-plugin-sample"
+"microsoft/azure-maven-plugins" -> "Esri/arcgis-rest-js" ["e"=1]
+"mapbox/shp-write" ["l"="39.184,24.073", "c"=157]
+"Esri/arcgis-to-geojson-utils" ["l"="39.045,23.158"]
+"placemark/togeojson" ["l"="39.262,24.043", "c"=157]
+"terraformer-js/terraformer" ["l"="39.026,23.15"]
 "Esri/esri-leaflet" ["l"="39.091,23.137"]
 "Esri/jsapi-resources" ["l"="39.096,23.11"]
 "Esri/arcgis-js-api" ["l"="39.087,23.093"]
 "Esri/bootstrap-map-js" ["l"="39.055,23.099"]
 "Esri/arcgis-rest-js" ["l"="39.101,23.094"]
 "Esri/arcgis-python-api" ["l"="39.04,23.045"]
-"Esri/esri-leaflet-geocoder" ["l"="38.605,23.13"]
+"Esri/esri-leaflet-geocoder" ["l"="38.605,23.13", "c"=449]
 "Esri/terraformer" ["l"="39.049,23.133"]
-"Leaflet/Leaflet.draw" ["l"="38.517,23.054"]
+"Leaflet/Leaflet.draw" ["l"="38.517,23.054", "c"=449]
 "Esri/cedar" ["l"="39.069,23.089"]
-"htoooth/Leaflet.ChineseTmsProviders" ["l"="38.465,22.967"]
-"Leaflet/Leaflet.markercluster" ["l"="38.543,23.041"]
+"htoooth/Leaflet.ChineseTmsProviders" ["l"="38.465,22.967", "c"=449]
+"Leaflet/Leaflet.markercluster" ["l"="38.543,23.041", "c"=449]
 "Esri/calcite-maps" ["l"="39.074,23.106"]
 "Esri/esri-loader" ["l"="39.123,23.129"]
-"geoman-io/leaflet-geoman" ["l"="38.493,23.009"]
-"kartena/Proj4Leaflet" ["l"="38.46,23.016"]
+"geoman-io/leaflet-geoman" ["l"="38.493,23.009", "c"=449]
+"kartena/Proj4Leaflet" ["l"="38.46,23.016", "c"=449]
 "Esri/offline-editor-js" ["l"="39.05,23.18"]
 "odoe/generator-arcgis-js-app" ["l"="39.013,23.159"]
 "Esri/application-boilerplate-3x-js" ["l"="39.059,23.121"]
@@ -640,13 +675,11 @@ digraph G {
 "koopjs/koop" ["l"="39.045,23.112"]
 "koopjs/FeatureServer" ["l"="39.004,23.217"]
 "Esri/developer-support" ["l"="39.059,23.063"]
-"terraformer-js/terraformer" ["l"="39.026,23.15"]
 "Esri/ArcREST" ["l"="39.067,23.052"]
 "cmv/cmv-app" ["l"="39.018,23.107"]
-"Esri/arcgis-to-geojson-utils" ["l"="39.045,23.158"]
 "Esri/ago-assistant" ["l"="39.077,23.061"]
 "Esri/geodev-hackerlabs" ["l"="39.05,23.084"]
-"openaddresses/pyesridump" ["l"="38.959,24.231"]
+"openaddresses/pyesridump" ["l"="38.959,24.231", "c"=157]
 "Esri/generator-esri-appbuilder-js" ["l"="39.086,23.08"]
 "Esri/arcgis-maps-sdk-dotnet-samples" ["l"="39.091,22.981"]
 "Esri/arcgis-maps-sdk-dotnet-toolkit" ["l"="39.113,22.977"]
@@ -654,10 +687,10 @@ digraph G {
 "Esri/arcgis-pro-sdk-community-samples" ["l"="39.096,23.009"]
 "Esri/arcgis-pro-sdk" ["l"="39.083,23.029"]
 "Esri/arcobjects-sdk-community-samples" ["l"="39.094,22.961"]
-"SharpMap/SharpMap" ["l"="37.457,23.784"]
-"BruTile/BruTile" ["l"="37.452,23.766"]
-"Mapsui/Mapsui" ["l"="37.415,23.79"]
-"DotSpatial/DotSpatial" ["l"="37.474,23.774"]
+"SharpMap/SharpMap" ["l"="37.457,23.784", "c"=199]
+"BruTile/BruTile" ["l"="37.452,23.766", "c"=199]
+"Mapsui/Mapsui" ["l"="37.415,23.79", "c"=199]
+"DotSpatial/DotSpatial" ["l"="37.474,23.774", "c"=199]
 "Esri/raster-deep-learning" ["l"="38.991,23.001"]
 "Esri/raster-functions" ["l"="39.004,23.033"]
 "Esri/deep-learning-frameworks" ["l"="39.029,23.004"]
@@ -667,9 +700,12 @@ digraph G {
 "Esri/ago-admin-wiki" ["l"="39.079,23.004"]
 "Esri/portalpy" ["l"="39.067,22.995"]
 "Esri/arcgis-cookbook" ["l"="39.086,23.047"]
+"opengeos/WhiteboxTools-ArcGIS" ["l"="41.676,24.321", "c"=76]
 "hhkaos/awesome-arcgis" ["l"="39.008,22.986"]
 "Esri/feedback-js-api-next" ["l"="39.103,23.08"]
-"AlexArcPy/python-for-gis-progression-path" ["l"="41.726,24.48"]
+"AlexArcPy/python-for-gis-progression-path" ["l"="41.726,24.48", "c"=76]
+"petedannemann/gis-programming-roadmap" ["l"="41.66,24.295", "c"=76]
+"Esri/awesome-arcgis-developers" ["l"="39.057,23.008"]
 "Esri/resource-proxy" ["l"="39.074,23.12"]
 "Esri/arcgis-js-cli" ["l"="39.118,23.102"]
 "Esri/react-arcgis" ["l"="39.133,23.115"]
@@ -677,18 +713,22 @@ digraph G {
 "Esri/calcite-design-system" ["l"="39.135,23.09"]
 "Esri/angular-esri-map" ["l"="39.07,23.137"]
 "Esri/dojo-bootstrap-map-js" ["l"="39.026,23.128"]
-"Esri/i3s-spec" ["l"="37.718,23.997"]
+"Esri/i3s-spec" ["l"="37.718,23.997", "c"=199]
+"Azure/pixel_level_land_classification" ["l"="41.957,24.122", "c"=76]
+"microsoft/USBuildingFootprints" ["l"="41.619,24.158", "c"=76]
+"Esri/arcgis-runtime-samples-android" ["l"="39.794,23.906", "c"=157]
 "Esri/arcade-expressions" ["l"="39.063,23.025"]
 "Esri/field-maps-scripts" ["l"="39.065,22.957"]
 "Esri/collector-tools" ["l"="39.04,22.987"]
-"Esri/awesome-arcgis-developers" ["l"="39.057,23.008"]
 "Esri/arcgis-experience-builder-sdk-resources" ["l"="39.118,23.02"]
 "Esri/workforce-scripts" ["l"="39.045,23.017"]
 "Esri/Geospatial-Center-Code" ["l"="39.056,22.981"]
+"concretecms/concretecms" ["l"="-17.356,-44.382", "c"=550]
+"bmcbride/bootleaf" ["l"="38.527,23.018", "c"=449]
 "Esri/solutions-geoprocessing-toolbox" ["l"="38.958,23.022"]
-"Esri/military-tools-geoprocessing-toolbox" ["l"="53.333,5.791"]
+"Esri/military-tools-geoprocessing-toolbox" ["l"="53.333,5.791", "c"=679]
 "Esri/quickstart-map-js" ["l"="39.009,23.094"]
-"Esri/dojo-theme-flat" ["l"="-1.003,-31.148"]
+"Esri/dojo-theme-flat" ["l"="-1.003,-31.148", "c"=295]
 "odoe/jsapi-webpack" ["l"="39.177,23.085"]
 "OpenNTF/dojo-webpack-plugin" ["l"="39.22,23.105"]
 "Esri/maps-app-javascript" ["l"="39.116,23.082"]
@@ -728,16 +768,17 @@ digraph G {
 "esrinederland/CoolScripts" ["l"="39.032,22.969"]
 "Esri/OptimizeRasters" ["l"="38.991,23.02"]
 "Esri/WAB-Image-Services-Widgets" ["l"="38.988,23.042"]
-"opengeos/WhiteboxTools-ArcGIS" ["l"="41.676,24.321"]
-"microsoft/GlobalMLBuildingFootprints" ["l"="41.625,24.224"]
+"microsoft/GlobalMLBuildingFootprints" ["l"="41.625,24.224", "c"=76]
 "R-ArcGIS/r-bridge-install" ["l"="38.957,22.935"]
-"jblindsay/whitebox-tools" ["l"="41.643,24.228"]
+"jblindsay/whitebox-tools" ["l"="41.643,24.228", "c"=76]
 "Esri/arcgis-enterprise-sdk-resources" ["l"="39.006,22.965"]
 "Esri/arcgis-osm-editor" ["l"="39.033,23.071"]
-"opengeos/Awesome-GEE" ["l"="41.75,24.273"]
+"opengeos/Awesome-GEE" ["l"="41.75,24.273", "c"=76]
+"joewdavies/awesome-frontend-gis" ["l"="41.468,24.411", "c"=76]
 "Esri/arcgis-webappbuilder-widgets-themes" ["l"="39.106,23.06"]
 "gbochenek/wab-test-example" ["l"="39.124,23.06"]
 "tomwayson/web-appbuilder-bootstrap" ["l"="39.141,23.059"]
+"tannerjt/AGStoShapefile" ["l"="39.076,24.165", "c"=157]
 "AdriSolid/wab-custom-widgets" ["l"="39.155,22.991"]
 "USEPA/Public_Web_AppBuilder" ["l"="39.11,23.045"]
 "cmndrbensisko/LocalLayer" ["l"="38.996,23.078"]
@@ -774,6 +815,7 @@ digraph G {
 "Esri/Imagery-Apps" ["l"="38.94,23.035"]
 "odoe/esrijs-react" ["l"="39.137,23.303"]
 "odoe/esrijs4-vm-react" ["l"="39.123,23.29"]
+"wandergis/arcgis-echarts3" ["l"="38.358,22.878", "c"=449]
 "odoe/esrijs4-vm-angular2" ["l"="39.11,23.247"]
 "vojvod/ocmv" ["l"="38.896,23.154"]
 "cmv/cmv-app-dojo-builder" ["l"="38.92,23.145"]
@@ -787,37 +829,45 @@ digraph G {
 "mraad/docker-arcgis" ["l"="39.196,22.982"]
 "odoe/esrijs-resources" ["l"="39.123,23.317"]
 "perliedman/geojson-path-finder" ["l"="38.96,23.361"]
-"mapbox/tilebelt" ["l"="39.241,24.25"]
-"gee-community/geemap" ["l"="41.71,24.229"]
-"geopandas/geopandas" ["l"="41.534,24.123"]
-"google/earthengine-api" ["l"="41.753,24.309"]
+"mapbox/tilebelt" ["l"="39.241,24.25", "c"=157]
+"gee-community/geemap" ["l"="41.71,24.229", "c"=76]
+"geopandas/geopandas" ["l"="41.534,24.123", "c"=76]
+"google/earthengine-api" ["l"="41.753,24.309", "c"=76]
 "Esri/geoportal-server" ["l"="39.131,23.039"]
 "Esri/geoportal-server-harvester" ["l"="39.175,23.031"]
 "davetimmins/create-react-app-esri-loader" ["l"="39.208,23.21"]
 "lobsteropteryx/esri-webpack-typescript" ["l"="39.157,23.239"]
 "tomwayson/esri-react-router-example" ["l"="39.22,23.228"]
+"ArcBruTile/ArcBruTile" ["l"="38.854,23.787", "c"=157]
 "jwerts/angular2-esri-play" ["l"="39.134,23.237"]
 "tomwayson/esri-angular-cli-example" ["l"="39.125,23.219"]
 "Esri/esri-system-js" ["l"="39.099,23.231"]
 "odoe/esrijs4-ts" ["l"="39.113,23.269"]
 "Esri/terraformer-geostore" ["l"="39.019,23.174"]
-"Esri/terraformer-wkt-parser" ["l"="39.075,24.05"]
-"wavded/js-shapefile-to-geojson" ["l"="39.123,24.054"]
+"Esri/terraformer-wkt-parser" ["l"="39.075,24.05", "c"=157]
+"wavded/js-shapefile-to-geojson" ["l"="39.123,24.054", "c"=157]
 "ghengeveld/graphql-geojson-demo" ["l"="38.903,23.296"]
 "tomwayson/esri-vue-cli-example" ["l"="39.179,23.15"]
+"judero01col/GMap.NET" ["l"="37.436,23.822", "c"=199]
 "Esri/geojson-layer-js" ["l"="38.936,23.088"]
-"jwasilgeo/Leaflet.Canvas-Flowmap-Layer" ["l"="38.323,23.027"]
+"Esri/geometry-api-java" ["l"="39.523,23.843", "c"=157]
+"zalando/zally" ["l"="7.202,-8.296", "c"=14]
+"jwasilgeo/Leaflet.Canvas-Flowmap-Layer" ["l"="38.323,23.027", "c"=449]
 "tomwayson/esri-rollup-example" ["l"="38.977,23.155"]
 "Esri/geotour-js" ["l"="38.958,23.153"]
 "agrc/atlas" ["l"="39.045,23.278"]
 "cmv/cmv-calcite-maps" ["l"="38.957,23.131"]
+"Esri/gis-tools-for-hadoop" ["l"="39.538,23.787", "c"=157]
 "ecaldwell/portal-admin-examples" ["l"="39.07,22.973"]
-"Esri/public-transit-tools" ["l"="36.026,19.566"]
+"Esri/public-transit-tools" ["l"="36.026,19.566", "c"=1150]
 "Esri/street-data-processing-tools" ["l"="38.984,23.063"]
-"xiaoqqchen/PcArcBruTile" ["l"="38.852,23.766"]
+"xiaoqqchen/PcArcBruTile" ["l"="38.852,23.766", "c"=157]
 "davetimmins/esri-loader-react" ["l"="39.189,23.17"]
 "tomwayson/create-arcgis-app" ["l"="39.184,23.131"]
 "Esri/arcgis-dijit-sample-js" ["l"="38.998,23.148"]
+"axismaps/colorbrewer" ["l"="39.279,24.014", "c"=157]
 "xzdbd/dockerfiles" ["l"="39.209,23.011"]
+"exercism/website-copy" ["l"="-17.376,-44.441", "c"=550]
 "OpenNTF/dojo-webpack-plugin-sample" ["l"="39.252,23.105"]
+"microsoft/azure-maven-plugins" ["l"="-17.376,-44.498", "c"=550]
 }

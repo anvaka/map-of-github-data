@@ -1,6 +1,7 @@
 digraph G {
 "quarkslab/conf-presentations" -> "quarkslab/android-fuzzing"
 "quarkslab/conf-presentations" -> "Markakd/bad_io_uring"
+"makelinux/linux_kernel_map" -> "enovella/TEE-reversing" ["e"=1]
 "enovella/TEE-reversing" -> "marin-m/vmlinux-to-elf" ["e"=1]
 "enovella/TEE-reversing" -> "quarkslab/samsung-trustzone-research"
 "enovella/TEE-reversing" -> "shakevsky/keybuster" ["e"=1]
@@ -16,7 +17,16 @@ digraph G {
 "enovella/TEE-reversing" -> "cloudfuzz/android-kernel-exploitation" ["e"=1]
 "enovella/TEE-reversing" -> "maddiestone/IDAPythonEmbeddedToolkit" ["e"=1]
 "enovella/TEE-reversing" -> "gaasedelen/tenet" ["e"=1]
+"UofT-EcoSystem/CSCD70" -> "houjingyi233/awesome-fuzz" ["e"=1]
+"HelloKittyNII/soot-android-static-analysis" -> "h0rd7/PendingIntentScan" ["e"=1]
+"amezin/vscode-linux-kernel" -> "lrh2000/StackRot" ["e"=1]
+"ucsb-seclab/BootStomp" -> "enovella/TEE-reversing" ["e"=1]
+"tangsilian/android-vuln" -> "kangtastic/cve-2019-2215" ["e"=1]
+"tangsilian/android-vuln" -> "Markakd/bad_io_uring" ["e"=1]
 "Keysight/optee_fuzzer" -> "MartijnB/optee_fuzzer"
+"WithSecureLabs/Jandroid" -> "h0rd7/PendingIntentScan" ["e"=1]
+"WithSecureLabs/Jandroid" -> "flankerhqd/vendor-android-cves" ["e"=1]
+"oversecured/ovaa" -> "h0rd7/PendingIntentScan" ["e"=1]
 "grant-h/qu1ckr00t" -> "kangtastic/cve-2019-2215"
 "grant-h/qu1ckr00t" -> "bluefrostsecurity/CVE-2020-0041"
 "grant-h/qu1ckr00t" -> "timwr/CVE-2019-2215"
@@ -26,10 +36,27 @@ digraph G {
 "grant-h/qu1ckr00t" -> "nforest/droidimg" ["e"=1]
 "grant-h/qu1ckr00t" -> "ScottyBauer/Android_Kernel_CVE_POCs" ["e"=1]
 "grant-h/qu1ckr00t" -> "chompie1337/s8_2019_2215_poc"
+"cloudfuzz/android-kernel-exploitation" -> "bluefrostsecurity/CVE-2020-0041" ["e"=1]
+"cloudfuzz/android-kernel-exploitation" -> "chompie1337/s8_2019_2215_poc" ["e"=1]
+"cloudfuzz/android-kernel-exploitation" -> "kangtastic/cve-2019-2215" ["e"=1]
+"cloudfuzz/android-kernel-exploitation" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"OP-TEE/optee_os" -> "enovella/TEE-reversing" ["e"=1]
+"saeidshirazi/awesome-android-security" -> "NetKingJ/awesome-android-security" ["e"=1]
 "chompie1337/s8_2019_2215_poc" -> "bluefrostsecurity/CVE-2020-0041"
 "chompie1337/s8_2019_2215_poc" -> "quarkslab/CVE-2020-0069_poc"
 "chompie1337/s8_2019_2215_poc" -> "quarkslab/titanm"
 "chompie1337/s8_2019_2215_poc" -> "secmob/TiYunZong-An-Exploit-Chain-to-Remotely-Root-Modern-Android-Devices"
+"googleprojectzero/SkCodecFuzzer" -> "bluefrostsecurity/CVE-2020-0041" ["e"=1]
+"googleprojectzero/SkCodecFuzzer" -> "flankerhqd/vendor-android-cves" ["e"=1]
+"marin-m/vmlinux-to-elf" -> "enovella/TEE-reversing" ["e"=1]
+"xmikos/setools-android" -> "kangtastic/cve-2019-2215" ["e"=1]
+"xmikos/setools-android" -> "chompie1337/s8_2019_2215_poc" ["e"=1]
+"drygdryg/OneShot" -> "fulvius31/OneShot" ["e"=1]
+"drygdryg/OneShot" -> "kimocoder/OneShot" ["e"=1]
+"keyou/chromium_demo" -> "mistymntncop/CVE-2023-2033" ["e"=1]
+"keyou/chromium_demo" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
+"ivan-sincek/php-reverse-shell" -> "jakabakos/CVE-2023-36664-Ghostscript-command-injection" ["e"=1]
+"iromise/fans" -> "bluefrostsecurity/CVE-2020-0041" ["e"=1]
 "star-sg/CVE" -> "nccgroup/libslub" ["e"=1]
 "star-sg/CVE" -> "Zon8Research/v8-vulnerabilities" ["e"=1]
 "star-sg/CVE" -> "singularseclab/Browser_Exploits" ["e"=1]
@@ -38,6 +65,12 @@ digraph G {
 "star-sg/CVE" -> "lanleft/CVE-2023-1829"
 "star-sg/CVE" -> "veritas501/pipe-primitive"
 "star-sg/CVE" -> "pray77/CVE-2023-3640"
+"ChickenHook/RestrictionBypass" -> "michalbednarski/LeakValue" ["e"=1]
+"seemoo-lab/frankenstein" -> "bluefrostsecurity/CVE-2020-0041" ["e"=1]
+"bcoles/kasld" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"bcoles/kasld" -> "Lotuhu/Page-UAF" ["e"=1]
+"bcoles/kasld" -> "zerozenxlabs/ZDI-24-020" ["e"=1]
+"bcoles/kasld" -> "lrh2000/StackRot" ["e"=1]
 "flankerhqd/vendor-android-cves" -> "bluefrostsecurity/CVE-2020-0041"
 "flankerhqd/vendor-android-cves" -> "metaredteam/rtx-cve-2023-45779"
 "flankerhqd/vendor-android-cves" -> "BLuFeNiX/SMTShell" ["e"=1]
@@ -63,9 +96,31 @@ digraph G {
 "kangtastic/cve-2019-2215" -> "sharif-dev/AndroidKernelVulnerability"
 "kangtastic/cve-2019-2215" -> "bluefrostsecurity/CVE-2020-0041"
 "timwr/CVE-2019-2215" -> "kangtastic/cve-2019-2215"
+"facebook/mariana-trench" -> "michalbednarski/LeakValue" ["e"=1]
+"briskets/CVE-2021-3493" -> "Bonfee/CVE-2022-0995" ["e"=1]
+"RoderickChan/pwncli" -> "ErodedElk/Chaos-me-JavaScript-V8" ["e"=1]
+"RoderickChan/pwncli" -> "Lotuhu/Page-UAF" ["e"=1]
+"nobodyisnobody/write-ups" -> "Lotuhu/Page-UAF" ["e"=1]
+"Reginer/aosp-android-jar" -> "canyie/CVE-2024-0044" ["e"=1]
+"Reginer/aosp-android-jar" -> "michalbednarski/LeakValue" ["e"=1]
+"bsauce/kernel-exploit-factory" -> "lrh2000/StackRot" ["e"=1]
+"googleprojectzero/0days-in-the-wild" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"googleprojectzero/0days-in-the-wild" -> "0xkol/badspin" ["e"=1]
+"googleprojectzero/0days-in-the-wild" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
+"bata24/gef" -> "Lotuhu/Page-UAF" ["e"=1]
 "chompie1337/Linux_LPE_eBPF_CVE-2021-3490" -> "chompie1337/SIGRed_RCE_PoC" ["e"=1]
 "chompie1337/Linux_LPE_eBPF_CVE-2021-3490" -> "Bonfee/CVE-2022-25636"
+"KnugiHK/WhatsApp-Chat-Exporter" -> "0xbinder/CVE-2024-0044" ["e"=1]
+"googleprojectzero/SockFuzzer" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
+"edwardzpeng/presentations" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
+"nforest/droidimg" -> "bluefrostsecurity/CVE-2020-0041" ["e"=1]
+"exd0tpy/CTF-browser-challenges" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
+"exd0tpy/CTF-browser-challenges" -> "two-heart/v8-design-docs" ["e"=1]
+"8051Enthusiast/biodiff" -> "quarkslab/titanm" ["e"=1]
+"ttdennis/fpicker" -> "quarkslab/android-fuzzing" ["e"=1]
 "o-o-overflow/dc2021f-ooows-public" -> "veritas501/cross_page_attack_demo"
+"JD331/JD331" -> "Bonfee/CVE-2022-0995" ["e"=1]
+"Accenture/VulFi" -> "ErodedElk/Chaos-me-JavaScript-V8" ["e"=1]
 "polygraphene/DirtyPipe-Android" -> "tiann/DirtyPipeRoot"
 "polygraphene/DirtyPipe-Android" -> "jiayy/android_vuln_poc-exp" ["e"=1]
 "polygraphene/DirtyPipe-Android" -> "0xkol/badspin"
@@ -106,6 +161,8 @@ digraph G {
 "NetKingJ/awesome-android-security" -> "foundryzero/binder-trace" ["e"=1]
 "NetKingJ/awesome-android-security" -> "canyie/CVE-2024-0044"
 "NetKingJ/awesome-android-security" -> "shakevsky/keybuster" ["e"=1]
+"Arinerron/CVE-2022-0847-DirtyPipe-Exploit" -> "Bonfee/CVE-2022-25636" ["e"=1]
+"Arinerron/CVE-2022-0847-DirtyPipe-Exploit" -> "tr3ee/CVE-2022-23222" ["e"=1]
 "pqlx/CVE-2022-1015" -> "plummm/CVE-2022-27666"
 "pqlx/CVE-2022-1015" -> "Bonfee/CVE-2022-0995"
 "pqlx/CVE-2022-1015" -> "synacktiv/CVE-2023-35001"
@@ -113,6 +170,8 @@ digraph G {
 "pqlx/CVE-2022-1015" -> "lanleft/CVE-2023-1829"
 "pqlx/CVE-2022-1015" -> "theori-io/CVE-2022-32250-exploit"
 "pqlx/CVE-2022-1015" -> "veritas501/pipe-primitive"
+"v8blink/v8-JavaScript-Documents" -> "ErodedElk/Chaos-me-JavaScript-V8" ["e"=1]
+"v8blink/v8-JavaScript-Documents" -> "two-heart/v8-design-docs" ["e"=1]
 "quarkslab/titanm" -> "chompie1337/s8_2019_2215_poc"
 "Crusaders-of-Rust/CVE-2022-0185" -> "plummm/CVE-2022-27666"
 "Crusaders-of-Rust/CVE-2022-0185" -> "TurtleARM/CVE-2023-0179-PoC"
@@ -181,6 +240,9 @@ digraph G {
 "TurtleARM/CVE-2023-0179-PoC" -> "Crusaders-of-Rust/CVE-2022-0185"
 "TurtleARM/CVE-2023-0179-PoC" -> "bluefrostsecurity/CVE-2023-2008"
 "kiks7/CVE-2022-2602-Kernel-Exploit" -> "LukeGix/CVE-2022-2602"
+"doridori/Android-Security-Reference" -> "enovella/TEE-reversing" ["e"=1]
+"0xricksanchez/like-dbg" -> "Markakd/DirtyCred" ["e"=1]
+"citronneur/pamspy" -> "tr3ee/CVE-2022-23222" ["e"=1]
 "MaherAzzouzi/CVE-2022-37706-LPE-exploit" -> "nikn0laty/Exploit-for-Dolibarr-17.0.0-CVE-2023-30253"
 "MaherAzzouzi/CVE-2022-37706-LPE-exploit" -> "elweth-sec/CVE-2023-2255"
 "MaherAzzouzi/CVE-2022-37706-LPE-exploit" -> "Markakd/CVE-2022-2588"
@@ -260,6 +322,13 @@ digraph G {
 "xkaneiki/CVE-2023-0386" -> "chenaotian/CVE-2023-0386"
 "xkaneiki/CVE-2023-0386" -> "veritas501/CVE-2022-34918"
 "xkaneiki/CVE-2023-0386" -> "vi3t1/qq-tim-elevation"
+"davinci01010/pinduoduo_backdoor_x" -> "michalbednarski/LeakValue" ["e"=1]
+"davinci01010/pinduoduo_backdoor_x" -> "michalbednarski/ReparcelBug2" ["e"=1]
+"davincifans123/pinduoduo_backdoor_demo" -> "michalbednarski/LeakValue" ["e"=1]
+"davincifans123/pinduoduo_backdoor_demo" -> "michalbednarski/TheLastBundleMismatch" ["e"=1]
+"davincifans123/pinduoduo_backdoor_demo" -> "0xbinder/CVE-2024-0044" ["e"=1]
+"elllusion/pinduoduo_backdoor_code" -> "michalbednarski/LeakValue" ["e"=1]
+"elllusion/pinduoduo_backdoor_code" -> "michalbednarski/TheLastBundleMismatch" ["e"=1]
 "lrh2000/StackRot" -> "nccgroup/libslub" ["e"=1]
 "lrh2000/StackRot" -> "star-sg/CVE"
 "lrh2000/StackRot" -> "0x36/Pixel_GPU_Exploit"
@@ -275,6 +344,10 @@ digraph G {
 "lrh2000/StackRot" -> "Markakd/DirtyCred"
 "lrh2000/StackRot" -> "pqlx/CVE-2022-1015"
 "lrh2000/StackRot" -> "bata24/gef" ["e"=1]
+"vdohney/keepass-password-dumper" -> "g1vi/CVE-2023-2640-CVE-2023-32629" ["e"=1]
+"jiayy/android_vuln_poc-exp" -> "bluefrostsecurity/CVE-2020-0041" ["e"=1]
+"jiayy/android_vuln_poc-exp" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"user1342/Awesome-Android-Reverse-Engineering" -> "NetKingJ/awesome-android-security" ["e"=1]
 "Liuk3r/CVE-2023-32233" -> "xkaneiki/CVE-2023-0386"
 "Liuk3r/CVE-2023-32233" -> "kungfulon/nf-tables-lpe"
 "Liuk3r/CVE-2023-32233" -> "lanleft/CVE-2023-1829"
@@ -284,6 +357,7 @@ digraph G {
 "Liuk3r/CVE-2023-32233" -> "Markakd/CVE-2022-2588"
 "Liuk3r/CVE-2023-32233" -> "randorisec/CVE-2022-34918-LPE-PoC"
 "Liuk3r/CVE-2023-32233" -> "veritas501/CVE-2022-34918"
+"google/buzzer" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
 "kimocoder/OneShot" -> "nikita-yfh/OneShot-C"
 "kimocoder/OneShot" -> "elweth-sec/CVE-2023-2255"
 "kimocoder/OneShot" -> "fulvius31/OneShot"
@@ -303,6 +377,12 @@ digraph G {
 "0xkol/badspin" -> "0xbinder/CVE-2024-0044"
 "0xkol/badspin" -> "flankerhqd/vendor-android-cves"
 "0xkol/badspin" -> "quarkslab/android-fuzzing"
+"foundryzero/binder-trace" -> "michalbednarski/LeakValue" ["e"=1]
+"foundryzero/binder-trace" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"nccgroup/libslub" -> "kungfulon/nf-tables-lpe" ["e"=1]
+"nccgroup/libslub" -> "pray77/CVE-2023-3640" ["e"=1]
+"nccgroup/libslub" -> "veritas501/pipe-primitive" ["e"=1]
+"Mr-xn/BLACKHAT_Asia2023" -> "xkaneiki/CVE-2023-0386" ["e"=1]
 "jakabakos/CVE-2023-36664-Ghostscript-command-injection" -> "g1vi/CVE-2023-2640-CVE-2023-32629"
 "spookier/Maltrail-v0.53-Exploit" -> "entr0pie/CVE-2023-27163"
 "spookier/Maltrail-v0.53-Exploit" -> "diego-tella/CVE-2023-1326-PoC"
@@ -321,7 +401,9 @@ digraph G {
 "mistymntncop/CVE-2023-3079" -> "xv0nfers/V8-sbx-bypass-collection"
 "mistymntncop/CVE-2023-3079" -> "mistymntncop/CVE-2024-5274"
 "c53elyas/CVE-2023-33733" -> "elweth-sec/CVE-2023-2255"
+"BLuFeNiX/SMTShell" -> "flankerhqd/vendor-android-cves" ["e"=1]
 "houjingyi233/awesome-fuzz" -> "nightuhu/RWCTF6th-RIPTC"
+"mindedsecurity/semgrep-rules-android-security" -> "quarkslab/android-fuzzing" ["e"=1]
 "entr0pie/CVE-2023-27163" -> "spookier/Maltrail-v0.53-Exploit"
 "mebeim/systrack" -> "pray77/CVE-2023-3640"
 "mebeim/systrack" -> "mebeim/linux-syscalls"
@@ -336,10 +418,19 @@ digraph G {
 "arttnba3/Linux-kernel-exploitation" -> "arttnba3/D3CTF2023_d3kcache"
 "zh-explorer/Project-Damocles" -> "zh-explorer/dirtycow"
 "zh-explorer/black_zone" -> "zh-explorer/dirtycow"
+"amlweems/xzbot" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"Notselwyn/CVE-2024-1086" -> "lrh2000/StackRot" ["e"=1]
+"synacktiv/frinet" -> "quarkslab/android-fuzzing" ["e"=1]
+"YuriiCrimson/ExploitGSM" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"YuriiCrimson/ExploitGSM" -> "lrh2000/StackRot" ["e"=1]
+"YuriiCrimson/ExploitGSM" -> "ysanatomic/io_uring_LPE-CVE-2024-0582" ["e"=1]
+"YuriiCrimson/ExploitGSM" -> "zerozenxlabs/ZDI-24-020" ["e"=1]
+"YuriiCrimson/ExploitGSM" -> "leesh3288/CVE-2023-4911" ["e"=1]
 "RickdeJager/CVE-2023-4911" -> "synacktiv/CVE-2023-35001"
 "RickdeJager/CVE-2023-4911" -> "leesh3288/CVE-2023-4911"
 "RickdeJager/CVE-2023-4911" -> "veritas501/pipe-primitive"
 "ysanatomic/io_uring_LPE-CVE-2024-0582" -> "ysanatomic/io_uring_LPE-CVE-2023-2598"
+"timwr/CVE-2016-5195" -> "kangtastic/cve-2019-2215" ["e"=1]
 "rycbar77/V8Exploits" -> "xv0nfers/V8-sbx-bypass-collection"
 "0x36/Pixel_GPU_Exploit" -> "0xkol/badspin"
 "0x36/Pixel_GPU_Exploit" -> "Markakd/bad_io_uring"
@@ -357,6 +448,17 @@ digraph G {
 "0x36/Pixel_GPU_Exploit" -> "jiayy/android_vuln_poc-exp" ["e"=1]
 "0x36/Pixel_GPU_Exploit" -> "zerozenxlabs/ZDI-24-020"
 "marco-liberale/PasteBomb" -> "SaadAhla/dropper"
+"xaitax/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability" -> "elweth-sec/CVE-2023-2255" ["e"=1]
+"xaitax/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability" -> "MaherAzzouzi/CVE-2022-37706-LPE-exploit" ["e"=1]
+"actuator/Android-Security-Exploits-YouTube-Curriculum" -> "michalbednarski/LeakValue" ["e"=1]
+"actuator/Android-Security-Exploits-YouTube-Curriculum" -> "NetKingJ/awesome-android-security" ["e"=1]
+"actuator/Android-Security-Exploits-YouTube-Curriculum" -> "Markakd/bad_io_uring" ["e"=1]
+"actuator/Android-Security-Exploits-YouTube-Curriculum" -> "0xkol/badspin" ["e"=1]
+"actuator/Android-Security-Exploits-YouTube-Curriculum" -> "quarkslab/android-fuzzing" ["e"=1]
+"marcnewlin/hi_my_name_is_keyboard" -> "0x36/Pixel_GPU_Exploit" ["e"=1]
+"marcnewlin/hi_my_name_is_keyboard" -> "Markakd/bad_io_uring" ["e"=1]
+"marcnewlin/hi_my_name_is_keyboard" -> "0xbinder/CVE-2024-0044" ["e"=1]
+"marcnewlin/hi_my_name_is_keyboard" -> "0xkol/badspin" ["e"=1]
 "michalbednarski/TheLastBundleMismatch" -> "pwnipc/BadParcel"
 "michalbednarski/TheLastBundleMismatch" -> "michalbednarski/ReparcelBug"
 "michalbednarski/TheLastBundleMismatch" -> "michalbednarski/LeakValue"
@@ -370,6 +472,7 @@ digraph G {
 "g1vi/CVE-2023-2640-CVE-2023-32629" -> "diego-tella/CVE-2023-1326-PoC"
 "g1vi/CVE-2023-2640-CVE-2023-32629" -> "Acceis/exploit-CVE-2023-23752"
 "g1vi/CVE-2023-2640-CVE-2023-32629" -> "rvizx/CVE-2023-26035"
+"gfelber/how2keap" -> "Lotuhu/Page-UAF" ["e"=1]
 "m3m0o/metabase-pre-auth-rce-poc" -> "nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection"
 "chaitin/Real-World-CTF-6th-Challenges" -> "nightuhu/RWCTF6th-RIPTC"
 "metaredteam/rtx-cve-2023-45779" -> "pwnipc/BadParcel"
@@ -383,6 +486,7 @@ digraph G {
 "rvizx/CVE-2023-30547" -> "rvizx/CVE-2023-26035"
 "vu-ls/Zenbleed-Chrome-PoC" -> "theori-io/v8-sbx-bypass-wasm"
 "rvizx/CVE-2023-26035" -> "rvizx/CVE-2023-30547"
+"aydinnyunus/gpt4-captcha-bypass" -> "0x6rss/WhatsApp-extension-manipulation-PoC" ["e"=1]
 "0xbinder/CVE-2024-0044" -> "michalbednarski/TheLastBundleMismatch"
 "0xbinder/CVE-2024-0044" -> "michalbednarski/LeakValue"
 "0xbinder/CVE-2024-0044" -> "0xkol/badspin"
@@ -397,6 +501,11 @@ digraph G {
 "mrd0x/PWA-Phishing" -> "0x6rss/pdfdropper"
 "0x6rss/pdfdropper" -> "0x6rss/WhatsApp-extension-manipulation-PoC"
 "0x6rss/pdfdropper" -> "WKL-Sec/LayeredSyscall" ["e"=1]
+"zgzhang/cve-2024-6387-poc" -> "RickdeJager/CVE-2023-4911" ["e"=1]
+"ynwarcs/CVE-2024-38063" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
+"murat-exp/EDR-Antivirus-Bypass-to-Gain-Shell-Access" -> "0x6rss/WhatsApp-extension-manipulation-PoC" ["e"=1]
+"JohnHammond/recaptcha-phish" -> "0x6rss/pdfdropper" ["e"=1]
+"ambionics/cnext-exploits" -> "xv0nfers/V8-sbx-bypass-collection" ["e"=1]
 "xv0nfers/V8-sbx-bypass-collection" -> "mistymntncop/CVE-2023-3079"
 "xv0nfers/V8-sbx-bypass-collection" -> "rycbar77/V8Exploits"
 "xv0nfers/V8-sbx-bypass-collection" -> "bjrjk/CVE-2022-4262"
@@ -405,6 +514,7 @@ digraph G {
 "xv0nfers/V8-sbx-bypass-collection" -> "mistymntncop/CVE-2024-5274"
 "xv0nfers/V8-sbx-bypass-collection" -> "two-heart/v8-design-docs"
 "xv0nfers/V8-sbx-bypass-collection" -> "Lotuhu/Page-UAF"
+"canyie/MagiskEoP" -> "canyie/CVE-2024-0044" ["e"=1]
 "Lotuhu/Page-UAF" -> "gfelber/how2keap" ["e"=1]
 "Lotuhu/Page-UAF" -> "ErodedElk/Chaos-me-JavaScript-V8"
 "Lotuhu/Page-UAF" -> "xv0nfers/V8-sbx-bypass-collection"
@@ -427,69 +537,112 @@ digraph G {
 "quarkslab/conf-presentations" ["l"="-46.08,-34.382"]
 "quarkslab/android-fuzzing" ["l"="-46.069,-34.402"]
 "Markakd/bad_io_uring" ["l"="-46.043,-34.406"]
+"makelinux/linux_kernel_map" ["l"="-45.307,-34.797", "c"=282]
 "enovella/TEE-reversing" ["l"="-45.954,-34.506"]
-"marin-m/vmlinux-to-elf" ["l"="-45.233,-34.755"]
+"marin-m/vmlinux-to-elf" ["l"="-45.233,-34.755", "c"=282]
 "quarkslab/samsung-trustzone-research" ["l"="-45.947,-34.548"]
-"shakevsky/keybuster" ["l"="-51.743,14.068"]
+"shakevsky/keybuster" ["l"="-51.743,14.068", "c"=592]
 "ningzhenyu/nailgun" ["l"="-45.919,-34.541"]
 "Keysight/optee_fuzzer" ["l"="-45.903,-34.519"]
-"googleprojectzero/p0tools" ["l"="-41.415,-36.315"]
+"googleprojectzero/p0tools" ["l"="-41.415,-36.315", "c"=91]
 "NetKingJ/awesome-android-security" ["l"="-45.995,-34.462"]
 "bluefrostsecurity/CVE-2020-0041" ["l"="-46.016,-34.477"]
-"tamirzb/CVE-2021-1961" ["l"="-51.761,14.073"]
-"bsauce/kernel-exploit-factory" ["l"="-45.234,-34.78"]
-"allpaca/chrome-sbx-db" ["l"="-41.378,-36.371"]
-"nforest/droidimg" ["l"="-56.688,12.031"]
-"cloudfuzz/android-kernel-exploitation" ["l"="-45.196,-34.8"]
-"maddiestone/IDAPythonEmbeddedToolkit" ["l"="-41.575,-37.458"]
-"gaasedelen/tenet" ["l"="-43.002,-36.939"]
-"MartijnB/optee_fuzzer" ["l"="-45.88,-34.53"]
-"grant-h/qu1ckr00t" ["l"="-46.015,-34.531"]
+"tamirzb/CVE-2021-1961" ["l"="-51.761,14.073", "c"=592]
+"bsauce/kernel-exploit-factory" ["l"="-45.234,-34.78", "c"=282]
+"allpaca/chrome-sbx-db" ["l"="-41.378,-36.371", "c"=91]
+"nforest/droidimg" ["l"="-56.688,12.031", "c"=883]
+"cloudfuzz/android-kernel-exploitation" ["l"="-45.196,-34.8", "c"=282]
+"maddiestone/IDAPythonEmbeddedToolkit" ["l"="-41.575,-37.458", "c"=610]
+"gaasedelen/tenet" ["l"="-43.002,-36.939", "c"=306]
+"UofT-EcoSystem/CSCD70" ["l"="-45.081,-34.833", "c"=282]
+"houjingyi233/awesome-fuzz" ["l"="-45.835,-34.408"]
+"HelloKittyNII/soot-android-static-analysis" ["l"="36.082,-0.803", "c"=1188]
+"h0rd7/PendingIntentScan" ["l"="-46.109,-34.427"]
+"amezin/vscode-linux-kernel" ["l"="7.072,-6.337", "c"=335]
+"lrh2000/StackRot" ["l"="-45.97,-34.346"]
+"ucsb-seclab/BootStomp" ["l"="-41.607,-37.472", "c"=610]
+"tangsilian/android-vuln" ["l"="-41.238,-36.176", "c"=91]
 "kangtastic/cve-2019-2215" ["l"="-46.001,-34.513"]
+"MartijnB/optee_fuzzer" ["l"="-45.88,-34.53"]
+"WithSecureLabs/Jandroid" ["l"="-41.252,-36.15", "c"=91]
+"flankerhqd/vendor-android-cves" ["l"="-46.028,-34.454"]
+"oversecured/ovaa" ["l"="56.352,-10.984", "c"=24]
+"grant-h/qu1ckr00t" ["l"="-46.015,-34.531"]
 "timwr/CVE-2019-2215" ["l"="-45.99,-34.537"]
 "marcinguy/CVE-2019-2215" ["l"="-46.014,-34.568"]
-"andreafioraldi/frida-fuzzer" ["l"="-41.276,-36.155"]
+"andreafioraldi/frida-fuzzer" ["l"="-41.276,-36.155", "c"=91]
 "sharif-dev/AndroidKernelVulnerability" ["l"="-46.012,-34.499"]
-"ScottyBauer/Android_Kernel_CVE_POCs" ["l"="-41.235,-36.208"]
+"ScottyBauer/Android_Kernel_CVE_POCs" ["l"="-41.235,-36.208", "c"=91]
 "chompie1337/s8_2019_2215_poc" ["l"="-46.045,-34.515"]
+"0x36/Pixel_GPU_Exploit" ["l"="-46.019,-34.413"]
+"OP-TEE/optee_os" ["l"="-16.582,-42.151", "c"=621]
+"saeidshirazi/awesome-android-security" ["l"="56.302,-10.979", "c"=24]
 "quarkslab/CVE-2020-0069_poc" ["l"="-46.058,-34.499"]
 "quarkslab/titanm" ["l"="-46.055,-34.549"]
 "secmob/TiYunZong-An-Exploit-Chain-to-Remotely-Root-Modern-Android-Devices" ["l"="-46.076,-34.533"]
-"star-sg/CVE" ["l"="-46.005,-34.315"]
-"nccgroup/libslub" ["l"="-45.196,-34.848"]
-"Zon8Research/v8-vulnerabilities" ["l"="-41.306,-36.364"]
-"singularseclab/Browser_Exploits" ["l"="-41.281,-36.372"]
-"lrh2000/StackRot" ["l"="-45.97,-34.346"]
+"googleprojectzero/SkCodecFuzzer" ["l"="-41.276,-36.181", "c"=91]
+"xmikos/setools-android" ["l"="-41.13,-36.186", "c"=91]
+"drygdryg/OneShot" ["l"="-46.748,-25.695", "c"=70]
+"fulvius31/OneShot" ["l"="-45.703,-34.162"]
+"kimocoder/OneShot" ["l"="-45.74,-34.173"]
+"keyou/chromium_demo" ["l"="-41.21,-36.39", "c"=91]
+"mistymntncop/CVE-2023-2033" ["l"="-46.07,-34.356"]
 "xv0nfers/V8-sbx-bypass-collection" ["l"="-46.094,-34.301"]
+"ivan-sincek/php-reverse-shell" ["l"="-45.154,-31.891", "c"=53]
+"jakabakos/CVE-2023-36664-Ghostscript-command-injection" ["l"="-45.75,-34.254"]
+"iromise/fans" ["l"="-41.307,-36.159", "c"=91]
+"star-sg/CVE" ["l"="-46.005,-34.315"]
+"nccgroup/libslub" ["l"="-45.196,-34.848", "c"=282]
+"Zon8Research/v8-vulnerabilities" ["l"="-41.306,-36.364", "c"=91]
+"singularseclab/Browser_Exploits" ["l"="-41.281,-36.372", "c"=91]
 "lanleft/CVE-2023-1829" ["l"="-45.931,-34.305"]
 "veritas501/pipe-primitive" ["l"="-45.958,-34.295"]
 "pray77/CVE-2023-3640" ["l"="-45.99,-34.292"]
-"flankerhqd/vendor-android-cves" ["l"="-46.028,-34.454"]
-"metaredteam/rtx-cve-2023-45779" ["l"="-46.07,-34.426"]
-"BLuFeNiX/SMTShell" ["l"="-52.14,9.778"]
-"0xkol/badspin" ["l"="-46.033,-34.432"]
+"ChickenHook/RestrictionBypass" ["l"="56.958,-10.664", "c"=24]
 "michalbednarski/LeakValue" ["l"="-46.052,-34.432"]
-"googleprojectzero/SkCodecFuzzer" ["l"="-41.276,-36.181"]
-"dessertlab/fantastic_beasts" ["l"="-41.295,-36.197"]
+"seemoo-lab/frankenstein" ["l"="-41.393,-36.14", "c"=91]
+"bcoles/kasld" ["l"="-45.205,-34.825", "c"=282]
+"Lotuhu/Page-UAF" ["l"="-46.063,-34.298"]
+"zerozenxlabs/ZDI-24-020" ["l"="-45.998,-34.376"]
+"metaredteam/rtx-cve-2023-45779" ["l"="-46.07,-34.426"]
+"BLuFeNiX/SMTShell" ["l"="-52.14,9.778", "c"=19]
+"0xkol/badspin" ["l"="-46.033,-34.432"]
+"dessertlab/fantastic_beasts" ["l"="-41.295,-36.197", "c"=91]
 "j4nn/CVE-2020-0041" ["l"="-46.033,-34.494"]
 "lntrx/CVE-2021-28663" ["l"="-46.002,-34.441"]
-"iromise/fans" ["l"="-41.307,-36.159"]
-"exodusintel/Chrome-Issue-992914-Sealed-Frozen-Element-Kind-Type-Confusion-RCE-Exploit" ["l"="-41.37,-36.485"]
+"exodusintel/Chrome-Issue-992914-Sealed-Frozen-Element-Kind-Type-Confusion-RCE-Exploit" ["l"="-41.37,-36.485", "c"=91]
+"facebook/mariana-trench" ["l"="56.325,-10.95", "c"=24]
+"briskets/CVE-2021-3493" ["l"="-44.519,-29.348", "c"=3]
+"Bonfee/CVE-2022-0995" ["l"="-45.946,-34.298"]
+"RoderickChan/pwncli" ["l"="-42.683,-29.692", "c"=466]
+"ErodedElk/Chaos-me-JavaScript-V8" ["l"="-46.087,-34.276"]
+"nobodyisnobody/write-ups" ["l"="-45.132,-34.819", "c"=282]
+"Reginer/aosp-android-jar" ["l"="56.978,-10.677", "c"=24]
+"canyie/CVE-2024-0044" ["l"="-46.049,-34.453"]
+"googleprojectzero/0days-in-the-wild" ["l"="-41.36,-36.315", "c"=91]
+"bata24/gef" ["l"="-45.178,-34.791", "c"=282]
 "chompie1337/Linux_LPE_eBPF_CVE-2021-3490" ["l"="-45.974,-34.25"]
-"chompie1337/SIGRed_RCE_PoC" ["l"="-46.887,-32.035"]
+"chompie1337/SIGRed_RCE_PoC" ["l"="-46.887,-32.035", "c"=41]
 "Bonfee/CVE-2022-25636" ["l"="-45.967,-34.283"]
+"KnugiHK/WhatsApp-Chat-Exporter" ["l"="-41.063,-32.906", "c"=289]
+"0xbinder/CVE-2024-0044" ["l"="-46.075,-34.452"]
+"googleprojectzero/SockFuzzer" ["l"="-41.405,-36.198", "c"=91]
+"edwardzpeng/presentations" ["l"="-41.378,-36.579", "c"=91]
+"exd0tpy/CTF-browser-challenges" ["l"="-45.148,-34.829", "c"=282]
+"two-heart/v8-design-docs" ["l"="-46.124,-34.3"]
+"8051Enthusiast/biodiff" ["l"="-41.576,-37.56", "c"=610]
+"ttdennis/fpicker" ["l"="-41.245,-36.112", "c"=91]
 "o-o-overflow/dc2021f-ooows-public" ["l"="-45.835,-34.333"]
 "veritas501/cross_page_attack_demo" ["l"="-45.861,-34.323"]
+"JD331/JD331" ["l"="-5.021,13.381", "c"=698]
+"Accenture/VulFi" ["l"="-41.418,-37.427", "c"=610]
 "polygraphene/DirtyPipe-Android" ["l"="-45.988,-34.402"]
 "tiann/DirtyPipeRoot" ["l"="-45.937,-34.427"]
-"jiayy/android_vuln_poc-exp" ["l"="-41.22,-36.216"]
-"0x36/Pixel_GPU_Exploit" ["l"="-46.019,-34.413"]
-"Bonfee/CVE-2022-0995" ["l"="-45.946,-34.298"]
-"tangsilian/android-vuln" ["l"="-41.238,-36.176"]
-"obpo-project/obpo-plugin" ["l"="56.67,-10.808"]
-"foundryzero/binder-trace" ["l"="55.833,-8.419"]
-"SeeFlowerX/stackplz" ["l"="56.687,-10.776"]
-"github/securitylab" ["l"="-41.388,-36.341"]
+"jiayy/android_vuln_poc-exp" ["l"="-41.22,-36.216", "c"=91]
+"obpo-project/obpo-plugin" ["l"="56.67,-10.808", "c"=24]
+"foundryzero/binder-trace" ["l"="55.833,-8.419", "c"=428]
+"SeeFlowerX/stackplz" ["l"="56.687,-10.776", "c"=24]
+"github/securitylab" ["l"="-41.388,-36.341", "c"=91]
 "plummm/CVE-2022-27666" ["l"="-45.943,-34.283"]
 "pqlx/CVE-2022-1015" ["l"="-45.947,-34.319"]
 "tr3ee/CVE-2022-23222" ["l"="-45.937,-34.268"]
@@ -499,22 +652,19 @@ digraph G {
 "kungfulon/nf-tables-lpe" ["l"="-45.924,-34.296"]
 "Ruia-ruia/CVE-2022-29582-Exploit" ["l"="-45.916,-34.309"]
 "Markakd/CVE-2022-2588" ["l"="-45.924,-34.282"]
-"0vercl0k/CVE-2022-21971" ["l"="-46.948,-31.994"]
-"smallkirby/kernelpwn" ["l"="-45.161,-34.769"]
+"0vercl0k/CVE-2022-21971" ["l"="-46.948,-31.994", "c"=41]
+"smallkirby/kernelpwn" ["l"="-45.161,-34.769", "c"=282]
 "TurtleARM/CVE-2023-0179-PoC" ["l"="-45.93,-34.317"]
-"actuator/Android-Security-Exploits-YouTube-Curriculum" ["l"="56.354,-11.034"]
-"saeidshirazi/awesome-android-security" ["l"="56.302,-10.979"]
-"canyie/CVE-2024-0044" ["l"="-46.049,-34.453"]
+"actuator/Android-Security-Exploits-YouTube-Curriculum" ["l"="56.354,-11.034", "c"=24]
+"Arinerron/CVE-2022-0847-DirtyPipe-Exploit" ["l"="-44.208,-29.564", "c"=3]
 "synacktiv/CVE-2023-35001" ["l"="-45.96,-34.31"]
 "theori-io/CVE-2022-32250-exploit" ["l"="-45.929,-34.333"]
-"fulvius31/OneShot" ["l"="-45.703,-34.162"]
+"v8blink/v8-JavaScript-Documents" ["l"="-41.271,-36.394", "c"=91]
 "jevgenyonegin/OneShot_Notification_Autorescan_Mod" ["l"="-45.682,-34.152"]
 "michalbednarski/ReparcelBug2" ["l"="-46.089,-34.432"]
 "michalbednarski/ReparcelBug" ["l"="-46.109,-34.443"]
 "michalbednarski/TheLastBundleMismatch" ["l"="-46.069,-34.439"]
-"h0rd7/PendingIntentScan" ["l"="-46.109,-34.427"]
-"Impalabs/CVE-2023-27326" ["l"="-41.429,-36.785"]
-"Arinerron/CVE-2022-0847-DirtyPipe-Exploit" ["l"="-44.208,-29.564"]
+"Impalabs/CVE-2023-27326" ["l"="-41.429,-36.785", "c"=91]
 "faisalfs10x/Webmin-CVE-2022-0824-revshell" ["l"="-45.984,-34.225"]
 "veritas501/CVE-2022-25636-PipeVersion" ["l"="-45.999,-34.269"]
 "veritas501/CVE-2021-22555-PipeVersion" ["l"="-45.99,-34.265"]
@@ -526,24 +676,22 @@ digraph G {
 "tiann/DirtyPipe-Android" ["l"="-45.914,-34.439"]
 "oxy2ray/safetynet-fix" ["l"="-45.883,-34.454"]
 "nccgroup/mtk_bp" ["l"="-46.107,-34.394"]
-"0xbinder/CVE-2024-0044" ["l"="-46.075,-34.452"]
-"balazsgerlei/AndroidSecurityEvolution" ["l"="55.776,-8.343"]
+"balazsgerlei/AndroidSecurityEvolution" ["l"="55.776,-8.343", "c"=428]
 "ysanatomic/io_uring_LPE-CVE-2023-2598" ["l"="-45.869,-34.35"]
 "kiks7/CVE-2022-2602-Kernel-Exploit" ["l"="-45.839,-34.286"]
 "LukeGix/CVE-2022-2602" ["l"="-45.869,-34.288"]
+"doridori/Android-Security-Reference" ["l"="56.481,-11.05", "c"=24]
+"0xricksanchez/like-dbg" ["l"="-45.227,-34.824", "c"=282]
+"Markakd/DirtyCred" ["l"="-45.985,-34.329"]
+"citronneur/pamspy" ["l"="7.507,-6.401", "c"=335]
 "MaherAzzouzi/CVE-2022-37706-LPE-exploit" ["l"="-45.851,-34.257"]
 "nikn0laty/Exploit-for-Dolibarr-17.0.0-CVE-2023-30253" ["l"="-45.819,-34.241"]
 "elweth-sec/CVE-2023-2255" ["l"="-45.788,-34.207"]
 "g1vi/CVE-2023-2640-CVE-2023-32629" ["l"="-45.76,-34.275"]
 "xkaneiki/CVE-2023-0386" ["l"="-45.872,-34.235"]
-"Markakd/DirtyCred" ["l"="-45.985,-34.329"]
 "Markakd/CVE-2021-4154" ["l"="-45.982,-34.305"]
-"Lotuhu/Page-UAF" ["l"="-46.063,-34.298"]
-"bata24/gef" ["l"="-45.178,-34.791"]
 "SPuerBRead/shovel" ["l"="-45.845,-34.138"]
 "corener/JavaPassDump" ["l"="-45.836,-34.104"]
-"ErodedElk/Chaos-me-JavaScript-V8" ["l"="-46.087,-34.276"]
-"Accenture/VulFi" ["l"="-41.418,-37.427"]
 "n3m1sys/CVE-2023-22809-sudoedit-privesc" ["l"="-45.914,-34.225"]
 "Liuk3r/CVE-2023-32233" ["l"="-45.897,-34.282"]
 "bb33bb/CVE-2022-2639-PipeVersion" ["l"="-45.94,-34.245"]
@@ -557,14 +705,17 @@ digraph G {
 "zh-explorer/dirtycow" ["l"="-46.028,-34.191"]
 "chenaotian/CVE-2023-0386" ["l"="-45.889,-34.253"]
 "vi3t1/qq-tim-elevation" ["l"="-45.858,-34.187"]
-"zerozenxlabs/ZDI-24-020" ["l"="-45.998,-34.376"]
-"Shadow0ps/CVE-2021-21974" ["l"="-43.695,-29.367"]
-"kimocoder/OneShot" ["l"="-45.74,-34.173"]
+"davinci01010/pinduoduo_backdoor_x" ["l"="56.679,-10.465", "c"=24]
+"davincifans123/pinduoduo_backdoor_demo" ["l"="56.697,-10.476", "c"=24]
+"elllusion/pinduoduo_backdoor_code" ["l"="56.717,-10.482", "c"=24]
+"Shadow0ps/CVE-2021-21974" ["l"="-43.695,-29.367", "c"=3]
+"vdohney/keepass-password-dumper" ["l"="-47.14,-32.151", "c"=41]
+"user1342/Awesome-Android-Reverse-Engineering" ["l"="56.377,-10.927", "c"=24]
+"google/buzzer" ["l"="-41.32,-36.119", "c"=91]
 "nikita-yfh/OneShot-C" ["l"="-45.732,-34.146"]
-"4ra1n/java-gate" ["l"="-44.137,-29.35"]
+"4ra1n/java-gate" ["l"="-44.137,-29.35", "c"=3]
 "PaperStrike/safetynet-fix" ["l"="-45.858,-34.467"]
-"mistymntncop/CVE-2023-2033" ["l"="-46.07,-34.356"]
-"jakabakos/CVE-2023-36664-Ghostscript-command-injection" ["l"="-45.75,-34.254"]
+"Mr-xn/BLACKHAT_Asia2023" ["l"="-44.205,-29.379", "c"=3]
 "spookier/Maltrail-v0.53-Exploit" ["l"="-45.717,-34.258"]
 "entr0pie/CVE-2023-27163" ["l"="-45.698,-34.25"]
 "diego-tella/CVE-2023-1326-PoC" ["l"="-45.734,-34.267"]
@@ -573,47 +724,58 @@ digraph G {
 "mebeim/systrack" ["l"="-46.032,-34.248"]
 "bjrjk/CVE-2022-4262" ["l"="-46.113,-34.313"]
 "mistymntncop/CVE-2022-4262" ["l"="-46.072,-34.323"]
-"two-heart/v8-design-docs" ["l"="-46.124,-34.3"]
 "chaitin/Real-World-CTF-6th-Challenges" ["l"="-45.905,-34.363"]
 "mistymntncop/CVE-2023-3079" ["l"="-46.103,-34.329"]
 "buptsb/CVE-2023-4762" ["l"="-46.13,-34.341"]
 "mistymntncop/CVE-2024-5274" ["l"="-46.14,-34.317"]
 "c53elyas/CVE-2023-33733" ["l"="-45.773,-34.192"]
-"houjingyi233/awesome-fuzz" ["l"="-45.835,-34.408"]
 "nightuhu/RWCTF6th-RIPTC" ["l"="-45.866,-34.389"]
+"mindedsecurity/semgrep-rules-android-security" ["l"="-48.116,-29.612", "c"=11]
 "Acceis/exploit-CVE-2023-23752" ["l"="-45.737,-34.293"]
 "m3m0o/metabase-pre-auth-rce-poc" ["l"="-45.722,-34.28"]
 "arttnba3/Linux-kernel-exploitation" ["l"="-46.032,-34.273"]
 "zh-explorer/Project-Damocles" ["l"="-46.045,-34.177"]
 "zh-explorer/black_zone" ["l"="-46.029,-34.169"]
-"RickdeJager/CVE-2023-4911" ["l"="-45.872,-34.308"]
-"leesh3288/CVE-2023-4911" ["l"="-45.81,-34.301"]
+"amlweems/xzbot" ["l"="-45.515,-32.016", "c"=53]
+"Notselwyn/CVE-2024-1086" ["l"="-45.542,-32.001", "c"=53]
+"synacktiv/frinet" ["l"="55.789,-8.43", "c"=428]
+"YuriiCrimson/ExploitGSM" ["l"="-45.629,-32.039", "c"=53]
 "ysanatomic/io_uring_LPE-CVE-2024-0582" ["l"="-45.831,-34.368"]
-"wangtielei/POCs" ["l"="40.891,-22.627"]
-"bcoles/kasld" ["l"="-45.205,-34.825"]
+"leesh3288/CVE-2023-4911" ["l"="-45.81,-34.301"]
+"RickdeJager/CVE-2023-4911" ["l"="-45.872,-34.308"]
+"timwr/CVE-2016-5195" ["l"="-41.109,-36.2", "c"=91]
+"wangtielei/POCs" ["l"="40.891,-22.627", "c"=419]
 "marco-liberale/PasteBomb" ["l"="-46.343,-34.559"]
 "SaadAhla/dropper" ["l"="-46.307,-34.543"]
+"xaitax/CVE-2024-21413-Microsoft-Outlook-Remote-Code-Execution-Vulnerability" ["l"="-47.586,-32.334", "c"=41]
+"marcnewlin/hi_my_name_is_keyboard" ["l"="-44.973,-32.912", "c"=53]
 "rvizx/CVE-2023-26035" ["l"="-45.719,-34.298"]
+"gfelber/how2keap" ["l"="-45.178,-34.857", "c"=282]
 "nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection" ["l"="-45.693,-34.281"]
 "bi-zone/CVE-2024-7965" ["l"="-46.161,-34.293"]
 "tianstcht/CVE-2023-4427" ["l"="-46.147,-34.286"]
 "nccgroup/ghidra-nanomips" ["l"="-46.134,-34.39"]
 "rvizx/CVE-2023-30547" ["l"="-45.699,-34.307"]
+"aydinnyunus/gpt4-captcha-bypass" ["l"="-47.971,-29.415", "c"=11]
+"0x6rss/WhatsApp-extension-manipulation-PoC" ["l"="-46.151,-34.488"]
 "scs-labrat/android_autorooter" ["l"="-46.113,-34.471"]
 "0xbinder/deepxtract" ["l"="-46.092,-34.471"]
-"0x6rss/WhatsApp-extension-manipulation-PoC" ["l"="-46.151,-34.488"]
 "mrd0x/PWA-Phishing" ["l"="-46.265,-34.522"]
 "0x6rss/pdfdropper" ["l"="-46.205,-34.499"]
-"WKL-Sec/LayeredSyscall" ["l"="-47.671,-32.382"]
-"exd0tpy/CTF-browser-challenges" ["l"="-45.148,-34.829"]
-"gfelber/how2keap" ["l"="-45.178,-34.857"]
+"WKL-Sec/LayeredSyscall" ["l"="-47.671,-32.382", "c"=41]
+"zgzhang/cve-2024-6387-poc" ["l"="-47.952,-32.185", "c"=41]
+"ynwarcs/CVE-2024-38063" ["l"="-47.732,-32.286", "c"=41]
+"murat-exp/EDR-Antivirus-Bypass-to-Gain-Shell-Access" ["l"="-47.781,-32.356", "c"=41]
+"JohnHammond/recaptcha-phish" ["l"="-47.565,-32.444", "c"=41]
+"ambionics/cnext-exploits" ["l"="-42.84,-29.483", "c"=466]
+"canyie/MagiskEoP" ["l"="55.813,-8.319", "c"=428]
 "Yogehi/cve-2024-4406-xiaomi13pro-exploit-files" ["l"="-46.068,-34.477"]
 "0x6rss/telegram-video-extension-manipulation-PoC" ["l"="-46.168,-34.505"]
 "kaist-hacking/CVE-2023-6702" ["l"="-46.178,-34.321"]
 "0x6rss/matkap" ["l"="-46.178,-34.527"]
-"boku7/Loki" ["l"="-47.574,-32.418"]
-"Adaptix-Framework/AdaptixC2" ["l"="-47.643,-32.338"]
-"coffinxp/loxs" ["l"="-47.733,-29.715"]
-"montysecurity/C2-Tracker" ["l"="-42.084,-33.247"]
-"BushidoUK/Ransomware-Tool-Matrix" ["l"="-42.128,-33.209"]
+"boku7/Loki" ["l"="-47.574,-32.418", "c"=41]
+"Adaptix-Framework/AdaptixC2" ["l"="-47.643,-32.338", "c"=41]
+"coffinxp/loxs" ["l"="-47.733,-29.715", "c"=11]
+"montysecurity/C2-Tracker" ["l"="-42.084,-33.247", "c"=79]
+"BushidoUK/Ransomware-Tool-Matrix" ["l"="-42.128,-33.209", "c"=79]
 }

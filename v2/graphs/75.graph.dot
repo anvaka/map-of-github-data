@@ -1,4 +1,10 @@
 digraph G {
+"asciinema/asciinema-player" -> "bhauman/devcards" ["e"=1]
+"asciinema/asciinema-player" -> "anmonteiro/lumo" ["e"=1]
+"asciinema/asciinema-player" -> "tonsky/datascript" ["e"=1]
+"asciinema/asciinema-player" -> "flosell/lambdacd" ["e"=1]
+"asciinema/asciinema-player" -> "redplanetlabs/specter" ["e"=1]
+"asciinema/asciinema-player" -> "duct-framework/duct" ["e"=1]
 "clojure/core.async" -> "ring-clojure/ring"
 "clojure/core.async" -> "stuartsierra/component"
 "clojure/core.async" -> "weavejester/hiccup"
@@ -59,6 +65,8 @@ digraph G {
 "tonsky/datascript" -> "stuartsierra/component"
 "tonsky/datascript" -> "tolitius/mount"
 "tonsky/datascript" -> "clj-kondo/clj-kondo"
+"google/closure-compiler" -> "google/closure-library" ["e"=1]
+"google/closure-compiler" -> "clojure/clojurescript" ["e"=1]
 "dakrone/cheshire" -> "dakrone/clj-http"
 "dakrone/cheshire" -> "taoensso/timbre"
 "dakrone/cheshire" -> "weavejester/hiccup"
@@ -105,6 +113,7 @@ digraph G {
 "Olical/conjure" -> "guns/vim-sexp"
 "Olical/conjure" -> "eraserhd/parinfer-rust"
 "justinbarclay/parinfer-rust-mode" -> "eraserhd/parinfer-rust"
+"btford/write-good" -> "swannodette/logic-tutorial" ["e"=1]
 "functional-koans/clojure-koans" -> "technomancy/leiningen"
 "functional-koans/clojure-koans" -> "clojure-cookbook/clojure-cookbook"
 "functional-koans/clojure-koans" -> "bbatsov/clojure-style-guide"
@@ -136,6 +145,7 @@ digraph G {
 "clojure-cookbook/clojure-cookbook" -> "reagent-project/reagent"
 "clojure-cookbook/clojure-cookbook" -> "taoensso/sente"
 "ClojureBridge/curriculum" -> "reagent-project/reagent-template"
+"sarabander/sicp" -> "tallesl/Rich-Hickey-fanclub" ["e"=1]
 "clj-commons/seesaw" -> "cljfx/cljfx"
 "clj-commons/seesaw" -> "incanter/incanter"
 "clj-commons/seesaw" -> "quil/quil"
@@ -223,6 +233,7 @@ digraph G {
 "clojure/tools.cli" -> "clojure/test.check"
 "clojure/tools.cli" -> "clj-time/clj-time"
 "clojure/tools.cli" -> "jarohen/chime"
+"js-csp/js-csp" -> "swannodette/mori" ["e"=1]
 "omcljs/om" -> "bhauman/lein-figwheel"
 "omcljs/om" -> "reagent-project/reagent"
 "omcljs/om" -> "clojure/clojurescript"
@@ -238,9 +249,18 @@ digraph G {
 "omcljs/om" -> "anmonteiro/lumo"
 "omcljs/om" -> "drapanjanas/re-natal"
 "omcljs/om" -> "boot-clj/boot"
+"adamtornhill/code-maat" -> "redplanetlabs/specter" ["e"=1]
+"adamtornhill/code-maat" -> "noprompt/meander" ["e"=1]
+"adamtornhill/code-maat" -> "walmartlabs/lacinia" ["e"=1]
+"adamtornhill/code-maat" -> "duct-framework/duct" ["e"=1]
+"adamtornhill/code-maat" -> "tolitius/mount" ["e"=1]
+"adamtornhill/code-maat" -> "day8/re-frame" ["e"=1]
+"sudar/Yahoo_LDA" -> "nathanmarz/elephantdb" ["e"=1]
 "jonase/learndatalogtoday" -> "timothypratley/reanimated"
 "jonase/learndatalogtoday" -> "denistakeda/re-posh"
 "jonase/learndatalogtoday" -> "metasoarous/datsync"
+"tobgu/pyrsistent" -> "hylang/hy" ["e"=1]
+"tobgu/pyrsistent" -> "clj-python/libpython-clj" ["e"=1]
 "engineer-man/piston" -> "engineer-man/piston-bot"
 "engineer-man/piston" -> "judge0/judge0" ["e"=1]
 "engineer-man/piston" -> "engineer-man/emkc"
@@ -256,6 +276,7 @@ digraph G {
 "engineer-man/piston" -> "radian-software/riju"
 "engineer-man/piston" -> "Rapptz/discord-ext-menus" ["e"=1]
 "engineer-man/piston" -> "serenity-rs/serenity" ["e"=1]
+"thi-ng/umbrella" -> "thi-ng/geom" ["e"=1]
 "witheve/Eve" -> "unisonweb/unison" ["e"=1]
 "witheve/Eve" -> "railsware/upterm" ["e"=1]
 "witheve/Eve" -> "attic-labs/noms" ["e"=1]
@@ -271,6 +292,13 @@ digraph G {
 "witheve/Eve" -> "omcljs/om"
 "witheve/Eve" -> "enso-org/enso" ["e"=1]
 "witheve/Eve" -> "LightTable/LightTable" ["e"=1]
+"mrakgr/The-Spiral-Language" -> "LuxLang/lux" ["e"=1]
+"kanaka/mal" -> "hylang/hy" ["e"=1]
+"kanaka/mal" -> "day8/re-frame" ["e"=1]
+"kanaka/mal" -> "babashka/babashka" ["e"=1]
+"google/blockly" -> "google/closure-library" ["e"=1]
+"mtgred/netrunner" -> "funcool/cats" ["e"=1]
+"mtgred/netrunner" -> "tonsky/rum" ["e"=1]
 "google/closure-library" -> "google/closure-compiler" ["e"=1]
 "google/closure-library" -> "google/closure-templates" ["e"=1]
 "google/closure-library" -> "bhauman/lein-figwheel"
@@ -286,6 +314,9 @@ digraph G {
 "google/closure-library" -> "tonsky/datascript"
 "google/closure-library" -> "omcljs/om"
 "google/closure-library" -> "ring-clojure/ring"
+"Raynos/mercury" -> "omcljs/om" ["e"=1]
+"matyb/java-koans" -> "functional-koans/clojure-koans" ["e"=1]
+"manuelkiessling/nodebeginner.org" -> "swannodette/logic-tutorial" ["e"=1]
 "john-science/mazelib" -> "jostbr/pymaze"
 "john-science/mazelib" -> "john-science/python_for_scientists"
 "roman01la/uix" -> "nosco/hx"
@@ -318,6 +349,8 @@ digraph G {
 "onyx-platform/onyx" -> "uncomplicate/neanderthal"
 "onyx-platform/onyx" -> "weavejester/integrant"
 "onyx-platform/onyx" -> "duct-framework/duct"
+"terminusdb/terminusdb" -> "cozodb/cozo" ["e"=1]
+"terminusdb/terminusdb" -> "xtdb/xtdb" ["e"=1]
 "crista/exercises-in-programming-style" -> "kanaka/mal" ["e"=1]
 "crista/exercises-in-programming-style" -> "caiorss/Functional-Programming" ["e"=1]
 "crista/exercises-in-programming-style" -> "arogozhnikov/python3_with_pleasure" ["e"=1]
@@ -333,6 +366,12 @@ digraph G {
 "crista/exercises-in-programming-style" -> "marcosfede/algorithms" ["e"=1]
 "crista/exercises-in-programming-style" -> "anordal/shellharden" ["e"=1]
 "crista/exercises-in-programming-style" -> "norvig/paip-lisp" ["e"=1]
+"mongrel2/mongrel2" -> "noir-clojure/noir" ["e"=1]
+"nubank/fklearn" -> "nubank/basic-microservice-example" ["e"=1]
+"joaomilho/Enterprise" -> "taoensso/sente" ["e"=1]
+"liammclennan/JavaScript-Koans" -> "functional-koans/clojure-koans" ["e"=1]
+"tomhrr/dale" -> "LuxLang/lux" ["e"=1]
+"tomhrr/dale" -> "pixie-lang/pixie" ["e"=1]
 "razimantv/mazegenerator" -> "defndaines/meiro"
 "razimantv/mazegenerator" -> "robertfoss/audio_shop" ["e"=1]
 "razimantv/mazegenerator" -> "ferenc-nemeth/maze-generation-algorithms"
@@ -359,6 +398,7 @@ digraph G {
 "techascent/tech.ml.dataset" -> "oliyh/martian"
 "techascent/tech.ml.dataset" -> "uncomplicate/deep-diamond"
 "techascent/tech.ml.dataset" -> "weavejester/integrant"
+"bdargan/techradar" -> "flosell/lambdacd" ["e"=1]
 "alexkehayias/chocolatier" -> "oakes/play-cljs"
 "alexkehayias/chocolatier" -> "dparis/phzr"
 "alexkehayias/chocolatier" -> "bhauman/devcards"
@@ -427,6 +467,8 @@ digraph G {
 "cgrand/enlive" -> "clj-commons/seesaw"
 "cgrand/enlive" -> "http-kit/http-kit"
 "cgrand/enlive" -> "emezeske/lein-cljsbuild"
+"GravityLabs/goose" -> "nathanmarz/elephantdb" ["e"=1]
+"GravityLabs/goose" -> "nathanmarz/cascalog" ["e"=1]
 "scgilardi/slingshot" -> "hugoduncan/criterium"
 "scgilardi/slingshot" -> "metosin/spec-tools"
 "scgilardi/slingshot" -> "bhb/expound"
@@ -510,6 +552,10 @@ digraph G {
 "oakes/play-cljc" -> "techascent/tech.ml.dataset"
 "oakes/play-cljc" -> "juji-io/datalevin"
 "oakes/play-cljc" -> "seancorfield/next-jdbc"
+"comby-tools/comby" -> "noprompt/meander" ["e"=1]
+"feenkcom/gtoolkit" -> "nextjournal/clerk" ["e"=1]
+"factor/factor" -> "LuxLang/lux" ["e"=1]
+"marcoieni/intellimacs" -> "dvcrn/proton" ["e"=1]
 "BetterThanTomorrow/calva" -> "thheller/shadow-cljs"
 "BetterThanTomorrow/calva" -> "babashka/babashka"
 "BetterThanTomorrow/calva" -> "clj-kondo/clj-kondo"
@@ -545,6 +591,8 @@ digraph G {
 "metosin/compojure-api" -> "boot-clj/boot"
 "metosin/compojure-api" -> "redplanetlabs/specter"
 "metosin/compojure-api" -> "taoensso/sente"
+"cognitect/transit-js" -> "cognitect/transit-format" ["e"=1]
+"cognitect/transit-js" -> "cognitect/transit-clj" ["e"=1]
 "gnl/ghostwheel" -> "jeaye/orchestra"
 "gnl/ghostwheel" -> "bhb/expound"
 "gnl/ghostwheel" -> "metosin/spec-tools"
@@ -575,6 +623,7 @@ digraph G {
 "clj-kondo/clj-kondo" -> "seancorfield/honeysql"
 "clj-kondo/clj-kondo" -> "bhb/expound"
 "clj-kondo/clj-kondo" -> "flow-storm/flow-storm-debugger"
+"mmckegg/loop-drop-app" -> "ctford/klangmeister" ["e"=1]
 "yogthos/Selmer" -> "funcool/buddy"
 "yogthos/Selmer" -> "dakrone/cheshire"
 "yogthos/Selmer" -> "yogthos/migratus"
@@ -636,6 +685,7 @@ digraph G {
 "eraserhd/parinfer-rust" -> "retrogradeorbit/bootleg"
 "eraserhd/parinfer-rust" -> "aphyr/less-awful-ssl"
 "eraserhd/parinfer-rust" -> "tpope/vim-fireplace"
+"nikvdp/neomux" -> "norcalli/nvim-terminal.lua" ["e"=1]
 "kognise/repl.it-mobile" -> "fox-archives/tails"
 "kognise/repl.it-mobile" -> "replit-discord/carnival"
 "kognise/repl.it-mobile" -> "kognise/p2psc"
@@ -888,6 +938,7 @@ digraph G {
 "cljfx/cljfx" -> "seancorfield/next-jdbc"
 "cljfx/cljfx" -> "techascent/tech.ml.dataset"
 "cljfx/cljfx" -> "bhb/expound"
+"gojek/ziggurat" -> "nilenso/goose" ["e"=1]
 "levand/quiescent" -> "r0man/sablono"
 "levand/quiescent" -> "tonsky/datascript-chat"
 "levand/quiescent" -> "plumatic/dommy"
@@ -1009,6 +1060,8 @@ digraph G {
 "cljdoc/cljdoc" -> "kkinnear/zprint"
 "cljdoc/cljdoc" -> "weavejester/integrant"
 "cljdoc/cljdoc" -> "weavejester/codox"
+"jzachr/goldenorb" -> "nathanmarz/elephantdb" ["e"=1]
+"vmware-archive/differential-datalog" -> "replikativ/datahike" ["e"=1]
 "unclebob/spacewar" -> "unclebob/more-speech" ["e"=1]
 "unclebob/spacewar" -> "unclebob/mastermindclj"
 "unclebob/spacewar" -> "unclebob/clojureOrbit" ["e"=1]
@@ -1188,6 +1241,7 @@ digraph G {
 "oakes/play-clj" -> "drapanjanas/re-natal"
 "oakes/play-clj" -> "funcool/buddy"
 "oakes/play-clj" -> "quil/quil"
+"aergoio/litetree" -> "mozilla/mentat" ["e"=1]
 "incanter/incanter" -> "mikera/core.matrix"
 "incanter/incanter" -> "uncomplicate/neanderthal"
 "incanter/incanter" -> "marick/Midje"
@@ -1296,6 +1350,8 @@ digraph G {
 "bhauman/devcards" -> "cljsjs/packages"
 "bhauman/devcards" -> "reagent-project/reagent-cookbook"
 "bhauman/devcards" -> "boot-clj/boot"
+"google/closure-templates" -> "google/closure-library" ["e"=1]
+"ha/doozerd" -> "nathanmarz/elephantdb" ["e"=1]
 "nubank/state-flow" -> "nubank/matcher-combinators"
 "nubank/state-flow" -> "nubank/mockfn"
 "nubank/state-flow" -> "BrunoBonacci/safely"
@@ -1322,8 +1378,11 @@ digraph G {
 "borkdude/jet" -> "weavejester/integrant"
 "borkdude/jet" -> "flow-storm/flow-storm-debugger"
 "borkdude/jet" -> "juji-io/editscript"
+"indradb/indradb" -> "cozodb/cozo" ["e"=1]
 "nrepl/weasel" -> "nrepl/piggieback"
 "nrepl/weasel" -> "adzerk-oss/boot-cljs-repl"
+"wit-ai/wit" -> "facebookarchive/duckling_old" ["e"=1]
+"neo/ruby_koans" -> "functional-koans/clojure-koans" ["e"=1]
 "jarohen/chord" -> "taoensso/sente"
 "jarohen/chord" -> "metametadata/carry"
 "Yuppiechef/datomic-schema" -> "avescodes/conformity"
@@ -1516,6 +1575,7 @@ digraph G {
 "r0man/sablono" -> "taoensso/sente"
 "r0man/sablono" -> "RyanMcG/lein-npm"
 "r0man/sablono" -> "boot-clj/boot"
+"joyofclojure/book-source" -> "4clojure/4clojure" ["e"=1]
 "plumatic/om-tools" -> "omcljs/om-cookbook"
 "plumatic/om-tools" -> "plumatic/dommy"
 "replit/upm" -> "replit/polygott"
@@ -1530,8 +1590,10 @@ digraph G {
 "replit/upm" -> "fox-archives/tails"
 "replit/upm" -> "raxod502/upm"
 "replit/upm" -> "replit/play"
+"radicle-dev/radicle-alpha" -> "CoNarrative/precept" ["e"=1]
 "mikera/imagez" -> "mikera/core.matrix"
 "mikera/imagez" -> "jarohen/chime"
+"notomo/gesture.nvim" -> "norcalli/nvim-terminal.lua" ["e"=1]
 "clojure/algo.monads" -> "funcool/cats"
 "clojure/algo.monads" -> "khinsen/monads-in-clojure"
 "clojure/algo.monads" -> "clojure/tools.nrepl"
@@ -1567,6 +1629,7 @@ digraph G {
 "seancorfield/clj-new" -> "cognitect-labs/aws-api"
 "seancorfield/clj-new" -> "bhauman/rebel-readline"
 "seancorfield/clj-new" -> "phronmophobic/membrane"
+"eclipse-efx/efxclipse-drift" -> "jfree/skijagraphics2d" ["e"=1]
 "manuel-uberti/boodle" -> "yogthos/memory-hole"
 "manuel-uberti/boodle" -> "pesterhazy/cljs-spa-example"
 "jsa-aerial/hanami" -> "metasoarous/oz"
@@ -1605,6 +1668,7 @@ digraph G {
 "JonyEpsilon/gorilla-repl" -> "dakrone/clojure-opennlp"
 "JonyEpsilon/gorilla-repl" -> "clojure-emacs/sayid"
 "JonyEpsilon/gorilla-repl" -> "aysylu/loom"
+"mcfunley/pugsql" -> "layerware/hugsql" ["e"=1]
 "overtone/live-coding-emacs" -> "brentonashworth/one"
 "overtone/live-coding-emacs" -> "ibdknox/cljs-watch"
 "taylorwood/clj.native-image" -> "clj-easy/graalvm-clojure"
@@ -1630,10 +1694,12 @@ digraph G {
 "Workiva/eva" -> "wilkerlucio/pathom"
 "Workiva/eva" -> "denistakeda/re-posh"
 "Workiva/eva" -> "walkable-server/walkable"
+"comnik/declarative-dataflow" -> "hyperfiddle/hyperfiddle-2020" ["e"=1]
 "infinitelives/px3d" -> "illiichi/orenolisp"
 "infinitelives/px3d" -> "DougHamil/threeagent"
 "infinitelives/px3d" -> "oakes/play-cljc"
 "infinitelives/px3d" -> "Rovanion/webgl-clojurescript-tutorial"
+"hrldcpr/pcollections" -> "lacuna/bifurcan" ["e"=1]
 "slagyr/speclj" -> "marick/Midje"
 "slagyr/speclj" -> "brandonbloom/fipp"
 "eggsyntax/datawalk" -> "walmartlabs/system-viz"
@@ -1646,6 +1712,8 @@ digraph G {
 "eggsyntax/datawalk" -> "bhb/expound"
 "eggsyntax/datawalk" -> "arohner/spectrum"
 "plumatic/hiphip" -> "clj-commons/primitive-math"
+"sixthnormal/clj-3df" -> "CoNarrative/precept" ["e"=1]
+"sixthnormal/clj-3df" -> "wilkerlucio/pathom" ["e"=1]
 "clojure/test.check" -> "hugoduncan/criterium"
 "clojure/test.check" -> "stuartsierra/component"
 "clojure/test.check" -> "redplanetlabs/specter"
@@ -1818,6 +1886,7 @@ digraph G {
 "edn-query-language/eql" -> "metosin/muuntaja"
 "edn-query-language/eql" -> "jeaye/orchestra"
 "edn-query-language/eql" -> "noprompt/meander"
+"hodur-org/hodur-engine" -> "threatgrid/asami" ["e"=1]
 "tonsky/Clojure-Sublimed" -> "tonsky/uberdeps"
 "tonsky/Clojure-Sublimed" -> "HumbleUI/HumbleUI"
 "tonsky/Clojure-Sublimed" -> "eerohele/Tutkain"
@@ -1933,6 +2002,8 @@ digraph G {
 "applied-science/js-interop" -> "gnl/ghostwheel"
 "applied-science/js-interop" -> "binaryage/cljs-oops"
 "applied-science/js-interop" -> "roman01la/uix"
+"digego/extempore" -> "quil/quil" ["e"=1]
+"digego/extempore" -> "ctford/klangmeister" ["e"=1]
 "magnars/stasis" -> "magnars/optimus"
 "magnars/stasis" -> "retrogradeorbit/bootleg"
 "uncomplicate/bayadera" -> "uncomplicate/neanderthal"
@@ -1957,6 +2028,7 @@ digraph G {
 "cognitect-labs/REBL-distro" -> "clojure/spec-alpha2"
 "cognitect-labs/REBL-distro" -> "vlaaad/reveal"
 "mkremins/flense" -> "darwin/plastic"
+"imteekay/functional-programming-learning-path" -> "nubank/basic-microservice-example" ["e"=1]
 "shaunlebron/ClojureScript-Syntax-in-15-minutes" -> "shaunlebron/jumping-from-html-to-clojurescript"
 "shaunlebron/ClojureScript-Syntax-in-15-minutes" -> "reagent-project/reagent-cookbook"
 "shaunlebron/ClojureScript-Syntax-in-15-minutes" -> "reagent-project/reagent-template"
@@ -2031,6 +2103,7 @@ digraph G {
 "jasonjckn/llvm-clojure-bindings" -> "ibdknox/cljs-watch"
 "jasonjckn/llvm-clojure-bindings" -> "ibdknox/jayq"
 "jasonjckn/llvm-clojure-bindings" -> "stathissideris/clarity"
+"puniverse/comsat" -> "puniverse/pulsar" ["e"=1]
 "tpope/vim-sexp-mappings-for-regular-people" -> "guns/vim-sexp"
 "tpope/vim-sexp-mappings-for-regular-people" -> "tpope/vim-fireplace"
 "tpope/vim-sexp-mappings-for-regular-people" -> "tpope/vim-salve"
@@ -2233,6 +2306,7 @@ digraph G {
 "oakes/Dynadoc" -> "venantius/pyro"
 "oakes/Dynadoc" -> "metosin/spec-tools"
 "oakes/Dynadoc" -> "jeaye/orchestra"
+"john-science/scipy_con_2019" -> "john-science/python_for_scientists" ["e"=1]
 "keesiemeijer/maze-generator" -> "codebox/mazes"
 "keesiemeijer/maze-generator" -> "daleobrien/maze"
 "walkable-server/realworld-fulcro" -> "walkable-server/realworld"
@@ -2272,6 +2346,10 @@ digraph G {
 "fluree/flureedb" -> "fluree/fluree.cli"
 "joodie/pretzel" -> "technomancy/die-roboter"
 "replit-discord/carnival" -> "leon332157/json-store-client"
+"apache/age" -> "cozodb/cozo" ["e"=1]
+"nathanmarz/storm" -> "nathanmarz/cascalog" ["e"=1]
+"nathanmarz/storm" -> "noir-clojure/noir" ["e"=1]
+"nathanmarz/storm" -> "clojure/clojurescript" ["e"=1]
 "day8/re-frame" -> "reagent-project/reagent"
 "day8/re-frame" -> "tonsky/datascript"
 "day8/re-frame" -> "redplanetlabs/specter"
@@ -2302,6 +2380,13 @@ digraph G {
 "tonsky/rum" -> "drapanjanas/re-natal"
 "tonsky/rum" -> "anmonteiro/lumo"
 "tonsky/rum" -> "bhauman/lein-figwheel"
+"evhub/coconut" -> "hylang/hy" ["e"=1]
+"athensresearch/athens" -> "tonsky/datascript" ["e"=1]
+"athensresearch/athens" -> "babashka/babashka" ["e"=1]
+"athensresearch/athens" -> "replikativ/datahike" ["e"=1]
+"hellerve/programming-talks" -> "tallesl/Rich-Hickey-fanclub" ["e"=1]
+"JetBrains/skiko" -> "JetBrains/skija" ["e"=1]
+"joshiemoore/snakeware" -> "hylang/hy" ["e"=1]
 "babashka/babashka" -> "clj-kondo/clj-kondo"
 "babashka/babashka" -> "metosin/malli"
 "babashka/babashka" -> "thheller/shadow-cljs"
@@ -2362,6 +2447,9 @@ digraph G {
 "alda-lang/alda" -> "clojure/clojurescript"
 "alda-lang/alda" -> "reagent-project/reagent"
 "alda-lang/alda" -> "noteflakes/awesome-music" ["e"=1]
+"evancz/elm-architecture-tutorial" -> "omcljs/om" ["e"=1]
+"edwardtufte/tufte-css" -> "witheve/Eve" ["e"=1]
+"wit-ai/pywit" -> "facebookarchive/duckling_old" ["e"=1]
 "clojure/clojurescript" -> "clojure/clojure"
 "clojure/clojurescript" -> "reagent-project/reagent"
 "clojure/clojurescript" -> "day8/re-frame"
@@ -2394,6 +2482,11 @@ digraph G {
 "uncomplicate/neanderthal" -> "incanter/incanter"
 "uncomplicate/neanderthal" -> "onyx-platform/onyx"
 "uncomplicate/neanderthal" -> "weavejester/integrant"
+"antonioru/beautiful-react-diagrams" -> "JetBrains/skija" ["e"=1]
+"bbatsov/prelude" -> "clojure-emacs/cider" ["e"=1]
+"jonathanpatt/sicp-kindle" -> "noir-clojure/noir" ["e"=1]
+"jonathanpatt/sicp-kindle" -> "swannodette/match" ["e"=1]
+"jonathanpatt/sicp-kindle" -> "ibdknox/cljs-watch" ["e"=1]
 "razum2um/awesome-clojure" -> "bbatsov/clojure-style-guide"
 "razum2um/awesome-clojure" -> "hantuzun/awesome-clojurescript"
 "razum2um/awesome-clojure" -> "ring-clojure/ring"
@@ -2456,6 +2549,7 @@ digraph G {
 "hyperfiddle/electric" -> "metosin/reitit"
 "hyperfiddle/electric" -> "thheller/shadow-cljs"
 "hyperfiddle/electric" -> "babashka/sci"
+"liljencrantz/crush" -> "replit/clui" ["e"=1]
 "clojure/clojure-clr" -> "arcadia-unity/Arcadia"
 "clojure/clojure-clr" -> "nasser/magic"
 "clojure/clojure-clr" -> "thheller/shadow-cljs"
@@ -2471,12 +2565,16 @@ digraph G {
 "clojure/clojure-clr" -> "cljfx/cljfx"
 "clojure/clojure-clr" -> "clojure-rs/ClojureRS"
 "clojure/clojure-clr" -> "jank-lang/jank"
+"imba/imba" -> "witheve/Eve" ["e"=1]
+"sensu/sensu" -> "riemann/riemann" ["e"=1]
 "camsaul/methodical" -> "ribelo/doxa"
 "camsaul/methodical" -> "IGJoshua/farolero"
 "camsaul/methodical" -> "fmnoise/flow"
 "camsaul/methodical" -> "redplanetlabs/proxy-plus"
 "clojure/math.combinatorics" -> "mikera/core.matrix"
 "gigasquid/libpython-clj-examples" -> "alanmarazzi/panthera"
+"nathanmarz/storm-starter" -> "revelytix/carbonite" ["e"=1]
+"nathanmarz/storm-starter" -> "lynaghk/cljs-d3" ["e"=1]
 "weavejester/codox" -> "clj-commons/pomegranate"
 "weavejester/codox" -> "weavejester/eftest"
 "weavejester/codox" -> "funcool/buddy"
@@ -2507,6 +2605,7 @@ digraph G {
 "wilkerlucio/pathom3" -> "simongray/clojure-graph-resources"
 "wilkerlucio/pathom3" -> "flow-storm/flow-storm-debugger"
 "wilkerlucio/pathom3" -> "cjohansen/portfolio"
+"simplenlg/simplenlg" -> "facebookarchive/duckling_old" ["e"=1]
 "repldex/Repldex" -> "frissyn/Reflux"
 "repldex/Repldex" -> "Coding-Cactus/repltalk"
 "repldex/Repldex" -> "ReplCustoms/ReplCustoms"
@@ -2710,6 +2809,10 @@ digraph G {
 "JetBrains/skija" -> "controlsfx/controlsfx" ["e"=1]
 "JetBrains/skija" -> "cljfx/cljfx"
 "JetBrains/skija" -> "google/ksp" ["e"=1]
+"remoteinterview/compilebox" -> "budukhyash/remote-code-execution-engine" ["e"=1]
+"remoteinterview/compilebox" -> "engineer-man/piston" ["e"=1]
+"trogdoro/xiki" -> "dundalek/closh" ["e"=1]
+"baku89/glisp" -> "nextjournal/clerk" ["e"=1]
 "kibu-australia/pushy" -> "domkm/silk"
 "kibu-australia/pushy" -> "mpdairy/posh"
 "funcool/buddy-auth" -> "funcool/buddy"
@@ -2719,6 +2822,7 @@ digraph G {
 "funcool/buddy-auth" -> "tolitius/mount"
 "funcool/buddy-auth" -> "dm3/clojure.java-time"
 "funcool/buddy-auth" -> "binaryage/cljs-devtools"
+"JetBrains/projector-docker" -> "JetBrains/skija" ["e"=1]
 "clj-time/clj-time" -> "dakrone/cheshire"
 "clj-time/clj-time" -> "dm3/clojure.java-time"
 "clj-time/clj-time" -> "dakrone/clj-http"
@@ -2745,6 +2849,8 @@ digraph G {
 "scicloj/tablecloth" -> "uncomplicate/deep-diamond"
 "scicloj/tablecloth" -> "scicloj/noj"
 "clojurewerkz/elastisch" -> "mpenet/spandex"
+"hoophq/sequence" -> "cognitect-labs/aws-api" ["e"=1]
+"nathanmarz/storm-deploy" -> "nathanmarz/cascalog" ["e"=1]
 "babashka/sci" -> "metosin/malli"
 "babashka/sci" -> "clj-kondo/clj-kondo"
 "babashka/sci" -> "juji-io/datalevin"
@@ -2931,6 +3037,7 @@ digraph G {
 "strangeloop/2011-slides" -> "frenchy64/Logic-Starter"
 "strangeloop/2011-slides" -> "ibdknox/cljs-watch"
 "strangeloop/2011-slides" -> "lynaghk/cljs-d3"
+"kirill-grouchnikov/aurora" -> "HumbleUI/JWM" ["e"=1]
 "replit/replit-py" -> "Coding-Cactus/Cactus-Bot"
 "replit/replit-py" -> "replit/replit.github.io"
 "replit/replit-py" -> "repldex/Repldex"
@@ -2993,6 +3100,7 @@ digraph G {
 "danielsz/system" -> "martinklepsch/tenzing"
 "danielsz/system" -> "hashobject/perun"
 "danielsz/system" -> "taoensso/nippy"
+"jlongster/transducers.js" -> "swannodette/mori" ["e"=1]
 "clojure-emacs/squiggly-clojure" -> "clojure-emacs/refactor-nrepl"
 "cognitect/transit-format" -> "cognitect/transit-clj"
 "cognitect/transit-format" -> "taoensso/sente"
@@ -3009,6 +3117,8 @@ digraph G {
 "cognitect/transit-format" -> "clj-commons/manifold"
 "cognitect/transit-format" -> "cljdoc/cljdoc"
 "cognitect/transit-format" -> "bhauman/lein-figwheel"
+"IronScheme/IronScheme" -> "clojure/clojure-clr" ["e"=1]
+"kuzudb/kuzu" -> "cozodb/cozo" ["e"=1]
 "replit/crosis" -> "replit/protocol"
 "replit/crosis" -> "replit/polygott"
 "replit/crosis" -> "replit/prybar"
@@ -3022,6 +3132,7 @@ digraph G {
 "replit/clui" -> "replit/upm"
 "replit/clui" -> "liljencrantz/crush" ["e"=1]
 "replit/clui" -> "replit/crosis"
+"mattwparas/steel" -> "jank-lang/jank" ["e"=1]
 "korma/Korma" -> "dakrone/cheshire"
 "korma/Korma" -> "clojure/java.jdbc"
 "korma/Korma" -> "weavejester/compojure"
@@ -3037,6 +3148,7 @@ digraph G {
 "korma/Korma" -> "http-kit/http-kit"
 "korma/Korma" -> "clojure/core.match"
 "korma/Korma" -> "marick/Midje"
+"JetBrains/projector-server" -> "JetBrains/skija" ["e"=1]
 "reagent-project/reagent-cookbook" -> "day8/re-com"
 "reagent-project/reagent-cookbook" -> "reagent-project/reagent-forms"
 "reagent-project/reagent-cookbook" -> "reagent-project/reagent-template"
@@ -3106,6 +3218,9 @@ digraph G {
 "flow-storm/flow-storm-debugger" -> "lambdaisland/kaocha"
 "AppsFlyer/donkey" -> "ribelo/doxa"
 "AppsFlyer/donkey" -> "cnuernber/dtype-next"
+"runtimejs/runtime" -> "kanaka/miniMAL" ["e"=1]
+"joy-framework/joy" -> "coast-framework/coast" ["e"=1]
+"joy-framework/joy" -> "squint-cljs/cherry" ["e"=1]
 "domkm/silk" -> "kibu-australia/pushy"
 "domkm/silk" -> "domkm/omelette"
 "scicloj/notespace" -> "scicloj/tablecloth"
@@ -3209,6 +3324,7 @@ digraph G {
 "brentonashworth/one" -> "ibdknox/jayq"
 "clojure-clutch/clutch" -> "pallix/lacij"
 "clojure-clutch/clutch" -> "clutch-clojurescript"
+"ReactiveX/RxClojure" -> "weavejester/reagi" ["e"=1]
 "michaelklishin/monger" -> "funcool/buddy"
 "michaelklishin/monger" -> "dakrone/clj-http"
 "michaelklishin/monger" -> "clj-time/clj-time"
@@ -3240,6 +3356,7 @@ digraph G {
 "frenchy64/Logic-Starter" -> "swannodette/match"
 "frenchy64/Logic-Starter" -> "ibdknox/cljs-watch"
 "frenchy64/Logic-Starter" -> "pallix/lacij"
+"cognitect-labs/transducers-js" -> "swannodette/mori" ["e"=1]
 "mfikes/goby" -> "mfikes/ambly"
 "mfikes/goby" -> "mfikes/shrimp"
 "mfikes/goby" -> "galdolber/clojure-objc"
@@ -3259,6 +3376,8 @@ digraph G {
 "technomancy/swank-clojure" -> "brentonashworth/one"
 "technomancy/swank-clojure" -> "wagjo/borneo"
 "technomancy/swank-clojure" -> "ztellman/penumbra"
+"nubank/nuvigator" -> "nubank/state-flow" ["e"=1]
+"nubank/nuvigator" -> "nubank/matcher-combinators" ["e"=1]
 "cloudflare/Stout" -> "avescodes/conformity"
 "cloudflare/Stout" -> "rauhs/klang"
 "clojure-rs/ClojureRS" -> "clj-python/libpython-clj"
@@ -3276,6 +3395,7 @@ digraph G {
 "clojure-rs/ClojureRS" -> "coast-framework/coast"
 "clojure-rs/ClojureRS" -> "cljfx/cljfx"
 "clojure-rs/ClojureRS" -> "xtdb/xtdb"
+"halayli/lthread" -> "jasonjckn/llvm-clojure-bindings" ["e"=1]
 "weavejester/hashp" -> "vlaaad/reveal"
 "weavejester/hashp" -> "lambdaisland/regal"
 "weavejester/hashp" -> "djblue/portal"
@@ -3361,6 +3481,10 @@ digraph G {
 "aphyr/tesser" -> "datacrypt-project/hitchhiker-tree"
 "aphyr/tesser" -> "taoensso/nippy"
 "aphyr/tesser" -> "clojure/test.check"
+"kien/rainbow_parentheses.vim" -> "guns/vim-clojure-static" ["e"=1]
+"kien/rainbow_parentheses.vim" -> "tpope/vim-fireplace" ["e"=1]
+"kien/rainbow_parentheses.vim" -> "guns/vim-clojure-highlight" ["e"=1]
+"kien/rainbow_parentheses.vim" -> "tpope/vim-sexp-mappings-for-regular-people" ["e"=1]
 "clojure/core.match" -> "clojure/core.logic"
 "clojure/core.match" -> "marick/Midje"
 "clojure/core.match" -> "hugoduncan/criterium"
@@ -3404,6 +3528,7 @@ digraph G {
 "funcool/buddy-sign" -> "funcool/buddy-core"
 "funcool/buddy-sign" -> "funcool/buddy-hashers"
 "funcool/buddy-sign" -> "funcool/buddy-auth"
+"norcalli/snippets.nvim" -> "Olical/aniseed" ["e"=1]
 "gorillalabs/sparkling" -> "sorenmacbeth/flambo"
 "gorillalabs/sparkling" -> "uncomplicate/neanderthal"
 "gorillalabs/sparkling" -> "HCADatalab/powderkeg"
@@ -3515,6 +3640,7 @@ digraph G {
 "vlaaad/reveal" -> "vvvvalvalval/scope-capture"
 "vlaaad/reveal" -> "denistakeda/re-posh"
 "vlaaad/reveal" -> "clj-commons/etaoin"
+"bos/stanford-cs240h" -> "strangeloop/2011-slides" ["e"=1]
 "someteam/acha" -> "martinklepsch/tenzing"
 "someteam/acha" -> "CoNarrative/precept"
 "someteam/acha" -> "oakmac/cuttle"
@@ -3573,6 +3699,7 @@ digraph G {
 "ibdknox/pinot" -> "budu/lobos"
 "ibdknox/pinot" -> "fmw/vix"
 "ibdknox/pinot" -> "ztellman/lamina"
+"dundalek/awesome-lisp-languages" -> "LuxLang/lux" ["e"=1]
 "khinsen/monads-in-clojure" -> "clojure/algo.monads"
 "juxt/joplin" -> "juxt/mach"
 "juxt/joplin" -> "magnars/prone"
@@ -3744,6 +3871,7 @@ digraph G {
 "technomancy/leiningen" -> "pedestal/pedestal"
 "technomancy/leiningen" -> "boot-clj/boot"
 "technomancy/leiningen" -> "functional-koans/clojure-koans"
+"flix/flix" -> "LuxLang/lux" ["e"=1]
 "riemann/riemann" -> "clj-commons/aleph"
 "riemann/riemann" -> "onyx-platform/onyx"
 "riemann/riemann" -> "redplanetlabs/specter"
@@ -3805,6 +3933,8 @@ digraph G {
 "http-kit/http-kit" -> "weavejester/integrant"
 "http-kit/http-kit" -> "tolitius/mount"
 "http-kit/http-kit" -> "taoensso/carmine"
+"attic-labs/noms" -> "witheve/Eve" ["e"=1]
+"replit/kaboom" -> "replit/replit-py" ["e"=1]
 "hantuzun/awesome-clojurescript" -> "razum2um/awesome-clojure"
 "hantuzun/awesome-clojurescript" -> "reagent-project/reagent-cookbook"
 "hantuzun/awesome-clojurescript" -> "binaryage/cljs-devtools"
@@ -3835,6 +3965,7 @@ digraph G {
 "LuxLang/lux" -> "clojerl/clojerl"
 "LuxLang/lux" -> "nakkaya/ferret"
 "LuxLang/lux" -> "coalton-lang/coalton" ["e"=1]
+"ohmjs/ohm" -> "witheve/Eve" ["e"=1]
 "tonsky/font-writer" -> "tonsky/sublime-scheme-writer"
 "tonsky/font-writer" -> "tonsky/sublime-profiles"
 "tonsky/font-writer" -> "tonsky/sublime-scheme-alabaster"
@@ -3881,6 +4012,7 @@ digraph G {
 "clj-commons/kibit" -> "marick/Midje"
 "clj-commons/kibit" -> "binaryage/cljs-devtools"
 "clj-commons/kibit" -> "clojure-emacs/clj-refactor.el"
+"tjake/Solandra" -> "nathanmarz/cascalog" ["e"=1]
 "weavejester/hiccup" -> "weavejester/compojure"
 "weavejester/hiccup" -> "ring-clojure/ring"
 "weavejester/hiccup" -> "reagent-project/reagent"
@@ -3931,6 +4063,7 @@ digraph G {
 "emezeske/lein-cljsbuild" -> "nrepl/piggieback"
 "emezeske/lein-cljsbuild" -> "taoensso/sente"
 "emezeske/lein-cljsbuild" -> "noprompt/garden"
+"anko/eslisp" -> "nakkaya/ferret" ["e"=1]
 "cemerick/friend" -> "funcool/buddy"
 "cemerick/friend" -> "juxt/bidi"
 "cemerick/friend" -> "clojure-liberator/liberator"
@@ -3961,6 +4094,7 @@ digraph G {
 "clojerl/clojerl" -> "clj-kondo/clj-kondo"
 "clojerl/clojerl" -> "juji-io/datalevin"
 "clojerl/clojerl" -> "Tensegritics/ClojureDart"
+"losvedir/ephemeral2" -> "venantius/ultra" ["e"=1]
 "cognitect-labs/vase" -> "cognitect-labs/transcriptor"
 "cognitect-labs/vase" -> "walkable-server/walkable"
 "cognitect-labs/vase" -> "clojure-emacs/sayid"
@@ -4054,6 +4188,8 @@ digraph G {
 "IGJoshua/farolero" -> "lilactown/pyramid"
 "IGJoshua/farolero" -> "ribelo/doxa"
 "IGJoshua/farolero" -> "nextjournal/beholder"
+"collectd/collectd" -> "riemann/riemann" ["e"=1]
+"codenameone/CodenameOne" -> "JetBrains/skija" ["e"=1]
 "hashobject/perun" -> "datodev/dato"
 "hashobject/perun" -> "clj-commons/citrus"
 "hashobject/perun" -> "danielsz/system"
@@ -4081,6 +4217,8 @@ digraph G {
 "whamtet/simpleui" -> "juxt/site"
 "whamtet/simpleui" -> "babashka/scittle"
 "whamtet/simpleui" -> "kit-clj/kit"
+"EvgSkv/logica" -> "cozodb/cozo" ["e"=1]
+"EvgSkv/logica" -> "xtdb/xtdb" ["e"=1]
 "congomongo/congomongo" -> "ibdknox/lein-noir"
 "congomongo/congomongo" -> "ztellman/lamina"
 "congomongo/congomongo" -> "mmcgrana/ring"
@@ -4133,6 +4271,7 @@ digraph G {
 "fluree/db" -> "wilkerlucio/pathom3"
 "fluree/db" -> "fluree/fluree.cli"
 "fluree/db" -> "fluree/raft"
+"tsulej/GenerateMe" -> "Clojure2D/clojure2d" ["e"=1]
 "seancorfield/deps-new" -> "seancorfield/clj-new"
 "seancorfield/deps-new" -> "seancorfield/build-clj"
 "seancorfield/deps-new" -> "babashka/neil"
@@ -4149,6 +4288,8 @@ digraph G {
 "seancorfield/deps-new" -> "cnuernber/dtype-next"
 "xeqi/peridot" -> "xeqi/kerodon"
 "clojure/tools.build" -> "slipset/deps-deploy"
+"solidsnack/GraphpostgresQL" -> "aphyr/tesser" ["e"=1]
+"solidsnack/GraphpostgresQL" -> "mozilla/mentat" ["e"=1]
 "clj-commons/secretary" -> "JulianBirch/cljs-ajax"
 "clj-commons/secretary" -> "venantius/accountant"
 "clj-commons/secretary" -> "r0man/sablono"
@@ -4199,6 +4340,7 @@ digraph G {
 "ibdknox/jayq" -> "ibdknox/pinot"
 "ibdknox/jayq" -> "ibdknox/monet"
 "ibdknox/jayq" -> "clojure/test.generative"
+"dpapathanasiou/simple-graph" -> "cozodb/cozo" ["e"=1]
 "wotbrew/relic" -> "lilactown/pyramid"
 "wotbrew/relic" -> "leonoel/missionary"
 "wotbrew/relic" -> "ribelo/doxa"
@@ -4289,7 +4431,16 @@ digraph G {
 "bilus/reforms" -> "xeqi/kerodon"
 "ducky427/electron-template" -> "karad/lein_template_descjop"
 "tonsky/sublime-profiles" -> "tonsky/sublime-scheme-writer"
+"pkamenarsky/atea" -> "ibdknox/cljs-watch" ["e"=1]
+"pkamenarsky/atea" -> "noir-clojure/noir" ["e"=1]
+"pkamenarsky/atea" -> "jasonjckn/llvm-clojure-bindings" ["e"=1]
+"pkamenarsky/atea" -> "brentonashworth/one" ["e"=1]
+"pkamenarsky/atea" -> "ibdknox/brepl" ["e"=1]
+"pkamenarsky/atea" -> "relevance/clojure-conj" ["e"=1]
+"frissyn/valorant.py" -> "frissyn/Reflux" ["e"=1]
+"mntmn/interim" -> "pixie-lang/pixie" ["e"=1]
 "prestancedesign/babashka-htmx-todoapp" -> "whamtet/simpleui"
+"borkdude/grasp" -> "johnmn3/injest" ["e"=1]
 "funcool/clojurescript-unraveled" -> "binaryage/cljs-devtools"
 "funcool/clojurescript-unraveled" -> "martinklepsch/tenzing"
 "funcool/clojurescript-unraveled" -> "dmotz/natal"
@@ -4391,6 +4542,7 @@ digraph G {
 "kit-clj/kit" -> "BetterThanTomorrow/joyride"
 "kit-clj/kit" -> "juxt/tick"
 "whamtet/Excel-REPL" -> "xsc/claro"
+"camspiers/snap" -> "Olical/aniseed" ["e"=1]
 "mbuczko/awesome-clojure" -> "razum2um/awesome-clojure"
 "mbuczko/awesome-clojure" -> "hantuzun/awesome-clojurescript"
 "otto-de/edison-microservice" -> "otto-de-legacy/turing-microservice"
@@ -4504,6 +4656,9 @@ digraph G {
 "ReplDepot/replit-cli" -> "ReplAPI-it/ReplAPI.it-NodeJS"
 "ReplDepot/replit-cli" -> "turbio/emotes.vt"
 "Coding-Cactus/repltalk" -> "Coding-Cactus/Cactus-Bot"
+"glycerine/zygomys" -> "candid82/joker" ["e"=1]
+"glycerine/zygomys" -> "clojerl/clojerl" ["e"=1]
+"glycerine/zygomys" -> "pixie-lang/pixie" ["e"=1]
 "ring-clojure/ring" -> "weavejester/compojure"
 "ring-clojure/ring" -> "weavejester/hiccup"
 "ring-clojure/ring" -> "technomancy/leiningen"
@@ -4534,6 +4689,7 @@ digraph G {
 "tallesl/Rich-Hickey-fanclub" -> "clj-kondo/clj-kondo"
 "tallesl/Rich-Hickey-fanclub" -> "stuartsierra/component"
 "tallesl/Rich-Hickey-fanclub" -> "ring-clojure/ring"
+"solid/solid" -> "witheve/Eve" ["e"=1]
 "thheller/shadow-cljs" -> "clj-kondo/clj-kondo"
 "thheller/shadow-cljs" -> "metosin/reitit"
 "thheller/shadow-cljs" -> "reagent-project/reagent"
@@ -4549,6 +4705,14 @@ digraph G {
 "thheller/shadow-cljs" -> "tonsky/datascript"
 "thheller/shadow-cljs" -> "tonsky/rum"
 "thheller/shadow-cljs" -> "binaryage/cljs-devtools"
+"pyskell/slouchy" -> "cognitect/transit-format" ["e"=1]
+"nyoom-engineering/nyoom.nvim" -> "rktjmp/hotpot.nvim" ["e"=1]
+"nyoom-engineering/nyoom.nvim" -> "Olical/conjure" ["e"=1]
+"LightTable/LightTable" -> "technomancy/leiningen" ["e"=1]
+"LightTable/LightTable" -> "clojure/clojurescript" ["e"=1]
+"LightTable/LightTable" -> "clojure/clojure" ["e"=1]
+"LightTable/LightTable" -> "omcljs/om" ["e"=1]
+"unconed/mathbox" -> "mentat-collective/emmy" ["e"=1]
 "swannodette/mori" -> "omcljs/om"
 "swannodette/mori" -> "bhauman/lein-figwheel"
 "swannodette/mori" -> "cognitect-labs/transducers-js" ["e"=1]
@@ -4602,6 +4766,8 @@ digraph G {
 "tolitius/mount" -> "metosin/compojure-api"
 "tolitius/mount" -> "walmartlabs/lacinia"
 "tolitius/mount" -> "taoensso/sente"
+"lfe/lfe" -> "clojerl/clojerl" ["e"=1]
+"lfe/lfe" -> "pixie-lang/pixie" ["e"=1]
 "hugoduncan/criterium" -> "clj-commons/claypoole"
 "hugoduncan/criterium" -> "juxt/aero"
 "hugoduncan/criterium" -> "taoensso/timbre"
@@ -4632,6 +4798,11 @@ digraph G {
 "juxt/edge" -> "denistakeda/re-posh"
 "juxt/edge" -> "bhb/expound"
 "juxt/edge" -> "metasoarous/oz"
+"carp-lang/Carp" -> "LuxLang/lux" ["e"=1]
+"carp-lang/Carp" -> "jank-lang/jank" ["e"=1]
+"carp-lang/Carp" -> "babashka/babashka" ["e"=1]
+"carp-lang/Carp" -> "pixie-lang/pixie" ["e"=1]
+"carp-lang/Carp" -> "day8/re-frame" ["e"=1]
 "jasongilman/proto-repl" -> "oakmac/atom-parinfer"
 "jasongilman/proto-repl" -> "bhb/expound"
 "jasongilman/proto-repl" -> "binaryage/dirac"
@@ -4649,6 +4820,8 @@ digraph G {
 "jasongilman/proto-repl" -> "tonsky/rum"
 "bhurlow/vim-parinfer" -> "oakmac/parinfer-viml"
 "bhurlow/vim-parinfer" -> "kovisoft/paredit"
+"cdarwin/go-koans" -> "functional-koans/clojure-koans" ["e"=1]
+"sirixdb/sirix" -> "xtdb/xtdb" ["e"=1]
 "ctford/klangmeister" -> "ctford/leipzig"
 "ctford/klangmeister" -> "ctford/cljs-bach"
 "ctford/klangmeister" -> "thi-ng/geom"
@@ -4741,6 +4914,7 @@ digraph G {
 "clojure-emacs/sayid" -> "arohner/spectrum"
 "clojure-emacs/sayid" -> "philoskim/debux"
 "clojure-emacs/sayid" -> "clojure-goes-fast/clj-async-profiler"
+"usethesource/capsule" -> "lacuna/bifurcan" ["e"=1]
 "clojure-vim/clj-refactor.nvim" -> "clojure-vim/async-clj-omni"
 "gpanders/nvim-parinfer" -> "julienvincent/nvim-paredit"
 "gpanders/nvim-parinfer" -> "Olical/nfnl"
@@ -4782,6 +4956,7 @@ digraph G {
 "taoensso/nippy" -> "metosin/reitit"
 "dparis/phzr" -> "dparis/phzr-demo"
 "dparis/phzr" -> "alexkehayias/chocolatier"
+"circleci/circleci-docs" -> "CircleCI-Archived/frontend" ["e"=1]
 "dvcrn/proton" -> "dvcrn/sublimious"
 "dvcrn/proton" -> "Tehnix/spaceneovim" ["e"=1]
 "dvcrn/proton" -> "ctjhoa/spacevim" ["e"=1]
@@ -4913,6 +5088,7 @@ digraph G {
 "parinfer/parinfer.js" -> "tonsky/rum"
 "parinfer/parinfer.js" -> "bhb/expound"
 "parinfer/parinfer.js" -> "thheller/shadow-cljs"
+"cdglabs/apparatus" -> "witheve/Eve" ["e"=1]
 "cnuernber/charred" -> "cnuernber/ham-fisted"
 "cnuernber/charred" -> "clj-easy/graal-build-time"
 "swannodette/enlive-tutorial" -> "cgrand/enlive"
@@ -5066,6 +5242,11 @@ digraph G {
 "rafaeldelboni/cajus-nvim" -> "clojure-vim/vim-jack-in"
 "rafaeldelboni/cajus-nvim" -> "rafaeldelboni/cajus-nfnl"
 "rafaeldelboni/cajus-nvim" -> "liquidz/vim-iced"
+"overtone/emacs-live" -> "quil/quil" ["e"=1]
+"overtone/emacs-live" -> "clojure-emacs/clj-refactor.el" ["e"=1]
+"overtone/emacs-live" -> "clojure-emacs/cider" ["e"=1]
+"overtone/emacs-live" -> "clojure-emacs/clojure-mode" ["e"=1]
+"overtone/emacs-live" -> "flyingmachine/emacs-for-clojure" ["e"=1]
 "clojure-android/lein-droid" -> "clojure-android/neko"
 "clojure-android/lein-droid" -> "alexander-yakushev/events"
 "clojure-android/lein-droid" -> "alexander-yakushev/clojure"
@@ -5075,6 +5256,7 @@ digraph G {
 "shriphani/pegasus" -> "metasoarous/datsys"
 "shriphani/pegasus" -> "metasoarous/datsync"
 "shriphani/pegasus" -> "mischov/reaver"
+"oden-lang/oden" -> "LuxLang/lux" ["e"=1]
 "binaryage/chromex" -> "binaryage/dirac"
 "binaryage/chromex" -> "binaryage/chromex-sample"
 "binaryage/chromex" -> "binaryage/cljs-devtools"
@@ -5085,6 +5267,7 @@ digraph G {
 "jclouds/legacy-jclouds" -> "jclouds/legacy-jclouds-examples"
 "jclouds/legacy-jclouds" -> "pallet/pallet"
 "timothypratley/reanimated" -> "metasoarous/datsync"
+"DavidVujic/python-polylith" -> "polyfy/polylith" ["e"=1]
 "replikativ/replikativ" -> "replikativ/konserve"
 "replikativ/replikativ" -> "replikativ/kabel"
 "replikativ/replikativ" -> "aredington/schism"
@@ -5111,6 +5294,7 @@ digraph G {
 "relevance/labrepl" -> "levand/domina"
 "relevance/labrepl" -> "clj-commons/clooj"
 "relevance/labrepl" -> "mmcgrana/ring"
+"xixixao/Shem" -> "marick/structural-typing" ["e"=1]
 "oakmac/vscode-parinfer" -> "oakmac/atom-parinfer"
 "hoodunit/ReactNativeCljs" -> "mjmeintjes/cljs-react-native-tictactoe"
 "babashka/cli" -> "babashka/http-client"
@@ -5158,6 +5342,7 @@ digraph G {
 "cozodb/cozo" -> "GreptimeTeam/greptimedb" ["e"=1]
 "cozodb/cozo" -> "souffle-lang/souffle" ["e"=1]
 "cozodb/cozo" -> "tonsky/datascript"
+"Frege/frege" -> "LuxLang/lux" ["e"=1]
 "squint-cljs/squint" -> "squint-cljs/cherry"
 "squint-cljs/squint" -> "babashka/nbb"
 "squint-cljs/squint" -> "thheller/shadow-grove"
@@ -5173,6 +5358,11 @@ digraph G {
 "squint-cljs/squint" -> "hyperfiddle/electric"
 "squint-cljs/squint" -> "metosin/reitit"
 "squint-cljs/squint" -> "jank-lang/jank"
+"gregmalcolm/python_koans" -> "functional-koans/clojure-koans" ["e"=1]
+"status-im/status-mobile" -> "drapanjanas/re-natal" ["e"=1]
+"status-im/status-mobile" -> "day8/re-frame" ["e"=1]
+"status-im/status-mobile" -> "reagent-project/reagent" ["e"=1]
+"sweet-js/sweet-core" -> "swannodette/mori" ["e"=1]
 "squint-cljs/cherry" -> "squint-cljs/squint"
 "squint-cljs/cherry" -> "thheller/shadow-grove"
 "squint-cljs/cherry" -> "babashka/nbb"
@@ -5188,6 +5378,7 @@ digraph G {
 "squint-cljs/cherry" -> "gnarroway/hato"
 "squint-cljs/cherry" -> "metosin/jsonista"
 "squint-cljs/cherry" -> "Tensegritics/ClojureDart"
+"mixu/singlepageappbook" -> "swannodette/logic-tutorial" ["e"=1]
 "datacrypt-project/hitchhiker-tree" -> "replikativ/datahike"
 "datacrypt-project/hitchhiker-tree" -> "CoNarrative/precept"
 "datacrypt-project/hitchhiker-tree" -> "redplanetlabs/specter"
@@ -5203,6 +5394,7 @@ digraph G {
 "datacrypt-project/hitchhiker-tree" -> "clj-commons/manifold"
 "datacrypt-project/hitchhiker-tree" -> "weavejester/integrant"
 "datacrypt-project/hitchhiker-tree" -> "Engelberg/ubergraph"
+"wit-ai/node-wit" -> "facebookarchive/duckling_old" ["e"=1]
 "zmedelis/bosquet" -> "wkok/openai-clojure"
 "zmedelis/bosquet" -> "phronmophobic/llama.clj"
 "zmedelis/bosquet" -> "scicloj/tablecloth"
@@ -5260,6 +5452,7 @@ digraph G {
 "dakrone/clojure-opennlp" -> "taoensso/carmine"
 "dakrone/clojure-opennlp" -> "weavejester/cljfmt"
 "dakrone/clojure-opennlp" -> "clojure/tools.cli"
+"asg017/sqlite-vss" -> "cozodb/cozo" ["e"=1]
 "babashka/bbin" -> "epiccastle/bbssh"
 "clojure-liberator/liberator" -> "juxt/bidi"
 "clojure-liberator/liberator" -> "cemerick/friend"
@@ -5291,6 +5484,11 @@ digraph G {
 "yogthos/clojure-error-message-catalog" -> "alexanderkiel/phrase"
 "yogthos/clojure-error-message-catalog" -> "taoensso/tufte"
 "yogthos/clojure-error-message-catalog" -> "reifyhealth/specmonstah"
+"alpaca-lang/alpaca" -> "clojerl/clojerl" ["e"=1]
+"twitter-archive/gizzard" -> "nathanmarz/elephantdb" ["e"=1]
+"ninjudd/drip" -> "arohner/spectrum" ["e"=1]
+"ninjudd/drip" -> "clj-commons/virgil" ["e"=1]
+"RossMcMillan92/djent" -> "ctford/klangmeister" ["e"=1]
 "hypirion/inlein" -> "walmartlabs/active-status"
 "stathissideris/dali" -> "stathissideris/spec-provider"
 "stathissideris/dali" -> "walmartlabs/datascope"
@@ -5324,6 +5522,10 @@ digraph G {
 "mjul/docjure" -> "seancorfield/honeysql"
 "mjul/docjure" -> "techascent/tech.ml.dataset"
 "mjul/docjure" -> "metosin/malli"
+"webyrd/Barliman" -> "clojure/core.logic" ["e"=1]
+"dflemstr/rq" -> "mozilla/mentat" ["e"=1]
+"berkerpeksag/astor" -> "gilch/hissp" ["e"=1]
+"google/mangle" -> "cozodb/cozo" ["e"=1]
 "seancorfield/honeysql" -> "seancorfield/next-jdbc"
 "seancorfield/honeysql" -> "metosin/reitit"
 "seancorfield/honeysql" -> "weavejester/integrant"
@@ -5351,7 +5553,10 @@ digraph G {
 "thheller/shadow-grove" -> "thheller/shadow-css"
 "thheller/shadow-grove" -> "hyperfiddle/rcf"
 "thheller/shadow-grove" -> "lilactown/pyramid"
+"mozilla/fathom" -> "mozilla/mentat" ["e"=1]
+"russel/groovy" -> "richhickey/clojure" ["e"=1]
 "clojurians-org/clojure-ebook" -> "clojurians-org/storm-ebook"
+"CoreyMSchafer/dotfiles" -> "engineer-man/youtube" ["e"=1]
 "edn-format/edn" -> "weavejester/hiccup"
 "edn-format/edn" -> "ring-clojure/ring"
 "edn-format/edn" -> "plumatic/schema"
@@ -5367,9 +5572,12 @@ digraph G {
 "edn-format/edn" -> "reagent-project/reagent"
 "edn-format/edn" -> "bbatsov/clojure-style-guide"
 "edn-format/edn" -> "taoensso/sente"
+"twitter/elephant-bird" -> "nathanmarz/elephantdb" ["e"=1]
+"twitter/elephant-bird" -> "nathanmarz/cascalog" ["e"=1]
 "thheller/shadow-css" -> "ferdinand-beyer/refx"
 "metasoarous/datsys" -> "metasoarous/datsync"
 "metasoarous/datsys" -> "mpdairy/posh"
+"felix-lang/felix" -> "LuxLang/lux" ["e"=1]
 "adambard/failjure" -> "metosin/spec-tools"
 "adambard/failjure" -> "fmnoise/flow"
 "adambard/failjure" -> "bhb/expound"
@@ -5408,6 +5616,8 @@ digraph G {
 "ferdinand-beyer/refx" -> "pitch-io/uix"
 "walmartlabs/active-status" -> "hypirion/inlein"
 "walmartlabs/active-status" -> "walmartlabs/datascope"
+"mesos/spark" -> "nathanmarz/elephantdb" ["e"=1]
+"mesos/spark" -> "pallet/pallet" ["e"=1]
 "sbelak/huri" -> "sorenmacbeth/vizard"
 "sbelak/huri" -> "MastodonC/kixi.stats"
 "sbelak/huri" -> "metasoarous/semantic-csv"
@@ -5448,6 +5658,7 @@ digraph G {
 "nubank/clojure-style-guide" -> "nubank/matcher-combinators"
 "nubank/clojure-style-guide" -> "nubank/mockfn"
 "nubank/clojure-style-guide" -> "clj-holmes/clj-holmes"
+"ctjhoa/spacevim" -> "dvcrn/proton" ["e"=1]
 "untangled-web/untangled-spec" -> "untangled-web/untangled-server"
 "untangled-web/untangled-spec" -> "untangled-web/untangled-template"
 "untangled-web/untangled-spec" -> "untangled-web/untangled-client"
@@ -5522,6 +5733,7 @@ digraph G {
 "Otann/morse" -> "wdhowe/telegrambot-lib"
 "Otann/morse" -> "suvash/one-time"
 "Otann/morse" -> "tolitius/cprop"
+"kristianmandrup/datascript-tutorial" -> "metasoarous/datsync" ["e"=1]
 "cjohansen/portfolio" -> "cjohansen/replicant"
 "cjohansen/portfolio" -> "cjohansen/dumdom"
 "cjohansen/portfolio" -> "taoensso/telemere"
@@ -5570,6 +5782,8 @@ digraph G {
 "lacuna/bifurcan" -> "juxt/aero"
 "lacuna/bifurcan" -> "juxt/bidi"
 "lacuna/bifurcan" -> "uncomplicate/neanderthal"
+"racket/racket" -> "clojure/clojure" ["e"=1]
+"racket/racket" -> "hylang/hy" ["e"=1]
 "marick/Midje" -> "stuartsierra/component"
 "marick/Midje" -> "taoensso/timbre"
 "marick/Midje" -> "dakrone/cheshire"
@@ -5585,6 +5799,7 @@ digraph G {
 "marick/Midje" -> "clojure/test.check"
 "marick/Midje" -> "redplanetlabs/specter"
 "marick/Midje" -> "jonase/eastwood"
+"corpnewt/CorpBot.py" -> "engineer-man/felix" ["e"=1]
 "stathissideris/spec-provider" -> "metosin/spec-tools"
 "stathissideris/spec-provider" -> "bhb/expound"
 "stathissideris/spec-provider" -> "gnl/ghostwheel"
@@ -5660,6 +5875,7 @@ digraph G {
 "mozilla/mentat" -> "juxt/bidi"
 "mozilla/mentat" -> "tolitius/mount"
 "mozilla/mentat" -> "rosejn/cortex"
+"likec4/likec4" -> "soulspace-org/overarch" ["e"=1]
 "tonsky/tongue" -> "taoensso/tempura"
 "tonsky/tongue" -> "bhb/expound"
 "tonsky/tongue" -> "clj-commons/citrus"
@@ -5667,6 +5883,7 @@ digraph G {
 "day8/re-frame-http-fx" -> "day8/re-frame-async-flow-fx"
 "day8/re-frame-http-fx" -> "JulianBirch/cljs-ajax"
 "day8/re-frame-http-fx" -> "day8/re-frame-10x"
+"openkm/document-management-system" -> "bevuta/pepa" ["e"=1]
 "flexsurfer/re-frisk" -> "day8/re-frame-10x"
 "flexsurfer/re-frisk" -> "binaryage/dirac"
 "flexsurfer/re-frisk" -> "day8/re-com"
@@ -5698,6 +5915,8 @@ digraph G {
 "kkinnear/zprint" -> "cgrand/xforms"
 "kkinnear/zprint" -> "Olical/depot"
 "raystubbs/zero" -> "raystubbs/subzero"
+"google/closure-compiler-js" -> "anmonteiro/lumo" ["e"=1]
+"google/closure-compiler-js" -> "cljsjs/packages" ["e"=1]
 "anmonteiro/lumo" -> "planck-repl/planck"
 "anmonteiro/lumo" -> "thheller/shadow-cljs"
 "anmonteiro/lumo" -> "redplanetlabs/specter"
@@ -5721,6 +5940,17 @@ digraph G {
 "oakes/play-cljs" -> "jarohen/chord"
 "oakes/play-cljs" -> "oakes/Nightmod"
 "oakes/play-cljs" -> "oakes/play-cljc"
+"erikbern/git-of-theseus" -> "lacuna/bifurcan" ["e"=1]
+"erikbern/git-of-theseus" -> "walmartlabs/lacinia" ["e"=1]
+"lenazun/working-remotely" -> "funcool/clojurescript-unraveled" ["e"=1]
+"raganwald-deprecated/homoiconic" -> "pallet/pallet" ["e"=1]
+"bakpakin/Fennel" -> "Olical/conjure" ["e"=1]
+"bakpakin/Fennel" -> "Olical/aniseed" ["e"=1]
+"bakpakin/Fennel" -> "jank-lang/jank" ["e"=1]
+"bakpakin/Fennel" -> "babashka/babashka" ["e"=1]
+"bakpakin/Fennel" -> "Olical/nfnl" ["e"=1]
+"bakpakin/Fennel" -> "hylang/hy" ["e"=1]
+"bakpakin/Fennel" -> "clojerl/clojerl" ["e"=1]
 "avescodes/conformity" -> "Yuppiechef/datomic-schema"
 "Datomic/simulant" -> "MichaelDrogalis/dire"
 "ctford/leipzig" -> "ctford/klangmeister"
@@ -5731,6 +5961,8 @@ digraph G {
 "ctford/leipzig" -> "richhickey/harmonikit"
 "ctford/leipzig" -> "pjagielski/disclojure-ui"
 "ctford/leipzig" -> "ctford/cljs-bach"
+"mozilla-services/heka" -> "riemann/riemann" ["e"=1]
+"Tehnix/spaceneovim" -> "dvcrn/proton" ["e"=1]
 "sunng87/diehard" -> "gnarroway/hato"
 "soulspace-org/overarch" -> "borkdude/quickblog"
 "seantempesta/expo-cljs-template" -> "drapanjanas/re-natal"
@@ -5926,6 +6158,8 @@ digraph G {
 "taoensso/telemere" -> "tonsky/fast-edn"
 "taoensso/telemere" -> "tonsky/clj-reload"
 "taoensso/telemere" -> "flow-storm/flow-storm-debugger"
+"DogLooksGood/parinfer-mode" -> "justinbarclay/parinfer-rust-mode" ["e"=1]
+"DogLooksGood/parinfer-mode" -> "parinfer/parinfer.js" ["e"=1]
 "clojure-vim/acid.nvim" -> "clojure-vim/async-clj-omni"
 "clojure-vim/acid.nvim" -> "clojure-vim/neovim-client"
 "clojure-vim/acid.nvim" -> "clojure-vim/clj-refactor.nvim"
@@ -5943,6 +6177,7 @@ digraph G {
 "borkdude/clj2el" -> "jackrusher/scimacs"
 "ninjudd/cake" -> "cake"
 "ninjudd/cake" -> "macourtney/Conjure"
+"dgutov/robe" -> "clojure-emacs/clj-refactor.el" ["e"=1]
 "jackrusher/scimacs" -> "borkdude/clj2el"
 "PaterJason/nvim-treesitter-sexp" -> "clojure-vim/clojure.vim"
 "dundalek/parpar.nvim" -> "PawelStroinski/dockerfile-stevia"
@@ -5959,6 +6194,7 @@ digraph G {
 "Goval-Community/homeval" -> "turbio/emotes.vt"
 "parenthesin/components" -> "parenthesin/microservice-boilerplate-malli"
 "jochu/clojure-mode" -> "jochu/swank-clojure"
+"enso-org/enso" -> "witheve/Eve" ["e"=1]
 "bbatsov/clojure-style-guide" -> "ring-clojure/ring"
 "bbatsov/clojure-style-guide" -> "razum2um/awesome-clojure"
 "bbatsov/clojure-style-guide" -> "stuartsierra/component"
@@ -5974,6 +6210,7 @@ digraph G {
 "bbatsov/clojure-style-guide" -> "clj-commons/kibit"
 "bbatsov/clojure-style-guide" -> "babashka/babashka"
 "bbatsov/clojure-style-guide" -> "seancorfield/honeysql"
+"kachayev/fn.py" -> "hylang/hy" ["e"=1]
 "hylang/hy" -> "carp-lang/Carp" ["e"=1]
 "hylang/hy" -> "pixie-lang/pixie"
 "hylang/hy" -> "evhub/coconut" ["e"=1]
@@ -5989,6 +6226,8 @@ digraph G {
 "hylang/hy" -> "froggey/Mezzano" ["e"=1]
 "hylang/hy" -> "reagent-project/reagent"
 "hylang/hy" -> "kanaka/mal" ["e"=1]
+"ieure/sicp" -> "4clojure/4clojure" ["e"=1]
+"sfermigier/awesome-functional-python" -> "hylang/hy" ["e"=1]
 "clj-commons/etaoin" -> "bhb/expound"
 "clj-commons/etaoin" -> "metosin/spec-tools"
 "clj-commons/etaoin" -> "djblue/portal"
@@ -6034,6 +6273,7 @@ digraph G {
 "clojure/clojure" -> "bhauman/lein-figwheel"
 "clojure/clojure" -> "razum2um/awesome-clojure"
 "clojure/clojure" -> "redplanetlabs/specter"
+"lexi-lambda/hackett" -> "LuxLang/lux" ["e"=1]
 "zk/clojuredocs" -> "seancorfield/honeysql"
 "zk/clojuredocs" -> "ring-clojure/ring"
 "zk/clojuredocs" -> "bbatsov/clojure-style-guide"
@@ -6078,6 +6318,10 @@ digraph G {
 "reifyhealth/specmonstah" -> "wilkerlucio/spec-coerce"
 "reifyhealth/specmonstah" -> "day8/re-frame-10x"
 "clojureman/special" -> "IGJoshua/farolero"
+"oreillymedia/open_government" -> "swannodette/logic-tutorial" ["e"=1]
+"technomancy/emacs-starter-kit" -> "clojure-emacs/cider" ["e"=1]
+"pjagielski/awesome-live-coding-music" -> "pjagielski/disclojure" ["e"=1]
+"void-rs/void" -> "matthiasn/lotti" ["e"=1]
 "juxt/tick" -> "juxt/aero"
 "juxt/tick" -> "bhb/expound"
 "juxt/tick" -> "oliyh/martian"
@@ -6127,6 +6371,10 @@ digraph G {
 "mhuebert/maria" -> "eginez/calvin"
 "mhuebert/maria" -> "hashobject/perun"
 "mhuebert/maria" -> "alexanderkiel/phrase"
+"logpy/logpy" -> "clojure/core.logic" ["e"=1]
+"vlime/vlime" -> "kovisoft/slimv" ["e"=1]
+"vlime/vlime" -> "kovisoft/paredit" ["e"=1]
+"vlime/vlime" -> "bhurlow/vim-parinfer" ["e"=1]
 "day8/re-frame-10x" -> "flexsurfer/re-frisk"
 "day8/re-frame-10x" -> "bhb/expound"
 "day8/re-frame-10x" -> "denistakeda/re-posh"
@@ -6196,6 +6444,7 @@ digraph G {
 "plumatic/plumbing" -> "cloojure/tupelo"
 "plumatic/plumbing" -> "oracle-samples/clara-rules"
 "plumatic/plumbing" -> "clj-time/clj-time"
+"nvim-neorocks/lux" -> "Olical/nfnl" ["e"=1]
 "luminus-framework/luminus" -> "luminus-framework/luminus-template"
 "luminus-framework/luminus" -> "yogthos/migratus"
 "luminus-framework/luminus" -> "juxt/bidi"
@@ -6252,6 +6501,8 @@ digraph G {
 "clojure/core.typed" -> "weavejester/environ"
 "clojure/core.typed" -> "seancorfield/honeysql"
 "clojure/core.typed" -> "arohner/spectrum"
+"nasa/Common-Metadata-Repository" -> "clojure-emacs/sayid" ["e"=1]
+"nasa/Common-Metadata-Repository" -> "jeaye/orchestra" ["e"=1]
 "clojure-emacs/clj-refactor.el" -> "clojure-emacs/refactor-nrepl"
 "clojure-emacs/clj-refactor.el" -> "clojure-emacs/clojure-mode"
 "clojure-emacs/clj-refactor.el" -> "clojure-emacs/cider-nrepl"
@@ -6267,6 +6518,7 @@ digraph G {
 "clojure-emacs/clj-refactor.el" -> "JulianBirch/cljs-ajax"
 "clojure-emacs/clj-refactor.el" -> "weavejester/integrant"
 "clojure-emacs/clj-refactor.el" -> "magnars/prone"
+"Mercury-Language/mercury" -> "LuxLang/lux" ["e"=1]
 "uncomplicate/clojurecuda" -> "uncomplicate/clojurecl"
 "eponai/sulolive" -> "ioRekz/spectator"
 "eponai/sulolive" -> "seantempesta/expo-cljs-template"
@@ -6352,6 +6604,20 @@ digraph G {
 "alumbra/alumbra" -> "xsc/claro"
 "alumbra/alumbra" -> "tendant/graphql-clj"
 "jebberjeb/clojure-socketrepl.nvim" -> "clojure-vim/neovim-client"
+"judge0/judge0" -> "engineer-man/piston" ["e"=1]
+"PumpkinDB/PumpkinDB" -> "mozilla/mentat" ["e"=1]
+"arkhipov/temporal_tables" -> "metosin/spec-tools" ["e"=1]
+"janet-lang/janet" -> "jank-lang/jank" ["e"=1]
+"janet-lang/janet" -> "babashka/babashka" ["e"=1]
+"janet-lang/janet" -> "candid82/joker" ["e"=1]
+"janet-lang/janet" -> "LuxLang/lux" ["e"=1]
+"janet-lang/janet" -> "clojerl/clojerl" ["e"=1]
+"janet-lang/janet" -> "Olical/conjure" ["e"=1]
+"janet-lang/janet" -> "nakkaya/ferret" ["e"=1]
+"overtone/overtone" -> "quil/quil" ["e"=1]
+"overtone/overtone" -> "technomancy/leiningen" ["e"=1]
+"overtone/overtone" -> "reagent-project/reagent" ["e"=1]
+"overtone/overtone" -> "day8/re-frame" ["e"=1]
 "Olical/dotfiles" -> "Olical/aniseed"
 "Olical/dotfiles" -> "Olical/nfnl"
 "Olical/dotfiles" -> "Olical/conjure"
@@ -6432,9 +6698,12 @@ digraph G {
 "aysylu/loom" -> "cgrand/xforms"
 "aysylu/loom" -> "Engelberg/instaparse"
 "aysylu/loom" -> "oracle-samples/clara-rules"
+"inconvergent/snek" -> "Clojure2D/clojure2d" ["e"=1]
 "mpenet/alia" -> "mpenet/hayt"
 "mpenet/alia" -> "clojurewerkz/cassaforte"
 "mpenet/alia" -> "thebusby/iota"
+"facebook/duckling" -> "facebookarchive/duckling_old" ["e"=1]
+"unclebob/fitnesse" -> "unclebob/spacewar" ["e"=1]
 "stuarthalloway/programming-clojure" -> "clojurebook/ClojureProgramming"
 "stuarthalloway/programming-clojure" -> "relevance/labrepl"
 "stuarthalloway/programming-clojure" -> "richhickey/clojure-contrib"
@@ -6455,6 +6724,7 @@ digraph G {
 "mikepound/mazesolving" -> "xoreaxeaxeax/sandsifter" ["e"=1]
 "mikepound/mazesolving" -> "PlummersSoftwareLLC/Primes" ["e"=1]
 "mikepound/mazesolving" -> "CodingTrain/website-archive" ["e"=1]
+"IronLanguages/main" -> "clojure/clojure-clr" ["e"=1]
 "pedestal/pedestal" -> "stuartsierra/component"
 "pedestal/pedestal" -> "walmartlabs/lacinia"
 "pedestal/pedestal" -> "ring-clojure/ring"
@@ -6569,6 +6839,7 @@ digraph G {
 "tonsky/fast-edn" -> "onionpancakes/chassis"
 "tonsky/fast-edn" -> "tonsky/clojure-plus"
 "joshuaeckroth/clj-ml" -> "jimpil/enclog"
+"edumentab/cqrs-starter-kit" -> "johanneswseitz/event-sourcing-in-practice" ["e"=1]
 "noprompt/garden" -> "tonsky/rum"
 "noprompt/garden" -> "weavejester/hiccup"
 "noprompt/garden" -> "juxt/bidi"
@@ -6599,6 +6870,8 @@ digraph G {
 "metosin/reitit" -> "bhb/expound"
 "metosin/reitit" -> "ring-clojure/ring"
 "metosin/reitit" -> "tolitius/mount"
+"jepsen-io/jepsen" -> "riemann/riemann" ["e"=1]
+"lihaoyi/macropy" -> "hylang/hy" ["e"=1]
 "jarohen/chime" -> "juxt/tick"
 "jarohen/chime" -> "juxt/aero"
 "jarohen/chime" -> "weavejester/integrant"
@@ -6608,6 +6881,7 @@ digraph G {
 "jarohen/chime" -> "tolitius/mount"
 "jarohen/chime" -> "kkinnear/zprint"
 "jarohen/chime" -> "seancorfield/next-jdbc"
+"VSpaceCode/VSpaceCode" -> "dvcrn/proton" ["e"=1]
 "matthiasn/BirdWatch" -> "matthiasn/systems-toolbox"
 "matthiasn/BirdWatch" -> "matthiasn/Clojure-Resources"
 "matthiasn/BirdWatch" -> "bilus/reforms"
@@ -6645,6 +6919,9 @@ digraph G {
 "engineer-man/youtube" -> "angelsix/youtube" ["e"=1]
 "engineer-man/youtube" -> "kkdai/youtube" ["e"=1]
 "engineer-man/youtube" -> "LukeSmithxyz/voidrice" ["e"=1]
+"shaunlebron/history-of-lisp-parens" -> "volrath/spiral" ["e"=1]
+"shaunlebron/history-of-lisp-parens" -> "Olical/depot" ["e"=1]
+"shaunlebron/history-of-lisp-parens" -> "marick/structural-typing" ["e"=1]
 "bhb/expound" -> "jeaye/orchestra"
 "bhb/expound" -> "metosin/spec-tools"
 "bhb/expound" -> "gnl/ghostwheel"
@@ -6691,6 +6968,7 @@ digraph G {
 "puniverse/pulsar" -> "metosin/ring-swagger"
 "puniverse/pulsar" -> "oracle-samples/clara-rules"
 "puniverse/pulsar" -> "plumatic/schema"
+"overtone/shadertone" -> "quil/quil" ["e"=1]
 "hylang/hy-mode" -> "ekaschalk/jedhy"
 "hylang/hy-mode" -> "brantou/ob-hy"
 "hylang/hy-mode" -> "allison-casey/HyREPL"
@@ -6698,6 +6976,7 @@ digraph G {
 "clojurians-org/clojure-ebook-2" -> "clojurians-org/clojure-ebook"
 "clojurians-org/clojure-ebook-2" -> "dittoyi/clojure-ebook"
 "clojurians-org/clojure-ebook-2" -> "clojure-cookbook/clojure-cookbook"
+"LambdaHack/LambdaHack" -> "facundoolano/advenjure" ["e"=1]
 "stuartsierra/dependency" -> "cognitect-labs/anomalies"
 "ztellman/rhizome" -> "daveray/dorothy"
 "JulianBirch/cljs-ajax" -> "clj-commons/secretary"
@@ -6762,6 +7041,7 @@ digraph G {
 "wilkerlucio/pathom" -> "juji-io/datalevin"
 "wilkerlucio/pathom" -> "vlaaad/reveal"
 "wilkerlucio/pathom" -> "metosin/malli"
+"bitly/data_hacks" -> "Factual/drake" ["e"=1]
 "kovisoft/slimv" -> "vlime/vlime" ["e"=1]
 "kovisoft/slimv" -> "kovisoft/paredit"
 "kovisoft/slimv" -> "guns/vim-sexp"
@@ -6827,6 +7107,13 @@ digraph G {
 "felixb/swamp" -> "felixb/cpfw-login"
 "felixb/swamp" -> "fhopeman/aws-codelab"
 "unravel-team/effective-agents-clj" -> "kapilreddy/instructor-clj"
+"asciinema/asciinema-player" ["l"="4.156,15.114", "c"=44]
+"bhauman/devcards" ["l"="-23.714,-20.307"]
+"anmonteiro/lumo" ["l"="-23.779,-20.346"]
+"tonsky/datascript" ["l"="-23.834,-20.437"]
+"flosell/lambdacd" ["l"="-23.861,-20.189"]
+"redplanetlabs/specter" ["l"="-23.796,-20.358"]
+"duct-framework/duct" ["l"="-23.806,-20.327"]
 "clojure/core.async" ["l"="-23.779,-20.429"]
 "ring-clojure/ring" ["l"="-23.79,-20.455"]
 "stuartsierra/component" ["l"="-23.775,-20.382"]
@@ -6851,9 +7138,7 @@ digraph G {
 "day8/re-frame" ["l"="-23.768,-20.461"]
 "clojure/clojurescript" ["l"="-23.741,-20.546"]
 "thheller/shadow-cljs" ["l"="-23.867,-20.392"]
-"tonsky/datascript" ["l"="-23.834,-20.437"]
 "omcljs/om" ["l"="-23.729,-20.506"]
-"redplanetlabs/specter" ["l"="-23.796,-20.358"]
 "babashka/babashka" ["l"="-23.922,-20.425"]
 "drapanjanas/re-natal" ["l"="-23.731,-20.304"]
 "tonsky/rum" ["l"="-23.746,-20.331"]
@@ -6861,6 +7146,8 @@ digraph G {
 "walmartlabs/lacinia" ["l"="-23.839,-20.342"]
 "weavejester/integrant" ["l"="-23.868,-20.308"]
 "clj-kondo/clj-kondo" ["l"="-23.928,-20.346"]
+"google/closure-compiler" ["l"="-0.359,-31.406", "c"=295]
+"google/closure-library" ["l"="-23.836,-20.545"]
 "seancorfield/honeysql" ["l"="-23.827,-20.372"]
 "clj-time/clj-time" ["l"="-23.741,-20.316"]
 "weavejester/environ" ["l"="-23.742,-20.344"]
@@ -6883,13 +7170,15 @@ digraph G {
 "liquidz/vim-iced" ["l"="-24.067,-20.465"]
 "Olical/nfnl" ["l"="-24.152,-20.594"]
 "tpope/vim-fireplace" ["l"="-23.958,-20.516"]
-"bakpakin/Fennel" ["l"="-23.743,-21.484"]
+"bakpakin/Fennel" ["l"="-23.743,-21.484", "c"=182]
 "nextjournal/clerk" ["l"="-24.003,-20.376"]
 "jank-lang/jank" ["l"="-24.006,-20.412"]
 "djblue/portal" ["l"="-23.999,-20.295"]
 "guns/vim-sexp" ["l"="-24.08,-20.573"]
 "eraserhd/parinfer-rust" ["l"="-24.099,-20.545"]
 "justinbarclay/parinfer-rust-mode" ["l"="-24.139,-20.568"]
+"btford/write-good" ["l"="23.07,-26.584", "c"=28]
+"swannodette/logic-tutorial" ["l"="-23.606,-20.354"]
 "functional-koans/clojure-koans" ["l"="-23.705,-20.532"]
 "clojure-cookbook/clojure-cookbook" ["l"="-23.707,-20.488"]
 "razum2um/awesome-clojure" ["l"="-23.738,-20.481"]
@@ -6900,6 +7189,8 @@ digraph G {
 "plumatic/schema" ["l"="-23.746,-20.402"]
 "ClojureBridge/curriculum" ["l"="-23.504,-20.169"]
 "reagent-project/reagent-template" ["l"="-23.691,-20.243"]
+"sarabander/sicp" ["l"="-24.767,-21.68", "c"=877]
+"tallesl/Rich-Hickey-fanclub" ["l"="-23.856,-20.487"]
 "clj-commons/seesaw" ["l"="-23.701,-20.399"]
 "incanter/incanter" ["l"="-23.71,-20.33"]
 "quil/quil" ["l"="-23.802,-20.429"]
@@ -6952,45 +7243,60 @@ digraph G {
 "clj-commons/hickory" ["l"="-23.86,-20.259"]
 "clojure/test.check" ["l"="-23.765,-20.336"]
 "jarohen/chime" ["l"="-23.851,-20.265"]
-"anmonteiro/lumo" ["l"="-23.779,-20.346"]
+"js-csp/js-csp" ["l"="1.422,-26.817", "c"=581]
+"swannodette/mori" ["l"="-23.674,-20.493"]
 "boot-clj/boot" ["l"="-23.725,-20.382"]
+"adamtornhill/code-maat" ["l"="-13.95,-6.558", "c"=86]
+"sudar/Yahoo_LDA" ["l"="-3.138,19.81", "c"=709]
+"nathanmarz/elephantdb" ["l"="-23.381,-20.469"]
 "jonase/learndatalogtoday" ["l"="-23.722,-20.026"]
 "timothypratley/reanimated" ["l"="-23.676,-19.993"]
 "metasoarous/datsync" ["l"="-23.708,-20.113"]
+"tobgu/pyrsistent" ["l"="45.244,20.954", "c"=20]
+"hylang/hy" ["l"="-24.002,-20.537"]
+"clj-python/libpython-clj" ["l"="-23.992,-20.351"]
 "engineer-man/piston" ["l"="-24.617,-18.79"]
 "engineer-man/piston-bot" ["l"="-24.593,-18.814"]
-"judge0/judge0" ["l"="30.347,-29.175"]
+"judge0/judge0" ["l"="30.347,-29.175", "c"=288]
 "engineer-man/emkc" ["l"="-24.593,-18.843"]
 "engineer-man/felix" ["l"="-24.574,-18.838"]
 "budukhyash/remote-code-execution-engine" ["l"="-24.695,-18.795"]
-"remoteinterview/compilebox" ["l"="30.329,-29.271"]
+"remoteinterview/compilebox" ["l"="30.329,-29.271", "c"=288]
 "shhivv/pyston" ["l"="-24.618,-18.758"]
 "engineer-man/youtube" ["l"="-24.542,-18.894"]
-"hikari-py/hikari" ["l"="-54.731,4.249"]
-"scarletcafe/jishaku" ["l"="-54.744,4.21"]
-"benawad/dogehouse" ["l"="-3.978,-29.71"]
-"Rapptz/RoboDanny" ["l"="-54.768,4.19"]
+"hikari-py/hikari" ["l"="-54.731,4.249", "c"=736]
+"scarletcafe/jishaku" ["l"="-54.744,4.21", "c"=736]
+"benawad/dogehouse" ["l"="-3.978,-29.71", "c"=4]
+"Rapptz/RoboDanny" ["l"="-54.768,4.19", "c"=736]
 "radian-software/riju" ["l"="-24.676,-18.658"]
-"Rapptz/discord-ext-menus" ["l"="-54.717,4.201"]
-"serenity-rs/serenity" ["l"="-9.777,-5.866"]
+"Rapptz/discord-ext-menus" ["l"="-54.717,4.201", "c"=736]
+"serenity-rs/serenity" ["l"="-9.777,-5.866", "c"=5]
+"thi-ng/umbrella" ["l"="36.003,24.232", "c"=98]
+"thi-ng/geom" ["l"="-23.904,-20.319"]
 "witheve/Eve" ["l"="-23.664,-20.575"]
-"unisonweb/unison" ["l"="-22.377,-21.686"]
-"railsware/upterm" ["l"="23.048,-26.77"]
-"attic-labs/noms" ["l"="3.953,-8.198"]
+"unisonweb/unison" ["l"="-22.377,-21.686", "c"=474]
+"railsware/upterm" ["l"="23.048,-26.77", "c"=28]
+"attic-labs/noms" ["l"="3.953,-8.198", "c"=0]
 "parinfer/parinfer.js" ["l"="-23.664,-20.375"]
-"xi-editor/xi-editor" ["l"="-9.756,-5.515"]
-"rethinkdb/horizon" ["l"="0.795,-29.392"]
-"infernojs/inferno" ["l"="0.619,-29.253"]
-"cyclejs/cyclejs" ["l"="0.617,-29.303"]
-"enso-org/enso" ["l"="-21.056,-20.299"]
-"LightTable/LightTable" ["l"="-50.101,8.866"]
-"google/closure-library" ["l"="-23.836,-20.545"]
-"google/closure-compiler" ["l"="-0.359,-31.406"]
-"google/closure-templates" ["l"="-0.43,-29.519"]
-"google/traceur-compiler" ["l"="-0.291,-31.49"]
-"google/closure-compiler-js" ["l"="-0.077,-29.369"]
+"xi-editor/xi-editor" ["l"="-9.756,-5.515", "c"=5]
+"rethinkdb/horizon" ["l"="0.795,-29.392", "c"=12]
+"infernojs/inferno" ["l"="0.619,-29.253", "c"=12]
+"cyclejs/cyclejs" ["l"="0.617,-29.303", "c"=12]
+"enso-org/enso" ["l"="-21.056,-20.299", "c"=118]
+"LightTable/LightTable" ["l"="-50.101,8.866", "c"=59]
+"mrakgr/The-Spiral-Language" ["l"="-21.977,-20.31", "c"=447]
+"LuxLang/lux" ["l"="-23.919,-20.461"]
+"kanaka/mal" ["l"="-21.984,-23.608", "c"=496]
+"google/blockly" ["l"="-21.36,-42.337", "c"=512]
+"mtgred/netrunner" ["l"="3.35,-37.814", "c"=1]
+"funcool/cats" ["l"="-23.766,-20.261"]
+"google/closure-templates" ["l"="-0.43,-29.519", "c"=12]
+"google/traceur-compiler" ["l"="-0.291,-31.49", "c"=295]
+"google/closure-compiler-js" ["l"="-0.077,-29.369", "c"=12]
 "binaryage/cljs-devtools" ["l"="-23.738,-20.271"]
-"google/blockly" ["l"="-21.36,-42.337"]
+"Raynos/mercury" ["l"="0.252,-29.497", "c"=12]
+"matyb/java-koans" ["l"="3.435,-35.553", "c"=171]
+"manuelkiessling/nodebeginner.org" ["l"="-8.31,-34.734", "c"=48]
 "john-science/mazelib" ["l"="-24.374,-19.109"]
 "jostbr/pymaze" ["l"="-24.394,-19.133"]
 "john-science/python_for_scientists" ["l"="-24.352,-19.086"]
@@ -7011,43 +7317,50 @@ digraph G {
 "aphyr/tesser" ["l"="-23.785,-20.211"]
 "mcohen01/amazonica" ["l"="-23.823,-20.281"]
 "uncomplicate/neanderthal" ["l"="-23.81,-20.251"]
-"duct-framework/duct" ["l"="-23.806,-20.327"]
+"terminusdb/terminusdb" ["l"="-2.078,-41.399", "c"=963]
+"cozodb/cozo" ["l"="-24.01,-20.476"]
 "crista/exercises-in-programming-style" ["l"="-23.71,-20.609"]
-"kanaka/mal" ["l"="-21.984,-23.608"]
-"caiorss/Functional-Programming" ["l"="-21.004,-20.155"]
-"arogozhnikov/python3_with_pleasure" ["l"="47.486,28.655"]
+"caiorss/Functional-Programming" ["l"="-21.004,-20.155", "c"=118]
+"arogozhnikov/python3_with_pleasure" ["l"="47.486,28.655", "c"=89]
 "matthiasn/talk-transcripts" ["l"="-23.812,-20.51"]
-"webyrd/Barliman" ["l"="-25.031,-21.838"]
-"heathermiller/dist-prog-book" ["l"="0.739,13.69"]
-"steshaw/plt" ["l"="-21.066,-20.154"]
-"joaoventura/full-speed-python" ["l"="24.04,-24.73"]
-"nuprl/10PL" ["l"="-21.959,-20.196"]
-"susam/gitpr" ["l"="47.138,28.737"]
-"marcosfede/algorithms" ["l"="52.589,25.903"]
-"anordal/shellharden" ["l"="-13.887,-6.519"]
-"norvig/paip-lisp" ["l"="-23.859,-21.689"]
+"webyrd/Barliman" ["l"="-25.031,-21.838", "c"=877]
+"heathermiller/dist-prog-book" ["l"="0.739,13.69", "c"=115]
+"steshaw/plt" ["l"="-21.066,-20.154", "c"=118]
+"joaoventura/full-speed-python" ["l"="24.04,-24.73", "c"=839]
+"nuprl/10PL" ["l"="-21.959,-20.196", "c"=447]
+"susam/gitpr" ["l"="47.138,28.737", "c"=89]
+"marcosfede/algorithms" ["l"="52.589,25.903", "c"=172]
+"anordal/shellharden" ["l"="-13.887,-6.519", "c"=86]
+"norvig/paip-lisp" ["l"="-23.859,-21.689", "c"=182]
+"mongrel2/mongrel2" ["l"="2.529,-35.828", "c"=171]
+"noir-clojure/noir" ["l"="-23.486,-20.494"]
+"nubank/fklearn" ["l"="6.129,-20.287", "c"=96]
+"nubank/basic-microservice-example" ["l"="-23.987,-20.278"]
+"joaomilho/Enterprise" ["l"="-16.691,-6.487", "c"=469]
+"liammclennan/JavaScript-Koans" ["l"="3.395,-35.517", "c"=171]
+"tomhrr/dale" ["l"="-23.859,-21.497", "c"=182]
+"pixie-lang/pixie" ["l"="-23.874,-20.421"]
 "razimantv/mazegenerator" ["l"="-24.349,-19.227"]
 "defndaines/meiro" ["l"="-24.115,-19.662"]
-"robertfoss/audio_shop" ["l"="39.424,6.389"]
+"robertfoss/audio_shop" ["l"="39.424,6.389", "c"=869]
 "ferenc-nemeth/maze-generation-algorithms" ["l"="-24.384,-19.211"]
 "mikepound/mazesolving" ["l"="-24.445,-19.057"]
 "joewing/maze" ["l"="-24.377,-19.245"]
 "daleobrien/maze" ["l"="-24.338,-19.19"]
-"javierbyte/control-user-cursor" ["l"="22.63,-27.498"]
-"Gigoteur/UnicornConsole" ["l"="-20.863,-23.019"]
+"javierbyte/control-user-cursor" ["l"="22.63,-27.498", "c"=28]
+"Gigoteur/UnicornConsole" ["l"="-20.863,-23.019", "c"=674]
 "codebox/mazes" ["l"="-24.316,-19.2"]
-"SSARCandy/Coherent-Line-Drawing" ["l"="37.475,25.012"]
+"SSARCandy/Coherent-Line-Drawing" ["l"="37.475,25.012", "c"=1123]
 "scicloj/tablecloth" ["l"="-24.114,-20.32"]
 "cnuernber/dtype-next" ["l"="-24.118,-20.286"]
-"clj-python/libpython-clj" ["l"="-23.992,-20.351"]
 "scicloj/scicloj.ml" ["l"="-24.102,-20.315"]
 "metasoarous/oz" ["l"="-23.938,-20.277"]
 "jsa-aerial/hanami" ["l"="-24.044,-20.31"]
 "uncomplicate/deep-diamond" ["l"="-24.029,-20.281"]
+"bdargan/techradar" ["l"="23.987,-31.4", "c"=304]
 "alexkehayias/chocolatier" ["l"="-23.724,-20.214"]
 "oakes/play-cljs" ["l"="-23.688,-20.194"]
 "dparis/phzr" ["l"="-23.637,-20.161"]
-"bhauman/devcards" ["l"="-23.714,-20.307"]
 "jamesmacaulay/zelkova" ["l"="-23.605,-20.052"]
 "oakes/play-clj" ["l"="-23.71,-20.291"]
 "flexsurfer/re-frisk" ["l"="-23.769,-20.185"]
@@ -7059,7 +7372,7 @@ digraph G {
 "clojure-emacs/clojure-mode" ["l"="-23.827,-20.388"]
 "clojure-emacs/cider-nrepl" ["l"="-23.863,-20.356"]
 "clojure-emacs/cider" ["l"="-23.824,-20.475"]
-"overtone/emacs-live" ["l"="-16.754,-12.018"]
+"overtone/emacs-live" ["l"="-16.754,-12.018", "c"=16]
 "cryogen-project/cryogen" ["l"="-23.84,-20.363"]
 "emezeske/lein-cljsbuild" ["l"="-23.646,-20.356"]
 "oakes/Nightcode" ["l"="-23.693,-20.336"]
@@ -7084,14 +7397,16 @@ digraph G {
 "ibdknox/cljs-watch" ["l"="-23.429,-20.498"]
 "swannodette/enlive-tutorial" ["l"="-23.524,-20.413"]
 "yogthos/Selmer" ["l"="-23.809,-20.394"]
+"GravityLabs/goose" ["l"="46.302,23.968", "c"=588]
+"nathanmarz/cascalog" ["l"="-23.558,-20.429"]
 "scgilardi/slingshot" ["l"="-23.805,-20.214"]
 "clj-commons/claypoole" ["l"="-23.863,-20.203"]
 "magnars/prone" ["l"="-23.67,-20.203"]
 "facebookarchive/duckling_old" ["l"="-23.714,-20.231"]
-"facebook/duckling" ["l"="-20.916,-20.244"]
+"facebook/duckling" ["l"="-20.916,-20.244", "c"=118]
 "ztellman/automat" ["l"="-23.712,-20.203"]
 "dakrone/clojure-opennlp" ["l"="-23.698,-20.311"]
-"wit-ai/wit" ["l"="23.915,1.972"]
+"wit-ai/wit" ["l"="23.915,1.972", "c"=1094]
 "Engelberg/ubergraph" ["l"="-23.796,-20.198"]
 "planck-repl/planck" ["l"="-23.685,-20.294"]
 "marick/structural-typing" ["l"="-23.687,-20.112"]
@@ -7109,6 +7424,11 @@ digraph G {
 "oakes/odoyle-rules" ["l"="-24.04,-20.249"]
 "vlaaad/reveal" ["l"="-23.968,-20.259"]
 "ertugrulcetin/jme-clj" ["l"="-24.048,-20.44"]
+"comby-tools/comby" ["l"="-25.773,-22.708", "c"=150]
+"feenkcom/gtoolkit" ["l"="-21.889,-21.697", "c"=474]
+"factor/factor" ["l"="-22.346,-21.63", "c"=474]
+"marcoieni/intellimacs" ["l"="-2.324,13.019", "c"=15]
+"dvcrn/proton" ["l"="-23.644,-20.23"]
 "BetterThanTomorrow/calva" ["l"="-23.951,-20.432"]
 "Tensegritics/ClojureDart" ["l"="-24.021,-20.367"]
 "semperos/clj-webdriver" ["l"="-23.423,-20.432"]
@@ -7118,6 +7438,9 @@ digraph G {
 "xeqi/kerodon" ["l"="-23.469,-20.283"]
 "metosin/ring-swagger" ["l"="-23.647,-20.336"]
 "juxt/bidi" ["l"="-23.746,-20.286"]
+"cognitect/transit-js" ["l"="1.333,-26.978", "c"=581]
+"cognitect/transit-format" ["l"="-23.807,-20.378"]
+"cognitect/transit-clj" ["l"="-23.633,-20.607"]
 "nubank/workspaces" ["l"="-23.999,-20.202"]
 "stathissideris/spec-provider" ["l"="-23.857,-20.168"]
 "vvvvalvalval/scope-capture" ["l"="-23.878,-20.195"]
@@ -7128,6 +7451,8 @@ digraph G {
 "alexanderkiel/phrase" ["l"="-23.891,-20.156"]
 "cgrand/xforms" ["l"="-23.897,-20.203"]
 "weavejester/cljfmt" ["l"="-23.884,-20.302"]
+"mmckegg/loop-drop-app" ["l"="40.057,4.097", "c"=394]
+"ctford/klangmeister" ["l"="-23.651,-20.15"]
 "yogthos/migratus" ["l"="-23.827,-20.326"]
 "layerware/hugsql" ["l"="-23.833,-20.315"]
 "clj-commons/etaoin" ["l"="-23.892,-20.27"]
@@ -7138,9 +7463,11 @@ digraph G {
 "clojure-vim/nvim-parinfer.js" ["l"="-24.156,-20.7"]
 "tpope/vim-sexp-mappings-for-regular-people" ["l"="-24.047,-20.56"]
 "bhurlow/vim-parinfer" ["l"="-24.087,-20.655"]
-"kakoune-lsp/kakoune-lsp" ["l"="-13.249,-10.63"]
+"kakoune-lsp/kakoune-lsp" ["l"="-13.249,-10.63", "c"=21]
 "retrogradeorbit/bootleg" ["l"="-24.182,-20.356"]
 "aphyr/less-awful-ssl" ["l"="-24.133,-20.629"]
+"nikvdp/neomux" ["l"="-12.155,-9.737", "c"=21]
+"norcalli/nvim-terminal.lua" ["l"="-24.267,-20.8"]
 "kognise/repl.it-mobile" ["l"="-24.78,-18.596"]
 "fox-archives/tails" ["l"="-24.773,-18.615"]
 "replit-discord/carnival" ["l"="-24.801,-18.621"]
@@ -7151,7 +7478,6 @@ digraph G {
 "clojure-goes-fast/clj-java-decompiler" ["l"="-23.982,-20.088"]
 "jgpc42/jmh-clojure" ["l"="-24.019,-20.049"]
 "uncomplicate/fluokitten" ["l"="-23.729,-20.125"]
-"funcool/cats" ["l"="-23.766,-20.261"]
 "uncomplicate/clojurecl" ["l"="-23.756,-20.117"]
 "cognitect-labs/transcriptor" ["l"="-23.88,-20.109"]
 "wilkerlucio/spec-coerce" ["l"="-23.922,-20.084"]
@@ -7219,6 +7545,8 @@ digraph G {
 "clj-commons/secretary" ["l"="-23.668,-20.266"]
 "r0man/sablono" ["l"="-23.659,-20.295"]
 "HumbleUI/HumbleUI" ["l"="-24.051,-20.372"]
+"gojek/ziggurat" ["l"="41.821,35.709", "c"=51]
+"nilenso/goose" ["l"="-24.131,-20.203"]
 "levand/quiescent" ["l"="-23.531,-20.277"]
 "tonsky/datascript-chat" ["l"="-23.5,-20.235"]
 "plumatic/dommy" ["l"="-23.47,-20.364"]
@@ -7226,7 +7554,6 @@ digraph G {
 "taoensso/tufte" ["l"="-23.847,-20.209"]
 "thebusby/iota" ["l"="-23.928,-19.962"]
 "aysylu/loom" ["l"="-23.84,-20.246"]
-"thi-ng/geom" ["l"="-23.904,-20.319"]
 "Engelberg/instaparse" ["l"="-23.894,-20.379"]
 "Engelberg/better-cond" ["l"="-23.748,-20.076"]
 "taoensso/truss" ["l"="-23.737,-20.157"]
@@ -7241,12 +7568,14 @@ digraph G {
 "weavejester/hashp" ["l"="-24,-20.219"]
 "tatut/ripley" ["l"="-24.114,-20.247"]
 "weavejester/codox" ["l"="-23.826,-20.237"]
+"jzachr/goldenorb" ["l"="-3.178,19.82", "c"=709]
+"vmware-archive/differential-datalog" ["l"="-0.624,15.167", "c"=729]
 "unclebob/spacewar" ["l"="-23.912,-20.334"]
-"unclebob/more-speech" ["l"="-18.255,9.518"]
+"unclebob/more-speech" ["l"="-18.255,9.518", "c"=897]
 "unclebob/mastermindclj" ["l"="-23.949,-20.376"]
-"unclebob/clojureOrbit" ["l"="24.27,-32.055"]
-"sandromancuso/cleancoders_openchat" ["l"="24.182,-31.913"]
-"unclebob/ubc-website" ["l"="24.283,-32.09"]
+"unclebob/clojureOrbit" ["l"="24.27,-32.055", "c"=304]
+"sandromancuso/cleancoders_openchat" ["l"="24.182,-31.913", "c"=304]
+"unclebob/ubc-website" ["l"="24.283,-32.09", "c"=304]
 "rm-hull/nvd-clojure" ["l"="-23.932,-20.21"]
 "seancorfield/dot-clojure" ["l"="-23.985,-20.262"]
 "practicalli/clojure-cli-config" ["l"="-24.04,-20.267"]
@@ -7255,12 +7584,11 @@ digraph G {
 "ReplDepot/replit-cli" ["l"="-24.722,-18.529"]
 "Vandesm14/clui" ["l"="-24.739,-18.543"]
 "Coding-Cactus/slidey" ["l"="-24.675,-18.588"]
-"swannodette/logic-tutorial" ["l"="-23.606,-20.354"]
 "frenchy64/Logic-Starter" ["l"="-23.5,-20.452"]
-"oreillymedia/open_government" ["l"="19.183,13.687"]
+"oreillymedia/open_government" ["l"="19.183,13.687", "c"=1213]
 "pallix/lacij" ["l"="-23.459,-20.439"]
 "clojure/tools.nrepl" ["l"="-23.677,-20.253"]
-"mixu/singlepageappbook" ["l"="19.224,13.764"]
+"mixu/singlepageappbook" ["l"="19.224,13.764", "c"=1213]
 "plumatic/om-tools" ["l"="-23.49,-20.343"]
 "clj-commons/pomegranate" ["l"="-23.771,-20.199"]
 "clj-commons/useful" ["l"="-23.429,-20.452"]
@@ -7277,7 +7605,6 @@ digraph G {
 "adinapoli/clj3D" ["l"="-23.362,-20.634"]
 "rosejn/overtone" ["l"="-23.331,-20.623"]
 "jasonjckn/llvm-clojure-bindings" ["l"="-23.369,-20.549"]
-"noir-clojure/noir" ["l"="-23.486,-20.494"]
 "brainshave/GUIFTW" ["l"="-23.324,-20.598"]
 "rosado/clj-processing" ["l"="-23.372,-20.618"]
 "metosin/pohjavirta" ["l"="-24.033,-20.171"]
@@ -7290,6 +7617,8 @@ digraph G {
 "clojure/clojure-clr" ["l"="-23.902,-20.409"]
 "oakes/play-clj-examples" ["l"="-23.569,-20.332"]
 "oakes/Nightmod" ["l"="-23.623,-20.238"]
+"aergoio/litetree" ["l"="-3.423,-28.135", "c"=4]
+"mozilla/mentat" ["l"="-23.748,-20.217"]
 "hoplon/hoplon" ["l"="-23.727,-20.287"]
 "hoplon/javelin" ["l"="-23.776,-20.23"]
 "hoplon/castra" ["l"="-23.703,-20.186"]
@@ -7306,6 +7635,7 @@ digraph G {
 "hyperfiddle/rcf" ["l"="-24.209,-20.299"]
 "aengelberg/loco" ["l"="-23.517,-20.049"]
 "Engelberg/rolling-stones" ["l"="-23.42,-19.984"]
+"ha/doozerd" ["l"="-3.283,19.996", "c"=709]
 "nubank/state-flow" ["l"="-24.043,-20.205"]
 "nubank/matcher-combinators" ["l"="-23.999,-20.238"]
 "nubank/mockfn" ["l"="-24.102,-20.145"]
@@ -7314,8 +7644,10 @@ digraph G {
 "nubank/clojure-style-guide" ["l"="-24.071,-20.177"]
 "metosin/ring-http-response" ["l"="-23.555,-20.587"]
 "ngrunwald/ring-middleware-format" ["l"="-23.586,-20.491"]
+"indradb/indradb" ["l"="-10.13,-6.219", "c"=5]
 "nrepl/weasel" ["l"="-23.5,-20.285"]
 "adzerk-oss/boot-cljs-repl" ["l"="-23.35,-20.275"]
+"neo/ruby_koans" ["l"="3.301,-35.533", "c"=171]
 "jarohen/chord" ["l"="-23.613,-20.169"]
 "metametadata/carry" ["l"="-23.551,-20.09"]
 "Yuppiechef/datomic-schema" ["l"="-23.442,-20.609"]
@@ -7333,15 +7665,12 @@ digraph G {
 "quoll/asami" ["l"="-24.104,-20.23"]
 "simongray/clojure-graph-resources" ["l"="-24.19,-20.274"]
 "ribelo/doxa" ["l"="-24.118,-20.164"]
-"nathanmarz/elephantdb" ["l"="-23.381,-20.469"]
-"nathanmarz/cascalog" ["l"="-23.558,-20.429"]
 "nathanmarz/elephantdb-cascalog" ["l"="-23.334,-20.465"]
 "ibdknox/brepl" ["l"="-23.418,-20.493"]
 "fmw/vix" ["l"="-23.408,-20.484"]
-"mesos/spark" ["l"="-3.257,19.842"]
+"mesos/spark" ["l"="-3.257,19.842", "c"=709]
 "fogus/clache" ["l"="-23.344,-20.481"]
-"sudar/Yahoo_LDA" ["l"="-3.138,19.81"]
-"cloudera/crunch" ["l"="-3.199,19.824"]
+"cloudera/crunch" ["l"="-3.199,19.824", "c"=709]
 "pallet/ritz" ["l"="-23.379,-20.501"]
 "clojure-clutch/clutch" ["l"="-23.348,-20.443"]
 "nathanmarz/dfs-datastores" ["l"="-23.195,-20.545"]
@@ -7372,6 +7701,7 @@ digraph G {
 "plexus/chestnut" ["l"="-23.677,-20.326"]
 "mpdairy/posh" ["l"="-23.714,-20.171"]
 "RyanMcG/lein-npm" ["l"="-23.591,-20.247"]
+"joyofclojure/book-source" ["l"="2.55,-35.703", "c"=171]
 "omcljs/om-cookbook" ["l"="-23.507,-20.303"]
 "replit/upm" ["l"="-24.743,-18.606"]
 "replit/polygott" ["l"="-24.717,-18.571"]
@@ -7383,7 +7713,9 @@ digraph G {
 "replit/protocol" ["l"="-24.733,-18.587"]
 "raxod502/upm" ["l"="-24.713,-18.638"]
 "replit/play" ["l"="-24.811,-18.584"]
+"radicle-dev/radicle-alpha" ["l"="-23.204,6.762", "c"=681]
 "mikera/imagez" ["l"="-23.748,-20.136"]
+"notomo/gesture.nvim" ["l"="-12.287,-9.775", "c"=21]
 "clojure/algo.monads" ["l"="-23.596,-20.331"]
 "khinsen/monads-in-clojure" ["l"="-23.517,-20.359"]
 "clj-commons/clooj" ["l"="-23.488,-20.472"]
@@ -7393,6 +7725,8 @@ digraph G {
 "lynaghk/cljs-d3" ["l"="-23.453,-20.529"]
 "seancorfield/deps-new" ["l"="-24.085,-20.27"]
 "clojure/tools.deps.alpha" ["l"="-23.956,-20.181"]
+"eclipse-efx/efxclipse-drift" ["l"="0.014,10.07", "c"=220]
+"jfree/skijagraphics2d" ["l"="-24.156,-20.403"]
 "manuel-uberti/boodle" ["l"="-23.833,-19.812"]
 "yogthos/memory-hole" ["l"="-23.799,-19.946"]
 "pesterhazy/cljs-spa-example" ["l"="-23.851,-19.752"]
@@ -7401,15 +7735,20 @@ digraph G {
 "RickMoynihan/lein-tools-deps" ["l"="-24.036,-20.001"]
 "sbelak/huri" ["l"="-23.748,-20.1"]
 "gorillalabs/sparkling" ["l"="-23.751,-20.19"]
+"mcfunley/pugsql" ["l"="45.05,21.202", "c"=20]
 "overtone/live-coding-emacs" ["l"="-23.415,-20.536"]
 "clj-commons/clj-http-lite" ["l"="-24.296,-20.177"]
 "clojure/tools.build" ["l"="-24.207,-19.984"]
 "Workiva/eva" ["l"="-23.938,-20.181"]
-"vvvvalvalval/datomock" ["l"="-0.875,15.213"]
+"vvvvalvalval/datomock" ["l"="-0.875,15.213", "c"=729]
+"comnik/declarative-dataflow" ["l"="-0.683,15.161", "c"=729]
+"hyperfiddle/hyperfiddle-2020" ["l"="-23.962,-20.205"]
 "infinitelives/px3d" ["l"="-24.186,-20.492"]
 "illiichi/orenolisp" ["l"="-24.253,-20.538"]
 "DougHamil/threeagent" ["l"="-24.196,-20.516"]
 "Rovanion/webgl-clojurescript-tutorial" ["l"="-24.275,-20.526"]
+"hrldcpr/pcollections" ["l"="-2.311,12.262", "c"=15]
+"lacuna/bifurcan" ["l"="-23.829,-20.207"]
 "slagyr/speclj" ["l"="-23.691,-20.158"]
 "brandonbloom/fipp" ["l"="-23.844,-20.122"]
 "eggsyntax/datawalk" ["l"="-23.861,-20.108"]
@@ -7419,6 +7758,7 @@ digraph G {
 "venantius/pyro" ["l"="-23.898,-20.097"]
 "plumatic/hiphip" ["l"="-24.146,-19.81"]
 "clj-commons/primitive-math" ["l"="-24.112,-19.86"]
+"sixthnormal/clj-3df" ["l"="-0.712,15.16", "c"=729]
 "nginx-clojure/nginx-clojure" ["l"="-23.705,-20.383"]
 "taoensso/clojure-web-benchmarks" ["l"="-23.605,-20.469"]
 "tomekw/hikari-cp" ["l"="-23.82,-20.303"]
@@ -7435,7 +7775,6 @@ digraph G {
 "zero-one-group/geni" ["l"="-24.118,-20.339"]
 "yetanalytics/dl4clj" ["l"="-23.735,-20.052"]
 "greglook/puget" ["l"="-23.85,-19.998"]
-"cognitect/transit-clj" ["l"="-23.633,-20.607"]
 "cognitect/transit-cljs" ["l"="-23.608,-20.674"]
 "zk/clojuredocs" ["l"="-23.85,-20.451"]
 "clojurebook/ClojureProgramming" ["l"="-23.613,-20.554"]
@@ -7461,12 +7800,11 @@ digraph G {
 "linpengcheng/PurefunctionPipelineDataflow" ["l"="-24.295,-20.206"]
 "cognitect-labs/anomalies" ["l"="-24.129,-20.016"]
 "Stedi-Public-Archive/cdk-clj" ["l"="-24.064,-20.133"]
-"hylang/hy" ["l"="-24.002,-20.537"]
-"ciel-lang/CIEL" ["l"="-24.036,-21.488"]
+"ciel-lang/CIEL" ["l"="-24.036,-21.488", "c"=182]
 "Technologicat/unpythonic" ["l"="-24.261,-20.602"]
 "hylang/hy-mode" ["l"="-24.353,-20.708"]
-"schemedoc/awesome-scheme" ["l"="-23.699,-21.482"]
-"ghosthamlet/awesome-lisp-machine" ["l"="-23.889,-21.395"]
+"schemedoc/awesome-scheme" ["l"="-23.699,-21.482", "c"=182]
+"ghosthamlet/awesome-lisp-machine" ["l"="-23.889,-21.395", "c"=182]
 "facjure/mesh" ["l"="-23.518,-19.925"]
 "priyatam/mala" ["l"="-23.496,-19.888"]
 "bpiel/guildsman" ["l"="-23.883,-20.08"]
@@ -7474,6 +7812,7 @@ digraph G {
 "techascent/tech.ml" ["l"="-24.149,-20.36"]
 "plumatic/eng-practices" ["l"="-23.617,-19.822"]
 "dvdt/gyptis" ["l"="-23.654,-19.908"]
+"hodur-org/hodur-engine" ["l"="-0.754,15.161", "c"=729]
 "eerohele/Tutkain" ["l"="-24.33,-20.301"]
 "whamtet/simpleui" ["l"="-24.23,-20.269"]
 "borkdude/deps.clj" ["l"="-24.425,-20.273"]
@@ -7489,15 +7828,15 @@ digraph G {
 "funcool/clojurescript-unraveled" ["l"="-23.632,-20.287"]
 "dmotz/natal" ["l"="-23.606,-20.221"]
 "swannodette/mies" ["l"="-23.562,-20.304"]
-"nubank/basic-microservice-example" ["l"="-23.987,-20.278"]
 "mauricioszabo/atom-chlorine" ["l"="-24.281,-20.156"]
-"nubank/selvage" ["l"="61.298,-23.956"]
+"nubank/selvage" ["l"="61.298,-23.956", "c"=1187]
 "taoensso/faraday" ["l"="-23.946,-19.92"]
 "uswitch/lambada" ["l"="-23.908,-20.029"]
 "nervous-systems/cljs-lambda" ["l"="-23.922,-19.937"]
 "aredington/schism" ["l"="-23.88,-20.049"]
 "retro/graphql-builder" ["l"="-23.864,-19.934"]
 "fulcrologic/guardrails" ["l"="-24.135,-20.233"]
+"digego/extempore" ["l"="39.482,6.544", "c"=869]
 "uncomplicate/bayadera" ["l"="-23.82,-20.152"]
 "uncomplicate/clojurecuda" ["l"="-23.761,-20.057"]
 "forward-blockchain/qlkit" ["l"="-23.626,-20.013"]
@@ -7506,6 +7845,7 @@ digraph G {
 "cognitect-labs/REBL-distro" ["l"="-24.006,-20.15"]
 "mkremins/flense" ["l"="-23.352,-20.323"]
 "darwin/plastic" ["l"="-23.398,-20.32"]
+"imteekay/functional-programming-learning-path" ["l"="-14.627,-23.086", "c"=1101]
 "shaunlebron/ClojureScript-Syntax-in-15-minutes" ["l"="-23.549,-20.197"]
 "shaunlebron/jumping-from-html-to-clojurescript" ["l"="-23.474,-20.171"]
 "bob-cd/bob" ["l"="-24.511,-20.578"]
@@ -7531,6 +7871,7 @@ digraph G {
 "oakes/edna" ["l"="-23.864,-19.962"]
 "stathissideris/clarity" ["l"="-23.399,-20.538"]
 "ibdknox/jayq" ["l"="-23.393,-20.51"]
+"puniverse/comsat" ["l"="-2.653,12.301", "c"=15]
 "tpope/vim-salve" ["l"="-24.003,-20.619"]
 "guns/vim-clojure-static" ["l"="-24.027,-20.626"]
 "kovisoft/paredit" ["l"="-24.074,-20.619"]
@@ -7542,7 +7883,7 @@ digraph G {
 "commsor/titanoboa" ["l"="-24.017,-20.206"]
 "mikepound/pwned-search" ["l"="-24.484,-19.032"]
 "mikepound/enigma" ["l"="-24.459,-19.008"]
-"mikepound/tls-exercises" ["l"="29.418,-23.112"]
+"mikepound/tls-exercises" ["l"="29.418,-23.112", "c"=879]
 "mikepound/convolve" ["l"="-24.493,-19.065"]
 "mikepound/feistel" ["l"="-24.496,-19"]
 "clojure/data.csv" ["l"="-23.542,-20.391"]
@@ -7551,11 +7892,10 @@ digraph G {
 "guns/vim-clojure-highlight" ["l"="-24.03,-20.668"]
 "clj-commons/marginalia" ["l"="-23.812,-20.312"]
 "frissyn/Reflux" ["l"="-24.727,-18.516"]
-"ALANVF/star" ["l"="-22.643,-21.774"]
+"ALANVF/star" ["l"="-22.643,-21.774", "c"=474]
 "mat-1/repl-talk-api" ["l"="-24.713,-18.51"]
 "CookeyLang/CookeyLang" ["l"="-24.675,-18.539"]
 "clojure-rs/ClojureRS" ["l"="-23.982,-20.374"]
-"hyperfiddle/hyperfiddle-2020" ["l"="-23.962,-20.205"]
 "alekcz/pcp" ["l"="-24.037,-20.117"]
 "noir-clojure/noir-cljs" ["l"="-23.41,-20.504"]
 "icylisper/jark" ["l"="-23.413,-20.518"]
@@ -7583,6 +7923,7 @@ digraph G {
 "amitrathore/swarmiji" ["l"="-23.226,-20.476"]
 "technomancy/die-roboter" ["l"="-23.28,-20.477"]
 "Technologicat/mcpyrate" ["l"="-24.292,-20.623"]
+"john-science/scipy_con_2019" ["l"="44.966,24.035", "c"=166]
 "keesiemeijer/maze-generator" ["l"="-24.315,-19.17"]
 "walkable-server/realworld-fulcro" ["l"="-24.461,-20.072"]
 "walkable-server/realworld" ["l"="-24.501,-20.054"]
@@ -7615,30 +7956,51 @@ digraph G {
 "quoll/raphael" ["l"="-23.69,-19.609"]
 "fluree/flureedb" ["l"="-24.267,-20.046"]
 "fluree/fluree.cli" ["l"="-24.241,-20.058"]
+"apache/age" ["l"="3.695,13.466", "c"=850]
+"nathanmarz/storm" ["l"="-3.227,19.918", "c"=709]
+"evhub/coconut" ["l"="45.286,20.916", "c"=20]
+"athensresearch/athens" ["l"="-35.019,14.73", "c"=664]
+"hellerve/programming-talks" ["l"="26.681,-26.252", "c"=32]
+"JetBrains/skiko" ["l"="54.657,-14.035", "c"=25]
+"JetBrains/skija" ["l"="-24.102,-20.431"]
+"joshiemoore/snakeware" ["l"="-19.846,-46.835", "c"=133]
 "matthiasn/Clojure-Resources" ["l"="-23.678,-20.307"]
 "hantuzun/awesome-clojurescript" ["l"="-23.676,-20.356"]
 "matthiasn/BirdWatch" ["l"="-23.575,-20.207"]
-"ClojureTO/JS-Workshop" ["l"="51.633,1.117"]
-"tallesl/Rich-Hickey-fanclub" ["l"="-23.856,-20.487"]
+"ClojureTO/JS-Workshop" ["l"="51.633,1.117", "c"=1033]
 "richhickey/clojure" ["l"="-23.469,-20.652"]
 "alda-lang/alda" ["l"="-23.761,-20.606"]
-"overtone/overtone" ["l"="40.265,6.32"]
-"sonic-pi-net/sonic-pi" ["l"="40.342,6.27"]
-"supercollider/supercollider" ["l"="39.518,6.571"]
-"toplap/awesome-livecoding" ["l"="39.554,6.544"]
-"carp-lang/Carp" ["l"="-22.408,-21.665"]
-"ccrma/chuck" ["l"="39.564,6.586"]
-"noteflakes/awesome-music" ["l"="26.031,-26.251"]
+"overtone/overtone" ["l"="40.265,6.32", "c"=732]
+"sonic-pi-net/sonic-pi" ["l"="40.342,6.27", "c"=732]
+"supercollider/supercollider" ["l"="39.518,6.571", "c"=869]
+"toplap/awesome-livecoding" ["l"="39.554,6.544", "c"=869]
+"carp-lang/Carp" ["l"="-22.408,-21.665", "c"=474]
+"ccrma/chuck" ["l"="39.564,6.586", "c"=869]
+"noteflakes/awesome-music" ["l"="26.031,-26.251", "c"=32]
+"evancz/elm-architecture-tutorial" ["l"="-20.057,-19.302", "c"=331]
+"edwardtufte/tufte-css" ["l"="22.778,-26.886", "c"=28]
+"wit-ai/pywit" ["l"="23.864,2.075", "c"=1094]
 "xtdb/core2" ["l"="-24.518,-20.177"]
 "juxt/site" ["l"="-24.421,-20.206"]
 "juxt-site/site" ["l"="-24.564,-20.165"]
+"antonioru/beautiful-react-diagrams" ["l"="-3.714,-41.884", "c"=302]
+"bbatsov/prelude" ["l"="-16.782,-12.084", "c"=16]
+"jonathanpatt/sicp-kindle" ["l"="2.622,-35.603", "c"=171]
 "mbuczko/awesome-clojure" ["l"="-23.637,-20.493"]
 "johanneswseitz/event-sourcing-in-practice" ["l"="-22.866,-20.686"]
+"liljencrantz/crush" ["l"="-13.163,-6.505", "c"=86]
+"replit/clui" ["l"="-24.773,-18.556"]
 "clojerl/clojerl" ["l"="-23.925,-20.384"]
+"imba/imba" ["l"="-24.234,-22.151", "c"=620]
+"sensu/sensu" ["l"="3.039,-35.926", "c"=171]
+"riemann/riemann" ["l"="-23.814,-20.411"]
 "IGJoshua/farolero" ["l"="-24.156,-20.199"]
 "gigasquid/libpython-clj-examples" ["l"="-24.24,-20.447"]
+"nathanmarz/storm-starter" ["l"="-2.336,16.872", "c"=455]
+"revelytix/carbonite" ["l"="-23.239,-20.529"]
 "tamizhvendan/honeyeql" ["l"="-24.173,-20.161"]
 "fulcrologic/fulcro-rad" ["l"="-24.139,-20.157"]
+"simplenlg/simplenlg" ["l"="37.618,-2.174", "c"=1210]
 "Coding-Cactus/repltalk" ["l"="-24.706,-18.501"]
 "ReplCustoms/ReplCustoms" ["l"="-24.695,-18.505"]
 "bevuta/pepa" ["l"="-23.718,-20.081"]
@@ -7654,35 +8016,35 @@ digraph G {
 "CircleCI-Archived/frontend" ["l"="-23.65,-20.277"]
 "PrecursorApp/precursor" ["l"="-23.754,-20.157"]
 "awkay/om-tutorial" ["l"="-23.619,-20.209"]
-"flosell/lambdacd" ["l"="-23.861,-20.189"]
 "hashobject/perun" ["l"="-23.768,-20.144"]
 "mfikes/ambly" ["l"="-23.595,-20.265"]
 "replete-repl/replete-ios" ["l"="-23.545,-20.234"]
 "bilus/reforms" ["l"="-23.539,-20.219"]
-"pixie-lang/pixie" ["l"="-23.874,-20.421"]
-"LuxLang/lux" ["l"="-23.919,-20.461"]
 "nakkaya/ferret" ["l"="-23.89,-20.358"]
-"JetBrains/skija" ["l"="-24.102,-20.431"]
-"JetBrains/skiko" ["l"="54.657,-14.035"]
 "HumbleUI/Skija" ["l"="-24.091,-20.367"]
 "HumbleUI/JWM" ["l"="-24.116,-20.367"]
-"JetBrains/compose-multiplatform" ["l"="54.892,-14.152"]
-"JFormDesigner/FlatLaf" ["l"="0.315,10.166"]
-"edvin/tornadofx" ["l"="54.956,-13.941"]
-"openjdk/jfx" ["l"="0.162,10.068"]
-"JakeWharton/mosaic" ["l"="54.678,-14.138"]
-"kirill-grouchnikov/radiance" ["l"="0.338,10.205"]
-"LWJGL/lwjgl3" ["l"="-12.37,4.53"]
-"controlsfx/controlsfx" ["l"="0.197,10.094"]
-"google/ksp" ["l"="54.78,-14.112"]
+"JetBrains/compose-multiplatform" ["l"="54.892,-14.152", "c"=25]
+"JFormDesigner/FlatLaf" ["l"="0.315,10.166", "c"=220]
+"edvin/tornadofx" ["l"="54.956,-13.941", "c"=25]
+"openjdk/jfx" ["l"="0.162,10.068", "c"=220]
+"JakeWharton/mosaic" ["l"="54.678,-14.138", "c"=25]
+"kirill-grouchnikov/radiance" ["l"="0.338,10.205", "c"=220]
+"LWJGL/lwjgl3" ["l"="-12.37,4.53", "c"=543]
+"controlsfx/controlsfx" ["l"="0.197,10.094", "c"=220]
+"google/ksp" ["l"="54.78,-14.112", "c"=25]
+"trogdoro/xiki" ["l"="-11.208,-3.345", "c"=1294]
+"baku89/glisp" ["l"="36.122,24.139", "c"=98]
 "kibu-australia/pushy" ["l"="-23.63,-20.036"]
 "domkm/silk" ["l"="-23.583,-19.964"]
 "funcool/buddy-sign" ["l"="-23.909,-20.51"]
 "funcool/buddy-core" ["l"="-23.898,-20.484"]
 "funcool/buddy-hashers" ["l"="-23.914,-20.529"]
+"JetBrains/projector-docker" ["l"="54.913,-14.553", "c"=25]
 "scicloj/noj" ["l"="-24.139,-20.344"]
 "clojurewerkz/elastisch" ["l"="-23.884,-19.913"]
 "mpenet/spandex" ["l"="-23.875,-19.994"]
+"hoophq/sequence" ["l"="51.634,1.07", "c"=1033]
+"nathanmarz/storm-deploy" ["l"="-2.289,16.86", "c"=455]
 "babashka/scittle" ["l"="-24.102,-20.346"]
 "theleoborges/bouncer" ["l"="-23.656,-20.324"]
 "brandonbloom/metaclj" ["l"="-23.416,-20.094"]
@@ -7701,14 +8063,15 @@ digraph G {
 "paulonteri/shule-s-frontend" ["l"="-24.76,-18.802"]
 "paulonteri/livefitfood-clone" ["l"="-24.749,-18.814"]
 "strangeloop/2011-slides" ["l"="-23.43,-20.544"]
+"kirill-grouchnikov/aurora" ["l"="54.508,-13.992", "c"=25]
 "Coding-Cactus/Cactus-Bot" ["l"="-24.699,-18.517"]
 "rktjmp/hotpot.nvim" ["l"="-24.189,-20.644"]
 "jaawerth/fennel-nvim" ["l"="-24.145,-20.66"]
-"norcalli/snippets.nvim" ["l"="-12.222,-9.566"]
+"norcalli/snippets.nvim" ["l"="-12.222,-9.566", "c"=21]
 "Olical/nvim-local-fennel" ["l"="-24.155,-20.643"]
 "tjdevries/tree-sitter-lua" ["l"="-24.217,-20.724"]
 "udayvir-singh/tangerine.nvim" ["l"="-24.194,-20.623"]
-"camspiers/snap" ["l"="-12.317,-9.616"]
+"camspiers/snap" ["l"="-12.317,-9.616", "c"=21]
 "julienvincent/nvim-paredit" ["l"="-24.175,-20.582"]
 "Olical/magic-kit" ["l"="-24.167,-20.67"]
 "liebke/zookeeper-clj" ["l"="-23.379,-20.439"]
@@ -7716,25 +8079,28 @@ digraph G {
 "frenchy64/typed-clojure" ["l"="-23.289,-20.514"]
 "clojure/data.finger-tree" ["l"="-23.252,-20.497"]
 "juxt/joplin" ["l"="-23.609,-20.187"]
+"jlongster/transducers.js" ["l"="1.358,-26.782", "c"=581]
 "clojure-emacs/squiggly-clojure" ["l"="-23.87,-20.514"]
-"cognitect/transit-format" ["l"="-23.807,-20.378"]
-"cognitect/transit-js" ["l"="1.333,-26.978"]
-"norcalli/nvim-terminal.lua" ["l"="-24.267,-20.8"]
+"IronScheme/IronScheme" ["l"="-23.659,-21.658", "c"=182]
+"kuzudb/kuzu" ["l"="-0.549,14.879", "c"=729]
 "jlesquembre/nterm.nvim" ["l"="-24.288,-20.835"]
-"replit/clui" ["l"="-24.773,-18.556"]
-"liljencrantz/crush" ["l"="-13.163,-6.505"]
+"mattwparas/steel" ["l"="-12.898,-10.004", "c"=21]
+"JetBrains/projector-server" ["l"="54.833,-14.387", "c"=25]
 "reagent-project/reagent-forms" ["l"="-23.697,-20.215"]
 "killme2008/defun" ["l"="-23.649,-20.247"]
 "cljs/api" ["l"="-23.422,-20.16"]
 "cljsinfo/cljs.info" ["l"="-23.334,-20.124"]
 "jarohen/phoenix" ["l"="-23.386,-20.109"]
 "AppsFlyer/donkey" ["l"="-24.207,-20.187"]
+"runtimejs/runtime" ["l"="-25.312,-22.883", "c"=1180]
+"kanaka/miniMAL" ["l"="-23.382,-20.145"]
+"joy-framework/joy" ["l"="-23.753,-21.812", "c"=182]
 "domkm/omelette" ["l"="-23.549,-19.91"]
 "TheComeUpCode/SpotifyGeneratePlaylist" ["l"="-24.498,-18.846"]
 "TheComeUpCode/WardrobeApp" ["l"="-24.481,-18.815"]
 "TheComeUpCode/AutomateTexting" ["l"="-24.469,-18.83"]
-"aj-4/ig-followers" ["l"="22.414,-26.097"]
-"mileshenrichs/spotify-playlist-generator" ["l"="45.946,5.125"]
+"aj-4/ig-followers" ["l"="22.414,-26.097", "c"=28]
+"mileshenrichs/spotify-playlist-generator" ["l"="45.946,5.125", "c"=1062]
 "kovasb/gamma" ["l"="-23.486,-20.142"]
 "kovasb/gamma-driver" ["l"="-23.439,-20.122"]
 "sgrove/gamma-playground" ["l"="-23.422,-20.125"]
@@ -7751,9 +8117,11 @@ digraph G {
 "racehub/om-bootstrap" ["l"="-23.447,-20.267"]
 "ckirkendall/enfocus" ["l"="-23.471,-20.455"]
 "clutch-clojurescript" ["l"="-23.31,-20.441"]
+"ReactiveX/RxClojure" ["l"="-2.023,13.146", "c"=15]
 "michaelklishin/monger" ["l"="-23.676,-20.394"]
 "michaelklishin/validateur" ["l"="-23.593,-20.386"]
 "taoensso/carmine" ["l"="-23.817,-20.343"]
+"cognitect-labs/transducers-js" ["l"="1.347,-26.849", "c"=581]
 "mfikes/shrimp" ["l"="-23.381,-20.241"]
 "pandeiro/boot-http" ["l"="-23.317,-20.267"]
 "adzerk-oss/boot-test" ["l"="-23.283,-20.274"]
@@ -7761,25 +8129,27 @@ digraph G {
 "adzerk-oss/boot-cljs-example" ["l"="-23.34,-20.258"]
 "jochu/swank-clojure" ["l"="-23.511,-20.619"]
 "ztellman/penumbra" ["l"="-23.412,-20.617"]
+"nubank/nuvigator" ["l"="61.283,-24.015", "c"=1187]
 "cloudflare/Stout" ["l"="-23.408,-20.578"]
 "typedclojure/typedclojure" ["l"="-23.975,-20.318"]
-"shangguandonghua/BLUEfvsd" ["l"="39.475,-2.13"]
-"shangguandonghua/one" ["l"="39.434,-2.16"]
-"shangguandonghua/onedongone11" ["l"="39.422,-2.164"]
-"amyday996/hello-world" ["l"="39.431,-2.134"]
-"amyday996/BLUE" ["l"="-11.824,-4.14"]
-"shangguandonghua/onedongone" ["l"="39.421,-2.141"]
-"shangguandonghua/auto-green" ["l"="39.419,-2.153"]
-"onedongone/auto-green" ["l"="39.451,-2.138"]
+"halayli/lthread" ["l"="-22.131,-26.299", "c"=101]
+"shangguandonghua/BLUEfvsd" ["l"="39.475,-2.13", "c"=202]
+"shangguandonghua/one" ["l"="39.434,-2.16", "c"=202]
+"shangguandonghua/onedongone11" ["l"="39.422,-2.164", "c"=202]
+"amyday996/hello-world" ["l"="39.431,-2.134", "c"=202]
+"amyday996/BLUE" ["l"="-11.824,-4.14", "c"=1250]
+"shangguandonghua/onedongone" ["l"="39.421,-2.141", "c"=202]
+"shangguandonghua/auto-green" ["l"="39.419,-2.153", "c"=202]
+"onedongone/auto-green" ["l"="39.451,-2.138", "c"=202]
 "clj-commons/metrics-clojure" ["l"="-23.308,-20.318"]
 "jarohen/nomad" ["l"="-23.42,-20.306"]
 "teknql/tapestry" ["l"="-24.281,-20.077"]
 "thheller/shadow-grove" ["l"="-24.141,-20.283"]
 "matthewdowney/rich-comment-tests" ["l"="-24.305,-20.311"]
+"kien/rainbow_parentheses.vim" ["l"="-14.845,-9.645", "c"=34]
 "teropa/hiccups" ["l"="-23.403,-20.419"]
 "ibdknox/crate" ["l"="-23.365,-20.513"]
 "clojure-emacs/inf-clojure" ["l"="-23.956,-20.074"]
-"revelytix/carbonite" ["l"="-23.239,-20.529"]
 "IGJoshua/coffi" ["l"="-24.187,-20.234"]
 "cnuernber/charred" ["l"="-24.167,-20.235"]
 "cljsinfo/api-docs" ["l"="-23.306,-20.11"]
@@ -7792,6 +8162,7 @@ digraph G {
 "clj-commons/ordered" ["l"="-23.766,-20.098"]
 "reagent-project/reagent-utils" ["l"="-23.612,-20.149"]
 "venantius/accountant" ["l"="-23.634,-20.187"]
+"bos/stanford-cs240h" ["l"="-20.668,-19.595", "c"=118]
 "someteam/acha" ["l"="-23.589,-20.15"]
 "paulonteri/remote-code-execution-environment" ["l"="-24.739,-18.798"]
 "Raynes/fs" ["l"="-23.609,-20.11"]
@@ -7812,6 +8183,7 @@ digraph G {
 "clj-commons/cljss" ["l"="-23.843,-20.158"]
 "arachne-framework/arachne-core" ["l"="-23.646,-19.942"]
 "jeroenjanssens/sample" ["l"="-23.263,-20.156"]
+"dundalek/awesome-lisp-languages" ["l"="-23.792,-21.515", "c"=182]
 "taoensso/tower" ["l"="-23.514,-20.108"]
 "fluree/fluree.crypto" ["l"="-24.23,-20.06"]
 "fluree/to-do-lists-generator" ["l"="-24.253,-20.045"]
@@ -7850,26 +8222,30 @@ digraph G {
 "fluree/raft" ["l"="-24.226,-20.074"]
 "refi64/hytest" ["l"="-24.503,-20.855"]
 "flyingmachine/pegthing" ["l"="-23.605,-20.5"]
-"riemann/riemann" ["l"="-23.814,-20.411"]
+"flix/flix" ["l"="-22.492,-21.676", "c"=474]
 "juxt/reap" ["l"="-24.471,-20.187"]
-"lexi-lambda/hackett" ["l"="-22.006,-20.275"]
-"janet-lang/janet" ["l"="-23.754,-21.617"]
-"typelead/eta" ["l"="-20.9,-20.208"]
-"mighty-gerbils/gerbil" ["l"="-23.751,-21.526"]
-"flix/flix" ["l"="-22.492,-21.676"]
-"coalton-lang/coalton" ["l"="-23.883,-21.557"]
+"replit/kaboom" ["l"="-11.531,3.173", "c"=851]
+"lexi-lambda/hackett" ["l"="-22.006,-20.275", "c"=447]
+"janet-lang/janet" ["l"="-23.754,-21.617", "c"=182]
+"typelead/eta" ["l"="-20.9,-20.208", "c"=118]
+"mighty-gerbils/gerbil" ["l"="-23.751,-21.526", "c"=182]
+"coalton-lang/coalton" ["l"="-23.883,-21.557", "c"=182]
+"ohmjs/ohm" ["l"="3.051,-30.097", "c"=1206]
 "radian-software/python-in-a-box" ["l"="-24.637,-18.642"]
 "radian-software/riju-replit" ["l"="-24.634,-18.67"]
-"hackclub/sinerider" ["l"="-22.214,-24.359"]
-"live-codes/livecodes" ["l"="31.17,-28.832"]
-"ethan-leba/tree-edit" ["l"="-16.492,-11.632"]
-"ishaan1013/sandbox" ["l"="16.301,-9.957"]
+"hackclub/sinerider" ["l"="-22.214,-24.359", "c"=496]
+"live-codes/livecodes" ["l"="31.17,-28.832", "c"=570]
+"ethan-leba/tree-edit" ["l"="-16.492,-11.632", "c"=16]
+"ishaan1013/sandbox" ["l"="16.301,-9.957", "c"=198]
 "dakrone/lein-bikeshed" ["l"="-23.588,-20.116"]
 "cloverage/cloverage" ["l"="-23.809,-20.235"]
+"tjake/Solandra" ["l"="-1.553,18.409", "c"=1217]
 "funcool/urania" ["l"="-23.707,-19.749"]
 "xsc/claro" ["l"="-23.769,-19.741"]
 "Cognician/datomic-doc" ["l"="-23.595,-20.029"]
-"lfe/lfe" ["l"="3.264,15.255"]
+"anko/eslisp" ["l"="-23.814,-21.346", "c"=182]
+"lfe/lfe" ["l"="3.264,15.255", "c"=223]
+"losvedir/ephemeral2" ["l"="22.7,-26.507", "c"=28]
 "simongray/clojure-dsl-resources" ["l"="-24.281,-20.306"]
 "venantius/yagni" ["l"="-23.484,-20.03"]
 "walmartlabs/datascope" ["l"="-23.785,-19.904"]
@@ -7882,11 +8258,12 @@ digraph G {
 "clojureman/special" ["l"="-24.228,-20.175"]
 "athos/Postmortem" ["l"="-24.26,-20.137"]
 "nextjournal/beholder" ["l"="-24.248,-20.158"]
-"kanaka/miniMAL" ["l"="-23.382,-20.145"]
-"santoshrajan/lispyscript" ["l"="-23.894,-21.216"]
-"soegaard/urlang" ["l"="-23.489,-21.484"]
-"xixixao/Shem" ["l"="-21.599,-23.39"]
-"carld/micro-lisp" ["l"="-23.815,-21.576"]
+"collectd/collectd" ["l"="4.052,-7.416", "c"=0]
+"codenameone/CodenameOne" ["l"="-11.318,5.059", "c"=983]
+"santoshrajan/lispyscript" ["l"="-23.894,-21.216", "c"=182]
+"soegaard/urlang" ["l"="-23.489,-21.484", "c"=182]
+"xixixao/Shem" ["l"="-21.599,-23.39", "c"=496]
+"carld/micro-lisp" ["l"="-23.815,-21.576", "c"=182]
 "takeoutweight/clojure-scheme" ["l"="-23.213,-20.105"]
 "halgari/clojure-py" ["l"="-23.342,-20.569"]
 "eigenhombre/PyClojure" ["l"="-23.303,-20.605"]
@@ -7894,38 +8271,44 @@ digraph G {
 "rplevy/swiss-arrows" ["l"="-23.849,-20.07"]
 "prestancedesign/babashka-htmx-todoapp" ["l"="-24.294,-20.257"]
 "escherize/huff" ["l"="-24.325,-20.262"]
+"EvgSkv/logica" ["l"="-2.025,-41.389", "c"=963]
 "ibdknox/lein-noir" ["l"="-23.511,-20.498"]
 "clojars/clojars-web" ["l"="-23.96,-20.164"]
 "xeqi/peridot" ["l"="-23.413,-20.283"]
 "umesh-timalsina/riju" ["l"="-24.603,-18.625"]
 "fluree/db" ["l"="-24.193,-20.1"]
 "fluree/ledger" ["l"="-24.243,-20.07"]
+"tsulej/GenerateMe" ["l"="34.419,24.315", "c"=329]
+"Clojure2D/clojure2d" ["l"="-23.97,-20.299"]
 "seancorfield/build-clj" ["l"="-24.228,-20.245"]
 "slipset/deps-deploy" ["l"="-24.258,-19.929"]
+"solidsnack/GraphpostgresQL" ["l"="-0.679,-20.69", "c"=153]
 "nasser/mage" ["l"="-24.139,-20.413"]
 "nasser/nostrand" ["l"="-24.139,-20.429"]
 "ibdknox/monet" ["l"="-23.35,-20.541"]
+"dpapathanasiou/simple-graph" ["l"="5.322,-8.853", "c"=0]
 "wotbrew/relic" ["l"="-24.102,-20.202"]
-"nilenso/goose" ["l"="-24.131,-20.203"]
 "steffan-westcott/clj-otel" ["l"="-24.148,-20.096"]
 "Big-Data-Manning/big-data-code" ["l"="-23.055,-20.605"]
 "roomkey/annotate" ["l"="-23.376,-20.066"]
 "day8/re-frame-http-fx" ["l"="-23.673,-20.182"]
 "clojure-vim/neovim-client" ["l"="-24.125,-20.735"]
 "potetm/tire-iron" ["l"="-23.418,-20.072"]
-"kirill-grouchnikov/aurora" ["l"="54.508,-13.992"]
-"MayakaApps/ComposeWindowStyler" ["l"="54.394,-13.98"]
-"jfree/skijagraphics2d" ["l"="-24.156,-20.403"]
+"MayakaApps/ComposeWindowStyler" ["l"="54.394,-13.98", "c"=25]
 "smallshen/JWM-Compose" ["l"="-24.197,-20.425"]
-"Dansoftowner/jSystemThemeDetector" ["l"="0.271,10.241"]
+"Dansoftowner/jSystemThemeDetector" ["l"="0.271,10.241", "c"=220]
 "pangloss/pattern" ["l"="-24.299,-20.283"]
+"pkamenarsky/atea" ["l"="2.631,-35.512", "c"=171]
+"frissyn/valorant.py" ["l"="-0.788,2.779", "c"=258]
+"mntmn/interim" ["l"="-23.829,-21.498", "c"=182]
+"borkdude/grasp" ["l"="26.368,-26.76", "c"=32]
 "funcool/promesa" ["l"="-23.907,-20.239"]
 "schani/clojurec" ["l"="-23.17,-20.117"]
 "bagucode/clj-native" ["l"="-23.188,-20.08"]
 "oakes/lein-fruit" ["l"="-23.162,-20.081"]
 "mikepound/cubes" ["l"="-24.447,-18.965"]
-"NationalSecurityAgency/enigma-simulator" ["l"="-42.6,-32.781"]
-"Code-Bullet/Enigma-Simulator" ["l"="56.847,17.804"]
+"NationalSecurityAgency/enigma-simulator" ["l"="-42.6,-32.781", "c"=79]
+"Code-Bullet/Enigma-Simulator" ["l"="56.847,17.804", "c"=45]
 "jebberjeb/clojure-socketrepl.nvim" ["l"="-24.145,-20.74"]
 "clojure-vim/clj-refactor.nvim" ["l"="-24.145,-20.725"]
 "clojure-vim/async-clj-omni" ["l"="-24.159,-20.729"]
@@ -7933,7 +8316,6 @@ digraph G {
 "dotemacs/pdfboxing" ["l"="-23.98,-20.066"]
 "PEZ/rich4clojure" ["l"="-24.255,-20.245"]
 "BetterThanTomorrow/dram" ["l"="-24.347,-20.199"]
-"sixthnormal/clj-3df" ["l"="-0.712,15.16"]
 "BetterThanTomorrow/joyride" ["l"="-24.109,-20.303"]
 "whamtet/Excel-REPL" ["l"="-23.785,-19.662"]
 "felixb/swamp" ["l"="-23.113,-19.893"]
@@ -7961,7 +8343,7 @@ digraph G {
 "itmeze/toadie" ["l"="-23.403,-20.048"]
 "cosmin/IClojure" ["l"="-23.301,-20.553"]
 "PEZ/get-started-with-clojure" ["l"="-24.384,-20.185"]
-"jfree/skikographics2d" ["l"="0.389,10.29"]
+"jfree/skikographics2d" ["l"="0.389,10.29", "c"=220]
 "nopsteam/6502" ["l"="-24.329,-20.621"]
 "rafaeldelboni/nota" ["l"="-24.296,-20.594"]
 "Goval-Community/homeval" ["l"="-24.732,-18.457"]
@@ -7969,42 +8351,47 @@ digraph G {
 "cursorweb/Cycle-Bot-Game" ["l"="-24.641,-18.51"]
 "RayhanADev/ama" ["l"="-24.655,-18.543"]
 "JDOG787/JDOG787" ["l"="-24.739,-18.502"]
-"swannodette/mori" ["l"="-23.674,-20.493"]
-"cognitect-labs/transducers-js" ["l"="1.347,-26.849"]
-"js-csp/js-csp" ["l"="1.422,-26.817"]
-"rtfeldman/seamless-immutable" ["l"="0.561,-29.105"]
-"sanctuary-js/sanctuary" ["l"="1.309,-26.825"]
-"cujojs/most" ["l"="1.337,-26.826"]
+"glycerine/zygomys" ["l"="4.28,-8.264", "c"=0]
+"solid/solid" ["l"="-2.064,-41.95", "c"=456]
+"pyskell/slouchy" ["l"="22.91,-26.562", "c"=28]
+"nyoom-engineering/nyoom.nvim" ["l"="-12.505,-9.448", "c"=21]
+"unconed/mathbox" ["l"="35.862,24.209", "c"=98]
+"rtfeldman/seamless-immutable" ["l"="0.561,-29.105", "c"=12]
+"sanctuary-js/sanctuary" ["l"="1.309,-26.825", "c"=581]
+"cujojs/most" ["l"="1.337,-26.826", "c"=581]
 "ferdinand-beyer/refx" ["l"="-24.166,-20.273"]
 "thheller/shadow-css" ["l"="-24.179,-20.259"]
 "chr15m/sitefox" ["l"="-24.162,-20.32"]
 "oakmac/atom-parinfer" ["l"="-23.579,-20.314"]
 "oakmac/parinfer-viml" ["l"="-24.098,-20.707"]
-"ctford/klangmeister" ["l"="-23.651,-20.15"]
+"cdarwin/go-koans" ["l"="3.473,-35.535", "c"=171]
+"sirixdb/sirix" ["l"="32.076,-22.752", "c"=358]
 "ctford/leipzig" ["l"="-23.503,-19.994"]
 "ctford/cljs-bach" ["l"="-23.548,-20.042"]
-"overtone/shadertone" ["l"="35.305,24.084"]
+"overtone/shadertone" ["l"="35.305,24.084", "c"=98]
 "viebel/klipse" ["l"="-23.846,-20.411"]
 "zalky/cues" ["l"="-24.214,-20.157"]
 "decker405/figwheel-react-native" ["l"="-23.476,-20.088"]
 "Jannis/om-next-kanban-demo" ["l"="-23.515,-20.205"]
 "crisptrutski/matchbox" ["l"="-23.484,-20.194"]
 "hoodunit/ReactNativeCljs" ["l"="-23.507,-20.122"]
+"usethesource/capsule" ["l"="-2.219,12.322", "c"=15]
 "dundalek/parpar.nvim" ["l"="-24.221,-20.611"]
 "gpanders/nvim-moonwalk" ["l"="-24.243,-20.651"]
 "clojure-android/neko" ["l"="-23.026,-20.068"]
 "dparis/phzr-demo" ["l"="-23.569,-20.109"]
-"dvcrn/proton" ["l"="-23.644,-20.23"]
+"circleci/circleci-docs" ["l"="9.08,-44.786", "c"=828]
 "dvcrn/sublimious" ["l"="-23.525,-20.183"]
-"Tehnix/spaceneovim" ["l"="-15.5,-9.542"]
-"ctjhoa/spacevim" ["l"="-15.419,-9.565"]
-"VSpaceCode/VSpaceCode" ["l"="-16.625,-12.051"]
+"Tehnix/spaceneovim" ["l"="-15.5,-9.542", "c"=34]
+"ctjhoa/spacevim" ["l"="-15.419,-9.565", "c"=34]
+"VSpaceCode/VSpaceCode" ["l"="-16.625,-12.051", "c"=16]
 "dvcrn/ajom" ["l"="-23.559,-20.218"]
 "braidchat/braid" ["l"="-23.795,-20.227"]
 "clj-holmes/clj-watson" ["l"="-24.201,-20.016"]
 "clj-holmes/clj-holmes" ["l"="-24.175,-20.052"]
 "msolli/proletarian" ["l"="-24.234,-20.014"]
 "babashka/obb" ["l"="-24.19,-20.072"]
+"cdglabs/apparatus" ["l"="-5.086,-41.82", "c"=333]
 "bnomis/om-next-datascript-localisation-demo" ["l"="-23.463,-20.209"]
 "jdubie/om-next-router-example" ["l"="-23.483,-20.214"]
 "stevebuik/om-next-ideas" ["l"="-23.459,-20.189"]
@@ -8027,11 +8414,13 @@ digraph G {
 "alexander-yakushev/foreclojure-android" ["l"="-23.009,-20.041"]
 "shriphani/pegasus" ["l"="-23.625,-19.978"]
 "mischov/reaver" ["l"="-23.578,-19.898"]
+"oden-lang/oden" ["l"="-21.66,-23.416", "c"=496]
 "binaryage/chromex" ["l"="-23.698,-20.134"]
 "binaryage/chromex-sample" ["l"="-23.651,-20.053"]
 "jclouds/legacy-jclouds" ["l"="-23.358,-20.404"]
 "jclouds/legacy-jclouds-examples" ["l"="-23.308,-20.403"]
 "pallet/pallet" ["l"="-23.437,-20.412"]
+"DavidVujic/python-polylith" ["l"="45.538,18.732", "c"=1120]
 "replikativ/replikativ" ["l"="-23.806,-19.981"]
 "replikativ/konserve" ["l"="-23.786,-19.997"]
 "replikativ/kabel" ["l"="-23.812,-19.894"]
@@ -8049,31 +8438,41 @@ digraph G {
 "parenthesin/components" ["l"="-24.362,-20.621"]
 "grzm/awyeah-api" ["l"="-24.786,-20.465"]
 "jmglov/blambda" ["l"="-24.82,-20.472"]
-"cozodb/cozo" ["l"="-24.01,-20.476"]
-"kuzudb/kuzu" ["l"="-0.549,14.879"]
-"vmware-archive/differential-datalog" ["l"="-0.624,15.167"]
-"indradb/indradb" ["l"="-10.13,-6.219"]
-"terminusdb/terminusdb" ["l"="-2.078,-41.399"]
-"vlcn-io/cr-sqlite" ["l"="-6.427,-28.366"]
-"TimelyDataflow/differential-dataflow" ["l"="-0.581,15.083"]
-"dpapathanasiou/simple-graph" ["l"="5.322,-8.853"]
-"oxigraph/oxigraph" ["l"="-1.827,-42.013"]
-"GreptimeTeam/greptimedb" ["l"="-0.383,15.072"]
-"souffle-lang/souffle" ["l"="-0.631,15.245"]
-"mozilla/mentat" ["l"="-23.748,-20.217"]
+"vlcn-io/cr-sqlite" ["l"="-6.427,-28.366", "c"=793]
+"TimelyDataflow/differential-dataflow" ["l"="-0.581,15.083", "c"=729]
+"oxigraph/oxigraph" ["l"="-1.827,-42.013", "c"=456]
+"GreptimeTeam/greptimedb" ["l"="-0.383,15.072", "c"=729]
+"souffle-lang/souffle" ["l"="-0.631,15.245", "c"=729]
+"Frege/frege" ["l"="-20.995,-20.211", "c"=118]
+"gregmalcolm/python_koans" ["l"="3.44,-35.509", "c"=171]
+"status-im/status-mobile" ["l"="-20.996,11.168", "c"=22]
+"sweet-js/sweet-core" ["l"="1.384,-26.908", "c"=581]
+"wit-ai/node-wit" ["l"="23.861,2.037", "c"=1094]
 "phronmophobic/llama.clj" ["l"="-24.247,-20.374"]
 "kapilreddy/instructor-clj" ["l"="-24.247,-20.4"]
 "lumberdev/tesserae" ["l"="-24.267,-20.395"]
-"nathanmarz/storm" ["l"="-3.227,19.918"]
 "r0man/inflections-clj" ["l"="-23.836,-20.518"]
 "turbopape/postagga" ["l"="-23.548,-20.348"]
+"asg017/sqlite-vss" ["l"="40.628,0.963", "c"=7]
 "babashka/bbin" ["l"="-24.451,-20.396"]
+"alpaca-lang/alpaca" ["l"="3.223,15.299", "c"=223]
+"twitter-archive/gizzard" ["l"="-3.291,19.93", "c"=709]
+"ninjudd/drip" ["l"="45.97,18.555", "c"=52]
+"RossMcMillan92/djent" ["l"="39.98,4.154", "c"=394]
 "hypirion/inlein" ["l"="-23.799,-19.817"]
 "stathissideris/dali" ["l"="-23.826,-19.954"]
+"dflemstr/rq" ["l"="-13.466,-6.568", "c"=86]
+"berkerpeksag/astor" ["l"="45.376,21.013", "c"=20]
+"google/mangle" ["l"="-0.69,15.243", "c"=729]
 "cnuernber/tmdjs" ["l"="-24.255,-20.269"]
+"mozilla/fathom" ["l"="22.817,-26.943", "c"=28]
+"russel/groovy" ["l"="-0.45,-31.726", "c"=295]
 "clojurians-org/clojure-ebook" ["l"="-23.627,-20.815"]
 "clojurians-org/storm-ebook" ["l"="-23.617,-20.855"]
+"CoreyMSchafer/dotfiles" ["l"="-14.748,-8.853", "c"=34]
 "edn-format/edn" ["l"="-23.813,-20.453"]
+"twitter/elephant-bird" ["l"="-3.135,19.867", "c"=709]
+"felix-lang/felix" ["l"="-22.506,-21.805", "c"=474]
 "constacts/ragtacts" ["l"="-24.289,-20.44"]
 "cjbarre/multi-gpt" ["l"="-24.27,-20.429"]
 "hyperfiddle/electric-v2-starter-app" ["l"="-24.313,-20.44"]
@@ -8089,7 +8488,7 @@ digraph G {
 "madvas/cljs-react-material-ui" ["l"="-23.748,-20.01"]
 "brentonashworth/sandbar-examples" ["l"="-23.46,-20.586"]
 "facundoolano/advenjure" ["l"="-23.581,-20.229"]
-"LambdaHack/LambdaHack" ["l"="-20.611,-20.071"]
+"LambdaHack/LambdaHack" ["l"="-20.611,-20.071", "c"=118]
 "paulonteri/play-game-with-computer-vision" ["l"="-24.79,-18.819"]
 "madvas/cljs-react-material-ui-example" ["l"="-23.732,-19.957"]
 "DaveWM/reagent-material-ui" ["l"="-23.724,-19.925"]
@@ -8111,14 +8510,21 @@ digraph G {
 "Otann/morse" ["l"="-23.888,-19.945"]
 "wdhowe/telegrambot-lib" ["l"="-23.89,-19.874"]
 "suvash/one-time" ["l"="-23.892,-19.844"]
+"kristianmandrup/datascript-tutorial" ["l"="-0.948,15.279", "c"=729]
 "raystubbs/zero" ["l"="-24.275,-20.324"]
 "AbhinavOmprakash/snitch" ["l"="-24.278,-20.283"]
 "lispyclouds/bblgum" ["l"="-24.736,-20.455"]
 "jsofra/data-scope" ["l"="-23.771,-19.834"]
-"lacuna/bifurcan" ["l"="-23.829,-20.207"]
-"kien/rainbow_parentheses.vim" ["l"="-14.845,-9.645"]
+"racket/racket" ["l"="-23.604,-21.518", "c"=182]
+"corpnewt/CorpBot.py" ["l"="-54.871,4.139", "c"=736]
+"likec4/likec4" ["l"="23.914,-30.811", "c"=1007]
+"soulspace-org/overarch" ["l"="-24.387,-20.384"]
 "day8/re-frame-async-flow-fx" ["l"="-23.673,-20.14"]
+"openkm/document-management-system" ["l"="12.824,-8.898", "c"=18]
 "raystubbs/subzero" ["l"="-24.323,-20.327"]
+"erikbern/git-of-theseus" ["l"="-13.842,-6.585", "c"=86]
+"lenazun/working-remotely" ["l"="26.683,-27.587", "c"=32]
+"raganwald-deprecated/homoiconic" ["l"="2.577,-35.608", "c"=171]
 "Datomic/simulant" ["l"="-23.548,-20.02"]
 "pjagielski/disclojure" ["l"="-23.463,-19.932"]
 "josephwilk/mud" ["l"="-23.479,-19.946"]
@@ -8126,15 +8532,13 @@ digraph G {
 "pranavrc/tenor" ["l"="-23.453,-19.966"]
 "richhickey/harmonikit" ["l"="-23.433,-19.92"]
 "pjagielski/disclojure-ui" ["l"="-23.474,-19.965"]
+"mozilla-services/heka" ["l"="3.837,-8.01", "c"=0]
 "sunng87/diehard" ["l"="-24.213,-20.133"]
-"soulspace-org/overarch" ["l"="-24.387,-20.384"]
 "seantempesta/cljs-react-navigation" ["l"="-23.731,-19.992"]
 "eponai/sulolive" ["l"="-23.771,-20.021"]
-"Clojure2D/clojure2d" ["l"="-23.97,-20.299"]
-"tsulej/GenerateMe" ["l"="34.419,24.315"]
 "Clojure2D/clojure2d-examples" ["l"="-24.085,-20.218"]
-"GlitchCodec/GLIC" ["l"="34.406,24.385"]
-"mikera/clisk" ["l"="35.26,24.051"]
+"GlitchCodec/GLIC" ["l"="34.406,24.385", "c"=329]
+"mikera/clisk" ["l"="35.26,24.051", "c"=98]
 "Engelberg/tarantella" ["l"="-23.388,-19.96"]
 "ryrobes/flowmaps" ["l"="-24.391,-20.346"]
 "ryrobes/rvbbit" ["l"="-24.346,-20.334"]
@@ -8147,60 +8551,75 @@ digraph G {
 "mikepound/opencubes" ["l"="-24.434,-18.941"]
 "taoensso/tempel" ["l"="-24.304,-20.412"]
 "tonsky/fast-edn" ["l"="-24.304,-20.382"]
+"DogLooksGood/parinfer-mode" ["l"="-16.663,-11.496", "c"=16]
 "clojure-vim/jazz.nvim" ["l"="-24.153,-20.76"]
 "clojure-vim/clojure.vim" ["l"="-24.183,-20.705"]
 "threatgrid/naga" ["l"="-23.841,-20.028"]
 "borkdude/clj2el" ["l"="-24.471,-20.56"]
 "cake" ["l"="-23.49,-20.617"]
+"dgutov/robe" ["l"="-17.049,-11.851", "c"=16]
 "PawelStroinski/dockerfile-stevia" ["l"="-24.26,-20.633"]
 "phronmophobic/clong" ["l"="-24.333,-20.408"]
 "esp-er/compose-graal-hello" ["l"="-24.26,-20.467"]
 "day8/re-frame-test" ["l"="-23.582,-20.048"]
 "jochu/clojure-mode" ["l"="-23.503,-20.65"]
-"evhub/coconut" ["l"="45.286,20.916"]
-"CodyReichert/awesome-cl" ["l"="-23.901,-21.614"]
-"clasp-developers/clasp" ["l"="-23.85,-21.571"]
-"racket/racket" ["l"="-23.604,-21.518"]
-"froggey/Mezzano" ["l"="-23.848,-21.597"]
+"kachayev/fn.py" ["l"="45.263,20.939", "c"=20]
+"CodyReichert/awesome-cl" ["l"="-23.901,-21.614", "c"=182]
+"clasp-developers/clasp" ["l"="-23.85,-21.571", "c"=182]
+"froggey/Mezzano" ["l"="-23.848,-21.597", "c"=182]
+"ieure/sicp" ["l"="2.638,-35.644", "c"=171]
+"sfermigier/awesome-functional-python" ["l"="45.276,20.963", "c"=20]
 "farrellm/scad-clj" ["l"="-24.116,-20.476"]
+"technomancy/emacs-starter-kit" ["l"="-16.832,-12.026", "c"=16]
+"pjagielski/awesome-live-coding-music" ["l"="39.503,6.499", "c"=869]
+"void-rs/void" ["l"="-9.929,-6.058", "c"=5]
 "aphyr/dom-top" ["l"="-24.353,-20.286"]
 "mhuebert/maria" ["l"="-23.908,-20.14"]
 "eginez/calvin" ["l"="-23.925,-20.016"]
+"logpy/logpy" ["l"="-1.868,-41.49", "c"=963]
+"vlime/vlime" ["l"="-24.038,-21.584", "c"=182]
+"kovisoft/slimv" ["l"="-24.054,-20.639"]
 "jeluard/hipo" ["l"="-23.389,-20.375"]
 "borkdude/html" ["l"="-24.362,-20.382"]
 "igrishaev/pg2" ["l"="-24.305,-20.343"]
 "vim-scripts/paredit.vim" ["l"="-24.112,-20.659"]
-"kovisoft/slimv" ["l"="-24.054,-20.639"]
-"vlime/vlime" ["l"="-24.038,-21.584"]
+"nvim-neorocks/lux" ["l"="-12.573,-10.043", "c"=21]
 "luminus-framework/luminus" ["l"="-23.786,-20.372"]
 "luminus-framework/luminus-template" ["l"="-23.812,-20.36"]
 "macchiato-framework/macchiato-template" ["l"="-23.752,-20.032"]
 "macchiato-framework/examples" ["l"="-23.776,-20.044"]
 "akiroz/re-frame-storage" ["l"="-23.683,-19.825"]
+"nasa/Common-Metadata-Repository" ["l"="19.508,14.073", "c"=868]
+"Mercury-Language/mercury" ["l"="-1.991,-41.411", "c"=963]
 "ioRekz/spectator" ["l"="-23.744,-19.933"]
 "Factual/drake" ["l"="-23.572,-20.273"]
-"flatland/drip" ["l"="45.967,18.53"]
-"pharmbio/sciluigi" ["l"="3.399,-9.324"]
-"jeroenjanssens/data-science-at-the-command-line" ["l"="40.218,35.365"]
-"wesm/feather" ["l"="40.382,35.274"]
+"flatland/drip" ["l"="45.967,18.53", "c"=52]
+"pharmbio/sciluigi" ["l"="3.399,-9.324", "c"=0]
+"jeroenjanssens/data-science-at-the-command-line" ["l"="40.218,35.365", "c"=51]
+"wesm/feather" ["l"="40.382,35.274", "c"=51]
 "phillord/tawny-owl" ["l"="-23.744,-19.601"]
 "eginez/huckleberry" ["l"="-23.946,-19.976"]
 "unravel-team/effective-agents-clj" ["l"="-24.281,-20.416"]
+"PumpkinDB/PumpkinDB" ["l"="-9.956,-5.842", "c"=5]
+"arkhipov/temporal_tables" ["l"="2.836,13.394", "c"=257]
 "Olical/dotfiles" ["l"="-24.107,-20.611"]
-"davidosomething/dotfiles" ["l"="-14.619,-8.677"]
+"davidosomething/dotfiles" ["l"="-14.619,-8.677", "c"=34]
 "tonsky/intellij-alabaster" ["l"="-24.557,-20.338"]
 "Unrepl/unrepl" ["l"="-23.968,-19.972"]
 "cgrand/macrovich" ["l"="-24.03,-19.894"]
 "clj-commons/potemkin" ["l"="-23.955,-20.108"]
+"inconvergent/snek" ["l"="36.135,24.003", "c"=98]
 "mpenet/hayt" ["l"="-23.983,-19.772"]
+"unclebob/fitnesse" ["l"="24.231,-31.948", "c"=304]
 "standupmaths/rolling_shutter" ["l"="-24.401,-19.024"]
-"gkbrk/slowloris" ["l"="-45.123,-24.868"]
-"Hopson97/MineCraft-One-Week-Challenge" ["l"="-23.514,-27.268"]
+"gkbrk/slowloris" ["l"="-45.123,-24.868", "c"=724]
+"Hopson97/MineCraft-One-Week-Challenge" ["l"="-23.514,-27.268", "c"=26]
 "wroberts/pydaedalus" ["l"="-24.452,-19.085"]
-"lukechampine/jsteg" ["l"="-41.959,-32.179"]
-"xoreaxeaxeax/sandsifter" ["l"="-16.497,-6.613"]
-"PlummersSoftwareLLC/Primes" ["l"="-46.271,-31.863"]
-"CodingTrain/website-archive" ["l"="34.46,24.072"]
+"lukechampine/jsteg" ["l"="-41.959,-32.179", "c"=984]
+"xoreaxeaxeax/sandsifter" ["l"="-16.497,-6.613", "c"=469]
+"PlummersSoftwareLLC/Primes" ["l"="-46.271,-31.863", "c"=41]
+"CodingTrain/website-archive" ["l"="34.46,24.072", "c"=329]
+"IronLanguages/main" ["l"="-34.866,-1.505", "c"=8]
 "full-spectrum/neo4clj" ["l"="-23.32,-20.813"]
 "metabase/toucan" ["l"="-23.89,-20.238"]
 "clojure/spec.alpha" ["l"="-24.089,-19.964"]
@@ -8209,30 +8628,34 @@ digraph G {
 "arsenerei/vim-sayid" ["l"="-24.194,-20.78"]
 "tonsky/clojure-plus" ["l"="-24.377,-20.42"]
 "joshuaeckroth/clj-ml" ["l"="-23.413,-19.821"]
-"matthiasn/sse-chat" ["l"="-2.302,18.453"]
+"edumentab/cqrs-starter-kit" ["l"="-34.277,-2.941", "c"=249]
+"jepsen-io/jepsen" ["l"="0.789,13.717", "c"=115]
+"lihaoyi/macropy" ["l"="45.219,20.885", "c"=20]
+"matthiasn/sse-chat" ["l"="-2.302,18.453", "c"=38]
 "alexd3rsan/rollingshutterpy" ["l"="-24.383,-19.008"]
-"Errichto/youtube" ["l"="30.238,-28.092"]
-"KalleHallden/ProjectInitializationAutomation" ["l"="58.757,-23.945"]
-"techwithtim/Sudoku-GUI-Solver" ["l"="59.926,34.316"]
-"CoreyMSchafer/code_snippets" ["l"="47.859,28.21"]
-"CoreyMSchafer/dotfiles" ["l"="-14.748,-8.853"]
-"rodrigobranas/youtube" ["l"="5.814,-20.154"]
-"code-charity/youtube" ["l"="-52.322,12.213"]
-"angelsix/youtube" ["l"="-36.543,1.039"]
-"kkdai/youtube" ["l"="3.536,-8.902"]
-"LukeSmithxyz/voidrice" ["l"="-14.198,-3.565"]
+"Errichto/youtube" ["l"="30.238,-28.092", "c"=273]
+"KalleHallden/ProjectInitializationAutomation" ["l"="58.757,-23.945", "c"=90]
+"techwithtim/Sudoku-GUI-Solver" ["l"="59.926,34.316", "c"=699]
+"CoreyMSchafer/code_snippets" ["l"="47.859,28.21", "c"=89]
+"rodrigobranas/youtube" ["l"="5.814,-20.154", "c"=96]
+"code-charity/youtube" ["l"="-52.322,12.213", "c"=266]
+"angelsix/youtube" ["l"="-36.543,1.039", "c"=137]
+"kkdai/youtube" ["l"="3.536,-8.902", "c"=0]
+"LukeSmithxyz/voidrice" ["l"="-14.198,-3.565", "c"=71]
+"shaunlebron/history-of-lisp-parens" ["l"="-4.975,-41.873", "c"=333]
 "brantou/ob-hy" ["l"="-24.366,-20.736"]
 "Calysto/calysto_hy" ["l"="-24.389,-20.749"]
 "clojurians-org/clojure-ebook-2" ["l"="-23.653,-20.719"]
 "dittoyi/clojure-ebook" ["l"="-23.643,-20.76"]
 "stuartsierra/dependency" ["l"="-24.184,-19.94"]
 "fulcro-legacy/fulcro-template" ["l"="-22.982,-20.162"]
+"bitly/data_hacks" ["l"="45.521,20.402", "c"=20]
 "wlangstroth/vim-racket" ["l"="-24.047,-20.735"]
-"roswell/roswell" ["l"="-23.903,-21.573"]
-"LispCookbook/cl-cookbook" ["l"="-23.953,-21.588"]
-"cl21/cl21" ["l"="-23.937,-21.577"]
-"koji-kojiro/cl-repl" ["l"="-24.118,-21.613"]
-"coleslaw-org/coleslaw" ["l"="-23.998,-21.535"]
+"roswell/roswell" ["l"="-23.903,-21.573", "c"=182]
+"LispCookbook/cl-cookbook" ["l"="-23.953,-21.588", "c"=182]
+"cl21/cl21" ["l"="-23.937,-21.577", "c"=182]
+"koji-kojiro/cl-repl" ["l"="-24.118,-21.613", "c"=182]
+"coleslaw-org/coleslaw" ["l"="-23.998,-21.535", "c"=182]
 "jkk/clojuresphere" ["l"="-23.323,-20.514"]
 "cemerick/rummage" ["l"="-23.324,-20.498"]
 "fulcro-legacy/fulcro-todomvc" ["l"="-22.994,-20.175"]

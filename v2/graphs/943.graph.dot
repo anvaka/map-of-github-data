@@ -22,6 +22,7 @@ digraph G {
 "Estimote/iOS-Fleet-Management-SDK" -> "mlwelles/BeaconScanner"
 "Estimote/iOS-Fleet-Management-SDK" -> "Estimote/iOS-Proximity-SDK"
 "Estimote/iOS-Fleet-Management-SDK" -> "Estimote/estimote-specs"
+"apache/mynewt-nimble" -> "bluez/bluez" ["e"=1]
 "IanHarvey/bluepy" -> "pybluez/pybluez"
 "IanHarvey/bluepy" -> "peplin/pygatt"
 "IanHarvey/bluepy" -> "hbldh/bleak"
@@ -52,6 +53,7 @@ digraph G {
 "noble/bleno" -> "noble/node-bluetooth-hci-socket"
 "noble/bleno" -> "dotintent/react-native-ble-plx" ["e"=1]
 "noble/bleno" -> "WebBluetoothCG/ble-test-peripheral-android"
+"blueman-project/blueman" -> "bluez/bluez" ["e"=1]
 "khvzak/bluez-tools" -> "carsonmcdonald/bluez-experiments"
 "hbldh/bleak" -> "IanHarvey/bluepy"
 "hbldh/bleak" -> "pybluez/pybluez"
@@ -68,6 +70,7 @@ digraph G {
 "hbldh/bleak" -> "labapart/gattlib"
 "hbldh/bleak" -> "pyocd/pyOCD" ["e"=1]
 "hbldh/bleak" -> "noble/noble"
+"sensboston/BLEConsole" -> "DerekGn/WinBle" ["e"=1]
 "sandeepmistry/node-bleacon" -> "don/node-eddystone-beacon"
 "sandeepmistry/node-bleacon" -> "Estimote/estimote-specs"
 "sandeepmistry/node-bleacon" -> "mschmulen/tracking-bluetooth-ibeacons-with-node"
@@ -91,6 +94,11 @@ digraph G {
 "Estimote/Android-Fleet-Management-SDK" -> "Vinayrraj/Android-iBeacon-Demo"
 "Estimote/Android-Fleet-Management-SDK" -> "Estimote/Estimote-WatchKit-SDK"
 "Estimote/Android-Fleet-Management-SDK" -> "romannurik/LayerVisualizer" ["e"=1]
+"alt236/Bluetooth-LE-Library---Android" -> "Vinayrraj/Android-iBeacon-Demo" ["e"=1]
+"node-hid/node-hid" -> "noble/noble" ["e"=1]
+"paypal/gatt" -> "noble/bleno" ["e"=1]
+"paypal/gatt" -> "noble/noble" ["e"=1]
+"paypal/gatt" -> "IanHarvey/bluepy" ["e"=1]
 "DexterInd/GrovePi" -> "Seeed-Studio/Wio_Link"
 "DexterInd/GrovePi" -> "Seeed-Studio/grove.py"
 "DexterInd/GrovePi" -> "DexterInd/GoPiGo"
@@ -106,6 +114,8 @@ digraph G {
 "lgaches/BeaconEmitter" -> "timd/MactsAsBeacon"
 "lgaches/BeaconEmitter" -> "ohayon/OWUProximityManager"
 "lgaches/BeaconEmitter" -> "gemtot/iBeacon"
+"petermetz/cordova-plugin-ibeacon" -> "sandeepmistry/node-bleacon" ["e"=1]
+"petermetz/cordova-plugin-ibeacon" -> "rabschi/awesome-beacon" ["e"=1]
 "Seeed-Studio/grove.py" -> "Seeed-Studio/Seeed_Python_DHT"
 "mlwelles/BeaconScanner" -> "liamnichols/iBeaconScanner"
 "mlwelles/BeaconScanner" -> "lgaches/BeaconEmitter"
@@ -117,6 +127,7 @@ digraph G {
 "mlwelles/BeaconScanner" -> "jpias/beacon-pfilter-simulation" ["e"=1]
 "mlwelles/BeaconScanner" -> "sandeepmistry/node-bleacon"
 "mlwelles/BeaconScanner" -> "Estimote/iOS-Fleet-Management-SDK"
+"evothings/phonegap-estimotebeacons" -> "sandeepmistry/node-bleacon" ["e"=1]
 "RadiusNetworks/android-ibeacon-service" -> "Vinayrraj/Android-iBeacon-Demo"
 "Vinayrraj/Android-iBeacon-Demo" -> "RadiusNetworks/android-ibeacon-service"
 "Vinayrraj/Android-iBeacon-Demo" -> "youten/iBeaconDetector"
@@ -176,6 +187,10 @@ digraph G {
 "don/node-eddystone-beacon" -> "evothings/cordova-eddystone" ["e"=1]
 "AltBeacon/spec" -> "RadiusNetworks/altbeacon-reference"
 "AltBeacon/spec" -> "AltBeacon/ios-beacon-tools"
+"AltBeacon/android-beacon-library" -> "AltBeacon/android-beacon-library-reference" ["e"=1]
+"AltBeacon/android-beacon-library" -> "google/eddystone" ["e"=1]
+"AltBeacon/android-beacon-library" -> "Estimote/Android-Fleet-Management-SDK" ["e"=1]
+"AltBeacon/android-beacon-library" -> "google/beacon-platform" ["e"=1]
 "AltBeacon/android-beacon-library-reference" -> "AltBeacon/android-beacon-library" ["e"=1]
 "AltBeacon/android-beacon-library-reference" -> "Vinayrraj/Android-iBeacon-Demo"
 "AltBeacon/android-beacon-library-reference" -> "justinodwyer/Beacon-Scanner-and-Logger"
@@ -226,6 +241,10 @@ digraph G {
 "google/physical-web" -> "GoogleChromeLabs/sw-toolbox" ["e"=1]
 "google/physical-web" -> "googlecreativelab/anypixel" ["e"=1]
 "google/physical-web" -> "noble/noble"
+"iDevicesInc/SweetBlue" -> "NordicPlayground/puck-central-android" ["e"=1]
+"iDevicesInc/SweetBlue" -> "WebBluetoothCG/ble-test-peripheral-android" ["e"=1]
+"don/cordova-plugin-ble-central" -> "noble/bleno" ["e"=1]
+"don/cordova-plugin-ble-central" -> "noble/noble" ["e"=1]
 "google/uribeacon" -> "google/physical-web"
 "google/uribeacon" -> "don/node-eddystone-beacon"
 "google/uribeacon" -> "google/eddystone"
@@ -253,6 +272,8 @@ digraph G {
 "Estimote/iOS-Indoor-SDK" -> "Estimote/estimote-specs"
 "kontaktio/kontakt-android-sdk" -> "kontaktio/kontakt-ios-sdk"
 "kontaktio/kontakt-android-sdk" -> "kontaktio/kontakt-beacon-admin-sample-app"
+"estherjk/face-detection-node-opencv" -> "estherjk/edi-cam" ["e"=1]
+"troystribling/BlueCap" -> "noble/bleno" ["e"=1]
 "WebBluetoothCG/web-bluetooth" -> "WebBluetoothCG/demos"
 "WebBluetoothCG/web-bluetooth" -> "noble/noble"
 "WebBluetoothCG/web-bluetooth" -> "google/physical-web"
@@ -288,12 +309,15 @@ digraph G {
 "google/beacon-platform" -> "google/physical-web"
 "google/beacon-platform" -> "google/uribeacon"
 "google/beacon-platform" -> "Vinayrraj/Android-iBeacon-Demo"
+"JsBergbau/MiTemperature2" -> "frawau/aioblescan" ["e"=1]
 "mgigirey/iBeaconSwiftOSX" -> "relevante/ibeacon-swift-tutorial"
+"empicano/aiomqtt" -> "altdesktop/python-dbus-next" ["e"=1]
 "gemtot/iBeacon" -> "mgigirey/iBeaconSwiftOSX"
 "gemtot/iBeacon" -> "pusateri/iBeacon"
 "gemtot/iBeacon" -> "relevante/ibeacon-swift-tutorial"
 "weliem/blessed-bluez" -> "hypfvieh/bluez-dbus"
 "weliem/blessed-bluez" -> "tongo/ble-java"
+"sj15712795029/bluetooth_stack" -> "bluez/bluez" ["e"=1]
 "bluez/bluez" -> "labapart/gattlib"
 "bluez/bluez" -> "sj15712795029/bluetooth_stack" ["e"=1]
 "bluez/bluez" -> "apache/mynewt-nimble" ["e"=1]
@@ -335,6 +359,8 @@ digraph G {
 "walter5138/hue_ble_python" -> "Mic92/hue-ble-ctl"
 "walter5138/hue_ble_python" -> "npaun/philble"
 "rexstjohn/edison-gatt" -> "intel-iot-devkit/bloop"
+"bluekitchen/btstack" -> "bluez/bluez" ["e"=1]
+"WICG/webusb" -> "WebBluetoothCG/web-bluetooth" ["e"=1]
 "googlearchive/android-nearby" -> "dlew/android-architecture-counter-sample" ["e"=1]
 "googlearchive/android-nearby" -> "google/beacon-platform"
 "googlearchive/android-nearby" -> "butchmarshall/react-native-google-nearby-connection"
@@ -388,6 +414,7 @@ digraph G {
 "simpleble/simpleble" -> "simpleble/python_simpleble"
 "simpleble/simpleble" -> "tinygo-org/bluetooth" ["e"=1]
 "simpleble/simpleble" -> "Kistler-Group/sdbus-cpp" ["e"=1]
+"adafruit/Adafruit_BluefruitLE_nRF51" -> "adafruit/Adafruit_Python_BluefruitLE" ["e"=1]
 "upnext/BeaconControl" -> "upnext/BeaconControl_iOS_SDK"
 "upnext/BeaconControl" -> "upnext/BeaconControl_Android_SDK"
 "adabru/BleWinrtDll" -> "Joelx/BleWinrtDll-Unity-Demo"
@@ -431,6 +458,7 @@ digraph G {
 "avinabmalla/ESP32_BleSerial" -> "iot-bus/BLESerial"
 "upnext/BeaconControl_iOS_SDK" -> "upnext/BeaconControl_Android_SDK"
 "w4ilun/Intel-XDK-IoT-Samples" -> "w4ilun/mashery-intel-xdk-demos"
+"pyserial/pyserial" -> "pybluez/pybluez" ["e"=1]
 "bailuk/java-gtk" -> "jwharm/java-gi"
 "google/bumble" -> "google/rootcanal"
 "google/bumble" -> "google/avatar"
@@ -477,11 +505,13 @@ digraph G {
 "intel-iot-devkit/how-to-code-samples" -> "nayananik/question.c-"
 "intel-iot-devkit/how-to-code-samples" -> "JayrajShah/RegistrationForm-JSP"
 "intel-iot-devkit/how-to-code-samples" -> "eclipse-upm/upm"
+"node-usb/node-usb" -> "noble/noble" ["e"=1]
 "Velorexe/Unity-Android-Bluetooth-Low-Energy" -> "Velorexe/Unity-Android-Bluetooth-Low-Energy-Java-Library"
 "Velorexe/Unity-Android-Bluetooth-Low-Energy" -> "bentalebahmed/BlueUnity"
 "Velorexe/Unity-Android-Bluetooth-Low-Energy" -> "fuziki/UnityCoreBluetooth"
 "dermike/slide-beacon-app" -> "dermike/physical-web-scan-app"
 "intel-iot-devkit/aws-iot-intel" -> "intel-iot-devkit/intel-iot-examples-datastore"
+"jnross/Bluetility" -> "abandonware/noble" ["e"=1]
 "Seeed-Studio/Wio_Link" -> "Seeed-Studio/wio-cli"
 "Seeed-Studio/Wio_Link" -> "Seeed-Studio/Grove_Drivers_for_Wio"
 "Seeed-Studio/Wio_Link" -> "Seeed-Studio/Wio_Link_Android_App"
@@ -520,6 +550,8 @@ digraph G {
 "jrowberg/bglib" -> "peplin/pygatt"
 "eelcocramer/node-bluetooth-serial-port" -> "lsongdev/node-bluetooth"
 "eelcocramer/node-bluetooth-serial-port" -> "noble/noble"
+"arkq/bluez-alsa" -> "bluez/bluez" ["e"=1]
+"arkq/bluez-alsa" -> "labapart/gattlib" ["e"=1]
 "edrosten/libblepp" -> "labapart/gattlib"
 "edrosten/libblepp" -> "TorstenRobitzki/bluetoe"
 "edrosten/libblepp" -> "Agamnentzar/bluetooth-serial-port"
@@ -548,6 +580,8 @@ digraph G {
 "noble/noble" -> "sandeepmistry/arduino-nRF5" ["e"=1]
 "DexterInd/BrickPi3" -> "DexterInd/BrickPi"
 "DexterInd/BrickPi3" -> "DexterInd/Raspbian_For_Robots"
+"serialport/node-serialport" -> "noble/noble" ["e"=1]
+"inthehand/32feet" -> "adabru/BleWinrtDll" ["e"=1]
 "hypfvieh/bluez-dbus" -> "hypfvieh/dbus-java"
 "hypfvieh/bluez-dbus" -> "weliem/blessed-bluez"
 "hypfvieh/bluez-dbus" -> "olir/lbt4j"
@@ -584,13 +618,13 @@ digraph G {
 "adafruit/Adafruit_Python_BluefruitLE" ["l"="-15.873,-44.74"]
 "ukBaz/python-bluezero" ["l"="-15.901,-44.749"]
 "jrowberg/bglib" ["l"="-15.944,-44.741"]
-"nccgroup/BLESuite" ["l"="-44.819,-32.853"]
+"nccgroup/BLESuite" ["l"="-44.819,-32.853", "c"=53]
 "pybluez/pybluez" ["l"="-15.856,-44.711"]
 "hbldh/bleak" ["l"="-15.839,-44.74"]
 "labapart/gattlib" ["l"="-15.84,-44.773"]
 "karulis/pybluez" ["l"="-15.842,-44.692"]
-"securing/gattacker" ["l"="-44.883,-32.831"]
-"DigitalSecurity/btlejuice" ["l"="-44.865,-32.841"]
+"securing/gattacker" ["l"="-44.883,-32.831", "c"=53]
+"DigitalSecurity/btlejuice" ["l"="-44.865,-32.841", "c"=53]
 "noble/noble" ["l"="-15.894,-44.65"]
 "noble/bleno" ["l"="-15.914,-44.634"]
 "pybluez/pygattlib-abandoned" ["l"="-15.873,-44.695"]
@@ -603,42 +637,48 @@ digraph G {
 "mlwelles/BeaconScanner" ["l"="-16.113,-44.57"]
 "Estimote/iOS-Proximity-SDK" ["l"="-16.079,-44.551"]
 "Estimote/estimote-specs" ["l"="-16.046,-44.588"]
-"NordicSemiconductor/pc-ble-driver" ["l"="-15.914,-43.568"]
-"paypal/gatt" ["l"="-16.224,-45.731"]
-"bluekitchen/btstack" ["l"="-17.672,-43.174"]
+"apache/mynewt-nimble" ["l"="-17.675,-43.139", "c"=55]
+"bluez/bluez" ["l"="-15.815,-44.765"]
+"NordicSemiconductor/pc-ble-driver" ["l"="-15.914,-43.568", "c"=989]
+"paypal/gatt" ["l"="-16.224,-45.731", "c"=1284]
+"bluekitchen/btstack" ["l"="-17.672,-43.174", "c"=55]
 "TheCellule/python-bleson" ["l"="-15.927,-44.727"]
-"greatscottgadgets/ubertooth" ["l"="-44.927,-32.8"]
+"greatscottgadgets/ubertooth" ["l"="-44.927,-32.8", "c"=53]
 "don/node-eddystone-beacon" ["l"="-15.977,-44.585"]
 "abandonware/bleno" ["l"="-15.877,-44.587"]
-"troystribling/BlueCap" ["l"="-15.995,-43.51"]
+"troystribling/BlueCap" ["l"="-15.995,-43.51", "c"=989]
 "google/eddystone" ["l"="-15.958,-44.596"]
 "WebBluetoothCG/web-bluetooth" ["l"="-15.969,-44.65"]
-"don/cordova-plugin-ble-central" ["l"="8.629,-24.542"]
+"don/cordova-plugin-ble-central" ["l"="8.629,-24.542", "c"=230]
 "noble/node-bluetooth-hci-socket" ["l"="-15.863,-44.63"]
-"dotintent/react-native-ble-plx" ["l"="3.556,-28.31"]
+"dotintent/react-native-ble-plx" ["l"="3.556,-28.31", "c"=23]
 "WebBluetoothCG/ble-test-peripheral-android" ["l"="-15.977,-44.685"]
+"blueman-project/blueman" ["l"="-14.572,-3.616", "c"=71]
 "khvzak/bluez-tools" ["l"="-15.833,-44.866"]
 "carsonmcdonald/bluez-experiments" ["l"="-15.825,-44.82"]
 "kevincar/bless" ["l"="-15.874,-44.768"]
 "simpleble/simpleble" ["l"="-15.767,-44.782"]
-"bluez/bluez" ["l"="-15.815,-44.765"]
-"nrfconnect/sdk-nrf" ["l"="-15.98,-43.599"]
+"nrfconnect/sdk-nrf" ["l"="-15.98,-43.599", "c"=989]
 "Jakeler/ble-serial" ["l"="-15.886,-44.829"]
-"pyocd/pyOCD" ["l"="-17.691,-43.128"]
+"pyocd/pyOCD" ["l"="-17.691,-43.128", "c"=55]
+"sensboston/BLEConsole" ["l"="-37.194,-2.061", "c"=113]
+"DerekGn/WinBle" ["l"="-15.679,-44.811"]
 "mschmulen/tracking-bluetooth-ibeacons-with-node" ["l"="-16.052,-44.62"]
 "switchdoclabs/iBeacon-Scanner-" ["l"="-16.059,-44.639"]
 "sandeepmistry/node-eddystone-beacon-scanner" ["l"="-16.008,-44.577"]
-"petermetz/cordova-plugin-ibeacon" ["l"="8.652,-24.569"]
-"evothings/phonegap-estimotebeacons" ["l"="8.704,-24.566"]
-"frostney/react-native-ibeacon" ["l"="3.27,-28.622"]
+"petermetz/cordova-plugin-ibeacon" ["l"="8.652,-24.569", "c"=230]
+"evothings/phonegap-estimotebeacons" ["l"="8.704,-24.566", "c"=230]
+"frostney/react-native-ibeacon" ["l"="3.27,-28.622", "c"=23]
 "google/beacon-platform" ["l"="-15.994,-44.563"]
-"AltBeacon/android-beacon-library" ["l"="59.645,-13.179"]
+"AltBeacon/android-beacon-library" ["l"="59.645,-13.179", "c"=9]
 "Estimote/Android-Proximity-SDK" ["l"="-16.074,-44.533"]
 "Estimote/Android-Indoor-SDK" ["l"="-16.053,-44.54"]
 "AltBeacon/android-beacon-library-reference" ["l"="-16.003,-44.524"]
 "kontaktio/kontakt-android-sdk" ["l"="-16.06,-44.485"]
 "Vinayrraj/Android-iBeacon-Demo" ["l"="-16.016,-44.513"]
-"romannurik/LayerVisualizer" ["l"="56.984,-14.12"]
+"romannurik/LayerVisualizer" ["l"="56.984,-14.12", "c"=123]
+"alt236/Bluetooth-LE-Library---Android" ["l"="59.767,-13.233", "c"=9]
+"node-hid/node-hid" ["l"="-16.195,-45.264", "c"=1252]
 "DexterInd/GrovePi" ["l"="-15.56,-44.458"]
 "Seeed-Studio/Wio_Link" ["l"="-15.487,-44.454"]
 "Seeed-Studio/grove.py" ["l"="-15.526,-44.477"]
@@ -649,20 +689,20 @@ digraph G {
 "Seeed-Studio/Grove_LCD_RGB_Backlight" ["l"="-15.531,-44.439"]
 "SeeedDocument/wiki_english" ["l"="-15.564,-44.43"]
 "estherjk/edi-cam" ["l"="-15.635,-44.495"]
-"adafruit/Adafruit-Raspberry-Pi-Python-Code" ["l"="-13.689,-41.454"]
+"adafruit/Adafruit-Raspberry-Pi-Python-Code" ["l"="-13.689,-41.454", "c"=812]
 "Seeed-Studio/Grove-RaspberryPi" ["l"="-15.584,-44.441"]
 "lgaches/BeaconEmitter" ["l"="-16.183,-44.554"]
 "timd/MactsAsBeacon" ["l"="-16.219,-44.543"]
 "ohayon/OWUProximityManager" ["l"="-16.226,-44.565"]
 "gemtot/iBeacon" ["l"="-16.216,-44.522"]
+"rabschi/awesome-beacon" ["l"="-16.032,-44.602"]
 "Seeed-Studio/Seeed_Python_DHT" ["l"="-15.506,-44.488"]
 "liamnichols/iBeaconScanner" ["l"="-16.137,-44.547"]
 "mttrb/BeaconOSX" ["l"="-16.152,-44.565"]
-"rabschi/awesome-beacon" ["l"="-16.032,-44.602"]
 "panicinc/PunchClock" ["l"="-16.161,-44.595"]
 "AltBeacon/ios-beacon-tools" ["l"="-16.1,-44.534"]
 "mgigirey/iBeaconSwiftOSX" ["l"="-16.188,-44.532"]
-"jpias/beacon-pfilter-simulation" ["l"="23.861,-26.15"]
+"jpias/beacon-pfilter-simulation" ["l"="23.861,-26.15", "c"=28]
 "RadiusNetworks/android-ibeacon-service" ["l"="-16.009,-44.497"]
 "youten/iBeaconDetector" ["l"="-16.023,-44.484"]
 "Kinvey/KCSIBeacon" ["l"="-16.27,-44.478"]
@@ -690,7 +730,7 @@ digraph G {
 "bentalebahmed/BlueUnity" ["l"="-15.521,-44.85"]
 "Velorexe/Unity-Android-Bluetooth-Low-Energy" ["l"="-15.55,-44.852"]
 "badranX/bt-lib" ["l"="-15.495,-44.853"]
-"LukasBombach/de1" ["l"="60.692,0.105"]
+"LukasBombach/de1" ["l"="60.692,0.105", "c"=121]
 "nettlep/gobbledegook" ["l"="-15.828,-44.804"]
 "evanslai/bluez-gatt" ["l"="-15.845,-44.805"]
 "intel-iot-devkit/tinyb" ["l"="-15.804,-44.808"]
@@ -708,7 +748,7 @@ digraph G {
 "google/uribeacon" ["l"="-15.995,-44.59"]
 "dermike/physical-web-scan" ["l"="-15.968,-44.562"]
 "forksociety/PyBeacon" ["l"="-15.972,-44.55"]
-"evothings/cordova-eddystone" ["l"="8.726,-24.562"]
+"evothings/cordova-eddystone" ["l"="8.726,-24.562", "c"=230]
 "AltBeacon/spec" ["l"="-16.047,-44.521"]
 "RadiusNetworks/altbeacon-reference" ["l"="-16.069,-44.503"]
 "justinodwyer/Beacon-Scanner-and-Logger" ["l"="-15.985,-44.498"]
@@ -718,30 +758,33 @@ digraph G {
 "w4ilun/edison-guides" ["l"="-15.672,-44.498"]
 "intel-iot-devkit/aws-iot-intel" ["l"="-15.667,-44.545"]
 "intel-iot-devkit/how-to-code-samples" ["l"="-15.633,-44.537"]
-"MediaTek-Labs/linkit-smart-7688-feed" ["l"="-15.321,-40.211"]
+"MediaTek-Labs/linkit-smart-7688-feed" ["l"="-15.321,-40.211", "c"=64]
 "96boards/documentation" ["l"="-15.655,-44.58"]
 "intel-iot-devkit/iotkit-comm-c" ["l"="-15.689,-44.524"]
 "intel/intel-iot-services-orchestration-layer" ["l"="-15.741,-44.539"]
-"aws/aws-iot-device-sdk-embedded-C" ["l"="12.063,-3.243"]
+"aws/aws-iot-device-sdk-embedded-C" ["l"="12.063,-3.243", "c"=734]
 "solettaproject/soletta" ["l"="-15.704,-44.499"]
 "intel-iot-devkit/intel-iot-gateway" ["l"="-15.618,-44.519"]
 "rexstjohn/edison-gatt" ["l"="-15.655,-44.487"]
 "intel-iot-devkit/joule-code-samples" ["l"="-15.608,-44.499"]
 "avinabmalla/ESP32_BleSerial" ["l"="-15.907,-44.864"]
 "google/physical-web" ["l"="-15.982,-44.616"]
-"google/lovefield" ["l"="22.746,-26.851"]
-"GoogleChromeLabs/sw-precache" ["l"="0.284,-29.575"]
-"Polymer/polymer-starter-kit" ["l"="-8.498,-24.773"]
-"google/WebFundamentals" ["l"="27.08,-26.031"]
-"alexa/alexa-avs-sample-app" ["l"="35.479,1.445"]
-"GoogleChromeLabs/sw-toolbox" ["l"="0.226,-29.636"]
-"googlecreativelab/anypixel" ["l"="22.947,-27.019"]
+"google/lovefield" ["l"="22.746,-26.851", "c"=28]
+"GoogleChromeLabs/sw-precache" ["l"="0.284,-29.575", "c"=12]
+"Polymer/polymer-starter-kit" ["l"="-8.498,-24.773", "c"=454]
+"google/WebFundamentals" ["l"="27.08,-26.031", "c"=32]
+"alexa/alexa-avs-sample-app" ["l"="35.479,1.445", "c"=1086]
+"GoogleChromeLabs/sw-toolbox" ["l"="0.226,-29.636", "c"=12]
+"googlecreativelab/anypixel" ["l"="22.947,-27.019", "c"=28]
+"iDevicesInc/SweetBlue" ["l"="-15.691,-43.518", "c"=989]
+"NordicPlayground/puck-central-android" ["l"="-16.054,-44.741"]
 "citruz/beacontools" ["l"="-16.047,-44.658"]
 "upnext/BeaconControl" ["l"="-16.104,-44.625"]
 "kontaktio/kontakt-ios-sdk" ["l"="-16.063,-44.462"]
 "kontaktio/kontakt-beacon-admin-sample-app" ["l"="-16.081,-44.472"]
+"estherjk/face-detection-node-opencv" ["l"="-31.599,-35.471", "c"=272]
 "WebBluetoothCG/demos" ["l"="-16.005,-44.669"]
-"WICG/webusb" ["l"="-16.259,-45.308"]
+"WICG/webusb" ["l"="-16.259,-45.308", "c"=1252]
 "thegecko/webbluetooth" ["l"="-16.018,-44.652"]
 "WebBluetoothCG/chrome-app-polyfill" ["l"="-15.958,-44.673"]
 "manekinekko/angular-web-bluetooth" ["l"="-16.009,-44.688"]
@@ -752,17 +795,18 @@ digraph G {
 "panicinc/PunchClockServer" ["l"="-16.191,-44.602"]
 "googlearchive/android-nearby" ["l"="-15.942,-44.558"]
 "devunwired/proximity-manager" ["l"="-15.986,-44.539"]
+"JsBergbau/MiTemperature2" ["l"="-15.153,-39.547", "c"=64]
+"frawau/aioblescan" ["l"="-15.984,-44.714"]
 "relevante/ibeacon-swift-tutorial" ["l"="-16.222,-44.505"]
+"empicano/aiomqtt" ["l"="-17.75,-44.766", "c"=550]
 "pusateri/iBeacon" ["l"="-16.243,-44.517"]
 "weliem/blessed-bluez" ["l"="-15.764,-44.839"]
 "hypfvieh/bluez-dbus" ["l"="-15.743,-44.849"]
 "tongo/ble-java" ["l"="-15.787,-44.836"]
-"sj15712795029/bluetooth_stack" ["l"="-17.599,-43.121"]
-"apache/mynewt-nimble" ["l"="-17.675,-43.139"]
-"arkq/bluez-alsa" ["l"="40.886,7.175"]
-"bluez/bluer" ["l"="-8.123,-5.703"]
-"blueman-project/blueman" ["l"="-14.572,-3.616"]
-"packetcraft-inc/stacks" ["l"="-16.03,-43.686"]
+"sj15712795029/bluetooth_stack" ["l"="-17.599,-43.121", "c"=55]
+"arkq/bluez-alsa" ["l"="40.886,7.175", "c"=602]
+"bluez/bluer" ["l"="-8.123,-5.703", "c"=384]
+"packetcraft-inc/stacks" ["l"="-16.03,-43.686", "c"=989]
 "edrosten/libblepp" ["l"="-15.795,-44.786"]
 "switchdoclabs/BeaconAirPython" ["l"="-16.084,-44.641"]
 "adamf/BLE" ["l"="-16.096,-44.65"]
@@ -774,27 +818,27 @@ digraph G {
 "w4ilun/mashery-intel-xdk-demos" ["l"="-15.675,-44.449"]
 "intel-iot-devkit/iotkit-comm-js" ["l"="-15.709,-44.518"]
 "Mic92/hue-ble-ctl" ["l"="-15.775,-44.736"]
-"dlew/android-architecture-counter-sample" ["l"="57.098,-14.081"]
+"dlew/android-architecture-counter-sample" ["l"="57.098,-14.081", "c"=123]
 "butchmarshall/react-native-google-nearby-connection" ["l"="-15.916,-44.537"]
-"googlearchive/android-OurStreets" ["l"="56.838,-13.969"]
-"googlearchive/android-XYZTouristAttractions" ["l"="56.434,-13.887"]
-"AndroidStudyGroup/conferences" ["l"="57.026,-14.129"]
-"googlearchive/android-instant-apps" ["l"="51.918,-13.667"]
-"pyserial/pyserial" ["l"="-17.144,-45.848"]
-"pentestfunctions/BlueDucky" ["l"="54.191,3.547"]
-"android/topeka" ["l"="56.88,-14.289"]
-"mortenjust/androidtool-mac" ["l"="56.863,-14.18"]
-"bluelinelabs/LoganSquare" ["l"="56.882,-14.082"]
+"googlearchive/android-OurStreets" ["l"="56.838,-13.969", "c"=123]
+"googlearchive/android-XYZTouristAttractions" ["l"="56.434,-13.887", "c"=123]
+"AndroidStudyGroup/conferences" ["l"="57.026,-14.129", "c"=123]
+"googlearchive/android-instant-apps" ["l"="51.918,-13.667", "c"=231]
+"pyserial/pyserial" ["l"="-17.144,-45.848", "c"=366]
+"pentestfunctions/BlueDucky" ["l"="54.191,3.547", "c"=379]
+"android/topeka" ["l"="56.88,-14.289", "c"=123]
+"mortenjust/androidtool-mac" ["l"="56.863,-14.18", "c"=123]
+"bluelinelabs/LoganSquare" ["l"="56.882,-14.082", "c"=123]
 "eriklins/InsideBlue-BLE-Tool" ["l"="-15.716,-44.788"]
 "GDWired/GDSimpleBLE" ["l"="-15.736,-44.767"]
-"DerekGn/WinBle" ["l"="-15.679,-44.811"]
 "google/bumble" ["l"="-15.758,-44.861"]
 "pisontechnology/nativeble" ["l"="-15.733,-44.779"]
-"atomicobject/heatshrink" ["l"="-17.851,-43.078"]
-"brainflow-dev/brainflow" ["l"="61.95,34.367"]
+"atomicobject/heatshrink" ["l"="-17.851,-43.078", "c"=55]
+"brainflow-dev/brainflow" ["l"="61.95,34.367", "c"=405]
 "simpleble/python_simpleble" ["l"="-15.736,-44.793"]
-"tinygo-org/bluetooth" ["l"="-16.246,-45.725"]
-"Kistler-Group/sdbus-cpp" ["l"="-40.889,-34.004"]
+"tinygo-org/bluetooth" ["l"="-16.246,-45.725", "c"=1284]
+"Kistler-Group/sdbus-cpp" ["l"="-40.889,-34.004", "c"=360]
+"adafruit/Adafruit_BluefruitLE_nRF51" ["l"="-53.228,-11.452", "c"=400]
 "upnext/BeaconControl_iOS_SDK" ["l"="-16.131,-44.63"]
 "upnext/BeaconControl_Android_SDK" ["l"="-16.13,-44.64"]
 "adabru/BleWinrtDll" ["l"="-15.607,-44.836"]
@@ -802,22 +846,20 @@ digraph G {
 "Linaro/documentation" ["l"="-15.619,-44.578"]
 "96boards-hikey/tools-images-hikey960" ["l"="-15.611,-44.594"]
 "96boards-hikey/linux" ["l"="-15.636,-44.606"]
-"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254"]
-"openpst/sahara" ["l"="-56.569,11.994"]
+"ARM-software/arm-trusted-firmware" ["l"="-17.793,-43.254", "c"=55]
+"openpst/sahara" ["l"="-56.569,11.994", "c"=883]
 "96boards/mezzanine-community" ["l"="-15.632,-44.592"]
 "ostroproject/ostro-os" ["l"="-15.723,-44.471"]
 "solettaproject/soletta-machine-learning" ["l"="-15.702,-44.479"]
-"adafruit/adafruit-bluefruit-le-desktop" ["l"="-53.282,-11.43"]
-"adafruit/Adafruit_BluefruitLE_nRF51" ["l"="-53.228,-11.452"]
+"adafruit/adafruit-bluefruit-le-desktop" ["l"="-53.282,-11.43", "c"=400]
 "matthewelse/bleep" ["l"="-15.894,-44.766"]
-"adafruit/Adafruit_CircuitPython_BLE" ["l"="-19.915,-43.074"]
-"NordicSemiconductor/pc-ble-driver-py" ["l"="-15.871,-43.57"]
-"adafruit/Bluefruit_LE_Connect_v2" ["l"="-53.218,-11.428"]
-"NordicSemiconductor/pc-nrfutil" ["l"="-15.883,-43.54"]
+"adafruit/Adafruit_CircuitPython_BLE" ["l"="-19.915,-43.074", "c"=856]
+"NordicSemiconductor/pc-ble-driver-py" ["l"="-15.871,-43.57", "c"=989]
+"adafruit/Bluefruit_LE_Connect_v2" ["l"="-53.218,-11.428", "c"=400]
+"NordicSemiconductor/pc-nrfutil" ["l"="-15.883,-43.54", "c"=989]
 "devunwired/accessory-samples" ["l"="-16.02,-44.718"]
-"kshoji/BLE-HID-Peripheral-for-Android" ["l"="-47.366,-25.529"]
-"OnlyInAmerica/BLEMeshChat" ["l"="-15.847,-43.692"]
-"iDevicesInc/SweetBlue" ["l"="-15.691,-43.518"]
+"kshoji/BLE-HID-Peripheral-for-Android" ["l"="-47.366,-25.529", "c"=70]
+"OnlyInAmerica/BLEMeshChat" ["l"="-15.847,-43.692", "c"=989]
 "btframework/Wireless-Communication-Library-Unity-Samples" ["l"="-15.59,-44.868"]
 "iot-bus/BLESerial" ["l"="-15.918,-44.881"]
 "bailuk/java-gtk" ["l"="-15.669,-44.957"]
@@ -826,12 +868,11 @@ digraph G {
 "google/avatar" ["l"="-15.765,-44.881"]
 "google/bt-test-interfaces" ["l"="-15.75,-44.878"]
 "Adam-Langley/pybleno" ["l"="-15.957,-44.768"]
-"frawau/aioblescan" ["l"="-15.984,-44.714"]
 "colin-guyon/py-bluetooth-utils" ["l"="-15.938,-44.763"]
 "sputnikdev/bluetooth-manager" ["l"="-15.772,-44.826"]
 "sputnikdev/bluetooth-manager-tinyb" ["l"="-15.804,-44.83"]
-"movisens/SmartGattLib" ["l"="-15.625,-43.492"]
-"sandeepmistry/arduino-BLEPeripheral" ["l"="-53.137,-11.542"]
+"movisens/SmartGattLib" ["l"="-15.625,-43.492", "c"=989]
+"sandeepmistry/arduino-BLEPeripheral" ["l"="-53.137,-11.542", "c"=400]
 "WebBluetoothCG/registries" ["l"="-16.039,-44.678"]
 "yossi-eynav/ble-heart-rate-demo" ["l"="-16.035,-44.69"]
 "intel-iot-devkit/intel-iot-examples-datastore" ["l"="-15.645,-44.55"]
@@ -841,16 +882,17 @@ digraph G {
 "jayraj-13/jayraj-13.Github.io" ["l"="-15.604,-44.55"]
 "nayananik/question.c-" ["l"="-15.599,-44.53"]
 "JayrajShah/RegistrationForm-JSP" ["l"="-15.619,-44.553"]
+"node-usb/node-usb" ["l"="-16.157,-45.252", "c"=1252]
 "Velorexe/Unity-Android-Bluetooth-Low-Energy-Java-Library" ["l"="-15.553,-44.867"]
 "fuziki/UnityCoreBluetooth" ["l"="-15.529,-44.872"]
 "dermike/physical-web-scan-app" ["l"="-15.937,-44.501"]
+"jnross/Bluetility" ["l"="-53.281,-12.796", "c"=686]
 "Seeed-Studio/wio-cli" ["l"="-15.456,-44.447"]
 "Seeed-Studio/Grove_Drivers_for_Wio" ["l"="-15.473,-44.439"]
 "Seeed-Studio/Wio_Link_Android_App" ["l"="-15.459,-44.461"]
 "WarriorRocker/node-red-contrib-wio-seeed" ["l"="-15.473,-44.468"]
 "96boards/96boards-tools" ["l"="-15.669,-44.61"]
 "kontaktio/kontakt-ios-sdk-workshop" ["l"="-16.07,-44.444"]
-"NordicPlayground/puck-central-android" ["l"="-16.054,-44.741"]
 "jjjsmit/BluetoothBLEClient" ["l"="-15.865,-44.803"]
 "gbrault/gattclient" ["l"="-15.794,-44.758"]
 "psychogenic/gattlibpp" ["l"="-15.862,-44.787"]
@@ -863,11 +905,11 @@ digraph G {
 "eelcocramer/node-bluetooth-serial-port" ["l"="-15.829,-44.647"]
 "lsongdev/node-bluetooth" ["l"="-15.777,-44.643"]
 "Agamnentzar/bluetooth-serial-port" ["l"="-15.748,-44.808"]
-"serialport/node-serialport" ["l"="-16.188,-45.22"]
-"node-usb/node-usb" ["l"="-16.157,-45.252"]
-"sandeepmistry/arduino-nRF5" ["l"="-53.066,-11.703"]
+"serialport/node-serialport" ["l"="-16.188,-45.22", "c"=1252]
+"sandeepmistry/arduino-nRF5" ["l"="-53.066,-11.703", "c"=400]
 "DexterInd/BrickPi3" ["l"="-15.438,-44.345"]
 "DexterInd/BrickPi" ["l"="-15.418,-44.329"]
+"inthehand/32feet" ["l"="-37.017,-2.187", "c"=113]
 "hypfvieh/dbus-java" ["l"="-15.711,-44.884"]
 "olir/lbt4j" ["l"="-15.716,-44.856"]
 "ukBaz/BLE_GATT" ["l"="-15.88,-44.78"]

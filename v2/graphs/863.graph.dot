@@ -30,6 +30,8 @@ digraph G {
 "ITensor/ITensors.jl" -> "netket/netket"
 "ITensor/ITensors.jl" -> "QuSpin/QuSpin"
 "ITensor/ITensors.jl" -> "QuantumBFS/Yao.jl" ["e"=1]
+"qutip/qutip-notebooks" -> "QuSpin/QuSpin" ["e"=1]
+"qutip/qutip-notebooks" -> "qojulia/QuantumOptics.jl" ["e"=1]
 "google/TensorNetwork" -> "jcmgray/quimb"
 "google/TensorNetwork" -> "tenpy/tenpy"
 "google/TensorNetwork" -> "ITensor/ITensors.jl"
@@ -45,6 +47,12 @@ digraph G {
 "google/TensorNetwork" -> "wangleiphy/tensorgrad"
 "google/TensorNetwork" -> "dgasmith/opt_einsum"
 "google/TensorNetwork" -> "PennyLaneAI/pennylane" ["e"=1]
+"mpi4py/mpi4py" -> "cyclops-community/ctf" ["e"=1]
+"mpi4py/mpi4py" -> "jcmgray/quimb" ["e"=1]
+"mpi4py/mpi4py" -> "dgasmith/opt_einsum" ["e"=1]
+"mpi4py/mpi4py" -> "ITensor/ITensor" ["e"=1]
+"MerkulovDaniil/optim" -> "musco-ai/musco-pytorch" ["e"=1]
+"opencollab/arpack-ng" -> "pomerol-ed/pomerol" ["e"=1]
 "jacobgil/pytorch-tensor-decompositions" -> "ruihangdu/Decompose-CNN"
 "jacobgil/pytorch-tensor-decompositions" -> "JeanKossaifi/tensorly-notebooks"
 "jacobgil/pytorch-tensor-decompositions" -> "Bihaqo/t3f"
@@ -57,6 +65,7 @@ digraph G {
 "jacobgil/pytorch-tensor-decompositions" -> "xwcao/LowRankTRN"
 "jacobgil/pytorch-tensor-decompositions" -> "tnbar/tednet"
 "jacobgil/pytorch-tensor-decompositions" -> "chengtaipu/lowrankcnn"
+"kokkos/mdspan" -> "ValeevGroup/tiledarray" ["e"=1]
 "awietek/ed_basics" -> "jhauschild/lecture_comp_methods"
 "awietek/ed_basics" -> "ryuikaneko/exact_diagonalization"
 "awietek/ed_basics" -> "Haokai-Zhang/EasyMPS"
@@ -64,6 +73,22 @@ digraph G {
 "iitis/QSWalk.jl" -> "iitis/QuantumWalk.jl"
 "iitis/QSWalk.jl" -> "jmiszczak/qi"
 "iitis/QuantumWalk.jl" -> "iitis/QSWalk.jl"
+"QuantumBFS/Yao.jl" -> "qojulia/QuantumOptics.jl" ["e"=1]
+"QuantumBFS/Yao.jl" -> "jcmgray/quimb" ["e"=1]
+"QuantumBFS/Yao.jl" -> "ITensor/ITensors.jl" ["e"=1]
+"QuantumBFS/Yao.jl" -> "Jutho/TensorOperations.jl" ["e"=1]
+"QuantumBFS/Yao.jl" -> "netket/netket" ["e"=1]
+"QuantumBFS/Yao.jl" -> "QuantumBFS/SSSS" ["e"=1]
+"QuantumBFS/Yao.jl" -> "tenpy/tenpy" ["e"=1]
+"Roger-luo/Brochure.jl" -> "under-Peter/OMEinsum.jl" ["e"=1]
+"Roger-luo/Brochure.jl" -> "QuantumBFS/SSSS" ["e"=1]
+"Roger-luo/Brochure.jl" -> "Jutho/TNSchool2018" ["e"=1]
+"Roger-luo/Brochure.jl" -> "under-Peter/TensorNetworkAD.jl" ["e"=1]
+"Roger-luo/Brochure.jl" -> "b1592/ad-peps" ["e"=1]
+"Roger-luo/Brochure.jl" -> "jemisjoky/TorchMPS" ["e"=1]
+"mcabbott/Tullio.jl" -> "Jutho/TensorOperations.jl" ["e"=1]
+"pyscf/pyscf" -> "JuliaMolSim/DFTK.jl" ["e"=1]
+"getkeops/keops" -> "dgasmith/opt_einsum" ["e"=1]
 "hottbox/hottbox" -> "hottbox/hottbox-tutorials"
 "hottbox/hottbox" -> "Large-Scale-Tensor-Decomposition/tensorD"
 "rballester/ttrecipes" -> "rballester/tensor_notes"
@@ -100,6 +125,8 @@ digraph G {
 "QuantumBFS/SSSS" -> "TensorBFS/cMPO"
 "QuantumBFS/SSSS" -> "wdphy16/stat-mech-van"
 "QuantumBFS/SSSS" -> "jhauschild/lecture_comp_methods"
+"yell/boltzmann-machines" -> "netket/netket" ["e"=1]
+"yell/boltzmann-machines" -> "PIQuIL/QuCumber" ["e"=1]
 "mnick/scikit-tensor" -> "mnick/rescal.py"
 "mnick/scikit-tensor" -> "tensorly/tensorly"
 "mnick/scikit-tensor" -> "oseledets/ttpy"
@@ -115,6 +142,7 @@ digraph G {
 "mnick/scikit-tensor" -> "stitchfix/NTFLib"
 "mnick/scikit-tensor" -> "nzhiltsov/Ext-RESCAL"
 "mnick/scikit-tensor" -> "Bihaqo/TensorNet"
+"quantumlib/OpenFermion" -> "netket/netket" ["e"=1]
 "jcmgray/autoray" -> "jcmgray/cotengra"
 "Jutho/TensorOperations.jl" -> "Jutho/TensorKit.jl"
 "Jutho/TensorOperations.jl" -> "QuantumKitHub/MPSKit.jl"
@@ -146,6 +174,10 @@ digraph G {
 "tenpy/tenpy" -> "Haokai-Zhang/EasyMPS"
 "tenpy/tenpy" -> "jemisjoky/TorchMPS"
 "tenpy/tenpy" -> "under-Peter/OMEinsum.jl"
+"xinychen/Tensor4ML" -> "yuanlonghao/TRLRF" ["e"=1]
+"xinychen/Tensor4ML" -> "rballester/tntorch" ["e"=1]
+"xinychen/Tensor4ML" -> "JeanKossaifi/tensorly-notebooks" ["e"=1]
+"qulacs/qulacs" -> "jcmgray/quimb" ["e"=1]
 "JuliaMolSim/DFTK.jl" -> "JuliaMolSim/Molly.jl"
 "JuliaMolSim/DFTK.jl" -> "FermiQC/Fermi.jl"
 "JuliaMolSim/DFTK.jl" -> "f-fathurrahman/PWDFT.jl"
@@ -161,6 +193,11 @@ digraph G {
 "JuliaMolSim/DFTK.jl" -> "carstenbauer/MonteCarlo.jl"
 "JuliaMolSim/DFTK.jl" -> "ITensor/ITensors.jl"
 "JuliaMolSim/DFTK.jl" -> "EnzymeAD/Enzyme.jl" ["e"=1]
+"LLNL/Umpire" -> "ValeevGroup/tiledarray" ["e"=1]
+"JuliaArrays/LazyArrays.jl" -> "Jutho/Strided.jl" ["e"=1]
+"evaleev/libint" -> "FermiQC/Fermi.jl" ["e"=1]
+"evaleev/libint" -> "evangelistalab/forte" ["e"=1]
+"evaleev/libint" -> "ValeevGroup/tiledarray" ["e"=1]
 "JuliaMolSim/Molly.jl" -> "JuliaMolSim/DFTK.jl"
 "JuliaMolSim/Molly.jl" -> "JuliaMolSim/AtomsBase.jl"
 "JuliaMolSim/Molly.jl" -> "FermiQC/Fermi.jl"
@@ -215,6 +252,7 @@ digraph G {
 "jcmgray/cotengra" -> "jcmgray/autoray"
 "jcmgray/cotengra" -> "b1592/ad-peps"
 "jcmgray/cotengra" -> "wangleiphy/tensorgrad"
+"ParRes/Kernels" -> "ValeevGroup/tiledarray" ["e"=1]
 "PIQuIL/QuCumber" -> "PIQuIL/QuLAPENO"
 "PIQuIL/QuCumber" -> "HUJI-Deep/FlowKet"
 "PIQuIL/QuCumber" -> "netket/netket"
@@ -292,6 +330,7 @@ digraph G {
 "Jutho/TensorKit.jl" -> "XingyuZhang2018/TeneT.jl"
 "Jutho/TensorKit.jl" -> "quantumghent/TensorTutorials"
 "Jutho/TensorKit.jl" -> "Qiaoyi-Li/FiniteMPS.jl"
+"JuliaManifolds/Manifolds.jl" -> "Jutho/TensorOperations.jl" ["e"=1]
 "simple-dmrg/simple-dmrg" -> "simple-dmrg/sophisticated-dmrg"
 "simple-dmrg/simple-dmrg" -> "iglpdc/dmrg101"
 "simple-dmrg/simple-dmrg" -> "Haokai-Zhang/EasyMPS"
@@ -372,6 +411,7 @@ digraph G {
 "mnick/rescal.py" -> "nzhiltsov/Ext-RESCAL"
 "hottbox/hottbox-tutorials" -> "hottbox/hottbox"
 "frankwswang/QMPS.jl" -> "QuantumBFS/YaoArrayRegister.jl"
+"rigetti/quantumflow" -> "gecrooks/quantumflow" ["e"=1]
 "yuanlonghao/TRLRF" -> "yuanlonghao/T3C_tensor_completion"
 "yuanlonghao/TRLRF" -> "oscarmickelin/tensor-ring-decomposition"
 "yuanlonghao/TRLRF" -> "wangwenqi1990/TensorRingCompletion"
@@ -383,9 +423,16 @@ digraph G {
 "QuantumBFS/YaoBlocks.jl" -> "QuantumBFS/YaoArrayRegister.jl"
 "QuantumBFS/CuYao.jl" -> "QuantumBFS/YaoPlots.jl"
 "QuantumBFS/CuYao.jl" -> "QuantumBFS/YaoArrayRegister.jl"
+"oscar-system/Oscar.jl" -> "Jutho/TensorOperations.jl" ["e"=1]
+"oscar-system/Oscar.jl" -> "Jutho/TensorKit.jl" ["e"=1]
+"qiboteam/qibo" -> "jcmgray/cotengra" ["e"=1]
+"qiboteam/qibo" -> "jcmgray/quimb" ["e"=1]
 "tempoCollaboration/OQuPy" -> "shareloqs/MPSDynamics.jl"
 "pomerol-ed/pomerol" -> "Q-solvers/EDLib"
 "pomerol-ed/pomerol" -> "rokzitko/nrgljubljana"
+"unitaryfoundation/mitiq" -> "jcmgray/quimb" ["e"=1]
+"tequilahub/tequila" -> "jcmgray/quimb" ["e"=1]
+"EverettYou/Mathematica-for-physics" -> "simple-dmrg/simple-dmrg" ["e"=1]
 "deepqmc/deepqmc" -> "google-deepmind/ferminet"
 "deepqmc/deepqmc" -> "WagnerGroup/pyqmc"
 "deepqmc/deepqmc" -> "bytedance/jaqmc"
@@ -410,6 +457,10 @@ digraph G {
 "oseledets/TT-Toolbox" -> "oscarmickelin/tensor-ring-decomposition"
 "oseledets/TT-Toolbox" -> "savostyanov/ttcross"
 "oseledets/TT-Toolbox" -> "andrewssobral/tensor_toolbox" ["e"=1]
+"mpmath/mpmath" -> "dgasmith/opt_einsum" ["e"=1]
+"mpmath/mpmath" -> "QuSpin/QuSpin" ["e"=1]
+"tensorflow/quantum" -> "google/TensorNetwork" ["e"=1]
+"machenslab/dPCA" -> "neurostatslab/tensortools" ["e"=1]
 "issp-center-dev/TeNeS" -> "TensorBFS/cMPO"
 "thchr/Crystalline.jl" -> "thchr/Brillouin.jl"
 "thchr/Crystalline.jl" -> "jerjorg/SymmetryReduceBZ.jl"
@@ -429,6 +480,9 @@ digraph G {
 "dgasmith/opt_einsum" -> "jcmgray/autoray"
 "dgasmith/opt_einsum" -> "netket/netket"
 "dgasmith/opt_einsum" -> "under-Peter/OMEinsum.jl"
+"ClapeyronThermo/Clapeyron.jl" -> "mojaie/MolecularGraph.jl" ["e"=1]
+"MilesCranmer/lagrangian_nns" -> "wangleiphy/tensorgrad" ["e"=1]
+"MilesCranmer/lagrangian_nns" -> "mhibatallah/RNNWavefunctions" ["e"=1]
 "orialb/TimeEvoMPS.jl" -> "ITensor/ITensorTDVP.jl"
 "iitis/QuantumInformation.jl" -> "BBN-Q/QuantumTomography.jl"
 "iitis/QuantumInformation.jl" -> "iitis/QSWalk.jl"
@@ -453,6 +507,7 @@ digraph G {
 "ITensor/ITensor" -> "QuantumKitHub/MPSKit.jl"
 "ITensor/ITensor" -> "Jutho/TensorKit.jl"
 "ITensor/ITensor" -> "simple-dmrg/simple-dmrg"
+"CQuIC/qcircuit" -> "MindQuantum-HiQ/HiQsimulator" ["e"=1]
 "QuantumKitHub/MPSKit.jl" -> "QuantumKitHub/PEPSKit.jl"
 "QuantumKitHub/MPSKit.jl" -> "Jutho/TensorKit.jl"
 "QuantumKitHub/MPSKit.jl" -> "QuantumKitHub/MPSKitModels.jl"
@@ -471,6 +526,7 @@ digraph G {
 "qojulia/QuantumCumulants.jl" -> "QuantumSavory/QuantumSymbolics.jl"
 "qojulia/QuantumCumulants.jl" -> "JuliaQuantumControl/QuantumControl.jl"
 "qojulia/QuantumCumulants.jl" -> "jfeist/QuantumAlgebra.jl"
+"GTorlai/PastaQ.jl" -> "ITensor/ITensors.jl" ["e"=1]
 "ranshiju/TN_tutorial" -> "ranshiju/T-Nalg"
 "ranshiju/TN_tutorial" -> "Haokai-Zhang/EasyMPS"
 "ranshiju/TN_tutorial" -> "ranshiju/Python-for-Tensor-Network-Tutorial"
@@ -532,9 +588,13 @@ digraph G {
 "google-deepmind/ferminet" -> "tenpy/tenpy"
 "google-deepmind/ferminet" -> "bytedance/jaqmc"
 "google-deepmind/ferminet" -> "jcmgray/quimb"
+"wenwei202/caffe" -> "chengtaipu/lowrankcnn" ["e"=1]
 "ITensor/ITensorNetworks.jl" -> "ITensor/ITensorMPS.jl"
 "ITensor/ITensorNetworks.jl" -> "ITensor/ITensorTDVP.jl"
 "esa/torchquad" -> "jcmgray/autoray"
+"quantum-visualizations/qmsolve" -> "jcmgray/quimb" ["e"=1]
+"quantum-visualizations/qmsolve" -> "qojulia/QuantumOptics.jl" ["e"=1]
+"quantumlib/Stim" -> "jcmgray/quimb" ["e"=1]
 "tnbar/tednet" -> "tnbar/awesome-tensorial-neural-networks"
 "QuSpin/QuSpin" -> "tenpy/tenpy"
 "QuSpin/QuSpin" -> "ITensor/ITensor"
@@ -553,7 +613,14 @@ digraph G {
 "QuSpin/QuSpin" -> "ALPSCore/ALPSCore"
 "block-hczhai/block2-preview" -> "block-hczhai/pyblock3-preview"
 "block-hczhai/block2-preview" -> "gkclab/libdmet_preview"
+"topocm/topocm_content" -> "iamc/ML-CM-2019" ["e"=1]
+"topocm/topocm_content" -> "QuSpin/QuSpin" ["e"=1]
+"topocm/topocm_content" -> "tenpy/tenpy" ["e"=1]
+"topocm/topocm_content" -> "carstenbauer/MonteCarlo.jl" ["e"=1]
+"topocm/topocm_content" -> "simple-dmrg/simple-dmrg" ["e"=1]
+"libocca/occa" -> "ValeevGroup/tiledarray" ["e"=1]
 "leburgel/uniformMpsTutorial" -> "quantumghent/TensorTutorials"
+"JuliaSmoothOptimizers/Krylov.jl" -> "Jutho/KrylovKit.jl" ["e"=1]
 "shareloqs/MPSDynamics.jl" -> "ITensor/ITensorTDVP.jl"
 "shareloqs/MPSDynamics.jl" -> "quantumghent/TensorTutorials"
 "BBN-Q/QuantumTomography.jl" -> "BBN-Q/QSimulator.jl"
@@ -582,6 +649,7 @@ digraph G {
 "Daulbaev/IRDM" -> "juliagusak/neural-ode-norm"
 "Daulbaev/IRDM" -> "juliagusak/neural-ode-metasolver"
 "TensorBFS/OMEinsumContractionOrders.jl" -> "EverettYou/QuantumBootstrap"
+"google-deepmind/kfac-jax" -> "bytedance/jaqmc" ["e"=1]
 "elemental/Elemental" -> "LLNL/Elemental"
 "elemental/Elemental" -> "ValeevGroup/tiledarray"
 "elemental/Elemental" -> "cyclops-community/ctf"
@@ -593,10 +661,17 @@ digraph G {
 "elemental/Elemental" -> "JuliaParallel/MPI.jl" ["e"=1]
 "elemental/Elemental" -> "haptork/easyLambda" ["e"=1]
 "elemental/Elemental" -> "m-a-d-n-e-s-s/madness"
+"NVIDIA/cuQuantum" -> "jcmgray/quimb" ["e"=1]
+"NVIDIA/cuQuantum" -> "jcmgray/cotengra" ["e"=1]
 "devinamatthews/tblis" -> "springer13/tcl"
 "devinamatthews/tblis" -> "cyclops-community/ctf"
 "devinamatthews/tblis" -> "springer13/hptt"
 "devinamatthews/tblis" -> "epifanovsky/libtensor"
+"BlueBrain/HighFive" -> "ValeevGroup/tiledarray" ["e"=1]
+"tencent-quantum-lab/tensorcircuit" -> "jcmgray/quimb" ["e"=1]
+"tencent-quantum-lab/tensorcircuit" -> "jcmgray/cotengra" ["e"=1]
+"tencent-quantum-lab/tensorcircuit" -> "tenpy/tenpy" ["e"=1]
+"tencent-quantum-lab/tensorcircuit" -> "jemisjoky/TorchMPS" ["e"=1]
 "Bihaqo/TensorNet" -> "timgaripov/TensorNet-TF"
 "Bihaqo/TensorNet" -> "oseledets/TT-Toolbox"
 "Bihaqo/TensorNet" -> "Tuyki/TT_RNN"
@@ -615,6 +690,8 @@ digraph G {
 "jcmgray/quimb" -> "TensorNetwork/tensornetwork.org"
 "jcmgray/quimb" -> "tencent-quantum-lab/tensorcircuit" ["e"=1]
 "jcmgray/quimb" -> "jurajHasik/peps-torch"
+"QuEraComputing/Bloqade.jl" -> "QuantumKitHub/MPSKit.jl" ["e"=1]
+"blitzpp/blitz" -> "ValeevGroup/tiledarray" ["e"=1]
 "issp-center-dev/HPhi" -> "issp-center-dev/mVMC"
 "issp-center-dev/HPhi" -> "issp-center-dev/TeNeS"
 "JuliaMolSim/AtomsBase.jl" -> "mfherbst/AtomsIO.jl"
@@ -625,6 +702,8 @@ digraph G {
 "ITensor/ITensorTDVP.jl" -> "orialb/TimeEvoMPS.jl"
 "ITensor/ITensorTDVP.jl" -> "amartyabose/QuantumDynamics.jl"
 "ITensor/ITensorTDVP.jl" -> "shareloqs/MPSDynamics.jl"
+"romeric/Fastor" -> "ValeevGroup/tiledarray" ["e"=1]
+"haptork/easyLambda" -> "elemental/Elemental" ["e"=1]
 "tnbar/awesome-tensorial-neural-networks" -> "tnbar/tednet"
 "tnbar/awesome-tensorial-neural-networks" -> "joserapa98/tensorkrowch"
 "tnbar/awesome-tensorial-neural-networks" -> "pvti/Awesome-Tensor-Decomposition"
@@ -645,6 +724,7 @@ digraph G {
 "qojulia/QuantumOptics.jl" -> "carstenbauer/MonteCarlo.jl"
 "qojulia/QuantumOptics.jl" -> "iitis/QuantumInformation.jl"
 "qojulia/QuantumOptics.jl" -> "GTorlai/PastaQ.jl" ["e"=1]
+"LLNL/zfp" -> "ValeevGroup/tiledarray" ["e"=1]
 "oseledets/ttpy" -> "oseledets/TT-Toolbox"
 "oseledets/ttpy" -> "Bihaqo/t3f"
 "oseledets/ttpy" -> "rballester/tntorch"
@@ -667,6 +747,7 @@ digraph G {
 "timgaripov/TensorNet-TF" -> "oseledets/ttpy"
 "timgaripov/TensorNet-TF" -> "rballester/tntorch"
 "timgaripov/TensorNet-TF" -> "vadim-v-lebedev/cp-decomposition"
+"JuliaParallel/MPI.jl" -> "Jutho/TensorOperations.jl" ["e"=1]
 "wangleiphy/ml4p" -> "GiggleLiu/ModernScientificComputing" ["e"=1]
 "wangleiphy/ml4p" -> "XingyuZhang2018/TeneT.jl"
 "wangleiphy/ml4p" -> "EverettYou/QuantumBootstrap"
@@ -675,6 +756,8 @@ digraph G {
 "wangleiphy/ml4p" -> "TensorBFS/cMPO"
 "wangleiphy/ml4p" -> "under-Peter/TensorNetworkAD.jl"
 "ranshiju/Python-for-Tensor-Network-Tutorial" -> "ranshiju/TN_tutorial"
+"mnick/scikit-kge" -> "mnick/scikit-tensor" ["e"=1]
+"dsuess/mpnum" -> "andrewdarmawan/tncontract" ["e"=1]
 "iglpdc/dmrg101" -> "simple-dmrg/sophisticated-dmrg"
 "iglpdc/dmrg101" -> "etano/dmrgpy"
 "iglpdc/dmrg101" -> "iglpdc/dmrg101_tutorial"
@@ -692,6 +775,16 @@ digraph G {
 "epifanovsky/libtensor" -> "ilyak/libxm"
 "pvti/CORING" -> "pvti/NORTON"
 "pvti/CORING" -> "pvti/CXRAbnormalityLocalization"
+"CrawfordGroup/ProgrammingProjects" -> "FermiQC/Fermi.jl" ["e"=1]
+"qutip/qutip" -> "qojulia/QuantumOptics.jl" ["e"=1]
+"qutip/qutip" -> "jcmgray/quimb" ["e"=1]
+"qutip/qutip" -> "netket/netket" ["e"=1]
+"NVIDIA/cuda-quantum" -> "jcmgray/quimb" ["e"=1]
+"tensor-compiler/taco" -> "cyclops-community/ctf" ["e"=1]
+"tensor-compiler/taco" -> "ValeevGroup/tiledarray" ["e"=1]
+"jrjohansson/qutip-lectures" -> "QuSpin/QuSpin" ["e"=1]
+"jrjohansson/qutip-lectures" -> "qojulia/QuantumOptics.jl" ["e"=1]
+"kahypar/kahypar" -> "jcmgray/cotengra" ["e"=1]
 "andrewdarmawan/tncontract" -> "dingliu0305/Tree-Tensor-Networks-in-Machine-Learning"
 "pvti/Awesome-Tensor-Decomposition" -> "pvti/CORING"
 "pvti/Awesome-Tensor-Decomposition" -> "pvti/CXRAbnormalityLocalization"
@@ -761,6 +854,7 @@ digraph G {
 "emstoudenmire/TNML" -> "tenpy/tenpy"
 "emstoudenmire/TNML" -> "PIQuIL/QuLAPENO"
 "emstoudenmire/TNML" -> "wangleiphy/tensorgrad"
+"nntile/nntile" -> "anabatsh/PROTES" ["e"=1]
 "microsoft/folx" -> "y1xiaoc/fwdlap"
 "bytedance/LapNet" -> "YWolfeee/lapjax"
 "neurostatslab/tensortools" -> "ahwillia/tensor-demo"
@@ -770,15 +864,21 @@ digraph G {
 "Qiaoyi-Li/FiniteMPS.jl" -> "awietek/XDiag.jl"
 "Qiaoyi-Li/FiniteMPS.jl" -> "quantumghent/TensorTutorials"
 "issp-center-dev/mVMC" -> "issp-center-dev/HPhi"
+"JuliaManifolds/Manopt.jl" -> "Jutho/KrylovKit.jl" ["e"=1]
 "nzhiltsov/Ext-RESCAL" -> "mnick/rescal.py"
 "Large-Scale-Tensor-Decomposition/tensorD" -> "ebigelow/tf-decompose"
+"pydata/sparse" -> "dgasmith/opt_einsum" ["e"=1]
 "springer13/hptt" -> "springer13/tcl"
 "springer13/hptt" -> "devinamatthews/tblis"
 "springer13/hptt" -> "ap-hynninen/cutt"
 "springer13/hptt" -> "cyclops-community/ctf"
 "springer13/hptt" -> "HPAC/tccg"
+"nschloe/perfplot" -> "dgasmith/opt_einsum" ["e"=1]
 "ebigelow/tf-decompose" -> "hottbox/hottbox-tutorials"
 "ebigelow/tf-decompose" -> "androstj/tensor_rnn"
+"Lumorti/Quandoom" -> "jcmgray/quimb" ["e"=1]
+"Lumorti/Quandoom" -> "tenpy/tenpy" ["e"=1]
+"Lumorti/Quandoom" -> "ITensor/ITensors.jl" ["e"=1]
 "psi-rking/optking" -> "jturney/ambit"
 "Tuyki/TT_RNN" -> "Bihaqo/t3f"
 "Tuyki/TT_RNN" -> "timgaripov/TensorNet-TF"
@@ -836,25 +936,33 @@ digraph G {
 "Jutho/KrylovKit.jl" ["l"="21.888,17.798"]
 "jcmgray/quimb" ["l"="21.797,17.74"]
 "qojulia/QuantumOptics.jl" ["l"="21.876,17.744"]
-"GTorlai/PastaQ.jl" ["l"="21.144,17.602"]
+"GTorlai/PastaQ.jl" ["l"="21.144,17.602", "c"=237]
 "TensorNetwork/tensornetwork.org" ["l"="21.788,17.787"]
 "under-Peter/TensorNetworkAD.jl" ["l"="21.822,17.797"]
 "under-Peter/OMEinsum.jl" ["l"="21.838,17.808"]
 "netket/netket" ["l"="21.815,17.724"]
 "QuSpin/QuSpin" ["l"="21.829,17.735"]
-"QuantumBFS/Yao.jl" ["l"="21.067,17.499"]
+"QuantumBFS/Yao.jl" ["l"="21.067,17.499", "c"=237]
+"qutip/qutip-notebooks" ["l"="21.156,17.268", "c"=237]
 "google/TensorNetwork" ["l"="21.764,17.758"]
-"qutip/qutip" ["l"="21.091,17.406"]
-"tensorflow/quantum" ["l"="21.03,17.422"]
+"qutip/qutip" ["l"="21.091,17.406", "c"=237]
+"tensorflow/quantum" ["l"="21.03,17.422", "c"=237]
 "wangleiphy/tensorgrad" ["l"="21.783,17.775"]
 "dgasmith/opt_einsum" ["l"="21.838,17.75"]
-"PennyLaneAI/pennylane" ["l"="21.054,17.426"]
+"PennyLaneAI/pennylane" ["l"="21.054,17.426", "c"=237]
+"mpi4py/mpi4py" ["l"="2.063,14.351", "c"=572]
+"cyclops-community/ctf" ["l"="21.924,17.673"]
+"MerkulovDaniil/optim" ["l"="-44.893,26.545", "c"=1289]
+"opencollab/arpack-ng" ["l"="62.921,-1.484", "c"=175]
+"pomerol-ed/pomerol" ["l"="21.712,17.527"]
 "ruihangdu/Decompose-CNN" ["l"="21.632,17.889"]
 "tensorly/tensorly" ["l"="21.671,17.836"]
 "Large-Scale-Tensor-Decomposition/tensorD" ["l"="21.596,17.882"]
 "ebigelow/tf-decompose" ["l"="21.583,17.856"]
 "xwcao/LowRankTRN" ["l"="21.576,17.871"]
 "chengtaipu/lowrankcnn" ["l"="21.661,17.89"]
+"kokkos/mdspan" ["l"="-19.888,-26.199", "c"=10]
+"ValeevGroup/tiledarray" ["l"="21.975,17.646"]
 "awietek/ed_basics" ["l"="21.722,17.814"]
 "jhauschild/lecture_comp_methods" ["l"="21.751,17.829"]
 "ryuikaneko/exact_diagonalization" ["l"="21.715,17.837"]
@@ -863,6 +971,14 @@ digraph G {
 "iitis/QSWalk.jl" ["l"="21.994,17.874"]
 "iitis/QuantumWalk.jl" ["l"="22.011,17.887"]
 "jmiszczak/qi" ["l"="22.004,17.902"]
+"QuantumBFS/SSSS" ["l"="21.774,17.832"]
+"Roger-luo/Brochure.jl" ["l"="22.017,16.543", "c"=77]
+"Jutho/TNSchool2018" ["l"="21.805,17.814"]
+"b1592/ad-peps" ["l"="21.82,17.785"]
+"mcabbott/Tullio.jl" ["l"="22.001,16.809", "c"=77]
+"pyscf/pyscf" ["l"="22.614,13.402", "c"=488]
+"JuliaMolSim/DFTK.jl" ["l"="21.953,17.75"]
+"getkeops/keops" ["l"="21.661,13.989", "c"=267]
 "hottbox/hottbox" ["l"="21.537,17.909"]
 "hottbox/hottbox-tutorials" ["l"="21.546,17.89"]
 "rballester/tensor_notes" ["l"="21.631,17.748"]
@@ -877,79 +993,83 @@ digraph G {
 "bnuliujing/tn-for-unsup-ml" ["l"="21.692,17.736"]
 "wdphy16/stat-mech-van" ["l"="21.746,17.852"]
 "panzhang83/lectures" ["l"="21.737,17.883"]
-"QuantumBFS/SSSS" ["l"="21.774,17.832"]
 "TensorBFS/TropicalTensors.jl" ["l"="21.807,17.829"]
 "iamc/ML-CM-2019" ["l"="21.766,17.879"]
 "wangleiphy/ml4p" ["l"="21.821,17.839"]
+"yell/boltzmann-machines" ["l"="51.009,30.936", "c"=83]
+"PIQuIL/QuCumber" ["l"="21.778,17.728"]
 "mnick/scikit-tensor" ["l"="21.61,17.868"]
 "mnick/rescal.py" ["l"="21.588,17.92"]
 "panisson/ntf-school" ["l"="21.562,17.926"]
 "neurostatslab/tensortools" ["l"="21.624,17.922"]
-"mnick/scikit-kge" ["l"="53.67,16.005"]
-"ttrouill/complex" ["l"="53.685,15.97"]
-"mnick/holographic-embeddings" ["l"="53.642,16.005"]
+"mnick/scikit-kge" ["l"="53.67,16.005", "c"=434]
+"ttrouill/complex" ["l"="53.685,15.97", "c"=434]
+"mnick/holographic-embeddings" ["l"="53.642,16.005", "c"=434]
 "oseledets/TT-Toolbox" ["l"="21.594,17.81"]
 "stitchfix/NTFLib" ["l"="21.574,17.899"]
 "nzhiltsov/Ext-RESCAL" ["l"="21.6,17.906"]
 "Bihaqo/TensorNet" ["l"="21.587,17.833"]
+"quantumlib/OpenFermion" ["l"="21.055,17.456", "c"=237]
 "jcmgray/autoray" ["l"="21.855,17.723"]
 "jcmgray/cotengra" ["l"="21.817,17.765"]
-"mcabbott/Tullio.jl" ["l"="22.001,16.809"]
 "QuantumKitHub/PEPSKit.jl" ["l"="21.865,17.82"]
 "Jutho/Strided.jl" ["l"="21.91,17.818"]
 "shareloqs/MPSDynamics.jl" ["l"="21.859,17.851"]
-"EnzymeAD/Enzyme.jl" ["l"="22.004,16.836"]
+"EnzymeAD/Enzyme.jl" ["l"="22.004,16.836", "c"=77]
 "ahwillia/Einsum.jl" ["l"="21.924,17.796"]
-"Ferrite-FEM/Tensors.jl" ["l"="22.235,16.927"]
-"JuliaLinearAlgebra/LinearMaps.jl" ["l"="22.166,16.823"]
-"chalk-lab/Mooncake.jl" ["l"="21.995,16.91"]
+"Ferrite-FEM/Tensors.jl" ["l"="22.235,16.927", "c"=77]
+"JuliaLinearAlgebra/LinearMaps.jl" ["l"="22.166,16.823", "c"=77]
+"chalk-lab/Mooncake.jl" ["l"="21.995,16.91", "c"=77]
 "simple-dmrg/simple-dmrg" ["l"="21.756,17.713"]
-"JuliaMolSim/DFTK.jl" ["l"="21.953,17.75"]
+"xinychen/Tensor4ML" ["l"="55.351,32.763", "c"=279]
+"yuanlonghao/TRLRF" ["l"="21.54,17.801"]
+"qulacs/qulacs" ["l"="21.037,17.533", "c"=237]
 "JuliaMolSim/Molly.jl" ["l"="22.036,17.727"]
 "FermiQC/Fermi.jl" ["l"="21.994,17.719"]
 "f-fathurrahman/PWDFT.jl" ["l"="21.995,17.783"]
-"SMTG-Bham/sumo" ["l"="21.833,13.021"]
+"SMTG-Bham/sumo" ["l"="21.833,13.021", "c"=344]
 "JuliaMolSim/AtomsBase.jl" ["l"="22.012,17.744"]
 "cometscome/TightBinding.jl" ["l"="21.912,17.738"]
 "Quantum-Many-Body/QuantumLattices.jl" ["l"="21.889,17.76"]
 "thchr/Brillouin.jl" ["l"="22.021,17.797"]
-"SINGROUP/dscribe" ["l"="21.933,13.102"]
-"MaterSim/PyXtal" ["l"="21.896,13.035"]
+"SINGROUP/dscribe" ["l"="21.933,13.102", "c"=344]
+"MaterSim/PyXtal" ["l"="21.896,13.035", "c"=344]
 "carstenbauer/MonteCarlo.jl" ["l"="21.886,17.719"]
-"JuliaMolSim/JuLIP.jl" ["l"="22.108,12.707"]
-"SciML/Catalyst.jl" ["l"="22.174,16.702"]
+"LLNL/Umpire" ["l"="63.15,-1.358", "c"=175]
+"JuliaArrays/LazyArrays.jl" ["l"="22.106,16.866", "c"=77]
+"evaleev/libint" ["l"="22.641,13.383", "c"=488]
+"evangelistalab/forte" ["l"="21.929,17.602"]
+"JuliaMolSim/JuLIP.jl" ["l"="22.108,12.707", "c"=344]
+"SciML/Catalyst.jl" ["l"="22.174,16.702", "c"=77]
 "mojaie/MolecularGraph.jl" ["l"="22.086,17.732"]
 "m3g/CellListMap.jl" ["l"="22.072,17.704"]
-"JuliaFolds/FLoops.jl" ["l"="21.902,16.839"]
-"SciML/NBodySimulator.jl" ["l"="22.338,16.545"]
-"aviatesk/JET.jl" ["l"="21.947,16.803"]
+"JuliaFolds/FLoops.jl" ["l"="21.902,16.839", "c"=77]
+"SciML/NBodySimulator.jl" ["l"="22.338,16.545", "c"=77]
+"aviatesk/JET.jl" ["l"="21.947,16.803", "c"=77]
 "chemfiles/Chemfiles.jl" ["l"="22.1,17.706"]
-"JuliaSmoothOptimizers/Krylov.jl" ["l"="22.177,16.8"]
+"JuliaSmoothOptimizers/Krylov.jl" ["l"="22.177,16.8", "c"=77]
 "Jutho/OptimKit.jl" ["l"="21.878,17.82"]
-"JuliaManifolds/Manopt.jl" ["l"="22.088,16.898"]
-"JuliaLinearAlgebra/ArnoldiMethod.jl" ["l"="22.14,16.63"]
-"JuliaLinearAlgebra/MKL.jl" ["l"="22.075,16.88"]
+"JuliaManifolds/Manopt.jl" ["l"="22.088,16.898", "c"=77]
+"JuliaLinearAlgebra/ArnoldiMethod.jl" ["l"="22.14,16.63", "c"=77]
+"JuliaLinearAlgebra/MKL.jl" ["l"="22.075,16.88", "c"=77]
 "Jutho/VectorInterface.jl" ["l"="21.933,17.825"]
-"JuliaSIMD/LoopVectorization.jl" ["l"="22.007,16.792"]
-"JuliaLinearAlgebra/IterativeSolvers.jl" ["l"="22.122,16.784"]
-"PIQuIL/QuCumber" ["l"="21.778,17.728"]
+"JuliaSIMD/LoopVectorization.jl" ["l"="22.007,16.792", "c"=77]
+"JuliaLinearAlgebra/IterativeSolvers.jl" ["l"="22.122,16.784", "c"=77]
 "google-deepmind/ferminet" ["l"="21.812,17.679"]
 "mhibatallah/RNNWavefunctions" ["l"="21.79,17.701"]
 "Fanerst/simulate_sycamore" ["l"="21.861,17.698"]
-"ORNL-QCI/exatn" ["l"="20.906,17.613"]
-"b1592/ad-peps" ["l"="21.82,17.785"]
+"ORNL-QCI/exatn" ["l"="20.906,17.613", "c"=237]
+"ParRes/Kernels" ["l"="63.236,-1.348", "c"=175]
 "PIQuIL/QuLAPENO" ["l"="21.723,17.723"]
 "HUJI-Deep/FlowKet" ["l"="21.763,17.694"]
 "Jutho/CMPSKit.jl" ["l"="21.912,17.858"]
 "Jutho/TensorKitManifolds.jl" ["l"="21.913,17.844"]
 "juliagusak/flopco-pytorch" ["l"="21.569,17.777"]
 "juliagusak/model-compression-and-acceleration-progress" ["l"="21.546,17.779"]
-"evfro/ipypb" ["l"="-44.158,26.528"]
+"evfro/ipypb" ["l"="-44.158,26.528", "c"=551]
 "Daulbaev/IRDM" ["l"="21.56,17.755"]
 "juliagusak/neural-ode-norm" ["l"="21.553,17.765"]
-"cyclops-community/ctf" ["l"="21.924,17.673"]
 "devinamatthews/tblis" ["l"="21.922,17.658"]
-"ValeevGroup/tiledarray" ["l"="21.975,17.646"]
 "epifanovsky/libtensor" ["l"="21.951,17.647"]
 "springer13/hptt" ["l"="21.927,17.629"]
 "springer13/tcl" ["l"="21.936,17.644"]
@@ -957,11 +1077,10 @@ digraph G {
 "yangcal/symtensor" ["l"="21.95,17.683"]
 "block-hczhai/block2-preview" ["l"="22.009,17.625"]
 "ValeevGroup/BTAS" ["l"="21.907,17.642"]
-"jjgoings/McMurchie-Davidson" ["l"="22.668,13.368"]
+"jjgoings/McMurchie-Davidson" ["l"="22.668,13.368", "c"=488]
 "m-a-d-n-e-s-s/madness" ["l"="21.957,17.627"]
 "ITensor/ITensorsGPU.jl" ["l"="21.983,17.674"]
 "ClarkResearchGroup/tensor-tools" ["l"="21.905,17.662"]
-"Jutho/TNSchool2018" ["l"="21.805,17.814"]
 "PGelss/scikit_tt" ["l"="21.631,17.797"]
 "TRIQS/triqs" ["l"="21.757,17.543"]
 "TRIQS/cthyb" ["l"="21.734,17.552"]
@@ -969,7 +1088,6 @@ digraph G {
 "TRIQS/solid_dmft" ["l"="21.739,17.521"]
 "dominikkiese/MatsubaraFunctions.jl" ["l"="21.743,17.498"]
 "josefkaufmann/ana_cont" ["l"="21.776,17.493"]
-"pomerol-ed/pomerol" ["l"="21.712,17.527"]
 "TRIQS/tprf" ["l"="21.754,17.517"]
 "w2dynamics/w2dynamics" ["l"="21.761,17.502"]
 "rokzitko/nrgljubljana" ["l"="21.727,17.536"]
@@ -983,19 +1101,17 @@ digraph G {
 "XingyuZhang2018/TeneT.jl" ["l"="21.845,17.824"]
 "quantumghent/TensorTutorials" ["l"="21.855,17.835"]
 "Qiaoyi-Li/FiniteMPS.jl" ["l"="21.876,17.848"]
+"JuliaManifolds/Manifolds.jl" ["l"="22.082,16.857", "c"=77]
 "simple-dmrg/sophisticated-dmrg" ["l"="21.732,17.686"]
 "iglpdc/dmrg101" ["l"="21.716,17.665"]
 "issp-center-dev/TeNeS" ["l"="21.79,17.827"]
 "f-fathurrahman/ImplementingDFT" ["l"="22.005,17.809"]
 "TensorBFS/dTRG" ["l"="21.773,17.806"]
-"LLNL/Umpire" ["l"="63.15,-1.358"]
-"cp2k/dbcsr" ["l"="37.338,0.95"]
-"evangelistalab/forte" ["l"="21.929,17.602"]
-"evaleev/libint" ["l"="22.641,13.383"]
-"ValeevGroup/mpqc" ["l"="22.702,13.387"]
+"cp2k/dbcsr" ["l"="37.338,0.95", "c"=112]
+"ValeevGroup/mpqc" ["l"="22.702,13.387", "c"=488]
 "elemental/Elemental" ["l"="21.988,17.613"]
 "edeprince3/pdaggerq" ["l"="22.048,17.623"]
-"LLNL/blt" ["l"="63.165,-1.396"]
+"LLNL/blt" ["l"="63.165,-1.396", "c"=175]
 "kleinhenz/Keldysh.jl" ["l"="21.797,17.567"]
 "krivenko/QInchworm.jl" ["l"="21.764,17.615"]
 "carstenbauer/StableDQMC.jl" ["l"="21.936,17.715"]
@@ -1017,7 +1133,6 @@ digraph G {
 "TensorBFS/OMEinsumContractionOrders.jl" ["l"="21.835,17.856"]
 "Hua-Zhou/TensorReg" ["l"="21.53,17.878"]
 "oscarmickelin/tensor-ring-decomposition" ["l"="21.56,17.798"]
-"yuanlonghao/TRLRF" ["l"="21.54,17.801"]
 "wangwenqi1990/TensorRingCompletion" ["l"="21.526,17.792"]
 "andrewdarmawan/tncontract" ["l"="21.681,17.76"]
 "AbinitioDGA/ADGA" ["l"="21.759,17.477"]
@@ -1027,6 +1142,7 @@ digraph G {
 "HugoStrand/cthyb.jl" ["l"="21.811,17.532"]
 "frankwswang/QMPS.jl" ["l"="21.499,17.636"]
 "QuantumBFS/YaoArrayRegister.jl" ["l"="21.52,17.631"]
+"rigetti/quantumflow" ["l"="21.133,17.455", "c"=237]
 "yuanlonghao/T3C_tensor_completion" ["l"="21.508,17.798"]
 "sanshar/VMC" ["l"="22.127,17.523"]
 "sanshar/StackBlock" ["l"="22.113,17.534"]
@@ -1035,28 +1151,37 @@ digraph G {
 "QuantumBFS/YaoBase.jl" ["l"="21.498,17.619"]
 "QuantumBFS/YaoBlocks.jl" ["l"="21.509,17.608"]
 "QuantumBFS/YaoPlots.jl" ["l"="21.543,17.639"]
+"oscar-system/Oscar.jl" ["l"="20.658,14.089", "c"=1146]
+"qiboteam/qibo" ["l"="21.023,17.564", "c"=237]
 "tempoCollaboration/OQuPy" ["l"="21.879,17.905"]
 "Q-solvers/EDLib" ["l"="21.685,17.515"]
+"unitaryfoundation/mitiq" ["l"="21.055,17.489", "c"=237]
+"tequilahub/tequila" ["l"="21.031,17.498", "c"=237]
+"EverettYou/Mathematica-for-physics" ["l"="20.979,14.701", "c"=1241]
 "deepqmc/deepqmc" ["l"="21.844,17.685"]
 "bytedance/jaqmc" ["l"="21.802,17.647"]
 "QMCPACK/qmcpack" ["l"="21.827,17.644"]
 "mdsunivie/deeperwin" ["l"="21.852,17.655"]
 "microsoft/folx" ["l"="21.822,17.813"]
-"atomistic-machine-learning/schnetpack" ["l"="21.96,13.158"]
+"atomistic-machine-learning/schnetpack" ["l"="21.96,13.158", "c"=344]
 "JoonhoLee-Group/ipie" ["l"="21.832,17.621"]
 "n-gao/pesnet" ["l"="21.866,17.667"]
-"pyscf/pyscf" ["l"="22.614,13.402"]
 "savostyanov/ttcross" ["l"="21.607,17.79"]
-"andrewssobral/tensor_toolbox" ["l"="55.258,32.755"]
+"andrewssobral/tensor_toolbox" ["l"="55.258,32.755", "c"=279]
+"mpmath/mpmath" ["l"="20.613,14.173", "c"=1146]
+"machenslab/dPCA" ["l"="60.667,34.219", "c"=441]
 "thchr/Crystalline.jl" ["l"="22.049,17.814"]
 "jerjorg/SymmetryReduceBZ.jl" ["l"="22.032,17.817"]
 "qiaojunfeng/Wannier.jl" ["l"="22.042,17.801"]
-"pytorch/functorch" ["l"="21.677,14.079"]
-"pydata/sparse" ["l"="43.86,23.711"]
+"pytorch/functorch" ["l"="21.677,14.079", "c"=267]
+"pydata/sparse" ["l"="43.86,23.711", "c"=95]
+"ClapeyronThermo/Clapeyron.jl" ["l"="51.324,25.59", "c"=1275]
+"MilesCranmer/lagrangian_nns" ["l"="22.879,14.526", "c"=505]
 "orialb/TimeEvoMPS.jl" ["l"="21.839,17.91"]
 "iitis/QuantumInformation.jl" ["l"="21.966,17.827"]
 "FermiQC/GaussianBasis.jl" ["l"="22.011,17.702"]
 "Chemellia/ChemistryFeaturization.jl" ["l"="22.053,17.744"]
+"CQuIC/qcircuit" ["l"="20.891,17.499", "c"=237]
 "QuantumKitHub/MPSKitModels.jl" ["l"="21.845,17.837"]
 "mhauru/MERAKit.jl" ["l"="21.892,17.829"]
 "awietek/XDiag.jl" ["l"="21.873,17.835"]
@@ -1089,20 +1214,24 @@ digraph G {
 "psi-rking/optking" ["l"="21.912,17.556"]
 "etano/dmrgpy" ["l"="21.692,17.648"]
 "iglpdc/dmrg101_tutorial" ["l"="21.708,17.643"]
-"jax-md/jax-md" ["l"="21.988,13.185"]
-"e3nn/e3nn" ["l"="22.032,13.213"]
-"mir-group/nequip" ["l"="21.996,13.141"]
-"mzjb/DeepH-pack" ["l"="22.133,13.144"]
-"aiqm/torchani" ["l"="21.943,13.187"]
-"ACEsuit/mace" ["l"="21.994,13.12"]
+"jax-md/jax-md" ["l"="21.988,13.185", "c"=344]
+"e3nn/e3nn" ["l"="22.032,13.213", "c"=344]
+"mir-group/nequip" ["l"="21.996,13.141", "c"=344]
+"mzjb/DeepH-pack" ["l"="22.133,13.144", "c"=344]
+"aiqm/torchani" ["l"="21.943,13.187", "c"=344]
+"ACEsuit/mace" ["l"="21.994,13.12", "c"=344]
+"wenwei202/caffe" ["l"="52.718,33.554", "c"=271]
 "ITensor/ITensorNetworks.jl" ["l"="21.869,17.949"]
 "ITensor/ITensorMPS.jl" ["l"="21.885,17.988"]
 "esa/torchquad" ["l"="21.892,17.688"]
+"quantum-visualizations/qmsolve" ["l"="33.975,-4.847", "c"=769]
+"quantumlib/Stim" ["l"="21.037,17.586", "c"=237]
 "tnbar/awesome-tensorial-neural-networks" ["l"="21.648,17.971"]
 "issp-center-dev/HPhi" ["l"="21.8,17.845"]
-"topocm/topocm_content" ["l"="21.675,12.92"]
+"topocm/topocm_content" ["l"="21.675,12.92", "c"=344]
 "block-hczhai/pyblock3-preview" ["l"="22.032,17.604"]
 "gkclab/libdmet_preview" ["l"="22.056,17.577"]
+"libocca/occa" ["l"="63.191,-1.451", "c"=175]
 "leburgel/uniformMpsTutorial" ["l"="21.865,17.874"]
 "JuliaQuantumControl/QuantumPropagators.jl" ["l"="21.9,17.513"]
 "drumichiro/nmf-and-ntf" ["l"="21.527,17.956"]
@@ -1115,57 +1244,67 @@ digraph G {
 "huangli712/Zen" ["l"="21.828,17.515"]
 "SebWouters/QC-DMET" ["l"="22.092,17.551"]
 "EverettYou/QuantumBootstrap" ["l"="21.822,17.871"]
+"google-deepmind/kfac-jax" ["l"="21.847,14.073", "c"=267]
 "LLNL/Elemental" ["l"="22.012,17.575"]
-"ParRes/Kernels" ["l"="63.236,-1.348"]
-"JuliaParallel/PETSc.jl" ["l"="22.201,16.906"]
-"flame/libflame" ["l"="37.181,0.694"]
-"libxsmm/libxsmm" ["l"="37.11,0.835"]
-"LLNL/Aluminum" ["l"="37.708,1.227"]
-"JuliaParallel/MPI.jl" ["l"="22.042,16.82"]
-"haptork/easyLambda" ["l"="-19.939,-26.301"]
-"unitaryfoundation/mitiq" ["l"="21.055,17.489"]
-"tequilahub/tequila" ["l"="21.031,17.498"]
-"qulacs/qulacs" ["l"="21.037,17.533"]
-"tencent-quantum-lab/tensorcircuit" ["l"="21.062,17.582"]
+"JuliaParallel/PETSc.jl" ["l"="22.201,16.906", "c"=77]
+"flame/libflame" ["l"="37.181,0.694", "c"=112]
+"libxsmm/libxsmm" ["l"="37.11,0.835", "c"=112]
+"LLNL/Aluminum" ["l"="37.708,1.227", "c"=112]
+"JuliaParallel/MPI.jl" ["l"="22.042,16.82", "c"=77]
+"haptork/easyLambda" ["l"="-19.939,-26.301", "c"=10]
+"NVIDIA/cuQuantum" ["l"="21.045,17.556", "c"=237]
+"BlueBrain/HighFive" ["l"="-19.542,-25.999", "c"=10]
+"tencent-quantum-lab/tensorcircuit" ["l"="21.062,17.582", "c"=237]
+"QuEraComputing/Bloqade.jl" ["l"="21.295,17.649", "c"=237]
+"blitzpp/blitz" ["l"="-20.013,-26.045", "c"=10]
 "issp-center-dev/mVMC" ["l"="21.793,17.877"]
 "mfherbst/AtomsIO.jl" ["l"="22.029,17.762"]
 "ZhuGroup-Yale/fcdmft" ["l"="22.068,17.552"]
 "vadim-v-lebedev/cp-decomposition" ["l"="21.647,17.87"]
 "amartyabose/QuantumDynamics.jl" ["l"="21.852,17.922"]
+"romeric/Fastor" ["l"="-19.645,-26.018", "c"=10]
 "joserapa98/tensorkrowch" ["l"="21.651,18.001"]
 "pvti/Awesome-Tensor-Decomposition" ["l"="21.632,18.032"]
+"LLNL/zfp" ["l"="-19.162,-26.154", "c"=10]
 "androstj/tensor_rnn" ["l"="21.594,17.847"]
 "ion-g-ion/torchTT" ["l"="21.573,17.812"]
-"GiggleLiu/ModernScientificComputing" ["l"="22.207,17.068"]
+"GiggleLiu/ModernScientificComputing" ["l"="22.207,17.068", "c"=77]
+"dsuess/mpnum" ["l"="49.67,27.243", "c"=791]
 "liwt31/SimpleMPS" ["l"="21.698,17.631"]
 "bytedance/DeepSolid" ["l"="21.785,17.611"]
 "ilyak/libxm" ["l"="21.961,17.609"]
+"CrawfordGroup/ProgrammingProjects" ["l"="22.632,13.367", "c"=488]
+"NVIDIA/cuda-quantum" ["l"="21.032,17.547", "c"=237]
+"tensor-compiler/taco" ["l"="37.115,0.938", "c"=112]
+"jrjohansson/qutip-lectures" ["l"="21.207,17.295", "c"=237]
+"kahypar/kahypar" ["l"="33.012,-5.492", "c"=830]
 "YWolfeee/lapjax" ["l"="21.812,17.951"]
 "bytedance/LapNet" ["l"="21.811,17.976"]
 "y1xiaoc/fwdlap" ["l"="21.814,17.894"]
 "aecker/gpfa" ["l"="21.577,17.982"]
 "mackelab/poisson-gpfa" ["l"="21.593,17.957"]
 "theochem/fanpy" ["l"="22.113,17.606"]
-"getkeops/keops" ["l"="21.661,13.989"]
-"cornellius-gp/gpytorch" ["l"="45.783,26.104"]
-"dftbplus/dftbplus" ["l"="22.577,13.382"]
+"cornellius-gp/gpytorch" ["l"="45.783,26.104", "c"=68]
+"dftbplus/dftbplus" ["l"="22.577,13.382", "c"=488]
 "QMCPACK/qmc_workshop_2021" ["l"="21.811,17.604"]
-"electronic-structure/SIRIUS" ["l"="21.845,12.939"]
-"psi4/psi4" ["l"="22.58,13.351"]
-"sunqm/libcint" ["l"="22.649,13.4"]
+"electronic-structure/SIRIUS" ["l"="21.845,12.939", "c"=344]
+"psi4/psi4" ["l"="22.58,13.351", "c"=488]
+"sunqm/libcint" ["l"="22.649,13.4", "c"=488]
 "Bihaqo/exp-machines" ["l"="21.591,17.771"]
-"sylvialee12/QuantumMachineLearning" ["l"="49.646,27.124"]
+"sylvialee12/QuantumMachineLearning" ["l"="49.646,27.124", "c"=791]
 "greydanus/psi0nn" ["l"="21.668,17.732"]
+"nntile/nntile" ["l"="-44.165,26.431", "c"=551]
 "ahwillia/tensor-demo" ["l"="21.611,17.963"]
 "erichson/rTensor" ["l"="21.628,17.949"]
-"KordingLab/spykesML" ["l"="60.706,34.292"]
+"KordingLab/spykesML" ["l"="60.706,34.292", "c"=441]
 "ap-hynninen/cutt" ["l"="21.94,17.584"]
 "HPAC/tccg" ["l"="21.941,17.613"]
+"nschloe/perfplot" ["l"="45.218,21.211", "c"=20]
+"Lumorti/Quandoom" ["l"="21.003,17.586", "c"=237]
 "arkmagus/tensor_rnn" ["l"="21.559,17.836"]
 "yuqirose/tensor_train_RNN" ["l"="21.532,17.827"]
 "onucharles/tensorized-rnn" ["l"="21.553,17.821"]
 "tensorly/torch" ["l"="21.543,17.852"]
-"xinychen/Tensor4ML" ["l"="55.351,32.763"]
 "mohammadbashiri/tensor-decomposition-in-python" ["l"="21.559,17.866"]
 "HaoZeke/Q_ANN" ["l"="21.637,17.71"]
 }

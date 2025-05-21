@@ -1,4 +1,10 @@
 digraph G {
+"kubernetes/cloud-provider-openstack" -> "openstack/zun" ["e"=1]
+"kumahq/kuma" -> "envoyproxy/gateway" ["e"=1]
+"mosn/mosn" -> "mosn/layotto" ["e"=1]
+"sofastack/sofa-registry" -> "mosn/layotto" ["e"=1]
+"XiaoMi/naftis" -> "aeraki-mesh/aeraki" ["e"=1]
+"fortio/fortio" -> "envoyproxy/go-control-plane" ["e"=1]
 "envoyproxy/go-control-plane" -> "envoyproxy/data-plane-api"
 "envoyproxy/go-control-plane" -> "tetratelabs/proxy-wasm-go-sdk"
 "envoyproxy/go-control-plane" -> "envoyproxy/gateway"
@@ -17,10 +23,18 @@ digraph G {
 "tetratelabs/func-e" -> "tetratelabs/getmesh"
 "tetratelabs/func-e" -> "tetratelabs/proxy-wasm-go-sdk"
 "tetratelabs/func-e" -> "corazawaf/coraza-proxy-wasm"
+"cloudnativebooks/cloud-native-istio" -> "istio/client-go" ["e"=1]
+"servicemesher/envoy" -> "envoyproxy/data-plane-api" ["e"=1]
+"linkerd/linkerd2-proxy" -> "envoyproxy/go-control-plane" ["e"=1]
+"kgateway-dev/kgateway" -> "solo-io/gloo-mesh" ["e"=1]
+"kgateway-dev/kgateway" -> "envoyproxy/gateway" ["e"=1]
+"kgateway-dev/kgateway" -> "envoyproxy/go-control-plane" ["e"=1]
 "solo-io/sqoop" -> "solo-io/envoy-operator"
 "solo-io/sqoop" -> "solo-io/kubesquash"
 "solo-io/sqoop" -> "solo-io/glooctl"
 "solo-io/sqoop" -> "kgateway-dev/kgateway" ["e"=1]
+"solo-io/squash" -> "solo-io/kubesquash" ["e"=1]
+"yuyicai/update-kube-cert" -> "caoyingjunz/pixiu" ["e"=1]
 "solo-io/gloo-mesh" -> "kgateway-dev/kgateway" ["e"=1]
 "solo-io/gloo-mesh" -> "solo-io/wasm"
 "solo-io/gloo-mesh" -> "javascript-tutorial/server" ["e"=1]
@@ -45,6 +59,15 @@ digraph G {
 "istio/operator" -> "aspenmesh/istio-vet"
 "istio/operator" -> "istio/cni"
 "istio/operator" -> "istio-ecosystem/dns-discovery"
+"servicemeshinterface/smi-spec" -> "cncf/udpa" ["e"=1]
+"servicemeshinterface/smi-spec" -> "envoyproxy/envoy-wasm" ["e"=1]
+"servicemeshinterface/smi-spec" -> "istio/operator" ["e"=1]
+"servicemeshinterface/smi-spec" -> "envoyproxy/go-control-plane" ["e"=1]
+"servicemeshinterface/smi-spec" -> "solo-io/gloo-mesh" ["e"=1]
+"servicemeshinterface/smi-spec" -> "envoyproxy/data-plane-api" ["e"=1]
+"nginx/ngx-rust" -> "proxy-wasm/proxy-wasm-rust-sdk" ["e"=1]
+"servicemesher/meetup-slides" -> "aeraki-mesh/aeraki" ["e"=1]
+"servicemesher/meetup-slides" -> "slime-io/slime" ["e"=1]
 "aspenmesh/istio-client-go" -> "aspenmesh/istio-vet"
 "istio/tools" -> "istio/api"
 "istio/tools" -> "istio/operator"
@@ -87,8 +110,14 @@ digraph G {
 "cncf/udpa" -> "proxy-wasm/proxy-wasm-cpp-sdk"
 "cncf/udpa" -> "servicemesher/website" ["e"=1]
 "google/bazel-to-cmake" -> "lizan/bazel-cmakelists"
+"vmware-archive/ModSecurity-envoy" -> "intel/modsecurity-wasm-filter" ["e"=1]
 "champly/homeenv" -> "champly/mcpserver"
 "champly/homeenv" -> "champly/quick-mock"
+"nginxinc/nginmesh" -> "cncf/udpa" ["e"=1]
+"banzaicloud/istio-operator" -> "istio/operator" ["e"=1]
+"banzaicloud/istio-operator" -> "aspenmesh/istio-vet" ["e"=1]
+"banzaicloud/istio-operator" -> "istio/installer" ["e"=1]
+"banzaicloud/istio-operator" -> "istio/cni" ["e"=1]
 "istio/installer" -> "istio/operator"
 "istio/installer" -> "aspenmesh/istio-client-go"
 "envoyproxy/envoy-wasm" -> "solo-io/wasm"
@@ -102,6 +131,8 @@ digraph G {
 "istio/pkg" -> "istio/common-files"
 "istio-ecosystem/istio-coredns-plugin" -> "istio/bots"
 "champly/quick-mock" -> "champly/homeenv"
+"openstack/kolla" -> "openstack/zun" ["e"=1]
+"covid19india/api" -> "istio/api" ["e"=1]
 "pixiu-io/kubez-ansible" -> "caoyingjunz/csi-driver-localstorage"
 "pixiu-io/kubez-ansible" -> "caoyingjunz/pixiu"
 "pixiu-io/kubez-ansible" -> "caoyingjunz/pixiu-autoscaler"
@@ -117,6 +148,18 @@ digraph G {
 "pixiu-io/kubez-ansible" -> "libdriver/mpu9250" ["e"=1]
 "pixiu-io/kubez-ansible" -> "PeiranLi0930/Comprehensive_DL_Tutor" ["e"=1]
 "pixiu-io/kubez-ansible" -> "Text-to-Audio/Make-An-Audio" ["e"=1]
+"openservicemesh/osm" -> "envoyproxy/go-control-plane" ["e"=1]
+"kubernetes-sigs/gateway-api" -> "envoyproxy/gateway" ["e"=1]
+"kubernetes-sigs/gateway-api" -> "envoyproxy/go-control-plane" ["e"=1]
+"liyue201/gostl" -> "songzhibin97/gkit" ["e"=1]
+"corazawaf/coraza" -> "corazawaf/coraza-proxy-wasm" ["e"=1]
+"Tongsuo-Project/Tongsuo" -> "Tongsuo-Project/RustyVault" ["e"=1]
+"openstack/octavia" -> "openstack/zun" ["e"=1]
+"openstack/octavia" -> "caoyingjunz/pixiulib" ["e"=1]
+"openstack/octavia" -> "caoyingjunz/podset-operator" ["e"=1]
+"openstack/octavia" -> "caoyingjunz/pixiukit" ["e"=1]
+"apache/dubbo-go-pixiu" -> "aeraki-mesh/aeraki" ["e"=1]
+"apache/dubbo-go-pixiu" -> "mosn/layotto" ["e"=1]
 "tetratelabs/proxy-wasm-go-sdk" -> "proxy-wasm/spec"
 "tetratelabs/proxy-wasm-go-sdk" -> "proxy-wasm/proxy-wasm-rust-sdk"
 "tetratelabs/proxy-wasm-go-sdk" -> "aeraki-mesh/aeraki"
@@ -157,8 +200,13 @@ digraph G {
 "proxy-wasm/spec" -> "slime-io/slime"
 "proxy-wasm/spec" -> "envoyproxy/envoy-filter-example"
 "proxy-wasm/spec" -> "istio/api"
+"openstack/magnum" -> "openstack/zun" ["e"=1]
+"cloudnativeto/academy" -> "aeraki-mesh/aeraki" ["e"=1]
+"cloudnativeto/academy" -> "slime-io/slime" ["e"=1]
 "solo-io/workshops" -> "solo-io/solo-cop"
 "solo-io/workshops" -> "solo-io/aoa-catalog"
+"istio-ecosystem/admiral" -> "aeraki-mesh/aeraki" ["e"=1]
+"istio-ecosystem/admiral" -> "solo-io/gloo-mesh" ["e"=1]
 "istio/client-go" -> "istio/api"
 "istio/client-go" -> "istio/operator"
 "istio/client-go" -> "aspenmesh/istio-client-go"
@@ -215,6 +263,7 @@ digraph G {
 "kubecube-io/KubeCube" -> "caoyingjunz/go-learning"
 "kubecube-io/KubeCube" -> "horizoncd/horizon"
 "kubecube-io/KubeCube" -> "weibaohui/k8m" ["e"=1]
+"tkestack/kvass" -> "aeraki-mesh/aeraki" ["e"=1]
 "slime-io/slime" -> "aeraki-mesh/aeraki"
 "slime-io/slime" -> "hango-io/hango-gateway"
 "slime-io/slime" -> "tetratelabs/proxy-wasm-go-sdk"
@@ -230,6 +279,7 @@ digraph G {
 "slime-io/slime" -> "solo-io/wasm"
 "slime-io/slime" -> "istio/tools"
 "slime-io/slime" -> "envoyproxy/data-plane-api"
+"dnsjia/devops-api" -> "aide-family/moon" ["e"=1]
 "caoyingjunz/csi-driver-localstorage" -> "pixiu-io/kubez-ansible"
 "caoyingjunz/csi-driver-localstorage" -> "caoyingjunz/pixiu"
 "caoyingjunz/csi-driver-localstorage" -> "caoyingjunz/pixiu-autoscaler"
@@ -248,6 +298,7 @@ digraph G {
 "caoyingjunz/podset-operator" -> "caoyingjunz/gopixiu-eventer"
 "caoyingjunz/podset-operator" -> "caoyingjunz/grpc-pixiu"
 "caoyingjunz/podset-operator" -> "caoyingjunz/rainbow"
+"eryajf/learning-weekly" -> "caoyingjunz/go-learning" ["e"=1]
 "caoyingjunz/go-learning" -> "caoyingjunz/pixiu"
 "caoyingjunz/go-learning" -> "caoyingjunz/pixiu-autoscaler"
 "caoyingjunz/go-learning" -> "caoyingjunz/csi-driver-localstorage"
@@ -331,6 +382,8 @@ digraph G {
 "aeraki-mesh/aeraki" -> "istio/ztunnel"
 "aeraki-mesh/aeraki" -> "envoyproxy/gateway"
 "aeraki-mesh/aeraki" -> "istio/client-go"
+"curiefense/curiefense" -> "corazawaf/coraza-proxy-wasm" ["e"=1]
+"mosn/holmes" -> "mosn/layotto" ["e"=1]
 "tetratelabs/getmesh" -> "tetratelabs/func-e"
 "duancaz/kubez-autoscaler" -> "duancaz/kubez-ansible"
 "duancaz/kubez-ansible" -> "duancaz/kubez-autoscaler"
@@ -349,6 +402,8 @@ digraph G {
 "aeraki-mesh/consul2istio" -> "istio-ecosystem/consul-mcp"
 "caoyingjunz/prometheus" -> "caoyingjunz/pixiukit"
 "caoyingjunz/prometheus" -> "caoyingjunz/pixiulib"
+"cby-chen/Kubernetes" -> "pixiu-io/kubez-ansible" ["e"=1]
+"cby-chen/Kubernetes" -> "caoyingjunz/pixiu" ["e"=1]
 "envoyproxy/gateway" -> "kubernetes-sigs/gateway-api" ["e"=1]
 "envoyproxy/gateway" -> "envoyproxy/go-control-plane"
 "envoyproxy/gateway" -> "tetratelabs/proxy-wasm-go-sdk"
@@ -364,6 +419,15 @@ digraph G {
 "envoyproxy/gateway" -> "emissary-ingress/emissary" ["e"=1]
 "envoyproxy/gateway" -> "corazawaf/coraza-proxy-wasm"
 "envoyproxy/gateway" -> "cilium/tetragon" ["e"=1]
+"opensergo/opensergo-specification" -> "mosn/layotto" ["e"=1]
+"loggie-io/loggie" -> "kubecube-io/KubeCube" ["e"=1]
+"loggie-io/loggie" -> "slime-io/slime" ["e"=1]
+"loggie-io/loggie" -> "hango-io/hango-gateway" ["e"=1]
+"kstone-io/kstone" -> "kubediag/kubediag" ["e"=1]
+"kstone-io/kstone" -> "kubecube-io/KubeCube" ["e"=1]
+"devstream-io/devstream" -> "kubecube-io/KubeCube" ["e"=1]
+"nginx/nginx-gateway-fabric" -> "envoyproxy/gateway" ["e"=1]
+"kubegems/kubegems" -> "kubecube-io/KubeCube" ["e"=1]
 "horizoncd/horizon" -> "NetEase-Media/easy-ngo" ["e"=1]
 "caoyingjunz/rainbow" -> "caoyingjunz/pixiulib"
 "caoyingjunz/rainbow" -> "caoyingjunz/podset-operator"
@@ -373,6 +437,8 @@ digraph G {
 "caoyingjunz/gopixiu-eventer" -> "caoyingjunz/grpc-pixiu"
 "caoyingjunz/gopixiu-eventer" -> "caoyingjunz/pixiulib"
 "caoyingjunz/gopixiu-eventer" -> "caoyingjunz/podset-operator"
+"KusionStack/kusion" -> "mosn/layotto" ["e"=1]
+"merbridge/merbridge" -> "aeraki-mesh/aeraki" ["e"=1]
 "flomesh-io/fsm-classic" -> "flomesh-io/osm-edge"
 "flomesh-io/fsm-classic" -> "flomesh-io/fgw"
 "flomesh-io/osm-edge" -> "flomesh-io/fsm-classic"
@@ -386,6 +452,7 @@ digraph G {
 "corazawaf/coraza-proxy-wasm" -> "proxy-wasm/proxy-wasm-cpp-sdk"
 "corazawaf/coraza-proxy-wasm" -> "coreruleset/go-ftw" ["e"=1]
 "intel/modsecurity-wasm-filter" -> "corazawaf/coraza-proxy-wasm"
+"alibaba/higress" -> "envoyproxy/gateway" ["e"=1]
 "caoyingjunz/pixiu" -> "caoyingjunz/csi-driver-localstorage"
 "caoyingjunz/pixiu" -> "pixiu-io/kubez-ansible"
 "caoyingjunz/pixiu" -> "caoyingjunz/go-learning"
@@ -397,6 +464,9 @@ digraph G {
 "caoyingjunz/pixiu" -> "caoyingjunz/grpc-pixiu"
 "caoyingjunz/pixiu" -> "opsre/WatchAlert" ["e"=1]
 "caoyingjunz/pixiu" -> "caoyingjunz/gopixiu-eventer"
+"noovertime7/kubemanage" -> "aide-family/moon" ["e"=1]
+"noovertime7/kubemanage" -> "caoyingjunz/pixiu" ["e"=1]
+"youtube/doorman" -> "envoyproxy/ratelimit" ["e"=1]
 "istio/ztunnel" -> "proxy-wasm/proxy-wasm-rust-sdk"
 "istio/ztunnel" -> "howardjohn/pilot-load"
 "istio/ztunnel" -> "tetratelabs/proxy-wasm-go-sdk"
@@ -421,6 +491,7 @@ digraph G {
 "caoyingjunz/grpc-pixiu" -> "caoyingjunz/gopixiu-eventer"
 "caoyingjunz/grpc-pixiu" -> "caoyingjunz/pixiulib"
 "caoyingjunz/grpc-pixiu" -> "caoyingjunz/podset-operator"
+"traas-stack/holoinsight" -> "mosn/layotto" ["e"=1]
 "flomesh-io/ErieCanal" -> "flomesh-io/osm-edge"
 "flomesh-io/ErieCanal" -> "flomesh-io/fsm"
 "openstack/zun" -> "caoyingjunz/pixiukit"
@@ -441,17 +512,27 @@ digraph G {
 "aide-family/moon" -> "tx7do/go-kratos-admin" ["e"=1]
 "aide-family/moon" -> "noovertime7/gin-mysqlbak" ["e"=1]
 "aide-family/moon" -> "caoyingjunz/grpc-pixiu"
+"javascript-tutorial/server" -> "solo-io/gloo-mesh" ["e"=1]
 "selefra/selefra" -> "selefra/selefra"
 "selefra/selefra" -> "songzhibin97/gkit"
 "selefra/selefra" -> "songzhibin97/go-baseutils"
 "selefra/selefra" -> "caoyingjunz/csi-driver-localstorage"
 "selefra/selefra" -> "HXSecurity/DongTai" ["e"=1]
+"kmesh-net/kmesh" -> "istio/ztunnel" ["e"=1]
+"kmesh-net/kmesh" -> "slime-io/slime" ["e"=1]
+"kmesh-net/kmesh" -> "aeraki-mesh/aeraki" ["e"=1]
+"openzipkin/b3-propagation" -> "envoyproxy/data-plane-api" ["e"=1]
+"tx7do/go-kratos-admin" -> "aide-family/moon" ["e"=1]
 "pixiu-io/pixiu" -> "pixiu-io/kubez-ansible-offline"
 "flomesh-io/fsm" -> "flomesh-io/fgw"
 "flomesh-io/fsm" -> "flomesh-io/osm-edge"
 "flomesh-io/fsm" -> "flomesh-io/ErieCanal"
 "flomesh-io/fsm" -> "flomesh-io/traffic-guru"
 "KusionStack/rollout" -> "KusionStack/resourceconsist"
+"Teamlinker/Teamlinker" -> "zhangchuangiie/SimpleMybatis" ["e"=1]
+"opsre/WatchAlert" -> "aide-family/moon" ["e"=1]
+"opsre/WatchAlert" -> "caoyingjunz/pixiu" ["e"=1]
+"opsre/WatchAlert" -> "caoyingjunz/csi-driver-localstorage" ["e"=1]
 "istio/proxy" -> "istio/api"
 "istio/proxy" -> "envoyproxy/data-plane-api"
 "istio/proxy" -> "envoyproxy/envoy-filter-example"
@@ -467,6 +548,7 @@ digraph G {
 "istio/proxy" -> "proxy-wasm/spec"
 "istio/proxy" -> "slime-io/slime"
 "istio/proxy" -> "istio/old_pilot_repo"
+"upmc-enterprises/elasticsearch-operator" -> "solo-io/kubesquash" ["e"=1]
 "mosn/htnn" -> "mosn/envoy-go-extension"
 "mosn/htnn" -> "KusionStack/resourceconsist"
 "istio/api" -> "istio/proxy"
@@ -534,6 +616,8 @@ digraph G {
 "istio/old_auth_repo" -> "istio/old_pilot_repo"
 "istio/old_auth_repo" -> "istio/old_mixer_repo"
 "istio/old_auth_repo" -> "spiffe/svid"
+"CassInfra/KubeDoor" -> "caoyingjunz/pixiu" ["e"=1]
+"envoyproxy/ai-gateway" -> "envoyproxy/gateway" ["e"=1]
 "lizan/bazel-cmakelists" -> "google/bazel-to-cmake"
 "envoyproxy/envoy-filter-example" -> "envoyproxy/envoy-perf"
 "envoyproxy/envoy-filter-example" -> "proxy-wasm/proxy-wasm-cpp-host"
@@ -548,6 +632,11 @@ digraph G {
 "envoyproxy/envoy-filter-example" -> "proxy-wasm/spec"
 "envoyproxy/envoy-filter-example" -> "envoyproxy/go-control-plane"
 "envoyproxy/envoy-filter-example" -> "corazawaf/coraza-proxy-wasm"
+"istio/community" -> "istio/istio.io" ["e"=1]
+"istio/community" -> "istio/proxy" ["e"=1]
+"istio/community" -> "istio/api" ["e"=1]
+"istio/community" -> "envoyproxy/go-control-plane" ["e"=1]
+"kubernetes/api" -> "istio/api" ["e"=1]
 "envoyproxy/data-plane-api" -> "envoyproxy/go-control-plane"
 "envoyproxy/data-plane-api" -> "istio/api"
 "envoyproxy/data-plane-api" -> "envoyproxy/java-control-plane"
@@ -563,42 +652,58 @@ digraph G {
 "envoyproxy/data-plane-api" -> "istio/operator"
 "envoyproxy/data-plane-api" -> "mattklein123/lyft_envoy_dashboards"
 "envoyproxy/data-plane-api" -> "istio/old_pilot_repo"
+"kagent-dev/kagent" -> "solo-io/gloo-mesh" ["e"=1]
+"kagent-dev/kagent" -> "solo-io/workshops" ["e"=1]
 "spiffe/svid" -> "spiffe/ghostunnel"
+"kubernetes/cloud-provider-openstack" ["l"="1.194,15.042", "c"=857]
+"openstack/zun" ["l"="6.335,-11.081"]
+"kumahq/kuma" ["l"="7.93,-8.97", "c"=14]
+"envoyproxy/gateway" ["l"="6.518,-10.886"]
+"mosn/mosn" ["l"="3.387,-8.626", "c"=0]
+"mosn/layotto" ["l"="6.425,-10.958"]
+"sofastack/sofa-registry" ["l"="-3.13,11.991", "c"=15]
+"XiaoMi/naftis" ["l"="8.005,-9.48", "c"=14]
+"aeraki-mesh/aeraki" ["l"="6.469,-10.924"]
+"fortio/fortio" ["l"="7.877,-8.987", "c"=14]
 "envoyproxy/go-control-plane" ["l"="6.458,-10.905"]
 "envoyproxy/data-plane-api" ["l"="6.435,-10.911"]
 "tetratelabs/proxy-wasm-go-sdk" ["l"="6.501,-10.926"]
-"envoyproxy/gateway" ["l"="6.518,-10.886"]
 "envoyproxy/ratelimit" ["l"="6.413,-10.883"]
-"aeraki-mesh/aeraki" ["l"="6.469,-10.924"]
 "istio/proxy" ["l"="6.452,-10.882"]
 "envoyproxy/envoy-filter-example" ["l"="6.475,-10.942"]
 "istio/api" ["l"="6.474,-10.894"]
-"kgateway-dev/kgateway" ["l"="7.972,-8.893"]
-"kubernetes-sigs/gateway-api" ["l"="7.978,-9.201"]
+"kgateway-dev/kgateway" ["l"="7.972,-8.893", "c"=14]
+"kubernetes-sigs/gateway-api" ["l"="7.978,-9.201", "c"=14]
 "slime-io/slime" ["l"="6.455,-10.946"]
-"kubernetes-sigs/controller-runtime" ["l"="7.995,-9.18"]
-"turbinelabs/rotor" ["l"="41.563,35.674"]
-"envoyproxy/envoy" ["l"="8.346,-8.537"]
-"projectcontour/contour" ["l"="7.945,-8.942"]
+"kubernetes-sigs/controller-runtime" ["l"="7.995,-9.18", "c"=14]
+"turbinelabs/rotor" ["l"="41.563,35.674", "c"=51]
+"envoyproxy/envoy" ["l"="8.346,-8.537", "c"=14]
+"projectcontour/contour" ["l"="7.945,-8.942", "c"=14]
 "tetratelabs/func-e" ["l"="6.559,-10.957"]
 "tetratelabs/getmesh" ["l"="6.584,-10.964"]
 "corazawaf/coraza-proxy-wasm" ["l"="6.526,-10.957"]
+"cloudnativebooks/cloud-native-istio" ["l"="8.052,-9.693", "c"=14]
+"istio/client-go" ["l"="6.495,-10.869"]
+"servicemesher/envoy" ["l"="8.03,-9.659", "c"=14]
+"linkerd/linkerd2-proxy" ["l"="-10.136,-6.193", "c"=5]
+"solo-io/gloo-mesh" ["l"="6.554,-10.89"]
 "solo-io/sqoop" ["l"="6.656,-10.826"]
 "solo-io/envoy-operator" ["l"="6.675,-10.786"]
 "solo-io/kubesquash" ["l"="6.706,-10.809"]
 "solo-io/glooctl" ["l"="6.685,-10.833"]
-"solo-io/gloo-mesh" ["l"="6.554,-10.89"]
+"solo-io/squash" ["l"="7.813,-8.86", "c"=14]
+"yuyicai/update-kube-cert" ["l"="8.873,-5.525", "c"=278]
+"caoyingjunz/pixiu" ["l"="6.281,-11.036"]
 "solo-io/wasm" ["l"="6.519,-10.939"]
-"javascript-tutorial/server" ["l"="-43.955,24.776"]
+"javascript-tutorial/server" ["l"="-43.955,24.776", "c"=158]
 "solo-io/autopilot" ["l"="6.566,-10.862"]
-"istio-ecosystem/admiral" ["l"="7.462,-9.708"]
+"istio-ecosystem/admiral" ["l"="7.462,-9.708", "c"=14]
 "solo-io/workshops" ["l"="6.596,-10.9"]
-"servicemeshinterface/smi-spec" ["l"="8.01,-9.059"]
+"servicemeshinterface/smi-spec" ["l"="8.01,-9.059", "c"=14]
 "istio/tools" ["l"="6.486,-10.885"]
-"banzaicloud/istio-operator" ["l"="7.68,-9.383"]
+"banzaicloud/istio-operator" ["l"="7.68,-9.383", "c"=14]
 "envoyproxy/envoy-wasm" ["l"="6.491,-10.907"]
-"kiali/kiali" ["l"="7.969,-8.926"]
-"istio/client-go" ["l"="6.495,-10.869"]
+"kiali/kiali" ["l"="7.969,-8.926", "c"=14]
 "proxy-wasm/spec" ["l"="6.503,-10.949"]
 "istio/operator" ["l"="6.481,-10.853"]
 "istio/installer" ["l"="6.469,-10.836"]
@@ -606,6 +711,10 @@ digraph G {
 "aspenmesh/istio-vet" ["l"="6.501,-10.812"]
 "istio/cni" ["l"="6.472,-10.865"]
 "istio-ecosystem/dns-discovery" ["l"="6.476,-10.814"]
+"cncf/udpa" ["l"="6.462,-10.958"]
+"nginx/ngx-rust" ["l"="-20.874,-21.484", "c"=245]
+"proxy-wasm/proxy-wasm-rust-sdk" ["l"="6.535,-10.932"]
+"servicemesher/meetup-slides" ["l"="8.04,-9.641", "c"=14]
 "envoyproxy/nighthawk" ["l"="6.441,-10.933"]
 "envoyproxy/envoy-perf" ["l"="6.475,-10.971"]
 "istio/release-builder" ["l"="6.518,-10.837"]
@@ -613,8 +722,7 @@ digraph G {
 "istio-ecosystem/wasm-extensions" ["l"="6.519,-10.919"]
 "istio/pkg" ["l"="6.518,-10.854"]
 "envoyproxy/java-control-plane" ["l"="6.403,-10.928"]
-"cncf/udpa" ["l"="6.462,-10.958"]
-"layer5io/getnighthawk" ["l"="30.691,-24.973"]
+"layer5io/getnighthawk" ["l"="30.691,-24.973", "c"=523]
 "proxy-wasm/proxy-wasm-cpp-host" ["l"="6.492,-10.957"]
 "envoyproxy/xds-relay" ["l"="6.369,-10.929"]
 "proxy-wasm/proxy-wasm-cpp-sdk" ["l"="6.491,-10.937"]
@@ -622,37 +730,53 @@ digraph G {
 "alibaba/hessian2-codec" ["l"="6.434,-11.017"]
 "aeraki-mesh/meta-protocol-proxy" ["l"="6.455,-10.982"]
 "istio-ecosystem/consul-mcp" ["l"="6.476,-11.01"]
-"servicemesher/website" ["l"="8.063,-9.752"]
+"servicemesher/website" ["l"="8.063,-9.752", "c"=14]
 "google/bazel-to-cmake" ["l"="6.464,-11.086"]
 "lizan/bazel-cmakelists" ["l"="6.465,-11.047"]
+"vmware-archive/ModSecurity-envoy" ["l"="-21.129,-21.767", "c"=245]
+"intel/modsecurity-wasm-filter" ["l"="6.552,-10.981"]
 "champly/homeenv" ["l"="6.498,-11.086"]
 "champly/mcpserver" ["l"="6.491,-11.061"]
 "champly/quick-mock" ["l"="6.503,-11.106"]
+"nginxinc/nginmesh" ["l"="8.475,-9.019", "c"=14]
 "istio/common-files" ["l"="6.545,-10.823"]
 "istio-ecosystem/istio-coredns-plugin" ["l"="6.526,-10.805"]
 "istio/bots" ["l"="6.535,-10.776"]
+"openstack/kolla" ["l"="1.266,15.105", "c"=857]
+"covid19india/api" ["l"="29.643,-26.87", "c"=73]
 "pixiu-io/kubez-ansible" ["l"="6.245,-11.07"]
 "caoyingjunz/csi-driver-localstorage" ["l"="6.274,-11.063"]
-"caoyingjunz/pixiu" ["l"="6.281,-11.036"]
 "caoyingjunz/pixiu-autoscaler" ["l"="6.304,-11.06"]
 "caoyingjunz/go-learning" ["l"="6.296,-11.046"]
-"WAMAWAMA/WAMA_Modules" ["l"="50.686,2.887"]
-"Shiinama/json-to-interface" ["l"="49.95,3.231"]
-"ali-vilab/Cones-V2" ["l"="50.691,2.975"]
-"elleryqueenhomels/fast_neural_style_transfer" ["l"="50.698,2.899"]
-"wangxupeng/2019Legal-AI-Challenge-Legal-Case-Element-Recognition-solution" ["l"="50.747,2.974"]
-"PeiranLi0930/TorchProject" ["l"="50.651,2.959"]
+"WAMAWAMA/WAMA_Modules" ["l"="50.686,2.887", "c"=85]
+"Shiinama/json-to-interface" ["l"="49.95,3.231", "c"=941]
+"ali-vilab/Cones-V2" ["l"="50.691,2.975", "c"=85]
+"elleryqueenhomels/fast_neural_style_transfer" ["l"="50.698,2.899", "c"=85]
+"wangxupeng/2019Legal-AI-Challenge-Legal-Case-Element-Recognition-solution" ["l"="50.747,2.974", "c"=85]
+"PeiranLi0930/TorchProject" ["l"="50.651,2.959", "c"=85]
 "zhangchuangiie/SimpleMybatis" ["l"="6.193,-11.12"]
-"pentilm/StellarSolver" ["l"="50.703,2.88"]
-"libdriver/mpu9250" ["l"="49.988,3.245"]
-"PeiranLi0930/Comprehensive_DL_Tutor" ["l"="50.832,2.815"]
-"Text-to-Audio/Make-An-Audio" ["l"="50.744,2.954"]
-"proxy-wasm/proxy-wasm-rust-sdk" ["l"="6.535,-10.932"]
+"pentilm/StellarSolver" ["l"="50.703,2.88", "c"=85]
+"libdriver/mpu9250" ["l"="49.988,3.245", "c"=941]
+"PeiranLi0930/Comprehensive_DL_Tutor" ["l"="50.832,2.815", "c"=85]
+"Text-to-Audio/Make-An-Audio" ["l"="50.744,2.954", "c"=85]
+"openservicemesh/osm" ["l"="7.923,-9.075", "c"=14]
+"liyue201/gostl" ["l"="3.96,-8.498", "c"=0]
+"songzhibin97/gkit" ["l"="6.159,-11.063"]
+"corazawaf/coraza" ["l"="-20.992,-21.679", "c"=245]
+"Tongsuo-Project/Tongsuo" ["l"="-22.321,14.499", "c"=412]
+"Tongsuo-Project/RustyVault" ["l"="6.579,-11.085"]
+"openstack/octavia" ["l"="1.343,15.146", "c"=857]
+"caoyingjunz/pixiulib" ["l"="6.329,-11.047"]
+"caoyingjunz/podset-operator" ["l"="6.318,-11.049"]
+"caoyingjunz/pixiukit" ["l"="6.323,-11.061"]
+"apache/dubbo-go-pixiu" ["l"="-3.835,12.415", "c"=15]
 "mosn/proxy-wasm-go-host" ["l"="6.545,-10.861"]
 "solo-io/wasm-image-spec" ["l"="6.536,-10.982"]
 "solo-io/proxy-runtime" ["l"="6.563,-10.935"]
-"api7/wasm-nginx-module" ["l"="-20.712,-21.413"]
+"api7/wasm-nginx-module" ["l"="-20.712,-21.413", "c"=245]
 "mosn/envoy-go-extension" ["l"="6.423,-10.982"]
+"openstack/magnum" ["l"="1.333,15.16", "c"=857]
+"cloudnativeto/academy" ["l"="8.069,-9.529", "c"=14]
 "solo-io/solo-cop" ["l"="6.625,-10.883"]
 "solo-io/aoa-catalog" ["l"="6.63,-10.9"]
 "nitishm/engarde" ["l"="6.516,-10.983"]
@@ -660,46 +784,40 @@ digraph G {
 "tetratelabs/envoy-wasm-rust-sdk" ["l"="6.598,-10.926"]
 "otomato-gh/proxy-wasm-rust" ["l"="6.586,-10.937"]
 "proxy-wasm/test-framework" ["l"="6.573,-10.919"]
-"caoyingjunz/pixiukit" ["l"="6.323,-11.061"]
-"caoyingjunz/pixiulib" ["l"="6.329,-11.047"]
 "caoyingjunz/prometheus" ["l"="6.342,-11.064"]
 "GregHanson/engarde-viewer" ["l"="6.527,-11.031"]
 "nacos-group/nacos-istio" ["l"="6.498,-11.045"]
 "kubecube-io/KubeCube" ["l"="6.39,-11.025"]
-"loggie-io/loggie" ["l"="7.955,-9.408"]
+"loggie-io/loggie" ["l"="7.955,-9.408", "c"=14]
 "hango-io/hango-gateway" ["l"="6.377,-11.003"]
 "kubediag/kubediag" ["l"="6.36,-11.033"]
-"kubegems/kubegems" ["l"="8.689,-5.574"]
+"kubegems/kubegems" ["l"="8.689,-5.574", "c"=278]
 "weilaaa/grief-porter" ["l"="6.389,-11.053"]
-"erda-project/kubeprober" ["l"="8.137,-9.541"]
-"kstone-io/kstone" ["l"="8.04,-9.377"]
+"erda-project/kubeprober" ["l"="8.137,-9.541", "c"=14]
+"kstone-io/kstone" ["l"="8.04,-9.377", "c"=14]
 "horizoncd/horizon" ["l"="6.393,-11.088"]
-"weibaohui/k8m" ["l"="8.699,-5.686"]
-"merbridge/merbridge" ["l"="7.762,-9.529"]
+"weibaohui/k8m" ["l"="8.699,-5.686", "c"=278]
+"tkestack/kvass" ["l"="8.023,-9.381", "c"=14]
+"merbridge/merbridge" ["l"="7.762,-9.529", "c"=14]
 "slime-io/i9s" ["l"="6.438,-10.982"]
-"cloudnativeto/academy" ["l"="8.069,-9.529"]
+"dnsjia/devops-api" ["l"="8.818,-5.727", "c"=278]
+"aide-family/moon" ["l"="6.261,-11.043"]
 "pixiu-io/dashboard" ["l"="6.292,-11.067"]
 "caoyingjunz/rainbow" ["l"="6.318,-11.038"]
-"aide-family/moon" ["l"="6.261,-11.043"]
 "duancaz/kubez-autoscaler" ["l"="6.304,-11.092"]
-"caoyingjunz/podset-operator" ["l"="6.318,-11.049"]
 "duancaz/kubez-ansible" ["l"="6.288,-11.091"]
 "caoyingjunz/grpc-pixiu" ["l"="6.306,-11.035"]
-"songzhibin97/gkit" ["l"="6.159,-11.063"]
 "songzhibin97/go-baseutils" ["l"="6.165,-11.042"]
 "selefra/selefra" ["l"="6.193,-11.057"]
 "caoyingjunz/gopixiu-eventer" ["l"="6.321,-11.029"]
+"eryajf/learning-weekly" ["l"="8.665,-5.611", "c"=278]
 "hango-io/rider" ["l"="6.413,-11.029"]
-"mosn/layotto" ["l"="6.425,-10.958"]
-"mosn/mosn" ["l"="3.387,-8.626"]
-"KusionStack/kusion" ["l"="7.707,-9.338"]
-"mosn/holmes" ["l"="3.522,-8.629"]
-"apache/dubbo-go-pixiu" ["l"="-3.835,12.415"]
-"sofastack/sofa-registry" ["l"="-3.13,11.991"]
-"traas-stack/holoinsight" ["l"="8.171,-9.888"]
-"arana-db/arana" ["l"="-3.917,12.539"]
-"polarismesh/polaris" ["l"="3.268,-8.601"]
-"sofastack/sofa-ark" ["l"="-3.149,11.921"]
+"KusionStack/kusion" ["l"="7.707,-9.338", "c"=14]
+"mosn/holmes" ["l"="3.522,-8.629", "c"=0]
+"traas-stack/holoinsight" ["l"="8.171,-9.888", "c"=14]
+"arana-db/arana" ["l"="-3.917,12.539", "c"=15]
+"polarismesh/polaris" ["l"="3.268,-8.601", "c"=0]
+"sofastack/sofa-ark" ["l"="-3.149,11.921", "c"=15]
 "flomesh-io/pipy" ["l"="6.562,-11.011"]
 "flomesh-io/osm-edge" ["l"="6.586,-11.036"]
 "flomesh-io/ztm" ["l"="6.617,-11.045"]
@@ -709,7 +827,7 @@ digraph G {
 "flomesh-io/ErieCanal" ["l"="6.598,-11.029"]
 "flomesh-io/traffic-guru" ["l"="6.59,-11.018"]
 "flomesh-io/flomesh-bookinfo-demo" ["l"="6.594,-11.001"]
-"Tongsuo-Project/RustyVault" ["l"="6.579,-11.085"]
+"curiefense/curiefense" ["l"="-21.098,-21.734", "c"=245]
 "howardjohn/local-istio-development" ["l"="6.381,-10.832"]
 "howardjohn/pilot-load" ["l"="6.425,-10.844"]
 "daniel-dx/ncgen" ["l"="6.618,-11.072"]
@@ -717,46 +835,53 @@ digraph G {
 "Tencent-Cloud-Mesh/mesh-demo" ["l"="6.435,-10.999"]
 "djannot/envoyctl" ["l"="6.535,-11.061"]
 "aeraki-mesh/consul2istio" ["l"="6.484,-11.031"]
-"envoyproxy/ai-gateway" ["l"="7.856,-9.652"]
-"kumahq/kuma" ["l"="7.93,-8.97"]
-"alibaba/higress" ["l"="7.931,-9.457"]
-"emissary-ingress/emissary" ["l"="7.983,-8.863"]
-"cilium/tetragon" ["l"="7.252,-6.312"]
-"NetEase-Media/easy-ngo" ["l"="50.61,3.057"]
-"intel/modsecurity-wasm-filter" ["l"="6.552,-10.981"]
-"coreruleset/go-ftw" ["l"="-21.17,-21.651"]
-"opsre/WatchAlert" ["l"="8.747,-5.617"]
-"kmesh-net/kmesh" ["l"="8.023,-9.531"]
-"kubernetes-sigs/blixt" ["l"="7.87,-9.531"]
+"cby-chen/Kubernetes" ["l"="8.902,-5.529", "c"=278]
+"envoyproxy/ai-gateway" ["l"="7.856,-9.652", "c"=14]
+"alibaba/higress" ["l"="7.931,-9.457", "c"=14]
+"emissary-ingress/emissary" ["l"="7.983,-8.863", "c"=14]
+"cilium/tetragon" ["l"="7.252,-6.312", "c"=335]
+"opensergo/opensergo-specification" ["l"="-3.593,11.735", "c"=15]
+"devstream-io/devstream" ["l"="7.921,-9.501", "c"=14]
+"nginx/nginx-gateway-fabric" ["l"="8.426,-9.252", "c"=14]
+"NetEase-Media/easy-ngo" ["l"="50.61,3.057", "c"=85]
+"coreruleset/go-ftw" ["l"="-21.17,-21.651", "c"=245]
+"opsre/WatchAlert" ["l"="8.747,-5.617", "c"=278]
+"noovertime7/kubemanage" ["l"="8.729,-5.649", "c"=278]
+"youtube/doorman" ["l"="3.91,-8.25", "c"=0]
+"kmesh-net/kmesh" ["l"="8.023,-9.531", "c"=14]
+"kubernetes-sigs/blixt" ["l"="7.87,-9.531", "c"=14]
 "caoyingjunz/hostpath-csi" ["l"="6.277,-11.102"]
 "tyvekzhang/fastapi-sqlmodel-starter" ["l"="6.268,-11.086"]
 "pixiu-io/pixiu" ["l"="6.289,-11.116"]
-"openstack/zun" ["l"="6.335,-11.081"]
 "flipped-aurora/ws" ["l"="6.143,-11.031"]
 "aide-family/gin-plus" ["l"="6.233,-11.024"]
-"noovertime7/kubemanage" ["l"="8.729,-5.649"]
-"tx7do/go-kratos-admin" ["l"="2.815,-8.955"]
-"noovertime7/gin-mysqlbak" ["l"="8.631,-5.724"]
-"HXSecurity/DongTai" ["l"="-44.526,-29.554"]
+"tx7do/go-kratos-admin" ["l"="2.815,-8.955", "c"=0]
+"noovertime7/gin-mysqlbak" ["l"="8.631,-5.724", "c"=278]
+"HXSecurity/DongTai" ["l"="-44.526,-29.554", "c"=3]
+"openzipkin/b3-propagation" ["l"="-2.905,12.444", "c"=15]
 "pixiu-io/kubez-ansible-offline" ["l"="6.285,-11.143"]
 "KusionStack/rollout" ["l"="6.306,-10.949"]
 "KusionStack/resourceconsist" ["l"="6.325,-10.956"]
+"Teamlinker/Teamlinker" ["l"="51.212,2.731", "c"=85]
 "istio/istio.io" ["l"="6.451,-10.851"]
 "istio/old_pilot_repo" ["l"="6.396,-10.816"]
+"upmc-enterprises/elasticsearch-operator" ["l"="10.476,-10.127", "c"=740]
 "mosn/htnn" ["l"="6.356,-10.968"]
 "web3infra-foundation/mega" ["l"="6.665,-11.072"]
 "scRNA-Compt/EasyDesign" ["l"="6.255,-11.113"]
 "istio/old_mixer_repo" ["l"="6.37,-10.798"]
 "istio/old_auth_repo" ["l"="6.372,-10.78"]
 "istio/old_issues_repo" ["l"="6.397,-10.777"]
-"fortio/fortio" ["l"="7.877,-8.987"]
-"uber-go/automaxprocs" ["l"="4.032,-8.809"]
-"uber-go/ratelimit" ["l"="3.777,-8.713"]
-"istio/community" ["l"="8.137,-8.687"]
-"servicemesher/istio-official-translation" ["l"="8.036,-9.682"]
-"servicemesher/istio-handbook" ["l"="8.034,-9.587"]
+"uber-go/automaxprocs" ["l"="4.032,-8.809", "c"=0]
+"uber-go/ratelimit" ["l"="3.777,-8.713", "c"=0]
+"istio/community" ["l"="8.137,-8.687", "c"=14]
+"servicemesher/istio-official-translation" ["l"="8.036,-9.682", "c"=14]
+"servicemesher/istio-handbook" ["l"="8.034,-9.587", "c"=14]
 "spiffe/svid" ["l"="6.35,-10.749"]
-"gojek/consul-envoy-xds" ["l"="41.546,35.651"]
+"CassInfra/KubeDoor" ["l"="8.777,-5.624", "c"=278]
+"kubernetes/api" ["l"="8.146,-9.199", "c"=14]
+"gojek/consul-envoy-xds" ["l"="41.546,35.651", "c"=51]
 "mattklein123/lyft_envoy_dashboards" ["l"="6.374,-10.896"]
+"kagent-dev/kagent" ["l"="9.706,-11.055", "c"=834]
 "spiffe/ghostunnel" ["l"="6.336,-10.73"]
 }

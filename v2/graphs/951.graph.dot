@@ -25,6 +25,9 @@ digraph G {
 "webpack-contrib/webpack-serve" -> "webpack-contrib/webpack-hot-client"
 "webpack-contrib/webpack-serve" -> "mjbvz/vscode-lit-html" ["e"=1]
 "webpack-contrib/webpack-serve" -> "eslint/typescript-eslint-parser" ["e"=1]
+"pshihn/workly" -> "unjs/webpackbar" ["e"=1]
+"stefanpenner/es6-promise" -> "jantimon/html-webpack-plugin" ["e"=1]
+"stefanpenner/es6-promise" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
 "vincentdchan/webpack-deep-scope-analysis-plugin" -> "estools/escope" ["e"=1]
 "vincentdchan/webpack-deep-scope-analysis-plugin" -> "alienzhou/webpack-internal-plugin-relation" ["e"=1]
 "vincentdchan/webpack-deep-scope-analysis-plugin" -> "alexkuz/webpack-chart"
@@ -32,11 +35,23 @@ digraph G {
 "vincentdchan/webpack-deep-scope-analysis-plugin" -> "gdborton/webpack-parallel-uglify-plugin"
 "vincentdchan/webpack-deep-scope-analysis-plugin" -> "webpack/loader-runner"
 "vincentdchan/webpack-deep-scope-analysis-plugin" -> "bammoo/set-iterm2-badge"
+"http-party/http-server" -> "jantimon/html-webpack-plugin" ["e"=1]
+"babel/babel-upgrade" -> "babel/babel-loader" ["e"=1]
+"babel/babel-upgrade" -> "webpack/webpack-cli" ["e"=1]
+"microsoft/tsdoc" -> "TypeStrong/ts-loader" ["e"=1]
+"dorey/JavaScript-Equality-Table" -> "webpack-contrib/postcss-loader" ["e"=1]
 "felixge/node-dateformat" -> "webpack-contrib/json-loader"
 "felixge/node-dateformat" -> "visionmedia/express-resource" ["e"=1]
 "felixge/node-dateformat" -> "pillarjs/cookies" ["e"=1]
 "felixge/node-dateformat" -> "bnoguchi/everyauth" ["e"=1]
 "felixge/node-dateformat" -> "babel/babel-eslint"
+"SublimeLinter/SublimeLinter-eslint" -> "babel/babel-eslint" ["e"=1]
+"winjs/winjs" -> "DefinitelyTyped/tsd" ["e"=1]
+"facebook/regenerator" -> "babel/babel-loader" ["e"=1]
+"facebook/regenerator" -> "babel/babel-eslint" ["e"=1]
+"palantir/tslint" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"palantir/tslint" -> "TypeStrong/ts-loader" ["e"=1]
+"palantir/tslint" -> "typings/typings" ["e"=1]
 "webpack-contrib/sass-loader" -> "webpack-contrib/css-loader"
 "webpack-contrib/sass-loader" -> "webpack-contrib/style-loader"
 "webpack-contrib/sass-loader" -> "webpack-contrib/extract-text-webpack-plugin"
@@ -52,6 +67,18 @@ digraph G {
 "webpack-contrib/sass-loader" -> "johnagan/clean-webpack-plugin"
 "webpack-contrib/sass-loader" -> "babel/babel-eslint"
 "webpack-contrib/sass-loader" -> "webpack-contrib/eslint-loader"
+"Olical/EventEmitter" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"svg-sprite/svg-sprite" -> "JetBrains/svg-sprite-loader" ["e"=1]
+"taylorhakes/promise-polyfill" -> "webpack-contrib/postcss-loader" ["e"=1]
+"taylorhakes/promise-polyfill" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"taylorhakes/promise-polyfill" -> "jantimon/html-webpack-plugin" ["e"=1]
+"imagemin/imagemin" -> "tcoopman/image-webpack-loader" ["e"=1]
+"itgalaxy/favicons" -> "jantimon/favicons-webpack-plugin" ["e"=1]
+"itgalaxy/favicons" -> "brunocodutra/webapp-webpack-plugin" ["e"=1]
+"GoogleChromeLabs/size-plugin" -> "unjs/webpackbar" ["e"=1]
+"isaacs/rimraf" -> "jantimon/html-webpack-plugin" ["e"=1]
+"isaacs/rimraf" -> "babel/babel-loader" ["e"=1]
+"isaacs/rimraf" -> "survivejs/webpack-merge" ["e"=1]
 "webpack-contrib/terser-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin"
 "webpack-contrib/terser-webpack-plugin" -> "NMFR/optimize-css-assets-webpack-plugin"
 "webpack-contrib/terser-webpack-plugin" -> "webpack-contrib/uglifyjs-webpack-plugin"
@@ -67,6 +94,8 @@ digraph G {
 "webpack-contrib/terser-webpack-plugin" -> "TypeStrong/fork-ts-checker-webpack-plugin"
 "webpack-contrib/terser-webpack-plugin" -> "stephencookdev/speed-measure-webpack-plugin"
 "webpack-contrib/terser-webpack-plugin" -> "webpack-contrib/compression-webpack-plugin"
+"prerender/prerender" -> "jantimon/html-webpack-plugin" ["e"=1]
+"lwsjs/local-web-server" -> "webpack-contrib/copy-webpack-plugin" ["e"=1]
 "webpack-contrib/extract-text-webpack-plugin" -> "webpack-contrib/css-loader"
 "webpack-contrib/extract-text-webpack-plugin" -> "webpack-contrib/postcss-loader"
 "webpack-contrib/extract-text-webpack-plugin" -> "jantimon/html-webpack-plugin"
@@ -82,6 +111,10 @@ digraph G {
 "webpack-contrib/extract-text-webpack-plugin" -> "webpack-contrib/webpack-hot-middleware"
 "webpack-contrib/extract-text-webpack-plugin" -> "reactjs/react-router-redux" ["e"=1]
 "webpack-contrib/extract-text-webpack-plugin" -> "gaearon/react-hot-loader" ["e"=1]
+"normalize/mz" -> "observing/pre-commit" ["e"=1]
+"jsdoc2md/jsdoc-to-markdown" -> "observing/pre-commit" ["e"=1]
+"Yaffle/EventSource" -> "webpack/webpack-dev-middleware" ["e"=1]
+"mrmckeb/typescript-plugin-css-modules" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
 "unjs/webpackbar" -> "geowarin/friendly-errors-webpack-plugin"
 "unjs/webpackbar" -> "survivejs/webpack-merge"
 "unjs/webpackbar" -> "stephencookdev/speed-measure-webpack-plugin"
@@ -97,6 +130,13 @@ digraph G {
 "unjs/webpackbar" -> "johnagan/clean-webpack-plugin"
 "unjs/webpackbar" -> "sorrycc/awesome-f2e-libs" ["e"=1]
 "unjs/webpackbar" -> "GoogleChromeLabs/prerender-loader" ["e"=1]
+"angular/zone.js" -> "typings/typings" ["e"=1]
+"tschaub/gh-pages" -> "survivejs/webpack-merge" ["e"=1]
+"tschaub/gh-pages" -> "babel/babel-eslint" ["e"=1]
+"shama/webpack-stream" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"shama/webpack-stream" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"shama/webpack-stream" -> "babel/babel-loader" ["e"=1]
+"shama/webpack-stream" -> "webpack/docs" ["e"=1]
 "webpack-contrib/html-loader" -> "webpack-contrib/file-loader"
 "webpack-contrib/html-loader" -> "webpack-contrib/style-loader"
 "webpack-contrib/html-loader" -> "webpack-contrib/url-loader"
@@ -112,6 +152,10 @@ digraph G {
 "webpack-contrib/html-loader" -> "jantimon/html-webpack-plugin"
 "webpack-contrib/html-loader" -> "webpack-contrib/json-loader"
 "webpack-contrib/html-loader" -> "webpack/webpack-dev-server"
+"facebookarchive/sublime-react" -> "css-modules/webpack-demo" ["e"=1]
+"microsoft/TypeScript-Babel-Starter" -> "TypeStrong/ts-loader" ["e"=1]
+"microsoft/TypeScript-Babel-Starter" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"twolfson/gulp.spritesmith" -> "mixtur/webpack-spritesmith" ["e"=1]
 "ivogabe/gulp-typescript" -> "gulp-sourcemaps/gulp-sourcemaps" ["e"=1]
 "ivogabe/gulp-typescript" -> "typings/typings"
 "ivogabe/gulp-typescript" -> "gulp-community/gulp-concat" ["e"=1]
@@ -127,6 +171,8 @@ digraph G {
 "ivogabe/gulp-typescript" -> "palantir/tslint" ["e"=1]
 "ivogabe/gulp-typescript" -> "dlmanning/gulp-sass" ["e"=1]
 "ivogabe/gulp-typescript" -> "sindresorhus/gulp-filter" ["e"=1]
+"csstools/postcss-preset-env" -> "webpack-contrib/postcss-loader" ["e"=1]
+"csstools/postcss-preset-env" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
 "acrazing/dpdm" -> "pahen/madge" ["e"=1]
 "acrazing/dpdm" -> "aackerman/circular-dependency-plugin"
 "acrazing/dpdm" -> "statoscope/statoscope" ["e"=1]
@@ -163,6 +209,9 @@ digraph G {
 "stephencookdev/speed-measure-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin"
 "stephencookdev/speed-measure-webpack-plugin" -> "unjs/webpackbar"
 "stephencookdev/speed-measure-webpack-plugin" -> "asfktz/autodll-webpack-plugin" ["e"=1]
+"egoist/import-http" -> "vincentdchan/webpack-deep-scope-analysis-plugin" ["e"=1]
+"ghooks-org/ghooks" -> "observing/pre-commit" ["e"=1]
+"codymikol/karma-webpack" -> "webpack-contrib/html-loader" ["e"=1]
 "webpack-contrib/compression-webpack-plugin" -> "mynameiswhm/brotli-webpack-plugin"
 "webpack-contrib/compression-webpack-plugin" -> "webpack-contrib/copy-webpack-plugin"
 "webpack-contrib/compression-webpack-plugin" -> "johnagan/clean-webpack-plugin"
@@ -194,6 +243,13 @@ digraph G {
 "shellscape/webpack-nano" -> "shellscape/webpack-plugin-serve"
 "chenglou/RCSS" -> "hackhat/smart-css"
 "aki2o/emacs-tss" -> "clausreinke/typescript-tools"
+"yahoo/serialize-javascript" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"yahoo/serialize-javascript" -> "ztoben/assets-webpack-plugin" ["e"=1]
+"yahoo/serialize-javascript" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"jsx-eslint/eslint-plugin-react" -> "babel/babel-eslint" ["e"=1]
+"micromatch/micromatch" -> "webpack/enhanced-resolve" ["e"=1]
+"sintaxi/surge" -> "babel/babel-eslint" ["e"=1]
+"babel/babel-sublime" -> "babel/babel-eslint" ["e"=1]
 "jantimon/html-webpack-plugin" -> "webpack/webpack-dev-server"
 "jantimon/html-webpack-plugin" -> "webpack-contrib/extract-text-webpack-plugin"
 "jantimon/html-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin"
@@ -209,6 +265,12 @@ digraph G {
 "jantimon/html-webpack-plugin" -> "chimurai/http-proxy-middleware" ["e"=1]
 "jantimon/html-webpack-plugin" -> "rollup/rollup" ["e"=1]
 "jantimon/html-webpack-plugin" -> "JedWatson/classnames" ["e"=1]
+"isaacs/minimatch" -> "webpack/memory-fs" ["e"=1]
+"browserslist/browserslist" -> "jantimon/html-webpack-plugin" ["e"=1]
+"browserslist/browserslist" -> "webpack/webpack-dev-server" ["e"=1]
+"terser/terser" -> "webpack-contrib/terser-webpack-plugin" ["e"=1]
+"terser/terser" -> "jantimon/html-webpack-plugin" ["e"=1]
+"terser/terser" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
 "soundcloud/chunk-manifest-webpack-plugin" -> "szrenwei/inline-manifest-webpack-plugin"
 "soundcloud/chunk-manifest-webpack-plugin" -> "jouni-kantola/inline-chunk-manifest-html-webpack-plugin"
 "soundcloud/chunk-manifest-webpack-plugin" -> "ztoben/assets-webpack-plugin"
@@ -228,6 +290,10 @@ digraph G {
 "TypeStrong/atom-typescript" -> "tststs/atom-ternjs" ["e"=1]
 "TypeStrong/atom-typescript" -> "file-icons/atom" ["e"=1]
 "TypeStrong/atom-typescript" -> "TypeStrong/ntypescript"
+"pmmmwh/react-refresh-webpack-plugin" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"pmmmwh/react-refresh-webpack-plugin" -> "stephencookdev/speed-measure-webpack-plugin" ["e"=1]
+"pmmmwh/react-refresh-webpack-plugin" -> "survivejs/webpack-merge" ["e"=1]
+"pmmmwh/react-refresh-webpack-plugin" -> "mzgoddard/hard-source-webpack-plugin" ["e"=1]
 "jaketrent/html-webpack-template" -> "johnagan/clean-webpack-plugin"
 "jaketrent/html-webpack-template" -> "shellscape/webpack-manifest-plugin"
 "jaketrent/html-webpack-template" -> "jantimon/html-webpack-plugin"
@@ -242,6 +308,9 @@ digraph G {
 "jaketrent/html-webpack-template" -> "webpack/webpack-dev-middleware"
 "jaketrent/html-webpack-template" -> "webpack-contrib/file-loader"
 "jaketrent/html-webpack-template" -> "webpack-contrib/uglifyjs-webpack-plugin"
+"vuejs/vue-loader" -> "jantimon/html-webpack-plugin" ["e"=1]
+"vuejs/vue-loader" -> "webpack/webpack-dev-server" ["e"=1]
+"postcss/postcss-import" -> "webpack-contrib/postcss-loader" ["e"=1]
 "webpack-contrib/postcss-loader" -> "webpack-contrib/css-loader"
 "webpack-contrib/postcss-loader" -> "webpack-contrib/extract-text-webpack-plugin"
 "webpack-contrib/postcss-loader" -> "webpack-contrib/style-loader"
@@ -302,6 +371,9 @@ digraph G {
 "microsoft/TypeScriptSamples" -> "microsoft/TypeScript-Sublime-Plugin"
 "microsoft/TypeScriptSamples" -> "PatrickJS/PatrickJS-starter" ["e"=1]
 "microsoft/TypeScriptSamples" -> "s-panferov/awesome-typescript-loader"
+"svg-sprite/gulp-svg-sprite" -> "JetBrains/svg-sprite-loader" ["e"=1]
+"babel/babelify" -> "babel/babel-eslint" ["e"=1]
+"ljharb/qs" -> "jantimon/html-webpack-plugin" ["e"=1]
 "microsoft/TypeScript-Sublime-Plugin" -> "babel/babel-sublime" ["e"=1]
 "microsoft/TypeScript-Sublime-Plugin" -> "typings/typings"
 "microsoft/TypeScript-Sublime-Plugin" -> "ivogabe/gulp-typescript"
@@ -317,6 +389,10 @@ digraph G {
 "microsoft/TypeScript-Sublime-Plugin" -> "mgechev/angular-seed" ["e"=1]
 "microsoft/TypeScript-Sublime-Plugin" -> "SublimeLinter/SublimeLinter-eslint" ["e"=1]
 "microsoft/TypeScript-Sublime-Plugin" -> "TypeStrong/atom-typescript"
+"http-party/node-portfinder" -> "geowarin/friendly-errors-webpack-plugin" ["e"=1]
+"http-party/node-portfinder" -> "webpack/memory-fs" ["e"=1]
+"npm/npm-expansions" -> "babel/babel-eslint" ["e"=1]
+"MoOx/postcss-cssnext" -> "webpack-contrib/postcss-loader" ["e"=1]
 "webpack/memory-fs" -> "streamich/memfs" ["e"=1]
 "webpack/memory-fs" -> "webpack/loader-utils"
 "webpack/memory-fs" -> "webpack/loader-runner"
@@ -332,6 +408,11 @@ digraph G {
 "suguru03/neo-async" -> "nodejs/nodejs-ja"
 "suguru03/neo-async" -> "webpack/enhanced-resolve"
 "suguru03/neo-async" -> "yosuke-furukawa/eater"
+"privatenumber/esbuild-loader" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"privatenumber/esbuild-loader" -> "stephencookdev/speed-measure-webpack-plugin" ["e"=1]
+"tc39/proposal-object-rest-spread" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"tc39/proposal-object-rest-spread" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"tc39/proposal-object-rest-spread" -> "webpack/webpack-dev-middleware" ["e"=1]
 "tcoopman/image-webpack-loader" -> "webpack-contrib/file-loader"
 "tcoopman/image-webpack-loader" -> "webpack-contrib/url-loader"
 "tcoopman/image-webpack-loader" -> "webpack-contrib/postcss-loader"
@@ -348,6 +429,11 @@ digraph G {
 "tcoopman/image-webpack-loader" -> "imagemin/imagemin" ["e"=1]
 "tcoopman/image-webpack-loader" -> "webpack-contrib/sass-loader"
 "Asana/typed-react" -> "fdecampredon/jsx-typescript"
+"babel/website" -> "webpack/webpack.js.org" ["e"=1]
+"babel/website" -> "babel/babel-eslint" ["e"=1]
+"moxystudio/node-cross-spawn" -> "webpack/memory-fs" ["e"=1]
+"moxystudio/node-cross-spawn" -> "geowarin/friendly-errors-webpack-plugin" ["e"=1]
+"eslint/js" -> "babel/babel-eslint" ["e"=1]
 "dicodingacademy/a163-bfwd-labs" -> "dicodingacademy/a315-web-pemula-labs"
 "dicodingacademy/a163-bfwd-labs" -> "dicodingacademy/a219-mfwde-labs"
 "webpack-contrib/eslint-loader" -> "babel/babel-eslint"
@@ -365,6 +451,7 @@ digraph G {
 "webpack-contrib/eslint-loader" -> "NMFR/optimize-css-assets-webpack-plugin"
 "webpack-contrib/eslint-loader" -> "survivejs/webpack-merge"
 "webpack-contrib/eslint-loader" -> "webpack-contrib/webpack-hot-middleware"
+"webpack-contrib/css-minimizer-webpack-plugin" -> "NMFR/optimize-css-assets-webpack-plugin" ["e"=1]
 "villadora/express-http-proxy" -> "chimurai/http-proxy-middleware" ["e"=1]
 "villadora/express-http-proxy" -> "kriasoft/isomorphic-style-loader" ["e"=1]
 "villadora/express-http-proxy" -> "expressjs/compression" ["e"=1]
@@ -389,6 +476,7 @@ digraph G {
 "ztoben/assets-webpack-plugin" -> "css-modules/css-modules-require-hook" ["e"=1]
 "ztoben/assets-webpack-plugin" -> "webpack-contrib/file-loader"
 "ztoben/assets-webpack-plugin" -> "webpack-contrib/eslint-loader"
+"microsoft/TypeScript-wiki" -> "TypeStrong/atom-typescript" ["e"=1]
 "TypeStrong/tsify" -> "ivogabe/gulp-typescript"
 "TypeStrong/tsify" -> "theblacksmith/typescript-require"
 "TypeStrong/tsify" -> "thlorenz/exorcist" ["e"=1]
@@ -407,9 +495,18 @@ digraph G {
 "Calvin-LL/webpack-image-srcset-loader" -> "Calvin-LL/SecretDrop.io"
 "Phaiax/ArcticTypescript" -> "Railk/T3S"
 "Phaiax/ArcticTypescript" -> "clausreinke/typescript-tools"
+"SitePen/dts-generator" -> "typings/registry" ["e"=1]
 "dicodingacademy/a219-mfwde-labs" -> "dicodingacademy/a163-bfwd-labs"
 "dicodingacademy/a219-mfwde-labs" -> "dicodingacademy/a315-web-pemula-labs"
 "gowravshekar/font-awesome-webpack" -> "shakacode/bootstrap-sass-loader"
+"lodash/babel-plugin-lodash" -> "survivejs/webpack-merge" ["e"=1]
+"lodash/babel-plugin-lodash" -> "babel/babel-eslint" ["e"=1]
+"getsentry/sentry-javascript" -> "jantimon/html-webpack-plugin" ["e"=1]
+"rbuckton/reflect-metadata" -> "TypeStrong/ts-loader" ["e"=1]
+"mysticatea/npm-run-all" -> "jantimon/html-webpack-plugin" ["e"=1]
+"mysticatea/npm-run-all" -> "babel/babel-loader" ["e"=1]
+"microsoft/tslib" -> "TypeStrong/ts-loader" ["e"=1]
+"isaacs/node-glob" -> "jantimon/html-webpack-plugin" ["e"=1]
 "babel/babel-eslint" -> "babel/babel-loader"
 "babel/babel-eslint" -> "jsx-eslint/eslint-plugin-react" ["e"=1]
 "babel/babel-eslint" -> "webpack-contrib/eslint-loader"
@@ -425,6 +522,9 @@ digraph G {
 "babel/babel-eslint" -> "webpack-contrib/file-loader"
 "babel/babel-eslint" -> "webpack-contrib/sass-loader"
 "babel/babel-eslint" -> "matthew-andrews/isomorphic-fetch" ["e"=1]
+"mridgway/hoist-non-react-statics" -> "survivejs/webpack-merge" ["e"=1]
+"hokaccha/node-jwt-simple" -> "babel/babel-eslint" ["e"=1]
+"chimurai/http-proxy-middleware" -> "jantimon/html-webpack-plugin" ["e"=1]
 "webpack-contrib/webpack-hot-middleware" -> "webpack/webpack-dev-middleware"
 "webpack-contrib/webpack-hot-middleware" -> "webpack-contrib/postcss-loader"
 "webpack-contrib/webpack-hot-middleware" -> "webpack-contrib/extract-text-webpack-plugin"
@@ -440,12 +540,26 @@ digraph G {
 "webpack-contrib/webpack-hot-middleware" -> "matthew-andrews/isomorphic-fetch" ["e"=1]
 "webpack-contrib/webpack-hot-middleware" -> "webpack-contrib/url-loader"
 "webpack-contrib/webpack-hot-middleware" -> "webpack-contrib/css-loader"
+"cssnano/cssnano" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
 "css-modules/icss" -> "css-modules/postcss-icss-selectors"
 "css-modules/icss" -> "markdalgleish/react-themeable" ["e"=1]
 "css-modules/icss" -> "css-modules/webpack-demo"
 "css-modules/icss" -> "css-modules/css-modulesify" ["e"=1]
 "css-modules/icss" -> "VirtualCSS/planning"
 "css-modules/icss" -> "madyankin/postcss-modules" ["e"=1]
+"standard/eslint-config-standard" -> "babel/babel-eslint" ["e"=1]
+"standard/eslint-config-standard" -> "babel/babel-loader" ["e"=1]
+"christianalfoni/webpack-express-boilerplate" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"import-js/eslint-plugin-import" -> "babel/babel-eslint" ["e"=1]
+"chaijs/chai-as-promised" -> "babel/babel-eslint" ["e"=1]
+"microsoft/TypeScript-Handbook" -> "microsoft/TypeScriptSamples" ["e"=1]
+"microsoft/TypeScript-Handbook" -> "TypeStrong/ts-loader" ["e"=1]
+"felixrieseberg/npm-windows-upgrade" -> "typings/typings" ["e"=1]
+"2createStudio/postcss-sprites" -> "mixtur/webpack-spritesmith" ["e"=1]
+"robertknight/webpack-bundle-size-analyzer" -> "webpack-contrib/postcss-loader" ["e"=1]
+"nodejs/Release" -> "babel/babel-loader" ["e"=1]
+"esdoc/esdoc" -> "babel/babel-eslint" ["e"=1]
+"TehShrike/deepmerge" -> "webpack-contrib/copy-webpack-plugin" ["e"=1]
 "aackerman/circular-dependency-plugin" -> "TypeStrong/fork-ts-checker-webpack-plugin"
 "aackerman/circular-dependency-plugin" -> "darrenscerri/duplicate-package-checker-webpack-plugin" ["e"=1]
 "aackerman/circular-dependency-plugin" -> "FormidableLabs/inspectpack"
@@ -545,14 +659,18 @@ digraph G {
 "webpack-contrib/raw-loader" -> "webpack-contrib/css-loader"
 "webpack-contrib/raw-loader" -> "tcoopman/image-webpack-loader"
 "webpack-contrib/raw-loader" -> "webpack-contrib/extract-text-webpack-plugin"
+"vbenjs/vite-plugin-svg-icons" -> "JetBrains/svg-sprite-loader" ["e"=1]
+"csstools/precss" -> "webpack-contrib/postcss-loader" ["e"=1]
 "webpack-contrib/json-loader" -> "webpack-contrib/raw-loader"
 "webpack-contrib/json-loader" -> "webpack-contrib/file-loader"
 "webpack-contrib/json-loader" -> "webpack-contrib/url-loader"
 "webpack-contrib/json-loader" -> "webpack-contrib/style-loader"
 "bensmithett/webpack-css-example" -> "css-modules/webpack-demo"
 "bensmithett/webpack-css-example" -> "bensmithett/style"
+"pugjs/pug-loader" -> "webpack-contrib/file-loader" ["e"=1]
 "FormidableLabs/webpack-stats-plugin" -> "unindented/stats-webpack-plugin"
 "FormidableLabs/webpack-stats-plugin" -> "FormidableLabs/inspectpack"
+"markdalgleish/react-themeable" -> "css-modules/icss" ["e"=1]
 "survivejs/webpack-merge" -> "johnagan/clean-webpack-plugin"
 "survivejs/webpack-merge" -> "webpack-contrib/mini-css-extract-plugin"
 "survivejs/webpack-merge" -> "webpack-contrib/postcss-loader"
@@ -568,6 +686,7 @@ digraph G {
 "survivejs/webpack-merge" -> "webpack-contrib/style-loader"
 "survivejs/webpack-merge" -> "NMFR/optimize-css-assets-webpack-plugin"
 "survivejs/webpack-merge" -> "webpack/webpack-dev-middleware"
+"nodesecurity/nsp" -> "observing/pre-commit" ["e"=1]
 "css-modules/webpack-demo" -> "gajus/react-css-modules" ["e"=1]
 "css-modules/webpack-demo" -> "madyankin/postcss-modules" ["e"=1]
 "css-modules/webpack-demo" -> "css-modules/postcss-icss-selectors"
@@ -583,7 +702,10 @@ digraph G {
 "css-modules/webpack-demo" -> "jsxstyle/jsxstyle" ["e"=1]
 "css-modules/webpack-demo" -> "acdlite/redux-router" ["e"=1]
 "css-modules/webpack-demo" -> "css-modules/css-modulesify" ["e"=1]
+"streamich/memfs" -> "webpack/memory-fs" ["e"=1]
 "nodejs/nodejs-ja" -> "axross/ffetch"
+"ruanyf/es-checker" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"martinandert/react-inline" -> "chenglou/RCSS" ["e"=1]
 "mrsum/webpack-svgstore-plugin" -> "JetBrains/svg-sprite-loader"
 "markdalgleish/postcss-local-scope-example" -> "css-modules/postcss-icss-selectors"
 "css-modules/postcss-icss-selectors" -> "markdalgleish/postcss-local-scope-example"
@@ -599,6 +721,13 @@ digraph G {
 "dazuaz/responsive-loader" -> "juliomrqz/nuxt-optimized-images" ["e"=1]
 "dazuaz/responsive-loader" -> "Calvin-LL/webpack-image-resize-loader"
 "dazuaz/responsive-loader" -> "arthurbergmz/webpack-pwa-manifest"
+"microsoft/vscode-chrome-debug" -> "TypeStrong/ts-loader" ["e"=1]
+"microsoft/vscode-chrome-debug" -> "typings/typings" ["e"=1]
+"amireh/happypack" -> "mzgoddard/hard-source-webpack-plugin" ["e"=1]
+"amireh/happypack" -> "webpack-contrib/thread-loader" ["e"=1]
+"amireh/happypack" -> "stephencookdev/speed-measure-webpack-plugin" ["e"=1]
+"amireh/happypack" -> "jantimon/html-webpack-plugin" ["e"=1]
+"amireh/happypack" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
 "typings/typings" -> "DefinitelyTyped/tsd"
 "typings/typings" -> "palantir/tslint" ["e"=1]
 "typings/typings" -> "ivogabe/gulp-typescript"
@@ -614,6 +743,11 @@ digraph G {
 "typings/typings" -> "TypeStrong/atom-typescript"
 "typings/typings" -> "microsoft/TypeScriptSamples"
 "typings/typings" -> "mgechev/angular-seed" ["e"=1]
+"sass/node-sass" -> "webpack-contrib/sass-loader" ["e"=1]
+"sass/node-sass" -> "jantimon/html-webpack-plugin" ["e"=1]
+"sass/node-sass" -> "webpack/webpack-dev-server" ["e"=1]
+"sass/node-sass" -> "webpack-contrib/css-loader" ["e"=1]
+"sass/node-sass" -> "babel/babel-loader" ["e"=1]
 "webpack-contrib/copy-webpack-plugin" -> "johnagan/clean-webpack-plugin"
 "webpack-contrib/copy-webpack-plugin" -> "webpack-contrib/file-loader"
 "webpack-contrib/copy-webpack-plugin" -> "webpack-contrib/css-loader"
@@ -629,6 +763,9 @@ digraph G {
 "webpack-contrib/copy-webpack-plugin" -> "survivejs/webpack-merge"
 "webpack-contrib/copy-webpack-plugin" -> "NMFR/optimize-css-assets-webpack-plugin"
 "webpack-contrib/copy-webpack-plugin" -> "webpack-contrib/html-loader"
+"madyankin/postcss-modules" -> "css-modules/webpack-demo" ["e"=1]
+"madyankin/postcss-modules" -> "webpack-contrib/postcss-loader" ["e"=1]
+"madyankin/postcss-modules" -> "webpack-contrib/css-loader" ["e"=1]
 "shakacode/bootstrap-loader" -> "shakacode/bootstrap-sass-loader"
 "shakacode/bootstrap-loader" -> "shakacode/sass-resources-loader"
 "shakacode/bootstrap-loader" -> "shakacode/font-awesome-loader"
@@ -646,6 +783,11 @@ digraph G {
 "shakacode/bootstrap-loader" -> "webpack-contrib/copy-webpack-plugin"
 "alexkuz/webpack-chart" -> "webpack/analyse"
 "alexkuz/webpack-chart" -> "alexkuz/cake-chart"
+"kentcdodds/cross-env" -> "jantimon/html-webpack-plugin" ["e"=1]
+"kentcdodds/cross-env" -> "webpack-contrib/css-loader" ["e"=1]
+"kentcdodds/cross-env" -> "webpack/webpack-dev-server" ["e"=1]
+"moment/moment-timezone" -> "babel/babel-loader" ["e"=1]
+"moment/moment-timezone" -> "webpack/webpack-dev-server" ["e"=1]
 "NMFR/optimize-css-assets-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin"
 "NMFR/optimize-css-assets-webpack-plugin" -> "johnagan/clean-webpack-plugin"
 "NMFR/optimize-css-assets-webpack-plugin" -> "webpack-contrib/postcss-loader"
@@ -661,6 +803,8 @@ digraph G {
 "NMFR/optimize-css-assets-webpack-plugin" -> "webpack-contrib/css-minimizer-webpack-plugin" ["e"=1]
 "NMFR/optimize-css-assets-webpack-plugin" -> "webpack-contrib/webpack-hot-middleware"
 "NMFR/optimize-css-assets-webpack-plugin" -> "shellscape/webpack-manifest-plugin"
+"microsoft/tslint-microsoft-contrib" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"rbren/rss-parser" -> "mrsteele/dotenv-webpack" ["e"=1]
 "JetBrains/svg-sprite-loader" -> "svg/svgo-loader"
 "JetBrains/svg-sprite-loader" -> "svg-sprite/svg-sprite" ["e"=1]
 "JetBrains/svg-sprite-loader" -> "mrsum/webpack-svgstore-plugin"
@@ -676,6 +820,9 @@ digraph G {
 "JetBrains/svg-sprite-loader" -> "jantimon/html-webpack-plugin"
 "JetBrains/svg-sprite-loader" -> "svg/svgo" ["e"=1]
 "JetBrains/svg-sprite-loader" -> "survivejs/webpack-merge"
+"rotaready/moment-range" -> "observing/pre-commit" ["e"=1]
+"nodists/nodist" -> "DefinitelyTyped/tsd" ["e"=1]
+"Intellicode/eslint-plugin-react-native" -> "babel/eslint-plugin-babel" ["e"=1]
 "mixtur/webpack-spritesmith" -> "twolfson/spritesmith" ["e"=1]
 "mixtur/webpack-spritesmith" -> "2createStudio/postcss-sprites" ["e"=1]
 "mixtur/webpack-spritesmith" -> "twolfson/gulp.spritesmith" ["e"=1]
@@ -683,6 +830,7 @@ digraph G {
 "mixtur/webpack-spritesmith" -> "tcoopman/image-webpack-loader"
 "mixtur/webpack-spritesmith" -> "youzan/sprite-loader"
 "mixtur/webpack-spritesmith" -> "JetBrains/svg-sprite-loader"
+"TypeStrong/learn-typescript" -> "TypeStrong/atom-typescript" ["e"=1]
 "trivago/parallel-webpack" -> "amireh/happypack" ["e"=1]
 "trivago/parallel-webpack" -> "mzgoddard/hard-source-webpack-plugin"
 "trivago/parallel-webpack" -> "webpack-contrib/cache-loader"
@@ -698,6 +846,7 @@ digraph G {
 "trivago/parallel-webpack" -> "samccone/bundle-buddy" ["e"=1]
 "trivago/parallel-webpack" -> "gdborton/webpack-parallel-uglify-plugin"
 "trivago/parallel-webpack" -> "siddharthkp/bundlesize" ["e"=1]
+"59naga/babel-plugin-add-module-exports" -> "babel/eslint-plugin-babel" ["e"=1]
 "webpack-contrib/less-loader" -> "webpack-contrib/style-loader"
 "webpack-contrib/less-loader" -> "webpack-contrib/url-loader"
 "webpack-contrib/less-loader" -> "webpack-contrib/css-loader"
@@ -743,8 +892,22 @@ digraph G {
 "webpack-contrib/url-loader" -> "webpack-contrib/eslint-loader"
 "webpack-contrib/url-loader" -> "NMFR/optimize-css-assets-webpack-plugin"
 "webpack-contrib/url-loader" -> "webpack/webpack-dev-middleware"
+"chrisbateman/webpack-visualizer" -> "webpack/analyse" ["e"=1]
+"chrisbateman/webpack-visualizer" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"chrisbateman/webpack-visualizer" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"chrisbateman/webpack-visualizer" -> "webpack/webpack-dev-middleware" ["e"=1]
+"chrisbateman/webpack-visualizer" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"chrisbateman/webpack-visualizer" -> "survivejs/webpack-merge" ["e"=1]
+"kriasoft/isomorphic-style-loader" -> "liady/webpack-node-externals" ["e"=1]
+"kriasoft/isomorphic-style-loader" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"umijs/babel-plugin-import" -> "survivejs/webpack-merge" ["e"=1]
+"johnpapa/lite-server" -> "typings/typings" ["e"=1]
+"buzinas/tslint-eslint-rules" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"stylelint/stylelint-config-standard" -> "webpack-contrib/postcss-loader" ["e"=1]
 "alexkuz/cake-chart" -> "alexkuz/webpack-chart"
 "alexkuz/cake-chart" -> "stoeffel/react-cond"
+"saojs/sao" -> "webpack/loader-runner" ["e"=1]
+"glenjamin/ultimate-hot-reloading-example" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
 "Va1/string-replace-loader" -> "beautifulBoys/webpack-replace-loader"
 "shakacode/sass-resources-loader" -> "shakacode/bootstrap-loader"
 "shakacode/sass-resources-loader" -> "gajus/babel-plugin-react-css-modules" ["e"=1]
@@ -764,9 +927,14 @@ digraph G {
 "bholloway/resolve-url-loader" -> "webpack-contrib/file-loader"
 "bholloway/resolve-url-loader" -> "webpack-contrib/sass-loader"
 "bholloway/resolve-url-loader" -> "webpack-contrib/stylelint-webpack-plugin" ["e"=1]
+"loganfsmyth/babel-plugin-transform-decorators-legacy" -> "babel/babel-eslint" ["e"=1]
+"jshttp/cookie" -> "webpack-contrib/style-loader" ["e"=1]
+"jaysoo/todomvc-redux-react-typescript" -> "Asana/typed-react" ["e"=1]
+"eslint/typescript-eslint-parser" -> "s-panferov/awesome-typescript-loader" ["e"=1]
 "webpack-contrib/bundle-loader" -> "ztoben/assets-webpack-plugin"
 "webpack-contrib/bundle-loader" -> "didierfranc/react-code-splitting"
 "webpack-contrib/bundle-loader" -> "gaearon/promise-loader"
+"gaearon/react-transform-hmr" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
 "webpack/loader-runner" -> "webpack/webpack-sources"
 "webpack/loader-runner" -> "webpack/loader-utils"
 "webpack/loader-runner" -> "webpack/schema-utils"
@@ -775,6 +943,7 @@ digraph G {
 "webpack/webpack-sources" -> "webpack/loader-runner"
 "sagold/handlebars-webpack-plugin" -> "pcardune/handlebars-loader"
 "sagold/handlebars-webpack-plugin" -> "mitchheddles/webpack-handlebars-static"
+"azu/JavaScript-Plugin-Architecture" -> "yosuke-furukawa/eater" ["e"=1]
 "webpack/webpack-dev-server" -> "jantimon/html-webpack-plugin"
 "webpack/webpack-dev-server" -> "babel/babel-loader"
 "webpack/webpack-dev-server" -> "webpack-contrib/css-loader"
@@ -790,6 +959,7 @@ digraph G {
 "webpack/webpack-dev-server" -> "webpack-contrib/file-loader"
 "webpack/webpack-dev-server" -> "webpack-contrib/copy-webpack-plugin"
 "webpack/webpack-dev-server" -> "reduxjs/redux-thunk" ["e"=1]
+"babel/babylon" -> "webpack/webpack-dev-middleware" ["e"=1]
 "webpack/enhanced-resolve" -> "webpack/tapable" ["e"=1]
 "webpack/enhanced-resolve" -> "webpack/loader-runner"
 "webpack/enhanced-resolve" -> "webpack/webpack-sources"
@@ -805,6 +975,10 @@ digraph G {
 "webpack/enhanced-resolve" -> "suguru03/neo-async"
 "webpack/enhanced-resolve" -> "webpack-contrib/thread-loader"
 "webpack/enhanced-resolve" -> "webpack/watchpack"
+"mishoo/UglifyJS" -> "jantimon/html-webpack-plugin" ["e"=1]
+"ilearnio/module-alias" -> "liady/webpack-node-externals" ["e"=1]
+"Medium/phantomjs" -> "babel/babel-eslint" ["e"=1]
+"twolfson/spritesmith" -> "mixtur/webpack-spritesmith" ["e"=1]
 "webpack/webpack-dev-middleware" -> "webpack-contrib/webpack-hot-middleware"
 "webpack/webpack-dev-middleware" -> "webpack/webpack-dev-server"
 "webpack/webpack-dev-middleware" -> "webpack-contrib/postcss-loader"
@@ -820,6 +994,26 @@ digraph G {
 "webpack/webpack-dev-middleware" -> "amireh/happypack" ["e"=1]
 "webpack/webpack-dev-middleware" -> "babel/babel-eslint"
 "webpack/webpack-dev-middleware" -> "johnagan/clean-webpack-plugin"
+"substack/deep-freeze" -> "babel/babel-eslint" ["e"=1]
+"pillarjs/path-to-regexp" -> "jantimon/html-webpack-plugin" ["e"=1]
+"postcss/postcss-cli" -> "webpack-contrib/postcss-loader" ["e"=1]
+"webpack-contrib/worker-loader" -> "survivejs/webpack-merge" ["e"=1]
+"webpack-contrib/worker-loader" -> "webpack-contrib/copy-webpack-plugin" ["e"=1]
+"webpack-contrib/worker-loader" -> "webpack-contrib/thread-loader" ["e"=1]
+"webpack-contrib/worker-loader" -> "webpack-contrib/postcss-loader" ["e"=1]
+"goldhand/sw-precache-webpack-plugin" -> "arthurbergmz/webpack-pwa-manifest" ["e"=1]
+"goldhand/sw-precache-webpack-plugin" -> "shellscape/webpack-manifest-plugin" ["e"=1]
+"estools/escope" -> "vincentdchan/webpack-deep-scope-analysis-plugin" ["e"=1]
+"kangax/html-minifier" -> "jantimon/html-webpack-plugin" ["e"=1]
+"kangax/html-minifier" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"jsx-eslint/eslint-plugin-jsx-a11y" -> "babel/babel-eslint" ["e"=1]
+"axios/moxios" -> "babel/babel-eslint" ["e"=1]
+"gajus/eslint-plugin-flowtype" -> "babel/babel-eslint" ["e"=1]
+"gajus/eslint-plugin-flowtype" -> "babel/eslint-plugin-babel" ["e"=1]
+"styleguidist/react-docgen-typescript" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"babel/minify" -> "babel/babel-eslint" ["e"=1]
+"babel/minify" -> "babel/babel-loader" ["e"=1]
+"babel/minify" -> "webpack-contrib/css-loader" ["e"=1]
 "jantimon/favicons-webpack-plugin" -> "itgalaxy/favicons" ["e"=1]
 "jantimon/favicons-webpack-plugin" -> "arthurbergmz/webpack-pwa-manifest"
 "jantimon/favicons-webpack-plugin" -> "webpack-contrib/copy-webpack-plugin"
@@ -835,7 +1029,14 @@ digraph G {
 "jantimon/favicons-webpack-plugin" -> "webpack-contrib/html-loader"
 "jantimon/favicons-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin"
 "jantimon/favicons-webpack-plugin" -> "bholloway/resolve-url-loader"
+"lodash/lodash-webpack-plugin" -> "webpack-contrib/uglifyjs-webpack-plugin" ["e"=1]
+"lodash/lodash-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
+"lodash/lodash-webpack-plugin" -> "webpack-contrib/compression-webpack-plugin" ["e"=1]
+"lodash/lodash-webpack-plugin" -> "webpack-contrib/postcss-loader" ["e"=1]
+"reworkcss/css" -> "webpack/enhanced-resolve" ["e"=1]
 "webdeveric/webpack-assets-manifest" -> "shellscape/webpack-manifest-plugin"
+"domchristie/humps" -> "johnagan/clean-webpack-plugin" ["e"=1]
+"javascript-obfuscator/webpack-obfuscator" -> "webpack-contrib/terser-webpack-plugin" ["e"=1]
 "liady/webpack-node-externals" -> "survivejs/webpack-merge"
 "liady/webpack-node-externals" -> "kriasoft/isomorphic-style-loader" ["e"=1]
 "liady/webpack-node-externals" -> "TypeStrong/ts-loader"
@@ -852,6 +1053,8 @@ digraph G {
 "liady/webpack-node-externals" -> "Izhaki/nodemon-webpack-plugin"
 "liady/webpack-node-externals" -> "TypeStrong/fork-ts-checker-webpack-plugin"
 "szrenwei/inline-manifest-webpack-plugin" -> "soundcloud/chunk-manifest-webpack-plugin"
+"webpack-contrib/stylelint-webpack-plugin" -> "webpack-contrib/eslint-loader" ["e"=1]
+"webpack-contrib/stylelint-webpack-plugin" -> "webpack-contrib/postcss-loader" ["e"=1]
 "gdborton/webpack-parallel-uglify-plugin" -> "tradingview/webpack-uglify-parallel"
 "gdborton/webpack-parallel-uglify-plugin" -> "darrenscerri/duplicate-package-checker-webpack-plugin" ["e"=1]
 "gdborton/webpack-parallel-uglify-plugin" -> "amireh/happypack" ["e"=1]
@@ -865,6 +1068,10 @@ digraph G {
 "FormidableLabs/inspectpack" -> "FormidableLabs/webpack-stats-plugin"
 "FormidableLabs/inspectpack" -> "FormidableLabs/appr" ["e"=1]
 "yosuke-furukawa/eater" -> "meta-sushi/guideline"
+"kulshekhar/ts-jest" -> "TypeStrong/ts-loader" ["e"=1]
+"babel/babel-preset-env" -> "babel/babel-loader" ["e"=1]
+"babel/babel-preset-env" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
+"babel/babel-preset-env" -> "webpack-contrib/css-loader" ["e"=1]
 "mrsteele/dotenv-webpack" -> "johnagan/clean-webpack-plugin"
 "mrsteele/dotenv-webpack" -> "jantimon/favicons-webpack-plugin"
 "mrsteele/dotenv-webpack" -> "survivejs/webpack-merge"
@@ -880,6 +1087,11 @@ digraph G {
 "mrsteele/dotenv-webpack" -> "motdotla/dotenv" ["e"=1]
 "mrsteele/dotenv-webpack" -> "webpack-contrib/file-loader"
 "mrsteele/dotenv-webpack" -> "babel/babel-eslint"
+"microsoft/dts-gen" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"microsoft/dts-gen" -> "TypeStrong/ts-loader" ["e"=1]
+"webpack-contrib/awesome-webpack" -> "jantimon/html-webpack-plugin" ["e"=1]
+"webpack-contrib/awesome-webpack" -> "survivejs/webpack-merge" ["e"=1]
+"postcss/postcss-load-config" -> "webpack-contrib/postcss-loader" ["e"=1]
 "webpack/webpack.js.org" -> "webpack/webpack-cli"
 "webpack/webpack.js.org" -> "webpack/webpack-dev-server"
 "webpack/webpack.js.org" -> "babel/babel-loader"
@@ -895,6 +1107,11 @@ digraph G {
 "webpack/webpack.js.org" -> "survivejs/webpack-merge"
 "webpack/webpack.js.org" -> "webpack-contrib/css-loader"
 "webpack/webpack.js.org" -> "prettier/prettier-vscode" ["e"=1]
+"tc39/proposal-dynamic-import" -> "survivejs/webpack-merge" ["e"=1]
+"tc39/proposal-dynamic-import" -> "webpack/webpack-dev-middleware" ["e"=1]
+"tc39/proposal-dynamic-import" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"tc39/proposal-dynamic-import" -> "shellscape/webpack-manifest-plugin" ["e"=1]
+"tc39/proposal-dynamic-import" -> "webpack-contrib/extract-text-webpack-plugin" ["e"=1]
 "mzgoddard/hard-source-webpack-plugin" -> "asfktz/autodll-webpack-plugin" ["e"=1]
 "mzgoddard/hard-source-webpack-plugin" -> "amireh/happypack" ["e"=1]
 "mzgoddard/hard-source-webpack-plugin" -> "stephencookdev/speed-measure-webpack-plugin"
@@ -910,6 +1127,7 @@ digraph G {
 "mzgoddard/hard-source-webpack-plugin" -> "umijs/babel-plugin-import" ["e"=1]
 "mzgoddard/hard-source-webpack-plugin" -> "webpack-contrib/webpack-bundle-analyzer" ["e"=1]
 "mzgoddard/hard-source-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin"
+"istanbuljs/babel-plugin-istanbul" -> "babel/eslint-plugin-babel" ["e"=1]
 "Klathmon/imagemin-webpack-plugin" -> "tcoopman/image-webpack-loader"
 "Klathmon/imagemin-webpack-plugin" -> "webpack-contrib/image-minimizer-webpack-plugin"
 "Klathmon/imagemin-webpack-plugin" -> "webpack-contrib/copy-webpack-plugin"
@@ -919,6 +1137,9 @@ digraph G {
 "Klathmon/imagemin-webpack-plugin" -> "webpack-contrib/compression-webpack-plugin"
 "Klathmon/imagemin-webpack-plugin" -> "webpack-contrib/eslint-loader"
 "Klathmon/imagemin-webpack-plugin" -> "webpack-contrib/stylelint-webpack-plugin" ["e"=1]
+"Jimdo/typings-for-css-modules-loader" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"Jimdo/typings-for-css-modules-loader" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"promises-aplus/promises-spec" -> "webpack/webpack-dev-middleware" ["e"=1]
 "DefinitelyTyped/tsd" -> "typings/typings"
 "DefinitelyTyped/tsd" -> "ivogabe/gulp-typescript"
 "DefinitelyTyped/tsd" -> "TypeStrong/atom-typescript"
@@ -946,6 +1167,8 @@ digraph G {
 "webpack/loader-utils" -> "ant-design/antd-tools" ["e"=1]
 "webpack/loader-utils" -> "babel/babylon" ["e"=1]
 "webpack/loader-utils" -> "webpack-contrib/file-loader"
+"palantir/tslint-react" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"palantir/tslint-react" -> "TypeStrong/ts-loader" ["e"=1]
 "geowarin/friendly-errors-webpack-plugin" -> "unjs/webpackbar"
 "geowarin/friendly-errors-webpack-plugin" -> "NMFR/optimize-css-assets-webpack-plugin"
 "geowarin/friendly-errors-webpack-plugin" -> "royriojas/eslint-friendly-formatter"
@@ -958,9 +1181,24 @@ digraph G {
 "geowarin/friendly-errors-webpack-plugin" -> "stephencookdev/speed-measure-webpack-plugin"
 "geowarin/friendly-errors-webpack-plugin" -> "gregberge/error-overlay-webpack-plugin"
 "geowarin/friendly-errors-webpack-plugin" -> "webpack/webpack-dev-middleware"
+"toddbluhm/env-cmd" -> "mrsteele/dotenv-webpack" ["e"=1]
+"promises-aplus/promises-tests" -> "webpack/loader-runner" ["e"=1]
+"promises-aplus/promises-tests" -> "webpack/loader-utils" ["e"=1]
 "suguru03/aigle" -> "suguru03/neo-async"
+"estools/estraverse" -> "webpack/enhanced-resolve" ["e"=1]
 "clausreinke/typescript-tools" -> "clausreinke/typescript-tools.vim"
 "clausreinke/typescript-tools" -> "aki2o/emacs-tss"
+"webpack/tapable" -> "webpack/enhanced-resolve" ["e"=1]
+"webpack/tapable" -> "jantimon/html-webpack-plugin" ["e"=1]
+"rvagg/node-worker-farm" -> "gdborton/webpack-parallel-uglify-plugin" ["e"=1]
+"webpack-contrib/webpack-bundle-analyzer" -> "jantimon/html-webpack-plugin" ["e"=1]
+"prettier/prettier-eslint" -> "babel/babel-eslint" ["e"=1]
+"wmonk/create-react-app-typescript" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"evanw/node-source-map-support" -> "TypeStrong/ts-loader" ["e"=1]
+"evanw/node-source-map-support" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"evanw/node-source-map-support" -> "liady/webpack-node-externals" ["e"=1]
+"darrenscerri/duplicate-package-checker-webpack-plugin" -> "gdborton/webpack-parallel-uglify-plugin" ["e"=1]
+"sass/dart-sass" -> "webpack-contrib/sass-loader" ["e"=1]
 "webpack/webpack-cli" -> "webpack/webpack-dev-server"
 "webpack/webpack-cli" -> "webpack/webpack.js.org"
 "webpack/webpack-cli" -> "babel/babel-loader"
@@ -976,6 +1214,9 @@ digraph G {
 "webpack/webpack-cli" -> "TypeStrong/ts-loader"
 "webpack/webpack-cli" -> "webpack-contrib/sass-loader"
 "webpack/webpack-cli" -> "webpack/webpack-dev-middleware"
+"jonaskello/tsconfig-paths" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"jonaskello/tsconfig-paths" -> "TypeStrong/ts-loader" ["e"=1]
+"typestyle/typestyle" -> "s-panferov/awesome-typescript-loader" ["e"=1]
 "webpack/docs" -> "webpack-contrib/extract-text-webpack-plugin"
 "webpack/docs" -> "webpack-contrib/webpack-hot-middleware"
 "webpack/docs" -> "webpack-contrib/css-loader"
@@ -991,6 +1232,13 @@ digraph G {
 "webpack/docs" -> "css-modules/webpack-demo"
 "webpack/docs" -> "webpack-contrib/postcss-loader"
 "webpack/docs" -> "ztoben/assets-webpack-plugin"
+"sindresorhus/clipboardy" -> "webpack/memory-fs" ["e"=1]
+"vikpe/react-webpack-typescript-starter" -> "TypeStrong/ts-loader" ["e"=1]
+"prettier/prettier-atom" -> "babel/babel-eslint" ["e"=1]
+"prettier/prettier-atom" -> "webpack-contrib/eslint-loader" ["e"=1]
+"gajus/babel-plugin-react-css-modules" -> "webpack-contrib/css-loader" ["e"=1]
+"gajus/babel-plugin-react-css-modules" -> "webpack-contrib/postcss-loader" ["e"=1]
+"gajus/babel-plugin-react-css-modules" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
 "webpack-contrib/uglifyjs-webpack-plugin" -> "NMFR/optimize-css-assets-webpack-plugin"
 "webpack-contrib/uglifyjs-webpack-plugin" -> "webpack-contrib/terser-webpack-plugin"
 "webpack-contrib/uglifyjs-webpack-plugin" -> "webpack-contrib/file-loader"
@@ -1006,7 +1254,18 @@ digraph G {
 "webpack-contrib/uglifyjs-webpack-plugin" -> "webpack-contrib/url-loader"
 "webpack-contrib/uglifyjs-webpack-plugin" -> "webpack-contrib/css-loader"
 "webpack-contrib/uglifyjs-webpack-plugin" -> "webpack/webpack-dev-middleware"
+"damianstasik/vue-svg-loader" -> "JetBrains/svg-sprite-loader" ["e"=1]
 "jharris4/html-webpack-tags-plugin" -> "numical/script-ext-html-webpack-plugin"
+"postcss/autoprefixer" -> "jantimon/html-webpack-plugin" ["e"=1]
+"GoogleChromeLabs/preload-webpack-plugin" -> "numical/script-ext-html-webpack-plugin" ["e"=1]
+"GoogleChromeLabs/preload-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
+"prettier/eslint-plugin-prettier" -> "babel/babel-eslint" ["e"=1]
+"brookshi/awesome-typescript-projects" -> "microsoft/TypeScriptSamples" ["e"=1]
+"neutrinojs/webpack-chain" -> "survivejs/webpack-merge" ["e"=1]
+"neutrinojs/webpack-chain" -> "jantimon/html-webpack-plugin" ["e"=1]
+"facebook/prop-types" -> "webpack/webpack-dev-server" ["e"=1]
+"facebook/prop-types" -> "webpack-contrib/css-loader" ["e"=1]
+"helpers/handlebars-helpers" -> "pcardune/handlebars-loader" ["e"=1]
 "webpack/analyse" -> "alexkuz/webpack-chart"
 "webpack/analyse" -> "johnagan/clean-webpack-plugin"
 "webpack/analyse" -> "chrisbateman/webpack-visualizer" ["e"=1]
@@ -1045,6 +1304,8 @@ digraph G {
 "TypeStrong/fork-ts-checker-webpack-plugin" -> "webpack-contrib/copy-webpack-plugin"
 "TypeStrong/fork-ts-checker-webpack-plugin" -> "webpack-contrib/postcss-loader"
 "TypeStrong/fork-ts-checker-webpack-plugin" -> "amireh/happypack" ["e"=1]
+"gtanner/qrcode-terminal" -> "webpack/memory-fs" ["e"=1]
+"faceyspacey/extract-css-chunks-webpack-plugin" -> "webpack-contrib/mini-css-extract-plugin" ["e"=1]
 "youzan/sprite-loader" -> "youzan/fast-uglifyjs-plugin"
 "webpack-contrib/cache-loader" -> "webpack-contrib/thread-loader"
 "webpack-contrib/cache-loader" -> "mzgoddard/hard-source-webpack-plugin"
@@ -1053,11 +1314,26 @@ digraph G {
 "webpack-contrib/cache-loader" -> "amireh/happypack" ["e"=1]
 "webpack-contrib/cache-loader" -> "gdborton/webpack-parallel-uglify-plugin"
 "webpack-contrib/cache-loader" -> "webpack/loader-runner"
+"MMF-FE/svgicon" -> "JetBrains/svg-sprite-loader" ["e"=1]
 "youzan/fast-uglifyjs-plugin" -> "youzan/sprite-loader"
 "webpack/schema-utils" -> "webpack/loader-utils"
 "webpack/schema-utils" -> "webpack/loader-runner"
 "webpack-contrib/image-minimizer-webpack-plugin" -> "Klathmon/imagemin-webpack-plugin"
 "webpack-contrib/image-minimizer-webpack-plugin" -> "imagemin/imagemin-svgo" ["e"=1]
+"mroderick/PubSubJS" -> "jantimon/html-webpack-plugin" ["e"=1]
+"andyearnshaw/Intl.js" -> "webpack-contrib/webpack-hot-middleware" ["e"=1]
+"fgnass/node-dev" -> "liady/webpack-node-externals" ["e"=1]
+"benjamn/ast-types" -> "webpack/enhanced-resolve" ["e"=1]
+"mikeal/watch" -> "webpack-contrib/json-loader" ["e"=1]
+"asfktz/autodll-webpack-plugin" -> "mzgoddard/hard-source-webpack-plugin" ["e"=1]
+"asfktz/autodll-webpack-plugin" -> "trivago/parallel-webpack" ["e"=1]
+"asfktz/autodll-webpack-plugin" -> "webpack-contrib/webpack-serve" ["e"=1]
+"asfktz/autodll-webpack-plugin" -> "stephencookdev/speed-measure-webpack-plugin" ["e"=1]
+"asfktz/autodll-webpack-plugin" -> "webpack-contrib/thread-loader" ["e"=1]
+"asfktz/autodll-webpack-plugin" -> "webpack-contrib/cache-loader" ["e"=1]
+"prettier/tslint-config-prettier" -> "TypeStrong/ts-loader" ["e"=1]
+"prettier/tslint-config-prettier" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"stratiformltd/react-loadable-visibility" -> "didierfranc/react-code-splitting" ["e"=1]
 "observing/pre-commit" -> "ghooks-org/ghooks" ["e"=1]
 "observing/pre-commit" -> "babel/babel-preset-env" ["e"=1]
 "observing/pre-commit" -> "webpack-contrib/webpack-hot-middleware"
@@ -1073,6 +1349,14 @@ digraph G {
 "observing/pre-commit" -> "webpack-contrib/extract-text-webpack-plugin"
 "observing/pre-commit" -> "reactjs/react-router-redux" ["e"=1]
 "observing/pre-commit" -> "dflourusso/pre-push"
+"microsoft/TypeScript-React-Conversion-Guide" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"microsoft/TypeScript-React-Conversion-Guide" -> "TypeStrong/ts-loader" ["e"=1]
+"microsoft/TypeScript-React-Conversion-Guide" -> "microsoft/TypeScriptSamples" ["e"=1]
+"basarat/typescript-collections" -> "typings/typings" ["e"=1]
+"basarat/typescript-collections" -> "s-panferov/awesome-typescript-loader" ["e"=1]
+"dividab/tsconfig-paths-webpack-plugin" -> "TypeStrong/ts-loader" ["e"=1]
+"dividab/tsconfig-paths-webpack-plugin" -> "TypeStrong/fork-ts-checker-webpack-plugin" ["e"=1]
+"indutny/webpack-common-shake" -> "gdborton/webpack-parallel-uglify-plugin" ["e"=1]
 "arthurbergmz/webpack-pwa-manifest" -> "dicodingacademy/a219-mfwde-labs"
 "arthurbergmz/webpack-pwa-manifest" -> "jantimon/favicons-webpack-plugin"
 "arthurbergmz/webpack-pwa-manifest" -> "goldhand/sw-precache-webpack-plugin" ["e"=1]
@@ -1092,161 +1376,209 @@ digraph G {
 "babel/babel-loader" ["l"="0.511,-26.881"]
 "webpack-contrib/terser-webpack-plugin" ["l"="0.473,-26.775"]
 "webpack-contrib/style-loader" ["l"="0.509,-26.835"]
-"webpack-contrib/webpack-bundle-analyzer" ["l"="0.623,-29.082"]
+"webpack-contrib/webpack-bundle-analyzer" ["l"="0.623,-29.082", "c"=12]
 "webpack-contrib/webpack-serve" ["l"="0.532,-27.008"]
-"asfktz/autodll-webpack-plugin" ["l"="0.144,-29.214"]
+"asfktz/autodll-webpack-plugin" ["l"="0.144,-29.214", "c"=12]
 "shellscape/webpack-plugin-serve" ["l"="0.567,-27.111"]
-"GoogleChromeLabs/prerender-loader" ["l"="-4.422,-28.986"]
-"webpack-contrib/babel-minify-webpack-plugin" ["l"="-0.063,-29.321"]
-"babel/babel-preset-env" ["l"="0.27,-29.224"]
-"sokra/rawact" ["l"="-4.324,-29.071"]
+"GoogleChromeLabs/prerender-loader" ["l"="-4.422,-28.986", "c"=4]
+"webpack-contrib/babel-minify-webpack-plugin" ["l"="-0.063,-29.321", "c"=12]
+"babel/babel-preset-env" ["l"="0.27,-29.224", "c"=12]
+"sokra/rawact" ["l"="-4.324,-29.071", "c"=4]
 "webpack-contrib/webpack-hot-client" ["l"="0.545,-27.056"]
-"mjbvz/vscode-lit-html" ["l"="-9.216,-24.736"]
-"eslint/typescript-eslint-parser" ["l"="-5.032,-29.912"]
+"mjbvz/vscode-lit-html" ["l"="-9.216,-24.736", "c"=560]
+"eslint/typescript-eslint-parser" ["l"="-5.032,-29.912", "c"=4]
+"pshihn/workly" ["l"="-4.329,-28.834", "c"=4]
+"unjs/webpackbar" ["l"="0.412,-26.756"]
+"stefanpenner/es6-promise" ["l"="-0.16,-31.507", "c"=295]
 "vincentdchan/webpack-deep-scope-analysis-plugin" ["l"="0.317,-26.701"]
-"estools/escope" ["l"="2.781,-30.094"]
-"alienzhou/webpack-internal-plugin-relation" ["l"="-4.515,-32.017"]
+"estools/escope" ["l"="2.781,-30.094", "c"=1206]
+"alienzhou/webpack-internal-plugin-relation" ["l"="-4.515,-32.017", "c"=30]
 "alexkuz/webpack-chart" ["l"="0.254,-26.783"]
 "webpack-contrib/thread-loader" ["l"="0.382,-26.721"]
 "gdborton/webpack-parallel-uglify-plugin" ["l"="0.361,-26.659"]
 "webpack/loader-runner" ["l"="0.328,-26.74"]
 "bammoo/set-iterm2-badge" ["l"="0.292,-26.682"]
+"http-party/http-server" ["l"="0.318,-34.05", "c"=110]
+"babel/babel-upgrade" ["l"="0.164,-29.121", "c"=12]
+"webpack/webpack-cli" ["l"="0.546,-26.824"]
+"microsoft/tsdoc" ["l"="-0.703,-31.191", "c"=295]
+"TypeStrong/ts-loader" ["l"="0.552,-26.747"]
+"dorey/JavaScript-Equality-Table" ["l"="-0.189,-31.455", "c"=295]
 "felixge/node-dateformat" ["l"="0.521,-26.723"]
 "webpack-contrib/json-loader" ["l"="0.583,-26.787"]
-"visionmedia/express-resource" ["l"="1.899,-34.501"]
-"pillarjs/cookies" ["l"="-1.593,-34.968"]
-"bnoguchi/everyauth" ["l"="1.971,-34.456"]
+"visionmedia/express-resource" ["l"="1.899,-34.501", "c"=156]
+"pillarjs/cookies" ["l"="-1.593,-34.968", "c"=1259]
+"bnoguchi/everyauth" ["l"="1.971,-34.456", "c"=156]
 "babel/babel-eslint" ["l"="0.436,-26.872"]
-"sass/node-sass" ["l"="-0.434,-31.551"]
+"SublimeLinter/SublimeLinter-eslint" ["l"="25.706,-24.088", "c"=328]
+"winjs/winjs" ["l"="24.894,-24.932", "c"=32]
+"DefinitelyTyped/tsd" ["l"="0.662,-26.583"]
+"facebook/regenerator" ["l"="-22.722,-42.067", "c"=927]
+"palantir/tslint" ["l"="-0.769,-31.287", "c"=295]
+"s-panferov/awesome-typescript-loader" ["l"="0.548,-26.702"]
+"typings/typings" ["l"="0.617,-26.634"]
+"sass/node-sass" ["l"="-0.434,-31.551", "c"=295]
 "webpack-contrib/url-loader" ["l"="0.532,-26.843"]
 "webpack-contrib/eslint-loader" ["l"="0.507,-26.85"]
+"Olical/EventEmitter" ["l"="-4.068,-33.121", "c"=30]
+"svg-sprite/svg-sprite" ["l"="24.276,-30.183", "c"=519]
+"JetBrains/svg-sprite-loader" ["l"="0.589,-26.935"]
+"taylorhakes/promise-polyfill" ["l"="-0.214,-31.481", "c"=295]
+"imagemin/imagemin" ["l"="-0.073,-31.174", "c"=295]
+"tcoopman/image-webpack-loader" ["l"="0.566,-26.866"]
+"itgalaxy/favicons" ["l"="24.183,-30.183", "c"=519]
+"jantimon/favicons-webpack-plugin" ["l"="0.592,-26.84"]
+"brunocodutra/webapp-webpack-plugin" ["l"="0.664,-26.871"]
+"GoogleChromeLabs/size-plugin" ["l"="-4.441,-28.999", "c"=4]
+"isaacs/rimraf" ["l"="-0.554,-35.871", "c"=498]
 "webpack-contrib/uglifyjs-webpack-plugin" ["l"="0.528,-26.802"]
-"terser/terser" ["l"="-0.465,-31.363"]
-"webpack/webpack-cli" ["l"="0.546,-26.824"]
-"amireh/happypack" ["l"="0.345,-29.217"]
+"terser/terser" ["l"="-0.465,-31.363", "c"=295]
+"amireh/happypack" ["l"="0.345,-29.217", "c"=12]
 "TypeStrong/fork-ts-checker-webpack-plugin" ["l"="0.458,-26.733"]
 "stephencookdev/speed-measure-webpack-plugin" ["l"="0.41,-26.721"]
 "webpack-contrib/compression-webpack-plugin" ["l"="0.565,-26.805"]
+"prerender/prerender" ["l"="10.051,-23.735", "c"=183]
+"lwsjs/local-web-server" ["l"="0.411,-33.807", "c"=110]
 "webpack-contrib/webpack-hot-middleware" ["l"="0.447,-26.891"]
-"reactjs/react-router-redux" ["l"="0.632,-28.992"]
-"gaearon/react-hot-loader" ["l"="0.7,-28.995"]
-"unjs/webpackbar" ["l"="0.412,-26.756"]
+"reactjs/react-router-redux" ["l"="0.632,-28.992", "c"=12]
+"gaearon/react-hot-loader" ["l"="0.7,-28.995", "c"=12]
+"normalize/mz" ["l"="-1.193,-35.876", "c"=498]
+"observing/pre-commit" ["l"="0.365,-26.912"]
+"jsdoc2md/jsdoc-to-markdown" ["l"="-0.614,-31.029", "c"=295]
+"Yaffle/EventSource" ["l"="-2.888,-32.891", "c"=30]
+"webpack/webpack-dev-middleware" ["l"="0.434,-26.845"]
+"mrmckeb/typescript-plugin-css-modules" ["l"="5.526,-39.917", "c"=154]
 "geowarin/friendly-errors-webpack-plugin" ["l"="0.363,-26.743"]
-"GoogleChromeLabs/size-plugin" ["l"="-4.441,-28.999"]
-"GoogleChromeLabs/critters" ["l"="-4.397,-29.033"]
+"GoogleChromeLabs/critters" ["l"="-4.397,-29.033", "c"=4]
 "mzgoddard/hard-source-webpack-plugin" ["l"="0.439,-26.702"]
-"GoogleChromeLabs/preload-webpack-plugin" ["l"="0.17,-29.39"]
-"webpackmonitor/webpackmonitor" ["l"="0.076,-29.12"]
-"sorrycc/awesome-f2e-libs" ["l"="-7.803,-34.882"]
+"GoogleChromeLabs/preload-webpack-plugin" ["l"="0.17,-29.39", "c"=12]
+"webpackmonitor/webpackmonitor" ["l"="0.076,-29.12", "c"=12]
+"sorrycc/awesome-f2e-libs" ["l"="-7.803,-34.882", "c"=48]
+"angular/zone.js" ["l"="9.698,-21.975", "c"=47]
+"tschaub/gh-pages" ["l"="-0.571,-35.824", "c"=498]
+"shama/webpack-stream" ["l"="24.541,-30.09", "c"=519]
+"webpack/docs" ["l"="0.481,-26.931"]
 "webpack-contrib/html-loader" ["l"="0.555,-26.85"]
 "webpack-contrib/raw-loader" ["l"="0.6,-26.821"]
 "webpack-contrib/less-loader" ["l"="0.567,-26.833"]
+"facebookarchive/sublime-react" ["l"="25.804,-24.025", "c"=328]
+"css-modules/webpack-demo" ["l"="0.406,-26.986"]
+"microsoft/TypeScript-Babel-Starter" ["l"="2.9,-20.729", "c"=450]
+"twolfson/gulp.spritesmith" ["l"="24.391,-30.167", "c"=519]
+"mixtur/webpack-spritesmith" ["l"="0.64,-26.928"]
 "ivogabe/gulp-typescript" ["l"="0.674,-26.609"]
-"gulp-sourcemaps/gulp-sourcemaps" ["l"="24.468,-30.095"]
-"typings/typings" ["l"="0.617,-26.634"]
-"gulp-community/gulp-concat" ["l"="24.48,-30.118"]
+"gulp-sourcemaps/gulp-sourcemaps" ["l"="24.468,-30.095", "c"=519]
+"gulp-community/gulp-concat" ["l"="24.48,-30.118", "c"=519]
 "TypeStrong/tsify" ["l"="0.709,-26.586"]
 "panuhorsmalahti/gulp-tslint" ["l"="0.739,-26.596"]
-"DefinitelyTyped/tsd" ["l"="0.662,-26.583"]
-"frankwallis/plugin-typescript" ["l"="-0.129,-31.27"]
-"babel/gulp-babel" ["l"="24.493,-30.132"]
-"s-panferov/awesome-typescript-loader" ["l"="0.548,-26.702"]
+"frankwallis/plugin-typescript" ["l"="-0.129,-31.27", "c"=295]
+"babel/gulp-babel" ["l"="24.493,-30.132", "c"=519]
 "TypeStrong/atom-typescript" ["l"="0.661,-26.635"]
-"lazd/gulp-replace" ["l"="24.528,-30.102"]
-"terinjokes/gulp-uglify" ["l"="24.463,-30.11"]
-"palantir/tslint" ["l"="-0.769,-31.287"]
-"dlmanning/gulp-sass" ["l"="24.452,-30.085"]
-"sindresorhus/gulp-filter" ["l"="24.504,-30.17"]
+"lazd/gulp-replace" ["l"="24.528,-30.102", "c"=519]
+"terinjokes/gulp-uglify" ["l"="24.463,-30.11", "c"=519]
+"dlmanning/gulp-sass" ["l"="24.452,-30.085", "c"=519]
+"sindresorhus/gulp-filter" ["l"="24.504,-30.17", "c"=519]
+"csstools/postcss-preset-env" ["l"="24.582,-29.235", "c"=990]
 "acrazing/dpdm" ["l"="0.363,-26.563"]
-"pahen/madge" ["l"="-4.364,-29.665"]
+"pahen/madge" ["l"="-4.364,-29.665", "c"=4]
 "aackerman/circular-dependency-plugin" ["l"="0.393,-26.645"]
-"statoscope/statoscope" ["l"="-43.883,24.709"]
-"coderaiser/putout" ["l"="-1.987,-28.686"]
-"antoine-coulon/skott" ["l"="2.012,-26.59"]
-"frehner/modern-guide-to-packaging-js-library" ["l"="-7.356,-30.586"]
+"statoscope/statoscope" ["l"="-43.883,24.709", "c"=158]
+"coderaiser/putout" ["l"="-1.987,-28.686", "c"=760]
+"antoine-coulon/skott" ["l"="2.012,-26.59", "c"=894]
+"frehner/modern-guide-to-packaging-js-library" ["l"="-7.356,-30.586", "c"=31]
 "bripkens/connect-history-api-fallback" ["l"="0.444,-26.94"]
-"chimurai/http-proxy-middleware" ["l"="-3.89,-33.143"]
-"chrisvfritz/prerender-spa-plugin" ["l"="-3.88,-33.179"]
-"pillarjs/path-to-regexp" ["l"="-3.939,-33.132"]
-"neutrinojs/webpack-chain" ["l"="-3.961,-32.961"]
-"vuejs/vuex-router-sync" ["l"="-6.57,-32.216"]
-"webpack/webpack-dev-middleware" ["l"="0.434,-26.845"]
-"yiminghe/async-validator" ["l"="-3.805,-33.23"]
-"webpack/tapable" ["l"="-3.991,-32.839"]
-"vuejs/eslint-plugin-vue" ["l"="-6.54,-32.179"]
-"vuejs/vue-class-component" ["l"="-6.489,-32.116"]
-"privatenumber/esbuild-loader" ["l"="-4.238,-29.739"]
+"chimurai/http-proxy-middleware" ["l"="-3.89,-33.143", "c"=30]
+"chrisvfritz/prerender-spa-plugin" ["l"="-3.88,-33.179", "c"=30]
+"pillarjs/path-to-regexp" ["l"="-3.939,-33.132", "c"=30]
+"neutrinojs/webpack-chain" ["l"="-3.961,-32.961", "c"=30]
+"vuejs/vuex-router-sync" ["l"="-6.57,-32.216", "c"=72]
+"yiminghe/async-validator" ["l"="-3.805,-33.23", "c"=30]
+"webpack/tapable" ["l"="-3.991,-32.839", "c"=30]
+"vuejs/eslint-plugin-vue" ["l"="-6.54,-32.179", "c"=72]
+"vuejs/vue-class-component" ["l"="-6.489,-32.116", "c"=72]
+"privatenumber/esbuild-loader" ["l"="-4.238,-29.739", "c"=4]
 "webpack-contrib/cache-loader" ["l"="0.37,-26.693"]
-"pmmmwh/react-refresh-webpack-plugin" ["l"="-4.1,-29.475"]
+"pmmmwh/react-refresh-webpack-plugin" ["l"="-4.1,-29.475", "c"=4]
 "webpack/loader-utils" ["l"="0.37,-26.767"]
+"egoist/import-http" ["l"="2.683,-29.799", "c"=1206]
+"ghooks-org/ghooks" ["l"="8.969,-45.423", "c"=544]
+"codymikol/karma-webpack" ["l"="-0.75,-34.062", "c"=110]
 "mynameiswhm/brotli-webpack-plugin" ["l"="0.638,-26.747"]
 "Klathmon/imagemin-webpack-plugin" ["l"="0.623,-26.874"]
-"tcoopman/image-webpack-loader" ["l"="0.566,-26.866"]
 "gregberge/error-overlay-webpack-plugin" ["l"="0.243,-26.742"]
 "d4rkr00t/whybundled" ["l"="0.149,-26.74"]
 "pcardune/handlebars-loader" ["l"="0.619,-26.796"]
 "sagold/handlebars-webpack-plugin" ["l"="0.67,-26.764"]
-"helpers/handlebars-helpers" ["l"="0.35,-34.316"]
+"helpers/handlebars-helpers" ["l"="0.35,-34.316", "c"=110]
 "emaphp/handlebars-template-loader" ["l"="0.665,-26.787"]
-"shannonmoeller/handlebars-layouts" ["l"="0.445,-34.327"]
-"ScriptedAlchemy/webpack-external-import" ["l"="-6.497,-30.115"]
+"shannonmoeller/handlebars-layouts" ["l"="0.445,-34.327", "c"=110]
+"ScriptedAlchemy/webpack-external-import" ["l"="-6.497,-30.115", "c"=31]
 "shellscape/webpack-nano" ["l"="0.589,-27.141"]
 "shellscape/webpack-serve" ["l"="0.559,-27.145"]
 "chenglou/RCSS" ["l"="0.355,-27.14"]
 "hackhat/smart-css" ["l"="0.339,-27.172"]
 "aki2o/emacs-tss" ["l"="0.748,-26.352"]
 "clausreinke/typescript-tools" ["l"="0.728,-26.369"]
-"browserslist/browserslist" ["l"="-0.535,-31.413"]
-"webpack/webpack" ["l"="-0.916,-31.75"]
-"css-modules/css-modules" ["l"="0.783,-28.881"]
-"rollup/rollup" ["l"="-0.655,-31.455"]
-"JedWatson/classnames" ["l"="0.754,-28.788"]
+"yahoo/serialize-javascript" ["l"="0.504,-29.167", "c"=12]
+"ztoben/assets-webpack-plugin" ["l"="0.482,-26.731"]
+"jsx-eslint/eslint-plugin-react" ["l"="0.868,-28.925", "c"=12]
+"micromatch/micromatch" ["l"="-0.613,-35.848", "c"=498]
+"webpack/enhanced-resolve" ["l"="0.335,-26.758"]
+"sintaxi/surge" ["l"="22.415,-27.199", "c"=28]
+"babel/babel-sublime" ["l"="0.654,-29.17", "c"=12]
+"browserslist/browserslist" ["l"="-0.535,-31.413", "c"=295]
+"webpack/webpack" ["l"="-0.916,-31.75", "c"=295]
+"css-modules/css-modules" ["l"="0.783,-28.881", "c"=12]
+"rollup/rollup" ["l"="-0.655,-31.455", "c"=295]
+"JedWatson/classnames" ["l"="0.754,-28.788", "c"=12]
+"isaacs/minimatch" ["l"="-0.633,-35.87", "c"=498]
+"webpack/memory-fs" ["l"="0.301,-26.797"]
 "soundcloud/chunk-manifest-webpack-plugin" ["l"="0.46,-26.686"]
 "szrenwei/inline-manifest-webpack-plugin" ["l"="0.468,-26.645"]
 "jouni-kantola/inline-chunk-manifest-html-webpack-plugin" ["l"="0.447,-26.629"]
-"ztoben/assets-webpack-plugin" ["l"="0.482,-26.731"]
 "erm0l0v/webpack-md5-hash" ["l"="0.439,-26.601"]
-"alm-tools/alm" ["l"="-50.084,8.941"]
-"TypeStrong/ts-loader" ["l"="0.552,-26.747"]
-"microsoft/ngconf2015demo" ["l"="10.14,-24.281"]
-"microsoft/TypeScript-wiki" ["l"="-4.863,-30.134"]
+"alm-tools/alm" ["l"="-50.084,8.941", "c"=59]
+"microsoft/ngconf2015demo" ["l"="10.14,-24.281", "c"=183]
+"microsoft/TypeScript-wiki" ["l"="-4.863,-30.134", "c"=4]
 "AtomLinter/linter-tslint" ["l"="0.706,-26.647"]
-"atom/ide-typescript" ["l"="9.057,-43.997"]
-"tststs/atom-ternjs" ["l"="9.216,-44.011"]
-"file-icons/atom" ["l"="9.174,-43.982"]
+"atom/ide-typescript" ["l"="9.057,-43.997", "c"=677]
+"tststs/atom-ternjs" ["l"="9.216,-44.011", "c"=677]
+"file-icons/atom" ["l"="9.174,-43.982", "c"=677]
 "TypeStrong/ntypescript" ["l"="0.725,-26.63"]
 "jaketrent/html-webpack-template" ["l"="0.447,-26.821"]
 "shellscape/webpack-manifest-plugin" ["l"="0.436,-26.792"]
-"goldhand/sw-precache-webpack-plugin" ["l"="0.311,-29.428"]
-"postcss/postcss-import" ["l"="24.62,-29.195"]
-"babel/babel" ["l"="-0.736,-31.658"]
-"kulshekhar/ts-jest" ["l"="-0.804,-31.271"]
-"TypeStrong/ts-node" ["l"="-0.851,-31.296"]
-"typescript-eslint/typescript-eslint" ["l"="-0.742,-31.325"]
+"goldhand/sw-precache-webpack-plugin" ["l"="0.311,-29.428", "c"=12]
+"vuejs/vue-loader" ["l"="-6.414,-32.112", "c"=72]
+"postcss/postcss-import" ["l"="24.62,-29.195", "c"=990]
+"babel/babel" ["l"="-0.736,-31.658", "c"=295]
+"kulshekhar/ts-jest" ["l"="-0.804,-31.271", "c"=295]
+"TypeStrong/ts-node" ["l"="-0.851,-31.296", "c"=295]
+"typescript-eslint/typescript-eslint" ["l"="-0.742,-31.325", "c"=295]
 "microsoft/TypeScriptSamples" ["l"="0.609,-26.593"]
-"microsoft/TypeScript-Handbook" ["l"="-0.953,-31.333"]
-"microsoft/TypeScript-React-Starter" ["l"="1.007,-28.979"]
-"microsoft/TypeScript-Vue-Starter" ["l"="-6.429,-32.071"]
-"microsoft/TypeScript-Node-Starter" ["l"="2.927,-20.872"]
-"zhongsp/TypeScript" ["l"="-7.787,-34.621"]
-"Reactive-Extensions/RxJS" ["l"="0.864,-29.215"]
-"torokmark/design_patterns_in_typescript" ["l"="26.823,-25.614"]
-"mgechev/angular-seed" ["l"="9.59,-21.986"]
+"microsoft/TypeScript-Handbook" ["l"="-0.953,-31.333", "c"=295]
+"microsoft/TypeScript-React-Starter" ["l"="1.007,-28.979", "c"=12]
+"microsoft/TypeScript-Vue-Starter" ["l"="-6.429,-32.071", "c"=72]
+"microsoft/TypeScript-Node-Starter" ["l"="2.927,-20.872", "c"=450]
+"zhongsp/TypeScript" ["l"="-7.787,-34.621", "c"=48]
+"Reactive-Extensions/RxJS" ["l"="0.864,-29.215", "c"=12]
+"torokmark/design_patterns_in_typescript" ["l"="26.823,-25.614", "c"=32]
+"mgechev/angular-seed" ["l"="9.59,-21.986", "c"=47]
 "microsoft/TypeScript-Sublime-Plugin" ["l"="0.654,-26.552"]
-"PatrickJS/PatrickJS-starter" ["l"="9.561,-22.012"]
-"babel/babel-sublime" ["l"="0.654,-29.17"]
-"SublimeLinter/SublimeLinter" ["l"="25.598,-24.181"]
-"sublimelsp/LSP" ["l"="25.49,-24.095"]
+"PatrickJS/PatrickJS-starter" ["l"="9.561,-22.012", "c"=47]
+"svg-sprite/gulp-svg-sprite" ["l"="24.288,-30.132", "c"=519]
+"babel/babelify" ["l"="0.233,-29.522", "c"=12]
+"ljharb/qs" ["l"="-3.805,-33.362", "c"=30]
+"SublimeLinter/SublimeLinter" ["l"="25.598,-24.181", "c"=328]
+"sublimelsp/LSP" ["l"="25.49,-24.095", "c"=328]
 "Railk/T3S" ["l"="0.681,-26.474"]
-"vuejs/vue-syntax-highlight" ["l"="-5.982,-34.613"]
-"jisaacks/GitGutter" ["l"="25.591,-24.235"]
-"spadgos/sublime-jsdocs" ["l"="25.643,-24.209"]
-"SublimeLinter/SublimeLinter-eslint" ["l"="25.706,-24.088"]
-"webpack/memory-fs" ["l"="0.301,-26.797"]
-"streamich/memfs" ["l"="-0.362,-36.295"]
-"webpack/enhanced-resolve" ["l"="0.335,-26.758"]
-"isaacs/minimatch" ["l"="-0.633,-35.87"]
-"flippidippi/download-git-repo" ["l"="-4.866,-32.985"]
+"vuejs/vue-syntax-highlight" ["l"="-5.982,-34.613", "c"=195]
+"jisaacks/GitGutter" ["l"="25.591,-24.235", "c"=328]
+"spadgos/sublime-jsdocs" ["l"="25.643,-24.209", "c"=328]
+"http-party/node-portfinder" ["l"="-0.774,-35.578", "c"=498]
+"npm/npm-expansions" ["l"="-0.508,-31.515", "c"=295]
+"MoOx/postcss-cssnext" ["l"="-0.384,-31.542", "c"=295]
+"streamich/memfs" ["l"="-0.362,-36.295", "c"=498]
+"flippidippi/download-git-repo" ["l"="-4.866,-32.985", "c"=30]
 "webpack/node-libs-browser" ["l"="0.205,-26.839"]
 "webpack/schema-utils" ["l"="0.311,-26.768"]
 "firstlookmedia/react-scripts" ["l"="0.241,-26.829"]
@@ -1254,172 +1586,247 @@ digraph G {
 "suguru03/aigle" ["l"="0.171,-26.676"]
 "nodejs/nodejs-ja" ["l"="0.146,-26.657"]
 "yosuke-furukawa/eater" ["l"="0.139,-26.692"]
-"imagemin/imagemin" ["l"="-0.073,-31.174"]
+"tc39/proposal-object-rest-spread" ["l"="-22.814,-42.167", "c"=927]
 "Asana/typed-react" ["l"="0.723,-26.511"]
 "fdecampredon/jsx-typescript" ["l"="0.753,-26.481"]
+"babel/website" ["l"="9.239,-9.099", "c"=14]
+"webpack/webpack.js.org" ["l"="0.558,-26.909"]
+"moxystudio/node-cross-spawn" ["l"="-0.737,-35.833", "c"=498]
+"eslint/js" ["l"="2.839,-30.142", "c"=1206]
 "dicodingacademy/a163-bfwd-labs" ["l"="0.821,-26.871"]
 "dicodingacademy/a315-web-pemula-labs" ["l"="0.84,-26.883"]
 "dicodingacademy/a219-mfwde-labs" ["l"="0.789,-26.869"]
-"webpack-contrib/stylelint-webpack-plugin" ["l"="24.617,-29.415"]
+"webpack-contrib/stylelint-webpack-plugin" ["l"="24.617,-29.415", "c"=990]
+"webpack-contrib/css-minimizer-webpack-plugin" ["l"="24.648,-29.52", "c"=990]
 "villadora/express-http-proxy" ["l"="0.446,-27.031"]
-"kriasoft/isomorphic-style-loader" ["l"="0.411,-29.272"]
-"expressjs/compression" ["l"="0.054,-34.277"]
-"http-party/node-http-proxy" ["l"="0.066,-34.039"]
-"evanw/node-source-map-support" ["l"="-0.255,-33.859"]
+"kriasoft/isomorphic-style-loader" ["l"="0.411,-29.272", "c"=12]
+"expressjs/compression" ["l"="0.054,-34.277", "c"=110]
+"http-party/node-http-proxy" ["l"="0.066,-34.039", "c"=110]
+"evanw/node-source-map-support" ["l"="-0.255,-33.859", "c"=110]
 "rhalff/dot-object" ["l"="0.448,-27.103"]
-"biggora/express-useragent" ["l"="0.496,-34.029"]
+"biggora/express-useragent" ["l"="0.496,-34.029", "c"=110]
 "webpack-contrib/bundle-loader" ["l"="0.491,-26.614"]
 "auchenberg/express-webpack-asset" ["l"="0.495,-26.682"]
-"catamphetamine/webpack-isomorphic-tools" ["l"="0.491,-29.312"]
-"catamphetamine/universal-webpack" ["l"="0.542,-29.366"]
-"markdalgleish/redial" ["l"="0.432,-29.254"]
-"css-modules/css-modules-require-hook" ["l"="0.437,-29.416"]
+"catamphetamine/webpack-isomorphic-tools" ["l"="0.491,-29.312", "c"=12]
+"catamphetamine/universal-webpack" ["l"="0.542,-29.366", "c"=12]
+"markdalgleish/redial" ["l"="0.432,-29.254", "c"=12]
+"css-modules/css-modules-require-hook" ["l"="0.437,-29.416", "c"=12]
 "theblacksmith/typescript-require" ["l"="0.765,-26.558"]
-"thlorenz/exorcist" ["l"="0.13,-29.576"]
+"thlorenz/exorcist" ["l"="0.13,-29.576", "c"=12]
 "svg/svgo-loader" ["l"="0.614,-26.992"]
-"JetBrains/svg-sprite-loader" ["l"="0.589,-26.935"]
 "Calvin-LL/SecretDrop.io" ["l"="0.807,-26.967"]
 "Calvin-LL/webpack-image-placeholder-loader" ["l"="0.821,-26.964"]
 "Calvin-LL/webpack-image-srcset-loader" ["l"="0.816,-26.952"]
 "Calvin-LL/webpack-image-resize-loader" ["l"="0.794,-26.949"]
 "Phaiax/ArcticTypescript" ["l"="0.706,-26.415"]
+"SitePen/dts-generator" ["l"="-6.734,-30.153", "c"=31]
+"typings/registry" ["l"="0.596,-26.549"]
 "gowravshekar/font-awesome-webpack" ["l"="0.224,-26.944"]
 "shakacode/bootstrap-sass-loader" ["l"="0.283,-26.924"]
-"jsx-eslint/eslint-plugin-react" ["l"="0.868,-28.925"]
-"import-js/eslint-plugin-import" ["l"="-1.827,-28.586"]
+"lodash/babel-plugin-lodash" ["l"="0.235,-29.22", "c"=12]
+"getsentry/sentry-javascript" ["l"="-3.927,-33.03", "c"=30]
+"rbuckton/reflect-metadata" ["l"="1.43,-33.465", "c"=1185]
+"mysticatea/npm-run-all" ["l"="-0.521,-35.876", "c"=498]
+"microsoft/tslib" ["l"="-5.137,-30.075", "c"=4]
+"isaacs/node-glob" ["l"="-0.551,-35.916", "c"=498]
+"import-js/eslint-plugin-import" ["l"="-1.827,-28.586", "c"=760]
 "babel/eslint-plugin-babel" ["l"="0.387,-26.939"]
-"babel/minify" ["l"="0.211,-29.259"]
-"matthew-andrews/isomorphic-fetch" ["l"="0.657,-29.041"]
-"glenjamin/ultimate-hot-reloading-example" ["l"="0.416,-29.335"]
+"babel/minify" ["l"="0.211,-29.259", "c"=12]
+"matthew-andrews/isomorphic-fetch" ["l"="0.657,-29.041", "c"=12]
+"mridgway/hoist-non-react-statics" ["l"="0.483,-29.015", "c"=12]
+"hokaccha/node-jwt-simple" ["l"="0.078,-34.324", "c"=110]
+"glenjamin/ultimate-hot-reloading-example" ["l"="0.416,-29.335", "c"=12]
+"cssnano/cssnano" ["l"="-0.375,-31.443", "c"=295]
 "css-modules/icss" ["l"="0.365,-27.049"]
 "css-modules/postcss-icss-selectors" ["l"="0.378,-27.079"]
-"markdalgleish/react-themeable" ["l"="0.317,-29.363"]
-"css-modules/webpack-demo" ["l"="0.406,-26.986"]
-"css-modules/css-modulesify" ["l"="-0.062,-29.527"]
+"markdalgleish/react-themeable" ["l"="0.317,-29.363", "c"=12]
+"css-modules/css-modulesify" ["l"="-0.062,-29.527", "c"=12]
 "VirtualCSS/planning" ["l"="0.336,-27.083"]
-"madyankin/postcss-modules" ["l"="24.583,-29.189"]
-"darrenscerri/duplicate-package-checker-webpack-plugin" ["l"="0.123,-29.22"]
+"madyankin/postcss-modules" ["l"="24.583,-29.189", "c"=990]
+"standard/eslint-config-standard" ["l"="-0.495,-31.275", "c"=295]
+"christianalfoni/webpack-express-boilerplate" ["l"="0.681,-29.235", "c"=12]
+"chaijs/chai-as-promised" ["l"="-0.218,-33.995", "c"=110]
+"felixrieseberg/npm-windows-upgrade" ["l"="40.875,8.776", "c"=499]
+"2createStudio/postcss-sprites" ["l"="24.477,-30.268", "c"=519]
+"robertknight/webpack-bundle-size-analyzer" ["l"="0.259,-29.261", "c"=12]
+"nodejs/Release" ["l"="-0.099,-33.641", "c"=110]
+"esdoc/esdoc" ["l"="0.355,-29.398", "c"=12]
+"TehShrike/deepmerge" ["l"="-0.5,-35.903", "c"=498]
+"darrenscerri/duplicate-package-checker-webpack-plugin" ["l"="0.123,-29.22", "c"=12]
 "FormidableLabs/inspectpack" ["l"="0.324,-26.525"]
-"Jimdo/typings-for-css-modules-loader" ["l"="5.526,-39.896"]
-"moxystudio/node-cross-spawn" ["l"="-0.737,-35.833"]
-"gajus/react-css-modules" ["l"="0.551,-29.014"]
+"Jimdo/typings-for-css-modules-loader" ["l"="5.526,-39.896", "c"=154]
+"gajus/react-css-modules" ["l"="0.551,-29.014", "c"=12]
 "webdeveric/webpack-assets-manifest" ["l"="0.382,-26.799"]
-"wmonk/create-react-app-typescript" ["l"="0.934,-29.054"]
-"TheLarkInn/angular2-template-loader" ["l"="9.652,-21.773"]
-"mgechev/codelyzer" ["l"="9.716,-21.998"]
+"wmonk/create-react-app-typescript" ["l"="0.934,-29.054", "c"=12]
+"TheLarkInn/angular2-template-loader" ["l"="9.652,-21.773", "c"=47]
+"mgechev/codelyzer" ["l"="9.716,-21.998", "c"=47]
 "webpack-contrib/source-map-loader" ["l"="0.699,-26.815"]
-"metachris/vue-highlightjs" ["l"="-2.077,-36.714"]
+"metachris/vue-highlightjs" ["l"="-2.077,-36.714", "c"=900]
 "Va1/string-replace-loader" ["l"="0.726,-26.838"]
-"webpack-contrib/script-loader" ["l"="-1.071,-34.141"]
-"teux/ng-cache-loader" ["l"="-1.229,-34.13"]
+"webpack-contrib/script-loader" ["l"="-1.071,-34.141", "c"=110]
+"teux/ng-cache-loader" ["l"="-1.229,-34.13", "c"=110]
+"vbenjs/vite-plugin-svg-icons" ["l"="-7.389,-30.205", "c"=31]
+"csstools/precss" ["l"="24.643,-29.203", "c"=990]
 "bensmithett/webpack-css-example" ["l"="0.341,-27.021"]
 "bensmithett/style" ["l"="0.295,-27.051"]
+"pugjs/pug-loader" ["l"="22.933,-24.331", "c"=503]
 "FormidableLabs/webpack-stats-plugin" ["l"="0.3,-26.484"]
 "unindented/stats-webpack-plugin" ["l"="0.278,-26.448"]
-"gaearon/react-transform-boilerplate" ["l"="0.539,-29.155"]
+"nodesecurity/nsp" ["l"="-0.185,-34.022", "c"=110]
+"gaearon/react-transform-boilerplate" ["l"="0.539,-29.155", "c"=12]
 "markdalgleish/postcss-local-scope-example" ["l"="0.396,-27.058"]
-"webpack/react-starter" ["l"="0.561,-29.204"]
-"jsxstyle/jsxstyle" ["l"="0.385,-29.188"]
-"acdlite/redux-router" ["l"="0.498,-29.137"]
+"webpack/react-starter" ["l"="0.561,-29.204", "c"=12]
+"jsxstyle/jsxstyle" ["l"="0.385,-29.188", "c"=12]
+"acdlite/redux-router" ["l"="0.498,-29.137", "c"=12]
 "axross/ffetch" ["l"="0.122,-26.64"]
+"ruanyf/es-checker" ["l"="-8.421,-34.755", "c"=48]
+"martinandert/react-inline" ["l"="0.304,-29.251", "c"=12]
 "mrsum/webpack-svgstore-plugin" ["l"="0.633,-26.971"]
 "dazuaz/responsive-loader" ["l"="0.719,-26.906"]
-"timse/srcset-loader" ["l"="5.402,-39.888"]
+"timse/srcset-loader" ["l"="5.402,-39.888", "c"=154]
 "puppybits/resize-image-loader" ["l"="0.743,-26.924"]
 "Levelmoney/resize-image-loader" ["l"="0.77,-26.925"]
 "webpack-contrib/image-minimizer-webpack-plugin" ["l"="0.682,-26.898"]
-"geeogi/nuxt-responsive-loader" ["l"="-9.507,-30.747"]
-"PivaleCo/nuxt-image-loader-module" ["l"="-9.548,-30.725"]
-"juliomrqz/nuxt-optimized-images" ["l"="-9.55,-30.837"]
+"geeogi/nuxt-responsive-loader" ["l"="-9.507,-30.747", "c"=1104]
+"PivaleCo/nuxt-image-loader-module" ["l"="-9.548,-30.725", "c"=1104]
+"juliomrqz/nuxt-optimized-images" ["l"="-9.55,-30.837", "c"=1104]
 "arthurbergmz/webpack-pwa-manifest" ["l"="0.677,-26.85"]
-"ngrx/store" ["l"="9.669,-21.971"]
-"typings/registry" ["l"="0.596,-26.549"]
-"angular/universal" ["l"="9.642,-21.974"]
-"angular/zone.js" ["l"="9.698,-21.975"]
+"microsoft/vscode-chrome-debug" ["l"="-55.547,7.072", "c"=444]
+"ngrx/store" ["l"="9.669,-21.971", "c"=47]
+"angular/universal" ["l"="9.642,-21.974", "c"=47]
 "shakacode/bootstrap-loader" ["l"="0.392,-26.886"]
 "shakacode/sass-resources-loader" ["l"="0.389,-26.861"]
 "shakacode/font-awesome-loader" ["l"="0.328,-26.9"]
-"react-bootstrap/react-router-bootstrap" ["l"="0.576,-28.825"]
-"shakacode/react-webpack-rails-tutorial" ["l"="4.581,-37.254"]
-"preboot/angular-webpack" ["l"="9.547,-21.898"]
-"mjrussell/redux-auth-wrapper" ["l"="0.588,-29.049"]
-"enzymejs/chai-enzyme" ["l"="0.408,-29.182"]
+"react-bootstrap/react-router-bootstrap" ["l"="0.576,-28.825", "c"=12]
+"shakacode/react-webpack-rails-tutorial" ["l"="4.581,-37.254", "c"=1]
+"preboot/angular-webpack" ["l"="9.547,-21.898", "c"=47]
+"mjrussell/redux-auth-wrapper" ["l"="0.588,-29.049", "c"=12]
+"enzymejs/chai-enzyme" ["l"="0.408,-29.182", "c"=12]
 "webpack/analyse" ["l"="0.349,-26.807"]
 "alexkuz/cake-chart" ["l"="0.182,-26.792"]
-"webpack-contrib/css-minimizer-webpack-plugin" ["l"="24.648,-29.52"]
-"svg-sprite/svg-sprite" ["l"="24.276,-30.183"]
-"jonathantneal/svg4everybody" ["l"="22.476,-29.807"]
-"svg-sprite/gulp-svg-sprite" ["l"="24.288,-30.132"]
-"mixtur/webpack-spritesmith" ["l"="0.64,-26.928"]
-"svg/svgo" ["l"="22.205,-29.939"]
-"twolfson/spritesmith" ["l"="24.397,-30.226"]
-"2createStudio/postcss-sprites" ["l"="24.477,-30.268"]
-"twolfson/gulp.spritesmith" ["l"="24.391,-30.167"]
+"kentcdodds/cross-env" ["l"="-0.48,-35.876", "c"=498]
+"moment/moment-timezone" ["l"="0.26,-34.153", "c"=110]
+"microsoft/tslint-microsoft-contrib" ["l"="-5.009,-29.974", "c"=4]
+"rbren/rss-parser" ["l"="46.271,23.728", "c"=588]
+"mrsteele/dotenv-webpack" ["l"="0.536,-26.78"]
+"jonathantneal/svg4everybody" ["l"="22.476,-29.807", "c"=36]
+"svg/svgo" ["l"="22.205,-29.939", "c"=36]
+"rotaready/moment-range" ["l"="0.223,-34.067", "c"=110]
+"nodists/nodist" ["l"="6.11,-39.91", "c"=154]
+"Intellicode/eslint-plugin-react-native" ["l"="3.637,-28.469", "c"=23]
+"twolfson/spritesmith" ["l"="24.397,-30.226", "c"=519]
 "youzan/sprite-loader" ["l"="0.701,-26.981"]
+"TypeStrong/learn-typescript" ["l"="9.437,-21.852", "c"=47]
 "trivago/parallel-webpack" ["l"="0.404,-26.681"]
-"jamiebuilds/babel-react-optimize" ["l"="0.325,-29.162"]
-"aickin/react-dom-stream" ["l"="0.354,-29.25"]
-"lodash/babel-plugin-lodash" ["l"="0.235,-29.22"]
-"samccone/bundle-buddy" ["l"="0.144,-29.244"]
-"siddharthkp/bundlesize" ["l"="-4.385,-29.178"]
-"codymikol/karma-webpack" ["l"="-0.75,-34.062"]
-"umijs/babel-plugin-import" ["l"="-4.077,-32.921"]
+"jamiebuilds/babel-react-optimize" ["l"="0.325,-29.162", "c"=12]
+"aickin/react-dom-stream" ["l"="0.354,-29.25", "c"=12]
+"samccone/bundle-buddy" ["l"="0.144,-29.244", "c"=12]
+"siddharthkp/bundlesize" ["l"="-4.385,-29.178", "c"=4]
+"59naga/babel-plugin-add-module-exports" ["l"="0.402,-29.359", "c"=12]
+"umijs/babel-plugin-import" ["l"="-4.077,-32.921", "c"=30]
+"chrisbateman/webpack-visualizer" ["l"="0.233,-29.241", "c"=12]
+"liady/webpack-node-externals" ["l"="0.494,-26.762"]
+"johnpapa/lite-server" ["l"="9.634,-21.998", "c"=47]
+"buzinas/tslint-eslint-rules" ["l"="-5.042,-29.975", "c"=4]
+"stylelint/stylelint-config-standard" ["l"="24.601,-29.345", "c"=990]
 "stoeffel/react-cond" ["l"="0.122,-26.804"]
+"saojs/sao" ["l"="-6.693,-31.957", "c"=72]
 "beautifulBoys/webpack-replace-loader" ["l"="0.772,-26.839"]
-"gajus/babel-plugin-react-css-modules" ["l"="0.613,-28.955"]
-"stylelint-scss/stylelint-scss" ["l"="24.593,-29.366"]
-"faceyspacey/extract-css-chunks-webpack-plugin" ["l"="0.27,-29.246"]
-"shakacode/shakapacker" ["l"="4.151,-37.797"]
+"gajus/babel-plugin-react-css-modules" ["l"="0.613,-28.955", "c"=12]
+"stylelint-scss/stylelint-scss" ["l"="24.593,-29.366", "c"=990]
+"faceyspacey/extract-css-chunks-webpack-plugin" ["l"="0.27,-29.246", "c"=12]
+"shakacode/shakapacker" ["l"="4.151,-37.797", "c"=1]
 "nordnet/sass-variable-loader" ["l"="0.317,-26.872"]
 "bholloway/resolve-url-loader" ["l"="0.641,-26.824"]
 "numical/script-ext-html-webpack-plugin" ["l"="0.715,-26.781"]
+"loganfsmyth/babel-plugin-transform-decorators-legacy" ["l"="0.586,-29.285", "c"=12]
+"jshttp/cookie" ["l"="-1.669,-35.024", "c"=1259]
+"jaysoo/todomvc-redux-react-typescript" ["l"="1.289,-29.248", "c"=12]
 "didierfranc/react-code-splitting" ["l"="0.504,-26.552"]
 "gaearon/promise-loader" ["l"="0.47,-26.549"]
+"gaearon/react-transform-hmr" ["l"="0.338,-29.236", "c"=12]
 "webpack/webpack-sources" ["l"="0.3,-26.744"]
 "mitchheddles/webpack-handlebars-static" ["l"="0.702,-26.743"]
-"reduxjs/redux-thunk" ["l"="0.827,-28.894"]
-"browserify/resolve" ["l"="-3.811,-32.009"]
-"estools/estraverse" ["l"="2.813,-30.097"]
+"azu/JavaScript-Plugin-Architecture" ["l"="5.905,-39.762", "c"=154]
+"reduxjs/redux-thunk" ["l"="0.827,-28.894", "c"=12]
+"babel/babylon" ["l"="2.864,-30.113", "c"=1206]
+"browserify/resolve" ["l"="-3.811,-32.009", "c"=30]
+"estools/estraverse" ["l"="2.813,-30.097", "c"=1206]
 "webpack/watchpack" ["l"="0.249,-26.707"]
-"jantimon/favicons-webpack-plugin" ["l"="0.592,-26.84"]
-"itgalaxy/favicons" ["l"="24.183,-30.183"]
-"brunocodutra/webapp-webpack-plugin" ["l"="0.664,-26.871"]
-"mrsteele/dotenv-webpack" ["l"="0.536,-26.78"]
-"liady/webpack-node-externals" ["l"="0.494,-26.762"]
+"mishoo/UglifyJS" ["l"="-0.396,-31.488", "c"=295]
+"ilearnio/module-alias" ["l"="1.37,-33.342", "c"=1185]
+"Medium/phantomjs" ["l"="-0.489,-34.054", "c"=110]
+"substack/deep-freeze" ["l"="0.728,-29.084", "c"=12]
+"postcss/postcss-cli" ["l"="24.597,-29.209", "c"=990]
+"webpack-contrib/worker-loader" ["l"="-4.545,-28.95", "c"=4]
+"kangax/html-minifier" ["l"="-0.301,-31.411", "c"=295]
+"jsx-eslint/eslint-plugin-jsx-a11y" ["l"="-8.413,-24.279", "c"=539]
+"axios/moxios" ["l"="0.663,-29.071", "c"=12]
+"gajus/eslint-plugin-flowtype" ["l"="0.001,-29.126", "c"=12]
+"styleguidist/react-docgen-typescript" ["l"="-4.042,-32.734", "c"=30]
+"lodash/lodash-webpack-plugin" ["l"="0.199,-29.196", "c"=12]
+"reworkcss/css" ["l"="2.844,-30.26", "c"=1206]
+"domchristie/humps" ["l"="0.616,-29.014", "c"=12]
+"javascript-obfuscator/webpack-obfuscator" ["l"="41.187,8.985", "c"=499]
 "Izhaki/nodemon-webpack-plugin" ["l"="0.519,-26.668"]
 "tradingview/webpack-uglify-parallel" ["l"="0.321,-26.606"]
 "numical/style-ext-html-webpack-plugin" ["l"="0.762,-26.776"]
 "jharris4/html-webpack-tags-plugin" ["l"="0.777,-26.752"]
 "waysact/webpack-subresource-integrity" ["l"="0.803,-26.783"]
 "SimenB/add-asset-html-webpack-plugin" ["l"="0.844,-26.734"]
-"FormidableLabs/appr" ["l"="-26.129,-22.343"]
+"FormidableLabs/appr" ["l"="-26.129,-22.343", "c"=150]
 "meta-sushi/guideline" ["l"="0.107,-26.685"]
-"motdotla/dotenv" ["l"="0.128,-34.177"]
-"webpack/webpack.js.org" ["l"="0.558,-26.909"]
-"webpack/docs" ["l"="0.481,-26.931"]
-"vuejs/v2.vuejs.org" ["l"="-6.374,-32.029"]
-"prettier/prettier-vscode" ["l"="-55.651,7.196"]
-"DanWahlin/AngularIn20TypeScript" ["l"="10.086,-24.3"]
-"winjs/winjs" ["l"="24.894,-24.932"]
-"taptapship/wiredep" ["l"="24.472,-30.196"]
-"chaijs/chai-as-promised" ["l"="-0.218,-33.995"]
-"ngUpgraders/ng-forward" ["l"="10.247,-24.224"]
-"ant-design/antd-tools" ["l"="-4.326,-32.779"]
-"babel/babylon" ["l"="2.864,-30.113"]
+"motdotla/dotenv" ["l"="0.128,-34.177", "c"=110]
+"microsoft/dts-gen" ["l"="-0.852,-31.217", "c"=295]
+"webpack-contrib/awesome-webpack" ["l"="26.316,-25.854", "c"=32]
+"postcss/postcss-load-config" ["l"="24.723,-29.147", "c"=990]
+"vuejs/v2.vuejs.org" ["l"="-6.374,-32.029", "c"=72]
+"prettier/prettier-vscode" ["l"="-55.651,7.196", "c"=444]
+"tc39/proposal-dynamic-import" ["l"="-22.781,-42.174", "c"=927]
+"istanbuljs/babel-plugin-istanbul" ["l"="-0.645,-34.019", "c"=110]
+"promises-aplus/promises-spec" ["l"="0.028,-31.428", "c"=295]
+"DanWahlin/AngularIn20TypeScript" ["l"="10.086,-24.3", "c"=183]
+"taptapship/wiredep" ["l"="24.472,-30.196", "c"=519]
+"ngUpgraders/ng-forward" ["l"="10.247,-24.224", "c"=183]
+"ant-design/antd-tools" ["l"="-4.326,-32.779", "c"=30]
+"palantir/tslint-react" ["l"="-5.059,-29.965", "c"=4]
 "royriojas/eslint-friendly-formatter" ["l"="0.285,-26.709"]
-"http-party/node-portfinder" ["l"="-0.774,-35.578"]
 "clessg/progress-bar-webpack-plugin" ["l"="0.271,-26.663"]
+"toddbluhm/env-cmd" ["l"="-0.426,-35.825", "c"=498]
+"promises-aplus/promises-tests" ["l"="0.031,-31.395", "c"=295]
 "clausreinke/typescript-tools.vim" ["l"="0.721,-26.341"]
-"petehunt/webpack-howto" ["l"="0.735,-29.165"]
-"chrisbateman/webpack-visualizer" ["l"="0.233,-29.241"]
+"rvagg/node-worker-farm" ["l"="-0.107,-33.712", "c"=110]
+"prettier/prettier-eslint" ["l"="-0.574,-31.285", "c"=295]
+"sass/dart-sass" ["l"="-0.444,-31.431", "c"=295]
+"jonaskello/tsconfig-paths" ["l"="1.357,-33.375", "c"=1185]
+"typestyle/typestyle" ["l"="0.671,-29.199", "c"=12]
+"petehunt/webpack-howto" ["l"="0.735,-29.165", "c"=12]
+"sindresorhus/clipboardy" ["l"="-0.826,-35.834", "c"=498]
+"vikpe/react-webpack-typescript-starter" ["l"="1.126,-29.194", "c"=12]
+"prettier/prettier-atom" ["l"="9.169,-44.022", "c"=677]
+"damianstasik/vue-svg-loader" ["l"="-6.75,-32.303", "c"=72]
+"postcss/autoprefixer" ["l"="-0.542,-31.624", "c"=295]
+"prettier/eslint-plugin-prettier" ["l"="-1.765,-28.599", "c"=760]
+"brookshi/awesome-typescript-projects" ["l"="-4.606,-29.825", "c"=4]
+"facebook/prop-types" ["l"="0.863,-28.832", "c"=12]
 "FullHuman/purgecss-webpack-plugin" ["l"="0.315,-26.647"]
+"gtanner/qrcode-terminal" ["l"="-0.949,-36.002", "c"=498]
 "youzan/fast-uglifyjs-plugin" ["l"="0.722,-27.003"]
-"imagemin/imagemin-svgo" ["l"="0.072,-31.037"]
-"observing/pre-commit" ["l"="0.365,-26.912"]
-"ghooks-org/ghooks" ["l"="8.969,-45.423"]
+"MMF-FE/svgicon" ["l"="-6.687,-32.303", "c"=72]
+"imagemin/imagemin-svgo" ["l"="0.072,-31.037", "c"=295]
+"mroderick/PubSubJS" ["l"="-3.982,-33.232", "c"=30]
+"andyearnshaw/Intl.js" ["l"="0.196,-28.868", "c"=12]
+"fgnass/node-dev" ["l"="1.848,-34.551", "c"=156]
+"benjamn/ast-types" ["l"="2.805,-30.128", "c"=1206]
+"mikeal/watch" ["l"="0.432,-30.767", "c"=295]
+"prettier/tslint-config-prettier" ["l"="-4.988,-29.927", "c"=4]
+"stratiformltd/react-loadable-visibility" ["l"="0.222,-28.949", "c"=12]
 "nlf/precommit-hook" ["l"="0.288,-26.969"]
-"lint-staged/lint-staged" ["l"="-0.692,-31.262"]
-"gotwarlost/istanbul" ["l"="-0.17,-34.042"]
-"nodesecurity/nsp" ["l"="-0.185,-34.022"]
+"lint-staged/lint-staged" ["l"="-0.692,-31.262", "c"=295]
+"gotwarlost/istanbul" ["l"="-0.17,-34.042", "c"=110]
 "dflourusso/pre-push" ["l"="0.315,-26.949"]
+"microsoft/TypeScript-React-Conversion-Guide" ["l"="0.853,-29.025", "c"=12]
+"basarat/typescript-collections" ["l"="9.717,-21.785", "c"=47]
+"dividab/tsconfig-paths-webpack-plugin" ["l"="1.302,-33.389", "c"=1185]
+"indutny/webpack-common-shake" ["l"="0.107,-29.317", "c"=12]
 }

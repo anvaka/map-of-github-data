@@ -29,6 +29,8 @@ digraph G {
 "py-why/dowhy" -> "google/CausalImpact"
 "py-why/dowhy" -> "pymc-devs/pymc" ["e"=1]
 "py-why/dowhy" -> "pyro-ppl/pyro" ["e"=1]
+"interpretml/interpret" -> "py-why/dowhy" ["e"=1]
+"interpretml/interpret" -> "uber/causalml" ["e"=1]
 "uber/causalml" -> "py-why/EconML"
 "uber/causalml" -> "py-why/dowhy"
 "uber/causalml" -> "rguo12/awesome-causality-algorithms"
@@ -44,6 +46,8 @@ digraph G {
 "uber/causalml" -> "BiomedSciAI/causallib"
 "uber/causalml" -> "jvpoulos/causal-ml"
 "uber/causalml" -> "altdeep/causalML"
+"CamDavidsonPilon/lifelines" -> "CamDavidsonPilon/lifetimes" ["e"=1]
+"CamDavidsonPilon/lifelines" -> "py-why/dowhy" ["e"=1]
 "rguo12/awesome-causality-algorithms" -> "uber/causalml"
 "rguo12/awesome-causality-algorithms" -> "FenTechSolutions/CausalDiscoveryToolbox"
 "rguo12/awesome-causality-algorithms" -> "py-why/dowhy"
@@ -74,7 +78,14 @@ digraph G {
 "BiomedSciAI/causallib" -> "matheusfacure/python-causality-handbook"
 "BiomedSciAI/causallib" -> "jakobrunge/tigramite"
 "BiomedSciAI/causallib" -> "uber/causalml"
+"pymc-devs/pymc" -> "pgmpy/pgmpy" ["e"=1]
+"pymc-devs/pymc" -> "py-why/dowhy" ["e"=1]
+"kedro-org/kedro" -> "mckinsey/causalnex" ["e"=1]
+"facebookarchive/planout" -> "CamDavidsonPilon/lifetimes" ["e"=1]
+"hmmlearn/hmmlearn" -> "pgmpy/pgmpy" ["e"=1]
 "jmoss20/notears" -> "ignavierng/notears-tensorflow"
+"koaning/scikit-lego" -> "pymc-labs/CausalPy" ["e"=1]
+"koaning/scikit-lego" -> "mckinsey/causalnex" ["e"=1]
 "rguo12/awesome-causality-data" -> "rguo12/awesome-causality-algorithms"
 "rguo12/awesome-causality-data" -> "AMLab-Amsterdam/CEVAE"
 "rguo12/awesome-causality-data" -> "FenTechSolutions/CausalDiscoveryToolbox"
@@ -91,6 +102,12 @@ digraph G {
 "rguo12/awesome-causality-data" -> "amit-sharma/causal-inference-tutorial"
 "rguo12/awesome-causality-data" -> "BiomedSciAI/causallib"
 "edgeslab/CTL" -> "kjung/scikit-learn"
+"microsoft/forecasting" -> "uber/causalml" ["e"=1]
+"nubank/fklearn" -> "matheusfacure/python-causality-handbook" ["e"=1]
+"interpretml/DiCE" -> "mckinsey/causalnex" ["e"=1]
+"interpretml/DiCE" -> "py-why/dowhy" ["e"=1]
+"interpretml/DiCE" -> "py-why/EconML" ["e"=1]
+"interpretml/DiCE" -> "uber/causalml" ["e"=1]
 "pgmpy/pgmpy" -> "jmschrei/pomegranate" ["e"=1]
 "pgmpy/pgmpy" -> "pgmpy/pgmpy_notebook" ["e"=1]
 "pgmpy/pgmpy" -> "mckinsey/causalnex"
@@ -106,6 +123,7 @@ digraph G {
 "pgmpy/pgmpy" -> "uber/causalml"
 "pgmpy/pgmpy" -> "bayespy/bayespy" ["e"=1]
 "pgmpy/pgmpy" -> "huawei-noah/trustworthyAI"
+"catboost/tutorials" -> "maks-sh/scikit-uplift" ["e"=1]
 "retentioneering/retentioneering-tools" -> "appintheair/retentioneering-framework"
 "retentioneering/retentioneering-tools" -> "marnikitta/stattests"
 "retentioneering/retentioneering-tools" -> "MobileTeleSystems/RecTools" ["e"=1]
@@ -136,6 +154,8 @@ digraph G {
 "py-why/EconML" -> "jrfiedler/causal_inference_python_code"
 "py-why/EconML" -> "google/CausalImpact"
 "py-why/EconML" -> "maks-sh/scikit-uplift"
+"raphaelvallat/pingouin" -> "bashtage/linearmodels" ["e"=1]
+"JustGlowing/minisom" -> "jakobrunge/tigramite" ["e"=1]
 "benmiroglio/pymatch" -> "kellieotto/pscore_match"
 "benmiroglio/pymatch" -> "laurencium/Causalinference"
 "benmiroglio/pymatch" -> "konosp/propensity-score-matching"
@@ -152,6 +172,7 @@ digraph G {
 "msuzen/looper" -> "matteocourthoud/awesome-causal-inference"
 "msuzen/looper" -> "ijmbarr/causalgraphicalmodels"
 "msuzen/looper" -> "shoepaladin/causalinference_crashcourse"
+"scikit-learn-contrib/skope-rules" -> "BiomedSciAI/causallib" ["e"=1]
 "imirzadeh/awesome-causal-inference" -> "fulifeng/Causal_Reading_Group"
 "imirzadeh/awesome-causal-inference" -> "Wangt-CN/Awesome-Causality-in-CV" ["e"=1]
 "imirzadeh/awesome-causal-inference" -> "matthewvowels1/Awesome-Causal-Inference"
@@ -188,6 +209,7 @@ digraph G {
 "StatsReporting/stargazer" -> "bashtage/linearmodels"
 "StatsReporting/stargazer" -> "py-econometrics/pyfixest"
 "StatsReporting/stargazer" -> "chrisconlon/micro-metrics" ["e"=1]
+"probml/pmtk3" -> "pgmpy/pgmpy" ["e"=1]
 "altdeep/causalML" -> "jvpoulos/causal-ml"
 "altdeep/causalML" -> "FenTechSolutions/CausalDiscoveryToolbox"
 "altdeep/causalML" -> "mckinsey/causalnex"
@@ -203,6 +225,8 @@ digraph G {
 "altdeep/causalML" -> "napsternxg/awesome-causality"
 "altdeep/causalML" -> "amit-sharma/causal-inference-tutorial"
 "altdeep/causalML" -> "rguo12/awesome-causality-data"
+"uber/manifold" -> "uber/causalml" ["e"=1]
+"uber/manifold" -> "mckinsey/causalnex" ["e"=1]
 "M-Nauta/TCDF" -> "jakobrunge/tigramite"
 "M-Nauta/TCDF" -> "loeweX/AmortizedCausalDiscovery"
 "M-Nauta/TCDF" -> "FenTechSolutions/CausalDiscoveryToolbox"
@@ -238,11 +262,19 @@ digraph G {
 "inovex/scrumlr.io" -> "inovex/CalendarSync"
 "inovex/scrumlr.io" -> "inovex/justcause"
 "inovex/scrumlr.io" -> "cdreier/DinoPoker"
+"kedro-org/kedro-viz" -> "mckinsey/causalnex" ["e"=1]
+"jrzaurin/pytorch-widedeep" -> "uber/causalml" ["e"=1]
+"stanfordmlgroup/ngboost" -> "mckinsey/causalnex" ["e"=1]
+"stanfordmlgroup/ngboost" -> "uber/causalml" ["e"=1]
+"eBay/bayesian-belief-networks" -> "pgmpy/pgmpy" ["e"=1]
+"mckinsey/qbstyles" -> "mckinsey/causalnex" ["e"=1]
 "napsternxg/awesome-causality" -> "rguo12/awesome-causality-data"
 "napsternxg/awesome-causality" -> "msuzen/looper"
 "napsternxg/awesome-causality" -> "discdiver/causal-inference-python-packages"
 "napsternxg/awesome-causality" -> "altdeep/causalML"
 "napsternxg/awesome-causality" -> "DataForScience/Causality"
+"bayesnet/bnt" -> "pgmpy/pgmpy" ["e"=1]
+"bayesnet/bnt" -> "cmu-phil/tetrad" ["e"=1]
 "wayfair/pylift" -> "Minyus/causallift"
 "wayfair/pylift" -> "Ibotta/mr_uplift"
 "wayfair/pylift" -> "maks-sh/scikit-uplift"
@@ -327,9 +359,13 @@ digraph G {
 "eeghor/mta" -> "mattzheng/Attention-RNN-Multi-Touch-Attribution"
 "Renovamen/pcalg-py" -> "keiichishima/pcalg"
 "Renovamen/pcalg-py" -> "cran/pcalg"
+"synth-inference/synthdid" -> "grf-labs/grf" ["e"=1]
 "rsyi/pylift" -> "duketemon/pyuplift"
 "rsyi/pylift" -> "rsyi/dato"
 "rsyi/pylift" -> "Minyus/causallift"
+"GoogleCloudPlatform/ml-on-gcp" -> "GoogleCloudPlatform/tensorflow-lifetime-value" ["e"=1]
+"ethanfetaya/NRI" -> "loeweX/AmortizedCausalDiscovery" ["e"=1]
+"ethanfetaya/NRI" -> "fishmoon1234/DAG-GNN" ["e"=1]
 "mnguyenngo/ab-framework" -> "FrancescoCasalegno/AB-Testing"
 "mnguyenngo/ab-framework" -> "baumanab/udacity_ABTesting"
 "ijmbarr/causalgraphicalmodels" -> "ijmbarr/notes-on-causal-inference"
@@ -374,6 +410,8 @@ digraph G {
 "jerednel/markov-chain-attribution" -> "jmwoloso/pychattr"
 "jerednel/markov-chain-attribution" -> "jeremite/channel-attribution-model"
 "rik-helwegen/CEVAE_pytorch" -> "WeijiaZhang24/TEDVAE"
+"luke14free/pm-prophet" -> "dafiti/causalimpact" ["e"=1]
+"luke14free/pm-prophet" -> "pymc-labs/CausalPy" ["e"=1]
 "muhanzhang/D-VAE" -> "vthost/DAGNN"
 "muhanzhang/D-VAE" -> "jialinlu/OPAMP-Generator"
 "xnie/rlearner" -> "grf-labs/policytree"
@@ -452,6 +490,9 @@ digraph G {
 "WillianFuks/tfcausalimpact" -> "carlomazzaferro/scikit-hts" ["e"=1]
 "WillianFuks/tfcausalimpact" -> "Minyus/causallift"
 "WillianFuks/tfcausalimpact" -> "facebookexperimental/Robyn"
+"MBrouns/timeseers" -> "pymc-labs/CausalPy" ["e"=1]
+"twitter/AnomalyDetection" -> "google/CausalImpact" ["e"=1]
+"projectmesa/mesa" -> "py-why/dowhy" ["e"=1]
 "DoubleML/doubleml-for-py" -> "DoubleML/doubleml-for-r"
 "DoubleML/doubleml-for-py" -> "BiomedSciAI/causallib"
 "DoubleML/doubleml-for-py" -> "pymc-labs/CausalPy"
@@ -482,6 +523,7 @@ digraph G {
 "causaltext/causal-text-papers" -> "uclanlp/awesome-fairness-papers" ["e"=1]
 "causaltext/causal-text-papers" -> "py-why/causal-learn"
 "causaltext/causal-text-papers" -> "kochbj/Deep-Learning-for-Causal-Inference"
+"8080labs/ppscore" -> "mckinsey/causalnex" ["e"=1]
 "ignavierng/notears-tensorflow" -> "ignavierng/golem"
 "erdogant/bnlearn" -> "pgmpy/pgmpy"
 "erdogant/bnlearn" -> "MaxHalford/sorobn"
@@ -498,6 +540,8 @@ digraph G {
 "erdogant/bnlearn" -> "davenza/PyBNesian"
 "erdogant/bnlearn" -> "msuzen/looper"
 "erdogant/bnlearn" -> "jvpoulos/causal-ml"
+"jmschrei/pomegranate" -> "pgmpy/pgmpy" ["e"=1]
+"bashtage/arch" -> "bashtage/linearmodels" ["e"=1]
 "mckinsey/causalnex" -> "uber/causalml"
 "mckinsey/causalnex" -> "py-why/dowhy"
 "mckinsey/causalnex" -> "py-why/EconML"
@@ -528,6 +572,8 @@ digraph G {
 "facebookexperimental/Robyn" -> "google/rba"
 "facebookexperimental/Robyn" -> "CamDavidsonPilon/lifetimes"
 "facebookexperimental/Robyn" -> "google/trimmed_match"
+"uber/orbit" -> "uber/causalml" ["e"=1]
+"uber/orbit" -> "pymc-labs/CausalPy" ["e"=1]
 "DP6/Marketing-Attribution-Models" -> "DP6/marketing-data-sync"
 "DP6/Marketing-Attribution-Models" -> "Nikhilkohli1/Digital-Marketing-Analytics" ["e"=1]
 "DP6/Marketing-Attribution-Models" -> "eeghor/mta"
@@ -558,6 +604,7 @@ digraph G {
 "CamDavidsonPilon/lifetimes" -> "airbnb/knowledge-repo" ["e"=1]
 "CamDavidsonPilon/lifetimes" -> "uber/causalml"
 "CamDavidsonPilon/lifetimes" -> "GoogleCloudPlatform/tensorflow-lifetime-value"
+"facebook/facebook-python-business-sdk" -> "facebookexperimental/Robyn" ["e"=1]
 "maks-sh/scikit-uplift" -> "Minyus/causallift"
 "maks-sh/scikit-uplift" -> "wayfair/pylift"
 "maks-sh/scikit-uplift" -> "uber/causalml"
@@ -573,6 +620,9 @@ digraph G {
 "maks-sh/scikit-uplift" -> "jvpoulos/causal-ml"
 "maks-sh/scikit-uplift" -> "rguo12/awesome-causality-algorithms"
 "maks-sh/scikit-uplift" -> "claudiashi57/dragonnet"
+"salesforce/ai-economist" -> "py-why/EconML" ["e"=1]
+"sberbank-ai-lab/LightAutoML" -> "maks-sh/scikit-uplift" ["e"=1]
+"OpenSourceAP/CrossSection" -> "bashtage/linearmodels" ["e"=1]
 "huawei-noah/trustworthyAI" -> "py-why/causal-learn"
 "huawei-noah/trustworthyAI" -> "FenTechSolutions/CausalDiscoveryToolbox"
 "huawei-noah/trustworthyAI" -> "xunzheng/notears"
@@ -588,6 +638,7 @@ digraph G {
 "huawei-noah/trustworthyAI" -> "fulifeng/Causal_Reading_Group"
 "huawei-noah/trustworthyAI" -> "DataCanvasIO/YLearn"
 "huawei-noah/trustworthyAI" -> "uber/causalml"
+"fabsig/GPBoost" -> "pymc-labs/CausalPy" ["e"=1]
 "google/CausalImpact" -> "dafiti/causalimpact"
 "google/CausalImpact" -> "WillianFuks/tfcausalimpact"
 "google/CausalImpact" -> "twitter/AnomalyDetection" ["e"=1]
@@ -608,6 +659,9 @@ digraph G {
 "OscarEngelbrektson/SyntheticControlMethods" -> "MasaAsami/pysynthdid"
 "OscarEngelbrektson/SyntheticControlMethods" -> "ebenmichael/augsynth" ["e"=1]
 "OscarEngelbrektson/SyntheticControlMethods" -> "bernardodionisi/differences"
+"pgmpy/pgmpy_notebook" -> "pgmpy/pgmpy" ["e"=1]
+"pgmpy/pgmpy_notebook" -> "erdogant/bnlearn" ["e"=1]
+"pgmpy/pgmpy_notebook" -> "akelleh/causality" ["e"=1]
 "google/lifetime_value" -> "GoogleCloudPlatform/tensorflow-lifetime-value"
 "google/lifetime_value" -> "CamDavidsonPilon/lifetimes"
 "google/lifetime_value" -> "bookingcom/upliftml"
@@ -636,6 +690,7 @@ digraph G {
 "MaxHalford/sorobn" -> "erdogant/bnlearn"
 "MaxHalford/sorobn" -> "davenza/PyBNesian"
 "MaxHalford/sorobn" -> "ncullen93/pyBN" ["e"=1]
+"twitter/BreakoutDetection" -> "FrankPortman/bayesAB" ["e"=1]
 "DataForScience/Causality" -> "DataForScience/CausalInference"
 "DataForScience/Causality" -> "altdeep/causalML"
 "DataForScience/Causality" -> "napsternxg/awesome-causality"
@@ -651,6 +706,8 @@ digraph G {
 "DataForScience/Causality" -> "matthewvowels1/Awesome-Causal-Inference"
 "DataForScience/Causality" -> "DataForScience/DataViz" ["e"=1]
 "DataForScience/Causality" -> "M-Nauta/TCDF"
+"uclanlp/awesome-fairness-papers" -> "causaltext/causal-text-papers" ["e"=1]
+"aesara-devs/aesara" -> "pymc-labs/CausalPy" ["e"=1]
 "CausalInference/gfoRmula" -> "CausalInference/GFORMULA-SAS"
 "CausalInference/gfoRmula" -> "remlapmot/cibookex-r"
 "CausalInference/gfoRmula" -> "Causal-LDA/TrialEmulation"
@@ -672,8 +729,11 @@ digraph G {
 "loeweX/AmortizedCausalDiscovery" -> "microsoft/causica"
 "kathoffman/causal-inference-visual-guides" -> "kathoffman/steroids-trial-emulation"
 "kathoffman/causal-inference-visual-guides" -> "carloscinelli/sensemakr"
+"zuster/EconometricsResources" -> "xieliaing/CausalInferenceIntro" ["e"=1]
 "mrosol/Nonlincausality" -> "i6092467/GVAR"
 "mrosol/Nonlincausality" -> "iancovert/Neural-GC"
+"Nikhilkohli1/Digital-Marketing-Analytics" -> "DP6/Marketing-Attribution-Models" ["e"=1]
+"Nikhilkohli1/Digital-Marketing-Analytics" -> "sibylhe/mmm_stan" ["e"=1]
 "nt-williams/lmtp" -> "kathoffman/steroids-trial-emulation"
 "biomedia-mira/deepscm" -> "biomedia-mira/causal-gen"
 "biomedia-mira/deepscm" -> "clinicalml/cfrnet"
@@ -732,6 +792,7 @@ digraph G {
 "remlapmot/cibookex-r" -> "CausalInference/gfoRmula"
 "google/trimmed_match" -> "google/matched_markets"
 "google/trimmed_match" -> "google/GeoexperimentsResearch"
+"hongzimao/decima-sim" -> "ArchieGertsman/spark-sched-sim" ["e"=1]
 "timmens/causal-forest" -> "kjung/scikit-learn"
 "bradyneal/realcause" -> "divyat09/cate-estimator-selection"
 "wt-hu/pyCausalFS" -> "kuiy/CausalFS"
@@ -739,6 +800,8 @@ digraph G {
 "DoubleML/doubleml-for-r" -> "DoubleML/doubleml-docs"
 "DoubleML/doubleml-for-r" -> "carloscinelli/dml.sensemakr"
 "DoubleML/doubleml-for-r" -> "DoubleML/doubleml-for-py"
+"matthewwardrop/formulaic" -> "py-econometrics/pyfixest" ["e"=1]
+"matthewwardrop/formulaic" -> "bashtage/linearmodels" ["e"=1]
 "Ibotta/mr_uplift" -> "Matthias2193/APA"
 "slachapelle/dcdi" -> "phlippe/ENCO"
 "slachapelle/dcdi" -> "causalbench/causalbench"
@@ -759,6 +822,7 @@ digraph G {
 "AMLab-Amsterdam/DataAugmentationInterventions" -> "caus-am/dom_adapt"
 "vthost/DAGNN" -> "LUOyk1999/DAGformer"
 "vthost/DAGNN" -> "muhanzhang/D-VAE"
+"paulgp/applied-methods-phd" -> "matteocourthoud/awesome-causal-inference" ["e"=1]
 "py-why/causal-learn" -> "huawei-noah/trustworthyAI"
 "py-why/causal-learn" -> "FenTechSolutions/CausalDiscoveryToolbox"
 "py-why/causal-learn" -> "jakobrunge/tigramite"
@@ -774,6 +838,7 @@ digraph G {
 "py-why/causal-learn" -> "py-why/EconML"
 "py-why/causal-learn" -> "jvpoulos/causal-ml"
 "py-why/causal-learn" -> "IntelLabs/causality-lab"
+"arviz-devs/arviz" -> "pymc-labs/CausalPy" ["e"=1]
 "bookingcom/upliftml" -> "Minyus/causallift"
 "bookingcom/upliftml" -> "maks-sh/scikit-uplift"
 "bookingcom/upliftml" -> "wayfair/pylift"
@@ -782,8 +847,11 @@ digraph G {
 "bookingcom/upliftml" -> "JackHCC/Awesome-Uplift-Model"
 "bookingcom/upliftml" -> "DoubleML/doubleml-for-py"
 "bookingcom/upliftml" -> "zalandoresearch/ACIC23-competition"
+"BayesianModelingandComputationInPython/BookCode_Edition1" -> "pymc-labs/CausalPy" ["e"=1]
 "konosp/propensity-score-matching" -> "kellieotto/pscore_match"
 "konosp/propensity-score-matching" -> "rlirey/psmatching"
+"zhijing-jin/nlp-phd-global-equality" -> "zhijing-jin/CausalNLP_Papers" ["e"=1]
+"zhijing-jin/nlp-phd-global-equality" -> "causaltext/causal-text-papers" ["e"=1]
 "FrancescoCasalegno/AB-Testing" -> "mnguyenngo/ab-framework"
 "FrancescoCasalegno/AB-Testing" -> "brian-c-ogorman/ABanditTesting"
 "akelleh/causality" -> "laurencium/Causalinference"
@@ -801,6 +869,9 @@ digraph G {
 "akelleh/causality" -> "jrfiedler/causal_inference_python_code"
 "akelleh/causality" -> "xunzheng/notears"
 "akelleh/causality" -> "bd2kccd/py-causal"
+"pymc-devs/pymc-examples" -> "pymc-labs/CausalPy" ["e"=1]
+"scikit-learn-contrib/MAPIE" -> "pymc-labs/CausalPy" ["e"=1]
+"practical-data-science/ecommercetools" -> "jerednel/markov-chain-attribution" ["e"=1]
 "ckassaad/causal_discovery_for_time_series" -> "causalens/cdml-neurips2020"
 "AliciaCurth/CATENets" -> "d909b/drnet"
 "AliciaCurth/CATENets" -> "clinicalml/cfrnet"
@@ -822,6 +893,15 @@ digraph G {
 "zhijing-jin/CausalNLP_Papers" -> "microsoft/causica"
 "zhijing-jin/CausalNLP_Papers" -> "FenTechSolutions/CausalDiscoveryToolbox"
 "zhijing-jin/CausalNLP_Papers" -> "rpryzant/causal-bert-pytorch"
+"vanderschaarlab/mlforhealthlabpub" -> "clinicalml/cfrnet" ["e"=1]
+"vanderschaarlab/mlforhealthlabpub" -> "AliciaCurth/CATENets" ["e"=1]
+"vanderschaarlab/mlforhealthlabpub" -> "d909b/drnet" ["e"=1]
+"vanderschaarlab/mlforhealthlabpub" -> "jsyoon0823/GANITE" ["e"=1]
+"vanderschaarlab/mlforhealthlabpub" -> "kochbj/Deep-Learning-for-Causal-Inference" ["e"=1]
+"vanderschaarlab/mlforhealthlabpub" -> "huawei-noah/trustworthyAI" ["e"=1]
+"zhijing-jin/NLP4SocialGood_Papers" -> "zhijing-jin/CausalNLP_Papers" ["e"=1]
+"yfzhang114/Generalization-Causality" -> "fulifeng/Causal_Reading_Group" ["e"=1]
+"yfzhang114/Generalization-Causality" -> "rguo12/awesome-causality-algorithms" ["e"=1]
 "fishmoon1234/DAG-NoCurl" -> "skypea/DAG_No_Fear"
 "FrankPortman/bayesAB" -> "klarsen1/MarketMatching"
 "FrankPortman/bayesAB" -> "Vidogreg/bayes-ab-testing"
@@ -843,6 +923,7 @@ digraph G {
 "DSXiangLi/Paper_CausalInference_abtest" -> "JackHCC/Awesome-Uplift-Model"
 "DSXiangLi/Paper_CausalInference_abtest" -> "claudiashi57/dragonnet"
 "DSXiangLi/Paper_CausalInference_abtest" -> "DataCanvasIO/YLearn"
+"jiawei-chen/RecDebiasing" -> "fulifeng/Causal_Reading_Group" ["e"=1]
 "amaiya/causalnlp" -> "rpryzant/causal-text"
 "amaiya/causalnlp" -> "rpryzant/causal-bert-pytorch"
 "amaiya/causalnlp" -> "xxxiaol/GCI"
@@ -918,6 +999,9 @@ digraph G {
 "DP6/site-speed-dashboard" -> "DP6/dp6.github.io"
 "DP6/analytics-watcher" -> "DP6/penguin-adinfo"
 "DP6/analytics-watcher" -> "DP6/penguin-datalayer-collect"
+"ParabolInc/parabol" -> "inovex/scrumlr.io" ["e"=1]
+"SelfExplainML/PiML-Toolbox" -> "pymc-labs/CausalPy" ["e"=1]
+"SelfExplainML/PiML-Toolbox" -> "DoubleML/doubleml-for-py" ["e"=1]
 "cmu-phil/tetrad" -> "bd2kccd/py-causal"
 "cmu-phil/tetrad" -> "py-why/causal-learn"
 "cmu-phil/tetrad" -> "cmu-phil/py-tetrad"
@@ -933,6 +1017,7 @@ digraph G {
 "cmu-phil/tetrad" -> "jtextor/dagitty" ["e"=1]
 "cmu-phil/tetrad" -> "fishmoon1234/DAG-GNN"
 "cmu-phil/tetrad" -> "M-Nauta/TCDF"
+"toddwschneider/nyc-taxi-data" -> "google/CausalImpact" ["e"=1]
 "vios-s/Diff-SCM" -> "vios-s/DiffAN"
 "google/lightweight_mmm" -> "facebookexperimental/Robyn"
 "google/lightweight_mmm" -> "pymc-labs/pymc-marketing"
@@ -964,6 +1049,7 @@ digraph G {
 "amit-sharma/causal-inference-tutorial" -> "ijmbarr/notes-on-causal-inference"
 "amit-sharma/causal-inference-tutorial" -> "rguo12/awesome-causality-algorithms"
 "amit-sharma/causal-inference-tutorial" -> "py-why/causal-learn"
+"markdregan/Bayesian-Modelling-in-Python" -> "pgmpy/pgmpy" ["e"=1]
 "DataCanvasIO/YLearn" -> "py-why/causal-learn"
 "DataCanvasIO/YLearn" -> "FenTechSolutions/CausalDiscoveryToolbox"
 "DataCanvasIO/YLearn" -> "IntelLabs/causality-lab"
@@ -979,6 +1065,8 @@ digraph G {
 "DataCanvasIO/YLearn" -> "rguo12/awesome-causality-algorithms"
 "DataCanvasIO/YLearn" -> "loeweX/AmortizedCausalDiscovery"
 "DataCanvasIO/YLearn" -> "NetManAIOps/CIRCA" ["e"=1]
+"jtextor/dagitty" -> "cmu-phil/tetrad" ["e"=1]
+"pydata/patsy" -> "bashtage/linearmodels" ["e"=1]
 "xieliaing/CausalInferenceIntro" -> "matheusfacure/python-causality-handbook"
 "xieliaing/CausalInferenceIntro" -> "DSXiangLi/Paper_CausalInference_abtest"
 "xieliaing/CausalInferenceIntro" -> "xieliaing/Data_Science_Industrial_Practice"
@@ -994,6 +1082,7 @@ digraph G {
 "xieliaing/CausalInferenceIntro" -> "lei940324/econometrics" ["e"=1]
 "xieliaing/CausalInferenceIntro" -> "jrfiedler/causal_inference_python_code"
 "xieliaing/CausalInferenceIntro" -> "matteocourthoud/awesome-causal-inference"
+"robjhyndman/forecast" -> "google/CausalImpact" ["e"=1]
 "facebookincubator/GeoLift" -> "google/matched_markets"
 "facebookincubator/GeoLift" -> "google/GeoexperimentsResearch"
 "facebookincubator/GeoLift" -> "google/trimmed_match"
@@ -1023,10 +1112,12 @@ digraph G {
 "PacktPublishing/Causal-Inference-and-Discovery-in-Python" -> "jvpoulos/causal-ml"
 "PacktPublishing/Causal-Inference-and-Discovery-in-Python" -> "msuzen/looper"
 "PacktPublishing/Causal-Inference-and-Discovery-in-Python" -> "jakobrunge/tigramite"
+"imbs-hl/ranger" -> "grf-labs/grf" ["e"=1]
 "kailiang-zhong/DESCN" -> "dgliu/KDD23_EFIN"
 "kailiang-zhong/DESCN" -> "aifor/eeuen"
 "kailiang-zhong/DESCN" -> "lushleaf/varying-coefficient-net-with-functional-tr"
 "kailiang-zhong/DESCN" -> "d909b/drnet"
+"DataCanvasIO/HyperTS" -> "DataCanvasIO/YLearn" ["e"=1]
 "pymc-labs/pymc-marketing" -> "pymc-labs/CausalPy"
 "pymc-labs/pymc-marketing" -> "google/lightweight_mmm"
 "pymc-labs/pymc-marketing" -> "facebookexperimental/Robyn"
@@ -1119,13 +1210,22 @@ digraph G {
 "susanathey/causalTree" -> "laurencium/Causalinference"
 "susanathey/causalTree" -> "AMLab-Amsterdam/CEVAE"
 "susanathey/causalTree" -> "google/CausalImpact"
+"antoinejaussoin/retro-board" -> "inovex/scrumlr.io" ["e"=1]
+"bayespy/bayespy" -> "pgmpy/pgmpy" ["e"=1]
+"facebookresearch/balance" -> "pymc-labs/CausalPy" ["e"=1]
+"facebookresearch/balance" -> "WillianFuks/tfcausalimpact" ["e"=1]
+"facebookresearch/balance" -> "DoubleML/doubleml-for-py" ["e"=1]
 "bernardodionisi/differences" -> "nlapier2/PySensemakr"
 "bernardodionisi/differences" -> "d2cml-ai/csdid"
+"blei-lab/edward" -> "pgmpy/pgmpy" ["e"=1]
+"brylevkirill/notes" -> "logangraham/arXausality" ["e"=1]
+"brylevkirill/notes" -> "jrfiedler/causal_inference_python_code" ["e"=1]
 "LUOyk1999/DAGformer" -> "zehao-dong/PACE"
 "LUOyk1999/DAGformer" -> "vthost/DAGNN"
 "LUOyk1999/DAGformer" -> "ArchieGertsman/spark-sched-sim"
 "causalens/dara" -> "causalens/cai-causal-graph"
 "causalens/dara" -> "msuzen/looper"
+"pymc-devs/pytensor" -> "pymc-labs/CausalPy" ["e"=1]
 "microsoft/causica" -> "microsoft/showwhy"
 "microsoft/causica" -> "microsoft/project-azua"
 "microsoft/causica" -> "huawei-noah/trustworthyAI"
@@ -1141,6 +1241,7 @@ digraph G {
 "microsoft/causica" -> "jvpoulos/causal-ml"
 "microsoft/causica" -> "DoubleML/doubleml-for-py"
 "microsoft/causica" -> "larslorch/avici"
+"bambinos/bambi" -> "pymc-labs/CausalPy" ["e"=1]
 "matheusfacure/causal-inference-in-python-code" -> "PacktPublishing/Causal-Inference-and-Discovery-in-Python"
 "matheusfacure/causal-inference-in-python-code" -> "pymc-labs/CausalPy"
 "matheusfacure/causal-inference-in-python-code" -> "matheusfacure/python-causality-handbook"
@@ -1185,6 +1286,7 @@ digraph G {
 "salesforce/causalai" -> "HazyResearch/spacetime" ["e"=1]
 "salesforce/causalai" -> "M-Nauta/TCDF"
 "salesforce/causalai" -> "IntelLabs/causality-lab"
+"MobileTeleSystems/RecTools" -> "maks-sh/scikit-uplift" ["e"=1]
 "vios-s/DiffAN" -> "patrickrchao/DiffusionBasedCausalModels"
 "vios-s/DiffAN" -> "slachapelle/dcdi"
 "JackHCC/Awesome-Uplift-Model" -> "dgliu/KDD23_EFIN"
@@ -1199,6 +1301,8 @@ digraph G {
 "kevinsbello/dagma" -> "kurowasan/GraN-DAG"
 "kevinsbello/dagma" -> "fishmoon1234/DAG-GNN"
 "py-why/pywhy-graphs" -> "py-why/pywhy-stats"
+"mckinsey/vizro" -> "mckinsey/causalnex" ["e"=1]
+"airbnb/knowledge-repo" -> "CamDavidsonPilon/lifetimes" ["e"=1]
 "grf-labs/grf" -> "susanathey/causalTree"
 "grf-labs/grf" -> "py-why/EconML"
 "grf-labs/grf" -> "synth-inference/synthdid" ["e"=1]
@@ -1214,6 +1318,7 @@ digraph G {
 "grf-labs/grf" -> "clinicalml/cfrnet"
 "grf-labs/grf" -> "matheusfacure/python-causality-handbook"
 "grf-labs/grf" -> "google/CausalImpact"
+"intuit/wasabi" -> "FrankPortman/bayesAB" ["e"=1]
 "matteocourthoud/awesome-causal-inference" -> "pymc-labs/CausalPy"
 "matteocourthoud/awesome-causal-inference" -> "matheusfacure/python-causality-handbook"
 "matteocourthoud/awesome-causal-inference" -> "jvpoulos/causal-ml"
@@ -1229,6 +1334,11 @@ digraph G {
 "matteocourthoud/awesome-causal-inference" -> "kolesarm/539b" ["e"=1]
 "matteocourthoud/awesome-causal-inference" -> "PacktPublishing/Causal-Inference-and-Discovery-in-Python"
 "matteocourthoud/awesome-causal-inference" -> "borusyak/are213" ["e"=1]
+"thu-ml/zhusuan" -> "pgmpy/pgmpy" ["e"=1]
+"salesforce/PyRCA" -> "salesforce/causalai" ["e"=1]
+"wwrechard/pydlm" -> "tcassou/causal_impact" ["e"=1]
+"wwrechard/pydlm" -> "dafiti/causalimpact" ["e"=1]
+"wwrechard/pydlm" -> "laurencium/Causalinference" ["e"=1]
 "inovex/CalendarSync" -> "ultimate-notion/ultimate-notion"
 "xiongsiheng/TILP" -> "xiongsiheng/TEILP"
 "clinicalml/cfrnet" -> "AMLab-Amsterdam/CEVAE"
@@ -1254,6 +1364,10 @@ digraph G {
 "py-why/pywhyllm" -> "superkaiba/causal-llm-bfs"
 "py-why/pywhyllm" -> "anpwu/Awesome-Causal-LLM"
 "py-why/pywhyllm" -> "IntelLabs/causality-lab"
+"gsbDBI/ExperimentData" -> "susanathey/causalTree" ["e"=1]
+"gsbDBI/ExperimentData" -> "demirermert/MLInference" ["e"=1]
+"gsbDBI/ExperimentData" -> "susanathey/MCPanel" ["e"=1]
+"gsbDBI/ExperimentData" -> "grf-labs/grf" ["e"=1]
 "cmu-phil/py-tetrad" -> "cmu-phil/example-causal-datasets"
 "cmu-phil/py-tetrad" -> "eberharf/fges-py"
 "cmu-phil/py-tetrad" -> "giovanniMen/CPCaD-Bench"
@@ -1263,6 +1377,8 @@ digraph G {
 "ShaoQiBNU/uplift_model_notes" -> "BokwaiHo/revenue_uplift"
 "jialinlu/OPAMP-Generator" -> "jialinlu/SDM-DSE"
 "jialinlu/SDM-DSE" -> "jialinlu/OPAMP-Generator"
+"sebp/scikit-survival" -> "BiomedSciAI/causallib" ["e"=1]
+"sebp/scikit-survival" -> "CamDavidsonPilon/lifetimes" ["e"=1]
 "google/meridian" -> "google/lightweight_mmm"
 "google/meridian" -> "facebookexperimental/Robyn"
 "google/meridian" -> "pymc-labs/pymc-marketing"
@@ -1278,6 +1394,7 @@ digraph G {
 "google/meridian" -> "google/ga4-gtm-utilities" ["e"=1]
 "google/meridian" -> "google-marketing-solutions/crystalvalue" ["e"=1]
 "google/meridian" -> "google-marketing-solutions/causmos" ["e"=1]
+"dswah/pyGAM" -> "pymc-labs/CausalPy" ["e"=1]
 "facebookarchive/bootstrapped" -> "cgevans/scikits-bootstrap"
 "facebookarchive/bootstrapped" -> "facebookarchive/ml_sampler"
 "facebookarchive/bootstrapped" -> "tcassou/causal_impact"
@@ -1288,6 +1405,7 @@ digraph G {
 "facebookarchive/bootstrapped" -> "bashtage/arch" ["e"=1]
 "facebookarchive/bootstrapped" -> "marnikitta/stattests"
 "xiongsiheng/TEILP" -> "xiongsiheng/TILP"
+"ermongroup/cs228-notes" -> "pgmpy/pgmpy" ["e"=1]
 "xiongsiheng/TG-LLM" -> "xiongsiheng/TILP"
 "xiongsiheng/TG-LLM" -> "xiongsiheng/SWAP"
 "xiongsiheng/TG-LLM" -> "xiongsiheng/TEILP"
@@ -1301,6 +1419,11 @@ digraph G {
 "dgliu/KDD23_EFIN" -> "lushleaf/varying-coefficient-net-with-functional-tr"
 "dgliu/KDD23_EFIN" -> "MTDJDSP/MT-LIFT"
 "DP6/analytics-helper" -> "DP6/easy-collect"
+"christophM/interpretable-ml-book" -> "uber/causalml" ["e"=1]
+"ragulpr/wtte-rnn" -> "CamDavidsonPilon/lifetimes" ["e"=1]
+"QuantEcon/QuantEcon.py" -> "bashtage/linearmodels" ["e"=1]
+"QuantEcon/QuantEcon.py" -> "py-why/EconML" ["e"=1]
+"containers/ramalama" -> "google/meridian" ["e"=1]
 "bashtage/linearmodels" -> "bashtage/arch" ["e"=1]
 "bashtage/linearmodels" -> "StatsReporting/stargazer"
 "bashtage/linearmodels" -> "QuantEcon/QuantEcon.py" ["e"=1]
@@ -1316,6 +1439,7 @@ digraph G {
 "bashtage/linearmodels" -> "alkaline-ml/pmdarima" ["e"=1]
 "bashtage/linearmodels" -> "koaning/scikit-lego" ["e"=1]
 "bashtage/linearmodels" -> "statsmodels/statsmodels" ["e"=1]
+"oracle/skater" -> "akelleh/causality" ["e"=1]
 "tcassou/causal_impact" -> "dafiti/causalimpact"
 "tcassou/causal_impact" -> "jamalsenouci/causalimpact"
 "tcassou/causal_impact" -> "wwrechard/pydlm" ["e"=1]
@@ -1329,6 +1453,7 @@ digraph G {
 "google/GeoexperimentsResearch" -> "google/abpackage"
 "BokwaiHo/revenue_uplift" -> "MTDJDSP/MT-LIFT"
 "BokwaiHo/revenue_uplift" -> "hebowei2000/revenue_uplift"
+"pyro-ppl/pyro" -> "pgmpy/pgmpy" ["e"=1]
 "mkocaoglu/CausalGAN" -> "jsyoon0823/GANITE"
 "mkocaoglu/CausalGAN" -> "mrojascarulla/causal_transfer_learning"
 "jakobrunge/tigramite" -> "M-Nauta/TCDF"
@@ -1385,38 +1510,39 @@ digraph G {
 "christinaheinze/nonlinearICP-and-CondIndTests" -> "jan-glx/ICPy"
 "DP6/roger-watcher" -> "DP6/dp6.github.io"
 "ikatsov/tensor-house" ["l"="43.639,25.703"]
-"uber/orbit" ["l"="45.414,26.352"]
+"uber/orbit" ["l"="45.414,26.352", "c"=68]
 "google/lightweight_mmm" ["l"="43.659,25.748"]
 "pymc-labs/pymc-marketing" ["l"="43.643,25.733"]
 "py-why/EconML" ["l"="43.677,25.61"]
 "retentioneering/retentioneering-tools" ["l"="43.588,25.76"]
 "dafiti/causalimpact" ["l"="43.565,25.686"]
-"KevinFasusi/supplychainpy" ["l"="44.427,18.46"]
+"KevinFasusi/supplychainpy" ["l"="44.427,18.46", "c"=351]
 "uber/causalml" ["l"="43.652,25.595"]
 "facebookexperimental/Robyn" ["l"="43.635,25.752"]
 "sibylhe/mmm_stan" ["l"="43.64,25.79"]
 "pymc-labs/CausalPy" ["l"="43.664,25.632"]
 "CamDavidsonPilon/lifetimes" ["l"="43.585,25.712"]
 "py-why/dowhy" ["l"="43.725,25.604"]
-"hubbs5/or-gym" ["l"="50.96,26.666"]
-"slgero/testovoe" ["l"="-44.347,26.083"]
+"hubbs5/or-gym" ["l"="50.96,26.666", "c"=490]
+"slgero/testovoe" ["l"="-44.347,26.083", "c"=551]
 "rguo12/awesome-causality-algorithms" ["l"="43.664,25.539"]
 "mckinsey/causalnex" ["l"="43.69,25.563"]
 "py-why/causal-learn" ["l"="43.684,25.521"]
 "FenTechSolutions/CausalDiscoveryToolbox" ["l"="43.669,25.512"]
 "matheusfacure/python-causality-handbook" ["l"="43.698,25.591"]
-"interpretml/interpret" ["l"="45.309,26.145"]
-"shap/shap" ["l"="45.443,26.065"]
+"interpretml/interpret" ["l"="45.309,26.145", "c"=68]
+"shap/shap" ["l"="45.443,26.065", "c"=68]
 "jrfiedler/causal_inference_python_code" ["l"="43.677,25.581"]
 "pgmpy/pgmpy" ["l"="43.764,25.555"]
 "amit-sharma/causal-inference-tutorial" ["l"="43.626,25.545"]
 "google/CausalImpact" ["l"="43.636,25.647"]
-"pymc-devs/pymc" ["l"="45.746,26.164"]
-"pyro-ppl/pyro" ["l"="45.709,26.076"]
+"pymc-devs/pymc" ["l"="45.746,26.164", "c"=68]
+"pyro-ppl/pyro" ["l"="45.709,26.076", "c"=68]
 "maks-sh/scikit-uplift" ["l"="43.62,25.617"]
 "BiomedSciAI/causallib" ["l"="43.654,25.567"]
 "jvpoulos/causal-ml" ["l"="43.649,25.522"]
 "altdeep/causalML" ["l"="43.664,25.557"]
+"CamDavidsonPilon/lifelines" ["l"="45.271,26.46", "c"=68]
 "rguo12/awesome-causality-data" ["l"="43.628,25.522"]
 "huawei-noah/trustworthyAI" ["l"="43.677,25.494"]
 "fulifeng/Causal_Reading_Group" ["l"="43.623,25.498"]
@@ -1426,8 +1552,12 @@ digraph G {
 "DoubleML/doubleml-for-py" ["l"="43.639,25.581"]
 "cdt15/lingam" ["l"="43.688,25.476"]
 "laurencium/Causalinference" ["l"="43.609,25.592"]
+"kedro-org/kedro" ["l"="45.274,25.925", "c"=68]
+"facebookarchive/planout" ["l"="-0.603,-28.11", "c"=12]
+"hmmlearn/hmmlearn" ["l"="45.667,26.233", "c"=68]
 "jmoss20/notears" ["l"="43.64,25.417"]
 "ignavierng/notears-tensorflow" ["l"="43.632,25.388"]
+"koaning/scikit-lego" ["l"="45.251,26.324", "c"=68]
 "AMLab-Amsterdam/CEVAE" ["l"="43.592,25.514"]
 "napsternxg/awesome-causality" ["l"="43.715,25.517"]
 "clinicalml/cfrnet" ["l"="43.574,25.531"]
@@ -1436,24 +1566,31 @@ digraph G {
 "claudiashi57/dragonnet" ["l"="43.585,25.539"]
 "edgeslab/CTL" ["l"="43.681,25.697"]
 "kjung/scikit-learn" ["l"="43.66,25.689"]
-"jmschrei/pomegranate" ["l"="45.637,26.21"]
-"pgmpy/pgmpy_notebook" ["l"="39.336,36.032"]
+"microsoft/forecasting" ["l"="45.489,26.362", "c"=68]
+"nubank/fklearn" ["l"="6.129,-20.287", "c"=96]
+"interpretml/DiCE" ["l"="45.165,26.172", "c"=68]
+"jmschrei/pomegranate" ["l"="45.637,26.21", "c"=68]
+"pgmpy/pgmpy_notebook" ["l"="39.336,36.032", "c"=714]
 "erdogant/bnlearn" ["l"="43.734,25.519"]
-"blei-lab/edward" ["l"="45.764,26.126"]
-"eBay/bayesian-belief-networks" ["l"="39.356,35.988"]
-"bayespy/bayespy" ["l"="39.319,35.97"]
+"blei-lab/edward" ["l"="45.764,26.126", "c"=68]
+"eBay/bayesian-belief-networks" ["l"="39.356,35.988", "c"=714]
+"bayespy/bayespy" ["l"="39.319,35.97", "c"=714]
+"catboost/tutorials" ["l"="45.359,26.272", "c"=68]
 "appintheair/retentioneering-framework" ["l"="43.561,25.795"]
 "marnikitta/stattests" ["l"="43.516,25.798"]
-"MobileTeleSystems/RecTools" ["l"="-44.273,26.176"]
-"NameArtem/deployml_course" ["l"="-44.338,26.176"]
-"DanAnastasyev/DeepNLP-Course" ["l"="-44.328,26.077"]
-"eliasdabbas/advertools" ["l"="24.825,-28.725"]
-"sberbank-ai-lab/LightAutoML" ["l"="-44.31,26.184"]
-"Nikhilkohli1/Digital-Marketing-Analytics" ["l"="48.474,25.725"]
+"MobileTeleSystems/RecTools" ["l"="-44.273,26.176", "c"=551]
+"NameArtem/deployml_course" ["l"="-44.338,26.176", "c"=551]
+"DanAnastasyev/DeepNLP-Course" ["l"="-44.328,26.077", "c"=551]
+"eliasdabbas/advertools" ["l"="24.825,-28.725", "c"=1455]
+"sberbank-ai-lab/LightAutoML" ["l"="-44.31,26.184", "c"=551]
+"Nikhilkohli1/Digital-Marketing-Analytics" ["l"="48.474,25.725", "c"=323]
 "SberProcessMining/Sber_Process_Mining" ["l"="43.557,25.817"]
-"MobileTeleSystems/Ambrosia" ["l"="-44.27,26.153"]
+"MobileTeleSystems/Ambrosia" ["l"="-44.27,26.153", "c"=551]
 "DP6/Marketing-Attribution-Models" ["l"="43.652,25.813"]
 "grf-labs/grf" ["l"="43.684,25.636"]
+"raphaelvallat/pingouin" ["l"="45.23,26.4", "c"=68]
+"bashtage/linearmodels" ["l"="43.745,25.652"]
+"JustGlowing/minisom" ["l"="45.023,26.061", "c"=68]
 "benmiroglio/pymatch" ["l"="43.541,25.647"]
 "kellieotto/pscore_match" ["l"="43.491,25.675"]
 "konosp/propensity-score-matching" ["l"="43.465,25.679"]
@@ -1461,15 +1598,16 @@ digraph G {
 "wayfair/pylift" ["l"="43.584,25.637"]
 "jamalsenouci/causalimpact" ["l"="43.589,25.661"]
 "miaohancheng/pysmatch" ["l"="43.47,25.66"]
-"insongkim/PanelMatch" ["l"="43.31,26.725"]
+"insongkim/PanelMatch" ["l"="43.31,26.725", "c"=627]
 "msuzen/looper" ["l"="43.745,25.541"]
 "AlxndrMlk/causality" ["l"="43.741,25.493"]
 "max-little/GRAPL" ["l"="43.826,25.536"]
 "matteocourthoud/awesome-causal-inference" ["l"="43.711,25.572"]
 "ijmbarr/causalgraphicalmodels" ["l"="43.632,25.562"]
 "shoepaladin/causalinference_crashcourse" ["l"="43.826,25.56"]
+"scikit-learn-contrib/skope-rules" ["l"="45.342,26.357", "c"=68]
 "imirzadeh/awesome-causal-inference" ["l"="43.754,25.478"]
-"Wangt-CN/Awesome-Causality-in-CV" ["l"="-54.876,-13.524"]
+"Wangt-CN/Awesome-Causality-in-CV" ["l"="-54.876,-13.524", "c"=219]
 "matthewvowels1/Awesome-Causal-Inference" ["l"="43.779,25.487"]
 "fishmoon1234/DAG-GNN" ["l"="43.67,25.435"]
 "kevinsbello/dagma" ["l"="43.643,25.432"]
@@ -1488,10 +1626,11 @@ digraph G {
 "susanathey/causalTree" ["l"="43.662,25.652"]
 "StatsReporting/stargazer" ["l"="43.786,25.677"]
 "lucashusted/pystout" ["l"="43.825,25.698"]
-"dmsul/econtools" ["l"="42.608,26.937"]
-"bashtage/linearmodels" ["l"="43.745,25.652"]
+"dmsul/econtools" ["l"="42.608,26.937", "c"=1056]
 "py-econometrics/pyfixest" ["l"="43.711,25.649"]
-"chrisconlon/micro-metrics" ["l"="43.178,26.545"]
+"chrisconlon/micro-metrics" ["l"="43.178,26.545", "c"=627]
+"probml/pmtk3" ["l"="45.946,26.094", "c"=68]
+"uber/manifold" ["l"="45.291,26.116", "c"=68]
 "M-Nauta/TCDF" ["l"="43.687,25.457"]
 "loeweX/AmortizedCausalDiscovery" ["l"="43.697,25.427"]
 "ckassaad/causal_discovery_for_time_series" ["l"="43.713,25.434"]
@@ -1502,7 +1641,7 @@ digraph G {
 "microsoft/causica" ["l"="43.653,25.477"]
 "uhlerlab/causaldag" ["l"="43.654,25.445"]
 "fishmoon1234/DAG-NoCurl" ["l"="43.643,25.372"]
-"ethanfetaya/NRI" ["l"="23.548,14.796"]
+"ethanfetaya/NRI" ["l"="23.548,14.796", "c"=728]
 "vthost/DAGNN" ["l"="43.742,25.295"]
 "inovex/scrumlr.io" ["l"="43.91,25.376"]
 "inovex/elements" ["l"="43.945,25.363"]
@@ -1510,8 +1649,13 @@ digraph G {
 "inovex/CalendarSync" ["l"="43.969,25.341"]
 "inovex/justcause" ["l"="43.782,25.44"]
 "cdreier/DinoPoker" ["l"="43.921,25.354"]
+"kedro-org/kedro-viz" ["l"="22.346,14.565", "c"=267]
+"jrzaurin/pytorch-widedeep" ["l"="46.02,24.694", "c"=1262]
+"stanfordmlgroup/ngboost" ["l"="45.314,26.332", "c"=68]
+"mckinsey/qbstyles" ["l"="22.22,14.522", "c"=267]
 "discdiver/causal-inference-python-packages" ["l"="43.764,25.505"]
 "DataForScience/Causality" ["l"="43.701,25.53"]
+"bayesnet/bnt" ["l"="39.39,35.983", "c"=714]
 "psarka/uplift" ["l"="43.528,25.665"]
 "google/lifetime_value" ["l"="43.585,25.684"]
 "Osier-Yi/SITE" ["l"="43.557,25.509"]
@@ -1523,15 +1667,15 @@ digraph G {
 "IBM-HRL-MLHLS/IBM-Causal-Inference-Benchmarking-Framework" ["l"="43.734,25.463"]
 "jsyoon0823/GANITE" ["l"="43.571,25.5"]
 "farazmah/dragonnet-pytorch" ["l"="43.541,25.56"]
-"criteo-research/CausE" ["l"="59.61,23.712"]
+"criteo-research/CausE" ["l"="59.61,23.712", "c"=235]
 "tcassou/causal_impact" ["l"="43.557,25.666"]
 "WillianFuks/tfcausalimpact" ["l"="43.62,25.675"]
-"luke14free/pm-prophet" ["l"="39.183,35.973"]
-"MBrouns/timeseers" ["l"="39.126,35.969"]
+"luke14free/pm-prophet" ["l"="39.183,35.973", "c"=714]
+"MBrouns/timeseers" ["l"="39.126,35.969", "c"=714]
 "klarsen1/MarketMatching" ["l"="43.507,25.769"]
 "mplatzer/BTYDplus" ["l"="43.507,25.72"]
 "facebookarchive/bootstrapped" ["l"="43.472,25.769"]
-"loft-br/xgboost-survival-embeddings" ["l"="45.24,26.503"]
+"loft-br/xgboost-survival-embeddings" ["l"="45.24,26.503", "c"=68]
 "blei-lab/deconfounder_tutorial" ["l"="43.521,25.423"]
 "CausalInference/gfoRmula" ["l"="43.871,25.647"]
 "eeghor/mta" ["l"="43.647,25.848"]
@@ -1544,12 +1688,15 @@ digraph G {
 "Renovamen/pcalg-py" ["l"="43.717,25.389"]
 "keiichishima/pcalg" ["l"="43.717,25.412"]
 "cran/pcalg" ["l"="43.725,25.343"]
+"synth-inference/synthdid" ["l"="43.254,26.604", "c"=627]
 "rsyi/dato" ["l"="43.681,25.711"]
+"GoogleCloudPlatform/ml-on-gcp" ["l"="44.845,16.412", "c"=213]
+"GoogleCloudPlatform/tensorflow-lifetime-value" ["l"="43.552,25.718"]
 "mnguyenngo/ab-framework" ["l"="43.382,25.83"]
 "FrancescoCasalegno/AB-Testing" ["l"="43.347,25.845"]
 "baumanab/udacity_ABTesting" ["l"="43.368,25.864"]
 "ijmbarr/notes-on-causal-inference" ["l"="43.596,25.569"]
-"canyon289/bayesian-model-evaluation" ["l"="39.204,36.004"]
+"canyon289/bayesian-model-evaluation" ["l"="39.204,36.004", "c"=714]
 "microsoft/SparseSC" ["l"="43.476,25.629"]
 "MasaAsami/pysynthdid" ["l"="43.489,25.647"]
 "OscarEngelbrektson/SyntheticControlMethods" ["l"="43.516,25.626"]
@@ -1573,7 +1720,6 @@ digraph G {
 "lee813/pydpmm" ["l"="43.496,25.4"]
 "csquires/causal-rep-learning-reading-group" ["l"="43.745,25.395"]
 "felixleopoldo/benchpress" ["l"="43.679,25.416"]
-"GoogleCloudPlatform/tensorflow-lifetime-value" ["l"="43.552,25.718"]
 "jerednel/markov-chain-attribution" ["l"="43.606,25.848"]
 "olivierzach/bayesian-marketing-attribution" ["l"="43.585,25.864"]
 "jmwoloso/pychattr" ["l"="43.579,25.887"]
@@ -1593,7 +1739,7 @@ digraph G {
 "rpryzant/causal-text" ["l"="43.518,25.45"]
 "authors-1901-10912/A-Meta-Transfer-Objective-For-Learning-To-Disentangle-Causal-Mechanisms" ["l"="43.588,25.311"]
 "nke001/causal_learning_unknown_interventions" ["l"="43.602,25.348"]
-"anirudh9119/RIMs" ["l"="49.039,32.466"]
+"anirudh9119/RIMs" ["l"="49.039,32.466", "c"=300]
 "jan-glx/ICPy" ["l"="43.703,25.268"]
 "juangamella/aicp" ["l"="43.706,25.295"]
 "caus-am/dom_adapt" ["l"="43.803,25.417"]
@@ -1602,24 +1748,27 @@ digraph G {
 "bernard-mlab/Multi-Touch-Attribution_ShapleyValue" ["l"="43.616,25.883"]
 "jrkinley/game-theory-attribution" ["l"="43.605,25.875"]
 "xieliaing/CausalInferenceIntro" ["l"="43.721,25.54"]
-"paulgp/applied-methods-phd" ["l"="43.181,26.565"]
+"paulgp/applied-methods-phd" ["l"="43.181,26.565", "c"=627]
 "py-why/dodiscover" ["l"="43.649,25.393"]
 "IntelLabs/causality-lab" ["l"="43.694,25.443"]
 "google/tfp-causalimpact" ["l"="43.615,25.724"]
-"Nixtla/hierarchicalforecast" ["l"="45.396,26.465"]
-"carlomazzaferro/scikit-hts" ["l"="45.332,26.503"]
+"Nixtla/hierarchicalforecast" ["l"="45.396,26.465", "c"=68]
+"carlomazzaferro/scikit-hts" ["l"="45.332,26.503", "c"=68]
+"twitter/AnomalyDetection" ["l"="52.251,14.711", "c"=569]
+"projectmesa/mesa" ["l"="40.991,24.101", "c"=76]
 "DoubleML/doubleml-for-r" ["l"="43.567,25.587"]
 "DoubleML/doubleml-docs" ["l"="43.584,25.59"]
 "py-why/causaltune" ["l"="43.599,25.431"]
 "causaltext/causal-text-papers" ["l"="43.589,25.486"]
 "zhijing-jin/CausalNLP_Papers" ["l"="43.616,25.476"]
 "amaiya/causalnlp" ["l"="43.54,25.444"]
-"prodriguezsosa/EmbeddingRegression" ["l"="39.855,33.909"]
-"uclanlp/awesome-fairness-papers" ["l"="40.243,34.265"]
+"prodriguezsosa/EmbeddingRegression" ["l"="39.855,33.909", "c"=1067]
+"uclanlp/awesome-fairness-papers" ["l"="40.243,34.265", "c"=1067]
+"8080labs/ppscore" ["l"="45.297,26.287", "c"=68]
 "MaxHalford/sorobn" ["l"="43.81,25.5"]
-"StatMixedML/XGBoostLSS" ["l"="45.302,26.413"]
+"StatMixedML/XGBoostLSS" ["l"="45.302,26.413", "c"=68]
 "davenza/PyBNesian" ["l"="43.806,25.518"]
-"kedro-org/kedro" ["l"="45.274,25.925"]
+"bashtage/arch" ["l"="-8.907,12.925", "c"=105]
 "facebookincubator/GeoLift" ["l"="43.67,25.781"]
 "google/meridian" ["l"="43.684,25.756"]
 "google/matched_markets" ["l"="43.687,25.784"]
@@ -1632,37 +1781,43 @@ digraph G {
 "DP6/analytics-helper" ["l"="43.671,25.843"]
 "DP6/dp6.github.io" ["l"="43.693,25.855"]
 "camille-004/attribution-modeling" ["l"="43.659,25.835"]
-"CamDavidsonPilon/lifelines" ["l"="45.271,26.46"]
 "ColtAllen/btyd" ["l"="43.545,25.757"]
-"ragulpr/wtte-rnn" ["l"="45.193,26.626"]
-"sebp/scikit-survival" ["l"="45.219,26.499"]
-"rasbt/mlxtend" ["l"="45.448,26.214"]
-"airbnb/knowledge-repo" ["l"="45.4,25.958"]
+"ragulpr/wtte-rnn" ["l"="45.193,26.626", "c"=68]
+"sebp/scikit-survival" ["l"="45.219,26.499", "c"=68]
+"rasbt/mlxtend" ["l"="45.448,26.214", "c"=68]
+"airbnb/knowledge-repo" ["l"="45.4,25.958", "c"=68]
+"facebook/facebook-python-business-sdk" ["l"="-13.9,25.68", "c"=111]
+"salesforce/ai-economist" ["l"="57.896,18.362", "c"=45]
+"OpenSourceAP/CrossSection" ["l"="-8.724,13.313", "c"=105]
 "DataCanvasIO/YLearn" ["l"="43.707,25.49"]
-"twitter/AnomalyDetection" ["l"="52.251,14.711"]
-"robjhyndman/forecast" ["l"="40.337,35.437"]
-"sparklyr/sparklyr" ["l"="40.411,35.356"]
-"ebenmichael/augsynth" ["l"="43.288,26.682"]
+"fabsig/GPBoost" ["l"="45.274,26.412", "c"=68]
+"robjhyndman/forecast" ["l"="40.337,35.437", "c"=51]
+"sparklyr/sparklyr" ["l"="40.411,35.356", "c"=51]
+"ebenmichael/augsynth" ["l"="43.288,26.682", "c"=627]
 "bernardodionisi/differences" ["l"="43.545,25.624"]
 "Willofd101/ziln_cltv" ["l"="43.538,25.7"]
 "rguo12/network-deconfounder-wsdm20" ["l"="43.55,25.489"]
 "songjiang0909/Causal-Inference-on-Networked-Data" ["l"="43.516,25.485"]
 "rguo12/CIKM18-LCVA" ["l"="43.503,25.482"]
-"ncullen93/pyBN" ["l"="39.373,36.025"]
+"ncullen93/pyBN" ["l"="39.373,36.025", "c"=714]
+"twitter/BreakoutDetection" ["l"="52.23,14.726", "c"=569]
+"FrankPortman/bayesAB" ["l"="43.469,25.816"]
 "DataForScience/CausalInference" ["l"="43.782,25.513"]
-"DataForScience/Networks" ["l"="45.061,23.953"]
-"DataForScience/DataViz" ["l"="45.067,23.927"]
+"DataForScience/Networks" ["l"="45.061,23.953", "c"=166]
+"DataForScience/DataViz" ["l"="45.067,23.927", "c"=166]
+"aesara-devs/aesara" ["l"="39.156,35.913", "c"=714]
 "CausalInference/GFORMULA-SAS" ["l"="43.905,25.642"]
 "remlapmot/cibookex-r" ["l"="43.893,25.668"]
 "Causal-LDA/TrialEmulation" ["l"="43.951,25.677"]
 "jbryer/psa" ["l"="43.92,25.661"]
-"cgraber/cvpr_dNRI" ["l"="23.516,14.693"]
+"cgraber/cvpr_dNRI" ["l"="23.516,14.693", "c"=728]
 "juangamella/ges" ["l"="43.703,25.362"]
 "larslorch/avici" ["l"="43.66,25.385"]
-"chaoshangcs/GTS" ["l"="52.354,17.438"]
+"chaoshangcs/GTS" ["l"="52.354,17.438", "c"=815]
 "kathoffman/causal-inference-visual-guides" ["l"="44.07,25.719"]
 "kathoffman/steroids-trial-emulation" ["l"="44.017,25.701"]
 "carloscinelli/sensemakr" ["l"="44.102,25.729"]
+"zuster/EconometricsResources" ["l"="-5.487,16.881", "c"=316]
 "nt-williams/lmtp" ["l"="44.034,25.712"]
 "biomedia-mira/causal-gen" ["l"="43.521,25.394"]
 "jcreinhold/counterfactualms" ["l"="43.564,25.431"]
@@ -1672,21 +1827,24 @@ digraph G {
 "xwshen51/DEAR" ["l"="43.561,25.414"]
 "vios-s/DiffAN" ["l"="43.598,25.389"]
 "mkocaoglu/CausalGAN" ["l"="43.629,25.453"]
-"yfzhang114/Generalization-Causality" ["l"="50.862,37.904"]
-"zyang1580/PDA" ["l"="59.447,23.662"]
-"Wuyxin/DIR-GNN" ["l"="52.304,16.137"]
-"DongHande/AutoDebias" ["l"="59.484,23.681"]
-"jiawei-chen/RecDebiasing" ["l"="59.457,23.614"]
-"TimeLovercc/Awesome-Graph-Causal-Learning" ["l"="52.29,16.084"]
-"yongduosui/CAL" ["l"="52.308,16.117"]
+"yfzhang114/Generalization-Causality" ["l"="50.862,37.904", "c"=1182]
+"zyang1580/PDA" ["l"="59.447,23.662", "c"=235]
+"Wuyxin/DIR-GNN" ["l"="52.304,16.137", "c"=100]
+"DongHande/AutoDebias" ["l"="59.484,23.681", "c"=235]
+"jiawei-chen/RecDebiasing" ["l"="59.457,23.614", "c"=235]
+"TimeLovercc/Awesome-Graph-Causal-Learning" ["l"="52.29,16.084", "c"=100]
+"yongduosui/CAL" ["l"="52.308,16.117", "c"=100]
 "grf-labs/sufrep" ["l"="43.755,25.705"]
 "google/GeoexperimentsResearch" ["l"="43.696,25.811"]
+"hongzimao/decima-sim" ["l"="63.176,-13.357", "c"=1233]
+"ArchieGertsman/spark-sched-sim" ["l"="43.8,25.248"]
 "timmens/causal-forest" ["l"="43.708,25.725"]
 "bradyneal/realcause" ["l"="43.45,25.562"]
 "divyat09/cate-estimator-selection" ["l"="43.418,25.565"]
 "wt-hu/pyCausalFS" ["l"="43.836,25.386"]
 "kuiy/CausalFS" ["l"="43.805,25.404"]
 "carloscinelli/dml.sensemakr" ["l"="43.528,25.588"]
+"matthewwardrop/formulaic" ["l"="39.056,35.868", "c"=714]
 "Matthias2193/APA" ["l"="43.517,25.649"]
 "phlippe/ENCO" ["l"="43.625,25.37"]
 "causalbench/causalbench" ["l"="43.594,25.366"]
@@ -1698,22 +1856,27 @@ digraph G {
 "DP6/penguin-adinfo" ["l"="43.714,25.905"]
 "DP6/analytics-watcher" ["l"="43.7,25.889"]
 "LUOyk1999/DAGformer" ["l"="43.772,25.267"]
+"arviz-devs/arviz" ["l"="39.209,35.909", "c"=714]
 "JackHCC/Awesome-Uplift-Model" ["l"="43.524,25.559"]
 "zalandoresearch/ACIC23-competition" ["l"="43.534,25.609"]
+"BayesianModelingandComputationInPython/BookCode_Edition1" ["l"="39.169,35.947", "c"=714]
 "rlirey/psmatching" ["l"="43.425,25.687"]
+"zhijing-jin/nlp-phd-global-equality" ["l"="-3.842,23.383", "c"=827]
 "brian-c-ogorman/ABanditTesting" ["l"="43.317,25.86"]
+"pymc-devs/pymc-examples" ["l"="39.152,35.934", "c"=714]
+"scikit-learn-contrib/MAPIE" ["l"="45.278,26.362", "c"=68]
+"practical-data-science/ecommercetools" ["l"="24.801,-28.693", "c"=1455]
 "causalens/cdml-neurips2020" ["l"="43.724,25.366"]
 "paras2612/CauseBox" ["l"="43.499,25.548"]
-"zhijing-jin/nlp-phd-global-equality" ["l"="-3.842,23.383"]
-"zhijing-jin/NLP4SocialGood_Papers" ["l"="-3.778,23.37"]
+"zhijing-jin/NLP4SocialGood_Papers" ["l"="-3.778,23.37", "c"=827]
 "phosseini/CREST" ["l"="43.569,25.449"]
+"vanderschaarlab/mlforhealthlabpub" ["l"="-9.834,12.797", "c"=105]
 "skypea/DAG_No_Fear" ["l"="43.635,25.35"]
-"FrankPortman/bayesAB" ["l"="43.469,25.816"]
 "Vidogreg/bayes-ab-testing" ["l"="43.456,25.846"]
 "DSXiangLi/Paper_CausalInference_abtest" ["l"="43.686,25.537"]
 "xxxiaol/GCI" ["l"="43.487,25.421"]
-"google-marketing-solutions/crystalvalue" ["l"="44.838,15.984"]
-"phlippe/CITRIS" ["l"="49.172,32.479"]
+"google-marketing-solutions/crystalvalue" ["l"="44.838,15.984", "c"=213]
+"phlippe/CITRIS" ["l"="49.172,32.479", "c"=300]
 "google/megalista" ["l"="43.697,25.928"]
 "slavakx/medium_posts" ["l"="43.625,25.802"]
 "Garve/mamimo" ["l"="43.612,25.792"]
@@ -1734,20 +1897,26 @@ digraph G {
 "fooSynaptic/py_pcalg" ["l"="43.74,25.367"]
 "larslorch/dibs" ["l"="43.659,25.348"]
 "DP6/site-speed-dashboard" ["l"="43.714,25.877"]
+"ParabolInc/parabol" ["l"="-0.457,-20.694", "c"=153]
+"SelfExplainML/PiML-Toolbox" ["l"="43.688,26.201", "c"=1179]
 "cmu-phil/py-tetrad" ["l"="43.751,25.427"]
 "bd2kccd/r-causal" ["l"="43.738,25.445"]
-"jtextor/dagitty" ["l"="40.823,35.593"]
-"DataCanvasIO/HyperTS" ["l"="45.418,26.473"]
-"NetManAIOps/CIRCA" ["l"="51.991,14.745"]
-"lei940324/econometrics" ["l"="-5.584,16.872"]
+"jtextor/dagitty" ["l"="40.823,35.593", "c"=51]
+"toddwschneider/nyc-taxi-data" ["l"="41.204,23.93", "c"=76]
+"markdregan/Bayesian-Modelling-in-Python" ["l"="39.287,35.969", "c"=714]
+"DataCanvasIO/HyperTS" ["l"="45.418,26.473", "c"=68]
+"NetManAIOps/CIRCA" ["l"="51.991,14.745", "c"=1096]
+"pydata/patsy" ["l"="39.118,35.867", "c"=714]
+"lei940324/econometrics" ["l"="-5.584,16.872", "c"=316]
 "facebookincubator/LTVision" ["l"="43.715,25.786"]
 "facebookincubator/CommutingZones" ["l"="43.721,25.808"]
 "facebookexperimental/siMMMulator" ["l"="43.706,25.826"]
 "ArturoEsquerra/GeoLift" ["l"="43.701,25.797"]
-"google-marketing-solutions/fractional_uplift" ["l"="44.848,15.943"]
+"google-marketing-solutions/fractional_uplift" ["l"="44.848,15.943", "c"=213]
 "PacktPublishing/Causal-Inference-and-Discovery-in-Python" ["l"="43.707,25.549"]
 "matheusfacure/causal-inference-in-python-code" ["l"="43.738,25.583"]
-"bambinos/bambi" ["l"="39.193,35.923"]
+"imbs-hl/ranger" ["l"="40.452,35.389", "c"=51]
+"bambinos/bambi" ["l"="39.193,35.923", "c"=714]
 "station-10/awesome-marketing-machine-learning" ["l"="43.714,25.764"]
 "transferwise/wise-pizza" ["l"="43.55,25.372"]
 "cmu-phil/example-causal-datasets" ["l"="43.764,25.409"]
@@ -1763,77 +1932,77 @@ digraph G {
 "py-why/pywhy-stats" ["l"="43.633,25.316"]
 "py-why/pywhy-graphs" ["l"="43.646,25.333"]
 "francescomontagna/causally" ["l"="43.643,25.359"]
-"arviz-devs/preliz" ["l"="39.131,35.907"]
-"scikit-learn-contrib/MAPIE" ["l"="45.278,26.362"]
-"pymc-devs/pymc-examples" ["l"="39.152,35.934"]
-"arviz-devs/arviz" ["l"="39.209,35.909"]
-"gsbDBI/ExperimentData" ["l"="43.25,26.616"]
-"synth-inference/synthdid" ["l"="43.254,26.604"]
+"arviz-devs/preliz" ["l"="39.131,35.907", "c"=714]
+"gsbDBI/ExperimentData" ["l"="43.25,26.616", "c"=627]
 "swager/causalForest" ["l"="43.706,25.698"]
 "jhartford/DeepIV" ["l"="43.572,25.558"]
 "demirermert/MLInference" ["l"="43.73,25.703"]
+"antoinejaussoin/retro-board" ["l"="0.871,-29.293", "c"=12]
+"facebookresearch/balance" ["l"="43.624,26.203", "c"=1179]
 "nlapier2/PySensemakr" ["l"="43.494,25.61"]
+"brylevkirill/notes" ["l"="47.928,29.331", "c"=89]
 "zehao-dong/PACE" ["l"="43.782,25.244"]
-"ArchieGertsman/spark-sched-sim" ["l"="43.8,25.248"]
 "causalens/dara" ["l"="43.877,25.539"]
 "causalens/cai-causal-graph" ["l"="43.921,25.537"]
+"pymc-devs/pytensor" ["l"="39.129,35.929", "c"=714]
 "microsoft/csuite" ["l"="43.662,25.407"]
-"zmlin1998/RUN" ["l"="52.001,14.741"]
-"azamikram/rcd" ["l"="51.987,14.757"]
+"zmlin1998/RUN" ["l"="52.001,14.741", "c"=1096]
+"azamikram/rcd" ["l"="51.987,14.757", "c"=1096]
 "py-econometrics/duckreg" ["l"="43.761,25.684"]
-"lrberge/fixest" ["l"="43.247,26.556"]
-"jeffgortmaker/pyhdfe" ["l"="43.096,26.5"]
+"lrberge/fixest" ["l"="43.247,26.556", "c"=627]
+"jeffgortmaker/pyhdfe" ["l"="43.096,26.5", "c"=627]
 "yoonkanglow/Causal-Impact-Analysis-Demo" ["l"="43.601,25.693"]
 "csquires/6.S091-causality" ["l"="43.806,25.343"]
 "salesforce/causalai" ["l"="43.684,25.385"]
-"HazyResearch/spacetime" ["l"="49.011,33.952"]
+"HazyResearch/spacetime" ["l"="49.011,33.952", "c"=556]
 "patrickrchao/DiffusionBasedCausalModels" ["l"="43.568,25.368"]
 "ShaoQiBNU/uplift_model_notes" ["l"="43.457,25.533"]
 "BasisResearch/chirho" ["l"="43.616,25.262"]
-"jax-ml/bayeux" ["l"="21.85,14.186"]
-"probcomp/LLaMPPL" ["l"="-1.739,-41.557"]
+"jax-ml/bayeux" ["l"="21.85,14.186", "c"=267]
+"probcomp/LLaMPPL" ["l"="-1.739,-41.557", "c"=963]
 "ultimate-notion/ultimate-notion" ["l"="44.005,25.322"]
 "PioneersHub/pytanis" ["l"="44.029,25.311"]
-"imbs-hl/ranger" ["l"="40.452,35.389"]
-"MCKnaus/causalML-teaching" ["l"="43.21,26.623"]
+"mckinsey/vizro" ["l"="-0.582,15.766", "c"=268]
+"intuit/wasabi" ["l"="-0.629,-28.051", "c"=12]
+"MCKnaus/causalML-teaching" ["l"="43.21,26.623", "c"=627]
 "apoorvalal/ding_causalInference_python" ["l"="43.812,25.599"]
-"kolesarm/539b" ["l"="43.205,26.594"]
-"borusyak/are213" ["l"="43.166,26.578"]
+"kolesarm/539b" ["l"="43.205,26.594", "c"=627]
+"borusyak/are213" ["l"="43.166,26.578", "c"=627]
+"thu-ml/zhusuan" ["l"="45.851,26.084", "c"=68]
+"salesforce/PyRCA" ["l"="52.005,14.768", "c"=1096]
+"wwrechard/pydlm" ["l"="45.438,26.487", "c"=68]
 "xiongsiheng/TILP" ["l"="43.65,25.09"]
 "xiongsiheng/TEILP" ["l"="43.667,25.09"]
 "usaito/counterfactual-cv" ["l"="43.514,25.53"]
-"vanderschaarlab/mlforhealthlabpub" ["l"="-9.834,12.797"]
 "gulnazaki/counterfactual-benchmark" ["l"="43.516,25.373"]
 "biomedia-mira/counterfactual-contrastive" ["l"="43.49,25.372"]
 "superkaiba/causal-llm-bfs" ["l"="43.68,25.321"]
 "anpwu/Awesome-Causal-LLM" ["l"="43.667,25.261"]
 "eberharf/fges-py" ["l"="43.786,25.416"]
 "giovanniMen/CPCaD-Bench" ["l"="43.785,25.4"]
-"google-marketing-solutions/causmos" ["l"="44.863,15.98"]
+"google-marketing-solutions/causmos" ["l"="44.863,15.98", "c"=213]
 "DP6/roger-watcher" ["l"="43.71,25.867"]
 "jialinlu/SDM-DSE" ["l"="43.768,25.202"]
-"GoogleCloudPlatform/marketing-analytics-jumpstart" ["l"="44.803,16.084"]
-"google-marketing-solutions/gps-sgtm-pantheon" ["l"="44.781,15.993"]
-"containers/ramalama" ["l"="42.155,0.265"]
-"google-marketing-solutions/ga4_dataform" ["l"="44.787,16.041"]
-"google/ga4-gtm-utilities" ["l"="44.761,15.977"]
+"GoogleCloudPlatform/marketing-analytics-jumpstart" ["l"="44.803,16.084", "c"=213]
+"google-marketing-solutions/gps-sgtm-pantheon" ["l"="44.781,15.993", "c"=213]
+"containers/ramalama" ["l"="42.155,0.265", "c"=7]
+"google-marketing-solutions/ga4_dataform" ["l"="44.787,16.041", "c"=213]
+"google/ga4-gtm-utilities" ["l"="44.761,15.977", "c"=213]
+"dswah/pyGAM" ["l"="45.28,26.395", "c"=68]
 "cgevans/scikits-bootstrap" ["l"="43.419,25.794"]
 "facebookarchive/ml_sampler" ["l"="43.412,25.77"]
 "ntstevens/A-B-Testing-and-Beyond" ["l"="43.433,25.813"]
-"bashtage/arch" ["l"="-8.907,12.925"]
+"ermongroup/cs228-notes" ["l"="45.817,26.067", "c"=68]
 "xiongsiheng/TG-LLM" ["l"="43.659,25.113"]
 "xiongsiheng/SWAP" ["l"="43.66,25.15"]
 "MTDJDSP/MT-LIFT" ["l"="43.426,25.495"]
 "wan19990901/Causal-LLM-Paper" ["l"="43.663,25.23"]
 "hebowei2000/revenue_uplift" ["l"="43.421,25.509"]
-"QuantEcon/QuantEcon.py" ["l"="42.757,26.758"]
-"OpenSourceAP/CrossSection" ["l"="-8.724,13.313"]
-"matthewwardrop/formulaic" ["l"="39.056,35.868"]
-"raphaelvallat/pingouin" ["l"="45.23,26.4"]
-"alkaline-ml/pmdarima" ["l"="45.444,26.38"]
-"koaning/scikit-lego" ["l"="45.251,26.324"]
-"statsmodels/statsmodels" ["l"="43.584,23.543"]
-"wwrechard/pydlm" ["l"="45.438,26.487"]
+"christophM/interpretable-ml-book" ["l"="45.264,26.108", "c"=68]
+"QuantEcon/QuantEcon.py" ["l"="42.757,26.758", "c"=1056]
+"alkaline-ml/pmdarima" ["l"="45.444,26.38", "c"=68]
+"statsmodels/statsmodels" ["l"="43.584,23.543", "c"=95]
+"oracle/skater" ["l"="45.264,26.23", "c"=68]
 "chendl02/Awesome-LLM-Causal-Reasoning" ["l"="43.663,25.198"]
 "google/abpackage" ["l"="43.737,25.844"]
 "ijmbarr/reducing-variance-ab-tests" ["l"="43.418,25.835"]

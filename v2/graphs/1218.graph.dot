@@ -1,8 +1,18 @@
 digraph G {
+"ONEARMY/community-platform" -> "OpenLMLab/LOMO" ["e"=1]
+"hendrycks/test" -> "THUDM/LongBench" ["e"=1]
 "lucidrains/compressive-transformer-pytorch" -> "lucidrains/memformer"
+"lucidrains/routing-transformer" -> "lucidrains/compressive-transformer-pytorch" ["e"=1]
 "lucidrains/memory-transformer-xl" -> "lucidrains/memformer"
+"bigscience-workshop/bigscience" -> "jquesnelle/yarn" ["e"=1]
 "lucidrains/memformer" -> "lucidrains/memory-transformer-xl"
 "lucidrains/memformer" -> "lucidrains/compressive-transformer-pytorch"
+"ZhuiyiTechnology/roformer" -> "bojone/rerope" ["e"=1]
+"ofirpress/attention_with_linear_biases" -> "datamllab/LongLM" ["e"=1]
+"lucidrains/PaLM-pytorch" -> "conceptofmind/PaLM" ["e"=1]
+"acl-org/acl-style-files" -> "THUDM/LongBench" ["e"=1]
+"JunnYu/Paddle-AI-Writer" -> "william970/WritingGod" ["e"=1]
+"lucidrains/RETRO-pytorch" -> "lucidrains/memorizing-transformers-pytorch" ["e"=1]
 "lucidrains/memorizing-transformers-pytorch" -> "google-research/meliad"
 "lucidrains/memorizing-transformers-pytorch" -> "lucidrains/memformer"
 "lucidrains/memorizing-transformers-pytorch" -> "lucidrains/block-recurrent-transformer-pytorch"
@@ -23,6 +33,8 @@ digraph G {
 "booydar/recurrent-memory-transformer" -> "Victorwz/LongMem"
 "booydar/recurrent-memory-transformer" -> "crosleythomas/MirrorGPT"
 "booydar/recurrent-memory-transformer" -> "allenai/mmc4" ["e"=1]
+"Eltion/Instagram-SSL-Pinning-Bypass" -> "m1guelpf/threads-re" ["e"=1]
+"yxuansu/SimCTG" -> "Shark-NLP/CoNT" ["e"=1]
 "lucidrains/memory-efficient-attention-pytorch" -> "lucidrains/flash-cosine-sim-attention" ["e"=1]
 "lucidrains/memory-efficient-attention-pytorch" -> "AminRezaei0x443/memory-efficient-attention"
 "lucidrains/memory-efficient-attention-pytorch" -> "lucidrains/memory-compressed-attention"
@@ -34,9 +46,12 @@ digraph G {
 "Shark-NLP/CoNT" -> "OpenLMLab/LEval"
 "Shark-NLP/CoNT" -> "Shark-NLP/EVALM" ["e"=1]
 "Shark-NLP/CoNT" -> "OpenLMLab/LongWanjuan"
+"mingkaid/rl-prompt" -> "Shark-NLP/CoNT" ["e"=1]
 "booydar/LM-RMT" -> "lucidrains/recurrent-memory-transformer-pytorch"
 "booydar/LM-RMT" -> "booydar/recurrent-memory-transformer"
 "txsun1997/nlp-paradigm-shift" -> "open-nlplab/fastIE"
+"facebookresearch/atlas" -> "princeton-nlp/AutoCompressors" ["e"=1]
+"premieroctet/photoshot" -> "google-deepmind/dramatron" ["e"=1]
 "google-deepmind/dramatron" -> "premieroctet/photoshot" ["e"=1]
 "google-deepmind/dramatron" -> "aiwaves-cn/RecurrentGPT"
 "google-deepmind/dramatron" -> "yangkevin2/doc-story-generation"
@@ -45,9 +60,18 @@ digraph G {
 "google-deepmind/dramatron" -> "FrozenBurning/Text2Light" ["e"=1]
 "google-deepmind/dramatron" -> "jbilcke/latent-browser"
 "google-deepmind/dramatron" -> "facebookresearch/doc-storygen-v2"
+"Shark-NLP/DiffuSeq" -> "Shark-NLP/CoNT" ["e"=1]
+"HazyResearch/H3" -> "lucidrains/recurrent-memory-transformer-pytorch" ["e"=1]
+"txsun1997/MOSS" -> "OpenMOSS/CoLLiE" ["e"=1]
+"BlackSamorez/tensor_parallel" -> "jquesnelle/yarn" ["e"=1]
+"BlackSamorez/tensor_parallel" -> "jzhang38/EasyContext" ["e"=1]
+"BlackSamorez/tensor_parallel" -> "DachengLi1/LongChat" ["e"=1]
+"ExtensityAI/symbolicai" -> "jbilcke/latent-browser" ["e"=1]
+"philschmid/deep-learning-pytorch-huggingface" -> "jquesnelle/yarn" ["e"=1]
 "lucidrains/block-recurrent-transformer-pytorch" -> "lucidrains/recurrent-memory-transformer-pytorch"
 "lucidrains/block-recurrent-transformer-pytorch" -> "dashstander/block-recurrent-transformer"
 "lucidrains/block-recurrent-transformer-pytorch" -> "google-research/meliad"
+"dust-tt/dust" -> "jbilcke/latent-browser" ["e"=1]
 "yangkevin2/emnlp22-re3-story-generation" -> "yangkevin2/doc-story-generation"
 "yangkevin2/emnlp22-re3-story-generation" -> "facebookresearch/doc-storygen-v2"
 "yangkevin2/emnlp22-re3-story-generation" -> "yingpengma/Awesome-Story-Generation"
@@ -70,6 +94,12 @@ digraph G {
 "zhongwanjun/MemoryBank-SiliconFriend" -> "choosewhatulike/trainable-agents" ["e"=1]
 "zhongwanjun/MemoryBank-SiliconFriend" -> "wangyu-ustc/MemoryLLM" ["e"=1]
 "zhongwanjun/MemoryBank-SiliconFriend" -> "LeapLabTHU/ExpeL" ["e"=1]
+"SeungyounShin/Llama2-Code-Interpreter" -> "CStanKonrad/long_llama" ["e"=1]
+"techleadhd/chatgpt-retrieval" -> "OpenLMLab/LOMO" ["e"=1]
+"mit-han-lab/streaming-llm" -> "dvlab-research/LongLoRA" ["e"=1]
+"hyperonym/basaran" -> "epfml/landmark-attention" ["e"=1]
+"s-JoL/Open-Llama" -> "conceptofmind/PaLM" ["e"=1]
+"OpenLMLab/GAOKAO-Bench" -> "OpenMOSS/CoLLiE" ["e"=1]
 "ctlllll/LLM-ToolMaker" -> "lupantech/chameleon-llm" ["e"=1]
 "ctlllll/LLM-ToolMaker" -> "billxbf/ReWOO"
 "ctlllll/LLM-ToolMaker" -> "aiwaves-cn/RecurrentGPT"
@@ -85,6 +115,10 @@ digraph G {
 "ctlllll/LLM-ToolMaker" -> "huchenxucs/ChatDB"
 "ctlllll/LLM-ToolMaker" -> "OSU-NLP-Group/Mind2Web" ["e"=1]
 "ctlllll/LLM-ToolMaker" -> "mbzuai-nlp/LaMini-LM" ["e"=1]
+"Liuhong99/Sophia" -> "OpenLMLab/LOMO" ["e"=1]
+"spcl/graph-of-thoughts" -> "dvlab-research/LongLoRA" ["e"=1]
+"RahulSChand/gpu_poor" -> "gkamradt/LLMTest_NeedleInAHaystack" ["e"=1]
+"OpenBuddy/OpenBuddy" -> "bojone/NBCE" ["e"=1]
 "mzbac/qlora-fine-tune" -> "eugenepentland/landmark-attention-qlora"
 "kyegomez/LongNet" -> "CStanKonrad/long_llama"
 "kyegomez/LongNet" -> "fkodom/dilated-attention-pytorch"
@@ -98,6 +132,9 @@ digraph G {
 "kyegomez/LongNet" -> "kyegomez/zeta" ["e"=1]
 "kyegomez/LongNet" -> "Beomi/BitNet-Transformers" ["e"=1]
 "kyegomez/LongNet" -> "microsoft/torchscale" ["e"=1]
+"bublint/ue5-llama-lora" -> "epfml/landmark-attention" ["e"=1]
+"melodysdreamj/WizardVicunaLM" -> "CStanKonrad/long_llama" ["e"=1]
+"melodysdreamj/WizardVicunaLM" -> "epfml/landmark-attention" ["e"=1]
 "aiwaves-cn/RecurrentGPT" -> "jackaduma/Recurrent-LLM"
 "aiwaves-cn/RecurrentGPT" -> "ctlllll/LLM-ToolMaker"
 "aiwaves-cn/RecurrentGPT" -> "femnn/RecurrentGPT-zh"
@@ -158,6 +195,8 @@ digraph G {
 "billxbf/ReWOO" -> "CStanKonrad/long_llama"
 "billxbf/ReWOO" -> "web-arena-x/webarena" ["e"=1]
 "billxbf/ReWOO" -> "101dotxyz/GPTeam" ["e"=1]
+"xverse-ai/XVERSE-13B" -> "bojone/bytepiece" ["e"=1]
+"KudoAI/chatgpt.js" -> "junhoyeo/threads-api" ["e"=1]
 "bojone/bytepiece" -> "bojone/rerope"
 "bojone/bytepiece" -> "bojone/NBCE"
 "bojone/bytepiece" -> "GanjinZero/RRHF" ["e"=1]
@@ -220,6 +259,8 @@ digraph G {
 "m1guelpf/threads-re" -> "Eltion/Instagram-SSL-Pinning-Bypass" ["e"=1]
 "m1guelpf/threads-re" -> "threadsjs/threads.js"
 "m1guelpf/threads-re" -> "dmytrostriletskyi/threads-net"
+"Shark-NLP/OpenICL" -> "OpenLMLab/LEval" ["e"=1]
+"Shark-NLP/OpenICL" -> "Shark-NLP/CoNT" ["e"=1]
 "epfml/landmark-attention" -> "eugenepentland/landmark-attention-qlora"
 "epfml/landmark-attention" -> "Victorwz/LongMem"
 "epfml/landmark-attention" -> "dwzhu-pku/PoSE"
@@ -290,6 +331,12 @@ digraph G {
 "CStanKonrad/long_llama" -> "abacusai/Long-Context"
 "CStanKonrad/long_llama" -> "AetherCortex/Llama-X" ["e"=1]
 "CStanKonrad/long_llama" -> "ctlllll/LLM-ToolMaker"
+"InteractiveNLP-Team/RoleLLM-public" -> "yingpengma/Awesome-Story-Generation" ["e"=1]
+"XueFuzhao/OpenMoE" -> "jquesnelle/yarn" ["e"=1]
+"XueFuzhao/OpenMoE" -> "FranxYao/Long-Context-Data-Engineering" ["e"=1]
+"haoliuhl/ringattention" -> "jzhang38/EasyContext" ["e"=1]
+"techwithtim/Price-Tracking-Web-Scraper" -> "dmytrostriletskyi/threads-net" ["e"=1]
+"princeton-nlp/MeZO" -> "OpenLMLab/LOMO" ["e"=1]
 "princeton-nlp/AutoCompressors" -> "getao/icae"
 "princeton-nlp/AutoCompressors" -> "jayelm/gisting"
 "princeton-nlp/AutoCompressors" -> "princeton-nlp/CEPE"
@@ -336,6 +383,14 @@ digraph G {
 "huchenxucs/ChatDB" -> "RUCKBReasoning/RESDSQL" ["e"=1]
 "huchenxucs/ChatDB" -> "CStanKonrad/long_llama"
 "huchenxucs/ChatDB" -> "billxbf/ReWOO"
+"marella/chatdocs" -> "eugenepentland/landmark-attention-qlora" ["e"=1]
+"marella/ctransformers" -> "jquesnelle/yarn" ["e"=1]
+"bazingagin/npc_gzip" -> "CStanKonrad/long_llama" ["e"=1]
+"dgarnitz/vectorflow" -> "abacusai/Long-Context" ["e"=1]
+"premAI-io/state-of-open-source-ai" -> "dvlab-research/LongLoRA" ["e"=1]
+"the-crypt-keeper/can-ai-code" -> "mzbac/qlora-fine-tune" ["e"=1]
+"epfLLM/Megatron-LLM" -> "jzhang38/EasyContext" ["e"=1]
+"lupantech/chameleon-llm" -> "ctlllll/LLM-ToolMaker" ["e"=1]
 "abertsch72/unlimiformer" -> "CStanKonrad/long_llama"
 "abertsch72/unlimiformer" -> "epfml/landmark-attention"
 "abertsch72/unlimiformer" -> "Victorwz/LongMem"
@@ -351,6 +406,11 @@ digraph G {
 "abertsch72/unlimiformer" -> "lucidrains/MEGABYTE-pytorch" ["e"=1]
 "abertsch72/unlimiformer" -> "conceptofmind/PaLM"
 "abertsch72/unlimiformer" -> "kyegomez/LongNet"
+"princeton-nlp/ALCE" -> "nelson-liu/lost-in-the-middle" ["e"=1]
+"princeton-nlp/ALCE" -> "princeton-nlp/AutoCompressors" ["e"=1]
+"Xwin-LM/Xwin-LM" -> "jquesnelle/yarn" ["e"=1]
+"replit/ReplitLM" -> "salesforce/xgen" ["e"=1]
+"jncraton/languagemodels" -> "OpenLMLab/LOMO" ["e"=1]
 "DachengLi1/LongChat" -> "OpenLMLab/LEval"
 "DachengLi1/LongChat" -> "THUDM/LongBench"
 "DachengLi1/LongChat" -> "CStanKonrad/long_llama"
@@ -366,6 +426,7 @@ digraph G {
 "DachengLi1/LongChat" -> "THUDM/LongAlign"
 "DachengLi1/LongChat" -> "bojone/NBCE"
 "DachengLi1/LongChat" -> "FMInference/H2O" ["e"=1]
+"airaria/Visual-Chinese-LLaMA-Alpaca" -> "bojone/bytepiece" ["e"=1]
 "jackaduma/Recurrent-LLM" -> "aiwaves-cn/RecurrentGPT"
 "jackaduma/Recurrent-LLM" -> "william970/WritingGod"
 "yingpengma/Awesome-Story-Generation" -> "facebookresearch/doc-storygen-v2"
@@ -380,19 +441,40 @@ digraph G {
 "yingpengma/Awesome-Story-Generation" -> "vaew/SkyScript-100M"
 "yingpengma/Awesome-Story-Generation" -> "jackaduma/Recurrent-LLM"
 "yingpengma/Awesome-Story-Generation" -> "datacrystals/AIStoryWriter"
+"jondurbin/airoboros" -> "jquesnelle/yarn" ["e"=1]
 "dmytrostriletskyi/threads-net" -> "threadsjs/threads.js"
 "dmytrostriletskyi/threads-net" -> "junhoyeo/threads-api"
 "dmytrostriletskyi/threads-net" -> "Danie1/threads-api"
 "dmytrostriletskyi/threads-net" -> "m1guelpf/threads-re"
 "dmytrostriletskyi/threads-net" -> "junhoyeo/react-threads"
 "dmytrostriletskyi/threads-net" -> "kyegomez/LongNet"
+"AIoT-MLSys-Lab/Efficient-LLMs-Survey" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["e"=1]
+"kennethleungty/Llama-2-Open-Source-LLM-CPU-Inference" -> "CStanKonrad/long_llama" ["e"=1]
+"ECNU-ICALK/EduChat" -> "THUDM/LongBench" ["e"=1]
+"salesforce/CodeTF" -> "ctlllll/LLM-ToolMaker" ["e"=1]
+"salesforce/CodeTF" -> "salesforce/xgen" ["e"=1]
+"dttung2905/kafka-in-production" -> "kyegomez/LongNet" ["e"=1]
 "OpenLMLab/ChatZoo" -> "OpenLMLab/LongWanjuan"
+"alibaba/Megatron-LLaMA" -> "jzhang38/EasyContext" ["e"=1]
+"OpenGVLab/GITM" -> "ctlllll/LLM-ToolMaker" ["e"=1]
+"rmihaylov/falcontune" -> "epfml/landmark-attention" ["e"=1]
+"rmihaylov/falcontune" -> "eugenepentland/landmark-attention-qlora" ["e"=1]
+"rmihaylov/falcontune" -> "Victorwz/LongMem" ["e"=1]
+"HazyResearch/safari" -> "lucidrains/recurrent-memory-transformer-pytorch" ["e"=1]
+"HazyResearch/safari" -> "lucidrains/block-recurrent-transformer-pytorch" ["e"=1]
+"Gentopia-AI/Gentopia" -> "billxbf/ReWOO" ["e"=1]
+"ruixiangcui/AGIEval" -> "THUDM/LongBench" ["e"=1]
 "bojone/NBCE" -> "bojone/rerope"
 "bojone/NBCE" -> "AI21Labs/Parallel-Context-Windows"
 "bojone/NBCE" -> "OpenBuddy/OpenBuddy" ["e"=1]
 "bojone/NBCE" -> "bojone/bytepiece"
 "bojone/NBCE" -> "DachengLi1/LongChat"
 "bojone/NBCE" -> "HazyResearch/TART"
+"haonan-li/CMMLU" -> "THUDM/LongBench" ["e"=1]
+"Yifan-Song793/RestGPT" -> "dwzhu-pku/PoSE" ["e"=1]
+"FMInference/H2O" -> "THUDM/LongBench" ["e"=1]
+"FMInference/H2O" -> "nightdessert/Retrieval_Head" ["e"=1]
+"FMInference/H2O" -> "OpenBMB/InfiniteBench" ["e"=1]
 "georgesung/llm_qlora" -> "mzbac/qlora-fine-tune"
 "abacusai/Long-Context" -> "DachengLi1/LongChat"
 "abacusai/Long-Context" -> "FranxYao/Long-Context-Data-Engineering"
@@ -404,6 +486,10 @@ digraph G {
 "abacusai/Long-Context" -> "datamllab/LongLM"
 "abacusai/Long-Context" -> "HKUNLP/ChunkLlama"
 "abacusai/Long-Context" -> "jshuadvd/LongRoPE"
+"mbzuai-nlp/LaMini-LM" -> "ctlllll/LLM-ToolMaker" ["e"=1]
+"mbzuai-nlp/LaMini-LM" -> "OpenLMLab/LOMO" ["e"=1]
+"mbzuai-nlp/LaMini-LM" -> "HazyResearch/TART" ["e"=1]
+"sail-sg/lorahub" -> "epfml/landmark-attention" ["e"=1]
 "bojone/rerope" -> "DachengLi1/LongChat"
 "bojone/rerope" -> "bojone/NBCE"
 "bojone/rerope" -> "Glaciohound/LM-Infinite"
@@ -419,6 +505,7 @@ digraph G {
 "lucidrains/recurrent-memory-transformer-pytorch" -> "lucidrains/st-moe-pytorch" ["e"=1]
 "lucidrains/recurrent-memory-transformer-pytorch" -> "lucidrains/ring-attention-pytorch" ["e"=1]
 "lucidrains/recurrent-memory-transformer-pytorch" -> "lucidrains/memformer"
+"cubenlp/ChatSQL" -> "huchenxucs/ChatDB" ["e"=1]
 "Danie1/threads-api" -> "junhoyeo/threads-py"
 "liyucheng09/Selective_Context" -> "princeton-nlp/AutoCompressors"
 "liyucheng09/Selective_Context" -> "getao/icae"
@@ -448,6 +535,7 @@ digraph G {
 "jayelm/gisting" -> "FasterDecoding/SnapKV" ["e"=1]
 "jayelm/gisting" -> "FMInference/H2O" ["e"=1]
 "jayelm/gisting" -> "getao/icae"
+"lucidrains/st-moe-pytorch" -> "lucidrains/recurrent-memory-transformer-pytorch" ["e"=1]
 "threadsjs/threads.js" -> "dmytrostriletskyi/threads-net"
 "threadsjs/threads.js" -> "junhoyeo/threads-api"
 "threadsjs/threads.js" -> "m1guelpf/threads-re"
@@ -462,8 +550,14 @@ digraph G {
 "dwzhu-pku/PoSE" -> "F2-Song/ICDPO"
 "fkodom/dilated-attention-pytorch" -> "alexisrozhkov/dilated-self-attention"
 "alexisrozhkov/dilated-self-attention" -> "fkodom/dilated-attention-pytorch"
+"FasterDecoding/SnapKV" -> "nightdessert/Retrieval_Head" ["e"=1]
+"vectara/hallucination-leaderboard" -> "gkamradt/LLMTest_NeedleInAHaystack" ["e"=1]
+"open-compass/MixtralKit" -> "HKUNLP/ChunkLlama" ["e"=1]
 "Strivin0311/llms-learning" -> "NJUDeepEngine/llm-course-lecture"
 "Strivin0311/llms-learning" -> "NJUDeepEngine/open-llm-assignments"
+"choosewhatulike/trainable-agents" -> "zhongwanjun/MemoryBank-SiliconFriend" ["e"=1]
+"jzhang38/LongMamba" -> "princeton-nlp/ProLong" ["e"=1]
+"jzhang38/LongMamba" -> "princeton-nlp/HELMET" ["e"=1]
 "gkamradt/LLMTest_NeedleInAHaystack" -> "THUDM/LongBench"
 "gkamradt/LLMTest_NeedleInAHaystack" -> "NVIDIA/RULER"
 "gkamradt/LLMTest_NeedleInAHaystack" -> "FranxYao/Long-Context-Data-Engineering"
@@ -479,8 +573,16 @@ digraph G {
 "gkamradt/LLMTest_NeedleInAHaystack" -> "OpenRLHF/OpenRLHF" ["e"=1]
 "gkamradt/LLMTest_NeedleInAHaystack" -> "FranxYao/chain-of-thought-hub" ["e"=1]
 "gkamradt/LLMTest_NeedleInAHaystack" -> "nelson-liu/lost-in-the-middle"
+"xianshang33/llm-paper-daily" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["e"=1]
 "microsoft/FILM" -> "princeton-nlp/ProLong"
 "microsoft/FILM" -> "dwzhu-pku/PoSE"
+"lmmlzn/Awesome-LLMs-Datasets" -> "THUDM/LongBench" ["e"=1]
+"THUDM/AlignBench" -> "THUDM/LongBench" ["e"=1]
+"myshell-ai/JetMoE" -> "FranxYao/Long-Context-Data-Engineering" ["e"=1]
+"myshell-ai/JetMoE" -> "jzhang38/EasyContext" ["e"=1]
+"wxywb/history_rag" -> "liwenju0/cutword" ["e"=1]
+"multimodal-art-projection/MAP-NEO" -> "jzhang38/EasyContext" ["e"=1]
+"feifeibear/long-context-attention" -> "jzhang38/EasyContext" ["e"=1]
 "NVIDIA/RULER" -> "THUDM/LongBench"
 "NVIDIA/RULER" -> "jzhang38/EasyContext"
 "NVIDIA/RULER" -> "OpenBMB/InfiniteBench"
@@ -496,11 +598,14 @@ digraph G {
 "NVIDIA/RULER" -> "THUDM/LongAlign"
 "NVIDIA/RULER" -> "mit-han-lab/duo-attention" ["e"=1]
 "NVIDIA/RULER" -> "HKUNLP/ChunkLlama"
+"huggingface/optimum-nvidia" -> "tomaarsen/attention_sinks" ["e"=1]
 "liwenju0/cutword" -> "bojone/bytepiece"
 "liwenju0/cutword" -> "liangwq/Chatglm_lora_multi-gpu" ["e"=1]
 "liwenju0/cutword" -> "27182812/ChatGLM-LLaMA-chinese-insturct" ["e"=1]
 "liwenju0/cutword" -> "WangRongsheng/Aurora" ["e"=1]
+"microsoft/rho" -> "FranxYao/Long-Context-Data-Engineering" ["e"=1]
 "TIGER-AI-Lab/LongICLBench" -> "google-deepmind/loft"
+"XuezheMax/megalodon" -> "Beomi/InfiniTransformer" ["e"=1]
 "mustafaaljadery/gemma-2B-10M" -> "Beomi/InfiniTransformer"
 "mustafaaljadery/gemma-2B-10M" -> "jgravelle/AutoGroq" ["e"=1]
 "mustafaaljadery/gemma-2B-10M" -> "microsoft/Samba" ["e"=1]
@@ -509,10 +614,14 @@ digraph G {
 "mustafaaljadery/gemma-2B-10M" -> "jzhang38/EasyContext"
 "mustafaaljadery/gemma-2B-10M" -> "ai-ng/2txt" ["e"=1]
 "mustafaaljadery/gemma-2B-10M" -> "datamllab/LongLM"
+"lucidrains/ring-attention-pytorch" -> "jzhang38/EasyContext" ["e"=1]
+"lucidrains/ring-attention-pytorch" -> "lucidrains/recurrent-memory-transformer-pytorch" ["e"=1]
+"jiaweizzhao/GaLore" -> "OpenLMLab/LOMO" ["e"=1]
 "princeton-nlp/CEPE" -> "princeton-nlp/ProLong"
 "princeton-nlp/CEPE" -> "jeffreysijuntan/lloco"
 "princeton-nlp/CEPE" -> "princeton-nlp/AutoCompressors"
 "princeton-nlp/CEPE" -> "snu-mllab/Context-Memory"
+"jxzhangjhu/Awesome-LLM-RAG" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["e"=1]
 "OpenBMB/InfiniteBench" -> "THUDM/LongBench"
 "OpenBMB/InfiniteBench" -> "bigai-nlco/LooGLE"
 "OpenBMB/InfiniteBench" -> "princeton-nlp/ProLong"
@@ -528,6 +637,15 @@ digraph G {
 "OpenBMB/InfiniteBench" -> "FranxYao/Long-Context-Data-Engineering"
 "OpenBMB/InfiniteBench" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
 "OpenBMB/InfiniteBench" -> "HKUNLP/ChunkLlama"
+"S-LoRA/S-LoRA" -> "dvlab-research/LongLoRA" ["e"=1]
+"Tebmer/Awesome-Knowledge-Distillation-of-LLMs" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["e"=1]
+"zhuzilin/ring-flash-attention" -> "jzhang38/EasyContext" ["e"=1]
+"thunlp/InfLLM" -> "OpenBMB/InfiniteBench" ["e"=1]
+"thunlp/InfLLM" -> "HKUNLP/ChunkLlama" ["e"=1]
+"thunlp/InfLLM" -> "datamllab/LongLM" ["e"=1]
+"thunlp/InfLLM" -> "Glaciohound/LM-Infinite" ["e"=1]
+"thunlp/InfLLM" -> "THUDM/LongBench" ["e"=1]
+"thunlp/InfLLM" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["e"=1]
 "FranxYao/Long-Context-Data-Engineering" -> "princeton-nlp/ProLong"
 "FranxYao/Long-Context-Data-Engineering" -> "jzhang38/EasyContext"
 "FranxYao/Long-Context-Data-Engineering" -> "bigai-nlco/LooGLE"
@@ -580,6 +698,7 @@ digraph G {
 "Strivin0311/long-llms-learning" -> "OpenBMB/InfiniteBench"
 "Strivin0311/long-llms-learning" -> "HKUNLP/ChunkLlama"
 "Strivin0311/long-llms-learning" -> "feifeibear/long-context-attention" ["e"=1]
+"Avdpro/ai2apps" -> "jackaduma/Recurrent-LLM" ["e"=1]
 "Beomi/InfiniTransformer" -> "dingo-actual/infini-transformer"
 "Beomi/InfiniTransformer" -> "jlamprou/Infini-Attention"
 "Beomi/InfiniTransformer" -> "FranxYao/Long-Context-Data-Engineering"
@@ -592,6 +711,9 @@ digraph G {
 "dingo-actual/infini-transformer" -> "Beomi/InfiniTransformer"
 "dingo-actual/infini-transformer" -> "vmarinowski/infini-attention"
 "dingo-actual/infini-transformer" -> "kyegomez/Infini-attention"
+"fanqiwan/FuseAI" -> "HKUNLP/ChunkLlama" ["e"=1]
+"fanqiwan/FuseAI" -> "FranxYao/Long-Context-Data-Engineering" ["e"=1]
+"THUDM/AgentTuning" -> "dvlab-research/LongLoRA" ["e"=1]
 "nuster1128/LLM_Agent_Memory_Survey" -> "zhongwanjun/MemoryBank-SiliconFriend"
 "snap-research/locomo" -> "xiaowu0162/LongMemEval"
 "THUDM/LongAlign" -> "THUDM/LongBench"
@@ -605,6 +727,10 @@ digraph G {
 "THUDM/LongAlign" -> "FranxYao/Long-Context-Data-Engineering"
 "THUDM/LongAlign" -> "jshuadvd/LongRoPE"
 "THUDM/LongAlign" -> "zhuzilin/ring-flash-attention" ["e"=1]
+"LLaMafia/llamafia.github" -> "FranxYao/Long-Context-Data-Engineering" ["e"=1]
+"mistralai/megablocks-public" -> "jquesnelle/yarn" ["e"=1]
+"google-deepmind/long-form-factuality" -> "google-deepmind/loft" ["e"=1]
+"HIT-SCIR/Chinese-Mixtral-8x7B" -> "bojone/bytepiece" ["e"=1]
 "jzhang38/EasyContext" -> "zhuzilin/ring-flash-attention" ["e"=1]
 "jzhang38/EasyContext" -> "feifeibear/long-context-attention" ["e"=1]
 "jzhang38/EasyContext" -> "FranxYao/Long-Context-Data-Engineering"
@@ -653,6 +779,15 @@ digraph G {
 "bigai-nlco/LooGLE" -> "princeton-nlp/ProLong"
 "snu-mllab/Context-Memory" -> "snu-mllab/Neural-Relation-Graph" ["e"=1]
 "zhiyuanhubj/UoT" -> "zhiyuanhubj/LongRecipe"
+"THUDM/LongWriter" -> "THUDM/LongBench" ["e"=1]
+"THUDM/LongWriter" -> "THUDM/LongAlign" ["e"=1]
+"THUDM/LongWriter" -> "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["e"=1]
+"THUDM/LongWriter" -> "dvlab-research/LongLoRA" ["e"=1]
+"THUDM/LongWriter" -> "THUDM/LongCite" ["e"=1]
+"THUDM/LongWriter" -> "jquesnelle/yarn" ["e"=1]
+"LiveBench/LiveBench" -> "THUDM/LongBench" ["e"=1]
+"duoyang666/ai_novel" -> "jackaduma/Recurrent-LLM" ["e"=1]
+"microsoft/Samba" -> "datamllab/LongLM" ["e"=1]
 "xiaowu0162/LongMemEval" -> "snap-research/locomo"
 "HKUNLP/STRING" -> "Shark-NLP/CoNT"
 "datacrystals/AIStoryWriter" -> "GOAT-AI-lab/GOAT-Storytelling-Agent"
@@ -661,6 +796,8 @@ digraph G {
 "princeton-nlp/HELMET" -> "google-deepmind/loft"
 "princeton-nlp/HELMET" -> "princeton-pli/LongProc"
 "princeton-nlp/HELMET" -> "nightdessert/Retrieval_Head"
+"thunlp/LLMxMapReduce" -> "OpenBMB/InfiniteBench" ["e"=1]
+"mit-han-lab/duo-attention" -> "nightdessert/Retrieval_Head" ["e"=1]
 "google-deepmind/loft" -> "princeton-nlp/HELMET"
 "google-deepmind/loft" -> "TIGER-AI-Lab/LongICLBench"
 "google-deepmind/loft" -> "zexuanqiu/CLongEval"
@@ -689,21 +826,39 @@ digraph G {
 "tengxiaoliu/LM_skip" -> "ayyyq/DORE"
 "OpenMOSS/Thus-Spake-Long-Context-LLM" -> "OpenLMLab/scaling-rope"
 "OpenMOSS/Thus-Spake-Long-Context-LLM" -> "tengxiaoliu/LM_skip"
+"OpenMOSS/SpeechGPT-2.0-preview" -> "OpenMOSS/Thus-Spake-Long-Context-LLM" ["e"=1]
+"LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling" -> "princeton-nlp/ProLong" ["e"=1]
 "KaiLv69/DuoDecoding" -> "ayyyq/DORE"
+"ONEARMY/community-platform" ["l"="-11.449,16.977", "c"=978]
+"OpenLMLab/LOMO" ["l"="37.925,-1.483"]
+"hendrycks/test" ["l"="37.304,-0.164", "c"=126]
+"THUDM/LongBench" ["l"="38.005,-1.432"]
 "lucidrains/compressive-transformer-pytorch" ["l"="37.944,-1.659"]
 "lucidrains/memformer" ["l"="37.966,-1.65"]
+"lucidrains/routing-transformer" ["l"="48.77,33.947", "c"=556]
 "lucidrains/memory-transformer-xl" ["l"="37.962,-1.68"]
+"bigscience-workshop/bigscience" ["l"="38.713,-0.522", "c"=39]
+"jquesnelle/yarn" ["l"="38.005,-1.472"]
+"ZhuiyiTechnology/roformer" ["l"="53.418,27.095", "c"=60]
+"bojone/rerope" ["l"="38.066,-1.449"]
+"ofirpress/attention_with_linear_biases" ["l"="46.396,30.317", "c"=367]
+"datamllab/LongLM" ["l"="37.948,-1.425"]
+"lucidrains/PaLM-pytorch" ["l"="-5.186,-23.312", "c"=164]
+"conceptofmind/PaLM" ["l"="38.012,-1.565"]
+"acl-org/acl-style-files" ["l"="36.749,-2.579", "c"=797]
+"JunnYu/Paddle-AI-Writer" ["l"="45.932,-2.066", "c"=410]
+"william970/WritingGod" ["l"="38.084,-1.727"]
+"lucidrains/RETRO-pytorch" ["l"="-5.216,-23.353", "c"=164]
 "lucidrains/memorizing-transformers-pytorch" ["l"="37.965,-1.611"]
 "google-research/meliad" ["l"="37.925,-1.628"]
 "lucidrains/block-recurrent-transformer-pytorch" ["l"="37.937,-1.606"]
-"lucidrains/RETRO-pytorch" ["l"="-5.216,-23.353"]
 "lucidrains/memory-efficient-attention-pytorch" ["l"="37.902,-1.663"]
 "CStanKonrad/long_llama" ["l"="38.013,-1.527"]
-"lucidrains/simple-hierarchical-transformer" ["l"="40.509,1.529"]
+"lucidrains/simple-hierarchical-transformer" ["l"="40.509,1.529", "c"=7]
 "Victorwz/LongMem" ["l"="38.048,-1.571"]
 "epfml/landmark-attention" ["l"="38.036,-1.5"]
-"princeton-nlp/TRIME" ["l"="36.984,-2.623"]
-"ArvinZhuang/DSI-transformers" ["l"="54.42,25.668"]
+"princeton-nlp/TRIME" ["l"="36.984,-2.623", "c"=797]
+"ArvinZhuang/DSI-transformers" ["l"="54.42,25.668", "c"=439]
 "booydar/recurrent-memory-transformer" ["l"="38.077,-1.555"]
 "booydar/LM-RMT" ["l"="38.041,-1.548"]
 "lucidrains/recurrent-memory-transformer-pytorch" ["l"="37.996,-1.591"]
@@ -711,38 +866,52 @@ digraph G {
 "abertsch72/unlimiformer" ["l"="38.06,-1.534"]
 "yurakuratov/t5-experiments" ["l"="38.108,-1.577"]
 "crosleythomas/MirrorGPT" ["l"="38.125,-1.591"]
-"allenai/mmc4" ["l"="49.046,30.301"]
-"lucidrains/flash-cosine-sim-attention" ["l"="21.882,13.835"]
+"allenai/mmc4" ["l"="49.046,30.301", "c"=191]
+"Eltion/Instagram-SSL-Pinning-Bypass" ["l"="38.004,33.888", "c"=511]
+"m1guelpf/threads-re" ["l"="38.281,-1.548"]
+"yxuansu/SimCTG" ["l"="53.445,26.109", "c"=172]
+"Shark-NLP/CoNT" ["l"="37.917,-1.401"]
+"lucidrains/flash-cosine-sim-attention" ["l"="21.882,13.835", "c"=267]
 "AminRezaei0x443/memory-efficient-attention" ["l"="37.857,-1.711"]
 "lucidrains/memory-compressed-attention" ["l"="37.868,-1.679"]
 "Birch-san/diffusers-play" ["l"="37.833,-1.734"]
-"Shark-NLP/CoNT" ["l"="37.917,-1.401"]
 "HKUNLP/STRING" ["l"="37.918,-1.419"]
 "OpenLMLab/LEval" ["l"="37.982,-1.424"]
-"Shark-NLP/EVALM" ["l"="36.839,-2.423"]
+"Shark-NLP/EVALM" ["l"="36.839,-2.423", "c"=797]
 "OpenLMLab/LongWanjuan" ["l"="37.878,-1.375"]
+"mingkaid/rl-prompt" ["l"="36.895,-2.575", "c"=797]
 "txsun1997/nlp-paradigm-shift" ["l"="37.795,-1.388"]
 "open-nlplab/fastIE" ["l"="37.829,-1.392"]
+"facebookresearch/atlas" ["l"="54.454,25.579", "c"=439]
+"princeton-nlp/AutoCompressors" ["l"="38.083,-1.46"]
+"premieroctet/photoshot" ["l"="-3.312,-30.372", "c"=4]
 "google-deepmind/dramatron" ["l"="37.999,-1.771"]
-"premieroctet/photoshot" ["l"="-3.312,-30.372"]
 "aiwaves-cn/RecurrentGPT" ["l"="38.041,-1.672"]
 "yangkevin2/doc-story-generation" ["l"="38.034,-1.752"]
-"gtoxlili/wechat-chatGPT" ["l"="43.669,1.33"]
-"riffusion/riffusion-app-hobby" ["l"="38.762,1.98"]
-"FrozenBurning/Text2Light" ["l"="64.218,3.61"]
+"gtoxlili/wechat-chatGPT" ["l"="43.669,1.33", "c"=135]
+"riffusion/riffusion-app-hobby" ["l"="38.762,1.98", "c"=54]
+"FrozenBurning/Text2Light" ["l"="64.218,3.61", "c"=49]
 "jbilcke/latent-browser" ["l"="37.971,-1.82"]
 "facebookresearch/doc-storygen-v2" ["l"="38.03,-1.779"]
+"Shark-NLP/DiffuSeq" ["l"="46.015,30.706", "c"=367]
+"HazyResearch/H3" ["l"="49.075,34.008", "c"=556]
+"txsun1997/MOSS" ["l"="36.802,-2.539", "c"=797]
+"OpenMOSS/CoLLiE" ["l"="37.88,-1.402"]
+"BlackSamorez/tensor_parallel" ["l"="38.862,-0.413", "c"=39]
+"jzhang38/EasyContext" ["l"="37.968,-1.438"]
+"DachengLi1/LongChat" ["l"="38.027,-1.456"]
+"ExtensityAI/symbolicai" ["l"="41.583,-3.752", "c"=146]
+"philschmid/deep-learning-pytorch-huggingface" ["l"="37.099,-0.435", "c"=126]
 "dashstander/block-recurrent-transformer" ["l"="37.888,-1.615"]
+"dust-tt/dust" ["l"="41.457,-3.717", "c"=146]
 "yangkevin2/emnlp22-re3-story-generation" ["l"="38.053,-1.779"]
 "yingpengma/Awesome-Story-Generation" ["l"="38.066,-1.752"]
 "ayyyq/DORE" ["l"="37.745,-1.34"]
 "KaiLv69/DuoDecoding" ["l"="37.728,-1.333"]
-"conceptofmind/PaLM" ["l"="38.012,-1.565"]
-"s-JoL/Open-Llama" ["l"="39.123,-2.289"]
-"lucidrains/PaLM-pytorch" ["l"="-5.186,-23.312"]
-"neuml/txtinstruct" ["l"="-33.992,16.084"]
-"colonelwatch/abstracts-search" ["l"="41.394,1.385"]
-"rmihaylov/falcontune" ["l"="42.563,-1.963"]
+"s-JoL/Open-Llama" ["l"="39.123,-2.289", "c"=202]
+"neuml/txtinstruct" ["l"="-33.992,16.084", "c"=996]
+"colonelwatch/abstracts-search" ["l"="41.394,1.385", "c"=7]
+"rmihaylov/falcontune" ["l"="42.563,-1.963", "c"=1097]
 "alasdairforsythe/tokenmonster" ["l"="37.959,-1.535"]
 "zhongwanjun/MemoryBank-SiliconFriend" ["l"="38.109,-1.636"]
 "nuster1128/LLM_Agent_Memory_Survey" ["l"="38.132,-1.666"]
@@ -750,224 +919,273 @@ digraph G {
 "LuJunru/MemoChat" ["l"="38.108,-1.667"]
 "leolee99/LD-Agent" ["l"="38.143,-1.643"]
 "wbbeyourself/SCM4LLMs" ["l"="38.094,-1.599"]
-"choosewhatulike/trainable-agents" ["l"="39.187,-1.626"]
-"wangyu-ustc/MemoryLLM" ["l"="65.195,3.429"]
-"LeapLabTHU/ExpeL" ["l"="49.317,32.967"]
+"choosewhatulike/trainable-agents" ["l"="39.187,-1.626", "c"=202]
+"wangyu-ustc/MemoryLLM" ["l"="65.195,3.429", "c"=49]
+"LeapLabTHU/ExpeL" ["l"="49.317,32.967", "c"=401]
+"SeungyounShin/Llama2-Code-Interpreter" ["l"="40.868,-3.868", "c"=146]
+"techleadhd/chatgpt-retrieval" ["l"="41.036,-3.799", "c"=146]
+"mit-han-lab/streaming-llm" ["l"="38.853,-0.645", "c"=39]
+"dvlab-research/LongLoRA" ["l"="37.983,-1.5"]
+"hyperonym/basaran" ["l"="42.536,-1.989", "c"=1097]
+"OpenLMLab/GAOKAO-Bench" ["l"="38.987,-2.201", "c"=202]
 "ctlllll/LLM-ToolMaker" ["l"="38.024,-1.604"]
-"lupantech/chameleon-llm" ["l"="36.795,-2.439"]
+"lupantech/chameleon-llm" ["l"="36.795,-2.439", "c"=797]
 "billxbf/ReWOO" ["l"="38.019,-1.635"]
-"thunlp/ToolLearningPapers" ["l"="36.759,-2.419"]
-"salesforce/CodeTF" ["l"="36.153,-0.162"]
-"kyegomez/tree-of-thoughts" ["l"="36.576,-2.223"]
-"lyuchenyang/Macaw-LLM" ["l"="47.559,29.998"]
+"thunlp/ToolLearningPapers" ["l"="36.759,-2.419", "c"=797]
+"salesforce/CodeTF" ["l"="36.153,-0.162", "c"=315]
+"kyegomez/tree-of-thoughts" ["l"="36.576,-2.223", "c"=797]
+"lyuchenyang/Macaw-LLM" ["l"="47.559,29.998", "c"=254]
 "salesforce/xgen" ["l"="37.98,-1.554"]
-"IBM/Dromedary" ["l"="37.245,-0.171"]
-"OpenBMB/ToolBench" ["l"="36.72,-2.262"]
+"IBM/Dromedary" ["l"="37.245,-0.171", "c"=126]
+"OpenBMB/ToolBench" ["l"="36.72,-2.262", "c"=797]
 "huchenxucs/ChatDB" ["l"="38.05,-1.616"]
-"OSU-NLP-Group/Mind2Web" ["l"="36.785,-1.508"]
-"mbzuai-nlp/LaMini-LM" ["l"="37.256,-0.058"]
+"OSU-NLP-Group/Mind2Web" ["l"="36.785,-1.508", "c"=795]
+"mbzuai-nlp/LaMini-LM" ["l"="37.256,-0.058", "c"=126]
+"Liuhong99/Sophia" ["l"="48.818,32.958", "c"=401]
+"spcl/graph-of-thoughts" ["l"="36.648,-2.245", "c"=797]
+"RahulSChand/gpu_poor" ["l"="38.944,-0.529", "c"=39]
+"gkamradt/LLMTest_NeedleInAHaystack" ["l"="38.029,-1.426"]
+"OpenBuddy/OpenBuddy" ["l"="39.15,-2.144", "c"=202]
+"bojone/NBCE" ["l"="38.097,-1.489"]
 "mzbac/qlora-fine-tune" ["l"="38.168,-1.587"]
 "eugenepentland/landmark-attention-qlora" ["l"="38.098,-1.527"]
 "kyegomez/LongNet" ["l"="38.125,-1.544"]
 "fkodom/dilated-attention-pytorch" ["l"="38.16,-1.554"]
-"kyegomez/Andromeda" ["l"="48.654,32.901"]
+"kyegomez/Andromeda" ["l"="48.654,32.901", "c"=401]
 "dmytrostriletskyi/threads-net" ["l"="38.226,-1.552"]
 "alexisrozhkov/dilated-self-attention" ["l"="38.155,-1.54"]
-"haoliuhl/ringattention" ["l"="38.899,-0.433"]
-"kyegomez/zeta" ["l"="49.172,34.235"]
-"Beomi/BitNet-Transformers" ["l"="38.638,-0.263"]
-"microsoft/torchscale" ["l"="38.755,-0.718"]
+"haoliuhl/ringattention" ["l"="38.899,-0.433", "c"=39]
+"kyegomez/zeta" ["l"="49.172,34.235", "c"=556]
+"Beomi/BitNet-Transformers" ["l"="38.638,-0.263", "c"=39]
+"microsoft/torchscale" ["l"="38.755,-0.718", "c"=39]
+"bublint/ue5-llama-lora" ["l"="42.54,-2.017", "c"=1097]
+"melodysdreamj/WizardVicunaLM" ["l"="-5.346,-23.162", "c"=164]
 "jackaduma/Recurrent-LLM" ["l"="38.057,-1.714"]
 "femnn/RecurrentGPT-zh" ["l"="38.068,-1.691"]
-"Vahe1994/SpQR" ["l"="38.818,-0.268"]
-"kreneskyp/ix" ["l"="41.143,-3.713"]
-"aiwaves-cn/agents" ["l"="36.726,-2.215"]
-"FranxYao/chain-of-thought-hub" ["l"="37.241,-0.207"]
-"thunlp/WebCPM" ["l"="50.705,2.93"]
-"teknium1/GPTeacher" ["l"="42.501,-2.047"]
-"princeton-nlp/AutoCompressors" ["l"="38.083,-1.46"]
-"jquesnelle/yarn" ["l"="38.005,-1.472"]
-"QuangBK/generativeAgent_LLM" ["l"="40.999,-4.11"]
-"bojone/NBCE" ["l"="38.097,-1.489"]
-"sail-sg/lorahub" ["l"="38.39,-0.282"]
-"dvlab-research/LongLoRA" ["l"="37.983,-1.5"]
+"Vahe1994/SpQR" ["l"="38.818,-0.268", "c"=39]
+"kreneskyp/ix" ["l"="41.143,-3.713", "c"=146]
+"aiwaves-cn/agents" ["l"="36.726,-2.215", "c"=797]
+"FranxYao/chain-of-thought-hub" ["l"="37.241,-0.207", "c"=126]
+"thunlp/WebCPM" ["l"="50.705,2.93", "c"=85]
+"teknium1/GPTeacher" ["l"="42.501,-2.047", "c"=1097]
+"QuangBK/generativeAgent_LLM" ["l"="40.999,-4.11", "c"=146]
+"sail-sg/lorahub" ["l"="38.39,-0.282", "c"=39]
 "junhoyeo/threads-api" ["l"="38.258,-1.569"]
 "threadsjs/threads.js" ["l"="38.263,-1.534"]
-"m1guelpf/threads-re" ["l"="38.281,-1.548"]
 "Danie1/threads-api" ["l"="38.257,-1.601"]
 "junhoyeo/threads-py" ["l"="38.284,-1.606"]
 "junhoyeo/react-threads" ["l"="38.243,-1.535"]
-"KudoAI/chatgpt.js" ["l"="-44.331,6.625"]
-"facebook/igl" ["l"="-23.302,-27.466"]
-"KiwiTalk/KiwiTalk" ["l"="-4.977,-20.866"]
+"KudoAI/chatgpt.js" ["l"="-44.331,6.625", "c"=1131]
+"facebook/igl" ["l"="-23.302,-27.466", "c"=26]
+"KiwiTalk/KiwiTalk" ["l"="-4.977,-20.866", "c"=1270]
 "farizrifqi/Threads-Media-Downloader" ["l"="38.298,-1.587"]
 "m1guelpf/threads-api" ["l"="38.306,-1.561"]
-"Bamdoliro/marururu" ["l"="-5.64,-21.989"]
-"noodle-run/noodle" ["l"="15.873,-10.476"]
-"toss/slash" ["l"="-5.336,-21.914"]
-"Gentopia-AI/Gentopia" ["l"="36.809,-1.259"]
-"THUDM/AgentBench" ["l"="36.724,-2.315"]
-"allenai/lumos" ["l"="36.768,-1.272"]
-"ysymyth/ReAct" ["l"="36.695,-2.331"]
-"princeton-nlp/intercode" ["l"="36.835,-2.347"]
-"SwiftSage/SwiftSage" ["l"="57.456,18.735"]
-"web-arena-x/webarena" ["l"="36.821,-1.486"]
-"101dotxyz/GPTeam" ["l"="41.192,-3.781"]
+"Bamdoliro/marururu" ["l"="-5.64,-21.989", "c"=332]
+"noodle-run/noodle" ["l"="15.873,-10.476", "c"=198]
+"toss/slash" ["l"="-5.336,-21.914", "c"=332]
+"Gentopia-AI/Gentopia" ["l"="36.809,-1.259", "c"=795]
+"THUDM/AgentBench" ["l"="36.724,-2.315", "c"=797]
+"allenai/lumos" ["l"="36.768,-1.272", "c"=795]
+"ysymyth/ReAct" ["l"="36.695,-2.331", "c"=797]
+"princeton-nlp/intercode" ["l"="36.835,-2.347", "c"=797]
+"SwiftSage/SwiftSage" ["l"="57.456,18.735", "c"=45]
+"web-arena-x/webarena" ["l"="36.821,-1.486", "c"=795]
+"101dotxyz/GPTeam" ["l"="41.192,-3.781", "c"=146]
+"xverse-ai/XVERSE-13B" ["l"="39.215,-2.137", "c"=202]
 "bojone/bytepiece" ["l"="38.142,-1.456"]
-"bojone/rerope" ["l"="38.066,-1.449"]
-"GanjinZero/RRHF" ["l"="37.215,-0.204"]
+"GanjinZero/RRHF" ["l"="37.215,-0.204", "c"=126]
 "liwenju0/cutword" ["l"="38.197,-1.429"]
-"OpenLMLab/MOSS-RLHF" ["l"="37.173,-0.251"]
-"JunnYu/RoFormer_pytorch" ["l"="53.413,27.063"]
-"jondurbin/airoboros" ["l"="42.563,-2.031"]
-"OoriData/OgbujiPT" ["l"="43.066,1.674"]
-"AgileRL/AgileRL" ["l"="59.371,17.441"]
-"THUDM/LongBench" ["l"="38.005,-1.432"]
+"OpenLMLab/MOSS-RLHF" ["l"="37.173,-0.251", "c"=126]
+"JunnYu/RoFormer_pytorch" ["l"="53.413,27.063", "c"=60]
+"jondurbin/airoboros" ["l"="42.563,-2.031", "c"=1097]
+"OoriData/OgbujiPT" ["l"="43.066,1.674", "c"=952]
+"AgileRL/AgileRL" ["l"="59.371,17.441", "c"=169]
 "HKUNLP/ChunkLlama" ["l"="37.966,-1.421"]
-"gkamradt/LLMTest_NeedleInAHaystack" ["l"="38.029,-1.426"]
-"DachengLi1/LongChat" ["l"="38.027,-1.456"]
 "FranxYao/Long-Context-Data-Engineering" ["l"="37.969,-1.402"]
-"zhuzilin/ring-flash-attention" ["l"="38.944,-0.407"]
-"jzhang38/EasyContext" ["l"="37.968,-1.438"]
+"zhuzilin/ring-flash-attention" ["l"="38.944,-0.407", "c"=39]
 "OpenBMB/InfiniteBench" ["l"="37.986,-1.394"]
 "dwzhu-pku/PoSE" ["l"="37.988,-1.446"]
-"XueFuzhao/OpenMoE" ["l"="38.703,-0.482"]
+"XueFuzhao/OpenMoE" ["l"="38.703,-0.482", "c"=39]
 "THUDM/LongAlign" ["l"="37.992,-1.378"]
-"FasterDecoding/SnapKV" ["l"="38.994,-0.251"]
+"FasterDecoding/SnapKV" ["l"="38.994,-0.251", "c"=39]
 "Xnhyacinth/Awesome-LLM-Long-Context-Modeling" ["l"="38.02,-1.385"]
 "bigai-nlco/LooGLE" ["l"="37.976,-1.38"]
 "NVIDIA/RULER" ["l"="37.996,-1.408"]
-"jy-yuan/KIVI" ["l"="38.94,-0.257"]
-"FMInference/H2O" ["l"="38.951,-0.285"]
+"jy-yuan/KIVI" ["l"="38.94,-0.257", "c"=39]
+"FMInference/H2O" ["l"="38.951,-0.285", "c"=39]
 "nelson-liu/lost-in-the-middle" ["l"="38.031,-1.405"]
-"mit-han-lab/streaming-llm" ["l"="38.853,-0.645"]
-"FasterDecoding/Medusa" ["l"="38.899,-0.485"]
-"artidoro/qlora" ["l"="39.956,0.604"]
-"dvlab-research/3D-Box-Segment-Anything" ["l"="64.54,11.193"]
-"PhoebusSi/Alpaca-CoT" ["l"="39.078,-2.202"]
-"huggingface/alignment-handbook" ["l"="38.666,-0.614"]
-"dvlab-research/VoxelNeXt" ["l"="64.59,11.181"]
-"open-compass/opencompass" ["l"="38.902,-2.019"]
-"OpenRLHF/OpenRLHF" ["l"="37.161,-0.425"]
-"baichuan-inc/Baichuan2" ["l"="39.047,-2.027"]
-"FlagOpen/FlagEmbedding" ["l"="38.963,-1.98"]
-"mit-han-lab/llm-awq" ["l"="38.87,-0.434"]
-"Eltion/Instagram-SSL-Pinning-Bypass" ["l"="38.004,33.888"]
+"FasterDecoding/Medusa" ["l"="38.899,-0.485", "c"=39]
+"artidoro/qlora" ["l"="39.956,0.604", "c"=7]
+"dvlab-research/3D-Box-Segment-Anything" ["l"="64.54,11.193", "c"=61]
+"PhoebusSi/Alpaca-CoT" ["l"="39.078,-2.202", "c"=202]
+"huggingface/alignment-handbook" ["l"="38.666,-0.614", "c"=39]
+"dvlab-research/VoxelNeXt" ["l"="64.59,11.181", "c"=61]
+"open-compass/opencompass" ["l"="38.902,-2.019", "c"=202]
+"OpenRLHF/OpenRLHF" ["l"="37.161,-0.425", "c"=126]
+"baichuan-inc/Baichuan2" ["l"="39.047,-2.027", "c"=202]
+"FlagOpen/FlagEmbedding" ["l"="38.963,-1.98", "c"=202]
+"mit-han-lab/llm-awq" ["l"="38.87,-0.434", "c"=39]
+"Shark-NLP/OpenICL" ["l"="36.863,-2.508", "c"=797]
 "princeton-nlp/ProLong" ["l"="38.002,-1.387"]
 "nightdessert/Retrieval_Head" ["l"="38.012,-1.364"]
-"princeton-nlp/ALCE" ["l"="54.43,25.535"]
+"princeton-nlp/ALCE" ["l"="54.43,25.535", "c"=439]
 "princeton-nlp/CEPE" ["l"="38.066,-1.411"]
-"facebookresearch/FiD" ["l"="54.475,25.57"]
+"facebookresearch/FiD" ["l"="54.475,25.57", "c"=439]
 "tomaarsen/attention_sinks" ["l"="38.046,-1.473"]
 "Glaciohound/LM-Infinite" ["l"="38.104,-1.463"]
-"datamllab/LongLM" ["l"="37.948,-1.425"]
-"tomaarsen/SpanMarkerNER" ["l"="41.14,1.073"]
-"hao-ai-lab/LookaheadDecoding" ["l"="38.917,-0.43"]
-"huggingface/setfit" ["l"="52.568,25.752"]
-"mit-han-lab/duo-attention" ["l"="38.971,-0.271"]
-"microsoft/MInference" ["l"="38.971,-0.326"]
-"October2001/Awesome-KV-Cache-Compression" ["l"="38.971,-0.289"]
-"HuangOwen/Awesome-LLM-Compression" ["l"="38.841,-0.343"]
-"horseee/Awesome-Efficient-LLM" ["l"="38.867,-0.356"]
-"hemingkx/SpeculativeDecodingPapers" ["l"="38.909,-0.376"]
-"atfortes/Awesome-LLM-Reasoning" ["l"="37.156,-0.385"]
-"OpenLMLab/LOMO" ["l"="37.925,-1.483"]
+"tomaarsen/SpanMarkerNER" ["l"="41.14,1.073", "c"=7]
+"hao-ai-lab/LookaheadDecoding" ["l"="38.917,-0.43", "c"=39]
+"huggingface/setfit" ["l"="52.568,25.752", "c"=172]
+"mit-han-lab/duo-attention" ["l"="38.971,-0.271", "c"=39]
+"microsoft/MInference" ["l"="38.971,-0.326", "c"=39]
+"October2001/Awesome-KV-Cache-Compression" ["l"="38.971,-0.289", "c"=39]
+"HuangOwen/Awesome-LLM-Compression" ["l"="38.841,-0.343", "c"=39]
+"horseee/Awesome-Efficient-LLM" ["l"="38.867,-0.356", "c"=39]
+"hemingkx/SpeculativeDecodingPapers" ["l"="38.909,-0.376", "c"=39]
+"atfortes/Awesome-LLM-Reasoning" ["l"="37.156,-0.385", "c"=126]
 "abacusai/Long-Context" ["l"="37.975,-1.465"]
-"AetherCortex/Llama-X" ["l"="39.103,-2.269"]
+"AetherCortex/Llama-X" ["l"="39.103,-2.269", "c"=202]
+"InteractiveNLP-Team/RoleLLM-public" ["l"="39.169,-1.645", "c"=202]
+"techwithtim/Price-Tracking-Web-Scraper" ["l"="60.014,34.406", "c"=699]
+"princeton-nlp/MeZO" ["l"="38.707,-0.248", "c"=39]
 "getao/icae" ["l"="38.108,-1.422"]
 "jayelm/gisting" ["l"="38.121,-1.439"]
 "liyucheng09/Selective_Context" ["l"="38.135,-1.414"]
 "snu-mllab/Context-Memory" ["l"="38.094,-1.422"]
 "jeffreysijuntan/lloco" ["l"="38.101,-1.401"]
-"OpenMOSS/CoLLiE" ["l"="37.88,-1.402"]
 "OpenMOSS/Thus-Spake-Long-Context-LLM" ["l"="37.81,-1.361"]
-"GAIR-NLP/alignment-for-honesty" ["l"="37.493,-0.414"]
+"GAIR-NLP/alignment-for-honesty" ["l"="37.493,-0.414", "c"=126]
 "OpenLMLab/ChatZoo" ["l"="37.856,-1.36"]
 "xiami2019/CLAIF" ["l"="37.844,-1.381"]
-"GAIR-NLP/weak-to-strong-reasoning" ["l"="37.504,-0.405"]
-"jiaweizzhao/GaLore" ["l"="38.696,-0.325"]
-"princeton-nlp/MeZO" ["l"="38.707,-0.248"]
-"locuslab/wanda" ["l"="38.784,-0.27"]
-"OpenLMLab/OpenChineseLLaMA" ["l"="55.559,25.901"]
-"hiyouga/FastEdit" ["l"="39.082,-2.123"]
-"dandelionsllm/pandallm" ["l"="39.147,-2.242"]
-"princeton-nlp/LLM-Shearing" ["l"="38.7,-0.299"]
-"InternLM/InternLM-techreport" ["l"="38.794,-1.827"]
-"cubenlp/ChatSQL" ["l"="37.474,-1.45"]
-"MohammadrezaPourreza/Few-shot-NL2SQL-with-prompting" ["l"="37.462,-1.541"]
-"RUCKBReasoning/RESDSQL" ["l"="37.496,-1.553"]
-"lucidrains/MEGABYTE-pytorch" ["l"="40.522,1.478"]
-"RulinShao/LightSeq" ["l"="38.944,-0.474"]
-"mit-han-lab/Quest" ["l"="38.991,-0.289"]
-"william970/WritingGod" ["l"="38.084,-1.727"]
+"GAIR-NLP/weak-to-strong-reasoning" ["l"="37.504,-0.405", "c"=126]
+"jiaweizzhao/GaLore" ["l"="38.696,-0.325", "c"=39]
+"locuslab/wanda" ["l"="38.784,-0.27", "c"=39]
+"OpenLMLab/OpenChineseLLaMA" ["l"="55.559,25.901", "c"=1119]
+"hiyouga/FastEdit" ["l"="39.082,-2.123", "c"=202]
+"dandelionsllm/pandallm" ["l"="39.147,-2.242", "c"=202]
+"princeton-nlp/LLM-Shearing" ["l"="38.7,-0.299", "c"=39]
+"InternLM/InternLM-techreport" ["l"="38.794,-1.827", "c"=202]
+"cubenlp/ChatSQL" ["l"="37.474,-1.45", "c"=999]
+"MohammadrezaPourreza/Few-shot-NL2SQL-with-prompting" ["l"="37.462,-1.541", "c"=999]
+"RUCKBReasoning/RESDSQL" ["l"="37.496,-1.553", "c"=999]
+"marella/chatdocs" ["l"="42.6,-2.129", "c"=1097]
+"marella/ctransformers" ["l"="42.573,-2.077", "c"=1097]
+"bazingagin/npc_gzip" ["l"="40.848,-4.102", "c"=146]
+"dgarnitz/vectorflow" ["l"="41.072,0.947", "c"=7]
+"premAI-io/state-of-open-source-ai" ["l"="36.747,-2.114", "c"=797]
+"the-crypt-keeper/can-ai-code" ["l"="36.287,0.029", "c"=315]
+"epfLLM/Megatron-LLM" ["l"="38.746,-0.505", "c"=39]
+"lucidrains/MEGABYTE-pytorch" ["l"="40.522,1.478", "c"=7]
+"Xwin-LM/Xwin-LM" ["l"="37.319,-0.238", "c"=126]
+"replit/ReplitLM" ["l"="36.155,-0.093", "c"=315]
+"jncraton/languagemodels" ["l"="41.286,-4.02", "c"=146]
+"RulinShao/LightSeq" ["l"="38.944,-0.474", "c"=39]
+"mit-han-lab/Quest" ["l"="38.991,-0.289", "c"=39]
+"airaria/Visual-Chinese-LLaMA-Alpaca" ["l"="39.268,-2.019", "c"=202]
 "GOAT-AI-lab/GOAT-Storytelling-Agent" ["l"="38.097,-1.782"]
-"InteractiveNLP-Team/RoleLLM-public" ["l"="39.169,-1.645"]
-"TencentARC/SEED-Story" ["l"="33.385,31.201"]
-"thu-coai/PaperForONLG" ["l"="53.53,26.243"]
-"Neph0s/awesome-llm-role-playing-with-persona" ["l"="39.195,-1.645"]
+"TencentARC/SEED-Story" ["l"="33.385,31.201", "c"=109]
+"thu-coai/PaperForONLG" ["l"="53.53,26.243", "c"=172]
+"Neph0s/awesome-llm-role-playing-with-persona" ["l"="39.195,-1.645", "c"=202]
 "vaew/SkyScript-100M" ["l"="38.071,-1.806"]
 "datacrystals/AIStoryWriter" ["l"="38.104,-1.802"]
+"AIoT-MLSys-Lab/Efficient-LLMs-Survey" ["l"="38.904,-0.349", "c"=39]
+"kennethleungty/Llama-2-Open-Source-LLM-CPU-Inference" ["l"="41.089,-3.631", "c"=146]
+"ECNU-ICALK/EduChat" ["l"="39.014,-2.239", "c"=202]
+"dttung2905/kafka-in-production" ["l"="-0.888,16.96", "c"=398]
+"alibaba/Megatron-LLaMA" ["l"="38.755,-0.481", "c"=39]
+"OpenGVLab/GITM" ["l"="41.022,-4.445", "c"=146]
+"HazyResearch/safari" ["l"="49.018,34.016", "c"=556]
+"ruixiangcui/AGIEval" ["l"="37.273,-0.163", "c"=126]
 "AI21Labs/Parallel-Context-Windows" ["l"="38.142,-1.497"]
-"OpenBuddy/OpenBuddy" ["l"="39.15,-2.144"]
 "HazyResearch/TART" ["l"="38.172,-1.486"]
+"haonan-li/CMMLU" ["l"="39.042,-2.175", "c"=202]
+"Yifan-Song793/RestGPT" ["l"="40.966,0.961", "c"=7]
 "georgesung/llm_qlora" ["l"="38.204,-1.626"]
 "jshuadvd/LongRoPE" ["l"="37.938,-1.398"]
-"lucidrains/CoLT5-attention" ["l"="38.485,-0.424"]
-"lucidrains/st-moe-pytorch" ["l"="38.573,-0.443"]
-"lucidrains/ring-attention-pytorch" ["l"="38.964,-0.403"]
-"3DAgentWorld/Toolkit-for-Prompt-Compression" ["l"="-54.437,-11.579"]
-"maszhongming/UniEval" ["l"="58.33,28.917"]
-"facebookresearch/Shepherd" ["l"="37.334,-0.14"]
+"lucidrains/CoLT5-attention" ["l"="38.485,-0.424", "c"=39]
+"lucidrains/st-moe-pytorch" ["l"="38.573,-0.443", "c"=39]
+"lucidrains/ring-attention-pytorch" ["l"="38.964,-0.403", "c"=39]
+"3DAgentWorld/Toolkit-for-Prompt-Compression" ["l"="-54.437,-11.579", "c"=843]
+"maszhongming/UniEval" ["l"="58.33,28.917", "c"=665]
+"facebookresearch/Shepherd" ["l"="37.334,-0.14", "c"=126]
 "YichenZW/Pacing" ["l"="38.026,-1.808"]
 "dwzhu-pku/LongEmbed" ["l"="37.935,-1.455"]
-"PKU-TANGENT/ConFiguRe" ["l"="37.111,-1.104"]
+"PKU-TANGENT/ConFiguRe" ["l"="37.111,-1.104", "c"=795]
 "F2-Song/ICDPO" ["l"="37.952,-1.469"]
+"vectara/hallucination-leaderboard" ["l"="37.577,-6.944", "c"=766]
+"open-compass/MixtralKit" ["l"="38.721,-0.502", "c"=39]
 "Strivin0311/llms-learning" ["l"="37.907,-1.283"]
 "NJUDeepEngine/llm-course-lecture" ["l"="37.888,-1.262"]
 "NJUDeepEngine/open-llm-assignments" ["l"="37.907,-1.255"]
-"tatsu-lab/alpaca_eval" ["l"="37.246,-0.242"]
-"EleutherAI/lm-evaluation-harness" ["l"="38.704,-0.669"]
+"jzhang38/LongMamba" ["l"="49.121,34.05", "c"=556]
+"princeton-nlp/HELMET" ["l"="38.017,-1.343"]
+"tatsu-lab/alpaca_eval" ["l"="37.246,-0.242", "c"=126]
+"EleutherAI/lm-evaluation-harness" ["l"="38.704,-0.669", "c"=39]
+"xianshang33/llm-paper-daily" ["l"="37.088,-0.375", "c"=126]
 "microsoft/FILM" ["l"="37.949,-1.37"]
-"liangwq/Chatglm_lora_multi-gpu" ["l"="39.2,-2.189"]
-"27182812/ChatGLM-LLaMA-chinese-insturct" ["l"="39.21,-2.212"]
-"WangRongsheng/Aurora" ["l"="39.33,-2.058"]
+"lmmlzn/Awesome-LLMs-Datasets" ["l"="38.956,-2.219", "c"=202]
+"THUDM/AlignBench" ["l"="37.157,-0.119", "c"=126]
+"myshell-ai/JetMoE" ["l"="38.714,-0.426", "c"=39]
+"wxywb/history_rag" ["l"="-1.183,3.751", "c"=576]
+"multimodal-art-projection/MAP-NEO" ["l"="38.591,-0.555", "c"=39]
+"feifeibear/long-context-attention" ["l"="38.982,-0.409", "c"=39]
+"huggingface/optimum-nvidia" ["l"="38.795,-0.501", "c"=39]
+"liangwq/Chatglm_lora_multi-gpu" ["l"="39.2,-2.189", "c"=202]
+"27182812/ChatGLM-LLaMA-chinese-insturct" ["l"="39.21,-2.212", "c"=202]
+"WangRongsheng/Aurora" ["l"="39.33,-2.058", "c"=202]
+"microsoft/rho" ["l"="37.431,-0.442", "c"=126]
 "TIGER-AI-Lab/LongICLBench" ["l"="37.971,-1.326"]
 "google-deepmind/loft" ["l"="37.99,-1.336"]
-"mustafaaljadery/gemma-2B-10M" ["l"="37.874,-1.458"]
+"XuezheMax/megalodon" ["l"="49.086,33.89", "c"=556]
 "Beomi/InfiniTransformer" ["l"="37.884,-1.429"]
-"jgravelle/AutoGroq" ["l"="41.28,0.441"]
-"microsoft/Samba" ["l"="38.866,-0.168"]
+"mustafaaljadery/gemma-2B-10M" ["l"="37.874,-1.458"]
+"jgravelle/AutoGroq" ["l"="41.28,0.441", "c"=7]
+"microsoft/Samba" ["l"="38.866,-0.168", "c"=39]
 "dingo-actual/infini-transformer" ["l"="37.83,-1.445"]
-"Doriandarko/RepoToTextForLLMs" ["l"="41.37,0.478"]
-"ai-ng/2txt" ["l"="41.527,0.948"]
+"Doriandarko/RepoToTextForLLMs" ["l"="41.37,0.478", "c"=7]
+"ai-ng/2txt" ["l"="41.527,0.948", "c"=7]
+"jxzhangjhu/Awesome-LLM-RAG" ["l"="41.231,0.765", "c"=7]
 "MozerWang/Loong" ["l"="37.972,-1.353"]
-"thunlp/InfLLM" ["l"="39.038,-0.24"]
+"thunlp/InfLLM" ["l"="39.038,-0.24", "c"=39]
+"S-LoRA/S-LoRA" ["l"="38.842,-0.458", "c"=39]
+"Tebmer/Awesome-Knowledge-Distillation-of-LLMs" ["l"="38.639,-0.352", "c"=39]
 "Strivin0311/long-llms-learning" ["l"="37.942,-1.35"]
-"sdan/selfextend" ["l"="38.529,-0.16"]
-"henryzhongsc/longctx_bench" ["l"="38.988,-0.176"]
+"sdan/selfextend" ["l"="38.529,-0.16", "c"=39]
+"henryzhongsc/longctx_bench" ["l"="38.988,-0.176", "c"=39]
 "microsoft/LongRoPE" ["l"="37.921,-1.363"]
-"feifeibear/long-context-attention" ["l"="38.982,-0.409"]
+"Avdpro/ai2apps" ["l"="36.88,-2.145", "c"=797]
 "jlamprou/Infini-Attention" ["l"="37.851,-1.421"]
 "vmarinowski/infini-attention" ["l"="37.83,-1.421"]
 "Beomi/Gemma-EasyLM" ["l"="37.844,-1.463"]
-"OpenNLPLab/lightning-attention" ["l"="39.488,5.94"]
+"OpenNLPLab/lightning-attention" ["l"="39.488,5.94", "c"=593]
 "kyegomez/Infini-attention" ["l"="37.786,-1.449"]
+"fanqiwan/FuseAI" ["l"="38.444,-0.369", "c"=39]
+"THUDM/AgentTuning" ["l"="36.749,-2.26", "c"=797]
 "xiaowu0162/LongMemEval" ["l"="38.175,-1.704"]
 "THUDM/LongReward" ["l"="38.034,-1.326"]
-"evalplus/repoqa" ["l"="36.282,-0.016"]
-"princeton-nlp/HELMET" ["l"="38.017,-1.343"]
-"mutonix/pyramidinfer" ["l"="39.035,-0.187"]
+"LLaMafia/llamafia.github" ["l"="38.508,-2.191", "c"=202]
+"mistralai/megablocks-public" ["l"="38.669,-0.458", "c"=39]
+"google-deepmind/long-form-factuality" ["l"="37.567,-6.858", "c"=766]
+"HIT-SCIR/Chinese-Mixtral-8x7B" ["l"="39.292,-2.059", "c"=202]
+"evalplus/repoqa" ["l"="36.282,-0.016", "c"=315]
+"mutonix/pyramidinfer" ["l"="39.035,-0.187", "c"=39]
 "PKU-ML/LongPPL" ["l"="38,-1.351"]
 "OpenLMLab/scaling-rope" ["l"="37.793,-1.341"]
-"snu-mllab/Neural-Relation-Graph" ["l"="51.313,30.235"]
+"snu-mllab/Neural-Relation-Graph" ["l"="51.313,30.235", "c"=83]
 "zhiyuanhubj/UoT" ["l"="38.02,-1.268"]
 "zhiyuanhubj/LongRecipe" ["l"="38.012,-1.32"]
+"THUDM/LongWriter" ["l"="41.211,0.5", "c"=7]
+"THUDM/LongCite" ["l"="38.054,-1.344"]
+"LiveBench/LiveBench" ["l"="37.326,-0.302", "c"=126]
+"duoyang666/ai_novel" ["l"="45.993,-2.053", "c"=410]
 "dylanhogg/gptauthor" ["l"="38.122,-1.834"]
 "princeton-pli/LongProc" ["l"="38.03,-1.3"]
+"thunlp/LLMxMapReduce" ["l"="-2.565,-33.726", "c"=30]
 "zexuanqiu/CLongEval" ["l"="37.98,-1.29"]
-"THUDM/LongCite" ["l"="38.054,-1.344"]
-"sunnynexus/Search-o1" ["l"="37.293,-0.55"]
-"MozerWang/promISe" ["l"="29.941,28.181"]
-"MozerWang/AMPO" ["l"="29.971,28.2"]
+"sunnynexus/Search-o1" ["l"="37.293,-0.55", "c"=126]
+"MozerWang/promISe" ["l"="29.941,28.181", "c"=94]
+"MozerWang/AMPO" ["l"="29.971,28.2", "c"=94]
 "tengxiaoliu/LM_skip" ["l"="37.772,-1.35"]
+"OpenMOSS/SpeechGPT-2.0-preview" ["l"="38.391,2.112", "c"=54]
+"LCLM-Horizon/A-Comprehensive-Survey-For-Long-Context-Language-Modeling" ["l"="37.124,-1.231", "c"=795]
 }

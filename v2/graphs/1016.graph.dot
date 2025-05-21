@@ -8,7 +8,17 @@ digraph G {
 "mendersoftware/mender-convert" -> "mendersoftware/mender-artifact"
 "mendersoftware/mender-convert" -> "mendersoftware/deployments"
 "mendersoftware/mender-convert" -> "mendersoftware/mender-docs"
+"antmicro/jetson-nano-baseboard" -> "OE4T/meta-tegra" ["e"=1]
+"bootlin/training-materials" -> "agherzan/meta-raspberrypi" ["e"=1]
+"bootlin/training-materials" -> "sbabic/swupdate" ["e"=1]
+"bootlin/training-materials" -> "siemens/kas" ["e"=1]
+"bootlin/training-materials" -> "pengutronix/genimage" ["e"=1]
+"bootlin/training-materials" -> "YoeDistro/yoe-distro" ["e"=1]
+"bootlin/training-materials" -> "bootlin/snagboot" ["e"=1]
+"bootlin/training-materials" -> "openembedded/openembedded-core" ["e"=1]
+"bootlin/training-materials" -> "crops/poky-container" ["e"=1]
 "rauc/rauc-hawkbit-updater" -> "rauc/rauc-hawkbit"
+"FreeRDP/FreeRDP-old" -> "Freescale/meta-freescale-3rdparty" ["e"=1]
 "intel/ozone-wayland" -> "Igalia/chromium"
 "sbabic/swupdate" -> "rauc/rauc"
 "sbabic/swupdate" -> "eclipse-hawkbit/hawkbit"
@@ -25,6 +35,8 @@ digraph G {
 "sbabic/swupdate" -> "vsergeev/c-periphery" ["e"=1]
 "sbabic/swupdate" -> "sbabic/meta-swupdate-boards"
 "sbabic/swupdate" -> "mendersoftware/meta-mender"
+"eclipse-kura/kura" -> "eclipse-hawkbit/hawkbit" ["e"=1]
+"STMicroelectronics/meta-st-stm32mp" -> "sbabic/meta-swupdate" ["e"=1]
 "openembedded/meta-openembedded" -> "openembedded/openembedded-core"
 "openembedded/meta-openembedded" -> "openembedded/bitbake"
 "openembedded/meta-openembedded" -> "yoctoproject/poky"
@@ -66,6 +78,8 @@ digraph G {
 "Freescale/gstreamer-imx" -> "Gateworks/gst-gateworks-apps"
 "Freescale/gstreamer-imx" -> "Freescale/meta-freescale-distro"
 "Freescale/gstreamer-imx" -> "Freescale/meta-freescale-3rdparty"
+"RockySong/micropython-rocky" -> "JayHeng/NXP-MCUBootUtility" ["e"=1]
+"libconfuse/libconfuse" -> "pengutronix/genimage" ["e"=1]
 "priv-kweihmann/meta-sca" -> "priv-kweihmann/oelint-adv"
 "priv-kweihmann/meta-sca" -> "Freed-Wu/bitbake-language-server"
 "Freescale/libimxvpuapi" -> "Freescale/gstreamer-imx"
@@ -123,6 +137,9 @@ digraph G {
 "foundriesio/meta-lmp" -> "foundriesio/lmp-manifest"
 "foundriesio/meta-lmp" -> "foundriesio/docs"
 "foundriesio/meta-lmp" -> "foundriesio/aktualizr-lite"
+"githubuser0xFFFF/QtFreeVirtualKeyboard" -> "meta-qt5/meta-qt5" ["e"=1]
+"mvp/uhubctl" -> "labgrid-project/labgrid" ["e"=1]
+"mvp/uhubctl" -> "rauc/rauc" ["e"=1]
 "zangman/de10-nano" -> "robseb/rsyocto"
 "zangman/de10-nano" -> "intel-iot-devkit/terasic-de10-nano-kit"
 "zangman/de10-nano" -> "robseb/HPS2FPGAmapping"
@@ -133,6 +150,7 @@ digraph G {
 "robseb/rsyocto" -> "robseb/socfpgaPlatformGenerator"
 "robseb/rsyocto" -> "robseb/Django2FPGAdemo"
 "robseb/rsyocto" -> "robertofem/CycloneVSoC-examples"
+"avahi/avahi" -> "sbabic/swupdate" ["e"=1]
 "meta-rust/meta-rust" -> "meta-rust/cargo-bitbake"
 "meta-rust/meta-rust" -> "rust-embedded/meta-rust-bin"
 "meta-rust/meta-rust" -> "advancedtelematic/meta-updater"
@@ -163,6 +181,7 @@ digraph G {
 "kraj/meta-clang" -> "kraj/meta-openwrt"
 "rauc/meta-rauc-community" -> "rauc/meta-rauc"
 "rauc/meta-rauc-community" -> "pengutronix/meta-ptx"
+"pythops/jetson-image" -> "OE4T/meta-tegra" ["e"=1]
 "robseb/HPS2FPGAmapping" -> "robseb/Django2FPGAdemo"
 "nxp-mcuxpresso/spsdk" -> "nxp-mcuxpresso/sbl"
 "meta-debian/meta-debian" -> "ilbers/isar"
@@ -174,6 +193,7 @@ digraph G {
 "robseb/PiP2Bitbake" -> "robseb/meta-intelfpga"
 "garmin/whisk" -> "YoeDistro/meta-yoe"
 "garmin/whisk" -> "Agilent/yb"
+"balena-os/meta-balena" -> "mendersoftware/meta-mender" ["e"=1]
 "nxp-mcuxpresso/mcux-sdk" -> "nxp-mcuxpresso/mcux-sdk-examples"
 "nxp-mcuxpresso/mcux-sdk" -> "nxp-mcuxpresso/spsdk"
 "nxp-mcuxpresso/mcux-sdk" -> "nxp-mcuxpresso/mcuxsdk-manifests"
@@ -224,6 +244,7 @@ digraph G {
 "pengutronix/genimage" -> "pengutronix/microcom"
 "pengutronix/genimage" -> "rauc/rauc-hawkbit"
 "pengutronix/genimage" -> "rauc/rauc"
+"stevehoover/LF-Building-a-RISC-V-CPU-Core" -> "riscv/meta-riscv" ["e"=1]
 "Freescale/meta-freescale" -> "Freescale/meta-freescale-3rdparty"
 "Freescale/meta-freescale" -> "Freescale/meta-freescale-distro"
 "Freescale/meta-freescale" -> "nxp-imx/meta-imx"
@@ -237,6 +258,7 @@ digraph G {
 "Freescale/meta-freescale" -> "Freescale/fsl-community-bsp-platform"
 "JayHeng/NXP-MCUBootUtility" -> "nxp-mcuxpresso/sbl"
 "JayHeng/NXP-MCUBootUtility" -> "JayHeng/RT-UFL"
+"eclipse/vorto" -> "eclipse-hawkbit/hawkbit" ["e"=1]
 "qualcomm-linux/meta-qcom" -> "qualcomm-linux/meta-qcom-hwe"
 "altera-fpga/linux-socfpga" -> "altera-fpga/u-boot-socfpga"
 "altera-fpga/linux-socfpga" -> "robertofem/CycloneVSoC-examples"
@@ -251,6 +273,9 @@ digraph G {
 "altera-opensource/ghrd-socfpga" -> "altera-opensource/intel-socfpga-hwlib"
 "altera-fpga/u-boot-socfpga" -> "altera-fpga/linux-socfpga"
 "altera-fpga/u-boot-socfpga" -> "altera-opensource/meta-altera"
+"Igalia/meta-webkit" -> "OSSystems/meta-browser" ["e"=1]
+"ostreedev/ostree" -> "advancedtelematic/meta-updater" ["e"=1]
+"ostreedev/ostree" -> "advancedtelematic/aktualizr" ["e"=1]
 "Freescale/fsl-community-bsp-platform" -> "Freescale/fsl-community-bsp-base"
 "Freescale/fsl-community-bsp-platform" -> "Freescale/meta-freescale-distro"
 "Freescale/fsl-community-bsp-platform" -> "boundarydevices/imx_usb_loader"
@@ -268,6 +293,7 @@ digraph G {
 "yoctoproject/poky" -> "crops/yocto-dockerfiles"
 "yoctoproject/poky" -> "rauc/meta-rauc"
 "yoctoproject/poky" -> "riscv/meta-riscv"
+"google/openhtf" -> "labgrid-project/labgrid" ["e"=1]
 "boundarydevices/imx_usb_loader" -> "nxp-imx/mfgtools"
 "boundarydevices/imx_usb_loader" -> "Freescale/fsl-community-bsp-platform"
 "boundarydevices/imx_usb_loader" -> "boundarydevices/u-boot"
@@ -357,6 +383,7 @@ digraph G {
 "OE4T/meta-tegra" -> "meta-qt5/meta-qt5"
 "OE4T/meta-tegra" -> "NVIDIA/jetson-rdma-picoevb" ["e"=1]
 "NVIDIA/edk2-nvidia" -> "NVIDIA/edk2"
+"meta-flutter/meta-flutter" -> "mendersoftware/meta-mender" ["e"=1]
 "boundarydevices/linux" -> "boundarydevices/u-boot"
 "boundarydevices/linux" -> "boundarydevices/meta-boundary"
 "boundarydevices/linux" -> "Freescale/meta-freescale"
@@ -375,6 +402,8 @@ digraph G {
 "boundarydevices/u-boot" -> "boundarydevices/linux"
 "boundarydevices/meta-boundary" -> "boundarydevices/boundary-bsp-platform"
 "aws/aws-iot-fleetwise-edge" -> "aws4embeddedlinux/meta-aws-demos"
+"devicetree-org/devicetree-specification" -> "nxp-imx/mfgtools" ["e"=1]
+"eclipse-hono/hono" -> "eclipse-hawkbit/hawkbit" ["e"=1]
 "kraj/meta-openwrt" -> "MentorEmbedded/meta-openwrt"
 "nxp-imx/linux-imx" -> "nxp-imx/uboot-imx"
 "nxp-imx/linux-imx" -> "nxp-imx/meta-imx"
@@ -416,6 +445,7 @@ digraph G {
 "nxp-imx/mfgtools" -> "JayHeng/NXP-MCUBootUtility"
 "nxp-imx/mfgtools" -> "sbabic/swupdate"
 "nxp-imx/mfgtools" -> "libts/tslib" ["e"=1]
+"starfive-tech/VisionFive2" -> "riscv/meta-riscv" ["e"=1]
 "nxp-imx/uboot-imx" -> "nxp-imx/linux-imx"
 "nxp-imx/uboot-imx" -> "Freescale/u-boot-fslc"
 "nxp-imx/uboot-imx" -> "nxp-imx/meta-imx"
@@ -428,6 +458,7 @@ digraph G {
 "crops/yocto-dockerfiles" -> "crops/docker-win-mac-docs"
 "bosch-io/hawkbit" -> "bosch-io/vorto"
 "bosch-io/vorto" -> "bosch-io/hawkbit"
+"sifiveinc/freedom-u-sdk" -> "riscv/meta-riscv" ["e"=1]
 "bootlin/snagboot" -> "bootlin/simplest-yocto-setup"
 "meta-qt5/meta-qt5" -> "openembedded/meta-openembedded"
 "meta-qt5/meta-qt5" -> "Freescale/meta-freescale"
@@ -440,6 +471,7 @@ digraph G {
 "meta-qt5/meta-qt5" -> "Freescale/meta-fsl-arm"
 "meta-qt5/meta-qt5" -> "rauc/meta-rauc"
 "meta-qt5/meta-qt5" -> "crops/poky-container"
+"nxp-mcuxpresso/rpmsg-lite" -> "nxp-mcuxpresso/mcux-sdk" ["e"=1]
 "siemens/meta-iot2000" -> "siemens/meta-iot2050"
 "crops/poky-container" -> "crops/yocto-dockerfiles"
 "crops/poky-container" -> "crops/docker-win-mac-docs"
@@ -448,6 +480,9 @@ digraph G {
 "crops/docker-win-mac-docs" -> "crops/poky-container"
 "crops/docker-win-mac-docs" -> "crops/extsdk-container"
 "meta-rust/cargo-bitbake" -> "meta-rust/meta-rust"
+"libts/tslib" -> "nxp-imx/mfgtools" ["e"=1]
+"libts/tslib" -> "Freescale/linux-fslc" ["e"=1]
+"libts/tslib" -> "boundarydevices/imx_usb_loader" ["e"=1]
 "uptane/obsolete-reference-implementation" -> "advancedtelematic/aktualizr"
 "uptane/obsolete-reference-implementation" -> "uptane/uptane-standard" ["e"=1]
 "uptane/obsolete-reference-implementation" -> "frankie-zeng/uptane-django"
@@ -461,6 +496,8 @@ digraph G {
 "mendersoftware/mender-artifact" -> "mendersoftware/mender-docs"
 "rust-embedded/meta-rust-bin" -> "meta-rust/meta-rust"
 "rust-embedded/meta-rust-bin" -> "meta-rust/cargo-bitbake"
+"theupdateframework/python-tuf" -> "uptane/obsolete-reference-implementation" ["e"=1]
+"ErichStyger/mcuoneclipse" -> "nxp-mcuxpresso/mcux-sdk" ["e"=1]
 "rauc/meta-rauc" -> "rauc/meta-rauc-community"
 "rauc/meta-rauc" -> "rauc/rauc"
 "rauc/meta-rauc" -> "mendersoftware/meta-mender"
@@ -475,6 +512,8 @@ digraph G {
 "rauc/meta-rauc" -> "YoeDistro/yoe-distro"
 "rauc/meta-rauc" -> "kraj/meta-clang"
 "Linutronix/elbe" -> "ilbers/isar"
+"systemd/casync" -> "rauc/rauc" ["e"=1]
+"systemd/casync" -> "rauc/meta-rauc" ["e"=1]
 "advancedtelematic/meta-updater" -> "advancedtelematic/aktualizr"
 "advancedtelematic/meta-updater" -> "advancedtelematic/ota-community-edition"
 "advancedtelematic/meta-updater" -> "foundriesio/meta-lmp"
@@ -485,8 +524,12 @@ digraph G {
 "eclipse/hawkbit-examples" -> "eclipse-hawkbit/hawkbit-extensions"
 "yoctoproject/vscode-bitbake" -> "tree-sitter-grammars/tree-sitter-bitbake"
 "eclipse-hawkbit/hawkbit-extensions" -> "eclipse/hawkbit-examples"
+"eclipse-ditto/ditto" -> "eclipse-hawkbit/hawkbit" ["e"=1]
+"mkj/dropbear" -> "rauc/rauc" ["e"=1]
+"awakecoding/FreeRDP-Manuals" -> "Freescale/meta-freescale-3rdparty" ["e"=1]
 "intel/de10-nano-hardware" -> "intel/meta-de10-nano"
 "nxp-mcuxpresso/mcuxsdk-manifests" -> "nxp-mcuxpresso/mcuxsdk-core"
+"bootlin/elixir" -> "pengutronix/genimage" ["e"=1]
 "labgrid-project/labgrid" -> "rauc/rauc"
 "labgrid-project/labgrid" -> "siemens/kas"
 "labgrid-project/labgrid" -> "pengutronix/genimage"
@@ -523,6 +566,9 @@ digraph G {
 "siemens/kas" -> "openembedded/meta-openembedded"
 "siemens/kas" -> "intel/bmap-tools"
 "siemens/kas" -> "STMicroelectronics/meta-st-stm32mp" ["e"=1]
+"buildroot/buildroot" -> "sbabic/swupdate" ["e"=1]
+"go-debos/debos" -> "ilbers/isar" ["e"=1]
+"go-debos/debos" -> "Linutronix/elbe" ["e"=1]
 "sbabic/meta-swupdate-boards" -> "sbabic/meta-swupdate"
 "Share-Board/ShareBoard-iMXRT1050" ["l"="-16.594,-44.841"]
 "ianhom/ShareBoard" ["l"="-16.616,-44.854"]
@@ -535,38 +581,47 @@ digraph G {
 "mendersoftware/mender-artifact" ["l"="-16.684,-44.678"]
 "mendersoftware/deployments" ["l"="-16.675,-44.703"]
 "mendersoftware/mender-docs" ["l"="-16.671,-44.673"]
+"antmicro/jetson-nano-baseboard" ["l"="-17.99,-42.255", "c"=55]
+"OE4T/meta-tegra" ["l"="-16.694,-44.609"]
+"bootlin/training-materials" ["l"="-22.544,-24.037", "c"=496]
+"agherzan/meta-raspberrypi" ["l"="-16.665,-44.635"]
+"sbabic/swupdate" ["l"="-16.617,-44.671"]
+"siemens/kas" ["l"="-16.61,-44.617"]
+"pengutronix/genimage" ["l"="-16.54,-44.644"]
+"YoeDistro/yoe-distro" ["l"="-16.635,-44.588"]
+"bootlin/snagboot" ["l"="-16.495,-44.625"]
+"openembedded/openembedded-core" ["l"="-16.637,-44.626"]
+"crops/poky-container" ["l"="-16.665,-44.582"]
 "rauc/rauc-hawkbit-updater" ["l"="-16.591,-44.667"]
 "rauc/rauc-hawkbit" ["l"="-16.594,-44.677"]
+"FreeRDP/FreeRDP-old" ["l"="7.629,-4.22", "c"=1211]
+"Freescale/meta-freescale-3rdparty" ["l"="-16.557,-44.681"]
 "intel/ozone-wayland" ["l"="-16.821,-44.657"]
 "Igalia/chromium" ["l"="-16.773,-44.651"]
-"sbabic/swupdate" ["l"="-16.617,-44.671"]
 "rauc/rauc" ["l"="-16.593,-44.652"]
 "eclipse-hawkbit/hawkbit" ["l"="-16.614,-44.692"]
 "mendersoftware/mender" ["l"="-16.643,-44.685"]
 "sbabic/meta-swupdate" ["l"="-16.662,-44.658"]
-"siemens/kas" ["l"="-16.61,-44.617"]
-"agherzan/meta-raspberrypi" ["l"="-16.665,-44.635"]
 "openembedded/meta-openembedded" ["l"="-16.641,-44.638"]
 "nxp-imx/mfgtools" ["l"="-16.57,-44.724"]
-"mcu-tools/mcuboot" ["l"="-17.762,-43.129"]
-"fwup-home/fwup" ["l"="4.272,15.244"]
-"ostreedev/ostree" ["l"="-16.93,-2.766"]
-"buildroot/buildroot" ["l"="-17.777,-43.285"]
-"vsergeev/c-periphery" ["l"="-17.718,-43.021"]
+"mcu-tools/mcuboot" ["l"="-17.762,-43.129", "c"=55]
+"fwup-home/fwup" ["l"="4.272,15.244", "c"=44]
+"ostreedev/ostree" ["l"="-16.93,-2.766", "c"=772]
+"buildroot/buildroot" ["l"="-17.777,-43.285", "c"=55]
+"vsergeev/c-periphery" ["l"="-17.718,-43.021", "c"=55]
 "sbabic/meta-swupdate-boards" ["l"="-16.657,-44.672"]
 "mendersoftware/meta-mender" ["l"="-16.648,-44.654"]
-"openembedded/openembedded-core" ["l"="-16.637,-44.626"]
+"eclipse-kura/kura" ["l"="-17.728,-44.874", "c"=550]
+"STMicroelectronics/meta-st-stm32mp" ["l"="-18.245,-43.08", "c"=55]
 "openembedded/bitbake" ["l"="-16.603,-44.634"]
 "yoctoproject/poky" ["l"="-16.633,-44.608"]
 "kraj/meta-clang" ["l"="-16.672,-44.623"]
 "meta-qt5/meta-qt5" ["l"="-16.625,-44.651"]
 "OSSystems/meta-browser" ["l"="-16.692,-44.642"]
 "openembedded/openembedded" ["l"="-16.608,-44.602"]
-"OE4T/meta-tegra" ["l"="-16.694,-44.609"]
 "Freescale/meta-fsl-arm" ["l"="-16.57,-44.671"]
 "rauc/meta-rauc" ["l"="-16.624,-44.632"]
 "Freescale/meta-freescale" ["l"="-16.566,-44.692"]
-"STMicroelectronics/meta-st-stm32mp" ["l"="-18.245,-43.08"]
 "riscv/meta-riscv" ["l"="-16.658,-44.616"]
 "priv-kweihmann/oelint-adv" ["l"="-16.584,-44.583"]
 "Freescale/meta-freescale-distro" ["l"="-16.555,-44.67"]
@@ -574,22 +629,21 @@ digraph G {
 "Freescale/libimxvpuapi" ["l"="-16.501,-44.701"]
 "Freescale/kernel-module-imx-gpu-viv" ["l"="-16.457,-44.694"]
 "Gateworks/gst-gateworks-apps" ["l"="-16.488,-44.683"]
-"Freescale/meta-freescale-3rdparty" ["l"="-16.557,-44.681"]
+"RockySong/micropython-rocky" ["l"="-17.418,-43.055", "c"=55]
+"libconfuse/libconfuse" ["l"="-18.105,-43.255", "c"=55]
 "priv-kweihmann/meta-sca" ["l"="-16.57,-44.544"]
 "Freed-Wu/bitbake-language-server" ["l"="-16.569,-44.559"]
 "Freescale/libimxdmabuffer" ["l"="-16.471,-44.705"]
 "foundriesio/docs" ["l"="-16.763,-44.736"]
 "foundriesio/aktualizr-lite" ["l"="-16.76,-44.747"]
 "foundriesio/lmp-manifest" ["l"="-16.747,-44.741"]
-"sifiveinc/freedom-u-sdk" ["l"="31.659,-3.97"]
+"sifiveinc/freedom-u-sdk" ["l"="31.659,-3.97", "c"=188]
 "meta-rust/meta-rust" ["l"="-16.695,-44.628"]
-"sifiveinc/meta-sifive" ["l"="31.614,-4.004"]
-"riscv/riscv-debug-spec" ["l"="31.662,-3.806"]
-"riscv-software-src/opensbi" ["l"="31.692,-3.914"]
-"linux-sunxi/meta-sunxi" ["l"="-16.582,-43.998"]
-"crops/poky-container" ["l"="-16.665,-44.582"]
-"YoeDistro/yoe-distro" ["l"="-16.635,-44.588"]
-"sifive/freedom-e-sdk" ["l"="31.676,-3.938"]
+"sifiveinc/meta-sifive" ["l"="31.614,-4.004", "c"=188]
+"riscv/riscv-debug-spec" ["l"="31.662,-3.806", "c"=188]
+"riscv-software-src/opensbi" ["l"="31.692,-3.914", "c"=188]
+"linux-sunxi/meta-sunxi" ["l"="-16.582,-43.998", "c"=1166]
+"sifive/freedom-e-sdk" ["l"="31.676,-3.938", "c"=188]
 "advancedtelematic/ota-community-edition" ["l"="-16.685,-44.719"]
 "advancedtelematic/aktualizr" ["l"="-16.658,-44.71"]
 "openembedded/meta-oe-do-not-use" ["l"="-16.606,-44.582"]
@@ -614,6 +668,9 @@ digraph G {
 "balena-io-experimental/jetson-sample-new" ["l"="-16.796,-44.579"]
 "mendersoftware/meta-mender-community" ["l"="-16.643,-44.665"]
 "foundriesio/meta-lmp" ["l"="-16.737,-44.729"]
+"githubuser0xFFFF/QtFreeVirtualKeyboard" ["l"="-20.326,-27.679", "c"=107]
+"mvp/uhubctl" ["l"="-17.912,-43.103", "c"=55]
+"labgrid-project/labgrid" ["l"="-16.546,-44.616"]
 "zangman/de10-nano" ["l"="-16.757,-44.358"]
 "robseb/rsyocto" ["l"="-16.759,-44.379"]
 "intel-iot-devkit/terasic-de10-nano-kit" ["l"="-16.769,-44.331"]
@@ -622,6 +679,7 @@ digraph G {
 "robseb/meta-intelfpga" ["l"="-16.722,-44.433"]
 "robseb/socfpgaPlatformGenerator" ["l"="-16.774,-44.39"]
 "robseb/Django2FPGAdemo" ["l"="-16.739,-44.384"]
+"avahi/avahi" ["l"="3.27,-7.417", "c"=0]
 "meta-rust/cargo-bitbake" ["l"="-16.732,-44.619"]
 "rust-embedded/meta-rust-bin" ["l"="-16.739,-44.631"]
 "Agilent/yb" ["l"="-16.674,-44.596"]
@@ -629,40 +687,41 @@ digraph G {
 "siemens/meta-iot2000" ["l"="-16.489,-44.528"]
 "ilbers/isar" ["l"="-16.552,-44.572"]
 "siemens/efibootguard" ["l"="-16.533,-44.537"]
-"fkromer/awesome-yocto-project" ["l"="-18.044,-42.769"]
+"fkromer/awesome-yocto-project" ["l"="-18.044,-42.769", "c"=55]
 "robseb/PiP2Bitbake" ["l"="-16.684,-44.488"]
 "OE4T/tegra-demo-distro" ["l"="-16.729,-44.59"]
 "OE4T/meta-tegra-community" ["l"="-16.712,-44.59"]
 "OE4T/linux-tegra-5.10" ["l"="-16.726,-44.604"]
 "OE4T/tegra-boot-tools" ["l"="-16.75,-44.572"]
 "aws4embeddedlinux/meta-aws" ["l"="-16.655,-44.6"]
-"awslabs/aws-iot-greengrass-accelerators" ["l"="12.101,-3.19"]
+"awslabs/aws-iot-greengrass-accelerators" ["l"="12.101,-3.19", "c"=734]
 "aws4embeddedlinux/meta-aws-demos" ["l"="-16.695,-44.56"]
 "rauc/meta-rauc-community" ["l"="-16.582,-44.642"]
+"pythops/jetson-image" ["l"="53.182,32.394", "c"=251]
 "nxp-mcuxpresso/sbl" ["l"="-16.569,-44.856"]
 "meta-debian/meta-debian" ["l"="-16.58,-44.599"]
 "florolf/casync-nano" ["l"="-16.574,-44.615"]
 "threexc/yocto-tekton" ["l"="-16.545,-44.602"]
+"balena-os/meta-balena" ["l"="40.838,6.639", "c"=602]
 "nxp-mcuxpresso/mcux-sdk-examples" ["l"="-16.559,-44.89"]
 "nxp-mcuxpresso/mcuxsdk-manifests" ["l"="-16.516,-44.88"]
-"nxp-mcuxpresso/rpmsg-lite" ["l"="-17.864,-43.161"]
+"nxp-mcuxpresso/rpmsg-lite" ["l"="-17.864,-43.161", "c"=55]
 "JayHeng/RT-UFL" ["l"="-16.563,-44.845"]
-"pyocd/pyOCD" ["l"="-17.691,-43.128"]
-"eclipse-threadx/usbx" ["l"="-18.248,-41.823"]
+"pyocd/pyOCD" ["l"="-17.691,-43.128", "c"=55]
+"eclipse-threadx/usbx" ["l"="-18.248,-41.823", "c"=1009]
 "JayHeng/MCU-CodingStyleChecker" ["l"="-16.536,-44.886"]
-"ARM-software/CMSIS-FreeRTOS" ["l"="-17.82,-43.115"]
-"EmbeddedRPC/erpc" ["l"="-17.815,-43.089"]
-"picolibc/picolibc" ["l"="-17.835,-43.108"]
-"labgrid-project/labgrid" ["l"="-16.546,-44.616"]
-"systemd/casync" ["l"="-16.981,-2.667"]
-"pengutronix/genimage" ["l"="-16.54,-44.644"]
+"ARM-software/CMSIS-FreeRTOS" ["l"="-17.82,-43.115", "c"=55]
+"EmbeddedRPC/erpc" ["l"="-17.815,-43.089", "c"=55]
+"picolibc/picolibc" ["l"="-17.835,-43.108", "c"=55]
+"systemd/casync" ["l"="-16.981,-2.667", "c"=772]
 "barebox/barebox" ["l"="-16.509,-44.653"]
 "jumpnow/meta-rpi" ["l"="-16.694,-44.66"]
-"bootlin/snagboot" ["l"="-16.495,-44.625"]
+"stevehoover/LF-Building-a-RISC-V-CPU-Core" ["l"="31.768,-3.634", "c"=188]
 "nxp-imx/meta-imx" ["l"="-16.576,-44.739"]
 "Freescale/linux-fslc" ["l"="-16.539,-44.721"]
 "Freescale/u-boot-fslc" ["l"="-16.553,-44.715"]
 "Freescale/fsl-community-bsp-platform" ["l"="-16.533,-44.704"]
+"eclipse/vorto" ["l"="-17.835,-44.871", "c"=550]
 "qualcomm-linux/meta-qcom-hwe" ["l"="-16.752,-44.702"]
 "altera-fpga/linux-socfpga" ["l"="-16.81,-44.323"]
 "altera-fpga/u-boot-socfpga" ["l"="-16.827,-44.306"]
@@ -670,14 +729,16 @@ digraph G {
 "kraj/meta-altera" ["l"="-16.834,-44.339"]
 "altera-opensource/meta-altera" ["l"="-16.832,-44.318"]
 "intel/meta-de10-nano" ["l"="-16.783,-44.32"]
-"ikwzm/FPGA-SoC-Linux" ["l"="32.55,-2.673"]
+"ikwzm/FPGA-SoC-Linux" ["l"="32.55,-2.673", "c"=561]
 "sahandKashani/SoC-FPGA-Design-Guide" ["l"="-16.851,-44.321"]
 "altera-opensource/ghrd-socfpga" ["l"="-16.811,-44.294"]
 "altera-opensource/intel-socfpga-hwlib" ["l"="-16.814,-44.276"]
+"Igalia/meta-webkit" ["l"="40.702,6.628", "c"=602]
 "Freescale/fsl-community-bsp-base" ["l"="-16.523,-44.678"]
 "boundarydevices/imx_usb_loader" ["l"="-16.514,-44.735"]
 "Freescale/Documentation" ["l"="-16.501,-44.714"]
 "yoctoproject/vscode-bitbake" ["l"="-16.613,-44.562"]
+"google/openhtf" ["l"="-18.126,-43.416", "c"=55]
 "boundarydevices/u-boot" ["l"="-16.47,-44.741"]
 "nxp-imx/imx-kobs" ["l"="-16.504,-44.763"]
 "alexandrebelloni/whoosh" ["l"="-16.482,-44.761"]
@@ -687,58 +748,62 @@ digraph G {
 "nxp-imx/imx-uuc" ["l"="-16.531,-44.756"]
 "nxp-imx/uboot-imx" ["l"="-16.559,-44.738"]
 "nxp-imx/linux-imx" ["l"="-16.546,-44.743"]
-"eclipse-hono/hono" ["l"="-17.816,-44.878"]
-"eclipse/vorto" ["l"="-17.835,-44.871"]
-"eclipse-ditto/ditto" ["l"="-17.821,-44.858"]
+"eclipse-hono/hono" ["l"="-17.816,-44.878", "c"=550]
+"eclipse-ditto/ditto" ["l"="-17.821,-44.858", "c"=550]
 "eclipse/hawkbit-examples" ["l"="-16.625,-44.734"]
-"eclipse-kura/kura" ["l"="-17.728,-44.874"]
-"eclipse/packages" ["l"="-17.855,-44.867"]
+"eclipse/packages" ["l"="-17.855,-44.867", "c"=550]
 "bosch-io/hawkbit" ["l"="-16.613,-44.72"]
-"eclipse-wakaama/wakaama" ["l"="-17.84,-44.931"]
-"clearlinux/swupd-client" ["l"="-15.285,-0.758"]
-"Igalia/meta-webkit" ["l"="40.702,6.628"]
+"eclipse-wakaama/wakaama" ["l"="-17.84,-44.931", "c"=550]
+"clearlinux/swupd-client" ["l"="-15.285,-0.758", "c"=152]
 "Igalia/meta-browser" ["l"="-16.742,-44.65"]
-"WebPlatformForEmbedded/meta-wpe" ["l"="40.719,6.629"]
-"meta-flutter/meta-flutter" ["l"="59.716,-22.695"]
+"WebPlatformForEmbedded/meta-wpe" ["l"="40.719,6.629", "c"=602]
+"meta-flutter/meta-flutter" ["l"="59.716,-22.695", "c"=17]
 "advancedtelematic/rvi_sota_server" ["l"="-16.669,-44.736"]
 "advancedtelematic/rvi_sota_client" ["l"="-16.685,-44.754"]
 "etnaviv/vivante_kernel_drivers" ["l"="-16.433,-44.694"]
 "NVIDIA/edk2-nvidia" ["l"="-16.77,-44.608"]
 "OE4T/linux-tegra-4.9" ["l"="-16.728,-44.575"]
-"NVIDIA/jetson-rdma-picoevb" ["l"="32.659,-3.803"]
+"NVIDIA/jetson-rdma-picoevb" ["l"="32.659,-3.803", "c"=180]
 "NVIDIA/edk2" ["l"="-16.804,-44.604"]
 "boundarydevices/meta-boundary" ["l"="-16.444,-44.74"]
 "nxp-mcuxpresso/sfw" ["l"="-16.582,-44.868"]
 "jumpnow/meta-bbb" ["l"="-16.749,-44.673"]
-"jumpnow/buildroot" ["l"="42.99,7.633"]
+"jumpnow/buildroot" ["l"="42.99,7.633", "c"=818]
 "boundarydevices/boundary-bsp-platform" ["l"="-16.423,-44.749"]
 "aws/aws-iot-fleetwise-edge" ["l"="-16.722,-44.534"]
+"devicetree-org/devicetree-specification" ["l"="-17.818,-43.252", "c"=55]
 "MentorEmbedded/meta-openwrt" ["l"="-16.716,-44.556"]
 "nxp-imx/imx-manifest" ["l"="-16.563,-44.753"]
 "Linutronix/elbe" ["l"="-16.522,-44.577"]
 "nxp-imx/imx-mkimage" ["l"="-16.58,-44.764"]
 "nxp-imx/imx-atf" ["l"="-16.594,-44.76"]
-"libts/tslib" ["l"="-17.681,-43.05"]
+"libts/tslib" ["l"="-17.681,-43.05", "c"=55]
+"starfive-tech/VisionFive2" ["l"="31.655,-4.204", "c"=188]
 "pengutronix/umpf" ["l"="-16.477,-44.653"]
 "coldnew/docker-yocto" ["l"="-16.657,-44.534"]
 "crops/docker-win-mac-docs" ["l"="-16.674,-44.559"]
 "bosch-io/vorto" ["l"="-16.611,-44.735"]
 "bootlin/simplest-yocto-setup" ["l"="-16.491,-44.609"]
-"githubuser0xFFFF/QtFreeVirtualKeyboard" ["l"="-20.326,-27.679"]
 "schnitzeltony/meta-qt5-extra" ["l"="-16.674,-44.664"]
 "crops/extsdk-container" ["l"="-16.682,-44.548"]
 "uptane/obsolete-reference-implementation" ["l"="-16.647,-44.728"]
-"uptane/uptane-standard" ["l"="8.107,-11.584"]
+"uptane/uptane-standard" ["l"="8.107,-11.584", "c"=285]
 "frankie-zeng/uptane-django" ["l"="-16.66,-44.752"]
 "EmbeddedRPC/erpc-imx-demos" ["l"="-16.502,-44.797"]
 "nxp-mcuxpresso/rpmsg-sysfs" ["l"="-16.516,-44.781"]
 "boardswarm/boardswarm" ["l"="-16.514,-44.61"]
+"theupdateframework/python-tuf" ["l"="8.107,-11.511", "c"=285]
+"ErichStyger/mcuoneclipse" ["l"="-17.628,-43.133", "c"=55]
 "jiazhang0/meta-secure-core" ["l"="-16.712,-44.64"]
 "eclipse-hawkbit/hawkbit-extensions" ["l"="-16.63,-44.751"]
 "tree-sitter-grammars/tree-sitter-bitbake" ["l"="-16.604,-44.538"]
+"mkj/dropbear" ["l"="-17.892,-43.305", "c"=55]
+"awakecoding/FreeRDP-Manuals" ["l"="7.643,-4.213", "c"=1211]
 "intel/de10-nano-hardware" ["l"="-16.787,-44.336"]
 "nxp-mcuxpresso/mcuxsdk-core" ["l"="-16.504,-44.891"]
+"bootlin/elixir" ["l"="-45.181,-34.691", "c"=282]
 "pdudaemon/pdudaemon" ["l"="-16.515,-44.597"]
 "nxp-imx/gtec-demo-framework" ["l"="-16.399,-44.7"]
 "intel/bmap-tools" ["l"="-16.56,-44.587"]
+"go-debos/debos" ["l"="-16.874,-2.695", "c"=772]
 }

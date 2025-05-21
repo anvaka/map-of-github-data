@@ -1,4 +1,5 @@
 digraph G {
+"LUX-Core/lux" -> "openshift/ansible-service-broker" ["e"=1]
 "cloudfoundry/cli" -> "cloudfoundry/bosh"
 "cloudfoundry/cli" -> "cloudfoundry-attic/cf-release"
 "cloudfoundry/cli" -> "cloudfoundry/java-buildpack"
@@ -14,6 +15,9 @@ digraph G {
 "cloudfoundry/cli" -> "watson-developer-cloud/node-sdk" ["e"=1]
 "cloudfoundry/cli" -> "vmware-archive/pcfdev"
 "cloudfoundry/cli" -> "cloudfoundry/multiapps-cli-plugin" ["e"=1]
+"concourse/concourse" -> "egen/concourse-tutorial" ["e"=1]
+"concourse/concourse" -> "cloudfoundry/bosh" ["e"=1]
+"concourse/concourse" -> "vmware-archive/concourse-pipeline-samples" ["e"=1]
 "cloudfoundry-incubator/docker-boshrelease" -> "cloudfoundry-community/cf-containers-broker" ["e"=1]
 "cloudfoundry-incubator/docker-boshrelease" -> "cloudfoundry-community/vault-boshrelease"
 "cloudfoundry-incubator/docker-boshrelease" -> "cloudfoundry/haproxy-boshrelease"
@@ -53,6 +57,9 @@ digraph G {
 "cloudfoundry/cf-mysql-release" -> "pivotal-cf/cf-redis-release"
 "cloudfoundry/cf-mysql-release" -> "cloudfoundry-attic/cf-riak-cs-release"
 "pivotal-cf/pivotal-ui" -> "cloudfoundry/bosh-google-cpi-release"
+"ansible-community/ansible-bender" -> "ansibleplaybookbundle/ansible-playbook-bundle" ["e"=1]
+"projectcontour/gimbal" -> "cloudfoundry-incubator/kubo-deployment" ["e"=1]
+"knative/eventing" -> "projectriff/riff" ["e"=1]
 "google/kf" -> "pivotal-cf/om"
 "google/kf" -> "cloudfoundry/eirini"
 "google/kf" -> "cloudfoundry-incubator/kubo-deployment"
@@ -82,6 +89,10 @@ digraph G {
 "cloudfoundry-samples/spring-music" -> "cloudfoundry/bosh-bootloader"
 "cloudfoundry-samples/spring-music" -> "vmware-archive/PivotalMySQLWeb"
 "cloudfoundry-incubator/admin-ui" -> "cloudfoundry-community/admin-ui-boshrelease"
+"buildpacks-community/kpack" -> "cloudfoundry/cf-for-k8s" ["e"=1]
+"buildpacks-community/kpack" -> "cloudfoundry/korifi" ["e"=1]
+"buildpacks-community/kpack" -> "pivotal-cf/om" ["e"=1]
+"buildpacks-community/kpack" -> "google/kf" ["e"=1]
 "cloudfoundry-incubator/quarks-operator" -> "cloudfoundry-incubator/kubecf"
 "cloudfoundry-incubator/quarks-operator" -> "cloudfoundry-incubator/fissile"
 "luan/nvim" -> "pivotal-cf/pairist"
@@ -89,12 +100,14 @@ digraph G {
 "spring-attic/head-first-reactive-with-spring-and-reactor" -> "Tanzu-Solutions-Engineering/devops-workshop"
 "cloudfoundry-community/logsearch-for-cloudfoundry" -> "cloudfoundry-community/logsearch-boshrelease"
 "cloudfoundry-community/logsearch-for-cloudfoundry" -> "logsearch/logsearch-boshrelease"
+"knative/build" -> "projectriff/riff" ["e"=1]
 "genevieve/leftovers" -> "vmware-archive/terraforming-gcp"
 "EngineerBetter/control-tower" -> "EngineerBetter/concourse-up"
 "EngineerBetter/control-tower" -> "cloudfoundry/credhub-cli"
 "EngineerBetter/control-tower" -> "cf-toolsuite/cf-butler"
 "EngineerBetter/control-tower" -> "ljfranklin/terraform-resource"
 "EngineerBetter/control-tower" -> "egen/bucc"
+"kelseyhightower/grafeas-tutorial" -> "kelseyhightower/riff-tutorial" ["e"=1]
 "kelseyhightower/riff-tutorial" -> "marios-code-path/intro-to-riff"
 "cloudfoundry/docs-bosh" -> "cloudfoundry/docs-book-cloudfoundry"
 "PruvoNet/squiss-ts" -> "regevbr/busywait.js"
@@ -163,6 +176,10 @@ digraph G {
 "cloudfoundry/docs-cf-admin" -> "cloudfoundry/docs-running-cf"
 "cloudfoundry/docs-cloudfoundry-concepts" -> "cloudfoundry/docs-running-cf"
 "cloudfoundry/docs-cloudfoundry-concepts" -> "cloudfoundry/docs-cf-admin"
+"mitreid-connect/OpenID-Connect-Java-Spring-Server" -> "cloudfoundry/uaa" ["e"=1]
+"appc/spec" -> "cloudfoundry-attic/lattice-release" ["e"=1]
+"spotify/helios" -> "cloudfoundry-attic/lattice-release" ["e"=1]
+"spring-cloud/spring-cloud-bus" -> "spring-cloud/spring-cloud-open-service-broker" ["e"=1]
 "concourse/concourse-chart" -> "concourse-helm3-resource/concourse-helm3-resource"
 "concourse/concourse-chart" -> "concourse/oci-build-task"
 "concourse/docker-image-resource" -> "concourse/registry-image-resource"
@@ -176,6 +193,12 @@ digraph G {
 "cloudfoundry/staticfile-buildpack" -> "cloudfoundry/java-buildpack"
 "cloudfoundry/staticfile-buildpack" -> "cloudfoundry/diego-design-notes"
 "cloudfoundry/dockerapplifecycle" -> "cloudfoundry/route-emitter"
+"vmware-tanzu/pinniped" -> "vmware-tanzu-labs/cf-mgmt" ["e"=1]
+"paz-sh/paz" -> "cloudfoundry-attic/lattice-release" ["e"=1]
+"projectatomic/atomic" -> "openshift/ansible-service-broker" ["e"=1]
+"klen/graphite-beacon" -> "cloudfoundry-attic/lattice-release" ["e"=1]
+"watson-developer-cloud/node-sdk" -> "cloudfoundry/cli" ["e"=1]
+"adrianco/spigo" -> "cloudfoundry-attic/lattice-release" ["e"=1]
 "cloudfoundry/cf-for-k8s" -> "cloudfoundry-incubator/kubecf"
 "cloudfoundry/cf-for-k8s" -> "cloudfoundry/korifi"
 "cloudfoundry/cf-for-k8s" -> "cloudfoundry/cf-deployment"
@@ -256,6 +279,8 @@ digraph G {
 "concourse/git-resource" -> "concourse/time-resource"
 "cloudfoundry/noaa" -> "cloudfoundry/dropsonde"
 "BrainBackup/bb8" -> "regevbr/busywait.js"
+"kontena/kontena" -> "cloudfoundry-attic/lattice-release" ["e"=1]
+"square/keywhiz" -> "cloudfoundry-attic/lattice-release" ["e"=1]
 "cloudfoundry/korifi" -> "cloudfoundry/cf-for-k8s"
 "cloudfoundry/korifi" -> "cloudfoundry/cloud-service-broker"
 "cloudfoundry/korifi" -> "cloudfoundry/cf-deployment"
@@ -335,6 +360,7 @@ digraph G {
 "cloudfoundry/prometheus-boshrelease" -> "cloudfoundry/bosh-deployment"
 "cloudfoundry/prometheus-boshrelease" -> "cloudfoundry/bpm-release"
 "cloudfoundry/prometheus-boshrelease" -> "cloudfoundry/firehose_exporter"
+"codahale/sneaker" -> "cloudfoundry-attic/lattice-release" ["e"=1]
 "geofffranks/spruce" -> "cloudfoundry-attic/bosh-notes"
 "geofffranks/spruce" -> "genesis-community/genesis"
 "geofffranks/spruce" -> "herrjulz/aviator"
@@ -351,10 +377,12 @@ digraph G {
 "geofffranks/spruce" -> "cloudfoundry-incubator/kubo-deployment"
 "geofffranks/spruce" -> "cloudfoundry-attic/bosh-workspace"
 "cloudfoundry-community/slack-notification-resource" -> "concourse/docker-image-resource"
+"harbur/captain" -> "cloudfoundry-attic/lattice-release" ["e"=1]
 "icclab/cf-webui" -> "pivotal-cf/cf-redis-release"
 "icclab/cf-webui" -> "cloudfoundry-community/autosleep"
 "cloudfoundry-attic/bosh-notes" -> "cppforlife/turbulence-release"
 "cloudfoundry-attic/bosh-notes" -> "cloudfoundry-community/bosh-gen"
+"cloudfoundry/java-buildpack-memory-calculator" -> "cloudfoundry/java-buildpack" ["e"=1]
 "git-duet/git-duet" -> "pivotal/workstation-setup"
 "git-duet/git-duet" -> "kejadlen/git-together"
 "git-duet/git-duet" -> "cloudfoundry/bosh-agent"
@@ -404,6 +432,7 @@ digraph G {
 "cloudfoundry/stratos" -> "cloudfoundry-incubator/quarks-operator"
 "cloudfoundry/stratos" -> "cloudfoundry-incubator/kubecf"
 "cloudfoundry/stratos" -> "concourse/concourse-bosh-deployment"
+"RackHD/RackHD" -> "cloudfoundry-incubator/kubo-deployment" ["e"=1]
 "spring-cloud/spring-cloud-open-service-broker" -> "spring-attic/cloudfoundry-service-broker"
 "spring-cloud/spring-cloud-open-service-broker" -> "cloudfoundry-community/spring-boot-cf-service-broker"
 "spring-cloud/spring-cloud-open-service-broker" -> "spring-cloud/spring-cloud-cloudfoundry" ["e"=1]
@@ -469,9 +498,14 @@ digraph G {
 "krujos/willitconnect" -> "cloudfoundry-community/homebrew-cf"
 "william-tran/freddys-bbq" -> "vmware-archive/PCF-Workshop-101"
 "william-tran/freddys-bbq" -> "pivotal-cf/landingpage"
+"william-tran/microservice-security" -> "pivotal-cf/identity-sample-apps" ["e"=1]
+"william-tran/microservice-security" -> "william-tran/freddys-bbq" ["e"=1]
 "SUSE/scf" -> "cloudfoundry-incubator/fissile"
 "cloudfoundry-attic/warden" -> "cloudfoundry-attic/dea_ng"
+"antoinejaussoin/retro-board" -> "vmware-archive/postfacto" ["e"=1]
+"reactor/lite-rx-api-hands-on" -> "spring-attic/head-first-reactive-with-spring-and-reactor" ["e"=1]
 "Tanzu-Solutions-Engineering/ephemerol" -> "vmware-archive/cf-community-workshop"
+"spring-cloud/spring-cloud-vault" -> "spring-cloud/spring-cloud-open-service-broker" ["e"=1]
 "concourse/concourse-pipeline-resource" -> "aequitas/concourse-http-api-resource"
 "concourse/concourse-pipeline-resource" -> "concourse/registry-image-resource"
 "concourse/concourse-pipeline-resource" -> "concourse/builder-task"
@@ -490,6 +524,9 @@ digraph G {
 "pivotal/workstation-setup" -> "cloudfoundry-incubator/cflocal"
 "cloudfoundry/app-autoscaler" -> "cloudfoundry/app-autoscaler-release"
 "cloudfoundry/app-autoscaler" -> "nttlabs/bosh-scaler"
+"egen/safe" -> "cloudfoundry-incubator/docker-boshrelease" ["e"=1]
+"egen/safe" -> "shieldproject/shield" ["e"=1]
+"egen/safe" -> "ljfranklin/terraform-resource" ["e"=1]
 "cloudfoundry/bosh-bootloader" -> "concourse/concourse-bosh-deployment"
 "cloudfoundry/bosh-bootloader" -> "vmware-archive/pcf-pipelines"
 "cloudfoundry/bosh-bootloader" -> "cloudfoundry/bosh-deployment"
@@ -541,7 +578,14 @@ digraph G {
 "openservicebrokerapi/servicebroker" -> "ansibleplaybookbundle/ansible-playbook-bundle"
 "openservicebrokerapi/servicebroker" -> "cloudfoundry/stratos"
 "openservicebrokerapi/servicebroker" -> "cloudfoundry-incubator/kubo-deployment"
+"kubernetes-retired/service-catalog" -> "openservicebrokerapi/servicebroker" ["e"=1]
+"kubernetes-retired/service-catalog" -> "pmorie/osb-starter-pack" ["e"=1]
+"kubernetes-retired/service-catalog" -> "kubernetes-retired/go-open-service-broker-client" ["e"=1]
+"openshift-evangelists/oc-cluster-wrapper" -> "fusor/catasb" ["e"=1]
+"gshipley/installcentos" -> "openshift/ansible-service-broker" ["e"=1]
 "vmwarepivotallabs/concourse-pcf-usage-report" -> "pivotalservices/concourse-credhub"
+"spring-cloud/spring-cloud-function" -> "projectriff/riff" ["e"=1]
+"SkeltonThatcher/run-book-template" -> "geofffranks/spruce" ["e"=1]
 "concourse/concourse-docker" -> "vmware-archive/concourse-pipeline-samples"
 "concourse/concourse-docker" -> "meAmidos/dcind"
 "concourse/concourse-docker" -> "egen/concourse-tutorial"
@@ -629,6 +673,7 @@ digraph G {
 "cloudfoundry-incubator/cflocal" -> "vmware-archive/pcf-pipelines"
 "cloudfoundry-incubator/cflocal" -> "cloudfoundry-community/vault-boshrelease"
 "cloudfoundry-incubator/cflocal" -> "cloudfoundry/bpm-release"
+"Haptic-Apps/Slide-iOS" -> "openshift/ansible-service-broker" ["e"=1]
 "cloudfoundry/gorouter" -> "cloudfoundry-attic/warden"
 "cloudfoundry/gorouter" -> "cloudfoundry/cloud_controller_ng"
 "cloudfoundry/gorouter" -> "cloudfoundry-attic/cf-release"
@@ -704,6 +749,7 @@ digraph G {
 "openshift/openshift-restclient-python" -> "openshift/openshift-tools" ["e"=1]
 "openshift/openshift-restclient-python" -> "openshift/ansible-service-broker"
 "openshift/openshift-restclient-python" -> "ansible/ansible-kubernetes-modules"
+"cncf/wg-serverless" -> "projectriff/riff" ["e"=1]
 "egen/bucc" -> "cf-toolsuite/cf-butler"
 "egen/bucc" -> "brightzheng100/platform-automation-pipelines"
 "egen/bucc" -> "vmware-archive/pcf-pipelines"
@@ -778,6 +824,8 @@ digraph G {
 "cloudfoundry/bpm-release" -> "bosh-cpis/bosh-kubernetes-cpi-release"
 "kubernetes-retired/go-open-service-broker-client" -> "openshift/open-service-broker-sdk"
 "vmwarepivotallabs/pcf-pipelines-maestro" -> "cf-toolsuite/cf-butler"
+"LUX-Core/lux" ["l"="-1.755,3.21", "c"=258]
+"openshift/ansible-service-broker" ["l"="8.07,-13.863"]
 "cloudfoundry/cli" ["l"="7.899,-13.709"]
 "cloudfoundry/bosh" ["l"="7.893,-13.757"]
 "cloudfoundry-attic/cf-release" ["l"="7.904,-13.728"]
@@ -787,15 +835,18 @@ digraph G {
 "cloudfoundry/uaa" ["l"="7.941,-13.689"]
 "cloudfoundry/cf-java-client" ["l"="7.907,-13.687"]
 "cloudfoundry/cloud_controller_ng" ["l"="7.944,-13.738"]
-"SAP-samples/cloud-cap-samples" ["l"="8.594,-13.681"]
-"SAP/ui5-tooling" ["l"="8.621,-13.628"]
+"SAP-samples/cloud-cap-samples" ["l"="8.594,-13.681", "c"=462]
+"SAP/ui5-tooling" ["l"="8.621,-13.628", "c"=462]
 "cloudfoundry/cf-for-k8s" ["l"="7.784,-13.757"]
-"SAP/cloud-mta-build-tool" ["l"="8.577,-13.622"]
-"watson-developer-cloud/node-sdk" ["l"="23.824,2.268"]
+"SAP/cloud-mta-build-tool" ["l"="8.577,-13.622", "c"=462]
+"watson-developer-cloud/node-sdk" ["l"="23.824,2.268", "c"=1094]
 "vmware-archive/pcfdev" ["l"="7.876,-13.685"]
-"cloudfoundry/multiapps-cli-plugin" ["l"="8.516,-13.634"]
+"cloudfoundry/multiapps-cli-plugin" ["l"="8.516,-13.634", "c"=462]
+"concourse/concourse" ["l"="8.095,-8.587", "c"=14]
+"egen/concourse-tutorial" ["l"="7.836,-13.663"]
+"vmware-archive/concourse-pipeline-samples" ["l"="7.802,-13.683"]
 "cloudfoundry-incubator/docker-boshrelease" ["l"="7.842,-13.8"]
-"cloudfoundry-community/cf-containers-broker" ["l"="9.152,-13.666"]
+"cloudfoundry-community/cf-containers-broker" ["l"="9.152,-13.666", "c"=462]
 "cloudfoundry-community/vault-boshrelease" ["l"="7.814,-13.789"]
 "cloudfoundry/haproxy-boshrelease" ["l"="7.887,-13.844"]
 "cloudfoundry-community/docker-registry-boshrelease" ["l"="7.849,-13.842"]
@@ -819,10 +870,15 @@ digraph G {
 "cloudfoundry-attic/cf-riak-cs-release" ["l"="7.985,-13.775"]
 "pivotal-cf/pivotal-ui" ["l"="7.676,-13.586"]
 "cloudfoundry/bosh-google-cpi-release" ["l"="7.772,-13.656"]
+"ansible-community/ansible-bender" ["l"="8.57,-12.295", "c"=600]
+"ansibleplaybookbundle/ansible-playbook-bundle" ["l"="8.047,-13.859"]
+"projectcontour/gimbal" ["l"="10.5,-10.279", "c"=740]
+"cloudfoundry-incubator/kubo-deployment" ["l"="7.839,-13.757"]
+"knative/eventing" ["l"="7.635,-8.521", "c"=14]
+"projectriff/riff" ["l"="7.812,-13.663"]
 "google/kf" ["l"="7.858,-13.805"]
 "pivotal-cf/om" ["l"="7.831,-13.718"]
 "cloudfoundry/eirini" ["l"="7.815,-13.812"]
-"cloudfoundry-incubator/kubo-deployment" ["l"="7.839,-13.757"]
 "cloudfoundry-incubator/cflocal" ["l"="7.814,-13.746"]
 "cloudfoundry-community/autosleep" ["l"="7.848,-13.791"]
 "cf-platform-eng/kibosh" ["l"="7.87,-13.837"]
@@ -847,6 +903,8 @@ digraph G {
 "vmware-archive/PivotalMySQLWeb" ["l"="7.933,-13.597"]
 "cloudfoundry-incubator/admin-ui" ["l"="7.967,-13.627"]
 "cloudfoundry-community/admin-ui-boshrelease" ["l"="7.992,-13.605"]
+"buildpacks-community/kpack" ["l"="9.716,-12.463", "c"=1195]
+"cloudfoundry/korifi" ["l"="7.757,-13.76"]
 "cloudfoundry-incubator/quarks-operator" ["l"="7.808,-13.797"]
 "cloudfoundry-incubator/kubecf" ["l"="7.795,-13.783"]
 "cloudfoundry-incubator/fissile" ["l"="7.826,-13.804"]
@@ -858,6 +916,7 @@ digraph G {
 "cloudfoundry-community/logsearch-for-cloudfoundry" ["l"="7.751,-13.779"]
 "cloudfoundry-community/logsearch-boshrelease" ["l"="7.714,-13.78"]
 "logsearch/logsearch-boshrelease" ["l"="7.712,-13.797"]
+"knative/build" ["l"="7.694,-8.555", "c"=14]
 "genevieve/leftovers" ["l"="7.679,-13.703"]
 "vmware-archive/terraforming-gcp" ["l"="7.765,-13.703"]
 "EngineerBetter/control-tower" ["l"="7.777,-13.685"]
@@ -866,6 +925,7 @@ digraph G {
 "cf-toolsuite/cf-butler" ["l"="7.765,-13.74"]
 "ljfranklin/terraform-resource" ["l"="7.784,-13.632"]
 "egen/bucc" ["l"="7.792,-13.735"]
+"kelseyhightower/grafeas-tutorial" ["l"="10.425,-9.975", "c"=740]
 "kelseyhightower/riff-tutorial" ["l"="7.753,-13.608"]
 "marios-code-path/intro-to-riff" ["l"="7.727,-13.587"]
 "cloudfoundry/docs-bosh" ["l"="8.08,-13.749"]
@@ -880,7 +940,6 @@ digraph G {
 "concourse/git-resource" ["l"="7.819,-13.542"]
 "jtarchie/github-pullrequest-resource" ["l"="7.841,-13.546"]
 "zlabjp/kubernetes-resource" ["l"="7.839,-13.567"]
-"vmware-archive/concourse-pipeline-samples" ["l"="7.802,-13.683"]
 "cloudfoundry/guardian" ["l"="8.04,-13.72"]
 "cloudfoundry-attic/garden-windows" ["l"="8.046,-13.702"]
 "cloudfoundry-attic/garden-linux" ["l"="8.011,-13.691"]
@@ -906,35 +965,42 @@ digraph G {
 "cloudfoundry-attic/cf-logmon" ["l"="7.89,-13.864"]
 "vmwarepivotallabs/pcf-pipelines-maestro" ["l"="7.78,-13.721"]
 "cloudfoundry/docs-deploying-cf" ["l"="8.193,-13.728"]
+"mitreid-connect/OpenID-Connect-Java-Spring-Server" ["l"="-2.59,11.722", "c"=15]
+"appc/spec" ["l"="5.72,-12.499", "c"=270]
+"cloudfoundry-attic/lattice-release" ["l"="7.961,-13.71"]
+"spotify/helios" ["l"="-2.311,12.05", "c"=15]
+"spring-cloud/spring-cloud-bus" ["l"="-5.129,9.329", "c"=703]
 "concourse/concourse-chart" ["l"="7.751,-13.454"]
 "concourse-helm3-resource/concourse-helm3-resource" ["l"="7.738,-13.426"]
 "cloudfoundry-community/slack-notification-resource" ["l"="7.814,-13.587"]
 "concourse/semver-resource" ["l"="7.808,-13.499"]
 "contraband/autopilot" ["l"="7.954,-13.888"]
 "cloudfoundry/dockerapplifecycle" ["l"="8.097,-13.667"]
-"cloudfoundry/korifi" ["l"="7.757,-13.76"]
+"vmware-tanzu/pinniped" ["l"="9.779,-12.565", "c"=1195]
+"paz-sh/paz" ["l"="6.27,-12.73", "c"=270]
+"projectatomic/atomic" ["l"="-17.64,-2.986", "c"=2006]
+"klen/graphite-beacon" ["l"="4.163,-7.324", "c"=0]
+"adrianco/spigo" ["l"="6.464,-13.291", "c"=837]
 "cloudfoundry/cf-k8s-networking" ["l"="7.731,-13.768"]
 "cloudfoundry/cloud-service-broker" ["l"="7.729,-13.718"]
 "pivotal/paving" ["l"="7.719,-13.754"]
-"buildpacks-community/kpack" ["l"="9.716,-12.463"]
-"Tanzu-Solutions-Engineering/tkg-lab" ["l"="9.754,-12.56"]
+"Tanzu-Solutions-Engineering/tkg-lab" ["l"="9.754,-12.56", "c"=1195]
 "odlp/antifreeze" ["l"="7.981,-13.906"]
 "bluemixgaragelondon/cf-blue-green-deploy" ["l"="7.967,-13.922"]
 "guidowb/cf-targets-plugin" ["l"="7.921,-13.906"]
-"cloudfoundry/java-buildpack-auto-reconfiguration" ["l"="2.734,-35.761"]
-"cloudfoundry-attic/vcap-tests" ["l"="2.737,-35.75"]
-"cloudfoundry-attic/vcap-test-assets" ["l"="2.714,-35.76"]
-"cloudfoundry-attic/vcap-services" ["l"="2.754,-35.751"]
-"cloudfoundry-attic/vmc" ["l"="2.754,-35.766"]
+"cloudfoundry/java-buildpack-auto-reconfiguration" ["l"="2.734,-35.761", "c"=171]
+"cloudfoundry-attic/vcap-tests" ["l"="2.737,-35.75", "c"=171]
+"cloudfoundry-attic/vcap-test-assets" ["l"="2.714,-35.76", "c"=171]
+"cloudfoundry-attic/vcap-services" ["l"="2.754,-35.751", "c"=171]
+"cloudfoundry-attic/vmc" ["l"="2.754,-35.766", "c"=171]
 "cloudfoundry-attic/cf-abacus" ["l"="7.879,-13.718"]
-"cloudfoundry-attic/lattice-release" ["l"="7.961,-13.71"]
-"mesosphere/mesos-dns" ["l"="6.414,-13.196"]
-"helm/helm-classic" ["l"="10.178,-10.088"]
+"mesosphere/mesos-dns" ["l"="6.414,-13.196", "c"=837]
+"helm/helm-classic" ["l"="10.178,-10.088", "c"=740]
 "cloudfoundry/gorouter" ["l"="7.968,-13.751"]
-"gliderlabs/connectable" ["l"="7.255,-12.984"]
+"gliderlabs/connectable" ["l"="7.255,-12.984", "c"=666]
 "cloudfoundry-community/bosh-gen" ["l"="7.863,-13.76"]
-"mesos/myriad" ["l"="6.339,-13.194"]
-"mantl/mantl" ["l"="6.501,-13.244"]
+"mesos/myriad" ["l"="6.339,-13.194", "c"=837]
+"mantl/mantl" ["l"="6.501,-13.244", "c"=837]
 "cloudfoundry/go-cfclient" ["l"="7.673,-13.783"]
 "cloudfoundry-community/gautocloud" ["l"="7.641,-13.793"]
 "cloudfoundry/bosh-openstack-cpi-release" ["l"="7.92,-13.816"]
@@ -946,30 +1012,32 @@ digraph G {
 "pivotal-cf/cf-rabbitmq-release" ["l"="7.97,-13.855"]
 "concourse/time-resource" ["l"="7.843,-13.503"]
 "cloudfoundry/dropsonde" ["l"="8.053,-13.749"]
+"kontena/kontena" ["l"="4.717,-37.64", "c"=1]
+"square/keywhiz" ["l"="10.093,-6.484", "c"=162]
 "cloudfoundry/prometheus-boshrelease" ["l"="7.818,-13.769"]
 "promregator/promregator" ["l"="7.689,-13.764"]
-"egen/concourse-tutorial" ["l"="7.836,-13.663"]
-"concourse/concourse" ["l"="8.095,-8.587"]
 "concourse/concourse-docker" ["l"="7.808,-13.625"]
 "geofffranks/spruce" ["l"="7.801,-13.762"]
-"mitreid-connect/OpenID-Connect-Java-Spring-Server" ["l"="-2.59,11.722"]
-"spring-attic/spring-security-oauth" ["l"="-2.751,11.816"]
-"spring-guides/tut-spring-security-and-angular-js" ["l"="25.869,-30.56"]
-"spring-projects/spring-authorization-server" ["l"="-2.657,11.787"]
-"william-tran/microservice-security" ["l"="26.002,-30.522"]
-"Baeldung/spring-security-oauth" ["l"="25.825,-30.586"]
-"wiselyman/uaa-zuul" ["l"="-1.335,10.128"]
-"spring-attic/authserver" ["l"="-5.065,9.463"]
+"spring-attic/spring-security-oauth" ["l"="-2.751,11.816", "c"=15]
+"spring-guides/tut-spring-security-and-angular-js" ["l"="25.869,-30.56", "c"=176]
+"spring-projects/spring-authorization-server" ["l"="-2.657,11.787", "c"=15]
+"william-tran/microservice-security" ["l"="26.002,-30.522", "c"=176]
+"Baeldung/spring-security-oauth" ["l"="25.825,-30.586", "c"=176]
+"wiselyman/uaa-zuul" ["l"="-1.335,10.128", "c"=296]
+"spring-attic/authserver" ["l"="-5.065,9.463", "c"=703]
 "FidelityInternational/chaos-galago" ["l"="7.897,-13.669"]
 "cloudfoundry-incubator/kubo-release" ["l"="7.853,-13.768"]
 "cloudfoundry/bosh-cli" ["l"="7.843,-13.778"]
 "openservicebrokerapi/servicebroker" ["l"="7.968,-13.797"]
 "cloudfoundry/cf_exporter" ["l"="7.794,-13.815"]
 "cloudfoundry/firehose_exporter" ["l"="7.784,-13.804"]
+"codahale/sneaker" ["l"="10.063,-6.453", "c"=162]
 "genesis-community/genesis" ["l"="7.73,-13.794"]
 "herrjulz/aviator" ["l"="7.748,-13.802"]
 "cloudfoundry-attic/bosh-workspace" ["l"="7.763,-13.787"]
+"harbur/captain" ["l"="6.294,-12.603", "c"=270]
 "icclab/cf-webui" ["l"="7.884,-13.82"]
+"cloudfoundry/java-buildpack-memory-calculator" ["l"="-2.269,11.899", "c"=15]
 "git-duet/git-duet" ["l"="7.832,-13.901"]
 "pivotal/workstation-setup" ["l"="7.785,-13.837"]
 "kejadlen/git-together" ["l"="7.841,-13.98"]
@@ -989,7 +1057,7 @@ digraph G {
 "mstine/CloudNativeArchitectureClass" ["l"="7.879,-13.625"]
 "vmware-archive/PCF-Workshop-101" ["l"="7.858,-13.61"]
 "Tanzu-Solutions-Engineering/pcf-ers-demo" ["l"="7.928,-13.557"]
-"shieldproject/shield-boshrelease" ["l"="7.191,-12.791"]
+"shieldproject/shield-boshrelease" ["l"="7.191,-12.791", "c"=666]
 "swisscom/cf-statistics-plugin" ["l"="7.883,-13.879"]
 "starkandwayne/jumpbox" ["l"="7.695,-13.808"]
 "cloudfoundry/capi-release" ["l"="8.001,-13.746"]
@@ -998,7 +1066,8 @@ digraph G {
 "SUSE/stratos" ["l"="7.894,-13.83"]
 "SUSE/scf" ["l"="7.835,-13.844"]
 "concourse/concourse-bosh-deployment" ["l"="7.806,-13.722"]
-"spring-cloud/spring-cloud-cloudfoundry" ["l"="-5.155,9.341"]
+"RackHD/RackHD" ["l"="1.278,14.753", "c"=857]
+"spring-cloud/spring-cloud-cloudfoundry" ["l"="-5.155,9.341", "c"=703]
 "william-tran/freddys-bbq" ["l"="7.828,-13.637"]
 "shieldproject/shield" ["l"="7.836,-13.815"]
 "cloudfoundry/pmc-notes" ["l"="7.839,-13.868"]
@@ -1011,7 +1080,11 @@ digraph G {
 "krujos/willitconnect" ["l"="7.746,-13.892"]
 "cloudfoundry-community/homebrew-cf" ["l"="7.729,-13.921"]
 "pivotal-cf/landingpage" ["l"="7.788,-13.667"]
+"antoinejaussoin/retro-board" ["l"="0.871,-29.293", "c"=12]
+"vmware-archive/postfacto" ["l"="7.746,-13.732"]
+"reactor/lite-rx-api-hands-on" ["l"="-2.41,12.114", "c"=15]
 "Tanzu-Solutions-Engineering/ephemerol" ["l"="7.646,-13.466"]
+"spring-cloud/spring-cloud-vault" ["l"="-5.16,9.274", "c"=703]
 "aequitas/concourse-http-api-resource" ["l"="7.829,-13.486"]
 "pivotal/cf-onboarding" ["l"="7.775,-13.874"]
 "pivotal-legacy/vim-config" ["l"="7.757,-13.921"]
@@ -1020,6 +1093,7 @@ digraph G {
 "cloudfoundry/app-autoscaler" ["l"="7.687,-13.903"]
 "cloudfoundry/app-autoscaler-release" ["l"="7.669,-13.926"]
 "nttlabs/bosh-scaler" ["l"="7.658,-13.912"]
+"egen/safe" ["l"="7.157,-12.802", "c"=666]
 "dgodd/concourse-summary" ["l"="7.733,-13.665"]
 "cloudfoundry/credhub" ["l"="7.761,-13.845"]
 "pivotal/credhub-release" ["l"="7.721,-13.896"]
@@ -1029,16 +1103,19 @@ digraph G {
 "pivotalcommon/vim-config" ["l"="7.744,-13.954"]
 "cloudfoundry/bosh-dns-release" ["l"="7.703,-13.925"]
 "cloudfoundry/bosh-backup-and-restore" ["l"="7.741,-13.571"]
-"kubernetes-retired/service-catalog" ["l"="7.991,-9.085"]
+"kubernetes-retired/service-catalog" ["l"="7.991,-9.085", "c"=14]
 "pmorie/osb-starter-pack" ["l"="8.011,-13.817"]
-"openshift/ansible-service-broker" ["l"="8.07,-13.863"]
-"kubernetes-sigs/apiserver-builder-alpha" ["l"="8.037,-9.22"]
-"cloudfoundry/brokerapi" ["l"="9.162,-13.692"]
+"kubernetes-sigs/apiserver-builder-alpha" ["l"="8.037,-9.22", "c"=14]
+"cloudfoundry/brokerapi" ["l"="9.162,-13.692", "c"=462]
 "kubernetes-retired/go-open-service-broker-client" ["l"="8.036,-13.808"]
-"awslabs/aws-servicebroker" ["l"="8.144,-8.044"]
-"GoogleCloudPlatform/metacontroller" ["l"="10.419,-10.193"]
+"awslabs/aws-servicebroker" ["l"="8.144,-8.044", "c"=14]
+"GoogleCloudPlatform/metacontroller" ["l"="10.419,-10.193", "c"=740]
 "swisscom/open-service-broker" ["l"="7.999,-13.838"]
-"ansibleplaybookbundle/ansible-playbook-bundle" ["l"="8.047,-13.859"]
+"openshift-evangelists/oc-cluster-wrapper" ["l"="10.635,-11.392", "c"=431]
+"fusor/catasb" ["l"="8.072,-13.886"]
+"gshipley/installcentos" ["l"="10.592,-11.418", "c"=431]
+"spring-cloud/spring-cloud-function" ["l"="-5.149,9.369", "c"=703]
+"SkeltonThatcher/run-book-template" ["l"="24.13,-31.265", "c"=304]
 "pivotal-cf/bbr-pcf-pipeline-tasks" ["l"="7.836,-13.707"]
 "rahulkj/pcf-concourse-pipelines" ["l"="7.828,-13.696"]
 "RamXX/cfjump" ["l"="7.819,-13.683"]
@@ -1058,12 +1135,12 @@ digraph G {
 "pivotal-cf/gcp-concourse" ["l"="7.699,-13.696"]
 "moodev/concourseci-radiator" ["l"="7.699,-13.643"]
 "ECSTeam/cloudfoundry-top-plugin" ["l"="7.768,-13.801"]
+"Haptic-Apps/Slide-iOS" ["l"="45.204,-22.163", "c"=6]
 "pivotal-cf/aws-concourse" ["l"="7.792,-13.658"]
 "mgunter-pivotal/cf-bosh-workshop" ["l"="7.764,-13.64"]
 "cloudfoundry/app-autoscaler-cli-plugin" ["l"="7.652,-13.944"]
 "pivotal-cf/terraforming-azure" ["l"="7.714,-13.705"]
 "vmware-archive/terraforming-aws" ["l"="7.733,-13.698"]
-"fusor/catasb" ["l"="8.072,-13.886"]
 "automationbroker/apb" ["l"="8.055,-13.889"]
 "ansible/ansible-kubernetes-modules" ["l"="8.097,-13.87"]
 "fusor/apb-examples" ["l"="8.09,-13.89"]
@@ -1071,19 +1148,14 @@ digraph G {
 "cloudfoundry/binary-buildpack" ["l"="7.685,-13.625"]
 "openshift/openshift-restclient-python" ["l"="8.124,-13.889"]
 "openshift/openshift-client-python" ["l"="8.157,-13.908"]
-"openshift/openshift-tools" ["l"="10.56,-11.288"]
+"openshift/openshift-tools" ["l"="10.56,-11.288", "c"=431]
+"cncf/wg-serverless" ["l"="7.781,-8.565", "c"=14]
 "mumoshu/concourse-aws" ["l"="7.723,-13.683"]
 "cloudfoundry-community/cf-docs-contrib" ["l"="7.818,-13.873"]
 "cloudfoundry/cflinuxfs2" ["l"="7.806,-13.915"]
-"projectriff/riff" ["l"="7.812,-13.663"]
-"spring-cloud/spring-cloud-function" ["l"="-5.149,9.369"]
-"knative/build" ["l"="7.694,-8.555"]
-"knative/eventing" ["l"="7.635,-8.521"]
-"knative/build-templates" ["l"="7.626,-8.482"]
+"knative/build-templates" ["l"="7.626,-8.482", "c"=14]
 "patrickcrocker/pcf-stuff" ["l"="7.789,-13.611"]
 "cloudfoundry/ibm-websphere-liberty-buildpack" ["l"="7.883,-13.648"]
-"cloudfoundry/java-buildpack-memory-calculator" ["l"="-2.269,11.899"]
-"vmware-archive/postfacto" ["l"="7.746,-13.732"]
 "concourse/concourse-bosh-release" ["l"="7.751,-13.709"]
 "linkyard/concourse-helm-resource" ["l"="7.875,-13.52"]
 "jcderr/concourse-kubernetes-resource" ["l"="7.869,-13.545"]

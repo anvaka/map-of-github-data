@@ -1,4 +1,5 @@
 digraph G {
+"NVIDIA/gpu-monitoring-tools" -> "NVIDIA/deepops" ["e"=1]
 "aws/aws-parallelcluster" -> "aws/aws-parallelcluster-cookbook"
 "aws/aws-parallelcluster" -> "aws/aws-parallelcluster-node"
 "aws/aws-parallelcluster" -> "aws-samples/pcluster-manager"
@@ -14,6 +15,8 @@ digraph G {
 "aws/aws-parallelcluster" -> "ofiwg/libfabric" ["e"=1]
 "aws/aws-parallelcluster" -> "aws-samples/aws-plugin-for-slurm"
 "aws/aws-parallelcluster" -> "apptainer/singularity"
+"NVIDIA/nvidia-container-runtime" -> "NVIDIA/enroot" ["e"=1]
+"NVIDIA/nvidia-container-runtime" -> "NVIDIA/deepops" ["e"=1]
 "SchedMD/slurm" -> "rackslab/Slurm-web"
 "SchedMD/slurm" -> "PySlurm/pyslurm"
 "SchedMD/slurm" -> "openpbs/openpbs"
@@ -44,6 +47,8 @@ digraph G {
 "spack/spack" -> "AdaptiveCpp/AdaptiveCpp" ["e"=1]
 "spack/spack" -> "apptainer/apptainer"
 "spack/spack" -> "STEllAR-GROUP/hpx" ["e"=1]
+"dyc3/opentogethertube" -> "sergioallegronft/sergionft00" ["e"=1]
+"NVIDIA/aistore" -> "NVIDIA/deepops" ["e"=1]
 "cea-hpc/pcocc" -> "stanford-rc/slurm-spank-lua"
 "grycap/dosh" -> "grycap/clues"
 "grycap/dosh" -> "grycap/HPCmeetsDocker"
@@ -165,6 +170,9 @@ digraph G {
 "pftool/pftool" -> "mar-file-system/marfs"
 "grycap/oscar-worker" -> "grycap/faas-supervisor"
 "grycap/faas-supervisor" -> "grycap/oscar-worker"
+"anaconda/docker-images" -> "singularityhub/docker2singularity" ["e"=1]
+"open-mpi/ompi" -> "SchedMD/slurm" ["e"=1]
+"open-mpi/ompi" -> "spack/spack" ["e"=1]
 "xcat2/xcat-core" -> "xcat2/xcat-dep"
 "xcat2/xcat-core" -> "xcat2/confluent"
 "xcat2/xcat-core" -> "warewulf/warewulf3"
@@ -181,6 +189,11 @@ digraph G {
 "alestic/lambdash" -> "vladholubiev/docker-in-aws-lambda"
 "alestic/lambdash" -> "iopipe/dockaless"
 "flatironinstitute/slurm-prometheus-exporter" -> "guilbaults/slurm-job-exporter"
+"facebookincubator/submitit" -> "PySlurm/pyslurm" ["e"=1]
+"openhackathons-org/gpubootcamp" -> "NVIDIA/hpc-container-maker" ["e"=1]
+"dmtcp/dmtcp" -> "NERSC/shifter" ["e"=1]
+"haampie/libtree" -> "spack/spack" ["e"=1]
+"haampie/libtree" -> "reframe-hpc/reframe" ["e"=1]
 "PySlurm/pyslurm" -> "rackslab/Slurm-web"
 "PySlurm/pyslurm" -> "mej/nhc"
 "PySlurm/pyslurm" -> "SchedMD/slurm"
@@ -206,6 +219,8 @@ digraph G {
 "dell/omnia" -> "buildtesters/buildtest"
 "nateGeorge/slurm_gpu_ubuntu" -> "mknoxnv/ubuntu-slurm"
 "nateGeorge/slurm_gpu_ubuntu" -> "dholt/slurm-gpu"
+"aws/aws-graviton-getting-started" -> "aws/aws-parallelcluster" ["e"=1]
+"aws/aws-graviton-getting-started" -> "aws-samples/ec2-spot-interruption-dashboard" ["e"=1]
 "aws-samples/aws-hpc-tutorials" -> "aws-samples/aws-parallelcluster-hpc-quickstart"
 "aws-samples/aws-hpc-tutorials" -> "aws-samples/aws-parallelcluster-post-install-scripts"
 "aws-samples/aws-hpc-tutorials" -> "aws-samples/pcluster-manager"
@@ -213,6 +228,7 @@ digraph G {
 "aws-samples/aws-hpc-tutorials" -> "aws-samples/aws-batch-runtime-monitoring"
 "aws-samples/aws-hpc-tutorials" -> "aws-samples/aws-eda-slurm-cluster"
 "martymac/fpart" -> "jbd/msrsync"
+"DataDog/documentation" -> "sergioallegronft/sergionft00" ["e"=1]
 "NVIDIA/pyxis" -> "NVIDIA/enroot"
 "NVIDIA/pyxis" -> "buildtesters/buildtest"
 "NVIDIA/pyxis" -> "OleHolmNielsen/Slurm_tools"
@@ -231,6 +247,7 @@ digraph G {
 "grycap/ec3" -> "grycap/HPCmeetsDocker"
 "jtriley/StarCluster" -> "elasticluster/elasticluster"
 "jtriley/StarCluster" -> "aws/aws-parallelcluster"
+"bevyengine/bevy-website" -> "sergioallegronft/sergionft00" ["e"=1]
 "lustre/lustre-release" -> "LiXi-storage/barreleye"
 "lustre/lustre-release" -> "microsoft/amlFilesystem-lustre"
 "ubccr/hpc-toolset-tutorial" -> "OSC/ondemand"
@@ -260,6 +277,7 @@ digraph G {
 "hpc/charliecloud" -> "ubccr/coldfront"
 "hpc/charliecloud" -> "ovis-hpc/ldms"
 "hpc/charliecloud" -> "lanl/BEE_Archive"
+"utkuozdemir/nvidia_gpu_exporter" -> "vpenso/prometheus-slurm-exporter" ["e"=1]
 "rackslab/Slurm-web" -> "OleHolmNielsen/Slurm_tools"
 "rackslab/Slurm-web" -> "vpenso/prometheus-slurm-exporter"
 "rackslab/Slurm-web" -> "PySlurm/pyslurm"
@@ -275,6 +293,8 @@ digraph G {
 "rackslab/Slurm-web" -> "ubccr/hpc-toolset-tutorial"
 "rackslab/Slurm-web" -> "NVIDIA/pyxis"
 "rackslab/Slurm-web" -> "ubccr/stubl"
+"NVIDIA/DCGM" -> "mej/nhc" ["e"=1]
+"rear/rear" -> "xcat2/xcat-core" ["e"=1]
 "warewulf/warewulf" -> "warewulf/warewulf3"
 "warewulf/warewulf" -> "vpenso/prometheus-slurm-exporter"
 "warewulf/warewulf" -> "openhpc/ohpc"
@@ -321,10 +341,19 @@ digraph G {
 "jbd/msrsync" -> "martymac/fpart"
 "jbd/msrsync" -> "hjmangalam/parsyncfp"
 "jbd/msrsync" -> "mej/nhc"
+"trevor-vincent/awesome-high-performance-computing" -> "openhpc/ohpc" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "carpentries-incubator/hpc-intro" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "ubccr/hpc-toolset-tutorial" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "OSC/ondemand" ["e"=1]
+"trevor-vincent/awesome-high-performance-computing" -> "warewulf/warewulf" ["e"=1]
+"kokkos/kokkos" -> "spack/spack" ["e"=1]
 "singularityhub/singularity-hpc" -> "singularityhub/sregistry"
 "singularityhub/singularity-hpc" -> "singularityhub/shpc-registry"
+"amazon-archives/aws-apigateway-importer" -> "alestic/lambdash" ["e"=1]
 "cea-hpc/shine" -> "cea-hpc/phobos"
 "mar-file-system/marfs" -> "pftool/pftool"
+"hpc/ior" -> "hpc/mpifileutils" ["e"=1]
+"hpc/ior" -> "cea-hpc/robinhood" ["e"=1]
 "treydock/infiniband_exporter" -> "guilbaults/infiniband-exporter"
 "treydock/infiniband_exporter" -> "HewlettPackard/lustre_exporter"
 "aws-samples/aws-batch-runtime-monitoring" -> "aws-samples/aws-batch-operational-dashboards"
@@ -393,6 +422,7 @@ digraph G {
 "jupyterhub/batchspawner" -> "jupyterhub/wrapspawner"
 "jupyterhub/batchspawner" -> "mkgilbert/slurmspawner"
 "jupyterhub/batchspawner" -> "NERSC/jupyterlab-slurm"
+"megastep/makeself" -> "apptainer/singularity" ["e"=1]
 "cea-hpc/robinhood" -> "cea-hpc/shine"
 "cea-hpc/robinhood" -> "whamcloud/lemur"
 "cea-hpc/robinhood" -> "whamcloud/integrated-manager-for-lustre"
@@ -425,6 +455,7 @@ digraph G {
 "aws-samples/pcluster-manager" -> "aws-samples/ec2-topology-aware-for-slurm"
 "aws-samples/pcluster-manager" -> "aws/aws-parallelcluster-cookbook"
 "aws-samples/pcluster-manager" -> "aws-samples/ec2-spot-interruption-dashboard"
+"awslabs/ec2-spot-labs" -> "aws/aws-parallelcluster" ["e"=1]
 "oweidner/docker.openmpi" -> "NLKNguyen/alpine-mpich"
 "indigo-dc/onedock" -> "grycap/clues"
 "indigo-dc/onedock" -> "grycap/ipfloater"
@@ -465,6 +496,7 @@ digraph G {
 "vladaionescu/leveros" -> "iopipe/turtle"
 "vladaionescu/leveros" -> "redspread/spread" ["e"=1]
 "vladaionescu/leveros" -> "eleme/banshee" ["e"=1]
+"amzn/amzn-drivers" -> "aws-samples/pcluster-manager" ["e"=1]
 "NERSC/shifter" -> "NERSC/Shifter-Tutorial"
 "NERSC/shifter" -> "hpc/charliecloud"
 "NERSC/shifter" -> "eth-cscs/sarus"
@@ -498,6 +530,7 @@ digraph G {
 "easybuilders/easybuild-easyblocks" -> "easybuilders/easybuild-framework"
 "easybuilders/easybuild-easyblocks" -> "easybuilders/easybuild-easyconfigs"
 "easybuilders/easybuild-easyblocks" -> "easybuilders/easybuild"
+"pywren/pywren" -> "grycap/scar" ["e"=1]
 "aws-samples/aws-hpc-recipes" -> "aws-samples/aws-parallelcluster-monitoring"
 "aws-samples/aws-hpc-recipes" -> "aws-samples/aws-parallelcluster-post-install-scripts"
 "aws-samples/aws-hpc-recipes" -> "aws/res"
@@ -524,6 +557,10 @@ digraph G {
 "rivosinc/prometheus-slurm-exporter" -> "ubccr/slurm-exporter"
 "rivosinc/prometheus-slurm-exporter" -> "lcrownover/prometheus-slurm-exporter"
 "rivosinc/prometheus-slurm-exporter" -> "flatironinstitute/slurm-prometheus-exporter"
+"aws-samples/awsome-distributed-training" -> "aws-samples/ec2-topology-aware-for-slurm" ["e"=1]
+"aws-samples/awsome-distributed-training" -> "aws-samples/aws-parallelcluster-post-install-scripts" ["e"=1]
+"aws-samples/awsome-distributed-training" -> "aws-samples/aws-hpc-recipes" ["e"=1]
+"aws-samples/awsome-distributed-training" -> "aws-samples/aws-parallelcluster-monitoring" ["e"=1]
 "OSC/Open-OnDemand" -> "fasrc/slurm_showq"
 "PrincetonUniversity/jobstats" -> "guilbaults/TrailblazingTurtle"
 "PrincetonUniversity/jobstats" -> "guilbaults/slurm-job-exporter"
@@ -545,6 +582,7 @@ digraph G {
 "ubccr/xdmod" -> "ubccr/supremm"
 "whamcloud/lemur" -> "ComputeCanada/lustre-obj-copytool"
 "aws-samples/ec2-topology-aware-for-slurm" -> "aws-samples/aws-parallelcluster-post-install-scripts"
+"NVIDIA/libnvidia-container" -> "NVIDIA/enroot" ["e"=1]
 "vpenso/prometheus-slurm-exporter" -> "flatironinstitute/slurm-prometheus-exporter"
 "vpenso/prometheus-slurm-exporter" -> "rackslab/Slurm-web"
 "vpenso/prometheus-slurm-exporter" -> "OleHolmNielsen/Slurm_tools"
@@ -613,6 +651,8 @@ digraph G {
 "singularityhub/sregistry" -> "singularityhub/singularity-cli"
 "singularityhub/sregistry" -> "singularityhub/singularity-hpc"
 "singularityhub/sregistry" -> "singularityhub/shpc-registry"
+"Langhalsdino/Kubernetes-GPU-Guide" -> "NVIDIA/deepops" ["e"=1]
+"aws-samples/aws-batch-genomics" -> "aws/aws-parallelcluster-cookbook" ["e"=1]
 "grycap/scar" -> "grycap/minicon"
 "grycap/scar" -> "indigo-dc/udocker"
 "grycap/scar" -> "vladholubiev/docker-in-aws-lambda"
@@ -622,6 +662,7 @@ digraph G {
 "grycap/scar" -> "grycap/im"
 "grycap/scar" -> "grycap/clues"
 "grycap/scar" -> "grycap/faas-supervisor"
+"Zouuup/landrun" -> "warewulf/warewulf" ["e"=1]
 "OleHolmNielsen/Slurm_tools" -> "mej/nhc"
 "OleHolmNielsen/Slurm_tools" -> "rackslab/Slurm-web"
 "OleHolmNielsen/Slurm_tools" -> "vpenso/prometheus-slurm-exporter"
@@ -663,11 +704,13 @@ digraph G {
 "TACC/Lmod" -> "singularityhub/singularity-hpc"
 "TACC/Lmod" -> "NVIDIA/pyxis"
 "TACC/Lmod" -> "apptainer/apptainer"
+"NVIDIA/gpu-monitoring-tools" ["l"="7.261,-11.368", "c"=515]
+"NVIDIA/deepops" ["l"="7.181,-13.867"]
 "aws/aws-parallelcluster" ["l"="7.305,-13.761"]
 "aws/aws-parallelcluster-cookbook" ["l"="7.351,-13.763"]
 "aws/aws-parallelcluster-node" ["l"="7.348,-13.745"]
 "aws-samples/pcluster-manager" ["l"="7.372,-13.744"]
-"aws-samples/aws-batch-genomics" ["l"="41.15,37.201"]
+"aws-samples/aws-batch-genomics" ["l"="41.15,37.201", "c"=141]
 "elasticluster/elasticluster" ["l"="7.264,-13.768"]
 "jtriley/StarCluster" ["l"="7.303,-13.734"]
 "aws-samples/aws-hpc-tutorials" ["l"="7.386,-13.734"]
@@ -676,32 +719,35 @@ digraph G {
 "NERSC/shifter" ["l"="7.208,-13.763"]
 "SchedMD/slurm" ["l"="7.164,-13.799"]
 "aws-samples/aws-parallelcluster-monitoring" ["l"="7.361,-13.754"]
-"ofiwg/libfabric" ["l"="1.961,14.418"]
+"ofiwg/libfabric" ["l"="1.961,14.418", "c"=572]
 "aws-samples/aws-plugin-for-slurm" ["l"="7.345,-13.725"]
 "apptainer/singularity" ["l"="7.179,-13.734"]
+"NVIDIA/nvidia-container-runtime" ["l"="7.291,-11.385", "c"=515]
+"NVIDIA/enroot" ["l"="7.196,-13.821"]
 "rackslab/Slurm-web" ["l"="7.145,-13.831"]
 "PySlurm/pyslurm" ["l"="7.123,-13.816"]
 "openpbs/openpbs" ["l"="7.188,-13.803"]
 "OleHolmNielsen/Slurm_tools" ["l"="7.137,-13.846"]
 "dun/munge" ["l"="7.182,-13.836"]
 "openhpc/ohpc" ["l"="7.138,-13.777"]
-"open-mpi/ompi" ["l"="1.981,14.386"]
+"open-mpi/ompi" ["l"="1.981,14.386", "c"=572]
 "mej/nhc" ["l"="7.125,-13.829"]
 "apptainer/apptainer" ["l"="7.131,-13.747"]
 "spack/spack" ["l"="7.097,-13.734"]
-"NVIDIA/deepops" ["l"="7.181,-13.867"]
-"NVIDIA/enroot" ["l"="7.196,-13.821"]
 "NVIDIA/pyxis" ["l"="7.166,-13.825"]
 "TACC/Lmod" ["l"="7.13,-13.792"]
-"kokkos/kokkos" ["l"="63.141,-1.443"]
-"trilinos/Trilinos" ["l"="63.09,-1.492"]
-"LLNL/RAJA" ["l"="63.182,-1.42"]
-"mfem/mfem" ["l"="63.053,-1.523"]
-"RRZE-HPC/likwid" ["l"="6.737,-6.263"]
+"kokkos/kokkos" ["l"="63.141,-1.443", "c"=175]
+"trilinos/Trilinos" ["l"="63.09,-1.492", "c"=175]
+"LLNL/RAJA" ["l"="63.182,-1.42", "c"=175]
+"mfem/mfem" ["l"="63.053,-1.523", "c"=175]
+"RRZE-HPC/likwid" ["l"="6.737,-6.263", "c"=335]
 "envmodules/modules" ["l"="7.114,-13.781"]
 "easybuilders/easybuild" ["l"="7.14,-13.802"]
-"AdaptiveCpp/AdaptiveCpp" ["l"="64.223,-1.97"]
-"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088"]
+"AdaptiveCpp/AdaptiveCpp" ["l"="64.223,-1.97", "c"=477]
+"STEllAR-GROUP/hpx" ["l"="-19.82,-26.088", "c"=10]
+"dyc3/opentogethertube" ["l"="-9.546,-34.068", "c"=1181]
+"sergioallegronft/sergionft00" ["l"="7.205,-13.74"]
+"NVIDIA/aistore" ["l"="7.216,-11.471", "c"=515]
 "cea-hpc/pcocc" ["l"="7.047,-13.897"]
 "stanford-rc/slurm-spank-lua" ["l"="7.062,-13.918"]
 "grycap/dosh" ["l"="7.206,-13.475"]
@@ -722,31 +768,29 @@ digraph G {
 "fasrc/slurm_showq" ["l"="7.108,-13.874"]
 "fasrc/slurmmon" ["l"="7.135,-13.882"]
 "NVIDIA/hpc-container-maker" ["l"="7.171,-13.781"]
-"NVIDIA/k8s-device-plugin" ["l"="7.272,-11.403"]
-"NVIDIA/gpu-monitoring-tools" ["l"="7.261,-11.368"]
-"NVIDIA/gpu-operator" ["l"="7.244,-11.395"]
-"AliyunContainerService/gpushare-scheduler-extender" ["l"="7.284,-11.356"]
-"NVIDIA/DCGM" ["l"="7.233,-11.335"]
-"kubernetes-retired/kube-batch" ["l"="8.054,-9.32"]
-"NVIDIA/nvidia-container-runtime" ["l"="7.291,-11.385"]
+"NVIDIA/k8s-device-plugin" ["l"="7.272,-11.403", "c"=515]
+"NVIDIA/gpu-operator" ["l"="7.244,-11.395", "c"=515]
+"AliyunContainerService/gpushare-scheduler-extender" ["l"="7.284,-11.356", "c"=515]
+"NVIDIA/DCGM" ["l"="7.233,-11.335", "c"=515]
+"kubernetes-retired/kube-batch" ["l"="8.054,-9.32", "c"=14]
 "aws-samples/aws-eda-slurm-cluster" ["l"="7.372,-13.708"]
 "hpc/charliecloud" ["l"="7.189,-13.774"]
 "singularityhub/singularity-hpc" ["l"="7.128,-13.726"]
 "singularityhub/sregistry" ["l"="7.131,-13.695"]
 "reframe-hpc/reframe" ["l"="7.162,-13.842"]
-"intel/mpi-benchmarks" ["l"="2.044,14.415"]
-"NVIDIA/libnvidia-container" ["l"="7.241,-11.36"]
+"intel/mpi-benchmarks" ["l"="2.044,14.415", "c"=572]
+"NVIDIA/libnvidia-container" ["l"="7.241,-11.36", "c"=515]
 "buildtesters/buildtest" ["l"="7.189,-13.851"]
-"NVIDIA/gdrcopy" ["l"="1.92,14.452"]
+"NVIDIA/gdrcopy" ["l"="1.92,14.452", "c"=572]
 "hpc/mpifileutils" ["l"="7.071,-13.878"]
-"hpc/ior" ["l"="2.121,14.969"]
-"VI4IO/io-500-dev" ["l"="2.086,14.955"]
-"LLNL/ior" ["l"="2.087,14.981"]
-"LLNL/UnifyFS" ["l"="2.08,14.907"]
+"hpc/ior" ["l"="2.121,14.969", "c"=756]
+"VI4IO/io-500-dev" ["l"="2.086,14.955", "c"=756]
+"LLNL/ior" ["l"="2.087,14.981", "c"=756]
+"LLNL/UnifyFS" ["l"="2.08,14.907", "c"=756]
 "cea-hpc/robinhood" ["l"="7.006,-13.904"]
 "pftool/pftool" ["l"="7.064,-13.951"]
 "cea-hpc/shine" ["l"="7.019,-13.889"]
-"LLNL/scr" ["l"="2.039,14.907"]
+"LLNL/scr" ["l"="2.039,14.907", "c"=756]
 "LLNL/lmt" ["l"="6.95,-13.911"]
 "chaos/cerebro" ["l"="6.921,-13.915"]
 "grycap/minicon" ["l"="7.208,-13.504"]
@@ -779,6 +823,8 @@ digraph G {
 "hpc/cluster-school" ["l"="7.254,-13.684"]
 "mar-file-system/marfs" ["l"="7.064,-13.984"]
 "grycap/oscar-worker" ["l"="7.161,-13.509"]
+"anaconda/docker-images" ["l"="43.385,23.871", "c"=95]
+"singularityhub/docker2singularity" ["l"="7.205,-13.712"]
 "xcat2/xcat-dep" ["l"="7.013,-13.79"]
 "xcat2/confluent" ["l"="6.989,-13.79"]
 "warewulf/warewulf3" ["l"="7.084,-13.796"]
@@ -790,20 +836,28 @@ digraph G {
 "vladholubiev/docker-in-aws-lambda" ["l"="7.21,-13.58"]
 "iopipe/dockaless" ["l"="7.274,-13.485"]
 "flatironinstitute/slurm-prometheus-exporter" ["l"="7.087,-13.885"]
+"facebookincubator/submitit" ["l"="21.614,14.08", "c"=267]
+"openhackathons-org/gpubootcamp" ["l"="36.652,1.081", "c"=112]
+"dmtcp/dmtcp" ["l"="7.521,-11.222", "c"=515]
+"haampie/libtree" ["l"="-19.482,-25.989", "c"=10]
 "amq92/simple_slurm" ["l"="7.043,-13.763"]
-"SchedMD/slurm-gcp" ["l"="-45.285,5.677"]
+"SchedMD/slurm-gcp" ["l"="-45.285,5.677", "c"=957]
 "bluebanquise/bluebanquise" ["l"="7.062,-13.86"]
 "stackhpc/ansible-slurm-appliance" ["l"="7.234,-13.816"]
 "nateGeorge/slurm_gpu_ubuntu" ["l"="7.208,-13.973"]
 "dholt/slurm-gpu" ["l"="7.193,-13.959"]
+"aws/aws-graviton-getting-started" ["l"="7.754,-9.465", "c"=14]
+"aws-samples/ec2-spot-interruption-dashboard" ["l"="7.392,-13.715"]
 "aws-samples/aws-parallelcluster-hpc-quickstart" ["l"="7.419,-13.737"]
 "aws-samples/aws-parallelcluster-post-install-scripts" ["l"="7.385,-13.757"]
 "aws-samples/ec2-topology-aware-for-slurm" ["l"="7.406,-13.744"]
 "aws-samples/aws-batch-runtime-monitoring" ["l"="7.419,-13.721"]
 "martymac/fpart" ["l"="7.001,-13.996"]
 "jbd/msrsync" ["l"="7.03,-13.97"]
+"DataDog/documentation" ["l"="4.812,-7.461", "c"=0]
 "eth-cscs/pyfirecrest" ["l"="7.311,-13.805"]
 "grycap/im" ["l"="7.178,-13.507"]
+"bevyengine/bevy-website" ["l"="-8.658,-3.63", "c"=500]
 "lustre/lustre-release" ["l"="6.849,-13.971"]
 "LiXi-storage/barreleye" ["l"="6.891,-13.967"]
 "microsoft/amlFilesystem-lustre" ["l"="6.822,-13.974"]
@@ -813,9 +867,8 @@ digraph G {
 "ComputeCanada/puppet-jupyterhub" ["l"="7.277,-13.717"]
 "awslabs/scale-out-computing-on-aws" ["l"="7.429,-13.794"]
 "aws/res" ["l"="7.4,-13.801"]
-"aws-samples/ec2-spot-interruption-dashboard" ["l"="7.392,-13.715"]
 "aws-samples/aws-batch-operational-dashboards" ["l"="7.402,-13.729"]
-"aws-solutions-library-samples/guidance-for-ec2-spot-placement-score-tracker" ["l"="7.718,-9.598"]
+"aws-solutions-library-samples/guidance-for-ec2-spot-placement-score-tracker" ["l"="7.718,-9.598", "c"=14]
 "guilbaults/infiniband-exporter" ["l"="6.787,-14.066"]
 "treydock/infiniband_exporter" ["l"="6.804,-14.052"]
 "olcf/hpc-system-test-wg" ["l"="7.219,-13.874"]
@@ -823,22 +876,25 @@ digraph G {
 "Cray/lustre" ["l"="6.799,-13.977"]
 "ovis-hpc/ldms" ["l"="7.226,-13.832"]
 "lanl/BEE_Archive" ["l"="7.229,-13.765"]
+"utkuozdemir/nvidia_gpu_exporter" ["l"="7.241,-11.435", "c"=515]
+"rear/rear" ["l"="14.697,-11.389", "c"=855]
 "warewulf/warewulf-node-images" ["l"="7.053,-13.816"]
 "ubccr/grendel" ["l"="7.037,-13.816"]
 "rivosinc/prometheus-slurm-exporter" ["l"="7.094,-13.865"]
 "sylabs/singularity" ["l"="7.155,-13.717"]
-"freebayes/freebayes" ["l"="40.729,37.425"]
-"singularityhub/docker2singularity" ["l"="7.205,-13.712"]
-"Gaius-Augustus/Augustus" ["l"="40.529,38.59"]
-"deeptools/deepTools" ["l"="40.807,37.292"]
-"shenwei356/seqkit" ["l"="40.766,37.307"]
-"mummer4/mummer" ["l"="40.574,38.601"]
-"bwa-mem2/bwa-mem2" ["l"="40.749,37.39"]
-"bbuchfink/diamond" ["l"="39.785,38.352"]
+"freebayes/freebayes" ["l"="40.729,37.425", "c"=141]
+"Gaius-Augustus/Augustus" ["l"="40.529,38.59", "c"=290]
+"deeptools/deepTools" ["l"="40.807,37.292", "c"=141]
+"shenwei356/seqkit" ["l"="40.766,37.307", "c"=141]
+"mummer4/mummer" ["l"="40.574,38.601", "c"=290]
+"bwa-mem2/bwa-mem2" ["l"="40.749,37.39", "c"=141]
+"bbuchfink/diamond" ["l"="39.785,38.352", "c"=566]
 "cea-hpc/milkcheck" ["l"="7.032,-13.868"]
 "cea-hpc/sshproxy" ["l"="7.113,-13.909"]
 "hjmangalam/parsyncfp" ["l"="7.018,-14.025"]
+"trevor-vincent/awesome-high-performance-computing" ["l"="25.613,-26.684", "c"=32]
 "singularityhub/shpc-registry" ["l"="7.114,-13.689"]
+"amazon-archives/aws-apigateway-importer" ["l"="9.889,-6.483", "c"=162]
 "HewlettPackard/lustre_exporter" ["l"="6.829,-14.032"]
 "easybuilders/easybuild-framework" ["l"="7.145,-13.761"]
 "easybuilders/easybuild-easyblocks" ["l"="7.155,-13.748"]
@@ -846,15 +902,16 @@ digraph G {
 "awsdocs/aws-parallelcluster-user-guide" ["l"="7.362,-13.734"]
 "lenovo/confluent" ["l"="6.958,-13.787"]
 "grondo/slurm-spank-plugins" ["l"="7.039,-13.937"]
-"nextflow-io/nextflow" ["l"="40.668,37.317"]
-"soedinglab/MMseqs2" ["l"="24.345,13.366"]
+"nextflow-io/nextflow" ["l"="40.668,37.317", "c"=141]
+"soedinglab/MMseqs2" ["l"="24.345,13.366", "c"=281]
 "singularityhub/github-ci" ["l"="7.09,-13.688"]
-"common-workflow-language/common-workflow-language" ["l"="40.587,37.348"]
-"broadinstitute/cromwell" ["l"="40.631,37.385"]
-"MultiQC/MultiQC" ["l"="40.74,37.339"]
+"common-workflow-language/common-workflow-language" ["l"="40.587,37.348", "c"=141]
+"broadinstitute/cromwell" ["l"="40.631,37.385", "c"=141]
+"MultiQC/MultiQC" ["l"="40.74,37.339", "c"=141]
 "jupyterhub/batchspawner" ["l"="7.152,-14.059"]
 "jupyterhub/wrapspawner" ["l"="7.145,-14.094"]
 "mkgilbert/slurmspawner" ["l"="7.168,-14.083"]
+"megastep/makeself" ["l"="-14.219,-6.258", "c"=86]
 "whamcloud/lemur" ["l"="6.979,-13.931"]
 "whamcloud/integrated-manager-for-lustre" ["l"="6.959,-13.929"]
 "stanford-rc/ct_gdrive" ["l"="6.984,-13.916"]
@@ -863,6 +920,7 @@ digraph G {
 "cea-hpc/selFIe" ["l"="7.104,-13.957"]
 "chpc-uofu/arbiter2" ["l"="7.121,-13.886"]
 "birc-aeh/slurm-utils" ["l"="7.103,-13.89"]
+"awslabs/ec2-spot-labs" ["l"="7.734,-9.355", "c"=14]
 "oweidner/docker.openmpi" ["l"="7.328,-13.84"]
 "NLKNguyen/alpine-mpich" ["l"="7.298,-13.821"]
 "indigo-dc/onedock" ["l"="7.178,-13.452"]
@@ -870,27 +928,29 @@ digraph G {
 "grycap/cloudvamp" ["l"="7.182,-13.429"]
 "iopipe/turtle" ["l"="7.301,-13.43"]
 "adaptivecomputing/torque" ["l"="7.253,-13.827"]
-"pmodels/mpich" ["l"="2.012,14.404"]
+"pmodels/mpich" ["l"="2.012,14.404", "c"=572]
 "indigo-dc/udocker" ["l"="7.195,-13.638"]
-"proot-me/proot" ["l"="-48.449,-25.869"]
+"proot-me/proot" ["l"="-48.449,-25.869", "c"=321]
 "drengskapur/docker-in-colab" ["l"="7.23,-13.612"]
 "dex4er/fakechroot" ["l"="7.159,-13.594"]
-"termux/proot" ["l"="-48.483,-25.802"]
-"openwdl/wdl" ["l"="40.599,37.391"]
-"Moe-hacker/daijin" ["l"="-48.435,-25.687"]
+"termux/proot" ["l"="-48.483,-25.802", "c"=321]
+"openwdl/wdl" ["l"="40.599,37.391", "c"=141]
+"Moe-hacker/daijin" ["l"="-48.435,-25.687", "c"=321]
 "kurokobo/virtualbmc-for-vsphere" ["l"="6.947,-13.737"]
 "vladaionescu/leveros" ["l"="7.325,-13.382"]
-"redspread/spread" ["l"="3.943,-7.919"]
-"eleme/banshee" ["l"="4.09,-7.539"]
+"redspread/spread" ["l"="3.943,-7.919", "c"=0]
+"eleme/banshee" ["l"="4.09,-7.539", "c"=0]
+"amzn/amzn-drivers" ["l"="1.911,14.473", "c"=572]
 "NERSC/Shifter-Tutorial" ["l"="7.24,-13.729"]
 "iopipe/dockerbot-serverless" ["l"="7.29,-13.471"]
 "fizwit/easy_update" ["l"="7.212,-13.729"]
-"sezarkoleranft/Sezar-Kolera" ["l"="-9.523,-34.047"]
-"sergioallegronft/sergionft00" ["l"="7.205,-13.74"]
+"sezarkoleranft/Sezar-Kolera" ["l"="-9.523,-34.047", "c"=1181]
+"pywren/pywren" ["l"="63.498,-12.521", "c"=1127]
 "aws-samples/no-tears-cluster" ["l"="7.406,-13.781"]
-"ReproNim/reproin" ["l"="61.74,35.337"]
+"ReproNim/reproin" ["l"="61.74,35.337", "c"=568]
 "ubccr/slurm-exporter" ["l"="7.07,-13.9"]
 "lcrownover/prometheus-slurm-exporter" ["l"="7.098,-13.879"]
+"aws-samples/awsome-distributed-training" ["l"="43.206,-0.388", "c"=1149]
 "guilbaults/TrailblazingTurtle" ["l"="6.985,-13.851"]
 "SergioMEV/slurm-for-dummies" ["l"="7.239,-14.022"]
 "lenovo/openlico" ["l"="6.93,-13.784"]
@@ -901,15 +961,17 @@ digraph G {
 "troycomi/reportseff" ["l"="7.09,-13.911"]
 "eth-cscs/production" ["l"="7.208,-13.891"]
 "cea-hpc/wi4mpi" ["l"="7.23,-13.89"]
-"eth-cscs/COSMA" ["l"="37.403,1.002"]
-"fortran-lang/fortls" ["l"="62.523,-0.81"]
-"open-mpi/hwloc" ["l"="1.985,14.414"]
+"eth-cscs/COSMA" ["l"="37.403,1.002", "c"=112]
+"fortran-lang/fortls" ["l"="62.523,-0.81", "c"=953]
+"open-mpi/hwloc" ["l"="1.985,14.414", "c"=572]
 "cea-hpc/bridge" ["l"="7.003,-13.868"]
 "swcarpentry/hpc-novice" ["l"="7.225,-13.93"]
 "hpc-carpentry/hpc-carpentry.old-site" ["l"="7.208,-13.912"]
 "hpc-carpentry/hpc-shell" ["l"="7.209,-13.926"]
 "cea-hpc/hp2p" ["l"="7.101,-13.989"]
 "singularityhub/singularity-cli" ["l"="7.111,-13.65"]
+"Langhalsdino/Kubernetes-GPU-Guide" ["l"="10.249,-10.015", "c"=740]
+"Zouuup/landrun" ["l"="-12.891,-7.256", "c"=86]
 "neurokernel/gpu-cluster-config" ["l"="7.164,-13.962"]
 "statgen/SLURM-examples" ["l"="7.178,-13.981"]
 "ppl-ai/libfabric-efa-demo" ["l"="7.447,-13.741"]

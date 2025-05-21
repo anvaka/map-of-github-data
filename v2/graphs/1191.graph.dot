@@ -18,6 +18,7 @@ digraph G {
 "fastify/aws-lambda-fastify" -> "fastify/fastify-rate-limit"
 "fastify/aws-lambda-fastify" -> "fastify/fastify-auth"
 "fastify/aws-lambda-fastify" -> "mcollina/hyperid"
+"SGrondin/bottleneck" -> "diamondio/better-queue" ["e"=1]
 "pinojs/pino-pretty" -> "pinojs/pino" ["e"=1]
 "pinojs/pino-pretty" -> "pinojs/pino-http"
 "pinojs/pino-pretty" -> "iamolegga/nestjs-pino" ["e"=1]
@@ -33,6 +34,13 @@ digraph G {
 "pinojs/pino-pretty" -> "pinojs/express-pino-logger"
 "pinojs/pino-pretty" -> "fastify/fastify-static"
 "pinojs/pino-pretty" -> "delvedor/fastify-example"
+"josdejong/workerpool" -> "mcollina/fastq" ["e"=1]
+"mercurius-js/mercurius" -> "fastify/fastify-swagger" ["e"=1]
+"mercurius-js/mercurius" -> "platformatic/platformatic" ["e"=1]
+"mercurius-js/mercurius" -> "fastify/fastify-cli" ["e"=1]
+"mercurius-js/mercurius" -> "fastify/fastify-vite" ["e"=1]
+"mercurius-js/mercurius" -> "fastify/under-pressure" ["e"=1]
+"Ff00ff/mammoth" -> "ForbesLindesay/atdatabases" ["e"=1]
 "fastify/fastify-static" -> "fastify/fastify-helmet"
 "fastify/fastify-static" -> "fastify/fastify-cors"
 "fastify/fastify-static" -> "fastify/fastify-cookie"
@@ -63,6 +71,7 @@ digraph G {
 "fastify/fluent-json-schema" -> "fastify/fastify-helmet"
 "fastify/fluent-json-schema" -> "fastify/point-of-view"
 "fastify/fluent-json-schema" -> "fastify/restartable"
+"marnusw/date-fns-tz" -> "pinojs/pino-pretty" ["e"=1]
 "lmammino/streams-workshop" -> "lmammino/iteration-protocols-workshop"
 "lmammino/streams-workshop" -> "RafaelGSS/nodejs-bench-operations"
 "fastify/fastify-env" -> "fastify/fastify-autoload"
@@ -109,11 +118,13 @@ digraph G {
 "fastify/fastify-autoload" -> "fastify/fastify-mongodb"
 "fastify/fastify-autoload" -> "fastify/fastify-swagger"
 "fastify/fastify-autoload" -> "fastify/under-pressure"
+"nodejs/undici" -> "platformatic/platformatic" ["e"=1]
 "fastify/fastify-routes" -> "fastify/fastify-response-validation"
 "fastify/fastify-routes" -> "fastify/fastify-accepts"
 "fastify/fastify-example-twitter" -> "fastify/example"
 "fastify/fastify-example-twitter" -> "delvedor/fastify-example"
 "fastify/fastify-example-twitter" -> "fastify/fastify-example-todo"
+"bcoe/c8" -> "tapjs/tapjs" ["e"=1]
 "fastify/fastify-compress" -> "fastify/fastify-caching"
 "fastify/fastify-compress" -> "fastify/fastify-accepts"
 "fastify/fastify-compress" -> "fastify/under-pressure"
@@ -138,6 +149,7 @@ digraph G {
 "matschik/fastify-typescript-starter" -> "jellydn/fastify-starter"
 "matschik/fastify-typescript-starter" -> "mattaharish/fastify-boilerplate"
 "matschik/fastify-typescript-starter" -> "fastify/fastify-caching"
+"salsita/node-pg-migrate" -> "rickbergfalk/postgrator" ["e"=1]
 "fastify/fastify-cookie" -> "fastify/fastify-cors"
 "fastify/fastify-cookie" -> "fastify/fastify-autoload"
 "fastify/fastify-cookie" -> "fastify/fastify-helmet"
@@ -153,6 +165,7 @@ digraph G {
 "fastify/fastify-cookie" -> "fastify/fastify-postgres"
 "fastify/fastify-cookie" -> "fastify/fastify-auth"
 "fastify/fastify-cookie" -> "fastify/csrf-protection"
+"supercharge/promise-pool" -> "fastify/under-pressure" ["e"=1]
 "L2jLiga/fastify-decorators" -> "fastify/fastify-env"
 "L2jLiga/fastify-decorators" -> "fastify/fastify-error"
 "L2jLiga/fastify-decorators" -> "fastify/middie"
@@ -203,6 +216,7 @@ digraph G {
 "fastify/fastify-rate-limit" -> "fastify/fastify-plugin"
 "fastify/fastify-rate-limit" -> "fastify/csrf-protection"
 "fastify/fastify-rate-limit" -> "fastify/fastify-postgres"
+"koajs/router" -> "steambap/koa-tree-router" ["e"=1]
 "fastify/fastify-secure-session" -> "fastify/csrf-protection"
 "fastify/fastify-secure-session" -> "fastify/fastify-caching"
 "fastify/fastify-secure-session" -> "fastify/fastify-bearer-auth"
@@ -317,6 +331,9 @@ digraph G {
 "fastify/fastify-express" -> "fastify/fastify-url-data"
 "fastify/fastify-express" -> "fastify/fastify-bearer-auth"
 "fastify/fastify-basic-auth" -> "fastify/fastify-bearer-auth"
+"piscinajs/piscina" -> "mcollina/async-cache-dedupe" ["e"=1]
+"nodeshift/nodejs-reference-architecture" -> "platformatic/platformatic" ["e"=1]
+"nodeshift/nodejs-reference-architecture" -> "mcollina/async-cache-dedupe" ["e"=1]
 "nearform/fast-jwt" -> "nearform/fastify-auth0-verify"
 "nearform/fast-jwt" -> "fastify/under-pressure"
 "nearform/fast-jwt" -> "fastify/fastify-postgres"
@@ -324,6 +341,14 @@ digraph G {
 "nearform/fast-jwt" -> "fastify/fastify-helmet"
 "nearform/fast-jwt" -> "fastify/fastify-auth"
 "nearform/fast-jwt" -> "fastify/fastify-request-context"
+"eta-dev/eta" -> "fastify/point-of-view" ["e"=1]
+"eta-dev/eta" -> "fastify/aws-lambda-fastify" ["e"=1]
+"breejs/bree" -> "kibertoad/toad-scheduler" ["e"=1]
+"nodejs/next-10" -> "RafaelGSS/nodejs-bench-operations" ["e"=1]
+"nodejs/next-10" -> "RafaelGSS/bench-node" ["e"=1]
+"iamolegga/nestjs-pino" -> "pinojs/pino-http" ["e"=1]
+"iamolegga/nestjs-pino" -> "pinojs/pino-pretty" ["e"=1]
+"ThomasAribart/json-schema-to-ts" -> "fastify/fastify-swagger" ["e"=1]
 "fox1t/fastify-multer" -> "fox1t/multer"
 "yonathan06/fastify-now" -> "coopflow/fastify-supabase"
 "yonathan06/fastify-typescript-starter" -> "matschik/fastify-typescript-starter"
@@ -354,6 +379,7 @@ digraph G {
 "delvedor/fastify-example" -> "fastify/avvio"
 "delvedor/fastify-example" -> "fastify/fastify-vite"
 "delvedor/fastify-example" -> "fastify/fastify-swagger"
+"axe-me/vite-plugin-node" -> "fastify/fastify-vite" ["e"=1]
 "pinojs/thread-stream" -> "mcollina/on-exit-leak-free"
 "pinojs/thread-stream" -> "knockaway/sqsiphon"
 "pinojs/thread-stream" -> "fastify/restartable"
@@ -387,6 +413,9 @@ digraph G {
 "mcollina/async-cache-dedupe" -> "mercurius-js/cache"
 "mcollina/async-cache-dedupe" -> "ForbesLindesay/atdatabases"
 "mcollina/async-cache-dedupe" -> "mcollina/modular_monolith"
+"StefanTerdell/zod-to-json-schema" -> "turkerdev/fastify-type-provider-zod" ["e"=1]
+"simdutf/simdutf" -> "ada-url/ada" ["e"=1]
+"frandiox/vite-ssr" -> "fastify/fastify-vite" ["e"=1]
 "kibertoad/toad-scheduler" -> "fastify/fastify-schedule"
 "kibertoad/toad-scheduler" -> "fastify/fastify-autoload"
 "kibertoad/toad-scheduler" -> "fastify/fastify-plugin"
@@ -396,9 +425,11 @@ digraph G {
 "hmake98/fastify-typescript" -> "mattaharish/fastify-boilerplate"
 "hmake98/fastify-typescript" -> "delvedor/fastify-example"
 "hmake98/fastify-typescript" -> "marcoturi/fastify-boilerplate"
+"loonywizard/js-confetti" -> "fastify/fastify-rate-limit" ["e"=1]
 "mcollina/close-with-grace" -> "mcollina/on-exit-leak-free"
 "mcollina/close-with-grace" -> "pinojs/thread-stream"
 "mcollina/close-with-grace" -> "Ethan-Arrowood/undici-fetch"
+"Asjas/prisma-redis-middleware" -> "mcollina/async-cache-dedupe" ["e"=1]
 "fastify/fastify-vite" -> "fastify/fastify-dx" ["e"=1]
 "fastify/fastify-vite" -> "mercurius-js/mercurius" ["e"=1]
 "fastify/fastify-vite" -> "fastify/fastify-cors"
@@ -421,6 +452,8 @@ digraph G {
 "mcollina/fastseries" -> "mcollina/fastparallel"
 "mercurius-js/validation" -> "mercurius-js/mercurius-integration-testing"
 "mercurius-js/cache" -> "mercurius-js/auth"
+"evanwashere/mitata" -> "mcollina/async-cache-dedupe" ["e"=1]
+"microsoft/deoptexplorer-vscode" -> "RafaelGSS/nodejs-bench-operations" ["e"=1]
 "turkerdev/fastify-type-provider-zod" -> "elierotenberg/fastify-zod"
 "turkerdev/fastify-type-provider-zod" -> "fastify/fastify-swagger"
 "turkerdev/fastify-type-provider-zod" -> "fastify/fastify-type-provider-typebox"
@@ -434,13 +467,22 @@ digraph G {
 "turkerdev/fastify-type-provider-zod" -> "causaly/zod-validation-error" ["e"=1]
 "turkerdev/fastify-type-provider-zod" -> "fastify/fastify-oauth2"
 "turkerdev/fastify-type-provider-zod" -> "StefanTerdell/zod-to-json-schema" ["e"=1]
+"practicajs/practica" -> "platformatic/platformatic" ["e"=1]
+"practicajs/practica" -> "delvedor/fastify-example" ["e"=1]
 "TomDoesTech/fastify-prisma-rest-api" -> "TomDoesTech/user-api"
 "TomDoesTech/fastify-prisma-rest-api" -> "hmake98/fastify-typescript"
+"fastify/fastify-dx" -> "fastify/fastify-vite" ["e"=1]
+"fastify/fastify-dx" -> "platformatic/platformatic" ["e"=1]
+"fastify/fastify-dx" -> "fastify/fastify-oauth2" ["e"=1]
+"BenLorantfy/nestjs-zod" -> "turkerdev/fastify-type-provider-zod" ["e"=1]
+"TomDoesTech/REST-API-Tutorial-Updated" -> "TomDoesTech/fastify-prisma-rest-api" ["e"=1]
 "lirantal/anti-trojan-source" -> "nearform/fastify-overview-ui"
+"oedotme/generouted" -> "fastify/fastify-vite" ["e"=1]
 "diamondio/better-queue" -> "diamondio/better-queue-sqlite"
 "diamondio/better-queue" -> "damoclark/node-persistent-queue"
 "diamondio/better-queue" -> "jessetane/queue"
 "diamondio/better-queue" -> "mcollina/fastq"
+"redis/redis-om-node" -> "pinojs/pino-pretty" ["e"=1]
 "RafaelGSS/nodejs-bench-operations" -> "RafaelGSS/bench-node"
 "RafaelGSS/nodejs-bench-operations" -> "nodejs/is-my-node-vulnerable"
 "RafaelGSS/nodejs-bench-operations" -> "mcollina/async-cache-dedupe"
@@ -457,6 +499,8 @@ digraph G {
 "nearform/react-patterns-workshop" -> "nearform/the-graphql-workshop"
 "moscajs/aedes-persistence-redis" -> "moscajs/aedes-persistence"
 "moscajs/aedes-persistence" -> "moscajs/aedes-persistence-redis"
+"causaly/zod-validation-error" -> "turkerdev/fastify-type-provider-zod" ["e"=1]
+"pinojs/pino" -> "pinojs/pino-pretty" ["e"=1]
 "platformatic/platformatic" -> "delvedor/fastify-example"
 "platformatic/platformatic" -> "mercurius-js/mercurius" ["e"=1]
 "platformatic/platformatic" -> "mcollina/async-cache-dedupe"
@@ -474,6 +518,7 @@ digraph G {
 "platformatic/platformatic" -> "nodejs/is-my-node-vulnerable"
 "nodejs/is-my-node-vulnerable" -> "RafaelGSS/nodejs-bench-operations"
 "nodejs/is-my-node-vulnerable" -> "RafaelGSS/bench-node"
+"szymmis/vite-express" -> "fastify/fastify-vite" ["e"=1]
 "pinojs/pino-http" -> "pinojs/pino-pretty"
 "pinojs/pino-http" -> "iamolegga/nestjs-pino" ["e"=1]
 "pinojs/pino-http" -> "pinojs/express-pino-logger"
@@ -499,6 +544,8 @@ digraph G {
 "nodejs/performance" -> "RafaelGSS/nodejs-bench-operations"
 "nodejs/performance" -> "ada-url/ada"
 "nodejs/performance" -> "nodejs/is-my-node-vulnerable"
+"tape-testing/tape" -> "tapjs/tapjs" ["e"=1]
+"kitajs/html" -> "fastify/fastify-vite" ["e"=1]
 "mcollina/hyperid" -> "mcollina/async-cache-dedupe"
 "mcollina/hyperid" -> "fastify/fastify-helmet"
 "mcollina/hyperid" -> "fastify/middie"
@@ -512,6 +559,10 @@ digraph G {
 "mcollina/hyperid" -> "mcollina/on-exit-leak-free"
 "mcollina/hyperid" -> "fastify/fastify-websocket"
 "mcollina/hyperid" -> "mcollina/fastq"
+"fastify/fast-json-stringify" -> "delvedor/find-my-way" ["e"=1]
+"fastify/fast-json-stringify" -> "fastify/fastify-cli" ["e"=1]
+"fastify/fast-json-stringify" -> "fastify/fastify-swagger" ["e"=1]
+"fastify/fast-json-stringify" -> "mcollina/hyperid" ["e"=1]
 "fastify/avvio" -> "fastify/fastify-plugin"
 "fastify/avvio" -> "fastify/fastify-autoload"
 "fastify/avvio" -> "fastify/fastify-request-context"
@@ -524,10 +575,15 @@ digraph G {
 "fastify/avvio" -> "fastify/fastify-sensible"
 "fastify/avvio" -> "fastify/fastify-error"
 "fastify/avvio" -> "fastify/middie"
+"marcoturi/ionic-boilerplate" -> "marcoturi/react-redux-boilerplate" ["e"=1]
+"rajikaimal/awesome-express" -> "pinojs/express-pino-logger" ["e"=1]
 "jessetane/queue" -> "diamondio/better-queue"
 "mcollina/modular_monolith" -> "mcollina/fastify-undici-dispatcher"
 "rickbergfalk/postgrator" -> "MattiLehtinen/postgrator-cli"
 "rickbergfalk/postgrator" -> "ForbesLindesay/atdatabases"
+"Yomguithereal/mnemonist" -> "delvedor/find-my-way" ["e"=1]
+"Yomguithereal/mnemonist" -> "nearform/fast-jwt" ["e"=1]
+"nodejs/security-wg" -> "nodejs/is-my-node-vulnerable" ["e"=1]
 "fastify/fastify-cli" -> "fastify/fastify-autoload"
 "fastify/fastify-cli" -> "fastify/fastify-sensible"
 "fastify/fastify-cli" -> "fastify/fastify-plugin"
@@ -543,8 +599,14 @@ digraph G {
 "fastify/fastify-cli" -> "fastify/fastify-multipart"
 "fastify/fastify-cli" -> "fastify/fastify-compress"
 "fastify/fastify-cli" -> "fastify/under-pressure"
+"sindresorhus/p-map" -> "mcollina/async-cache-dedupe" ["e"=1]
+"dougmoscrop/serverless-http" -> "fastify/aws-lambda-fastify" ["e"=1]
+"edwinhern/express-typescript" -> "marcoturi/fastify-boilerplate" ["e"=1]
+"plotwist-app/plotwist" -> "turkerdev/fastify-type-provider-zod" ["e"=1]
 "marcoturi/react-redux-boilerplate" -> "marcoturi/fastify-boilerplate"
 "marcoturi/react-redux-boilerplate" -> "marcoturi/ionic1-boilerplate" ["e"=1]
+"nodeshift/opossum" -> "fastify/under-pressure" ["e"=1]
+"nodeshift/opossum" -> "delvedor/find-my-way" ["e"=1]
 "fastify/fastify-swagger" -> "fastify/fastify-swagger-ui"
 "fastify/fastify-swagger" -> "fastify/fastify-jwt"
 "fastify/fastify-swagger" -> "fastify/fastify-cors"
@@ -560,6 +622,7 @@ digraph G {
 "fastify/fastify-swagger" -> "fastify/fastify-helmet"
 "fastify/fastify-swagger" -> "mercurius-js/mercurius" ["e"=1]
 "fastify/fastify-swagger" -> "fastify/fastify-cookie"
+"icebob/fastest-validator" -> "mcollina/hyperid" ["e"=1]
 "fastify/middie" -> "fastify/fastify-accepts"
 "fastify/middie" -> "fastify/fastify-caching"
 "fastify/middie" -> "fastify/fastify-plugin"
@@ -662,6 +725,7 @@ digraph G {
 "fastify/fastify-bearer-auth" -> "fastify/csrf-protection"
 "fastify/fastify-bearer-auth" -> "fastify/fastify-sensible"
 "fastify/demo" -> "mcollina/modular_monolith"
+"fgnass/node-dev" -> "tapjs/tapjs" ["e"=1]
 "fastify/fastify-helmet" -> "fastify/fastify-rate-limit"
 "fastify/fastify-helmet" -> "fastify/fastify-sensible"
 "fastify/fastify-helmet" -> "fastify/fastify-autoload"
@@ -735,36 +799,44 @@ digraph G {
 "fastify/fastify-nextjs" -> "fastify/point-of-view"
 "fastify/fastify-nextjs" -> "fastify/fastify-cli"
 "tapjs/tapjs" ["l"="0.158,-35.469"]
-"tape-testing/tape" ["l"="-0.256,-34.094"]
-"mercurius-js/mercurius" ["l"="-0.246,-20.462"]
+"tape-testing/tape" ["l"="-0.256,-34.094", "c"=110]
+"mercurius-js/mercurius" ["l"="-0.246,-20.462", "c"=153]
 "fastify/fastify-cli" ["l"="0.254,-35.496"]
 "delvedor/find-my-way" ["l"="0.222,-35.437"]
-"scottcorgan/tap-spec" ["l"="0.609,-30.654"]
+"scottcorgan/tap-spec" ["l"="0.609,-30.654", "c"=295]
 "fastify/fastify-autoload" ["l"="0.24,-35.494"]
 "fastify/fastify-swagger" ["l"="0.213,-35.507"]
-"hookio/hook.io" ["l"="1.994,-34.444"]
-"tj/dox" ["l"="1.856,-34.455"]
+"hookio/hook.io" ["l"="1.994,-34.444", "c"=156]
+"tj/dox" ["l"="1.856,-34.455", "c"=156]
 "fastify/light-my-request" ["l"="0.243,-35.471"]
-"rvagg/through2" ["l"="0.187,-33.59"]
-"thlorenz/proxyquire" ["l"="-0.219,-34.028"]
+"rvagg/through2" ["l"="0.187,-33.59", "c"=110]
+"thlorenz/proxyquire" ["l"="-0.219,-34.028", "c"=110]
 "platformatic/platformatic" ["l"="0.191,-35.444"]
-"davidmarkclements/0x" ["l"="-0.243,-33.769"]
-"EventEmitter2/EventEmitter2" ["l"="2.073,-34.486"]
+"davidmarkclements/0x" ["l"="-0.243,-33.769", "c"=110]
+"EventEmitter2/EventEmitter2" ["l"="2.073,-34.486", "c"=156]
 "fastify/aws-lambda-fastify" ["l"="0.303,-35.443"]
 "fastify/fastify-sensible" ["l"="0.266,-35.508"]
 "fastify/fastify-rate-limit" ["l"="0.271,-35.498"]
 "fastify/fastify-auth" ["l"="0.28,-35.507"]
 "mcollina/hyperid" ["l"="0.249,-35.429"]
+"SGrondin/bottleneck" ["l"="-0.174,-33.9", "c"=110]
+"diamondio/better-queue" ["l"="0.12,-35.297"]
 "pinojs/pino-pretty" ["l"="0.205,-35.551"]
-"pinojs/pino" ["l"="-0.245,-33.978"]
+"pinojs/pino" ["l"="-0.245,-33.978", "c"=110]
 "pinojs/pino-http" ["l"="0.161,-35.606"]
-"iamolegga/nestjs-pino" ["l"="1.871,-21.231"]
+"iamolegga/nestjs-pino" ["l"="1.871,-21.231", "c"=269]
 "fastify/fastify-helmet" ["l"="0.267,-35.488"]
 "fastify/fastify-multipart" ["l"="0.242,-35.527"]
 "fastify/fastify-cors" ["l"="0.256,-35.52"]
 "pinojs/express-pino-logger" ["l"="0.14,-35.589"]
 "fastify/fastify-static" ["l"="0.23,-35.518"]
 "delvedor/fastify-example" ["l"="0.25,-35.542"]
+"josdejong/workerpool" ["l"="-0.27,-33.707", "c"=110]
+"mcollina/fastq" ["l"="0.193,-35.422"]
+"fastify/fastify-vite" ["l"="0.201,-35.484"]
+"fastify/under-pressure" ["l"="0.271,-35.475"]
+"Ff00ff/mammoth" ["l"="-4.35,-30.41", "c"=4]
+"ForbesLindesay/atdatabases" ["l"="0.27,-35.422"]
 "fastify/fastify-cookie" ["l"="0.269,-35.521"]
 "fastify/fastify-jwt" ["l"="0.246,-35.509"]
 "fastify/point-of-view" ["l"="0.229,-35.485"]
@@ -776,9 +848,9 @@ digraph G {
 "pinojs/thread-stream" ["l"="0.236,-35.397"]
 "fastify/fastify-reply-from" ["l"="0.33,-35.446"]
 "fastify/fastify-mongodb" ["l"="0.284,-35.481"]
-"fastify/under-pressure" ["l"="0.271,-35.475"]
 "fastify/fastify-redis" ["l"="0.297,-35.486"]
 "fastify/restartable" ["l"="0.277,-35.385"]
+"marnusw/date-fns-tz" ["l"="1.207,-33.35", "c"=1185]
 "lmammino/streams-workshop" ["l"="0.206,-35.291"]
 "lmammino/iteration-protocols-workshop" ["l"="0.219,-35.255"]
 "RafaelGSS/nodejs-bench-operations" ["l"="0.181,-35.367"]
@@ -793,39 +865,42 @@ digraph G {
 "fastify/avvio" ["l"="0.257,-35.468"]
 "fastify/fastify-bearer-auth" ["l"="0.311,-35.519"]
 "fastify/fastify-http-proxy" ["l"="0.358,-35.452"]
+"nodejs/undici" ["l"="-0.331,-33.847", "c"=110]
 "fastify/fastify-routes" ["l"="0.383,-35.53"]
 "fastify/fastify-response-validation" ["l"="0.392,-35.513"]
 "fastify/fastify-accepts" ["l"="0.337,-35.508"]
 "fastify/fastify-example-twitter" ["l"="0.226,-35.597"]
 "fastify/example" ["l"="0.253,-35.582"]
 "fastify/fastify-example-todo" ["l"="0.208,-35.639"]
+"bcoe/c8" ["l"="-0.399,-33.84", "c"=110]
 "fastify/middie" ["l"="0.318,-35.494"]
-"ForbesLindesay/atdatabases" ["l"="0.27,-35.422"]
 "rickbergfalk/postgrator" ["l"="0.334,-35.374"]
 "mcollina/async-cache-dedupe" ["l"="0.218,-35.409"]
-"Ff00ff/mammoth" ["l"="-4.35,-30.41"]
 "nearform/sql" ["l"="0.298,-35.381"]
 "mcollina/close-with-grace" ["l"="0.25,-35.384"]
 "matschik/fastify-typescript-starter" ["l"="0.317,-35.618"]
 "yonathan06/fastify-typescript-starter" ["l"="0.291,-35.658"]
 "jellydn/fastify-starter" ["l"="0.362,-35.583"]
 "mattaharish/fastify-boilerplate" ["l"="0.315,-35.665"]
+"salsita/node-pg-migrate" ["l"="-4.28,-30.419", "c"=4]
 "fastify/session" ["l"="0.203,-35.529"]
 "fastify/fastify-secure-session" ["l"="0.283,-35.529"]
 "fastify/fastify-postgres" ["l"="0.31,-35.507"]
 "fastify/csrf-protection" ["l"="0.29,-35.518"]
+"supercharge/promise-pool" ["l"="1.166,-20.591", "c"=946]
 "fastify/fastify-awilix" ["l"="0.422,-35.519"]
 "fastify/fastify-oauth2" ["l"="0.226,-35.533"]
 "fastify/fastify-passport" ["l"="0.232,-35.505"]
+"koajs/router" ["l"="-1.576,-34.92", "c"=1259]
+"steambap/koa-tree-router" ["l"="0.25,-35.305"]
 "fastify/fastify-schedule" ["l"="0.322,-35.559"]
 "fastify/fastify-swagger-ui" ["l"="0.165,-35.531"]
 "fastify/benchmarks" ["l"="0.335,-35.526"]
 "nearform/fastify-overview-ui" ["l"="0.407,-35.557"]
 "nearform/fast-jwt" ["l"="0.325,-35.479"]
 "mercurius-js/mercurius-typescript" ["l"="0.368,-35.549"]
-"fastify/fast-proxy" ["l"="-5.022,-28.639"]
+"fastify/fast-proxy" ["l"="-5.022,-28.639", "c"=4]
 "fastify/fastify-mysql" ["l"="0.409,-35.431"]
-"steambap/koa-tree-router" ["l"="0.25,-35.305"]
 "delvedor/router-benchmark" ["l"="0.236,-35.349"]
 "mcollina/mqemitter" ["l"="0.079,-35.431"]
 "mcollina/mqemitter-redis" ["l"="0.04,-35.437"]
@@ -833,6 +908,14 @@ digraph G {
 "fastify/help" ["l"="0.166,-35.493"]
 "fastify/fastify-express" ["l"="0.378,-35.497"]
 "fastify/fastify-url-data" ["l"="0.43,-35.486"]
+"piscinajs/piscina" ["l"="-0.314,-33.812", "c"=110]
+"nodeshift/nodejs-reference-architecture" ["l"="-0.442,-33.716", "c"=110]
+"eta-dev/eta" ["l"="2.441,-30.873", "c"=735]
+"breejs/bree" ["l"="-0.317,-33.942", "c"=110]
+"kibertoad/toad-scheduler" ["l"="0.297,-35.569"]
+"nodejs/next-10" ["l"="-0.029,-33.374", "c"=110]
+"RafaelGSS/bench-node" ["l"="0.161,-35.341"]
+"ThomasAribart/json-schema-to-ts" ["l"="10.672,-3.306", "c"=129]
 "fox1t/fastify-multer" ["l"="0.25,-35.603"]
 "fox1t/multer" ["l"="0.246,-35.631"]
 "yonathan06/fastify-now" ["l"="0.271,-35.697"]
@@ -845,39 +928,45 @@ digraph G {
 "GiovanniCardamone/fastify-autoroutes" ["l"="0.439,-35.544"]
 "hmake98/fastify-typescript" ["l"="0.318,-35.64"]
 "nearform/the-fastify-workshop" ["l"="0.295,-35.602"]
-"fastify/fastify-vite" ["l"="0.201,-35.484"]
+"axe-me/vite-plugin-node" ["l"="-7.306,-30.282", "c"=31]
 "mcollina/on-exit-leak-free" ["l"="0.218,-35.38"]
 "knockaway/sqsiphon" ["l"="0.235,-35.365"]
-"mcollina/fastq" ["l"="0.193,-35.422"]
 "mcollina/fastparallel" ["l"="0.124,-35.418"]
 "mcollina/fastseries" ["l"="0.144,-35.411"]
-"Asjas/prisma-redis-middleware" ["l"="1.067,-20.831"]
+"Asjas/prisma-redis-middleware" ["l"="1.067,-20.831", "c"=946]
 "mercurius-js/cache" ["l"="0.196,-35.33"]
 "mcollina/modular_monolith" ["l"="0.123,-35.393"]
-"kibertoad/toad-scheduler" ["l"="0.297,-35.569"]
-"breejs/bree" ["l"="-0.317,-33.942"]
+"StefanTerdell/zod-to-json-schema" ["l"="-2.107,-30.777", "c"=981]
+"turkerdev/fastify-type-provider-zod" ["l"="0.185,-35.519"]
+"simdutf/simdutf" ["l"="-19.61,-26.106", "c"=10]
+"ada-url/ada" ["l"="0.091,-35.354"]
+"frandiox/vite-ssr" ["l"="-7.362,-30.2", "c"=31]
 "TomDoesTech/fastify-prisma-rest-api" ["l"="0.332,-35.681"]
 "danielm/fastify-prisma-swagger-rest-boilerplate" ["l"="0.344,-35.654"]
 "marcoturi/fastify-boilerplate" ["l"="0.368,-35.674"]
+"loonywizard/js-confetti" ["l"="-3.338,-29.86", "c"=4]
 "Ethan-Arrowood/undici-fetch" ["l"="0.281,-35.326"]
-"fastify/fastify-dx" ["l"="-7.27,-30.246"]
-"h3js/rou3" ["l"="-7.593,-30.625"]
-"turkerdev/fastify-type-provider-zod" ["l"="0.185,-35.519"]
-"vikejs/vike" ["l"="-7.278,-30.216"]
+"fastify/fastify-dx" ["l"="-7.27,-30.246", "c"=31]
+"h3js/rou3" ["l"="-7.593,-30.625", "c"=31]
+"vikejs/vike" ["l"="-7.278,-30.216", "c"=31]
 "mercurius-js/auth" ["l"="0.182,-35.298"]
 "nearform/the-graphql-workshop" ["l"="0.339,-35.621"]
+"evanwashere/mitata" ["l"="-7.375,-30.689", "c"=31]
+"microsoft/deoptexplorer-vscode" ["l"="-7.209,-30.64", "c"=31]
 "elierotenberg/fastify-zod" ["l"="0.144,-35.545"]
 "fastify/fastify-type-provider-typebox" ["l"="0.121,-35.536"]
-"plotwist-app/plotwist" ["l"="3.765,-20.705"]
-"causaly/zod-validation-error" ["l"="-2.08,-30.788"]
-"StefanTerdell/zod-to-json-schema" ["l"="-2.107,-30.777"]
+"plotwist-app/plotwist" ["l"="3.765,-20.705", "c"=396]
+"causaly/zod-validation-error" ["l"="-2.08,-30.788", "c"=981]
+"practicajs/practica" ["l"="-0.53,-33.673", "c"=110]
 "TomDoesTech/user-api" ["l"="0.344,-35.715"]
+"BenLorantfy/nestjs-zod" ["l"="-2.037,-30.715", "c"=981]
+"TomDoesTech/REST-API-Tutorial-Updated" ["l"="-50.839,-10.684", "c"=388]
 "lirantal/anti-trojan-source" ["l"="0.46,-35.575"]
-"diamondio/better-queue" ["l"="0.12,-35.297"]
+"oedotme/generouted" ["l"="-0.036,-20.276", "c"=153]
 "diamondio/better-queue-sqlite" ["l"="0.096,-35.286"]
 "damoclark/node-persistent-queue" ["l"="0.125,-35.269"]
 "jessetane/queue" ["l"="0.091,-35.259"]
-"RafaelGSS/bench-node" ["l"="0.161,-35.341"]
+"redis/redis-om-node" ["l"="-2.144,-30.944", "c"=981]
 "nodejs/is-my-node-vulnerable" ["l"="0.152,-35.369"]
 "revell29/fastify-clean-architecture" ["l"="0.395,-35.709"]
 "aslupin/boilerplate-typescript-fastify-clean-architecture" ["l"="0.412,-35.728"]
@@ -886,34 +975,42 @@ digraph G {
 "fastify/fastify-type-provider-json-schema-to-ts" ["l"="0.083,-35.549"]
 "nearform/react-patterns-workshop" ["l"="0.359,-35.629"]
 "moscajs/aedes-persistence" ["l"="-0.015,-35.439"]
-"nodejs/undici" ["l"="-0.331,-33.847"]
-"oramasearch/orama" ["l"="-3.943,-29.915"]
+"oramasearch/orama" ["l"="-3.943,-29.915", "c"=4]
+"szymmis/vite-express" ["l"="-7.22,-30.219", "c"=31]
 "pinojs/pino-std-serializers" ["l"="0.134,-35.636"]
-"Papooch/nestjs-cls" ["l"="1.866,-21.273"]
-"ada-url/ada" ["l"="0.091,-35.354"]
-"simdutf/simdutf" ["l"="-19.61,-26.106"]
+"Papooch/nestjs-cls" ["l"="1.866,-21.273", "c"=269]
 "nodejs/performance" ["l"="0.125,-35.344"]
-"fastfloat/fast_float" ["l"="-19.722,-26.123"]
-"pnpm/pacquet" ["l"="-7.265,-30.662"]
-"stephenberry/glaze" ["l"="-19.877,-26.116"]
+"fastfloat/fast_float" ["l"="-19.722,-26.123", "c"=10]
+"pnpm/pacquet" ["l"="-7.265,-30.662", "c"=31]
+"stephenberry/glaze" ["l"="-19.877,-26.116", "c"=10]
 "TkTech/can_ada" ["l"="0.039,-35.352"]
-"evanwashere/mitata" ["l"="-7.375,-30.689"]
 "nodejs/uvwasi" ["l"="0.035,-35.322"]
-"boost-ext/ut" ["l"="-19.928,-26.162"]
-"mpusz/mp-units" ["l"="-19.908,-26.158"]
+"boost-ext/ut" ["l"="-19.928,-26.162", "c"=10]
+"mpusz/mp-units" ["l"="-19.908,-26.158", "c"=10]
 "ada-url/ada-python" ["l"="0.066,-35.332"]
-"ashvardanian/StringZilla" ["l"="-19.695,-26.125"]
-"nodejs/TSC" ["l"="-0.044,-33.419"]
+"ashvardanian/StringZilla" ["l"="-19.695,-26.125", "c"=10]
+"nodejs/TSC" ["l"="-0.044,-33.419", "c"=110]
+"kitajs/html" ["l"="-4.255,-30.854", "c"=4]
 "mcollina/hwp" ["l"="0.266,-35.367"]
+"fastify/fast-json-stringify" ["l"="-0.246,-33.799", "c"=110]
+"marcoturi/ionic-boilerplate" ["l"="7.556,-24.203", "c"=625]
+"marcoturi/react-redux-boilerplate" ["l"="0.392,-35.686"]
+"rajikaimal/awesome-express" ["l"="8.833,-23.664", "c"=819]
 "mcollina/fastify-undici-dispatcher" ["l"="0.094,-35.392"]
 "MattiLehtinen/postgrator-cli" ["l"="0.364,-35.35"]
-"marcoturi/react-redux-boilerplate" ["l"="0.392,-35.686"]
-"marcoturi/ionic1-boilerplate" ["l"="7.54,-24.138"]
+"Yomguithereal/mnemonist" ["l"="0.232,-29.348", "c"=12]
+"nodejs/security-wg" ["l"="-0.065,-33.406", "c"=110]
+"sindresorhus/p-map" ["l"="-0.802,-35.589", "c"=498]
+"dougmoscrop/serverless-http" ["l"="10.886,-3.089", "c"=129]
+"edwinhern/express-typescript" ["l"="2.832,-21.007", "c"=450]
+"marcoturi/ionic1-boilerplate" ["l"="7.54,-24.138", "c"=625]
+"nodeshift/opossum" ["l"="-0.37,-33.793", "c"=110]
+"icebob/fastest-validator" ["l"="-0.742,-33.926", "c"=110]
 "fastify/fastify-flash" ["l"="0.337,-35.544"]
-"fastify/fast-json-stringify" ["l"="-0.246,-33.799"]
 "mcollina/reusify" ["l"="0.169,-35.396"]
 "fastify/fastify-formbody" ["l"="0.134,-35.499"]
 "fastify/demo" ["l"="0.069,-35.392"]
+"fgnass/node-dev" ["l"="1.848,-34.551", "c"=156]
 "ducktors/fastify-socket.io" ["l"="0.235,-35.566"]
 "mcollina/make-promises-safe" ["l"="0.304,-35.41"]
 "fastify/fastify-nextjs" ["l"="0.307,-35.468"]

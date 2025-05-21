@@ -1,4 +1,8 @@
 digraph G {
+"geopandas/geopandas" -> "SciTools/cartopy" ["e"=1]
+"corteva/rioxarray" -> "pytroll/pyresample" ["e"=1]
+"corteva/rioxarray" -> "geoxarray/geoxarray" ["e"=1]
+"erikflowers/weather-icons" -> "basmilius/weather-icons" ["e"=1]
 "basmilius/weather-icons" -> "Makin-Things/weather-icons"
 "basmilius/weather-icons" -> "philanri/weather-icons"
 "basmilius/weather-icons" -> "manifestinteractive/weather-underground-icons"
@@ -26,6 +30,7 @@ digraph G {
 "royalosyin/Python-Practical-Application-on-Climate-Variability-Studies" -> "nicrie/xmca"
 "royalosyin/Python-Practical-Application-on-Climate-Variability-Studies" -> "hdrake/cmip6-temperature-demo"
 "royalosyin/Python-Practical-Application-on-Climate-Variability-Studies" -> "Ouranosinc/xclim"
+"nschloe/tuna" -> "fatiando/pooch" ["e"=1]
 "ESCOMP/CESM" -> "ESCOMP/CTSM"
 "ESCOMP/CESM" -> "ESMCI/cime"
 "ESCOMP/CESM" -> "ESCOMP/CAM"
@@ -56,6 +61,12 @@ digraph G {
 "Unidata/netcdf-c" -> "esmf-org/esmf"
 "Unidata/netcdf-c" -> "marshallward/f90nml" ["e"=1]
 "Unidata/netcdf-c" -> "h5netcdf/h5netcdf"
+"pydata/xarray" -> "Unidata/MetPy" ["e"=1]
+"pydata/xarray" -> "SciTools/cartopy" ["e"=1]
+"pydata/xarray" -> "pangeo-data/pangeo" ["e"=1]
+"pydata/xarray" -> "Unidata/netcdf4-python" ["e"=1]
+"pydata/xarray" -> "JiaweiZhuang/xESMF" ["e"=1]
+"qwd/OpenWeatherPlus-Android" -> "qwd/dev-site" ["e"=1]
 "JiaweiZhuang/xESMF" -> "xgcm/xgcm"
 "JiaweiZhuang/xESMF" -> "pangeo-data/xESMF"
 "JiaweiZhuang/xESMF" -> "xarray-contrib/cf-xarray"
@@ -71,6 +82,14 @@ digraph G {
 "JiaweiZhuang/xESMF" -> "intake/intake-esm"
 "JiaweiZhuang/xESMF" -> "geoxarray/geoxarray"
 "JiaweiZhuang/xESMF" -> "climlab/climlab"
+"proplot-dev/proplot" -> "Ouranosinc/xclim" ["e"=1]
+"proplot-dev/proplot" -> "hhuangwx/cmaps" ["e"=1]
+"proplot-dev/proplot" -> "Unidata/MetPy" ["e"=1]
+"proplot-dev/proplot" -> "regionmask/regionmask" ["e"=1]
+"proplot-dev/proplot" -> "SciTools/cartopy" ["e"=1]
+"proplot-dev/proplot" -> "pangeo-data/climpred" ["e"=1]
+"proplot-dev/proplot" -> "MeteoAI/awesome-atmos" ["e"=1]
+"proplot-dev/proplot" -> "pytroll/pyresample" ["e"=1]
 "matplotlib/basemap" -> "SciTools/cartopy"
 "matplotlib/basemap" -> "SciTools/iris"
 "matplotlib/basemap" -> "rveciana/BasemapTutorial"
@@ -115,6 +134,13 @@ digraph G {
 "intake/intake" -> "opengeospatial/geoparquet" ["e"=1]
 "intake/intake" -> "xarray-contrib/datatree"
 "intake/intake" -> "earth-mover/icechunk"
+"fsspec/filesystem_spec" -> "fsspec/kerchunk" ["e"=1]
+"fsspec/filesystem_spec" -> "intake/intake" ["e"=1]
+"fsspec/filesystem_spec" -> "developmentseed/obstore" ["e"=1]
+"mpi4py/mpi4py" -> "esmf-org/esmf" ["e"=1]
+"hgrecco/pint-pandas" -> "xarray-contrib/pint-xarray" ["e"=1]
+"GeospatialPython/pyshp" -> "SciTools/cartopy" ["e"=1]
+"raoulcollenteur/Python-Hydrology-Tools" -> "pyet-org/pyet" ["e"=1]
 "pangeo-data/pangeo" -> "makepath/xarray-spatial" ["e"=1]
 "pangeo-data/pangeo" -> "xgcm/xgcm"
 "pangeo-data/pangeo" -> "holoviz/geoviews" ["e"=1]
@@ -202,6 +228,7 @@ digraph G {
 "tuanvvu/Air_quality_trend_analysis" -> "skgrange/normalweatherr"
 "tuanvvu/Air_quality_trend_analysis" -> "skgrange/rmweather"
 "tuanvvu/Air_quality_trend_analysis" -> "songnku/COVID-19-AQ"
+"adyliu/china_area" -> "GaryBikini/ChinaAdminDivisonSHP" ["e"=1]
 "rich-iannone/stationaRy" -> "rich-iannone/splitr"
 "rich-iannone/stationaRy" -> "rich-iannone/unidecoder"
 "rich-iannone/stationaRy" -> "rich-iannone/chemdata"
@@ -209,8 +236,22 @@ digraph G {
 "rich-iannone/stationaRy" -> "rich-iannone/PuffR"
 "rich-iannone/stationaRy" -> "rich-iannone/TrendAnalysis"
 "rich-iannone/stationaRy" -> "ropensci/GSODR" ["e"=1]
+"airspeed-velocity/asv" -> "fatiando/pooch" ["e"=1]
+"corteva/geocube" -> "xarray-contrib/xvec" ["e"=1]
+"corteva/geocube" -> "xarray-contrib/xbatcher" ["e"=1]
+"corteva/geocube" -> "pangeo-data/rechunker" ["e"=1]
+"corteva/geocube" -> "geoxarray/geoxarray" ["e"=1]
 "blaylockbk/pyBKB_v3" -> "blaylockbk/pyBKB_v2"
 "blaylockbk/pyBKB_v3" -> "deeplycloudy/glmtools"
+"Hzzone/Precipitation-Nowcasting" -> "bugsuse/meteoai" ["e"=1]
+"holoviz/hvplot" -> "SciTools/cartopy" ["e"=1]
+"holoviz/hvplot" -> "intake/intake" ["e"=1]
+"jostbr/shallow-water" -> "jamesp/shallowwater" ["e"=1]
+"cambecc/air" -> "FreeGIS/kriging-contour" ["e"=1]
+"MITgcm/MITgcm" -> "xgcm/xgcm" ["e"=1]
+"MITgcm/MITgcm" -> "pyqg/pyqg" ["e"=1]
+"MITgcm/MITgcm" -> "FourierFlows/GeophysicalFlows.jl" ["e"=1]
+"MITgcm/MITgcm" -> "jbusecke/xmovie" ["e"=1]
 "cylc/cylc-flow" -> "metomi/rose"
 "cylc/cylc-flow" -> "cylc/cylc-ui"
 "cylc/cylc-flow" -> "MetOffice/simulation-systems"
@@ -242,6 +283,9 @@ digraph G {
 "Unidata/awips2" -> "Unidata/python-workshop"
 "Unidata/awips2" -> "NCAR/pynio"
 "Unidata/awips2" -> "Unidata/python-gallery"
+"pydata/bottleneck" -> "numbagg/numbagg" ["e"=1]
+"pydata/bottleneck" -> "fatiando/pooch" ["e"=1]
+"pydata/bottleneck" -> "pytroll/pyresample" ["e"=1]
 "jbusecke/xmovie" -> "xgcm/xgcm"
 "jbusecke/xmovie" -> "xarray-contrib/flox"
 "jbusecke/xmovie" -> "xgcm/xrft"
@@ -257,6 +301,9 @@ digraph G {
 "jbusecke/xmovie" -> "xarray-contrib/cf-xarray"
 "jbusecke/xmovie" -> "geoffstanley/neutralocean" ["e"=1]
 "jbusecke/xmovie" -> "ajdawson/eofs"
+"fatiando/verde" -> "regionmask/regionmask" ["e"=1]
+"fatiando/verde" -> "pytroll/pyresample" ["e"=1]
+"fatiando/verde" -> "Ouranosinc/xclim" ["e"=1]
 "Unidata/MetPy" -> "ecmwf/cfgrib"
 "Unidata/MetPy" -> "SciTools/iris"
 "Unidata/MetPy" -> "NCAR/wrf-python"
@@ -330,6 +377,16 @@ digraph G {
 "ecmwf/notebook-examples" -> "WFRT/verif"
 "ecmwf/notebook-examples" -> "ecmwf/cfgrib"
 "ecmwf/notebook-examples" -> "ecmwf-projects/mooc-machine-learning-weather-climate"
+"pySTEPS/pysteps" -> "ARM-DOE/pyart" ["e"=1]
+"pySTEPS/pysteps" -> "wradlib/wradlib" ["e"=1]
+"pySTEPS/pysteps" -> "ecmwf/cfgrib" ["e"=1]
+"pySTEPS/pysteps" -> "CyanideCN/PyCINRAD" ["e"=1]
+"pySTEPS/pysteps" -> "bugsuse/meteoai" ["e"=1]
+"pySTEPS/pysteps" -> "Unidata/MetPy" ["e"=1]
+"pySTEPS/pysteps" -> "ecmwf/climetlab" ["e"=1]
+"pySTEPS/pysteps" -> "nmcdev/meteva" ["e"=1]
+"koldunovn/python_for_geosciences" -> "javedali99/python-resources-for-earth-sciences" ["e"=1]
+"koldunovn/python_for_geosciences" -> "SciTools/iris" ["e"=1]
 "fatiando/pooch" -> "fatiando/verde" ["e"=1]
 "fatiando/pooch" -> "fsspec/kerchunk"
 "fatiando/pooch" -> "pyvista/pyvista-xarray"
@@ -345,8 +402,13 @@ digraph G {
 "fatiando/pooch" -> "xarray-contrib/datatree"
 "fatiando/pooch" -> "ppinard/matplotlib-scalebar" ["e"=1]
 "fatiando/pooch" -> "fatiando/boule"
+"bcdev/jpy" -> "xcube-dev/xcube" ["e"=1]
 "dtcenter/MET" -> "dtcenter/METplus"
 "dtcenter/MET" -> "dtcenter/METviewer"
+"csparpa/pyowm" -> "jswhit/pygrib" ["e"=1]
+"CliMA/Oceananigans.jl" -> "CliMA/ClimateMachine.jl" ["e"=1]
+"CliMA/Oceananigans.jl" -> "SpeedyWeather/SpeedyWeather.jl" ["e"=1]
+"CliMA/Oceananigans.jl" -> "FourierFlows/GeophysicalFlows.jl" ["e"=1]
 "NCAR/geocat-comp" -> "NCAR/geocat-examples"
 "NCAR/geocat-comp" -> "NCAR/geocat-viz"
 "NCAR/geocat-comp" -> "ajdawson/windspharm"
@@ -355,6 +417,7 @@ digraph G {
 "python-metar/python-metar" -> "ywangd/pybufrkit"
 "python-metar/python-metar" -> "avwx-rest/avwx-engine"
 "python-metar/python-metar" -> "Unidata/MetPy"
+"earthlab/earthpy" -> "Ouranosinc/xclim" ["e"=1]
 "NCAR/wrf_hydro_py" -> "NCAR/wrf_hydro_docker"
 "NCAR/wrf_hydro_py" -> "NCAR/wrf_hydro_arcgis_preprocessor"
 "NCAR/wrf_hydro_py" -> "NCAR/wrf_hydro_nwm_public"
@@ -426,6 +489,9 @@ digraph G {
 "AirChem/F0AM" -> "simonom/PyCHAM"
 "AirChem/F0AM" -> "loftytopping/PyBox"
 "AirChem/F0AM" -> "tianshu129/foqat"
+"cambecc/grib2json" -> "Unidata/thredds" ["e"=1]
+"cambecc/grib2json" -> "meteoinfo/wContour" ["e"=1]
+"cambecc/grib2json" -> "jswhit/pygrib" ["e"=1]
 "meteoinfo/MeteoInfo" -> "meteoinfo/wContour"
 "meteoinfo/MeteoInfo" -> "YvZheng/pycwr"
 "meteoinfo/MeteoInfo" -> "CyanideCN/PyCINRAD"
@@ -443,9 +509,16 @@ digraph G {
 "meteoinfo/MeteoInfo" -> "meicmodel/meic2ctm"
 "rafatieppo/sebal" -> "wwolff7/SEBAL_GRASS"
 "rafatieppo/sebal" -> "TimHessels/SEBAL"
+"fatiando/harmonica" -> "fatiando/boule" ["e"=1]
+"perrygeo/python-rasterstats" -> "pytroll/pyresample" ["e"=1]
+"dask/dask-jobqueue" -> "pangeo-data/rechunker" ["e"=1]
 "PCMDI/pcmdi_metrics" -> "xCDAT/xcdat"
 "PCMDI/pcmdi_metrics" -> "ESMValGroup/ESMValTool"
 "PCMDI/pcmdi_metrics" -> "WCRP-CMIP/CMIP6_CVs"
+"ct6502/wavelets" -> "hhuangwx/cmaps" ["e"=1]
+"ct6502/wavelets" -> "ajdawson/eofs" ["e"=1]
+"ct6502/wavelets" -> "shenyulu/easyclimate" ["e"=1]
+"pvigier/perlin-numpy" -> "xarray-contrib/xskillscore" ["e"=1]
 "xarray-contrib/xskillscore" -> "pangeo-data/climpred"
 "xarray-contrib/xskillscore" -> "ecmwf/climetlab"
 "xarray-contrib/xskillscore" -> "Ouranosinc/xclim"
@@ -483,6 +556,7 @@ digraph G {
 "huangynj/NCL-Chinamap" -> "huangynj/Python-Chinamap"
 "Unidata/tds" -> "Unidata/thredds-docker"
 "Unidata/tds" -> "Unidata/thredds"
+"Toblerity/rtree" -> "pytroll/pyresample" ["e"=1]
 "jleinonen/pytmatrix" -> "jleinonen/pymiecoated"
 "jleinonen/pytmatrix" -> "josephhardinee/PyDSD"
 "jleinonen/pytmatrix" -> "nguy/PyRadarMet"
@@ -501,6 +575,7 @@ digraph G {
 "ESCOMP/CTSM" -> "ESMCI/cime"
 "ESCOMP/CTSM" -> "NCAR/ctsm_python_gallery"
 "ESCOMP/CTSM" -> "NCAR/CESM_postprocessing"
+"jgrss/geowombat" -> "xarray-contrib/xvec" ["e"=1]
 "intake/intake-xarray" -> "NCEI-NOAAGov/zarrdap"
 "intake/intake-esm" -> "xarray-contrib/cf-xarray"
 "intake/intake-esm" -> "jbusecke/xMIP"
@@ -532,7 +607,10 @@ digraph G {
 "ClimateImpactLab/downscaleCMIP6" -> "monocongo/climate_indices"
 "ClimateImpactLab/downscaleCMIP6" -> "SantanderMetGroup/downscaleR" ["e"=1]
 "mrnorman/miniWeather" -> "stfc/PSyclone"
+"xarray-contrib/xarray-tutorial" -> "xarray-contrib/flox" ["e"=1]
+"xarray-contrib/xarray-tutorial" -> "xarray-contrib/cf-xarray" ["e"=1]
 "Unidata/netcdf-cxx4" -> "Unidata/netcdf-c"
+"sakitam-fdd/ol-plot" -> "FreeGIS/kriging-contour" ["e"=1]
 "rich-iannone/PuffR" -> "rich-iannone/chemdata"
 "rich-iannone/PuffR" -> "rich-iannone/AQStats"
 "rich-iannone/PuffR" -> "rich-iannone/aetheRa"
@@ -543,6 +621,11 @@ digraph G {
 "djgagne/ams-ml-python-course" -> "NCAR/ai4ess-hackathon-2020" ["e"=1]
 "djgagne/ams-ml-python-course" -> "alburke/ams-2020-ml-python-course"
 "djgagne/ams-ml-python-course" -> "xarray-contrib/xskillscore"
+"hydrogo/rainymotion" -> "wradlib/wradlib" ["e"=1]
+"hydrogo/rainymotion" -> "openradar/PyDDA" ["e"=1]
+"hydrogo/rainymotion" -> "meteoswiss-mdr/pyrad" ["e"=1]
+"hydrogo/rainymotion" -> "bugsuse/meteoai" ["e"=1]
+"hydrogo/rainymotion" -> "YvZheng/pycwr" ["e"=1]
 "weather-gov/api" -> "weather-gov/weather.gov"
 "NCAR/wrf_hydro_nwm_public" -> "NCAR/wrf_hydro_arcgis_preprocessor"
 "NCAR/wrf_hydro_nwm_public" -> "NCAR/wrf_hydro_py"
@@ -585,6 +668,7 @@ digraph G {
 "nmcdev/meteva" -> "Mo-Dabao/pyMeteo"
 "nmcdev/meteva" -> "PhilosopherZ/Meteorological-Books"
 "nmcdev/meteva" -> "nmcdev/nmc_met_diagnostic"
+"mom-ocean/MOM6" -> "esmf-org/esmf" ["e"=1]
 "EDmodel/ED2" -> "PecanProject/pecan"
 "EDmodel/ED2" -> "forc-db/ForC"
 "GIS4WRF/gis4wrf" -> "NCAR/wrf-python"
@@ -627,6 +711,8 @@ digraph G {
 "fluxnet/ONEFlux" -> "icos-etc/RFlux"
 "fluxnet/ONEFlux" -> "OzFlux/PyFluxPro"
 "fluxnet/ONEFlux" -> "aukkola/FluxnetLSM"
+"mhpi/hydroDL" -> "djgagne/ams-ml-python-course" ["e"=1]
+"hainegroup/oceanspy" -> "xgcm/xgcm" ["e"=1]
 "geoschem/GEOSChem-python-tutorial" -> "geoschem/gcpy"
 "geoschem/GEOSChem-python-tutorial" -> "geoschem/geos-chem-cloud"
 "geoschem/GEOSChem-python-tutorial" -> "geoschem/geos-chem"
@@ -685,7 +771,14 @@ digraph G {
 "uniquezhiyuan/PyRadar" -> "YvZheng/pycwr"
 "uniquezhiyuan/PyRadar" -> "CyanideCN/PyCINRAD"
 "uniquezhiyuan/PyRadar" -> "bugsuse/mradar"
+"Unidata/netcdf-fortran" -> "Unidata/netcdf-c" ["e"=1]
+"Unidata/netcdf-fortran" -> "Parallel-NetCDF/PnetCDF" ["e"=1]
+"Unidata/netcdf-fortran" -> "wrf-model/WPS" ["e"=1]
+"Unidata/netcdf-fortran" -> "esmf-org/esmf" ["e"=1]
+"Unidata/netcdf-fortran" -> "NCAR/ParallelIO" ["e"=1]
+"Unidata/netcdf-fortran" -> "nco/nco" ["e"=1]
 "cf-convention/discuss" -> "cf-convention/cf-conventions"
+"isciences/exactextract" -> "xarray-contrib/xvec" ["e"=1]
 "nmcdev/nmc_met_io" -> "nmcdev/nmc_met_graphics"
 "nmcdev/nmc_met_io" -> "nmcdev/meteva"
 "nmcdev/nmc_met_io" -> "nmcdev/nmc_met_base"
@@ -701,6 +794,7 @@ digraph G {
 "mgduda/MPAS-Plotting" -> "mgduda/convert_mpas"
 "mgduda/MPAS-Plotting" -> "MPAS-Dev/MPAS-Limited-Area"
 "nguy/PyRadarMet" -> "scollis/notebooks"
+"AER-RC/LBLRTM" -> "danielkoll/PyRADS" ["e"=1]
 "ulmo-dev/ulmo" -> "djlampert/PyHSPF"
 "ulmo-dev/ulmo" -> "NCPP/ocgis"
 "ulmo-dev/ulmo" -> "NCAR/rwrfhydro"
@@ -809,6 +903,9 @@ digraph G {
 "EVS-ATMOS/stm_2018_pyart_course" -> "heistermann/ontrack"
 "TaufiqHassan/acccmip6" -> "WCRP-CMIP/CMIP6_CVs"
 "TaufiqHassan/acccmip6" -> "hdrake/cmip6-temperature-demo"
+"makepath/xarray-spatial" -> "pytroll/pyresample" ["e"=1]
+"euroargodev/argopy" -> "xgcm/xgcm" ["e"=1]
+"euroargodev/argopy" -> "jbusecke/xMIP" ["e"=1]
 "E3SM-Project/E3SM" -> "ESMCI/cime"
 "E3SM-Project/E3SM" -> "ESCOMP/CESM"
 "E3SM-Project/E3SM" -> "NGEET/fates"
@@ -824,6 +921,7 @@ digraph G {
 "E3SM-Project/E3SM" -> "NCAR/CESM_postprocessing"
 "E3SM-Project/E3SM" -> "microhh/microhh" ["e"=1]
 "E3SM-Project/E3SM" -> "rubisco-sfa/ILAMB"
+"georgebv/pyextremes" -> "python-windrose/windrose" ["e"=1]
 "esmf-org/esmf" -> "ESMCI/cime"
 "esmf-org/esmf" -> "NCAR/ParallelIO"
 "esmf-org/esmf" -> "pangeo-data/xESMF"
@@ -831,6 +929,7 @@ digraph G {
 "esmf-org/esmf" -> "Unidata/netcdf-fortran" ["e"=1]
 "esmf-org/esmf" -> "mom-ocean/MOM6" ["e"=1]
 "esmf-org/esmf" -> "NOAA-GFDL/FMS" ["e"=1]
+"neuralhydrology/neuralhydrology" -> "pyet-org/pyet" ["e"=1]
 "GaryBikini/ChinaAdminDivisonSHP" -> "ruiduobao/shengshixian.com" ["e"=1]
 "GaryBikini/ChinaAdminDivisonSHP" -> "cnmetlab/cnmaps"
 "GaryBikini/ChinaAdminDivisonSHP" -> "adyliu/china_area" ["e"=1]
@@ -846,10 +945,16 @@ digraph G {
 "GaryBikini/ChinaAdminDivisonSHP" -> "ni1o1/transbigdata" ["e"=1]
 "GaryBikini/ChinaAdminDivisonSHP" -> "ni1o1/pygeo-tutorial" ["e"=1]
 "GaryBikini/ChinaAdminDivisonSHP" -> "PaddlePaddle/PaddleRS" ["e"=1]
+"pangeo-data/WeatherBench" -> "ecmwf/climetlab" ["e"=1]
+"pangeo-data/WeatherBench" -> "ecmwf-projects/mooc-machine-learning-weather-climate" ["e"=1]
+"capaulson/pyKriging" -> "pytroll/pyresample" ["e"=1]
+"conda/conda-lock" -> "conda-incubator/conda-store" ["e"=1]
 "conda-incubator/conda-store" -> "nebari-dev/nebari"
 "conda-incubator/conda-store" -> "conda-incubator/conda-pypi"
 "ClimateGlobalChange/tempestextremes" -> "steidani/ConTrack"
 "ClimateGlobalChange/tempestextremes" -> "ajdawson/windspharm"
+"holoviz/spatialpandas" -> "xarray-contrib/xvec" ["e"=1]
+"geopandas/dask-geopandas" -> "xarray-contrib/xvec" ["e"=1]
 "quishqa/PyChEmiss" -> "quishqa/WRF-Chem_SP"
 "quishqa/PyChEmiss" -> "douglowe/WRF_UoM_EMIT"
 "pyqg/pyqg" -> "xgcm/xgcm"
@@ -858,6 +963,7 @@ digraph G {
 "pyqg/pyqg" -> "jbusecke/cookiecutter-science-project"
 "pyqg/pyqg" -> "edoddridge/aronnax"
 "pyqg/pyqg" -> "jamesp/shallowwater"
+"ufs-community/ufs-weather-model" -> "esmf-org/esmf" ["e"=1]
 "hdrake/cmip6-temperature-demo" -> "pangeo-data/pangeo-cmip6-examples"
 "hdrake/cmip6-temperature-demo" -> "tloureiro/cmip6_downloader"
 "pyet-org/pyet" -> "martinvonk/SPEI"
@@ -873,17 +979,28 @@ digraph G {
 "openair-project/openair" -> "AirChem/F0AM"
 "openair-project/openair" -> "skgrange/normalweatherr"
 "openair-project/openair" -> "openair-project/book"
+"GeoStat-Framework/PyKrige" -> "pytroll/pyresample" ["e"=1]
 "NBloemendaal/STORM" -> "NBloemendaal/STORM-return-periods"
 "NBloemendaal/STORM" -> "NBloemendaal/STORM-preprocessing"
 "simonom/PyCHAM" -> "AtChem/AtChem2"
 "simonom/PyCHAM" -> "loftytopping/PyBox"
 "simonom/PyCHAM" -> "AirChem/F0AM"
+"wangyapu/DataVisual" -> "flashlxy/PyMICAPS" ["e"=1]
+"Jxck-S/plane-notify" -> "JeanExtreme002/FlightRadarAPI" ["e"=1]
+"pyproj4/pyproj" -> "SciTools/cartopy" ["e"=1]
+"pyproj4/pyproj" -> "pytroll/pyresample" ["e"=1]
 "NCAR/DART" -> "nansencenter/DAPPER"
 "NCAR/DART" -> "nansencenter/DA-tutorials"
 "NCAR/DART" -> "geirev/Data-Assimilation-Fundamentals"
 "NCAR/DART" -> "Shady-Ahmed/PyDA"
 "NCAR/DART" -> "dtcenter/MET"
 "NCAR/DART" -> "acse-jm122/torchda"
+"google/tensorstore" -> "fsspec/kerchunk" ["e"=1]
+"google/tensorstore" -> "google/xarray-beam" ["e"=1]
+"google/tensorstore" -> "cubed-dev/cubed" ["e"=1]
+"google/tensorstore" -> "zarr-developers/VirtualiZarr" ["e"=1]
+"google/tensorstore" -> "earth-mover/icechunk" ["e"=1]
+"WaterLily-jl/WaterLily.jl" -> "SpeedyWeather/SpeedyWeather.jl" ["e"=1]
 "meteostat/meteostat-python" -> "earthobservations/wetterdienst"
 "meteostat/meteostat-python" -> "meteostat/weather-stations"
 "meteostat/meteostat-python" -> "pangeo-data/scikit-downscale"
@@ -919,6 +1036,8 @@ digraph G {
 "climlab/climlab" -> "Ouranosinc/xclim"
 "climlab/climlab" -> "pressel/pycles"
 "climlab/climlab" -> "lmadaus/Barotropic-Python"
+"KKulma/climate-change-data" -> "pangeo-data/awesome-open-climate-science" ["e"=1]
+"KKulma/climate-change-data" -> "CliMA/ClimateMachine.jl" ["e"=1]
 "joaohenry23/GOES" -> "blaylockbk/goes2go"
 "jswhit/pygrib" -> "ecmwf/cfgrib"
 "jswhit/pygrib" -> "SciTools/iris"
@@ -942,6 +1061,8 @@ digraph G {
 "NCAR/hrldas" -> "ESMWG/NoahMP"
 "NCAR/hrldas" -> "NCAR/hrldas-release"
 "blaylockbk/SynopticPy" -> "blaylockbk/Carpenter_Workshop"
+"HDFGroup/hdf5" -> "Unidata/netcdf-c" ["e"=1]
+"HDFGroup/hdf5" -> "Parallel-NetCDF/PnetCDF" ["e"=1]
 "qwd/WeatherIcon" -> "qwd/Icons"
 "jinfan0931/meic2wrf" -> "IncubatorShokuhou/meic2wrf_hourly"
 "jinfan0931/meic2wrf" -> "Airwhf/MEIAT-CMAQ"
@@ -991,6 +1112,8 @@ digraph G {
 "bugsuse/meteoai" -> "YvZheng/pycwr"
 "bugsuse/meteoai" -> "hhuangwx/cmaps"
 "steidani/ConTrack" -> "skaderli/WaveBreaking"
+"DedalusProject/dedalus" -> "FourierFlows/GeophysicalFlows.jl" ["e"=1]
+"DedalusProject/dedalus" -> "SpeedyWeather/SpeedyWeather.jl" ["e"=1]
 "nicrie/xmca" -> "Yefee/xMCA"
 "ghiggi/gpm_api" -> "ltelab/disdrodb"
 "tropycal/tropycal" -> "dgilford/tcpyPI"
@@ -1002,6 +1125,8 @@ digraph G {
 "numbagg/numbagg" -> "cubed-dev/cubed"
 "numbagg/numbagg" -> "ml31415/numpy-groupies"
 "numbagg/numbagg" -> "gauteh/hidefix" ["e"=1]
+"pangeo-data/pangeo-docker-images" -> "stac-utils/xstac" ["e"=1]
+"xarray-contrib/xarray_leaflet" -> "stac-utils/xstac" ["e"=1]
 "pangeo-data/rechunker" -> "cubed-dev/cubed"
 "pangeo-data/rechunker" -> "xarray-contrib/flox"
 "pangeo-data/rechunker" -> "xarray-contrib/cf-xarray"
@@ -1091,6 +1216,7 @@ digraph G {
 "RMS/RDOS" -> "Simplitium/OED"
 "supercoderz/pyflightdata" -> "E3V3A/iata-arrivals-cli"
 "supercoderz/pyflightdata" -> "mkorkmaz/flightradar24"
+"ftilmann/latexdiff" -> "regionmask/regionmask" ["e"=1]
 "NCAR/noahmp" -> "NCAR/hrldas"
 "NCAR/noahmp" -> "ESMWG/NoahMP"
 "NCAR/noahmp" -> "NCAR/hrldas-release"
@@ -1146,6 +1272,7 @@ digraph G {
 "YvZheng/pycwr" -> "hhuangwx/cmaps"
 "YvZheng/pycwr" -> "openradar/PyDDA"
 "YvZheng/pycwr" -> "nasa/SingleDop"
+"NOAA-GFDL/MOM6-examples" -> "pyqg/pyqg" ["e"=1]
 "NCAS-CMS/cf-python" -> "xarray-contrib/cf-xarray"
 "NCAS-CMS/cf-python" -> "NCAS-CMS/cfdm"
 "NCAS-CMS/cf-python" -> "cf-convention/cf-conventions"
@@ -1176,6 +1303,7 @@ digraph G {
 "fatiando/boule" -> "fatiando/ensaio"
 "fatiando/boule" -> "fatiando/rockhound"
 "fatiando/boule" -> "fatiando/choclo"
+"NOAA-EMC/GSI" -> "dtcenter/MET" ["e"=1]
 "nmcdev/nmc_met_map" -> "nmcdev/nmc_met_base"
 "nmcdev/nmc_met_map" -> "nmcdev/nmc_met_diagnostic"
 "nmcdev/nmc_met_map" -> "nmcdev/meteva"
@@ -1186,6 +1314,7 @@ digraph G {
 "quishqa/WRF-Chem_SP" -> "quishqa/PyChEmiss"
 "spencerahill/aospy" -> "lesommer/oocgcm"
 "spencerahill/aospy" -> "xgcm/xgcm"
+"nasa/Transform-to-Open-Science" -> "fsspec/kerchunk" ["e"=1]
 "javedali99/python-resources-for-earth-sciences" -> "xarray-contrib/xeofs"
 "javedali99/python-resources-for-earth-sciences" -> "raoulcollenteur/Python-Hydrology-Tools" ["e"=1]
 "javedali99/python-resources-for-earth-sciences" -> "regionmask/regionmask"
@@ -1206,6 +1335,8 @@ digraph G {
 "python-windrose/windrose" -> "blaylockbk/Herbie"
 "avwx-rest/avwx-engine" -> "dmbaturin/pytaf"
 "avwx-rest/avwx-engine" -> "avwx-rest/avwx-api"
+"nvkelso/natural-earth-vector" -> "SciTools/cartopy" ["e"=1]
+"dask/dask-tutorial" -> "intake/intake" ["e"=1]
 "fsspec/kerchunk" -> "zarr-developers/VirtualiZarr"
 "fsspec/kerchunk" -> "cubed-dev/cubed"
 "fsspec/kerchunk" -> "xarray-contrib/flox"
@@ -1232,6 +1363,7 @@ digraph G {
 "carbonplan/cmip6-downscaling" -> "tjvandal/deepsd"
 "carbonplan/cmip6-downscaling" -> "Ouranosinc/xclim"
 "carbonplan/cmip6-downscaling" -> "Dan-Boat/PyESD"
+"Toblerity/Fiona" -> "SciTools/cartopy" ["e"=1]
 "open-meteo/open-meteo" -> "m0rp43us/openmeteopy"
 "open-meteo/open-meteo" -> "blaylockbk/Herbie"
 "open-meteo/open-meteo" -> "ecmwf-lab/ai-models" ["e"=1]
@@ -1247,6 +1379,8 @@ digraph G {
 "open-meteo/open-meteo" -> "earthobservations/wetterdienst"
 "open-meteo/open-meteo" -> "EnergieID/entsoe-py" ["e"=1]
 "open-meteo/open-meteo" -> "Pirate-Weather/pirateweather"
+"bopen/xarray-sentinel" -> "pytroll/pyresample" ["e"=1]
+"sertit/eoreader" -> "xarray-contrib/xvec" ["e"=1]
 "xCDAT/xcdat" -> "PCMDI/pcmdi_metrics"
 "xCDAT/xcdat" -> "jbusecke/xMIP"
 "xCDAT/xcdat" -> "pangeo-data/xESMF"
@@ -1261,6 +1395,9 @@ digraph G {
 "xarray-contrib/datatree" -> "fsspec/kerchunk"
 "xarray-contrib/datatree" -> "pyvista/pyvista-xarray"
 "xarray-contrib/datatree" -> "zarr-developers/VirtualiZarr"
+"nsidc/earthaccess" -> "xpublish-community/xpublish" ["e"=1]
+"nsidc/earthaccess" -> "xarray-contrib/datatree" ["e"=1]
+"nsidc/earthaccess" -> "pangeo-data/xESMF" ["e"=1]
 "brian-rose/ClimateModeling_courseware" -> "climlab/climlab"
 "brian-rose/ClimateModeling_courseware" -> "brian-rose/ClimateLaboratoryBook"
 "brian-rose/ClimateModeling_courseware" -> "pressel/pycles"
@@ -1277,6 +1414,8 @@ digraph G {
 "h5netcdf/h5netcdf" -> "ecmwf/eccodes-python"
 "h5netcdf/h5netcdf" -> "pytroll/pyresample"
 "h5netcdf/h5netcdf" -> "xpublish-community/xpublish"
+"recipy/recipy" -> "spencerahill/aospy" ["e"=1]
+"recipy/recipy" -> "xgcm/xgcm" ["e"=1]
 "ESMCI/cime" -> "ESCOMP/CAM"
 "ESMCI/cime" -> "esmf-org/esmf"
 "ESMCI/cime" -> "CESM-Development/cime"
@@ -1306,6 +1445,11 @@ digraph G {
 "nco/nco" -> "Unidata/cftime"
 "nco/nco" -> "cedadev/cf-checker"
 "openair-project/worldmet" -> "skgrange/normalweatherr"
+"matplotlib/cmocean" -> "pyqg/pyqg" ["e"=1]
+"matplotlib/cmocean" -> "xgcm/xgcm" ["e"=1]
+"matplotlib/cmocean" -> "xgcm/xrft" ["e"=1]
+"Pirate-Weather/pirate-weather-ha" -> "Pirate-Weather/pirateweather" ["e"=1]
+"stac-utils/pystac-client" -> "xarray-contrib/xvec" ["e"=1]
 "lmadaus/Barotropic-Python" -> "ajdawson/barotropic"
 "nmcdev/metdig" -> "NMC-DAVE/dk_tutorials_2021"
 "jamesp/shallowwater" -> "lmadaus/Barotropic-Python"
@@ -1313,6 +1457,8 @@ digraph G {
 "JeanExtreme002/PyMemoryEditor" -> "JeanExtreme002/FastSnake"
 "JeanExtreme002/PyMemoryEditor" -> "JeanExtreme002/University-Projects--UFBA-"
 "JeanExtreme002/University-Projects--UFBA-" -> "JeanExtreme002/FastSnake"
+"microsoft/PlanetaryComputer" -> "xarray-contrib/xvec" ["e"=1]
+"microsoft/PlanetaryComputer" -> "pangeo-data/rechunker" ["e"=1]
 "SciTools/cf-units" -> "SciTools/nc-time-axis"
 "xarray-contrib/flox" -> "pangeo-forge/pangeo-forge-recipes"
 "xarray-contrib/flox" -> "xarray-contrib/datatree"
@@ -1342,6 +1488,8 @@ digraph G {
 "NCAR/ParallelIO" -> "MPAS-Dev/MPAS-Model"
 "NCAR/wrf_hydro_arcgis_preprocessor" -> "NCAR/wrf_hydro_gis_preprocessor"
 "alan-turing-institute/environmental-ds-book" -> "xarray-contrib/xdggs"
+"gjoseph92/stackstac" -> "stac-utils/xstac" ["e"=1]
+"gjoseph92/stackstac" -> "xarray-contrib/xvec" ["e"=1]
 "pcodec/pcodec" -> "fsspec/kerchunk"
 "mscross/pysplit" -> "amcz/hysplit_metdata"
 "mscross/pysplit" -> "rich-iannone/splitr"
@@ -1354,7 +1502,11 @@ digraph G {
 "CSU-Radarmet/CSU_RadarTools" -> "nasa/MultiDop"
 "CSU-Radarmet/CSU_RadarTools" -> "meteoswiss-mdr/pyrad"
 "CSU-Radarmet/CSU_RadarTools" -> "nasa/MMM-Py"
+"oeo4b/kriging.js" -> "FreeGIS/kriging-contour" ["e"=1]
+"oeo4b/kriging.js" -> "meteoinfo/wContour" ["e"=1]
+"pangeo-data/cog-best-practices" -> "stac-utils/xstac" ["e"=1]
 "Shady-Ahmed/PyDA" -> "googleinterns/invobs-data-assimilation"
+"fsspec/universal_pathlib" -> "fsspec/kerchunk" ["e"=1]
 "gee-hydro/geeSEBAL" -> "TimHessels/SEBAL"
 "gee-hydro/geeSEBAL" -> "et-brasil/geeSEBAL"
 "meteoinfo/MeteoInfoLib" -> "meteoinfo/MeteoInfoMap"
@@ -1400,6 +1552,7 @@ digraph G {
 "nasa/PyBlock" -> "nasa/DualPol"
 "nasa/PyBlock" -> "scollis/notebooks"
 "ARCCSS-extremes/climpact2" -> "ARCCSS-extremes/climpact"
+"gjoseph92/geogif" -> "stac-utils/xstac" ["e"=1]
 "openradar/AMS-Short-Course-on-Open-Source-Radar-Software" -> "ANL-DIGR/notebooks"
 "openradar/AMS-Short-Course-on-Open-Source-Radar-Software" -> "scollis/notebooks"
 "openradar/AMS-Short-Course-on-Open-Source-Radar-Software" -> "nguy/artview"
@@ -1410,6 +1563,20 @@ digraph G {
 "CEMPD/SMOKE" -> "barronh/pseudonetcdf"
 "MeteoSwiss/pyrad" -> "openradar/erad2024"
 "NCAR/hrldas-release" -> "ESMWG/NoahMP"
+"soft-matter/trackpy" -> "tobac-project/tobac" ["e"=1]
+"zarr-developers/zarr-python" -> "earth-mover/icechunk" ["e"=1]
+"zarr-developers/zarr-python" -> "fsspec/kerchunk" ["e"=1]
+"zarr-developers/zarr-python" -> "zarr-developers/VirtualiZarr" ["e"=1]
+"zarr-developers/zarr-python" -> "cubed-dev/cubed" ["e"=1]
+"skyplane-project/skyplane" -> "developmentseed/obstore" ["e"=1]
+"Kitware/trame" -> "pyvista/pyvistaqt" ["e"=1]
+"datalayer/jupyter-ui" -> "conda-incubator/conda-store" ["e"=1]
+"spatialaudio/nbsphinx" -> "fatiando/pooch" ["e"=1]
+"OceanParcels/Parcels" -> "xgcm/xgcm" ["e"=1]
+"OceanParcels/Parcels" -> "pyqg/pyqg" ["e"=1]
+"raphaelquast/EOmaps" -> "pyvista/pyvista-xarray" ["e"=1]
+"raphaelquast/EOmaps" -> "regionmask/regionmask" ["e"=1]
+"raphaelquast/EOmaps" -> "stac-utils/xstac" ["e"=1]
 "ecmwf/ecmwf-opendata" -> "ecmwf/notebook-examples"
 "ecmwf/ecmwf-opendata" -> "ecmwf/climetlab"
 "ecmwf/ecmwf-opendata" -> "blaylockbk/Herbie"
@@ -1445,6 +1612,10 @@ digraph G {
 "Pirate-Weather/pirateweather" -> "guillaume/merry-timeline"
 "Pirate-Weather/pirateweather" -> "Pirate-Weather/pirate-weather-code"
 "Pirate-Weather/pirateweather" -> "weather-gov/api"
+"google-research/arco-era5" -> "google/xarray-beam" ["e"=1]
+"google-research/arco-era5" -> "xarray-contrib/xbatcher" ["e"=1]
+"google-research/arco-era5" -> "earth-mover/icechunk" ["e"=1]
+"google-research/arco-era5" -> "zarr-developers/VirtualiZarr" ["e"=1]
 "qwd/Icons" -> "qwd/WeatherIcon"
 "qwd/Icons" -> "qwd/LocationList"
 "qwd/Icons" -> "qwd/dev-site"
@@ -1454,6 +1625,8 @@ digraph G {
 "xarray-contrib/xeofs" -> "nicrie/xmca"
 "xarray-contrib/xeofs" -> "jkrasting/xwavelet"
 "ajdawson/windspharm" -> "steidani/ConTrack"
+"thouska/spotpy" -> "sahg/PyTOPKAPI" ["e"=1]
+"thouska/spotpy" -> "pyet-org/pyet" ["e"=1]
 "carbonplan/maps" -> "carbonplan/ndpyramid"
 "carbonplan/maps" -> "zarr-developers/geozarr-spec"
 "carbonplan/maps" -> "xarray-contrib/xdggs"
@@ -1464,6 +1637,7 @@ digraph G {
 "carbonplan/maps" -> "fsspec/kerchunk"
 "carbonplan/maps" -> "developmentseed/titiler-multidim" ["e"=1]
 "carbonplan/maps" -> "earth-mover/serverless-datacube-demo"
+"opendatacube/odc-stac" -> "xarray-contrib/xvec" ["e"=1]
 "cubed-dev/cubed" -> "zarr-developers/VirtualiZarr"
 "cubed-dev/cubed" -> "google/xarray-beam"
 "cubed-dev/cubed" -> "pangeo-data/rechunker"
@@ -1477,6 +1651,7 @@ digraph G {
 "cubed-dev/cubed" -> "zarr-developers/zarr-specs" ["e"=1]
 "cubed-dev/cubed" -> "opendatacube/odc-geo" ["e"=1]
 "NCAR/pynio" -> "NCAR/pyngl"
+"jonathanlilly/jLab" -> "jonathanlilly/time-series" ["e"=1]
 "pressel/pycles" -> "rodrigo-caballero/CliMT-legacy"
 "pressel/pycles" -> "tapios/fms-idealized"
 "pressel/pycles" -> "mjucker/MiMA"
@@ -1522,6 +1697,11 @@ digraph G {
 "tjlang/SkewT" -> "nasa/DualPol"
 "fatiando/ensaio" -> "fatiando/choclo"
 "fatiando/ensaio" -> "fatiando/boule"
+"holoviz/geoviews" -> "pytroll/pyresample" ["e"=1]
+"holoviz/geoviews" -> "regionmask/regionmask" ["e"=1]
+"holoviz/geoviews" -> "ajdawson/eofs" ["e"=1]
+"holoviz/geoviews" -> "SciTools/cartopy" ["e"=1]
+"holoviz/geoviews" -> "Ouranosinc/xclim" ["e"=1]
 "hhuangwx/cmaps" -> "flashlxy/PyMICAPS"
 "hhuangwx/cmaps" -> "MeteoAI/awesome-atmos"
 "hhuangwx/cmaps" -> "nmcdev/nmc_met_map"
@@ -1550,6 +1730,8 @@ digraph G {
 "pytroll/satpy" -> "nsidc/earthaccess" ["e"=1]
 "pytroll/satpy" -> "corteva/geocube" ["e"=1]
 "pytroll/satpy" -> "pytroll/pytroll-examples"
+"cgohlke/geospatial-wheels" -> "pytroll/pyresample" ["e"=1]
+"geopy/geopy" -> "SciTools/cartopy" ["e"=1]
 "SciTools/iris" -> "SciTools/cartopy"
 "SciTools/iris" -> "regionmask/regionmask"
 "SciTools/iris" -> "Unidata/MetPy"
@@ -1565,6 +1747,10 @@ digraph G {
 "SciTools/iris" -> "pangeo-data/climpred"
 "SciTools/iris" -> "xgcm/xgcm"
 "SciTools/iris" -> "climlab/climlab"
+"pola-rs/pyo3-polars" -> "kylebarron/arro3" ["e"=1]
+"hgrecco/pint" -> "Unidata/MetPy" ["e"=1]
+"hgrecco/pint" -> "fatiando/pooch" ["e"=1]
+"ruiduobao/shengshixian.com" -> "GaryBikini/ChinaAdminDivisonSHP" ["e"=1]
 "SciTools/cartopy" -> "SciTools/iris"
 "SciTools/cartopy" -> "Unidata/MetPy"
 "SciTools/cartopy" -> "matplotlib/basemap"
@@ -1581,10 +1767,14 @@ digraph G {
 "SciTools/cartopy" -> "Toblerity/Fiona" ["e"=1]
 "SciTools/cartopy" -> "JiaweiZhuang/xESMF"
 "ecmwf/earthkit" -> "ecmwf/earthkit-data"
+"openjournals/joss-reviews" -> "fatiando/pooch" ["e"=1]
+"openjournals/joss-reviews" -> "SpeedyWeather/SpeedyWeather.jl" ["e"=1]
+"h5py/h5py" -> "Unidata/netcdf4-python" ["e"=1]
 "ecmwf-projects/mooc-machine-learning-weather-climate" -> "ECMWFCode4Earth/challenges_2023"
 "ecmwf-projects/mooc-machine-learning-weather-climate" -> "ecmwf/climetlab"
 "ecmwf-projects/mooc-machine-learning-weather-climate" -> "pangeo-data/WeatherBench" ["e"=1]
 "ecmwf-projects/mooc-machine-learning-weather-climate" -> "ecmwf-projects/copernicus-training-c3s"
+"benbovy/spherely" -> "xarray-contrib/xvec" ["e"=1]
 "NCAR/wrf-python" -> "wrf-model/WRF"
 "NCAR/wrf-python" -> "wrf-model/WPS"
 "NCAR/wrf-python" -> "GIS4WRF/gis4wrf"
@@ -1601,8 +1791,11 @@ digraph G {
 "NCAR/wrf-python" -> "dtcenter/METplus"
 "NCAR/wrf-python" -> "HathewayWill/WRF-MOSIT"
 "JordanSchlick/OpenStorm" -> "dpaulat/supercell-wx"
+"screwdriver-cd/screwdriver" -> "ESMCI/cime" ["e"=1]
+"pastas/pastas" -> "pyet-org/pyet" ["e"=1]
 "ZiluM/sacpy" -> "shenyulu/easyclimate"
 "ZiluM/sacpy" -> "rafaelcabreu/attribution"
+"aditya-grover/climate-learn" -> "ecmwf/climetlab" ["e"=1]
 "NCAR/lrose-core" -> "NCAR/lrose-titan"
 "NCAR/lrose-core" -> "CSU-Radarmet/CSU_RadarTools"
 "NCAR/lrose-core" -> "openradar/TINT"
@@ -1658,6 +1851,11 @@ digraph G {
 "ISAT-Office/ISAT" -> "Airwhf/MEIAT-CMAQ"
 "ISAT-Office/ISAT" -> "meicmodel/meic2ctm"
 "weather-gov/weather.gov" -> "weather-gov/api"
+"google/Xee" -> "google/xarray-beam" ["e"=1]
+"google/Xee" -> "cubed-dev/cubed" ["e"=1]
+"google/Xee" -> "stac-utils/xstac" ["e"=1]
+"google/Xee" -> "DahnJ/Awesome-Zarr" ["e"=1]
+"google/Xee" -> "xarray-contrib/xbatcher" ["e"=1]
 "nansencenter/DAPPER" -> "nansencenter/DA-tutorials"
 "nansencenter/DAPPER" -> "NCAR/DART"
 "nansencenter/DAPPER" -> "thiery-lab/data-assimilation"
@@ -1668,6 +1866,8 @@ digraph G {
 "nansencenter/DAPPER" -> "sakov/enkf-c"
 "nansencenter/DAPPER" -> "pyqg/pyqg"
 "nansencenter/DAPPER" -> "pySTEPS/pysteps" ["e"=1]
+"VictorEijkhout/TheArtofHPC_pdfs" -> "mrnorman/miniWeather" ["e"=1]
+"ResidentMario/geoplot" -> "SciTools/cartopy" ["e"=1]
 "wrf-model/WRF" -> "wrf-model/WPS"
 "wrf-model/WRF" -> "NCAR/wrf-python"
 "wrf-model/WRF" -> "USEPA/CMAQ"
@@ -1683,6 +1883,8 @@ digraph G {
 "wrf-model/WRF" -> "NCAR/WRFV3"
 "wrf-model/WRF" -> "NCAR/wrf_hydro_nwm_public"
 "wrf-model/WRF" -> "198808xc/Pangu-Weather" ["e"=1]
+"wind-python/windpowerlib" -> "python-windrose/windrose" ["e"=1]
+"ecmwf-lab/ai-models" -> "ecmwf/ecmwf-opendata" ["e"=1]
 "regionmask/regionmask" -> "Ouranosinc/xclim"
 "regionmask/regionmask" -> "xarray-contrib/cf-xarray"
 "regionmask/regionmask" -> "xgcm/xgcm"
@@ -1698,6 +1900,8 @@ digraph G {
 "regionmask/regionmask" -> "h5netcdf/h5netcdf"
 "regionmask/regionmask" -> "pangeo-data/scikit-downscale"
 "regionmask/regionmask" -> "intake/intake-esm"
+"delta-io/delta-kernel-rs" -> "apache/arrow-rs-object-store" ["e"=1]
+"NVIDIA/earth2mip" -> "xarray-contrib/xbatcher" ["e"=1]
 "dtcenter/METplus" -> "dtcenter/MET"
 "dtcenter/METplus" -> "dtcenter/METviewer"
 "USEPA/CMAQ" -> "CEMPD/SMOKE"
@@ -1766,8 +1970,10 @@ digraph G {
 "NCAR/ncl" -> "wrf-model/WRF"
 "NCAR/ncl" -> "ClimateGlobalChange/tempestextremes"
 "NCAR/ncl" -> "pangeo-data/climpred"
+"geoarrow/geoarrow-rs" -> "kylebarron/arro3" ["e"=1]
 "meteoswiss-mdr/pyrad" -> "CSU-Radarmet/CSU_RadarTools"
 "linjonathan/tropical_cyclone_risk" -> "cl3225/CHAZ"
+"jasper-software/jasper" -> "Parallel-NetCDF/PnetCDF" ["e"=1]
 "CDAT/cdat" -> "NCAR/geocat-comp"
 "wrf-model/WPS" -> "wrf-model/WRF"
 "wrf-model/WPS" -> "NCAR/wrf-python"
@@ -1786,6 +1992,7 @@ digraph G {
 "meteoinfo/MeteoInfoMap_CSharp" -> "meteoinfo/MeteoInfoLib_CSharp"
 "meteoinfo/MeteoInfoMap_CSharp" -> "meteoinfo/wContour_CSharp"
 "avwx-rest/avwx-api" -> "avwx-rest/avwx-engine"
+"LDeakin/zarrs" -> "cubed-dev/cubed" ["e"=1]
 "ECMWFCode4Earth/challenges_2023" -> "ecmwf-projects/mooc-machine-learning-weather-climate"
 "PecanProject/pecan" -> "EDmodel/ED2"
 "PecanProject/pecan" -> "NGEET/fates"
@@ -1803,6 +2010,9 @@ digraph G {
 "meteoinfo/MeteoInfoLib_CSharp" -> "meteoinfo/wContour_CSharp"
 "meteoinfo/MeteoInfoLib_CSharp" -> "meteoinfo/MeteoInfoMap_CSharp"
 "scollis/notebooks" -> "vlouf/cpol_processing"
+"fsspec/gcsfs" -> "cubed-dev/cubed" ["e"=1]
+"holoviz/colorcet" -> "numbagg/numbagg" ["e"=1]
+"holoviz/colorcet" -> "regionmask/regionmask" ["e"=1]
 "Unidata/cftime" -> "SciTools/nc-time-axis"
 "CliMT/climt" -> "mcgibbon/sympl"
 "CliMT/climt" -> "climlab/climlab"
@@ -1812,6 +2022,8 @@ digraph G {
 "CliMT/climt" -> "xgcm/xgcm"
 "CliMT/climt" -> "brian-rose/ClimateLaboratoryBook"
 "CliMT/climt" -> "pyqg/pyqg"
+"neuralgcm/neuralgcm" -> "SpeedyWeather/SpeedyWeather.jl" ["e"=1]
+"darothen/ai-models-for-all" -> "google/xarray-tensorstore" ["e"=1]
 "PeterRochford/SkillMetrics" -> "ajdawson/eofs"
 "PeterRochford/SkillMetrics" -> "xarray-contrib/xskillscore"
 "PeterRochford/SkillMetrics" -> "Ouranosinc/xclim"
@@ -1824,6 +2036,8 @@ digraph G {
 "meteoinfo/wContour" -> "meteoinfo/MeteoInfoLib_CSharp"
 "meteoinfo/wContour" -> "meteoinfo/MeteoInfoMap_CSharp"
 "meteoinfo/wContour" -> "meteoinfo/MeteoInfoMap"
+"neuralgcm/dinosaur" -> "SpeedyWeather/SpeedyWeather.jl" ["e"=1]
+"neuralgcm/dinosaur" -> "google/xarray-beam" ["e"=1]
 "deeplycloudy/glmtools" -> "deeplycloudy/lmatools"
 "e-baumer/standard_precip" -> "monocongo/climate_indices"
 "e-baumer/standard_precip" -> "martinvonk/SPEI"
@@ -1873,6 +2087,8 @@ digraph G {
 "developmentseed/obstore" -> "developmentseed/async-tiff" ["e"=1]
 "developmentseed/obstore" -> "geoarrow/geoarrow-rs" ["e"=1]
 "developmentseed/obstore" -> "zarr-developers/zarr-specs" ["e"=1]
+"pydata/sparse" -> "numbagg/numbagg" ["e"=1]
+"pydata/sparse" -> "fatiando/pooch" ["e"=1]
 "CMASCenter/Spatial-Allocator" -> "CMASCenter/Speciation-Tool"
 "ESMValGroup/ESMValTool" -> "ESMValGroup/ESMValCore"
 "ESMValGroup/ESMValTool" -> "PCMDI/pcmdi_metrics"
@@ -1883,6 +2099,7 @@ digraph G {
 "ESMValGroup/ESMValTool" -> "regionmask/regionmask"
 "ESMValGroup/ESMValTool" -> "intake/intake-esm"
 "ESMValGroup/ESMValTool" -> "xgcm/xgcm"
+"geojupyter/jupytergis" -> "xarray-contrib/xdggs" ["e"=1]
 "ajdawson/eofs" -> "ajdawson/windspharm"
 "ajdawson/eofs" -> "xarray-contrib/xeofs"
 "ajdawson/eofs" -> "xgcm/xgcm"
@@ -1906,6 +2123,7 @@ digraph G {
 "earth-mover/icechunk" -> "xarray-contrib/xdggs"
 "earth-mover/icechunk" -> "xarray-contrib/xvec"
 "earth-mover/icechunk" -> "google/xarray-tensorstore"
+"GreatV/CloudMusic-Crawler" -> "flashlxy/PyMICAPS" ["e"=1]
 "NCAR/WRFV3" -> "NCAR/WPS"
 "NCAR/WRFV3" -> "wrf-model/WPS"
 "NCAR/WRFV3" -> "NCAR/wrf-python"
@@ -1924,8 +2142,16 @@ digraph G {
 "flashlxy/PyMICAPS" -> "nmcdev/nmc_met_graphics"
 "flashlxy/PyMICAPS" -> "nmcdev/metdig"
 "flashlxy/PyMICAPS" -> "CyanideCN/QXmath"
+"d3/d3-contour" -> "meteoinfo/wContour" ["e"=1]
 "Parallel-NetCDF/PnetCDF" -> "NCAR/ParallelIO"
+"UW-Hydro/VIC" -> "NCAR/wrf_hydro_nwm_public" ["e"=1]
+"team-ocean/veros" -> "xgcm/xgcm" ["e"=1]
+"team-ocean/veros" -> "pyqg/pyqg" ["e"=1]
+"team-ocean/veros" -> "jbusecke/xmovie" ["e"=1]
+"team-ocean/veros" -> "spencerahill/aospy" ["e"=1]
+"team-ocean/veros" -> "FourierFlows/GeophysicalFlows.jl" ["e"=1]
 "benbovy/xproj" -> "benbovy/xarray-fancy-repr"
+"rebase-energy/awesome-weather-models" -> "google/xarray-tensorstore" ["e"=1]
 "AtChem/AtChem2" -> "simonom/PyCHAM"
 "AtChem/AtChem2" -> "AirChem/F0AM"
 "AtChem/AtChem2" -> "loftytopping/PyBox"
@@ -1957,6 +2183,10 @@ digraph G {
 "monocongo/climate_indices" -> "corteva/rioxarray" ["e"=1]
 "monocongo/climate_indices" -> "xarray-contrib/xskillscore"
 "monocongo/climate_indices" -> "CliMT/climt"
+"yaoyichen/CIKM-Cup-2017" -> "jweyn/MOS-X" ["e"=1]
+"yaoyichen/CIKM-Cup-2017" -> "YvZheng/pycwr" ["e"=1]
+"yaoyichen/CIKM-Cup-2017" -> "bugsuse/meteoai" ["e"=1]
+"scottprahl/miepython" -> "jleinonen/pytmatrix" ["e"=1]
 "mkorkmaz/flightradar24" -> "JeanExtreme002/FlightRadarAPI"
 "mkorkmaz/flightradar24" -> "supercoderz/pyflightdata"
 "mkorkmaz/flightradar24" -> "derhuerst/flightradar24-client"
@@ -1986,30 +2216,36 @@ digraph G {
 "ExeClim/Isca" -> "spencerahill/aospy"
 "ExeClim/Isca" -> "danielkoll/PyRADS"
 "apache/arrow-rs-object-store" -> "roeap/object-store-python"
+"FourierFlows/FourierFlows.jl" -> "FourierFlows/GeophysicalFlows.jl" ["e"=1]
 "openradar/TINT" -> "NCAR/lrose-titan"
 "NCAR/pyngl" -> "NCAR/pynio"
 "NCAR/pyngl" -> "NCAR/ncl"
 "NCAR/pyngl" -> "huangynj/Python-Chinamap"
+"geopandas/geopandas" ["l"="41.534,24.123", "c"=76]
+"SciTools/cartopy" ["l"="40.763,25.555"]
+"corteva/rioxarray" ["l"="41.573,24.252", "c"=76]
+"pytroll/pyresample" ["l"="40.672,25.538"]
+"geoxarray/geoxarray" ["l"="40.672,25.513"]
+"erikflowers/weather-icons" ["l"="-0.496,-32.261", "c"=295]
 "basmilius/weather-icons" ["l"="40.951,25.336"]
 "Makin-Things/weather-icons" ["l"="40.989,25.289"]
 "philanri/weather-icons" ["l"="40.987,25.318"]
 "manifestinteractive/weather-underground-icons" ["l"="41.023,25.303"]
-"erikflowers/weather-icons" ["l"="-0.496,-32.261"]
 "basmilius/visual-effects" ["l"="40.964,25.305"]
 "open-meteo/open-meteo" ["l"="40.699,25.423"]
 "basmilius/latte-ui" ["l"="40.971,25.318"]
 "bameyrick/animated-weather-icon" ["l"="40.982,25.337"]
 "jdemaeyer/brightsky" ["l"="40.821,25.49"]
-"davidtakac/prognoza" ["l"="-52.386,9.499"]
-"Pictogrammers/Memory" ["l"="41.549,-26.204"]
+"davidtakac/prognoza" ["l"="-52.386,9.499", "c"=19]
+"Pictogrammers/Memory" ["l"="41.549,-26.204", "c"=69]
 "qwd/Icons" ["l"="41.05,25.254"]
-"pkissling/clock-weather-card" ["l"="-15.045,-39.136"]
+"pkissling/clock-weather-card" ["l"="-15.045,-39.136", "c"=64]
 "kickstandapps/WeatherIcons" ["l"="41.005,25.332"]
 "royalosyin/Python-Practical-Application-on-Climate-Variability-Studies" ["l"="40.821,25.453"]
 "monocongo/climate_indices" ["l"="40.815,25.395"]
 "willyhagi/climate-data-science" ["l"="40.842,25.565"]
 "brian-rose/ClimateModeling_courseware" ["l"="40.856,25.468"]
-"rabernat/intro_to_physical_oceanography" ["l"="40.617,26.352"]
+"rabernat/intro_to_physical_oceanography" ["l"="40.617,26.352", "c"=1102]
 "Yefee/xMCA" ["l"="40.801,25.44"]
 "pangeo-data/scikit-downscale" ["l"="40.761,25.438"]
 "ajdawson/windspharm" ["l"="40.838,25.536"]
@@ -2019,6 +2255,8 @@ digraph G {
 "nicrie/xmca" ["l"="40.789,25.426"]
 "hdrake/cmip6-temperature-demo" ["l"="40.798,25.363"]
 "Ouranosinc/xclim" ["l"="40.77,25.472"]
+"nschloe/tuna" ["l"="45.144,21.082", "c"=20]
+"fatiando/pooch" ["l"="40.621,25.4"]
 "ESCOMP/CESM" ["l"="40.909,25.536"]
 "ESCOMP/CTSM" ["l"="40.978,25.574"]
 "ESMCI/cime" ["l"="40.954,25.546"]
@@ -2029,12 +2267,12 @@ digraph G {
 "ESMValGroup/ESMValTool" ["l"="40.806,25.454"]
 "NGEET/fates" ["l"="40.978,25.628"]
 "esmf-org/esmf" ["l"="40.9,25.559"]
-"MITgcm/MITgcm" ["l"="40.686,26.341"]
+"MITgcm/MITgcm" ["l"="40.686,26.341", "c"=1102]
 "NCAR/geocat-comp" ["l"="40.852,25.518"]
 "ExeClim/Isca" ["l"="40.892,25.481"]
 "xgcm/xgcm" ["l"="40.775,25.499"]
 "Unidata/netcdf-c" ["l"="40.823,25.606"]
-"Unidata/netcdf-fortran" ["l"="62.597,-0.763"]
+"Unidata/netcdf-fortran" ["l"="62.597,-0.763", "c"=953]
 "Unidata/netcdf4-python" ["l"="40.778,25.579"]
 "Unidata/netcdf-cxx4" ["l"="40.835,25.652"]
 "Parallel-NetCDF/PnetCDF" ["l"="40.906,25.614"]
@@ -2042,13 +2280,17 @@ digraph G {
 "Unidata/siphon" ["l"="40.778,25.598"]
 "wrf-model/WPS" ["l"="40.92,25.658"]
 "Unidata/MetPy" ["l"="40.761,25.611"]
-"HDFGroup/hdf5" ["l"="-19.095,-25.857"]
+"HDFGroup/hdf5" ["l"="-19.095,-25.857", "c"=10]
 "NCAR/wrf-python" ["l"="40.849,25.633"]
 "wrf-model/WRF" ["l"="40.873,25.656"]
 "Unidata/cftime" ["l"="40.754,25.578"]
-"marshallward/f90nml" ["l"="2.176,14.298"]
+"marshallward/f90nml" ["l"="2.176,14.298", "c"=572]
 "h5netcdf/h5netcdf" ["l"="40.694,25.523"]
+"pydata/xarray" ["l"="43.73,23.782", "c"=95]
+"pangeo-data/pangeo" ["l"="40.729,25.501"]
 "JiaweiZhuang/xESMF" ["l"="40.757,25.5"]
+"qwd/OpenWeatherPlus-Android" ["l"="2.531,-5.16", "c"=472]
+"qwd/dev-site" ["l"="41.05,25.219"]
 "pangeo-data/xESMF" ["l"="40.751,25.483"]
 "xarray-contrib/cf-xarray" ["l"="40.687,25.5"]
 "jbusecke/xmovie" ["l"="40.727,25.476"]
@@ -2056,47 +2298,51 @@ digraph G {
 "regionmask/regionmask" ["l"="40.74,25.49"]
 "jbusecke/xMIP" ["l"="40.754,25.467"]
 "xarray-contrib/xskillscore" ["l"="40.746,25.504"]
-"fatiando/verde" ["l"="40.793,22.648"]
+"fatiando/verde" ["l"="40.793,22.648", "c"=325]
 "intake/xrviz" ["l"="40.73,25.432"]
-"corteva/rioxarray" ["l"="41.573,24.252"]
 "intake/intake-esm" ["l"="40.734,25.468"]
-"geoxarray/geoxarray" ["l"="40.672,25.513"]
+"proplot-dev/proplot" ["l"="48.031,28.007", "c"=89]
+"hhuangwx/cmaps" ["l"="40.782,25.735"]
+"pangeo-data/climpred" ["l"="40.771,25.488"]
+"MeteoAI/awesome-atmos" ["l"="40.765,25.744"]
 "matplotlib/basemap" ["l"="40.801,25.56"]
-"SciTools/cartopy" ["l"="40.763,25.555"]
 "SciTools/iris" ["l"="40.775,25.522"]
 "rveciana/BasemapTutorial" ["l"="40.75,25.45"]
 "jswhit/pygrib" ["l"="40.751,25.597"]
-"GenericMappingTools/pygmt" ["l"="40.953,22.704"]
-"holoviz/geoviews" ["l"="43.738,23.967"]
-"pydata/xarray" ["l"="43.73,23.782"]
-"geopandas/geopandas" ["l"="41.534,24.123"]
-"makepath/xarray-spatial" ["l"="41.56,24.256"]
+"GenericMappingTools/pygmt" ["l"="40.953,22.704", "c"=325]
+"holoviz/geoviews" ["l"="43.738,23.967", "c"=95]
+"makepath/xarray-spatial" ["l"="41.56,24.256", "c"=76]
 "earthobservations/wetterdienst" ["l"="40.693,25.547"]
 "panodata/dwdweather2" ["l"="40.607,25.602"]
 "wradlib/wradlib" ["l"="40.707,25.69"]
 "meteostat/meteostat-python" ["l"="40.625,25.51"]
 "openradar/xradar" ["l"="40.672,25.648"]
-"mmaelicke/scikit-gstat" ["l"="40.723,22.631"]
+"mmaelicke/scikit-gstat" ["l"="40.723,22.631", "c"=325]
 "blaylockbk/Herbie" ["l"="40.712,25.54"]
-"corteva/geocube" ["l"="41.527,24.259"]
+"corteva/geocube" ["l"="41.527,24.259", "c"=76]
 "ecmwf/ecmwf-opendata" ["l"="40.726,25.545"]
 "ecmwf/cfgrib" ["l"="40.741,25.566"]
-"xarray-contrib/xarray_leaflet" ["l"="41.459,24.255"]
-"pySTEPS/pysteps" ["l"="41.603,25.856"]
+"xarray-contrib/xarray_leaflet" ["l"="41.459,24.255", "c"=76]
+"pySTEPS/pysteps" ["l"="41.603,25.856", "c"=537]
 "intake/intake" ["l"="40.649,25.491"]
-"zarr-developers/zarr-python" ["l"="41.834,26.605"]
-"holoviz/hvplot" ["l"="43.754,23.908"]
-"fsspec/filesystem_spec" ["l"="43.673,23.739"]
+"zarr-developers/zarr-python" ["l"="41.834,26.605", "c"=712]
+"holoviz/hvplot" ["l"="43.754,23.908", "c"=95]
+"fsspec/filesystem_spec" ["l"="43.673,23.739", "c"=95]
 "fsspec/kerchunk" ["l"="40.6,25.442"]
-"pangeo-data/pangeo" ["l"="40.729,25.501"]
 "pytroll/satpy" ["l"="40.689,25.583"]
 "ecmwf/climetlab" ["l"="40.727,25.522"]
 "pangeo-data/rechunker" ["l"="40.609,25.474"]
-"opengeospatial/geoparquet" ["l"="41.473,24.317"]
+"opengeospatial/geoparquet" ["l"="41.473,24.317", "c"=76]
 "xarray-contrib/datatree" ["l"="40.634,25.459"]
 "earth-mover/icechunk" ["l"="40.578,25.445"]
+"developmentseed/obstore" ["l"="40.53,25.433"]
+"mpi4py/mpi4py" ["l"="2.063,14.351", "c"=572]
+"hgrecco/pint-pandas" ["l"="43.779,23.826", "c"=95]
+"xarray-contrib/pint-xarray" ["l"="40.668,25.477"]
+"GeospatialPython/pyshp" ["l"="41.558,24.161", "c"=76]
+"raoulcollenteur/Python-Hydrology-Tools" ["l"="40.004,25.137", "c"=1301]
+"pyet-org/pyet" ["l"="40.836,25.322"]
 "pangeo-data/awesome-open-climate-science" ["l"="40.792,25.47"]
-"pangeo-data/climpred" ["l"="40.771,25.488"]
 "pangeo-data/pangeo-example-notebooks" ["l"="40.731,25.449"]
 "CLIMADA-project/climada_python" ["l"="40.838,25.404"]
 "CLIMADA-project/climada_papers" ["l"="40.859,25.367"]
@@ -2106,7 +2352,7 @@ digraph G {
 "dgilford/tcpyPI" ["l"="40.84,25.46"]
 "IPCC-WG1/Atlas" ["l"="40.833,25.377"]
 "OasisLMF/OasisLMF" ["l"="40.917,25.257"]
-"IAMconsortium/pyam" ["l"="-11.302,17.648"]
+"IAMconsortium/pyam" ["l"="-11.302,17.648", "c"=440]
 "CliMT/climt" ["l"="40.872,25.444"]
 "os-climate/OS-Climate-Community-Hub" ["l"="40.873,25.35"]
 "geoschem/geos-chem" ["l"="41.066,25.804"]
@@ -2134,6 +2380,8 @@ digraph G {
 "tuanvvu/Air_quality_trend_analysis" ["l"="41.267,25.968"]
 "songnku/COVID-19-AQ" ["l"="41.256,25.979"]
 "openair-project/deweather" ["l"="41.235,25.951"]
+"adyliu/china_area" ["l"="-3.475,-33.282", "c"=30]
+"GaryBikini/ChinaAdminDivisonSHP" ["l"="40.727,25.832"]
 "rich-iannone/stationaRy" ["l"="41.104,25.954"]
 "rich-iannone/splitr" ["l"="41.103,25.932"]
 "rich-iannone/unidecoder" ["l"="41.12,25.972"]
@@ -2141,10 +2389,21 @@ digraph G {
 "rich-iannone/aetheRa" ["l"="41.118,25.948"]
 "rich-iannone/PuffR" ["l"="41.131,25.942"]
 "rich-iannone/TrendAnalysis" ["l"="41.097,25.97"]
-"ropensci/GSODR" ["l"="39.197,35.425"]
+"ropensci/GSODR" ["l"="39.197,35.425", "c"=1039]
+"airspeed-velocity/asv" ["l"="45.123,21.272", "c"=20]
+"xarray-contrib/xvec" ["l"="40.585,25.485"]
+"xarray-contrib/xbatcher" ["l"="40.595,25.454"]
 "blaylockbk/pyBKB_v3" ["l"="40.619,25.341"]
 "blaylockbk/pyBKB_v2" ["l"="40.607,25.313"]
 "deeplycloudy/glmtools" ["l"="40.614,25.362"]
+"Hzzone/Precipitation-Nowcasting" ["l"="41.545,25.822", "c"=537]
+"bugsuse/meteoai" ["l"="40.774,25.754"]
+"jostbr/shallow-water" ["l"="41.751,23.785", "c"=76]
+"jamesp/shallowwater" ["l"="40.926,25.438"]
+"cambecc/air" ["l"="37.524,24.102", "c"=199]
+"FreeGIS/kriging-contour" ["l"="40.866,25.873"]
+"pyqg/pyqg" ["l"="40.886,25.463"]
+"FourierFlows/GeophysicalFlows.jl" ["l"="40.944,25.455"]
 "cylc/cylc-flow" ["l"="40.736,25.307"]
 "metomi/rose" ["l"="40.75,25.26"]
 "cylc/cylc-ui" ["l"="40.716,25.262"]
@@ -2164,7 +2423,7 @@ digraph G {
 "MPAS-Dev/MPAS-Limited-Area" ["l"="40.95,25.615"]
 "mgduda/MPAS-Plotting" ["l"="40.955,25.633"]
 "MPAS-Dev/MPAS-Tools" ["l"="40.981,25.649"]
-"NOAA-EMC/fv3gfs" ["l"="40.882,26.234"]
+"NOAA-EMC/fv3gfs" ["l"="40.882,26.234", "c"=1102]
 "mgduda/convert_mpas" ["l"="40.964,25.621"]
 "Unidata/awips2" ["l"="40.772,25.687"]
 "Unidata/IDV" ["l"="40.819,25.803"]
@@ -2173,40 +2432,47 @@ digraph G {
 "Unidata/python-workshop" ["l"="40.787,25.664"]
 "NCAR/pynio" ["l"="40.812,25.669"]
 "Unidata/python-gallery" ["l"="40.785,25.646"]
+"pydata/bottleneck" ["l"="43.796,23.699", "c"=95]
+"numbagg/numbagg" ["l"="40.51,25.404"]
 "xarray-contrib/flox" ["l"="40.639,25.469"]
 "xgcm/xrft" ["l"="40.7,25.467"]
 "jbusecke/cookiecutter-science-project" ["l"="40.781,25.437"]
 "xpublish-community/xpublish" ["l"="40.612,25.46"]
-"pyqg/pyqg" ["l"="40.886,25.463"]
 "xgcm/xhistogram" ["l"="40.692,25.447"]
-"geoffstanley/neutralocean" ["l"="40.642,26.394"]
+"geoffstanley/neutralocean" ["l"="40.642,26.394", "c"=1102]
 "CyanideCN/PyCINRAD" ["l"="40.76,25.721"]
 "ecmwf/eccodes-python" ["l"="40.706,25.578"]
 "ecmwf/eccodes" ["l"="40.73,25.6"]
 "ecmwf/metview-python" ["l"="40.738,25.637"]
 "ecmwf/cdsapi" ["l"="40.74,25.538"]
-"pytroll/pyresample" ["l"="40.672,25.538"]
 "carbonplan/cmip6-downscaling" ["l"="40.775,25.409"]
 "xCDAT/xcdat" ["l"="40.787,25.454"]
 "SantanderMetGroup/ATLAS" ["l"="40.865,25.322"]
-"SantanderMetGroup/climate4R" ["l"="-11.555,16.741"]
+"SantanderMetGroup/climate4R" ["l"="-11.555,16.741", "c"=978]
 "ecmwf/notebook-examples" ["l"="40.716,25.564"]
 "ecmwf/ecmwf-api-client" ["l"="40.721,25.582"]
-"ecmwf-lab/ai-models" ["l"="41.712,25.939"]
+"ecmwf-lab/ai-models" ["l"="41.712,25.939", "c"=537]
 "WFRT/verif" ["l"="40.709,25.518"]
 "ecmwf-projects/mooc-machine-learning-weather-climate" ["l"="40.655,25.563"]
-"fatiando/pooch" ["l"="40.621,25.4"]
+"nmcdev/meteva" ["l"="40.789,25.744"]
+"koldunovn/python_for_geosciences" ["l"="40.757,22.691", "c"=325]
+"javedali99/python-resources-for-earth-sciences" ["l"="40.714,25.382"]
 "pyvista/pyvista-xarray" ["l"="40.638,25.36"]
-"matplotlib/pytest-mpl" ["l"="45.012,21.436"]
-"sphinx-gallery/sphinx-gallery" ["l"="44.941,21.543"]
-"banesullivan/localtileserver" ["l"="41.53,24.316"]
-"spatialaudio/nbsphinx" ["l"="44.944,21.524"]
-"scientific-python/cookie" ["l"="45.059,21.535"]
-"ppinard/matplotlib-scalebar" ["l"="21.922,14.681"]
+"matplotlib/pytest-mpl" ["l"="45.012,21.436", "c"=20]
+"sphinx-gallery/sphinx-gallery" ["l"="44.941,21.543", "c"=20]
+"banesullivan/localtileserver" ["l"="41.53,24.316", "c"=76]
+"spatialaudio/nbsphinx" ["l"="44.944,21.524", "c"=20]
+"scientific-python/cookie" ["l"="45.059,21.535", "c"=20]
+"ppinard/matplotlib-scalebar" ["l"="21.922,14.681", "c"=267]
 "fatiando/boule" ["l"="40.558,25.33"]
+"bcdev/jpy" ["l"="-1.923,10.684", "c"=1247]
+"xcube-dev/xcube" ["l"="40.587,25.41"]
 "dtcenter/MET" ["l"="40.897,25.588"]
 "dtcenter/METplus" ["l"="40.88,25.61"]
 "dtcenter/METviewer" ["l"="40.904,25.601"]
+"csparpa/pyowm" ["l"="19.441,15.174", "c"=641]
+"CliMA/Oceananigans.jl" ["l"="22.126,16.805", "c"=77]
+"SpeedyWeather/SpeedyWeather.jl" ["l"="40.93,25.472"]
 "NCAR/geocat-examples" ["l"="40.884,25.514"]
 "NCAR/geocat-viz" ["l"="40.879,25.528"]
 "python-metar/python-metar" ["l"="40.564,25.666"]
@@ -2214,6 +2480,7 @@ digraph G {
 "dmbaturin/pytaf" ["l"="40.503,25.698"]
 "ywangd/pybufrkit" ["l"="40.66,25.612"]
 "avwx-rest/avwx-engine" ["l"="40.492,25.684"]
+"earthlab/earthpy" ["l"="41.618,24.247", "c"=76]
 "NCAR/wrf_hydro_py" ["l"="41.045,25.635"]
 "NCAR/wrf_hydro_docker" ["l"="41.06,25.635"]
 "NCAR/wrf_hydro_arcgis_preprocessor" ["l"="41.053,25.611"]
@@ -2228,8 +2495,7 @@ digraph G {
 "HathewayWill/WRF-MOSIT" ["l"="40.926,25.698"]
 "JiriRichter/WRFDomainWizard" ["l"="40.947,25.702"]
 "mmhs013/pyMannKendall" ["l"="40.819,25.418"]
-"pyet-org/pyet" ["l"="40.836,25.322"]
-"thouska/spotpy" ["l"="39.998,25.116"]
+"thouska/spotpy" ["l"="39.998,25.116", "c"=1301]
 "PeterRochford/SkillMetrics" ["l"="40.805,25.531"]
 "paulokuong/noaa" ["l"="40.421,25.52"]
 "crvaden/NOAA_API_v2" ["l"="40.4,25.537"]
@@ -2243,40 +2509,43 @@ digraph G {
 "djgagne/hagelslag" ["l"="40.687,25.565"]
 "tsupinie/vad-plotter" ["l"="40.692,25.652"]
 "openradar/PyDDA" ["l"="40.699,25.703"]
-"CliMA/Oceananigans.jl" ["l"="22.126,16.805"]
-"JuliaClimate/ClimateTools.jl" ["l"="21.746,17.231"]
-"SpeedyWeather/SpeedyWeather.jl" ["l"="40.93,25.472"]
+"JuliaClimate/ClimateTools.jl" ["l"="21.746,17.231", "c"=77]
 "ClimateMARGO/ClimateMARGO.jl" ["l"="40.972,25.487"]
-"JuliaGeo/NCDatasets.jl" ["l"="21.814,17.113"]
+"JuliaGeo/NCDatasets.jl" ["l"="21.814,17.113", "c"=77]
 "milankl/ShallowWaters.jl" ["l"="40.964,25.465"]
-"JuliaIO/Zarr.jl" ["l"="21.771,17.147"]
-"CliMA/ClimaAtmos.jl" ["l"="21.655,17.304"]
-"JuliaParallel/Dagger.jl" ["l"="21.915,16.803"]
-"FourierFlows/GeophysicalFlows.jl" ["l"="40.944,25.455"]
-"baggepinnen/MonteCarloMeasurements.jl" ["l"="22.187,16.817"]
-"JuliaGPU/KernelAbstractions.jl" ["l"="22.034,16.847"]
+"JuliaIO/Zarr.jl" ["l"="21.771,17.147", "c"=77]
+"CliMA/ClimaAtmos.jl" ["l"="21.655,17.304", "c"=77]
+"JuliaParallel/Dagger.jl" ["l"="21.915,16.803", "c"=77]
+"baggepinnen/MonteCarloMeasurements.jl" ["l"="22.187,16.817", "c"=77]
+"JuliaGPU/KernelAbstractions.jl" ["l"="22.034,16.847", "c"=77]
 "brian-rose/ClimateLaboratoryBook" ["l"="40.875,25.477"]
 "AtChem/AtChem2" ["l"="41.21,25.868"]
 "simonom/PyCHAM" ["l"="41.205,25.887"]
 "loftytopping/PyBox" ["l"="41.219,25.879"]
 "tianshu129/foqat" ["l"="41.242,25.895"]
-"meteoinfo/MeteoInfo" ["l"="40.826,25.771"]
+"cambecc/grib2json" ["l"="37.532,24.071", "c"=199]
+"Unidata/thredds" ["l"="40.831,25.875"]
 "meteoinfo/wContour" ["l"="40.858,25.845"]
+"meteoinfo/MeteoInfo" ["l"="40.826,25.771"]
 "YvZheng/pycwr" ["l"="40.751,25.74"]
 "nmcdev/nmc_met_io" ["l"="40.771,25.768"]
-"nmcdev/meteva" ["l"="40.789,25.744"]
 "flashlxy/PyMICAPS" ["l"="40.789,25.761"]
 "meteoinfo/MeteoInfoLib_CSharp" ["l"="40.86,25.819"]
-"bugsuse/meteoai" ["l"="40.774,25.754"]
 "Mo-Dabao/pyMeteo" ["l"="40.814,25.755"]
-"oeo4b/kriging.js" ["l"="37.592,24.094"]
+"oeo4b/kriging.js" ["l"="37.592,24.094", "c"=199]
 "mscross/pysplit" ["l"="41.018,25.868"]
 "Unidata/netcdf-java" ["l"="40.833,25.852"]
 "meicmodel/meic2ctm" ["l"="40.924,25.776"]
 "rafatieppo/sebal" ["l"="40.833,25.014"]
 "wwolff7/SEBAL_GRASS" ["l"="40.833,24.987"]
 "TimHessels/SEBAL" ["l"="40.838,25.049"]
+"fatiando/harmonica" ["l"="40.815,22.665", "c"=325]
+"perrygeo/python-rasterstats" ["l"="41.566,24.214", "c"=76]
+"dask/dask-jobqueue" ["l"="43.85,23.83", "c"=95]
 "PCMDI/pcmdi_metrics" ["l"="40.823,25.436"]
+"ct6502/wavelets" ["l"="52.325,29.918", "c"=83]
+"shenyulu/easyclimate" ["l"="40.75,25.889"]
+"pvigier/perlin-numpy" ["l"="-22.613,-27.119", "c"=26]
 "properscoring/properscoring" ["l"="40.703,25.5"]
 "cerfacs-globc/icclim" ["l"="40.924,25.359"]
 "pacificclimate/climdex.pcic" ["l"="40.91,25.295"]
@@ -2284,10 +2553,7 @@ digraph G {
 "NorESMhub/NorESM" ["l"="41.009,25.52"]
 "NorESMhub/BLOM" ["l"="41.038,25.509"]
 "kbSSR/Meteorological-Books" ["l"="40.775,25.874"]
-"shenyulu/easyclimate" ["l"="40.75,25.889"]
 "nmcdev/metdig" ["l"="40.792,25.814"]
-"MeteoAI/awesome-atmos" ["l"="40.765,25.744"]
-"hhuangwx/cmaps" ["l"="40.782,25.735"]
 "PhilosopherZ/Meteorological-Books" ["l"="40.754,25.762"]
 "nmcdev/nmc_met_map" ["l"="40.784,25.772"]
 "CyanideCN/QXmath" ["l"="40.781,25.784"]
@@ -2298,20 +2564,20 @@ digraph G {
 "huangynj/Python-Chinamap" ["l"="40.846,25.716"]
 "Unidata/tds" ["l"="40.836,25.896"]
 "Unidata/thredds-docker" ["l"="40.835,25.912"]
-"Unidata/thredds" ["l"="40.831,25.875"]
+"Toblerity/rtree" ["l"="39.675,23.757", "c"=157]
 "jleinonen/pytmatrix" ["l"="40.608,25.776"]
 "jleinonen/pymiecoated" ["l"="40.575,25.79"]
 "josephhardinee/PyDSD" ["l"="40.58,25.808"]
 "nguy/PyRadarMet" ["l"="40.639,25.75"]
 "CSU-Radarmet/CSU_RadarTools" ["l"="40.686,25.735"]
 "ml31415/numpy-groupies" ["l"="40.456,25.367"]
-"numbagg/numbagg" ["l"="40.51,25.404"]
 "EelcoHoogendoorn/Numpy_arraysetops_EP" ["l"="40.422,25.346"]
 "openwfm/convert_geotiff" ["l"="40.94,25.649"]
 "aerler/WRF-Tools" ["l"="40.916,25.642"]
 "NCAR/CTSM-Tutorial" ["l"="41.026,25.568"]
 "rubisco-sfa/ILAMB" ["l"="40.994,25.596"]
 "NCAR/ctsm_python_gallery" ["l"="41.025,25.582"]
+"jgrss/geowombat" ["l"="41.543,24.281", "c"=76]
 "intake/intake-xarray" ["l"="40.638,25.423"]
 "NCEI-NOAAGov/zarrdap" ["l"="40.605,25.38"]
 "tjvandal/deepsd" ["l"="40.765,25.39"]
@@ -2321,20 +2587,24 @@ digraph G {
 "ecmwf/pdbufr" ["l"="40.696,25.624"]
 "ecmwf/ecflow" ["l"="40.677,25.63"]
 "ClimateImpactLab/downscaleCMIP6" ["l"="40.787,25.383"]
-"SantanderMetGroup/downscaleR" ["l"="-11.554,16.711"]
+"SantanderMetGroup/downscaleR" ["l"="-11.554,16.711", "c"=978]
 "mrnorman/miniWeather" ["l"="40.723,25.177"]
+"xarray-contrib/xarray-tutorial" ["l"="39.832,25.148", "c"=1301]
+"sakitam-fdd/ol-plot" ["l"="37.576,24.045", "c"=199]
 "rich-iannone/AQStats" ["l"="41.14,25.968"]
 "rich-iannone/AtmosChem" ["l"="41.148,25.954"]
 "atmoschem/wrftools" ["l"="41.155,25.935"]
-"NCAR/ai4ess-hackathon-2020" ["l"="39.882,25.152"]
+"NCAR/ai4ess-hackathon-2020" ["l"="39.882,25.152", "c"=1301]
 "alburke/ams-2020-ml-python-course" ["l"="40.675,25.45"]
+"hydrogo/rainymotion" ["l"="41.585,25.847", "c"=537]
+"meteoswiss-mdr/pyrad" ["l"="40.709,25.717"]
 "weather-gov/api" ["l"="40.543,25.186"]
 "weather-gov/weather.gov" ["l"="40.523,25.155"]
 "NCAR/rwrfhydro" ["l"="41.067,25.57"]
 "NCAR/wrf_hydro_training" ["l"="41.057,25.652"]
 "NCAR/WrfHydroForcing" ["l"="41.067,25.606"]
 "NCAR/wrf_hydro_gis_preprocessor" ["l"="41.04,25.621"]
-"NOAA-OWP/ngen" ["l"="40.215,25.359"]
+"NOAA-OWP/ngen" ["l"="40.215,25.359", "c"=1301]
 "NCAR/WRFHydro" ["l"="41.035,25.655"]
 "uniquezhiyuan/PyRadar" ["l"="40.729,25.743"]
 "ARCCSS-extremes/climpact" ["l"="40.893,25.246"]
@@ -2342,6 +2612,7 @@ digraph G {
 "nmcdev/nmc_met_base" ["l"="40.798,25.785"]
 "nmcdev/nmc_met_graphics" ["l"="40.801,25.772"]
 "nmcdev/nmc_met_diagnostic" ["l"="40.811,25.781"]
+"mom-ocean/MOM6" ["l"="40.72,26.299", "c"=1102]
 "EDmodel/ED2" ["l"="41.008,25.886"]
 "PecanProject/pecan" ["l"="40.995,25.85"]
 "forc-db/ForC" ["l"="41.023,25.919"]
@@ -2355,14 +2626,13 @@ digraph G {
 "ioos/compliance-checker" ["l"="40.629,25.555"]
 "cf-convention/cf-conventions" ["l"="40.642,25.527"]
 "cedadev/cf-checker" ["l"="40.672,25.559"]
-"xcube-dev/xcube" ["l"="40.587,25.41"]
-"bcdev/zappend" ["l"="-1.923,10.72"]
+"bcdev/zappend" ["l"="-1.923,10.72", "c"=1247]
 "xcube-dev/xcube-viewer" ["l"="40.567,25.372"]
-"bcdev/jzarr" ["l"="-1.944,10.709"]
-"gjoseph92/stackstac" ["l"="41.566,24.316"]
-"forman/extendit" ["l"="-1.938,10.722"]
+"bcdev/jzarr" ["l"="-1.944,10.709", "c"=1247]
+"gjoseph92/stackstac" ["l"="41.566,24.316", "c"=76]
+"forman/extendit" ["l"="-1.938,10.722", "c"=1247]
 "carbonplan/ndpyramid" ["l"="40.573,25.458"]
-"bopen/xarray-sentinel" ["l"="40.955,23.382"]
+"bopen/xarray-sentinel" ["l"="40.955,23.382", "c"=1293]
 "LI-COR-Environmental/eddypro-engine" ["l"="40.995,26.072"]
 "LI-COR-Environmental/eddypro-gui" ["l"="40.984,26.091"]
 "lsigut/openeddy" ["l"="40.994,26.033"]
@@ -2375,7 +2645,9 @@ digraph G {
 "icos-etc/RFlux" ["l"="40.991,26.012"]
 "OzFlux/PyFluxPro" ["l"="41.028,26.008"]
 "aukkola/FluxnetLSM" ["l"="41.025,25.985"]
-"jipolanco/PencilFFTs.jl" ["l"="22.224,16.959"]
+"mhpi/hydroDL" ["l"="39.933,25.151", "c"=1301]
+"hainegroup/oceanspy" ["l"="40.651,26.333", "c"=1102]
+"jipolanco/PencilFFTs.jl" ["l"="22.224,16.959", "c"=77]
 "ESMValGroup/ESMValCore" ["l"="40.842,25.433"]
 "ESCOMP/CMEPS" ["l"="41.039,25.532"]
 "ESCOMP/CDEPS" ["l"="41.005,25.536"]
@@ -2396,7 +2668,7 @@ digraph G {
 "Open-ET/openet-ssebop" ["l"="40.887,25.058"]
 "WSWUP/pymetric" ["l"="40.886,25.077"]
 "Open-ET/openet-refet-gee" ["l"="40.876,25.041"]
-"yaoyichen/CIKM-Cup-2017" ["l"="41.538,25.847"]
+"yaoyichen/CIKM-Cup-2017" ["l"="41.538,25.847", "c"=537]
 "ecmwf/magics-python" ["l"="40.71,25.655"]
 "cwebster2/pyMeteo" ["l"="40.71,25.67"]
 "raspstephan/CBRAIN-CAM" ["l"="40.934,25.307"]
@@ -2407,20 +2679,21 @@ digraph G {
 "NCAR/lrose-titan" ["l"="40.665,25.715"]
 "openradar/TINT" ["l"="40.682,25.697"]
 "NCAR/lrose-core" ["l"="40.687,25.716"]
-"xarray-contrib/xbatcher" ["l"="40.595,25.454"]
 "xarray-contrib/xdggs" ["l"="40.54,25.453"]
-"xarray-contrib/xvec" ["l"="40.585,25.485"]
 "google/xarray-tensorstore" ["l"="40.574,25.426"]
 "google/xarray-beam" ["l"="40.56,25.464"]
 "lzuniujp08/Equivalent-surface" ["l"="40.88,25.858"]
 "bugsuse/mradar" ["l"="40.719,25.767"]
 "cf-convention/discuss" ["l"="40.611,25.534"]
+"isciences/exactextract" ["l"="41.541,24.265", "c"=76]
 "CyanideCN/micaps_mdfs" ["l"="40.794,25.796"]
 "nmcdev/nmc_ens_toolkits" ["l"="40.781,25.796"]
 "bugsuse/pyart" ["l"="40.737,25.772"]
 "hectornieto/pyMETRIC" ["l"="40.897,25.099"]
 "hectornieto/pyTSEB" ["l"="40.877,25.092"]
 "scollis/notebooks" ["l"="40.625,25.785"]
+"AER-RC/LBLRTM" ["l"="21.389,15.009", "c"=267]
+"danielkoll/PyRADS" ["l"="40.873,25.46"]
 "ulmo-dev/ulmo" ["l"="41.086,25.454"]
 "marians/dwd-weather" ["l"="40.577,25.615"]
 "rich-iannone/Rvis" ["l"="41.14,25.984"]
@@ -2429,8 +2702,8 @@ digraph G {
 "sbegueria/SPEI" ["l"="40.819,25.312"]
 "martinvonk/SPEI" ["l"="40.823,25.335"]
 "sbegueria/SPEIbase" ["l"="40.833,25.274"]
-"FourierFlows/FourierFlows.jl" ["l"="22.187,16.891"]
-"CliMA/ClimaOcean.jl" ["l"="21.708,17.232"]
+"FourierFlows/FourierFlows.jl" ["l"="22.187,16.891", "c"=77]
+"CliMA/ClimaOcean.jl" ["l"="21.708,17.232", "c"=77]
 "glwagner/OceanTurb.jl" ["l"="40.984,25.442"]
 "NASA-LIS/LISF" ["l"="41.147,25.702"]
 "NCAR/hrldas" ["l"="41.1,25.695"]
@@ -2446,7 +2719,6 @@ digraph G {
 "fatiando/rockhound" ["l"="40.548,25.307"]
 "nasa/MultiDop" ["l"="40.662,25.743"]
 "joshua-wx/pyhail" ["l"="40.649,25.726"]
-"hydrogo/rainymotion" ["l"="41.585,25.847"]
 "NCAR/wrf_hydro_model_tools" ["l"="41.096,25.609"]
 "jiangleads/Get_ECMWF_Data" ["l"="40.719,25.798"]
 "meteostat/weather-stations" ["l"="40.56,25.543"]
@@ -2469,36 +2741,41 @@ digraph G {
 "nishan3/LandModETmapper" ["l"="40.832,24.97"]
 "EVS-ATMOS/stm_2018_pyart_course" ["l"="40.625,25.749"]
 "heistermann/ontrack" ["l"="40.631,25.761"]
+"euroargodev/argopy" ["l"="40.614,26.332", "c"=1102]
 "E3SM-Project/scream" ["l"="41.006,25.566"]
-"mom-ocean/MOM6" ["l"="40.72,26.299"]
-"earth-system-radiation/rte-rrtmgp" ["l"="21.37,15.04"]
-"microhh/microhh" ["l"="63.428,-1.591"]
-"ufs-community/ufs-weather-model" ["l"="40.836,26.238"]
-"NOAA-GFDL/FMS" ["l"="40.785,26.29"]
-"GaryBikini/ChinaAdminDivisonSHP" ["l"="40.727,25.832"]
-"ruiduobao/shengshixian.com" ["l"="38.725,23.848"]
-"adyliu/china_area" ["l"="-3.475,-33.282"]
+"earth-system-radiation/rte-rrtmgp" ["l"="21.37,15.04", "c"=267]
+"microhh/microhh" ["l"="63.428,-1.591", "c"=175]
+"georgebv/pyextremes" ["l"="40.645,26.183", "c"=1102]
+"python-windrose/windrose" ["l"="40.754,25.527"]
+"ufs-community/ufs-weather-model" ["l"="40.836,26.238", "c"=1102]
+"NOAA-GFDL/FMS" ["l"="40.785,26.29", "c"=1102]
+"neuralhydrology/neuralhydrology" ["l"="39.958,25.145", "c"=1301]
+"ruiduobao/shengshixian.com" ["l"="38.725,23.848", "c"=157]
 "ZhaJiMan/frykit" ["l"="40.743,25.855"]
 "xmc811/mapchina" ["l"="40.7,25.879"]
-"TangSY/echarts-map-demo" ["l"="-3.35,-33.119"]
-"xiangyuecn/AreaCity-JsSpider-StatsGov" ["l"="-3.547,-33.255"]
-"cgohlke/geospatial-wheels" ["l"="41.595,24.139"]
-"wandergis/coordTransform_py" ["l"="38.889,23.82"]
-"ni1o1/transbigdata" ["l"="38.899,23.885"]
-"ni1o1/pygeo-tutorial" ["l"="38.824,23.817"]
-"PaddlePaddle/PaddleRS" ["l"="41.928,25.253"]
+"TangSY/echarts-map-demo" ["l"="-3.35,-33.119", "c"=30]
+"xiangyuecn/AreaCity-JsSpider-StatsGov" ["l"="-3.547,-33.255", "c"=30]
+"cgohlke/geospatial-wheels" ["l"="41.595,24.139", "c"=76]
+"wandergis/coordTransform_py" ["l"="38.889,23.82", "c"=157]
+"ni1o1/transbigdata" ["l"="38.899,23.885", "c"=157]
+"ni1o1/pygeo-tutorial" ["l"="38.824,23.817", "c"=157]
+"PaddlePaddle/PaddleRS" ["l"="41.928,25.253", "c"=525]
+"pangeo-data/WeatherBench" ["l"="41.702,25.895", "c"=537]
+"capaulson/pyKriging" ["l"="40.756,22.612", "c"=325]
+"conda/conda-lock" ["l"="43.856,24.12", "c"=95]
 "conda-incubator/conda-store" ["l"="40.5,25.541"]
 "nebari-dev/nebari" ["l"="40.561,25.514"]
 "conda-incubator/conda-pypi" ["l"="40.451,25.564"]
 "ClimateGlobalChange/tempestextremes" ["l"="40.862,25.583"]
 "steidani/ConTrack" ["l"="40.879,25.563"]
+"holoviz/spatialpandas" ["l"="41.462,24.24", "c"=76]
+"geopandas/dask-geopandas" ["l"="41.485,24.249", "c"=76]
 "quishqa/WRF-Chem_SP" ["l"="41.006,25.759"]
 "douglowe/WRF_UoM_EMIT" ["l"="41.019,25.767"]
-"josuemtzmo/trackeddy" ["l"="40.584,26.338"]
+"josuemtzmo/trackeddy" ["l"="40.584,26.338", "c"=1102]
 "edoddridge/aronnax" ["l"="40.957,25.432"]
-"jamesp/shallowwater" ["l"="40.926,25.438"]
 "tloureiro/cmip6_downloader" ["l"="40.78,25.333"]
-"pastas/pastas" ["l"="40.043,25.086"]
+"pastas/pastas" ["l"="40.043,25.086", "c"=1301]
 "NCAR/IPT" ["l"="41.001,25.504"]
 "ESMCI/Community_Mesh_Generation_Toolkit" ["l"="41.023,25.49"]
 "openair-project/openair" ["l"="41.203,25.952"]
@@ -2506,20 +2783,28 @@ digraph G {
 "openair-project/openairmaps" ["l"="41.213,25.972"]
 "oscarperpinan/spacetime-vis" ["l"="41.21,25.995"]
 "openair-project/book" ["l"="41.192,25.976"]
+"GeoStat-Framework/PyKrige" ["l"="40.739,22.623", "c"=325]
 "NBloemendaal/STORM-return-periods" ["l"="40.887,25.377"]
 "NBloemendaal/STORM-preprocessing" ["l"="40.893,25.365"]
+"wangyapu/DataVisual" ["l"="-5.268,-35.846", "c"=804]
+"Jxck-S/plane-notify" ["l"="54.029,5.964", "c"=796]
+"JeanExtreme002/FlightRadarAPI" ["l"="40.36,25.776"]
+"pyproj4/pyproj" ["l"="41.537,24.171", "c"=76]
 "geirev/Data-Assimilation-Fundamentals" ["l"="41.11,25.546"]
 "acse-jm122/torchda" ["l"="41.124,25.536"]
-"bopen/sarsen" ["l"="40.972,23.366"]
-"danielkoll/PyRADS" ["l"="40.873,25.46"]
+"google/tensorstore" ["l"="41.851,26.635", "c"=712]
+"cubed-dev/cubed" ["l"="40.564,25.449"]
+"zarr-developers/VirtualiZarr" ["l"="40.588,25.464"]
+"WaterLily-jl/WaterLily.jl" ["l"="22.13,16.87", "c"=77]
+"bopen/sarsen" ["l"="40.972,23.366", "c"=1293]
 "pressel/pycles" ["l"="40.914,25.427"]
 "lmadaus/Barotropic-Python" ["l"="40.897,25.435"]
+"KKulma/climate-change-data" ["l"="-11.582,16.886", "c"=978]
 "joaohenry23/GOES" ["l"="40.653,25.399"]
 "blaylockbk/goes2go" ["l"="40.658,25.428"]
-"cambecc/grib2json" ["l"="37.532,24.071"]
 "pyvista/pyvistaqt" ["l"="40.651,25.241"]
 "pyvista/pyvista-tutorial" ["l"="40.641,25.208"]
-"Kitware/ipyvtklink" ["l"="43.575,24.212"]
+"Kitware/ipyvtklink" ["l"="43.575,24.212", "c"=95]
 "NCAR/noahmp" ["l"="41.055,25.689"]
 "ESMWG/NoahMP" ["l"="41.084,25.689"]
 "NCAR/hrldas-release" ["l"="41.086,25.706"]
@@ -2531,25 +2816,24 @@ digraph G {
 "Airwhf/MEIAT-CMAQ" ["l"="40.945,25.776"]
 "beesfly/WrfchemEmissionMaker" ["l"="40.967,25.817"]
 "ISAT-Office/ISAT" ["l"="40.961,25.778"]
-"neuralgcm/dinosaur" ["l"="41.718,25.962"]
-"MakieOrg/GeoMakie.jl" ["l"="21.806,17.094"]
-"WaterLily-jl/WaterLily.jl" ["l"="22.13,16.87"]
-"neuralgcm/neuralgcm" ["l"="41.729,25.947"]
-"EnzymeAD/Reactant.jl" ["l"="21.988,16.889"]
-"EnzymeAD/Enzyme.jl" ["l"="22.004,16.836"]
-"rafaqz/DimensionalData.jl" ["l"="21.844,17.04"]
+"neuralgcm/dinosaur" ["l"="41.718,25.962", "c"=537]
+"MakieOrg/GeoMakie.jl" ["l"="21.806,17.094", "c"=77]
+"neuralgcm/neuralgcm" ["l"="41.729,25.947", "c"=537]
+"EnzymeAD/Reactant.jl" ["l"="21.988,16.889", "c"=77]
+"EnzymeAD/Enzyme.jl" ["l"="22.004,16.836", "c"=77]
+"rafaqz/DimensionalData.jl" ["l"="21.844,17.04", "c"=77]
 "qwd/LocationList" ["l"="41.09,25.241"]
 "pinplex/PyDnA" ["l"="40.717,25.998"]
 "rafaelcabreu/attribution" ["l"="40.726,25.972"]
 "linjonathan/tropical_cyclone_risk" ["l"="40.893,25.415"]
 "skaderli/WaveBreaking" ["l"="40.918,25.565"]
+"DedalusProject/dedalus" ["l"="63.185,-1.645", "c"=175]
 "ghiggi/gpm_api" ["l"="40.617,25.701"]
 "ltelab/disdrodb" ["l"="40.587,25.727"]
-"benbovy/spherely" ["l"="41.378,24.273"]
-"cubed-dev/cubed" ["l"="40.564,25.449"]
-"gauteh/hidefix" ["l"="41.167,24.478"]
-"zarr-developers/VirtualiZarr" ["l"="40.588,25.464"]
-"xarray-contrib/pint-xarray" ["l"="40.668,25.477"]
+"benbovy/spherely" ["l"="41.378,24.273", "c"=76]
+"gauteh/hidefix" ["l"="41.167,24.478", "c"=76]
+"pangeo-data/pangeo-docker-images" ["l"="41.507,24.315", "c"=76]
+"stac-utils/xstac" ["l"="40.592,25.427"]
 "NCAS-CMS/cf-python" ["l"="40.645,25.543"]
 "SciTools/nc-time-axis" ["l"="40.662,25.575"]
 "nawendt/esmpy-tutorial" ["l"="40.729,25.404"]
@@ -2557,17 +2841,16 @@ digraph G {
 "jdemaeyer/brightsky-infrastructure" ["l"="40.858,25.499"]
 "noritada/grib-rs" ["l"="40.436,25.474"]
 "mpiannucci/gribberish" ["l"="40.482,25.478"]
-"pangeo-data/WeatherBench" ["l"="41.702,25.895"]
-"openclimatefix/metnet" ["l"="41.646,25.895"]
-"google-research/weatherbench2" ["l"="41.699,25.93"]
+"openclimatefix/metnet" ["l"="41.646,25.895", "c"=537]
+"google-research/weatherbench2" ["l"="41.699,25.93", "c"=537]
 "pangeo-forge/pangeo-forge-recipes" ["l"="40.568,25.474"]
 "pangeo-forge/staged-recipes" ["l"="40.514,25.491"]
-"FreeGIS/kriging-contour" ["l"="40.866,25.873"]
 "huanglii/wcontour-js" ["l"="40.883,25.873"]
 "RMS/RDOS" ["l"="40.944,25.192"]
 "supercoderz/pyflightdata" ["l"="40.346,25.813"]
 "E3V3A/iata-arrivals-cli" ["l"="40.334,25.836"]
 "mkorkmaz/flightradar24" ["l"="40.33,25.8"]
+"ftilmann/latexdiff" ["l"="62.759,0.468", "c"=403]
 "nebari-dev/nebari-docs" ["l"="40.534,25.533"]
 "pangeo-data/pangeo-cloud-federation" ["l"="40.5,25.516"]
 "nebari-dev/nebari-slurm" ["l"="40.522,25.525"]
@@ -2582,8 +2865,8 @@ digraph G {
 "openradar/AMS-Short-Course-on-Open-Source-Radar-Software" ["l"="40.645,25.77"]
 "nasa/DualPol" ["l"="40.668,25.758"]
 "nasa/SingleDop" ["l"="40.685,25.761"]
-"stac-utils/xstac" ["l"="40.592,25.427"]
-"pangeo-data/cog-best-practices" ["l"="41.516,24.41"]
+"NOAA-GFDL/MOM6-examples" ["l"="40.754,26.305", "c"=1102]
+"pangeo-data/cog-best-practices" ["l"="41.516,24.41", "c"=76]
 "xpublish-community/xpublish-wms" ["l"="40.573,25.491"]
 "EcoForecast/EF_Activities" ["l"="40.984,25.896"]
 "EcoForecast/ecoforecastR" ["l"="40.981,25.923"]
@@ -2592,15 +2875,15 @@ digraph G {
 "partytax/ncei-api-guide" ["l"="40.35,25.551"]
 "fatiando/ensaio" ["l"="40.537,25.321"]
 "fatiando/choclo" ["l"="40.533,25.309"]
+"NOAA-EMC/GSI" ["l"="40.87,26.188", "c"=1102]
 "ecmwf/pyflow" ["l"="40.652,25.646"]
 "lesommer/oocgcm" ["l"="40.862,25.536"]
-"javedali99/python-resources-for-earth-sciences" ["l"="40.714,25.382"]
+"nasa/Transform-to-Open-Science" ["l"="19.125,13.446", "c"=1213]
 "xarray-contrib/xeofs" ["l"="40.747,25.394"]
-"raoulcollenteur/Python-Hydrology-Tools" ["l"="40.004,25.137"]
-"python-windrose/windrose" ["l"="40.754,25.527"]
-"georgebv/pyextremes" ["l"="40.645,26.183"]
-"wind-python/windpowerlib" ["l"="-11.241,17.671"]
+"wind-python/windpowerlib" ["l"="-11.241,17.671", "c"=440]
 "avwx-rest/avwx-api" ["l"="40.462,25.689"]
+"nvkelso/natural-earth-vector" ["l"="39.383,24.033", "c"=157]
+"dask/dask-tutorial" ["l"="43.803,23.808", "c"=95]
 "carbonplan/maps" ["l"="40.558,25.433"]
 "zarr-developers/geozarr-spec" ["l"="40.55,25.417"]
 "DahnJ/Awesome-Zarr" ["l"="40.568,25.408"]
@@ -2609,24 +2892,31 @@ digraph G {
 "aarande/nexradaws" ["l"="40.548,25.712"]
 "bwiggs/go-nexrad" ["l"="40.553,25.69"]
 "Dan-Boat/PyESD" ["l"="40.763,25.377"]
+"Toblerity/Fiona" ["l"="41.517,24.166", "c"=76]
 "m0rp43us/openmeteopy" ["l"="40.679,25.348"]
-"google-deepmind/graphcast" ["l"="41.793,25.911"]
+"google-deepmind/graphcast" ["l"="41.793,25.911", "c"=537]
 "open-meteo/open-data" ["l"="40.677,25.369"]
-"google-research/arco-era5" ["l"="41.68,25.956"]
-"EnergieID/entsoe-py" ["l"="-11.151,17.64"]
+"google-research/arco-era5" ["l"="41.68,25.956", "c"=537]
+"EnergieID/entsoe-py" ["l"="-11.151,17.64", "c"=440]
 "Pirate-Weather/pirateweather" ["l"="40.59,25.26"]
+"sertit/eoreader" ["l"="40.961,23.405", "c"=1293]
 "E3SM-Project/e3sm_diags" ["l"="40.848,25.419"]
+"nsidc/earthaccess" ["l"="41.605,24.223", "c"=76]
+"recipy/recipy" ["l"="41.091,35.164", "c"=51]
 "CESM-Development/cime" ["l"="40.987,25.532"]
 "woodcrafty/PyETo" ["l"="40.863,25.145"]
 "NASA-DEVELOP/METRIC" ["l"="40.877,25.109"]
 "Ouranosinc/raven" ["l"="40.886,25.133"]
-"JeanExtreme002/FlightRadarAPI" ["l"="40.36,25.776"]
 "JeanExtreme002/PyMemoryEditor" ["l"="40.327,25.776"]
 "JeanExtreme002/FastSnake" ["l"="40.34,25.764"]
 "JeanExtreme002/University-Projects--UFBA-" ["l"="40.323,25.763"]
 "SEATStandards/ncvis" ["l"="40.801,25.683"]
+"matplotlib/cmocean" ["l"="40.665,26.345", "c"=1102]
+"Pirate-Weather/pirate-weather-ha" ["l"="-14.967,-39.054", "c"=64]
+"stac-utils/pystac-client" ["l"="41.558,24.342", "c"=76]
 "ajdawson/barotropic" ["l"="40.926,25.41"]
 "NMC-DAVE/dk_tutorials_2021" ["l"="40.797,25.844"]
+"microsoft/PlanetaryComputer" ["l"="41.57,24.348", "c"=76]
 "SciTools/cf-units" ["l"="40.595,25.589"]
 "xarray-contrib/xarray-regrid" ["l"="40.495,25.458"]
 "nasa/PyTDA" ["l"="40.673,25.775"]
@@ -2636,8 +2926,8 @@ digraph G {
 "alan-turing-institute/environmental-ds-book" ["l"="40.472,25.442"]
 "pcodec/pcodec" ["l"="40.527,25.365"]
 "amcz/hysplit_metdata" ["l"="41.042,25.886"]
-"meteoswiss-mdr/pyrad" ["l"="40.709,25.717"]
 "googleinterns/invobs-data-assimilation" ["l"="41.162,25.523"]
+"fsspec/universal_pathlib" ["l"="43.616,23.711", "c"=95]
 "meteoinfo/MeteoInfoLib" ["l"="40.883,25.912"]
 "meteoinfo/MeteoInfoMap" ["l"="40.876,25.892"]
 "hzexe/openair" ["l"="41.284,25.903"]
@@ -2646,54 +2936,64 @@ digraph G {
 "CEMPD/SMOKE" ["l"="40.989,25.784"]
 "atmos-python/atmos" ["l"="40.914,25.339"]
 "kaust-halo/geeet" ["l"="40.865,25.063"]
+"gjoseph92/geogif" ["l"="41.517,24.326", "c"=76]
 "ANL-DIGR/notebooks" ["l"="40.625,25.798"]
 "jrbourbeau/hacking-dask" ["l"="40.594,25.504"]
 "MeteoSwiss/pyrad" ["l"="40.641,25.676"]
 "openradar/erad2024" ["l"="40.631,25.689"]
-"MITgcm/xmitgcm" ["l"="40.671,26.379"]
-"hainegroup/oceanspy" ["l"="40.651,26.333"]
-"euroargodev/argopy" ["l"="40.614,26.332"]
-"fmaussion/scientific_programming" ["l"="63.213,-0.887"]
-"Pirate-Weather/pirate-weather-ha" ["l"="-14.967,-39.054"]
+"soft-matter/trackpy" ["l"="41.688,26.515", "c"=712]
+"skyplane-project/skyplane" ["l"="7.338,-10.951", "c"=515]
+"Kitware/trame" ["l"="61.809,35.869", "c"=424]
+"datalayer/jupyter-ui" ["l"="43.232,24.304", "c"=95]
+"OceanParcels/Parcels" ["l"="40.635,26.317", "c"=1102]
+"raphaelquast/EOmaps" ["l"="41.558,24.277", "c"=76]
+"MITgcm/xmitgcm" ["l"="40.671,26.379", "c"=1102]
+"fmaussion/scientific_programming" ["l"="63.213,-0.887", "c"=175]
 "guillaume/merry-timeline" ["l"="40.558,25.23"]
 "Pirate-Weather/pirate-weather-code" ["l"="40.584,25.232"]
-"qwd/dev-site" ["l"="41.05,25.219"]
-"mllam/neural-lam" ["l"="41.67,25.972"]
+"mllam/neural-lam" ["l"="41.67,25.972", "c"=537]
 "jkrasting/xwavelet" ["l"="40.737,25.356"]
-"developmentseed/titiler-multidim" ["l"="41.493,24.34"]
+"developmentseed/titiler-multidim" ["l"="41.493,24.34", "c"=76]
 "earth-mover/serverless-datacube-demo" ["l"="40.529,25.395"]
+"opendatacube/odc-stac" ["l"="41.558,24.305", "c"=76]
 "alxmrs/xarray-sql" ["l"="40.517,25.454"]
-"zarr-developers/zarr-specs" ["l"="41.875,26.604"]
-"opendatacube/odc-geo" ["l"="41.58,24.338"]
+"zarr-developers/zarr-specs" ["l"="41.875,26.604", "c"=712]
+"opendatacube/odc-geo" ["l"="41.58,24.338", "c"=76]
 "NCAR/pyngl" ["l"="40.843,25.671"]
+"jonathanlilly/jLab" ["l"="40.526,26.216", "c"=1102]
+"jonathanlilly/time-series" ["l"="40.747,25.418"]
 "rodrigo-caballero/CliMT-legacy" ["l"="40.96,25.409"]
 "tapios/fms-idealized" ["l"="40.944,25.4"]
 "mjucker/MiMA" ["l"="40.906,25.446"]
 "cmkaul/SCAMPy" ["l"="40.943,25.415"]
 "google/weather-tools" ["l"="40.536,25.47"]
-"google-research/weatherbenchX" ["l"="41.702,25.991"]
-"google/Xee" ["l"="41.622,24.286"]
+"google-research/weatherbenchX" ["l"="41.702,25.991", "c"=537]
+"google/Xee" ["l"="41.622,24.286", "c"=76]
 "JeanExtreme002/THIS_REPOSITORY_HAS_21_STARS" ["l"="40.293,25.761"]
-"jonathanlilly/time-series" ["l"="40.747,25.418"]
 "hectornieto/pyPro4Sail" ["l"="40.904,25.07"]
 "radosuav/pyDMS" ["l"="40.914,25.085"]
 "forc-db/GROA" ["l"="41.033,25.94"]
 "tjlang/SkewT" ["l"="40.646,25.805"]
-"kr-stn/awesome-sentinel" ["l"="41.763,24.238"]
-"sentinel-hub/eo-learn" ["l"="41.75,24.227"]
-"johntruckenbrodt/pyroSAR" ["l"="40.985,23.376"]
-"sentinelsat/sentinelsat" ["l"="41.761,24.212"]
-"nsidc/earthaccess" ["l"="41.605,24.223"]
+"kr-stn/awesome-sentinel" ["l"="41.763,24.238", "c"=76]
+"sentinel-hub/eo-learn" ["l"="41.75,24.227", "c"=76]
+"johntruckenbrodt/pyroSAR" ["l"="40.985,23.376", "c"=1293]
+"sentinelsat/sentinelsat" ["l"="41.761,24.212", "c"=76]
 "pytroll/pytroll-examples" ["l"="40.634,25.61"]
+"geopy/geopy" ["l"="41.483,24.064", "c"=76]
 "scitools-classroom/courses" ["l"="40.77,25.453"]
-"pyproj4/pyproj" ["l"="41.537,24.171"]
-"Toblerity/Fiona" ["l"="41.517,24.166"]
+"pola-rs/pyo3-polars" ["l"="43.608,26.363", "c"=1179]
+"kylebarron/arro3" ["l"="40.471,25.404"]
+"hgrecco/pint" ["l"="43.751,23.842", "c"=95]
 "ecmwf/earthkit-data" ["l"="40.825,25.551"]
+"openjournals/joss-reviews" ["l"="41.1,35.24", "c"=51]
+"h5py/h5py" ["l"="43.744,23.694", "c"=95]
 "ECMWFCode4Earth/challenges_2023" ["l"="40.628,25.582"]
 "ecmwf-projects/copernicus-training-c3s" ["l"="40.612,25.575"]
 "NCAR/WRFV3" ["l"="40.893,25.672"]
 "NCAR/VAPOR" ["l"="40.87,25.629"]
+"screwdriver-cd/screwdriver" ["l"="0.908,-30.357", "c"=12]
 "ZiluM/sacpy" ["l"="40.734,25.94"]
+"aditya-grover/climate-learn" ["l"="41.691,25.942", "c"=537]
 "anikfal/postwrf" ["l"="40.961,25.72"]
 "respec/FORTRAN" ["l"="41.206,25.406"]
 "NCAR/CESM-Tutorial" ["l"="41.015,25.546"]
@@ -2705,43 +3005,57 @@ digraph G {
 "benbovy/xproj" ["l"="40.619,25.679"]
 "julianmack/Data_Assimilation" ["l"="41.131,25.464"]
 "sakov/enkf-c" ["l"="41.114,25.456"]
-"198808xc/Pangu-Weather" ["l"="41.743,25.914"]
+"VictorEijkhout/TheArtofHPC_pdfs" ["l"="62.54,-0.892", "c"=953]
+"ResidentMario/geoplot" ["l"="41.492,24.184", "c"=76]
+"198808xc/Pangu-Weather" ["l"="41.743,25.914", "c"=537]
+"delta-io/delta-kernel-rs" ["l"="-0.366,14.845", "c"=729]
+"NVIDIA/earth2mip" ["l"="41.692,25.958", "c"=537]
 "USEPA/AMET" ["l"="40.991,25.762"]
 "cjcoats/ioapi-3.2" ["l"="40.977,25.771"]
 "openradar/ams-open-radar-2023" ["l"="40.617,25.637"]
 "nixoncameronj/Sounding" ["l"="40.592,25.655"]
-"CodeExplainedRepo/Weather-App-JavaScript" ["l"="-52.498,-10.022"]
-"NOAA-EMC/NCEPLIBS-bufr" ["l"="40.879,26.168"]
+"CodeExplainedRepo/Weather-App-JavaScript" ["l"="-52.498,-10.022", "c"=1141]
+"NOAA-EMC/NCEPLIBS-bufr" ["l"="40.879,26.168", "c"=1102]
 "smft/Read_Himawari_binary_data" ["l"="40.697,25.819"]
+"geoarrow/geoarrow-rs" ["l"="41.366,24.342", "c"=76]
 "cl3225/CHAZ" ["l"="40.921,25.392"]
+"jasper-software/jasper" ["l"="-19.125,-25.518", "c"=10]
 "CDAT/cdat" ["l"="40.909,25.467"]
 "wrf-model/Users_Guide" ["l"="40.95,25.681"]
 "meteoinfo/MeteoInfoMap_CSharp" ["l"="40.879,25.827"]
 "meteoinfo/wContour_CSharp" ["l"="40.877,25.84"]
+"LDeakin/zarrs" ["l"="43.331,23.788", "c"=95]
 "NCAR/container-wrf" ["l"="40.991,25.694"]
 "yyr/wrf_install" ["l"="41.028,25.702"]
 "gadomski/antimeridian" ["l"="40.53,25.504"]
 "jeliashi/xarray-async" ["l"="40.551,25.39"]
 "vlouf/cpol_processing" ["l"="40.605,25.813"]
+"fsspec/gcsfs" ["l"="43.686,23.766", "c"=95]
+"holoviz/colorcet" ["l"="43.801,23.941", "c"=95]
+"darothen/ai-models-for-all" ["l"="41.673,25.99", "c"=537]
 "deeplycloudy/lmatools" ["l"="40.591,25.336"]
-"developmentseed/obstore" ["l"="40.53,25.433"]
 "xarray-contrib/xoak" ["l"="40.514,25.473"]
-"zarr-developers/pydantic-zarr" ["l"="45.32,21.617"]
-"kylebarron/arro3" ["l"="40.471,25.404"]
-"developmentseed/eoAPI" ["l"="41.51,24.351"]
+"zarr-developers/pydantic-zarr" ["l"="45.32,21.617", "c"=20]
+"developmentseed/eoAPI" ["l"="41.51,24.351", "c"=76]
 "martindurant/rfsspec" ["l"="40.49,25.423"]
-"LDeakin/zarrs" ["l"="43.331,23.788"]
-"developmentseed/async-tiff" ["l"="43.168,23.708"]
-"geoarrow/geoarrow-rs" ["l"="41.366,24.342"]
+"developmentseed/async-tiff" ["l"="43.168,23.708", "c"=95]
+"pydata/sparse" ["l"="43.86,23.711", "c"=95]
 "Try2Code/cdo-bindings" ["l"="40.869,25.41"]
+"geojupyter/jupytergis" ["l"="41.455,24.321", "c"=76]
+"GreatV/CloudMusic-Crawler" ["l"="48.71,23.568", "c"=125]
 "NCAR/WPS" ["l"="40.901,25.698"]
+"d3/d3-contour" ["l"="-4.495,-41.868", "c"=302]
+"UW-Hydro/VIC" ["l"="40.012,25.157", "c"=1301]
+"team-ocean/veros" ["l"="40.663,26.321", "c"=1102]
 "benbovy/xarray-fancy-repr" ["l"="40.595,25.701"]
+"rebase-energy/awesome-weather-models" ["l"="41.62,26.082", "c"=537]
 "storpipfugl/pykdtree" ["l"="40.557,25.582"]
 "u1234x1234/pynanoflann" ["l"="40.517,25.596"]
-"seung-lab/fastremap" ["l"="41.771,26.871"]
+"seung-lab/fastremap" ["l"="41.771,26.871", "c"=712]
 "conda/menuinst" ["l"="40.414,25.58"]
 "Quansight-Labs/conda-metadata-app" ["l"="40.391,25.591"]
 "monocongo/example_climate_indices" ["l"="40.818,25.364"]
+"scottprahl/miepython" ["l"="34.573,-4.478", "c"=769]
 "derhuerst/flightradar24-client" ["l"="40.299,25.817"]
 "NCAR/GARD" ["l"="40.741,25.378"]
 "MPAS-Dev/compass" ["l"="41.008,25.664"]

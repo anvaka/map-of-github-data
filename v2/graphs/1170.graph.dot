@@ -1,4 +1,7 @@
 digraph G {
+"webauthn4j/webauthn4j" -> "webauthn4j/keycloak-webauthn-authenticator" ["e"=1]
+"webauthn4j/webauthn4j" -> "keycloak/keycloak-community" ["e"=1]
+"wso2/product-is" -> "wso2/charon" ["e"=1]
 "keycloak/terraform-provider-keycloak" -> "adorsys/keycloak-config-cli"
 "keycloak/terraform-provider-keycloak" -> "aerogear/keycloak-metrics-spi"
 "keycloak/terraform-provider-keycloak" -> "sventorben/keycloak-home-idp-discovery"
@@ -28,6 +31,7 @@ digraph G {
 "codecentric/helm-charts" -> "keycloak/keycloak-documentation"
 "codecentric/helm-charts" -> "adorsys/keycloak-config-cli"
 "codecentric/helm-charts" -> "louketo/louketo-proxy"
+"benwilcock/spring-cloud-gateway-demo" -> "timtebeek/spring-security-samples" ["e"=1]
 "aerogear/keycloak-metrics-spi" -> "thomasdarimont/keycloak-health-checks"
 "aerogear/keycloak-metrics-spi" -> "adorsys/keycloak-config-cli"
 "aerogear/keycloak-metrics-spi" -> "thomasdarimont/keycloak-extension-playground"
@@ -43,6 +47,9 @@ digraph G {
 "aerogear/keycloak-metrics-spi" -> "sventorben/keycloak-restrict-client-auth"
 "aerogear/keycloak-metrics-spi" -> "L21s/keycloak-monitoring-prometheus"
 "aerogear/keycloak-metrics-spi" -> "zonaut/keycloak-extensions"
+"marcospereirampj/python-keycloak" -> "keycloakify/keycloakify" ["e"=1]
+"marcospereirampj/python-keycloak" -> "thomasdarimont/awesome-keycloak" ["e"=1]
+"marcospereirampj/python-keycloak" -> "aerogear/keycloak-metrics-spi" ["e"=1]
 "OfficeForProductSafetyAndStandards/keycloak-sms-authenticator-sns" -> "nickpack/keycloak-sms-authenticator-sns"
 "ivangfr/springboot-react-keycloak" -> "ivangfr/springboot-react-social-login"
 "ivangfr/springboot-react-keycloak" -> "ivangfr/springboot-react-jwt-token"
@@ -67,7 +74,17 @@ digraph G {
 "ccouzens/keycloak-openapi" -> "dahag-ag/keycloak-openapi"
 "elimity-com/scim" -> "imulab/go-scim"
 "elimity-com/scim" -> "scim2/filter-parser"
+"mauriciovigolo/keycloak-angular" -> "thomasdarimont/awesome-keycloak" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "keycloak/keycloak-quickstarts" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "keycloak/keycloak-documentation" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "ferrerojosh/nest-keycloak-connect" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "keycloak/keycloak-containers" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "thomasdarimont/keycloak-extension-playground" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "keycloak/keycloak-nodejs-admin-client" ["e"=1]
+"mauriciovigolo/keycloak-angular" -> "p2-inc/keycloak-orgs" ["e"=1]
 "privacyidea/keycloak-provider" -> "p2-inc/phasetwo-admin-portal"
+"aerogear/offix" -> "aerogear/keycloak-connect-graphql" ["e"=1]
+"callicoder/spring-boot-react-oauth2-social-login-demo" -> "ivangfr/springboot-react-social-login" ["e"=1]
 "thomasdarimont/keycloak-extension-playground" -> "thomasdarimont/keycloak-project-example"
 "thomasdarimont/keycloak-extension-playground" -> "dasniko/keycloak-extensions-demo"
 "thomasdarimont/keycloak-extension-playground" -> "zonaut/keycloak-extensions"
@@ -132,12 +149,16 @@ digraph G {
 "timtebeek/spring-security-samples" -> "benwilcock/spring-cloud-gateway-demo" ["e"=1]
 "timtebeek/spring-security-samples" -> "robbertvanwaveren/oauth-gateway-exploration"
 "timtebeek/spring-security-samples" -> "andifalk/authorizationserver"
+"OpenIDC/mod_auth_openidc" -> "louketo/louketo-proxy" ["e"=1]
+"OpenIDC/mod_auth_openidc" -> "thomasdarimont/awesome-keycloak" ["e"=1]
+"OpenIDC/mod_auth_openidc" -> "sventorben/keycloak-restrict-client-auth" ["e"=1]
 "thomasdarimont/keycloak-user-storage-provider-demo" -> "dasniko/keycloak-user-spi-demo"
 "thomasdarimont/keycloak-user-storage-provider-demo" -> "NovatecConsulting/keycloak-user-storage"
 "zak905/keycloak-api-key-demo" -> "alefcarlos/keycloak-api-key"
 "zak905/keycloak-api-key-demo" -> "carbonrider/keycloak-api-key-module"
 "zak905/keycloak-api-key-demo" -> "zonaut/keycloak-extensions"
 "zak905/keycloak-api-key-demo" -> "dteleguin/beercloak"
+"keumtae-kim/spring-boot-react-blog" -> "ivangfr/springboot-react-social-login" ["e"=1]
 "adorsys/keycloak-config-cli" -> "keycloak/terraform-provider-keycloak"
 "adorsys/keycloak-config-cli" -> "aerogear/keycloak-metrics-spi"
 "adorsys/keycloak-config-cli" -> "thomasdarimont/keycloak-extension-playground"
@@ -202,6 +223,8 @@ digraph G {
 "keycloak/keycloak-containers" -> "akoserwal/keycloak-integrations"
 "keycloak/keycloak-containers" -> "keycloak/keycloak-operator"
 "keycloak/keycloak-containers" -> "Nerzal/gocloak"
+"InseeFrLab/onyxia" -> "keycloakify/keycloakify" ["e"=1]
+"privacyidea/privacyidea" -> "privacyidea/keycloak-provider" ["e"=1]
 "Captain-P-Goldfish/SCIM-SDK" -> "pingidentity/scim2"
 "Captain-P-Goldfish/SCIM-SDK" -> "Captain-P-Goldfish/scim-for-keycloak"
 "Captain-P-Goldfish/SCIM-SDK" -> "wso2/charon"
@@ -287,6 +310,7 @@ digraph G {
 "NovatecConsulting/keycloak-user-storage" -> "thomasdarimont/keycloak-user-storage-provider-demo"
 "zh417233956/keycloak-services-social-dingtalk" -> "jyqq163/keycloak-services-social-weixin"
 "DBPay/keycloak-social-wechat" -> "jyqq163/keycloak-services-social-weixin"
+"coreos/go-oidc" -> "Nerzal/gocloak" ["e"=1]
 "opensingular/singular-keycloak-database-federation" -> "kyrcha/keycloak-mysql-user-federation"
 "opensingular/singular-keycloak-database-federation" -> "rsatrio/Keycloak-Federation-ExistingDB"
 "keycloakify/keycloakify" -> "lukin/keywind"
@@ -313,6 +337,11 @@ digraph G {
 "pingidentity/scim2" -> "imulab/go-scim"
 "gogatekeeper/gatekeeper" -> "louketo/louketo-proxy"
 "gogatekeeper/gatekeeper" -> "oneconcern/keycloak-gatekeeper"
+"authts/react-oidc-context" -> "keycloakify/keycloakify" ["e"=1]
+"authts/react-oidc-context" -> "react-keycloak/react-keycloak" ["e"=1]
+"authts/react-oidc-context" -> "keycloakify/keycloakify-starter" ["e"=1]
+"authts/oidc-client-ts" -> "keycloakify/keycloakify" ["e"=1]
+"zmartzone/lua-resty-openidc" -> "louketo/louketo-proxy" ["e"=1]
 "cooperlyt/keycloak-phone-provider" -> "FX-HAO/keycloak-phone-authenticator"
 "cooperlyt/keycloak-phone-provider" -> "dasniko/keycloak-2fa-sms-authenticator"
 "cooperlyt/keycloak-phone-provider" -> "dasniko/keycloak-extensions-demo"
@@ -371,6 +400,7 @@ digraph G {
 "sventorben/keycloak-restrict-client-auth" -> "keycloak/keycloak-benchmark"
 "sventorben/keycloak-restrict-client-auth" -> "daniel-frak/keycloak-user-migration"
 "sventorben/keycloak-restrict-client-auth" -> "aerogear/keycloak-metrics-spi"
+"JavatoDev-com/internet-banking-concept-microservices" -> "Rapter1990/SpringBootMicroservices" ["e"=1]
 "thomasdarimont/keycloak-project-example" -> "thomasdarimont/keycloak-extension-playground"
 "thomasdarimont/keycloak-project-example" -> "dasniko/testcontainers-keycloak"
 "thomasdarimont/keycloak-project-example" -> "keycloak/keycloak-benchmark"
@@ -434,6 +464,7 @@ digraph G {
 "p2-inc/keycloak-magic-link" -> "keycloak/keycloak-benchmark"
 "p2-inc/keycloak-magic-link" -> "embesozzi/keycloak-workshop-stepup-mfa-biometrics"
 "p2-inc/keycloak-magic-link" -> "thomasdarimont/keycloak-project-example"
+"authlete/java-oauth-server" -> "andifalk/authorizationserver" ["e"=1]
 "dasniko/keycloak-extensions-demo" -> "thomasdarimont/keycloak-extension-playground"
 "dasniko/keycloak-extensions-demo" -> "dasniko/keycloak-2fa-sms-authenticator"
 "dasniko/keycloak-extensions-demo" -> "cooperlyt/keycloak-phone-provider"
@@ -518,7 +549,10 @@ digraph G {
 "thomasdarimont/awesome-keycloak" -> "keycloak/terraform-provider-keycloak"
 "thomasdarimont/awesome-keycloak" -> "zonaut/keycloak-extensions"
 "thomasdarimont/awesome-keycloak" -> "akoserwal/keycloak-integrations"
+"panva/openid-client" -> "keycloak/keycloak-nodejs-connect" ["e"=1]
+"panva/openid-client" -> "keycloak/keycloak-nodejs-admin-client" ["e"=1]
 "Rapter1990/bookdelivery" -> "Rapter1990/simplebanking"
+"Cosium/spring-data-jpa-entity-graph" -> "thomasdarimont/embedded-spring-boot-keycloak-server" ["e"=1]
 "keycloak/keycloak-quickstarts" -> "thomasdarimont/awesome-keycloak"
 "keycloak/keycloak-quickstarts" -> "keycloak/keycloak-containers"
 "keycloak/keycloak-quickstarts" -> "thomasdarimont/keycloak-extension-playground"
@@ -535,6 +569,7 @@ digraph G {
 "keycloak/keycloak-quickstarts" -> "adorsys/keycloak-config-cli"
 "keycloak/keycloak-quickstarts" -> "keycloak/keycloak-community"
 "dteleguin/beercloak" -> "stianst/keycloak-experimental"
+"khezen/compose-postgres" -> "keycloak/keycloak-containers" ["e"=1]
 "dasniko/keycloak-reactjs-demo" -> "react-keycloak/react-keycloak"
 "dasniko/keycloak-reactjs-demo" -> "react-keycloak/react-keycloak-examples"
 "dasniko/keycloak-reactjs-demo" -> "keycloak/keycloak-documentation"
@@ -587,8 +622,14 @@ digraph G {
 "gwallet/keycloak-sms-authenticator" -> "jyqq163/keycloak-services-social-weixin"
 "imulab/go-scim" -> "elimity-com/scim"
 "imulab/go-scim" -> "pmcdowell-okta/golangOktaScimServer"
+"nokia/kong-oidc" -> "louketo/louketo-proxy" ["e"=1]
 "nickpack/keycloak-sms-authenticator-sns" -> "OfficeForProductSafetyAndStandards/keycloak-sms-authenticator-sns"
 "wso2-incubator/scim2-compliance-test-suite" -> "suvera/scim2-compliance-test-utility"
+"webauthn4j/webauthn4j" ["l"="55.881,3.832", "c"=931]
+"webauthn4j/keycloak-webauthn-authenticator" ["l"="0.802,-36.001"]
+"keycloak/keycloak-community" ["l"="0.859,-36.016"]
+"wso2/product-is" ["l"="-2.483,15.728", "c"=43]
+"wso2/charon" ["l"="1.151,-36.12"]
 "keycloak/terraform-provider-keycloak" ["l"="0.941,-36.06"]
 "adorsys/keycloak-config-cli" ["l"="0.919,-36.068"]
 "aerogear/keycloak-metrics-spi" ["l"="0.917,-36.051"]
@@ -609,12 +650,15 @@ digraph G {
 "cooperlyt/keycloak-phone-provider" ["l"="0.86,-36.124"]
 "playa-ru/keycloak-russian" ["l"="0.812,-36.185"]
 "keycloak/keycloak-containers" ["l"="0.903,-36.004"]
-"Oteemo/charts" ["l"="-1.643,11.294"]
+"Oteemo/charts" ["l"="-1.643,11.294", "c"=15]
 "keycloak/keycloak-documentation" ["l"="0.877,-36.012"]
 "louketo/louketo-proxy" ["l"="0.924,-35.99"]
+"benwilcock/spring-cloud-gateway-demo" ["l"="25.83,-30.608", "c"=176]
+"timtebeek/spring-security-samples" ["l"="0.733,-35.998"]
 "thomasdarimont/keycloak-health-checks" ["l"="0.856,-36.062"]
 "L21s/keycloak-monitoring-prometheus" ["l"="0.848,-36.074"]
 "zonaut/keycloak-extensions" ["l"="0.913,-36.105"]
+"marcospereirampj/python-keycloak" ["l"="44.099,21.275", "c"=20]
 "OfficeForProductSafetyAndStandards/keycloak-sms-authenticator-sns" ["l"="0.785,-36.218"]
 "nickpack/keycloak-sms-authenticator-sns" ["l"="0.792,-36.195"]
 "ivangfr/springboot-react-keycloak" ["l"="0.74,-36.027"]
@@ -623,78 +667,79 @@ digraph G {
 "ivangfr/springboot-keycloak-openldap" ["l"="0.672,-36.01"]
 "Rapter1990/SpringBootMicroservices" ["l"="0.656,-35.982"]
 "akoserwal/keycloak-integrations" ["l"="0.843,-36.044"]
-"timtebeek/spring-security-samples" ["l"="0.733,-35.998"]
 "ali-bouali/keycloak-integration-with-spring-boot-3" ["l"="0.704,-36.02"]
-"piomin/sample-spring-kafka-microservices" ["l"="25.857,-30.792"]
+"piomin/sample-spring-kafka-microservices" ["l"="25.857,-30.792", "c"=176]
 "SnuK87/keycloak-kafka" ["l"="0.831,-36.066"]
 "dasniko/keycloak-reactjs-demo" ["l"="0.828,-36.023"]
-"piomin/sample-spring-microservices-kubernetes" ["l"="25.862,-30.777"]
-"merikbest/twitter-spring-reactjs" ["l"="25.976,-30.771"]
+"piomin/sample-spring-microservices-kubernetes" ["l"="25.862,-30.777", "c"=176]
+"merikbest/twitter-spring-reactjs" ["l"="25.976,-30.771", "c"=176]
 "ivangfr/springboot-ldap-testcontainers" ["l"="0.638,-36.008"]
-"keycloak/keycloak-community" ["l"="0.859,-36.016"]
 "keycloak/kc-sig-fapi" ["l"="0.808,-36.029"]
-"webauthn4j/keycloak-webauthn-authenticator" ["l"="0.802,-36.001"]
 "ccouzens/keycloak-openapi" ["l"="0.953,-36.016"]
 "dahag-ag/keycloak-openapi" ["l"="1.004,-36.011"]
 "elimity-com/scim" ["l"="1.229,-36.146"]
 "imulab/go-scim" ["l"="1.199,-36.153"]
 "scim2/filter-parser" ["l"="1.259,-36.155"]
+"mauriciovigolo/keycloak-angular" ["l"="9.906,-22.15", "c"=47]
+"keycloak/keycloak-quickstarts" ["l"="0.872,-36.032"]
+"ferrerojosh/nest-keycloak-connect" ["l"="0.862,-35.95"]
+"keycloak/keycloak-nodejs-admin-client" ["l"="0.862,-35.995"]
 "privacyidea/keycloak-provider" ["l"="0.873,-36.168"]
 "p2-inc/phasetwo-admin-portal" ["l"="0.867,-36.198"]
+"aerogear/offix" ["l"="-0.491,-20.377", "c"=153]
+"aerogear/keycloak-connect-graphql" ["l"="0.826,-35.971"]
+"callicoder/spring-boot-react-oauth2-social-login-demo" ["l"="25.86,-30.672", "c"=176]
 "dasniko/keycloak-extensions-demo" ["l"="0.873,-36.085"]
 "dasniko/keycloak-2fa-sms-authenticator" ["l"="0.859,-36.103"]
 "p2-inc/keycloak-magic-link" ["l"="0.885,-36.106"]
-"keycloak/keycloak-quickstarts" ["l"="0.872,-36.032"]
 "Nerzal/gocloak" ["l"="0.96,-35.983"]
-"coreos/go-oidc" ["l"="3.873,-9.029"]
+"coreos/go-oidc" ["l"="3.873,-9.029", "c"=0]
 "Nerzal/gocloak-echo" ["l"="1.005,-35.961"]
 "Clarilab/gocloaksession" ["l"="0.987,-35.958"]
-"zitadel/oidc" ["l"="3.951,-9.185"]
-"testcontainers/testcontainers-go" ["l"="4.133,-8.948"]
+"zitadel/oidc" ["l"="3.951,-9.185", "c"=0]
+"testcontainers/testcontainers-go" ["l"="4.133,-8.948", "c"=0]
 "gogatekeeper/gatekeeper" ["l"="0.96,-35.946"]
-"crewjam/saml" ["l"="3.722,-9.067"]
-"swaggo/swag" ["l"="3.898,-9.054"]
-"markbates/goth" ["l"="3.966,-9.007"]
-"pressly/goose" ["l"="4.09,-9.073"]
-"golang-jwt/jwt" ["l"="3.847,-9.031"]
+"crewjam/saml" ["l"="3.722,-9.067", "c"=0]
+"swaggo/swag" ["l"="3.898,-9.054", "c"=0]
+"markbates/goth" ["l"="3.966,-9.007", "c"=0]
+"pressly/goose" ["l"="4.09,-9.073", "c"=0]
+"golang-jwt/jwt" ["l"="3.847,-9.031", "c"=0]
 "stianst/keycloak-experimental" ["l"="0.841,-36.094"]
 "dteleguin/beercloak" ["l"="0.886,-36.121"]
-"keycloak/keycloak-nodejs-admin-client" ["l"="0.862,-35.995"]
 "keycloak/keycloak-nodejs-connect" ["l"="0.873,-35.979"]
 "v-ladynev/keycloak-nodejs-example" ["l"="0.843,-35.961"]
-"aerogear/keycloak-connect-graphql" ["l"="0.826,-35.971"]
 "react-keycloak/react-keycloak" ["l"="0.836,-36.001"]
-"ferrerojosh/nest-keycloak-connect" ["l"="0.862,-35.95"]
-"panva/openid-client" ["l"="0.959,-35.572"]
+"panva/openid-client" ["l"="0.959,-35.572", "c"=1882]
 "react-keycloak/react-keycloak-examples" ["l"="0.811,-35.983"]
 "keycloak/keycloak-ui" ["l"="0.824,-35.937"]
 "ch4mpy/spring-addons" ["l"="0.809,-36.051"]
-"spring-projects/spring-modulith" ["l"="-2.184,11.973"]
-"wimdeblauwe/error-handling-spring-boot-starter" ["l"="-2.108,11.901"]
-"moduliths/moduliths" ["l"="24.282,-31.694"]
-"wimdeblauwe/htmx-spring-boot" ["l"="-2.117,12.052"]
+"spring-projects/spring-modulith" ["l"="-2.184,11.973", "c"=15]
+"wimdeblauwe/error-handling-spring-boot-starter" ["l"="-2.108,11.901", "c"=15]
+"moduliths/moduliths" ["l"="24.282,-31.694", "c"=304]
+"wimdeblauwe/htmx-spring-boot" ["l"="-2.117,12.052", "c"=15]
 "thomasdarimont/embedded-spring-boot-keycloak-server" ["l"="0.822,-36.077"]
-"xmolecules/jmolecules" ["l"="-2.22,11.96"]
-"jonatan-ivanov/teahouse" ["l"="-1.944,11.555"]
-"instancio/instancio" ["l"="-2.245,11.977"]
-"refactorfirst/RefactorFirst" ["l"="-2.23,9.548"]
-"zalando/logbook" ["l"="-2.341,11.989"]
-"hardikSinghBehl/jwt-auth-flow-spring-security" ["l"="-51.48,12.096"]
-"benwilcock/spring-cloud-gateway-demo" ["l"="25.83,-30.608"]
+"xmolecules/jmolecules" ["l"="-2.22,11.96", "c"=15]
+"jonatan-ivanov/teahouse" ["l"="-1.944,11.555", "c"=15]
+"instancio/instancio" ["l"="-2.245,11.977", "c"=15]
+"refactorfirst/RefactorFirst" ["l"="-2.23,9.548", "c"=878]
+"zalando/logbook" ["l"="-2.341,11.989", "c"=15]
+"hardikSinghBehl/jwt-auth-flow-spring-security" ["l"="-51.48,12.096", "c"=266]
 "robbertvanwaveren/oauth-gateway-exploration" ["l"="0.706,-35.983"]
 "andifalk/authorizationserver" ["l"="0.703,-35.961"]
+"OpenIDC/mod_auth_openidc" ["l"="-18.944,-25.201", "c"=10]
 "thomasdarimont/keycloak-user-storage-provider-demo" ["l"="0.709,-36.146"]
 "dasniko/keycloak-user-spi-demo" ["l"="0.758,-36.128"]
 "NovatecConsulting/keycloak-user-storage" ["l"="0.67,-36.161"]
 "zak905/keycloak-api-key-demo" ["l"="0.941,-36.145"]
 "alefcarlos/keycloak-api-key" ["l"="0.977,-36.166"]
 "carbonrider/keycloak-api-key-module" ["l"="0.961,-36.169"]
+"keumtae-kim/spring-boot-react-blog" ["l"="25.88,-30.773", "c"=176]
 "daniel-frak/keycloak-user-migration" ["l"="0.902,-36.1"]
 "stianst/keycloak-containers-demo" ["l"="0.763,-36.082"]
 "thomasdarimont/keycloak-docker-demo" ["l"="0.775,-36.055"]
 "react-keycloak/react-native-keycloak" ["l"="0.774,-35.966"]
-"authts/react-oidc-context" ["l"="0.876,-35.579"]
-"aerogear/graphql-testx" ["l"="-0.6,-20.202"]
+"authts/react-oidc-context" ["l"="0.876,-35.579", "c"=1882]
+"aerogear/graphql-testx" ["l"="-0.6,-20.202", "c"=153]
 "apache/directory-scimple" ["l"="1.125,-36.161"]
 "pingidentity/scim2" ["l"="1.137,-36.144"]
 "jyqq163/keycloak-services-social-weixin" ["l"="0.757,-36.189"]
@@ -706,23 +751,24 @@ digraph G {
 "gwallet/keycloak-sms-authenticator" ["l"="0.814,-36.141"]
 "integr8ly/keycloak-operator" ["l"="0.979,-36.005"]
 "jgroups-extras/jgroups-kubernetes" ["l"="0.995,-35.989"]
-"keycloak/keycloak" ["l"="8.344,-8.301"]
+"keycloak/keycloak" ["l"="8.344,-8.301", "c"=14]
+"InseeFrLab/onyxia" ["l"="1.772,-31.043", "c"=735]
+"privacyidea/privacyidea" ["l"="9.659,-8.727", "c"=14]
 "Captain-P-Goldfish/SCIM-SDK" ["l"="1.082,-36.121"]
 "Captain-P-Goldfish/scim-for-keycloak" ["l"="0.987,-36.099"]
-"wso2/charon" ["l"="1.151,-36.12"]
 "ivangfr/springboot-react-basic-auth" ["l"="0.655,-36.051"]
 "Smartling/keycloak-user-migration-provider" ["l"="0.964,-36.128"]
-"anonrig/nestjs-keycloak-admin" ["l"="50.732,-0.401"]
+"anonrig/nestjs-keycloak-admin" ["l"="50.732,-0.401", "c"=421]
 "clayrisser/nestjs-keycloak" ["l"="0.853,-35.918"]
 "paztek/nestjs-authentication-example" ["l"="0.869,-35.914"]
-"gbbirkisson/kong-plugin-jwt-keycloak" ["l"="-20.726,-21.205"]
+"gbbirkisson/kong-plugin-jwt-keycloak" ["l"="-20.726,-21.205", "c"=245]
 "keycloak/keycloak-nodejs-auth-utils" ["l"="0.887,-35.944"]
 "keycloak/keycloak-js-bower" ["l"="0.887,-35.928"]
 "suchorski/springboot-keycloak-server" ["l"="0.785,-36.095"]
 "PacktPublishing/Keycloak-Identity-and-Access-Management-for-Modern-Applications" ["l"="0.994,-36.047"]
 "PacktPublishing/Keycloak---Identity-and-Access-Management-for-Modern-Applications-2nd-Edition" ["l"="1.033,-36.038"]
 "Keycloak-IAM-4-Modern-Apps-JP/Keycloak-Identity-and-Access-Management-for-Modern-Applications" ["l"="1.033,-36.057"]
-"TNG/keycloak-mock" ["l"="-2.148,9.243"]
+"TNG/keycloak-mock" ["l"="-2.148,9.243", "c"=878]
 "cagline/react-router-component-keycloak-example" ["l"="0.787,-35.951"]
 "Jeff-Tian/keycloak-services-social-weixin" ["l"="0.72,-36.2"]
 "BenjaminFavre/keycloak-apple-social-identity-provider" ["l"="0.899,-36.217"]
@@ -740,6 +786,8 @@ digraph G {
 "pingidentity/scim" ["l"="1.144,-36.17"]
 "wso2-incubator/scim2-compliance-test-suite" ["l"="1.164,-36.166"]
 "oneconcern/keycloak-gatekeeper" ["l"="0.981,-35.913"]
+"authts/oidc-client-ts" ["l"="0.914,-35.558", "c"=1882]
+"zmartzone/lua-resty-openidc" ["l"="-20.643,-21.427", "c"=245]
 "netzbegruenung/keycloak-mfa-plugins" ["l"="0.877,-36.136"]
 "mesutpiskin/keycloak-2fa-email-authenticator" ["l"="0.856,-36.141"]
 "lukaszbudnik/keycloak-ip-authenticator" ["l"="0.873,-36.152"]
@@ -747,20 +795,21 @@ digraph G {
 "ALMiG-Kompressoren-GmbH/tailcloakify" ["l"="0.972,-36.113"]
 "anarsultanov/keycloak-multi-tenancy" ["l"="0.931,-36.117"]
 "ivangfr/keycloak-clustered" ["l"="0.853,-36.161"]
+"JavatoDev-com/internet-banking-concept-microservices" ["l"="25.928,-30.757", "c"=176]
 "mitodl/keycloak-scim" ["l"="1.029,-36.105"]
 "ThoreKr/keycloak-last-login-event-listener" ["l"="0.93,-36.155"]
 "embesozzi/keycloak-webauthn-conditional-mediation" ["l"="0.913,-36.15"]
 "RedFroggy/keycloak-verify-email-by-code" ["l"="0.917,-36.164"]
-"zmartzone/lua-resty-openidc" ["l"="-20.643,-21.427"]
-"ibuetler/docker-keycloak-traefik-workshop" ["l"="11.721,-8.768"]
-"nokia/kong-oidc" ["l"="-20.688,-21.236"]
-"int128/kubelogin" ["l"="7.677,-9.066"]
-"gambol99/go-marathon" ["l"="6.365,-13.281"]
-"mintel/dex-k8s-authenticator" ["l"="9.71,-12.746"]
-"ory/oathkeeper" ["l"="3.818,-9.468"]
+"ibuetler/docker-keycloak-traefik-workshop" ["l"="11.721,-8.768", "c"=18]
+"nokia/kong-oidc" ["l"="-20.688,-21.236", "c"=245]
+"int128/kubelogin" ["l"="7.677,-9.066", "c"=14]
+"gambol99/go-marathon" ["l"="6.365,-13.281", "c"=837]
+"mintel/dex-k8s-authenticator" ["l"="9.71,-12.746", "c"=1195]
+"ory/oathkeeper" ["l"="3.818,-9.468", "c"=0]
 "p2-inc/phasetwo-containers" ["l"="0.923,-36.138"]
 "micedre/keycloak-mail-whitelisting" ["l"="0.821,-36.102"]
 "embesozzi/keycloak-workshop-stepup-mfa-biometrics" ["l"="0.896,-36.152"]
+"authlete/java-oauth-server" ["l"="-2.503,11.537", "c"=15]
 "scimmyjs/scimmy" ["l"="1.242,-36.095"]
 "scimmyjs/scimmy-routers" ["l"="1.262,-36.086"]
 "Rapter1990/springbootmicroservicedailybuffer" ["l"="0.629,-35.953"]
@@ -770,8 +819,10 @@ digraph G {
 "p2-inc/keycloak-themes" ["l"="0.943,-36.176"]
 "Rapter1990/JavaStreamAPIExamples" ["l"="0.611,-35.937"]
 "Rapter1990/simplebanking" ["l"="0.588,-35.969"]
-"Baeldung/spring-security-oauth" ["l"="25.825,-30.586"]
-"authts/sample-keycloak-react-oidc-context" ["l"="0.843,-35.602"]
+"Cosium/spring-data-jpa-entity-graph" ["l"="-2.168,11.83", "c"=15]
+"Baeldung/spring-security-oauth" ["l"="25.825,-30.586", "c"=176]
+"khezen/compose-postgres" ["l"="5.896,-11.846", "c"=270]
+"authts/sample-keycloak-react-oidc-context" ["l"="0.843,-35.602", "c"=1882]
 "ddezoysa/keycloak-nodejs-microservice" ["l"="0.784,-36.004"]
 "kmikulski/blog-keycloak" ["l"="0.777,-36.018"]
 "jelhub/scimgateway" ["l"="1.215,-36.116"]

@@ -41,6 +41,7 @@ digraph G {
 "voxpupuli/beaker" -> "nwops/puppet-retrospec"
 "voxpupuli/puppet-php" -> "voxpupuli/puppet-unattended_upgrades"
 "voxpupuli/puppet-php" -> "jippi/puppet-php"
+"jordansissel/pleaserun" -> "ripienaar/puppet-reportprint" ["e"=1]
 "garethr/puppet-module-skeleton" -> "rnelson0/puppet-generate-puppetfile"
 "garethr/puppet-module-skeleton" -> "garethr/garethr-docker"
 "garethr/puppet-module-skeleton" -> "voxpupuli/beaker"
@@ -77,6 +78,8 @@ digraph G {
 "jordansissel/puppet-examples" -> "railsmachine/rump"
 "puppetlabs/puppetlabs-ntp" -> "puppetlabs/puppetlabs-inifile"
 "puppetlabs/puppetlabs-ntp" -> "puppetlabs/puppetlabs-concat"
+"dev-sec/puppet-os-hardening" -> "ripienaar/puppet-reportprint" ["e"=1]
+"dev-sec/puppet-os-hardening" -> "example42/psick" ["e"=1]
 "puppetlabs/puppetserver" -> "puppetlabs/puppetdb"
 "puppetlabs/puppetserver" -> "puppetlabs/puppet-agent"
 "puppetlabs/puppetserver" -> "puppetlabs/facter"
@@ -185,6 +188,7 @@ digraph G {
 "example42/puppet-architectures" -> "example42/puppetguide-book"
 "puppetlabs/puppet_litmus" -> "puppetlabs/pdk-templates"
 "puppetlabs/puppet_litmus" -> "voxpupuli/onceover"
+"theforeman/foreman" -> "puppetlabs/r10k" ["e"=1]
 "puppetlabs/puppetdb" -> "puppetlabs/puppetserver"
 "dalen/puppetexplorer" -> "voxpupuli/puppetboard"
 "dalen/puppetexplorer" -> "gillarkod/panopuppet"
@@ -195,6 +199,12 @@ digraph G {
 "dalen/puppetexplorer" -> "puppetlabs/vmpooler"
 "dalen/puppetexplorer" -> "puppetlabs/r10k"
 "dalen/puppetexplorer" -> "nwops/puppet-retrospec"
+"sous-chefs/elasticsearch" -> "voxpupuli/puppet-elasticsearch" ["e"=1]
+"rodjek/puppet-lint" -> "rodjek/rspec-puppet" ["e"=1]
+"rodjek/puppet-lint" -> "puppetlabs/puppetlabs-stdlib" ["e"=1]
+"rodjek/puppet-lint" -> "rodjek/vim-puppet" ["e"=1]
+"rodjek/puppet-lint" -> "example42/psick" ["e"=1]
+"rodjek/puppet-lint" -> "puppetlabs/puppetlabs-firewall" ["e"=1]
 "rodjek/rspec-puppet" -> "voxpupuli/beaker"
 "rodjek/rspec-puppet" -> "cloudsmith/geppetto"
 "rodjek/rspec-puppet" -> "puppetlabs/puppetlabs_spec_helper"
@@ -221,6 +231,7 @@ digraph G {
 "voxpupuli/puppet-selinux" -> "voxpupuli/puppet-yum"
 "jerakia/jerakia" -> "voxpupuli/rspec-puppet-facts"
 "puppetlabs/puppet-strings" -> "voxpupuli/puppet-rsyslog"
+"stack72/ops-books" -> "nwops/puppet-retrospec" ["e"=1]
 "oscar-stack/oscar" -> "oscar-stack/vagrant-pe_build"
 "rilindo/Puppet-Professional-Certification-Study-Guide" -> "glarizza/pe_curl_requests"
 "rilindo/Puppet-Professional-Certification-Study-Guide" -> "nwops/puppet-retrospec"
@@ -253,6 +264,7 @@ digraph G {
 "binford2k/showoff" -> "lyraproj/lyra"
 "binford2k/showoff" -> "thorstenb/odpdown"
 "binford2k/showoff" -> "puppetlabs/pdk"
+"lg/murder" -> "sodabrew/puppet-dashboard" ["e"=1]
 "rnelson0/puppet-generate-puppetfile" -> "nwops/puppet-retrospec"
 "rnelson0/puppet-generate-puppetfile" -> "voxpupuli/puppet-ghostbuster"
 "rnelson0/puppet-generate-puppetfile" -> "puppetinabox/controlrepo"
@@ -310,6 +322,7 @@ digraph G {
 "voxpupuli/puppet-python" -> "puppetlabs/puppetlabs-vcsrepo"
 "voxpupuli/puppet-python" -> "puppetlabs/puppetlabs-inifile"
 "voxpupuli/puppet-python" -> "voxpupuli/puppet-r10k"
+"NARKOZ/gitlab" -> "puppetlabs/r10k" ["e"=1]
 "nwops/puppet-debugger" -> "nwops/puppet-retrospec"
 "nwops/puppet-debugger" -> "voxpupuli/puppet-ghostbuster"
 "nwops/puppet-debugger" -> "mschuchard/puppet-check"
@@ -352,6 +365,7 @@ digraph G {
 "voxpupuli/puppet-elasticsearch" -> "pcfens/puppet-filebeat"
 "voxpupuli/puppet-elasticsearch" -> "elastic/puppet-logstashforwarder"
 "voxpupuli/puppet-elasticsearch" -> "puppetlabs/puppetlabs-stdlib"
+"hashicorp/puppet-bootstrap" -> "example42/psick" ["e"=1]
 "petems/cucumber-puppet" -> "puppetlabs/puppet-module-tool"
 "petems/cucumber-puppet" -> "petems/cucumber-puppet.example"
 "choria-io/mcollective-choria" -> "ripienaar/puppet-classifier"
@@ -557,6 +571,8 @@ digraph G {
 "voxpupuli/puppet-php" ["l"="1.259,-31.524"]
 "voxpupuli/puppet-unattended_upgrades" ["l"="1.224,-31.516"]
 "jippi/puppet-php" ["l"="1.228,-31.533"]
+"jordansissel/pleaserun" ["l"="8.309,-12.417", "c"=600]
+"ripienaar/puppet-reportprint" ["l"="1.537,-31.54"]
 "garethr/garethr-docker" ["l"="1.368,-31.474"]
 "drwahl/puppet-git-hooks" ["l"="1.472,-31.459"]
 "puppetlabs-toy-chest/puppet-in-docker-examples" ["l"="1.468,-31.446"]
@@ -566,7 +582,7 @@ digraph G {
 "mattiasgeniar/puppet-pre-commit-hook" ["l"="1.446,-31.412"]
 "rodjek/vim-puppet" ["l"="1.404,-31.52"]
 "voxpupuli/vim-puppet" ["l"="1.358,-31.505"]
-"rodjek/puppet-lint" ["l"="-0.02,-31.791"]
+"rodjek/puppet-lint" ["l"="-0.02,-31.791", "c"=295]
 "puppetlabs/puppet-syntax-vim" ["l"="1.399,-31.551"]
 "puppetlabs/puppetlabs-apache" ["l"="1.347,-31.546"]
 "voxpupuli/puppet-nginx" ["l"="1.356,-31.524"]
@@ -576,6 +592,7 @@ digraph G {
 "railsmachine/rump" ["l"="1.493,-31.581"]
 "puppetlabs/puppetlabs-ntp" ["l"="1.323,-31.563"]
 "puppetlabs/puppetlabs-inifile" ["l"="1.319,-31.552"]
+"dev-sec/puppet-os-hardening" ["l"="8.429,-12.755", "c"=1228]
 "puppetlabs/puppetserver" ["l"="1.468,-31.568"]
 "puppetlabs/puppetdb" ["l"="1.476,-31.601"]
 "puppetlabs/puppet-agent" ["l"="1.456,-31.596"]
@@ -593,11 +610,10 @@ digraph G {
 "mschuchard/puppet-check" ["l"="1.511,-31.445"]
 "voxpupuli/puppet-r10k" ["l"="1.373,-31.51"]
 "voxpupuli/librarian-puppet" ["l"="1.365,-31.433"]
-"voxpupuli/puppet-consul" ["l"="6.951,-12.961"]
+"voxpupuli/puppet-consul" ["l"="6.951,-12.961", "c"=666]
 "voxpupuli/puppet-archive" ["l"="1.38,-31.538"]
 "dalen/puppet-puppetdbquery" ["l"="1.432,-31.431"]
 "voxpupuli/hiera-eyaml-gpg" ["l"="1.385,-31.44"]
-"ripienaar/puppet-reportprint" ["l"="1.537,-31.54"]
 "evgeni/check_puppetdb_nodes" ["l"="1.572,-31.575"]
 "saz/puppet-ssh" ["l"="1.285,-31.574"]
 "saz/puppet-limits" ["l"="1.256,-31.576"]
@@ -626,7 +642,10 @@ digraph G {
 "example42/puppet-architectures" ["l"="1.445,-31.372"]
 "example42/puppetguide-book" ["l"="1.443,-31.354"]
 "puppetlabs/puppet_litmus" ["l"="1.55,-31.473"]
+"theforeman/foreman" ["l"="14.92,-11.374", "c"=855]
 "puppetlabs/vmpooler" ["l"="1.385,-31.423"]
+"sous-chefs/elasticsearch" ["l"="9.192,-12.834", "c"=1111]
+"voxpupuli/puppet-elasticsearch" ["l"="1.312,-31.5"]
 "rodjek/puppet-profiler" ["l"="1.36,-31.491"]
 "pzim/reaktor" ["l"="1.429,-31.52"]
 "terrimonster/puppet-control" ["l"="1.394,-31.473"]
@@ -638,6 +657,7 @@ digraph G {
 "puppetlabs/puppet-classify" ["l"="1.528,-31.375"]
 "jerakia/jerakia" ["l"="1.548,-31.562"]
 "voxpupuli/puppet-rsyslog" ["l"="1.459,-31.4"]
+"stack72/ops-books" ["l"="10.229,-6.091", "c"=162]
 "oscar-stack/vagrant-pe_build" ["l"="1.398,-31.376"]
 "glarizza/pe_curl_requests" ["l"="1.499,-31.446"]
 "Puppet-RampUpProgram/control-repo" ["l"="1.485,-31.435"]
@@ -651,21 +671,22 @@ digraph G {
 "puppetlabs/puppetlabs-acl" ["l"="1.256,-31.611"]
 "binford2k/showoff" ["l"="1.558,-31.424"]
 "thorstenb/odpdown" ["l"="1.594,-31.39"]
+"lg/murder" ["l"="2.834,-35.706", "c"=171]
 "puppetlabs-toy-chest/puppetlabs-git" ["l"="1.306,-31.545"]
 "voxpupuli/puppet-healthcheck" ["l"="1.428,-31.393"]
 "puppetlabs-toy-chest/puppetlabs-ruby" ["l"="1.29,-31.54"]
 "puppetlabs/puppetlabs-xinetd" ["l"="1.261,-31.546"]
 "voxpupuli/puppet-python" ["l"="1.307,-31.527"]
+"NARKOZ/gitlab" ["l"="7.17,-8.656", "c"=14]
 "puppetlabs/puppetlabs-haproxy" ["l"="1.33,-31.518"]
-"kumina/puppet-generic" ["l"="8.398,-12.608"]
+"kumina/puppet-generic" ["l"="8.398,-12.608", "c"=600]
 "voxpupuli/puppet-hiera" ["l"="1.356,-31.631"]
 "example42/puppi" ["l"="1.476,-31.539"]
 "voxpupuli/puppet-logstash" ["l"="1.278,-31.499"]
 "voxpupuli/puppet-kibana" ["l"="1.279,-31.485"]
-"voxpupuli/puppet-elasticsearch" ["l"="1.312,-31.5"]
-"sous-chefs/elasticsearch" ["l"="9.192,-12.834"]
 "pcfens/puppet-filebeat" ["l"="1.258,-31.481"]
 "elastic/puppet-logstashforwarder" ["l"="1.292,-31.48"]
+"hashicorp/puppet-bootstrap" ["l"="11.575,-34.854", "c"=27]
 "petems/cucumber-puppet" ["l"="1.438,-31.601"]
 "petems/cucumber-puppet.example" ["l"="1.443,-31.63"]
 "ripienaar/puppet-classifier" ["l"="1.476,-31.382"]
@@ -677,7 +698,6 @@ digraph G {
 "puppetlabs/docs-archive" ["l"="1.548,-31.527"]
 "puppetlabs/learn-to-be-a-puppet-engineer" ["l"="1.58,-31.482"]
 "puppetlabs/puppet-docs" ["l"="1.519,-31.555"]
-"dev-sec/puppet-os-hardening" ["l"="8.429,-12.755"]
 "puppetlabs/puppet-vscode" ["l"="1.595,-31.532"]
 "puppetlabs/vmfloaty" ["l"="1.575,-31.522"]
 "puppetlabs/puppetlabs-accounts" ["l"="1.34,-31.498"]

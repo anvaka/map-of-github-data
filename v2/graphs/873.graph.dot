@@ -1,7 +1,13 @@
 digraph G {
+"aws/amazon-sagemaker-examples" -> "aws/aws-sdk-pandas" ["e"=1]
+"awslabs/deequ" -> "aws/aws-sdk-pandas" ["e"=1]
+"aws-samples/aws-serverless-security-workshop" -> "aws-samples/aws-cloudformation-advanced-reinvent-2018" ["e"=1]
 "fluent/fluent-plugin-kafka" -> "fluent/fluent-plugin-webhdfs"
 "fluent/fluent-plugin-kafka" -> "treasure-data/kafka-fluentd-consumer"
 "fluent/fluent-plugin-kafka" -> "uken/fluent-plugin-elasticsearch"
+"pynamodb/PynamoDB" -> "aws/aws-sdk-pandas" ["e"=1]
+"aws/sagemaker-python-sdk" -> "aws/aws-sdk-pandas" ["e"=1]
+"awslabs/fargatecli" -> "dbcli/athenacli" ["e"=1]
 "aws/aws-sdk-pandas" -> "aws-samples/aws-glue-samples"
 "aws/aws-sdk-pandas" -> "aws-powertools/powertools-lambda-python" ["e"=1]
 "aws/aws-sdk-pandas" -> "awslabs/deequ" ["e"=1]
@@ -32,7 +38,9 @@ digraph G {
 "aws-samples/emr-bootstrap-actions" -> "awslabs/amazon-redshift-utils"
 "aws-samples/emr-bootstrap-actions" -> "awslabs/amazon-kinesis-producer"
 "aws-samples/emr-bootstrap-actions" -> "aws-samples/aws-glue-samples"
+"baztian/jaydebeapi" -> "laughingman7743/PyAthenaJDBC" ["e"=1]
 "snowplow/spark-example-project" -> "snowplow-archive/spark-streaming-example-project"
+"aws-samples/aws-security-workshops" -> "aws-samples/aws-cloudformation-advanced-reinvent-2018" ["e"=1]
 "awslabs/aws-fluent-plugin-kinesis" -> "awslabs/amazon-kinesis-agent"
 "awslabs/aws-fluent-plugin-kinesis" -> "samcday/logstash-output-kinesis"
 "awslabs/aws-fluent-plugin-kinesis" -> "awslabs/kinesis-aggregation"
@@ -42,6 +50,7 @@ digraph G {
 "awslabs/aws-fluent-plugin-kinesis" -> "awslabs/amazon-kinesis-scaling-utils"
 "awslabs/aws-fluent-plugin-kinesis" -> "logstash-plugins/logstash-input-kinesis"
 "awslabs/aws-fluent-plugin-kinesis" -> "amazon-archives/kinesis-log4j-appender"
+"ryanfitz/vogels" -> "channl/dynamodb-lambda-autoscale" ["e"=1]
 "mhart/kinesalite" -> "architect/dynalite" ["e"=1]
 "mhart/kinesalite" -> "mhart/kinesis"
 "mhart/kinesalite" -> "vsouza/docker-Kinesis-local" ["e"=1]
@@ -57,6 +66,8 @@ digraph G {
 "mhart/kinesalite" -> "awslabs/amazon-kinesis-producer"
 "mhart/kinesalite" -> "awslabs/dynamodb-cross-region-library"
 "mhart/kinesalite" -> "awslabs/amazon-kinesis-client"
+"keithrozario/Klayers" -> "aws/aws-sdk-pandas" ["e"=1]
+"awslabs/amazon-kinesis-video-streams-producer-sdk-cpp" -> "awslabs/amazon-kinesis-producer" ["e"=1]
 "amazon-archives/amazon-kinesis-connectors" -> "awslabs/amazon-kinesis-producer"
 "amazon-archives/amazon-kinesis-connectors" -> "awslabs/amazon-kinesis-client"
 "amazon-archives/amazon-kinesis-connectors" -> "amazon-archives/amazon-kinesis-data-visualization-sample"
@@ -67,6 +78,10 @@ digraph G {
 "amazon-archives/amazon-kinesis-connectors" -> "awslabs/emr-dynamodb-connector"
 "amazon-archives/amazon-kinesis-connectors" -> "awslabs/amazon-kinesis-client-python"
 "amazon-archives/amazon-kinesis-connectors" -> "databricks/spark-redshift"
+"bchew/dynamodump" -> "sebdah/dynamic-dynamodb" ["e"=1]
+"bchew/dynamodump" -> "awslabs/dynamodb-continuous-backup" ["e"=1]
+"bchew/dynamodump" -> "amazon-archives/dynamodb-import-export-tool" ["e"=1]
+"aws-samples/serverless-sagemaker-orchestration" -> "aws-samples/aws-ml-data-lake-workshop" ["e"=1]
 "awsdocs/aws-glue-developer-guide" -> "awslabs/aws-glue-libs"
 "awsdocs/aws-glue-developer-guide" -> "aws-samples/aws-glue-samples"
 "awsdocs/aws-glue-developer-guide" -> "awslabs/aws-glue-data-catalog-client-for-apache-hive-metastore"
@@ -86,6 +101,8 @@ digraph G {
 "awslabs/amazon-kinesis-client" -> "awslabs/amazon-kinesis-client-nodejs"
 "awslabs/amazon-kinesis-client" -> "awslabs/emr-dynamodb-connector"
 "awslabs/amazon-kinesis-client" -> "aws/aws-sdk-java" ["e"=1]
+"architect/dynalite" -> "mhart/kinesalite" ["e"=1]
+"architect/dynalite" -> "sebdah/dynamic-dynamodb" ["e"=1]
 "dbcli/athenacli" -> "tokern/lakecli"
 "dbcli/athenacli" -> "guardian/athena-cli"
 "aws-samples/aws-etl-orchestrator" -> "aws-samples/aws-glue-samples"
@@ -97,6 +114,9 @@ digraph G {
 "aws-samples/aws-etl-orchestrator" -> "aws-samples/serverless-data-analytics"
 "aws-samples/aws-etl-orchestrator" -> "awsdocs/aws-glue-developer-guide"
 "aws-samples/aws-etl-orchestrator" -> "aws-samples/amazon-serverless-datalake-workshop"
+"amazon-archives/aws-developer-workshop" -> "aws-samples/amazon-serverless-datalake-workshop" ["e"=1]
+"aws-samples/aws-dynamodb-examples" -> "awslabs/dynamodb-transactions" ["e"=1]
+"aws-samples/aws-dynamodb-examples" -> "awslabs/dynamodb-cross-region-library" ["e"=1]
 "aws-samples/serverless-data-analytics" -> "aws-samples/aws-ml-data-lake-workshop"
 "aws-samples/serverless-data-analytics" -> "aws-samples/amazon-serverless-datalake-workshop"
 "awsdocs/amazon-redshift-developer-guide" -> "awsdocs/amazon-redshift-management-guide"
@@ -114,6 +134,7 @@ digraph G {
 "amazon-archives/amazon-kinesis-data-visualization-sample" -> "amazon-archives/amazon-kinesis-connectors"
 "amazon-archives/amazon-kinesis-data-visualization-sample" -> "amazon-archives/kinesis-storm-spout"
 "aws-samples/realtime-web-analytics-workshop" -> "aws-samples/building-a-realtime-data-platform-workshop"
+"aws/sagemaker-spark" -> "awslabs/emr-dynamodb-connector" ["e"=1]
 "awslabs/dynamodb-transactions" -> "awslabs/dynamodb-streams-kinesis-adapter"
 "awslabs/dynamodb-transactions" -> "awslabs/dynamodb-cross-region-library"
 "awslabs/dynamodb-transactions" -> "aws/aws-dynamodb-encryption-java" ["e"=1]
@@ -135,8 +156,12 @@ digraph G {
 "aws-samples/aws-dbs-refarch-edw" -> "aws-samples/aws-dbs-refarch-rdbms"
 "ticketea/failfast" -> "qdqmedia/wiggum"
 "ticketea/failfast" -> "ticketea/pynesis"
+"databricks/spark-csv" -> "databricks/spark-redshift" ["e"=1]
 "fluent/fluent-plugin-s3" -> "awslabs/aws-fluent-plugin-kinesis"
 "fluent/fluent-plugin-s3" -> "tagomoris/fluent-plugin-forest"
+"fluent/fluent-logger-python" -> "fluent/fluent-plugin-s3" ["e"=1]
+"aws-samples/aws-codedeploy-samples" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
+"piskvorky/smart_open" -> "aws/aws-sdk-pandas" ["e"=1]
 "awslabs/amazon-redshift-utils" -> "awslabs/aws-lambda-redshift-loader"
 "awslabs/amazon-redshift-utils" -> "awslabs/amazon-redshift-monitoring"
 "awslabs/amazon-redshift-utils" -> "aws-samples/amazon-redshift-udfs"
@@ -152,6 +177,7 @@ digraph G {
 "awslabs/amazon-redshift-utils" -> "awslabs/aws-shell" ["e"=1]
 "awslabs/amazon-redshift-utils" -> "amundsen-io/amundsen" ["e"=1]
 "awslabs/amazon-redshift-utils" -> "snowplow/snowplow" ["e"=1]
+"data-science-on-aws/data-science-on-aws" -> "aws/aws-sdk-pandas" ["e"=1]
 "awslabs/amazon-kinesis-scaling-utils" -> "awslabs/amazon-kinesis-aggregators"
 "awslabs/amazon-kinesis-scaling-utils" -> "amazon-archives/amazon-kinesis-connectors"
 "awslabs/amazon-kinesis-scaling-utils" -> "awslabs/kinesis-aggregation"
@@ -165,6 +191,8 @@ digraph G {
 "awslabs/amazon-kinesis-scaling-utils" -> "mhart/kinesalite"
 "awslabs/amazon-kinesis-scaling-utils" -> "amazon-archives/amazon-kinesis-data-visualization-sample"
 "awslabs/amazon-kinesis-scaling-utils" -> "awslabs/amazon-kinesis-data-generator"
+"databricks/spark-avro" -> "databricks/spark-redshift" ["e"=1]
+"databricks/spark-avro" -> "aws-samples/emr-bootstrap-actions" ["e"=1]
 "aws-samples/aws-big-data-blog" -> "aws-samples/emr-bootstrap-actions"
 "aws-samples/aws-big-data-blog" -> "awslabs/aws-lambda-redshift-loader"
 "aws-samples/aws-big-data-blog" -> "awslabs/amazon-redshift-utils"
@@ -180,6 +208,9 @@ digraph G {
 "aws-samples/aws-big-data-blog" -> "awslabs/amazon-kinesis-producer"
 "aws-samples/aws-big-data-blog" -> "amazon-archives/amazon-kinesis-connectors"
 "aws-samples/aws-big-data-blog" -> "awslabs/aws-glue-libs"
+"garnaat/kappa" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
+"aws-powertools/powertools-lambda-python" -> "aws/aws-sdk-pandas" ["e"=1]
+"ashiina/lambda-local" -> "aws-samples/amazon-elasticsearch-lambda-samples" ["e"=1]
 "awslabs/aws-athena-query-federation" -> "aws-samples/aws-glue-samples"
 "awslabs/aws-athena-query-federation" -> "awslabs/amazon-neptune-tools" ["e"=1]
 "awslabs/aws-athena-query-federation" -> "awslabs/aws-glue-libs"
@@ -239,6 +270,8 @@ digraph G {
 "repeatedly/fluent-plugin-multi-format-parser" -> "fluent/fluent-plugin-rewrite-tag-filter"
 "repeatedly/fluent-plugin-multi-format-parser" -> "fluent/fluent-plugin-grok-parser"
 "repeatedly/fluent-plugin-multi-format-parser" -> "fluent-plugins-nursery/fluent-plugin-concat"
+"aws-samples/data-engineering-for-aws-immersion-day" -> "aws-samples/amazon-serverless-datalake-workshop" ["e"=1]
+"aws-samples/data-engineering-for-aws-immersion-day" -> "aws-samples/amazon-redshift-modernize-dw" ["e"=1]
 "databricks/spark-redshift" -> "awslabs/aws-lambda-redshift-loader"
 "databricks/spark-redshift" -> "aws-samples/emr-bootstrap-actions"
 "databricks/spark-redshift" -> "awslabs/amazon-redshift-utils"
@@ -254,11 +287,15 @@ digraph G {
 "databricks/spark-redshift" -> "seratch/AWScala" ["e"=1]
 "databricks/spark-redshift" -> "awslabs/aws-glue-libs"
 "databricks/spark-redshift" -> "databricks/spark-knowledgebase" ["e"=1]
+"aws/aws-step-functions-data-science-sdk-python" -> "awslabs/aws-ddk" ["e"=1]
 "awslabs/aws-glue-blueprint-libs" -> "awslabs/aws-glue-streaming-libs"
+"databricks/spark-training" -> "snowplow-archive/spark-streaming-example-project" ["e"=1]
 "fluent/fluent-plugin-grok-parser" -> "tagomoris/fluent-plugin-flowcounter"
 "mapbox/dyno" -> "mapbox/streambot"
 "uswitch/blueshift" -> "uswitch/bifrost"
 "uswitch/blueshift" -> "EverythingMe/redshift_console"
+"pinterest/pinball" -> "databricks/spark-redshift" ["e"=1]
+"snowplow/snowplow" -> "awslabs/amazon-redshift-utils" ["e"=1]
 "aws/aws-mwaa-local-runner" -> "aws-samples/amazon-mwaa-examples"
 "aws/aws-mwaa-local-runner" -> "astronomer/airflow-guides" ["e"=1]
 "aws/aws-mwaa-local-runner" -> "gocardless/airflow-dbt" ["e"=1]
@@ -274,11 +311,17 @@ digraph G {
 "aws/aws-mwaa-local-runner" -> "astronomer/airflow-provider-great-expectations" ["e"=1]
 "aws/aws-mwaa-local-runner" -> "aws/amazon-mwaa-docker-images"
 "aws/aws-mwaa-local-runner" -> "awslabs/amazon-redshift-utils"
+"kislyuk/watchtower" -> "laughingman7743/PyAthenaJDBC" ["e"=1]
+"puckel/docker-airflow" -> "awslabs/amazon-redshift-utils" ["e"=1]
+"aws-samples/machine-learning-samples" -> "aws-samples/aws-big-data-blog" ["e"=1]
 "garystafford/aws-airflow-demo" -> "garystafford/emr-demo"
+"AppliedTrust/traildash" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
+"gettyimages/docker-spark" -> "databricks/spark-redshift" ["e"=1]
 "awslabs/aws-orbit-workbench" -> "awslabs/idf-modules"
 "awslabs/aws-orbit-workbench" -> "awslabs/seed-farmer"
 "awslabs/aws-orbit-workbench" -> "awslabs/aws-dataset-ingestion-metrics-collection-framework"
 "awslabs/aws-orbit-workbench" -> "awslabs/autonomous-driving-data-framework"
+"awslabs/python-deequ" -> "aws/aws-sdk-pandas" ["e"=1]
 "awslabs/aws-lambda-redshift-loader" -> "awslabs/amazon-redshift-monitoring"
 "awslabs/aws-lambda-redshift-loader" -> "aws-samples/amazon-redshift-udfs"
 "awslabs/aws-lambda-redshift-loader" -> "awslabs/amazon-redshift-utils"
@@ -307,6 +350,7 @@ digraph G {
 "amazon-archives/data-pipeline-samples" -> "awsdocs/aws-data-pipeline-developer-guide"
 "amazon-archives/data-pipeline-samples" -> "awslabs/lambda-streams-to-firehose"
 "tagomoris/fluent-plugin-forest" -> "fluent/fluent-plugin-multiprocess"
+"nchammas/flintrock" -> "databricks/spark-redshift" ["e"=1]
 "webdigi/AWS-VPN-Server-Setup" -> "webdigi/AWS-AMI-Automated-Creation-Deletion"
 "webdigi/AWS-VPN-Server-Setup" -> "ttlequals0/autovpn" ["e"=1]
 "webdigi/AWS-VPN-Server-Setup" -> "dawson-org/dawson-cli"
@@ -360,6 +404,8 @@ digraph G {
 "amazon-archives/cloudwatch-logs-subscription-consumer" -> "awslabs/logstash-output-amazon_es"
 "amazon-archives/cloudwatch-logs-subscription-consumer" -> "fugue/emulambda" ["e"=1]
 "amazon-archives/cloudwatch-logs-subscription-consumer" -> "awslabs/amazon-kinesis-data-generator"
+"amazon-archives/aws-apigateway-importer" -> "sebdah/dynamic-dynamodb" ["e"=1]
+"amazon-archives/aws-apigateway-importer" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
 "sqlalchemy-redshift/sqlalchemy-redshift" -> "aws/amazon-redshift-python-driver"
 "EverythingMe/redshift_console" -> "SimpleFinance/shiftmanager"
 "EverythingMe/redshift_console" -> "PeriscopeData/redshift-udfs"
@@ -389,6 +435,9 @@ digraph G {
 "awslabs/amazon-kinesis-agent" -> "awslabs/kinesis-aggregation"
 "awslabs/amazon-kinesis-agent" -> "awslabs/lambda-streams-to-firehose"
 "awslabs/amazon-kinesis-agent" -> "awslabs/amazon-kinesis-data-generator"
+"okigan/awscurl" -> "aws-samples/amazon-elasticsearch-lambda-samples" ["e"=1]
+"DavidMuller/aws-requests-auth" -> "awslabs/logstash-output-amazon_es" ["e"=1]
+"cdklabs/cdk-monitoring-constructs" -> "awslabs/aws-ddk" ["e"=1]
 "aws-samples/amazon-elasticsearch-lambda-samples" -> "amazon-archives/cloudwatch-logs-subscription-consumer"
 "aws-samples/amazon-elasticsearch-lambda-samples" -> "awslabs/logstash-output-amazon_es"
 "aws-samples/amazon-elasticsearch-lambda-samples" -> "amazon-archives/logstash-input-dynamodb"
@@ -403,6 +452,7 @@ digraph G {
 "awslabs/logstash-output-amazon_es" -> "cllunsford/aws-signing-proxy"
 "awslabs/logstash-output-amazon_es" -> "amazon-archives/cloudwatch-logs-subscription-consumer"
 "awslabs/logstash-output-amazon_es" -> "amazon-archives/logstash-input-dynamodb"
+"amazon-archives/aws-waf-sample" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
 "aws-samples/amazon-redshift-udfs" -> "awslabs/amazon-redshift-monitoring"
 "aws-samples/amazon-redshift-udfs" -> "PeriscopeData/redshift-udfs"
 "aws-samples/amazon-redshift-udfs" -> "awslabs/aws-lambda-redshift-loader"
@@ -422,8 +472,12 @@ digraph G {
 "data-dot-all/dataall" -> "awslabs/amazon-s3-find-and-forget"
 "data-dot-all/dataall" -> "aws-samples/dbt-glue"
 "data-dot-all/dataall" -> "cdklabs/cdk-monitoring-constructs" ["e"=1]
+"amazon-archives/dynamodb-janusgraph-storage-backend" -> "awslabs/dynamodb-transactions" ["e"=1]
+"jkehler/awslambda-psycopg2" -> "awslabs/aws-lambda-redshift-loader" ["e"=1]
+"jkehler/awslambda-psycopg2" -> "awslabs/amazon-redshift-utils" ["e"=1]
 "garystafford/tickit-data-lake-demo" -> "garystafford/aws-airflow-demo"
 "garystafford/tickit-data-lake-demo" -> "garystafford/dbt-redshift-demo"
+"aws-samples/lambda-refarch-streamprocessing" -> "aws-samples/amazon-elasticsearch-lambda-samples" ["e"=1]
 "awslabs/lambda-streams-to-firehose" -> "aws-samples/aws-lambda-fanout"
 "awslabs/lambda-streams-to-firehose" -> "awslabs/kinesis-aggregation"
 "awslabs/lambda-streams-to-firehose" -> "awslabs/aws-lambda-redshift-loader"
@@ -452,6 +506,9 @@ digraph G {
 "awslabs/aws-ddk" -> "aws-samples/aws-analytics-reference-architecture"
 "amazon-archives/dynamodb-import-export-tool" -> "awslabs/dynamodb-cross-region-library"
 "awslabs/aws-codeseeder" -> "awslabs/seed-farmer"
+"amazon-archives/aws-lambda-zombie-workshop" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
+"awslabs/ecs-refarch-service-discovery" -> "aws-samples/aws-lambda-fanout" ["e"=1]
+"aws/aws-sdk-java" -> "awslabs/amazon-kinesis-client" ["e"=1]
 "awslabs/autonomous-driving-data-framework" -> "awslabs/seed-farmer"
 "awslabs/autonomous-driving-data-framework" -> "awslabs/idf-modules"
 "awslabs/autonomous-driving-data-framework" -> "awslabs/aws-orbit-workbench"
@@ -462,6 +519,8 @@ digraph G {
 "awslabs/seed-farmer" -> "awslabs/autonomous-driving-data-framework"
 "awslabs/seed-farmer" -> "awslabs/aws-orbit-workbench"
 "awslabs/seed-farmer" -> "awslabs/aws-dataset-ingestion-metrics-collection-framework"
+"s3git/s3git" -> "exratione/lambda-complex" ["e"=1]
+"aws-solutions/quota-monitor-for-aws" -> "aws-samples/aws-step-functions-ebs-snapshot-mgmt" ["e"=1]
 "awslabs/kinesis-aggregation" -> "awslabs/amazon-kinesis-producer"
 "awslabs/kinesis-aggregation" -> "awslabs/amazon-kinesis-client-python"
 "awslabs/kinesis-aggregation" -> "a8m/kinesis-producer" ["e"=1]
@@ -476,6 +535,7 @@ digraph G {
 "awslabs/kinesis-aggregation" -> "amazon-archives/amazon-kinesis-connectors"
 "awslabs/kinesis-aggregation" -> "awslabs/amazon-kinesis-agent"
 "awslabs/kinesis-aggregation" -> "awslabs/dynamodb-cross-region-library"
+"jimpick/lambda-comments" -> "channl/dynamodb-lambda-autoscale" ["e"=1]
 "fluent-plugins-nursery/fluent-plugin-concat" -> "GoogleCloudPlatform/fluent-plugin-detect-exceptions"
 "fluent-plugins-nursery/fluent-plugin-concat" -> "fluent/fluent-plugin-rewrite-tag-filter"
 "fluent-plugins-nursery/fluent-plugin-concat" -> "repeatedly/fluent-plugin-record-modifier"
@@ -495,6 +555,8 @@ digraph G {
 "channl/dynamodb-lambda-autoscale" -> "sebdah/dynamic-dynamodb"
 "channl/dynamodb-lambda-autoscale" -> "rockeee/dynamic-dynamodb-lambda"
 "channl/dynamodb-lambda-autoscale" -> "mapbox/dynamodb-replicator"
+"aws-samples/step-functions-workflows-collection" -> "aws-samples/aws-step-functions-etl-pipeline-pattern" ["e"=1]
+"a8m/kinesis-producer" -> "awslabs/kinesis-aggregation" ["e"=1]
 "traviscrawford/spark-dynamodb" -> "audienceproject/spark-dynamodb"
 "qdqmedia/wiggum" -> "tsuru/riakapi"
 "awslabs/dynamodb-continuous-backup" -> "awslabs/dynamodb-cross-region-library"
@@ -506,6 +568,8 @@ digraph G {
 "awslabs/emr-dynamodb-connector" -> "audienceproject/spark-dynamodb"
 "awslabs/emr-dynamodb-connector" -> "awslabs/dynamodb-streams-kinesis-adapter"
 "awslabs/emr-dynamodb-connector" -> "amazon-archives/amazon-kinesis-connectors"
+"jimmidyson/configmap-reload" -> "fabric8io/fluent-plugin-kubernetes_metadata_filter" ["e"=1]
+"boto/botocore" -> "awslabs/aws-glue-libs" ["e"=1]
 "dawson-org/dawson-cli" -> "exratione/lambda-complex"
 "dawson-org/dawson-cli" -> "busypeoples/spected" ["e"=1]
 "logstash-plugins/logstash-input-kinesis" -> "threadwaste/logstash-codec-cloudwatch_logs"
@@ -522,12 +586,26 @@ digraph G {
 "aws-solutions/aws-data-lake-solution" -> "aws-samples/aws-dbs-refarch-datalake"
 "aws-solutions/aws-data-lake-solution" -> "aws-samples/accelerated-data-lake"
 "aws-solutions/aws-data-lake-solution" -> "aws-samples/aws-data-mesh-utils"
+"awslabs/aws-support-tools" -> "aws-samples/aws-glue-samples" ["e"=1]
+"peak/s5cmd" -> "aws/aws-sdk-pandas" ["e"=1]
+"awslabs/lambda-refarch-mapreduce" -> "amazon-archives/amazon-kinesis-data-visualization-sample" ["e"=1]
+"fluent/fluentd-kubernetes-daemonset" -> "fabric8io/fluent-plugin-kubernetes_metadata_filter" ["e"=1]
+"fluent/fluentd-kubernetes-daemonset" -> "fluent/fluentd-docker-image" ["e"=1]
+"fluent/fluentd-kubernetes-daemonset" -> "uken/fluent-plugin-elasticsearch" ["e"=1]
+"fluent/fluentd-kubernetes-daemonset" -> "GoogleCloudPlatform/fluent-plugin-detect-exceptions" ["e"=1]
+"lifadev/archive_aws-lambda-go-shim" -> "mhart/kinesalite" ["e"=1]
 "laughingman7743/PyAthenaJDBC" -> "laughingman7743/PyAthena"
+"abutaha/aws-es-proxy" -> "awslabs/logstash-output-amazon_es" ["e"=1]
+"edasque/DynamoDBtoCSV" -> "mapbox/dyno" ["e"=1]
 "GoogleCloudPlatform/fluent-plugin-detect-exceptions" -> "fluent-plugins-nursery/fluent-plugin-concat"
 "GoogleCloudPlatform/fluent-plugin-detect-exceptions" -> "fabric8io/fluent-plugin-kubernetes_metadata_filter"
 "GoogleCloudPlatform/fluent-plugin-detect-exceptions" -> "repeatedly/fluent-plugin-multi-format-parser"
 "GoogleCloudPlatform/fluent-plugin-detect-exceptions" -> "fluent/fluent-plugin-rewrite-tag-filter"
 "awslabs/aiops-modules" -> "awslabs/aws-codeseeder"
+"getmoto/moto" -> "aws/aws-sdk-pandas" ["e"=1]
+"fluent/fluent-bit-kubernetes-logging" -> "fabric8io/fluent-plugin-kubernetes_metadata_filter" ["e"=1]
+"fluent/fluent-bit-kubernetes-logging" -> "repeatedly/fluent-plugin-multi-format-parser" ["e"=1]
+"fluent/fluent-bit-kubernetes-logging" -> "fluent-plugins-nursery/fluent-plugin-concat" ["e"=1]
 "awslabs/amazon-dynamodb-lock-client" -> "mohankishore/python_dynamodb_lock"
 "awslabs/amazon-dynamodb-lock-client" -> "awslabs/dynamodb-transactions"
 "awslabs/amazon-dynamodb-lock-client" -> "awslabs/route53-infima"
@@ -560,11 +638,16 @@ digraph G {
 "uken/fluent-plugin-elasticsearch" -> "GoogleCloudPlatform/fluent-plugin-detect-exceptions"
 "uken/fluent-plugin-elasticsearch" -> "fluent/fluent-plugin-rewrite-tag-filter"
 "uken/fluent-plugin-elasticsearch" -> "prometheus-community/elasticsearch_exporter" ["e"=1]
+"JohannesEbke/aws_list_all" -> "scopely-devops/skew" ["e"=1]
+"aws-samples/lambda-refarch-imagerecognition" -> "amazon-archives/cloudwatch-logs-subscription-consumer" ["e"=1]
+"aws-samples/lambda-refarch-imagerecognition" -> "aws-samples/amazon-elasticsearch-lambda-samples" ["e"=1]
 "NerdWalletOSS/kinesis-python" -> "ticketea/pynesis"
 "NerdWalletOSS/kinesis-python" -> "borgstrom/offspring"
 "NerdWalletOSS/kinesis-python" -> "awslabs/amazon-kinesis-client-python"
+"themotion/ladder" -> "qdqmedia/wiggum" ["e"=1]
 "robhogan/dynamodb-geo.js" -> "amazon-archives/dynamodb-geo"
 "robhogan/dynamodb-geo.js" -> "Dash-Labs/dynamodb-geo"
+"awslabs/open-data-registry" -> "aws/aws-sdk-pandas" ["e"=1]
 "aws-samples/aws-glue-samples" -> "awslabs/aws-glue-libs"
 "aws-samples/aws-glue-samples" -> "awsdocs/aws-glue-developer-guide"
 "aws-samples/aws-glue-samples" -> "aws/aws-sdk-pandas"
@@ -608,41 +691,50 @@ digraph G {
 "ticketea/pynesis" -> "NerdWalletOSS/kinesis-python"
 "sonots/fluent-plugin-record-reformer" -> "repeatedly/fluent-plugin-record-modifier"
 "sko71/aws-bigdata-specialty" -> "sko71/hands-on-with-redshift"
+"aws/amazon-sagemaker-examples" ["l"="48.395,26.451", "c"=323]
+"aws/aws-sdk-pandas" ["l"="11.667,-2.658"]
+"awslabs/deequ" ["l"="-2.525,14.763", "c"=43]
+"aws-samples/aws-serverless-security-workshop" ["l"="10.516,-2.966", "c"=129]
+"aws-samples/aws-cloudformation-advanced-reinvent-2018" ["l"="11.762,-2.76"]
 "fluent/fluent-plugin-kafka" ["l"="11.952,-2.154"]
 "fluent/fluent-plugin-webhdfs" ["l"="11.972,-2.122"]
 "treasure-data/kafka-fluentd-consumer" ["l"="11.947,-2.12"]
 "uken/fluent-plugin-elasticsearch" ["l"="11.939,-2.21"]
-"aws/aws-sdk-pandas" ["l"="11.667,-2.658"]
+"pynamodb/PynamoDB" ["l"="44.602,21.087", "c"=20]
+"aws/sagemaker-python-sdk" ["l"="48.609,26.553", "c"=323]
+"awslabs/fargatecli" ["l"="10.813,-4.976", "c"=147]
+"dbcli/athenacli" ["l"="11.692,-2.756"]
 "aws-samples/aws-glue-samples" ["l"="11.702,-2.603"]
-"aws-powertools/powertools-lambda-python" ["l"="10.656,-2.999"]
-"awslabs/deequ" ["l"="-2.525,14.763"]
+"aws-powertools/powertools-lambda-python" ["l"="10.656,-2.999", "c"=129]
 "awslabs/amazon-redshift-utils" ["l"="11.668,-2.571"]
-"aws/chalice" ["l"="10.621,-3.157"]
-"getmoto/moto" ["l"="44.626,20.983"]
+"aws/chalice" ["l"="10.621,-3.157", "c"=129]
+"getmoto/moto" ["l"="44.626,20.983", "c"=20]
 "awslabs/aws-glue-libs" ["l"="11.68,-2.614"]
-"data-science-on-aws/data-science-on-aws" ["l"="48.461,26.529"]
-"awslabs/python-deequ" ["l"="-1.716,17.546"]
-"great-expectations/great_expectations" ["l"="-0.746,16.065"]
-"aws/amazon-sagemaker-examples" ["l"="48.395,26.451"]
-"dbt-labs/dbt-core" ["l"="-0.677,16.024"]
-"amundsen-io/amundsen" ["l"="-2.461,14.757"]
-"alexcasalboni/aws-lambda-power-tuning" ["l"="10.679,-3.027"]
-"jghoman/awesome-apache-airflow" ["l"="0.335,16.017"]
+"data-science-on-aws/data-science-on-aws" ["l"="48.461,26.529", "c"=323]
+"awslabs/python-deequ" ["l"="-1.716,17.546", "c"=1046]
+"great-expectations/great_expectations" ["l"="-0.746,16.065", "c"=268]
+"dbt-labs/dbt-core" ["l"="-0.677,16.024", "c"=268]
+"amundsen-io/amundsen" ["l"="-2.461,14.757", "c"=43]
+"alexcasalboni/aws-lambda-power-tuning" ["l"="10.679,-3.027", "c"=129]
+"jghoman/awesome-apache-airflow" ["l"="0.335,16.017", "c"=1224]
 "aws-samples/emr-bootstrap-actions" ["l"="11.657,-2.496"]
 "databricks/spark-redshift" ["l"="11.665,-2.537"]
 "aws-samples/aws-big-data-blog" ["l"="11.685,-2.506"]
 "awslabs/amazon-redshift-monitoring" ["l"="11.647,-2.55"]
 "amazon-archives/emr-sample-apps" ["l"="11.61,-2.491"]
 "awslabs/aws-lambda-redshift-loader" ["l"="11.663,-2.519"]
-"databricks/spark-avro" ["l"="-2.564,16.976"]
+"databricks/spark-avro" ["l"="-2.564,16.976", "c"=455]
 "amazon-archives/amazon-kinesis-connectors" ["l"="11.668,-2.458"]
 "amazon-archives/data-pipeline-samples" ["l"="11.706,-2.513"]
 "awslabs/emr-dynamodb-connector" ["l"="11.629,-2.457"]
-"databricks/spark-csv" ["l"="-2.61,17.064"]
+"databricks/spark-csv" ["l"="-2.61,17.064", "c"=455]
 "awslabs/amazon-kinesis-client" ["l"="11.668,-2.427"]
 "snowplow/spark-example-project" ["l"="11.562,-2.491"]
 "awslabs/amazon-kinesis-producer" ["l"="11.66,-2.441"]
+"baztian/jaydebeapi" ["l"="-1.864,10.733", "c"=1247]
+"laughingman7743/PyAthenaJDBC" ["l"="11.654,-2.758"]
 "snowplow-archive/spark-streaming-example-project" ["l"="11.526,-2.489"]
+"aws-samples/aws-security-workshops" ["l"="11.027,-4.712", "c"=147]
 "awslabs/aws-fluent-plugin-kinesis" ["l"="11.725,-2.383"]
 "awslabs/amazon-kinesis-agent" ["l"="11.665,-2.404"]
 "samcday/logstash-output-kinesis" ["l"="11.758,-2.356"]
@@ -653,36 +745,46 @@ digraph G {
 "awslabs/amazon-kinesis-scaling-utils" ["l"="11.682,-2.407"]
 "logstash-plugins/logstash-input-kinesis" ["l"="11.665,-2.349"]
 "amazon-archives/kinesis-log4j-appender" ["l"="11.767,-2.379"]
+"ryanfitz/vogels" ["l"="10.933,-3.269", "c"=129]
+"channl/dynamodb-lambda-autoscale" ["l"="11.631,-2.223"]
 "mhart/kinesalite" ["l"="11.697,-2.39"]
-"architect/dynalite" ["l"="10.883,-3.184"]
+"architect/dynalite" ["l"="10.883,-3.184", "c"=129]
 "mhart/kinesis" ["l"="11.631,-2.38"]
-"vsouza/docker-Kinesis-local" ["l"="-2.203,18.483"]
-"sendgridlabs/go-kinesis" ["l"="-11.251,-6.553"]
+"vsouza/docker-Kinesis-local" ["l"="-2.203,18.483", "c"=38]
+"sendgridlabs/go-kinesis" ["l"="-11.251,-6.553", "c"=5]
 "aws-samples/aws-lambda-fanout" ["l"="11.671,-2.375"]
 "awslabs/lambda-streams-to-firehose" ["l"="11.688,-2.424"]
 "awslabs/amazon-kinesis-client-python" ["l"="11.702,-2.444"]
-"lifadev/archive_aws-lambda-go-shim" ["l"="3.876,-9.344"]
+"lifadev/archive_aws-lambda-go-shim" ["l"="3.876,-9.344", "c"=0]
 "awslabs/dynamodb-cross-region-library" ["l"="11.668,-2.325"]
+"keithrozario/Klayers" ["l"="10.736,-3.118", "c"=129]
+"awslabs/amazon-kinesis-video-streams-producer-sdk-cpp" ["l"="63.34,-14.322", "c"=524]
 "amazon-archives/amazon-kinesis-data-visualization-sample" ["l"="11.65,-2.418"]
 "awslabs/amazon-kinesis-aggregators" ["l"="11.687,-2.447"]
 "sko71/aws-bigdata-specialty" ["l"="11.602,-2.464"]
+"bchew/dynamodump" ["l"="10.892,-3.276", "c"=129]
+"sebdah/dynamic-dynamodb" ["l"="11.631,-2.268"]
+"awslabs/dynamodb-continuous-backup" ["l"="11.708,-2.343"]
+"amazon-archives/dynamodb-import-export-tool" ["l"="11.672,-2.29"]
+"aws-samples/serverless-sagemaker-orchestration" ["l"="48.735,26.557", "c"=323]
+"aws-samples/aws-ml-data-lake-workshop" ["l"="11.743,-2.686"]
 "awsdocs/aws-glue-developer-guide" ["l"="11.691,-2.638"]
 "awslabs/aws-glue-data-catalog-client-for-apache-hive-metastore" ["l"="11.658,-2.635"]
 "awslabs/aws-glue-blueprint-libs" ["l"="11.646,-2.692"]
 "awslabs/dynamodb-streams-kinesis-adapter" ["l"="11.6,-2.379"]
 "aws-samples/amazon-kinesis-learning" ["l"="11.636,-2.431"]
 "awslabs/amazon-kinesis-client-nodejs" ["l"="11.629,-2.406"]
-"aws/aws-sdk-java" ["l"="-5.314,9.392"]
-"dbcli/athenacli" ["l"="11.692,-2.756"]
+"aws/aws-sdk-java" ["l"="-5.314,9.392", "c"=703]
 "tokern/lakecli" ["l"="11.694,-2.792"]
 "guardian/athena-cli" ["l"="11.674,-2.775"]
 "aws-samples/aws-etl-orchestrator" ["l"="11.721,-2.642"]
-"aws-samples/serverless-sagemaker-orchestration" ["l"="48.735,26.557"]
-"aws-samples/aws-ml-data-lake-workshop" ["l"="11.743,-2.686"]
 "aws-samples/aws-step-functions-etl-pipeline-pattern" ["l"="11.758,-2.671"]
 "aws-samples/aws-dbs-refarch-datalake" ["l"="11.735,-2.703"]
 "aws-samples/serverless-data-analytics" ["l"="11.76,-2.702"]
 "aws-samples/amazon-serverless-datalake-workshop" ["l"="11.755,-2.724"]
+"amazon-archives/aws-developer-workshop" ["l"="10.919,-4.937", "c"=147]
+"aws-samples/aws-dynamodb-examples" ["l"="10.707,-2.915", "c"=129]
+"awslabs/dynamodb-transactions" ["l"="11.57,-2.287"]
 "awsdocs/amazon-redshift-developer-guide" ["l"="11.587,-2.584"]
 "awsdocs/amazon-redshift-management-guide" ["l"="11.604,-2.574"]
 "aws-samples/amazon-redshift-modernize-dw" ["l"="11.766,-2.795"]
@@ -698,9 +800,8 @@ digraph G {
 "amazon-archives/kinesis-storm-spout" ["l"="11.648,-2.457"]
 "aws-samples/realtime-web-analytics-workshop" ["l"="11.786,-2.773"]
 "aws-samples/building-a-realtime-data-platform-workshop" ["l"="11.801,-2.798"]
-"awslabs/dynamodb-transactions" ["l"="11.57,-2.287"]
-"aws/aws-dynamodb-encryption-java" ["l"="-34.094,0.294"]
-"aws-samples/aws-cloudformation-advanced-reinvent-2018" ["l"="11.762,-2.76"]
+"aws/sagemaker-spark" ["l"="48.683,26.599", "c"=323]
+"aws/aws-dynamodb-encryption-java" ["l"="-34.094,0.294", "c"=8]
 "aws-samples/accelerated-data-lake" ["l"="11.718,-2.706"]
 "aws-samples/aws-dbs-refarch-rdbms" ["l"="11.733,-2.753"]
 "aws-samples/redshift-immersionday-labs" ["l"="11.775,-2.839"]
@@ -710,22 +811,28 @@ digraph G {
 "qdqmedia/wiggum" ["l"="11.807,-2.447"]
 "ticketea/pynesis" ["l"="11.77,-2.451"]
 "tagomoris/fluent-plugin-forest" ["l"="11.884,-2.275"]
+"fluent/fluent-logger-python" ["l"="6.387,-38.51", "c"=617]
+"aws-samples/aws-codedeploy-samples" ["l"="10.866,-4.924", "c"=147]
+"amazon-archives/cloudwatch-logs-subscription-consumer" ["l"="11.651,-2.308"]
+"piskvorky/smart_open" ["l"="44.924,20.902", "c"=20]
 "aws-samples/amazon-redshift-udfs" ["l"="11.644,-2.516"]
-"puckel/docker-airflow" ["l"="0.366,16.031"]
-"awslabs/aws-shell" ["l"="10.167,-6.394"]
-"snowplow/snowplow" ["l"="16.191,-10.721"]
+"puckel/docker-airflow" ["l"="0.366,16.031", "c"=1224]
+"awslabs/aws-shell" ["l"="10.167,-6.394", "c"=162]
+"snowplow/snowplow" ["l"="16.191,-10.721", "c"=198]
 "aws-samples/amazon-elasticsearch-lambda-samples" ["l"="11.684,-2.349"]
 "awslabs/amazon-kinesis-data-generator" ["l"="11.641,-2.362"]
-"aws-samples/machine-learning-samples" ["l"="44.791,27.808"]
+"aws-samples/machine-learning-samples" ["l"="44.791,27.808", "c"=789]
+"garnaat/kappa" ["l"="9.964,-6.463", "c"=162]
+"ashiina/lambda-local" ["l"="10.872,-3.243", "c"=129]
 "awslabs/aws-athena-query-federation" ["l"="11.698,-2.671"]
-"awslabs/amazon-neptune-tools" ["l"="-19.498,-24.201"]
+"awslabs/amazon-neptune-tools" ["l"="-19.498,-24.201", "c"=10]
 "laughingman7743/PyAthena" ["l"="11.675,-2.727"]
-"aws-samples/amazon-neptune-samples" ["l"="-19.515,-24.198"]
+"aws-samples/amazon-neptune-samples" ["l"="-19.515,-24.198", "c"=10]
 "awslabs/athena-glue-service-logs" ["l"="11.65,-2.61"]
 "dacort/metabase-athena-driver" ["l"="11.641,-2.729"]
 "aws-solutions-library-samples/data-lakes-on-aws" ["l"="11.76,-2.637"]
 "awslabs/aws-ddk" ["l"="11.797,-2.678"]
-"awslabs/aws-config-rdk" ["l"="10.964,-4.747"]
+"awslabs/aws-config-rdk" ["l"="10.964,-4.747", "c"=147]
 "aws/amazon-redshift-python-driver" ["l"="11.58,-2.679"]
 "sqlalchemy-redshift/sqlalchemy-redshift" ["l"="11.541,-2.689"]
 "aws/amazon-redshift-jdbc-driver" ["l"="11.568,-2.717"]
@@ -733,11 +840,8 @@ digraph G {
 "awslabs/amazon-s3-find-and-forget" ["l"="11.855,-2.661"]
 "aws-samples/aws-data-mesh-utils" ["l"="11.803,-2.655"]
 "NerdWalletOSS/kinesis-python" ["l"="11.745,-2.441"]
-"amazon-archives/dynamodb-import-export-tool" ["l"="11.672,-2.29"]
 "mapbox/dynamodb-replicator" ["l"="11.663,-2.257"]
-"awslabs/dynamodb-continuous-backup" ["l"="11.708,-2.343"]
 "amazon-archives/logstash-input-dynamodb" ["l"="11.694,-2.312"]
-"sebdah/dynamic-dynamodb" ["l"="11.631,-2.268"]
 "data-dot-all/dataall" ["l"="11.82,-2.662"]
 "awslabs/aws-orbit-workbench" ["l"="11.821,-2.723"]
 "aws-solutions/aws-data-lake-solution" ["l"="11.738,-2.656"]
@@ -751,29 +855,36 @@ digraph G {
 "fluent/fluent-plugin-rewrite-tag-filter" ["l"="11.977,-2.25"]
 "fluent/fluent-plugin-grok-parser" ["l"="12.02,-2.268"]
 "fluent-plugins-nursery/fluent-plugin-concat" ["l"="11.977,-2.227"]
+"aws-samples/data-engineering-for-aws-immersion-day" ["l"="0.565,16.459", "c"=1000]
 "EverythingMe/redshift_console" ["l"="11.607,-2.525"]
 "PeriscopeData/redshift-udfs" ["l"="11.624,-2.525"]
-"seratch/AWScala" ["l"="-2.549,18.738"]
-"databricks/spark-knowledgebase" ["l"="-2.625,16.952"]
+"seratch/AWScala" ["l"="-2.549,18.738", "c"=38]
+"databricks/spark-knowledgebase" ["l"="-2.625,16.952", "c"=455]
+"aws/aws-step-functions-data-science-sdk-python" ["l"="48.68,26.617", "c"=323]
 "awslabs/aws-glue-streaming-libs" ["l"="11.621,-2.709"]
+"databricks/spark-training" ["l"="-2.665,16.959", "c"=455]
 "tagomoris/fluent-plugin-flowcounter" ["l"="12.047,-2.281"]
 "mapbox/dyno" ["l"="11.668,-2.212"]
 "mapbox/streambot" ["l"="11.678,-2.227"]
 "uswitch/blueshift" ["l"="11.573,-2.522"]
 "uswitch/bifrost" ["l"="11.524,-2.53"]
+"pinterest/pinball" ["l"="-2.567,14.423", "c"=43]
 "aws/aws-mwaa-local-runner" ["l"="11.623,-2.631"]
 "aws-samples/amazon-mwaa-examples" ["l"="11.565,-2.638"]
-"astronomer/airflow-guides" ["l"="0.339,15.945"]
-"gocardless/airflow-dbt" ["l"="-0.494,16.073"]
-"astronomer/dag-factory" ["l"="0.342,15.964"]
-"teamclairvoyant/airflow-maintenance-dags" ["l"="0.368,15.971"]
-"andreax79/airflow-code-editor" ["l"="0.307,15.929"]
-"astronomer/astronomer-cosmos" ["l"="-0.524,16.067"]
-"calogica/dbt-expectations" ["l"="-0.501,16.029"]
-"astronomer/airflow-provider-great-expectations" ["l"="0.335,15.867"]
+"astronomer/airflow-guides" ["l"="0.339,15.945", "c"=1224]
+"gocardless/airflow-dbt" ["l"="-0.494,16.073", "c"=268]
+"astronomer/dag-factory" ["l"="0.342,15.964", "c"=1224]
+"teamclairvoyant/airflow-maintenance-dags" ["l"="0.368,15.971", "c"=1224]
+"andreax79/airflow-code-editor" ["l"="0.307,15.929", "c"=1224]
+"astronomer/astronomer-cosmos" ["l"="-0.524,16.067", "c"=268]
+"calogica/dbt-expectations" ["l"="-0.501,16.029", "c"=268]
+"astronomer/airflow-provider-great-expectations" ["l"="0.335,15.867", "c"=1224]
 "aws/amazon-mwaa-docker-images" ["l"="11.589,-2.644"]
+"kislyuk/watchtower" ["l"="-34.134,0.416", "c"=8]
 "garystafford/aws-airflow-demo" ["l"="11.904,-2.61"]
 "garystafford/emr-demo" ["l"="11.928,-2.608"]
+"AppliedTrust/traildash" ["l"="10.009,-6.496", "c"=162]
+"gettyimages/docker-spark" ["l"="-2.817,17.047", "c"=455]
 "awslabs/idf-modules" ["l"="11.84,-2.747"]
 "awslabs/seed-farmer" ["l"="11.838,-2.723"]
 "awslabs/aws-dataset-ingestion-metrics-collection-framework" ["l"="11.828,-2.741"]
@@ -781,73 +892,88 @@ digraph G {
 "SimpleFinance/shiftmanager" ["l"="11.613,-2.54"]
 "chrismld/aws-lambda-redshift-copy" ["l"="11.624,-2.55"]
 "coursera/dataduct" ["l"="11.585,-2.546"]
-"psychothan/data-engineering-101" ["l"="48.71,28.482"]
+"psychothan/data-engineering-101" ["l"="48.71,28.482", "c"=89]
 "awsdocs/aws-data-pipeline-developer-guide" ["l"="11.742,-2.515"]
 "fluent/fluent-plugin-multiprocess" ["l"="11.929,-2.268"]
+"nchammas/flintrock" ["l"="-2.655,17.274", "c"=455]
 "webdigi/AWS-VPN-Server-Setup" ["l"="11.758,-2.108"]
 "webdigi/AWS-AMI-Automated-Creation-Deletion" ["l"="11.758,-2.07"]
-"ttlequals0/autovpn" ["l"="10.015,-6.308"]
+"ttlequals0/autovpn" ["l"="10.015,-6.308", "c"=162]
 "dawson-org/dawson-cli" ["l"="11.756,-2.178"]
 "fluent/fluentd-docker-image" ["l"="11.929,-2.173"]
-"fluent/fluentd-kubernetes-daemonset" ["l"="8.111,-9.072"]
+"fluent/fluentd-kubernetes-daemonset" ["l"="8.111,-9.072", "c"=14]
 "fluent/fluent-plugin-prometheus" ["l"="11.973,-2.196"]
 "fabric8io/fluent-plugin-kubernetes_metadata_filter" ["l"="12,-2.2"]
 "fluent-plugins-nursery/fluent-plugin-systemd" ["l"="11.997,-2.171"]
 "repeatedly/fluent-plugin-record-modifier" ["l"="11.959,-2.239"]
 "awslabs/kinesis-kafka-connector" ["l"="11.592,-2.414"]
-"a8m/kinesis-producer" ["l"="-11.156,-6.564"]
+"a8m/kinesis-producer" ["l"="-11.156,-6.564", "c"=5]
 "GoogleCloudPlatform/fluent-plugin-detect-exceptions" ["l"="11.996,-2.224"]
 "fabric8io/docker-fluentd-kubernetes" ["l"="12.04,-2.205"]
-"wearemolecule/route53-kubernetes" ["l"="10.379,-10.003"]
+"wearemolecule/route53-kubernetes" ["l"="10.379,-10.003", "c"=740]
 "fluent-plugins-nursery/fluent-plugin-cloudwatch-logs" ["l"="12.051,-2.171"]
 "fabric8io/fluent-plugin-kubernetes" ["l"="12.025,-2.185"]
-"amazon-archives/cloudwatch-logs-subscription-consumer" ["l"="11.651,-2.308"]
-"AppliedTrust/traildash" ["l"="10.009,-6.496"]
-"awslabs/aws-config-rules" ["l"="10.973,-4.766"]
-"garnaat/kappa" ["l"="9.964,-6.463"]
+"awslabs/aws-config-rules" ["l"="10.973,-4.766", "c"=147]
 "aws-samples/aws-step-functions-ebs-snapshot-mgmt" ["l"="11.61,-2.3"]
 "scopely-devops/skew" ["l"="11.599,-2.267"]
-"amazon-archives/aws-waf-sample" ["l"="10.971,-4.794"]
-"awslabs/aws-config-to-elasticsearch" ["l"="10.727,-4.653"]
+"amazon-archives/aws-waf-sample" ["l"="10.971,-4.794", "c"=147]
+"awslabs/aws-config-to-elasticsearch" ["l"="10.727,-4.653", "c"=147]
 "awslabs/logstash-output-amazon_es" ["l"="11.711,-2.295"]
-"fugue/emulambda" ["l"="10.832,-3.483"]
+"fugue/emulambda" ["l"="10.832,-3.483", "c"=129]
+"amazon-archives/aws-apigateway-importer" ["l"="9.889,-6.483", "c"=162]
 "SimpleFinance/pipewelder" ["l"="11.555,-2.533"]
 "aws-samples/datamesh-ui" ["l"="11.831,-2.637"]
-"aws-samples/lambda-refarch-streamprocessing" ["l"="11.806,-3.277"]
-"abutaha/aws-es-proxy" ["l"="-34.055,0.688"]
+"okigan/awscurl" ["l"="10.988,-4.739", "c"=147]
+"DavidMuller/aws-requests-auth" ["l"="-34.082,0.582", "c"=8]
+"cdklabs/cdk-monitoring-constructs" ["l"="10.692,-2.806", "c"=129]
+"aws-samples/lambda-refarch-streamprocessing" ["l"="11.806,-3.277", "c"=734]
+"abutaha/aws-es-proxy" ["l"="-34.055,0.688", "c"=8]
 "cllunsford/aws-signing-proxy" ["l"="11.729,-2.249"]
 "aws-samples/dbt-glue" ["l"="11.878,-2.679"]
-"cdklabs/cdk-monitoring-constructs" ["l"="10.692,-2.806"]
+"amazon-archives/dynamodb-janusgraph-storage-backend" ["l"="-19.481,-24.154", "c"=10]
+"jkehler/awslambda-psycopg2" ["l"="10.764,-3.221", "c"=129]
 "garystafford/dbt-redshift-demo" ["l"="11.882,-2.594"]
 "exratione/lambda-complex" ["l"="11.745,-2.285"]
 "sonots/fluent-plugin-record-reformer" ["l"="11.962,-2.267"]
 "wrobstory/malort" ["l"="11.562,-2.562"]
 "aws-samples/aws-ddk-examples" ["l"="11.823,-2.696"]
 "awslabs/aws-codeseeder" ["l"="11.854,-2.712"]
-"dbt-labs/redshift" ["l"="-0.5,16.25"]
+"amazon-archives/aws-lambda-zombie-workshop" ["l"="11.791,-3.209", "c"=734]
+"awslabs/ecs-refarch-service-discovery" ["l"="10.742,-5.058", "c"=147]
+"s3git/s3git" ["l"="3.871,-7.745", "c"=0]
+"aws-solutions/quota-monitor-for-aws" ["l"="10.917,-4.739", "c"=147]
+"jimpick/lambda-comments" ["l"="23.082,-26.292", "c"=28]
+"dbt-labs/redshift" ["l"="-0.5,16.25", "c"=268]
 "tableau/redshift-monitor" ["l"="11.623,-2.573"]
-"channl/dynamodb-lambda-autoscale" ["l"="11.631,-2.223"]
 "rockeee/dynamic-dynamodb-lambda" ["l"="11.62,-2.189"]
+"aws-samples/step-functions-workflows-collection" ["l"="10.595,-2.894", "c"=129]
 "tsuru/riakapi" ["l"="11.83,-2.445"]
-"busypeoples/spected" ["l"="-0.266,-28.98"]
+"jimmidyson/configmap-reload" ["l"="7.852,-9.152", "c"=14]
+"boto/botocore" ["l"="44.683,21.009", "c"=20]
+"busypeoples/spected" ["l"="-0.266,-28.98", "c"=12]
 "threadwaste/logstash-codec-cloudwatch_logs" ["l"="11.646,-2.336"]
 "alexcasalboni/kinesis-streams-fan-out-kinesis-analytics" ["l"="11.614,-2.343"]
-"laughingman7743/PyAthenaJDBC" ["l"="11.654,-2.758"]
+"awslabs/aws-support-tools" ["l"="10.873,-4.808", "c"=147]
+"peak/s5cmd" ["l"="10.07,-6.222", "c"=162]
+"awslabs/lambda-refarch-mapreduce" ["l"="63.555,-12.538", "c"=1127]
+"edasque/DynamoDBtoCSV" ["l"="10.9,-3.388", "c"=129]
 "awslabs/aiops-modules" ["l"="11.892,-2.73"]
+"fluent/fluent-bit-kubernetes-logging" ["l"="8.199,-9.104", "c"=14]
 "awslabs/amazon-dynamodb-lock-client" ["l"="11.484,-2.261"]
 "mohankishore/python_dynamodb_lock" ["l"="11.45,-2.27"]
 "awslabs/route53-infima" ["l"="11.44,-2.234"]
-"amazon-archives/aws-apigateway-importer" ["l"="9.889,-6.483"]
-"bchew/dynamodump" ["l"="10.892,-3.276"]
-"danilop/LambdAuth" ["l"="11.829,-3.188"]
-"dump247/aws-mock-metadata" ["l"="10.116,-6.568"]
+"danilop/LambdAuth" ["l"="11.829,-3.188", "c"=734]
+"dump247/aws-mock-metadata" ["l"="10.116,-6.568", "c"=162]
 "bradmurray/DynamoDBLambdaMonitor" ["l"="11.61,-2.241"]
-"cloudnative/lambda-chat" ["l"="9.926,-6.514"]
+"cloudnative/lambda-chat" ["l"="9.926,-6.514", "c"=162]
 "fluent/fluentd-ui" ["l"="11.891,-2.166"]
-"fluent/fluentd" ["l"="8.473,-8.618"]
+"fluent/fluentd" ["l"="8.473,-8.618", "c"=14]
 "tagomoris/fluent-plugin-parser" ["l"="11.906,-2.217"]
-"prometheus-community/elasticsearch_exporter" ["l"="9.375,-10.65"]
+"prometheus-community/elasticsearch_exporter" ["l"="9.375,-10.65", "c"=484]
+"JohannesEbke/aws_list_all" ["l"="11.202,-4.798", "c"=147]
+"aws-samples/lambda-refarch-imagerecognition" ["l"="11.752,-3.225", "c"=734]
 "borgstrom/offspring" ["l"="11.775,-2.43"]
-"awslabs/aws-support-tools" ["l"="10.873,-4.808"]
+"themotion/ladder" ["l"="-19.474,-19.542", "c"=132]
+"awslabs/open-data-registry" ["l"="41.608,24.358", "c"=76]
 "sko71/hands-on-with-redshift" ["l"="11.569,-2.469"]
 }

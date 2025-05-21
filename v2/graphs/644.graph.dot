@@ -14,6 +14,9 @@ digraph G {
 "chirpstack/chirpstack-docker" -> "Lora-net/packet_forwarder"
 "chirpstack/chirpstack-docker" -> "brocaar/chirpstack-geolocation-server"
 "chirpstack/chirpstack-docker" -> "ElectronicCats/Beelan-LoRaWAN"
+"rocketscream/Low-Power" -> "mcci-catena/arduino-lmic" ["e"=1]
+"rocketscream/Low-Power" -> "matthijskooijman/arduino-lmic" ["e"=1]
+"rocketscream/Low-Power" -> "sandeepmistry/arduino-LoRa" ["e"=1]
 "jgromes/RadioLib" -> "sandeepmistry/arduino-LoRa"
 "jgromes/RadioLib" -> "NorthernMan54/rtl_433_ESP" ["e"=1]
 "jgromes/RadioLib" -> "StuartsProjects/SX12XX-LoRa"
@@ -29,6 +32,12 @@ digraph G {
 "jgromes/RadioLib" -> "LoRaMesher/LoRaMesher"
 "jgromes/RadioLib" -> "rfquack/RFQuack" ["e"=1]
 "jgromes/RadioLib" -> "merbanan/rtl_433" ["e"=1]
+"UncleRus/esp-idf-lib" -> "Inteform/esp32-lora-library" ["e"=1]
+"iegomez/mosquitto-go-auth" -> "chirpstack/chirpstack-gateway-bridge" ["e"=1]
+"iegomez/mosquitto-go-auth" -> "brocaar/chirpstack-application-server" ["e"=1]
+"gcgarner/IOTstack" -> "cyberman54/ESP32-Paxcounter" ["e"=1]
+"nopnop2002/esp-idf-ssd1306" -> "Inteform/esp32-lora-library" ["e"=1]
+"nopnop2002/esp-idf-ssd1306" -> "nopnop2002/esp-idf-sx126x" ["e"=1]
 "Lora-net/lora_gateway" -> "Lora-net/packet_forwarder"
 "Lora-net/lora_gateway" -> "Lora-net/LoRaMac-node"
 "Lora-net/lora_gateway" -> "brocaar/chirpstack-network-server"
@@ -59,6 +68,11 @@ digraph G {
 "Xinyuan-LilyGO/LilyGo-LoRa-Series" -> "G4lile0/tinyGS"
 "Xinyuan-LilyGO/LilyGo-LoRa-Series" -> "DeuxVis/Lora-TTNMapper-T-Beam"
 "Xinyuan-LilyGO/LilyGo-LoRa-Series" -> "HelTecAutomation/Heltec_ESP32"
+"STMicroelectronics/STM32CubeWB" -> "STMicroelectronics/STM32CubeWL" ["e"=1]
+"mikalhart/TinyGPSPlus" -> "sandeepmistry/arduino-LoRa" ["e"=1]
+"mikalhart/TinyGPSPlus" -> "LilyGO/TTGO-T-Beam" ["e"=1]
+"mikalhart/TinyGPSPlus" -> "matthijskooijman/arduino-lmic" ["e"=1]
+"mikalhart/TinyGPSPlus" -> "mcci-catena/arduino-lmic" ["e"=1]
 "cyberman54/ESP32-Paxcounter" -> "Xinyuan-LilyGO/LilyGo-LoRa-Series"
 "cyberman54/ESP32-Paxcounter" -> "things4u/ESP-1ch-Gateway-v5.0--OLD"
 "cyberman54/ESP32-Paxcounter" -> "matthijskooijman/arduino-lmic"
@@ -74,6 +88,9 @@ digraph G {
 "cyberman54/ESP32-Paxcounter" -> "things4u/ESP-1ch-Gateway"
 "cyberman54/ESP32-Paxcounter" -> "lyusupov/SoftRF"
 "cyberman54/ESP32-Paxcounter" -> "G4lile0/ESP32-WiFi-Hash-Monster" ["e"=1]
+"botletics/SIM7000-LTE-Shield" -> "things4u/ESP-1ch-Gateway" ["e"=1]
+"botletics/SIM7000-LTE-Shield" -> "nootropicdesign/lora-mesh" ["e"=1]
+"LowPowerLab/RFM69" -> "matthijskooijman/arduino-lmic" ["e"=1]
 "sudomesh/disaster-radio" -> "sudomesh/LoRaLayer2"
 "sudomesh/disaster-radio" -> "meshtastic/firmware" ["e"=1]
 "sudomesh/disaster-radio" -> "Xinyuan-LilyGO/LilyGo-LoRa-Series"
@@ -89,6 +106,7 @@ digraph G {
 "sudomesh/disaster-radio" -> "lyusupov/SoftRF"
 "sudomesh/disaster-radio" -> "bobricius/armachat"
 "sudomesh/disaster-radio" -> "meshtastic/meshtastic" ["e"=1]
+"stratux/stratux" -> "lyusupov/SoftRF" ["e"=1]
 "Lora-net/LoRaMac-node" -> "Lora-net/lora_gateway"
 "Lora-net/LoRaMac-node" -> "Lora-net/packet_forwarder"
 "Lora-net/LoRaMac-node" -> "brocaar/chirpstack-network-server"
@@ -132,6 +150,7 @@ digraph G {
 "har-in-air/ESP32_IMU_BARO_GPS_VARIO" -> "dvarrel/XCTRACK_vario"
 "har-in-air/ESP32_IMU_BARO_GPS_VARIO" -> "har-in-air/ESP32_IMU_BARO_GPS_LOGGER"
 "har-in-air/ESP32_IMU_BARO_GPS_VARIO" -> "glydrfreak/vSpeed-Vario"
+"bogde/HX711" -> "matthijskooijman/arduino-lmic" ["e"=1]
 "HelTecAutomation/Heltec_ESP32" -> "Heltec-Aaron-Lee/WiFi_Kit_series"
 "HelTecAutomation/Heltec_ESP32" -> "HelTecAutomation/ESP32_LoRaWAN"
 "HelTecAutomation/Heltec_ESP32" -> "HelTecAutomation/CubeCell-Arduino"
@@ -200,6 +219,8 @@ digraph G {
 "LilyGO/TTGO-T-Beam" -> "sandeepmistry/arduino-LoRa"
 "LilyGO/TTGO-T-Beam" -> "matthijskooijman/arduino-lmic"
 "LilyGO/TTGO-T-Beam" -> "kizniche/ttn-tracker"
+"FOSSASystems/FOSSASAT-1" -> "G4lile0/tinyGS" ["e"=1]
+"FOSSASystems/FOSSASAT-1" -> "jgromes/RadioLib" ["e"=1]
 "TheThingsNetwork/lorawan-stack" -> "gotthardp/lorawan-server"
 "TheThingsNetwork/lorawan-stack" -> "TheThingsArchive/ttn"
 "TheThingsNetwork/lorawan-stack" -> "brocaar/chirpstack-network-server"
@@ -218,6 +239,7 @@ digraph G {
 "Turbo87/aerofiles" -> "alistairmgreen/jsigc"
 "Turbo87/aerofiles" -> "Turbo87/aeroscore"
 "Turbo87/aerofiles" -> "kedder/openvario-compman"
+"projecthorus/radiosonde_auto_rx" -> "G4lile0/tinyGS" ["e"=1]
 "LilyGO/TTGO-LORA32" -> "Xinyuan-LilyGO/TTGO-LoRa-Series"
 "LilyGO/TTGO-LORA32" -> "LilyGO/TTGO-LoRa32-V2.1"
 "LilyGO/TTGO-LORA32" -> "LilyGO/TTGO-T-Beam"
@@ -295,6 +317,7 @@ digraph G {
 "Heltec-Aaron-Lee/WiFi_Kit_series" -> "Lora-net/packet_forwarder"
 "Heltec-Aaron-Lee/WiFi_Kit_series" -> "things4u/ESP-1ch-Gateway"
 "Heltec-Aaron-Lee/WiFi_Kit_series" -> "vpcola/ESP32SingleChannelGateway"
+"Xinyuan-LilyGO/LilyGo-T-Call-SIM800" -> "things4u/ESP-1ch-Gateway-v5.0--OLD" ["e"=1]
 "things4u/ESP-1ch-Gateway-v5.0--OLD" -> "things4u/ESP-1ch-Gateway"
 "things4u/ESP-1ch-Gateway-v5.0--OLD" -> "hallard/WeMos-Lora"
 "things4u/ESP-1ch-Gateway-v5.0--OLD" -> "matthijskooijman/arduino-lmic"
@@ -351,6 +374,7 @@ digraph G {
 "manuelbl/ttn-esp32" -> "beegee-tokyo/SX126x-Arduino"
 "manuelbl/ttn-esp32" -> "matthijskooijman/arduino-lmic"
 "manuelbl/ttn-esp32" -> "kersing/ESP-1ch-Gateway-v5.0-obsolete-"
+"balena-labs-projects/balena-sense" -> "mpous/basicstation" ["e"=1]
 "helium/blockchain-core" -> "helium/helium-wallet-rs"
 "helium/blockchain-core" -> "helium/miner"
 "helium/blockchain-core" -> "helium/explorer"
@@ -473,6 +497,12 @@ digraph G {
 "helium/erlang-dkg" -> "helium/erlang-hbbft"
 "helium/erlang-tpke" -> "helium/erlang-multihash"
 "marcobrianza/ESP-1ch-Gateway-v4.0" -> "SensorsIot/ESP-1ch-Gateway"
+"meshtastic/firmware" -> "Xinyuan-LilyGO/LilyGo-LoRa-Series" ["e"=1]
+"meshtastic/firmware" -> "jgromes/RadioLib" ["e"=1]
+"meshtastic/firmware" -> "sudomesh/disaster-radio" ["e"=1]
+"meshtastic/firmware" -> "cyberman54/ESP32-Paxcounter" ["e"=1]
+"meshtastic/firmware" -> "G4lile0/tinyGS" ["e"=1]
+"DiegoPaezA/ESP32-freeRTOS" -> "Inteform/esp32-lora-library" ["e"=1]
 "helium/HIP" -> "helium/miner"
 "helium/HIP" -> "helium/helium-wallet-rs"
 "helium/HIP" -> "helium/blockchain-core"
@@ -488,6 +518,7 @@ digraph G {
 "helium/HIP" -> "miqueet/helium_miner_scripts"
 "helium/HIP" -> "helium/denylist"
 "helium/HIP" -> "helium/helium-program-library"
+"Mair/esp32-course" -> "Inteform/esp32-lora-library" ["e"=1]
 "xreef/EByte_LoRa_E22_Series_Library" -> "xreef/LoRa_E32_Series_Library"
 "xreef/EByte_LoRa_E22_Series_Library" -> "tinytronix/SX126x"
 "helium/helium-wallet-rs" -> "helium/blockchain-core"
@@ -520,6 +551,7 @@ digraph G {
 "xreef/LoRa_E32_Series_Library" -> "things4u/ESP-1ch-Gateway"
 "xreef/LoRa_E32_Series_Library" -> "jgromes/RadioLib"
 "xreef/LoRa_E32_Series_Library" -> "jgromes/LoRaLib"
+"256dpi/arduino-mqtt" -> "mcci-catena/arduino-lmic" ["e"=1]
 "things4u/ESP-1ch-Gateway" -> "things4u/ESP-1ch-Gateway-v5.0--OLD"
 "things4u/ESP-1ch-Gateway" -> "mcci-catena/arduino-lmic"
 "things4u/ESP-1ch-Gateway" -> "manuelbl/ttn-esp32"
@@ -567,6 +599,7 @@ digraph G {
 "StuartsProjects/SX12XX-LoRa" -> "GrumpyOldPizza/ArduinoCore-stm32l0" ["e"=1]
 "StuartsProjects/SX12XX-LoRa" -> "ElectronicCats/Beelan-LoRaWAN"
 "StuartsProjects/SX12XX-LoRa" -> "xreef/LoRa_E32_Series_Library"
+"lora-aprs/LoRa_APRS_iGate" -> "G4lile0/tinyGS" ["e"=1]
 "G4lile0/tinyGS" -> "lora-aprs/LoRa_APRS_iGate" ["e"=1]
 "G4lile0/tinyGS" -> "projecthorus/radiosonde_auto_rx" ["e"=1]
 "G4lile0/tinyGS" -> "richonguzman/LoRa_APRS_Tracker" ["e"=1]
@@ -703,6 +736,7 @@ digraph G {
 "lyusupov/Ebyte-E78-breakout-PCB" -> "akarsh98/ASR6601-getting-started-guide"
 "Securethingsuk/Heltec_CubeCell" -> "wasn-eu/CubeCell_Getting_Started"
 "helium/helium-api-rs" -> "helium/proto"
+"absmach/supermq" -> "brocaar/chirpstack-network-server" ["e"=1]
 "helium/hotspot-app" -> "helium/explorer"
 "helium/hotspot-app" -> "helium/console"
 "helium/hotspot-app" -> "helium/blockchain-core"
@@ -716,6 +750,9 @@ digraph G {
 "helium/hotspot-app" -> "helium/gateway-rs"
 "helium/hotspot-app" -> "helium/HIP"
 "helium/hotspot-app" -> "helium/maker-starter-app"
+"NorthernMan54/rtl_433_ESP" -> "jgromes/RadioLib" ["e"=1]
+"timmbogner/Farm-Data-Relay-System" -> "sandeepmistry/arduino-LoRa" ["e"=1]
+"timmbogner/Farm-Data-Relay-System" -> "things4u/ESP-1ch-Gateway" ["e"=1]
 "lnlp/LMIC-node" -> "mcci-catena/arduino-lmic"
 "lnlp/LMIC-node" -> "mcci-catena/arduino-lorawan"
 "lnlp/LMIC-node" -> "kizniche/ttgo-tbeam-ttn-tracker"
@@ -798,6 +835,7 @@ digraph G {
 "matthijskooijman/arduino-lmic" -> "Lora-net/lora_gateway"
 "matthijskooijman/arduino-lmic" -> "gotthardp/lorawan-server"
 "matthijskooijman/arduino-lmic" -> "things4u/ESP-1ch-Gateway"
+"chaeplin/esp8266_and_arduino" -> "hallard/NodeMCU-Gateway" ["e"=1]
 "JiapengLi/lorawan-parser" -> "mirakonta/lora_gateway"
 "JiapengLi/lorawan-parser" -> "TheThingsNetwork/croft"
 "JiapengLi/lorawan-parser" -> "jeroennijhof/LoRaWAN"
@@ -823,6 +861,7 @@ digraph G {
 "opendata-stuttgart/sensors-software" -> "iot-basel/ttn-basel-feinstaub"
 "opendata-stuttgart/sensors-software" -> "opendata-stuttgart/devices.sensor.community"
 "opendata-stuttgart/sensors-software" -> "opendata-stuttgart/feinstaub-map-v2"
+"jekhokie/raspberry-noaa-v2" -> "G4lile0/tinyGS" ["e"=1]
 "helium/mappers" -> "Max-Plastix/tbeam-helium-mapper"
 "helium/mappers" -> "helium/console-decoders"
 "helium/mappers" -> "helium/console"
@@ -833,6 +872,7 @@ digraph G {
 "Milesight-IoT/SensorDecoders" -> "TheThingsNetwork/lorawan-devices"
 "Milesight-IoT/SensorDecoders" -> "ProVuUK/Alliot-decoders"
 "dewi-alliance/hotspot-manufacturers" -> "helium/packet_forwarder"
+"ArmDeveloperEcosystem/lorawan-library-for-pico" -> "lnlp/LMIC-node" ["e"=1]
 "TheThingsArchive/packet_forwarder" -> "TheThingsArchive/lora_gateway"
 "TheThingsArchive/packet_forwarder" -> "kersing/packet_forwarder"
 "TheThingsArchive/packet_forwarder" -> "TheThingsNetwork/kerlink-wirnet-firmware"
@@ -861,6 +901,7 @@ digraph G {
 "opendata-stuttgart/feinstaub-api" -> "opendata-stuttgart/feinstaub-map"
 "NebraLtd/light-hotspot-software" -> "NebraLtd/hm-diag"
 "NebraLtd/hm-diag" -> "NebraLtd/light-hotspot-software"
+"rweather/arduinolibs" -> "sandeepmistry/arduino-LoRa" ["e"=1]
 "helium/denylist" -> "helium/helium-wallet-rs"
 "helium/denylist" -> "helium/HIP"
 "helium/denylist" -> "helium/gateway-rs"
@@ -868,6 +909,7 @@ digraph G {
 "helium/denylist" -> "NebraLtd/helium-miner-software"
 "helium/denylist" -> "helium/explorer"
 "helium/denylist" -> "helium/hotspot-app"
+"wemos/D1_mini_Examples" -> "hallard/WeMos-Lora" ["e"=1]
 "nhatfield/hnt_monitor" -> "Carniverous19/helium-DIY-middleman"
 "lyusupov/SoftRF" -> "gereic/GXAirCom"
 "lyusupov/SoftRF" -> "LilyGO/TTGO-T-Beam"
@@ -917,6 +959,7 @@ digraph G {
 "nopnop2002/esp-idf-sx126x" -> "nopnop2002/esp-idf-sx127x"
 "helium/maker-starter-app" -> "helium/onboarding-server"
 "helium/maker-starter-app" -> "helium/react-native-helium"
+"cyoung/stratux" -> "lyusupov/SoftRF" ["e"=1]
 "tftelkamp/single_chan_pkt_fwd" -> "things4u/LoRa-LMIC-1.51"
 "tftelkamp/single_chan_pkt_fwd" -> "matthijskooijman/arduino-lmic"
 "tftelkamp/single_chan_pkt_fwd" -> "JaapBraam/LoRaWanGateway"
@@ -1021,6 +1064,9 @@ digraph G {
 "ernstdevreede/lmic_pi" -> "wklenk/lmic-rpi-lora-gps-hat"
 "ernstdevreede/lmic_pi" -> "computenodes/dragino"
 "danak6jq/RAK3172" -> "PrometheanDesign/LoRaWAN_End_Node"
+"openthread/openthread" -> "Lora-net/LoRaMac-node" ["e"=1]
+"wuspy/portal_calendar" -> "cyberman54/ESP32-Paxcounter" ["e"=1]
+"Agile-IoT/awesome-open-iot" -> "brocaar/chirpstack-application-server" ["e"=1]
 "hallard/WeMos-Lora" -> "SensorsIot/ESP-1ch-Gateway"
 "hallard/WeMos-Lora" -> "hallard/Mini-LoRa"
 "hallard/WeMos-Lora" -> "things4u/ESP-1ch-Gateway-v5.0--OLD"
@@ -1116,6 +1162,7 @@ digraph G {
 "mcci-catena/arduino-lmic" -> "thesolarnomad/lora-serialization"
 "mcci-catena/arduino-lmic" -> "hallard/WeMos-Lora"
 "mcci-catena/arduino-lmic" -> "Lora-net/LoRaMac-node"
+"contiki-os/contiki" -> "Lora-net/LoRaMac-node" ["e"=1]
 "GlidingWeb/IgcWebview2" -> "alistairmgreen/jsigc"
 "GlidingWeb/IgcWebview2" -> "GliderGeek/PySoar"
 "GlidingWeb/IgcWebview2" -> "ezgliding/goigc"
@@ -1149,6 +1196,7 @@ digraph G {
 "JaapBraam/LoRaWanGateway" -> "anthonykirby/lora-packet"
 "JaapBraam/LoRaWanGateway" -> "hallard/LoRasPI"
 "JaapBraam/LoRaWanGateway" -> "gotthardp/lorawan-server"
+"rpp0/gr-lora" -> "anthonykirby/lora-packet" ["e"=1]
 "prunkdump/arduino-variometer" -> "prunkdump/GNUVario-TTGO-T5"
 "prunkdump/arduino-variometer" -> "FreeVario/FreeVario"
 "prunkdump/arduino-variometer" -> "tlivernet/DIY-Arduino-variometer"
@@ -1173,6 +1221,8 @@ digraph G {
 "brocaar/chirpstack-application-server" -> "lorabasics/basicstation"
 "brocaar/chirpstack-application-server" -> "brocaar/chirpstack-simulator"
 "hallard/LoRasPI" -> "hallard/single_chan_pkt_fwd"
+"Xinyuan-LilyGO/T-Deck" -> "Xinyuan-LilyGO/LilyGo-LoRa-Series" ["e"=1]
+"hallard/RadioHead" -> "hallard/LoRasPI" ["e"=1]
 "TheThingsNetwork/arduino-device-lib" -> "TheThingsNetwork/arduino-node-lib"
 "TheThingsNetwork/arduino-device-lib" -> "mcci-catena/arduino-lmic"
 "TheThingsNetwork/arduino-device-lib" -> "mcci-catena/arduino-lorawan"
@@ -1230,9 +1280,16 @@ digraph G {
 "ch2i/iC880A-Raspberry-PI" -> "ch2i/LoraGW-Setup"
 "xreef/EByte_LoRa_E220_micropython_library" -> "matthias-bs/loraE22"
 "ezgliding/goigc" -> "GlidingWeb/IgcWebview2"
+"lucadentella/esp32-tutorial" -> "manuelbl/ttn-esp32" ["e"=1]
+"vshymanskyy/TinyGSM" -> "sandeepmistry/arduino-LoRa" ["e"=1]
+"vshymanskyy/TinyGSM" -> "mcci-catena/arduino-lmic" ["e"=1]
+"whitecatboard/Lua-RTOS-ESP32" -> "JaapBraam/LoRaWanGateway" ["e"=1]
 "jgromes/LoRaLib" -> "nimaltd/sx1278" ["e"=1]
 "jgromes/LoRaLib" -> "sandeepmistry/arduino-LoRa"
 "jgromes/LoRaLib" -> "SensorsIot/ESP-1ch-Gateway"
+"pycom/pycom-libraries" -> "matthijskooijman/arduino-lmic" ["e"=1]
+"pycom/pycom-libraries" -> "jeroennijhof/LoRaWAN" ["e"=1]
+"pycom/pycom-libraries" -> "TheThingsArchive/ttn" ["e"=1]
 "mcci-catena/arduino-lorawan" -> "mcci-catena/arduino-lmic"
 "mcci-catena/arduino-lorawan" -> "ElectronicCats/Beelan-LoRaWAN"
 "mcci-catena/arduino-lorawan" -> "manuelbl/ttn-esp32"
@@ -1283,6 +1340,7 @@ digraph G {
 "hallard/Mini-LoRa" -> "JackGruber/Arduino-Pro-Mini-LoRa-Sensor-Node"
 "hallard/Mini-LoRa" -> "LacunaSpace/basicmac"
 "hallard/Mini-LoRa" -> "ccadic/RFM95LORA_Breadboard"
+"contiki-ng/contiki-ng" -> "Lora-net/LoRaMac-node" ["e"=1]
 "Turbo87/aeroscore" -> "kedder/openvario-compman"
 "twpayne/igc2kmz.py" -> "Turbo87/igc-parser"
 "twpayne/igc2kmz.py" -> "mmomtchev/igc-xc-score"
@@ -1304,22 +1362,31 @@ digraph G {
 "Lora-net/packet_forwarder" ["l"="54.285,6.409"]
 "brocaar/chirpstack-geolocation-server" ["l"="54.211,6.405"]
 "ElectronicCats/Beelan-LoRaWAN" ["l"="54.415,6.381"]
-"jgromes/RadioLib" ["l"="54.464,6.333"]
+"rocketscream/Low-Power" ["l"="-13.968,-42.276", "c"=820]
+"mcci-catena/arduino-lmic" ["l"="54.388,6.384"]
+"matthijskooijman/arduino-lmic" ["l"="54.369,6.412"]
 "sandeepmistry/arduino-LoRa" ["l"="54.397,6.364"]
-"NorthernMan54/rtl_433_ESP" ["l"="55.282,2.461"]
+"jgromes/RadioLib" ["l"="54.464,6.333"]
+"NorthernMan54/rtl_433_ESP" ["l"="55.282,2.461", "c"=954]
 "StuartsProjects/SX12XX-LoRa" ["l"="54.438,6.35"]
 "beegee-tokyo/SX126x-Arduino" ["l"="54.447,6.374"]
-"mcci-catena/arduino-lmic" ["l"="54.388,6.384"]
 "G4lile0/tinyGS" ["l"="54.478,6.263"]
 "Xinyuan-LilyGO/LilyGo-LoRa-Series" ["l"="54.444,6.289"]
-"meshtastic/firmware" ["l"="53.286,5.455"]
+"meshtastic/firmware" ["l"="53.286,5.455", "c"=679]
 "Lora-net/LoRaMac-node" ["l"="54.318,6.381"]
-"LSatan/SmartRC-CC1101-Driver-Lib" ["l"="55.272,2.476"]
+"LSatan/SmartRC-CC1101-Driver-Lib" ["l"="55.272,2.476", "c"=954]
 "xreef/LoRa_E32_Series_Library" ["l"="54.481,6.402"]
 "jgromes/LoRaLib" ["l"="54.464,6.385"]
 "LoRaMesher/LoRaMesher" ["l"="54.539,6.32"]
-"rfquack/RFQuack" ["l"="55.214,2.478"]
-"merbanan/rtl_433" ["l"="54.381,4.717"]
+"rfquack/RFQuack" ["l"="55.214,2.478", "c"=954]
+"merbanan/rtl_433" ["l"="54.381,4.717", "c"=214]
+"UncleRus/esp-idf-lib" ["l"="-15.834,-42.331", "c"=387]
+"Inteform/esp32-lora-library" ["l"="54.492,6.453"]
+"iegomez/mosquitto-go-auth" ["l"="-17.594,-45.012", "c"=550]
+"gcgarner/IOTstack" ["l"="-15.474,-41.145", "c"=210]
+"cyberman54/ESP32-Paxcounter" ["l"="54.431,6.323"]
+"nopnop2002/esp-idf-ssd1306" ["l"="-15.892,-42.333", "c"=387]
+"nopnop2002/esp-idf-sx126x" ["l"="54.512,6.444"]
 "Lora-net/lora_gateway" ["l"="54.306,6.406"]
 "gotthardp/lorawan-server" ["l"="54.298,6.426"]
 "CongducPham/LowCostLoRaGw" ["l"="54.346,6.408"]
@@ -1327,7 +1394,6 @@ digraph G {
 "ttn-zh/ic880a-gateway" ["l"="54.318,6.444"]
 "TheThingsArchive/ttn" ["l"="54.276,6.432"]
 "Lora-net/sx1302_hal" ["l"="54.225,6.378"]
-"matthijskooijman/arduino-lmic" ["l"="54.369,6.412"]
 "lorabasics/basicstation" ["l"="54.267,6.415"]
 "dragino/Lora" ["l"="54.35,6.43"]
 "JiapengLi/lorawan-parser" ["l"="54.278,6.47"]
@@ -1335,32 +1401,37 @@ digraph G {
 "kizniche/ttgo-tbeam-ttn-tracker" ["l"="54.408,6.309"]
 "lyusupov/SoftRF" ["l"="54.479,6.216"]
 "LilyGO/TTGO-LORA32" ["l"="54.398,6.325"]
-"lora-aprs/LoRa_APRS_iGate" ["l"="52.71,5.551"]
-"cyberman54/ESP32-Paxcounter" ["l"="54.431,6.323"]
+"lora-aprs/LoRa_APRS_iGate" ["l"="52.71,5.551", "c"=322]
 "Xinyuan-LilyGO/TTGO-LoRa-Series" ["l"="54.387,6.263"]
-"lora-aprs/LoRa_APRS_Tracker" ["l"="52.736,5.537"]
+"lora-aprs/LoRa_APRS_Tracker" ["l"="52.736,5.537", "c"=322]
 "LilyGO/TTGO-LoRa32-V2.1" ["l"="54.38,6.281"]
 "tekk/TTGO-T-Beam-Car-Tracker" ["l"="54.425,6.253"]
 "DeuxVis/Lora-TTNMapper-T-Beam" ["l"="54.437,6.264"]
 "HelTecAutomation/Heltec_ESP32" ["l"="54.456,6.36"]
+"STMicroelectronics/STM32CubeWB" ["l"="-18.046,-43.04", "c"=55]
+"STMicroelectronics/STM32CubeWL" ["l"="54.492,6.602"]
+"mikalhart/TinyGPSPlus" ["l"="-13.825,-41.743", "c"=812]
 "things4u/ESP-1ch-Gateway-v5.0--OLD" ["l"="54.397,6.408"]
-"1technophile/OpenMQTTGateway" ["l"="-15.391,-41.2"]
+"1technophile/OpenMQTTGateway" ["l"="-15.391,-41.2", "c"=210]
 "manuelbl/ttn-esp32" ["l"="54.434,6.415"]
 "things4u/ESP-1ch-Gateway" ["l"="54.417,6.389"]
-"G4lile0/ESP32-WiFi-Hash-Monster" ["l"="54.273,3.615"]
+"G4lile0/ESP32-WiFi-Hash-Monster" ["l"="54.273,3.615", "c"=379]
+"botletics/SIM7000-LTE-Shield" ["l"="-15.467,-40.851", "c"=210]
+"nootropicdesign/lora-mesh" ["l"="54.486,6.339"]
+"LowPowerLab/RFM69" ["l"="-14.924,-41.229", "c"=210]
 "sudomesh/disaster-radio" ["l"="54.517,6.264"]
 "sudomesh/LoRaLayer2" ["l"="54.542,6.291"]
 "spleenware/ripple" ["l"="54.516,6.292"]
-"nootropicdesign/lora-mesh" ["l"="54.486,6.339"]
-"meshtastic/Meshtastic-Android" ["l"="53.316,5.437"]
-"markqvist/Reticulum" ["l"="53.249,5.48"]
-"dalethomas81/HamMessenger" ["l"="52.609,5.598"]
-"travisgoodspeed/loraham" ["l"="52.595,5.634"]
-"meshtastic/python" ["l"="53.35,5.468"]
+"meshtastic/Meshtastic-Android" ["l"="53.316,5.437", "c"=679]
+"markqvist/Reticulum" ["l"="53.249,5.48", "c"=679]
+"dalethomas81/HamMessenger" ["l"="52.609,5.598", "c"=322]
+"travisgoodspeed/loraham" ["l"="52.595,5.634", "c"=322]
+"meshtastic/python" ["l"="53.35,5.468", "c"=679]
 "bobricius/armachat" ["l"="54.602,6.226"]
-"meshtastic/meshtastic" ["l"="53.316,5.461"]
+"meshtastic/meshtastic" ["l"="53.316,5.461", "c"=679]
+"stratux/stratux" ["l"="53.992,5.864", "c"=796]
 "TheThingsNetwork/lorawan-stack" ["l"="54.264,6.373"]
-"contiki-os/contiki" ["l"="-17.652,-43.217"]
+"contiki-os/contiki" ["l"="-17.652,-43.217", "c"=55]
 "RAKWireless/rak_common_for_gateway" ["l"="54.322,6.357"]
 "RAKWireless/RAK2245-RAK831-LoRaGateway-RPi-Raspbian-OS" ["l"="54.303,6.301"]
 "RAKWireless/udp-packet-forwarder" ["l"="54.313,6.318"]
@@ -1389,6 +1460,7 @@ digraph G {
 "dvarrel/XCTRACK_vario" ["l"="54.76,6.005"]
 "har-in-air/ESP32_IMU_BARO_GPS_LOGGER" ["l"="54.741,6.01"]
 "glydrfreak/vSpeed-Vario" ["l"="54.744,5.989"]
+"bogde/HX711" ["l"="-13.673,-41.347", "c"=812]
 "Heltec-Aaron-Lee/WiFi_Kit_series" ["l"="54.422,6.361"]
 "HelTecAutomation/ESP32_LoRaWAN" ["l"="54.441,6.391"]
 "HelTecAutomation/CubeCell-Arduino" ["l"="54.488,6.382"]
@@ -1408,31 +1480,30 @@ digraph G {
 "chandrawi/LoRaRF-Arduino" ["l"="54.377,6.326"]
 "xreef/EByte_LoRa_E22_Series_Library" ["l"="54.516,6.409"]
 "RAKWireless/WisBlock" ["l"="54.407,6.198"]
-"nopnop2002/esp-idf-sx126x" ["l"="54.512,6.444"]
 "osresearch/esp32-ttgo" ["l"="54.388,6.298"]
 "fcgdam/TTGO_LoRa32" ["l"="54.42,6.275"]
 "helium/proto" ["l"="53.94,6.384"]
 "helium/helium-api-rs" ["l"="53.953,6.395"]
-"oe3cjb/TTGO-T-Beam-LoRa-APRS" ["l"="52.745,5.519"]
+"oe3cjb/TTGO-T-Beam-LoRa-APRS" ["l"="52.745,5.519", "c"=322]
 "lewisxhe/AXP202X_Library" ["l"="54.388,6.242"]
 "JoepSchyns/Low_power_TTGO_T-beam" ["l"="54.408,6.236"]
 "kizniche/ttn-tracker" ["l"="54.405,6.273"]
+"FOSSASystems/FOSSASAT-1" ["l"="19.712,14.275", "c"=868]
 "TheThingsNetwork/lorawan-devices" ["l"="54.181,6.358"]
 "Turbo87/aerofiles" ["l"="54.554,6.037"]
 "alistairmgreen/jsigc" ["l"="54.553,6"]
 "Turbo87/aeroscore" ["l"="54.567,6.051"]
 "kedder/openvario-compman" ["l"="54.578,6.039"]
+"projecthorus/radiosonde_auto_rx" ["l"="52.789,5.474", "c"=322]
 "YogoGit/TTGO-LORA32-V1.0" ["l"="54.362,6.28"]
 "LilyGO/LORA-ESP32-OLED" ["l"="54.36,6.299"]
 "LilyGO/ESP32-Paxcounter" ["l"="54.363,6.227"]
 "kersing/ESP-1ch-Gateway-v5.0-obsolete-" ["l"="54.445,6.436"]
-"Inteform/esp32-lora-library" ["l"="54.492,6.453"]
 "nopnop2002/esp-idf-sx127x" ["l"="54.523,6.468"]
 "TobleMiner/lmic-esp-idf" ["l"="54.469,6.451"]
-"nopnop2002/esp-idf-ssd1306" ["l"="-15.892,-42.333"]
 "berkutta/esp32_lmic" ["l"="54.496,6.475"]
-"siara-cc/esp32-idf-sqlite3" ["l"="-14.094,-40.809"]
-"yanbe/ssd1306-esp-idf-i2c" ["l"="-15.977,-42.311"]
+"siara-cc/esp32-idf-sqlite3" ["l"="-14.094,-40.809", "c"=645]
+"yanbe/ssd1306-esp-idf-i2c" ["l"="-15.977,-42.311", "c"=387]
 "ch2i/LoraGW-Setup" ["l"="54.305,6.498"]
 "hallard/RAK831-Zero" ["l"="54.265,6.549"]
 "ch2i/iC880A-Raspberry-PI" ["l"="54.337,6.475"]
@@ -1441,7 +1512,8 @@ digraph G {
 "lorabasics/basicloader" ["l"="54.244,6.456"]
 "xueliu/lora-feed" ["l"="54.201,6.467"]
 "anthonykirby/lora-packet" ["l"="54.281,6.451"]
-"ThingPulse/esp8266-oled-ssd1306" ["l"="-15.325,-40.989"]
+"ThingPulse/esp8266-oled-ssd1306" ["l"="-15.325,-40.989", "c"=210]
+"Xinyuan-LilyGO/LilyGo-T-Call-SIM800" ["l"="-15.429,-40.823", "c"=210]
 "hallard/WeMos-Lora" ["l"="54.391,6.449"]
 "things4u/ESP-1ch-Gateway-v4.0" ["l"="54.398,6.464"]
 "JaapBraam/LoRaWanGateway" ["l"="54.367,6.442"]
@@ -1465,6 +1537,7 @@ digraph G {
 "lnlp/LMIC-node" ["l"="54.425,6.402"]
 "rgot-org/TheThingsNetwork_esp32" ["l"="54.472,6.43"]
 "TheThingsNetwork/arduino-device-lib" ["l"="54.401,6.433"]
+"balena-labs-projects/balena-sense" ["l"="40.86,6.795", "c"=602]
 "helium/erlang-dkg" ["l"="53.969,6.34"]
 "helium/erlang-libp2p" ["l"="53.949,6.319"]
 "KrisKasprzak/EBYTE" ["l"="54.54,6.435"]
@@ -1494,7 +1567,7 @@ digraph G {
 "thesolarnomad/lora-serialization" ["l"="54.354,6.35"]
 "ElectronicCats/CayenneLPP" ["l"="54.513,6.387"]
 "lewisxhe/TTGO-T-Beam" ["l"="54.376,6.208"]
-"fantasticdonkey/uLoRa" ["l"="-20.85,-43.068"]
+"fantasticdonkey/uLoRa" ["l"="-20.85,-43.068", "c"=635]
 "JiapengLi/OpenWrt-lora" ["l"="54.136,6.519"]
 "mirakonta/OpenWrt-lora" ["l"="54.159,6.505"]
 "LK8000/LK8000" ["l"="54.581,6.098"]
@@ -1506,15 +1579,18 @@ digraph G {
 "helium/erlang-multihash" ["l"="53.914,6.326"]
 "helium/erlang-tpke" ["l"="53.897,6.315"]
 "marcobrianza/ESP-1ch-Gateway-v4.0" ["l"="54.441,6.474"]
+"DiegoPaezA/ESP32-freeRTOS" ["l"="-13.219,-42.085", "c"=1261]
 "dewi-alliance/grants" ["l"="54.055,6.461"]
 "miqueet/helium_miner_scripts" ["l"="54.006,6.461"]
 "helium/denylist" ["l"="53.979,6.427"]
 "helium/helium-program-library" ["l"="53.932,6.409"]
+"Mair/esp32-course" ["l"="-15.852,-42.339", "c"=387]
+"256dpi/arduino-mqtt" ["l"="-13.87,-40.672", "c"=645]
 "Lora-net/sx126x_driver" ["l"="54.176,6.294"]
 "Lora-net/llcc68_driver" ["l"="54.142,6.239"]
 "Lora-net/SWL2001" ["l"="54.198,6.308"]
 "faydr/QMesh" ["l"="54.578,6.264"]
-"datagod/meshwatch" ["l"="53.395,5.55"]
+"datagod/meshwatch" ["l"="53.395,5.55", "c"=679]
 "vicb/flyXC" ["l"="54.51,6.063"]
 "vicb/windy-plugin-sounding" ["l"="54.486,6.068"]
 "AntoineMeler/Paraglidable" ["l"="54.5,6.033"]
@@ -1526,16 +1602,14 @@ digraph G {
 "mmomtchev/igc-xc-score" ["l"="54.533,6.04"]
 "StuartsProjects/SX1280_Testing" ["l"="54.492,6.311"]
 "StuartsProjects/Devices" ["l"="54.472,6.308"]
-"GrumpyOldPizza/ArduinoCore-stm32l0" ["l"="-14.756,-40.864"]
-"projecthorus/radiosonde_auto_rx" ["l"="52.789,5.474"]
-"richonguzman/LoRa_APRS_Tracker" ["l"="52.745,5.551"]
-"jketterl/openwebrx" ["l"="54.293,4.791"]
-"richonguzman/LoRa_APRS_iGate" ["l"="52.755,5.537"]
-"FOSSASystems/FOSSASAT-1" ["l"="19.712,14.275"]
-"dl9rdz/rdz_ttgo_sonde" ["l"="52.768,5.484"]
-"SatDump/SatDump" ["l"="54.248,4.874"]
-"NanoVNA-Saver/nanovna-saver" ["l"="52.994,6.114"]
-"wb2osz/direwolf" ["l"="52.672,5.627"]
+"GrumpyOldPizza/ArduinoCore-stm32l0" ["l"="-14.756,-40.864", "c"=210]
+"richonguzman/LoRa_APRS_Tracker" ["l"="52.745,5.551", "c"=322]
+"jketterl/openwebrx" ["l"="54.293,4.791", "c"=214]
+"richonguzman/LoRa_APRS_iGate" ["l"="52.755,5.537", "c"=322]
+"dl9rdz/rdz_ttgo_sonde" ["l"="52.768,5.484", "c"=322]
+"SatDump/SatDump" ["l"="54.248,4.874", "c"=214]
+"NanoVNA-Saver/nanovna-saver" ["l"="52.994,6.114", "c"=701]
+"wb2osz/direwolf" ["l"="52.672,5.627", "c"=322]
 "ezgliding/goigc" ["l"="54.523,6.008"]
 "twpayne/igc2kmz.py" ["l"="54.539,6.023"]
 "moshe-braner/SoftRF" ["l"="54.515,6.101"]
@@ -1575,9 +1649,10 @@ digraph G {
 "FreeVario/FreeVario" ["l"="54.632,6.05"]
 "Eawag-SWW/lora-based-mesh" ["l"="54.594,6.334"]
 "lyusupov/Ebyte-E78-breakout-PCB" ["l"="54.672,6.387"]
+"absmach/supermq" ["l"="-17.443,-44.867", "c"=550]
 "helium/maker-starter-app" ["l"="53.994,6.318"]
-"ArmDeveloperEcosystem/lorawan-library-for-pico" ["l"="-20.844,-43.109"]
-"STMicroelectronics/STM32CubeWL" ["l"="54.492,6.602"]
+"timmbogner/Farm-Data-Relay-System" ["l"="-13.734,-40.729", "c"=645]
+"ArmDeveloperEcosystem/lorawan-library-for-pico" ["l"="-20.844,-43.109", "c"=635]
 "eewiki/stm32wl_radioDriver_pingPong" ["l"="54.522,6.609"]
 "stm32duino/STM32LoRaWAN" ["l"="54.517,6.637"]
 "danak6jq/Seeed-LoRa-E5" ["l"="54.461,6.578"]
@@ -1597,6 +1672,8 @@ digraph G {
 "Akaflieg-Freiburg/enroute" ["l"="54.619,6.077"]
 "alus-it/AirspaceConverter" ["l"="54.583,6.058"]
 "things4u/LoRa-LMIC-1.51" ["l"="54.379,6.474"]
+"chaeplin/esp8266_and_arduino" ["l"="-15.334,-41.29", "c"=210]
+"hallard/NodeMCU-Gateway" ["l"="54.362,6.384"]
 "mirakonta/lora_gateway" ["l"="54.285,6.488"]
 "TheThingsNetwork/croft" ["l"="54.257,6.484"]
 "jeroennijhof/LoRaWAN" ["l"="54.295,6.539"]
@@ -1614,6 +1691,7 @@ digraph G {
 "iot-basel/ttn-basel-feinstaub" ["l"="54.39,6.609"]
 "opendata-stuttgart/devices.sensor.community" ["l"="54.418,6.592"]
 "opendata-stuttgart/feinstaub-map-v2" ["l"="54.411,6.609"]
+"jekhokie/raspberry-noaa-v2" ["l"="54.222,4.959", "c"=214]
 "Jaimi5/LoRaChat" ["l"="54.578,6.304"]
 "royyandzakiy/LoRa-RHMesh" ["l"="54.578,6.318"]
 "dragino/dragino-end-node-decoder" ["l"="54.133,6.301"]
@@ -1629,13 +1707,14 @@ digraph G {
 "NebraLtd/hm-pktfwd" ["l"="53.892,6.457"]
 "RAKWireless/RAK831_LoRaGateway" ["l"="54.207,6.529"]
 "NebraLtd/light-hotspot-software" ["l"="53.861,6.48"]
+"rweather/arduinolibs" ["l"="-20.958,-24.321", "c"=1251]
 "helium/xorf-generator" ["l"="53.956,6.447"]
+"wemos/D1_mini_Examples" ["l"="-14.065,-40.69", "c"=645]
 "nhatfield/hnt_monitor" ["l"="54.026,6.512"]
-"stratux/stratux" ["l"="53.992,5.864"]
-"lyusupov/ADSB-Out" ["l"="53.925,5.881"]
-"cyoung/stratux" ["l"="53.949,5.926"]
-"Xinyuan-LilyGO/T-Echo" ["l"="53.438,5.41"]
-"DroneBridge/DroneBridge" ["l"="58.874,14.129"]
+"lyusupov/ADSB-Out" ["l"="53.925,5.881", "c"=796]
+"cyoung/stratux" ["l"="53.949,5.926", "c"=796]
+"Xinyuan-LilyGO/T-Echo" ["l"="53.438,5.41", "c"=679]
+"DroneBridge/DroneBridge" ["l"="58.874,14.129", "c"=264]
 "CongducPham/tutorials" ["l"="54.342,6.45"]
 "helium/onboarding-server" ["l"="53.98,6.294"]
 "helium/react-native-helium" ["l"="53.996,6.292"]
@@ -1649,7 +1728,7 @@ digraph G {
 "mirakonta/Raspberry-PI-Link-Labs-LoRaWAN-Gateway" ["l"="54.271,6.525"]
 "dmahony/LoRa-AX25-IP-Network" ["l"="54.315,6.629"]
 "mayeranalytics/pySX127x" ["l"="54.318,6.582"]
-"markqvist/tncattach" ["l"="53.188,5.533"]
+"markqvist/tncattach" ["l"="53.188,5.533", "c"=679]
 "enes-oerdek/Home-Assistant-Helium-Integration" ["l"="54.121,6.473"]
 "xreef/EByte_LoRa_E220_micropython_library" ["l"="54.607,6.415"]
 "asrlora/asr_lora_6601" ["l"="54.685,6.371"]
@@ -1668,33 +1747,41 @@ digraph G {
 "glidernet/ogn-ddb" ["l"="54.61,5.944"]
 "wklenk/lmic-rpi-lora-gps-hat" ["l"="54.344,6.581"]
 "computenodes/dragino" ["l"="54.313,6.56"]
+"openthread/openthread" ["l"="-17.647,-43.332", "c"=55]
+"wuspy/portal_calendar" ["l"="2.614,-5.216", "c"=472]
+"Agile-IoT/awesome-open-iot" ["l"="-15.331,-41.401", "c"=210]
 "hallard/Mini-LoRa" ["l"="54.401,6.485"]
 "hallard/ESP-1ch-Gateway" ["l"="54.41,6.502"]
-"hallard/NodeMCU-Gateway" ["l"="54.362,6.384"]
 "SensorsIot/LoRa-Point-to-Point" ["l"="54.432,6.501"]
 "marcobrianza/Lora_Node_1.3" ["l"="54.422,6.485"]
-"LowPowerLab/Moteino" ["l"="-14.844,-41.181"]
+"LowPowerLab/Moteino" ["l"="-14.844,-41.181", "c"=210]
 "dragino/LoRa_STM32" ["l"="54.327,6.498"]
 "idreamsi/LoRaE5" ["l"="54.262,6.604"]
 "Seeed-Solution/TTN-Payload-Decoder" ["l"="54.109,6.278"]
 "helium/wallet-app" ["l"="53.889,6.402"]
-"coral-xyz/xnft-quickstart" ["l"="-18.2,8.581"]
+"coral-xyz/xnft-quickstart" ["l"="-18.2,8.581", "c"=229]
 "andresoliva/LoRa-E5" ["l"="54.25,6.623"]
 "things4u/ESP-1ch-Gateway-v3.0" ["l"="54.456,6.425"]
 "GliderGeek/PySoar" ["l"="54.532,5.961"]
 "SandboxElectronics/LoRaGoDOCK-Gateway" ["l"="54.387,6.495"]
+"rpp0/gr-lora" ["l"="54.085,4.792", "c"=214]
 "tlivernet/DIY-Arduino-variometer" ["l"="54.7,6.036"]
+"Xinyuan-LilyGO/T-Deck" ["l"="53.258,5.574", "c"=679]
+"hallard/RadioHead" ["l"="-14.8,-41.32", "c"=210]
 "TheThingsNetwork/arduino-node-lib" ["l"="54.425,6.468"]
 "jpmeijers/RN2483-Arduino-Library" ["l"="54.455,6.491"]
 "jieter/python-lora" ["l"="54.252,6.515"]
-"IOActive/laf" ["l"="53.997,4.789"]
-"rpp0/gr-lora" ["l"="54.085,4.792"]
+"IOActive/laf" ["l"="53.997,4.789", "c"=214]
 "brocaar/lora-channel-manager" ["l"="54.201,6.361"]
 "will127534/lora_gateway" ["l"="54.305,6.358"]
 "sandeepmistry/node-sx127x" ["l"="54.293,6.584"]
 "NamNamIoT/RAK3172_CANOPUS" ["l"="54.493,6.625"]
 "matthias-bs/loraE22" ["l"="54.635,6.415"]
-"nimaltd/sx1278" ["l"="-17.628,-42.761"]
+"lucadentella/esp32-tutorial" ["l"="-15.801,-42.327", "c"=387]
+"vshymanskyy/TinyGSM" ["l"="-15.391,-40.924", "c"=210]
+"whitecatboard/Lua-RTOS-ESP32" ["l"="-19.232,-43.018", "c"=856]
+"nimaltd/sx1278" ["l"="-17.628,-42.761", "c"=55]
+"pycom/pycom-libraries" ["l"="-20.769,-43.02", "c"=635]
 "adafruit/TinyLoRa" ["l"="54.452,6.46"]
 "ropg/LoRaWAN_ESP32" ["l"="54.553,6.356"]
 "AmedeeBulle/ttn-gateway-containers" ["l"="54.269,6.313"]
@@ -1708,5 +1795,6 @@ digraph G {
 "AmedeeBulle/TTNMkrWanNode" ["l"="54.42,6.52"]
 "JackGruber/Arduino-Pro-Mini-LoRa-Sensor-Node" ["l"="54.435,6.523"]
 "ccadic/RFM95LORA_Breadboard" ["l"="54.403,6.519"]
+"contiki-ng/contiki-ng" ["l"="-17.675,-43.201", "c"=55]
 "3s1d/fanet-base" ["l"="54.581,6.123"]
 }

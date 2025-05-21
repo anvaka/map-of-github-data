@@ -12,6 +12,7 @@ digraph G {
 "jenkinsci/build-monitor-plugin" -> "jenkinsci/workflow-cps-global-lib-plugin"
 "jenkinsci/build-monitor-plugin" -> "mojohaus/extra-enforcer-rules" ["e"=1]
 "jenkinsci/build-monitor-plugin" -> "jenkinsci/junit-plugin"
+"jenkins-x/jx" -> "jenkinsci/configuration-as-code-plugin" ["e"=1]
 "jenkinsci/jenkinsfile-runner" -> "jenkinsci/JenkinsPipelineUnit"
 "jenkinsci/jenkinsfile-runner" -> "jenkinsci/configuration-as-code-plugin"
 "jenkinsci/jenkinsfile-runner" -> "cloudbees/jenkins-scripts"
@@ -27,6 +28,11 @@ digraph G {
 "jenkinsci/jenkinsfile-runner" -> "jenkinsci/jenkins-test-harness"
 "jenkinsci/jenkinsfile-runner" -> "jenkinsci/jenkinsfile-runner-github-actions"
 "jenkinsci/jenkinsfile-runner" -> "jenkinsci/kubernetes-plugin" ["e"=1]
+"SAP/jenkins-library" -> "jenkinsci/JenkinsPipelineUnit" ["e"=1]
+"SAP/jenkins-library" -> "fabric8io/fabric8-pipeline-library" ["e"=1]
+"SAP/jenkins-library" -> "jenkins-infra/pipeline-library" ["e"=1]
+"SAP/jenkins-library" -> "griddynamics/mpl" ["e"=1]
+"SAP/jenkins-library" -> "wcm-io-devops/jenkins-pipeline-library" ["e"=1]
 "jfrog/jenkins-artifactory-plugin" -> "jfrog/build-info"
 "jfrog/jenkins-artifactory-plugin" -> "jfrog/bamboo-jfrog-plugin"
 "jfrog/jenkins-artifactory-plugin" -> "jfrog/jfrog-cli-plugins-reg"
@@ -66,6 +72,10 @@ digraph G {
 "gitlab4j/gitlab4j-api" -> "swagger-api/swagger-parser" ["e"=1]
 "gitlab4j/gitlab4j-api" -> "python-gitlab/python-gitlab" ["e"=1]
 "gitlab4j/gitlab4j-api" -> "jacoco/jacoco" ["e"=1]
+"dennyzhang/cheatsheet.dennyzhang.com" -> "dennyzhang/cheatsheet-jenkins-groovy-A4" ["e"=1]
+"atlassian-api/atlassian-python-api" -> "pycontribs/jenkinsapi" ["e"=1]
+"gitless-vcs/gitless" -> "MagalixCorp/sample-api" ["e"=1]
+"gitless-vcs/gitless" -> "jenkinsci/remoting" ["e"=1]
 "jenkinsci/pipeline-plugin" -> "jenkinsci/pipeline-examples"
 "jenkinsci/pipeline-plugin" -> "jenkinsci/job-dsl-plugin"
 "jenkinsci/pipeline-plugin" -> "jenkinsci/blueocean-plugin"
@@ -81,6 +91,8 @@ digraph G {
 "jenkinsci/pipeline-plugin" -> "jenkinsci/gitlab-plugin"
 "jenkinsci/pipeline-plugin" -> "sheehan/job-dsl-gradle-example"
 "jenkinsci/pipeline-plugin" -> "jfrog/project-examples"
+"sameersbn/docker-gitlab" -> "jenkinsci/docker" ["e"=1]
+"bobcarroll/jira-client" -> "jenkinsci/java-client-api" ["e"=1]
 "Wolox/wolox-ci" -> "griddynamics/mpl"
 "Wolox/wolox-ci" -> "wcm-io-devops/jenkins-pipeline-library"
 "jenkinsci/configuration-as-code-plugin" -> "jenkinsci/job-dsl-plugin"
@@ -98,6 +110,7 @@ digraph G {
 "jenkinsci/configuration-as-code-plugin" -> "jenkinsci/kubernetes-operator"
 "jenkinsci/configuration-as-code-plugin" -> "goss-org/goss" ["e"=1]
 "jenkinsci/configuration-as-code-plugin" -> "jenkinsci/blueocean-plugin"
+"dennyzhang/kubernetes-yaml-templates" -> "dennyzhang/cheatsheet-jenkins-groovy-A4" ["e"=1]
 "ExpediaGroup/jenkins-spock" -> "macg33zr/pipelineUnit"
 "ExpediaGroup/jenkins-spock" -> "mkobit/jenkins-pipeline-shared-libraries-gradle-plugin"
 "ExpediaGroup/jenkins-spock" -> "edgexfoundry/edgex-global-pipelines"
@@ -122,6 +135,7 @@ digraph G {
 "jenkinsci/plugin-installation-manager-tool" -> "jenkinsci/JenkinsPipelineUnit"
 "timols/jenkins-gitlab-merge-request-builder-plugin" -> "jenkinsci/gitlab-plugin"
 "timols/jenkins-gitlab-merge-request-builder-plugin" -> "jenkinsci/gitlab-merge-request-builder-plugin"
+"docker-library/official-images" -> "jenkinsci/docker" ["e"=1]
 "anancarv/python-artifactory" -> "nymous/pydantic-vault"
 "jenkinsci/slack-plugin" -> "jenkinsci/github-branch-source-plugin"
 "jenkinsci/slack-plugin" -> "jenkinsci/JenkinsPipelineUnit"
@@ -150,6 +164,7 @@ digraph G {
 "jenkinsci/gitlab-plugin" -> "jenkinsci/jenkins-scripts"
 "jenkinsci/gitlab-plugin" -> "jenkinsci/docker-workflow-plugin"
 "jenkinsci/maven-plugin" -> "jenkinsci/workflow-job-plugin"
+"jenkinsci/lockable-resources-plugin" -> "jenkinsci/workflow-api-plugin" ["e"=1]
 "jenkinsci/warnings-ng-plugin" -> "jenkinsci/analysis-model"
 "jenkinsci/warnings-ng-plugin" -> "jenkinsci/checks-api-plugin"
 "jenkinsci/warnings-ng-plugin" -> "jenkinsci/warnings-plugin"
@@ -159,10 +174,14 @@ digraph G {
 "jenkinsci/warnings-ng-plugin" -> "jenkinsci/git-forensics-plugin"
 "jenkinsci/warnings-ng-plugin" -> "uhafner/warnings-ng-plugin-devenv"
 "jenkinsci/warnings-ng-plugin" -> "jenkinsci/pipeline-graph-view-plugin"
+"jenkinsci/acceptance-test-harness" -> "jenkinsci/jenkins-test-harness" ["e"=1]
 "jenkinsci/durable-task-plugin" -> "jenkinsci/workflow-durable-task-step-plugin"
 "jenkinsci/gitlab-branch-source-plugin" -> "jenkinsci/gitlab-api-plugin"
+"dennyzhang/cheatsheet-kubernetes-A4" -> "dennyzhang/cheatsheet-jenkins-groovy-A4" ["e"=1]
 "cloudbees/cloudbees-examples" -> "kyounger/casc-plugin-dependency-calculation"
 "cloudbees/cloudbees-examples" -> "kyounger/cbci-helmfile"
+"VirtusLab/git-machete" -> "VirtusLab/jenkins-operator" ["e"=1]
+"rogaha/docker-desktop" -> "kevinburke/doony" ["e"=1]
 "jenkinsci/jenkinsfile-runner-github-actions" -> "jenkinsci/ci.jenkins.io-runner"
 "jenkinsci/jenkinsfile-runner-github-actions" -> "gjtorikian/repository-sync" ["e"=1]
 "jenkinsci/docker-plugin" -> "KostyaSha/yet-another-docker-plugin"
@@ -180,9 +199,14 @@ digraph G {
 "wcm-io-devops/jenkins-pipeline-library" -> "mkobit/jenkins-pipeline-shared-libraries-gradle-plugin"
 "wcm-io-devops/jenkins-pipeline-library" -> "buildit/jenkins-pipeline-libraries"
 "wcm-io-devops/jenkins-pipeline-library" -> "opendevstack/ods-jenkins-shared-library"
+"wakaleo/game-of-life" -> "jenkinsci/pipeline-plugin" ["e"=1]
 "timols/java-gitlab-api" -> "gitlab4j/gitlab4j-api"
 "timols/java-gitlab-api" -> "jenkinsci/java-client-api"
 "timols/java-gitlab-api" -> "cdancy/jenkins-rest"
+"centic9/jgit-cookbook" -> "gitlab4j/gitlab4j-api" ["e"=1]
+"centic9/jgit-cookbook" -> "jenkinsci/java-client-api" ["e"=1]
+"centic9/jgit-cookbook" -> "timols/java-gitlab-api" ["e"=1]
+"eclipse/jgit" -> "jenkinsci/java-client-api" ["e"=1]
 "jenkinsci/email-ext-plugin" -> "jenkinsci/junit-plugin"
 "odavid/my-bloody-jenkins" -> "odavid/k8s-helm-charts"
 "odavid/my-bloody-jenkins" -> "samrocketman/jenkins-bootstrap-shared"
@@ -209,6 +233,7 @@ digraph G {
 "jenkinsci/kubernetes-operator" -> "oleg-nenashev/demo-jenkins-config-as-code"
 "jenkinsci/kubernetes-operator" -> "kudobuilder/kudo" ["e"=1]
 "jenkinsci/kubernetes-operator" -> "external-secrets/kubernetes-external-secrets" ["e"=1]
+"apenwarr/git-subtree" -> "JohnAlbin/git-svn-migrate" ["e"=1]
 "jenkins-infra/update-center2" -> "ikedam/backend-update-center2"
 "jenkins-infra/update-center2" -> "jenkinsci/juseppe"
 "jenkins-infra/update-center2" -> "jenkinsci/bom"
@@ -248,6 +273,7 @@ digraph G {
 "dennyzhang/cheatsheet-jenkins-groovy-A4" -> "dennyzhang/cheatsheet-git-A4" ["e"=1]
 "dennyzhang/cheatsheet-jenkins-groovy-A4" -> "dennyzhang/cheatsheet-kubernetes-A4" ["e"=1]
 "dennyzhang/cheatsheet-jenkins-groovy-A4" -> "jenkinsci/jenkinsfile-runner"
+"my-dlq/blog-example" -> "cdancy/jenkins-rest" ["e"=1]
 "jfrog/charts" -> "jfrog/artifactory-user-plugins"
 "jfrog/charts" -> "jfrog/JFrog-Cloud-Installers"
 "jfrog/charts" -> "jfrog/artifactory-docker-examples"
@@ -308,6 +334,7 @@ digraph G {
 "opendevstack/ods-project-quickstarters" -> "opendevstack/ods-provisioning-app"
 "boozallen/sdp-helm-chart" -> "boozallen/sdp-docs"
 "boozallen/sdp-docs" -> "boozallen/sdp-helm-chart"
+"pycontribs/jira" -> "pycontribs/jenkinsapi" ["e"=1]
 "jfrog/artifactory-user-plugins" -> "jfrog/artifactory-scripts"
 "jfrog/artifactory-user-plugins" -> "jfrog/artifactory-docker-examples"
 "jfrog/artifactory-user-plugins" -> "jfrog/jfrog-cli"
@@ -325,6 +352,7 @@ digraph G {
 "scm-manager/scm-manager" -> "cloudogu/ecosystem"
 "scm-manager/scm-manager" -> "cloudogu/smeagol"
 "scm-manager/scm-manager" -> "sdorra/scm-manager"
+"oracle/docker-images" -> "jenkinsci/docker" ["e"=1]
 "jenkinsci/docker" -> "jenkinsci/jenkins" ["e"=1]
 "jenkinsci/docker" -> "jenkinsci/pipeline-examples"
 "jenkinsci/docker" -> "jenkinsci/configuration-as-code-plugin"
@@ -340,10 +368,12 @@ digraph G {
 "jenkinsci/docker" -> "kubernetes/ingress-nginx" ["e"=1]
 "jenkinsci/docker" -> "jenkinsci/job-dsl-plugin"
 "jenkinsci/docker" -> "jenkinsci/pipeline-plugin"
+"docker/getting-started" -> "jenkinsci/docker" ["e"=1]
 "devopshq/artifactory-cleanup" -> "devopshq/artifactory"
 "devopshq/artifactory-cleanup" -> "devopshq/artifactory-du"
 "devopshq/artifactory-cleanup" -> "crazy-max/artifactory-cleanup"
 "devopshq/artifactory-cleanup" -> "jfrog/log-analytics-prometheus"
+"docker-library/docs" -> "jenkinsci/docker" ["e"=1]
 "jfrog/terraform-provider-artifactory" -> "jfrog/terraform-provider-xray"
 "jfrog/terraform-provider-artifactory" -> "jfrog/terraform-provider-project"
 "jfrog/terraform-provider-artifactory" -> "jfrog/jfrog-idea-plugin"
@@ -367,6 +397,7 @@ digraph G {
 "jfrog/setup-jfrog-cli" -> "jfrog/jfrog-client-go"
 "jfrog/setup-jfrog-cli" -> "jfrog/jfrog-cli"
 "jfrog/setup-jfrog-cli" -> "pyrsia/pyrsia"
+"kohsuke/jenkins" -> "jenkinsci/java-client-api" ["e"=1]
 "jenkinsci/jenkins-scripts" -> "cloudbees/jenkins-scripts"
 "jenkinsci/jenkins-scripts" -> "samrocketman/jenkins-script-console-scripts"
 "jenkinsci/jenkins-scripts" -> "samrocketman/jenkins-bootstrap-shared"
@@ -397,6 +428,7 @@ digraph G {
 "jfrog/project-examples" -> "cloudbees/jenkins-scripts"
 "jfrog/project-examples" -> "jenkinsci/job-dsl-plugin"
 "jfrog/project-examples" -> "samrocketman/jenkins-script-console-scripts"
+"bndr/gojenkins" -> "pycontribs/jenkinsapi" ["e"=1]
 "peimanja/artifactory_exporter" -> "peimanja/helm-charts"
 "peimanja/artifactory_exporter" -> "skillz/opvic"
 "peimanja/artifactory_exporter" -> "jfrog/log-analytics-prometheus"
@@ -419,6 +451,10 @@ digraph G {
 "jfrog/jfrog-vscode-extension" -> "jfrog/jfrog-cli"
 "jfrog/jfrog-vscode-extension" -> "pyrsia/pyrsia"
 "jfrog/jfrog-vscode-extension" -> "jfrog/jfrog-docker-desktop-extension"
+"jenkinsci/helm-charts" -> "jenkinsci/configuration-as-code-plugin" ["e"=1]
+"jenkinsci/helm-charts" -> "jenkinsci/kubernetes-operator" ["e"=1]
+"jenkinsci/helm-charts" -> "jenkinsci/docker-agent" ["e"=1]
+"jenkinsci/helm-charts" -> "jenkinsci/docker-inbound-agent" ["e"=1]
 "nymous/pydantic-vault" -> "rezoleo/lea5"
 "jfrog/nuget-deps-tree" -> "jenkinsci/jfrog-plugin"
 "jfrog/nuget-deps-tree" -> "jfrog/bamboo-jfrog-plugin"
@@ -447,9 +483,19 @@ digraph G {
 "jenkinsci/docker-workflow-plugin" -> "jenkinsci/mesos-plugin" ["e"=1]
 "jenkinsci/docker-workflow-plugin" -> "jenkinsci/github-branch-source-plugin"
 "jenkinsci/docker-workflow-plugin" -> "jenkins-infra/update-center2"
+"SonarSource/docker-sonarqube" -> "jenkinsci/docker" ["e"=1]
+"SonarSource/docker-sonarqube" -> "marcelbirkner/docker-ci-tool-stack" ["e"=1]
+"hygieia/hygieia" -> "jenkinsci/pipeline-examples" ["e"=1]
+"hygieia/hygieia" -> "jenkinsci/pipeline-plugin" ["e"=1]
+"docker-library/docker" -> "jenkinsci/docker" ["e"=1]
 "svn-all-fast-export/svn2git" -> "hartwork/svneverever"
 "jenkinsci/credentials-plugin" -> "jenkinsci/workflow-job-plugin"
 "jenkinsci/credentials-plugin" -> "jenkinsci/workflow-durable-task-step-plugin"
+"jenkinsci/kubernetes-plugin" -> "jenkinsci/docker-inbound-agent" ["e"=1]
+"jenkinsci/kubernetes-plugin" -> "jenkinsci/configuration-as-code-plugin" ["e"=1]
+"jenkinsci/kubernetes-plugin" -> "jenkinsci/pipeline-examples" ["e"=1]
+"jenkinsci/kubernetes-plugin" -> "jenkinsci/JenkinsPipelineUnit" ["e"=1]
+"jenkinsci/kubernetes-plugin" -> "jenkinsci/kubernetes-operator" ["e"=1]
 "marcelbirkner/docker-ci-tool-stack" -> "maxfields2000/dockerjenkins_tutorial"
 "marcelbirkner/docker-ci-tool-stack" -> "codecentric/event-driven-microservices-platform"
 "marcelbirkner/docker-ci-tool-stack" -> "sheehan/job-dsl-gradle-example"
@@ -700,6 +746,10 @@ digraph G {
 "jenkinsci/job-dsl-plugin" -> "samrocketman/jenkins-bootstrap-shared"
 "jenkinsci/job-dsl-plugin" -> "fabric8io/jenkins-pipeline-library"
 "jenkinsci/job-dsl-plugin" -> "cfpb/jenkins-automation"
+"sonatype/docker-nexus3" -> "jenkinsci/docker" ["e"=1]
+"sonatype/docker-nexus3" -> "jenkinsci/job-dsl-plugin" ["e"=1]
+"sonatype/docker-nexus3" -> "jenkinsci/gitlab-plugin" ["e"=1]
+"sonatype/docker-nexus3" -> "jenkinsci/pipeline-examples" ["e"=1]
 "jenkinsci/ghprb-plugin" -> "janinko/ghprb"
 "jenkinsci/ghprb-plugin" -> "jenkinsci/github-plugin"
 "jenkinsci/ghprb-plugin" -> "jenkinsci/pipeline-github-plugin"
@@ -750,9 +800,11 @@ digraph G {
 "jenkinsci/workflow-aggregator-plugin" -> "jenkinsci/workflow-api-plugin"
 "jenkinsci/workflow-aggregator-plugin" -> "jenkinsci/branch-api-plugin"
 "jenkinsci/workflow-aggregator-plugin" -> "jenkinsci/workflow-cps-global-lib-plugin"
+"NARKOZ/gitlab" -> "arangamani/jenkins_api_client" ["e"=1]
 "dalalv/jenkinsfiles" -> "fabric8io/fabric8-jenkinsfile-library"
 "dalalv/jenkinsfiles" -> "cloudogu/jenkinsfiles"
 "dalalv/jenkinsfiles" -> "politie/pipeline-library"
+"gabrie-allaigre/sonar-gitlab-plugin" -> "jenkinsci/gitlab-plugin" ["e"=1]
 "jfrog/artifactory-client-java" -> "jfrog/jfrog-idea-plugin"
 "jfrog/artifactory-client-java" -> "jfrog/jfrog-vscode-extension"
 "jfrog/artifactory-client-java" -> "jfrog/terraform-provider-project"
@@ -796,6 +848,7 @@ digraph G {
 "devopshq/artifactory" -> "anancarv/python-artifactory"
 "devopshq/artifactory" -> "devopshq/artifactory-du"
 "devopshq/artifactory" -> "jfrog/artifactory-scripts"
+"nextcloud/docker" -> "jenkinsci/docker" ["e"=1]
 "jenkinsci/pipeline-model-definition-plugin" -> "jenkinsci/pipeline-plugin"
 "jenkinsci/pipeline-model-definition-plugin" -> "jenkinsci/JenkinsPipelineUnit"
 "jenkinsci/pipeline-model-definition-plugin" -> "fabric8io/fabric8-pipeline-library"
@@ -828,6 +881,7 @@ digraph G {
 "jenkins-infra/pipeline-library" -> "tomasbjerre/jenkins-configuration-as-code-sandbox" ["e"=1]
 "cloudogu/gitops-patterns" -> "cloudogu/gitops-playground"
 "cloudogu/gitops-patterns" -> "akuity/awesome-argo" ["e"=1]
+"hub4j/github-api" -> "gitlab4j/gitlab4j-api" ["e"=1]
 "fabric8io/fabric8-pipeline-library" -> "fabric8io/fabric8-jenkinsfile-library"
 "fabric8io/fabric8-pipeline-library" -> "fabric8io/jenkins-pipeline-library"
 "fabric8io/fabric8-pipeline-library" -> "docker-archive/jenkins-pipeline-scripts"
@@ -868,6 +922,8 @@ digraph G {
 "jfrog/artifactory-gradle-plugin" -> "jfrog/jfrog-client-js"
 "jfrog/artifactory-gradle-plugin" -> "jfrog/jfrog-ecosystem-integration-env"
 "jfrog/artifactory-gradle-plugin" -> "jfrog/xray-client-java"
+"jenkinsci/pipeline-aws-plugin" -> "edx/jenkins-configuration" ["e"=1]
+"jenkinsci/pipeline-aws-plugin" -> "jenkinsci/docker-inbound-agent" ["e"=1]
 "jenkinsci/JenkinsPipelineUnit" -> "jenkinsci/jenkinsfile-runner"
 "jenkinsci/JenkinsPipelineUnit" -> "macg33zr/pipelineUnit"
 "jenkinsci/JenkinsPipelineUnit" -> "jenkinsci/pipeline-examples"
@@ -890,6 +946,7 @@ digraph G {
 "nirvdrum/svn2git" -> "bobthecow/git-flow-completion" ["e"=1]
 "nirvdrum/svn2git" -> "schacon/gitbook" ["e"=1]
 "nirvdrum/svn2git" -> "jenkinsci/blueocean-plugin"
+"openstack-infra/jenkins-job-builder" -> "openstack-archive/python-jenkins" ["e"=1]
 "jfrog/artifactory-docker-examples" -> "jfrog/artifactory-user-plugins"
 "jfrog/artifactory-docker-examples" -> "jfrog/charts"
 "jfrog/artifactory-docker-examples" -> "jfrog/artifactory-scripts"
@@ -899,6 +956,8 @@ digraph G {
 "fabric8io/fabric8-jenkinsfile-library" -> "fabric8io/jenkins-pipeline-library"
 "fabric8io/fabric8-jenkinsfile-library" -> "dalalv/jenkinsfiles"
 "fabric8io/fabric8-jenkinsfile-library" -> "funkwerk/jenkins-workflow"
+"python-gitlab/python-gitlab" -> "jenkinsci/gitlab-plugin" ["e"=1]
+"python-gitlab/python-gitlab" -> "pycontribs/jenkinsapi" ["e"=1]
 "jenkinsci/git-client-plugin" -> "jenkinsci/git-plugin"
 "jenkinsci/git-client-plugin" -> "jenkinsci/bom"
 "macg33zr/pipelineUnit" -> "mkobit/jenkins-pipeline-shared-libraries-gradle-plugin"
@@ -963,7 +1022,7 @@ digraph G {
 "jenkinsci/job-dsl-plugin" ["l"="5.32,-4.495"]
 "jenkinsci/pipeline-plugin" ["l"="5.341,-4.519"]
 "jenkinsci/amazon-ecs-plugin" ["l"="5.406,-4.656"]
-"takari/maven-wrapper" ["l"="-2.463,11.932"]
+"takari/maven-wrapper" ["l"="-2.463,11.932", "c"=15]
 "ghale/gradle-jenkins-plugin" ["l"="5.3,-4.55"]
 "afonsof/jenkins-material-theme" ["l"="5.415,-4.526"]
 "jenkinsci/slack-plugin" ["l"="5.361,-4.578"]
@@ -971,10 +1030,11 @@ digraph G {
 "jenkinsci/blueocean-plugin" ["l"="5.382,-4.516"]
 "jenkinsci/JenkinsPipelineUnit" ["l"="5.294,-4.503"]
 "jenkinsci/workflow-cps-global-lib-plugin" ["l"="5.317,-4.565"]
-"mojohaus/extra-enforcer-rules" ["l"="-1.768,11.952"]
+"mojohaus/extra-enforcer-rules" ["l"="-1.768,11.952", "c"=15]
 "jenkinsci/junit-plugin" ["l"="5.351,-4.694"]
-"jenkinsci/jenkinsfile-runner" ["l"="5.279,-4.49"]
+"jenkins-x/jx" ["l"="8.012,-8.771", "c"=14]
 "jenkinsci/configuration-as-code-plugin" ["l"="5.357,-4.492"]
+"jenkinsci/jenkinsfile-runner" ["l"="5.279,-4.49"]
 "cloudbees/jenkins-scripts" ["l"="5.284,-4.469"]
 "jenkinsci/plugin-installation-manager-tool" ["l"="5.273,-4.516"]
 "ExpediaGroup/jenkins-spock" ["l"="5.23,-4.524"]
@@ -986,7 +1046,10 @@ digraph G {
 "jenkinsci/jenkins-scripts" ["l"="5.303,-4.473"]
 "jenkinsci/jenkins-test-harness" ["l"="5.252,-4.684"]
 "jenkinsci/jenkinsfile-runner-github-actions" ["l"="5.225,-4.555"]
-"jenkinsci/kubernetes-plugin" ["l"="8.084,-8.949"]
+"jenkinsci/kubernetes-plugin" ["l"="8.084,-8.949", "c"=14]
+"SAP/jenkins-library" ["l"="8.642,-13.638", "c"=462]
+"griddynamics/mpl" ["l"="5.107,-4.504"]
+"wcm-io-devops/jenkins-pipeline-library" ["l"="5.131,-4.516"]
 "jfrog/jenkins-artifactory-plugin" ["l"="5.324,-4.226"]
 "jfrog/build-info" ["l"="5.341,-4.22"]
 "jfrog/bamboo-jfrog-plugin" ["l"="5.331,-4.185"]
@@ -1007,31 +1070,38 @@ digraph G {
 "timols/java-gitlab-api" ["l"="5.425,-4.389"]
 "cdancy/jenkins-rest" ["l"="5.427,-4.422"]
 "jenkinsci/java-client-api" ["l"="5.379,-4.428"]
-"centic9/jgit-cookbook" ["l"="-2.498,12.136"]
-"fabric8io/kubernetes-client" ["l"="-2.372,11.734"]
-"hub4j/github-api" ["l"="-2.155,12.181"]
-"xanzy/go-gitlab" ["l"="7.551,-8.855"]
+"centic9/jgit-cookbook" ["l"="-2.498,12.136", "c"=15]
+"fabric8io/kubernetes-client" ["l"="-2.372,11.734", "c"=15]
+"hub4j/github-api" ["l"="-2.155,12.181", "c"=15]
+"xanzy/go-gitlab" ["l"="7.551,-8.855", "c"=14]
 "jenkinsci/gitlab-plugin" ["l"="5.33,-4.534"]
-"docker-java/docker-java" ["l"="-2.437,11.919"]
-"kubernetes-client/java" ["l"="-2.443,11.744"]
-"jbarrez/spring-boot-with-activiti-example" ["l"="-3.217,-42.541"]
-"apache/maven-mvnd" ["l"="-2.551,11.869"]
-"swagger-api/swagger-parser" ["l"="-4.85,8.197"]
-"python-gitlab/python-gitlab" ["l"="7.139,-8.678"]
-"jacoco/jacoco" ["l"="-2.423,11.988"]
+"docker-java/docker-java" ["l"="-2.437,11.919", "c"=15]
+"kubernetes-client/java" ["l"="-2.443,11.744", "c"=15]
+"jbarrez/spring-boot-with-activiti-example" ["l"="-3.217,-42.541", "c"=485]
+"apache/maven-mvnd" ["l"="-2.551,11.869", "c"=15]
+"swagger-api/swagger-parser" ["l"="-4.85,8.197", "c"=432]
+"python-gitlab/python-gitlab" ["l"="7.139,-8.678", "c"=14]
+"jacoco/jacoco" ["l"="-2.423,11.988", "c"=15]
+"dennyzhang/cheatsheet.dennyzhang.com" ["l"="29.161,-26.942", "c"=73]
+"dennyzhang/cheatsheet-jenkins-groovy-A4" ["l"="5.249,-4.445"]
+"atlassian-api/atlassian-python-api" ["l"="6.824,-8.642", "c"=14]
+"pycontribs/jenkinsapi" ["l"="5.294,-4.384"]
+"gitless-vcs/gitless" ["l"="45.344,20.422", "c"=20]
+"MagalixCorp/sample-api" ["l"="5.393,-4.807"]
+"jenkinsci/remoting" ["l"="5.372,-4.755"]
 "jenkinsci/docker-workflow-plugin" ["l"="5.318,-4.593"]
 "jenkinsci/workflow-aggregator-plugin" ["l"="5.303,-4.576"]
 "fabric8io/jenkins-pipeline-library" ["l"="5.246,-4.516"]
 "sheehan/job-dsl-gradle-example" ["l"="5.262,-4.502"]
 "jfrog/project-examples" ["l"="5.349,-4.355"]
-"Wolox/wolox-ci" ["l"="5.099,-4.533"]
-"griddynamics/mpl" ["l"="5.107,-4.504"]
-"wcm-io-devops/jenkins-pipeline-library" ["l"="5.131,-4.516"]
+"sameersbn/docker-gitlab" ["l"="6.05,-12.022", "c"=270]
 "jenkinsci/docker" ["l"="5.433,-4.478"]
-"jenkins-x/jx" ["l"="8.012,-8.771"]
-"jenkinsci/helm-charts" ["l"="7.921,-9.126"]
+"bobcarroll/jira-client" ["l"="6.848,-8.577", "c"=14]
+"Wolox/wolox-ci" ["l"="5.099,-4.533"]
+"jenkinsci/helm-charts" ["l"="7.921,-9.126", "c"=14]
 "jenkinsci/kubernetes-operator" ["l"="5.392,-4.452"]
-"goss-org/goss" ["l"="8.512,-12.343"]
+"goss-org/goss" ["l"="8.512,-12.343", "c"=600]
+"dennyzhang/kubernetes-yaml-templates" ["l"="28.933,-24.052", "c"=658]
 "macg33zr/pipelineUnit" ["l"="5.213,-4.519"]
 "mkobit/jenkins-pipeline-shared-libraries-gradle-plugin" ["l"="5.181,-4.524"]
 "edgexfoundry/edgex-global-pipelines" ["l"="5.198,-4.554"]
@@ -1045,18 +1115,21 @@ digraph G {
 "MarkEWaite/docker-lfs" ["l"="5.28,-4.451"]
 "timols/jenkins-gitlab-merge-request-builder-plugin" ["l"="5.286,-4.591"]
 "jenkinsci/gitlab-merge-request-builder-plugin" ["l"="5.274,-4.623"]
+"docker-library/official-images" ["l"="5.786,-12.075", "c"=270]
 "anancarv/python-artifactory" ["l"="5.25,-4.185"]
 "nymous/pydantic-vault" ["l"="5.236,-4.145"]
 "jenkinsci/github-branch-source-plugin" ["l"="5.321,-4.653"]
 "jenkinsci/ansicolor-plugin" ["l"="5.436,-4.623"]
 "jenkinsci/workflow-cps-plugin" ["l"="5.338,-4.599"]
-"gael-ian/vagrant-bindfs" ["l"="11.512,-35.009"]
+"gael-ian/vagrant-bindfs" ["l"="11.512,-35.009", "c"=27]
 "jenkinsci/git-plugin" ["l"="5.279,-4.687"]
 "jenkinsci/gitlab-branch-source-plugin" ["l"="5.264,-4.609"]
 "Argelbargel/gitlab-branch-source-plugin" ["l"="5.297,-4.608"]
-"gabrie-allaigre/sonar-gitlab-plugin" ["l"="-1.805,11.672"]
+"gabrie-allaigre/sonar-gitlab-plugin" ["l"="-1.805,11.672", "c"=15]
 "jenkinsci/maven-plugin" ["l"="5.308,-4.704"]
 "jenkinsci/workflow-job-plugin" ["l"="5.331,-4.665"]
+"jenkinsci/lockable-resources-plugin" ["l"="10.117,-4.585", "c"=147]
+"jenkinsci/workflow-api-plugin" ["l"="5.317,-4.615"]
 "jenkinsci/warnings-ng-plugin" ["l"="5.225,-4.794"]
 "jenkinsci/analysis-model" ["l"="5.218,-4.822"]
 "jenkinsci/checks-api-plugin" ["l"="5.256,-4.767"]
@@ -1066,12 +1139,18 @@ digraph G {
 "jenkinsci/git-forensics-plugin" ["l"="5.218,-4.846"]
 "uhafner/warnings-ng-plugin-devenv" ["l"="5.198,-4.795"]
 "jenkinsci/pipeline-graph-view-plugin" ["l"="5.189,-4.838"]
+"jenkinsci/acceptance-test-harness" ["l"="-1.849,-0.579", "c"=224]
 "jenkinsci/durable-task-plugin" ["l"="5.314,-4.625"]
 "jenkinsci/workflow-durable-task-step-plugin" ["l"="5.305,-4.647"]
 "jenkinsci/gitlab-api-plugin" ["l"="5.242,-4.641"]
+"dennyzhang/cheatsheet-kubernetes-A4" ["l"="29.023,-24.047", "c"=658]
 "kyounger/cbci-helmfile" ["l"="5.31,-4.407"]
+"VirtusLab/git-machete" ["l"="-13.529,-6.461", "c"=86]
+"VirtusLab/jenkins-operator" ["l"="5.47,-4.444"]
+"rogaha/docker-desktop" ["l"="11.72,-11.093", "c"=918]
+"kevinburke/doony" ["l"="5.534,-4.541"]
 "jenkinsci/ci.jenkins.io-runner" ["l"="5.206,-4.598"]
-"gjtorikian/repository-sync" ["l"="7.87,-45.318"]
+"gjtorikian/repository-sync" ["l"="7.87,-45.318", "c"=544]
 "jenkinsci/docker-plugin" ["l"="5.371,-4.682"]
 "KostyaSha/yet-another-docker-plugin" ["l"="5.372,-4.646"]
 "jenkinsci/docker-build-step-plugin" ["l"="5.433,-4.711"]
@@ -1084,6 +1163,8 @@ digraph G {
 "mschuchard/jenkins-devops-libs" ["l"="5.086,-4.517"]
 "buildit/jenkins-pipeline-libraries" ["l"="5.178,-4.5"]
 "opendevstack/ods-jenkins-shared-library" ["l"="5.046,-4.572"]
+"wakaleo/game-of-life" ["l"="4.045,-37.127", "c"=1]
+"eclipse/jgit" ["l"="-2.176,12.255", "c"=15]
 "jenkinsci/email-ext-plugin" ["l"="5.359,-4.784"]
 "odavid/my-bloody-jenkins" ["l"="5.215,-4.372"]
 "odavid/k8s-helm-charts" ["l"="5.196,-4.34"]
@@ -1097,15 +1178,16 @@ digraph G {
 "hoto/jenkins-shared-library" ["l"="5.023,-4.387"]
 "cloudogu/jenkinsfiles" ["l"="5.074,-4.431"]
 "dalalv/jenkinsfiles" ["l"="5.113,-4.448"]
-"VirtusLab/jenkins-operator" ["l"="5.47,-4.444"]
 "jenkinsci/kubernetes-credentials-provider-plugin" ["l"="5.45,-4.411"]
 "VirtusLab/crypt" ["l"="5.453,-4.434"]
-"argoproj/gitops-engine" ["l"="7.65,-9.187"]
-"tektoncd/operator" ["l"="10.666,-11.672"]
-"jenkinsci/prometheus-plugin" ["l"="10.197,-4.542"]
+"argoproj/gitops-engine" ["l"="7.65,-9.187", "c"=14]
+"tektoncd/operator" ["l"="10.666,-11.672", "c"=431]
+"jenkinsci/prometheus-plugin" ["l"="10.197,-4.542", "c"=147]
 "VirtusLab/render" ["l"="5.474,-4.425"]
-"kudobuilder/kudo" ["l"="7.737,-9.153"]
-"external-secrets/kubernetes-external-secrets" ["l"="7.713,-9.1"]
+"kudobuilder/kudo" ["l"="7.737,-9.153", "c"=14]
+"external-secrets/kubernetes-external-secrets" ["l"="7.713,-9.1", "c"=14]
+"apenwarr/git-subtree" ["l"="2.672,-35.669", "c"=171]
+"JohnAlbin/git-svn-migrate" ["l"="5.558,-4.603"]
 "jenkins-infra/update-center2" ["l"="5.226,-4.658"]
 "ikedam/backend-update-center2" ["l"="5.201,-4.684"]
 "jenkinsci/juseppe" ["l"="5.189,-4.699"]
@@ -1117,13 +1199,10 @@ digraph G {
 "imranity/useful-jenkins-groovy-init-scripts" ["l"="5.243,-4.427"]
 "djonsson/jenkins-atlassian-theme" ["l"="5.534,-4.52"]
 "Dakota628/jenkins-clean-theme" ["l"="5.571,-4.519"]
-"kevinburke/doony" ["l"="5.534,-4.541"]
 "rackerlabs/canon-jenkins" ["l"="5.566,-4.543"]
-"dennyzhang/cheatsheet-jenkins-groovy-A4" ["l"="5.249,-4.445"]
-"dennyzhang/cheatsheet.dennyzhang.com" ["l"="29.161,-26.942"]
-"dennyzhang/cheatsheet-docker-A4" ["l"="28.938,-24.092"]
-"dennyzhang/cheatsheet-git-A4" ["l"="28.918,-24.078"]
-"dennyzhang/cheatsheet-kubernetes-A4" ["l"="29.023,-24.047"]
+"dennyzhang/cheatsheet-docker-A4" ["l"="28.938,-24.092", "c"=658]
+"dennyzhang/cheatsheet-git-A4" ["l"="28.918,-24.078", "c"=658]
+"my-dlq/blog-example" ["l"="9.002,-5.301", "c"=278]
 "jfrog/charts" ["l"="5.389,-4.254"]
 "jfrog/artifactory-user-plugins" ["l"="5.366,-4.261"]
 "jfrog/JFrog-Cloud-Installers" ["l"="5.381,-4.227"]
@@ -1153,7 +1232,6 @@ digraph G {
 "vfarcic/jenkins-shared-libraries" ["l"="5.093,-4.565"]
 "opendevstack/tailor" ["l"="4.992,-4.606"]
 "openstack-archive/python-jenkins" ["l"="5.279,-4.342"]
-"pycontribs/jenkinsapi" ["l"="5.294,-4.384"]
 "jenkins-infra/jenkins-infra" ["l"="5.161,-4.609"]
 "jenkins-infra/kubernetes-management" ["l"="5.165,-4.575"]
 "jfrog/gocenter" ["l"="5.4,-4.128"]
@@ -1162,31 +1240,35 @@ digraph G {
 "jfrog/nexus2artifactory" ["l"="5.378,-4.202"]
 "samrocketman/demo-jenkins-world-2017" ["l"="5.162,-4.415"]
 "samrocketman/jenkins-bootstrap-jervis" ["l"="5.189,-4.435"]
+"pycontribs/jira" ["l"="6.926,-8.628", "c"=14]
 "jfrog/artifactory-scripts" ["l"="5.345,-4.267"]
 "devopshq/artifactory" ["l"="5.277,-4.249"]
 "scm-manager/scm-manager" ["l"="4.984,-4.417"]
 "cloudogu/ecosystem" ["l"="5.008,-4.438"]
 "cloudogu/smeagol" ["l"="5.002,-4.454"]
 "sdorra/scm-manager" ["l"="4.96,-4.394"]
-"jenkinsci/jenkins" ["l"="-2.647,11.642"]
-"nextcloud/docker" ["l"="11.876,-12.056"]
-"helm/helm" ["l"="8.212,-8.631"]
-"ansible/ansible-examples" ["l"="8.741,-12.376"]
-"docker/compose" ["l"="8.436,-8.405"]
-"kubernetes/dashboard" ["l"="8.216,-8.733"]
-"kubernetes/minikube" ["l"="8.237,-8.495"]
-"helm/charts" ["l"="8.061,-8.74"]
-"goharbor/harbor" ["l"="8.366,-8.597"]
-"kubernetes/ingress-nginx" ["l"="8.173,-8.783"]
+"oracle/docker-images" ["l"="4.669,-4.559", "c"=471]
+"jenkinsci/jenkins" ["l"="-2.647,11.642", "c"=15]
+"nextcloud/docker" ["l"="11.876,-12.056", "c"=705]
+"helm/helm" ["l"="8.212,-8.631", "c"=14]
+"ansible/ansible-examples" ["l"="8.741,-12.376", "c"=600]
+"docker/compose" ["l"="8.436,-8.405", "c"=14]
+"kubernetes/dashboard" ["l"="8.216,-8.733", "c"=14]
+"kubernetes/minikube" ["l"="8.237,-8.495", "c"=14]
+"helm/charts" ["l"="8.061,-8.74", "c"=14]
+"goharbor/harbor" ["l"="8.366,-8.597", "c"=14]
+"kubernetes/ingress-nginx" ["l"="8.173,-8.783", "c"=14]
+"docker/getting-started" ["l"="8.222,-8.336", "c"=14]
 "devopshq/artifactory-cleanup" ["l"="5.232,-4.212"]
 "devopshq/artifactory-du" ["l"="5.246,-4.233"]
 "crazy-max/artifactory-cleanup" ["l"="5.208,-4.195"]
 "jfrog/log-analytics-prometheus" ["l"="5.195,-4.162"]
+"docker-library/docs" ["l"="5.716,-12.038", "c"=270]
+"kohsuke/jenkins" ["l"="9.123,-13.098", "c"=1111]
+"bndr/gojenkins" ["l"="7.884,-9.252", "c"=14]
 "peimanja/artifactory_exporter" ["l"="5.168,-4.12"]
 "peimanja/helm-charts" ["l"="5.164,-4.096"]
 "skillz/opvic" ["l"="5.148,-4.102"]
-"jenkinsci/remoting" ["l"="5.372,-4.755"]
-"MagalixCorp/sample-api" ["l"="5.393,-4.807"]
 "jenkinsci/docker-inbound-agent" ["l"="5.383,-4.706"]
 "leftstick/selenium-example" ["l"="5.402,-4.828"]
 "rezoleo/lea5" ["l"="5.229,-4.121"]
@@ -1195,33 +1277,32 @@ digraph G {
 "jfrog/jfrog-client-js" ["l"="5.32,-4.174"]
 "docker-archive/jenkins-pipeline-scripts" ["l"="5.254,-4.537"]
 "jenkinsci/docker-commons-plugin" ["l"="5.291,-4.634"]
-"jenkinsci/mesos-plugin" ["l"="6.428,-13.185"]
+"jenkinsci/mesos-plugin" ["l"="6.428,-13.185", "c"=837]
+"SonarSource/docker-sonarqube" ["l"="-1.894,11.688", "c"=15]
+"marcelbirkner/docker-ci-tool-stack" ["l"="5.274,-4.56"]
+"hygieia/hygieia" ["l"="8.171,-8.429", "c"=14]
+"docker-library/docker" ["l"="5.645,-12.014", "c"=270]
 "svn-all-fast-export/svn2git" ["l"="5.569,-4.64"]
 "hartwork/svneverever" ["l"="5.596,-4.654"]
 "jenkinsci/credentials-plugin" ["l"="5.311,-4.674"]
-"marcelbirkner/docker-ci-tool-stack" ["l"="5.274,-4.56"]
 "maxfields2000/dockerjenkins_tutorial" ["l"="5.337,-4.561"]
 "codecentric/event-driven-microservices-platform" ["l"="5.194,-4.609"]
-"siamaksade/openshift-jenkins-demo" ["l"="10.608,-11.436"]
-"SonarSource/docker-sonarqube" ["l"="-1.894,11.688"]
+"siamaksade/openshift-jenkins-demo" ["l"="10.608,-11.436", "c"=431]
 "Shashikant86/jenkins2-docker" ["l"="5.243,-4.599"]
-"hygieia/hygieia" ["l"="8.171,-8.429"]
-"kbastani/spring-cloud-event-sourcing-example" ["l"="24.448,-31.696"]
+"kbastani/spring-cloud-event-sourcing-example" ["l"="24.448,-31.696", "c"=304]
 "vfarcic/jenkins-docker-ansible" ["l"="5.199,-4.581"]
 "cloudogu/gitops-playground" ["l"="4.985,-4.438"]
 "cloudogu/gitops-build-lib" ["l"="4.974,-4.458"]
 "danieleagle/jenkins-ephemeral-cicd" ["l"="5.371,-4.602"]
 "blacklabelops-legacy/jenkins" ["l"="5.31,-4.441"]
 "bibinwilson/jenkins-docker-slave" ["l"="5.389,-4.596"]
-"spotify/docker-gc" ["l"="6.002,-12.244"]
-"ansible/ansible-container" ["l"="8.57,-12.372"]
-"ehazlett/interlock" ["l"="6.144,-12.409"]
+"spotify/docker-gc" ["l"="6.002,-12.244", "c"=270]
+"ansible/ansible-container" ["l"="8.57,-12.372", "c"=600]
+"ehazlett/interlock" ["l"="6.144,-12.409", "c"=270]
 "hughperkins/howto-jenkins-ssl" ["l"="5.409,-4.596"]
-"bndr/gojenkins" ["l"="7.884,-9.252"]
-"pycontribs/jira" ["l"="6.926,-8.628"]
 "txels/autojenkins" ["l"="5.254,-4.326"]
 "joelee2012/api4jenkins" ["l"="5.301,-4.329"]
-"allure-framework/allure-python" ["l"="45.419,19.248"]
+"allure-framework/allure-python" ["l"="45.419,19.248", "c"=1169]
 "fabric8io/fabric8-jenkinsfile-library" ["l"="5.176,-4.472"]
 "funkwerk/jenkins-workflow" ["l"="5.208,-4.497"]
 "edx/jenkins-configuration" ["l"="5.208,-4.422"]
@@ -1241,44 +1322,44 @@ digraph G {
 "jenkinsci/workflow-basic-steps-plugin" ["l"="5.331,-4.625"]
 "jenkins-infra/jenkins.io" ["l"="5.218,-4.626"]
 "jenkinsci/jep" ["l"="5.159,-4.667"]
-"jenkinsci/localization-zh-cn-plugin" ["l"="9.152,-5.097"]
-"jenkins-infra/repository-permissions-updater" ["l"="-1.646,11.191"]
+"jenkinsci/localization-zh-cn-plugin" ["l"="9.152,-5.097", "c"=278]
+"jenkins-infra/repository-permissions-updater" ["l"="-1.646,11.191", "c"=15]
 "jenkins-infra/plugin-health-scoring" ["l"="5.186,-4.65"]
 "jfrog/gradle-dep-tree" ["l"="5.317,-4.152"]
+"sonatype/docker-nexus3" ["l"="-1.869,11.461", "c"=15]
 "jenkinsci/ghprb-plugin" ["l"="5.3,-4.848"]
 "janinko/ghprb" ["l"="5.304,-4.889"]
 "jenkinsci/jenkins-design-language" ["l"="5.45,-4.55"]
-"gocd/gocd" ["l"="8.152,-8.512"]
+"gocd/gocd" ["l"="8.152,-8.512", "c"=14]
 "cdancy/bitbucket-rest" ["l"="5.484,-4.391"]
-"jborgers/sonar-pmd" ["l"="-1.795,11.706"]
-"jenkins-zh/jenkins-cli" ["l"="9.12,-5.124"]
+"jborgers/sonar-pmd" ["l"="-1.795,11.706", "c"=15]
+"jenkins-zh/jenkins-cli" ["l"="9.12,-5.124", "c"=278]
 "jenkinsci/plugin-pom" ["l"="5.488,-4.705"]
 "jenkinsci/scm-api-plugin" ["l"="5.45,-4.675"]
 "moveworkforward/bitbucket-webhooks-plugin" ["l"="5.433,-4.66"]
-"jenkinsci/workflow-api-plugin" ["l"="5.317,-4.615"]
-"jenkinsci/credentials-binding-plugin" ["l"="10.053,-4.544"]
+"jenkinsci/credentials-binding-plugin" ["l"="10.053,-4.544", "c"=147]
+"NARKOZ/gitlab" ["l"="7.17,-8.656", "c"=14]
+"arangamani/jenkins_api_client" ["l"="5.447,-4.359"]
 "aarjithn/jenkins-neo-theme" ["l"="5.527,-4.492"]
 "jenkinsci/subversion-plugin" ["l"="5.24,-4.729"]
 "jenkinsci/build-failure-analyzer-plugin" ["l"="5.264,-4.722"]
 "Parallels/artifactory" ["l"="5.26,-4.217"]
 "kitconcept/jenkins-pipeline-examples" ["l"="5.243,-4.576"]
-"tomasbjerre/jenkins-configuration-as-code-sandbox" ["l"="9.936,-4.46"]
+"tomasbjerre/jenkins-configuration-as-code-sandbox" ["l"="9.936,-4.46", "c"=147]
 "cloudogu/gitops-patterns" ["l"="4.927,-4.425"]
-"akuity/awesome-argo" ["l"="7.609,-9.268"]
-"SAP/jenkins-library" ["l"="8.642,-13.638"]
-"uwolfer/gerrit-rest-java-client" ["l"="-1.67,12.538"]
+"akuity/awesome-argo" ["l"="7.609,-9.268", "c"=14]
+"uwolfer/gerrit-rest-java-client" ["l"="-1.67,12.538", "c"=15]
 "neven7/fasttest-api" ["l"="5.374,-4.39"]
-"arangamani/jenkins_api_client" ["l"="5.447,-4.359"]
-"bobcarroll/jira-client" ["l"="6.848,-8.577"]
 "terradatum/jenkins-pipeline-library" ["l"="5.141,-4.486"]
 "visualphoenix/docker-jenkins-demo" ["l"="5.174,-4.36"]
 "jfrog/artifactory-gradle-plugin" ["l"="5.334,-4.151"]
 "jfrog/xray-client-java" ["l"="5.332,-4.124"]
+"jenkinsci/pipeline-aws-plugin" ["l"="10.263,-4.644", "c"=147]
 "nirvdrum/svn2git" ["l"="5.497,-4.593"]
-"JohnAlbin/git-svn-migrate" ["l"="5.558,-4.603"]
 "mazong1123/svn2gitnet" ["l"="5.528,-4.622"]
-"bobthecow/git-flow-completion" ["l"="-0.542,-31.199"]
-"schacon/gitbook" ["l"="9.07,-44.996"]
+"bobthecow/git-flow-completion" ["l"="-0.542,-31.199", "c"=295]
+"schacon/gitbook" ["l"="9.07,-44.996", "c"=828]
+"openstack-infra/jenkins-job-builder" ["l"="1.575,15.078", "c"=857]
 "stchar/pipeline-sharedlib-testharness" ["l"="5.161,-4.541"]
 "TYPO3-infrastructure/jenkins-pipeline-global-library-chefci" ["l"="5.117,-4.475"]
 "librecores/librecores-ci-jenkins-server" ["l"="5.262,-4.396"]
